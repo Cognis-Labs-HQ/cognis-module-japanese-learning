@@ -1,6 +1,5 @@
 [
-  {
-    "path": "/showcase",
-    "access": { "minRole": "user" }
-  }
+  { "path": "/study/hiragana", "access": { "minRole": "user" } },
+  { "path": "/study/library", "access": { "minRole": "admin" } },
+  { "path": "/study/ja-classroom", "access": { "minRole": "user" } }
 ]

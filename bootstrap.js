@@ -1,27 +1,49 @@
 import { registerApi } from './api/index.js';
-import { registerUi } from './api/ui.js';
 
-const FLOW = {
-  id: 'showcase-items',
-  description: 'Let modules enrich showcase items without direct imports.',
-  stages: ['validate', 'enrich', 'present'],
+const LANGUAGE = {
+  moduleId: 'study-language-ja',
+  languageCode: 'ja',
+  languageName: '日本語',
+  languageFlag: '🇯🇵',
+  version: '1.2.12',
+  childComponents: [
+    {
+      id: 'hiragana-alphabet',
+      label: 'Hiragana Alphabet',
+      pageUrl: '/study/hiragana',
+      order: 0,
+    },
+    {
+      id: 'library',
+      label: 'Library',
+      pageUrl: '/study/library',
+      minRole: 'admin',
+      order: 100,
+    },
+    {
+      id: 'classroom',
+      label: 'Classroom',
+      pageUrl: '/study/ja-classroom',
+      order: 999,
+    },
+  ],
 };
 
-export function bootstrapModule(ctx) {
-  registerUi(ctx);
-  const service = registerApi(ctx.router, ctx);
-
-  if (!ctx.flow.exists(FLOW.id)) ctx.registerFlow(FLOW);
+export async function bootstrapModule(ctx) {
+  const store = await registerApi(ctx);
+  ctx.contributePublicCapability('study:language:ja', Object.freeze(LANGUAGE));
+  ctx.contributePublicCapability('study:language:ja:library', {
+    snapshot: () => store.snapshot(),
+    queryLayer: (layer, query) => store.queryLayer(layer, query),
+  });
   ctx.flow.extend(
-    FLOW.id,
-    'enrich',
-    { id: 'module-template:add-source' },
-    ({ input }) => ({ ...input, source: 'module-template' }),
+    'bootstrap-platform',
+    'register-flows',
+    { id: 'study-language-ja:register-language' },
+    () => LANGUAGE,
   );
-  ctx.contributePublicCapability('showcase:listItems', service.listItems);
-
-  ctx.log?.('info', 'Module template enabled.', {
-    component: 'module-template',
+  ctx.log?.('info', 'Cognis Japanese enabled.', {
+    component: 'study-language-ja',
     operation: 'bootstrap',
   });
 }
