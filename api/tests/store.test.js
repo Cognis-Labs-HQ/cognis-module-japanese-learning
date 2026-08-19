@@ -1,20 +1,51 @@
 import assert from 'node:assert/strict';
+import { mkdtemp, cp, rm } from 'node:fs/promises';
+import os from 'node:os';
+import path from 'node:path';
 import test from 'node:test';
-import { ShowcaseStore } from '../store.js';
+import { LanguageLibraryStore } from '../store.js';
 
-test('store creates its schema and scopes lists to an owner', async () => {
-  const calls = [];
-  const database = {
-    async ensureTable(definition) { calls.push(['schema', definition]); },
-    async executeCommand(command) {
-      calls.push(['command', command]);
-      return { rows: [{ id: 'one', title: 'Read contracts', created_at: '2026-01-01' }] };
-    },
-  };
-  const store = new ShowcaseStore(database);
-  await store.ensureSchema();
-  const items = await store.list('account-1');
-  assert.equal(calls[0][1].name, 'module_template_items');
-  assert.deepEqual(calls[1][1].where, [{ column: 'owner_id', value: 'account-1' }]);
-  assert.equal(items[0].title, 'Read contracts');
+test('loads and queries the extracted Japanese library', async () => {
+  const moduleRoot = await mkdtemp(path.join(os.tmpdir(), 'cognis-ja-'));
+  await cp(path.resolve('data'), path.join(moduleRoot, 'data'), {
+    recursive: true,
+  });
+  try {
+    const store = new LanguageLibraryStore({
+      moduleRoot,
+      languageCode: 'ja',
+      altCharactersFileName: 'kanji',
+    });
+    await store.initialise();
+    const hiragana = store.queryLayer('characters', {
+      characterClass: 'hiragana',
+    });
+    assert.ok(hiragana.length > 40);
+    assert.deepEqual(hiragana[0], {
+      id: 'ja:char:a',
+      symbol: 'あ',
+      romanization: 'a',
+      characterClass: 'hiragana',
+    });
+    assert.ok(store.snapshot().definitions.length > 0);
+  } finally {
+    await rm(moduleRoot, { recursive: true, force: true });
+  }
+});
+
+test('returns defensive copies of library records', async () => {
+  const store = new LanguageLibraryStore({
+    moduleRoot: path.resolve('.'),
+    languageCode: 'ja',
+    altCharactersFileName: 'kanji',
+  });
+  await store.initialise();
+  const records = store.queryLayer('characters', {
+    characterClass: 'hiragana',
+  });
+  records[0].symbol = 'changed';
+  assert.equal(
+    store.queryLayer('characters', { characterClass: 'hiragana' })[0].symbol,
+    'あ',
+  );
 });

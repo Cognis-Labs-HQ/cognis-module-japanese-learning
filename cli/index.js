@@ -1,20 +1,17 @@
-export function registerCommands({ register, apiGet, apiPost }) {
-  register('module-template:list', async ({ apiBaseUrl, getApiToken }) =>
-    apiGet(apiBaseUrl, '/api/v1/modules/module-template/items', await getApiToken()), {
-    usage: 'cognisctl module-template:list',
-    description: 'List your module-template showcase items.',
-  });
-  register('module-template:create', async ({ args, apiBaseUrl, getApiToken }) => {
-    const title = args.join(' ').trim();
-    if (!title) throw new Error('Usage: cognisctl module-template:create <title>');
-    return apiPost(
-      apiBaseUrl,
-      '/api/v1/modules/module-template/items',
-      await getApiToken(),
-      { title },
-    );
-  }, {
-    usage: 'cognisctl module-template:create <title>',
-    description: 'Create a showcase item.',
+export function registerCli(cli) {
+  cli.command({
+    name: 'study:japanese:status',
+    description: 'Show the Cognis Japanese module status.',
+    access: { minRole: 'admin' },
+    async run(_args, ctx) {
+      const language = ctx.getCapability('study:language:ja');
+      return language
+        ? {
+            enabled: true,
+            languageCode: language.languageCode,
+            version: language.version,
+          }
+        : { enabled: false };
+    },
   });
 }
