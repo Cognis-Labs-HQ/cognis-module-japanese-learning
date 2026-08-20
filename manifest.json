@@ -1,201 +1,245 @@
 {
-  "id": "study-language-ja",
-  "uuid": "e905927f-b133-572a-92ce-2ea8645e5ceb",
-  "name": "Cognis Japanese",
-  "version": "1.2.12",
-  "class": "extension",
-  "coreApiVersion": "v1",
-  "capabilities": [
-    "study:language:ja",
-    "study:language:ja:library",
-    "ui:page"
-  ],
-  "entrypoints": {
-    "bootstrap": "./bootstrap.js",
-    "api": "./api/index.js",
-    "ui": "./ui/index.html",
-    "cli": "./cli/index.js"
-  },
-  "publisher": "Cognis Labs HQ",
-  "requires": [
-    "338b9237-a2c8-5bcf-9437-bccc9abd9a27"
-  ],
-  "requiresCapabilities": [
-    "auth:requireAuth"
-  ],
-  "summary": "Japanese learning content for Cognis Study.",
-  "description": "Adds Japanese libraries, kana activities, classrooms, and learning tools to Study.",
-  "categories": [
-    "Education",
-    "Productivity"
-  ],
-  "license": "AGPL-3.0-or-later",
-  "repository": "https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning",
-  "homepage": "https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning#readme",
-  "support": "https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/issues",
-  "assets": {
-    "screenshots": [],
-    "icon": "assets/icon.svg",
-    "banner": "assets/banner.svg"
-  },
-  "tags": [
-    "japanese",
-    "language",
-    "learning",
-    "study"
-  ],
-  "files": [
-    {
-      "path": "AGENTS.md",
-      "sha256": "509784a889286aad75c8b21042dddeaa20bd7a4929eb80db40a9deefe92e1ff5"
+    "id": "study-language-ja",
+    "uuid": "e905927f-b133-572a-92ce-2ea8645e5ceb",
+    "name": "Cognis Japanese",
+    "version": "1.2.12",
+    "class": "extension",
+    "coreApiVersion": "v1",
+    "capabilities": [
+        "study:language:ja",
+        "study:language:ja:library",
+        "ui:page"
+    ],
+    "entrypoints": {
+        "bootstrap": "./bootstrap.js",
+        "api": "./api/index.js",
+        "ui": "./ui/index.html",
+        "cli": "./cli/index.js"
     },
-    {
-      "path": "LICENSE",
-      "sha256": "8486a10c4393cee1c25392769ddd3b2d6c242d6ec7928e1414efff7dfb2f07ef"
+    "publisher": "Cognis Labs HQ",
+    "requires": ["338b9237-a2c8-5bcf-9437-bccc9abd9a27"],
+    "requiresCapabilities": ["auth:requireAuth"],
+    "summary": "Japanese learning content for Cognis Study.",
+    "description": "Adds Japanese libraries, kana activities, classrooms, and learning tools to Study.",
+    "categories": ["Education", "Productivity"],
+    "license": "AGPL-3.0-or-later",
+    "repository": "https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning",
+    "homepage": "https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning#readme",
+    "support": "https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/issues",
+    "assets": {
+        "screenshots": [],
+        "icon": "assets/icon.svg",
+        "banner": "assets/banner.svg"
     },
-    {
-      "path": "README.md",
-      "sha256": "82eb73fb35f03ed17d2ede244f058ce10585b213f1a07640565030ee831510dd"
-    },
-    {
-      "path": "api/index.js",
-      "sha256": "b641068a7e84cd6071290ddade0f2c0b422bf2bba5a830ef75606444fce79488"
-    },
-    {
-      "path": "api/reuse/http.js",
-      "sha256": "f472cdc51c6fcba17a7d56f69e29fae49e36bbd1b4fe111f32f5bc271040b610"
-    },
-    {
-      "path": "api/store.js",
-      "sha256": "10a62eb0f11d1a8ba406c9a97abe732ea85fb32cd02ec02f0cad7bc1be19c67a"
-    },
-    {
-      "path": "api/tests/store.test.js",
-      "sha256": "c184336ce134ddae6b3d456cc8716439bcfbd80b90b952fd8c831ff79c169729"
-    },
-    {
-      "path": "assets/banner.svg",
-      "sha256": "793cf276c3fde091bfcf1599a763cb6ab6bf0d08d92a21b56fe0580b42cd5f6d"
-    },
-    {
-      "path": "assets/icon.svg",
-      "sha256": "2eda05c33f7e1c74d1e419279f21d21c536b4f7c0133fa78819707f5964f9232"
-    },
-    {
-      "path": "bootstrap.js",
-      "sha256": "997d4b7db20931522990019c8ac40fd290576c4a96aea79159d5fb8526bddab5"
-    },
-    {
-      "path": "cli/index.js",
-      "sha256": "01cb79d18a07886c71228959542c1aff4d223419b3653cdd56e505cf075665d7"
-    },
-    {
-      "path": "data/alt-characters/kanji.json",
-      "sha256": "41c8c6d5e16d3ecf606b80992650166e459c2465b6ec968a320255f24f8defd6"
-    },
-    {
-      "path": "data/characters/hiragana.json",
-      "sha256": "b415bb1f09a1788071b3c80a936ee03f881dc7f5b734961cd434d7f7d4ee760d"
-    },
-    {
-      "path": "data/characters/katakana.json",
-      "sha256": "557939e9f78a5314d4b67ceda642de1df8c0e760df4f7798cbfcb86086daf172"
-    },
-    {
-      "path": "data/definitions/common.json",
-      "sha256": "a5ac0d2c7fce73ce37ee93221b05f0bf79465537c5864576262edd9b6e4f7b35"
-    },
-    {
-      "path": "data/sentences/common.json",
-      "sha256": "c50203a0edb9b935aba4f32ddd8e398461059234fa89d872b5edc20d7d6275c5"
-    },
-    {
-      "path": "data/words/common.json",
-      "sha256": "aa61486634b3a7738154d2760be72ad149be418d4e7eba0e6318d60ce3b83f99"
-    },
-    {
-      "path": "docs/architecture.md",
-      "sha256": "71bf85fbb29d8d9e95174d1da8c22d2823c913cdb569ff629069e64885b89052"
-    },
-    {
-      "path": "docs/releasing.md",
-      "sha256": "e0a04f53c97e76bf646b4832451a0d5e2b38440e52fcfadd5b337a0f484f2802"
-    },
-    {
-      "path": "docs/security.md",
-      "sha256": "56013c071146bac635912036511e9cffed71f449976be9fa55eca07f2c0f63bc"
-    },
-    {
-      "path": "package-lock.json",
-      "sha256": "5339ccb6313c8155821e3698d79c16fb65d695243cdd05509e179103006d0d79"
-    },
-    {
-      "path": "package.json",
-      "sha256": "b0396a63049c6b74a3795512cd70aa0d0012eadb45c8c2edc39b8f1b8c614948"
-    },
-    {
-      "path": "routes.json",
-      "sha256": "14beefa7a3768749776efcdd9e61b576df968bf3a0ef3bd0f4fa735ccaab9ce1"
-    },
-    {
-      "path": "scripts/update-manifest-hashes.js",
-      "sha256": "dbfad276635f8b40f77f7228d1ee0a385ecab845c432604136a4bb45c9c02a6a"
-    },
-    {
-      "path": "scripts/validate-manifest.js",
-      "sha256": "57884058e42355fcd8728763e7b65582613959e59efd66358c21a8ada0cf34ba"
-    },
-    {
-      "path": "ui/components/classroom/ui/app.js",
-      "sha256": "cc8f54f1dc90082bc3f985f035da5fbb0810a9b5440e609aae88464e0ddc5c67"
-    },
-    {
-      "path": "ui/components/classroom/ui/index.html",
-      "sha256": "ce9f52d016700af89ccd17aeab1493cba458a3a75826c51936c594d8769d2b2b"
-    },
-    {
-      "path": "ui/components/hiragana-alphabet/ui/app.js",
-      "sha256": "c14af4395d592242405fa8ff9fd0fbe70380ab749e4a0c8d9f0aa530a75f97fe"
-    },
-    {
-      "path": "ui/components/hiragana-alphabet/ui/hiragana.css",
-      "sha256": "bcbc26ee76f6e88b8806d45ebb805bec7ecc6104d2109c9255c888eea7df18bd"
-    },
-    {
-      "path": "ui/components/hiragana-alphabet/ui/index.html",
-      "sha256": "d88fd03dc21b7de3d9aea8c399576aa0061e95d92138965b4c3fd0072878e70d"
-    },
-    {
-      "path": "ui/components/library/ui/app.js",
-      "sha256": "f1a02912542905b89d45930fe543acf77bc407eca6ef176f5a9969c0825349b4"
-    },
-    {
-      "path": "ui/components/library/ui/index.html",
-      "sha256": "35959da6b7b2dac573fb52a28a5c7d9aa007b40308d83f07b05092c2d8fa0c9b"
-    },
-    {
-      "path": "ui/index.html",
-      "sha256": "810450947334abe57655e5c83fb94f60c1379c9e6a7d668ed0c95e74a1a54468"
-    },
-    {
-      "path": "ui/languages/de/strings.xml",
-      "sha256": "7e895d841da88278d4e30aba0352411a930fe233e8197e6666848520abc506a3"
-    },
-    {
-      "path": "ui/languages/en/strings.xml",
-      "sha256": "cb114d95f4deb2693f43fba0cb687653c0cfb1f93b96c58f0db7ce7f41d7b55b"
-    },
-    {
-      "path": "ui/languages/id/strings.xml",
-      "sha256": "af618b11773ce52693b925e470cf585d3166eb9b721235dc052ee5701aa09eb3"
-    },
-    {
-      "path": "ui/languages/ja/strings.xml",
-      "sha256": "38dd03a1886fc483088aa46bf9d3ffc22bfcd09661192aac55221cff26b7ad83"
-    },
-    {
-      "path": "ui/navbar.js",
-      "sha256": "68bb7adb4038518f37f345414127f95e7b7c1e325247c87cb1b3835864126714"
-    }
-  ]
+    "tags": ["japanese", "language", "learning", "study"],
+    "files": [
+        {
+            "path": ".github/DOCUMENTATION_TEMPLATE.de.md",
+            "sha256": "68da4be565d7fcd6caf74a6eeddd62ee35620063f4fb3c42128c23e98e4c7313"
+        },
+        {
+            "path": ".github/DOCUMENTATION_TEMPLATE.en.md",
+            "sha256": "0430dc1ef9233808219652e78e6079d3b6cf455f04818487e00fd7aa217a07fa"
+        },
+        {
+            "path": ".github/DOCUMENTATION_TEMPLATE.id.md",
+            "sha256": "a701f0f05180972949e4ac159e3d65656fc66b8d07aa72b3832aa312d711cd24"
+        },
+        {
+            "path": ".github/DOCUMENTATION_TEMPLATE.ja.md",
+            "sha256": "8fafead6e01dbab777528e72d1ce924ff3d8e0bd250d21a0a29116fe1ef7ed44"
+        },
+        {
+            "path": ".gitignore",
+            "sha256": "16d30e4462189fb14dd611bdb708c510630c576a1f35b9383e89a4352da36c97"
+        },
+        {
+            "path": ".prettierignore",
+            "sha256": "ebebb0fe677b8152cac2b29c7d7ef39d41527ab1a14b935df9c8f6f6e66ec936"
+        },
+        {
+            "path": ".prettierrc",
+            "sha256": "fa9273146be8edfd6bbddaff9d0654effb7b4cd67c6163b67e971195d796ead3"
+        },
+        {
+            "path": "AGENTS.md",
+            "sha256": "5e2d46bdba263d4105de0c53eca06d036660a8918526cf1441b22cc59cdd955c"
+        },
+        {
+            "path": "LICENSE",
+            "sha256": "8486a10c4393cee1c25392769ddd3b2d6c242d6ec7928e1414efff7dfb2f07ef"
+        },
+        {
+            "path": "README.md",
+            "sha256": "82eb73fb35f03ed17d2ede244f058ce10585b213f1a07640565030ee831510dd"
+        },
+        {
+            "path": "api/index.js",
+            "sha256": "d96b0d42aeb00294f6ee2680bd3293b5f5be8cda6ed4ad377a397304ed586e87"
+        },
+        {
+            "path": "api/reuse/http.js",
+            "sha256": "f42ff95fe1b092449cef468c6c6197bc9819cfd12d4cf5407d91726fe865d448"
+        },
+        {
+            "path": "api/store.js",
+            "sha256": "3974d76857ce3b9d7304472966a480b87de6666d797c9d226c2e842ba5626659"
+        },
+        {
+            "path": "api/tests/documentation-convention.test.js",
+            "sha256": "d3a193f0388930bbc3bb4405b0bd95dabe49672d7f1fb3ba9ef2d347e5f15934"
+        },
+        {
+            "path": "api/tests/store.test.js",
+            "sha256": "fb873d5f50381d35c2eb8de508a73b550c5f13daae66c5b32cd3d89f08980a8f"
+        },
+        {
+            "path": "api/tests/structural-compliance.test.js",
+            "sha256": "c26a60e49e9b102582c6e65b77c74df44617e0f313b1510aae5ecb8610a37f61"
+        },
+        {
+            "path": "assets/banner.svg",
+            "sha256": "793cf276c3fde091bfcf1599a763cb6ab6bf0d08d92a21b56fe0580b42cd5f6d"
+        },
+        {
+            "path": "assets/icon.svg",
+            "sha256": "2eda05c33f7e1c74d1e419279f21d21c536b4f7c0133fa78819707f5964f9232"
+        },
+        {
+            "path": "bootstrap.js",
+            "sha256": "2b7f4f8ac12573cf4b72b6ec3588bb14dc2df060b1b38c3b6f3e3f31774a61e6"
+        },
+        {
+            "path": "cli/index.js",
+            "sha256": "1a8292012f252740869fc1399c7d4d8850d0a0e60de8b80044f8eaf3a1365c0b"
+        },
+        {
+            "path": "data/alt-characters/kanji.json",
+            "sha256": "41c8c6d5e16d3ecf606b80992650166e459c2465b6ec968a320255f24f8defd6"
+        },
+        {
+            "path": "data/characters/hiragana.json",
+            "sha256": "b415bb1f09a1788071b3c80a936ee03f881dc7f5b734961cd434d7f7d4ee760d"
+        },
+        {
+            "path": "data/characters/katakana.json",
+            "sha256": "557939e9f78a5314d4b67ceda642de1df8c0e760df4f7798cbfcb86086daf172"
+        },
+        {
+            "path": "data/definitions/common.json",
+            "sha256": "a5ac0d2c7fce73ce37ee93221b05f0bf79465537c5864576262edd9b6e4f7b35"
+        },
+        {
+            "path": "data/sentences/common.json",
+            "sha256": "c50203a0edb9b935aba4f32ddd8e398461059234fa89d872b5edc20d7d6275c5"
+        },
+        {
+            "path": "data/words/common.json",
+            "sha256": "aa61486634b3a7738154d2760be72ad149be418d4e7eba0e6318d60ce3b83f99"
+        },
+        {
+            "path": "docs/standard.de.md",
+            "sha256": "1c8158f19f0ed9f25519bcdd2f21c2551f843760f0b00d99875ddbfddfabaade"
+        },
+        {
+            "path": "docs/standard.en.md",
+            "sha256": "92f0d841cd8d45fc474765762501fba6d8855616290cff1be3ef4e67faf345d7"
+        },
+        {
+            "path": "docs/standard.id.md",
+            "sha256": "fb7940b9e091287a45261afbb4815d88cf0c13dff3530e9aca75b949f76c3308"
+        },
+        {
+            "path": "docs/standard.ja.md",
+            "sha256": "d75ef553c1f7067b9d94aa2c07d8f2d9c2f1a1605e851a74c5827807dedfa5a6"
+        },
+        {
+            "path": "package-lock.json",
+            "sha256": "7f65ce00d8f14cdee7674e576cc5fedf63f7998ce5413e5c753f3224c61b92bd"
+        },
+        {
+            "path": "package.json",
+            "sha256": "1f9682afa09777aff0000a9a230ba5c165b07e9ef23035bbf88eb61f2a86dd50"
+        },
+        {
+            "path": "routes.json",
+            "sha256": "69dbcf72c939a346c5404af62f42ae27489fcfd53ca1f0e825926346cd05967a"
+        },
+        {
+            "path": "scripts/update-manifest-hashes.js",
+            "sha256": "b6b6392283cd31a48a8039281519207ed1d57010238d373921c1478a4c10d0f9"
+        },
+        {
+            "path": "scripts/validate-manifest.js",
+            "sha256": "ffb7bec87f3c755cf2aafebd73bf4c8a98a5419cb6bf004257e8cf96276ff682"
+        },
+        {
+            "path": "tooling/scripts/lint-placeholder.mjs",
+            "sha256": "c869f4af45abd4f82500f836d5e50af93b9988a56283477ae45bd0aa45f47fd1"
+        },
+        {
+            "path": "tooling/scripts/lint-readable.mjs",
+            "sha256": "fff2e006b2709345baafe18b4147c00541cd3f83d78ff113bb82032f2abcb45f"
+        },
+        {
+            "path": "ui/components/classroom/ui/app.js",
+            "sha256": "f3ff81e7d17e0993f31c745336ee161d52cc61677a19cc08af696bf20a59bb44"
+        },
+        {
+            "path": "ui/components/classroom/ui/index.html",
+            "sha256": "3129415f038bbd879e4c7fe16fdf4fadf81ae90f561c2136ead7796cb6f58069"
+        },
+        {
+            "path": "ui/components/hiragana-alphabet/ui/app.js",
+            "sha256": "d6f5d3ac4916867418ad0cd0f352afc70638f2f5ad0b4a2c8a6cf340b609fbbc"
+        },
+        {
+            "path": "ui/components/hiragana-alphabet/ui/hiragana.css",
+            "sha256": "bcbc26ee76f6e88b8806d45ebb805bec7ecc6104d2109c9255c888eea7df18bd"
+        },
+        {
+            "path": "ui/components/hiragana-alphabet/ui/index.html",
+            "sha256": "44c972bdcd7c8c7fae6618a0ca0ee8dbeb4ba6aeefabeb799f588294c51447db"
+        },
+        {
+            "path": "ui/components/library/ui/app.js",
+            "sha256": "9e7e123726b0c80ac589859fa38316ed000314c65e890da68608f8fc86f47ec6"
+        },
+        {
+            "path": "ui/components/library/ui/index.html",
+            "sha256": "b8d4be43e6ca1b8d4e4ac2d0e2bdd1fbe2b0868764eca60a29b1b5a663d8e448"
+        },
+        {
+            "path": "ui/index.html",
+            "sha256": "941b0bc6b60725c374d1517d65f6aa21aecfd49b8e518a256309d238219389ee"
+        },
+        {
+            "path": "ui/languages/de/strings.xml",
+            "sha256": "7e895d841da88278d4e30aba0352411a930fe233e8197e6666848520abc506a3"
+        },
+        {
+            "path": "ui/languages/en/strings.xml",
+            "sha256": "cb114d95f4deb2693f43fba0cb687653c0cfb1f93b96c58f0db7ce7f41d7b55b"
+        },
+        {
+            "path": "ui/languages/id/strings.xml",
+            "sha256": "af618b11773ce52693b925e470cf585d3166eb9b721235dc052ee5701aa09eb3"
+        },
+        {
+            "path": "ui/languages/ja/strings.xml",
+            "sha256": "38dd03a1886fc483088aa46bf9d3ffc22bfcd09661192aac55221cff26b7ad83"
+        },
+        {
+            "path": "ui/navbar.js",
+            "sha256": "9f145538698087356f69a01dbf50581f38211a4c8d17232fa2c7a5e658f7ec58"
+        },
+        {
+            "path": "ui/tests/ambiguous-names.test.js",
+            "sha256": "4f490771c3678dcc716b25f4465fb39c9eab476774897cc030c9ec690d2761eb"
+        },
+        {
+            "path": "ui/tests/localization-quality.test.js",
+            "sha256": "05ad2f86a2ea0d606cfba6cdc2f2909cef1bd0e3ba1fcd19b633cf4f8de45318"
+        }
+    ]
 }
