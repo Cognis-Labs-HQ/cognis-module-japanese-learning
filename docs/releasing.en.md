@@ -1,6 +1,6 @@
 # Releasing
 
-The release process keeps the external-module metadata, integrity inventory, and verification results synchronized for publication.
+The release process keeps external-module metadata, the integrity inventory, and verification results synchronized for publication.
 
 ## Usage Examples
 

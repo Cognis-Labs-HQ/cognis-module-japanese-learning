@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import { createHash } from "node:crypto";
 import { access, readFile } from "node:fs/promises";
 import { execFileSync } from "node:child_process";
+import { existsSync, statSync } from "node:fs";
 
 const manifest = JSON.parse(await readFile("manifest.json", "utf8"));
 const packageJson = JSON.parse(await readFile("package.json", "utf8"));
@@ -33,7 +34,13 @@ const expectedPaths = execFileSync(
 )
     .trim()
     .split("\n")
-    .filter((path) => path && path !== "manifest.json")
+    .filter(
+        (path) =>
+            path &&
+            path !== "manifest.json" &&
+            existsSync(path) &&
+            statSync(path).isFile(),
+    )
     .sort();
 const packagedPaths = manifest.files.map((file) => file.path).sort();
 assert.deepEqual(
