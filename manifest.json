@@ -16,6 +16,7 @@
         "ui": "./ui/index.html",
         "cli": "./cli/index.js"
     },
+    "ui": { "stringsBaseUrl": "/static/modules/study-language-ja/languages" },
     "publisher": "Cognis Labs HQ",
     "requires": ["338b9237-a2c8-5bcf-9437-bccc9abd9a27"],
     "requiresCapabilities": ["auth:requireAuth"],
@@ -71,15 +72,31 @@
         },
         {
             "path": "AGENTS.md",
-            "sha256": "5e2d46bdba263d4105de0c53eca06d036660a8918526cf1441b22cc59cdd955c"
+            "sha256": "6bcca4379b9fb58686065f8e41627fbfeb99cc0906b2fcbe716241e1170a4bec"
         },
         {
             "path": "LICENSE",
             "sha256": "8486a10c4393cee1c25392769ddd3b2d6c242d6ec7928e1414efff7dfb2f07ef"
         },
         {
+            "path": "README.de.md",
+            "sha256": "9222cc3e637d963428422285a3b4282f524f00cf85670b4794cb9caddc62d409"
+        },
+        {
+            "path": "README.en.md",
+            "sha256": "c355d33e6bb0e9654b42b1fc214bc7a7ce51b47551494efb747023461c8c45ec"
+        },
+        {
+            "path": "README.id.md",
+            "sha256": "28d2cc504ee5b2ca5698334722fe76ed64646b1f34c0faae61a6cffa69c12eb0"
+        },
+        {
+            "path": "README.ja.md",
+            "sha256": "e527a390c2633f5cacd8d2424a7ae3be70c183bbeabbad8139323968c116cce9"
+        },
+        {
             "path": "README.md",
-            "sha256": "82eb73fb35f03ed17d2ede244f058ce10585b213f1a07640565030ee831510dd"
+            "sha256": "c355d33e6bb0e9654b42b1fc214bc7a7ce51b47551494efb747023461c8c45ec"
         },
         {
             "path": "api/index.js",
@@ -251,7 +268,7 @@
         },
         {
             "path": "ui/tests/localization-quality.test.js",
-            "sha256": "05ad2f86a2ea0d606cfba6cdc2f2909cef1bd0e3ba1fcd19b633cf4f8de45318"
+            "sha256": "4103e82d0b70f55af675ecc2513cffc5e0e8b65d3d629ca80b9609a44d02db45"
         }
     ]
 }
