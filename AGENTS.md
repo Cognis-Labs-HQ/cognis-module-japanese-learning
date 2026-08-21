@@ -12,6 +12,8 @@ This repository delivers exactly one external Cognis module. Keep `manifest.json
 
 Keep versions in `manifest.json`, `package.json`, and `package-lock.json` synchronized. Keep `package.json` configured with `type: module`, keep `routes.json` as an array, and use exact filename casing. After the final file change, run `npm run manifest:hashes`; never include `manifest.json` in its own digest inventory.
 
+Always set `ui.stringsBaseUrl` in `manifest.json` to the module-owned locale bundle base URL so Cognis can resolve localized manifest metadata before the module UI loads.
+
 Do not add secrets or personal data. Review new capabilities and dependencies carefully.
 
 ## Component Isolation and ctx
