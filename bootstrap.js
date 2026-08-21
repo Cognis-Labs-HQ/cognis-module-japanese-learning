@@ -5,29 +5,37 @@ const LANGUAGE = {
     languageCode: "ja",
     languageName: "日本語",
     languageFlag: "🇯🇵",
-    version: "1.2.12",
+    version: "1.2.14",
     childComponents: [
         {
             id: "hiragana-alphabet",
-            label: "Hiragana Alphabet",
+            label: "module.study-language-ja.hiragana",
             pageUrl: "/study/hiragana",
             order: 0,
         },
         {
             id: "library",
-            label: "Library",
+            label: "module.study-language-ja.library",
             pageUrl: "/study/library",
             minRole: "admin",
             order: 100,
         },
         {
             id: "classroom",
-            label: "Classroom",
+            label: "module.study-language-ja.classroom",
             pageUrl: "/study/ja-classroom",
             order: 999,
         },
     ],
 };
+
+export async function uninstallModule(ctx, { deleteContent }) {
+    ctx.log?.("info", "Japanese learning module cleanup completed.", {
+        component: "study-language-ja",
+        operation: "uninstall_cleanup",
+        deleteContent,
+    });
+}
 
 export async function bootstrapModule(ctx) {
     const store = await registerApi(ctx);
