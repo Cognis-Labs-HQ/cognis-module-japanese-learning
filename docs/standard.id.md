@@ -20,6 +20,7 @@ Modul ini merupakan ekstensi Cognis eksternal. UUID permanennya mengidentifikasi
 - `ctx` yang diberikan adalah satu-satunya bus lintas komponen untuk rute, registrasi UI, capability, dan hook flow.
 - Impor runtime selalu relatif terhadap repositori dan tidak pernah mengakses internal Cognis atau komponen lain.
 - Registrasi tercakup dapat dihapus saat modul dinonaktifkan atau dicopot.
+- Hook penghapusan instalasi mencatat pembersihan siklus hidup yang diminta tanpa langsung menghapus berkas set data pembelajaran dalam paket; berkas tersebut tetap dimiliki paket modul dan dihapus bersama paketnya.
 
 ### Keamanan
 

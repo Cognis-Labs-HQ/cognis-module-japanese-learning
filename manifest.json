@@ -1,8 +1,8 @@
 {
     "id": "study-language-ja",
     "uuid": "e905927f-b133-572a-92ce-2ea8645e5ceb",
-    "name": "Cognis Japanese",
-    "version": "1.2.12",
+    "name": "module.study-language-ja.name",
+    "version": "1.2.14",
     "class": "extension",
     "coreApiVersion": "v1",
     "capabilities": [
@@ -19,9 +19,12 @@
     "publisher": "Cognis Labs HQ",
     "requires": ["338b9237-a2c8-5bcf-9437-bccc9abd9a27"],
     "requiresCapabilities": ["auth:requireAuth"],
-    "summary": "Japanese learning content for Cognis Study.",
-    "description": "Adds Japanese libraries, kana activities, classrooms, and learning tools to Study.",
-    "categories": ["Education", "Productivity"],
+    "summary": "module.study-language-ja.summary",
+    "description": "module.study-language-ja.description",
+    "categories": [
+        "module.study-language-ja.category_education",
+        "module.study-language-ja.category_productivity"
+    ],
     "license": "AGPL-3.0-or-later",
     "repository": "https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning",
     "homepage": "https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning#readme",
@@ -31,7 +34,12 @@
         "icon": "assets/icon.svg",
         "banner": "assets/banner.svg"
     },
-    "tags": ["japanese", "language", "learning", "study"],
+    "tags": [
+        "module.study-language-ja.tag_japanese",
+        "module.study-language-ja.tag_language",
+        "module.study-language-ja.tag_learning",
+        "module.study-language-ja.tag_study"
+    ],
     "files": [
         {
             "path": ".github/DOCUMENTATION_TEMPLATE.de.md",
@@ -98,6 +106,10 @@
             "sha256": "c26a60e49e9b102582c6e65b77c74df44617e0f313b1510aae5ecb8610a37f61"
         },
         {
+            "path": "api/tests/uninstall.test.js",
+            "sha256": "1bc04e9299adb8031b18b4499380dd75bb5f68bafe18e73ce8793e43a5d5bc2c"
+        },
+        {
             "path": "assets/banner.svg",
             "sha256": "793cf276c3fde091bfcf1599a763cb6ab6bf0d08d92a21b56fe0580b42cd5f6d"
         },
@@ -107,7 +119,7 @@
         },
         {
             "path": "bootstrap.js",
-            "sha256": "2b7f4f8ac12573cf4b72b6ec3588bb14dc2df060b1b38c3b6f3e3f31774a61e6"
+            "sha256": "1346c307f5ceb37e6ca0be9db3d172ecdff1cc0c982ac556e6c41966b49a14d4"
         },
         {
             "path": "cli/index.js",
@@ -139,27 +151,27 @@
         },
         {
             "path": "docs/standard.de.md",
-            "sha256": "1c8158f19f0ed9f25519bcdd2f21c2551f843760f0b00d99875ddbfddfabaade"
+            "sha256": "1fc3e99e578b7f276ca0fabbd881128743d11291468f36b8983411d2d458d32a"
         },
         {
             "path": "docs/standard.en.md",
-            "sha256": "92f0d841cd8d45fc474765762501fba6d8855616290cff1be3ef4e67faf345d7"
+            "sha256": "bb464bf0f45f7f97e52e183f66c2a18aa047e955914a3f076972f9eb6552c355"
         },
         {
             "path": "docs/standard.id.md",
-            "sha256": "fb7940b9e091287a45261afbb4815d88cf0c13dff3530e9aca75b949f76c3308"
+            "sha256": "a58585d2dbe5c064e01287ce8017f7bdd231faa620aa8c2b11871164763f696e"
         },
         {
             "path": "docs/standard.ja.md",
-            "sha256": "d75ef553c1f7067b9d94aa2c07d8f2d9c2f1a1605e851a74c5827807dedfa5a6"
+            "sha256": "92c0d142caba0ff6582a2b654a5bb09b9a27194fc8544231b1ae7cd7faacd3a4"
         },
         {
             "path": "package-lock.json",
-            "sha256": "7f65ce00d8f14cdee7674e576cc5fedf63f7998ce5413e5c753f3224c61b92bd"
+            "sha256": "1909c81a1f43853760a5f3ff4b14e258015c83218d4f558244332a5ea14d3474"
         },
         {
             "path": "package.json",
-            "sha256": "1f9682afa09777aff0000a9a230ba5c165b07e9ef23035bbf88eb61f2a86dd50"
+            "sha256": "644f95fd26ec017dbd95a129c28dbdb050b461b7924c00cfcc89e951c2a3b055"
         },
         {
             "path": "routes.json",
@@ -215,19 +227,19 @@
         },
         {
             "path": "ui/languages/de/strings.xml",
-            "sha256": "7e895d841da88278d4e30aba0352411a930fe233e8197e6666848520abc506a3"
+            "sha256": "54104b098a3cf5f48d8bff77c75435912522498731a8ee278a5eee4a5949839e"
         },
         {
             "path": "ui/languages/en/strings.xml",
-            "sha256": "cb114d95f4deb2693f43fba0cb687653c0cfb1f93b96c58f0db7ce7f41d7b55b"
+            "sha256": "d193bfa17f2326262fd706eeff5dee642ccd4591dccfe0b3f7edb8ddea659bc5"
         },
         {
             "path": "ui/languages/id/strings.xml",
-            "sha256": "af618b11773ce52693b925e470cf585d3166eb9b721235dc052ee5701aa09eb3"
+            "sha256": "b3609d8a318ed4490a21ed1b3666d90dca239d39c7ff3f2b55eab0266eec9f12"
         },
         {
             "path": "ui/languages/ja/strings.xml",
-            "sha256": "38dd03a1886fc483088aa46bf9d3ffc22bfcd09661192aac55221cff26b7ad83"
+            "sha256": "b04026acbd238386fd95cc0adc7b800d94287b397fa18b1a9dc64b2e8a961f4c"
         },
         {
             "path": "ui/navbar.js",

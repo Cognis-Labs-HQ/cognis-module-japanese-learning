@@ -20,6 +20,7 @@ The module is an external Cognis extension. Its permanent UUID identifies it acr
 - The supplied `ctx` is the only cross-component bus for routes, UI registrations, capabilities, and flow hooks.
 - Runtime imports remain repository-relative and never access Cognis internals or sibling components.
 - Scoped registrations are removable when the module is disabled or uninstalled.
+- The uninstall hook records the requested lifecycle cleanup without directly deleting packaged learning dataset files; those files remain owned by the module package and are removed with the package itself.
 
 ### Security
 

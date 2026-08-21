@@ -20,6 +20,7 @@ Das Modul ist eine externe Cognis-Erweiterung. Seine dauerhafte UUID identifizie
 - Das bereitgestellte `ctx` ist der einzige komponentenübergreifende Bus für Routen, UI-Registrierungen, Capabilities und Flow-Hooks.
 - Laufzeitimporte bleiben repository-relativ und greifen niemals auf Cognis-Interna oder benachbarte Komponenten zu.
 - Bereichsgebundene Registrierungen lassen sich beim Deaktivieren oder Deinstallieren des Moduls entfernen.
+- Der Deinstallations-Hook protokolliert die angeforderte Lebenszyklus-Bereinigung, ohne paketierte Lerndatendateien direkt zu löschen; diese Dateien gehören weiterhin zum Modulpaket und werden zusammen mit dem Paket entfernt.
 
 ### Sicherheit
 
