@@ -22,6 +22,11 @@ function headingLevels(path) {
         .map((line) => line.match(/^#+/)[0].length);
 }
 
+function changelogFiles() {
+    const directory = resolve(ROOT, "docs/changelog");
+    return markdownFiles(directory);
+}
+
 test("documentation follows the hidden heading convention", () => {
     const expected = headingLevels(TEMPLATE).slice(0, 3);
     const violations = markdownFiles(resolve(ROOT, "docs")).flatMap((path) => {
@@ -60,6 +65,37 @@ test("every documentation topic has one variant per supported language", () => {
         const variants = families.get(topic) ?? new Set();
         variants.add(language);
         families.set(topic, variants);
+    }
+    for (const [topic, variants] of families) {
+        assert.deepEqual([...variants].sort(), [...LANGUAGES].sort(), topic);
+    }
+});
+
+test("localized changelogs identify their feature branch and commits", () => {
+    const families = new Map();
+    for (const path of changelogFiles()) {
+        const name = relative(resolve(ROOT, "docs/changelog"), path);
+        const match = /^(.*)\.(de|en|id|ja)\.md$/.exec(name);
+        assert.ok(
+            match,
+            `${relative(ROOT, path)} must include a language suffix`,
+        );
+        const [, topic, language] = match;
+        const variants = families.get(topic) ?? new Set();
+        variants.add(language);
+        families.set(topic, variants);
+
+        const markdown = readFileSync(path, "utf8");
+        const branchMatches = [
+            ...markdown.matchAll(/^\*\*Feature Branch:\*\*\s+(.+)$/gm),
+        ];
+        const branch = branchMatches[0]?.[1]?.trim();
+        const hasCommitSection = /^## .*?(?:commits?|komit|コミット).*$/im.test(
+            markdown,
+        );
+        assert.equal(branchMatches.length, 1, relative(ROOT, path));
+        assert.ok(branch, relative(ROOT, path));
+        assert.ok(hasCommitSection, relative(ROOT, path));
     }
     for (const [topic, variants] of families) {
         assert.deepEqual([...variants].sort(), [...LANGUAGES].sort(), topic);
