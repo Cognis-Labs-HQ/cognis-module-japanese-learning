@@ -1,6 +1,6 @@
 # Align external-module changelogs
 
-**Feature Branch:** work
+**Feature Branch:** feature-align-changelog-and-ai-instructions
 
 ## Adopt the localized changelog layout
 
@@ -15,3 +15,5 @@ Repository guidance now documents changelog naming, localization, immutability, 
 Standalone tests verify language parity, feature-branch metadata, and localized commit headings for every module changelog family.
 
 ## Commits
+
+- [0cd5c25](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/0cd5c258a6909603c6d0da8b3b649ae4bd0e0345)

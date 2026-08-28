@@ -83,6 +83,11 @@ test("external module metadata and declared files are consistent", () => {
     for (const entrypoint of Object.values(manifest.entrypoints)) {
         assert.ok(statSync(resolve(ROOT, entrypoint)).isFile());
     }
+    assert.equal(
+        manifest.files.some((file) => file.path.startsWith("docs/changelog/")),
+        false,
+        "changelogs must remain outside the manifest digest inventory",
+    );
     for (const file of manifest.files) {
         const path = resolve(ROOT, file.path);
         assert.ok(statSync(path).isFile(), file.path);

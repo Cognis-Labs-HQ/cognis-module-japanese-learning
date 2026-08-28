@@ -1,6 +1,6 @@
 # 外部モジュールの変更履歴を統一
 
-**Feature Branch:** work
+**Feature Branch:** feature-align-changelog-and-ai-instructions
 
 ## ローカライズされた変更履歴構成を採用
 
@@ -15,3 +15,5 @@
 モジュールの各変更履歴ファミリーについて、言語の一致、機能ブランチのメタデータ、およびローカライズされたコミット見出しを単体テストで検証します。
 
 ## コミット
+
+- [0cd5c25](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/0cd5c258a6909603c6d0da8b3b649ae4bd0e0345)

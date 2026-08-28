@@ -1,6 +1,6 @@
 # Menyelaraskan changelog modul eksternal
 
-**Feature Branch:** work
+**Feature Branch:** feature-align-changelog-and-ai-instructions
 
 ## Mengadopsi tata letak changelog yang dilokalkan
 
@@ -15,3 +15,5 @@ Panduan repositori kini mendokumentasikan penamaan, pelokalan, sifat tetap, dan 
 Pengujian mandiri memeriksa kesetaraan bahasa, metadata cabang fitur, dan judul commit yang dilokalkan untuk setiap keluarga changelog modul.
 
 ## Komit
+
+- [0cd5c25](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/0cd5c258a6909603c6d0da8b3b649ae4bd0e0345)
