@@ -37,6 +37,22 @@ Keep API code in `api/`, browser resources in `ui/`, CLI controls in `cli/`, doc
 
 Keep files at or below 1000 lines. Prefer descriptive names over abbreviations and one- or two-letter bindings, except conventional coordinates, loop counters, row or column counters, `_`, and `id`.
 
+## Changelog Entries
+
+Store changelog entries in `docs/changelog/`; do not create or append to a root monolithic changelog. Every pull request must add one localized file for each supported language (`de`, `en`, `id`, and `ja`) using `<branch-name>.<lang>.md`, with any `copilot/` prefix removed from the branch name.
+
+Each localized changelog must use this structure:
+
+- `# ...` — the localized release-summary title.
+- `**Feature Branch:** ...` — the exact feature branch, or `N/A` for an entry with no branch provenance.
+- `## ...` — one localized change point per heading for release-popup summaries.
+- Body content beneath each `##` — the localized details shown on the full changelog page.
+- A localized commits heading — canonical commit links associated with the change; leave the list empty only when the feature branch is `N/A`.
+
+Translate the content of each file into its declared language. Existing changelog entries are immutable historical records except when a factual correction is required.
+
+Every implementation commit described by the current pull request's changelog must ensure that the changelog commit list links the immediately preceding implementation commit. When this provenance update is requested immediately before implementation, finish with a dedicated final commit that changes only the localized changelog files, records the preceding implementation commit, and does not link itself.
+
 ## UI Requirements
 
 Use the Cognis page composer and host router; never navigate with `window.location.href`, `window.location.replace`, or `window.location.reload`. Resolve user-facing text through all four XML locale files and preserve German, English, Indonesian, and Japanese key parity. Use host capabilities for timestamps, feedback, theme, fonts, and cross-component data. Do not use `alert`, `confirm`, or `prompt`. Do not add CSS comments.
