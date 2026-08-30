@@ -2,6 +2,8 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import {
     allowedReferenceLayers,
+    cloneLibraryTemplate,
+    inferReferenceLinks,
     isLibraryLayer,
     validateReferenceLayers,
 } from "../library/layers.js";
@@ -57,6 +59,60 @@ test("defines and validates the layered library graph", () => {
                 new Map([["alphabet", "alphabet"]]),
             ),
         /invalid_reference:sentences:alphabet/,
+    );
+});
+
+test("clones only requested layers and preserves canonical link metadata", () => {
+    const template = cloneLibraryTemplate([
+        "alphabet",
+        "alt_characters",
+        "definitions",
+        "words",
+        "sentences",
+    ]);
+    assert.deepEqual(
+        template.layers.map(({ id }) => id),
+        ["alphabet", "alt_characters", "definitions", "words", "sentences"],
+    );
+    assert.deepEqual(allowedReferenceLayers("sentences", template), [
+        "words",
+        "definitions",
+    ]);
+    assert.equal(
+        template.layers
+            .find(({ id }) => id === "sentences")
+            .links.find(({ layer }) => layer === "words").required,
+        true,
+    );
+    assert.throws(
+        () => cloneLibraryTemplate(["alphabet", "alphabet"]),
+        /duplicate_layer/,
+    );
+    assert.throws(
+        () => cloneLibraryTemplate(["alphabet", "unknown"]),
+        /invalid_layer/,
+    );
+});
+
+test("infers character-to-word and word-to-sentence links", () => {
+    const candidates = new Map([
+        ["alphabet", [{ id: "letter-a", label: "a" }]],
+        ["words", [{ id: "word-cat", label: "cat" }]],
+    ]);
+    assert.deepEqual(inferReferenceLinks("words", "cat", candidates), [
+        { entryId: "letter-a", relation: "contains" },
+    ]);
+    assert.deepEqual(
+        inferReferenceLinks("sentences", "a cat naps", candidates),
+        [{ entryId: "word-cat", relation: "contains" }],
+    );
+});
+
+test("enforces required links in cloned templates", () => {
+    const template = cloneLibraryTemplate(["words", "sentences"]);
+    assert.throws(
+        () => validateReferenceLayers("sentences", [], new Map(), template),
+        /reference_required:sentences:words/,
     );
 });
 
@@ -129,4 +185,35 @@ test("exports words and sentences in JSON and Anki formats", async () => {
         await service.exportAnki(actor, { scope: "global" }),
         /^猫\tcat$/,
     );
+});
+
+test("infers sentence word references while preserving explicit references", async () => {
+    const store = createMemoryStore();
+    const service = new LibraryService(store);
+    const actor = { accountId: "admin-1", role: "admin" };
+    const cat = await service.create(
+        actor,
+        { scope: "global" },
+        { layer: "words", label: "cat" },
+    );
+    const inferred = await service.create(
+        actor,
+        { scope: "global" },
+        { layer: "sentences", label: "a cat naps" },
+    );
+    assert.deepEqual(inferred.references, [
+        { entryId: cat.id, relation: "contains" },
+    ]);
+    const explicit = await service.create(
+        actor,
+        { scope: "global" },
+        {
+            layer: "sentences",
+            label: "unmatched text",
+            references: [{ entryId: cat.id, relation: "contains" }],
+        },
+    );
+    assert.deepEqual(explicit.references, [
+        { entryId: cat.id, relation: "contains" },
+    ]);
 });

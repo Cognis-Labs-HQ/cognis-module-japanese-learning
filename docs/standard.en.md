@@ -2,6 +2,10 @@
 
 The Cognis Japanese module provides an installable Japanese learning experience for the Cognis Study gateway, including kana and kanji data, a learning library, and classroom entry points.
 
+## Consumer Templates
+
+Consumers obtain the library through the `study:library` capability and call `cloneTemplate` with exactly the layers they need. Clones retain canonical ordering and layer relationship metadata, discard links to omitted layers, and identify required dependencies. Word and sentence creation can infer links from normalized characters and whitespace-delimited words; explicit references remain authoritative.
+
 ## Usage Examples
 
 - Open `/study/hiragana` to explore the hiragana alphabet.

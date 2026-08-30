@@ -4,6 +4,10 @@
 
 Cognis Japanisch ist das externe Modul mit japanischen Lerninhalten für das Cognis-Study-Gateway. Es enthält die japanische Sprachbeschreibung, die Hiragana-Aktivität, den bereichsbezogenen Bibliotheksbrowser, den Unterrichtsbereich und japanische Lerndatensätze.
 
+## Vorlagen für Verbraucher
+
+Verbraucher rufen über die `study:library`-Fähigkeit `cloneTemplate` mit genau den benötigten Ebenen auf. Kopien behalten die kanonische Reihenfolge und Beziehungsmetadaten bei, entfernen Verknüpfungen zu ausgelassenen Ebenen und kennzeichnen erforderliche Abhängigkeiten. Beim Erstellen von Wörtern und Sätzen können Verknüpfungen aus normalisierten Zeichen und durch Leerraum getrennten Wörtern abgeleitet werden; ausdrückliche Referenzen bleiben maßgeblich.
+
 ## Voraussetzungen
 
 - Cognis mit aktiviertem Study-Gateway.

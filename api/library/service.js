@@ -1,4 +1,9 @@
-import { isLibraryLayer, validateReferenceLayers } from "./layers.js";
+import {
+    cloneLibraryTemplate,
+    inferReferenceLinks,
+    isLibraryLayer,
+    validateReferenceLayers,
+} from "./layers.js";
 
 function normalizeLocation(location, actor) {
     if (location?.scope === "global")
@@ -27,6 +32,10 @@ export class LibraryService {
     constructor(store, classAccess) {
         this.store = store;
         this.classAccess = classAccess;
+    }
+
+    cloneTemplate(includedLayers) {
+        return cloneLibraryTemplate(includedLayers);
     }
 
     async authorize(actor, rawLocation, write) {
@@ -112,8 +121,15 @@ export class LibraryService {
                 });
             }
         }
-        if (input.layer === "sentences" && references.length === 0)
-            throw new Error("references_required");
+        if (input.layer === "sentences" && references.length === 0) {
+            const candidates = new Map();
+            for (const layer of ["words", "definitions"]) {
+                candidates.set(layer, await this.store.list(location, layer));
+            }
+            references.push(
+                ...inferReferenceLinks(input.layer, input.label, candidates),
+            );
+        }
         const referencedLayers = new Map();
         for (const reference of references) {
             const referencedEntry = await this.read(actor, reference.entryId);

@@ -4,6 +4,10 @@
 
 Cognis Japanese is the external Japanese learning content module for the Cognis Study gateway. It packages the Japanese language descriptor, hiragana activity, scoped library browser, classroom surface, and Japanese learning datasets.
 
+## Consumer Templates
+
+Consumers obtain the library through the `study:library` capability and call `cloneTemplate` with exactly the layers they need. Clones retain canonical ordering and layer relationship metadata, discard links to omitted layers, and identify required dependencies. Word and sentence creation can infer links from normalized characters and whitespace-delimited words; explicit references remain authoritative.
+
 ## Requirements
 
 - Cognis with the Study gateway enabled.

@@ -2,6 +2,10 @@
 
 Modul Cognis Japanese menyediakan pengalaman belajar bahasa Jepang yang dapat dipasang untuk gateway Cognis Study, termasuk data kana dan kanji, pustaka pembelajaran, serta titik masuk kelas.
 
+## Templat untuk Konsumen
+
+Konsumen memperoleh pustaka melalui kapabilitas `study:library` dan memanggil `cloneTemplate` dengan lapisan yang benar-benar diperlukan. Salinan mempertahankan urutan baku dan metadata hubungan lapisan, membuang tautan menuju lapisan yang dihilangkan, serta menandai dependensi wajib. Pembuatan kata dan kalimat dapat menyimpulkan tautan dari karakter yang dinormalisasi dan kata yang dipisahkan spasi; referensi eksplisit tetap menjadi acuan.
+
 ## Contoh Penggunaan
 
 - Buka `/study/hiragana` untuk mempelajari alfabet hiragana.

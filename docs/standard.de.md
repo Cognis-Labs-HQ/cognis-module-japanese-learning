@@ -2,6 +2,10 @@
 
 Das Cognis-Japanischmodul stellt für das Cognis-Study-Gateway eine installierbare Japanischlernumgebung mit Kana- und Kanji-Daten, einer Lernbibliothek und Einstiegspunkten für den Unterricht bereit.
 
+## Vorlagen für Verbraucher
+
+Verbraucher rufen über die `study:library`-Fähigkeit `cloneTemplate` mit genau den benötigten Ebenen auf. Kopien behalten die kanonische Reihenfolge und Beziehungsmetadaten bei, entfernen Verknüpfungen zu ausgelassenen Ebenen und kennzeichnen erforderliche Abhängigkeiten. Beim Erstellen von Wörtern und Sätzen können Verknüpfungen aus normalisierten Zeichen und durch Leerraum getrennten Wörtern abgeleitet werden; ausdrückliche Referenzen bleiben maßgeblich.
+
 ## Anwendungsbeispiele
 
 - Öffnen Sie `/study/hiragana`, um das Hiragana-Alphabet zu erkunden.

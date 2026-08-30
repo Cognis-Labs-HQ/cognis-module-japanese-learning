@@ -10,6 +10,11 @@ Die Bibliothek aus Paketdateien wurde durch die datenbankgestützte Study-Biblio
 
 Die lokalisierte Bibliotheksseite wurde aktualisiert, um gefüllte globale Ebenen mit dem Seiten-Composer des Hosts zu durchsuchen.
 
+## Auswählbare Vorlagen
+
+Verbraucher können nur die benötigten Ebenen der kanonischen Bibliotheksvorlage kopieren. Beziehungsmetadaten erhalten gültige Verknüpfungen und erforderliche Abhängigkeiten, während bei der Erstellung von Wörtern und Sätzen passende Verknüpfungen abgeleitet werden können.
+
 ## Commits
 
-- [bc2ceee](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/bc2ceeedc5759ce0f7abcbb133fba25c016492b8)
+- [fdd79cb](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/fdd79cb39b27816d690c2ff8f3101b4fb58fdecd)
+- [f11ffe8](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/f11ffe873261ded10b3c413a278de09fda99f492)
