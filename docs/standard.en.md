@@ -7,7 +7,7 @@ The Cognis Japanese module provides an installable Japanese learning experience 
 - Open `/study/hiragana` to explore the hiragana alphabet.
 - Open `/study/library` as an administrator to review and extend the module's learning records.
 - Open `/study/ja-classroom` to start a Japanese classroom session through Study.
-- Request `/api/v1/study/languages/ja/library/snapshot` with a valid Cognis access token to read the library snapshot.
+- Request `/api/v1/study/library/entries?scope=global` with a valid Cognis access token to read global library entries.
 - Resolve the `study:language:ja` capability to integrate the language descriptor without importing module internals.
 
 ## Technical Specification
@@ -25,7 +25,7 @@ The module is an external Cognis extension. Its permanent UUID identifies it acr
 ### Security
 
 - Library endpoints authenticate requests before reading or changing data.
-- Library writes require an administrator, validate record objects at the API boundary, and restrict layer names to an allow-list.
+- Global library writes require an administrator or owner. User and class writes are scope-authorized, while all entries validate layers, fields, and reference relationships at the API boundary.
 - API responses use stable public errors without exposing implementation details.
 - Failures are sent to the host logger with safe structured metadata.
 

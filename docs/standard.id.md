@@ -7,7 +7,7 @@ Modul Cognis Japanese menyediakan pengalaman belajar bahasa Jepang yang dapat di
 - Buka `/study/hiragana` untuk mempelajari alfabet hiragana.
 - Buka `/study/library` sebagai administrator untuk meninjau dan menambah materi pembelajaran modul.
 - Buka `/study/ja-classroom` untuk memulai sesi kelas bahasa Jepang melalui Study.
-- Minta `/api/v1/study/languages/ja/library/snapshot` dengan token akses Cognis yang valid untuk membaca snapshot pustaka.
+- Minta `/api/v1/study/library/entries?scope=global` dengan token akses Cognis yang valid untuk membaca entri pustaka global.
 - Gunakan capability `study:language:ja` untuk mengintegrasikan deskriptor bahasa tanpa mengimpor internal modul.
 
 ## Spesifikasi Teknis

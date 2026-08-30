@@ -2,7 +2,7 @@
 
 [English](README.en.md) · [Deutsch](README.de.md) · [Bahasa Indonesia](README.id.md) · **日本語**
 
-Cognis 日本語は、Cognis Study ゲートウェイ向けの日本語学習コンテンツを提供する外部モジュールです。日本語の言語記述、ひらがなアクティビティ、ライブラリ管理画面、教室画面に加え、文字、定義、単語、文のデータセットを収録しています。
+Cognis 日本語は、Cognis Study ゲートウェイ向けの日本語学習コンテンツを提供する外部モジュールです。日本語の言語記述、ひらがなアクティビティ、スコープ別ライブラリブラウザー、教室画面、日本語学習データセットを収録しています。
 
 ## 要件
 
@@ -18,7 +18,7 @@ npm test
 npm run check:manifest
 ```
 
-このモジュールは `/study/hiragana`、`/study/library`、`/study/ja-classroom` を登録します。認証が必要なライブラリ API は `/api/v1/study/languages/ja/library` 以下で利用できます。
+このモジュールは `/study/hiragana`、`/study/library`、`/study/ja-classroom` を登録します。認証が必要な多層ライブラリ API は `/api/v1/study/library` 以下で利用でき、グローバル・クラス・ユーザーの各スコープ、依存関係の追跡、JSON・Anki 交換、審査付きプッシュリクエストに対応します。
 
 manifest はモジュール所有の言語バンドルとして `/static/modules/study-language-ja/languages` を公開し、Cognis が UI の読み込み前にマーケットプレイスのメタデータを翻訳できるようにします。
 

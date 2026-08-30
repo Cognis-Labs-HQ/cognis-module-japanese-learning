@@ -2,7 +2,7 @@
 
 [English](README.en.md) · **Deutsch** · [Bahasa Indonesia](README.id.md) · [日本語](README.ja.md)
 
-Cognis Japanisch ist das externe Modul mit japanischen Lerninhalten für das Cognis-Study-Gateway. Es enthält die japanische Sprachbeschreibung, die Hiragana-Aktivität, die Bibliotheksverwaltung, den Unterrichtsbereich sowie Zeichen-, Definitions-, Wort- und Satzdatensätze der Sprache.
+Cognis Japanisch ist das externe Modul mit japanischen Lerninhalten für das Cognis-Study-Gateway. Es enthält die japanische Sprachbeschreibung, die Hiragana-Aktivität, den bereichsbezogenen Bibliotheksbrowser, den Unterrichtsbereich und japanische Lerndatensätze.
 
 ## Voraussetzungen
 
@@ -18,7 +18,7 @@ npm test
 npm run check:manifest
 ```
 
-Das Modul registriert `/study/hiragana`, `/study/library` und `/study/ja-classroom`. Seine authentifizierte Bibliotheks-API ist unter `/api/v1/study/languages/ja/library` verfügbar.
+Das Modul registriert `/study/hiragana`, `/study/library` und `/study/ja-classroom`. Seine authentifizierte, mehrschichtige Bibliotheks-API ist unter `/api/v1/study/library` verfügbar und unterstützt globale, Klassen- und Benutzerbereiche, Abhängigkeitsverfolgung, JSON- und Anki-Austausch sowie geprüfte Push-Anfragen.
 
 Das Manifest veröffentlicht `/static/modules/study-language-ja/languages` als moduleigenes Sprachpaket, damit Cognis Marketplace-Metadaten vor dem Laden der UI übersetzen kann.
 

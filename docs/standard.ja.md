@@ -7,7 +7,7 @@ Cognis Japanese モジュールは、かな・漢字データ、学習ライブ�
 - `/study/hiragana` を開き、ひらがなを学習します。
 - 管理者として `/study/library` を開き、モジュールの学習データを確認または追加します。
 - `/study/ja-classroom` を開き、Study を通じて日本語クラスルームのセッションを開始します。
-- 有効な Cognis アクセストークンで `/api/v1/study/languages/ja/library/snapshot` を呼び出し、ライブラリのスナップショットを読み取ります。
+- 有効な Cognis アクセストークンで `/api/v1/study/library/entries?scope=global` を呼び出し、グローバルライブラリの項目を読み取ります。
 - `study:language:ja` Capability を解決し、モジュール内部をインポートせずに言語記述子を連携します。
 
 ## 技術仕様

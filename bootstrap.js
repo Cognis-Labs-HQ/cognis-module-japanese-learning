@@ -5,7 +5,7 @@ const LANGUAGE = {
     languageCode: "ja",
     languageName: "日本語",
     languageFlag: "🇯🇵",
-    version: "1.2.14",
+    version: "1.3.0",
     childComponents: [
         {
             id: "hiragana-alphabet",
@@ -17,7 +17,6 @@ const LANGUAGE = {
             id: "library",
             label: "module.study-language-ja.library",
             pageUrl: "/study/library",
-            minRole: "admin",
             order: 100,
         },
         {
@@ -38,15 +37,13 @@ export async function uninstallModule(ctx, { deleteContent }) {
 }
 
 export async function bootstrapModule(ctx) {
-    const store = await registerApi(ctx);
+    const library = await registerApi(ctx);
     ctx.contributePublicCapability(
         "study:language:ja",
         Object.freeze(LANGUAGE),
     );
-    ctx.contributePublicCapability("study:language:ja:library", {
-        snapshot: () => store.snapshot(),
-        queryLayer: (layer, query) => store.queryLayer(layer, query),
-    });
+    ctx.contributePublicCapability("study:library", library);
+    ctx.contributePublicCapability("study:language:ja:library", library);
     ctx.flow.extend(
         "bootstrap-platform",
         "register-flows",

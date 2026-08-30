@@ -1,14 +1,7 @@
 import path from "node:path";
-import { LanguageLibraryStore } from "./store.js";
+import { LibraryService } from "./library/service.js";
+import { LibraryStore } from "./library/store.js";
 import { readJson, sendJson } from "./reuse/http.js";
-
-const LAYERS = new Set([
-    "characters",
-    "alt_characters",
-    "definitions",
-    "words",
-    "sentences",
-]);
 
 function registerUi(ctx) {
     ctx.registerStaticDir("", path.join(ctx.moduleRoot, "ui"));
@@ -24,8 +17,8 @@ function registerUi(ctx) {
             id: "library",
             path: "/study/library",
             component: "library",
-            access: "admin",
-            sharedStylesheet: "library-page.css",
+            access: "user",
+            stylesheet: "library.css",
         },
         {
             id: "classroom",
@@ -61,103 +54,192 @@ function registerUi(ctx) {
     });
 }
 
-function sendFailure(ctx, response, error, operation) {
-    const clientError = ["invalid_json", "request_too_large"].includes(
-        error.message,
+function locationFrom(requestUrl) {
+    const scope = requestUrl.searchParams.get("scope") ?? "global";
+    if (!["global", "class", "user"].includes(scope))
+        throw new Error("invalid_scope");
+    return {
+        scope,
+        scopeId: requestUrl.searchParams.get("scopeId") ?? undefined,
+    };
+}
+
+function actorFrom(claims, request) {
+    const resolvedClaims = claims ?? request.auth ?? request.user;
+    if (!resolvedClaims?.sub || !resolvedClaims?.role)
+        throw new Error("invalid_auth_context");
+    return { accountId: resolvedClaims.sub, role: resolvedClaims.role };
+}
+
+function failureStatus(code) {
+    if (code === "forbidden") return 403;
+    if (code === "not_found") return 404;
+    return 400;
+}
+
+function registerRoutes(ctx, requireAuth, library) {
+    const basePath = "/api/v1/study/library";
+    const route = (method, routePath, operation, handler, access = "user") => {
+        ctx.router[method](
+            routePath,
+            async (request, response) => {
+                const claims = await requireAuth(request, response, access);
+                if (response.writableEnded) return;
+                let actor;
+                try {
+                    actor = actorFrom(claims, request);
+                    await handler(request, response, actor);
+                } catch (error) {
+                    const code =
+                        error instanceof Error
+                            ? error.message
+                            : "request_failed";
+                    ctx.log?.("error", "Japanese library request failed.", {
+                        component: "study-language-ja",
+                        operation,
+                        accountId: actor?.accountId,
+                        code,
+                    });
+                    sendJson(response, failureStatus(code), {
+                        error: {
+                            code,
+                            message: "Library request could not be completed.",
+                        },
+                    });
+                }
+            },
+            { access: { minRole: access } },
+        );
+    };
+
+    route("get", `${basePath}/layers`, "list_layers", (_request, response) =>
+        sendJson(response, 200, { data: library.layers }),
     );
-    ctx.log?.("error", "Japanese library request failed.", {
-        component: "study-language-ja",
-        operation,
-        errorCode: clientError ? error.message : "library_write_failed",
-    });
-    sendJson(response, clientError ? 400 : 500, {
-        error: {
-            code: clientError ? error.message : "library_write_failed",
-            message: clientError
-                ? "The request body is invalid."
-                : "The library could not be updated.",
+    route(
+        "get",
+        `${basePath}/entries`,
+        "list_entries",
+        async (request, response, actor) => {
+            const requestUrl = new URL(request.url, "http://localhost");
+            sendJson(response, 200, {
+                data: await library.list(
+                    actor,
+                    locationFrom(requestUrl),
+                    requestUrl.searchParams.get("layer") ?? undefined,
+                ),
+            });
         },
-    });
+    );
+    route(
+        "post",
+        `${basePath}/entries`,
+        "create_entry",
+        async (request, response, actor) => {
+            const body = await readJson(request);
+            const entry = await library.create(
+                actor,
+                body.location,
+                body.entry,
+            );
+            ctx.log?.("info", "Japanese library entry created.", {
+                component: "study-language-ja",
+                operation: "create_entry",
+                accountId: actor.accountId,
+                entryId: entry.id,
+            });
+            sendJson(response, 201, { data: entry });
+        },
+    );
+    route(
+        "get",
+        `${basePath}/entries/:entryId/trace`,
+        "trace_entry",
+        async (request, response, actor) =>
+            sendJson(response, 200, {
+                data: await library.trace(actor, request.params.entryId),
+            }),
+    );
+    route(
+        "post",
+        `${basePath}/import`,
+        "import_entries",
+        async (request, response, actor) =>
+            sendJson(response, 201, {
+                data: await library.importJson(actor, await readJson(request)),
+            }),
+        "admin",
+    );
+    route(
+        "get",
+        `${basePath}/export`,
+        "export_entries",
+        async (request, response, actor) => {
+            const requestUrl = new URL(request.url, "http://localhost");
+            if (requestUrl.searchParams.get("format") === "anki") {
+                response.writeHead(200, {
+                    "content-type": "text/tab-separated-values; charset=utf-8",
+                    "content-disposition":
+                        'attachment; filename="cognis-library.txt"',
+                });
+                response.end(
+                    await library.exportAnki(actor, locationFrom(requestUrl)),
+                );
+                return;
+            }
+            sendJson(
+                response,
+                200,
+                await library.exportJson(actor, locationFrom(requestUrl)),
+            );
+        },
+    );
+    route(
+        "post",
+        `${basePath}/push-requests`,
+        "request_push",
+        async (request, response, actor) => {
+            const body = await readJson(request);
+            sendJson(response, 201, {
+                data: await library.requestPush(
+                    actor,
+                    body.entryId,
+                    body.destination,
+                ),
+            });
+        },
+    );
+    route(
+        "put",
+        `${basePath}/push-requests/:requestId`,
+        "review_push",
+        async (request, response, actor) => {
+            const body = await readJson(request);
+            if (!["approved", "rejected"].includes(body.decision))
+                throw new Error("invalid_decision");
+            sendJson(response, 200, {
+                data: await library.reviewPush(
+                    actor,
+                    request.params.requestId,
+                    body.decision,
+                ),
+            });
+        },
+    );
 }
 
 export async function registerApi(ctx) {
     const requireAuth = ctx.getCapability("auth:requireAuth");
-    if (typeof requireAuth !== "function") {
+    const database = ctx.getCapability("db:executor");
+    if (typeof requireAuth !== "function")
         throw new Error("Cognis Japanese requires auth:requireAuth.");
-    }
-    const store = new LanguageLibraryStore({
-        moduleRoot: ctx.moduleRoot,
-        languageCode: "ja",
-        altCharactersFileName: "kanji",
-        log: ctx.log,
-    });
-    await store.initialise();
-    const basePath = "/api/v1/study/languages/ja/library";
-
-    ctx.router.get(
-        `${basePath}/snapshot`,
-        async (request, response) => {
-            await requireAuth(request, response, "user");
-            if (!response.writableEnded)
-                sendJson(response, 200, { data: store.snapshot() });
-        },
-        { access: { minRole: "user" } },
+    if (!database) throw new Error("Cognis Japanese requires db:executor.");
+    const store = new LibraryStore(database);
+    await store.ensureSchema();
+    const library = new LibraryService(
+        store,
+        ctx.getCapability("study:classes:access"),
     );
-
-    for (const layer of LAYERS) {
-        const layerPath = `${basePath}/${layer}`;
-        ctx.router.get(
-            layerPath,
-            async (request, response) => {
-                await requireAuth(request, response, "user");
-                if (response.writableEnded) return;
-                const requestUrl = new URL(request.url, "http://localhost");
-                sendJson(response, 200, {
-                    data: store.queryLayer(
-                        layer,
-                        Object.fromEntries(requestUrl.searchParams),
-                    ),
-                });
-            },
-            { access: { minRole: "user" } },
-        );
-
-        ctx.router.post(
-            layerPath,
-            async (request, response) => {
-                await requireAuth(request, response, "admin");
-                if (response.writableEnded) return;
-                try {
-                    const body = await readJson(request);
-                    if (
-                        !body.record ||
-                        typeof body.record !== "object" ||
-                        Array.isArray(body.record)
-                    ) {
-                        sendJson(response, 400, {
-                            error: {
-                                code: "invalid_record",
-                                message: "A record object is required.",
-                            },
-                        });
-                        return;
-                    }
-                    const record = await store.addRecord(layer, body.record);
-                    ctx.log?.("info", "Japanese library record created.", {
-                        component: "study-language-ja",
-                        operation: "create_record",
-                        layer,
-                        recordId: record.id,
-                    });
-                    sendJson(response, 201, { data: record });
-                } catch (error) {
-                    sendFailure(ctx, response, error, "create_record");
-                }
-            },
-            { access: { minRole: "admin" } },
-        );
-    }
-
+    registerRoutes(ctx, requireAuth, library);
     registerUi(ctx);
-    return store;
+    return library;
 }
