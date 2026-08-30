@@ -22,7 +22,7 @@ npm test
 npm run check:manifest
 ```
 
-The module registers `/study/hiragana`, `/study/library`, and `/study/ja-classroom`. Its authenticated, multi-layer library API is available below `/api/v1/study/library`; it supports global, class, and user scopes, dependency tracing, JSON and Anki interchange, and reviewed push requests.
+The module registers `/study/hiragana`, `/study/library`, and `/study/ja-classroom`. Its authenticated, multi-layer library API is available below `/api/v1/modules/study-language-ja/study/library`; it supports global, class, and user scopes, dependency tracing, JSON and Anki interchange, and reviewed push requests.
 
 The manifest publishes `/static/modules/study-language-ja/languages` as its module-owned locale bundle so Cognis can translate marketplace metadata before loading the UI.
 

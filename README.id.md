@@ -22,7 +22,7 @@ npm test
 npm run check:manifest
 ```
 
-Modul ini mendaftarkan `/study/hiragana`, `/study/library`, dan `/study/ja-classroom`. API pustaka berlapis yang memerlukan autentikasi tersedia di bawah `/api/v1/study/library`; API ini mendukung cakupan global, kelas, dan pengguna, pelacakan dependensi, pertukaran JSON dan Anki, serta permintaan push yang ditinjau.
+Modul ini mendaftarkan `/study/hiragana`, `/study/library`, dan `/study/ja-classroom`. API pustaka berlapis yang memerlukan autentikasi tersedia di bawah `/api/v1/modules/study-language-ja/study/library`; API ini mendukung cakupan global, kelas, dan pengguna, pelacakan dependensi, pertukaran JSON dan Anki, serta permintaan push yang ditinjau.
 
 Manifest memublikasikan `/static/modules/study-language-ja/languages` sebagai bundel bahasa milik modul agar Cognis dapat menerjemahkan metadata marketplace sebelum memuat UI.
 

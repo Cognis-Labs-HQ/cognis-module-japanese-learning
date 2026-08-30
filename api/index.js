@@ -3,6 +3,9 @@ import { LibraryService } from "./library/service.js";
 import { LibraryStore } from "./library/store.js";
 import { readJson, sendJson } from "./reuse/http.js";
 
+export const LIBRARY_API_BASE =
+    "/api/v1/modules/study-language-ja/study/library";
+
 function registerUi(ctx) {
     ctx.registerStaticDir("", path.join(ctx.moduleRoot, "ui"));
     const pages = [
@@ -78,7 +81,7 @@ function failureStatus(code) {
 }
 
 function registerRoutes(ctx, requireAuth, library) {
-    const basePath = "/api/v1/study/library";
+    const basePath = LIBRARY_API_BASE;
     const route = (method, routePath, operation, handler, access = "user") => {
         ctx.router[method](
             routePath,

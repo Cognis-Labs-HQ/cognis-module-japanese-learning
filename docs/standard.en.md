@@ -11,7 +11,7 @@ Consumers obtain the library through the `study:library` capability and call `cl
 - Open `/study/hiragana` to explore the hiragana alphabet.
 - Open `/study/library` as an administrator to review and extend the module's learning records.
 - Open `/study/ja-classroom` to start a Japanese classroom session through Study.
-- Request `/api/v1/study/library/entries?scope=global` with a valid Cognis access token to read global library entries.
+- Request `/api/v1/modules/study-language-ja/study/library/entries?scope=global` with a valid Cognis access token to read global library entries.
 - Resolve the `study:language:ja` capability to integrate the language descriptor without importing module internals.
 
 ## Technical Specification

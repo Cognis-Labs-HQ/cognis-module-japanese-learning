@@ -11,7 +11,7 @@ Verbraucher rufen über die `study:library`-Fähigkeit `cloneTemplate` mit genau
 - Öffnen Sie `/study/hiragana`, um das Hiragana-Alphabet zu erkunden.
 - Öffnen Sie als Administrator `/study/library`, um die Lerninhalte des Moduls zu prüfen und zu ergänzen.
 - Öffnen Sie `/study/ja-classroom`, um über Study eine Japanischunterrichtssitzung zu beginnen.
-- Rufen Sie `/api/v1/study/library/entries?scope=global` mit einem gültigen Cognis-Zugriffstoken auf, um globale Bibliothekseinträge zu lesen.
+- Rufen Sie `/api/v1/modules/study-language-ja/study/library/entries?scope=global` mit einem gültigen Cognis-Zugriffstoken auf, um globale Bibliothekseinträge zu lesen.
 - Lösen Sie die Capability `study:language:ja` auf, um die Sprachbeschreibung ohne Import von Modulinterna einzubinden.
 
 ## Technische Spezifikation

@@ -22,7 +22,7 @@ npm test
 npm run check:manifest
 ```
 
-このモジュールは `/study/hiragana`、`/study/library`、`/study/ja-classroom` を登録します。認証が必要な多層ライブラリ API は `/api/v1/study/library` 以下で利用でき、グローバル・クラス・ユーザーの各スコープ、依存関係の追跡、JSON・Anki 交換、審査付きプッシュリクエストに対応します。
+このモジュールは `/study/hiragana`、`/study/library`、`/study/ja-classroom` を登録します。認証が必要な多層ライブラリ API は `/api/v1/modules/study-language-ja/study/library` 以下で利用でき、グローバル・クラス・ユーザーの各スコープ、依存関係の追跡、JSON・Anki 交換、審査付きプッシュリクエストに対応します。
 
 manifest はモジュール所有の言語バンドルとして `/static/modules/study-language-ja/languages` を公開し、Cognis が UI の読み込み前にマーケットプレイスのメタデータを翻訳できるようにします。
 

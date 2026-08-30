@@ -14,7 +14,11 @@
 
 利用側は、標準ライブラリテンプレートから必要な階層だけを複製できます。関係メタデータは有効なリンクと必須の依存関係を保ち、単語や文の作成時には適切なリンクを推定できます。
 
+## モジュール所有の API ルート
+
+すべてのライブラリエンドポイントをモジュール所有の API 名前空間へ移動し、保護された Study ゲートウェイルートとして拒否されることなく Cognis でモジュールを有効化できるようにしました。
+
 ## コミット
 
-- [fdd79cb](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/fdd79cb39b27816d690c2ff8f3101b4fb58fdecd)
-- [f11ffe8](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/f11ffe873261ded10b3c413a278de09fda99f492)
+- [18a509c](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/18a509c0ea6d760c0699473f4a92a5d5f61f6d62)
+- [04448b6](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/04448b6899204e5495e37f702200027a967ce717)

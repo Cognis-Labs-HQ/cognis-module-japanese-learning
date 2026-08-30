@@ -14,7 +14,11 @@ Updated the localized library page to browse populated global layers through the
 
 Consumers can clone only the canonical library layers they need. Relationship metadata retains valid links and required dependencies, while word and sentence creation can infer appropriate links.
 
+## Module-Owned API Routes
+
+Moved every library endpoint into the module-owned API namespace so Cognis can enable the module without rejecting protected Study gateway routes.
+
 ## Commits
 
-- [fdd79cb](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/fdd79cb39b27816d690c2ff8f3101b4fb58fdecd)
-- [f11ffe8](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/f11ffe873261ded10b3c413a278de09fda99f492)
+- [18a509c](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/18a509c0ea6d760c0699473f4a92a5d5f61f6d62)
+- [04448b6](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/04448b6899204e5495e37f702200027a967ce717)
