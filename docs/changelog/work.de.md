@@ -18,7 +18,11 @@ Verbraucher können nur die benötigten Ebenen der kanonischen Bibliotheksvorlag
 
 Alle Bibliotheksendpunkte wurden in den moduleigenen API-Namensraum verschoben, damit Cognis das Modul aktivieren kann, ohne geschützte Routen des Study-Gateways abzulehnen.
 
+## Lokalisierte Study-Navigation
+
+Die japanische Study-Unternavigation wurde auf der Bibliotheksseite wiederhergestellt, alle drei Bezeichnungen der Unterseiten werden aus dem Modul-Bündel lokalisiert und Klicks werden auf jeder japanischen Study-Seite über den Cognis-Host-Router geleitet.
+
 ## Commits
 
-- [18a509c](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/18a509c0ea6d760c0699473f4a92a5d5f61f6d62)
-- [04448b6](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/04448b6899204e5495e37f702200027a967ce717)
+- [8dc42b2](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/8dc42b26ee4c0fdf71e3b6e3961d2d5c22e60583)
+- [9c0119a](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/9c0119a1f9b9cd4df94c4b941786698ca37a04c1)

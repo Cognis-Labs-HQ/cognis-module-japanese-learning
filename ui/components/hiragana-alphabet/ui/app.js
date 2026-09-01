@@ -1,6 +1,8 @@
 import { escapeHtml } from "/static/reuse/escape-html.js";
 import { mountWhenDirect } from "/static/reuse/page-entry.js";
 import { mountStudyAlphabetPage } from "/static/modules/study/languages/reuse/alphabet-page.js";
+import { createI18n } from "/static/reuse/i18n.js";
+import { enhanceJapaneseStudySubNavigation } from "/static/modules/study-language-ja/reuse/study-sub-navigation.js";
 
 function chunkRows(rows, chunkSize) {
     const chunks = [];
@@ -32,7 +34,7 @@ function renderCharacterGrid(characters) {
         .join("");
 }
 
-export async function mount(root) {
+export async function mount(root, { signal } = {}) {
     await mountStudyAlphabetPage(root, {
         languageCode: "ja",
         fallbackLanguageCode: "ja",
@@ -52,6 +54,12 @@ export async function mount(root) {
                     </section>
                 `,
     });
+    const i18n = await createI18n({
+        componentStringBaseUrls: [
+            "/static/modules/study-language-ja/languages",
+        ],
+    });
+    enhanceJapaneseStudySubNavigation(root, i18n, { signal });
 }
 await mountWhenDirect(mount).catch((error) =>
     console.error("[study-ja] hiragana mount failed", error),

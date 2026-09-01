@@ -5,7 +5,7 @@ const LANGUAGE = {
     languageCode: "ja",
     languageName: "日本語",
     languageFlag: "🇯🇵",
-    version: "1.3.2",
+    version: "1.3.3",
     childComponents: [
         {
             id: "hiragana-alphabet",

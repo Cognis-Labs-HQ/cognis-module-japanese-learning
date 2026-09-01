@@ -18,7 +18,11 @@
 
 すべてのライブラリエンドポイントをモジュール所有の API 名前空間へ移動し、保護された Study ゲートウェイルートとして拒否されることなく Cognis でモジュールを有効化できるようにしました。
 
+## ローカライズ済み Study ナビゲーション
+
+ライブラリページに日本語 Study サブナビゲーションを復元し、3 つの子ページラベルをモジュールバンドルからローカライズするとともに、すべての日本語 Study ページでクリックを Cognis ホストルーターへ渡すようにしました。
+
 ## コミット
 
-- [18a509c](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/18a509c0ea6d760c0699473f4a92a5d5f61f6d62)
-- [04448b6](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/04448b6899204e5495e37f702200027a967ce717)
+- [8dc42b2](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/8dc42b26ee4c0fdf71e3b6e3961d2d5c22e60583)
+- [9c0119a](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/9c0119a1f9b9cd4df94c4b941786698ca37a04c1)

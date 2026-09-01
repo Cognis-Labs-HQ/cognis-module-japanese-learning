@@ -4,6 +4,10 @@ import { escapeHtml } from "/static/reuse/escape-html.js";
 import { showToast } from "/static/reuse/toast.js";
 import { fetchEntries, fetchLayers } from "./client.js";
 import { mountWhenDirect } from "/static/reuse/page-entry.js";
+import {
+    enhanceJapaneseStudySubNavigation,
+    renderJapaneseStudySubNavigation,
+} from "/static/modules/study-language-ja/reuse/study-sub-navigation.js";
 
 export async function mount(root, { signal } = {}) {
     const i18n = await createI18n({
@@ -68,8 +72,13 @@ export async function mount(root, { signal } = {}) {
             subtitle: i18n.t("module.study-language-ja.library_subtitle"),
         },
         toolbar: [],
+        subNavigation: renderJapaneseStudySubNavigation(
+            i18n,
+            window.location.pathname,
+        ),
     });
     await composer.init();
+    enhanceJapaneseStudySubNavigation(root, i18n, { signal });
     signal?.throwIfAborted();
 }
 

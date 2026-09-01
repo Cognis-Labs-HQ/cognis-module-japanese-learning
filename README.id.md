@@ -8,6 +8,8 @@ Cognis Bahasa Jepang adalah modul eksternal berisi materi pembelajaran bahasa Je
 
 Konsumen memperoleh pustaka melalui kapabilitas `study:library` dan memanggil `cloneTemplate` dengan lapisan yang benar-benar diperlukan. Salinan mempertahankan urutan baku dan metadata hubungan lapisan, membuang tautan menuju lapisan yang dihilangkan, serta menandai dependensi wajib. Pembuatan kata dan kalimat dapat menyimpulkan tautan dari karakter yang dinormalisasi dan kata yang dipisahkan spasi; referensi eksplisit tetap menjadi acuan.
 
+Subnavigasi Study bahasa Jepang mengambil label Hiragana, Pustaka, dan Kelas dari bundel locale modul serta meneruskan klik melalui router host Cognis.
+
 ## Persyaratan
 
 - Cognis dengan gateway Study yang diaktifkan.
