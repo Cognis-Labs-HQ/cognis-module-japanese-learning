@@ -18,6 +18,8 @@ The external module declares the Study gateway as its component dependency. It d
 
 The schema defines `characters`, `alt-characters`, `definitions`, `words`, and `sentences`. Typed fields and directed relationships define target layers, required cardinality, ordering, and optional grapheme or longest-match resolution. Every reference targets another record in the same pack.
 
+Pack-local record IDs use only portable ASCII letters, numbers, separators, and colons; Japanese glyphs belong in `label`, never in `id`. This keeps ingestion compatible with the Library content-record identifier contract.
+
 ### Lifecycle and ownership
 
 `bootstrap.js` obtains only public capabilities through `ctx`, asks the Library to ingest the pack, publishes the Japanese language descriptor, and logs the receipt. The host Library owns validation, namespaced IDs, transactions, idempotency, persistence, routes, and generated UI. This module registers no API or page routes and accesses no host database.

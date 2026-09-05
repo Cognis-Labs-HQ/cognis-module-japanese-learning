@@ -18,6 +18,8 @@ Modul eksternal mendeklarasikan gateway Study sebagai dependensi komponennya. Mo
 
 Skema mendefinisikan `characters`, `alt-characters`, `definitions`, `words`, dan `sentences`. Kolom bertipe dan hubungan terarah menentukan lapisan tujuan, kardinalitas wajib, urutan, dan resolusi grafem atau kecocokan terpanjang opsional. Setiap referensi menunjuk data lain dalam paket yang sama.
 
+ID data lokal paket hanya menggunakan huruf dan angka ASCII portabel, pemisah, serta titik dua; glif bahasa Jepang ditempatkan di `label`, bukan di `id`. Aturan ini menjaga kompatibilitas ingest dengan kontrak pengenal data Pustaka.
+
 ### Siklus hidup dan kepemilikan
 
 `bootstrap.js` hanya memperoleh kapabilitas publik melalui `ctx`, meminta Pustaka mengingesti paket, menerbitkan deskripsi bahasa Jepang, dan mencatat tanda terima. Pustaka host memiliki validasi, ID bernamespace, transaksi, idempotensi, persistensi, rute, dan UI yang dihasilkan. Modul ini tidak mendaftarkan rute API atau halaman serta tidak mengakses basis data host.

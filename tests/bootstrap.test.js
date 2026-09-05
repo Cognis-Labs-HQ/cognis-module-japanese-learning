@@ -15,7 +15,7 @@ test("ingests the declarative pack through the host Library capability", async (
                     calls.push(root);
                     return {
                         packId: "japanese-core",
-                        contentRevision: "2026-09-05",
+                        contentRevision: "2026-09-05.1",
                         unchanged: false,
                     };
                 },

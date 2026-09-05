@@ -18,6 +18,8 @@ Das externe Modul deklariert das Study-Gateway als Komponentenabhängigkeit. Es 
 
 Das Schema definiert `characters`, `alt-characters`, `definitions`, `words` und `sentences`. Typisierte Felder und gerichtete Beziehungen legen Zielebenen, erforderliche Kardinalität, Reihenfolge und optionale Graphem- oder Längste-Treffer-Auflösung fest. Jede Referenz verweist auf einen anderen Datensatz desselben Pakets.
 
+Paketlokale Datensatz-IDs verwenden nur portable ASCII-Buchstaben, Ziffern, Trennzeichen und Doppelpunkte; japanische Schriftzeichen stehen in `label`, niemals in `id`. Dadurch bleibt die Übernahme mit dem Kennungsvertrag für Bibliotheksdatensätze kompatibel.
+
 ### Lebenszyklus und Eigentümerschaft
 
 `bootstrap.js` bezieht ausschließlich öffentliche Fähigkeiten über `ctx`, lässt das Paket von der Bibliothek übernehmen, veröffentlicht die japanische Sprachbeschreibung und protokolliert den Beleg. Die Host-Bibliothek besitzt Validierung, Namensraum-IDs, Transaktionen, Idempotenz, Persistenz, Routen und generierte UI. Dieses Modul registriert keine API- oder Seitenrouten und greift auf keine Host-Datenbank zu.

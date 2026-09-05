@@ -5,6 +5,7 @@ import test from "node:test";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
 const PACK_ROOT = path.join(ROOT, "data", "library");
+const CONTENT_ID_PATTERN = /^[a-z0-9]+(?:[-_.:][a-z0-9]+)*$/i;
 
 function readJson(filePath) {
     return JSON.parse(readFileSync(filePath, "utf8"));
@@ -43,6 +44,10 @@ test("declares a data-only Japanese Library content pack", () => {
     assert.equal(manifest.id, "japanese-core");
     assert.equal(manifest.schema, "schema.json");
     assert.equal(manifest.content, "content");
+    assert.match(manifest.id, CONTENT_ID_PATTERN);
+    assert.ok(manifest.publisher.trim());
+    assert.ok(manifest.version.trim());
+    assert.ok(manifest.contentRevision.trim());
     assert.ok(manifest.license.id);
     assert.equal(schema.id, manifest.id);
     assert.equal(schema.language, "ja");
@@ -58,6 +63,12 @@ test("content records satisfy schema fields and relationship targets", () => {
     assert.equal(recordsById.size, records.length, "record IDs must be unique");
     const layersById = new Map(schema.layers.map((layer) => [layer.id, layer]));
     for (const record of records) {
+        assert.match(
+            record.id,
+            CONTENT_ID_PATTERN,
+            `${record.id} is not a portable content record ID`,
+        );
+        assert.ok(record.label?.trim(), `${record.id} requires a label`);
         const layer = layersById.get(record.layer);
         assert.ok(layer, `unknown layer ${record.layer}`);
         const fieldsById = new Map(
