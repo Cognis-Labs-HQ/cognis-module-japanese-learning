@@ -120,12 +120,26 @@ test("content records satisfy schema fields and relationship targets", () => {
     assert.equal(recordsById.size, records.length, "record IDs must be unique");
     const layersById = new Map(schema.layers.map((layer) => [layer.id, layer]));
     for (const record of records) {
+        assert.equal(
+            typeof record.id,
+            "string",
+            "content record ID must be a string",
+        );
         assert.match(
             record.id,
             CONTENT_ID_PATTERN,
-            `${record.id} is not a portable content record ID`,
+            `${record.id} is not a lowercase portable content record ID`,
         );
-        assert.ok(record.label?.trim(), `${record.id} requires a label`);
+        assert.ok(
+            record.id.startsWith(`${schema.namespace}:`),
+            `${record.id} is outside the ${schema.namespace} namespace`,
+        );
+        assert.equal(
+            typeof record.label,
+            "string",
+            `${record.id} requires a string label`,
+        );
+        assert.ok(record.label.trim(), `${record.id} requires a label`);
         const layer = layersById.get(record.layer);
         assert.ok(layer, `unknown layer ${record.layer}`);
         assertLocalizedText(layer.metadata.labels);
