@@ -54,6 +54,10 @@ Das korrigierte Paket wurde als Version `2.1.2` mit Inhaltsrevision `2026-09-05.
 
 Die Sprachbeschreibung veröffentlicht nun den kanonischen Wert `code: "ja"` zusätzlich zum kompatiblen `languageCode`. Damit kann Cognis PR #215 die erzeugte aktive Sprachschaltfläche mit dem japanischen Sprachcode versehen und die Auswahl ohne URL-Abfrageparameter im Routerverlauf an nachfolgende Study-Ziele übergeben.
 
+## Auflösbare lokalisierte Wörterbuchdefinitionen
+
+Die Ebene `definitions` entspricht nun dem Wörterbuchvertrag aus Cognis PR #196. Sie deklariert `definitionLocalization`, stabile moduleigene Zeichenkettenschlüssel und ein typisiertes Feld für lokalisierte Texte. Alle vorinstallierten Definitionen enthalten deutsche, englische, indonesische und japanische Zeichenketten; Schema und Paket wurden für die unveränderliche Strukturänderung auf Version `3` beziehungsweise `2.2.0` erhöht.
+
 ## Commits
 
 - [a6fa75d](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/a6fa75d15c478b1d8ef1930dcc3c5c29e3938b97)
@@ -61,3 +65,4 @@ Die Sprachbeschreibung veröffentlicht nun den kanonischen Wert `code: "ja"` zus
 - [ddd8464](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/ddd84646f1930ea660f469e4b1776219558e1e5b)
 - [7048e41](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/7048e4155bb52132741016c35371f0e0c215d67e)
 - [131afdf](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/131afdf5125a3eebae584a2c4729bd0a1b144654)
+- [db6df0a](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/db6df0a0d71e75892cac726991ab0d5fa9edf172)

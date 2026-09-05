@@ -32,3 +32,5 @@ Schema und Paket teilen den Namensraum `ja`, und jede Datensatz-ID beginnt mit `
 Das externe Modulmanifest veröffentlicht `/static/modules/study-language-ja/languages`, damit Cognis Marketplace-Metadaten vor dem Modul-Bootstrap übersetzen kann.
 
 Die veröffentlichte Sprachbeschreibung stellt sowohl den kanonischen `code`-Wert `ja` als auch den kompatiblen `languageCode`-Wert bereit. Cognis PR #215 verwendet diesen Code, um die aktive Sprachschaltfläche zu kennzeichnen und die ausgewählte Sprache beim Öffnen eines Ziels der Study-Unternavigation im Routerverlauf zu erhalten.
+
+Die Wörterbuch-Ebene `definitions` deklariert moduleigene Definitionslokalisierung mit stabilen Zeichenkettenschlüsseln `japanese:definitions:*` und einem typisierten Feld `localizedText`. Jede vorinstallierte Definition enthält deutschen, englischen, indonesischen und japanischen Text, sodass Verbraucher Anzeigezeichenketten ohne Sprachdaten aus Cognis Core auflösen können.

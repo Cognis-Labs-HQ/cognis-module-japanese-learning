@@ -114,6 +114,43 @@ test("declares a data-only Japanese Library content pack", () => {
     }
 });
 
+test("definition records resolve through module-owned localized strings", () => {
+    const { schema, records } = loadPack();
+    const definitionLayer = schema.layers.find(
+        ({ semanticRole }) => semanticRole === "definition",
+    );
+    assert.ok(definitionLayer, "definition layer is required");
+    assert.deepEqual(definitionLayer.definitionLocalization, {
+        stringKeyPrefix: "japanese:definitions",
+        stringKeyField: "string_key",
+        translationsField: "translations",
+    });
+    const fieldsById = new Map(
+        definitionLayer.fields.map((field) => [field.id, field]),
+    );
+    assert.equal(fieldsById.get("string_key")?.type, "string");
+    assert.equal(fieldsById.get("translations")?.type, "localizedText");
+
+    const definitions = records.filter(
+        ({ layer }) => layer === definitionLayer.id,
+    );
+    assert.ok(definitions.length > 0, "preseeded definitions are required");
+    for (const definition of definitions) {
+        assert.match(
+            definition.fields.string_key,
+            /^japanese:definitions:[a-z0-9]+(?:[-_][a-z0-9]+)*$/,
+        );
+        assertLocalizedText(definition.fields.translations);
+        assert.ok(definition.fields.translations.en.trim());
+        for (const locale of ["de", "en", "id", "ja"]) {
+            assert.ok(
+                definition.fields.translations[locale]?.trim(),
+                `${definition.id} requires a ${locale} translation`,
+            );
+        }
+    }
+});
+
 test("content records satisfy schema fields and relationship targets", () => {
     const { schema, records } = loadPack();
     const recordsById = new Map(records.map((record) => [record.id, record]));

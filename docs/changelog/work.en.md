@@ -54,6 +54,10 @@ The corrected pack was republished as version `2.1.2` with content revision `202
 
 The language descriptor now publishes canonical `code: "ja"` alongside the compatible `languageCode`. This lets Cognis PR #215 annotate the spawned active-language button with the Japanese code and carry that selection through router history to subsequent Study destinations without URL query parameters.
 
+## Resolvable Localized Dictionary Definitions
+
+The `definitions` layer now follows the dictionary contract from Cognis PR #196. It declares `definitionLocalization`, stable module-owned string keys, and a typed localized-text field. Every preseeded definition contains German, English, Indonesian, and Japanese strings; the schema and package advance to versions `3` and `2.2.0` for the immutable structural change.
+
 ## Commits
 
 - [a6fa75d](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/a6fa75d15c478b1d8ef1930dcc3c5c29e3938b97)
@@ -61,3 +65,4 @@ The language descriptor now publishes canonical `code: "ja"` alongside the compa
 - [ddd8464](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/ddd84646f1930ea660f469e4b1776219558e1e5b)
 - [7048e41](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/7048e4155bb52132741016c35371f0e0c215d67e)
 - [131afdf](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/131afdf5125a3eebae584a2c4729bd0a1b144654)
+- [db6df0a](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/db6df0a0d71e75892cac726991ab0d5fa9edf172)

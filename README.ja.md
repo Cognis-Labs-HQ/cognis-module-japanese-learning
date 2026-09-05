@@ -32,3 +32,5 @@ npm run check:manifest
 外部モジュールマニフェストは `/static/modules/study-language-ja/languages` を公開し、Cognis がモジュールのブートストラップ前に Marketplace メタデータを翻訳できるようにします。
 
 公開する言語記述子は、正規の `code` 値 `ja` と互換用の `languageCode` 値を提供します。Cognis PR #215 はこのコードを使用してアクティブな言語ボタンを識別し、Study サブナビゲーションの移動先を開く際に選択言語をルーター履歴へ保持します。
+
+辞書レイヤー `definitions` は、安定した `japanese:definitions:*` 文字列キーと型付き `localizedText` フィールドを使用するモジュール所有の定義ローカライズを宣言します。事前収録された各定義にはドイツ語、英語、インドネシア語、日本語の文言が含まれるため、利用側は Cognis コアの言語データに依存せず表示文字列を解決できます。

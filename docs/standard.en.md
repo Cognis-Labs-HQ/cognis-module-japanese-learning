@@ -29,3 +29,5 @@ Pack-local record IDs use only portable lowercase ASCII letters, numbers, separa
 ### Updates and licensing
 
 Schema changes require a schema-version increase. Content changes require a new pack version or content revision. All bundled records use the license and attribution declared by the pack manifest.
+
+The `definitions` dictionary layer declares module-owned definition localization with stable `japanese:definitions:*` string keys and a typed `localizedText` field. Every preseeded definition includes German, English, Indonesian, and Japanese text, so consumers resolve display strings without depending on Cognis core language data.

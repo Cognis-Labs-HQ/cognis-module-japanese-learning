@@ -1,6 +1,6 @@
 {
     "id": "japanese-core",
-    "version": 2,
+    "version": 3,
     "namespace": "ja",
     "language": "ja",
     "metadata": {
@@ -146,6 +146,41 @@
             "semanticRole": "definition",
             "fields": [
                 {
+                    "id": "string_key",
+                    "metadata": {
+                        "labels": {
+                            "de": "Zeichenkettenschlüssel",
+                            "en": "String Key",
+                            "id": "Kunci String",
+                            "ja": "文字列キー"
+                        }
+                    },
+                    "type": "string",
+                    "required": true,
+                    "detail": {
+                        "renderer": "text",
+                        "order": 1,
+                        "hidden": true
+                    }
+                },
+                {
+                    "id": "translations",
+                    "metadata": {
+                        "labels": {
+                            "de": "Übersetzungen",
+                            "en": "Translations",
+                            "id": "Terjemahan",
+                            "ja": "翻訳"
+                        }
+                    },
+                    "type": "localizedText",
+                    "required": true,
+                    "detail": {
+                        "renderer": "text",
+                        "order": 2
+                    }
+                },
+                {
                     "id": "language",
                     "metadata": {
                         "labels": {
@@ -159,14 +194,20 @@
                     "required": true,
                     "detail": {
                         "renderer": "badge",
-                        "order": 1
+                        "order": 3
                     }
                 }
             ],
             "detail": {
-                "fieldOrder": ["language"]
+                "titleField": "translations",
+                "fieldOrder": ["translations", "language", "string_key"]
             },
-            "interestVeins": ["language:japanese"]
+            "interestVeins": ["language:japanese"],
+            "definitionLocalization": {
+                "stringKeyPrefix": "japanese:definitions",
+                "stringKeyField": "string_key",
+                "translationsField": "translations"
+            }
         },
         {
             "id": "words",

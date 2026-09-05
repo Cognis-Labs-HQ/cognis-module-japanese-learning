@@ -32,3 +32,5 @@ The schema and pack share the `ja` namespace, and every record ID begins with `j
 The external module manifest publishes `/static/modules/study-language-ja/languages` so Cognis can translate marketplace metadata before module bootstrap.
 
 The published language descriptor provides the canonical `code` value `ja` as well as the compatible `languageCode` value. Cognis PR #215 uses that code to annotate the active language button and preserve the selected language in router history when a Study sub-navigation destination is opened.
+
+The `definitions` dictionary layer declares module-owned definition localization with stable `japanese:definitions:*` string keys and a typed `localizedText` field. Every preseeded definition includes German, English, Indonesian, and Japanese text, so consumers resolve display strings without depending on Cognis core language data.
