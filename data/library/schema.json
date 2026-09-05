@@ -1,109 +1,292 @@
 {
     "id": "japanese-core",
-    "version": 1,
+    "version": 2,
+    "namespace": "ja",
     "language": "ja",
-    "label": "日本語",
+    "metadata": {
+        "labels": {
+            "de": "Japanisch",
+            "en": "Japanese",
+            "id": "Bahasa Jepang",
+            "ja": "日本語"
+        }
+    },
     "layers": [
         {
             "id": "characters",
-            "label": "文字",
+            "metadata": {
+                "labels": {
+                    "de": "Zeichen",
+                    "en": "Characters",
+                    "id": "Karakter",
+                    "ja": "文字"
+                }
+            },
+            "semanticRole": "atomicWritingUnit",
             "fields": [
                 {
                     "id": "romanization",
-                    "label": "ローマ字",
+                    "metadata": {
+                        "labels": {
+                            "de": "Romanisierung",
+                            "en": "Romanization",
+                            "id": "Romanisasi",
+                            "ja": "ローマ字"
+                        }
+                    },
                     "type": "string",
-                    "required": true
+                    "required": true,
+                    "detail": {
+                        "renderer": "text",
+                        "order": 1
+                    }
                 },
                 {
                     "id": "character_class",
-                    "label": "文字種",
+                    "metadata": {
+                        "labels": {
+                            "de": "Zeichenklasse",
+                            "en": "Character Class",
+                            "id": "Kelas Karakter",
+                            "ja": "文字種"
+                        }
+                    },
                     "type": "string",
-                    "required": true
+                    "required": true,
+                    "detail": {
+                        "renderer": "badge",
+                        "order": 2
+                    }
                 }
-            ]
+            ],
+            "detail": {
+                "fieldOrder": ["romanization", "character_class"]
+            },
+            "activityCompatibility": ["study:recognition", "study:writing"],
+            "interestVeins": ["language:japanese"]
         },
         {
             "id": "alt-characters",
-            "label": "代替文字",
+            "metadata": {
+                "labels": {
+                    "de": "Zusammengesetzte Zeichen",
+                    "en": "Compound Characters",
+                    "id": "Karakter Gabungan",
+                    "ja": "複合文字"
+                }
+            },
+            "semanticRole": "compoundWritingUnit",
             "fields": [
                 {
                     "id": "readings",
-                    "label": "読み",
-                    "type": "string"
+                    "metadata": {
+                        "labels": {
+                            "de": "Lesungen",
+                            "en": "Readings",
+                            "id": "Bacaan",
+                            "ja": "読み"
+                        }
+                    },
+                    "type": "stringList",
+                    "detail": {
+                        "renderer": "text",
+                        "order": 1
+                    }
                 },
                 {
                     "id": "meaning",
-                    "label": "意味",
-                    "type": "string"
+                    "metadata": {
+                        "labels": {
+                            "de": "Bedeutung",
+                            "en": "Meaning",
+                            "id": "Arti",
+                            "ja": "意味"
+                        }
+                    },
+                    "type": "string",
+                    "detail": {
+                        "renderer": "text",
+                        "order": 2
+                    }
                 }
             ],
             "relationships": [
                 {
                     "id": "components",
                     "targetLayer": "characters",
-                    "label": "構成要素",
-                    "ordered": true
+                    "metadata": {
+                        "labels": {
+                            "de": "Bestandteile",
+                            "en": "Components",
+                            "id": "Komponen",
+                            "ja": "構成要素"
+                        }
+                    },
+                    "ordered": true,
+                    "onDelete": "restrict",
+                    "resolverRole": "explicit"
                 }
-            ]
+            ],
+            "detail": {
+                "fieldOrder": ["readings", "meaning"]
+            },
+            "activityCompatibility": ["study:recognition", "study:writing"],
+            "interestVeins": ["language:japanese"]
         },
         {
             "id": "definitions",
-            "label": "定義",
+            "metadata": {
+                "labels": {
+                    "de": "Definitionen",
+                    "en": "Definitions",
+                    "id": "Definisi",
+                    "ja": "定義"
+                }
+            },
+            "semanticRole": "definition",
             "fields": [
                 {
                     "id": "language",
-                    "label": "言語",
+                    "metadata": {
+                        "labels": {
+                            "de": "Sprache",
+                            "en": "Language",
+                            "id": "Bahasa",
+                            "ja": "言語"
+                        }
+                    },
                     "type": "string",
-                    "required": true
+                    "required": true,
+                    "detail": {
+                        "renderer": "badge",
+                        "order": 1
+                    }
                 }
-            ]
+            ],
+            "detail": {
+                "fieldOrder": ["language"]
+            },
+            "interestVeins": ["language:japanese"]
         },
         {
             "id": "words",
-            "label": "単語",
+            "metadata": {
+                "labels": {
+                    "de": "Wörter",
+                    "en": "Words",
+                    "id": "Kata",
+                    "ja": "単語"
+                }
+            },
+            "semanticRole": "lexicalUnit",
             "fields": [
                 {
                     "id": "reading",
-                    "label": "読み",
+                    "metadata": {
+                        "labels": {
+                            "de": "Lesung",
+                            "en": "Reading",
+                            "id": "Bacaan",
+                            "ja": "読み"
+                        }
+                    },
                     "type": "string",
-                    "required": true
+                    "required": true,
+                    "detail": {
+                        "renderer": "text",
+                        "order": 1
+                    }
                 },
                 {
                     "id": "jlpt_level",
-                    "label": "JLPT レベル",
-                    "type": "string"
+                    "metadata": {
+                        "labels": {
+                            "de": "JLPT-Stufe",
+                            "en": "JLPT Level",
+                            "id": "Tingkat JLPT",
+                            "ja": "JLPT レベル"
+                        }
+                    },
+                    "type": "string",
+                    "detail": {
+                        "renderer": "badge",
+                        "order": 2
+                    }
                 }
             ],
             "relationships": [
                 {
                     "id": "spelling",
                     "targetLayer": "alt-characters",
-                    "label": "表記",
+                    "metadata": {
+                        "labels": {
+                            "de": "Schreibweise",
+                            "en": "Spelling",
+                            "id": "Ejaan",
+                            "ja": "表記"
+                        }
+                    },
                     "minimum": 1,
                     "ordered": true,
-                    "resolver": "grapheme"
+                    "requiredTarget": true,
+                    "onDelete": "restrict",
+                    "resolverRole": "grapheme"
                 },
                 {
                     "id": "definitions",
                     "targetLayer": "definitions",
-                    "label": "定義",
-                    "minimum": 1
+                    "metadata": {
+                        "labels": {
+                            "de": "Definitionen",
+                            "en": "Definitions",
+                            "id": "Definisi",
+                            "ja": "定義"
+                        }
+                    },
+                    "minimum": 1,
+                    "requiredTarget": true,
+                    "onDelete": "restrict",
+                    "resolverRole": "explicit"
                 }
-            ]
+            ],
+            "detail": {
+                "fieldOrder": ["reading", "jlpt_level"]
+            },
+            "activityCompatibility": ["study:recognition", "study:production"],
+            "interestVeins": ["language:japanese"]
         },
         {
             "id": "sentences",
-            "label": "文",
+            "metadata": {
+                "labels": {
+                    "de": "Sätze",
+                    "en": "Sentences",
+                    "id": "Kalimat",
+                    "ja": "文"
+                }
+            },
+            "semanticRole": "orderedLexicalSequence",
             "relationships": [
                 {
                     "id": "words",
                     "targetLayer": "words",
-                    "label": "単語",
+                    "metadata": {
+                        "labels": {
+                            "de": "Wörter",
+                            "en": "Words",
+                            "id": "Kata",
+                            "ja": "単語"
+                        }
+                    },
                     "minimum": 1,
                     "ordered": true,
-                    "resolver": "longest-match"
+                    "requiredTarget": true,
+                    "onDelete": "restrict",
+                    "resolverRole": "longestMatch"
                 }
-            ]
+            ],
+            "activityCompatibility": ["study:reading"],
+            "interestVeins": ["language:japanese"]
         }
     ]
 }

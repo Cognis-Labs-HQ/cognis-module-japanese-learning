@@ -38,7 +38,11 @@ Replaced kanji glyphs in record IDs with stable ASCII identifiers while retainin
 
 Aligned the declarative Japanese descriptor with Cognis PRs #196 and #213 by explicitly declaring no executable child pages. Study now supplies the generated learner-visible Library destination and preserves the validated `ja` language context across browsing and history navigation.
 
+## Versioned Neutral Schema Contract
+
+Aligned with Cognis PR #214 by adding namespace ownership, localized schema metadata, semantic layer roles, expanded field types, detail hints, activity and interest discovery tags, required relationship targets, explicit deletion behavior, resolver roles, and strictly positioned ordered references. The language descriptor now publishes the immutable package identity.
+
 ## Commits
 
-- [7bbb383](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/7bbb3839f238ccdb5a3eba48448405f561f3d328)
-- [83ad282](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/83ad282d4289f885518a26b13776fcdd9f3a0f98)
+- [a6fa75d](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/a6fa75d15c478b1d8ef1930dcc3c5c29e3938b97)
+- [33cf20c](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/33cf20c040c55a177efe83fa6d14674491da2254)

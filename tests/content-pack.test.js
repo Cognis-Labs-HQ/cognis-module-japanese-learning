@@ -6,6 +6,41 @@ import test from "node:test";
 const ROOT = path.resolve(import.meta.dirname, "..");
 const PACK_ROOT = path.join(ROOT, "data", "library");
 const CONTENT_ID_PATTERN = /^[a-z0-9]+(?:[-_.:][a-z0-9]+)*$/i;
+const SCHEMA_ID_PATTERN = /^[a-z0-9]+(?:[-_][a-z0-9]+)*$/;
+const SEMANTIC_VERSION_PATTERN = /^\d+\.\d+\.\d+(?:-[0-9A-Za-z.-]+)?$/;
+
+function assertLocalizedText(value) {
+    assert.equal(typeof value, "object");
+    assert.ok(value && !Array.isArray(value));
+    assert.ok(Object.keys(value).length > 0);
+    for (const [locale, text] of Object.entries(value)) {
+        assert.deepEqual(Intl.getCanonicalLocales(locale), [locale]);
+        assert.ok(text.trim());
+    }
+}
+
+function fieldValueMatchesType(value, type) {
+    if (type === "integer") return Number.isSafeInteger(value);
+    if (type === "number")
+        return typeof value === "number" && Number.isFinite(value);
+    if (type === "string" || type === "asset") return typeof value === "string";
+    if (type === "boolean") return typeof value === "boolean";
+    if (type === "stringList") {
+        return (
+            Array.isArray(value) &&
+            value.every((item) => typeof item === "string")
+        );
+    }
+    if (type === "localizedText") {
+        try {
+            assertLocalizedText(value);
+            return true;
+        } catch {
+            return false;
+        }
+    }
+    return false;
+}
 
 function readJson(filePath) {
     return JSON.parse(readFileSync(filePath, "utf8"));
@@ -45,17 +80,38 @@ test("declares a data-only Japanese Library content pack", () => {
     assert.equal(manifest.schema, "schema.json");
     assert.equal(manifest.content, "content");
     assert.match(manifest.id, CONTENT_ID_PATTERN);
+    assert.match(manifest.namespace, SCHEMA_ID_PATTERN);
+    assert.match(manifest.version, SEMANTIC_VERSION_PATTERN);
     assert.ok(manifest.publisher.trim());
     assert.ok(manifest.version.trim());
     assert.ok(manifest.contentRevision.trim());
     assert.ok(manifest.license.id);
     assert.equal(schema.id, manifest.id);
+    assert.equal(schema.namespace, manifest.namespace);
     assert.equal(schema.language, "ja");
     assert.deepEqual(Intl.getCanonicalLocales(schema.language), ["ja"]);
+    assertLocalizedText(schema.metadata.labels);
     assert.deepEqual(
         schema.layers.map(({ id }) => id),
         ["characters", "alt-characters", "definitions", "words", "sentences"],
     );
+    for (const layer of schema.layers) {
+        assert.match(layer.id, SCHEMA_ID_PATTERN);
+        assertLocalizedText(layer.metadata.labels);
+        assert.ok(layer.semanticRole);
+        for (const field of layer.fields ?? []) {
+            assert.match(field.id, SCHEMA_ID_PATTERN);
+            assertLocalizedText(field.metadata.labels);
+        }
+        for (const relationship of layer.relationships ?? []) {
+            assert.match(relationship.id, SCHEMA_ID_PATTERN);
+            assertLocalizedText(relationship.metadata.labels);
+            assert.ok(relationship.onDelete);
+            if (relationship.requiredTarget) {
+                assert.ok((relationship.minimum ?? 0) >= 1);
+            }
+        }
+    }
 });
 
 test("content records satisfy schema fields and relationship targets", () => {
@@ -72,13 +128,19 @@ test("content records satisfy schema fields and relationship targets", () => {
         assert.ok(record.label?.trim(), `${record.id} requires a label`);
         const layer = layersById.get(record.layer);
         assert.ok(layer, `unknown layer ${record.layer}`);
+        assertLocalizedText(layer.metadata.labels);
         const fieldsById = new Map(
             (layer.fields ?? []).map((field) => [field.id, field]),
         );
         for (const [fieldId, value] of Object.entries(record.fields ?? {})) {
             const field = fieldsById.get(fieldId);
             assert.ok(field, `${record.id} has unknown field ${fieldId}`);
-            assert.equal(typeof value, field.type, `${record.id}.${fieldId}`);
+            assertLocalizedText(field.metadata.labels);
+            assert.equal(
+                fieldValueMatchesType(value, field.type),
+                true,
+                `${record.id}.${fieldId}`,
+            );
         }
         for (const field of layer.fields ?? []) {
             if (field.required)
@@ -93,6 +155,17 @@ test("content records satisfy schema fields and relationship targets", () => {
         for (const reference of record.references ?? []) {
             const relationship = relationshipsById.get(reference.relation);
             assert.ok(relationship, `${record.id} has unknown relationship`);
+            assertLocalizedText(relationship.metadata.labels);
+            assert.ok(
+                relationship.onDelete,
+                `${reference.relation} requires onDelete`,
+            );
+            if (relationship.ordered) {
+                assert.ok(Number.isSafeInteger(reference.position));
+                assert.ok(reference.position >= 0);
+            } else {
+                assert.equal(reference.position, undefined);
+            }
             assert.equal(
                 recordsById.get(reference.entryId)?.layer,
                 relationship.targetLayer,

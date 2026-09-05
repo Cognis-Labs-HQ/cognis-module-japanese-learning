@@ -38,7 +38,11 @@ Kanji-Zeichen in Datensatz-IDs wurden durch stabile ASCII-Kennungen ersetzt, wä
 
 Die deklarative japanische Beschreibung wurde an Cognis PR #196 und #213 angepasst und deklariert ausdrücklich keine ausführbaren Unterseiten. Study stellt nun das generierte, für Lernende sichtbare Bibliotheksziel bereit und erhält den validierten Sprachkontext `ja` beim Browsen und in der Verlaufnavigation.
 
+## Versionierter neutraler Schemavertrag
+
+Die Anpassung an Cognis PR #214 ergänzt Namensraumeigentum, lokalisierte Schemametadaten, semantische Ebenenrollen, erweiterte Feldtypen, Detailhinweise, Aktivitäts- und Interessens-Tags, erforderliche Beziehungsziele, ausdrückliches Löschverhalten, Resolver-Rollen und streng positionierte geordnete Referenzen. Die Sprachbeschreibung veröffentlicht nun die unveränderliche Paketidentität.
+
 ## Commits
 
-- [7bbb383](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/7bbb3839f238ccdb5a3eba48448405f561f3d328)
-- [83ad282](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/83ad282d4289f885518a26b13776fcdd9f3a0f98)
+- [a6fa75d](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/a6fa75d15c478b1d8ef1930dcc3c5c29e3938b97)
+- [33cf20c](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/33cf20c040c55a177efe83fa6d14674491da2254)

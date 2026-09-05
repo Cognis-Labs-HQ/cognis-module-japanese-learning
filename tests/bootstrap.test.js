@@ -1,5 +1,6 @@
 import assert from "node:assert/strict";
 import path from "node:path";
+import { readFileSync } from "node:fs";
 import test from "node:test";
 import { bootstrapModule } from "../bootstrap.js";
 
@@ -15,7 +16,7 @@ test("ingests the declarative pack through the host Library capability", async (
                     calls.push(root);
                     return {
                         packId: "japanese-core",
-                        contentRevision: "2026-09-05.1",
+                        contentRevision: "2026-09-05.2",
                         unchanged: false,
                     };
                 },
@@ -38,6 +39,15 @@ test("ingests the declarative pack through the host Library capability", async (
     );
     assert.deepEqual(contributions[0].value.childComponents, []);
     assert.equal(contributions[0].value.languageCode, "ja");
+    assert.deepEqual(
+        contributions[0].value.package,
+        JSON.parse(
+            readFileSync(
+                path.join(ctx.moduleRoot, "data", "library", "manifest.json"),
+                "utf8",
+            ),
+        ),
+    );
 });
 
 test("fails safely when the host Library capability is unavailable", async () => {

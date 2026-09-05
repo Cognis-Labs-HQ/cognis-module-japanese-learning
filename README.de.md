@@ -27,4 +27,6 @@ Das Inhaltspaketmanifest erfasst Herausgeber, unveränderliche Paketversion, Inh
 
 Paketlokale Datensatz-IDs verwenden nur portable ASCII-Buchstaben, Ziffern, Trennzeichen und Doppelpunkte; japanische Schriftzeichen stehen in `label`, niemals in `id`. Dadurch bleibt die Übernahme mit dem Kennungsvertrag für Bibliotheksdatensätze kompatibel.
 
+Schema und Paket teilen den Namensraum `ja`, und jede Datensatz-ID beginnt mit `ja:`. Metadaten für Schema, Ebenen, Felder und Beziehungen enthalten lokalisierte Bezeichnungen auf Deutsch, Englisch, Indonesisch und Japanisch. Semantische Rollen, typisierte Werte, Detailhinweise, Aktivitätskompatibilität, Interessensbereiche, Pflichtziele, geordnete Positionen, Löschverhalten und Resolver-Rollen ermöglichen Cognis neutrale Oberflächen und die Durchsetzung des vollständigen Vertrags.
+
 Das externe Modulmanifest veröffentlicht `/static/modules/study-language-ja/languages`, damit Cognis Marketplace-Metadaten vor dem Modul-Bootstrap übersetzen kann.

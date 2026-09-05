@@ -1,11 +1,27 @@
 import path from "node:path";
 
+const CONTENT_PACK = Object.freeze({
+    id: "japanese-core",
+    publisher: "Cognis Labs HQ",
+    namespace: "ja",
+    version: "2.1.0",
+    contentRevision: "2026-09-05.2",
+    schema: "schema.json",
+    content: "content",
+    license: Object.freeze({
+        id: "AGPL-3.0-or-later",
+        url: "https://www.gnu.org/licenses/agpl-3.0.html",
+        attribution: "Cognis Labs HQ",
+    }),
+});
+
 const LANGUAGE = Object.freeze({
     moduleId: "study-language-ja",
     languageCode: "ja",
     languageName: "日本語",
     languageFlag: "🇯🇵",
-    version: "2.0.3",
+    version: "2.1.0",
+    package: CONTENT_PACK,
     childComponents: [],
 });
 
