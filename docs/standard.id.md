@@ -20,7 +20,7 @@ Modul eksternal mendeklarasikan gateway Study sebagai dependensi komponennya. Mo
 
 Skema dan manifest memiliki namespace `ja` yang sama, dan setiap ID data diawali `ja:`. Skema mendefinisikan `characters`, `alt-characters`, `definitions`, `words`, dan `sentences` dengan metadata terlokalisasi dalam bahasa Jerman, Inggris, Indonesia, dan Jepang. Peran semantik mengarahkan antarmuka netral yang dihasilkan. Kolom memakai nilai bertipe dan petunjuk render detail; lapisan menerbitkan kompatibilitas aktivitas serta jalur minat. Hubungan terarah mendeklarasikan metadata terlokalisasi, lapisan tujuan, kardinalitas, target wajib, urutan, perilaku penghapusan wajib, dan peran resolver opsional. Referensi berurutan memiliki posisi unik nonnegatif, dan setiap target tersedia dalam paket yang sama.
 
-ID data lokal paket hanya menggunakan huruf dan angka ASCII portabel, pemisah, serta titik dua; glif bahasa Jepang ditempatkan di `label`, bukan di `id`. Aturan ini menjaga kompatibilitas ingest dengan kontrak pengenal data Pustaka.
+ID data lokal paket hanya menggunakan huruf kecil dan angka ASCII portabel, pemisah, serta titik dua; glif bahasa Jepang ditempatkan di `label`, bukan di `id`. Aturan ini menjaga kompatibilitas ingest dengan kontrak pengenal data Pustaka.
 
 ### Siklus hidup dan kepemilikan
 
