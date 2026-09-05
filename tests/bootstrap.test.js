@@ -36,6 +36,8 @@ test("ingests the declarative pack through the host Library capability", async (
         contributions.map(({ id }) => id),
         ["study:language:ja"],
     );
+    assert.deepEqual(contributions[0].value.childComponents, []);
+    assert.equal(contributions[0].value.languageCode, "ja");
 });
 
 test("fails safely when the host Library capability is unavailable", async () => {

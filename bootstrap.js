@@ -5,7 +5,8 @@ const LANGUAGE = Object.freeze({
     languageCode: "ja",
     languageName: "日本語",
     languageFlag: "🇯🇵",
-    version: "2.0.2",
+    version: "2.0.3",
+    childComponents: [],
 });
 
 export async function uninstallModule(ctx, { deleteContent }) {

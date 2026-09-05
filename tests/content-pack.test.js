@@ -51,6 +51,7 @@ test("declares a data-only Japanese Library content pack", () => {
     assert.ok(manifest.license.id);
     assert.equal(schema.id, manifest.id);
     assert.equal(schema.language, "ja");
+    assert.deepEqual(Intl.getCanonicalLocales(schema.language), ["ja"]);
     assert.deepEqual(
         schema.layers.map(({ id }) => id),
         ["characters", "alt-characters", "definitions", "words", "sentences"],

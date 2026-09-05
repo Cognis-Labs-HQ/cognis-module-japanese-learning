@@ -34,9 +34,11 @@ Die UUID des Bibliotheksadapters wurde aus den Komponentenabhängigkeiten entfer
 
 Kanji-Zeichen in Datensatz-IDs wurden durch stabile ASCII-Kennungen ersetzt, während die Zeichen als Bezeichnungen erhalten bleiben. Anschließend wurden Paketversion und Inhaltsrevision erhöht, damit die korrigierten Bytes sicher übernommen werden können.
 
+## Sprachbezogene generierte Navigation
+
+Die deklarative japanische Beschreibung wurde an Cognis PR #196 und #213 angepasst und deklariert ausdrücklich keine ausführbaren Unterseiten. Study stellt nun das generierte, für Lernende sichtbare Bibliotheksziel bereit und erhält den validierten Sprachkontext `ja` beim Browsen und in der Verlaufnavigation.
+
 ## Commits
 
-- [bc9d634](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/bc9d6340c32cf5bcc867b1ea4e7d58307a04e77f)
-- [dc40e68](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dc40e68bbfbd1927aecb5c27b14087a4d384b6ba)
-- [dc825e6](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dc825e6c9ea63b86137bcab8a1d4c9d84c95fef3)
-- [8a3f1c2](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/8a3f1c27a7d7f605fa792e72be298f7bd175c7b3)
+- [7bbb383](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/7bbb3839f238ccdb5a3eba48448405f561f3d328)
+- [83ad282](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/83ad282d4289f885518a26b13776fcdd9f3a0f98)

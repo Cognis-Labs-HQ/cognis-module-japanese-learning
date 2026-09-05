@@ -34,9 +34,11 @@ Study アダプターは単独で導入可能なコンポーネントではな�
 
 レコード ID 内の漢字を安定した ASCII 識別子に置き換え、字形はラベルとして保持しました。修正後のデータを安全に取り込めるよう、コンテンツパックのバージョンとリビジョンも更新しました。
 
+## 言語スコープ対応の生成ナビゲーション
+
+宣言型日本語記述子が実行可能な子ページを持たないことを明示し、Cognis PR #196 と #213 に合わせました。Study が学習者向けの生成済みライブラリ移動先を提供し、閲覧中と履歴移動中に検証済みの `ja` 言語コンテキストを維持します。
+
 ## コミット
 
-- [bc9d634](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/bc9d6340c32cf5bcc867b1ea4e7d58307a04e77f)
-- [dc40e68](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dc40e68bbfbd1927aecb5c27b14087a4d384b6ba)
-- [dc825e6](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dc825e6c9ea63b86137bcab8a1d4c9d84c95fef3)
-- [8a3f1c2](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/8a3f1c27a7d7f605fa792e72be298f7bd175c7b3)
+- [7bbb383](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/7bbb3839f238ccdb5a3eba48448405f561f3d328)
+- [83ad282](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/83ad282d4289f885518a26b13776fcdd9f3a0f98)
