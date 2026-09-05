@@ -30,3 +30,5 @@ Pack-local record IDs use only portable lowercase ASCII letters, numbers, separa
 The schema and pack share the `ja` namespace, and every record ID begins with `ja:`. Schema, layer, field, and relationship metadata provide localized labels in German, English, Indonesian, and Japanese. Semantic roles, typed values, detail hints, activity compatibility, interest veins, required targets, ordered positions, deletion behavior, and resolver roles allow Cognis to generate neutral interfaces and enforce the complete contract.
 
 The external module manifest publishes `/static/modules/study-language-ja/languages` so Cognis can translate marketplace metadata before module bootstrap.
+
+The published language descriptor provides the canonical `code` value `ja` as well as the compatible `languageCode` value. Cognis PR #215 uses that code to annotate the active language button and preserve the selected language in router history when a Study sub-navigation destination is opened.

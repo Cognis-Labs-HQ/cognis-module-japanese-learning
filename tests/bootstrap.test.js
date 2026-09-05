@@ -38,7 +38,12 @@ test("ingests the declarative pack through the host Library capability", async (
         ["study:language:ja"],
     );
     assert.deepEqual(contributions[0].value.childComponents, []);
+    assert.equal(contributions[0].value.code, "ja");
     assert.equal(contributions[0].value.languageCode, "ja");
+    assert.equal(
+        contributions[0].value.code,
+        contributions[0].value.languageCode,
+    );
     assert.deepEqual(
         contributions[0].value.package,
         JSON.parse(

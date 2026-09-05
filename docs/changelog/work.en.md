@@ -50,9 +50,14 @@ Katakana record IDs now use lowercase ASCII exclusively, allowing the host to ac
 
 The corrected pack was republished as version `2.1.2` with content revision `2026-09-05.4` so installations cannot reuse cached invalid pack bytes. Standalone tests now mirror the host prerequisites for string IDs, the `ja:` prefix, lowercase portable characters, and non-empty string labels.
 
+## Language Code for Study Sub-Navigation
+
+The language descriptor now publishes canonical `code: "ja"` alongside the compatible `languageCode`. This lets Cognis PR #215 annotate the spawned active-language button with the Japanese code and carry that selection through router history to subsequent Study destinations without URL query parameters.
+
 ## Commits
 
 - [a6fa75d](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/a6fa75d15c478b1d8ef1930dcc3c5c29e3938b97)
 - [33cf20c](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/33cf20c040c55a177efe83fa6d14674491da2254)
 - [ddd8464](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/ddd84646f1930ea660f469e4b1776219558e1e5b)
 - [7048e41](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/7048e4155bb52132741016c35371f0e0c215d67e)
+- [131afdf](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/131afdf5125a3eebae584a2c4729bd0a1b144654)

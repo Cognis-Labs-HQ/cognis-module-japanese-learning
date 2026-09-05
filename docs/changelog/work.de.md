@@ -50,9 +50,14 @@ Die Katakana-Datensatz-IDs verwenden jetzt ausschließlich kleingeschriebene ASC
 
 Das korrigierte Paket wurde als Version `2.1.2` mit Inhaltsrevision `2026-09-05.4` erneut veröffentlicht, damit Installationen keine zwischengespeicherten fehlerhaften Paketbytes wiederverwenden. Die eigenständigen Tests prüfen nun genau die Host-Voraussetzungen für String-IDs, den Präfix `ja:`, kleingeschriebene portable Zeichen und nicht leere String-Bezeichnungen.
 
+## Sprachcode für die Study-Unternavigation
+
+Die Sprachbeschreibung veröffentlicht nun den kanonischen Wert `code: "ja"` zusätzlich zum kompatiblen `languageCode`. Damit kann Cognis PR #215 die erzeugte aktive Sprachschaltfläche mit dem japanischen Sprachcode versehen und die Auswahl ohne URL-Abfrageparameter im Routerverlauf an nachfolgende Study-Ziele übergeben.
+
 ## Commits
 
 - [a6fa75d](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/a6fa75d15c478b1d8ef1930dcc3c5c29e3938b97)
 - [33cf20c](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/33cf20c040c55a177efe83fa6d14674491da2254)
 - [ddd8464](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/ddd84646f1930ea660f469e4b1776219558e1e5b)
 - [7048e41](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/7048e4155bb52132741016c35371f0e0c215d67e)
+- [131afdf](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/131afdf5125a3eebae584a2c4729bd0a1b144654)

@@ -17,10 +17,11 @@ const CONTENT_PACK = Object.freeze({
 
 const LANGUAGE = Object.freeze({
     moduleId: "study-language-ja",
+    code: "ja",
     languageCode: "ja",
     languageName: "日本語",
     languageFlag: "🇯🇵",
-    version: "2.1.2",
+    version: "2.1.3",
     package: CONTENT_PACK,
     childComponents: [],
 });
