@@ -9,6 +9,8 @@ Cognis Japanisch ist ein deklaratives japanisches Inhaltspaket für die Cognis-S
 - Cognis mit aktiviertem Study-Gateway und Bibliotheksadapter.
 - Die Host-Fähigkeit `study:library`.
 
+Das externe Modul deklariert das Study-Gateway als Komponentenabhängigkeit. Es erkennt den Bibliotheksadapter über die erforderliche Fähigkeit `study:library`, statt die Adapter-UUID als eigenständig installierbare Komponente zu behandeln.
+
 ## Entwicklung
 
 ```sh

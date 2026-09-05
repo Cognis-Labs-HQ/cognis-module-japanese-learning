@@ -70,6 +70,19 @@ test("manifest dependencies use UUID references", () => {
     assert.ok(manifest.requires.every((reference) => uuid.test(reference)));
 });
 
+test("manifest depends on the Study gateway and discovers Library by capability", () => {
+    const manifest = JSON.parse(readFileSync(resolve(ROOT, "manifest.json")));
+    assert.deepEqual(manifest.requires, [
+        "338b9237-a2c8-5bcf-9437-bccc9abd9a27",
+    ]);
+    assert.deepEqual(manifest.requiresCapabilities, ["study:library"]);
+    assert.equal(
+        manifest.requires.includes("a4db7882-9207-56bd-b13d-448fc82543ba"),
+        false,
+        "Study adapters are capability providers, not installable components",
+    );
+});
+
 test("external module metadata and declared files are consistent", () => {
     const manifest = JSON.parse(readFileSync(resolve(ROOT, "manifest.json")));
     const packageJson = JSON.parse(readFileSync(resolve(ROOT, "package.json")));

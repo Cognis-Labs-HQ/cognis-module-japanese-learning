@@ -9,6 +9,8 @@ Cognis Japanese is a declarative Japanese content pack for the Cognis Study Libr
 - Cognis with the Study gateway and Library adapter enabled.
 - The `study:library` host capability.
 
+The external module declares the Study gateway as its component dependency. It discovers the Library adapter through the required `study:library` capability rather than treating the adapter UUID as an independently installable component.
+
 ## Development
 
 ```sh

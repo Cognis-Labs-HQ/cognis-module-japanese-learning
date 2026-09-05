@@ -2,17 +2,14 @@
     "id": "study-language-ja",
     "uuid": "e905927f-b133-572a-92ce-2ea8645e5ceb",
     "name": "module.study-language-ja.name",
-    "version": "2.0.0",
+    "version": "2.0.1",
     "class": "extension",
     "coreApiVersion": "v1",
     "capabilities": ["study:language:ja"],
     "entrypoints": { "bootstrap": "./bootstrap.js" },
     "ui": { "stringsBaseUrl": "/static/modules/study-language-ja/languages" },
     "publisher": "Cognis Labs HQ",
-    "requires": [
-        "338b9237-a2c8-5bcf-9437-bccc9abd9a27",
-        "a4db7882-9207-56bd-b13d-448fc82543ba"
-    ],
+    "requires": ["338b9237-a2c8-5bcf-9437-bccc9abd9a27"],
     "requiresCapabilities": ["study:library"],
     "summary": "module.study-language-ja.summary",
     "description": "module.study-language-ja.description",
@@ -78,23 +75,23 @@
         },
         {
             "path": "README.de.md",
-            "sha256": "3b8f143d726b4149ece5af31ecee0e59f10bb2b94a79c9dd4f64c9fb3e9a6276"
+            "sha256": "9b3801c8ff5a321803d0bd7b706cd1702b6f71ae5ddf5cdd6c8b6ec576809707"
         },
         {
             "path": "README.en.md",
-            "sha256": "48057eac4c56b025eb98a31b4c27e12b16d555a2123a8204b7b1460ebb3c198c"
+            "sha256": "f72872800da7b5f5400912dd1ee261068c05893c3e7a8bebddd00eeaf266e32c"
         },
         {
             "path": "README.id.md",
-            "sha256": "c4059e7029b2bbe9ee5a77cf14b259ae3a10e1b3dcc9d1e4e6c2d41ab84a78c1"
+            "sha256": "d64d311772fb0869f6493dc528e76c3b2d63634a57c1bb5a93af9917eee53863"
         },
         {
             "path": "README.ja.md",
-            "sha256": "e567972cb14468d5d475a10c2480b161d9362688388bf962d78b612693617cce"
+            "sha256": "fcfcc20dda033c6fc2492a60f75741f7e52fd2525cb9b67695abe217abf9561d"
         },
         {
             "path": "README.md",
-            "sha256": "48057eac4c56b025eb98a31b4c27e12b16d555a2123a8204b7b1460ebb3c198c"
+            "sha256": "f72872800da7b5f5400912dd1ee261068c05893c3e7a8bebddd00eeaf266e32c"
         },
         {
             "path": "assets/banner.svg",
@@ -106,7 +103,7 @@
         },
         {
             "path": "bootstrap.js",
-            "sha256": "66f21c215dcaa5d5c86cb4cb85fbf6d2700f4339ecd25f9ae592d4b57eedbc01"
+            "sha256": "440a40cbdb757599d16eb258388ad2b5a3689aa69521b7426b1a6dc83335e20f"
         },
         {
             "path": "data/library/content/alt-characters/kanji.json",
@@ -142,27 +139,27 @@
         },
         {
             "path": "docs/standard.de.md",
-            "sha256": "27bb300c36db8488f85cbf67794d260389179e5246bd6824b044769dfdd00021"
+            "sha256": "a532d531e9d15329039201276678bf0e829ce4f6e37447b8c1a7764bc7986724"
         },
         {
             "path": "docs/standard.en.md",
-            "sha256": "f6c8fb028a724328283f831622955880dd6c836b65b413f08934ff1412c5a1ec"
+            "sha256": "caa5a859c31814b588c039fa4c01a0d969c50349af544de4f8de4d6146ed4e6c"
         },
         {
             "path": "docs/standard.id.md",
-            "sha256": "6aa5fd87662eeaa98086c467c6f8f986784e8dd09fe76f5bbd44b3685d6d1a0c"
+            "sha256": "7fd0a950d8c0b02b921e6a183704261f72480359283fcf891c92fdb1388f2caa"
         },
         {
             "path": "docs/standard.ja.md",
-            "sha256": "ad238e863f04ab3ad60b78606ba418208a280cf6f4a51d0d10e353bd4fa78038"
+            "sha256": "d63d8eb5dd9701bd0317bbb8faa76987fd4d8796308d6392373799a29aa3c09f"
         },
         {
             "path": "package-lock.json",
-            "sha256": "e849d6bb0bba21e68f695dc93b5083feaa4a3e4b36795e9ca500e0308c4713b2"
+            "sha256": "2e48cd512930212fa497e116b65e8fc0f5f5fee74122c624dde04e31c3954413"
         },
         {
             "path": "package.json",
-            "sha256": "9475d04559e8a5fb3dabef3d330220df86c51e3ea895fe2eaf3a890cadb37794"
+            "sha256": "57ba31b83a83bc9d427622eec4cb5de9eedfa2fa9d27b6b3c56170a07a5e2567"
         },
         {
             "path": "routes.json",
@@ -198,7 +195,7 @@
         },
         {
             "path": "tests/structural-compliance.test.js",
-            "sha256": "4307eea4748788ea3885207d0fa9ca2253e00b8e6ddb114af029705ff2a51f0b"
+            "sha256": "690cc8b01f4f3d413ad3e165db28c68f18c9ee69b9cb5c9148bb2cb151fdff10"
         },
         {
             "path": "tests/uninstall.test.js",

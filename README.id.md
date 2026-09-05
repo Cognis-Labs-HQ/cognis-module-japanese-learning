@@ -9,6 +9,8 @@ Cognis Bahasa Jepang adalah paket konten bahasa Jepang deklaratif untuk Pustaka 
 - Cognis dengan gateway Study dan adaptor Pustaka yang aktif.
 - Kapabilitas host `study:library`.
 
+Modul eksternal mendeklarasikan gateway Study sebagai dependensi komponennya. Modul menemukan adaptor Pustaka melalui kapabilitas wajib `study:library`, bukan memperlakukan UUID adaptor sebagai komponen yang dapat dipasang secara mandiri.
+
 ## Pengembangan
 
 ```sh

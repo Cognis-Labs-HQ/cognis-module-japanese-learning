@@ -6,6 +6,8 @@ The Cognis Japanese module installs declarative Japanese learning records into t
 
 Enable the Study gateway and Library adapter, then enable this module. Its bootstrap resolves `study:library` from `ctx` and ingests `data/library`. Administrators and learners use the Library adapter's generated Study interface rather than a module-owned route.
 
+The external module declares the Study gateway as its component dependency. It discovers the Library adapter through the required `study:library` capability rather than treating the adapter UUID as an independently installable component.
+
 ## Technical specification
 
 ### Package layout

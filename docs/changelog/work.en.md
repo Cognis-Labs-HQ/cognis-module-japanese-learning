@@ -26,7 +26,12 @@ Restored the Japanese Study sub-navigation on the library page, localized all th
 
 Realigned the module with the revised Cognis Library 2.1 contract. Japanese data now ships as a versioned schema and declarative content graph ingested through `study:library`; the host owns validation, persistence, routes, and generated UI, so the duplicated module Library service, database, APIs, and pages were removed.
 
+## Capability-Based Library Dependency
+
+Removed the Library adapter UUID from component dependencies because Study adapters are not independently installable components. The module now depends on the Study gateway component and discovers the Library exclusively through the required `study:library` capability.
+
 ## Commits
 
 - [bc9d634](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/bc9d6340c32cf5bcc867b1ea4e7d58307a04e77f)
 - [dc40e68](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dc40e68bbfbd1927aecb5c27b14087a4d384b6ba)
+- [dc825e6](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dc825e6c9ea63b86137bcab8a1d4c9d84c95fef3)
