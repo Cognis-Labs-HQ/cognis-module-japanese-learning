@@ -1,35 +1,15 @@
-import { registerApi } from "./api/index.js";
+import path from "node:path";
 
-const LANGUAGE = {
+const LANGUAGE = Object.freeze({
     moduleId: "study-language-ja",
     languageCode: "ja",
     languageName: "日本語",
     languageFlag: "🇯🇵",
-    version: "1.3.3",
-    childComponents: [
-        {
-            id: "hiragana-alphabet",
-            label: "module.study-language-ja.hiragana",
-            pageUrl: "/study/hiragana",
-            order: 0,
-        },
-        {
-            id: "library",
-            label: "module.study-language-ja.library",
-            pageUrl: "/study/library",
-            order: 100,
-        },
-        {
-            id: "classroom",
-            label: "module.study-language-ja.classroom",
-            pageUrl: "/study/ja-classroom",
-            order: 999,
-        },
-    ],
-};
+    version: "2.0.0",
+});
 
 export async function uninstallModule(ctx, { deleteContent }) {
-    ctx.log?.("info", "Japanese learning module cleanup completed.", {
+    ctx.log?.("info", "Japanese language pack cleanup completed.", {
         component: "study-language-ja",
         operation: "uninstall_cleanup",
         deleteContent,
@@ -37,21 +17,26 @@ export async function uninstallModule(ctx, { deleteContent }) {
 }
 
 export async function bootstrapModule(ctx) {
-    const library = await registerApi(ctx);
-    ctx.contributePublicCapability(
-        "study:language:ja",
-        Object.freeze(LANGUAGE),
+    const library = ctx.getCapability("study:library");
+    if (!library || typeof library.ingestContentPack !== "function") {
+        throw new Error("Cognis Japanese requires study:library.");
+    }
+    ctx.registerStaticDir("", path.join(ctx.moduleRoot, "ui"));
+    const receipt = await library.ingestContentPack(
+        path.join(ctx.moduleRoot, "data", "library"),
     );
-    ctx.contributePublicCapability("study:library", library);
-    ctx.contributePublicCapability("study:language:ja:library", library);
+    ctx.contributePublicCapability("study:language:ja", LANGUAGE);
     ctx.flow.extend(
         "bootstrap-platform",
         "register-flows",
         { id: "study-language-ja:register-language" },
         () => LANGUAGE,
     );
-    ctx.log?.("info", "Cognis Japanese enabled.", {
+    ctx.log?.("info", "Cognis Japanese content pack enabled.", {
         component: "study-language-ja",
         operation: "bootstrap",
+        packId: receipt.packId,
+        contentRevision: receipt.contentRevision,
+        unchanged: receipt.unchanged,
     });
 }

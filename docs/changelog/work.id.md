@@ -22,7 +22,11 @@ Semua endpoint pustaka dipindahkan ke namespace API milik modul agar Cognis dapa
 
 Subnavigasi Study bahasa Jepang dipulihkan pada halaman pustaka, ketiga label halaman turunannya dilokalkan dari bundel modul, dan klik diteruskan melalui router host Cognis pada setiap halaman Study bahasa Jepang.
 
+## Paket Konten Bahasa Jepang Deklaratif
+
+Modul diselaraskan dengan kontrak Cognis Library 2.1 yang direvisi. Data bahasa Jepang kini dikirim sebagai skema berversi dan graf konten deklaratif yang diingesti melalui `study:library`; host memiliki validasi, persistensi, rute, dan UI yang dihasilkan, sehingga layanan Pustaka, basis data, API, dan halaman duplikat milik modul telah dihapus.
+
 ## Komit
 
-- [8dc42b2](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/8dc42b26ee4c0fdf71e3b6e3961d2d5c22e60583)
-- [9c0119a](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/9c0119a1f9b9cd4df94c4b941786698ca37a04c1)
+- [bc9d634](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/bc9d6340c32cf5bcc867b1ea4e7d58307a04e77f)
+- [dc40e68](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dc40e68bbfbd1927aecb5c27b14087a4d384b6ba)

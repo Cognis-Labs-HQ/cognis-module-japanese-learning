@@ -2,19 +2,12 @@
 
 [English](README.en.md) · [Deutsch](README.de.md) · [Bahasa Indonesia](README.id.md) · **日本語**
 
-Cognis 日本語は、Cognis Study ゲートウェイ向けの日本語学習コンテンツを提供する外部モジュールです。日本語の言語記述、ひらがなアクティビティ、スコープ別ライブラリブラウザー、教室画面、日本語学習データセットを収録しています。
-
-## 利用側向けテンプレート
-
-利用側は `study:library` ケイパビリティから、必要な階層だけを指定して `cloneTemplate` を呼び出します。複製されたテンプレートは標準順序と階層関係のメタデータを保ち、省略した階層へのリンクを除き、必須の依存関係を示します。単語や文の作成時には、正規化された文字や空白で区切られた単語からリンクを推定でき、明示的な参照が常に優先されます。
-
-日本語 Study サブナビゲーションは、ひらがな、ライブラリ、教室のラベルをモジュールのロケールバンドルから解決し、クリックを Cognis ホストルーターへ渡します。
+Cognis 日本語は、Cognis Study ライブラリ向けの宣言型日本語コンテンツパックです。API ルート、永続化、ブラウザー画面を所有せず、バージョン付きスキーマと検証済みの文字・定義・単語・文データを提供します。
 
 ## 要件
 
-- Study ゲートウェイが有効な Cognis。
-- ホストケイパビリティ `auth:requireAuth`。
-- ライブラリのレコードを変更するための管理者または所有者アカウント。
+- Study ゲートウェイとライブラリアダプターが有効な Cognis。
+- ホストの `study:library` ケイパビリティ。
 
 ## 開発
 
@@ -24,12 +17,8 @@ npm test
 npm run check:manifest
 ```
 
-このモジュールは `/study/hiragana`、`/study/library`、`/study/ja-classroom` を登録します。認証が必要な多層ライブラリ API は `/api/v1/modules/study-language-ja/study/library` 以下で利用でき、グローバル・クラス・ユーザーの各スコープ、依存関係の追跡、JSON・Anki 交換、審査付きプッシュリクエストに対応します。
+ブートストラップ時に、モジュールは `ctx` から `study:library` を取得し、`data/library` に対して `ingestContentPack` を呼び出します。パスの安全性、グラフ検証、安定した内部 ID、トランザクション、冪等性、永続化、API ルート、スキーマ生成 Study 画面は Cognis が所有します。
 
-manifest はモジュール所有の言語バンドルとして `/static/modules/study-language-ja/languages` を公開し、Cognis が UI の読み込み前にマーケットプレイスのメタデータを翻訳できるようにします。
+コンテンツパックマニフェストには、発行者、不変のパッケージバージョン、コンテンツリビジョン、スキーマとコンテンツのパス、ライセンスを記録します。`schema.json` は日本語固有の階層、型付きフィールド、関係、基数、順序、リゾルバーを宣言します。コンテンツファイルは安定したパック内 ID と明示的な参照を使用します。
 
-このリポジトリは、Cognis の `feature-remove-modules-from-administration-page` ブランチにある日本語モジュールから抽出され、[Jitsi Meet](https://github.com/Cognis-Labs-HQ/cognis-module-jitsi-meet/pull/1) と [Nextcloud Whiteboard](https://github.com/Cognis-Labs-HQ/cognis-module-nextcloud-whiteboard/pull/1) で確立された外部モジュールのパッケージ形式に従っています。
-
-## ライセンス
-
-AGPL-3.0-or-later。[LICENSE](LICENSE) を参照してください。
+外部モジュールマニフェストは `/static/modules/study-language-ja/languages` を公開し、Cognis がモジュールのブートストラップ前に Marketplace メタデータを翻訳できるようにします。

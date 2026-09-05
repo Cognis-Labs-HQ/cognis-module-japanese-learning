@@ -1,0 +1,109 @@
+{
+    "id": "japanese-core",
+    "version": 1,
+    "language": "ja",
+    "label": "日本語",
+    "layers": [
+        {
+            "id": "characters",
+            "label": "文字",
+            "fields": [
+                {
+                    "id": "romanization",
+                    "label": "ローマ字",
+                    "type": "string",
+                    "required": true
+                },
+                {
+                    "id": "character_class",
+                    "label": "文字種",
+                    "type": "string",
+                    "required": true
+                }
+            ]
+        },
+        {
+            "id": "alt-characters",
+            "label": "代替文字",
+            "fields": [
+                {
+                    "id": "readings",
+                    "label": "読み",
+                    "type": "string"
+                },
+                {
+                    "id": "meaning",
+                    "label": "意味",
+                    "type": "string"
+                }
+            ],
+            "relationships": [
+                {
+                    "id": "components",
+                    "targetLayer": "characters",
+                    "label": "構成要素",
+                    "ordered": true
+                }
+            ]
+        },
+        {
+            "id": "definitions",
+            "label": "定義",
+            "fields": [
+                {
+                    "id": "language",
+                    "label": "言語",
+                    "type": "string",
+                    "required": true
+                }
+            ]
+        },
+        {
+            "id": "words",
+            "label": "単語",
+            "fields": [
+                {
+                    "id": "reading",
+                    "label": "読み",
+                    "type": "string",
+                    "required": true
+                },
+                {
+                    "id": "jlpt_level",
+                    "label": "JLPT レベル",
+                    "type": "string"
+                }
+            ],
+            "relationships": [
+                {
+                    "id": "spelling",
+                    "targetLayer": "alt-characters",
+                    "label": "表記",
+                    "minimum": 1,
+                    "ordered": true,
+                    "resolver": "grapheme"
+                },
+                {
+                    "id": "definitions",
+                    "targetLayer": "definitions",
+                    "label": "定義",
+                    "minimum": 1
+                }
+            ]
+        },
+        {
+            "id": "sentences",
+            "label": "文",
+            "relationships": [
+                {
+                    "id": "words",
+                    "targetLayer": "words",
+                    "label": "単語",
+                    "minimum": 1,
+                    "ordered": true,
+                    "resolver": "longest-match"
+                }
+            ]
+        }
+    ]
+}

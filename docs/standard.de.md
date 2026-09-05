@@ -1,42 +1,25 @@
-# Cognis-Japanischmodul
+# Standard für das japanische Inhaltspaket
 
-Das Cognis-Japanischmodul stellt für das Cognis-Study-Gateway eine installierbare Japanischlernumgebung mit Kana- und Kanji-Daten, einer Lernbibliothek und Einstiegspunkten für den Unterricht bereit.
+Das Cognis-Japanisch-Modul installiert deklarative japanische Lerndatensätze in die hosteigene Study-Bibliothek und bleibt dabei von Bibliotheksinternas, Datenbanken, APIs und Browsercode isoliert.
 
-## Vorlagen für Verbraucher
+## Verwendung
 
-Verbraucher rufen über die `study:library`-Fähigkeit `cloneTemplate` mit genau den benötigten Ebenen auf. Kopien behalten die kanonische Reihenfolge und Beziehungsmetadaten bei, entfernen Verknüpfungen zu ausgelassenen Ebenen und kennzeichnen erforderliche Abhängigkeiten. Beim Erstellen von Wörtern und Sätzen können Verknüpfungen aus normalisierten Zeichen und durch Leerraum getrennten Wörtern abgeleitet werden; ausdrückliche Referenzen bleiben maßgeblich.
-
-Die japanische Study-Unternavigation löst ihre Bezeichnungen für Hiragana, Bibliothek und Unterricht aus dem Locale-Bündel des Moduls auf und leitet Klicks über den Cognis-Host-Router weiter.
-
-## Anwendungsbeispiele
-
-- Öffnen Sie `/study/hiragana`, um das Hiragana-Alphabet zu erkunden.
-- Öffnen Sie als Administrator `/study/library`, um die Lerninhalte des Moduls zu prüfen und zu ergänzen.
-- Öffnen Sie `/study/ja-classroom`, um über Study eine Japanischunterrichtssitzung zu beginnen.
-- Rufen Sie `/api/v1/modules/study-language-ja/study/library/entries?scope=global` mit einem gültigen Cognis-Zugriffstoken auf, um globale Bibliothekseinträge zu lesen.
-- Lösen Sie die Capability `study:language:ja` auf, um die Sprachbeschreibung ohne Import von Modulinterna einzubinden.
+Aktivieren Sie das Study-Gateway und den Bibliotheksadapter und anschließend dieses Modul. Sein Bootstrap löst `study:library` aus `ctx` auf und übernimmt `data/library`. Administratoren und Lernende verwenden die vom Bibliotheksadapter erzeugte Study-Oberfläche statt einer moduleigenen Route.
 
 ## Technische Spezifikation
 
-Das Modul ist eine externe Cognis-Erweiterung. Seine dauerhafte UUID identifiziert es versionsübergreifend, und sein `requires`-Eintrag deklariert das Study-Gateway per UUID.
+### Paketstruktur
 
-### Integrationsvertrag
+`data/library/manifest.json` benennt Paket, unveränderliche Paketversion, Inhaltsrevision, Schema, Inhaltswurzel, Herausgeber und Lizenz. Jedes unmittelbare Inhaltsverzeichnis entspricht einer Ebene in `schema.json`; JSON-Dateien enthalten Arrays stabiler Datensätze.
 
-- `bootstrap.js` ist der einzige Integrationseinstiegspunkt für die Plattform.
-- Das bereitgestellte `ctx` ist der einzige komponentenübergreifende Bus für Routen, UI-Registrierungen, Capabilities und Flow-Hooks.
-- Laufzeitimporte bleiben repository-relativ und greifen niemals auf Cognis-Interna oder benachbarte Komponenten zu.
-- Bereichsgebundene Registrierungen lassen sich beim Deaktivieren oder Deinstallieren des Moduls entfernen.
-- Der Deinstallations-Hook protokolliert die angeforderte Lebenszyklus-Bereinigung, ohne paketierte Lerndatendateien direkt zu löschen; diese Dateien gehören weiterhin zum Modulpaket und werden zusammen mit dem Paket entfernt.
+### Schema und Graph
 
-### Sicherheit
+Das Schema definiert `characters`, `alt-characters`, `definitions`, `words` und `sentences`. Typisierte Felder und gerichtete Beziehungen legen Zielebenen, erforderliche Kardinalität, Reihenfolge und optionale Graphem- oder Längste-Treffer-Auflösung fest. Jede Referenz verweist auf einen anderen Datensatz desselben Pakets.
 
-- Bibliotheksendpunkte authentifizieren Anfragen, bevor Daten gelesen oder geändert werden.
-- Schreibvorgänge erfordern einen Administrator, validieren Datensatzobjekte an der API-Grenze und beschränken Ebenennamen auf eine Positivliste.
-- API-Antworten verwenden stabile öffentliche Fehler, ohne Implementierungsdetails offenzulegen.
-- Fehler werden mit sicheren strukturierten Metadaten an den Host-Logger übergeben.
+### Lebenszyklus und Eigentümerschaft
 
-### Freigabeprozess
+`bootstrap.js` bezieht ausschließlich öffentliche Fähigkeiten über `ctx`, lässt das Paket von der Bibliothek übernehmen, veröffentlicht die japanische Sprachbeschreibung und protokolliert den Beleg. Die Host-Bibliothek besitzt Validierung, Namensraum-IDs, Transaktionen, Idempotenz, Persistenz, Routen und generierte UI. Dieses Modul registriert keine API- oder Seitenrouten und greift auf keine Host-Datenbank zu.
 
-- Halten Sie die Versionen in `manifest.json`, `package.json` und `package-lock.json` synchron und ändern Sie niemals die Modul-UUID.
-- Führen Sie vor einem Release-Commit `npm install`, `npm test`, `npm run lint`, `npm run manifest:hashes`, `npm run check:manifest` und `git diff --check` aus.
-- Erzeugen Sie `manifest.files` nach der letzten Änderung an einer ausgelieferten Datei neu, damit alle repository-relativen Pfade und SHA-256-Prüfsummen überprüfbar bleiben.
+### Aktualisierungen und Lizenzierung
+
+Schemaänderungen erfordern eine höhere Schemaversion. Inhaltsänderungen erfordern eine neue Paketversion oder Inhaltsrevision. Alle gebündelten Datensätze verwenden die im Paketmanifest erklärte Lizenz und Attribution.

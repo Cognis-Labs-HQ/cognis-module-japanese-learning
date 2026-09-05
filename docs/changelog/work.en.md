@@ -22,7 +22,11 @@ Moved every library endpoint into the module-owned API namespace so Cognis can e
 
 Restored the Japanese Study sub-navigation on the library page, localized all three child-page labels from the module bundle, and routed clicks through the Cognis host router on every Japanese Study page.
 
+## Declarative Japanese Content Pack
+
+Realigned the module with the revised Cognis Library 2.1 contract. Japanese data now ships as a versioned schema and declarative content graph ingested through `study:library`; the host owns validation, persistence, routes, and generated UI, so the duplicated module Library service, database, APIs, and pages were removed.
+
 ## Commits
 
-- [8dc42b2](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/8dc42b26ee4c0fdf71e3b6e3961d2d5c22e60583)
-- [9c0119a](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/9c0119a1f9b9cd4df94c4b941786698ca37a04c1)
+- [bc9d634](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/bc9d6340c32cf5bcc867b1ea4e7d58307a04e77f)
+- [dc40e68](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dc40e68bbfbd1927aecb5c27b14087a4d384b6ba)

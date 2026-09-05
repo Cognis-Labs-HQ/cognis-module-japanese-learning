@@ -1,0 +1,74 @@
+[
+    {
+        "id": "ja:word:nihon",
+        "label": "日本",
+        "fields": {
+            "reading": "nihon",
+            "jlpt_level": "N5"
+        },
+        "references": [
+            {
+                "entryId": "ja:kanji:日",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:kanji:本",
+                "relation": "spelling",
+                "position": 1
+            },
+            {
+                "entryId": "ja:def:nihon",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:nihongo",
+        "label": "日本語",
+        "fields": {
+            "reading": "nihongo",
+            "jlpt_level": "N5"
+        },
+        "references": [
+            {
+                "entryId": "ja:kanji:日",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:kanji:本",
+                "relation": "spelling",
+                "position": 1
+            },
+            {
+                "entryId": "ja:kanji:語",
+                "relation": "spelling",
+                "position": 2
+            },
+            {
+                "entryId": "ja:def:nihongo",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:hito",
+        "label": "人",
+        "fields": {
+            "reading": "hito",
+            "jlpt_level": "N5"
+        },
+        "references": [
+            {
+                "entryId": "ja:kanji:人",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:def:hito",
+                "relation": "definitions"
+            }
+        ]
+    }
+]

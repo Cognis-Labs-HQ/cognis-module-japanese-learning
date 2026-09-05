@@ -2,19 +2,12 @@
 
 **English** · [Deutsch](README.de.md) · [Bahasa Indonesia](README.id.md) · [日本語](README.ja.md)
 
-Cognis Japanese is the external Japanese learning content module for the Cognis Study gateway. It packages the Japanese language descriptor, hiragana activity, scoped library browser, classroom surface, and Japanese learning datasets.
-
-## Consumer Templates
-
-Consumers obtain the library through the `study:library` capability and call `cloneTemplate` with exactly the layers they need. Clones retain canonical ordering and layer relationship metadata, discard links to omitted layers, and identify required dependencies. Word and sentence creation can infer links from normalized characters and whitespace-delimited words; explicit references remain authoritative.
-
-The Japanese Study sub-navigation resolves its Hiragana, Library, and Classroom labels from the module locale bundle and sends clicks through the Cognis host router.
+Cognis Japanese is a declarative Japanese content pack for the Cognis Study Library. It provides a versioned schema and validated character, definition, word, and sentence records without owning API routes, persistence, or browser interfaces.
 
 ## Requirements
 
-- Cognis with the Study gateway enabled.
-- The `auth:requireAuth` host capability.
-- An administrator or owner account to change library records.
+- Cognis with the Study gateway and Library adapter enabled.
+- The `study:library` host capability.
 
 ## Development
 
@@ -24,12 +17,8 @@ npm test
 npm run check:manifest
 ```
 
-The module registers `/study/hiragana`, `/study/library`, and `/study/ja-classroom`. Its authenticated, multi-layer library API is available below `/api/v1/modules/study-language-ja/study/library`; it supports global, class, and user scopes, dependency tracing, JSON and Anki interchange, and reviewed push requests.
+During bootstrap, the module obtains `study:library` through `ctx` and calls `ingestContentPack` for `data/library`. Cognis owns path safety, graph validation, stable internal IDs, transactions, idempotency, persistence, API routes, and schema-generated Study interfaces.
 
-The manifest publishes `/static/modules/study-language-ja/languages` as its module-owned locale bundle so Cognis can translate marketplace metadata before loading the UI.
+The content-pack manifest records its publisher, immutable package version, content revision, schema and content paths, and license. `schema.json` declares Japanese-specific layers, typed fields, relationships, cardinality, ordering, and resolvers. Content files use stable pack-local IDs and explicit references.
 
-This repository was extracted from the Japanese language module on Cognis's `feature-remove-modules-from-administration-page` branch, following the external-module packaging established by [Jitsi Meet](https://github.com/Cognis-Labs-HQ/cognis-module-jitsi-meet/pull/1) and [Nextcloud Whiteboard](https://github.com/Cognis-Labs-HQ/cognis-module-nextcloud-whiteboard/pull/1).
-
-## License
-
-AGPL-3.0-or-later. See [LICENSE](LICENSE).
+The external module manifest publishes `/static/modules/study-language-ja/languages` so Cognis can translate marketplace metadata before module bootstrap.

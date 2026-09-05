@@ -2,19 +2,12 @@
 
 [English](README.en.md) · [Deutsch](README.de.md) · **Bahasa Indonesia** · [日本語](README.ja.md)
 
-Cognis Bahasa Jepang adalah modul eksternal berisi materi pembelajaran bahasa Jepang untuk gateway Study Cognis. Modul ini menyediakan deskripsi bahasa Jepang, aktivitas hiragana, peramban pustaka bercakupan, halaman kelas, serta kumpulan data pembelajaran bahasa Jepang.
-
-## Templat untuk Konsumen
-
-Konsumen memperoleh pustaka melalui kapabilitas `study:library` dan memanggil `cloneTemplate` dengan lapisan yang benar-benar diperlukan. Salinan mempertahankan urutan baku dan metadata hubungan lapisan, membuang tautan menuju lapisan yang dihilangkan, serta menandai dependensi wajib. Pembuatan kata dan kalimat dapat menyimpulkan tautan dari karakter yang dinormalisasi dan kata yang dipisahkan spasi; referensi eksplisit tetap menjadi acuan.
-
-Subnavigasi Study bahasa Jepang mengambil label Hiragana, Pustaka, dan Kelas dari bundel locale modul serta meneruskan klik melalui router host Cognis.
+Cognis Bahasa Jepang adalah paket konten bahasa Jepang deklaratif untuk Pustaka Study Cognis. Paket ini menyediakan skema berversi serta data karakter, definisi, kata, dan kalimat tervalidasi tanpa memiliki rute API, persistensi, atau antarmuka peramban.
 
 ## Persyaratan
 
-- Cognis dengan gateway Study yang diaktifkan.
-- Kapabilitas host `auth:requireAuth`.
-- Akun administrator atau pemilik untuk mengubah catatan pustaka.
+- Cognis dengan gateway Study dan adaptor Pustaka yang aktif.
+- Kapabilitas host `study:library`.
 
 ## Pengembangan
 
@@ -24,12 +17,8 @@ npm test
 npm run check:manifest
 ```
 
-Modul ini mendaftarkan `/study/hiragana`, `/study/library`, dan `/study/ja-classroom`. API pustaka berlapis yang memerlukan autentikasi tersedia di bawah `/api/v1/modules/study-language-ja/study/library`; API ini mendukung cakupan global, kelas, dan pengguna, pelacakan dependensi, pertukaran JSON dan Anki, serta permintaan push yang ditinjau.
+Saat bootstrap, modul memperoleh `study:library` melalui `ctx` dan memanggil `ingestContentPack` untuk `data/library`. Cognis menangani keamanan jalur, validasi graf, ID internal stabil, transaksi, idempotensi, persistensi, rute API, dan antarmuka Study yang dibuat dari skema.
 
-Manifest memublikasikan `/static/modules/study-language-ja/languages` sebagai bundel bahasa milik modul agar Cognis dapat menerjemahkan metadata marketplace sebelum memuat UI.
+Manifest paket konten mencatat penerbit, versi paket yang tidak dapat diubah, revisi konten, jalur skema dan konten, serta lisensi. `schema.json` mendeklarasikan lapisan khusus bahasa Jepang, kolom bertipe, hubungan, kardinalitas, urutan, dan resolver. Berkas konten menggunakan ID lokal paket yang stabil dan referensi eksplisit.
 
-Repositori ini diekstrak dari modul bahasa Jepang pada branch Cognis `feature-remove-modules-from-administration-page`, mengikuti pengemasan modul eksternal yang dibuat oleh [Jitsi Meet](https://github.com/Cognis-Labs-HQ/cognis-module-jitsi-meet/pull/1) dan [Nextcloud Whiteboard](https://github.com/Cognis-Labs-HQ/cognis-module-nextcloud-whiteboard/pull/1).
-
-## Lisensi
-
-AGPL-3.0-or-later. Lihat [LICENSE](LICENSE).
+Manifest modul eksternal menerbitkan `/static/modules/study-language-ja/languages` agar Cognis dapat menerjemahkan metadata marketplace sebelum bootstrap modul.
