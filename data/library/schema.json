@@ -1,6 +1,6 @@
 {
     "id": "japanese-core",
-    "version": 3,
+    "version": 4,
     "namespace": "ja",
     "language": "ja",
     "metadata": {
@@ -25,6 +25,40 @@
             "semanticRole": "atomicWritingUnit",
             "fields": [
                 {
+                    "id": "pronunciation",
+                    "metadata": {
+                        "labels": {
+                            "de": "Aussprache",
+                            "en": "Pronunciation",
+                            "id": "Pelafalan",
+                            "ja": "発音"
+                        }
+                    },
+                    "type": "stringList",
+                    "required": true,
+                    "detail": {
+                        "renderer": "text",
+                        "order": 1
+                    }
+                },
+                {
+                    "id": "audio",
+                    "metadata": {
+                        "labels": {
+                            "de": "Audio",
+                            "en": "Audio",
+                            "id": "Audio",
+                            "ja": "音声"
+                        }
+                    },
+                    "type": "audio",
+                    "required": true,
+                    "detail": {
+                        "renderer": "media",
+                        "order": 2
+                    }
+                },
+                {
                     "id": "romanization",
                     "metadata": {
                         "labels": {
@@ -38,7 +72,7 @@
                     "required": true,
                     "detail": {
                         "renderer": "text",
-                        "order": 1
+                        "order": 3
                     }
                 },
                 {
@@ -55,12 +89,17 @@
                     "required": true,
                     "detail": {
                         "renderer": "badge",
-                        "order": 2
+                        "order": 4
                     }
                 }
             ],
             "detail": {
-                "fieldOrder": ["romanization", "character_class"]
+                "fieldOrder": [
+                    "pronunciation",
+                    "audio",
+                    "romanization",
+                    "character_class"
+                ]
             },
             "activityCompatibility": ["study:recognition", "study:writing"],
             "interestVeins": ["language:japanese"]
@@ -78,6 +117,40 @@
             "semanticRole": "compoundWritingUnit",
             "fields": [
                 {
+                    "id": "pronunciation",
+                    "metadata": {
+                        "labels": {
+                            "de": "Aussprache",
+                            "en": "Pronunciation",
+                            "id": "Pelafalan",
+                            "ja": "発音"
+                        }
+                    },
+                    "type": "stringList",
+                    "required": true,
+                    "detail": {
+                        "renderer": "text",
+                        "order": 1
+                    }
+                },
+                {
+                    "id": "audio",
+                    "metadata": {
+                        "labels": {
+                            "de": "Audio",
+                            "en": "Audio",
+                            "id": "Audio",
+                            "ja": "音声"
+                        }
+                    },
+                    "type": "audio",
+                    "required": true,
+                    "detail": {
+                        "renderer": "media",
+                        "order": 2
+                    }
+                },
+                {
                     "id": "readings",
                     "metadata": {
                         "labels": {
@@ -90,7 +163,7 @@
                     "type": "stringList",
                     "detail": {
                         "renderer": "text",
-                        "order": 1
+                        "order": 3
                     }
                 },
                 {
@@ -106,7 +179,7 @@
                     "type": "string",
                     "detail": {
                         "renderer": "text",
-                        "order": 2
+                        "order": 4
                     }
                 }
             ],
@@ -128,7 +201,7 @@
                 }
             ],
             "detail": {
-                "fieldOrder": ["readings", "meaning"]
+                "fieldOrder": ["pronunciation", "audio", "readings", "meaning"]
             },
             "activityCompatibility": ["study:recognition", "study:writing"],
             "interestVeins": ["language:japanese"]
@@ -297,6 +370,59 @@
             "interestVeins": ["language:japanese"]
         },
         {
+            "id": "particles",
+            "metadata": {
+                "labels": {
+                    "de": "Partikeln",
+                    "en": "Particles",
+                    "id": "Partikel",
+                    "ja": "助詞"
+                }
+            },
+            "semanticRole": "particle",
+            "fields": [
+                {
+                    "id": "pronunciation",
+                    "metadata": {
+                        "labels": {
+                            "de": "Aussprache",
+                            "en": "Pronunciation",
+                            "id": "Pelafalan",
+                            "ja": "発音"
+                        }
+                    },
+                    "type": "stringList",
+                    "required": true,
+                    "detail": {
+                        "renderer": "text",
+                        "order": 1
+                    }
+                },
+                {
+                    "id": "function",
+                    "metadata": {
+                        "labels": {
+                            "de": "Funktion",
+                            "en": "Function",
+                            "id": "Fungsi",
+                            "ja": "機能"
+                        }
+                    },
+                    "type": "localizedText",
+                    "required": true,
+                    "detail": {
+                        "renderer": "text",
+                        "order": 2
+                    }
+                }
+            ],
+            "detail": {
+                "fieldOrder": ["pronunciation", "function"]
+            },
+            "activityCompatibility": ["study:reading", "study:grammar"],
+            "interestVeins": ["language:japanese"]
+        },
+        {
             "id": "sentences",
             "metadata": {
                 "labels": {
@@ -324,6 +450,21 @@
                     "requiredTarget": true,
                     "onDelete": "restrict",
                     "resolverRole": "longestMatch"
+                },
+                {
+                    "id": "particles",
+                    "targetLayer": "particles",
+                    "metadata": {
+                        "labels": {
+                            "de": "Partikeln",
+                            "en": "Particles",
+                            "id": "Partikel",
+                            "ja": "助詞"
+                        }
+                    },
+                    "ordered": true,
+                    "onDelete": "restrict",
+                    "resolverRole": "explicit"
                 }
             ],
             "activityCompatibility": ["study:reading"],

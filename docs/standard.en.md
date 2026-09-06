@@ -18,7 +18,7 @@ The external module declares the Study gateway as its component dependency. It d
 
 ### Schema and graph
 
-The schema and manifest own the same `ja` namespace, and every record ID starts with `ja:`. The schema defines `characters`, `alt-characters`, `definitions`, `words`, and `sentences` using localized metadata in German, English, Indonesian, and Japanese. Semantic roles drive neutral generated interfaces. Fields use typed values and detail render hints; layers publish activity compatibility and interest veins. Directed relationships declare localized metadata, target layers, cardinality, required targets, ordering, mandatory deletion behavior, and optional resolver roles. Ordered references carry unique non-negative positions, and every target exists in the same pack.
+The schema and manifest own the same `ja` namespace, and every record ID starts with `ja:`. The schema defines `characters`, `alt-characters`, `definitions`, `words`, `particles`, and `sentences` using localized metadata in German, English, Indonesian, and Japanese. Semantic roles drive neutral generated interfaces. Fields use typed values and detail render hints; layers publish activity compatibility and interest veins. Directed relationships declare localized metadata, target layers, cardinality, required targets, ordering, mandatory deletion behavior, and optional resolver roles. Ordered references carry unique non-negative positions, and every target exists in the same pack.
 
 Pack-local record IDs use only portable lowercase ASCII letters, numbers, separators, and colons; Japanese glyphs belong in `label`, never in `id`. This keeps ingestion compatible with the Library content-record identifier contract.
 
@@ -31,3 +31,7 @@ Pack-local record IDs use only portable lowercase ASCII letters, numbers, separa
 Schema changes require a schema-version increase. Content changes require a new pack version or content revision. All bundled records use the license and attribution declared by the pack manifest.
 
 The `definitions` dictionary layer declares module-owned definition localization with stable `japanese:definitions:*` string keys and a typed `localizedText` field. Every preseeded definition includes German, English, Indonesian, and Japanese text, so consumers resolve display strings without depending on Cognis core language data.
+
+## Writing-unit audio and particles
+
+Atomic and compound writing units now provide required pronunciation lists and HTTPS audio references without packaging binary media. The dedicated particle layer stores grammatical function metadata, and sentence records can preserve ordered word and particle references.

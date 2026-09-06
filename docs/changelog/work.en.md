@@ -58,6 +58,10 @@ The language descriptor now publishes canonical `code: "ja"` alongside the compa
 
 The `definitions` layer now follows the dictionary contract from Cognis PR #196. It declares `definitionLocalization`, stable module-owned string keys, and a typed localized-text field. Every preseeded definition contains German, English, Indonesian, and Japanese strings; the schema and package advance to versions `3` and `2.2.0` for the immutable structural change.
 
+## Writing-unit audio and particles
+
+Atomic and compound writing units now provide required pronunciation lists and HTTPS audio references without packaging binary media. The dedicated particle layer stores grammatical function metadata, and sentence records can preserve ordered word and particle references.
+
 ## Commits
 
 - [a6fa75d](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/a6fa75d15c478b1d8ef1930dcc3c5c29e3938b97)
@@ -66,3 +70,4 @@ The `definitions` layer now follows the dictionary contract from Cognis PR #196.
 - [7048e41](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/7048e4155bb52132741016c35371f0e0c215d67e)
 - [131afdf](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/131afdf5125a3eebae584a2c4729bd0a1b144654)
 - [db6df0a](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/db6df0a0d71e75892cac726991ab0d5fa9edf172)
+- [530fdfd](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/530fdfdb7cb55b05d316d404ab8e64c33ba0b04c)

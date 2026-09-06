@@ -23,7 +23,8 @@ function fieldValueMatchesType(value, type) {
     if (type === "integer") return Number.isSafeInteger(value);
     if (type === "number")
         return typeof value === "number" && Number.isFinite(value);
-    if (type === "string" || type === "asset") return typeof value === "string";
+    if (type === "string" || type === "asset" || type === "audio")
+        return typeof value === "string";
     if (type === "boolean") return typeof value === "boolean";
     if (type === "stringList") {
         return (
@@ -93,7 +94,14 @@ test("declares a data-only Japanese Library content pack", () => {
     assertLocalizedText(schema.metadata.labels);
     assert.deepEqual(
         schema.layers.map(({ id }) => id),
-        ["characters", "alt-characters", "definitions", "words", "sentences"],
+        [
+            "characters",
+            "alt-characters",
+            "definitions",
+            "words",
+            "particles",
+            "sentences",
+        ],
     );
     for (const layer of schema.layers) {
         assert.match(layer.id, SCHEMA_ID_PATTERN);
@@ -231,6 +239,65 @@ test("content records satisfy schema fields and relationship targets", () => {
             if (relationship.maximum !== undefined) {
                 assert.ok(count <= relationship.maximum);
             }
+        }
+    }
+});
+
+test("writing units and sentence particles follow the current Library contract", () => {
+    const { schema, records } = loadPack();
+    const writingLayers = schema.layers.filter(({ semanticRole }) =>
+        ["atomicWritingUnit", "compoundWritingUnit"].includes(semanticRole),
+    );
+    for (const layer of writingLayers) {
+        const fields = new Map(layer.fields.map((field) => [field.id, field]));
+        assert.equal(fields.get("pronunciation")?.type, "stringList");
+        assert.equal(fields.get("pronunciation")?.required, true);
+        assert.equal(fields.get("audio")?.type, "audio");
+        assert.equal(fields.get("audio")?.required, true);
+    }
+    for (const record of records.filter(({ layer }) =>
+        writingLayers.some(({ id }) => id === layer),
+    )) {
+        assert.ok(record.fields.pronunciation.length > 0);
+        assert.match(record.fields.audio, /^https:\/\//);
+    }
+    const particleLayer = schema.layers.find(
+        ({ semanticRole }) => semanticRole === "particle",
+    );
+    assert.ok(particleLayer);
+    const particles = records.filter(({ layer }) => layer === particleLayer.id);
+    assert.ok(particles.length > 0);
+    const sentence = records.find(({ layer }) => layer === "sentences");
+    assert.ok(
+        sentence.references.some(({ relation }) => relation === "particles"),
+    );
+});
+
+test("content pack does not include binary files", () => {
+    const binaryExtensions = new Set([
+        ".aac",
+        ".gif",
+        ".jpeg",
+        ".jpg",
+        ".m4a",
+        ".mp3",
+        ".mp4",
+        ".ogg",
+        ".png",
+        ".wav",
+        ".webm",
+    ]);
+    const pending = [PACK_ROOT];
+    while (pending.length) {
+        const directory = pending.pop();
+        for (const entry of readdirSync(directory, { withFileTypes: true })) {
+            const filePath = path.join(directory, entry.name);
+            if (entry.isDirectory()) pending.push(filePath);
+            else
+                assert.equal(
+                    binaryExtensions.has(path.extname(entry.name)),
+                    false,
+                );
         }
     }
 });
