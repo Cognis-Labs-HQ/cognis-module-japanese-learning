@@ -301,3 +301,51 @@ test("content pack does not include binary files", () => {
         }
     }
 });
+
+test("recognized Library fields and definition relationships replace duplicate semantics", () => {
+    const { schema, records } = loadPack();
+    const forbiddenFields = new Set([
+        "function",
+        "language",
+        "meaning",
+        "reading",
+        "readings",
+        "romanization",
+    ]);
+    for (const layer of schema.layers) {
+        for (const field of layer.fields ?? []) {
+            assert.equal(
+                forbiddenFields.has(field.id),
+                false,
+                `${layer.id}.${field.id} duplicates a Library semantic`,
+            );
+        }
+    }
+    const definitions = new Set(
+        records
+            .filter(({ layer }) => layer === "definitions")
+            .map(({ id }) => id),
+    );
+    for (const layerId of ["alt-characters", "particles", "words"]) {
+        const layer = schema.layers.find(({ id }) => id === layerId);
+        assert.equal(
+            layer.relationships.some(
+                ({ id, targetLayer }) =>
+                    id === "definitions" && targetLayer === "definitions",
+            ),
+            true,
+        );
+        for (const record of records.filter(({ layer }) => layer === layerId)) {
+            const references = record.references.filter(
+                ({ relation }) => relation === "definitions",
+            );
+            assert.ok(
+                references.length > 0,
+                `${record.id} requires a definition`,
+            );
+            for (const reference of references) {
+                assert.equal(definitions.has(reference.entryId), true);
+            }
+        }
+    }
+});

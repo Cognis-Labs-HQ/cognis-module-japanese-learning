@@ -1,6 +1,6 @@
 {
     "id": "japanese-core",
-    "version": 4,
+    "version": 5,
     "namespace": "ja",
     "language": "ja",
     "metadata": {
@@ -59,23 +59,6 @@
                     }
                 },
                 {
-                    "id": "romanization",
-                    "metadata": {
-                        "labels": {
-                            "de": "Romanisierung",
-                            "en": "Romanization",
-                            "id": "Romanisasi",
-                            "ja": "ローマ字"
-                        }
-                    },
-                    "type": "string",
-                    "required": true,
-                    "detail": {
-                        "renderer": "text",
-                        "order": 3
-                    }
-                },
-                {
                     "id": "character_class",
                     "metadata": {
                         "labels": {
@@ -89,17 +72,12 @@
                     "required": true,
                     "detail": {
                         "renderer": "badge",
-                        "order": 4
+                        "order": 3
                     }
                 }
             ],
             "detail": {
-                "fieldOrder": [
-                    "pronunciation",
-                    "audio",
-                    "romanization",
-                    "character_class"
-                ]
+                "fieldOrder": ["pronunciation", "audio", "character_class"]
             },
             "activityCompatibility": ["study:recognition", "study:writing"],
             "interestVeins": ["language:japanese"]
@@ -149,38 +127,6 @@
                         "renderer": "media",
                         "order": 2
                     }
-                },
-                {
-                    "id": "readings",
-                    "metadata": {
-                        "labels": {
-                            "de": "Lesungen",
-                            "en": "Readings",
-                            "id": "Bacaan",
-                            "ja": "読み"
-                        }
-                    },
-                    "type": "stringList",
-                    "detail": {
-                        "renderer": "text",
-                        "order": 3
-                    }
-                },
-                {
-                    "id": "meaning",
-                    "metadata": {
-                        "labels": {
-                            "de": "Bedeutung",
-                            "en": "Meaning",
-                            "id": "Arti",
-                            "ja": "意味"
-                        }
-                    },
-                    "type": "string",
-                    "detail": {
-                        "renderer": "text",
-                        "order": 4
-                    }
                 }
             ],
             "relationships": [
@@ -198,10 +144,26 @@
                     "ordered": true,
                     "onDelete": "restrict",
                     "resolverRole": "explicit"
+                },
+                {
+                    "id": "definitions",
+                    "targetLayer": "definitions",
+                    "metadata": {
+                        "labels": {
+                            "de": "Definitionen",
+                            "en": "Definitions",
+                            "id": "Definisi",
+                            "ja": "定義"
+                        }
+                    },
+                    "minimum": 1,
+                    "requiredTarget": true,
+                    "onDelete": "restrict",
+                    "resolverRole": "explicit"
                 }
             ],
             "detail": {
-                "fieldOrder": ["pronunciation", "audio", "readings", "meaning"]
+                "fieldOrder": ["pronunciation", "audio"]
             },
             "activityCompatibility": ["study:recognition", "study:writing"],
             "interestVeins": ["language:japanese"]
@@ -252,28 +214,11 @@
                         "renderer": "text",
                         "order": 2
                     }
-                },
-                {
-                    "id": "language",
-                    "metadata": {
-                        "labels": {
-                            "de": "Sprache",
-                            "en": "Language",
-                            "id": "Bahasa",
-                            "ja": "言語"
-                        }
-                    },
-                    "type": "string",
-                    "required": true,
-                    "detail": {
-                        "renderer": "badge",
-                        "order": 3
-                    }
                 }
             ],
             "detail": {
                 "titleField": "translations",
-                "fieldOrder": ["translations", "language", "string_key"]
+                "fieldOrder": ["translations", "string_key"]
             },
             "interestVeins": ["language:japanese"],
             "definitionLocalization": {
@@ -295,16 +240,16 @@
             "semanticRole": "lexicalUnit",
             "fields": [
                 {
-                    "id": "reading",
+                    "id": "pronunciation",
                     "metadata": {
                         "labels": {
-                            "de": "Lesung",
-                            "en": "Reading",
-                            "id": "Bacaan",
-                            "ja": "読み"
+                            "de": "Aussprache",
+                            "en": "Pronunciation",
+                            "id": "Pelafalan",
+                            "ja": "発音"
                         }
                     },
-                    "type": "string",
+                    "type": "stringList",
                     "required": true,
                     "detail": {
                         "renderer": "text",
@@ -364,7 +309,7 @@
                 }
             ],
             "detail": {
-                "fieldOrder": ["reading", "jlpt_level"]
+                "fieldOrder": ["pronunciation", "jlpt_level"]
             },
             "activityCompatibility": ["study:recognition", "study:production"],
             "interestVeins": ["language:japanese"]
@@ -397,30 +342,31 @@
                         "renderer": "text",
                         "order": 1
                     }
-                },
-                {
-                    "id": "function",
-                    "metadata": {
-                        "labels": {
-                            "de": "Funktion",
-                            "en": "Function",
-                            "id": "Fungsi",
-                            "ja": "機能"
-                        }
-                    },
-                    "type": "localizedText",
-                    "required": true,
-                    "detail": {
-                        "renderer": "text",
-                        "order": 2
-                    }
                 }
             ],
             "detail": {
-                "fieldOrder": ["pronunciation", "function"]
+                "fieldOrder": ["pronunciation"]
             },
             "activityCompatibility": ["study:reading", "study:grammar"],
-            "interestVeins": ["language:japanese"]
+            "interestVeins": ["language:japanese"],
+            "relationships": [
+                {
+                    "id": "definitions",
+                    "targetLayer": "definitions",
+                    "metadata": {
+                        "labels": {
+                            "de": "Definitionen",
+                            "en": "Definitions",
+                            "id": "Definisi",
+                            "ja": "定義"
+                        }
+                    },
+                    "minimum": 1,
+                    "requiredTarget": true,
+                    "onDelete": "restrict",
+                    "resolverRole": "explicit"
+                }
+            ]
         },
         {
             "id": "sentences",
