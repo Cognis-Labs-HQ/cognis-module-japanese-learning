@@ -90,6 +90,10 @@ Resolver roles are now reserved for true compositions: kanji readings, word spel
 
 The content pack now includes all 46 basic gojūon entries in both hiragana and katakana, plus every standard dakuten and handakuten form. Each of the 25 voiced or semi-voiced children per script links to its unmarked parent in the same character table, including `が` → `か`, `じ` → `し`, `ぱ` → `は` and their katakana equivalents.
 
+## Distinct diacritic placement
+
+Dakuten children use the `dakuten-of` relationship and unfold to the right of their unmarked parent. Handakuten children use `handakuten-of` and unfold below it, so parents such as `は` and `ハ` visibly retain both variants instead of stacking them in one position.
+
 ## Commits
 
 - [a6fa75d](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/a6fa75d15c478b1d8ef1930dcc3c5c29e3938b97)
@@ -109,3 +113,5 @@ The content pack now includes all 46 basic gojūon entries in both hiragana and 
 - [4a0b288](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/4a0b28830b5a1d6fcea2df490e74e99108d1e4dd)
 - [32b43de](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/32b43dec923a4fc7a62401bb21b5b01259cb311e)
 - [c7a745f](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/c7a745f39078cb5cb4d4206ce20a855aed195a22)
+
+- [5ab8006](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/5ab80067e1e3151a86f648cedf7660167a1f6f15)

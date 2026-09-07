@@ -66,3 +66,7 @@ Resolver roles are now reserved for true compositions: kanji readings, word spel
 ## Complete kana tables
 
 The content pack now includes all 46 basic gojūon entries in both hiragana and katakana, plus every standard dakuten and handakuten form. Each of the 25 voiced or semi-voiced children per script links to its unmarked parent in the same character table, including `が` → `か`, `じ` → `し`, `ぱ` → `は` and their katakana equivalents.
+
+## Distinct diacritic placement
+
+Dakuten children use the `dakuten-of` relationship and unfold to the right of their unmarked parent. Handakuten children use `handakuten-of` and unfold below it, so parents such as `は` and `ハ` visibly retain both variants instead of stacking them in one position.

@@ -66,3 +66,7 @@ Resolver-Rollen sind nun echten Zusammensetzungen vorbehalten: Kanji-Lesungen, W
 ## Vollständige Kana-Tabellen
 
 Das Inhaltspaket enthält nun alle 46 grundlegenden Gojūon-Einträge in Hiragana und Katakana sowie sämtliche üblichen Dakuten- und Handakuten-Formen. Jedes der 25 stimmhaften oder halbstimmhaften Kinder pro Schriftsystem verweist innerhalb derselben Zeichentabelle auf sein unmarkiertes Elternelement, darunter `が` → `か`, `じ` → `し`, `ぱ` → `は` und die entsprechenden Katakana.
+
+## Getrennte Platzierung der Diakritika
+
+Dakuten-Kinder verwenden die Beziehung `dakuten-of` und werden rechts neben ihrem unmarkierten Elternzeichen aufgeklappt. Handakuten-Kinder verwenden `handakuten-of` und werden darunter aufgeklappt, sodass Elternzeichen wie `は` und `ハ` beide Varianten sichtbar behalten, statt sie an derselben Position zu überlagern.

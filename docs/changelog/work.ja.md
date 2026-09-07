@@ -90,6 +90,10 @@ Cognis PR #214 に合わせ、名前空間の所有権、ローカライズ済�
 
 コンテンツパックに、ひらがなとカタカナそれぞれの五十音の基本 46 文字と、標準的な濁点・半濁点付き文字をすべて収録しました。各文字種の 25 個の濁音・半濁音の子文字は、同じ文字テーブル内の記号なしの親文字を参照します。たとえば `が` → `か`、`じ` → `し`、`ぱ` → `は` と、それぞれのカタカナ版です。
 
+## 濁点と半濁点の配置分離
+
+濁点付きの子文字は `dakuten-of` 関係を使い、清音の親文字の右側に展開されます。半濁点付きの子文字は `handakuten-of` 関係を使い、親文字の下側に展開されます。そのため、`は` や `ハ` のような親文字でも、2 種類の異体が同じ位置で重ならず、両方表示されます。
+
 ## コミット
 
 - [a6fa75d](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/a6fa75d15c478b1d8ef1930dcc3c5c29e3938b97)
@@ -109,3 +113,5 @@ Cognis PR #214 に合わせ、名前空間の所有権、ローカライズ済�
 - [4a0b288](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/4a0b28830b5a1d6fcea2df490e74e99108d1e4dd)
 - [32b43de](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/32b43dec923a4fc7a62401bb21b5b01259cb311e)
 - [c7a745f](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/c7a745f39078cb5cb4d4206ce20a855aed195a22)
+
+- [5ab8006](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/5ab80067e1e3151a86f648cedf7660167a1f6f15)

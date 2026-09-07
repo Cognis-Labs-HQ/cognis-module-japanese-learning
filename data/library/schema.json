@@ -1,6 +1,6 @@
 {
     "id": "japanese-core",
-    "version": 10,
+    "version": 11,
     "namespace": "ja",
     "language": "ja",
     "metadata": {
@@ -87,19 +87,34 @@
             "interestVeins": ["language:japanese"],
             "relationships": [
                 {
-                    "id": "variant-of",
+                    "id": "dakuten-of",
                     "targetLayer": "characters",
                     "metadata": {
                         "labels": {
-                            "de": "Variante von",
-                            "en": "Variant Of",
-                            "id": "Varian Dari",
-                            "ja": "異体の親"
+                            "de": "Dakuten-Variante von",
+                            "en": "Dakuten Variant Of",
+                            "id": "Varian Dakuten Dari",
+                            "ja": "濁点付き異体の親"
                         }
                     },
                     "maximum": 1,
                     "onDelete": "detach",
                     "variantDirection": "right"
+                },
+                {
+                    "id": "handakuten-of",
+                    "targetLayer": "characters",
+                    "metadata": {
+                        "labels": {
+                            "de": "Handakuten-Variante von",
+                            "en": "Handakuten Variant Of",
+                            "id": "Varian Handakuten Dari",
+                            "ja": "半濁点付き異体の親"
+                        }
+                    },
+                    "maximum": 1,
+                    "onDelete": "detach",
+                    "variantDirection": "down"
                 }
             ]
         },

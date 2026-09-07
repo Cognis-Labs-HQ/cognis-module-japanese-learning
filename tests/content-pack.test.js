@@ -433,30 +433,31 @@ test("badge filters use the current grouped exclusivity contract", () => {
     }
 });
 
-test("tenten variants reference unvoiced parents within the same character class", () => {
+test("dakuten and handakuten variants use distinct directional relationships", () => {
     const { schema, records } = loadPack();
     const characterLayer = schema.layers.find(
         ({ semanticRole }) => semanticRole === "atomicWritingUnit",
     );
-    const variantRelationship = characterLayer.relationships.find(
-        ({ id }) => id === "variant-of",
+    const variantRelationships = new Map(
+        characterLayer.relationships.map((relationship) => [
+            relationship.id,
+            relationship,
+        ]),
     );
-    assert.deepEqual(
-        {
-            targetLayer: variantRelationship.targetLayer,
-            maximum: variantRelationship.maximum,
-            onDelete: variantRelationship.onDelete,
-            resolverRole: variantRelationship.resolverRole,
-            variantDirection: variantRelationship.variantDirection,
-        },
-        {
-            targetLayer: "characters",
-            maximum: 1,
-            onDelete: "detach",
-            resolverRole: undefined,
-            variantDirection: "right",
-        },
+    assert.equal(
+        variantRelationships.get("dakuten-of").variantDirection,
+        "right",
     );
+    assert.equal(
+        variantRelationships.get("handakuten-of").variantDirection,
+        "down",
+    );
+    for (const relationship of variantRelationships.values()) {
+        assert.equal(relationship.targetLayer, "characters");
+        assert.equal(relationship.maximum, 1);
+        assert.equal(relationship.onDelete, "detach");
+        assert.equal(relationship.resolverRole, undefined);
+    }
 
     const characters = new Map(
         records
@@ -517,23 +518,42 @@ test("tenten variants reference unvoiced parents within the same character class
             ["ポ", "ホ"],
         ],
     ]);
+    const variantRelationIds = new Set(["dakuten-of", "handakuten-of"]);
     const variantChildren = [...characters.values()].filter((entry) =>
-        (entry.references ?? []).some(
-            ({ relation }) => relation === "variant-of",
+        (entry.references ?? []).some(({ relation }) =>
+            variantRelationIds.has(relation),
         ),
     );
     assert.equal(variantChildren.length, expectedVariants.size);
     for (const child of variantChildren) {
-        const references = child.references.filter(
-            ({ relation }) => relation === "variant-of",
+        const references = child.references.filter(({ relation }) =>
+            variantRelationIds.has(relation),
         );
         assert.equal(references.length, 1, `${child.id} requires one parent`);
+        assert.equal(
+            references[0].relation,
+            child.fields.pronunciation[0].startsWith("p")
+                ? "handakuten-of"
+                : "dakuten-of",
+        );
         const parent = characters.get(references[0].entryId);
         assert.equal(parent?.label, expectedVariants.get(child.label));
         assert.equal(
             parent.fields.character_class,
             child.fields.character_class,
             `${child.id} must stay in its own character table`,
+        );
+    }
+    for (const parentLabel of ["は", "ハ"]) {
+        const parent = [...characters.values()].find(
+            ({ label }) => label === parentLabel,
+        );
+        const children = variantChildren.filter(({ references }) =>
+            references.some(({ entryId }) => entryId === parent.id),
+        );
+        assert.deepEqual(
+            new Set(children.map(({ references }) => references[0].relation)),
+            new Set(["dakuten-of", "handakuten-of"]),
         );
     }
     for (const child of [...characters.values()].filter(({ label }) =>
@@ -548,11 +568,16 @@ test("directional variants remain separate from constituent resolvers", () => {
     const characterLayer = schema.layers.find(
         ({ semanticRole }) => semanticRole === "atomicWritingUnit",
     );
-    const variantRelationship = characterLayer.relationships.find(
+    const variantRelationships = characterLayer.relationships.filter(
         ({ variantDirection }) => variantDirection,
     );
-    assert.equal(variantRelationship.id, "variant-of");
-    assert.equal(variantRelationship.resolverRole, undefined);
+    assert.deepEqual(
+        variantRelationships.map(({ id }) => id),
+        ["dakuten-of", "handakuten-of"],
+    );
+    for (const relationship of variantRelationships) {
+        assert.equal(relationship.resolverRole, undefined);
+    }
 
     const compoundLayer = schema.layers.find(
         ({ semanticRole }) => semanticRole === "compoundWritingUnit",

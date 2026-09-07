@@ -66,3 +66,7 @@ Peran resolver kini hanya dipakai untuk komposisi sejati: bacaan kanji, ejaan ka
 ## Tabel kana lengkap
 
 Paket konten kini memuat seluruh 46 entri gojūon dasar dalam hiragana dan katakana, beserta semua bentuk dakuten dan handakuten standar. Masing-masing dari 25 turunan bersuara atau setengah bersuara per aksara merujuk induk tanpa tandanya dalam tabel karakter yang sama, termasuk `が` → `か`, `じ` → `し`, `ぱ` → `は`, dan padanan katakananya.
+
+## Penempatan diakritik terpisah
+
+Anak dakuten menggunakan relasi `dakuten-of` dan dibuka di sebelah kanan induk tanpa tandanya. Anak handakuten menggunakan `handakuten-of` dan dibuka di bawahnya, sehingga induk seperti `は` dan `ハ` tetap menampilkan kedua varian tanpa menumpuknya pada satu posisi.

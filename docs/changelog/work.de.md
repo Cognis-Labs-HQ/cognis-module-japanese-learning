@@ -90,6 +90,10 @@ Resolver-Rollen sind nun echten Zusammensetzungen vorbehalten: Kanji-Lesungen, W
 
 Das Inhaltspaket enthält nun alle 46 grundlegenden Gojūon-Einträge in Hiragana und Katakana sowie sämtliche üblichen Dakuten- und Handakuten-Formen. Jedes der 25 stimmhaften oder halbstimmhaften Kinder pro Schriftsystem verweist innerhalb derselben Zeichentabelle auf sein unmarkiertes Elternelement, darunter `が` → `か`, `じ` → `し`, `ぱ` → `は` und die entsprechenden Katakana.
 
+## Getrennte Platzierung der Diakritika
+
+Dakuten-Kinder verwenden die Beziehung `dakuten-of` und werden rechts neben ihrem unmarkierten Elternzeichen aufgeklappt. Handakuten-Kinder verwenden `handakuten-of` und werden darunter aufgeklappt, sodass Elternzeichen wie `は` und `ハ` beide Varianten sichtbar behalten, statt sie an derselben Position zu überlagern.
+
 ## Commits
 
 - [a6fa75d](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/a6fa75d15c478b1d8ef1930dcc3c5c29e3938b97)
@@ -109,3 +113,5 @@ Das Inhaltspaket enthält nun alle 46 grundlegenden Gojūon-Einträge in Hiragan
 - [4a0b288](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/4a0b28830b5a1d6fcea2df490e74e99108d1e4dd)
 - [32b43de](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/32b43dec923a4fc7a62401bb21b5b01259cb311e)
 - [c7a745f](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/c7a745f39078cb5cb4d4206ce20a855aed195a22)
+
+- [5ab8006](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/5ab80067e1e3151a86f648cedf7660167a1f6f15)
