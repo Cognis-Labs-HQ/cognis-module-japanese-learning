@@ -74,9 +74,9 @@ Kanji pronunciation presents on-readings in katakana and kun-readings in hiragan
 
 Character-script and JLPT badge filters now declare named, mutually exclusive filter groups supported by Library 2.6. The module intentionally does not enable `allowBootstrapFailure`: content ingestion and publication of `study:language:ja` are its essential runtime work, and keeping it enabled without them would expose a nonfunctional module. Cognis PR #216 now updates existing entries, assets, and references during repeated content-pack imports, which addresses the reported duplicate-reference failure at its persistence boundary.
 
-## Directional character variants
+## Directional tenten variants
 
-Katakana records now act as independent child entries that reference their matching hiragana parent through the Library `variantDirection` contract. The generated character browser keeps the hiragana parent as the main card and unfolds its katakana child to the right, while both records remain independently navigable and reusable by kanji readings.
+Only dakuten (tenten) forms use the directional parent/child relationship. The seeded `じ`/`ご` and `ジ`/`ゴ` records reference `し`/`こ` and `シ`/`コ` respectively within their own character table. Hiragana and katakana counterparts remain independent records and are not modeled as parent and child.
 
 ## Commits
 
@@ -92,3 +92,4 @@ Katakana records now act as independent child entries that reference their match
 - [4639371](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/4639371d8fe55c71477aa70087cc4e8a18100438)
 - [e9ae382](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/e9ae382be9ed7fd23b4a323f081904ad9137410f)
 - [92032ec](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/92032ecd30c7bee0dbcb76007108ef12e6a892e8)
+- [b9f3e6e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/b9f3e6eb6813d99d5ee76902729bc478fe36afd1)

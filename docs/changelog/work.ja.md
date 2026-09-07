@@ -74,9 +74,9 @@ Cognis PR #214 に合わせ、名前空間の所有権、ローカライズ済�
 
 文字種と JLPT のバッジフィルターは、Library 2.6 が対応する名前付きの相互排他フィルターグループを宣言するようになりました。`allowBootstrapFailure` は意図的に有効化していません。コンテンツの取り込みと `study:language:ja` の公開はこのモジュールの必須ランタイム処理であり、これらがない状態で有効のままにすると機能しないモジュールが残るためです。Cognis PR #216 はコンテンツパックの再取り込み時に既存の項目・アセット・参照を更新するようになり、報告された参照重複エラーを永続化境界で解決します。
 
-## 方向付き文字バリアント
+## 方向付き濁点バリアント
 
-カタカナレコードを独立した子項目とし、Library の `variantDirection` 契約を通じて対応するひらがなの親項目を参照するようにしました。生成される文字ブラウザーはひらがなの親を主カードとして保ち、その右側にカタカナの子を展開します。両レコードは引き続き個別に移動でき、漢字の読みに再利用できます。
+方向付きの親子関係は濁点（点々）付きの文字だけに使用します。初期データの `じ`/`ご` と `ジ`/`ゴ` は、それぞれ同じ文字テーブル内の `し`/`こ` と `シ`/`コ` を参照します。対応するひらがなとカタカナは独立したレコードのままとし、親子として扱いません。
 
 ## コミット
 
@@ -92,3 +92,4 @@ Cognis PR #214 に合わせ、名前空間の所有権、ローカライズ済�
 - [4639371](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/4639371d8fe55c71477aa70087cc4e8a18100438)
 - [e9ae382](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/e9ae382be9ed7fd23b4a323f081904ad9137410f)
 - [92032ec](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/92032ecd30c7bee0dbcb76007108ef12e6a892e8)
+- [b9f3e6e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/b9f3e6eb6813d99d5ee76902729bc478fe36afd1)

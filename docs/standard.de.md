@@ -48,6 +48,6 @@ Kanji-Aussprachen stellen On-Lesungen in Katakana und Kun-Lesungen in Hiragana d
 
 Filterabzeichen für Schriftsystem und JLPT deklarieren nun benannte, gegenseitig ausschließende Filtergruppen, die von Library 2.6 unterstützt werden. Das Modul aktiviert `allowBootstrapFailure` bewusst nicht: Inhaltsimport und Veröffentlichung von `study:language:ja` sind seine wesentlichen Laufzeitaufgaben; ohne sie bliebe ein funktionsloses Modul aktiviert. Cognis PR #216 aktualisiert bei wiederholten Inhaltspaketimporten nun vorhandene Einträge, Ressourcen und Verweise und behebt damit den gemeldeten Fehler durch doppelte Verweise an der Persistenzgrenze.
 
-## Gerichtete Zeichenvarianten
+## Gerichtete Tenten-Varianten
 
-Katakana-Datensätze sind nun eigenständige Kindeinträge, die über den Library-Vertrag `variantDirection` auf ihr entsprechendes Hiragana-Elternelement verweisen. Der erzeugte Zeichenbrowser behält das Hiragana-Elternelement als Hauptkarte bei und klappt dessen Katakana-Kind rechts davon aus; beide Datensätze bleiben unabhängig navigierbar und für Kanji-Lesungen wiederverwendbar.
+Nur Dakuten- (Tenten-) Formen verwenden die gerichtete Eltern-Kind-Beziehung. Die mitgelieferten Datensätze `じ`/`ご` und `ジ`/`ゴ` verweisen innerhalb ihrer jeweiligen Zeichentabelle auf `し`/`こ` beziehungsweise `シ`/`コ`. Entsprechende Hiragana- und Katakana-Zeichen bleiben unabhängige Datensätze und werden nicht als Eltern und Kinder modelliert.

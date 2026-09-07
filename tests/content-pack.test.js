@@ -436,7 +436,7 @@ test("badge filters use the current grouped exclusivity contract", () => {
     }
 });
 
-test("katakana children reference hiragana parents through directional variants", () => {
+test("tenten variants reference unvoiced parents within the same character class", () => {
     const { schema, records } = loadPack();
     const characterLayer = schema.layers.find(
         ({ semanticRole }) => semanticRole === "atomicWritingUnit",
@@ -466,30 +466,34 @@ test("katakana children reference hiragana parents through directional variants"
             .filter(({ layer }) => layer === characterLayer.id)
             .map((entry) => [entry.id, entry]),
     );
-    const katakana = [...characters.values()].filter(
-        ({ fields }) => fields.character_class === "katakana",
+    const expectedVariants = new Map([
+        ["じ", "し"],
+        ["ご", "こ"],
+        ["ジ", "シ"],
+        ["ゴ", "コ"],
+    ]);
+    const variantChildren = [...characters.values()].filter((entry) =>
+        (entry.references ?? []).some(
+            ({ relation }) => relation === "variant-of",
+        ),
     );
-    assert.ok(katakana.length > 0);
-    for (const child of katakana) {
-        const variants = child.references.filter(
+    assert.equal(variantChildren.length, expectedVariants.size);
+    for (const child of variantChildren) {
+        const references = child.references.filter(
             ({ relation }) => relation === "variant-of",
         );
-        assert.equal(variants.length, 1, `${child.id} requires one parent`);
-        const parent = characters.get(variants[0].entryId);
-        assert.equal(parent?.fields.character_class, "hiragana");
-        assert.deepEqual(
-            parent.fields.pronunciation,
-            child.fields.pronunciation,
+        assert.equal(references.length, 1, `${child.id} requires one parent`);
+        const parent = characters.get(references[0].entryId);
+        assert.equal(parent?.label, expectedVariants.get(child.label));
+        assert.equal(
+            parent.fields.character_class,
+            child.fields.character_class,
+            `${child.id} must stay in its own character table`,
         );
     }
-    for (const parent of [...characters.values()].filter(
-        ({ fields }) => fields.character_class === "hiragana",
+    for (const child of [...characters.values()].filter(({ label }) =>
+        ["ア", "イ", "ウ", "エ", "オ"].includes(label),
     )) {
-        assert.equal(
-            (parent.references ?? []).some(
-                ({ relation }) => relation === "variant-of",
-            ),
-            false,
-        );
+        assert.equal(child.references, undefined);
     }
 });

@@ -51,6 +51,6 @@ Kanji pronunciation presents on-readings in katakana and kun-readings in hiragan
 
 Character-script and JLPT badge filters now declare named, mutually exclusive filter groups supported by Library 2.6. The module intentionally does not enable `allowBootstrapFailure`: content ingestion and publication of `study:language:ja` are its essential runtime work, and keeping it enabled without them would expose a nonfunctional module. Cognis PR #216 now updates existing entries, assets, and references during repeated content-pack imports, which addresses the reported duplicate-reference failure at its persistence boundary.
 
-## Directional character variants
+## Directional tenten variants
 
-Katakana records now act as independent child entries that reference their matching hiragana parent through the Library `variantDirection` contract. The generated character browser keeps the hiragana parent as the main card and unfolds its katakana child to the right, while both records remain independently navigable and reusable by kanji readings.
+Only dakuten (tenten) forms use the directional parent/child relationship. The seeded `じ`/`ご` and `ジ`/`ゴ` records reference `し`/`こ` and `シ`/`コ` respectively within their own character table. Hiragana and katakana counterparts remain independent records and are not modeled as parent and child.
