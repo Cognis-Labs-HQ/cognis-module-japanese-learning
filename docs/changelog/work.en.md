@@ -86,6 +86,10 @@ Directional tenten links no longer declare a resolver role, so the Library uses 
 
 Resolver roles are now reserved for true compositions: kanji readings, word spellings, and ordered sentence words or particles. Relationships to the semantic definition layer no longer declare a resolver, so primary and alternate definition links render as meanings instead of composition groups. Required writing-system and proficiency filters also declare intentional default tags for the latest Library filter contract.
 
+## Complete kana tables
+
+The content pack now includes all 46 basic gojūon entries in both hiragana and katakana, plus every standard dakuten and handakuten form. Each of the 25 voiced or semi-voiced children per script links to its unmarked parent in the same character table, including `が` → `か`, `じ` → `し`, `ぱ` → `は` and their katakana equivalents.
+
 ## Commits
 
 - [a6fa75d](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/a6fa75d15c478b1d8ef1930dcc3c5c29e3938b97)
@@ -104,3 +108,4 @@ Resolver roles are now reserved for true compositions: kanji readings, word spel
 - [90bac12](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/90bac12fb8d4c90451b6a0ae2e9c0572be99cbd0)
 - [4a0b288](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/4a0b28830b5a1d6fcea2df490e74e99108d1e4dd)
 - [32b43de](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/32b43dec923a4fc7a62401bb21b5b01259cb311e)
+- [c7a745f](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/c7a745f39078cb5cb4d4206ce20a855aed195a22)

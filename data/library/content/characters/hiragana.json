@@ -414,16 +414,61 @@
         }
     },
     {
-        "id": "ja:char:ji",
-        "label": "じ",
+        "id": "ja:char:ga",
+        "label": "が",
         "fields": {
-            "pronunciation": ["ji"],
-            "audio": "https://assets.cognis.dev/study/ja/pronunciation/ji.mp3",
+            "pronunciation": ["ga"],
+            "audio": "https://assets.cognis.dev/study/ja/pronunciation/ga.mp3",
             "character_class": "hiragana"
         },
         "references": [
             {
-                "entryId": "ja:char:shi",
+                "entryId": "ja:char:ka",
+                "relation": "variant-of"
+            }
+        ]
+    },
+    {
+        "id": "ja:char:gi",
+        "label": "ぎ",
+        "fields": {
+            "pronunciation": ["gi"],
+            "audio": "https://assets.cognis.dev/study/ja/pronunciation/gi.mp3",
+            "character_class": "hiragana"
+        },
+        "references": [
+            {
+                "entryId": "ja:char:ki",
+                "relation": "variant-of"
+            }
+        ]
+    },
+    {
+        "id": "ja:char:gu",
+        "label": "ぐ",
+        "fields": {
+            "pronunciation": ["gu"],
+            "audio": "https://assets.cognis.dev/study/ja/pronunciation/gu.mp3",
+            "character_class": "hiragana"
+        },
+        "references": [
+            {
+                "entryId": "ja:char:ku",
+                "relation": "variant-of"
+            }
+        ]
+    },
+    {
+        "id": "ja:char:ge",
+        "label": "げ",
+        "fields": {
+            "pronunciation": ["ge"],
+            "audio": "https://assets.cognis.dev/study/ja/pronunciation/ge.mp3",
+            "character_class": "hiragana"
+        },
+        "references": [
+            {
+                "entryId": "ja:char:ke",
                 "relation": "variant-of"
             }
         ]
@@ -439,6 +484,306 @@
         "references": [
             {
                 "entryId": "ja:char:ko",
+                "relation": "variant-of"
+            }
+        ]
+    },
+    {
+        "id": "ja:char:za",
+        "label": "ざ",
+        "fields": {
+            "pronunciation": ["za"],
+            "audio": "https://assets.cognis.dev/study/ja/pronunciation/za.mp3",
+            "character_class": "hiragana"
+        },
+        "references": [
+            {
+                "entryId": "ja:char:sa",
+                "relation": "variant-of"
+            }
+        ]
+    },
+    {
+        "id": "ja:char:ji",
+        "label": "じ",
+        "fields": {
+            "pronunciation": ["ji"],
+            "audio": "https://assets.cognis.dev/study/ja/pronunciation/ji.mp3",
+            "character_class": "hiragana"
+        },
+        "references": [
+            {
+                "entryId": "ja:char:shi",
+                "relation": "variant-of"
+            }
+        ]
+    },
+    {
+        "id": "ja:char:zu",
+        "label": "ず",
+        "fields": {
+            "pronunciation": ["zu"],
+            "audio": "https://assets.cognis.dev/study/ja/pronunciation/zu.mp3",
+            "character_class": "hiragana"
+        },
+        "references": [
+            {
+                "entryId": "ja:char:su",
+                "relation": "variant-of"
+            }
+        ]
+    },
+    {
+        "id": "ja:char:ze",
+        "label": "ぜ",
+        "fields": {
+            "pronunciation": ["ze"],
+            "audio": "https://assets.cognis.dev/study/ja/pronunciation/ze.mp3",
+            "character_class": "hiragana"
+        },
+        "references": [
+            {
+                "entryId": "ja:char:se",
+                "relation": "variant-of"
+            }
+        ]
+    },
+    {
+        "id": "ja:char:zo",
+        "label": "ぞ",
+        "fields": {
+            "pronunciation": ["zo"],
+            "audio": "https://assets.cognis.dev/study/ja/pronunciation/zo.mp3",
+            "character_class": "hiragana"
+        },
+        "references": [
+            {
+                "entryId": "ja:char:so",
+                "relation": "variant-of"
+            }
+        ]
+    },
+    {
+        "id": "ja:char:da",
+        "label": "だ",
+        "fields": {
+            "pronunciation": ["da"],
+            "audio": "https://assets.cognis.dev/study/ja/pronunciation/da.mp3",
+            "character_class": "hiragana"
+        },
+        "references": [
+            {
+                "entryId": "ja:char:ta",
+                "relation": "variant-of"
+            }
+        ]
+    },
+    {
+        "id": "ja:char:di",
+        "label": "ぢ",
+        "fields": {
+            "pronunciation": ["ji"],
+            "audio": "https://assets.cognis.dev/study/ja/pronunciation/ji.mp3",
+            "character_class": "hiragana"
+        },
+        "references": [
+            {
+                "entryId": "ja:char:chi",
+                "relation": "variant-of"
+            }
+        ]
+    },
+    {
+        "id": "ja:char:du",
+        "label": "づ",
+        "fields": {
+            "pronunciation": ["zu"],
+            "audio": "https://assets.cognis.dev/study/ja/pronunciation/zu.mp3",
+            "character_class": "hiragana"
+        },
+        "references": [
+            {
+                "entryId": "ja:char:tsu",
+                "relation": "variant-of"
+            }
+        ]
+    },
+    {
+        "id": "ja:char:de",
+        "label": "で",
+        "fields": {
+            "pronunciation": ["de"],
+            "audio": "https://assets.cognis.dev/study/ja/pronunciation/de.mp3",
+            "character_class": "hiragana"
+        },
+        "references": [
+            {
+                "entryId": "ja:char:te",
+                "relation": "variant-of"
+            }
+        ]
+    },
+    {
+        "id": "ja:char:do",
+        "label": "ど",
+        "fields": {
+            "pronunciation": ["do"],
+            "audio": "https://assets.cognis.dev/study/ja/pronunciation/do.mp3",
+            "character_class": "hiragana"
+        },
+        "references": [
+            {
+                "entryId": "ja:char:to",
+                "relation": "variant-of"
+            }
+        ]
+    },
+    {
+        "id": "ja:char:ba",
+        "label": "ば",
+        "fields": {
+            "pronunciation": ["ba"],
+            "audio": "https://assets.cognis.dev/study/ja/pronunciation/ba.mp3",
+            "character_class": "hiragana"
+        },
+        "references": [
+            {
+                "entryId": "ja:char:ha",
+                "relation": "variant-of"
+            }
+        ]
+    },
+    {
+        "id": "ja:char:bi",
+        "label": "び",
+        "fields": {
+            "pronunciation": ["bi"],
+            "audio": "https://assets.cognis.dev/study/ja/pronunciation/bi.mp3",
+            "character_class": "hiragana"
+        },
+        "references": [
+            {
+                "entryId": "ja:char:hi",
+                "relation": "variant-of"
+            }
+        ]
+    },
+    {
+        "id": "ja:char:bu",
+        "label": "ぶ",
+        "fields": {
+            "pronunciation": ["bu"],
+            "audio": "https://assets.cognis.dev/study/ja/pronunciation/bu.mp3",
+            "character_class": "hiragana"
+        },
+        "references": [
+            {
+                "entryId": "ja:char:fu",
+                "relation": "variant-of"
+            }
+        ]
+    },
+    {
+        "id": "ja:char:be",
+        "label": "べ",
+        "fields": {
+            "pronunciation": ["be"],
+            "audio": "https://assets.cognis.dev/study/ja/pronunciation/be.mp3",
+            "character_class": "hiragana"
+        },
+        "references": [
+            {
+                "entryId": "ja:char:he",
+                "relation": "variant-of"
+            }
+        ]
+    },
+    {
+        "id": "ja:char:bo",
+        "label": "ぼ",
+        "fields": {
+            "pronunciation": ["bo"],
+            "audio": "https://assets.cognis.dev/study/ja/pronunciation/bo.mp3",
+            "character_class": "hiragana"
+        },
+        "references": [
+            {
+                "entryId": "ja:char:ho",
+                "relation": "variant-of"
+            }
+        ]
+    },
+    {
+        "id": "ja:char:pa",
+        "label": "ぱ",
+        "fields": {
+            "pronunciation": ["pa"],
+            "audio": "https://assets.cognis.dev/study/ja/pronunciation/pa.mp3",
+            "character_class": "hiragana"
+        },
+        "references": [
+            {
+                "entryId": "ja:char:ha",
+                "relation": "variant-of"
+            }
+        ]
+    },
+    {
+        "id": "ja:char:pi",
+        "label": "ぴ",
+        "fields": {
+            "pronunciation": ["pi"],
+            "audio": "https://assets.cognis.dev/study/ja/pronunciation/pi.mp3",
+            "character_class": "hiragana"
+        },
+        "references": [
+            {
+                "entryId": "ja:char:hi",
+                "relation": "variant-of"
+            }
+        ]
+    },
+    {
+        "id": "ja:char:pu",
+        "label": "ぷ",
+        "fields": {
+            "pronunciation": ["pu"],
+            "audio": "https://assets.cognis.dev/study/ja/pronunciation/pu.mp3",
+            "character_class": "hiragana"
+        },
+        "references": [
+            {
+                "entryId": "ja:char:fu",
+                "relation": "variant-of"
+            }
+        ]
+    },
+    {
+        "id": "ja:char:pe",
+        "label": "ぺ",
+        "fields": {
+            "pronunciation": ["pe"],
+            "audio": "https://assets.cognis.dev/study/ja/pronunciation/pe.mp3",
+            "character_class": "hiragana"
+        },
+        "references": [
+            {
+                "entryId": "ja:char:he",
+                "relation": "variant-of"
+            }
+        ]
+    },
+    {
+        "id": "ja:char:po",
+        "label": "ぽ",
+        "fields": {
+            "pronunciation": ["po"],
+            "audio": "https://assets.cognis.dev/study/ja/pronunciation/po.mp3",
+            "character_class": "hiragana"
+        },
+        "references": [
+            {
+                "entryId": "ja:char:ho",
                 "relation": "variant-of"
             }
         ]

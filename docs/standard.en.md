@@ -59,3 +59,7 @@ Directional tenten links no longer declare a resolver role, so the Library uses 
 ## Compositions and definitions
 
 Resolver roles are now reserved for true compositions: kanji readings, word spellings, and ordered sentence words or particles. Relationships to the semantic definition layer no longer declare a resolver, so primary and alternate definition links render as meanings instead of composition groups. Required writing-system and proficiency filters also declare intentional default tags for the latest Library filter contract.
+
+## Complete kana tables
+
+The content pack now includes all 46 basic gojūon entries in both hiragana and katakana, plus every standard dakuten and handakuten form. Each of the 25 voiced or semi-voiced children per script links to its unmarked parent in the same character table, including `が` → `か`, `じ` → `し`, `ぱ` → `は` and their katakana equivalents.

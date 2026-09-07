@@ -59,3 +59,7 @@ Tautan tenten berarah tidak lagi mendeklarasikan peran resolver, sehingga Pustak
 ## Komposisi dan definisi
 
 Peran resolver kini hanya dipakai untuk komposisi sejati: bacaan kanji, ejaan kata, serta kata atau partikel kalimat yang berurutan. Hubungan ke lapisan definisi semantik tidak lagi mendeklarasikan resolver, sehingga tautan definisi utama dan alternatif dirender sebagai makna, bukan grup komposisi. Filter wajib sistem tulisan dan tingkat kemahiran juga mendeklarasikan tag bawaan yang disengaja untuk kontrak filter Pustaka terbaru.
+
+## Tabel kana lengkap
+
+Paket konten kini memuat seluruh 46 entri gojūon dasar dalam hiragana dan katakana, beserta semua bentuk dakuten dan handakuten standar. Masing-masing dari 25 turunan bersuara atau setengah bersuara per aksara merujuk induk tanpa tandanya dalam tabel karakter yang sama, termasuk `が` → `か`, `じ` → `し`, `ぱ` → `は`, dan padanan katakananya.

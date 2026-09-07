@@ -464,10 +464,58 @@ test("tenten variants reference unvoiced parents within the same character class
             .map((entry) => [entry.id, entry]),
     );
     const expectedVariants = new Map([
-        ["じ", "し"],
-        ["ご", "こ"],
-        ["ジ", "シ"],
-        ["ゴ", "コ"],
+        ...[
+            ["が", "か"],
+            ["ぎ", "き"],
+            ["ぐ", "く"],
+            ["げ", "け"],
+            ["ご", "こ"],
+            ["ざ", "さ"],
+            ["じ", "し"],
+            ["ず", "す"],
+            ["ぜ", "せ"],
+            ["ぞ", "そ"],
+            ["だ", "た"],
+            ["ぢ", "ち"],
+            ["づ", "つ"],
+            ["で", "て"],
+            ["ど", "と"],
+            ["ば", "は"],
+            ["び", "ひ"],
+            ["ぶ", "ふ"],
+            ["べ", "へ"],
+            ["ぼ", "ほ"],
+            ["ぱ", "は"],
+            ["ぴ", "ひ"],
+            ["ぷ", "ふ"],
+            ["ぺ", "へ"],
+            ["ぽ", "ほ"],
+            ["ガ", "カ"],
+            ["ギ", "キ"],
+            ["グ", "ク"],
+            ["ゲ", "ケ"],
+            ["ゴ", "コ"],
+            ["ザ", "サ"],
+            ["ジ", "シ"],
+            ["ズ", "ス"],
+            ["ゼ", "セ"],
+            ["ゾ", "ソ"],
+            ["ダ", "タ"],
+            ["ヂ", "チ"],
+            ["ヅ", "ツ"],
+            ["デ", "テ"],
+            ["ド", "ト"],
+            ["バ", "ハ"],
+            ["ビ", "ヒ"],
+            ["ブ", "フ"],
+            ["ベ", "ヘ"],
+            ["ボ", "ホ"],
+            ["パ", "ハ"],
+            ["ピ", "ヒ"],
+            ["プ", "フ"],
+            ["ペ", "ヘ"],
+            ["ポ", "ホ"],
+        ],
     ]);
     const variantChildren = [...characters.values()].filter((entry) =>
         (entry.references ?? []).some(
@@ -584,6 +632,84 @@ test("required filter groups declare intentional defaults", () => {
                 ),
                 `${layer.id}.${field.id} default must exist in content`,
             );
+        }
+    }
+});
+
+test("hiragana and katakana include complete gojuon and voiced tables", () => {
+    const { records } = loadPack();
+    const characters = records.filter(({ layer }) => layer === "characters");
+    const basePronunciations = [
+        "a",
+        "i",
+        "u",
+        "e",
+        "o",
+        "ka",
+        "ki",
+        "ku",
+        "ke",
+        "ko",
+        "sa",
+        "shi",
+        "su",
+        "se",
+        "so",
+        "ta",
+        "chi",
+        "tsu",
+        "te",
+        "to",
+        "na",
+        "ni",
+        "nu",
+        "ne",
+        "no",
+        "ha",
+        "hi",
+        "fu",
+        "he",
+        "ho",
+        "ma",
+        "mi",
+        "mu",
+        "me",
+        "mo",
+        "ya",
+        "yu",
+        "yo",
+        "ra",
+        "ri",
+        "ru",
+        "re",
+        "ro",
+        "wa",
+        "wo",
+        "n",
+    ];
+    for (const characterClass of ["hiragana", "katakana"]) {
+        const table = characters.filter(
+            ({ fields }) => fields.character_class === characterClass,
+        );
+        assert.equal(table.length, 71);
+        const baseEntries = table.filter(
+            (entry) => !(entry.references ?? []).length,
+        );
+        assert.equal(baseEntries.length, 46);
+        assert.deepEqual(
+            new Set(baseEntries.map(({ fields }) => fields.pronunciation[0])),
+            new Set(basePronunciations),
+        );
+        const voicedEntries = table.filter(
+            (entry) => (entry.references ?? []).length,
+        );
+        assert.equal(voicedEntries.length, 25);
+        for (const variant of voicedEntries) {
+            assert.equal(variant.references.length, 1);
+            const parent = characters.find(
+                ({ id }) => id === variant.references[0].entryId,
+            );
+            assert.equal(parent.fields.character_class, characterClass);
         }
     }
 });
