@@ -74,6 +74,10 @@ Kanji-Aussprachen stellen On-Lesungen in Katakana und Kun-Lesungen in Hiragana d
 
 Filterabzeichen für Schriftsystem und JLPT deklarieren nun benannte, gegenseitig ausschließende Filtergruppen, die von Library 2.6 unterstützt werden. Das Modul aktiviert `allowBootstrapFailure` bewusst nicht: Inhaltsimport und Veröffentlichung von `study:language:ja` sind seine wesentlichen Laufzeitaufgaben; ohne sie bliebe ein funktionsloses Modul aktiviert. Cognis PR #216 aktualisiert bei wiederholten Inhaltspaketimporten nun vorhandene Einträge, Ressourcen und Verweise und behebt damit den gemeldeten Fehler durch doppelte Verweise an der Persistenzgrenze.
 
+## Gerichtete Zeichenvarianten
+
+Katakana-Datensätze sind nun eigenständige Kindeinträge, die über den Library-Vertrag `variantDirection` auf ihr entsprechendes Hiragana-Elternelement verweisen. Der erzeugte Zeichenbrowser behält das Hiragana-Elternelement als Hauptkarte bei und klappt dessen Katakana-Kind rechts davon aus; beide Datensätze bleiben unabhängig navigierbar und für Kanji-Lesungen wiederverwendbar.
+
 ## Commits
 
 - [a6fa75d](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/a6fa75d15c478b1d8ef1930dcc3c5c29e3938b97)
@@ -87,3 +91,4 @@ Filterabzeichen für Schriftsystem und JLPT deklarieren nun benannte, gegenseiti
 - [1740b0b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/1740b0b0da93d15c450ca82c452bb1fe8698b7e9)
 - [4639371](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/4639371d8fe55c71477aa70087cc4e8a18100438)
 - [e9ae382](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/e9ae382be9ed7fd23b4a323f081904ad9137410f)
+- [92032ec](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/92032ecd30c7bee0dbcb76007108ef12e6a892e8)

@@ -1,6 +1,6 @@
 {
     "id": "japanese-core",
-    "version": 7,
+    "version": 8,
     "namespace": "ja",
     "language": "ja",
     "metadata": {
@@ -82,7 +82,25 @@
                 "fieldOrder": ["pronunciation", "audio", "character_class"]
             },
             "activityCompatibility": ["study:recognition", "study:writing"],
-            "interestVeins": ["language:japanese"]
+            "interestVeins": ["language:japanese"],
+            "relationships": [
+                {
+                    "id": "variant-of",
+                    "targetLayer": "characters",
+                    "metadata": {
+                        "labels": {
+                            "de": "Variante von",
+                            "en": "Variant Of",
+                            "id": "Varian Dari",
+                            "ja": "異体の親"
+                        }
+                    },
+                    "maximum": 1,
+                    "onDelete": "detach",
+                    "resolverRole": "explicit",
+                    "variantDirection": "right"
+                }
+            ]
         },
         {
             "id": "alt-characters",

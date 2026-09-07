@@ -435,3 +435,61 @@ test("badge filters use the current grouped exclusivity contract", () => {
         assert.equal(field.detail.exclusive, true);
     }
 });
+
+test("katakana children reference hiragana parents through directional variants", () => {
+    const { schema, records } = loadPack();
+    const characterLayer = schema.layers.find(
+        ({ semanticRole }) => semanticRole === "atomicWritingUnit",
+    );
+    const variantRelationship = characterLayer.relationships.find(
+        ({ id }) => id === "variant-of",
+    );
+    assert.deepEqual(
+        {
+            targetLayer: variantRelationship.targetLayer,
+            maximum: variantRelationship.maximum,
+            onDelete: variantRelationship.onDelete,
+            resolverRole: variantRelationship.resolverRole,
+            variantDirection: variantRelationship.variantDirection,
+        },
+        {
+            targetLayer: "characters",
+            maximum: 1,
+            onDelete: "detach",
+            resolverRole: "explicit",
+            variantDirection: "right",
+        },
+    );
+
+    const characters = new Map(
+        records
+            .filter(({ layer }) => layer === characterLayer.id)
+            .map((entry) => [entry.id, entry]),
+    );
+    const katakana = [...characters.values()].filter(
+        ({ fields }) => fields.character_class === "katakana",
+    );
+    assert.ok(katakana.length > 0);
+    for (const child of katakana) {
+        const variants = child.references.filter(
+            ({ relation }) => relation === "variant-of",
+        );
+        assert.equal(variants.length, 1, `${child.id} requires one parent`);
+        const parent = characters.get(variants[0].entryId);
+        assert.equal(parent?.fields.character_class, "hiragana");
+        assert.deepEqual(
+            parent.fields.pronunciation,
+            child.fields.pronunciation,
+        );
+    }
+    for (const parent of [...characters.values()].filter(
+        ({ fields }) => fields.character_class === "hiragana",
+    )) {
+        assert.equal(
+            (parent.references ?? []).some(
+                ({ relation }) => relation === "variant-of",
+            ),
+            false,
+        );
+    }
+});

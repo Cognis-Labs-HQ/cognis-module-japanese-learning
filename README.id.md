@@ -50,3 +50,7 @@ Pelafalan kanji menampilkan on-yomi dalam katakana dan kun-yomi dalam hiragana, 
 ## Kontrak aktivasi Pustaka terkini
 
 Filter lencana sistem tulisan dan JLPT kini mendeklarasikan grup filter bernama yang saling eksklusif dan didukung oleh Library 2.6. Modul sengaja tidak mengaktifkan `allowBootstrapFailure`: ingest konten dan publikasi `study:language:ja` adalah pekerjaan runtime utamanya, sehingga mempertahankan modul aktif tanpa keduanya hanya menghasilkan modul yang tidak berfungsi. Cognis PR #216 kini memperbarui entri, aset, dan referensi yang sudah ada saat paket konten diimpor ulang, sehingga kegagalan referensi duplikat yang dilaporkan ditangani pada batas persistensi.
+
+## Varian karakter berarah
+
+Data katakana kini menjadi entri turunan mandiri yang merujuk induk hiragana pasangannya melalui kontrak `variantDirection` Pustaka. Peramban karakter yang dihasilkan mempertahankan induk hiragana sebagai kartu utama dan membuka turunan katakana di sebelah kanan, sementara kedua data tetap dapat dinavigasi secara mandiri dan digunakan kembali oleh bacaan kanji.
