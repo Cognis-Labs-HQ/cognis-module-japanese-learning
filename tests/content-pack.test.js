@@ -456,7 +456,7 @@ test("tenten variants reference unvoiced parents within the same character class
             targetLayer: "characters",
             maximum: 1,
             onDelete: "detach",
-            resolverRole: "explicit",
+            resolverRole: undefined,
             variantDirection: "right",
         },
     );
@@ -495,5 +495,45 @@ test("tenten variants reference unvoiced parents within the same character class
         ["ア", "イ", "ウ", "エ", "オ"].includes(label),
     )) {
         assert.equal(child.references, undefined);
+    }
+});
+
+test("directional variants remain separate from constituent resolvers", () => {
+    const { schema } = loadPack();
+    const characterLayer = schema.layers.find(
+        ({ semanticRole }) => semanticRole === "atomicWritingUnit",
+    );
+    const variantRelationship = characterLayer.relationships.find(
+        ({ variantDirection }) => variantDirection,
+    );
+    assert.equal(variantRelationship.id, "variant-of");
+    assert.equal(variantRelationship.resolverRole, undefined);
+
+    const compoundLayer = schema.layers.find(
+        ({ semanticRole }) => semanticRole === "compoundWritingUnit",
+    );
+    assert.equal(
+        compoundLayer.relationships.find(({ id }) => id === "readings")
+            .resolverRole,
+        "explicit",
+    );
+});
+
+test("lexical and sentence pronunciation use the Library placement field", () => {
+    const { schema, records } = loadPack();
+    for (const semanticRole of ["lexicalUnit", "orderedLexicalSequence"]) {
+        const layer = schema.layers.find(
+            (candidate) => candidate.semanticRole === semanticRole,
+        );
+        const pronunciation = layer.fields.find(
+            ({ id }) => id === "pronunciation",
+        );
+        assert.equal(pronunciation.type, "stringList");
+        assert.equal(pronunciation.required, true);
+        for (const record of records.filter(
+            ({ layer: layerId }) => layerId === layer.id,
+        )) {
+            assert.ok(record.fields.pronunciation.length > 0);
+        }
     }
 });

@@ -54,3 +54,7 @@ Character-script and JLPT badge filters now declare named, mutually exclusive fi
 ## Directional tenten variants
 
 Only dakuten (tenten) forms use the directional parent/child relationship. The seeded `じ`/`ご` and `ジ`/`ゴ` records reference `し`/`こ` and `シ`/`コ` respectively within their own character table. Hiragana and katakana counterparts remain independent records and are not modeled as parent and child.
+
+## Latest Library presentation contract
+
+Directional tenten links no longer declare a resolver role, so the Library uses them only to unfold child cards and does not duplicate the parent as a constituent box. Kanji reading and word spelling relationships retain resolver roles for navigable constituents. The current Library places writing-unit pronunciation beside labels in cards and detail titles, and restores missing module content on the next enable unless a user explicitly blacklists its content hash.

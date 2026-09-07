@@ -51,3 +51,7 @@ Filter lencana sistem tulisan dan JLPT kini mendeklarasikan grup filter bernama 
 ## Varian tenten berarah
 
 Hanya bentuk dakuten (tenten) yang memakai hubungan induk/turunan berarah. Data bawaan `じ`/`ご` dan `ジ`/`ゴ` masing-masing merujuk `し`/`こ` dan `シ`/`コ` di dalam tabel karakternya sendiri. Pasangan hiragana dan katakana tetap berupa data mandiri dan tidak dimodelkan sebagai induk dan turunan.
+
+## Kontrak penyajian Pustaka terbaru
+
+Tautan tenten berarah tidak lagi mendeklarasikan peran resolver, sehingga Pustaka hanya memakainya untuk membuka kartu turunan dan tidak menduplikasi induk sebagai kotak unsur. Hubungan bacaan kanji dan ejaan kata tetap memiliki peran resolver untuk unsur yang dapat dinavigasi. Pustaka terkini menempatkan pelafalan unit tulisan di samping label pada kartu dan judul detail, serta memulihkan konten modul yang hilang saat pengaktifan berikutnya kecuali hash kontennya diblokir secara eksplisit oleh pengguna.

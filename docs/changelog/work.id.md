@@ -78,6 +78,10 @@ Filter lencana sistem tulisan dan JLPT kini mendeklarasikan grup filter bernama 
 
 Hanya bentuk dakuten (tenten) yang memakai hubungan induk/turunan berarah. Data bawaan `じ`/`ご` dan `ジ`/`ゴ` masing-masing merujuk `し`/`こ` dan `シ`/`コ` di dalam tabel karakternya sendiri. Pasangan hiragana dan katakana tetap berupa data mandiri dan tidak dimodelkan sebagai induk dan turunan.
 
+## Kontrak penyajian Pustaka terbaru
+
+Tautan tenten berarah tidak lagi mendeklarasikan peran resolver, sehingga Pustaka hanya memakainya untuk membuka kartu turunan dan tidak menduplikasi induk sebagai kotak unsur. Hubungan bacaan kanji dan ejaan kata tetap memiliki peran resolver untuk unsur yang dapat dinavigasi. Pustaka terkini menempatkan pelafalan unit tulisan di samping label pada kartu dan judul detail, serta memulihkan konten modul yang hilang saat pengaktifan berikutnya kecuali hash kontennya diblokir secara eksplisit oleh pengguna.
+
 ## Komit
 
 - [a6fa75d](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/a6fa75d15c478b1d8ef1930dcc3c5c29e3938b97)
@@ -93,3 +97,4 @@ Hanya bentuk dakuten (tenten) yang memakai hubungan induk/turunan berarah. Data 
 - [e9ae382](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/e9ae382be9ed7fd23b4a323f081904ad9137410f)
 - [92032ec](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/92032ecd30c7bee0dbcb76007108ef12e6a892e8)
 - [b9f3e6e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/b9f3e6eb6813d99d5ee76902729bc478fe36afd1)
+- [90bac12](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/90bac12fb8d4c90451b6a0ae2e9c0572be99cbd0)

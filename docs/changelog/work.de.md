@@ -78,6 +78,10 @@ Filterabzeichen für Schriftsystem und JLPT deklarieren nun benannte, gegenseiti
 
 Nur Dakuten- (Tenten-) Formen verwenden die gerichtete Eltern-Kind-Beziehung. Die mitgelieferten Datensätze `じ`/`ご` und `ジ`/`ゴ` verweisen innerhalb ihrer jeweiligen Zeichentabelle auf `し`/`こ` beziehungsweise `シ`/`コ`. Entsprechende Hiragana- und Katakana-Zeichen bleiben unabhängige Datensätze und werden nicht als Eltern und Kinder modelliert.
 
+## Aktueller Darstellungsvertrag der Bibliothek
+
+Gerichtete Tenten-Verknüpfungen deklarieren keine Resolver-Rolle mehr. Die Bibliothek verwendet sie daher nur zum Ausklappen von Kindkarten und dupliziert das Elternelement nicht als Bestandteilfeld. Beziehungen für Kanji-Lesungen und Wortschreibweisen behalten Resolver-Rollen für navigierbare Bestandteile. Die aktuelle Bibliothek zeigt die Aussprache von Schrifteinheiten neben Beschriftungen auf Karten und in Detailtiteln und stellt fehlende Modulinhalte bei der nächsten Aktivierung wieder her, sofern ihr Inhaltshash nicht ausdrücklich gesperrt wurde.
+
 ## Commits
 
 - [a6fa75d](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/a6fa75d15c478b1d8ef1930dcc3c5c29e3938b97)
@@ -93,3 +97,4 @@ Nur Dakuten- (Tenten-) Formen verwenden die gerichtete Eltern-Kind-Beziehung. Di
 - [e9ae382](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/e9ae382be9ed7fd23b4a323f081904ad9137410f)
 - [92032ec](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/92032ecd30c7bee0dbcb76007108ef12e6a892e8)
 - [b9f3e6e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/b9f3e6eb6813d99d5ee76902729bc478fe36afd1)
+- [90bac12](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/90bac12fb8d4c90451b6a0ae2e9c0572be99cbd0)

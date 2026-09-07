@@ -78,6 +78,10 @@ Cognis PR #214 に合わせ、名前空間の所有権、ローカライズ済�
 
 方向付きの親子関係は濁点（点々）付きの文字だけに使用します。初期データの `じ`/`ご` と `ジ`/`ゴ` は、それぞれ同じ文字テーブル内の `し`/`こ` と `シ`/`コ` を参照します。対応するひらがなとカタカナは独立したレコードのままとし、親子として扱いません。
 
+## 最新のライブラリ表示契約
+
+方向付きの濁点リンクはリゾルバーロールを宣言しなくなりました。そのため、ライブラリは子カードの展開だけに使用し、親を構成要素ボックスとして重複表示しません。漢字の読みと単語の表記の関係は、移動可能な構成要素のためにリゾルバーロールを維持します。現在のライブラリは表記単位の発音をカードのラベルと詳細タイトルの横に表示し、利用者がコンテンツハッシュを明示的に拒否しない限り、次回の有効化時に欠落したモジュール内容を復元します。
+
 ## コミット
 
 - [a6fa75d](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/a6fa75d15c478b1d8ef1930dcc3c5c29e3938b97)
@@ -93,3 +97,4 @@ Cognis PR #214 に合わせ、名前空間の所有権、ローカライズ済�
 - [e9ae382](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/e9ae382be9ed7fd23b4a323f081904ad9137410f)
 - [92032ec](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/92032ecd30c7bee0dbcb76007108ef12e6a892e8)
 - [b9f3e6e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/b9f3e6eb6813d99d5ee76902729bc478fe36afd1)
+- [90bac12](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/90bac12fb8d4c90451b6a0ae2e9c0572be99cbd0)

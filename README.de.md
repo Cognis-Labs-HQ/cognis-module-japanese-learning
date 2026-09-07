@@ -54,3 +54,7 @@ Filterabzeichen für Schriftsystem und JLPT deklarieren nun benannte, gegenseiti
 ## Gerichtete Tenten-Varianten
 
 Nur Dakuten- (Tenten-) Formen verwenden die gerichtete Eltern-Kind-Beziehung. Die mitgelieferten Datensätze `じ`/`ご` und `ジ`/`ゴ` verweisen innerhalb ihrer jeweiligen Zeichentabelle auf `し`/`こ` beziehungsweise `シ`/`コ`. Entsprechende Hiragana- und Katakana-Zeichen bleiben unabhängige Datensätze und werden nicht als Eltern und Kinder modelliert.
+
+## Aktueller Darstellungsvertrag der Bibliothek
+
+Gerichtete Tenten-Verknüpfungen deklarieren keine Resolver-Rolle mehr. Die Bibliothek verwendet sie daher nur zum Ausklappen von Kindkarten und dupliziert das Elternelement nicht als Bestandteilfeld. Beziehungen für Kanji-Lesungen und Wortschreibweisen behalten Resolver-Rollen für navigierbare Bestandteile. Die aktuelle Bibliothek zeigt die Aussprache von Schrifteinheiten neben Beschriftungen auf Karten und in Detailtiteln und stellt fehlende Modulinhalte bei der nächsten Aktivierung wieder her, sofern ihr Inhaltshash nicht ausdrücklich gesperrt wurde.

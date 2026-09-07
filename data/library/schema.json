@@ -1,6 +1,6 @@
 {
     "id": "japanese-core",
-    "version": 8,
+    "version": 9,
     "namespace": "ja",
     "language": "ja",
     "metadata": {
@@ -97,7 +97,6 @@
                     },
                     "maximum": 1,
                     "onDelete": "detach",
-                    "resolverRole": "explicit",
                     "variantDirection": "right"
                 }
             ]
@@ -438,7 +437,29 @@
                 }
             ],
             "activityCompatibility": ["study:reading"],
-            "interestVeins": ["language:japanese"]
+            "interestVeins": ["language:japanese"],
+            "fields": [
+                {
+                    "id": "pronunciation",
+                    "metadata": {
+                        "labels": {
+                            "de": "Aussprache",
+                            "en": "Pronunciation",
+                            "id": "Pelafalan",
+                            "ja": "発音"
+                        }
+                    },
+                    "type": "stringList",
+                    "required": true,
+                    "detail": {
+                        "renderer": "text",
+                        "order": 1
+                    }
+                }
+            ],
+            "detail": {
+                "fieldOrder": ["pronunciation"]
+            }
         }
     ]
 }
