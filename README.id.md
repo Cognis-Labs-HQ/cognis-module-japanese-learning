@@ -70,3 +70,7 @@ Paket konten kini memuat seluruh 46 entri gojūon dasar dalam hiragana dan katak
 ## Penempatan diakritik terpisah
 
 Kedua relasi secara eksplisit mendeklarasikan `variant: true`, sebagaimana diwajibkan ketika `variantDirection` ada. Anak dakuten menggunakan relasi `dakuten-of` dan dibuka di sebelah kanan induk tanpa tandanya. Anak handakuten menggunakan `handakuten-of` dan dibuka di sebelah kirinya, sehingga induk seperti `は` dan `ハ` tetap menampilkan kedua varian tanpa menumpuknya pada satu posisi.
+
+## Kisi kana standar
+
+Lapisan karakter meminta baris berisi lima kartu dan mencantumkan kedua sistem tulisan dalam urutan gojūon standar. Sel kosong eksplisit mempertahankan celah pada baris `y` dan `w`, sedangkan dakuten dan handakuten tetap menjadi anak berarah di sekitar induk tanpa tanda alih-alih menempati sel bagan duplikat.

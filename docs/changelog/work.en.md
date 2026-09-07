@@ -94,6 +94,10 @@ The content pack now includes all 46 basic gojūon entries in both hiragana and 
 
 Both relationships explicitly declare `variant: true`, as required whenever `variantDirection` is present. Dakuten children use the `dakuten-of` relationship and unfold to the right of their unmarked parent. Handakuten children use `handakuten-of` and unfold to its left, so parents such as `は` and `ハ` visibly retain both variants instead of stacking them in one position.
 
+## Standard kana grid
+
+The character layer requests a five-card row and lists both scripts in standard gojūon order. Explicit empty cells preserve the gaps in the `y` and `w` rows, while dakuten and handakuten remain directional children around their unmarked parent rather than taking duplicate chart cells.
+
 ## Commits
 
 - [a6fa75d](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/a6fa75d15c478b1d8ef1930dcc3c5c29e3938b97)
@@ -119,3 +123,5 @@ Both relationships explicitly declare `variant: true`, as required whenever `var
 - [32ac841](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/32ac8416bbf3676b3cecdde536e645e24941f81a)
 
 - [ed1fd35](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/ed1fd35e5235f79773ba91bd1d28377365509e2b)
+
+- [e5c86a4](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/e5c86a4cf17408e92c5021015ff4404c2e5802b6)

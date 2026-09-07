@@ -94,6 +94,10 @@ Das Inhaltspaket enthält nun alle 46 grundlegenden Gojūon-Einträge in Hiragan
 
 Beide Beziehungen deklarieren ausdrücklich `variant: true`, wie es bei vorhandenem `variantDirection` erforderlich ist. Dakuten-Kinder verwenden die Beziehung `dakuten-of` und werden rechts neben ihrem unmarkierten Elternzeichen aufgeklappt. Handakuten-Kinder verwenden `handakuten-of` und werden links davon aufgeklappt, sodass Elternzeichen wie `は` und `ハ` beide Varianten sichtbar behalten, statt sie an derselben Position zu überlagern.
 
+## Standardmäßiges Kana-Raster
+
+Die Zeichenebene fordert Zeilen mit fünf Karten an und listet beide Schriftsysteme in der üblichen Gojūon-Reihenfolge auf. Ausdrückliche Leerzellen bewahren die Lücken in der `y`- und `w`-Zeile, während Dakuten und Handakuten als gerichtete Kinder um ihr unmarkiertes Elternzeichen angeordnet bleiben, statt doppelte Tabellenzellen zu belegen.
+
 ## Commits
 
 - [a6fa75d](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/a6fa75d15c478b1d8ef1930dcc3c5c29e3938b97)
@@ -119,3 +123,5 @@ Beide Beziehungen deklarieren ausdrücklich `variant: true`, wie es bei vorhande
 - [32ac841](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/32ac8416bbf3676b3cecdde536e645e24941f81a)
 
 - [ed1fd35](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/ed1fd35e5235f79773ba91bd1d28377365509e2b)
+
+- [e5c86a4](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/e5c86a4cf17408e92c5021015ff4404c2e5802b6)

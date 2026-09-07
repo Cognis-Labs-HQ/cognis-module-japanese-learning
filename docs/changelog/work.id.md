@@ -94,6 +94,10 @@ Paket konten kini memuat seluruh 46 entri gojūon dasar dalam hiragana dan katak
 
 Kedua relasi secara eksplisit mendeklarasikan `variant: true`, sebagaimana diwajibkan ketika `variantDirection` ada. Anak dakuten menggunakan relasi `dakuten-of` dan dibuka di sebelah kanan induk tanpa tandanya. Anak handakuten menggunakan `handakuten-of` dan dibuka di sebelah kirinya, sehingga induk seperti `は` dan `ハ` tetap menampilkan kedua varian tanpa menumpuknya pada satu posisi.
 
+## Kisi kana standar
+
+Lapisan karakter meminta baris berisi lima kartu dan mencantumkan kedua sistem tulisan dalam urutan gojūon standar. Sel kosong eksplisit mempertahankan celah pada baris `y` dan `w`, sedangkan dakuten dan handakuten tetap menjadi anak berarah di sekitar induk tanpa tanda alih-alih menempati sel bagan duplikat.
+
 ## Komit
 
 - [a6fa75d](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/a6fa75d15c478b1d8ef1930dcc3c5c29e3938b97)
@@ -119,3 +123,5 @@ Kedua relasi secara eksplisit mendeklarasikan `variant: true`, sebagaimana diwaj
 - [32ac841](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/32ac8416bbf3676b3cecdde536e645e24941f81a)
 
 - [ed1fd35](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/ed1fd35e5235f79773ba91bd1d28377365509e2b)
+
+- [e5c86a4](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/e5c86a4cf17408e92c5021015ff4404c2e5802b6)
