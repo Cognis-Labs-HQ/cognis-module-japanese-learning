@@ -70,6 +70,10 @@ Kolom duplikat `romanization`, `reading`, `readings`, `meaning`, `function`, dan
 
 Pelafalan kanji menampilkan on-yomi dalam katakana dan kun-yomi dalam hiragana, dan setiap bacaan bawaan kini diuraikan menjadi referensi berurutan ke data karakter kana yang sebenarnya. Metadata kelas karakter membedakan variasi hiragana dan katakana, sementara perender Pustaka dapat menampilkan kana yang direferensikan sebagai kotak komponen yang dapat dinavigasi.
 
+## Kontrak aktivasi Pustaka terkini
+
+Filter lencana sistem tulisan dan JLPT kini mendeklarasikan grup filter bernama yang saling eksklusif dan didukung oleh Library 2.6. Modul sengaja tidak mengaktifkan `allowBootstrapFailure`: ingest konten dan publikasi `study:language:ja` adalah pekerjaan runtime utamanya, sehingga mempertahankan modul aktif tanpa keduanya hanya menghasilkan modul yang tidak berfungsi. Cognis PR #216 kini memperbarui entri, aset, dan referensi yang sudah ada saat paket konten diimpor ulang, sehingga kegagalan referensi duplikat yang dilaporkan ditangani pada batas persistensi.
+
 ## Komit
 
 - [a6fa75d](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/a6fa75d15c478b1d8ef1930dcc3c5c29e3938b97)
@@ -82,3 +86,4 @@ Pelafalan kanji menampilkan on-yomi dalam katakana dan kun-yomi dalam hiragana, 
 - [549322e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/549322e5e597f186c36ada77d330921e7b335a4d)
 - [1740b0b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/1740b0b0da93d15c450ca82c452bb1fe8698b7e9)
 - [4639371](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/4639371d8fe55c71477aa70087cc4e8a18100438)
+- [e9ae382](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/e9ae382be9ed7fd23b4a323f081904ad9137410f)

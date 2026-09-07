@@ -110,6 +110,10 @@ test("declares a data-only Japanese Library content pack", () => {
         for (const field of layer.fields ?? []) {
             assert.match(field.id, SCHEMA_ID_PATTERN);
             assertLocalizedText(field.metadata.labels);
+            if (field.detail?.exclusive !== undefined) {
+                assert.equal(typeof field.detail.exclusive, "boolean");
+                assert.ok(field.detail.group);
+            }
         }
         for (const relationship of layer.relationships ?? []) {
             assert.match(relationship.id, SCHEMA_ID_PATTERN);
@@ -415,4 +419,19 @@ test("character classes distinguish hiragana and katakana variations", () => {
         new Set(variations.map(({ label }) => label)),
         new Set(["あ", "ア"]),
     );
+});
+
+test("badge filters use the current grouped exclusivity contract", () => {
+    const { schema } = loadPack();
+    const badgeFields = schema.layers.flatMap((layer) =>
+        (layer.fields ?? []).filter(
+            ({ detail }) => detail?.renderer === "badge",
+        ),
+    );
+    assert.ok(badgeFields.length > 0);
+    for (const field of badgeFields) {
+        assert.equal(typeof field.detail.group, "string");
+        assert.ok(field.detail.group.trim());
+        assert.equal(field.detail.exclusive, true);
+    }
 });

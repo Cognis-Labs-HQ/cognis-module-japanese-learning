@@ -70,6 +70,10 @@ Die doppelten Felder `romanization`, `reading`, `readings`, `meaning`, `function
 
 Kanji-Aussprachen stellen On-Lesungen in Katakana und Kun-Lesungen in Hiragana dar, und jede vorinstallierte Lesung wird nun in geordnete Verweise auf ihre tatsächlichen Kana-Zeichendatensätze aufgelöst. Zeichenklassen-Metadaten unterscheiden Hiragana- und Katakana-Varianten, während die Bibliotheksdarstellung referenzierte Kana als navigierbare Komponentenfelder anzeigen kann.
 
+## Aktueller Aktivierungsvertrag der Bibliothek
+
+Filterabzeichen für Schriftsystem und JLPT deklarieren nun benannte, gegenseitig ausschließende Filtergruppen, die von Library 2.6 unterstützt werden. Das Modul aktiviert `allowBootstrapFailure` bewusst nicht: Inhaltsimport und Veröffentlichung von `study:language:ja` sind seine wesentlichen Laufzeitaufgaben; ohne sie bliebe ein funktionsloses Modul aktiviert. Cognis PR #216 aktualisiert bei wiederholten Inhaltspaketimporten nun vorhandene Einträge, Ressourcen und Verweise und behebt damit den gemeldeten Fehler durch doppelte Verweise an der Persistenzgrenze.
+
 ## Commits
 
 - [a6fa75d](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/a6fa75d15c478b1d8ef1930dcc3c5c29e3938b97)
@@ -82,3 +86,4 @@ Kanji-Aussprachen stellen On-Lesungen in Katakana und Kun-Lesungen in Hiragana d
 - [549322e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/549322e5e597f186c36ada77d330921e7b335a4d)
 - [1740b0b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/1740b0b0da93d15c450ca82c452bb1fe8698b7e9)
 - [4639371](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/4639371d8fe55c71477aa70087cc4e8a18100438)
+- [e9ae382](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/e9ae382be9ed7fd23b4a323f081904ad9137410f)

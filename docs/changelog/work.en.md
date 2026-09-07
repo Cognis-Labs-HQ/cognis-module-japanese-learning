@@ -70,6 +70,10 @@ Removed duplicate `romanization`, `reading`, `readings`, `meaning`, `function`, 
 
 Kanji pronunciation presents on-readings in katakana and kun-readings in hiragana, and every seeded reading now expands into ordered references to its actual kana character records. Character-class metadata keeps hiragana and katakana variants distinguishable, while the Library renderer can show referenced kana as navigable component boxes.
 
+## Current Library activation contract
+
+Character-script and JLPT badge filters now declare named, mutually exclusive filter groups supported by Library 2.6. The module intentionally does not enable `allowBootstrapFailure`: content ingestion and publication of `study:language:ja` are its essential runtime work, and keeping it enabled without them would expose a nonfunctional module. Cognis PR #216 now updates existing entries, assets, and references during repeated content-pack imports, which addresses the reported duplicate-reference failure at its persistence boundary.
+
 ## Commits
 
 - [a6fa75d](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/a6fa75d15c478b1d8ef1930dcc3c5c29e3938b97)
@@ -82,3 +86,4 @@ Kanji pronunciation presents on-readings in katakana and kun-readings in hiragan
 - [549322e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/549322e5e597f186c36ada77d330921e7b335a4d)
 - [1740b0b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/1740b0b0da93d15c450ca82c452bb1fe8698b7e9)
 - [4639371](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/4639371d8fe55c71477aa70087cc4e8a18100438)
+- [e9ae382](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/e9ae382be9ed7fd23b4a323f081904ad9137410f)

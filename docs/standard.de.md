@@ -43,3 +43,7 @@ Die doppelten Felder `romanization`, `reading`, `readings`, `meaning`, `function
 ## Kana-gestützte Kanji-Lesungen
 
 Kanji-Aussprachen stellen On-Lesungen in Katakana und Kun-Lesungen in Hiragana dar, und jede vorinstallierte Lesung wird nun in geordnete Verweise auf ihre tatsächlichen Kana-Zeichendatensätze aufgelöst. Zeichenklassen-Metadaten unterscheiden Hiragana- und Katakana-Varianten, während die Bibliotheksdarstellung referenzierte Kana als navigierbare Komponentenfelder anzeigen kann.
+
+## Aktueller Aktivierungsvertrag der Bibliothek
+
+Filterabzeichen für Schriftsystem und JLPT deklarieren nun benannte, gegenseitig ausschließende Filtergruppen, die von Library 2.6 unterstützt werden. Das Modul aktiviert `allowBootstrapFailure` bewusst nicht: Inhaltsimport und Veröffentlichung von `study:language:ja` sind seine wesentlichen Laufzeitaufgaben; ohne sie bliebe ein funktionsloses Modul aktiviert. Cognis PR #216 aktualisiert bei wiederholten Inhaltspaketimporten nun vorhandene Einträge, Ressourcen und Verweise und behebt damit den gemeldeten Fehler durch doppelte Verweise an der Persistenzgrenze.

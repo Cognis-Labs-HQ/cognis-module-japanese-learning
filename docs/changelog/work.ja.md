@@ -70,6 +70,10 @@ Cognis PR #214 に合わせ、名前空間の所有権、ローカライズ済�
 
 漢字の音読みをカタカナ、訓読みをひらがなで表示し、すべての初期読みを実際の仮名文字レコードへの順序付き参照に展開しました。文字種メタデータでひらがなとカタカナの異体を区別し、ライブラリのレンダラーは参照された仮名を移動可能な構成要素ボックスとして表示できます。
 
+## 最新のライブラリ有効化契約
+
+文字種と JLPT のバッジフィルターは、Library 2.6 が対応する名前付きの相互排他フィルターグループを宣言するようになりました。`allowBootstrapFailure` は意図的に有効化していません。コンテンツの取り込みと `study:language:ja` の公開はこのモジュールの必須ランタイム処理であり、これらがない状態で有効のままにすると機能しないモジュールが残るためです。Cognis PR #216 はコンテンツパックの再取り込み時に既存の項目・アセット・参照を更新するようになり、報告された参照重複エラーを永続化境界で解決します。
+
 ## コミット
 
 - [a6fa75d](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/a6fa75d15c478b1d8ef1930dcc3c5c29e3938b97)
@@ -82,3 +86,4 @@ Cognis PR #214 に合わせ、名前空間の所有権、ローカライズ済�
 - [549322e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/549322e5e597f186c36ada77d330921e7b335a4d)
 - [1740b0b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/1740b0b0da93d15c450ca82c452bb1fe8698b7e9)
 - [4639371](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/4639371d8fe55c71477aa70087cc4e8a18100438)
+- [e9ae382](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/e9ae382be9ed7fd23b4a323f081904ad9137410f)
