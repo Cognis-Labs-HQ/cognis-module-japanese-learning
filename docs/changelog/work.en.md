@@ -82,6 +82,10 @@ Only dakuten (tenten) forms use the directional parent/child relationship. The s
 
 Directional tenten links no longer declare a resolver role, so the Library uses them only to unfold child cards and does not duplicate the parent as a constituent box. Kanji reading and word spelling relationships retain resolver roles for navigable constituents. The current Library places writing-unit pronunciation beside labels in cards and detail titles, and restores missing module content on the next enable unless a user explicitly blacklists its content hash.
 
+## Compositions and definitions
+
+Resolver roles are now reserved for true compositions: kanji readings, word spellings, and ordered sentence words or particles. Relationships to the semantic definition layer no longer declare a resolver, so primary and alternate definition links render as meanings instead of composition groups. Required writing-system and proficiency filters also declare intentional default tags for the latest Library filter contract.
+
 ## Commits
 
 - [a6fa75d](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/a6fa75d15c478b1d8ef1930dcc3c5c29e3938b97)
@@ -99,3 +103,4 @@ Directional tenten links no longer declare a resolver role, so the Library uses 
 - [b9f3e6e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/b9f3e6eb6813d99d5ee76902729bc478fe36afd1)
 - [90bac12](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/90bac12fb8d4c90451b6a0ae2e9c0572be99cbd0)
 - [4a0b288](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/4a0b28830b5a1d6fcea2df490e74e99108d1e4dd)
+- [32b43de](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/32b43dec923a4fc7a62401bb21b5b01259cb311e)

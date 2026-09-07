@@ -1,6 +1,6 @@
 {
     "id": "japanese-core",
-    "version": 9,
+    "version": 10,
     "namespace": "ja",
     "language": "ja",
     "metadata": {
@@ -74,7 +74,9 @@
                         "renderer": "badge",
                         "order": 3,
                         "group": "writing-system",
-                        "exclusive": true
+                        "exclusive": true,
+                        "required": true,
+                        "defaultTag": "hiragana"
                     }
                 }
             ],
@@ -179,8 +181,7 @@
                     },
                     "minimum": 1,
                     "requiredTarget": true,
-                    "onDelete": "restrict",
-                    "resolverRole": "explicit"
+                    "onDelete": "restrict"
                 }
             ],
             "detail": {
@@ -292,7 +293,9 @@
                         "renderer": "badge",
                         "order": 2,
                         "group": "proficiency-level",
-                        "exclusive": true
+                        "exclusive": true,
+                        "required": true,
+                        "defaultTag": "N5"
                     }
                 }
             ],
@@ -327,8 +330,7 @@
                     },
                     "minimum": 1,
                     "requiredTarget": true,
-                    "onDelete": "restrict",
-                    "resolverRole": "explicit"
+                    "onDelete": "restrict"
                 }
             ],
             "detail": {
@@ -386,8 +388,7 @@
                     },
                     "minimum": 1,
                     "requiredTarget": true,
-                    "onDelete": "restrict",
-                    "resolverRole": "explicit"
+                    "onDelete": "restrict"
                 }
             ]
         },

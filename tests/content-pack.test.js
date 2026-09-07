@@ -534,3 +534,56 @@ test("lexical and sentence pronunciation use the Library placement field", () =>
         }
     }
 });
+
+test("definitions stay semantic while resolvers describe compositions", () => {
+    const { schema } = loadPack();
+    const definitionLayer = schema.layers.find(
+        ({ semanticRole }) => semanticRole === "definition",
+    );
+    const definitionRelationships = schema.layers.flatMap((layer) =>
+        (layer.relationships ?? []).filter(
+            ({ targetLayer }) => targetLayer === definitionLayer.id,
+        ),
+    );
+    assert.ok(definitionRelationships.length > 0);
+    for (const relationship of definitionRelationships) {
+        assert.equal(relationship.resolverRole, undefined);
+    }
+
+    const compositionRelationships = schema.layers.flatMap((layer) =>
+        (layer.relationships ?? []).filter(({ resolverRole }) => resolverRole),
+    );
+    assert.deepEqual(
+        new Set(
+            compositionRelationships.map(
+                ({ id, targetLayer }) => `${id}:${targetLayer}`,
+            ),
+        ),
+        new Set([
+            "readings:characters",
+            "spelling:alt-characters",
+            "words:words",
+            "particles:particles",
+        ]),
+    );
+});
+
+test("required filter groups declare intentional defaults", () => {
+    const { schema, records } = loadPack();
+    for (const layer of schema.layers) {
+        for (const field of layer.fields ?? []) {
+            if (!field.detail?.required) continue;
+            assert.equal(field.detail.exclusive, true);
+            assert.ok(field.detail.group);
+            assert.equal(typeof field.detail.defaultTag, "string");
+            assert.ok(
+                records.some(
+                    (record) =>
+                        record.layer === layer.id &&
+                        record.fields?.[field.id] === field.detail.defaultTag,
+                ),
+                `${layer.id}.${field.id} default must exist in content`,
+            );
+        }
+    }
+});

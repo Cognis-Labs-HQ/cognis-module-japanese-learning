@@ -82,6 +82,10 @@ Cognis PR #214 に合わせ、名前空間の所有権、ローカライズ済�
 
 方向付きの濁点リンクはリゾルバーロールを宣言しなくなりました。そのため、ライブラリは子カードの展開だけに使用し、親を構成要素ボックスとして重複表示しません。漢字の読みと単語の表記の関係は、移動可能な構成要素のためにリゾルバーロールを維持します。現在のライブラリは表記単位の発音をカードのラベルと詳細タイトルの横に表示し、利用者がコンテンツハッシュを明示的に拒否しない限り、次回の有効化時に欠落したモジュール内容を復元します。
 
+## 構成と定義
+
+リゾルバーロールは、漢字の読み、単語の表記、順序付きの文の単語または助詞という実際の構成だけに使用します。意味上の定義レイヤーへの関係はリゾルバーを宣言しないため、主定義と代替定義のリンクは構成グループではなく意味として表示されます。必須の文字種および習熟度フィルターには、最新のライブラリ絞り込み契約に合わせて意図した既定タグも宣言します。
+
 ## コミット
 
 - [a6fa75d](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/a6fa75d15c478b1d8ef1930dcc3c5c29e3938b97)
@@ -99,3 +103,4 @@ Cognis PR #214 に合わせ、名前空間の所有権、ローカライズ済�
 - [b9f3e6e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/b9f3e6eb6813d99d5ee76902729bc478fe36afd1)
 - [90bac12](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/90bac12fb8d4c90451b6a0ae2e9c0572be99cbd0)
 - [4a0b288](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/4a0b28830b5a1d6fcea2df490e74e99108d1e4dd)
+- [32b43de](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/32b43dec923a4fc7a62401bb21b5b01259cb311e)
