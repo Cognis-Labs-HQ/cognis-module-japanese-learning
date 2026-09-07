@@ -1,6 +1,6 @@
 {
     "id": "japanese-core",
-    "version": 14,
+    "version": 15,
     "namespace": "ja",
     "language": "ja",
     "metadata": {
@@ -158,9 +158,13 @@
                     "ja:char:me",
                     "ja:char:mo",
                     "ja:char:ya",
-                    null,
+                    {
+                        "blank": true
+                    },
                     "ja:char:yu",
-                    null,
+                    {
+                        "blank": true
+                    },
                     "ja:char:yo",
                     "ja:char:ra",
                     "ja:char:ri",
@@ -168,15 +172,29 @@
                     "ja:char:re",
                     "ja:char:ro",
                     "ja:char:wa",
-                    null,
-                    null,
-                    null,
+                    {
+                        "blank": true
+                    },
+                    {
+                        "blank": true
+                    },
+                    {
+                        "blank": true
+                    },
                     "ja:char:wo",
                     "ja:char:n",
-                    null,
-                    null,
-                    null,
-                    null,
+                    {
+                        "blank": true
+                    },
+                    {
+                        "blank": true
+                    },
+                    {
+                        "blank": true
+                    },
+                    {
+                        "blank": true
+                    },
                     "ja:char:ka:a",
                     "ja:char:ka:i",
                     "ja:char:ka:u",
@@ -213,9 +231,13 @@
                     "ja:char:ka:me",
                     "ja:char:ka:mo",
                     "ja:char:ka:ya",
-                    null,
+                    {
+                        "blank": true
+                    },
                     "ja:char:ka:yu",
-                    null,
+                    {
+                        "blank": true
+                    },
                     "ja:char:ka:yo",
                     "ja:char:ka:ra",
                     "ja:char:ka:ri",
@@ -223,15 +245,29 @@
                     "ja:char:ka:re",
                     "ja:char:ka:ro",
                     "ja:char:ka:wa",
-                    null,
-                    null,
-                    null,
+                    {
+                        "blank": true
+                    },
+                    {
+                        "blank": true
+                    },
+                    {
+                        "blank": true
+                    },
                     "ja:char:ka:wo",
                     "ja:char:ka:n",
-                    null,
-                    null,
-                    null,
-                    null
+                    {
+                        "blank": true
+                    },
+                    {
+                        "blank": true
+                    },
+                    {
+                        "blank": true
+                    },
+                    {
+                        "blank": true
+                    }
                 ]
             }
         },
@@ -469,7 +505,8 @@
                 "fieldOrder": ["pronunciation", "jlpt_level"]
             },
             "activityCompatibility": ["study:recognition", "study:production"],
-            "interestVeins": ["language:japanese"]
+            "interestVeins": ["language:japanese"],
+            "displayDefinition": true
         },
         {
             "id": "particles",
@@ -522,7 +559,8 @@
                     "requiredTarget": true,
                     "onDelete": "restrict"
                 }
-            ]
+            ],
+            "displayDefinition": true
         },
         {
             "id": "sentences",
@@ -567,6 +605,21 @@
                     "ordered": true,
                     "onDelete": "restrict",
                     "resolverRole": "explicit"
+                },
+                {
+                    "id": "definitions",
+                    "targetLayer": "definitions",
+                    "metadata": {
+                        "labels": {
+                            "de": "Definitionen",
+                            "en": "Definitions",
+                            "id": "Definisi",
+                            "ja": "定義"
+                        }
+                    },
+                    "minimum": 1,
+                    "requiredTarget": true,
+                    "onDelete": "restrict"
                 }
             ],
             "activityCompatibility": ["study:reading"],
@@ -592,7 +645,8 @@
             ],
             "detail": {
                 "fieldOrder": ["pronunciation"]
-            }
+            },
+            "displayDefinition": true
         }
     ]
 }

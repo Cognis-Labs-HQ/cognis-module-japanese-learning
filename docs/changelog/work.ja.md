@@ -98,6 +98,10 @@ Cognis PR #214 に合わせ、名前空間の所有権、ローカライズ済�
 
 文字レイヤーは 1 行 5 枚を指定し、ひらがなとカタカナを標準的な五十音順で並べます。`や` 行と `わ` 行の欠けた音は明示的な空セルで保持し、濁点・半濁点付き文字は表のセルを重複させず、清音の親文字の周囲に方向付きの子文字として表示します。
 
+## 定義ベースのカードと明示的なグリッド空白
+
+最新のライブラリ表示契約に合わせ、単語・助詞・文はローカライズされた定義をカード表示に使うよう指定し、各項目に必須の定義参照を追加しました。かな表の空白には従来の null 値ではなく、明示的な `{ "blank": true }` プレースホルダーを使用します。
+
 ## コミット
 
 - [a6fa75d](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/a6fa75d15c478b1d8ef1930dcc3c5c29e3938b97)
@@ -125,3 +129,5 @@ Cognis PR #214 に合わせ、名前空間の所有権、ローカライズ済�
 - [ed1fd35](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/ed1fd35e5235f79773ba91bd1d28377365509e2b)
 
 - [e5c86a4](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/e5c86a4cf17408e92c5021015ff4404c2e5802b6)
+
+- [2a56248](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/2a562481c79002aa62a1ab51de91b7543c1acd18)

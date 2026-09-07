@@ -98,6 +98,10 @@ Beide Beziehungen deklarieren ausdrücklich `variant: true`, wie es bei vorhande
 
 Die Zeichenebene fordert Zeilen mit fünf Karten an und listet beide Schriftsysteme in der üblichen Gojūon-Reihenfolge auf. Ausdrückliche Leerzellen bewahren die Lücken in der `y`- und `w`-Zeile, während Dakuten und Handakuten als gerichtete Kinder um ihr unmarkiertes Elternzeichen angeordnet bleiben, statt doppelte Tabellenzellen zu belegen.
 
+## Definitionsgestützte Karten und ausdrückliche Rasterlücken
+
+An den neuesten Darstellungsvertrag der Bibliothek angepasst: Wörter, Partikeln und Sätze fordern nun lokalisierten, definitionsgestützten Kartentext an, und jeder solche Eintrag besitzt einen erforderlichen Definitionsverweis. Lücken in der Kana-Tabelle verwenden ausdrückliche Platzhalter `{ "blank": true }` anstelle veralteter Nullwerte.
+
 ## Commits
 
 - [a6fa75d](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/a6fa75d15c478b1d8ef1930dcc3c5c29e3938b97)
@@ -125,3 +129,5 @@ Die Zeichenebene fordert Zeilen mit fünf Karten an und listet beide Schriftsyst
 - [ed1fd35](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/ed1fd35e5235f79773ba91bd1d28377365509e2b)
 
 - [e5c86a4](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/e5c86a4cf17408e92c5021015ff4404c2e5802b6)
+
+- [2a56248](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/2a562481c79002aa62a1ab51de91b7543c1acd18)

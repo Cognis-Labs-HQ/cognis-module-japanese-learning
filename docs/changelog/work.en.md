@@ -98,6 +98,10 @@ Both relationships explicitly declare `variant: true`, as required whenever `var
 
 The character layer requests a five-card row and lists both scripts in standard gojūon order. Explicit empty cells preserve the gaps in the `y` and `w` rows, while dakuten and handakuten remain directional children around their unmarked parent rather than taking duplicate chart cells.
 
+## Definition-backed cards and explicit grid gaps
+
+Aligned with the latest Library presentation contract: words, particles, and sentences now request localized definition-backed card text and every such entry has a required definition reference. Kana chart gaps use explicit `{ "blank": true }` placeholders rather than legacy null values.
+
 ## Commits
 
 - [a6fa75d](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/a6fa75d15c478b1d8ef1930dcc3c5c29e3938b97)
@@ -125,3 +129,5 @@ The character layer requests a five-card row and lists both scripts in standard 
 - [ed1fd35](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/ed1fd35e5235f79773ba91bd1d28377365509e2b)
 
 - [e5c86a4](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/e5c86a4cf17408e92c5021015ff4404c2e5802b6)
+
+- [2a56248](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/2a562481c79002aa62a1ab51de91b7543c1acd18)

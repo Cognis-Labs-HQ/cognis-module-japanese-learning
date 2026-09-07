@@ -759,8 +759,11 @@ test("character grid preserves the standard five-column kana chart", () => {
             .map(({ id, label }) => [id, label]),
     );
     const chartLabels = characterLayer.grid.items.map((id) =>
-        id === null ? null : labelsById.get(id),
+        id && typeof id === "object" && id.blank === true
+            ? null
+            : labelsById.get(id),
     );
+    assert.equal(characterLayer.grid.items.includes(null), false);
     assert.deepEqual(chartLabels.slice(0, 55), [
         "あ",
         "い",
@@ -875,4 +878,25 @@ test("character grid preserves the standard five-column kana chart", () => {
         null,
         null,
     ]);
+});
+
+test("non-character cards opt into required definition-backed display text", () => {
+    const { schema, records } = loadPack();
+    for (const layerId of ["words", "particles", "sentences"]) {
+        const layer = schema.layers.find(({ id }) => id === layerId);
+        assert.equal(layer.displayDefinition, true);
+        const definitionRelationship = layer.relationships.find(
+            ({ targetLayer }) => targetLayer === "definitions",
+        );
+        assert.ok(definitionRelationship);
+        assert.ok(definitionRelationship.minimum >= 1);
+        for (const record of records.filter(({ layer }) => layer === layerId)) {
+            assert.ok(
+                record.references.some(
+                    ({ relation }) => relation === definitionRelationship.id,
+                ),
+                `${record.id} requires display definition content`,
+            );
+        }
+    }
 });

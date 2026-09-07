@@ -71,3 +71,7 @@ Kedua relasi secara eksplisit mendeklarasikan `variant: true`, sebagaimana diwaj
 ## Kisi kana standar
 
 Lapisan karakter meminta baris berisi lima kartu dan mencantumkan kedua sistem tulisan dalam urutan gojūon standar. Sel kosong eksplisit mempertahankan celah pada baris `y` dan `w`, sedangkan dakuten dan handakuten tetap menjadi anak berarah di sekitar induk tanpa tanda alih-alih menempati sel bagan duplikat.
+
+## Kartu berbasis definisi dan celah kisi eksplisit
+
+Diselaraskan dengan kontrak tampilan Pustaka terbaru: kata, partikel, dan kalimat kini meminta teks kartu terlokalisasi yang berbasis definisi, dan setiap entri tersebut memiliki referensi definisi wajib. Celah bagan kana memakai penanda eksplisit `{ "blank": true }`, bukan nilai null lama.

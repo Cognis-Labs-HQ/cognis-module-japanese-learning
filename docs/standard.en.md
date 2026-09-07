@@ -71,3 +71,7 @@ Both relationships explicitly declare `variant: true`, as required whenever `var
 ## Standard kana grid
 
 The character layer requests a five-card row and lists both scripts in standard gojūon order. Explicit empty cells preserve the gaps in the `y` and `w` rows, while dakuten and handakuten remain directional children around their unmarked parent rather than taking duplicate chart cells.
+
+## Definition-backed cards and explicit grid gaps
+
+Aligned with the latest Library presentation contract: words, particles, and sentences now request localized definition-backed card text and every such entry has a required definition reference. Kana chart gaps use explicit `{ "blank": true }` placeholders rather than legacy null values.
