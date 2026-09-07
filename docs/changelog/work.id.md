@@ -68,7 +68,7 @@ Kolom duplikat `romanization`, `reading`, `readings`, `meaning`, `function`, dan
 
 ## Bacaan kanji berbasis kana
 
-Pelafalan kanji menampilkan on-yomi dalam katakana dan kun-yomi dalam hiragana, dan setiap bacaan bawaan kini diuraikan menjadi referensi berurutan ke data karakter kana yang sebenarnya. Metadata kelas karakter membedakan variasi hiragana dan katakana, sementara perender Pustaka dapat menampilkan kana yang direferensikan sebagai kotak komponen yang dapat dinavigasi.
+Pelafalan kanji dan tautan unsurnya memakai data hiragana secara konsisten, termasuk untuk on-yomi, sehingga definisi seperti `日` tidak menampilkan unsur katakana yang tidak terkait. Setiap bacaan bawaan diuraikan menjadi referensi berurutan ke karakter hiragana yang tepat. Karakter katakana mempertahankan ID dan tautan tersendiri serta tetap tersedia bagi konten yang benar-benar ditulis dalam katakana.
 
 ## Kontrak aktivasi Pustaka terkini
 
@@ -98,3 +98,4 @@ Tautan tenten berarah tidak lagi mendeklarasikan peran resolver, sehingga Pustak
 - [92032ec](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/92032ecd30c7bee0dbcb76007108ef12e6a892e8)
 - [b9f3e6e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/b9f3e6eb6813d99d5ee76902729bc478fe36afd1)
 - [90bac12](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/90bac12fb8d4c90451b6a0ae2e9c0572be99cbd0)
+- [4a0b288](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/4a0b28830b5a1d6fcea2df490e74e99108d1e4dd)

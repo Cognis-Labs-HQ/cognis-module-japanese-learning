@@ -42,7 +42,7 @@ Die doppelten Felder `romanization`, `reading`, `readings`, `meaning`, `function
 
 ## Kana-gestützte Kanji-Lesungen
 
-Kanji-Aussprachen stellen On-Lesungen in Katakana und Kun-Lesungen in Hiragana dar, und jede vorinstallierte Lesung wird nun in geordnete Verweise auf ihre tatsächlichen Kana-Zeichendatensätze aufgelöst. Zeichenklassen-Metadaten unterscheiden Hiragana- und Katakana-Varianten, während die Bibliotheksdarstellung referenzierte Kana als navigierbare Komponentenfelder anzeigen kann.
+Kanji-Aussprachen und ihre Bestandteilsverweise verwenden einheitlich Hiragana-Datensätze, auch für On-Lesungen, sodass eine Definition wie `日` keine unbeteiligten Katakana-Bestandteile anzeigt. Jede vorinstallierte Lesung wird in geordnete Verweise auf ihre genauen Hiragana-Zeichen aufgelöst. Katakana-Zeichen behalten eigene IDs und Verweise und bleiben für tatsächlich in Katakana geschriebene Inhalte verfügbar.
 
 ## Aktueller Aktivierungsvertrag der Bibliothek
 

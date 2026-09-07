@@ -42,7 +42,7 @@ Kolom duplikat `romanization`, `reading`, `readings`, `meaning`, `function`, dan
 
 ## Bacaan kanji berbasis kana
 
-Pelafalan kanji menampilkan on-yomi dalam katakana dan kun-yomi dalam hiragana, dan setiap bacaan bawaan kini diuraikan menjadi referensi berurutan ke data karakter kana yang sebenarnya. Metadata kelas karakter membedakan variasi hiragana dan katakana, sementara perender Pustaka dapat menampilkan kana yang direferensikan sebagai kotak komponen yang dapat dinavigasi.
+Pelafalan kanji dan tautan unsurnya memakai data hiragana secara konsisten, termasuk untuk on-yomi, sehingga definisi seperti `日` tidak menampilkan unsur katakana yang tidak terkait. Setiap bacaan bawaan diuraikan menjadi referensi berurutan ke karakter hiragana yang tepat. Karakter katakana mempertahankan ID dan tautan tersendiri serta tetap tersedia bagi konten yang benar-benar ditulis dalam katakana.
 
 ## Kontrak aktivasi Pustaka terkini
 

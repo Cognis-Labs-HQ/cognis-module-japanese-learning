@@ -68,7 +68,7 @@ Cognis PR #214 に合わせ、名前空間の所有権、ローカライズ済�
 
 ## 仮名レコードに基づく漢字の読み
 
-漢字の音読みをカタカナ、訓読みをひらがなで表示し、すべての初期読みを実際の仮名文字レコードへの順序付き参照に展開しました。文字種メタデータでひらがなとカタカナの異体を区別し、ライブラリのレンダラーは参照された仮名を移動可能な構成要素ボックスとして表示できます。
+漢字の発音と構成要素リンクは、音読みを含めて一貫してひらがなレコードを使用します。そのため、`日` のような定義に無関係なカタカナ構成要素が表示されません。すべての初期読みは、正確なひらがな文字への順序付き参照に展開されます。カタカナ文字は固有の ID とリンクを維持し、実際にカタカナで書かれる内容に利用できます。
 
 ## 最新のライブラリ有効化契約
 
@@ -98,3 +98,4 @@ Cognis PR #214 に合わせ、名前空間の所有権、ローカライズ済�
 - [92032ec](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/92032ecd30c7bee0dbcb76007108ef12e6a892e8)
 - [b9f3e6e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/b9f3e6eb6813d99d5ee76902729bc478fe36afd1)
 - [90bac12](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/90bac12fb8d4c90451b6a0ae2e9c0572be99cbd0)
+- [4a0b288](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/4a0b28830b5a1d6fcea2df490e74e99108d1e4dd)

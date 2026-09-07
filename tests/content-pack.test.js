@@ -380,7 +380,7 @@ test("kanji readings use kana labels and ordered character references", () => {
     )) {
         assert.ok(
             kanji.fields.pronunciation.every((reading) =>
-                /^[\p{Script=Hiragana}\p{Script=Katakana}ー]+$/u.test(reading),
+                /^[\p{Script=Hiragana}ー]+$/u.test(reading),
             ),
             `${kanji.id} readings must be presented in kana`,
         );
@@ -390,17 +390,14 @@ test("kanji readings use kana labels and ordered character references", () => {
             .map(({ entryId }) => characters.get(entryId)?.label)
             .join("");
         assert.equal(readingLabels, kanji.fields.pronunciation.join(""));
+        const readingTargets = kanji.references
+            .filter(({ relation }) => relation === "readings")
+            .map(({ entryId }) => characters.get(entryId));
         assert.ok(
-            kanji.fields.pronunciation.some((reading) =>
-                /\p{Script=Katakana}/u.test(reading),
+            readingTargets.every(
+                ({ fields }) => fields.character_class === "hiragana",
             ),
-            `${kanji.id} requires a katakana on-reading`,
-        );
-        assert.ok(
-            kanji.fields.pronunciation.some((reading) =>
-                /\p{Script=Hiragana}/u.test(reading),
-            ),
-            `${kanji.id} requires a hiragana kun-reading`,
+            `${kanji.id} reading references must link only to hiragana`,
         );
     }
 });

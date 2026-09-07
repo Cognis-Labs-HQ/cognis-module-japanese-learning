@@ -68,7 +68,7 @@ Removed duplicate `romanization`, `reading`, `readings`, `meaning`, `function`, 
 
 ## Kana-backed kanji readings
 
-Kanji pronunciation presents on-readings in katakana and kun-readings in hiragana, and every seeded reading now expands into ordered references to its actual kana character records. Character-class metadata keeps hiragana and katakana variants distinguishable, while the Library renderer can show referenced kana as navigable component boxes.
+Kanji pronunciations and their constituent links consistently use hiragana records, including on-readings, so a definition such as `日` does not surface unrelated katakana components. Every seeded reading expands into ordered references to its exact hiragana characters. Katakana characters retain separate IDs and links and remain available for genuinely katakana content.
 
 ## Current Library activation contract
 
@@ -98,3 +98,4 @@ Directional tenten links no longer declare a resolver role, so the Library uses 
 - [92032ec](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/92032ecd30c7bee0dbcb76007108ef12e6a892e8)
 - [b9f3e6e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/b9f3e6eb6813d99d5ee76902729bc478fe36afd1)
 - [90bac12](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/90bac12fb8d4c90451b6a0ae2e9c0572be99cbd0)
+- [4a0b288](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/4a0b28830b5a1d6fcea2df490e74e99108d1e4dd)

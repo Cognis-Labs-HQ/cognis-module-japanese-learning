@@ -42,7 +42,7 @@ Removed duplicate `romanization`, `reading`, `readings`, `meaning`, `function`, 
 
 ## Kana-backed kanji readings
 
-Kanji pronunciation presents on-readings in katakana and kun-readings in hiragana, and every seeded reading now expands into ordered references to its actual kana character records. Character-class metadata keeps hiragana and katakana variants distinguishable, while the Library renderer can show referenced kana as navigable component boxes.
+Kanji pronunciations and their constituent links consistently use hiragana records, including on-readings, so a definition such as `日` does not surface unrelated katakana components. Every seeded reading expands into ordered references to its exact hiragana characters. Katakana characters retain separate IDs and links and remain available for genuinely katakana content.
 
 ## Current Library activation contract
 

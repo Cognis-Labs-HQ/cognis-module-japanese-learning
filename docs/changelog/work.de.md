@@ -68,7 +68,7 @@ Die doppelten Felder `romanization`, `reading`, `readings`, `meaning`, `function
 
 ## Kana-gestützte Kanji-Lesungen
 
-Kanji-Aussprachen stellen On-Lesungen in Katakana und Kun-Lesungen in Hiragana dar, und jede vorinstallierte Lesung wird nun in geordnete Verweise auf ihre tatsächlichen Kana-Zeichendatensätze aufgelöst. Zeichenklassen-Metadaten unterscheiden Hiragana- und Katakana-Varianten, während die Bibliotheksdarstellung referenzierte Kana als navigierbare Komponentenfelder anzeigen kann.
+Kanji-Aussprachen und ihre Bestandteilsverweise verwenden einheitlich Hiragana-Datensätze, auch für On-Lesungen, sodass eine Definition wie `日` keine unbeteiligten Katakana-Bestandteile anzeigt. Jede vorinstallierte Lesung wird in geordnete Verweise auf ihre genauen Hiragana-Zeichen aufgelöst. Katakana-Zeichen behalten eigene IDs und Verweise und bleiben für tatsächlich in Katakana geschriebene Inhalte verfügbar.
 
 ## Aktueller Aktivierungsvertrag der Bibliothek
 
@@ -98,3 +98,4 @@ Gerichtete Tenten-Verknüpfungen deklarieren keine Resolver-Rolle mehr. Die Bibl
 - [92032ec](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/92032ecd30c7bee0dbcb76007108ef12e6a892e8)
 - [b9f3e6e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/b9f3e6eb6813d99d5ee76902729bc478fe36afd1)
 - [90bac12](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/90bac12fb8d4c90451b6a0ae2e9c0572be99cbd0)
+- [4a0b288](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/4a0b28830b5a1d6fcea2df490e74e99108d1e4dd)
