@@ -92,7 +92,7 @@ The content pack now includes all 46 basic gojūon entries in both hiragana and 
 
 ## Distinct diacritic placement
 
-Dakuten children use the `dakuten-of` relationship and unfold to the right of their unmarked parent. Handakuten children use `handakuten-of` and unfold below it, so parents such as `は` and `ハ` visibly retain both variants instead of stacking them in one position.
+Dakuten children use the `dakuten-of` relationship and unfold to the right of their unmarked parent. Handakuten children use `handakuten-of` and unfold to its left, so parents such as `は` and `ハ` visibly retain both variants instead of stacking them in one position.
 
 ## Commits
 
@@ -115,3 +115,5 @@ Dakuten children use the `dakuten-of` relationship and unfold to the right of th
 - [c7a745f](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/c7a745f39078cb5cb4d4206ce20a855aed195a22)
 
 - [5ab8006](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/5ab80067e1e3151a86f648cedf7660167a1f6f15)
+
+- [32ac841](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/32ac8416bbf3676b3cecdde536e645e24941f81a)

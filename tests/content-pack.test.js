@@ -450,7 +450,15 @@ test("dakuten and handakuten variants use distinct directional relationships", (
     );
     assert.equal(
         variantRelationships.get("handakuten-of").variantDirection,
-        "down",
+        "left",
+    );
+    assert.deepEqual(
+        new Set(
+            [...variantRelationships.values()].map(
+                ({ variantDirection }) => variantDirection,
+            ),
+        ),
+        new Set(["left", "right"]),
     );
     for (const relationship of variantRelationships.values()) {
         assert.equal(relationship.targetLayer, "characters");

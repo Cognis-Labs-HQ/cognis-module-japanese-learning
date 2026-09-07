@@ -92,7 +92,7 @@ Cognis PR #214 に合わせ、名前空間の所有権、ローカライズ済�
 
 ## 濁点と半濁点の配置分離
 
-濁点付きの子文字は `dakuten-of` 関係を使い、清音の親文字の右側に展開されます。半濁点付きの子文字は `handakuten-of` 関係を使い、親文字の下側に展開されます。そのため、`は` や `ハ` のような親文字でも、2 種類の異体が同じ位置で重ならず、両方表示されます。
+濁点付きの子文字は `dakuten-of` 関係を使い、清音の親文字の右側に展開されます。半濁点付きの子文字は `handakuten-of` 関係を使い、親文字の左側に展開されます。そのため、`は` や `ハ` のような親文字でも、2 種類の異体が同じ位置で重ならず、両方表示されます。
 
 ## コミット
 
@@ -115,3 +115,5 @@ Cognis PR #214 に合わせ、名前空間の所有権、ローカライズ済�
 - [c7a745f](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/c7a745f39078cb5cb4d4206ce20a855aed195a22)
 
 - [5ab8006](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/5ab80067e1e3151a86f648cedf7660167a1f6f15)
+
+- [32ac841](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/32ac8416bbf3676b3cecdde536e645e24941f81a)
