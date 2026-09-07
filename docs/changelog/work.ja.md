@@ -66,6 +66,10 @@ Cognis PR #214 に合わせ、名前空間の所有権、ローカライズ済�
 
 重複していた `romanization`、`reading`、`readings`、`meaning`、`function`、定義言語フィールドを削除しました。発音はライブラリが認識する `pronunciation` フィールドに統一し、漢字・単語・助詞の意味はローカライズ済み定義レコードへの関係で表現します。
 
+## 仮名レコードに基づく漢字の読み
+
+漢字の音読みをカタカナ、訓読みをひらがなで表示し、すべての初期読みを実際の仮名文字レコードへの順序付き参照に展開しました。文字種メタデータでひらがなとカタカナの異体を区別し、ライブラリのレンダラーは参照された仮名を移動可能な構成要素ボックスとして表示できます。
+
 ## コミット
 
 - [a6fa75d](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/a6fa75d15c478b1d8ef1930dcc3c5c29e3938b97)
@@ -76,3 +80,5 @@ Cognis PR #214 に合わせ、名前空間の所有権、ローカライズ済�
 - [db6df0a](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/db6df0a0d71e75892cac726991ab0d5fa9edf172)
 - [530fdfd](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/530fdfdb7cb55b05d316d404ab8e64c33ba0b04c)
 - [549322e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/549322e5e597f186c36ada77d330921e7b335a4d)
+- [1740b0b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/1740b0b0da93d15c450ca82c452bb1fe8698b7e9)
+- [4639371](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/4639371d8fe55c71477aa70087cc4e8a18100438)

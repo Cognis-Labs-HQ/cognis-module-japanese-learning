@@ -1,6 +1,6 @@
 {
     "id": "japanese-core",
-    "version": 5,
+    "version": 6,
     "namespace": "ja",
     "language": "ja",
     "metadata": {
@@ -131,19 +131,21 @@
             ],
             "relationships": [
                 {
-                    "id": "components",
+                    "id": "readings",
                     "targetLayer": "characters",
                     "metadata": {
                         "labels": {
-                            "de": "Bestandteile",
-                            "en": "Components",
-                            "id": "Komponen",
-                            "ja": "構成要素"
+                            "de": "Lesungszeichen",
+                            "en": "Reading Characters",
+                            "id": "Karakter Bacaan",
+                            "ja": "読みの文字"
                         }
                     },
                     "ordered": true,
                     "onDelete": "restrict",
-                    "resolverRole": "explicit"
+                    "resolverRole": "explicit",
+                    "minimum": 1,
+                    "requiredTarget": true
                 },
                 {
                     "id": "definitions",

@@ -3,10 +3,40 @@
         "id": "ja:kanji:nichi",
         "label": "日",
         "fields": {
-            "pronunciation": ["nichi", "jitsu", "hi", "ka"],
+            "pronunciation": ["ニチ", "ジツ", "ひ", "か"],
             "audio": "https://assets.cognis.dev/study/ja/pronunciation/kanji-nichi.mp3"
         },
         "references": [
+            {
+                "entryId": "ja:char:ka:ni",
+                "relation": "readings",
+                "position": 0
+            },
+            {
+                "entryId": "ja:char:ka:chi",
+                "relation": "readings",
+                "position": 1
+            },
+            {
+                "entryId": "ja:char:ka:ji",
+                "relation": "readings",
+                "position": 2
+            },
+            {
+                "entryId": "ja:char:ka:tsu",
+                "relation": "readings",
+                "position": 3
+            },
+            {
+                "entryId": "ja:char:hi",
+                "relation": "readings",
+                "position": 4
+            },
+            {
+                "entryId": "ja:char:ka",
+                "relation": "readings",
+                "position": 5
+            },
             {
                 "entryId": "ja:def:kanji-nichi",
                 "relation": "definitions"
@@ -17,10 +47,30 @@
         "id": "ja:kanji:hon",
         "label": "本",
         "fields": {
-            "pronunciation": ["hon", "moto"],
+            "pronunciation": ["ホン", "もと"],
             "audio": "https://assets.cognis.dev/study/ja/pronunciation/kanji-hon.mp3"
         },
         "references": [
+            {
+                "entryId": "ja:char:ka:ho",
+                "relation": "readings",
+                "position": 0
+            },
+            {
+                "entryId": "ja:char:ka:n",
+                "relation": "readings",
+                "position": 1
+            },
+            {
+                "entryId": "ja:char:mo",
+                "relation": "readings",
+                "position": 2
+            },
+            {
+                "entryId": "ja:char:to",
+                "relation": "readings",
+                "position": 3
+            },
             {
                 "entryId": "ja:def:kanji-hon",
                 "relation": "definitions"
@@ -31,10 +81,25 @@
         "id": "ja:kanji:go",
         "label": "語",
         "fields": {
-            "pronunciation": ["go", "kata"],
+            "pronunciation": ["ゴ", "かた"],
             "audio": "https://assets.cognis.dev/study/ja/pronunciation/kanji-go.mp3"
         },
         "references": [
+            {
+                "entryId": "ja:char:ka:go",
+                "relation": "readings",
+                "position": 0
+            },
+            {
+                "entryId": "ja:char:ka",
+                "relation": "readings",
+                "position": 1
+            },
+            {
+                "entryId": "ja:char:ta",
+                "relation": "readings",
+                "position": 2
+            },
             {
                 "entryId": "ja:def:kanji-go",
                 "relation": "definitions"
@@ -45,10 +110,40 @@
         "id": "ja:kanji:hito",
         "label": "人",
         "fields": {
-            "pronunciation": ["jin", "nin", "hito"],
+            "pronunciation": ["ジン", "ニン", "ひと"],
             "audio": "https://assets.cognis.dev/study/ja/pronunciation/kanji-hito.mp3"
         },
         "references": [
+            {
+                "entryId": "ja:char:ka:ji",
+                "relation": "readings",
+                "position": 0
+            },
+            {
+                "entryId": "ja:char:ka:n",
+                "relation": "readings",
+                "position": 1
+            },
+            {
+                "entryId": "ja:char:ka:ni",
+                "relation": "readings",
+                "position": 2
+            },
+            {
+                "entryId": "ja:char:ka:n",
+                "relation": "readings",
+                "position": 3
+            },
+            {
+                "entryId": "ja:char:hi",
+                "relation": "readings",
+                "position": 4
+            },
+            {
+                "entryId": "ja:char:to",
+                "relation": "readings",
+                "position": 5
+            },
             {
                 "entryId": "ja:def:kanji-hito",
                 "relation": "definitions"

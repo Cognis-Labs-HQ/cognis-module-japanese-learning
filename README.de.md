@@ -42,3 +42,7 @@ Atomare und zusammengesetzte Schrifteinheiten stellen nun erforderliche Aussprac
 ## Bibliotheksnative Bedeutungen
 
 Die doppelten Felder `romanization`, `reading`, `readings`, `meaning`, `function` und die Definitionssprache wurden entfernt. Die Aussprache verwendet nun einheitlich das von der Bibliothek erkannte Feld `pronunciation`; Kanji, Wörter und Partikeln bilden Bedeutungen über Beziehungen zu lokalisierten Definitionsdatensätzen ab.
+
+## Kana-gestützte Kanji-Lesungen
+
+Kanji-Aussprachen stellen On-Lesungen in Katakana und Kun-Lesungen in Hiragana dar, und jede vorinstallierte Lesung wird nun in geordnete Verweise auf ihre tatsächlichen Kana-Zeichendatensätze aufgelöst. Zeichenklassen-Metadaten unterscheiden Hiragana- und Katakana-Varianten, während die Bibliotheksdarstellung referenzierte Kana als navigierbare Komponentenfelder anzeigen kann.

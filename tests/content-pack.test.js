@@ -349,3 +349,70 @@ test("recognized Library fields and definition relationships replace duplicate s
         }
     }
 });
+
+test("kanji readings use kana labels and ordered character references", () => {
+    const { schema, records } = loadPack();
+    const compoundLayer = schema.layers.find(
+        ({ semanticRole }) => semanticRole === "compoundWritingUnit",
+    );
+    const readingRelationship = compoundLayer.relationships.find(
+        ({ id }) => id === "readings",
+    );
+    assert.equal(readingRelationship.targetLayer, "characters");
+    assert.equal(readingRelationship.ordered, true);
+    assert.equal(readingRelationship.requiredTarget, true);
+    assert.equal(
+        compoundLayer.relationships.some(({ id }) => id === "components"),
+        false,
+    );
+
+    const characters = new Map(
+        records
+            .filter(({ layer }) => layer === "characters")
+            .map((record) => [record.id, record]),
+    );
+    for (const kanji of records.filter(
+        ({ layer }) => layer === compoundLayer.id,
+    )) {
+        assert.ok(
+            kanji.fields.pronunciation.every((reading) =>
+                /^[\p{Script=Hiragana}\p{Script=Katakana}ー]+$/u.test(reading),
+            ),
+            `${kanji.id} readings must be presented in kana`,
+        );
+        const readingLabels = kanji.references
+            .filter(({ relation }) => relation === "readings")
+            .sort((left, right) => left.position - right.position)
+            .map(({ entryId }) => characters.get(entryId)?.label)
+            .join("");
+        assert.equal(readingLabels, kanji.fields.pronunciation.join(""));
+        assert.ok(
+            kanji.fields.pronunciation.some((reading) =>
+                /\p{Script=Katakana}/u.test(reading),
+            ),
+            `${kanji.id} requires a katakana on-reading`,
+        );
+        assert.ok(
+            kanji.fields.pronunciation.some((reading) =>
+                /\p{Script=Hiragana}/u.test(reading),
+            ),
+            `${kanji.id} requires a hiragana kun-reading`,
+        );
+    }
+});
+
+test("character classes distinguish hiragana and katakana variations", () => {
+    const { records } = loadPack();
+    const characters = records.filter(({ layer }) => layer === "characters");
+    const variations = characters.filter(
+        ({ fields }) => fields.pronunciation[0] === "a",
+    );
+    assert.deepEqual(
+        new Set(variations.map(({ fields }) => fields.character_class)),
+        new Set(["hiragana", "katakana"]),
+    );
+    assert.deepEqual(
+        new Set(variations.map(({ label }) => label)),
+        new Set(["あ", "ア"]),
+    );
+});
