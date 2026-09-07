@@ -92,7 +92,7 @@ Das Inhaltspaket enthält nun alle 46 grundlegenden Gojūon-Einträge in Hiragan
 
 ## Getrennte Platzierung der Diakritika
 
-Dakuten-Kinder verwenden die Beziehung `dakuten-of` und werden rechts neben ihrem unmarkierten Elternzeichen aufgeklappt. Handakuten-Kinder verwenden `handakuten-of` und werden links davon aufgeklappt, sodass Elternzeichen wie `は` und `ハ` beide Varianten sichtbar behalten, statt sie an derselben Position zu überlagern.
+Beide Beziehungen deklarieren ausdrücklich `variant: true`, wie es bei vorhandenem `variantDirection` erforderlich ist. Dakuten-Kinder verwenden die Beziehung `dakuten-of` und werden rechts neben ihrem unmarkierten Elternzeichen aufgeklappt. Handakuten-Kinder verwenden `handakuten-of` und werden links davon aufgeklappt, sodass Elternzeichen wie `は` und `ハ` beide Varianten sichtbar behalten, statt sie an derselben Position zu überlagern.
 
 ## Commits
 
@@ -117,3 +117,5 @@ Dakuten-Kinder verwenden die Beziehung `dakuten-of` und werden rechts neben ihre
 - [5ab8006](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/5ab80067e1e3151a86f648cedf7660167a1f6f15)
 
 - [32ac841](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/32ac8416bbf3676b3cecdde536e645e24941f81a)
+
+- [ed1fd35](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/ed1fd35e5235f79773ba91bd1d28377365509e2b)

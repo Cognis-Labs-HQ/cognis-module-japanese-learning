@@ -1,6 +1,6 @@
 {
     "id": "japanese-core",
-    "version": 12,
+    "version": 13,
     "namespace": "ja",
     "language": "ja",
     "metadata": {
@@ -99,6 +99,7 @@
                     },
                     "maximum": 1,
                     "onDelete": "detach",
+                    "variant": true,
                     "variantDirection": "right"
                 },
                 {
@@ -114,6 +115,7 @@
                     },
                     "maximum": 1,
                     "onDelete": "detach",
+                    "variant": true,
                     "variantDirection": "left"
                 }
             ]

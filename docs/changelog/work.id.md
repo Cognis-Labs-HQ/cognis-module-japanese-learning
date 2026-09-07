@@ -92,7 +92,7 @@ Paket konten kini memuat seluruh 46 entri gojūon dasar dalam hiragana dan katak
 
 ## Penempatan diakritik terpisah
 
-Anak dakuten menggunakan relasi `dakuten-of` dan dibuka di sebelah kanan induk tanpa tandanya. Anak handakuten menggunakan `handakuten-of` dan dibuka di sebelah kirinya, sehingga induk seperti `は` dan `ハ` tetap menampilkan kedua varian tanpa menumpuknya pada satu posisi.
+Kedua relasi secara eksplisit mendeklarasikan `variant: true`, sebagaimana diwajibkan ketika `variantDirection` ada. Anak dakuten menggunakan relasi `dakuten-of` dan dibuka di sebelah kanan induk tanpa tandanya. Anak handakuten menggunakan `handakuten-of` dan dibuka di sebelah kirinya, sehingga induk seperti `は` dan `ハ` tetap menampilkan kedua varian tanpa menumpuknya pada satu posisi.
 
 ## Komit
 
@@ -117,3 +117,5 @@ Anak dakuten menggunakan relasi `dakuten-of` dan dibuka di sebelah kanan induk t
 - [5ab8006](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/5ab80067e1e3151a86f648cedf7660167a1f6f15)
 
 - [32ac841](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/32ac8416bbf3676b3cecdde536e645e24941f81a)
+
+- [ed1fd35](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/ed1fd35e5235f79773ba91bd1d28377365509e2b)

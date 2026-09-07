@@ -464,6 +464,7 @@ test("dakuten and handakuten variants use distinct directional relationships", (
         assert.equal(relationship.targetLayer, "characters");
         assert.equal(relationship.maximum, 1);
         assert.equal(relationship.onDelete, "detach");
+        assert.equal(relationship.variant, true);
         assert.equal(relationship.resolverRole, undefined);
     }
 

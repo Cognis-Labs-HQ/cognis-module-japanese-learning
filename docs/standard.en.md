@@ -66,4 +66,4 @@ The content pack now includes all 46 basic gojūon entries in both hiragana and 
 
 ## Distinct diacritic placement
 
-Dakuten children use the `dakuten-of` relationship and unfold to the right of their unmarked parent. Handakuten children use `handakuten-of` and unfold to its left, so parents such as `は` and `ハ` visibly retain both variants instead of stacking them in one position.
+Both relationships explicitly declare `variant: true`, as required whenever `variantDirection` is present. Dakuten children use the `dakuten-of` relationship and unfold to the right of their unmarked parent. Handakuten children use `handakuten-of` and unfold to its left, so parents such as `は` and `ハ` visibly retain both variants instead of stacking them in one position.
