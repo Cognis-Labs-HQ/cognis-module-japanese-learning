@@ -1,6 +1,6 @@
 {
     "id": "japanese-core",
-    "version": 19,
+    "version": 20,
     "namespace": "ja",
     "language": "ja",
     "metadata": {
@@ -100,8 +100,7 @@
                     },
                     "maximum": 1,
                     "onDelete": "detach",
-                    "variant": true,
-                    "variantDirection": "right"
+                    "variant": true
                 },
                 {
                     "id": "handakuten-of",
@@ -116,8 +115,52 @@
                     },
                     "maximum": 1,
                     "onDelete": "detach",
-                    "variant": true,
-                    "variantDirection": "left"
+                    "variant": true
+                },
+                {
+                    "id": "small-form-of",
+                    "targetLayer": "characters",
+                    "metadata": {
+                        "labels": {
+                            "de": "Kleinform von",
+                            "en": "Small Form Of",
+                            "id": "Bentuk Kecil Dari",
+                            "ja": "小書きの親"
+                        }
+                    },
+                    "maximum": 1,
+                    "onDelete": "detach",
+                    "variant": true
+                },
+                {
+                    "id": "contracted-of",
+                    "targetLayer": "characters",
+                    "metadata": {
+                        "labels": {
+                            "de": "Kontrahierte Lautform von",
+                            "en": "Contracted Sound Of",
+                            "id": "Bunyi Gabungan Dari",
+                            "ja": "拗音の親"
+                        }
+                    },
+                    "maximum": 1,
+                    "onDelete": "detach",
+                    "variant": true
+                },
+                {
+                    "id": "geminated-of",
+                    "targetLayer": "characters",
+                    "metadata": {
+                        "labels": {
+                            "de": "Geminierte Lautform von",
+                            "en": "Geminated Sound Of",
+                            "id": "Bunyi Rangkap Dari",
+                            "ja": "促音形の親"
+                        }
+                    },
+                    "maximum": 1,
+                    "onDelete": "detach",
+                    "variant": true
                 }
             ],
             "grid": {

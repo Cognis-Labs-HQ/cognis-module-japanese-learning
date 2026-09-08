@@ -74,13 +74,13 @@ Each kanji reading is a distinct vocabulary record whose ordered `kana-spelling`
 
 Character-script and JLPT badge filters now declare named, mutually exclusive filter groups supported by Library 2.6. The module intentionally does not enable `allowBootstrapFailure`: content ingestion and publication of `study:language:ja` are its essential runtime work, and keeping it enabled without them would expose a nonfunctional module. Cognis PR #216 now updates existing entries, assets, and references during repeated content-pack imports, which addresses the reported duplicate-reference failure at its persistence boundary.
 
-## Directional tenten variants
+## Nested kana variants
 
-Only dakuten (tenten) forms use the directional parent/child relationship. The seeded `じ`/`ご` and `ジ`/`ゴ` records reference `し`/`こ` and `シ`/`コ` respectively within their own character table. Hiragana and katakana counterparts remain independent records and are not modeled as parent and child.
+Kana variants remain within their own writing system and now cover dakuten, handakuten, small kana, standard yōon contractions, and common sokuon geminations. Parent chains preserve linguistic structure, including `し` → `じ` → `じゃ`, while hiragana and katakana remain independent.
 
 ## Latest Library presentation contract
 
-Directional tenten links no longer declare a resolver role, so the Library uses them only to unfold child cards and does not duplicate the parent as a constituent box. Kanji reading and word spelling relationships retain resolver roles for navigable constituents. The current Library places writing-unit pronunciation beside labels in cards and detail titles, and restores missing module content on the next enable unless a user explicitly blacklists its content hash.
+Variant relationships have no resolver role or fixed direction. The Library dynamically assigns left, upper, or right positions and recursively unfolds nested children, while Kanji readings and word spellings retain resolver roles for navigable constituents.
 
 ## Compositions and definitions
 
@@ -88,15 +88,15 @@ Resolver roles are now reserved for true compositions: kanji readings, word spel
 
 ## Complete kana tables
 
-The content pack now includes all 46 basic gojūon entries in both hiragana and katakana, plus every standard dakuten and handakuten form. Each of the 25 voiced or semi-voiced children per script links to its unmarked parent in the same character table, including `が` → `か`, `じ` → `し`, `ぱ` → `は` and their katakana equivalents.
+Alongside all 46 basic gojūon entries and 25 dakuten or handakuten forms per script, the pack includes small kana, all standard yōon series, and common sokuon geminations. Examples include `ひゃ`, `しゅ`, `じゃ`, and `って`, plus their katakana equivalents.
 
-## Distinct diacritic placement
+## Dynamic variant placement
 
-Both relationships explicitly declare `variant: true`, as required whenever `variantDirection` is present. Dakuten children use the `dakuten-of` relationship and unfold to the right of their unmarked parent. Handakuten children use `handakuten-of` and unfold to its left, so parents such as `は` and `ハ` visibly retain both variants instead of stacking them in one position.
+Every character parent relationship declares only `variant: true`; none requests `variantDirection`. This lets the Library choose an available position at runtime and display nested chains without module-authored slot collisions.
 
 ## Standard kana grid
 
-The character layer requests a five-card row and lists both scripts in standard gojūon order. The grid contains only base-kana records, while dakuten and handakuten remain directional children around their unmarked parent.
+The character layer requests a five-card row and lists both scripts in standard gojūon order. The grid contains only base-kana records; all small, voiced, contracted, and geminated forms unfold as variant descendants of their primary character.
 
 ## Definition-backed cards
 
@@ -155,3 +155,5 @@ Aligned ordered compounds with the latest Library preflight restrictions. Every 
 - [06f4b09](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/06f4b09449d44ca464c31f11464fd474bddf4fcd)
 
 - [0912c79](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/0912c79cff5ba0fce67cd2c9ec6e10da11331a64)
+
+- [a8e559e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/a8e559e3bfad5bbf1c1778dd4a9505c83bc04f8d)

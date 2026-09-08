@@ -464,7 +464,8 @@ test("character classes distinguish hiragana and katakana variations", () => {
     const { records } = loadPack();
     const characters = records.filter(({ layer }) => layer === "characters");
     const variations = characters.filter(
-        ({ fields }) => fields.pronunciation[0] === "a",
+        ({ fields, references }) =>
+            fields.pronunciation[0] === "a" && !references,
     );
     assert.deepEqual(
         new Set(variations.map(({ fields }) => fields.character_class)),
@@ -491,38 +492,33 @@ test("badge filters use the current grouped exclusivity contract", () => {
     }
 });
 
-test("dakuten and handakuten variants use distinct directional relationships", () => {
+test("character variants use dynamically placed nested relationships", () => {
     const { schema, records } = loadPack();
     const characterLayer = schema.layers.find(
         ({ semanticRole }) => semanticRole === "atomicWritingUnit",
     );
-    const variantRelationships = new Map(
+    const relationships = new Map(
         characterLayer.relationships.map((relationship) => [
             relationship.id,
             relationship,
         ]),
     );
-    assert.equal(
-        variantRelationships.get("dakuten-of").variantDirection,
-        "right",
-    );
-    assert.equal(
-        variantRelationships.get("handakuten-of").variantDirection,
-        "left",
-    );
     assert.deepEqual(
-        new Set(
-            [...variantRelationships.values()].map(
-                ({ variantDirection }) => variantDirection,
-            ),
-        ),
-        new Set(["left", "right"]),
+        new Set(relationships.keys()),
+        new Set([
+            "dakuten-of",
+            "handakuten-of",
+            "small-form-of",
+            "contracted-of",
+            "geminated-of",
+        ]),
     );
-    for (const relationship of variantRelationships.values()) {
+    for (const relationship of relationships.values()) {
         assert.equal(relationship.targetLayer, "characters");
         assert.equal(relationship.maximum, 1);
         assert.equal(relationship.onDelete, "detach");
         assert.equal(relationship.variant, true);
+        assert.equal(relationship.variantDirection, undefined);
         assert.equal(relationship.resolverRole, undefined);
     }
 
@@ -531,129 +527,81 @@ test("dakuten and handakuten variants use distinct directional relationships", (
             .filter(({ layer }) => layer === characterLayer.id)
             .map((entry) => [entry.id, entry]),
     );
-    const expectedVariants = new Map([
-        ...[
-            ["が", "か"],
-            ["ぎ", "き"],
-            ["ぐ", "く"],
-            ["げ", "け"],
-            ["ご", "こ"],
-            ["ざ", "さ"],
-            ["じ", "し"],
-            ["ず", "す"],
-            ["ぜ", "せ"],
-            ["ぞ", "そ"],
-            ["だ", "た"],
-            ["ぢ", "ち"],
-            ["づ", "つ"],
-            ["で", "て"],
-            ["ど", "と"],
-            ["ば", "は"],
-            ["び", "ひ"],
-            ["ぶ", "ふ"],
-            ["べ", "へ"],
-            ["ぼ", "ほ"],
-            ["ぱ", "は"],
-            ["ぴ", "ひ"],
-            ["ぷ", "ふ"],
-            ["ぺ", "へ"],
-            ["ぽ", "ほ"],
-            ["ガ", "カ"],
-            ["ギ", "キ"],
-            ["グ", "ク"],
-            ["ゲ", "ケ"],
-            ["ゴ", "コ"],
-            ["ザ", "サ"],
-            ["ジ", "シ"],
-            ["ズ", "ス"],
-            ["ゼ", "セ"],
-            ["ゾ", "ソ"],
-            ["ダ", "タ"],
-            ["ヂ", "チ"],
-            ["ヅ", "ツ"],
-            ["デ", "テ"],
-            ["ド", "ト"],
-            ["バ", "ハ"],
-            ["ビ", "ヒ"],
-            ["ブ", "フ"],
-            ["ベ", "ヘ"],
-            ["ボ", "ホ"],
-            ["パ", "ハ"],
-            ["ピ", "ヒ"],
-            ["プ", "フ"],
-            ["ペ", "ヘ"],
-            ["ポ", "ホ"],
-        ],
-    ]);
-    const variantRelationIds = new Set(["dakuten-of", "handakuten-of"]);
-    const variantChildren = [...characters.values()].filter((entry) =>
-        (entry.references ?? []).some(({ relation }) =>
-            variantRelationIds.has(relation),
-        ),
-    );
-    assert.equal(variantChildren.length, expectedVariants.size);
-    for (const child of variantChildren) {
-        const references = child.references.filter(({ relation }) =>
-            variantRelationIds.has(relation),
-        );
-        assert.equal(references.length, 1, `${child.id} requires one parent`);
+    for (const child of [...characters.values()].filter(
+        ({ references }) => references?.length,
+    )) {
         assert.equal(
-            references[0].relation,
-            child.fields.pronunciation[0].startsWith("p")
-                ? "handakuten-of"
-                : "dakuten-of",
+            child.references.length,
+            1,
+            `${child.id} requires one parent`,
         );
-        const parent = characters.get(references[0].entryId);
-        assert.equal(parent?.label, expectedVariants.get(child.label));
+        assert.ok(relationships.has(child.references[0].relation));
+        const parent = characters.get(child.references[0].entryId);
         assert.equal(
             parent.fields.character_class,
             child.fields.character_class,
-            `${child.id} must stay in its own character table`,
         );
     }
-    for (const parentLabel of ["は", "ハ"]) {
-        const parent = [...characters.values()].find(
-            ({ label }) => label === parentLabel,
-        );
-        const children = variantChildren.filter(({ references }) =>
-            references.some(({ entryId }) => entryId === parent.id),
-        );
-        assert.deepEqual(
-            new Set(children.map(({ references }) => references[0].relation)),
-            new Set(["dakuten-of", "handakuten-of"]),
-        );
-    }
-    for (const child of [...characters.values()].filter(({ label }) =>
-        ["ア", "イ", "ウ", "エ", "オ"].includes(label),
-    )) {
-        assert.equal(child.references, undefined);
+
+    const expectChain = (labels) => {
+        for (let index = 1; index < labels.length; index += 1) {
+            const child = [...characters.values()].find(
+                ({ label }) => label === labels[index],
+            );
+            const parent = characters.get(child.references[0].entryId);
+            assert.equal(parent.label, labels[index - 1]);
+        }
+    };
+    for (const chain of [
+        ["し", "じ", "じゃ"],
+        ["ひ", "ひゃ"],
+        ["て", "って"],
+        ["シ", "ジ", "ジャ"],
+        ["ヒ", "ヒャ"],
+        ["テ", "ッテ"],
+    ]) {
+        expectChain(chain);
     }
 });
 
-test("directional variants remain separate from constituent resolvers", () => {
-    const { schema } = loadPack();
-    const characterLayer = schema.layers.find(
-        ({ semanticRole }) => semanticRole === "atomicWritingUnit",
-    );
-    const variantRelationships = characterLayer.relationships.filter(
-        ({ variantDirection }) => variantDirection,
-    );
-    assert.deepEqual(
-        variantRelationships.map(({ id }) => id),
-        ["dakuten-of", "handakuten-of"],
-    );
-    for (const relationship of variantRelationships) {
-        assert.equal(relationship.resolverRole, undefined);
+test("Kana variants include complete small, yoon, and sokuon sets", () => {
+    const { records } = loadPack();
+    const characters = records.filter(({ layer }) => layer === "characters");
+    const expectedByClass = {
+        hiragana: {
+            "small-form-of": "ぁ ぃ ぅ ぇ ぉ ゃ ゅ ょ っ ゎ",
+            "contracted-of":
+                "きゃ きゅ きょ ぎゃ ぎゅ ぎょ しゃ しゅ しょ じゃ じゅ じょ ちゃ ちゅ ちょ にゃ にゅ にょ ひゃ ひゅ ひょ びゃ びゅ びょ ぴゃ ぴゅ ぴょ みゃ みゅ みょ りゃ りゅ りょ",
+            "geminated-of":
+                "っか っき っく っけ っこ っさ っし っす っせ っそ った っち っつ って っと っぱ っぴ っぷ っぺ っぽ",
+        },
+        katakana: {
+            "small-form-of": "ァ ィ ゥ ェ ォ ャ ュ ョ ッ ヮ ヵ ヶ",
+            "contracted-of":
+                "キャ キュ キョ ギャ ギュ ギョ シャ シュ ショ ジャ ジュ ジョ チャ チュ チョ ニャ ニュ ニョ ヒャ ヒュ ヒョ ビャ ビュ ビョ ピャ ピュ ピョ ミャ ミュ ミョ リャ リュ リョ",
+            "geminated-of":
+                "ッカ ッキ ック ッケ ッコ ッサ ッシ ッス ッセ ッソ ッタ ッチ ッツ ッテ ット ッパ ッピ ップ ッペ ッポ",
+        },
+    };
+    for (const [characterClass, expectedByRelation] of Object.entries(
+        expectedByClass,
+    )) {
+        for (const [relation, expectedLabels] of Object.entries(
+            expectedByRelation,
+        )) {
+            const labels = characters
+                .filter(
+                    ({ fields, references }) =>
+                        fields.character_class === characterClass &&
+                        references?.[0].relation === relation,
+                )
+                .map(({ label }) => label);
+            assert.deepEqual(
+                new Set(labels),
+                new Set(expectedLabels.split(" ")),
+            );
+        }
     }
-
-    const compoundLayer = schema.layers.find(
-        ({ semanticRole }) => semanticRole === "compoundWritingUnit",
-    );
-    assert.equal(
-        compoundLayer.relationships.find(({ id }) => id === "readings")
-            .resolverRole,
-        "explicit",
-    );
 });
 
 test("lexical and sentence pronunciation use the Library placement field", () => {
@@ -799,7 +747,7 @@ test("hiragana and katakana include complete gojuon and voiced tables", () => {
         const table = characters.filter(
             ({ fields }) => fields.character_class === characterClass,
         );
-        assert.equal(table.length, 71);
+        assert.equal(table.length, characterClass === "hiragana" ? 134 : 136);
         const baseEntries = table.filter(
             (entry) => !(entry.references ?? []).length,
         );
@@ -808,11 +756,14 @@ test("hiragana and katakana include complete gojuon and voiced tables", () => {
             new Set(baseEntries.map(({ fields }) => fields.pronunciation[0])),
             new Set(basePronunciations),
         );
-        const voicedEntries = table.filter(
+        const variantEntries = table.filter(
             (entry) => (entry.references ?? []).length,
         );
-        assert.equal(voicedEntries.length, 25);
-        for (const variant of voicedEntries) {
+        assert.equal(
+            variantEntries.length,
+            characterClass === "hiragana" ? 88 : 90,
+        );
+        for (const variant of variantEntries) {
             assert.equal(variant.references.length, 1);
             const parent = characters.find(
                 ({ id }) => id === variant.references[0].entryId,
