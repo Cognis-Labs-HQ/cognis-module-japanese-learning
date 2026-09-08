@@ -73,12 +73,16 @@ Beide Beziehungen deklarieren ausdrücklich `variant: true`, wie es bei vorhande
 
 ## Standardmäßiges Kana-Raster
 
-Die Zeichenebene fordert Zeilen mit fünf Karten an und listet beide Schriftsysteme in der üblichen Gojūon-Reihenfolge auf. Ausdrückliche Leerzellen bewahren die Lücken in der `y`- und `w`-Zeile, während Dakuten und Handakuten als gerichtete Kinder um ihr unmarkiertes Elternzeichen angeordnet bleiben, statt doppelte Tabellenzellen zu belegen.
+Die Zeichenebene fordert Zeilen mit fünf Karten an und listet beide Schriftsysteme in der üblichen Gojūon-Reihenfolge auf. Das Raster enthält nur die grundlegenden Kana-Datensätze; Dakuten und Handakuten bleiben gerichtete Kinder um ihr unmarkiertes Elternzeichen.
 
-## Definitionsgestützte Karten und ausdrückliche Rasterlücken
+## Definitionsgestützte Karten
 
-An den neuesten Darstellungsvertrag der Bibliothek angepasst: Wörter, Partikeln und Sätze fordern nun lokalisierten, definitionsgestützten Kartentext an, und jeder solche Eintrag besitzt einen erforderlichen Definitionsverweis. Lücken in der Kana-Tabelle verwenden ausdrückliche Platzhalter `{ "blank": true }` anstelle veralteter Nullwerte.
+An den neuesten Darstellungsvertrag der Bibliothek angepasst: Wörter, Partikeln und Sätze fordern nun lokalisierten, definitionsgestützten Kartentext an, und jeder solche Eintrag besitzt einen erforderlichen Definitionsverweis.
 
 ## Japanischspezifische Ebenenbezeichnungen
 
 Die erzeugten Bibliotheksregister verwenden nun fachbezogene Modulbezeichnungen: Kana für atomare Zeichen, Kanji für zusammengesetzte Schrifteinheiten und Wortschatz für Wörter. Kanji-Lesungen verweisen auf gruppierte Wortschatzdatensätze statt auf eine abgeflachte Folge von Zeichenverweisen.
+
+## Filtersichere Kana-Reihenfolge
+
+Unbedingte Leerplatzhalter zwischen den Hiragana- und Katakana-Folgen wurden entfernt. Wenn der Schriftsystemfilter eine Schrift ausblendet, beginnt die ausgewählte Tabelle nun in der ersten Rasterzelle, statt Leerzellen der ausgeblendeten Tabelle zu übernehmen.

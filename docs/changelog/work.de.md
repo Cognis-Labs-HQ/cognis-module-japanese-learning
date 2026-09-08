@@ -96,15 +96,19 @@ Beide Beziehungen deklarieren ausdrücklich `variant: true`, wie es bei vorhande
 
 ## Standardmäßiges Kana-Raster
 
-Die Zeichenebene fordert Zeilen mit fünf Karten an und listet beide Schriftsysteme in der üblichen Gojūon-Reihenfolge auf. Ausdrückliche Leerzellen bewahren die Lücken in der `y`- und `w`-Zeile, während Dakuten und Handakuten als gerichtete Kinder um ihr unmarkiertes Elternzeichen angeordnet bleiben, statt doppelte Tabellenzellen zu belegen.
+Die Zeichenebene fordert Zeilen mit fünf Karten an und listet beide Schriftsysteme in der üblichen Gojūon-Reihenfolge auf. Das Raster enthält nur die grundlegenden Kana-Datensätze; Dakuten und Handakuten bleiben gerichtete Kinder um ihr unmarkiertes Elternzeichen.
 
-## Definitionsgestützte Karten und ausdrückliche Rasterlücken
+## Definitionsgestützte Karten
 
-An den neuesten Darstellungsvertrag der Bibliothek angepasst: Wörter, Partikeln und Sätze fordern nun lokalisierten, definitionsgestützten Kartentext an, und jeder solche Eintrag besitzt einen erforderlichen Definitionsverweis. Lücken in der Kana-Tabelle verwenden ausdrückliche Platzhalter `{ "blank": true }` anstelle veralteter Nullwerte.
+An den neuesten Darstellungsvertrag der Bibliothek angepasst: Wörter, Partikeln und Sätze fordern nun lokalisierten, definitionsgestützten Kartentext an, und jeder solche Eintrag besitzt einen erforderlichen Definitionsverweis.
 
 ## Japanischspezifische Ebenenbezeichnungen
 
 Die erzeugten Bibliotheksregister verwenden nun fachbezogene Modulbezeichnungen: Kana für atomare Zeichen, Kanji für zusammengesetzte Schrifteinheiten und Wortschatz für Wörter. Kanji-Lesungen verweisen auf gruppierte Wortschatzdatensätze statt auf eine abgeflachte Folge von Zeichenverweisen.
+
+## Filtersichere Kana-Reihenfolge
+
+Unbedingte Leerplatzhalter zwischen den Hiragana- und Katakana-Folgen wurden entfernt. Wenn der Schriftsystemfilter eine Schrift ausblendet, beginnt die ausgewählte Tabelle nun in der ersten Rasterzelle, statt Leerzellen der ausgeblendeten Tabelle zu übernehmen.
 
 ## Commits
 
@@ -137,3 +141,5 @@ Die erzeugten Bibliotheksregister verwenden nun fachbezogene Modulbezeichnungen:
 - [2a56248](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/2a562481c79002aa62a1ab51de91b7543c1acd18)
 
 - [f6ace9e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/f6ace9e86c0c27634edeba5ffb98e429bfd2be4f)
+
+- [64682aa](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/64682aa25ecd32bf106613dec2b8a26812e1fba5)

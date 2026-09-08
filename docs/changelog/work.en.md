@@ -96,15 +96,19 @@ Both relationships explicitly declare `variant: true`, as required whenever `var
 
 ## Standard kana grid
 
-The character layer requests a five-card row and lists both scripts in standard gojūon order. Explicit empty cells preserve the gaps in the `y` and `w` rows, while dakuten and handakuten remain directional children around their unmarked parent rather than taking duplicate chart cells.
+The character layer requests a five-card row and lists both scripts in standard gojūon order. The grid contains only base-kana records, while dakuten and handakuten remain directional children around their unmarked parent.
 
-## Definition-backed cards and explicit grid gaps
+## Definition-backed cards
 
-Aligned with the latest Library presentation contract: words, particles, and sentences now request localized definition-backed card text and every such entry has a required definition reference. Kana chart gaps use explicit `{ "blank": true }` placeholders rather than legacy null values.
+Aligned with the latest Library presentation contract: words, particles, and sentences now request localized definition-backed card text and every such entry has a required definition reference.
 
 ## Japanese-specific layer labels
 
 The generated Library tabs now use module-owned subject labels: Kana for atomic characters, Kanji for compound writing units, and Vocabulary for words. Kanji readings target grouped vocabulary records rather than a flattened run of character references.
+
+## Filter-safe kana ordering
+
+Removed unconditional blank placeholders between the hiragana and katakana sequences. When the writing-system filter hides one script, the selected table now begins in the first grid cell instead of inheriting blank cells from the hidden table.
 
 ## Commits
 
@@ -137,3 +141,5 @@ The generated Library tabs now use module-owned subject labels: Kana for atomic 
 - [2a56248](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/2a562481c79002aa62a1ab51de91b7543c1acd18)
 
 - [f6ace9e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/f6ace9e86c0c27634edeba5ffb98e429bfd2be4f)
+
+- [64682aa](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/64682aa25ecd32bf106613dec2b8a26812e1fba5)

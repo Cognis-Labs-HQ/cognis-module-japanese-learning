@@ -70,12 +70,16 @@ Both relationships explicitly declare `variant: true`, as required whenever `var
 
 ## Standard kana grid
 
-The character layer requests a five-card row and lists both scripts in standard gojūon order. Explicit empty cells preserve the gaps in the `y` and `w` rows, while dakuten and handakuten remain directional children around their unmarked parent rather than taking duplicate chart cells.
+The character layer requests a five-card row and lists both scripts in standard gojūon order. The grid contains only base-kana records, while dakuten and handakuten remain directional children around their unmarked parent.
 
-## Definition-backed cards and explicit grid gaps
+## Definition-backed cards
 
-Aligned with the latest Library presentation contract: words, particles, and sentences now request localized definition-backed card text and every such entry has a required definition reference. Kana chart gaps use explicit `{ "blank": true }` placeholders rather than legacy null values.
+Aligned with the latest Library presentation contract: words, particles, and sentences now request localized definition-backed card text and every such entry has a required definition reference.
 
 ## Japanese-specific layer labels
 
 The generated Library tabs now use module-owned subject labels: Kana for atomic characters, Kanji for compound writing units, and Vocabulary for words. Kanji readings target grouped vocabulary records rather than a flattened run of character references.
+
+## Filter-safe kana ordering
+
+Removed unconditional blank placeholders between the hiragana and katakana sequences. When the writing-system filter hides one script, the selected table now begins in the first grid cell instead of inheriting blank cells from the hidden table.

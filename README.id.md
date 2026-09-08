@@ -73,12 +73,16 @@ Kedua relasi secara eksplisit mendeklarasikan `variant: true`, sebagaimana diwaj
 
 ## Kisi kana standar
 
-Lapisan karakter meminta baris berisi lima kartu dan mencantumkan kedua sistem tulisan dalam urutan gojūon standar. Sel kosong eksplisit mempertahankan celah pada baris `y` dan `w`, sedangkan dakuten dan handakuten tetap menjadi anak berarah di sekitar induk tanpa tanda alih-alih menempati sel bagan duplikat.
+Lapisan karakter meminta baris berisi lima kartu dan mencantumkan kedua sistem tulisan dalam urutan gojūon standar. Kisi hanya memuat rekaman kana dasar, sedangkan dakuten dan handakuten tetap menjadi anak berarah di sekitar induk tanpa tanda.
 
-## Kartu berbasis definisi dan celah kisi eksplisit
+## Kartu berbasis definisi
 
-Diselaraskan dengan kontrak tampilan Pustaka terbaru: kata, partikel, dan kalimat kini meminta teks kartu terlokalisasi yang berbasis definisi, dan setiap entri tersebut memiliki referensi definisi wajib. Celah bagan kana memakai penanda eksplisit `{ "blank": true }`, bukan nilai null lama.
+Diselaraskan dengan kontrak tampilan Pustaka terbaru: kata, partikel, dan kalimat kini meminta teks kartu terlokalisasi yang berbasis definisi, dan setiap entri tersebut memiliki referensi definisi wajib.
 
 ## Label lapisan khusus bahasa Jepang
 
 Tab Pustaka yang dihasilkan kini memakai label bidang milik modul: Kana untuk karakter atomik, Kanji untuk unit tulisan gabungan, dan Kosakata untuk kata. Bacaan kanji menargetkan entri kosakata yang dikelompokkan, bukan rangkaian referensi karakter yang diratakan.
+
+## Urutan kana yang aman untuk filter
+
+Penanda kosong tanpa syarat di antara urutan hiragana dan katakana telah dihapus. Saat filter sistem tulisan menyembunyikan salah satu aksara, tabel yang dipilih kini dimulai dari sel kisi pertama tanpa mewarisi sel kosong dari tabel tersembunyi.
