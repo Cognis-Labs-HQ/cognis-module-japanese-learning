@@ -68,7 +68,7 @@ Removed duplicate `romanization`, `reading`, `readings`, `meaning`, `function`, 
 
 ## Kana-backed kanji readings
 
-Kanji pronunciations and their constituent links consistently use hiragana records, including on-readings, so a definition such as `日` does not surface unrelated katakana components. Every seeded reading expands into ordered references to its exact hiragana characters. Katakana characters retain separate IDs and links and remain available for genuinely katakana content.
+Each kanji reading is a distinct vocabulary record whose ordered `kana-spelling` references group its exact hiragana characters. Kanji link to those reading records in pronunciation order, so multi-kana readings remain separate from one another. Katakana characters retain separate IDs and links and remain available for genuinely katakana content.
 
 ## Current Library activation contract
 
@@ -102,6 +102,10 @@ The character layer requests a five-card row and lists both scripts in standard 
 
 Aligned with the latest Library presentation contract: words, particles, and sentences now request localized definition-backed card text and every such entry has a required definition reference. Kana chart gaps use explicit `{ "blank": true }` placeholders rather than legacy null values.
 
+## Japanese-specific layer labels
+
+The generated Library tabs now use module-owned subject labels: Kana for atomic characters, Kanji for compound writing units, and Vocabulary for words. Kanji readings target grouped vocabulary records rather than a flattened run of character references.
+
 ## Commits
 
 - [a6fa75d](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/a6fa75d15c478b1d8ef1930dcc3c5c29e3938b97)
@@ -131,3 +135,5 @@ Aligned with the latest Library presentation contract: words, particles, and sen
 - [e5c86a4](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/e5c86a4cf17408e92c5021015ff4404c2e5802b6)
 
 - [2a56248](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/2a562481c79002aa62a1ab51de91b7543c1acd18)
+
+- [f6ace9e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/f6ace9e86c0c27634edeba5ffb98e429bfd2be4f)

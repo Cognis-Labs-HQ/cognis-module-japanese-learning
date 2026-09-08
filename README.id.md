@@ -45,7 +45,7 @@ Kolom duplikat `romanization`, `reading`, `readings`, `meaning`, `function`, dan
 
 ## Bacaan kanji berbasis kana
 
-Pelafalan kanji dan tautan unsurnya memakai data hiragana secara konsisten, termasuk untuk on-yomi, sehingga definisi seperti `日` tidak menampilkan unsur katakana yang tidak terkait. Setiap bacaan bawaan diuraikan menjadi referensi berurutan ke karakter hiragana yang tepat. Karakter katakana mempertahankan ID dan tautan tersendiri serta tetap tersedia bagi konten yang benar-benar ditulis dalam katakana.
+Setiap bacaan kanji merupakan entri kosakata tersendiri dengan referensi `kana-spelling` berurutan yang mengelompokkan karakter hiragana persisnya. Kanji menautkan entri bacaan tersebut menurut urutan pelafalan, sehingga bacaan multikana tetap terpisah satu sama lain. Karakter katakana mempertahankan ID dan tautan tersendiri serta tetap tersedia bagi konten yang benar-benar ditulis dalam katakana.
 
 ## Kontrak aktivasi Pustaka terkini
 
@@ -78,3 +78,7 @@ Lapisan karakter meminta baris berisi lima kartu dan mencantumkan kedua sistem t
 ## Kartu berbasis definisi dan celah kisi eksplisit
 
 Diselaraskan dengan kontrak tampilan Pustaka terbaru: kata, partikel, dan kalimat kini meminta teks kartu terlokalisasi yang berbasis definisi, dan setiap entri tersebut memiliki referensi definisi wajib. Celah bagan kana memakai penanda eksplisit `{ "blank": true }`, bukan nilai null lama.
+
+## Label lapisan khusus bahasa Jepang
+
+Tab Pustaka yang dihasilkan kini memakai label bidang milik modul: Kana untuk karakter atomik, Kanji untuk unit tulisan gabungan, dan Kosakata untuk kata. Bacaan kanji menargetkan entri kosakata yang dikelompokkan, bukan rangkaian referensi karakter yang diratakan.

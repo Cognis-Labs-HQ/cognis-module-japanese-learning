@@ -45,7 +45,7 @@ Die doppelten Felder `romanization`, `reading`, `readings`, `meaning`, `function
 
 ## Kana-gestützte Kanji-Lesungen
 
-Kanji-Aussprachen und ihre Bestandteilsverweise verwenden einheitlich Hiragana-Datensätze, auch für On-Lesungen, sodass eine Definition wie `日` keine unbeteiligten Katakana-Bestandteile anzeigt. Jede vorinstallierte Lesung wird in geordnete Verweise auf ihre genauen Hiragana-Zeichen aufgelöst. Katakana-Zeichen behalten eigene IDs und Verweise und bleiben für tatsächlich in Katakana geschriebene Inhalte verfügbar.
+Jede Kanji-Lesung ist ein eigener Wortschatzdatensatz, dessen geordnete `kana-spelling`-Verweise die genauen Hiragana-Zeichen gruppieren. Kanji verweisen in Aussprache-Reihenfolge auf diese Lesungsdatensätze, sodass mehrteilige Kana-Lesungen voneinander getrennt bleiben. Katakana-Zeichen behalten eigene IDs und Verweise und bleiben für tatsächlich in Katakana geschriebene Inhalte verfügbar.
 
 ## Aktueller Aktivierungsvertrag der Bibliothek
 
@@ -78,3 +78,7 @@ Die Zeichenebene fordert Zeilen mit fünf Karten an und listet beide Schriftsyst
 ## Definitionsgestützte Karten und ausdrückliche Rasterlücken
 
 An den neuesten Darstellungsvertrag der Bibliothek angepasst: Wörter, Partikeln und Sätze fordern nun lokalisierten, definitionsgestützten Kartentext an, und jeder solche Eintrag besitzt einen erforderlichen Definitionsverweis. Lücken in der Kana-Tabelle verwenden ausdrückliche Platzhalter `{ "blank": true }` anstelle veralteter Nullwerte.
+
+## Japanischspezifische Ebenenbezeichnungen
+
+Die erzeugten Bibliotheksregister verwenden nun fachbezogene Modulbezeichnungen: Kana für atomare Zeichen, Kanji für zusammengesetzte Schrifteinheiten und Wortschatz für Wörter. Kanji-Lesungen verweisen auf gruppierte Wortschatzdatensätze statt auf eine abgeflachte Folge von Zeichenverweisen.

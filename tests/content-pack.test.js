@@ -354,7 +354,7 @@ test("recognized Library fields and definition relationships replace duplicate s
     }
 });
 
-test("kanji readings use kana labels and ordered character references", () => {
+test("kanji readings reference distinct kana-backed vocabulary entries", () => {
     const { schema, records } = loadPack();
     const compoundLayer = schema.layers.find(
         ({ semanticRole }) => semanticRole === "compoundWritingUnit",
@@ -362,14 +362,15 @@ test("kanji readings use kana labels and ordered character references", () => {
     const readingRelationship = compoundLayer.relationships.find(
         ({ id }) => id === "readings",
     );
-    assert.equal(readingRelationship.targetLayer, "characters");
+    assert.equal(readingRelationship.targetLayer, "words");
     assert.equal(readingRelationship.ordered, true);
     assert.equal(readingRelationship.requiredTarget, true);
-    assert.equal(
-        compoundLayer.relationships.some(({ id }) => id === "components"),
-        false,
-    );
 
+    const words = new Map(
+        records
+            .filter(({ layer }) => layer === "words")
+            .map((record) => [record.id, record]),
+    );
     const characters = new Map(
         records
             .filter(({ layer }) => layer === "characters")
@@ -378,28 +379,55 @@ test("kanji readings use kana labels and ordered character references", () => {
     for (const kanji of records.filter(
         ({ layer }) => layer === compoundLayer.id,
     )) {
-        assert.ok(
-            kanji.fields.pronunciation.every((reading) =>
-                /^[\p{Script=Hiragana}ー]+$/u.test(reading),
-            ),
-            `${kanji.id} readings must be presented in kana`,
-        );
-        const readingLabels = kanji.references
+        const readingWords = kanji.references
             .filter(({ relation }) => relation === "readings")
             .sort((left, right) => left.position - right.position)
-            .map(({ entryId }) => characters.get(entryId)?.label)
-            .join("");
-        assert.equal(readingLabels, kanji.fields.pronunciation.join(""));
-        const readingTargets = kanji.references
-            .filter(({ relation }) => relation === "readings")
-            .map(({ entryId }) => characters.get(entryId));
-        assert.ok(
-            readingTargets.every(
-                ({ fields }) => fields.character_class === "hiragana",
-            ),
-            `${kanji.id} reading references must link only to hiragana`,
+            .map(({ entryId }) => words.get(entryId));
+        assert.deepEqual(
+            readingWords.map(({ label }) => label),
+            kanji.fields.pronunciation,
         );
+        for (const readingWord of readingWords) {
+            const spelling = readingWord.references
+                .filter(({ relation }) => relation === "kana-spelling")
+                .sort((left, right) => left.position - right.position)
+                .map(({ entryId }) => characters.get(entryId));
+            assert.equal(
+                spelling.map(({ label }) => label).join(""),
+                readingWord.label,
+            );
+            assert.ok(
+                spelling.every(
+                    ({ fields }) => fields.character_class === "hiragana",
+                ),
+            );
+        }
     }
+});
+
+test("Japanese layers publish subject-specific localized labels", () => {
+    const { schema } = loadPack();
+    const labels = new Map(
+        schema.layers.map(({ id, metadata }) => [id, metadata.labels]),
+    );
+    assert.deepEqual(labels.get("characters"), {
+        de: "Kana",
+        en: "Kana",
+        id: "Kana",
+        ja: "かな",
+    });
+    assert.deepEqual(labels.get("alt-characters"), {
+        de: "Kanji",
+        en: "Kanji",
+        id: "Kanji",
+        ja: "漢字",
+    });
+    assert.deepEqual(labels.get("words"), {
+        de: "Wortschatz",
+        en: "Vocabulary",
+        id: "Kosakata",
+        ja: "語彙",
+    });
 });
 
 test("character classes distinguish hiragana and katakana variations", () => {
@@ -642,8 +670,9 @@ test("definitions stay semantic while resolvers describe compositions", () => {
             ),
         ),
         new Set([
-            "readings:characters",
+            "readings:words",
             "spelling:alt-characters",
+            "kana-spelling:characters",
             "words:words",
             "particles:particles",
         ]),

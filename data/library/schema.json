@@ -1,6 +1,6 @@
 {
     "id": "japanese-core",
-    "version": 15,
+    "version": 16,
     "namespace": "ja",
     "language": "ja",
     "metadata": {
@@ -16,10 +16,10 @@
             "id": "characters",
             "metadata": {
                 "labels": {
-                    "de": "Zeichen",
-                    "en": "Characters",
-                    "id": "Karakter",
-                    "ja": "文字"
+                    "de": "Kana",
+                    "en": "Kana",
+                    "id": "Kana",
+                    "ja": "かな"
                 }
             },
             "semanticRole": "atomicWritingUnit",
@@ -275,10 +275,10 @@
             "id": "alt-characters",
             "metadata": {
                 "labels": {
-                    "de": "Zusammengesetzte Zeichen",
-                    "en": "Compound Characters",
-                    "id": "Karakter Gabungan",
-                    "ja": "複合文字"
+                    "de": "Kanji",
+                    "en": "Kanji",
+                    "id": "Kanji",
+                    "ja": "漢字"
                 }
             },
             "semanticRole": "compoundWritingUnit",
@@ -321,13 +321,13 @@
             "relationships": [
                 {
                     "id": "readings",
-                    "targetLayer": "characters",
+                    "targetLayer": "words",
                     "metadata": {
                         "labels": {
-                            "de": "Lesungszeichen",
-                            "en": "Reading Characters",
-                            "id": "Karakter Bacaan",
-                            "ja": "読みの文字"
+                            "de": "Lesungen",
+                            "en": "Readings",
+                            "id": "Bacaan",
+                            "ja": "読み"
                         }
                     },
                     "ordered": true,
@@ -421,10 +421,10 @@
             "id": "words",
             "metadata": {
                 "labels": {
-                    "de": "Wörter",
-                    "en": "Words",
-                    "id": "Kata",
-                    "ja": "単語"
+                    "de": "Wortschatz",
+                    "en": "Vocabulary",
+                    "id": "Kosakata",
+                    "ja": "語彙"
                 }
             },
             "semanticRole": "lexicalUnit",
@@ -479,11 +479,25 @@
                             "ja": "表記"
                         }
                     },
-                    "minimum": 1,
                     "ordered": true,
-                    "requiredTarget": true,
                     "onDelete": "restrict",
                     "resolverRole": "grapheme"
+                },
+                {
+                    "id": "kana-spelling",
+                    "targetLayer": "characters",
+                    "metadata": {
+                        "labels": {
+                            "de": "Kana-Schreibweise",
+                            "en": "Kana Spelling",
+                            "id": "Ejaan Kana",
+                            "ja": "かな表記"
+                        }
+                    },
+                    "minimum": 0,
+                    "ordered": true,
+                    "onDelete": "restrict",
+                    "resolverRole": "explicit"
                 },
                 {
                     "id": "definitions",
