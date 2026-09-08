@@ -773,12 +773,15 @@ test("hiragana and katakana include complete gojuon and voiced tables", () => {
     }
 });
 
-test("character grid keeps each filtered kana chart flush to the first cell", () => {
+test("character grid preserves visible five-column kana chart blanks", () => {
     const { schema, records } = loadPack();
     const characterLayer = schema.layers.find(({ id }) => id === "characters");
     assert.equal(characterLayer.grid.rowSize, 5);
-    assert.ok(
-        characterLayer.grid.items.every((item) => typeof item === "string"),
+    assert.equal(
+        characterLayer.grid.items.filter(
+            (item) => typeof item === "object" && item.blank === true,
+        ).length,
+        18,
     );
 
     const labelsById = new Map(
@@ -786,15 +789,39 @@ test("character grid keeps each filtered kana chart flush to the first cell", ()
             .filter(({ layer }) => layer === "characters")
             .map(({ id, label }) => [id, label]),
     );
-    const chartLabels = characterLayer.grid.items.map((id) =>
-        labelsById.get(id),
+    const labels = characterLayer.grid.items.map((item) =>
+        typeof item === "object" ? null : labelsById.get(item),
     );
-    assert.deepEqual(chartLabels.slice(0, 46), [
-        ..."あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほまみむめもやゆよらりるれろわをん",
+    const hiragana = labels.slice(0, 55);
+    const katakana = labels.slice(55);
+    assert.deepEqual(hiragana.slice(35, 40), ["や", null, "ゆ", null, "よ"]);
+    assert.deepEqual(hiragana.slice(45, 55), [
+        "わ",
+        null,
+        null,
+        null,
+        "を",
+        "ん",
+        null,
+        null,
+        null,
+        null,
     ]);
-    assert.deepEqual(chartLabels.slice(46), [
-        ..."アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲン",
+    assert.deepEqual(katakana.slice(35, 40), ["ヤ", null, "ユ", null, "ヨ"]);
+    assert.deepEqual(katakana.slice(45, 55), [
+        "ワ",
+        null,
+        null,
+        null,
+        "ヲ",
+        "ン",
+        null,
+        null,
+        null,
+        null,
     ]);
+    assert.equal(labels.includes("きゃ"), false);
+    assert.equal(labels.includes("キュ"), false);
 });
 
 test("only the Kana layer requests minimal cards", () => {

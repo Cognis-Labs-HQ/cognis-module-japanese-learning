@@ -96,7 +96,7 @@ Jede Zeichen-Elternbeziehung deklariert nur `variant: true`; keine fordert `vari
 
 ## Standardmäßiges Kana-Raster
 
-Die Zeichenebene fordert Zeilen mit fünf Karten an und listet beide Schriftsysteme in der üblichen Gojūon-Reihenfolge auf. Das Raster enthält nur grundlegende Kana; alle kleinen, stimmhaften, kontrahierten und geminierten Formen werden als Varianten-Nachkommen ihres Hauptzeichens aufgeklappt.
+Die Zeichenebene fordert Zeilen mit fünf Karten an und listet beide Schriftsysteme in der üblichen Gojūon-Reihenfolge auf. Ausdrückliche Leerzellen bewahren die fehlenden Positionen in der `y`-, `w`- und abschließenden `n`-Zeile. Erweiterte Formen wie `きゃ` und `キュ` bleiben außerhalb des Rasters, weil sie als Kinder von `き` und `キ` aufgeklappt werden.
 
 ## Definitionsgestützte Karten
 
@@ -106,9 +106,9 @@ An den neuesten Darstellungsvertrag der Bibliothek angepasst: Wörter, Partikeln
 
 Die erzeugten Bibliotheksregister verwenden nun fachbezogene Modulbezeichnungen: Kana für atomare Zeichen, Kanji für zusammengesetzte Schrifteinheiten und Wortschatz für Wörter. Kanji-Lesungen verweisen auf gruppierte Wortschatzdatensätze statt auf eine abgeflachte Folge von Zeichenverweisen.
 
-## Filtersichere Kana-Reihenfolge
+## Sichtbare Lücken in der Kana-Tabelle
 
-Unbedingte Leerplatzhalter zwischen den Hiragana- und Katakana-Folgen wurden entfernt. Wenn der Schriftsystemfilter eine Schrift ausblendet, beginnt die ausgewählte Tabelle nun in der ersten Rasterzelle, statt Leerzellen der ausgeblendeten Tabelle zu übernehmen.
+Das Raster deklariert wieder ausdrückliche `{ "blank": true }`-Zellen, da der neueste Renderer für minimale Raster sie dimensioniert und anzeigt. Diese Platzhalter machen die absichtlich fehlenden Kana-Positionen sichtbar, statt die Tabelle zusammenzuschieben.
 
 ## Kompakte Kana-Karten
 
@@ -157,3 +157,5 @@ Geordnete Zusammensetzungen entsprechen nun den neuesten Vorabprüfungen der Bib
 - [0912c79](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/0912c79cff5ba0fce67cd2c9ec6e10da11331a64)
 
 - [a8e559e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/a8e559e3bfad5bbf1c1778dd4a9505c83bc04f8d)
+
+- [7f8cc35](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/7f8cc35b43f92480c77dba4807bf4f237e4ebd8d)

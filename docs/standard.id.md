@@ -70,7 +70,7 @@ Setiap relasi induk karakter hanya mendeklarasikan `variant: true`; tidak ada ya
 
 ## Kisi kana standar
 
-Lapisan karakter meminta baris lima kartu dan mencantumkan kedua aksara dalam urutan gojūon standar. Kisi hanya berisi kana dasar; seluruh bentuk kecil, bersuara, gabungan, dan rangkap dibuka sebagai turunan varian dari karakter utamanya.
+Lapisan karakter meminta baris lima kartu dan mencantumkan kedua aksara dalam urutan gojūon standar. Sel kosong eksplisit mempertahankan posisi yang tidak ada pada baris `y`, `w`, dan `n` terakhir. Bentuk lanjutan seperti `きゃ` dan `キュ` tetap di luar kisi karena dibuka sebagai anak dari `き` dan `キ`.
 
 ## Kartu berbasis definisi
 
@@ -80,9 +80,9 @@ Diselaraskan dengan kontrak tampilan Pustaka terbaru: kata, partikel, dan kalima
 
 Tab Pustaka yang dihasilkan kini memakai label bidang milik modul: Kana untuk karakter atomik, Kanji untuk unit tulisan gabungan, dan Kosakata untuk kata. Bacaan kanji menargetkan entri kosakata yang dikelompokkan, bukan rangkaian referensi karakter yang diratakan.
 
-## Urutan kana yang aman untuk filter
+## Celah bagan kana yang terlihat
 
-Penanda kosong tanpa syarat di antara urutan hiragana dan katakana telah dihapus. Saat filter sistem tulisan menyembunyikan salah satu aksara, tabel yang dipilih kini dimulai dari sel kisi pertama tanpa mewarisi sel kosong dari tabel tersembunyi.
+Kisi kembali mendeklarasikan sel `{ "blank": true }` secara eksplisit karena renderer kisi minimal terbaru mengukur dan menampilkannya. Penanda ini membuat posisi kana yang memang tidak ada tetap terlihat, bukan merapatkan bagan.
 
 ## Kartu Kana ringkas
 

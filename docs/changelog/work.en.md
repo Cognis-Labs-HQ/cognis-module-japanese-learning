@@ -96,7 +96,7 @@ Every character parent relationship declares only `variant: true`; none requests
 
 ## Standard kana grid
 
-The character layer requests a five-card row and lists both scripts in standard gojūon order. The grid contains only base-kana records; all small, voiced, contracted, and geminated forms unfold as variant descendants of their primary character.
+The character layer requests a five-card row and lists both scripts in standard gojūon order. Explicit blank cells preserve the missing positions in the `y`, `w`, and terminal `n` rows. Extended forms such as `きゃ` and `キュ` stay outside the grid because they unfold as children of `き` and `キ`.
 
 ## Definition-backed cards
 
@@ -106,9 +106,9 @@ Aligned with the latest Library presentation contract: words, particles, and sen
 
 The generated Library tabs now use module-owned subject labels: Kana for atomic characters, Kanji for compound writing units, and Vocabulary for words. Kanji readings target grouped vocabulary records rather than a flattened run of character references.
 
-## Filter-safe kana ordering
+## Visible kana chart gaps
 
-Removed unconditional blank placeholders between the hiragana and katakana sequences. When the writing-system filter hides one script, the selected table now begins in the first grid cell instead of inheriting blank cells from the hidden table.
+The grid again declares explicit `{ "blank": true }` cells now that the latest minimal-grid renderer dimensions and displays them. These placeholders make the intentionally absent kana positions visible instead of collapsing the chart.
 
 ## Compact Kana cards
 
@@ -157,3 +157,5 @@ Aligned ordered compounds with the latest Library preflight restrictions. Every 
 - [0912c79](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/0912c79cff5ba0fce67cd2c9ec6e10da11331a64)
 
 - [a8e559e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/a8e559e3bfad5bbf1c1778dd4a9505c83bc04f8d)
+
+- [7f8cc35](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/7f8cc35b43f92480c77dba4807bf4f237e4ebd8d)

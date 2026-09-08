@@ -70,7 +70,7 @@ Every character parent relationship declares only `variant: true`; none requests
 
 ## Standard kana grid
 
-The character layer requests a five-card row and lists both scripts in standard gojūon order. The grid contains only base-kana records; all small, voiced, contracted, and geminated forms unfold as variant descendants of their primary character.
+The character layer requests a five-card row and lists both scripts in standard gojūon order. Explicit blank cells preserve the missing positions in the `y`, `w`, and terminal `n` rows. Extended forms such as `きゃ` and `キュ` stay outside the grid because they unfold as children of `き` and `キ`.
 
 ## Definition-backed cards
 
@@ -80,9 +80,9 @@ Aligned with the latest Library presentation contract: words, particles, and sen
 
 The generated Library tabs now use module-owned subject labels: Kana for atomic characters, Kanji for compound writing units, and Vocabulary for words. Kanji readings target grouped vocabulary records rather than a flattened run of character references.
 
-## Filter-safe kana ordering
+## Visible kana chart gaps
 
-Removed unconditional blank placeholders between the hiragana and katakana sequences. When the writing-system filter hides one script, the selected table now begins in the first grid cell instead of inheriting blank cells from the hidden table.
+The grid again declares explicit `{ "blank": true }` cells now that the latest minimal-grid renderer dimensions and displays them. These placeholders make the intentionally absent kana positions visible instead of collapsing the chart.
 
 ## Compact Kana cards
 
