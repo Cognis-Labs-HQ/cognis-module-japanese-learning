@@ -1,6 +1,6 @@
 {
     "id": "japanese-core",
-    "version": 18,
+    "version": 19,
     "namespace": "ja",
     "language": "ja",
     "metadata": {
@@ -281,7 +281,8 @@
                     "onDelete": "restrict",
                     "resolverRole": "explicit",
                     "minimum": 1,
-                    "requiredTarget": true
+                    "requiredTarget": true,
+                    "presentationRole": "pronunciation"
                 },
                 {
                     "id": "definitions",
@@ -428,7 +429,8 @@
                     },
                     "ordered": true,
                     "onDelete": "restrict",
-                    "resolverRole": "grapheme"
+                    "resolverRole": "grapheme",
+                    "presentationRole": "composition"
                 },
                 {
                     "id": "kana-spelling",
@@ -444,7 +446,8 @@
                     "minimum": 0,
                     "ordered": true,
                     "onDelete": "restrict",
-                    "resolverRole": "explicit"
+                    "resolverRole": "explicit",
+                    "presentationRole": "composition"
                 },
                 {
                     "id": "definitions",
@@ -550,7 +553,8 @@
                     "ordered": true,
                     "requiredTarget": true,
                     "onDelete": "restrict",
-                    "resolverRole": "longestMatch"
+                    "resolverRole": "longestMatch",
+                    "presentationRole": "composition"
                 },
                 {
                     "id": "particles",
@@ -565,7 +569,8 @@
                     },
                     "ordered": true,
                     "onDelete": "restrict",
-                    "resolverRole": "explicit"
+                    "resolverRole": "explicit",
+                    "presentationRole": "composition"
                 },
                 {
                     "id": "definitions",

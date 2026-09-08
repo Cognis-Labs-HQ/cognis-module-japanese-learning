@@ -87,3 +87,7 @@ Removed unconditional blank placeholders between the hiragana and katakana seque
 ## Compact Kana cards
 
 Only the Kana character layer sets `minimal: true`, so the chart renders compact cards containing the primary kana label. Kanji, Vocabulary, and Sentences retain their full pronunciation, definition, metadata, and composition presentation.
+
+## Fully resolved compound entries
+
+Aligned ordered compounds with the latest Library preflight restrictions. Every sentence character is now covered by a contiguous ordered word or particle reference; `日本語が好き` includes the previously missing `好き` vocabulary item. Resolver relationships also declare whether they present a composition or a complete pronunciation.

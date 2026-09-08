@@ -277,6 +277,36 @@ test("writing units and sentence particles follow the current Library contract",
     );
 });
 
+test("ordered sentence constituents completely resolve the sentence label", () => {
+    const { schema, records } = loadPack();
+    const sentenceLayer = schema.layers.find(({ id }) => id === "sentences");
+    const constituentRelationships = new Set(
+        sentenceLayer.relationships
+            .filter(({ targetLayer }) =>
+                ["words", "particles"].includes(targetLayer),
+            )
+            .map(({ id }) => id),
+    );
+    const entries = new Map(records.map((record) => [record.id, record]));
+    for (const sentence of records.filter(
+        ({ layer }) => layer === sentenceLayer.id,
+    )) {
+        const constituents = sentence.references
+            .filter(({ relation }) => constituentRelationships.has(relation))
+            .sort((left, right) => left.position - right.position);
+        assert.deepEqual(
+            constituents.map(({ position }) => position),
+            constituents.map((_, position) => position),
+        );
+        assert.equal(
+            constituents
+                .map(({ entryId }) => entries.get(entryId).label)
+                .join(""),
+            sentence.label,
+        );
+    }
+});
+
 test("content pack does not include binary files", () => {
     const binaryExtensions = new Set([
         ".aac",
@@ -675,6 +705,21 @@ test("definitions stay semantic while resolvers describe compositions", () => {
             "kana-spelling:characters",
             "words:words",
             "particles:particles",
+        ]),
+    );
+    assert.deepEqual(
+        new Map(
+            compositionRelationships.map(({ id, presentationRole }) => [
+                id,
+                presentationRole,
+            ]),
+        ),
+        new Map([
+            ["readings", "pronunciation"],
+            ["spelling", "composition"],
+            ["kana-spelling", "composition"],
+            ["words", "composition"],
+            ["particles", "composition"],
         ]),
     );
 });
