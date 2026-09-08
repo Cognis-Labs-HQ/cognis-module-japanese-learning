@@ -110,6 +110,10 @@ Cognis PR #214 に合わせ、名前空間の所有権、ローカライズ済�
 
 ひらがな列とカタカナ列の間にあった無条件の空白プレースホルダーを削除しました。文字種フィルターで一方を非表示にしたとき、選択した表は非表示側の空白を引き継がず、グリッドの先頭セルから始まります。
 
+## コンパクトなかなカード
+
+かな文字レイヤーだけに `minimal: true` を設定し、かな表を主ラベルのみのコンパクトなカードで表示します。漢字・語彙・文のレイヤーは、発音・定義・メタデータ・構成を含む通常の表示を維持します。
+
 ## コミット
 
 - [a6fa75d](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/a6fa75d15c478b1d8ef1930dcc3c5c29e3938b97)
@@ -143,3 +147,5 @@ Cognis PR #214 に合わせ、名前空間の所有権、ローカライズ済�
 - [f6ace9e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/f6ace9e86c0c27634edeba5ffb98e429bfd2be4f)
 
 - [64682aa](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/64682aa25ecd32bf106613dec2b8a26812e1fba5)
+
+- [06f4b09](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/06f4b09449d44ca464c31f11464fd474bddf4fcd)

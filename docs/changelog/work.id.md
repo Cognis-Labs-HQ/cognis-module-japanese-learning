@@ -110,6 +110,10 @@ Tab Pustaka yang dihasilkan kini memakai label bidang milik modul: Kana untuk ka
 
 Penanda kosong tanpa syarat di antara urutan hiragana dan katakana telah dihapus. Saat filter sistem tulisan menyembunyikan salah satu aksara, tabel yang dipilih kini dimulai dari sel kisi pertama tanpa mewarisi sel kosong dari tabel tersembunyi.
 
+## Kartu Kana ringkas
+
+Hanya lapisan karakter Kana yang menetapkan `minimal: true`, sehingga bagan menampilkan kartu ringkas berisi label kana utama. Kanji, Kosakata, dan Kalimat tetap mempertahankan tampilan pelafalan, definisi, metadata, dan komposisi lengkap.
+
 ## Komit
 
 - [a6fa75d](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/a6fa75d15c478b1d8ef1930dcc3c5c29e3938b97)
@@ -143,3 +147,5 @@ Penanda kosong tanpa syarat di antara urutan hiragana dan katakana telah dihapus
 - [f6ace9e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/f6ace9e86c0c27634edeba5ffb98e429bfd2be4f)
 
 - [64682aa](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/64682aa25ecd32bf106613dec2b8a26812e1fba5)
+
+- [06f4b09](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/06f4b09449d44ca464c31f11464fd474bddf4fcd)

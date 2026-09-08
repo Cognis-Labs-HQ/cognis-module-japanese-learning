@@ -86,3 +86,7 @@ Tab Pustaka yang dihasilkan kini memakai label bidang milik modul: Kana untuk ka
 ## Urutan kana yang aman untuk filter
 
 Penanda kosong tanpa syarat di antara urutan hiragana dan katakana telah dihapus. Saat filter sistem tulisan menyembunyikan salah satu aksara, tabel yang dipilih kini dimulai dari sel kisi pertama tanpa mewarisi sel kosong dari tabel tersembunyi.
+
+## Kartu Kana ringkas
+
+Hanya lapisan karakter Kana yang menetapkan `minimal: true`, sehingga bagan menampilkan kartu ringkas berisi label kana utama. Kanji, Kosakata, dan Kalimat tetap mempertahankan tampilan pelafalan, definisi, metadata, dan komposisi lengkap.

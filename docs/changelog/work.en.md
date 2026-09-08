@@ -110,6 +110,10 @@ The generated Library tabs now use module-owned subject labels: Kana for atomic 
 
 Removed unconditional blank placeholders between the hiragana and katakana sequences. When the writing-system filter hides one script, the selected table now begins in the first grid cell instead of inheriting blank cells from the hidden table.
 
+## Compact Kana cards
+
+Only the Kana character layer sets `minimal: true`, so the chart renders compact cards containing the primary kana label. Kanji, Vocabulary, and Sentences retain their full pronunciation, definition, metadata, and composition presentation.
+
 ## Commits
 
 - [a6fa75d](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/a6fa75d15c478b1d8ef1930dcc3c5c29e3938b97)
@@ -143,3 +147,5 @@ Removed unconditional blank placeholders between the hiragana and katakana seque
 - [f6ace9e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/f6ace9e86c0c27634edeba5ffb98e429bfd2be4f)
 
 - [64682aa](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/64682aa25ecd32bf106613dec2b8a26812e1fba5)
+
+- [06f4b09](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/06f4b09449d44ca464c31f11464fd474bddf4fcd)

@@ -110,6 +110,10 @@ Die erzeugten Bibliotheksregister verwenden nun fachbezogene Modulbezeichnungen:
 
 Unbedingte Leerplatzhalter zwischen den Hiragana- und Katakana-Folgen wurden entfernt. Wenn der Schriftsystemfilter eine Schrift ausblendet, beginnt die ausgewählte Tabelle nun in der ersten Rasterzelle, statt Leerzellen der ausgeblendeten Tabelle zu übernehmen.
 
+## Kompakte Kana-Karten
+
+Nur die Kana-Zeichenebene setzt `minimal: true`, sodass die Tabelle kompakte Karten mit der primären Kana-Bezeichnung darstellt. Kanji, Wortschatz und Sätze behalten ihre vollständige Darstellung von Aussprache, Definitionen, Metadaten und Zusammensetzung.
+
 ## Commits
 
 - [a6fa75d](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/a6fa75d15c478b1d8ef1930dcc3c5c29e3938b97)
@@ -143,3 +147,5 @@ Unbedingte Leerplatzhalter zwischen den Hiragana- und Katakana-Folgen wurden ent
 - [f6ace9e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/f6ace9e86c0c27634edeba5ffb98e429bfd2be4f)
 
 - [64682aa](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/64682aa25ecd32bf106613dec2b8a26812e1fba5)
+
+- [06f4b09](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/06f4b09449d44ca464c31f11464fd474bddf4fcd)

@@ -86,3 +86,7 @@ The generated Library tabs now use module-owned subject labels: Kana for atomic 
 ## Filter-safe kana ordering
 
 Removed unconditional blank placeholders between the hiragana and katakana sequences. When the writing-system filter hides one script, the selected table now begins in the first grid cell instead of inheriting blank cells from the hidden table.
+
+## Compact Kana cards
+
+Only the Kana character layer sets `minimal: true`, so the chart renders compact cards containing the primary kana label. Kanji, Vocabulary, and Sentences retain their full pronunciation, definition, metadata, and composition presentation.

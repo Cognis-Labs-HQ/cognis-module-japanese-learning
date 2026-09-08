@@ -86,3 +86,7 @@ Die erzeugten Bibliotheksregister verwenden nun fachbezogene Modulbezeichnungen:
 ## Filtersichere Kana-Reihenfolge
 
 Unbedingte Leerplatzhalter zwischen den Hiragana- und Katakana-Folgen wurden entfernt. Wenn der Schriftsystemfilter eine Schrift ausblendet, beginnt die ausgewählte Tabelle nun in der ersten Rasterzelle, statt Leerzellen der ausgeblendeten Tabelle zu übernehmen.
+
+## Kompakte Kana-Karten
+
+Nur die Kana-Zeichenebene setzt `minimal: true`, sodass die Tabelle kompakte Karten mit der primären Kana-Bezeichnung darstellt. Kanji, Wortschatz und Sätze behalten ihre vollständige Darstellung von Aussprache, Definitionen, Metadaten und Zusammensetzung.

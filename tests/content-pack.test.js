@@ -801,6 +801,21 @@ test("character grid keeps each filtered kana chart flush to the first cell", ()
     ]);
 });
 
+test("only the Kana layer requests minimal cards", () => {
+    const { schema } = loadPack();
+    const minimalLayers = schema.layers.filter(({ minimal }) => minimal);
+    assert.deepEqual(
+        minimalLayers.map(({ id }) => id),
+        ["characters"],
+    );
+    assert.equal(minimalLayers[0].semanticRole, "atomicWritingUnit");
+    assert.ok(
+        schema.layers
+            .filter(({ id }) => id !== "characters")
+            .every(({ minimal }) => minimal === undefined),
+    );
+});
+
 test("non-character cards opt into required definition-backed display text", () => {
     const { schema, records } = loadPack();
     for (const layerId of ["words", "particles", "sentences"]) {
