@@ -76,7 +76,7 @@ Character-script and JLPT badge filters now declare named, mutually exclusive fi
 
 ## Nested kana variants
 
-Kana variants remain within their own writing system and now cover dakuten, handakuten, small kana, standard yōon contractions, and common sokuon geminations. Parent chains preserve linguistic structure, including `し` → `じ` → `じゃ`, while hiragana and katakana remain independent.
+Kana variants remain within their own writing system and cover dakuten, handakuten, small kana, standard yōon contractions, and common sokuon geminations. Contracted triplets form nested chains—such as `き` → `きゃ` → `きゅ` → `きょ` and `し` → `じ` → `じゃ`—so every form remains attached and no parent exceeds the renderer’s three available child slots.
 
 ## Latest Library presentation contract
 
@@ -96,7 +96,7 @@ Every character parent relationship declares only `variant: true`; none requests
 
 ## Standard kana grid
 
-The character layer requests a five-card row and lists both scripts in standard gojūon order. Explicit blank cells preserve the missing positions in the `y`, `w`, and terminal `n` rows. Extended forms such as `きゃ` and `キュ` stay outside the grid because they unfold as children of `き` and `キ`.
+The character layer requests a five-card row and keeps each script to exactly ten rows. The last row places `を`/`ヲ` in the middle and `ん`/`ン` at the end. Extended forms stay outside the grid and unfold through their character-parent chains.
 
 ## Definition-backed cards
 
@@ -108,7 +108,7 @@ The generated Library tabs now use module-owned subject labels: Kana for atomic 
 
 ## Visible kana chart gaps
 
-The grid again declares explicit `{ "blank": true }` cells now that the latest minimal-grid renderer dimensions and displays them. These placeholders make the intentionally absent kana positions visible instead of collapsing the chart.
+Each script owns four explicit `{ "blank": true }` cells: two in the `y` row and two in the combined `w`/`n` row. Hiragana therefore has no trailing blank row, and Katakana begins immediately at the next row boundary without inherited leading blanks.
 
 ## Compact Kana cards
 
@@ -159,3 +159,5 @@ Aligned ordered compounds with the latest Library preflight restrictions. Every 
 - [a8e559e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/a8e559e3bfad5bbf1c1778dd4a9505c83bc04f8d)
 
 - [7f8cc35](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/7f8cc35b43f92480c77dba4807bf4f237e4ebd8d)
+
+- [e5eae65](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/e5eae656076a0bcb31c74e7f388c06b4ed790815)

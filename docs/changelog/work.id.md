@@ -76,7 +76,7 @@ Filter lencana sistem tulisan dan JLPT kini mendeklarasikan grup filter bernama 
 
 ## Varian kana bertingkat
 
-Varian kana tetap berada dalam sistem tulisannya sendiri dan kini mencakup dakuten, handakuten, kana kecil, seluruh kontraksi yōon standar, serta geminasi sokuon umum. Rantai induk mempertahankan struktur bahasa, termasuk `し` → `じ` → `じゃ`, sedangkan hiragana dan katakana tetap terpisah.
+Varian kana tetap berada dalam sistem tulisannya dan mencakup dakuten, handakuten, kana kecil, kontraksi yōon standar, serta geminasi sokuon umum. Tiga bentuk kontraksi membentuk rantai bertingkat seperti `き` → `きゃ` → `きゅ` → `きょ` dan `し` → `じ` → `じゃ`, sehingga setiap bentuk tetap terhubung dan tidak ada induk yang melampaui tiga slot anak renderer.
 
 ## Kontrak penyajian Pustaka terbaru
 
@@ -96,7 +96,7 @@ Setiap relasi induk karakter hanya mendeklarasikan `variant: true`; tidak ada ya
 
 ## Kisi kana standar
 
-Lapisan karakter meminta baris lima kartu dan mencantumkan kedua aksara dalam urutan gojūon standar. Sel kosong eksplisit mempertahankan posisi yang tidak ada pada baris `y`, `w`, dan `n` terakhir. Bentuk lanjutan seperti `きゃ` dan `キュ` tetap di luar kisi karena dibuka sebagai anak dari `き` dan `キ`.
+Lapisan karakter meminta baris lima kartu dan membatasi setiap aksara tepat sepuluh baris. Baris terakhir menempatkan `を`/`ヲ` di tengah dan `ん`/`ン` di akhir. Bentuk lanjutan tetap di luar kisi dan dibuka melalui rantai induk karakternya.
 
 ## Kartu berbasis definisi
 
@@ -108,7 +108,7 @@ Tab Pustaka yang dihasilkan kini memakai label bidang milik modul: Kana untuk ka
 
 ## Celah bagan kana yang terlihat
 
-Kisi kembali mendeklarasikan sel `{ "blank": true }` secara eksplisit karena renderer kisi minimal terbaru mengukur dan menampilkannya. Penanda ini membuat posisi kana yang memang tidak ada tetap terlihat, bukan merapatkan bagan.
+Setiap aksara memiliki empat sel `{ "blank": true }` eksplisit: dua pada baris `y` dan dua pada baris gabungan `w`/`n`. Hiragana tidak lagi memiliki baris kosong di belakang, dan Katakana dimulai tepat pada batas baris berikutnya tanpa celah awal warisan.
 
 ## Kartu Kana ringkas
 
@@ -159,3 +159,5 @@ Gabungan berurutan kini selaras dengan pembatasan prapemeriksaan Pustaka terbaru
 - [a8e559e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/a8e559e3bfad5bbf1c1778dd4a9505c83bc04f8d)
 
 - [7f8cc35](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/7f8cc35b43f92480c77dba4807bf4f237e4ebd8d)
+
+- [e5eae65](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/e5eae656076a0bcb31c74e7f388c06b4ed790815)

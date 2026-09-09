@@ -553,15 +553,22 @@ test("character variants use dynamically placed nested relationships", () => {
         }
     };
     for (const chain of [
-        ["し", "じ", "じゃ"],
-        ["ひ", "ひゃ"],
+        ["し", "じ", "じゃ", "じゅ", "じょ"],
+        ["ひ", "ひゃ", "ひゅ", "ひょ"],
         ["て", "って"],
-        ["シ", "ジ", "ジャ"],
-        ["ヒ", "ヒャ"],
+        ["シ", "ジ", "ジャ", "ジュ", "ジョ"],
+        ["ヒ", "ヒャ", "ヒュ", "ヒョ"],
         ["テ", "ッテ"],
     ]) {
         expectChain(chain);
     }
+    const childCounts = new Map();
+    for (const child of characters.values()) {
+        const parentId = child.references?.[0].entryId;
+        if (parentId)
+            childCounts.set(parentId, (childCounts.get(parentId) ?? 0) + 1);
+    }
+    assert.ok([...childCounts.values()].every((count) => count <= 3));
 });
 
 test("Kana variants include complete small, yoon, and sokuon sets", () => {
@@ -781,7 +788,7 @@ test("character grid preserves visible five-column kana chart blanks", () => {
         characterLayer.grid.items.filter(
             (item) => typeof item === "object" && item.blank === true,
         ).length,
-        18,
+        8,
     );
 
     const labelsById = new Map(
@@ -792,34 +799,12 @@ test("character grid preserves visible five-column kana chart blanks", () => {
     const labels = characterLayer.grid.items.map((item) =>
         typeof item === "object" ? null : labelsById.get(item),
     );
-    const hiragana = labels.slice(0, 55);
-    const katakana = labels.slice(55);
+    const hiragana = labels.slice(0, 50);
+    const katakana = labels.slice(50);
     assert.deepEqual(hiragana.slice(35, 40), ["や", null, "ゆ", null, "よ"]);
-    assert.deepEqual(hiragana.slice(45, 55), [
-        "わ",
-        null,
-        null,
-        null,
-        "を",
-        "ん",
-        null,
-        null,
-        null,
-        null,
-    ]);
+    assert.deepEqual(hiragana.slice(45, 50), ["わ", null, "を", null, "ん"]);
     assert.deepEqual(katakana.slice(35, 40), ["ヤ", null, "ユ", null, "ヨ"]);
-    assert.deepEqual(katakana.slice(45, 55), [
-        "ワ",
-        null,
-        null,
-        null,
-        "ヲ",
-        "ン",
-        null,
-        null,
-        null,
-        null,
-    ]);
+    assert.deepEqual(katakana.slice(45, 50), ["ワ", null, "ヲ", null, "ン"]);
     assert.equal(labels.includes("きゃ"), false);
     assert.equal(labels.includes("キュ"), false);
 });

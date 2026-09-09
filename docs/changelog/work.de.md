@@ -76,7 +76,7 @@ Filterabzeichen für Schriftsystem und JLPT deklarieren nun benannte, gegenseiti
 
 ## Verschachtelte Kana-Varianten
 
-Kana-Varianten bleiben innerhalb ihres eigenen Schriftsystems und umfassen nun Dakuten, Handakuten, kleine Kana, alle üblichen Yōon-Verbindungen und verbreitete Sokuon-Geminationen. Elternketten bewahren die sprachliche Struktur, darunter `し` → `じ` → `じゃ`; Hiragana und Katakana bleiben voneinander unabhängig.
+Kana-Varianten bleiben innerhalb ihres Schriftsystems und umfassen Dakuten, Handakuten, kleine Kana, übliche Yōon-Verbindungen und verbreitete Sokuon-Geminationen. Kontrahierte Dreiergruppen bilden verschachtelte Ketten wie `き` → `きゃ` → `きゅ` → `きょ` und `し` → `じ` → `じゃ`, damit jede Form verbunden bleibt und kein Elternzeichen die drei verfügbaren Kindpositionen des Renderers überschreitet.
 
 ## Aktueller Darstellungsvertrag der Bibliothek
 
@@ -96,7 +96,7 @@ Jede Zeichen-Elternbeziehung deklariert nur `variant: true`; keine fordert `vari
 
 ## Standardmäßiges Kana-Raster
 
-Die Zeichenebene fordert Zeilen mit fünf Karten an und listet beide Schriftsysteme in der üblichen Gojūon-Reihenfolge auf. Ausdrückliche Leerzellen bewahren die fehlenden Positionen in der `y`-, `w`- und abschließenden `n`-Zeile. Erweiterte Formen wie `きゃ` und `キュ` bleiben außerhalb des Rasters, weil sie als Kinder von `き` und `キ` aufgeklappt werden.
+Die Zeichenebene fordert Zeilen mit fünf Karten an und begrenzt jedes Schriftsystem auf genau zehn Zeilen. Die letzte Zeile setzt `を`/`ヲ` in die Mitte und `ん`/`ン` ans Ende. Erweiterte Formen bleiben außerhalb des Rasters und werden über ihre Zeichen-Elternketten aufgeklappt.
 
 ## Definitionsgestützte Karten
 
@@ -108,7 +108,7 @@ Die erzeugten Bibliotheksregister verwenden nun fachbezogene Modulbezeichnungen:
 
 ## Sichtbare Lücken in der Kana-Tabelle
 
-Das Raster deklariert wieder ausdrückliche `{ "blank": true }`-Zellen, da der neueste Renderer für minimale Raster sie dimensioniert und anzeigt. Diese Platzhalter machen die absichtlich fehlenden Kana-Positionen sichtbar, statt die Tabelle zusammenzuschieben.
+Jedes Schriftsystem besitzt vier ausdrückliche `{ "blank": true }`-Zellen: zwei in der `y`-Zeile und zwei in der kombinierten `w`/`n`-Zeile. Hiragana hat dadurch keine nachlaufende Leerzeile, und Katakana beginnt ohne geerbte führende Leerstellen direkt an der nächsten Zeilengrenze.
 
 ## Kompakte Kana-Karten
 
@@ -159,3 +159,5 @@ Geordnete Zusammensetzungen entsprechen nun den neuesten Vorabprüfungen der Bib
 - [a8e559e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/a8e559e3bfad5bbf1c1778dd4a9505c83bc04f8d)
 
 - [7f8cc35](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/7f8cc35b43f92480c77dba4807bf4f237e4ebd8d)
+
+- [e5eae65](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/e5eae656076a0bcb31c74e7f388c06b4ed790815)
