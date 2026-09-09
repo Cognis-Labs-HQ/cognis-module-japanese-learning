@@ -91,3 +91,7 @@ Only the Kana character layer sets `minimal: true`, so the chart renders compact
 ## Fully resolved compound entries
 
 Aligned ordered compounds with the latest Library preflight restrictions. Every sentence character is now covered by a contiguous ordered word or particle reference; `日本語が好き` includes the previously missing `好き` vocabulary item. Resolver relationships also declare whether they present a composition or a complete pronunciation.
+
+## Hidden small-tsu forms
+
+Every standalone or compound entry containing `っ` or `ッ` now sets `hidden: true`. The records remain in the pack with their existing parent references for resolution and detail use, but neither they nor their descendants can leak into the end of the directly browsable Kana chart.

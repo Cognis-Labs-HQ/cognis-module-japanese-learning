@@ -620,6 +620,26 @@ test("Kana variants include complete small, yoon, and sokuon sets", () => {
     }
 });
 
+test("small-tsu forms stay hidden while retaining their parent links", () => {
+    const { records } = loadPack();
+    const characters = records.filter(({ layer }) => layer === "characters");
+    const hiddenCharacters = characters.filter(({ hidden }) => hidden === true);
+    assert.equal(hiddenCharacters.length, 42);
+    assert.ok(hiddenCharacters.every(({ label }) => /[っッ]/u.test(label)));
+    for (const entry of hiddenCharacters) {
+        assert.equal(entry.references.length, 1);
+        assert.ok(
+            characters.some(({ id }) => id === entry.references[0].entryId),
+            `${entry.id} must retain its parent reference`,
+        );
+    }
+    assert.ok(
+        characters
+            .filter(({ label }) => /[っッ]/u.test(label))
+            .every(({ hidden }) => hidden === true),
+    );
+});
+
 test("lexical and sentence pronunciation use the Library placement field", () => {
     const { schema, records } = loadPack();
     for (const semanticRole of ["lexicalUnit", "orderedLexicalSequence"]) {
