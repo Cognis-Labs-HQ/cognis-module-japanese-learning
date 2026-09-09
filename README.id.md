@@ -53,7 +53,7 @@ Filter lencana sistem tulisan dan JLPT kini mendeklarasikan grup filter bernama 
 
 ## Varian kana bertingkat
 
-Varian kana tetap berada dalam sistem tulisannya dan mencakup dakuten, handakuten, kana kecil, kontraksi yōon standar, serta geminasi sokuon umum. Tiga bentuk kontraksi membentuk rantai bertingkat seperti `き` → `きゃ` → `きゅ` → `きょ` dan `し` → `じ` → `じゃ`, sehingga setiap bentuk tetap terhubung dan tidak ada induk yang melampaui tiga slot anak renderer.
+Varian kana tetap berada dalam sistem tulisannya dan mencakup dakuten, handakuten, kana kecil, kontraksi yōon standar, serta geminasi sokuon umum. Setiap bentuk kontraksi menaut langsung ke kana yang menyediakan bunyi utamanya: `きゃ`, `きゅ`, dan `きょ` semuanya menaut ke `き`, sedangkan `じゃ`, `じゅ`, dan `じょ` semuanya menaut ke `じ`. Induk bersuara tetap menaut ke bentuk tak bersuaranya sehingga tingkatan bermakna `し` → `じ` → `じゃ` dipertahankan.
 
 ## Kontrak penyajian Pustaka terbaru
 

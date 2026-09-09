@@ -76,7 +76,7 @@ Character-script and JLPT badge filters now declare named, mutually exclusive fi
 
 ## Nested kana variants
 
-Kana variants remain within their own writing system and cover dakuten, handakuten, small kana, standard yōon contractions, and common sokuon geminations. Contracted triplets form nested chains—such as `き` → `きゃ` → `きゅ` → `きょ` and `し` → `じ` → `じゃ`—so every form remains attached and no parent exceeds the renderer’s three available child slots.
+Kana variants remain within their own writing system and cover dakuten, handakuten, small kana, standard yōon contractions, and common sokuon geminations. Every contracted form links directly to the kana that supplies its primary sound: `きゃ`, `きゅ`, and `きょ` all link to `き`, while `じゃ`, `じゅ`, and `じょ` all link to `じ`. The voiced parent still links to its unvoiced form, preserving the meaningful `し` → `じ` → `じゃ` nesting.
 
 ## Latest Library presentation contract
 
@@ -161,3 +161,5 @@ Aligned ordered compounds with the latest Library preflight restrictions. Every 
 - [7f8cc35](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/7f8cc35b43f92480c77dba4807bf4f237e4ebd8d)
 
 - [e5eae65](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/e5eae656076a0bcb31c74e7f388c06b4ed790815)
+
+- [6677a4f](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/6677a4f80b97c2d3f056b189002e2c0f30f88e22)

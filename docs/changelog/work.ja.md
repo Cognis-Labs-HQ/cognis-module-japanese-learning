@@ -76,7 +76,7 @@ Cognis PR #214 に合わせ、名前空間の所有権、ローカライズ済�
 
 ## 入れ子のかなバリアント
 
-かなバリアントは同じ文字種内に限定し、濁点・半濁点、小書きかな、標準的な拗音、一般的な促音形を収録します。拗音の 3 形は `き` → `きゃ` → `きゅ` → `きょ` や `し` → `じ` → `じゃ` のような入れ子チェーンにし、すべての形を親に接続したまま、renderer の親ごとの 3 子スロットを超えないようにします。
+かなバリアントは同じ文字種内に限定し、濁点・半濁点、小書きかな、標準的な拗音、一般的な促音形を収録します。各拗音は主音を持つかなへ直接リンクします。`きゃ`・`きゅ`・`きょ` はすべて `き` の子、`じゃ`・`じゅ`・`じょ` はすべて `じ` の子です。有声の親は清音形へのリンクを維持するため、意味のある `し` → `じ` → `じゃ` の入れ子も保たれます。
 
 ## 最新のライブラリ表示契約
 
@@ -161,3 +161,5 @@ Cognis PR #214 に合わせ、名前空間の所有権、ローカライズ済�
 - [7f8cc35](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/7f8cc35b43f92480c77dba4807bf4f237e4ebd8d)
 
 - [e5eae65](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/e5eae656076a0bcb31c74e7f388c06b4ed790815)
+
+- [6677a4f](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/6677a4f80b97c2d3f056b189002e2c0f30f88e22)

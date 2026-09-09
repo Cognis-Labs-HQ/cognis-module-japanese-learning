@@ -76,7 +76,7 @@ Filter lencana sistem tulisan dan JLPT kini mendeklarasikan grup filter bernama 
 
 ## Varian kana bertingkat
 
-Varian kana tetap berada dalam sistem tulisannya dan mencakup dakuten, handakuten, kana kecil, kontraksi yōon standar, serta geminasi sokuon umum. Tiga bentuk kontraksi membentuk rantai bertingkat seperti `き` → `きゃ` → `きゅ` → `きょ` dan `し` → `じ` → `じゃ`, sehingga setiap bentuk tetap terhubung dan tidak ada induk yang melampaui tiga slot anak renderer.
+Varian kana tetap berada dalam sistem tulisannya dan mencakup dakuten, handakuten, kana kecil, kontraksi yōon standar, serta geminasi sokuon umum. Setiap bentuk kontraksi menaut langsung ke kana yang menyediakan bunyi utamanya: `きゃ`, `きゅ`, dan `きょ` semuanya menaut ke `き`, sedangkan `じゃ`, `じゅ`, dan `じょ` semuanya menaut ke `じ`. Induk bersuara tetap menaut ke bentuk tak bersuaranya sehingga tingkatan bermakna `し` → `じ` → `じゃ` dipertahankan.
 
 ## Kontrak penyajian Pustaka terbaru
 
@@ -161,3 +161,5 @@ Gabungan berurutan kini selaras dengan pembatasan prapemeriksaan Pustaka terbaru
 - [7f8cc35](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/7f8cc35b43f92480c77dba4807bf4f237e4ebd8d)
 
 - [e5eae65](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/e5eae656076a0bcb31c74e7f388c06b4ed790815)
+
+- [6677a4f](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/6677a4f80b97c2d3f056b189002e2c0f30f88e22)

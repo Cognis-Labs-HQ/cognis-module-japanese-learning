@@ -553,22 +553,31 @@ test("character variants use dynamically placed nested relationships", () => {
         }
     };
     for (const chain of [
-        ["し", "じ", "じゃ", "じゅ", "じょ"],
-        ["ひ", "ひゃ", "ひゅ", "ひょ"],
+        ["し", "じ", "じゃ"],
         ["て", "って"],
-        ["シ", "ジ", "ジャ", "ジュ", "ジョ"],
-        ["ヒ", "ヒャ", "ヒュ", "ヒョ"],
+        ["シ", "ジ", "ジャ"],
         ["テ", "ッテ"],
     ]) {
         expectChain(chain);
     }
-    const childCounts = new Map();
-    for (const child of characters.values()) {
-        const parentId = child.references?.[0].entryId;
-        if (parentId)
-            childCounts.set(parentId, (childCounts.get(parentId) ?? 0) + 1);
+    for (const [parentLabel, childLabels] of [
+        ["き", ["きゃ", "きゅ", "きょ"]],
+        ["じ", ["じゃ", "じゅ", "じょ"]],
+        ["ひ", ["ひゃ", "ひゅ", "ひょ"]],
+        ["キ", ["キャ", "キュ", "キョ"]],
+        ["ジ", ["ジャ", "ジュ", "ジョ"]],
+        ["ヒ", ["ヒャ", "ヒュ", "ヒョ"]],
+    ]) {
+        for (const childLabel of childLabels) {
+            const child = [...characters.values()].find(
+                ({ label }) => label === childLabel,
+            );
+            assert.equal(
+                characters.get(child.references[0].entryId).label,
+                parentLabel,
+            );
+        }
     }
-    assert.ok([...childCounts.values()].every((count) => count <= 3));
 });
 
 test("Kana variants include complete small, yoon, and sokuon sets", () => {

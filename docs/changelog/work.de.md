@@ -76,7 +76,7 @@ Filterabzeichen für Schriftsystem und JLPT deklarieren nun benannte, gegenseiti
 
 ## Verschachtelte Kana-Varianten
 
-Kana-Varianten bleiben innerhalb ihres Schriftsystems und umfassen Dakuten, Handakuten, kleine Kana, übliche Yōon-Verbindungen und verbreitete Sokuon-Geminationen. Kontrahierte Dreiergruppen bilden verschachtelte Ketten wie `き` → `きゃ` → `きゅ` → `きょ` und `し` → `じ` → `じゃ`, damit jede Form verbunden bleibt und kein Elternzeichen die drei verfügbaren Kindpositionen des Renderers überschreitet.
+Kana-Varianten bleiben innerhalb ihres Schriftsystems und umfassen Dakuten, Handakuten, kleine Kana, übliche Yōon-Verbindungen und verbreitete Sokuon-Geminationen. Jede kontrahierte Form verweist direkt auf das Kana ihres Hauptlauts: `きゃ`, `きゅ` und `きょ` verweisen alle auf `き`; `じゃ`, `じゅ` und `じょ` verweisen alle auf `じ`. Das stimmhafte Elternzeichen verweist weiterhin auf seine stimmlose Form und bewahrt damit die sinnvolle Verschachtelung `し` → `じ` → `じゃ`.
 
 ## Aktueller Darstellungsvertrag der Bibliothek
 
@@ -161,3 +161,5 @@ Geordnete Zusammensetzungen entsprechen nun den neuesten Vorabprüfungen der Bib
 - [7f8cc35](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/7f8cc35b43f92480c77dba4807bf4f237e4ebd8d)
 
 - [e5eae65](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/e5eae656076a0bcb31c74e7f388c06b4ed790815)
+
+- [6677a4f](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/6677a4f80b97c2d3f056b189002e2c0f30f88e22)

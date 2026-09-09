@@ -53,7 +53,7 @@ Character-script and JLPT badge filters now declare named, mutually exclusive fi
 
 ## Nested kana variants
 
-Kana variants remain within their own writing system and cover dakuten, handakuten, small kana, standard yōon contractions, and common sokuon geminations. Contracted triplets form nested chains—such as `き` → `きゃ` → `きゅ` → `きょ` and `し` → `じ` → `じゃ`—so every form remains attached and no parent exceeds the renderer’s three available child slots.
+Kana variants remain within their own writing system and cover dakuten, handakuten, small kana, standard yōon contractions, and common sokuon geminations. Every contracted form links directly to the kana that supplies its primary sound: `きゃ`, `きゅ`, and `きょ` all link to `き`, while `じゃ`, `じゅ`, and `じょ` all link to `じ`. The voiced parent still links to its unvoiced form, preserving the meaningful `し` → `じ` → `じゃ` nesting.
 
 ## Latest Library presentation contract
 
