@@ -98,3 +98,7 @@ Aligned ordered compounds with the latest Library preflight restrictions. Every 
 ## Hidden small-tsu forms
 
 Every standalone or compound entry containing `っ` or `ッ` now sets `hidden: true`. The records remain in the pack with their existing parent references for resolution and detail use, but neither they nor their descendants can leak into the end of the directly browsable Kana chart.
+
+## Filter-scoped Kana gaps
+
+The four explicit chart gaps are shared between paired Hiragana and Katakana grid positions. Interleaving each corresponding script entry lets the Library filter remove the inactive script without leaving its gaps at the beginning or end of the selected chart.

@@ -809,7 +809,7 @@ test("hiragana and katakana include complete gojuon and voiced tables", () => {
     }
 });
 
-test("character grid preserves visible five-column kana chart blanks", () => {
+test("character grid shares filter-stable five-column Kana chart blanks", () => {
     const { schema, records } = loadPack();
     const characterLayer = schema.layers.find(({ id }) => id === "characters");
     assert.equal(characterLayer.grid.rowSize, 5);
@@ -817,25 +817,37 @@ test("character grid preserves visible five-column kana chart blanks", () => {
         characterLayer.grid.items.filter(
             (item) => typeof item === "object" && item.blank === true,
         ).length,
-        8,
+        4,
     );
 
-    const labelsById = new Map(
+    const charactersById = new Map(
         records
             .filter(({ layer }) => layer === "characters")
-            .map(({ id, label }) => [id, label]),
+            .map((entry) => [entry.id, entry]),
     );
-    const labels = characterLayer.grid.items.map((item) =>
-        typeof item === "object" ? null : labelsById.get(item),
-    );
-    const hiragana = labels.slice(0, 50);
-    const katakana = labels.slice(50);
+    const visibleLabels = (characterClass) =>
+        characterLayer.grid.items
+            .filter(
+                (item) =>
+                    typeof item === "object" ||
+                    charactersById.get(item).fields.character_class ===
+                        characterClass,
+            )
+            .map((item) =>
+                typeof item === "object"
+                    ? null
+                    : charactersById.get(item).label,
+            );
+    const hiragana = visibleLabels("hiragana");
+    const katakana = visibleLabels("katakana");
+    assert.equal(hiragana.length, 50);
+    assert.equal(katakana.length, 50);
     assert.deepEqual(hiragana.slice(35, 40), ["や", null, "ゆ", null, "よ"]);
     assert.deepEqual(hiragana.slice(45, 50), ["わ", null, "を", null, "ん"]);
     assert.deepEqual(katakana.slice(35, 40), ["ヤ", null, "ユ", null, "ヨ"]);
     assert.deepEqual(katakana.slice(45, 50), ["ワ", null, "ヲ", null, "ン"]);
-    assert.equal(labels.includes("きゃ"), false);
-    assert.equal(labels.includes("キュ"), false);
+    assert.equal(hiragana[0], "あ");
+    assert.equal(katakana[0], "ア");
 });
 
 test("only the Kana layer requests minimal cards", () => {
