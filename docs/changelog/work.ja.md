@@ -175,3 +175,9 @@ Cognis PR #214 に合わせ、名前空間の所有権、ローカライズ済�
 4 つの明示的な表の空欄を、対応するひらがなとカタカナのグリッド位置で共有します。各文字種の対応項目を交互に配置することで、ライブラリのフィルターが非選択の文字種を除外しても、その空欄が選択中の表の先頭や末尾に残りません。
 
 - [eaae470](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/eaae470ad48226b0f1c3e931748511eae7178bb1)
+
+## 関連語彙
+
+語彙は、合成を表さない同一レイヤー内の `related` 参照を宣言できます。`日本語` は関連語として `日本` を参照し、この意味的な関連を表記、発音、その他のリゾルバー合成として扱いません。
+
+- [15bd85b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/15bd85bf6124b59db8e74fd2dee48622cfe0e340)

@@ -99,3 +99,7 @@ Setiap entri mandiri atau gabungan yang mengandung `っ` atau `ッ` kini menetap
 ## Celah Kana yang mengikuti filter
 
 Empat celah bagan eksplisit digunakan bersama oleh posisi kisi Hiragana dan Katakana yang berpasangan. Penyelang-selingan setiap entri aksara yang sesuai memungkinkan filter Pustaka menghapus aksara yang tidak aktif tanpa meninggalkan celahnya di awal atau akhir bagan terpilih.
+
+## Kosakata terkait
+
+Kosakata dapat mendeklarasikan referensi `related` intralapisan yang bukan komposisi. `日本語` kini menunjuk ke `日本` sebagai kata terkait tanpa memperlakukan kaitan semantik tersebut sebagai ejaan, pelafalan, atau komposisi resolver lain.

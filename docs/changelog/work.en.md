@@ -175,3 +175,9 @@ Every standalone or compound entry containing `っ` or `ッ` now sets `hidden: t
 The four explicit chart gaps are shared between paired Hiragana and Katakana grid positions. Interleaving each corresponding script entry lets the Library filter remove the inactive script without leaving its gaps at the beginning or end of the selected chart.
 
 - [eaae470](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/eaae470ad48226b0f1c3e931748511eae7178bb1)
+
+## Related vocabulary
+
+Vocabulary can declare non-compositional, intra-layer `related` references. `日本語` now points to `日本` as a related word without treating that semantic association as spelling, pronunciation, or another resolver composition.
+
+- [15bd85b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/15bd85bf6124b59db8e74fd2dee48622cfe0e340)

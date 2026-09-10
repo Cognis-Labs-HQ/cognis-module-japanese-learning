@@ -102,3 +102,7 @@ Jeder eigenständige oder zusammengesetzte Eintrag mit `っ` oder `ッ` setzt nu
 ## Filtergebundene Kana-Lücken
 
 Die vier ausdrücklichen Tabellenlücken werden von den entsprechenden Hiragana- und Katakana-Rasterpositionen gemeinsam genutzt. Durch das abwechselnde Anordnen der jeweiligen Schriftzeichen kann der Bibliotheksfilter die inaktive Schrift entfernen, ohne deren Lücken am Anfang oder Ende der ausgewählten Tabelle stehen zu lassen.
+
+## Verwandter Wortschatz
+
+Wörter können nicht-kompositorische, ebeneninterne `related`-Verweise deklarieren. `日本語` verweist jetzt als verwandtes Wort auf `日本`, ohne diese semantische Verbindung als Schreibweise, Aussprache oder andere Resolver-Komposition zu behandeln.

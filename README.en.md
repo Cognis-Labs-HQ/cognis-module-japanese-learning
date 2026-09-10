@@ -102,3 +102,7 @@ Every standalone or compound entry containing `っ` or `ッ` now sets `hidden: t
 ## Filter-scoped Kana gaps
 
 The four explicit chart gaps are shared between paired Hiragana and Katakana grid positions. Interleaving each corresponding script entry lets the Library filter remove the inactive script without leaving its gaps at the beginning or end of the selected chart.
+
+## Related vocabulary
+
+Vocabulary can declare non-compositional, intra-layer `related` references. `日本語` now points to `日本` as a related word without treating that semantic association as spelling, pronunciation, or another resolver composition.

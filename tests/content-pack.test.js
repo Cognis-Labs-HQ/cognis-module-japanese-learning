@@ -640,6 +640,22 @@ test("small-tsu forms stay hidden while retaining their parent links", () => {
     );
 });
 
+test("related vocabulary uses a non-compositional intra-layer relationship", () => {
+    const { schema, records } = loadPack();
+    const wordLayer = schema.layers.find(({ id }) => id === "words");
+    const related = wordLayer.relationships.find(({ id }) => id === "related");
+    assert.equal(related.targetLayer, "words");
+    assert.equal(related.onDelete, "detach");
+    assert.equal(related.resolverRole, undefined);
+    assert.equal(related.presentationRole, undefined);
+
+    const nihongo = records.find(({ id }) => id === "ja:word:nihongo");
+    assert.deepEqual(
+        nihongo.references.find(({ relation }) => relation === "related"),
+        { entryId: "ja:word:nihon", relation: "related" },
+    );
+});
+
 test("lexical and sentence pronunciation use the Library placement field", () => {
     const { schema, records } = loadPack();
     for (const semanticRole of ["lexicalUnit", "orderedLexicalSequence"]) {

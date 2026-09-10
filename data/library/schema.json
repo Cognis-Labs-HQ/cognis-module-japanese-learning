@@ -1,6 +1,6 @@
 {
     "id": "japanese-core",
-    "version": 25,
+    "version": 26,
     "namespace": "ja",
     "language": "ja",
     "metadata": {
@@ -503,6 +503,19 @@
                     "onDelete": "restrict",
                     "resolverRole": "explicit",
                     "presentationRole": "composition"
+                },
+                {
+                    "id": "related",
+                    "targetLayer": "words",
+                    "metadata": {
+                        "labels": {
+                            "de": "Verwandte Wörter",
+                            "en": "Related",
+                            "id": "Terkait",
+                            "ja": "関連語"
+                        }
+                    },
+                    "onDelete": "detach"
                 },
                 {
                     "id": "definitions",

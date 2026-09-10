@@ -175,3 +175,9 @@ Setiap entri mandiri atau gabungan yang mengandung `っ` atau `ッ` kini menetap
 Empat celah bagan eksplisit digunakan bersama oleh posisi kisi Hiragana dan Katakana yang berpasangan. Penyelang-selingan setiap entri aksara yang sesuai memungkinkan filter Pustaka menghapus aksara yang tidak aktif tanpa meninggalkan celahnya di awal atau akhir bagan terpilih.
 
 - [eaae470](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/eaae470ad48226b0f1c3e931748511eae7178bb1)
+
+## Kosakata terkait
+
+Kosakata dapat mendeklarasikan referensi `related` intralapisan yang bukan komposisi. `日本語` kini menunjuk ke `日本` sebagai kata terkait tanpa memperlakukan kaitan semantik tersebut sebagai ejaan, pelafalan, atau komposisi resolver lain.
+
+- [15bd85b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/15bd85bf6124b59db8e74fd2dee48622cfe0e340)

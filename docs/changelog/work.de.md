@@ -175,3 +175,9 @@ Jeder eigenständige oder zusammengesetzte Eintrag mit `っ` oder `ッ` setzt nu
 Die vier ausdrücklichen Tabellenlücken werden von den entsprechenden Hiragana- und Katakana-Rasterpositionen gemeinsam genutzt. Durch das abwechselnde Anordnen der jeweiligen Schriftzeichen kann der Bibliotheksfilter die inaktive Schrift entfernen, ohne deren Lücken am Anfang oder Ende der ausgewählten Tabelle stehen zu lassen.
 
 - [eaae470](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/eaae470ad48226b0f1c3e931748511eae7178bb1)
+
+## Verwandter Wortschatz
+
+Wörter können nicht-kompositorische, ebeneninterne `related`-Verweise deklarieren. `日本語` verweist jetzt als verwandtes Wort auf `日本`, ohne diese semantische Verbindung als Schreibweise, Aussprache oder andere Resolver-Komposition zu behandeln.
+
+- [15bd85b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/15bd85bf6124b59db8e74fd2dee48622cfe0e340)
