@@ -580,6 +580,37 @@ test("character variants use dynamically placed nested relationships", () => {
     }
 });
 
+test("character variants cannot resolve to their own Library identity", () => {
+    const { schema, records } = loadPack();
+    const characterLayer = schema.layers.find(({ id }) => id === "characters");
+    const variantRelations = new Set(
+        characterLayer.relationships
+            .filter(({ variant }) => variant === true)
+            .map(({ id }) => id),
+    );
+    const characters = records.filter(({ layer }) => layer === "characters");
+    const identities = new Set();
+    for (const character of characters) {
+        const identity = JSON.stringify({
+            label: character.label,
+            hidden: character.hidden === true,
+            fields: character.fields,
+            references: character.references ?? [],
+        });
+        assert.equal(
+            identities.has(identity),
+            false,
+            `${character.id} is unique`,
+        );
+        identities.add(identity);
+        for (const reference of character.references ?? []) {
+            if (variantRelations.has(reference.relation)) {
+                assert.notEqual(reference.entryId, character.id);
+            }
+        }
+    }
+});
+
 test("Kana variants include complete small, yoon, and sokuon sets", () => {
     const { records } = loadPack();
     const characters = records.filter(({ layer }) => layer === "characters");

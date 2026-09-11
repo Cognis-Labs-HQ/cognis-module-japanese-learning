@@ -107,3 +107,7 @@ Vocabulary can declare non-compositional, intra-layer `related` references. `日
 ## Complete Kana deletion graph
 
 The `好き` vocabulary record now declares its ordered `す` and `き` Kana spelling. It therefore participates in the same reference dependency graph as every other vocabulary entry and is included when Cognis previews or performs a cascading deletion of the Kana charts.
+
+## Stable Kana variant identities
+
+The pack is republished for the latest Library identity safeguards. Every Kana record has a distinct content identity, and every variant reference targets a different parent record, allowing re-ingestion to rebuild stale edges without rendering a parent as its own child.
