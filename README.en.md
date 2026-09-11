@@ -114,3 +114,7 @@ The `好き` vocabulary record now declares its ordered `す` and `き` Kana spe
 ## Stable Kana variant identities
 
 The pack is republished for the latest Library identity safeguards. Every Kana record has a distinct content identity, and every variant reference targets a different parent record, allowing re-ingestion to rebuild stale edges without rendering a parent as its own child.
+
+## Full-size and small i
+
+The detail view now distinguishes full-size `い`/`イ`, which represent an independent mora, from small `ぃ`/`ィ`, which combine with a preceding character for extended sounds. Localized usage notes include the common Katakana example `フィ` (fi).

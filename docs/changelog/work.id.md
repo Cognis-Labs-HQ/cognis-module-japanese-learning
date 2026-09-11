@@ -199,3 +199,9 @@ Paket diterbitkan ulang untuk perlindungan identitas Pustaka terbaru. Setiap rek
 Telah diverifikasi bahwa dependensi penghapusan Hiragana tidak pernah mencapai rekaman Katakana. Sel tambahan yang tersisa berasal dari Pustaka host yang merender ID kisi terhapus sebagai celah anonim yang tidak dapat difilter; perubahan renderer yang diperlukan dicatat di `TODO.md` karena kontrak kisi paket konten tidak dapat melampirkan metadata aksara ke celah fallback.
 
 - [15b6878](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/15b68784f9029e9140e02dcd5875cd575d41fe5c)
+
+## I ukuran penuh dan kecil
+
+Tampilan detail kini membedakan `い`/`イ` berukuran penuh, yang mewakili mora mandiri, dari `ぃ`/`ィ` kecil, yang bergabung dengan karakter sebelumnya untuk bunyi lanjutan. Catatan penggunaan terlokalisasi mencantumkan contoh Katakana umum `フィ` (fi).
+
+- [6f03c95](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/6f03c95c01454da7a8fb61e0a498a364a19e1701)

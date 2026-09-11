@@ -199,3 +199,9 @@ Das Paket wird für die neuesten Identitätsschutzmaßnahmen der Bibliothek neu 
 Es wurde überprüft, dass Löschabhängigkeiten von Hiragana niemals Katakana-Datensätze erreichen. Die verbleibenden zusätzlichen Zellen entstehen dadurch, dass die Host-Bibliothek gelöschte Raster-IDs als anonyme, nicht filterbare Leerstellen darstellt. Die erforderliche Renderer-Änderung ist in `TODO.md` festgehalten, da der Rastervertrag des Inhaltspakets Fallback-Leerstellen keine Schriftmetadaten zuordnen kann.
 
 - [15b6878](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/15b68784f9029e9140e02dcd5875cd575d41fe5c)
+
+## Großes und kleines i
+
+Die Detailansicht unterscheidet jetzt `い`/`イ` in normaler Größe, die eine eigenständige Mora darstellen, von den kleinen `ぃ`/`ィ`, die sich für erweiterte Laute mit einem vorausgehenden Zeichen verbinden. Lokalisierte Verwendungshinweise enthalten das gebräuchliche Katakana-Beispiel `フィ` (fi).
+
+- [6f03c95](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/6f03c95c01454da7a8fb61e0a498a364a19e1701)

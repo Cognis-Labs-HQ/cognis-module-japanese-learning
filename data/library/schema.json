@@ -1,6 +1,6 @@
 {
     "id": "japanese-core",
-    "version": 28,
+    "version": 29,
     "namespace": "ja",
     "language": "ja",
     "metadata": {
@@ -79,10 +79,31 @@
                         "required": true,
                         "defaultTag": "hiragana"
                     }
+                },
+                {
+                    "id": "usage_note",
+                    "metadata": {
+                        "labels": {
+                            "de": "Verwendungshinweis",
+                            "en": "Usage Note",
+                            "id": "Catatan Penggunaan",
+                            "ja": "使用上の注意"
+                        }
+                    },
+                    "type": "localizedText",
+                    "detail": {
+                        "renderer": "text",
+                        "order": 4
+                    }
                 }
             ],
             "detail": {
-                "fieldOrder": ["pronunciation", "audio", "character_class"]
+                "fieldOrder": [
+                    "pronunciation",
+                    "audio",
+                    "character_class",
+                    "usage_note"
+                ]
             },
             "activityCompatibility": ["study:recognition", "study:writing"],
             "interestVeins": ["language:japanese"],

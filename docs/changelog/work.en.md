@@ -199,3 +199,9 @@ The pack is republished for the latest Library identity safeguards. Every Kana r
 Verified that Hiragana deletion dependencies never reach Katakana records. The remaining extra cells come from the host Library rendering deleted grid IDs as anonymous, unfilterable blanks; the required renderer change is recorded in `TODO.md` because the content-pack grid contract cannot attach script metadata to fallback blanks.
 
 - [15b6878](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/15b68784f9029e9140e02dcd5875cd575d41fe5c)
+
+## Full-size and small i
+
+The detail view now distinguishes full-size `い`/`イ`, which represent an independent mora, from small `ぃ`/`ィ`, which combine with a preceding character for extended sounds. Localized usage notes include the common Katakana example `フィ` (fi).
+
+- [6f03c95](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/6f03c95c01454da7a8fb61e0a498a364a19e1701)

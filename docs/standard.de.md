@@ -111,3 +111,7 @@ Der Wortschatzeintrag `好き` deklariert jetzt seine geordnete Kana-Schreibweis
 ## Stabile Identitäten für Kana-Varianten
 
 Das Paket wird für die neuesten Identitätsschutzmaßnahmen der Bibliothek neu veröffentlicht. Jeder Kana-Datensatz besitzt eine eigene Inhaltsidentität, und jeder Variantenverweis zielt auf einen anderen übergeordneten Datensatz. Dadurch kann eine erneute Aufnahme veraltete Kanten neu aufbauen, ohne ein Elternzeichen als sein eigenes Kind darzustellen.
+
+## Großes und kleines i
+
+Die Detailansicht unterscheidet jetzt `い`/`イ` in normaler Größe, die eine eigenständige Mora darstellen, von den kleinen `ぃ`/`ィ`, die sich für erweiterte Laute mit einem vorausgehenden Zeichen verbinden. Lokalisierte Verwendungshinweise enthalten das gebräuchliche Katakana-Beispiel `フィ` (fi).
