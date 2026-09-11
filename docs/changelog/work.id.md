@@ -193,3 +193,9 @@ Rekaman kosakata `好き` kini mendeklarasikan ejaan Kana `す` dan `き` secara
 Paket diterbitkan ulang untuk perlindungan identitas Pustaka terbaru. Setiap rekaman Kana memiliki identitas konten yang berbeda dan setiap referensi varian menunjuk ke rekaman induk yang berbeda, sehingga impor ulang dapat membangun kembali edge lama tanpa merender induk sebagai anaknya sendiri.
 
 - [01606c4](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/01606c49ade781db72f6652ca779517732eed7a6)
+
+## Penghapusan Kana yang terisolasi
+
+Telah diverifikasi bahwa dependensi penghapusan Hiragana tidak pernah mencapai rekaman Katakana. Sel tambahan yang tersisa berasal dari Pustaka host yang merender ID kisi terhapus sebagai celah anonim yang tidak dapat difilter; perubahan renderer yang diperlukan dicatat di `TODO.md` karena kontrak kisi paket konten tidak dapat melampirkan metadata aksara ke celah fallback.
+
+- [15b6878](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/15b68784f9029e9140e02dcd5875cd575d41fe5c)

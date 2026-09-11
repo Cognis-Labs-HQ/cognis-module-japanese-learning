@@ -193,3 +193,9 @@ The `好き` vocabulary record now declares its ordered `す` and `き` Kana spe
 The pack is republished for the latest Library identity safeguards. Every Kana record has a distinct content identity, and every variant reference targets a different parent record, allowing re-ingestion to rebuild stale edges without rendering a parent as its own child.
 
 - [01606c4](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/01606c49ade781db72f6652ca779517732eed7a6)
+
+## Isolated Kana deletion
+
+Verified that Hiragana deletion dependencies never reach Katakana records. The remaining extra cells come from the host Library rendering deleted grid IDs as anonymous, unfilterable blanks; the required renderer change is recorded in `TODO.md` because the content-pack grid contract cannot attach script metadata to fallback blanks.
+
+- [15b6878](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/15b68784f9029e9140e02dcd5875cd575d41fe5c)

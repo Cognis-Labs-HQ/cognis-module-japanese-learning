@@ -193,3 +193,9 @@ Der Wortschatzeintrag `好き` deklariert jetzt seine geordnete Kana-Schreibweis
 Das Paket wird für die neuesten Identitätsschutzmaßnahmen der Bibliothek neu veröffentlicht. Jeder Kana-Datensatz besitzt eine eigene Inhaltsidentität, und jeder Variantenverweis zielt auf einen anderen übergeordneten Datensatz. Dadurch kann eine erneute Aufnahme veraltete Kanten neu aufbauen, ohne ein Elternzeichen als sein eigenes Kind darzustellen.
 
 - [01606c4](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/01606c49ade781db72f6652ca779517732eed7a6)
+
+## Isoliertes Löschen von Kana
+
+Es wurde überprüft, dass Löschabhängigkeiten von Hiragana niemals Katakana-Datensätze erreichen. Die verbleibenden zusätzlichen Zellen entstehen dadurch, dass die Host-Bibliothek gelöschte Raster-IDs als anonyme, nicht filterbare Leerstellen darstellt. Die erforderliche Renderer-Änderung ist in `TODO.md` festgehalten, da der Rastervertrag des Inhaltspakets Fallback-Leerstellen keine Schriftmetadaten zuordnen kann.
+
+- [15b6878](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/15b68784f9029e9140e02dcd5875cd575d41fe5c)

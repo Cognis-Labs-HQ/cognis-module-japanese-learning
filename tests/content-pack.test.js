@@ -881,6 +881,35 @@ test("hiragana and katakana include complete gojuon and voiced tables", () => {
     }
 });
 
+test("deleting Hiragana cannot cascade into Katakana records", () => {
+    const { records } = loadPack();
+    const characters = records.filter(({ layer }) => layer === "characters");
+    const cascadeIds = new Set(
+        characters
+            .filter(({ fields }) => fields.character_class === "hiragana")
+            .map(({ id }) => id),
+    );
+    let changed = true;
+    while (changed) {
+        changed = false;
+        for (const entry of records) {
+            if (
+                !cascadeIds.has(entry.id) &&
+                (entry.references ?? []).some(({ entryId }) =>
+                    cascadeIds.has(entryId),
+                )
+            ) {
+                cascadeIds.add(entry.id);
+                changed = true;
+            }
+        }
+    }
+    const katakanaIds = characters
+        .filter(({ fields }) => fields.character_class === "katakana")
+        .map(({ id }) => id);
+    assert.ok(katakanaIds.every((id) => !cascadeIds.has(id)));
+});
+
 test("character grid shares filter-stable five-column Kana chart blanks", () => {
     const { schema, records } = loadPack();
     const characterLayer = schema.layers.find(({ id }) => id === "characters");
