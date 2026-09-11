@@ -640,6 +640,31 @@ test("small-tsu forms stay hidden while retaining their parent links", () => {
     );
 });
 
+test("every vocabulary entry participates in the Kana deletion dependency graph", () => {
+    const { records } = loadPack();
+    const recordsById = new Map(records.map((record) => [record.id, record]));
+    const dependsOnKana = (entry, visited = new Set()) => {
+        if (entry.layer === "characters") return true;
+        if (visited.has(entry.id)) return false;
+        const nextVisited = new Set(visited).add(entry.id);
+        return (entry.references ?? []).some(({ entryId }) => {
+            const target = recordsById.get(entryId);
+            return target && dependsOnKana(target, nextVisited);
+        });
+    };
+    const vocabulary = records.filter(({ layer }) => layer === "words");
+    assert.ok(vocabulary.every((entry) => dependsOnKana(entry)));
+
+    const suki = recordsById.get("ja:word:suki");
+    assert.deepEqual(
+        suki.references.filter(({ relation }) => relation === "kana-spelling"),
+        [
+            { entryId: "ja:char:su", relation: "kana-spelling", position: 0 },
+            { entryId: "ja:char:ki", relation: "kana-spelling", position: 1 },
+        ],
+    );
+});
+
 test("related vocabulary uses a non-compositional intra-layer relationship", () => {
     const { schema, records } = loadPack();
     const wordLayer = schema.layers.find(({ id }) => id === "words");

@@ -181,3 +181,9 @@ Cognis PR #214 に合わせ、名前空間の所有権、ローカライズ済�
 語彙は、合成を表さない同一レイヤー内の `related` 参照を宣言できます。`日本語` は関連語として `日本` を参照し、この意味的な関連を表記、発音、その他のリゾルバー合成として扱いません。
 
 - [15bd85b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/15bd85bf6124b59db8e74fd2dee48622cfe0e340)
+
+## 完全な仮名削除グラフ
+
+語彙項目 `好き` に、順序付きの仮名表記 `す` と `き` を宣言しました。これにより、他のすべての語彙項目と同じ参照依存グラフに含まれ、Cognis が仮名表をカスケード削除するときのプレビューと実行の対象になります。
+
+- [408a5c9](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/408a5c957033a9200286e9fed7e9a6d0fbfa3873)

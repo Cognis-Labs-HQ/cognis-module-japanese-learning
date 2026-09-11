@@ -106,3 +106,7 @@ The four explicit chart gaps are shared between paired Hiragana and Katakana gri
 ## Related vocabulary
 
 Vocabulary can declare non-compositional, intra-layer `related` references. `日本語` now points to `日本` as a related word without treating that semantic association as spelling, pronunciation, or another resolver composition.
+
+## Complete Kana deletion graph
+
+The `好き` vocabulary record now declares its ordered `す` and `き` Kana spelling. It therefore participates in the same reference dependency graph as every other vocabulary entry and is included when Cognis previews or performs a cascading deletion of the Kana charts.
