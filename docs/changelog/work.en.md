@@ -200,8 +200,8 @@ Verified that Hiragana deletion dependencies never reach Katakana records. The r
 
 - [15b6878](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/15b68784f9029e9140e02dcd5875cd575d41fe5c)
 
-## Full-size and small i
+## Explicit Kana child hierarchies
 
-The detail view now distinguishes full-size `い`/`イ`, which represent an independent mora, from small `ぃ`/`ィ`, which combine with a preceding character for extended sounds. Localized usage notes include the common Katakana example `フィ` (fi).
+Aligned with the latest Library relationship contract by marking Kana parent relationships as both variants and spatial children. The suppressed duplicate relationship section makes the explicit `usage_note` field unnecessary, so it and its four record values have been removed.
 
-- [6f03c95](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/6f03c95c01454da7a8fb61e0a498a364a19e1701)
+- [6734506](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/67345060175f87f4a73e1f07598efcb2df814edb)

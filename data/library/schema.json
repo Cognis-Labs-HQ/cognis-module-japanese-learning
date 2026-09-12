@@ -1,6 +1,6 @@
 {
     "id": "japanese-core",
-    "version": 29,
+    "version": 30,
     "namespace": "ja",
     "language": "ja",
     "metadata": {
@@ -79,31 +79,10 @@
                         "required": true,
                         "defaultTag": "hiragana"
                     }
-                },
-                {
-                    "id": "usage_note",
-                    "metadata": {
-                        "labels": {
-                            "de": "Verwendungshinweis",
-                            "en": "Usage Note",
-                            "id": "Catatan Penggunaan",
-                            "ja": "使用上の注意"
-                        }
-                    },
-                    "type": "localizedText",
-                    "detail": {
-                        "renderer": "text",
-                        "order": 4
-                    }
                 }
             ],
             "detail": {
-                "fieldOrder": [
-                    "pronunciation",
-                    "audio",
-                    "character_class",
-                    "usage_note"
-                ]
+                "fieldOrder": ["pronunciation", "audio", "character_class"]
             },
             "activityCompatibility": ["study:recognition", "study:writing"],
             "interestVeins": ["language:japanese"],
@@ -121,7 +100,8 @@
                     },
                     "maximum": 1,
                     "onDelete": "detach",
-                    "variant": true
+                    "variant": true,
+                    "child": true
                 },
                 {
                     "id": "handakuten-of",
@@ -136,7 +116,8 @@
                     },
                     "maximum": 1,
                     "onDelete": "detach",
-                    "variant": true
+                    "variant": true,
+                    "child": true
                 },
                 {
                     "id": "small-form-of",
@@ -151,7 +132,8 @@
                     },
                     "maximum": 1,
                     "onDelete": "detach",
-                    "variant": true
+                    "variant": true,
+                    "child": true
                 },
                 {
                     "id": "contracted-of",
@@ -166,7 +148,8 @@
                     },
                     "maximum": 1,
                     "onDelete": "detach",
-                    "variant": true
+                    "variant": true,
+                    "child": true
                 },
                 {
                     "id": "geminated-of",
@@ -181,7 +164,8 @@
                     },
                     "maximum": 1,
                     "onDelete": "detach",
-                    "variant": true
+                    "variant": true,
+                    "child": true
                 }
             ],
             "grid": {

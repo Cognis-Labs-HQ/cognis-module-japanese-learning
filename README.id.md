@@ -115,6 +115,6 @@ Rekaman kosakata `好き` kini mendeklarasikan ejaan Kana `す` dan `き` secara
 
 Paket diterbitkan ulang untuk perlindungan identitas Pustaka terbaru. Setiap rekaman Kana memiliki identitas konten yang berbeda dan setiap referensi varian menunjuk ke rekaman induk yang berbeda, sehingga impor ulang dapat membangun kembali edge lama tanpa merender induk sebagai anaknya sendiri.
 
-## I ukuran penuh dan kecil
+## Hierarki anak Kana eksplisit
 
-Tampilan detail kini membedakan `い`/`イ` berukuran penuh, yang mewakili mora mandiri, dari `ぃ`/`ィ` kecil, yang bergabung dengan karakter sebelumnya untuk bunyi lanjutan. Catatan penggunaan terlokalisasi mencantumkan contoh Katakana umum `フィ` (fi).
+Relasi induk Kana kini selaras dengan kontrak Pustaka terbaru dengan ditandai sebagai varian sekaligus anak spasial. Karena bagian relasi duplikat disembunyikan, bidang eksplisit `usage_note` tidak lagi diperlukan dan telah dihapus bersama empat nilai rekamannya.

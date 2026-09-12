@@ -200,8 +200,8 @@ Telah diverifikasi bahwa dependensi penghapusan Hiragana tidak pernah mencapai r
 
 - [15b6878](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/15b68784f9029e9140e02dcd5875cd575d41fe5c)
 
-## I ukuran penuh dan kecil
+## Hierarki anak Kana eksplisit
 
-Tampilan detail kini membedakan `い`/`イ` berukuran penuh, yang mewakili mora mandiri, dari `ぃ`/`ィ` kecil, yang bergabung dengan karakter sebelumnya untuk bunyi lanjutan. Catatan penggunaan terlokalisasi mencantumkan contoh Katakana umum `フィ` (fi).
+Relasi induk Kana kini selaras dengan kontrak Pustaka terbaru dengan ditandai sebagai varian sekaligus anak spasial. Karena bagian relasi duplikat disembunyikan, bidang eksplisit `usage_note` tidak lagi diperlukan dan telah dihapus bersama empat nilai rekamannya.
 
-- [6f03c95](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/6f03c95c01454da7a8fb61e0a498a364a19e1701)
+- [6734506](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/67345060175f87f4a73e1f07598efcb2df814edb)

@@ -200,8 +200,8 @@ Cognis PR #214 に合わせ、名前空間の所有権、ローカライズ済�
 
 - [15b6878](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/15b68784f9029e9140e02dcd5875cd575d41fe5c)
 
-## 通常サイズと小書きの i
+## 明示的な仮名の子階層
 
-詳細表示で、独立したモーラを表す通常サイズの `い`／`イ` と、前の文字に続いて拡張音を表す小書きの `ぃ`／`ィ` の違いを説明します。ローカライズされた使用上の注意には、一般的なカタカナの例 `フィ`（fi）も含まれます。
+最新のライブラリ関係契約に合わせ、仮名の親関係をバリアントかつ空間的な子として明示しました。重複する関係セクションが抑制されるため、明示的な `usage_note` フィールドは不要となり、4 レコードの値とともに削除しました。
 
-- [6f03c95](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/6f03c95c01454da7a8fb61e0a498a364a19e1701)
+- [6734506](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/67345060175f87f4a73e1f07598efcb2df814edb)

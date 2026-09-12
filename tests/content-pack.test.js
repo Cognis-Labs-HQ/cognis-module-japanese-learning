@@ -518,6 +518,7 @@ test("character variants use dynamically placed nested relationships", () => {
         assert.equal(relationship.maximum, 1);
         assert.equal(relationship.onDelete, "detach");
         assert.equal(relationship.variant, true);
+        assert.equal(relationship.child, true);
         assert.equal(relationship.variantDirection, undefined);
         assert.equal(relationship.resolverRole, undefined);
     }

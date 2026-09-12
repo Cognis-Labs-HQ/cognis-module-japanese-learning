@@ -200,8 +200,8 @@ Es wurde überprüft, dass Löschabhängigkeiten von Hiragana niemals Katakana-D
 
 - [15b6878](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/15b68784f9029e9140e02dcd5875cd575d41fe5c)
 
-## Großes und kleines i
+## Explizite Kana-Kindhierarchien
 
-Die Detailansicht unterscheidet jetzt `い`/`イ` in normaler Größe, die eine eigenständige Mora darstellen, von den kleinen `ぃ`/`ィ`, die sich für erweiterte Laute mit einem vorausgehenden Zeichen verbinden. Lokalisierte Verwendungshinweise enthalten das gebräuchliche Katakana-Beispiel `フィ` (fi).
+Die Kana-Elternbeziehungen entsprechen jetzt dem neuesten Bibliotheksvertrag und sind sowohl als Varianten als auch als räumliche Kinder markiert. Da der doppelte Beziehungsabschnitt unterdrückt wird, ist das ausdrückliche Feld `usage_note` nicht mehr nötig und wurde zusammen mit seinen vier Datensatzwerten entfernt.
 
-- [6f03c95](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/6f03c95c01454da7a8fb61e0a498a364a19e1701)
+- [6734506](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/67345060175f87f4a73e1f07598efcb2df814edb)

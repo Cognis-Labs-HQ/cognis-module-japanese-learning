@@ -112,6 +112,6 @@ Der Wortschatzeintrag `好き` deklariert jetzt seine geordnete Kana-Schreibweis
 
 Das Paket wird für die neuesten Identitätsschutzmaßnahmen der Bibliothek neu veröffentlicht. Jeder Kana-Datensatz besitzt eine eigene Inhaltsidentität, und jeder Variantenverweis zielt auf einen anderen übergeordneten Datensatz. Dadurch kann eine erneute Aufnahme veraltete Kanten neu aufbauen, ohne ein Elternzeichen als sein eigenes Kind darzustellen.
 
-## Großes und kleines i
+## Explizite Kana-Kindhierarchien
 
-Die Detailansicht unterscheidet jetzt `い`/`イ` in normaler Größe, die eine eigenständige Mora darstellen, von den kleinen `ぃ`/`ィ`, die sich für erweiterte Laute mit einem vorausgehenden Zeichen verbinden. Lokalisierte Verwendungshinweise enthalten das gebräuchliche Katakana-Beispiel `フィ` (fi).
+Die Kana-Elternbeziehungen entsprechen jetzt dem neuesten Bibliotheksvertrag und sind sowohl als Varianten als auch als räumliche Kinder markiert. Da der doppelte Beziehungsabschnitt unterdrückt wird, ist das ausdrückliche Feld `usage_note` nicht mehr nötig und wurde zusammen mit seinen vier Datensatzwerten entfernt.
