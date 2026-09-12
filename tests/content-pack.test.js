@@ -395,6 +395,8 @@ test("kanji readings reference distinct kana-backed vocabulary entries", () => {
     assert.equal(readingRelationship.targetLayer, "words");
     assert.equal(readingRelationship.ordered, true);
     assert.equal(readingRelationship.requiredTarget, true);
+    assert.equal(readingRelationship.resolverRole, "explicit");
+    assert.equal(readingRelationship.presentationRole, "pronunciation");
 
     const words = new Map(
         records
@@ -413,6 +415,7 @@ test("kanji readings reference distinct kana-backed vocabulary entries", () => {
             .filter(({ relation }) => relation === "readings")
             .sort((left, right) => left.position - right.position)
             .map(({ entryId }) => words.get(entryId));
+        assert.ok(readingWords.every(Boolean));
         assert.deepEqual(
             readingWords.map(({ label }) => label),
             kanji.fields.pronunciation,

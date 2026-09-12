@@ -205,3 +205,9 @@ Verified that Hiragana deletion dependencies never reach Katakana records. The r
 Aligned with the latest Library relationship contract by marking Kana parent relationships as both variants and spatial children. The suppressed duplicate relationship section makes the explicit `usage_note` field unnecessary, so it and its four record values have been removed.
 
 - [6734506](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/67345060175f87f4a73e1f07598efcb2df814edb)
+
+## Direct Kanji reading links
+
+Confirmed that Kanji `readings` already target complete Vocabulary entries and explicitly use pronunciation presentation. The individual Kana links are produced by the host popup resolving pronunciation strings without consulting those direct references; the required Library-side matching change is recorded in `TODO.md`.
+
+- [18d8b2a](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/18d8b2a70d9175f52621322feab482567f7e2e54)

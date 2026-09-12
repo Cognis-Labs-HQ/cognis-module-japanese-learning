@@ -205,3 +205,9 @@ Es wurde überprüft, dass Löschabhängigkeiten von Hiragana niemals Katakana-D
 Die Kana-Elternbeziehungen entsprechen jetzt dem neuesten Bibliotheksvertrag und sind sowohl als Varianten als auch als räumliche Kinder markiert. Da der doppelte Beziehungsabschnitt unterdrückt wird, ist das ausdrückliche Feld `usage_note` nicht mehr nötig und wurde zusammen mit seinen vier Datensatzwerten entfernt.
 
 - [6734506](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/67345060175f87f4a73e1f07598efcb2df814edb)
+
+## Direkte Links für Kanji-Lesungen
+
+Es wurde bestätigt, dass Kanji-`readings` bereits vollständige Wortschatzeinträge referenzieren und ausdrücklich die Aussprachedarstellung verwenden. Die Links zu einzelnen Kana entstehen, weil das Host-Popup Aussprachezeichenfolgen auflöst, ohne diese direkten Referenzen zu berücksichtigen. Die erforderliche Änderung auf Bibliotheksseite ist in `TODO.md` festgehalten.
+
+- [18d8b2a](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/18d8b2a70d9175f52621322feab482567f7e2e54)
