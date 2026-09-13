@@ -1,0 +1,691 @@
+{
+    "id": "japanese-core",
+    "version": 31,
+    "namespace": "ja",
+    "language": "ja",
+    "metadata": {
+        "labels": {
+            "de": "Japanisch",
+            "en": "Japanese",
+            "id": "Bahasa Jepang",
+            "ja": "日本語"
+        }
+    },
+    "layers": [
+        {
+            "id": "characters",
+            "metadata": {
+                "labels": {
+                    "de": "Kana",
+                    "en": "Kana",
+                    "id": "Kana",
+                    "ja": "かな"
+                }
+            },
+            "semanticRole": "atomicWritingUnit",
+            "minimal": true,
+            "fields": [
+                {
+                    "id": "pronunciation",
+                    "metadata": {
+                        "labels": {
+                            "de": "Aussprache",
+                            "en": "Pronunciation",
+                            "id": "Pelafalan",
+                            "ja": "発音"
+                        }
+                    },
+                    "type": "stringList",
+                    "required": true,
+                    "detail": {
+                        "renderer": "text",
+                        "order": 1
+                    }
+                },
+                {
+                    "id": "audio",
+                    "metadata": {
+                        "labels": {
+                            "de": "Audio",
+                            "en": "Audio",
+                            "id": "Audio",
+                            "ja": "音声"
+                        }
+                    },
+                    "type": "audio",
+                    "required": true,
+                    "detail": {
+                        "renderer": "media",
+                        "order": 2
+                    }
+                },
+                {
+                    "id": "character_class",
+                    "metadata": {
+                        "labels": {
+                            "de": "Zeichenklasse",
+                            "en": "Character Class",
+                            "id": "Kelas Karakter",
+                            "ja": "文字種"
+                        }
+                    },
+                    "type": "string",
+                    "required": true,
+                    "detail": {
+                        "renderer": "badge",
+                        "order": 3,
+                        "group": "writing-system",
+                        "exclusive": true,
+                        "required": true,
+                        "defaultTag": "hiragana"
+                    }
+                }
+            ],
+            "detail": {
+                "fieldOrder": ["pronunciation", "audio", "character_class"]
+            },
+            "activityCompatibility": ["study:recognition", "study:writing"],
+            "interestVeins": ["language:japanese"],
+            "relationships": [
+                {
+                    "id": "dakuten-of",
+                    "targetLayer": "characters",
+                    "metadata": {
+                        "labels": {
+                            "de": "Dakuten-Variante von",
+                            "en": "Dakuten Variant Of",
+                            "id": "Varian Dakuten Dari",
+                            "ja": "濁点付き異体の親"
+                        }
+                    },
+                    "maximum": 1,
+                    "onDelete": "detach",
+                    "variant": true,
+                    "child": true
+                },
+                {
+                    "id": "handakuten-of",
+                    "targetLayer": "characters",
+                    "metadata": {
+                        "labels": {
+                            "de": "Handakuten-Variante von",
+                            "en": "Handakuten Variant Of",
+                            "id": "Varian Handakuten Dari",
+                            "ja": "半濁点付き異体の親"
+                        }
+                    },
+                    "maximum": 1,
+                    "onDelete": "detach",
+                    "variant": true,
+                    "child": true
+                },
+                {
+                    "id": "small-form-of",
+                    "targetLayer": "characters",
+                    "metadata": {
+                        "labels": {
+                            "de": "Kleinform von",
+                            "en": "Small Form Of",
+                            "id": "Bentuk Kecil Dari",
+                            "ja": "小書きの親"
+                        }
+                    },
+                    "maximum": 1,
+                    "onDelete": "detach",
+                    "variant": true,
+                    "child": true
+                },
+                {
+                    "id": "contracted-of",
+                    "targetLayer": "characters",
+                    "metadata": {
+                        "labels": {
+                            "de": "Kontrahierte Lautform von",
+                            "en": "Contracted Sound Of",
+                            "id": "Bunyi Gabungan Dari",
+                            "ja": "拗音の親"
+                        }
+                    },
+                    "maximum": 1,
+                    "onDelete": "detach",
+                    "variant": true,
+                    "child": true
+                },
+                {
+                    "id": "geminated-of",
+                    "targetLayer": "characters",
+                    "metadata": {
+                        "labels": {
+                            "de": "Geminierte Lautform von",
+                            "en": "Geminated Sound Of",
+                            "id": "Bunyi Rangkap Dari",
+                            "ja": "促音形の親"
+                        }
+                    },
+                    "maximum": 1,
+                    "onDelete": "detach",
+                    "variant": true,
+                    "child": true
+                }
+            ],
+            "grid": {
+                "rowSize": 5,
+                "items": [
+                    "ja:char:a",
+                    "ja:char:ka:a",
+                    "ja:char:i",
+                    "ja:char:ka:i",
+                    "ja:char:u",
+                    "ja:char:ka:u",
+                    "ja:char:e",
+                    "ja:char:ka:e",
+                    "ja:char:o",
+                    "ja:char:ka:o",
+                    "ja:char:ka",
+                    "ja:char:ka:ka",
+                    "ja:char:ki",
+                    "ja:char:ka:ki",
+                    "ja:char:ku",
+                    "ja:char:ka:ku",
+                    "ja:char:ke",
+                    "ja:char:ka:ke",
+                    "ja:char:ko",
+                    "ja:char:ka:ko",
+                    "ja:char:sa",
+                    "ja:char:ka:sa",
+                    "ja:char:shi",
+                    "ja:char:ka:shi",
+                    "ja:char:su",
+                    "ja:char:ka:su",
+                    "ja:char:se",
+                    "ja:char:ka:se",
+                    "ja:char:so",
+                    "ja:char:ka:so",
+                    "ja:char:ta",
+                    "ja:char:ka:ta",
+                    "ja:char:chi",
+                    "ja:char:ka:chi",
+                    "ja:char:tsu",
+                    "ja:char:ka:tsu",
+                    "ja:char:te",
+                    "ja:char:ka:te",
+                    "ja:char:to",
+                    "ja:char:ka:to",
+                    "ja:char:na",
+                    "ja:char:ka:na",
+                    "ja:char:ni",
+                    "ja:char:ka:ni",
+                    "ja:char:nu",
+                    "ja:char:ka:nu",
+                    "ja:char:ne",
+                    "ja:char:ka:ne",
+                    "ja:char:no",
+                    "ja:char:ka:no",
+                    "ja:char:ha",
+                    "ja:char:ka:ha",
+                    "ja:char:hi",
+                    "ja:char:ka:hi",
+                    "ja:char:fu",
+                    "ja:char:ka:fu",
+                    "ja:char:he",
+                    "ja:char:ka:he",
+                    "ja:char:ho",
+                    "ja:char:ka:ho",
+                    "ja:char:ma",
+                    "ja:char:ka:ma",
+                    "ja:char:mi",
+                    "ja:char:ka:mi",
+                    "ja:char:mu",
+                    "ja:char:ka:mu",
+                    "ja:char:me",
+                    "ja:char:ka:me",
+                    "ja:char:mo",
+                    "ja:char:ka:mo",
+                    "ja:char:ya",
+                    "ja:char:ka:ya",
+                    {
+                        "blank": true
+                    },
+                    "ja:char:yu",
+                    "ja:char:ka:yu",
+                    {
+                        "blank": true
+                    },
+                    "ja:char:yo",
+                    "ja:char:ka:yo",
+                    "ja:char:ra",
+                    "ja:char:ka:ra",
+                    "ja:char:ri",
+                    "ja:char:ka:ri",
+                    "ja:char:ru",
+                    "ja:char:ka:ru",
+                    "ja:char:re",
+                    "ja:char:ka:re",
+                    "ja:char:ro",
+                    "ja:char:ka:ro",
+                    "ja:char:wa",
+                    "ja:char:ka:wa",
+                    {
+                        "blank": true
+                    },
+                    "ja:char:wo",
+                    "ja:char:ka:wo",
+                    {
+                        "blank": true
+                    },
+                    "ja:char:n",
+                    "ja:char:ka:n"
+                ]
+            }
+        },
+        {
+            "id": "alt-characters",
+            "metadata": {
+                "labels": {
+                    "de": "Kanji",
+                    "en": "Kanji",
+                    "id": "Kanji",
+                    "ja": "漢字"
+                }
+            },
+            "semanticRole": "compoundWritingUnit",
+            "fields": [
+                {
+                    "id": "pronunciation",
+                    "metadata": {
+                        "labels": {
+                            "de": "Aussprache",
+                            "en": "Pronunciation",
+                            "id": "Pelafalan",
+                            "ja": "発音"
+                        }
+                    },
+                    "type": "stringList",
+                    "required": true,
+                    "detail": {
+                        "renderer": "text",
+                        "order": 1
+                    }
+                },
+                {
+                    "id": "audio",
+                    "metadata": {
+                        "labels": {
+                            "de": "Audio",
+                            "en": "Audio",
+                            "id": "Audio",
+                            "ja": "音声"
+                        }
+                    },
+                    "type": "audio",
+                    "required": true,
+                    "detail": {
+                        "renderer": "media",
+                        "order": 2
+                    }
+                }
+            ],
+            "relationships": [
+                {
+                    "id": "readings",
+                    "targetLayer": "words",
+                    "metadata": {
+                        "labels": {
+                            "de": "Lesungen",
+                            "en": "Readings",
+                            "id": "Bacaan",
+                            "ja": "読み"
+                        }
+                    },
+                    "ordered": true,
+                    "onDelete": "restrict",
+                    "resolverRole": "explicit",
+                    "minimum": 1,
+                    "requiredTarget": true,
+                    "presentationRole": "pronunciation"
+                },
+                {
+                    "id": "definitions",
+                    "targetLayer": "definitions",
+                    "metadata": {
+                        "labels": {
+                            "de": "Definitionen",
+                            "en": "Definitions",
+                            "id": "Definisi",
+                            "ja": "定義"
+                        }
+                    },
+                    "minimum": 1,
+                    "requiredTarget": true,
+                    "onDelete": "restrict"
+                }
+            ],
+            "detail": {
+                "fieldOrder": ["pronunciation", "audio"]
+            },
+            "activityCompatibility": ["study:recognition", "study:writing"],
+            "interestVeins": ["language:japanese"]
+        },
+        {
+            "id": "definitions",
+            "metadata": {
+                "labels": {
+                    "de": "Definitionen",
+                    "en": "Definitions",
+                    "id": "Definisi",
+                    "ja": "定義"
+                }
+            },
+            "semanticRole": "definition",
+            "fields": [
+                {
+                    "id": "string_key",
+                    "metadata": {
+                        "labels": {
+                            "de": "Zeichenkettenschlüssel",
+                            "en": "String Key",
+                            "id": "Kunci String",
+                            "ja": "文字列キー"
+                        }
+                    },
+                    "type": "string",
+                    "required": true,
+                    "detail": {
+                        "renderer": "text",
+                        "order": 1,
+                        "hidden": true
+                    }
+                },
+                {
+                    "id": "translations",
+                    "metadata": {
+                        "labels": {
+                            "de": "Übersetzungen",
+                            "en": "Translations",
+                            "id": "Terjemahan",
+                            "ja": "翻訳"
+                        }
+                    },
+                    "type": "localizedText",
+                    "required": true,
+                    "detail": {
+                        "renderer": "text",
+                        "order": 2
+                    }
+                }
+            ],
+            "detail": {
+                "titleField": "translations",
+                "fieldOrder": ["translations", "string_key"]
+            },
+            "interestVeins": ["language:japanese"],
+            "definitionLocalization": {
+                "stringKeyPrefix": "japanese:definitions",
+                "stringKeyField": "string_key",
+                "translationsField": "translations"
+            }
+        },
+        {
+            "id": "words",
+            "metadata": {
+                "labels": {
+                    "de": "Wortschatz",
+                    "en": "Vocabulary",
+                    "id": "Kosakata",
+                    "ja": "語彙"
+                }
+            },
+            "semanticRole": "lexicalUnit",
+            "fields": [
+                {
+                    "id": "pronunciation",
+                    "metadata": {
+                        "labels": {
+                            "de": "Aussprache",
+                            "en": "Pronunciation",
+                            "id": "Pelafalan",
+                            "ja": "発音"
+                        }
+                    },
+                    "type": "stringList",
+                    "required": true,
+                    "detail": {
+                        "renderer": "text",
+                        "order": 1
+                    }
+                },
+                {
+                    "id": "jlpt_level",
+                    "metadata": {
+                        "labels": {
+                            "de": "JLPT-Stufe",
+                            "en": "JLPT Level",
+                            "id": "Tingkat JLPT",
+                            "ja": "JLPT レベル"
+                        }
+                    },
+                    "type": "string",
+                    "detail": {
+                        "renderer": "badge",
+                        "order": 2,
+                        "group": "proficiency-level",
+                        "exclusive": true,
+                        "required": true,
+                        "defaultTag": "N5"
+                    }
+                }
+            ],
+            "relationships": [
+                {
+                    "id": "spelling",
+                    "targetLayer": "alt-characters",
+                    "metadata": {
+                        "labels": {
+                            "de": "Schreibweise",
+                            "en": "Spelling",
+                            "id": "Ejaan",
+                            "ja": "表記"
+                        }
+                    },
+                    "ordered": true,
+                    "onDelete": "restrict",
+                    "resolverRole": "grapheme",
+                    "presentationRole": "composition"
+                },
+                {
+                    "id": "kana-spelling",
+                    "targetLayer": "characters",
+                    "metadata": {
+                        "labels": {
+                            "de": "Kana-Schreibweise",
+                            "en": "Kana Spelling",
+                            "id": "Ejaan Kana",
+                            "ja": "かな表記"
+                        }
+                    },
+                    "minimum": 0,
+                    "ordered": true,
+                    "onDelete": "restrict",
+                    "resolverRole": "explicit",
+                    "presentationRole": "composition"
+                },
+                {
+                    "id": "related",
+                    "targetLayer": "words",
+                    "metadata": {
+                        "labels": {
+                            "de": "Verwandte Wörter",
+                            "en": "Related",
+                            "id": "Terkait",
+                            "ja": "関連語"
+                        }
+                    },
+                    "onDelete": "detach"
+                },
+                {
+                    "id": "definitions",
+                    "targetLayer": "definitions",
+                    "metadata": {
+                        "labels": {
+                            "de": "Definitionen",
+                            "en": "Definitions",
+                            "id": "Definisi",
+                            "ja": "定義"
+                        }
+                    },
+                    "minimum": 1,
+                    "requiredTarget": true,
+                    "onDelete": "restrict"
+                }
+            ],
+            "detail": {
+                "fieldOrder": ["pronunciation", "jlpt_level"]
+            },
+            "activityCompatibility": ["study:recognition", "study:production"],
+            "interestVeins": ["language:japanese"],
+            "displayDefinition": true
+        },
+        {
+            "id": "particles",
+            "metadata": {
+                "labels": {
+                    "de": "Partikeln",
+                    "en": "Particles",
+                    "id": "Partikel",
+                    "ja": "助詞"
+                }
+            },
+            "semanticRole": "particle",
+            "fields": [
+                {
+                    "id": "pronunciation",
+                    "metadata": {
+                        "labels": {
+                            "de": "Aussprache",
+                            "en": "Pronunciation",
+                            "id": "Pelafalan",
+                            "ja": "発音"
+                        }
+                    },
+                    "type": "stringList",
+                    "required": true,
+                    "detail": {
+                        "renderer": "text",
+                        "order": 1
+                    }
+                }
+            ],
+            "detail": {
+                "fieldOrder": ["pronunciation"]
+            },
+            "activityCompatibility": ["study:reading", "study:grammar"],
+            "interestVeins": ["language:japanese"],
+            "relationships": [
+                {
+                    "id": "definitions",
+                    "targetLayer": "definitions",
+                    "metadata": {
+                        "labels": {
+                            "de": "Definitionen",
+                            "en": "Definitions",
+                            "id": "Definisi",
+                            "ja": "定義"
+                        }
+                    },
+                    "minimum": 1,
+                    "requiredTarget": true,
+                    "onDelete": "restrict"
+                }
+            ],
+            "displayDefinition": true
+        },
+        {
+            "id": "sentences",
+            "metadata": {
+                "labels": {
+                    "de": "Sätze",
+                    "en": "Sentences",
+                    "id": "Kalimat",
+                    "ja": "文"
+                }
+            },
+            "semanticRole": "orderedLexicalSequence",
+            "relationships": [
+                {
+                    "id": "words",
+                    "targetLayer": "words",
+                    "metadata": {
+                        "labels": {
+                            "de": "Wörter",
+                            "en": "Words",
+                            "id": "Kata",
+                            "ja": "単語"
+                        }
+                    },
+                    "minimum": 1,
+                    "ordered": true,
+                    "requiredTarget": true,
+                    "onDelete": "restrict",
+                    "resolverRole": "longestMatch",
+                    "presentationRole": "composition"
+                },
+                {
+                    "id": "particles",
+                    "targetLayer": "particles",
+                    "metadata": {
+                        "labels": {
+                            "de": "Partikeln",
+                            "en": "Particles",
+                            "id": "Partikel",
+                            "ja": "助詞"
+                        }
+                    },
+                    "ordered": true,
+                    "onDelete": "restrict",
+                    "resolverRole": "explicit",
+                    "presentationRole": "composition"
+                },
+                {
+                    "id": "definitions",
+                    "targetLayer": "definitions",
+                    "metadata": {
+                        "labels": {
+                            "de": "Definitionen",
+                            "en": "Definitions",
+                            "id": "Definisi",
+                            "ja": "定義"
+                        }
+                    },
+                    "minimum": 1,
+                    "requiredTarget": true,
+                    "onDelete": "restrict"
+                }
+            ],
+            "activityCompatibility": ["study:reading"],
+            "interestVeins": ["language:japanese"],
+            "fields": [
+                {
+                    "id": "pronunciation",
+                    "metadata": {
+                        "labels": {
+                            "de": "Aussprache",
+                            "en": "Pronunciation",
+                            "id": "Pelafalan",
+                            "ja": "発音"
+                        }
+                    },
+                    "type": "stringList",
+                    "required": true,
+                    "detail": {
+                        "renderer": "text",
+                        "order": 1
+                    }
+                }
+            ],
+            "detail": {
+                "fieldOrder": ["pronunciation"]
+            },
+            "displayDefinition": true
+        }
+    ]
+}

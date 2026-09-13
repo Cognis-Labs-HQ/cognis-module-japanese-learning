@@ -2,24 +2,15 @@
     "id": "study-language-ja",
     "uuid": "e905927f-b133-572a-92ce-2ea8645e5ceb",
     "name": "module.study-language-ja.name",
-    "version": "1.2.14",
+    "version": "5.3.2",
     "class": "extension",
     "coreApiVersion": "v1",
-    "capabilities": [
-        "study:language:ja",
-        "study:language:ja:library",
-        "ui:page"
-    ],
-    "entrypoints": {
-        "bootstrap": "./bootstrap.js",
-        "api": "./api/index.js",
-        "ui": "./ui/index.html",
-        "cli": "./cli/index.js"
-    },
+    "capabilities": ["study:language:ja"],
+    "entrypoints": { "bootstrap": "./bootstrap.js" },
     "ui": { "stringsBaseUrl": "/static/modules/study-language-ja/languages" },
     "publisher": "Cognis Labs HQ",
     "requires": ["338b9237-a2c8-5bcf-9437-bccc9abd9a27"],
-    "requiresCapabilities": ["auth:requireAuth"],
+    "requiresCapabilities": ["study:library"],
     "summary": "module.study-language-ja.summary",
     "description": "module.study-language-ja.description",
     "categories": [
@@ -84,51 +75,23 @@
         },
         {
             "path": "README.de.md",
-            "sha256": "9222cc3e637d963428422285a3b4282f524f00cf85670b4794cb9caddc62d409"
+            "sha256": "385254eceec1c1c8a6430dac228708b64c0dd167aca0716c36de58f9ca0d4613"
         },
         {
             "path": "README.en.md",
-            "sha256": "c355d33e6bb0e9654b42b1fc214bc7a7ce51b47551494efb747023461c8c45ec"
+            "sha256": "914bea5c468c3e4ea2f9343a9207bdf5d5f496c20d5af9aafd6b166e52b9651e"
         },
         {
             "path": "README.id.md",
-            "sha256": "28d2cc504ee5b2ca5698334722fe76ed64646b1f34c0faae61a6cffa69c12eb0"
+            "sha256": "8d4016d227d68df0df54ecb46f4970bea2e7c320a387223a809516cc911a88f7"
         },
         {
             "path": "README.ja.md",
-            "sha256": "e527a390c2633f5cacd8d2424a7ae3be70c183bbeabbad8139323968c116cce9"
+            "sha256": "d9b4d12020d37fcebff011a8c81e85c5cecbcfdc3716ac4f677b8abe4e11abaa"
         },
         {
             "path": "README.md",
-            "sha256": "c355d33e6bb0e9654b42b1fc214bc7a7ce51b47551494efb747023461c8c45ec"
-        },
-        {
-            "path": "api/index.js",
-            "sha256": "d96b0d42aeb00294f6ee2680bd3293b5f5be8cda6ed4ad377a397304ed586e87"
-        },
-        {
-            "path": "api/reuse/http.js",
-            "sha256": "f42ff95fe1b092449cef468c6c6197bc9819cfd12d4cf5407d91726fe865d448"
-        },
-        {
-            "path": "api/store.js",
-            "sha256": "3974d76857ce3b9d7304472966a480b87de6666d797c9d226c2e842ba5626659"
-        },
-        {
-            "path": "api/tests/documentation-convention.test.js",
-            "sha256": "2d05eebdc19d57aa4dfc2e6bb564ef847be4aceff67f8396cf6ecbd437d01a37"
-        },
-        {
-            "path": "api/tests/store.test.js",
-            "sha256": "fb873d5f50381d35c2eb8de508a73b550c5f13daae66c5b32cd3d89f08980a8f"
-        },
-        {
-            "path": "api/tests/structural-compliance.test.js",
-            "sha256": "58c00179b4991bb08b61b9ee664fa5040be33bab7fc83b2f562d73a13ab40566"
-        },
-        {
-            "path": "api/tests/uninstall.test.js",
-            "sha256": "1bc04e9299adb8031b18b4499380dd75bb5f68bafe18e73ce8793e43a5d5bc2c"
+            "sha256": "914bea5c468c3e4ea2f9343a9207bdf5d5f496c20d5af9aafd6b166e52b9651e"
         },
         {
             "path": "assets/banner.svg",
@@ -140,63 +103,87 @@
         },
         {
             "path": "bootstrap.js",
-            "sha256": "1346c307f5ceb37e6ca0be9db3d172ecdff1cc0c982ac556e6c41966b49a14d4"
+            "sha256": "65a79fdd34ad6e670917d417a29a012feaad669da796e0dfff45cdfccf54813d"
         },
         {
-            "path": "cli/index.js",
-            "sha256": "1a8292012f252740869fc1399c7d4d8850d0a0e60de8b80044f8eaf3a1365c0b"
+            "path": "data/library/content/alt-characters/kanji.json",
+            "sha256": "6a76e99827ae2772d2b21249d9cb3e94ea98ae17878cdaea1dfad63611610371"
         },
         {
-            "path": "data/alt-characters/kanji.json",
-            "sha256": "41c8c6d5e16d3ecf606b80992650166e459c2465b6ec968a320255f24f8defd6"
+            "path": "data/library/content/characters/hiragana-geminated.json",
+            "sha256": "e24916ee9946081473851a79d2ce3bee32c85056ae8675e516e9a222f04a1995"
         },
         {
-            "path": "data/characters/hiragana.json",
-            "sha256": "b415bb1f09a1788071b3c80a936ee03f881dc7f5b734961cd434d7f7d4ee760d"
+            "path": "data/library/content/characters/hiragana-variants.json",
+            "sha256": "1f683309c6c55e933728e26446644248b56bcd3c9362c683947a5bf2efd5c8ff"
         },
         {
-            "path": "data/characters/katakana.json",
-            "sha256": "557939e9f78a5314d4b67ceda642de1df8c0e760df4f7798cbfcb86086daf172"
+            "path": "data/library/content/characters/hiragana.json",
+            "sha256": "9b618e1d7ffcc7c11f90e70c760b86193a191cce2e1e1ef87679acb4a0c03b15"
         },
         {
-            "path": "data/definitions/common.json",
-            "sha256": "a5ac0d2c7fce73ce37ee93221b05f0bf79465537c5864576262edd9b6e4f7b35"
+            "path": "data/library/content/characters/katakana-geminated.json",
+            "sha256": "6fee2409a782e2078b16c3694e99526b600c53d4e12274d282b0a0d60e59a603"
         },
         {
-            "path": "data/sentences/common.json",
-            "sha256": "c50203a0edb9b935aba4f32ddd8e398461059234fa89d872b5edc20d7d6275c5"
+            "path": "data/library/content/characters/katakana-variants.json",
+            "sha256": "2ac79039bcd6997b7d834605a2f0c2a6f238d6cf4f291fca4530f149a3c6b2ec"
         },
         {
-            "path": "data/words/common.json",
-            "sha256": "aa61486634b3a7738154d2760be72ad149be418d4e7eba0e6318d60ce3b83f99"
+            "path": "data/library/content/characters/katakana.json",
+            "sha256": "f1d305fce9a58559216fda0c0eb3c19f14017a2d69fa3924c1d4284a8d6da714"
+        },
+        {
+            "path": "data/library/content/definitions/common.json",
+            "sha256": "03955a22a6163411ce961b3d376f1346d8e4e883ed7ce63083f7530209cb1fd5"
+        },
+        {
+            "path": "data/library/content/particles/common.json",
+            "sha256": "35cd9f69bca7b291e5eddc43c56a5f7098f00f38ae04ce3a9fe111f6b27929d9"
+        },
+        {
+            "path": "data/library/content/sentences/common.json",
+            "sha256": "42b49656b91d76c8ca8d1d35941034cdfe8dc5e5f9f235b000dad366c9a2ae49"
+        },
+        {
+            "path": "data/library/content/words/common.json",
+            "sha256": "a6fc48780e0d31ee50a5895039093b3569f82cbb8815af0bd8cd955daa40c2f9"
+        },
+        {
+            "path": "data/library/manifest.json",
+            "sha256": "1ee06ed728a8f5b254ae4dd959fbf4ed6c79c023a533da3cd1e49bed49de7628"
+        },
+        {
+            "path": "data/library/schema.json",
+            "sha256": "b66108468468396f33445c899202f917f104cacdfa351197e1b20cde99811601"
         },
         {
             "path": "docs/standard.de.md",
-            "sha256": "1fc3e99e578b7f276ca0fabbd881128743d11291468f36b8983411d2d458d32a"
+            "sha256": "6db66029f3534d47d94ba9464aa32b6107f4b44f59b1daaf2dcb6fbb0f7d0245"
         },
         {
             "path": "docs/standard.en.md",
-            "sha256": "bb464bf0f45f7f97e52e183f66c2a18aa047e955914a3f076972f9eb6552c355"
+            "sha256": "4454b3b3b93d2e7ca865a50ea86dbccb0c9a09de855c4063f8012411cbe8afec"
         },
         {
             "path": "docs/standard.id.md",
-            "sha256": "a58585d2dbe5c064e01287ce8017f7bdd231faa620aa8c2b11871164763f696e"
+            "sha256": "fc11e39d7e709036acdf740d605e8dfb9021ba0b61775a711453327e54f405a2"
         },
         {
             "path": "docs/standard.ja.md",
-            "sha256": "92c0d142caba0ff6582a2b654a5bb09b9a27194fc8544231b1ae7cd7faacd3a4"
+            "sha256": "bb83812c6900e05326c52e3b0f6e5fc56180ab098e7458d78325f60478395722"
         },
         {
             "path": "package-lock.json",
-            "sha256": "1909c81a1f43853760a5f3ff4b14e258015c83218d4f558244332a5ea14d3474"
+            "sha256": "3c2203c59ca96484d03482517326b365b447699e854e7a25c0fd926eff146ec6"
         },
         {
             "path": "package.json",
-            "sha256": "644f95fd26ec017dbd95a129c28dbdb050b461b7924c00cfcc89e951c2a3b055"
+            "sha256": "75fb94db49a5eb36055ddb89ba1d4c0917881fcb242828b1f8849dcd0ef9975d"
         },
         {
             "path": "routes.json",
-            "sha256": "69dbcf72c939a346c5404af62f42ae27489fcfd53ca1f0e825926346cd05967a"
+            "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
         },
         {
             "path": "scripts/update-manifest-hashes.js",
@@ -207,6 +194,34 @@
             "sha256": "347a38a420ec32af120076a46c83ef45476585f030866e12bd7e17e6f56e6954"
         },
         {
+            "path": "tests/ambiguous-names.test.js",
+            "sha256": "1b3aa3af53354c2e29fd8296b71f7a872d5c11aa674840eb0d9763780f6e24a2"
+        },
+        {
+            "path": "tests/bootstrap.test.js",
+            "sha256": "5b3b13321d9eda36fcb426dbb3d22fa709aa2f7235c35c1fa7fed2aec22dbf31"
+        },
+        {
+            "path": "tests/content-pack.test.js",
+            "sha256": "d16c891835dbac49c6b06c45ad75098fa96b557614bcf61479fff8927665a6a5"
+        },
+        {
+            "path": "tests/documentation-convention.test.js",
+            "sha256": "6eaff6565fb451468101487011fffa459f5cb0b17b1d5a65d756a2413cb01552"
+        },
+        {
+            "path": "tests/localization-quality.test.js",
+            "sha256": "da76cebbba5a1e92e014ca87fe123264d49b4a65d925ef6741dccc89fa71cbc2"
+        },
+        {
+            "path": "tests/structural-compliance.test.js",
+            "sha256": "bdb62cade42da341e91cfdbfc46ab49342406b1d0d439404f10774cf778548d8"
+        },
+        {
+            "path": "tests/uninstall.test.js",
+            "sha256": "a066ee6b655fb4751e044b16447df6ec45146ee95f7d7b5bedde4feca34ef6c8"
+        },
+        {
             "path": "tooling/scripts/lint-placeholder.mjs",
             "sha256": "c869f4af45abd4f82500f836d5e50af93b9988a56283477ae45bd0aa45f47fd1"
         },
@@ -215,64 +230,24 @@
             "sha256": "fff2e006b2709345baafe18b4147c00541cd3f83d78ff113bb82032f2abcb45f"
         },
         {
-            "path": "ui/components/classroom/ui/app.js",
-            "sha256": "f3ff81e7d17e0993f31c745336ee161d52cc61677a19cc08af696bf20a59bb44"
-        },
-        {
-            "path": "ui/components/classroom/ui/index.html",
-            "sha256": "3129415f038bbd879e4c7fe16fdf4fadf81ae90f561c2136ead7796cb6f58069"
-        },
-        {
-            "path": "ui/components/hiragana-alphabet/ui/app.js",
-            "sha256": "d6f5d3ac4916867418ad0cd0f352afc70638f2f5ad0b4a2c8a6cf340b609fbbc"
-        },
-        {
-            "path": "ui/components/hiragana-alphabet/ui/hiragana.css",
-            "sha256": "bcbc26ee76f6e88b8806d45ebb805bec7ecc6104d2109c9255c888eea7df18bd"
-        },
-        {
-            "path": "ui/components/hiragana-alphabet/ui/index.html",
-            "sha256": "44c972bdcd7c8c7fae6618a0ca0ee8dbeb4ba6aeefabeb799f588294c51447db"
-        },
-        {
-            "path": "ui/components/library/ui/app.js",
-            "sha256": "9e7e123726b0c80ac589859fa38316ed000314c65e890da68608f8fc86f47ec6"
-        },
-        {
-            "path": "ui/components/library/ui/index.html",
-            "sha256": "b8d4be43e6ca1b8d4e4ac2d0e2bdd1fbe2b0868764eca60a29b1b5a663d8e448"
-        },
-        {
             "path": "ui/index.html",
             "sha256": "941b0bc6b60725c374d1517d65f6aa21aecfd49b8e518a256309d238219389ee"
         },
         {
             "path": "ui/languages/de/strings.xml",
-            "sha256": "54104b098a3cf5f48d8bff77c75435912522498731a8ee278a5eee4a5949839e"
+            "sha256": "cdc2cb78d1dcfdb020dd70b74e280e5f29419a92456e1812ce6f84c6c334fe6a"
         },
         {
             "path": "ui/languages/en/strings.xml",
-            "sha256": "d193bfa17f2326262fd706eeff5dee642ccd4591dccfe0b3f7edb8ddea659bc5"
+            "sha256": "b7416c27fe9c40ac89d409ad89684a3b5aa1c84203a2b3275de77ab00a0e8560"
         },
         {
             "path": "ui/languages/id/strings.xml",
-            "sha256": "b3609d8a318ed4490a21ed1b3666d90dca239d39c7ff3f2b55eab0266eec9f12"
+            "sha256": "5907eaaa35224b534639adf2904ca3ff2f381c0fdfad05ad6b5831002cd47b56"
         },
         {
             "path": "ui/languages/ja/strings.xml",
-            "sha256": "b04026acbd238386fd95cc0adc7b800d94287b397fa18b1a9dc64b2e8a961f4c"
-        },
-        {
-            "path": "ui/navbar.js",
-            "sha256": "9f145538698087356f69a01dbf50581f38211a4c8d17232fa2c7a5e658f7ec58"
-        },
-        {
-            "path": "ui/tests/ambiguous-names.test.js",
-            "sha256": "4f490771c3678dcc716b25f4465fb39c9eab476774897cc030c9ec690d2761eb"
-        },
-        {
-            "path": "ui/tests/localization-quality.test.js",
-            "sha256": "4103e82d0b70f55af675ecc2513cffc5e0e8b65d3d629ca80b9609a44d02db45"
+            "sha256": "1c1ab82c9701e51ff40b6b8b6beedf6b8f431336598c42310170509ae9e57859"
         }
     ]
 }

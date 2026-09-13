@@ -1,0 +1,113 @@
+[
+    {
+        "id": "ja:kanji:nichi",
+        "label": "日",
+        "fields": {
+            "pronunciation": ["にち", "じつ", "ひ", "か"],
+            "audio": "https://assets.cognis.dev/study/ja/pronunciation/kanji-nichi.mp3"
+        },
+        "references": [
+            {
+                "entryId": "ja:word:reading-nichi",
+                "relation": "readings",
+                "position": 0
+            },
+            {
+                "entryId": "ja:word:reading-jitsu",
+                "relation": "readings",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:reading-hi",
+                "relation": "readings",
+                "position": 2
+            },
+            {
+                "entryId": "ja:word:reading-ka",
+                "relation": "readings",
+                "position": 3
+            },
+            {
+                "entryId": "ja:def:kanji-nichi",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:kanji:hon",
+        "label": "本",
+        "fields": {
+            "pronunciation": ["ほん", "もと"],
+            "audio": "https://assets.cognis.dev/study/ja/pronunciation/kanji-hon.mp3"
+        },
+        "references": [
+            {
+                "entryId": "ja:word:reading-hon",
+                "relation": "readings",
+                "position": 0
+            },
+            {
+                "entryId": "ja:word:reading-moto",
+                "relation": "readings",
+                "position": 1
+            },
+            {
+                "entryId": "ja:def:kanji-hon",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:kanji:go",
+        "label": "語",
+        "fields": {
+            "pronunciation": ["ご", "かた"],
+            "audio": "https://assets.cognis.dev/study/ja/pronunciation/kanji-go.mp3"
+        },
+        "references": [
+            {
+                "entryId": "ja:word:reading-go",
+                "relation": "readings",
+                "position": 0
+            },
+            {
+                "entryId": "ja:word:reading-kata",
+                "relation": "readings",
+                "position": 1
+            },
+            {
+                "entryId": "ja:def:kanji-go",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:kanji:hito",
+        "label": "人",
+        "fields": {
+            "pronunciation": ["じん", "にん", "ひと"],
+            "audio": "https://assets.cognis.dev/study/ja/pronunciation/kanji-hito.mp3"
+        },
+        "references": [
+            {
+                "entryId": "ja:word:reading-jin",
+                "relation": "readings",
+                "position": 0
+            },
+            {
+                "entryId": "ja:word:reading-nin",
+                "relation": "readings",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:reading-hito",
+                "relation": "readings",
+                "position": 2
+            },
+            {
+                "entryId": "ja:def:kanji-hito",
+                "relation": "definitions"
+            }
+        ]
+    }
+]
