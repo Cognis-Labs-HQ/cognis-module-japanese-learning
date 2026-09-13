@@ -115,3 +115,7 @@ The pack is republished for the latest Library identity safeguards. Every Kana r
 ## Explicit Kana child hierarchies
 
 Aligned with the latest Library relationship contract by marking Kana parent relationships as both variants and spatial children. The suppressed duplicate relationship section makes the explicit `usage_note` field unnecessary, so it and its four record values have been removed.
+
+## Canonical Kanji reading vocabulary
+
+Removed the duplicate `人` lexical record. The Kanji entry now points only to its distinct `じん`, `にん`, and `ひと` Vocabulary readings; every reading composes from matching Hiragana records and carries its own direct definition reference.

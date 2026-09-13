@@ -194,20 +194,14 @@ Cognis PR #214 に合わせ、名前空間の所有権、ローカライズ済�
 
 - [01606c4](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/01606c49ade781db72f6652ca779517732eed7a6)
 
-## 分離された仮名削除
-
-ひらがなの削除依存関係がカタカナのレコードへ到達しないことを確認しました。残る余分なセルは、ホストのライブラリが削除済みグリッド ID を匿名でフィルター不能な空欄として描画するために発生します。コンテンツパックのグリッド契約ではフォールバック空欄へ文字種メタデータを付与できないため、必要なレンダラー変更を `TODO.md` に記録しました。
-
-- [15b6878](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/15b68784f9029e9140e02dcd5875cd575d41fe5c)
-
 ## 明示的な仮名の子階層
 
 最新のライブラリ関係契約に合わせ、仮名の親関係をバリアントかつ空間的な子として明示しました。重複する関係セクションが抑制されるため、明示的な `usage_note` フィールドは不要となり、4 レコードの値とともに削除しました。
 
 - [6734506](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/67345060175f87f4a73e1f07598efcb2df814edb)
 
-## 漢字読みへの直接リンク
+## 正規化された漢字読み語彙
 
-漢字の `readings` が完全な語彙項目を参照し、発音表示を明示していることを確認しました。個別の仮名リンクは、ホストのポップアップが直接参照を確認せずに発音文字列を解決するため生成されています。必要なライブラリ側の照合変更を `TODO.md` に記録しました。
+重複していた語彙レコード `人` を削除しました。漢字項目は、異なる語彙読み `じん`、`にん`、`ひと` のみを参照します。各読みは対応するひらがなレコードで構成され、それぞれが定義を直接参照します。
 
-- [18d8b2a](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/18d8b2a70d9175f52621322feab482567f7e2e54)
+- [986261f](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/986261f57188d939eb014e4f07eb2d90ed85059d)

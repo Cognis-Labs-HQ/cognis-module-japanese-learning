@@ -194,20 +194,14 @@ Paket diterbitkan ulang untuk perlindungan identitas Pustaka terbaru. Setiap rek
 
 - [01606c4](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/01606c49ade781db72f6652ca779517732eed7a6)
 
-## Penghapusan Kana yang terisolasi
-
-Telah diverifikasi bahwa dependensi penghapusan Hiragana tidak pernah mencapai rekaman Katakana. Sel tambahan yang tersisa berasal dari Pustaka host yang merender ID kisi terhapus sebagai celah anonim yang tidak dapat difilter; perubahan renderer yang diperlukan dicatat di `TODO.md` karena kontrak kisi paket konten tidak dapat melampirkan metadata aksara ke celah fallback.
-
-- [15b6878](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/15b68784f9029e9140e02dcd5875cd575d41fe5c)
-
 ## Hierarki anak Kana eksplisit
 
 Relasi induk Kana kini selaras dengan kontrak Pustaka terbaru dengan ditandai sebagai varian sekaligus anak spasial. Karena bagian relasi duplikat disembunyikan, bidang eksplisit `usage_note` tidak lagi diperlukan dan telah dihapus bersama empat nilai rekamannya.
 
 - [6734506](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/67345060175f87f4a73e1f07598efcb2df814edb)
 
-## Tautan langsung bacaan Kanji
+## Kosakata bacaan Kanji kanonis
 
-Telah dikonfirmasi bahwa `readings` Kanji sudah menargetkan entri Kosakata lengkap dan secara eksplisit memakai presentasi pelafalan. Tautan Kana individual dibuat oleh popup host yang menyelesaikan string pelafalan tanpa memeriksa referensi langsung tersebut; perubahan pencocokan di sisi Pustaka dicatat di `TODO.md`.
+Rekaman leksikal `人` yang duplikat telah dihapus. Entri Kanji kini hanya menunjuk ke bacaan Kosakata `じん`, `にん`, dan `ひと` yang berbeda; setiap bacaan tersusun dari rekaman Hiragana yang sesuai dan memiliki referensi definisi langsungnya sendiri.
 
-- [18d8b2a](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/18d8b2a70d9175f52621322feab482567f7e2e54)
+- [986261f](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/986261f57188d939eb014e4f07eb2d90ed85059d)

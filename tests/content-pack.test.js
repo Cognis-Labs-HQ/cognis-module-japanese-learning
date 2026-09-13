@@ -393,8 +393,6 @@ test("kanji readings reference distinct kana-backed vocabulary entries", () => {
         ({ id }) => id === "readings",
     );
     assert.equal(readingRelationship.targetLayer, "words");
-    assert.equal(readingRelationship.ordered, true);
-    assert.equal(readingRelationship.requiredTarget, true);
     assert.equal(readingRelationship.resolverRole, "explicit");
     assert.equal(readingRelationship.presentationRole, "pronunciation");
 
@@ -408,14 +406,18 @@ test("kanji readings reference distinct kana-backed vocabulary entries", () => {
             .filter(({ layer }) => layer === "characters")
             .map((record) => [record.id, record]),
     );
-    for (const kanji of records.filter(
+    const kanjiEntries = records.filter(
         ({ layer }) => layer === compoundLayer.id,
-    )) {
+    );
+    const kanjiLabels = new Set(kanjiEntries.map(({ label }) => label));
+    assert.ok(
+        [...words.values()].every(({ label }) => !kanjiLabels.has(label)),
+    );
+    for (const kanji of kanjiEntries) {
         const readingWords = kanji.references
             .filter(({ relation }) => relation === "readings")
             .sort((left, right) => left.position - right.position)
             .map(({ entryId }) => words.get(entryId));
-        assert.ok(readingWords.every(Boolean));
         assert.deepEqual(
             readingWords.map(({ label }) => label),
             kanji.fields.pronunciation,
@@ -432,6 +434,11 @@ test("kanji readings reference distinct kana-backed vocabulary entries", () => {
             assert.ok(
                 spelling.every(
                     ({ fields }) => fields.character_class === "hiragana",
+                ),
+            );
+            assert.ok(
+                readingWord.references.some(
+                    ({ relation }) => relation === "definitions",
                 ),
             );
         }

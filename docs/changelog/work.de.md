@@ -194,20 +194,14 @@ Das Paket wird für die neuesten Identitätsschutzmaßnahmen der Bibliothek neu 
 
 - [01606c4](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/01606c49ade781db72f6652ca779517732eed7a6)
 
-## Isoliertes Löschen von Kana
-
-Es wurde überprüft, dass Löschabhängigkeiten von Hiragana niemals Katakana-Datensätze erreichen. Die verbleibenden zusätzlichen Zellen entstehen dadurch, dass die Host-Bibliothek gelöschte Raster-IDs als anonyme, nicht filterbare Leerstellen darstellt. Die erforderliche Renderer-Änderung ist in `TODO.md` festgehalten, da der Rastervertrag des Inhaltspakets Fallback-Leerstellen keine Schriftmetadaten zuordnen kann.
-
-- [15b6878](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/15b68784f9029e9140e02dcd5875cd575d41fe5c)
-
 ## Explizite Kana-Kindhierarchien
 
 Die Kana-Elternbeziehungen entsprechen jetzt dem neuesten Bibliotheksvertrag und sind sowohl als Varianten als auch als räumliche Kinder markiert. Da der doppelte Beziehungsabschnitt unterdrückt wird, ist das ausdrückliche Feld `usage_note` nicht mehr nötig und wurde zusammen mit seinen vier Datensatzwerten entfernt.
 
 - [6734506](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/67345060175f87f4a73e1f07598efcb2df814edb)
 
-## Direkte Links für Kanji-Lesungen
+## Kanonischer Wortschatz für Kanji-Lesungen
 
-Es wurde bestätigt, dass Kanji-`readings` bereits vollständige Wortschatzeinträge referenzieren und ausdrücklich die Aussprachedarstellung verwenden. Die Links zu einzelnen Kana entstehen, weil das Host-Popup Aussprachezeichenfolgen auflöst, ohne diese direkten Referenzen zu berücksichtigen. Die erforderliche Änderung auf Bibliotheksseite ist in `TODO.md` festgehalten.
+Der doppelte lexikalische Datensatz `人` wurde entfernt. Der Kanji-Eintrag verweist jetzt nur auf seine unterschiedlichen Wortschatzlesungen `じん`, `にん` und `ひと`; jede Lesung setzt sich aus passenden Hiragana-Datensätzen zusammen und besitzt einen eigenen direkten Definitionsverweis.
 
-- [18d8b2a](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/18d8b2a70d9175f52621322feab482567f7e2e54)
+- [986261f](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/986261f57188d939eb014e4f07eb2d90ed85059d)

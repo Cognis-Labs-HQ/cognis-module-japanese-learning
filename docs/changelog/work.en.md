@@ -194,20 +194,14 @@ The pack is republished for the latest Library identity safeguards. Every Kana r
 
 - [01606c4](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/01606c49ade781db72f6652ca779517732eed7a6)
 
-## Isolated Kana deletion
-
-Verified that Hiragana deletion dependencies never reach Katakana records. The remaining extra cells come from the host Library rendering deleted grid IDs as anonymous, unfilterable blanks; the required renderer change is recorded in `TODO.md` because the content-pack grid contract cannot attach script metadata to fallback blanks.
-
-- [15b6878](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/15b68784f9029e9140e02dcd5875cd575d41fe5c)
-
 ## Explicit Kana child hierarchies
 
 Aligned with the latest Library relationship contract by marking Kana parent relationships as both variants and spatial children. The suppressed duplicate relationship section makes the explicit `usage_note` field unnecessary, so it and its four record values have been removed.
 
 - [6734506](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/67345060175f87f4a73e1f07598efcb2df814edb)
 
-## Direct Kanji reading links
+## Canonical Kanji reading vocabulary
 
-Confirmed that Kanji `readings` already target complete Vocabulary entries and explicitly use pronunciation presentation. The individual Kana links are produced by the host popup resolving pronunciation strings without consulting those direct references; the required Library-side matching change is recorded in `TODO.md`.
+Removed the duplicate `人` lexical record. The Kanji entry now points only to its distinct `じん`, `にん`, and `ひと` Vocabulary readings; every reading composes from matching Hiragana records and carries its own direct definition reference.
 
-- [18d8b2a](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/18d8b2a70d9175f52621322feab482567f7e2e54)
+- [986261f](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/986261f57188d939eb014e4f07eb2d90ed85059d)
