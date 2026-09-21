@@ -205,3 +205,9 @@ Cognis PR #214 に合わせ、名前空間の所有権、ローカライズ済�
 重複していた語彙レコード `人` を削除しました。漢字項目は、異なる語彙読み `じん`、`にん`、`ひと` のみを参照します。各読みは対応するひらがなレコードで構成され、それぞれが定義を直接参照します。
 
 - [986261f](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/986261f57188d939eb014e4f07eb2d90ed85059d)
+
+## PR 220 のモジュール所有権契約
+
+標準化された `study:language:ja` ケイパビリティをモジュール所有名前空間の外で公開するため、信頼済み特権を明示的に要求するようにしました。Cognis Labs リポジトリの来歴をホストが検証でき、ライブラリへのアクセスは引き続きケイパビリティ経由で、すべての登録はライフサイクル管理下にあります。
+
+- [d1efe4b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/d1efe4b52184c4cdc77843441c2dfa7948339afe)

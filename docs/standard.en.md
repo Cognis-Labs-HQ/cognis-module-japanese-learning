@@ -119,3 +119,7 @@ Aligned with the latest Library relationship contract by marking Kana parent rel
 ## Canonical Kanji reading vocabulary
 
 Removed the duplicate `人` lexical record. The Kanji entry now points only to its distinct `じん`, `にん`, and `ひと` Vocabulary readings; every reading composes from matching Hiragana records and carries its own direct definition reference.
+
+## PR 220 module ownership contract
+
+The module now requests trusted privilege explicitly because it publishes the standardized `study:language:ja` capability outside its module-owned namespace. Its Cognis Labs repository provenance lets the host verify that request, while Library access remains capability-based and all registrations remain lifecycle-owned.

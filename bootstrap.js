@@ -21,7 +21,7 @@ const LANGUAGE = Object.freeze({
     languageCode: "ja",
     languageName: "日本語",
     languageFlag: "🇯🇵",
-    version: "5.3.2",
+    version: "5.4.0",
     package: CONTENT_PACK,
     childComponents: [],
 });
