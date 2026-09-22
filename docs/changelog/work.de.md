@@ -253,3 +253,9 @@ Der Bestand umfasst nun mehr als sechzig Kasus-, Binde-, Konjunktiv-, Aufzählun
 Partikelbeispiele enthalten nun aus Kanji zusammengesetzten Wortschatz für Schule mit eigenen ausgeblendeten Lesungen, die 学校 aus geordneten atomaren Kana rekonstruieren. Dadurch kann jedes hinzugefügte Partikelbeispiel vom Satz über Wortschatz und Kanji bis zur genauen Kana-Lesung navigiert werden.
 
 - [0353386](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/03533863e162d223ac9a77782ec146668d5c154b)
+
+## Konservative Modulversionierung
+
+Modul und Inhaltspaket kehren zu Version `2.2.2` zurück. Die Repository-Richtlinien verwenden Patch-Releases für kompatible Inhalts- und Schemaarbeiten, Minor-Releases für kompatible externe Ergänzungen und Major-Releases nur für koordinierte, inkompatible Host-Verträge; Schema-Revisionen bestimmen nicht mehr die Major-Version des Moduls.
+
+- [1966bc1](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/1966bc11b02f49729c29544cd78e710c133f0366)

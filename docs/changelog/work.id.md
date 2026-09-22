@@ -253,3 +253,9 @@ Paket kini memuat lebih dari enam puluh partikel kasus, pengikat, penghubung, pe
 Contoh partikel kini memuat Kosakata sekolah yang tersusun dari Kanji, dengan bacaan tersembunyi khusus yang menyusun kembali 学校 dari Kana atomik berurutan. Karena itu, setiap contoh partikel tambahan dapat ditelusuri dari Kalimat melalui Kosakata dan Kanji hingga bacaan Kana yang tepat.
 
 - [0353386](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/03533863e162d223ac9a77782ec146668d5c154b)
+
+## Laju Versi Modul yang Konservatif
+
+Modul dan paket konten kembali ke versi `2.2.2`. Panduan repositori kini memakai rilis patch untuk perubahan konten dan skema yang kompatibel, rilis minor untuk penambahan eksternal yang kompatibel, serta rilis mayor hanya untuk kontrak host yang tidak kompatibel dan terkoordinasi; revisi skema tidak lagi menentukan versi mayor modul.
+
+- [1966bc1](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/1966bc11b02f49729c29544cd78e710c133f0366)

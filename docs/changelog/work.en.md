@@ -253,3 +253,9 @@ Expanded the pack to more than sixty particles spanning case, binding, conjuncti
 Particle examples now include Kanji-composed Vocabulary for school, with dedicated hidden readings that reconstruct 学校 from ordered atomic Kana. Every added particle example can therefore traverse from its Sentence through Vocabulary and Kanji to the exact Kana reading.
 
 - [0353386](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/03533863e162d223ac9a77782ec146668d5c154b)
+
+## Conservative Module Version Pacing
+
+The module and content pack return to version `2.2.2`. Repository guidance now reserves patch releases for compatible content and schema work, minor releases for compatible external additions, and major releases for coordinated breaking host contracts; schema revisions no longer drive the module major version.
+
+- [1966bc1](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/1966bc11b02f49729c29544cd78e710c133f0366)
