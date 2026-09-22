@@ -2,7 +2,7 @@
     "id": "study-language-ja",
     "uuid": "e905927f-b133-572a-92ce-2ea8645e5ceb",
     "name": "module.study-language-ja.name",
-    "version": "2.2.3",
+    "version": "2.2.4",
     "class": "extension",
     "coreApiVersion": "v1",
     "capabilities": ["study:language:ja"],
@@ -51,7 +51,7 @@
         },
         {
             "path": ".github/copilot-instructions.md",
-            "sha256": "d1d0496a6a734a15b765535719ce9fec015b2c0638489ca95d153eac796fff12"
+            "sha256": "056e6ca5a1131295817f86a53e7a9cded4d547d7f67db5599016ad19b32042ec"
         },
         {
             "path": ".gitignore",
@@ -67,7 +67,7 @@
         },
         {
             "path": "AGENTS.md",
-            "sha256": "d1d0496a6a734a15b765535719ce9fec015b2c0638489ca95d153eac796fff12"
+            "sha256": "056e6ca5a1131295817f86a53e7a9cded4d547d7f67db5599016ad19b32042ec"
         },
         {
             "path": "LICENSE",
@@ -75,23 +75,23 @@
         },
         {
             "path": "README.de.md",
-            "sha256": "e6a8cbb0c07eb7bd6d51a506c4b892785ec677bacd14ca582803176bfc442855"
+            "sha256": "e57a20d5fa53b22e6706ed60a2967c8d87d9b23d4e7f5051cd79e82e1005a8d3"
         },
         {
             "path": "README.en.md",
-            "sha256": "076a0cfb280dec4d12117a04e4417f2fd685af328e42c411b436a5070e8e37b6"
+            "sha256": "0a9c37d93de3834df1cb1abe3654db78e6e96b1aca95c80265288dd024a9f4c4"
         },
         {
             "path": "README.id.md",
-            "sha256": "bb990ea669ebb0e65d221cf5db0573daabc793e277ffdddf2ae9d8081c54e6a4"
+            "sha256": "851a24a169a9ed729b6ee80da8aebf604c19c4f64ee93dd528d8c1e09d3ce90c"
         },
         {
             "path": "README.ja.md",
-            "sha256": "58f9231608406724d64462a726c610f5007ce6bbdd515e38da03d05d1afe9cb7"
+            "sha256": "0aadcd9e8f50b274e04e843c8d6eb62c7286d1f5905812906e2b5aa38bfe0a54"
         },
         {
             "path": "README.md",
-            "sha256": "076a0cfb280dec4d12117a04e4417f2fd685af328e42c411b436a5070e8e37b6"
+            "sha256": "0a9c37d93de3834df1cb1abe3654db78e6e96b1aca95c80265288dd024a9f4c4"
         },
         {
             "path": "assets/banner.svg",
@@ -103,14 +103,18 @@
         },
         {
             "path": "bootstrap.js",
-            "sha256": "6334640c96a743ca2ecc4691e507cf1003491a1db86249d3a934068b2080faba"
+            "sha256": "04d02497f10ccac625d02089f9b320a61730ff05fff1b593d9cb042e922df0d1"
+        },
+        {
+            "path": "data/library/content/alt-characters/animal-kanji.json",
+            "sha256": "72f2687498f7d8787e3b2134b90e4f237d7ed91844c57f003573e82b0327fe6e"
         },
         {
             "path": "data/library/content/alt-characters/kanji.json",
             "sha256": "6a76e99827ae2772d2b21249d9cb3e94ea98ae17878cdaea1dfad63611610371"
         },
         {
-            "path": "data/library/content/alt-characters/particle-example-kanji.json",
+            "path": "data/library/content/alt-characters/school-kanji.json",
             "sha256": "aa34ceedbfd622821262d0ae7523a060894372da54f371b3708e24cc25585be9"
         },
         {
@@ -138,6 +142,10 @@
             "sha256": "f1d305fce9a58559216fda0c0eb3c19f14017a2d69fa3924c1d4284a8d6da714"
         },
         {
+            "path": "data/library/content/definitions/animal-kanji.json",
+            "sha256": "f5c5f4c0dae7558c1feb155c0eec8a20960b9c2068efa7b9b2c50edc615248b6"
+        },
+        {
             "path": "data/library/content/definitions/common.json",
             "sha256": "515a9e27f08c56f0fe3486965cd30c6fb65bb4831805f41ce85a4821978c668d"
         },
@@ -146,24 +154,16 @@
             "sha256": "fd6a1d9985a5e39cd7b131feec3ec4f88265df1e198d3a34c5b8b88221ccc4ad"
         },
         {
-            "path": "data/library/content/definitions/particle-example-kanji.json",
-            "sha256": "01254bca4ae416438c7c1c9202a7029315c00369fda9801a68ef247fadd5ee05"
-        },
-        {
-            "path": "data/library/content/definitions/particle-examples-1.json",
-            "sha256": "9f96099be3d93d956f48fcf838e792611779f763f2a96976722952c258256735"
-        },
-        {
-            "path": "data/library/content/definitions/particle-examples-2.json",
-            "sha256": "fb16deaa031319e651c86f26dce52c4c96a75e5f23dccae802b35bbe9f1d50a3"
-        },
-        {
-            "path": "data/library/content/definitions/particle-examples-existing.json",
-            "sha256": "0b726400bce6d976590ba01cffa96ccdff3d6c0f187e7dac0856e9c7932923be"
-        },
-        {
             "path": "data/library/content/definitions/particle-sentence-grammar.json",
             "sha256": "395e5e66a7d1c3809d779f07765506e8e7b3d6838d8d8c5cce82691751929a7f"
+        },
+        {
+            "path": "data/library/content/definitions/particle-sentences-1.json",
+            "sha256": "0e7e8f50fed1f15ae6c910b23115aed4501bb5792772645a97d05227f4e60856"
+        },
+        {
+            "path": "data/library/content/definitions/particle-sentences-2.json",
+            "sha256": "65dfd52374ebc1def22fc806c9ec9fc6b63e01a28969181c071ce0b9f3413d3a"
         },
         {
             "path": "data/library/content/definitions/particles-comprehensive.json",
@@ -172,6 +172,14 @@
         {
             "path": "data/library/content/definitions/particles-expanded.json",
             "sha256": "e2bbc9ac1d4d8eb39603bf9272a505388d458fc558821cfb9415a3505b8ac95b"
+        },
+        {
+            "path": "data/library/content/definitions/school-kanji.json",
+            "sha256": "01254bca4ae416438c7c1c9202a7029315c00369fda9801a68ef247fadd5ee05"
+        },
+        {
+            "path": "data/library/content/definitions/school-particle-sentences.json",
+            "sha256": "0b726400bce6d976590ba01cffa96ccdff3d6c0f187e7dac0856e9c7932923be"
         },
         {
             "path": "data/library/content/definitions/sentences-expanded.json",
@@ -199,19 +207,23 @@
         },
         {
             "path": "data/library/content/sentences/expanded.json",
-            "sha256": "cb3b1cf0d9851c7c0bb21ff6babd61befac70b62e3653424579d1bcc279fc0f8"
+            "sha256": "8a8da3fa772575e0281292be2e83c03399af2784c193559bb56f6ecbd2e5d21d"
         },
         {
-            "path": "data/library/content/sentences/particle-examples-1.json",
-            "sha256": "414afe27133f9a01ec93e260a42d2ef2f1d956acf6c343ec1662d9346760b37b"
+            "path": "data/library/content/sentences/particle-sentences-1.json",
+            "sha256": "f53f6dd2f4f2f53a02828fac323ea05fe4d24484d6a5c8125925e372d15d6aac"
         },
         {
-            "path": "data/library/content/sentences/particle-examples-2.json",
-            "sha256": "9490b37b40445a5d3bd132e8b65ecd681396e5b8e158e0bf556f524e0677fa37"
+            "path": "data/library/content/sentences/particle-sentences-2.json",
+            "sha256": "ac1dda4c649f432542998d429d8cc30feca2fa73871d9232d6f6e42023f25d5d"
         },
         {
-            "path": "data/library/content/sentences/particle-examples-existing.json",
+            "path": "data/library/content/sentences/school-particle-sentences.json",
             "sha256": "7fe0f90717864e516a38f43f709cb9ff759d6b84d8da8bc4964fcc395f45e5b7"
+        },
+        {
+            "path": "data/library/content/words/animal-readings.json",
+            "sha256": "521c01b469ba1539e4a96f17f612d4cb411bb0596a27c6cd2cf66906e3cf5a3f"
         },
         {
             "path": "data/library/content/words/common.json",
@@ -219,19 +231,19 @@
         },
         {
             "path": "data/library/content/words/expanded.json",
-            "sha256": "c35ead532cc1662d5ebd6fd426a91856abc496787f54b0590a4422a28d4c3649"
-        },
-        {
-            "path": "data/library/content/words/particle-example-readings.json",
-            "sha256": "3e4efec00b38ee18dead9b4c5c623bf6070bc7e4e7d380ca333ef67f9fb229d4"
+            "sha256": "2a5e542b641d198bedaaac7d612284b29c5acbf2bb76e0f5817e942c98887ae5"
         },
         {
             "path": "data/library/content/words/particle-sentence-grammar.json",
             "sha256": "1f6a294fe8fd228e9001da27250fb7913214bf889e6d4fe6130f8509eedb4eb9"
         },
         {
+            "path": "data/library/content/words/school-readings.json",
+            "sha256": "3e4efec00b38ee18dead9b4c5c623bf6070bc7e4e7d380ca333ef67f9fb229d4"
+        },
+        {
             "path": "data/library/manifest.json",
-            "sha256": "d44a265efc848173f46082ed5ac81735bd866381d049455cc0a971f4c54d1469"
+            "sha256": "9cfb50e242407f1a19b062e24c5a76d836448b0974a979b0b383efdad0bee792"
         },
         {
             "path": "data/library/schema.json",
@@ -239,27 +251,27 @@
         },
         {
             "path": "docs/standard.de.md",
-            "sha256": "2faae92911177df2d53068aa89d1acb5fd17d3925dab00b71be758eeb603eb30"
+            "sha256": "f7f4b59a242777042b866a7de7a73c7812c55865390f9574f50b008f858f55ec"
         },
         {
             "path": "docs/standard.en.md",
-            "sha256": "58f65972c2ca181023385fe60bd3e293bf15ba2907d6043c4dace629c51c3235"
+            "sha256": "b162d58ac74836e0b0bfdc384a19b65e7e140d3632d61fa2454684132903c160"
         },
         {
             "path": "docs/standard.id.md",
-            "sha256": "fc0d7b9210a8f332f75e1d3f6263b739820c8d430b225990a77021ac333ba060"
+            "sha256": "0dd4bc420f13cadeda2590560629c09a8e1c5456c96e42e97a9709658005a882"
         },
         {
             "path": "docs/standard.ja.md",
-            "sha256": "b877865eb7f2e19e5539fca2806c00decb5e290f119a96c9e029e0aa330c0ebb"
+            "sha256": "56a57d4e086d602a5ea0a6166dc9fcdbcab9c08078c5a0259e249e694865af12"
         },
         {
             "path": "package-lock.json",
-            "sha256": "683f0ff9fbbf72e6025239ad6b6e69a090958efc211bfbfb7d616b6fbe8f2582"
+            "sha256": "fe042cdfed915804686dc7feb681009f0d3248ec171bf494d61826b17254b71e"
         },
         {
             "path": "package.json",
-            "sha256": "f0c8a182c3d9d4b0d31a79c0d8685daf2d6734edbd7ad185317198a7ece0eda6"
+            "sha256": "0ee655440efb44a77c3877dd5d8206fa5ba39be8e9f8d4f11002e1328cdbd58d"
         },
         {
             "path": "routes.json",
@@ -283,11 +295,11 @@
         },
         {
             "path": "tests/content-pack.test.js",
-            "sha256": "ec6ccf4327d136e5f5cda54ee495713b1fb2471de21b76d448549b702f9eaca7"
+            "sha256": "ab73f1ac83989afccd1cc6a93f6a45d34684df7cdd4b6a9ecd99b2e54aa61224"
         },
         {
             "path": "tests/dataset-expansion.test.js",
-            "sha256": "780c6557db5e4147b9ae78df95410c1967f821db578a190667a94d2802dbb93e"
+            "sha256": "7ee1f74aefe074e5ba30e4d7ee9681e54425991c8fd52284d42087a9e7eff53b"
         },
         {
             "path": "tests/documentation-convention.test.js",

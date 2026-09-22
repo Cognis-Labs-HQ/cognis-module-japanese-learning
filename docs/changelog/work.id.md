@@ -265,3 +265,9 @@ Modul dan paket konten kembali ke versi `2.2.2`. Panduan repositori kini memakai
 Kartu kalimat partikel kini berisi pernyataan dan frasa bahasa Jepang yang ringkas dengan makna terlokalkan langsung, bukan metadata seperti “contoh partikel”. Bentuk kopula dan infleksi ditulis sebagai kosakata tersembunyi berbasis Kana agar relasi kalimat berurutan menyusun kembali konten belajar yang sebenarnya.
 
 - [4f281e3](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/4f281e3bec4e63d79c9c8c07f7d79ccf541dc172)
+
+## Graf Konten Penyedia yang Diaudit
+
+Paket penyedia kini dilindungi sesuai kontrak Pustaka terbaru. Konten belajar kucing dan anjing memakai kosakata terlihat `猫` dan `犬`, menaut melalui Kanji yang sesuai dan bacaan lengkap tersembunyi ke Kana atomik, serta memperoleh setiap label dan pelafalan kalimat dari satu graf relasi berurutan. Identitas placeholder bertanda “contoh” dihapus, dan pengujian kontrak baru menolak bacaan usang atau lapisan tulisan yang dilewati.
+
+- [2eb4742](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/2eb474286b59e1828d4e2f266029820334d0334c)

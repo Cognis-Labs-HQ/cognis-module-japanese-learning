@@ -265,3 +265,9 @@ Modul und Inhaltspaket kehren zu Version `2.2.2` zurück. Die Repository-Richtli
 Partikelsatzkarten enthalten nun knappe japanische Aussagen und Wendungen mit direkten lokalisierten Bedeutungen statt Metadaten wie „Partikelbeispiel“. Kopula- und Flexionsformen sind als ausgeblendeter, Kana-gestützter Wortschatz verfasst, sodass geordnete Satzbeziehungen den tatsächlichen Lerninhalt rekonstruieren.
 
 - [4f281e3](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/4f281e3bec4e63d79c9c8c07f7d79ccf541dc172)
+
+## Geprüfter Inhaltsgraph des Anbieters
+
+Das Anbieterpaket ist nun gemäß dem neuesten Bibliotheksvertrag geschützt. Lerninhalte zu Katze und Hund verwenden sichtbaren Wortschatz `猫` und `犬`, verknüpfen ihn über passende Kanji und vollständige ausgeblendete Lesungen mit atomaren Kana und leiten jede Satzbezeichnung und Aussprache aus einem geordneten Beziehungsgraphen ab. Platzhalteridentitäten mit „Beispiel“ wurden entfernt; neue Vertragstests lehnen veraltete Lesungen und übersprungene Schriftebenen ab.
+
+- [2eb4742](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/2eb474286b59e1828d4e2f266029820334d0334c)

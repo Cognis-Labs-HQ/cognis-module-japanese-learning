@@ -54,21 +54,21 @@
     },
     {
         "id": "ja:word:inu",
-        "label": "いぬ",
+        "label": "犬",
         "fields": {
             "jlpt_level": "N5",
             "pronunciation": ["いぬ"]
         },
         "references": [
             {
-                "entryId": "ja:char:i",
-                "relation": "kana-spelling",
+                "entryId": "ja:kanji:inu",
+                "relation": "spelling",
                 "position": 0
             },
             {
-                "entryId": "ja:char:nu",
-                "relation": "kana-spelling",
-                "position": 1
+                "entryId": "ja:word:reading-inu",
+                "relation": "pronunciation-readings",
+                "position": 0
             },
             {
                 "entryId": "ja:def:inu",
@@ -78,21 +78,21 @@
     },
     {
         "id": "ja:word:neko",
-        "label": "ねこ",
+        "label": "猫",
         "fields": {
             "jlpt_level": "N5",
             "pronunciation": ["ねこ"]
         },
         "references": [
             {
-                "entryId": "ja:char:ne",
-                "relation": "kana-spelling",
+                "entryId": "ja:kanji:neko",
+                "relation": "spelling",
                 "position": 0
             },
             {
-                "entryId": "ja:char:ko",
-                "relation": "kana-spelling",
-                "position": 1
+                "entryId": "ja:word:reading-neko",
+                "relation": "pronunciation-readings",
+                "position": 0
             },
             {
                 "entryId": "ja:def:neko",

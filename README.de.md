@@ -152,3 +152,7 @@ Partikelbeispiele verwenden nun verfassten Kanji-Wortschatz wie `学校`. Jeder 
 ## Bedeutungsvolle Partikelsätze
 
 Definitionen von Partikelsätzen enthalten nun direkte lokalisierte Bedeutungen statt redaktioneller Bezeichnungen wie „Partikelbeispiel“. Die zugehörigen Lerninhalte verwenden knappe japanische Sätze und Wendungen, deren verknüpfter Wortschatz und Partikeln den angezeigten Inhalt rekonstruieren.
+
+## Geprüfter Inhaltsgraph des Anbieters
+
+Anbieterinhalte sind nun vor benutzereigenen Verschiebungen und Löschungen geschützt. Der Tierwortschatz verwendet die üblichen Schreibweisen `猫` und `犬`, verknüpft diese über ihre Kanji-Datensätze mit vollständigen ausgeblendeten Lesungen `ねこ` und `いぬ` und rekonstruiert diese Lesungen aus atomaren Kana. Satzbezeichnungen und Aussprachen stammen aus demselben geordneten Wortschatz- und Partikelgraphen.

@@ -4,10 +4,11 @@ const CONTENT_PACK = Object.freeze({
     id: "japanese-core",
     publisher: "Cognis Labs HQ",
     namespace: "ja",
-    version: "2.2.3",
-    contentRevision: "2026-09-22.9",
+    version: "2.2.4",
+    contentRevision: "2026-09-22.10",
     schema: "schema.json",
     content: "content",
+    protected: true,
     license: Object.freeze({
         id: "AGPL-3.0-or-later",
         url: "https://www.gnu.org/licenses/agpl-3.0.html",
@@ -21,7 +22,7 @@ const LANGUAGE = Object.freeze({
     languageCode: "ja",
     languageName: "日本語",
     languageFlag: "🇯🇵",
-    version: "2.2.3",
+    version: "2.2.4",
     package: CONTENT_PACK,
     childComponents: [],
 });

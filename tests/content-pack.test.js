@@ -409,10 +409,6 @@ test("kanji readings reference distinct kana-backed vocabulary entries", () => {
     const kanjiEntries = records.filter(
         ({ layer }) => layer === compoundLayer.id,
     );
-    const kanjiLabels = new Set(kanjiEntries.map(({ label }) => label));
-    assert.ok(
-        [...words.values()].every(({ label }) => !kanjiLabels.has(label)),
-    );
     for (const kanji of kanjiEntries) {
         const readingWords = kanji.references
             .filter(({ relation }) => relation === "readings")

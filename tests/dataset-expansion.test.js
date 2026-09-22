@@ -31,6 +31,13 @@ const definitions = new Map(
 const particles = readData("particles/expanded.json");
 const sentences = readData("sentences/expanded.json");
 
+test("provider content is protected from user-owned mutations", () => {
+    const manifest = JSON.parse(
+        readFileSync(new URL("../data/library/manifest.json", import.meta.url)),
+    );
+    assert.equal(manifest.protected, true);
+});
+
 function definitionIds(entry) {
     return entry.references
         .filter(({ relation }) => relation === "definitions")
@@ -85,7 +92,7 @@ test("every authored particle is exercised by a sentence", () => {
     }
 });
 
-test("particle examples traverse vocabulary, Kanji, and Kana", () => {
+test("particle sentences traverse vocabulary, Kanji, and Kana", () => {
     const entriesById = new Map(
         ["characters", "alt-characters", "words", "particles", "sentences"]
             .flatMap(readLayer)
@@ -93,7 +100,7 @@ test("particle examples traverse vocabulary, Kanji, and Kana", () => {
     );
     const examples = readLayer("sentences").filter(
         ({ id }) =>
-            id.startsWith("ja:sentence:particle-example-") ||
+            id.startsWith("ja:sentence:particle-") ||
             ["ja:sentence:gakkou-de-miru", "ja:sentence:gakkou-e-iku"].includes(
                 id,
             ),
@@ -130,7 +137,7 @@ test("particle sentence definitions describe meaning rather than authorship", ()
     const metadataTerms =
         /\b(?:example|exercise|demonstration|placeholder)\b|\bBeispiel\b|\bcontoh\b|例文|例$/iu;
     const sentenceDefinitions = readLayer("definitions").filter(({ id }) =>
-        id.startsWith("ja:def:sentence-particle-example-"),
+        id.startsWith("ja:def:sentence-particle-"),
     );
 
     for (const definition of sentenceDefinitions) {
@@ -140,5 +147,72 @@ test("particle sentence definitions describe meaning rather than authorship", ()
         )) {
             assert.equal(metadataTerms.test(translation), false);
         }
+    }
+});
+
+test("sentence readings follow their ordered vocabulary and particle graph", () => {
+    const words = new Map(readLayer("words").map((entry) => [entry.id, entry]));
+    const particles = new Map(
+        readLayer("particles").map((entry) => [entry.id, entry]),
+    );
+
+    for (const sentence of readLayer("sentences")) {
+        const constituents = sentence.references
+            .filter(({ relation }) => ["words", "particles"].includes(relation))
+            .sort((left, right) => left.position - right.position)
+            .map(({ entryId, relation }) =>
+                relation === "words"
+                    ? words.get(entryId)
+                    : particles.get(entryId),
+            );
+        assert.equal(
+            sentence.fields.pronunciation[0],
+            constituents.map((entry) => entry.fields.pronunciation[0]).join(""),
+            `${sentence.id} pronunciation must match its linked content`,
+        );
+    }
+});
+
+test("Kanji vocabulary traverses through hidden readings to atomic Kana", () => {
+    const words = new Map(readLayer("words").map((entry) => [entry.id, entry]));
+    const kanji = new Map(
+        readLayer("alt-characters").map((entry) => [entry.id, entry]),
+    );
+
+    for (const id of [
+        "ja:word:neko",
+        "ja:word:inu",
+        "ja:word:gakkou",
+        "ja:word:nihon",
+        "ja:word:nihongo",
+    ]) {
+        const word = words.get(id);
+        const spelling = word.references.filter(
+            ({ relation }) => relation === "spelling",
+        );
+        const wordSpelling = word.references.filter(
+            ({ relation }) => relation === "word-spelling",
+        );
+        const readings = word.references.filter(
+            ({ relation }) => relation === "pronunciation-readings",
+        );
+        assert.ok(
+            spelling.length + wordSpelling.length > 0,
+            `${word.id} must link its written composition`,
+        );
+        assert.ok(readings.length > 0, `${word.id} must link its reading`);
+        assert.ok(spelling.every(({ entryId }) => kanji.has(entryId)));
+        assert.ok(wordSpelling.every(({ entryId }) => words.has(entryId)));
+        assert.ok(
+            readings.every(({ entryId }) => {
+                const reading = words.get(entryId);
+                return (
+                    reading?.hidden === true &&
+                    reading.references.some(
+                        ({ relation }) => relation === "kana-spelling",
+                    )
+                );
+            }),
+        );
     }
 });

@@ -152,3 +152,7 @@ Particle examples now use authored Kanji vocabulary such as `学校`. Each sente
 ## Meaningful particle sentences
 
 Particle sentence definitions now contain direct localized meanings instead of authoring labels such as “particle example.” The associated study entries use concise Japanese sentences and phrases whose linked vocabulary and particles reconstruct the displayed content.
+
+## Audited provider content graph
+
+Provider content is now protected from user-owned moves and deletion. The animal vocabulary uses the conventional `猫` and `犬` spellings, links through their Kanji records to complete hidden `ねこ` and `いぬ` readings, and reconstructs those readings from atomic Kana. Sentence labels and pronunciations are regenerated from the same ordered vocabulary and particle graph.

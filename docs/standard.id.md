@@ -149,3 +149,7 @@ Setiap contoh partikel harus memuat Kosakata yang tersusun melalui Kanji. Setiap
 ## Definisi menjelaskan konten
 
 Definisi harus menyatakan makna terlokalkan dari rekamannya. Definisi tidak boleh menyebut rekaman sebagai contoh, latihan, demonstrasi, placeholder, atau artefak penulisan lainnya. Entri kalimat harus berisi konten bahasa Jepang yang bermakna dan relasi berurutannya harus menyusun kembali teks yang ditampilkan.
+
+## Integritas graf penyedia
+
+Tetapkan `protected: true` pada manifest konten penyedia. Untuk setiap kalimat, gabungkan label kosakata dan partikel tertaut yang berurutan untuk memperoleh labelnya, lalu gabungkan pelafalannya untuk memperoleh pelafalan kalimat. Unit leksikal yang lazim ditulis dengan Kanji harus tertaut ke komposisi Kanji dan kosakata bacaan tersembunyi yang lengkap; setiap bacaan kemudian tertaut ke Kana atomik berurutan.

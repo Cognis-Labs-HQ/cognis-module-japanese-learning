@@ -152,3 +152,7 @@ Contoh partikel kini memakai Kosakata Kanji yang ditulis seperti `学校`. Karen
 ## Kalimat partikel yang bermakna
 
 Definisi kalimat partikel kini berisi makna terlokalkan secara langsung, bukan label penulisan seperti “contoh partikel”. Entri belajar terkait memakai kalimat dan frasa bahasa Jepang yang ringkas, dengan kosakata serta partikel tertaut yang menyusun kembali konten yang ditampilkan.
+
+## Graf konten penyedia yang diaudit
+
+Konten penyedia kini terlindung dari pemindahan dan penghapusan milik pengguna. Kosakata hewan memakai ejaan lazim `猫` dan `犬`, menaut melalui rekaman Kanji ke bacaan tersembunyi lengkap `ねこ` dan `いぬ`, lalu menyusun bacaan tersebut dari Kana atomik. Label dan pelafalan kalimat dibentuk dari graf kosakata dan partikel berurutan yang sama.

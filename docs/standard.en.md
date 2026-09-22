@@ -149,3 +149,7 @@ Every particle example must contain Vocabulary that composes through Kanji. Each
 ## Definitions describe content
 
 A definition must state the localized meaning of its record. It must never call the record an example, exercise, demonstration, placeholder, or other authoring artifact. Sentence entries must contain meaningful Japanese content whose ordered relationships reconstruct the displayed text.
+
+## Provider graph integrity
+
+Set `protected: true` on the provider content manifest. For every sentence, concatenate the ordered linked vocabulary and particle labels to obtain its label, and concatenate their pronunciations to obtain its pronunciation. A conventional Kanji-spelled lexical unit must link to its Kanji composition and complete hidden reading vocabulary; each reading must then link to ordered atomic Kana.

@@ -149,3 +149,7 @@ Jedes Partikelbeispiel muss Wortschatz enthalten, der sich über Kanji zusammens
 ## Definitionen beschreiben Inhalte
 
 Eine Definition muss die lokalisierte Bedeutung ihres Datensatzes angeben. Sie darf den Datensatz niemals als Beispiel, Übung, Demonstration, Platzhalter oder anderes Redaktionsartefakt bezeichnen. Satzeinträge müssen bedeutungsvolle japanische Inhalte enthalten, deren geordnete Beziehungen den angezeigten Text rekonstruieren.
+
+## Integrität des Anbietergraphen
+
+Setze `protected: true` im Inhaltsmanifest des Anbieters. Für jeden Satz ergeben die geordneten verknüpften Wortschatz- und Partikelbezeichnungen seine Bezeichnung; deren Aussprachen ergeben seine Aussprache. Eine üblicherweise mit Kanji geschriebene lexikalische Einheit muss auf ihre Kanji-Komposition und vollständigen ausgeblendeten Lesewörter verweisen; jede Lesung verweist anschließend auf geordnete atomare Kana.
