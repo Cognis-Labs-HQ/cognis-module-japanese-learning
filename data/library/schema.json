@@ -1,6 +1,6 @@
 {
     "id": "japanese-core",
-    "version": 31,
+    "version": 32,
     "namespace": "ja",
     "language": "ja",
     "metadata": {
@@ -40,6 +40,9 @@
                     "detail": {
                         "renderer": "text",
                         "order": 1
+                    },
+                    "input": {
+                        "control": "tagList"
                     }
                 },
                 {
@@ -57,6 +60,13 @@
                     "detail": {
                         "renderer": "media",
                         "order": 2
+                    },
+                    "input": {
+                        "control": "audioFile",
+                        "file": {
+                            "namespace": "study-library-audio",
+                            "prefix": "ja/"
+                        }
                     }
                 },
                 {
@@ -78,6 +88,34 @@
                         "exclusive": true,
                         "required": true,
                         "defaultTag": "hiragana"
+                    },
+                    "input": {
+                        "control": "singleSelect",
+                        "immutable": true,
+                        "options": [
+                            {
+                                "value": "hiragana",
+                                "metadata": {
+                                    "labels": {
+                                        "de": "Hiragana",
+                                        "en": "Hiragana",
+                                        "id": "Hiragana",
+                                        "ja": "ひらがな"
+                                    }
+                                }
+                            },
+                            {
+                                "value": "katakana",
+                                "metadata": {
+                                    "labels": {
+                                        "de": "Katakana",
+                                        "en": "Katakana",
+                                        "id": "Katakana",
+                                        "ja": "カタカナ"
+                                    }
+                                }
+                            }
+                        ]
                     }
                 }
             ],
@@ -305,6 +343,10 @@
                     "detail": {
                         "renderer": "text",
                         "order": 1
+                    },
+                    "input": {
+                        "control": "tagList",
+                        "linkRelationship": "readings"
                     }
                 },
                 {
@@ -322,6 +364,13 @@
                     "detail": {
                         "renderer": "media",
                         "order": 2
+                    },
+                    "input": {
+                        "control": "audioFile",
+                        "file": {
+                            "namespace": "study-library-audio",
+                            "prefix": "ja/"
+                        }
                     }
                 }
             ],
@@ -394,6 +443,10 @@
                         "renderer": "text",
                         "order": 1,
                         "hidden": true
+                    },
+                    "input": {
+                        "control": "freeText",
+                        "immutable": true
                     }
                 },
                 {
@@ -411,6 +464,9 @@
                     "detail": {
                         "renderer": "text",
                         "order": 2
+                    },
+                    "input": {
+                        "control": "localizedText"
                     }
                 }
             ],
@@ -452,6 +508,10 @@
                     "detail": {
                         "renderer": "text",
                         "order": 1
+                    },
+                    "input": {
+                        "control": "tagList",
+                        "linkRelationship": "kana-spelling"
                     }
                 },
                 {
@@ -472,10 +532,86 @@
                         "exclusive": true,
                         "required": true,
                         "defaultTag": "N5"
+                    },
+                    "input": {
+                        "control": "singleSelect",
+                        "options": [
+                            {
+                                "value": "N5",
+                                "metadata": {
+                                    "labels": {
+                                        "de": "N5",
+                                        "en": "N5",
+                                        "id": "N5",
+                                        "ja": "N5"
+                                    }
+                                }
+                            },
+                            {
+                                "value": "N4",
+                                "metadata": {
+                                    "labels": {
+                                        "de": "N4",
+                                        "en": "N4",
+                                        "id": "N4",
+                                        "ja": "N4"
+                                    }
+                                }
+                            },
+                            {
+                                "value": "N3",
+                                "metadata": {
+                                    "labels": {
+                                        "de": "N3",
+                                        "en": "N3",
+                                        "id": "N3",
+                                        "ja": "N3"
+                                    }
+                                }
+                            },
+                            {
+                                "value": "N2",
+                                "metadata": {
+                                    "labels": {
+                                        "de": "N2",
+                                        "en": "N2",
+                                        "id": "N2",
+                                        "ja": "N2"
+                                    }
+                                }
+                            },
+                            {
+                                "value": "N1",
+                                "metadata": {
+                                    "labels": {
+                                        "de": "N1",
+                                        "en": "N1",
+                                        "id": "N1",
+                                        "ja": "N1"
+                                    }
+                                }
+                            }
+                        ]
                     }
                 }
             ],
             "relationships": [
+                {
+                    "id": "word-spelling",
+                    "targetLayer": "words",
+                    "metadata": {
+                        "labels": {
+                            "de": "Wortbestandteil",
+                            "en": "Word Spelling",
+                            "id": "Ejaan Kata",
+                            "ja": "語彙表記"
+                        }
+                    },
+                    "ordered": true,
+                    "onDelete": "restrict",
+                    "resolverRole": "longestMatch",
+                    "presentationRole": "composition"
+                },
                 {
                     "id": "spelling",
                     "targetLayer": "alt-characters",
@@ -507,20 +643,7 @@
                     "ordered": true,
                     "onDelete": "restrict",
                     "resolverRole": "explicit",
-                    "presentationRole": "composition"
-                },
-                {
-                    "id": "related",
-                    "targetLayer": "words",
-                    "metadata": {
-                        "labels": {
-                            "de": "Verwandte Wörter",
-                            "en": "Related",
-                            "id": "Terkait",
-                            "ja": "関連語"
-                        }
-                    },
-                    "onDelete": "detach"
+                    "presentationRole": "alternateSpelling"
                 },
                 {
                     "id": "definitions",
@@ -572,6 +695,10 @@
                     "detail": {
                         "renderer": "text",
                         "order": 1
+                    },
+                    "input": {
+                        "control": "tagList",
+                        "linkRelationship": "kana-spelling"
                     }
                 }
             ],
@@ -581,6 +708,22 @@
             "activityCompatibility": ["study:reading", "study:grammar"],
             "interestVeins": ["language:japanese"],
             "relationships": [
+                {
+                    "id": "kana-spelling",
+                    "targetLayer": "characters",
+                    "metadata": {
+                        "labels": {
+                            "de": "Kana-Schreibweise",
+                            "en": "Kana Spelling",
+                            "id": "Ejaan Kana",
+                            "ja": "かな表記"
+                        }
+                    },
+                    "ordered": true,
+                    "onDelete": "restrict",
+                    "resolverRole": "explicit",
+                    "presentationRole": "alternateSpelling"
+                },
                 {
                     "id": "definitions",
                     "targetLayer": "definitions",
@@ -679,6 +822,9 @@
                     "detail": {
                         "renderer": "text",
                         "order": 1
+                    },
+                    "input": {
+                        "control": "tagList"
                     }
                 }
             ],

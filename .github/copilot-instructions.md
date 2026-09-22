@@ -37,6 +37,15 @@ Keep API code in `api/`, browser resources in `ui/`, CLI controls in `cli/`, doc
 
 Keep files at or below 1000 lines. Prefer descriptive names over abbreviations and one- or two-letter bindings, except conventional coordinates, loop counters, row or column counters, `_`, and `id`.
 
+## Library Relationship Authoring
+
+- Composition references must target the closest available structural record. Prefer a complete lexical unit over rebuilding it from individual compound or atomic writing units.
+- Use ordered relationships with shared positions when one composition spans multiple target layers. For example, `日本語` links to the word `日本` at position 0 and the Kanji `語` at position 1; `日本` links to `日` and `本`.
+- Put Kana readings in `kana-spelling` relationships with `presentationRole: "alternateSpelling"`. Each referenced Kana record must exactly reconstruct the reading in order.
+- Set a pronunciation field's `input.linkRelationship` when provider-authored references should supply its deep links. Never rely on label guessing when a direct relationship exists.
+- Every schema field must declare an `input.control`. Select options and field labels must be localized in German, English, Indonesian, and Japanese. Provider-controlled classification fields should be immutable.
+- Do not keep a broad `related` edge when a more precise composition, spelling, pronunciation, definition, variant, or child relationship expresses the connection.
+
 ## Changelog Entries
 
 Store changelog entries in `docs/changelog/`; do not create or append to a root monolithic changelog. Every pull request must add one localized file for each supported language (`de`, `en`, `id`, and `ja`) using `<branch-name>.<lang>.md`, with any `copilot/` prefix removed from the branch name.

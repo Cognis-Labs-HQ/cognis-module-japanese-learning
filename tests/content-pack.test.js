@@ -707,22 +707,6 @@ test("every vocabulary entry participates in the Kana deletion dependency graph"
     );
 });
 
-test("related vocabulary uses a non-compositional intra-layer relationship", () => {
-    const { schema, records } = loadPack();
-    const wordLayer = schema.layers.find(({ id }) => id === "words");
-    const related = wordLayer.relationships.find(({ id }) => id === "related");
-    assert.equal(related.targetLayer, "words");
-    assert.equal(related.onDelete, "detach");
-    assert.equal(related.resolverRole, undefined);
-    assert.equal(related.presentationRole, undefined);
-
-    const nihongo = records.find(({ id }) => id === "ja:word:nihongo");
-    assert.deepEqual(
-        nihongo.references.find(({ relation }) => relation === "related"),
-        { entryId: "ja:word:nihon", relation: "related" },
-    );
-});
-
 test("lexical and sentence pronunciation use the Library placement field", () => {
     const { schema, records } = loadPack();
     for (const semanticRole of ["lexicalUnit", "orderedLexicalSequence"]) {
@@ -768,6 +752,7 @@ test("definitions stay semantic while resolvers describe compositions", () => {
         ),
         new Set([
             "readings:words",
+            "word-spelling:words",
             "spelling:alt-characters",
             "kana-spelling:characters",
             "words:words",
@@ -783,8 +768,9 @@ test("definitions stay semantic while resolvers describe compositions", () => {
         ),
         new Map([
             ["readings", "pronunciation"],
+            ["word-spelling", "composition"],
             ["spelling", "composition"],
-            ["kana-spelling", "composition"],
+            ["kana-spelling", "alternateSpelling"],
             ["words", "composition"],
             ["particles", "composition"],
         ]),

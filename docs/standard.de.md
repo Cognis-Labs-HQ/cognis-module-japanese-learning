@@ -100,10 +100,6 @@ Jeder eigenständige oder zusammengesetzte Eintrag mit `っ` oder `ッ` setzt nu
 
 Die vier ausdrücklichen Tabellenlücken werden von den entsprechenden Hiragana- und Katakana-Rasterpositionen gemeinsam genutzt. Durch das abwechselnde Anordnen der jeweiligen Schriftzeichen kann der Bibliotheksfilter die inaktive Schrift entfernen, ohne deren Lücken am Anfang oder Ende der ausgewählten Tabelle stehen zu lassen.
 
-## Verwandter Wortschatz
-
-Wörter können nicht-kompositorische, ebeneninterne `related`-Verweise deklarieren. `日本語` verweist jetzt als verwandtes Wort auf `日本`, ohne diese semantische Verbindung als Schreibweise, Aussprache oder andere Resolver-Komposition zu behandeln.
-
 ## Vollständiger Kana-Löschgraph
 
 Der Wortschatzeintrag `好き` deklariert jetzt seine geordnete Kana-Schreibweise aus `す` und `き`. Damit gehört er wie jeder andere Wortschatzeintrag zum Referenzabhängigkeitsgraphen und wird einbezogen, wenn Cognis eine kaskadierende Löschung der Kana-Tabellen anzeigt oder ausführt.
@@ -123,3 +119,7 @@ Der doppelte lexikalische Datensatz `人` wurde entfernt. Der Kanji-Eintrag verw
 ## Modulbesitzvertrag aus PR 220
 
 Das Modul fordert jetzt ausdrücklich vertrauenswürdige Privilegien an, weil es die standardisierte Fähigkeit `study:language:ja` außerhalb seines moduleigenen Namensraums veröffentlicht. Die Repository-Herkunft von Cognis Labs ermöglicht dem Host die Prüfung dieser Anfrage; der Bibliothekszugriff bleibt fähigkeitsbasiert und alle Registrierungen bleiben an den Lebenszyklus gebunden.
+
+## Nächstgelegene deklarierte Bibliotheksbeziehungen
+
+Kompositionen verwenden jetzt die nächstgelegenen Datensätze: `日本語` verweist auf das Wort `日本` und das Kanji `語`, während `日本` auf die Kanji `日` und `本` verweist. Geordnete Kana-Alternativschreibweisen stellen direkte Aussprache-Links bereit, und jedes Feld deklariert sein anbietereigenes Editor-Steuerelement und lokalisierte Optionen.

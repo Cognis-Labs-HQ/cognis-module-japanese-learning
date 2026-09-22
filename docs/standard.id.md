@@ -100,10 +100,6 @@ Setiap entri mandiri atau gabungan yang mengandung `っ` atau `ッ` kini menetap
 
 Empat celah bagan eksplisit digunakan bersama oleh posisi kisi Hiragana dan Katakana yang berpasangan. Penyelang-selingan setiap entri aksara yang sesuai memungkinkan filter Pustaka menghapus aksara yang tidak aktif tanpa meninggalkan celahnya di awal atau akhir bagan terpilih.
 
-## Kosakata terkait
-
-Kosakata dapat mendeklarasikan referensi `related` intralapisan yang bukan komposisi. `日本語` kini menunjuk ke `日本` sebagai kata terkait tanpa memperlakukan kaitan semantik tersebut sebagai ejaan, pelafalan, atau komposisi resolver lain.
-
 ## Graf penghapusan Kana yang lengkap
 
 Rekaman kosakata `好き` kini mendeklarasikan ejaan Kana `す` dan `き` secara berurutan. Dengan demikian, rekaman ini mengikuti graf dependensi referensi yang sama seperti semua entri kosakata lain dan disertakan saat Cognis mempratinjau atau menjalankan penghapusan berantai bagan Kana.
@@ -123,3 +119,7 @@ Rekaman leksikal `人` yang duplikat telah dihapus. Entri Kanji kini hanya menun
 ## Kontrak kepemilikan modul PR 220
 
 Modul kini secara eksplisit meminta hak istimewa tepercaya karena menerbitkan kapabilitas standar `study:language:ja` di luar namespace milik modul. Provenans repositori Cognis Labs memungkinkan host memverifikasi permintaan tersebut, sementara akses Pustaka tetap berbasis kapabilitas dan semua registrasi tetap dimiliki siklus hidup.
+
+## Relasi Pustaka terdekat yang dideklarasikan
+
+Komposisi kini memakai rekaman terdekat yang tersedia: `日本語` menaut ke kata `日本` dan Kanji `語`, sedangkan `日本` menaut ke Kanji `日` dan `本`. Ejaan alternatif Kana berurutan menyediakan tautan langsung untuk pelafalan, dan setiap bidang mendeklarasikan kontrol editor milik penyedia beserta opsi terlokalisasi.

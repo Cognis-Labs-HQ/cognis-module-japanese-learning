@@ -100,10 +100,6 @@ Every standalone or compound entry containing `っ` or `ッ` now sets `hidden: t
 
 The four explicit chart gaps are shared between paired Hiragana and Katakana grid positions. Interleaving each corresponding script entry lets the Library filter remove the inactive script without leaving its gaps at the beginning or end of the selected chart.
 
-## Related vocabulary
-
-Vocabulary can declare non-compositional, intra-layer `related` references. `日本語` now points to `日本` as a related word without treating that semantic association as spelling, pronunciation, or another resolver composition.
-
 ## Complete Kana deletion graph
 
 The `好き` vocabulary record now declares its ordered `す` and `き` Kana spelling. It therefore participates in the same reference dependency graph as every other vocabulary entry and is included when Cognis previews or performs a cascading deletion of the Kana charts.
@@ -123,3 +119,7 @@ Removed the duplicate `人` lexical record. The Kanji entry now points only to i
 ## PR 220 module ownership contract
 
 The module now requests trusted privilege explicitly because it publishes the standardized `study:language:ja` capability outside its module-owned namespace. Its Cognis Labs repository provenance lets the host verify that request, while Library access remains capability-based and all registrations remain lifecycle-owned.
+
+## Closest authored Library relationships
+
+Compositions now use the closest available records: `日本語` links to the word `日本` and Kanji `語`, while `日本` links to Kanji `日` and `本`. Ordered Kana alternate spellings provide direct links for pronunciations, and every field declares its provider-owned editor control and localized options.

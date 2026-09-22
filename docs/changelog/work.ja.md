@@ -176,12 +176,6 @@ Cognis PR #214 に合わせ、名前空間の所有権、ローカライズ済�
 
 - [eaae470](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/eaae470ad48226b0f1c3e931748511eae7178bb1)
 
-## 関連語彙
-
-語彙は、合成を表さない同一レイヤー内の `related` 参照を宣言できます。`日本語` は関連語として `日本` を参照し、この意味的な関連を表記、発音、その他のリゾルバー合成として扱いません。
-
-- [15bd85b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/15bd85bf6124b59db8e74fd2dee48622cfe0e340)
-
 ## 完全な仮名削除グラフ
 
 語彙項目 `好き` に、順序付きの仮名表記 `す` と `き` を宣言しました。これにより、他のすべての語彙項目と同じ参照依存グラフに含まれ、Cognis が仮名表をカスケード削除するときのプレビューと実行の対象になります。
@@ -211,3 +205,9 @@ Cognis PR #214 に合わせ、名前空間の所有権、ローカライズ済�
 標準化された `study:language:ja` ケイパビリティをモジュール所有名前空間の外で公開するため、信頼済み特権を明示的に要求するようにしました。Cognis Labs リポジトリの来歴をホストが検証でき、ライブラリへのアクセスは引き続きケイパビリティ経由で、すべての登録はライフサイクル管理下にあります。
 
 - [d1efe4b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/d1efe4b52184c4cdc77843441c2dfa7948339afe)
+
+## 最も近い宣言済みライブラリ関係
+
+合成は利用可能な最も近いレコードを使用します。`日本語` は語彙 `日本` と漢字 `語` を参照し、`日本` は漢字 `日` と `本` を参照します。順序付きの仮名代替表記が発音への直接リンクを提供し、すべてのフィールドがプロバイダー所有の編集コントロールとローカライズ済み選択肢を宣言します。
+
+- [8e8323e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/8e8323e9d435685a54cbdd0ae87b56391d637ff2)

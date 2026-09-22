@@ -176,12 +176,6 @@ Empat celah bagan eksplisit digunakan bersama oleh posisi kisi Hiragana dan Kata
 
 - [eaae470](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/eaae470ad48226b0f1c3e931748511eae7178bb1)
 
-## Kosakata terkait
-
-Kosakata dapat mendeklarasikan referensi `related` intralapisan yang bukan komposisi. `日本語` kini menunjuk ke `日本` sebagai kata terkait tanpa memperlakukan kaitan semantik tersebut sebagai ejaan, pelafalan, atau komposisi resolver lain.
-
-- [15bd85b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/15bd85bf6124b59db8e74fd2dee48622cfe0e340)
-
 ## Graf penghapusan Kana yang lengkap
 
 Rekaman kosakata `好き` kini mendeklarasikan ejaan Kana `す` dan `き` secara berurutan. Dengan demikian, rekaman ini mengikuti graf dependensi referensi yang sama seperti semua entri kosakata lain dan disertakan saat Cognis mempratinjau atau menjalankan penghapusan berantai bagan Kana.
@@ -211,3 +205,9 @@ Rekaman leksikal `人` yang duplikat telah dihapus. Entri Kanji kini hanya menun
 Modul kini secara eksplisit meminta hak istimewa tepercaya karena menerbitkan kapabilitas standar `study:language:ja` di luar namespace milik modul. Provenans repositori Cognis Labs memungkinkan host memverifikasi permintaan tersebut, sementara akses Pustaka tetap berbasis kapabilitas dan semua registrasi tetap dimiliki siklus hidup.
 
 - [d1efe4b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/d1efe4b52184c4cdc77843441c2dfa7948339afe)
+
+## Relasi Pustaka terdekat yang dideklarasikan
+
+Komposisi kini memakai rekaman terdekat yang tersedia: `日本語` menaut ke kata `日本` dan Kanji `語`, sedangkan `日本` menaut ke Kanji `日` dan `本`. Ejaan alternatif Kana berurutan menyediakan tautan langsung untuk pelafalan, dan setiap bidang mendeklarasikan kontrol editor milik penyedia beserta opsi terlokalisasi.
+
+- [8e8323e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/8e8323e9d435685a54cbdd0ae87b56391d637ff2)
