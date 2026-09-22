@@ -140,3 +140,7 @@ Rekaman Kosakata bacaan tersembunyi memiliki definisi sendiri dalam empat bahasa
 ## Set Data Inti yang Diperluas
 
 Paket kini memuat lebih dari tiga puluh rekaman Kosakata sehari-hari tambahan, sepuluh partikel tambahan, dan delapan kalimat contoh yang tersusun penuh, semuanya disimpan sebagai JSON deklaratif di `data/library/content/`. Polisemi sejati dapat memakai beberapa referensi definisi terlokalkan pada satu rekaman (`なおす`: memperbaiki/mengoreksi), sedangkan homofon seperti `はし` (jembatan/sumpit), `あめ` (hujan/permen), `かみ` (kertas/rambut/dewa), dan `はな` (bunga/hidung) tetap menjadi rekaman Kosakata terpisah dengan definisi berbeda.
+
+## Latihan Partikel Komprehensif
+
+Inventaris partikel kini berisi lebih dari enam puluh bentuk sederhana, majemuk, penghubung, pembatas, pendaftar, dan akhir kalimat. Setiap partikel tetap tersedia meskipun jarang digunakan dan dirujuk oleh setidaknya satu kalimat contoh berurutan agar relasinya dapat dipelajari dalam konteks.

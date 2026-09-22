@@ -241,3 +241,9 @@ Kosakata bacaan Kanji tersembunyi kini memiliki definisi empat bahasa untuk peng
 Lebih dari tiga puluh rekaman Kosakata sehari-hari, sepuluh partikel, dan delapan kalimat tersusun penuh dengan definisi empat bahasa ditambahkan sepenuhnya sebagai JSON data. Polisemi sejati memakai beberapa definisi pada satu rekaman (`なおす`), sedangkan homofon seperti jembatan/sumpit `はし`, hujan/permen `あめ`, serta kertas/rambut/dewa `かみ` tetap menjadi rekaman Kosakata terpisah dengan makna mandiri.
 
 - [a538833](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/a538833e990505cad9b817cb9995b1cf2b8bab5e)
+
+## Inventaris Partikel Komprehensif
+
+Paket kini memuat lebih dari enam puluh partikel kasus, pengikat, penghubung, pendaftar, pembatas, majemuk, dan akhir kalimat. Setiap partikel memiliki data fungsi terlokalkan, ejaan Kana berurutan, dan setidaknya satu kalimat contoh berurutan.
+
+- [5921d4e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/5921d4eafc7a0f0a64fa59db2dec53ea259c1647)

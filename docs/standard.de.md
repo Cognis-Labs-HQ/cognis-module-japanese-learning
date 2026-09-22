@@ -137,3 +137,7 @@ Jeder paketierte Wortschatz-Lesungseintrag erhält eine lokalisierte Definition,
 ## Polysemie, Homophone und Dateneigentum
 
 Mehrere Definitionsverweise werden nur verwendet, wenn ein einzelner lexikalischer Eintrag wirklich mehrere eng verwandte Bedeutungen hat. Homophone mit unterschiedlichen Bedeutungen erhalten getrennte Wortschatzeinträge, auch wenn ihre Kana-Bezeichnungen übereinstimmen. Alle japanischen Zeichen, Wörter, Partikeln, Sätze und lokalisierten Bedeutungen müssen als deklaratives JSON unter `data/library/content/` liegen; Laufzeitcode darf keine Sprachdaten einbetten.
+
+## Umfassende Partikelübungen
+
+Eine gültige Partikel wird nicht entfernt, nur weil aktuelle Lektionen sie sonst nicht verwenden. Jede paketierte Partikel benötigt lokalisierte Funktionsmetadaten, eine geordnete Kana-Schreibweise und mindestens einen geordneten Beispielsatzverweis.

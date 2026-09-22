@@ -2,7 +2,7 @@
     "id": "study-language-ja",
     "uuid": "e905927f-b133-572a-92ce-2ea8645e5ceb",
     "name": "module.study-language-ja.name",
-    "version": "7.0.0",
+    "version": "7.1.0",
     "class": "extension",
     "coreApiVersion": "v1",
     "capabilities": ["study:language:ja"],
@@ -51,7 +51,7 @@
         },
         {
             "path": ".github/copilot-instructions.md",
-            "sha256": "3ea7f0d5404d8fa09087f5a6c0c47a8e0866a25be9f7046b77a4bdcc406f3912"
+            "sha256": "8ef071d7a4871ce2ae156e32e1c6d63221f819c3d6b33595bf44455bde113e69"
         },
         {
             "path": ".gitignore",
@@ -67,7 +67,7 @@
         },
         {
             "path": "AGENTS.md",
-            "sha256": "3ea7f0d5404d8fa09087f5a6c0c47a8e0866a25be9f7046b77a4bdcc406f3912"
+            "sha256": "8ef071d7a4871ce2ae156e32e1c6d63221f819c3d6b33595bf44455bde113e69"
         },
         {
             "path": "LICENSE",
@@ -75,23 +75,23 @@
         },
         {
             "path": "README.de.md",
-            "sha256": "f55898e91e0d83d7175a7816263525aa9fb30f20a91cc57b7209ccef67397692"
+            "sha256": "12f43e2262b2cc8eb19266d5b3a7cdc6c1a1419bf8c5239f69657abf484cb9ca"
         },
         {
             "path": "README.en.md",
-            "sha256": "d3126624fcad74340847015ca04ec0b4604e73934054bfe06625a04b5bffa9e1"
+            "sha256": "fabf4d384af1f6aec2067372378e66b5c2ba8f4ca6343742ca56d0b7365f6ee3"
         },
         {
             "path": "README.id.md",
-            "sha256": "7db451ae26aa07598bce164a6865e24db8cebaf85b8fac7da4e6cecc0217510c"
+            "sha256": "be251baa2a86f684cffd7a3d3d238cc6d2dc98df9365abefc0f2890168da6348"
         },
         {
             "path": "README.ja.md",
-            "sha256": "0e07ed82d95ab4874be9401f68adac98115b1e54b643a09ac2a6789e018b1ffc"
+            "sha256": "8ab15e2f280349cd31c6f307f913e99570c069a74c974e36a08462d8573d5139"
         },
         {
             "path": "README.md",
-            "sha256": "d3126624fcad74340847015ca04ec0b4604e73934054bfe06625a04b5bffa9e1"
+            "sha256": "fabf4d384af1f6aec2067372378e66b5c2ba8f4ca6343742ca56d0b7365f6ee3"
         },
         {
             "path": "assets/banner.svg",
@@ -103,7 +103,7 @@
         },
         {
             "path": "bootstrap.js",
-            "sha256": "a47206cfcacd0b8c6c954e3f703e309f0ecd4e705eabf4db756532a9078bbe48"
+            "sha256": "12a2688f37e661b23310fbe559397530deb7b38a9afb4286211dd961e1e3cd11"
         },
         {
             "path": "data/library/content/alt-characters/kanji.json",
@@ -142,6 +142,22 @@
             "sha256": "fd6a1d9985a5e39cd7b131feec3ec4f88265df1e198d3a34c5b8b88221ccc4ad"
         },
         {
+            "path": "data/library/content/definitions/particle-examples-1.json",
+            "sha256": "f4bc51cde93776ac436b98c2efa03d9aa197ade93384d568baa1660da79ba1a4"
+        },
+        {
+            "path": "data/library/content/definitions/particle-examples-2.json",
+            "sha256": "f9f13fd00bf4d322df5665ccc9500c50e260e9d1767d8b61aac8a2be08987325"
+        },
+        {
+            "path": "data/library/content/definitions/particle-examples-existing.json",
+            "sha256": "0b726400bce6d976590ba01cffa96ccdff3d6c0f187e7dac0856e9c7932923be"
+        },
+        {
+            "path": "data/library/content/definitions/particles-comprehensive.json",
+            "sha256": "b44ca7f3aedf93534b5be1bbeb56c48690305c1be54a35521ae1696ea48be0e8"
+        },
+        {
             "path": "data/library/content/definitions/particles-expanded.json",
             "sha256": "e2bbc9ac1d4d8eb39603bf9272a505388d458fc558821cfb9415a3505b8ac95b"
         },
@@ -152,6 +168,14 @@
         {
             "path": "data/library/content/particles/common.json",
             "sha256": "bebe0fa75db4a01f84282b2c30e66995307c54d06f6d1fb51c38add771af4238"
+        },
+        {
+            "path": "data/library/content/particles/comprehensive-1.json",
+            "sha256": "3030f5abbcc59ffe139f6b8ab8418af519f26fd764bc16cfaae496f30545351f"
+        },
+        {
+            "path": "data/library/content/particles/comprehensive-2.json",
+            "sha256": "52ca050b85b108af1a57aa5ca0f0c91b5b31541608b59bd3b232a6b00e55822b"
         },
         {
             "path": "data/library/content/particles/expanded.json",
@@ -166,6 +190,18 @@
             "sha256": "7eaff8099211be124124a40316cd7f7265eb69a6cf8e8baabafa8d6004ab7257"
         },
         {
+            "path": "data/library/content/sentences/particle-examples-1.json",
+            "sha256": "71f8e8d587072f041bb1b7a3a7a972d9823cd6c16c5668a066c98deeef1c5e15"
+        },
+        {
+            "path": "data/library/content/sentences/particle-examples-2.json",
+            "sha256": "c25c6b7753200abfd71722a58b452cc539ee5a3d41f3840975f8233d11805063"
+        },
+        {
+            "path": "data/library/content/sentences/particle-examples-existing.json",
+            "sha256": "6f4821c8926703bab290a19891581959b1c50c503712de5144087a6f8fbaba79"
+        },
+        {
             "path": "data/library/content/words/common.json",
             "sha256": "395d098d1ece56a3ae85bc81e34544a284560217e16d30503923c1319ee8d652"
         },
@@ -175,35 +211,35 @@
         },
         {
             "path": "data/library/manifest.json",
-            "sha256": "432772838e130b0c7438169c727ae69cd272370250239733ed0d4f678ededc1f"
+            "sha256": "8d8b397b31721fd5ab570e2fbe826aa0d0180e25d5af990e6ce3aa40db0859e8"
         },
         {
             "path": "data/library/schema.json",
-            "sha256": "ddebbf0a98cede454ff9b2f2e98de52a97c3f96cb5a4b89e45a76828272fdcbe"
+            "sha256": "882ad4c4bd5511c580d4e9a8ef1280ae8f11ccf6c50f2096c6a944557af22618"
         },
         {
             "path": "docs/standard.de.md",
-            "sha256": "9ac6c879644309a41c339061098b908a652df345a9a9a59f171a4a0853e250cc"
+            "sha256": "4caf11c872d5ad3255c5b2beb43eea1968e2257fc3ae94923e10a4c1b424b93e"
         },
         {
             "path": "docs/standard.en.md",
-            "sha256": "33df0d52bd8f966ee432b7003fe128cc569244db491eb16907c747d33412f843"
+            "sha256": "83621901e5662fa07960360650729e81c3a38892c4bc46819815e840f522edeb"
         },
         {
             "path": "docs/standard.id.md",
-            "sha256": "bcdc6cb26e5376370294ff427853815d3fad489386995cbf523e76c32a6d7f75"
+            "sha256": "4d304c160dc5df8ca120706e920498ffafe9be936bf1a8bcbaecdaf6f137f3b4"
         },
         {
             "path": "docs/standard.ja.md",
-            "sha256": "a080731be04f1060d39b6ecea482e7d31e991cf3d645c835996edbcde061952e"
+            "sha256": "f2ec94dceffb3249bac9022ff6ce2e0762bcdc304bd7ebddf92951487c76fc28"
         },
         {
             "path": "package-lock.json",
-            "sha256": "27d84dca5009eb5696c00721e1aa7b735b4d8b899daab9136c452770ad1600ed"
+            "sha256": "4a98009ab3797c63e46c4072e6df4261641a523fe4658562dd503630adbfd4d2"
         },
         {
             "path": "package.json",
-            "sha256": "aae077a407c6ac2a108be3c2bed49abbb987c3273c3726480262e82dea5e39db"
+            "sha256": "c88736ef773ea09107d12b27536db35ae69448245ba1de360ebdd05b68359d0e"
         },
         {
             "path": "routes.json",
@@ -231,7 +267,7 @@
         },
         {
             "path": "tests/dataset-expansion.test.js",
-            "sha256": "2b8aee504a719643fd59a3a29beed7d86c791fa6a01a616ee5e46323dea4a86a"
+            "sha256": "e36d27972b23e396a53e0bcc30305705567f1574088c47453a9ef2b7d1b19f85"
         },
         {
             "path": "tests/documentation-convention.test.js",

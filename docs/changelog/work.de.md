@@ -241,3 +241,9 @@ Ausgeblendete Kanji-Lesungswörter besitzen nun Definitionen in vier Sprachen f�
 Mehr als dreißig alltägliche Wortschatzeinträge, zehn Partikeln und acht vollständig zusammengesetzte Sätze mit Definitionen in vier Sprachen wurden ausschließlich als Daten-JSON ergänzt. Echte Polysemie nutzt mehrere Definitionen in einem Eintrag (`なおす`), während Homophone wie Brücke/Essstäbchen `はし`, Regen/Bonbon `あめ` und Papier/Haar/Gottheit `かみ` getrennte Wortschatzeinträge mit unabhängigen Bedeutungen bleiben.
 
 - [a538833](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/a538833e990505cad9b817cb9995b1cf2b8bab5e)
+
+## Umfassender Partikelbestand
+
+Der Bestand umfasst nun mehr als sechzig Kasus-, Binde-, Konjunktiv-, Aufzählungs-, Einschränkungs-, zusammengesetzte und satzabschließende Partikeln. Jede Partikel besitzt lokalisierte Funktionsdaten, eine geordnete Kana-Schreibweise und mindestens einen geordneten Beispielsatz.
+
+- [5921d4e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/5921d4eafc7a0f0a64fa59db2dec53ea259c1647)

@@ -1,0 +1,58 @@
+[
+    {
+        "id": "ja:sentence:gakkou-de-miru",
+        "label": "がっこうでみる",
+        "references": [
+            {
+                "entryId": "ja:word:gakkou",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:de",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:miru",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:def:sentence-gakkou-de-miru",
+                "relation": "definitions"
+            }
+        ],
+        "fields": {
+            "pronunciation": ["がっこうでみる"]
+        }
+    },
+    {
+        "id": "ja:sentence:gakkou-e-iku",
+        "label": "がっこうへいく",
+        "references": [
+            {
+                "entryId": "ja:word:gakkou",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:e",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:iku",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:def:sentence-gakkou-e-iku",
+                "relation": "definitions"
+            }
+        ],
+        "fields": {
+            "pronunciation": ["がっこうへいく"]
+        }
+    }
+]

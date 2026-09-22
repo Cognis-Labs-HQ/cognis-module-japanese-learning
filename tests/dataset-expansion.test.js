@@ -1,5 +1,5 @@
 import assert from "node:assert/strict";
-import { readFileSync } from "node:fs";
+import { readdirSync, readFileSync } from "node:fs";
 import test from "node:test";
 
 function readData(path) {
@@ -8,6 +8,16 @@ function readData(path) {
             new URL(`../data/library/content/${path}`, import.meta.url),
         ),
     );
+}
+
+function readLayer(layer) {
+    const directory = new URL(
+        `../data/library/content/${layer}/`,
+        import.meta.url,
+    );
+    return readdirSync(directory)
+        .filter((name) => name.endsWith(".json"))
+        .flatMap((name) => readData(`${layer}/${name}`));
 }
 
 const vocabulary = readData("words/expanded.json");
@@ -52,6 +62,25 @@ test("polysemy uses multiple definitions without collapsing homophones", () => {
         assert.equal(
             new Set(homophones.flatMap(definitionIds)).size,
             homophones.length,
+        );
+    }
+});
+
+test("every authored particle is exercised by a sentence", () => {
+    const allParticles = readLayer("particles");
+    const allSentences = readLayer("sentences");
+    const usedParticleIds = new Set(
+        allSentences.flatMap((entry) =>
+            entry.references
+                .filter(({ relation }) => relation === "particles")
+                .map(({ entryId }) => entryId),
+        ),
+    );
+    assert.ok(allParticles.length >= 60);
+    for (const particle of allParticles) {
+        assert.ok(
+            usedParticleIds.has(particle.id),
+            `${particle.id} requires an example sentence`,
         );
     }
 });

@@ -140,3 +140,7 @@ Ausgeblendete Wortschatz-Lesungseinträge erhalten eine eigene Definition in all
 ## Erweiterter Kerndatensatz
 
 Das Paket enthält nun mehr als dreißig zusätzliche alltägliche Wortschatzeinträge, zehn weitere Partikeln und acht vollständig zusammengesetzte Beispielsätze, ausschließlich als deklaratives JSON unter `data/library/content/`. Echte Polysemie darf mehrere lokalisierte Definitionsverweise in einem Eintrag verwenden (`なおす`: reparieren/korrigieren), während Homophone wie `はし` (Brücke/Essstäbchen), `あめ` (Regen/Bonbon), `かみ` (Papier/Haar/Gottheit) und `はな` (Blume/Nase) getrennte Wortschatzeinträge mit eigenen Definitionen bleiben.
+
+## Umfassende Partikelübungen
+
+Der Partikelbestand umfasst nun mehr als sechzig einfache, zusammengesetzte, verbindende, einschränkende, aufzählende und satzabschließende Formen. Jede Partikel bleibt auch bei seltener Verwendung verfügbar und wird von mindestens einem geordneten Beispielsatz referenziert, damit ihre Beziehungen im Kontext erkundet werden können.

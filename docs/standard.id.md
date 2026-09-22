@@ -137,3 +137,7 @@ Berikan definisi terlokalkan kepada setiap rekaman Kosakata bacaan dalam paket k
 ## Polisemi, Homofon, dan Kepemilikan Data
 
 Gunakan beberapa referensi definisi hanya ketika satu rekaman leksikal benar-benar memiliki beberapa makna yang berhubungan erat. Buat rekaman Kosakata terpisah untuk homofon dengan makna berbeda meskipun label Kana-nya sama. Semua karakter, kosakata, partikel, kalimat, dan makna terlokalkan bahasa Jepang harus berada dalam JSON deklaratif di `data/library/content/`; kode runtime tidak boleh menyematkan data bahasa.
+
+## Latihan Partikel Komprehensif
+
+Jangan menghapus partikel yang valid hanya karena pelajaran saat ini belum menggunakannya. Setiap partikel dalam paket harus memiliki metadata fungsi terlokalkan, ejaan Kana berurutan, dan setidaknya satu referensi kalimat contoh berurutan.

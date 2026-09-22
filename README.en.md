@@ -140,3 +140,7 @@ Hidden reading Vocabulary records carry their own four-locale definition wheneve
 ## Expanded Core Dataset
 
 The pack now includes more than thirty additional everyday Vocabulary records, ten additional particles, and eight fully composed example sentences, all stored as declarative JSON under `data/library/content/`. Genuine polysemy may use several localized definition references on one record (`なおす`: repair/correct), while homophones such as `はし` (bridge/chopsticks), `あめ` (rain/candy), `かみ` (paper/hair/deity), and `はな` (flower/nose) remain separate Vocabulary records with distinct definitions.
+
+## Comprehensive Particle Practice
+
+The particle inventory now contains more than sixty simple, compound, connective, limiting, listing, and sentence-final forms. Every particle remains available even when uncommon and is referenced by at least one ordered example sentence so its relationships can be explored in context.

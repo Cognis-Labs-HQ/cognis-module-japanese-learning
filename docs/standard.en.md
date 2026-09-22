@@ -137,3 +137,7 @@ Give every packaged reading Vocabulary record a localized definition when its us
 ## Polysemy, Homophones, and Data Ownership
 
 Use multiple definition references only when one lexical record genuinely has multiple closely related senses. Create separate Vocabulary records for homophones whose meanings are distinct, even when their Kana labels match. All Japanese characters, vocabulary, particles, sentences, and localized meanings must live in declarative JSON under `data/library/content/`; runtime code must not embed language data.
+
+## Comprehensive Particle Practice
+
+Do not remove a valid particle merely because current lessons do not otherwise use it. Every packaged particle must provide localized function metadata, ordered Kana spelling, and at least one ordered example sentence reference.

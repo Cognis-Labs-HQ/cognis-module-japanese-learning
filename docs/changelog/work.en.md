@@ -241,3 +241,9 @@ Hidden Kanji-reading Vocabulary now owns four-locale definitions for narrower us
 Added more than thirty everyday Vocabulary records, ten particles, and eight fully composed sentences with four-locale definitions, all as data-only JSON. Genuine polysemy uses multiple definitions on one record (`なおす`), while homophones such as bridge/chopsticks `はし`, rain/candy `あめ`, and paper/hair/deity `かみ` remain distinct Vocabulary records with independent meanings.
 
 - [a538833](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/a538833e990505cad9b817cb9995b1cf2b8bab5e)
+
+## Comprehensive Particle Inventory
+
+Expanded the pack to more than sixty particles spanning case, binding, conjunctive, listing, limiting, compound, and sentence-final forms. Every particle now has localized function data, ordered Kana spelling, and at least one ordered example sentence.
+
+- [5921d4e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/5921d4eafc7a0f0a64fa59db2dec53ea259c1647)
