@@ -229,3 +229,9 @@ Pelafalan Kanji kini tertaut ke satu rekaman bacaan Kosakata lengkap untuk setia
 Pelafalan kata majemuk yang ditentukan kini tertaut melalui rekaman bacaan tersembunyi terbesar yang telah ditulis, bukan langsung melalui Kana atomik. `日本語` menyelesaikan `にほんご` sebagai bacaan tersembunyi `にほん` yang terkait dengan `日本`, diikuti bacaan `ご` yang terkait dengan `語`; rekaman tersebut kemudian menyelesaikan ke Kana berurutan.
 
 - [eff02dd](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/eff02dd26396e0198e63e51b24758701f05d00d2)
+
+## Definisi Kosakata Kontekstual
+
+Kosakata bacaan Kanji tersembunyi kini memiliki definisi empat bahasa untuk penggunaan yang lebih sempit, seperti penghitung orang `にん` dan akhiran kebangsaan `じん`, alih-alih memakai ulang makna Kanji yang luas. Standar penulisan membatasi fallback definisi sumber Cognis hanya untuk makna yang benar-benar sama dan dibuka melalui navigasi entri terkait, karena komposisi judul serta navigasi sebelumnya/berikutnya sengaja menghapus konteks tersebut.
+
+- [d52fcb2](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/d52fcb2578d7854a9e36361a5077dc2276e05115)

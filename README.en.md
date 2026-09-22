@@ -132,3 +132,7 @@ Compositions now use the closest available records: `日本語` links to the wor
 A Kanji card's displayed readings link to dedicated Vocabulary records, and each reading record links onward to the Hiragana characters that reconstruct it. Reading-only Vocabulary records remain deep-linkable for definitions but are hidden from the Vocabulary browser; ordinary vocabulary stays visible.
 
 Opinionated compound pronunciations use the largest available hidden reading segments instead of linking every Kana directly. For example, `日本語` resolves its displayed `にほんご` through the hidden `にほん` reading for `日本` and the hidden `ご` reading for `語`; only those reading records resolve onward to individual Kana.
+
+## Contextual Reading Definitions
+
+Hidden reading Vocabulary records carry their own four-locale definition whenever a reading has a narrower grammatical or lexical use than its source Kanji, such as `にん` as a counter for people or `じん` as a nationality suffix. Cognis may inherit a source card's localized definition only when a related-entry link opens Vocabulary without its own definition; authored definitions always win, and title-composition or previous/next navigation does not transfer fallback context.

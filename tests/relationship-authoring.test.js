@@ -88,6 +88,35 @@ test("vocabulary compositions use the closest structural records", () => {
     );
 });
 
+test("reading vocabulary owns localized niche definitions", () => {
+    const sourceDefinitionIds = new Set(
+        kanji.flatMap((entry) =>
+            entry.references
+                .filter(({ relation }) => relation === "definitions")
+                .map(({ entryId }) => entryId),
+        ),
+    );
+    for (const reading of words.filter(({ id }) =>
+        id.startsWith("ja:word:reading-"),
+    )) {
+        const definitionReferences = reading.references.filter(
+            ({ relation }) => relation === "definitions",
+        );
+        assert.equal(definitionReferences.length, 1);
+        assert.equal(
+            sourceDefinitionIds.has(definitionReferences[0].entryId),
+            false,
+            `${reading.id} must not reuse a broad Kanji definition`,
+        );
+        assert.equal(
+            definitionReferences[0].entryId,
+            reading.id === "ja:word:reading-nihon"
+                ? "ja:def:nihon"
+                : reading.id.replace("ja:word:", "ja:def:"),
+        );
+    }
+});
+
 test("only Kanji reading vocabulary is hidden from browsing", () => {
     const readingVocabulary = words.filter(({ id }) =>
         id.startsWith("ja:word:reading-"),

@@ -229,3 +229,9 @@ Kanji pronunciations now link to one complete Vocabulary reading apiece, and eac
 Opinionated compound pronunciations now deep-link through the largest authored hidden reading records rather than directly through atomic Kana. `日本語` resolves `にほんご` as the hidden `にほん` reading associated with `日本` followed by the hidden `ご` reading associated with `語`; those records then resolve to ordered Kana.
 
 - [eff02dd](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/eff02dd26396e0198e63e51b24758701f05d00d2)
+
+## Contextual Vocabulary Definitions
+
+Hidden Kanji-reading Vocabulary now owns four-locale definitions for narrower uses such as the `にん` people counter and `じん` nationality suffix instead of reusing broad Kanji meanings. The authoring standard reserves Cognis's source-definition fallback for genuinely identical meanings reached through related-entry navigation, because title composition and previous/next navigation intentionally clear that context.
+
+- [d52fcb2](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/d52fcb2578d7854a9e36361a5077dc2276e05115)

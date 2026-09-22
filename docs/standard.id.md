@@ -129,3 +129,7 @@ Komposisi kini memakai rekaman terdekat yang tersedia: `日本語` menaut ke kat
 Kolom pelafalan Kanji harus tertaut ke satu rekaman Kosakata khusus untuk setiap bacaan lengkap. Setiap rekaman khusus bacaan harus memiliki `hidden: true` dan menyusun dirinya dari Kana atomik melalui `kana-spelling`; rekaman Kosakata biasa harus tetap terlihat.
 
 Pelafalan kata majemuk yang ditentukan harus menggunakan `pronunciation-readings` untuk merujuk segmen bacaan terbesar yang telah ditulis sesuai urutan tampilan. Sebagai contoh, `日本語` menautkan `にほん` ke rekaman bacaan tersembunyi untuk `日本` dan `ご` ke rekaman bacaan tersembunyi untuk `語`. Kata majemuk yang terlihat tidak boleh menduplikasi segmen tersebut sebagai referensi Kana atomik langsung.
+
+## Definisi Bacaan Kontekstual
+
+Berikan definisi terlokalkan kepada setiap rekaman Kosakata bacaan dalam paket ketika penggunaannya lebih sempit daripada unit tulisan yang merujuknya. Definisi Kosakata bersifat otoritatif. Definisi hanya boleh tidak ada jika maknanya benar-benar sama dengan sumber dan rekaman dibuka melalui kartu entri terkait; tautan komposisi judul serta kontrol sebelumnya/berikutnya sengaja menghapus konteks cadangan tersebut.

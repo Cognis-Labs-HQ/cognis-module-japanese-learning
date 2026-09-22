@@ -4,8 +4,8 @@ const CONTENT_PACK = Object.freeze({
     id: "japanese-core",
     publisher: "Cognis Labs HQ",
     namespace: "ja",
-    version: "6.2.0",
-    contentRevision: "2026-09-22.4",
+    version: "6.3.0",
+    contentRevision: "2026-09-22.5",
     schema: "schema.json",
     content: "content",
     license: Object.freeze({
@@ -21,7 +21,7 @@ const LANGUAGE = Object.freeze({
     languageCode: "ja",
     languageName: "日本語",
     languageFlag: "🇯🇵",
-    version: "6.2.0",
+    version: "6.3.0",
     package: CONTENT_PACK,
     childComponents: [],
 });

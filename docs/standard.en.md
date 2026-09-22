@@ -129,3 +129,7 @@ Compositions now use the closest available records: `日本語` links to the wor
 A Kanji pronunciation field must link to one dedicated Vocabulary record per complete reading. Every reading-only record must be `hidden: true` and must reconstruct itself from atomic Kana through `kana-spelling`; ordinary Vocabulary records must remain visible.
 
 An opinionated compound-word pronunciation must use `pronunciation-readings` to reference the largest authored reading segments in display order. `日本語`, for example, links `にほん` to the hidden reading record associated with `日本` and `ご` to the hidden reading record associated with `語`. The visible compound must not duplicate those segments as direct atomic Kana references.
+
+## Contextual Reading Definitions
+
+Give every packaged reading Vocabulary record a localized definition when its usage is narrower than the writing unit that references it. The Vocabulary definition is authoritative. Leave a Vocabulary definition absent only when its meaning is genuinely identical to the source and the record is reached through a related-entry card; title-composition links and previous/next controls intentionally clear that fallback context.

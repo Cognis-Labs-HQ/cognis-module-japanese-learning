@@ -229,3 +229,9 @@ Kanji-Aussprachen verweisen nun jeweils auf einen vollständigen Wortschatz-Lesu
 Festgelegte Komposita-Aussprachen verlinken nun über die größten deklarierten ausgeblendeten Lesungseinträge statt direkt über atomare Kana. `日本語` löst `にほんご` als die `日本` zugeordnete ausgeblendete Lesung `にほん` gefolgt von der `語` zugeordneten Lesung `ご` auf; diese Einträge lösen anschließend zu geordneten Kana auf.
 
 - [eff02dd](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/eff02dd26396e0198e63e51b24758701f05d00d2)
+
+## Kontextbezogene Wortschatzdefinitionen
+
+Ausgeblendete Kanji-Lesungswörter besitzen nun Definitionen in vier Sprachen für engere Verwendungen wie den Personenzähler `にん` und das Nationalitätssuffix `じん`, statt breite Kanji-Bedeutungen wiederzuverwenden. Der Autorenstandard beschränkt Cognis' Rückfall auf die Quelldefinition auf wirklich identische Bedeutungen, die über verwandte Einträge erreicht werden, da Titelkomposition und Vor-/Zurück-Navigation diesen Kontext absichtlich löschen.
+
+- [d52fcb2](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/d52fcb2578d7854a9e36361a5077dc2276e05115)

@@ -132,3 +132,7 @@ Kompositionen verwenden jetzt die nächstgelegenen Datensätze: `日本語` verw
 Die angezeigten Lesungen einer Kanji-Karte verlinken auf eigene Wortschatzeinträge, die wiederum auf die Hiragana-Zeichen verweisen, aus denen die jeweilige Lesung besteht. Reine Lesungseinträge bleiben für Definitionen direkt verlinkbar, werden aber im Wortschatz-Browser ausgeblendet; gewöhnlicher Wortschatz bleibt sichtbar.
 
 Festgelegte Komposita-Aussprachen verwenden die größten verfügbaren ausgeblendeten Lesungssegmente, statt jedes Kana direkt zu verlinken. `日本語` löst das angezeigte `にほんご` beispielsweise über die ausgeblendete Lesung `にほん` für `日本` und `ご` für `語` auf; erst diese Lesungseinträge verweisen auf einzelne Kana.
+
+## Kontextbezogene Lesungsdefinitionen
+
+Ausgeblendete Wortschatz-Lesungseinträge erhalten eine eigene Definition in allen vier Sprachen, wenn eine Lesung grammatisch oder lexikalisch enger als ihr Ursprungs-Kanji verwendet wird, etwa `にん` als Personenzähler oder `じん` als Nationalitätssuffix. Cognis darf die lokalisierte Definition einer Ausgangskarte nur übernehmen, wenn ein Link zu einem verwandten Eintrag Wortschatz ohne eigene Definition öffnet; deklarierte Definitionen haben immer Vorrang, und Titelkompositions- sowie Vor-/Zurück-Navigation übertragen keinen Rückfallkontext.
