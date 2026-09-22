@@ -211,3 +211,9 @@ Das Modul fordert jetzt ausdrücklich vertrauenswürdige Privilegien an, weil es
 Kompositionen verwenden jetzt die nächstgelegenen Datensätze: `日本語` verweist auf das Wort `日本` und das Kanji `語`, während `日本` auf die Kanji `日` und `本` verweist. Geordnete Kana-Alternativschreibweisen stellen direkte Aussprache-Links bereit, und jedes Feld deklariert sein anbietereigenes Editor-Steuerelement und lokalisierte Optionen.
 
 - [8e8323e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/8e8323e9d435685a54cbdd0ae87b56391d637ff2)
+
+## Direkte Kana-Links für Kanji-Aussprachen
+
+Kanji-Karten mit mehreren Lesungen lösen nun jede angezeigte Aussprache direkt in ihre zugehörigen Hiragana-Einträge auf. Wortschatz-Lesungseinträge bleiben für Definitionen und Übungen verfügbar, ohne rekursive Aussprache-Links zu erzeugen.
+
+- [f3faf6c](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/f3faf6ccbd41bd5709996a9b7d6fb31174a2c437)

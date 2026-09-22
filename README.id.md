@@ -126,3 +126,7 @@ Modul kini secara eksplisit meminta hak istimewa tepercaya karena menerbitkan ka
 ## Relasi Pustaka terdekat yang dideklarasikan
 
 Komposisi kini memakai rekaman terdekat yang tersedia: `日本語` menaut ke kata `日本` dan Kanji `語`, sedangkan `日本` menaut ke Kanji `日` dan `本`. Ejaan alternatif Kana berurutan menyediakan tautan langsung untuk pelafalan, dan setiap bidang mendeklarasikan kontrol editor milik penyedia beserta opsi terlokalisasi.
+
+## Tautan Kana Langsung untuk Bacaan Kanji
+
+Bacaan yang ditampilkan pada kartu Kanji tertaut langsung ke rekaman Hiragana yang menyusun setiap bacaan. Rekaman bacaan khusus tetap tersedia di Kosakata untuk definisi dan pembelajaran, tetapi tidak lagi menjadi perantara tautan judul sehingga navigasi rekursif melalui kartu Kosakata dapat dihindari.

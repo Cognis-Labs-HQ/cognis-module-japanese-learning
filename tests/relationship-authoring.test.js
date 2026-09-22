@@ -70,7 +70,28 @@ test("vocabulary compositions use the closest structural records", () => {
     assert.equal(labelsFor(nihongo, ["kana-spelling"]), "にほんご");
 });
 
+function canResolveWith(label, candidates) {
+    const reachable = new Set([0]);
+    for (let offset = 0; offset < label.length; offset += 1) {
+        if (!reachable.has(offset)) continue;
+        for (const candidate of candidates) {
+            if (label.startsWith(candidate.label, offset)) {
+                reachable.add(offset + candidate.label.length);
+            }
+        }
+    }
+    return reachable.has(label.length);
+}
+
 test("Kanji readings and particles resolve through authored Kana links", () => {
+    const altCharacters = schema.layers.find(
+        ({ id }) => id === "alt-characters",
+    );
+    const pronunciation = altCharacters.fields.find(
+        ({ id }) => id === "pronunciation",
+    );
+    assert.equal(pronunciation.input.linkRelationship, "reading-kana");
+
     for (const entry of kanji) {
         const readingLabels = entry.references
             .filter(({ relation }) => relation === "readings")
@@ -82,6 +103,18 @@ test("Kanji readings and particles resolve through authored Kana links", () => {
         )) {
             const reading = recordsById.get(reference.entryId);
             assert.equal(labelsFor(reading, ["kana-spelling"]), reading.label);
+        }
+
+        const linkedKana = entry.references
+            .filter(({ relation }) => relation === "reading-kana")
+            .map(({ entryId }) => recordsById.get(entryId));
+        assert.ok(linkedKana.length > 0);
+        assert.ok(linkedKana.every(Boolean));
+        for (const reading of entry.fields.pronunciation) {
+            assert.ok(
+                canResolveWith(reading, linkedKana),
+                `${entry.id} directly resolves ${reading} through Kana`,
+            );
         }
     }
     const ga = recordsById.get("ja:particle:ga");

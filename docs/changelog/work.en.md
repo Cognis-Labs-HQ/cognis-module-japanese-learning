@@ -211,3 +211,9 @@ The module now requests trusted privilege explicitly because it publishes the st
 Compositions now use the closest available records: `日本語` links to the word `日本` and Kanji `語`, while `日本` links to Kanji `日` and `本`. Ordered Kana alternate spellings provide direct links for pronunciations, and every field declares its provider-owned editor control and localized options.
 
 - [8e8323e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/8e8323e9d435685a54cbdd0ae87b56391d637ff2)
+
+## Direct Kana Links for Kanji Pronunciations
+
+Kanji cards with multiple readings now resolve every displayed pronunciation directly to its constituent Hiragana records. Vocabulary reading records remain available for definitions and study without creating recursive pronunciation links.
+
+- [f3faf6c](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/f3faf6ccbd41bd5709996a9b7d6fb31174a2c437)

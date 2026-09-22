@@ -211,3 +211,9 @@ Modul kini secara eksplisit meminta hak istimewa tepercaya karena menerbitkan ka
 Komposisi kini memakai rekaman terdekat yang tersedia: `日本語` menaut ke kata `日本` dan Kanji `語`, sedangkan `日本` menaut ke Kanji `日` dan `本`. Ejaan alternatif Kana berurutan menyediakan tautan langsung untuk pelafalan, dan setiap bidang mendeklarasikan kontrol editor milik penyedia beserta opsi terlokalisasi.
 
 - [8e8323e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/8e8323e9d435685a54cbdd0ae87b56391d637ff2)
+
+## Tautan Kana Langsung untuk Pelafalan Kanji
+
+Kartu Kanji dengan beberapa bacaan kini menyelesaikan setiap pelafalan yang ditampilkan langsung ke rekaman Hiragana penyusunnya. Rekaman bacaan Kosakata tetap tersedia untuk definisi dan pembelajaran tanpa menghasilkan tautan pelafalan rekursif.
+
+- [f3faf6c](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/f3faf6ccbd41bd5709996a9b7d6fb31174a2c437)

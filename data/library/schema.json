@@ -1,6 +1,6 @@
 {
     "id": "japanese-core",
-    "version": 32,
+    "version": 33,
     "namespace": "ja",
     "language": "ja",
     "metadata": {
@@ -346,7 +346,7 @@
                     },
                     "input": {
                         "control": "tagList",
-                        "linkRelationship": "readings"
+                        "linkRelationship": "reading-kana"
                     }
                 },
                 {
@@ -388,9 +388,22 @@
                     },
                     "ordered": true,
                     "onDelete": "restrict",
-                    "resolverRole": "explicit",
                     "minimum": 1,
-                    "requiredTarget": true,
+                    "requiredTarget": true
+                },
+                {
+                    "id": "reading-kana",
+                    "targetLayer": "characters",
+                    "metadata": {
+                        "labels": {
+                            "de": "Kana der Lesungen",
+                            "en": "Reading Kana",
+                            "id": "Kana bacaan",
+                            "ja": "読みの仮名"
+                        }
+                    },
+                    "onDelete": "restrict",
+                    "resolverRole": "explicit",
                     "presentationRole": "pronunciation"
                 },
                 {

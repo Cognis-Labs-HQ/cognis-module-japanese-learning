@@ -43,6 +43,7 @@ Keep files at or below 1000 lines. Prefer descriptive names over abbreviations a
 - Use ordered relationships with shared positions when one composition spans multiple target layers. For example, `日本語` links to the word `日本` at position 0 and the Kanji `語` at position 1; `日本` links to `日` and `本`.
 - Put Kana readings in `kana-spelling` relationships with `presentationRole: "alternateSpelling"`. Each referenced Kana record must exactly reconstruct the reading in order.
 - Set a pronunciation field's `input.linkRelationship` when provider-authored references should supply its deep links. Never rely on label guessing when a direct relationship exists.
+- For a writing-unit card with multiple pronunciations, make that link relationship target the atomic Kana records that reconstruct every pronunciation. Reading vocabulary may remain as semantic study content, but must not mediate pronunciation title links and create recursive navigation.
 - Every schema field must declare an `input.control`. Select options and field labels must be localized in German, English, Indonesian, and Japanese. Provider-controlled classification fields should be immutable.
 - Do not keep a broad `related` edge when a more precise composition, spelling, pronunciation, definition, variant, or child relationship expresses the connection.
 

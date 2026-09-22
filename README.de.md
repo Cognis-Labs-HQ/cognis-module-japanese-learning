@@ -126,3 +126,7 @@ Das Modul fordert jetzt ausdrücklich vertrauenswürdige Privilegien an, weil es
 ## Nächstgelegene deklarierte Bibliotheksbeziehungen
 
 Kompositionen verwenden jetzt die nächstgelegenen Datensätze: `日本語` verweist auf das Wort `日本` und das Kanji `語`, während `日本` auf die Kanji `日` und `本` verweist. Geordnete Kana-Alternativschreibweisen stellen direkte Aussprache-Links bereit, und jedes Feld deklariert sein anbietereigenes Editor-Steuerelement und lokalisierte Optionen.
+
+## Direkte Kana-Links für Kanji-Lesungen
+
+Die angezeigten Lesungen einer Kanji-Karte verlinken direkt auf die Hiragana-Einträge, aus denen sich jede Lesung zusammensetzt. Eigene Lesungseinträge bleiben für Definitionen und Übungen im Wortschatz erhalten, vermitteln aber keine Titel-Links mehr; dadurch entsteht keine rekursive Navigation durch Wortschatzkarten.
