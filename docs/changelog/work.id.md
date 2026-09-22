@@ -259,3 +259,9 @@ Contoh partikel kini memuat Kosakata sekolah yang tersusun dari Kanji, dengan ba
 Modul dan paket konten kembali ke versi `2.2.2`. Panduan repositori kini memakai rilis patch untuk perubahan konten dan skema yang kompatibel, rilis minor untuk penambahan eksternal yang kompatibel, serta rilis mayor hanya untuk kontrak host yang tidak kompatibel dan terkoordinasi; revisi skema tidak lagi menentukan versi mayor modul.
 
 - [1966bc1](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/1966bc11b02f49729c29544cd78e710c133f0366)
+
+## Konten Belajar Partikel yang Bermakna
+
+Kartu kalimat partikel kini berisi pernyataan dan frasa bahasa Jepang yang ringkas dengan makna terlokalkan langsung, bukan metadata seperti “contoh partikel”. Bentuk kopula dan infleksi ditulis sebagai kosakata tersembunyi berbasis Kana agar relasi kalimat berurutan menyusun kembali konten belajar yang sebenarnya.
+
+- [4f281e3](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/4f281e3bec4e63d79c9c8c07f7d79ccf541dc172)

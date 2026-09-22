@@ -125,3 +125,20 @@ test("particle examples traverse vocabulary, Kanji, and Kana", () => {
         );
     }
 });
+
+test("particle sentence definitions describe meaning rather than authorship", () => {
+    const metadataTerms =
+        /\b(?:example|exercise|demonstration|placeholder)\b|\bBeispiel\b|\bcontoh\b|例文|例$/iu;
+    const sentenceDefinitions = readLayer("definitions").filter(({ id }) =>
+        id.startsWith("ja:def:sentence-particle-example-"),
+    );
+
+    for (const definition of sentenceDefinitions) {
+        assert.equal(metadataTerms.test(definition.label), false);
+        for (const translation of Object.values(
+            definition.fields.translations,
+        )) {
+            assert.equal(metadataTerms.test(translation), false);
+        }
+    }
+});

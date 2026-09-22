@@ -259,3 +259,9 @@ Particle examples now include Kanji-composed Vocabulary for school, with dedicat
 The module and content pack return to version `2.2.2`. Repository guidance now reserves patch releases for compatible content and schema work, minor releases for compatible external additions, and major releases for coordinated breaking host contracts; schema revisions no longer drive the module major version.
 
 - [1966bc1](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/1966bc11b02f49729c29544cd78e710c133f0366)
+
+## Meaningful Particle Study Content
+
+Particle sentence cards now contain concise Japanese statements and phrases with direct localized meanings instead of metadata such as “particle example.” Copular and inflected forms are authored as hidden Kana-backed vocabulary so ordered sentence relationships reconstruct the actual study content.
+
+- [4f281e3](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/4f281e3bec4e63d79c9c8c07f7d79ccf541dc172)

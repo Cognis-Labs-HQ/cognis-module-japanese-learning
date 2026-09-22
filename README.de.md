@@ -148,3 +148,7 @@ Der Partikelbestand umfasst nun mehr als sechzig einfache, zusammengesetzte, ver
 ## Navigation durch Partikelbeispiele
 
 Partikelbeispiele verwenden nun verfassten Kanji-Wortschatz wie `学校`. Jeder Satz öffnet dadurch einen vollständigen Pfad Satz → Wortschatz → Kanji → ausgeblendeter Lesewortschatz → atomares Kana, statt bei reinem Kana-Wortschatz zu enden.
+
+## Bedeutungsvolle Partikelsätze
+
+Definitionen von Partikelsätzen enthalten nun direkte lokalisierte Bedeutungen statt redaktioneller Bezeichnungen wie „Partikelbeispiel“. Die zugehörigen Lerninhalte verwenden knappe japanische Sätze und Wendungen, deren verknüpfter Wortschatz und Partikeln den angezeigten Inhalt rekonstruieren.

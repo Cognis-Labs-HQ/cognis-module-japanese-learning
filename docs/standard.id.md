@@ -145,3 +145,7 @@ Jangan menghapus partikel yang valid hanya karena pelajaran saat ini belum mengg
 ## Penelusuran contoh partikel
 
 Setiap contoh partikel harus memuat Kosakata yang tersusun melalui Kanji. Setiap Kanji yang dirujuk harus tertaut ke rekaman Kosakata bacaan tersembunyi yang lengkap, dan bacaan tersebut harus menyusun dirinya kembali dari Kana atomik berurutan.
+
+## Definisi menjelaskan konten
+
+Definisi harus menyatakan makna terlokalkan dari rekamannya. Definisi tidak boleh menyebut rekaman sebagai contoh, latihan, demonstrasi, placeholder, atau artefak penulisan lainnya. Entri kalimat harus berisi konten bahasa Jepang yang bermakna dan relasi berurutannya harus menyusun kembali teks yang ditampilkan.

@@ -148,3 +148,7 @@ Inventaris partikel kini berisi lebih dari enam puluh bentuk sederhana, majemuk,
 ## Penelusuran contoh partikel
 
 Contoh partikel kini memakai Kosakata Kanji yang ditulis seperti `学校`. Karena itu, setiap kalimat membuka jalur lengkap Kalimat → Kosakata → Kanji → Kosakata bacaan tersembunyi → Kana atomik, bukan berhenti pada kosakata khusus Kana.
+
+## Kalimat partikel yang bermakna
+
+Definisi kalimat partikel kini berisi makna terlokalkan secara langsung, bukan label penulisan seperti “contoh partikel”. Entri belajar terkait memakai kalimat dan frasa bahasa Jepang yang ringkas, dengan kosakata serta partikel tertaut yang menyusun kembali konten yang ditampilkan.

@@ -148,3 +148,7 @@ The particle inventory now contains more than sixty simple, compound, connective
 ## Particle example traversal
 
 Particle examples now use authored Kanji vocabulary such as `学校`. Each sentence therefore opens a complete sentence → Vocabulary → Kanji → hidden reading Vocabulary → atomic Kana path instead of stopping at Kana-only vocabulary.
+
+## Meaningful particle sentences
+
+Particle sentence definitions now contain direct localized meanings instead of authoring labels such as “particle example.” The associated study entries use concise Japanese sentences and phrases whose linked vocabulary and particles reconstruct the displayed content.

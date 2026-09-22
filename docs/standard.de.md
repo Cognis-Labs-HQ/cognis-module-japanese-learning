@@ -145,3 +145,7 @@ Eine gültige Partikel wird nicht entfernt, nur weil aktuelle Lektionen sie sons
 ## Navigation durch Partikelbeispiele
 
 Jedes Partikelbeispiel muss Wortschatz enthalten, der sich über Kanji zusammensetzt. Jedes referenzierte Kanji muss auf einen vollständigen ausgeblendeten Lesewortschatz verweisen, und diese Lesung muss sich aus geordneten atomaren Kana rekonstruieren.
+
+## Definitionen beschreiben Inhalte
+
+Eine Definition muss die lokalisierte Bedeutung ihres Datensatzes angeben. Sie darf den Datensatz niemals als Beispiel, Übung, Demonstration, Platzhalter oder anderes Redaktionsartefakt bezeichnen. Satzeinträge müssen bedeutungsvolle japanische Inhalte enthalten, deren geordnete Beziehungen den angezeigten Text rekonstruieren.

@@ -145,3 +145,7 @@ Do not remove a valid particle merely because current lessons do not otherwise u
 ## Particle example traversal
 
 Every particle example must contain Vocabulary that composes through Kanji. Each referenced Kanji must link to a complete hidden reading Vocabulary record, and that reading must reconstruct itself from ordered atomic Kana.
+
+## Definitions describe content
+
+A definition must state the localized meaning of its record. It must never call the record an example, exercise, demonstration, placeholder, or other authoring artifact. Sentence entries must contain meaningful Japanese content whose ordered relationships reconstruct the displayed text.

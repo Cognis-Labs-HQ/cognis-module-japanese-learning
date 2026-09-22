@@ -51,6 +51,7 @@ Keep files at or below 1000 lines. Prefer descriptive names over abbreviations a
 - Use multiple definition references for genuine polysemy of one lexical record. Represent homophones with distinct meanings as separate vocabulary records, each with its own definition set; do not collapse them merely because their Kana labels match.
 - Store Japanese characters, vocabulary, particles, sentences, and localized meanings only in `data/library/content/` JSON files. Runtime and bootstrap code must remain language-data agnostic.
 - Keep the particle inventory comprehensive rather than pruning currently unused forms. Every packaged particle must be referenced by at least one ordered example sentence so learners can inspect it in context.
+- Definition records must describe the meaning of their content. Never use a definition to label a record as an example, exercise, demonstration, placeholder, or other authoring artifact; study entries and their localized definitions must be meaningful on their own.
 - Every schema field must declare an `input.control`. Select options and field labels must be localized in German, English, Indonesian, and Japanese. Provider-controlled classification fields should be immutable.
 - Do not keep a broad `related` edge when a more precise composition, spelling, pronunciation, definition, variant, or child relationship expresses the connection.
 
