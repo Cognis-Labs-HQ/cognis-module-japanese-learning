@@ -133,3 +133,7 @@ Pelafalan kata majemuk yang ditentukan harus menggunakan `pronunciation-readings
 ## Definisi Bacaan Kontekstual
 
 Berikan definisi terlokalkan kepada setiap rekaman Kosakata bacaan dalam paket ketika penggunaannya lebih sempit daripada unit tulisan yang merujuknya. Definisi Kosakata bersifat otoritatif. Definisi hanya boleh tidak ada jika maknanya benar-benar sama dengan sumber dan rekaman dibuka melalui kartu entri terkait; tautan komposisi judul serta kontrol sebelumnya/berikutnya sengaja menghapus konteks cadangan tersebut.
+
+## Polisemi, Homofon, dan Kepemilikan Data
+
+Gunakan beberapa referensi definisi hanya ketika satu rekaman leksikal benar-benar memiliki beberapa makna yang berhubungan erat. Buat rekaman Kosakata terpisah untuk homofon dengan makna berbeda meskipun label Kana-nya sama. Semua karakter, kosakata, partikel, kalimat, dan makna terlokalkan bahasa Jepang harus berada dalam JSON deklaratif di `data/library/content/`; kode runtime tidak boleh menyematkan data bahasa.

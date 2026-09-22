@@ -235,3 +235,9 @@ Opinionated compound pronunciations now deep-link through the largest authored h
 Hidden Kanji-reading Vocabulary now owns four-locale definitions for narrower uses such as the `にん` people counter and `じん` nationality suffix instead of reusing broad Kanji meanings. The authoring standard reserves Cognis's source-definition fallback for genuinely identical meanings reached through related-entry navigation, because title composition and previous/next navigation intentionally clear that context.
 
 - [d52fcb2](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/d52fcb2578d7854a9e36361a5077dc2276e05115)
+
+## Dramatically Expanded Declarative Dataset
+
+Added more than thirty everyday Vocabulary records, ten particles, and eight fully composed sentences with four-locale definitions, all as data-only JSON. Genuine polysemy uses multiple definitions on one record (`なおす`), while homophones such as bridge/chopsticks `はし`, rain/candy `あめ`, and paper/hair/deity `かみ` remain distinct Vocabulary records with independent meanings.
+
+- [a538833](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/a538833e990505cad9b817cb9995b1cf2b8bab5e)

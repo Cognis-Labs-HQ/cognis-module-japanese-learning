@@ -133,3 +133,7 @@ Eine festgelegte Kompositum-Aussprache muss über `pronunciation-readings` die g
 ## Kontextbezogene Lesungsdefinitionen
 
 Jeder paketierte Wortschatz-Lesungseintrag erhält eine lokalisierte Definition, wenn seine Verwendung enger ist als die Schrifteinheit, die auf ihn verweist. Die Wortschatzdefinition ist maßgeblich. Eine Definition darf nur fehlen, wenn die Bedeutung wirklich mit der Quelle übereinstimmt und der Eintrag über eine verwandte Eintragskarte erreicht wird; Titelkompositionslinks und Vor-/Zurück-Steuerungen löschen diesen Rückfallkontext absichtlich.
+
+## Polysemie, Homophone und Dateneigentum
+
+Mehrere Definitionsverweise werden nur verwendet, wenn ein einzelner lexikalischer Eintrag wirklich mehrere eng verwandte Bedeutungen hat. Homophone mit unterschiedlichen Bedeutungen erhalten getrennte Wortschatzeinträge, auch wenn ihre Kana-Bezeichnungen übereinstimmen. Alle japanischen Zeichen, Wörter, Partikeln, Sätze und lokalisierten Bedeutungen müssen als deklaratives JSON unter `data/library/content/` liegen; Laufzeitcode darf keine Sprachdaten einbetten.

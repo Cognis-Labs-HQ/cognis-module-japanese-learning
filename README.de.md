@@ -136,3 +136,7 @@ Festgelegte Komposita-Aussprachen verwenden die größten verfügbaren ausgeblen
 ## Kontextbezogene Lesungsdefinitionen
 
 Ausgeblendete Wortschatz-Lesungseinträge erhalten eine eigene Definition in allen vier Sprachen, wenn eine Lesung grammatisch oder lexikalisch enger als ihr Ursprungs-Kanji verwendet wird, etwa `にん` als Personenzähler oder `じん` als Nationalitätssuffix. Cognis darf die lokalisierte Definition einer Ausgangskarte nur übernehmen, wenn ein Link zu einem verwandten Eintrag Wortschatz ohne eigene Definition öffnet; deklarierte Definitionen haben immer Vorrang, und Titelkompositions- sowie Vor-/Zurück-Navigation übertragen keinen Rückfallkontext.
+
+## Erweiterter Kerndatensatz
+
+Das Paket enthält nun mehr als dreißig zusätzliche alltägliche Wortschatzeinträge, zehn weitere Partikeln und acht vollständig zusammengesetzte Beispielsätze, ausschließlich als deklaratives JSON unter `data/library/content/`. Echte Polysemie darf mehrere lokalisierte Definitionsverweise in einem Eintrag verwenden (`なおす`: reparieren/korrigieren), während Homophone wie `はし` (Brücke/Essstäbchen), `あめ` (Regen/Bonbon), `かみ` (Papier/Haar/Gottheit) und `はな` (Blume/Nase) getrennte Wortschatzeinträge mit eigenen Definitionen bleiben.

@@ -136,3 +136,7 @@ Opinionated compound pronunciations use the largest available hidden reading seg
 ## Contextual Reading Definitions
 
 Hidden reading Vocabulary records carry their own four-locale definition whenever a reading has a narrower grammatical or lexical use than its source Kanji, such as `にん` as a counter for people or `じん` as a nationality suffix. Cognis may inherit a source card's localized definition only when a related-entry link opens Vocabulary without its own definition; authored definitions always win, and title-composition or previous/next navigation does not transfer fallback context.
+
+## Expanded Core Dataset
+
+The pack now includes more than thirty additional everyday Vocabulary records, ten additional particles, and eight fully composed example sentences, all stored as declarative JSON under `data/library/content/`. Genuine polysemy may use several localized definition references on one record (`なおす`: repair/correct), while homophones such as `はし` (bridge/chopsticks), `あめ` (rain/candy), `かみ` (paper/hair/deity), and `はな` (flower/nose) remain separate Vocabulary records with distinct definitions.

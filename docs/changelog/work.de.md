@@ -235,3 +235,9 @@ Festgelegte Komposita-Aussprachen verlinken nun über die größten deklarierten
 Ausgeblendete Kanji-Lesungswörter besitzen nun Definitionen in vier Sprachen für engere Verwendungen wie den Personenzähler `にん` und das Nationalitätssuffix `じん`, statt breite Kanji-Bedeutungen wiederzuverwenden. Der Autorenstandard beschränkt Cognis' Rückfall auf die Quelldefinition auf wirklich identische Bedeutungen, die über verwandte Einträge erreicht werden, da Titelkomposition und Vor-/Zurück-Navigation diesen Kontext absichtlich löschen.
 
 - [d52fcb2](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/d52fcb2578d7854a9e36361a5077dc2276e05115)
+
+## Deutlich erweiterter deklarativer Datensatz
+
+Mehr als dreißig alltägliche Wortschatzeinträge, zehn Partikeln und acht vollständig zusammengesetzte Sätze mit Definitionen in vier Sprachen wurden ausschließlich als Daten-JSON ergänzt. Echte Polysemie nutzt mehrere Definitionen in einem Eintrag (`なおす`), während Homophone wie Brücke/Essstäbchen `はし`, Regen/Bonbon `あめ` und Papier/Haar/Gottheit `かみ` getrennte Wortschatzeinträge mit unabhängigen Bedeutungen bleiben.
+
+- [a538833](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/a538833e990505cad9b817cb9995b1cf2b8bab5e)

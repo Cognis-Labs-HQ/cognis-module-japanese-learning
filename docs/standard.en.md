@@ -133,3 +133,7 @@ An opinionated compound-word pronunciation must use `pronunciation-readings` to 
 ## Contextual Reading Definitions
 
 Give every packaged reading Vocabulary record a localized definition when its usage is narrower than the writing unit that references it. The Vocabulary definition is authoritative. Leave a Vocabulary definition absent only when its meaning is genuinely identical to the source and the record is reached through a related-entry card; title-composition links and previous/next controls intentionally clear that fallback context.
+
+## Polysemy, Homophones, and Data Ownership
+
+Use multiple definition references only when one lexical record genuinely has multiple closely related senses. Create separate Vocabulary records for homophones whose meanings are distinct, even when their Kana labels match. All Japanese characters, vocabulary, particles, sentences, and localized meanings must live in declarative JSON under `data/library/content/`; runtime code must not embed language data.

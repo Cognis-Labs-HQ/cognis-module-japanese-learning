@@ -136,3 +136,7 @@ Pelafalan kata majemuk yang ditentukan menggunakan segmen bacaan tersembunyi ter
 ## Definisi Bacaan Kontekstual
 
 Rekaman Kosakata bacaan tersembunyi memiliki definisi sendiri dalam empat bahasa ketika suatu bacaan mempunyai penggunaan tata bahasa atau leksikal yang lebih sempit daripada Kanji sumbernya, misalnya `にん` sebagai penghitung orang atau `じん` sebagai akhiran kebangsaan. Cognis hanya boleh mewarisi definisi terlokalkan kartu sumber saat tautan entri terkait membuka Kosakata tanpa definisinya sendiri; definisi yang ditulis selalu diutamakan, sedangkan tautan komposisi judul serta navigasi sebelumnya/berikutnya tidak membawa konteks cadangan.
+
+## Set Data Inti yang Diperluas
+
+Paket kini memuat lebih dari tiga puluh rekaman Kosakata sehari-hari tambahan, sepuluh partikel tambahan, dan delapan kalimat contoh yang tersusun penuh, semuanya disimpan sebagai JSON deklaratif di `data/library/content/`. Polisemi sejati dapat memakai beberapa referensi definisi terlokalkan pada satu rekaman (`なおす`: memperbaiki/mengoreksi), sedangkan homofon seperti `はし` (jembatan/sumpit), `あめ` (hujan/permen), `かみ` (kertas/rambut/dewa), dan `はな` (bunga/hidung) tetap menjadi rekaman Kosakata terpisah dengan definisi berbeda.

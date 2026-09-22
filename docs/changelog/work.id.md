@@ -235,3 +235,9 @@ Pelafalan kata majemuk yang ditentukan kini tertaut melalui rekaman bacaan terse
 Kosakata bacaan Kanji tersembunyi kini memiliki definisi empat bahasa untuk penggunaan yang lebih sempit, seperti penghitung orang `にん` dan akhiran kebangsaan `じん`, alih-alih memakai ulang makna Kanji yang luas. Standar penulisan membatasi fallback definisi sumber Cognis hanya untuk makna yang benar-benar sama dan dibuka melalui navigasi entri terkait, karena komposisi judul serta navigasi sebelumnya/berikutnya sengaja menghapus konteks tersebut.
 
 - [d52fcb2](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/d52fcb2578d7854a9e36361a5077dc2276e05115)
+
+## Set Data Deklaratif yang Diperluas Secara Dramatis
+
+Lebih dari tiga puluh rekaman Kosakata sehari-hari, sepuluh partikel, dan delapan kalimat tersusun penuh dengan definisi empat bahasa ditambahkan sepenuhnya sebagai JSON data. Polisemi sejati memakai beberapa definisi pada satu rekaman (`なおす`), sedangkan homofon seperti jembatan/sumpit `はし`, hujan/permen `あめ`, serta kertas/rambut/dewa `かみ` tetap menjadi rekaman Kosakata terpisah dengan makna mandiri.
+
+- [a538833](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/a538833e990505cad9b817cb9995b1cf2b8bab5e)
