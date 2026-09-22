@@ -223,3 +223,9 @@ Kartu Kanji dengan beberapa bacaan kini menyelesaikan setiap pelafalan yang dita
 Pelafalan Kanji kini tertaut ke satu rekaman bacaan Kosakata lengkap untuk setiap bacaan, lalu setiap bacaan tertaut ke ejaan Kana atomiknya yang berurutan. Rekaman khusus bacaan disembunyikan dari penjelajah tetapi tetap dapat dibuka melalui tautan; semua rekaman Kosakata biasa tetap terlihat.
 
 - [cb5c46a](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/cb5c46a541006afea645504178fd86f788b4565f)
+
+## Segmen Pelafalan Kata Majemuk yang Ditulis
+
+Pelafalan kata majemuk yang ditentukan kini tertaut melalui rekaman bacaan tersembunyi terbesar yang telah ditulis, bukan langsung melalui Kana atomik. `日本語` menyelesaikan `にほんご` sebagai bacaan tersembunyi `にほん` yang terkait dengan `日本`, diikuti bacaan `ご` yang terkait dengan `語`; rekaman tersebut kemudian menyelesaikan ke Kana berurutan.
+
+- [eff02dd](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/eff02dd26396e0198e63e51b24758701f05d00d2)

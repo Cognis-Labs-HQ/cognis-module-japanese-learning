@@ -223,3 +223,9 @@ Kanji cards with multiple readings now resolve every displayed pronunciation dir
 Kanji pronunciations now link to one complete Vocabulary reading apiece, and each reading continues to its ordered atomic Kana spelling. Reading-only Vocabulary records are hidden from browsing while remaining deep-linkable; all ordinary Vocabulary records remain visible.
 
 - [cb5c46a](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/cb5c46a541006afea645504178fd86f788b4565f)
+
+## Authored Compound Pronunciation Segments
+
+Opinionated compound pronunciations now deep-link through the largest authored hidden reading records rather than directly through atomic Kana. `日本語` resolves `にほんご` as the hidden `にほん` reading associated with `日本` followed by the hidden `ご` reading associated with `語`; those records then resolve to ordered Kana.
+
+- [eff02dd](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/eff02dd26396e0198e63e51b24758701f05d00d2)

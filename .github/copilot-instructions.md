@@ -44,6 +44,7 @@ Keep files at or below 1000 lines. Prefer descriptive names over abbreviations a
 - Put Kana readings in `kana-spelling` relationships with `presentationRole: "alternateSpelling"`. Each referenced Kana record must exactly reconstruct the reading in order.
 - Set a pronunciation field's `input.linkRelationship` when provider-authored references should supply its deep links. Never rely on label guessing when a direct relationship exists.
 - For a Kanji card with multiple pronunciations, make that link relationship target one hidden reading-vocabulary record per complete reading. Each reading record must then reconstruct itself from atomic Kana through `kana-spelling`; ordinary vocabulary records must remain visible.
+- For an opinionated compound-word pronunciation, link the largest authored reading segments through `pronunciation-readings` rather than linking every displayed Kana directly. For example, `日本語` uses hidden `にほん` and `ご` reading records; those records alone resolve onward to atomic Kana.
 - Every schema field must declare an `input.control`. Select options and field labels must be localized in German, English, Indonesian, and Japanese. Provider-controlled classification fields should be immutable.
 - Do not keep a broad `related` edge when a more precise composition, spelling, pronunciation, definition, variant, or child relationship expresses the connection.
 

@@ -223,3 +223,9 @@ Kanji-Karten mit mehreren Lesungen lösen nun jede angezeigte Aussprache direkt 
 Kanji-Aussprachen verweisen nun jeweils auf einen vollständigen Wortschatz-Lesungseintrag, der wiederum auf seine geordnete atomare Kana-Schreibweise verweist. Reine Lesungseinträge werden im Browser ausgeblendet, bleiben aber direkt verlinkbar; alle gewöhnlichen Wortschatzeinträge bleiben sichtbar.
 
 - [cb5c46a](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/cb5c46a541006afea645504178fd86f788b4565f)
+
+## Deklarierte Ausspracheabschnitte für Komposita
+
+Festgelegte Komposita-Aussprachen verlinken nun über die größten deklarierten ausgeblendeten Lesungseinträge statt direkt über atomare Kana. `日本語` löst `にほんご` als die `日本` zugeordnete ausgeblendete Lesung `にほん` gefolgt von der `語` zugeordneten Lesung `ご` auf; diese Einträge lösen anschließend zu geordneten Kana auf.
+
+- [eff02dd](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/eff02dd26396e0198e63e51b24758701f05d00d2)

@@ -18,19 +18,9 @@
                 "position": 1
             },
             {
-                "entryId": "ja:char:ni",
-                "relation": "kana-spelling",
+                "entryId": "ja:word:reading-nihon",
+                "relation": "pronunciation-readings",
                 "position": 0
-            },
-            {
-                "entryId": "ja:char:ho",
-                "relation": "kana-spelling",
-                "position": 1
-            },
-            {
-                "entryId": "ja:char:n",
-                "relation": "kana-spelling",
-                "position": 2
             },
             {
                 "entryId": "ja:def:nihon",
@@ -57,6 +47,30 @@
                 "position": 1
             },
             {
+                "entryId": "ja:word:reading-nihon",
+                "relation": "pronunciation-readings",
+                "position": 0
+            },
+            {
+                "entryId": "ja:word:reading-go",
+                "relation": "pronunciation-readings",
+                "position": 1
+            },
+            {
+                "entryId": "ja:def:nihongo",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:reading-nihon",
+        "label": "にほん",
+        "fields": {
+            "jlpt_level": "N5",
+            "pronunciation": ["にほん"]
+        },
+        "references": [
+            {
                 "entryId": "ja:char:ni",
                 "relation": "kana-spelling",
                 "position": 0
@@ -72,15 +86,11 @@
                 "position": 2
             },
             {
-                "entryId": "ja:char:go",
-                "relation": "kana-spelling",
-                "position": 3
-            },
-            {
-                "entryId": "ja:def:nihongo",
+                "entryId": "ja:def:nihon",
                 "relation": "definitions"
             }
-        ]
+        ],
+        "hidden": true
     },
     {
         "id": "ja:word:reading-nichi",

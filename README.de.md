@@ -130,3 +130,5 @@ Kompositionen verwenden jetzt die nächstgelegenen Datensätze: `日本語` verw
 ## Ausgeblendeter Lesungswortschatz für Kanji
 
 Die angezeigten Lesungen einer Kanji-Karte verlinken auf eigene Wortschatzeinträge, die wiederum auf die Hiragana-Zeichen verweisen, aus denen die jeweilige Lesung besteht. Reine Lesungseinträge bleiben für Definitionen direkt verlinkbar, werden aber im Wortschatz-Browser ausgeblendet; gewöhnlicher Wortschatz bleibt sichtbar.
+
+Festgelegte Komposita-Aussprachen verwenden die größten verfügbaren ausgeblendeten Lesungssegmente, statt jedes Kana direkt zu verlinken. `日本語` löst das angezeigte `にほんご` beispielsweise über die ausgeblendete Lesung `にほん` für `日本` und `ご` für `語` auf; erst diese Lesungseinträge verweisen auf einzelne Kana.

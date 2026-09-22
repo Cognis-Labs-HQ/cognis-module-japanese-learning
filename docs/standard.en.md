@@ -127,3 +127,5 @@ Compositions now use the closest available records: `日本語` links to the wor
 ## Hidden Reading Vocabulary for Kanji
 
 A Kanji pronunciation field must link to one dedicated Vocabulary record per complete reading. Every reading-only record must be `hidden: true` and must reconstruct itself from atomic Kana through `kana-spelling`; ordinary Vocabulary records must remain visible.
+
+An opinionated compound-word pronunciation must use `pronunciation-readings` to reference the largest authored reading segments in display order. `日本語`, for example, links `にほん` to the hidden reading record associated with `日本` and `ご` to the hidden reading record associated with `語`. The visible compound must not duplicate those segments as direct atomic Kana references.

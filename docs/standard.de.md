@@ -127,3 +127,5 @@ Kompositionen verwenden jetzt die nächstgelegenen Datensätze: `日本語` verw
 ## Ausgeblendeter Lesungswortschatz für Kanji
 
 Ein Kanji-Aussprachefeld muss für jede vollständige Lesung auf genau einen eigenen Wortschatzeintrag verweisen. Jeder reine Lesungseintrag muss `hidden: true` sein und sich über `kana-spelling` aus atomaren Kana zusammensetzen; gewöhnliche Wortschatzeinträge müssen sichtbar bleiben.
+
+Eine festgelegte Kompositum-Aussprache muss über `pronunciation-readings` die größten deklarierten Lesungssegmente in Anzeigereihenfolge referenzieren. `日本語` verlinkt beispielsweise `にほん` mit dem ausgeblendeten Lesungseintrag für `日本` und `ご` mit dem ausgeblendeten Lesungseintrag für `語`. Das sichtbare Kompositum darf diese Segmente nicht zusätzlich direkt als atomare Kana referenzieren.

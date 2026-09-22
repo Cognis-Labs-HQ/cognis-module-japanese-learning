@@ -54,6 +54,14 @@ test("fields publish provider-owned editor controls", () => {
 });
 
 test("vocabulary compositions use the closest structural records", () => {
+    const wordLayer = schema.layers.find(({ id }) => id === "words");
+    const pronunciation = wordLayer.fields.find(
+        ({ id }) => id === "pronunciation",
+    );
+    assert.equal(
+        pronunciation.input.linkRelationship,
+        "pronunciation-readings",
+    );
     const nihon = recordsById.get("ja:word:nihon");
     const nihongo = recordsById.get("ja:word:nihongo");
     assert.equal(labelsFor(nihon, ["word-spelling", "spelling"]), "日本");
@@ -66,8 +74,18 @@ test("vocabulary compositions use the closest structural records", () => {
             .map(({ entryId }) => entryId),
         ["ja:word:nihon", "ja:kanji:go"],
     );
-    assert.equal(labelsFor(nihon, ["kana-spelling"]), "にほん");
-    assert.equal(labelsFor(nihongo, ["kana-spelling"]), "にほんご");
+    assert.equal(labelsFor(nihon, ["pronunciation-readings"]), "にほん");
+    assert.equal(labelsFor(nihongo, ["pronunciation-readings"]), "にほんご");
+    assert.deepEqual(
+        nihongo.references
+            .filter(({ relation }) => relation === "pronunciation-readings")
+            .map(({ entryId }) => entryId),
+        ["ja:word:reading-nihon", "ja:word:reading-go"],
+    );
+    assert.equal(
+        labelsFor(recordsById.get("ja:word:reading-nihon"), ["kana-spelling"]),
+        "にほん",
+    );
 });
 
 test("only Kanji reading vocabulary is hidden from browsing", () => {

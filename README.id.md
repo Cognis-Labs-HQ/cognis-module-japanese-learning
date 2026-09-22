@@ -130,3 +130,5 @@ Komposisi kini memakai rekaman terdekat yang tersedia: `日本語` menaut ke kat
 ## Kosakata Bacaan Kanji yang Disembunyikan
 
 Bacaan pada kartu Kanji tertaut ke rekaman Kosakata khusus, lalu setiap rekaman bacaan tertaut ke karakter Hiragana yang menyusunnya. Rekaman khusus bacaan tetap dapat dibuka melalui tautan untuk definisi, tetapi disembunyikan dari penjelajah Kosakata; kosakata biasa tetap terlihat.
+
+Pelafalan kata majemuk yang ditentukan menggunakan segmen bacaan tersembunyi terbesar yang tersedia, bukan menautkan setiap Kana secara langsung. Misalnya, `日本語` menyelesaikan `にほんご` melalui bacaan tersembunyi `にほん` untuk `日本` dan `ご` untuk `語`; hanya rekaman bacaan tersebut yang kemudian menaut ke Kana individual.
