@@ -1,0 +1,158 @@
+import assert from "node:assert/strict";
+import { readFileSync } from "node:fs";
+import test from "node:test";
+
+function readJson(path) {
+    return JSON.parse(
+        readFileSync(new URL(`../${path}`, import.meta.url), "utf8"),
+    );
+}
+
+const schema = readJson("data/library/schema.json");
+const words = readJson("data/library/content/words/common.json");
+const kanji = readJson("data/library/content/alt-characters/kanji.json");
+const characters = [
+    ...readJson("data/library/content/characters/hiragana.json"),
+    ...readJson("data/library/content/characters/hiragana-variants.json"),
+];
+const particles = readJson("data/library/content/particles/common.json");
+const recordsById = new Map(
+    [...words, ...kanji, ...characters, ...particles].map((entry) => [
+        entry.id,
+        entry,
+    ]),
+);
+
+function labelsFor(entry, relations) {
+    return entry.references
+        .filter(({ relation }) => relations.includes(relation))
+        .sort((left, right) => left.position - right.position)
+        .map(({ entryId }) => recordsById.get(entryId).label)
+        .join("");
+}
+
+test("fields publish provider-owned editor controls", () => {
+    for (const layer of schema.layers) {
+        const relationshipIds = new Set(
+            (layer.relationships ?? []).map(({ id }) => id),
+        );
+        for (const field of layer.fields ?? []) {
+            assert.ok(field.input?.control, `${layer.id}.${field.id} input`);
+            if (field.input.linkRelationship) {
+                assert.ok(relationshipIds.has(field.input.linkRelationship));
+            }
+            for (const option of field.input.options ?? []) {
+                assert.deepEqual(Object.keys(option.metadata.labels).sort(), [
+                    "de",
+                    "en",
+                    "id",
+                    "ja",
+                ]);
+            }
+        }
+    }
+});
+
+test("vocabulary compositions use the closest structural records", () => {
+    const wordLayer = schema.layers.find(({ id }) => id === "words");
+    const pronunciation = wordLayer.fields.find(
+        ({ id }) => id === "pronunciation",
+    );
+    assert.equal(
+        pronunciation.input.linkRelationship,
+        "pronunciation-readings",
+    );
+    const nihon = recordsById.get("ja:word:nihon");
+    const nihongo = recordsById.get("ja:word:nihongo");
+    assert.equal(labelsFor(nihon, ["word-spelling", "spelling"]), "日本");
+    assert.equal(labelsFor(nihongo, ["word-spelling", "spelling"]), "日本語");
+    assert.deepEqual(
+        nihongo.references
+            .filter(({ relation }) =>
+                ["word-spelling", "spelling"].includes(relation),
+            )
+            .map(({ entryId }) => entryId),
+        ["ja:word:nihon", "ja:kanji:go"],
+    );
+    assert.equal(labelsFor(nihon, ["pronunciation-readings"]), "にほん");
+    assert.equal(labelsFor(nihongo, ["pronunciation-readings"]), "にほんご");
+    assert.deepEqual(
+        nihongo.references
+            .filter(({ relation }) => relation === "pronunciation-readings")
+            .map(({ entryId }) => entryId),
+        ["ja:word:reading-nihon", "ja:word:reading-go"],
+    );
+    assert.equal(
+        labelsFor(recordsById.get("ja:word:reading-nihon"), ["kana-spelling"]),
+        "にほん",
+    );
+});
+
+test("reading vocabulary owns localized niche definitions", () => {
+    const sourceDefinitionIds = new Set(
+        kanji.flatMap((entry) =>
+            entry.references
+                .filter(({ relation }) => relation === "definitions")
+                .map(({ entryId }) => entryId),
+        ),
+    );
+    for (const reading of words.filter(({ id }) =>
+        id.startsWith("ja:word:reading-"),
+    )) {
+        const definitionReferences = reading.references.filter(
+            ({ relation }) => relation === "definitions",
+        );
+        assert.equal(definitionReferences.length, 1);
+        assert.equal(
+            sourceDefinitionIds.has(definitionReferences[0].entryId),
+            false,
+            `${reading.id} must not reuse a broad Kanji definition`,
+        );
+        assert.equal(
+            definitionReferences[0].entryId,
+            reading.id === "ja:word:reading-nihon"
+                ? "ja:def:nihon"
+                : reading.id.replace("ja:word:", "ja:def:"),
+        );
+    }
+});
+
+test("only Kanji reading vocabulary is hidden from browsing", () => {
+    const readingVocabulary = words.filter(({ id }) =>
+        id.startsWith("ja:word:reading-"),
+    );
+    assert.ok(readingVocabulary.length > 0);
+    assert.ok(readingVocabulary.every(({ hidden }) => hidden === true));
+    assert.ok(
+        words
+            .filter(({ id }) => !id.startsWith("ja:word:reading-"))
+            .every(({ hidden }) => hidden !== true),
+    );
+});
+
+test("Kanji readings and particles resolve through authored Kana links", () => {
+    const altCharacters = schema.layers.find(
+        ({ id }) => id === "alt-characters",
+    );
+    const pronunciation = altCharacters.fields.find(
+        ({ id }) => id === "pronunciation",
+    );
+    assert.equal(pronunciation.input.linkRelationship, "readings");
+
+    for (const entry of kanji) {
+        const readingLabels = entry.references
+            .filter(({ relation }) => relation === "readings")
+            .sort((left, right) => left.position - right.position)
+            .map(({ entryId }) => recordsById.get(entryId).label);
+        assert.deepEqual(readingLabels, entry.fields.pronunciation);
+        for (const reference of entry.references.filter(
+            ({ relation }) => relation === "readings",
+        )) {
+            const reading = recordsById.get(reference.entryId);
+            assert.equal(reading.hidden, true);
+            assert.equal(labelsFor(reading, ["kana-spelling"]), reading.label);
+        }
+    }
+    const ga = recordsById.get("ja:particle:ga");
+    assert.equal(labelsFor(ga, ["kana-spelling"]), "が");
+});

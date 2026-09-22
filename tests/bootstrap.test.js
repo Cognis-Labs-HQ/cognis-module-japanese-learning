@@ -61,3 +61,30 @@ test("fails safely when the host Library capability is unavailable", async () =>
         /requires study:library/,
     );
 });
+
+test("content ingestion failures remain activation-blocking", async () => {
+    const contributions = [];
+    const ctx = {
+        moduleRoot: path.resolve("."),
+        getCapability() {
+            return {
+                async ingestContentPack() {
+                    throw new Error("content import failed");
+                },
+            };
+        },
+        registerStaticDir() {},
+        contributePublicCapability(id) {
+            contributions.push(id);
+        },
+        flow: { extend() {} },
+        log() {},
+    };
+
+    await assert.rejects(bootstrapModule(ctx), /content import failed/);
+    assert.deepEqual(contributions, []);
+    const manifest = JSON.parse(
+        readFileSync(path.join(ctx.moduleRoot, "manifest.json"), "utf8"),
+    );
+    assert.equal(manifest.allowBootstrapFailure, undefined);
+});

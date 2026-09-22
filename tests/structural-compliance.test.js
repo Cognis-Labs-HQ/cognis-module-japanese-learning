@@ -63,6 +63,21 @@ test("CSS source contains no comments", () => {
     assert.deepEqual(violations, []);
 });
 
+test("standard Study capability publication requests trusted privilege", () => {
+    const manifest = JSON.parse(readFileSync(resolve(ROOT, "manifest.json")));
+    assert.equal(manifest.privileged, true);
+    assert.ok(manifest.capabilities.includes("study:language:ja"));
+    assert.ok(
+        manifest.capabilities.some(
+            (capability) => !capability.startsWith(`${manifest.id}:`),
+        ),
+    );
+    assert.match(
+        manifest.repository,
+        /^https:\/\/github\.com\/Cognis-Labs-HQ\//u,
+    );
+});
+
 test("manifest dependencies use UUID references", () => {
     const manifest = JSON.parse(readFileSync(resolve(ROOT, "manifest.json")));
     const uuid =

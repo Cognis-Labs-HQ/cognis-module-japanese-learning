@@ -37,6 +37,21 @@ Keep API code in `api/`, browser resources in `ui/`, CLI controls in `cli/`, doc
 
 Keep files at or below 1000 lines. Prefer descriptive names over abbreviations and one- or two-letter bindings, except conventional coordinates, loop counters, row or column counters, `_`, and `id`.
 
+## Library Relationship Authoring
+
+- Composition references must target the closest available structural record. Prefer a complete lexical unit over rebuilding it from individual compound or atomic writing units.
+- Use ordered relationships with shared positions when one composition spans multiple target layers. For example, `日本語` links to the word `日本` at position 0 and the Kanji `語` at position 1; `日本` links to `日` and `本`.
+- Put Kana readings in `kana-spelling` relationships with `presentationRole: "alternateSpelling"`. Each referenced Kana record must exactly reconstruct the reading in order.
+- Set a pronunciation field's `input.linkRelationship` when provider-authored references should supply its deep links. Never rely on label guessing when a direct relationship exists.
+- For a Kanji card with multiple pronunciations, make that link relationship target one hidden reading-vocabulary record per complete reading. Each reading record must then reconstruct itself from atomic Kana through `kana-spelling`; ordinary vocabulary records must remain visible.
+- For an opinionated compound-word pronunciation, link the largest authored reading segments through `pronunciation-readings` rather than linking every displayed Kana directly. For example, `日本語` uses hidden `にほん` and `ご` reading records; those records alone resolve onward to atomic Kana.
+- Give a vocabulary record its own localized definition whenever its reading or usage has a narrower meaning than the writing unit that references it. Omit that definition only when the meanings are genuinely identical and navigation occurs through a related-entry card that can supply the source definition; title-composition, previous, and next navigation do not carry fallback definitions.
+- Use multiple definition references for genuine polysemy of one lexical record. Represent homophones with distinct meanings as separate vocabulary records, each with its own definition set; do not collapse them merely because their Kana labels match.
+- Store Japanese characters, vocabulary, particles, sentences, and localized meanings only in `data/library/content/` JSON files. Runtime and bootstrap code must remain language-data agnostic.
+- Keep the particle inventory comprehensive rather than pruning currently unused forms. Every packaged particle must be referenced by at least one ordered example sentence so learners can inspect it in context.
+- Every schema field must declare an `input.control`. Select options and field labels must be localized in German, English, Indonesian, and Japanese. Provider-controlled classification fields should be immutable.
+- Do not keep a broad `related` edge when a more precise composition, spelling, pronunciation, definition, variant, or child relationship expresses the connection.
+
 ## Changelog Entries
 
 Store changelog entries in `docs/changelog/`; do not create or append to a root monolithic changelog. Every pull request must add one localized file for each supported language (`de`, `en`, `id`, and `ja`) using `<branch-name>.<lang>.md`, with any `copilot/` prefix removed from the branch name.
