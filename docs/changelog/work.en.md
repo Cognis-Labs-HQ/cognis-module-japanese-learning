@@ -217,3 +217,9 @@ Compositions now use the closest available records: `日本語` links to the wor
 Kanji cards with multiple readings now resolve every displayed pronunciation directly to its constituent Hiragana records. Vocabulary reading records remain available for definitions and study without creating recursive pronunciation links.
 
 - [f3faf6c](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/f3faf6ccbd41bd5709996a9b7d6fb31174a2c437)
+
+## Hidden Kanji Reading Vocabulary
+
+Kanji pronunciations now link to one complete Vocabulary reading apiece, and each reading continues to its ordered atomic Kana spelling. Reading-only Vocabulary records are hidden from browsing while remaining deep-linkable; all ordinary Vocabulary records remain visible.
+
+- [cb5c46a](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/cb5c46a541006afea645504178fd86f788b4565f)

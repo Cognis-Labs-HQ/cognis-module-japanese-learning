@@ -127,6 +127,6 @@ Das Modul fordert jetzt ausdrücklich vertrauenswürdige Privilegien an, weil es
 
 Kompositionen verwenden jetzt die nächstgelegenen Datensätze: `日本語` verweist auf das Wort `日本` und das Kanji `語`, während `日本` auf die Kanji `日` und `本` verweist. Geordnete Kana-Alternativschreibweisen stellen direkte Aussprache-Links bereit, und jedes Feld deklariert sein anbietereigenes Editor-Steuerelement und lokalisierte Optionen.
 
-## Direkte Kana-Links für Kanji-Lesungen
+## Ausgeblendeter Lesungswortschatz für Kanji
 
-Die angezeigten Lesungen einer Kanji-Karte verlinken direkt auf die Hiragana-Einträge, aus denen sich jede Lesung zusammensetzt. Eigene Lesungseinträge bleiben für Definitionen und Übungen im Wortschatz erhalten, vermitteln aber keine Titel-Links mehr; dadurch entsteht keine rekursive Navigation durch Wortschatzkarten.
+Die angezeigten Lesungen einer Kanji-Karte verlinken auf eigene Wortschatzeinträge, die wiederum auf die Hiragana-Zeichen verweisen, aus denen die jeweilige Lesung besteht. Reine Lesungseinträge bleiben für Definitionen direkt verlinkbar, werden aber im Wortschatz-Browser ausgeblendet; gewöhnlicher Wortschatz bleibt sichtbar.

@@ -124,6 +124,6 @@ Modul kini secara eksplisit meminta hak istimewa tepercaya karena menerbitkan ka
 
 Komposisi kini memakai rekaman terdekat yang tersedia: `日本語` menaut ke kata `日本` dan Kanji `語`, sedangkan `日本` menaut ke Kanji `日` dan `本`. Ejaan alternatif Kana berurutan menyediakan tautan langsung untuk pelafalan, dan setiap bidang mendeklarasikan kontrol editor milik penyedia beserta opsi terlokalisasi.
 
-## Tautan Kana Langsung untuk Bacaan Kanji
+## Kosakata Bacaan Kanji yang Disembunyikan
 
-Kolom pelafalan Kanji harus tertaut ke referensi Kana langsung yang dapat menyusun ulang setiap bacaan yang ditampilkan. Rekaman bacaan Kosakata boleh menyediakan definisi dan materi pembelajaran, tetapi tidak boleh menjadi perantara tautan pelafalan pada judul karena hal itu menghasilkan navigasi rekursif.
+Kolom pelafalan Kanji harus tertaut ke satu rekaman Kosakata khusus untuk setiap bacaan lengkap. Setiap rekaman khusus bacaan harus memiliki `hidden: true` dan menyusun dirinya dari Kana atomik melalui `kana-spelling`; rekaman Kosakata biasa harus tetap terlihat.

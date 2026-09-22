@@ -127,6 +127,6 @@ The module now requests trusted privilege explicitly because it publishes the st
 
 Compositions now use the closest available records: `日本語` links to the word `日本` and Kanji `語`, while `日本` links to Kanji `日` and `本`. Ordered Kana alternate spellings provide direct links for pronunciations, and every field declares its provider-owned editor control and localized options.
 
-## Direct Kana Links for Kanji Readings
+## Hidden Reading Vocabulary for Kanji
 
-A Kanji card's displayed readings link directly to the Hiragana records that reconstruct each reading. Dedicated reading records remain in Vocabulary for definitions and study, but no longer mediate title links, preventing recursive navigation through Vocabulary cards.
+A Kanji card's displayed readings link to dedicated Vocabulary records, and each reading record links onward to the Hiragana characters that reconstruct it. Reading-only Vocabulary records remain deep-linkable for definitions but are hidden from the Vocabulary browser; ordinary vocabulary stays visible.

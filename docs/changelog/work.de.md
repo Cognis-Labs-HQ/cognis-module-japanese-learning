@@ -217,3 +217,9 @@ Kompositionen verwenden jetzt die nächstgelegenen Datensätze: `日本語` verw
 Kanji-Karten mit mehreren Lesungen lösen nun jede angezeigte Aussprache direkt in ihre zugehörigen Hiragana-Einträge auf. Wortschatz-Lesungseinträge bleiben für Definitionen und Übungen verfügbar, ohne rekursive Aussprache-Links zu erzeugen.
 
 - [f3faf6c](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/f3faf6ccbd41bd5709996a9b7d6fb31174a2c437)
+
+## Ausgeblendeter Kanji-Lesungswortschatz
+
+Kanji-Aussprachen verweisen nun jeweils auf einen vollständigen Wortschatz-Lesungseintrag, der wiederum auf seine geordnete atomare Kana-Schreibweise verweist. Reine Lesungseinträge werden im Browser ausgeblendet, bleiben aber direkt verlinkbar; alle gewöhnlichen Wortschatzeinträge bleiben sichtbar.
+
+- [cb5c46a](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/cb5c46a541006afea645504178fd86f788b4565f)

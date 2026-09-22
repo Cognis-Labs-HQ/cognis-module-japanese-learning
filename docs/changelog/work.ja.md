@@ -217,3 +217,9 @@ Cognis PR #214 に合わせ、名前空間の所有権、ローカライズ済�
 複数の読みを持つ漢字カードでは、表示する各発音を構成するひらがなレコードへ直接解決するようになりました。語彙の読みレコードは、再帰的な発音リンクを生むことなく、定義と学習用として引き続き利用できます。
 
 - [f3faf6c](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/f3faf6ccbd41bd5709996a9b7d6fb31174a2c437)
+
+## 漢字用の非表示読み語彙
+
+漢字の各発音は完全な読みを表す1件の語彙レコードへリンクし、その読みから順序付きの原子的な仮名綴りへリンクするようになりました。読み専用語彙はブラウザーでは非表示ですが直接参照でき、通常の語彙はすべて表示したままです。
+
+- [cb5c46a](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/cb5c46a541006afea645504178fd86f788b4565f)

@@ -217,3 +217,9 @@ Komposisi kini memakai rekaman terdekat yang tersedia: `日本語` menaut ke kat
 Kartu Kanji dengan beberapa bacaan kini menyelesaikan setiap pelafalan yang ditampilkan langsung ke rekaman Hiragana penyusunnya. Rekaman bacaan Kosakata tetap tersedia untuk definisi dan pembelajaran tanpa menghasilkan tautan pelafalan rekursif.
 
 - [f3faf6c](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/f3faf6ccbd41bd5709996a9b7d6fb31174a2c437)
+
+## Kosakata Bacaan Kanji yang Disembunyikan
+
+Pelafalan Kanji kini tertaut ke satu rekaman bacaan Kosakata lengkap untuk setiap bacaan, lalu setiap bacaan tertaut ke ejaan Kana atomiknya yang berurutan. Rekaman khusus bacaan disembunyikan dari penjelajah tetapi tetap dapat dibuka melalui tautan; semua rekaman Kosakata biasa tetap terlihat.
+
+- [cb5c46a](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/cb5c46a541006afea645504178fd86f788b4565f)

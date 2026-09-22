@@ -393,14 +393,8 @@ test("kanji readings reference distinct kana-backed vocabulary entries", () => {
         ({ id }) => id === "readings",
     );
     assert.equal(readingRelationship.targetLayer, "words");
-    assert.equal(readingRelationship.resolverRole, undefined);
-    assert.equal(readingRelationship.presentationRole, undefined);
-    const readingKanaRelationship = compoundLayer.relationships.find(
-        ({ id }) => id === "reading-kana",
-    );
-    assert.equal(readingKanaRelationship.targetLayer, "characters");
-    assert.equal(readingKanaRelationship.resolverRole, "explicit");
-    assert.equal(readingKanaRelationship.presentationRole, "pronunciation");
+    assert.equal(readingRelationship.resolverRole, "explicit");
+    assert.equal(readingRelationship.presentationRole, "pronunciation");
 
     const words = new Map(
         records
@@ -428,6 +422,7 @@ test("kanji readings reference distinct kana-backed vocabulary entries", () => {
             readingWords.map(({ label }) => label),
             kanji.fields.pronunciation,
         );
+        assert.ok(readingWords.every(({ hidden }) => hidden === true));
         for (const readingWord of readingWords) {
             const spelling = readingWord.references
                 .filter(({ relation }) => relation === "kana-spelling")
@@ -757,7 +752,7 @@ test("definitions stay semantic while resolvers describe compositions", () => {
             ),
         ),
         new Set([
-            "reading-kana:characters",
+            "readings:words",
             "word-spelling:words",
             "spelling:alt-characters",
             "kana-spelling:characters",
@@ -773,7 +768,7 @@ test("definitions stay semantic while resolvers describe compositions", () => {
             ]),
         ),
         new Map([
-            ["reading-kana", "pronunciation"],
+            ["readings", "pronunciation"],
             ["word-spelling", "composition"],
             ["spelling", "composition"],
             ["kana-spelling", "alternateSpelling"],

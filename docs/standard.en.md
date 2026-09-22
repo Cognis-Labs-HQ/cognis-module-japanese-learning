@@ -124,6 +124,6 @@ The module now requests trusted privilege explicitly because it publishes the st
 
 Compositions now use the closest available records: `日本語` links to the word `日本` and Kanji `語`, while `日本` links to Kanji `日` and `本`. Ordered Kana alternate spellings provide direct links for pronunciations, and every field declares its provider-owned editor control and localized options.
 
-## Direct Kana Links for Kanji Readings
+## Hidden Reading Vocabulary for Kanji
 
-A Kanji pronunciation field must link to direct Kana references that can reconstruct every displayed reading. Vocabulary reading records may provide definitions and study content, but must not mediate pronunciation title links because that creates recursive navigation.
+A Kanji pronunciation field must link to one dedicated Vocabulary record per complete reading. Every reading-only record must be `hidden: true` and must reconstruct itself from atomic Kana through `kana-spelling`; ordinary Vocabulary records must remain visible.
