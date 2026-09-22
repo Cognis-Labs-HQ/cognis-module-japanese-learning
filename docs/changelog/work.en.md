@@ -247,3 +247,9 @@ Added more than thirty everyday Vocabulary records, ten particles, and eight ful
 Expanded the pack to more than sixty particles spanning case, binding, conjunctive, listing, limiting, compound, and sentence-final forms. Every particle now has localized function data, ordered Kana spelling, and at least one ordered example sentence.
 
 - [5921d4e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/5921d4eafc7a0f0a64fa59db2dec53ea259c1647)
+
+## Complete Particle Navigation Paths
+
+Particle examples now include Kanji-composed Vocabulary for school, with dedicated hidden readings that reconstruct 学校 from ordered atomic Kana. Every added particle example can therefore traverse from its Sentence through Vocabulary and Kanji to the exact Kana reading.
+
+- [0353386](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/03533863e162d223ac9a77782ec146668d5c154b)

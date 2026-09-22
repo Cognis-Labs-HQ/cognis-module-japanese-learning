@@ -141,3 +141,7 @@ Use multiple definition references only when one lexical record genuinely has mu
 ## Comprehensive Particle Practice
 
 Do not remove a valid particle merely because current lessons do not otherwise use it. Every packaged particle must provide localized function metadata, ordered Kana spelling, and at least one ordered example sentence reference.
+
+## Particle example traversal
+
+Every particle example must contain Vocabulary that composes through Kanji. Each referenced Kanji must link to a complete hidden reading Vocabulary record, and that reading must reconstruct itself from ordered atomic Kana.

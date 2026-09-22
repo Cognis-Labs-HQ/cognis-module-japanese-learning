@@ -141,3 +141,7 @@ Gunakan beberapa referensi definisi hanya ketika satu rekaman leksikal benar-ben
 ## Latihan Partikel Komprehensif
 
 Jangan menghapus partikel yang valid hanya karena pelajaran saat ini belum menggunakannya. Setiap partikel dalam paket harus memiliki metadata fungsi terlokalkan, ejaan Kana berurutan, dan setidaknya satu referensi kalimat contoh berurutan.
+
+## Penelusuran contoh partikel
+
+Setiap contoh partikel harus memuat Kosakata yang tersusun melalui Kanji. Setiap Kanji yang dirujuk harus tertaut ke rekaman Kosakata bacaan tersembunyi yang lengkap, dan bacaan tersebut harus menyusun dirinya kembali dari Kana atomik berurutan.

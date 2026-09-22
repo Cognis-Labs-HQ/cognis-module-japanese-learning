@@ -1,0 +1,40 @@
+[
+    {
+        "id": "ja:kanji:gaku",
+        "label": "学",
+        "fields": {
+            "pronunciation": ["がく"],
+            "audio": "https://assets.cognis.dev/study/ja/pronunciation/kanji-gaku.mp3"
+        },
+        "references": [
+            {
+                "entryId": "ja:word:reading-gaku",
+                "relation": "readings",
+                "position": 0
+            },
+            {
+                "entryId": "ja:def:kanji-gaku",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:kanji:kou",
+        "label": "校",
+        "fields": {
+            "pronunciation": ["こう"],
+            "audio": "https://assets.cognis.dev/study/ja/pronunciation/kanji-kou.mp3"
+        },
+        "references": [
+            {
+                "entryId": "ja:word:reading-kou",
+                "relation": "readings",
+                "position": 0
+            },
+            {
+                "entryId": "ja:def:kanji-kou",
+                "relation": "definitions"
+            }
+        ]
+    }
+]

@@ -84,3 +84,44 @@ test("every authored particle is exercised by a sentence", () => {
         );
     }
 });
+
+test("particle examples traverse vocabulary, Kanji, and Kana", () => {
+    const entriesById = new Map(
+        ["characters", "alt-characters", "words", "particles", "sentences"]
+            .flatMap(readLayer)
+            .map((entry) => [entry.id, entry]),
+    );
+    const examples = readLayer("sentences").filter(
+        ({ id }) =>
+            id.startsWith("ja:sentence:particle-example-") ||
+            ["ja:sentence:gakkou-de-miru", "ja:sentence:gakkou-e-iku"].includes(
+                id,
+            ),
+    );
+
+    for (const sentence of examples) {
+        const vocabulary = sentence.references
+            .filter(({ relation }) => relation === "words")
+            .map(({ entryId }) => entriesById.get(entryId));
+        const Kanji = vocabulary.flatMap((entry) =>
+            entry.references
+                .filter(({ relation }) => relation === "spelling")
+                .map(({ entryId }) => entriesById.get(entryId)),
+        );
+        const readings = Kanji.flatMap((entry) =>
+            entry.references
+                .filter(({ relation }) => relation === "readings")
+                .map(({ entryId }) => entriesById.get(entryId)),
+        );
+
+        assert.ok(Kanji.length > 0, `${sentence.id} must reach Kanji`);
+        assert.ok(
+            readings.some((entry) =>
+                entry.references.some(
+                    ({ relation }) => relation === "kana-spelling",
+                ),
+            ),
+            `${sentence.id} must reach Kana through a Kanji reading`,
+        );
+    }
+});

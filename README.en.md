@@ -144,3 +144,7 @@ The pack now includes more than thirty additional everyday Vocabulary records, t
 ## Comprehensive Particle Practice
 
 The particle inventory now contains more than sixty simple, compound, connective, limiting, listing, and sentence-final forms. Every particle remains available even when uncommon and is referenced by at least one ordered example sentence so its relationships can be explored in context.
+
+## Particle example traversal
+
+Particle examples now use authored Kanji vocabulary such as `学校`. Each sentence therefore opens a complete sentence → Vocabulary → Kanji → hidden reading Vocabulary → atomic Kana path instead of stopping at Kana-only vocabulary.

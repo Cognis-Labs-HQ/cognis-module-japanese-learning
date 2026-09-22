@@ -2,7 +2,7 @@
     "id": "study-language-ja",
     "uuid": "e905927f-b133-572a-92ce-2ea8645e5ceb",
     "name": "module.study-language-ja.name",
-    "version": "7.1.0",
+    "version": "7.2.0",
     "class": "extension",
     "coreApiVersion": "v1",
     "capabilities": ["study:language:ja"],
@@ -75,23 +75,23 @@
         },
         {
             "path": "README.de.md",
-            "sha256": "12f43e2262b2cc8eb19266d5b3a7cdc6c1a1419bf8c5239f69657abf484cb9ca"
+            "sha256": "dfeedd309015450de67b4cebf948bc252414b4b6528e76117f4db87506c5d625"
         },
         {
             "path": "README.en.md",
-            "sha256": "fabf4d384af1f6aec2067372378e66b5c2ba8f4ca6343742ca56d0b7365f6ee3"
+            "sha256": "5a34b847d237958ad4908b5242c0960aafb56be6f0380a1559b8b27460449258"
         },
         {
             "path": "README.id.md",
-            "sha256": "be251baa2a86f684cffd7a3d3d238cc6d2dc98df9365abefc0f2890168da6348"
+            "sha256": "2287e18b1b5f1ef484b53d08e6de673b6b072a8e4f7a77f7e1bb5b500101048f"
         },
         {
             "path": "README.ja.md",
-            "sha256": "8ab15e2f280349cd31c6f307f913e99570c069a74c974e36a08462d8573d5139"
+            "sha256": "3c55787b02f26966ff716b1653a1e9ec3801bd0c648669247751adc3982e2f80"
         },
         {
             "path": "README.md",
-            "sha256": "fabf4d384af1f6aec2067372378e66b5c2ba8f4ca6343742ca56d0b7365f6ee3"
+            "sha256": "5a34b847d237958ad4908b5242c0960aafb56be6f0380a1559b8b27460449258"
         },
         {
             "path": "assets/banner.svg",
@@ -103,11 +103,15 @@
         },
         {
             "path": "bootstrap.js",
-            "sha256": "12a2688f37e661b23310fbe559397530deb7b38a9afb4286211dd961e1e3cd11"
+            "sha256": "6f760d8788ec3cacdb14271d7fe001baa7824daffcbb95f761c9fee6e5738ef6"
         },
         {
             "path": "data/library/content/alt-characters/kanji.json",
             "sha256": "6a76e99827ae2772d2b21249d9cb3e94ea98ae17878cdaea1dfad63611610371"
+        },
+        {
+            "path": "data/library/content/alt-characters/particle-example-kanji.json",
+            "sha256": "aa34ceedbfd622821262d0ae7523a060894372da54f371b3708e24cc25585be9"
         },
         {
             "path": "data/library/content/characters/hiragana-geminated.json",
@@ -140,6 +144,10 @@
         {
             "path": "data/library/content/definitions/expanded.json",
             "sha256": "fd6a1d9985a5e39cd7b131feec3ec4f88265df1e198d3a34c5b8b88221ccc4ad"
+        },
+        {
+            "path": "data/library/content/definitions/particle-example-kanji.json",
+            "sha256": "01254bca4ae416438c7c1c9202a7029315c00369fda9801a68ef247fadd5ee05"
         },
         {
             "path": "data/library/content/definitions/particle-examples-1.json",
@@ -187,19 +195,19 @@
         },
         {
             "path": "data/library/content/sentences/expanded.json",
-            "sha256": "7eaff8099211be124124a40316cd7f7265eb69a6cf8e8baabafa8d6004ab7257"
+            "sha256": "cb3b1cf0d9851c7c0bb21ff6babd61befac70b62e3653424579d1bcc279fc0f8"
         },
         {
             "path": "data/library/content/sentences/particle-examples-1.json",
-            "sha256": "71f8e8d587072f041bb1b7a3a7a972d9823cd6c16c5668a066c98deeef1c5e15"
+            "sha256": "1edb659bcf521e1841eb2e473f1b4b2e8d6a1f819b5ed008287146f443e744c6"
         },
         {
             "path": "data/library/content/sentences/particle-examples-2.json",
-            "sha256": "c25c6b7753200abfd71722a58b452cc539ee5a3d41f3840975f8233d11805063"
+            "sha256": "b0f5d682c10b15ebd03947a061f01ca4a312e23fd25e7f07a640bdbe1aa59874"
         },
         {
             "path": "data/library/content/sentences/particle-examples-existing.json",
-            "sha256": "6f4821c8926703bab290a19891581959b1c50c503712de5144087a6f8fbaba79"
+            "sha256": "7fe0f90717864e516a38f43f709cb9ff759d6b84d8da8bc4964fcc395f45e5b7"
         },
         {
             "path": "data/library/content/words/common.json",
@@ -207,39 +215,43 @@
         },
         {
             "path": "data/library/content/words/expanded.json",
-            "sha256": "9467c0c5ca5d81c097f62c3acb0854a2c05fd9990cf79158ed1e28a6c6a3de80"
+            "sha256": "c35ead532cc1662d5ebd6fd426a91856abc496787f54b0590a4422a28d4c3649"
+        },
+        {
+            "path": "data/library/content/words/particle-example-readings.json",
+            "sha256": "3e4efec00b38ee18dead9b4c5c623bf6070bc7e4e7d380ca333ef67f9fb229d4"
         },
         {
             "path": "data/library/manifest.json",
-            "sha256": "8d8b397b31721fd5ab570e2fbe826aa0d0180e25d5af990e6ce3aa40db0859e8"
+            "sha256": "559e41471733a27ae9073058feaff0902be90f6d4fd0a9437117668ec2fc3119"
         },
         {
             "path": "data/library/schema.json",
-            "sha256": "882ad4c4bd5511c580d4e9a8ef1280ae8f11ccf6c50f2096c6a944557af22618"
+            "sha256": "966ccc44b6ac34385fd420276a9dd381415b4c9f66b5bdc158fb08b02ec1e4d4"
         },
         {
             "path": "docs/standard.de.md",
-            "sha256": "4caf11c872d5ad3255c5b2beb43eea1968e2257fc3ae94923e10a4c1b424b93e"
+            "sha256": "f68ff033b572af5f9efdb9a59f444c9dd7cb1608273cb3ffc3ae946577336169"
         },
         {
             "path": "docs/standard.en.md",
-            "sha256": "83621901e5662fa07960360650729e81c3a38892c4bc46819815e840f522edeb"
+            "sha256": "499a6c8012ea29af812a90c8c714b74bb69bd99e655de05a453be5a1d1728519"
         },
         {
             "path": "docs/standard.id.md",
-            "sha256": "4d304c160dc5df8ca120706e920498ffafe9be936bf1a8bcbaecdaf6f137f3b4"
+            "sha256": "0a39a4ad06e75cec09586a537c389fb71e94bbe37e5b03edb328af5806a748b3"
         },
         {
             "path": "docs/standard.ja.md",
-            "sha256": "f2ec94dceffb3249bac9022ff6ce2e0762bcdc304bd7ebddf92951487c76fc28"
+            "sha256": "7e6dcb67eb2bd438aaf6e5b5bceb11de1dc1fb0530db16e4273a79f6245cbb43"
         },
         {
             "path": "package-lock.json",
-            "sha256": "4a98009ab3797c63e46c4072e6df4261641a523fe4658562dd503630adbfd4d2"
+            "sha256": "8d19a82ca28fe81153ab23ee031d58fe7dda9abdd411572819ab5cb1501ed4cc"
         },
         {
             "path": "package.json",
-            "sha256": "c88736ef773ea09107d12b27536db35ae69448245ba1de360ebdd05b68359d0e"
+            "sha256": "83419a3b4d3d27bb1659973f169cc9064bf3d3caf3d217b1355090457844e71a"
         },
         {
             "path": "routes.json",
@@ -267,7 +279,7 @@
         },
         {
             "path": "tests/dataset-expansion.test.js",
-            "sha256": "e36d27972b23e396a53e0bcc30305705567f1574088c47453a9ef2b7d1b19f85"
+            "sha256": "5613441a2f363347df36c7ad0234e0198c271cbec8a70413dd86b9e22d15a8b0"
         },
         {
             "path": "tests/documentation-convention.test.js",

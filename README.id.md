@@ -144,3 +144,7 @@ Paket kini memuat lebih dari tiga puluh rekaman Kosakata sehari-hari tambahan, s
 ## Latihan Partikel Komprehensif
 
 Inventaris partikel kini berisi lebih dari enam puluh bentuk sederhana, majemuk, penghubung, pembatas, pendaftar, dan akhir kalimat. Setiap partikel tetap tersedia meskipun jarang digunakan dan dirujuk oleh setidaknya satu kalimat contoh berurutan agar relasinya dapat dipelajari dalam konteks.
+
+## Penelusuran contoh partikel
+
+Contoh partikel kini memakai Kosakata Kanji yang ditulis seperti `学校`. Karena itu, setiap kalimat membuka jalur lengkap Kalimat → Kosakata → Kanji → Kosakata bacaan tersembunyi → Kana atomik, bukan berhenti pada kosakata khusus Kana.

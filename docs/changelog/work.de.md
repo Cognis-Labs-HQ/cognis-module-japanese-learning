@@ -247,3 +247,9 @@ Mehr als dreißig alltägliche Wortschatzeinträge, zehn Partikeln und acht voll
 Der Bestand umfasst nun mehr als sechzig Kasus-, Binde-, Konjunktiv-, Aufzählungs-, Einschränkungs-, zusammengesetzte und satzabschließende Partikeln. Jede Partikel besitzt lokalisierte Funktionsdaten, eine geordnete Kana-Schreibweise und mindestens einen geordneten Beispielsatz.
 
 - [5921d4e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/5921d4eafc7a0f0a64fa59db2dec53ea259c1647)
+
+## Vollständige Navigationspfade für Partikeln
+
+Partikelbeispiele enthalten nun aus Kanji zusammengesetzten Wortschatz für Schule mit eigenen ausgeblendeten Lesungen, die 学校 aus geordneten atomaren Kana rekonstruieren. Dadurch kann jedes hinzugefügte Partikelbeispiel vom Satz über Wortschatz und Kanji bis zur genauen Kana-Lesung navigiert werden.
+
+- [0353386](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/03533863e162d223ac9a77782ec146668d5c154b)

@@ -247,3 +247,9 @@ Cognis PR #214 に合わせ、名前空間の所有権、ローカライズ済�
 格助詞、係助詞、接続助詞、列挙、限定、複合、終助詞を含む60件以上へ拡張しました。各助詞にローカライズ済み機能データ、順序付き仮名綴り、少なくとも1件の順序付き例文を収録しています。
 
 - [5921d4e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/5921d4eafc7a0f0a64fa59db2dec53ea259c1647)
+
+## 完全な助詞ナビゲーション経路
+
+助詞例文に、漢字で構成された学校の語彙と、学校を順序付きの原子的な仮名から再構成する専用の非表示読みを追加しました。これにより、追加されたすべての助詞例文を、文から語彙、漢字、正確な仮名読みまでたどれます。
+
+- [0353386](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/03533863e162d223ac9a77782ec146668d5c154b)

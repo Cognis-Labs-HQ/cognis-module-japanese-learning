@@ -1,0 +1,87 @@
+[
+    {
+        "id": "ja:word:reading-gakkou",
+        "label": "がっこう",
+        "fields": {
+            "jlpt_level": "N5",
+            "pronunciation": ["がっこう"]
+        },
+        "references": [
+            {
+                "entryId": "ja:char:ga",
+                "relation": "kana-spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:char:small-tsu",
+                "relation": "kana-spelling",
+                "position": 1
+            },
+            {
+                "entryId": "ja:char:ko",
+                "relation": "kana-spelling",
+                "position": 2
+            },
+            {
+                "entryId": "ja:char:u",
+                "relation": "kana-spelling",
+                "position": 3
+            },
+            {
+                "entryId": "ja:def:gakkou",
+                "relation": "definitions"
+            }
+        ],
+        "hidden": true
+    },
+    {
+        "id": "ja:word:reading-gaku",
+        "label": "がく",
+        "fields": {
+            "jlpt_level": "N5",
+            "pronunciation": ["がく"]
+        },
+        "references": [
+            {
+                "entryId": "ja:char:ga",
+                "relation": "kana-spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:char:ku",
+                "relation": "kana-spelling",
+                "position": 1
+            },
+            {
+                "entryId": "ja:def:kanji-gaku",
+                "relation": "definitions"
+            }
+        ],
+        "hidden": true
+    },
+    {
+        "id": "ja:word:reading-kou",
+        "label": "こう",
+        "fields": {
+            "jlpt_level": "N5",
+            "pronunciation": ["こう"]
+        },
+        "references": [
+            {
+                "entryId": "ja:char:ko",
+                "relation": "kana-spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:char:u",
+                "relation": "kana-spelling",
+                "position": 1
+            },
+            {
+                "entryId": "ja:def:kanji-kou",
+                "relation": "definitions"
+            }
+        ],
+        "hidden": true
+    }
+]

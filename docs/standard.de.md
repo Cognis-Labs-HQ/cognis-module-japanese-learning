@@ -141,3 +141,7 @@ Mehrere Definitionsverweise werden nur verwendet, wenn ein einzelner lexikalisch
 ## Umfassende Partikelübungen
 
 Eine gültige Partikel wird nicht entfernt, nur weil aktuelle Lektionen sie sonst nicht verwenden. Jede paketierte Partikel benötigt lokalisierte Funktionsmetadaten, eine geordnete Kana-Schreibweise und mindestens einen geordneten Beispielsatzverweis.
+
+## Navigation durch Partikelbeispiele
+
+Jedes Partikelbeispiel muss Wortschatz enthalten, der sich über Kanji zusammensetzt. Jedes referenzierte Kanji muss auf einen vollständigen ausgeblendeten Lesewortschatz verweisen, und diese Lesung muss sich aus geordneten atomaren Kana rekonstruieren.

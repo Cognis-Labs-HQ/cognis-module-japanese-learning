@@ -477,31 +477,26 @@
     },
     {
         "id": "ja:word:gakkou",
-        "label": "がっこう",
+        "label": "学校",
         "fields": {
             "jlpt_level": "N5",
             "pronunciation": ["がっこう"]
         },
         "references": [
             {
-                "entryId": "ja:char:ga",
-                "relation": "kana-spelling",
+                "entryId": "ja:kanji:gaku",
+                "relation": "spelling",
                 "position": 0
             },
             {
-                "entryId": "ja:char:small-tsu",
-                "relation": "kana-spelling",
+                "entryId": "ja:kanji:kou",
+                "relation": "spelling",
                 "position": 1
             },
             {
-                "entryId": "ja:char:ko",
-                "relation": "kana-spelling",
-                "position": 2
-            },
-            {
-                "entryId": "ja:char:u",
-                "relation": "kana-spelling",
-                "position": 3
+                "entryId": "ja:word:reading-gakkou",
+                "relation": "pronunciation-readings",
+                "position": 0
             },
             {
                 "entryId": "ja:def:gakkou",

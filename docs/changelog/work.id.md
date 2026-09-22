@@ -247,3 +247,9 @@ Lebih dari tiga puluh rekaman Kosakata sehari-hari, sepuluh partikel, dan delapa
 Paket kini memuat lebih dari enam puluh partikel kasus, pengikat, penghubung, pendaftar, pembatas, majemuk, dan akhir kalimat. Setiap partikel memiliki data fungsi terlokalkan, ejaan Kana berurutan, dan setidaknya satu kalimat contoh berurutan.
 
 - [5921d4e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/5921d4eafc7a0f0a64fa59db2dec53ea259c1647)
+
+## Jalur Navigasi Partikel Lengkap
+
+Contoh partikel kini memuat Kosakata sekolah yang tersusun dari Kanji, dengan bacaan tersembunyi khusus yang menyusun kembali 学校 dari Kana atomik berurutan. Karena itu, setiap contoh partikel tambahan dapat ditelusuri dari Kalimat melalui Kosakata dan Kanji hingga bacaan Kana yang tepat.
+
+- [0353386](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/03533863e162d223ac9a77782ec146668d5c154b)

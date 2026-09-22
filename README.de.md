@@ -144,3 +144,7 @@ Das Paket enthält nun mehr als dreißig zusätzliche alltägliche Wortschatzein
 ## Umfassende Partikelübungen
 
 Der Partikelbestand umfasst nun mehr als sechzig einfache, zusammengesetzte, verbindende, einschränkende, aufzählende und satzabschließende Formen. Jede Partikel bleibt auch bei seltener Verwendung verfügbar und wird von mindestens einem geordneten Beispielsatz referenziert, damit ihre Beziehungen im Kontext erkundet werden können.
+
+## Navigation durch Partikelbeispiele
+
+Partikelbeispiele verwenden nun verfassten Kanji-Wortschatz wie `学校`. Jeder Satz öffnet dadurch einen vollständigen Pfad Satz → Wortschatz → Kanji → ausgeblendeter Lesewortschatz → atomares Kana, statt bei reinem Kana-Wortschatz zu enden.
