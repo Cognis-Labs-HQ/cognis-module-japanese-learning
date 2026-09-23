@@ -259,3 +259,9 @@ Setiap rekaman Kosakata inti yang terlihat kini menggunakan bentuk Kanji konvens
 Rekaman penyedia telah diselaraskan dengan kontrak paket eksternal Study Library terbaru. Definisi secara eksplisit disembunyikan dengan kelas khusus host `definition`, kalimat memakai kelas `composite`, dan partikel memakai kelas `particle` dengan `editable: false`. Pengujian kontrak memverifikasi nilai yang dinormalisasi ini sebelum pemasukan agar rekaman terpasang dan hash penyedia tetap konsisten.
 
 - [e74c036](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/e74c0362e8a1fb9e15bdc58b80c2e1c7eb0d07f3)
+
+## Komposisi Bacaan Infleksional yang Benar
+
+Bacaan lengkap tersembunyi kini menggunakan relasi khusus komposisi `reading-kana` untuk akhiran Kana nonleksikal, bukan menyalahgunakan `kana-spelling` parsial sebagai pelafalan alternatif. Bacaan `なおす` menyusun `なお` yang bermakna melalui Kosakata bacaan `直` tersembunyi dan menautkan akhiran tunggal `す` langsung ke Kana atomik, sehingga kartu tidak lagi menampilkan hanya bagian akhir sebagai pelafalan.
+
+- [1bb8457](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/1bb84576d96472bba37b33163a9fbc3b292954ab)

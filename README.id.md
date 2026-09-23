@@ -148,3 +148,7 @@ Inti ringkas kini menggunakan ejaan Kanji konvensional secara menyeluruh. Kalima
 ## Kontrol rekaman terbaru PR 226
 
 Data penyedia kini sesuai dengan kontrak normalisasi Study Library terbaru: definisi merupakan rekaman `definition` tersembunyi, kalimat merupakan rekaman `composite`, dan partikel merupakan rekaman `particle` yang tidak dapat diubah dengan `editable: false`. Kelas leksikal dan bacaan tetap netral terhadap penyedia dan ber-namespace.
+
+## Komposisi Kana infleksional
+
+Bacaan lengkap tersembunyi kini membedakan segmen bacaan bermakna dari akhiran Kana nonleksikal. `なおす` menyusun `なお` melalui Kosakata bacaan `直` tersembunyi dan menautkan `す` langsung ke Kana atomik melalui relasi khusus komposisi `reading-kana`, sehingga akhiran parsial tidak tampil sebagai pelafalan alternatif kartu.

@@ -1,6 +1,6 @@
 {
     "id": "japanese-core",
-    "version": 42,
+    "version": 43,
     "namespace": "ja",
     "language": "ja",
     "metadata": {
@@ -632,6 +632,23 @@
                     "ordered": true,
                     "onDelete": "restrict",
                     "resolverRole": "grapheme",
+                    "presentationRole": "composition"
+                },
+                {
+                    "id": "reading-kana",
+                    "targetLayer": "characters",
+                    "metadata": {
+                        "labels": {
+                            "de": "Kana-Lesungsbestandteil",
+                            "en": "Reading Kana",
+                            "id": "Kana Bacaan",
+                            "ja": "読みかな"
+                        }
+                    },
+                    "minimum": 0,
+                    "ordered": true,
+                    "onDelete": "restrict",
+                    "resolverRole": "explicit",
                     "presentationRole": "composition"
                 },
                 {

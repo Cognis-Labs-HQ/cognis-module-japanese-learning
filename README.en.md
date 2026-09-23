@@ -148,3 +148,7 @@ The compact core now uses conventional Kanji spellings throughout. Sentences ref
 ## Latest PR 226 record controls
 
 The provider data now matches the latest Study Library normalization contract: definitions are hidden `definition` records, sentences are `composite` records, and particles are immutable `particle` records with `editable: false`. Lexical and reading classes remain provider-neutral and namespaced.
+
+## Inflectional Kana composition
+
+Hidden complete readings now distinguish meaningful reading segments from non-lexical Kana suffixes. `なおす` composes `なお` through the hidden `直` reading Vocabulary and links `す` directly to atomic Kana through the composition-only `reading-kana` relationship, preventing a partial suffix from appearing as the card's alternate pronunciation.

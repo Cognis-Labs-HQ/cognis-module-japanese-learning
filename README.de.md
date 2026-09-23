@@ -148,3 +148,7 @@ Der kompakte Kern verwendet nun durchgehend die üblichen Kanji-Schreibweisen. S
 ## Neueste Datensatzsteuerung aus PR 226
 
 Die Anbieterdaten entsprechen nun dem neuesten Normalisierungsvertrag der Study Library: Definitionen sind ausgeblendete `definition`-Datensätze, Sätze sind `composite`-Datensätze und Partikeln sind unveränderliche `particle`-Datensätze mit `editable: false`. Lexikalische und Lesungsklassen bleiben anbieterneutral und namensraumgebunden.
+
+## Zusammensetzung flektierender Kana
+
+Vollständige verborgene Lesungen unterscheiden nun bedeutungstragende Lesungsabschnitte von nichtlexikalischen Kana-Endungen. `なおす` setzt `なお` über das verborgene Lesungswort für `直` zusammen und verknüpft `す` über die reine Kompositionsbeziehung `reading-kana` direkt mit dem atomaren Kana. Dadurch erscheint eine Teilendung nicht mehr als alternative Aussprache der Karte.

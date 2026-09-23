@@ -259,3 +259,9 @@ Jeder sichtbare Wortschatzeintrag des Kernbestands verwendet nun seine übliche 
 Die Anbieter-Datensätze wurden an den neuesten Vertrag für externe Pakete der Study Library angepasst. Definitionen sind ausdrücklich ausgeblendet und verwenden die hostreservierte Klasse `definition`, Sätze verwenden `composite` und Partikeln verwenden `particle` mit `editable: false`. Vertragstests prüfen diese normalisierten Werte vor der Aufnahme, damit installierte Datensätze und Anbieter-Hashes übereinstimmen.
 
 - [e74c036](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/e74c0362e8a1fb9e15bdc58b80c2e1c7eb0d07f3)
+
+## Korrekte Zusammensetzung flektierter Lesungen
+
+Vollständige verborgene Lesungen verwenden nun für nichtlexikalische Kana-Endungen die reine Kompositionsbeziehung `reading-kana`, statt ein unvollständiges `kana-spelling` als alternative Aussprache zu missbrauchen. Die Lesung `なおす` setzt das bedeutungstragende `なお` über das verborgene Lesungswort von `直` zusammen und verknüpft die einzelne Endung `す` direkt mit atomarem Kana. Die Karte zeigt daher nicht mehr nur die zweite Hälfte als Aussprache.
+
+- [1bb8457](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/1bb84576d96472bba37b33163a9fbc3b292954ab)

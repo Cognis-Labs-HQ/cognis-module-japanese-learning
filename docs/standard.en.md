@@ -145,3 +145,7 @@ Every conventional lexical form in the core uses Kanji. A sentence references vi
 ## Host-normalized record controls
 
 Match the installed Library contract before publishing: definition records are always hidden and use `class: "definition"`; ordered lexical sequences use `class: "composite"`; particles use `class: "particle"` and `editable: false`. Tests must verify these exact values so provider hashes and installed records agree after host normalization.
+
+## Inflectional reading composition
+
+Use `word-spelling` for a meaningful multi-Kana reading segment and `reading-kana` for each remaining single-Kana inflectional suffix, sharing contiguous positions. `reading-kana` is a composition relationship; never use partial `kana-spelling`, because that role represents a complete alternate spelling and otherwise renders the suffix as a misleading standalone pronunciation.

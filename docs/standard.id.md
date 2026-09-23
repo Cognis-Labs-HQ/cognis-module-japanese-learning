@@ -145,3 +145,7 @@ Setiap bentuk leksikal konvensional dalam inti menggunakan Kanji. Kalimat hanya 
 ## Kontrol rekaman yang dinormalisasi host
 
 Penuhi kontrak Library yang terpasang sebelum menerbitkan: rekaman definisi selalu tersembunyi dan memakai `class: "definition"`; urutan leksikal teratur memakai `class: "composite"`; partikel memakai `class: "particle"` dan `editable: false`. Pengujian harus memverifikasi nilai persis ini agar hash penyedia dan rekaman terpasang tetap sama setelah normalisasi host.
+
+## Komposisi bacaan infleksional
+
+Gunakan `word-spelling` untuk segmen bacaan multi-Kana yang bermakna dan `reading-kana` untuk setiap Kana tunggal yang tersisa sebagai akhiran infleksional, dengan posisi berurutan tanpa celah. `reading-kana` adalah relasi komposisi; jangan pernah memakai `kana-spelling` parsial karena peran tersebut mewakili ejaan alternatif lengkap dan akan menampilkan akhiran secara menyesatkan sebagai pelafalan tersendiri.

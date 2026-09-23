@@ -128,7 +128,7 @@ function validateLayerLinks(records) {
             } else {
                 assertOrderedComposition(
                     record,
-                    new Set(["word-spelling", "kana-spelling"]),
+                    new Set(["word-spelling", "reading-kana", "kana-spelling"]),
                     record.fields.pronunciation[0],
                     recordsById,
                 );
@@ -281,6 +281,29 @@ test("visible core vocabulary uses Kanji without skipping reading layers", () =>
         );
         assert.ok(readings.every(({ hidden }) => hidden === true));
     }
+});
+
+test("inflected readings compose meaningful stems and atomic Kana suffixes", () => {
+    const records = loadRecords();
+    const recordsById = new Map(records.map((record) => [record.id, record]));
+    const reading = recordsById.get("ja:word:reading-naosu");
+    const composition = orderedReferences(
+        reading,
+        new Set(["word-spelling", "reading-kana"]),
+    ).map(({ entryId, relation }) => ({
+        label: recordsById.get(entryId).label,
+        relation,
+    }));
+
+    assert.deepEqual(composition, [
+        { label: "なお", relation: "word-spelling" },
+        { label: "す", relation: "reading-kana" },
+    ]);
+    assert.equal(
+        reading.references.some(({ relation }) => relation === "kana-spelling"),
+        false,
+        "a partial Kana suffix must not masquerade as a complete alternate spelling",
+    );
 });
 
 test("layer checks reject content whose required links are removed", () => {

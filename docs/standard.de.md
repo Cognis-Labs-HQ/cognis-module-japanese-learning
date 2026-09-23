@@ -145,3 +145,7 @@ Jede konventionelle lexikalische Form im Kern verwendet Kanji. Ein Satz verweist
 ## Vom Host normalisierte Datensatzsteuerung
 
 Vor der Veröffentlichung muss der installierte Library-Vertrag erfüllt sein: Definitionsdatensätze sind stets ausgeblendet und verwenden `class: "definition"`; geordnete lexikalische Sequenzen verwenden `class: "composite"`; Partikeln verwenden `class: "particle"` und `editable: false`. Tests müssen diese Werte exakt prüfen, damit Anbieter-Hashes und installierte Datensätze nach der Host-Normalisierung übereinstimmen.
+
+## Zusammensetzung flektierter Lesungen
+
+Verwenden Sie `word-spelling` für einen bedeutungstragenden mehrteiligen Kana-Lesungsabschnitt und `reading-kana` für jedes verbleibende einzelne Kana einer Flexionsendung mit lückenlosen Positionen. `reading-kana` ist eine Kompositionsbeziehung; verwenden Sie niemals ein unvollständiges `kana-spelling`, da diese Rolle eine vollständige alternative Schreibweise darstellt und die Endung sonst irreführend als eigenständige Aussprache rendert.

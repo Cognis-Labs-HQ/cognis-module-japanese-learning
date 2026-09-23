@@ -259,3 +259,9 @@ Cognis PR #214 に合わせ、名前空間の所有権、ローカライズ済�
 プロバイダーレコードを最新の Study Library 外部パッケージ契約へ合わせました。定義はホスト予約クラス `definition` を使用して明示的に非表示となり、文は `composite`、助詞は `editable: false` を伴う `particle` クラスを使用します。インストール済みレコードとプロバイダーハッシュの整合性を保つため、取り込み前に契約テストでこれらの正規化値を検証します。
 
 - [e74c036](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/e74c0362e8a1fb9e15bdc58b80c2e1c7eb0d07f3)
+
+## 活用読み構成の修正
+
+完全な非表示読みでは、非語彙的なかな接尾部に構成専用の `reading-kana` 関係を使用し、部分的な `kana-spelling` を代替発音として誤用しないようにしました。`なおす` の読みは、意味を持つ `なお` を非表示の `直` 読み語彙から構成し、単一の接尾部 `す` を原子的なかなへ直接リンクします。そのため、カードで後半だけが発音として表示されることはありません。
+
+- [1bb8457](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/1bb84576d96472bba37b33163a9fbc3b292954ab)

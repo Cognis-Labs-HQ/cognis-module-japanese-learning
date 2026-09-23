@@ -259,3 +259,9 @@ Every visible core Vocabulary record now uses its conventional Kanji form and co
 Aligned provider records with the latest Study Library external-package contract. Definitions are explicitly hidden with the host-reserved `definition` class, sentences use the `composite` class, and particles use the `particle` class with `editable: false`. Contract tests verify these normalized values before ingestion so installed records and provider hashes remain consistent.
 
 - [e74c036](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/e74c0362e8a1fb9e15bdc58b80c2e1c7eb0d07f3)
+
+## Correct Inflectional Reading Composition
+
+Hidden complete readings now use the composition-only `reading-kana` relationship for non-lexical Kana suffixes instead of misusing partial `kana-spelling` as an alternate pronunciation. The `なおす` reading composes meaningful `なお` through the hidden `直` reading Vocabulary and links its single `す` suffix directly to atomic Kana, so the card no longer presents only the latter half as a pronunciation.
+
+- [1bb8457](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/1bb84576d96472bba37b33163a9fbc3b292954ab)
