@@ -277,3 +277,9 @@ Das Anbieterpaket ist nun gemäß dem neuesten Bibliotheksvertrag geschützt. Le
 Das japanische Anbieterpaket veröffentlicht nun validierte Katalogmetadaten, bewahrt Anbieterbesitz-Metadaten beim Bootstrap und kennzeichnet Felder für Schriftsystem und JLPT ausdrücklich als Lernfilter. Schema-Revision 40 und Modulversion 2.2.5 übernehmen den Vertrag für externe Pakete und behalten geschützte Inhalte sowie integrierte validierte Feldtypen bei.
 
 - [1a38b26](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/1a38b267037f144157fcd20ed575edf3af0b1452)
+
+## Vielfältiger Kanji-basierter Lernkorpus
+
+Sichtbarer Wortschatz verwendet nun überall dort übliche Kanji-haltige Formen, wo sie angemessen sind, mit vollständigen ausgeblendeten Lesungen bis zu atomaren Kana. Der Korpus aus 51 Partikelsätzen wurde mit abwechslungsreichen Inhalten zu Menschen, Tieren, Wetter, Essen, Reisen, Lesen, Musik, Zeit und Arbeit neu verfasst; weniger als ein Fünftel nutzt Schulwortschatz, und keine zwei Partikelsätze teilen dieselbe Bezeichnung.
+
+- [2673d35](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/2673d35913bd7534b4dc9aed468280dc598b4c88)

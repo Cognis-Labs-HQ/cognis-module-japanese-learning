@@ -160,3 +160,7 @@ Anbieterinhalte sind nun vor benutzereigenen Verschiebungen und Löschungen gesc
 ## Paketvertrag aus Cognis PR 226
 
 Das Paket veröffentlicht nun validierte JSON-kompatible Katalogmetadaten und ausdrücklich filterbare Felder für Schriftsystem und JLPT gemäß dem Vertrag für externe Pakete aus Cognis PR #226. Es verwendet weiterhin integrierte Feldtypen und geschützten Anbieterbesitz; Schema-Revision `40` bleibt unabhängig von Modulversion `2.2.5`.
+
+## Abwechslungsreiche Kanji-basierte Lerninhalte
+
+Sichtbarer Wortschatz verwendet nun die übliche japanische Schreibweise wie `私`, `水`, `電車`, `先生`, `食べる` und `行く`, während vollständige ausgeblendete Lesungen den Kana-Pfad erhalten. Die Partikelsammlung besteht nun aus 51 unterschiedlichen natürlichen Konstruktionen zu Menschen, Tieren, Wetter, Essen, Reisen, Lesen, Musik, Zeit und Arbeit, statt Partikeln wiederholt um `学校` auszutauschen.

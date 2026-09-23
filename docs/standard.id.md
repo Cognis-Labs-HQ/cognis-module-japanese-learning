@@ -157,3 +157,7 @@ Tetapkan `protected: true` pada manifest konten penyedia. Untuk setiap kalimat, 
 ## Kontrak paket eksternal dari PR 226
 
 Metadata manifest dan skema hanya boleh memuat nilai terbatas yang kompatibel dengan JSON dan harus bertahan tanpa perubahan saat melewati Pustaka. Utamakan tipe bidang bawaan; setiap tipe ekstensi memerlukan aturan validasi deklaratif. Gunakan tipe media daftar untuk beberapa aset, dan tetapkan `detail.filterable: true` hanya saat bidang non-lencana perlu menjadi filter pelajar. Revisi skema dan versi semantik modul tetap terpisah.
+
+## Kosakata berbasis Kanji dan keragaman korpus
+
+Gunakan bentuk lazim yang memuat Kanji sebagai label utama kosakata terlihat bila bentuk itu tersedia; rekaman kosakata seluruhnya Kana hanya untuk ejaan Kana yang lazim dan bacaan lengkap tersembunyi. Tinjau penambahan konten besar sebagai satu korpus: wajib ada variasi nomina, verba, topik, dan struktur kalimat, serta tolak substitusi berulang di sekitar satu kata jangkar meskipun setiap relasi lolos validasi.

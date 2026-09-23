@@ -1,21 +1,21 @@
 [
     {
         "id": "ja:sentence:particle-kedo",
-        "label": "学校だけど",
+        "label": "小さいけど強い",
         "references": [
             {
-                "entryId": "ja:word:gakkou",
+                "entryId": "ja:word:chiisai",
                 "relation": "words",
                 "position": 0
             },
             {
-                "entryId": "ja:word:grammar-da-copula",
-                "relation": "words",
+                "entryId": "ja:particle:kedo",
+                "relation": "particles",
                 "position": 1
             },
             {
-                "entryId": "ja:particle:kedo",
-                "relation": "particles",
+                "entryId": "ja:word:tsuyoi",
+                "relation": "words",
                 "position": 2
             },
             {
@@ -24,26 +24,26 @@
             }
         ],
         "fields": {
-            "pronunciation": ["がっこうだけど"]
+            "pronunciation": ["ちいさいけどつよい"]
         }
     },
     {
         "id": "ja:sentence:particle-keredo",
-        "label": "学校だけれど",
+        "label": "難しいけれど好き",
         "references": [
             {
-                "entryId": "ja:word:gakkou",
+                "entryId": "ja:word:muzukashii",
                 "relation": "words",
                 "position": 0
             },
             {
-                "entryId": "ja:word:grammar-da-copula",
-                "relation": "words",
+                "entryId": "ja:particle:keredo",
+                "relation": "particles",
                 "position": 1
             },
             {
-                "entryId": "ja:particle:keredo",
-                "relation": "particles",
+                "entryId": "ja:word:suki",
+                "relation": "words",
                 "position": 2
             },
             {
@@ -52,32 +52,27 @@
             }
         ],
         "fields": {
-            "pronunciation": ["がっこうだけれど"]
+            "pronunciation": ["むずかしいけれどすき"]
         }
     },
     {
         "id": "ja:sentence:particle-shi",
-        "label": "学校だし好き",
+        "label": "大きいし強い",
         "references": [
             {
-                "entryId": "ja:word:gakkou",
+                "entryId": "ja:word:ookii",
                 "relation": "words",
                 "position": 0
             },
             {
-                "entryId": "ja:word:grammar-da-copula",
-                "relation": "words",
+                "entryId": "ja:particle:shi",
+                "relation": "particles",
                 "position": 1
             },
             {
-                "entryId": "ja:particle:shi",
-                "relation": "particles",
-                "position": 2
-            },
-            {
-                "entryId": "ja:word:suki",
+                "entryId": "ja:word:tsuyoi",
                 "relation": "words",
-                "position": 3
+                "position": 2
             },
             {
                 "entryId": "ja:def:sentence-particle-shi",
@@ -85,30 +80,30 @@
             }
         ],
         "fields": {
-            "pronunciation": ["がっこうだしすき"]
+            "pronunciation": ["おおきいしつよい"]
         }
     },
     {
         "id": "ja:sentence:particle-tari",
-        "label": "学校にいったり",
+        "label": "食べたり飲んだり",
         "references": [
             {
-                "entryId": "ja:word:gakkou",
+                "entryId": "ja:word:tabe-stem",
                 "relation": "words",
                 "position": 0
             },
             {
-                "entryId": "ja:particle:ni",
+                "entryId": "ja:particle:tari",
                 "relation": "particles",
                 "position": 1
             },
             {
-                "entryId": "ja:word:grammar-it-stem",
+                "entryId": "ja:word:non-stem",
                 "relation": "words",
                 "position": 2
             },
             {
-                "entryId": "ja:particle:tari",
+                "entryId": "ja:particle:dari",
                 "relation": "particles",
                 "position": 3
             },
@@ -118,32 +113,27 @@
             }
         ],
         "fields": {
-            "pronunciation": ["がっこうにいったり"]
+            "pronunciation": ["たべたりのんだり"]
         }
     },
     {
         "id": "ja:sentence:particle-tsutsu",
-        "label": "学校にいきつつ",
+        "label": "考えつつ歩く",
         "references": [
             {
-                "entryId": "ja:word:gakkou",
+                "entryId": "ja:word:kangae",
                 "relation": "words",
                 "position": 0
             },
             {
-                "entryId": "ja:particle:ni",
+                "entryId": "ja:particle:tsutsu",
                 "relation": "particles",
                 "position": 1
             },
             {
-                "entryId": "ja:word:grammar-iki-stem",
+                "entryId": "ja:word:aruku",
                 "relation": "words",
                 "position": 2
-            },
-            {
-                "entryId": "ja:particle:tsutsu",
-                "relation": "particles",
-                "position": 3
             },
             {
                 "entryId": "ja:def:sentence-particle-tsutsu",
@@ -151,25 +141,25 @@
             }
         ],
         "fields": {
-            "pronunciation": ["がっこうにいきつつ"]
+            "pronunciation": ["かんがえつつあるく"]
         }
     },
     {
         "id": "ja:sentence:particle-nagara",
-        "label": "学校にいきながら",
+        "label": "音楽を聞きながら歩く",
         "references": [
             {
-                "entryId": "ja:word:gakkou",
+                "entryId": "ja:word:ongaku",
                 "relation": "words",
                 "position": 0
             },
             {
-                "entryId": "ja:particle:ni",
+                "entryId": "ja:particle:wo",
                 "relation": "particles",
                 "position": 1
             },
             {
-                "entryId": "ja:word:grammar-iki-stem",
+                "entryId": "ja:word:kiki-stem",
                 "relation": "words",
                 "position": 2
             },
@@ -179,17 +169,22 @@
                 "position": 3
             },
             {
+                "entryId": "ja:word:aruku",
+                "relation": "words",
+                "position": 4
+            },
+            {
                 "entryId": "ja:def:sentence-particle-nagara",
                 "relation": "definitions"
             }
         ],
         "fields": {
-            "pronunciation": ["がっこうにいきながら"]
+            "pronunciation": ["おんがくをききながらあるく"]
         }
     },
     {
         "id": "ja:sentence:particle-temo",
-        "label": "学校にいっても",
+        "label": "学校へ行ってもいい",
         "references": [
             {
                 "entryId": "ja:word:gakkou",
@@ -197,7 +192,7 @@
                 "position": 0
             },
             {
-                "entryId": "ja:particle:ni",
+                "entryId": "ja:particle:e",
                 "relation": "particles",
                 "position": 1
             },
@@ -212,17 +207,22 @@
                 "position": 3
             },
             {
+                "entryId": "ja:word:ii",
+                "relation": "words",
+                "position": 4
+            },
+            {
                 "entryId": "ja:def:sentence-particle-temo",
                 "relation": "definitions"
             }
         ],
         "fields": {
-            "pronunciation": ["がっこうにいっても"]
+            "pronunciation": ["がっこうへいってもいい"]
         }
     },
     {
         "id": "ja:sentence:particle-te",
-        "label": "学校にいって",
+        "label": "学校へ行って学ぶ",
         "references": [
             {
                 "entryId": "ja:word:gakkou",
@@ -230,7 +230,7 @@
                 "position": 0
             },
             {
-                "entryId": "ja:particle:ni",
+                "entryId": "ja:particle:e",
                 "relation": "particles",
                 "position": 1
             },
@@ -245,32 +245,47 @@
                 "position": 3
             },
             {
+                "entryId": "ja:word:manabu",
+                "relation": "words",
+                "position": 4
+            },
+            {
                 "entryId": "ja:def:sentence-particle-te",
                 "relation": "definitions"
             }
         ],
         "fields": {
-            "pronunciation": ["がっこうにいって"]
+            "pronunciation": ["がっこうへいってまなぶ"]
         }
     },
     {
         "id": "ja:sentence:particle-de-conj",
-        "label": "学校で日本語",
+        "label": "本を読んで寝る",
         "references": [
             {
-                "entryId": "ja:word:gakkou",
+                "entryId": "ja:word:hon",
                 "relation": "words",
                 "position": 0
             },
             {
-                "entryId": "ja:particle:de-conj",
+                "entryId": "ja:particle:wo",
                 "relation": "particles",
                 "position": 1
             },
             {
-                "entryId": "ja:word:nihongo",
+                "entryId": "ja:word:yon-stem",
                 "relation": "words",
                 "position": 2
+            },
+            {
+                "entryId": "ja:particle:de-conj",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:neru",
+                "relation": "words",
+                "position": 4
             },
             {
                 "entryId": "ja:def:sentence-particle-de-conj",
@@ -278,15 +293,15 @@
             }
         ],
         "fields": {
-            "pronunciation": ["がっこうでにほんご"]
+            "pronunciation": ["ほんをよんでねる"]
         }
     },
     {
         "id": "ja:sentence:particle-ya",
-        "label": "日本語や学校",
+        "label": "猫や犬が好き",
         "references": [
             {
-                "entryId": "ja:word:nihongo",
+                "entryId": "ja:word:neko",
                 "relation": "words",
                 "position": 0
             },
@@ -296,9 +311,19 @@
                 "position": 1
             },
             {
-                "entryId": "ja:word:gakkou",
+                "entryId": "ja:word:inu",
                 "relation": "words",
                 "position": 2
+            },
+            {
+                "entryId": "ja:particle:ga",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:suki",
+                "relation": "words",
+                "position": 4
             },
             {
                 "entryId": "ja:def:sentence-particle-ya",
@@ -306,15 +331,15 @@
             }
         ],
         "fields": {
-            "pronunciation": ["にほんごやがっこう"]
+            "pronunciation": ["ねこやいぬがすき"]
         }
     },
     {
         "id": "ja:sentence:particle-yara",
-        "label": "日本語やら学校",
+        "label": "本やら紙やら",
         "references": [
             {
-                "entryId": "ja:word:nihongo",
+                "entryId": "ja:word:hon",
                 "relation": "words",
                 "position": 0
             },
@@ -324,9 +349,14 @@
                 "position": 1
             },
             {
-                "entryId": "ja:word:gakkou",
+                "entryId": "ja:word:kami-paper",
                 "relation": "words",
                 "position": 2
+            },
+            {
+                "entryId": "ja:particle:yara",
+                "relation": "particles",
+                "position": 3
             },
             {
                 "entryId": "ja:def:sentence-particle-yara",
@@ -334,15 +364,15 @@
             }
         ],
         "fields": {
-            "pronunciation": ["にほんごやらがっこう"]
+            "pronunciation": ["ほんやらかみやら"]
         }
     },
     {
         "id": "ja:sentence:particle-toka",
-        "label": "日本語とか学校",
+        "label": "猫とか犬が好き",
         "references": [
             {
-                "entryId": "ja:word:nihongo",
+                "entryId": "ja:word:neko",
                 "relation": "words",
                 "position": 0
             },
@@ -352,9 +382,19 @@
                 "position": 1
             },
             {
-                "entryId": "ja:word:gakkou",
+                "entryId": "ja:word:inu",
                 "relation": "words",
                 "position": 2
+            },
+            {
+                "entryId": "ja:particle:ga",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:suki",
+                "relation": "words",
+                "position": 4
             },
             {
                 "entryId": "ja:def:sentence-particle-toka",
@@ -362,15 +402,15 @@
             }
         ],
         "fields": {
-            "pronunciation": ["にほんごとかがっこう"]
+            "pronunciation": ["ねことかいぬがすき"]
         }
     },
     {
         "id": "ja:sentence:particle-nari",
-        "label": "日本語なり",
+        "label": "水なりお茶なり飲む",
         "references": [
             {
-                "entryId": "ja:word:nihongo",
+                "entryId": "ja:word:mizu",
                 "relation": "words",
                 "position": 0
             },
@@ -380,27 +420,52 @@
                 "position": 1
             },
             {
+                "entryId": "ja:word:ocha",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:nari",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:nomu",
+                "relation": "words",
+                "position": 4
+            },
+            {
                 "entryId": "ja:def:sentence-particle-nari",
                 "relation": "definitions"
             }
         ],
         "fields": {
-            "pronunciation": ["にほんごなり"]
+            "pronunciation": ["みずなりおちゃなりのむ"]
         }
     },
     {
         "id": "ja:sentence:particle-kashira",
-        "label": "学校かしら",
+        "label": "明日は雨かしら",
         "references": [
             {
-                "entryId": "ja:word:gakkou",
+                "entryId": "ja:word:ashita",
                 "relation": "words",
                 "position": 0
             },
             {
-                "entryId": "ja:particle:kashira",
+                "entryId": "ja:particle:wa",
                 "relation": "particles",
                 "position": 1
+            },
+            {
+                "entryId": "ja:word:ame-rain",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:kashira",
+                "relation": "particles",
+                "position": 3
             },
             {
                 "entryId": "ja:def:sentence-particle-kashira",
@@ -408,15 +473,15 @@
             }
         ],
         "fields": {
-            "pronunciation": ["がっこうかしら"]
+            "pronunciation": ["あしたはあめかしら"]
         }
     },
     {
         "id": "ja:sentence:particle-mono",
-        "label": "学校だもの",
+        "label": "子供だもの",
         "references": [
             {
-                "entryId": "ja:word:gakkou",
+                "entryId": "ja:word:kodomo",
                 "relation": "words",
                 "position": 0
             },
@@ -436,12 +501,12 @@
             }
         ],
         "fields": {
-            "pronunciation": ["がっこうだもの"]
+            "pronunciation": ["こどもだもの"]
         }
     },
     {
         "id": "ja:sentence:particle-monono",
-        "label": "学校であるもののおおきい",
+        "label": "学校へ行ったものの間に合わない",
         "references": [
             {
                 "entryId": "ja:word:gakkou",
@@ -449,19 +514,24 @@
                 "position": 0
             },
             {
-                "entryId": "ja:word:grammar-dearu",
-                "relation": "words",
+                "entryId": "ja:particle:e",
+                "relation": "particles",
                 "position": 1
+            },
+            {
+                "entryId": "ja:word:itta",
+                "relation": "words",
+                "position": 2
             },
             {
                 "entryId": "ja:particle:monono",
                 "relation": "particles",
-                "position": 2
+                "position": 3
             },
             {
-                "entryId": "ja:word:ookii",
+                "entryId": "ja:word:maniawanai",
                 "relation": "words",
-                "position": 3
+                "position": 4
             },
             {
                 "entryId": "ja:def:sentence-particle-monono",
@@ -469,27 +539,32 @@
             }
         ],
         "fields": {
-            "pronunciation": ["がっこうであるもののおおきい"]
+            "pronunciation": ["がっこうへいったもののまにあわない"]
         }
     },
     {
         "id": "ja:sentence:particle-tokorode",
-        "label": "学校ところで日本語",
+        "label": "ところで先生は来る",
         "references": [
-            {
-                "entryId": "ja:word:gakkou",
-                "relation": "words",
-                "position": 0
-            },
             {
                 "entryId": "ja:particle:tokorode",
                 "relation": "particles",
+                "position": 0
+            },
+            {
+                "entryId": "ja:word:sensei",
+                "relation": "words",
                 "position": 1
             },
             {
-                "entryId": "ja:word:nihongo",
-                "relation": "words",
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
                 "position": 2
+            },
+            {
+                "entryId": "ja:word:kuru",
+                "relation": "words",
+                "position": 3
             },
             {
                 "entryId": "ja:def:sentence-particle-tokorode",
@@ -497,15 +572,15 @@
             }
         ],
         "fields": {
-            "pronunciation": ["がっこうところでにほんご"]
+            "pronunciation": ["ところでせんせいはくる"]
         }
     },
     {
         "id": "ja:sentence:particle-nitsuite",
-        "label": "日本語について",
+        "label": "日本について話す",
         "references": [
             {
-                "entryId": "ja:word:nihongo",
+                "entryId": "ja:word:nihon",
                 "relation": "words",
                 "position": 0
             },
@@ -515,20 +590,25 @@
                 "position": 1
             },
             {
+                "entryId": "ja:word:hanasu",
+                "relation": "words",
+                "position": 2
+            },
+            {
                 "entryId": "ja:def:sentence-particle-nitsuite",
                 "relation": "definitions"
             }
         ],
         "fields": {
-            "pronunciation": ["にほんごについて"]
+            "pronunciation": ["にほんについてはなす"]
         }
     },
     {
         "id": "ja:sentence:particle-niyotte",
-        "label": "日本語によって",
+        "label": "人によって違う",
         "references": [
             {
-                "entryId": "ja:word:nihongo",
+                "entryId": "ja:word:person",
                 "relation": "words",
                 "position": 0
             },
@@ -538,17 +618,22 @@
                 "position": 1
             },
             {
+                "entryId": "ja:word:chigau",
+                "relation": "words",
+                "position": 2
+            },
+            {
                 "entryId": "ja:def:sentence-particle-niyotte",
                 "relation": "definitions"
             }
         ],
         "fields": {
-            "pronunciation": ["にほんごによって"]
+            "pronunciation": ["ひとによってちがう"]
         }
     },
     {
         "id": "ja:sentence:particle-nitotte",
-        "label": "わたしにとって日本語",
+        "label": "私にとって大切",
         "references": [
             {
                 "entryId": "ja:word:watashi",
@@ -561,7 +646,7 @@
                 "position": 1
             },
             {
-                "entryId": "ja:word:nihongo",
+                "entryId": "ja:word:taisetsu",
                 "relation": "words",
                 "position": 2
             },
@@ -571,15 +656,15 @@
             }
         ],
         "fields": {
-            "pronunciation": ["わたしにとってにほんご"]
+            "pronunciation": ["わたしにとってたいせつ"]
         }
     },
     {
         "id": "ja:sentence:particle-toshite",
-        "label": "日本語として",
+        "label": "先生として働く",
         "references": [
             {
-                "entryId": "ja:word:nihongo",
+                "entryId": "ja:word:sensei",
                 "relation": "words",
                 "position": 0
             },
@@ -589,17 +674,22 @@
                 "position": 1
             },
             {
+                "entryId": "ja:word:hataraku",
+                "relation": "words",
+                "position": 2
+            },
+            {
                 "entryId": "ja:def:sentence-particle-toshite",
                 "relation": "definitions"
             }
         ],
         "fields": {
-            "pronunciation": ["にほんごとして"]
+            "pronunciation": ["せんせいとしてはたらく"]
         }
     },
     {
         "id": "ja:sentence:particle-nioite",
-        "label": "学校において",
+        "label": "学校において学ぶ",
         "references": [
             {
                 "entryId": "ja:word:gakkou",
@@ -612,20 +702,25 @@
                 "position": 1
             },
             {
+                "entryId": "ja:word:manabu",
+                "relation": "words",
+                "position": 2
+            },
+            {
                 "entryId": "ja:def:sentence-particle-nioite",
                 "relation": "definitions"
             }
         ],
         "fields": {
-            "pronunciation": ["がっこうにおいて"]
+            "pronunciation": ["がっこうにおいてまなぶ"]
         }
     },
     {
         "id": "ja:sentence:particle-nitaishite",
-        "label": "日本語にたいして",
+        "label": "先生にたいして話す",
         "references": [
             {
-                "entryId": "ja:word:nihongo",
+                "entryId": "ja:word:sensei",
                 "relation": "words",
                 "position": 0
             },
@@ -635,20 +730,25 @@
                 "position": 1
             },
             {
+                "entryId": "ja:word:hanasu",
+                "relation": "words",
+                "position": 2
+            },
+            {
                 "entryId": "ja:def:sentence-particle-nitaishite",
                 "relation": "definitions"
             }
         ],
         "fields": {
-            "pronunciation": ["にほんごにたいして"]
+            "pronunciation": ["せんせいにたいしてはなす"]
         }
     },
     {
         "id": "ja:sentence:particle-nikanshite",
-        "label": "日本語にかんして",
+        "label": "日本にかんして学ぶ",
         "references": [
             {
-                "entryId": "ja:word:nihongo",
+                "entryId": "ja:word:nihon",
                 "relation": "words",
                 "position": 0
             },
@@ -658,17 +758,22 @@
                 "position": 1
             },
             {
+                "entryId": "ja:word:manabu",
+                "relation": "words",
+                "position": 2
+            },
+            {
                 "entryId": "ja:def:sentence-particle-nikanshite",
                 "relation": "definitions"
             }
         ],
         "fields": {
-            "pronunciation": ["にほんごにかんして"]
+            "pronunciation": ["にほんにかんしてまなぶ"]
         }
     },
     {
         "id": "ja:sentence:particle-nikuwaete",
-        "label": "日本語にくわえて学校",
+        "label": "日本語にくわえて英語を学ぶ",
         "references": [
             {
                 "entryId": "ja:word:nihongo",
@@ -681,9 +786,19 @@
                 "position": 1
             },
             {
-                "entryId": "ja:word:gakkou",
+                "entryId": "ja:word:eigo",
                 "relation": "words",
                 "position": 2
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:manabu",
+                "relation": "words",
+                "position": 4
             },
             {
                 "entryId": "ja:def:sentence-particle-nikuwaete",
@@ -691,7 +806,7 @@
             }
         ],
         "fields": {
-            "pronunciation": ["にほんごにくわえてがっこう"]
+            "pronunciation": ["にほんごにくわえてえいごをまなぶ"]
         }
     }
 ]

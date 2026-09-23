@@ -277,3 +277,9 @@ Paket penyedia kini dilindungi sesuai kontrak Pustaka terbaru. Konten belajar ku
 Paket penyedia bahasa Jepang kini menerbitkan metadata katalog tervalidasi, mempertahankan metadata kepemilikan penyedia selama bootstrap, serta menandai bidang sistem tulisan dan JLPT sebagai filter pelajar eksplisit. Revisi skema 40 dan versi modul 2.2.5 mengadopsi kontrak paket eksternal sambil mempertahankan konten terlindungi dan tipe bidang bawaan yang tervalidasi.
 
 - [1a38b26](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/1a38b267037f144157fcd20ed575edf3af0b1452)
+
+## Korpus Belajar Beragam yang Mengutamakan Kanji
+
+Kosakata terlihat kini memakai bentuk lazim yang mengandung Kanji bila sesuai, dengan bacaan lengkap tersembunyi yang berlanjut hingga Kana atomik. Korpus 51 kalimat partikel ditulis ulang dengan konten beragam tentang orang, hewan, cuaca, makanan, perjalanan, membaca, musik, waktu, dan pekerjaan; kurang dari seperlima memakai kosakata sekolah, dan tidak ada dua kalimat partikel yang memiliki label sama.
+
+- [2673d35](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/2673d35913bd7534b4dc9aed468280dc598b4c88)

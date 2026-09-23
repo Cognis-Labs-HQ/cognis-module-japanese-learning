@@ -277,3 +277,9 @@ The provider pack is now protected under the latest Library contract. Cat and do
 The Japanese provider pack now publishes validated catalog metadata, preserves provider ownership metadata through bootstrap, and marks writing-system and JLPT fields as explicit learner filters. Schema revision 40 and module version 2.2.5 adopt the external-package contract while retaining protected content and built-in validated field types.
 
 - [1a38b26](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/1a38b267037f144157fcd20ed575edf3af0b1452)
+
+## Kanji-First Diverse Study Corpus
+
+Visible vocabulary now uses conventional Kanji-containing forms whenever appropriate, with complete hidden readings that continue to atomic Kana. The 51-particle sentence corpus was rewritten with varied people, animals, weather, food, travel, reading, music, time, and work content; fewer than one fifth use school vocabulary, and no two particle sentences share a label.
+
+- [2673d35](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/2673d35913bd7534b4dc9aed468280dc598b4c88)

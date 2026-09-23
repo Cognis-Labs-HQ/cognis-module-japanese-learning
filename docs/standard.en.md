@@ -157,3 +157,7 @@ Set `protected: true` on the provider content manifest. For every sentence, conc
 ## External package contract from PR 226
 
 Manifest and schema metadata may contain only finite, JSON-compatible values and must survive Library round trips unchanged. Prefer built-in field types; any extension type requires a declarative validation rule. Use list media types for multiple assets, and set `detail.filterable: true` only when a non-badge field should become a learner-facing filter. Schema revisions and module semantic versions remain independent.
+
+## Kanji-first vocabulary and corpus diversity
+
+Use the conventional Kanji-containing form as the primary label for visible vocabulary whenever one exists; reserve all-Kana vocabulary records for conventional Kana spellings and hidden complete readings. Review large content additions as a corpus: require varied nouns, verbs, topics, and sentence structures, and reject repeated substitution around one anchor word even when every individual relationship validates.

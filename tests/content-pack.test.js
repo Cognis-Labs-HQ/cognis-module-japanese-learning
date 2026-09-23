@@ -696,10 +696,15 @@ test("every vocabulary entry participates in the Kana deletion dependency graph"
 
     const suki = recordsById.get("ja:word:suki");
     assert.deepEqual(
-        suki.references.filter(({ relation }) => relation === "kana-spelling"),
+        suki.references.filter(
+            ({ relation }) => relation === "pronunciation-readings",
+        ),
         [
-            { entryId: "ja:char:su", relation: "kana-spelling", position: 0 },
-            { entryId: "ja:char:ki", relation: "kana-spelling", position: 1 },
+            {
+                entryId: "ja:word:reading-suki",
+                relation: "pronunciation-readings",
+                position: 0,
+            },
         ],
     );
 });

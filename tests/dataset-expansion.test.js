@@ -81,6 +81,45 @@ test("expanded learning data remains declarative and substantial", () => {
     }
 });
 
+test("visible vocabulary uses conventional Kanji primary forms", () => {
+    const expectedLabels = new Map([
+        ["ja:word:watashi", "私"],
+        ["ja:word:mizu", "水"],
+        ["ja:word:yama", "山"],
+        ["ja:word:kawa-river", "川"],
+        ["ja:word:umi", "海"],
+        ["ja:word:sora", "空"],
+        ["ja:word:hana-flower", "花"],
+        ["ja:word:hana-nose", "鼻"],
+        ["ja:word:hashi-bridge", "橋"],
+        ["ja:word:hashi-chopsticks", "箸"],
+        ["ja:word:ame-rain", "雨"],
+        ["ja:word:ame-candy", "飴"],
+        ["ja:word:kami-paper", "紙"],
+        ["ja:word:kami-hair", "髪"],
+        ["ja:word:kami-deity", "神"],
+        ["ja:word:kuruma", "車"],
+        ["ja:word:densha", "電車"],
+        ["ja:word:sensei", "先生"],
+        ["ja:word:gakusei", "学生"],
+        ["ja:word:tomodachi", "友達"],
+        ["ja:word:taberu", "食べる"],
+        ["ja:word:nomu", "飲む"],
+        ["ja:word:miru", "見る"],
+        ["ja:word:iku", "行く"],
+        ["ja:word:kuru", "来る"],
+        ["ja:word:ookii", "大きい"],
+        ["ja:word:chiisai", "小さい"],
+        ["ja:word:naosu", "直す"],
+    ]);
+    const allVocabulary = new Map(
+        readLayer("words").map((entry) => [entry.id, entry]),
+    );
+    for (const [id, label] of expectedLabels) {
+        assert.equal(allVocabulary.get(id).label, label);
+    }
+});
+
 test("polysemy uses multiple definitions without collapsing homophones", () => {
     const naosu = vocabulary.find(({ id }) => id === "ja:word:naosu");
     assert.deepEqual(definitionIds(naosu), [
@@ -88,8 +127,10 @@ test("polysemy uses multiple definitions without collapsing homophones", () => {
         "ja:def:naosu-correct",
     ]);
 
-    for (const label of ["はし", "あめ", "かみ", "はな"]) {
-        const homophones = vocabulary.filter((entry) => entry.label === label);
+    for (const pronunciation of ["はし", "あめ", "かみ", "はな"]) {
+        const homophones = vocabulary.filter(
+            (entry) => entry.fields.pronunciation[0] === pronunciation,
+        );
         assert.ok(homophones.length >= 2);
         assert.equal(
             new Set(homophones.flatMap(definitionIds)).size,
@@ -115,6 +156,25 @@ test("every authored particle is exercised by a sentence", () => {
             `${particle.id} requires an example sentence`,
         );
     }
+});
+
+test("particle sentences use varied vocabulary instead of one template", () => {
+    const particleSentences = readLayer("sentences").filter(({ id }) =>
+        id.startsWith("ja:sentence:particle-"),
+    );
+    const vocabularyIds = new Set(
+        particleSentences.flatMap((entry) =>
+            entry.references
+                .filter(({ relation }) => relation === "words")
+                .map(({ entryId }) => entryId),
+        ),
+    );
+    const schoolUses = particleSentences.filter((entry) =>
+        entry.references.some(({ entryId }) => entryId === "ja:word:gakkou"),
+    ).length;
+    assert.ok(vocabularyIds.size >= 30);
+    assert.ok(schoolUses / particleSentences.length < 0.2);
+    assert.equal(new Set(particleSentences.map(({ label }) => label)).size, 51);
 });
 
 test("particle sentences traverse vocabulary, Kanji, and Kana", () => {
@@ -204,14 +264,8 @@ test("Kanji vocabulary traverses through hidden readings to atomic Kana", () => 
         readLayer("alt-characters").map((entry) => [entry.id, entry]),
     );
 
-    for (const id of [
-        "ja:word:neko",
-        "ja:word:inu",
-        "ja:word:gakkou",
-        "ja:word:nihon",
-        "ja:word:nihongo",
-    ]) {
-        const word = words.get(id);
+    for (const word of words.values()) {
+        if (word.hidden || !/[\p{Script=Han}]/u.test(word.label)) continue;
         const spelling = word.references.filter(
             ({ relation }) => relation === "spelling",
         );

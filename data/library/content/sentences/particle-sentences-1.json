@@ -1,10 +1,10 @@
 [
     {
         "id": "ja:sentence:particle-ka",
-        "label": "学校か",
+        "label": "猫か犬",
         "references": [
             {
-                "entryId": "ja:word:gakkou",
+                "entryId": "ja:word:neko",
                 "relation": "words",
                 "position": 0
             },
@@ -14,27 +14,42 @@
                 "position": 1
             },
             {
+                "entryId": "ja:word:inu",
+                "relation": "words",
+                "position": 2
+            },
+            {
                 "entryId": "ja:def:sentence-particle-ka",
                 "relation": "definitions"
             }
         ],
         "fields": {
-            "pronunciation": ["がっこうか"]
+            "pronunciation": ["ねこかいぬ"]
         }
     },
     {
         "id": "ja:sentence:particle-ne",
-        "label": "学校ね",
+        "label": "花が好きね",
         "references": [
             {
-                "entryId": "ja:word:gakkou",
+                "entryId": "ja:word:hana-flower",
                 "relation": "words",
                 "position": 0
             },
             {
-                "entryId": "ja:particle:ne",
+                "entryId": "ja:particle:ga",
                 "relation": "particles",
                 "position": 1
+            },
+            {
+                "entryId": "ja:word:suki",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:ne",
+                "relation": "particles",
+                "position": 3
             },
             {
                 "entryId": "ja:def:sentence-particle-ne",
@@ -42,22 +57,27 @@
             }
         ],
         "fields": {
-            "pronunciation": ["がっこうね"]
+            "pronunciation": ["はながすきね"]
         }
     },
     {
         "id": "ja:sentence:particle-yo",
-        "label": "学校よ",
+        "label": "雨だよ",
         "references": [
             {
-                "entryId": "ja:word:gakkou",
+                "entryId": "ja:word:ame-rain",
                 "relation": "words",
                 "position": 0
             },
             {
+                "entryId": "ja:word:grammar-da-copula",
+                "relation": "words",
+                "position": 1
+            },
+            {
                 "entryId": "ja:particle:yo",
                 "relation": "particles",
-                "position": 1
+                "position": 2
             },
             {
                 "entryId": "ja:def:sentence-particle-yo",
@@ -65,22 +85,32 @@
             }
         ],
         "fields": {
-            "pronunciation": ["がっこうよ"]
+            "pronunciation": ["あめだよ"]
         }
     },
     {
         "id": "ja:sentence:particle-yone",
-        "label": "学校よね",
+        "label": "日本語が好きよね",
         "references": [
             {
-                "entryId": "ja:word:gakkou",
+                "entryId": "ja:word:nihongo",
                 "relation": "words",
                 "position": 0
             },
             {
-                "entryId": "ja:particle:yone",
+                "entryId": "ja:particle:ga",
                 "relation": "particles",
                 "position": 1
+            },
+            {
+                "entryId": "ja:word:suki",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:yone",
+                "relation": "particles",
+                "position": 3
             },
             {
                 "entryId": "ja:def:sentence-particle-yone",
@@ -88,27 +118,32 @@
             }
         ],
         "fields": {
-            "pronunciation": ["がっこうよね"]
+            "pronunciation": ["にほんごがすきよね"]
         }
     },
     {
         "id": "ja:sentence:particle-na-final",
-        "label": "学校おおきいな",
+        "label": "海は大きいな",
         "references": [
             {
-                "entryId": "ja:word:gakkou",
+                "entryId": "ja:word:umi",
                 "relation": "words",
                 "position": 0
             },
             {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
                 "entryId": "ja:word:ookii",
                 "relation": "words",
-                "position": 1
+                "position": 2
             },
             {
                 "entryId": "ja:particle:na-final",
                 "relation": "particles",
-                "position": 2
+                "position": 3
             },
             {
                 "entryId": "ja:def:sentence-particle-na-final",
@@ -116,27 +151,32 @@
             }
         ],
         "fields": {
-            "pronunciation": ["がっこうおおきいな"]
+            "pronunciation": ["うみはおおきいな"]
         }
     },
     {
         "id": "ja:sentence:particle-sa-final",
-        "label": "学校おおきいさ",
+        "label": "日本は大きいさ",
         "references": [
             {
-                "entryId": "ja:word:gakkou",
+                "entryId": "ja:word:nihon",
                 "relation": "words",
                 "position": 0
             },
             {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
                 "entryId": "ja:word:ookii",
                 "relation": "words",
-                "position": 1
+                "position": 2
             },
             {
                 "entryId": "ja:particle:sa-final",
                 "relation": "particles",
-                "position": 2
+                "position": 3
             },
             {
                 "entryId": "ja:def:sentence-particle-sa-final",
@@ -144,12 +184,12 @@
             }
         ],
         "fields": {
-            "pronunciation": ["がっこうおおきいさ"]
+            "pronunciation": ["にほんはおおきいさ"]
         }
     },
     {
         "id": "ja:sentence:particle-zo",
-        "label": "学校いくぞ",
+        "label": "学校へ行くぞ",
         "references": [
             {
                 "entryId": "ja:word:gakkou",
@@ -157,14 +197,19 @@
                 "position": 0
             },
             {
+                "entryId": "ja:particle:e",
+                "relation": "particles",
+                "position": 1
+            },
+            {
                 "entryId": "ja:word:iku",
                 "relation": "words",
-                "position": 1
+                "position": 2
             },
             {
                 "entryId": "ja:particle:zo",
                 "relation": "particles",
-                "position": 2
+                "position": 3
             },
             {
                 "entryId": "ja:def:sentence-particle-zo",
@@ -172,27 +217,32 @@
             }
         ],
         "fields": {
-            "pronunciation": ["がっこういくぞ"]
+            "pronunciation": ["がっこうへいくぞ"]
         }
     },
     {
         "id": "ja:sentence:particle-ze",
-        "label": "学校いくぜ",
+        "label": "水を飲むぜ",
         "references": [
             {
-                "entryId": "ja:word:gakkou",
+                "entryId": "ja:word:mizu",
                 "relation": "words",
                 "position": 0
             },
             {
-                "entryId": "ja:word:iku",
-                "relation": "words",
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
                 "position": 1
+            },
+            {
+                "entryId": "ja:word:nomu",
+                "relation": "words",
+                "position": 2
             },
             {
                 "entryId": "ja:particle:ze",
                 "relation": "particles",
-                "position": 2
+                "position": 3
             },
             {
                 "entryId": "ja:def:sentence-particle-ze",
@@ -200,27 +250,32 @@
             }
         ],
         "fields": {
-            "pronunciation": ["がっこういくぜ"]
+            "pronunciation": ["みずをのむぜ"]
         }
     },
     {
         "id": "ja:sentence:particle-wa-final",
-        "label": "学校いくわ",
+        "label": "私は行くわ",
         "references": [
             {
-                "entryId": "ja:word:gakkou",
+                "entryId": "ja:word:watashi",
                 "relation": "words",
                 "position": 0
             },
             {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
                 "entryId": "ja:word:iku",
                 "relation": "words",
-                "position": 1
+                "position": 2
             },
             {
                 "entryId": "ja:particle:wa-final",
                 "relation": "particles",
-                "position": 2
+                "position": 3
             },
             {
                 "entryId": "ja:def:sentence-particle-wa-final",
@@ -228,15 +283,15 @@
             }
         ],
         "fields": {
-            "pronunciation": ["がっこういくわ"]
+            "pronunciation": ["わたしはいくわ"]
         }
     },
     {
         "id": "ja:sentence:particle-tte",
-        "label": "学校っておおきい",
+        "label": "犬って大きい",
         "references": [
             {
-                "entryId": "ja:word:gakkou",
+                "entryId": "ja:word:inu",
                 "relation": "words",
                 "position": 0
             },
@@ -256,15 +311,15 @@
             }
         ],
         "fields": {
-            "pronunciation": ["がっこうっておおきい"]
+            "pronunciation": ["いぬっておおきい"]
         }
     },
     {
         "id": "ja:sentence:particle-dewa",
-        "label": "学校では日本語",
+        "label": "日本では日本語を話す",
         "references": [
             {
-                "entryId": "ja:word:gakkou",
+                "entryId": "ja:word:nihon",
                 "relation": "words",
                 "position": 0
             },
@@ -279,20 +334,30 @@
                 "position": 2
             },
             {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:hanasu",
+                "relation": "words",
+                "position": 4
+            },
+            {
                 "entryId": "ja:def:sentence-particle-dewa",
                 "relation": "definitions"
             }
         ],
         "fields": {
-            "pronunciation": ["がっこうではにほんご"]
+            "pronunciation": ["にほんではにほんごをはなす"]
         }
     },
     {
         "id": "ja:sentence:particle-ja",
-        "label": "学校じゃ日本語",
+        "label": "雨じゃ学校へ行かない",
         "references": [
             {
-                "entryId": "ja:word:gakkou",
+                "entryId": "ja:word:ame-rain",
                 "relation": "words",
                 "position": 0
             },
@@ -302,9 +367,19 @@
                 "position": 1
             },
             {
-                "entryId": "ja:word:nihongo",
+                "entryId": "ja:word:gakkou",
                 "relation": "words",
                 "position": 2
+            },
+            {
+                "entryId": "ja:particle:e",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:ikanai",
+                "relation": "words",
+                "position": 4
             },
             {
                 "entryId": "ja:def:sentence-particle-ja",
@@ -312,15 +387,15 @@
             }
         ],
         "fields": {
-            "pronunciation": ["がっこうじゃにほんご"]
+            "pronunciation": ["あめじゃがっこうへいかない"]
         }
     },
     {
         "id": "ja:sentence:particle-shika",
-        "label": "日本語しか",
+        "label": "水しか飲まない",
         "references": [
             {
-                "entryId": "ja:word:nihongo",
+                "entryId": "ja:word:mizu",
                 "relation": "words",
                 "position": 0
             },
@@ -330,20 +405,25 @@
                 "position": 1
             },
             {
+                "entryId": "ja:word:nomanai",
+                "relation": "words",
+                "position": 2
+            },
+            {
                 "entryId": "ja:def:sentence-particle-shika",
                 "relation": "definitions"
             }
         ],
         "fields": {
-            "pronunciation": ["にほんごしか"]
+            "pronunciation": ["みずしかのまない"]
         }
     },
     {
         "id": "ja:sentence:particle-dake",
-        "label": "日本語だけ",
+        "label": "水だけ飲む",
         "references": [
             {
-                "entryId": "ja:word:nihongo",
+                "entryId": "ja:word:mizu",
                 "relation": "words",
                 "position": 0
             },
@@ -353,20 +433,25 @@
                 "position": 1
             },
             {
+                "entryId": "ja:word:nomu",
+                "relation": "words",
+                "position": 2
+            },
+            {
                 "entryId": "ja:def:sentence-particle-dake",
                 "relation": "definitions"
             }
         ],
         "fields": {
-            "pronunciation": ["にほんごだけ"]
+            "pronunciation": ["みずだけのむ"]
         }
     },
     {
         "id": "ja:sentence:particle-bakari",
-        "label": "日本語ばかり",
+        "label": "雨ばかりだ",
         "references": [
             {
-                "entryId": "ja:word:nihongo",
+                "entryId": "ja:word:ame-rain",
                 "relation": "words",
                 "position": 0
             },
@@ -376,17 +461,22 @@
                 "position": 1
             },
             {
+                "entryId": "ja:word:grammar-da-copula",
+                "relation": "words",
+                "position": 2
+            },
+            {
                 "entryId": "ja:def:sentence-particle-bakari",
                 "relation": "definitions"
             }
         ],
         "fields": {
-            "pronunciation": ["にほんごばかり"]
+            "pronunciation": ["あめばかりだ"]
         }
     },
     {
         "id": "ja:sentence:particle-kurai",
-        "label": "日本語くらい",
+        "label": "日本語くらい話す",
         "references": [
             {
                 "entryId": "ja:word:nihongo",
@@ -399,20 +489,25 @@
                 "position": 1
             },
             {
+                "entryId": "ja:word:hanasu",
+                "relation": "words",
+                "position": 2
+            },
+            {
                 "entryId": "ja:def:sentence-particle-kurai",
                 "relation": "definitions"
             }
         ],
         "fields": {
-            "pronunciation": ["にほんごくらい"]
+            "pronunciation": ["にほんごくらいはなす"]
         }
     },
     {
         "id": "ja:sentence:particle-gurai",
-        "label": "日本語ぐらい",
+        "label": "一時間ぐらい",
         "references": [
             {
-                "entryId": "ja:word:nihongo",
+                "entryId": "ja:word:ichijikan",
                 "relation": "words",
                 "position": 0
             },
@@ -427,12 +522,12 @@
             }
         ],
         "fields": {
-            "pronunciation": ["にほんごぐらい"]
+            "pronunciation": ["いちじかんぐらい"]
         }
     },
     {
         "id": "ja:sentence:particle-hodo",
-        "label": "日本語ほど",
+        "label": "日本語ほど難しくない",
         "references": [
             {
                 "entryId": "ja:word:nihongo",
@@ -445,20 +540,25 @@
                 "position": 1
             },
             {
+                "entryId": "ja:word:muzukashikunai",
+                "relation": "words",
+                "position": 2
+            },
+            {
                 "entryId": "ja:def:sentence-particle-hodo",
                 "relation": "definitions"
             }
         ],
         "fields": {
-            "pronunciation": ["にほんごほど"]
+            "pronunciation": ["にほんごほどむずかしくない"]
         }
     },
     {
         "id": "ja:sentence:particle-koso",
-        "label": "日本語こそ",
+        "label": "今日こそ行く",
         "references": [
             {
-                "entryId": "ja:word:nihongo",
+                "entryId": "ja:word:kyou",
                 "relation": "words",
                 "position": 0
             },
@@ -468,20 +568,25 @@
                 "position": 1
             },
             {
+                "entryId": "ja:word:iku",
+                "relation": "words",
+                "position": 2
+            },
+            {
                 "entryId": "ja:def:sentence-particle-koso",
                 "relation": "definitions"
             }
         ],
         "fields": {
-            "pronunciation": ["にほんごこそ"]
+            "pronunciation": ["きょうこそいく"]
         }
     },
     {
         "id": "ja:sentence:particle-sae",
-        "label": "日本語さえ",
+        "label": "先生さえ間違える",
         "references": [
             {
-                "entryId": "ja:word:nihongo",
+                "entryId": "ja:word:sensei",
                 "relation": "words",
                 "position": 0
             },
@@ -491,20 +596,25 @@
                 "position": 1
             },
             {
+                "entryId": "ja:word:machigaeru",
+                "relation": "words",
+                "position": 2
+            },
+            {
                 "entryId": "ja:def:sentence-particle-sae",
                 "relation": "definitions"
             }
         ],
         "fields": {
-            "pronunciation": ["にほんごさえ"]
+            "pronunciation": ["せんせいさえまちがえる"]
         }
     },
     {
         "id": "ja:sentence:particle-demo",
-        "label": "日本語でも",
+        "label": "水でも飲む",
         "references": [
             {
-                "entryId": "ja:word:nihongo",
+                "entryId": "ja:word:mizu",
                 "relation": "words",
                 "position": 0
             },
@@ -514,20 +624,25 @@
                 "position": 1
             },
             {
+                "entryId": "ja:word:nomu",
+                "relation": "words",
+                "position": 2
+            },
+            {
                 "entryId": "ja:def:sentence-particle-demo",
                 "relation": "definitions"
             }
         ],
         "fields": {
-            "pronunciation": ["にほんごでも"]
+            "pronunciation": ["みずでものむ"]
         }
     },
     {
         "id": "ja:sentence:particle-nado",
-        "label": "日本語など",
+        "label": "本など読む",
         "references": [
             {
-                "entryId": "ja:word:nihongo",
+                "entryId": "ja:word:hon",
                 "relation": "words",
                 "position": 0
             },
@@ -537,20 +652,25 @@
                 "position": 1
             },
             {
+                "entryId": "ja:word:yomu",
+                "relation": "words",
+                "position": 2
+            },
+            {
                 "entryId": "ja:def:sentence-particle-nado",
                 "relation": "definitions"
             }
         ],
         "fields": {
-            "pronunciation": ["にほんごなど"]
+            "pronunciation": ["ほんなどよむ"]
         }
     },
     {
         "id": "ja:sentence:particle-nante",
-        "label": "日本語なんて",
+        "label": "犬なんて怖くない",
         "references": [
             {
-                "entryId": "ja:word:nihongo",
+                "entryId": "ja:word:inu",
                 "relation": "words",
                 "position": 0
             },
@@ -560,17 +680,22 @@
                 "position": 1
             },
             {
+                "entryId": "ja:word:kowakunai",
+                "relation": "words",
+                "position": 2
+            },
+            {
                 "entryId": "ja:def:sentence-particle-nante",
                 "relation": "definitions"
             }
         ],
         "fields": {
-            "pronunciation": ["にほんごなんて"]
+            "pronunciation": ["いぬなんてこわくない"]
         }
     },
     {
         "id": "ja:sentence:particle-nara",
-        "label": "日本語なら好き",
+        "label": "日本語なら話せる",
         "references": [
             {
                 "entryId": "ja:word:nihongo",
@@ -583,7 +708,7 @@
                 "position": 1
             },
             {
-                "entryId": "ja:word:suki",
+                "entryId": "ja:word:hanaseru",
                 "relation": "words",
                 "position": 2
             },
@@ -593,15 +718,15 @@
             }
         ],
         "fields": {
-            "pronunciation": ["にほんごならすき"]
+            "pronunciation": ["にほんごならはなせる"]
         }
     },
     {
         "id": "ja:sentence:particle-node",
-        "label": "学校なので",
+        "label": "雨なので行かない",
         "references": [
             {
-                "entryId": "ja:word:gakkou",
+                "entryId": "ja:word:ame-rain",
                 "relation": "words",
                 "position": 0
             },
@@ -616,20 +741,25 @@
                 "position": 2
             },
             {
+                "entryId": "ja:word:ikanai",
+                "relation": "words",
+                "position": 3
+            },
+            {
                 "entryId": "ja:def:sentence-particle-node",
                 "relation": "definitions"
             }
         ],
         "fields": {
-            "pronunciation": ["がっこうなので"]
+            "pronunciation": ["あめなのでいかない"]
         }
     },
     {
         "id": "ja:sentence:particle-noni",
-        "label": "学校なのに",
+        "label": "雨なのに行く",
         "references": [
             {
-                "entryId": "ja:word:gakkou",
+                "entryId": "ja:word:ame-rain",
                 "relation": "words",
                 "position": 0
             },
@@ -644,12 +774,17 @@
                 "position": 2
             },
             {
+                "entryId": "ja:word:iku",
+                "relation": "words",
+                "position": 3
+            },
+            {
                 "entryId": "ja:def:sentence-particle-noni",
                 "relation": "definitions"
             }
         ],
         "fields": {
-            "pronunciation": ["がっこうなのに"]
+            "pronunciation": ["あめなのにいく"]
         }
     }
 ]

@@ -160,3 +160,7 @@ Provider content is now protected from user-owned moves and deletion. The animal
 ## Cognis PR 226 package contract
 
 The pack now publishes validated JSON-compatible catalog metadata and explicitly filterable writing-system and JLPT fields under the external-package contract from Cognis PR #226. It continues to use built-in field types and protected provider ownership, while schema revision `40` remains independent of module version `2.2.5`.
+
+## Kanji-first varied study content
+
+Visible vocabulary now uses conventional Japanese orthography such as `私`, `水`, `電車`, `先生`, `食べる`, and `行く`, while complete hidden readings retain the Kana path. The particle collection has been rewritten as 51 distinct, natural constructions spanning people, animals, weather, food, travel, reading, music, time, and work instead of repeatedly substituting particles around `学校`.

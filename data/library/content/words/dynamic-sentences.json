@@ -1,659 +1,34 @@
 [
     {
-        "id": "ja:word:watashi",
-        "label": "私",
+        "id": "ja:word:hanasu",
+        "label": "話す",
         "fields": {
             "jlpt_level": "N5",
-            "pronunciation": ["わたし"]
+            "pronunciation": ["はなす"]
         },
         "references": [
             {
-                "entryId": "ja:kanji:e7a781",
+                "entryId": "ja:kanji:e8a9b1",
                 "relation": "spelling",
                 "position": 0
             },
             {
-                "entryId": "ja:word:reading-watashi",
+                "entryId": "ja:word:reading-hanasu",
                 "relation": "pronunciation-readings",
                 "position": 0
             },
             {
-                "entryId": "ja:def:watashi",
+                "entryId": "ja:def:word-hanasu",
                 "relation": "definitions"
             }
         ]
     },
     {
-        "id": "ja:word:mizu",
-        "label": "水",
+        "id": "ja:word:ikanai",
+        "label": "行かない",
         "fields": {
             "jlpt_level": "N5",
-            "pronunciation": ["みず"]
-        },
-        "references": [
-            {
-                "entryId": "ja:kanji:e6b0b4",
-                "relation": "spelling",
-                "position": 0
-            },
-            {
-                "entryId": "ja:word:reading-mizu",
-                "relation": "pronunciation-readings",
-                "position": 0
-            },
-            {
-                "entryId": "ja:def:mizu",
-                "relation": "definitions"
-            }
-        ]
-    },
-    {
-        "id": "ja:word:inu",
-        "label": "犬",
-        "fields": {
-            "jlpt_level": "N5",
-            "pronunciation": ["いぬ"]
-        },
-        "references": [
-            {
-                "entryId": "ja:kanji:inu",
-                "relation": "spelling",
-                "position": 0
-            },
-            {
-                "entryId": "ja:word:reading-inu",
-                "relation": "pronunciation-readings",
-                "position": 0
-            },
-            {
-                "entryId": "ja:def:inu",
-                "relation": "definitions"
-            }
-        ]
-    },
-    {
-        "id": "ja:word:neko",
-        "label": "猫",
-        "fields": {
-            "jlpt_level": "N5",
-            "pronunciation": ["ねこ"]
-        },
-        "references": [
-            {
-                "entryId": "ja:kanji:neko",
-                "relation": "spelling",
-                "position": 0
-            },
-            {
-                "entryId": "ja:word:reading-neko",
-                "relation": "pronunciation-readings",
-                "position": 0
-            },
-            {
-                "entryId": "ja:def:neko",
-                "relation": "definitions"
-            }
-        ]
-    },
-    {
-        "id": "ja:word:yama",
-        "label": "山",
-        "fields": {
-            "jlpt_level": "N5",
-            "pronunciation": ["やま"]
-        },
-        "references": [
-            {
-                "entryId": "ja:kanji:e5b1b1",
-                "relation": "spelling",
-                "position": 0
-            },
-            {
-                "entryId": "ja:word:reading-yama",
-                "relation": "pronunciation-readings",
-                "position": 0
-            },
-            {
-                "entryId": "ja:def:yama",
-                "relation": "definitions"
-            }
-        ]
-    },
-    {
-        "id": "ja:word:kawa-river",
-        "label": "川",
-        "fields": {
-            "jlpt_level": "N5",
-            "pronunciation": ["かわ"]
-        },
-        "references": [
-            {
-                "entryId": "ja:kanji:e5b79d",
-                "relation": "spelling",
-                "position": 0
-            },
-            {
-                "entryId": "ja:word:reading-kawa-river",
-                "relation": "pronunciation-readings",
-                "position": 0
-            },
-            {
-                "entryId": "ja:def:kawa-river",
-                "relation": "definitions"
-            }
-        ]
-    },
-    {
-        "id": "ja:word:umi",
-        "label": "海",
-        "fields": {
-            "jlpt_level": "N5",
-            "pronunciation": ["うみ"]
-        },
-        "references": [
-            {
-                "entryId": "ja:kanji:e6b5b7",
-                "relation": "spelling",
-                "position": 0
-            },
-            {
-                "entryId": "ja:word:reading-umi",
-                "relation": "pronunciation-readings",
-                "position": 0
-            },
-            {
-                "entryId": "ja:def:umi",
-                "relation": "definitions"
-            }
-        ]
-    },
-    {
-        "id": "ja:word:sora",
-        "label": "空",
-        "fields": {
-            "jlpt_level": "N5",
-            "pronunciation": ["そら"]
-        },
-        "references": [
-            {
-                "entryId": "ja:kanji:e7a9ba",
-                "relation": "spelling",
-                "position": 0
-            },
-            {
-                "entryId": "ja:word:reading-sora",
-                "relation": "pronunciation-readings",
-                "position": 0
-            },
-            {
-                "entryId": "ja:def:sora",
-                "relation": "definitions"
-            }
-        ]
-    },
-    {
-        "id": "ja:word:hana-flower",
-        "label": "花",
-        "fields": {
-            "jlpt_level": "N5",
-            "pronunciation": ["はな"]
-        },
-        "references": [
-            {
-                "entryId": "ja:kanji:e88ab1",
-                "relation": "spelling",
-                "position": 0
-            },
-            {
-                "entryId": "ja:word:reading-hana-flower",
-                "relation": "pronunciation-readings",
-                "position": 0
-            },
-            {
-                "entryId": "ja:def:hana-flower",
-                "relation": "definitions"
-            }
-        ]
-    },
-    {
-        "id": "ja:word:hana-nose",
-        "label": "鼻",
-        "fields": {
-            "jlpt_level": "N5",
-            "pronunciation": ["はな"]
-        },
-        "references": [
-            {
-                "entryId": "ja:kanji:e9bcbb",
-                "relation": "spelling",
-                "position": 0
-            },
-            {
-                "entryId": "ja:word:reading-hana-nose",
-                "relation": "pronunciation-readings",
-                "position": 0
-            },
-            {
-                "entryId": "ja:def:hana-nose",
-                "relation": "definitions"
-            }
-        ]
-    },
-    {
-        "id": "ja:word:hashi-bridge",
-        "label": "橋",
-        "fields": {
-            "jlpt_level": "N5",
-            "pronunciation": ["はし"]
-        },
-        "references": [
-            {
-                "entryId": "ja:kanji:e6a98b",
-                "relation": "spelling",
-                "position": 0
-            },
-            {
-                "entryId": "ja:word:reading-hashi-bridge",
-                "relation": "pronunciation-readings",
-                "position": 0
-            },
-            {
-                "entryId": "ja:def:hashi-bridge",
-                "relation": "definitions"
-            }
-        ]
-    },
-    {
-        "id": "ja:word:hashi-chopsticks",
-        "label": "箸",
-        "fields": {
-            "jlpt_level": "N5",
-            "pronunciation": ["はし"]
-        },
-        "references": [
-            {
-                "entryId": "ja:kanji:e7aeb8",
-                "relation": "spelling",
-                "position": 0
-            },
-            {
-                "entryId": "ja:word:reading-hashi-chopsticks",
-                "relation": "pronunciation-readings",
-                "position": 0
-            },
-            {
-                "entryId": "ja:def:hashi-chopsticks",
-                "relation": "definitions"
-            }
-        ]
-    },
-    {
-        "id": "ja:word:ame-rain",
-        "label": "雨",
-        "fields": {
-            "jlpt_level": "N5",
-            "pronunciation": ["あめ"]
-        },
-        "references": [
-            {
-                "entryId": "ja:kanji:e99ba8",
-                "relation": "spelling",
-                "position": 0
-            },
-            {
-                "entryId": "ja:word:reading-ame-rain",
-                "relation": "pronunciation-readings",
-                "position": 0
-            },
-            {
-                "entryId": "ja:def:ame-rain",
-                "relation": "definitions"
-            }
-        ]
-    },
-    {
-        "id": "ja:word:ame-candy",
-        "label": "飴",
-        "fields": {
-            "jlpt_level": "N5",
-            "pronunciation": ["あめ"]
-        },
-        "references": [
-            {
-                "entryId": "ja:kanji:e9a3b4",
-                "relation": "spelling",
-                "position": 0
-            },
-            {
-                "entryId": "ja:word:reading-ame-candy",
-                "relation": "pronunciation-readings",
-                "position": 0
-            },
-            {
-                "entryId": "ja:def:ame-candy",
-                "relation": "definitions"
-            }
-        ]
-    },
-    {
-        "id": "ja:word:kami-paper",
-        "label": "紙",
-        "fields": {
-            "jlpt_level": "N5",
-            "pronunciation": ["かみ"]
-        },
-        "references": [
-            {
-                "entryId": "ja:kanji:e7b499",
-                "relation": "spelling",
-                "position": 0
-            },
-            {
-                "entryId": "ja:word:reading-kami-paper",
-                "relation": "pronunciation-readings",
-                "position": 0
-            },
-            {
-                "entryId": "ja:def:kami-paper",
-                "relation": "definitions"
-            }
-        ]
-    },
-    {
-        "id": "ja:word:kami-hair",
-        "label": "髪",
-        "fields": {
-            "jlpt_level": "N5",
-            "pronunciation": ["かみ"]
-        },
-        "references": [
-            {
-                "entryId": "ja:kanji:e9abaa",
-                "relation": "spelling",
-                "position": 0
-            },
-            {
-                "entryId": "ja:word:reading-kami-hair",
-                "relation": "pronunciation-readings",
-                "position": 0
-            },
-            {
-                "entryId": "ja:def:kami-hair",
-                "relation": "definitions"
-            }
-        ]
-    },
-    {
-        "id": "ja:word:kami-deity",
-        "label": "神",
-        "fields": {
-            "jlpt_level": "N5",
-            "pronunciation": ["かみ"]
-        },
-        "references": [
-            {
-                "entryId": "ja:kanji:e7a59e",
-                "relation": "spelling",
-                "position": 0
-            },
-            {
-                "entryId": "ja:word:reading-kami-deity",
-                "relation": "pronunciation-readings",
-                "position": 0
-            },
-            {
-                "entryId": "ja:def:kami-deity",
-                "relation": "definitions"
-            }
-        ]
-    },
-    {
-        "id": "ja:word:kuruma",
-        "label": "車",
-        "fields": {
-            "jlpt_level": "N5",
-            "pronunciation": ["くるま"]
-        },
-        "references": [
-            {
-                "entryId": "ja:kanji:e8bb8a",
-                "relation": "spelling",
-                "position": 0
-            },
-            {
-                "entryId": "ja:word:reading-kuruma",
-                "relation": "pronunciation-readings",
-                "position": 0
-            },
-            {
-                "entryId": "ja:def:kuruma",
-                "relation": "definitions"
-            }
-        ]
-    },
-    {
-        "id": "ja:word:densha",
-        "label": "電車",
-        "fields": {
-            "jlpt_level": "N5",
-            "pronunciation": ["でんしゃ"]
-        },
-        "references": [
-            {
-                "entryId": "ja:kanji:e99bbb",
-                "relation": "spelling",
-                "position": 0
-            },
-            {
-                "entryId": "ja:kanji:e8bb8a",
-                "relation": "spelling",
-                "position": 1
-            },
-            {
-                "entryId": "ja:word:reading-densha",
-                "relation": "pronunciation-readings",
-                "position": 0
-            },
-            {
-                "entryId": "ja:def:densha",
-                "relation": "definitions"
-            }
-        ]
-    },
-    {
-        "id": "ja:word:gakkou",
-        "label": "学校",
-        "fields": {
-            "jlpt_level": "N5",
-            "pronunciation": ["がっこう"]
-        },
-        "references": [
-            {
-                "entryId": "ja:kanji:gaku",
-                "relation": "spelling",
-                "position": 0
-            },
-            {
-                "entryId": "ja:kanji:kou",
-                "relation": "spelling",
-                "position": 1
-            },
-            {
-                "entryId": "ja:word:reading-gakkou",
-                "relation": "pronunciation-readings",
-                "position": 0
-            },
-            {
-                "entryId": "ja:def:gakkou",
-                "relation": "definitions"
-            }
-        ]
-    },
-    {
-        "id": "ja:word:sensei",
-        "label": "先生",
-        "fields": {
-            "jlpt_level": "N5",
-            "pronunciation": ["せんせい"]
-        },
-        "references": [
-            {
-                "entryId": "ja:kanji:e58588",
-                "relation": "spelling",
-                "position": 0
-            },
-            {
-                "entryId": "ja:kanji:e7949f",
-                "relation": "spelling",
-                "position": 1
-            },
-            {
-                "entryId": "ja:word:reading-sensei",
-                "relation": "pronunciation-readings",
-                "position": 0
-            },
-            {
-                "entryId": "ja:def:sensei",
-                "relation": "definitions"
-            }
-        ]
-    },
-    {
-        "id": "ja:word:gakusei",
-        "label": "学生",
-        "fields": {
-            "jlpt_level": "N5",
-            "pronunciation": ["がくせい"]
-        },
-        "references": [
-            {
-                "entryId": "ja:kanji:gaku",
-                "relation": "spelling",
-                "position": 0
-            },
-            {
-                "entryId": "ja:kanji:e7949f",
-                "relation": "spelling",
-                "position": 1
-            },
-            {
-                "entryId": "ja:word:reading-gakusei",
-                "relation": "pronunciation-readings",
-                "position": 0
-            },
-            {
-                "entryId": "ja:def:gakusei",
-                "relation": "definitions"
-            }
-        ]
-    },
-    {
-        "id": "ja:word:tomodachi",
-        "label": "友達",
-        "fields": {
-            "jlpt_level": "N5",
-            "pronunciation": ["ともだち"]
-        },
-        "references": [
-            {
-                "entryId": "ja:kanji:e58f8b",
-                "relation": "spelling",
-                "position": 0
-            },
-            {
-                "entryId": "ja:kanji:e98194",
-                "relation": "spelling",
-                "position": 1
-            },
-            {
-                "entryId": "ja:word:reading-tomodachi",
-                "relation": "pronunciation-readings",
-                "position": 0
-            },
-            {
-                "entryId": "ja:def:tomodachi",
-                "relation": "definitions"
-            }
-        ]
-    },
-    {
-        "id": "ja:word:taberu",
-        "label": "食べる",
-        "fields": {
-            "jlpt_level": "N5",
-            "pronunciation": ["たべる"]
-        },
-        "references": [
-            {
-                "entryId": "ja:kanji:e9a39f",
-                "relation": "spelling",
-                "position": 0
-            },
-            {
-                "entryId": "ja:word:reading-taberu",
-                "relation": "pronunciation-readings",
-                "position": 0
-            },
-            {
-                "entryId": "ja:def:taberu",
-                "relation": "definitions"
-            }
-        ]
-    },
-    {
-        "id": "ja:word:nomu",
-        "label": "飲む",
-        "fields": {
-            "jlpt_level": "N5",
-            "pronunciation": ["のむ"]
-        },
-        "references": [
-            {
-                "entryId": "ja:kanji:e9a3b2",
-                "relation": "spelling",
-                "position": 0
-            },
-            {
-                "entryId": "ja:word:reading-nomu",
-                "relation": "pronunciation-readings",
-                "position": 0
-            },
-            {
-                "entryId": "ja:def:nomu",
-                "relation": "definitions"
-            }
-        ]
-    },
-    {
-        "id": "ja:word:miru",
-        "label": "見る",
-        "fields": {
-            "jlpt_level": "N5",
-            "pronunciation": ["みる"]
-        },
-        "references": [
-            {
-                "entryId": "ja:kanji:e8a68b",
-                "relation": "spelling",
-                "position": 0
-            },
-            {
-                "entryId": "ja:word:reading-miru",
-                "relation": "pronunciation-readings",
-                "position": 0
-            },
-            {
-                "entryId": "ja:def:miru",
-                "relation": "definitions"
-            }
-        ]
-    },
-    {
-        "id": "ja:word:iku",
-        "label": "行く",
-        "fields": {
-            "jlpt_level": "N5",
-            "pronunciation": ["いく"]
+            "pronunciation": ["いかない"]
         },
         "references": [
             {
@@ -662,46 +37,705 @@
                 "position": 0
             },
             {
-                "entryId": "ja:word:reading-iku",
+                "entryId": "ja:word:reading-ikanai",
                 "relation": "pronunciation-readings",
                 "position": 0
             },
             {
-                "entryId": "ja:def:iku",
+                "entryId": "ja:def:word-ikanai",
                 "relation": "definitions"
             }
         ]
     },
     {
-        "id": "ja:word:kuru",
-        "label": "来る",
+        "id": "ja:word:nomanai",
+        "label": "飲まない",
         "fields": {
             "jlpt_level": "N5",
-            "pronunciation": ["くる"]
+            "pronunciation": ["のまない"]
         },
         "references": [
             {
-                "entryId": "ja:kanji:e69da5",
+                "entryId": "ja:kanji:e9a3b2",
                 "relation": "spelling",
                 "position": 0
             },
             {
-                "entryId": "ja:word:reading-kuru",
+                "entryId": "ja:word:reading-nomanai",
                 "relation": "pronunciation-readings",
                 "position": 0
             },
             {
-                "entryId": "ja:def:kuru",
+                "entryId": "ja:def:word-nomanai",
                 "relation": "definitions"
             }
         ]
     },
     {
-        "id": "ja:word:ookii",
-        "label": "大きい",
+        "id": "ja:word:ichijikan",
+        "label": "一時間",
         "fields": {
             "jlpt_level": "N5",
-            "pronunciation": ["おおきい"]
+            "pronunciation": ["いちじかん"]
+        },
+        "references": [
+            {
+                "entryId": "ja:kanji:e4b880",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:kanji:e69982",
+                "relation": "spelling",
+                "position": 1
+            },
+            {
+                "entryId": "ja:kanji:e99693",
+                "relation": "spelling",
+                "position": 2
+            },
+            {
+                "entryId": "ja:word:reading-ichijikan",
+                "relation": "pronunciation-readings",
+                "position": 0
+            },
+            {
+                "entryId": "ja:def:word-ichijikan",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:muzukashikunai",
+        "label": "難しくない",
+        "fields": {
+            "jlpt_level": "N5",
+            "pronunciation": ["むずかしくない"]
+        },
+        "references": [
+            {
+                "entryId": "ja:kanji:e99ba3",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:word:reading-muzukashikunai",
+                "relation": "pronunciation-readings",
+                "position": 0
+            },
+            {
+                "entryId": "ja:def:word-muzukashikunai",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:kyou",
+        "label": "今日",
+        "fields": {
+            "jlpt_level": "N5",
+            "pronunciation": ["きょう"]
+        },
+        "references": [
+            {
+                "entryId": "ja:kanji:e4bb8a",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:kanji:nichi",
+                "relation": "spelling",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:reading-kyou",
+                "relation": "pronunciation-readings",
+                "position": 0
+            },
+            {
+                "entryId": "ja:def:word-kyou",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:machigaeru",
+        "label": "間違える",
+        "fields": {
+            "jlpt_level": "N5",
+            "pronunciation": ["まちがえる"]
+        },
+        "references": [
+            {
+                "entryId": "ja:kanji:e99693",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:kanji:e98195",
+                "relation": "spelling",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:reading-machigaeru",
+                "relation": "pronunciation-readings",
+                "position": 0
+            },
+            {
+                "entryId": "ja:def:word-machigaeru",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:hon",
+        "label": "本",
+        "fields": {
+            "jlpt_level": "N5",
+            "pronunciation": ["ほん"]
+        },
+        "references": [
+            {
+                "entryId": "ja:kanji:hon",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:word:reading-hon",
+                "relation": "pronunciation-readings",
+                "position": 0
+            },
+            {
+                "entryId": "ja:def:word-hon",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:yomu",
+        "label": "読む",
+        "fields": {
+            "jlpt_level": "N5",
+            "pronunciation": ["よむ"]
+        },
+        "references": [
+            {
+                "entryId": "ja:kanji:e8aaad",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:word:reading-yomu",
+                "relation": "pronunciation-readings",
+                "position": 0
+            },
+            {
+                "entryId": "ja:def:word-yomu",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:kowakunai",
+        "label": "怖くない",
+        "fields": {
+            "jlpt_level": "N5",
+            "pronunciation": ["こわくない"]
+        },
+        "references": [
+            {
+                "entryId": "ja:kanji:e68096",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:word:reading-kowakunai",
+                "relation": "pronunciation-readings",
+                "position": 0
+            },
+            {
+                "entryId": "ja:def:word-kowakunai",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:hanaseru",
+        "label": "話せる",
+        "fields": {
+            "jlpt_level": "N5",
+            "pronunciation": ["はなせる"]
+        },
+        "references": [
+            {
+                "entryId": "ja:kanji:e8a9b1",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:word:reading-hanaseru",
+                "relation": "pronunciation-readings",
+                "position": 0
+            },
+            {
+                "entryId": "ja:def:word-hanaseru",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:tsuyoi",
+        "label": "強い",
+        "fields": {
+            "jlpt_level": "N5",
+            "pronunciation": ["つよい"]
+        },
+        "references": [
+            {
+                "entryId": "ja:kanji:e5bcb7",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:word:reading-tsuyoi",
+                "relation": "pronunciation-readings",
+                "position": 0
+            },
+            {
+                "entryId": "ja:def:word-tsuyoi",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:muzukashii",
+        "label": "難しい",
+        "fields": {
+            "jlpt_level": "N5",
+            "pronunciation": ["むずかしい"]
+        },
+        "references": [
+            {
+                "entryId": "ja:kanji:e99ba3",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:word:reading-muzukashii",
+                "relation": "pronunciation-readings",
+                "position": 0
+            },
+            {
+                "entryId": "ja:def:word-muzukashii",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:tabe-stem",
+        "label": "食べ",
+        "fields": {
+            "jlpt_level": "N5",
+            "pronunciation": ["たべ"]
+        },
+        "references": [
+            {
+                "entryId": "ja:kanji:e9a39f",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:word:reading-tabe-stem",
+                "relation": "pronunciation-readings",
+                "position": 0
+            },
+            {
+                "entryId": "ja:def:word-tabe-stem",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:non-stem",
+        "label": "飲ん",
+        "fields": {
+            "jlpt_level": "N5",
+            "pronunciation": ["のん"]
+        },
+        "references": [
+            {
+                "entryId": "ja:kanji:e9a3b2",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:word:reading-non-stem",
+                "relation": "pronunciation-readings",
+                "position": 0
+            },
+            {
+                "entryId": "ja:def:word-non-stem",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:kangae",
+        "label": "考え",
+        "fields": {
+            "jlpt_level": "N5",
+            "pronunciation": ["かんがえ"]
+        },
+        "references": [
+            {
+                "entryId": "ja:kanji:e88083",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:word:reading-kangae",
+                "relation": "pronunciation-readings",
+                "position": 0
+            },
+            {
+                "entryId": "ja:def:word-kangae",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:aruku",
+        "label": "歩く",
+        "fields": {
+            "jlpt_level": "N5",
+            "pronunciation": ["あるく"]
+        },
+        "references": [
+            {
+                "entryId": "ja:kanji:e6ada9",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:word:reading-aruku",
+                "relation": "pronunciation-readings",
+                "position": 0
+            },
+            {
+                "entryId": "ja:def:word-aruku",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:ongaku",
+        "label": "音楽",
+        "fields": {
+            "jlpt_level": "N5",
+            "pronunciation": ["おんがく"]
+        },
+        "references": [
+            {
+                "entryId": "ja:kanji:e99fb3",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:kanji:e6a5bd",
+                "relation": "spelling",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:reading-ongaku",
+                "relation": "pronunciation-readings",
+                "position": 0
+            },
+            {
+                "entryId": "ja:def:word-ongaku",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:kiki-stem",
+        "label": "聞き",
+        "fields": {
+            "jlpt_level": "N5",
+            "pronunciation": ["きき"]
+        },
+        "references": [
+            {
+                "entryId": "ja:kanji:e8819e",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:word:reading-kiki-stem",
+                "relation": "pronunciation-readings",
+                "position": 0
+            },
+            {
+                "entryId": "ja:def:word-kiki-stem",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:ii",
+        "label": "いい",
+        "fields": {
+            "jlpt_level": "N5",
+            "pronunciation": ["いい"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:reading-ii",
+                "relation": "pronunciation-readings",
+                "position": 0
+            },
+            {
+                "entryId": "ja:def:word-ii",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:yon-stem",
+        "label": "読ん",
+        "fields": {
+            "jlpt_level": "N5",
+            "pronunciation": ["よん"]
+        },
+        "references": [
+            {
+                "entryId": "ja:kanji:e8aaad",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:word:reading-yon-stem",
+                "relation": "pronunciation-readings",
+                "position": 0
+            },
+            {
+                "entryId": "ja:def:word-yon-stem",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:neru",
+        "label": "寝る",
+        "fields": {
+            "jlpt_level": "N5",
+            "pronunciation": ["ねる"]
+        },
+        "references": [
+            {
+                "entryId": "ja:kanji:e5af9d",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:word:reading-neru",
+                "relation": "pronunciation-readings",
+                "position": 0
+            },
+            {
+                "entryId": "ja:def:word-neru",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:ocha",
+        "label": "お茶",
+        "fields": {
+            "jlpt_level": "N5",
+            "pronunciation": ["おちゃ"]
+        },
+        "references": [
+            {
+                "entryId": "ja:kanji:e88cb6",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:word:reading-ocha",
+                "relation": "pronunciation-readings",
+                "position": 0
+            },
+            {
+                "entryId": "ja:def:word-ocha",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:ashita",
+        "label": "明日",
+        "fields": {
+            "jlpt_level": "N5",
+            "pronunciation": ["あした"]
+        },
+        "references": [
+            {
+                "entryId": "ja:kanji:e6988e",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:kanji:nichi",
+                "relation": "spelling",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:reading-ashita",
+                "relation": "pronunciation-readings",
+                "position": 0
+            },
+            {
+                "entryId": "ja:def:word-ashita",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:kodomo",
+        "label": "子供",
+        "fields": {
+            "jlpt_level": "N5",
+            "pronunciation": ["こども"]
+        },
+        "references": [
+            {
+                "entryId": "ja:kanji:e5ad90",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:kanji:e4be9b",
+                "relation": "spelling",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:reading-kodomo",
+                "relation": "pronunciation-readings",
+                "position": 0
+            },
+            {
+                "entryId": "ja:def:word-kodomo",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:itta",
+        "label": "行った",
+        "fields": {
+            "jlpt_level": "N5",
+            "pronunciation": ["いった"]
+        },
+        "references": [
+            {
+                "entryId": "ja:kanji:e8a18c",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:word:reading-itta",
+                "relation": "pronunciation-readings",
+                "position": 0
+            },
+            {
+                "entryId": "ja:def:word-itta",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:maniawanai",
+        "label": "間に合わない",
+        "fields": {
+            "jlpt_level": "N5",
+            "pronunciation": ["まにあわない"]
+        },
+        "references": [
+            {
+                "entryId": "ja:kanji:e99693",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:kanji:e59088",
+                "relation": "spelling",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:reading-maniawanai",
+                "relation": "pronunciation-readings",
+                "position": 0
+            },
+            {
+                "entryId": "ja:def:word-maniawanai",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:person",
+        "label": "人",
+        "fields": {
+            "jlpt_level": "N5",
+            "pronunciation": ["ひと"]
+        },
+        "references": [
+            {
+                "entryId": "ja:kanji:hito",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:word:reading-person",
+                "relation": "pronunciation-readings",
+                "position": 0
+            },
+            {
+                "entryId": "ja:def:word-person",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:chigau",
+        "label": "違う",
+        "fields": {
+            "jlpt_level": "N5",
+            "pronunciation": ["ちがう"]
+        },
+        "references": [
+            {
+                "entryId": "ja:kanji:e98195",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:word:reading-chigau",
+                "relation": "pronunciation-readings",
+                "position": 0
+            },
+            {
+                "entryId": "ja:def:word-chigau",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:taisetsu",
+        "label": "大切",
+        "fields": {
+            "jlpt_level": "N5",
+            "pronunciation": ["たいせつ"]
         },
         "references": [
             {
@@ -710,64 +744,94 @@
                 "position": 0
             },
             {
-                "entryId": "ja:word:reading-ookii",
+                "entryId": "ja:kanji:e58887",
+                "relation": "spelling",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:reading-taisetsu",
                 "relation": "pronunciation-readings",
                 "position": 0
             },
             {
-                "entryId": "ja:def:ookii",
+                "entryId": "ja:def:word-taisetsu",
                 "relation": "definitions"
             }
         ]
     },
     {
-        "id": "ja:word:chiisai",
-        "label": "小さい",
+        "id": "ja:word:hataraku",
+        "label": "働く",
         "fields": {
             "jlpt_level": "N5",
-            "pronunciation": ["ちいさい"]
+            "pronunciation": ["はたらく"]
         },
         "references": [
             {
-                "entryId": "ja:kanji:e5b08f",
+                "entryId": "ja:kanji:e5838d",
                 "relation": "spelling",
                 "position": 0
             },
             {
-                "entryId": "ja:word:reading-chiisai",
+                "entryId": "ja:word:reading-hataraku",
                 "relation": "pronunciation-readings",
                 "position": 0
             },
             {
-                "entryId": "ja:def:chiisai",
+                "entryId": "ja:def:word-hataraku",
                 "relation": "definitions"
             }
         ]
     },
     {
-        "id": "ja:word:naosu",
-        "label": "直す",
+        "id": "ja:word:manabu",
+        "label": "学ぶ",
         "fields": {
             "jlpt_level": "N5",
-            "pronunciation": ["なおす"]
+            "pronunciation": ["まなぶ"]
         },
         "references": [
             {
-                "entryId": "ja:kanji:e79bb4",
+                "entryId": "ja:kanji:gaku",
                 "relation": "spelling",
                 "position": 0
             },
             {
-                "entryId": "ja:word:reading-naosu",
+                "entryId": "ja:word:reading-manabu",
                 "relation": "pronunciation-readings",
                 "position": 0
             },
             {
-                "entryId": "ja:def:naosu-fix",
+                "entryId": "ja:def:word-manabu",
                 "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:eigo",
+        "label": "英語",
+        "fields": {
+            "jlpt_level": "N5",
+            "pronunciation": ["えいご"]
+        },
+        "references": [
+            {
+                "entryId": "ja:kanji:e88bb1",
+                "relation": "spelling",
+                "position": 0
             },
             {
-                "entryId": "ja:def:naosu-correct",
+                "entryId": "ja:kanji:go",
+                "relation": "spelling",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:reading-eigo",
+                "relation": "pronunciation-readings",
+                "position": 0
+            },
+            {
+                "entryId": "ja:def:word-eigo",
                 "relation": "definitions"
             }
         ]

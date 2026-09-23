@@ -157,3 +157,7 @@ Setze `protected: true` im Inhaltsmanifest des Anbieters. Für jeden Satz ergebe
 ## Externer Paketvertrag aus PR 226
 
 Manifest- und Schemametadaten dürfen nur endliche JSON-kompatible Werte enthalten und müssen Bibliotheks-Roundtrips unverändert überstehen. Integrierte Feldtypen werden bevorzugt; jeder Erweiterungstyp benötigt eine deklarative Validierungsregel. Für mehrere Medien werden Listenmedientypen verwendet; `detail.filterable: true` wird nur gesetzt, wenn ein Nicht-Badge-Feld als Lernfilter dienen soll. Schema-Revisionen und semantische Modulversionen bleiben unabhängig.
+
+## Kanji-basierter Wortschatz und Korpusvielfalt
+
+Verwende die übliche Kanji-haltige Form als primäre Bezeichnung für sichtbaren Wortschatz, sofern sie existiert; reine Kana-Wortschatzdatensätze bleiben üblichen Kana-Schreibweisen und vollständigen ausgeblendeten Lesungen vorbehalten. Große Inhaltserweiterungen werden als Korpus geprüft: unterschiedliche Substantive, Verben, Themen und Satzstrukturen sind erforderlich; wiederholtes Austauschen um ein einziges Ankerwort wird auch bei formal gültigen Beziehungen abgelehnt.
