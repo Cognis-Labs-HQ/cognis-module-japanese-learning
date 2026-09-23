@@ -283,3 +283,9 @@ Jede Satzaussprache wird nun über einen verborgenen Datensatz der vollständige
 Der lexikalische Tageszähler `か` ist nun sichtbares Vokabular der Klasse `lexical:counter` und kein verborgener Implementierungsdatensatz für eine Kanji-Lesung. Neue Prüfungen des gesamten Graphen lehnen vorwärts gerichtete Kompositionszyklen ab und verlangen, dass Kana die Lernverknüpfung beenden. Die verbleibende Rücknavigation zwischen gleich bezeichneten Einträgen ist als Folgemaßnahme für den Study-Library-Host dokumentiert, da das Modul die notwendige Schreibbeziehung vom Wort zum Kanji beibehalten muss.
 
 - [07f7a0c](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/07f7a0c2e298debdc71965f63a380f5f84fc8c37)
+
+## Direkte Kana-Navigation für Lesungen
+
+Titel ausgeblendeter Aussprachedatensätze setzen sich jetzt direkt aus ihren einzelnen atomaren Kana-Links zusammen. Beim Öffnen einer Kanji-Lesung wird nicht mehr über eine weitere vom Kanji abgeleitete Lesungskarte navigiert und die alternative Schreibweise erscheint nicht mehr im Kartentiteldetail.
+
+- [631e76b6c2471aff02f37e982ece772fe7ad266c](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/631e76b6c2471aff02f37e982ece772fe7ad266c)

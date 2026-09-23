@@ -160,3 +160,7 @@ Single-Kanji vocabulary now uses a hidden complete-pronunciation wrapper before 
 ## Linked sentence readings and reviewed practice batch
 
 Every sentence pronunciation now opens a hidden complete-reading record whose segments resolve through existing hidden vocabulary and atomic particle Kana; unlinked pronunciation text is no longer the default. Eight reviewed sentences add varied practice for drinking water, studying Japanese, travel, animals, size, and walking, with new fully linked `学ぶ` and `歩く` vocabulary.
+
+## Direct Kana Reading Titles
+
+Hidden pronunciation records now compose their titles directly from atomic Kana. Opening a Kanji pronunciation therefore leads to individually linked Kana instead of routing back through another reading or Kanji card, and the title no longer presents an alternate-spelling detail.

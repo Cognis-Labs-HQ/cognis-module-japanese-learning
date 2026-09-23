@@ -283,3 +283,9 @@ Setiap pelafalan kalimat kini diselesaikan melalui rekaman pelafalan lengkap ter
 Penghitung hari leksikal `か` kini merupakan Kosakata `lexical:counter` yang terlihat, bukan rekaman implementasi bacaan Kanji yang tersembunyi. Pemeriksaan seluruh graf yang baru menolak siklus komposisi maju dan mewajibkan Kana mengakhiri penelusuran tautan pembelajaran. Masalah navigasi balik berlabel sama yang tersisa dicatat sebagai tindak lanjut host Study Library karena modul harus mempertahankan relasi ejaan kata-ke-Kanji yang diwajibkan.
 
 - [07f7a0c](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/07f7a0c2e298debdc71965f63a380f5f84fc8c37)
+
+## Navigasi Bacaan Kana Langsung
+
+Judul pelafalan tersembunyi kini disusun langsung dari tautan Kana atomik masing-masing. Membuka bacaan Kanji tidak lagi mengarah melalui kartu bacaan turunan Kanji lain atau menampilkan ejaan alternatif pada detail judul kartu.
+
+- [631e76b6c2471aff02f37e982ece772fe7ad266c](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/631e76b6c2471aff02f37e982ece772fe7ad266c)

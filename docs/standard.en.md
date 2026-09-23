@@ -161,3 +161,7 @@ A sentence pronunciation field links to exactly one hidden complete-reading Voca
 ## Acyclic traversal and lexical readings
 
 Authored study links form a directed acyclic graph and Kana characters terminate traversal. Kanji may resolve pronunciations through hidden reading Vocabulary to ordered Kana, but those readings never link back to the Kanji or its lexical users. A reading with an independent lexical meaning, such as the day-counter `か`, is visible Vocabulary with a semantic class rather than `reading:kanji`.
+
+## Direct Kana Composition for Reading Titles
+
+Every hidden pronunciation record composes its complete title directly from ordered atomic Kana through `kana-spelling`. For reading records, this relationship has the `composition` presentation role: do not route a reading title through `word-spelling` or `reading-kana`, because doing so creates recursive or misleading card navigation.

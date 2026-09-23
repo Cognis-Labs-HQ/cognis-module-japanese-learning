@@ -161,3 +161,7 @@ Das Aussprachefeld eines Satzes verweist über `pronunciation-readings` auf gena
 ## Zyklenfreie Navigation und lexikalische Lesungen
 
 Verfasste Lernverknüpfungen bilden einen gerichteten azyklischen Graphen, und Kana-Zeichen beenden die Navigation. Kanji dürfen ihre Aussprache über verborgene Lesevokabeln in geordnete Kana auflösen; diese Lesungen verweisen jedoch niemals zurück auf das Kanji oder seine lexikalischen Nutzer. Eine Lesung mit eigener lexikalischer Bedeutung, etwa der Tageszähler `か`, ist sichtbares Vokabular mit einer semantischen Klasse und nicht `reading:kanji`.
+
+## Direkte Kana-Zusammensetzung für Lesungstitel
+
+Jeder ausgeblendete Aussprachedatensatz setzt seinen vollständigen Titel über `kana-spelling` direkt aus geordneten atomaren Kana zusammen. Für Lesungsdatensätze hat diese Beziehung die Darstellungsrolle `composition`: Ein Lesungstitel darf nicht über `word-spelling` oder `reading-kana` geführt werden, da dies eine rekursive oder irreführende Kartennavigation erzeugt.

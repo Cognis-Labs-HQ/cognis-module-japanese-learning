@@ -283,3 +283,9 @@ Cognis PR #214 に合わせ、名前空間の所有権、ローカライズ済�
 語彙的な日数助数の `か` を、非表示の漢字読み実装レコードではなく、表示対象の `lexical:counter` 語彙にしました。新しいグラフ全体の検査は、前向きの構成リンクにおける循環を拒否し、かなで学習リンクの探索が終了することを要求します。単語から漢字への必須の綴り関係はモジュールに残す必要があるため、同じラベル間の逆方向ナビゲーションは Study Library ホスト側のフォローアップとして記録しました。
 
 - [07f7a0c](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/07f7a0c2e298debdc71965f63a380f5f84fc8c37)
+
+## 読みからかなへの直接ナビゲーション
+
+非表示の発音タイトルを、個々の原子的なかなリンクから直接構成するようにしました。漢字の読みを開いても、別の漢字由来の読みカードへ戻ることがなく、カードタイトルの詳細に代替表記も表示されません。
+
+- [631e76b6c2471aff02f37e982ece772fe7ad266c](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/631e76b6c2471aff02f37e982ece772fe7ad266c)

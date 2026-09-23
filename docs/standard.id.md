@@ -161,3 +161,7 @@ Bidang pelafalan kalimat menaut ke tepat satu rekaman Kosakata bacaan lengkap te
 ## Penelusuran tanpa siklus dan bacaan leksikal
 
 Tautan pembelajaran yang ditulis membentuk graf berarah tanpa siklus, dan karakter Kana mengakhiri penelusuran. Kanji dapat menyelesaikan pelafalannya melalui Kosakata bacaan tersembunyi ke Kana terurut, tetapi bacaan tersebut tidak pernah menaut kembali ke Kanji atau pengguna leksikalnya. Bacaan yang mempunyai makna leksikal mandiri, seperti penghitung hari `か`, merupakan Kosakata terlihat dengan kelas semantik, bukan `reading:kanji`.
+
+## Komposisi Kana Langsung untuk Judul Bacaan
+
+Setiap data pelafalan tersembunyi menyusun judul lengkapnya langsung dari Kana atomik yang terurut melalui `kana-spelling`. Untuk data bacaan, relasi ini memiliki peran presentasi `composition`: jangan arahkan judul bacaan melalui `word-spelling` atau `reading-kana`, karena hal itu menghasilkan navigasi kartu yang rekursif atau menyesatkan.

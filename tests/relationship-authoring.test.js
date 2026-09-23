@@ -90,10 +90,7 @@ test("vocabulary compositions use the closest structural records", () => {
         ["ja:word:reading-nihon", "ja:word:reading-go"],
     );
     assert.equal(
-        labelsFor(recordsById.get("ja:word:reading-nihon"), [
-            "word-spelling",
-            "kana-spelling",
-        ]),
+        labelsFor(recordsById.get("ja:word:reading-nihon"), ["kana-spelling"]),
         "にほん",
     );
 });

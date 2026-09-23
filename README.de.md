@@ -160,3 +160,7 @@ Wortschatz mit einem einzelnen Kanji verwendet nun einen verborgenen Wrapper fü
 ## Verknüpfte Satzlesungen und geprüfte Übungsserie
 
 Jede Satzaussprache öffnet nun einen verborgenen vollständigen Lesungsdatensatz, dessen Abschnitte über vorhandenen verborgenen Wortschatz und atomare Partikel-Kana aufgelöst werden; unverknüpfter Aussprachetext ist nicht mehr der Standard. Acht geprüfte Sätze ergänzen abwechslungsreiche Übungen zu Wassertrinken, Japanischlernen, Reisen, Tieren, Größe und Gehen sowie die vollständig verknüpften Wörter `学ぶ` und `歩く`.
+
+## Direkt mit Kana verknüpfte Lesungstitel
+
+Ausgeblendete Aussprachedatensätze setzen ihre Titel jetzt direkt aus atomaren Kana zusammen. Das Öffnen einer Kanji-Aussprache führt daher zu einzeln verknüpften Kana, statt über eine weitere Lese- oder Kanji-Karte zurückzuführen; im Titel wird außerdem kein Detail zur alternativen Schreibweise mehr angezeigt.

@@ -280,7 +280,7 @@ test("sentence pronunciations resolve through vocabulary and atomic Kana", () =>
         const reading = recordsById.get(readingReference.entryId);
         const composition = orderedReferences(
             reading,
-            new Set(["word-spelling", "reading-kana"]),
+            new Set(["kana-spelling"]),
         );
         assert.equal(reading.hidden, true);
         assert.equal(reading.label, sentence.fields.pronunciation[0]);
@@ -294,9 +294,10 @@ test("sentence pronunciations resolve through vocabulary and atomic Kana", () =>
         assert.ok(
             composition.every(({ entryId, relation }) => {
                 const target = recordsById.get(entryId);
-                return relation === "reading-kana"
-                    ? target.layer === "characters"
-                    : target.layer === "words" && target.hidden === true;
+                return (
+                    relation === "kana-spelling" &&
+                    target.layer === "characters"
+                );
             }),
         );
     }
@@ -331,27 +332,52 @@ test("visible core vocabulary uses Kanji without skipping reading layers", () =>
     }
 });
 
-test("inflected readings compose meaningful stems and atomic Kana suffixes", () => {
+test("hidden readings compose directly from atomic Kana", () => {
     const records = loadRecords();
     const recordsById = new Map(records.map((record) => [record.id, record]));
     const reading = recordsById.get("ja:word:reading-naosu");
     const composition = orderedReferences(
         reading,
-        new Set(["word-spelling", "reading-kana"]),
+        new Set(["kana-spelling"]),
     ).map(({ entryId, relation }) => ({
         label: recordsById.get(entryId).label,
         relation,
     }));
 
     assert.deepEqual(composition, [
-        { label: "なお", relation: "word-spelling" },
-        { label: "す", relation: "reading-kana" },
+        { label: "な", relation: "kana-spelling" },
+        { label: "お", relation: "kana-spelling" },
+        { label: "す", relation: "kana-spelling" },
     ]);
+});
+
+test("reading titles use atomic Kana without recursive word links", () => {
+    const records = loadRecords();
+    const recordsById = new Map(records.map((record) => [record.id, record]));
+    const wordLayer = schema.layers.find(({ id }) => id === "words");
     assert.equal(
-        reading.references.some(({ relation }) => relation === "kana-spelling"),
-        false,
-        "a partial Kana suffix must not masquerade as a complete alternate spelling",
+        wordLayer.relationships.find(({ id }) => id === "kana-spelling")
+            .presentationRole,
+        "composition",
     );
+
+    for (const reading of records.filter(
+        ({ layer, hidden }) => layer === "words" && hidden === true,
+    )) {
+        assertOrderedComposition(
+            reading,
+            new Set(["kana-spelling"]),
+            reading.label,
+            recordsById,
+        );
+        assert.equal(
+            reading.references.some(({ relation }) =>
+                ["word-spelling", "reading-kana"].includes(relation),
+            ),
+            false,
+            `${reading.id} must not route its title back through another word`,
+        );
+    }
 });
 
 test("hidden readings do not show duplicate-labeled Used By entries", () => {

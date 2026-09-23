@@ -160,3 +160,7 @@ Kosakata satu Kanji kini memakai pembungkus pelafalan lengkap tersembunyi sebelu
 ## Bacaan kalimat tertaut dan kumpulan latihan tinjauan
 
 Setiap pelafalan kalimat kini membuka rekaman bacaan lengkap tersembunyi yang segmennya diselesaikan melalui kosakata tersembunyi yang ada dan Kana partikel atomik; teks pelafalan tanpa tautan bukan lagi perilaku bawaan. Delapan kalimat yang ditinjau menambah latihan beragam tentang minum air, belajar bahasa Jepang, perjalanan, hewan, ukuran, dan berjalan, beserta kosakata `学ぶ` dan `歩く` yang tertaut penuh.
+
+## Judul Bacaan dengan Tautan Kana Langsung
+
+Data pelafalan tersembunyi kini menyusun judulnya langsung dari Kana atomik. Membuka pelafalan Kanji karena itu menuju ke setiap Kana yang tertaut, bukan kembali melalui kartu bacaan atau Kanji lain, dan judul tidak lagi menampilkan detail ejaan alternatif.

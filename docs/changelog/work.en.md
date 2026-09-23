@@ -283,3 +283,9 @@ Every sentence pronunciation now resolves through a hidden complete-pronunciatio
 The lexical day-counter `か` is now visible `lexical:counter` Vocabulary rather than a hidden Kanji-reading implementation record. New whole-graph checks reject forward composition cycles and require Kana to terminate study-link traversal. The remaining duplicate-label back-navigation concern is recorded as a Study Library host follow-up because the module must retain the required word-to-Kanji spelling edge.
 
 - [07f7a0c](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/07f7a0c2e298debdc71965f63a380f5f84fc8c37)
+
+## Direct Kana Reading Navigation
+
+Hidden pronunciation titles now compose directly from their individual atomic Kana links. Opening a Kanji reading no longer routes through another Kanji-derived reading card or exposes the alternate spelling in the card-title detail.
+
+- [631e76b6c2471aff02f37e982ece772fe7ad266c](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/631e76b6c2471aff02f37e982ece772fe7ad266c)
