@@ -141,34 +141,6 @@ Ausgeblendete Wortschatz-Lesungseinträge erhalten eine eigene Definition in all
 
 Das Paket enthält nun mehr als dreißig zusätzliche alltägliche Wortschatzeinträge, zehn weitere Partikeln und acht vollständig zusammengesetzte Beispielsätze, ausschließlich als deklaratives JSON unter `data/library/content/`. Echte Polysemie darf mehrere lokalisierte Definitionsverweise in einem Eintrag verwenden (`なおす`: reparieren/korrigieren), während Homophone wie `はし` (Brücke/Essstäbchen), `あめ` (Regen/Bonbon), `かみ` (Papier/Haar/Gottheit) und `はな` (Blume/Nase) getrennte Wortschatzeinträge mit eigenen Definitionen bleiben.
 
-## Umfassende Partikelübungen
+## Geprüfter Kerninhalt
 
-Der Partikelbestand umfasst nun mehr als sechzig einfache, zusammengesetzte, verbindende, einschränkende, aufzählende und satzabschließende Formen. Jede Partikel bleibt auch bei seltener Verwendung verfügbar und wird von mindestens einem geordneten Beispielsatz referenziert, damit ihre Beziehungen im Kontext erkundet werden können.
-
-## Navigation durch Partikelbeispiele
-
-Partikelbeispiele verwenden nun verfassten Kanji-Wortschatz wie `学校`. Jeder Satz öffnet dadurch einen vollständigen Pfad Satz → Wortschatz → Kanji → ausgeblendeter Lesewortschatz → atomares Kana, statt bei reinem Kana-Wortschatz zu enden.
-
-## Bedeutungsvolle Partikelsätze
-
-Definitionen von Partikelsätzen enthalten nun direkte lokalisierte Bedeutungen statt redaktioneller Bezeichnungen wie „Partikelbeispiel“. Die zugehörigen Lerninhalte verwenden knappe japanische Sätze und Wendungen, deren verknüpfter Wortschatz und Partikeln den angezeigten Inhalt rekonstruieren.
-
-## Geprüfter Inhaltsgraph des Anbieters
-
-Anbieterinhalte sind nun vor benutzereigenen Verschiebungen und Löschungen geschützt. Der Tierwortschatz verwendet die üblichen Schreibweisen `猫` und `犬`, verknüpft diese über ihre Kanji-Datensätze mit vollständigen ausgeblendeten Lesungen `ねこ` und `いぬ` und rekonstruiert diese Lesungen aus atomaren Kana. Satzbezeichnungen und Aussprachen stammen aus demselben geordneten Wortschatz- und Partikelgraphen.
-
-## Paketvertrag aus Cognis PR 226
-
-Das Paket veröffentlicht nun validierte JSON-kompatible Katalogmetadaten und ausdrücklich filterbare Felder für Schriftsystem und JLPT gemäß dem Vertrag für externe Pakete aus Cognis PR #226. Es verwendet weiterhin integrierte Feldtypen und geschützten Anbieterbesitz; Schema-Revision `40` bleibt unabhängig von Modulversion `2.2.5`.
-
-## Abwechslungsreiche Kanji-basierte Lerninhalte
-
-Sichtbarer Wortschatz verwendet nun die übliche japanische Schreibweise wie `私`, `水`, `電車`, `先生`, `食べる` und `行く`, während vollständige ausgeblendete Lesungen den Kana-Pfad erhalten. Die Partikelsammlung besteht nun aus 51 unterschiedlichen natürlichen Konstruktionen zu Menschen, Tieren, Wetter, Essen, Reisen, Lesen, Musik, Zeit und Arbeit, statt Partikeln wiederholt um `学校` auszutauschen.
-
-## Klassifizierte, segmentweise verknüpfte Lesungen
-
-Jeder Provider-Eintrag trägt nun eine namensraumgebundene semantische Klasse gemäß dem aktuellen Cognis-Library-Vertrag. Vollständige Aussprachen bewahren ihre innere Struktur: Von Kanji abgeleitete Abschnitte verweisen auf verborgenes Kanji-Lesevokabular, flektierende Kana auf atomare Kana. Dadurch wird `強い` über `つよ` und `い` aufgelöst, statt `つよい` unverknüpft anzuzeigen.
-
-## Schutzregeln für Ebenenverknüpfungen
-
-Die Pakettests leiten Verknüpfungserwartungen nun aus der semantischen Rolle jeder Schemaebene ab, lehnen verwaiste Anbieter-Datensätze ab und Mutationstests prüfen jede verknüpfte Ebene, damit getrennte Lerninhalte nicht unbemerkt validiert werden.
+Die ungeprüfte Massenerweiterung von Partikeln und Wortschatz wurde entfernt. Im verbleibenden kompakten Kern ist jeder verfasste Pfad vollständig; Kana-basierte Karten wie `せんせい` verknüpfen direkt und in Reihenfolge `せ`, `ん`, `せ` und `い`, statt eine nicht verknüpfte Kanji-Aussprache anzuzeigen.

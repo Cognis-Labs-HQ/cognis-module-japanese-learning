@@ -409,6 +409,10 @@ test("kanji readings reference distinct kana-backed vocabulary entries", () => {
     const kanjiEntries = records.filter(
         ({ layer }) => layer === compoundLayer.id,
     );
+    const kanjiLabels = new Set(kanjiEntries.map(({ label }) => label));
+    assert.ok(
+        [...words.values()].every(({ label }) => !kanjiLabels.has(label)),
+    );
     for (const kanji of kanjiEntries) {
         const readingWords = kanji.references
             .filter(({ relation }) => relation === "readings")
@@ -696,15 +700,10 @@ test("every vocabulary entry participates in the Kana deletion dependency graph"
 
     const suki = recordsById.get("ja:word:suki");
     assert.deepEqual(
-        suki.references.filter(
-            ({ relation }) => relation === "pronunciation-readings",
-        ),
+        suki.references.filter(({ relation }) => relation === "kana-spelling"),
         [
-            {
-                entryId: "ja:word:reading-suki",
-                relation: "pronunciation-readings",
-                position: 0,
-            },
+            { entryId: "ja:char:su", relation: "kana-spelling", position: 0 },
+            { entryId: "ja:char:ki", relation: "kana-spelling", position: 1 },
         ],
     );
 });

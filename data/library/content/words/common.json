@@ -73,14 +73,19 @@
         },
         "references": [
             {
-                "entryId": "ja:word:reading-nichi-ni",
-                "relation": "word-spelling",
+                "entryId": "ja:char:ni",
+                "relation": "kana-spelling",
                 "position": 0
             },
             {
-                "entryId": "ja:word:reading-hon",
-                "relation": "word-spelling",
+                "entryId": "ja:char:ho",
+                "relation": "kana-spelling",
                 "position": 1
+            },
+            {
+                "entryId": "ja:char:n",
+                "relation": "kana-spelling",
+                "position": 2
             },
             {
                 "entryId": "ja:def:nihon",
@@ -363,21 +368,21 @@
     },
     {
         "id": "ja:word:suki",
-        "label": "好き",
+        "label": "すき",
         "fields": {
             "jlpt_level": "N5",
             "pronunciation": ["すき"]
         },
         "references": [
             {
-                "entryId": "ja:kanji:e5a5bd",
-                "relation": "spelling",
+                "entryId": "ja:char:su",
+                "relation": "kana-spelling",
                 "position": 0
             },
             {
-                "entryId": "ja:word:reading-suki",
-                "relation": "pronunciation-readings",
-                "position": 0
+                "entryId": "ja:char:ki",
+                "relation": "kana-spelling",
+                "position": 1
             },
             {
                 "entryId": "ja:def:suki",

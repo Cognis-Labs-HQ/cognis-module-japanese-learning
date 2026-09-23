@@ -242,56 +242,8 @@ Mehr als dreißig alltägliche Wortschatzeinträge, zehn Partikeln und acht voll
 
 - [a538833](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/a538833e990505cad9b817cb9995b1cf2b8bab5e)
 
-## Umfassender Partikelbestand
+## Geprüfter Kern und Kana-Verknüpfungen wiederhergestellt
 
-Der Bestand umfasst nun mehr als sechzig Kasus-, Binde-, Konjunktiv-, Aufzählungs-, Einschränkungs-, zusammengesetzte und satzabschließende Partikeln. Jede Partikel besitzt lokalisierte Funktionsdaten, eine geordnete Kana-Schreibweise und mindestens einen geordneten Beispielsatz.
+Die ungeprüften umfassenden Partikel-, generierten Kanji-, Satz- und Lesungserweiterungen wurden entfernt und das Paket auf seinen kompakten geprüften Bestand zurückgeführt. Jeder beibehaltene Datensatz trägt nun seine Vertragsklasse und besteht ebenenspezifische Verknüpfungsprüfungen. Kana-basierte Karten bleiben Kana: `せんせい` verknüpft direkt mit `せ`, `ん`, `せ` und `い`; eine getrennte Lehrer-Lesungskarte wird nicht angezeigt.
 
-- [5921d4e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/5921d4eafc7a0f0a64fa59db2dec53ea259c1647)
-
-## Vollständige Navigationspfade für Partikeln
-
-Partikelbeispiele enthalten nun aus Kanji zusammengesetzten Wortschatz für Schule mit eigenen ausgeblendeten Lesungen, die 学校 aus geordneten atomaren Kana rekonstruieren. Dadurch kann jedes hinzugefügte Partikelbeispiel vom Satz über Wortschatz und Kanji bis zur genauen Kana-Lesung navigiert werden.
-
-- [0353386](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/03533863e162d223ac9a77782ec146668d5c154b)
-
-## Konservative Modulversionierung
-
-Modul und Inhaltspaket kehren zu Version `2.2.2` zurück. Die Repository-Richtlinien verwenden Patch-Releases für kompatible Inhalts- und Schemaarbeiten, Minor-Releases für kompatible externe Ergänzungen und Major-Releases nur für koordinierte, inkompatible Host-Verträge; Schema-Revisionen bestimmen nicht mehr die Major-Version des Moduls.
-
-- [1966bc1](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/1966bc11b02f49729c29544cd78e710c133f0366)
-
-## Bedeutungsvolle Lerninhalte zu Partikeln
-
-Partikelsatzkarten enthalten nun knappe japanische Aussagen und Wendungen mit direkten lokalisierten Bedeutungen statt Metadaten wie „Partikelbeispiel“. Kopula- und Flexionsformen sind als ausgeblendeter, Kana-gestützter Wortschatz verfasst, sodass geordnete Satzbeziehungen den tatsächlichen Lerninhalt rekonstruieren.
-
-- [4f281e3](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/4f281e3bec4e63d79c9c8c07f7d79ccf541dc172)
-
-## Geprüfter Inhaltsgraph des Anbieters
-
-Das Anbieterpaket ist nun gemäß dem neuesten Bibliotheksvertrag geschützt. Lerninhalte zu Katze und Hund verwenden sichtbaren Wortschatz `猫` und `犬`, verknüpfen ihn über passende Kanji und vollständige ausgeblendete Lesungen mit atomaren Kana und leiten jede Satzbezeichnung und Aussprache aus einem geordneten Beziehungsgraphen ab. Platzhalteridentitäten mit „Beispiel“ wurden entfernt; neue Vertragstests lehnen veraltete Lesungen und übersprungene Schriftebenen ab.
-
-- [2eb4742](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/2eb474286b59e1828d4e2f266029820334d0334c)
-
-## Externer Paketvertrag aus Cognis PR 226
-
-Das japanische Anbieterpaket veröffentlicht nun validierte Katalogmetadaten, bewahrt Anbieterbesitz-Metadaten beim Bootstrap und kennzeichnet Felder für Schriftsystem und JLPT ausdrücklich als Lernfilter. Schema-Revision 40 und Modulversion 2.2.5 übernehmen den Vertrag für externe Pakete und behalten geschützte Inhalte sowie integrierte validierte Feldtypen bei.
-
-- [1a38b26](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/1a38b267037f144157fcd20ed575edf3af0b1452)
-
-## Vielfältiger Kanji-basierter Lernkorpus
-
-Sichtbarer Wortschatz verwendet nun überall dort übliche Kanji-haltige Formen, wo sie angemessen sind, mit vollständigen ausgeblendeten Lesungen bis zu atomaren Kana. Der Korpus aus 51 Partikelsätzen wurde mit abwechslungsreichen Inhalten zu Menschen, Tieren, Wetter, Essen, Reisen, Lesen, Musik, Zeit und Arbeit neu verfasst; weniger als ein Fünftel nutzt Schulwortschatz, und keine zwei Partikelsätze teilen dieselbe Bezeichnung.
-
-- [2673d35](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/2673d35913bd7534b4dc9aed468280dc598b4c88)
-
-## Klassifizierte Einträge und vollständige Lesungslinks
-
-Alle Anbieter-Datensätze tragen nun namensraumgebundene semantische Klassen aus dem neuesten Vertrag von Cognis PR 226. Vollständige Aussprachen bewahren die Navigation auf Segmentebene: Bei `強い` wird beispielsweise `つよ` über das verborgene Lesevokabular von `強` und `い` über atomare Kana aufgelöst. Kontextuelle Lesungen für unregelmäßige Komposita und Flexionen erhalten denselben Pfad; Vertragstests prüfen jede Datensatzklasse und jede rekonstruierte Aussprache.
-
-- [e531a23](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/e531a23612eaf65b873f0241b0904aed8a3be15c)
-
-## Ebenenspezifische Schutzregeln für Verknüpfungen
-
-Neue, von Schema-Rollen abgeleitete Tests verlangen, dass Kanji-Lesungen, Schreibweisen und Aussprachen des Wortschatzes, Partikeln, Sätze und Definitionen ihre verfassten Pfade behalten. Mutationsfälle entfernen absichtlich Links aus jeder verbundenen Ebene und müssen fehlschlagen; Prüfungen auf verwaiste Einträge verhindern außerdem die Auslieferung getrennter verborgener Lesungen und Anbieter-Datensätze. Die Prüfung entfernte auch die ungenutzten Grammatikdatensätze `である` und `行き` samt ihren unerreichbaren Abhängigkeiten.
-
-- [69350d1](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/69350d17e1b5da46783e5e842c3b8585d9c4b649)
+- [70b6951](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/70b6951274722f1506bb75dfd9db0bc808f70651)

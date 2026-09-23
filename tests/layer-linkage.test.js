@@ -89,6 +89,11 @@ function validateLayerLinks(records) {
 
     for (const record of records) {
         const role = layersById.get(record.layer)?.semanticRole;
+        assert.match(
+            record.class,
+            /^[a-z][a-zA-Z0-9]*(?::[a-z][a-zA-Z0-9]*)*$/,
+            `${record.id} requires a semantic class`,
+        );
         const definitionReferences = (record.references ?? []).filter(
             ({ relation }) => relation === "definitions",
         );
@@ -102,13 +107,12 @@ function validateLayerLinks(records) {
                 `${record.id} readings must match its pronunciation field`,
             );
             assert.ok(definitionReferences.length > 0);
-            assert.ok(referencedIds.has(record.id), `${record.id} is orphaned`);
         }
 
         if (role === "lexicalUnit") {
             assert.ok(definitionReferences.length > 0);
             const hasKanji = /[\p{Script=Han}]/u.test(record.label);
-            if (!record.hidden || hasKanji) {
+            if (hasKanji) {
                 assertOrderedComposition(
                     record,
                     new Set(["pronunciation-readings"]),
@@ -116,23 +120,22 @@ function validateLayerLinks(records) {
                     recordsById,
                 );
             }
+            if (hasKanji) {
+                assertOrderedWrittenLinks(record, recordsById);
+            } else {
+                assertOrderedComposition(
+                    record,
+                    new Set(["word-spelling", "kana-spelling"]),
+                    record.fields.pronunciation[0],
+                    recordsById,
+                );
+                assert.equal(record.label, record.fields.pronunciation[0]);
+            }
             if (record.hidden) {
-                if (hasKanji) {
-                    assertOrderedWrittenLinks(record, recordsById);
-                } else {
-                    assertOrderedComposition(
-                        record,
-                        new Set(["word-spelling", "kana-spelling"]),
-                        record.fields.pronunciation[0],
-                        recordsById,
-                    );
-                }
                 assert.ok(
                     referencedIds.has(record.id),
                     `${record.id} hidden reading is orphaned`,
                 );
-            } else {
-                assertOrderedWrittenLinks(record, recordsById);
             }
         }
 
@@ -144,7 +147,6 @@ function validateLayerLinks(records) {
                 record.label,
                 recordsById,
             );
-            assert.ok(referencedIds.has(record.id), `${record.id} is orphaned`);
         }
 
         if (role === "orderedLexicalSequence") {
@@ -175,6 +177,44 @@ function validateLayerLinks(records) {
 
 test("every layer preserves its required authored link path", () => {
     validateLayerLinks(loadRecords());
+});
+
+test("reviewed core inventory excludes the reverted bulk expansion", () => {
+    const records = loadRecords();
+    const counts = Object.fromEntries(
+        schema.layers.map(({ id }) => [
+            id,
+            records.filter(({ layer }) => layer === id).length,
+        ]),
+    );
+    assert.deepEqual(counts, {
+        characters: 270,
+        "alt-characters": 4,
+        definitions: 70,
+        words: 46,
+        particles: 11,
+        sentences: 9,
+    });
+});
+
+test("Kana-primary teacher vocabulary links directly to atomic Kana", () => {
+    const records = loadRecords();
+    const recordsById = new Map(records.map((record) => [record.id, record]));
+    const teacher = recordsById.get("ja:word:sensei");
+    assert.equal(teacher.label, "せんせい");
+    assert.equal(teacher.hidden, undefined);
+    assertOrderedComposition(
+        teacher,
+        new Set(["kana-spelling"]),
+        "せんせい",
+        recordsById,
+    );
+    assert.equal(
+        records.some(
+            ({ id, hidden }) => id.includes("sensei") && hidden === true,
+        ),
+        false,
+    );
 });
 
 test("layer checks reject content whose required links are removed", () => {

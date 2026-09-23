@@ -242,56 +242,8 @@ Lebih dari tiga puluh rekaman Kosakata sehari-hari, sepuluh partikel, dan delapa
 
 - [a538833](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/a538833e990505cad9b817cb9995b1cf2b8bab5e)
 
-## Inventaris Partikel Komprehensif
+## Inti Tinjauan dan Tautan Kana Dipulihkan
 
-Paket kini memuat lebih dari enam puluh partikel kasus, pengikat, penghubung, pendaftar, pembatas, majemuk, dan akhir kalimat. Setiap partikel memiliki data fungsi terlokalkan, ejaan Kana berurutan, dan setidaknya satu kalimat contoh berurutan.
+Perluasan partikel komprehensif, Kanji hasil generasi, kalimat, dan bacaan yang belum ditinjau telah dihapus sehingga paket kembali ke inventaris ringkas yang telah ditinjau. Setiap rekaman yang dipertahankan kini memiliki kelas kontraknya dan lulus pemeriksaan tautan berdasarkan lapisan. Kartu utama Kana tetap berupa Kana: `せんせい` menaut langsung ke `せ`, `ん`, `せ`, dan `い`, tanpa menampilkan kartu bacaan guru yang terputus.
 
-- [5921d4e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/5921d4eafc7a0f0a64fa59db2dec53ea259c1647)
-
-## Jalur Navigasi Partikel Lengkap
-
-Contoh partikel kini memuat Kosakata sekolah yang tersusun dari Kanji, dengan bacaan tersembunyi khusus yang menyusun kembali 学校 dari Kana atomik berurutan. Karena itu, setiap contoh partikel tambahan dapat ditelusuri dari Kalimat melalui Kosakata dan Kanji hingga bacaan Kana yang tepat.
-
-- [0353386](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/03533863e162d223ac9a77782ec146668d5c154b)
-
-## Laju Versi Modul yang Konservatif
-
-Modul dan paket konten kembali ke versi `2.2.2`. Panduan repositori kini memakai rilis patch untuk perubahan konten dan skema yang kompatibel, rilis minor untuk penambahan eksternal yang kompatibel, serta rilis mayor hanya untuk kontrak host yang tidak kompatibel dan terkoordinasi; revisi skema tidak lagi menentukan versi mayor modul.
-
-- [1966bc1](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/1966bc11b02f49729c29544cd78e710c133f0366)
-
-## Konten Belajar Partikel yang Bermakna
-
-Kartu kalimat partikel kini berisi pernyataan dan frasa bahasa Jepang yang ringkas dengan makna terlokalkan langsung, bukan metadata seperti “contoh partikel”. Bentuk kopula dan infleksi ditulis sebagai kosakata tersembunyi berbasis Kana agar relasi kalimat berurutan menyusun kembali konten belajar yang sebenarnya.
-
-- [4f281e3](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/4f281e3bec4e63d79c9c8c07f7d79ccf541dc172)
-
-## Graf Konten Penyedia yang Diaudit
-
-Paket penyedia kini dilindungi sesuai kontrak Pustaka terbaru. Konten belajar kucing dan anjing memakai kosakata terlihat `猫` dan `犬`, menaut melalui Kanji yang sesuai dan bacaan lengkap tersembunyi ke Kana atomik, serta memperoleh setiap label dan pelafalan kalimat dari satu graf relasi berurutan. Identitas placeholder bertanda “contoh” dihapus, dan pengujian kontrak baru menolak bacaan usang atau lapisan tulisan yang dilewati.
-
-- [2eb4742](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/2eb474286b59e1828d4e2f266029820334d0334c)
-
-## Kontrak Paket Eksternal Cognis PR 226
-
-Paket penyedia bahasa Jepang kini menerbitkan metadata katalog tervalidasi, mempertahankan metadata kepemilikan penyedia selama bootstrap, serta menandai bidang sistem tulisan dan JLPT sebagai filter pelajar eksplisit. Revisi skema 40 dan versi modul 2.2.5 mengadopsi kontrak paket eksternal sambil mempertahankan konten terlindungi dan tipe bidang bawaan yang tervalidasi.
-
-- [1a38b26](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/1a38b267037f144157fcd20ed575edf3af0b1452)
-
-## Korpus Belajar Beragam yang Mengutamakan Kanji
-
-Kosakata terlihat kini memakai bentuk lazim yang mengandung Kanji bila sesuai, dengan bacaan lengkap tersembunyi yang berlanjut hingga Kana atomik. Korpus 51 kalimat partikel ditulis ulang dengan konten beragam tentang orang, hewan, cuaca, makanan, perjalanan, membaca, musik, waktu, dan pekerjaan; kurang dari seperlima memakai kosakata sekolah, dan tidak ada dua kalimat partikel yang memiliki label sama.
-
-- [2673d35](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/2673d35913bd7534b4dc9aed468280dc598b4c88)
-
-## Entri Terklasifikasi dan Tautan Bacaan Lengkap
-
-Semua rekaman penyedia kini memiliki kelas semantik ber-namespace dari kontrak terbaru Cognis PR 226. Pelafalan lengkap mempertahankan navigasi tingkat segmen: misalnya, `強い` menyelesaikan `つよ` melalui Kosakata bacaan `強` yang tersembunyi dan `い` melalui Kana atomik. Bacaan kontekstual untuk gabungan dan infleksi tidak beraturan mempertahankan jalur yang sama, sementara pengujian kontrak memverifikasi kelas setiap rekaman dan setiap pelafalan yang direkonstruksi.
-
-- [e531a23](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/e531a23612eaf65b873f0241b0904aed8a3be15c)
-
-## Pagar Pengaman Tautan Berdasarkan Lapisan
-
-Pengujian baru yang digerakkan peran skema mewajibkan bacaan Kanji, ejaan dan pelafalan Kosakata, partikel, kalimat, serta definisi mempertahankan jalur yang ditulis. Kasus mutasi sengaja menghapus tautan dari setiap lapisan terhubung dan harus gagal, sementara pemeriksaan entri yatim mencegah bacaan tersembunyi dan rekaman penyedia yang terputus ikut dirilis. Audit juga menghapus rekaman tata bahasa `である` dan `行き` yang tidak digunakan beserta dependensinya yang tidak dapat dijangkau.
-
-- [69350d1](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/69350d17e1b5da46783e5e842c3b8585d9c4b649)
+- [70b6951](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/70b6951274722f1506bb75dfd9db0bc808f70651)

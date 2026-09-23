@@ -242,56 +242,8 @@ Added more than thirty everyday Vocabulary records, ten particles, and eight ful
 
 - [a538833](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/a538833e990505cad9b817cb9995b1cf2b8bab5e)
 
-## Comprehensive Particle Inventory
+## Restored Reviewed Core and Kana Links
 
-Expanded the pack to more than sixty particles spanning case, binding, conjunctive, listing, limiting, compound, and sentence-final forms. Every particle now has localized function data, ordered Kana spelling, and at least one ordered example sentence.
+Removed the unreviewed comprehensive particle, generated Kanji, sentence, and reading additions, returning the pack to its compact reviewed inventory. Every retained record now carries its contract class and passes layer-shaped linkage checks. Kana-primary cards remain Kana: `せんせい` links directly to `せ`, `ん`, `せ`, and `い`, and no disconnected teacher-reading card is exposed.
 
-- [5921d4e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/5921d4eafc7a0f0a64fa59db2dec53ea259c1647)
-
-## Complete Particle Navigation Paths
-
-Particle examples now include Kanji-composed Vocabulary for school, with dedicated hidden readings that reconstruct 学校 from ordered atomic Kana. Every added particle example can therefore traverse from its Sentence through Vocabulary and Kanji to the exact Kana reading.
-
-- [0353386](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/03533863e162d223ac9a77782ec146668d5c154b)
-
-## Conservative Module Version Pacing
-
-The module and content pack return to version `2.2.2`. Repository guidance now reserves patch releases for compatible content and schema work, minor releases for compatible external additions, and major releases for coordinated breaking host contracts; schema revisions no longer drive the module major version.
-
-- [1966bc1](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/1966bc11b02f49729c29544cd78e710c133f0366)
-
-## Meaningful Particle Study Content
-
-Particle sentence cards now contain concise Japanese statements and phrases with direct localized meanings instead of metadata such as “particle example.” Copular and inflected forms are authored as hidden Kana-backed vocabulary so ordered sentence relationships reconstruct the actual study content.
-
-- [4f281e3](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/4f281e3bec4e63d79c9c8c07f7d79ccf541dc172)
-
-## Audited Provider Content Graph
-
-The provider pack is now protected under the latest Library contract. Cat and dog study content uses visible `猫` and `犬` vocabulary, links through matching Kanji and hidden complete readings to atomic Kana, and derives every sentence label and pronunciation from one ordered relationship graph. Placeholder “example” identities were removed, and new contract tests reject stale readings or skipped writing layers.
-
-- [2eb4742](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/2eb474286b59e1828d4e2f266029820334d0334c)
-
-## Cognis PR 226 External Package Contract
-
-The Japanese provider pack now publishes validated catalog metadata, preserves provider ownership metadata through bootstrap, and marks writing-system and JLPT fields as explicit learner filters. Schema revision 40 and module version 2.2.5 adopt the external-package contract while retaining protected content and built-in validated field types.
-
-- [1a38b26](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/1a38b267037f144157fcd20ed575edf3af0b1452)
-
-## Kanji-First Diverse Study Corpus
-
-Visible vocabulary now uses conventional Kanji-containing forms whenever appropriate, with complete hidden readings that continue to atomic Kana. The 51-particle sentence corpus was rewritten with varied people, animals, weather, food, travel, reading, music, time, and work content; fewer than one fifth use school vocabulary, and no two particle sentences share a label.
-
-- [2673d35](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/2673d35913bd7534b4dc9aed468280dc598b4c88)
-
-## Classified Entries and Complete Reading Links
-
-All provider records now carry namespaced semantic classes from the latest Cognis PR 226 contract. Complete pronunciations preserve segment-level navigation: for example, `強い` resolves `つよ` through the hidden `強` reading Vocabulary and `い` through atomic Kana. Contextual readings for irregular compounds and inflections keep the same path intact, and contract tests verify every record class and every reconstructed pronunciation.
-
-- [e531a23](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/e531a23612eaf65b873f0241b0904aed8a3be15c)
-
-## Layer-Shaped Linkage Guardrails
-
-New schema-role-driven tests require Kanji readings, Vocabulary spellings and pronunciations, particles, sentences, and definitions to retain their authored paths. Mutation cases deliberately remove links from every connected layer and must fail, while orphan checks prevent disconnected hidden readings and provider records from shipping. The audit also removed unused `である` and `行き` grammar records and their unreachable dependencies.
-
-- [69350d1](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/69350d17e1b5da46783e5e842c3b8585d9c4b649)
+- [70b6951](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/70b6951274722f1506bb75dfd9db0bc808f70651)

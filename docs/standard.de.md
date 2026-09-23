@@ -138,34 +138,6 @@ Jeder paketierte Wortschatz-Lesungseintrag erhält eine lokalisierte Definition,
 
 Mehrere Definitionsverweise werden nur verwendet, wenn ein einzelner lexikalischer Eintrag wirklich mehrere eng verwandte Bedeutungen hat. Homophone mit unterschiedlichen Bedeutungen erhalten getrennte Wortschatzeinträge, auch wenn ihre Kana-Bezeichnungen übereinstimmen. Alle japanischen Zeichen, Wörter, Partikeln, Sätze und lokalisierten Bedeutungen müssen als deklaratives JSON unter `data/library/content/` liegen; Laufzeitcode darf keine Sprachdaten einbetten.
 
-## Umfassende Partikelübungen
+## Geprüfter Kern und vollständige Verknüpfungen
 
-Eine gültige Partikel wird nicht entfernt, nur weil aktuelle Lektionen sie sonst nicht verwenden. Jede paketierte Partikel benötigt lokalisierte Funktionsmetadaten, eine geordnete Kana-Schreibweise und mindestens einen geordneten Beispielsatzverweis.
-
-## Navigation durch Partikelbeispiele
-
-Jedes Partikelbeispiel muss Wortschatz enthalten, der sich über Kanji zusammensetzt. Jedes referenzierte Kanji muss auf einen vollständigen ausgeblendeten Lesewortschatz verweisen, und diese Lesung muss sich aus geordneten atomaren Kana rekonstruieren.
-
-## Definitionen beschreiben Inhalte
-
-Eine Definition muss die lokalisierte Bedeutung ihres Datensatzes angeben. Sie darf den Datensatz niemals als Beispiel, Übung, Demonstration, Platzhalter oder anderes Redaktionsartefakt bezeichnen. Satzeinträge müssen bedeutungsvolle japanische Inhalte enthalten, deren geordnete Beziehungen den angezeigten Text rekonstruieren.
-
-## Integrität des Anbietergraphen
-
-Setze `protected: true` im Inhaltsmanifest des Anbieters. Für jeden Satz ergeben die geordneten verknüpften Wortschatz- und Partikelbezeichnungen seine Bezeichnung; deren Aussprachen ergeben seine Aussprache. Eine üblicherweise mit Kanji geschriebene lexikalische Einheit muss auf ihre Kanji-Komposition und vollständigen ausgeblendeten Lesewörter verweisen; jede Lesung verweist anschließend auf geordnete atomare Kana.
-
-## Externer Paketvertrag aus PR 226
-
-Manifest- und Schemametadaten dürfen nur endliche JSON-kompatible Werte enthalten und müssen Bibliotheks-Roundtrips unverändert überstehen. Integrierte Feldtypen werden bevorzugt; jeder Erweiterungstyp benötigt eine deklarative Validierungsregel. Für mehrere Medien werden Listenmedientypen verwendet; `detail.filterable: true` wird nur gesetzt, wenn ein Nicht-Badge-Feld als Lernfilter dienen soll. Schema-Revisionen und semantische Modulversionen bleiben unabhängig.
-
-## Kanji-basierter Wortschatz und Korpusvielfalt
-
-Verwende die übliche Kanji-haltige Form als primäre Bezeichnung für sichtbaren Wortschatz, sofern sie existiert; reine Kana-Wortschatzdatensätze bleiben üblichen Kana-Schreibweisen und vollständigen ausgeblendeten Lesungen vorbehalten. Große Inhaltserweiterungen werden als Korpus geprüft: unterschiedliche Substantive, Verben, Themen und Satzstrukturen sind erforderlich; wiederholtes Austauschen um ein einziges Ankerwort wird auch bei formal gültigen Beziehungen abgelehnt.
-
-## Eintragsklassen und Ausspracheabschnitte
-
-Jeder Paketdatensatz erhält eine namensraumgebundene semantische `class`. Eine vollständige verborgene Aussprache setzt von Kanji abgeleitete Abschnitte aus dem nächstliegenden Kanji-Lesevokabular und nur die verbleibenden Kana über `kana-spelling` zusammen; die geordneten Ziele müssen die Aussprache exakt ergeben.
-
-## Ebenenspezifische Verknüpfungsvalidierung
-
-Inhalte werden entsprechend der semantischen Rolle jeder Ebene validiert. Kanji-Lesungen müssen die Aussprachefelder wiedergeben; sichtbares Vokabular muss Schreib- und Ausspracheverknüpfungen behalten; verborgene Lesungen, Partikeln und Sätze müssen ihre angezeigten Werte über geordnete Ziele rekonstruieren. Verborgene Lesungen, Kanji, Partikeln und Definitionen dürfen nicht verwaist sein. Tests müssen außerdem nachweisen, dass absichtlich getrennte Datensätze abgelehnt werden.
+Ein größerer Korpus darf erst hinzugefügt werden, wenn jeder Datensatz einzeln geprüft wurde. Ein beibehaltener Kana-basierter Wortschatzdatensatz muss Bezeichnung und Aussprache aus geordneten `kana-spelling`-Zielen rekonstruieren. Eine Umstellung auf Kanji ist nur zulässig, wenn das Paket auch den vollständigen Kanji- und verborgenen Lesungspfad enthält; Aussprachetext darf nie ohne verfasste Links bleiben.

@@ -141,34 +141,6 @@ Hidden reading Vocabulary records carry their own four-locale definition wheneve
 
 The pack now includes more than thirty additional everyday Vocabulary records, ten additional particles, and eight fully composed example sentences, all stored as declarative JSON under `data/library/content/`. Genuine polysemy may use several localized definition references on one record (`なおす`: repair/correct), while homophones such as `はし` (bridge/chopsticks), `あめ` (rain/candy), `かみ` (paper/hair/deity), and `はな` (flower/nose) remain separate Vocabulary records with distinct definitions.
 
-## Comprehensive Particle Practice
+## Reviewed core content
 
-The particle inventory now contains more than sixty simple, compound, connective, limiting, listing, and sentence-final forms. Every particle remains available even when uncommon and is referenced by at least one ordered example sentence so its relationships can be explored in context.
-
-## Particle example traversal
-
-Particle examples now use authored Kanji vocabulary such as `学校`. Each sentence therefore opens a complete sentence → Vocabulary → Kanji → hidden reading Vocabulary → atomic Kana path instead of stopping at Kana-only vocabulary.
-
-## Meaningful particle sentences
-
-Particle sentence definitions now contain direct localized meanings instead of authoring labels such as “particle example.” The associated study entries use concise Japanese sentences and phrases whose linked vocabulary and particles reconstruct the displayed content.
-
-## Audited provider content graph
-
-Provider content is now protected from user-owned moves and deletion. The animal vocabulary uses the conventional `猫` and `犬` spellings, links through their Kanji records to complete hidden `ねこ` and `いぬ` readings, and reconstructs those readings from atomic Kana. Sentence labels and pronunciations are regenerated from the same ordered vocabulary and particle graph.
-
-## Cognis PR 226 package contract
-
-The pack now publishes validated JSON-compatible catalog metadata and explicitly filterable writing-system and JLPT fields under the external-package contract from Cognis PR #226. It continues to use built-in field types and protected provider ownership, while schema revision `40` remains independent of module version `2.2.5`.
-
-## Kanji-first varied study content
-
-Visible vocabulary now uses conventional Japanese orthography such as `私`, `水`, `電車`, `先生`, `食べる`, and `行く`, while complete hidden readings retain the Kana path. The particle collection has been rewritten as 51 distinct, natural constructions spanning people, animals, weather, food, travel, reading, music, time, and work instead of repeatedly substituting particles around `学校`.
-
-## Classified, segment-linked readings
-
-Every provider entry now carries a namespaced semantic class from the current Cognis Library contract. Complete pronunciations preserve their internal structure: Kanji-derived spans link to hidden Kanji-reading Vocabulary, while inflectional Kana link to atomic Kana. Thus `強い` resolves through `つよ` and `い` instead of presenting an unlinked `つよい` string.
-
-## Layer linkage guardrails
-
-The pack's tests now derive linkage expectations from each schema layer's semantic role, reject orphaned provider records, and mutation-test every linked layer so disconnected study content cannot pass validation unnoticed.
+The unreviewed bulk particle and vocabulary expansion has been removed. The remaining compact core keeps every authored path complete; Kana-primary cards such as `せんせい` link directly and in order to `せ`, `ん`, `せ`, and `い` instead of exposing an unlinked Kanji pronunciation.

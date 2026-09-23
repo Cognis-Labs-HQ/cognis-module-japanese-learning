@@ -141,34 +141,6 @@ Rekaman Kosakata bacaan tersembunyi memiliki definisi sendiri dalam empat bahasa
 
 Paket kini memuat lebih dari tiga puluh rekaman Kosakata sehari-hari tambahan, sepuluh partikel tambahan, dan delapan kalimat contoh yang tersusun penuh, semuanya disimpan sebagai JSON deklaratif di `data/library/content/`. Polisemi sejati dapat memakai beberapa referensi definisi terlokalkan pada satu rekaman (`なおす`: memperbaiki/mengoreksi), sedangkan homofon seperti `はし` (jembatan/sumpit), `あめ` (hujan/permen), `かみ` (kertas/rambut/dewa), dan `はな` (bunga/hidung) tetap menjadi rekaman Kosakata terpisah dengan definisi berbeda.
 
-## Latihan Partikel Komprehensif
+## Konten inti yang ditinjau
 
-Inventaris partikel kini berisi lebih dari enam puluh bentuk sederhana, majemuk, penghubung, pembatas, pendaftar, dan akhir kalimat. Setiap partikel tetap tersedia meskipun jarang digunakan dan dirujuk oleh setidaknya satu kalimat contoh berurutan agar relasinya dapat dipelajari dalam konteks.
-
-## Penelusuran contoh partikel
-
-Contoh partikel kini memakai Kosakata Kanji yang ditulis seperti `学校`. Karena itu, setiap kalimat membuka jalur lengkap Kalimat → Kosakata → Kanji → Kosakata bacaan tersembunyi → Kana atomik, bukan berhenti pada kosakata khusus Kana.
-
-## Kalimat partikel yang bermakna
-
-Definisi kalimat partikel kini berisi makna terlokalkan secara langsung, bukan label penulisan seperti “contoh partikel”. Entri belajar terkait memakai kalimat dan frasa bahasa Jepang yang ringkas, dengan kosakata serta partikel tertaut yang menyusun kembali konten yang ditampilkan.
-
-## Graf konten penyedia yang diaudit
-
-Konten penyedia kini terlindung dari pemindahan dan penghapusan milik pengguna. Kosakata hewan memakai ejaan lazim `猫` dan `犬`, menaut melalui rekaman Kanji ke bacaan tersembunyi lengkap `ねこ` dan `いぬ`, lalu menyusun bacaan tersebut dari Kana atomik. Label dan pelafalan kalimat dibentuk dari graf kosakata dan partikel berurutan yang sama.
-
-## Kontrak paket Cognis PR 226
-
-Paket kini menerbitkan metadata katalog kompatibel JSON yang tervalidasi serta bidang sistem tulisan dan JLPT yang dapat difilter secara eksplisit sesuai kontrak paket eksternal dari Cognis PR #226. Paket tetap memakai tipe bidang bawaan dan kepemilikan penyedia terlindungi, sementara revisi skema `40` tetap terpisah dari versi modul `2.2.5`.
-
-## Konten belajar beragam yang mengutamakan Kanji
-
-Kosakata terlihat kini memakai ortografi Jepang yang lazim seperti `私`, `水`, `電車`, `先生`, `食べる`, dan `行く`, sementara bacaan lengkap tersembunyi mempertahankan jalur Kana. Koleksi partikel telah ditulis ulang menjadi 51 konstruksi alami yang berbeda tentang orang, hewan, cuaca, makanan, perjalanan, membaca, musik, waktu, dan pekerjaan, bukan berulang kali mengganti partikel di sekitar `学校`.
-
-## Bacaan terklasifikasi dan tertaut per segmen
-
-Setiap entri penyedia kini memiliki kelas semantik ber-namespace sesuai kontrak Cognis Library terbaru. Pelafalan lengkap mempertahankan struktur internalnya: bagian yang berasal dari Kanji menaut ke Kosakata bacaan Kanji tersembunyi, sedangkan Kana infleksional menaut ke Kana atomik. Karena itu, `強い` diselesaikan melalui `つよ` dan `い`, bukan ditampilkan sebagai teks `つよい` tanpa tautan.
-
-## Pagar pengaman tautan lapisan
-
-Pengujian paket kini memperoleh harapan tautan dari peran semantik setiap lapisan skema, menolak rekaman penyedia yang yatim, dan menguji mutasi setiap lapisan tertaut agar konten belajar yang terputus tidak lolos validasi tanpa terdeteksi.
+Perluasan massal partikel dan kosakata yang belum ditinjau telah dihapus. Inti ringkas yang tersisa menjaga setiap jalur tertulis tetap lengkap; kartu utama Kana seperti `せんせい` menaut langsung dan berurutan ke `せ`, `ん`, `せ`, dan `い`, bukan menampilkan pelafalan Kanji tanpa tautan.

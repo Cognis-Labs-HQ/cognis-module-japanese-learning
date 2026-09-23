@@ -1,5 +1,5 @@
 import assert from "node:assert/strict";
-import { readdirSync, readFileSync } from "node:fs";
+import { readFileSync } from "node:fs";
 import test from "node:test";
 
 function readJson(path) {
@@ -9,20 +9,13 @@ function readJson(path) {
 }
 
 const schema = readJson("data/library/schema.json");
-function readLayer(layer) {
-    const directory = new URL(
-        `../data/library/content/${layer}/`,
-        import.meta.url,
-    );
-    return readdirSync(directory)
-        .filter((name) => name.endsWith(".json"))
-        .flatMap((name) => readJson(`data/library/content/${layer}/${name}`));
-}
-
-const words = readLayer("words");
-const kanji = readLayer("alt-characters");
-const characters = readLayer("characters");
-const particles = readLayer("particles");
+const words = readJson("data/library/content/words/common.json");
+const kanji = readJson("data/library/content/alt-characters/kanji.json");
+const characters = [
+    ...readJson("data/library/content/characters/hiragana.json"),
+    ...readJson("data/library/content/characters/hiragana-variants.json"),
+];
+const particles = readJson("data/library/content/particles/common.json");
 const recordsById = new Map(
     [...words, ...kanji, ...characters, ...particles].map((entry) => [
         entry.id,
@@ -90,22 +83,37 @@ test("vocabulary compositions use the closest structural records", () => {
         ["ja:word:reading-nihon", "ja:word:reading-go"],
     );
     assert.equal(
-        labelsFor(recordsById.get("ja:word:reading-nihon"), [
-            "word-spelling",
-            "kana-spelling",
-        ]),
+        labelsFor(recordsById.get("ja:word:reading-nihon"), ["kana-spelling"]),
         "にほん",
     );
 });
 
-test("reading vocabulary retains an explicit semantic definition", () => {
+test("reading vocabulary owns localized niche definitions", () => {
+    const sourceDefinitionIds = new Set(
+        kanji.flatMap((entry) =>
+            entry.references
+                .filter(({ relation }) => relation === "definitions")
+                .map(({ entryId }) => entryId),
+        ),
+    );
     for (const reading of words.filter(({ id }) =>
         id.startsWith("ja:word:reading-"),
     )) {
         const definitionReferences = reading.references.filter(
             ({ relation }) => relation === "definitions",
         );
-        assert.ok(definitionReferences.length > 0);
+        assert.equal(definitionReferences.length, 1);
+        assert.equal(
+            sourceDefinitionIds.has(definitionReferences[0].entryId),
+            false,
+            `${reading.id} must not reuse a broad Kanji definition`,
+        );
+        assert.equal(
+            definitionReferences[0].entryId,
+            reading.id === "ja:word:reading-nihon"
+                ? "ja:def:nihon"
+                : reading.id.replace("ja:word:", "ja:def:"),
+        );
     }
 });
 
@@ -117,9 +125,7 @@ test("only Kanji reading vocabulary is hidden from browsing", () => {
     assert.ok(readingVocabulary.every(({ hidden }) => hidden === true));
     assert.ok(
         words
-            .filter(
-                ({ class: entryClass }) => !entryClass.startsWith("reading:"),
-            )
+            .filter(({ id }) => !id.startsWith("ja:word:reading-"))
             .every(({ hidden }) => hidden !== true),
     );
 });

@@ -138,34 +138,6 @@ Berikan definisi terlokalkan kepada setiap rekaman Kosakata bacaan dalam paket k
 
 Gunakan beberapa referensi definisi hanya ketika satu rekaman leksikal benar-benar memiliki beberapa makna yang berhubungan erat. Buat rekaman Kosakata terpisah untuk homofon dengan makna berbeda meskipun label Kana-nya sama. Semua karakter, kosakata, partikel, kalimat, dan makna terlokalkan bahasa Jepang harus berada dalam JSON deklaratif di `data/library/content/`; kode runtime tidak boleh menyematkan data bahasa.
 
-## Latihan Partikel Komprehensif
+## Inti yang ditinjau dan tautan lengkap
 
-Jangan menghapus partikel yang valid hanya karena pelajaran saat ini belum menggunakannya. Setiap partikel dalam paket harus memiliki metadata fungsi terlokalkan, ejaan Kana berurutan, dan setidaknya satu referensi kalimat contoh berurutan.
-
-## Penelusuran contoh partikel
-
-Setiap contoh partikel harus memuat Kosakata yang tersusun melalui Kanji. Setiap Kanji yang dirujuk harus tertaut ke rekaman Kosakata bacaan tersembunyi yang lengkap, dan bacaan tersebut harus menyusun dirinya kembali dari Kana atomik berurutan.
-
-## Definisi menjelaskan konten
-
-Definisi harus menyatakan makna terlokalkan dari rekamannya. Definisi tidak boleh menyebut rekaman sebagai contoh, latihan, demonstrasi, placeholder, atau artefak penulisan lainnya. Entri kalimat harus berisi konten bahasa Jepang yang bermakna dan relasi berurutannya harus menyusun kembali teks yang ditampilkan.
-
-## Integritas graf penyedia
-
-Tetapkan `protected: true` pada manifest konten penyedia. Untuk setiap kalimat, gabungkan label kosakata dan partikel tertaut yang berurutan untuk memperoleh labelnya, lalu gabungkan pelafalannya untuk memperoleh pelafalan kalimat. Unit leksikal yang lazim ditulis dengan Kanji harus tertaut ke komposisi Kanji dan kosakata bacaan tersembunyi yang lengkap; setiap bacaan kemudian tertaut ke Kana atomik berurutan.
-
-## Kontrak paket eksternal dari PR 226
-
-Metadata manifest dan skema hanya boleh memuat nilai terbatas yang kompatibel dengan JSON dan harus bertahan tanpa perubahan saat melewati Pustaka. Utamakan tipe bidang bawaan; setiap tipe ekstensi memerlukan aturan validasi deklaratif. Gunakan tipe media daftar untuk beberapa aset, dan tetapkan `detail.filterable: true` hanya saat bidang non-lencana perlu menjadi filter pelajar. Revisi skema dan versi semantik modul tetap terpisah.
-
-## Kosakata berbasis Kanji dan keragaman korpus
-
-Gunakan bentuk lazim yang memuat Kanji sebagai label utama kosakata terlihat bila bentuk itu tersedia; rekaman kosakata seluruhnya Kana hanya untuk ejaan Kana yang lazim dan bacaan lengkap tersembunyi. Tinjau penambahan konten besar sebagai satu korpus: wajib ada variasi nomina, verba, topik, dan struktur kalimat, serta tolak substitusi berulang di sekitar satu kata jangkar meskipun setiap relasi lolos validasi.
-
-## Kelas entri dan segmen pelafalan
-
-Tetapkan `class` semantik ber-namespace pada setiap rekaman paket. Pelafalan lengkap yang tersembunyi harus menyusun bagian turunan Kanji dari Kosakata bacaan Kanji terdekat dan hanya Kana sisanya melalui `kana-spelling`; target yang berurutan harus membentuk kembali pelafalan secara tepat.
-
-## Validasi tautan berdasarkan lapisan
-
-Validasi konten menurut peran semantik setiap lapisan. Bacaan Kanji harus membentuk kembali bidang pelafalan; Kosakata terlihat harus mempertahankan tautan tulisan dan pelafalan; bacaan tersembunyi, partikel, dan kalimat harus membentuk kembali nilai tampilannya melalui target berurutan. Bacaan tersembunyi, Kanji, partikel, dan definisi tidak boleh menjadi yatim. Pengujian juga harus membuktikan bahwa rekaman yang sengaja diputus ditolak.
+Jangan menambahkan korpus yang lebih luas sebelum setiap rekaman ditinjau satu per satu. Rekaman Kosakata utama Kana yang dipertahankan harus membentuk kembali label dan pelafalannya dari target `kana-spelling` berurutan. Ubah menjadi Kanji hanya jika paket juga memiliki jalur Kanji dan bacaan tersembunyi yang lengkap; teks pelafalan tidak boleh dibiarkan tanpa tautan tertulis.
