@@ -283,3 +283,9 @@ Das japanische Anbieterpaket veröffentlicht nun validierte Katalogmetadaten, be
 Sichtbarer Wortschatz verwendet nun überall dort übliche Kanji-haltige Formen, wo sie angemessen sind, mit vollständigen ausgeblendeten Lesungen bis zu atomaren Kana. Der Korpus aus 51 Partikelsätzen wurde mit abwechslungsreichen Inhalten zu Menschen, Tieren, Wetter, Essen, Reisen, Lesen, Musik, Zeit und Arbeit neu verfasst; weniger als ein Fünftel nutzt Schulwortschatz, und keine zwei Partikelsätze teilen dieselbe Bezeichnung.
 
 - [2673d35](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/2673d35913bd7534b4dc9aed468280dc598b4c88)
+
+## Klassifizierte Einträge und vollständige Lesungslinks
+
+Alle Anbieter-Datensätze tragen nun namensraumgebundene semantische Klassen aus dem neuesten Vertrag von Cognis PR 226. Vollständige Aussprachen bewahren die Navigation auf Segmentebene: Bei `強い` wird beispielsweise `つよ` über das verborgene Lesevokabular von `強` und `い` über atomare Kana aufgelöst. Kontextuelle Lesungen für unregelmäßige Komposita und Flexionen erhalten denselben Pfad; Vertragstests prüfen jede Datensatzklasse und jede rekonstruierte Aussprache.
+
+- [e531a23](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/e531a23612eaf65b873f0241b0904aed8a3be15c)

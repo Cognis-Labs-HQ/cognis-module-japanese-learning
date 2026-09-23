@@ -26,7 +26,8 @@
                 "entryId": "ja:def:nihon",
                 "relation": "definitions"
             }
-        ]
+        ],
+        "class": "lexical:noun"
     },
     {
         "id": "ja:word:nihongo",
@@ -60,7 +61,8 @@
                 "entryId": "ja:def:nihongo",
                 "relation": "definitions"
             }
-        ]
+        ],
+        "class": "lexical:noun"
     },
     {
         "id": "ja:word:reading-nihon",
@@ -71,26 +73,22 @@
         },
         "references": [
             {
-                "entryId": "ja:char:ni",
-                "relation": "kana-spelling",
+                "entryId": "ja:word:reading-nichi-ni",
+                "relation": "word-spelling",
                 "position": 0
             },
             {
-                "entryId": "ja:char:ho",
-                "relation": "kana-spelling",
+                "entryId": "ja:word:reading-hon",
+                "relation": "word-spelling",
                 "position": 1
-            },
-            {
-                "entryId": "ja:char:n",
-                "relation": "kana-spelling",
-                "position": 2
             },
             {
                 "entryId": "ja:def:nihon",
                 "relation": "definitions"
             }
         ],
-        "hidden": true
+        "hidden": true,
+        "class": "reading:pronunciation"
     },
     {
         "id": "ja:word:reading-nichi",
@@ -115,7 +113,8 @@
                 "relation": "definitions"
             }
         ],
-        "hidden": true
+        "hidden": true,
+        "class": "reading:kanji"
     },
     {
         "id": "ja:word:reading-jitsu",
@@ -140,7 +139,8 @@
                 "relation": "definitions"
             }
         ],
-        "hidden": true
+        "hidden": true,
+        "class": "reading:kanji"
     },
     {
         "id": "ja:word:reading-hi",
@@ -160,7 +160,8 @@
                 "relation": "definitions"
             }
         ],
-        "hidden": true
+        "hidden": true,
+        "class": "reading:kanji"
     },
     {
         "id": "ja:word:reading-ka",
@@ -180,7 +181,8 @@
                 "relation": "definitions"
             }
         ],
-        "hidden": true
+        "hidden": true,
+        "class": "reading:kanji"
     },
     {
         "id": "ja:word:reading-hon",
@@ -205,7 +207,8 @@
                 "relation": "definitions"
             }
         ],
-        "hidden": true
+        "hidden": true,
+        "class": "reading:kanji"
     },
     {
         "id": "ja:word:reading-moto",
@@ -230,7 +233,8 @@
                 "relation": "definitions"
             }
         ],
-        "hidden": true
+        "hidden": true,
+        "class": "reading:kanji"
     },
     {
         "id": "ja:word:reading-go",
@@ -250,7 +254,8 @@
                 "relation": "definitions"
             }
         ],
-        "hidden": true
+        "hidden": true,
+        "class": "reading:kanji"
     },
     {
         "id": "ja:word:reading-kata",
@@ -275,7 +280,8 @@
                 "relation": "definitions"
             }
         ],
-        "hidden": true
+        "hidden": true,
+        "class": "reading:kanji"
     },
     {
         "id": "ja:word:reading-jin",
@@ -300,7 +306,8 @@
                 "relation": "definitions"
             }
         ],
-        "hidden": true
+        "hidden": true,
+        "class": "reading:kanji"
     },
     {
         "id": "ja:word:reading-nin",
@@ -325,7 +332,8 @@
                 "relation": "definitions"
             }
         ],
-        "hidden": true
+        "hidden": true,
+        "class": "reading:kanji"
     },
     {
         "id": "ja:word:reading-hito",
@@ -350,7 +358,8 @@
                 "relation": "definitions"
             }
         ],
-        "hidden": true
+        "hidden": true,
+        "class": "reading:kanji"
     },
     {
         "id": "ja:word:suki",
@@ -374,6 +383,7 @@
                 "entryId": "ja:def:suki",
                 "relation": "definitions"
             }
-        ]
+        ],
+        "class": "lexical:adjective"
     }
 ]

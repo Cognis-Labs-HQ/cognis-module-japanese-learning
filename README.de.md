@@ -164,3 +164,7 @@ Das Paket veröffentlicht nun validierte JSON-kompatible Katalogmetadaten und au
 ## Abwechslungsreiche Kanji-basierte Lerninhalte
 
 Sichtbarer Wortschatz verwendet nun die übliche japanische Schreibweise wie `私`, `水`, `電車`, `先生`, `食べる` und `行く`, während vollständige ausgeblendete Lesungen den Kana-Pfad erhalten. Die Partikelsammlung besteht nun aus 51 unterschiedlichen natürlichen Konstruktionen zu Menschen, Tieren, Wetter, Essen, Reisen, Lesen, Musik, Zeit und Arbeit, statt Partikeln wiederholt um `学校` auszutauschen.
+
+## Klassifizierte, segmentweise verknüpfte Lesungen
+
+Jeder Provider-Eintrag trägt nun eine namensraumgebundene semantische Klasse gemäß dem aktuellen Cognis-Library-Vertrag. Vollständige Aussprachen bewahren ihre innere Struktur: Von Kanji abgeleitete Abschnitte verweisen auf verborgenes Kanji-Lesevokabular, flektierende Kana auf atomare Kana. Dadurch wird `強い` über `つよ` und `い` aufgelöst, statt `つよい` unverknüpft anzuzeigen.

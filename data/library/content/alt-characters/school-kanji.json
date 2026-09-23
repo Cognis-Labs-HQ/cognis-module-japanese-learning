@@ -3,7 +3,7 @@
         "id": "ja:kanji:gaku",
         "label": "学",
         "fields": {
-            "pronunciation": ["がく"],
+            "pronunciation": ["がく", "まな", "がっ"],
             "audio": "https://assets.cognis.dev/study/ja/pronunciation/kanji-gaku.mp3"
         },
         "references": [
@@ -15,8 +15,19 @@
             {
                 "entryId": "ja:def:kanji-gaku",
                 "relation": "definitions"
+            },
+            {
+                "entryId": "ja:word:reading-gaku-mana",
+                "relation": "readings",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:reading-gaku-gatsu",
+                "relation": "readings",
+                "position": 2
             }
-        ]
+        ],
+        "class": "writing:kanji"
     },
     {
         "id": "ja:kanji:kou",
@@ -35,6 +46,7 @@
                 "entryId": "ja:def:kanji-kou",
                 "relation": "definitions"
             }
-        ]
+        ],
+        "class": "writing:kanji"
     }
 ]

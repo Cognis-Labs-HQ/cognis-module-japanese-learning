@@ -164,3 +164,7 @@ The pack now publishes validated JSON-compatible catalog metadata and explicitly
 ## Kanji-first varied study content
 
 Visible vocabulary now uses conventional Japanese orthography such as `私`, `水`, `電車`, `先生`, `食べる`, and `行く`, while complete hidden readings retain the Kana path. The particle collection has been rewritten as 51 distinct, natural constructions spanning people, animals, weather, food, travel, reading, music, time, and work instead of repeatedly substituting particles around `学校`.
+
+## Classified, segment-linked readings
+
+Every provider entry now carries a namespaced semantic class from the current Cognis Library contract. Complete pronunciations preserve their internal structure: Kanji-derived spans link to hidden Kanji-reading Vocabulary, while inflectional Kana link to atomic Kana. Thus `強い` resolves through `つよ` and `い` instead of presenting an unlinked `つよい` string.

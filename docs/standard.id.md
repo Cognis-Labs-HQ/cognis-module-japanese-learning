@@ -161,3 +161,7 @@ Metadata manifest dan skema hanya boleh memuat nilai terbatas yang kompatibel de
 ## Kosakata berbasis Kanji dan keragaman korpus
 
 Gunakan bentuk lazim yang memuat Kanji sebagai label utama kosakata terlihat bila bentuk itu tersedia; rekaman kosakata seluruhnya Kana hanya untuk ejaan Kana yang lazim dan bacaan lengkap tersembunyi. Tinjau penambahan konten besar sebagai satu korpus: wajib ada variasi nomina, verba, topik, dan struktur kalimat, serta tolak substitusi berulang di sekitar satu kata jangkar meskipun setiap relasi lolos validasi.
+
+## Kelas entri dan segmen pelafalan
+
+Tetapkan `class` semantik ber-namespace pada setiap rekaman paket. Pelafalan lengkap yang tersembunyi harus menyusun bagian turunan Kanji dari Kosakata bacaan Kanji terdekat dan hanya Kana sisanya melalui `kana-spelling`; target yang berurutan harus membentuk kembali pelafalan secara tepat.

@@ -3,7 +3,7 @@
         "id": "ja:kanji:nichi",
         "label": "日",
         "fields": {
-            "pronunciation": ["にち", "じつ", "ひ", "か"],
+            "pronunciation": ["にち", "じつ", "ひ", "か", "に", "う", "した"],
             "audio": "https://assets.cognis.dev/study/ja/pronunciation/kanji-nichi.mp3"
         },
         "references": [
@@ -30,8 +30,24 @@
             {
                 "entryId": "ja:def:kanji-nichi",
                 "relation": "definitions"
+            },
+            {
+                "entryId": "ja:word:reading-nichi-ni",
+                "relation": "readings",
+                "position": 4
+            },
+            {
+                "entryId": "ja:word:reading-nichi-u",
+                "relation": "readings",
+                "position": 5
+            },
+            {
+                "entryId": "ja:word:reading-nichi-shita",
+                "relation": "readings",
+                "position": 6
             }
-        ]
+        ],
+        "class": "writing:kanji"
     },
     {
         "id": "ja:kanji:hon",
@@ -55,7 +71,8 @@
                 "entryId": "ja:def:kanji-hon",
                 "relation": "definitions"
             }
-        ]
+        ],
+        "class": "writing:kanji"
     },
     {
         "id": "ja:kanji:go",
@@ -79,7 +96,8 @@
                 "entryId": "ja:def:kanji-go",
                 "relation": "definitions"
             }
-        ]
+        ],
+        "class": "writing:kanji"
     },
     {
         "id": "ja:kanji:hito",
@@ -108,6 +126,7 @@
                 "entryId": "ja:def:kanji-hito",
                 "relation": "definitions"
             }
-        ]
+        ],
+        "class": "writing:kanji"
     }
 ]

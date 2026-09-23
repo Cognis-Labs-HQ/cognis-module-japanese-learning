@@ -164,3 +164,7 @@ Paket kini menerbitkan metadata katalog kompatibel JSON yang tervalidasi serta b
 ## Konten belajar beragam yang mengutamakan Kanji
 
 Kosakata terlihat kini memakai ortografi Jepang yang lazim seperti `私`, `水`, `電車`, `先生`, `食べる`, dan `行く`, sementara bacaan lengkap tersembunyi mempertahankan jalur Kana. Koleksi partikel telah ditulis ulang menjadi 51 konstruksi alami yang berbeda tentang orang, hewan, cuaca, makanan, perjalanan, membaca, musik, waktu, dan pekerjaan, bukan berulang kali mengganti partikel di sekitar `学校`.
+
+## Bacaan terklasifikasi dan tertaut per segmen
+
+Setiap entri penyedia kini memiliki kelas semantik ber-namespace sesuai kontrak Cognis Library terbaru. Pelafalan lengkap mempertahankan struktur internalnya: bagian yang berasal dari Kanji menaut ke Kosakata bacaan Kanji tersembunyi, sedangkan Kana infleksional menaut ke Kana atomik. Karena itu, `強い` diselesaikan melalui `つよ` dan `い`, bukan ditampilkan sebagai teks `つよい` tanpa tautan.

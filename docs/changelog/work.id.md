@@ -283,3 +283,9 @@ Paket penyedia bahasa Jepang kini menerbitkan metadata katalog tervalidasi, memp
 Kosakata terlihat kini memakai bentuk lazim yang mengandung Kanji bila sesuai, dengan bacaan lengkap tersembunyi yang berlanjut hingga Kana atomik. Korpus 51 kalimat partikel ditulis ulang dengan konten beragam tentang orang, hewan, cuaca, makanan, perjalanan, membaca, musik, waktu, dan pekerjaan; kurang dari seperlima memakai kosakata sekolah, dan tidak ada dua kalimat partikel yang memiliki label sama.
 
 - [2673d35](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/2673d35913bd7534b4dc9aed468280dc598b4c88)
+
+## Entri Terklasifikasi dan Tautan Bacaan Lengkap
+
+Semua rekaman penyedia kini memiliki kelas semantik ber-namespace dari kontrak terbaru Cognis PR 226. Pelafalan lengkap mempertahankan navigasi tingkat segmen: misalnya, `強い` menyelesaikan `つよ` melalui Kosakata bacaan `強` yang tersembunyi dan `い` melalui Kana atomik. Bacaan kontekstual untuk gabungan dan infleksi tidak beraturan mempertahankan jalur yang sama, sementara pengujian kontrak memverifikasi kelas setiap rekaman dan setiap pelafalan yang direkonstruksi.
+
+- [e531a23](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/e531a23612eaf65b873f0241b0904aed8a3be15c)

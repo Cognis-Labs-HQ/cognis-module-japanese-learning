@@ -283,3 +283,9 @@ The Japanese provider pack now publishes validated catalog metadata, preserves p
 Visible vocabulary now uses conventional Kanji-containing forms whenever appropriate, with complete hidden readings that continue to atomic Kana. The 51-particle sentence corpus was rewritten with varied people, animals, weather, food, travel, reading, music, time, and work content; fewer than one fifth use school vocabulary, and no two particle sentences share a label.
 
 - [2673d35](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/2673d35913bd7534b4dc9aed468280dc598b4c88)
+
+## Classified Entries and Complete Reading Links
+
+All provider records now carry namespaced semantic classes from the latest Cognis PR 226 contract. Complete pronunciations preserve segment-level navigation: for example, `強い` resolves `つよ` through the hidden `強` reading Vocabulary and `い` through atomic Kana. Contextual readings for irregular compounds and inflections keep the same path intact, and contract tests verify every record class and every reconstructed pronunciation.
+
+- [e531a23](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/e531a23612eaf65b873f0241b0904aed8a3be15c)

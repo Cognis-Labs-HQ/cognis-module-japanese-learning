@@ -63,6 +63,33 @@ test("pack metadata and filters follow the PR 226 external contract", () => {
     );
 });
 
+test("every provider record declares a valid semantic class", () => {
+    const records = [
+        "characters",
+        "alt-characters",
+        "definitions",
+        "words",
+        "particles",
+        "sentences",
+    ].flatMap(readLayer);
+    const classPattern = /^[a-z][a-zA-Z0-9]*(?::[a-z][a-zA-Z0-9]*)*$/;
+
+    for (const record of records) {
+        assert.match(record.class, classPattern, `${record.id} needs a class`);
+    }
+
+    const entriesById = new Map(records.map((entry) => [entry.id, entry]));
+    assert.equal(entriesById.get("ja:word:tsuyoi").class, "lexical:adjective");
+    assert.equal(
+        entriesById.get("ja:word:kanji-reading-e5bcb7-0").class,
+        "reading:kanji",
+    );
+    assert.equal(
+        entriesById.get("ja:sentence:particle-wa-final").class,
+        "syntax:sentence",
+    );
+});
+
 function definitionIds(entry) {
     return entry.references
         .filter(({ relation }) => relation === "definitions")
@@ -218,6 +245,65 @@ test("particle sentences traverse vocabulary, Kanji, and Kana", () => {
     }
 });
 
+test("complete word readings retain segment-level Vocabulary and Kana links", () => {
+    const entriesById = new Map(
+        ["characters", "alt-characters", "words"]
+            .flatMap(readLayer)
+            .map((entry) => [entry.id, entry]),
+    );
+    const visibleWords = readLayer("words").filter(({ hidden }) => !hidden);
+
+    for (const word of visibleWords) {
+        const pronunciation = word.fields.pronunciation[0];
+        const readingReferences = word.references
+            .filter(({ relation }) => relation === "pronunciation-readings")
+            .sort((left, right) => left.position - right.position);
+        assert.ok(readingReferences.length > 0, `${word.id} needs readings`);
+        assert.equal(
+            readingReferences
+                .map(({ entryId }) => entriesById.get(entryId).label)
+                .join(""),
+            pronunciation,
+            `${word.id} reading segments must reconstruct its pronunciation`,
+        );
+
+        for (const { entryId } of readingReferences) {
+            const reading = entriesById.get(entryId);
+            const spelling = reading.references
+                .filter(({ relation }) =>
+                    ["word-spelling", "kana-spelling"].includes(relation),
+                )
+                .sort((left, right) => left.position - right.position);
+            assert.equal(
+                spelling
+                    .map(
+                        (reference) => entriesById.get(reference.entryId).label,
+                    )
+                    .join(""),
+                reading.label,
+                `${reading.id} must preserve its internal deep links`,
+            );
+        }
+    }
+
+    const strongReading = entriesById.get("ja:word:reading-tsuyoi");
+    assert.deepEqual(
+        strongReading.references
+            .filter(({ relation }) =>
+                ["word-spelling", "kana-spelling"].includes(relation),
+            )
+            .map(({ entryId, relation, position }) => ({
+                label: entriesById.get(entryId).label,
+                relation,
+                position,
+            })),
+        [
+            { label: "つよ", relation: "word-spelling", position: 0 },
+            { label: "い", relation: "kana-spelling", position: 1 },
+        ],
+    );
+});
+
 test("particle sentence definitions describe meaning rather than authorship", () => {
     const metadataTerms =
         /\b(?:example|exercise|demonstration|placeholder)\b|\bBeispiel\b|\bcontoh\b|例文|例$/iu;
@@ -287,8 +373,8 @@ test("Kanji vocabulary traverses through hidden readings to atomic Kana", () => 
                 const reading = words.get(entryId);
                 return (
                     reading?.hidden === true &&
-                    reading.references.some(
-                        ({ relation }) => relation === "kana-spelling",
+                    reading.references.some(({ relation }) =>
+                        ["word-spelling", "kana-spelling"].includes(relation),
                     )
                 );
             }),

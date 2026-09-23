@@ -161,3 +161,7 @@ Manifest- und Schemametadaten dürfen nur endliche JSON-kompatible Werte enthalt
 ## Kanji-basierter Wortschatz und Korpusvielfalt
 
 Verwende die übliche Kanji-haltige Form als primäre Bezeichnung für sichtbaren Wortschatz, sofern sie existiert; reine Kana-Wortschatzdatensätze bleiben üblichen Kana-Schreibweisen und vollständigen ausgeblendeten Lesungen vorbehalten. Große Inhaltserweiterungen werden als Korpus geprüft: unterschiedliche Substantive, Verben, Themen und Satzstrukturen sind erforderlich; wiederholtes Austauschen um ein einziges Ankerwort wird auch bei formal gültigen Beziehungen abgelehnt.
+
+## Eintragsklassen und Ausspracheabschnitte
+
+Jeder Paketdatensatz erhält eine namensraumgebundene semantische `class`. Eine vollständige verborgene Aussprache setzt von Kanji abgeleitete Abschnitte aus dem nächstliegenden Kanji-Lesevokabular und nur die verbleibenden Kana über `kana-spelling` zusammen; die geordneten Ziele müssen die Aussprache exakt ergeben.

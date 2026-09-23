@@ -161,3 +161,7 @@ Manifest and schema metadata may contain only finite, JSON-compatible values and
 ## Kanji-first vocabulary and corpus diversity
 
 Use the conventional Kanji-containing form as the primary label for visible vocabulary whenever one exists; reserve all-Kana vocabulary records for conventional Kana spellings and hidden complete readings. Review large content additions as a corpus: require varied nouns, verbs, topics, and sentence structures, and reject repeated substitution around one anchor word even when every individual relationship validates.
+
+## Entry classes and pronunciation segments
+
+Assign every packaged record a namespaced semantic `class`. A complete hidden pronunciation must compose Kanji-derived spans from the closest Kanji-reading Vocabulary and only its remaining Kana from `kana-spelling`; the ordered targets must reproduce the pronunciation exactly.
