@@ -138,6 +138,6 @@ Berikan definisi terlokalkan kepada setiap rekaman Kosakata bacaan dalam paket k
 
 Gunakan beberapa referensi definisi hanya ketika satu rekaman leksikal benar-benar memiliki beberapa makna yang berhubungan erat. Buat rekaman Kosakata terpisah untuk homofon dengan makna berbeda meskipun label Kana-nya sama. Semua karakter, kosakata, partikel, kalimat, dan makna terlokalkan bahasa Jepang harus berada dalam JSON deklaratif di `data/library/content/`; kode runtime tidak boleh menyematkan data bahasa.
 
-## Inti yang ditinjau dan tautan lengkap
+## Traversal lengkap dari kalimat ke Kana
 
-Jangan menambahkan korpus yang lebih luas sebelum setiap rekaman ditinjau satu per satu. Rekaman Kosakata utama Kana yang dipertahankan harus membentuk kembali label dan pelafalannya dari target `kana-spelling` berurutan. Ubah menjadi Kanji hanya jika paket juga memiliki jalur Kanji dan bacaan tersembunyi yang lengkap; teks pelafalan tidak boleh dibiarkan tanpa tautan tertulis.
+Setiap bentuk leksikal konvensional dalam inti menggunakan Kanji. Kalimat hanya menaut ke Kosakata terlihat dan partikel; Kosakata terlihat tersusun melalui Kanji dan Kosakata bacaan tersembunyi; setiap bacaan tersembunyi dibentuk kembali dari Kana atomik. Pengujian harus menolak jalur apa pun yang melewati Kosakata, Kanji, Kosakata bacaan, atau Kana.

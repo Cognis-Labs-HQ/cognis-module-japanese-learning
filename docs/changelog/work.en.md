@@ -247,3 +247,9 @@ Added more than thirty everyday Vocabulary records, ten particles, and eight ful
 Removed the unreviewed comprehensive particle, generated Kanji, sentence, and reading additions, returning the pack to its compact reviewed inventory. Every retained record now carries its contract class and passes layer-shaped linkage checks. Kana-primary cards remain Kana: `せんせい` links directly to `せ`, `ん`, `せ`, and `い`, and no disconnected teacher-reading card is exposed.
 
 - [70b6951](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/70b6951274722f1506bb75dfd9db0bc808f70651)
+
+## Complete Kanji-to-Kana Traversal
+
+Every visible core Vocabulary record now uses its conventional Kanji form and connects through the full authored graph. Sentences reference only visible Vocabulary and particles; Vocabulary references Kanji and hidden reading segments; hidden readings reconstruct from ordered atomic Kana. `私は学生` now follows `私` → `わたし` → `わ`・`た`・`し`, `は`, and `学生` → `がく`・`せい` → `が`・`く`・`せ`・`い`. Regression tests reject every skipped layer.
+
+- [65ff45a](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/65ff45affebb7a647d7ee3012eb9e8999e4de7b0)

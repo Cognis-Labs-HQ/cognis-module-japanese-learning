@@ -141,6 +141,6 @@ Rekaman Kosakata bacaan tersembunyi memiliki definisi sendiri dalam empat bahasa
 
 Paket kini memuat lebih dari tiga puluh rekaman Kosakata sehari-hari tambahan, sepuluh partikel tambahan, dan delapan kalimat contoh yang tersusun penuh, semuanya disimpan sebagai JSON deklaratif di `data/library/content/`. Polisemi sejati dapat memakai beberapa referensi definisi terlokalkan pada satu rekaman (`なおす`: memperbaiki/mengoreksi), sedangkan homofon seperti `はし` (jembatan/sumpit), `あめ` (hujan/permen), `かみ` (kertas/rambut/dewa), dan `はな` (bunga/hidung) tetap menjadi rekaman Kosakata terpisah dengan definisi berbeda.
 
-## Konten inti yang ditinjau
+## Graf inti yang mengutamakan Kanji
 
-Perluasan massal partikel dan kosakata yang belum ditinjau telah dihapus. Inti ringkas yang tersisa menjaga setiap jalur tertulis tetap lengkap; kartu utama Kana seperti `せんせい` menaut langsung dan berurutan ke `せ`, `ん`, `せ`, dan `い`, bukan menampilkan pelafalan Kanji tanpa tautan.
+Inti ringkas kini menggunakan ejaan Kanji konvensional secara menyeluruh. Kalimat menaut ke Kosakata terlihat, Kosakata terlihat menaut ke Kanji dan segmen pelafalan tersembunyi, dan setiap segmen tersembunyi dibentuk kembali dari Kana atomik. Contohnya, `私は学生` diselesaikan melalui `私` → `わたし` → `わ`・`た`・`し` dan `学生` → `がく`・`せい` → Kana atomik.

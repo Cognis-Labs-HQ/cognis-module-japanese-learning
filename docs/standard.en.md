@@ -138,6 +138,6 @@ Give every packaged reading Vocabulary record a localized definition when its us
 
 Use multiple definition references only when one lexical record genuinely has multiple closely related senses. Create separate Vocabulary records for homophones whose meanings are distinct, even when their Kana labels match. All Japanese characters, vocabulary, particles, sentences, and localized meanings must live in declarative JSON under `data/library/content/`; runtime code must not embed language data.
 
-## Reviewed core and complete links
+## Complete sentence-to-Kana traversal
 
-Do not add a broader corpus until each record has been individually reviewed. A retained Kana-primary Vocabulary record must reconstruct both its label and pronunciation from ordered `kana-spelling` targets. Promote it to Kanji only when the pack also contains the complete Kanji and hidden-reading path; never leave pronunciation text without authored links.
+Every conventional lexical form in the core uses Kanji. A sentence references visible Vocabulary and particles only; visible Vocabulary composes through Kanji and hidden reading Vocabulary; each hidden reading reconstructs through atomic Kana. Tests must reject any sentence that bypasses Vocabulary, any word that bypasses Kanji or reading Vocabulary, and any reading that bypasses Kana.

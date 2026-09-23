@@ -247,3 +247,9 @@ Lebih dari tiga puluh rekaman Kosakata sehari-hari, sepuluh partikel, dan delapa
 Perluasan partikel komprehensif, Kanji hasil generasi, kalimat, dan bacaan yang belum ditinjau telah dihapus sehingga paket kembali ke inventaris ringkas yang telah ditinjau. Setiap rekaman yang dipertahankan kini memiliki kelas kontraknya dan lulus pemeriksaan tautan berdasarkan lapisan. Kartu utama Kana tetap berupa Kana: `せんせい` menaut langsung ke `せ`, `ん`, `せ`, dan `い`, tanpa menampilkan kartu bacaan guru yang terputus.
 
 - [70b6951](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/70b6951274722f1506bb75dfd9db0bc808f70651)
+
+## Traversal Lengkap dari Kanji ke Kana
+
+Setiap rekaman Kosakata inti yang terlihat kini menggunakan bentuk Kanji konvensional dan terhubung melalui graf tertulis yang lengkap. Kalimat hanya menaut ke Kosakata terlihat dan partikel; Kosakata menaut ke Kanji dan segmen bacaan tersembunyi; bacaan tersembunyi dibentuk kembali dari Kana atomik berurutan. `私は学生` kini mengikuti `私` → `わたし` → `わ`・`た`・`し`, `は`, dan `学生` → `がく`・`せい` → `が`・`く`・`せ`・`い`. Pengujian regresi menolak setiap lapisan yang dilewati.
+
+- [65ff45a](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/65ff45affebb7a647d7ee3012eb9e8999e4de7b0)

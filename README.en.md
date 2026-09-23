@@ -141,6 +141,6 @@ Hidden reading Vocabulary records carry their own four-locale definition wheneve
 
 The pack now includes more than thirty additional everyday Vocabulary records, ten additional particles, and eight fully composed example sentences, all stored as declarative JSON under `data/library/content/`. Genuine polysemy may use several localized definition references on one record (`なおす`: repair/correct), while homophones such as `はし` (bridge/chopsticks), `あめ` (rain/candy), `かみ` (paper/hair/deity), and `はな` (flower/nose) remain separate Vocabulary records with distinct definitions.
 
-## Reviewed core content
+## Kanji-first core graph
 
-The unreviewed bulk particle and vocabulary expansion has been removed. The remaining compact core keeps every authored path complete; Kana-primary cards such as `せんせい` link directly and in order to `せ`, `ん`, `せ`, and `い` instead of exposing an unlinked Kanji pronunciation.
+The compact core now uses conventional Kanji spellings throughout. Sentences reference visible vocabulary, visible vocabulary references its Kanji and hidden pronunciation segments, and every hidden segment reconstructs from atomic Kana. For example, `私は学生` resolves through `私` → `わたし` → `わ`・`た`・`し` and `学生` → `がく`・`せい` → atomic Kana.

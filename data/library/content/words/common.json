@@ -18,9 +18,14 @@
                 "position": 1
             },
             {
-                "entryId": "ja:word:reading-nihon",
+                "entryId": "ja:word:kanji-reading-e697a5-e381ab",
                 "relation": "pronunciation-readings",
                 "position": 0
+            },
+            {
+                "entryId": "ja:word:reading-hon",
+                "relation": "pronunciation-readings",
+                "position": 1
             },
             {
                 "entryId": "ja:def:nihon",
@@ -73,19 +78,14 @@
         },
         "references": [
             {
-                "entryId": "ja:char:ni",
-                "relation": "kana-spelling",
+                "entryId": "ja:word:kanji-reading-e697a5-e381ab",
+                "relation": "word-spelling",
                 "position": 0
             },
             {
-                "entryId": "ja:char:ho",
-                "relation": "kana-spelling",
+                "entryId": "ja:word:reading-hon",
+                "relation": "word-spelling",
                 "position": 1
-            },
-            {
-                "entryId": "ja:char:n",
-                "relation": "kana-spelling",
-                "position": 2
             },
             {
                 "entryId": "ja:def:nihon",
@@ -368,21 +368,21 @@
     },
     {
         "id": "ja:word:suki",
-        "label": "すき",
+        "label": "好き",
         "fields": {
             "jlpt_level": "N5",
             "pronunciation": ["すき"]
         },
         "references": [
             {
-                "entryId": "ja:char:su",
-                "relation": "kana-spelling",
+                "entryId": "ja:kanji:core-e5a5bd",
+                "relation": "spelling",
                 "position": 0
             },
             {
-                "entryId": "ja:char:ki",
-                "relation": "kana-spelling",
-                "position": 1
+                "entryId": "ja:word:reading-suki",
+                "relation": "pronunciation-readings",
+                "position": 0
             },
             {
                 "entryId": "ja:def:suki",

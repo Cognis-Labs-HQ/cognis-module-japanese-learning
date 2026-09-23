@@ -141,6 +141,6 @@ Ausgeblendete Wortschatz-Lesungseinträge erhalten eine eigene Definition in all
 
 Das Paket enthält nun mehr als dreißig zusätzliche alltägliche Wortschatzeinträge, zehn weitere Partikeln und acht vollständig zusammengesetzte Beispielsätze, ausschließlich als deklaratives JSON unter `data/library/content/`. Echte Polysemie darf mehrere lokalisierte Definitionsverweise in einem Eintrag verwenden (`なおす`: reparieren/korrigieren), während Homophone wie `はし` (Brücke/Essstäbchen), `あめ` (Regen/Bonbon), `かみ` (Papier/Haar/Gottheit) und `はな` (Blume/Nase) getrennte Wortschatzeinträge mit eigenen Definitionen bleiben.
 
-## Geprüfter Kerninhalt
+## Kanji-basierter Kerngraph
 
-Die ungeprüfte Massenerweiterung von Partikeln und Wortschatz wurde entfernt. Im verbleibenden kompakten Kern ist jeder verfasste Pfad vollständig; Kana-basierte Karten wie `せんせい` verknüpfen direkt und in Reihenfolge `せ`, `ん`, `せ` und `い`, statt eine nicht verknüpfte Kanji-Aussprache anzuzeigen.
+Der kompakte Kern verwendet nun durchgehend die üblichen Kanji-Schreibweisen. Sätze verweisen auf sichtbaren Wortschatz, sichtbarer Wortschatz auf seine Kanji und verborgenen Ausspracheabschnitte, und jeder verborgene Abschnitt wird aus atomaren Kana rekonstruiert. So wird `私は学生` über `私` → `わたし` → `わ`・`た`・`し` und `学生` → `がく`・`せい` → atomare Kana aufgelöst.

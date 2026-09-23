@@ -409,10 +409,6 @@ test("kanji readings reference distinct kana-backed vocabulary entries", () => {
     const kanjiEntries = records.filter(
         ({ layer }) => layer === compoundLayer.id,
     );
-    const kanjiLabels = new Set(kanjiEntries.map(({ label }) => label));
-    assert.ok(
-        [...words.values()].every(({ label }) => !kanjiLabels.has(label)),
-    );
     for (const kanji of kanjiEntries) {
         const readingWords = kanji.references
             .filter(({ relation }) => relation === "readings")
@@ -699,13 +695,14 @@ test("every vocabulary entry participates in the Kana deletion dependency graph"
     assert.ok(vocabulary.every((entry) => dependsOnKana(entry)));
 
     const suki = recordsById.get("ja:word:suki");
-    assert.deepEqual(
-        suki.references.filter(({ relation }) => relation === "kana-spelling"),
-        [
-            { entryId: "ja:char:su", relation: "kana-spelling", position: 0 },
-            { entryId: "ja:char:ki", relation: "kana-spelling", position: 1 },
-        ],
+    const sukiReading = recordsById.get(
+        suki.references.find(
+            ({ relation }) => relation === "pronunciation-readings",
+        ).entryId,
     );
+    assert.equal(sukiReading.hidden, true);
+    assert.equal(sukiReading.label, "すき");
+    assert.ok(dependsOnKana(sukiReading));
 });
 
 test("lexical and sentence pronunciation use the Library placement field", () => {

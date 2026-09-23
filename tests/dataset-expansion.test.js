@@ -46,8 +46,10 @@ test("polysemy uses multiple definitions without collapsing homophones", () => {
         "ja:def:naosu-correct",
     ]);
 
-    for (const label of ["はし", "あめ", "かみ", "はな"]) {
-        const homophones = vocabulary.filter((entry) => entry.label === label);
+    for (const pronunciation of ["はし", "あめ", "かみ", "はな"]) {
+        const homophones = vocabulary.filter(
+            (entry) => entry.fields.pronunciation[0] === pronunciation,
+        );
         assert.ok(homophones.length >= 2);
         assert.equal(
             new Set(homophones.flatMap(definitionIds)).size,

@@ -247,3 +247,9 @@ Mehr als dreißig alltägliche Wortschatzeinträge, zehn Partikeln und acht voll
 Die ungeprüften umfassenden Partikel-, generierten Kanji-, Satz- und Lesungserweiterungen wurden entfernt und das Paket auf seinen kompakten geprüften Bestand zurückgeführt. Jeder beibehaltene Datensatz trägt nun seine Vertragsklasse und besteht ebenenspezifische Verknüpfungsprüfungen. Kana-basierte Karten bleiben Kana: `せんせい` verknüpft direkt mit `せ`, `ん`, `せ` und `い`; eine getrennte Lehrer-Lesungskarte wird nicht angezeigt.
 
 - [70b6951](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/70b6951274722f1506bb75dfd9db0bc808f70651)
+
+## Vollständiger Pfad von Kanji bis Kana
+
+Jeder sichtbare Wortschatzeintrag des Kernbestands verwendet nun seine übliche Kanji-Form und ist über den vollständigen verfassten Graphen verbunden. Sätze verweisen nur auf sichtbaren Wortschatz und Partikeln; Wortschatz verweist auf Kanji und verborgene Lesungsabschnitte; verborgene Lesungen werden aus geordneten atomaren Kana rekonstruiert. `私は学生` folgt nun `私` → `わたし` → `わ`・`た`・`し`, `は` und `学生` → `がく`・`せい` → `が`・`く`・`せ`・`い`. Regressionstests lehnen jede übersprungene Ebene ab.
+
+- [65ff45a](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/65ff45affebb7a647d7ee3012eb9e8999e4de7b0)

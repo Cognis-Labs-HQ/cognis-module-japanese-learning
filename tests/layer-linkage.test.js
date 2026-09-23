@@ -179,7 +179,7 @@ test("every layer preserves its required authored link path", () => {
     validateLayerLinks(loadRecords());
 });
 
-test("reviewed core inventory excludes the reverted bulk expansion", () => {
+test("reviewed graph inventory remains bounded to the core curriculum", () => {
     const records = loadRecords();
     const counts = Object.fromEntries(
         schema.layers.map(({ id }) => [
@@ -189,32 +189,90 @@ test("reviewed core inventory excludes the reverted bulk expansion", () => {
     );
     assert.deepEqual(counts, {
         characters: 270,
-        "alt-characters": 4,
-        definitions: 70,
-        words: 46,
+        "alt-characters": 38,
+        definitions: 104,
+        words: 92,
         particles: 11,
         sentences: 9,
     });
 });
 
-test("Kana-primary teacher vocabulary links directly to atomic Kana", () => {
+test("teacher vocabulary traverses Kanji readings to atomic Kana", () => {
     const records = loadRecords();
     const recordsById = new Map(records.map((record) => [record.id, record]));
     const teacher = recordsById.get("ja:word:sensei");
-    assert.equal(teacher.label, "せんせい");
+    assert.equal(teacher.label, "先生");
     assert.equal(teacher.hidden, undefined);
-    assertOrderedComposition(
-        teacher,
-        new Set(["kana-spelling"]),
-        "せんせい",
-        recordsById,
-    );
-    assert.equal(
-        records.some(
-            ({ id, hidden }) => id.includes("sensei") && hidden === true,
+    assert.deepEqual(
+        orderedReferences(teacher, new Set(["spelling"])).map(
+            ({ entryId }) => recordsById.get(entryId).label,
         ),
-        false,
+        ["先", "生"],
     );
+    const readings = orderedReferences(
+        teacher,
+        new Set(["pronunciation-readings"]),
+    ).map(({ entryId }) => recordsById.get(entryId));
+    assert.deepEqual(
+        readings.map(({ label }) => label),
+        ["せん", "せい"],
+    );
+    assert.ok(readings.every(({ hidden }) => hidden === true));
+    for (const reading of readings) {
+        assertOrderedComposition(
+            reading,
+            new Set(["kana-spelling"]),
+            reading.label,
+            recordsById,
+        );
+    }
+});
+
+test("sentences link only through visible vocabulary and particles", () => {
+    const records = loadRecords();
+    const recordsById = new Map(records.map((record) => [record.id, record]));
+    for (const sentence of records.filter(
+        ({ layer }) => layer === "sentences",
+    )) {
+        const constituents = orderedReferences(
+            sentence,
+            new Set(["words", "particles"]),
+        ).map(({ entryId }) => recordsById.get(entryId));
+        assert.ok(constituents.length > 0);
+        assert.ok(
+            constituents.every(
+                ({ hidden, layer }) =>
+                    hidden !== true && ["words", "particles"].includes(layer),
+            ),
+            `${sentence.id} bypasses visible lexical layers`,
+        );
+    }
+});
+
+test("visible core vocabulary uses Kanji without skipping reading layers", () => {
+    const records = loadRecords();
+    const recordsById = new Map(records.map((record) => [record.id, record]));
+    const visibleVocabulary = records.filter(
+        ({ hidden, layer }) => layer === "words" && hidden !== true,
+    );
+
+    for (const word of visibleVocabulary) {
+        assert.match(word.label, /[\p{Script=Han}]/u, `${word.id} needs Kanji`);
+        const Kanji = orderedReferences(
+            word,
+            new Set(["word-spelling", "spelling"]),
+        ).map(({ entryId }) => recordsById.get(entryId));
+        const readings = orderedReferences(
+            word,
+            new Set(["pronunciation-readings"]),
+        ).map(({ entryId }) => recordsById.get(entryId));
+        assert.ok(Kanji.length > 0, `${word.id} bypasses the Kanji layer`);
+        assert.ok(
+            readings.length > 0,
+            `${word.id} bypasses reading Vocabulary`,
+        );
+        assert.ok(readings.every(({ hidden }) => hidden === true));
+    }
 });
 
 test("layer checks reject content whose required links are removed", () => {

@@ -138,6 +138,6 @@ Jeder paketierte Wortschatz-Lesungseintrag erhält eine lokalisierte Definition,
 
 Mehrere Definitionsverweise werden nur verwendet, wenn ein einzelner lexikalischer Eintrag wirklich mehrere eng verwandte Bedeutungen hat. Homophone mit unterschiedlichen Bedeutungen erhalten getrennte Wortschatzeinträge, auch wenn ihre Kana-Bezeichnungen übereinstimmen. Alle japanischen Zeichen, Wörter, Partikeln, Sätze und lokalisierten Bedeutungen müssen als deklaratives JSON unter `data/library/content/` liegen; Laufzeitcode darf keine Sprachdaten einbetten.
 
-## Geprüfter Kern und vollständige Verknüpfungen
+## Vollständiger Pfad vom Satz bis zu Kana
 
-Ein größerer Korpus darf erst hinzugefügt werden, wenn jeder Datensatz einzeln geprüft wurde. Ein beibehaltener Kana-basierter Wortschatzdatensatz muss Bezeichnung und Aussprache aus geordneten `kana-spelling`-Zielen rekonstruieren. Eine Umstellung auf Kanji ist nur zulässig, wenn das Paket auch den vollständigen Kanji- und verborgenen Lesungspfad enthält; Aussprachetext darf nie ohne verfasste Links bleiben.
+Jede konventionelle lexikalische Form im Kern verwendet Kanji. Ein Satz verweist nur auf sichtbaren Wortschatz und Partikeln; sichtbarer Wortschatz setzt sich über Kanji und verborgenes Lesevokabular zusammen; jede verborgene Lesung wird aus atomaren Kana rekonstruiert. Tests müssen jeden Pfad ablehnen, der Wortschatz, Kanji, Lesevokabular oder Kana überspringt.
