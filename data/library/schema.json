@@ -1,6 +1,6 @@
 {
     "id": "japanese-core",
-    "version": 39,
+    "version": 40,
     "namespace": "ja",
     "language": "ja",
     "metadata": {
@@ -9,6 +9,10 @@
             "en": "Japanese",
             "id": "Bahasa Jepang",
             "ja": "日本語"
+        },
+        "provider": {
+            "id": "study-language-ja",
+            "stable": true
         }
     },
     "layers": [
@@ -87,7 +91,8 @@
                         "group": "writing-system",
                         "exclusive": true,
                         "required": true,
-                        "defaultTag": "hiragana"
+                        "defaultTag": "hiragana",
+                        "filterable": true
                     },
                     "input": {
                         "control": "singleSelect",
@@ -531,7 +536,8 @@
                         "group": "proficiency-level",
                         "exclusive": true,
                         "required": true,
-                        "defaultTag": "N5"
+                        "defaultTag": "N5",
+                        "filterable": true
                     },
                     "input": {
                         "control": "singleSelect",

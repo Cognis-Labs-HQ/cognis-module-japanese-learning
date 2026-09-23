@@ -153,3 +153,7 @@ Eine Definition muss die lokalisierte Bedeutung ihres Datensatzes angeben. Sie d
 ## Integrität des Anbietergraphen
 
 Setze `protected: true` im Inhaltsmanifest des Anbieters. Für jeden Satz ergeben die geordneten verknüpften Wortschatz- und Partikelbezeichnungen seine Bezeichnung; deren Aussprachen ergeben seine Aussprache. Eine üblicherweise mit Kanji geschriebene lexikalische Einheit muss auf ihre Kanji-Komposition und vollständigen ausgeblendeten Lesewörter verweisen; jede Lesung verweist anschließend auf geordnete atomare Kana.
+
+## Externer Paketvertrag aus PR 226
+
+Manifest- und Schemametadaten dürfen nur endliche JSON-kompatible Werte enthalten und müssen Bibliotheks-Roundtrips unverändert überstehen. Integrierte Feldtypen werden bevorzugt; jeder Erweiterungstyp benötigt eine deklarative Validierungsregel. Für mehrere Medien werden Listenmedientypen verwendet; `detail.filterable: true` wird nur gesetzt, wenn ein Nicht-Badge-Feld als Lernfilter dienen soll. Schema-Revisionen und semantische Modulversionen bleiben unabhängig.

@@ -156,3 +156,7 @@ Particle sentence definitions now contain direct localized meanings instead of a
 ## Audited provider content graph
 
 Provider content is now protected from user-owned moves and deletion. The animal vocabulary uses the conventional `猫` and `犬` spellings, links through their Kanji records to complete hidden `ねこ` and `いぬ` readings, and reconstructs those readings from atomic Kana. Sentence labels and pronunciations are regenerated from the same ordered vocabulary and particle graph.
+
+## Cognis PR 226 package contract
+
+The pack now publishes validated JSON-compatible catalog metadata and explicitly filterable writing-system and JLPT fields under the external-package contract from Cognis PR #226. It continues to use built-in field types and protected provider ownership, while schema revision `40` remains independent of module version `2.2.5`.

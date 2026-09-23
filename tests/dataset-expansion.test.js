@@ -38,6 +38,31 @@ test("provider content is protected from user-owned mutations", () => {
     assert.equal(manifest.protected, true);
 });
 
+test("pack metadata and filters follow the PR 226 external contract", () => {
+    const manifest = JSON.parse(
+        readFileSync(new URL("../data/library/manifest.json", import.meta.url)),
+    );
+    const schema = JSON.parse(
+        readFileSync(new URL("../data/library/schema.json", import.meta.url)),
+    );
+    assert.deepEqual(manifest.metadata, {
+        catalog: { category: "language", featured: true },
+        tags: ["japanese", "study"],
+    });
+    assert.deepEqual(schema.metadata.provider, {
+        id: "study-language-ja",
+        stable: true,
+    });
+    assert.deepEqual(
+        schema.layers.flatMap((layer) =>
+            (layer.fields ?? [])
+                .filter(({ detail }) => detail?.filterable === true)
+                .map(({ id }) => `${layer.id}:${id}`),
+        ),
+        ["characters:character_class", "words:jlpt_level"],
+    );
+});
+
 function definitionIds(entry) {
     return entry.references
         .filter(({ relation }) => relation === "definitions")

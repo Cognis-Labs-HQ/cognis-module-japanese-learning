@@ -271,3 +271,9 @@ Particle sentence cards now contain concise Japanese statements and phrases with
 The provider pack is now protected under the latest Library contract. Cat and dog study content uses visible `猫` and `犬` vocabulary, links through matching Kanji and hidden complete readings to atomic Kana, and derives every sentence label and pronunciation from one ordered relationship graph. Placeholder “example” identities were removed, and new contract tests reject stale readings or skipped writing layers.
 
 - [2eb4742](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/2eb474286b59e1828d4e2f266029820334d0334c)
+
+## Cognis PR 226 External Package Contract
+
+The Japanese provider pack now publishes validated catalog metadata, preserves provider ownership metadata through bootstrap, and marks writing-system and JLPT fields as explicit learner filters. Schema revision 40 and module version 2.2.5 adopt the external-package contract while retaining protected content and built-in validated field types.
+
+- [1a38b26](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/1a38b267037f144157fcd20ed575edf3af0b1452)

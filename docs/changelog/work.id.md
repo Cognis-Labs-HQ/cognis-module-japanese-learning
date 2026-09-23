@@ -271,3 +271,9 @@ Kartu kalimat partikel kini berisi pernyataan dan frasa bahasa Jepang yang ringk
 Paket penyedia kini dilindungi sesuai kontrak Pustaka terbaru. Konten belajar kucing dan anjing memakai kosakata terlihat `猫` dan `犬`, menaut melalui Kanji yang sesuai dan bacaan lengkap tersembunyi ke Kana atomik, serta memperoleh setiap label dan pelafalan kalimat dari satu graf relasi berurutan. Identitas placeholder bertanda “contoh” dihapus, dan pengujian kontrak baru menolak bacaan usang atau lapisan tulisan yang dilewati.
 
 - [2eb4742](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/2eb474286b59e1828d4e2f266029820334d0334c)
+
+## Kontrak Paket Eksternal Cognis PR 226
+
+Paket penyedia bahasa Jepang kini menerbitkan metadata katalog tervalidasi, mempertahankan metadata kepemilikan penyedia selama bootstrap, serta menandai bidang sistem tulisan dan JLPT sebagai filter pelajar eksplisit. Revisi skema 40 dan versi modul 2.2.5 mengadopsi kontrak paket eksternal sambil mempertahankan konten terlindungi dan tipe bidang bawaan yang tervalidasi.
+
+- [1a38b26](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/1a38b267037f144157fcd20ed575edf3af0b1452)

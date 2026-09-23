@@ -271,3 +271,9 @@ Partikelsatzkarten enthalten nun knappe japanische Aussagen und Wendungen mit di
 Das Anbieterpaket ist nun gemäß dem neuesten Bibliotheksvertrag geschützt. Lerninhalte zu Katze und Hund verwenden sichtbaren Wortschatz `猫` und `犬`, verknüpfen ihn über passende Kanji und vollständige ausgeblendete Lesungen mit atomaren Kana und leiten jede Satzbezeichnung und Aussprache aus einem geordneten Beziehungsgraphen ab. Platzhalteridentitäten mit „Beispiel“ wurden entfernt; neue Vertragstests lehnen veraltete Lesungen und übersprungene Schriftebenen ab.
 
 - [2eb4742](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/2eb474286b59e1828d4e2f266029820334d0334c)
+
+## Externer Paketvertrag aus Cognis PR 226
+
+Das japanische Anbieterpaket veröffentlicht nun validierte Katalogmetadaten, bewahrt Anbieterbesitz-Metadaten beim Bootstrap und kennzeichnet Felder für Schriftsystem und JLPT ausdrücklich als Lernfilter. Schema-Revision 40 und Modulversion 2.2.5 übernehmen den Vertrag für externe Pakete und behalten geschützte Inhalte sowie integrierte validierte Feldtypen bei.
+
+- [1a38b26](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/1a38b267037f144157fcd20ed575edf3af0b1452)

@@ -153,3 +153,7 @@ A definition must state the localized meaning of its record. It must never call 
 ## Provider graph integrity
 
 Set `protected: true` on the provider content manifest. For every sentence, concatenate the ordered linked vocabulary and particle labels to obtain its label, and concatenate their pronunciations to obtain its pronunciation. A conventional Kanji-spelled lexical unit must link to its Kanji composition and complete hidden reading vocabulary; each reading must then link to ordered atomic Kana.
+
+## External package contract from PR 226
+
+Manifest and schema metadata may contain only finite, JSON-compatible values and must survive Library round trips unchanged. Prefer built-in field types; any extension type requires a declarative validation rule. Use list media types for multiple assets, and set `detail.filterable: true` only when a non-badge field should become a learner-facing filter. Schema revisions and module semantic versions remain independent.

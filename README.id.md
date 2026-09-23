@@ -156,3 +156,7 @@ Definisi kalimat partikel kini berisi makna terlokalkan secara langsung, bukan l
 ## Graf konten penyedia yang diaudit
 
 Konten penyedia kini terlindung dari pemindahan dan penghapusan milik pengguna. Kosakata hewan memakai ejaan lazim `猫` dan `犬`, menaut melalui rekaman Kanji ke bacaan tersembunyi lengkap `ねこ` dan `いぬ`, lalu menyusun bacaan tersebut dari Kana atomik. Label dan pelafalan kalimat dibentuk dari graf kosakata dan partikel berurutan yang sama.
+
+## Kontrak paket Cognis PR 226
+
+Paket kini menerbitkan metadata katalog kompatibel JSON yang tervalidasi serta bidang sistem tulisan dan JLPT yang dapat difilter secara eksplisit sesuai kontrak paket eksternal dari Cognis PR #226. Paket tetap memakai tipe bidang bawaan dan kepemilikan penyedia terlindungi, sementara revisi skema `40` tetap terpisah dari versi modul `2.2.5`.

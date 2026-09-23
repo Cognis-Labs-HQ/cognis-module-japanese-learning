@@ -4,11 +4,15 @@ const CONTENT_PACK = Object.freeze({
     id: "japanese-core",
     publisher: "Cognis Labs HQ",
     namespace: "ja",
-    version: "2.2.4",
-    contentRevision: "2026-09-22.10",
+    version: "2.2.5",
+    contentRevision: "2026-09-23.1",
     schema: "schema.json",
     content: "content",
     protected: true,
+    metadata: Object.freeze({
+        catalog: Object.freeze({ category: "language", featured: true }),
+        tags: Object.freeze(["japanese", "study"]),
+    }),
     license: Object.freeze({
         id: "AGPL-3.0-or-later",
         url: "https://www.gnu.org/licenses/agpl-3.0.html",
@@ -22,7 +26,7 @@ const LANGUAGE = Object.freeze({
     languageCode: "ja",
     languageName: "日本語",
     languageFlag: "🇯🇵",
-    version: "2.2.4",
+    version: "2.2.5",
     package: CONTENT_PACK,
     childComponents: [],
 });

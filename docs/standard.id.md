@@ -153,3 +153,7 @@ Definisi harus menyatakan makna terlokalkan dari rekamannya. Definisi tidak bole
 ## Integritas graf penyedia
 
 Tetapkan `protected: true` pada manifest konten penyedia. Untuk setiap kalimat, gabungkan label kosakata dan partikel tertaut yang berurutan untuk memperoleh labelnya, lalu gabungkan pelafalannya untuk memperoleh pelafalan kalimat. Unit leksikal yang lazim ditulis dengan Kanji harus tertaut ke komposisi Kanji dan kosakata bacaan tersembunyi yang lengkap; setiap bacaan kemudian tertaut ke Kana atomik berurutan.
+
+## Kontrak paket eksternal dari PR 226
+
+Metadata manifest dan skema hanya boleh memuat nilai terbatas yang kompatibel dengan JSON dan harus bertahan tanpa perubahan saat melewati Pustaka. Utamakan tipe bidang bawaan; setiap tipe ekstensi memerlukan aturan validasi deklaratif. Gunakan tipe media daftar untuk beberapa aset, dan tetapkan `detail.filterable: true` hanya saat bidang non-lencana perlu menjadi filter pelajar. Revisi skema dan versi semantik modul tetap terpisah.
