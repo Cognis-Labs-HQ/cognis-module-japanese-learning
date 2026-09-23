@@ -141,3 +141,7 @@ Use multiple definition references only when one lexical record genuinely has mu
 ## Complete sentence-to-Kana traversal
 
 Every conventional lexical form in the core uses Kanji. A sentence references visible Vocabulary and particles only; visible Vocabulary composes through Kanji and hidden reading Vocabulary; each hidden reading reconstructs through atomic Kana. Tests must reject any sentence that bypasses Vocabulary, any word that bypasses Kanji or reading Vocabulary, and any reading that bypasses Kana.
+
+## Host-normalized record controls
+
+Match the installed Library contract before publishing: definition records are always hidden and use `class: "definition"`; ordered lexical sequences use `class: "composite"`; particles use `class: "particle"` and `editable: false`. Tests must verify these exact values so provider hashes and installed records agree after host normalization.

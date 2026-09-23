@@ -141,3 +141,7 @@ Gunakan beberapa referensi definisi hanya ketika satu rekaman leksikal benar-ben
 ## Traversal lengkap dari kalimat ke Kana
 
 Setiap bentuk leksikal konvensional dalam inti menggunakan Kanji. Kalimat hanya menaut ke Kosakata terlihat dan partikel; Kosakata terlihat tersusun melalui Kanji dan Kosakata bacaan tersembunyi; setiap bacaan tersembunyi dibentuk kembali dari Kana atomik. Pengujian harus menolak jalur apa pun yang melewati Kosakata, Kanji, Kosakata bacaan, atau Kana.
+
+## Kontrol rekaman yang dinormalisasi host
+
+Penuhi kontrak Library yang terpasang sebelum menerbitkan: rekaman definisi selalu tersembunyi dan memakai `class: "definition"`; urutan leksikal teratur memakai `class: "composite"`; partikel memakai `class: "particle"` dan `editable: false`. Pengujian harus memverifikasi nilai persis ini agar hash penyedia dan rekaman terpasang tetap sama setelah normalisasi host.

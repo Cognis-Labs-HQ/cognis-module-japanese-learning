@@ -94,6 +94,9 @@ function validateLayerLinks(records) {
             /^[a-z][a-zA-Z0-9]*(?::[a-z][a-zA-Z0-9]*)*$/,
             `${record.id} requires a semantic class`,
         );
+        if (record.editable !== undefined) {
+            assert.equal(typeof record.editable, "boolean");
+        }
         const definitionReferences = (record.references ?? []).filter(
             ({ relation }) => relation === "definitions",
         );
@@ -140,6 +143,8 @@ function validateLayerLinks(records) {
         }
 
         if (role === "particle") {
+            assert.equal(record.class, "particle");
+            assert.equal(record.editable, false);
             assert.ok(definitionReferences.length > 0);
             assertOrderedComposition(
                 record,
@@ -150,6 +155,7 @@ function validateLayerLinks(records) {
         }
 
         if (role === "orderedLexicalSequence") {
+            assert.equal(record.class, "composite");
             assert.ok(definitionReferences.length > 0);
             assertOrderedComposition(
                 record,
@@ -170,6 +176,8 @@ function validateLayerLinks(records) {
         }
 
         if (role === "definition") {
+            assert.equal(record.class, "definition");
+            assert.equal(record.hidden, true);
             assert.ok(referencedIds.has(record.id), `${record.id} is orphaned`);
         }
     }

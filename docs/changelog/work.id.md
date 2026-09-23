@@ -253,3 +253,9 @@ Perluasan partikel komprehensif, Kanji hasil generasi, kalimat, dan bacaan yang 
 Setiap rekaman Kosakata inti yang terlihat kini menggunakan bentuk Kanji konvensional dan terhubung melalui graf tertulis yang lengkap. Kalimat hanya menaut ke Kosakata terlihat dan partikel; Kosakata menaut ke Kanji dan segmen bacaan tersembunyi; bacaan tersembunyi dibentuk kembali dari Kana atomik berurutan. `私は学生` kini mengikuti `私` → `わたし` → `わ`・`た`・`し`, `は`, dan `学生` → `がく`・`せい` → `が`・`く`・`せ`・`い`. Pengujian regresi menolak setiap lapisan yang dilewati.
 
 - [65ff45a](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/65ff45affebb7a647d7ee3012eb9e8999e4de7b0)
+
+## Kontrol Rekaman Terbaru PR 226
+
+Rekaman penyedia telah diselaraskan dengan kontrak paket eksternal Study Library terbaru. Definisi secara eksplisit disembunyikan dengan kelas khusus host `definition`, kalimat memakai kelas `composite`, dan partikel memakai kelas `particle` dengan `editable: false`. Pengujian kontrak memverifikasi nilai yang dinormalisasi ini sebelum pemasukan agar rekaman terpasang dan hash penyedia tetap konsisten.
+
+- [e74c036](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/e74c0362e8a1fb9e15bdc58b80c2e1c7eb0d07f3)

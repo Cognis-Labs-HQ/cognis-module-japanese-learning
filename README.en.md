@@ -144,3 +144,7 @@ The pack now includes more than thirty additional everyday Vocabulary records, t
 ## Kanji-first core graph
 
 The compact core now uses conventional Kanji spellings throughout. Sentences reference visible vocabulary, visible vocabulary references its Kanji and hidden pronunciation segments, and every hidden segment reconstructs from atomic Kana. For example, `私は学生` resolves through `私` → `わたし` → `わ`・`た`・`し` and `学生` → `がく`・`せい` → atomic Kana.
+
+## Latest PR 226 record controls
+
+The provider data now matches the latest Study Library normalization contract: definitions are hidden `definition` records, sentences are `composite` records, and particles are immutable `particle` records with `editable: false`. Lexical and reading classes remain provider-neutral and namespaced.

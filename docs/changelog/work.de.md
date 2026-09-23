@@ -253,3 +253,9 @@ Die ungeprüften umfassenden Partikel-, generierten Kanji-, Satz- und Lesungserw
 Jeder sichtbare Wortschatzeintrag des Kernbestands verwendet nun seine übliche Kanji-Form und ist über den vollständigen verfassten Graphen verbunden. Sätze verweisen nur auf sichtbaren Wortschatz und Partikeln; Wortschatz verweist auf Kanji und verborgene Lesungsabschnitte; verborgene Lesungen werden aus geordneten atomaren Kana rekonstruiert. `私は学生` folgt nun `私` → `わたし` → `わ`・`た`・`し`, `は` und `学生` → `がく`・`せい` → `が`・`く`・`せ`・`い`. Regressionstests lehnen jede übersprungene Ebene ab.
 
 - [65ff45a](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/65ff45affebb7a647d7ee3012eb9e8999e4de7b0)
+
+## Neueste Datensatzsteuerung aus PR 226
+
+Die Anbieter-Datensätze wurden an den neuesten Vertrag für externe Pakete der Study Library angepasst. Definitionen sind ausdrücklich ausgeblendet und verwenden die hostreservierte Klasse `definition`, Sätze verwenden `composite` und Partikeln verwenden `particle` mit `editable: false`. Vertragstests prüfen diese normalisierten Werte vor der Aufnahme, damit installierte Datensätze und Anbieter-Hashes übereinstimmen.
+
+- [e74c036](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/e74c0362e8a1fb9e15bdc58b80c2e1c7eb0d07f3)

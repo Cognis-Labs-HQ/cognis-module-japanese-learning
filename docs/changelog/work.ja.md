@@ -253,3 +253,9 @@ Cognis PR #214 に合わせ、名前空間の所有権、ローカライズ済�
 表示されるすべてのコア語彙が一般的な漢字表記を使用し、作成済みの完全なグラフで接続されるようになりました。文は表示語彙と助詞だけを参照し、語彙は漢字と非表示の読み分節を参照し、非表示読みは順序付きの原子的なかなから再構成されます。`私は学生` は `私` → `わたし` → `わ`・`た`・`し`、`は`、`学生` → `がく`・`せい` → `が`・`く`・`せ`・`い` の経路をたどります。回帰テストはいずれかのレイヤーを飛ばすデータを拒否します。
 
 - [65ff45a](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/65ff45affebb7a647d7ee3012eb9e8999e4de7b0)
+
+## PR 226 の最新レコード制御
+
+プロバイダーレコードを最新の Study Library 外部パッケージ契約へ合わせました。定義はホスト予約クラス `definition` を使用して明示的に非表示となり、文は `composite`、助詞は `editable: false` を伴う `particle` クラスを使用します。インストール済みレコードとプロバイダーハッシュの整合性を保つため、取り込み前に契約テストでこれらの正規化値を検証します。
+
+- [e74c036](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/e74c0362e8a1fb9e15bdc58b80c2e1c7eb0d07f3)

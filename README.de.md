@@ -144,3 +144,7 @@ Das Paket enthält nun mehr als dreißig zusätzliche alltägliche Wortschatzein
 ## Kanji-basierter Kerngraph
 
 Der kompakte Kern verwendet nun durchgehend die üblichen Kanji-Schreibweisen. Sätze verweisen auf sichtbaren Wortschatz, sichtbarer Wortschatz auf seine Kanji und verborgenen Ausspracheabschnitte, und jeder verborgene Abschnitt wird aus atomaren Kana rekonstruiert. So wird `私は学生` über `私` → `わたし` → `わ`・`た`・`し` und `学生` → `がく`・`せい` → atomare Kana aufgelöst.
+
+## Neueste Datensatzsteuerung aus PR 226
+
+Die Anbieterdaten entsprechen nun dem neuesten Normalisierungsvertrag der Study Library: Definitionen sind ausgeblendete `definition`-Datensätze, Sätze sind `composite`-Datensätze und Partikeln sind unveränderliche `particle`-Datensätze mit `editable: false`. Lexikalische und Lesungsklassen bleiben anbieterneutral und namensraumgebunden.

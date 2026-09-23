@@ -144,3 +144,7 @@ Paket kini memuat lebih dari tiga puluh rekaman Kosakata sehari-hari tambahan, s
 ## Graf inti yang mengutamakan Kanji
 
 Inti ringkas kini menggunakan ejaan Kanji konvensional secara menyeluruh. Kalimat menaut ke Kosakata terlihat, Kosakata terlihat menaut ke Kanji dan segmen pelafalan tersembunyi, dan setiap segmen tersembunyi dibentuk kembali dari Kana atomik. Contohnya, `私は学生` diselesaikan melalui `私` → `わたし` → `わ`・`た`・`し` dan `学生` → `がく`・`せい` → Kana atomik.
+
+## Kontrol rekaman terbaru PR 226
+
+Data penyedia kini sesuai dengan kontrak normalisasi Study Library terbaru: definisi merupakan rekaman `definition` tersembunyi, kalimat merupakan rekaman `composite`, dan partikel merupakan rekaman `particle` yang tidak dapat diubah dengan `editable: false`. Kelas leksikal dan bacaan tetap netral terhadap penyedia dan ber-namespace.

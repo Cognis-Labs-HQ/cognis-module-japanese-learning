@@ -253,3 +253,9 @@ Removed the unreviewed comprehensive particle, generated Kanji, sentence, and re
 Every visible core Vocabulary record now uses its conventional Kanji form and connects through the full authored graph. Sentences reference only visible Vocabulary and particles; Vocabulary references Kanji and hidden reading segments; hidden readings reconstruct from ordered atomic Kana. `私は学生` now follows `私` → `わたし` → `わ`・`た`・`し`, `は`, and `学生` → `がく`・`せい` → `が`・`く`・`せ`・`い`. Regression tests reject every skipped layer.
 
 - [65ff45a](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/65ff45affebb7a647d7ee3012eb9e8999e4de7b0)
+
+## Latest PR 226 Record Controls
+
+Aligned provider records with the latest Study Library external-package contract. Definitions are explicitly hidden with the host-reserved `definition` class, sentences use the `composite` class, and particles use the `particle` class with `editable: false`. Contract tests verify these normalized values before ingestion so installed records and provider hashes remain consistent.
+
+- [e74c036](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/e74c0362e8a1fb9e15bdc58b80c2e1c7eb0d07f3)

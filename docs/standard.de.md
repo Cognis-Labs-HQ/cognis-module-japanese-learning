@@ -141,3 +141,7 @@ Mehrere Definitionsverweise werden nur verwendet, wenn ein einzelner lexikalisch
 ## Vollständiger Pfad vom Satz bis zu Kana
 
 Jede konventionelle lexikalische Form im Kern verwendet Kanji. Ein Satz verweist nur auf sichtbaren Wortschatz und Partikeln; sichtbarer Wortschatz setzt sich über Kanji und verborgenes Lesevokabular zusammen; jede verborgene Lesung wird aus atomaren Kana rekonstruiert. Tests müssen jeden Pfad ablehnen, der Wortschatz, Kanji, Lesevokabular oder Kana überspringt.
+
+## Vom Host normalisierte Datensatzsteuerung
+
+Vor der Veröffentlichung muss der installierte Library-Vertrag erfüllt sein: Definitionsdatensätze sind stets ausgeblendet und verwenden `class: "definition"`; geordnete lexikalische Sequenzen verwenden `class: "composite"`; Partikeln verwenden `class: "particle"` und `editable: false`. Tests müssen diese Werte exakt prüfen, damit Anbieter-Hashes und installierte Datensätze nach der Host-Normalisierung übereinstimmen.
