@@ -157,3 +157,7 @@ Eine verborgene Lesung darf nicht mehrere eingehende Datensätze mit derselben A
 ## Aussprachegraph für Sätze
 
 Das Aussprachefeld eines Satzes verweist über `pronunciation-readings` auf genau einen verborgenen Wortschatzdatensatz mit vollständiger Lesung. Dieser Datensatz rekonstruiert die gesamte Aussprache lückenlos mit `word-spelling`-Verweisen auf die nächstliegenden verborgenen lexikalischen Lesungen und `reading-kana`-Verweisen auf atomare Partikel- oder nichtlexikalische Kana. Tests müssen bei fehlenden Teilzeichenfolgen, nicht verborgenen Wortschatzzielen, direkten Satz-zu-Zeichen-Abkürzungen oder unverknüpften Lesungen fehlschlagen.
+
+## Zyklenfreie Navigation und lexikalische Lesungen
+
+Verfasste Lernverknüpfungen bilden einen gerichteten azyklischen Graphen, und Kana-Zeichen beenden die Navigation. Kanji dürfen ihre Aussprache über verborgene Lesevokabeln in geordnete Kana auflösen; diese Lesungen verweisen jedoch niemals zurück auf das Kanji oder seine lexikalischen Nutzer. Eine Lesung mit eigener lexikalischer Bedeutung, etwa der Tageszähler `か`, ist sichtbares Vokabular mit einer semantischen Klasse und nicht `reading:kanji`.

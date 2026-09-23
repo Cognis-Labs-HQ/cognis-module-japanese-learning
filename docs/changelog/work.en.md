@@ -277,3 +277,9 @@ Single-Kanji lexical records now point to dedicated hidden complete-pronunciatio
 Every sentence pronunciation now resolves through a hidden complete-pronunciation record. Lexical spans use the closest hidden word readings, while particles and other nonlexical single Kana link directly through `reading-kana`; tests reject unreconstructed text. Eight reviewed, varied practice sentences and the fully linked vocabulary for `学ぶ` and `歩く` extend the curriculum without template-generated filler.
 
 - [d90876c](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/d90876c607bf4a34f628d27429e38264943f1c2d)
+
+## Acyclic Reading Semantics
+
+The lexical day-counter `か` is now visible `lexical:counter` Vocabulary rather than a hidden Kanji-reading implementation record. New whole-graph checks reject forward composition cycles and require Kana to terminate study-link traversal. The remaining duplicate-label back-navigation concern is recorded as a Study Library host follow-up because the module must retain the required word-to-Kanji spelling edge.
+
+- [07f7a0c](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/07f7a0c2e298debdc71965f63a380f5f84fc8c37)

@@ -277,3 +277,9 @@ Lexikalische Datensätze aus einem einzelnen Kanji verweisen nun auf eigene verb
 Jede Satzaussprache wird nun über einen verborgenen Datensatz der vollständigen Aussprache aufgelöst. Lexikalische Abschnitte verwenden die nächstgelegenen verborgenen Wortlesungen, während Partikeln und andere nichtlexikalische Einzel-Kana direkt über `reading-kana` verknüpft werden; Tests lehnen nicht rekonstruierbaren Text ab. Acht geprüfte, abwechslungsreiche Übungssätze sowie die vollständig verknüpften Vokabeln `学ぶ` und `歩く` erweitern den Lernstoff ohne vorlagenartig erzeugte Füllinhalte.
 
 - [d90876c](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/d90876c607bf4a34f628d27429e38264943f1c2d)
+
+## Zyklenfreie Lesungssemantik
+
+Der lexikalische Tageszähler `か` ist nun sichtbares Vokabular der Klasse `lexical:counter` und kein verborgener Implementierungsdatensatz für eine Kanji-Lesung. Neue Prüfungen des gesamten Graphen lehnen vorwärts gerichtete Kompositionszyklen ab und verlangen, dass Kana die Lernverknüpfung beenden. Die verbleibende Rücknavigation zwischen gleich bezeichneten Einträgen ist als Folgemaßnahme für den Study-Library-Host dokumentiert, da das Modul die notwendige Schreibbeziehung vom Wort zum Kanji beibehalten muss.
+
+- [07f7a0c](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/07f7a0c2e298debdc71965f63a380f5f84fc8c37)

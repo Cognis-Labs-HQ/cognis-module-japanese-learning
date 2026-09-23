@@ -306,7 +306,10 @@ test("visible core vocabulary uses Kanji without skipping reading layers", () =>
     const records = loadRecords();
     const recordsById = new Map(records.map((record) => [record.id, record]));
     const visibleVocabulary = records.filter(
-        ({ hidden, layer }) => layer === "words" && hidden !== true,
+        ({ hidden, label, layer }) =>
+            layer === "words" &&
+            hidden !== true &&
+            /[\p{Script=Han}]/u.test(label),
     );
 
     for (const word of visibleVocabulary) {
@@ -374,6 +377,68 @@ test("hidden readings do not show duplicate-labeled Used By entries", () => {
             `${reading.id} has duplicate-labeled parents: ${labels.join(", ")}`,
         );
     }
+});
+
+test("authored study links are acyclic and terminate at writing characters", () => {
+    const records = loadRecords();
+    const recordsById = new Map(records.map((record) => [record.id, record]));
+    const structuralRelations = new Set([
+        "kana-spelling",
+        "pronunciation-readings",
+        "reading-kana",
+        "readings",
+        "spelling",
+        "word-spelling",
+        "words",
+        "particles",
+    ]);
+    const visiting = new Set();
+    const visited = new Set();
+
+    function visit(record, path = []) {
+        assert.ok(record, `missing record after ${path.join(" -> ")}`);
+        assert.equal(
+            visiting.has(record.id),
+            false,
+            `recursive study link: ${[...path, record.id].join(" -> ")}`,
+        );
+        if (visited.has(record.id)) return;
+        visiting.add(record.id);
+        for (const reference of record.references ?? []) {
+            if (!structuralRelations.has(reference.relation)) continue;
+            visit(recordsById.get(reference.entryId), [...path, record.id]);
+        }
+        visiting.delete(record.id);
+        visited.add(record.id);
+    }
+
+    for (const record of records) visit(record);
+    for (const character of records.filter(
+        ({ layer }) => layer === "characters",
+    )) {
+        assert.equal(
+            (character.references ?? []).some(({ relation }) =>
+                structuralRelations.has(relation),
+            ),
+            false,
+            `${character.id} must terminate the study-link chain`,
+        );
+    }
+});
+
+test("lexicalized Kanji readings remain vocabulary rather than hidden readings", () => {
+    const recordsById = new Map(
+        loadRecords().map((record) => [record.id, record]),
+    );
+    const dayCounter = recordsById.get("ja:word:ka-day-counter");
+    assert.equal(dayCounter.class, "lexical:counter");
+    assert.equal(dayCounter.hidden, undefined);
+    assert.deepEqual(
+        orderedReferences(dayCounter, new Set(["kana-spelling"])).map(
+            ({ entryId }) => recordsById.get(entryId).label,
+        ),
+        ["か"],
+    );
 });
 
 test("layer checks reject content whose required links are removed", () => {

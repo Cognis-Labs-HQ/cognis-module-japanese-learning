@@ -141,7 +141,12 @@ test("Kanji readings and particles resolve through authored Kana links", () => {
             ({ relation }) => relation === "readings",
         )) {
             const reading = recordsById.get(reference.entryId);
-            assert.equal(reading.hidden, true);
+            if (reading.class.startsWith("reading:")) {
+                assert.equal(reading.hidden, true);
+            } else {
+                assert.equal(reading.hidden, undefined);
+                assert.ok(reading.class.startsWith("lexical:"));
+            }
             assert.equal(labelsFor(reading, ["kana-spelling"]), reading.label);
         }
     }

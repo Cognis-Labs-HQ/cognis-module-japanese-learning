@@ -157,3 +157,7 @@ A hidden reading must not have multiple inbound records with the same display la
 ## Sentence pronunciation graph
 
 A sentence pronunciation field links to exactly one hidden complete-reading Vocabulary record through `pronunciation-readings`. That record reconstructs the entire pronunciation with contiguous `word-spelling` references to the closest hidden lexical readings and `reading-kana` references to atomic particle or non-lexical Kana. Tests must fail on any missing substring, non-hidden vocabulary target, direct sentence-to-character shortcut, or unlinked reading.
+
+## Acyclic traversal and lexical readings
+
+Authored study links form a directed acyclic graph and Kana characters terminate traversal. Kanji may resolve pronunciations through hidden reading Vocabulary to ordered Kana, but those readings never link back to the Kanji or its lexical users. A reading with an independent lexical meaning, such as the day-counter `か`, is visible Vocabulary with a semantic class rather than `reading:kanji`.

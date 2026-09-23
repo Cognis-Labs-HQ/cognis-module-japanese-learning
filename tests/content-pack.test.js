@@ -420,7 +420,13 @@ test("kanji readings reference distinct kana-backed vocabulary entries", () => {
             readingWords.map(({ label }) => label),
             kanji.fields.pronunciation,
         );
-        assert.ok(readingWords.every(({ hidden }) => hidden === true));
+        assert.ok(
+            readingWords.every(({ class: entryClass, hidden }) =>
+                entryClass.startsWith("reading:")
+                    ? hidden === true
+                    : entryClass.startsWith("lexical:") && hidden !== true,
+            ),
+        );
         for (const readingWord of readingWords) {
             const spelling = readingWord.references
                 .filter(({ relation }) => relation === "kana-spelling")

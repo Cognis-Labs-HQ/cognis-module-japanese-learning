@@ -157,3 +157,7 @@ Bacaan tersembunyi tidak boleh memiliki beberapa rekaman masuk dengan label tamp
 ## Graf pelafalan kalimat
 
 Bidang pelafalan kalimat menaut ke tepat satu rekaman Kosakata bacaan lengkap tersembunyi melalui `pronunciation-readings`. Rekaman tersebut membentuk kembali seluruh pelafalan secara berurutan dengan referensi `word-spelling` ke bacaan leksikal tersembunyi terdekat dan referensi `reading-kana` ke Kana partikel atau nonleksikal atomik. Pengujian harus gagal jika ada substring hilang, target kosakata yang tidak tersembunyi, pintasan langsung kalimat-ke-karakter, atau bacaan tanpa tautan.
+
+## Penelusuran tanpa siklus dan bacaan leksikal
+
+Tautan pembelajaran yang ditulis membentuk graf berarah tanpa siklus, dan karakter Kana mengakhiri penelusuran. Kanji dapat menyelesaikan pelafalannya melalui Kosakata bacaan tersembunyi ke Kana terurut, tetapi bacaan tersebut tidak pernah menaut kembali ke Kanji atau pengguna leksikalnya. Bacaan yang mempunyai makna leksikal mandiri, seperti penghitung hari `か`, merupakan Kosakata terlihat dengan kelas semantik, bukan `reading:kanji`.

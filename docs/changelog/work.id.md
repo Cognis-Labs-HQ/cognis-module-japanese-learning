@@ -277,3 +277,9 @@ Rekaman leksikal satu Kanji kini menaut ke pembungkus pelafalan lengkap tersembu
 Setiap pelafalan kalimat kini diselesaikan melalui rekaman pelafalan lengkap tersembunyi. Rentang leksikal menggunakan bacaan kata tersembunyi terdekat, sedangkan partikel dan Kana tunggal nonleksikal lainnya ditautkan langsung melalui `reading-kana`; pengujian menolak teks yang tidak dapat direkonstruksi. Delapan kalimat latihan yang beragam dan telah ditinjau beserta kosakata `学ぶ` dan `歩く` yang tertaut sepenuhnya memperluas kurikulum tanpa isian buatan templat.
 
 - [d90876c](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/d90876c607bf4a34f628d27429e38264943f1c2d)
+
+## Semantik Bacaan Tanpa Siklus
+
+Penghitung hari leksikal `か` kini merupakan Kosakata `lexical:counter` yang terlihat, bukan rekaman implementasi bacaan Kanji yang tersembunyi. Pemeriksaan seluruh graf yang baru menolak siklus komposisi maju dan mewajibkan Kana mengakhiri penelusuran tautan pembelajaran. Masalah navigasi balik berlabel sama yang tersisa dicatat sebagai tindak lanjut host Study Library karena modul harus mempertahankan relasi ejaan kata-ke-Kanji yang diwajibkan.
+
+- [07f7a0c](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/07f7a0c2e298debdc71965f63a380f5f84fc8c37)
