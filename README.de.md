@@ -168,3 +168,7 @@ Sichtbarer Wortschatz verwendet nun die übliche japanische Schreibweise wie `�
 ## Klassifizierte, segmentweise verknüpfte Lesungen
 
 Jeder Provider-Eintrag trägt nun eine namensraumgebundene semantische Klasse gemäß dem aktuellen Cognis-Library-Vertrag. Vollständige Aussprachen bewahren ihre innere Struktur: Von Kanji abgeleitete Abschnitte verweisen auf verborgenes Kanji-Lesevokabular, flektierende Kana auf atomare Kana. Dadurch wird `強い` über `つよ` und `い` aufgelöst, statt `つよい` unverknüpft anzuzeigen.
+
+## Schutzregeln für Ebenenverknüpfungen
+
+Die Pakettests leiten Verknüpfungserwartungen nun aus der semantischen Rolle jeder Schemaebene ab, lehnen verwaiste Anbieter-Datensätze ab und Mutationstests prüfen jede verknüpfte Ebene, damit getrennte Lerninhalte nicht unbemerkt validiert werden.

@@ -168,3 +168,7 @@ Visible vocabulary now uses conventional Japanese orthography such as `私`, `�
 ## Classified, segment-linked readings
 
 Every provider entry now carries a namespaced semantic class from the current Cognis Library contract. Complete pronunciations preserve their internal structure: Kanji-derived spans link to hidden Kanji-reading Vocabulary, while inflectional Kana link to atomic Kana. Thus `強い` resolves through `つよ` and `い` instead of presenting an unlinked `つよい` string.
+
+## Layer linkage guardrails
+
+The pack's tests now derive linkage expectations from each schema layer's semantic role, reject orphaned provider records, and mutation-test every linked layer so disconnected study content cannot pass validation unnoticed.

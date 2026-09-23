@@ -165,3 +165,7 @@ Verwende die übliche Kanji-haltige Form als primäre Bezeichnung für sichtbare
 ## Eintragsklassen und Ausspracheabschnitte
 
 Jeder Paketdatensatz erhält eine namensraumgebundene semantische `class`. Eine vollständige verborgene Aussprache setzt von Kanji abgeleitete Abschnitte aus dem nächstliegenden Kanji-Lesevokabular und nur die verbleibenden Kana über `kana-spelling` zusammen; die geordneten Ziele müssen die Aussprache exakt ergeben.
+
+## Ebenenspezifische Verknüpfungsvalidierung
+
+Inhalte werden entsprechend der semantischen Rolle jeder Ebene validiert. Kanji-Lesungen müssen die Aussprachefelder wiedergeben; sichtbares Vokabular muss Schreib- und Ausspracheverknüpfungen behalten; verborgene Lesungen, Partikeln und Sätze müssen ihre angezeigten Werte über geordnete Ziele rekonstruieren. Verborgene Lesungen, Kanji, Partikeln und Definitionen dürfen nicht verwaist sein. Tests müssen außerdem nachweisen, dass absichtlich getrennte Datensätze abgelehnt werden.

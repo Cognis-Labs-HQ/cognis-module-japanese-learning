@@ -289,3 +289,9 @@ Sichtbarer Wortschatz verwendet nun überall dort übliche Kanji-haltige Formen,
 Alle Anbieter-Datensätze tragen nun namensraumgebundene semantische Klassen aus dem neuesten Vertrag von Cognis PR 226. Vollständige Aussprachen bewahren die Navigation auf Segmentebene: Bei `強い` wird beispielsweise `つよ` über das verborgene Lesevokabular von `強` und `い` über atomare Kana aufgelöst. Kontextuelle Lesungen für unregelmäßige Komposita und Flexionen erhalten denselben Pfad; Vertragstests prüfen jede Datensatzklasse und jede rekonstruierte Aussprache.
 
 - [e531a23](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/e531a23612eaf65b873f0241b0904aed8a3be15c)
+
+## Ebenenspezifische Schutzregeln für Verknüpfungen
+
+Neue, von Schema-Rollen abgeleitete Tests verlangen, dass Kanji-Lesungen, Schreibweisen und Aussprachen des Wortschatzes, Partikeln, Sätze und Definitionen ihre verfassten Pfade behalten. Mutationsfälle entfernen absichtlich Links aus jeder verbundenen Ebene und müssen fehlschlagen; Prüfungen auf verwaiste Einträge verhindern außerdem die Auslieferung getrennter verborgener Lesungen und Anbieter-Datensätze. Die Prüfung entfernte auch die ungenutzten Grammatikdatensätze `である` und `行き` samt ihren unerreichbaren Abhängigkeiten.
+
+- [69350d1](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/69350d17e1b5da46783e5e842c3b8585d9c4b649)

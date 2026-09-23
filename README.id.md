@@ -168,3 +168,7 @@ Kosakata terlihat kini memakai ortografi Jepang yang lazim seperti `私`, `水`,
 ## Bacaan terklasifikasi dan tertaut per segmen
 
 Setiap entri penyedia kini memiliki kelas semantik ber-namespace sesuai kontrak Cognis Library terbaru. Pelafalan lengkap mempertahankan struktur internalnya: bagian yang berasal dari Kanji menaut ke Kosakata bacaan Kanji tersembunyi, sedangkan Kana infleksional menaut ke Kana atomik. Karena itu, `強い` diselesaikan melalui `つよ` dan `い`, bukan ditampilkan sebagai teks `つよい` tanpa tautan.
+
+## Pagar pengaman tautan lapisan
+
+Pengujian paket kini memperoleh harapan tautan dari peran semantik setiap lapisan skema, menolak rekaman penyedia yang yatim, dan menguji mutasi setiap lapisan tertaut agar konten belajar yang terputus tidak lolos validasi tanpa terdeteksi.

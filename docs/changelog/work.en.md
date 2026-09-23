@@ -289,3 +289,9 @@ Visible vocabulary now uses conventional Kanji-containing forms whenever appropr
 All provider records now carry namespaced semantic classes from the latest Cognis PR 226 contract. Complete pronunciations preserve segment-level navigation: for example, `強い` resolves `つよ` through the hidden `強` reading Vocabulary and `い` through atomic Kana. Contextual readings for irregular compounds and inflections keep the same path intact, and contract tests verify every record class and every reconstructed pronunciation.
 
 - [e531a23](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/e531a23612eaf65b873f0241b0904aed8a3be15c)
+
+## Layer-Shaped Linkage Guardrails
+
+New schema-role-driven tests require Kanji readings, Vocabulary spellings and pronunciations, particles, sentences, and definitions to retain their authored paths. Mutation cases deliberately remove links from every connected layer and must fail, while orphan checks prevent disconnected hidden readings and provider records from shipping. The audit also removed unused `である` and `行き` grammar records and their unreachable dependencies.
+
+- [69350d1](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/69350d17e1b5da46783e5e842c3b8585d9c4b649)

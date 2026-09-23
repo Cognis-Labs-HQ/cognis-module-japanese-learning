@@ -165,3 +165,7 @@ Gunakan bentuk lazim yang memuat Kanji sebagai label utama kosakata terlihat bil
 ## Kelas entri dan segmen pelafalan
 
 Tetapkan `class` semantik ber-namespace pada setiap rekaman paket. Pelafalan lengkap yang tersembunyi harus menyusun bagian turunan Kanji dari Kosakata bacaan Kanji terdekat dan hanya Kana sisanya melalui `kana-spelling`; target yang berurutan harus membentuk kembali pelafalan secara tepat.
+
+## Validasi tautan berdasarkan lapisan
+
+Validasi konten menurut peran semantik setiap lapisan. Bacaan Kanji harus membentuk kembali bidang pelafalan; Kosakata terlihat harus mempertahankan tautan tulisan dan pelafalan; bacaan tersembunyi, partikel, dan kalimat harus membentuk kembali nilai tampilannya melalui target berurutan. Bacaan tersembunyi, Kanji, partikel, dan definisi tidak boleh menjadi yatim. Pengujian juga harus membuktikan bahwa rekaman yang sengaja diputus ditolak.

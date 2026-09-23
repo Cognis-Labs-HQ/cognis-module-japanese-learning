@@ -165,3 +165,7 @@ Use the conventional Kanji-containing form as the primary label for visible voca
 ## Entry classes and pronunciation segments
 
 Assign every packaged record a namespaced semantic `class`. A complete hidden pronunciation must compose Kanji-derived spans from the closest Kanji-reading Vocabulary and only its remaining Kana from `kana-spelling`; the ordered targets must reproduce the pronunciation exactly.
+
+## Layer-shaped linkage validation
+
+Validate content according to each layer's semantic role. Kanji readings must reproduce pronunciation fields; visible Vocabulary must retain written and pronunciation links; hidden readings, particles, and sentences must reconstruct their displayed values through ordered targets; and hidden readings, Kanji, particles, and definitions must not be orphaned. Tests must also prove these checks reject deliberately disconnected records.

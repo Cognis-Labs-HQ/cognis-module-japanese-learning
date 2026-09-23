@@ -289,3 +289,9 @@ Kosakata terlihat kini memakai bentuk lazim yang mengandung Kanji bila sesuai, d
 Semua rekaman penyedia kini memiliki kelas semantik ber-namespace dari kontrak terbaru Cognis PR 226. Pelafalan lengkap mempertahankan navigasi tingkat segmen: misalnya, `強い` menyelesaikan `つよ` melalui Kosakata bacaan `強` yang tersembunyi dan `い` melalui Kana atomik. Bacaan kontekstual untuk gabungan dan infleksi tidak beraturan mempertahankan jalur yang sama, sementara pengujian kontrak memverifikasi kelas setiap rekaman dan setiap pelafalan yang direkonstruksi.
 
 - [e531a23](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/e531a23612eaf65b873f0241b0904aed8a3be15c)
+
+## Pagar Pengaman Tautan Berdasarkan Lapisan
+
+Pengujian baru yang digerakkan peran skema mewajibkan bacaan Kanji, ejaan dan pelafalan Kosakata, partikel, kalimat, serta definisi mempertahankan jalur yang ditulis. Kasus mutasi sengaja menghapus tautan dari setiap lapisan terhubung dan harus gagal, sementara pemeriksaan entri yatim mencegah bacaan tersembunyi dan rekaman penyedia yang terputus ikut dirilis. Audit juga menghapus rekaman tata bahasa `である` dan `行き` yang tidak digunakan beserta dependensinya yang tidak dapat dijangkau.
+
+- [69350d1](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/69350d17e1b5da46783e5e842c3b8585d9c4b649)
