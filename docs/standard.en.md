@@ -149,3 +149,7 @@ Match the installed Library contract before publishing: definition records are a
 ## Inflectional reading composition
 
 Use `word-spelling` for a meaningful multi-Kana reading segment and `reading-kana` for each remaining single-Kana inflectional suffix, sharing contiguous positions. `reading-kana` is a composition relationship; never use partial `kana-spelling`, because that role represents a complete alternate spelling and otherwise renders the suffix as a misleading standalone pronunciation.
+
+## Unique Used By parents
+
+A hidden reading must not have multiple inbound records with the same display label. For a visible single-Kanji word, author a hidden complete-pronunciation wrapper owned by the lexical word and make that wrapper compose from the Kanji-reading record. The Kanji-reading card then has one Kanji parent and one differently labeled reading parent, while the wrapper has only the visible lexical parent.

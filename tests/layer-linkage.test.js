@@ -199,7 +199,7 @@ test("reviewed graph inventory remains bounded to the core curriculum", () => {
         characters: 270,
         "alt-characters": 38,
         definitions: 104,
-        words: 92,
+        words: 110,
         particles: 11,
         sentences: 9,
     });
@@ -304,6 +304,31 @@ test("inflected readings compose meaningful stems and atomic Kana suffixes", () 
         false,
         "a partial Kana suffix must not masquerade as a complete alternate spelling",
     );
+});
+
+test("hidden readings do not show duplicate-labeled Used By entries", () => {
+    const records = loadRecords();
+    const inbound = new Map();
+    for (const source of records) {
+        for (const { entryId } of source.references ?? []) {
+            if (!inbound.has(entryId)) inbound.set(entryId, []);
+            inbound.get(entryId).push(source);
+        }
+    }
+
+    for (const reading of records.filter(
+        ({ class: entryClass, hidden }) =>
+            hidden === true && entryClass.startsWith("reading:"),
+    )) {
+        const labels = (inbound.get(reading.id) ?? []).map(
+            ({ label }) => label,
+        );
+        assert.equal(
+            new Set(labels).size,
+            labels.length,
+            `${reading.id} has duplicate-labeled parents: ${labels.join(", ")}`,
+        );
+    }
 });
 
 test("layer checks reject content whose required links are removed", () => {

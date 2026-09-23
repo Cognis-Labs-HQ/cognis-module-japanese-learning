@@ -265,3 +265,9 @@ Rekaman penyedia telah diselaraskan dengan kontrak paket eksternal Study Library
 Bacaan lengkap tersembunyi kini menggunakan relasi khusus komposisi `reading-kana` untuk akhiran Kana nonleksikal, bukan menyalahgunakan `kana-spelling` parsial sebagai pelafalan alternatif. Bacaan `なおす` menyusun `なお` yang bermakna melalui Kosakata bacaan `直` tersembunyi dan menautkan akhiran tunggal `す` langsung ke Kana atomik, sehingga kartu tidak lagi menampilkan hanya bagian akhir sebagai pelafalan.
 
 - [1bb8457](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/1bb84576d96472bba37b33163a9fbc3b292954ab)
+
+## Induk Bacaan Tanpa Duplikasi
+
+Rekaman leksikal satu Kanji kini menaut ke pembungkus pelafalan lengkap tersembunyi khusus yang tersusun dari Kosakata bacaan Kanji dasarnya. Bacaan seperti `ねこ` dengan demikian digunakan oleh Kanji `猫` dan pembungkus tersembunyi `ねこ` yang berlabel berbeda, bukan oleh dua kartu `猫` yang tampak sama. Pengujian regresi seluruh graf menolak induk berlabel duplikat untuk setiap bacaan tersembunyi.
+
+- [d5c257d](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/d5c257df1f91978090c7e9ea9f85ded883847c06)

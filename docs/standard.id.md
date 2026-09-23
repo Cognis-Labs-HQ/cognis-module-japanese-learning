@@ -149,3 +149,7 @@ Penuhi kontrak Library yang terpasang sebelum menerbitkan: rekaman definisi sela
 ## Komposisi bacaan infleksional
 
 Gunakan `word-spelling` untuk segmen bacaan multi-Kana yang bermakna dan `reading-kana` untuk setiap Kana tunggal yang tersisa sebagai akhiran infleksional, dengan posisi berurutan tanpa celah. `reading-kana` adalah relasi komposisi; jangan pernah memakai `kana-spelling` parsial karena peran tersebut mewakili ejaan alternatif lengkap dan akan menampilkan akhiran secara menyesatkan sebagai pelafalan tersendiri.
+
+## Induk Digunakan Oleh yang unik
+
+Bacaan tersembunyi tidak boleh memiliki beberapa rekaman masuk dengan label tampilan yang sama. Untuk kata terlihat yang terdiri dari satu Kanji, buat pembungkus pelafalan lengkap tersembunyi milik kata leksikal dan susun pembungkus tersebut dari rekaman bacaan Kanji. Kartu bacaan Kanji kemudian memiliki satu induk Kanji dan satu induk bacaan berlabel berbeda, sedangkan pembungkus hanya memiliki induk leksikal terlihat.

@@ -265,3 +265,9 @@ Die Anbieter-Datensätze wurden an den neuesten Vertrag für externe Pakete der 
 Vollständige verborgene Lesungen verwenden nun für nichtlexikalische Kana-Endungen die reine Kompositionsbeziehung `reading-kana`, statt ein unvollständiges `kana-spelling` als alternative Aussprache zu missbrauchen. Die Lesung `なおす` setzt das bedeutungstragende `なお` über das verborgene Lesungswort von `直` zusammen und verknüpft die einzelne Endung `す` direkt mit atomarem Kana. Die Karte zeigt daher nicht mehr nur die zweite Hälfte als Aussprache.
 
 - [1bb8457](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/1bb84576d96472bba37b33163a9fbc3b292954ab)
+
+## Deduplizierte Eltern von Lesungen
+
+Lexikalische Datensätze aus einem einzelnen Kanji verweisen nun auf eigene verborgene Wrapper für die vollständige Aussprache, die sich aus dem zugrunde liegenden Kanji-Lesungswort zusammensetzen. Eine Lesung wie `ねこ` wird dadurch vom Kanji `猫` und einem anders bezeichneten verborgenen Wrapper `ねこ` verwendet, statt von zwei optisch identischen `猫`-Karten. Ein Regressionstest des gesamten Graphen lehnt gleich bezeichnete Eltern für jede verborgene Lesung ab.
+
+- [d5c257d](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/d5c257df1f91978090c7e9ea9f85ded883847c06)

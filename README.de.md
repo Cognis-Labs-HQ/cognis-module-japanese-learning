@@ -152,3 +152,7 @@ Die Anbieterdaten entsprechen nun dem neuesten Normalisierungsvertrag der Study 
 ## Zusammensetzung flektierender Kana
 
 Vollständige verborgene Lesungen unterscheiden nun bedeutungstragende Lesungsabschnitte von nichtlexikalischen Kana-Endungen. `なおす` setzt `なお` über das verborgene Lesungswort für `直` zusammen und verknüpft `す` über die reine Kompositionsbeziehung `reading-kana` direkt mit dem atomaren Kana. Dadurch erscheint eine Teilendung nicht mehr als alternative Aussprache der Karte.
+
+## Deduplizierte Eltern von Lesungen
+
+Wortschatz mit einem einzelnen Kanji verwendet nun einen verborgenen Wrapper für die vollständige Aussprache, bevor der Kanji-Lesungsdatensatz erreicht wird. Bei `猫` verweist die sichtbare Wortkarte auf verborgenes `ねこ`, das sich aus der Kanji-Lesung zusammensetzt; auch das Kanji verweist auf diese Lesung. Die Liste „Verwendet von“ enthält dadurch unterschiedliche Eltern `猫` und `ねこ` statt zweier nicht unterscheidbarer `猫`-Karten.

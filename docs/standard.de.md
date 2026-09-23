@@ -149,3 +149,7 @@ Vor der Veröffentlichung muss der installierte Library-Vertrag erfüllt sein: D
 ## Zusammensetzung flektierter Lesungen
 
 Verwenden Sie `word-spelling` für einen bedeutungstragenden mehrteiligen Kana-Lesungsabschnitt und `reading-kana` für jedes verbleibende einzelne Kana einer Flexionsendung mit lückenlosen Positionen. `reading-kana` ist eine Kompositionsbeziehung; verwenden Sie niemals ein unvollständiges `kana-spelling`, da diese Rolle eine vollständige alternative Schreibweise darstellt und die Endung sonst irreführend als eigenständige Aussprache rendert.
+
+## Eindeutige „Verwendet von“-Eltern
+
+Eine verborgene Lesung darf nicht mehrere eingehende Datensätze mit derselben Anzeigebezeichnung besitzen. Für ein sichtbares Wort aus einem einzelnen Kanji wird ein verborgener Wrapper für die vollständige Aussprache erstellt, der zum lexikalischen Wort gehört und sich aus dem Kanji-Lesungsdatensatz zusammensetzt. Die Kanji-Lesungskarte hat dann ein Kanji-Elternteil und ein anders bezeichnetes Lesungs-Elternteil; der Wrapper besitzt nur das sichtbare lexikalische Elternteil.

@@ -152,3 +152,7 @@ The provider data now matches the latest Study Library normalization contract: d
 ## Inflectional Kana composition
 
 Hidden complete readings now distinguish meaningful reading segments from non-lexical Kana suffixes. `なおす` composes `なお` through the hidden `直` reading Vocabulary and links `す` directly to atomic Kana through the composition-only `reading-kana` relationship, preventing a partial suffix from appearing as the card's alternate pronunciation.
+
+## Deduplicated reading parents
+
+Single-Kanji vocabulary now uses a hidden complete-pronunciation wrapper before reaching the Kanji-reading record. For `猫`, the visible lexical card points to hidden `ねこ`, which composes through the Kanji reading; the Kanji also points to that reading. The reading's Used By list therefore contains distinct `猫` and `ねこ` parents instead of two indistinguishable `猫` cards.

@@ -152,3 +152,7 @@ Data penyedia kini sesuai dengan kontrak normalisasi Study Library terbaru: defi
 ## Komposisi Kana infleksional
 
 Bacaan lengkap tersembunyi kini membedakan segmen bacaan bermakna dari akhiran Kana nonleksikal. `なおす` menyusun `なお` melalui Kosakata bacaan `直` tersembunyi dan menautkan `す` langsung ke Kana atomik melalui relasi khusus komposisi `reading-kana`, sehingga akhiran parsial tidak tampil sebagai pelafalan alternatif kartu.
+
+## Induk bacaan tanpa duplikasi
+
+Kosakata satu Kanji kini memakai pembungkus pelafalan lengkap tersembunyi sebelum mencapai rekaman bacaan Kanji. Untuk `猫`, kartu leksikal terlihat menaut ke `ねこ` tersembunyi yang tersusun melalui bacaan Kanji; Kanji juga menaut ke bacaan tersebut. Daftar Digunakan Oleh pada bacaan kini memuat induk `猫` dan `ねこ` yang berbeda, bukan dua kartu `猫` yang tidak dapat dibedakan.

@@ -265,3 +265,9 @@ Aligned provider records with the latest Study Library external-package contract
 Hidden complete readings now use the composition-only `reading-kana` relationship for non-lexical Kana suffixes instead of misusing partial `kana-spelling` as an alternate pronunciation. The `なおす` reading composes meaningful `なお` through the hidden `直` reading Vocabulary and links its single `す` suffix directly to atomic Kana, so the card no longer presents only the latter half as a pronunciation.
 
 - [1bb8457](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/1bb84576d96472bba37b33163a9fbc3b292954ab)
+
+## Deduplicated Reading Parents
+
+Single-Kanji lexical records now point to dedicated hidden complete-pronunciation wrappers, which compose from the underlying Kanji-reading Vocabulary. A reading such as `ねこ` is therefore used by the Kanji `猫` and a differently labeled hidden `ねこ` wrapper rather than by two visually identical `猫` cards. A whole-graph regression test rejects duplicate-labeled parents for every hidden reading.
+
+- [d5c257d](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/d5c257df1f91978090c7e9ea9f85ded883847c06)
