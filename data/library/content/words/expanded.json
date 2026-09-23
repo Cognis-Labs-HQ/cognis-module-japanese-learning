@@ -827,5 +827,55 @@
             }
         ],
         "class": "lexical:verb"
+    },
+    {
+        "id": "ja:word:manabu",
+        "label": "学ぶ",
+        "fields": {
+            "jlpt_level": "N5",
+            "pronunciation": ["まなぶ"]
+        },
+        "references": [
+            {
+                "entryId": "ja:kanji:core-e5ada6",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:word:reading-manabu",
+                "relation": "pronunciation-readings",
+                "position": 0
+            },
+            {
+                "entryId": "ja:def:manabu",
+                "relation": "definitions"
+            }
+        ],
+        "class": "lexical:verb"
+    },
+    {
+        "id": "ja:word:aruku",
+        "label": "歩く",
+        "fields": {
+            "jlpt_level": "N5",
+            "pronunciation": ["あるく"]
+        },
+        "references": [
+            {
+                "entryId": "ja:kanji:core-walk",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:word:reading-aruku",
+                "relation": "pronunciation-readings",
+                "position": 0
+            },
+            {
+                "entryId": "ja:def:aruku",
+                "relation": "definitions"
+            }
+        ],
+        "class": "lexical:verb"
     }
 ]

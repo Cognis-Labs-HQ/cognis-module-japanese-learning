@@ -1,6 +1,6 @@
 {
     "id": "japanese-core",
-    "version": 43,
+    "version": 44,
     "namespace": "ja",
     "language": "ja",
     "metadata": {
@@ -829,6 +829,24 @@
                     "presentationRole": "composition"
                 },
                 {
+                    "id": "pronunciation-readings",
+                    "targetLayer": "words",
+                    "metadata": {
+                        "labels": {
+                            "de": "Aussprachelesungen",
+                            "en": "Pronunciation Readings",
+                            "id": "Bacaan pelafalan",
+                            "ja": "発音の読み"
+                        }
+                    },
+                    "minimum": 1,
+                    "ordered": true,
+                    "requiredTarget": true,
+                    "onDelete": "restrict",
+                    "resolverRole": "longestMatch",
+                    "presentationRole": "pronunciation"
+                },
+                {
                     "id": "definitions",
                     "targetLayer": "definitions",
                     "metadata": {
@@ -864,7 +882,8 @@
                         "order": 1
                     },
                     "input": {
-                        "control": "tagList"
+                        "control": "tagList",
+                        "linkRelationship": "pronunciation-readings"
                     }
                 }
             ],

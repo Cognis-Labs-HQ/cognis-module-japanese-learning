@@ -271,3 +271,9 @@ Bacaan lengkap tersembunyi kini menggunakan relasi khusus komposisi `reading-kan
 Rekaman leksikal satu Kanji kini menaut ke pembungkus pelafalan lengkap tersembunyi khusus yang tersusun dari Kosakata bacaan Kanji dasarnya. Bacaan seperti `ねこ` dengan demikian digunakan oleh Kanji `猫` dan pembungkus tersembunyi `ねこ` yang berlabel berbeda, bukan oleh dua kartu `猫` yang tampak sama. Pengujian regresi seluruh graf menolak induk berlabel duplikat untuk setiap bacaan tersembunyi.
 
 - [d5c257d](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/d5c257df1f91978090c7e9ea9f85ded883847c06)
+
+## Pelafalan Kalimat yang Tertaut Sepenuhnya
+
+Setiap pelafalan kalimat kini diselesaikan melalui rekaman pelafalan lengkap tersembunyi. Rentang leksikal menggunakan bacaan kata tersembunyi terdekat, sedangkan partikel dan Kana tunggal nonleksikal lainnya ditautkan langsung melalui `reading-kana`; pengujian menolak teks yang tidak dapat direkonstruksi. Delapan kalimat latihan yang beragam dan telah ditinjau beserta kosakata `学ぶ` dan `歩く` yang tertaut sepenuhnya memperluas kurikulum tanpa isian buatan templat.
+
+- [d90876c](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/d90876c607bf4a34f628d27429e38264943f1c2d)

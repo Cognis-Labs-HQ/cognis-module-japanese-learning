@@ -156,3 +156,7 @@ Hidden complete readings now distinguish meaningful reading segments from non-le
 ## Deduplicated reading parents
 
 Single-Kanji vocabulary now uses a hidden complete-pronunciation wrapper before reaching the Kanji-reading record. For `猫`, the visible lexical card points to hidden `ねこ`, which composes through the Kanji reading; the Kanji also points to that reading. The reading's Used By list therefore contains distinct `猫` and `ねこ` parents instead of two indistinguishable `猫` cards.
+
+## Linked sentence readings and reviewed practice batch
+
+Every sentence pronunciation now opens a hidden complete-reading record whose segments resolve through existing hidden vocabulary and atomic particle Kana; unlinked pronunciation text is no longer the default. Eight reviewed sentences add varied practice for drinking water, studying Japanese, travel, animals, size, and walking, with new fully linked `学ぶ` and `歩く` vocabulary.

@@ -388,7 +388,7 @@
         "id": "ja:kanji:core-e5ada6",
         "label": "学",
         "fields": {
-            "pronunciation": ["がっ", "がく"],
+            "pronunciation": ["がっ", "がく", "まな"],
             "audio": "https://assets.cognis.dev/study/ja/pronunciation/kanji-e5ada6.mp3"
         },
         "references": [
@@ -401,6 +401,11 @@
                 "entryId": "ja:word:kanji-reading-e5ada6-e3818ce3818f",
                 "relation": "readings",
                 "position": 1
+            },
+            {
+                "entryId": "ja:word:kanji-reading-study-mana",
+                "relation": "readings",
+                "position": 2
             },
             {
                 "entryId": "ja:def:kanji-core-e5ada6",
@@ -684,6 +689,26 @@
             },
             {
                 "entryId": "ja:def:kanji-core-e5a5bd",
+                "relation": "definitions"
+            }
+        ],
+        "class": "writing:kanji"
+    },
+    {
+        "id": "ja:kanji:core-walk",
+        "label": "歩",
+        "fields": {
+            "pronunciation": ["ある"],
+            "audio": "https://assets.cognis.dev/study/ja/pronunciation/kanji-walk.mp3"
+        },
+        "references": [
+            {
+                "entryId": "ja:word:kanji-reading-walk-aru",
+                "relation": "readings",
+                "position": 0
+            },
+            {
+                "entryId": "ja:def:kanji-core-walk",
                 "relation": "definitions"
             }
         ],

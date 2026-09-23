@@ -282,8 +282,10 @@ test("ordered sentence constituents completely resolve the sentence label", () =
     const sentenceLayer = schema.layers.find(({ id }) => id === "sentences");
     const constituentRelationships = new Set(
         sentenceLayer.relationships
-            .filter(({ targetLayer }) =>
-                ["words", "particles"].includes(targetLayer),
+            .filter(
+                ({ presentationRole, targetLayer }) =>
+                    presentationRole === "composition" &&
+                    ["words", "particles"].includes(targetLayer),
             )
             .map(({ id }) => id),
     );

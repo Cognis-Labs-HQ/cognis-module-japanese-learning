@@ -153,3 +153,7 @@ Gunakan `word-spelling` untuk segmen bacaan multi-Kana yang bermakna dan `readin
 ## Induk Digunakan Oleh yang unik
 
 Bacaan tersembunyi tidak boleh memiliki beberapa rekaman masuk dengan label tampilan yang sama. Untuk kata terlihat yang terdiri dari satu Kanji, buat pembungkus pelafalan lengkap tersembunyi milik kata leksikal dan susun pembungkus tersebut dari rekaman bacaan Kanji. Kartu bacaan Kanji kemudian memiliki satu induk Kanji dan satu induk bacaan berlabel berbeda, sedangkan pembungkus hanya memiliki induk leksikal terlihat.
+
+## Graf pelafalan kalimat
+
+Bidang pelafalan kalimat menaut ke tepat satu rekaman Kosakata bacaan lengkap tersembunyi melalui `pronunciation-readings`. Rekaman tersebut membentuk kembali seluruh pelafalan secara berurutan dengan referensi `word-spelling` ke bacaan leksikal tersembunyi terdekat dan referensi `reading-kana` ke Kana partikel atau nonleksikal atomik. Pengujian harus gagal jika ada substring hilang, target kosakata yang tidak tersembunyi, pintasan langsung kalimat-ke-karakter, atau bacaan tanpa tautan.

@@ -2,7 +2,7 @@
     "id": "study-language-ja",
     "uuid": "e905927f-b133-572a-92ce-2ea8645e5ceb",
     "name": "module.study-language-ja.name",
-    "version": "2.2.13",
+    "version": "2.2.14",
     "class": "extension",
     "coreApiVersion": "v1",
     "capabilities": ["study:language:ja"],
@@ -51,7 +51,7 @@
         },
         {
             "path": ".github/copilot-instructions.md",
-            "sha256": "561e6581f100bedfa8c1b3fb993cf4d264e37b85f5681a1b530cfc623b64294b"
+            "sha256": "fcea81e9d663a4babe54a7d639e459346a7f9f71eacc0a8cfcfde2f175460bb9"
         },
         {
             "path": ".gitignore",
@@ -67,7 +67,7 @@
         },
         {
             "path": "AGENTS.md",
-            "sha256": "561e6581f100bedfa8c1b3fb993cf4d264e37b85f5681a1b530cfc623b64294b"
+            "sha256": "fcea81e9d663a4babe54a7d639e459346a7f9f71eacc0a8cfcfde2f175460bb9"
         },
         {
             "path": "LICENSE",
@@ -75,23 +75,23 @@
         },
         {
             "path": "README.de.md",
-            "sha256": "5bef10107dca27cc27985b00834ce28d6e7f4bf312e393013408f1dfa10b3a87"
+            "sha256": "6cd17bbf206b847f2bca316ece8e6bb62e26da7c92e9709aee7a9e308ef4ce36"
         },
         {
             "path": "README.en.md",
-            "sha256": "9f3de1280258063220d90f54ff7b26bdbc9bc815883d89d2cd213d2d5081150b"
+            "sha256": "0c7e90549b9e07b75d33eeddb8214cf5aeff06f75b6815a288b53271de8629cd"
         },
         {
             "path": "README.id.md",
-            "sha256": "0ea17d37f97898ff614138d6d88e15d920e8579862f32c9c16ec56568e29bc20"
+            "sha256": "fb93e435302bc9163c9c5b9fe1ebc9077648aafacfe849dd3683b2ee21c1bc25"
         },
         {
             "path": "README.ja.md",
-            "sha256": "1faa5a9ed518ef5b579290b517e9c7906c6b5437a71be6249b31d5f3eb06935c"
+            "sha256": "3e21c9434d3f530c3d025f10d32507cebc887a905ad6e06230a0b2ad3076788f"
         },
         {
             "path": "README.md",
-            "sha256": "9f3de1280258063220d90f54ff7b26bdbc9bc815883d89d2cd213d2d5081150b"
+            "sha256": "0c7e90549b9e07b75d33eeddb8214cf5aeff06f75b6815a288b53271de8629cd"
         },
         {
             "path": "assets/banner.svg",
@@ -103,11 +103,11 @@
         },
         {
             "path": "bootstrap.js",
-            "sha256": "0512ed12686232abe742e9c15be7abd1282a48174ec7cb1044d27302da95d50f"
+            "sha256": "b334d2227263568f3db6fa123c0902115c54445b319be78f80fafa812f8d607d"
         },
         {
             "path": "data/library/content/alt-characters/core-kanji.json",
-            "sha256": "f19f59abce7e26349c0873067d6cab29a5b445944c7a6e2a13544e9b532d2504"
+            "sha256": "824bfb610a59c68e456ba31f4e31942cf0265a7b4fcd2b5eb115c6a99f0d31b9"
         },
         {
             "path": "data/library/content/alt-characters/kanji.json",
@@ -147,7 +147,7 @@
         },
         {
             "path": "data/library/content/definitions/expanded.json",
-            "sha256": "451b567548f7e30a93b3078d2bf9b6029139ae66f69689b1fec42e04f6e0029e"
+            "sha256": "24c4c3530f1923514d6cf6131f8d24e5ff48950249d0a44fab1a53ec1c59eb8f"
         },
         {
             "path": "data/library/content/definitions/particles-expanded.json",
@@ -155,7 +155,7 @@
         },
         {
             "path": "data/library/content/definitions/sentences-expanded.json",
-            "sha256": "1c8c9be20a492dec3b2db302f7858cfbb36fbb339ac0b03fd719f1411b410149"
+            "sha256": "abcfb5801eacd97569f492d311cc3690618ce7ad4d59ac782548acec374fe34f"
         },
         {
             "path": "data/library/content/particles/common.json",
@@ -167,11 +167,15 @@
         },
         {
             "path": "data/library/content/sentences/common.json",
-            "sha256": "9644364ac6d09ffaff497d7b67a8a9aba4a6a33e92dfcd17df1ae72629d9dc7f"
+            "sha256": "c820c0d99a33138e9c6d0249243a08a44d1b1c7953bbf2bc24d04aaf10cca9f6"
         },
         {
             "path": "data/library/content/sentences/expanded.json",
-            "sha256": "48f7bf40b1b37c1378d080d96ce810746fc17623df2cb39d79330e4698732c2c"
+            "sha256": "da3406f276c9f1febc02fe5afa7b3b810dcb7a1ba2e1bb1916ed8ecc8ff12d3f"
+        },
+        {
+            "path": "data/library/content/sentences/reviewed-batch.json",
+            "sha256": "c7cc6f9c8302b0c6e6692b935d8e6269bc1d6f58f63f80b70269cc109c85ddc8"
         },
         {
             "path": "data/library/content/words/common.json",
@@ -179,11 +183,11 @@
         },
         {
             "path": "data/library/content/words/core-inflection-readings.json",
-            "sha256": "34ea83fee635110afaa60ff5aa13f0d12e9f5e0603cd41935f0b2877ee589cd5"
+            "sha256": "438812a000a7c5a2331457958996b380a05ec9ae8554efb6568c78a36da1ca91"
         },
         {
             "path": "data/library/content/words/core-kanji-readings.json",
-            "sha256": "61b749aff638b2ce1fbd3ade22c21075c1a5d4844b67186048b9dd98be37dd1c"
+            "sha256": "b1ab0900ea3973fc263ad415bc74156a00a5ef47283084fd96132571be3bfdd8"
         },
         {
             "path": "data/library/content/words/core-word-readings.json",
@@ -191,39 +195,43 @@
         },
         {
             "path": "data/library/content/words/expanded.json",
-            "sha256": "3a86b523099a7b28c0185013f238bc0019b32a29c076b0bbe2859e01cdb70b7b"
+            "sha256": "db1723a37515c6994e0695dab8de3f2a84747b7e3eb62741690d5859cffeea40"
+        },
+        {
+            "path": "data/library/content/words/sentence-readings.json",
+            "sha256": "d136df7faab52440c3940079edecf3c222142e8b96da7375bca36ca665c43a77"
         },
         {
             "path": "data/library/manifest.json",
-            "sha256": "4454fa0cfbefc0ab3018586d5bcb5e3f9578d9a0b13ea755d8734c7c60a8f3c5"
+            "sha256": "e42fc1551aa65d29ee8b29d2fb52e121f211b599ff842122117b0a0cb601c99c"
         },
         {
             "path": "data/library/schema.json",
-            "sha256": "bd51afa5ab60fe0ff753acadb328961a85cc70e930b55584aa0d897b51cdd363"
+            "sha256": "1c17a2684db55e57b15bb212b409fbcbd3dcca57284e43fbbac7bfc87110ffd4"
         },
         {
             "path": "docs/standard.de.md",
-            "sha256": "5e4b8393486e954767d717dde560716c3e1c9a17dfa066fd92beec03a8f89f1d"
+            "sha256": "d6e0ba9627e637ca56836035a3c80c28d80729b15b19e5f9a7a3cb59c75c6bca"
         },
         {
             "path": "docs/standard.en.md",
-            "sha256": "b788e75dca5cbe7334c8c928101440af281221e8de046dd335023ecd36fdb699"
+            "sha256": "036bdf6de521743869044d3a796392d1c437aab7c9a88ae16299bd41dd53e120"
         },
         {
             "path": "docs/standard.id.md",
-            "sha256": "67bdd64700147fdb5ccf152e7fe80a3da7fa0dc8d5d38eeac4da13ed26636f6f"
+            "sha256": "b1c62ca02357bc35cf8b9aef9d574caf446b950b85745904d932a08dbcb6bf1e"
         },
         {
             "path": "docs/standard.ja.md",
-            "sha256": "ee968af446b0ac21b8377d46a50883b2b180c3fd933ef8f13d71539e5e00c740"
+            "sha256": "f069fb6841fe07abd40763eaeba991218badba48598fc28c2d28bbd826021878"
         },
         {
             "path": "package-lock.json",
-            "sha256": "23989d8a678ff4e8e881c1815f9b0611d2100122b982c8e4eb9a10731d65e05d"
+            "sha256": "26e004b4a3a58cf0bb67da91ce458f93e3969264456bb7caae6aa447d8310493"
         },
         {
             "path": "package.json",
-            "sha256": "b96d3a9559d3983eeb0c2ea1b6dba4cb7186067390ede90dbdb50d3027b5703e"
+            "sha256": "344df5baba778659571ff2cbea654f53708f9d1f3edab967058f2a0c717f8895"
         },
         {
             "path": "routes.json",
@@ -247,7 +255,7 @@
         },
         {
             "path": "tests/content-pack.test.js",
-            "sha256": "b732bb7036114e95d763713fbabee16e292d22afeb019a263911e594ab68f802"
+            "sha256": "af0ca7947b6f6ff04c2083634f61f1e4eb4075b154a216ef358c7c02d2f4a8ea"
         },
         {
             "path": "tests/dataset-expansion.test.js",
@@ -259,7 +267,7 @@
         },
         {
             "path": "tests/layer-linkage.test.js",
-            "sha256": "f0eb2e44befc0de51735dfc91fcd357456f326ef9f240334efec89064ed110f3"
+            "sha256": "280b2a3f346a7ef77cd2279d2a0379a0df9c42b1e7c3b92b417af64399faf3e6"
         },
         {
             "path": "tests/localization-quality.test.js",

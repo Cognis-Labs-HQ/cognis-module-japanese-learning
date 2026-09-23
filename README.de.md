@@ -156,3 +156,7 @@ Vollständige verborgene Lesungen unterscheiden nun bedeutungstragende Lesungsab
 ## Deduplizierte Eltern von Lesungen
 
 Wortschatz mit einem einzelnen Kanji verwendet nun einen verborgenen Wrapper für die vollständige Aussprache, bevor der Kanji-Lesungsdatensatz erreicht wird. Bei `猫` verweist die sichtbare Wortkarte auf verborgenes `ねこ`, das sich aus der Kanji-Lesung zusammensetzt; auch das Kanji verweist auf diese Lesung. Die Liste „Verwendet von“ enthält dadurch unterschiedliche Eltern `猫` und `ねこ` statt zweier nicht unterscheidbarer `猫`-Karten.
+
+## Verknüpfte Satzlesungen und geprüfte Übungsserie
+
+Jede Satzaussprache öffnet nun einen verborgenen vollständigen Lesungsdatensatz, dessen Abschnitte über vorhandenen verborgenen Wortschatz und atomare Partikel-Kana aufgelöst werden; unverknüpfter Aussprachetext ist nicht mehr der Standard. Acht geprüfte Sätze ergänzen abwechslungsreiche Übungen zu Wassertrinken, Japanischlernen, Reisen, Tieren, Größe und Gehen sowie die vollständig verknüpften Wörter `学ぶ` und `歩く`.

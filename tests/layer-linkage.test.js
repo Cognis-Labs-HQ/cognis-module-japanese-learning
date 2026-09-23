@@ -173,6 +173,17 @@ function validateLayerLinks(records) {
                 )
                 .join("");
             assert.equal(pronunciation, record.fields.pronunciation[0]);
+            const pronunciationReadings = orderedReferences(
+                record,
+                new Set(["pronunciation-readings"]),
+            ).map(({ entryId }) => recordsById.get(entryId));
+            assert.ok(
+                pronunciationReadings.every(({ hidden }) => hidden === true),
+            );
+            assert.equal(
+                pronunciationReadings.map(({ label }) => label).join(""),
+                record.fields.pronunciation[0],
+            );
         }
 
         if (role === "definition") {
@@ -197,11 +208,11 @@ test("reviewed graph inventory remains bounded to the core curriculum", () => {
     );
     assert.deepEqual(counts, {
         characters: 270,
-        "alt-characters": 38,
-        definitions: 104,
-        words: 110,
+        "alt-characters": 39,
+        definitions: 115,
+        words: 133,
         particles: 11,
-        sentences: 9,
+        sentences: 17,
     });
 });
 
@@ -253,6 +264,40 @@ test("sentences link only through visible vocabulary and particles", () => {
                     hidden !== true && ["words", "particles"].includes(layer),
             ),
             `${sentence.id} bypasses visible lexical layers`,
+        );
+    }
+});
+
+test("sentence pronunciations resolve through vocabulary and atomic Kana", () => {
+    const records = loadRecords();
+    const recordsById = new Map(records.map((record) => [record.id, record]));
+    for (const sentence of records.filter(
+        ({ layer }) => layer === "sentences",
+    )) {
+        const readingReference = sentence.references.find(
+            ({ relation }) => relation === "pronunciation-readings",
+        );
+        const reading = recordsById.get(readingReference.entryId);
+        const composition = orderedReferences(
+            reading,
+            new Set(["word-spelling", "reading-kana"]),
+        );
+        assert.equal(reading.hidden, true);
+        assert.equal(reading.label, sentence.fields.pronunciation[0]);
+        assert.equal(
+            composition
+                .map(({ entryId }) => recordsById.get(entryId).label)
+                .join(""),
+            reading.label,
+            `${sentence.id} has unlinked pronunciation text`,
+        );
+        assert.ok(
+            composition.every(({ entryId, relation }) => {
+                const target = recordsById.get(entryId);
+                return relation === "reading-kana"
+                    ? target.layer === "characters"
+                    : target.layer === "words" && target.hidden === true;
+            }),
         );
     }
 });

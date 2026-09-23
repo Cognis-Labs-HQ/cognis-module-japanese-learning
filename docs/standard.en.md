@@ -153,3 +153,7 @@ Use `word-spelling` for a meaningful multi-Kana reading segment and `reading-kan
 ## Unique Used By parents
 
 A hidden reading must not have multiple inbound records with the same display label. For a visible single-Kanji word, author a hidden complete-pronunciation wrapper owned by the lexical word and make that wrapper compose from the Kanji-reading record. The Kanji-reading card then has one Kanji parent and one differently labeled reading parent, while the wrapper has only the visible lexical parent.
+
+## Sentence pronunciation graph
+
+A sentence pronunciation field links to exactly one hidden complete-reading Vocabulary record through `pronunciation-readings`. That record reconstructs the entire pronunciation with contiguous `word-spelling` references to the closest hidden lexical readings and `reading-kana` references to atomic particle or non-lexical Kana. Tests must fail on any missing substring, non-hidden vocabulary target, direct sentence-to-character shortcut, or unlinked reading.

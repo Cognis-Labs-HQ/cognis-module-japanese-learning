@@ -271,3 +271,9 @@ Hidden complete readings now use the composition-only `reading-kana` relationshi
 Single-Kanji lexical records now point to dedicated hidden complete-pronunciation wrappers, which compose from the underlying Kanji-reading Vocabulary. A reading such as `ねこ` is therefore used by the Kanji `猫` and a differently labeled hidden `ねこ` wrapper rather than by two visually identical `猫` cards. A whole-graph regression test rejects duplicate-labeled parents for every hidden reading.
 
 - [d5c257d](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/d5c257df1f91978090c7e9ea9f85ded883847c06)
+
+## Fully Linked Sentence Pronunciations
+
+Every sentence pronunciation now resolves through a hidden complete-pronunciation record. Lexical spans use the closest hidden word readings, while particles and other nonlexical single Kana link directly through `reading-kana`; tests reject unreconstructed text. Eight reviewed, varied practice sentences and the fully linked vocabulary for `学ぶ` and `歩く` extend the curriculum without template-generated filler.
+
+- [d90876c](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/d90876c607bf4a34f628d27429e38264943f1c2d)

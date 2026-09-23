@@ -935,5 +935,57 @@
         ],
         "hidden": true,
         "class": "reading:kanji"
+    },
+    {
+        "id": "ja:word:kanji-reading-study-mana",
+        "label": "まな",
+        "fields": {
+            "jlpt_level": "N5",
+            "pronunciation": ["まな"]
+        },
+        "references": [
+            {
+                "entryId": "ja:char:ma",
+                "relation": "kana-spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:char:na",
+                "relation": "kana-spelling",
+                "position": 1
+            },
+            {
+                "entryId": "ja:def:kanji-core-e5ada6",
+                "relation": "definitions"
+            }
+        ],
+        "hidden": true,
+        "class": "reading:kanji"
+    },
+    {
+        "id": "ja:word:kanji-reading-walk-aru",
+        "label": "ある",
+        "fields": {
+            "jlpt_level": "N5",
+            "pronunciation": ["ある"]
+        },
+        "references": [
+            {
+                "entryId": "ja:char:a",
+                "relation": "kana-spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:char:ru",
+                "relation": "kana-spelling",
+                "position": 1
+            },
+            {
+                "entryId": "ja:def:kanji-core-walk",
+                "relation": "definitions"
+            }
+        ],
+        "hidden": true,
+        "class": "reading:kanji"
     }
 ]

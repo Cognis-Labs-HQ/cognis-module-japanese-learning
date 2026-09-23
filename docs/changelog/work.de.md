@@ -271,3 +271,9 @@ Vollständige verborgene Lesungen verwenden nun für nichtlexikalische Kana-Endu
 Lexikalische Datensätze aus einem einzelnen Kanji verweisen nun auf eigene verborgene Wrapper für die vollständige Aussprache, die sich aus dem zugrunde liegenden Kanji-Lesungswort zusammensetzen. Eine Lesung wie `ねこ` wird dadurch vom Kanji `猫` und einem anders bezeichneten verborgenen Wrapper `ねこ` verwendet, statt von zwei optisch identischen `猫`-Karten. Ein Regressionstest des gesamten Graphen lehnt gleich bezeichnete Eltern für jede verborgene Lesung ab.
 
 - [d5c257d](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/d5c257df1f91978090c7e9ea9f85ded883847c06)
+
+## Vollständig verknüpfte Satzaussprachen
+
+Jede Satzaussprache wird nun über einen verborgenen Datensatz der vollständigen Aussprache aufgelöst. Lexikalische Abschnitte verwenden die nächstgelegenen verborgenen Wortlesungen, während Partikeln und andere nichtlexikalische Einzel-Kana direkt über `reading-kana` verknüpft werden; Tests lehnen nicht rekonstruierbaren Text ab. Acht geprüfte, abwechslungsreiche Übungssätze sowie die vollständig verknüpften Vokabeln `学ぶ` und `歩く` erweitern den Lernstoff ohne vorlagenartig erzeugte Füllinhalte.
+
+- [d90876c](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/d90876c607bf4a34f628d27429e38264943f1c2d)

@@ -156,3 +156,7 @@ Bacaan lengkap tersembunyi kini membedakan segmen bacaan bermakna dari akhiran K
 ## Induk bacaan tanpa duplikasi
 
 Kosakata satu Kanji kini memakai pembungkus pelafalan lengkap tersembunyi sebelum mencapai rekaman bacaan Kanji. Untuk `猫`, kartu leksikal terlihat menaut ke `ねこ` tersembunyi yang tersusun melalui bacaan Kanji; Kanji juga menaut ke bacaan tersebut. Daftar Digunakan Oleh pada bacaan kini memuat induk `猫` dan `ねこ` yang berbeda, bukan dua kartu `猫` yang tidak dapat dibedakan.
+
+## Bacaan kalimat tertaut dan kumpulan latihan tinjauan
+
+Setiap pelafalan kalimat kini membuka rekaman bacaan lengkap tersembunyi yang segmennya diselesaikan melalui kosakata tersembunyi yang ada dan Kana partikel atomik; teks pelafalan tanpa tautan bukan lagi perilaku bawaan. Delapan kalimat yang ditinjau menambah latihan beragam tentang minum air, belajar bahasa Jepang, perjalanan, hewan, ukuran, dan berjalan, beserta kosakata `学ぶ` dan `歩く` yang tertaut penuh.

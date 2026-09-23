@@ -153,3 +153,7 @@ Verwenden Sie `word-spelling` für einen bedeutungstragenden mehrteiligen Kana-L
 ## Eindeutige „Verwendet von“-Eltern
 
 Eine verborgene Lesung darf nicht mehrere eingehende Datensätze mit derselben Anzeigebezeichnung besitzen. Für ein sichtbares Wort aus einem einzelnen Kanji wird ein verborgener Wrapper für die vollständige Aussprache erstellt, der zum lexikalischen Wort gehört und sich aus dem Kanji-Lesungsdatensatz zusammensetzt. Die Kanji-Lesungskarte hat dann ein Kanji-Elternteil und ein anders bezeichnetes Lesungs-Elternteil; der Wrapper besitzt nur das sichtbare lexikalische Elternteil.
+
+## Aussprachegraph für Sätze
+
+Das Aussprachefeld eines Satzes verweist über `pronunciation-readings` auf genau einen verborgenen Wortschatzdatensatz mit vollständiger Lesung. Dieser Datensatz rekonstruiert die gesamte Aussprache lückenlos mit `word-spelling`-Verweisen auf die nächstliegenden verborgenen lexikalischen Lesungen und `reading-kana`-Verweisen auf atomare Partikel- oder nichtlexikalische Kana. Tests müssen bei fehlenden Teilzeichenfolgen, nicht verborgenen Wortschatzzielen, direkten Satz-zu-Zeichen-Abkürzungen oder unverknüpften Lesungen fehlschlagen.
