@@ -181,3 +181,7 @@ Hanya kalimat terlihat yang memiliki relasi di antara anak leksikal dan partikel
 ## Detail judul kalimat yang tertaut ke kosakata
 
 Tetapkan `input.linkRelationship` bidang pelafalan kalimat ke `words`. Host harus mencocokkan pelafalan lengkap setiap kata sebagai alias sambil mempertahankan entri kosakata yang terlihat sebagai target tautan. Jangan menambahkan anak pelafalan tingkat kalimat atau tautan antarbaca kata yang bersaudara; setiap entri kosakata memiliki jalur bacaannya sendiri menuju Kana atomik secara mandiri.
+
+## Batas pelafalan milik kosakata
+
+Jika bacaan Kanji terdapat dalam entri kosakata terlihat yang telah dibuat, arahkan tautan pelafalan Kanji ke kosakata tersebut. Hanya kosakata yang boleh memiliki pembungkus pelafalan lengkap. Di dalamnya, tautkan rentang bermakna yang berasal dari Kanji melalui bacaan tersembunyi terdekat dan tautkan setiap sufiks Kana tunggal yang tersisa secara langsung dengan `reading-kana`; jangan membuat rekaman pelafalan untuk sufiks tersebut atau menghubungkannya ke bacaan yang bersebelahan.

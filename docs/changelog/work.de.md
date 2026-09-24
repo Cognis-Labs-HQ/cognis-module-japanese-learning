@@ -355,3 +355,9 @@ Die parallele vollständige Kana-Satzlesungskette wurde entfernt. Ein Satz wie `
 Die Titeldetails eines Satzes verwenden nun dessen bestehende `words`-Beziehung, sodass vollständige Kana-Abschnitte wie `いぬ`, `やま` und `くる` auf die sichtbaren Vokabeleinträge `犬`, `山` und `来る` verweisen. Jeder Vokabeleintrag führt weiterhin nur über seine eigene vollständige Lesung zu atomaren Kana; es entsteht weder eine parallele Satzlesekette noch eine Verknüpfung zwischen Geschwisterlesungen.
 
 - [3bc0779](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/3bc0779)
+
+## Vokabeleigene Kanji-Aussprache
+
+Kanji-Aussprachelinks bevorzugen nun die sichtbare Vokabel, die die Lesung verwendet. Nur diese Vokabel besitzt den vollständigen Aussprache-Wrapper, der bedeutungstragende Kanji-Leseabschnitte wiederverwendet und verbleibende einzelne Kana-Suffixe direkt zu atomaren Kana führt. Beispielsweise verknüpft `好` zu `好き`, während dessen vollständige Lesung `すき` den Kanji-Abschnitt `す` und das atomare `き` verwendet, ohne eine eigenständige Aussprachekarte für `き` anzulegen.
+
+- [b20b4e3](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/b20b4e3)

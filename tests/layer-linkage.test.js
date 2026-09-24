@@ -107,8 +107,10 @@ function validateLayerLinks(records) {
             readings.forEach(({ entryId }, index) => {
                 const target = recordsById.get(entryId);
                 assert.ok(
-                    target.fields.pronunciation.includes(
-                        record.fields.pronunciation[index],
+                    target.fields.pronunciation.some((pronunciation) =>
+                        pronunciation.includes(
+                            record.fields.pronunciation[index],
+                        ),
                     ),
                     `${record.id} reading ${index} must match ${target.id}`,
                 );
@@ -121,13 +123,11 @@ function validateLayerLinks(records) {
             const hasKanji = /[\p{Script=Han}]/u.test(record.label);
             assertOrderedComposition(
                 record,
-                new Set([
-                    record.hidden
-                        ? "reading-kana"
-                        : hasKanji
-                          ? "pronunciation-readings"
-                          : "kana-spelling",
-                ]),
+                record.hidden
+                    ? new Set(["word-spelling", "reading-kana"])
+                    : new Set([
+                          hasKanji ? "pronunciation-readings" : "kana-spelling",
+                      ]),
                 record.fields.pronunciation[0],
                 recordsById,
             );
@@ -347,9 +347,12 @@ test("dog mountain sentence links Kana spans to independent vocabulary", () => {
             word.fields.pronunciation,
         );
         for (const reading of readings) {
-            assert.deepEqual(
-                new Set(reading.references.map(({ relation }) => relation)),
-                new Set(["reading-kana", "definitions"]),
+            const relations = new Set(
+                reading.references.map(({ relation }) => relation),
+            );
+            assert.ok(relations.has("definitions"));
+            assert.ok(
+                relations.has("reading-kana") || relations.has("word-spelling"),
                 `${reading.id} must end at its own Kana`,
             );
         }
@@ -443,16 +446,16 @@ test("reading titles use atomic Kana without recursive word links", () => {
     )) {
         assertOrderedComposition(
             reading,
-            new Set(["reading-kana"]),
+            new Set(["word-spelling", "reading-kana"]),
             reading.label,
             recordsById,
         );
         assert.equal(
-            reading.references.some(({ relation }) =>
-                ["word-spelling", "kana-spelling"].includes(relation),
+            reading.references.some(
+                ({ relation }) => relation === "kana-spelling",
             ),
             false,
-            `${reading.id} must not route its title back through another word`,
+            `${reading.id} must not publish a partial alternate spelling`,
         );
     }
 });
@@ -490,9 +493,13 @@ test("single-Kanji lexical readings open the visible vocabulary", () => {
             const target = recordsById.get(entryId);
             if (target.hidden === true) continue;
             assert.equal(target.layer, "words");
-            if (/[\p{Script=Han}]/u.test(target.label)) {
-                assert.equal(target.label, Kanji.label);
-            }
+            assert.ok(
+                (target.references ?? []).some(
+                    ({ entryId: targetId, relation }) =>
+                        targetId === Kanji.id &&
+                        ["spelling", "word-spelling"].includes(relation),
+                ) || !/[\p{Script=Han}]/u.test(target.label),
+            );
             assert.ok(target.class.startsWith("lexical:"));
         }
     }
@@ -503,6 +510,72 @@ test("single-Kanji lexical readings open the visible vocabulary", () => {
             ({ entryId }) => entryId,
         ),
         ["ja:word:neko"],
+    );
+});
+
+test("Kanji prefer adjacent vocabulary while suffix Kana terminate directly", () => {
+    const records = loadRecords();
+    const recordsById = new Map(records.map((record) => [record.id, record]));
+    const visibleWords = records.filter(
+        ({ hidden, layer }) => layer === "words" && hidden !== true,
+    );
+
+    for (const Kanji of records.filter(
+        ({ layer }) => layer === "alt-characters",
+    )) {
+        for (const reference of orderedReferences(
+            Kanji,
+            new Set(["readings"]),
+        )) {
+            const target = recordsById.get(reference.entryId);
+            if (target.hidden !== true) continue;
+            const hasAdjacentVocabulary = visibleWords.some(
+                (word) =>
+                    (word.references ?? []).some(
+                        ({ entryId, relation }) =>
+                            entryId === Kanji.id &&
+                            ["spelling", "word-spelling"].includes(relation),
+                    ) &&
+                    word.fields.pronunciation.some((pronunciation) =>
+                        pronunciation.includes(target.label),
+                    ),
+            );
+            assert.equal(
+                hasAdjacentVocabulary,
+                false,
+                `${Kanji.id} must link its reading to adjacent vocabulary`,
+            );
+        }
+    }
+
+    const liked = recordsById.get("ja:kanji:core-e5a5bd");
+    assert.deepEqual(
+        orderedReferences(liked, new Set(["readings"])).map(
+            ({ entryId }) => entryId,
+        ),
+        ["ja:word:suki"],
+    );
+    const completeReading = recordsById.get("ja:word:pronunciation-suki");
+    assert.deepEqual(
+        orderedReferences(
+            completeReading,
+            new Set(["word-spelling", "reading-kana"]),
+        ).map(({ entryId, relation }) => ({ entryId, relation })),
+        [
+            {
+                entryId: "ja:word:kanji-reading-e5a5bd-e38199",
+                relation: "word-spelling",
+            },
+            { entryId: "ja:char:ki", relation: "reading-kana" },
+        ],
+    );
+    assert.equal(
+        records.some(
+            ({ hidden, label, layer }) =>
+                layer === "words" && hidden === true && label === "き",
+        ),
+        false,
+        "single suffix Kana must not get a pronunciation record",
     );
 });
 

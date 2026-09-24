@@ -181,3 +181,7 @@ Only the visible sentence owns relationships among its lexical and particle chil
 ## Vocabulary-linked sentence title details
 
 Set the sentence pronunciation field's `input.linkRelationship` to `words`. The host must match each word's complete pronunciation as an alias while preserving the visible vocabulary entry as the link target. Do not add sentence-level pronunciation children or links between sibling word readings; each vocabulary record owns its reading path to atomic Kana independently.
+
+## Vocabulary-owned pronunciation boundaries
+
+When a Kanji reading occurs inside an authored visible vocabulary record, target that vocabulary from the Kanji pronunciation link. Only the vocabulary may own the complete pronunciation wrapper. Within that wrapper, link meaningful Kanji-derived spans through the closest hidden reading and link every remaining single-Kana suffix directly with `reading-kana`; never create a pronunciation record for such a suffix or connect it to an adjacent reading.

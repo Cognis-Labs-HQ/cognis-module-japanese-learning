@@ -181,3 +181,7 @@ Nur der sichtbare Satz besitzt Beziehungen zwischen seinen lexikalischen Kindern
 ## Mit Vokabeln verknüpfte Satztiteldetails
 
 Setze `input.linkRelationship` des Aussprachefelds eines Satzes auf `words`. Der Host muss die vollständige Aussprache jedes Wortes als Alias erkennen und dabei den sichtbaren Vokabeleintrag als Linkziel beibehalten. Füge weder Aussprachekinder auf Satzebene noch Verknüpfungen zwischen den Lesungen benachbarter Wörter hinzu; jeder Vokabeleintrag besitzt unabhängig seinen Lesepfad zu atomaren Kana.
+
+## Vokabeleigene Aussprachegrenzen
+
+Wenn eine Kanji-Lesung in einem vorhandenen sichtbaren Vokabeleintrag vorkommt, muss der Aussprachelink des Kanji auf diese Vokabel zielen. Nur die Vokabel darf den vollständigen Aussprache-Wrapper besitzen. Darin werden bedeutungstragende Kanji-Abschnitte über die nächstgelegene verborgene Lesung verknüpft und jedes verbleibende einzelne Kana-Suffix direkt mit `reading-kana`; für ein solches Suffix darf weder ein Ausspracheeintrag noch eine Verbindung zu einer benachbarten Lesung entstehen.

@@ -180,3 +180,7 @@ Sentence cards alone own their word-and-particle composition. A sentence such as
 ## Vocabulary-linked sentence readings
 
 A sentence pronunciation uses its existing ordered `words` relationship for title-detail deep links. Each complete Kana span therefore opens the visible vocabulary record for that word, while particles remain sentence-owned constituents; the vocabulary then resolves only through its own complete reading to atomic Kana and never to adjacent sentence children.
+
+## Kanji-to-vocabulary readings
+
+A Kanji pronunciation links to the nearest visible vocabulary that uses it. The vocabulary alone owns the complete pronunciation record: meaningful Kanji-derived spans reuse hidden readings, while a remaining single Kana suffix links directly to the atomic Kana. Thus `好` opens `好き`, whose `すき` reading composes from the Kanji span `す` and atomic `き`; no standalone pronunciation card is created for `き`.

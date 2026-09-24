@@ -180,3 +180,7 @@ Nur Satzkarten besitzen die Zusammensetzung aus Wörtern und Partikeln. Ein Satz
 ## Mit Vokabeln verknüpfte Satzlesungen
 
 Die Aussprache eines Satzes verwendet die bereits geordnete `words`-Beziehung für Deep-Links in den Titeldetails. Jeder vollständige Kana-Abschnitt öffnet damit den sichtbaren Vokabeleintrag des Wortes, während Partikeln Bestandteile des Satzes bleiben; die Vokabel führt anschließend nur über ihre eigene vollständige Lesung zu atomaren Kana und nie zu benachbarten Satzkindern.
+
+## Kanji-Lesungen zu Vokabeln
+
+Eine Kanji-Aussprache verknüpft sich mit der nächstgelegenen sichtbaren Vokabel, die das Kanji verwendet. Nur die Vokabel besitzt den vollständigen Ausspracheeintrag: bedeutungstragende, vom Kanji abgeleitete Abschnitte verwenden verborgene Lesungen erneut, während ein verbleibendes einzelnes Kana-Suffix direkt auf das atomare Kana verweist. So öffnet `好` die Vokabel `好き`; deren Lesung `すき` besteht aus dem Kanji-Abschnitt `す` und dem atomaren `き`, ohne einen eigenständigen Ausspracheeintrag für `き` anzulegen.

@@ -123,10 +123,13 @@ test("Kanji readings and particles resolve through authored Kana links", () => {
             .filter(({ relation }) => relation === "readings")
             .sort((left, right) => left.position - right.position)
             .map(({ entryId }) => recordsById.get(entryId));
-        assert.deepEqual(
-            readingTargets.map(({ fields }) => fields.pronunciation[0]),
-            entry.fields.pronunciation,
-        );
+        readingTargets.forEach((readingTarget, index) => {
+            assert.ok(
+                readingTarget.fields.pronunciation.some((pronunciation) =>
+                    pronunciation.includes(entry.fields.pronunciation[index]),
+                ),
+            );
+        });
         for (const reference of entry.references.filter(
             ({ relation }) => relation === "readings",
         )) {

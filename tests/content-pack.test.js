@@ -387,10 +387,13 @@ test("kanji readings reference distinct kana-backed vocabulary entries", () => {
             .filter(({ relation }) => relation === "readings")
             .sort((left, right) => left.position - right.position)
             .map(({ entryId }) => words.get(entryId));
-        assert.deepEqual(
-            readingWords.map(({ fields }) => fields.pronunciation[0]),
-            kanji.fields.pronunciation,
-        );
+        readingWords.forEach((readingWord, index) => {
+            assert.ok(
+                readingWord.fields.pronunciation.some((pronunciation) =>
+                    pronunciation.includes(kanji.fields.pronunciation[index]),
+                ),
+            );
+        });
         assert.ok(
             readingWords.every(({ class: entryClass, hidden }) =>
                 entryClass.startsWith("reading:")
@@ -405,22 +408,28 @@ test("kanji readings reference distinct kana-backed vocabulary entries", () => {
             const KanaSource = pronunciationTarget
                 ? words.get(pronunciationTarget.entryId)
                 : readingWord;
-            const compositionRelation = KanaSource.references.some(
-                ({ relation }) => relation === "reading-kana",
-            )
-                ? "reading-kana"
-                : "kana-spelling";
             const spelling = KanaSource.references
-                .filter(({ relation }) => relation === compositionRelation)
+                .filter(({ relation }) =>
+                    ["word-spelling", "reading-kana", "kana-spelling"].includes(
+                        relation,
+                    ),
+                )
                 .sort((left, right) => left.position - right.position)
-                .map(({ entryId }) => characters.get(entryId));
+                .map(
+                    ({ entryId }) =>
+                        characters.get(entryId) ?? words.get(entryId),
+                );
             assert.equal(
                 spelling.map(({ label }) => label).join(""),
                 readingWord.fields.pronunciation[0],
             );
             assert.ok(
                 spelling.every(
-                    ({ fields }) => fields.character_class === "hiragana",
+                    ({ fields, hidden, label, layer }) =>
+                        fields.character_class === "hiragana" ||
+                        (layer === "words" &&
+                            hidden === true &&
+                            /^\p{Script=Hiragana}+$/u.test(label)),
                 ),
             );
             assert.ok(

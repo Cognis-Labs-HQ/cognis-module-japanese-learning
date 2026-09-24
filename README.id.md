@@ -180,3 +180,7 @@ Hanya kartu kalimat yang memiliki komposisi kata dan partikelnya. Kalimat sepert
 ## Bacaan kalimat yang tertaut ke kosakata
 
 Pelafalan kalimat menggunakan hubungan `words` berurutan yang sudah ada untuk tautan mendalam pada detail judul. Setiap rentang Kana lengkap membuka entri kosakata yang terlihat untuk kata tersebut, sedangkan partikel tetap menjadi unsur milik kalimat; kosakata kemudian hanya mengarah melalui bacaan lengkapnya sendiri ke Kana atomik dan tidak pernah ke anak kalimat yang bersebelahan.
+
+## Bacaan Kanji ke kosakata
+
+Pelafalan Kanji tertaut ke kosakata terlihat terdekat yang menggunakannya. Hanya kosakata tersebut yang memiliki rekaman pelafalan lengkap: rentang bermakna yang berasal dari Kanji memakai ulang bacaan tersembunyi, sedangkan satu sufiks Kana yang tersisa tertaut langsung ke Kana atomik. Dengan demikian `好` membuka `好き`, yang bacaan `すき`-nya tersusun dari rentang Kanji `す` dan `き` atomik; tidak dibuat kartu pelafalan tersendiri untuk `き`.

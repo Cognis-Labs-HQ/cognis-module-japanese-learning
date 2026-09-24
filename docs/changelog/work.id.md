@@ -355,3 +355,9 @@ Rantai bacaan kalimat Kana lengkap paralel telah dihapus. Kalimat seperti `猫�
 Detail judul kalimat kini menggunakan hubungan `words` yang sudah ada, sehingga rentang Kana lengkap seperti `いぬ`, `やま`, dan `くる` menargetkan entri kosakata `犬`, `山`, dan `来る` yang terlihat. Setiap entri kosakata tetap hanya berlanjut melalui bacaan lengkapnya sendiri menuju Kana atomik; tidak ada rantai bacaan kalimat paralel maupun tautan antarbacaan saudara.
 
 - [3bc0779](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/3bc0779)
+
+## Pelafalan Kanji Milik Kosakata
+
+Tautan pelafalan Kanji kini mengutamakan kosakata terlihat yang memakai bacaan tersebut. Hanya kosakata itu yang memiliki pembungkus pelafalan lengkap, yang memakai ulang rentang bacaan Kanji bermakna dan mengarahkan sufiks Kana tunggal yang tersisa langsung ke Kana atomik. Contohnya, `好` tertaut ke `好き`, sedangkan bacaan lengkap `すき` memakai rentang Kanji `す` dan `き` atomik tanpa membuat kartu pelafalan `き` tersendiri.
+
+- [b20b4e3](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/b20b4e3)

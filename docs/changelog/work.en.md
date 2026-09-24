@@ -355,3 +355,9 @@ Removed the parallel full-Kana sentence-reading chain. A sentence such as `猫�
 Sentence title details now use the sentence's existing `words` relationship, so complete Kana spans such as `いぬ`, `やま`, and `くる` target the visible `犬`, `山`, and `来る` vocabulary records. Each vocabulary record continues only through its own complete reading to atomic Kana; no parallel sentence-reading chain or sibling-reading link is introduced.
 
 - [3bc0779](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/3bc0779)
+
+## Vocabulary-Owned Kanji Pronunciations
+
+Kanji pronunciation links now prefer the visible vocabulary that uses the reading. That vocabulary alone owns the complete pronunciation wrapper, which reuses meaningful Kanji-reading spans and sends remaining single-Kana suffixes directly to atomic Kana. For example, `好` links to `好き`, while its complete `すき` reading uses the `す` Kanji span and atomic `き` without creating a standalone `き` pronunciation card.
+
+- [b20b4e3](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/b20b4e3)
