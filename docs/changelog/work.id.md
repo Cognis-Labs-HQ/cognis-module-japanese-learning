@@ -343,3 +343,9 @@ Dependensi nonpresentasional ditambahkan dari setiap Kanji ke seluruh Kana atomi
 Tautan judul kalimat per karakter diganti dengan segmen leksikal dan partikel yang telah ditinjau. Pelafalan lengkap kini memakai kembali segmen bacaan kata tersembunyi kanonis dan partikel utuh; misalnya, `ちいさいねこがすき` tertaut sebagai `ちいさい`・`ねこ`・`が`・`すき`, lalu setiap kata diselesaikan ke Kana atomik.
 
 - [973980b8e821218608836970f51a0eefc75bfb11](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/973980b8e821218608836970f51a0eefc75bfb11)
+
+## Komposisi Kalimat Milik Induk
+
+Rantai bacaan kalimat Kana lengkap paralel telah dihapus. Kalimat seperti `猫が好き` kini hanya memiliki tautan ke `猫`, `が`, dan `好き` yang terlihat; setiap kata Kanji memiliki tepat satu anak Kana lengkap (`ねこ` atau `すき`), dan anak tersebut hanya diselesaikan ke Kana atomik, bukan ke saudara dalam kalimat.
+
+- [274238c377ebb0a5ce4759456a0d433df83810da](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/274238c377ebb0a5ce4759456a0d433df83810da)

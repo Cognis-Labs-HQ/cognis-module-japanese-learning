@@ -343,3 +343,9 @@ Added non-presentational dependencies from every Kanji to every atomic Kana used
 Replaced character-by-character sentence title links with reviewed lexical and particle segments. Complete pronunciations now reuse canonical hidden word-reading segments and whole particles; for example, `ちいさいねこがすき` links as `ちいさい`・`ねこ`・`が`・`すき`, with each word resolving onward to atomic Kana.
 
 - [973980b8e821218608836970f51a0eefc75bfb11](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/973980b8e821218608836970f51a0eefc75bfb11)
+
+## Parent-Owned Sentence Composition
+
+Removed the parallel full-Kana sentence-reading chain. A sentence such as `猫が好き` now owns links only to visible `猫`, `が`, and `好き`; each Kanji word owns exactly one complete Kana child (`ねこ` or `すき`), and those children resolve only to atomic Kana rather than to sentence siblings.
+
+- [274238c377ebb0a5ce4759456a0d433df83810da](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/274238c377ebb0a5ce4759456a0d433df83810da)

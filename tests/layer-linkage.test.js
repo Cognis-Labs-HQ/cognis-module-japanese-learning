@@ -119,31 +119,21 @@ function validateLayerLinks(records) {
         if (role === "lexicalUnit") {
             assert.ok(definitionReferences.length > 0);
             const hasKanji = /[\p{Script=Han}]/u.test(record.label);
-            const detached =
-                record.hidden === true &&
-                record.references.every(
-                    ({ relation }) => relation === "definitions",
-                );
-            const sentenceReading = record.id.startsWith(
-                "ja:word:sentence-reading-",
+            assertOrderedComposition(
+                record,
+                new Set([
+                    record.hidden
+                        ? "reading-kana"
+                        : hasKanji
+                          ? "pronunciation-readings"
+                          : "kana-spelling",
+                ]),
+                record.fields.pronunciation[0],
+                recordsById,
             );
-            if (!detached) {
-                assertOrderedComposition(
-                    record,
-                    sentenceReading
-                        ? new Set(["word-spelling", "reading-particles"])
-                        : new Set([
-                              hasKanji || record.hidden
-                                  ? "reading-kana"
-                                  : "kana-spelling",
-                          ]),
-                    record.fields.pronunciation[0],
-                    recordsById,
-                );
-            }
             if (hasKanji) {
                 assertOrderedWrittenLinks(record, recordsById);
-            } else if (!detached && !sentenceReading) {
+            } else {
                 assertOrderedComposition(
                     record,
                     new Set(["word-spelling", "reading-kana", "kana-spelling"]),
@@ -152,7 +142,7 @@ function validateLayerLinks(records) {
                 );
                 assert.equal(record.label, record.fields.pronunciation[0]);
             }
-            if (record.hidden && !detached) {
+            if (record.hidden) {
                 assert.ok(
                     referencedIds.has(record.id),
                     `${record.id} hidden reading is orphaned`,
@@ -191,16 +181,12 @@ function validateLayerLinks(records) {
                 )
                 .join("");
             assert.equal(pronunciation, record.fields.pronunciation[0]);
-            const pronunciationReadings = orderedReferences(
-                record,
-                new Set(["pronunciation-readings"]),
-            ).map(({ entryId }) => recordsById.get(entryId));
-            assert.ok(
-                pronunciationReadings.every(({ hidden }) => hidden === true),
-            );
             assert.equal(
-                pronunciationReadings.map(({ label }) => label).join(""),
-                record.fields.pronunciation[0],
+                record.references.some(
+                    ({ relation }) => relation === "pronunciation-readings",
+                ),
+                false,
+                `${record.id} must not create a parallel pronunciation parent`,
             );
         }
 
@@ -228,13 +214,13 @@ test("reviewed graph inventory remains bounded to the core curriculum", () => {
         characters: 270,
         "alt-characters": 39,
         definitions: 115,
-        words: 107,
+        words: 104,
         particles: 11,
         sentences: 17,
     });
 });
 
-test("teacher vocabulary terminates at Kanji and atomic Kana", () => {
+test("teacher vocabulary terminates at Kanji and full Kana vocabulary", () => {
     const records = loadRecords();
     const recordsById = new Map(records.map((record) => [record.id, record]));
     const teacher = recordsById.get("ja:word:sensei");
@@ -246,14 +232,15 @@ test("teacher vocabulary terminates at Kanji and atomic Kana", () => {
         ),
         ["先", "生"],
     );
-    const readings = orderedReferences(teacher, new Set(["reading-kana"])).map(
-        ({ entryId }) => recordsById.get(entryId),
-    );
+    const readings = orderedReferences(
+        teacher,
+        new Set(["pronunciation-readings"]),
+    ).map(({ entryId }) => recordsById.get(entryId));
     assert.deepEqual(
         readings.map(({ label }) => label),
-        ["せ", "ん", "せ", "い"],
+        ["せんせい"],
     );
-    assert.ok(readings.every(({ layer }) => layer === "characters"));
+    assert.ok(readings.every(({ hidden }) => hidden === true));
 });
 
 test("sentences link only through visible vocabulary and particles", () => {
@@ -277,48 +264,31 @@ test("sentences link only through visible vocabulary and particles", () => {
     }
 });
 
-test("sentence pronunciations resolve through vocabulary and atomic Kana", () => {
+test("sentence pronunciations follow visible vocabulary and particles", () => {
     const records = loadRecords();
     const recordsById = new Map(records.map((record) => [record.id, record]));
     for (const sentence of records.filter(
         ({ layer }) => layer === "sentences",
     )) {
-        const readingReference = sentence.references.find(
-            ({ relation }) => relation === "pronunciation-readings",
-        );
-        const reading = recordsById.get(readingReference.entryId);
-        const composition = orderedReferences(
-            reading,
-            new Set(["word-spelling", "reading-particles"]),
-        );
-        assert.equal(reading.hidden, true);
-        assert.equal(reading.label, sentence.fields.pronunciation[0]);
         assert.equal(
-            composition
+            orderedReferences(sentence, new Set(["words", "particles"]))
                 .map(({ entryId }) => recordsById.get(entryId).label)
                 .join(""),
-            reading.label,
-            `${sentence.id} has unlinked pronunciation text`,
+            sentence.label,
         );
-        assert.deepEqual(
-            composition.map(({ entryId, relation }) => ({
-                label: recordsById.get(entryId).label,
-                relation,
-            })),
-            orderedReferences(sentence, new Set(["words", "particles"])).map(
-                ({ entryId, relation }) => ({
-                    label: recordsById.get(entryId).fields.pronunciation[0],
-                    relation:
-                        relation === "words"
-                            ? "word-spelling"
-                            : "reading-particles",
-                }),
-            ),
+        assert.equal(
+            orderedReferences(sentence, new Set(["words", "particles"]))
+                .map(
+                    ({ entryId }) =>
+                        recordsById.get(entryId).fields.pronunciation[0],
+                )
+                .join(""),
+            sentence.fields.pronunciation[0],
         );
     }
 });
 
-test("visible core vocabulary terminates at Kanji and Kana", () => {
+test("visible core vocabulary terminates at Kanji and full Kana vocabulary", () => {
     const records = loadRecords();
     const recordsById = new Map(records.map((record) => [record.id, record]));
     const visibleVocabulary = records.filter(
@@ -334,65 +304,56 @@ test("visible core vocabulary terminates at Kanji and Kana", () => {
             word,
             new Set(["word-spelling", "spelling"]),
         ).map(({ entryId }) => recordsById.get(entryId));
-        const Kana = orderedReferences(word, new Set(["reading-kana"])).map(
-            ({ entryId }) => recordsById.get(entryId),
-        );
+        const readings = orderedReferences(
+            word,
+            new Set(["pronunciation-readings"]),
+        ).map(({ entryId }) => recordsById.get(entryId));
         assert.ok(Kanji.length > 0, `${word.id} bypasses the Kanji layer`);
         assert.equal(
-            Kana.map(({ label }) => label).join(""),
+            readings.map(({ label }) => label).join(""),
             word.fields.pronunciation[0],
         );
-        assert.ok(Kana.every(({ layer }) => layer === "characters"));
-        assert.equal(
-            word.references.some(
-                ({ relation }) => relation === "pronunciation-readings",
-            ),
-            false,
-            `${word.id} must not add another Vocabulary hop to its reading`,
-        );
+        assert.ok(readings.every(({ hidden }) => hidden === true));
     }
 });
 
-test("sentence readings compose from logical word and particle segments", () => {
-    const records = loadRecords();
-    const recordsById = new Map(records.map((record) => [record.id, record]));
-    const reading = recordsById.get("ja:word:sentence-reading-inu-mo-kuru");
-    const composition = orderedReferences(
-        reading,
-        new Set(["word-spelling", "reading-particles"]),
-    ).map(({ entryId, relation }) => ({
-        label: recordsById.get(entryId).label,
-        relation,
-    }));
-
-    assert.deepEqual(composition, [
-        { label: "いぬ", relation: "word-spelling" },
-        { label: "も", relation: "reading-particles" },
-        { label: "くる", relation: "word-spelling" },
-    ]);
-});
-
-test("small-cat sentence uses reviewed lexical segments", () => {
+test("small-cat sentence owns composition without a parallel Kana chain", () => {
     const recordsById = new Map(
         loadRecords().map((record) => [record.id, record]),
     );
-    const reading = recordsById.get(
-        "ja:word:sentence-reading-chiisai-neko-suki",
+    const sentence = recordsById.get("ja:sentence:chiisai-neko-suki");
+    assert.deepEqual(
+        orderedReferences(sentence, new Set(["words", "particles"])).map(
+            ({ entryId }) => recordsById.get(entryId).label,
+        ),
+        ["小さい", "猫", "が", "好き"],
+    );
+    for (const wordId of ["ja:word:chiisai", "ja:word:neko", "ja:word:suki"]) {
+        const word = recordsById.get(wordId);
+        const reading = orderedReferences(
+            word,
+            new Set(["pronunciation-readings"]),
+        ).map(({ entryId }) => recordsById.get(entryId));
+        assert.deepEqual(
+            reading.map(({ label }) => label),
+            word.fields.pronunciation,
+        );
+    }
+    assert.equal(
+        sentence.references.some(
+            ({ relation }) => relation === "pronunciation-readings",
+        ),
+        false,
+    );
+    const sukiReading = recordsById.get("ja:word:pronunciation-suki");
+    const parents = loadRecords().filter((record) =>
+        (record.references ?? []).some(
+            ({ entryId }) => entryId === sukiReading.id,
+        ),
     );
     assert.deepEqual(
-        orderedReferences(
-            reading,
-            new Set(["word-spelling", "reading-particles"]),
-        ).map(({ entryId, relation }) => ({
-            label: recordsById.get(entryId).label,
-            relation,
-        })),
-        [
-            { label: "ちいさい", relation: "word-spelling" },
-            { label: "ねこ", relation: "word-spelling" },
-            { label: "が", relation: "reading-particles" },
-            { label: "すき", relation: "word-spelling" },
-        ],
+        parents.map(({ id }) => id),
+        ["ja:word:suki"],
     );
 });
 
@@ -554,7 +515,6 @@ test("authored study links are acyclic and terminate at writing characters", () 
         "kana-spelling",
         "pronunciation-readings",
         "reading-kana",
-        "reading-particles",
         "spelling",
         "word-spelling",
         "words",

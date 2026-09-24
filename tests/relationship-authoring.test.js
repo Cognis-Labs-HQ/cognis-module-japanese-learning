@@ -65,7 +65,10 @@ test("vocabulary compositions use the closest structural records", () => {
     const pronunciation = wordLayer.fields.find(
         ({ id }) => id === "pronunciation",
     );
-    assert.equal(pronunciation.input.linkRelationship, "reading-kana");
+    assert.equal(
+        pronunciation.input.linkRelationship,
+        "pronunciation-readings",
+    );
     const nihon = recordsById.get("ja:word:nihon");
     const nihongo = recordsById.get("ja:word:nihongo");
     assert.equal(labelsFor(nihon, ["word-spelling", "spelling"]), "日本");
@@ -78,14 +81,8 @@ test("vocabulary compositions use the closest structural records", () => {
             .map(({ entryId }) => entryId),
         ["ja:word:nihon", "ja:kanji:go"],
     );
-    assert.equal(labelsFor(nihon, ["reading-kana"]), "にほん");
-    assert.equal(labelsFor(nihongo, ["reading-kana"]), "にほんご");
-    assert.equal(
-        nihongo.references.some(({ entryId }) =>
-            recordsById.get(entryId)?.class.startsWith("reading:"),
-        ),
-        false,
-    );
+    assert.equal(labelsFor(nihon, ["pronunciation-readings"]), "にほん");
+    assert.equal(labelsFor(nihongo, ["pronunciation-readings"]), "にほんご");
 });
 
 test("reading vocabulary owns explicit definitions", () => {
@@ -142,11 +139,9 @@ test("Kanji readings and particles resolve through authored Kana links", () => {
             }
             assert.equal(
                 labelsFor(reading, [
-                    reading.references.some(
-                        ({ relation }) => relation === "reading-kana",
-                    )
-                        ? "reading-kana"
-                        : "kana-spelling",
+                    "pronunciation-readings",
+                    "reading-kana",
+                    "kana-spelling",
                 ]),
                 reading.fields.pronunciation[0],
             );

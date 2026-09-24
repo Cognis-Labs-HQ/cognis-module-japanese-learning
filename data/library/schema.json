@@ -1,6 +1,6 @@
 {
     "id": "japanese-core",
-    "version": 48,
+    "version": 49,
     "namespace": "ja",
     "language": "ja",
     "metadata": {
@@ -529,7 +529,7 @@
                     },
                     "input": {
                         "control": "tagList",
-                        "linkRelationship": "reading-kana"
+                        "linkRelationship": "pronunciation-readings"
                     }
                 },
                 {
@@ -659,22 +659,6 @@
                         }
                     },
                     "minimum": 0,
-                    "ordered": true,
-                    "onDelete": "restrict",
-                    "resolverRole": "explicit",
-                    "presentationRole": "composition"
-                },
-                {
-                    "id": "reading-particles",
-                    "targetLayer": "particles",
-                    "metadata": {
-                        "labels": {
-                            "de": "Aussprachepartikeln",
-                            "en": "Pronunciation Particles",
-                            "id": "Partikel Pelafalan",
-                            "ja": "発音の助詞"
-                        }
-                    },
                     "ordered": true,
                     "onDelete": "restrict",
                     "resolverRole": "explicit",
@@ -858,24 +842,6 @@
                     "presentationRole": "composition"
                 },
                 {
-                    "id": "pronunciation-readings",
-                    "targetLayer": "words",
-                    "metadata": {
-                        "labels": {
-                            "de": "Aussprachelesungen",
-                            "en": "Pronunciation Readings",
-                            "id": "Bacaan pelafalan",
-                            "ja": "発音の読み"
-                        }
-                    },
-                    "minimum": 1,
-                    "ordered": true,
-                    "requiredTarget": true,
-                    "onDelete": "restrict",
-                    "resolverRole": "longestMatch",
-                    "presentationRole": "pronunciation"
-                },
-                {
                     "id": "definitions",
                     "targetLayer": "definitions",
                     "metadata": {
@@ -911,8 +877,7 @@
                         "order": 1
                     },
                     "input": {
-                        "control": "tagList",
-                        "linkRelationship": "pronunciation-readings"
+                        "control": "tagList"
                     }
                 }
             ],

@@ -173,6 +173,6 @@ Paket konten kini hanya memuat graf kanonis aktif. Pembungkus bacaan tersembunyi
 
 Kanji kini menerbitkan dependensi nonpresentasional ke setiap Kana atomik yang digunakan bacaan yang ditulis. Jalur `日` → `か` → `か` atomik karena itu mempertahankan `日` pada bagian Digunakan Oleh di kartu Kana tanpa menambahkan detail judul lain atau mengubah target bacaan leksikal.
 
-## Segmen Pelafalan Kalimat yang Logis
+## Pelafalan Komposit Milik Induk
 
-Kartu pelafalan kalimat lengkap kini menautkan bacaan leksikal utuh dan partikel utuh, bukan memecah setiap judul menjadi Kana yang tidak berkaitan. Misalnya, `ちいさいねこがすき` ditulis sebagai `ちいさい`・`ねこ`・`が`・`すき`; setiap segmen leksikal kemudian diselesaikan sendiri ke Kana atomik terurut.
+Hanya kartu kalimat yang memiliki komposisi kata dan partikelnya. Kalimat seperti `猫が好き` mereferensikan `猫`, `が`, dan `好き` yang terlihat; setiap kata Kanji terlihat mereferensikan satu pelafalan Kana lengkapnya (`ねこ` atau `すき`) yang kemudian diselesaikan ke Kana atomik. Bacaan Kana lengkap tidak pernah membentuk rantai kalimat paralel.

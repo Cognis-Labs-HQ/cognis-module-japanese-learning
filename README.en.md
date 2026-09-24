@@ -173,6 +173,6 @@ The content pack now contains only the active canonical graph. Obsolete hidden r
 
 Kanji now publish non-presentational dependencies to every atomic Kana used by their authored readings. Following `日` → `か` → atomic `か` therefore preserves `日` in the Kana card's Used By section without adding another title detail or changing the lexical reading target.
 
-## Logical Sentence Pronunciation Segments
+## Parent-Owned Composite Pronunciations
 
-Complete sentence-pronunciation cards now link whole lexical readings and whole particles instead of splitting every title into unrelated Kana. For example, `ちいさいねこがすき` is authored as `ちいさい`・`ねこ`・`が`・`すき`; each lexical segment then resolves independently to its ordered atomic Kana.
+Sentence cards alone own their word-and-particle composition. A sentence such as `猫が好き` references visible `猫`, `が`, and `好き`; each visible Kanji word references its one complete Kana pronunciation (`ねこ` or `すき`), which resolves onward to atomic Kana. Complete Kana readings never form a parallel sentence chain.

@@ -173,6 +173,6 @@ Das Inhaltspaket enthält nur noch den aktiven kanonischen Graphen. Veraltete au
 
 Kanji veröffentlichen nun nicht dargestellte Abhängigkeiten zu jedem atomaren Kana ihrer deklarierten Lesungen. Der Pfad `日` → `か` → atomares `か` behält daher `日` im Abschnitt „Verwendet von“ der Kana-Karte, ohne ein weiteres Titeldetail hinzuzufügen oder das lexikalische Lesungsziel zu ändern.
 
-## Logische Ausspracheabschnitte für Sätze
+## Vom Elterneintrag bestimmte zusammengesetzte Aussprachen
 
-Vollständige Satz-Aussprachekarten verknüpfen nun ganze lexikalische Lesungen und ganze Partikeln, statt jeden Titel in unzusammenhängende Kana zu zerlegen. `ちいさいねこがすき` ist beispielsweise als `ちいさい`・`ねこ`・`が`・`すき` deklariert; jeder lexikalische Abschnitt löst sich anschließend eigenständig in seine geordneten atomaren Kana auf.
+Nur Satzkarten besitzen die Zusammensetzung aus Wörtern und Partikeln. Ein Satz wie `猫が好き` verweist auf sichtbares `猫`, `が` und `好き`; jedes sichtbare Kanji-Wort verweist auf seine eine vollständige Kana-Aussprache (`ねこ` oder `すき`), die sich anschließend in atomare Kana auflöst. Vollständige Kana-Lesungen bilden niemals eine parallele Satzkette.

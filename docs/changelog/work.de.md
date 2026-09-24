@@ -343,3 +343,9 @@ Von jedem Kanji wurden nicht dargestellte Abhängigkeiten zu allen atomaren Kana
 Die zeichenweisen Satztitel-Links wurden durch geprüfte lexikalische und Partikelabschnitte ersetzt. Vollständige Aussprachen verwenden nun kanonische ausgeblendete Wortlesungsabschnitte und ganze Partikeln; `ちいさいねこがすき` verknüpft beispielsweise `ちいさい`・`ねこ`・`が`・`すき`, wobei sich jedes Wort anschließend in atomare Kana auflöst.
 
 - [973980b8e821218608836970f51a0eefc75bfb11](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/973980b8e821218608836970f51a0eefc75bfb11)
+
+## Vom Satzelternteil bestimmte Komposition
+
+Die parallele vollständige Kana-Satzlesungskette wurde entfernt. Ein Satz wie `猫が好き` besitzt nun nur Links zu sichtbarem `猫`, `が` und `好き`; jedes Kanji-Wort besitzt genau ein vollständiges Kana-Kind (`ねこ` oder `すき`), und diese Kinder lösen sich ausschließlich in atomare Kana auf, statt auf Satzgeschwister zu verweisen.
+
+- [274238c377ebb0a5ce4759456a0d433df83810da](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/274238c377ebb0a5ce4759456a0d433df83810da)

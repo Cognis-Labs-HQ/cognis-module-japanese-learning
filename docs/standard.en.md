@@ -174,6 +174,6 @@ Package only records that participate in the current authored graph. Remove supe
 
 Every Kanji must add one deduplicated `reading-kana-dependency` reference to each atomic Kana occurring anywhere in its authored pronunciation list. This relationship has no presentation or resolver role: it exists only to make inverse Used By navigation symmetric after a learner follows a lexical reading to atomic Kana. Keep the normal `readings` relationship as the pronunciation field's deep-link source.
 
-## Logical Sentence Pronunciation Segments
+## Parent-Owned Composite Pronunciations
 
-A hidden complete-sentence pronunciation must compose from one canonical hidden pronunciation segment per visible word through `word-spelling`, plus whole particle records through `reading-particles`, in sentence order. Each word segment reconstructs itself through ordered `reading-kana`. Do not flatten a sentence pronunciation into individual Kana when reviewed lexical or particle boundaries exist.
+Only the visible sentence owns relationships among its lexical and particle children. Each visible Kanji word links through `pronunciation-readings` to exactly one hidden complete-Kana pronunciation, which reconstructs through ordered `reading-kana`. Sentence records must not reference a parallel complete-pronunciation record, and pronunciation children must never reference sibling pronunciations merely because their words share a sentence.

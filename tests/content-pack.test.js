@@ -399,12 +399,18 @@ test("kanji readings reference distinct kana-backed vocabulary entries", () => {
             ),
         );
         for (const readingWord of readingWords) {
-            const compositionRelation = readingWord.references.some(
+            const pronunciationTarget = readingWord.references.find(
+                ({ relation }) => relation === "pronunciation-readings",
+            );
+            const KanaSource = pronunciationTarget
+                ? words.get(pronunciationTarget.entryId)
+                : readingWord;
+            const compositionRelation = KanaSource.references.some(
                 ({ relation }) => relation === "reading-kana",
             )
                 ? "reading-kana"
                 : "kana-spelling";
-            const spelling = readingWord.references
+            const spelling = KanaSource.references
                 .filter(({ relation }) => relation === compositionRelation)
                 .sort((left, right) => left.position - right.position)
                 .map(({ entryId }) => characters.get(entryId));
@@ -683,11 +689,10 @@ test("every vocabulary entry participates in the Kana deletion dependency graph"
     assert.ok(vocabulary.every((entry) => dependsOnKana(entry)));
 
     const suki = recordsById.get("ja:word:suki");
-    const sukiKana = suki.references
-        .filter(({ relation }) => relation === "reading-kana")
-        .map(({ entryId }) => recordsById.get(entryId).label)
-        .join("");
-    assert.equal(sukiKana, "すき");
+    const sukiReadingId = suki.references.find(
+        ({ relation }) => relation === "pronunciation-readings",
+    ).entryId;
+    assert.equal(recordsById.get(sukiReadingId).label, "すき");
 });
 
 test("lexical and sentence pronunciation use the Library placement field", () => {
@@ -736,7 +741,6 @@ test("definitions stay semantic while resolvers describe compositions", () => {
         new Set([
             "readings:words",
             "pronunciation-readings:words",
-            "reading-particles:particles",
             "reading-kana:characters",
             "word-spelling:words",
             "spelling:alt-characters",
@@ -756,7 +760,6 @@ test("definitions stay semantic while resolvers describe compositions", () => {
             ["readings", "pronunciation"],
             ["pronunciation-readings", "pronunciation"],
             ["reading-kana", "composition"],
-            ["reading-particles", "composition"],
             ["word-spelling", "composition"],
             ["spelling", "composition"],
             ["kana-spelling", "alternateSpelling"],
