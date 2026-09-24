@@ -18,18 +18,23 @@
                 "position": 1
             },
             {
-                "entryId": "ja:word:kanji-reading-e697a5-e381ab",
-                "relation": "pronunciation-readings",
+                "entryId": "ja:def:nihon",
+                "relation": "definitions"
+            },
+            {
+                "entryId": "ja:char:ni",
+                "relation": "reading-kana",
                 "position": 0
             },
             {
-                "entryId": "ja:word:reading-hon",
-                "relation": "pronunciation-readings",
+                "entryId": "ja:char:ho",
+                "relation": "reading-kana",
                 "position": 1
             },
             {
-                "entryId": "ja:def:nihon",
-                "relation": "definitions"
+                "entryId": "ja:char:n",
+                "relation": "reading-kana",
+                "position": 2
             }
         ],
         "class": "lexical:noun"
@@ -53,30 +58,9 @@
                 "position": 1
             },
             {
-                "entryId": "ja:word:reading-nihon",
-                "relation": "pronunciation-readings",
-                "position": 0
-            },
-            {
-                "entryId": "ja:word:reading-go",
-                "relation": "pronunciation-readings",
-                "position": 1
-            },
-            {
                 "entryId": "ja:def:nihongo",
                 "relation": "definitions"
-            }
-        ],
-        "class": "lexical:noun"
-    },
-    {
-        "id": "ja:word:reading-nihon",
-        "label": "にほん",
-        "fields": {
-            "jlpt_level": "N5",
-            "pronunciation": ["にほん"]
-        },
-        "references": [
+            },
             {
                 "entryId": "ja:char:ni",
                 "relation": "reading-kana",
@@ -93,12 +77,12 @@
                 "position": 2
             },
             {
-                "entryId": "ja:def:nihon",
-                "relation": "definitions"
+                "entryId": "ja:char:go",
+                "relation": "reading-kana",
+                "position": 3
             }
         ],
-        "hidden": true,
-        "class": "reading:pronunciation"
+        "class": "lexical:noun"
     },
     {
         "id": "ja:word:reading-nichi",
@@ -124,7 +108,7 @@
             }
         ],
         "hidden": true,
-        "class": "reading:kanji"
+        "class": "reading:pronunciation"
     },
     {
         "id": "ja:word:reading-jitsu",
@@ -150,7 +134,7 @@
             }
         ],
         "hidden": true,
-        "class": "reading:kanji"
+        "class": "reading:pronunciation"
     },
     {
         "id": "ja:word:reading-hi",
@@ -171,7 +155,7 @@
             }
         ],
         "hidden": true,
-        "class": "reading:kanji"
+        "class": "reading:pronunciation"
     },
     {
         "id": "ja:word:ka-day-counter",
@@ -217,7 +201,7 @@
             }
         ],
         "hidden": true,
-        "class": "reading:kanji"
+        "class": "reading:pronunciation"
     },
     {
         "id": "ja:word:reading-moto",
@@ -243,7 +227,7 @@
             }
         ],
         "hidden": true,
-        "class": "reading:kanji"
+        "class": "reading:pronunciation"
     },
     {
         "id": "ja:word:reading-go",
@@ -264,7 +248,7 @@
             }
         ],
         "hidden": true,
-        "class": "reading:kanji"
+        "class": "reading:pronunciation"
     },
     {
         "id": "ja:word:reading-kata",
@@ -290,7 +274,7 @@
             }
         ],
         "hidden": true,
-        "class": "reading:kanji"
+        "class": "reading:pronunciation"
     },
     {
         "id": "ja:word:reading-jin",
@@ -316,7 +300,7 @@
             }
         ],
         "hidden": true,
-        "class": "reading:kanji"
+        "class": "reading:pronunciation"
     },
     {
         "id": "ja:word:reading-nin",
@@ -342,7 +326,7 @@
             }
         ],
         "hidden": true,
-        "class": "reading:kanji"
+        "class": "reading:pronunciation"
     },
     {
         "id": "ja:word:reading-hito",
@@ -368,7 +352,7 @@
             }
         ],
         "hidden": true,
-        "class": "reading:kanji"
+        "class": "reading:pronunciation"
     },
     {
         "id": "ja:word:suki",
@@ -384,13 +368,18 @@
                 "position": 0
             },
             {
-                "entryId": "ja:word:reading-suki",
-                "relation": "pronunciation-readings",
+                "entryId": "ja:def:suki",
+                "relation": "definitions"
+            },
+            {
+                "entryId": "ja:char:su",
+                "relation": "reading-kana",
                 "position": 0
             },
             {
-                "entryId": "ja:def:suki",
-                "relation": "definitions"
+                "entryId": "ja:char:ki",
+                "relation": "reading-kana",
+                "position": 1
             }
         ],
         "class": "lexical:adjective"

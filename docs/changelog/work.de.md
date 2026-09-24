@@ -295,3 +295,9 @@ Titel ausgeblendeter Aussprachedatensätze setzen sich jetzt direkt aus ihren ei
 Lesungstitel verwenden jetzt die vorgesehene Kompositionsbeziehung `reading-kana`, während `kana-spelling` seine unterstützte Rolle als alternative Schreibweise behält. Dadurch bleibt die direkte Kana-Navigation erhalten, ohne dass die Inhaltsvalidierung die Modulaktivierung ablehnt.
 
 - [2187c82db49d331797cbb015e4665ad7ccb5264b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/2187c82db49d331797cbb015e4665ad7ccb5264b)
+
+## Kanonische Vokabular- und Kana-Karten
+
+Redundante Aussprache-Vokabularhüllen wurden entfernt. Sichtbares Kanji-Vokabular verweist nun direkt auf Kanji und atomare Kana, Kanji-Lesungen bevorzugen den passenden sichtbaren lexikalischen Eintrag wie `猫`, und verbleibende ausgeblendete Lesungen verwenden die Ausspracheklasse, statt als Kanji zu erscheinen. Kana-Karten tragen nun ein einziges Schriftsystem-Abzeichen ohne doppelten Klassen-Tag.
+
+- [697459a2379a0d11ce7fcc1ad947dacbe7d556a3](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/697459a2379a0d11ce7fcc1ad947dacbe7d556a3)

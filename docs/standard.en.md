@@ -165,3 +165,7 @@ Authored study links form a directed acyclic graph and Kana characters terminate
 ## Direct Kana Composition for Reading Titles
 
 Every hidden pronunciation record composes its complete title directly from ordered atomic Kana through `reading-kana`. For reading records, this relationship uses the dedicated `composition` presentation role: do not route a reading title through `word-spelling` or the alternate-spelling relationship, because doing so creates recursive or misleading card navigation.
+
+## Canonical Lexical Reading Targets
+
+Visible Kanji vocabulary must terminate its pronunciation path at ordered atomic Kana through `reading-kana`; it must not add a pronunciation-reading Vocabulary wrapper. When a Kanji pronunciation is itself a visible lexical entry, the Kanji `readings` relationship targets that entry directly (for example, `猫` targets the noun `猫`, whose pronunciation links to `ね` and `こ`). Hidden reading records are reserved for readings without an appropriate visible lexical target and use `class: "reading:pronunciation"`, never `reading:kanji`. Atomic Kana use `class: "writing:kana"`; the separate writing-system field supplies the single Hiragana or Katakana badge.

@@ -165,3 +165,7 @@ Tautan pembelajaran yang ditulis membentuk graf berarah tanpa siklus, dan karakt
 ## Komposisi Kana Langsung untuk Judul Bacaan
 
 Setiap data pelafalan tersembunyi menyusun judul lengkapnya langsung dari Kana atomik yang terurut melalui relasi khusus komposisi `reading-kana`. Untuk data bacaan, relasi ini memiliki peran presentasi `composition`: jangan arahkan judul bacaan melalui `word-spelling` atau relasi ejaan alternatif, karena hal itu menghasilkan navigasi kartu yang rekursif atau menyesatkan.
+
+## Target Bacaan Leksikal Kanonis
+
+Kosakata Kanji yang terlihat harus mengakhiri jalur pelafalannya pada Kana atomik terurut melalui `reading-kana` dan tidak boleh menambahkan pembungkus Kosakata bacaan pelafalan. Jika pelafalan Kanji merupakan entri leksikal terlihat, relasi `readings` Kanji menargetkan entri itu secara langsung (misalnya `猫` menargetkan nomina `猫` yang pelafalannya tertaut ke `ね` dan `こ`). Data bacaan tersembunyi hanya digunakan untuk bacaan tanpa target leksikal terlihat yang sesuai dan memakai `class: "reading:pronunciation"`, bukan `reading:kanji`. Kana atomik memakai `class: "writing:kana"`; bidang sistem tulisan terpisah menyediakan satu lencana Hiragana atau Katakana.

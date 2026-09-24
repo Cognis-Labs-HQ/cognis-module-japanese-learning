@@ -295,3 +295,9 @@ Cognis PR #214 に合わせ、名前空間の所有権、ローカライズ済�
 読みタイトルには専用の構成関係 `reading-kana` を使用し、`kana-spelling` はサポートされる代替表記ロールに戻しました。これにより、コンテンツパック検証でモジュールの有効化が拒否されることなく、かなへの直接タイトル移動を維持します。
 
 - [2187c82db49d331797cbb015e4665ad7ccb5264b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/2187c82db49d331797cbb015e4665ad7ccb5264b)
+
+## 正規の語彙・かなカード
+
+冗長な発音語彙ラッパーを削除しました。表示される漢字語彙は漢字と原子的なかなへ直接リンクし、漢字の読みは `猫` のような一致する表示語彙項目を優先します。残る非表示の読みは漢字として表示せず、発音クラスを使用します。かなカードの文字体系バッジは、クラスと重複しない一つだけになりました。
+
+- [697459a2379a0d11ce7fcc1ad947dacbe7d556a3](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/697459a2379a0d11ce7fcc1ad947dacbe7d556a3)

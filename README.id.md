@@ -164,3 +164,7 @@ Setiap pelafalan kalimat kini membuka rekaman bacaan lengkap tersembunyi yang se
 ## Judul Bacaan dengan Tautan Kana Langsung
 
 Data pelafalan tersembunyi kini menyusun judulnya langsung dari Kana atomik melalui relasi khusus komposisi `reading-kana`. Membuka pelafalan Kanji karena itu menuju ke setiap Kana yang tertaut, bukan kembali melalui kartu bacaan atau Kanji lain, dan judul tidak lagi menampilkan detail ejaan alternatif.
+
+## Tautan Bacaan Kosakata Kanonis
+
+Kosakata Kanji yang terlihat kini menautkan ejaannya ke Kanji dan pelafalannya langsung ke Kana atomik, tanpa kata bacaan perantara. Kartu Kanji menautkan bacaan leksikal seperti `ねこ` ke nomina terlihat `猫`; kartu pelafalan tersembunyi hanya dipertahankan jika tidak ada entri leksikal terlihat yang mewakili bacaan tersebut. Kartu Kana memakai kelas umum `writing:kana` bersama satu lencana Hiragana atau Katakana sehingga tag tidak berulang.

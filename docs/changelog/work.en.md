@@ -295,3 +295,9 @@ Hidden pronunciation titles now compose directly from their individual atomic Ka
 Reading titles now use the schema's dedicated `reading-kana` composition relationship, while `kana-spelling` retains its supported alternate-spelling role. This preserves direct Kana title navigation without causing content-pack validation to reject module enablement.
 
 - [2187c82db49d331797cbb015e4665ad7ccb5264b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/2187c82db49d331797cbb015e4665ad7ccb5264b)
+
+## Canonical Vocabulary and Kana Cards
+
+Removed redundant pronunciation Vocabulary wrappers. Visible Kanji vocabulary now links directly to Kanji and atomic Kana, Kanji readings prefer the matching visible lexical entry such as `猫`, and remaining hidden readings use the pronunciation class instead of appearing as Kanji. Kana cards now carry one writing-system badge without a duplicate class tag.
+
+- [697459a2379a0d11ce7fcc1ad947dacbe7d556a3](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/697459a2379a0d11ce7fcc1ad947dacbe7d556a3)

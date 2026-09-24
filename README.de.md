@@ -164,3 +164,7 @@ Jede Satzaussprache öffnet nun einen verborgenen vollständigen Lesungsdatensat
 ## Direkt mit Kana verknüpfte Lesungstitel
 
 Ausgeblendete Aussprachedatensätze setzen ihre Titel jetzt über die reine Kompositionsbeziehung `reading-kana` direkt aus atomaren Kana zusammen. Das Öffnen einer Kanji-Aussprache führt daher zu einzeln verknüpften Kana, statt über eine weitere Lese- oder Kanji-Karte zurückzuführen; im Titel wird außerdem kein Detail zur alternativen Schreibweise mehr angezeigt.
+
+## Kanonische Lesungsverknüpfungen für Vokabular
+
+Sichtbares Kanji-Vokabular verknüpft nun seine Schreibweise mit Kanji und seine Aussprache direkt mit atomaren Kana, ohne ein dazwischengeschaltetes Lesungswort. Eine Kanji-Karte verknüpft eine lexikalische Lesung wie `ねこ` mit dem sichtbaren Substantiv `猫`; ausgeblendete Aussprachekarten bleiben nur erhalten, wenn kein sichtbarer lexikalischer Eintrag die Lesung darstellt. Kana-Karten verwenden die allgemeine Klasse `writing:kana` neben ihrem einzigen Hiragana- oder Katakana-Abzeichen, wodurch doppelte Tags vermieden werden.

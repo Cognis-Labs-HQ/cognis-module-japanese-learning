@@ -295,3 +295,9 @@ Judul pelafalan tersembunyi kini disusun langsung dari tautan Kana atomik masing
 Judul bacaan kini memakai relasi komposisi khusus `reading-kana`, sedangkan `kana-spelling` mempertahankan peran ejaan alternatif yang didukung. Navigasi judul langsung ke Kana tetap tersedia tanpa membuat validasi paket konten menolak pengaktifan modul.
 
 - [2187c82db49d331797cbb015e4665ad7ccb5264b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/2187c82db49d331797cbb015e4665ad7ccb5264b)
+
+## Kartu Kosakata dan Kana Kanonis
+
+Pembungkus Kosakata pelafalan yang berlebihan telah dihapus. Kosakata Kanji terlihat kini menaut langsung ke Kanji dan Kana atomik, bacaan Kanji mengutamakan entri leksikal terlihat yang cocok seperti `猫`, dan bacaan tersembunyi yang tersisa memakai kelas pelafalan alih-alih tampil sebagai Kanji. Kartu Kana kini memiliki satu lencana sistem tulisan tanpa tag kelas ganda.
+
+- [697459a2379a0d11ce7fcc1ad947dacbe7d556a3](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/697459a2379a0d11ce7fcc1ad947dacbe7d556a3)
