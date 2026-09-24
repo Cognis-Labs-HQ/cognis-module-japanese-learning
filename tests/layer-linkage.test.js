@@ -223,7 +223,7 @@ test("reviewed graph inventory remains bounded to the core curriculum", () => {
         characters: 270,
         "alt-characters": 39,
         definitions: 115,
-        words: 133,
+        words: 85,
         particles: 11,
         sentences: 17,
     });
@@ -392,23 +392,6 @@ test("reading titles use atomic Kana without recursive word links", () => {
             `${reading.id} must not route its title back through another word`,
         );
     }
-});
-
-test("superseded readings remain detached for safe provider updates", () => {
-    const records = loadRecords();
-    const inboundIds = new Set(
-        records.flatMap(({ references = [] }) =>
-            references.map(({ entryId }) => entryId),
-        ),
-    );
-    const detached = records.filter(
-        ({ hidden, layer, references }) =>
-            layer === "words" &&
-            hidden === true &&
-            references.every(({ relation }) => relation === "definitions"),
-    );
-    assert.ok(detached.length > 0);
-    assert.ok(detached.every(({ id }) => !inboundIds.has(id)));
 });
 
 test("Kana cards and reading cards use accurate nonduplicated classes", () => {

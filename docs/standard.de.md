@@ -166,6 +166,6 @@ Verfasste Lernverknüpfungen bilden einen gerichteten azyklischen Graphen, und K
 
 Jeder ausgeblendete Aussprachedatensatz setzt seinen vollständigen Titel über die reine Kompositionsbeziehung `reading-kana` direkt aus geordneten atomaren Kana zusammen. Für Lesungsdatensätze hat diese Beziehung die Darstellungsrolle `composition`: Ein Lesungstitel darf nicht über `word-spelling` oder die Beziehung für alternative Schreibweisen geführt werden, da dies eine rekursive oder irreführende Kartennavigation erzeugt.
 
-## Inkrementelle Migration des Lesungsgraphen
+## Kanonischer Lesungsgraph
 
-Ein Provider-Lesungsdatensatz darf nicht in derselben Version entfernt werden, in der sein eingehender Pfad ersetzt wird. Der ersetzte Datensatz bleibt ausgeblendet, behält seine semantische Definition, verliert seine strukturellen Referenzen und darf von keinem aktuellen Datensatz referenziert werden. So können wiederholte Importe bestehende Datenbankzeilen aktualisieren, ohne dass der Host einen fehlenden Provider-Datensatz abgleichen muss. Aktuelles sichtbares Kanji-Vokabular muss direkt auf geordnete atomare Kana verweisen; ein Kanji darf den passenden sichtbaren lexikalischen Datensatz referenzieren.
+Es werden nur Datensätze paketiert, die am aktuellen deklarierten Graphen teilnehmen. Ersetzte ausgeblendete Lesungen werden entfernt, statt getrennte Kompatibilitätsdatensätze zu behalten. Sichtbares Kanji-Vokabular muss direkt auf geordnete atomare Kana verweisen; ein Kanji darf den passenden sichtbaren lexikalischen Datensatz referenzieren.

@@ -165,6 +165,6 @@ Setiap pelafalan kalimat kini membuka rekaman bacaan lengkap tersembunyi yang se
 
 Data pelafalan tersembunyi kini menyusun judulnya langsung dari Kana atomik melalui relasi khusus komposisi `reading-kana`. Membuka pelafalan Kanji karena itu menuju ke setiap Kana yang tertaut, bukan kembali melalui kartu bacaan atau Kanji lain, dan judul tidak lagi menampilkan detail ejaan alternatif.
 
-## Graf Kartu Kanonis Bertahap
+## Graf Kartu Kanonis
 
-Kosakata Kanji terlihat kini berakhir pada ejaan Kanji dan pelafalan Kana atomiknya, sedangkan bacaan Kanji yang cocok membuka kartu leksikal terlihat tersebut. Data bacaan tersembunyi yang digantikan tetap dipaketkan tetapi dilepas agar instalasi yang ada dapat memperbaruinya dengan aman tanpa kecocokan Digunakan Oleh yang ganda. Kartu Kana dan bacaan memakai kelas Kana dan pelafalan umum, bukan lencana ganda atau Kanji yang menyesatkan.
+Paket konten kini hanya memuat graf kanonis aktif. Pembungkus bacaan tersembunyi yang usang telah dihapus sepenuhnya; kosakata Kanji terlihat berakhir pada ejaan Kanji dan pelafalan Kana atomiknya, sedangkan bacaan Kanji yang cocok membuka kartu leksikal terlihat.

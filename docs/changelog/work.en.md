@@ -325,3 +325,9 @@ Applied the simplified card graph without deleting provider records that may alr
 Advanced the Japanese content schema to revision 46 so Cognis inserts the sanitized schema instead of exercising PR #226's broken same-version schema update command. The host follow-up is documented precisely: that command supplies `values` although the structured database gateway requires `set`, causing the reported `Object.entries(undefined)` failure on PostgreSQL.
 
 - [bb20511152a80522055af67e6895ff28e5d9b8c8](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/bb20511152a80522055af67e6895ff28e5d9b8c8)
+
+## Purged Superseded Reading Data
+
+Removed all 48 obsolete hidden reading records instead of retaining detached compatibility data. The package now contains only the active canonical graph, reducing the Vocabulary inventory from 133 to 85 records while preserving direct Kanji, lexical, and atomic-Kana navigation.
+
+- [b5ae5ad6e5ec9acf67c7ebf22d2d984ff4bdbad4](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/b5ae5ad6e5ec9acf67c7ebf22d2d984ff4bdbad4)

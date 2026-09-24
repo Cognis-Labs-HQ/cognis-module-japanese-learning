@@ -325,3 +325,9 @@ Study Library の有効化がデータベーストランザクション内で失
 日本語コンテンツスキーマをリビジョン46へ進め、Cognis が PR #226 の壊れた同一バージョンスキーマ更新コマンドを通らず、整理済みスキーマを新規登録するようにしました。ホスト側の修正点も明記しました。このコマンドは構造化 DB ゲートウェイが要求する `set` ではなく `values` を渡しており、PostgreSQL で報告された `Object.entries(undefined)` エラーを発生させます。
 
 - [bb20511152a80522055af67e6895ff28e5d9b8c8](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/bb20511152a80522055af67e6895ff28e5d9b8c8)
+
+## 廃止された読みデータの完全削除
+
+切り離した互換データとして残していた48件の古い非表示読みレコードをすべて削除しました。パッケージには現在使用する正規グラフだけが含まれ、語彙レコード数は133件から85件になりました。漢字・語彙・原子的なかなへの直接ナビゲーションは維持されます。
+
+- [b5ae5ad6e5ec9acf67c7ebf22d2d984ff4bdbad4](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/b5ae5ad6e5ec9acf67c7ebf22d2d984ff4bdbad4)

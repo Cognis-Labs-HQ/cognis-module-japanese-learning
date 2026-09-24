@@ -325,3 +325,9 @@ Der vereinfachte Kartengraph wurde umgesetzt, ohne bereits in einer Installation
 Das japanische Inhaltsschema wurde auf Revision 46 angehoben, damit Cognis das bereinigte Schema einfügt, statt den fehlerhaften gleichversionierten Schema-Update-Befehl aus PR #226 auszuführen. Die Host-Nacharbeit ist genau dokumentiert: Der Befehl liefert `values`, obwohl das strukturierte Datenbank-Gateway `set` erwartet, wodurch unter PostgreSQL der gemeldete Fehler `Object.entries(undefined)` entsteht.
 
 - [bb20511152a80522055af67e6895ff28e5d9b8c8](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/bb20511152a80522055af67e6895ff28e5d9b8c8)
+
+## Ersetzte Lesungsdaten vollständig entfernt
+
+Alle 48 veralteten ausgeblendeten Lesungsdatensätze wurden entfernt, anstatt getrennte Kompatibilitätsdaten zu behalten. Das Paket enthält nun nur den aktiven kanonischen Graphen und reduziert den Vokabularbestand von 133 auf 85 Datensätze, während direkte Kanji-, lexikalische und atomare Kana-Navigation erhalten bleibt.
+
+- [b5ae5ad6e5ec9acf67c7ebf22d2d984ff4bdbad4](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/b5ae5ad6e5ec9acf67c7ebf22d2d984ff4bdbad4)
