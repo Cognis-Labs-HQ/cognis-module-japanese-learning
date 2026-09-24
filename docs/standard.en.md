@@ -169,3 +169,7 @@ Every hidden pronunciation record composes its complete title directly from orde
 ## Canonical Reading Graph
 
 Package only records that participate in the current authored graph. Remove superseded hidden readings rather than preserving detached compatibility records. Visible Kanji vocabulary must link directly to ordered atomic Kana, and a Kanji may target the matching visible lexical record.
+
+## Kanji-to-Kana Usage Dependencies
+
+Every Kanji must add one deduplicated `reading-kana-dependency` reference to each atomic Kana occurring anywhere in its authored pronunciation list. This relationship has no presentation or resolver role: it exists only to make inverse Used By navigation symmetric after a learner follows a lexical reading to atomic Kana. Keep the normal `readings` relationship as the pronunciation field's deep-link source.

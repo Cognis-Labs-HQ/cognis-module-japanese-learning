@@ -168,3 +168,7 @@ Hidden pronunciation records now compose their titles directly from atomic Kana 
 ## Canonical Card Graph
 
 The content pack now contains only the active canonical graph. Obsolete hidden reading wrappers have been removed completely; visible Kanji vocabulary terminates at its Kanji spelling and atomic Kana pronunciation, and matching Kanji readings open the visible lexical card.
+
+## Symmetric Kana Usage Navigation
+
+Kanji now publish non-presentational dependencies to every atomic Kana used by their authored readings. Following `日` → `か` → atomic `か` therefore preserves `日` in the Kana card's Used By section without adding another title detail or changing the lexical reading target.

@@ -443,6 +443,51 @@ test("single-Kanji lexical readings open the visible vocabulary", () => {
     );
 });
 
+test("Kanji reading dependencies are visible from every atomic Kana", () => {
+    const records = loadRecords();
+    const recordsById = new Map(records.map((record) => [record.id, record]));
+    const KanjiLayer = schema.layers.find(({ id }) => id === "alt-characters");
+    const dependency = KanjiLayer.relationships.find(
+        ({ id }) => id === "reading-kana-dependency",
+    );
+    assert.equal(dependency.targetLayer, "characters");
+    assert.equal(dependency.presentationRole, undefined);
+    assert.equal(dependency.resolverRole, undefined);
+
+    const inbound = new Map();
+    for (const Kanji of records.filter(
+        ({ layer }) => layer === "alt-characters",
+    )) {
+        const expectedIds = new Set(
+            Kanji.fields.pronunciation.flatMap((reading) =>
+                Array.from(
+                    reading,
+                    (label) =>
+                        records.find(
+                            ({ layer, label: candidate }) =>
+                                layer === "characters" && candidate === label,
+                        )?.id,
+                ),
+            ),
+        );
+        const dependencyIds = new Set(
+            Kanji.references
+                .filter(
+                    ({ relation }) => relation === "reading-kana-dependency",
+                )
+                .map(({ entryId }) => entryId),
+        );
+        assert.deepEqual(dependencyIds, expectedIds, `${Kanji.id} Kana links`);
+        for (const entryId of dependencyIds) {
+            assert.equal(recordsById.get(entryId).layer, "characters");
+            if (!inbound.has(entryId)) inbound.set(entryId, new Set());
+            inbound.get(entryId).add(Kanji.id);
+        }
+    }
+
+    assert.ok(inbound.get("ja:char:ka").has("ja:kanji:nichi"));
+});
+
 test("hidden readings do not show duplicate-labeled Used By entries", () => {
     const records = loadRecords();
     const inbound = new Map();

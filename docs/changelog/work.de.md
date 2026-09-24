@@ -331,3 +331,9 @@ Das japanische Inhaltsschema wurde auf Revision 46 angehoben, damit Cognis das b
 Alle 48 veralteten ausgeblendeten Lesungsdatensätze wurden entfernt, anstatt getrennte Kompatibilitätsdaten zu behalten. Das Paket enthält nun nur den aktiven kanonischen Graphen und reduziert den Vokabularbestand von 133 auf 85 Datensätze, während direkte Kanji-, lexikalische und atomare Kana-Navigation erhalten bleibt.
 
 - [b5ae5ad6e5ec9acf67c7ebf22d2d984ff4bdbad4](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/b5ae5ad6e5ec9acf67c7ebf22d2d984ff4bdbad4)
+
+## Symmetrische Kanji- und Kana-Verwendung
+
+Von jedem Kanji wurden nicht dargestellte Abhängigkeiten zu allen atomaren Kana seiner Lesungen ergänzt. Nach dem Pfad `日` über den lexikalischen Tageszähler `か` zum atomaren `か` führt die Kana-Karte nun `日` unter „Verwendet von“ auf; dieselbe Invariante gilt für den gesamten Kanji-Bestand.
+
+- [0fcae71e11836dbce3361184c378e46a2ee0d430](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/0fcae71e11836dbce3361184c378e46a2ee0d430)

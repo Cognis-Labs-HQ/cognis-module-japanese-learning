@@ -331,3 +331,9 @@ Advanced the Japanese content schema to revision 46 so Cognis inserts the saniti
 Removed all 48 obsolete hidden reading records instead of retaining detached compatibility data. The package now contains only the active canonical graph, reducing the Vocabulary inventory from 133 to 85 records while preserving direct Kanji, lexical, and atomic-Kana navigation.
 
 - [b5ae5ad6e5ec9acf67c7ebf22d2d984ff4bdbad4](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/b5ae5ad6e5ec9acf67c7ebf22d2d984ff4bdbad4)
+
+## Symmetric Kanji and Kana Usage
+
+Added non-presentational dependencies from every Kanji to every atomic Kana used by its readings. After following `日` through the lexical day-counter `か` to atomic `か`, the Kana card now lists `日` in Used By; the same invariant is enforced across the complete Kanji inventory.
+
+- [0fcae71e11836dbce3361184c378e46a2ee0d430](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/0fcae71e11836dbce3361184c378e46a2ee0d430)

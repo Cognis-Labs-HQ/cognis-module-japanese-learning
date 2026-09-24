@@ -169,3 +169,7 @@ Jeder ausgeblendete Aussprachedatensatz setzt seinen vollständigen Titel über 
 ## Kanonischer Lesungsgraph
 
 Es werden nur Datensätze paketiert, die am aktuellen deklarierten Graphen teilnehmen. Ersetzte ausgeblendete Lesungen werden entfernt, statt getrennte Kompatibilitätsdatensätze zu behalten. Sichtbares Kanji-Vokabular muss direkt auf geordnete atomare Kana verweisen; ein Kanji darf den passenden sichtbaren lexikalischen Datensatz referenzieren.
+
+## Kanji-zu-Kana-Verwendungsabhängigkeiten
+
+Jedes Kanji muss für jedes atomare Kana, das in seiner deklarierten Ausspracheliste vorkommt, genau eine deduplizierte `reading-kana-dependency`-Referenz hinzufügen. Diese Beziehung hat keine Darstellungs- oder Resolver-Rolle und dient ausschließlich dazu, die umgekehrte Verwendungsnavigation symmetrisch zu machen, nachdem Lernende einer lexikalischen Lesung zu atomaren Kana gefolgt sind. Die normale `readings`-Beziehung bleibt die Deep-Link-Quelle des Aussprachefelds.

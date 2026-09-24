@@ -168,3 +168,7 @@ Data pelafalan tersembunyi kini menyusun judulnya langsung dari Kana atomik mela
 ## Graf Kartu Kanonis
 
 Paket konten kini hanya memuat graf kanonis aktif. Pembungkus bacaan tersembunyi yang usang telah dihapus sepenuhnya; kosakata Kanji terlihat berakhir pada ejaan Kanji dan pelafalan Kana atomiknya, sedangkan bacaan Kanji yang cocok membuka kartu leksikal terlihat.
+
+## Navigasi Penggunaan Kana Simetris
+
+Kanji kini menerbitkan dependensi nonpresentasional ke setiap Kana atomik yang digunakan bacaan yang ditulis. Jalur `日` → `か` → `か` atomik karena itu mempertahankan `日` pada bagian Digunakan Oleh di kartu Kana tanpa menambahkan detail judul lain atau mengubah target bacaan leksikal.

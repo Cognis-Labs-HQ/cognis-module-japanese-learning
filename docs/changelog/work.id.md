@@ -331,3 +331,9 @@ Skema konten bahasa Jepang dinaikkan ke revisi 46 agar Cognis menyisipkan skema 
 Seluruh 48 data bacaan tersembunyi yang usang telah dihapus alih-alih mempertahankan data kompatibilitas yang dilepas. Paket kini hanya berisi graf kanonis aktif, mengurangi inventaris Kosakata dari 133 menjadi 85 data sambil mempertahankan navigasi langsung Kanji, leksikal, dan Kana atomik.
 
 - [b5ae5ad6e5ec9acf67c7ebf22d2d984ff4bdbad4](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/b5ae5ad6e5ec9acf67c7ebf22d2d984ff4bdbad4)
+
+## Penggunaan Kanji dan Kana Simetris
+
+Dependensi nonpresentasional ditambahkan dari setiap Kanji ke seluruh Kana atomik yang digunakan bacaannya. Setelah mengikuti `日` melalui penghitung hari leksikal `か` menuju `か` atomik, kartu Kana kini mencantumkan `日` pada Digunakan Oleh; invariant yang sama diberlakukan pada seluruh inventaris Kanji.
+
+- [0fcae71e11836dbce3361184c378e46a2ee0d430](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/0fcae71e11836dbce3361184c378e46a2ee0d430)

@@ -331,3 +331,9 @@ Study Library の有効化がデータベーストランザクション内で失
 切り離した互換データとして残していた48件の古い非表示読みレコードをすべて削除しました。パッケージには現在使用する正規グラフだけが含まれ、語彙レコード数は133件から85件になりました。漢字・語彙・原子的なかなへの直接ナビゲーションは維持されます。
 
 - [b5ae5ad6e5ec9acf67c7ebf22d2d984ff4bdbad4](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/b5ae5ad6e5ec9acf67c7ebf22d2d984ff4bdbad4)
+
+## 漢字とかなの対称的な使用関係
+
+各漢字から、その読みに使われるすべての原子的なかなへ、表示用ではない依存関係を追加しました。`日` から語彙的な日数助数詞 `か` を経て原子的な `か` へ移動した後も、かなカードの使用元に `日` が表示されます。同じ不変条件をすべての漢字に適用しています。
+
+- [0fcae71e11836dbce3361184c378e46a2ee0d430](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/0fcae71e11836dbce3361184c378e46a2ee0d430)

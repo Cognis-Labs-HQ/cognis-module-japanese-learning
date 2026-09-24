@@ -168,3 +168,7 @@ Ausgeblendete Aussprachedatensätze setzen ihre Titel jetzt über die reine Komp
 ## Kanonischer Kartengraph
 
 Das Inhaltspaket enthält nur noch den aktiven kanonischen Graphen. Veraltete ausgeblendete Lesungshüllen wurden vollständig entfernt; sichtbares Kanji-Vokabular endet bei seiner Kanji-Schreibweise und atomaren Kana-Aussprache, und passende Kanji-Lesungen öffnen die sichtbare lexikalische Karte.
+
+## Symmetrische Kana-Verwendungsnavigation
+
+Kanji veröffentlichen nun nicht dargestellte Abhängigkeiten zu jedem atomaren Kana ihrer deklarierten Lesungen. Der Pfad `日` → `か` → atomares `か` behält daher `日` im Abschnitt „Verwendet von“ der Kana-Karte, ohne ein weiteres Titeldetail hinzuzufügen oder das lexikalische Lesungsziel zu ändern.

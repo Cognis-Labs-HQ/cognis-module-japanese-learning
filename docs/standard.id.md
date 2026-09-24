@@ -169,3 +169,7 @@ Setiap data pelafalan tersembunyi menyusun judul lengkapnya langsung dari Kana a
 ## Graf Bacaan Kanonis
 
 Paket hanya memuat data yang berpartisipasi dalam graf aktif. Hapus bacaan tersembunyi yang digantikan alih-alih mempertahankan data kompatibilitas yang dilepas. Kosakata Kanji terlihat harus menaut langsung ke Kana atomik terurut, dan Kanji dapat menargetkan data leksikal terlihat yang cocok.
+
+## Dependensi Penggunaan Kanji-ke-Kana
+
+Setiap Kanji harus menambahkan satu referensi `reading-kana-dependency` yang terdeduplikasi untuk setiap Kana atomik yang muncul dalam daftar pelafalannya. Relasi ini tidak memiliki peran presentasi atau resolver; relasi hanya membuat navigasi Digunakan Oleh terbalik tetap simetris setelah pelajar mengikuti bacaan leksikal menuju Kana atomik. Relasi `readings` biasa tetap menjadi sumber tautan dalam bidang pelafalan.
