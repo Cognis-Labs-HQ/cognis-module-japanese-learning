@@ -313,3 +313,9 @@ Dua berkas JSON Kosakata kosong yang tersisa setelah normalisasi bacaan telah di
 Perombakan luas graf leksikal yang menyebabkan pengaktifan Study Library gagal di dalam transaksi basis data telah dibatalkan. Paket kembali memakai struktur bacaan berlapis yang sebelumnya dapat diimpor sambil mempertahankan koreksi komposisi `reading-kana` yang didukung, serta menggunakan revisi konten baru agar host mencoba pengimporan kembali.
 
 - [3ab7d2577f18d204465863ce3c820b8fe153d8be](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/3ab7d2577f18d204465863ce3c820b8fe153d8be)
+
+## Migrasi Kartu Kanonis Bertahap
+
+Graf kartu yang disederhanakan diterapkan tanpa menghapus data penyedia yang mungkin sudah ada dalam instalasi. Kartu Kanji dan Kosakata aktif kini menaut langsung ke endpoint leksikal, Kanji, dan Kana yang tepat; bacaan tersembunyi yang digantikan dilepas tetapi dipertahankan untuk pembaruan basis data yang aman. Kartu khusus bacaan tidak lagi mengaku sebagai kelas Kanji dan kartu Kana tidak lagi mengulang tag sistem tulisannya.
+
+- [997392f71fd178e43599bc8d27be786839b98b8b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/997392f71fd178e43599bc8d27be786839b98b8b)

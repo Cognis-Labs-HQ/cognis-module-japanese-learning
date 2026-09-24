@@ -313,3 +313,9 @@ Zwei nach der Normalisierung der Lesungen verbliebene leere Vokabular-JSON-Datei
 Die umfassende Umgestaltung des lexikalischen Graphen, die bei der Study-Library-Aktivierung innerhalb der Datenbanktransaktion fehlschlug, wurde zurückgenommen. Das Paket verwendet wieder die zuvor importierbare geschichtete Lesungsstruktur, behält aber die unterstützte `reading-kana`-Kompositionskorrektur bei und erhält eine neue Inhaltsrevision, damit der Host den Import erneut ausführt.
 
 - [3ab7d2577f18d204465863ce3c820b8fe153d8be](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/3ab7d2577f18d204465863ce3c820b8fe153d8be)
+
+## Inkrementelle Migration zum kanonischen Kartengraphen
+
+Der vereinfachte Kartengraph wurde umgesetzt, ohne bereits in einer Installation vorhandene Provider-Datensätze zu löschen. Aktuelle Kanji- und Vokabularkarten verweisen direkt auf die vorgesehenen lexikalischen, Kanji- und Kana-Endpunkte; ersetzte ausgeblendete Lesungen sind getrennt, bleiben aber für sichere Datenbankaktualisierungen erhalten. Reine Lesungskarten tragen nicht mehr die Kanji-Klasse und Kana-Karten wiederholen ihr Schriftsystem-Tag nicht mehr.
+
+- [997392f71fd178e43599bc8d27be786839b98b8b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/997392f71fd178e43599bc8d27be786839b98b8b)

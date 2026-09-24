@@ -313,3 +313,9 @@ Removed two empty Vocabulary JSON shards left after reading normalization. Every
 Reverted the broad lexical graph rewrite that caused Study Library activation to fail inside its database transaction. The pack again uses the previously ingestible layered reading structure while retaining the supported `reading-kana` composition correction, and advances to a fresh content revision so the host retries ingestion.
 
 - [3ab7d2577f18d204465863ce3c820b8fe153d8be](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/3ab7d2577f18d204465863ce3c820b8fe153d8be)
+
+## Incremental Canonical Card Migration
+
+Applied the simplified card graph without deleting provider records that may already exist in an installation. Current Kanji and Vocabulary cards link directly to the intended lexical, Kanji, and Kana endpoints; superseded hidden readings are detached but retained for safe database updates. Reading-only cards no longer claim the Kanji class, and Kana cards no longer repeat their writing-system tag.
+
+- [997392f71fd178e43599bc8d27be786839b98b8b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/997392f71fd178e43599bc8d27be786839b98b8b)

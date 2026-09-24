@@ -165,3 +165,7 @@ Tautan pembelajaran yang ditulis membentuk graf berarah tanpa siklus, dan karakt
 ## Komposisi Kana Langsung untuk Judul Bacaan
 
 Setiap data pelafalan tersembunyi menyusun judul lengkapnya langsung dari Kana atomik yang terurut melalui relasi khusus komposisi `reading-kana`. Untuk data bacaan, relasi ini memiliki peran presentasi `composition`: jangan arahkan judul bacaan melalui `word-spelling` atau relasi ejaan alternatif, karena hal itu menghasilkan navigasi kartu yang rekursif atau menyesatkan.
+
+## Migrasi Graf Bacaan Bertahap
+
+Jangan menghapus data bacaan penyedia pada rilis yang sama ketika jalur masuknya diganti. Pertahankan data yang digantikan sebagai tersembunyi beserta definisi semantiknya, hapus referensi strukturalnya, dan pastikan tidak ada data aktif yang menargetkannya. Dengan demikian, impor berulang dapat memperbarui baris basis data yang ada tanpa memaksa host merekonsiliasi data penyedia yang hilang. Kosakata Kanji terlihat saat ini harus menaut langsung ke Kana atomik terurut, dan Kanji dapat menargetkan data leksikal terlihat yang cocok.

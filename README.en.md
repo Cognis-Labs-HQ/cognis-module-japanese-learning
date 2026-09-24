@@ -164,3 +164,7 @@ Every sentence pronunciation now opens a hidden complete-reading record whose se
 ## Direct Kana Reading Titles
 
 Hidden pronunciation records now compose their titles directly from atomic Kana through the composition-only `reading-kana` relationship. Opening a Kanji pronunciation therefore leads to individually linked Kana instead of routing back through another reading or Kanji card, and the title no longer presents an alternate-spelling detail.
+
+## Incremental Canonical Card Graph
+
+Visible Kanji vocabulary now ends at its Kanji spelling and atomic Kana pronunciation, and a matching Kanji reading opens that visible lexical card. Superseded hidden reading records remain packaged but detached so an existing installation can update them safely without duplicate Used By matches. Kana and reading cards use generic Kana and pronunciation classes rather than misleading duplicate or Kanji badges.

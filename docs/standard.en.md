@@ -165,3 +165,7 @@ Authored study links form a directed acyclic graph and Kana characters terminate
 ## Direct Kana Composition for Reading Titles
 
 Every hidden pronunciation record composes its complete title directly from ordered atomic Kana through `reading-kana`. For reading records, this relationship uses the dedicated `composition` presentation role: do not route a reading title through `word-spelling` or the alternate-spelling relationship, because doing so creates recursive or misleading card navigation.
+
+## Incremental Reading-Graph Migration
+
+Do not remove a provider reading record in the same release that replaces its inbound path. Keep the superseded record hidden, preserve its semantic definition, remove its structural references, and ensure no current record targets it. This lets repeated imports update existing database rows without forcing the host to reconcile a missing provider record. Current visible Kanji vocabulary must link directly to ordered atomic Kana, and a Kanji may target the matching visible lexical record.
