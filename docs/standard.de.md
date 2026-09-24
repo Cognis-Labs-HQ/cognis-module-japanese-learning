@@ -173,3 +173,7 @@ Es werden nur Datensätze paketiert, die am aktuellen deklarierten Graphen teiln
 ## Kanji-zu-Kana-Verwendungsabhängigkeiten
 
 Jedes Kanji muss für jedes atomare Kana, das in seiner deklarierten Ausspracheliste vorkommt, genau eine deduplizierte `reading-kana-dependency`-Referenz hinzufügen. Diese Beziehung hat keine Darstellungs- oder Resolver-Rolle und dient ausschließlich dazu, die umgekehrte Verwendungsnavigation symmetrisch zu machen, nachdem Lernende einer lexikalischen Lesung zu atomaren Kana gefolgt sind. Die normale `readings`-Beziehung bleibt die Deep-Link-Quelle des Aussprachefelds.
+
+## Logische Ausspracheabschnitte für Sätze
+
+Eine ausgeblendete vollständige Satzaussprache muss sich in Satzreihenfolge aus genau einem kanonischen ausgeblendeten Ausspracheabschnitt je sichtbarem Wort über `word-spelling` und aus vollständigen Partikeldatensätzen über `reading-particles` zusammensetzen. Jeder Wortabschnitt rekonstruiert sich über geordnete `reading-kana`. Eine Satzaussprache darf nicht in einzelne Kana abgeflacht werden, wenn geprüfte Wort- oder Partikelgrenzen vorhanden sind.

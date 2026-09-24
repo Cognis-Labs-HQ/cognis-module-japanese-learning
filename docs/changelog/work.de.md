@@ -337,3 +337,9 @@ Alle 48 veralteten ausgeblendeten Lesungsdatensätze wurden entfernt, anstatt ge
 Von jedem Kanji wurden nicht dargestellte Abhängigkeiten zu allen atomaren Kana seiner Lesungen ergänzt. Nach dem Pfad `日` über den lexikalischen Tageszähler `か` zum atomaren `か` führt die Kana-Karte nun `日` unter „Verwendet von“ auf; dieselbe Invariante gilt für den gesamten Kanji-Bestand.
 
 - [0fcae71e11836dbce3361184c378e46a2ee0d430](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/0fcae71e11836dbce3361184c378e46a2ee0d430)
+
+## Logische Verknüpfungen zusammengesetzter Aussprachen
+
+Die zeichenweisen Satztitel-Links wurden durch geprüfte lexikalische und Partikelabschnitte ersetzt. Vollständige Aussprachen verwenden nun kanonische ausgeblendete Wortlesungsabschnitte und ganze Partikeln; `ちいさいねこがすき` verknüpft beispielsweise `ちいさい`・`ねこ`・`が`・`すき`, wobei sich jedes Wort anschließend in atomare Kana auflöst.
+
+- [973980b8e821218608836970f51a0eefc75bfb11](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/973980b8e821218608836970f51a0eefc75bfb11)

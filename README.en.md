@@ -172,3 +172,7 @@ The content pack now contains only the active canonical graph. Obsolete hidden r
 ## Symmetric Kana Usage Navigation
 
 Kanji now publish non-presentational dependencies to every atomic Kana used by their authored readings. Following `日` → `か` → atomic `か` therefore preserves `日` in the Kana card's Used By section without adding another title detail or changing the lexical reading target.
+
+## Logical Sentence Pronunciation Segments
+
+Complete sentence-pronunciation cards now link whole lexical readings and whole particles instead of splitting every title into unrelated Kana. For example, `ちいさいねこがすき` is authored as `ちいさい`・`ねこ`・`が`・`すき`; each lexical segment then resolves independently to its ordered atomic Kana.

@@ -124,21 +124,26 @@ function validateLayerLinks(records) {
                 record.references.every(
                     ({ relation }) => relation === "definitions",
                 );
+            const sentenceReading = record.id.startsWith(
+                "ja:word:sentence-reading-",
+            );
             if (!detached) {
                 assertOrderedComposition(
                     record,
-                    new Set([
-                        hasKanji || record.hidden
-                            ? "reading-kana"
-                            : "kana-spelling",
-                    ]),
+                    sentenceReading
+                        ? new Set(["word-spelling", "reading-particles"])
+                        : new Set([
+                              hasKanji || record.hidden
+                                  ? "reading-kana"
+                                  : "kana-spelling",
+                          ]),
                     record.fields.pronunciation[0],
                     recordsById,
                 );
             }
             if (hasKanji) {
                 assertOrderedWrittenLinks(record, recordsById);
-            } else if (!detached) {
+            } else if (!detached && !sentenceReading) {
                 assertOrderedComposition(
                     record,
                     new Set(["word-spelling", "reading-kana", "kana-spelling"]),
@@ -223,7 +228,7 @@ test("reviewed graph inventory remains bounded to the core curriculum", () => {
         characters: 270,
         "alt-characters": 39,
         definitions: 115,
-        words: 85,
+        words: 107,
         particles: 11,
         sentences: 17,
     });
@@ -284,7 +289,7 @@ test("sentence pronunciations resolve through vocabulary and atomic Kana", () =>
         const reading = recordsById.get(readingReference.entryId);
         const composition = orderedReferences(
             reading,
-            new Set(["reading-kana"]),
+            new Set(["word-spelling", "reading-particles"]),
         );
         assert.equal(reading.hidden, true);
         assert.equal(reading.label, sentence.fields.pronunciation[0]);
@@ -295,13 +300,20 @@ test("sentence pronunciations resolve through vocabulary and atomic Kana", () =>
             reading.label,
             `${sentence.id} has unlinked pronunciation text`,
         );
-        assert.ok(
-            composition.every(({ entryId, relation }) => {
-                const target = recordsById.get(entryId);
-                return (
-                    relation === "reading-kana" && target.layer === "characters"
-                );
-            }),
+        assert.deepEqual(
+            composition.map(({ entryId, relation }) => ({
+                label: recordsById.get(entryId).label,
+                relation,
+            })),
+            orderedReferences(sentence, new Set(["words", "particles"])).map(
+                ({ entryId, relation }) => ({
+                    label: recordsById.get(entryId).fields.pronunciation[0],
+                    relation:
+                        relation === "words"
+                            ? "word-spelling"
+                            : "reading-particles",
+                }),
+            ),
         );
     }
 });
@@ -341,25 +353,47 @@ test("visible core vocabulary terminates at Kanji and Kana", () => {
     }
 });
 
-test("hidden readings compose directly from atomic Kana", () => {
+test("sentence readings compose from logical word and particle segments", () => {
     const records = loadRecords();
     const recordsById = new Map(records.map((record) => [record.id, record]));
     const reading = recordsById.get("ja:word:sentence-reading-inu-mo-kuru");
     const composition = orderedReferences(
         reading,
-        new Set(["reading-kana"]),
+        new Set(["word-spelling", "reading-particles"]),
     ).map(({ entryId, relation }) => ({
         label: recordsById.get(entryId).label,
         relation,
     }));
 
     assert.deepEqual(composition, [
-        { label: "い", relation: "reading-kana" },
-        { label: "ぬ", relation: "reading-kana" },
-        { label: "も", relation: "reading-kana" },
-        { label: "く", relation: "reading-kana" },
-        { label: "る", relation: "reading-kana" },
+        { label: "いぬ", relation: "word-spelling" },
+        { label: "も", relation: "reading-particles" },
+        { label: "くる", relation: "word-spelling" },
     ]);
+});
+
+test("small-cat sentence uses reviewed lexical segments", () => {
+    const recordsById = new Map(
+        loadRecords().map((record) => [record.id, record]),
+    );
+    const reading = recordsById.get(
+        "ja:word:sentence-reading-chiisai-neko-suki",
+    );
+    assert.deepEqual(
+        orderedReferences(
+            reading,
+            new Set(["word-spelling", "reading-particles"]),
+        ).map(({ entryId, relation }) => ({
+            label: recordsById.get(entryId).label,
+            relation,
+        })),
+        [
+            { label: "ちいさい", relation: "word-spelling" },
+            { label: "ねこ", relation: "word-spelling" },
+            { label: "が", relation: "reading-particles" },
+            { label: "すき", relation: "word-spelling" },
+        ],
+    );
 });
 
 test("reading titles use atomic Kana without recursive word links", () => {
@@ -520,6 +554,7 @@ test("authored study links are acyclic and terminate at writing characters", () 
         "kana-spelling",
         "pronunciation-readings",
         "reading-kana",
+        "reading-particles",
         "spelling",
         "word-spelling",
         "words",

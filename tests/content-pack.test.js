@@ -736,6 +736,7 @@ test("definitions stay semantic while resolvers describe compositions", () => {
         new Set([
             "readings:words",
             "pronunciation-readings:words",
+            "reading-particles:particles",
             "reading-kana:characters",
             "word-spelling:words",
             "spelling:alt-characters",
@@ -755,6 +756,7 @@ test("definitions stay semantic while resolvers describe compositions", () => {
             ["readings", "pronunciation"],
             ["pronunciation-readings", "pronunciation"],
             ["reading-kana", "composition"],
+            ["reading-particles", "composition"],
             ["word-spelling", "composition"],
             ["spelling", "composition"],
             ["kana-spelling", "alternateSpelling"],

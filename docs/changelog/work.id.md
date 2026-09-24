@@ -337,3 +337,9 @@ Seluruh 48 data bacaan tersembunyi yang usang telah dihapus alih-alih mempertaha
 Dependensi nonpresentasional ditambahkan dari setiap Kanji ke seluruh Kana atomik yang digunakan bacaannya. Setelah mengikuti `日` melalui penghitung hari leksikal `か` menuju `か` atomik, kartu Kana kini mencantumkan `日` pada Digunakan Oleh; invariant yang sama diberlakukan pada seluruh inventaris Kanji.
 
 - [0fcae71e11836dbce3361184c378e46a2ee0d430](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/0fcae71e11836dbce3361184c378e46a2ee0d430)
+
+## Tautan Pelafalan Komposit yang Logis
+
+Tautan judul kalimat per karakter diganti dengan segmen leksikal dan partikel yang telah ditinjau. Pelafalan lengkap kini memakai kembali segmen bacaan kata tersembunyi kanonis dan partikel utuh; misalnya, `ちいさいねこがすき` tertaut sebagai `ちいさい`・`ねこ`・`が`・`すき`, lalu setiap kata diselesaikan ke Kana atomik.
+
+- [973980b8e821218608836970f51a0eefc75bfb11](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/973980b8e821218608836970f51a0eefc75bfb11)

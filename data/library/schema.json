@@ -1,6 +1,6 @@
 {
     "id": "japanese-core",
-    "version": 47,
+    "version": 48,
     "namespace": "ja",
     "language": "ja",
     "metadata": {
@@ -659,6 +659,22 @@
                         }
                     },
                     "minimum": 0,
+                    "ordered": true,
+                    "onDelete": "restrict",
+                    "resolverRole": "explicit",
+                    "presentationRole": "composition"
+                },
+                {
+                    "id": "reading-particles",
+                    "targetLayer": "particles",
+                    "metadata": {
+                        "labels": {
+                            "de": "Aussprachepartikeln",
+                            "en": "Pronunciation Particles",
+                            "id": "Partikel Pelafalan",
+                            "ja": "発音の助詞"
+                        }
+                    },
                     "ordered": true,
                     "onDelete": "restrict",
                     "resolverRole": "explicit",

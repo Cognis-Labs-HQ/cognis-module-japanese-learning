@@ -337,3 +337,9 @@ Removed all 48 obsolete hidden reading records instead of retaining detached com
 Added non-presentational dependencies from every Kanji to every atomic Kana used by its readings. After following `日` through the lexical day-counter `か` to atomic `か`, the Kana card now lists `日` in Used By; the same invariant is enforced across the complete Kanji inventory.
 
 - [0fcae71e11836dbce3361184c378e46a2ee0d430](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/0fcae71e11836dbce3361184c378e46a2ee0d430)
+
+## Logical Composite Pronunciation Links
+
+Replaced character-by-character sentence title links with reviewed lexical and particle segments. Complete pronunciations now reuse canonical hidden word-reading segments and whole particles; for example, `ちいさいねこがすき` links as `ちいさい`・`ねこ`・`が`・`すき`, with each word resolving onward to atomic Kana.
+
+- [973980b8e821218608836970f51a0eefc75bfb11](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/973980b8e821218608836970f51a0eefc75bfb11)

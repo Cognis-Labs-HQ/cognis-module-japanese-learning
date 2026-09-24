@@ -173,3 +173,7 @@ Paket hanya memuat data yang berpartisipasi dalam graf aktif. Hapus bacaan terse
 ## Dependensi Penggunaan Kanji-ke-Kana
 
 Setiap Kanji harus menambahkan satu referensi `reading-kana-dependency` yang terdeduplikasi untuk setiap Kana atomik yang muncul dalam daftar pelafalannya. Relasi ini tidak memiliki peran presentasi atau resolver; relasi hanya membuat navigasi Digunakan Oleh terbalik tetap simetris setelah pelajar mengikuti bacaan leksikal menuju Kana atomik. Relasi `readings` biasa tetap menjadi sumber tautan dalam bidang pelafalan.
+
+## Segmen Pelafalan Kalimat yang Logis
+
+Pelafalan kalimat lengkap tersembunyi harus disusun sesuai urutan kalimat dari satu segmen pelafalan tersembunyi kanonis per kata terlihat melalui `word-spelling`, ditambah data partikel utuh melalui `reading-particles`. Setiap segmen kata merekonstruksi dirinya melalui `reading-kana` terurut. Jangan meratakan pelafalan kalimat menjadi Kana individual jika batas leksikal atau partikel yang telah ditinjau tersedia.

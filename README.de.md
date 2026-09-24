@@ -172,3 +172,7 @@ Das Inhaltspaket enthält nur noch den aktiven kanonischen Graphen. Veraltete au
 ## Symmetrische Kana-Verwendungsnavigation
 
 Kanji veröffentlichen nun nicht dargestellte Abhängigkeiten zu jedem atomaren Kana ihrer deklarierten Lesungen. Der Pfad `日` → `か` → atomares `か` behält daher `日` im Abschnitt „Verwendet von“ der Kana-Karte, ohne ein weiteres Titeldetail hinzuzufügen oder das lexikalische Lesungsziel zu ändern.
+
+## Logische Ausspracheabschnitte für Sätze
+
+Vollständige Satz-Aussprachekarten verknüpfen nun ganze lexikalische Lesungen und ganze Partikeln, statt jeden Titel in unzusammenhängende Kana zu zerlegen. `ちいさいねこがすき` ist beispielsweise als `ちいさい`・`ねこ`・`が`・`すき` deklariert; jeder lexikalische Abschnitt löst sich anschließend eigenständig in seine geordneten atomaren Kana auf.
