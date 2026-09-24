@@ -307,3 +307,9 @@ Pembungkus Kosakata pelafalan yang berlebihan telah dihapus. Kosakata Kanji terl
 Dua berkas JSON Kosakata kosong yang tersisa setelah normalisasi bacaan telah dihapus. Setiap berkas konten yang ditemukan kini berisi sedikitnya satu data sehingga pengimpor Study Library tidak mencoba memeriksa data yang tidak terdefinisi saat modul diaktifkan.
 
 - [423a3250facb90f3435fc28faee469aa63bacceb](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/423a3250facb90f3435fc28faee469aa63bacceb)
+
+## Graf Bacaan yang Dapat Diimpor Dipulihkan
+
+Perombakan luas graf leksikal yang menyebabkan pengaktifan Study Library gagal di dalam transaksi basis data telah dibatalkan. Paket kembali memakai struktur bacaan berlapis yang sebelumnya dapat diimpor sambil mempertahankan koreksi komposisi `reading-kana` yang didukung, serta menggunakan revisi konten baru agar host mencoba pengimporan kembali.
+
+- [3ab7d2577f18d204465863ce3c820b8fe153d8be](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/3ab7d2577f18d204465863ce3c820b8fe153d8be)

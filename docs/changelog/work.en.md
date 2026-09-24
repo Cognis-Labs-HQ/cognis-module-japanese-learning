@@ -307,3 +307,9 @@ Removed redundant pronunciation Vocabulary wrappers. Visible Kanji vocabulary no
 Removed two empty Vocabulary JSON shards left after reading normalization. Every discovered content file now contains at least one record, preventing the Study Library importer from attempting to inspect an undefined record during module activation.
 
 - [423a3250facb90f3435fc28faee469aa63bacceb](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/423a3250facb90f3435fc28faee469aa63bacceb)
+
+## Restored Ingestible Reading Graph
+
+Reverted the broad lexical graph rewrite that caused Study Library activation to fail inside its database transaction. The pack again uses the previously ingestible layered reading structure while retaining the supported `reading-kana` composition correction, and advances to a fresh content revision so the host retries ingestion.
+
+- [3ab7d2577f18d204465863ce3c820b8fe153d8be](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/3ab7d2577f18d204465863ce3c820b8fe153d8be)

@@ -165,7 +165,3 @@ Verfasste Lernverknüpfungen bilden einen gerichteten azyklischen Graphen, und K
 ## Direkte Kana-Zusammensetzung für Lesungstitel
 
 Jeder ausgeblendete Aussprachedatensatz setzt seinen vollständigen Titel über die reine Kompositionsbeziehung `reading-kana` direkt aus geordneten atomaren Kana zusammen. Für Lesungsdatensätze hat diese Beziehung die Darstellungsrolle `composition`: Ein Lesungstitel darf nicht über `word-spelling` oder die Beziehung für alternative Schreibweisen geführt werden, da dies eine rekursive oder irreführende Kartennavigation erzeugt.
-
-## Kanonische Ziele lexikalischer Lesungen
-
-Sichtbares Kanji-Vokabular muss seinen Aussprachepfad über `reading-kana` bei geordneten atomaren Kana beenden und darf keinen zusätzlichen Aussprache-Lesungsdatensatz im Vokabular einfügen. Wenn eine Kanji-Aussprache selbst ein sichtbarer lexikalischer Eintrag ist, verweist die Kanji-Beziehung `readings` direkt auf diesen Eintrag (zum Beispiel verweist `猫` auf das Substantiv `猫`, dessen Aussprache mit `ね` und `こ` verknüpft ist). Ausgeblendete Lesungsdatensätze sind Lesungen ohne geeignetes sichtbares lexikalisches Ziel vorbehalten und verwenden `class: "reading:pronunciation"`, niemals `reading:kanji`. Atomare Kana verwenden `class: "writing:kana"`; das separate Schriftsystemfeld liefert das einzige Hiragana- oder Katakana-Abzeichen.

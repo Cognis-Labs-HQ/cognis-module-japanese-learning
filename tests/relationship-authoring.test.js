@@ -65,7 +65,10 @@ test("vocabulary compositions use the closest structural records", () => {
     const pronunciation = wordLayer.fields.find(
         ({ id }) => id === "pronunciation",
     );
-    assert.equal(pronunciation.input.linkRelationship, "reading-kana");
+    assert.equal(
+        pronunciation.input.linkRelationship,
+        "pronunciation-readings",
+    );
     const nihon = recordsById.get("ja:word:nihon");
     const nihongo = recordsById.get("ja:word:nihongo");
     assert.equal(labelsFor(nihon, ["word-spelling", "spelling"]), "日本");
@@ -78,13 +81,17 @@ test("vocabulary compositions use the closest structural records", () => {
             .map(({ entryId }) => entryId),
         ["ja:word:nihon", "ja:kanji:go"],
     );
-    assert.equal(labelsFor(nihon, ["reading-kana"]), "にほん");
-    assert.equal(labelsFor(nihongo, ["reading-kana"]), "にほんご");
+    assert.equal(labelsFor(nihon, ["pronunciation-readings"]), "にほん");
+    assert.equal(labelsFor(nihongo, ["pronunciation-readings"]), "にほんご");
+    assert.deepEqual(
+        nihongo.references
+            .filter(({ relation }) => relation === "pronunciation-readings")
+            .map(({ entryId }) => entryId),
+        ["ja:word:reading-nihon", "ja:word:reading-go"],
+    );
     assert.equal(
-        nihongo.references.some(({ entryId }) =>
-            recordsById.get(entryId)?.class.startsWith("reading:"),
-        ),
-        false,
+        labelsFor(recordsById.get("ja:word:reading-nihon"), ["reading-kana"]),
+        "にほん",
     );
 });
 
@@ -122,14 +129,11 @@ test("Kanji readings and particles resolve through authored Kana links", () => {
     assert.equal(pronunciation.input.linkRelationship, "readings");
 
     for (const entry of kanji) {
-        const readingTargets = entry.references
+        const readingLabels = entry.references
             .filter(({ relation }) => relation === "readings")
             .sort((left, right) => left.position - right.position)
-            .map(({ entryId }) => recordsById.get(entryId));
-        assert.deepEqual(
-            readingTargets.map(({ fields }) => fields.pronunciation[0]),
-            entry.fields.pronunciation,
-        );
+            .map(({ entryId }) => recordsById.get(entryId).label);
+        assert.deepEqual(readingLabels, entry.fields.pronunciation);
         for (const reference of entry.references.filter(
             ({ relation }) => relation === "readings",
         )) {
@@ -142,13 +146,9 @@ test("Kanji readings and particles resolve through authored Kana links", () => {
             }
             assert.equal(
                 labelsFor(reading, [
-                    reading.references.some(
-                        ({ relation }) => relation === "reading-kana",
-                    )
-                        ? "reading-kana"
-                        : "kana-spelling",
+                    reading.hidden ? "reading-kana" : "kana-spelling",
                 ]),
-                reading.fields.pronunciation[0],
+                reading.label,
             );
         }
     }

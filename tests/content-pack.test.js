@@ -417,7 +417,7 @@ test("kanji readings reference distinct kana-backed vocabulary entries", () => {
             .sort((left, right) => left.position - right.position)
             .map(({ entryId }) => words.get(entryId));
         assert.deepEqual(
-            readingWords.map(({ fields }) => fields.pronunciation[0]),
+            readingWords.map(({ label }) => label),
             kanji.fields.pronunciation,
         );
         assert.ok(
@@ -428,9 +428,7 @@ test("kanji readings reference distinct kana-backed vocabulary entries", () => {
             ),
         );
         for (const readingWord of readingWords) {
-            const compositionRelation = readingWord.references.some(
-                ({ relation }) => relation === "reading-kana",
-            )
+            const compositionRelation = readingWord.hidden
                 ? "reading-kana"
                 : "kana-spelling";
             const spelling = readingWord.references
@@ -439,7 +437,7 @@ test("kanji readings reference distinct kana-backed vocabulary entries", () => {
                 .map(({ entryId }) => characters.get(entryId));
             assert.equal(
                 spelling.map(({ label }) => label).join(""),
-                readingWord.fields.pronunciation[0],
+                readingWord.label,
             );
             assert.ok(
                 spelling.every(
@@ -708,11 +706,14 @@ test("every vocabulary entry participates in the Kana deletion dependency graph"
     assert.ok(vocabulary.every((entry) => dependsOnKana(entry)));
 
     const suki = recordsById.get("ja:word:suki");
-    const sukiKana = suki.references
-        .filter(({ relation }) => relation === "reading-kana")
-        .map(({ entryId }) => recordsById.get(entryId).label)
-        .join("");
-    assert.equal(sukiKana, "すき");
+    const sukiReading = recordsById.get(
+        suki.references.find(
+            ({ relation }) => relation === "pronunciation-readings",
+        ).entryId,
+    );
+    assert.equal(sukiReading.hidden, true);
+    assert.equal(sukiReading.label, "すき");
+    assert.ok(dependsOnKana(sukiReading));
 });
 
 test("lexical and sentence pronunciation use the Library placement field", () => {

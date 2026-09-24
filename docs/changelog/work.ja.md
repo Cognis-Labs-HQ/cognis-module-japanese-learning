@@ -307,3 +307,9 @@ Cognis PR #214 に合わせ、名前空間の所有権、ローカライズ済�
 読みの正規化後に残っていた空の語彙 JSON ファイルを2件削除しました。検出されるすべてのコンテンツファイルに1件以上のレコードが含まれるようになり、モジュール有効化時に Study Library インポーターが未定義レコードを調べることを防ぎます。
 
 - [423a3250facb90f3435fc28faee469aa63bacceb](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/423a3250facb90f3435fc28faee469aa63bacceb)
+
+## 取り込み可能な読みグラフの復元
+
+Study Library の有効化がデータベーストランザクション内で失敗する原因となった広範な語彙グラフ変更を取り消しました。サポートされる `reading-kana` 構成修正は維持しつつ、以前に取り込み可能だった階層型の読み構造へ戻し、ホストが取り込みを再試行するよう新しいコンテンツリビジョンへ進めました。
+
+- [3ab7d2577f18d204465863ce3c820b8fe153d8be](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/3ab7d2577f18d204465863ce3c820b8fe153d8be)

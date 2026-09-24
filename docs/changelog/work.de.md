@@ -307,3 +307,9 @@ Redundante Aussprache-Vokabularhüllen wurden entfernt. Sichtbares Kanji-Vokabul
 Zwei nach der Normalisierung der Lesungen verbliebene leere Vokabular-JSON-Dateien wurden entfernt. Jede erkannte Inhaltsdatei enthält nun mindestens einen Datensatz, sodass der Study-Library-Importer bei der Modulaktivierung keinen undefinierten Datensatz mehr untersucht.
 
 - [423a3250facb90f3435fc28faee469aa63bacceb](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/423a3250facb90f3435fc28faee469aa63bacceb)
+
+## Wiederhergestellter importierbarer Lesungsgraph
+
+Die umfassende Umgestaltung des lexikalischen Graphen, die bei der Study-Library-Aktivierung innerhalb der Datenbanktransaktion fehlschlug, wurde zurückgenommen. Das Paket verwendet wieder die zuvor importierbare geschichtete Lesungsstruktur, behält aber die unterstützte `reading-kana`-Kompositionskorrektur bei und erhält eine neue Inhaltsrevision, damit der Host den Import erneut ausführt.
+
+- [3ab7d2577f18d204465863ce3c820b8fe153d8be](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/3ab7d2577f18d204465863ce3c820b8fe153d8be)
