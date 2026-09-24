@@ -379,3 +379,9 @@ Kartu Kana dan Kanji diselaraskan dengan kontrak menggambar terbaru Cognis PR #2
 Setiap lapisan yang memiliki pelafalan kini menerbitkan larik `input.linkRelationships` terkini yang digunakan Cognis PR #226. Kosakata seperti `猫` mengekspos target `pronunciation-readings` melalui kontrak tersebut sehingga `ねこ` yang ditampilkan membuka entri pelafalan yang dibuat; bacaan Kanji dan tautan Kana partikel memakai bentuk metadata terkini yang sama.
 
 - [046b335](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/046b335)
+
+## Tautan Pelafalan Hanya dengan Kontrak Terkini
+
+Metadata tunggal `linkRelationship` yang usang dihapus alih-alih mempertahankan jalur kompatibilitas dalam skema konten beta. Bidang pelafalan kini hanya menerbitkan larik `linkRelationships` terkini yang digunakan Cognis, dan cakupan regresi menolak pengenalan kembali properti lama tersebut.
+
+- [29d7b90](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/29d7b90)

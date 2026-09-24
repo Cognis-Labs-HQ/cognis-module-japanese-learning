@@ -45,15 +45,11 @@ test("fields publish provider-owned editor controls", () => {
         );
         for (const field of layer.fields ?? []) {
             assert.ok(field.input?.control, `${layer.id}.${field.id} input`);
-            if (field.input.linkRelationship) {
-                assert.ok(relationshipIds.has(field.input.linkRelationship));
-                assert.ok(
-                    field.input.linkRelationships?.includes(
-                        field.input.linkRelationship,
-                    ),
-                    `${layer.id}.${field.id} must publish the current multi-link contract`,
-                );
-            }
+            assert.equal(
+                field.input.linkRelationship,
+                undefined,
+                `${layer.id}.${field.id} must not retain the legacy singular link contract`,
+            );
             for (const relationship of field.input.linkRelationships ?? []) {
                 assert.ok(relationshipIds.has(relationship));
             }
@@ -74,10 +70,9 @@ test("vocabulary compositions use the closest structural records", () => {
     const pronunciation = wordLayer.fields.find(
         ({ id }) => id === "pronunciation",
     );
-    assert.equal(
-        pronunciation.input.linkRelationship,
+    assert.deepEqual(pronunciation.input.linkRelationships, [
         "pronunciation-readings",
-    );
+    ]);
     const nihon = recordsById.get("ja:word:nihon");
     const nihongo = recordsById.get("ja:word:nihongo");
     assert.equal(labelsFor(nihon, ["word-spelling", "spelling"]), "日本");
@@ -125,7 +120,7 @@ test("Kanji readings and particles resolve through authored Kana links", () => {
     const pronunciation = altCharacters.fields.find(
         ({ id }) => id === "pronunciation",
     );
-    assert.equal(pronunciation.input.linkRelationship, "readings");
+    assert.deepEqual(pronunciation.input.linkRelationships, ["readings"]);
 
     for (const entry of kanji) {
         const readingTargets = entry.references

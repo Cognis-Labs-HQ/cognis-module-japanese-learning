@@ -180,7 +180,7 @@ Only the visible sentence owns relationships among its lexical and particle chil
 
 ## Vocabulary-linked sentence title details
 
-Set the sentence pronunciation field's `input.linkRelationship` to `words`. The host must match each word's complete pronunciation as an alias while preserving the visible vocabulary entry as the link target. Do not add sentence-level pronunciation children or links between sibling word readings; each vocabulary record owns its reading path to atomic Kana independently.
+Set the sentence pronunciation field's `input.linkRelationships` to `["words", "particles"]`. The host must match each word's complete pronunciation as an alias while preserving the visible vocabulary entry as the link target. Do not add sentence-level pronunciation children or links between sibling word readings; each vocabulary record owns its reading path to atomic Kana independently.
 
 ## Vocabulary-owned pronunciation boundaries
 

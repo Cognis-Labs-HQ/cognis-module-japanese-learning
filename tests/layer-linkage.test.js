@@ -293,7 +293,6 @@ test("sentence pronunciation details deep-link words and particles", () => {
     const pronunciationField = sentenceLayer.fields.find(
         ({ id }) => id === "pronunciation",
     );
-    assert.equal(pronunciationField.input.linkRelationship, "words");
     assert.deepEqual(pronunciationField.input.linkRelationships, [
         "words",
         "particles",

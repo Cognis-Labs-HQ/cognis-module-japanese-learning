@@ -180,7 +180,7 @@ Hanya kalimat terlihat yang memiliki relasi di antara anak leksikal dan partikel
 
 ## Detail judul kalimat yang tertaut ke kosakata
 
-Tetapkan `input.linkRelationship` bidang pelafalan kalimat ke `words`. Host harus mencocokkan pelafalan lengkap setiap kata sebagai alias sambil mempertahankan entri kosakata yang terlihat sebagai target tautan. Jangan menambahkan anak pelafalan tingkat kalimat atau tautan antarbaca kata yang bersaudara; setiap entri kosakata memiliki jalur bacaannya sendiri menuju Kana atomik secara mandiri.
+Tetapkan `input.linkRelationships` bidang pelafalan kalimat ke `["words", "particles"]`. Host harus mencocokkan pelafalan lengkap setiap kata sebagai alias sambil mempertahankan entri kosakata yang terlihat sebagai target tautan. Jangan menambahkan anak pelafalan tingkat kalimat atau tautan antarbaca kata yang bersaudara; setiap entri kosakata memiliki jalur bacaannya sendiri menuju Kana atomik secara mandiri.
 
 ## Batas pelafalan milik kosakata
 

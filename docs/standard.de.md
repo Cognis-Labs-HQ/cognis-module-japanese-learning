@@ -180,7 +180,7 @@ Nur der sichtbare Satz besitzt Beziehungen zwischen seinen lexikalischen Kindern
 
 ## Mit Vokabeln verknüpfte Satztiteldetails
 
-Setze `input.linkRelationship` des Aussprachefelds eines Satzes auf `words`. Der Host muss die vollständige Aussprache jedes Wortes als Alias erkennen und dabei den sichtbaren Vokabeleintrag als Linkziel beibehalten. Füge weder Aussprachekinder auf Satzebene noch Verknüpfungen zwischen den Lesungen benachbarter Wörter hinzu; jeder Vokabeleintrag besitzt unabhängig seinen Lesepfad zu atomaren Kana.
+Setze `input.linkRelationships` des Aussprachefelds eines Satzes auf `["words", "particles"]`. Der Host muss die vollständige Aussprache jedes Wortes als Alias erkennen und dabei den sichtbaren Vokabeleintrag als Linkziel beibehalten. Füge weder Aussprachekinder auf Satzebene noch Verknüpfungen zwischen den Lesungen benachbarter Wörter hinzu; jeder Vokabeleintrag besitzt unabhängig seinen Lesepfad zu atomaren Kana.
 
 ## Vokabeleigene Aussprachegrenzen
 

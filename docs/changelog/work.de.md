@@ -379,3 +379,9 @@ Kana- und Kanji-Karten wurden an den aktuellen Zeichenvertrag aus Cognis PR #226
 Alle Ebenen mit Aussprache veröffentlichen nun das aktuelle, von Cognis PR #226 verwendete Array `input.linkRelationships`. Vokabeln wie `猫` stellen ihr Ziel `pronunciation-readings` damit über den aktuellen Vertrag bereit, sodass das angezeigte `ねこ` den erstellten Ausspracheeintrag öffnet; Kanji-Lesungen und Partikel-Kana-Links verwenden dieselbe aktuelle Metadatenform.
 
 - [046b335](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/046b335)
+
+## Aussprachelinks nur nach aktuellem Vertrag
+
+Die veralteten singulären `linkRelationship`-Metadaten wurden entfernt, statt im Beta-Inhaltsschema einen Kompatibilitätspfad beizubehalten. Aussprachefelder veröffentlichen nur noch die aktuellen, von Cognis verwendeten `linkRelationships`-Arrays; Regressionstests verhindern die erneute Einführung der Legacy-Eigenschaft.
+
+- [29d7b90](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/29d7b90)

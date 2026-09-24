@@ -379,3 +379,9 @@ Study Library の有効化がデータベーストランザクション内で失
 発音を持つすべてのレイヤーが、Cognis PR #226 が使用する現在の `input.linkRelationships` 配列を公開するようになりました。`猫` のような語彙はこの契約を通じて `pronunciation-readings` の対象を公開するため、表示された `ねこ` から作成済みの発音エントリを開けます。漢字の読みと助詞の仮名リンクも同じ現在のメタデータ形式を使用します。
 
 - [046b335](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/046b335)
+
+## 現行契約だけを使う発音リンク
+
+ベータ版コンテンツスキーマに互換経路を残さず、非推奨の単数 `linkRelationship` メタデータを削除しました。発音フィールドは Cognis が使用する現在の `linkRelationships` 配列だけを公開し、回帰テストは旧プロパティの再導入を拒否します。
+
+- [29d7b90](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/29d7b90)

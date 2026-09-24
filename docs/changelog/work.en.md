@@ -379,3 +379,9 @@ Aligned Kana and Kanji cards with the latest Cognis PR #226 drawing contract by 
 Updated every pronunciation-bearing layer to publish the current `input.linkRelationships` array consumed by Cognis PR #226. Vocabulary such as `猫` now exposes its `pronunciation-readings` target through that contract, allowing displayed `ねこ` to open the authored pronunciation entry; Kanji readings and particle Kana links use the same current metadata shape.
 
 - [046b335](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/046b335)
+
+## Current-Contract-Only Pronunciation Links
+
+Removed the deprecated singular `linkRelationship` metadata instead of retaining a compatibility path in the beta content schema. Pronunciation fields now publish only the current `linkRelationships` arrays consumed by Cognis, and regression coverage rejects any reintroduction of the legacy property.
+
+- [29d7b90](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/29d7b90)
