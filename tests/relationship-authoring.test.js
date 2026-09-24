@@ -47,6 +47,12 @@ test("fields publish provider-owned editor controls", () => {
             assert.ok(field.input?.control, `${layer.id}.${field.id} input`);
             if (field.input.linkRelationship) {
                 assert.ok(relationshipIds.has(field.input.linkRelationship));
+                assert.ok(
+                    field.input.linkRelationships?.includes(
+                        field.input.linkRelationship,
+                    ),
+                    `${layer.id}.${field.id} must publish the current multi-link contract`,
+                );
             }
             for (const relationship of field.input.linkRelationships ?? []) {
                 assert.ok(relationshipIds.has(relationship));

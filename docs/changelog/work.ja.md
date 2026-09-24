@@ -373,3 +373,9 @@ Study Library の有効化がデータベーストランザクション内で失
 仮名カードと漢字カードを Cognis PR #226 の最新描画契約に合わせ、順序付き時刻サンプルと練習許容値を持つ必須の正規化 `strokePattern` メタデータを追加しました。KanjiVG 由来のパターンには CC BY-SA 3.0 の帰属情報を保持し、リポジトリのファイルサイズ制限を守るためコンテンツを分割しました。
 
 - [ba7857b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/ba7857b)
+
+## 語彙の仮名リンクを復元
+
+発音を持つすべてのレイヤーが、Cognis PR #226 が使用する現在の `input.linkRelationships` 配列を公開するようになりました。`猫` のような語彙はこの契約を通じて `pronunciation-readings` の対象を公開するため、表示された `ねこ` から作成済みの発音エントリを開けます。漢字の読みと助詞の仮名リンクも同じ現在のメタデータ形式を使用します。
+
+- [046b335](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/046b335)

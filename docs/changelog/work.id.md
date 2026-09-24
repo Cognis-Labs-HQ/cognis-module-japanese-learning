@@ -373,3 +373,9 @@ Metadata pelafalan kalimat kini mendeklarasikan hubungan kata dan partikel sebag
 Kartu Kana dan Kanji diselaraskan dengan kontrak menggambar terbaru Cognis PR #226 melalui metadata `strokePattern` ternormalisasi yang wajib, sampel waktu berurutan, dan toleransi latihan. Pola turunan KanjiVG mempertahankan atribusi CC BY-SA 3.0, dan serpihan konten dibagi untuk mematuhi batas ukuran berkas repositori.
 
 - [ba7857b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/ba7857b)
+
+## Tautan Kana Kosakata Dipulihkan
+
+Setiap lapisan yang memiliki pelafalan kini menerbitkan larik `input.linkRelationships` terkini yang digunakan Cognis PR #226. Kosakata seperti `猫` mengekspos target `pronunciation-readings` melalui kontrak tersebut sehingga `ねこ` yang ditampilkan membuka entri pelafalan yang dibuat; bacaan Kanji dan tautan Kana partikel memakai bentuk metadata terkini yang sama.
+
+- [046b335](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/046b335)

@@ -187,7 +187,7 @@ Eine Kanji-Aussprache verknüpft sich mit der nächstgelegenen sichtbaren Vokabe
 
 ## Vollständig verknüpfte Satzaussprache
 
-Die Aussprachedetails eines Satzes deklarieren sowohl `words` als auch `particles` als Linkquellen. Die Lesung `がっこうにいく` verknüpft ihre vollständigen Abschnitte daher mit dem sichtbaren `学校`, der Partikel `に` und dem sichtbaren `行く`, ohne einen parallelen Satzleseeintrag einzuführen.
+Die Aussprachedetails eines Satzes verwenden den aktuellen `linkRelationships`-Vertrag und deklarieren sowohl `words` als auch `particles` als Linkquellen. Die Lesung `がっこうにいく` verknüpft ihre vollständigen Abschnitte daher mit dem sichtbaren `学校`, der Partikel `に` und dem sichtbaren `行く`, ohne einen parallelen Satzleseeintrag einzuführen.
 
 ## Strichgeführte Schreibübungen
 

@@ -187,7 +187,7 @@ A Kanji pronunciation links to the nearest visible vocabulary that uses it. The 
 
 ## Fully linked sentence pronunciations
 
-Sentence pronunciation details declare both `words` and `particles` as link sources. The reading `がっこうにいく` therefore links its complete segments to visible `学校`, particle `に`, and visible `行く`, without introducing a parallel sentence-reading record.
+Sentence pronunciation details use the current `linkRelationships` contract to declare both `words` and `particles` as link sources. The reading `がっこうにいく` therefore links its complete segments to visible `学校`, particle `に`, and visible `行く`, without introducing a parallel sentence-reading record.
 
 ## Stroke-guided writing practice
 

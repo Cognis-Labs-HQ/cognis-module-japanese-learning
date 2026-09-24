@@ -188,7 +188,7 @@ Jika bacaan Kanji terdapat dalam entri kosakata terlihat yang telah dibuat, arah
 
 ## Tautan pelafalan kalimat lengkap
 
-Input pelafalan kalimat harus mendeklarasikan setiap hubungan unsur yang dapat menyediakan segmen bacaan yang ditampilkan. Pertahankan `linkRelationship: "words"` untuk kompatibilitas dan deklarasikan `linkRelationships: ["words", "particles"]` untuk resolusi lengkap. Host harus menggabungkan referensi berurutan tersebut dan mencocokkan alias pelafalan setiap target agar kata membuka kosakata dan partikel membuka rekaman partikel.
+Input pelafalan kalimat harus mendeklarasikan setiap hubungan unsur yang dapat menyediakan segmen bacaan yang ditampilkan. Deklarasikan `linkRelationships: ["words", "particles"]` untuk resolusi lengkap; host terkini membaca kontrak larik saat membangun tautan detail judul. Host harus menggabungkan referensi berurutan tersebut dan mencocokkan alias pelafalan setiap target agar kata membuka kosakata dan partikel membuka rekaman partikel.
 
 ## Metadata pola goresan
 

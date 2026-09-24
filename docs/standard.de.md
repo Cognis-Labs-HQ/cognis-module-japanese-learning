@@ -188,7 +188,7 @@ Wenn eine Kanji-Lesung in einem vorhandenen sichtbaren Vokabeleintrag vorkommt, 
 
 ## Vollständige Links der Satzaussprache
 
-Die Eingabe einer Satzaussprache muss jede Bestandteilsbeziehung deklarieren, die einen angezeigten Leseabschnitt liefern kann. Behalte `linkRelationship: "words"` zur Kompatibilität bei und deklariere `linkRelationships: ["words", "particles"]` für die vollständige Auflösung. Der Host muss diese geordneten Referenzen zusammenführen und den Aussprachealias jedes Ziels abgleichen, sodass Wörter Vokabeln und Partikeln Partikeleinträge öffnen.
+Die Eingabe einer Satzaussprache muss jede Bestandteilsbeziehung deklarieren, die einen angezeigten Leseabschnitt liefern kann. Deklariere `linkRelationships: ["words", "particles"]` für die vollständige Auflösung; der aktuelle Host liest den Array-Vertrag beim Erstellen der Titeldetail-Links. Der Host muss diese geordneten Referenzen zusammenführen und den Aussprachealias jedes Ziels abgleichen, sodass Wörter Vokabeln und Partikeln Partikeleinträge öffnen.
 
 ## Strichmuster-Metadaten
 

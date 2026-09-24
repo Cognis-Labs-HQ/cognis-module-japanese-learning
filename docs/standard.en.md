@@ -188,7 +188,7 @@ When a Kanji reading occurs inside an authored visible vocabulary record, target
 
 ## Complete sentence pronunciation links
 
-A sentence pronunciation input must declare every constituent relationship that can supply a displayed reading segment. Keep `linkRelationship: "words"` for compatibility and declare `linkRelationships: ["words", "particles"]` for complete resolution. The host must merge those ordered references and match each target's pronunciation alias, so words open vocabulary and particles open particle records.
+A sentence pronunciation input must declare every constituent relationship that can supply a displayed reading segment. Declare `linkRelationships: ["words", "particles"]` for complete resolution; the current host reads the array contract when constructing title-detail links. The host must merge those ordered references and match each target's pronunciation alias, so words open vocabulary and particles open particle records.
 
 ## Stroke pattern metadata
 

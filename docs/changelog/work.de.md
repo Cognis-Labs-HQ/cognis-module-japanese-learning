@@ -373,3 +373,9 @@ Die Metadaten der Satzaussprache deklarieren nun sowohl Wort- als auch Partikelb
 Kana- und Kanji-Karten wurden an den aktuellen Zeichenvertrag aus Cognis PR #226 angepasst und enthalten nun erforderliche normalisierte `strokePattern`-Metadaten mit geordneten Zeitwerten und Übungstoleranzen. Aus KanjiVG abgeleitete Muster bewahren die CC-BY-SA-3.0-Namensnennung; die Inhaltsdateien wurden geteilt, um die Dateigrößenbegrenzung des Repositorys einzuhalten.
 
 - [ba7857b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/ba7857b)
+
+## Wiederhergestellte Kana-Links der Vokabeln
+
+Alle Ebenen mit Aussprache veröffentlichen nun das aktuelle, von Cognis PR #226 verwendete Array `input.linkRelationships`. Vokabeln wie `猫` stellen ihr Ziel `pronunciation-readings` damit über den aktuellen Vertrag bereit, sodass das angezeigte `ねこ` den erstellten Ausspracheeintrag öffnet; Kanji-Lesungen und Partikel-Kana-Links verwenden dieselbe aktuelle Metadatenform.
+
+- [046b335](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/046b335)

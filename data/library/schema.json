@@ -1,6 +1,6 @@
 {
     "id": "japanese-core",
-    "version": 52,
+    "version": 53,
     "namespace": "ja",
     "language": "ja",
     "metadata": {
@@ -377,7 +377,8 @@
                     },
                     "input": {
                         "control": "tagList",
-                        "linkRelationship": "readings"
+                        "linkRelationship": "readings",
+                        "linkRelationships": ["readings"]
                     }
                 },
                 {
@@ -576,7 +577,8 @@
                     },
                     "input": {
                         "control": "tagList",
-                        "linkRelationship": "pronunciation-readings"
+                        "linkRelationship": "pronunciation-readings",
+                        "linkRelationships": ["pronunciation-readings"]
                     }
                 },
                 {
@@ -798,7 +800,8 @@
                     },
                     "input": {
                         "control": "tagList",
-                        "linkRelationship": "kana-spelling"
+                        "linkRelationship": "kana-spelling",
+                        "linkRelationships": ["kana-spelling"]
                     }
                 }
             ],

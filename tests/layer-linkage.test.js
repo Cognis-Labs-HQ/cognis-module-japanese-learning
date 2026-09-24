@@ -421,6 +421,29 @@ test("visible core vocabulary terminates at Kanji and full Kana vocabulary", () 
     }
 });
 
+test("vocabulary pronunciation details use the host multi-link contract", () => {
+    const wordLayer = schema.layers.find(({ id }) => id === "words");
+    const pronunciation = wordLayer.fields.find(
+        ({ id }) => id === "pronunciation",
+    );
+    assert.deepEqual(pronunciation.input.linkRelationships, [
+        "pronunciation-readings",
+    ]);
+
+    const recordsById = new Map(
+        loadRecords().map((record) => [record.id, record]),
+    );
+    const cat = recordsById.get("ja:word:neko");
+    const targets = orderedReferences(
+        cat,
+        new Set(pronunciation.input.linkRelationships),
+    ).map(({ entryId }) => recordsById.get(entryId));
+    assert.deepEqual(
+        targets.map(({ id, label }) => ({ id, label })),
+        [{ id: "ja:word:pronunciation-neko", label: "ねこ" }],
+    );
+});
+
 test("small-cat sentence owns composition without a parallel Kana chain", () => {
     const recordsById = new Map(
         loadRecords().map((record) => [record.id, record]),

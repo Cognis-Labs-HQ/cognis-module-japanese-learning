@@ -373,3 +373,9 @@ Sentence pronunciation metadata now declares both word and particle relationship
 Aligned Kana and Kanji cards with the latest Cognis PR #226 drawing contract by adding required normalized `strokePattern` metadata with ordered timing samples and practice tolerances. Patterns derived from KanjiVG retain CC BY-SA 3.0 attribution, and content shards were split to preserve the repository file-size guardrail.
 
 - [ba7857b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/ba7857b)
+
+## Restored Vocabulary Kana Links
+
+Updated every pronunciation-bearing layer to publish the current `input.linkRelationships` array consumed by Cognis PR #226. Vocabulary such as `猫` now exposes its `pronunciation-readings` target through that contract, allowing displayed `ねこ` to open the authored pronunciation entry; Kanji readings and particle Kana links use the same current metadata shape.
+
+- [046b335](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/046b335)

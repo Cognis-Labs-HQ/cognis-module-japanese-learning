@@ -187,7 +187,7 @@ Pelafalan Kanji tertaut ke kosakata terlihat terdekat yang menggunakannya. Hanya
 
 ## Pelafalan kalimat yang tertaut sepenuhnya
 
-Detail pelafalan kalimat mendeklarasikan `words` dan `particles` sebagai sumber tautan. Karena itu, bacaan `がっこうにいく` menautkan segmen lengkapnya ke `学校` yang terlihat, partikel `に`, dan `行く` yang terlihat tanpa memperkenalkan rekaman bacaan kalimat paralel.
+Detail pelafalan kalimat menggunakan kontrak `linkRelationships` terkini untuk mendeklarasikan `words` dan `particles` sebagai sumber tautan. Karena itu, bacaan `がっこうにいく` menautkan segmen lengkapnya ke `学校` yang terlihat, partikel `に`, dan `行く` yang terlihat tanpa memperkenalkan rekaman bacaan kalimat paralel.
 
 ## Latihan menulis berpanduan goresan
 
