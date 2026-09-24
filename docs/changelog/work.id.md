@@ -367,3 +367,9 @@ Tautan pelafalan Kanji kini mengutamakan kosakata terlihat yang memakai bacaan t
 Metadata pelafalan kalimat kini mendeklarasikan hubungan kata dan partikel sebagai sumber tautan mendalam. Dengan demikian `がっこうにいく` diuraikan menjadi kosakata `学校` yang terlihat, partikel `に`, dan kosakata `行く` yang terlihat, sambil mempertahankan graf milik kalimat tanpa rekaman bacaan lengkap sintetis.
 
 - [860a01e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/860a01e)
+
+## Kartu Menulis Berpanduan Goresan
+
+Kartu Kana dan Kanji diselaraskan dengan kontrak menggambar terbaru Cognis PR #226 melalui metadata `strokePattern` ternormalisasi yang wajib, sampel waktu berurutan, dan toleransi latihan. Pola turunan KanjiVG mempertahankan atribusi CC BY-SA 3.0, dan serpihan konten dibagi untuk mematuhi batas ukuran berkas repositori.
+
+- [ba7857b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/ba7857b)

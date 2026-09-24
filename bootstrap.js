@@ -4,14 +4,26 @@ const CONTENT_PACK = Object.freeze({
     id: "japanese-core",
     publisher: "Cognis Labs HQ",
     namespace: "ja",
-    version: "2.2.29",
-    contentRevision: "2026-09-24.13",
+    version: "2.2.30",
+    contentRevision: "2026-09-24.14",
     schema: "schema.json",
     content: "content",
     protected: true,
     metadata: Object.freeze({
         catalog: Object.freeze({ category: "language", featured: true }),
         tags: Object.freeze(["japanese", "study"]),
+        sources: Object.freeze([
+            Object.freeze({
+                id: "kanjivg",
+                url: "https://kanjivg.tagaini.net/",
+                license: "CC-BY-SA-3.0",
+                attribution: "KanjiVG project contributors",
+                derivedFields: Object.freeze([
+                    "characters.stroke_pattern",
+                    "alt-characters.stroke_pattern",
+                ]),
+            }),
+        ]),
     }),
     license: Object.freeze({
         id: "AGPL-3.0-or-later",
@@ -26,7 +38,7 @@ const LANGUAGE = Object.freeze({
     languageCode: "ja",
     languageName: "日本語",
     languageFlag: "🇯🇵",
-    version: "2.2.29",
+    version: "2.2.30",
     package: CONTENT_PACK,
     childComponents: [],
 });

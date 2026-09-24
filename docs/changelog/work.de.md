@@ -367,3 +367,9 @@ Kanji-Aussprachelinks bevorzugen nun die sichtbare Vokabel, die die Lesung verwe
 Die Metadaten der Satzaussprache deklarieren nun sowohl Wort- als auch Partikelbeziehungen als Deep-Link-Quellen. `がっこうにいく` wird dadurch in die sichtbare Vokabel `学校`, die Partikel `に` und die sichtbare Vokabel `行く` aufgelöst, während der satzseitig besessene Graph ohne synthetischen vollständigen Leseeintrag erhalten bleibt.
 
 - [860a01e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/860a01e)
+
+## Strichgeführte Schreibkarten
+
+Kana- und Kanji-Karten wurden an den aktuellen Zeichenvertrag aus Cognis PR #226 angepasst und enthalten nun erforderliche normalisierte `strokePattern`-Metadaten mit geordneten Zeitwerten und Übungstoleranzen. Aus KanjiVG abgeleitete Muster bewahren die CC-BY-SA-3.0-Namensnennung; die Inhaltsdateien wurden geteilt, um die Dateigrößenbegrenzung des Repositorys einzuhalten.
+
+- [ba7857b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/ba7857b)

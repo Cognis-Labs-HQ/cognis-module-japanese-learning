@@ -188,3 +188,7 @@ Eine Kanji-Aussprache verknüpft sich mit der nächstgelegenen sichtbaren Vokabe
 ## Vollständig verknüpfte Satzaussprache
 
 Die Aussprachedetails eines Satzes deklarieren sowohl `words` als auch `particles` als Linkquellen. Die Lesung `がっこうにいく` verknüpft ihre vollständigen Abschnitte daher mit dem sichtbaren `学校`, der Partikel `に` und dem sichtbaren `行く`, ohne einen parallelen Satzleseeintrag einzuführen.
+
+## Strichgeführte Schreibübungen
+
+Jede Kana- und Kanji-Karte enthält nun ein erforderliches `strokePattern` mit normalisierten Koordinaten, geordneten monotonen Zeitwerten und einer Übungstoleranz, die mit dem aktuellen Zeichenvertrag der Study Library aus Cognis PR #226 kompatibel ist. Die Muster wurden aus KanjiVG abgeleitet; Quelle und CC-BY-SA-3.0-Namensnennung bleiben im Inhaltsmanifest erhalten.

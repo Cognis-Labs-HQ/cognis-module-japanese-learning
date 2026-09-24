@@ -1,6 +1,6 @@
 {
     "id": "japanese-core",
-    "version": 51,
+    "version": 52,
     "namespace": "ja",
     "language": "ja",
     "metadata": {
@@ -122,10 +122,36 @@
                             }
                         ]
                     }
+                },
+                {
+                    "id": "stroke_pattern",
+                    "metadata": {
+                        "labels": {
+                            "de": "Strichmuster",
+                            "en": "Stroke Pattern",
+                            "id": "Pola Goresan",
+                            "ja": "筆順パターン"
+                        }
+                    },
+                    "type": "strokePattern",
+                    "required": true,
+                    "detail": {
+                        "renderer": "stroke",
+                        "order": 4
+                    },
+                    "input": {
+                        "control": "text",
+                        "immutable": true
+                    }
                 }
             ],
             "detail": {
-                "fieldOrder": ["pronunciation", "audio", "character_class"]
+                "fieldOrder": [
+                    "pronunciation",
+                    "audio",
+                    "character_class",
+                    "stroke_pattern"
+                ]
             },
             "activityCompatibility": ["study:recognition", "study:writing"],
             "interestVeins": ["language:japanese"],
@@ -377,6 +403,27 @@
                             "prefix": "ja/"
                         }
                     }
+                },
+                {
+                    "id": "stroke_pattern",
+                    "metadata": {
+                        "labels": {
+                            "de": "Strichmuster",
+                            "en": "Stroke Pattern",
+                            "id": "Pola Goresan",
+                            "ja": "筆順パターン"
+                        }
+                    },
+                    "type": "strokePattern",
+                    "required": true,
+                    "detail": {
+                        "renderer": "stroke",
+                        "order": 3
+                    },
+                    "input": {
+                        "control": "text",
+                        "immutable": true
+                    }
                 }
             ],
             "relationships": [
@@ -428,7 +475,7 @@
                 }
             ],
             "detail": {
-                "fieldOrder": ["pronunciation", "audio"]
+                "fieldOrder": ["pronunciation", "audio", "stroke_pattern"]
             },
             "activityCompatibility": ["study:recognition", "study:writing"],
             "interestVeins": ["language:japanese"]

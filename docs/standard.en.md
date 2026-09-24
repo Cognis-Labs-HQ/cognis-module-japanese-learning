@@ -189,3 +189,7 @@ When a Kanji reading occurs inside an authored visible vocabulary record, target
 ## Complete sentence pronunciation links
 
 A sentence pronunciation input must declare every constituent relationship that can supply a displayed reading segment. Keep `linkRelationship: "words"` for compatibility and declare `linkRelationships: ["words", "particles"]` for complete resolution. The host must merge those ordered references and match each target's pronunciation alias, so words open vocabulary and particles open particle records.
+
+## Stroke pattern metadata
+
+Every provider-authored writing-unit card must include an immutable required `strokePattern`. Use `coordinateSystem: "normalized"`; keep all point coordinates within 0–1, point times monotonic inside each ordered stroke, optional pressure within 0–1, and tolerance within 0–100. Preserve attribution for any external stroke source in content-manifest metadata.

@@ -188,3 +188,7 @@ A Kanji pronunciation links to the nearest visible vocabulary that uses it. The 
 ## Fully linked sentence pronunciations
 
 Sentence pronunciation details declare both `words` and `particles` as link sources. The reading `がっこうにいく` therefore links its complete segments to visible `学校`, particle `に`, and visible `行く`, without introducing a parallel sentence-reading record.
+
+## Stroke-guided writing practice
+
+Every Kana and Kanji card now carries a required `strokePattern` with normalized coordinates, ordered monotonic timing samples, and a practice tolerance compatible with the latest Study Library drawing contract from Cognis PR #226. The patterns are derived from KanjiVG and retain source and CC BY-SA 3.0 attribution in the content manifest.

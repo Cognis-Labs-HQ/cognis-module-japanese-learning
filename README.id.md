@@ -188,3 +188,7 @@ Pelafalan Kanji tertaut ke kosakata terlihat terdekat yang menggunakannya. Hanya
 ## Pelafalan kalimat yang tertaut sepenuhnya
 
 Detail pelafalan kalimat mendeklarasikan `words` dan `particles` sebagai sumber tautan. Karena itu, bacaan `がっこうにいく` menautkan segmen lengkapnya ke `学校` yang terlihat, partikel `に`, dan `行く` yang terlihat tanpa memperkenalkan rekaman bacaan kalimat paralel.
+
+## Latihan menulis berpanduan goresan
+
+Setiap kartu Kana dan Kanji kini memiliki `strokePattern` wajib dengan koordinat ternormalisasi, sampel waktu monotonik berurutan, dan toleransi latihan yang kompatibel dengan kontrak menggambar Study Library terbaru dari Cognis PR #226. Pola tersebut diturunkan dari KanjiVG serta mempertahankan sumber dan atribusi CC BY-SA 3.0 dalam manifes konten.

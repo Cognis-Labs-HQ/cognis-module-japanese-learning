@@ -40,6 +40,16 @@ function fieldValueMatchesType(value, type) {
             return false;
         }
     }
+    if (type === "strokePattern") {
+        return (
+            value?.coordinateSystem === "normalized" &&
+            Array.isArray(value.strokes) &&
+            value.strokes.length > 0 &&
+            value.strokes.every(
+                ({ points }) => Array.isArray(points) && points.length >= 2,
+            )
+        );
+    }
     return false;
 }
 

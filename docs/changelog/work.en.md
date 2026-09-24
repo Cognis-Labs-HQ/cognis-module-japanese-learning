@@ -367,3 +367,9 @@ Kanji pronunciation links now prefer the visible vocabulary that uses the readin
 Sentence pronunciation metadata now declares both word and particle relationships as deep-link sources. `がっこうにいく` consequently resolves into the visible `学校` vocabulary, the `に` particle, and the visible `行く` vocabulary, while retaining the parent-owned sentence graph without a synthetic full-reading record.
 
 - [860a01e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/860a01e)
+
+## Stroke-Guided Writing Cards
+
+Aligned Kana and Kanji cards with the latest Cognis PR #226 drawing contract by adding required normalized `strokePattern` metadata with ordered timing samples and practice tolerances. Patterns derived from KanjiVG retain CC BY-SA 3.0 attribution, and content shards were split to preserve the repository file-size guardrail.
+
+- [ba7857b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/ba7857b)

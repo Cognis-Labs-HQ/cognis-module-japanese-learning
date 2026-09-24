@@ -189,3 +189,7 @@ Wenn eine Kanji-Lesung in einem vorhandenen sichtbaren Vokabeleintrag vorkommt, 
 ## Vollständige Links der Satzaussprache
 
 Die Eingabe einer Satzaussprache muss jede Bestandteilsbeziehung deklarieren, die einen angezeigten Leseabschnitt liefern kann. Behalte `linkRelationship: "words"` zur Kompatibilität bei und deklariere `linkRelationships: ["words", "particles"]` für die vollständige Auflösung. Der Host muss diese geordneten Referenzen zusammenführen und den Aussprachealias jedes Ziels abgleichen, sodass Wörter Vokabeln und Partikeln Partikeleinträge öffnen.
+
+## Strichmuster-Metadaten
+
+Jede vom Anbieter erstellte Schreibzeichenkarte muss ein unveränderliches erforderliches `strokePattern` enthalten. Verwende `coordinateSystem: "normalized"`; halte alle Punktkoordinaten im Bereich 0–1, die Punktzeiten innerhalb jedes geordneten Strichs monoton, optionalen Druck im Bereich 0–1 und die Toleranz im Bereich 0–100. Bewahre die Namensnennung externer Strichquellen in den Metadaten des Inhaltsmanifests auf.

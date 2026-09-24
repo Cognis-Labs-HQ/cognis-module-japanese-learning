@@ -1,0 +1,246 @@
+[
+    {
+        "id": "ja:kanji:core-e78aac",
+        "label": "犬",
+        "fields": {
+            "pronunciation": ["いぬ"],
+            "audio": "https://assets.cognis.dev/study/ja/pronunciation/kanji-e78aac.mp3",
+            "stroke_pattern": {
+                "coordinateSystem": "normalized",
+                "tolerance": 60,
+                "strokes": [
+                    {
+                        "points": [
+                            {
+                                "x": 0.1686,
+                                "y": 0.4253,
+                                "time": 0
+                            },
+                            {
+                                "x": 0.3733,
+                                "y": 0.4141,
+                                "time": 80
+                            },
+                            {
+                                "x": 0.5774,
+                                "y": 0.3903,
+                                "time": 160
+                            },
+                            {
+                                "x": 0.7822,
+                                "y": 0.3807,
+                                "time": 240
+                            }
+                        ]
+                    },
+                    {
+                        "points": [
+                            {
+                                "x": 0.461,
+                                "y": 0.1445,
+                                "time": 0
+                            },
+                            {
+                                "x": 0.478,
+                                "y": 0.3067,
+                                "time": 80
+                            },
+                            {
+                                "x": 0.4553,
+                                "y": 0.4712,
+                                "time": 160
+                            },
+                            {
+                                "x": 0.397,
+                                "y": 0.6264,
+                                "time": 240
+                            },
+                            {
+                                "x": 0.2957,
+                                "y": 0.7575,
+                                "time": 320
+                            },
+                            {
+                                "x": 0.156,
+                                "y": 0.8463,
+                                "time": 400
+                            }
+                        ]
+                    },
+                    {
+                        "points": [
+                            {
+                                "x": 0.4725,
+                                "y": 0.4128,
+                                "time": 0
+                            },
+                            {
+                                "x": 0.5906,
+                                "y": 0.5705,
+                                "time": 80
+                            },
+                            {
+                                "x": 0.7189,
+                                "y": 0.7208,
+                                "time": 160
+                            },
+                            {
+                                "x": 0.8693,
+                                "y": 0.8463,
+                                "time": 240
+                            }
+                        ]
+                    },
+                    {
+                        "points": [
+                            {
+                                "x": 0.6177,
+                                "y": 0.1858,
+                                "time": 0
+                            },
+                            {
+                                "x": 0.6754,
+                                "y": 0.2262,
+                                "time": 80
+                            },
+                            {
+                                "x": 0.7179,
+                                "y": 0.2821,
+                                "time": 160
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "references": [
+            {
+                "entryId": "ja:word:inu",
+                "relation": "readings",
+                "position": 0
+            },
+            {
+                "entryId": "ja:def:kanji-core-e78aac",
+                "relation": "definitions"
+            },
+            {
+                "entryId": "ja:char:i",
+                "relation": "reading-kana-dependency"
+            },
+            {
+                "entryId": "ja:char:nu",
+                "relation": "reading-kana-dependency"
+            }
+        ],
+        "class": "writing:kanji"
+    },
+    {
+        "id": "ja:kanji:hito",
+        "label": "人",
+        "fields": {
+            "pronunciation": ["じん", "にん", "ひと"],
+            "audio": "https://assets.cognis.dev/study/ja/pronunciation/kanji-hito.mp3",
+            "stroke_pattern": {
+                "coordinateSystem": "normalized",
+                "tolerance": 60,
+                "strokes": [
+                    {
+                        "points": [
+                            {
+                                "x": 0.5,
+                                "y": 0.1835,
+                                "time": 0
+                            },
+                            {
+                                "x": 0.4619,
+                                "y": 0.36,
+                                "time": 80
+                            },
+                            {
+                                "x": 0.3852,
+                                "y": 0.5243,
+                                "time": 160
+                            },
+                            {
+                                "x": 0.2834,
+                                "y": 0.6756,
+                                "time": 240
+                            },
+                            {
+                                "x": 0.1514,
+                                "y": 0.8005,
+                                "time": 320
+                            }
+                        ]
+                    },
+                    {
+                        "points": [
+                            {
+                                "x": 0.422,
+                                "y": 0.4977,
+                                "time": 0
+                            },
+                            {
+                                "x": 0.5577,
+                                "y": 0.6173,
+                                "time": 80
+                            },
+                            {
+                                "x": 0.6979,
+                                "y": 0.7318,
+                                "time": 160
+                            },
+                            {
+                                "x": 0.8532,
+                                "y": 0.8211,
+                                "time": 240
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "references": [
+            {
+                "entryId": "ja:word:reading-jin",
+                "relation": "readings",
+                "position": 0
+            },
+            {
+                "entryId": "ja:word:reading-nin",
+                "relation": "readings",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:reading-hito",
+                "relation": "readings",
+                "position": 2
+            },
+            {
+                "entryId": "ja:def:kanji-hito",
+                "relation": "definitions"
+            },
+            {
+                "entryId": "ja:char:ji",
+                "relation": "reading-kana-dependency"
+            },
+            {
+                "entryId": "ja:char:n",
+                "relation": "reading-kana-dependency"
+            },
+            {
+                "entryId": "ja:char:ni",
+                "relation": "reading-kana-dependency"
+            },
+            {
+                "entryId": "ja:char:hi",
+                "relation": "reading-kana-dependency"
+            },
+            {
+                "entryId": "ja:char:to",
+                "relation": "reading-kana-dependency"
+            }
+        ],
+        "class": "writing:kanji"
+    }
+]

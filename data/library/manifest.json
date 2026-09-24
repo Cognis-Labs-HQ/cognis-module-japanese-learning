@@ -1,8 +1,8 @@
 {
     "id": "japanese-core",
     "publisher": "Cognis Labs HQ",
-    "version": "2.2.29",
-    "contentRevision": "2026-09-24.13",
+    "version": "2.2.30",
+    "contentRevision": "2026-09-24.14",
     "schema": "schema.json",
     "content": "content",
     "license": {
@@ -17,6 +17,18 @@
             "category": "language",
             "featured": true
         },
-        "tags": ["japanese", "study"]
+        "tags": ["japanese", "study"],
+        "sources": [
+            {
+                "id": "kanjivg",
+                "url": "https://kanjivg.tagaini.net/",
+                "license": "CC-BY-SA-3.0",
+                "attribution": "KanjiVG project contributors",
+                "derivedFields": [
+                    "characters.stroke_pattern",
+                    "alt-characters.stroke_pattern"
+                ]
+            }
+        ]
     }
 }

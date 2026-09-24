@@ -189,3 +189,7 @@ Jika bacaan Kanji terdapat dalam entri kosakata terlihat yang telah dibuat, arah
 ## Tautan pelafalan kalimat lengkap
 
 Input pelafalan kalimat harus mendeklarasikan setiap hubungan unsur yang dapat menyediakan segmen bacaan yang ditampilkan. Pertahankan `linkRelationship: "words"` untuk kompatibilitas dan deklarasikan `linkRelationships: ["words", "particles"]` untuk resolusi lengkap. Host harus menggabungkan referensi berurutan tersebut dan mencocokkan alias pelafalan setiap target agar kata membuka kosakata dan partikel membuka rekaman partikel.
+
+## Metadata pola goresan
+
+Setiap kartu unit tulisan buatan penyedia wajib menyertakan `strokePattern` yang wajib dan tidak dapat diubah. Gunakan `coordinateSystem: "normalized"`; pertahankan seluruh koordinat titik dalam rentang 0–1, waktu titik monotonik di dalam setiap goresan berurutan, tekanan opsional dalam rentang 0–1, dan toleransi dalam rentang 0–100. Pertahankan atribusi setiap sumber goresan eksternal dalam metadata manifes konten.

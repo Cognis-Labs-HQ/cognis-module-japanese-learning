@@ -367,3 +367,9 @@ Study Library の有効化がデータベーストランザクション内で失
 文の発音メタデータは、単語関係と助詞関係の両方をディープリンク元として宣言するようになりました。その結果 `がっこうにいく` は、表示対象の語彙 `学校`、助詞 `に`、表示対象の語彙 `行く` に解決され、合成された完全読みレコードを追加せずに文所有のグラフを維持します。
 
 - [860a01e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/860a01e)
+
+## 筆順に沿った書き取りカード
+
+仮名カードと漢字カードを Cognis PR #226 の最新描画契約に合わせ、順序付き時刻サンプルと練習許容値を持つ必須の正規化 `strokePattern` メタデータを追加しました。KanjiVG 由来のパターンには CC BY-SA 3.0 の帰属情報を保持し、リポジトリのファイルサイズ制限を守るためコンテンツを分割しました。
+
+- [ba7857b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/ba7857b)
