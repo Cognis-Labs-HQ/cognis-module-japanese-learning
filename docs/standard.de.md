@@ -177,3 +177,7 @@ Jedes Kanji muss für jedes atomare Kana, das in seiner deklarierten Aussprachel
 ## Vom Elterneintrag bestimmte zusammengesetzte Aussprachen
 
 Nur der sichtbare Satz besitzt Beziehungen zwischen seinen lexikalischen Kindern und Partikeln. Jedes sichtbare Kanji-Wort verweist über `pronunciation-readings` auf genau eine ausgeblendete vollständige Kana-Aussprache, die sich über geordnete `reading-kana` rekonstruiert. Satzdatensätze dürfen keinen parallelen vollständigen Aussprachedatensatz referenzieren, und Aussprachekinder dürfen niemals Geschwisteraussprachen referenzieren, nur weil ihre Wörter im selben Satz vorkommen.
+
+## Mit Vokabeln verknüpfte Satztiteldetails
+
+Setze `input.linkRelationship` des Aussprachefelds eines Satzes auf `words`. Der Host muss die vollständige Aussprache jedes Wortes als Alias erkennen und dabei den sichtbaren Vokabeleintrag als Linkziel beibehalten. Füge weder Aussprachekinder auf Satzebene noch Verknüpfungen zwischen den Lesungen benachbarter Wörter hinzu; jeder Vokabeleintrag besitzt unabhängig seinen Lesepfad zu atomaren Kana.

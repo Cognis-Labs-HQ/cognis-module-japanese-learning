@@ -349,3 +349,9 @@ Replaced character-by-character sentence title links with reviewed lexical and p
 Removed the parallel full-Kana sentence-reading chain. A sentence such as `猫が好き` now owns links only to visible `猫`, `が`, and `好き`; each Kanji word owns exactly one complete Kana child (`ねこ` or `すき`), and those children resolve only to atomic Kana rather than to sentence siblings.
 
 - [274238c377ebb0a5ce4759456a0d433df83810da](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/274238c377ebb0a5ce4759456a0d433df83810da)
+
+## Vocabulary-Linked Sentence Readings
+
+Sentence title details now use the sentence's existing `words` relationship, so complete Kana spans such as `いぬ`, `やま`, and `くる` target the visible `犬`, `山`, and `来る` vocabulary records. Each vocabulary record continues only through its own complete reading to atomic Kana; no parallel sentence-reading chain or sibling-reading link is introduced.
+
+- [3bc0779](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/3bc0779)

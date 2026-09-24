@@ -349,3 +349,9 @@ Die zeichenweisen Satztitel-Links wurden durch geprüfte lexikalische und Partik
 Die parallele vollständige Kana-Satzlesungskette wurde entfernt. Ein Satz wie `猫が好き` besitzt nun nur Links zu sichtbarem `猫`, `が` und `好き`; jedes Kanji-Wort besitzt genau ein vollständiges Kana-Kind (`ねこ` oder `すき`), und diese Kinder lösen sich ausschließlich in atomare Kana auf, statt auf Satzgeschwister zu verweisen.
 
 - [274238c377ebb0a5ce4759456a0d433df83810da](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/274238c377ebb0a5ce4759456a0d433df83810da)
+
+## Mit Vokabeln verknüpfte Satzlesungen
+
+Die Titeldetails eines Satzes verwenden nun dessen bestehende `words`-Beziehung, sodass vollständige Kana-Abschnitte wie `いぬ`, `やま` und `くる` auf die sichtbaren Vokabeleinträge `犬`, `山` und `来る` verweisen. Jeder Vokabeleintrag führt weiterhin nur über seine eigene vollständige Lesung zu atomaren Kana; es entsteht weder eine parallele Satzlesekette noch eine Verknüpfung zwischen Geschwisterlesungen.
+
+- [3bc0779](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/3bc0779)

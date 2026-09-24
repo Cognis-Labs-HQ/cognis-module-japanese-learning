@@ -176,3 +176,7 @@ Kanji kini menerbitkan dependensi nonpresentasional ke setiap Kana atomik yang d
 ## Pelafalan Komposit Milik Induk
 
 Hanya kartu kalimat yang memiliki komposisi kata dan partikelnya. Kalimat seperti `猫が好き` mereferensikan `猫`, `が`, dan `好き` yang terlihat; setiap kata Kanji terlihat mereferensikan satu pelafalan Kana lengkapnya (`ねこ` atau `すき`) yang kemudian diselesaikan ke Kana atomik. Bacaan Kana lengkap tidak pernah membentuk rantai kalimat paralel.
+
+## Bacaan kalimat yang tertaut ke kosakata
+
+Pelafalan kalimat menggunakan hubungan `words` berurutan yang sudah ada untuk tautan mendalam pada detail judul. Setiap rentang Kana lengkap membuka entri kosakata yang terlihat untuk kata tersebut, sedangkan partikel tetap menjadi unsur milik kalimat; kosakata kemudian hanya mengarah melalui bacaan lengkapnya sendiri ke Kana atomik dan tidak pernah ke anak kalimat yang bersebelahan.

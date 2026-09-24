@@ -349,3 +349,9 @@ Tautan judul kalimat per karakter diganti dengan segmen leksikal dan partikel ya
 Rantai bacaan kalimat Kana lengkap paralel telah dihapus. Kalimat seperti `猫が好き` kini hanya memiliki tautan ke `猫`, `が`, dan `好き` yang terlihat; setiap kata Kanji memiliki tepat satu anak Kana lengkap (`ねこ` atau `すき`), dan anak tersebut hanya diselesaikan ke Kana atomik, bukan ke saudara dalam kalimat.
 
 - [274238c377ebb0a5ce4759456a0d433df83810da](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/274238c377ebb0a5ce4759456a0d433df83810da)
+
+## Bacaan Kalimat yang Tertaut ke Kosakata
+
+Detail judul kalimat kini menggunakan hubungan `words` yang sudah ada, sehingga rentang Kana lengkap seperti `いぬ`, `やま`, dan `くる` menargetkan entri kosakata `犬`, `山`, dan `来る` yang terlihat. Setiap entri kosakata tetap hanya berlanjut melalui bacaan lengkapnya sendiri menuju Kana atomik; tidak ada rantai bacaan kalimat paralel maupun tautan antarbacaan saudara.
+
+- [3bc0779](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/3bc0779)

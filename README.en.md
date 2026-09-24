@@ -176,3 +176,7 @@ Kanji now publish non-presentational dependencies to every atomic Kana used by t
 ## Parent-Owned Composite Pronunciations
 
 Sentence cards alone own their word-and-particle composition. A sentence such as `猫が好き` references visible `猫`, `が`, and `好き`; each visible Kanji word references its one complete Kana pronunciation (`ねこ` or `すき`), which resolves onward to atomic Kana. Complete Kana readings never form a parallel sentence chain.
+
+## Vocabulary-linked sentence readings
+
+A sentence pronunciation uses its existing ordered `words` relationship for title-detail deep links. Each complete Kana span therefore opens the visible vocabulary record for that word, while particles remain sentence-owned constituents; the vocabulary then resolves only through its own complete reading to atomic Kana and never to adjacent sentence children.

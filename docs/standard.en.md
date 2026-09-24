@@ -177,3 +177,7 @@ Every Kanji must add one deduplicated `reading-kana-dependency` reference to eac
 ## Parent-Owned Composite Pronunciations
 
 Only the visible sentence owns relationships among its lexical and particle children. Each visible Kanji word links through `pronunciation-readings` to exactly one hidden complete-Kana pronunciation, which reconstructs through ordered `reading-kana`. Sentence records must not reference a parallel complete-pronunciation record, and pronunciation children must never reference sibling pronunciations merely because their words share a sentence.
+
+## Vocabulary-linked sentence title details
+
+Set the sentence pronunciation field's `input.linkRelationship` to `words`. The host must match each word's complete pronunciation as an alias while preserving the visible vocabulary entry as the link target. Do not add sentence-level pronunciation children or links between sibling word readings; each vocabulary record owns its reading path to atomic Kana independently.

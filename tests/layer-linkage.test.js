@@ -288,6 +288,74 @@ test("sentence pronunciations follow visible vocabulary and particles", () => {
     }
 });
 
+test("sentence pronunciation details deep-link complete words", () => {
+    const sentenceLayer = schema.layers.find(({ id }) => id === "sentences");
+    const pronunciationField = sentenceLayer.fields.find(
+        ({ id }) => id === "pronunciation",
+    );
+    assert.equal(pronunciationField.input.linkRelationship, "words");
+
+    const records = loadRecords();
+    const recordsById = new Map(records.map((record) => [record.id, record]));
+    for (const sentence of records.filter(
+        ({ layer }) => layer === "sentences",
+    )) {
+        const wordReferences = orderedReferences(sentence, new Set(["words"]));
+        assert.ok(wordReferences.length > 0, `${sentence.id} has no words`);
+        for (const { entryId } of wordReferences) {
+            const word = recordsById.get(entryId);
+            assert.equal(word.layer, "words");
+            assert.notEqual(word.hidden, true, `${entryId} must be visible`);
+            const pronunciation = word.fields.pronunciation[0];
+            assert.ok(
+                sentence.fields.pronunciation[0].includes(pronunciation),
+                `${sentence.id} must expose ${entryId}'s complete reading`,
+            );
+        }
+        assert.equal(
+            sentence.references.some(
+                ({ relation }) => relation === "pronunciation-readings",
+            ),
+            false,
+            `${sentence.id} must not own a parallel reading chain`,
+        );
+    }
+});
+
+test("dog mountain sentence links Kana spans to independent vocabulary", () => {
+    const records = loadRecords();
+    const recordsById = new Map(records.map((record) => [record.id, record]));
+    const sentence = recordsById.get("ja:sentence:inu-yama-kuru");
+    const words = orderedReferences(sentence, new Set(["words"])).map(
+        ({ entryId }) => recordsById.get(entryId),
+    );
+    assert.deepEqual(
+        words.map(({ label }) => label),
+        ["犬", "山", "来る"],
+    );
+    assert.deepEqual(
+        words.map(({ fields }) => fields.pronunciation[0]),
+        ["いぬ", "やま", "くる"],
+    );
+    for (const word of words) {
+        const readings = orderedReferences(
+            word,
+            new Set(["pronunciation-readings"]),
+        ).map(({ entryId }) => recordsById.get(entryId));
+        assert.deepEqual(
+            readings.map(({ label }) => label),
+            word.fields.pronunciation,
+        );
+        for (const reading of readings) {
+            assert.deepEqual(
+                new Set(reading.references.map(({ relation }) => relation)),
+                new Set(["reading-kana", "definitions"]),
+                `${reading.id} must end at its own Kana`,
+            );
+        }
+    }
+});
+
 test("visible core vocabulary terminates at Kanji and full Kana vocabulary", () => {
     const records = loadRecords();
     const recordsById = new Map(records.map((record) => [record.id, record]));

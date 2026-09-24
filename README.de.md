@@ -176,3 +176,7 @@ Kanji veröffentlichen nun nicht dargestellte Abhängigkeiten zu jedem atomaren 
 ## Vom Elterneintrag bestimmte zusammengesetzte Aussprachen
 
 Nur Satzkarten besitzen die Zusammensetzung aus Wörtern und Partikeln. Ein Satz wie `猫が好き` verweist auf sichtbares `猫`, `が` und `好き`; jedes sichtbare Kanji-Wort verweist auf seine eine vollständige Kana-Aussprache (`ねこ` oder `すき`), die sich anschließend in atomare Kana auflöst. Vollständige Kana-Lesungen bilden niemals eine parallele Satzkette.
+
+## Mit Vokabeln verknüpfte Satzlesungen
+
+Die Aussprache eines Satzes verwendet die bereits geordnete `words`-Beziehung für Deep-Links in den Titeldetails. Jeder vollständige Kana-Abschnitt öffnet damit den sichtbaren Vokabeleintrag des Wortes, während Partikeln Bestandteile des Satzes bleiben; die Vokabel führt anschließend nur über ihre eigene vollständige Lesung zu atomaren Kana und nie zu benachbarten Satzkindern.

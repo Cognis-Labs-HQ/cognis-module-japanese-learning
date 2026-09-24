@@ -177,3 +177,7 @@ Setiap Kanji harus menambahkan satu referensi `reading-kana-dependency` yang ter
 ## Pelafalan Komposit Milik Induk
 
 Hanya kalimat terlihat yang memiliki relasi di antara anak leksikal dan partikelnya. Setiap kata Kanji terlihat menaut melalui `pronunciation-readings` ke tepat satu pelafalan Kana lengkap tersembunyi yang direkonstruksi melalui `reading-kana` terurut. Data kalimat tidak boleh mereferensikan data pelafalan lengkap paralel, dan anak pelafalan tidak boleh mereferensikan pelafalan saudara hanya karena kata-katanya berada dalam kalimat yang sama.
+
+## Detail judul kalimat yang tertaut ke kosakata
+
+Tetapkan `input.linkRelationship` bidang pelafalan kalimat ke `words`. Host harus mencocokkan pelafalan lengkap setiap kata sebagai alias sambil mempertahankan entri kosakata yang terlihat sebagai target tautan. Jangan menambahkan anak pelafalan tingkat kalimat atau tautan antarbaca kata yang bersaudara; setiap entri kosakata memiliki jalur bacaannya sendiri menuju Kana atomik secara mandiri.
