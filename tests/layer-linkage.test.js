@@ -240,7 +240,7 @@ test("teacher vocabulary traverses Kanji readings to atomic Kana", () => {
     for (const reading of readings) {
         assertOrderedComposition(
             reading,
-            new Set(["kana-spelling"]),
+            new Set(["reading-kana"]),
             reading.label,
             recordsById,
         );
@@ -280,7 +280,7 @@ test("sentence pronunciations resolve through vocabulary and atomic Kana", () =>
         const reading = recordsById.get(readingReference.entryId);
         const composition = orderedReferences(
             reading,
-            new Set(["kana-spelling"]),
+            new Set(["reading-kana"]),
         );
         assert.equal(reading.hidden, true);
         assert.equal(reading.label, sentence.fields.pronunciation[0]);
@@ -295,8 +295,7 @@ test("sentence pronunciations resolve through vocabulary and atomic Kana", () =>
             composition.every(({ entryId, relation }) => {
                 const target = recordsById.get(entryId);
                 return (
-                    relation === "kana-spelling" &&
-                    target.layer === "characters"
+                    relation === "reading-kana" && target.layer === "characters"
                 );
             }),
         );
@@ -338,16 +337,16 @@ test("hidden readings compose directly from atomic Kana", () => {
     const reading = recordsById.get("ja:word:reading-naosu");
     const composition = orderedReferences(
         reading,
-        new Set(["kana-spelling"]),
+        new Set(["reading-kana"]),
     ).map(({ entryId, relation }) => ({
         label: recordsById.get(entryId).label,
         relation,
     }));
 
     assert.deepEqual(composition, [
-        { label: "な", relation: "kana-spelling" },
-        { label: "お", relation: "kana-spelling" },
-        { label: "す", relation: "kana-spelling" },
+        { label: "な", relation: "reading-kana" },
+        { label: "お", relation: "reading-kana" },
+        { label: "す", relation: "reading-kana" },
     ]);
 });
 
@@ -356,7 +355,7 @@ test("reading titles use atomic Kana without recursive word links", () => {
     const recordsById = new Map(records.map((record) => [record.id, record]));
     const wordLayer = schema.layers.find(({ id }) => id === "words");
     assert.equal(
-        wordLayer.relationships.find(({ id }) => id === "kana-spelling")
+        wordLayer.relationships.find(({ id }) => id === "reading-kana")
             .presentationRole,
         "composition",
     );
@@ -366,13 +365,13 @@ test("reading titles use atomic Kana without recursive word links", () => {
     )) {
         assertOrderedComposition(
             reading,
-            new Set(["kana-spelling"]),
+            new Set(["reading-kana"]),
             reading.label,
             recordsById,
         );
         assert.equal(
             reading.references.some(({ relation }) =>
-                ["word-spelling", "reading-kana"].includes(relation),
+                ["word-spelling", "kana-spelling"].includes(relation),
             ),
             false,
             `${reading.id} must not route its title back through another word`,

@@ -289,3 +289,9 @@ Penghitung hari leksikal `か` kini merupakan Kosakata `lexical:counter` yang te
 Judul pelafalan tersembunyi kini disusun langsung dari tautan Kana atomik masing-masing. Membuka bacaan Kanji tidak lagi mengarah melalui kartu bacaan turunan Kanji lain atau menampilkan ejaan alternatif pada detail judul kartu.
 
 - [631e76b6c2471aff02f37e982ece772fe7ad266c](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/631e76b6c2471aff02f37e982ece772fe7ad266c)
+
+## Komposisi Bacaan yang Aman Diaktifkan
+
+Judul bacaan kini memakai relasi komposisi khusus `reading-kana`, sedangkan `kana-spelling` mempertahankan peran ejaan alternatif yang didukung. Navigasi judul langsung ke Kana tetap tersedia tanpa membuat validasi paket konten menolak pengaktifan modul.
+
+- [2187c82db49d331797cbb015e4665ad7ccb5264b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/2187c82db49d331797cbb015e4665ad7ccb5264b)

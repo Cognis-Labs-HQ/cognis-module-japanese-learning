@@ -163,4 +163,4 @@ Jede Satzaussprache öffnet nun einen verborgenen vollständigen Lesungsdatensat
 
 ## Direkt mit Kana verknüpfte Lesungstitel
 
-Ausgeblendete Aussprachedatensätze setzen ihre Titel jetzt direkt aus atomaren Kana zusammen. Das Öffnen einer Kanji-Aussprache führt daher zu einzeln verknüpften Kana, statt über eine weitere Lese- oder Kanji-Karte zurückzuführen; im Titel wird außerdem kein Detail zur alternativen Schreibweise mehr angezeigt.
+Ausgeblendete Aussprachedatensätze setzen ihre Titel jetzt über die reine Kompositionsbeziehung `reading-kana` direkt aus atomaren Kana zusammen. Das Öffnen einer Kanji-Aussprache führt daher zu einzeln verknüpften Kana, statt über eine weitere Lese- oder Kanji-Karte zurückzuführen; im Titel wird außerdem kein Detail zur alternativen Schreibweise mehr angezeigt.

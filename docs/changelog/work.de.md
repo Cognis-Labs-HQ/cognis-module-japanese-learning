@@ -289,3 +289,9 @@ Der lexikalische Tageszähler `か` ist nun sichtbares Vokabular der Klasse `lex
 Titel ausgeblendeter Aussprachedatensätze setzen sich jetzt direkt aus ihren einzelnen atomaren Kana-Links zusammen. Beim Öffnen einer Kanji-Lesung wird nicht mehr über eine weitere vom Kanji abgeleitete Lesungskarte navigiert und die alternative Schreibweise erscheint nicht mehr im Kartentiteldetail.
 
 - [631e76b6c2471aff02f37e982ece772fe7ad266c](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/631e76b6c2471aff02f37e982ece772fe7ad266c)
+
+## Aktivierungssichere Lesungszusammensetzung
+
+Lesungstitel verwenden jetzt die vorgesehene Kompositionsbeziehung `reading-kana`, während `kana-spelling` seine unterstützte Rolle als alternative Schreibweise behält. Dadurch bleibt die direkte Kana-Navigation erhalten, ohne dass die Inhaltsvalidierung die Modulaktivierung ablehnt.
+
+- [2187c82db49d331797cbb015e4665ad7ccb5264b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/2187c82db49d331797cbb015e4665ad7ccb5264b)

@@ -289,3 +289,9 @@ The lexical day-counter `か` is now visible `lexical:counter` Vocabulary rather
 Hidden pronunciation titles now compose directly from their individual atomic Kana links. Opening a Kanji reading no longer routes through another Kanji-derived reading card or exposes the alternate spelling in the card-title detail.
 
 - [631e76b6c2471aff02f37e982ece772fe7ad266c](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/631e76b6c2471aff02f37e982ece772fe7ad266c)
+
+## Enable-Safe Reading Composition
+
+Reading titles now use the schema's dedicated `reading-kana` composition relationship, while `kana-spelling` retains its supported alternate-spelling role. This preserves direct Kana title navigation without causing content-pack validation to reject module enablement.
+
+- [2187c82db49d331797cbb015e4665ad7ccb5264b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/2187c82db49d331797cbb015e4665ad7ccb5264b)

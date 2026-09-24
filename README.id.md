@@ -163,4 +163,4 @@ Setiap pelafalan kalimat kini membuka rekaman bacaan lengkap tersembunyi yang se
 
 ## Judul Bacaan dengan Tautan Kana Langsung
 
-Data pelafalan tersembunyi kini menyusun judulnya langsung dari Kana atomik. Membuka pelafalan Kanji karena itu menuju ke setiap Kana yang tertaut, bukan kembali melalui kartu bacaan atau Kanji lain, dan judul tidak lagi menampilkan detail ejaan alternatif.
+Data pelafalan tersembunyi kini menyusun judulnya langsung dari Kana atomik melalui relasi khusus komposisi `reading-kana`. Membuka pelafalan Kanji karena itu menuju ke setiap Kana yang tertaut, bukan kembali melalui kartu bacaan atau Kanji lain, dan judul tidak lagi menampilkan detail ejaan alternatif.

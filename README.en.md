@@ -143,7 +143,7 @@ The pack now includes more than thirty additional everyday Vocabulary records, t
 
 ## Kanji-first core graph
 
-The compact core now uses conventional Kanji spellings throughout. Sentences reference visible vocabulary, visible vocabulary references its Kanji and hidden pronunciation segments, and every hidden segment reconstructs from atomic Kana. For example, `私は学生` resolves through `私` → `わたし` → `わ`・`た`・`し` and `学生` → `がく`・`せい` → atomic Kana.
+The compact core now uses conventional Kanji spellings throughout. Sentences reference visible vocabulary, visible vocabulary references its Kanji and hidden pronunciation segments, and every hidden segment reconstructs from atomic Kana through the composition-only `reading-kana` relationship. For example, `私は学生` resolves through `私` → `わたし` → `わ`・`た`・`し` and `学生` → `がく`・`せい` → atomic Kana.
 
 ## Latest PR 226 record controls
 
@@ -163,4 +163,4 @@ Every sentence pronunciation now opens a hidden complete-reading record whose se
 
 ## Direct Kana Reading Titles
 
-Hidden pronunciation records now compose their titles directly from atomic Kana. Opening a Kanji pronunciation therefore leads to individually linked Kana instead of routing back through another reading or Kanji card, and the title no longer presents an alternate-spelling detail.
+Hidden pronunciation records now compose their titles directly from atomic Kana through the composition-only `reading-kana` relationship. Opening a Kanji pronunciation therefore leads to individually linked Kana instead of routing back through another reading or Kanji card, and the title no longer presents an alternate-spelling detail.

@@ -164,4 +164,4 @@ Tautan pembelajaran yang ditulis membentuk graf berarah tanpa siklus, dan karakt
 
 ## Komposisi Kana Langsung untuk Judul Bacaan
 
-Setiap data pelafalan tersembunyi menyusun judul lengkapnya langsung dari Kana atomik yang terurut melalui `kana-spelling`. Untuk data bacaan, relasi ini memiliki peran presentasi `composition`: jangan arahkan judul bacaan melalui `word-spelling` atau `reading-kana`, karena hal itu menghasilkan navigasi kartu yang rekursif atau menyesatkan.
+Setiap data pelafalan tersembunyi menyusun judul lengkapnya langsung dari Kana atomik yang terurut melalui relasi khusus komposisi `reading-kana`. Untuk data bacaan, relasi ini memiliki peran presentasi `composition`: jangan arahkan judul bacaan melalui `word-spelling` atau relasi ejaan alternatif, karena hal itu menghasilkan navigasi kartu yang rekursif atau menyesatkan.

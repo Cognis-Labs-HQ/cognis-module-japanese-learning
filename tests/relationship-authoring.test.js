@@ -90,7 +90,7 @@ test("vocabulary compositions use the closest structural records", () => {
         ["ja:word:reading-nihon", "ja:word:reading-go"],
     );
     assert.equal(
-        labelsFor(recordsById.get("ja:word:reading-nihon"), ["kana-spelling"]),
+        labelsFor(recordsById.get("ja:word:reading-nihon"), ["reading-kana"]),
         "にほん",
     );
 });
@@ -144,7 +144,12 @@ test("Kanji readings and particles resolve through authored Kana links", () => {
                 assert.equal(reading.hidden, undefined);
                 assert.ok(reading.class.startsWith("lexical:"));
             }
-            assert.equal(labelsFor(reading, ["kana-spelling"]), reading.label);
+            assert.equal(
+                labelsFor(reading, [
+                    reading.hidden ? "reading-kana" : "kana-spelling",
+                ]),
+                reading.label,
+            );
         }
     }
     const ga = recordsById.get("ja:particle:ga");

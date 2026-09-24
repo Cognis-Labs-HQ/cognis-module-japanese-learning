@@ -164,4 +164,4 @@ Verfasste Lernverknüpfungen bilden einen gerichteten azyklischen Graphen, und K
 
 ## Direkte Kana-Zusammensetzung für Lesungstitel
 
-Jeder ausgeblendete Aussprachedatensatz setzt seinen vollständigen Titel über `kana-spelling` direkt aus geordneten atomaren Kana zusammen. Für Lesungsdatensätze hat diese Beziehung die Darstellungsrolle `composition`: Ein Lesungstitel darf nicht über `word-spelling` oder `reading-kana` geführt werden, da dies eine rekursive oder irreführende Kartennavigation erzeugt.
+Jeder ausgeblendete Aussprachedatensatz setzt seinen vollständigen Titel über die reine Kompositionsbeziehung `reading-kana` direkt aus geordneten atomaren Kana zusammen. Für Lesungsdatensätze hat diese Beziehung die Darstellungsrolle `composition`: Ein Lesungstitel darf nicht über `word-spelling` oder die Beziehung für alternative Schreibweisen geführt werden, da dies eine rekursive oder irreführende Kartennavigation erzeugt.

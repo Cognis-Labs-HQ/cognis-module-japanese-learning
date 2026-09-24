@@ -289,3 +289,9 @@ Cognis PR #214 に合わせ、名前空間の所有権、ローカライズ済�
 非表示の発音タイトルを、個々の原子的なかなリンクから直接構成するようにしました。漢字の読みを開いても、別の漢字由来の読みカードへ戻ることがなく、カードタイトルの詳細に代替表記も表示されません。
 
 - [631e76b6c2471aff02f37e982ece772fe7ad266c](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/631e76b6c2471aff02f37e982ece772fe7ad266c)
+
+## 有効化可能な読み構成
+
+読みタイトルには専用の構成関係 `reading-kana` を使用し、`kana-spelling` はサポートされる代替表記ロールに戻しました。これにより、コンテンツパック検証でモジュールの有効化が拒否されることなく、かなへの直接タイトル移動を維持します。
+
+- [2187c82db49d331797cbb015e4665ad7ccb5264b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/2187c82db49d331797cbb015e4665ad7ccb5264b)

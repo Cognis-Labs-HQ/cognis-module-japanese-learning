@@ -428,8 +428,11 @@ test("kanji readings reference distinct kana-backed vocabulary entries", () => {
             ),
         );
         for (const readingWord of readingWords) {
+            const compositionRelation = readingWord.hidden
+                ? "reading-kana"
+                : "kana-spelling";
             const spelling = readingWord.references
-                .filter(({ relation }) => relation === "kana-spelling")
+                .filter(({ relation }) => relation === compositionRelation)
                 .sort((left, right) => left.position - right.position)
                 .map(({ entryId }) => characters.get(entryId));
             assert.equal(
