@@ -185,3 +185,7 @@ Tetapkan `input.linkRelationship` bidang pelafalan kalimat ke `words`. Host haru
 ## Batas pelafalan milik kosakata
 
 Jika bacaan Kanji terdapat dalam entri kosakata terlihat yang telah dibuat, arahkan tautan pelafalan Kanji ke kosakata tersebut. Hanya kosakata yang boleh memiliki pembungkus pelafalan lengkap. Di dalamnya, tautkan rentang bermakna yang berasal dari Kanji melalui bacaan tersembunyi terdekat dan tautkan setiap sufiks Kana tunggal yang tersisa secara langsung dengan `reading-kana`; jangan membuat rekaman pelafalan untuk sufiks tersebut atau menghubungkannya ke bacaan yang bersebelahan.
+
+## Tautan pelafalan kalimat lengkap
+
+Input pelafalan kalimat harus mendeklarasikan setiap hubungan unsur yang dapat menyediakan segmen bacaan yang ditampilkan. Pertahankan `linkRelationship: "words"` untuk kompatibilitas dan deklarasikan `linkRelationships: ["words", "particles"]` untuk resolusi lengkap. Host harus menggabungkan referensi berurutan tersebut dan mencocokkan alias pelafalan setiap target agar kata membuka kosakata dan partikel membuka rekaman partikel.

@@ -184,3 +184,7 @@ Die Aussprache eines Satzes verwendet die bereits geordnete `words`-Beziehung f�
 ## Kanji-Lesungen zu Vokabeln
 
 Eine Kanji-Aussprache verknüpft sich mit der nächstgelegenen sichtbaren Vokabel, die das Kanji verwendet. Nur die Vokabel besitzt den vollständigen Ausspracheeintrag: bedeutungstragende, vom Kanji abgeleitete Abschnitte verwenden verborgene Lesungen erneut, während ein verbleibendes einzelnes Kana-Suffix direkt auf das atomare Kana verweist. So öffnet `好` die Vokabel `好き`; deren Lesung `すき` besteht aus dem Kanji-Abschnitt `す` und dem atomaren `き`, ohne einen eigenständigen Ausspracheeintrag für `き` anzulegen.
+
+## Vollständig verknüpfte Satzaussprache
+
+Die Aussprachedetails eines Satzes deklarieren sowohl `words` als auch `particles` als Linkquellen. Die Lesung `がっこうにいく` verknüpft ihre vollständigen Abschnitte daher mit dem sichtbaren `学校`, der Partikel `に` und dem sichtbaren `行く`, ohne einen parallelen Satzleseeintrag einzuführen.

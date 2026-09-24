@@ -288,25 +288,35 @@ test("sentence pronunciations follow visible vocabulary and particles", () => {
     }
 });
 
-test("sentence pronunciation details deep-link complete words", () => {
+test("sentence pronunciation details deep-link words and particles", () => {
     const sentenceLayer = schema.layers.find(({ id }) => id === "sentences");
     const pronunciationField = sentenceLayer.fields.find(
         ({ id }) => id === "pronunciation",
     );
     assert.equal(pronunciationField.input.linkRelationship, "words");
+    assert.deepEqual(pronunciationField.input.linkRelationships, [
+        "words",
+        "particles",
+    ]);
 
     const records = loadRecords();
     const recordsById = new Map(records.map((record) => [record.id, record]));
     for (const sentence of records.filter(
         ({ layer }) => layer === "sentences",
     )) {
-        const wordReferences = orderedReferences(sentence, new Set(["words"]));
-        assert.ok(wordReferences.length > 0, `${sentence.id} has no words`);
-        for (const { entryId } of wordReferences) {
-            const word = recordsById.get(entryId);
-            assert.equal(word.layer, "words");
-            assert.notEqual(word.hidden, true, `${entryId} must be visible`);
-            const pronunciation = word.fields.pronunciation[0];
+        const pronunciationReferences = orderedReferences(
+            sentence,
+            new Set(pronunciationField.input.linkRelationships),
+        );
+        assert.ok(
+            pronunciationReferences.length > 0,
+            `${sentence.id} has no pronunciation links`,
+        );
+        for (const { entryId, relation } of pronunciationReferences) {
+            const target = recordsById.get(entryId);
+            assert.equal(target.layer, relation);
+            assert.notEqual(target.hidden, true, `${entryId} must be visible`);
+            const pronunciation = target.fields.pronunciation[0];
             assert.ok(
                 sentence.fields.pronunciation[0].includes(pronunciation),
                 `${sentence.id} must expose ${entryId}'s complete reading`,
@@ -320,6 +330,29 @@ test("sentence pronunciation details deep-link complete words", () => {
             `${sentence.id} must not own a parallel reading chain`,
         );
     }
+});
+
+test("school sentence links every displayed pronunciation segment", () => {
+    const recordsById = new Map(
+        loadRecords().map((record) => [record.id, record]),
+    );
+    const sentence = recordsById.get("ja:sentence:gakkou-ni-iku");
+    const links = orderedReferences(
+        sentence,
+        new Set(["words", "particles"]),
+    ).map(({ entryId }) => recordsById.get(entryId));
+    assert.deepEqual(
+        links.map(({ id }) => id),
+        ["ja:word:gakkou", "ja:particle:ni", "ja:word:iku"],
+    );
+    assert.deepEqual(
+        links.map(({ fields }) => fields.pronunciation[0]),
+        ["がっこう", "に", "いく"],
+    );
+    assert.equal(
+        links.map(({ fields }) => fields.pronunciation[0]).join(""),
+        sentence.fields.pronunciation[0],
+    );
 });
 
 test("dog mountain sentence links Kana spans to independent vocabulary", () => {

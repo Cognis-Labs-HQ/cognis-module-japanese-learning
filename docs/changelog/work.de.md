@@ -361,3 +361,9 @@ Die Titeldetails eines Satzes verwenden nun dessen bestehende `words`-Beziehung,
 Kanji-Aussprachelinks bevorzugen nun die sichtbare Vokabel, die die Lesung verwendet. Nur diese Vokabel besitzt den vollständigen Aussprache-Wrapper, der bedeutungstragende Kanji-Leseabschnitte wiederverwendet und verbleibende einzelne Kana-Suffixe direkt zu atomaren Kana führt. Beispielsweise verknüpft `好` zu `好き`, während dessen vollständige Lesung `すき` den Kanji-Abschnitt `す` und das atomare `き` verwendet, ohne eine eigenständige Aussprachekarte für `き` anzulegen.
 
 - [b20b4e3](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/b20b4e3)
+
+## Vollständige Links der Satzaussprache
+
+Die Metadaten der Satzaussprache deklarieren nun sowohl Wort- als auch Partikelbeziehungen als Deep-Link-Quellen. `がっこうにいく` wird dadurch in die sichtbare Vokabel `学校`, die Partikel `に` und die sichtbare Vokabel `行く` aufgelöst, während der satzseitig besessene Graph ohne synthetischen vollständigen Leseeintrag erhalten bleibt.
+
+- [860a01e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/860a01e)

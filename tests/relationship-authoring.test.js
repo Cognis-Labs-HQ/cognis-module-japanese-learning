@@ -48,6 +48,9 @@ test("fields publish provider-owned editor controls", () => {
             if (field.input.linkRelationship) {
                 assert.ok(relationshipIds.has(field.input.linkRelationship));
             }
+            for (const relationship of field.input.linkRelationships ?? []) {
+                assert.ok(relationshipIds.has(relationship));
+            }
             for (const option of field.input.options ?? []) {
                 assert.deepEqual(Object.keys(option.metadata.labels).sort(), [
                     "de",

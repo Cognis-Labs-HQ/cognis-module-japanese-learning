@@ -184,3 +184,7 @@ Pelafalan kalimat menggunakan hubungan `words` berurutan yang sudah ada untuk ta
 ## Bacaan Kanji ke kosakata
 
 Pelafalan Kanji tertaut ke kosakata terlihat terdekat yang menggunakannya. Hanya kosakata tersebut yang memiliki rekaman pelafalan lengkap: rentang bermakna yang berasal dari Kanji memakai ulang bacaan tersembunyi, sedangkan satu sufiks Kana yang tersisa tertaut langsung ke Kana atomik. Dengan demikian `好` membuka `好き`, yang bacaan `すき`-nya tersusun dari rentang Kanji `す` dan `き` atomik; tidak dibuat kartu pelafalan tersendiri untuk `き`.
+
+## Pelafalan kalimat yang tertaut sepenuhnya
+
+Detail pelafalan kalimat mendeklarasikan `words` dan `particles` sebagai sumber tautan. Karena itu, bacaan `がっこうにいく` menautkan segmen lengkapnya ke `学校` yang terlihat, partikel `に`, dan `行く` yang terlihat tanpa memperkenalkan rekaman bacaan kalimat paralel.

@@ -361,3 +361,9 @@ Detail judul kalimat kini menggunakan hubungan `words` yang sudah ada, sehingga 
 Tautan pelafalan Kanji kini mengutamakan kosakata terlihat yang memakai bacaan tersebut. Hanya kosakata itu yang memiliki pembungkus pelafalan lengkap, yang memakai ulang rentang bacaan Kanji bermakna dan mengarahkan sufiks Kana tunggal yang tersisa langsung ke Kana atomik. Contohnya, `好` tertaut ke `好き`, sedangkan bacaan lengkap `すき` memakai rentang Kanji `す` dan `き` atomik tanpa membuat kartu pelafalan `き` tersendiri.
 
 - [b20b4e3](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/b20b4e3)
+
+## Tautan Pelafalan Kalimat Lengkap
+
+Metadata pelafalan kalimat kini mendeklarasikan hubungan kata dan partikel sebagai sumber tautan mendalam. Dengan demikian `がっこうにいく` diuraikan menjadi kosakata `学校` yang terlihat, partikel `に`, dan kosakata `行く` yang terlihat, sambil mempertahankan graf milik kalimat tanpa rekaman bacaan lengkap sintetis.
+
+- [860a01e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/860a01e)

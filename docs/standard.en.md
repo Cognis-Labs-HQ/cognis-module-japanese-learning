@@ -185,3 +185,7 @@ Set the sentence pronunciation field's `input.linkRelationship` to `words`. The 
 ## Vocabulary-owned pronunciation boundaries
 
 When a Kanji reading occurs inside an authored visible vocabulary record, target that vocabulary from the Kanji pronunciation link. Only the vocabulary may own the complete pronunciation wrapper. Within that wrapper, link meaningful Kanji-derived spans through the closest hidden reading and link every remaining single-Kana suffix directly with `reading-kana`; never create a pronunciation record for such a suffix or connect it to an adjacent reading.
+
+## Complete sentence pronunciation links
+
+A sentence pronunciation input must declare every constituent relationship that can supply a displayed reading segment. Keep `linkRelationship: "words"` for compatibility and declare `linkRelationships: ["words", "particles"]` for complete resolution. The host must merge those ordered references and match each target's pronunciation alias, so words open vocabulary and particles open particle records.

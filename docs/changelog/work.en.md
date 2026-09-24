@@ -361,3 +361,9 @@ Sentence title details now use the sentence's existing `words` relationship, so 
 Kanji pronunciation links now prefer the visible vocabulary that uses the reading. That vocabulary alone owns the complete pronunciation wrapper, which reuses meaningful Kanji-reading spans and sends remaining single-Kana suffixes directly to atomic Kana. For example, `好` links to `好き`, while its complete `すき` reading uses the `す` Kanji span and atomic `き` without creating a standalone `き` pronunciation card.
 
 - [b20b4e3](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/b20b4e3)
+
+## Complete Sentence Pronunciation Links
+
+Sentence pronunciation metadata now declares both word and particle relationships as deep-link sources. `がっこうにいく` consequently resolves into the visible `学校` vocabulary, the `に` particle, and the visible `行く` vocabulary, while retaining the parent-owned sentence graph without a synthetic full-reading record.
+
+- [860a01e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/860a01e)

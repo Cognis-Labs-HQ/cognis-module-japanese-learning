@@ -1,6 +1,6 @@
 {
     "id": "japanese-core",
-    "version": 50,
+    "version": 51,
     "namespace": "ja",
     "language": "ja",
     "metadata": {
@@ -878,7 +878,8 @@
                     },
                     "input": {
                         "control": "tagList",
-                        "linkRelationship": "words"
+                        "linkRelationship": "words",
+                        "linkRelationships": ["words", "particles"]
                     }
                 }
             ],

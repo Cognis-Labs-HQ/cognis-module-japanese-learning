@@ -185,3 +185,7 @@ Setze `input.linkRelationship` des Aussprachefelds eines Satzes auf `words`. Der
 ## Vokabeleigene Aussprachegrenzen
 
 Wenn eine Kanji-Lesung in einem vorhandenen sichtbaren Vokabeleintrag vorkommt, muss der Aussprachelink des Kanji auf diese Vokabel zielen. Nur die Vokabel darf den vollständigen Aussprache-Wrapper besitzen. Darin werden bedeutungstragende Kanji-Abschnitte über die nächstgelegene verborgene Lesung verknüpft und jedes verbleibende einzelne Kana-Suffix direkt mit `reading-kana`; für ein solches Suffix darf weder ein Ausspracheeintrag noch eine Verbindung zu einer benachbarten Lesung entstehen.
+
+## Vollständige Links der Satzaussprache
+
+Die Eingabe einer Satzaussprache muss jede Bestandteilsbeziehung deklarieren, die einen angezeigten Leseabschnitt liefern kann. Behalte `linkRelationship: "words"` zur Kompatibilität bei und deklariere `linkRelationships: ["words", "particles"]` für die vollständige Auflösung. Der Host muss diese geordneten Referenzen zusammenführen und den Aussprachealias jedes Ziels abgleichen, sodass Wörter Vokabeln und Partikeln Partikeleinträge öffnen.

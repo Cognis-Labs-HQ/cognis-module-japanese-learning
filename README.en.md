@@ -184,3 +184,7 @@ A sentence pronunciation uses its existing ordered `words` relationship for titl
 ## Kanji-to-vocabulary readings
 
 A Kanji pronunciation links to the nearest visible vocabulary that uses it. The vocabulary alone owns the complete pronunciation record: meaningful Kanji-derived spans reuse hidden readings, while a remaining single Kana suffix links directly to the atomic Kana. Thus `好` opens `好き`, whose `すき` reading composes from the Kanji span `す` and atomic `き`; no standalone pronunciation card is created for `き`.
+
+## Fully linked sentence pronunciations
+
+Sentence pronunciation details declare both `words` and `particles` as link sources. The reading `がっこうにいく` therefore links its complete segments to visible `学校`, particle `に`, and visible `行く`, without introducing a parallel sentence-reading record.
