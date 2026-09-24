@@ -319,3 +319,9 @@ Perombakan luas graf leksikal yang menyebabkan pengaktifan Study Library gagal d
 Graf kartu yang disederhanakan diterapkan tanpa menghapus data penyedia yang mungkin sudah ada dalam instalasi. Kartu Kanji dan Kosakata aktif kini menaut langsung ke endpoint leksikal, Kanji, dan Kana yang tepat; bacaan tersembunyi yang digantikan dilepas tetapi dipertahankan untuk pembaruan basis data yang aman. Kartu khusus bacaan tidak lagi mengaku sebagai kelas Kanji dan kartu Kana tidak lagi mengulang tag sistem tulisannya.
 
 - [997392f71fd178e43599bc8d27be786839b98b8b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/997392f71fd178e43599bc8d27be786839b98b8b)
+
+## Solusi Instalasi melalui Peningkatan Skema
+
+Skema konten bahasa Jepang dinaikkan ke revisi 46 agar Cognis menyisipkan skema yang telah dibersihkan, bukan menjalankan perintah pembaruan skema versi-sama yang rusak dari PR #226. Tindak lanjut host didokumentasikan secara tepat: perintah tersebut memberikan `values`, padahal gateway basis data terstruktur memerlukan `set`, sehingga PostgreSQL menghasilkan kegagalan `Object.entries(undefined)` yang dilaporkan.
+
+- [bb20511152a80522055af67e6895ff28e5d9b8c8](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/bb20511152a80522055af67e6895ff28e5d9b8c8)

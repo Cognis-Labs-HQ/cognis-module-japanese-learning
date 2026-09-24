@@ -1,0 +1,3 @@
+# Study Library Host Follow-Up
+
+- Cognis PR #226 updates a previously registered content-pack schema with an `UPDATE` structured command that supplies `values`, while the DB command contract reads `set`. PostgreSQL therefore reaches `Object.entries(command.set)` with `undefined` and reports `Cannot convert undefined or null to object`. Change the schema update in `src/adapters/study/library/store.ts` to use `set: { schema_json: JSON.stringify(schema) }`, and add a PostgreSQL-dialect regression test for upgrading an owned schema at the same schema version. This pack advances its schema revision to avoid that broken update path until the host fix ships.

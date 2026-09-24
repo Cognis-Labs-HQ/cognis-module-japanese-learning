@@ -319,3 +319,9 @@ Reverted the broad lexical graph rewrite that caused Study Library activation to
 Applied the simplified card graph without deleting provider records that may already exist in an installation. Current Kanji and Vocabulary cards link directly to the intended lexical, Kanji, and Kana endpoints; superseded hidden readings are detached but retained for safe database updates. Reading-only cards no longer claim the Kanji class, and Kana cards no longer repeat their writing-system tag.
 
 - [997392f71fd178e43599bc8d27be786839b98b8b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/997392f71fd178e43599bc8d27be786839b98b8b)
+
+## Schema Upgrade Installation Workaround
+
+Advanced the Japanese content schema to revision 46 so Cognis inserts the sanitized schema instead of exercising PR #226's broken same-version schema update command. The host follow-up is documented precisely: that command supplies `values` although the structured database gateway requires `set`, causing the reported `Object.entries(undefined)` failure on PostgreSQL.
+
+- [bb20511152a80522055af67e6895ff28e5d9b8c8](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/bb20511152a80522055af67e6895ff28e5d9b8c8)

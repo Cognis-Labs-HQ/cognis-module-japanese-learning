@@ -319,3 +319,9 @@ Die umfassende Umgestaltung des lexikalischen Graphen, die bei der Study-Library
 Der vereinfachte Kartengraph wurde umgesetzt, ohne bereits in einer Installation vorhandene Provider-Datensätze zu löschen. Aktuelle Kanji- und Vokabularkarten verweisen direkt auf die vorgesehenen lexikalischen, Kanji- und Kana-Endpunkte; ersetzte ausgeblendete Lesungen sind getrennt, bleiben aber für sichere Datenbankaktualisierungen erhalten. Reine Lesungskarten tragen nicht mehr die Kanji-Klasse und Kana-Karten wiederholen ihr Schriftsystem-Tag nicht mehr.
 
 - [997392f71fd178e43599bc8d27be786839b98b8b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/997392f71fd178e43599bc8d27be786839b98b8b)
+
+## Installationsumgehung durch Schema-Aktualisierung
+
+Das japanische Inhaltsschema wurde auf Revision 46 angehoben, damit Cognis das bereinigte Schema einfügt, statt den fehlerhaften gleichversionierten Schema-Update-Befehl aus PR #226 auszuführen. Die Host-Nacharbeit ist genau dokumentiert: Der Befehl liefert `values`, obwohl das strukturierte Datenbank-Gateway `set` erwartet, wodurch unter PostgreSQL der gemeldete Fehler `Object.entries(undefined)` entsteht.
+
+- [bb20511152a80522055af67e6895ff28e5d9b8c8](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/bb20511152a80522055af67e6895ff28e5d9b8c8)
