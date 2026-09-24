@@ -301,3 +301,9 @@ Judul bacaan kini memakai relasi komposisi khusus `reading-kana`, sedangkan `kan
 Pembungkus Kosakata pelafalan yang berlebihan telah dihapus. Kosakata Kanji terlihat kini menaut langsung ke Kanji dan Kana atomik, bacaan Kanji mengutamakan entri leksikal terlihat yang cocok seperti `猫`, dan bacaan tersembunyi yang tersisa memakai kelas pelafalan alih-alih tampil sebagai Kanji. Kartu Kana kini memiliki satu lencana sistem tulisan tanpa tag kelas ganda.
 
 - [697459a2379a0d11ce7fcc1ad947dacbe7d556a3](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/697459a2379a0d11ce7fcc1ad947dacbe7d556a3)
+
+## Berkas Konten yang Dapat Diimpor
+
+Dua berkas JSON Kosakata kosong yang tersisa setelah normalisasi bacaan telah dihapus. Setiap berkas konten yang ditemukan kini berisi sedikitnya satu data sehingga pengimpor Study Library tidak mencoba memeriksa data yang tidak terdefinisi saat modul diaktifkan.
+
+- [423a3250facb90f3435fc28faee469aa63bacceb](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/423a3250facb90f3435fc28faee469aa63bacceb)

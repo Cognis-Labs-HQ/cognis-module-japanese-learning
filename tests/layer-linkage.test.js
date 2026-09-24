@@ -563,3 +563,23 @@ test("layer checks reject content whose required links are removed", () => {
         "definition layer accepted an orphaned entry",
     );
 });
+
+test("every content shard contains at least one record", () => {
+    for (const directory of readdirSync(CONTENT_ROOT, {
+        withFileTypes: true,
+    })) {
+        if (!directory.isDirectory()) continue;
+        const directoryPath = path.join(CONTENT_ROOT, directory.name);
+        for (const fileName of readdirSync(directoryPath).filter((name) =>
+            name.endsWith(".json"),
+        )) {
+            const records = JSON.parse(
+                readFileSync(path.join(directoryPath, fileName), "utf8"),
+            );
+            assert.ok(
+                Array.isArray(records) && records.length > 0,
+                `${directory.name}/${fileName} must not be an empty shard`,
+            );
+        }
+    }
+});

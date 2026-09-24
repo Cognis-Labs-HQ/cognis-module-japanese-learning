@@ -301,3 +301,9 @@ Lesungstitel verwenden jetzt die vorgesehene Kompositionsbeziehung `reading-kana
 Redundante Aussprache-Vokabularhüllen wurden entfernt. Sichtbares Kanji-Vokabular verweist nun direkt auf Kanji und atomare Kana, Kanji-Lesungen bevorzugen den passenden sichtbaren lexikalischen Eintrag wie `猫`, und verbleibende ausgeblendete Lesungen verwenden die Ausspracheklasse, statt als Kanji zu erscheinen. Kana-Karten tragen nun ein einziges Schriftsystem-Abzeichen ohne doppelten Klassen-Tag.
 
 - [697459a2379a0d11ce7fcc1ad947dacbe7d556a3](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/697459a2379a0d11ce7fcc1ad947dacbe7d556a3)
+
+## Importierbare Inhaltsdateien
+
+Zwei nach der Normalisierung der Lesungen verbliebene leere Vokabular-JSON-Dateien wurden entfernt. Jede erkannte Inhaltsdatei enthält nun mindestens einen Datensatz, sodass der Study-Library-Importer bei der Modulaktivierung keinen undefinierten Datensatz mehr untersucht.
+
+- [423a3250facb90f3435fc28faee469aa63bacceb](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/423a3250facb90f3435fc28faee469aa63bacceb)

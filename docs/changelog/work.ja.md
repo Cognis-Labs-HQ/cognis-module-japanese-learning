@@ -301,3 +301,9 @@ Cognis PR #214 に合わせ、名前空間の所有権、ローカライズ済�
 冗長な発音語彙ラッパーを削除しました。表示される漢字語彙は漢字と原子的なかなへ直接リンクし、漢字の読みは `猫` のような一致する表示語彙項目を優先します。残る非表示の読みは漢字として表示せず、発音クラスを使用します。かなカードの文字体系バッジは、クラスと重複しない一つだけになりました。
 
 - [697459a2379a0d11ce7fcc1ad947dacbe7d556a3](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/697459a2379a0d11ce7fcc1ad947dacbe7d556a3)
+
+## 取り込み可能なコンテンツファイル
+
+読みの正規化後に残っていた空の語彙 JSON ファイルを2件削除しました。検出されるすべてのコンテンツファイルに1件以上のレコードが含まれるようになり、モジュール有効化時に Study Library インポーターが未定義レコードを調べることを防ぎます。
+
+- [423a3250facb90f3435fc28faee469aa63bacceb](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/423a3250facb90f3435fc28faee469aa63bacceb)
