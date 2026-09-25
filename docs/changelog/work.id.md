@@ -439,3 +439,9 @@ Bootstrap kini mendahulukan kapabilitas publik `study:library:provider` yang dii
 Tautan detail judul diaudit dengan algoritme komposisi alias host yang persis. Setiap pelafalan kalimat kini membuktikan bahwa rentang Kana terurutnya membuka rekaman Kosakata dan Partikel yang dimaksud. Setiap Kanji mengekspos satu bacaan utama lengkap yang cocok dengan satu target Kosakata terdekat, sedangkan bacaan tambahan memakai hubungan nonjudul terpisah dan mempertahankan seluruh dependensi Kana atomik untuk navigasi invers.
 
 - [2a5f23f](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/2a5f23f)
+
+## Penyelarasan Kontrak Audio Paket
+
+URL audio placeholder eksternal yang ditolak dengan benar sebagai `invalid_asset_reference` oleh validator paket konten Library terbaru telah dihapus. Pelafalan unit tulisan tetap wajib, sedangkan audio kini menjadi kolom unggah opsional hingga berkas audio autentik dibundel dalam paket.
+
+- [80c7a20](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/80c7a20)

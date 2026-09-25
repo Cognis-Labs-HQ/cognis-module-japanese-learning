@@ -439,3 +439,9 @@ Bootstrap は注入済みの公開 `study:library:provider` ケイパビリテ�
 ホストと同一の別名合成アルゴリズムでタイトル詳細リンクを監査しました。すべての文の発音について、順序付きのかな区間が意図した語彙および助詞レコードを開くことを検証します。各漢字は、隣接する 1 つの語彙ターゲットと一致する完全な主要読みを 1 つ公開します。追加の読みはタイトルに使わない別の関係を使用し、逆引き用の全原子的かな依存関係を維持します。
 
 - [2a5f23f](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/2a5f23f)
+
+## パッケージ音声契約への整合
+
+最新の Library コンテンツパック検証で `invalid_asset_reference` として正しく拒否される外部プレースホルダー音声 URL を削除しました。表記単位の発音は引き続き必須とし、真正な音声ファイルをパックに同梱するまでは音声を任意のアップロード欄にします。
+
+- [80c7a20](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/80c7a20)

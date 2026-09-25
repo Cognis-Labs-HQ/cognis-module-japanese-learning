@@ -439,3 +439,9 @@ Bootstrap bevorzugt nun die injizierte öffentliche Fähigkeit `study:library:pr
 Die Titeldetail-Links wurden mit dem exakten Alias-Kompositionsalgorithmus des Hosts geprüft. Für jede Satzaussprache ist nun nachgewiesen, dass ihre geordneten Kana-Abschnitte die vorgesehenen Vokabel- und Partikeleinträge öffnen. Jedes Kanji stellt eine vollständige Primärlesung bereit, die zu genau einem angrenzenden Vokabelziel passt; weitere Lesungen verwenden eine separate Nicht-Titel-Beziehung und behalten alle atomaren Kana-Abhängigkeiten für die inverse Navigation.
 
 - [2a5f23f](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/2a5f23f)
+
+## Ausrichtung am Vertrag für paketierte Audiodateien
+
+Externe Platzhalter-Audio-URLs wurden entfernt, da der aktuelle Inhalts­paket-Validator der Library sie korrekt als `invalid_asset_reference` zurückweist. Die Aussprache von Schrifteinheiten bleibt erforderlich; Audio ist nun ein optionales Uploadfeld, bis eine authentische Audiodatei im Paket mitgeliefert wird.
+
+- [80c7a20](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/80c7a20)

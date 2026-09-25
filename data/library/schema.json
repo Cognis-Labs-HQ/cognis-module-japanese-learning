@@ -1,6 +1,6 @@
 {
     "id": "japanese-core",
-    "version": 55,
+    "version": 56,
     "namespace": "ja",
     "language": "ja",
     "metadata": {
@@ -60,7 +60,7 @@
                         }
                     },
                     "type": "audio",
-                    "required": true,
+                    "required": false,
                     "detail": {
                         "renderer": "media",
                         "order": 2
@@ -391,7 +391,7 @@
                         }
                     },
                     "type": "audio",
-                    "required": true,
+                    "required": false,
                     "detail": {
                         "renderer": "media",
                         "order": 2

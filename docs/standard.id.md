@@ -34,7 +34,7 @@ Lapisan kamus `definitions` mendeklarasikan lokalisasi definisi milik modul deng
 
 ## Audio unit tulisan dan partikel
 
-Unit tulisan atomik dan gabungan kini menyediakan daftar pelafalan wajib serta referensi audio HTTPS tanpa menyertakan media biner. Lapisan partikel khusus menyimpan metadata fungsi tata bahasa, dan catatan kalimat dapat mempertahankan referensi kata dan partikel yang berurutan.
+Unit tulisan atomik dan gabungan menyediakan daftar pelafalan wajib serta kolom unggah audio opsional. Audio yang dirujuk harus dibundel sebagai aset paket terautentikasi; URL audio eksternal tidak valid. Lapisan partikel khusus menyimpan metadata fungsi tata bahasa, dan catatan kalimat dapat mempertahankan referensi kata dan partikel yang berurutan.
 
 ## Makna asli Pustaka
 

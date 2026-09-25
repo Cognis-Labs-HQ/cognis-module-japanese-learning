@@ -37,7 +37,7 @@ Die Wörterbuch-Ebene `definitions` deklariert moduleigene Definitionslokalisier
 
 ## Aussprache-Audio und Partikeln
 
-Atomare und zusammengesetzte Schrifteinheiten stellen nun erforderliche Aussprachelisten und HTTPS-Audioverweise bereit, ohne binäre Medien mitzuliefern. Die eigene Partikelebene speichert Metadaten zur grammatischen Funktion, und Satzdatensätze können geordnete Wort- und Partikelverweise bewahren.
+Atomare und zusammengesetzte Schrifteinheiten stellen erforderliche Aussprachelisten und ein optionales Audio-Uploadfeld bereit. Das Paket veröffentlicht keine externen Platzhalter-URLs mehr; die Library akzeptiert nur als authentifizierte Paket-Assets mitgelieferte Audiodateien. Die eigene Partikelebene speichert Metadaten zur grammatischen Funktion, und Satzdatensätze können geordnete Wort- und Partikelverweise bewahren.
 
 ## Bibliotheksnative Bedeutungen
 

@@ -34,7 +34,7 @@ The `definitions` dictionary layer declares module-owned definition localization
 
 ## Writing-unit audio and particles
 
-Atomic and compound writing units now provide required pronunciation lists and HTTPS audio references without packaging binary media. The dedicated particle layer stores grammatical function metadata, and sentence records can preserve ordered word and particle references.
+Atomic and compound writing units provide required pronunciation lists and an optional audio upload field. Content packs must bundle referenced audio as authenticated pack assets; external audio URLs are invalid and this pack does not publish placeholders. The dedicated particle layer stores grammatical function metadata, and sentence records can preserve ordered word and particle references.
 
 ## Library-native meanings
 
