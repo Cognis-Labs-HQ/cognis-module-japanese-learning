@@ -202,3 +202,5 @@ Modul mendaftarkan `study-language-ja:stroke-patterns` melalui kapabilitas Pusta
 Modul mendaftarkan penyedia komposer **Kamus Jisho** yang dilokalkan secara langsung melalui kontrak generik `study:library:provider.registerLookupProvider` untuk kartu Kana, Kanji, dan Kosakata. Kecocokan tepat diselesaikan dari set data bawaan terlebih dahulu, termasuk semua bidang dan hubungan yang ditulis. Hanya kegagalan tembolok yang meminta Jisho; respons berhasil yang sedang berjalan dan telah selesai digunakan bersama dari tembolok sesi terbatas. Hasil eksternal mengisi label kanonis, pelafalan, tingkat JLPT jika tersedia, serta tautan ke Kanji, bacaan lengkap, atau Kana atomik yang sudah ada tanpa menciptakan rekaman atau menebak tautan.
 
 Pengambil sampel jalur SVG dimiliki modul, sehingga modul eksternal yang terpasang tidak bergantung pada `node_modules` milik host.
+
+Bootstrap memperoleh penyedia invers melalui `ctx.capabilities.require("study:library:provider")`, mengikuti pola pendaftaran penyedia autentikasi; pengambil kemudahan lama tidak digunakan.

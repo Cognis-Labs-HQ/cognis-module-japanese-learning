@@ -202,3 +202,5 @@ Das Modul registriert `study-language-ja:stroke-patterns` über die Library-Fäh
 Das Modul registriert einen lokalisierten **Jisho-Wörterbuch**-Anbieter direkt über den generischen Vertrag `study:library:provider.registerLookupProvider` für den Composer von Kana-, Kanji- und Vokabelkarten. Exakte Treffer werden zuerst aus dem mitgelieferten Datensatz einschließlich aller gepflegten Felder und Beziehungen aufgelöst. Nur ein Cache-Fehltreffer fragt Jisho ab; laufende und abgeschlossene erfolgreiche Antworten werden in einem begrenzten Sitzungscache gemeinsam genutzt. Externe Ergebnisse befüllen die kanonische Bezeichnung, Aussprachen, die JLPT-Stufe (falls vorhanden) und Links zu vorhandenen Kanji, vollständigen Lesungen oder atomaren Kana, ohne Datensätze oder Verknüpfungen zu erfinden.
 
 Der SVG-Pfad-Sampler gehört zum Modul, sodass installierte externe Module nicht von den `node_modules` des Hosts abhängen.
+
+Bootstrap bezieht den inversen Anbieter über `ctx.capabilities.require("study:library:provider")` und folgt damit dem Registrierungsmuster der Authentifizierungsanbieter; der veraltete Komfort-Getter wird nicht verwendet.

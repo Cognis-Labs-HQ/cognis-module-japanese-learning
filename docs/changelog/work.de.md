@@ -421,3 +421,9 @@ Der Manifest-Digest für den generischen Jisho-Registrierungs-Einstiegspunkt und
 Die nicht bereitgestellte Produktionsabhängigkeit `svg-path-properties`, die Cognis beim Aktivieren am Import des Moduls hinderte, wurde entfernt. Das Modul liefert nun einen eigenen begrenzten SVG-Pfad-Tokenizer, Kurven-Sampler und distanzbasierten Resampler für KanjiVG-Striche mit. Regressionstests führen Bootstrap-, Strichmuster- und Deinstallationstests aus einem kopierten Modulbaum ohne `node_modules` aus und entsprechen damit der Installationsumgebung externer Module.
 
 - [6133b70](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/6133b70)
+
+## Auflösung der inversen Library-Fähigkeit
+
+Bootstrap bezieht die erforderliche Library-Registrierungsoberfläche nun über `ctx.capabilities.require("study:library:provider")` und folgt damit dem inversen Anbietermuster der SSO-Authentifizierungsmodule. Der Komfort-Getter, der für diese erforderliche Fähigkeit `undefined` zurückgab, wird nicht mehr verwendet; Formprüfung und Lebenszyklusbereinigung der Anbieter bleiben erhalten.
+
+- [a3e2b35](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/a3e2b35)

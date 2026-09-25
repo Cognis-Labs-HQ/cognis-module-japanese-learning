@@ -421,3 +421,9 @@ Digest manifes untuk titik masuk pendaftaran Jisho generik dan cakupan regresiny
 Dependensi produksi `svg-path-properties` yang tidak diterapkan dan mencegah Cognis mengimpor modul saat validasi pengaktifan telah dihapus. Modul kini menyertakan tokenizer jalur SVG, pengambil sampel kurva, dan pengambil sampel ulang berbasis jarak miliknya sendiri untuk goresan KanjiVG. Cakupan regresi menjalankan pengujian bootstrap, pencarian goresan, dan penghapusan instalasi dari salinan pohon modul tanpa `node_modules`, sesuai dengan lingkungan instalasi modul eksternal.
 
 - [6133b70](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/6133b70)
+
+## Resolusi Kapabilitas Library Invers
+
+Bootstrap kini memperoleh permukaan pendaftaran Library wajib melalui `ctx.capabilities.require("study:library:provider")`, mengikuti pola penyedia invers yang digunakan modul autentikasi SSO. Pengambil kemudahan yang mengembalikan `undefined` untuk kapabilitas wajib ini tidak lagi digunakan, sementara validasi bentuk penyedia dan pembersihan siklus hidup tetap dipertahankan.
+
+- [a3e2b35](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/a3e2b35)

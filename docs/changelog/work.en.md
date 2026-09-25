@@ -421,3 +421,9 @@ Refreshed the packaged manifest digest for the generic Jisho registration entry 
 Removed the undeployed `svg-path-properties` production dependency that prevented Cognis from importing the module during enable validation. The module now packages its own bounded SVG path tokenizer, curve sampler, and distance-based resampler for KanjiVG strokes. Regression coverage runs bootstrap, stroke lookup, and uninstall tests from a copied module tree with no `node_modules`, matching the external-module installation environment.
 
 - [6133b70](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/6133b70)
+
+## Inverse Library Capability Resolution
+
+Bootstrap now consumes the required Library registration surface through `ctx.capabilities.require("study:library:provider")`, matching the inverse provider pattern used by SSO authentication modules. It no longer uses the convenience getter that returned `undefined` for this required capability, while provider shape validation and lifecycle cleanup remain intact.
+
+- [a3e2b35](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/a3e2b35)

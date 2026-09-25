@@ -421,3 +421,9 @@ Jisho は、汎用 `study:library:provider` ケイパビリティを受け取り
 Cognis の有効化検証時にモジュールを import できなくしていた、配備されない本番依存関係 `svg-path-properties` を削除しました。モジュール自身が、KanjiVG の筆画に対応する上限付き SVG パストークナイザー、曲線サンプラー、距離ベースの再サンプラーを同梱します。回帰テストでは、外部モジュールのインストール環境に合わせて、`node_modules` のないコピー済みモジュールツリーから Bootstrap、筆順検索、アンインストールのテストを実行します。
 
 - [6133b70](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/6133b70)
+
+## 逆向き Library ケイパビリティの解決
+
+Bootstrap は、SSO 認証モジュールと同じ逆向きプロバイダーパターンに従い、`ctx.capabilities.require("study:library:provider")` から必須の Library 登録インターフェイスを取得するようになりました。この必須ケイパビリティに `undefined` を返していた簡易 getter は使用せず、プロバイダー形状の検証とライフサイクルのクリーンアップは維持します。
+
+- [a3e2b35](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/a3e2b35)

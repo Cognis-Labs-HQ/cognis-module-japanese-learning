@@ -11,24 +11,26 @@ test("ingests the declarative pack through the host Library capability", async (
     let removed = 0;
     const ctx = {
         moduleRoot: path.resolve("."),
-        getCapability(id) {
-            assert.equal(id, "study:library:provider");
-            return {
-                registerLookupProvider(provider) {
-                    providers.push(provider);
-                    return () => {
-                        removed += 1;
-                    };
-                },
-                async ingestContentPack(root) {
-                    calls.push(root);
-                    return {
-                        packId: "japanese-core",
-                        contentRevision: "2026-09-05.5",
-                        unchanged: false,
-                    };
-                },
-            };
+        capabilities: {
+            require(id) {
+                assert.equal(id, "study:library:provider");
+                return {
+                    registerLookupProvider(provider) {
+                        providers.push(provider);
+                        return () => {
+                            removed += 1;
+                        };
+                    },
+                    async ingestContentPack(root) {
+                        calls.push(root);
+                        return {
+                            packId: "japanese-core",
+                            contentRevision: "2026-09-05.5",
+                            unchanged: false,
+                        };
+                    },
+                };
+            },
         },
         registerStaticDir() {},
         contributePublicCapability(id, value) {
@@ -76,8 +78,16 @@ test("ingests the declarative pack through the host Library capability", async (
 
 test("fails safely when the host Library capability is unavailable", async () => {
     await assert.rejects(
-        bootstrapModule({ getCapability: () => undefined }),
-        /requires study:library/,
+        bootstrapModule({
+            capabilities: {
+                require() {
+                    throw new Error(
+                        'Required capability "study:library:provider" is not available.',
+                    );
+                },
+            },
+        }),
+        /Required capability "study:library:provider" is not available/,
     );
 });
 
@@ -86,17 +96,19 @@ test("content ingestion failures remain activation-blocking", async () => {
     let removed = 0;
     const ctx = {
         moduleRoot: path.resolve("."),
-        getCapability() {
-            return {
-                registerLookupProvider() {
-                    return () => {
-                        removed += 1;
-                    };
-                },
-                async ingestContentPack() {
-                    throw new Error("content import failed");
-                },
-            };
+        capabilities: {
+            require() {
+                return {
+                    registerLookupProvider() {
+                        return () => {
+                            removed += 1;
+                        };
+                    },
+                    async ingestContentPack() {
+                        throw new Error("content import failed");
+                    },
+                };
+            },
         },
         registerStaticDir() {},
         contributePublicCapability(id) {
