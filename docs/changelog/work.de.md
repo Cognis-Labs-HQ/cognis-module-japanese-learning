@@ -391,3 +391,9 @@ Die veralteten singulären `linkRelationship`-Metadaten wurden entfernt, statt i
 Der aktuelle Lookup-Anbieter-Vertrag der Cognis Library wurde für japanische Schreibzeichen implementiert. Exakt übereinstimmende Kana- und Kanji-Bezeichnungen liefern ihr paketiertes, validiertes `stroke_pattern` mit stabiler KanjiVG-Herkunft und Konfidenz `1`; unbekannte Bezeichnungen werden nicht erraten. Der Anbieter arbeitet vollständig lokal – ohne Netzwerkdienst oder OCR – und seine Registrierung wird beim Deaktivieren oder unmittelbar nach fehlgeschlagener Übernahme entfernt.
 
 - [bbc6d84](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/bbc6d84)
+
+## Vollständige Strichmustersuche für Kana und Kanji
+
+Der Suchanbieter wurde über den mitgelieferten Lehrplan hinaus erweitert. Mitgelieferte Muster bleiben sofort und offline verfügbar; jedes andere japanische Kana oder Kanji wird über seinen Unicode-Codepunkt anhand der kanonischen KanjiVG-SVG-Daten aufgelöst, in begrenzte normalisierte Strichproben umgewandelt, zwischengespeichert und mit genauer Herkunft sowie Konfidenz `1` zurückgegeben. Nicht unterstützte oder nicht verfügbare Zeichen liefern keine Vermutung; für exakte Texteingaben ist OCR bewusst nicht erforderlich.
+
+- [e040cf0](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/e040cf0)

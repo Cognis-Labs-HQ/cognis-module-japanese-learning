@@ -391,3 +391,9 @@ Removed the deprecated singular `linkRelationship` metadata instead of retaining
 Implemented the latest Cognis Library lookup-provider contract for Japanese writing units. Exact Kana and Kanji labels now return their packaged, validated `stroke_pattern` with stable KanjiVG provenance and confidence `1`; unknown labels return no guess. The provider is entirely local—no network service or OCR—and its registration is removed on disable or immediately after failed ingestion.
 
 - [bbc6d84](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/bbc6d84)
+
+## Complete Kana and Kanji Stroke Lookup
+
+Extended the lookup provider beyond the packaged curriculum. Packaged patterns remain immediate and offline; any other Japanese Kana or Kanji is resolved by its Unicode code point against canonical KanjiVG SVG data, converted into bounded normalized stroke samples, cached, and returned with exact provenance and confidence `1`. Unsupported or unavailable characters return no guess, and OCR is intentionally unnecessary for exact text input.
+
+- [e040cf0](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/e040cf0)

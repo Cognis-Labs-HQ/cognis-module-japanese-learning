@@ -391,3 +391,9 @@ Metadata tunggal `linkRelationship` yang usang dihapus alih-alih mempertahankan 
 Kontrak penyedia pencarian Cognis Library terkini diterapkan untuk unit tulisan Jepang. Label Kana dan Kanji yang cocok tepat kini mengembalikan `stroke_pattern` tervalidasi dari paket dengan asal KanjiVG stabil dan keyakinan `1`; label yang tidak dikenal tidak ditebak. Penyedia bekerja sepenuhnya secara lokal—tanpa layanan jaringan atau OCR—dan pendaftarannya dilepas saat dinonaktifkan atau segera setelah ingest gagal.
 
 - [bbc6d84](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/bbc6d84)
+
+## Pencarian Pola Goresan Kana dan Kanji Lengkap
+
+Penyedia pencarian diperluas melampaui kurikulum bawaan. Pola bawaan tetap tersedia seketika dan luring; Kana atau Kanji Jepang lainnya diselesaikan melalui titik kode Unicode terhadap data SVG KanjiVG kanonis, diubah menjadi sampel goresan ternormalisasi yang dibatasi, disimpan dalam tembolok, lalu dikembalikan dengan asal-usul tepat dan keyakinan `1`. Karakter yang tidak didukung atau tidak tersedia tidak menghasilkan tebakan, dan OCR sengaja tidak diperlukan untuk masukan teks yang tepat.
+
+- [e040cf0](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/e040cf0)

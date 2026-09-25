@@ -195,4 +195,4 @@ npm run check:manifest
 
 ## 実行時の筆順パターンプロバイダー
 
-モジュールは Library の `study:library:provider` ケイパビリティを通じて `study-language-ja:stroke-patterns` を登録します。仮名または漢字の完全一致ラベルに対し、KanjiVG の出典と最大信頼度を伴う、パッケージ内で検証済みの `stroke_pattern` を返します。検索はローカルかつ決定的で、確認済みコンテンツデータを再利用するため、ネットワークサービスや OCR は不要です。不明な文字を推測せず、モジュール無効化時に登録を確実に解除します。
+モジュールは Library の `study:library:provider` ケイパビリティを通じて `study-language-ja:stroke-patterns` を登録します。パッケージに含まれる仮名・漢字の完全一致ラベルには、確認済みの `stroke_pattern` を即座に返します。それ以外の日本語の仮名・漢字は正規の KanjiVG SVG ソースから取得し、正規化された時刻付き画に変換してセッション内にキャッシュし、出典と最大信頼度を付けて返します。日本語以外または取得できない字形は推測せず、OCR は使用しません。モジュール無効化時には登録を確実に解除します。

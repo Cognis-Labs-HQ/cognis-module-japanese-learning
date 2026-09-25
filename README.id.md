@@ -195,4 +195,4 @@ Setiap kartu Kana dan Kanji kini memiliki `strokePattern` wajib dengan koordinat
 
 ## Penyedia pola goresan runtime
 
-Modul mendaftarkan `study-language-ja:stroke-patterns` melalui kapabilitas Pustaka `study:library:provider`. Label Kana atau Kanji yang tepat mengembalikan `stroke_pattern` tervalidasi dari paket dengan asal KanjiVG dan keyakinan penuh. Pencarian bersifat lokal dan deterministik: penyedia memakai ulang data konten yang telah ditinjau, tidak memerlukan layanan jaringan atau OCR, tidak menebak teks yang tidak dikenal, dan dilepas dengan bersih saat modul dinonaktifkan.
+Modul mendaftarkan `study-language-ja:stroke-patterns` melalui kapabilitas Pustaka `study:library:provider`. Label Kana atau Kanji yang tersedia dalam paket segera mengembalikan `stroke_pattern` yang telah ditinjau. Kana atau Kanji Jepang lainnya diambil dari sumber SVG KanjiVG kanonis, dikonversi menjadi goresan ternormalisasi dengan waktu, disimpan dalam cache sesi, lalu dikembalikan dengan asal dan keyakinan penuh. Glif non-Jepang atau yang tidak tersedia tidak ditebak; OCR tidak pernah digunakan, dan penyedia dilepas dengan bersih saat modul dinonaktifkan.

@@ -53,7 +53,10 @@ test("stroke provider returns the packaged Kanji pattern", async () => {
 });
 
 test("stroke provider returns no suggestion for unknown labels", async () => {
-    const provider = createStrokePatternProvider({ contentRoot });
+    const provider = createStrokePatternProvider({
+        contentRoot,
+        fetchImplementation: async () => ({ ok: false, status: 404 }),
+    });
     assert.deepEqual(
         await provider.lookup({ schema, layer: KanjiLayer, label: "不存在" }),
         [],
@@ -62,6 +65,53 @@ test("stroke provider returns no suggestion for unknown labels", async () => {
         await provider.lookup({ schema, layer: KanjiLayer, label: "" }),
         [],
     );
+});
+
+test("stroke provider fetches any unpackaged Japanese writing unit", async () => {
+    const requests = [];
+    const provider = createStrokePatternProvider({
+        contentRoot,
+        sourceBaseUrl: "https://stroke.test/kanji",
+        async fetchImplementation(url, options) {
+            requests.push({ url, options });
+            return {
+                ok: true,
+                async text() {
+                    return '<svg><path d="M10 10 C20 20 30 30 40 40"/></svg>';
+                },
+            };
+        },
+    });
+    const [suggestion] = await provider.lookup({
+        schema,
+        layer: KanjiLayer,
+        label: "龍",
+    });
+    assert.equal(requests[0].url, "https://stroke.test/kanji/09f8d.svg");
+    assert.equal(requests[0].options.headers.accept, "image/svg+xml");
+    assert.equal(suggestion.provider, provider.id);
+    assert.equal(
+        suggestion.provenance,
+        "kanjivg:https://stroke.test/kanji/09f8d.svg",
+    );
+    assert.equal(suggestion.confidence, 1);
+    assert.ok(suggestion.fields.stroke_pattern.strokes[0].points.length >= 4);
+});
+
+test("stroke provider never sends non-Japanese labels to the source", async () => {
+    let requests = 0;
+    const provider = createStrokePatternProvider({
+        contentRoot,
+        async fetchImplementation() {
+            requests += 1;
+            throw new Error("unexpected request");
+        },
+    });
+    assert.deepEqual(
+        await provider.lookup({ schema, layer: KanjiLayer, label: "dragon" }),
+        [],
+    );
+    assert.equal(requests, 0);
 });
 
 test("stroke provider logs packaged-data failures safely", async () => {

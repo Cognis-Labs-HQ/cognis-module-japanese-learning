@@ -195,4 +195,4 @@ Every Kana and Kanji card now carries a required `strokePattern` with normalized
 
 ## Runtime stroke-pattern provider
 
-The module registers `study-language-ja:stroke-patterns` through the Library's `study:library:provider` capability. Exact Kana or Kanji labels return the packaged, validated `stroke_pattern` with KanjiVG provenance and full confidence. Lookup is local and deterministic: it reuses the reviewed content data, requires no network service or OCR, returns no guess for unknown text, and unregisters cleanly when the module is disabled.
+The module registers `study-language-ja:stroke-patterns` through the Library's `study:library:provider` capability. Exact packaged Kana or Kanji labels return the reviewed `stroke_pattern` immediately. Any other Japanese Kana or Kanji is fetched from the canonical KanjiVG SVG source, converted to normalized timed strokes, cached for the session, and returned with source provenance and full confidence. Non-Japanese or unavailable glyphs return no guess; OCR is never used, and the provider unregisters cleanly when the module is disabled.
