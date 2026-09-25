@@ -169,9 +169,9 @@ Hidden pronunciation records now compose their titles directly from atomic Kana 
 
 The content pack now contains only the active canonical graph. Obsolete hidden reading wrappers have been removed completely; visible Kanji vocabulary terminates at its Kanji spelling and atomic Kana pronunciation, and matching Kanji readings open the visible lexical card.
 
-## Symmetric Kana Usage Navigation
+## Direct Kana Usage Navigation
 
-Kanji now publish non-presentational dependencies to every atomic Kana used by their authored readings. Following `日` → `か` → atomic `か` therefore preserves `日` in the Kana card's Used By section without adding another title detail or changing the lexical reading target.
+Kana Used By lists only immediate reading records. Kanji never point directly to atomic Kana: learners follow `あ` → `あめ` → `雨`, so unrelated words and Kanji that merely contain `あ` do not appear as direct parents.
 
 ## Parent-Owned Composite Pronunciations
 

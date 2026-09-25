@@ -445,3 +445,9 @@ Die Titeldetail-Links wurden mit dem exakten Alias-Kompositionsalgorithmus des H
 Externe Platzhalter-Audio-URLs wurden entfernt, da der aktuelle Inhalts­paket-Validator der Library sie korrekt als `invalid_asset_reference` zurückweist. Die Aussprache von Schrifteinheiten bleibt erforderlich; Audio ist nun ein optionales Uploadfeld, bis eine authentische Audiodatei im Paket mitgeliefert wird.
 
 - [80c7a20](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/80c7a20)
+
+## Direkte Kana-Verwendungsbeziehungen
+
+Die künstliche Abhängigkeitsbeziehung von Kanji zu Kana wurde entfernt. Kana-Karten zeigen unter „Verwendet von“ nur noch unmittelbare Lesungsdatensätze und bewahren damit die vorgesehene Navigation `あ` → `あめ` → `雨`, statt nicht verwandte Wörter und Kanji als direkte Eltern darzustellen.
+
+- [13d11ce](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/13d11ce)

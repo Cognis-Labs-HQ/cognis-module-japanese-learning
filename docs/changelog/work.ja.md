@@ -445,3 +445,9 @@ Bootstrap は注入済みの公開 `study:library:provider` ケイパビリテ�
 最新の Library コンテンツパック検証で `invalid_asset_reference` として正しく拒否される外部プレースホルダー音声 URL を削除しました。表記単位の発音は引き続き必須とし、真正な音声ファイルをパックに同梱するまでは音声を任意のアップロード欄にします。
 
 - [80c7a20](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/80c7a20)
+
+## かなの直接使用関係
+
+漢字からかなへの人工的な依存関係を削除しました。かなカードの「使用元」には直近の読みレコードだけが表示され、無関係な単語や漢字を直接の親として示さず、意図した `あ` → `あめ` → `雨` のナビゲーションを維持します。
+
+- [13d11ce](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/13d11ce)

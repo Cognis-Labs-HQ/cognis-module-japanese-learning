@@ -1,6 +1,6 @@
 {
     "id": "japanese-core",
-    "version": 56,
+    "version": 57,
     "namespace": "ja",
     "language": "ja",
     "metadata": {
@@ -457,19 +457,6 @@
                         }
                     },
                     "ordered": true,
-                    "onDelete": "restrict"
-                },
-                {
-                    "id": "reading-kana-dependency",
-                    "targetLayer": "characters",
-                    "metadata": {
-                        "labels": {
-                            "de": "Verwendete Lese-Kana",
-                            "en": "Reading Kana Dependencies",
-                            "id": "Dependensi Kana Bacaan",
-                            "ja": "読みかなの依存関係"
-                        }
-                    },
                     "onDelete": "restrict"
                 },
                 {

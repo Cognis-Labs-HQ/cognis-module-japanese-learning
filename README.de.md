@@ -169,9 +169,9 @@ Ausgeblendete Aussprachedatensätze setzen ihre Titel jetzt über die reine Komp
 
 Das Inhaltspaket enthält nur noch den aktiven kanonischen Graphen. Veraltete ausgeblendete Lesungshüllen wurden vollständig entfernt; sichtbares Kanji-Vokabular endet bei seiner Kanji-Schreibweise und atomaren Kana-Aussprache, und passende Kanji-Lesungen öffnen die sichtbare lexikalische Karte.
 
-## Symmetrische Kana-Verwendungsnavigation
+## Direkte Kana-Verwendungsnavigation
 
-Kanji veröffentlichen nun nicht dargestellte Abhängigkeiten zu jedem atomaren Kana ihrer deklarierten Lesungen. Der Pfad `日` → `か` → atomares `か` behält daher `日` im Abschnitt „Verwendet von“ der Kana-Karte, ohne ein weiteres Titeldetail hinzuzufügen oder das lexikalische Lesungsziel zu ändern.
+Die Liste „Verwendet von“ eines Kana enthält nur unmittelbare Lesungsdatensätze. Kanji verweisen nie direkt auf atomare Kana: Lernende folgen `あ` → `あめ` → `雨`, sodass nicht verwandte Wörter und Kanji, die lediglich `あ` enthalten, nicht als direkte Eltern erscheinen.
 
 ## Vom Elterneintrag bestimmte zusammengesetzte Aussprachen
 

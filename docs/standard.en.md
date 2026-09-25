@@ -172,7 +172,7 @@ Package only records that participate in the current authored graph. Remove supe
 
 ## Kanji-to-Kana Usage Dependencies
 
-Every Kanji must add one deduplicated `reading-kana-dependency` reference to each atomic Kana occurring anywhere in its authored pronunciation list. This relationship has no presentation or resolver role: it exists only to make inverse Used By navigation symmetric after a learner follows a lexical reading to atomic Kana. Keep the normal `readings` relationship as the pronunciation field's deep-link source.
+Kanji must never reference atomic Kana directly. A Kanji reaches Kana only through its complete reading record, so inverse Used By navigation exposes the immediate reading first (`あ` → `あめ` → `雨`) instead of incorrectly listing every Kanji that happens to contain that Kana.
 
 ## Parent-Owned Composite Pronunciations
 

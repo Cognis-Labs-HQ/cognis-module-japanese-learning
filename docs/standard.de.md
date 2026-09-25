@@ -172,7 +172,7 @@ Es werden nur Datensätze paketiert, die am aktuellen deklarierten Graphen teiln
 
 ## Kanji-zu-Kana-Verwendungsabhängigkeiten
 
-Jedes Kanji muss für jedes atomare Kana, das in seiner deklarierten Ausspracheliste vorkommt, genau eine deduplizierte `reading-kana-dependency`-Referenz hinzufügen. Diese Beziehung hat keine Darstellungs- oder Resolver-Rolle und dient ausschließlich dazu, die umgekehrte Verwendungsnavigation symmetrisch zu machen, nachdem Lernende einer lexikalischen Lesung zu atomaren Kana gefolgt sind. Die normale `readings`-Beziehung bleibt die Deep-Link-Quelle des Aussprachefelds.
+Kanji dürfen atomare Kana niemals direkt referenzieren. Ein Kanji erreicht Kana ausschließlich über seinen vollständigen Lesungsdatensatz, sodass die umgekehrte Verwendungsnavigation zuerst die unmittelbare Lesung zeigt (`あ` → `あめ` → `雨`), statt fälschlich jedes Kanji mit diesem Kana aufzulisten.
 
 ## Vom Elterneintrag bestimmte zusammengesetzte Aussprachen
 

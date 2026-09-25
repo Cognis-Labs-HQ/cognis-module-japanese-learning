@@ -445,3 +445,9 @@ Audited title-detail links with the host's exact alias-composition algorithm. Ev
 Removed external placeholder audio URLs that the latest Library content-pack validator correctly rejects as `invalid_asset_reference`. Writing-unit pronunciation remains required, while audio is now an optional upload field until an authentic audio file is bundled in the pack.
 
 - [80c7a20](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/80c7a20)
+
+## Direct Kana Usage Relationships
+
+Removed the synthetic Kanji-to-Kana dependency relationship. Kana cards now list only immediate reading records under Used By, preserving the intended `あ` → `あめ` → `雨` navigation instead of presenting unrelated words and Kanji as direct parents.
+
+- [13d11ce](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/13d11ce)

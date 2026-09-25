@@ -172,7 +172,7 @@ Paket hanya memuat data yang berpartisipasi dalam graf aktif. Hapus bacaan terse
 
 ## Dependensi Penggunaan Kanji-ke-Kana
 
-Setiap Kanji harus menambahkan satu referensi `reading-kana-dependency` yang terdeduplikasi untuk setiap Kana atomik yang muncul dalam daftar pelafalannya. Relasi ini tidak memiliki peran presentasi atau resolver; relasi hanya membuat navigasi Digunakan Oleh terbalik tetap simetris setelah pelajar mengikuti bacaan leksikal menuju Kana atomik. Relasi `readings` biasa tetap menjadi sumber tautan dalam bidang pelafalan.
+Kanji tidak boleh mereferensikan Kana atomik secara langsung. Kanji mencapai Kana hanya melalui catatan bacaan lengkapnya, sehingga navigasi Digunakan Oleh terbalik menampilkan bacaan langsung terlebih dahulu (`あ` → `あめ` → `雨`), bukan secara keliru mencantumkan setiap Kanji yang memuat Kana tersebut.
 
 ## Pelafalan Komposit Milik Induk
 

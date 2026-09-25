@@ -634,54 +634,34 @@ test("Kanji prefer adjacent vocabulary while suffix Kana terminate directly", ()
     );
 });
 
-test("Kanji reading dependencies are visible from every atomic Kana", () => {
+test("Kana Used By contains only direct reading relationships", () => {
     const records = loadRecords();
-    const recordsById = new Map(records.map((record) => [record.id, record]));
-    const KanjiLayer = schema.layers.find(({ id }) => id === "alt-characters");
-    const dependency = KanjiLayer.relationships.find(
-        ({ id }) => id === "reading-kana-dependency",
-    );
-    assert.equal(dependency.targetLayer, "characters");
-    assert.equal(dependency.presentationRole, undefined);
-    assert.equal(dependency.resolverRole, undefined);
+    const Kanji = records.filter(({ layer }) => layer === "alt-characters");
 
-    const inbound = new Map();
-    for (const Kanji of records.filter(
-        ({ layer }) => layer === "alt-characters",
-    )) {
-        const expectedIds = new Set(
-            Kanji.fields.pronunciation.flatMap((reading) =>
-                Array.from(
-                    reading,
-                    (label) =>
-                        records.find(
-                            ({ layer, label: candidate }) =>
-                                layer === "characters" && candidate === label,
-                        )?.id,
-                ),
+    for (const record of Kanji) {
+        assert.equal(
+            record.references.some(({ entryId }) =>
+                entryId.startsWith("ja:char:"),
             ),
+            false,
+            `${record.id} must reach Kana through its reading record`,
         );
-        const dependencyIds = new Set(
-            Kanji.references
-                .filter(
-                    ({ relation }) => relation === "reading-kana-dependency",
-                )
-                .map(({ entryId }) => entryId),
-        );
-        for (const expectedId of expectedIds) {
-            assert.ok(
-                dependencyIds.has(expectedId),
-                `${Kanji.id} is missing primary Kana link ${expectedId}`,
-            );
-        }
-        for (const entryId of dependencyIds) {
-            assert.equal(recordsById.get(entryId).layer, "characters");
-            if (!inbound.has(entryId)) inbound.set(entryId, new Set());
-            inbound.get(entryId).add(Kanji.id);
-        }
     }
 
-    assert.ok(inbound.get("ja:char:ka").has("ja:kanji:nichi"));
+    const rainReading = records.find(
+        ({ id }) => id === "ja:word:pronunciation-ame-rain",
+    );
+    assert.ok(
+        rainReading.references.some(
+            ({ entryId, relation }) =>
+                entryId === "ja:char:a" && relation === "reading-kana",
+        ),
+    );
+    const rainKanji = records.find(({ id }) => id === "ja:kanji:core-e99ba8");
+    assert.equal(
+        rainKanji.references.some(({ entryId }) => entryId === "ja:char:a"),
+        false,
+    );
 });
 
 test("hidden readings do not show duplicate-labeled Used By entries", () => {

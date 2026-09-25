@@ -445,3 +445,9 @@ Tautan detail judul diaudit dengan algoritme komposisi alias host yang persis. S
 URL audio placeholder eksternal yang ditolak dengan benar sebagai `invalid_asset_reference` oleh validator paket konten Library terbaru telah dihapus. Pelafalan unit tulisan tetap wajib, sedangkan audio kini menjadi kolom unggah opsional hingga berkas audio autentik dibundel dalam paket.
 
 - [80c7a20](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/80c7a20)
+
+## Relasi Penggunaan Kana Langsung
+
+Relasi dependensi buatan dari Kanji ke Kana telah dihapus. Kartu Kana kini hanya menampilkan catatan bacaan langsung pada Digunakan Oleh, sehingga navigasi `あ` → `あめ` → `雨` tetap benar dan kata atau Kanji yang tidak berkaitan tidak ditampilkan sebagai induk langsung.
+
+- [13d11ce](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/13d11ce)
