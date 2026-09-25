@@ -427,3 +427,9 @@ Dependensi produksi `svg-path-properties` yang tidak diterapkan dan mencegah Cog
 Bootstrap kini memperoleh permukaan pendaftaran Library wajib melalui `ctx.capabilities.require("study:library:provider")`, mengikuti pola penyedia invers yang digunakan modul autentikasi SSO. Pengambil kemudahan yang mengembalikan `undefined` untuk kapabilitas wajib ini tidak lagi digunakan, sementara validasi bentuk penyedia dan pembersihan siklus hidup tetap dipertahankan.
 
 - [a3e2b35](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/a3e2b35)
+
+## Jembatan Visibilitas Penyedia Library
+
+Bootstrap kini mendahulukan kapabilitas publik `study:library:provider` yang diinjeksi, tetapi ketika Cognis PR #226 hanya mengeksposnya untuk validasi pengaktifan, bootstrap menggunakan layanan `study:library` yang diinjeksi sebagai pembawa antarmuka generik `registerLookupProvider` dan `ingestContentPack` yang sama persis. Perubahan ini memperbaiki aktivasi tanpa membuat protokol penyedia kedua, dan pengujian mencakup kedua bentuk visibilitas host.
+
+- [f9c29d8](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/f9c29d8)

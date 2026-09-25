@@ -12,8 +12,12 @@ test("ingests the declarative pack through the host Library capability", async (
     const ctx = {
         moduleRoot: path.resolve("."),
         capabilities: {
-            require(id) {
+            get(id) {
                 assert.equal(id, "study:library:provider");
+                return undefined;
+            },
+            require(id) {
+                assert.equal(id, "study:library");
                 return {
                     registerLookupProvider(provider) {
                         providers.push(provider);
@@ -80,14 +84,17 @@ test("fails safely when the host Library capability is unavailable", async () =>
     await assert.rejects(
         bootstrapModule({
             capabilities: {
+                get() {
+                    return undefined;
+                },
                 require() {
                     throw new Error(
-                        'Required capability "study:library:provider" is not available.',
+                        'Required capability "study:library" is not available.',
                     );
                 },
             },
         }),
-        /Required capability "study:library:provider" is not available/,
+        /Required capability "study:library" is not available/,
     );
 });
 
@@ -97,6 +104,9 @@ test("content ingestion failures remain activation-blocking", async () => {
     const ctx = {
         moduleRoot: path.resolve("."),
         capabilities: {
+            get() {
+                return undefined;
+            },
             require() {
                 return {
                     registerLookupProvider() {
@@ -125,4 +135,36 @@ test("content ingestion failures remain activation-blocking", async () => {
         readFileSync(path.join(ctx.moduleRoot, "manifest.json"), "utf8"),
     );
     assert.equal(manifest.allowBootstrapFailure, undefined);
+});
+
+test("prefers the public provider capability when it is injected", async () => {
+    const provider = {
+        registerLookupProvider() {
+            return () => {};
+        },
+        async ingestContentPack() {
+            return { packId: "japanese-core", unchanged: true };
+        },
+    };
+    let required = false;
+    const ctx = {
+        moduleRoot: path.resolve("."),
+        capabilities: {
+            get(id) {
+                assert.equal(id, "study:library:provider");
+                return provider;
+            },
+            require() {
+                required = true;
+                throw new Error("unexpected fallback");
+            },
+        },
+        registerStaticDir() {},
+        contributePublicCapability() {},
+        flow: { extend() {} },
+        log() {},
+    };
+    const dispose = await bootstrapModule(ctx);
+    assert.equal(required, false);
+    dispose();
 });

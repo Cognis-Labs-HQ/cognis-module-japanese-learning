@@ -205,3 +205,5 @@ Jisho は汎用 `study:library:provider.registerLookupProvider` コントラク�
 ランタイムプロバイダーのエントリーポイントは、配備されない npm パッケージを import してはいけません。KanjiVG SVG パスサンプラーはモジュール自身が所有し、マニフェストに同梱します。
 
 ランタイム Bootstrap は `ctx.capabilities.require` で逆向き Library プロバイダーを解決し、返されたケイパビリティを通じて検索プロバイダーを登録しなければなりません。この必須プロバイダーに `ctx.getCapability` を使用してはいけません。
+
+まず注入済みの公開 `study:library:provider` ケイパビリティを解決します。ホストがその公開ケイパビリティを有効化検証にだけ公開し、モジュール ctx には公開しない場合、注入済み `study:library` サービスを同一の `registerLookupProvider` と `ingestContentPack` インターフェイスの搬送手段としてのみ使用します。第 2 のプロバイダープロトコルを導入してはいけません。

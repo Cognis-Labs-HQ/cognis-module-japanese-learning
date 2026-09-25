@@ -204,4 +204,6 @@ Jisho must register only through the generic `study:library:provider.registerLoo
 
 Runtime provider entrypoints must not import undeployed npm packages; the KanjiVG SVG path sampler is module-owned and packaged in the manifest.
 
-Runtime bootstrap must resolve the inverse Library provider with `ctx.capabilities.require`, then register lookup providers through the returned capability. Do not use `ctx.getCapability` for this required provider.
+Runtime bootstrap must resolve the inverse Library provider through the capability bus and register lookup providers through the returned generic surface.
+
+Resolve the injected public `study:library:provider` first. If the host exposes that public capability only to enable validation and not to the module ctx, use the injected `study:library` service solely as the carrier of the same `registerLookupProvider` and `ingestContentPack` interface. Do not introduce a second provider protocol.

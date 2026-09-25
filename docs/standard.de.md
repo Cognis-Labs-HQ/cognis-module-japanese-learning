@@ -205,3 +205,5 @@ Jisho darf nur über den generischen Vertrag `study:library:provider.registerLoo
 Laufzeit-Provider-Einstiegspunkte dürfen keine nicht bereitgestellten npm-Pakete importieren; der KanjiVG-SVG-Pfad-Sampler gehört zum Modul und ist im Manifest enthalten.
 
 Der Laufzeit-Bootstrap muss den inversen Library-Anbieter mit `ctx.capabilities.require` auflösen und Lookup-Anbieter anschließend über die zurückgegebene Fähigkeit registrieren. Für diesen erforderlichen Anbieter darf `ctx.getCapability` nicht verwendet werden.
+
+Zuerst ist die injizierte öffentliche Fähigkeit `study:library:provider` aufzulösen. Stellt der Host diese öffentliche Fähigkeit nur für die Aktivierungsprüfung, aber nicht im Modul-ctx bereit, darf der injizierte Dienst `study:library` ausschließlich als Träger derselben Schnittstelle aus `registerLookupProvider` und `ingestContentPack` verwendet werden. Es darf kein zweites Anbieterprotokoll entstehen.

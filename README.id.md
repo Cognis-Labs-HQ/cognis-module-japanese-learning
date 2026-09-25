@@ -204,3 +204,5 @@ Modul mendaftarkan penyedia komposer **Kamus Jisho** yang dilokalkan secara lang
 Pengambil sampel jalur SVG dimiliki modul, sehingga modul eksternal yang terpasang tidak bergantung pada `node_modules` milik host.
 
 Bootstrap memperoleh penyedia invers melalui `ctx.capabilities.require("study:library:provider")`, mengikuti pola pendaftaran penyedia autentikasi; pengambil kemudahan lama tidak digunakan.
+
+Selama peluncuran Cognis PR #226, bootstrap mendahulukan kapabilitas publik `study:library:provider` yang diinjeksi dan jika tidak tersedia menggunakan layanan `study:library` yang sudah diinjeksi, yang menerapkan permukaan generik `registerLookupProvider` dan `ingestContentPack` yang sama. Hal ini menghindari ketergantungan pada visibilitas system-ctx sambil mempertahankan satu kontrak penyedia.

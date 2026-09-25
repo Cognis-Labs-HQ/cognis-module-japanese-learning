@@ -204,3 +204,5 @@ The module registers a localized **Jisho Dictionary** composer provider directly
 The SVG path sampler is module-owned, so installed external modules do not depend on host `node_modules`.
 
 Bootstrap consumes the inverse provider through `ctx.capabilities.require("study:library:provider")`, matching the registration pattern used by authentication providers; it does not use the legacy convenience getter.
+
+During Cognis PR #226 rollout, bootstrap prefers the injected public `study:library:provider` capability and otherwise uses the already injected `study:library` service, which implements the identical generic `registerLookupProvider` and `ingestContentPack` surface. This avoids depending on system-ctx visibility while preserving one provider contract.

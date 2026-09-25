@@ -204,3 +204,5 @@ npm run check:manifest
 SVG パスサンプラーはモジュール自身が所有するため、インストールされた外部モジュールはホストの `node_modules` に依存しません。
 
 Bootstrap は `ctx.capabilities.require("study:library:provider")` から逆向きプロバイダーを取得し、認証プロバイダーと同じ登録方式に従います。旧来の簡易 getter は使用しません。
+
+Cognis PR #226 の移行中、Bootstrap は注入済みの公開 `study:library:provider` ケイパビリティを優先し、取得できない場合は、同一の汎用 `registerLookupProvider` と `ingestContentPack` インターフェイスを実装する注入済み `study:library` サービスを使用します。これにより、単一のプロバイダーコントラクトを維持しながら system ctx の可視性に依存しません。

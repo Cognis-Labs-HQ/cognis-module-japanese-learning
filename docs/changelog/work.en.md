@@ -427,3 +427,9 @@ Removed the undeployed `svg-path-properties` production dependency that prevente
 Bootstrap now consumes the required Library registration surface through `ctx.capabilities.require("study:library:provider")`, matching the inverse provider pattern used by SSO authentication modules. It no longer uses the convenience getter that returned `undefined` for this required capability, while provider shape validation and lifecycle cleanup remain intact.
 
 - [a3e2b35](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/a3e2b35)
+
+## Library Provider Visibility Bridge
+
+Bootstrap now prefers the injected public `study:library:provider` capability, but when Cognis PR #226 exposes it only to enable validation, it uses the injected `study:library` service as a carrier for the exact same generic `registerLookupProvider` and `ingestContentPack` interface. This fixes activation without creating a second provider protocol, and tests cover both host visibility shapes.
+
+- [f9c29d8](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/f9c29d8)

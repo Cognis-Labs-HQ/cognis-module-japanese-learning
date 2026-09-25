@@ -427,3 +427,9 @@ Die nicht bereitgestellte Produktionsabhängigkeit `svg-path-properties`, die Co
 Bootstrap bezieht die erforderliche Library-Registrierungsoberfläche nun über `ctx.capabilities.require("study:library:provider")` und folgt damit dem inversen Anbietermuster der SSO-Authentifizierungsmodule. Der Komfort-Getter, der für diese erforderliche Fähigkeit `undefined` zurückgab, wird nicht mehr verwendet; Formprüfung und Lebenszyklusbereinigung der Anbieter bleiben erhalten.
 
 - [a3e2b35](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/a3e2b35)
+
+## Sichtbarkeitsbrücke für den Library-Anbieter
+
+Bootstrap bevorzugt nun die injizierte öffentliche Fähigkeit `study:library:provider`. Wenn Cognis PR #226 sie jedoch nur für die Aktivierungsprüfung bereitstellt, verwendet Bootstrap den injizierten Dienst `study:library` als Träger derselben generischen Schnittstelle aus `registerLookupProvider` und `ingestContentPack`. Dadurch funktioniert die Aktivierung ohne ein zweites Anbieterprotokoll; Tests decken beide Sichtbarkeitsformen des Hosts ab.
+
+- [f9c29d8](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/f9c29d8)

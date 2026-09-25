@@ -204,3 +204,5 @@ Das Modul registriert einen lokalisierten **Jisho-Wörterbuch**-Anbieter direkt 
 Der SVG-Pfad-Sampler gehört zum Modul, sodass installierte externe Module nicht von den `node_modules` des Hosts abhängen.
 
 Bootstrap bezieht den inversen Anbieter über `ctx.capabilities.require("study:library:provider")` und folgt damit dem Registrierungsmuster der Authentifizierungsanbieter; der veraltete Komfort-Getter wird nicht verwendet.
+
+Während der Einführung von Cognis PR #226 bevorzugt Bootstrap die injizierte öffentliche Fähigkeit `study:library:provider` und verwendet andernfalls den bereits injizierten Dienst `study:library`, der dieselbe generische Oberfläche aus `registerLookupProvider` und `ingestContentPack` implementiert. Dadurch besteht keine Abhängigkeit von der Sichtbarkeit des System-ctx, während ein einziger Anbietervertrag erhalten bleibt.

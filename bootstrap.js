@@ -6,8 +6,8 @@ const CONTENT_PACK = Object.freeze({
     id: "japanese-core",
     publisher: "Cognis Labs HQ",
     namespace: "ja",
-    version: "2.2.38",
-    contentRevision: "2026-09-25.6",
+    version: "2.2.39",
+    contentRevision: "2026-09-25.7",
     schema: "schema.json",
     content: "content",
     protected: true,
@@ -40,7 +40,7 @@ const LANGUAGE = Object.freeze({
     languageCode: "ja",
     languageName: "日本語",
     languageFlag: "🇯🇵",
-    version: "2.2.38",
+    version: "2.2.39",
     package: CONTENT_PACK,
     childComponents: [],
 });
@@ -54,12 +54,14 @@ export async function uninstallModule(ctx, { deleteContent }) {
 }
 
 export async function bootstrapModule(ctx) {
-    const library = ctx.capabilities.require("study:library:provider");
+    const library =
+        ctx.capabilities.get("study:library:provider") ??
+        ctx.capabilities.require("study:library");
     if (
         typeof library.ingestContentPack !== "function" ||
         typeof library.registerLookupProvider !== "function"
     ) {
-        throw new Error("Invalid study:library:provider capability.");
+        throw new Error("Invalid Study Library provider capability.");
     }
     ctx.registerStaticDir("", path.join(ctx.moduleRoot, "ui"));
     const libraryRoot = path.join(ctx.moduleRoot, "data", "library");

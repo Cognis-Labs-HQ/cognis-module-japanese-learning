@@ -427,3 +427,9 @@ Cognis の有効化検証時にモジュールを import できなくしてい�
 Bootstrap は、SSO 認証モジュールと同じ逆向きプロバイダーパターンに従い、`ctx.capabilities.require("study:library:provider")` から必須の Library 登録インターフェイスを取得するようになりました。この必須ケイパビリティに `undefined` を返していた簡易 getter は使用せず、プロバイダー形状の検証とライフサイクルのクリーンアップは維持します。
 
 - [a3e2b35](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/a3e2b35)
+
+## Library プロバイダー可視性ブリッジ
+
+Bootstrap は注入済みの公開 `study:library:provider` ケイパビリティを優先しますが、Cognis PR #226 が有効化検証にだけ公開している場合は、注入済み `study:library` サービスを、まったく同じ汎用 `registerLookupProvider` と `ingestContentPack` インターフェイスの搬送手段として使用します。第 2 のプロバイダープロトコルを作らずに有効化を修正し、両方のホスト可視性形態をテストします。
+
+- [f9c29d8](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/f9c29d8)

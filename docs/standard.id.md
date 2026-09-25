@@ -205,3 +205,5 @@ Jisho hanya boleh didaftarkan melalui kontrak generik `study:library:provider.re
 Titik masuk penyedia runtime tidak boleh mengimpor paket npm yang tidak diterapkan; pengambil sampel jalur SVG KanjiVG dimiliki modul dan disertakan dalam manifes.
 
 Bootstrap runtime harus menyelesaikan penyedia Library invers dengan `ctx.capabilities.require`, lalu mendaftarkan penyedia pencarian melalui kapabilitas yang dikembalikan. Jangan gunakan `ctx.getCapability` untuk penyedia wajib ini.
+
+Selesaikan kapabilitas publik `study:library:provider` yang diinjeksi terlebih dahulu. Jika host hanya mengekspos kapabilitas publik itu untuk validasi pengaktifan dan bukan ke ctx modul, gunakan layanan `study:library` yang diinjeksi semata-mata sebagai pembawa antarmuka `registerLookupProvider` dan `ingestContentPack` yang sama. Jangan memperkenalkan protokol penyedia kedua.
