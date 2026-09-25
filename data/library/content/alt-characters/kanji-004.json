@@ -3,7 +3,7 @@
         "id": "ja:kanji:core-e5a5bd",
         "label": "好",
         "fields": {
-            "pronunciation": ["す"],
+            "pronunciation": ["すき"],
             "audio": "https://assets.cognis.dev/study/ja/pronunciation/kanji-e5a5bd.mp3",
             "stroke_pattern": {
                 "coordinateSystem": "normalized",
@@ -153,16 +153,20 @@
         },
         "references": [
             {
+                "entryId": "ja:def:kanji-core-e5a5bd",
+                "relation": "definitions"
+            },
+            {
                 "entryId": "ja:word:suki",
                 "relation": "readings",
                 "position": 0
             },
             {
-                "entryId": "ja:def:kanji-core-e5a5bd",
-                "relation": "definitions"
+                "entryId": "ja:char:su",
+                "relation": "reading-kana-dependency"
             },
             {
-                "entryId": "ja:char:su",
+                "entryId": "ja:char:ki",
                 "relation": "reading-kana-dependency"
             }
         ],
@@ -172,7 +176,7 @@
         "id": "ja:kanji:core-walk",
         "label": "歩",
         "fields": {
-            "pronunciation": ["ある"],
+            "pronunciation": ["あるく"],
             "audio": "https://assets.cognis.dev/study/ja/pronunciation/kanji-walk.mp3",
             "stroke_pattern": {
                 "coordinateSystem": "normalized",
@@ -350,13 +354,13 @@
         },
         "references": [
             {
+                "entryId": "ja:def:kanji-core-walk",
+                "relation": "definitions"
+            },
+            {
                 "entryId": "ja:word:aruku",
                 "relation": "readings",
                 "position": 0
-            },
-            {
-                "entryId": "ja:def:kanji-core-walk",
-                "relation": "definitions"
             },
             {
                 "entryId": "ja:char:a",
@@ -364,6 +368,10 @@
             },
             {
                 "entryId": "ja:char:ru",
+                "relation": "reading-kana-dependency"
+            },
+            {
+                "entryId": "ja:char:ku",
                 "relation": "reading-kana-dependency"
             }
         ],

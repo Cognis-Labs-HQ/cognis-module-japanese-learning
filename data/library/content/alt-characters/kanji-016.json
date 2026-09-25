@@ -3,7 +3,7 @@
         "id": "ja:kanji:core-e9a39f",
         "label": "食",
         "fields": {
-            "pronunciation": ["た"],
+            "pronunciation": ["たべる"],
             "audio": "https://assets.cognis.dev/study/ja/pronunciation/kanji-e9a39f.mp3",
             "stroke_pattern": {
                 "coordinateSystem": "normalized",
@@ -205,16 +205,24 @@
         },
         "references": [
             {
+                "entryId": "ja:def:kanji-core-e9a39f",
+                "relation": "definitions"
+            },
+            {
                 "entryId": "ja:word:taberu",
                 "relation": "readings",
                 "position": 0
             },
             {
-                "entryId": "ja:def:kanji-core-e9a39f",
-                "relation": "definitions"
+                "entryId": "ja:char:ta",
+                "relation": "reading-kana-dependency"
             },
             {
-                "entryId": "ja:char:ta",
+                "entryId": "ja:char:be",
+                "relation": "reading-kana-dependency"
+            },
+            {
+                "entryId": "ja:char:ru",
                 "relation": "reading-kana-dependency"
             }
         ],
@@ -224,7 +232,7 @@
         "id": "ja:kanji:core-e9a3b2",
         "label": "飲",
         "fields": {
-            "pronunciation": ["の"],
+            "pronunciation": ["のむ"],
             "audio": "https://assets.cognis.dev/study/ja/pronunciation/kanji-e9a3b2.mp3",
             "stroke_pattern": {
                 "coordinateSystem": "normalized",
@@ -473,16 +481,20 @@
         },
         "references": [
             {
+                "entryId": "ja:def:kanji-core-e9a3b2",
+                "relation": "definitions"
+            },
+            {
                 "entryId": "ja:word:nomu",
                 "relation": "readings",
                 "position": 0
             },
             {
-                "entryId": "ja:def:kanji-core-e9a3b2",
-                "relation": "definitions"
+                "entryId": "ja:char:no",
+                "relation": "reading-kana-dependency"
             },
             {
-                "entryId": "ja:char:no",
+                "entryId": "ja:char:mu",
                 "relation": "reading-kana-dependency"
             }
         ],

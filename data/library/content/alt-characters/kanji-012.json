@@ -3,7 +3,7 @@
         "id": "ja:kanji:core-e8bb8a",
         "label": "車",
         "fields": {
-            "pronunciation": ["くるま", "しゃ"],
+            "pronunciation": ["くるま"],
             "audio": "https://assets.cognis.dev/study/ja/pronunciation/kanji-e8bb8a.mp3",
             "stroke_pattern": {
                 "coordinateSystem": "normalized",
@@ -182,18 +182,18 @@
         },
         "references": [
             {
+                "entryId": "ja:def:kanji-core-e8bb8a",
+                "relation": "definitions"
+            },
+            {
                 "entryId": "ja:word:kuruma",
                 "relation": "readings",
                 "position": 0
             },
             {
                 "entryId": "ja:word:densha",
-                "relation": "readings",
-                "position": 1
-            },
-            {
-                "entryId": "ja:def:kanji-core-e8bb8a",
-                "relation": "definitions"
+                "relation": "alternate-readings",
+                "position": 0
             },
             {
                 "entryId": "ja:char:ku",
@@ -222,7 +222,7 @@
         "id": "ja:kanji:core-e99bbb",
         "label": "電",
         "fields": {
-            "pronunciation": ["でん"],
+            "pronunciation": ["でんしゃ"],
             "audio": "https://assets.cognis.dev/study/ja/pronunciation/kanji-e99bbb.mp3",
             "stroke_pattern": {
                 "coordinateSystem": "normalized",
@@ -510,13 +510,13 @@
         },
         "references": [
             {
+                "entryId": "ja:def:kanji-core-e99bbb",
+                "relation": "definitions"
+            },
+            {
                 "entryId": "ja:word:densha",
                 "relation": "readings",
                 "position": 0
-            },
-            {
-                "entryId": "ja:def:kanji-core-e99bbb",
-                "relation": "definitions"
             },
             {
                 "entryId": "ja:char:de",
@@ -524,6 +524,14 @@
             },
             {
                 "entryId": "ja:char:n",
+                "relation": "reading-kana-dependency"
+            },
+            {
+                "entryId": "ja:char:shi",
+                "relation": "reading-kana-dependency"
+            },
+            {
+                "entryId": "ja:char:small-ya",
                 "relation": "reading-kana-dependency"
             }
         ],

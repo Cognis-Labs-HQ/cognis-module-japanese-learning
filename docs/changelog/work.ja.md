@@ -433,3 +433,9 @@ Bootstrap は、SSO 認証モジュールと同じ逆向きプロバイダーパ
 Bootstrap は注入済みの公開 `study:library:provider` ケイパビリティを優先しますが、Cognis PR #226 が有効化検証にだけ公開している場合は、注入済み `study:library` サービスを、まったく同じ汎用 `registerLookupProvider` と `ingestContentPack` インターフェイスの搬送手段として使用します。第 2 のプロバイダープロトコルを作らずに有効化を修正し、両方のホスト可視性形態をテストします。
 
 - [f9c29d8](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/f9c29d8)
+
+## 完全に解決可能な文・漢字リンク
+
+ホストと同一の別名合成アルゴリズムでタイトル詳細リンクを監査しました。すべての文の発音について、順序付きのかな区間が意図した語彙および助詞レコードを開くことを検証します。各漢字は、隣接する 1 つの語彙ターゲットと一致する完全な主要読みを 1 つ公開します。追加の読みはタイトルに使わない別の関係を使用し、逆引き用の全原子的かな依存関係を維持します。
+
+- [2a5f23f](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/2a5f23f)

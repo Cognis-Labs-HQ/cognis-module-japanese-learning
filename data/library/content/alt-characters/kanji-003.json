@@ -3,7 +3,7 @@
         "id": "ja:kanji:core-e5b08f",
         "label": "小",
         "fields": {
-            "pronunciation": ["ちい"],
+            "pronunciation": ["ちいさい"],
             "audio": "https://assets.cognis.dev/study/ja/pronunciation/kanji-e5b08f.mp3",
             "stroke_pattern": {
                 "coordinateSystem": "normalized",
@@ -81,13 +81,13 @@
         },
         "references": [
             {
+                "entryId": "ja:def:kanji-core-e5b08f",
+                "relation": "definitions"
+            },
+            {
                 "entryId": "ja:word:chiisai",
                 "relation": "readings",
                 "position": 0
-            },
-            {
-                "entryId": "ja:def:kanji-core-e5b08f",
-                "relation": "definitions"
             },
             {
                 "entryId": "ja:char:chi",
@@ -95,6 +95,10 @@
             },
             {
                 "entryId": "ja:char:i",
+                "relation": "reading-kana-dependency"
+            },
+            {
+                "entryId": "ja:char:sa",
                 "relation": "reading-kana-dependency"
             }
         ],
@@ -104,7 +108,7 @@
         "id": "ja:kanji:core-e79bb4",
         "label": "直",
         "fields": {
-            "pronunciation": ["なお"],
+            "pronunciation": ["なおす"],
             "audio": "https://assets.cognis.dev/study/ja/pronunciation/kanji-e79bb4.mp3",
             "stroke_pattern": {
                 "coordinateSystem": "normalized",
@@ -302,13 +306,13 @@
         },
         "references": [
             {
+                "entryId": "ja:def:kanji-core-e79bb4",
+                "relation": "definitions"
+            },
+            {
                 "entryId": "ja:word:naosu",
                 "relation": "readings",
                 "position": 0
-            },
-            {
-                "entryId": "ja:def:kanji-core-e79bb4",
-                "relation": "definitions"
             },
             {
                 "entryId": "ja:char:na",
@@ -316,6 +320,10 @@
             },
             {
                 "entryId": "ja:char:o",
+                "relation": "reading-kana-dependency"
+            },
+            {
+                "entryId": "ja:char:su",
                 "relation": "reading-kana-dependency"
             }
         ],

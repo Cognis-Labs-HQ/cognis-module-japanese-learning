@@ -206,3 +206,7 @@ Der SVG-Pfad-Sampler gehört zum Modul, sodass installierte externe Module nicht
 Bootstrap bezieht den inversen Anbieter über `ctx.capabilities.require("study:library:provider")` und folgt damit dem Registrierungsmuster der Authentifizierungsanbieter; der veraltete Komfort-Getter wird nicht verwendet.
 
 Während der Einführung von Cognis PR #226 bevorzugt Bootstrap die injizierte öffentliche Fähigkeit `study:library:provider` und verwendet andernfalls den bereits injizierten Dienst `study:library`, der dieselbe generische Oberfläche aus `registerLookupProvider` und `ingestContentPack` implementiert. Dadurch besteht keine Abhängigkeit von der Sichtbarkeit des System-ctx, während ein einziger Anbietervertrag erhalten bleibt.
+
+## Geprüfte Links in Titeldetails
+
+Jede Satzaussprache wird nun gegen den Titeldetail-Resolver des Hosts geprüft, sodass jeder Kana-Abschnitt seinen geordneten Vokabel- oder Partikeleintrag öffnet. Jedes Kanji stellt eine eindeutige vollständige Primärlesung bereit, die exakt zum angrenzenden Vokabelziel passt; weitere Lesungen bleiben über eine separate Nicht-Titel-Beziehung verfügbar, und alle Kana-Abhängigkeiten bleiben für die inverse Navigation sichtbar.

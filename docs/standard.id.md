@@ -207,3 +207,7 @@ Titik masuk penyedia runtime tidak boleh mengimpor paket npm yang tidak diterapk
 Bootstrap runtime harus menyelesaikan penyedia Library invers dengan `ctx.capabilities.require`, lalu mendaftarkan penyedia pencarian melalui kapabilitas yang dikembalikan. Jangan gunakan `ctx.getCapability` untuk penyedia wajib ini.
 
 Selesaikan kapabilitas publik `study:library:provider` yang diinjeksi terlebih dahulu. Jika host hanya mengekspos kapabilitas publik itu untuk validasi pengaktifan dan bukan ke ctx modul, gunakan layanan `study:library` yang diinjeksi semata-mata sebagai pembawa antarmuka `registerLookupProvider` dan `ingestContentPack` yang sama. Jangan memperkenalkan protokol penyedia kedua.
+
+## Detail judul yang dapat diselesaikan
+
+Untuk setiap kalimat dan Kanji yang memiliki pelafalan, ulangi algoritme komposisi alias host dalam pengujian. Semua target tertaut, sesuai urutan posisi hubungan, harus bergabung tepat menjadi pelafalan yang ditampilkan. Judul Kanji mengekspos satu bacaan Kosakata terdekat utama yang lengkap; simpan bacaan tambahan di luar bidang pelafalan dan jalur `input.linkRelationships` agar bacaan tersebut tidak membuat semua tautan judul gagal sebagai satu rantai gabungan.

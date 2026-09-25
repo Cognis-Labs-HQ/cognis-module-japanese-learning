@@ -1,6 +1,6 @@
 {
     "id": "japanese-core",
-    "version": 54,
+    "version": 55,
     "namespace": "ja",
     "language": "ja",
     "metadata": {
@@ -444,6 +444,20 @@
                     "requiredTarget": true,
                     "resolverRole": "explicit",
                     "presentationRole": "pronunciation"
+                },
+                {
+                    "id": "alternate-readings",
+                    "targetLayer": "words",
+                    "metadata": {
+                        "labels": {
+                            "de": "Weitere Lesungen",
+                            "en": "Additional Readings",
+                            "id": "Bacaan Tambahan",
+                            "ja": "その他の読み"
+                        }
+                    },
+                    "ordered": true,
+                    "onDelete": "restrict"
                 },
                 {
                     "id": "reading-kana-dependency",

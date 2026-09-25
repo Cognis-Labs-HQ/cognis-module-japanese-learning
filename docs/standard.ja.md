@@ -207,3 +207,7 @@ Jisho は汎用 `study:library:provider.registerLookupProvider` コントラク�
 ランタイム Bootstrap は `ctx.capabilities.require` で逆向き Library プロバイダーを解決し、返されたケイパビリティを通じて検索プロバイダーを登録しなければなりません。この必須プロバイダーに `ctx.getCapability` を使用してはいけません。
 
 まず注入済みの公開 `study:library:provider` ケイパビリティを解決します。ホストがその公開ケイパビリティを有効化検証にだけ公開し、モジュール ctx には公開しない場合、注入済み `study:library` サービスを同一の `registerLookupProvider` と `ingestContentPack` インターフェイスの搬送手段としてのみ使用します。第 2 のプロバイダープロトコルを導入してはいけません。
+
+## 解決可能なタイトル詳細
+
+発音を持つすべての文と漢字について、ホストの別名合成アルゴリズムをテストで再現します。関係位置順の全リンク先が、表示発音と完全に一致する文字列へ連結されなければなりません。漢字タイトルは隣接する語彙の完全な主要読みを 1 つ公開し、追加の読みは発音フィールドとその `input.linkRelationships` 経路の外に保存して、全タイトルリンクが 1 本の連結列として失敗することを防ぎます。

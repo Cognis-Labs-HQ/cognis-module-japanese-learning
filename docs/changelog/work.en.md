@@ -433,3 +433,9 @@ Bootstrap now consumes the required Library registration surface through `ctx.ca
 Bootstrap now prefers the injected public `study:library:provider` capability, but when Cognis PR #226 exposes it only to enable validation, it uses the injected `study:library` service as a carrier for the exact same generic `registerLookupProvider` and `ingestContentPack` interface. This fixes activation without creating a second provider protocol, and tests cover both host visibility shapes.
 
 - [f9c29d8](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/f9c29d8)
+
+## Fully Resolvable Sentence and Kanji Links
+
+Audited title-detail links with the host's exact alias-composition algorithm. Every sentence pronunciation now proves that its ordered Kana spans open the intended Vocabulary and Particle records. Every Kanji exposes one complete primary reading matching one adjacent Vocabulary target, while additional readings use a separate non-title relationship and retain all atomic-Kana dependencies for inverse navigation.
+
+- [2a5f23f](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/2a5f23f)

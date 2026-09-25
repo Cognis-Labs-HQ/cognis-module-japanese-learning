@@ -433,3 +433,9 @@ Bootstrap kini memperoleh permukaan pendaftaran Library wajib melalui `ctx.capab
 Bootstrap kini mendahulukan kapabilitas publik `study:library:provider` yang diinjeksi, tetapi ketika Cognis PR #226 hanya mengeksposnya untuk validasi pengaktifan, bootstrap menggunakan layanan `study:library` yang diinjeksi sebagai pembawa antarmuka generik `registerLookupProvider` dan `ingestContentPack` yang sama persis. Perubahan ini memperbaiki aktivasi tanpa membuat protokol penyedia kedua, dan pengujian mencakup kedua bentuk visibilitas host.
 
 - [f9c29d8](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/f9c29d8)
+
+## Tautan Kalimat dan Kanji yang Sepenuhnya Dapat Diselesaikan
+
+Tautan detail judul diaudit dengan algoritme komposisi alias host yang persis. Setiap pelafalan kalimat kini membuktikan bahwa rentang Kana terurutnya membuka rekaman Kosakata dan Partikel yang dimaksud. Setiap Kanji mengekspos satu bacaan utama lengkap yang cocok dengan satu target Kosakata terdekat, sedangkan bacaan tambahan memakai hubungan nonjudul terpisah dan mempertahankan seluruh dependensi Kana atomik untuk navigasi invers.
+
+- [2a5f23f](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/2a5f23f)

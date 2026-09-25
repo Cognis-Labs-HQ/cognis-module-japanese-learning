@@ -3,7 +3,7 @@
         "id": "ja:kanji:go",
         "label": "語",
         "fields": {
-            "pronunciation": ["ご", "かた"],
+            "pronunciation": ["にほんご"],
             "audio": "https://assets.cognis.dev/study/ja/pronunciation/kanji-go.mp3",
             "stroke_pattern": {
                 "coordinateSystem": "normalized",
@@ -280,18 +280,18 @@
         },
         "references": [
             {
+                "entryId": "ja:def:kanji-go",
+                "relation": "definitions"
+            },
+            {
                 "entryId": "ja:word:nihongo",
                 "relation": "readings",
                 "position": 0
             },
             {
                 "entryId": "ja:word:reading-kata",
-                "relation": "readings",
-                "position": 1
-            },
-            {
-                "entryId": "ja:def:kanji-go",
-                "relation": "definitions"
+                "relation": "alternate-readings",
+                "position": 0
             },
             {
                 "entryId": "ja:char:go",
@@ -303,6 +303,18 @@
             },
             {
                 "entryId": "ja:char:ta",
+                "relation": "reading-kana-dependency"
+            },
+            {
+                "entryId": "ja:char:ni",
+                "relation": "reading-kana-dependency"
+            },
+            {
+                "entryId": "ja:char:ho",
+                "relation": "reading-kana-dependency"
+            },
+            {
+                "entryId": "ja:char:n",
                 "relation": "reading-kana-dependency"
             }
         ],

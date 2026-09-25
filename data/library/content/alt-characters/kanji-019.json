@@ -3,7 +3,7 @@
         "id": "ja:kanji:nichi",
         "label": "日",
         "fields": {
-            "pronunciation": ["にち", "じつ", "ひ", "か", "に"],
+            "pronunciation": ["にち"],
             "audio": "https://assets.cognis.dev/study/ja/pronunciation/kanji-nichi.mp3",
             "stroke_pattern": {
                 "coordinateSystem": "normalized",
@@ -115,33 +115,33 @@
         },
         "references": [
             {
+                "entryId": "ja:def:kanji-nichi",
+                "relation": "definitions"
+            },
+            {
                 "entryId": "ja:word:reading-nichi",
                 "relation": "readings",
                 "position": 0
             },
             {
                 "entryId": "ja:word:reading-jitsu",
-                "relation": "readings",
-                "position": 1
+                "relation": "alternate-readings",
+                "position": 0
             },
             {
                 "entryId": "ja:word:reading-hi",
-                "relation": "readings",
-                "position": 2
+                "relation": "alternate-readings",
+                "position": 1
             },
             {
                 "entryId": "ja:word:ka-day-counter",
-                "relation": "readings",
-                "position": 3
-            },
-            {
-                "entryId": "ja:def:kanji-nichi",
-                "relation": "definitions"
+                "relation": "alternate-readings",
+                "position": 2
             },
             {
                 "entryId": "ja:word:nihon",
-                "relation": "readings",
-                "position": 4
+                "relation": "alternate-readings",
+                "position": 3
             },
             {
                 "entryId": "ja:char:ni",
@@ -174,7 +174,7 @@
         "id": "ja:kanji:hon",
         "label": "本",
         "fields": {
-            "pronunciation": ["ほん", "もと"],
+            "pronunciation": ["にほん"],
             "audio": "https://assets.cognis.dev/study/ja/pronunciation/kanji-hon.mp3",
             "stroke_pattern": {
                 "coordinateSystem": "normalized",
@@ -305,18 +305,18 @@
         },
         "references": [
             {
+                "entryId": "ja:def:kanji-hon",
+                "relation": "definitions"
+            },
+            {
                 "entryId": "ja:word:nihon",
                 "relation": "readings",
                 "position": 0
             },
             {
                 "entryId": "ja:word:reading-moto",
-                "relation": "readings",
-                "position": 1
-            },
-            {
-                "entryId": "ja:def:kanji-hon",
-                "relation": "definitions"
+                "relation": "alternate-readings",
+                "position": 0
             },
             {
                 "entryId": "ja:char:ho",
@@ -332,6 +332,10 @@
             },
             {
                 "entryId": "ja:char:to",
+                "relation": "reading-kana-dependency"
+            },
+            {
+                "entryId": "ja:char:ni",
                 "relation": "reading-kana-dependency"
             }
         ],

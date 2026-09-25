@@ -3,7 +3,7 @@
         "id": "ja:kanji:core-e58588",
         "label": "先",
         "fields": {
-            "pronunciation": ["せん"],
+            "pronunciation": ["せんせい"],
             "audio": "https://assets.cognis.dev/study/ja/pronunciation/kanji-e58588.mp3",
             "stroke_pattern": {
                 "coordinateSystem": "normalized",
@@ -148,13 +148,13 @@
         },
         "references": [
             {
+                "entryId": "ja:def:kanji-core-e58588",
+                "relation": "definitions"
+            },
+            {
                 "entryId": "ja:word:sensei",
                 "relation": "readings",
                 "position": 0
-            },
-            {
-                "entryId": "ja:def:kanji-core-e58588",
-                "relation": "definitions"
             },
             {
                 "entryId": "ja:char:se",
@@ -162,6 +162,10 @@
             },
             {
                 "entryId": "ja:char:n",
+                "relation": "reading-kana-dependency"
+            },
+            {
+                "entryId": "ja:char:i",
                 "relation": "reading-kana-dependency"
             }
         ],
@@ -171,7 +175,7 @@
         "id": "ja:kanji:core-e7949f",
         "label": "生",
         "fields": {
-            "pronunciation": ["せい"],
+            "pronunciation": ["がくせい"],
             "audio": "https://assets.cognis.dev/study/ja/pronunciation/kanji-e7949f.mp3",
             "stroke_pattern": {
                 "coordinateSystem": "normalized",
@@ -297,13 +301,13 @@
         },
         "references": [
             {
+                "entryId": "ja:def:kanji-core-e7949f",
+                "relation": "definitions"
+            },
+            {
                 "entryId": "ja:word:gakusei",
                 "relation": "readings",
                 "position": 0
-            },
-            {
-                "entryId": "ja:def:kanji-core-e7949f",
-                "relation": "definitions"
             },
             {
                 "entryId": "ja:char:se",
@@ -311,6 +315,14 @@
             },
             {
                 "entryId": "ja:char:i",
+                "relation": "reading-kana-dependency"
+            },
+            {
+                "entryId": "ja:char:ga",
+                "relation": "reading-kana-dependency"
+            },
+            {
+                "entryId": "ja:char:ku",
                 "relation": "reading-kana-dependency"
             }
         ],

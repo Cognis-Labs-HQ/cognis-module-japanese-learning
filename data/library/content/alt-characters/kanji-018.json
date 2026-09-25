@@ -115,13 +115,13 @@
         },
         "references": [
             {
+                "entryId": "ja:def:kanji-core-e78aac",
+                "relation": "definitions"
+            },
+            {
                 "entryId": "ja:word:inu",
                 "relation": "readings",
                 "position": 0
-            },
-            {
-                "entryId": "ja:def:kanji-core-e78aac",
-                "relation": "definitions"
             },
             {
                 "entryId": "ja:char:i",
@@ -138,7 +138,7 @@
         "id": "ja:kanji:hito",
         "label": "人",
         "fields": {
-            "pronunciation": ["じん", "にん", "ひと"],
+            "pronunciation": ["じん"],
             "audio": "https://assets.cognis.dev/study/ja/pronunciation/kanji-hito.mp3",
             "stroke_pattern": {
                 "coordinateSystem": "normalized",
@@ -202,23 +202,23 @@
         },
         "references": [
             {
+                "entryId": "ja:def:kanji-hito",
+                "relation": "definitions"
+            },
+            {
                 "entryId": "ja:word:reading-jin",
                 "relation": "readings",
                 "position": 0
             },
             {
                 "entryId": "ja:word:reading-nin",
-                "relation": "readings",
-                "position": 1
+                "relation": "alternate-readings",
+                "position": 0
             },
             {
                 "entryId": "ja:word:reading-hito",
-                "relation": "readings",
-                "position": 2
-            },
-            {
-                "entryId": "ja:def:kanji-hito",
-                "relation": "definitions"
+                "relation": "alternate-readings",
+                "position": 1
             },
             {
                 "entryId": "ja:char:ji",

@@ -3,7 +3,7 @@
         "id": "ja:kanji:core-e58f8b",
         "label": "友",
         "fields": {
-            "pronunciation": ["とも"],
+            "pronunciation": ["ともだち"],
             "audio": "https://assets.cognis.dev/study/ja/pronunciation/kanji-e58f8b.mp3",
             "stroke_pattern": {
                 "coordinateSystem": "normalized",
@@ -125,13 +125,13 @@
         },
         "references": [
             {
+                "entryId": "ja:def:kanji-core-e58f8b",
+                "relation": "definitions"
+            },
+            {
                 "entryId": "ja:word:tomodachi",
                 "relation": "readings",
                 "position": 0
-            },
-            {
-                "entryId": "ja:def:kanji-core-e58f8b",
-                "relation": "definitions"
             },
             {
                 "entryId": "ja:char:to",
@@ -139,6 +139,14 @@
             },
             {
                 "entryId": "ja:char:mo",
+                "relation": "reading-kana-dependency"
+            },
+            {
+                "entryId": "ja:char:da",
+                "relation": "reading-kana-dependency"
+            },
+            {
+                "entryId": "ja:char:chi",
                 "relation": "reading-kana-dependency"
             }
         ],
@@ -148,7 +156,7 @@
         "id": "ja:kanji:core-e98194",
         "label": "達",
         "fields": {
-            "pronunciation": ["だち"],
+            "pronunciation": ["ともだち"],
             "audio": "https://assets.cognis.dev/study/ja/pronunciation/kanji-e98194.mp3",
             "stroke_pattern": {
                 "coordinateSystem": "normalized",
@@ -402,13 +410,13 @@
         },
         "references": [
             {
+                "entryId": "ja:def:kanji-core-e98194",
+                "relation": "definitions"
+            },
+            {
                 "entryId": "ja:word:tomodachi",
                 "relation": "readings",
                 "position": 0
-            },
-            {
-                "entryId": "ja:def:kanji-core-e98194",
-                "relation": "definitions"
             },
             {
                 "entryId": "ja:char:da",
@@ -416,6 +424,14 @@
             },
             {
                 "entryId": "ja:char:chi",
+                "relation": "reading-kana-dependency"
+            },
+            {
+                "entryId": "ja:char:to",
+                "relation": "reading-kana-dependency"
+            },
+            {
+                "entryId": "ja:char:mo",
                 "relation": "reading-kana-dependency"
             }
         ],

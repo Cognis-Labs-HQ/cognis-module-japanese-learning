@@ -3,7 +3,7 @@
         "id": "ja:kanji:core-e69da5",
         "label": "来",
         "fields": {
-            "pronunciation": ["く"],
+            "pronunciation": ["くる"],
             "audio": "https://assets.cognis.dev/study/ja/pronunciation/kanji-e69da5.mp3",
             "stroke_pattern": {
                 "coordinateSystem": "normalized",
@@ -172,16 +172,20 @@
         },
         "references": [
             {
+                "entryId": "ja:def:kanji-core-e69da5",
+                "relation": "definitions"
+            },
+            {
                 "entryId": "ja:word:kuru",
                 "relation": "readings",
                 "position": 0
             },
             {
-                "entryId": "ja:def:kanji-core-e69da5",
-                "relation": "definitions"
+                "entryId": "ja:char:ku",
+                "relation": "reading-kana-dependency"
             },
             {
-                "entryId": "ja:char:ku",
+                "entryId": "ja:char:ru",
                 "relation": "reading-kana-dependency"
             }
         ],
@@ -191,7 +195,7 @@
         "id": "ja:kanji:core-e5a4a7",
         "label": "大",
         "fields": {
-            "pronunciation": ["おお"],
+            "pronunciation": ["おおきい"],
             "audio": "https://assets.cognis.dev/study/ja/pronunciation/kanji-e5a4a7.mp3",
             "stroke_pattern": {
                 "coordinateSystem": "normalized",
@@ -279,16 +283,24 @@
         },
         "references": [
             {
+                "entryId": "ja:def:kanji-core-e5a4a7",
+                "relation": "definitions"
+            },
+            {
                 "entryId": "ja:word:ookii",
                 "relation": "readings",
                 "position": 0
             },
             {
-                "entryId": "ja:def:kanji-core-e5a4a7",
-                "relation": "definitions"
+                "entryId": "ja:char:o",
+                "relation": "reading-kana-dependency"
             },
             {
-                "entryId": "ja:char:o",
+                "entryId": "ja:char:ki",
+                "relation": "reading-kana-dependency"
+            },
+            {
+                "entryId": "ja:char:i",
                 "relation": "reading-kana-dependency"
             }
         ],

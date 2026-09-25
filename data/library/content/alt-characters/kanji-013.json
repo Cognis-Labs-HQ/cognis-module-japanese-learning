@@ -3,7 +3,7 @@
         "id": "ja:kanji:core-e5ada6",
         "label": "学",
         "fields": {
-            "pronunciation": ["がっ", "がく", "まな"],
+            "pronunciation": ["がっこう"],
             "audio": "https://assets.cognis.dev/study/ja/pronunciation/kanji-e5ada6.mp3",
             "stroke_pattern": {
                 "coordinateSystem": "normalized",
@@ -186,23 +186,23 @@
         },
         "references": [
             {
+                "entryId": "ja:def:kanji-core-e5ada6",
+                "relation": "definitions"
+            },
+            {
                 "entryId": "ja:word:gakkou",
                 "relation": "readings",
                 "position": 0
             },
             {
                 "entryId": "ja:word:gakusei",
-                "relation": "readings",
-                "position": 1
+                "relation": "alternate-readings",
+                "position": 0
             },
             {
                 "entryId": "ja:word:manabu",
-                "relation": "readings",
-                "position": 2
-            },
-            {
-                "entryId": "ja:def:kanji-core-e5ada6",
-                "relation": "definitions"
+                "relation": "alternate-readings",
+                "position": 1
             },
             {
                 "entryId": "ja:char:ga",
@@ -223,6 +223,14 @@
             {
                 "entryId": "ja:char:na",
                 "relation": "reading-kana-dependency"
+            },
+            {
+                "entryId": "ja:char:ko",
+                "relation": "reading-kana-dependency"
+            },
+            {
+                "entryId": "ja:char:u",
+                "relation": "reading-kana-dependency"
             }
         ],
         "class": "writing:kanji"
@@ -231,7 +239,7 @@
         "id": "ja:kanji:core-e6a0a1",
         "label": "校",
         "fields": {
-            "pronunciation": ["こう"],
+            "pronunciation": ["がっこう"],
             "audio": "https://assets.cognis.dev/study/ja/pronunciation/kanji-e6a0a1.mp3",
             "stroke_pattern": {
                 "coordinateSystem": "normalized",
@@ -447,13 +455,13 @@
         },
         "references": [
             {
+                "entryId": "ja:def:kanji-core-e6a0a1",
+                "relation": "definitions"
+            },
+            {
                 "entryId": "ja:word:gakkou",
                 "relation": "readings",
                 "position": 0
-            },
-            {
-                "entryId": "ja:def:kanji-core-e6a0a1",
-                "relation": "definitions"
             },
             {
                 "entryId": "ja:char:ko",
@@ -461,6 +469,14 @@
             },
             {
                 "entryId": "ja:char:u",
+                "relation": "reading-kana-dependency"
+            },
+            {
+                "entryId": "ja:char:ga",
+                "relation": "reading-kana-dependency"
+            },
+            {
+                "entryId": "ja:char:small-tsu",
                 "relation": "reading-kana-dependency"
             }
         ],

@@ -668,7 +668,12 @@ test("Kanji reading dependencies are visible from every atomic Kana", () => {
                 )
                 .map(({ entryId }) => entryId),
         );
-        assert.deepEqual(dependencyIds, expectedIds, `${Kanji.id} Kana links`);
+        for (const expectedId of expectedIds) {
+            assert.ok(
+                dependencyIds.has(expectedId),
+                `${Kanji.id} is missing primary Kana link ${expectedId}`,
+            );
+        }
         for (const entryId of dependencyIds) {
             assert.equal(recordsById.get(entryId).layer, "characters");
             if (!inbound.has(entryId)) inbound.set(entryId, new Set());
@@ -836,5 +841,83 @@ test("content pack does not include binary files", () => {
                     false,
                 );
         }
+    }
+});
+
+function aliases(record) {
+    return [record.label, ...(record.fields?.pronunciation ?? [])]
+        .map((value) => value.normalize("NFKC"))
+        .sort((left, right) => right.length - left.length);
+}
+
+function assertTitlePronunciationLinks(record, layer, recordsById) {
+    const pronunciationField = layer.fields?.find(
+        ({ id }) => id === "pronunciation",
+    );
+    const relationships = new Set(
+        pronunciationField?.input?.linkRelationships ?? [],
+    );
+    for (const pronunciation of record.fields?.pronunciation ?? []) {
+        if (pronunciation === record.label) continue;
+        const references = (record.references ?? [])
+            .map((reference, authoredIndex) => ({
+                ...reference,
+                authoredIndex,
+                target: recordsById.get(reference.entryId),
+            }))
+            .filter(
+                ({ relation, target }) => relationships.has(relation) && target,
+            )
+            .sort(
+                (left, right) =>
+                    (left.position ?? left.authoredIndex) -
+                        (right.position ?? right.authoredIndex) ||
+                    left.authoredIndex - right.authoredIndex,
+            );
+        assert.ok(references.length, `${record.id} has no title-detail links`);
+        let offset = 0;
+        for (const { target } of references) {
+            const alias = aliases(target).find((value) =>
+                pronunciation.startsWith(value, offset),
+            );
+            assert.ok(
+                alias,
+                `${record.id} cannot link ${pronunciation} through ${target.id}`,
+            );
+            offset += alias.length;
+        }
+        assert.equal(
+            offset,
+            pronunciation.length,
+            `${record.id} links only ${pronunciation.slice(0, offset)}`,
+        );
+    }
+}
+
+test("every sentence pronunciation segment has a working title link", () => {
+    const records = loadRecords();
+    const recordsById = new Map(records.map((record) => [record.id, record]));
+    const layer = schema.layers.find(({ id }) => id === "sentences");
+    for (const sentence of records.filter(
+        ({ layer: layerId }) => layerId === "sentences",
+    )) {
+        assertTitlePronunciationLinks(sentence, layer, recordsById);
+    }
+});
+
+test("every Kanji pronunciation opens its complete adjacent reading", () => {
+    const records = loadRecords();
+    const recordsById = new Map(records.map((record) => [record.id, record]));
+    const layer = schema.layers.find(({ id }) => id === "alt-characters");
+    for (const kanji of records.filter(
+        ({ layer: layerId }) => layerId === "alt-characters",
+    )) {
+        assert.equal(
+            kanji.references.filter(({ relation }) => relation === "readings")
+                .length,
+            1,
+            `${kanji.id} must expose one unambiguous adjacent reading`,
+        );
+        assertTitlePronunciationLinks(kanji, layer, recordsById);
     }
 });

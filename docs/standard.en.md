@@ -207,3 +207,7 @@ Runtime provider entrypoints must not import undeployed npm packages; the KanjiV
 Runtime bootstrap must resolve the inverse Library provider through the capability bus and register lookup providers through the returned generic surface.
 
 Resolve the injected public `study:library:provider` first. If the host exposes that public capability only to enable validation and not to the module ctx, use the injected `study:library` service solely as the carrier of the same `registerLookupProvider` and `ingestContentPack` interface. Do not introduce a second provider protocol.
+
+## Resolvable title details
+
+For every pronunciation-bearing sentence and Kanji, replay the host alias-composition algorithm in tests. All linked targets, in relationship position order, must concatenate exactly to the displayed pronunciation. A Kanji title exposes one complete primary adjacent Vocabulary reading; store additional readings outside the pronunciation field and its `input.linkRelationships` path so they cannot make every title link fail as one concatenated chain.

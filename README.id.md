@@ -206,3 +206,7 @@ Pengambil sampel jalur SVG dimiliki modul, sehingga modul eksternal yang terpasa
 Bootstrap memperoleh penyedia invers melalui `ctx.capabilities.require("study:library:provider")`, mengikuti pola pendaftaran penyedia autentikasi; pengambil kemudahan lama tidak digunakan.
 
 Selama peluncuran Cognis PR #226, bootstrap mendahulukan kapabilitas publik `study:library:provider` yang diinjeksi dan jika tidak tersedia menggunakan layanan `study:library` yang sudah diinjeksi, yang menerapkan permukaan generik `registerLookupProvider` dan `ingestContentPack` yang sama. Hal ini menghindari ketergantungan pada visibilitas system-ctx sambil mempertahankan satu kontrak penyedia.
+
+## Tautan detail judul terverifikasi
+
+Setiap pelafalan kalimat kini diuji terhadap resolver detail judul host sehingga setiap rentang Kana membuka rekaman Kosakata atau Partikel yang terurut. Setiap Kanji mengekspos satu bacaan utama lengkap yang tidak ambigu dan sama persis dengan target Kosakata terdekat; bacaan tambahan tetap tersedia melalui hubungan nonjudul terpisah, dan semua dependensi Kana tetap terlihat untuk navigasi invers.
