@@ -2,7 +2,7 @@
     "id": "study-language-ja",
     "uuid": "e905927f-b133-572a-92ce-2ea8645e5ceb",
     "name": "module.study-language-ja.name",
-    "version": "2.2.34",
+    "version": "2.2.35",
     "class": "extension",
     "coreApiVersion": "v1",
     "capabilities": ["study:language:ja"],
@@ -75,31 +75,35 @@
         },
         {
             "path": "README.de.md",
-            "sha256": "3e006048366a713d4a1562877d353bfe1c82efd0f7cd60cd39c7e316660a7d91"
+            "sha256": "10673f3f65e52f6d8df13d30dfbaef734311f046a6b27e084032fb86493e900d"
         },
         {
             "path": "README.en.md",
-            "sha256": "eeefbd2b4e1e6446d79b8875a9acb237dc26e9ac88ae41696ca5b23a373723a3"
+            "sha256": "a55639a5f7226ad987279659ccb006b7ccd8cafcf97eed50c4b8c5f1c963c458"
         },
         {
             "path": "README.id.md",
-            "sha256": "c0cc928a3e2a378db0fb616b06282cad4c4fd8155b078245bec7090d2bc63183"
+            "sha256": "7e7bbff29dde4f16de921609585e7678bb2d6a86a72ee05f6af6c6fd04409262"
         },
         {
             "path": "README.ja.md",
-            "sha256": "0d65022bf0ad144c7b2e19aca071d4766ec69a322575dc495dfa4b49b5590b4c"
+            "sha256": "62d4cfd5d8a134c1a91101c14dd289ad68f63a464af950c0b6acfac2540bd446"
         },
         {
             "path": "README.md",
-            "sha256": "eeefbd2b4e1e6446d79b8875a9acb237dc26e9ac88ae41696ca5b23a373723a3"
+            "sha256": "a55639a5f7226ad987279659ccb006b7ccd8cafcf97eed50c4b8c5f1c963c458"
         },
         {
             "path": "TODO.md",
             "sha256": "a43587ed0a52af52de39314aa5b82072faf3cc9db5eb4b085aaae29ca68ed871"
         },
         {
+            "path": "api/jisho-lookup-provider.js",
+            "sha256": "dfff5968831ba014ea786edc808ec983d686f7c5d3fe1df589d90706c3175729"
+        },
+        {
             "path": "api/stroke-pattern-provider.js",
-            "sha256": "b6459b7203baa2d9d2c92568d589274030abeb0fae1825920eda409db3fc5af7"
+            "sha256": "9ddb907f26e28f2eab8d1634c775840debbd284bf1bc99e0f03b3f1207d14e92"
         },
         {
             "path": "assets/banner.svg",
@@ -111,7 +115,7 @@
         },
         {
             "path": "bootstrap.js",
-            "sha256": "015fede68464215db8702d3c101da1c32bad0e0034b7061c148872c0c7167b0d"
+            "sha256": "ec8484405010b48c278f4ededf53a61a8c6a6fddc4411afc216733d7aa93289a"
         },
         {
             "path": "data/library/content/alt-characters/kanji-001.json",
@@ -523,7 +527,7 @@
         },
         {
             "path": "data/library/manifest.json",
-            "sha256": "64d1975ca10a5e1c3fc3cba95259abfd605334118471cd523abb219dfc18a778"
+            "sha256": "21b8a533a6e96262dd16399331524002c9adee62c75bc92fa12ae5e678e5acc9"
         },
         {
             "path": "data/library/schema.json",
@@ -531,27 +535,27 @@
         },
         {
             "path": "docs/standard.de.md",
-            "sha256": "d96a2c7d6b9c8df1b9157ee162fe0d3638b73035ee55dbccb50a05fdfe414624"
+            "sha256": "0a415445c34da3cad6e814245f222ff6627ff1c85255fa66b353d1a424b5df0e"
         },
         {
             "path": "docs/standard.en.md",
-            "sha256": "5998fc583f91306da16c47e140820a1b51ea7ab67103c7f36dbde891f350a571"
+            "sha256": "0419afcac61423a20f9ba3ae7de1a5a192bb65f2fde8fb872470d84762bc4686"
         },
         {
             "path": "docs/standard.id.md",
-            "sha256": "49d8b0100ee0680cd4e1b71d254436050b0729b137b8300b6d8f965011ebd8cc"
+            "sha256": "2243b5f1d399f304d4022f761e27e9590c817adfd13928817c42d4e293a05763"
         },
         {
             "path": "docs/standard.ja.md",
-            "sha256": "5b9178c988beefe291a73ab449913a3c4cf9be75677d272240763979bff3e97a"
+            "sha256": "24d6210036ae4359df3166113939c6b6929a1a7f661f91c0e7c131da1dea594f"
         },
         {
             "path": "package-lock.json",
-            "sha256": "d87837241c06ef40c06e203b193884eeafd0ed087990073bc8fc09e750e25e9c"
+            "sha256": "79e749d2396ea1275cc6aa92d51fa341de6182a6e38ec3cf64c30f3a9271bf51"
         },
         {
             "path": "package.json",
-            "sha256": "7520373bca80e4af9ff7c6a2ce18f12cd9e6e416ac81f6d1a653ac4d5d56b47e"
+            "sha256": "919969686237dbbfbf7fd13623695612d037f46dc63499dfa20932fac5365fb8"
         },
         {
             "path": "routes.json",
@@ -571,7 +575,7 @@
         },
         {
             "path": "tests/bootstrap.test.js",
-            "sha256": "dd39333ce499da28d70c350e6f7401763037b874ddaed4610bfd8f4a1697046b"
+            "sha256": "13cddfe5ced5bbd1b477756574dd59a796a48d70cfa38cdb0e0c45eb11d17f0b"
         },
         {
             "path": "tests/content-pack.test.js",
@@ -584,6 +588,10 @@
         {
             "path": "tests/documentation-convention.test.js",
             "sha256": "6eaff6565fb451468101487011fffa459f5cb0b17b1d5a65d756a2413cb01552"
+        },
+        {
+            "path": "tests/jisho-lookup-provider.test.js",
+            "sha256": "7f18bf5cabe875e13ccb793d5a73f11f350f94b2b88e8cbc20f3b2160df6f439"
         },
         {
             "path": "tests/layer-linkage.test.js",

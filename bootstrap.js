@@ -1,12 +1,13 @@
 import path from "node:path";
+import { createJishoLookupProvider } from "./api/jisho-lookup-provider.js";
 import { createStrokePatternProvider } from "./api/stroke-pattern-provider.js";
 
 const CONTENT_PACK = Object.freeze({
     id: "japanese-core",
     publisher: "Cognis Labs HQ",
     namespace: "ja",
-    version: "2.2.34",
-    contentRevision: "2026-09-25.2",
+    version: "2.2.35",
+    contentRevision: "2026-09-25.3",
     schema: "schema.json",
     content: "content",
     protected: true,
@@ -39,7 +40,7 @@ const LANGUAGE = Object.freeze({
     languageCode: "ja",
     languageName: "日本語",
     languageFlag: "🇯🇵",
-    version: "2.2.34",
+    version: "2.2.35",
     package: CONTENT_PACK,
     childComponents: [],
 });
@@ -63,17 +64,29 @@ export async function bootstrapModule(ctx) {
     }
     ctx.registerStaticDir("", path.join(ctx.moduleRoot, "ui"));
     const libraryRoot = path.join(ctx.moduleRoot, "data", "library");
-    const removeLookupProvider = library.registerLookupProvider(
-        createStrokePatternProvider({
-            contentRoot: path.join(libraryRoot, "content"),
-            log: ctx.log,
-        }),
-    );
+    const providerRemovers = [
+        library.registerLookupProvider(
+            createStrokePatternProvider({
+                contentRoot: path.join(libraryRoot, "content"),
+                log: ctx.log,
+            }),
+        ),
+        library.registerLookupProvider(
+            createJishoLookupProvider({
+                contentRoot: path.join(libraryRoot, "content"),
+                log: ctx.log,
+            }),
+        ),
+    ];
+    const removeLookupProviders = () => {
+        for (const removeProvider of providerRemovers.splice(0))
+            removeProvider();
+    };
     let receipt;
     try {
         receipt = await library.ingestContentPack(libraryRoot);
     } catch (error) {
-        removeLookupProvider();
+        removeLookupProviders();
         throw error;
     }
     ctx.contributePublicCapability("study:language:ja", LANGUAGE);
@@ -90,5 +103,5 @@ export async function bootstrapModule(ctx) {
         contentRevision: receipt.contentRevision,
         unchanged: receipt.unchanged,
     });
-    return removeLookupProvider;
+    return removeLookupProviders;
 }

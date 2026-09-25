@@ -196,3 +196,7 @@ Setiap kartu Kana dan Kanji kini memiliki `strokePattern` wajib dengan koordinat
 ## Penyedia pola goresan runtime
 
 Modul mendaftarkan `study-language-ja:stroke-patterns` melalui kapabilitas Pustaka `study:library:provider`. Label Kana atau Kanji yang tersedia dalam paket segera mengembalikan `stroke_pattern` yang telah ditinjau. Kana atau Kanji Jepang lainnya diambil dari sumber SVG KanjiVG kanonis, dikonversi menjadi goresan ternormalisasi dengan waktu, disimpan dalam cache sesi, lalu dikembalikan dengan asal dan keyakinan penuh. Glif non-Jepang atau yang tidak tersedia tidak ditebak; OCR tidak pernah digunakan, dan penyedia dilepas dengan bersih saat modul dinonaktifkan.
+
+## Pembuatan kartu dengan bantuan Jisho
+
+Modul mendaftarkan penyedia komposer **Kamus Jisho** yang dilokalkan untuk kartu Kana, Kanji, dan Kosakata. Kecocokan tepat diselesaikan dari set data bawaan terlebih dahulu, termasuk semua bidang dan hubungan yang ditulis. Hanya kegagalan tembolok yang meminta Jisho; respons berhasil yang sedang berjalan dan telah selesai digunakan bersama dari tembolok sesi terbatas. Hasil eksternal mengisi label kanonis, pelafalan, tingkat JLPT jika tersedia, serta tautan ke Kanji, bacaan lengkap, atau Kana atomik yang sudah ada tanpa menciptakan rekaman atau menebak tautan.

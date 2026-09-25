@@ -197,3 +197,7 @@ Setiap kartu unit tulisan buatan penyedia wajib menyertakan `strokePattern` yang
 ## Pencarian goresan runtime
 
 Daftarkan satu penyedia pencarian Pustaka yang dapat dilepas melalui `study:library:provider`. Dukung hanya lapisan unit tulisan skema Jepang yang mendeklarasikan bidang `strokePattern`. Selesaikan label ternormalisasi yang cocok tepat dari konten paket terlebih dahulu. Untuk Kana atau Kanji Jepang valid lainnya, ambil SVG bernama Unicode dari sumber KanjiVG kanonis, batasi respons, sampel jalur berurutannya menjadi titik ternormalisasi dengan waktu, simpan hasilnya dalam cache, lalu kembalikan di `fields.stroke_pattern` dengan asal sumber tepat dan keyakinan `1`. Jangan berikan saran untuk glif yang tidak tersedia atau input non-Jepang, dan jangan pernah menyimpulkan urutan goresan dengan OCR.
+
+## Pengayaan komposer Jisho
+
+Pencarian kartu harus selalu mendahulukan data asli. Rekaman Kana, Kanji, dan Kosakata bawaan yang cocok tepat mengembalikan bidang dan hubungan yang telah ditinjau tanpa akses jaringan. Jisho hanya diminta setelah data asli tidak ditemukan, dan tembolok promise terbatas menggabungkan permintaan bersamaan serta menggunakan ulang respons berhasil. Saran eksternal hanya boleh menghasilkan bidang yang dikenali skema dan referensi ke rekaman penyedia yang sudah ada; definisi atau tautan yang tidak tersedia harus dibiarkan kosong, bukan direka.

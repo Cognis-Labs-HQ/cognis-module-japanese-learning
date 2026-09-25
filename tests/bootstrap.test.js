@@ -8,7 +8,7 @@ test("ingests the declarative pack through the host Library capability", async (
     const calls = [];
     const contributions = [];
     const providers = [];
-    let removed = false;
+    let removed = 0;
     const ctx = {
         moduleRoot: path.resolve("."),
         getCapability(id) {
@@ -17,7 +17,7 @@ test("ingests the declarative pack through the host Library capability", async (
                 registerLookupProvider(provider) {
                     providers.push(provider);
                     return () => {
-                        removed = true;
+                        removed += 1;
                     };
                 },
                 async ingestContentPack(root) {
@@ -41,7 +41,15 @@ test("ingests the declarative pack through the host Library capability", async (
     const dispose = await bootstrapModule(ctx);
 
     assert.deepEqual(calls, [path.join(ctx.moduleRoot, "data", "library")]);
-    assert.equal(providers[0].id, "study-language-ja:stroke-patterns");
+    assert.deepEqual(
+        providers.map(({ id }) => id),
+        ["study-language-ja:stroke-patterns", "study-language-ja:jisho"],
+    );
+    assert.ok(
+        providers.every(
+            ({ metadata }) => Object.keys(metadata.labels).length === 4,
+        ),
+    );
     assert.deepEqual(
         contributions.map(({ id }) => id),
         ["study:language:ja"],
@@ -63,7 +71,7 @@ test("ingests the declarative pack through the host Library capability", async (
         ),
     );
     dispose();
-    assert.equal(removed, true);
+    assert.equal(removed, 2);
 });
 
 test("fails safely when the host Library capability is unavailable", async () => {
@@ -75,14 +83,14 @@ test("fails safely when the host Library capability is unavailable", async () =>
 
 test("content ingestion failures remain activation-blocking", async () => {
     const contributions = [];
-    let removed = false;
+    let removed = 0;
     const ctx = {
         moduleRoot: path.resolve("."),
         getCapability() {
             return {
                 registerLookupProvider() {
                     return () => {
-                        removed = true;
+                        removed += 1;
                     };
                 },
                 async ingestContentPack() {
@@ -100,7 +108,7 @@ test("content ingestion failures remain activation-blocking", async () => {
 
     await assert.rejects(bootstrapModule(ctx), /content import failed/);
     assert.deepEqual(contributions, []);
-    assert.equal(removed, true);
+    assert.equal(removed, 2);
     const manifest = JSON.parse(
         readFileSync(path.join(ctx.moduleRoot, "manifest.json"), "utf8"),
     );

@@ -397,3 +397,9 @@ Der aktuelle Lookup-Anbieter-Vertrag der Cognis Library wurde für japanische Sc
 Der Suchanbieter wurde über den mitgelieferten Lehrplan hinaus erweitert. Mitgelieferte Muster bleiben sofort und offline verfügbar; jedes andere japanische Kana oder Kanji wird über seinen Unicode-Codepunkt anhand der kanonischen KanjiVG-SVG-Daten aufgelöst, in begrenzte normalisierte Strichproben umgewandelt, zwischengespeichert und mit genauer Herkunft sowie Konfidenz `1` zurückgegeben. Nicht unterstützte oder nicht verfügbare Zeichen liefern keine Vermutung; für exakte Texteingaben ist OCR bewusst nicht erforderlich.
 
 - [e040cf0](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/e040cf0)
+
+## Native Jisho-Kartensuche mit Vorrang
+
+Ein lokalisierter Jisho-Composer-Anbieter für Kana-, Kanji- und Vokabelkarten wurde nach dem neuesten Cognis-Suchvertrag hinzugefügt. Exakte mitgelieferte Einträge liefern alle geprüften Felder und Beziehungen ohne Netzwerkanfrage. Bei einem nativen Fehltreffer wird vor der Jisho-Abfrage ein begrenzter Anfragecache verwendet; anschließend werden kanonische Bezeichnungen, Aussprachen, JLPT-Stufen und ausschließlich bereits im Anbietergraphen vorhandene Kanji-, Lese-, Kana- oder Definitionsverknüpfungen befüllt. Der Strichmusteranbieter veröffentlicht nun ebenfalls die vom aktuellen Composer benötigten lokalisierten Metadaten.
+
+- [db47014](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/db47014)

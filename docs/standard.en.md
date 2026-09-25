@@ -197,3 +197,7 @@ Every provider-authored writing-unit card must include an immutable required `st
 ## Runtime stroke lookup
 
 Register one removable Library lookup provider through `study:library:provider`. Support only the Japanese schema's writing-unit layers with a declared `strokePattern` field. Resolve normalized exact labels from packaged content first. For other valid Japanese Kana or Kanji, fetch the Unicode-named SVG from the canonical KanjiVG source, bound the response, sample its ordered paths into normalized timed points, cache the result, and return it under `fields.stroke_pattern` with exact source provenance and confidence `1`. Return no suggestion for missing glyphs or non-Japanese input, and never infer stroke order with OCR.
+
+## Jisho composer enrichment
+
+Card lookup must remain native-first. Exact packaged Kana, Kanji, and Vocabulary records return their reviewed fields and relationships without network access. Jisho is queried only after a native miss, and a bounded promise cache coalesces concurrent requests and reuses successful responses. External suggestions may emit only schema-recognized fields and references to existing provider records; unavailable definitions or links must remain unset rather than being fabricated.

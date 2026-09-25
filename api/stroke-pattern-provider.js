@@ -118,6 +118,14 @@ export function createStrokePatternProvider({
 
     return Object.freeze({
         id: PROVIDER_ID,
+        metadata: {
+            labels: {
+                de: "KanjiVG-Strichmuster",
+                en: "KanjiVG Stroke Patterns",
+                id: "Pola Goresan KanjiVG",
+                ja: "KanjiVG 筆順",
+            },
+        },
         supports(schema, layer) {
             return (
                 schema?.id === SCHEMA_ID &&

@@ -397,3 +397,9 @@ Kontrak penyedia pencarian Cognis Library terkini diterapkan untuk unit tulisan 
 Penyedia pencarian diperluas melampaui kurikulum bawaan. Pola bawaan tetap tersedia seketika dan luring; Kana atau Kanji Jepang lainnya diselesaikan melalui titik kode Unicode terhadap data SVG KanjiVG kanonis, diubah menjadi sampel goresan ternormalisasi yang dibatasi, disimpan dalam tembolok, lalu dikembalikan dengan asal-usul tepat dan keyakinan `1`. Karakter yang tidak didukung atau tidak tersedia tidak menghasilkan tebakan, dan OCR sengaja tidak diperlukan untuk masukan teks yang tepat.
 
 - [e040cf0](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/e040cf0)
+
+## Pencarian Kartu Jisho yang Mendahulukan Data Asli
+
+Penyedia komposer Jisho yang dilokalkan untuk kartu Kana, Kanji, dan Kosakata ditambahkan dengan kontrak pencarian Cognis terbaru. Rekaman bawaan yang cocok tepat mengembalikan seluruh bidang dan hubungan yang telah ditinjau tanpa permintaan jaringan. Kegagalan pencarian asli menggunakan tembolok permintaan terbatas sebelum meminta Jisho, lalu mengisi label kanonis, pelafalan, tingkat JLPT, serta hanya tautan Kanji, bacaan, Kana, atau definisi yang sudah ada dalam graf penyedia. Penyedia pola goresan kini juga menerbitkan metadata lokal yang diwajibkan komposer saat ini.
+
+- [db47014](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/db47014)

@@ -196,3 +196,7 @@ Every Kana and Kanji card now carries a required `strokePattern` with normalized
 ## Runtime stroke-pattern provider
 
 The module registers `study-language-ja:stroke-patterns` through the Library's `study:library:provider` capability. Exact packaged Kana or Kanji labels return the reviewed `stroke_pattern` immediately. Any other Japanese Kana or Kanji is fetched from the canonical KanjiVG SVG source, converted to normalized timed strokes, cached for the session, and returned with source provenance and full confidence. Non-Japanese or unavailable glyphs return no guess; OCR is never used, and the provider unregisters cleanly when the module is disabled.
+
+## Jisho-assisted card creation
+
+The module registers a localized **Jisho Dictionary** composer provider for Kana, Kanji, and Vocabulary cards. It resolves exact matches from the packaged dataset first, including every authored field and relationship. Only a cache miss queries Jisho; successful in-flight and completed responses are shared from a bounded session cache. External results populate the canonical label, pronunciations, JLPT level when available, and links to existing Kanji, complete readings, or atomic Kana without inventing records or guessing links.

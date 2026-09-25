@@ -196,3 +196,7 @@ Jede Kana- und Kanji-Karte enthält nun ein erforderliches `strokePattern` mit n
 ## Laufzeit-Anbieter für Strichmuster
 
 Das Modul registriert `study-language-ja:stroke-patterns` über die Library-Fähigkeit `study:library:provider`. Exakte paketierte Kana- oder Kanji-Bezeichnungen liefern sofort das geprüfte `stroke_pattern`. Jedes andere japanische Kana oder Kanji wird aus der kanonischen KanjiVG-SVG-Quelle geladen, in normalisierte Striche mit Zeitwerten umgewandelt, für die Sitzung zwischengespeichert und mit Herkunft und voller Konfidenz zurückgegeben. Nichtjapanische oder nicht verfügbare Zeichen werden nicht erraten; OCR wird nie verwendet, und der Anbieter wird beim Deaktivieren des Moduls sauber entfernt.
+
+## Jisho-gestützte Kartenerstellung
+
+Das Modul registriert einen lokalisierten **Jisho-Wörterbuch**-Anbieter für den Composer von Kana-, Kanji- und Vokabelkarten. Exakte Treffer werden zuerst aus dem mitgelieferten Datensatz einschließlich aller gepflegten Felder und Beziehungen aufgelöst. Nur ein Cache-Fehltreffer fragt Jisho ab; laufende und abgeschlossene erfolgreiche Antworten werden in einem begrenzten Sitzungscache gemeinsam genutzt. Externe Ergebnisse befüllen die kanonische Bezeichnung, Aussprachen, die JLPT-Stufe (falls vorhanden) und Links zu vorhandenen Kanji, vollständigen Lesungen oder atomaren Kana, ohne Datensätze oder Verknüpfungen zu erfinden.

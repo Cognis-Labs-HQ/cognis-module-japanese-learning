@@ -197,3 +197,7 @@ Jede vom Anbieter erstellte Schreibzeichenkarte muss ein unveränderliches erfor
 ## Laufzeit-Suche nach Strichmustern
 
 Registriere über `study:library:provider` genau einen entfernbaren Library-Lookup-Anbieter. Unterstütze nur Schreibzeichenebenen des japanischen Schemas mit einem deklarierten `strokePattern`-Feld. Löse normalisierte, exakt übereinstimmende Bezeichnungen zuerst aus dem paketierten Inhalt auf. Lade für andere gültige japanische Kana oder Kanji das nach Unicode benannte SVG aus der kanonischen KanjiVG-Quelle, begrenze die Antwort, taste die geordneten Pfade als normalisierte Punkte mit Zeitwerten ab, speichere das Ergebnis zwischen und gib es unter `fields.stroke_pattern` mit exakter Herkunft und Konfidenz `1` zurück. Liefere für fehlende Zeichen oder nichtjapanische Eingaben keinen Vorschlag und leite die Strichreihenfolge niemals per OCR ab.
+
+## Jisho-Anreicherung im Composer
+
+Die Kartensuche muss den nativen Datenbestand bevorzugen. Exakte mitgelieferte Kana-, Kanji- und Vokabeleinträge liefern ihre geprüften Felder und Beziehungen ohne Netzwerkzugriff. Jisho wird erst nach einem nativen Fehltreffer abgefragt; ein begrenzter Promise-Cache fasst gleichzeitige Anfragen zusammen und verwendet erfolgreiche Antworten erneut. Externe Vorschläge dürfen nur schema-konforme Felder und Verweise auf vorhandene Anbietereinträge liefern; nicht verfügbare Definitionen oder Links bleiben leer, statt erfunden zu werden.

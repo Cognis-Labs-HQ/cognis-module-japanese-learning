@@ -397,3 +397,9 @@ Implemented the latest Cognis Library lookup-provider contract for Japanese writ
 Extended the lookup provider beyond the packaged curriculum. Packaged patterns remain immediate and offline; any other Japanese Kana or Kanji is resolved by its Unicode code point against canonical KanjiVG SVG data, converted into bounded normalized stroke samples, cached, and returned with exact provenance and confidence `1`. Unsupported or unavailable characters return no guess, and OCR is intentionally unnecessary for exact text input.
 
 - [e040cf0](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/e040cf0)
+
+## Native-First Jisho Card Lookup
+
+Added a localized Jisho composer provider for Kana, Kanji, and Vocabulary cards using the latest Cognis lookup contract. Exact packaged records return all reviewed fields and relationships without a network request. Native misses use a bounded request cache before querying Jisho, then populate canonical labels, pronunciations, JLPT levels, and only those Kanji, reading, Kana, or definition links that already exist in the provider graph. The stroke provider now also publishes the localized metadata required by the current composer.
+
+- [db47014](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/db47014)
