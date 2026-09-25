@@ -451,3 +451,9 @@ Removed external placeholder audio URLs that the latest Library content-pack val
 Removed the synthetic Kanji-to-Kana dependency relationship. Kana cards now list only immediate reading records under Used By, preserving the intended `あ` → `あめ` → `雨` navigation instead of presenting unrelated words and Kanji as direct parents.
 
 - [13d11ce](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/13d11ce)
+
+## Kanji-Only Pronunciation Boundaries
+
+Kanji pronunciation links now target dedicated Kana-only reading records rather than complete visible words. `好` therefore presents and links `す`, while the separate `好き` pronunciation wrapper composes `す` with the suffix `き`; standalone Kanji words use the same two-level boundary without duplicate-labelled parents.
+
+- [6cb7ca7](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/6cb7ca7)

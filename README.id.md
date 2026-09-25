@@ -167,7 +167,7 @@ Data pelafalan tersembunyi kini menyusun judulnya langsung dari Kana atomik mela
 
 ## Graf Kartu Kanonis
 
-Paket konten kini hanya memuat graf kanonis aktif. Pembungkus bacaan tersembunyi yang usang telah dihapus sepenuhnya; kosakata Kanji terlihat berakhir pada ejaan Kanji dan pelafalan Kana atomiknya, sedangkan bacaan Kanji yang cocok membuka kartu leksikal terlihat.
+Paket konten hanya memuat graf kanonis aktif. Setiap pelafalan Kanji menargetkan catatan bacaan khusus yang hanya berisi Kana; pelafalan lengkap kosakata tetap terpisah dan dapat menambahkan Kana infleksional. Contohnya, `好` diselesaikan sebagai `す`, sedangkan kata `好き` menambahkan `き` pada bacaan tersebut.
 
 ## Navigasi Penggunaan Kana Langsung
 

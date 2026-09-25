@@ -167,7 +167,7 @@ Hidden pronunciation records now compose their titles directly from atomic Kana 
 
 ## Canonical Card Graph
 
-The content pack now contains only the active canonical graph. Obsolete hidden reading wrappers have been removed completely; visible Kanji vocabulary terminates at its Kanji spelling and atomic Kana pronunciation, and matching Kanji readings open the visible lexical card.
+The content pack contains only the active canonical graph. Every Kanji pronunciation targets a dedicated Kana-only reading record; a complete vocabulary pronunciation remains separate and may add inflectional Kana. For example, `好` resolves to `す`, while the word `好き` resolves through that reading plus `き`.
 
 ## Direct Kana Usage Navigation
 

@@ -451,3 +451,9 @@ Bootstrap は注入済みの公開 `study:library:provider` ケイパビリテ�
 漢字からかなへの人工的な依存関係を削除しました。かなカードの「使用元」には直近の読みレコードだけが表示され、無関係な単語や漢字を直接の親として示さず、意図した `あ` → `あめ` → `雨` のナビゲーションを維持します。
 
 - [13d11ce](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/13d11ce)
+
+## 漢字だけの発音境界
+
+漢字の発音リンクは、表示語彙全体ではなく、その漢字専用の純粋なかな読みレコードを参照するようになりました。そのため `好` は `す` を表示してリンクし、別の `好き` 発音ラッパーが `す` と接尾辞 `き` を構成します。単独漢字語も同じ二段階の境界を使い、同名の親が重複しません。
+
+- [6cb7ca7](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/6cb7ca7)

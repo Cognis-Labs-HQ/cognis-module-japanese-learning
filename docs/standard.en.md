@@ -168,7 +168,7 @@ Every hidden pronunciation record composes its complete title directly from orde
 
 ## Canonical Reading Graph
 
-Package only records that participate in the current authored graph. Remove superseded hidden readings rather than preserving detached compatibility records. Visible Kanji vocabulary must link directly to ordered atomic Kana, and a Kanji may target the matching visible lexical record.
+Package only records that participate in the current authored graph. Remove superseded hidden readings rather than preserving detached compatibility records. Visible Kanji vocabulary owns a separate complete-pronunciation wrapper, while every Kanji targets a dedicated Kana-only reading record.
 
 ## Kanji-to-Kana Usage Dependencies
 
@@ -184,7 +184,7 @@ Set the sentence pronunciation field's `input.linkRelationships` to `["words", "
 
 ## Vocabulary-owned pronunciation boundaries
 
-When a Kanji reading occurs inside an authored visible vocabulary record, target that vocabulary from the Kanji pronunciation link. Only the vocabulary may own the complete pronunciation wrapper. Within that wrapper, link meaningful Kanji-derived spans through the closest hidden reading and link every remaining single-Kana suffix directly with `reading-kana`; never create a pronunciation record for such a suffix or connect it to an adjacent reading.
+A Kanji pronunciation must target only the dedicated record for the Kana contributed by that Kanji. The vocabulary owns a separate complete pronunciation wrapper. Within that wrapper, link meaningful Kanji-derived spans through the closest hidden reading and link every remaining single-Kana suffix directly with `reading-kana`; never create a pronunciation record for such a suffix or connect it to an adjacent reading.
 
 ## Complete sentence pronunciation links
 
@@ -210,4 +210,4 @@ Resolve the injected public `study:library:provider` first. If the host exposes 
 
 ## Resolvable title details
 
-For every pronunciation-bearing sentence and Kanji, replay the host alias-composition algorithm in tests. All linked targets, in relationship position order, must concatenate exactly to the displayed pronunciation. A Kanji title exposes one complete primary adjacent Vocabulary reading; store additional readings outside the pronunciation field and its `input.linkRelationships` path so they cannot make every title link fail as one concatenated chain.
+For every pronunciation-bearing sentence and Kanji, replay the host alias-composition algorithm in tests. All linked targets, in relationship position order, must concatenate exactly to the displayed pronunciation. A Kanji title exposes one primary dedicated Kana-only reading; store additional readings outside the pronunciation field and its `input.linkRelationships` path so they cannot make every title link fail as one concatenated chain.

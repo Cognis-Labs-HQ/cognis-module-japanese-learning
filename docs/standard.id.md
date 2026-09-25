@@ -168,7 +168,7 @@ Setiap data pelafalan tersembunyi menyusun judul lengkapnya langsung dari Kana a
 
 ## Graf Bacaan Kanonis
 
-Paket hanya memuat data yang berpartisipasi dalam graf aktif. Hapus bacaan tersembunyi yang digantikan alih-alih mempertahankan data kompatibilitas yang dilepas. Kosakata Kanji terlihat harus menaut langsung ke Kana atomik terurut, dan Kanji dapat menargetkan data leksikal terlihat yang cocok.
+Paket hanya memuat data yang berpartisipasi dalam graf aktif. Hapus bacaan tersembunyi yang digantikan alih-alih mempertahankan data kompatibilitas yang dilepas. Kosakata Kanji terlihat memiliki pembungkus pelafalan lengkap yang terpisah, sedangkan setiap Kanji menargetkan catatan bacaan khusus yang hanya berisi Kana.
 
 ## Dependensi Penggunaan Kanji-ke-Kana
 
@@ -184,7 +184,7 @@ Tetapkan `input.linkRelationships` bidang pelafalan kalimat ke `["words", "parti
 
 ## Batas pelafalan milik kosakata
 
-Jika bacaan Kanji terdapat dalam entri kosakata terlihat yang telah dibuat, arahkan tautan pelafalan Kanji ke kosakata tersebut. Hanya kosakata yang boleh memiliki pembungkus pelafalan lengkap. Di dalamnya, tautkan rentang bermakna yang berasal dari Kanji melalui bacaan tersembunyi terdekat dan tautkan setiap sufiks Kana tunggal yang tersisa secara langsung dengan `reading-kana`; jangan membuat rekaman pelafalan untuk sufiks tersebut atau menghubungkannya ke bacaan yang bersebelahan.
+Pelafalan Kanji hanya boleh menargetkan catatan khusus untuk Kana yang disumbangkan oleh Kanji tersebut. Kosakata memiliki pembungkus pelafalan lengkap yang terpisah. Di dalamnya, tautkan rentang bermakna yang berasal dari Kanji melalui bacaan tersembunyi terdekat dan tautkan setiap sufiks Kana tunggal yang tersisa secara langsung dengan `reading-kana`; jangan membuat rekaman pelafalan untuk sufiks tersebut atau menghubungkannya ke bacaan yang bersebelahan.
 
 ## Tautan pelafalan kalimat lengkap
 
@@ -210,4 +210,4 @@ Selesaikan kapabilitas publik `study:library:provider` yang diinjeksi terlebih d
 
 ## Detail judul yang dapat diselesaikan
 
-Untuk setiap kalimat dan Kanji yang memiliki pelafalan, ulangi algoritme komposisi alias host dalam pengujian. Semua target tertaut, sesuai urutan posisi hubungan, harus bergabung tepat menjadi pelafalan yang ditampilkan. Judul Kanji mengekspos satu bacaan Kosakata terdekat utama yang lengkap; simpan bacaan tambahan di luar bidang pelafalan dan jalur `input.linkRelationships` agar bacaan tersebut tidak membuat semua tautan judul gagal sebagai satu rantai gabungan.
+Untuk setiap kalimat dan Kanji yang memiliki pelafalan, ulangi algoritme komposisi alias host dalam pengujian. Semua target tertaut, sesuai urutan posisi hubungan, harus bergabung tepat menjadi pelafalan yang ditampilkan. Judul Kanji mengekspos satu bacaan utama khusus yang hanya berisi Kana; simpan bacaan tambahan di luar bidang pelafalan dan jalur `input.linkRelationships` agar bacaan tersebut tidak membuat semua tautan judul gagal sebagai satu rantai gabungan.

@@ -451,3 +451,9 @@ URL audio placeholder eksternal yang ditolak dengan benar sebagai `invalid_asset
 Relasi dependensi buatan dari Kanji ke Kana telah dihapus. Kartu Kana kini hanya menampilkan catatan bacaan langsung pada Digunakan Oleh, sehingga navigasi `あ` → `あめ` → `雨` tetap benar dan kata atau Kanji yang tidak berkaitan tidak ditampilkan sebagai induk langsung.
 
 - [13d11ce](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/13d11ce)
+
+## Batas Pelafalan Khusus Kanji
+
+Tautan pelafalan Kanji kini menargetkan catatan bacaan khusus yang hanya berisi Kana, bukan kata terlihat lengkap. Karena itu `好` menampilkan dan menautkan `す`, sedangkan pembungkus pelafalan `好き` yang terpisah menyusun `す` dengan sufiks `き`; kata Kanji mandiri memakai batas dua tingkat yang sama tanpa induk berlabel ganda.
+
+- [6cb7ca7](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/6cb7ca7)

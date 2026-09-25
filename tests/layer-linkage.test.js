@@ -214,7 +214,7 @@ test("reviewed graph inventory remains bounded to the core curriculum", () => {
         characters: 270,
         "alt-characters": 39,
         definitions: 115,
-        words: 104,
+        words: 121,
         particles: 11,
         sentences: 17,
     });
@@ -535,102 +535,48 @@ test("Kana cards and reading cards use accurate nonduplicated classes", () => {
     }
 });
 
-test("single-Kanji lexical readings open the visible vocabulary", () => {
+test("Kanji pronunciations contain only their own Kana reading", () => {
     const records = loadRecords();
     const recordsById = new Map(records.map((record) => [record.id, record]));
-    for (const Kanji of records.filter(
-        ({ layer }) => layer === "alt-characters",
-    )) {
-        for (const { entryId } of orderedReferences(
-            Kanji,
-            new Set(["readings"]),
-        )) {
-            const target = recordsById.get(entryId);
-            if (target.hidden === true) continue;
-            assert.equal(target.layer, "words");
-            assert.ok(
-                (target.references ?? []).some(
-                    ({ entryId: targetId, relation }) =>
-                        targetId === Kanji.id &&
-                        ["spelling", "word-spelling"].includes(relation),
-                ) || !/[\p{Script=Han}]/u.test(target.label),
-            );
-            assert.ok(target.class.startsWith("lexical:"));
-        }
-    }
-
-    const cat = recordsById.get("ja:kanji:core-e78cab");
-    assert.deepEqual(
-        orderedReferences(cat, new Set(["readings"])).map(
-            ({ entryId }) => entryId,
-        ),
-        ["ja:word:neko"],
-    );
-});
-
-test("Kanji prefer adjacent vocabulary while suffix Kana terminate directly", () => {
-    const records = loadRecords();
-    const recordsById = new Map(records.map((record) => [record.id, record]));
-    const visibleWords = records.filter(
-        ({ hidden, layer }) => layer === "words" && hidden !== true,
-    );
 
     for (const Kanji of records.filter(
         ({ layer }) => layer === "alt-characters",
     )) {
-        for (const reference of orderedReferences(
+        const primaryReadings = orderedReferences(
             Kanji,
             new Set(["readings"]),
-        )) {
-            const target = recordsById.get(reference.entryId);
-            if (target.hidden !== true) continue;
-            const hasAdjacentVocabulary = visibleWords.some(
-                (word) =>
-                    (word.references ?? []).some(
-                        ({ entryId, relation }) =>
-                            entryId === Kanji.id &&
-                            ["spelling", "word-spelling"].includes(relation),
-                    ) &&
-                    word.fields.pronunciation.some((pronunciation) =>
-                        pronunciation.includes(target.label),
-                    ),
-            );
-            assert.equal(
-                hasAdjacentVocabulary,
-                false,
-                `${Kanji.id} must link its reading to adjacent vocabulary`,
-            );
+        ).map(({ entryId }) => recordsById.get(entryId));
+        assert.equal(primaryReadings.length, 1);
+        assert.deepEqual(
+            Kanji.fields.pronunciation,
+            primaryReadings.map(({ label }) => label),
+            `${Kanji.id} pronunciation must equal its direct Kana reading`,
+        );
+        for (const reading of [
+            ...primaryReadings,
+            ...orderedReferences(Kanji, new Set(["alternate-readings"])).map(
+                ({ entryId }) => recordsById.get(entryId),
+            ),
+        ]) {
+            assert.doesNotMatch(reading.label, /[\p{Script=Han}]/u);
         }
     }
 
     const liked = recordsById.get("ja:kanji:core-e5a5bd");
+    assert.deepEqual(liked.fields.pronunciation, ["す"]);
     assert.deepEqual(
         orderedReferences(liked, new Set(["readings"])).map(
             ({ entryId }) => entryId,
         ),
-        ["ja:word:suki"],
+        ["ja:word:kanji-reading-e5a5bd-e38199"],
     );
-    const completeReading = recordsById.get("ja:word:pronunciation-suki");
+    const completeWordReading = recordsById.get("ja:word:pronunciation-suki");
     assert.deepEqual(
         orderedReferences(
-            completeReading,
+            completeWordReading,
             new Set(["word-spelling", "reading-kana"]),
-        ).map(({ entryId, relation }) => ({ entryId, relation })),
-        [
-            {
-                entryId: "ja:word:kanji-reading-e5a5bd-e38199",
-                relation: "word-spelling",
-            },
-            { entryId: "ja:char:ki", relation: "reading-kana" },
-        ],
-    );
-    assert.equal(
-        records.some(
-            ({ hidden, label, layer }) =>
-                layer === "words" && hidden === true && label === "き",
-        ),
-        false,
-        "single suffix Kana must not get a pronunciation record",
+        ).map(({ entryId }) => entryId),
+        ["ja:word:kanji-reading-e5a5bd-e38199", "ja:char:ki"],
     );
 });
 
@@ -649,7 +595,7 @@ test("Kana Used By contains only direct reading relationships", () => {
     }
 
     const rainReading = records.find(
-        ({ id }) => id === "ja:word:pronunciation-ame-rain",
+        ({ id }) => id === "ja:word:kanji-reading-core-e99ba8-3042-3081",
     );
     assert.ok(
         rainReading.references.some(

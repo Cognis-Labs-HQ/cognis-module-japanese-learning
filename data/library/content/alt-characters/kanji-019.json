@@ -125,20 +125,15 @@
             {
                 "entryId": "ja:word:reading-jitsu",
                 "relation": "alternate-readings",
-                "position": 0
+                "position": 1
             },
             {
                 "entryId": "ja:word:reading-hi",
                 "relation": "alternate-readings",
-                "position": 1
-            },
-            {
-                "entryId": "ja:word:ka-day-counter",
-                "relation": "alternate-readings",
                 "position": 2
             },
             {
-                "entryId": "ja:word:nihon",
+                "entryId": "ja:word:ka-day-counter",
                 "relation": "alternate-readings",
                 "position": 3
             }
@@ -149,7 +144,7 @@
         "id": "ja:kanji:hon",
         "label": "本",
         "fields": {
-            "pronunciation": ["にほん"],
+            "pronunciation": ["ほん"],
             "stroke_pattern": {
                 "coordinateSystem": "normalized",
                 "tolerance": 60,
@@ -283,14 +278,14 @@
                 "relation": "definitions"
             },
             {
-                "entryId": "ja:word:nihon",
+                "entryId": "ja:word:reading-hon",
                 "relation": "readings",
                 "position": 0
             },
             {
                 "entryId": "ja:word:reading-moto",
                 "relation": "alternate-readings",
-                "position": 0
+                "position": 1
             }
         ],
         "class": "writing:kanji"

@@ -451,3 +451,9 @@ Externe Platzhalter-Audio-URLs wurden entfernt, da der aktuelle Inhalts­paket-V
 Die künstliche Abhängigkeitsbeziehung von Kanji zu Kana wurde entfernt. Kana-Karten zeigen unter „Verwendet von“ nur noch unmittelbare Lesungsdatensätze und bewahren damit die vorgesehene Navigation `あ` → `あめ` → `雨`, statt nicht verwandte Wörter und Kanji als direkte Eltern darzustellen.
 
 - [13d11ce](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/13d11ce)
+
+## Aussprachegrenzen nur für Kanji
+
+Kanji-Aussprachelinks verweisen jetzt auf eigene reine Kana-Lesungsdatensätze statt auf vollständige sichtbare Wörter. `好` zeigt und verknüpft daher `す`, während der getrennte Aussprache-Wrapper von `好き` das `す` mit dem Suffix `き` zusammensetzt; eigenständige Kanji-Wörter verwenden dieselbe zweistufige Grenze ohne gleich bezeichnete Eltern.
+
+- [6cb7ca7](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/6cb7ca7)

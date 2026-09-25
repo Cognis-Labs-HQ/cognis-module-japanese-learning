@@ -168,7 +168,7 @@ Jeder ausgeblendete Aussprachedatensatz setzt seinen vollständigen Titel über 
 
 ## Kanonischer Lesungsgraph
 
-Es werden nur Datensätze paketiert, die am aktuellen deklarierten Graphen teilnehmen. Ersetzte ausgeblendete Lesungen werden entfernt, statt getrennte Kompatibilitätsdatensätze zu behalten. Sichtbares Kanji-Vokabular muss direkt auf geordnete atomare Kana verweisen; ein Kanji darf den passenden sichtbaren lexikalischen Datensatz referenzieren.
+Es werden nur Datensätze paketiert, die am aktuellen deklarierten Graphen teilnehmen. Ersetzte ausgeblendete Lesungen werden entfernt, statt getrennte Kompatibilitätsdatensätze zu behalten. Sichtbares Kanji-Vokabular besitzt einen eigenen Wrapper für die vollständige Aussprache, während jedes Kanji auf einen eigenen reinen Kana-Lesungsdatensatz verweist.
 
 ## Kanji-zu-Kana-Verwendungsabhängigkeiten
 
@@ -184,7 +184,7 @@ Setze `input.linkRelationships` des Aussprachefelds eines Satzes auf `["words", 
 
 ## Vokabeleigene Aussprachegrenzen
 
-Wenn eine Kanji-Lesung in einem vorhandenen sichtbaren Vokabeleintrag vorkommt, muss der Aussprachelink des Kanji auf diese Vokabel zielen. Nur die Vokabel darf den vollständigen Aussprache-Wrapper besitzen. Darin werden bedeutungstragende Kanji-Abschnitte über die nächstgelegene verborgene Lesung verknüpft und jedes verbleibende einzelne Kana-Suffix direkt mit `reading-kana`; für ein solches Suffix darf weder ein Ausspracheeintrag noch eine Verbindung zu einer benachbarten Lesung entstehen.
+Die Aussprache eines Kanji darf nur auf den eigenen Datensatz für die von diesem Kanji beigetragenen Kana verweisen. Die Vokabel besitzt einen getrennten Wrapper für die vollständige Aussprache. Darin werden bedeutungstragende Kanji-Abschnitte über die nächstgelegene verborgene Lesung verknüpft und jedes verbleibende einzelne Kana-Suffix direkt mit `reading-kana`; für ein solches Suffix darf weder ein Ausspracheeintrag noch eine Verbindung zu einer benachbarten Lesung entstehen.
 
 ## Vollständige Links der Satzaussprache
 
@@ -210,4 +210,4 @@ Zuerst ist die injizierte öffentliche Fähigkeit `study:library:provider` aufzu
 
 ## Auflösbare Titeldetails
 
-Für jeden Satz und jedes Kanji mit Aussprache muss der Alias-Kompositionsalgorithmus des Hosts in Tests nachgebildet werden. Alle verknüpften Ziele müssen in Beziehungsreihenfolge exakt die angezeigte Aussprache ergeben. Ein Kanji-Titel veröffentlicht eine vollständige primäre angrenzende Vokabel-Lesung; weitere Lesungen liegen außerhalb des Aussprachefelds und seines `input.linkRelationships`-Pfads, damit sie nicht sämtliche Titellinks als eine zusammengefügte Kette scheitern lassen.
+Für jeden Satz und jedes Kanji mit Aussprache muss der Alias-Kompositionsalgorithmus des Hosts in Tests nachgebildet werden. Alle verknüpften Ziele müssen in Beziehungsreihenfolge exakt die angezeigte Aussprache ergeben. Ein Kanji-Titel veröffentlicht eine primäre eigene reine Kana-Lesung; weitere Lesungen liegen außerhalb des Aussprachefelds und seines `input.linkRelationships`-Pfads, damit sie nicht sämtliche Titellinks als eine zusammengefügte Kette scheitern lassen.
