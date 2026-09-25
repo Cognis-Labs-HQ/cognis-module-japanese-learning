@@ -7,11 +7,19 @@ import { bootstrapModule } from "../bootstrap.js";
 test("ingests the declarative pack through the host Library capability", async () => {
     const calls = [];
     const contributions = [];
+    const providers = [];
+    let removed = false;
     const ctx = {
         moduleRoot: path.resolve("."),
         getCapability(id) {
-            assert.equal(id, "study:library");
+            assert.equal(id, "study:library:provider");
             return {
+                registerLookupProvider(provider) {
+                    providers.push(provider);
+                    return () => {
+                        removed = true;
+                    };
+                },
                 async ingestContentPack(root) {
                     calls.push(root);
                     return {
@@ -30,9 +38,10 @@ test("ingests the declarative pack through the host Library capability", async (
         log() {},
     };
 
-    await bootstrapModule(ctx);
+    const dispose = await bootstrapModule(ctx);
 
     assert.deepEqual(calls, [path.join(ctx.moduleRoot, "data", "library")]);
+    assert.equal(providers[0].id, "study-language-ja:stroke-patterns");
     assert.deepEqual(
         contributions.map(({ id }) => id),
         ["study:language:ja"],
@@ -53,6 +62,8 @@ test("ingests the declarative pack through the host Library capability", async (
             ),
         ),
     );
+    dispose();
+    assert.equal(removed, true);
 });
 
 test("fails safely when the host Library capability is unavailable", async () => {
@@ -64,10 +75,16 @@ test("fails safely when the host Library capability is unavailable", async () =>
 
 test("content ingestion failures remain activation-blocking", async () => {
     const contributions = [];
+    let removed = false;
     const ctx = {
         moduleRoot: path.resolve("."),
         getCapability() {
             return {
+                registerLookupProvider() {
+                    return () => {
+                        removed = true;
+                    };
+                },
                 async ingestContentPack() {
                     throw new Error("content import failed");
                 },
@@ -83,6 +100,7 @@ test("content ingestion failures remain activation-blocking", async () => {
 
     await assert.rejects(bootstrapModule(ctx), /content import failed/);
     assert.deepEqual(contributions, []);
+    assert.equal(removed, true);
     const manifest = JSON.parse(
         readFileSync(path.join(ctx.moduleRoot, "manifest.json"), "utf8"),
     );

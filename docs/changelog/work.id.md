@@ -385,3 +385,9 @@ Setiap lapisan yang memiliki pelafalan kini menerbitkan larik `input.linkRelatio
 Metadata tunggal `linkRelationship` yang usang dihapus alih-alih mempertahankan jalur kompatibilitas dalam skema konten beta. Bidang pelafalan kini hanya menerbitkan larik `linkRelationships` terkini yang digunakan Cognis, dan cakupan regresi menolak pengenalan kembali properti lama tersebut.
 
 - [29d7b90](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/29d7b90)
+
+## Penyedia Pola Goresan Runtime
+
+Kontrak penyedia pencarian Cognis Library terkini diterapkan untuk unit tulisan Jepang. Label Kana dan Kanji yang cocok tepat kini mengembalikan `stroke_pattern` tervalidasi dari paket dengan asal KanjiVG stabil dan keyakinan `1`; label yang tidak dikenal tidak ditebak. Penyedia bekerja sepenuhnya secara lokal—tanpa layanan jaringan atau OCR—dan pendaftarannya dilepas saat dinonaktifkan atau segera setelah ingest gagal.
+
+- [bbc6d84](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/bbc6d84)

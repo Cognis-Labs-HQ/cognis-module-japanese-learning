@@ -4,11 +4,11 @@ The Cognis Japanese module installs declarative Japanese learning records into t
 
 ## Usage
 
-Enable the Study gateway and Library adapter, then enable this module. Its bootstrap resolves `study:library` from `ctx` and ingests `data/library`. Administrators and learners use the Library adapter's generated Study interface rather than a module-owned route.
+Enable the Study gateway and Library adapter, then enable this module. Its bootstrap resolves `study:library:provider` from `ctx` and ingests `data/library`. Administrators and learners use the Library adapter's generated Study interface rather than a module-owned route.
 
 Because the language descriptor declares no executable child pages, Cognis Study supplies the generated Library destination at `/study/library?language=ja`. The validated language query remains attached to Library links, detail navigation, direct loads, and browser history; authenticated learners may browse while Library scope rules continue to protect authoring and publishing.
 
-The external module declares the Study gateway as its component dependency. It discovers the Library adapter through the required `study:library` capability rather than treating the adapter UUID as an independently installable component.
+The external module declares the Study gateway as its component dependency. It discovers the Library adapter through the required `study:library:provider` capability rather than treating the adapter UUID as an independently installable component.
 
 ## Technical specification
 
@@ -193,3 +193,7 @@ A sentence pronunciation input must declare every constituent relationship that 
 ## Stroke pattern metadata
 
 Every provider-authored writing-unit card must include an immutable required `strokePattern`. Use `coordinateSystem: "normalized"`; keep all point coordinates within 0–1, point times monotonic inside each ordered stroke, optional pressure within 0–1, and tolerance within 0–100. Preserve attribution for any external stroke source in content-manifest metadata.
+
+## Runtime stroke lookup
+
+Register one removable Library lookup provider through `study:library:provider`. Support only the Japanese schema's writing-unit layers with a declared `strokePattern` field. Resolve normalized exact labels from packaged content, return the pattern under `fields.stroke_pattern` with stable KanjiVG provenance and confidence `1`, and return no suggestion for unknown labels. Do not add network or OCR fallbacks: non-deterministic stroke guesses are unsafe teaching data.

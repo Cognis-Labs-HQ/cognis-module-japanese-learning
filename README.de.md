@@ -7,9 +7,9 @@ Cognis Japanisch ist ein deklaratives japanisches Inhaltspaket für die Cognis-S
 ## Voraussetzungen
 
 - Cognis mit aktiviertem Study-Gateway und Bibliotheksadapter.
-- Die Host-Fähigkeit `study:library`.
+- Die Host-Fähigkeit `study:library:provider`.
 
-Das externe Modul deklariert das Study-Gateway als Komponentenabhängigkeit. Es erkennt den Bibliotheksadapter über die erforderliche Fähigkeit `study:library`, statt die Adapter-UUID als eigenständig installierbare Komponente zu behandeln.
+Das externe Modul deklariert das Study-Gateway als Komponentenabhängigkeit. Es erkennt den Bibliotheksadapter über die erforderliche Fähigkeit `study:library:provider`, statt die Adapter-UUID als eigenständig installierbare Komponente zu behandeln.
 
 ## Entwicklung
 
@@ -19,7 +19,7 @@ npm test
 npm run check:manifest
 ```
 
-Beim Bootstrap bezieht das Modul `study:library` über `ctx` und ruft `ingestContentPack` für `data/library` auf. Cognis übernimmt Pfadsicherheit, Graphvalidierung, stabile interne IDs, Transaktionen, Idempotenz, Persistenz, API-Routen und schemagenerierte Study-Oberflächen.
+Beim Bootstrap bezieht das Modul `study:library:provider` über `ctx` und ruft `ingestContentPack` für `data/library` auf. Cognis übernimmt Pfadsicherheit, Graphvalidierung, stabile interne IDs, Transaktionen, Idempotenz, Persistenz, API-Routen und schemagenerierte Study-Oberflächen.
 
 Da die Sprachbeschreibung keine ausführbaren Unterseiten deklariert, stellt Cognis Study das generierte Bibliotheksziel unter `/study/library?language=ja` bereit. Der validierte Sprachparameter bleibt an Bibliothekslinks, Detailnavigation, Direktaufrufen und im Browserverlauf erhalten; authentifizierte Lernende dürfen lesen, während die Bereichsregeln der Bibliothek das Erstellen und Veröffentlichen weiterhin schützen.
 
@@ -192,3 +192,7 @@ Die Aussprachedetails eines Satzes verwenden den aktuellen `linkRelationships`-V
 ## Strichgeführte Schreibübungen
 
 Jede Kana- und Kanji-Karte enthält nun ein erforderliches `strokePattern` mit normalisierten Koordinaten, geordneten monotonen Zeitwerten und einer Übungstoleranz, die mit dem aktuellen Zeichenvertrag der Study Library aus Cognis PR #226 kompatibel ist. Die Muster wurden aus KanjiVG abgeleitet; Quelle und CC-BY-SA-3.0-Namensnennung bleiben im Inhaltsmanifest erhalten.
+
+## Laufzeit-Anbieter für Strichmuster
+
+Das Modul registriert `study-language-ja:stroke-patterns` über die Library-Fähigkeit `study:library:provider`. Exakte Kana- oder Kanji-Bezeichnungen liefern das paketierte, validierte `stroke_pattern` mit KanjiVG-Herkunft und voller Konfidenz. Die Suche ist lokal und deterministisch: Sie verwendet die geprüften Inhaltsdaten, benötigt weder Netzwerkdienst noch OCR, liefert für unbekannten Text keine Vermutung und wird beim Deaktivieren des Moduls sauber entfernt.

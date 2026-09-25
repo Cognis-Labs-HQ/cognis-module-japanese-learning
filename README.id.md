@@ -7,9 +7,9 @@ Cognis Bahasa Jepang adalah paket konten bahasa Jepang deklaratif untuk Pustaka 
 ## Persyaratan
 
 - Cognis dengan gateway Study dan adaptor Pustaka yang aktif.
-- Kapabilitas host `study:library`.
+- Kapabilitas host `study:library:provider`.
 
-Modul eksternal mendeklarasikan gateway Study sebagai dependensi komponennya. Modul menemukan adaptor Pustaka melalui kapabilitas wajib `study:library`, bukan memperlakukan UUID adaptor sebagai komponen yang dapat dipasang secara mandiri.
+Modul eksternal mendeklarasikan gateway Study sebagai dependensi komponennya. Modul menemukan adaptor Pustaka melalui kapabilitas wajib `study:library:provider`, bukan memperlakukan UUID adaptor sebagai komponen yang dapat dipasang secara mandiri.
 
 ## Pengembangan
 
@@ -19,7 +19,7 @@ npm test
 npm run check:manifest
 ```
 
-Saat bootstrap, modul memperoleh `study:library` melalui `ctx` dan memanggil `ingestContentPack` untuk `data/library`. Cognis menangani keamanan jalur, validasi graf, ID internal stabil, transaksi, idempotensi, persistensi, rute API, dan antarmuka Study yang dibuat dari skema.
+Saat bootstrap, modul memperoleh `study:library:provider` melalui `ctx` dan memanggil `ingestContentPack` untuk `data/library`. Cognis menangani keamanan jalur, validasi graf, ID internal stabil, transaksi, idempotensi, persistensi, rute API, dan antarmuka Study yang dibuat dari skema.
 
 Karena deskripsi bahasa tidak mendeklarasikan halaman turunan yang dapat dijalankan, Cognis Study menyediakan tujuan Pustaka yang dihasilkan di `/study/library?language=ja`. Parameter bahasa tervalidasi dipertahankan pada tautan Pustaka, navigasi detail, pemuatan langsung, dan riwayat peramban; pelajar terautentikasi dapat membaca sementara aturan cakupan Pustaka tetap melindungi penulisan dan penerbitan.
 
@@ -192,3 +192,7 @@ Detail pelafalan kalimat menggunakan kontrak `linkRelationships` terkini untuk m
 ## Latihan menulis berpanduan goresan
 
 Setiap kartu Kana dan Kanji kini memiliki `strokePattern` wajib dengan koordinat ternormalisasi, sampel waktu monotonik berurutan, dan toleransi latihan yang kompatibel dengan kontrak menggambar Study Library terbaru dari Cognis PR #226. Pola tersebut diturunkan dari KanjiVG serta mempertahankan sumber dan atribusi CC BY-SA 3.0 dalam manifes konten.
+
+## Penyedia pola goresan runtime
+
+Modul mendaftarkan `study-language-ja:stroke-patterns` melalui kapabilitas Pustaka `study:library:provider`. Label Kana atau Kanji yang tepat mengembalikan `stroke_pattern` tervalidasi dari paket dengan asal KanjiVG dan keyakinan penuh. Pencarian bersifat lokal dan deterministik: penyedia memakai ulang data konten yang telah ditinjau, tidak memerlukan layanan jaringan atau OCR, tidak menebak teks yang tidak dikenal, dan dilepas dengan bersih saat modul dinonaktifkan.

@@ -385,3 +385,9 @@ Study Library の有効化がデータベーストランザクション内で失
 ベータ版コンテンツスキーマに互換経路を残さず、非推奨の単数 `linkRelationship` メタデータを削除しました。発音フィールドは Cognis が使用する現在の `linkRelationships` 配列だけを公開し、回帰テストは旧プロパティの再導入を拒否します。
 
 - [29d7b90](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/29d7b90)
+
+## 実行時の筆順パターンプロバイダー
+
+日本語の書記単位に対して、最新の Cognis Library lookup プロバイダー契約を実装しました。完全一致する仮名・漢字ラベルは、安定した KanjiVG 出典と信頼度 `1` を伴う、パッケージ内で検証済みの `stroke_pattern` を返し、不明なラベルは推測しません。プロバイダーはネットワークサービスや OCR を使わず完全にローカルで動作し、無効化時または取り込み失敗直後に登録を解除します。
+
+- [bbc6d84](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/bbc6d84)

@@ -7,9 +7,9 @@ Cognis 日本語は、Cognis Study ライブラリ向けの宣言型日本語コ
 ## 要件
 
 - Study ゲートウェイとライブラリアダプターが有効な Cognis。
-- ホストの `study:library` ケイパビリティ。
+- ホストの `study:library:provider` ケイパビリティ。
 
-外部モジュールは Study ゲートウェイをコンポーネント依存関係として宣言します。ライブラリアダプターの UUID を単独で導入可能なコンポーネントとして扱わず、必須の `study:library` ケイパビリティを通じて検出します。
+外部モジュールは Study ゲートウェイをコンポーネント依存関係として宣言します。ライブラリアダプターの UUID を単独で導入可能なコンポーネントとして扱わず、必須の `study:library:provider` ケイパビリティを通じて検出します。
 
 ## 開発
 
@@ -19,7 +19,7 @@ npm test
 npm run check:manifest
 ```
 
-ブートストラップ時に、モジュールは `ctx` から `study:library` を取得し、`data/library` に対して `ingestContentPack` を呼び出します。パスの安全性、グラフ検証、安定した内部 ID、トランザクション、冪等性、永続化、API ルート、スキーマ生成 Study 画面は Cognis が所有します。
+ブートストラップ時に、モジュールは `ctx` から `study:library:provider` を取得し、`data/library` に対して `ingestContentPack` を呼び出します。パスの安全性、グラフ検証、安定した内部 ID、トランザクション、冪等性、永続化、API ルート、スキーマ生成 Study 画面は Cognis が所有します。
 
 言語記述子は実行可能な子ページを宣言しないため、Cognis Study が `/study/library?language=ja` に生成済みライブラリの移動先を提供します。検証済みの言語クエリは、ライブラリリンク、詳細画面の移動、直接読み込み、ブラウザー履歴で維持されます。認証済み学習者は閲覧でき、作成と公開は引き続きライブラリのスコープ規則で保護されます。
 
@@ -192,3 +192,7 @@ npm run check:manifest
 ## 筆順に沿った書き取り練習
 
 すべての仮名カードと漢字カードに、正規化座標、順序付きの単調な時刻サンプル、練習用の許容値を持つ必須の `strokePattern` を追加しました。これは Cognis PR #226 の最新 Study Library 描画契約に対応します。パターンは KanjiVG から派生し、出典と CC BY-SA 3.0 の帰属情報をコンテンツマニフェストに保持しています。
+
+## 実行時の筆順パターンプロバイダー
+
+モジュールは Library の `study:library:provider` ケイパビリティを通じて `study-language-ja:stroke-patterns` を登録します。仮名または漢字の完全一致ラベルに対し、KanjiVG の出典と最大信頼度を伴う、パッケージ内で検証済みの `stroke_pattern` を返します。検索はローカルかつ決定的で、確認済みコンテンツデータを再利用するため、ネットワークサービスや OCR は不要です。不明な文字を推測せず、モジュール無効化時に登録を確実に解除します。

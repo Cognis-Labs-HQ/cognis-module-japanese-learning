@@ -4,11 +4,11 @@ Modul Cognis Bahasa Jepang memasang data pembelajaran bahasa Jepang deklaratif k
 
 ## Penggunaan
 
-Aktifkan gateway Study dan adaptor Pustaka, lalu aktifkan modul ini. Bootstrap menyelesaikan `study:library` dari `ctx` dan mengingesti `data/library`. Administrator dan pelajar menggunakan antarmuka Study yang dihasilkan adaptor Pustaka, bukan rute milik modul.
+Aktifkan gateway Study dan adaptor Pustaka, lalu aktifkan modul ini. Bootstrap menyelesaikan `study:library:provider` dari `ctx` dan mengingesti `data/library`. Administrator dan pelajar menggunakan antarmuka Study yang dihasilkan adaptor Pustaka, bukan rute milik modul.
 
 Karena deskripsi bahasa tidak mendeklarasikan halaman turunan yang dapat dijalankan, Cognis Study menyediakan tujuan Pustaka yang dihasilkan di `/study/library?language=ja`. Parameter bahasa tervalidasi dipertahankan pada tautan Pustaka, navigasi detail, pemuatan langsung, dan riwayat peramban; pelajar terautentikasi dapat membaca sementara aturan cakupan Pustaka tetap melindungi penulisan dan penerbitan.
 
-Modul eksternal mendeklarasikan gateway Study sebagai dependensi komponennya. Modul menemukan adaptor Pustaka melalui kapabilitas wajib `study:library`, bukan memperlakukan UUID adaptor sebagai komponen yang dapat dipasang secara mandiri.
+Modul eksternal mendeklarasikan gateway Study sebagai dependensi komponennya. Modul menemukan adaptor Pustaka melalui kapabilitas wajib `study:library:provider`, bukan memperlakukan UUID adaptor sebagai komponen yang dapat dipasang secara mandiri.
 
 ## Spesifikasi teknis
 
@@ -193,3 +193,7 @@ Input pelafalan kalimat harus mendeklarasikan setiap hubungan unsur yang dapat m
 ## Metadata pola goresan
 
 Setiap kartu unit tulisan buatan penyedia wajib menyertakan `strokePattern` yang wajib dan tidak dapat diubah. Gunakan `coordinateSystem: "normalized"`; pertahankan seluruh koordinat titik dalam rentang 0–1, waktu titik monotonik di dalam setiap goresan berurutan, tekanan opsional dalam rentang 0–1, dan toleransi dalam rentang 0–100. Pertahankan atribusi setiap sumber goresan eksternal dalam metadata manifes konten.
+
+## Pencarian goresan runtime
+
+Daftarkan satu penyedia pencarian Pustaka yang dapat dilepas melalui `study:library:provider`. Dukung hanya lapisan unit tulisan skema Jepang yang mendeklarasikan bidang `strokePattern`. Selesaikan label ternormalisasi yang cocok tepat dari konten paket, kembalikan pola di `fields.stroke_pattern` dengan asal KanjiVG stabil dan keyakinan `1`, serta jangan berikan saran untuk label yang tidak dikenal. Jangan tambahkan fallback jaringan atau OCR: tebakan goresan nondeterministik tidak aman sebagai data pembelajaran.

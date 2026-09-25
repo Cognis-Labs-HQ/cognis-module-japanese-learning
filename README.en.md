@@ -7,9 +7,9 @@ Cognis Japanese is a declarative Japanese content pack for the Cognis Study Libr
 ## Requirements
 
 - Cognis with the Study gateway and Library adapter enabled.
-- The `study:library` host capability.
+- The `study:library:provider` host capability.
 
-The external module declares the Study gateway as its component dependency. It discovers the Library adapter through the required `study:library` capability rather than treating the adapter UUID as an independently installable component.
+The external module declares the Study gateway as its component dependency. It discovers the Library adapter through the required `study:library:provider` capability rather than treating the adapter UUID as an independently installable component.
 
 ## Development
 
@@ -19,7 +19,7 @@ npm test
 npm run check:manifest
 ```
 
-During bootstrap, the module obtains `study:library` through `ctx` and calls `ingestContentPack` for `data/library`. Cognis owns path safety, graph validation, stable internal IDs, transactions, idempotency, persistence, API routes, and schema-generated Study interfaces.
+During bootstrap, the module obtains `study:library:provider` through `ctx` and calls `ingestContentPack` for `data/library`. Cognis owns path safety, graph validation, stable internal IDs, transactions, idempotency, persistence, API routes, and schema-generated Study interfaces.
 
 Because the language descriptor declares no executable child pages, Cognis Study supplies the generated Library destination at `/study/library?language=ja`. The validated language query remains attached to Library links, detail navigation, direct loads, and browser history; authenticated learners may browse while Library scope rules continue to protect authoring and publishing.
 
@@ -192,3 +192,7 @@ Sentence pronunciation details use the current `linkRelationships` contract to d
 ## Stroke-guided writing practice
 
 Every Kana and Kanji card now carries a required `strokePattern` with normalized coordinates, ordered monotonic timing samples, and a practice tolerance compatible with the latest Study Library drawing contract from Cognis PR #226. The patterns are derived from KanjiVG and retain source and CC BY-SA 3.0 attribution in the content manifest.
+
+## Runtime stroke-pattern provider
+
+The module registers `study-language-ja:stroke-patterns` through the Library's `study:library:provider` capability. Exact Kana or Kanji labels return the packaged, validated `stroke_pattern` with KanjiVG provenance and full confidence. Lookup is local and deterministic: it reuses the reviewed content data, requires no network service or OCR, returns no guess for unknown text, and unregisters cleanly when the module is disabled.

@@ -385,3 +385,9 @@ Updated every pronunciation-bearing layer to publish the current `input.linkRela
 Removed the deprecated singular `linkRelationship` metadata instead of retaining a compatibility path in the beta content schema. Pronunciation fields now publish only the current `linkRelationships` arrays consumed by Cognis, and regression coverage rejects any reintroduction of the legacy property.
 
 - [29d7b90](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/29d7b90)
+
+## Runtime Stroke-Pattern Provider
+
+Implemented the latest Cognis Library lookup-provider contract for Japanese writing units. Exact Kana and Kanji labels now return their packaged, validated `stroke_pattern` with stable KanjiVG provenance and confidence `1`; unknown labels return no guess. The provider is entirely local—no network service or OCR—and its registration is removed on disable or immediately after failed ingestion.
+
+- [bbc6d84](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/bbc6d84)

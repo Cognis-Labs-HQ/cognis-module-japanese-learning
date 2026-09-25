@@ -4,11 +4,11 @@ Das Cognis-Japanisch-Modul installiert deklarative japanische Lerndatensätze in
 
 ## Verwendung
 
-Aktivieren Sie das Study-Gateway und den Bibliotheksadapter und anschließend dieses Modul. Sein Bootstrap löst `study:library` aus `ctx` auf und übernimmt `data/library`. Administratoren und Lernende verwenden die vom Bibliotheksadapter erzeugte Study-Oberfläche statt einer moduleigenen Route.
+Aktivieren Sie das Study-Gateway und den Bibliotheksadapter und anschließend dieses Modul. Sein Bootstrap löst `study:library:provider` aus `ctx` auf und übernimmt `data/library`. Administratoren und Lernende verwenden die vom Bibliotheksadapter erzeugte Study-Oberfläche statt einer moduleigenen Route.
 
 Da die Sprachbeschreibung keine ausführbaren Unterseiten deklariert, stellt Cognis Study das generierte Bibliotheksziel unter `/study/library?language=ja` bereit. Der validierte Sprachparameter bleibt an Bibliothekslinks, Detailnavigation, Direktaufrufen und im Browserverlauf erhalten; authentifizierte Lernende dürfen lesen, während die Bereichsregeln der Bibliothek das Erstellen und Veröffentlichen weiterhin schützen.
 
-Das externe Modul deklariert das Study-Gateway als Komponentenabhängigkeit. Es erkennt den Bibliotheksadapter über die erforderliche Fähigkeit `study:library`, statt die Adapter-UUID als eigenständig installierbare Komponente zu behandeln.
+Das externe Modul deklariert das Study-Gateway als Komponentenabhängigkeit. Es erkennt den Bibliotheksadapter über die erforderliche Fähigkeit `study:library:provider`, statt die Adapter-UUID als eigenständig installierbare Komponente zu behandeln.
 
 ## Technische Spezifikation
 
@@ -193,3 +193,7 @@ Die Eingabe einer Satzaussprache muss jede Bestandteilsbeziehung deklarieren, di
 ## Strichmuster-Metadaten
 
 Jede vom Anbieter erstellte Schreibzeichenkarte muss ein unveränderliches erforderliches `strokePattern` enthalten. Verwende `coordinateSystem: "normalized"`; halte alle Punktkoordinaten im Bereich 0–1, die Punktzeiten innerhalb jedes geordneten Strichs monoton, optionalen Druck im Bereich 0–1 und die Toleranz im Bereich 0–100. Bewahre die Namensnennung externer Strichquellen in den Metadaten des Inhaltsmanifests auf.
+
+## Laufzeit-Suche nach Strichmustern
+
+Registriere über `study:library:provider` genau einen entfernbaren Library-Lookup-Anbieter. Unterstütze nur Schreibzeichenebenen des japanischen Schemas mit einem deklarierten `strokePattern`-Feld. Löse normalisierte, exakt übereinstimmende Bezeichnungen aus dem paketierten Inhalt auf, gib das Muster unter `fields.stroke_pattern` mit stabiler KanjiVG-Herkunft und Konfidenz `1` zurück und liefere für unbekannte Bezeichnungen keinen Vorschlag. Füge keine Netzwerk- oder OCR-Rückfälle hinzu: nichtdeterministische Strichvermutungen sind als Lerndaten unsicher.

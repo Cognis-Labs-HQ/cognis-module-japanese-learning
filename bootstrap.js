@@ -1,11 +1,12 @@
 import path from "node:path";
+import { createStrokePatternProvider } from "./api/stroke-pattern-provider.js";
 
 const CONTENT_PACK = Object.freeze({
     id: "japanese-core",
     publisher: "Cognis Labs HQ",
     namespace: "ja",
-    version: "2.2.32",
-    contentRevision: "2026-09-24.16",
+    version: "2.2.33",
+    contentRevision: "2026-09-25.1",
     schema: "schema.json",
     content: "content",
     protected: true,
@@ -38,7 +39,7 @@ const LANGUAGE = Object.freeze({
     languageCode: "ja",
     languageName: "日本語",
     languageFlag: "🇯🇵",
-    version: "2.2.32",
+    version: "2.2.33",
     package: CONTENT_PACK,
     childComponents: [],
 });
@@ -52,14 +53,29 @@ export async function uninstallModule(ctx, { deleteContent }) {
 }
 
 export async function bootstrapModule(ctx) {
-    const library = ctx.getCapability("study:library");
-    if (!library || typeof library.ingestContentPack !== "function") {
-        throw new Error("Cognis Japanese requires study:library.");
+    const library = ctx.getCapability("study:library:provider");
+    if (
+        !library ||
+        typeof library.ingestContentPack !== "function" ||
+        typeof library.registerLookupProvider !== "function"
+    ) {
+        throw new Error("Cognis Japanese requires study:library:provider.");
     }
     ctx.registerStaticDir("", path.join(ctx.moduleRoot, "ui"));
-    const receipt = await library.ingestContentPack(
-        path.join(ctx.moduleRoot, "data", "library"),
+    const libraryRoot = path.join(ctx.moduleRoot, "data", "library");
+    const removeLookupProvider = library.registerLookupProvider(
+        createStrokePatternProvider({
+            contentRoot: path.join(libraryRoot, "content"),
+            log: ctx.log,
+        }),
     );
+    let receipt;
+    try {
+        receipt = await library.ingestContentPack(libraryRoot);
+    } catch (error) {
+        removeLookupProvider();
+        throw error;
+    }
     ctx.contributePublicCapability("study:language:ja", LANGUAGE);
     ctx.flow.extend(
         "bootstrap-platform",
@@ -74,4 +90,5 @@ export async function bootstrapModule(ctx) {
         contentRevision: receipt.contentRevision,
         unchanged: receipt.unchanged,
     });
+    return removeLookupProvider;
 }

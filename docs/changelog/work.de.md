@@ -385,3 +385,9 @@ Alle Ebenen mit Aussprache veröffentlichen nun das aktuelle, von Cognis PR #226
 Die veralteten singulären `linkRelationship`-Metadaten wurden entfernt, statt im Beta-Inhaltsschema einen Kompatibilitätspfad beizubehalten. Aussprachefelder veröffentlichen nur noch die aktuellen, von Cognis verwendeten `linkRelationships`-Arrays; Regressionstests verhindern die erneute Einführung der Legacy-Eigenschaft.
 
 - [29d7b90](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/29d7b90)
+
+## Laufzeit-Anbieter für Strichmuster
+
+Der aktuelle Lookup-Anbieter-Vertrag der Cognis Library wurde für japanische Schreibzeichen implementiert. Exakt übereinstimmende Kana- und Kanji-Bezeichnungen liefern ihr paketiertes, validiertes `stroke_pattern` mit stabiler KanjiVG-Herkunft und Konfidenz `1`; unbekannte Bezeichnungen werden nicht erraten. Der Anbieter arbeitet vollständig lokal – ohne Netzwerkdienst oder OCR – und seine Registrierung wird beim Deaktivieren oder unmittelbar nach fehlgeschlagener Übernahme entfernt.
+
+- [bbc6d84](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/bbc6d84)
