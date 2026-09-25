@@ -403,3 +403,15 @@ Extended the lookup provider beyond the packaged curriculum. Packaged patterns r
 Added a localized Jisho composer provider for Kana, Kanji, and Vocabulary cards using the latest Cognis lookup contract. Exact packaged records return all reviewed fields and relationships without a network request. Native misses use a bounded request cache before querying Jisho, then populate canonical labels, pronunciations, JLPT levels, and only those Kanji, reading, Kana, or definition links that already exist in the provider graph. The stroke provider now also publishes the localized metadata required by the current composer.
 
 - [db47014](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/db47014)
+
+## Generic Library Provider Registration
+
+Jisho now exposes a dedicated registration adapter that accepts the generic `study:library:provider` capability and delegates directly to `registerLookupProvider`. Bootstrap uses that adapter, preserves the returned remover, and unwinds already registered providers in reverse order if any later registration or content ingestion fails. The integration no longer depends on a Jisho-specific host capability.
+
+- [0056f4d](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/0056f4d)
+
+## Packaged Registration Entry Point
+
+Refreshed the packaged manifest digest for the generic Jisho registration entry point and its regression coverage.
+
+- [b2a1e34](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/b2a1e34)

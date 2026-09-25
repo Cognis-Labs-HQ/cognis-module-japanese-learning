@@ -330,3 +330,11 @@ export function createJishoLookupProvider({
         },
     });
 }
+
+export function registerJishoLookupProvider(libraryProvider, options) {
+    if (typeof libraryProvider?.registerLookupProvider !== "function")
+        throw new Error("Jisho lookup requires study:library:provider.");
+    return libraryProvider.registerLookupProvider(
+        createJishoLookupProvider(options),
+    );
+}

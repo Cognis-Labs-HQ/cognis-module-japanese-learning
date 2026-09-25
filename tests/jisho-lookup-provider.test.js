@@ -1,7 +1,10 @@
 import assert from "node:assert/strict";
 import path from "node:path";
 import test from "node:test";
-import { createJishoLookupProvider } from "../api/jisho-lookup-provider.js";
+import {
+    createJishoLookupProvider,
+    registerJishoLookupProvider,
+} from "../api/jisho-lookup-provider.js";
 
 const contentRoot = path.resolve(
     import.meta.dirname,
@@ -147,4 +150,24 @@ test("Jisho provider does not query invalid or unrelated input", async () => {
         [],
     );
     assert.equal(requests, 0);
+});
+
+test("Jisho integration registers through the generic Library provider", async () => {
+    let registered;
+    let removed = false;
+    const libraryProvider = {
+        registerLookupProvider(provider) {
+            registered = provider;
+            return () => {
+                removed = true;
+            };
+        },
+    };
+    const remove = registerJishoLookupProvider(libraryProvider, {
+        contentRoot,
+    });
+    assert.equal(registered.id, "study-language-ja:jisho");
+    assert.equal(typeof registered.lookup, "function");
+    remove();
+    assert.equal(removed, true);
 });

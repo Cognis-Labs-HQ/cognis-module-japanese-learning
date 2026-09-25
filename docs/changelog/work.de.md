@@ -403,3 +403,15 @@ Der Suchanbieter wurde über den mitgelieferten Lehrplan hinaus erweitert. Mitge
 Ein lokalisierter Jisho-Composer-Anbieter für Kana-, Kanji- und Vokabelkarten wurde nach dem neuesten Cognis-Suchvertrag hinzugefügt. Exakte mitgelieferte Einträge liefern alle geprüften Felder und Beziehungen ohne Netzwerkanfrage. Bei einem nativen Fehltreffer wird vor der Jisho-Abfrage ein begrenzter Anfragecache verwendet; anschließend werden kanonische Bezeichnungen, Aussprachen, JLPT-Stufen und ausschließlich bereits im Anbietergraphen vorhandene Kanji-, Lese-, Kana- oder Definitionsverknüpfungen befüllt. Der Strichmusteranbieter veröffentlicht nun ebenfalls die vom aktuellen Composer benötigten lokalisierten Metadaten.
 
 - [db47014](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/db47014)
+
+## Registrierung über den generischen Library-Anbieter
+
+Jisho stellt nun einen eigenen Registrierungsadapter bereit, der die generische Fähigkeit `study:library:provider` entgegennimmt und direkt an `registerLookupProvider` delegiert. Bootstrap verwendet diesen Adapter, bewahrt die zurückgegebene Entfernen-Funktion auf und entfernt bereits registrierte Anbieter in umgekehrter Reihenfolge, falls eine spätere Registrierung oder das Einlesen von Inhalten fehlschlägt. Die Integration hängt nicht mehr von einer Jisho-spezifischen Host-Fähigkeit ab.
+
+- [0056f4d](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/0056f4d)
+
+## Paketierter Registrierungs-Einstiegspunkt
+
+Der Manifest-Digest für den generischen Jisho-Registrierungs-Einstiegspunkt und seine Regressionstests wurde aktualisiert.
+
+- [b2a1e34](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/b2a1e34)

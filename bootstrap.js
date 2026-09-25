@@ -1,13 +1,13 @@
 import path from "node:path";
-import { createJishoLookupProvider } from "./api/jisho-lookup-provider.js";
+import { registerJishoLookupProvider } from "./api/jisho-lookup-provider.js";
 import { createStrokePatternProvider } from "./api/stroke-pattern-provider.js";
 
 const CONTENT_PACK = Object.freeze({
     id: "japanese-core",
     publisher: "Cognis Labs HQ",
     namespace: "ja",
-    version: "2.2.35",
-    contentRevision: "2026-09-25.3",
+    version: "2.2.36",
+    contentRevision: "2026-09-25.4",
     schema: "schema.json",
     content: "content",
     protected: true,
@@ -40,7 +40,7 @@ const LANGUAGE = Object.freeze({
     languageCode: "ja",
     languageName: "日本語",
     languageFlag: "🇯🇵",
-    version: "2.2.35",
+    version: "2.2.36",
     package: CONTENT_PACK,
     childComponents: [],
 });
@@ -64,26 +64,27 @@ export async function bootstrapModule(ctx) {
     }
     ctx.registerStaticDir("", path.join(ctx.moduleRoot, "ui"));
     const libraryRoot = path.join(ctx.moduleRoot, "data", "library");
-    const providerRemovers = [
-        library.registerLookupProvider(
-            createStrokePatternProvider({
-                contentRoot: path.join(libraryRoot, "content"),
-                log: ctx.log,
-            }),
-        ),
-        library.registerLookupProvider(
-            createJishoLookupProvider({
-                contentRoot: path.join(libraryRoot, "content"),
-                log: ctx.log,
-            }),
-        ),
-    ];
+    const providerRemovers = [];
     const removeLookupProviders = () => {
-        for (const removeProvider of providerRemovers.splice(0))
+        for (const removeProvider of providerRemovers.splice(0).reverse())
             removeProvider();
     };
     let receipt;
     try {
+        providerRemovers.push(
+            library.registerLookupProvider(
+                createStrokePatternProvider({
+                    contentRoot: path.join(libraryRoot, "content"),
+                    log: ctx.log,
+                }),
+            ),
+        );
+        providerRemovers.push(
+            registerJishoLookupProvider(library, {
+                contentRoot: path.join(libraryRoot, "content"),
+                log: ctx.log,
+            }),
+        );
         receipt = await library.ingestContentPack(libraryRoot);
     } catch (error) {
         removeLookupProviders();

@@ -403,3 +403,15 @@ Penyedia pencarian diperluas melampaui kurikulum bawaan. Pola bawaan tetap terse
 Penyedia komposer Jisho yang dilokalkan untuk kartu Kana, Kanji, dan Kosakata ditambahkan dengan kontrak pencarian Cognis terbaru. Rekaman bawaan yang cocok tepat mengembalikan seluruh bidang dan hubungan yang telah ditinjau tanpa permintaan jaringan. Kegagalan pencarian asli menggunakan tembolok permintaan terbatas sebelum meminta Jisho, lalu mengisi label kanonis, pelafalan, tingkat JLPT, serta hanya tautan Kanji, bacaan, Kana, atau definisi yang sudah ada dalam graf penyedia. Penyedia pola goresan kini juga menerbitkan metadata lokal yang diwajibkan komposer saat ini.
 
 - [db47014](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/db47014)
+
+## Pendaftaran melalui Penyedia Library Generik
+
+Jisho kini menyediakan adaptor pendaftaran khusus yang menerima kapabilitas generik `study:library:provider` dan mendelegasikan langsung ke `registerLookupProvider`. Bootstrap menggunakan adaptor tersebut, menyimpan fungsi penghapus yang dikembalikan, dan membatalkan penyedia yang telah terdaftar dalam urutan terbalik jika pendaftaran berikutnya atau penyerapan konten gagal. Integrasi ini tidak lagi bergantung pada kapabilitas host khusus Jisho.
+
+- [0056f4d](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/0056f4d)
+
+## Titik Masuk Pendaftaran Terpaket
+
+Digest manifes untuk titik masuk pendaftaran Jisho generik dan cakupan regresinya telah diperbarui.
+
+- [b2a1e34](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/b2a1e34)

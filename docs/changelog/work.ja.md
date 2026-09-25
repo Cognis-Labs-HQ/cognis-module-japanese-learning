@@ -403,3 +403,15 @@ Study Library の有効化がデータベーストランザクション内で失
 最新の Cognis 検索コントラクトに対応した、かな・漢字・語彙カード用のローカライズ済み Jisho Composer プロバイダーを追加しました。同梱レコードに完全一致する場合は、ネットワークへ接続せず、レビュー済みの全フィールドと関係を返します。ネイティブ検索で見つからない場合は、Jisho へ問い合わせる前に上限付きリクエストキャッシュを使用し、正規ラベル、発音、JLPT レベル、およびプロバイダーグラフに既に存在する漢字・読み・かな・定義へのリンクだけを入力します。筆順プロバイダーも、現在の Composer が要求するローカライズ済みメタデータを公開するようになりました。
 
 - [db47014](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/db47014)
+
+## 汎用 Library プロバイダーによる登録
+
+Jisho は、汎用 `study:library:provider` ケイパビリティを受け取り、`registerLookupProvider` へ直接委譲する専用登録アダプターを公開するようになりました。Bootstrap はこのアダプターを使用し、返された解除関数を保持します。後続の登録またはコンテンツ取り込みに失敗した場合、登録済みプロバイダーを逆順で解除します。この統合は Jisho 専用のホストケイパビリティに依存しません。
+
+- [0056f4d](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/0056f4d)
+
+## パッケージ済み登録エントリーポイント
+
+汎用 Jisho 登録エントリーポイントとその回帰テストに対応するパッケージマニフェストのダイジェストを更新しました。
+
+- [b2a1e34](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/b2a1e34)
