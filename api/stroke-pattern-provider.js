@@ -1,6 +1,6 @@
 import { readdir, readFile } from "node:fs/promises";
 import path from "node:path";
-import { svgPathProperties } from "svg-path-properties";
+import { sampleSvgPath } from "./svg-path-sampler.js";
 
 const PROVIDER_ID = "study-language-ja:stroke-patterns";
 const SCHEMA_ID = "japanese-core";
@@ -20,25 +20,15 @@ function patternFromSvg(svg, characterIndex, characterCount) {
     );
     if (!paths.length || paths.length > 128)
         throw new Error("stroke_paths_invalid");
-    return paths.map((pathData) => {
-        const properties = new svgPathProperties(pathData);
-        const length = properties.getTotalLength();
-        const sampleCount = Math.max(4, Math.min(32, Math.ceil(length / 6)));
-        return {
-            points: Array.from({ length: sampleCount }, (_, pointIndex) => {
-                const point = properties.getPointAtLength(
-                    (length * pointIndex) / (sampleCount - 1),
-                );
-                return {
-                    x: roundedCoordinate(
-                        (characterIndex + point.x / 109) / characterCount,
-                    ),
-                    y: roundedCoordinate(point.y / 109),
-                    time: pointIndex * 40,
-                };
-            }),
-        };
-    });
+    return paths.map((pathData) => ({
+        points: sampleSvgPath(pathData).map((point, pointIndex) => ({
+            x: roundedCoordinate(
+                (characterIndex + point.x / 109) / characterCount,
+            ),
+            y: roundedCoordinate(point.y / 109),
+            time: pointIndex * 40,
+        })),
+    }));
 }
 
 async function fetchPattern(label, fetchImplementation, sourceBaseUrl) {

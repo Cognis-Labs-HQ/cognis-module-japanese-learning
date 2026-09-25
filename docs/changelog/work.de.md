@@ -415,3 +415,9 @@ Jisho stellt nun einen eigenen Registrierungsadapter bereit, der die generische 
 Der Manifest-Digest für den generischen Jisho-Registrierungs-Einstiegspunkt und seine Regressionstests wurde aktualisiert.
 
 - [b2a1e34](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/b2a1e34)
+
+## Eigenständige Strichmuster-Laufzeit
+
+Die nicht bereitgestellte Produktionsabhängigkeit `svg-path-properties`, die Cognis beim Aktivieren am Import des Moduls hinderte, wurde entfernt. Das Modul liefert nun einen eigenen begrenzten SVG-Pfad-Tokenizer, Kurven-Sampler und distanzbasierten Resampler für KanjiVG-Striche mit. Regressionstests führen Bootstrap-, Strichmuster- und Deinstallationstests aus einem kopierten Modulbaum ohne `node_modules` aus und entsprechen damit der Installationsumgebung externer Module.
+
+- [6133b70](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/6133b70)

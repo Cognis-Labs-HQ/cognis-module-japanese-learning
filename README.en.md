@@ -200,3 +200,5 @@ The module registers `study-language-ja:stroke-patterns` through the Library's `
 ## Jisho-assisted card creation
 
 The module registers a localized **Jisho Dictionary** composer provider directly through the generic `study:library:provider.registerLookupProvider` contract for Kana, Kanji, and Vocabulary cards. It resolves exact matches from the packaged dataset first, including every authored field and relationship. Only a cache miss queries Jisho; successful in-flight and completed responses are shared from a bounded session cache. External results populate the canonical label, pronunciations, JLPT level when available, and links to existing Kanji, complete readings, or atomic Kana without inventing records or guessing links.
+
+The SVG path sampler is module-owned, so installed external modules do not depend on host `node_modules`.

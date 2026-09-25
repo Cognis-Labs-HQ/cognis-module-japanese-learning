@@ -201,3 +201,5 @@ Daftarkan satu penyedia pencarian Pustaka yang dapat dilepas melalui `study:libr
 ## Pengayaan komposer Jisho
 
 Jisho hanya boleh didaftarkan melalui kontrak generik `study:library:provider.registerLookupProvider` dan harus mengembalikan fungsi penghapus untuk pembersihan siklus hidup. Pencarian kartu harus selalu mendahulukan data asli. Rekaman Kana, Kanji, dan Kosakata bawaan yang cocok tepat mengembalikan bidang dan hubungan yang telah ditinjau tanpa akses jaringan. Jisho hanya diminta setelah data asli tidak ditemukan, dan tembolok promise terbatas menggabungkan permintaan bersamaan serta menggunakan ulang respons berhasil. Saran eksternal hanya boleh menghasilkan bidang yang dikenali skema dan referensi ke rekaman penyedia yang sudah ada; definisi atau tautan yang tidak tersedia harus dibiarkan kosong, bukan direka.
+
+Titik masuk penyedia runtime tidak boleh mengimpor paket npm yang tidak diterapkan; pengambil sampel jalur SVG KanjiVG dimiliki modul dan disertakan dalam manifes.

@@ -201,3 +201,5 @@ Registriere über `study:library:provider` genau einen entfernbaren Library-Look
 ## Jisho-Anreicherung im Composer
 
 Jisho darf nur über den generischen Vertrag `study:library:provider.registerLookupProvider` registriert werden und muss seine Entfernen-Funktion für die Lebenszyklusbereinigung zurückgeben. Die Kartensuche muss den nativen Datenbestand bevorzugen. Exakte mitgelieferte Kana-, Kanji- und Vokabeleinträge liefern ihre geprüften Felder und Beziehungen ohne Netzwerkzugriff. Jisho wird erst nach einem nativen Fehltreffer abgefragt; ein begrenzter Promise-Cache fasst gleichzeitige Anfragen zusammen und verwendet erfolgreiche Antworten erneut. Externe Vorschläge dürfen nur schema-konforme Felder und Verweise auf vorhandene Anbietereinträge liefern; nicht verfügbare Definitionen oder Links bleiben leer, statt erfunden zu werden.
+
+Laufzeit-Provider-Einstiegspunkte dürfen keine nicht bereitgestellten npm-Pakete importieren; der KanjiVG-SVG-Pfad-Sampler gehört zum Modul und ist im Manifest enthalten.

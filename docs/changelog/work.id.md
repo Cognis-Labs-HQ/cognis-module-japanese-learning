@@ -415,3 +415,9 @@ Jisho kini menyediakan adaptor pendaftaran khusus yang menerima kapabilitas gene
 Digest manifes untuk titik masuk pendaftaran Jisho generik dan cakupan regresinya telah diperbarui.
 
 - [b2a1e34](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/b2a1e34)
+
+## Runtime Goresan Mandiri
+
+Dependensi produksi `svg-path-properties` yang tidak diterapkan dan mencegah Cognis mengimpor modul saat validasi pengaktifan telah dihapus. Modul kini menyertakan tokenizer jalur SVG, pengambil sampel kurva, dan pengambil sampel ulang berbasis jarak miliknya sendiri untuk goresan KanjiVG. Cakupan regresi menjalankan pengujian bootstrap, pencarian goresan, dan penghapusan instalasi dari salinan pohon modul tanpa `node_modules`, sesuai dengan lingkungan instalasi modul eksternal.
+
+- [6133b70](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/6133b70)

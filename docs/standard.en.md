@@ -201,3 +201,5 @@ Register one removable Library lookup provider through `study:library:provider`.
 ## Jisho composer enrichment
 
 Jisho must register only through the generic `study:library:provider.registerLookupProvider` contract and return its remover for lifecycle cleanup. Card lookup must remain native-first. Exact packaged Kana, Kanji, and Vocabulary records return their reviewed fields and relationships without network access. Jisho is queried only after a native miss, and a bounded promise cache coalesces concurrent requests and reuses successful responses. External suggestions may emit only schema-recognized fields and references to existing provider records; unavailable definitions or links must remain unset rather than being fabricated.
+
+Runtime provider entrypoints must not import undeployed npm packages; the KanjiVG SVG path sampler is module-owned and packaged in the manifest.

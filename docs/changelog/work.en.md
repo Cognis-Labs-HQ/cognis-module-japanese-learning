@@ -415,3 +415,9 @@ Jisho now exposes a dedicated registration adapter that accepts the generic `stu
 Refreshed the packaged manifest digest for the generic Jisho registration entry point and its regression coverage.
 
 - [b2a1e34](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/b2a1e34)
+
+## Self-Contained Stroke Runtime
+
+Removed the undeployed `svg-path-properties` production dependency that prevented Cognis from importing the module during enable validation. The module now packages its own bounded SVG path tokenizer, curve sampler, and distance-based resampler for KanjiVG strokes. Regression coverage runs bootstrap, stroke lookup, and uninstall tests from a copied module tree with no `node_modules`, matching the external-module installation environment.
+
+- [6133b70](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/6133b70)
