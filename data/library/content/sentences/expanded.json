@@ -1,0 +1,239 @@
+[
+    {
+        "id": "ja:sentence:watashi-wa-gakusei",
+        "label": "私は学生",
+        "references": [
+            {
+                "entryId": "ja:word:watashi",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:gakusei",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:def:sentence-watashi-wa-gakusei",
+                "relation": "definitions"
+            }
+        ],
+        "fields": {
+            "pronunciation": ["わたしはがくせい"]
+        },
+        "class": "composite"
+    },
+    {
+        "id": "ja:sentence:neko-ga-suki",
+        "label": "猫が好き",
+        "references": [
+            {
+                "entryId": "ja:word:neko",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:ga",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:suki",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:def:sentence-neko-ga-suki",
+                "relation": "definitions"
+            }
+        ],
+        "fields": {
+            "pronunciation": ["ねこがすき"]
+        },
+        "class": "composite"
+    },
+    {
+        "id": "ja:sentence:mizu-wo-nomu",
+        "label": "水を飲む",
+        "references": [
+            {
+                "entryId": "ja:word:mizu",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:nomu",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:def:sentence-mizu-wo-nomu",
+                "relation": "definitions"
+            }
+        ],
+        "fields": {
+            "pronunciation": ["みずをのむ"]
+        },
+        "class": "composite"
+    },
+    {
+        "id": "ja:sentence:gakkou-ni-iku",
+        "label": "学校に行く",
+        "references": [
+            {
+                "entryId": "ja:word:gakkou",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:ni",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:iku",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:def:sentence-gakkou-ni-iku",
+                "relation": "definitions"
+            }
+        ],
+        "fields": {
+            "pronunciation": ["がっこうにいく"]
+        },
+        "class": "composite"
+    },
+    {
+        "id": "ja:sentence:tomodachi-to-miru",
+        "label": "友達と見る",
+        "references": [
+            {
+                "entryId": "ja:word:tomodachi",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:to",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:miru",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:def:sentence-tomodachi-to-miru",
+                "relation": "definitions"
+            }
+        ],
+        "fields": {
+            "pronunciation": ["ともだちとみる"]
+        },
+        "class": "composite"
+    },
+    {
+        "id": "ja:sentence:inu-mo-kuru",
+        "label": "犬も来る",
+        "references": [
+            {
+                "entryId": "ja:word:inu",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:mo",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:kuru",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:def:sentence-inu-mo-kuru",
+                "relation": "definitions"
+            }
+        ],
+        "fields": {
+            "pronunciation": ["いぬもくる"]
+        },
+        "class": "composite"
+    },
+    {
+        "id": "ja:sentence:yama-kara-kawa-made",
+        "label": "山から川まで",
+        "references": [
+            {
+                "entryId": "ja:word:yama",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:kara",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:kawa-river",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:made",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:def:sentence-yama-kara-kawa-made",
+                "relation": "definitions"
+            }
+        ],
+        "fields": {
+            "pronunciation": ["やまからかわまで"]
+        },
+        "class": "composite"
+    },
+    {
+        "id": "ja:sentence:sensei-no-kuruma",
+        "label": "先生の車",
+        "references": [
+            {
+                "entryId": "ja:word:sensei",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:no",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:kuruma",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:def:sentence-sensei-no-kuruma",
+                "relation": "definitions"
+            }
+        ],
+        "fields": {
+            "pronunciation": ["せんせいのくるま"]
+        },
+        "class": "composite"
+    }
+]

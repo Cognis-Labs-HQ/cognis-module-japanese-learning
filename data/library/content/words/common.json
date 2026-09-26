@@ -1,0 +1,357 @@
+[
+    {
+        "id": "ja:word:nihon",
+        "label": "日本",
+        "fields": {
+            "jlpt_level": "N5",
+            "pronunciation": ["にほん"]
+        },
+        "references": [
+            {
+                "entryId": "ja:kanji:nichi",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:kanji:hon",
+                "relation": "spelling",
+                "position": 1
+            },
+            {
+                "entryId": "ja:def:nihon",
+                "relation": "definitions"
+            },
+            {
+                "entryId": "ja:word:pronunciation-nihon",
+                "relation": "pronunciation-readings",
+                "position": 0
+            }
+        ],
+        "class": "lexical:noun"
+    },
+    {
+        "id": "ja:word:nihongo",
+        "label": "日本語",
+        "fields": {
+            "jlpt_level": "N5",
+            "pronunciation": ["にほんご"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:nihon",
+                "relation": "word-spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:kanji:go",
+                "relation": "spelling",
+                "position": 1
+            },
+            {
+                "entryId": "ja:def:nihongo",
+                "relation": "definitions"
+            },
+            {
+                "entryId": "ja:word:pronunciation-nihongo",
+                "relation": "pronunciation-readings",
+                "position": 0
+            }
+        ],
+        "class": "lexical:noun"
+    },
+    {
+        "id": "ja:word:reading-nichi",
+        "label": "にち",
+        "fields": {
+            "jlpt_level": "N5",
+            "pronunciation": ["にち"]
+        },
+        "references": [
+            {
+                "entryId": "ja:char:ni",
+                "relation": "reading-kana",
+                "position": 0
+            },
+            {
+                "entryId": "ja:char:chi",
+                "relation": "reading-kana",
+                "position": 1
+            },
+            {
+                "entryId": "ja:def:reading-nichi",
+                "relation": "definitions"
+            }
+        ],
+        "hidden": true,
+        "class": "reading:pronunciation"
+    },
+    {
+        "id": "ja:word:reading-jitsu",
+        "label": "じつ",
+        "fields": {
+            "jlpt_level": "N5",
+            "pronunciation": ["じつ"]
+        },
+        "references": [
+            {
+                "entryId": "ja:char:ji",
+                "relation": "reading-kana",
+                "position": 0
+            },
+            {
+                "entryId": "ja:char:tsu",
+                "relation": "reading-kana",
+                "position": 1
+            },
+            {
+                "entryId": "ja:def:reading-jitsu",
+                "relation": "definitions"
+            }
+        ],
+        "hidden": true,
+        "class": "reading:pronunciation"
+    },
+    {
+        "id": "ja:word:reading-hi",
+        "label": "ひ",
+        "fields": {
+            "jlpt_level": "N5",
+            "pronunciation": ["ひ"]
+        },
+        "references": [
+            {
+                "entryId": "ja:char:hi",
+                "relation": "reading-kana",
+                "position": 0
+            },
+            {
+                "entryId": "ja:def:reading-hi",
+                "relation": "definitions"
+            }
+        ],
+        "hidden": true,
+        "class": "reading:pronunciation"
+    },
+    {
+        "id": "ja:word:ka-day-counter",
+        "label": "か",
+        "fields": {
+            "jlpt_level": "N5",
+            "pronunciation": ["か"]
+        },
+        "references": [
+            {
+                "entryId": "ja:char:ka",
+                "relation": "kana-spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:def:reading-ka",
+                "relation": "definitions"
+            }
+        ],
+        "class": "lexical:counter"
+    },
+    {
+        "id": "ja:word:reading-hon",
+        "label": "ほん",
+        "fields": {
+            "jlpt_level": "N5",
+            "pronunciation": ["ほん"]
+        },
+        "references": [
+            {
+                "entryId": "ja:char:ho",
+                "relation": "reading-kana",
+                "position": 0
+            },
+            {
+                "entryId": "ja:char:n",
+                "relation": "reading-kana",
+                "position": 1
+            },
+            {
+                "entryId": "ja:def:reading-hon",
+                "relation": "definitions"
+            }
+        ],
+        "hidden": true,
+        "class": "reading:pronunciation"
+    },
+    {
+        "id": "ja:word:reading-moto",
+        "label": "もと",
+        "fields": {
+            "jlpt_level": "N5",
+            "pronunciation": ["もと"]
+        },
+        "references": [
+            {
+                "entryId": "ja:char:mo",
+                "relation": "reading-kana",
+                "position": 0
+            },
+            {
+                "entryId": "ja:char:to",
+                "relation": "reading-kana",
+                "position": 1
+            },
+            {
+                "entryId": "ja:def:reading-moto",
+                "relation": "definitions"
+            }
+        ],
+        "hidden": true,
+        "class": "reading:pronunciation"
+    },
+    {
+        "id": "ja:word:reading-go",
+        "label": "ご",
+        "fields": {
+            "jlpt_level": "N5",
+            "pronunciation": ["ご"]
+        },
+        "references": [
+            {
+                "entryId": "ja:char:go",
+                "relation": "reading-kana",
+                "position": 0
+            },
+            {
+                "entryId": "ja:def:reading-go",
+                "relation": "definitions"
+            }
+        ],
+        "hidden": true,
+        "class": "reading:pronunciation"
+    },
+    {
+        "id": "ja:word:reading-kata",
+        "label": "かた",
+        "fields": {
+            "jlpt_level": "N5",
+            "pronunciation": ["かた"]
+        },
+        "references": [
+            {
+                "entryId": "ja:char:ka",
+                "relation": "reading-kana",
+                "position": 0
+            },
+            {
+                "entryId": "ja:char:ta",
+                "relation": "reading-kana",
+                "position": 1
+            },
+            {
+                "entryId": "ja:def:reading-kata",
+                "relation": "definitions"
+            }
+        ],
+        "hidden": true,
+        "class": "reading:pronunciation"
+    },
+    {
+        "id": "ja:word:reading-jin",
+        "label": "じん",
+        "fields": {
+            "jlpt_level": "N5",
+            "pronunciation": ["じん"]
+        },
+        "references": [
+            {
+                "entryId": "ja:char:ji",
+                "relation": "reading-kana",
+                "position": 0
+            },
+            {
+                "entryId": "ja:char:n",
+                "relation": "reading-kana",
+                "position": 1
+            },
+            {
+                "entryId": "ja:def:reading-jin",
+                "relation": "definitions"
+            }
+        ],
+        "hidden": true,
+        "class": "reading:pronunciation"
+    },
+    {
+        "id": "ja:word:reading-nin",
+        "label": "にん",
+        "fields": {
+            "jlpt_level": "N5",
+            "pronunciation": ["にん"]
+        },
+        "references": [
+            {
+                "entryId": "ja:char:ni",
+                "relation": "reading-kana",
+                "position": 0
+            },
+            {
+                "entryId": "ja:char:n",
+                "relation": "reading-kana",
+                "position": 1
+            },
+            {
+                "entryId": "ja:def:reading-nin",
+                "relation": "definitions"
+            }
+        ],
+        "hidden": true,
+        "class": "reading:pronunciation"
+    },
+    {
+        "id": "ja:word:reading-hito",
+        "label": "ひと",
+        "fields": {
+            "jlpt_level": "N5",
+            "pronunciation": ["ひと"]
+        },
+        "references": [
+            {
+                "entryId": "ja:char:hi",
+                "relation": "reading-kana",
+                "position": 0
+            },
+            {
+                "entryId": "ja:char:to",
+                "relation": "reading-kana",
+                "position": 1
+            },
+            {
+                "entryId": "ja:def:reading-hito",
+                "relation": "definitions"
+            }
+        ],
+        "hidden": true,
+        "class": "reading:pronunciation"
+    },
+    {
+        "id": "ja:word:suki",
+        "label": "好き",
+        "fields": {
+            "jlpt_level": "N5",
+            "pronunciation": ["すき"]
+        },
+        "references": [
+            {
+                "entryId": "ja:kanji:core-e5a5bd",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:def:suki",
+                "relation": "definitions"
+            },
+            {
+                "entryId": "ja:word:pronunciation-suki",
+                "relation": "pronunciation-readings",
+                "position": 0
+            }
+        ],
+        "class": "lexical:adjective"
+    }
+]
