@@ -457,3 +457,10 @@ Die künstliche Abhängigkeitsbeziehung von Kanji zu Kana wurde entfernt. Kana-K
 Kanji-Aussprachelinks verweisen jetzt auf eigene reine Kana-Lesungsdatensätze statt auf vollständige sichtbare Wörter. `好` zeigt und verknüpft daher `す`, während der getrennte Aussprache-Wrapper von `好き` das `す` mit dem Suffix `き` zusammensetzt; eigenständige Kanji-Wörter verwenden dieselbe zweistufige Grenze ohne gleich bezeichnete Eltern.
 
 - [6cb7ca7](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/6cb7ca7)
+
+## Kurventreue Kana-Strichmuster
+
+Alle paketierten Kana- und Kanji-Strichmuster wurden aus festgelegten, nach Unicode benannten KanjiVG-SVG-Pfaden neu erzeugt. Der moduleigene Sampler unterteilt kubische und quadratische Kurven vor der Abstandsabtastung und bewahrt dadurch Wendungen und Schleifen wie im zweiten Strich von `え`, statt sie auf irreführende gerade Segmente zu reduzieren.
+
+- [1668b5f](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/1668b5f)
+- [5002586](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/5002586)

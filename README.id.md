@@ -191,7 +191,7 @@ Detail pelafalan kalimat menggunakan kontrak `linkRelationships` terkini untuk m
 
 ## Latihan menulis berpanduan goresan
 
-Setiap kartu Kana dan Kanji kini memiliki `strokePattern` wajib dengan koordinat ternormalisasi, sampel waktu monotonik berurutan, dan toleransi latihan yang kompatibel dengan kontrak menggambar Study Library terbaru dari Cognis PR #226. Pola tersebut diturunkan dari KanjiVG serta mempertahankan sumber dan atribusi CC BY-SA 3.0 dalam manifes konten.
+Setiap kartu Kana dan Kanji kini memiliki `strokePattern` wajib dengan koordinat ternormalisasi, sampel waktu monotonik berurutan, dan toleransi latihan yang kompatibel dengan kontrak menggambar Study Library terbaru dari Cognis PR #226. Pola dibuat ulang langsung dari jalur KanjiVG bernama Unicode dengan pengambilan sampel yang mempertahankan kurva, sehingga belokan dan lingkaran sesuai dengan glif yang ditampilkan. Sumber dan atribusi CC BY-SA 3.0 tetap dipertahankan dalam manifes konten.
 
 ## Penyedia pola goresan runtime
 

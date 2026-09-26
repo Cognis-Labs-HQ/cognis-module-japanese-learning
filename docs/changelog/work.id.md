@@ -457,3 +457,10 @@ Relasi dependensi buatan dari Kanji ke Kana telah dihapus. Kartu Kana kini hanya
 Tautan pelafalan Kanji kini menargetkan catatan bacaan khusus yang hanya berisi Kana, bukan kata terlihat lengkap. Karena itu `好` menampilkan dan menautkan `す`, sedangkan pembungkus pelafalan `好き` yang terpisah menyusun `す` dengan sufiks `き`; kata Kanji mandiri memakai batas dua tingkat yang sama tanpa induk berlabel ganda.
 
 - [6cb7ca7](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/6cb7ca7)
+
+## Pola Goresan Kana yang Mempertahankan Kurva
+
+Semua pola goresan Kana dan Kanji dalam paket dibuat ulang dari jalur SVG KanjiVG bernama Unicode yang dipatok. Pengambil sampel milik modul kini membagi kurva kubik dan kuadratik sebelum pengambilan sampel berdasarkan jarak, sehingga belokan dan lingkaran seperti goresan kedua `え` tetap dipertahankan dan tidak disederhanakan menjadi segmen lurus yang menyesatkan.
+
+- [1668b5f](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/1668b5f)
+- [5002586](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/5002586)

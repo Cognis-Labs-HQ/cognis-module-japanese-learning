@@ -457,3 +457,10 @@ Removed the synthetic Kanji-to-Kana dependency relationship. Kana cards now list
 Kanji pronunciation links now target dedicated Kana-only reading records rather than complete visible words. `好` therefore presents and links `す`, while the separate `好き` pronunciation wrapper composes `す` with the suffix `き`; standalone Kanji words use the same two-level boundary without duplicate-labelled parents.
 
 - [6cb7ca7](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/6cb7ca7)
+
+## Curve-Faithful Kana Stroke Patterns
+
+Regenerated every packaged Kana and Kanji stroke pattern from pinned Unicode-named KanjiVG SVG paths. The module-owned sampler now subdivides cubic and quadratic curves before distance sampling, preserving directional turns and loops such as the second stroke of `え` instead of reducing them to misleading straight segments.
+
+- [1668b5f](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/1668b5f)
+- [5002586](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/5002586)

@@ -1,6 +1,6 @@
 {
     "name": "@cognis/study-language-ja",
-    "version": "2.2.43",
+    "version": "2.2.44",
     "private": false,
     "type": "module",
     "scripts": {
@@ -8,7 +8,8 @@
         "lint": "node ./tooling/scripts/lint-placeholder.mjs && node ./tooling/scripts/lint-readable.mjs",
         "check:manifest": "node scripts/validate-manifest.js",
         "manifest:hashes": "node scripts/update-manifest-hashes.js",
-        "check": "npm test && npm run lint && npm run check:manifest"
+        "check": "npm test && npm run lint && npm run check:manifest",
+        "stroke-patterns:update": "node scripts/update-stroke-patterns.js"
     },
     "devDependencies": {
         "prettier": "^3.9.6"

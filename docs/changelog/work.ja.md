@@ -457,3 +457,10 @@ Bootstrap は注入済みの公開 `study:library:provider` ケイパビリテ�
 漢字の発音リンクは、表示語彙全体ではなく、その漢字専用の純粋なかな読みレコードを参照するようになりました。そのため `好` は `す` を表示してリンクし、別の `好き` 発音ラッパーが `す` と接尾辞 `き` を構成します。単独漢字語も同じ二段階の境界を使い、同名の親が重複しません。
 
 - [6cb7ca7](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/6cb7ca7)
+
+## 曲線に忠実なかな筆順パターン
+
+パッケージ内のすべてのかな・漢字の筆順パターンを、固定した Unicode 名の KanjiVG SVG パスから再生成しました。モジュール内のサンプラーは距離サンプリング前に三次・二次曲線を分割し、`え` の第2画のような折り返しや輪を、誤解を招く直線へ単純化せず保持します。
+
+- [1668b5f](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/1668b5f)
+- [5002586](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/5002586)

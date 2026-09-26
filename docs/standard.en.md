@@ -192,7 +192,7 @@ A sentence pronunciation input must declare every constituent relationship that 
 
 ## Stroke pattern metadata
 
-Every provider-authored writing-unit card must include an immutable required `strokePattern`. Use `coordinateSystem: "normalized"`; keep all point coordinates within 0–1, point times monotonic inside each ordered stroke, optional pressure within 0–1, and tolerance within 0–100. Preserve attribution for any external stroke source in content-manifest metadata.
+Every provider-authored writing-unit card must include an immutable required `strokePattern`. Use `coordinateSystem: "normalized"`; keep all point coordinates within 0–1, point times monotonic inside each ordered stroke, optional pressure within 0–1, and tolerance within 0–100. Preserve attribution for any external stroke source in content-manifest metadata. Generate packaged patterns from the Unicode-named KanjiVG paths with enough cubic and quadratic subdivisions to preserve every directional turn and loop; sparse endpoint-only approximations are invalid.
 
 ## Runtime stroke lookup
 

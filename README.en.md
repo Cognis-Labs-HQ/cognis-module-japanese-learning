@@ -191,7 +191,7 @@ Sentence pronunciation details use the current `linkRelationships` contract to d
 
 ## Stroke-guided writing practice
 
-Every Kana and Kanji card now carries a required `strokePattern` with normalized coordinates, ordered monotonic timing samples, and a practice tolerance compatible with the latest Study Library drawing contract from Cognis PR #226. The patterns are derived from KanjiVG and retain source and CC BY-SA 3.0 attribution in the content manifest.
+Every Kana and Kanji card now carries a required `strokePattern` with normalized coordinates, ordered monotonic timing samples, and a practice tolerance compatible with the latest Study Library drawing contract from Cognis PR #226. The patterns are regenerated directly from the Unicode-named KanjiVG paths with curve-preserving sampling, so turns and loops remain faithful to each displayed glyph. Source and CC BY-SA 3.0 attribution remain in the content manifest.
 
 ## Runtime stroke-pattern provider
 

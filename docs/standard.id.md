@@ -192,7 +192,7 @@ Input pelafalan kalimat harus mendeklarasikan setiap hubungan unsur yang dapat m
 
 ## Metadata pola goresan
 
-Setiap kartu unit tulisan buatan penyedia wajib menyertakan `strokePattern` yang wajib dan tidak dapat diubah. Gunakan `coordinateSystem: "normalized"`; pertahankan seluruh koordinat titik dalam rentang 0–1, waktu titik monotonik di dalam setiap goresan berurutan, tekanan opsional dalam rentang 0–1, dan toleransi dalam rentang 0–100. Pertahankan atribusi setiap sumber goresan eksternal dalam metadata manifes konten.
+Setiap kartu unit tulisan buatan penyedia wajib menyertakan `strokePattern` yang wajib dan tidak dapat diubah. Gunakan `coordinateSystem: "normalized"`; pertahankan seluruh koordinat titik dalam rentang 0–1, waktu titik monotonik di dalam setiap goresan berurutan, tekanan opsional dalam rentang 0–1, dan toleransi dalam rentang 0–100. Pertahankan atribusi setiap sumber goresan eksternal dalam metadata manifes konten. Buat pola paket dari jalur KanjiVG bernama Unicode dengan subdivisi kurva kubik dan kuadratik yang cukup untuk mempertahankan setiap belokan dan lingkaran; pendekatan jarang yang hanya memakai titik akhir tidak valid.
 
 ## Pencarian goresan runtime
 

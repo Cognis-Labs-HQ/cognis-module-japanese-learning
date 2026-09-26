@@ -191,7 +191,7 @@ Die Aussprachedetails eines Satzes verwenden den aktuellen `linkRelationships`-V
 
 ## Strichgeführte Schreibübungen
 
-Jede Kana- und Kanji-Karte enthält nun ein erforderliches `strokePattern` mit normalisierten Koordinaten, geordneten monotonen Zeitwerten und einer Übungstoleranz, die mit dem aktuellen Zeichenvertrag der Study Library aus Cognis PR #226 kompatibel ist. Die Muster wurden aus KanjiVG abgeleitet; Quelle und CC-BY-SA-3.0-Namensnennung bleiben im Inhaltsmanifest erhalten.
+Jede Kana- und Kanji-Karte enthält nun ein erforderliches `strokePattern` mit normalisierten Koordinaten, geordneten monotonen Zeitwerten und einer Übungstoleranz, die mit dem aktuellen Zeichenvertrag der Study Library aus Cognis PR #226 kompatibel ist. Die Muster werden direkt aus den nach Unicode benannten KanjiVG-Pfaden mit kurventreuer Abtastung neu erzeugt, sodass Wendungen und Schleifen dem angezeigten Zeichen entsprechen. Quelle und CC-BY-SA-3.0-Namensnennung bleiben im Inhaltsmanifest erhalten.
 
 ## Laufzeit-Anbieter für Strichmuster
 

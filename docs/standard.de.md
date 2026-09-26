@@ -192,7 +192,7 @@ Die Eingabe einer Satzaussprache muss jede Bestandteilsbeziehung deklarieren, di
 
 ## Strichmuster-Metadaten
 
-Jede vom Anbieter erstellte Schreibzeichenkarte muss ein unveränderliches erforderliches `strokePattern` enthalten. Verwende `coordinateSystem: "normalized"`; halte alle Punktkoordinaten im Bereich 0–1, die Punktzeiten innerhalb jedes geordneten Strichs monoton, optionalen Druck im Bereich 0–1 und die Toleranz im Bereich 0–100. Bewahre die Namensnennung externer Strichquellen in den Metadaten des Inhaltsmanifests auf.
+Jede vom Anbieter erstellte Schreibzeichenkarte muss ein unveränderliches erforderliches `strokePattern` enthalten. Verwende `coordinateSystem: "normalized"`; halte alle Punktkoordinaten im Bereich 0–1, die Punktzeiten innerhalb jedes geordneten Strichs monoton, optionalen Druck im Bereich 0–1 und die Toleranz im Bereich 0–100. Bewahre die Namensnennung externer Strichquellen in den Metadaten des Inhaltsmanifests auf. Erzeuge paketierte Muster aus den nach Unicode benannten KanjiVG-Pfaden mit genügend kubischen und quadratischen Unterteilungen, um jede Wendung und Schleife zu erhalten; spärliche Näherungen nur über Endpunkte sind ungültig.
 
 ## Laufzeit-Suche nach Strichmustern
 

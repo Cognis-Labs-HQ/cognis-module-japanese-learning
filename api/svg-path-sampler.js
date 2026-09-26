@@ -113,9 +113,9 @@ function pathPolyline(pathData) {
             const controlOne = point(0, 1);
             const controlTwo = point(2, 3);
             const end = point(4, 5);
-            for (const progress of [0.25, 0.5, 0.75, 1])
+            for (let step = 1; step <= 16; step += 1)
                 points.push(
-                    curvePoint(current, controlOne, controlTwo, end, progress),
+                    curvePoint(current, controlOne, controlTwo, end, step / 16),
                 );
             current = end;
             previousControl = controlTwo;
@@ -128,17 +128,17 @@ function pathPolyline(pathData) {
                 : { ...current };
             const controlTwo = point(0, 1);
             const end = point(2, 3);
-            for (const progress of [0.25, 0.5, 0.75, 1])
+            for (let step = 1; step <= 16; step += 1)
                 points.push(
-                    curvePoint(current, controlOne, controlTwo, end, progress),
+                    curvePoint(current, controlOne, controlTwo, end, step / 16),
                 );
             current = end;
             previousControl = controlTwo;
         } else if (upper === "Q") {
             const control = point(0, 1);
             const end = point(2, 3);
-            for (const progress of [0.25, 0.5, 0.75, 1])
-                points.push(quadraticPoint(current, control, end, progress));
+            for (let step = 1; step <= 12; step += 1)
+                points.push(quadraticPoint(current, control, end, step / 12));
             current = end;
             previousControl = control;
         } else if (upper === "A") {
