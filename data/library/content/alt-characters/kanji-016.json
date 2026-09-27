@@ -3,7 +3,7 @@
         "id": "ja:kanji:core-e5ada6",
         "label": "学",
         "fields": {
-            "pronunciation": ["がく"],
+            "pronunciation": ["がく", "まな"],
             "stroke_pattern": {
                 "coordinateSystem": "normalized",
                 "tolerance": 60,
@@ -342,25 +342,43 @@
             {
                 "entryId": "ja:def:kanji-core-e5ada6",
                 "relation": "definitions"
-            },
-            {
-                "entryId": "ja:char:ga",
-                "relation": "readings",
-                "position": 0
-            },
-            {
-                "entryId": "ja:char:ku",
-                "relation": "readings",
-                "position": 1
             }
         ],
-        "class": "writing:kanji"
+        "class": "writing:kanji",
+        "referenceGroups": {
+            "readings": [
+                [
+                    {
+                        "entryId": "ja:char:ga",
+                        "relation": "readings",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:ku",
+                        "relation": "readings",
+                        "position": 1
+                    }
+                ],
+                [
+                    {
+                        "entryId": "ja:char:ma",
+                        "relation": "readings",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:na",
+                        "relation": "readings",
+                        "position": 1
+                    }
+                ]
+            ]
+        }
     },
     {
         "id": "ja:kanji:core-e6a0a1",
         "label": "校",
         "fields": {
-            "pronunciation": ["こう"],
+            "pronunciation": ["こう", "きょう"],
             "stroke_pattern": {
                 "coordinateSystem": "normalized",
                 "tolerance": 60,
@@ -752,18 +770,36 @@
             {
                 "entryId": "ja:def:kanji-core-e6a0a1",
                 "relation": "definitions"
-            },
-            {
-                "entryId": "ja:char:ko",
-                "relation": "readings",
-                "position": 0
-            },
-            {
-                "entryId": "ja:char:u",
-                "relation": "readings",
-                "position": 1
             }
         ],
-        "class": "writing:kanji"
+        "class": "writing:kanji",
+        "referenceGroups": {
+            "readings": [
+                [
+                    {
+                        "entryId": "ja:char:ko",
+                        "relation": "readings",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:u",
+                        "relation": "readings",
+                        "position": 1
+                    }
+                ],
+                [
+                    {
+                        "entryId": "ja:char:kyo",
+                        "relation": "readings",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:u",
+                        "relation": "readings",
+                        "position": 1
+                    }
+                ]
+            ]
+        }
     }
 ]

@@ -488,3 +488,9 @@ Restored the romanized pronunciation shown on compact Kana cards without breakin
 Corrected Kana pronunciation to contain only Hepburn-style romanization. Learners now see `a` as the pronunciation of `あ` or `ア`, never the same symbol repeated as its own pronunciation; higher-layer Japanese spellings continue to use ordered Kana labels.
 
 - [46d74ae](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/46d74ae)
+
+## Grouped Kana Pronunciation References
+
+Restored alternate Kanji readings and represented every Kanji and Vocabulary pronunciation as its own nested sequence of ordered Kana references. The schema marks these fields as `multi_value` and their relationships as grouped, while Jisho suggestions preserve the same structure for the forthcoming Cognis core support.
+
+- [9bbe068](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/9bbe068)

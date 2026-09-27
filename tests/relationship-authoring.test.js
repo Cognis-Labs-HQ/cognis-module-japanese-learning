@@ -16,7 +16,16 @@ function readLayer(layer) {
     );
     return readdirSync(directory)
         .filter((name) => name.endsWith(".json"))
-        .flatMap((name) => readJson(`data/library/content/${layer}/${name}`));
+        .flatMap((name) => readJson(`data/library/content/${layer}/${name}`))
+        .map((entry) => ({
+            ...entry,
+            references: [
+                ...(entry.references ?? []),
+                ...Object.values(entry.referenceGroups ?? {}).flatMap(
+                    (groups) => groups[0] ?? [],
+                ),
+            ],
+        }));
 }
 
 const words = readLayer("words");

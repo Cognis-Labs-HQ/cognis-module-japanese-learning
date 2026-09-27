@@ -3,7 +3,7 @@
         "id": "ja:kanji:core-walk",
         "label": "歩",
         "fields": {
-            "pronunciation": ["ある"],
+            "pronunciation": ["ある", "あゆ", "ほ", "ぶ", "ふ"],
             "stroke_pattern": {
                 "coordinateSystem": "normalized",
                 "tolerance": 60,
@@ -317,25 +317,64 @@
             {
                 "entryId": "ja:def:kanji-core-walk",
                 "relation": "definitions"
-            },
-            {
-                "entryId": "ja:char:a",
-                "relation": "readings",
-                "position": 0
-            },
-            {
-                "entryId": "ja:char:ru",
-                "relation": "readings",
-                "position": 1
             }
         ],
-        "class": "writing:kanji"
+        "class": "writing:kanji",
+        "referenceGroups": {
+            "readings": [
+                [
+                    {
+                        "entryId": "ja:char:a",
+                        "relation": "readings",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:ru",
+                        "relation": "readings",
+                        "position": 1
+                    }
+                ],
+                [
+                    {
+                        "entryId": "ja:char:a",
+                        "relation": "readings",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:yu",
+                        "relation": "readings",
+                        "position": 1
+                    }
+                ],
+                [
+                    {
+                        "entryId": "ja:char:ho",
+                        "relation": "readings",
+                        "position": 0
+                    }
+                ],
+                [
+                    {
+                        "entryId": "ja:char:bu",
+                        "relation": "readings",
+                        "position": 0
+                    }
+                ],
+                [
+                    {
+                        "entryId": "ja:char:fu",
+                        "relation": "readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
     },
     {
         "id": "ja:kanji:core-e78cab",
         "label": "猫",
         "fields": {
-            "pronunciation": ["ねこ"],
+            "pronunciation": ["ねこ", "びょう"],
             "stroke_pattern": {
                 "coordinateSystem": "normalized",
                 "tolerance": 60,
@@ -831,18 +870,36 @@
             {
                 "entryId": "ja:def:kanji-core-e78cab",
                 "relation": "definitions"
-            },
-            {
-                "entryId": "ja:char:ne",
-                "relation": "readings",
-                "position": 0
-            },
-            {
-                "entryId": "ja:char:ko",
-                "relation": "readings",
-                "position": 1
             }
         ],
-        "class": "writing:kanji"
+        "class": "writing:kanji",
+        "referenceGroups": {
+            "readings": [
+                [
+                    {
+                        "entryId": "ja:char:ne",
+                        "relation": "readings",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:ko",
+                        "relation": "readings",
+                        "position": 1
+                    }
+                ],
+                [
+                    {
+                        "entryId": "ja:char:byo",
+                        "relation": "readings",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:u",
+                        "relation": "readings",
+                        "position": 1
+                    }
+                ]
+            ]
+        }
     }
 ]

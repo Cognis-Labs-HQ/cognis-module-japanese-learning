@@ -3,7 +3,7 @@
         "id": "ja:kanji:core-e7b499",
         "label": "紙",
         "fields": {
-            "pronunciation": ["かみ"],
+            "pronunciation": ["かみ", "し"],
             "stroke_pattern": {
                 "coordinateSystem": "normalized",
                 "tolerance": 60,
@@ -445,18 +445,31 @@
             {
                 "entryId": "ja:def:kanji-core-e7b499",
                 "relation": "definitions"
-            },
-            {
-                "entryId": "ja:char:ka",
-                "relation": "readings",
-                "position": 0
-            },
-            {
-                "entryId": "ja:char:mi",
-                "relation": "readings",
-                "position": 1
             }
         ],
-        "class": "writing:kanji"
+        "class": "writing:kanji",
+        "referenceGroups": {
+            "readings": [
+                [
+                    {
+                        "entryId": "ja:char:ka",
+                        "relation": "readings",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:mi",
+                        "relation": "readings",
+                        "position": 1
+                    }
+                ],
+                [
+                    {
+                        "entryId": "ja:char:shi",
+                        "relation": "readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
     }
 ]

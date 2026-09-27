@@ -6,8 +6,8 @@ const CONTENT_PACK = Object.freeze({
     id: "japanese-core",
     publisher: "Cognis Labs HQ",
     namespace: "ja",
-    version: "2.2.48",
-    contentRevision: "2026-09-27.4",
+    version: "2.2.49",
+    contentRevision: "2026-09-27.5",
     schema: "schema.json",
     content: "content",
     protected: true,
@@ -26,6 +26,14 @@ const CONTENT_PACK = Object.freeze({
                     "alt-characters.stroke_pattern",
                 ]),
             }),
+            Object.freeze({
+                id: "kanjidic2-via-kanjiapi",
+                url: "https://kanjiapi.dev/",
+                license: "EDRDG Electronic Dictionary Licence",
+                attribution:
+                    "Electronic Dictionary Research and Development Group",
+                derivedFields: Object.freeze(["alt-characters.pronunciation"]),
+            }),
         ]),
     }),
     license: Object.freeze({
@@ -41,7 +49,7 @@ const LANGUAGE = Object.freeze({
     languageCode: "ja",
     languageName: "日本語",
     languageFlag: "🇯🇵",
-    version: "2.2.48",
+    version: "2.2.49",
     package: CONTENT_PACK,
     childComponents: [],
 });

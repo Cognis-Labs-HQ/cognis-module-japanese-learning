@@ -488,3 +488,9 @@ Die romanisierte Aussprache auf kompakten Kana-Karten wurde wiederhergestellt, o
 Die Kana-Aussprache enthält jetzt ausschließlich die Hepburn-Umschrift. Lernende sehen nun `a` als Aussprache von `あ` oder `ア` und niemals dasselbe Zeichen als seine eigene Aussprache; japanische Schreibweisen höherer Ebenen verwenden weiterhin geordnete Kana-Bezeichnungen.
 
 - [46d74ae](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/46d74ae)
+
+## Gruppierte Kana-Ausspracheverweise
+
+Alternative Kanji-Lesungen wurden wiederhergestellt, und jede Aussprache von Kanji und Wortschatz wird als eigene verschachtelte Folge geordneter Kana-Verweise dargestellt. Das Schema markiert diese Felder als `multi_value` und ihre Beziehungen als gruppiert; auch Jisho-Vorschläge bewahren dieselbe Struktur für die kommende Unterstützung im Cognis-Kern.
+
+- [9bbe068](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/9bbe068)

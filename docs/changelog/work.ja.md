@@ -488,3 +488,9 @@ Bootstrap は注入済みの公開 `study:library:provider` ケイパビリテ�
 かなの発音値をヘボン式ローマ字だけに修正しました。学習者には `あ` や `ア` の発音として `a` が表示され、同じ記号を発音として繰り返すことはありません。上位層の日本語綴りは引き続き順序付きかなラベルを使用します。
 
 - [46d74ae](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/46d74ae)
+
+## グループ化したかな発音参照
+
+漢字の別読みを復元し、漢字と語彙の各発音を、順序付きかな参照の独立した入れ子シーケンスとして表現しました。スキーマはこれらのフィールドを `multi_value`、関係をグループ化済みとして宣言し、Jisho の候補も今後の Cognis コア対応に向けて同じ構造を保持します。
+
+- [9bbe068](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/9bbe068)

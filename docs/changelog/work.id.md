@@ -488,3 +488,9 @@ Pelafalan berhuruf Latin pada kartu Kana ringkas dipulihkan tanpa merusak bacaan
 Pelafalan Kana dikoreksi agar hanya berisi romanisasi gaya Hepburn. Pelajar kini melihat `a` sebagai pelafalan `あ` atau `ア`, bukan simbol yang sama sebagai pelafalannya sendiri; ejaan Jepang pada lapisan lebih tinggi tetap memakai label Kana terurut.
 
 - [46d74ae](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/46d74ae)
+
+## Referensi Pelafalan Kana Berkelompok
+
+Bacaan alternatif Kanji dipulihkan dan setiap pelafalan Kanji serta Kosakata direpresentasikan sebagai urutan bertingkat tersendiri dari referensi Kana terurut. Skema menandai bidang ini sebagai `multi_value` dan relasinya sebagai berkelompok, sedangkan saran Jisho mempertahankan struktur yang sama untuk dukungan Cognis core mendatang.
+
+- [9bbe068](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/9bbe068)

@@ -3,7 +3,7 @@
         "id": "ja:kanji:core-e7a59e",
         "label": "神",
         "fields": {
-            "pronunciation": ["かみ"],
+            "pronunciation": ["かみ", "かん", "こう", "しん", "じん"],
             "stroke_pattern": {
                 "coordinateSystem": "normalized",
                 "tolerance": 60,
@@ -426,25 +426,79 @@
             {
                 "entryId": "ja:def:kanji-core-e7a59e",
                 "relation": "definitions"
-            },
-            {
-                "entryId": "ja:char:ka",
-                "relation": "readings",
-                "position": 0
-            },
-            {
-                "entryId": "ja:char:mi",
-                "relation": "readings",
-                "position": 1
             }
         ],
-        "class": "writing:kanji"
+        "class": "writing:kanji",
+        "referenceGroups": {
+            "readings": [
+                [
+                    {
+                        "entryId": "ja:char:ka",
+                        "relation": "readings",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:mi",
+                        "relation": "readings",
+                        "position": 1
+                    }
+                ],
+                [
+                    {
+                        "entryId": "ja:char:ka",
+                        "relation": "readings",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:n",
+                        "relation": "readings",
+                        "position": 1
+                    }
+                ],
+                [
+                    {
+                        "entryId": "ja:char:ko",
+                        "relation": "readings",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:u",
+                        "relation": "readings",
+                        "position": 1
+                    }
+                ],
+                [
+                    {
+                        "entryId": "ja:char:shi",
+                        "relation": "readings",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:n",
+                        "relation": "readings",
+                        "position": 1
+                    }
+                ],
+                [
+                    {
+                        "entryId": "ja:char:ji",
+                        "relation": "readings",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:n",
+                        "relation": "readings",
+                        "position": 1
+                    }
+                ]
+            ]
+        }
     },
     {
         "id": "ja:kanji:core-e8bb8a",
         "label": "車",
         "fields": {
-            "pronunciation": ["しゃ"],
+            "pronunciation": ["しゃ", "くるま"],
             "stroke_pattern": {
                 "coordinateSystem": "normalized",
                 "tolerance": 60,
@@ -844,18 +898,36 @@
             {
                 "entryId": "ja:def:kanji-core-e8bb8a",
                 "relation": "definitions"
-            },
-            {
-                "entryId": "ja:char:shi",
-                "relation": "readings",
-                "position": 0
-            },
-            {
-                "entryId": "ja:char:small-ya",
-                "relation": "readings",
-                "position": 1
             }
         ],
-        "class": "writing:kanji"
+        "class": "writing:kanji",
+        "referenceGroups": {
+            "readings": [
+                [
+                    {
+                        "entryId": "ja:char:sha",
+                        "relation": "readings",
+                        "position": 0
+                    }
+                ],
+                [
+                    {
+                        "entryId": "ja:char:ku",
+                        "relation": "readings",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:ru",
+                        "relation": "readings",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:ma",
+                        "relation": "readings",
+                        "position": 2
+                    }
+                ]
+            ]
+        }
     }
 ]

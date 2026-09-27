@@ -17,7 +17,16 @@ function load(directory) {
             JSON.parse(
                 readFileSync(path.join(CONTENT_ROOT, directory, name), "utf8"),
             ),
-        );
+        )
+        .map((entry) => ({
+            ...entry,
+            references: [
+                ...(entry.references ?? []),
+                ...Object.values(entry.referenceGroups ?? {}).flatMap(
+                    (groups) => groups[0] ?? [],
+                ),
+            ],
+        }));
 }
 const vocabulary = load("words");
 const definitions = new Map(

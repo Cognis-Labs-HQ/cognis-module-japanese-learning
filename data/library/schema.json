@@ -1,6 +1,6 @@
 {
     "id": "japanese-core",
-    "version": 61,
+    "version": 62,
     "namespace": "ja",
     "language": "ja",
     "metadata": {
@@ -378,7 +378,8 @@
                     "input": {
                         "control": "tagList",
                         "linkRelationships": ["readings"]
-                    }
+                    },
+                    "multi_value": true
                 },
                 {
                     "id": "audio",
@@ -443,7 +444,8 @@
                     "minimum": 1,
                     "requiredTarget": true,
                     "resolverRole": "explicit",
-                    "presentationRole": "pronunciation"
+                    "presentationRole": "pronunciation",
+                    "grouped": true
                 },
                 {
                     "id": "definitions",
@@ -564,7 +566,8 @@
                     "input": {
                         "control": "tagList",
                         "linkRelationships": ["reading-kana"]
-                    }
+                    },
+                    "multi_value": true
                 },
                 {
                     "id": "jlpt_level",
@@ -664,7 +667,8 @@
                     "ordered": true,
                     "onDelete": "restrict",
                     "resolverRole": "explicit",
-                    "presentationRole": "pronunciation"
+                    "presentationRole": "pronunciation",
+                    "grouped": true
                 },
                 {
                     "id": "definitions",

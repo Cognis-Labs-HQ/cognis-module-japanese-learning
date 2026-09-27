@@ -3,7 +3,7 @@
         "id": "ja:kanji:core-e7aeb8",
         "label": "箸",
         "fields": {
-            "pronunciation": ["はし"],
+            "pronunciation": ["はし", "ちょ", "ちゃく"],
             "stroke_pattern": {
                 "coordinateSystem": "normalized",
                 "tolerance": 60,
@@ -565,18 +565,43 @@
             {
                 "entryId": "ja:def:kanji-core-e7aeb8",
                 "relation": "definitions"
-            },
-            {
-                "entryId": "ja:char:ha",
-                "relation": "readings",
-                "position": 0
-            },
-            {
-                "entryId": "ja:char:shi",
-                "relation": "readings",
-                "position": 1
             }
         ],
-        "class": "writing:kanji"
+        "class": "writing:kanji",
+        "referenceGroups": {
+            "readings": [
+                [
+                    {
+                        "entryId": "ja:char:ha",
+                        "relation": "readings",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:shi",
+                        "relation": "readings",
+                        "position": 1
+                    }
+                ],
+                [
+                    {
+                        "entryId": "ja:char:cho",
+                        "relation": "readings",
+                        "position": 0
+                    }
+                ],
+                [
+                    {
+                        "entryId": "ja:char:cha",
+                        "relation": "readings",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:ku",
+                        "relation": "readings",
+                        "position": 1
+                    }
+                ]
+            ]
+        }
     }
 ]

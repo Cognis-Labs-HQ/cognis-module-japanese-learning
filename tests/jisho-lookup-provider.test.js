@@ -69,9 +69,9 @@ test("Jisho provider resolves native content before network lookup", async () =>
     assert.equal(suggestion.label, "猫");
     assert.deepEqual(suggestion.fields.pronunciation, ["ねこ"]);
     assert.deepEqual(
-        suggestion.references
-            .filter(({ relation }) => relation === "reading-kana")
-            .map(({ entryId }) => entryId),
+        suggestion.referenceGroups["reading-kana"][0].map(
+            ({ entryId }) => entryId,
+        ),
         ["ja:char:ne", "ja:char:ko"],
     );
     assert.match(suggestion.provenance, /^cognis-japanese:/);
@@ -106,9 +106,9 @@ test("Jisho provider populates fields, detects links, and caches requests", asyn
     assert.equal(first.fields.pronunciation, undefined);
     assert.equal(first.fields.jlpt_level, "N2");
     assert.deepEqual(
-        first.references
-            .filter(({ relation }) => relation === "reading-kana")
-            .map(({ entryId, position }) => ({ entryId, position })),
+        first.referenceGroups["reading-kana"][0].map(
+            ({ entryId, position }) => ({ entryId, position }),
+        ),
         [
             { entryId: "ja:char:ne", position: 0 },
             { entryId: "ja:char:ko", position: 1 },

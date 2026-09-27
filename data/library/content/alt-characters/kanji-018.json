@@ -3,7 +3,7 @@
         "id": "ja:kanji:core-e58f8b",
         "label": "友",
         "fields": {
-            "pronunciation": ["とも"],
+            "pronunciation": ["とも", "ゆう"],
             "stroke_pattern": {
                 "coordinateSystem": "normalized",
                 "tolerance": 60,
@@ -301,25 +301,43 @@
             {
                 "entryId": "ja:def:kanji-core-e58f8b",
                 "relation": "definitions"
-            },
-            {
-                "entryId": "ja:char:to",
-                "relation": "readings",
-                "position": 0
-            },
-            {
-                "entryId": "ja:char:mo",
-                "relation": "readings",
-                "position": 1
             }
         ],
-        "class": "writing:kanji"
+        "class": "writing:kanji",
+        "referenceGroups": {
+            "readings": [
+                [
+                    {
+                        "entryId": "ja:char:to",
+                        "relation": "readings",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:mo",
+                        "relation": "readings",
+                        "position": 1
+                    }
+                ],
+                [
+                    {
+                        "entryId": "ja:char:yu",
+                        "relation": "readings",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:u",
+                        "relation": "readings",
+                        "position": 1
+                    }
+                ]
+            ]
+        }
     },
     {
         "id": "ja:kanji:core-e98194",
         "label": "達",
         "fields": {
-            "pronunciation": ["だち"],
+            "pronunciation": ["だち", "たち", "たつ", "だ"],
             "stroke_pattern": {
                 "coordinateSystem": "normalized",
                 "tolerance": 60,
@@ -784,18 +802,55 @@
             {
                 "entryId": "ja:def:kanji-core-e98194",
                 "relation": "definitions"
-            },
-            {
-                "entryId": "ja:char:da",
-                "relation": "readings",
-                "position": 0
-            },
-            {
-                "entryId": "ja:char:chi",
-                "relation": "readings",
-                "position": 1
             }
         ],
-        "class": "writing:kanji"
+        "class": "writing:kanji",
+        "referenceGroups": {
+            "readings": [
+                [
+                    {
+                        "entryId": "ja:char:da",
+                        "relation": "readings",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:chi",
+                        "relation": "readings",
+                        "position": 1
+                    }
+                ],
+                [
+                    {
+                        "entryId": "ja:char:ta",
+                        "relation": "readings",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:chi",
+                        "relation": "readings",
+                        "position": 1
+                    }
+                ],
+                [
+                    {
+                        "entryId": "ja:char:ta",
+                        "relation": "readings",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:tsu",
+                        "relation": "readings",
+                        "position": 1
+                    }
+                ],
+                [
+                    {
+                        "entryId": "ja:char:da",
+                        "relation": "readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
     }
 ]

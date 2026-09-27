@@ -537,18 +537,24 @@
             {
                 "entryId": "ja:def:kanji-core-e99bbb",
                 "relation": "definitions"
-            },
-            {
-                "entryId": "ja:char:de",
-                "relation": "readings",
-                "position": 0
-            },
-            {
-                "entryId": "ja:char:n",
-                "relation": "readings",
-                "position": 1
             }
         ],
-        "class": "writing:kanji"
+        "class": "writing:kanji",
+        "referenceGroups": {
+            "readings": [
+                [
+                    {
+                        "entryId": "ja:char:de",
+                        "relation": "readings",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:n",
+                        "relation": "readings",
+                        "position": 1
+                    }
+                ]
+            ]
+        }
     }
 ]

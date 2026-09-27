@@ -28,6 +28,12 @@ function loadRecords() {
                         ),
                     ).map((record) => ({
                         ...record,
+                        references: [
+                            ...(record.references ?? []),
+                            ...Object.values(
+                                record.referenceGroups ?? {},
+                            ).flatMap((groups) => groups[0] ?? []),
+                        ],
                         layer: directory.name,
                     })),
                 ),

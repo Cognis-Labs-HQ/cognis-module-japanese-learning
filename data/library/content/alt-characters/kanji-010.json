@@ -3,7 +3,7 @@
         "id": "ja:kanji:core-e99ba8",
         "label": "雨",
         "fields": {
-            "pronunciation": ["あめ"],
+            "pronunciation": ["あめ", "あま", "さめ", "う"],
             "stroke_pattern": {
                 "coordinateSystem": "normalized",
                 "tolerance": 60,
@@ -392,18 +392,55 @@
             {
                 "entryId": "ja:def:kanji-core-e99ba8",
                 "relation": "definitions"
-            },
-            {
-                "entryId": "ja:char:a",
-                "relation": "readings",
-                "position": 0
-            },
-            {
-                "entryId": "ja:char:me",
-                "relation": "readings",
-                "position": 1
             }
         ],
-        "class": "writing:kanji"
+        "class": "writing:kanji",
+        "referenceGroups": {
+            "readings": [
+                [
+                    {
+                        "entryId": "ja:char:a",
+                        "relation": "readings",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:me",
+                        "relation": "readings",
+                        "position": 1
+                    }
+                ],
+                [
+                    {
+                        "entryId": "ja:char:a",
+                        "relation": "readings",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:ma",
+                        "relation": "readings",
+                        "position": 1
+                    }
+                ],
+                [
+                    {
+                        "entryId": "ja:char:sa",
+                        "relation": "readings",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:me",
+                        "relation": "readings",
+                        "position": 1
+                    }
+                ],
+                [
+                    {
+                        "entryId": "ja:char:u",
+                        "relation": "readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
     }
 ]

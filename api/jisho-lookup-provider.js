@@ -55,12 +55,22 @@ function cloneReferences(references = []) {
     }));
 }
 
+function cloneReferenceGroups(referenceGroups = {}) {
+    return Object.fromEntries(
+        Object.entries(referenceGroups).map(([relation, groups]) => [
+            relation,
+            groups.map((group) => cloneReferences(group)),
+        ]),
+    );
+}
+
 function nativeSuggestions(index, layer, label) {
     return index.byLabel(layer, label).map((record) => ({
         provider: PROVIDER_ID,
         label: record.label,
         fields: structuredClone(record.fields ?? {}),
         references: cloneReferences(record.references),
+        referenceGroups: cloneReferenceGroups(record.referenceGroups),
         provenance: `cognis-japanese:${record.id}`,
         confidence: 1,
     }));
@@ -163,12 +173,13 @@ function jishoSuggestion(index, layer, label, data) {
         const level = jishoLevel(record.jlpt);
         if (level) fields.jlpt_level = level;
     }
-    const references =
+    const pronunciationReferences =
         layer === "words"
             ? wordReferences(index, form.reading)
             : layer === "alt-characters"
               ? kanjiReferences(index, readings)
               : [];
+    const references = [];
     if (layer !== "characters")
         references.push(...definitionReferences(index, record));
     return {
@@ -176,6 +187,15 @@ function jishoSuggestion(index, layer, label, data) {
         label: canonicalLabel,
         fields,
         references,
+        ...(pronunciationReferences.length
+            ? {
+                  referenceGroups: {
+                      [layer === "words" ? "reading-kana" : "readings"]: [
+                          pronunciationReferences,
+                      ],
+                  },
+              }
+            : {}),
         provenance: `jisho:${record.slug || encodeURIComponent(label)}`,
         confidence: canonicalLabel === label ? 0.95 : 0.9,
     };

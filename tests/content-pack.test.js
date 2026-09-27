@@ -57,6 +57,17 @@ function readJson(filePath) {
     return JSON.parse(readFileSync(filePath, "utf8"));
 }
 
+function withFlattenedReferenceGroups(record) {
+    const grouped = Object.values(record.referenceGroups ?? {}).flatMap(
+        (groups) => groups[0] ?? [],
+    );
+    return {
+        ...record,
+        authoredReferences: record.references ?? [],
+        references: [...(record.references ?? []), ...grouped],
+    };
+}
+
 function loadPack() {
     const manifest = readJson(path.join(PACK_ROOT, "manifest.json"));
     const schema = readJson(path.join(PACK_ROOT, manifest.schema));
@@ -78,7 +89,10 @@ function loadPack() {
                     fileName,
                 ),
             )) {
-                records.push({ ...record, layer: directory.name });
+                records.push({
+                    ...withFlattenedReferenceGroups(record),
+                    layer: directory.name,
+                });
             }
         }
     }
@@ -608,7 +622,7 @@ test("Kana variants include complete small, yoon, and sokuon sets", () => {
                 .filter(
                     ({ fields, references }) =>
                         fields.character_class === characterClass &&
-                        references?.[0].relation === relation,
+                        references?.[0]?.relation === relation,
                 )
                 .map(({ label }) => label);
             assert.deepEqual(
@@ -653,6 +667,54 @@ test("every vocabulary entry links directly to atomic Kana", () => {
             ),
         );
     }
+});
+
+test("Kanji and vocabulary preserve grouped Kana pronunciation references", () => {
+    const { schema, records } = loadPack();
+    const recordsById = new Map(records.map((record) => [record.id, record]));
+    let multipleKanjiReadings = 0;
+    for (const [layerId, relation] of [
+        ["alt-characters", "readings"],
+        ["words", "reading-kana"],
+    ]) {
+        const layer = schema.layers.find(({ id }) => id === layerId);
+        const pronunciation = layer.fields.find(
+            ({ id }) => id === "pronunciation",
+        );
+        assert.equal(pronunciation.multi_value, true);
+        assert.equal(
+            layer.relationships.find(({ id }) => id === relation).grouped,
+            true,
+        );
+        for (const record of records.filter(
+            ({ layer: id }) => id === layerId,
+        )) {
+            const groups = record.referenceGroups?.[relation];
+            assert.equal(groups?.length, record.fields.pronunciation.length);
+            assert.equal(
+                record.authoredReferences.some(
+                    (reference) => reference.relation === relation,
+                ),
+                false,
+            );
+            groups.forEach((group, groupIndex) => {
+                assert.deepEqual(
+                    group.map(({ position }) => position),
+                    group.map((_, position) => position),
+                );
+                assert.equal(
+                    group
+                        .map(({ entryId }) => recordsById.get(entryId).label)
+                        .join(""),
+                    record.fields.pronunciation[groupIndex],
+                    `${record.id} pronunciation ${groupIndex}`,
+                );
+            });
+            if (layerId === "alt-characters" && groups.length > 1)
+                multipleKanjiReadings += 1;
+        }
+    }
+    assert.ok(multipleKanjiReadings >= 30);
 });
 
 test("lexical and sentence pronunciation is host-derived", () => {

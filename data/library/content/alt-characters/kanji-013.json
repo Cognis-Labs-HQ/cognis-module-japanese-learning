@@ -3,7 +3,7 @@
         "id": "ja:kanji:core-e9abaa",
         "label": "髪",
         "fields": {
-            "pronunciation": ["かみ"],
+            "pronunciation": ["かみ", "はつ"],
             "stroke_pattern": {
                 "coordinateSystem": "normalized",
                 "tolerance": 60,
@@ -526,18 +526,36 @@
             {
                 "entryId": "ja:def:kanji-core-e9abaa",
                 "relation": "definitions"
-            },
-            {
-                "entryId": "ja:char:ka",
-                "relation": "readings",
-                "position": 0
-            },
-            {
-                "entryId": "ja:char:mi",
-                "relation": "readings",
-                "position": 1
             }
         ],
-        "class": "writing:kanji"
+        "class": "writing:kanji",
+        "referenceGroups": {
+            "readings": [
+                [
+                    {
+                        "entryId": "ja:char:ka",
+                        "relation": "readings",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:mi",
+                        "relation": "readings",
+                        "position": 1
+                    }
+                ],
+                [
+                    {
+                        "entryId": "ja:char:ha",
+                        "relation": "readings",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:tsu",
+                        "relation": "readings",
+                        "position": 1
+                    }
+                ]
+            ]
+        }
     }
 ]

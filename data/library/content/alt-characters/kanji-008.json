@@ -3,7 +3,7 @@
         "id": "ja:kanji:core-e6a98b",
         "label": "橋",
         "fields": {
-            "pronunciation": ["はし"],
+            "pronunciation": ["はし", "きょう"],
             "stroke_pattern": {
                 "coordinateSystem": "normalized",
                 "tolerance": 60,
@@ -599,18 +599,36 @@
             {
                 "entryId": "ja:def:kanji-core-e6a98b",
                 "relation": "definitions"
-            },
-            {
-                "entryId": "ja:char:ha",
-                "relation": "readings",
-                "position": 0
-            },
-            {
-                "entryId": "ja:char:shi",
-                "relation": "readings",
-                "position": 1
             }
         ],
-        "class": "writing:kanji"
+        "class": "writing:kanji",
+        "referenceGroups": {
+            "readings": [
+                [
+                    {
+                        "entryId": "ja:char:ha",
+                        "relation": "readings",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:shi",
+                        "relation": "readings",
+                        "position": 1
+                    }
+                ],
+                [
+                    {
+                        "entryId": "ja:char:kyo",
+                        "relation": "readings",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:u",
+                        "relation": "readings",
+                        "position": 1
+                    }
+                ]
+            ]
+        }
     }
 ]

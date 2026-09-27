@@ -3,7 +3,7 @@
         "id": "ja:kanji:core-e5b1b1",
         "label": "山",
         "fields": {
-            "pronunciation": ["やま"],
+            "pronunciation": ["やま", "さん", "せん"],
             "stroke_pattern": {
                 "coordinateSystem": "normalized",
                 "tolerance": 60,
@@ -202,25 +202,55 @@
             {
                 "entryId": "ja:def:kanji-core-e5b1b1",
                 "relation": "definitions"
-            },
-            {
-                "entryId": "ja:char:ya",
-                "relation": "readings",
-                "position": 0
-            },
-            {
-                "entryId": "ja:char:ma",
-                "relation": "readings",
-                "position": 1
             }
         ],
-        "class": "writing:kanji"
+        "class": "writing:kanji",
+        "referenceGroups": {
+            "readings": [
+                [
+                    {
+                        "entryId": "ja:char:ya",
+                        "relation": "readings",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:ma",
+                        "relation": "readings",
+                        "position": 1
+                    }
+                ],
+                [
+                    {
+                        "entryId": "ja:char:sa",
+                        "relation": "readings",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:n",
+                        "relation": "readings",
+                        "position": 1
+                    }
+                ],
+                [
+                    {
+                        "entryId": "ja:char:se",
+                        "relation": "readings",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:n",
+                        "relation": "readings",
+                        "position": 1
+                    }
+                ]
+            ]
+        }
     },
     {
         "id": "ja:kanji:core-e5b79d",
         "label": "川",
         "fields": {
-            "pronunciation": ["かわ"],
+            "pronunciation": ["かわ", "せん"],
             "stroke_pattern": {
                 "coordinateSystem": "normalized",
                 "tolerance": 60,
@@ -414,25 +444,43 @@
             {
                 "entryId": "ja:def:kanji-core-e5b79d",
                 "relation": "definitions"
-            },
-            {
-                "entryId": "ja:char:ka",
-                "relation": "readings",
-                "position": 0
-            },
-            {
-                "entryId": "ja:char:wa",
-                "relation": "readings",
-                "position": 1
             }
         ],
-        "class": "writing:kanji"
+        "class": "writing:kanji",
+        "referenceGroups": {
+            "readings": [
+                [
+                    {
+                        "entryId": "ja:char:ka",
+                        "relation": "readings",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:wa",
+                        "relation": "readings",
+                        "position": 1
+                    }
+                ],
+                [
+                    {
+                        "entryId": "ja:char:se",
+                        "relation": "readings",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:n",
+                        "relation": "readings",
+                        "position": 1
+                    }
+                ]
+            ]
+        }
     },
     {
         "id": "ja:kanji:core-e6b5b7",
         "label": "海",
         "fields": {
-            "pronunciation": ["うみ"],
+            "pronunciation": ["うみ", "かい"],
             "stroke_pattern": {
                 "coordinateSystem": "normalized",
                 "tolerance": 60,
@@ -870,18 +918,36 @@
             {
                 "entryId": "ja:def:kanji-core-e6b5b7",
                 "relation": "definitions"
-            },
-            {
-                "entryId": "ja:char:u",
-                "relation": "readings",
-                "position": 0
-            },
-            {
-                "entryId": "ja:char:mi",
-                "relation": "readings",
-                "position": 1
             }
         ],
-        "class": "writing:kanji"
+        "class": "writing:kanji",
+        "referenceGroups": {
+            "readings": [
+                [
+                    {
+                        "entryId": "ja:char:u",
+                        "relation": "readings",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:mi",
+                        "relation": "readings",
+                        "position": 1
+                    }
+                ],
+                [
+                    {
+                        "entryId": "ja:char:ka",
+                        "relation": "readings",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:i",
+                        "relation": "readings",
+                        "position": 1
+                    }
+                ]
+            ]
+        }
     }
 ]

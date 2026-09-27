@@ -3,7 +3,7 @@
         "id": "ja:kanji:go",
         "label": "語",
         "fields": {
-            "pronunciation": ["ご"],
+            "pronunciation": ["ご", "かた"],
             "stroke_pattern": {
                 "coordinateSystem": "normalized",
                 "tolerance": 60,
@@ -486,13 +486,31 @@
             {
                 "entryId": "ja:def:kanji-go",
                 "relation": "definitions"
-            },
-            {
-                "entryId": "ja:char:go",
-                "relation": "readings",
-                "position": 0
             }
         ],
-        "class": "writing:kanji"
+        "class": "writing:kanji",
+        "referenceGroups": {
+            "readings": [
+                [
+                    {
+                        "entryId": "ja:char:go",
+                        "relation": "readings",
+                        "position": 0
+                    }
+                ],
+                [
+                    {
+                        "entryId": "ja:char:ka",
+                        "relation": "readings",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:ta",
+                        "relation": "readings",
+                        "position": 1
+                    }
+                ]
+            ]
+        }
     }
 ]

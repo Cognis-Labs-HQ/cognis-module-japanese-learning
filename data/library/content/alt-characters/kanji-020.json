@@ -3,7 +3,7 @@
         "id": "ja:kanji:core-e7a781",
         "label": "私",
         "fields": {
-            "pronunciation": ["わたし"],
+            "pronunciation": ["わたし", "わたくし", "し"],
             "stroke_pattern": {
                 "coordinateSystem": "normalized",
                 "tolerance": 60,
@@ -338,30 +338,65 @@
             {
                 "entryId": "ja:def:kanji-core-e7a781",
                 "relation": "definitions"
-            },
-            {
-                "entryId": "ja:char:wa",
-                "relation": "readings",
-                "position": 0
-            },
-            {
-                "entryId": "ja:char:ta",
-                "relation": "readings",
-                "position": 1
-            },
-            {
-                "entryId": "ja:char:shi",
-                "relation": "readings",
-                "position": 2
             }
         ],
-        "class": "writing:kanji"
+        "class": "writing:kanji",
+        "referenceGroups": {
+            "readings": [
+                [
+                    {
+                        "entryId": "ja:char:wa",
+                        "relation": "readings",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:ta",
+                        "relation": "readings",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:shi",
+                        "relation": "readings",
+                        "position": 2
+                    }
+                ],
+                [
+                    {
+                        "entryId": "ja:char:wa",
+                        "relation": "readings",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:ta",
+                        "relation": "readings",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:ku",
+                        "relation": "readings",
+                        "position": 2
+                    },
+                    {
+                        "entryId": "ja:char:shi",
+                        "relation": "readings",
+                        "position": 3
+                    }
+                ],
+                [
+                    {
+                        "entryId": "ja:char:shi",
+                        "relation": "readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
     },
     {
         "id": "ja:kanji:core-e6b0b4",
         "label": "水",
         "fields": {
-            "pronunciation": ["みず"],
+            "pronunciation": ["みず", "すい"],
             "stroke_pattern": {
                 "coordinateSystem": "normalized",
                 "tolerance": 60,
@@ -589,25 +624,43 @@
             {
                 "entryId": "ja:def:kanji-core-e6b0b4",
                 "relation": "definitions"
-            },
-            {
-                "entryId": "ja:char:mi",
-                "relation": "readings",
-                "position": 0
-            },
-            {
-                "entryId": "ja:char:zu",
-                "relation": "readings",
-                "position": 1
             }
         ],
-        "class": "writing:kanji"
+        "class": "writing:kanji",
+        "referenceGroups": {
+            "readings": [
+                [
+                    {
+                        "entryId": "ja:char:mi",
+                        "relation": "readings",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:zu",
+                        "relation": "readings",
+                        "position": 1
+                    }
+                ],
+                [
+                    {
+                        "entryId": "ja:char:su",
+                        "relation": "readings",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:i",
+                        "relation": "readings",
+                        "position": 1
+                    }
+                ]
+            ]
+        }
     },
     {
         "id": "ja:kanji:core-e78aac",
         "label": "犬",
         "fields": {
-            "pronunciation": ["いぬ"],
+            "pronunciation": ["いぬ", "けん"],
             "stroke_pattern": {
                 "coordinateSystem": "normalized",
                 "tolerance": 60,
@@ -850,18 +903,36 @@
             {
                 "entryId": "ja:def:kanji-core-e78aac",
                 "relation": "definitions"
-            },
-            {
-                "entryId": "ja:char:i",
-                "relation": "readings",
-                "position": 0
-            },
-            {
-                "entryId": "ja:char:nu",
-                "relation": "readings",
-                "position": 1
             }
         ],
-        "class": "writing:kanji"
+        "class": "writing:kanji",
+        "referenceGroups": {
+            "readings": [
+                [
+                    {
+                        "entryId": "ja:char:i",
+                        "relation": "readings",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:nu",
+                        "relation": "readings",
+                        "position": 1
+                    }
+                ],
+                [
+                    {
+                        "entryId": "ja:char:ke",
+                        "relation": "readings",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:n",
+                        "relation": "readings",
+                        "position": 1
+                    }
+                ]
+            ]
+        }
     }
 ]

@@ -73,17 +73,18 @@ test("stroke metadata preserves KanjiVG attribution", () => {
     const manifest = JSON.parse(
         readFileSync(path.join(LIBRARY_ROOT, "manifest.json"), "utf8"),
     );
-    assert.deepEqual(manifest.metadata.sources, [
-        {
-            id: "kanjivg",
-            url: "https://kanjivg.tagaini.net/",
-            license: "CC-BY-SA-3.0",
-            attribution: "KanjiVG project contributors",
-            revision: "422b5538595676da918c288a4230cb5e22a1ee7e",
-            derivedFields: [
-                "characters.stroke_pattern",
-                "alt-characters.stroke_pattern",
-            ],
-        },
-    ]);
+    const kanjiVg = manifest.metadata.sources.find(
+        ({ id }) => id === "kanjivg",
+    );
+    assert.deepEqual(kanjiVg, {
+        id: "kanjivg",
+        url: "https://kanjivg.tagaini.net/",
+        license: "CC-BY-SA-3.0",
+        attribution: "KanjiVG project contributors",
+        revision: "422b5538595676da918c288a4230cb5e22a1ee7e",
+        derivedFields: [
+            "characters.stroke_pattern",
+            "alt-characters.stroke_pattern",
+        ],
+    });
 });
