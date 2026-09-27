@@ -482,3 +482,9 @@ Relasi kalimat diselaraskan dengan pemeriksaan awal ingest terbaru pada Cognis P
 Pelafalan berhuruf Latin pada kartu Kana ringkas dipulihkan tanpa merusak bacaan Jepang rekursif. Setiap Kana kini mempertahankan bentuk aslinya sebagai nilai pertama untuk derivasi pelafalan dan menyediakan romanisasi gaya Hepburn sebagai nilai tampilan berbeda yang dipertahankan oleh renderer Library terbaru.
 
 - [d6c2c48](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/d6c2c48)
+
+## Bunyi Kana untuk Pelajar
+
+Pelafalan Kana dikoreksi agar hanya berisi romanisasi gaya Hepburn. Pelajar kini melihat `a` sebagai pelafalan `あ` atau `ア`, bukan simbol yang sama sebagai pelafalannya sendiri; ejaan Jepang pada lapisan lebih tinggi tetap memakai label Kana terurut.
+
+- [46d74ae](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/46d74ae)

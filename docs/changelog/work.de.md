@@ -482,3 +482,9 @@ Die Satzbeziehungen wurden an die aktuelle Ingestions-Vorprüfung aus Cognis PR 
 Die romanisierte Aussprache auf kompakten Kana-Karten wurde wiederhergestellt, ohne die rekursiven japanischen Lesungen zu beeinträchtigen. Jedes Kana behält seine ursprüngliche Form zuerst für die Ausspracheableitung und stellt seine Hepburn-Umschrift als eigenen Anzeigewert bereit, den der aktuelle Library-Renderer beibehält.
 
 - [d6c2c48](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/d6c2c48)
+
+## Verständliche Kana-Laute
+
+Die Kana-Aussprache enthält jetzt ausschließlich die Hepburn-Umschrift. Lernende sehen nun `a` als Aussprache von `あ` oder `ア` und niemals dasselbe Zeichen als seine eigene Aussprache; japanische Schreibweisen höherer Ebenen verwenden weiterhin geordnete Kana-Bezeichnungen.
+
+- [46d74ae](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/46d74ae)

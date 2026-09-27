@@ -70,9 +70,9 @@ test("the authored graph derives pronunciation from atomic Kana", () => {
     for (const record of records) {
         const role = layersById.get(record.layer)?.semanticRole;
         if (role === "atomicWritingUnit") {
-            assert.equal(record.fields.pronunciation[0], record.label);
-            assert.match(record.fields.pronunciation[1], /^[a-z]+$/u);
-            assert.notEqual(record.fields.pronunciation[1], record.label);
+            assert.equal(record.fields.pronunciation.length, 1);
+            assert.match(record.fields.pronunciation[0], /^[a-z]+$/u);
+            assert.notEqual(record.fields.pronunciation[0], record.label);
         }
         if (role === "compoundWritingUnit") {
             assert.equal(

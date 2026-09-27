@@ -482,3 +482,9 @@ Bootstrap は注入済みの公開 `study:library:provider` ケイパビリテ�
 再帰的な日本語の読みを壊さずに、コンパクトなかなカードへローマ字発音を再表示しました。各かなは発音導出用の元表記を第 1 値として維持し、最新の Library レンダラーが表示する別値としてヘボン式ローマ字を提供します。
 
 - [d6c2c48](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/d6c2c48)
+
+## 学習者向けのかな発音
+
+かなの発音値をヘボン式ローマ字だけに修正しました。学習者には `あ` や `ア` の発音として `a` が表示され、同じ記号を発音として繰り返すことはありません。上位層の日本語綴りは引き続き順序付きかなラベルを使用します。
+
+- [46d74ae](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/46d74ae)

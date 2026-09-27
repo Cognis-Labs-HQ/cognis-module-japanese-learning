@@ -437,7 +437,9 @@ test("character classes distinguish hiragana and katakana variations", () => {
     );
     assert.ok(
         variations.every(
-            ({ fields, label }) => fields.pronunciation[0] === label,
+            ({ fields }) =>
+                fields.pronunciation.length === 1 &&
+                fields.pronunciation[0] === "a",
         ),
     );
 });

@@ -482,3 +482,9 @@ Aligned sentence relationships with the latest Cognis PR #226 ingestion prefligh
 Restored the romanized pronunciation shown on compact Kana cards without breaking recursive Japanese readings. Every Kana now keeps its native form first for pronunciation derivation and exposes its Hepburn-style romanization as the distinct display value retained by the latest Library renderer.
 
 - [d6c2c48](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/d6c2c48)
+
+## Learner-Facing Kana Sounds
+
+Corrected Kana pronunciation to contain only Hepburn-style romanization. Learners now see `a` as the pronunciation of `あ` or `ア`, never the same symbol repeated as its own pronunciation; higher-layer Japanese spellings continue to use ordered Kana labels.
+
+- [46d74ae](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/46d74ae)
