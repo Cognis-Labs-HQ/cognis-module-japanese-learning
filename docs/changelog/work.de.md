@@ -470,3 +470,9 @@ Alle paketierten Kana- und Kanji-Strichmuster wurden aus festgelegten, nach Unic
 Alle 84 ausgeblendeten, nur aus Zeichen bestehenden Wortschatz-Aussprache-Wrapper wurden entfernt. Atomare Kana sind nun die einzigen Aussprache-Endpunkte: Kanji und die 37 echten Wortschatzkarten verweisen direkt auf geordnete Kana, während Sätze nur echten Wortschatz und Partikeln referenzieren. Die Aussprachewerte von Wortschatz und Sätzen werden für die Anzeige aus diesem Graphen materialisiert und als Aussprachebeziehungen gekennzeichnet, sodass der geschriebene Satz nicht mehr unter seinem Titel wiederholt wird.
 
 - [40ce8d8](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/40ce8d8)
+
+## Validierung geordneter Sätze
+
+Die Satzbeziehungen wurden an die aktuelle Ingestions-Vorprüfung aus Cognis PR #226 angepasst. Geordnete `words` und `particles` sind wieder Kompositionsbeziehungen, sodass der Host jede Satzbezeichnung rekonstruieren und validieren kann, während die Aussprache weiterhin rekursiv aus diesen Bestandteilen abgeleitet wird.
+
+- [aff5962](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/aff5962)

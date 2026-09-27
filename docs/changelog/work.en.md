@@ -470,3 +470,9 @@ Regenerated every packaged Kana and Kanji stroke pattern from pinned Unicode-nam
 Removed all 84 hidden character-only Vocabulary pronunciation wrappers. Atomic Kana are now the sole pronunciation leaves: Kanji and the 37 real Vocabulary cards reference ordered Kana directly, while sentences reference only real Vocabulary and particles. Vocabulary and sentence pronunciation values are materialized from that graph for display and marked as pronunciation relationships, preventing the written sentence from being repeated beneath its title.
 
 - [40ce8d8](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/40ce8d8)
+
+## Ordered Sentence Validation
+
+Aligned sentence relationships with the latest Cognis PR #226 ingestion preflight. Ordered `words` and `particles` are composition relationships again, allowing the host to reconstruct and validate every sentence label while pronunciation remains recursively derived from those constituents.
+
+- [aff5962](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/aff5962)

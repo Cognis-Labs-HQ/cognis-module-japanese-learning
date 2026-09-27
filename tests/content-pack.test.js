@@ -288,14 +288,38 @@ test("writing units and sentence particles follow the current Library contract",
 });
 
 test("ordered sentence constituents completely resolve the sentence label", () => {
-    const { records } = loadPack();
+    const { schema, records } = loadPack();
     const entries = new Map(records.map((record) => [record.id, record]));
+    const sentenceLayer = schema.layers.find(
+        ({ semanticRole }) => semanticRole === "orderedLexicalSequence",
+    );
+    const layersById = new Map(schema.layers.map((layer) => [layer.id, layer]));
+    const constituentRelationships = new Set(
+        sentenceLayer.relationships
+            .filter((relationship) => {
+                const targetRole = layersById.get(
+                    relationship.targetLayer,
+                )?.semanticRole;
+                return (
+                    ["lexicalUnit", "particle"].includes(targetRole) &&
+                    [undefined, "composition"].includes(
+                        relationship.presentationRole,
+                    )
+                );
+            })
+            .map(({ id }) => id),
+    );
+    assert.deepEqual(constituentRelationships, new Set(["words", "particles"]));
     for (const sentence of records.filter(
         ({ layer }) => layer === "sentences",
     )) {
         const constituents = sentence.references
-            .filter(({ relation }) => ["words", "particles"].includes(relation))
+            .filter(({ relation }) => constituentRelationships.has(relation))
             .sort((left, right) => left.position - right.position);
+        assert.deepEqual(
+            constituents.map(({ position }) => position),
+            constituents.map((_, index) => index),
+        );
         assert.equal(
             constituents
                 .map(({ entryId }) => entries.get(entryId).label)
@@ -691,8 +715,8 @@ test("definitions stay semantic while resolvers describe compositions", () => {
             ["readings", "pronunciation"],
             ["reading-kana", "pronunciation"],
             ["kana-spelling", "alternateSpelling"],
-            ["words", "pronunciation"],
-            ["particles", "pronunciation"],
+            ["words", "composition"],
+            ["particles", "composition"],
         ]),
     );
 });
