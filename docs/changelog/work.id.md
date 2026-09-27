@@ -476,3 +476,9 @@ Seluruh 84 pembungkus pelafalan Kosakata tersembunyi yang hanya berisi karakter 
 Relasi kalimat diselaraskan dengan pemeriksaan awal ingest terbaru pada Cognis PR #226. `words` dan `particles` terurut kembali menjadi relasi komposisi sehingga host dapat merekonstruksi dan memvalidasi setiap label kalimat, sementara pelafalan tetap diturunkan secara rekursif dari unsur-unsur tersebut.
 
 - [aff5962](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/aff5962)
+
+## Pelafalan Kana Terlihat
+
+Pelafalan berhuruf Latin pada kartu Kana ringkas dipulihkan tanpa merusak bacaan Jepang rekursif. Setiap Kana kini mempertahankan bentuk aslinya sebagai nilai pertama untuk derivasi pelafalan dan menyediakan romanisasi gaya Hepburn sebagai nilai tampilan berbeda yang dipertahankan oleh renderer Library terbaru.
+
+- [d6c2c48](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/d6c2c48)

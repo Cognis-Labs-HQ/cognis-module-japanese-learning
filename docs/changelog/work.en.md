@@ -476,3 +476,9 @@ Removed all 84 hidden character-only Vocabulary pronunciation wrappers. Atomic K
 Aligned sentence relationships with the latest Cognis PR #226 ingestion preflight. Ordered `words` and `particles` are composition relationships again, allowing the host to reconstruct and validate every sentence label while pronunciation remains recursively derived from those constituents.
 
 - [aff5962](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/aff5962)
+
+## Visible Kana Pronunciations
+
+Restored the romanized pronunciation shown on compact Kana cards without breaking recursive Japanese readings. Every Kana now keeps its native form first for pronunciation derivation and exposes its Hepburn-style romanization as the distinct display value retained by the latest Library renderer.
+
+- [d6c2c48](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/d6c2c48)

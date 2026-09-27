@@ -476,3 +476,9 @@ Alle 84 ausgeblendeten, nur aus Zeichen bestehenden Wortschatz-Aussprache-Wrappe
 Die Satzbeziehungen wurden an die aktuelle Ingestions-Vorprüfung aus Cognis PR #226 angepasst. Geordnete `words` und `particles` sind wieder Kompositionsbeziehungen, sodass der Host jede Satzbezeichnung rekonstruieren und validieren kann, während die Aussprache weiterhin rekursiv aus diesen Bestandteilen abgeleitet wird.
 
 - [aff5962](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/aff5962)
+
+## Sichtbare Kana-Aussprache
+
+Die romanisierte Aussprache auf kompakten Kana-Karten wurde wiederhergestellt, ohne die rekursiven japanischen Lesungen zu beeinträchtigen. Jedes Kana behält seine ursprüngliche Form zuerst für die Ausspracheableitung und stellt seine Hepburn-Umschrift als eigenen Anzeigewert bereit, den der aktuelle Library-Renderer beibehält.
+
+- [d6c2c48](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/d6c2c48)

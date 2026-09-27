@@ -858,6 +858,23 @@ test("only the Kana layer requests minimal cards", () => {
     );
 });
 
+test("compact Kana cards retain a visible romanized pronunciation", () => {
+    const { schema, records } = loadPack();
+    const characterLayer = schema.layers.find(
+        ({ semanticRole }) => semanticRole === "atomicWritingUnit",
+    );
+    assert.equal(characterLayer.minimal, true);
+    for (const character of records.filter(
+        ({ layer }) => layer === characterLayer.id,
+    )) {
+        const displayedPronunciations = character.fields.pronunciation.filter(
+            (pronunciation) => pronunciation !== character.label,
+        );
+        assert.equal(displayedPronunciations.length, 1, character.id);
+        assert.match(displayedPronunciations[0], /^[a-z]+$/u, character.id);
+    }
+});
+
 test("non-character cards opt into required definition-backed display text", () => {
     const { schema, records } = loadPack();
     for (const layerId of ["words", "particles", "sentences"]) {

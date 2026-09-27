@@ -476,3 +476,9 @@ Bootstrap は注入済みの公開 `study:library:provider` ケイパビリテ�
 文の関係を Cognis PR #226 の最新取り込み事前検査に合わせました。順序付き `words` と `particles` を再び構成関係とし、発音を構成要素から再帰的に導出したまま、ホストが各文のラベルを再構成して検証できるようにしました。
 
 - [aff5962](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/aff5962)
+
+## かな発音の再表示
+
+再帰的な日本語の読みを壊さずに、コンパクトなかなカードへローマ字発音を再表示しました。各かなは発音導出用の元表記を第 1 値として維持し、最新の Library レンダラーが表示する別値としてヘボン式ローマ字を提供します。
+
+- [d6c2c48](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/d6c2c48)
