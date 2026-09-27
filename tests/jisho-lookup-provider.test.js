@@ -149,6 +149,27 @@ test("Jisho provider does not query invalid or unrelated input", async () => {
     assert.equal(requests, 0);
 });
 
+test("Jisho provider does not expose hidden pronunciation shims", async () => {
+    let requests = 0;
+    const provider = createJishoLookupProvider({
+        contentRoot,
+        async fetchImplementation() {
+            requests += 1;
+            return {
+                ok: true,
+                async json() {
+                    return { data: [] };
+                },
+            };
+        },
+    });
+    assert.deepEqual(
+        await provider.lookup({ schema, layer: wordLayer, label: "かみ" }),
+        [],
+    );
+    assert.equal(requests, 1);
+});
+
 test("Jisho integration registers through the generic Library provider", async () => {
     let registered;
     let removed = false;

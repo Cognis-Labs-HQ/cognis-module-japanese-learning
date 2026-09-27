@@ -65,15 +65,18 @@ function cloneReferenceGroups(referenceGroups = {}) {
 }
 
 function nativeSuggestions(index, layer, label) {
-    return index.byLabel(layer, label).map((record) => ({
-        provider: PROVIDER_ID,
-        label: record.label,
-        fields: structuredClone(record.fields ?? {}),
-        references: cloneReferences(record.references),
-        referenceGroups: cloneReferenceGroups(record.referenceGroups),
-        provenance: `cognis-japanese:${record.id}`,
-        confidence: 1,
-    }));
+    return index
+        .byLabel(layer, label)
+        .filter(({ hidden }) => hidden !== true)
+        .map((record) => ({
+            provider: PROVIDER_ID,
+            label: record.label,
+            fields: structuredClone(record.fields ?? {}),
+            references: cloneReferences(record.references),
+            referenceGroups: cloneReferenceGroups(record.referenceGroups),
+            provenance: `cognis-japanese:${record.id}`,
+            confidence: 1,
+        }));
 }
 
 function jishoLevel(tags = []) {

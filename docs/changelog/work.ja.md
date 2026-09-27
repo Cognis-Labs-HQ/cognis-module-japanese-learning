@@ -494,3 +494,9 @@ Bootstrap は注入済みの公開 `study:library:provider` ケイパビリテ�
 漢字の別読みを復元し、漢字と語彙の各発音を、順序付きかな参照の独立した入れ子シーケンスとして表現しました。スキーマはこれらのフィールドを `multi_value`、関係をグループ化済みとして宣言し、Jisho の候補も今後の Cognis コア対応に向けて同じ構造を保持します。
 
 - [9bbe068](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/9bbe068)
+
+## 非表示の語彙発音シム
+
+語彙の意味が表記漢字の定義と異なる場合に限り、非表示の発音レコードを復元しました。各シムは語彙固有の定義を持ち、該当する漢字表記をリンクし、グループ化されたかな参照へ解決します。定義が同一の語は直接かな経路を維持し、Lookup 候補には非表示レコードを含めません。
+
+- [448f99e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/448f99e)

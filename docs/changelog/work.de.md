@@ -494,3 +494,9 @@ Die Kana-Aussprache enthält jetzt ausschließlich die Hepburn-Umschrift. Lernen
 Alternative Kanji-Lesungen wurden wiederhergestellt, und jede Aussprache von Kanji und Wortschatz wird als eigene verschachtelte Folge geordneter Kana-Verweise dargestellt. Das Schema markiert diese Felder als `multi_value` und ihre Beziehungen als gruppiert; auch Jisho-Vorschläge bewahren dieselbe Struktur für die kommende Unterstützung im Cognis-Kern.
 
 - [9bbe068](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/9bbe068)
+
+## Ausgeblendete Wortschatz-Aussprachebrücken
+
+Ausgeblendete Aussprachedatensätze wurden nur dort wiederhergestellt, wo die Wortschatzbedeutung von den Definitionen der geschriebenen Kanji abweicht. Jede Brücke trägt die lexikalische Definition, verknüpft die betreffende Kanji-Schreibweise und löst über gruppierte Kana-Verweise auf; Wörter mit gleicher Definition behalten ihren direkten Kana-Pfad, und Lookup-Vorschläge schließen die ausgeblendeten Datensätze aus.
+
+- [448f99e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/448f99e)

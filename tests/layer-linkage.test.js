@@ -50,7 +50,10 @@ function derivedPronunciation(record, recordsById, visited = new Set()) {
     if (!record || visited.has(record.id)) return "";
     if (record.layer === "characters") return record.label;
     const nextVisited = new Set(visited).add(record.id);
-    return (record.references ?? [])
+    const groupedReferences =
+        record.referenceGroups?.["pronunciation-readings"]?.[0] ??
+        record.referenceGroups?.["reading-kana"]?.[0];
+    return (groupedReferences ?? record.references ?? [])
         .filter(({ relation }) => relation !== "definitions")
         .slice()
         .sort(
@@ -109,13 +112,25 @@ test("the authored graph derives pronunciation from atomic Kana", () => {
     );
 });
 
-test("vocabulary links directly to Kana without pronunciation duplicates", () => {
+test("visible vocabulary uses hidden shims only for distinct lexical meanings", () => {
     const records = loadRecords();
     const recordsById = new Map(records.map((record) => [record.id, record]));
-    const vocabulary = records.filter(({ layer }) => layer === "words");
+    const vocabulary = records.filter(
+        ({ layer, hidden }) => layer === "words" && hidden !== true,
+    );
+    const shims = records.filter(
+        ({ layer, hidden }) => layer === "words" && hidden === true,
+    );
 
     assert.equal(vocabulary.length, 37);
     assert.ok(vocabulary.every(({ hidden }) => hidden !== true));
+    assert.equal(shims.length, 22);
+    assert.ok(
+        shims.every(
+            ({ class: contentClass }) =>
+                contentClass === "reading:pronunciation",
+        ),
+    );
     for (const word of vocabulary) {
         const structural = (word.references ?? []).filter(
             ({ relation }) => relation !== "definitions",
@@ -124,8 +139,10 @@ test("vocabulary links directly to Kana without pronunciation duplicates", () =>
         assert.ok(
             structural.every(
                 ({ entryId, relation }) =>
-                    relation === "reading-kana" &&
-                    recordsById.get(entryId)?.layer === "characters",
+                    (relation === "reading-kana" &&
+                        recordsById.get(entryId)?.layer === "characters") ||
+                    (relation === "pronunciation-readings" &&
+                        recordsById.get(entryId)?.hidden === true),
             ),
             word.id,
         );
@@ -137,11 +154,8 @@ test("vocabulary links directly to Kana without pronunciation duplicates", () =>
     }
 
     assert.deepEqual(
-        orderedReferences(
-            recordsById.get("ja:word:suki"),
-            new Set(["reading-kana"]),
-        ).map(({ entryId }) => recordsById.get(entryId).label),
-        ["す", "き"],
+        derivedPronunciation(recordsById.get("ja:word:suki"), recordsById),
+        "すき",
     );
 });
 
@@ -171,26 +185,57 @@ test("sentences contain only real vocabulary and particles", () => {
     }
 });
 
-test("the relationship hierarchy has no obsolete pronunciation wrappers", () => {
+test("pronunciation shims stay hidden and connect Kanji to Kana", () => {
     const records = loadRecords();
-    assert.equal(
-        records.some(
-            ({ class: contentClass, hidden, layer }) =>
-                layer === "words" &&
-                (hidden === true || contentClass === "reading:pronunciation"),
-        ),
-        false,
+    const recordsById = new Map(records.map((record) => [record.id, record]));
+    const shims = records.filter(
+        ({ class: contentClass, hidden, layer }) =>
+            layer === "words" &&
+            hidden === true &&
+            contentClass === "reading:pronunciation",
     );
-    assert.equal(
-        records.some((record) =>
-            (record.references ?? []).some(({ relation }) =>
-                ["pronunciation-readings", "alternate-readings"].includes(
-                    relation,
-                ),
+    assert.equal(shims.length, 22);
+    for (const shim of shims) {
+        const shimDefinitionIds = new Set(
+            shim.references
+                .filter(({ relation }) => relation === "definitions")
+                .map(({ entryId }) => entryId),
+        );
+        const kanjiDefinitionIds = new Set(
+            shim.references
+                .filter(({ relation }) => relation === "spelling")
+                .flatMap(
+                    ({ entryId }) =>
+                        recordsById
+                            .get(entryId)
+                            ?.references.filter(
+                                ({ relation }) => relation === "definitions",
+                            ) ?? [],
+                )
+                .map(({ entryId }) => entryId),
+        );
+        assert.notDeepEqual(shimDefinitionIds, kanjiDefinitionIds, shim.id);
+        assert.ok(
+            shim.references.some(
+                ({ entryId, relation }) =>
+                    relation === "spelling" &&
+                    recordsById.get(entryId)?.layer === "alt-characters",
             ),
-        ),
-        false,
-    );
+            shim.id,
+        );
+        assert.ok(
+            shim.references.some(
+                ({ entryId, relation }) =>
+                    relation === "reading-kana" &&
+                    recordsById.get(entryId)?.layer === "characters",
+            ),
+            shim.id,
+        );
+        assert.ok(
+            shim.references.some(({ relation }) => relation === "definitions"),
+            shim.id,
+        );
+    }
 });
 
 test("authored pronunciation paths are acyclic and end at Kana", () => {

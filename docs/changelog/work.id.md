@@ -494,3 +494,9 @@ Pelafalan Kana dikoreksi agar hanya berisi romanisasi gaya Hepburn. Pelajar kini
 Bacaan alternatif Kanji dipulihkan dan setiap pelafalan Kanji serta Kosakata direpresentasikan sebagai urutan bertingkat tersendiri dari referensi Kana terurut. Skema menandai bidang ini sebagai `multi_value` dan relasinya sebagai berkelompok, sedangkan saran Jisho mempertahankan struktur yang sama untuk dukungan Cognis core mendatang.
 
 - [9bbe068](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/9bbe068)
+
+## Perantara Pelafalan Kosakata Tersembunyi
+
+Rekaman pelafalan tersembunyi dipulihkan hanya ketika makna Kosakata berbeda dari definisi Kanji tertulisnya. Setiap perantara membawa definisi leksikal, menautkan ejaan Kanji terkait, dan berlanjut melalui referensi Kana berkelompok; kata dengan definisi sama mempertahankan jalur Kana langsung, dan saran lookup mengecualikan rekaman tersembunyi.
+
+- [448f99e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/448f99e)

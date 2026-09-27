@@ -74,13 +74,16 @@ test("fields publish provider-owned editor controls", () => {
     }
 });
 
-test("vocabulary pronunciation links directly to atomic Kana", () => {
+test("vocabulary pronunciation links through direct Kana or hidden shims", () => {
     const wordLayer = schema.layers.find(({ id }) => id === "words");
     const pronunciation = wordLayer.fields.find(
         ({ id }) => id === "pronunciation",
     );
-    assert.deepEqual(pronunciation.input.linkRelationships, ["reading-kana"]);
-    for (const word of words) {
+    assert.deepEqual(pronunciation.input.linkRelationships, [
+        "pronunciation-readings",
+        "reading-kana",
+    ]);
+    for (const word of words.filter(({ hidden }) => hidden !== true)) {
         const references = word.references.filter(
             ({ relation }) => relation !== "definitions",
         );
@@ -88,21 +91,37 @@ test("vocabulary pronunciation links directly to atomic Kana", () => {
         assert.ok(
             references.every(
                 ({ entryId, relation }) =>
-                    relation === "reading-kana" &&
-                    recordsById.get(entryId)?.fields.character_class,
+                    (relation === "reading-kana" &&
+                        recordsById.get(entryId)?.fields.character_class) ||
+                    (relation === "pronunciation-readings" &&
+                        recordsById.get(entryId)?.hidden === true),
             ),
             word.id,
         );
     }
     assert.equal(
-        labelsFor(recordsById.get("ja:word:nihongo"), ["reading-kana"]),
+        labelsFor(recordsById.get("ja:word:nihongo"), [
+            "pronunciation-readings",
+        ]),
         "にほんご",
     );
 });
 
-test("vocabulary contains no hidden pronunciation duplicates", () => {
+test("vocabulary shims are hidden and definition-bearing", () => {
     assert.ok(words.length > 0);
-    assert.ok(words.every(({ hidden }) => hidden !== true));
+    const shims = words.filter(({ hidden }) => hidden === true);
+    assert.equal(shims.length, 22);
+    assert.ok(
+        shims.every(
+            ({ class: contentClass }) =>
+                contentClass === "reading:pronunciation",
+        ),
+    );
+    assert.ok(
+        shims.every((entry) =>
+            entry.references.some(({ relation }) => relation === "definitions"),
+        ),
+    );
     assert.ok(words.every(({ fields }) => fields.pronunciation?.length === 1));
 });
 

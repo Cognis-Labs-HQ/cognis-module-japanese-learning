@@ -653,18 +653,39 @@ test("small-tsu forms stay hidden while retaining their parent links", () => {
     );
 });
 
-test("every vocabulary entry links directly to atomic Kana", () => {
+test("every vocabulary pronunciation resolves to atomic Kana", () => {
     const { records } = loadPack();
     const entries = new Map(records.map((record) => [record.id, record]));
     for (const word of records.filter(({ layer }) => layer === "words")) {
-        const links = word.references.filter(
+        const directLinks = word.references.filter(
             ({ relation }) => relation === "reading-kana",
         );
-        assert.ok(links.length > 0, word.id);
+        if (directLinks.length) {
+            assert.ok(
+                directLinks.every(
+                    ({ entryId }) =>
+                        entries.get(entryId).layer === "characters",
+                ),
+            );
+            continue;
+        }
+        const shimLinks = word.references.filter(
+            ({ relation }) => relation === "pronunciation-readings",
+        );
+        assert.ok(shimLinks.length > 0, word.id);
         assert.ok(
-            links.every(
-                ({ entryId }) => entries.get(entryId).layer === "characters",
-            ),
+            shimLinks.every(({ entryId }) => {
+                const shim = entries.get(entryId);
+                return (
+                    shim.layer === "words" &&
+                    shim.hidden === true &&
+                    shim.references.some(
+                        ({ entryId: kanaId, relation }) =>
+                            relation === "reading-kana" &&
+                            entries.get(kanaId).layer === "characters",
+                    )
+                );
+            }),
         );
     }
 });
@@ -673,22 +694,26 @@ test("Kanji and vocabulary preserve grouped Kana pronunciation references", () =
     const { schema, records } = loadPack();
     const recordsById = new Map(records.map((record) => [record.id, record]));
     let multipleKanjiReadings = 0;
-    for (const [layerId, relation] of [
-        ["alt-characters", "readings"],
-        ["words", "reading-kana"],
+    for (const [layerId, relations] of [
+        ["alt-characters", ["readings"]],
+        ["words", ["pronunciation-readings", "reading-kana"]],
     ]) {
         const layer = schema.layers.find(({ id }) => id === layerId);
         const pronunciation = layer.fields.find(
             ({ id }) => id === "pronunciation",
         );
         assert.equal(pronunciation.multi_value, true);
-        assert.equal(
-            layer.relationships.find(({ id }) => id === relation).grouped,
-            true,
-        );
+        for (const relation of relations)
+            assert.equal(
+                layer.relationships.find(({ id }) => id === relation).grouped,
+                true,
+            );
         for (const record of records.filter(
             ({ layer: id }) => id === layerId,
         )) {
+            const relation = relations.find(
+                (candidate) => record.referenceGroups?.[candidate],
+            );
             const groups = record.referenceGroups?.[relation];
             assert.equal(groups?.length, record.fields.pronunciation.length);
             assert.equal(
@@ -763,6 +788,8 @@ test("definitions stay semantic while resolvers describe compositions", () => {
         new Set([
             "readings:characters",
             "reading-kana:characters",
+            "pronunciation-readings:words",
+            "spelling:alt-characters",
             "kana-spelling:characters",
             "words:words",
             "particles:particles",
@@ -778,6 +805,8 @@ test("definitions stay semantic while resolvers describe compositions", () => {
         new Map([
             ["readings", "pronunciation"],
             ["reading-kana", "pronunciation"],
+            ["pronunciation-readings", "pronunciation"],
+            ["spelling", "composition"],
             ["kana-spelling", "alternateSpelling"],
             ["words", "composition"],
             ["particles", "composition"],

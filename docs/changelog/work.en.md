@@ -494,3 +494,9 @@ Corrected Kana pronunciation to contain only Hepburn-style romanization. Learner
 Restored alternate Kanji readings and represented every Kanji and Vocabulary pronunciation as its own nested sequence of ordered Kana references. The schema marks these fields as `multi_value` and their relationships as grouped, while Jisho suggestions preserve the same structure for the forthcoming Cognis core support.
 
 - [9bbe068](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/9bbe068)
+
+## Hidden Vocabulary Pronunciation Shims
+
+Restored hidden pronunciation records only where a Vocabulary meaning differs from its written Kanji definitions. Each shim carries the lexical definition, links the relevant Kanji spelling, and resolves through grouped Kana references; equal-definition words keep their direct Kana path, and lookup suggestions exclude the hidden records.
+
+- [448f99e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/448f99e)

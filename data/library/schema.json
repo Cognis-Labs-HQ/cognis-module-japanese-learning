@@ -1,6 +1,6 @@
 {
     "id": "japanese-core",
-    "version": 62,
+    "version": 63,
     "namespace": "ja",
     "language": "ja",
     "metadata": {
@@ -565,7 +565,10 @@
                     },
                     "input": {
                         "control": "tagList",
-                        "linkRelationships": ["reading-kana"]
+                        "linkRelationships": [
+                            "pronunciation-readings",
+                            "reading-kana"
+                        ]
                     },
                     "multi_value": true
                 },
@@ -652,6 +655,41 @@
                 }
             ],
             "relationships": [
+                {
+                    "id": "pronunciation-readings",
+                    "targetLayer": "words",
+                    "metadata": {
+                        "labels": {
+                            "de": "Aussprachelesungen",
+                            "en": "Pronunciation Readings",
+                            "id": "Bacaan pelafalan",
+                            "ja": "発音の読み"
+                        }
+                    },
+                    "minimum": 0,
+                    "ordered": true,
+                    "onDelete": "restrict",
+                    "resolverRole": "longestMatch",
+                    "presentationRole": "pronunciation",
+                    "grouped": true
+                },
+                {
+                    "id": "spelling",
+                    "targetLayer": "alt-characters",
+                    "metadata": {
+                        "labels": {
+                            "de": "Kanji-Schreibweise",
+                            "en": "Kanji Spelling",
+                            "id": "Ejaan Kanji",
+                            "ja": "漢字表記"
+                        }
+                    },
+                    "minimum": 0,
+                    "ordered": true,
+                    "onDelete": "restrict",
+                    "resolverRole": "longestMatch",
+                    "presentationRole": "composition"
+                },
                 {
                     "id": "reading-kana",
                     "targetLayer": "characters",
