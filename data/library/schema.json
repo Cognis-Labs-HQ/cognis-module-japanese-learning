@@ -1,6 +1,6 @@
 {
     "id": "japanese-core",
-    "version": 59,
+    "version": 60,
     "namespace": "ja",
     "language": "ja",
     "metadata": {
@@ -429,7 +429,7 @@
             "relationships": [
                 {
                     "id": "readings",
-                    "targetLayer": "words",
+                    "targetLayer": "characters",
                     "metadata": {
                         "labels": {
                             "de": "Lesungen",
@@ -444,20 +444,6 @@
                     "requiredTarget": true,
                     "resolverRole": "explicit",
                     "presentationRole": "pronunciation"
-                },
-                {
-                    "id": "alternate-readings",
-                    "targetLayer": "words",
-                    "metadata": {
-                        "labels": {
-                            "de": "Weitere Lesungen",
-                            "en": "Additional Readings",
-                            "id": "Bacaan Tambahan",
-                            "ja": "その他の読み"
-                        }
-                    },
-                    "ordered": true,
-                    "onDelete": "restrict"
                 },
                 {
                     "id": "definitions",
@@ -570,14 +556,14 @@
                         }
                     },
                     "type": "stringList",
-                    "required": true,
+                    "required": false,
                     "detail": {
                         "renderer": "text",
                         "order": 1
                     },
                     "input": {
                         "control": "tagList",
-                        "linkRelationships": ["pronunciation-readings"]
+                        "linkRelationships": ["reading-kana"]
                     }
                 },
                 {
@@ -664,38 +650,6 @@
             ],
             "relationships": [
                 {
-                    "id": "word-spelling",
-                    "targetLayer": "words",
-                    "metadata": {
-                        "labels": {
-                            "de": "Wortbestandteil",
-                            "en": "Word Spelling",
-                            "id": "Ejaan Kata",
-                            "ja": "語彙表記"
-                        }
-                    },
-                    "ordered": true,
-                    "onDelete": "restrict",
-                    "resolverRole": "longestMatch",
-                    "presentationRole": "composition"
-                },
-                {
-                    "id": "spelling",
-                    "targetLayer": "alt-characters",
-                    "metadata": {
-                        "labels": {
-                            "de": "Schreibweise",
-                            "en": "Spelling",
-                            "id": "Ejaan",
-                            "ja": "表記"
-                        }
-                    },
-                    "ordered": true,
-                    "onDelete": "restrict",
-                    "resolverRole": "grapheme",
-                    "presentationRole": "composition"
-                },
-                {
                     "id": "reading-kana",
                     "targetLayer": "characters",
                     "metadata": {
@@ -710,41 +664,7 @@
                     "ordered": true,
                     "onDelete": "restrict",
                     "resolverRole": "explicit",
-                    "presentationRole": "composition"
-                },
-                {
-                    "id": "pronunciation-readings",
-                    "targetLayer": "words",
-                    "metadata": {
-                        "labels": {
-                            "de": "Aussprachelesungen",
-                            "en": "Pronunciation Readings",
-                            "id": "Bacaan pelafalan",
-                            "ja": "発音の読み"
-                        }
-                    },
-                    "minimum": 0,
-                    "ordered": true,
-                    "onDelete": "restrict",
-                    "resolverRole": "longestMatch",
                     "presentationRole": "pronunciation"
-                },
-                {
-                    "id": "kana-spelling",
-                    "targetLayer": "characters",
-                    "metadata": {
-                        "labels": {
-                            "de": "Kana-Schreibweise",
-                            "en": "Kana Spelling",
-                            "id": "Ejaan Kana",
-                            "ja": "かな表記"
-                        }
-                    },
-                    "minimum": 0,
-                    "ordered": true,
-                    "onDelete": "restrict",
-                    "resolverRole": "explicit",
-                    "presentationRole": "alternateSpelling"
                 },
                 {
                     "id": "definitions",
@@ -871,7 +791,7 @@
                     "requiredTarget": true,
                     "onDelete": "restrict",
                     "resolverRole": "longestMatch",
-                    "presentationRole": "composition"
+                    "presentationRole": "pronunciation"
                 },
                 {
                     "id": "particles",
@@ -887,7 +807,7 @@
                     "ordered": true,
                     "onDelete": "restrict",
                     "resolverRole": "explicit",
-                    "presentationRole": "composition"
+                    "presentationRole": "pronunciation"
                 },
                 {
                     "id": "definitions",
@@ -919,7 +839,7 @@
                         }
                     },
                     "type": "stringList",
-                    "required": true,
+                    "required": false,
                     "detail": {
                         "renderer": "text",
                         "order": 1

@@ -211,3 +211,7 @@ Resolve the injected public `study:library:provider` first. If the host exposes 
 ## Resolvable title details
 
 For every pronunciation-bearing sentence and Kanji, replay the host alias-composition algorithm in tests. All linked targets, in relationship position order, must concatenate exactly to the displayed pronunciation. A Kanji title exposes one primary dedicated Kana-only reading; store additional readings outside the pronunciation field and its `input.linkRelationships` path so they cannot make every title link fail as one concatenated chain.
+
+## Current recursive pronunciation contract
+
+Atomic Kana are the only pronunciation leaves. Kanji and visible Vocabulary reference ordered Kana directly; never create hidden character-only Vocabulary as pronunciation wrappers. Sentences reference only visible Vocabulary and particles. Vocabulary and sentence pronunciation is recursively derived from that graph, and a provider may materialize the derived field for display but must never author an independent value. Mark these resolver relationships with `presentationRole: "pronunciation"` so title details show readings rather than duplicating the primary written composition.

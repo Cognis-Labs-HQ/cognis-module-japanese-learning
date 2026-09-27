@@ -1,30 +1,45 @@
 import assert from "node:assert/strict";
-import { readFileSync } from "node:fs";
+import { readdirSync, readFileSync } from "node:fs";
+import path from "node:path";
 import test from "node:test";
 
-function readData(path) {
-    return JSON.parse(
-        readFileSync(
-            new URL(`../data/library/content/${path}`, import.meta.url),
-        ),
-    );
-}
-
-const vocabulary = readData("words/expanded.json");
-const definitions = new Map(
-    [
-        ...readData("definitions/expanded.json"),
-        ...readData("definitions/particles-expanded.json"),
-        ...readData("definitions/sentences-expanded.json"),
-    ].map((entry) => [entry.id, entry]),
+const CONTENT_ROOT = path.resolve(
+    import.meta.dirname,
+    "..",
+    "data",
+    "library",
+    "content",
 );
-const particles = readData("particles/expanded.json");
-const sentences = readData("sentences/expanded.json");
+function load(directory) {
+    return readdirSync(path.join(CONTENT_ROOT, directory))
+        .filter((name) => name.endsWith(".json"))
+        .flatMap((name) =>
+            JSON.parse(
+                readFileSync(path.join(CONTENT_ROOT, directory, name), "utf8"),
+            ),
+        );
+}
+const vocabulary = load("words");
+const definitions = new Map(
+    load("definitions").map((entry) => [entry.id, entry]),
+);
+const particles = load("particles");
+const sentences = load("sentences");
+const characters = new Map(
+    load("characters").map((entry) => [entry.id, entry]),
+);
 
 function definitionIds(entry) {
     return entry.references
         .filter(({ relation }) => relation === "definitions")
         .map(({ entryId }) => entryId);
+}
+function reading(entry) {
+    return entry.references
+        .filter(({ relation }) => relation === "reading-kana")
+        .sort((left, right) => left.position - right.position)
+        .map(({ entryId }) => characters.get(entryId).label)
+        .join("");
 }
 
 test("expanded learning data remains declarative and substantial", () => {
@@ -45,10 +60,9 @@ test("polysemy uses multiple definitions without collapsing homophones", () => {
         "ja:def:naosu-fix",
         "ja:def:naosu-correct",
     ]);
-
     for (const pronunciation of ["はし", "あめ", "かみ", "はな"]) {
         const homophones = vocabulary.filter(
-            (entry) => entry.fields.pronunciation[0] === pronunciation,
+            (entry) => reading(entry) === pronunciation,
         );
         assert.ok(homophones.length >= 2);
         assert.equal(

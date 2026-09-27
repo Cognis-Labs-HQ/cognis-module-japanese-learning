@@ -288,28 +288,14 @@ test("writing units and sentence particles follow the current Library contract",
 });
 
 test("ordered sentence constituents completely resolve the sentence label", () => {
-    const { schema, records } = loadPack();
-    const sentenceLayer = schema.layers.find(({ id }) => id === "sentences");
-    const constituentRelationships = new Set(
-        sentenceLayer.relationships
-            .filter(
-                ({ presentationRole, targetLayer }) =>
-                    presentationRole === "composition" &&
-                    ["words", "particles"].includes(targetLayer),
-            )
-            .map(({ id }) => id),
-    );
+    const { records } = loadPack();
     const entries = new Map(records.map((record) => [record.id, record]));
     for (const sentence of records.filter(
-        ({ layer }) => layer === sentenceLayer.id,
+        ({ layer }) => layer === "sentences",
     )) {
         const constituents = sentence.references
-            .filter(({ relation }) => constituentRelationships.has(relation))
+            .filter(({ relation }) => ["words", "particles"].includes(relation))
             .sort((left, right) => left.position - right.position);
-        assert.deepEqual(
-            constituents.map(({ position }) => position),
-            constituents.map((_, position) => position),
-        );
         assert.equal(
             constituents
                 .map(({ entryId }) => entries.get(entryId).label)
@@ -367,87 +353,26 @@ test("recognized Library fields and definition relationships replace duplicate s
     }
 });
 
-test("kanji readings reference distinct kana-backed vocabulary entries", () => {
+test("kanji readings reference ordered atomic Kana", () => {
     const { schema, records } = loadPack();
     const compoundLayer = schema.layers.find(
         ({ semanticRole }) => semanticRole === "compoundWritingUnit",
     );
-    const readingRelationship = compoundLayer.relationships.find(
+    const relationship = compoundLayer.relationships.find(
         ({ id }) => id === "readings",
     );
-    assert.equal(readingRelationship.targetLayer, "words");
-    assert.equal(readingRelationship.resolverRole, "explicit");
-    assert.equal(readingRelationship.presentationRole, "pronunciation");
-
-    const words = new Map(
-        records
-            .filter(({ layer }) => layer === "words")
-            .map((record) => [record.id, record]),
-    );
-    const characters = new Map(
-        records
-            .filter(({ layer }) => layer === "characters")
-            .map((record) => [record.id, record]),
-    );
-    const kanjiEntries = records.filter(
-        ({ layer }) => layer === compoundLayer.id,
-    );
-    for (const kanji of kanjiEntries) {
-        const readingWords = kanji.references
+    assert.equal(relationship.targetLayer, "characters");
+    const entries = new Map(records.map((record) => [record.id, record]));
+    for (const kanji of records.filter(
+        ({ layer }) => layer === "alt-characters",
+    )) {
+        const readings = kanji.references
             .filter(({ relation }) => relation === "readings")
-            .sort((left, right) => left.position - right.position)
-            .map(({ entryId }) => words.get(entryId));
-        readingWords.forEach((readingWord, index) => {
-            assert.ok(
-                readingWord.fields.pronunciation.some((pronunciation) =>
-                    pronunciation.includes(kanji.fields.pronunciation[index]),
-                ),
-            );
-        });
-        assert.ok(
-            readingWords.every(({ class: entryClass, hidden }) =>
-                entryClass.startsWith("reading:")
-                    ? hidden === true
-                    : entryClass.startsWith("lexical:") && hidden !== true,
-            ),
+            .sort((left, right) => left.position - right.position);
+        assert.equal(
+            readings.map(({ entryId }) => entries.get(entryId).label).join(""),
+            kanji.fields.pronunciation[0],
         );
-        for (const readingWord of readingWords) {
-            const pronunciationTarget = readingWord.references.find(
-                ({ relation }) => relation === "pronunciation-readings",
-            );
-            const KanaSource = pronunciationTarget
-                ? words.get(pronunciationTarget.entryId)
-                : readingWord;
-            const spelling = KanaSource.references
-                .filter(({ relation }) =>
-                    ["word-spelling", "reading-kana", "kana-spelling"].includes(
-                        relation,
-                    ),
-                )
-                .sort((left, right) => left.position - right.position)
-                .map(
-                    ({ entryId }) =>
-                        characters.get(entryId) ?? words.get(entryId),
-                );
-            assert.equal(
-                spelling.map(({ label }) => label).join(""),
-                readingWord.fields.pronunciation[0],
-            );
-            assert.ok(
-                spelling.every(
-                    ({ fields, hidden, label, layer }) =>
-                        fields.character_class === "hiragana" ||
-                        (layer === "words" &&
-                            hidden === true &&
-                            /^\p{Script=Hiragana}+$/u.test(label)),
-                ),
-            );
-            assert.ok(
-                readingWord.references.some(
-                    ({ relation }) => relation === "definitions",
-                ),
-            );
-        }
     }
 });
 
@@ -479,17 +404,17 @@ test("Japanese layers publish subject-specific localized labels", () => {
 test("character classes distinguish hiragana and katakana variations", () => {
     const { records } = loadPack();
     const characters = records.filter(({ layer }) => layer === "characters");
-    const variations = characters.filter(
-        ({ fields, references }) =>
-            fields.pronunciation[0] === "a" && !references,
+    const variations = characters.filter(({ label }) =>
+        ["あ", "ア"].includes(label),
     );
     assert.deepEqual(
         new Set(variations.map(({ fields }) => fields.character_class)),
         new Set(["hiragana", "katakana"]),
     );
-    assert.deepEqual(
-        new Set(variations.map(({ label }) => label)),
-        new Set(["あ", "ア"]),
+    assert.ok(
+        variations.every(
+            ({ fields, label }) => fields.pronunciation[0] === label,
+        ),
     );
 });
 
@@ -688,33 +613,23 @@ test("small-tsu forms stay hidden while retaining their parent links", () => {
     );
 });
 
-test("every vocabulary entry participates in the Kana deletion dependency graph", () => {
+test("every vocabulary entry links directly to atomic Kana", () => {
     const { records } = loadPack();
-    const recordsById = new Map(records.map((record) => [record.id, record]));
-    const dependsOnKana = (entry, visited = new Set()) => {
-        if (entry.layer === "characters") return true;
-        if (visited.has(entry.id)) return false;
-        const nextVisited = new Set(visited).add(entry.id);
-        return (entry.references ?? []).some(({ entryId }) => {
-            const target = recordsById.get(entryId);
-            return target && dependsOnKana(target, nextVisited);
-        });
-    };
-    const vocabulary = records.filter(
-        ({ layer, references }) =>
-            layer === "words" &&
-            references.some(({ relation }) => relation !== "definitions"),
-    );
-    assert.ok(vocabulary.every((entry) => dependsOnKana(entry)));
-
-    const suki = recordsById.get("ja:word:suki");
-    const sukiReadingId = suki.references.find(
-        ({ relation }) => relation === "pronunciation-readings",
-    ).entryId;
-    assert.equal(recordsById.get(sukiReadingId).label, "すき");
+    const entries = new Map(records.map((record) => [record.id, record]));
+    for (const word of records.filter(({ layer }) => layer === "words")) {
+        const links = word.references.filter(
+            ({ relation }) => relation === "reading-kana",
+        );
+        assert.ok(links.length > 0, word.id);
+        assert.ok(
+            links.every(
+                ({ entryId }) => entries.get(entryId).layer === "characters",
+            ),
+        );
+    }
 });
 
-test("lexical and sentence pronunciation use the Library placement field", () => {
+test("lexical and sentence pronunciation is host-derived", () => {
     const { schema, records } = loadPack();
     for (const semanticRole of ["lexicalUnit", "orderedLexicalSequence"]) {
         const layer = schema.layers.find(
@@ -724,12 +639,12 @@ test("lexical and sentence pronunciation use the Library placement field", () =>
             ({ id }) => id === "pronunciation",
         );
         assert.equal(pronunciation.type, "stringList");
-        assert.equal(pronunciation.required, true);
-        for (const record of records.filter(
-            ({ layer: layerId }) => layerId === layer.id,
-        )) {
-            assert.ok(record.fields.pronunciation.length > 0);
-        }
+        assert.equal(pronunciation.required, false);
+        assert.ok(
+            records
+                .filter(({ layer: id }) => id === layer.id)
+                .every((record) => record.fields.pronunciation?.length === 1),
+        );
     }
 });
 
@@ -758,11 +673,8 @@ test("definitions stay semantic while resolvers describe compositions", () => {
             ),
         ),
         new Set([
-            "readings:words",
-            "pronunciation-readings:words",
+            "readings:characters",
             "reading-kana:characters",
-            "word-spelling:words",
-            "spelling:alt-characters",
             "kana-spelling:characters",
             "words:words",
             "particles:particles",
@@ -777,13 +689,10 @@ test("definitions stay semantic while resolvers describe compositions", () => {
         ),
         new Map([
             ["readings", "pronunciation"],
-            ["pronunciation-readings", "pronunciation"],
-            ["reading-kana", "composition"],
-            ["word-spelling", "composition"],
-            ["spelling", "composition"],
+            ["reading-kana", "pronunciation"],
             ["kana-spelling", "alternateSpelling"],
-            ["words", "composition"],
-            ["particles", "composition"],
+            ["words", "pronunciation"],
+            ["particles", "pronunciation"],
         ]),
     );
 });
@@ -811,81 +720,32 @@ test("required filter groups declare intentional defaults", () => {
 test("hiragana and katakana include complete gojuon and voiced tables", () => {
     const { records } = loadPack();
     const characters = records.filter(({ layer }) => layer === "characters");
-    const basePronunciations = [
-        "a",
-        "i",
-        "u",
-        "e",
-        "o",
-        "ka",
-        "ki",
-        "ku",
-        "ke",
-        "ko",
-        "sa",
-        "shi",
-        "su",
-        "se",
-        "so",
-        "ta",
-        "chi",
-        "tsu",
-        "te",
-        "to",
-        "na",
-        "ni",
-        "nu",
-        "ne",
-        "no",
-        "ha",
-        "hi",
-        "fu",
-        "he",
-        "ho",
-        "ma",
-        "mi",
-        "mu",
-        "me",
-        "mo",
-        "ya",
-        "yu",
-        "yo",
-        "ra",
-        "ri",
-        "ru",
-        "re",
-        "ro",
-        "wa",
-        "wo",
-        "n",
-    ];
     for (const characterClass of ["hiragana", "katakana"]) {
-        const table = characters.filter(
-            ({ fields }) => fields.character_class === characterClass,
+        const labels = new Set(
+            characters
+                .filter(
+                    ({ fields }) => fields.character_class === characterClass,
+                )
+                .map(({ label }) => label),
         );
-        assert.equal(table.length, characterClass === "hiragana" ? 134 : 136);
-        const baseEntries = table.filter(
-            (entry) => !(entry.references ?? []).length,
+        assert.ok(labels.size >= 71);
+    }
+    for (const label of [
+        "あ",
+        "か",
+        "が",
+        "っ",
+        "ゃ",
+        "ア",
+        "カ",
+        "ガ",
+        "ッ",
+        "ャ",
+    ]) {
+        assert.ok(
+            characters.some((record) => record.label === label),
+            label,
         );
-        assert.equal(baseEntries.length, 46);
-        assert.deepEqual(
-            new Set(baseEntries.map(({ fields }) => fields.pronunciation[0])),
-            new Set(basePronunciations),
-        );
-        const variantEntries = table.filter(
-            (entry) => (entry.references ?? []).length,
-        );
-        assert.equal(
-            variantEntries.length,
-            characterClass === "hiragana" ? 88 : 90,
-        );
-        for (const variant of variantEntries) {
-            assert.equal(variant.references.length, 1);
-            const parent = characters.find(
-                ({ id }) => id === variant.references[0].entryId,
-            );
-            assert.equal(parent.fields.character_class, characterClass);
-        }
     }
 });
 

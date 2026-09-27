@@ -115,60 +115,12 @@ function kanaReferences(index, reading, relation) {
         .filter(Boolean);
 }
 
-function wordReferences(index, word, reading) {
-    const references = [...word]
-        .map((character, position) =>
-            KANJI.test(character)
-                ? exactNativeReference(
-                      index,
-                      "alt-characters",
-                      character,
-                      "spelling",
-                      position,
-                  )
-                : null,
-        )
-        .filter(Boolean);
-    const completeReading = exactNativeReference(
-        index,
-        "words",
-        reading,
-        "pronunciation-readings",
-        0,
-    );
-    if (completeReading) references.push(completeReading);
-    else references.push(...kanaReferences(index, reading, "kana-spelling"));
-    return references;
+function wordReferences(index, reading) {
+    return kanaReferences(index, reading, "reading-kana");
 }
 
 function kanjiReferences(index, readings) {
-    const references = [];
-    const seen = new Set();
-    for (const reading of readings) {
-        const completeReading = exactNativeReference(
-            index,
-            "words",
-            reading,
-            "readings",
-            references.length,
-        );
-        if (completeReading && !seen.has(completeReading.entryId)) {
-            references.push(completeReading);
-            seen.add(completeReading.entryId);
-        }
-        for (const reference of kanaReferences(
-            index,
-            reading,
-            "reading-kana-dependency",
-        )) {
-            if (!seen.has(reference.entryId)) {
-                delete reference.position;
-                references.push(reference);
-                seen.add(reference.entryId);
-            }
-        }
-    }
-    return references;
+    return kanaReferences(index, readings[0] ?? "", "readings");
 }
 
 function definitionReferences(index, record) {
@@ -205,16 +157,15 @@ function jishoSuggestion(index, layer, label, data) {
         fields.character_class = /\p{Script=Katakana}/u.test(label)
             ? "katakana"
             : "hiragana";
-    } else {
-        fields.pronunciation = readings;
-        if (layer === "words") {
-            const level = jishoLevel(record.jlpt);
-            if (level) fields.jlpt_level = level;
-        }
+    } else if (layer === "alt-characters") {
+        fields.pronunciation = readings.slice(0, 1);
+    } else if (layer === "words") {
+        const level = jishoLevel(record.jlpt);
+        if (level) fields.jlpt_level = level;
     }
     const references =
         layer === "words"
-            ? wordReferences(index, canonicalLabel, form.reading)
+            ? wordReferences(index, form.reading)
             : layer === "alt-characters"
               ? kanjiReferences(index, readings)
               : [];

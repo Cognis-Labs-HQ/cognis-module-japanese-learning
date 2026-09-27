@@ -464,3 +464,9 @@ Regenerated every packaged Kana and Kanji stroke pattern from pinned Unicode-nam
 
 - [1668b5f](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/1668b5f)
 - [5002586](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/5002586)
+
+## Recursive Kana-Derived Pronunciation
+
+Removed all 84 hidden character-only Vocabulary pronunciation wrappers. Atomic Kana are now the sole pronunciation leaves: Kanji and the 37 real Vocabulary cards reference ordered Kana directly, while sentences reference only real Vocabulary and particles. Vocabulary and sentence pronunciation values are materialized from that graph for display and marked as pronunciation relationships, preventing the written sentence from being repeated beneath its title.
+
+- [40ce8d8](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/40ce8d8)

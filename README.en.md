@@ -210,3 +210,7 @@ During Cognis PR #226 rollout, bootstrap prefers the injected public `study:libr
 ## Verified title-detail links
 
 Every sentence pronunciation is now tested against the host title-detail resolver, so each Kana span opens its ordered Vocabulary or Particle record. Each Kanji exposes one unambiguous complete primary reading that exactly matches its adjacent Vocabulary target; additional readings remain available through a separate non-title relationship, and all Kana dependencies remain visible for inverse navigation.
+
+## Current derived pronunciation graph
+
+The current graph supersedes the earlier wrapper-based reading descriptions above. Atomic Kana are the only pronunciation leaves. Kanji and real Vocabulary records reference ordered Kana directly; no hidden, character-only Vocabulary duplicates remain. Sentences reference only real Vocabulary and particles, and their pronunciation is recursively derived through those records to Kana. The pack materializes that derived value only for display, while the latest Library form contract recalculates it from relationships and does not expose it as an authored field. Pronunciation relationships use the pronunciation presentation role, so a sentence no longer repeats its written composition beneath the primary title.

@@ -68,11 +68,11 @@ test("Jisho provider resolves native content before network lookup", async () =>
     assert.equal(requests, 0);
     assert.equal(suggestion.label, "猫");
     assert.deepEqual(suggestion.fields.pronunciation, ["ねこ"]);
-    assert.ok(
-        suggestion.references.some(
-            ({ entryId, relation }) =>
-                entryId === "ja:kanji:core-e78cab" && relation === "spelling",
-        ),
+    assert.deepEqual(
+        suggestion.references
+            .filter(({ relation }) => relation === "reading-kana")
+            .map(({ entryId }) => entryId),
+        ["ja:char:ne", "ja:char:ko"],
     );
     assert.match(suggestion.provenance, /^cognis-japanese:/);
     assert.equal(suggestion.confidence, 1);
@@ -103,21 +103,18 @@ test("Jisho provider populates fields, detects links, and caches requests", asyn
     );
     assert.equal(requests[0].options.headers.accept, "application/json");
     assert.equal(first.label, "猫又");
-    assert.deepEqual(first.fields.pronunciation, ["ねこまた"]);
+    assert.equal(first.fields.pronunciation, undefined);
     assert.equal(first.fields.jlpt_level, "N2");
-    assert.ok(
-        first.references.some(
-            ({ entryId, relation, position }) =>
-                entryId === "ja:kanji:core-e78cab" &&
-                relation === "spelling" &&
-                position === 0,
-        ),
-    );
-    assert.ok(
-        first.references.some(
-            ({ entryId, relation }) =>
-                entryId === "ja:char:ne" && relation === "kana-spelling",
-        ),
+    assert.deepEqual(
+        first.references
+            .filter(({ relation }) => relation === "reading-kana")
+            .map(({ entryId, position }) => ({ entryId, position })),
+        [
+            { entryId: "ja:char:ne", position: 0 },
+            { entryId: "ja:char:ko", position: 1 },
+            { entryId: "ja:char:ma", position: 2 },
+            { entryId: "ja:char:ta", position: 3 },
+        ],
     );
     assert.deepEqual(second, first);
     assert.equal(first.provenance, "jisho:猫又");

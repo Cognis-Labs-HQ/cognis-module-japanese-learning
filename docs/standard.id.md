@@ -211,3 +211,7 @@ Selesaikan kapabilitas publik `study:library:provider` yang diinjeksi terlebih d
 ## Detail judul yang dapat diselesaikan
 
 Untuk setiap kalimat dan Kanji yang memiliki pelafalan, ulangi algoritme komposisi alias host dalam pengujian. Semua target tertaut, sesuai urutan posisi hubungan, harus bergabung tepat menjadi pelafalan yang ditampilkan. Judul Kanji mengekspos satu bacaan utama khusus yang hanya berisi Kana; simpan bacaan tambahan di luar bidang pelafalan dan jalur `input.linkRelationships` agar bacaan tersebut tidak membuat semua tautan judul gagal sebagai satu rantai gabungan.
+
+## Kontrak pelafalan rekursif saat ini
+
+Kana atomik adalah satu-satunya daun pelafalan. Kanji dan Kosakata terlihat menaut langsung ke Kana terurut; jangan pernah membuat Kosakata tersembunyi yang hanya berisi karakter sebagai pembungkus pelafalan. Kalimat hanya menaut ke Kosakata terlihat dan partikel. Pelafalan Kosakata dan kalimat diturunkan secara rekursif dari graf tersebut; penyedia boleh mematerialkan bidang turunan untuk tampilan tetapi tidak boleh menulis nilai mandiri. Gunakan `presentationRole: "pronunciation"` pada relasi resolver ini agar detail judul menampilkan bacaan, bukan mengulang komposisi tulisan utama.

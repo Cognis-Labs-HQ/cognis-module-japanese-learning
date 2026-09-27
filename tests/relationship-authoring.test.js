@@ -65,55 +65,39 @@ test("fields publish provider-owned editor controls", () => {
     }
 });
 
-test("vocabulary compositions use the closest structural records", () => {
+test("vocabulary pronunciation links directly to atomic Kana", () => {
     const wordLayer = schema.layers.find(({ id }) => id === "words");
     const pronunciation = wordLayer.fields.find(
         ({ id }) => id === "pronunciation",
     );
-    assert.deepEqual(pronunciation.input.linkRelationships, [
-        "pronunciation-readings",
-    ]);
-    const nihon = recordsById.get("ja:word:nihon");
-    const nihongo = recordsById.get("ja:word:nihongo");
-    assert.equal(labelsFor(nihon, ["word-spelling", "spelling"]), "日本");
-    assert.equal(labelsFor(nihongo, ["word-spelling", "spelling"]), "日本語");
-    assert.deepEqual(
-        nihongo.references
-            .filter(({ relation }) =>
-                ["word-spelling", "spelling"].includes(relation),
-            )
-            .map(({ entryId }) => entryId),
-        ["ja:word:nihon", "ja:kanji:go"],
-    );
-    assert.equal(labelsFor(nihon, ["pronunciation-readings"]), "にほん");
-    assert.equal(labelsFor(nihongo, ["pronunciation-readings"]), "にほんご");
-});
-
-test("reading vocabulary owns explicit definitions", () => {
-    for (const reading of words.filter(({ hidden }) => hidden === true)) {
-        const definitionReferences = reading.references.filter(
-            ({ relation }) => relation === "definitions",
+    assert.deepEqual(pronunciation.input.linkRelationships, ["reading-kana"]);
+    for (const word of words) {
+        const references = word.references.filter(
+            ({ relation }) => relation !== "definitions",
         );
-        assert.ok(definitionReferences.length > 0);
+        assert.ok(references.length > 0, word.id);
+        assert.ok(
+            references.every(
+                ({ entryId, relation }) =>
+                    relation === "reading-kana" &&
+                    recordsById.get(entryId)?.fields.character_class,
+            ),
+            word.id,
+        );
     }
-});
-
-test("only Kanji reading vocabulary is hidden from browsing", () => {
-    const readingVocabulary = words.filter(({ id }) =>
-        id.startsWith("ja:word:reading-"),
-    );
-    assert.ok(readingVocabulary.length > 0);
-    assert.ok(readingVocabulary.every(({ hidden }) => hidden === true));
-    assert.ok(
-        words
-            .filter(
-                ({ class: entryClass }) => !entryClass.startsWith("reading:"),
-            )
-            .every(({ hidden }) => hidden !== true),
+    assert.equal(
+        labelsFor(recordsById.get("ja:word:nihongo"), ["reading-kana"]),
+        "にほんご",
     );
 });
 
-test("Kanji readings and particles resolve through authored Kana links", () => {
+test("vocabulary contains no hidden pronunciation duplicates", () => {
+    assert.ok(words.length > 0);
+    assert.ok(words.every(({ hidden }) => hidden !== true));
+    assert.ok(words.every(({ fields }) => fields.pronunciation?.length === 1));
+});
+
+test("Kanji and particles terminate directly at Kana", () => {
     const altCharacters = schema.layers.find(
         ({ id }) => id === "alt-characters",
     );
@@ -121,38 +105,20 @@ test("Kanji readings and particles resolve through authored Kana links", () => {
         ({ id }) => id === "pronunciation",
     );
     assert.deepEqual(pronunciation.input.linkRelationships, ["readings"]);
-
     for (const entry of kanji) {
-        const readingTargets = entry.references
-            .filter(({ relation }) => relation === "readings")
-            .sort((left, right) => left.position - right.position)
-            .map(({ entryId }) => recordsById.get(entryId));
-        readingTargets.forEach((readingTarget, index) => {
-            assert.ok(
-                readingTarget.fields.pronunciation.some((pronunciation) =>
-                    pronunciation.includes(entry.fields.pronunciation[index]),
+        assert.equal(
+            labelsFor(entry, ["readings"]),
+            entry.fields.pronunciation[0],
+            entry.id,
+        );
+        assert.ok(
+            entry.references
+                .filter(({ relation }) => relation === "readings")
+                .every(
+                    ({ entryId }) =>
+                        recordsById.get(entryId)?.fields.character_class,
                 ),
-            );
-        });
-        for (const reference of entry.references.filter(
-            ({ relation }) => relation === "readings",
-        )) {
-            const reading = recordsById.get(reference.entryId);
-            if (reading.class.startsWith("reading:")) {
-                assert.equal(reading.hidden, true);
-            } else {
-                assert.equal(reading.hidden, undefined);
-                assert.ok(reading.class.startsWith("lexical:"));
-            }
-            assert.equal(
-                labelsFor(reading, [
-                    "pronunciation-readings",
-                    "reading-kana",
-                    "kana-spelling",
-                ]),
-                reading.fields.pronunciation[0],
-            );
-        }
+        );
     }
     const ga = recordsById.get("ja:particle:ga");
     assert.equal(labelsFor(ga, ["kana-spelling"]), "が");

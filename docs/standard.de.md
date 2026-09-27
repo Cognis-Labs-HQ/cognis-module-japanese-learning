@@ -211,3 +211,7 @@ Zuerst ist die injizierte öffentliche Fähigkeit `study:library:provider` aufzu
 ## Auflösbare Titeldetails
 
 Für jeden Satz und jedes Kanji mit Aussprache muss der Alias-Kompositionsalgorithmus des Hosts in Tests nachgebildet werden. Alle verknüpften Ziele müssen in Beziehungsreihenfolge exakt die angezeigte Aussprache ergeben. Ein Kanji-Titel veröffentlicht eine primäre eigene reine Kana-Lesung; weitere Lesungen liegen außerhalb des Aussprachefelds und seines `input.linkRelationships`-Pfads, damit sie nicht sämtliche Titellinks als eine zusammengefügte Kette scheitern lassen.
+
+## Aktueller rekursiver Aussprachevertrag
+
+Atomare Kana sind die einzigen Endpunkte der Aussprache. Kanji und sichtbarer Wortschatz verweisen direkt auf geordnete Kana; ausgeblendete Wortschatzeinträge, die nur aus Zeichen bestehen und als Aussprache-Wrapper dienen, sind verboten. Sätze verweisen nur auf sichtbaren Wortschatz und Partikeln. Die Aussprache von Wortschatz und Sätzen wird rekursiv aus diesem Graphen abgeleitet; ein Anbieter darf das abgeleitete Feld zur Anzeige materialisieren, aber niemals einen unabhängigen Wert verfassen. Diese Resolver-Beziehungen verwenden `presentationRole: "pronunciation"`, damit Titeldetails Lesungen statt einer Wiederholung der primären Schreibweise zeigen.

@@ -210,3 +210,7 @@ Während der Einführung von Cognis PR #226 bevorzugt Bootstrap die injizierte �
 ## Geprüfte Links in Titeldetails
 
 Jede Satzaussprache wird nun gegen den Titeldetail-Resolver des Hosts geprüft, sodass jeder Kana-Abschnitt seinen geordneten Vokabel- oder Partikeleintrag öffnet. Jedes Kanji stellt eine eindeutige vollständige Primärlesung bereit, die exakt zum angrenzenden Vokabelziel passt; weitere Lesungen bleiben über eine separate Nicht-Titel-Beziehung verfügbar, und alle Kana-Abhängigkeiten bleiben für die inverse Navigation sichtbar.
+
+## Aktueller abgeleiteter Aussprachegraph
+
+Der aktuelle Graph ersetzt die weiter oben beschriebenen früheren Lesungs-Wrapper. Atomare Kana sind die einzigen Endpunkte der Aussprache. Kanji und echte Wortschatzeinträge verweisen direkt auf geordnete Kana; ausgeblendete Wortschatzduplikate, die nur aus Zeichen bestehen, gibt es nicht mehr. Sätze verweisen nur auf echten Wortschatz und Partikeln, und ihre Aussprache wird rekursiv bis zu den Kana abgeleitet. Das Paket materialisiert den abgeleiteten Wert nur zur Anzeige; der aktuelle Library-Formularvertrag berechnet ihn aus Beziehungen neu und bietet ihn nicht als Autorenfeld an. Aussprachebeziehungen verwenden die Darstellungsrolle „Aussprache“, sodass ein Satz seine schriftliche Zusammensetzung nicht mehr unter dem Haupttitel wiederholt.

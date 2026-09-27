@@ -464,3 +464,9 @@ Semua pola goresan Kana dan Kanji dalam paket dibuat ulang dari jalur SVG KanjiV
 
 - [1668b5f](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/1668b5f)
 - [5002586](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/5002586)
+
+## Pelafalan Rekursif yang Diturunkan dari Kana
+
+Seluruh 84 pembungkus pelafalan Kosakata tersembunyi yang hanya berisi karakter telah dihapus. Kana atomik kini menjadi satu-satunya daun pelafalan: Kanji dan 37 kartu Kosakata nyata menaut langsung ke Kana terurut, sedangkan kalimat hanya menaut ke Kosakata nyata dan partikel. Nilai pelafalan Kosakata dan kalimat dimaterialkan dari graf tersebut untuk tampilan dan ditandai sebagai relasi pelafalan, sehingga kalimat tertulis tidak lagi diulang di bawah judulnya.
+
+- [40ce8d8](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/40ce8d8)

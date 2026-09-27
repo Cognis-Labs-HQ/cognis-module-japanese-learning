@@ -464,3 +464,9 @@ Alle paketierten Kana- und Kanji-Strichmuster wurden aus festgelegten, nach Unic
 
 - [1668b5f](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/1668b5f)
 - [5002586](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/5002586)
+
+## Rekursiv aus Kana abgeleitete Aussprache
+
+Alle 84 ausgeblendeten, nur aus Zeichen bestehenden Wortschatz-Aussprache-Wrapper wurden entfernt. Atomare Kana sind nun die einzigen Aussprache-Endpunkte: Kanji und die 37 echten Wortschatzkarten verweisen direkt auf geordnete Kana, während Sätze nur echten Wortschatz und Partikeln referenzieren. Die Aussprachewerte von Wortschatz und Sätzen werden für die Anzeige aus diesem Graphen materialisiert und als Aussprachebeziehungen gekennzeichnet, sodass der geschriebene Satz nicht mehr unter seinem Titel wiederholt wird.
+
+- [40ce8d8](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/40ce8d8)

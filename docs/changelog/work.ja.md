@@ -464,3 +464,9 @@ Bootstrap は注入済みの公開 `study:library:provider` ケイパビリテ�
 
 - [1668b5f](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/1668b5f)
 - [5002586](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/5002586)
+
+## かなから再帰的に導出する発音
+
+文字だけで構成された84件の非表示語彙発音ラッパーをすべて削除しました。原子的なかなだけを発音経路の終端とし、漢字と37件の実体語彙カードは順序付きかなを直接参照し、文は実体語彙と助詞だけを参照します。語彙と文の発音値は表示用にこのグラフから生成し、関係を発音表示として指定するため、表記文がタイトル直下に重複表示されません。
+
+- [40ce8d8](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/40ce8d8)

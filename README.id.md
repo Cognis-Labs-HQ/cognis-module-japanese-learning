@@ -210,3 +210,7 @@ Selama peluncuran Cognis PR #226, bootstrap mendahulukan kapabilitas publik `stu
 ## Tautan detail judul terverifikasi
 
 Setiap pelafalan kalimat kini diuji terhadap resolver detail judul host sehingga setiap rentang Kana membuka rekaman Kosakata atau Partikel yang terurut. Setiap Kanji mengekspos satu bacaan utama lengkap yang tidak ambigu dan sama persis dengan target Kosakata terdekat; bacaan tambahan tetap tersedia melalui hubungan nonjudul terpisah, dan semua dependensi Kana tetap terlihat untuk navigasi invers.
+
+## Graf pelafalan turunan saat ini
+
+Graf saat ini menggantikan uraian pembungkus bacaan lama di atas. Kana atomik menjadi satu-satunya daun pelafalan. Kanji dan rekaman Kosakata nyata menaut langsung ke Kana terurut; tidak ada lagi duplikat Kosakata tersembunyi yang hanya berisi karakter. Kalimat hanya menaut ke Kosakata nyata dan partikel, lalu pelafalannya diturunkan secara rekursif melalui rekaman tersebut hingga Kana. Paket hanya mematerialkan nilai turunan untuk tampilan, sedangkan kontrak formulir Library terbaru menghitungnya ulang dari relasi dan tidak mengeksposnya sebagai bidang buatan pengguna. Relasi pelafalan memakai peran presentasi pelafalan sehingga kalimat tidak lagi mengulang komposisi tulisannya di bawah judul utama.
