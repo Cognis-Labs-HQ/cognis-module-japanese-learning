@@ -548,3 +548,9 @@ Dipastikan bahwa paket bahasa Jepang telah membatasi romanisasi Hepburn pada Kan
 Endpoint administratif untuk menghapus konfigurasi modul yang diharapkan Cognis telah ditambahkan sebagai rute kompatibilitas `204` yang aman bagi konten. Rekaman bahasa Jepang bawaan paket kini hanya dihapus melalui penyedia Study Library ketika permintaan penghapusan instalasi secara eksplisit membawa `deleteContent: true`; penonaktifan, penghapusan instalasi biasa, dukungan pembersihan yang tidak tersedia, dan kegagalan pembersihan tidak dapat diam-diam menghapus atau menelantarkan data pembelajaran yang sudah mapan.
 
 - [eb8583f](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/eb8583f)
+
+## Definisi Kartu Kosakata Dipulihkan
+
+Relasi definisi langsung ditambahkan ke setiap rekaman Kosakata terlihat bertuliskan Kanji yang sebelumnya bergantung pada induk ejaannya. Hal ini sesuai dengan perender kartu Cognis, yang hanya menampilkan definisi yang dirujuk secara langsung, dan memulihkan makna untuk kartu termasuk `川`, `空`, `花`, `鼻`, `橋`, `箸`, `雨`, `飴`, `水`, `犬`, `猫`, `山`, `紙`, dan `髪`.
+
+- [c045f5e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/c045f5e)

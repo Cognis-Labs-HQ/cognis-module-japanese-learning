@@ -241,3 +241,7 @@ The reviewed beginner batch adds `ここ`, `そこ`, `どこ`, `いる`, `ある
 ## Destructive Uninstall Cleanup
 
 Disabling the module and ordinary uninstall cleanup retain every imported Japanese record. Only the host uninstall hook's explicit `deleteContent: true` option may call the Study Library provider's `deleteContentPack` operation; that provider owns transactional relationship cascading and must report failure before Cognis removes the module. The administrative `DELETE /api/v1/modules/study-language-ja/config` compatibility route only clears module-local configuration (the module has none) and therefore returns `204` without touching learning content.
+
+## Vocabulary Card Definitions
+
+The Cognis Library card renderer reads definitions only from an entry's direct definition relationships; it does not inherit a definition through a Kanji spelling relationship. Every visible Kanji-spelled Vocabulary record therefore references a definition directly, even when its meaning is identical to its Kanji writing record. Hidden structural pronunciation records remain definition-free.

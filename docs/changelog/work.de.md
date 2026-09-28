@@ -548,3 +548,9 @@ Es wurde bestätigt, dass das Japanisch-Paket die Hepburn-Umschrift bereits auf 
 Der von Cognis erwartete administrative Endpunkt zum Löschen der Modulkonfiguration wurde als inhaltssichere `204`-Kompatibilitätsroute ergänzt. Paketierte Japanisch-Datensätze werden jetzt nur dann über den Study-Library-Provider gelöscht, wenn die Deinstallationsanfrage ausdrücklich `deleteContent: true` enthält; Deaktivierung, gewöhnliche Deinstallation, fehlende Bereinigungsunterstützung und Bereinigungsfehler können etablierte Lerndaten weder unbemerkt löschen noch verwaisen lassen.
 
 - [eb8583f](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/eb8583f)
+
+## Wiederhergestellte Definitionen auf Wortschatzkarten
+
+Allen sichtbaren, mit Kanji geschriebenen Wortschatzeinträgen, die zuvor von ihrem Schreibungs-Elterneintrag abhingen, wurden direkte Definitionsbeziehungen hinzugefügt. Dies entspricht dem Cognis-Karten-Renderer, der nur direkt referenzierte Definitionen anzeigt, und stellt die Bedeutungen unter anderem für `川`, `空`, `花`, `鼻`, `橋`, `箸`, `雨`, `飴`, `水`, `犬`, `猫`, `山`, `紙` und `髪` wieder her.
+
+- [c045f5e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/c045f5e)

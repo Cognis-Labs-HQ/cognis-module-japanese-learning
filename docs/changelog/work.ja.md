@@ -548,3 +548,9 @@ Bootstrap は注入済みの公開 `study:library:provider` ケイパビリテ�
 Cognis が要求する管理用モジュール設定削除エンドポイントを、コンテンツに影響しない `204` 互換ルートとして追加しました。パッケージ提供の日本語レコードは、アンインストール要求に `deleteContent: true` が明示された場合に限り Study Library プロバイダー経由で削除されます。無効化、通常のアンインストール、クリーンアップ機能の欠如、またはクリーンアップ失敗によって、既存の学習データが黙って削除されたり孤立したりすることはありません。
 
 - [eb8583f](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/eb8583f)
+
+## 語彙カードの定義を復元
+
+これまで表記親に依存していた、表示対象の漢字表記語彙レコードすべてに直接の定義関係を追加しました。直接参照された定義だけを表示する Cognis のカードレンダラーに合わせ、`川`、`空`、`花`、`鼻`、`橋`、`箸`、`雨`、`飴`、`水`、`犬`、`猫`、`山`、`紙`、`髪` などのカードで意味を復元しました。
+
+- [c045f5e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/c045f5e)

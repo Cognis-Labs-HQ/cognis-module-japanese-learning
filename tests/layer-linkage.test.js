@@ -244,7 +244,7 @@ test("word reading paths never deep-link to an identically labeled word", () => 
     }
 });
 
-test("visible vocabulary defines only meanings that differ from its Kanji", () => {
+test("every visible Kanji vocabulary card has a direct definition", () => {
     const records = loadRecords();
     const recordsById = new Map(records.map((record) => [record.id, record]));
     const translationsFor = (record) =>
@@ -258,21 +258,16 @@ test("visible vocabulary defines only meanings that differ from its Kanji", () =
             /\p{Script=Han}/u.test(label),
     )) {
         const ownDefinitions = translationsFor(word);
+        assert.ok(
+            ownDefinitions.length > 0,
+            `${word.id} needs a direct card definition`,
+        );
         const parentDefinitions = word.references
             .filter(({ relation }) => relation === "spelling")
             .flatMap(({ entryId }) =>
                 translationsFor(recordsById.get(entryId)),
             );
         assert.ok(parentDefinitions.length > 0, word.id);
-        assert.equal(
-            ownDefinitions.some((own) =>
-                parentDefinitions.some(
-                    (parent) => JSON.stringify(parent) === JSON.stringify(own),
-                ),
-            ),
-            false,
-            `${word.id} must inherit an identical Kanji definition`,
-        );
     }
 });
 

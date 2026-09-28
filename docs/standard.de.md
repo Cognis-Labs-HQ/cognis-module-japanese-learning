@@ -241,3 +241,7 @@ Der geprüfte Anfängerstapel ergänzt `ここ`, `そこ`, `どこ`, `いる`, `
 ## Destruktive Deinstallationsbereinigung
 
 Beim Deaktivieren des Moduls und bei einer gewöhnlichen Deinstallation bleiben alle importierten Japanisch-Datensätze erhalten. Nur die ausdrückliche Option `deleteContent: true` des Host-Deinstallations-Hooks darf die Operation `deleteContentPack` des Study-Library-Providers aufrufen; dieser Provider ist für die transaktionale Kaskadierung der Beziehungen zuständig und muss einen Fehler melden, bevor Cognis das Modul entfernt. Die administrative Kompatibilitätsroute `DELETE /api/v1/modules/study-language-ja/config` löscht ausschließlich modullokale Konfiguration (dieses Modul besitzt keine) und antwortet deshalb mit `204`, ohne Lerninhalte zu verändern.
+
+## Definitionen auf Wortschatzkarten
+
+Der Karten-Renderer der Cognis Library liest Definitionen ausschließlich aus den direkten Definitionsbeziehungen eines Eintrags; eine Definition wird nicht über eine Kanji-Schreibbeziehung vererbt. Deshalb verweist jeder sichtbare, mit Kanji geschriebene Wortschatzeintrag direkt auf eine Definition, selbst wenn seine Bedeutung mit der seines Kanji-Schreibdatensatzes identisch ist. Ausgeblendete strukturelle Aussprachedatensätze bleiben definitionsfrei.

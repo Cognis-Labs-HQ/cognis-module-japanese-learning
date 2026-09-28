@@ -241,3 +241,7 @@ Batch pemula yang ditinjau menambahkan `ここ`, `そこ`, `どこ`, `いる`, `
 ## Pembersihan Penghapusan Instalasi yang Destruktif
 
 Menonaktifkan modul dan penghapusan instalasi biasa mempertahankan semua rekaman bahasa Jepang yang telah diimpor. Hanya opsi eksplisit `deleteContent: true` pada hook penghapusan instalasi host yang boleh memanggil operasi `deleteContentPack` milik penyedia Study Library; penyedia tersebut memiliki tanggung jawab atas penghapusan relasi berantai secara transaksional dan harus melaporkan kegagalan sebelum Cognis menghapus modul. Rute kompatibilitas administratif `DELETE /api/v1/modules/study-language-ja/config` hanya membersihkan konfigurasi lokal modul (modul ini tidak memilikinya), sehingga mengembalikan `204` tanpa menyentuh konten pembelajaran.
+
+## Definisi Kartu Kosakata
+
+Perender kartu Cognis Library hanya membaca definisi dari relasi definisi langsung suatu entri; definisi tidak diwarisi melalui relasi ejaan Kanji. Karena itu, setiap rekaman Kosakata terlihat yang ditulis dengan Kanji merujuk definisi secara langsung, bahkan ketika maknanya identik dengan rekaman tulisan Kanjinya. Rekaman pelafalan struktural tersembunyi tetap tanpa definisi.

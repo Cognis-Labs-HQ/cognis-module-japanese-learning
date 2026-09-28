@@ -548,3 +548,9 @@ Confirmed that the Japanese pack already keeps Hepburn romanization on atomic Ka
 Added the administrative module-config delete endpoint expected by Cognis and made it a content-safe `204` compatibility route. Packaged Japanese records are now deleted through the Study Library provider only when the uninstall request explicitly carries `deleteContent: true`; disabling, ordinary uninstall, missing cleanup support, and cleanup failures cannot silently remove or strand established learning data.
 
 - [eb8583f](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/eb8583f)
+
+## Restored Vocabulary Card Definitions
+
+Added direct definition relationships to every visible Kanji-spelled Vocabulary record that previously depended on its spelling parent. This matches the Cognis card renderer, which displays only directly referenced definitions, and restores meanings for cards including `川`, `空`, `花`, `鼻`, `橋`, `箸`, `雨`, `飴`, `水`, `犬`, `猫`, `山`, `紙`, and `髪`.
+
+- [c045f5e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/c045f5e)
