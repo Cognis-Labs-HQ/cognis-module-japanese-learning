@@ -530,3 +530,9 @@ Erfasste Beziehungen sind jetzt die einzige Quelle der Navigation zwischen Lesek
 Die Ausspracheabdeckung ist jetzt auf den geprüften KANJIDIC-Bestand an On- und Kun-Lesungen festgelegt, einschließlich deterministischer Normalisierung, eines ausgeblendeten Lesedatensatzes pro Ergebnis und einer ausdrücklichen kontextbedingten Ausnahme für `達` als `だち`. Ergänzt wurden lokalisierte Definitionen für lexikalisch abweichende Karten sowie ein geprüfter Stapel aus neun Wörtern zu Ort, Existenz, Beschreibung, Art und Weise und Kopula mit acht natürlichen Beispielsätzen und vollständigen Aussprachepfaden.
 
 - [69fad5d](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/69fad5d)
+
+## Zuständigkeit für die Löschfläche der Bühne
+
+Es wurde bestätigt, dass das Entfernen bereitgestellter Karten im Cognis Study-Library-Composer implementiert und gestaltet wird und nicht in diesem externen Japanisch-Inhaltsmodul. Die genauen Host-Selektoren, die erforderliche Größenkorrektur und der Browser-Regressionstest sind in `TODO.md` festgehalten; das Modul schleust keine unsichere CSS-Überschreibung in einen vom Host verwalteten Editor ein.
+
+- [c1a4b7b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/c1a4b7b)

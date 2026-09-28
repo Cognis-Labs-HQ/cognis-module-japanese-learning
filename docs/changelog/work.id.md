@@ -530,3 +530,9 @@ Hubungan yang ditulis kini menjadi satu-satunya sumber penelusuran kartu bacaan.
 Cakupan pelafalan kini dikunci pada inventaris bacaan on dan kun KANJIDIC yang telah ditinjau, dengan normalisasi deterministik, satu rekaman bacaan tersembunyi untuk setiap hasil, dan pengecualian kontekstual eksplisit untuk `達` sebagai `だち`. Ditambahkan definisi terlokalisasi untuk kartu leksikal yang maknanya berbeda serta batch tinjauan berisi sembilan kata tentang lokasi, keberadaan, deskripsi, cara, dan kopula dengan delapan kalimat contoh alami dan jalur pelafalan lengkap.
 
 - [69fad5d](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/69fad5d)
+
+## Kepemilikan Area Hapus Kartu Tahap
+
+Telah dikonfirmasi bahwa penghapusan kartu tahap diimplementasikan dan ditata oleh composer Study Library Cognis, bukan oleh modul konten bahasa Jepang eksternal ini. Selektor host yang tepat, perbaikan ukuran yang diperlukan, dan pengujian regresi browser dicatat dalam `TODO.md`; modul tidak menyuntikkan penimpaan CSS yang tidak aman ke editor milik host.
+
+- [c1a4b7b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/c1a4b7b)

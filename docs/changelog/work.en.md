@@ -530,3 +530,9 @@ Made authored relationships the only source of reading-card traversal. Vocabular
 Locked pronunciation coverage to the reviewed KANJIDIC on- and kun-reading inventory, with deterministic normalization, one hidden reading record per result, and an explicit contextual exception for `達` as `だち`. Added localized definitions for divergent lexical cards and a reviewed batch of nine location, existence, description, manner, and copula words with eight natural example sentences and complete pronunciation paths.
 
 - [69fad5d](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/69fad5d)
+
+## Stage Delete Hitbox Ownership
+
+Confirmed that staged-card removal is implemented and styled by the Cognis Study Library composer rather than this external Japanese content module. Recorded the exact host selectors, required sizing fix, and browser regression test in `TODO.md`; the module does not inject an unsafe CSS override into a host-owned editor.
+
+- [c1a4b7b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/c1a4b7b)

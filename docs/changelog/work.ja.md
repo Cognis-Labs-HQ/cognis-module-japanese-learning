@@ -530,3 +530,9 @@ Bootstrap は注入済みの公開 `study:library:provider` ケイパビリテ�
 発音の網羅性を、確認済み KANJIDIC 音読み・訓読み一覧、決定的な正規化、各結果につき 1 件の非表示読みレコード、`達` を `だち` と読む明示的な文脈例外に固定しました。漢字親と意味が異なる語彙カードのローカライズ定義に加え、場所・存在・描写・様態・コピュラを扱う 9 語と、完全な発音経路を持つ自然な例文 8 文の確認済みバッチを追加しました。
 
 - [69fad5d](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/69fad5d)
+
+## ステージカード削除範囲の所有元
+
+ステージ上のカード削除処理とスタイルは、この外部日本語コンテンツモジュールではなく Cognis Study Library コンポーザーが所有することを確認しました。正確なホスト側セレクター、必要なサイズ修正、ブラウザー回帰テストを `TODO.md` に記録し、ホスト所有のエディターへ安全でない CSS 上書きを注入しない方針としました。
+
+- [c1a4b7b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/c1a4b7b)
