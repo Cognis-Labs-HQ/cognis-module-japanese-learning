@@ -1,0 +1,387 @@
+[
+    {
+        "id": "ja:sentence:neko-wa-koko-ni-iru",
+        "label": "猫はここにいる",
+        "references": [
+            {
+                "entryId": "ja:word:neko",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:koko",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:ni",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:iru-exist",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:def:sentence-neko-wa-koko-ni-iru",
+                "relation": "definitions"
+            }
+        ],
+        "fields": {
+            "pronunciation": ["ねこはここにいる"]
+        },
+        "class": "composite",
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:pronunciation-sentence-neko-wa-koko-ni-iru",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:sentence:inu-wa-soko-ni-iru",
+        "label": "犬はそこにいる",
+        "references": [
+            {
+                "entryId": "ja:word:inu",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:soko",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:ni",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:iru-exist",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:def:sentence-inu-wa-soko-ni-iru",
+                "relation": "definitions"
+            }
+        ],
+        "fields": {
+            "pronunciation": ["いぬはそこにいる"]
+        },
+        "class": "composite",
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:pronunciation-sentence-inu-wa-soko-ni-iru",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:sentence:gakkou-wa-doko-desu",
+        "label": "学校はどこです",
+        "references": [
+            {
+                "entryId": "ja:word:gakkou",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:doko",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:word:desu",
+                "relation": "words",
+                "position": 3
+            },
+            {
+                "entryId": "ja:def:sentence-gakkou-wa-doko-desu",
+                "relation": "definitions"
+            }
+        ],
+        "fields": {
+            "pronunciation": ["がっこうはどこです"]
+        },
+        "class": "composite",
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:pronunciation-sentence-gakkou-wa-doko-desu",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:sentence:hana-wa-totemo-kirei",
+        "label": "花はとてもきれいです",
+        "references": [
+            {
+                "entryId": "ja:word:hana-flower",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:totemo",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:word:kirei",
+                "relation": "words",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:desu",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:def:sentence-hana-wa-totemo-kirei",
+                "relation": "definitions"
+            }
+        ],
+        "fields": {
+            "pronunciation": ["はなはとてもきれいです"]
+        },
+        "class": "composite",
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:pronunciation-sentence-hana-wa-totemo-kirei",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:sentence:inu-wa-yukkuri-aruku",
+        "label": "犬はゆっくり歩く",
+        "references": [
+            {
+                "entryId": "ja:word:inu",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:yukkuri",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:word:aruku",
+                "relation": "words",
+                "position": 3
+            },
+            {
+                "entryId": "ja:def:sentence-inu-wa-yukkuri-aruku",
+                "relation": "definitions"
+            }
+        ],
+        "fields": {
+            "pronunciation": ["いぬはゆっくりあるく"]
+        },
+        "class": "composite",
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:pronunciation-sentence-inu-wa-yukkuri-aruku",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:sentence:mizu-wa-koko-ni-aru",
+        "label": "水はここにある",
+        "references": [
+            {
+                "entryId": "ja:word:mizu",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:koko",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:ni",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:aru-exist",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:def:sentence-mizu-wa-koko-ni-aru",
+                "relation": "definitions"
+            }
+        ],
+        "fields": {
+            "pronunciation": ["みずはここにある"]
+        },
+        "class": "composite",
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:pronunciation-sentence-mizu-wa-koko-ni-aru",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:sentence:tomodachi-wa-soko-ni-iru",
+        "label": "友達はそこにいる",
+        "references": [
+            {
+                "entryId": "ja:word:tomodachi",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:soko",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:ni",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:iru-exist",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:def:sentence-tomodachi-wa-soko-ni-iru",
+                "relation": "definitions"
+            }
+        ],
+        "fields": {
+            "pronunciation": ["ともだちはそこにいる"]
+        },
+        "class": "composite",
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:pronunciation-sentence-tomodachi-wa-soko-ni-iru",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:sentence:kuruma-wa-doko-desu",
+        "label": "車はどこです",
+        "references": [
+            {
+                "entryId": "ja:word:kuruma",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:doko",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:word:desu",
+                "relation": "words",
+                "position": 3
+            },
+            {
+                "entryId": "ja:def:sentence-kuruma-wa-doko-desu",
+                "relation": "definitions"
+            }
+        ],
+        "fields": {
+            "pronunciation": ["くるまはどこです"]
+        },
+        "class": "composite",
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:pronunciation-sentence-kuruma-wa-doko-desu",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    }
+]

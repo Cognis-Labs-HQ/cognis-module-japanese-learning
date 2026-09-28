@@ -229,3 +229,11 @@ When multiple distinct Kanji vocabulary records have exactly the same complete K
 ## Stable inter-layer card traversal
 
 Relationships, never same-label discovery, define card traversal. A Vocabulary reading may link to another Vocabulary record only when that target represents a strictly smaller reading segment; identically labeled Vocabulary-to-Vocabulary reading links are forbidden. Complete single-Kanji pronunciation wrappers therefore reconstruct directly through ordered atomic Kana, while compounds retain links to smaller authored Kanji-reading segments and inflectional Kana. Hidden reading and pronunciation records are structural and carry no definitions. Visible vocabulary keeps a definition only when its lexical meaning differs from the referenced Kanji; otherwise its spelling relationship supplies the parent definition. The host suppresses a sole definition whose normalized text exactly equals a Vocabulary card's primary label.
+
+## Kanji pronunciation coverage
+
+Package every reviewed KANJIDIC on-reading and kun-reading after deterministic normalization: convert Katakana to Hiragana, remove affix markers, and retain the reading segment before an okurigana separator. Preserve provider ordering only as a presentation preference; tests compare the complete set and require one hidden `reading:kanji` record per normalized pronunciation. Contextual voiced readings such as `だち` for `達` require an explicit reviewed exception and an authored lexical use. Name readings are excluded from the core pronunciation field.
+
+## Reviewed location and manner batch
+
+The reviewed beginner batch adds `ここ`, `そこ`, `どこ`, `いる`, `ある`, `きれい`, `とても`, `ゆっくり`, and `です`, plus eight varied sentences about locations, existence, questions, appearance, and manner. Every new word has a localized definition and ordered Kana spelling; every sentence has an exact localized meaning, ordered lexical composition, and a complete hidden pronunciation path.

@@ -524,3 +524,9 @@ Die doppelten ausgeblendeten Aussprachekarten für `はな`, `はし`, `あめ` 
 Erfasste Beziehungen sind jetzt die einzige Quelle der Navigation zwischen Lesekarten. Lesepfade von Vokabeln können nicht mehr auf eine gleich beschriftete Vokabelkarte zeigen: Vollständige Aussprachen einzelner Kanji lösen sich direkt in geordnete Kana auf, während Zusammensetzungen nur echt kleinere Lesesegmente behalten. Ausgeblendete strukturelle Lesungen kopieren keine semantischen Definitionen mehr. Sichtbare Vokabeln behalten eine lokalisierte Definition nur, wenn ihre Bedeutung vom Kanji abweicht; identische Bedeutungen werden über den übergeordneten Schreibweiseeintrag übernommen, und Definitionen, die mit der Hauptbeschriftung identisch sind, bleiben in Cognis ausgeblendet.
 
 - [1d37ccf](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/1d37ccf)
+
+## Geprüfte Kanji-Lesungen und Anfängerinhalt
+
+Die Ausspracheabdeckung ist jetzt auf den geprüften KANJIDIC-Bestand an On- und Kun-Lesungen festgelegt, einschließlich deterministischer Normalisierung, eines ausgeblendeten Lesedatensatzes pro Ergebnis und einer ausdrücklichen kontextbedingten Ausnahme für `達` als `だち`. Ergänzt wurden lokalisierte Definitionen für lexikalisch abweichende Karten sowie ein geprüfter Stapel aus neun Wörtern zu Ort, Existenz, Beschreibung, Art und Weise und Kopula mit acht natürlichen Beispielsätzen und vollständigen Aussprachepfaden.
+
+- [69fad5d](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/69fad5d)

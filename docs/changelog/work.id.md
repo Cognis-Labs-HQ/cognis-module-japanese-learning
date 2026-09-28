@@ -524,3 +524,9 @@ Kartu pelafalan tersembunyi yang berulang untuk `はな`, `はし`, `あめ`, da
 Hubungan yang ditulis kini menjadi satu-satunya sumber penelusuran kartu bacaan. Jalur bacaan Kosakata tidak lagi dapat menargetkan kartu Kosakata berlabel identik: pelafalan lengkap satu Kanji kini langsung diuraikan menjadi Kana berurutan, sedangkan kata majemuk hanya mempertahankan segmen bacaan yang benar-benar lebih kecil. Bacaan struktural tersembunyi tidak lagi menyalin definisi semantik. Kosakata terlihat hanya mempertahankan definisi terlokalisasi jika maknanya berbeda dari Kanjinya; makna identik diwarisi melalui induk ejaan, dan definisi yang identik dengan label utama tetap disembunyikan oleh Cognis.
 
 - [1d37ccf](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/1d37ccf)
+
+## Bacaan Kanji Terverifikasi dan Konten Pemula
+
+Cakupan pelafalan kini dikunci pada inventaris bacaan on dan kun KANJIDIC yang telah ditinjau, dengan normalisasi deterministik, satu rekaman bacaan tersembunyi untuk setiap hasil, dan pengecualian kontekstual eksplisit untuk `達` sebagai `だち`. Ditambahkan definisi terlokalisasi untuk kartu leksikal yang maknanya berbeda serta batch tinjauan berisi sembilan kata tentang lokasi, keberadaan, deskripsi, cara, dan kopula dengan delapan kalimat contoh alami dan jalur pelafalan lengkap.
+
+- [69fad5d](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/69fad5d)

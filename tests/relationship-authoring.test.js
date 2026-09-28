@@ -116,7 +116,7 @@ test("vocabulary shims are hidden structural records", () => {
         ({ class: contentClass, hidden }) =>
             hidden === true && contentClass === "reading:pronunciation",
     );
-    assert.equal(shims.length, 48);
+    assert.equal(shims.length, 56);
     assert.ok(
         shims.every(
             ({ class: contentClass }) =>

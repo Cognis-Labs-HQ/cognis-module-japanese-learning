@@ -143,9 +143,9 @@ test("visible Kanji vocabulary uses complete hidden pronunciation records", () =
             contentClass === "reading:pronunciation",
     );
 
-    assert.equal(vocabulary.length, 37);
+    assert.equal(vocabulary.length, 46);
     assert.ok(vocabulary.every(({ hidden }) => hidden !== true));
-    assert.equal(shims.length, 48);
+    assert.equal(shims.length, 56);
     assert.ok(
         shims.every(
             ({ class: contentClass }) =>
@@ -206,7 +206,7 @@ test("pronunciation shims stay semantic-free and connect readings to Kana", () =
             hidden === true &&
             contentClass === "reading:pronunciation",
     );
-    assert.equal(shims.length, 48);
+    assert.equal(shims.length, 56);
     for (const shim of shims) {
         assert.equal(
             shim.references.some(({ relation }) => relation === "definitions"),

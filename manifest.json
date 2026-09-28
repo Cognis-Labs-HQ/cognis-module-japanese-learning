@@ -2,7 +2,7 @@
     "id": "study-language-ja",
     "uuid": "e905927f-b133-572a-92ce-2ea8645e5ceb",
     "name": "module.study-language-ja.name",
-    "version": "2.2.54",
+    "version": "2.2.55",
     "class": "extension",
     "coreApiVersion": "v1",
     "capabilities": ["study:language:ja"],
@@ -119,7 +119,7 @@
         },
         {
             "path": "bootstrap.js",
-            "sha256": "15c2549d495212f4c8046d51b1f2310a2253226de5cf98837cf65177ffece342"
+            "sha256": "4ff1a63d55f54c49fbf12118fb1324f7a9f482fb485d8b0b12c345f72ac54d06"
         },
         {
             "path": "data/library/content/alt-characters/kanji-001.json",
@@ -562,6 +562,10 @@
             "sha256": "e7e23405e3c447df05da4210a64282689176bf26a6431517ee691e378c3d5941"
         },
         {
+            "path": "data/library/content/definitions/content-batch-001.json",
+            "sha256": "8f41b5007447dcf49ad69f9b804c6176db3342b2fc34a0aa9e524fdc61584b96"
+        },
+        {
             "path": "data/library/content/definitions/core-kanji.json",
             "sha256": "79be038f11f9552bbfe83cc1f7225810f0a72e3427160f7a7b1008873feb1150"
         },
@@ -590,12 +594,20 @@
             "sha256": "0d78ad8f933c6fb46d4aa03e1962485e282ec73b652d73d16fade28055f70293"
         },
         {
+            "path": "data/library/content/sentences/content-batch-001.json",
+            "sha256": "9355e663ad5cd81b8641c686d4fa3aabca7dac6e312dc74434eb8560afe182e0"
+        },
+        {
             "path": "data/library/content/sentences/expanded.json",
             "sha256": "3277ec1206fea42de274add1c67a220e79880db693cae7cd15c859bd8d6d3d65"
         },
         {
             "path": "data/library/content/sentences/reviewed-batch.json",
             "sha256": "feec34fcdb2abe4f43654e4a1cbd0b7ffec0d0e88924de3f537c7b39590ea371"
+        },
+        {
+            "path": "data/library/content/words/content-batch-001.json",
+            "sha256": "757acd8e1bd1fd12cc1aab335172abb2cb45a5e72103db0ec01034fc83159144"
         },
         {
             "path": "data/library/content/words/kanji-readings-001.json",
@@ -634,6 +646,10 @@
             "sha256": "411b448c60cfbb995d32d431ddf09490325c5a90e6e02ffde1ed90bb325fa2f7"
         },
         {
+            "path": "data/library/content/words/sentence-pronunciations-002.json",
+            "sha256": "073e89c2772e318c338a9a8739e0daeb7dce8b271f6322ef5bad5616e209f6e3"
+        },
+        {
             "path": "data/library/content/words/sentence-pronunciations.json",
             "sha256": "e404a0a4bf32ba868082397507407bef8f9ad7d4da0ebfe6acc6ecf803fe0404"
         },
@@ -647,7 +663,7 @@
         },
         {
             "path": "data/library/manifest.json",
-            "sha256": "a6e8b9f5b76c86f1d63259912a9ef388be34fce269ec0ca0ab1af70280ae06d9"
+            "sha256": "a4ef339007228f829a69ec88febd85e355ab7c6f7300b60da10e84591d0a8fd3"
         },
         {
             "path": "data/library/schema.json",
@@ -655,27 +671,27 @@
         },
         {
             "path": "docs/standard.de.md",
-            "sha256": "60c7d7d6114a1d5a9462db16bbef3705462958742b53e55ed94025cf16ce0f35"
+            "sha256": "9b9f439a8f32150ac7100ef5a141b9cc40261cc7ea86346f03b29c62b1a5bb1f"
         },
         {
             "path": "docs/standard.en.md",
-            "sha256": "9bf5f28a8e96788aebfca06908bf3d0ccf557d390564b7963e392959fdbf4b95"
+            "sha256": "b61161cba34e16b40d376caa054ef0e991f8e11991f3dd24438bb0b56df7152d"
         },
         {
             "path": "docs/standard.id.md",
-            "sha256": "4c8c60c4d09c018631354f2751eba1b5036d8d31e2eab5d2dde151cfd702923c"
+            "sha256": "83f69b8cdc474d2d5f53c50af6617ba530b1cc9ed05f7aa06950979b7a035351"
         },
         {
             "path": "docs/standard.ja.md",
-            "sha256": "3d07def4049952703bbd1c8b913d35fce6ac396ed9532995a987f115cacc6347"
+            "sha256": "fc312c11bdcd8c37d53f851b92393961f1b1689947dd60104617b579a41d5cf1"
         },
         {
             "path": "package-lock.json",
-            "sha256": "9f68773c2f9b2627085236c8665f35f80da8eb37e5829232e52274e5be870686"
+            "sha256": "6f19f320f1576e6b76c49b6b60361b150e52cd6bac7fe8b57034b070465274fd"
         },
         {
             "path": "package.json",
-            "sha256": "d8ae3e161c6d2abb69eed7240ca2b455b10a36847abe7816904ec4ea6f92e5e8"
+            "sha256": "bcb4e656fe95a8131a43e0eb5b10f5fc08912acb3a9575d63f068be29d6ac6ec"
         },
         {
             "path": "routes.json",
@@ -702,6 +718,10 @@
             "sha256": "6db0a2ceb0c39cea9c0815de722a24cec2125bcec433e14662577e047cf3b841"
         },
         {
+            "path": "tests/content-batch.test.js",
+            "sha256": "070cebe77a879f3a49a766862e34af0cf2536c4e5444a872bade946da29d9b56"
+        },
+        {
             "path": "tests/content-pack.test.js",
             "sha256": "886c3094a314da93f39d333dfe6b58057585e799caa83a1775a1ac618362838f"
         },
@@ -718,8 +738,12 @@
             "sha256": "c9c0105184cb657c89ad282e138374a8467a4ee28a4325bf598337518d7f6d49"
         },
         {
+            "path": "tests/kanji-pronunciation-coverage.test.js",
+            "sha256": "b5a4b2abab76c022afaaa0a7c377d144bf03aa57f621d0c0526a384b217059b2"
+        },
+        {
             "path": "tests/layer-linkage.test.js",
-            "sha256": "99777329d0ea2e14cfebf423b8e3f19391167971cd4fd49a035cfc33d167e88f"
+            "sha256": "cd5bea5ecb5de458ea228a10300e2ae86896314c37acafe71629c2fc665f952f"
         },
         {
             "path": "tests/localization-quality.test.js",
@@ -727,7 +751,7 @@
         },
         {
             "path": "tests/relationship-authoring.test.js",
-            "sha256": "0ff678687bb7d6e6e78ffa6074ed5eac0a8fca70273a1d02eb6b91a35bc6cc02"
+            "sha256": "5bb6cf0d3cf11dc1a19495baaafbcd68ccab7ea898c137d3f81d54cd8f033c3c"
         },
         {
             "path": "tests/stroke-pattern-provider.test.js",

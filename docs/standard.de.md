@@ -229,3 +229,11 @@ Wenn mehrere unterschiedliche Kanji-Wortschatzeinträge exakt dieselbe vollstän
 ## Stabile Navigation zwischen Ebenen
 
 Beziehungen und niemals eine Suche nach gleicher Beschriftung bestimmen die Kartennavigation. Eine Vokabellesung darf nur dann auf einen weiteren Vokabeleintrag verweisen, wenn dieses Ziel einen echt kleineren Leseabschnitt darstellt; gleich beschriftete Verknüpfungen zwischen Vokabeleinträgen sind verboten. Vollständige Aussprachehüllen für einzelne Kanji rekonstruieren sich deshalb direkt aus geordneten atomaren Kana, während Zusammensetzungen Verknüpfungen zu kleineren erfassten Kanji-Lesesegmenten und Flexions-Kana behalten. Ausgeblendete Lese- und Aussprachedatensätze sind strukturell und enthalten keine Definitionen. Sichtbare Vokabeln behalten nur dann eine Definition, wenn ihre lexikalische Bedeutung vom referenzierten Kanji abweicht; andernfalls liefert die Schreibbeziehung die Definition des übergeordneten Eintrags. Der Host blendet eine einzige Definition aus, deren normalisierter Text exakt der Hauptbeschriftung einer Vokabelkarte entspricht.
+
+## Abdeckung der Kanji-Aussprache
+
+Alle geprüften KANJIDIC-On- und Kun-Lesungen werden nach einer deterministischen Normalisierung ausgeliefert: Katakana werden in Hiragana umgewandelt, Affixmarkierungen entfernt und der Leseabschnitt vor einem Okurigana-Trennzeichen beibehalten. Die Anbieterreihenfolge ist nur eine Darstellungspräferenz; Tests vergleichen die vollständige Menge und verlangen einen ausgeblendeten `reading:kanji`-Datensatz pro normalisierter Aussprache. Kontextbedingte stimmhafte Lesungen wie `だち` für `達` benötigen eine ausdrückliche geprüfte Ausnahme und eine erfasste lexikalische Verwendung. Namenslesungen sind vom Hauptaussprachefeld ausgeschlossen.
+
+## Geprüfter Stapel zu Ort und Art und Weise
+
+Der geprüfte Anfängerstapel ergänzt `ここ`, `そこ`, `どこ`, `いる`, `ある`, `きれい`, `とても`, `ゆっくり` und `です` sowie acht abwechslungsreiche Sätze über Orte, Existenz, Fragen, Aussehen und Art und Weise. Jedes neue Wort besitzt eine lokalisierte Definition und geordnete Kana-Schreibweise; jeder Satz besitzt eine exakte lokalisierte Bedeutung, geordnete lexikalische Zusammensetzung und einen vollständigen ausgeblendeten Aussprachepfad.

@@ -229,3 +229,11 @@ Jika beberapa rekaman kosakata Kanji yang berbeda memiliki pelafalan Kana lengka
 ## Penelusuran kartu antarlapisan yang stabil
 
 Hubungan, bukan pencarian label yang sama, menentukan penelusuran kartu. Sebuah bacaan Kosakata hanya boleh menaut ke rekaman Kosakata lain jika target tersebut mewakili segmen bacaan yang benar-benar lebih kecil; tautan antarkosakata dengan label identik dilarang. Karena itu, pembungkus pelafalan lengkap untuk satu Kanji menyusun kembali bacaannya langsung dari Kana atomik berurutan, sedangkan kata majemuk mempertahankan tautan ke segmen bacaan Kanji yang lebih kecil dan Kana infleksional. Rekaman bacaan dan pelafalan tersembunyi bersifat struktural dan tidak membawa definisi. Kosakata terlihat hanya menyimpan definisi ketika makna leksikalnya berbeda dari Kanji yang dirujuk; jika sama, hubungan ejaan menyediakan definisi induk. Host menyembunyikan satu-satunya definisi jika teks ternormalisasinya persis sama dengan label utama kartu Kosakata.
+
+## Cakupan pelafalan Kanji
+
+Paket harus memuat setiap bacaan on dan kun KANJIDIC yang telah ditinjau setelah normalisasi deterministik: ubah Katakana menjadi Hiragana, hapus penanda afiks, dan pertahankan segmen bacaan sebelum pemisah okurigana. Urutan penyedia hanya menjadi preferensi tampilan; pengujian membandingkan himpunan lengkap dan mewajibkan satu rekaman `reading:kanji` tersembunyi untuk setiap pelafalan ternormalisasi. Bacaan bersuara kontekstual seperti `だち` untuk `達` memerlukan pengecualian tinjauan eksplisit dan penggunaan leksikal yang ditulis. Bacaan nama tidak dimasukkan ke bidang pelafalan inti.
+
+## Batch lokasi dan cara yang ditinjau
+
+Batch pemula yang ditinjau menambahkan `ここ`, `そこ`, `どこ`, `いる`, `ある`, `きれい`, `とても`, `ゆっくり`, dan `です`, serta delapan kalimat bervariasi tentang lokasi, keberadaan, pertanyaan, penampilan, dan cara. Setiap kata baru memiliki definisi terlokalisasi dan ejaan Kana berurutan; setiap kalimat memiliki makna terlokalisasi yang tepat, komposisi leksikal berurutan, dan jalur pelafalan tersembunyi yang lengkap.

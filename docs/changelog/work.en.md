@@ -524,3 +524,9 @@ Replaced duplicate hidden pronunciation cards for `はな`, `はし`, `あめ`, 
 Made authored relationships the only source of reading-card traversal. Vocabulary reading paths can no longer target an identically labeled Vocabulary card: complete single-Kanji pronunciations now resolve directly to ordered Kana, while compounds retain only strictly smaller reading segments. Hidden structural readings no longer copy semantic definitions. Visible vocabulary keeps a localized definition only when its meaning differs from its Kanji; identical meanings fall back through the spelling parent, and definitions identical to the primary label remain suppressed by Cognis.
 
 - [1d37ccf](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/1d37ccf)
+
+## Verified Kanji Readings and Beginner Content
+
+Locked pronunciation coverage to the reviewed KANJIDIC on- and kun-reading inventory, with deterministic normalization, one hidden reading record per result, and an explicit contextual exception for `達` as `だち`. Added localized definitions for divergent lexical cards and a reviewed batch of nine location, existence, description, manner, and copula words with eight natural example sentences and complete pronunciation paths.
+
+- [69fad5d](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/69fad5d)
