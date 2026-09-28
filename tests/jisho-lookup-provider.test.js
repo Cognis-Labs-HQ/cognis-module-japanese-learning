@@ -68,12 +68,15 @@ test("Jisho provider resolves native content before network lookup", async () =>
     assert.equal(requests, 0);
     assert.equal(suggestion.label, "猫");
     assert.deepEqual(suggestion.fields.pronunciation, ["ねこ"]);
-    assert.deepEqual(
-        suggestion.referenceGroups["reading-kana"][0].map(
-            ({ entryId }) => entryId,
-        ),
-        ["ja:char:ne", "ja:char:ko"],
-    );
+    assert.deepEqual(suggestion.referenceGroups["pronunciation-readings"], [
+        [
+            {
+                entryId: "ja:word:pronunciation-neko",
+                relation: "pronunciation-readings",
+                position: 0,
+            },
+        ],
+    ]);
     assert.match(suggestion.provenance, /^cognis-japanese:/);
     assert.equal(suggestion.confidence, 1);
 });
@@ -105,6 +108,16 @@ test("Jisho provider populates fields, detects links, and caches requests", asyn
     assert.equal(first.label, "猫又");
     assert.equal(first.fields.pronunciation, undefined);
     assert.equal(first.fields.jlpt_level, "N2");
+    assert.deepEqual(
+        first.references.filter(({ relation }) => relation === "spelling"),
+        [
+            {
+                entryId: "ja:kanji:core-e78cab",
+                relation: "spelling",
+                position: 0,
+            },
+        ],
+    );
     assert.deepEqual(
         first.referenceGroups["reading-kana"][0].map(
             ({ entryId, position }) => ({ entryId, position }),
@@ -146,7 +159,45 @@ test("Jisho provider does not query invalid or unrelated input", async () => {
         }),
         [],
     );
+    assert.deepEqual(
+        await provider.lookup({
+            schema,
+            layer: { id: "characters" },
+            label: "龍",
+        }),
+        [],
+    );
     assert.equal(requests, 0);
+});
+
+test("Jisho provider never emits a partial Kana pronunciation group", async () => {
+    const provider = createJishoLookupProvider({
+        contentRoot,
+        async fetchImplementation() {
+            return {
+                ok: true,
+                async json() {
+                    return {
+                        data: [
+                            {
+                                slug: "コーヒー",
+                                japanese: [{ reading: "コーヒー" }],
+                                senses: [],
+                                tags: [],
+                                jlpt: [],
+                            },
+                        ],
+                    };
+                },
+            };
+        },
+    });
+    const [suggestion] = await provider.lookup({
+        schema,
+        layer: wordLayer,
+        label: "コーヒー",
+    });
+    assert.equal(suggestion.referenceGroups, undefined);
 });
 
 test("Jisho provider does not expose hidden pronunciation shims", async () => {

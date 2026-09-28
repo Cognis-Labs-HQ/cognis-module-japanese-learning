@@ -506,3 +506,9 @@ Ausgeblendete Aussprachedatensätze wurden nur dort wiederhergestellt, wo die Wo
 Jede Kanji-Aussprache verweist nun über einen eigenen ausgeblendeten Datensatz für die vollständige Lesung auf geordnete atomare Kana. Alle sechs Lesungen von `来` (`く`, `きた`, `き`, `こ`, `らい` und `たい`) besitzen jetzt funktionierende Tiefenverknüpfungen; dieselbe Invariante wird für jedes enthaltene Kanji geprüft.
 
 - [f919fa1](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/f919fa1)
+
+## Vollständige Aussprachepfade für Wörter und Sätze
+
+Alle mit Kanji geschriebenen Wörter sind nun mit ihren enthaltenen Schriftzeichen und einem ausgeblendeten Datensatz für die vollständige Aussprache verbunden. Dabei bleiben vorhandene Kanji-Lesesegmente vor den atomaren Kana erhalten. Satzaussprachen durchlaufen vollständige ausgeblendete Datensätze aus Wortlesungen und Partikel-Kana. Jisho-Vorschläge prüfen außerdem die Schrift je Ebene, behalten verfügbare Kanji-Schreibverknüpfungen bei und lassen unvollständige Kana-Gruppen weg.
+
+- [8f5a3e5](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/8f5a3e5)

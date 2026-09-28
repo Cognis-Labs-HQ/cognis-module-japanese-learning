@@ -506,3 +506,9 @@ Restored hidden pronunciation records only where a Vocabulary meaning differs fr
 Corrected every Kanji pronunciation to link through its own hidden complete-reading record before resolving to ordered atomic Kana. All six readings of `来` (`く`, `きた`, `き`, `こ`, `らい`, and `たい`) now have working deep links, and the same invariant is enforced for every packaged Kanji.
 
 - [f919fa1](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/f919fa1)
+
+## Complete Word and Sentence Pronunciation Paths
+
+Connected every Kanji-spelled word to its packaged writing records and one hidden complete-pronunciation record, preserving authored Kanji-reading segments before atomic Kana. Sentence pronunciations now traverse complete hidden records assembled from word readings and particle Kana. Jisho suggestions also enforce layer-specific scripts, retain available Kanji spelling links, and omit incomplete Kana groups.
+
+- [8f5a3e5](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/8f5a3e5)

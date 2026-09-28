@@ -74,7 +74,7 @@ test("fields publish provider-owned editor controls", () => {
     }
 });
 
-test("vocabulary pronunciation links through direct Kana or hidden shims", () => {
+test("vocabulary pronunciation links through complete hidden readings", () => {
     const wordLayer = schema.layers.find(({ id }) => id === "words");
     const pronunciation = wordLayer.fields.find(
         ({ id }) => id === "pronunciation",
@@ -90,13 +90,15 @@ test("vocabulary pronunciation links through direct Kana or hidden shims", () =>
         );
         assert.ok(references.length > 0, word.id);
         assert.ok(
-            references.every(
-                ({ entryId, relation }) =>
-                    (relation === "reading-kana" &&
-                        recordsById.get(entryId)?.fields.character_class) ||
-                    (relation === "pronunciation-readings" &&
-                        recordsById.get(entryId)?.hidden === true),
-            ),
+            references
+                .filter(({ relation }) => relation !== "spelling")
+                .every(
+                    ({ entryId, relation }) =>
+                        (relation === "reading-kana" &&
+                            recordsById.get(entryId)?.fields.character_class) ||
+                        (relation === "pronunciation-readings" &&
+                            recordsById.get(entryId)?.hidden === true),
+                ),
             word.id,
         );
     }
@@ -114,7 +116,7 @@ test("vocabulary shims are hidden and definition-bearing", () => {
         ({ class: contentClass, hidden }) =>
             hidden === true && contentClass === "reading:pronunciation",
     );
-    assert.equal(shims.length, 22);
+    assert.equal(shims.length, 53);
     assert.ok(
         shims.every(
             ({ class: contentClass }) =>

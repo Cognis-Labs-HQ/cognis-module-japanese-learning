@@ -657,7 +657,7 @@ test("small-tsu forms stay hidden while retaining their parent links", () => {
     );
 });
 
-test("every vocabulary pronunciation resolves to atomic Kana", () => {
+test("every vocabulary pronunciation has an acyclic path to atomic Kana", () => {
     const { records } = loadPack();
     const entries = new Map(records.map((record) => [record.id, record]));
     for (const word of records.filter(({ layer }) => layer === "words")) {
@@ -681,15 +681,7 @@ test("every vocabulary pronunciation resolves to atomic Kana", () => {
         assert.ok(
             shimLinks.every(({ entryId }) => {
                 const shim = entries.get(entryId);
-                return (
-                    shim.layer === "words" &&
-                    shim.hidden === true &&
-                    shim.references.some(
-                        ({ entryId: kanaId, relation }) =>
-                            relation === "reading-kana" &&
-                            entries.get(kanaId).layer === "characters",
-                    )
-                );
+                return shim.layer === "words" && shim.hidden === true;
             }),
         );
     }
@@ -728,17 +720,22 @@ test("Kanji and vocabulary preserve grouped Kana pronunciation references", () =
                 false,
             );
             groups.forEach((group, groupIndex) => {
-                assert.deepEqual(
-                    group.map(({ position }) => position),
-                    group.map((_, position) => position),
+                assert.ok(
+                    group.every(
+                        ({ position }, index) =>
+                            index === 0 || position > group[index - 1].position,
+                    ),
                 );
-                assert.equal(
-                    group
-                        .map(({ entryId }) => recordsById.get(entryId).label)
-                        .join(""),
-                    record.fields.pronunciation[groupIndex],
-                    `${record.id} pronunciation ${groupIndex}`,
-                );
+                if (Object.keys(record.referenceGroups).length === 1)
+                    assert.equal(
+                        group
+                            .map(
+                                ({ entryId }) => recordsById.get(entryId).label,
+                            )
+                            .join(""),
+                        record.fields.pronunciation[groupIndex],
+                        `${record.id} pronunciation ${groupIndex}`,
+                    );
             });
             if (layerId === "alt-characters" && groups.length > 1)
                 multipleKanjiReadings += 1;

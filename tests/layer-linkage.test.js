@@ -50,10 +50,14 @@ function derivedPronunciation(record, recordsById, visited = new Set()) {
     if (!record || visited.has(record.id)) return "";
     if (record.layer === "characters") return record.label;
     const nextVisited = new Set(visited).add(record.id);
-    const groupedReferences =
-        record.referenceGroups?.["pronunciation-readings"]?.[0] ??
-        record.referenceGroups?.["reading-kana"]?.[0];
-    return (groupedReferences ?? record.references ?? [])
+    const groupedReferences = [
+        ...(record.referenceGroups?.["pronunciation-readings"]?.[0] ?? []),
+        ...(record.referenceGroups?.["reading-kana"]?.[0] ?? []),
+        ...(record.referenceGroups?.["kana-spelling"]?.[0] ?? []),
+    ];
+    return (
+        groupedReferences.length ? groupedReferences : (record.references ?? [])
+    )
         .filter(({ relation }) => relation !== "definitions")
         .slice()
         .sort(
@@ -126,7 +130,7 @@ test("the authored graph derives pronunciation from atomic Kana", () => {
     );
 });
 
-test("visible vocabulary uses hidden shims only for distinct lexical meanings", () => {
+test("visible Kanji vocabulary uses complete hidden pronunciation records", () => {
     const records = loadRecords();
     const recordsById = new Map(records.map((record) => [record.id, record]));
     const vocabulary = records.filter(
@@ -141,7 +145,7 @@ test("visible vocabulary uses hidden shims only for distinct lexical meanings", 
 
     assert.equal(vocabulary.length, 37);
     assert.ok(vocabulary.every(({ hidden }) => hidden !== true));
-    assert.equal(shims.length, 22);
+    assert.equal(shims.length, 53);
     assert.ok(
         shims.every(
             ({ class: contentClass }) =>
@@ -149,20 +153,11 @@ test("visible vocabulary uses hidden shims only for distinct lexical meanings", 
         ),
     );
     for (const word of vocabulary) {
-        const structural = (word.references ?? []).filter(
-            ({ relation }) => relation !== "definitions",
+        const structural = (word.references ?? []).filter(({ relation }) =>
+            ["reading-kana", "pronunciation-readings"].includes(relation),
         );
         assert.ok(structural.length > 0, word.id);
-        assert.ok(
-            structural.every(
-                ({ entryId, relation }) =>
-                    (relation === "reading-kana" &&
-                        recordsById.get(entryId)?.layer === "characters") ||
-                    (relation === "pronunciation-readings" &&
-                        recordsById.get(entryId)?.hidden === true),
-            ),
-            word.id,
-        );
+        assert.ok(structural.some(({ relation }) => relation !== "spelling"));
         assert.deepEqual(
             structural.map(({ position }) => position),
             structural.map((_, position) => position),
@@ -211,7 +206,7 @@ test("pronunciation shims stay hidden and connect Kanji to Kana", () => {
             hidden === true &&
             contentClass === "reading:pronunciation",
     );
-    assert.equal(shims.length, 22);
+    assert.equal(shims.length, 53);
     for (const shim of shims) {
         const shimDefinitionIds = new Set(
             shim.references
@@ -232,19 +227,18 @@ test("pronunciation shims stay hidden and connect Kanji to Kana", () => {
                 .map(({ entryId }) => entryId),
         );
         assert.notDeepEqual(shimDefinitionIds, kanjiDefinitionIds, shim.id);
+        if (!shim.id.includes(":pronunciation-sentence-"))
+            assert.ok(
+                shim.references.some(
+                    ({ entryId, relation }) =>
+                        relation === "spelling" &&
+                        recordsById.get(entryId)?.layer === "alt-characters",
+                ),
+                shim.id,
+            );
         assert.ok(
-            shim.references.some(
-                ({ entryId, relation }) =>
-                    relation === "spelling" &&
-                    recordsById.get(entryId)?.layer === "alt-characters",
-            ),
-            shim.id,
-        );
-        assert.ok(
-            shim.references.some(
-                ({ entryId, relation }) =>
-                    relation === "reading-kana" &&
-                    recordsById.get(entryId)?.layer === "characters",
+            shim.references.some(({ relation }) =>
+                ["reading-kana", "pronunciation-readings"].includes(relation),
             ),
             shim.id,
         );

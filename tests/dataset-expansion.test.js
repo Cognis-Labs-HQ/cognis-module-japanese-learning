@@ -28,7 +28,7 @@ function load(directory) {
             ],
         }));
 }
-const vocabulary = load("words");
+const vocabulary = load("words").filter(({ hidden }) => hidden !== true);
 const definitions = new Map(
     load("definitions").map((entry) => [entry.id, entry]),
 );
@@ -44,11 +44,7 @@ function definitionIds(entry) {
         .map(({ entryId }) => entryId);
 }
 function reading(entry) {
-    return entry.references
-        .filter(({ relation }) => relation === "reading-kana")
-        .sort((left, right) => left.position - right.position)
-        .map(({ entryId }) => characters.get(entryId).label)
-        .join("");
+    return entry.fields.pronunciation[0];
 }
 
 test("expanded learning data remains declarative and substantial", () => {

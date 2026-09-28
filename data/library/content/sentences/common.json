@@ -26,6 +26,17 @@
         "fields": {
             "pronunciation": ["にほんごがすき"]
         },
-        "class": "composite"
+        "class": "composite",
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:pronunciation-sentence-nihongo-ga-suki",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
     }
 ]

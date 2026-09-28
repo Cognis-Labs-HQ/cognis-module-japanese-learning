@@ -8,6 +8,8 @@ const SUPPORTED_LAYERS = new Set(["characters", "alt-characters", "words"]);
 const JAPANESE_TEXT =
     /^[\p{Script=Han}\p{Script=Hiragana}\p{Script=Katakana}々〆ヶー]+$/u;
 const KANJI = /\p{Script=Han}/u;
+const SINGLE_KANA = /^[\p{Script=Hiragana}\p{Script=Katakana}]$/u;
+const SINGLE_KANJI = /^\p{Script=Han}$/u;
 const CACHE_LIMIT = 512;
 
 function providerMetadata() {
@@ -115,7 +117,7 @@ function exactNativeReference(index, layer, label, relation, position) {
 }
 
 function kanaReferences(index, reading, relation) {
-    return [...reading]
+    const references = [...reading]
         .map((character, position) =>
             exactNativeReference(
                 index,
@@ -126,6 +128,7 @@ function kanaReferences(index, reading, relation) {
             ),
         )
         .filter(Boolean);
+    return references.length === [...reading].length ? references : [];
 }
 
 function wordReferences(index, reading) {
@@ -133,7 +136,30 @@ function wordReferences(index, reading) {
 }
 
 function kanjiReferences(index, readings) {
-    return kanaReferences(index, readings[0] ?? "", "readings");
+    const reading = readings[0] ?? "";
+    const target = index
+        .byLabel("words", reading)
+        .find(
+            ({ class: contentClass, hidden }) =>
+                hidden === true && contentClass === "reading:kanji",
+        );
+    return target
+        ? [{ entryId: target.id, relation: "readings", position: 0 }]
+        : [];
+}
+
+function spellingReferences(index, label) {
+    return [...label].flatMap((character, position) => {
+        if (!KANJI.test(character)) return [];
+        const reference = exactNativeReference(
+            index,
+            "alt-characters",
+            character,
+            "spelling",
+            position,
+        );
+        return reference ? [reference] : [];
+    });
 }
 
 function definitionReferences(index, record) {
@@ -185,6 +211,8 @@ function jishoSuggestion(index, layer, label, data) {
     const references = [];
     if (layer !== "characters")
         references.push(...definitionReferences(index, record));
+    if (layer === "words")
+        references.unshift(...spellingReferences(index, canonicalLabel));
     return {
         provider: PROVIDER_ID,
         label: canonicalLabel,
@@ -275,7 +303,11 @@ export function createJishoLookupProvider({
             if (
                 !normalizedLabel ||
                 !SUPPORTED_LAYERS.has(layer?.id) ||
-                !JAPANESE_TEXT.test(normalizedLabel)
+                !JAPANESE_TEXT.test(normalizedLabel) ||
+                (layer.id === "characters" &&
+                    !SINGLE_KANA.test(normalizedLabel)) ||
+                (layer.id === "alt-characters" &&
+                    !SINGLE_KANJI.test(normalizedLabel))
             ) {
                 return [];
             }

@@ -1,5 +1,37 @@
 [
     {
+        "id": "ja:word:pronunciation-kami-hair",
+        "label": "かみ",
+        "fields": {
+            "pronunciation": ["かみ"],
+            "jlpt_level": "N5"
+        },
+        "references": [
+            {
+                "entryId": "ja:kanji:core-e9abaa",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:def:kami-hair",
+                "relation": "definitions"
+            }
+        ],
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:kanji-reading-e9abaa-01",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
         "id": "ja:word:pronunciation-kami-deity",
         "label": "かみ",
         "fields": {
@@ -20,17 +52,12 @@
         "class": "reading:pronunciation",
         "hidden": true,
         "referenceGroups": {
-            "reading-kana": [
+            "pronunciation-readings": [
                 [
                     {
-                        "entryId": "ja:char:ka",
-                        "relation": "reading-kana",
+                        "entryId": "ja:word:kanji-reading-e7a59e-01",
+                        "relation": "pronunciation-readings",
                         "position": 0
-                    },
-                    {
-                        "entryId": "ja:char:mi",
-                        "relation": "reading-kana",
-                        "position": 1
                     }
                 ]
             ]
@@ -57,22 +84,12 @@
         "class": "reading:pronunciation",
         "hidden": true,
         "referenceGroups": {
-            "reading-kana": [
+            "pronunciation-readings": [
                 [
                     {
-                        "entryId": "ja:char:ku",
-                        "relation": "reading-kana",
+                        "entryId": "ja:word:kanji-reading-e8bb8a-02",
+                        "relation": "pronunciation-readings",
                         "position": 0
-                    },
-                    {
-                        "entryId": "ja:char:ru",
-                        "relation": "reading-kana",
-                        "position": 1
-                    },
-                    {
-                        "entryId": "ja:char:ma",
-                        "relation": "reading-kana",
-                        "position": 2
                     }
                 ]
             ]
@@ -104,27 +121,17 @@
         "class": "reading:pronunciation",
         "hidden": true,
         "referenceGroups": {
-            "reading-kana": [
+            "pronunciation-readings": [
                 [
                     {
-                        "entryId": "ja:char:de",
-                        "relation": "reading-kana",
+                        "entryId": "ja:word:kanji-reading-e99bbb-01",
+                        "relation": "pronunciation-readings",
                         "position": 0
                     },
                     {
-                        "entryId": "ja:char:n",
-                        "relation": "reading-kana",
-                        "position": 1
-                    },
-                    {
-                        "entryId": "ja:char:shi",
-                        "relation": "reading-kana",
+                        "entryId": "ja:word:kanji-reading-e8bb8a-01",
+                        "relation": "pronunciation-readings",
                         "position": 2
-                    },
-                    {
-                        "entryId": "ja:char:small-ya",
-                        "relation": "reading-kana",
-                        "position": 3
                     }
                 ]
             ]
@@ -167,16 +174,15 @@
                         "entryId": "ja:char:small-tsu",
                         "relation": "reading-kana",
                         "position": 1
-                    },
+                    }
+                ]
+            ],
+            "pronunciation-readings": [
+                [
                     {
-                        "entryId": "ja:char:ko",
-                        "relation": "reading-kana",
+                        "entryId": "ja:word:kanji-reading-e6a0a1-01",
+                        "relation": "pronunciation-readings",
                         "position": 2
-                    },
-                    {
-                        "entryId": "ja:char:u",
-                        "relation": "reading-kana",
-                        "position": 3
                     }
                 ]
             ]
@@ -208,27 +214,17 @@
         "class": "reading:pronunciation",
         "hidden": true,
         "referenceGroups": {
-            "reading-kana": [
+            "pronunciation-readings": [
                 [
                     {
-                        "entryId": "ja:char:se",
-                        "relation": "reading-kana",
+                        "entryId": "ja:word:kanji-reading-e58588-01",
+                        "relation": "pronunciation-readings",
                         "position": 0
                     },
                     {
-                        "entryId": "ja:char:n",
-                        "relation": "reading-kana",
-                        "position": 1
-                    },
-                    {
-                        "entryId": "ja:char:se",
-                        "relation": "reading-kana",
+                        "entryId": "ja:word:kanji-reading-e7949f-01",
+                        "relation": "pronunciation-readings",
                         "position": 2
-                    },
-                    {
-                        "entryId": "ja:char:i",
-                        "relation": "reading-kana",
-                        "position": 3
                     }
                 ]
             ]
@@ -260,27 +256,17 @@
         "class": "reading:pronunciation",
         "hidden": true,
         "referenceGroups": {
-            "reading-kana": [
+            "pronunciation-readings": [
                 [
                     {
-                        "entryId": "ja:char:ga",
-                        "relation": "reading-kana",
+                        "entryId": "ja:word:kanji-reading-e5ada6-01",
+                        "relation": "pronunciation-readings",
                         "position": 0
                     },
                     {
-                        "entryId": "ja:char:ku",
-                        "relation": "reading-kana",
-                        "position": 1
-                    },
-                    {
-                        "entryId": "ja:char:se",
-                        "relation": "reading-kana",
+                        "entryId": "ja:word:kanji-reading-e7949f-01",
+                        "relation": "pronunciation-readings",
                         "position": 2
-                    },
-                    {
-                        "entryId": "ja:char:i",
-                        "relation": "reading-kana",
-                        "position": 3
                     }
                 ]
             ]
@@ -312,27 +298,17 @@
         "class": "reading:pronunciation",
         "hidden": true,
         "referenceGroups": {
-            "reading-kana": [
+            "pronunciation-readings": [
                 [
                     {
-                        "entryId": "ja:char:to",
-                        "relation": "reading-kana",
+                        "entryId": "ja:word:kanji-reading-e58f8b-01",
+                        "relation": "pronunciation-readings",
                         "position": 0
                     },
                     {
-                        "entryId": "ja:char:mo",
-                        "relation": "reading-kana",
-                        "position": 1
-                    },
-                    {
-                        "entryId": "ja:char:da",
-                        "relation": "reading-kana",
+                        "entryId": "ja:word:kanji-reading-e98194-01",
+                        "relation": "pronunciation-readings",
                         "position": 2
-                    },
-                    {
-                        "entryId": "ja:char:chi",
-                        "relation": "reading-kana",
-                        "position": 3
                     }
                 ]
             ]
@@ -359,13 +335,17 @@
         "class": "reading:pronunciation",
         "hidden": true,
         "referenceGroups": {
-            "reading-kana": [
+            "pronunciation-readings": [
                 [
                     {
-                        "entryId": "ja:char:ta",
-                        "relation": "reading-kana",
+                        "entryId": "ja:word:kanji-reading-e9a39f-01",
+                        "relation": "pronunciation-readings",
                         "position": 0
-                    },
+                    }
+                ]
+            ],
+            "reading-kana": [
+                [
                     {
                         "entryId": "ja:char:be",
                         "relation": "reading-kana",
@@ -401,13 +381,17 @@
         "class": "reading:pronunciation",
         "hidden": true,
         "referenceGroups": {
-            "reading-kana": [
+            "pronunciation-readings": [
                 [
                     {
-                        "entryId": "ja:char:no",
-                        "relation": "reading-kana",
+                        "entryId": "ja:word:kanji-reading-e9a3b2-01",
+                        "relation": "pronunciation-readings",
                         "position": 0
-                    },
+                    }
+                ]
+            ],
+            "reading-kana": [
+                [
                     {
                         "entryId": "ja:char:mu",
                         "relation": "reading-kana",
@@ -438,13 +422,17 @@
         "class": "reading:pronunciation",
         "hidden": true,
         "referenceGroups": {
-            "reading-kana": [
+            "pronunciation-readings": [
                 [
                     {
-                        "entryId": "ja:char:mi",
-                        "relation": "reading-kana",
+                        "entryId": "ja:word:kanji-reading-e8a68b-01",
+                        "relation": "pronunciation-readings",
                         "position": 0
-                    },
+                    }
+                ]
+            ],
+            "reading-kana": [
+                [
                     {
                         "entryId": "ja:char:ru",
                         "relation": "reading-kana",
@@ -475,17 +463,281 @@
         "class": "reading:pronunciation",
         "hidden": true,
         "referenceGroups": {
-            "reading-kana": [
+            "pronunciation-readings": [
                 [
                     {
-                        "entryId": "ja:char:i",
-                        "relation": "reading-kana",
+                        "entryId": "ja:word:kanji-reading-e8a18c-01",
+                        "relation": "pronunciation-readings",
                         "position": 0
-                    },
+                    }
+                ]
+            ],
+            "reading-kana": [
+                [
                     {
                         "entryId": "ja:char:ku",
                         "relation": "reading-kana",
                         "position": 1
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:pronunciation-kuru",
+        "label": "くる",
+        "fields": {
+            "pronunciation": ["くる"],
+            "jlpt_level": "N5"
+        },
+        "references": [
+            {
+                "entryId": "ja:kanji:core-e69da5",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:def:kuru",
+                "relation": "definitions"
+            }
+        ],
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:kanji-reading-e69da5-01",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ],
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:ru",
+                        "relation": "reading-kana",
+                        "position": 1
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:pronunciation-ookii",
+        "label": "おおきい",
+        "fields": {
+            "pronunciation": ["おおきい"],
+            "jlpt_level": "N5"
+        },
+        "references": [
+            {
+                "entryId": "ja:kanji:core-e5a4a7",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:def:ookii",
+                "relation": "definitions"
+            }
+        ],
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:kanji-reading-e5a4a7-01",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ],
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:ki",
+                        "relation": "reading-kana",
+                        "position": 2
+                    },
+                    {
+                        "entryId": "ja:char:i",
+                        "relation": "reading-kana",
+                        "position": 3
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:pronunciation-chiisai",
+        "label": "ちいさい",
+        "fields": {
+            "pronunciation": ["ちいさい"],
+            "jlpt_level": "N5"
+        },
+        "references": [
+            {
+                "entryId": "ja:kanji:core-e5b08f",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:def:chiisai",
+                "relation": "definitions"
+            }
+        ],
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:kanji-reading-e5b08f-01",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ],
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:sa",
+                        "relation": "reading-kana",
+                        "position": 2
+                    },
+                    {
+                        "entryId": "ja:char:i",
+                        "relation": "reading-kana",
+                        "position": 3
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:pronunciation-naosu",
+        "label": "なおす",
+        "fields": {
+            "pronunciation": ["なおす"],
+            "jlpt_level": "N5"
+        },
+        "references": [
+            {
+                "entryId": "ja:kanji:core-e79bb4",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:def:naosu-fix",
+                "relation": "definitions"
+            },
+            {
+                "entryId": "ja:def:naosu-correct",
+                "relation": "definitions"
+            }
+        ],
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:kanji-reading-e79bb4-01",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ],
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:su",
+                        "relation": "reading-kana",
+                        "position": 2
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:pronunciation-manabu",
+        "label": "まなぶ",
+        "fields": {
+            "pronunciation": ["まなぶ"],
+            "jlpt_level": "N5"
+        },
+        "references": [
+            {
+                "entryId": "ja:kanji:core-e5ada6",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:def:manabu",
+                "relation": "definitions"
+            }
+        ],
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:kanji-reading-e5ada6-02",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ],
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:bu",
+                        "relation": "reading-kana",
+                        "position": 2
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:pronunciation-aruku",
+        "label": "あるく",
+        "fields": {
+            "pronunciation": ["あるく"],
+            "jlpt_level": "N5"
+        },
+        "references": [
+            {
+                "entryId": "ja:kanji:core-walk",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:def:aruku",
+                "relation": "definitions"
+            }
+        ],
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:kanji-reading-walk-01",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ],
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:ku",
+                        "relation": "reading-kana",
+                        "position": 2
                     }
                 ]
             ]

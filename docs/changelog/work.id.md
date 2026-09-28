@@ -506,3 +506,9 @@ Rekaman pelafalan tersembunyi dipulihkan hanya ketika makna Kosakata berbeda dar
 Setiap pelafalan Kanji kini ditautkan melalui rekaman bacaan lengkap tersembunyi tersendiri sebelum diteruskan ke Kana atomik yang berurutan. Keenam bacaan `来` (`く`, `きた`, `き`, `こ`, `らい`, dan `たい`) sekarang memiliki tautan mendalam yang berfungsi, dan invarian yang sama diberlakukan untuk setiap Kanji dalam paket.
 
 - [f919fa1](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/f919fa1)
+
+## Jalur Pelafalan Kata dan Kalimat yang Lengkap
+
+Setiap kata beraksara Kanji kini terhubung ke rekaman tulisannya dan satu rekaman pelafalan lengkap yang tersembunyi, sambil mempertahankan segmen bacaan Kanji yang telah ditulis sebelum Kana atomik. Pelafalan kalimat kini menelusuri rekaman lengkap tersembunyi yang tersusun dari bacaan kata dan Kana partikel. Saran Jisho juga memvalidasi aksara khusus tiap lapisan, mempertahankan tautan ejaan Kanji yang tersedia, dan menghilangkan grup Kana yang tidak lengkap.
+
+- [8f5a3e5](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/8f5a3e5)
