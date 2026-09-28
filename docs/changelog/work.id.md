@@ -536,3 +536,9 @@ Cakupan pelafalan kini dikunci pada inventaris bacaan on dan kun KANJIDIC yang t
 Telah dikonfirmasi bahwa penghapusan kartu tahap diimplementasikan dan ditata oleh composer Study Library Cognis, bukan oleh modul konten bahasa Jepang eksternal ini. Selektor host yang tepat, perbaikan ukuran yang diperlukan, dan pengujian regresi browser dicatat dalam `TODO.md`; modul tidak menyuntikkan penimpaan CSS yang tidak aman ke editor milik host.
 
 - [c1a4b7b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/c1a4b7b)
+
+## Resolusi Romanisasi Khusus Kana
+
+Dipastikan bahwa paket bahasa Jepang telah membatasi romanisasi Hepburn pada Kana atomik, sedangkan bacaan lapisan yang lebih tinggi ditulis sebagai label Kana Jepang. Koreksi tepat yang diperlukan pada composer Cognis dicatat agar penurunan pelafalan rekursif tidak meneruskan romanisasi Kana ke bacaan Kosakata dan kalimat; modul eksternal tidak menimpa perilaku penurunan milik host.
+
+- [2324f5b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/2324f5b)

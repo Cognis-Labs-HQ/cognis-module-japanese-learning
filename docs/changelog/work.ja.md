@@ -536,3 +536,9 @@ Bootstrap は注入済みの公開 `study:library:provider` ケイパビリテ�
 ステージ上のカード削除処理とスタイルは、この外部日本語コンテンツモジュールではなく Cognis Study Library コンポーザーが所有することを確認しました。正確なホスト側セレクター、必要なサイズ修正、ブラウザー回帰テストを `TODO.md` に記録し、ホスト所有のエディターへ安全でない CSS 上書きを注入しない方針としました。
 
 - [c1a4b7b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/c1a4b7b)
+
+## かな限定のローマ字解決
+
+日本語パックではヘボン式ローマ字を原子的なかなに限定し、上位レイヤーの読みを日本語のかなラベルとして作成済みであることを確認しました。再帰的な発音導出によってかなのローマ字が語彙や文の読みに持ち上がらないようにするため、Cognis コンポーザーに必要な修正箇所を正確に記録しました。外部モジュールからホスト所有の導出動作を上書きすることはありません。
+
+- [2324f5b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/2324f5b)

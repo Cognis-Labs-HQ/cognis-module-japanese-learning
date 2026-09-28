@@ -536,3 +536,9 @@ Locked pronunciation coverage to the reviewed KANJIDIC on- and kun-reading inven
 Confirmed that staged-card removal is implemented and styled by the Cognis Study Library composer rather than this external Japanese content module. Recorded the exact host selectors, required sizing fix, and browser regression test in `TODO.md`; the module does not inject an unsafe CSS override into a host-owned editor.
 
 - [c1a4b7b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/c1a4b7b)
+
+## Kana-Only Romanization Resolution
+
+Confirmed that the Japanese pack already keeps Hepburn romanization on atomic Kana while higher-layer readings are authored as Japanese Kana labels. Recorded the exact Cognis composer correction needed to stop recursive pronunciation derivation from promoting Kana romanization into Vocabulary and sentence readings; the external module does not override host-owned derivation behavior.
+
+- [2324f5b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/2324f5b)

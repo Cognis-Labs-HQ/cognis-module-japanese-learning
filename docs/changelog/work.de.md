@@ -536,3 +536,9 @@ Die Ausspracheabdeckung ist jetzt auf den geprüften KANJIDIC-Bestand an On- und
 Es wurde bestätigt, dass das Entfernen bereitgestellter Karten im Cognis Study-Library-Composer implementiert und gestaltet wird und nicht in diesem externen Japanisch-Inhaltsmodul. Die genauen Host-Selektoren, die erforderliche Größenkorrektur und der Browser-Regressionstest sind in `TODO.md` festgehalten; das Modul schleust keine unsichere CSS-Überschreibung in einen vom Host verwalteten Editor ein.
 
 - [c1a4b7b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/c1a4b7b)
+
+## Romanisierungsauflösung nur für Kana
+
+Es wurde bestätigt, dass das Japanisch-Paket die Hepburn-Umschrift bereits auf atomare Kana beschränkt, während Lesungen höherer Ebenen als japanische Kana-Bezeichnungen verfasst sind. Die genaue erforderliche Korrektur am Cognis-Composer wurde festgehalten, damit die rekursive Ausspracheableitung die Kana-Umschrift nicht in Wortschatz- und Satzlesungen übernimmt; das externe Modul überschreibt kein hosteigenes Ableitungsverhalten.
+
+- [2324f5b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/2324f5b)
