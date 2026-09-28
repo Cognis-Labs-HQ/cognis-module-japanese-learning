@@ -500,3 +500,9 @@ Alternative Kanji-Lesungen wurden wiederhergestellt, und jede Aussprache von Kan
 Ausgeblendete Aussprachedatensätze wurden nur dort wiederhergestellt, wo die Wortschatzbedeutung von den Definitionen der geschriebenen Kanji abweicht. Jede Brücke trägt die lexikalische Definition, verknüpft die betreffende Kanji-Schreibweise und löst über gruppierte Kana-Verweise auf; Wörter mit gleicher Definition behalten ihren direkten Kana-Pfad, und Lookup-Vorschläge schließen die ausgeblendeten Datensätze aus.
 
 - [448f99e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/448f99e)
+
+## Vollständige Verknüpfungen für Kanji-Aussprachen
+
+Jede Kanji-Aussprache verweist nun über einen eigenen ausgeblendeten Datensatz für die vollständige Lesung auf geordnete atomare Kana. Alle sechs Lesungen von `来` (`く`, `きた`, `き`, `こ`, `らい` und `たい`) besitzen jetzt funktionierende Tiefenverknüpfungen; dieselbe Invariante wird für jedes enthaltene Kanji geprüft.
+
+- [f919fa1](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/f919fa1)

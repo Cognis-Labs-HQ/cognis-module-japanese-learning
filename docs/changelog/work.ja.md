@@ -500,3 +500,9 @@ Bootstrap は注入済みの公開 `study:library:provider` ケイパビリテ�
 語彙の意味が表記漢字の定義と異なる場合に限り、非表示の発音レコードを復元しました。各シムは語彙固有の定義を持ち、該当する漢字表記をリンクし、グループ化されたかな参照へ解決します。定義が同一の語は直接かな経路を維持し、Lookup 候補には非表示レコードを含めません。
 
 - [448f99e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/448f99e)
+
+## 漢字の発音リンクを完全化
+
+すべての漢字の発音が、読みごとの非表示の完全読みレコードを経由して、順序付きの最小かなへ解決されるよう修正しました。`来` の6つの読み（`く`、`きた`、`き`、`こ`、`らい`、`たい`）はすべて深いリンクが機能し、同じ不変条件を収録済みの全漢字に適用しています。
+
+- [f919fa1](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/f919fa1)

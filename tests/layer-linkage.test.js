@@ -32,7 +32,7 @@ function loadRecords() {
                             ...(record.references ?? []),
                             ...Object.values(
                                 record.referenceGroups ?? {},
-                            ).flatMap((groups) => groups[0] ?? []),
+                            ).flatMap((groups) => groups.flat()),
                         ],
                         layer: directory.name,
                     })),
@@ -71,6 +71,18 @@ function derivedPronunciation(record, recordsById, visited = new Set()) {
         .join("");
 }
 
+function derivedGroupedPronunciations(record, relationship, recordsById) {
+    return (record.referenceGroups?.[relationship] ?? []).map((group) =>
+        group
+            .slice()
+            .sort((left, right) => left.position - right.position)
+            .map(({ entryId }) =>
+                derivedPronunciation(recordsById.get(entryId), recordsById),
+            )
+            .join(""),
+    );
+}
+
 test("the authored graph derives pronunciation from atomic Kana", () => {
     const records = loadRecords();
     const recordsById = new Map(records.map((record) => [record.id, record]));
@@ -84,15 +96,17 @@ test("the authored graph derives pronunciation from atomic Kana", () => {
             assert.notEqual(record.fields.pronunciation[0], record.label);
         }
         if (role === "compoundWritingUnit") {
-            assert.equal(
-                derivedPronunciation(record, recordsById),
-                record.fields.pronunciation[0],
+            assert.deepEqual(
+                derivedGroupedPronunciations(record, "readings", recordsById),
+                record.fields.pronunciation,
                 record.id,
             );
             assert.ok(
                 orderedReferences(record, new Set(["readings"])).every(
                     ({ entryId }) =>
-                        recordsById.get(entryId).layer === "characters",
+                        recordsById.get(entryId).layer === "words" &&
+                        recordsById.get(entryId).hidden === true &&
+                        recordsById.get(entryId).class === "reading:kanji",
                 ),
             );
         }
@@ -119,7 +133,10 @@ test("visible vocabulary uses hidden shims only for distinct lexical meanings", 
         ({ layer, hidden }) => layer === "words" && hidden !== true,
     );
     const shims = records.filter(
-        ({ layer, hidden }) => layer === "words" && hidden === true,
+        ({ class: contentClass, layer, hidden }) =>
+            layer === "words" &&
+            hidden === true &&
+            contentClass === "reading:pronunciation",
     );
 
     assert.equal(vocabulary.length, 37);
@@ -235,6 +252,44 @@ test("pronunciation shims stay hidden and connect Kanji to Kana", () => {
             shim.references.some(({ relation }) => relation === "definitions"),
             shim.id,
         );
+    }
+});
+
+test("every Kanji pronunciation resolves through its own hidden Kana reading", () => {
+    const records = loadRecords();
+    const recordsById = new Map(records.map((record) => [record.id, record]));
+    const kanji = records.filter(({ layer }) => layer === "alt-characters");
+    const readings = records.filter(
+        ({ class: contentClass, hidden, layer }) =>
+            layer === "words" &&
+            hidden === true &&
+            contentClass === "reading:kanji",
+    );
+
+    assert.equal(readings.length, 140);
+    for (const record of kanji) {
+        const groups = record.referenceGroups?.readings ?? [];
+        assert.equal(
+            groups.length,
+            record.fields.pronunciation.length,
+            record.id,
+        );
+        assert.deepEqual(
+            derivedGroupedPronunciations(record, "readings", recordsById),
+            record.fields.pronunciation,
+            record.id,
+        );
+        for (const group of groups) {
+            assert.equal(group.length, 1, record.id);
+            const target = recordsById.get(group[0].entryId);
+            assert.equal(target?.hidden, true, record.id);
+            assert.equal(target?.class, "reading:kanji", record.id);
+            assert.equal(
+                target?.referenceGroups?.["kana-spelling"]?.length,
+                1,
+                target?.id,
+            );
+        }
     }
 });
 

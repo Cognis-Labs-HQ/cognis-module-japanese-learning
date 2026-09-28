@@ -1,6 +1,6 @@
 {
     "id": "japanese-core",
-    "version": 63,
+    "version": 64,
     "namespace": "ja",
     "language": "ja",
     "metadata": {
@@ -430,7 +430,7 @@
             "relationships": [
                 {
                     "id": "readings",
-                    "targetLayer": "characters",
+                    "targetLayer": "words",
                     "metadata": {
                         "labels": {
                             "de": "Lesungen",
@@ -567,7 +567,8 @@
                         "control": "tagList",
                         "linkRelationships": [
                             "pronunciation-readings",
-                            "reading-kana"
+                            "reading-kana",
+                            "kana-spelling"
                         ]
                     },
                     "multi_value": true
@@ -706,6 +707,24 @@
                     "onDelete": "restrict",
                     "resolverRole": "explicit",
                     "presentationRole": "pronunciation",
+                    "grouped": true
+                },
+                {
+                    "id": "kana-spelling",
+                    "targetLayer": "characters",
+                    "metadata": {
+                        "labels": {
+                            "de": "Kana-Schreibweise",
+                            "en": "Kana Spelling",
+                            "id": "Ejaan Kana",
+                            "ja": "かな表記"
+                        }
+                    },
+                    "minimum": 0,
+                    "ordered": true,
+                    "onDelete": "restrict",
+                    "resolverRole": "explicit",
+                    "presentationRole": "alternateSpelling",
                     "grouped": true
                 },
                 {

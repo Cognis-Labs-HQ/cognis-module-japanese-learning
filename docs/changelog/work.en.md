@@ -500,3 +500,9 @@ Restored alternate Kanji readings and represented every Kanji and Vocabulary pro
 Restored hidden pronunciation records only where a Vocabulary meaning differs from its written Kanji definitions. Each shim carries the lexical definition, links the relevant Kanji spelling, and resolves through grouped Kana references; equal-definition words keep their direct Kana path, and lookup suggestions exclude the hidden records.
 
 - [448f99e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/448f99e)
+
+## Complete Kanji Pronunciation Links
+
+Corrected every Kanji pronunciation to link through its own hidden complete-reading record before resolving to ordered atomic Kana. All six readings of `来` (`く`, `きた`, `き`, `こ`, `らい`, and `たい`) now have working deep links, and the same invariant is enforced for every packaged Kanji.
+
+- [f919fa1](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/f919fa1)

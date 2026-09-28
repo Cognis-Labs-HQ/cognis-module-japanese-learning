@@ -22,7 +22,7 @@ function readLayer(layer) {
             references: [
                 ...(entry.references ?? []),
                 ...Object.values(entry.referenceGroups ?? {}).flatMap(
-                    (groups) => groups[0] ?? [],
+                    (groups) => groups.flat(),
                 ),
             ],
         }));
@@ -82,6 +82,7 @@ test("vocabulary pronunciation links through direct Kana or hidden shims", () =>
     assert.deepEqual(pronunciation.input.linkRelationships, [
         "pronunciation-readings",
         "reading-kana",
+        "kana-spelling",
     ]);
     for (const word of words.filter(({ hidden }) => hidden !== true)) {
         const references = word.references.filter(
@@ -109,7 +110,10 @@ test("vocabulary pronunciation links through direct Kana or hidden shims", () =>
 
 test("vocabulary shims are hidden and definition-bearing", () => {
     assert.ok(words.length > 0);
-    const shims = words.filter(({ hidden }) => hidden === true);
+    const shims = words.filter(
+        ({ class: contentClass, hidden }) =>
+            hidden === true && contentClass === "reading:pronunciation",
+    );
     assert.equal(shims.length, 22);
     assert.ok(
         shims.every(
@@ -125,7 +129,7 @@ test("vocabulary shims are hidden and definition-bearing", () => {
     assert.ok(words.every(({ fields }) => fields.pronunciation?.length === 1));
 });
 
-test("Kanji and particles terminate directly at Kana", () => {
+test("Kanji readings and particles terminate at Kana", () => {
     const altCharacters = schema.layers.find(
         ({ id }) => id === "alt-characters",
     );
@@ -134,19 +138,23 @@ test("Kanji and particles terminate directly at Kana", () => {
     );
     assert.deepEqual(pronunciation.input.linkRelationships, ["readings"]);
     for (const entry of kanji) {
-        assert.equal(
-            labelsFor(entry, ["readings"]),
-            entry.fields.pronunciation[0],
-            entry.id,
+        const groups = entry.referenceGroups.readings;
+        assert.deepEqual(
+            groups.map(
+                ([reference]) => recordsById.get(reference.entryId).label,
+            ),
+            entry.fields.pronunciation,
         );
-        assert.ok(
-            entry.references
-                .filter(({ relation }) => relation === "readings")
-                .every(
-                    ({ entryId }) =>
-                        recordsById.get(entryId)?.fields.character_class,
-                ),
-        );
+        for (const [reference] of groups) {
+            const reading = recordsById.get(reference.entryId);
+            assert.equal(reading.hidden, true);
+            assert.equal(reading.class, "reading:kanji");
+            assert.equal(
+                labelsFor(reading, ["kana-spelling"]),
+                reading.label,
+                reading.id,
+            );
+        }
     }
     const ga = recordsById.get("ja:particle:ga");
     assert.equal(labelsFor(ga, ["kana-spelling"]), "が");

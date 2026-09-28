@@ -500,3 +500,9 @@ Bacaan alternatif Kanji dipulihkan dan setiap pelafalan Kanji serta Kosakata dir
 Rekaman pelafalan tersembunyi dipulihkan hanya ketika makna Kosakata berbeda dari definisi Kanji tertulisnya. Setiap perantara membawa definisi leksikal, menautkan ejaan Kanji terkait, dan berlanjut melalui referensi Kana berkelompok; kata dengan definisi sama mempertahankan jalur Kana langsung, dan saran lookup mengecualikan rekaman tersembunyi.
 
 - [448f99e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/448f99e)
+
+## Tautan Pelafalan Kanji yang Lengkap
+
+Setiap pelafalan Kanji kini ditautkan melalui rekaman bacaan lengkap tersembunyi tersendiri sebelum diteruskan ke Kana atomik yang berurutan. Keenam bacaan `来` (`く`, `きた`, `き`, `こ`, `らい`, dan `たい`) sekarang memiliki tautan mendalam yang berfungsi, dan invarian yang sama diberlakukan untuk setiap Kanji dalam paket.
+
+- [f919fa1](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/f919fa1)

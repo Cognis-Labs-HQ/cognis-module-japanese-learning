@@ -59,7 +59,7 @@ function readJson(filePath) {
 
 function withFlattenedReferenceGroups(record) {
     const grouped = Object.values(record.referenceGroups ?? {}).flatMap(
-        (groups) => groups[0] ?? [],
+        (groups) => groups.flat(),
     );
     return {
         ...record,
@@ -391,7 +391,7 @@ test("recognized Library fields and definition relationships replace duplicate s
     }
 });
 
-test("kanji readings reference ordered atomic Kana", () => {
+test("kanji readings reference complete hidden reading records", () => {
     const { schema, records } = loadPack();
     const compoundLayer = schema.layers.find(
         ({ semanticRole }) => semanticRole === "compoundWritingUnit",
@@ -399,17 +399,21 @@ test("kanji readings reference ordered atomic Kana", () => {
     const relationship = compoundLayer.relationships.find(
         ({ id }) => id === "readings",
     );
-    assert.equal(relationship.targetLayer, "characters");
+    assert.equal(relationship.targetLayer, "words");
     const entries = new Map(records.map((record) => [record.id, record]));
     for (const kanji of records.filter(
         ({ layer }) => layer === "alt-characters",
     )) {
-        const readings = kanji.references
-            .filter(({ relation }) => relation === "readings")
-            .sort((left, right) => left.position - right.position);
-        assert.equal(
-            readings.map(({ entryId }) => entries.get(entryId).label).join(""),
-            kanji.fields.pronunciation[0],
+        const readingGroups = kanji.referenceGroups?.readings ?? [];
+        assert.equal(readingGroups.length, kanji.fields.pronunciation.length);
+        assert.deepEqual(
+            readingGroups.map(([reference]) => {
+                const reading = entries.get(reference.entryId);
+                assert.equal(reading.hidden, true);
+                assert.equal(reading.class, "reading:kanji");
+                return reading.label;
+            }),
+            kanji.fields.pronunciation,
         );
     }
 });
@@ -658,7 +662,8 @@ test("every vocabulary pronunciation resolves to atomic Kana", () => {
     const entries = new Map(records.map((record) => [record.id, record]));
     for (const word of records.filter(({ layer }) => layer === "words")) {
         const directLinks = word.references.filter(
-            ({ relation }) => relation === "reading-kana",
+            ({ relation }) =>
+                relation === "reading-kana" || relation === "kana-spelling",
         );
         if (directLinks.length) {
             assert.ok(
@@ -696,7 +701,7 @@ test("Kanji and vocabulary preserve grouped Kana pronunciation references", () =
     let multipleKanjiReadings = 0;
     for (const [layerId, relations] of [
         ["alt-characters", ["readings"]],
-        ["words", ["pronunciation-readings", "reading-kana"]],
+        ["words", ["pronunciation-readings", "reading-kana", "kana-spelling"]],
     ]) {
         const layer = schema.layers.find(({ id }) => id === layerId);
         const pronunciation = layer.fields.find(
@@ -786,7 +791,7 @@ test("definitions stay semantic while resolvers describe compositions", () => {
             ),
         ),
         new Set([
-            "readings:characters",
+            "readings:words",
             "reading-kana:characters",
             "pronunciation-readings:words",
             "spelling:alt-characters",
