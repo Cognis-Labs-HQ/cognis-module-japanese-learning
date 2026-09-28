@@ -237,3 +237,7 @@ Paket harus memuat setiap bacaan on dan kun KANJIDIC yang telah ditinjau setelah
 ## Batch lokasi dan cara yang ditinjau
 
 Batch pemula yang ditinjau menambahkan `ここ`, `そこ`, `どこ`, `いる`, `ある`, `きれい`, `とても`, `ゆっくり`, dan `です`, serta delapan kalimat bervariasi tentang lokasi, keberadaan, pertanyaan, penampilan, dan cara. Setiap kata baru memiliki definisi terlokalisasi dan ejaan Kana berurutan; setiap kalimat memiliki makna terlokalisasi yang tepat, komposisi leksikal berurutan, dan jalur pelafalan tersembunyi yang lengkap.
+
+## Pembersihan Penghapusan Instalasi yang Destruktif
+
+Menonaktifkan modul dan penghapusan instalasi biasa mempertahankan semua rekaman bahasa Jepang yang telah diimpor. Hanya opsi eksplisit `deleteContent: true` pada hook penghapusan instalasi host yang boleh memanggil operasi `deleteContentPack` milik penyedia Study Library; penyedia tersebut memiliki tanggung jawab atas penghapusan relasi berantai secara transaksional dan harus melaporkan kegagalan sebelum Cognis menghapus modul. Rute kompatibilitas administratif `DELETE /api/v1/modules/study-language-ja/config` hanya membersihkan konfigurasi lokal modul (modul ini tidak memilikinya), sehingga mengembalikan `204` tanpa menyentuh konten pembelajaran.

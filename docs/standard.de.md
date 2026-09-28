@@ -237,3 +237,7 @@ Alle geprüften KANJIDIC-On- und Kun-Lesungen werden nach einer deterministische
 ## Geprüfter Stapel zu Ort und Art und Weise
 
 Der geprüfte Anfängerstapel ergänzt `ここ`, `そこ`, `どこ`, `いる`, `ある`, `きれい`, `とても`, `ゆっくり` und `です` sowie acht abwechslungsreiche Sätze über Orte, Existenz, Fragen, Aussehen und Art und Weise. Jedes neue Wort besitzt eine lokalisierte Definition und geordnete Kana-Schreibweise; jeder Satz besitzt eine exakte lokalisierte Bedeutung, geordnete lexikalische Zusammensetzung und einen vollständigen ausgeblendeten Aussprachepfad.
+
+## Destruktive Deinstallationsbereinigung
+
+Beim Deaktivieren des Moduls und bei einer gewöhnlichen Deinstallation bleiben alle importierten Japanisch-Datensätze erhalten. Nur die ausdrückliche Option `deleteContent: true` des Host-Deinstallations-Hooks darf die Operation `deleteContentPack` des Study-Library-Providers aufrufen; dieser Provider ist für die transaktionale Kaskadierung der Beziehungen zuständig und muss einen Fehler melden, bevor Cognis das Modul entfernt. Die administrative Kompatibilitätsroute `DELETE /api/v1/modules/study-language-ja/config` löscht ausschließlich modullokale Konfiguration (dieses Modul besitzt keine) und antwortet deshalb mit `204`, ohne Lerninhalte zu verändern.

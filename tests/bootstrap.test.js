@@ -8,6 +8,7 @@ test("ingests the declarative pack through the host Library capability", async (
     const calls = [];
     const contributions = [];
     const providers = [];
+    const apiRoutes = [];
     let removed = 0;
     const ctx = {
         moduleRoot: path.resolve("."),
@@ -37,6 +38,9 @@ test("ingests the declarative pack through the host Library capability", async (
             },
         },
         registerStaticDir() {},
+        registerApiDelete(routePath, handler, options) {
+            apiRoutes.push({ routePath, handler, options });
+        },
         contributePublicCapability(id, value) {
             contributions.push({ id, value });
         },
@@ -47,6 +51,28 @@ test("ingests the declarative pack through the host Library capability", async (
     const dispose = await bootstrapModule(ctx);
 
     assert.deepEqual(calls, [path.join(ctx.moduleRoot, "data", "library")]);
+    assert.equal(apiRoutes.length, 1);
+    assert.equal(
+        apiRoutes[0].routePath,
+        "/api/v1/modules/study-language-ja/config",
+    );
+    assert.deepEqual(apiRoutes[0].options, {
+        access: { minRole: "admin" },
+        allowWhenDisabled: true,
+    });
+    const response = {
+        status: 0,
+        ended: false,
+        writeHead(status) {
+            this.status = status;
+        },
+        end() {
+            this.ended = true;
+        },
+    };
+    apiRoutes[0].handler({}, response);
+    assert.equal(response.status, 204);
+    assert.equal(response.ended, true);
     assert.deepEqual(
         providers.map(({ id }) => id),
         ["study-language-ja:stroke-patterns", "study-language-ja:jisho"],
@@ -121,6 +147,7 @@ test("content ingestion failures remain activation-blocking", async () => {
             },
         },
         registerStaticDir() {},
+        registerApiDelete() {},
         contributePublicCapability(id) {
             contributions.push(id);
         },
@@ -160,6 +187,7 @@ test("prefers the public provider capability when it is injected", async () => {
             },
         },
         registerStaticDir() {},
+        registerApiDelete() {},
         contributePublicCapability() {},
         flow: { extend() {} },
         log() {},

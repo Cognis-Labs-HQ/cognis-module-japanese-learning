@@ -6,7 +6,7 @@ const CONTENT_PACK = Object.freeze({
     id: "japanese-core",
     publisher: "Cognis Labs HQ",
     namespace: "ja",
-    version: "2.2.57",
+    version: "2.2.58",
     contentRevision: "2026-09-28.6",
     schema: "schema.json",
     content: "content",
@@ -49,16 +49,47 @@ const LANGUAGE = Object.freeze({
     languageCode: "ja",
     languageName: "日本語",
     languageFlag: "🇯🇵",
-    version: "2.2.57",
+    version: "2.2.58",
     package: CONTENT_PACK,
     childComponents: [],
 });
 
 export async function uninstallModule(ctx, { deleteContent }) {
-    ctx.log?.("info", "Japanese language pack cleanup completed.", {
+    if (!deleteContent) {
+        ctx.log?.("info", "Japanese language pack content retained.", {
+            component: "study-language-ja",
+            operation: "uninstall_cleanup",
+            deleteContent: false,
+        });
+        return;
+    }
+
+    const library = ctx.getCapability("study:library:provider");
+    if (typeof library?.deleteContentPack !== "function") {
+        ctx.log?.("error", "Japanese language pack cleanup is unavailable.", {
+            component: "study-language-ja",
+            operation: "delete_content_pack",
+            packId: CONTENT_PACK.id,
+        });
+        throw new Error("Study Library content-pack cleanup is unavailable.");
+    }
+
+    const libraryRoot = path.join(ctx.moduleRoot, "data", "library");
+    try {
+        await library.deleteContentPack(libraryRoot);
+    } catch (error) {
+        ctx.log?.("error", "Japanese language pack cleanup failed.", {
+            component: "study-language-ja",
+            operation: "delete_content_pack",
+            packId: CONTENT_PACK.id,
+            error: error instanceof Error ? error.message : String(error),
+        });
+        throw error;
+    }
+    ctx.log?.("info", "Japanese language pack content deleted.", {
         component: "study-language-ja",
-        operation: "uninstall_cleanup",
-        deleteContent,
+        operation: "delete_content_pack",
+        packId: CONTENT_PACK.id,
     });
 }
 
@@ -73,6 +104,14 @@ export async function bootstrapModule(ctx) {
         throw new Error("Invalid Study Library provider capability.");
     }
     ctx.registerStaticDir("", path.join(ctx.moduleRoot, "ui"));
+    ctx.registerApiDelete(
+        "/api/v1/modules/study-language-ja/config",
+        (_request, response) => {
+            response.writeHead(204);
+            response.end();
+        },
+        { access: { minRole: "admin" }, allowWhenDisabled: true },
+    );
     const libraryRoot = path.join(ctx.moduleRoot, "data", "library");
     const providerRemovers = [];
     const removeLookupProviders = () => {

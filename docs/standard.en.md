@@ -237,3 +237,7 @@ Package every reviewed KANJIDIC on-reading and kun-reading after deterministic n
 ## Reviewed location and manner batch
 
 The reviewed beginner batch adds `ここ`, `そこ`, `どこ`, `いる`, `ある`, `きれい`, `とても`, `ゆっくり`, and `です`, plus eight varied sentences about locations, existence, questions, appearance, and manner. Every new word has a localized definition and ordered Kana spelling; every sentence has an exact localized meaning, ordered lexical composition, and a complete hidden pronunciation path.
+
+## Destructive Uninstall Cleanup
+
+Disabling the module and ordinary uninstall cleanup retain every imported Japanese record. Only the host uninstall hook's explicit `deleteContent: true` option may call the Study Library provider's `deleteContentPack` operation; that provider owns transactional relationship cascading and must report failure before Cognis removes the module. The administrative `DELETE /api/v1/modules/study-language-ja/config` compatibility route only clears module-local configuration (the module has none) and therefore returns `204` without touching learning content.

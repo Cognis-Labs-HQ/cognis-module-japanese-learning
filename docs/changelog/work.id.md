@@ -542,3 +542,9 @@ Telah dikonfirmasi bahwa penghapusan kartu tahap diimplementasikan dan ditata ol
 Dipastikan bahwa paket bahasa Jepang telah membatasi romanisasi Hepburn pada Kana atomik, sedangkan bacaan lapisan yang lebih tinggi ditulis sebagai label Kana Jepang. Koreksi tepat yang diperlukan pada composer Cognis dicatat agar penurunan pelafalan rekursif tidak meneruskan romanisasi Kana ke bacaan Kosakata dan kalimat; modul eksternal tidak menimpa perilaku penurunan milik host.
 
 - [2324f5b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/2324f5b)
+
+## Pembersihan Penghapusan Instalasi Destruktif yang Eksplisit
+
+Endpoint administratif untuk menghapus konfigurasi modul yang diharapkan Cognis telah ditambahkan sebagai rute kompatibilitas `204` yang aman bagi konten. Rekaman bahasa Jepang bawaan paket kini hanya dihapus melalui penyedia Study Library ketika permintaan penghapusan instalasi secara eksplisit membawa `deleteContent: true`; penonaktifan, penghapusan instalasi biasa, dukungan pembersihan yang tidak tersedia, dan kegagalan pembersihan tidak dapat diam-diam menghapus atau menelantarkan data pembelajaran yang sudah mapan.
+
+- [eb8583f](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/eb8583f)

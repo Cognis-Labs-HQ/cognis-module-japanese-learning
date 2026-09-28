@@ -542,3 +542,9 @@ Confirmed that staged-card removal is implemented and styled by the Cognis Study
 Confirmed that the Japanese pack already keeps Hepburn romanization on atomic Kana while higher-layer readings are authored as Japanese Kana labels. Recorded the exact Cognis composer correction needed to stop recursive pronunciation derivation from promoting Kana romanization into Vocabulary and sentence readings; the external module does not override host-owned derivation behavior.
 
 - [2324f5b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/2324f5b)
+
+## Explicit Destructive Uninstall Cleanup
+
+Added the administrative module-config delete endpoint expected by Cognis and made it a content-safe `204` compatibility route. Packaged Japanese records are now deleted through the Study Library provider only when the uninstall request explicitly carries `deleteContent: true`; disabling, ordinary uninstall, missing cleanup support, and cleanup failures cannot silently remove or strand established learning data.
+
+- [eb8583f](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/eb8583f)

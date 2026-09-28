@@ -542,3 +542,9 @@ Es wurde bestätigt, dass das Entfernen bereitgestellter Karten im Cognis Study-
 Es wurde bestätigt, dass das Japanisch-Paket die Hepburn-Umschrift bereits auf atomare Kana beschränkt, während Lesungen höherer Ebenen als japanische Kana-Bezeichnungen verfasst sind. Die genaue erforderliche Korrektur am Cognis-Composer wurde festgehalten, damit die rekursive Ausspracheableitung die Kana-Umschrift nicht in Wortschatz- und Satzlesungen übernimmt; das externe Modul überschreibt kein hosteigenes Ableitungsverhalten.
 
 - [2324f5b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/2324f5b)
+
+## Ausdrückliche destruktive Deinstallationsbereinigung
+
+Der von Cognis erwartete administrative Endpunkt zum Löschen der Modulkonfiguration wurde als inhaltssichere `204`-Kompatibilitätsroute ergänzt. Paketierte Japanisch-Datensätze werden jetzt nur dann über den Study-Library-Provider gelöscht, wenn die Deinstallationsanfrage ausdrücklich `deleteContent: true` enthält; Deaktivierung, gewöhnliche Deinstallation, fehlende Bereinigungsunterstützung und Bereinigungsfehler können etablierte Lerndaten weder unbemerkt löschen noch verwaisen lassen.
+
+- [eb8583f](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/eb8583f)
