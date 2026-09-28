@@ -512,3 +512,9 @@ Jede Kanji-Aussprache verweist nun über einen eigenen ausgeblendeten Datensatz 
 Alle mit Kanji geschriebenen Wörter sind nun mit ihren enthaltenen Schriftzeichen und einem ausgeblendeten Datensatz für die vollständige Aussprache verbunden. Dabei bleiben vorhandene Kanji-Lesesegmente vor den atomaren Kana erhalten. Satzaussprachen durchlaufen vollständige ausgeblendete Datensätze aus Wortlesungen und Partikel-Kana. Jisho-Vorschläge prüfen außerdem die Schrift je Ebene, behalten verfügbare Kanji-Schreibverknüpfungen bei und lassen unvollständige Kana-Gruppen weg.
 
 - [8f5a3e5](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/8f5a3e5)
+
+## Gemeinsame Aussprachekarten für Homophone
+
+Die doppelten ausgeblendeten Aussprachekarten für `はな`, `はし`, `あめ` und `かみ` wurden durch jeweils eine gemeinsame Karte pro vollständiger Kana-Lesung ersetzt. Jede gemeinsame Karte fasst die zugehörigen lexikalischen Definitionen zusammen und wird von den unterschiedlichen sichtbaren Kanji-Wörtern verwendet. Dadurch verlinken gleich beschriftete Karten nicht mehr aufeinander, während jedes Homophon als eigenes Lernwort erhalten bleibt.
+
+- [111ec59](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/111ec59)

@@ -221,3 +221,7 @@ Kanji-Aussprachen sind als separate ausgeblendete Lesungseinträge verknüpft. D
 ## Vollständige Aussprachepfade
 
 Jeder mit Kanji geschriebene Wortschatzeintrag verknüpft seine Schreibweise mit den enthaltenen Kanji und führt seine Aussprache über einen ausgeblendeten Datensatz für die vollständige Aussprache. Diese Datensätze bewahren die genauesten verfügbaren Kanji-Lesesegmente und verwenden atomare Kana nur für Flexionsendungen oder Abschnitte ohne vorhandene Kanji-Lesung. Satzaussprachen führen entsprechend über einen vollständigen ausgeblendeten Datensatz aus Wortaussprachen und Partikel-Kana. Jisho-Vorschläge prüfen die Schrift je Ebene, erzeugen keine unvollständigen Kana-Gruppen und ergänzen verfügbare Kanji-Schreibverknüpfungen.
+
+### Gemeinsame Aussprachekarten für Homophone
+
+Wenn mehrere unterschiedliche Kanji-Wortschatzeinträge exakt dieselbe vollständige Kana-Aussprache haben, verwenden sie gemeinsam eine ausgeblendete Aussprachekarte. Diese Karte fasst die lexikalischen Definitionen zusammen und rekonstruiert die gemeinsame Lesung direkt aus atomaren Kana, während jeder sichtbare Wortschatzeintrag seine eigene Bedeutung und Kanji-Schreibweise behält. Dadurch verlinken keine gleich beschrifteten Lesekarten mehr gegenseitig aufeinander und die verschiedenen lernrelevanten Homophone bleiben dennoch getrennt.

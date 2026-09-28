@@ -145,7 +145,7 @@ test("visible Kanji vocabulary uses complete hidden pronunciation records", () =
 
     assert.equal(vocabulary.length, 37);
     assert.ok(vocabulary.every(({ hidden }) => hidden !== true));
-    assert.equal(shims.length, 53);
+    assert.equal(shims.length, 48);
     assert.ok(
         shims.every(
             ({ class: contentClass }) =>
@@ -206,7 +206,7 @@ test("pronunciation shims stay hidden and connect Kanji to Kana", () => {
             hidden === true &&
             contentClass === "reading:pronunciation",
     );
-    assert.equal(shims.length, 53);
+    assert.equal(shims.length, 48);
     for (const shim of shims) {
         const shimDefinitionIds = new Set(
             shim.references
@@ -227,7 +227,13 @@ test("pronunciation shims stay hidden and connect Kanji to Kana", () => {
                 .map(({ entryId }) => entryId),
         );
         assert.notDeepEqual(shimDefinitionIds, kanjiDefinitionIds, shim.id);
-        if (!shim.id.includes(":pronunciation-sentence-"))
+        const definitions = shim.references.filter(
+            ({ relation }) => relation === "definitions",
+        );
+        if (
+            !shim.id.includes(":pronunciation-sentence-") &&
+            definitions.length === 1
+        )
             assert.ok(
                 shim.references.some(
                     ({ entryId, relation }) =>
@@ -246,6 +252,48 @@ test("pronunciation shims stay hidden and connect Kanji to Kana", () => {
             shim.references.some(({ relation }) => relation === "definitions"),
             shim.id,
         );
+    }
+});
+
+test("homophonic Kanji words share one definition-aggregating reading card", () => {
+    const records = loadRecords();
+    const recordsById = new Map(records.map((record) => [record.id, record]));
+    for (const [pronunciation, expectedDefinitions, expectedWords] of [
+        ["はな", 2, ["ja:word:hana-flower", "ja:word:hana-nose"]],
+        ["はし", 2, ["ja:word:hashi-bridge", "ja:word:hashi-chopsticks"]],
+        ["あめ", 2, ["ja:word:ame-rain", "ja:word:ame-candy"]],
+        [
+            "かみ",
+            3,
+            ["ja:word:kami-hair", "ja:word:kami-deity", "ja:word:kami-paper"],
+        ],
+    ]) {
+        const targetIds = new Set(
+            expectedWords.flatMap((id) =>
+                recordsById
+                    .get(id)
+                    .references.filter(
+                        ({ relation }) => relation === "pronunciation-readings",
+                    )
+                    .map(({ entryId }) => entryId),
+            ),
+        );
+        assert.equal(targetIds.size, 1, pronunciation);
+        const [targetId] = targetIds;
+        const target = recordsById.get(targetId);
+        assert.equal(target.label, pronunciation);
+        assert.equal(target.hidden, true);
+        assert.equal(
+            target.references.filter(
+                ({ relation }) => relation === "definitions",
+            ).length,
+            expectedDefinitions,
+        );
+        assert.equal(
+            target.references.some(({ relation }) => relation === "spelling"),
+            false,
+        );
+        assert.equal(derivedPronunciation(target, recordsById), pronunciation);
     }
 });
 

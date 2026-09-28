@@ -512,3 +512,9 @@ Corrected every Kanji pronunciation to link through its own hidden complete-read
 Connected every Kanji-spelled word to its packaged writing records and one hidden complete-pronunciation record, preserving authored Kanji-reading segments before atomic Kana. Sentence pronunciations now traverse complete hidden records assembled from word readings and particle Kana. Jisho suggestions also enforce layer-specific scripts, retain available Kanji spelling links, and omit incomplete Kana groups.
 
 - [8f5a3e5](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/8f5a3e5)
+
+## Shared Homophone Pronunciation Cards
+
+Replaced duplicate hidden pronunciation cards for `はな`, `はし`, `あめ`, and `かみ` with one shared card per complete Kana reading. Each shared card aggregates the relevant lexical definitions and is used by the distinct visible Kanji words, preventing identically labeled cards from linking to each other while preserving each homophone as its own study word.
+
+- [111ec59](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/111ec59)

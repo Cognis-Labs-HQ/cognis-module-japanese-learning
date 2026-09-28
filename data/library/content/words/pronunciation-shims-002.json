@@ -390,49 +390,16 @@
         }
     },
     {
-        "id": "ja:word:pronunciation-hana-flower",
+        "id": "ja:word:pronunciation-hana",
         "label": "はな",
         "fields": {
             "pronunciation": ["はな"],
             "jlpt_level": "N5"
         },
         "references": [
-            {
-                "entryId": "ja:kanji:core-e88ab1",
-                "relation": "spelling",
-                "position": 0
-            },
             {
                 "entryId": "ja:def:hana-flower",
                 "relation": "definitions"
-            }
-        ],
-        "class": "reading:pronunciation",
-        "hidden": true,
-        "referenceGroups": {
-            "pronunciation-readings": [
-                [
-                    {
-                        "entryId": "ja:word:kanji-reading-e88ab1-01",
-                        "relation": "pronunciation-readings",
-                        "position": 0
-                    }
-                ]
-            ]
-        }
-    },
-    {
-        "id": "ja:word:pronunciation-hana-nose",
-        "label": "はな",
-        "fields": {
-            "pronunciation": ["はな"],
-            "jlpt_level": "N5"
-        },
-        "references": [
-            {
-                "entryId": "ja:kanji:core-e9bcbb",
-                "relation": "spelling",
-                "position": 0
             },
             {
                 "entryId": "ja:def:hana-nose",
@@ -442,61 +409,33 @@
         "class": "reading:pronunciation",
         "hidden": true,
         "referenceGroups": {
-            "pronunciation-readings": [
+            "reading-kana": [
                 [
                     {
-                        "entryId": "ja:word:kanji-reading-e9bcbb-01",
-                        "relation": "pronunciation-readings",
+                        "entryId": "ja:char:ha",
+                        "relation": "reading-kana",
                         "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:na",
+                        "relation": "reading-kana",
+                        "position": 1
                     }
                 ]
             ]
         }
     },
     {
-        "id": "ja:word:pronunciation-hashi-bridge",
+        "id": "ja:word:pronunciation-hashi",
         "label": "はし",
         "fields": {
             "pronunciation": ["はし"],
             "jlpt_level": "N5"
         },
         "references": [
-            {
-                "entryId": "ja:kanji:core-e6a98b",
-                "relation": "spelling",
-                "position": 0
-            },
             {
                 "entryId": "ja:def:hashi-bridge",
                 "relation": "definitions"
-            }
-        ],
-        "class": "reading:pronunciation",
-        "hidden": true,
-        "referenceGroups": {
-            "pronunciation-readings": [
-                [
-                    {
-                        "entryId": "ja:word:kanji-reading-e6a98b-01",
-                        "relation": "pronunciation-readings",
-                        "position": 0
-                    }
-                ]
-            ]
-        }
-    },
-    {
-        "id": "ja:word:pronunciation-hashi-chopsticks",
-        "label": "はし",
-        "fields": {
-            "pronunciation": ["はし"],
-            "jlpt_level": "N5"
-        },
-        "references": [
-            {
-                "entryId": "ja:kanji:core-e7aeb8",
-                "relation": "spelling",
-                "position": 0
             },
             {
                 "entryId": "ja:def:hashi-chopsticks",
@@ -506,61 +445,33 @@
         "class": "reading:pronunciation",
         "hidden": true,
         "referenceGroups": {
-            "pronunciation-readings": [
+            "reading-kana": [
                 [
                     {
-                        "entryId": "ja:word:kanji-reading-e7aeb8-01",
-                        "relation": "pronunciation-readings",
+                        "entryId": "ja:char:ha",
+                        "relation": "reading-kana",
                         "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:shi",
+                        "relation": "reading-kana",
+                        "position": 1
                     }
                 ]
             ]
         }
     },
     {
-        "id": "ja:word:pronunciation-ame-rain",
+        "id": "ja:word:pronunciation-ame",
         "label": "あめ",
         "fields": {
             "pronunciation": ["あめ"],
             "jlpt_level": "N5"
         },
         "references": [
-            {
-                "entryId": "ja:kanji:core-e99ba8",
-                "relation": "spelling",
-                "position": 0
-            },
             {
                 "entryId": "ja:def:ame-rain",
                 "relation": "definitions"
-            }
-        ],
-        "class": "reading:pronunciation",
-        "hidden": true,
-        "referenceGroups": {
-            "pronunciation-readings": [
-                [
-                    {
-                        "entryId": "ja:word:kanji-reading-e99ba8-01",
-                        "relation": "pronunciation-readings",
-                        "position": 0
-                    }
-                ]
-            ]
-        }
-    },
-    {
-        "id": "ja:word:pronunciation-ame-candy",
-        "label": "あめ",
-        "fields": {
-            "pronunciation": ["あめ"],
-            "jlpt_level": "N5"
-        },
-        "references": [
-            {
-                "entryId": "ja:kanji:core-e9a3b4",
-                "relation": "spelling",
-                "position": 0
             },
             {
                 "entryId": "ja:def:ame-candy",
@@ -570,19 +481,24 @@
         "class": "reading:pronunciation",
         "hidden": true,
         "referenceGroups": {
-            "pronunciation-readings": [
+            "reading-kana": [
                 [
                     {
-                        "entryId": "ja:word:kanji-reading-e9a3b4-01",
-                        "relation": "pronunciation-readings",
+                        "entryId": "ja:char:a",
+                        "relation": "reading-kana",
                         "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:me",
+                        "relation": "reading-kana",
+                        "position": 1
                     }
                 ]
             ]
         }
     },
     {
-        "id": "ja:word:pronunciation-kami-paper",
+        "id": "ja:word:pronunciation-kami",
         "label": "かみ",
         "fields": {
             "pronunciation": ["かみ"],
@@ -590,9 +506,12 @@
         },
         "references": [
             {
-                "entryId": "ja:kanji:core-e7b499",
-                "relation": "spelling",
-                "position": 0
+                "entryId": "ja:def:kami-hair",
+                "relation": "definitions"
+            },
+            {
+                "entryId": "ja:def:kami-deity",
+                "relation": "definitions"
             },
             {
                 "entryId": "ja:def:kami-paper",
@@ -602,12 +521,17 @@
         "class": "reading:pronunciation",
         "hidden": true,
         "referenceGroups": {
-            "pronunciation-readings": [
+            "reading-kana": [
                 [
                     {
-                        "entryId": "ja:word:kanji-reading-e7b499-01",
-                        "relation": "pronunciation-readings",
+                        "entryId": "ja:char:ka",
+                        "relation": "reading-kana",
                         "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:mi",
+                        "relation": "reading-kana",
+                        "position": 1
                     }
                 ]
             ]

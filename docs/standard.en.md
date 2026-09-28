@@ -221,3 +221,7 @@ Kanji pronunciations are linked as separate hidden reading records. Every displa
 ## Complete pronunciation paths
 
 Every Kanji-spelled vocabulary item links its writing to packaged Kanji and routes its pronunciation through one hidden complete-pronunciation record. Those records preserve the closest available Kanji-reading segments and use atomic Kana only for inflections or spans without an authored Kanji reading. Sentence pronunciations similarly route through one hidden complete record assembled from word pronunciations and particle Kana. Runtime Jisho suggestions enforce layer-specific scripts, never emit partial Kana groups, and attach available Kanji spelling links.
+
+### Shared homophone pronunciation cards
+
+When multiple distinct Kanji vocabulary records have exactly the same complete Kana pronunciation, they share one hidden pronunciation card. That card aggregates the lexical definitions and reconstructs the common reading directly from atomic Kana, while each visible vocabulary record retains its own meaning and Kanji spelling. This prevents duplicate identically labeled reading cards from linking to one another while preserving the separate learner-facing homophones.

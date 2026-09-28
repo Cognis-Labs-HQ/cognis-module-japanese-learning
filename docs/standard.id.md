@@ -221,3 +221,7 @@ Pelafalan Kanji ditautkan sebagai rekaman bacaan tersembunyi yang terpisah. Kare
 ## Jalur pelafalan lengkap
 
 Setiap kosakata beraksara Kanji menautkan ejaannya ke Kanji yang disertakan dan mengarahkan pelafalannya melalui satu rekaman pelafalan lengkap yang tersembunyi. Rekaman tersebut mempertahankan segmen bacaan Kanji terdekat yang tersedia dan hanya memakai Kana atomik untuk infleksi atau bagian tanpa bacaan Kanji yang telah ditulis. Pelafalan kalimat juga diarahkan melalui satu rekaman lengkap tersembunyi yang tersusun dari pelafalan kata dan Kana partikel. Saran Jisho saat runtime memvalidasi aksara khusus tiap lapisan, tidak pernah menghasilkan grup Kana parsial, dan menambahkan tautan ejaan Kanji yang tersedia.
+
+### Kartu pelafalan bersama untuk homofon
+
+Jika beberapa rekaman kosakata Kanji yang berbeda memiliki pelafalan Kana lengkap yang persis sama, semuanya memakai satu kartu pelafalan tersembunyi bersama. Kartu tersebut menggabungkan definisi leksikal dan menyusun kembali bacaan bersama langsung dari Kana atomik, sedangkan setiap rekaman kosakata yang terlihat tetap mempertahankan arti dan ejaan Kanjinya sendiri. Dengan demikian, kartu bacaan berlabel sama tidak lagi saling menautkan, tanpa menggabungkan homofon yang dipelajari sebagai kosakata terpisah.

@@ -116,7 +116,7 @@ test("vocabulary shims are hidden and definition-bearing", () => {
         ({ class: contentClass, hidden }) =>
             hidden === true && contentClass === "reading:pronunciation",
     );
-    assert.equal(shims.length, 53);
+    assert.equal(shims.length, 48);
     assert.ok(
         shims.every(
             ({ class: contentClass }) =>

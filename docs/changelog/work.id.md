@@ -512,3 +512,9 @@ Setiap pelafalan Kanji kini ditautkan melalui rekaman bacaan lengkap tersembunyi
 Setiap kata beraksara Kanji kini terhubung ke rekaman tulisannya dan satu rekaman pelafalan lengkap yang tersembunyi, sambil mempertahankan segmen bacaan Kanji yang telah ditulis sebelum Kana atomik. Pelafalan kalimat kini menelusuri rekaman lengkap tersembunyi yang tersusun dari bacaan kata dan Kana partikel. Saran Jisho juga memvalidasi aksara khusus tiap lapisan, mempertahankan tautan ejaan Kanji yang tersedia, dan menghilangkan grup Kana yang tidak lengkap.
 
 - [8f5a3e5](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/8f5a3e5)
+
+## Kartu Pelafalan Bersama untuk Homofon
+
+Kartu pelafalan tersembunyi yang berulang untuk `はな`, `はし`, `あめ`, dan `かみ` diganti dengan satu kartu bersama untuk setiap bacaan Kana lengkap. Setiap kartu bersama menggabungkan definisi leksikal terkait dan digunakan oleh kata Kanji terlihat yang berbeda. Dengan demikian, kartu berlabel sama tidak lagi saling menautkan, sementara setiap homofon tetap dipertahankan sebagai kata belajar tersendiri.
+
+- [111ec59](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/111ec59)
