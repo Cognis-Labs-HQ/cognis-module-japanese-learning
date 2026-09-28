@@ -37,11 +37,16 @@ const sentences = load("sentences");
 const characters = new Map(
     load("characters").map((entry) => [entry.id, entry]),
 );
+const kanji = new Map(load("alt-characters").map((entry) => [entry.id, entry]));
 
 function definitionIds(entry) {
-    return entry.references
+    const direct = entry.references
         .filter(({ relation }) => relation === "definitions")
         .map(({ entryId }) => entryId);
+    if (direct.length) return direct;
+    return entry.references
+        .filter(({ relation }) => relation === "spelling")
+        .flatMap(({ entryId }) => definitionIds(kanji.get(entryId)));
 }
 function reading(entry) {
     return entry.fields.pronunciation[0];

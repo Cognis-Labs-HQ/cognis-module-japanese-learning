@@ -518,3 +518,9 @@ Alle mit Kanji geschriebenen Wörter sind nun mit ihren enthaltenen Schriftzeich
 Die doppelten ausgeblendeten Aussprachekarten für `はな`, `はし`, `あめ` und `かみ` wurden durch jeweils eine gemeinsame Karte pro vollständiger Kana-Lesung ersetzt. Jede gemeinsame Karte fasst die zugehörigen lexikalischen Definitionen zusammen und wird von den unterschiedlichen sichtbaren Kanji-Wörtern verwendet. Dadurch verlinken gleich beschriftete Karten nicht mehr aufeinander, während jedes Homophon als eigenes Lernwort erhalten bleibt.
 
 - [111ec59](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/111ec59)
+
+## Stabile Navigation zwischen Leseebenen
+
+Erfasste Beziehungen sind jetzt die einzige Quelle der Navigation zwischen Lesekarten. Lesepfade von Vokabeln können nicht mehr auf eine gleich beschriftete Vokabelkarte zeigen: Vollständige Aussprachen einzelner Kanji lösen sich direkt in geordnete Kana auf, während Zusammensetzungen nur echt kleinere Lesesegmente behalten. Ausgeblendete strukturelle Lesungen kopieren keine semantischen Definitionen mehr. Sichtbare Vokabeln behalten eine lokalisierte Definition nur, wenn ihre Bedeutung vom Kanji abweicht; identische Bedeutungen werden über den übergeordneten Schreibweiseeintrag übernommen, und Definitionen, die mit der Hauptbeschriftung identisch sind, bleiben in Cognis ausgeblendet.
+
+- [1d37ccf](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/1d37ccf)

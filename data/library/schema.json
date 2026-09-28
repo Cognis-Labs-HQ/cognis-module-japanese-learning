@@ -1,6 +1,6 @@
 {
     "id": "japanese-core",
-    "version": 65,
+    "version": 66,
     "namespace": "ja",
     "language": "ja",
     "metadata": {
@@ -738,8 +738,7 @@
                             "ja": "定義"
                         }
                     },
-                    "minimum": 1,
-                    "requiredTarget": true,
+                    "minimum": 0,
                     "onDelete": "restrict"
                 }
             ],
@@ -747,8 +746,7 @@
                 "fieldOrder": ["pronunciation", "jlpt_level"]
             },
             "activityCompatibility": ["study:recognition", "study:production"],
-            "interestVeins": ["language:japanese"],
-            "displayDefinition": true
+            "interestVeins": ["language:japanese"]
         },
         {
             "id": "particles",

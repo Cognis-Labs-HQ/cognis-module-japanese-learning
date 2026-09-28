@@ -518,3 +518,9 @@ Setiap kata beraksara Kanji kini terhubung ke rekaman tulisannya dan satu rekama
 Kartu pelafalan tersembunyi yang berulang untuk `はな`, `はし`, `あめ`, dan `かみ` diganti dengan satu kartu bersama untuk setiap bacaan Kana lengkap. Setiap kartu bersama menggabungkan definisi leksikal terkait dan digunakan oleh kata Kanji terlihat yang berbeda. Dengan demikian, kartu berlabel sama tidak lagi saling menautkan, sementara setiap homofon tetap dipertahankan sebagai kata belajar tersendiri.
 
 - [111ec59](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/111ec59)
+
+## Navigasi Bacaan Antarlapisan yang Stabil
+
+Hubungan yang ditulis kini menjadi satu-satunya sumber penelusuran kartu bacaan. Jalur bacaan Kosakata tidak lagi dapat menargetkan kartu Kosakata berlabel identik: pelafalan lengkap satu Kanji kini langsung diuraikan menjadi Kana berurutan, sedangkan kata majemuk hanya mempertahankan segmen bacaan yang benar-benar lebih kecil. Bacaan struktural tersembunyi tidak lagi menyalin definisi semantik. Kosakata terlihat hanya mempertahankan definisi terlokalisasi jika maknanya berbeda dari Kanjinya; makna identik diwarisi melalui induk ejaan, dan definisi yang identik dengan label utama tetap disembunyikan oleh Cognis.
+
+- [1d37ccf](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/1d37ccf)

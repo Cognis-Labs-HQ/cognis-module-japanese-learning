@@ -110,7 +110,7 @@ test("vocabulary pronunciation links through complete hidden readings", () => {
     );
 });
 
-test("vocabulary shims are hidden and definition-bearing", () => {
+test("vocabulary shims are hidden structural records", () => {
     assert.ok(words.length > 0);
     const shims = words.filter(
         ({ class: contentClass, hidden }) =>
@@ -125,7 +125,9 @@ test("vocabulary shims are hidden and definition-bearing", () => {
     );
     assert.ok(
         shims.every((entry) =>
-            entry.references.some(({ relation }) => relation === "definitions"),
+            entry.references.every(
+                ({ relation }) => relation !== "definitions",
+            ),
         ),
     );
     assert.ok(words.every(({ fields }) => fields.pronunciation?.length === 1));

@@ -224,4 +224,8 @@ Every Kanji-spelled vocabulary item links its writing to packaged Kanji and rout
 
 ### Shared homophone pronunciation cards
 
-When multiple distinct Kanji vocabulary records have exactly the same complete Kana pronunciation, they share one hidden pronunciation card. That card aggregates the lexical definitions and reconstructs the common reading directly from atomic Kana, while each visible vocabulary record retains its own meaning and Kanji spelling. This prevents duplicate identically labeled reading cards from linking to one another while preserving the separate learner-facing homophones.
+When multiple distinct Kanji vocabulary records have exactly the same complete Kana pronunciation, they may share one hidden structural pronunciation card. The shared card reconstructs the reading directly from atomic Kana and carries no definitions. Each visible vocabulary retains a definition only when it differs from its Kanji parent; otherwise definition display falls back through the spelling relationship.
+
+## Stable inter-layer card traversal
+
+Relationships, never same-label discovery, define card traversal. A Vocabulary reading may link to another Vocabulary record only when that target represents a strictly smaller reading segment; identically labeled Vocabulary-to-Vocabulary reading links are forbidden. Complete single-Kanji pronunciation wrappers therefore reconstruct directly through ordered atomic Kana, while compounds retain links to smaller authored Kanji-reading segments and inflectional Kana. Hidden reading and pronunciation records are structural and carry no definitions. Visible vocabulary keeps a definition only when its lexical meaning differs from the referenced Kanji; otherwise its spelling relationship supplies the parent definition. The host suppresses a sole definition whose normalized text exactly equals a Vocabulary card's primary label.

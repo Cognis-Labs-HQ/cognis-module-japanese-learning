@@ -224,4 +224,8 @@ Setiap kosakata beraksara Kanji menautkan ejaannya ke Kanji yang disertakan dan 
 
 ### Kartu pelafalan bersama untuk homofon
 
-Jika beberapa rekaman kosakata Kanji yang berbeda memiliki pelafalan Kana lengkap yang persis sama, semuanya memakai satu kartu pelafalan tersembunyi bersama. Kartu tersebut menggabungkan definisi leksikal dan menyusun kembali bacaan bersama langsung dari Kana atomik, sedangkan setiap rekaman kosakata yang terlihat tetap mempertahankan arti dan ejaan Kanjinya sendiri. Dengan demikian, kartu bacaan berlabel sama tidak lagi saling menautkan, tanpa menggabungkan homofon yang dipelajari sebagai kosakata terpisah.
+Jika beberapa rekaman kosakata Kanji yang berbeda memiliki pelafalan Kana lengkap yang persis sama, semuanya dapat memakai satu kartu pelafalan struktural tersembunyi. Kartu bersama tersebut menyusun kembali bacaan langsung dari Kana atomik dan tidak membawa definisi. Setiap kosakata terlihat hanya mempertahankan definisi jika maknanya berbeda dari induk Kanjinya; jika sama, definisi diwarisi melalui hubungan ejaan.
+
+## Penelusuran kartu antarlapisan yang stabil
+
+Hubungan, bukan pencarian label yang sama, menentukan penelusuran kartu. Sebuah bacaan Kosakata hanya boleh menaut ke rekaman Kosakata lain jika target tersebut mewakili segmen bacaan yang benar-benar lebih kecil; tautan antarkosakata dengan label identik dilarang. Karena itu, pembungkus pelafalan lengkap untuk satu Kanji menyusun kembali bacaannya langsung dari Kana atomik berurutan, sedangkan kata majemuk mempertahankan tautan ke segmen bacaan Kanji yang lebih kecil dan Kana infleksional. Rekaman bacaan dan pelafalan tersembunyi bersifat struktural dan tidak membawa definisi. Kosakata terlihat hanya menyimpan definisi ketika makna leksikalnya berbeda dari Kanji yang dirujuk; jika sama, hubungan ejaan menyediakan definisi induk. Host menyembunyikan satu-satunya definisi jika teks ternormalisasinya persis sama dengan label utama kartu Kosakata.

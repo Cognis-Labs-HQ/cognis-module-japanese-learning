@@ -197,7 +197,7 @@ test("sentences contain only real vocabulary and particles", () => {
     }
 });
 
-test("pronunciation shims stay hidden and connect Kanji to Kana", () => {
+test("pronunciation shims stay semantic-free and connect readings to Kana", () => {
     const records = loadRecords();
     const recordsById = new Map(records.map((record) => [record.id, record]));
     const shims = records.filter(
@@ -208,92 +208,71 @@ test("pronunciation shims stay hidden and connect Kanji to Kana", () => {
     );
     assert.equal(shims.length, 48);
     for (const shim of shims) {
-        const shimDefinitionIds = new Set(
-            shim.references
-                .filter(({ relation }) => relation === "definitions")
-                .map(({ entryId }) => entryId),
+        assert.equal(
+            shim.references.some(({ relation }) => relation === "definitions"),
+            false,
+            shim.id,
         );
-        const kanjiDefinitionIds = new Set(
-            shim.references
-                .filter(({ relation }) => relation === "spelling")
-                .flatMap(
-                    ({ entryId }) =>
-                        recordsById
-                            .get(entryId)
-                            ?.references.filter(
-                                ({ relation }) => relation === "definitions",
-                            ) ?? [],
-                )
-                .map(({ entryId }) => entryId),
-        );
-        assert.notDeepEqual(shimDefinitionIds, kanjiDefinitionIds, shim.id);
-        const definitions = shim.references.filter(
-            ({ relation }) => relation === "definitions",
-        );
-        if (
-            !shim.id.includes(":pronunciation-sentence-") &&
-            definitions.length === 1
-        )
-            assert.ok(
-                shim.references.some(
-                    ({ entryId, relation }) =>
-                        relation === "spelling" &&
-                        recordsById.get(entryId)?.layer === "alt-characters",
-                ),
-                shim.id,
-            );
         assert.ok(
             shim.references.some(({ relation }) =>
                 ["reading-kana", "pronunciation-readings"].includes(relation),
             ),
             shim.id,
         );
-        assert.ok(
-            shim.references.some(({ relation }) => relation === "definitions"),
-            shim.id,
-        );
     }
 });
 
-test("homophonic Kanji words share one definition-aggregating reading card", () => {
+test("word reading paths never deep-link to an identically labeled word", () => {
     const records = loadRecords();
     const recordsById = new Map(records.map((record) => [record.id, record]));
-    for (const [pronunciation, expectedDefinitions, expectedWords] of [
-        ["はな", 2, ["ja:word:hana-flower", "ja:word:hana-nose"]],
-        ["はし", 2, ["ja:word:hashi-bridge", "ja:word:hashi-chopsticks"]],
-        ["あめ", 2, ["ja:word:ame-rain", "ja:word:ame-candy"]],
-        [
-            "かみ",
-            3,
-            ["ja:word:kami-hair", "ja:word:kami-deity", "ja:word:kami-paper"],
-        ],
-    ]) {
-        const targetIds = new Set(
-            expectedWords.flatMap((id) =>
-                recordsById
-                    .get(id)
-                    .references.filter(
-                        ({ relation }) => relation === "pronunciation-readings",
-                    )
-                    .map(({ entryId }) => entryId),
+    for (const source of records.filter(({ layer }) => layer === "words")) {
+        for (const reference of source.references.filter(({ relation }) =>
+            [
+                "pronunciation-readings",
+                "reading-kana",
+                "kana-spelling",
+            ].includes(relation),
+        )) {
+            const target = recordsById.get(reference.entryId);
+            assert.ok(target, reference.entryId);
+            assert.equal(
+                target.layer === "words" && target.label === source.label,
+                false,
+                `${source.id} must not deep-link to ${target.id}`,
+            );
+        }
+    }
+});
+
+test("visible vocabulary defines only meanings that differ from its Kanji", () => {
+    const records = loadRecords();
+    const recordsById = new Map(records.map((record) => [record.id, record]));
+    const translationsFor = (record) =>
+        record.references
+            .filter(({ relation }) => relation === "definitions")
+            .map(({ entryId }) => recordsById.get(entryId).fields.translations);
+    for (const word of records.filter(
+        ({ hidden, label, layer }) =>
+            layer === "words" &&
+            hidden !== true &&
+            /\p{Script=Han}/u.test(label),
+    )) {
+        const ownDefinitions = translationsFor(word);
+        const parentDefinitions = word.references
+            .filter(({ relation }) => relation === "spelling")
+            .flatMap(({ entryId }) =>
+                translationsFor(recordsById.get(entryId)),
+            );
+        assert.ok(parentDefinitions.length > 0, word.id);
+        assert.equal(
+            ownDefinitions.some((own) =>
+                parentDefinitions.some(
+                    (parent) => JSON.stringify(parent) === JSON.stringify(own),
+                ),
             ),
-        );
-        assert.equal(targetIds.size, 1, pronunciation);
-        const [targetId] = targetIds;
-        const target = recordsById.get(targetId);
-        assert.equal(target.label, pronunciation);
-        assert.equal(target.hidden, true);
-        assert.equal(
-            target.references.filter(
-                ({ relation }) => relation === "definitions",
-            ).length,
-            expectedDefinitions,
-        );
-        assert.equal(
-            target.references.some(({ relation }) => relation === "spelling"),
             false,
+            `${word.id} must inherit an identical Kanji definition`,
         );
-        assert.equal(derivedPronunciation(target, recordsById), pronunciation);
     }
 });
 

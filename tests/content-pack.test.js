@@ -380,10 +380,14 @@ test("recognized Library fields and definition relationships replace duplicate s
             const references = record.references.filter(
                 ({ relation }) => relation === "definitions",
             );
-            assert.ok(
-                references.length > 0,
-                `${record.id} requires a definition`,
-            );
+            if (layerId !== "words" || record.hidden !== true)
+                assert.ok(
+                    references.length > 0 ||
+                        record.references.some(
+                            ({ relation }) => relation === "spelling",
+                        ),
+                    `${record.id} requires a definition or spelling fallback`,
+                );
             for (const reference of references) {
                 assert.equal(definitions.has(reference.entryId), true);
             }
@@ -970,9 +974,9 @@ test("compact Kana cards retain a visible romanized pronunciation", () => {
     }
 });
 
-test("non-character cards opt into required definition-backed display text", () => {
+test("semantic cards require definitions while structural readings inherit them", () => {
     const { schema, records } = loadPack();
-    for (const layerId of ["words", "particles", "sentences"]) {
+    for (const layerId of ["particles", "sentences"]) {
         const layer = schema.layers.find(({ id }) => id === layerId);
         assert.equal(layer.displayDefinition, true);
         const definitionRelationship = layer.relationships.find(

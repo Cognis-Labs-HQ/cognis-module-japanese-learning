@@ -518,3 +518,9 @@ Connected every Kanji-spelled word to its packaged writing records and one hidde
 Replaced duplicate hidden pronunciation cards for `はな`, `はし`, `あめ`, and `かみ` with one shared card per complete Kana reading. Each shared card aggregates the relevant lexical definitions and is used by the distinct visible Kanji words, preventing identically labeled cards from linking to each other while preserving each homophone as its own study word.
 
 - [111ec59](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/111ec59)
+
+## Stable Inter-Layer Reading Navigation
+
+Made authored relationships the only source of reading-card traversal. Vocabulary reading paths can no longer target an identically labeled Vocabulary card: complete single-Kanji pronunciations now resolve directly to ordered Kana, while compounds retain only strictly smaller reading segments. Hidden structural readings no longer copy semantic definitions. Visible vocabulary keeps a localized definition only when its meaning differs from its Kanji; identical meanings fall back through the spelling parent, and definitions identical to the primary label remain suppressed by Cognis.
+
+- [1d37ccf](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/1d37ccf)
