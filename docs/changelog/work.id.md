@@ -554,3 +554,9 @@ Endpoint administratif untuk menghapus konfigurasi modul yang diharapkan Cognis 
 Relasi definisi langsung ditambahkan ke setiap rekaman Kosakata terlihat bertuliskan Kanji yang sebelumnya bergantung pada induk ejaannya. Hal ini sesuai dengan perender kartu Cognis, yang hanya menampilkan definisi yang dirujuk secara langsung, dan memulihkan makna untuk kartu termasuk `川`, `空`, `花`, `鼻`, `橋`, `箸`, `雨`, `飴`, `水`, `犬`, `猫`, `山`, `紙`, dan `髪`.
 
 - [c045f5e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/c045f5e)
+
+## Pencarian Kosakata Jisho yang Berfungsi
+
+Alur composer Jisho diperbaiki agar pencarian Kosakata menerima istilah bahasa Inggris dan aksara Latin lain yang dibatasi, alih-alih langsung mengembalikan tanpa hasil sebelum membuat permintaan. Entri Jepang paket yang persis cocok tetap diprioritaskan secara lokal; kueri Jepang jarak jauh mengutamakan bentuk tepat, sedangkan pencarian makna memakai hasil Jisho berperingkat tertinggi. Lapisan Kana dan Kanji tetap membutuhkan satu karakter Jepang yang valid, dan masukan tidak aman atau terlalu panjang ditolak sebelum akses jaringan.
+
+- [f14901a](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/f14901a)

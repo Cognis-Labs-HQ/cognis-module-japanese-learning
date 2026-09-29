@@ -133,6 +133,36 @@ test("Jisho provider populates fields, detects links, and caches requests", asyn
     assert.equal(first.provenance, "jisho:猫又");
 });
 
+test("Jisho provider accepts ranked English vocabulary searches", async () => {
+    const requests = [];
+    const provider = createJishoLookupProvider({
+        contentRoot,
+        endpoint: "https://jisho.test/api",
+        async fetchImplementation(url) {
+            requests.push(url);
+            return {
+                ok: true,
+                async json() {
+                    return jishoResponse();
+                },
+            };
+        },
+    });
+
+    const [suggestion] = await provider.lookup({
+        schema,
+        layer: wordLayer,
+        label: "mythical cat",
+    });
+
+    assert.deepEqual(requests, [
+        "https://jisho.test/api?keyword=mythical%20cat",
+    ]);
+    assert.equal(suggestion.label, "猫又");
+    assert.equal(suggestion.fields.jlpt_level, "N2");
+    assert.equal(suggestion.provenance, "jisho:猫又");
+});
+
 test("Jisho provider does not query invalid or unrelated input", async () => {
     let requests = 0;
     const provider = createJishoLookupProvider({
@@ -148,7 +178,11 @@ test("Jisho provider does not query invalid or unrelated input", async () => {
         },
     });
     assert.deepEqual(
-        await provider.lookup({ schema, layer: wordLayer, label: "cat" }),
+        await provider.lookup({
+            schema,
+            layer: wordLayer,
+            label: "cat<script>",
+        }),
         [],
     );
     assert.deepEqual(

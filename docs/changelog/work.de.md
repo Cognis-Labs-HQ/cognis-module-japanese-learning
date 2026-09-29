@@ -554,3 +554,9 @@ Der von Cognis erwartete administrative Endpunkt zum Löschen der Modulkonfigura
 Allen sichtbaren, mit Kanji geschriebenen Wortschatzeinträgen, die zuvor von ihrem Schreibungs-Elterneintrag abhingen, wurden direkte Definitionsbeziehungen hinzugefügt. Dies entspricht dem Cognis-Karten-Renderer, der nur direkt referenzierte Definitionen anzeigt, und stellt die Bedeutungen unter anderem für `川`, `空`, `花`, `鼻`, `橋`, `箸`, `雨`, `飴`, `水`, `犬`, `猫`, `山`, `紙` und `髪` wieder her.
 
 - [c045f5e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/c045f5e)
+
+## Funktionierende Jisho-Wortschatzsuche
+
+Der Ablauf des Jisho-Composers wurde korrigiert, sodass die Wortschatzsuche begrenzte englische und andere lateinische Suchbegriffe akzeptiert, statt ohne Anfrage sofort kein Ergebnis zu melden. Exakte paketierte japanische Einträge bleiben vorrangig lokal; japanische Remote-Anfragen bevorzugen exakte Formen, während Bedeutungssuchen Jishos höchstbewertetes Ergebnis verwenden. Kana- und Kanji-Ebenen erfordern weiterhin ein gültiges japanisches Zeichen, und unsichere oder überlange Eingaben werden vor dem Netzwerkzugriff abgelehnt.
+
+- [f14901a](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/f14901a)

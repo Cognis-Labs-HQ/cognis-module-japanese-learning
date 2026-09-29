@@ -245,3 +245,7 @@ Beim Deaktivieren des Moduls und bei einer gewöhnlichen Deinstallation bleiben 
 ## Definitionen auf Wortschatzkarten
 
 Der Karten-Renderer der Cognis Library liest Definitionen ausschließlich aus den direkten Definitionsbeziehungen eines Eintrags; eine Definition wird nicht über eine Kanji-Schreibbeziehung vererbt. Deshalb verweist jeder sichtbare, mit Kanji geschriebene Wortschatzeintrag direkt auf eine Definition, selbst wenn seine Bedeutung mit der seines Kanji-Schreibdatensatzes identisch ist. Ausgeblendete strukturelle Aussprachedatensätze bleiben definitionsfrei.
+
+## Validierung von Jisho-Suchanfragen
+
+Die Wortschatzsuche akzeptiert begrenzte japanische oder lateinische Suchbegriffe einschließlich mehrteiliger englischer Bedeutungen und verwendet Jishos höchstbewertetes Ergebnis, wenn keine japanische Schreibweise exakt mit der Anfrage übereinstimmt. Kana- und Kanji-Ebenen bleiben auf ein gültiges Zeichen beschränkt, da ihre Vorschläge die ausgewählte Schreibeinheitsebene beibehalten müssen. Ungültige Satzzeichen, Steuereingaben und überlange Anfragen werden vor dem Netzwerkzugriff abgelehnt.

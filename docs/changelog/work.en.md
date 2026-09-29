@@ -554,3 +554,9 @@ Added the administrative module-config delete endpoint expected by Cognis and ma
 Added direct definition relationships to every visible Kanji-spelled Vocabulary record that previously depended on its spelling parent. This matches the Cognis card renderer, which displays only directly referenced definitions, and restores meanings for cards including `川`, `空`, `花`, `鼻`, `橋`, `箸`, `雨`, `飴`, `水`, `犬`, `猫`, `山`, `紙`, and `髪`.
 
 - [c045f5e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/c045f5e)
+
+## Working Jisho Vocabulary Searches
+
+Corrected the Jisho composer flow so Vocabulary searches accept bounded English and other Latin-script terms instead of returning immediately without a request. Exact packaged Japanese entries remain native-first; remote Japanese queries prefer exact forms, while meaning searches use Jisho's highest-ranked result. Kana and Kanji layers still require one valid Japanese character, and unsafe or oversized input is rejected before network access.
+
+- [f14901a](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/f14901a)

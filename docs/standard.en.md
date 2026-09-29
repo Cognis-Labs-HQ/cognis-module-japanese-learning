@@ -245,3 +245,7 @@ Disabling the module and ordinary uninstall cleanup retain every imported Japane
 ## Vocabulary Card Definitions
 
 The Cognis Library card renderer reads definitions only from an entry's direct definition relationships; it does not inherit a definition through a Kanji spelling relationship. Every visible Kanji-spelled Vocabulary record therefore references a definition directly, even when its meaning is identical to its Kanji writing record. Hidden structural pronunciation records remain definition-free.
+
+## Jisho Query Validation
+
+Vocabulary lookup accepts bounded Japanese or Latin search terms, including multiword English glosses, and uses Jisho's highest-ranked result when no Japanese spelling exactly matches the query. Kana and Kanji layers remain restricted to one valid character because their suggestions must preserve the selected writing-unit layer. Invalid punctuation, control input, and oversized queries are rejected before network access.

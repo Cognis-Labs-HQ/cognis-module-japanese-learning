@@ -7,6 +7,8 @@ const JISHO_ENDPOINT = "https://jisho.org/api/v1/search/words";
 const SUPPORTED_LAYERS = new Set(["characters", "alt-characters", "words"]);
 const JAPANESE_TEXT =
     /^[\p{Script=Han}\p{Script=Hiragana}\p{Script=Katakana}々〆ヶー]+$/u;
+const LOOKUP_TEXT = /^[\p{L}\p{M}\p{N}\s'’々〆ヶー-]+$/u;
+const MAX_LOOKUP_LENGTH = 100;
 const KANJI = /\p{Script=Han}/u;
 const SINGLE_KANA = /^[\p{Script=Hiragana}\p{Script=Katakana}]$/u;
 const SINGLE_KANJI = /^\p{Script=Han}$/u;
@@ -86,14 +88,14 @@ function jishoLevel(tags = []) {
     return tag ? tag.slice(-2).toUpperCase() : undefined;
 }
 
-function selectJishoRecord(data, label) {
+function selectJishoRecord(data, label, allowRankedFallback) {
     const records = Array.isArray(data?.data) ? data.data : [];
     return (
         records.find((record) =>
             record.japanese?.some(
                 ({ reading, word }) => word === label || reading === label,
             ),
-        ) ?? null
+        ) ?? (allowRankedFallback ? (records[0] ?? null) : null)
     );
 }
 
@@ -180,7 +182,7 @@ function definitionReferences(index, record) {
 }
 
 function jishoSuggestion(index, layer, label, data) {
-    const record = selectJishoRecord(data, label);
+    const record = selectJishoRecord(data, label, layer === "words");
     if (!record) return null;
     const form = selectJapaneseForm(record, label);
     const canonicalLabel = form.word || form.reading;
@@ -302,8 +304,9 @@ export function createJishoLookupProvider({
                 .normalize();
             if (
                 !normalizedLabel ||
+                normalizedLabel.length > MAX_LOOKUP_LENGTH ||
+                !LOOKUP_TEXT.test(normalizedLabel) ||
                 !SUPPORTED_LAYERS.has(layer?.id) ||
-                !JAPANESE_TEXT.test(normalizedLabel) ||
                 (layer.id === "characters" &&
                     !SINGLE_KANA.test(normalizedLabel)) ||
                 (layer.id === "alt-characters" &&

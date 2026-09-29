@@ -245,3 +245,7 @@ Menonaktifkan modul dan penghapusan instalasi biasa mempertahankan semua rekaman
 ## Definisi Kartu Kosakata
 
 Perender kartu Cognis Library hanya membaca definisi dari relasi definisi langsung suatu entri; definisi tidak diwarisi melalui relasi ejaan Kanji. Karena itu, setiap rekaman Kosakata terlihat yang ditulis dengan Kanji merujuk definisi secara langsung, bahkan ketika maknanya identik dengan rekaman tulisan Kanjinya. Rekaman pelafalan struktural tersembunyi tetap tanpa definisi.
+
+## Validasi Kueri Jisho
+
+Pencarian Kosakata menerima istilah pencarian bahasa Jepang atau Latin yang dibatasi, termasuk glosarium bahasa Inggris yang terdiri dari beberapa kata, dan memakai hasil berperingkat tertinggi dari Jisho jika tidak ada ejaan bahasa Jepang yang persis cocok dengan kueri. Lapisan Kana dan Kanji tetap dibatasi pada satu karakter valid karena sarannya harus mempertahankan lapisan unit tulisan yang dipilih. Tanda baca tidak valid, masukan kontrol, dan kueri yang terlalu panjang ditolak sebelum akses jaringan.
