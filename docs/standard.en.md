@@ -249,3 +249,7 @@ The Cognis Library card renderer reads definitions only from an entry's direct d
 ## Jisho Query Validation
 
 Vocabulary lookup accepts bounded Japanese or Latin search terms, including multiword English glosses, and uses Jisho's highest-ranked result when no Japanese spelling exactly matches the query. Kana and Kanji layers remain restricted to one valid character because their suggestions must preserve the selected writing-unit layer. Invalid punctuation, control input, and oversized queries are rejected before network access.
+
+## Base Verbs, Adverbs, and Transformations
+
+The Vocabulary layer separates tagged base-form verbs and adverbs into provider-named transformation views. Every verb carries the `verb` tag plus exactly one conjugation-family tag; the schema distinguishes ichidan, regular godan endings, the exceptional `行く` and `ある` patterns, and irregular `来る`. Deterministic rules derive polite, negative, past, and te forms at presentation time. Japanese adverbs carry only `adverb` and remain invariant, so their transformation view shows the canonical base card without fabricated inflections. The content pack never stores generated verb forms or derived adverb cards.

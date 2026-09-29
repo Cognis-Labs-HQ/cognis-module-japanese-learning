@@ -218,3 +218,7 @@ The current graph supersedes the earlier wrapper-based reading descriptions abov
 Kanji pronunciations are linked as separate hidden reading records. Every displayed reading—including alternate kun’yomi and on’yomi—therefore opens the complete reading and continues to its ordered atomic Kana.
 
 Vocabulary lookup also accepts bounded English search terms such as `mythical cat`; when no Japanese spelling exactly matches the query, the provider uses Jisho's highest-ranked result. Kana and Kanji lookup remains restricted to exact single-character Japanese input.
+
+## Verb and adverb transformation views
+
+Vocabulary now separates base verbs and adverbs from ordinary cards. Reviewed conjugation-family tags derive polite, negative, past, and te forms for ichidan, godan, exceptional, and irregular verbs without materializing duplicate study records. Japanese adverbs remain invariant and display only their base card; generated forms are presentation-only.

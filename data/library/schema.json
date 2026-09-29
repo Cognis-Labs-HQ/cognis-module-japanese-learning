@@ -1,6 +1,6 @@
 {
     "id": "japanese-core",
-    "version": 66,
+    "version": 67,
     "namespace": "ja",
     "language": "ja",
     "metadata": {
@@ -746,7 +746,35 @@
                 "fieldOrder": ["pronunciation", "jlpt_level"]
             },
             "activityCompatibility": ["study:recognition", "study:production"],
-            "interestVeins": ["language:japanese"]
+            "interestVeins": ["language:japanese"],
+            "views": [
+                {
+                    "id": "verbs",
+                    "metadata": {
+                        "labels": {
+                            "de": "Verben",
+                            "en": "Verbs",
+                            "id": "Verba",
+                            "ja": "動詞"
+                        }
+                    },
+                    "includeTags": ["verb"],
+                    "layout": "transformTree"
+                },
+                {
+                    "id": "adverbs",
+                    "metadata": {
+                        "labels": {
+                            "de": "Adverbien",
+                            "en": "Adverbs",
+                            "id": "Adverbia",
+                            "ja": "副詞"
+                        }
+                    },
+                    "includeTags": ["adverb"],
+                    "layout": "transformTree"
+                }
+            ]
         },
         {
             "id": "particles",
@@ -930,6 +958,608 @@
                 "fieldOrder": ["pronunciation"]
             },
             "displayDefinition": true
+        }
+    ],
+    "transformSets": [
+        {
+            "id": "ichidan",
+            "metadata": {
+                "labels": {
+                    "de": "Ichidan-Verben",
+                    "en": "Ichidan Verbs",
+                    "id": "Verba Ichidan",
+                    "ja": "一段動詞"
+                }
+            },
+            "matchTags": ["verb", "ichidan"],
+            "baseState": "base",
+            "rules": [
+                {
+                    "id": "polite",
+                    "metadata": {
+                        "labels": {
+                            "de": "Höflich",
+                            "en": "Polite",
+                            "id": "Sopan",
+                            "ja": "丁寧形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "polite",
+                    "removeSuffix": "る",
+                    "append": "ます"
+                },
+                {
+                    "id": "negative",
+                    "metadata": {
+                        "labels": {
+                            "de": "Verneinung",
+                            "en": "Negative",
+                            "id": "Negatif",
+                            "ja": "否定形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "negative",
+                    "removeSuffix": "る",
+                    "append": "ない"
+                },
+                {
+                    "id": "past",
+                    "metadata": {
+                        "labels": {
+                            "de": "Vergangenheit",
+                            "en": "Past",
+                            "id": "Lampau",
+                            "ja": "過去形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "past",
+                    "removeSuffix": "る",
+                    "append": "た"
+                },
+                {
+                    "id": "te-form",
+                    "metadata": {
+                        "labels": {
+                            "de": "Te-Form",
+                            "en": "Te Form",
+                            "id": "Bentuk Te",
+                            "ja": "て形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "te-form",
+                    "removeSuffix": "る",
+                    "append": "て"
+                }
+            ]
+        },
+        {
+            "id": "godan-ku",
+            "metadata": {
+                "labels": {
+                    "de": "Godan-Verben auf ku",
+                    "en": "Ku Godan Verbs",
+                    "id": "Verba Godan Ku",
+                    "ja": "カ行五段動詞"
+                }
+            },
+            "matchTags": ["verb", "godan-ku"],
+            "baseState": "base",
+            "rules": [
+                {
+                    "id": "polite",
+                    "metadata": {
+                        "labels": {
+                            "de": "Höflich",
+                            "en": "Polite",
+                            "id": "Sopan",
+                            "ja": "丁寧形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "polite",
+                    "removeSuffix": "く",
+                    "append": "きます"
+                },
+                {
+                    "id": "negative",
+                    "metadata": {
+                        "labels": {
+                            "de": "Verneinung",
+                            "en": "Negative",
+                            "id": "Negatif",
+                            "ja": "否定形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "negative",
+                    "removeSuffix": "く",
+                    "append": "かない"
+                },
+                {
+                    "id": "past",
+                    "metadata": {
+                        "labels": {
+                            "de": "Vergangenheit",
+                            "en": "Past",
+                            "id": "Lampau",
+                            "ja": "過去形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "past",
+                    "removeSuffix": "く",
+                    "append": "いた"
+                },
+                {
+                    "id": "te-form",
+                    "metadata": {
+                        "labels": {
+                            "de": "Te-Form",
+                            "en": "Te Form",
+                            "id": "Bentuk Te",
+                            "ja": "て形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "te-form",
+                    "removeSuffix": "く",
+                    "append": "いて"
+                }
+            ]
+        },
+        {
+            "id": "godan-iku",
+            "metadata": {
+                "labels": {
+                    "de": "Verb iku",
+                    "en": "Iku Verb",
+                    "id": "Verba Iku",
+                    "ja": "行く（特殊五段）"
+                }
+            },
+            "matchTags": ["verb", "godan-iku"],
+            "baseState": "base",
+            "rules": [
+                {
+                    "id": "polite",
+                    "metadata": {
+                        "labels": {
+                            "de": "Höflich",
+                            "en": "Polite",
+                            "id": "Sopan",
+                            "ja": "丁寧形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "polite",
+                    "removeSuffix": "く",
+                    "append": "きます"
+                },
+                {
+                    "id": "negative",
+                    "metadata": {
+                        "labels": {
+                            "de": "Verneinung",
+                            "en": "Negative",
+                            "id": "Negatif",
+                            "ja": "否定形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "negative",
+                    "removeSuffix": "く",
+                    "append": "かない"
+                },
+                {
+                    "id": "past",
+                    "metadata": {
+                        "labels": {
+                            "de": "Vergangenheit",
+                            "en": "Past",
+                            "id": "Lampau",
+                            "ja": "過去形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "past",
+                    "removeSuffix": "く",
+                    "append": "った"
+                },
+                {
+                    "id": "te-form",
+                    "metadata": {
+                        "labels": {
+                            "de": "Te-Form",
+                            "en": "Te Form",
+                            "id": "Bentuk Te",
+                            "ja": "て形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "te-form",
+                    "removeSuffix": "く",
+                    "append": "って"
+                }
+            ]
+        },
+        {
+            "id": "godan-su",
+            "metadata": {
+                "labels": {
+                    "de": "Godan-Verben auf su",
+                    "en": "Su Godan Verbs",
+                    "id": "Verba Godan Su",
+                    "ja": "サ行五段動詞"
+                }
+            },
+            "matchTags": ["verb", "godan-su"],
+            "baseState": "base",
+            "rules": [
+                {
+                    "id": "polite",
+                    "metadata": {
+                        "labels": {
+                            "de": "Höflich",
+                            "en": "Polite",
+                            "id": "Sopan",
+                            "ja": "丁寧形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "polite",
+                    "removeSuffix": "す",
+                    "append": "します"
+                },
+                {
+                    "id": "negative",
+                    "metadata": {
+                        "labels": {
+                            "de": "Verneinung",
+                            "en": "Negative",
+                            "id": "Negatif",
+                            "ja": "否定形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "negative",
+                    "removeSuffix": "す",
+                    "append": "さない"
+                },
+                {
+                    "id": "past",
+                    "metadata": {
+                        "labels": {
+                            "de": "Vergangenheit",
+                            "en": "Past",
+                            "id": "Lampau",
+                            "ja": "過去形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "past",
+                    "removeSuffix": "す",
+                    "append": "した"
+                },
+                {
+                    "id": "te-form",
+                    "metadata": {
+                        "labels": {
+                            "de": "Te-Form",
+                            "en": "Te Form",
+                            "id": "Bentuk Te",
+                            "ja": "て形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "te-form",
+                    "removeSuffix": "す",
+                    "append": "して"
+                }
+            ]
+        },
+        {
+            "id": "godan-bu",
+            "metadata": {
+                "labels": {
+                    "de": "Godan-Verben auf bu",
+                    "en": "Bu Godan Verbs",
+                    "id": "Verba Godan Bu",
+                    "ja": "バ行五段動詞"
+                }
+            },
+            "matchTags": ["verb", "godan-bu"],
+            "baseState": "base",
+            "rules": [
+                {
+                    "id": "polite",
+                    "metadata": {
+                        "labels": {
+                            "de": "Höflich",
+                            "en": "Polite",
+                            "id": "Sopan",
+                            "ja": "丁寧形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "polite",
+                    "removeSuffix": "ぶ",
+                    "append": "びます"
+                },
+                {
+                    "id": "negative",
+                    "metadata": {
+                        "labels": {
+                            "de": "Verneinung",
+                            "en": "Negative",
+                            "id": "Negatif",
+                            "ja": "否定形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "negative",
+                    "removeSuffix": "ぶ",
+                    "append": "ばない"
+                },
+                {
+                    "id": "past",
+                    "metadata": {
+                        "labels": {
+                            "de": "Vergangenheit",
+                            "en": "Past",
+                            "id": "Lampau",
+                            "ja": "過去形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "past",
+                    "removeSuffix": "ぶ",
+                    "append": "んだ"
+                },
+                {
+                    "id": "te-form",
+                    "metadata": {
+                        "labels": {
+                            "de": "Te-Form",
+                            "en": "Te Form",
+                            "id": "Bentuk Te",
+                            "ja": "て形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "te-form",
+                    "removeSuffix": "ぶ",
+                    "append": "んで"
+                }
+            ]
+        },
+        {
+            "id": "godan-mu",
+            "metadata": {
+                "labels": {
+                    "de": "Godan-Verben auf mu",
+                    "en": "Mu Godan Verbs",
+                    "id": "Verba Godan Mu",
+                    "ja": "マ行五段動詞"
+                }
+            },
+            "matchTags": ["verb", "godan-mu"],
+            "baseState": "base",
+            "rules": [
+                {
+                    "id": "polite",
+                    "metadata": {
+                        "labels": {
+                            "de": "Höflich",
+                            "en": "Polite",
+                            "id": "Sopan",
+                            "ja": "丁寧形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "polite",
+                    "removeSuffix": "む",
+                    "append": "みます"
+                },
+                {
+                    "id": "negative",
+                    "metadata": {
+                        "labels": {
+                            "de": "Verneinung",
+                            "en": "Negative",
+                            "id": "Negatif",
+                            "ja": "否定形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "negative",
+                    "removeSuffix": "む",
+                    "append": "まない"
+                },
+                {
+                    "id": "past",
+                    "metadata": {
+                        "labels": {
+                            "de": "Vergangenheit",
+                            "en": "Past",
+                            "id": "Lampau",
+                            "ja": "過去形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "past",
+                    "removeSuffix": "む",
+                    "append": "んだ"
+                },
+                {
+                    "id": "te-form",
+                    "metadata": {
+                        "labels": {
+                            "de": "Te-Form",
+                            "en": "Te Form",
+                            "id": "Bentuk Te",
+                            "ja": "て形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "te-form",
+                    "removeSuffix": "む",
+                    "append": "んで"
+                }
+            ]
+        },
+        {
+            "id": "godan-aru",
+            "metadata": {
+                "labels": {
+                    "de": "Verb aru",
+                    "en": "Aru Verb",
+                    "id": "Verba Aru",
+                    "ja": "ある（特殊五段）"
+                }
+            },
+            "matchTags": ["verb", "godan-aru"],
+            "baseState": "base",
+            "rules": [
+                {
+                    "id": "polite",
+                    "metadata": {
+                        "labels": {
+                            "de": "Höflich",
+                            "en": "Polite",
+                            "id": "Sopan",
+                            "ja": "丁寧形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "polite",
+                    "removeSuffix": "ある",
+                    "append": "あります"
+                },
+                {
+                    "id": "negative",
+                    "metadata": {
+                        "labels": {
+                            "de": "Verneinung",
+                            "en": "Negative",
+                            "id": "Negatif",
+                            "ja": "否定形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "negative",
+                    "removeSuffix": "ある",
+                    "append": "ない"
+                },
+                {
+                    "id": "past",
+                    "metadata": {
+                        "labels": {
+                            "de": "Vergangenheit",
+                            "en": "Past",
+                            "id": "Lampau",
+                            "ja": "過去形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "past",
+                    "removeSuffix": "ある",
+                    "append": "あった"
+                },
+                {
+                    "id": "te-form",
+                    "metadata": {
+                        "labels": {
+                            "de": "Te-Form",
+                            "en": "Te Form",
+                            "id": "Bentuk Te",
+                            "ja": "て形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "te-form",
+                    "removeSuffix": "ある",
+                    "append": "あって"
+                }
+            ]
+        },
+        {
+            "id": "irregular-kuru",
+            "metadata": {
+                "labels": {
+                    "de": "Unregelmäßiges Verb kuru",
+                    "en": "Irregular Kuru Verb",
+                    "id": "Verba Tak Beraturan Kuru",
+                    "ja": "来る（不規則動詞）"
+                }
+            },
+            "matchTags": ["verb", "irregular-kuru"],
+            "baseState": "base",
+            "rules": [
+                {
+                    "id": "polite",
+                    "metadata": {
+                        "labels": {
+                            "de": "Höflich",
+                            "en": "Polite",
+                            "id": "Sopan",
+                            "ja": "丁寧形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "polite",
+                    "removeSuffix": "来る",
+                    "append": "来ます"
+                },
+                {
+                    "id": "negative",
+                    "metadata": {
+                        "labels": {
+                            "de": "Verneinung",
+                            "en": "Negative",
+                            "id": "Negatif",
+                            "ja": "否定形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "negative",
+                    "removeSuffix": "来る",
+                    "append": "来ない"
+                },
+                {
+                    "id": "past",
+                    "metadata": {
+                        "labels": {
+                            "de": "Vergangenheit",
+                            "en": "Past",
+                            "id": "Lampau",
+                            "ja": "過去形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "past",
+                    "removeSuffix": "来る",
+                    "append": "来た"
+                },
+                {
+                    "id": "te-form",
+                    "metadata": {
+                        "labels": {
+                            "de": "Te-Form",
+                            "en": "Te Form",
+                            "id": "Bentuk Te",
+                            "ja": "て形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "te-form",
+                    "removeSuffix": "来る",
+                    "append": "来て"
+                }
+            ]
         }
     ]
 }

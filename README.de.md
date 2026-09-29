@@ -218,3 +218,7 @@ Der aktuelle Graph ersetzt die weiter oben beschriebenen früheren Lesungs-Wrapp
 Kanji-Aussprachen sind als separate ausgeblendete Lesungseinträge verknüpft. Dadurch öffnet jede angezeigte Lesung – einschließlich alternativer Kun- und On-Lesungen – die vollständige Lesung und führt weiter zu den geordneten atomaren Kana.
 
 Die Wortschatzsuche akzeptiert außerdem begrenzte englische Suchbegriffe wie `mythical cat`; wenn keine japanische Schreibweise exakt mit der Anfrage übereinstimmt, verwendet der Provider Jishos höchstbewertetes Ergebnis. Die Kana- und Kanji-Suche bleibt auf die exakte Eingabe eines einzelnen japanischen Zeichens beschränkt.
+
+## Transformationsansichten für Verben und Adverbien
+
+Der Wortschatz trennt jetzt Grundformen von Verben und Adverbien von gewöhnlichen Karten. Geprüfte Konjugationsfamilien-Tags leiten Höflichkeits-, Verneinungs-, Vergangenheits- und Te-Formen für Ichidan-, Godan-, Ausnahme- und unregelmäßige Verben ab, ohne doppelte Lerndatensätze anzulegen. Japanische Adverbien bleiben unverändert und zeigen nur ihre Grundkarte; erzeugte Formen dienen ausschließlich der Darstellung.

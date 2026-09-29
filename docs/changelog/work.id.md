@@ -560,3 +560,9 @@ Relasi definisi langsung ditambahkan ke setiap rekaman Kosakata terlihat bertuli
 Alur composer Jisho diperbaiki agar pencarian Kosakata menerima istilah bahasa Inggris dan aksara Latin lain yang dibatasi, alih-alih langsung mengembalikan tanpa hasil sebelum membuat permintaan. Entri Jepang paket yang persis cocok tetap diprioritaskan secara lokal; kueri Jepang jarak jauh mengutamakan bentuk tepat, sedangkan pencarian makna memakai hasil Jisho berperingkat tertinggi. Lapisan Kana dan Kanji tetap membutuhkan satu karakter Jepang yang valid, dan masukan tidak aman atau terlalu panjang ditolak sebelum akses jaringan.
 
 - [f14901a](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/f14901a)
+
+## Tampilan Transformasi Verba dan Adverbia Dasar
+
+Paket bahasa Jepang diselaraskan dengan kontrak transformasi Cognis terbaru. Kosakata kini memisahkan verba dasar dan adverbia yang tidak berubah ke tampilan khusus; verba membedakan ichidan, akhiran godan reguler, pengecualian `行く` dan `ある`, serta `来る` tak beraturan. Aturan deklaratif penyedia menurunkan bentuk sopan, negatif, lampau, dan te yang telah ditinjau saat penyajian, sedangkan paket hanya menyimpan dua belas rekaman dasar verba/adverbia kanonis tanpa duplikat hasil transformasi.
+
+- [097eab5](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/097eab5)

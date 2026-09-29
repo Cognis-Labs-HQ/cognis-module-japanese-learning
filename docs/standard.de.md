@@ -249,3 +249,7 @@ Der Karten-Renderer der Cognis Library liest Definitionen ausschließlich aus de
 ## Validierung von Jisho-Suchanfragen
 
 Die Wortschatzsuche akzeptiert begrenzte japanische oder lateinische Suchbegriffe einschließlich mehrteiliger englischer Bedeutungen und verwendet Jishos höchstbewertetes Ergebnis, wenn keine japanische Schreibweise exakt mit der Anfrage übereinstimmt. Kana- und Kanji-Ebenen bleiben auf ein gültiges Zeichen beschränkt, da ihre Vorschläge die ausgewählte Schreibeinheitsebene beibehalten müssen. Ungültige Satzzeichen, Steuereingaben und überlange Anfragen werden vor dem Netzwerkzugriff abgelehnt.
+
+## Grundformen von Verben, Adverbien und Transformationen
+
+Die Wortschatzebene trennt markierte Grundformen von Verben und Adverbien in anbieterseitig benannte Transformationsansichten. Jedes Verb trägt das Tag `verb` und genau ein Konjugationsfamilien-Tag; das Schema unterscheidet Ichidan, reguläre Godan-Endungen, die Sondermuster `行く` und `ある` sowie das unregelmäßige `来る`. Deterministische Regeln leiten Höflichkeits-, Verneinungs-, Vergangenheits- und Te-Formen zur Anzeigezeit ab. Japanische Adverbien tragen nur `adverb` und bleiben unverändert, sodass ihre Transformationsansicht die kanonische Grundkarte ohne erfundene Flexionen zeigt. Das Inhaltspaket speichert niemals erzeugte Verbformen oder abgeleitete Adverbkarten.

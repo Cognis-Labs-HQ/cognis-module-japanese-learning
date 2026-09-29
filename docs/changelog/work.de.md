@@ -560,3 +560,9 @@ Allen sichtbaren, mit Kanji geschriebenen Wortschatzeinträgen, die zuvor von ih
 Der Ablauf des Jisho-Composers wurde korrigiert, sodass die Wortschatzsuche begrenzte englische und andere lateinische Suchbegriffe akzeptiert, statt ohne Anfrage sofort kein Ergebnis zu melden. Exakte paketierte japanische Einträge bleiben vorrangig lokal; japanische Remote-Anfragen bevorzugen exakte Formen, während Bedeutungssuchen Jishos höchstbewertetes Ergebnis verwenden. Kana- und Kanji-Ebenen erfordern weiterhin ein gültiges japanisches Zeichen, und unsichere oder überlange Eingaben werden vor dem Netzwerkzugriff abgelehnt.
 
 - [f14901a](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/f14901a)
+
+## Transformationsansichten für Grundformen von Verben und Adverbien
+
+Das Japanisch-Paket wurde an den neuesten Cognis-Transformationsvertrag angepasst. Der Wortschatz trennt nun Grundformen von Verben und unveränderliche Adverbien in eigene Ansichten; Verben unterscheiden Ichidan, reguläre Godan-Endungen, die Ausnahmen `行く` und `ある` sowie das unregelmäßige `来る`. Vom Provider deklarierte Regeln leiten geprüfte Höflichkeits-, Verneinungs-, Vergangenheits- und Te-Formen zur Anzeigezeit ab, während das Paket nur die zwölf kanonischen Grunddatensätze für Verben und Adverbien und keine erzeugten Duplikate speichert.
+
+- [097eab5](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/097eab5)

@@ -560,3 +560,9 @@ Added direct definition relationships to every visible Kanji-spelled Vocabulary 
 Corrected the Jisho composer flow so Vocabulary searches accept bounded English and other Latin-script terms instead of returning immediately without a request. Exact packaged Japanese entries remain native-first; remote Japanese queries prefer exact forms, while meaning searches use Jisho's highest-ranked result. Kana and Kanji layers still require one valid Japanese character, and unsafe or oversized input is rejected before network access.
 
 - [f14901a](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/f14901a)
+
+## Base Verb and Adverb Transformation Views
+
+Aligned the Japanese pack with the latest Cognis transformation contract. Vocabulary now separates base verbs and invariant adverbs into dedicated views; verbs distinguish ichidan, regular godan endings, exceptional `行く` and `ある`, and irregular `来る`. Provider-declared rules derive reviewed polite, negative, past, and te forms at presentation time, while the pack stores only the twelve canonical base verb/adverb records and no generated duplicates.
+
+- [097eab5](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/097eab5)

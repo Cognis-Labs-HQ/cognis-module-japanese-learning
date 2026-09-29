@@ -249,3 +249,7 @@ Perender kartu Cognis Library hanya membaca definisi dari relasi definisi langsu
 ## Validasi Kueri Jisho
 
 Pencarian Kosakata menerima istilah pencarian bahasa Jepang atau Latin yang dibatasi, termasuk glosarium bahasa Inggris yang terdiri dari beberapa kata, dan memakai hasil berperingkat tertinggi dari Jisho jika tidak ada ejaan bahasa Jepang yang persis cocok dengan kueri. Lapisan Kana dan Kanji tetap dibatasi pada satu karakter valid karena sarannya harus mempertahankan lapisan unit tulisan yang dipilih. Tanda baca tidak valid, masukan kontrol, dan kueri yang terlalu panjang ditolak sebelum akses jaringan.
+
+## Verba Dasar, Adverbia, dan Transformasi
+
+Lapisan Kosakata memisahkan verba dan adverbia bentuk dasar bertag ke tampilan transformasi bernama penyedia. Setiap verba memiliki tag `verb` beserta tepat satu tag keluarga konjugasi; skema membedakan ichidan, akhiran godan reguler, pola khusus `行く` dan `ある`, serta `来る` tak beraturan. Aturan deterministik menurunkan bentuk sopan, negatif, lampau, dan te saat penyajian. Adverbia bahasa Jepang hanya memiliki `adverb` dan tidak berubah, sehingga tampilan transformasinya menunjukkan kartu dasar kanonis tanpa infleksi buatan. Paket konten tidak pernah menyimpan bentuk verba hasil transformasi atau kartu adverbia turunan.

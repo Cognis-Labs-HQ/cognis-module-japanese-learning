@@ -218,3 +218,7 @@ Graf saat ini menggantikan uraian pembungkus bacaan lama di atas. Kana atomik me
 Pelafalan Kanji ditautkan sebagai rekaman bacaan tersembunyi yang terpisah. Karena itu, setiap bacaan yang ditampilkan—termasuk kun’yomi dan on’yomi alternatif—membuka bacaan lengkap dan meneruskan ke Kana atomik yang berurutan.
 
 Pencarian Kosakata juga menerima istilah bahasa Inggris yang dibatasi seperti `mythical cat`; jika tidak ada ejaan bahasa Jepang yang persis cocok dengan kueri, penyedia memakai hasil berperingkat tertinggi dari Jisho. Pencarian Kana dan Kanji tetap dibatasi pada masukan tepat satu karakter bahasa Jepang.
+
+## Tampilan transformasi verba dan adverbia
+
+Kosakata kini memisahkan verba dan adverbia bentuk dasar dari kartu biasa. Tag keluarga konjugasi yang telah ditinjau menurunkan bentuk sopan, negatif, lampau, dan te untuk verba ichidan, godan, khusus, dan tak beraturan tanpa membuat rekaman belajar duplikat. Adverbia bahasa Jepang tetap tidak berubah dan hanya menampilkan kartu dasarnya; bentuk yang dihasilkan hanya untuk penyajian.
