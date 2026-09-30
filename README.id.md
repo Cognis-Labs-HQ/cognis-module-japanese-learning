@@ -131,7 +131,7 @@ Komposisi kini memakai rekaman terdekat yang tersedia: `日本語` menaut ke kat
 
 Bacaan pada kartu Kanji tertaut ke rekaman Kosakata khusus, lalu setiap rekaman bacaan tertaut ke karakter Hiragana yang menyusunnya. Rekaman khusus bacaan tetap dapat dibuka melalui tautan untuk definisi, tetapi disembunyikan dari penjelajah Kosakata; kosakata biasa tetap terlihat.
 
-Grup pelafalan Kanji merujuk langsung ke Kana atomik yang berurutan. Paket tidak memuat kartu Kosakata `reading:kanji` tersembunyi, sehingga bacaan seperti `む` membuka unit tulisan Kana, bukan kartu Kosakata berlabel sama. Rekaman `reading:pronunciation` tersembunyi hanya untuk bacaan kata leksikal lengkap dan tidak boleh menduplikasi label unit tulisan Kana.
+Kanji dengan satu pelafalan menaut langsung ke Kana atomik berurutan. Kanji dengan beberapa pelafalan menggunakan tepat satu rekaman Kosakata `reading:kanji` tersembunyi untuk setiap bacaan; rekaman itu menautkan judulnya ke satu Kanji sumber melalui `spelling` dan merekonstruksi pelafalannya melalui `reading-kana` berurutan. Definisi tersendiri hanya disertakan bila maknanya lebih sempit daripada Kanji sumber. Jangan membuat rekaman bacaan untuk pelafalan gabungan seperti `せんせい`; kata majemuk menggunakan kembali segmen terpisah seperti `せん` dan `せい`.
 
 ## Definisi Bacaan Kontekstual
 
@@ -183,7 +183,7 @@ Pelafalan kalimat menggunakan hubungan `words` berurutan yang sudah ada untuk ta
 
 ## Bacaan Kanji ke kosakata
 
-Grup pelafalan Kanji merujuk langsung ke Kana atomik yang berurutan. Paket tidak memuat kartu Kosakata `reading:kanji` tersembunyi, sehingga bacaan seperti `む` membuka unit tulisan Kana, bukan kartu Kosakata berlabel sama. Rekaman `reading:pronunciation` tersembunyi hanya untuk bacaan kata leksikal lengkap dan tidak boleh menduplikasi label unit tulisan Kana.
+Kanji dengan satu pelafalan menaut langsung ke Kana atomik berurutan. Kanji dengan beberapa pelafalan menggunakan tepat satu rekaman Kosakata `reading:kanji` tersembunyi untuk setiap bacaan; rekaman itu menautkan judulnya ke satu Kanji sumber melalui `spelling` dan merekonstruksi pelafalannya melalui `reading-kana` berurutan. Definisi tersendiri hanya disertakan bila maknanya lebih sempit daripada Kanji sumber. Jangan membuat rekaman bacaan untuk pelafalan gabungan seperti `せんせい`; kata majemuk menggunakan kembali segmen terpisah seperti `せん` dan `せい`.
 
 ## Pelafalan kalimat yang tertaut sepenuhnya
 
@@ -213,9 +213,9 @@ Setiap pelafalan kalimat kini diuji terhadap resolver detail judul host sehingga
 
 ## Graf pelafalan turunan saat ini
 
-Grup pelafalan Kanji merujuk langsung ke Kana atomik yang berurutan. Paket tidak memuat kartu Kosakata `reading:kanji` tersembunyi, sehingga bacaan seperti `む` membuka unit tulisan Kana, bukan kartu Kosakata berlabel sama. Rekaman `reading:pronunciation` tersembunyi hanya untuk bacaan kata leksikal lengkap dan tidak boleh menduplikasi label unit tulisan Kana.
+Kanji dengan satu pelafalan menaut langsung ke Kana atomik berurutan. Kanji dengan beberapa pelafalan menggunakan tepat satu rekaman Kosakata `reading:kanji` tersembunyi untuk setiap bacaan; rekaman itu menautkan judulnya ke satu Kanji sumber melalui `spelling` dan merekonstruksi pelafalannya melalui `reading-kana` berurutan. Definisi tersendiri hanya disertakan bila maknanya lebih sempit daripada Kanji sumber. Jangan membuat rekaman bacaan untuk pelafalan gabungan seperti `せんせい`; kata majemuk menggunakan kembali segmen terpisah seperti `せん` dan `せい`.
 
-Grup pelafalan Kanji merujuk langsung ke Kana atomik yang berurutan. Paket tidak memuat kartu Kosakata `reading:kanji` tersembunyi, sehingga bacaan seperti `む` membuka unit tulisan Kana, bukan kartu Kosakata berlabel sama. Rekaman `reading:pronunciation` tersembunyi hanya untuk bacaan kata leksikal lengkap dan tidak boleh menduplikasi label unit tulisan Kana.
+Kanji dengan satu pelafalan menaut langsung ke Kana atomik berurutan. Kanji dengan beberapa pelafalan menggunakan tepat satu rekaman Kosakata `reading:kanji` tersembunyi untuk setiap bacaan; rekaman itu menautkan judulnya ke satu Kanji sumber melalui `spelling` dan merekonstruksi pelafalannya melalui `reading-kana` berurutan. Definisi tersendiri hanya disertakan bila maknanya lebih sempit daripada Kanji sumber. Jangan membuat rekaman bacaan untuk pelafalan gabungan seperti `せんせい`; kata majemuk menggunakan kembali segmen terpisah seperti `せん` dan `せい`.
 
 Pencarian Kosakata juga menerima istilah bahasa Inggris yang dibatasi seperti `mythical cat`; jika tidak ada ejaan bahasa Jepang yang persis cocok dengan kueri, penyedia memakai hasil berperingkat tertinggi dari Jisho. Pencarian Kana dan Kanji tetap dibatasi pada masukan tepat satu karakter bahasa Jepang.
 
@@ -227,9 +227,9 @@ Kosakata kini memisahkan verba dan adverbia bentuk dasar dari kartu biasa. Tag k
 
 Pelafalan kalimat menautkan setiap segmen bacaan berurutan ke unsur Kosakata atau Partikel yang sudah ada dan terlihat melalui `linkRelationships: ["words", "particles"]`. Pelafalan kalimat lengkap tidak boleh disimpan sebagai rekaman Kosakata; Kosakata juga tidak boleh memuat struktur kalimat, komposit, atau partikel.
 
-## Bacaan Kanji langsung ke Kana
+## Perantara bacaan Kanji selektif
 
-Grup pelafalan Kanji merujuk langsung ke Kana atomik yang berurutan. Paket tidak memuat kartu Kosakata `reading:kanji` tersembunyi, sehingga bacaan seperti `む` membuka unit tulisan Kana, bukan kartu Kosakata berlabel sama. Rekaman `reading:pronunciation` tersembunyi hanya untuk bacaan kata leksikal lengkap dan tidak boleh menduplikasi label unit tulisan Kana.
+Kanji dengan satu pelafalan menaut langsung ke Kana atomik berurutan. Kanji dengan beberapa pelafalan menggunakan tepat satu rekaman Kosakata `reading:kanji` tersembunyi untuk setiap bacaan; rekaman itu menautkan judulnya ke satu Kanji sumber melalui `spelling` dan merekonstruksi pelafalannya melalui `reading-kana` berurutan. Definisi tersendiri hanya disertakan bila maknanya lebih sempit daripada Kanji sumber. Jangan membuat rekaman bacaan untuk pelafalan gabungan seperti `せんせい`; kata majemuk menggunakan kembali segmen terpisah seperti `せん` dan `せい`.
 
 ## Transformasi bercabang mendalam
 

@@ -608,3 +608,9 @@ Removed all 140 hidden `reading:kanji` Vocabulary records, including single-Kana
 Aligned the Japanese pack with Cognis' composable transformation-tree contract. All verb families now branch through polite, negative, past, connective, causative, passive, potential, and volitional pathways, including a four-step causative-desire chain. Written forms and pronunciations transform independently, localized definition overrides describe semantic branches, adverbs remain invariant base cards, and generated forms remain presentation-only.
 
 - [d93ad3c](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/d93ad3c)
+
+## Selective Kanji Reading Intermediates
+
+Restored one hidden reading Vocabulary card per pronunciation only for Kanji with multiple readings; the sole single-reading Kanji continues directly to atomic Kana. Each intermediate links its title to exactly one source Kanji, reconstructs its pronunciation from atomic Kana, and may own a distinct definition when semantically narrower. Removed complete-word Kana wrappers such as `せんせい`; `先生` now composes its reading from the separate `せん` and `せい` intermediates.
+
+- [91488aa](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/91488aa)

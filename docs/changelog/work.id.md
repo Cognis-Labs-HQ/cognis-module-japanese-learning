@@ -608,3 +608,9 @@ Seluruh 140 rekaman Kosakata `reading:kanji` tersembunyi telah dihapus, termasuk
 Paket Jepang diselaraskan dengan kontrak pohon transformasi tersusun Cognis. Semua keluarga verba kini bercabang melalui jalur sopan, negatif, lampau, penghubung, kausatif, pasif, potensial, dan volisional, termasuk rantai keinginan kausatif empat tahap. Bentuk tulisan dan pelafalan ditransformasi secara mandiri, penggantian definisi terlokalisasi menjelaskan cabang semantik, adverbia tetap berupa kartu dasar yang tidak berubah, dan bentuk hasil hanya untuk penyajian.
 
 - [d93ad3c](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/d93ad3c)
+
+## Perantara Bacaan Kanji Selektif
+
+Satu kartu Kosakata bacaan tersembunyi per pelafalan dipulihkan hanya untuk Kanji yang memiliki beberapa bacaan; satu-satunya Kanji dengan satu bacaan tetap menaut langsung ke Kana atomik. Setiap perantara menautkan judulnya ke tepat satu Kanji sumber, merekonstruksi pelafalannya dari Kana atomik, dan dapat memiliki definisi tersendiri bila maknanya lebih sempit. Pembungkus Kana kata lengkap seperti `せんせい` dihapus; bacaan `先生` kini tersusun dari perantara `せん` dan `せい` yang terpisah.
+
+- [91488aa](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/91488aa)

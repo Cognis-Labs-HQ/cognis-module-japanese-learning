@@ -1,6 +1,6 @@
 {
     "id": "japanese-core",
-    "version": 74,
+    "version": 75,
     "namespace": "ja",
     "language": "ja",
     "metadata": {
@@ -394,7 +394,7 @@
                     },
                     "input": {
                         "control": "tagList",
-                        "linkRelationships": ["readings"]
+                        "linkRelationships": ["readings", "single-readings"]
                     },
                     "multi_value": true
                 },
@@ -447,7 +447,7 @@
             "relationships": [
                 {
                     "id": "readings",
-                    "targetLayer": "characters",
+                    "targetLayer": "words",
                     "metadata": {
                         "labels": {
                             "de": "Lesungen",
@@ -458,8 +458,25 @@
                     },
                     "ordered": true,
                     "onDelete": "restrict",
-                    "minimum": 1,
-                    "requiredTarget": true,
+                    "minimum": 0,
+                    "resolverRole": "explicit",
+                    "presentationRole": "pronunciation",
+                    "grouped": true
+                },
+                {
+                    "id": "single-readings",
+                    "targetLayer": "characters",
+                    "metadata": {
+                        "labels": {
+                            "de": "Einzelne Kana-Lesung",
+                            "en": "Single Kana Reading",
+                            "id": "Bacaan Kana Tunggal",
+                            "ja": "単一かな読み"
+                        }
+                    },
+                    "minimum": 0,
+                    "ordered": true,
+                    "onDelete": "restrict",
                     "resolverRole": "explicit",
                     "presentationRole": "pronunciation",
                     "grouped": true

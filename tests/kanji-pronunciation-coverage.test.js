@@ -256,10 +256,9 @@ test("every packaged Kanji covers its reviewed KANJIDIC on and kun readings", ()
             new Set(expected),
             entry.label,
         );
-        assert.equal(
-            entry.referenceGroups.readings.length,
-            expected.length,
-            entry.label,
-        );
+        const groups =
+            entry.referenceGroups.readings ??
+            entry.referenceGroups["single-readings"];
+        assert.equal(groups.length, expected.length, entry.label);
     }
 });

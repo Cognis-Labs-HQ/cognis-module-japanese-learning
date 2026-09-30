@@ -131,7 +131,7 @@ Kompositionen verwenden jetzt die nächstgelegenen Datensätze: `日本語` verw
 
 Die angezeigten Lesungen einer Kanji-Karte verlinken auf eigene Wortschatzeinträge, die wiederum auf die Hiragana-Zeichen verweisen, aus denen die jeweilige Lesung besteht. Reine Lesungseinträge bleiben für Definitionen direkt verlinkbar, werden aber im Wortschatz-Browser ausgeblendet; gewöhnlicher Wortschatz bleibt sichtbar.
 
-Kanji-Aussprachegruppen verweisen direkt auf geordnete atomare Kana. Das Paket enthält keine ausgeblendeten `reading:kanji`-Vokabelkarten; eine Lesung wie `む` öffnet daher die Kana-Schreibeinheit statt einer gleich beschrifteten Vokabelkarte. Ausgeblendete `reading:pronunciation`-Datensätze sind vollständigen lexikalischen Wortlesungen vorbehalten und dürfen keine Kana-Beschriftung duplizieren.
+Ein Kanji mit einer Aussprache verknüpft direkt geordnete atomare Kana. Ein Kanji mit mehreren Aussprachen verwendet genau einen ausgeblendeten `reading:kanji`-Vokabeldatensatz je Lesung; dieser verknüpft seinen Titel über `spelling` mit dem einzigen Quell-Kanji und rekonstruiert seine Aussprache über geordnetes `reading-kana`. Eigene Definitionen erhält er nur, wenn seine Bedeutung enger als die des Quell-Kanji ist. Für eine zusammengesetzte Gesamtaussprache wie `せんせい` darf kein Lesungsdatensatz entstehen; Komposita verwenden getrennte Segmente wie `せん` und `せい`.
 
 ## Kontextbezogene Lesungsdefinitionen
 
@@ -183,7 +183,7 @@ Die Aussprache eines Satzes verwendet die bereits geordnete `words`-Beziehung f�
 
 ## Kanji-Lesungen zu Vokabeln
 
-Kanji-Aussprachegruppen verweisen direkt auf geordnete atomare Kana. Das Paket enthält keine ausgeblendeten `reading:kanji`-Vokabelkarten; eine Lesung wie `む` öffnet daher die Kana-Schreibeinheit statt einer gleich beschrifteten Vokabelkarte. Ausgeblendete `reading:pronunciation`-Datensätze sind vollständigen lexikalischen Wortlesungen vorbehalten und dürfen keine Kana-Beschriftung duplizieren.
+Ein Kanji mit einer Aussprache verknüpft direkt geordnete atomare Kana. Ein Kanji mit mehreren Aussprachen verwendet genau einen ausgeblendeten `reading:kanji`-Vokabeldatensatz je Lesung; dieser verknüpft seinen Titel über `spelling` mit dem einzigen Quell-Kanji und rekonstruiert seine Aussprache über geordnetes `reading-kana`. Eigene Definitionen erhält er nur, wenn seine Bedeutung enger als die des Quell-Kanji ist. Für eine zusammengesetzte Gesamtaussprache wie `せんせい` darf kein Lesungsdatensatz entstehen; Komposita verwenden getrennte Segmente wie `せん` und `せい`.
 
 ## Vollständig verknüpfte Satzaussprache
 
@@ -213,9 +213,9 @@ Jede Satzaussprache wird nun gegen den Titeldetail-Resolver des Hosts geprüft, 
 
 ## Aktueller abgeleiteter Aussprachegraph
 
-Kanji-Aussprachegruppen verweisen direkt auf geordnete atomare Kana. Das Paket enthält keine ausgeblendeten `reading:kanji`-Vokabelkarten; eine Lesung wie `む` öffnet daher die Kana-Schreibeinheit statt einer gleich beschrifteten Vokabelkarte. Ausgeblendete `reading:pronunciation`-Datensätze sind vollständigen lexikalischen Wortlesungen vorbehalten und dürfen keine Kana-Beschriftung duplizieren.
+Ein Kanji mit einer Aussprache verknüpft direkt geordnete atomare Kana. Ein Kanji mit mehreren Aussprachen verwendet genau einen ausgeblendeten `reading:kanji`-Vokabeldatensatz je Lesung; dieser verknüpft seinen Titel über `spelling` mit dem einzigen Quell-Kanji und rekonstruiert seine Aussprache über geordnetes `reading-kana`. Eigene Definitionen erhält er nur, wenn seine Bedeutung enger als die des Quell-Kanji ist. Für eine zusammengesetzte Gesamtaussprache wie `せんせい` darf kein Lesungsdatensatz entstehen; Komposita verwenden getrennte Segmente wie `せん` und `せい`.
 
-Kanji-Aussprachegruppen verweisen direkt auf geordnete atomare Kana. Das Paket enthält keine ausgeblendeten `reading:kanji`-Vokabelkarten; eine Lesung wie `む` öffnet daher die Kana-Schreibeinheit statt einer gleich beschrifteten Vokabelkarte. Ausgeblendete `reading:pronunciation`-Datensätze sind vollständigen lexikalischen Wortlesungen vorbehalten und dürfen keine Kana-Beschriftung duplizieren.
+Ein Kanji mit einer Aussprache verknüpft direkt geordnete atomare Kana. Ein Kanji mit mehreren Aussprachen verwendet genau einen ausgeblendeten `reading:kanji`-Vokabeldatensatz je Lesung; dieser verknüpft seinen Titel über `spelling` mit dem einzigen Quell-Kanji und rekonstruiert seine Aussprache über geordnetes `reading-kana`. Eigene Definitionen erhält er nur, wenn seine Bedeutung enger als die des Quell-Kanji ist. Für eine zusammengesetzte Gesamtaussprache wie `せんせい` darf kein Lesungsdatensatz entstehen; Komposita verwenden getrennte Segmente wie `せん` und `せい`.
 
 Die Wortschatzsuche akzeptiert außerdem begrenzte englische Suchbegriffe wie `mythical cat`; wenn keine japanische Schreibweise exakt mit der Anfrage übereinstimmt, verwendet der Provider Jishos höchstbewertetes Ergebnis. Die Kana- und Kanji-Suche bleibt auf die exakte Eingabe eines einzelnen japanischen Zeichens beschränkt.
 
@@ -227,9 +227,9 @@ Der Wortschatz trennt jetzt Grundformen von Verben und Adverbien von gewöhnlich
 
 Die Satzaussprache verknüpft über `linkRelationships: ["words", "particles"]` jeden geordneten Leseabschnitt mit seinem vorhandenen sichtbaren Vokabel- oder Partikelbestandteil. Vollständige Satzaussprachen dürfen niemals als Vokabeldatensätze gespeichert werden; Vokabeln dürfen außerdem keine Satz-, Komposit- oder Partikelstrukturen enthalten.
 
-## Direkte Kanji-Lesungen zu Kana
+## Selektive Zwischenkarten für Kanji-Lesungen
 
-Kanji-Aussprachegruppen verweisen direkt auf geordnete atomare Kana. Das Paket enthält keine ausgeblendeten `reading:kanji`-Vokabelkarten; eine Lesung wie `む` öffnet daher die Kana-Schreibeinheit statt einer gleich beschrifteten Vokabelkarte. Ausgeblendete `reading:pronunciation`-Datensätze sind vollständigen lexikalischen Wortlesungen vorbehalten und dürfen keine Kana-Beschriftung duplizieren.
+Ein Kanji mit einer Aussprache verknüpft direkt geordnete atomare Kana. Ein Kanji mit mehreren Aussprachen verwendet genau einen ausgeblendeten `reading:kanji`-Vokabeldatensatz je Lesung; dieser verknüpft seinen Titel über `spelling` mit dem einzigen Quell-Kanji und rekonstruiert seine Aussprache über geordnetes `reading-kana`. Eigene Definitionen erhält er nur, wenn seine Bedeutung enger als die des Quell-Kanji ist. Für eine zusammengesetzte Gesamtaussprache wie `せんせい` darf kein Lesungsdatensatz entstehen; Komposita verwenden getrennte Segmente wie `せん` und `せい`.
 
 ## Tief verzweigte Transformationen
 

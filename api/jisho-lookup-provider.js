@@ -138,7 +138,8 @@ function wordReferences(index, reading) {
 }
 
 function kanjiReferences(index, readings) {
-    return kanaReferences(index, readings[0] ?? "", "readings");
+    if (readings.length !== 1) return [];
+    return kanaReferences(index, readings[0], "single-readings");
 }
 
 function spellingReferences(index, label) {
@@ -214,7 +215,9 @@ function jishoSuggestion(index, layer, label, data) {
         ...(pronunciationReferences.length
             ? {
                   referenceGroups: {
-                      [layer === "words" ? "reading-kana" : "readings"]: [
+                      [layer === "words"
+                          ? "reading-kana"
+                          : pronunciationReferences[0].relation]: [
                           pronunciationReferences,
                       ],
                   },

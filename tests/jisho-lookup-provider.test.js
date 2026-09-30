@@ -71,7 +71,7 @@ test("Jisho provider resolves native content before network lookup", async () =>
     assert.deepEqual(suggestion.referenceGroups["pronunciation-readings"], [
         [
             {
-                entryId: "ja:word:pronunciation-neko",
+                entryId: "ja:word:kanji-reading-e78cab-01",
                 relation: "pronunciation-readings",
                 position: 0,
             },
@@ -191,11 +191,15 @@ test("Jisho Kanji suggestions link readings directly to atomic Kana", async () =
         label: "龍",
     });
     assert.deepEqual(
-        suggestion.referenceGroups.readings[0].map(({ relation }) => relation),
-        ["readings", "readings", "readings"],
+        suggestion.referenceGroups["single-readings"][0].map(
+            ({ relation }) => relation,
+        ),
+        ["single-readings", "single-readings", "single-readings"],
     );
     assert.deepEqual(
-        suggestion.referenceGroups.readings[0].map(({ position }) => position),
+        suggestion.referenceGroups["single-readings"][0].map(
+            ({ position }) => position,
+        ),
         [0, 1, 2],
     );
 });

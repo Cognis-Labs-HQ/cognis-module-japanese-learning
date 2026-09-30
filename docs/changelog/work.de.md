@@ -608,3 +608,9 @@ Alle 140 ausgeblendeten `reading:kanji`-Vokabeldatensätze wurden entfernt, eins
 Das japanische Paket wurde an Cognis' Vertrag für zusammensetzbare Transformationsbäume angepasst. Alle Verbfamilien verzweigen nun in höfliche, verneinte, vergangene, verbindende, kausative, passive, potenzielle und volitionale Pfade, einschließlich einer vierstufigen Kausativ-Wunschkette. Schriftform und Aussprache werden unabhängig transformiert, lokalisierte Definitionsüberschreibungen erläutern semantische Zweige, Adverbien bleiben unveränderte Grundkarten und erzeugte Formen bleiben reine Darstellung.
 
 - [d93ad3c](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/d93ad3c)
+
+## Selektive Zwischenkarten für Kanji-Lesungen
+
+Nur für Kanji mit mehreren Lesungen wurde je Aussprache eine ausgeblendete Lesungs-Vokabelkarte wiederhergestellt; das einzige Kanji mit nur einer Lesung führt weiterhin direkt zu atomaren Kana. Jede Zwischenkarte verknüpft ihren Titel mit genau einem Quell-Kanji, rekonstruiert ihre Aussprache aus atomaren Kana und darf bei engerer Bedeutung eine eigene Definition besitzen. Vollständige Kana-Worthüllen wie `せんせい` wurden entfernt; `先生` setzt seine Lesung nun aus den getrennten Zwischenkarten `せん` und `せい` zusammen.
+
+- [91488aa](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/91488aa)

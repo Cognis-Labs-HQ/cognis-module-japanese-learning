@@ -395,7 +395,7 @@ test("recognized Library fields and definition relationships replace duplicate s
     }
 });
 
-test("kanji readings resolve directly to atomic Kana", () => {
+test("Kanji use intermediate readings only when multiple pronunciations exist", () => {
     const { schema, records } = loadPack();
     const compoundLayer = schema.layers.find(
         ({ semanticRole }) => semanticRole === "compoundWritingUnit",
@@ -403,20 +403,26 @@ test("kanji readings resolve directly to atomic Kana", () => {
     const relationship = compoundLayer.relationships.find(
         ({ id }) => id === "readings",
     );
-    assert.equal(relationship.targetLayer, "characters");
+    assert.equal(relationship.targetLayer, "words");
     const entries = new Map(records.map((record) => [record.id, record]));
     for (const kanji of records.filter(
         ({ layer }) => layer === "alt-characters",
     )) {
-        const readingGroups = kanji.referenceGroups?.readings ?? [];
+        const relation =
+            kanji.fields.pronunciation.length > 1
+                ? "readings"
+                : "single-readings";
+        const readingGroups = kanji.referenceGroups?.[relation] ?? [];
         assert.equal(readingGroups.length, kanji.fields.pronunciation.length);
         assert.deepEqual(
             readingGroups.map((group) =>
                 group
                     .map(({ entryId }) => {
                         const reading = entries.get(entryId);
-                        assert.equal(reading.layer, "characters");
-                        assert.equal([...reading.label].length, 1);
+                        assert.equal(
+                            reading.layer,
+                            relation === "readings" ? "words" : "characters",
+                        );
                         return reading.label;
                     })
                     .join(""),
@@ -710,7 +716,7 @@ test("Kanji and vocabulary preserve grouped Kana pronunciation references", () =
     const recordsById = new Map(records.map((record) => [record.id, record]));
     let multipleKanjiReadings = 0;
     for (const [layerId, relations] of [
-        ["alt-characters", ["readings"]],
+        ["alt-characters", ["readings", "single-readings"]],
         ["words", ["pronunciation-readings", "reading-kana", "kana-spelling"]],
     ]) {
         const layer = schema.layers.find(({ id }) => id === layerId);
@@ -806,7 +812,8 @@ test("definitions stay semantic while resolvers describe compositions", () => {
             ),
         ),
         new Set([
-            "readings:characters",
+            "readings:words",
+            "single-readings:characters",
             "character-title:characters",
             "reading-kana:characters",
             "pronunciation-readings:words",
@@ -825,6 +832,7 @@ test("definitions stay semantic while resolvers describe compositions", () => {
         ),
         new Map([
             ["readings", "pronunciation"],
+            ["single-readings", "pronunciation"],
             ["character-title", "composition"],
             ["reading-kana", "pronunciation"],
             ["pronunciation-readings", "pronunciation"],

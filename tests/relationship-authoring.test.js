@@ -74,7 +74,7 @@ test("fields publish provider-owned editor controls", () => {
     }
 });
 
-test("vocabulary pronunciation links through complete hidden readings", () => {
+test("vocabulary pronunciation links through Kanji segments and atomic Kana", () => {
     const wordLayer = schema.layers.find(({ id }) => id === "words");
     const pronunciation = wordLayer.fields.find(
         ({ id }) => id === "pronunciation",
@@ -105,31 +105,19 @@ test("vocabulary pronunciation links through complete hidden readings", () => {
     assert.equal(
         labelsFor(recordsById.get("ja:word:nihongo"), [
             "pronunciation-readings",
+            "reading-kana",
         ]),
         "にほんご",
     );
 });
 
-test("vocabulary shims are hidden structural records", () => {
+test("whole-word Kana pronunciation shims are not Vocabulary records", () => {
     assert.ok(words.length > 0);
     const shims = words.filter(
         ({ class: contentClass, hidden }) =>
             hidden === true && contentClass === "reading:pronunciation",
     );
-    assert.equal(shims.length, 31);
-    assert.ok(
-        shims.every(
-            ({ class: contentClass }) =>
-                contentClass === "reading:pronunciation",
-        ),
-    );
-    assert.ok(
-        shims.every((entry) =>
-            entry.references.every(
-                ({ relation }) => relation !== "definitions",
-            ),
-        ),
-    );
+    assert.equal(shims.length, 0);
     assert.ok(words.every(({ fields }) => fields.pronunciation?.length === 1));
 });
 
@@ -140,9 +128,16 @@ test("Kanji readings and particles terminate at Kana", () => {
     const pronunciation = altCharacters.fields.find(
         ({ id }) => id === "pronunciation",
     );
-    assert.deepEqual(pronunciation.input.linkRelationships, ["readings"]);
+    assert.deepEqual(pronunciation.input.linkRelationships, [
+        "readings",
+        "single-readings",
+    ]);
     for (const entry of kanji) {
-        const groups = entry.referenceGroups.readings;
+        const relationship =
+            entry.fields.pronunciation.length > 1
+                ? "readings"
+                : "single-readings";
+        const groups = entry.referenceGroups[relationship];
         assert.deepEqual(
             groups.map((group) =>
                 group
@@ -151,15 +146,13 @@ test("Kanji readings and particles terminate at Kana", () => {
             ),
             entry.fields.pronunciation,
         );
-        for (const group of groups) {
-            assert.ok(
-                group.every(
-                    ({ entryId }) =>
-                        recordsById.get(entryId).fields.character_class,
-                ),
-                entry.id,
-            );
-        }
+        for (const group of groups)
+            for (const { entryId } of group) {
+                const target = recordsById.get(entryId);
+                if (relationship === "single-readings")
+                    assert.ok(target.fields.character_class, entry.id);
+                else assert.equal(target.class, "reading:kanji", entry.id);
+            }
     }
     const ga = recordsById.get("ja:particle:ga");
     assert.equal(labelsFor(ga, ["kana-spelling"]), "が");
@@ -204,18 +197,46 @@ test("sentence pronunciations link only to visible constituent cards", () => {
     }
 });
 
-test("hidden Vocabulary never duplicates a Kana writing-unit card", () => {
-    const kanaLabels = new Set(characters.map(({ label }) => label));
-    const duplicate = words.find(
-        ({ hidden, label }) => hidden === true && kanaLabels.has(label),
+test("Kanji reading Vocabulary belongs only to multi-reading Kanji", () => {
+    const readings = words.filter(
+        ({ class: contentClass }) => contentClass === "reading:kanji",
     );
-    assert.equal(duplicate, undefined);
-    assert.equal(
-        words.some(
-            ({ class: contentClass }) => contentClass === "reading:kanji",
-        ),
-        false,
+    assert.equal(readings.length, 139);
+    for (const reading of readings) {
+        assert.equal(reading.hidden, true, reading.id);
+        const spelling = reading.references.filter(
+            ({ relation }) => relation === "spelling",
+        );
+        assert.equal(spelling.length, 1, reading.id);
+        const source = recordsById.get(spelling[0].entryId);
+        assert.equal(source.fields.pronunciation.length > 1, true, reading.id);
+        assert.ok(source.fields.pronunciation.includes(reading.label));
+        assert.equal(labelsFor(reading, ["reading-kana"]), reading.label);
+        const readingDefinitions = reading.references
+            .filter(({ relation }) => relation === "definitions")
+            .map(({ entryId }) => entryId)
+            .sort();
+        if (readingDefinitions.length) {
+            const sourceDefinitions = source.references
+                .filter(({ relation }) => relation === "definitions")
+                .map(({ entryId }) => entryId)
+                .sort();
+            assert.notDeepEqual(readingDefinitions, sourceDefinitions);
+        }
+    }
+
+    const compoundPronunciations = new Set(
+        words
+            .filter(
+                ({ hidden, references }) =>
+                    hidden !== true &&
+                    references.filter(({ relation }) => relation === "spelling")
+                        .length > 1,
+            )
+            .flatMap(({ fields }) => fields.pronunciation ?? []),
     );
+    assert.ok(!readings.some(({ label }) => compoundPronunciations.has(label)));
+    assert.ok(!readings.some(({ label }) => label === "せんせい"));
 });
 
 test("multi-Kana titles compose only from atomic Kana", () => {
