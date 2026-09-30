@@ -156,7 +156,7 @@ A hidden reading must not have multiple inbound records with the same display la
 
 ## Sentence pronunciation graph
 
-A sentence pronunciation field links to exactly one hidden complete-reading Vocabulary record through `pronunciation-readings`. That record reconstructs the entire pronunciation with contiguous `word-spelling` references to the closest hidden lexical readings and `reading-kana` references to atomic particle or non-lexical Kana. Tests must fail on any missing substring, non-hidden vocabulary target, direct sentence-to-character shortcut, or unlinked reading.
+A sentence pronunciation field links through `words` and `particles` to every ordered visible constituent card. The host matches each constituent's complete pronunciation as an alias, so each reading segment opens its Vocabulary or Particle card instead of one hidden card for the whole sentence. Sentence-level complete-reading Vocabulary records and `pronunciation-readings` groups are forbidden.
 
 ## Acyclic traversal and lexical readings
 

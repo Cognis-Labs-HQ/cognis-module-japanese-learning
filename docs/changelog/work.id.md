@@ -566,3 +566,9 @@ Alur composer Jisho diperbaiki agar pencarian Kosakata menerima istilah bahasa I
 Paket bahasa Jepang diselaraskan dengan kontrak transformasi Cognis terbaru. Kosakata kini memisahkan verba dasar dan adverbia yang tidak berubah ke tampilan khusus; verba membedakan ichidan, akhiran godan reguler, pengecualian `行く` dan `ある`, serta `来る` tak beraturan. Aturan deklaratif penyedia menurunkan bentuk sopan, negatif, lampau, dan te yang telah ditinjau saat penyajian, sedangkan paket hanya menyimpan dua belas rekaman dasar verba/adverbia kanonis tanpa duplikat hasil transformasi.
 
 - [097eab5](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/097eab5)
+
+## Tautan Pelafalan Kalimat Tersegmentasi
+
+Detail pelafalan kalimat kini menautkan setiap segmen bacaan berurutan langsung ke kartu Kosakata atau Partikel yang terlihat. Sebanyak 25 pembungkus Kosakata kalimat lengkap tersembunyi dan relasi tingkat kalimat `pronunciation-readings` telah dihapus, sehingga `はなはとてもきれいです` membuka `花`, `は`, `とても`, `きれい`, dan `です` secara terpisah, bukan menampilkan satu kartu Kosakata untuk seluruh kalimat.
+
+- [0002eee](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/0002eee)

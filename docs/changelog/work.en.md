@@ -566,3 +566,9 @@ Corrected the Jisho composer flow so Vocabulary searches accept bounded English 
 Aligned the Japanese pack with the latest Cognis transformation contract. Vocabulary now separates base verbs and invariant adverbs into dedicated views; verbs distinguish ichidan, regular godan endings, exceptional `行く` and `ある`, and irregular `来る`. Provider-declared rules derive reviewed polite, negative, past, and te forms at presentation time, while the pack stores only the twelve canonical base verb/adverb records and no generated duplicates.
 
 - [097eab5](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/097eab5)
+
+## Segmented Sentence Pronunciation Links
+
+Sentence pronunciation details now link each ordered reading segment directly to its visible Vocabulary or Particle card. Removed the 25 hidden whole-sentence Vocabulary wrappers and the sentence-level `pronunciation-readings` relationship, so `はなはとてもきれいです` opens `花`, `は`, `とても`, `きれい`, and `です` independently instead of presenting one Vocabulary card for the complete sentence.
+
+- [0002eee](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/0002eee)

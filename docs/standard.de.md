@@ -156,7 +156,7 @@ Eine verborgene Lesung darf nicht mehrere eingehende Datensätze mit derselben A
 
 ## Aussprachegraph für Sätze
 
-Das Aussprachefeld eines Satzes verweist über `pronunciation-readings` auf genau einen verborgenen Wortschatzdatensatz mit vollständiger Lesung. Dieser Datensatz rekonstruiert die gesamte Aussprache lückenlos mit `word-spelling`-Verweisen auf die nächstliegenden verborgenen lexikalischen Lesungen und `reading-kana`-Verweisen auf atomare Partikel- oder nichtlexikalische Kana. Tests müssen bei fehlenden Teilzeichenfolgen, nicht verborgenen Wortschatzzielen, direkten Satz-zu-Zeichen-Abkürzungen oder unverknüpften Lesungen fehlschlagen.
+Das Aussprachefeld eines Satzes verweist über `words` und `particles` auf jede geordnete sichtbare Bestandteilskarte. Der Host gleicht die vollständige Aussprache jedes Bestandteils als Alias ab, sodass jedes Lesungssegment seine Wortschatz- oder Partikelkarte öffnet statt einer einzelnen verborgenen Karte für den gesamten Satz. Vollständige Satzlesungs-Wortschatzeinträge und `pronunciation-readings`-Gruppen auf Sätzen sind verboten.
 
 ## Zyklenfreie Navigation und lexikalische Lesungen
 

@@ -156,7 +156,7 @@ Bacaan tersembunyi tidak boleh memiliki beberapa rekaman masuk dengan label tamp
 
 ## Graf pelafalan kalimat
 
-Bidang pelafalan kalimat menaut ke tepat satu rekaman Kosakata bacaan lengkap tersembunyi melalui `pronunciation-readings`. Rekaman tersebut membentuk kembali seluruh pelafalan secara berurutan dengan referensi `word-spelling` ke bacaan leksikal tersembunyi terdekat dan referensi `reading-kana` ke Kana partikel atau nonleksikal atomik. Pengujian harus gagal jika ada substring hilang, target kosakata yang tidak tersembunyi, pintasan langsung kalimat-ke-karakter, atau bacaan tanpa tautan.
+Bidang pelafalan kalimat menaut melalui `words` dan `particles` ke setiap kartu konstituen terlihat yang berurutan. Host mencocokkan pelafalan lengkap setiap konstituen sebagai alias, sehingga setiap segmen bacaan membuka kartu Kosakata atau Partikelnya, bukan satu kartu tersembunyi untuk seluruh kalimat. Rekaman Kosakata bacaan lengkap tingkat kalimat dan grup `pronunciation-readings` pada kalimat dilarang.
 
 ## Penelusuran tanpa siklus dan bacaan leksikal
 

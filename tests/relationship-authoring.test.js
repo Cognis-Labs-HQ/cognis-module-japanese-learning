@@ -116,7 +116,7 @@ test("vocabulary shims are hidden structural records", () => {
         ({ class: contentClass, hidden }) =>
             hidden === true && contentClass === "reading:pronunciation",
     );
-    assert.equal(shims.length, 56);
+    assert.equal(shims.length, 31);
     assert.ok(
         shims.every(
             ({ class: contentClass }) =>
@@ -162,4 +162,46 @@ test("Kanji readings and particles terminate at Kana", () => {
     }
     const ga = recordsById.get("ja:particle:ga");
     assert.equal(labelsFor(ga, ["kana-spelling"]), "が");
+});
+
+test("sentence pronunciations link to each visible constituent card", () => {
+    const sentenceLayer = schema.layers.find(({ id }) => id === "sentences");
+    const pronunciation = sentenceLayer.fields.find(
+        ({ id }) => id === "pronunciation",
+    );
+    assert.deepEqual(pronunciation.input.linkRelationships, [
+        "words",
+        "particles",
+    ]);
+    assert.equal(
+        sentenceLayer.relationships.some(
+            ({ id }) => id === "pronunciation-readings",
+        ),
+        false,
+    );
+
+    const sentences = readLayer("sentences");
+    const sentenceTargets = new Map(
+        [...words, ...particles].map((entry) => [entry.id, entry]),
+    );
+    for (const sentence of sentences) {
+        assert.equal(
+            sentence.referenceGroups?.["pronunciation-readings"],
+            undefined,
+            sentence.id,
+        );
+        const linkedPronunciation = sentence.references
+            .filter(({ relation }) => ["words", "particles"].includes(relation))
+            .sort((left, right) => left.position - right.position)
+            .map(
+                ({ entryId }) =>
+                    sentenceTargets.get(entryId).fields.pronunciation[0],
+            )
+            .join("");
+        assert.equal(
+            linkedPronunciation,
+            sentence.fields.pronunciation[0],
+            sentence.id,
+        );
+    }
 });
