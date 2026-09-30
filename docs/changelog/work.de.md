@@ -596,3 +596,9 @@ Allen Kana-Karten mit mehreren Zeichen wurde eine ausdrückliche Titelzusammense
 Die Ausspracheverknüpfungen eines Satzes zu seinen geordneten sichtbaren Vokabel- und Partikelbestandteilen wurden wiederhergestellt. Verstärkte strukturelle Regressionstests weisen vollständige Satzlesungen, Satzkomposite, Partikelklassen, Partikelverweise und ausgeblendete Satzbestandteile aus dem Vokabellayer zurück, ohne legitime Satzverknüpfungen zu entfernen.
 
 - [7cdb1ac](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/7cdb1ac)
+
+## Direkte Kanji-Lesungen ohne Kana-duplizierende Vokabeln
+
+Alle 140 ausgeblendeten `reading:kanji`-Vokabeldatensätze wurden entfernt, einschließlich einzelner Kana-Ausreißer wie `む`. Kanji-Aussprachegruppen und entfernte Jisho-Kanji-Vorschläge verknüpfen nun direkt geordnete atomare Kana; vollständige lexikalische Aussprachehüllen bleiben nur erhalten, wenn sie keine Kana-Schreibeinheit duplizieren.
+
+- [d7a28e4](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/d7a28e4)

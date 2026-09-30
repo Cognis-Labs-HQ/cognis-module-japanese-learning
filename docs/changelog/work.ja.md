@@ -596,3 +596,9 @@ Jisho コンポーザーのフローを修正し、語彙検索で長さを制�
 文の発音から、順序付きの表示語彙および助詞構成要素へのリンクを復元しました。正当な文リンクを削除せず、文全体の読み、文の複合クラス、助詞クラス、助詞参照、非表示の文構成要素が語彙レイヤーへ混入することを強化した構造回帰テストで拒否します。
 
 - [7cdb1ac](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/7cdb1ac)
+
+## かな重複語彙を作らない直接漢字読み
+
+`む` のような単一かなの残存項目を含む、140 件すべての非表示 `reading:kanji` 語彙レコードを削除しました。漢字発音グループとリモート Jisho 漢字候補は順序付きの原子的なかなへ直接リンクし、完全な語彙発音ラッパーはかな書記単位のラベルと重複しない場合だけ残します。
+
+- [d7a28e4](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/d7a28e4)

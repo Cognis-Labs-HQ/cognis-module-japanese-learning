@@ -27,15 +27,16 @@
                         "entryId": "ja:char:ni",
                         "relation": "reading-kana",
                         "position": 0
-                    }
-                ]
-            ],
-            "pronunciation-readings": [
-                [
+                    },
                     {
-                        "entryId": "ja:word:kanji-reading-ja:kanji:hon-01",
-                        "relation": "pronunciation-readings",
+                        "entryId": "ja:char:ho",
+                        "relation": "reading-kana",
                         "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:n",
+                        "relation": "reading-kana",
+                        "position": 2
                     }
                 ]
             ]
@@ -68,16 +69,26 @@
         "class": "reading:pronunciation",
         "hidden": true,
         "referenceGroups": {
-            "pronunciation-readings": [
+            "reading-kana": [
                 [
                     {
-                        "entryId": "ja:word:pronunciation-nihon",
-                        "relation": "pronunciation-readings",
+                        "entryId": "ja:char:ni",
+                        "relation": "reading-kana",
                         "position": 0
                     },
                     {
-                        "entryId": "ja:word:kanji-reading-ja:kanji:go-01",
-                        "relation": "pronunciation-readings",
+                        "entryId": "ja:char:ho",
+                        "relation": "reading-kana",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:n",
+                        "relation": "reading-kana",
+                        "position": 2
+                    },
+                    {
+                        "entryId": "ja:char:go",
+                        "relation": "reading-kana",
                         "position": 3
                     }
                 ]
@@ -101,17 +112,13 @@
         "class": "reading:pronunciation",
         "hidden": true,
         "referenceGroups": {
-            "pronunciation-readings": [
-                [
-                    {
-                        "entryId": "ja:word:kanji-reading-e5a5bd-01",
-                        "relation": "pronunciation-readings",
-                        "position": 0
-                    }
-                ]
-            ],
             "reading-kana": [
                 [
+                    {
+                        "entryId": "ja:char:su",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
                     {
                         "entryId": "ja:char:ki",
                         "relation": "reading-kana",

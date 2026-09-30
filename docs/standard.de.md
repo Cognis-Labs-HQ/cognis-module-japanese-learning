@@ -128,7 +128,7 @@ Kompositionen verwenden jetzt die nächstgelegenen Datensätze: `日本語` verw
 
 Ein Kanji-Aussprachefeld muss für jede vollständige Lesung auf genau einen eigenen Wortschatzeintrag verweisen. Jeder reine Lesungseintrag muss `hidden: true` sein und sich über `kana-spelling` aus atomaren Kana zusammensetzen; gewöhnliche Wortschatzeinträge müssen sichtbar bleiben.
 
-Eine festgelegte Kompositum-Aussprache muss über `pronunciation-readings` die größten deklarierten Lesungssegmente in Anzeigereihenfolge referenzieren. `日本語` verlinkt beispielsweise `にほん` mit dem ausgeblendeten Lesungseintrag für `日本` und `ご` mit dem ausgeblendeten Lesungseintrag für `語`. Das sichtbare Kompositum darf diese Segmente nicht zusätzlich direkt als atomare Kana referenzieren.
+Kanji-Aussprachegruppen verweisen direkt auf geordnete atomare Kana. Das Paket enthält keine ausgeblendeten `reading:kanji`-Vokabelkarten; eine Lesung wie `む` öffnet daher die Kana-Schreibeinheit statt einer gleich beschrifteten Vokabelkarte. Ausgeblendete `reading:pronunciation`-Datensätze sind vollständigen lexikalischen Wortlesungen vorbehalten und dürfen keine Kana-Beschriftung duplizieren.
 
 ## Kontextbezogene Lesungsdefinitionen
 
@@ -140,7 +140,7 @@ Mehrere Definitionsverweise werden nur verwendet, wenn ein einzelner lexikalisch
 
 ## Vollständiger Pfad vom Satz bis zu Kana
 
-Jede konventionelle lexikalische Form im Kern verwendet Kanji. Ein Satz verweist nur auf sichtbaren Wortschatz und Partikeln; sichtbarer Wortschatz setzt sich über Kanji und verborgenes Lesevokabular zusammen; jede verborgene Lesung wird aus atomaren Kana rekonstruiert. Tests müssen jeden Pfad ablehnen, der Wortschatz, Kanji, Lesevokabular oder Kana überspringt.
+Kanji-Aussprachegruppen verweisen direkt auf geordnete atomare Kana. Das Paket enthält keine ausgeblendeten `reading:kanji`-Vokabelkarten; eine Lesung wie `む` öffnet daher die Kana-Schreibeinheit statt einer gleich beschrifteten Vokabelkarte. Ausgeblendete `reading:pronunciation`-Datensätze sind vollständigen lexikalischen Wortlesungen vorbehalten und dürfen keine Kana-Beschriftung duplizieren.
 
 ## Vom Host normalisierte Datensatzsteuerung
 
@@ -152,7 +152,7 @@ Verwenden Sie `word-spelling` für einen bedeutungstragenden mehrteiligen Kana-L
 
 ## Eindeutige „Verwendet von“-Eltern
 
-Eine verborgene Lesung darf nicht mehrere eingehende Datensätze mit derselben Anzeigebezeichnung besitzen. Für ein sichtbares Wort aus einem einzelnen Kanji wird ein verborgener Wrapper für die vollständige Aussprache erstellt, der zum lexikalischen Wort gehört und sich aus dem Kanji-Lesungsdatensatz zusammensetzt. Die Kanji-Lesungskarte hat dann ein Kanji-Elternteil und ein anders bezeichnetes Lesungs-Elternteil; der Wrapper besitzt nur das sichtbare lexikalische Elternteil.
+Kanji-Aussprachegruppen verweisen direkt auf geordnete atomare Kana. Das Paket enthält keine ausgeblendeten `reading:kanji`-Vokabelkarten; eine Lesung wie `む` öffnet daher die Kana-Schreibeinheit statt einer gleich beschrifteten Vokabelkarte. Ausgeblendete `reading:pronunciation`-Datensätze sind vollständigen lexikalischen Wortlesungen vorbehalten und dürfen keine Kana-Beschriftung duplizieren.
 
 ## Aussprachegraph für Sätze
 
@@ -160,7 +160,7 @@ Das Aussprachefeld eines Satzes verweist über `words` und `particles` auf jede 
 
 ## Zyklenfreie Navigation und lexikalische Lesungen
 
-Verfasste Lernverknüpfungen bilden einen gerichteten azyklischen Graphen, und Kana-Zeichen beenden die Navigation. Kanji dürfen ihre Aussprache über verborgene Lesevokabeln in geordnete Kana auflösen; diese Lesungen verweisen jedoch niemals zurück auf das Kanji oder seine lexikalischen Nutzer. Eine Lesung mit eigener lexikalischer Bedeutung, etwa der Tageszähler `か`, ist sichtbares Vokabular mit einer semantischen Klasse und nicht `reading:kanji`.
+Kanji-Aussprachegruppen verweisen direkt auf geordnete atomare Kana. Das Paket enthält keine ausgeblendeten `reading:kanji`-Vokabelkarten; eine Lesung wie `む` öffnet daher die Kana-Schreibeinheit statt einer gleich beschrifteten Vokabelkarte. Ausgeblendete `reading:pronunciation`-Datensätze sind vollständigen lexikalischen Wortlesungen vorbehalten und dürfen keine Kana-Beschriftung duplizieren.
 
 ## Direkte Kana-Zusammensetzung für Lesungstitel
 
@@ -168,7 +168,7 @@ Jeder ausgeblendete Aussprachedatensatz setzt seinen vollständigen Titel über 
 
 ## Kanonischer Lesungsgraph
 
-Es werden nur Datensätze paketiert, die am aktuellen deklarierten Graphen teilnehmen. Ersetzte ausgeblendete Lesungen werden entfernt, statt getrennte Kompatibilitätsdatensätze zu behalten. Sichtbares Kanji-Vokabular besitzt einen eigenen Wrapper für die vollständige Aussprache, während jedes Kanji auf einen eigenen reinen Kana-Lesungsdatensatz verweist.
+Kanji-Aussprachegruppen verweisen direkt auf geordnete atomare Kana. Das Paket enthält keine ausgeblendeten `reading:kanji`-Vokabelkarten; eine Lesung wie `む` öffnet daher die Kana-Schreibeinheit statt einer gleich beschrifteten Vokabelkarte. Ausgeblendete `reading:pronunciation`-Datensätze sind vollständigen lexikalischen Wortlesungen vorbehalten und dürfen keine Kana-Beschriftung duplizieren.
 
 ## Kanji-zu-Kana-Verwendungsabhängigkeiten
 
@@ -184,7 +184,7 @@ Setze `input.linkRelationships` des Aussprachefelds eines Satzes auf `["words", 
 
 ## Vokabeleigene Aussprachegrenzen
 
-Die Aussprache eines Kanji darf nur auf den eigenen Datensatz für die von diesem Kanji beigetragenen Kana verweisen. Die Vokabel besitzt einen getrennten Wrapper für die vollständige Aussprache. Darin werden bedeutungstragende Kanji-Abschnitte über die nächstgelegene verborgene Lesung verknüpft und jedes verbleibende einzelne Kana-Suffix direkt mit `reading-kana`; für ein solches Suffix darf weder ein Ausspracheeintrag noch eine Verbindung zu einer benachbarten Lesung entstehen.
+Kanji-Aussprachegruppen verweisen direkt auf geordnete atomare Kana. Das Paket enthält keine ausgeblendeten `reading:kanji`-Vokabelkarten; eine Lesung wie `む` öffnet daher die Kana-Schreibeinheit statt einer gleich beschrifteten Vokabelkarte. Ausgeblendete `reading:pronunciation`-Datensätze sind vollständigen lexikalischen Wortlesungen vorbehalten und dürfen keine Kana-Beschriftung duplizieren.
 
 ## Vollständige Links der Satzaussprache
 
@@ -214,9 +214,9 @@ Für jeden Satz und jedes Kanji mit Aussprache muss der Alias-Kompositionsalgori
 
 ## Aktueller rekursiver Aussprachevertrag
 
-Atomare Kana sind die einzigen Endpunkte der Aussprache. Kanji und sichtbarer Wortschatz verweisen direkt auf geordnete Kana; ausgeblendete Wortschatzeinträge, die nur aus Zeichen bestehen und als Aussprache-Wrapper dienen, sind verboten. Sätze verweisen nur auf sichtbaren Wortschatz und Partikeln. Die Aussprache von Wortschatz und Sätzen wird rekursiv aus diesem Graphen abgeleitet; ein Anbieter darf das abgeleitete Feld zur Anzeige materialisieren, aber niemals einen unabhängigen Wert verfassen. Lesungsbeziehungen von Kanji und Wortschatz verwenden `presentationRole: "pronunciation"`. Die Satzbeziehungen `words` und `particles` behalten `presentationRole: "composition"`, da die aktuelle Library-Ingestionsprüfung damit nachweist, dass jede geordnete lexikalische Folge ihre geschriebene Bezeichnung exakt rekonstruiert; das Aussprachefeld des Satzes benennt diese Beziehungen weiterhin als Linkquellen und wird rekursiv aus ihren Lesungen abgeleitet. Die Kana-Aussprache enthält ausschließlich die Hepburn-Umschrift, sodass Lernende den Klang jedes Zeichens sehen statt einer Wiederholung seiner Schreibform. Japanische Lesungen höherer Ebenen bleiben ausdrücklich materialisiert und leiten ihre Schreibweise weiterhin aus geordneten Kana-Bezeichnungen ab. Aussprachefelder für Kanji und Wortschatz deklarieren jetzt `multi_value: true`; jeder gespeicherte Wert besitzt eine verschachtelte `referenceGroups`-Folge geordneter Kana-Verweise, sodass alternative Lesungen getrennt bleiben und nicht zu einer mehrdeutigen Kantenliste abgeflacht werden. Wortschatz, dessen lexikalische Definition von der seines geschriebenen Kanji abweicht, führt die Aussprache jetzt über einen ausgeblendeten `reading:pronunciation`-Zwischeneintrag. Jeder Zwischeneintrag trägt die wortschatzspezifische Definition, verknüpft seine Kanji-Schreibweise und löst anschließend über seine gruppierte Kana-Folge auf; Wortschatz mit identischer Definition verweist weiterhin direkt auf Kana.
+Kanji-Aussprachegruppen verweisen direkt auf geordnete atomare Kana. Das Paket enthält keine ausgeblendeten `reading:kanji`-Vokabelkarten; eine Lesung wie `む` öffnet daher die Kana-Schreibeinheit statt einer gleich beschrifteten Vokabelkarte. Ausgeblendete `reading:pronunciation`-Datensätze sind vollständigen lexikalischen Wortlesungen vorbehalten und dürfen keine Kana-Beschriftung duplizieren.
 
-Kanji-Aussprachen sind als separate ausgeblendete Lesungseinträge verknüpft. Dadurch öffnet jede angezeigte Lesung – einschließlich alternativer Kun- und On-Lesungen – die vollständige Lesung und führt weiter zu den geordneten atomaren Kana.
+Kanji-Aussprachegruppen verweisen direkt auf geordnete atomare Kana. Das Paket enthält keine ausgeblendeten `reading:kanji`-Vokabelkarten; eine Lesung wie `む` öffnet daher die Kana-Schreibeinheit statt einer gleich beschrifteten Vokabelkarte. Ausgeblendete `reading:pronunciation`-Datensätze sind vollständigen lexikalischen Wortlesungen vorbehalten und dürfen keine Kana-Beschriftung duplizieren.
 
 ## Vollständige Aussprachepfade
 
@@ -232,7 +232,7 @@ Beziehungen und niemals eine Suche nach gleicher Beschriftung bestimmen die Kart
 
 ## Abdeckung der Kanji-Aussprache
 
-Alle geprüften KANJIDIC-On- und Kun-Lesungen werden nach einer deterministischen Normalisierung ausgeliefert: Katakana werden in Hiragana umgewandelt, Affixmarkierungen entfernt und der Leseabschnitt vor einem Okurigana-Trennzeichen beibehalten. Die Anbieterreihenfolge ist nur eine Darstellungspräferenz; Tests vergleichen die vollständige Menge und verlangen einen ausgeblendeten `reading:kanji`-Datensatz pro normalisierter Aussprache. Kontextbedingte stimmhafte Lesungen wie `だち` für `達` benötigen eine ausdrückliche geprüfte Ausnahme und eine erfasste lexikalische Verwendung. Namenslesungen sind vom Hauptaussprachefeld ausgeschlossen.
+Kanji-Aussprachegruppen verweisen direkt auf geordnete atomare Kana. Das Paket enthält keine ausgeblendeten `reading:kanji`-Vokabelkarten; eine Lesung wie `む` öffnet daher die Kana-Schreibeinheit statt einer gleich beschrifteten Vokabelkarte. Ausgeblendete `reading:pronunciation`-Datensätze sind vollständigen lexikalischen Wortlesungen vorbehalten und dürfen keine Kana-Beschriftung duplizieren.
 
 ## Geprüfter Stapel zu Ort und Art und Weise
 
@@ -260,7 +260,7 @@ Atomare Kana behalten die Hepburn-Umschrift für ihre eigenen Karten, bei der re
 
 ## Lesungstitel aus atomaren Kana
 
-Jeder ausgeblendete `reading:kanji`-Wortschatzeintrag deklariert zusätzlich zu seiner vollständigen `kana-spelling`-Form eine ausdrückliche geordnete `reading-title`-Zusammensetzung aus atomaren Kana. Die Titelzusammensetzung rekonstruiert die Lesung exakt und verhindert, dass der generische Label-Resolver des Hosts einen anderen ausgeblendeten Wortschatzeintrag mit demselben führenden Kana einsetzt. Beim Öffnen von `さん` geht es daher zu den atomaren Zeichen `さ` und `ん` weiter und niemals über die von `小` verwendete ausgeblendete Kanji-Lesung `さ`.
+Kanji-Aussprachegruppen verweisen direkt auf geordnete atomare Kana. Das Paket enthält keine ausgeblendeten `reading:kanji`-Vokabelkarten; eine Lesung wie `む` öffnet daher die Kana-Schreibeinheit statt einer gleich beschrifteten Vokabelkarte. Ausgeblendete `reading:pronunciation`-Datensätze sind vollständigen lexikalischen Wortlesungen vorbehalten und dürfen keine Kana-Beschriftung duplizieren.
 
 ## Mehrteilige Kana-Titel und Kleinform-Geometrie
 
@@ -269,3 +269,7 @@ Jeder mehrteilige Kana-Datensatz deklariert eine ausdrückliche `character-title
 ## Satzverknüpfungen ohne vorgetäuschte Satzvokabeln
 
 Die Satzaussprache verknüpft über `linkRelationships: ["words", "particles"]` jeden geordneten Leseabschnitt mit seinem vorhandenen sichtbaren Vokabel- oder Partikelbestandteil. Vollständige Satzaussprachen dürfen niemals als Vokabeldatensätze gespeichert werden; Vokabeln dürfen außerdem keine Satz-, Komposit- oder Partikelstrukturen enthalten.
+
+## Direkte Kanji-Lesungen zu Kana
+
+Kanji-Aussprachegruppen verweisen direkt auf geordnete atomare Kana. Das Paket enthält keine ausgeblendeten `reading:kanji`-Vokabelkarten; eine Lesung wie `む` öffnet daher die Kana-Schreibeinheit statt einer gleich beschrifteten Vokabelkarte. Ausgeblendete `reading:pronunciation`-Datensätze sind vollständigen lexikalischen Wortlesungen vorbehalten und dürfen keine Kana-Beschriftung duplizieren.

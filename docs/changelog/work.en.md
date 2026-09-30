@@ -596,3 +596,9 @@ Added explicit atomic-Kana title composition to every multi-symbol Kana card, pr
 Restored sentence pronunciation links to their ordered visible Vocabulary and Particle constituents. Strengthened structural regression coverage so complete sentence readings, sentence composites, particle classes, particle references, and hidden sentence constituents are rejected from the Vocabulary layer without removing legitimate sentence links.
 
 - [7cdb1ac](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/7cdb1ac)
+
+## Direct Kanji Readings Without Kana-Duplicate Vocabulary
+
+Removed all 140 hidden `reading:kanji` Vocabulary records, including single-Kana stragglers such as `む`. Kanji pronunciation groups and remote Jisho Kanji suggestions now link directly to ordered atomic Kana, while complete lexical pronunciation wrappers remain available only when they do not duplicate a Kana writing-unit label.
+
+- [d7a28e4](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/d7a28e4)

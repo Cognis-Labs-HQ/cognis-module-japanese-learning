@@ -138,16 +138,7 @@ function wordReferences(index, reading) {
 }
 
 function kanjiReferences(index, readings) {
-    const reading = readings[0] ?? "";
-    const target = index
-        .byLabel("words", reading)
-        .find(
-            ({ class: contentClass, hidden }) =>
-                hidden === true && contentClass === "reading:kanji",
-        );
-    return target
-        ? [{ entryId: target.id, relation: "readings", position: 0 }]
-        : [];
+    return kanaReferences(index, readings[0] ?? "", "readings");
 }
 
 function spellingReferences(index, label) {

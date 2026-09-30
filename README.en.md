@@ -131,7 +131,7 @@ Compositions now use the closest available records: `日本語` links to the wor
 
 A Kanji card's displayed readings link to dedicated Vocabulary records, and each reading record links onward to the Hiragana characters that reconstruct it. Reading-only Vocabulary records remain deep-linkable for definitions but are hidden from the Vocabulary browser; ordinary vocabulary stays visible.
 
-Opinionated compound pronunciations use the largest available hidden reading segments instead of linking every Kana directly. For example, `日本語` resolves its displayed `にほんご` through the hidden `にほん` reading for `日本` and the hidden `ご` reading for `語`; only those reading records resolve onward to individual Kana.
+Kanji pronunciation groups reference ordered atomic Kana directly. The pack contains no hidden `reading:kanji` Vocabulary cards, so a reading such as `む` opens the Kana writing unit rather than an identically labeled Vocabulary card. Hidden `reading:pronunciation` records are reserved for complete lexical-word readings and must not duplicate any Kana writing-unit label.
 
 ## Contextual Reading Definitions
 
@@ -183,7 +183,7 @@ A sentence pronunciation uses its existing ordered `words` relationship for titl
 
 ## Kanji-to-vocabulary readings
 
-A Kanji pronunciation links to the nearest visible vocabulary that uses it. The vocabulary alone owns the complete pronunciation record: meaningful Kanji-derived spans reuse hidden readings, while a remaining single Kana suffix links directly to the atomic Kana. Thus `好` opens `好き`, whose `すき` reading composes from the Kanji span `す` and atomic `き`; no standalone pronunciation card is created for `き`.
+Kanji pronunciation groups reference ordered atomic Kana directly. The pack contains no hidden `reading:kanji` Vocabulary cards, so a reading such as `む` opens the Kana writing unit rather than an identically labeled Vocabulary card. Hidden `reading:pronunciation` records are reserved for complete lexical-word readings and must not duplicate any Kana writing-unit label.
 
 ## Fully linked sentence pronunciations
 
@@ -213,9 +213,9 @@ Every sentence pronunciation is now tested against the host title-detail resolve
 
 ## Current derived pronunciation graph
 
-The current graph supersedes the earlier wrapper-based reading descriptions above. Atomic Kana are the only pronunciation leaves. Kanji and real Vocabulary records reference ordered Kana directly; no hidden, character-only Vocabulary duplicates remain. Sentences reference only real Vocabulary and particles, and their pronunciation is recursively derived through those records to Kana. The pack materializes that derived value only for display, while the latest Library form contract recalculates it from relationships and does not expose it as an authored field. Kanji and Vocabulary reading relationships use `presentationRole: "pronunciation"`. Sentence `words` and `particles` relationships retain `presentationRole: "composition"`, because the latest Library ingestion preflight uses them to prove that every ordered lexical sequence exactly reconstructs its written label; the sentence pronunciation field still names those relationships as link sources and is derived recursively from their readings. Kana pronunciation contains only Hepburn-style romanization, so learners see how each symbol sounds instead of seeing its written form repeated. Higher-layer Japanese readings remain explicitly materialized and continue to derive their spelling from ordered Kana labels. Kanji and Vocabulary pronunciation fields now declare `multi_value: true`; each stored value owns one nested `referenceGroups` sequence of ordered Kana references, so alternate readings remain separate instead of being flattened into one ambiguous edge list. Vocabulary whose lexical definition differs from its written Kanji now routes pronunciation through a hidden `reading:pronunciation` shim. Each shim carries the vocabulary-specific definition, links its Kanji spelling, and resolves onward through its grouped Kana sequence; identical-definition vocabulary continues to link Kana directly.
+Kanji pronunciation groups reference ordered atomic Kana directly. The pack contains no hidden `reading:kanji` Vocabulary cards, so a reading such as `む` opens the Kana writing unit rather than an identically labeled Vocabulary card. Hidden `reading:pronunciation` records are reserved for complete lexical-word readings and must not duplicate any Kana writing-unit label.
 
-Kanji pronunciations are linked as separate hidden reading records. Every displayed reading—including alternate kun’yomi and on’yomi—therefore opens the complete reading and continues to its ordered atomic Kana.
+Kanji pronunciation groups reference ordered atomic Kana directly. The pack contains no hidden `reading:kanji` Vocabulary cards, so a reading such as `む` opens the Kana writing unit rather than an identically labeled Vocabulary card. Hidden `reading:pronunciation` records are reserved for complete lexical-word readings and must not duplicate any Kana writing-unit label.
 
 Vocabulary lookup also accepts bounded English search terms such as `mythical cat`; when no Japanese spelling exactly matches the query, the provider uses Jisho's highest-ranked result. Kana and Kanji lookup remains restricted to exact single-character Japanese input.
 
@@ -226,3 +226,7 @@ Vocabulary now separates base verbs and adverbs from ordinary cards. Reviewed co
 ## Sentence links without sentence Vocabulary impostors
 
 Sentence pronunciation links each ordered reading segment to its existing visible Vocabulary or Particle constituent through `linkRelationships: ["words", "particles"]`. Complete sentence pronunciations must never be stored as Vocabulary records; Vocabulary also cannot carry sentence, composite, or particle structures.
+
+## Kana-direct Kanji readings
+
+Kanji pronunciation groups reference ordered atomic Kana directly. The pack contains no hidden `reading:kanji` Vocabulary cards, so a reading such as `む` opens the Kana writing unit rather than an identically labeled Vocabulary card. Hidden `reading:pronunciation` records are reserved for complete lexical-word readings and must not duplicate any Kana writing-unit label.

@@ -395,7 +395,7 @@ test("recognized Library fields and definition relationships replace duplicate s
     }
 });
 
-test("kanji readings reference complete hidden reading records", () => {
+test("kanji readings resolve directly to atomic Kana", () => {
     const { schema, records } = loadPack();
     const compoundLayer = schema.layers.find(
         ({ semanticRole }) => semanticRole === "compoundWritingUnit",
@@ -403,7 +403,7 @@ test("kanji readings reference complete hidden reading records", () => {
     const relationship = compoundLayer.relationships.find(
         ({ id }) => id === "readings",
     );
-    assert.equal(relationship.targetLayer, "words");
+    assert.equal(relationship.targetLayer, "characters");
     const entries = new Map(records.map((record) => [record.id, record]));
     for (const kanji of records.filter(
         ({ layer }) => layer === "alt-characters",
@@ -411,12 +411,16 @@ test("kanji readings reference complete hidden reading records", () => {
         const readingGroups = kanji.referenceGroups?.readings ?? [];
         assert.equal(readingGroups.length, kanji.fields.pronunciation.length);
         assert.deepEqual(
-            readingGroups.map(([reference]) => {
-                const reading = entries.get(reference.entryId);
-                assert.equal(reading.hidden, true);
-                assert.equal(reading.class, "reading:kanji");
-                return reading.label;
-            }),
+            readingGroups.map((group) =>
+                group
+                    .map(({ entryId }) => {
+                        const reading = entries.get(entryId);
+                        assert.equal(reading.layer, "characters");
+                        assert.equal([...reading.label].length, 1);
+                        return reading.label;
+                    })
+                    .join(""),
+            ),
             kanji.fields.pronunciation,
         );
     }
@@ -802,13 +806,12 @@ test("definitions stay semantic while resolvers describe compositions", () => {
             ),
         ),
         new Set([
-            "readings:words",
+            "readings:characters",
             "character-title:characters",
             "reading-kana:characters",
             "pronunciation-readings:words",
             "spelling:alt-characters",
             "kana-spelling:characters",
-            "reading-title:characters",
             "words:words",
             "particles:particles",
         ]),
@@ -827,7 +830,6 @@ test("definitions stay semantic while resolvers describe compositions", () => {
             ["pronunciation-readings", "pronunciation"],
             ["spelling", "composition"],
             ["kana-spelling", "alternateSpelling"],
-            ["reading-title", "composition"],
             ["words", "composition"],
             ["particles", "composition"],
         ]),

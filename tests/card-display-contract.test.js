@@ -54,6 +54,11 @@ test("layer semantics reject sentence and particle structures in Vocabulary", ()
     const sentencePronunciations = new Set(
         sentences.flatMap(({ fields }) => fields.pronunciation ?? []),
     );
+    const kanaLabels = new Set(
+        records
+            .filter(({ layer }) => layer === "characters")
+            .map(({ label }) => label),
+    );
     const sentenceLayer = schema.layers.find(({ id }) => id === "sentences");
     const pronunciationField = sentenceLayer.fields.find(
         ({ id }) => id === "pronunciation",
@@ -66,6 +71,11 @@ test("layer semantics reject sentence and particle structures in Vocabulary", ()
     for (const record of vocabulary) {
         assert.notEqual(record.class, "composite", record.id);
         assert.notEqual(record.class, "particle", record.id);
+        if (record.hidden)
+            assert.ok(
+                !kanaLabels.has(record.label),
+                `${record.id} duplicates Kana`,
+            );
         assert.ok(
             !sentencePronunciations.has(record.label),
             `${record.id} duplicates a complete sentence pronunciation`,

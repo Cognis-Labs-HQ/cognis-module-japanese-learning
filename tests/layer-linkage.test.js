@@ -108,9 +108,7 @@ test("the authored graph derives pronunciation from atomic Kana", () => {
             assert.ok(
                 orderedReferences(record, new Set(["readings"])).every(
                     ({ entryId }) =>
-                        recordsById.get(entryId).layer === "words" &&
-                        recordsById.get(entryId).hidden === true &&
-                        recordsById.get(entryId).class === "reading:kanji",
+                        recordsById.get(entryId).layer === "characters",
                 ),
             );
         }
@@ -271,7 +269,7 @@ test("every visible Kanji vocabulary card has a direct definition", () => {
     }
 });
 
-test("every Kanji pronunciation resolves through its own hidden Kana reading", () => {
+test("every Kanji pronunciation resolves directly through atomic Kana", () => {
     const records = loadRecords();
     const recordsById = new Map(records.map((record) => [record.id, record]));
     const kanji = records.filter(({ layer }) => layer === "alt-characters");
@@ -282,7 +280,7 @@ test("every Kanji pronunciation resolves through its own hidden Kana reading", (
             contentClass === "reading:kanji",
     );
 
-    assert.equal(readings.length, 140);
+    assert.equal(readings.length, 0);
     for (const record of kanji) {
         const groups = record.referenceGroups?.readings ?? [];
         assert.equal(
@@ -296,14 +294,13 @@ test("every Kanji pronunciation resolves through its own hidden Kana reading", (
             record.id,
         );
         for (const group of groups) {
-            assert.equal(group.length, 1, record.id);
-            const target = recordsById.get(group[0].entryId);
-            assert.equal(target?.hidden, true, record.id);
-            assert.equal(target?.class, "reading:kanji", record.id);
-            assert.equal(
-                target?.referenceGroups?.["kana-spelling"]?.length,
-                1,
-                target?.id,
+            assert.ok(group.length > 0, record.id);
+            assert.ok(
+                group.every(
+                    ({ entryId }) =>
+                        recordsById.get(entryId)?.layer === "characters",
+                ),
+                record.id,
             );
         }
     }

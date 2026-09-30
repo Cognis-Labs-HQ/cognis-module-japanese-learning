@@ -163,6 +163,43 @@ test("Jisho provider accepts ranked English vocabulary searches", async () => {
     assert.equal(suggestion.provenance, "jisho:猫又");
 });
 
+test("Jisho Kanji suggestions link readings directly to atomic Kana", async () => {
+    const provider = createJishoLookupProvider({
+        contentRoot,
+        async fetchImplementation() {
+            return {
+                ok: true,
+                async json() {
+                    return {
+                        data: [
+                            {
+                                slug: "龍",
+                                japanese: [{ word: "龍", reading: "りゅう" }],
+                                senses: [],
+                                tags: [],
+                                jlpt: [],
+                            },
+                        ],
+                    };
+                },
+            };
+        },
+    });
+    const [suggestion] = await provider.lookup({
+        schema,
+        layer: kanjiLayer,
+        label: "龍",
+    });
+    assert.deepEqual(
+        suggestion.referenceGroups.readings[0].map(({ relation }) => relation),
+        ["readings", "readings", "readings"],
+    );
+    assert.deepEqual(
+        suggestion.referenceGroups.readings[0].map(({ position }) => position),
+        [0, 1, 2],
+    );
+});
+
 test("Jisho provider does not query invalid or unrelated input", async () => {
     let requests = 0;
     const provider = createJishoLookupProvider({

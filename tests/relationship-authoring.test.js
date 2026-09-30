@@ -144,19 +144,20 @@ test("Kanji readings and particles terminate at Kana", () => {
     for (const entry of kanji) {
         const groups = entry.referenceGroups.readings;
         assert.deepEqual(
-            groups.map(
-                ([reference]) => recordsById.get(reference.entryId).label,
+            groups.map((group) =>
+                group
+                    .map(({ entryId }) => recordsById.get(entryId).label)
+                    .join(""),
             ),
             entry.fields.pronunciation,
         );
-        for (const [reference] of groups) {
-            const reading = recordsById.get(reference.entryId);
-            assert.equal(reading.hidden, true);
-            assert.equal(reading.class, "reading:kanji");
-            assert.equal(
-                labelsFor(reading, ["kana-spelling"]),
-                reading.label,
-                reading.id,
+        for (const group of groups) {
+            assert.ok(
+                group.every(
+                    ({ entryId }) =>
+                        recordsById.get(entryId).fields.character_class,
+                ),
+                entry.id,
             );
         }
     }
@@ -203,58 +204,18 @@ test("sentence pronunciations link only to visible constituent cards", () => {
     }
 });
 
-test("Kanji reading titles compose directly from atomic Kana", () => {
-    const wordLayer = schema.layers.find(({ id }) => id === "words");
-    const titleRelationship = wordLayer.relationships.find(
-        ({ id }) => id === "reading-title",
+test("hidden Vocabulary never duplicates a Kana writing-unit card", () => {
+    const kanaLabels = new Set(characters.map(({ label }) => label));
+    const duplicate = words.find(
+        ({ hidden, label }) => hidden === true && kanaLabels.has(label),
     );
-    assert.deepEqual(
-        {
-            targetLayer: titleRelationship.targetLayer,
-            resolverRole: titleRelationship.resolverRole,
-            presentationRole: titleRelationship.presentationRole,
-            ordered: titleRelationship.ordered,
-        },
-        {
-            targetLayer: "characters",
-            resolverRole: "explicit",
-            presentationRole: "composition",
-            ordered: true,
-        },
+    assert.equal(duplicate, undefined);
+    assert.equal(
+        words.some(
+            ({ class: contentClass }) => contentClass === "reading:kanji",
+        ),
+        false,
     );
-
-    const readings = words.filter(
-        ({ class: contentClass, hidden }) =>
-            hidden === true && contentClass === "reading:kanji",
-    );
-    assert.ok(readings.length > 0);
-    for (const reading of readings) {
-        const titleReferences = reading.references
-            .filter(({ relation }) => relation === "reading-title")
-            .sort((left, right) => left.position - right.position);
-        assert.equal(
-            titleReferences
-                .map(({ entryId }) => recordsById.get(entryId).label)
-                .join(""),
-            reading.label,
-            reading.id,
-        );
-        assert.ok(
-            titleReferences.every(
-                ({ entryId }) =>
-                    recordsById.get(entryId).fields.character_class,
-            ),
-            reading.id,
-        );
-        assert.equal(
-            titleReferences.some(
-                ({ entryId }) =>
-                    recordsById.get(entryId).class === "reading:kanji",
-            ),
-            false,
-            reading.id,
-        );
-    }
 });
 
 test("multi-Kana titles compose only from atomic Kana", () => {

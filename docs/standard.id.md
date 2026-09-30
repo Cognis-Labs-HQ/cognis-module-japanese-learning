@@ -128,7 +128,7 @@ Komposisi kini memakai rekaman terdekat yang tersedia: `日本語` menaut ke kat
 
 Kolom pelafalan Kanji harus tertaut ke satu rekaman Kosakata khusus untuk setiap bacaan lengkap. Setiap rekaman khusus bacaan harus memiliki `hidden: true` dan menyusun dirinya dari Kana atomik melalui `kana-spelling`; rekaman Kosakata biasa harus tetap terlihat.
 
-Pelafalan kata majemuk yang ditentukan harus menggunakan `pronunciation-readings` untuk merujuk segmen bacaan terbesar yang telah ditulis sesuai urutan tampilan. Sebagai contoh, `日本語` menautkan `にほん` ke rekaman bacaan tersembunyi untuk `日本` dan `ご` ke rekaman bacaan tersembunyi untuk `語`. Kata majemuk yang terlihat tidak boleh menduplikasi segmen tersebut sebagai referensi Kana atomik langsung.
+Grup pelafalan Kanji merujuk langsung ke Kana atomik yang berurutan. Paket tidak memuat kartu Kosakata `reading:kanji` tersembunyi, sehingga bacaan seperti `む` membuka unit tulisan Kana, bukan kartu Kosakata berlabel sama. Rekaman `reading:pronunciation` tersembunyi hanya untuk bacaan kata leksikal lengkap dan tidak boleh menduplikasi label unit tulisan Kana.
 
 ## Definisi Bacaan Kontekstual
 
@@ -140,7 +140,7 @@ Gunakan beberapa referensi definisi hanya ketika satu rekaman leksikal benar-ben
 
 ## Traversal lengkap dari kalimat ke Kana
 
-Setiap bentuk leksikal konvensional dalam inti menggunakan Kanji. Kalimat hanya menaut ke Kosakata terlihat dan partikel; Kosakata terlihat tersusun melalui Kanji dan Kosakata bacaan tersembunyi; setiap bacaan tersembunyi dibentuk kembali dari Kana atomik. Pengujian harus menolak jalur apa pun yang melewati Kosakata, Kanji, Kosakata bacaan, atau Kana.
+Grup pelafalan Kanji merujuk langsung ke Kana atomik yang berurutan. Paket tidak memuat kartu Kosakata `reading:kanji` tersembunyi, sehingga bacaan seperti `む` membuka unit tulisan Kana, bukan kartu Kosakata berlabel sama. Rekaman `reading:pronunciation` tersembunyi hanya untuk bacaan kata leksikal lengkap dan tidak boleh menduplikasi label unit tulisan Kana.
 
 ## Kontrol rekaman yang dinormalisasi host
 
@@ -152,7 +152,7 @@ Gunakan `word-spelling` untuk segmen bacaan multi-Kana yang bermakna dan `readin
 
 ## Induk Digunakan Oleh yang unik
 
-Bacaan tersembunyi tidak boleh memiliki beberapa rekaman masuk dengan label tampilan yang sama. Untuk kata terlihat yang terdiri dari satu Kanji, buat pembungkus pelafalan lengkap tersembunyi milik kata leksikal dan susun pembungkus tersebut dari rekaman bacaan Kanji. Kartu bacaan Kanji kemudian memiliki satu induk Kanji dan satu induk bacaan berlabel berbeda, sedangkan pembungkus hanya memiliki induk leksikal terlihat.
+Grup pelafalan Kanji merujuk langsung ke Kana atomik yang berurutan. Paket tidak memuat kartu Kosakata `reading:kanji` tersembunyi, sehingga bacaan seperti `む` membuka unit tulisan Kana, bukan kartu Kosakata berlabel sama. Rekaman `reading:pronunciation` tersembunyi hanya untuk bacaan kata leksikal lengkap dan tidak boleh menduplikasi label unit tulisan Kana.
 
 ## Graf pelafalan kalimat
 
@@ -160,7 +160,7 @@ Bidang pelafalan kalimat menaut melalui `words` dan `particles` ke setiap kartu 
 
 ## Penelusuran tanpa siklus dan bacaan leksikal
 
-Tautan pembelajaran yang ditulis membentuk graf berarah tanpa siklus, dan karakter Kana mengakhiri penelusuran. Kanji dapat menyelesaikan pelafalannya melalui Kosakata bacaan tersembunyi ke Kana terurut, tetapi bacaan tersebut tidak pernah menaut kembali ke Kanji atau pengguna leksikalnya. Bacaan yang mempunyai makna leksikal mandiri, seperti penghitung hari `か`, merupakan Kosakata terlihat dengan kelas semantik, bukan `reading:kanji`.
+Grup pelafalan Kanji merujuk langsung ke Kana atomik yang berurutan. Paket tidak memuat kartu Kosakata `reading:kanji` tersembunyi, sehingga bacaan seperti `む` membuka unit tulisan Kana, bukan kartu Kosakata berlabel sama. Rekaman `reading:pronunciation` tersembunyi hanya untuk bacaan kata leksikal lengkap dan tidak boleh menduplikasi label unit tulisan Kana.
 
 ## Komposisi Kana Langsung untuk Judul Bacaan
 
@@ -168,7 +168,7 @@ Setiap data pelafalan tersembunyi menyusun judul lengkapnya langsung dari Kana a
 
 ## Graf Bacaan Kanonis
 
-Paket hanya memuat data yang berpartisipasi dalam graf aktif. Hapus bacaan tersembunyi yang digantikan alih-alih mempertahankan data kompatibilitas yang dilepas. Kosakata Kanji terlihat memiliki pembungkus pelafalan lengkap yang terpisah, sedangkan setiap Kanji menargetkan catatan bacaan khusus yang hanya berisi Kana.
+Grup pelafalan Kanji merujuk langsung ke Kana atomik yang berurutan. Paket tidak memuat kartu Kosakata `reading:kanji` tersembunyi, sehingga bacaan seperti `む` membuka unit tulisan Kana, bukan kartu Kosakata berlabel sama. Rekaman `reading:pronunciation` tersembunyi hanya untuk bacaan kata leksikal lengkap dan tidak boleh menduplikasi label unit tulisan Kana.
 
 ## Dependensi Penggunaan Kanji-ke-Kana
 
@@ -184,7 +184,7 @@ Tetapkan `input.linkRelationships` bidang pelafalan kalimat ke `["words", "parti
 
 ## Batas pelafalan milik kosakata
 
-Pelafalan Kanji hanya boleh menargetkan catatan khusus untuk Kana yang disumbangkan oleh Kanji tersebut. Kosakata memiliki pembungkus pelafalan lengkap yang terpisah. Di dalamnya, tautkan rentang bermakna yang berasal dari Kanji melalui bacaan tersembunyi terdekat dan tautkan setiap sufiks Kana tunggal yang tersisa secara langsung dengan `reading-kana`; jangan membuat rekaman pelafalan untuk sufiks tersebut atau menghubungkannya ke bacaan yang bersebelahan.
+Grup pelafalan Kanji merujuk langsung ke Kana atomik yang berurutan. Paket tidak memuat kartu Kosakata `reading:kanji` tersembunyi, sehingga bacaan seperti `む` membuka unit tulisan Kana, bukan kartu Kosakata berlabel sama. Rekaman `reading:pronunciation` tersembunyi hanya untuk bacaan kata leksikal lengkap dan tidak boleh menduplikasi label unit tulisan Kana.
 
 ## Tautan pelafalan kalimat lengkap
 
@@ -214,9 +214,9 @@ Untuk setiap kalimat dan Kanji yang memiliki pelafalan, ulangi algoritme komposi
 
 ## Kontrak pelafalan rekursif saat ini
 
-Kana atomik adalah satu-satunya daun pelafalan. Kanji dan Kosakata terlihat menaut langsung ke Kana terurut; jangan pernah membuat Kosakata tersembunyi yang hanya berisi karakter sebagai pembungkus pelafalan. Kalimat hanya menaut ke Kosakata terlihat dan partikel. Pelafalan Kosakata dan kalimat diturunkan secara rekursif dari graf tersebut; penyedia boleh mematerialkan bidang turunan untuk tampilan tetapi tidak boleh menulis nilai mandiri. Relasi bacaan Kanji dan Kosakata memakai `presentationRole: "pronunciation"`. Relasi kalimat `words` dan `particles` mempertahankan `presentationRole: "composition"` karena pemeriksaan ingest Library terbaru memakainya untuk membuktikan bahwa setiap urutan leksikal terurut merekonstruksi label tertulisnya secara tepat; bidang pelafalan kalimat tetap menamai relasi tersebut sebagai sumber tautan dan diturunkan secara rekursif dari bacaannya. Pelafalan Kana hanya berisi romanisasi gaya Hepburn agar pelajar melihat bunyi setiap simbol, bukan pengulangan bentuk tulisannya. Bacaan Jepang pada lapisan yang lebih tinggi tetap dimaterialkan secara eksplisit dan terus menurunkan ejaannya dari label Kana terurut. Bidang pelafalan Kanji dan Kosakata kini mendeklarasikan `multi_value: true`; setiap nilai tersimpan memiliki satu urutan `referenceGroups` bertingkat berisi referensi Kana terurut sehingga bacaan alternatif tetap terpisah dan tidak diratakan menjadi satu daftar relasi yang ambigu. Kosakata yang definisi leksikalnya berbeda dari Kanji tertulisnya kini merutekan pelafalan melalui rekaman perantara `reading:pronunciation` yang tersembunyi. Setiap perantara membawa definisi khusus kosakata, menautkan ejaan Kanji, lalu berlanjut ke urutan Kana berkelompok; kosakata dengan definisi identik tetap menaut langsung ke Kana.
+Grup pelafalan Kanji merujuk langsung ke Kana atomik yang berurutan. Paket tidak memuat kartu Kosakata `reading:kanji` tersembunyi, sehingga bacaan seperti `む` membuka unit tulisan Kana, bukan kartu Kosakata berlabel sama. Rekaman `reading:pronunciation` tersembunyi hanya untuk bacaan kata leksikal lengkap dan tidak boleh menduplikasi label unit tulisan Kana.
 
-Pelafalan Kanji ditautkan sebagai rekaman bacaan tersembunyi yang terpisah. Karena itu, setiap bacaan yang ditampilkan—termasuk kun’yomi dan on’yomi alternatif—membuka bacaan lengkap dan meneruskan ke Kana atomik yang berurutan.
+Grup pelafalan Kanji merujuk langsung ke Kana atomik yang berurutan. Paket tidak memuat kartu Kosakata `reading:kanji` tersembunyi, sehingga bacaan seperti `む` membuka unit tulisan Kana, bukan kartu Kosakata berlabel sama. Rekaman `reading:pronunciation` tersembunyi hanya untuk bacaan kata leksikal lengkap dan tidak boleh menduplikasi label unit tulisan Kana.
 
 ## Jalur pelafalan lengkap
 
@@ -232,7 +232,7 @@ Hubungan, bukan pencarian label yang sama, menentukan penelusuran kartu. Sebuah 
 
 ## Cakupan pelafalan Kanji
 
-Paket harus memuat setiap bacaan on dan kun KANJIDIC yang telah ditinjau setelah normalisasi deterministik: ubah Katakana menjadi Hiragana, hapus penanda afiks, dan pertahankan segmen bacaan sebelum pemisah okurigana. Urutan penyedia hanya menjadi preferensi tampilan; pengujian membandingkan himpunan lengkap dan mewajibkan satu rekaman `reading:kanji` tersembunyi untuk setiap pelafalan ternormalisasi. Bacaan bersuara kontekstual seperti `だち` untuk `達` memerlukan pengecualian tinjauan eksplisit dan penggunaan leksikal yang ditulis. Bacaan nama tidak dimasukkan ke bidang pelafalan inti.
+Grup pelafalan Kanji merujuk langsung ke Kana atomik yang berurutan. Paket tidak memuat kartu Kosakata `reading:kanji` tersembunyi, sehingga bacaan seperti `む` membuka unit tulisan Kana, bukan kartu Kosakata berlabel sama. Rekaman `reading:pronunciation` tersembunyi hanya untuk bacaan kata leksikal lengkap dan tidak boleh menduplikasi label unit tulisan Kana.
 
 ## Batch lokasi dan cara yang ditinjau
 
@@ -260,7 +260,7 @@ Kana atomik mempertahankan romanisasi Hepburn untuk kartunya sendiri, tetapi pen
 
 ## Judul Bacaan dari Kana Atomik
 
-Setiap rekaman Kosakata `reading:kanji` tersembunyi mendeklarasikan komposisi `reading-title` berurutan yang eksplisit menuju Kana atomik, selain `kana-spelling` lengkapnya. Komposisi judul merekonstruksi bacaan secara tepat dan mencegah resolver label generik host menggantinya dengan rekaman Kosakata tersembunyi lain yang memiliki Kana awal sama. Karena itu, membuka `さん` berlanjut ke `さ` dan `ん` atomik, dan tidak pernah berbelok melalui bacaan Kanji tersembunyi `さ` yang digunakan oleh `小`.
+Grup pelafalan Kanji merujuk langsung ke Kana atomik yang berurutan. Paket tidak memuat kartu Kosakata `reading:kanji` tersembunyi, sehingga bacaan seperti `む` membuka unit tulisan Kana, bukan kartu Kosakata berlabel sama. Rekaman `reading:pronunciation` tersembunyi hanya untuk bacaan kata leksikal lengkap dan tidak boleh menduplikasi label unit tulisan Kana.
 
 ## Judul Multi-Kana dan Geometri Bentuk Kecil
 
@@ -269,3 +269,7 @@ Setiap rekaman Kana dengan beberapa simbol mendeklarasikan komposisi `character-
 ## Tautan kalimat tanpa Kosakata penyamar kalimat
 
 Pelafalan kalimat menautkan setiap segmen bacaan berurutan ke unsur Kosakata atau Partikel yang sudah ada dan terlihat melalui `linkRelationships: ["words", "particles"]`. Pelafalan kalimat lengkap tidak boleh disimpan sebagai rekaman Kosakata; Kosakata juga tidak boleh memuat struktur kalimat, komposit, atau partikel.
+
+## Bacaan Kanji langsung ke Kana
+
+Grup pelafalan Kanji merujuk langsung ke Kana atomik yang berurutan. Paket tidak memuat kartu Kosakata `reading:kanji` tersembunyi, sehingga bacaan seperti `む` membuka unit tulisan Kana, bukan kartu Kosakata berlabel sama. Rekaman `reading:pronunciation` tersembunyi hanya untuk bacaan kata leksikal lengkap dan tidak boleh menduplikasi label unit tulisan Kana.

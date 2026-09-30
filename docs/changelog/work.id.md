@@ -596,3 +596,9 @@ Komposisi judul Kana atomik yang eksplisit ditambahkan ke setiap kartu Kana bers
 Tautan pelafalan kalimat ke unsur Kosakata dan Partikel berurutan yang terlihat telah dipulihkan. Cakupan regresi struktural diperkuat agar bacaan kalimat lengkap, komposit kalimat, kelas partikel, referensi partikel, dan unsur kalimat tersembunyi ditolak dari lapisan Kosakata tanpa menghapus tautan kalimat yang sah.
 
 - [7cdb1ac](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/7cdb1ac)
+
+## Bacaan Kanji Langsung Tanpa Kosakata Duplikat Kana
+
+Seluruh 140 rekaman Kosakata `reading:kanji` tersembunyi telah dihapus, termasuk sisa Kana tunggal seperti `む`. Grup pelafalan Kanji dan saran Kanji Jisho jarak jauh kini menaut langsung ke Kana atomik berurutan, sedangkan pembungkus pelafalan leksikal lengkap dipertahankan hanya jika tidak menduplikasi label unit tulisan Kana.
+
+- [d7a28e4](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/d7a28e4)
