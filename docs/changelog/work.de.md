@@ -602,3 +602,9 @@ Die Ausspracheverknüpfungen eines Satzes zu seinen geordneten sichtbaren Vokabe
 Alle 140 ausgeblendeten `reading:kanji`-Vokabeldatensätze wurden entfernt, einschließlich einzelner Kana-Ausreißer wie `む`. Kanji-Aussprachegruppen und entfernte Jisho-Kanji-Vorschläge verknüpfen nun direkt geordnete atomare Kana; vollständige lexikalische Aussprachehüllen bleiben nur erhalten, wenn sie keine Kana-Schreibeinheit duplizieren.
 
 - [d7a28e4](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/d7a28e4)
+
+## Tief verzweigte Verbtransformationen
+
+Das japanische Paket wurde an Cognis' Vertrag für zusammensetzbare Transformationsbäume angepasst. Alle Verbfamilien verzweigen nun in höfliche, verneinte, vergangene, verbindende, kausative, passive, potenzielle und volitionale Pfade, einschließlich einer vierstufigen Kausativ-Wunschkette. Schriftform und Aussprache werden unabhängig transformiert, lokalisierte Definitionsüberschreibungen erläutern semantische Zweige, Adverbien bleiben unveränderte Grundkarten und erzeugte Formen bleiben reine Darstellung.
+
+- [d93ad3c](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/d93ad3c)

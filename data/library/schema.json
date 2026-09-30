@@ -1,6 +1,6 @@
 {
     "id": "japanese-core",
-    "version": 73,
+    "version": 74,
     "namespace": "ja",
     "language": "ja",
     "metadata": {
@@ -987,7 +987,11 @@
                     "fromState": "base",
                     "toState": "polite",
                     "removeSuffix": "る",
-                    "append": "ます"
+                    "append": "ます",
+                    "pronunciation": {
+                        "removeSuffix": "る",
+                        "append": "ます"
+                    }
                 },
                 {
                     "id": "negative",
@@ -1002,7 +1006,11 @@
                     "fromState": "base",
                     "toState": "negative",
                     "removeSuffix": "る",
-                    "append": "ない"
+                    "append": "ない",
+                    "pronunciation": {
+                        "removeSuffix": "る",
+                        "append": "ない"
+                    }
                 },
                 {
                     "id": "past",
@@ -1017,7 +1025,11 @@
                     "fromState": "base",
                     "toState": "past",
                     "removeSuffix": "る",
-                    "append": "た"
+                    "append": "た",
+                    "pronunciation": {
+                        "removeSuffix": "る",
+                        "append": "た"
+                    }
                 },
                 {
                     "id": "te-form",
@@ -1032,7 +1044,285 @@
                     "fromState": "base",
                     "toState": "te-form",
                     "removeSuffix": "る",
-                    "append": "て"
+                    "append": "て",
+                    "pronunciation": {
+                        "removeSuffix": "る",
+                        "append": "て"
+                    }
+                },
+                {
+                    "id": "polite-past",
+                    "metadata": {
+                        "labels": {
+                            "de": "Höfliche Vergangenheit",
+                            "en": "Polite Past",
+                            "id": "Lampau Sopan",
+                            "ja": "丁寧過去形"
+                        }
+                    },
+                    "fromState": "polite",
+                    "toState": "polite-past",
+                    "removeSuffix": "ます",
+                    "append": "ました",
+                    "pronunciation": {
+                        "removeSuffix": "ます",
+                        "append": "ました"
+                    }
+                },
+                {
+                    "id": "polite-negative",
+                    "metadata": {
+                        "labels": {
+                            "de": "Höfliche Verneinung",
+                            "en": "Polite Negative",
+                            "id": "Negatif Sopan",
+                            "ja": "丁寧否定形"
+                        }
+                    },
+                    "fromState": "polite",
+                    "toState": "polite-negative",
+                    "removeSuffix": "ます",
+                    "append": "ません",
+                    "pronunciation": {
+                        "removeSuffix": "ます",
+                        "append": "ません"
+                    }
+                },
+                {
+                    "id": "negative-past",
+                    "metadata": {
+                        "labels": {
+                            "de": "Verneinte Vergangenheit",
+                            "en": "Negative Past",
+                            "id": "Lampau Negatif",
+                            "ja": "否定過去形"
+                        }
+                    },
+                    "fromState": "negative",
+                    "toState": "negative-past",
+                    "removeSuffix": "ない",
+                    "append": "なかった",
+                    "pronunciation": {
+                        "removeSuffix": "ない",
+                        "append": "なかった"
+                    }
+                },
+                {
+                    "id": "negative-te",
+                    "metadata": {
+                        "labels": {
+                            "de": "Verneinte Te-Form",
+                            "en": "Negative Te Form",
+                            "id": "Bentuk Te Negatif",
+                            "ja": "否定て形"
+                        }
+                    },
+                    "fromState": "negative",
+                    "toState": "negative-te",
+                    "removeSuffix": "ない",
+                    "append": "なくて",
+                    "pronunciation": {
+                        "removeSuffix": "ない",
+                        "append": "なくて"
+                    }
+                },
+                {
+                    "id": "causative",
+                    "metadata": {
+                        "labels": {
+                            "de": "Kausativ",
+                            "en": "Causative",
+                            "id": "Kausatif",
+                            "ja": "使役形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "causative",
+                    "removeSuffix": "る",
+                    "append": "させる",
+                    "pronunciation": {
+                        "removeSuffix": "る",
+                        "append": "させる"
+                    }
+                },
+                {
+                    "id": "passive",
+                    "metadata": {
+                        "labels": {
+                            "de": "Passiv",
+                            "en": "Passive",
+                            "id": "Pasif",
+                            "ja": "受身形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "passive",
+                    "removeSuffix": "る",
+                    "append": "られる",
+                    "pronunciation": {
+                        "removeSuffix": "る",
+                        "append": "られる"
+                    }
+                },
+                {
+                    "id": "potential",
+                    "metadata": {
+                        "labels": {
+                            "de": "Potential",
+                            "en": "Potential",
+                            "id": "Potensial",
+                            "ja": "可能形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "potential",
+                    "removeSuffix": "る",
+                    "append": "られる",
+                    "pronunciation": {
+                        "removeSuffix": "る",
+                        "append": "られる"
+                    }
+                },
+                {
+                    "id": "volitional",
+                    "metadata": {
+                        "labels": {
+                            "de": "Volitional",
+                            "en": "Volitional",
+                            "id": "Volisional",
+                            "ja": "意向形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "volitional",
+                    "removeSuffix": "る",
+                    "append": "よう",
+                    "pronunciation": {
+                        "removeSuffix": "る",
+                        "append": "よう"
+                    }
+                },
+                {
+                    "id": "causative-negative",
+                    "metadata": {
+                        "labels": {
+                            "de": "Kausativ verneint",
+                            "en": "Causative Negative",
+                            "id": "Kausatif Negatif",
+                            "ja": "使役否定形"
+                        }
+                    },
+                    "fromState": "causative",
+                    "toState": "causative-negative",
+                    "removeSuffix": "る",
+                    "append": "ない",
+                    "pronunciation": {
+                        "removeSuffix": "る",
+                        "append": "ない"
+                    }
+                },
+                {
+                    "id": "causative-past",
+                    "metadata": {
+                        "labels": {
+                            "de": "Kausativ Vergangenheit",
+                            "en": "Causative Past",
+                            "id": "Lampau Kausatif",
+                            "ja": "使役過去形"
+                        }
+                    },
+                    "fromState": "causative",
+                    "toState": "causative-past",
+                    "removeSuffix": "る",
+                    "append": "た",
+                    "pronunciation": {
+                        "removeSuffix": "る",
+                        "append": "た"
+                    }
+                },
+                {
+                    "id": "causative-te",
+                    "metadata": {
+                        "labels": {
+                            "de": "Kausativ Te-Form",
+                            "en": "Causative Te Form",
+                            "id": "Bentuk Te Kausatif",
+                            "ja": "使役て形"
+                        }
+                    },
+                    "fromState": "causative",
+                    "toState": "causative-te",
+                    "removeSuffix": "る",
+                    "append": "て",
+                    "pronunciation": {
+                        "removeSuffix": "る",
+                        "append": "て"
+                    }
+                },
+                {
+                    "id": "causative-desire",
+                    "metadata": {
+                        "labels": {
+                            "de": "Kausativ-Wunsch",
+                            "en": "Causative Desire",
+                            "id": "Keinginan Kausatif",
+                            "ja": "使役希望形"
+                        }
+                    },
+                    "fromState": "causative",
+                    "toState": "causative-desire",
+                    "removeSuffix": "る",
+                    "append": "たい",
+                    "pronunciation": {
+                        "removeSuffix": "る",
+                        "append": "たい"
+                    },
+                    "definition": {
+                        "labels": {
+                            "de": "Wunsch, jemanden die Grundhandlung ausführen zu lassen",
+                            "en": "want to make or let someone perform the base action",
+                            "id": "ingin membuat atau membiarkan seseorang melakukan tindakan dasar",
+                            "ja": "誰かに基本の動作をさせたいという意味"
+                        }
+                    }
+                },
+                {
+                    "id": "causative-negative-desire",
+                    "metadata": {
+                        "labels": {
+                            "de": "Verneinter Kausativ-Wunsch",
+                            "en": "Negative Causative Desire",
+                            "id": "Keinginan Kausatif Negatif",
+                            "ja": "使役希望否定形"
+                        }
+                    },
+                    "fromState": "causative-desire",
+                    "toState": "causative-negative-desire",
+                    "removeSuffix": "たい",
+                    "append": "たくない",
+                    "pronunciation": {
+                        "removeSuffix": "たい",
+                        "append": "たくない"
+                    }
+                },
+                {
+                    "id": "causative-continuous-negative-desire",
+                    "metadata": {
+                        "labels": {
+                            "de": "Verknüpfter verneinter Kausativ-Wunsch",
+                            "en": "Continuative Negative Causative Desire",
+                            "id": "Keinginan Kausatif Negatif Berkelanjutan",
+                            "ja": "使役希望否定接続形"
+                        }
+                    },
+                    "fromState": "causative-negative-desire",
+                    "toState": "causative-continuous-negative-desire",
+                    "removeSuffix": "ない",
+                    "append": "なくて",
+                    "pronunciation": {
+                        "removeSuffix": "ない",
+                        "append": "なくて"
+                    }
                 }
             ]
         },
@@ -1062,7 +1352,11 @@
                     "fromState": "base",
                     "toState": "polite",
                     "removeSuffix": "く",
-                    "append": "きます"
+                    "append": "きます",
+                    "pronunciation": {
+                        "removeSuffix": "く",
+                        "append": "きます"
+                    }
                 },
                 {
                     "id": "negative",
@@ -1077,7 +1371,11 @@
                     "fromState": "base",
                     "toState": "negative",
                     "removeSuffix": "く",
-                    "append": "かない"
+                    "append": "かない",
+                    "pronunciation": {
+                        "removeSuffix": "く",
+                        "append": "かない"
+                    }
                 },
                 {
                     "id": "past",
@@ -1092,7 +1390,11 @@
                     "fromState": "base",
                     "toState": "past",
                     "removeSuffix": "く",
-                    "append": "いた"
+                    "append": "いた",
+                    "pronunciation": {
+                        "removeSuffix": "く",
+                        "append": "いた"
+                    }
                 },
                 {
                     "id": "te-form",
@@ -1107,7 +1409,285 @@
                     "fromState": "base",
                     "toState": "te-form",
                     "removeSuffix": "く",
-                    "append": "いて"
+                    "append": "いて",
+                    "pronunciation": {
+                        "removeSuffix": "く",
+                        "append": "いて"
+                    }
+                },
+                {
+                    "id": "polite-past",
+                    "metadata": {
+                        "labels": {
+                            "de": "Höfliche Vergangenheit",
+                            "en": "Polite Past",
+                            "id": "Lampau Sopan",
+                            "ja": "丁寧過去形"
+                        }
+                    },
+                    "fromState": "polite",
+                    "toState": "polite-past",
+                    "removeSuffix": "ます",
+                    "append": "ました",
+                    "pronunciation": {
+                        "removeSuffix": "ます",
+                        "append": "ました"
+                    }
+                },
+                {
+                    "id": "polite-negative",
+                    "metadata": {
+                        "labels": {
+                            "de": "Höfliche Verneinung",
+                            "en": "Polite Negative",
+                            "id": "Negatif Sopan",
+                            "ja": "丁寧否定形"
+                        }
+                    },
+                    "fromState": "polite",
+                    "toState": "polite-negative",
+                    "removeSuffix": "ます",
+                    "append": "ません",
+                    "pronunciation": {
+                        "removeSuffix": "ます",
+                        "append": "ません"
+                    }
+                },
+                {
+                    "id": "negative-past",
+                    "metadata": {
+                        "labels": {
+                            "de": "Verneinte Vergangenheit",
+                            "en": "Negative Past",
+                            "id": "Lampau Negatif",
+                            "ja": "否定過去形"
+                        }
+                    },
+                    "fromState": "negative",
+                    "toState": "negative-past",
+                    "removeSuffix": "ない",
+                    "append": "なかった",
+                    "pronunciation": {
+                        "removeSuffix": "ない",
+                        "append": "なかった"
+                    }
+                },
+                {
+                    "id": "negative-te",
+                    "metadata": {
+                        "labels": {
+                            "de": "Verneinte Te-Form",
+                            "en": "Negative Te Form",
+                            "id": "Bentuk Te Negatif",
+                            "ja": "否定て形"
+                        }
+                    },
+                    "fromState": "negative",
+                    "toState": "negative-te",
+                    "removeSuffix": "ない",
+                    "append": "なくて",
+                    "pronunciation": {
+                        "removeSuffix": "ない",
+                        "append": "なくて"
+                    }
+                },
+                {
+                    "id": "causative",
+                    "metadata": {
+                        "labels": {
+                            "de": "Kausativ",
+                            "en": "Causative",
+                            "id": "Kausatif",
+                            "ja": "使役形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "causative",
+                    "removeSuffix": "く",
+                    "append": "かせる",
+                    "pronunciation": {
+                        "removeSuffix": "く",
+                        "append": "かせる"
+                    }
+                },
+                {
+                    "id": "passive",
+                    "metadata": {
+                        "labels": {
+                            "de": "Passiv",
+                            "en": "Passive",
+                            "id": "Pasif",
+                            "ja": "受身形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "passive",
+                    "removeSuffix": "く",
+                    "append": "かれる",
+                    "pronunciation": {
+                        "removeSuffix": "く",
+                        "append": "かれる"
+                    }
+                },
+                {
+                    "id": "potential",
+                    "metadata": {
+                        "labels": {
+                            "de": "Potential",
+                            "en": "Potential",
+                            "id": "Potensial",
+                            "ja": "可能形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "potential",
+                    "removeSuffix": "く",
+                    "append": "ける",
+                    "pronunciation": {
+                        "removeSuffix": "く",
+                        "append": "ける"
+                    }
+                },
+                {
+                    "id": "volitional",
+                    "metadata": {
+                        "labels": {
+                            "de": "Volitional",
+                            "en": "Volitional",
+                            "id": "Volisional",
+                            "ja": "意向形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "volitional",
+                    "removeSuffix": "く",
+                    "append": "こう",
+                    "pronunciation": {
+                        "removeSuffix": "く",
+                        "append": "こう"
+                    }
+                },
+                {
+                    "id": "causative-negative",
+                    "metadata": {
+                        "labels": {
+                            "de": "Kausativ verneint",
+                            "en": "Causative Negative",
+                            "id": "Kausatif Negatif",
+                            "ja": "使役否定形"
+                        }
+                    },
+                    "fromState": "causative",
+                    "toState": "causative-negative",
+                    "removeSuffix": "る",
+                    "append": "ない",
+                    "pronunciation": {
+                        "removeSuffix": "る",
+                        "append": "ない"
+                    }
+                },
+                {
+                    "id": "causative-past",
+                    "metadata": {
+                        "labels": {
+                            "de": "Kausativ Vergangenheit",
+                            "en": "Causative Past",
+                            "id": "Lampau Kausatif",
+                            "ja": "使役過去形"
+                        }
+                    },
+                    "fromState": "causative",
+                    "toState": "causative-past",
+                    "removeSuffix": "る",
+                    "append": "た",
+                    "pronunciation": {
+                        "removeSuffix": "る",
+                        "append": "た"
+                    }
+                },
+                {
+                    "id": "causative-te",
+                    "metadata": {
+                        "labels": {
+                            "de": "Kausativ Te-Form",
+                            "en": "Causative Te Form",
+                            "id": "Bentuk Te Kausatif",
+                            "ja": "使役て形"
+                        }
+                    },
+                    "fromState": "causative",
+                    "toState": "causative-te",
+                    "removeSuffix": "る",
+                    "append": "て",
+                    "pronunciation": {
+                        "removeSuffix": "る",
+                        "append": "て"
+                    }
+                },
+                {
+                    "id": "causative-desire",
+                    "metadata": {
+                        "labels": {
+                            "de": "Kausativ-Wunsch",
+                            "en": "Causative Desire",
+                            "id": "Keinginan Kausatif",
+                            "ja": "使役希望形"
+                        }
+                    },
+                    "fromState": "causative",
+                    "toState": "causative-desire",
+                    "removeSuffix": "る",
+                    "append": "たい",
+                    "pronunciation": {
+                        "removeSuffix": "る",
+                        "append": "たい"
+                    },
+                    "definition": {
+                        "labels": {
+                            "de": "Wunsch, jemanden die Grundhandlung ausführen zu lassen",
+                            "en": "want to make or let someone perform the base action",
+                            "id": "ingin membuat atau membiarkan seseorang melakukan tindakan dasar",
+                            "ja": "誰かに基本の動作をさせたいという意味"
+                        }
+                    }
+                },
+                {
+                    "id": "causative-negative-desire",
+                    "metadata": {
+                        "labels": {
+                            "de": "Verneinter Kausativ-Wunsch",
+                            "en": "Negative Causative Desire",
+                            "id": "Keinginan Kausatif Negatif",
+                            "ja": "使役希望否定形"
+                        }
+                    },
+                    "fromState": "causative-desire",
+                    "toState": "causative-negative-desire",
+                    "removeSuffix": "たい",
+                    "append": "たくない",
+                    "pronunciation": {
+                        "removeSuffix": "たい",
+                        "append": "たくない"
+                    }
+                },
+                {
+                    "id": "causative-continuous-negative-desire",
+                    "metadata": {
+                        "labels": {
+                            "de": "Verknüpfter verneinter Kausativ-Wunsch",
+                            "en": "Continuative Negative Causative Desire",
+                            "id": "Keinginan Kausatif Negatif Berkelanjutan",
+                            "ja": "使役希望否定接続形"
+                        }
+                    },
+                    "fromState": "causative-negative-desire",
+                    "toState": "causative-continuous-negative-desire",
+                    "removeSuffix": "ない",
+                    "append": "なくて",
+                    "pronunciation": {
+                        "removeSuffix": "ない",
+                        "append": "なくて"
+                    }
                 }
             ]
         },
@@ -1137,7 +1717,11 @@
                     "fromState": "base",
                     "toState": "polite",
                     "removeSuffix": "く",
-                    "append": "きます"
+                    "append": "きます",
+                    "pronunciation": {
+                        "removeSuffix": "く",
+                        "append": "きます"
+                    }
                 },
                 {
                     "id": "negative",
@@ -1152,7 +1736,11 @@
                     "fromState": "base",
                     "toState": "negative",
                     "removeSuffix": "く",
-                    "append": "かない"
+                    "append": "かない",
+                    "pronunciation": {
+                        "removeSuffix": "く",
+                        "append": "かない"
+                    }
                 },
                 {
                     "id": "past",
@@ -1167,7 +1755,11 @@
                     "fromState": "base",
                     "toState": "past",
                     "removeSuffix": "く",
-                    "append": "った"
+                    "append": "った",
+                    "pronunciation": {
+                        "removeSuffix": "く",
+                        "append": "った"
+                    }
                 },
                 {
                     "id": "te-form",
@@ -1182,7 +1774,285 @@
                     "fromState": "base",
                     "toState": "te-form",
                     "removeSuffix": "く",
-                    "append": "って"
+                    "append": "って",
+                    "pronunciation": {
+                        "removeSuffix": "く",
+                        "append": "って"
+                    }
+                },
+                {
+                    "id": "polite-past",
+                    "metadata": {
+                        "labels": {
+                            "de": "Höfliche Vergangenheit",
+                            "en": "Polite Past",
+                            "id": "Lampau Sopan",
+                            "ja": "丁寧過去形"
+                        }
+                    },
+                    "fromState": "polite",
+                    "toState": "polite-past",
+                    "removeSuffix": "ます",
+                    "append": "ました",
+                    "pronunciation": {
+                        "removeSuffix": "ます",
+                        "append": "ました"
+                    }
+                },
+                {
+                    "id": "polite-negative",
+                    "metadata": {
+                        "labels": {
+                            "de": "Höfliche Verneinung",
+                            "en": "Polite Negative",
+                            "id": "Negatif Sopan",
+                            "ja": "丁寧否定形"
+                        }
+                    },
+                    "fromState": "polite",
+                    "toState": "polite-negative",
+                    "removeSuffix": "ます",
+                    "append": "ません",
+                    "pronunciation": {
+                        "removeSuffix": "ます",
+                        "append": "ません"
+                    }
+                },
+                {
+                    "id": "negative-past",
+                    "metadata": {
+                        "labels": {
+                            "de": "Verneinte Vergangenheit",
+                            "en": "Negative Past",
+                            "id": "Lampau Negatif",
+                            "ja": "否定過去形"
+                        }
+                    },
+                    "fromState": "negative",
+                    "toState": "negative-past",
+                    "removeSuffix": "ない",
+                    "append": "なかった",
+                    "pronunciation": {
+                        "removeSuffix": "ない",
+                        "append": "なかった"
+                    }
+                },
+                {
+                    "id": "negative-te",
+                    "metadata": {
+                        "labels": {
+                            "de": "Verneinte Te-Form",
+                            "en": "Negative Te Form",
+                            "id": "Bentuk Te Negatif",
+                            "ja": "否定て形"
+                        }
+                    },
+                    "fromState": "negative",
+                    "toState": "negative-te",
+                    "removeSuffix": "ない",
+                    "append": "なくて",
+                    "pronunciation": {
+                        "removeSuffix": "ない",
+                        "append": "なくて"
+                    }
+                },
+                {
+                    "id": "causative",
+                    "metadata": {
+                        "labels": {
+                            "de": "Kausativ",
+                            "en": "Causative",
+                            "id": "Kausatif",
+                            "ja": "使役形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "causative",
+                    "removeSuffix": "く",
+                    "append": "かせる",
+                    "pronunciation": {
+                        "removeSuffix": "く",
+                        "append": "かせる"
+                    }
+                },
+                {
+                    "id": "passive",
+                    "metadata": {
+                        "labels": {
+                            "de": "Passiv",
+                            "en": "Passive",
+                            "id": "Pasif",
+                            "ja": "受身形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "passive",
+                    "removeSuffix": "く",
+                    "append": "かれる",
+                    "pronunciation": {
+                        "removeSuffix": "く",
+                        "append": "かれる"
+                    }
+                },
+                {
+                    "id": "potential",
+                    "metadata": {
+                        "labels": {
+                            "de": "Potential",
+                            "en": "Potential",
+                            "id": "Potensial",
+                            "ja": "可能形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "potential",
+                    "removeSuffix": "く",
+                    "append": "ける",
+                    "pronunciation": {
+                        "removeSuffix": "く",
+                        "append": "ける"
+                    }
+                },
+                {
+                    "id": "volitional",
+                    "metadata": {
+                        "labels": {
+                            "de": "Volitional",
+                            "en": "Volitional",
+                            "id": "Volisional",
+                            "ja": "意向形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "volitional",
+                    "removeSuffix": "く",
+                    "append": "こう",
+                    "pronunciation": {
+                        "removeSuffix": "く",
+                        "append": "こう"
+                    }
+                },
+                {
+                    "id": "causative-negative",
+                    "metadata": {
+                        "labels": {
+                            "de": "Kausativ verneint",
+                            "en": "Causative Negative",
+                            "id": "Kausatif Negatif",
+                            "ja": "使役否定形"
+                        }
+                    },
+                    "fromState": "causative",
+                    "toState": "causative-negative",
+                    "removeSuffix": "る",
+                    "append": "ない",
+                    "pronunciation": {
+                        "removeSuffix": "る",
+                        "append": "ない"
+                    }
+                },
+                {
+                    "id": "causative-past",
+                    "metadata": {
+                        "labels": {
+                            "de": "Kausativ Vergangenheit",
+                            "en": "Causative Past",
+                            "id": "Lampau Kausatif",
+                            "ja": "使役過去形"
+                        }
+                    },
+                    "fromState": "causative",
+                    "toState": "causative-past",
+                    "removeSuffix": "る",
+                    "append": "た",
+                    "pronunciation": {
+                        "removeSuffix": "る",
+                        "append": "た"
+                    }
+                },
+                {
+                    "id": "causative-te",
+                    "metadata": {
+                        "labels": {
+                            "de": "Kausativ Te-Form",
+                            "en": "Causative Te Form",
+                            "id": "Bentuk Te Kausatif",
+                            "ja": "使役て形"
+                        }
+                    },
+                    "fromState": "causative",
+                    "toState": "causative-te",
+                    "removeSuffix": "る",
+                    "append": "て",
+                    "pronunciation": {
+                        "removeSuffix": "る",
+                        "append": "て"
+                    }
+                },
+                {
+                    "id": "causative-desire",
+                    "metadata": {
+                        "labels": {
+                            "de": "Kausativ-Wunsch",
+                            "en": "Causative Desire",
+                            "id": "Keinginan Kausatif",
+                            "ja": "使役希望形"
+                        }
+                    },
+                    "fromState": "causative",
+                    "toState": "causative-desire",
+                    "removeSuffix": "る",
+                    "append": "たい",
+                    "pronunciation": {
+                        "removeSuffix": "る",
+                        "append": "たい"
+                    },
+                    "definition": {
+                        "labels": {
+                            "de": "Wunsch, jemanden die Grundhandlung ausführen zu lassen",
+                            "en": "want to make or let someone perform the base action",
+                            "id": "ingin membuat atau membiarkan seseorang melakukan tindakan dasar",
+                            "ja": "誰かに基本の動作をさせたいという意味"
+                        }
+                    }
+                },
+                {
+                    "id": "causative-negative-desire",
+                    "metadata": {
+                        "labels": {
+                            "de": "Verneinter Kausativ-Wunsch",
+                            "en": "Negative Causative Desire",
+                            "id": "Keinginan Kausatif Negatif",
+                            "ja": "使役希望否定形"
+                        }
+                    },
+                    "fromState": "causative-desire",
+                    "toState": "causative-negative-desire",
+                    "removeSuffix": "たい",
+                    "append": "たくない",
+                    "pronunciation": {
+                        "removeSuffix": "たい",
+                        "append": "たくない"
+                    }
+                },
+                {
+                    "id": "causative-continuous-negative-desire",
+                    "metadata": {
+                        "labels": {
+                            "de": "Verknüpfter verneinter Kausativ-Wunsch",
+                            "en": "Continuative Negative Causative Desire",
+                            "id": "Keinginan Kausatif Negatif Berkelanjutan",
+                            "ja": "使役希望否定接続形"
+                        }
+                    },
+                    "fromState": "causative-negative-desire",
+                    "toState": "causative-continuous-negative-desire",
+                    "removeSuffix": "ない",
+                    "append": "なくて",
+                    "pronunciation": {
+                        "removeSuffix": "ない",
+                        "append": "なくて"
+                    }
                 }
             ]
         },
@@ -1212,7 +2082,11 @@
                     "fromState": "base",
                     "toState": "polite",
                     "removeSuffix": "す",
-                    "append": "します"
+                    "append": "します",
+                    "pronunciation": {
+                        "removeSuffix": "す",
+                        "append": "します"
+                    }
                 },
                 {
                     "id": "negative",
@@ -1227,7 +2101,11 @@
                     "fromState": "base",
                     "toState": "negative",
                     "removeSuffix": "す",
-                    "append": "さない"
+                    "append": "さない",
+                    "pronunciation": {
+                        "removeSuffix": "す",
+                        "append": "さない"
+                    }
                 },
                 {
                     "id": "past",
@@ -1242,7 +2120,11 @@
                     "fromState": "base",
                     "toState": "past",
                     "removeSuffix": "す",
-                    "append": "した"
+                    "append": "した",
+                    "pronunciation": {
+                        "removeSuffix": "す",
+                        "append": "した"
+                    }
                 },
                 {
                     "id": "te-form",
@@ -1257,7 +2139,285 @@
                     "fromState": "base",
                     "toState": "te-form",
                     "removeSuffix": "す",
-                    "append": "して"
+                    "append": "して",
+                    "pronunciation": {
+                        "removeSuffix": "す",
+                        "append": "して"
+                    }
+                },
+                {
+                    "id": "polite-past",
+                    "metadata": {
+                        "labels": {
+                            "de": "Höfliche Vergangenheit",
+                            "en": "Polite Past",
+                            "id": "Lampau Sopan",
+                            "ja": "丁寧過去形"
+                        }
+                    },
+                    "fromState": "polite",
+                    "toState": "polite-past",
+                    "removeSuffix": "ます",
+                    "append": "ました",
+                    "pronunciation": {
+                        "removeSuffix": "ます",
+                        "append": "ました"
+                    }
+                },
+                {
+                    "id": "polite-negative",
+                    "metadata": {
+                        "labels": {
+                            "de": "Höfliche Verneinung",
+                            "en": "Polite Negative",
+                            "id": "Negatif Sopan",
+                            "ja": "丁寧否定形"
+                        }
+                    },
+                    "fromState": "polite",
+                    "toState": "polite-negative",
+                    "removeSuffix": "ます",
+                    "append": "ません",
+                    "pronunciation": {
+                        "removeSuffix": "ます",
+                        "append": "ません"
+                    }
+                },
+                {
+                    "id": "negative-past",
+                    "metadata": {
+                        "labels": {
+                            "de": "Verneinte Vergangenheit",
+                            "en": "Negative Past",
+                            "id": "Lampau Negatif",
+                            "ja": "否定過去形"
+                        }
+                    },
+                    "fromState": "negative",
+                    "toState": "negative-past",
+                    "removeSuffix": "ない",
+                    "append": "なかった",
+                    "pronunciation": {
+                        "removeSuffix": "ない",
+                        "append": "なかった"
+                    }
+                },
+                {
+                    "id": "negative-te",
+                    "metadata": {
+                        "labels": {
+                            "de": "Verneinte Te-Form",
+                            "en": "Negative Te Form",
+                            "id": "Bentuk Te Negatif",
+                            "ja": "否定て形"
+                        }
+                    },
+                    "fromState": "negative",
+                    "toState": "negative-te",
+                    "removeSuffix": "ない",
+                    "append": "なくて",
+                    "pronunciation": {
+                        "removeSuffix": "ない",
+                        "append": "なくて"
+                    }
+                },
+                {
+                    "id": "causative",
+                    "metadata": {
+                        "labels": {
+                            "de": "Kausativ",
+                            "en": "Causative",
+                            "id": "Kausatif",
+                            "ja": "使役形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "causative",
+                    "removeSuffix": "す",
+                    "append": "させる",
+                    "pronunciation": {
+                        "removeSuffix": "す",
+                        "append": "させる"
+                    }
+                },
+                {
+                    "id": "passive",
+                    "metadata": {
+                        "labels": {
+                            "de": "Passiv",
+                            "en": "Passive",
+                            "id": "Pasif",
+                            "ja": "受身形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "passive",
+                    "removeSuffix": "す",
+                    "append": "される",
+                    "pronunciation": {
+                        "removeSuffix": "す",
+                        "append": "される"
+                    }
+                },
+                {
+                    "id": "potential",
+                    "metadata": {
+                        "labels": {
+                            "de": "Potential",
+                            "en": "Potential",
+                            "id": "Potensial",
+                            "ja": "可能形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "potential",
+                    "removeSuffix": "す",
+                    "append": "せる",
+                    "pronunciation": {
+                        "removeSuffix": "す",
+                        "append": "せる"
+                    }
+                },
+                {
+                    "id": "volitional",
+                    "metadata": {
+                        "labels": {
+                            "de": "Volitional",
+                            "en": "Volitional",
+                            "id": "Volisional",
+                            "ja": "意向形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "volitional",
+                    "removeSuffix": "す",
+                    "append": "そう",
+                    "pronunciation": {
+                        "removeSuffix": "す",
+                        "append": "そう"
+                    }
+                },
+                {
+                    "id": "causative-negative",
+                    "metadata": {
+                        "labels": {
+                            "de": "Kausativ verneint",
+                            "en": "Causative Negative",
+                            "id": "Kausatif Negatif",
+                            "ja": "使役否定形"
+                        }
+                    },
+                    "fromState": "causative",
+                    "toState": "causative-negative",
+                    "removeSuffix": "る",
+                    "append": "ない",
+                    "pronunciation": {
+                        "removeSuffix": "る",
+                        "append": "ない"
+                    }
+                },
+                {
+                    "id": "causative-past",
+                    "metadata": {
+                        "labels": {
+                            "de": "Kausativ Vergangenheit",
+                            "en": "Causative Past",
+                            "id": "Lampau Kausatif",
+                            "ja": "使役過去形"
+                        }
+                    },
+                    "fromState": "causative",
+                    "toState": "causative-past",
+                    "removeSuffix": "る",
+                    "append": "た",
+                    "pronunciation": {
+                        "removeSuffix": "る",
+                        "append": "た"
+                    }
+                },
+                {
+                    "id": "causative-te",
+                    "metadata": {
+                        "labels": {
+                            "de": "Kausativ Te-Form",
+                            "en": "Causative Te Form",
+                            "id": "Bentuk Te Kausatif",
+                            "ja": "使役て形"
+                        }
+                    },
+                    "fromState": "causative",
+                    "toState": "causative-te",
+                    "removeSuffix": "る",
+                    "append": "て",
+                    "pronunciation": {
+                        "removeSuffix": "る",
+                        "append": "て"
+                    }
+                },
+                {
+                    "id": "causative-desire",
+                    "metadata": {
+                        "labels": {
+                            "de": "Kausativ-Wunsch",
+                            "en": "Causative Desire",
+                            "id": "Keinginan Kausatif",
+                            "ja": "使役希望形"
+                        }
+                    },
+                    "fromState": "causative",
+                    "toState": "causative-desire",
+                    "removeSuffix": "る",
+                    "append": "たい",
+                    "pronunciation": {
+                        "removeSuffix": "る",
+                        "append": "たい"
+                    },
+                    "definition": {
+                        "labels": {
+                            "de": "Wunsch, jemanden die Grundhandlung ausführen zu lassen",
+                            "en": "want to make or let someone perform the base action",
+                            "id": "ingin membuat atau membiarkan seseorang melakukan tindakan dasar",
+                            "ja": "誰かに基本の動作をさせたいという意味"
+                        }
+                    }
+                },
+                {
+                    "id": "causative-negative-desire",
+                    "metadata": {
+                        "labels": {
+                            "de": "Verneinter Kausativ-Wunsch",
+                            "en": "Negative Causative Desire",
+                            "id": "Keinginan Kausatif Negatif",
+                            "ja": "使役希望否定形"
+                        }
+                    },
+                    "fromState": "causative-desire",
+                    "toState": "causative-negative-desire",
+                    "removeSuffix": "たい",
+                    "append": "たくない",
+                    "pronunciation": {
+                        "removeSuffix": "たい",
+                        "append": "たくない"
+                    }
+                },
+                {
+                    "id": "causative-continuous-negative-desire",
+                    "metadata": {
+                        "labels": {
+                            "de": "Verknüpfter verneinter Kausativ-Wunsch",
+                            "en": "Continuative Negative Causative Desire",
+                            "id": "Keinginan Kausatif Negatif Berkelanjutan",
+                            "ja": "使役希望否定接続形"
+                        }
+                    },
+                    "fromState": "causative-negative-desire",
+                    "toState": "causative-continuous-negative-desire",
+                    "removeSuffix": "ない",
+                    "append": "なくて",
+                    "pronunciation": {
+                        "removeSuffix": "ない",
+                        "append": "なくて"
+                    }
                 }
             ]
         },
@@ -1287,7 +2447,11 @@
                     "fromState": "base",
                     "toState": "polite",
                     "removeSuffix": "ぶ",
-                    "append": "びます"
+                    "append": "びます",
+                    "pronunciation": {
+                        "removeSuffix": "ぶ",
+                        "append": "びます"
+                    }
                 },
                 {
                     "id": "negative",
@@ -1302,7 +2466,11 @@
                     "fromState": "base",
                     "toState": "negative",
                     "removeSuffix": "ぶ",
-                    "append": "ばない"
+                    "append": "ばない",
+                    "pronunciation": {
+                        "removeSuffix": "ぶ",
+                        "append": "ばない"
+                    }
                 },
                 {
                     "id": "past",
@@ -1317,7 +2485,11 @@
                     "fromState": "base",
                     "toState": "past",
                     "removeSuffix": "ぶ",
-                    "append": "んだ"
+                    "append": "んだ",
+                    "pronunciation": {
+                        "removeSuffix": "ぶ",
+                        "append": "んだ"
+                    }
                 },
                 {
                     "id": "te-form",
@@ -1332,7 +2504,285 @@
                     "fromState": "base",
                     "toState": "te-form",
                     "removeSuffix": "ぶ",
-                    "append": "んで"
+                    "append": "んで",
+                    "pronunciation": {
+                        "removeSuffix": "ぶ",
+                        "append": "んで"
+                    }
+                },
+                {
+                    "id": "polite-past",
+                    "metadata": {
+                        "labels": {
+                            "de": "Höfliche Vergangenheit",
+                            "en": "Polite Past",
+                            "id": "Lampau Sopan",
+                            "ja": "丁寧過去形"
+                        }
+                    },
+                    "fromState": "polite",
+                    "toState": "polite-past",
+                    "removeSuffix": "ます",
+                    "append": "ました",
+                    "pronunciation": {
+                        "removeSuffix": "ます",
+                        "append": "ました"
+                    }
+                },
+                {
+                    "id": "polite-negative",
+                    "metadata": {
+                        "labels": {
+                            "de": "Höfliche Verneinung",
+                            "en": "Polite Negative",
+                            "id": "Negatif Sopan",
+                            "ja": "丁寧否定形"
+                        }
+                    },
+                    "fromState": "polite",
+                    "toState": "polite-negative",
+                    "removeSuffix": "ます",
+                    "append": "ません",
+                    "pronunciation": {
+                        "removeSuffix": "ます",
+                        "append": "ません"
+                    }
+                },
+                {
+                    "id": "negative-past",
+                    "metadata": {
+                        "labels": {
+                            "de": "Verneinte Vergangenheit",
+                            "en": "Negative Past",
+                            "id": "Lampau Negatif",
+                            "ja": "否定過去形"
+                        }
+                    },
+                    "fromState": "negative",
+                    "toState": "negative-past",
+                    "removeSuffix": "ない",
+                    "append": "なかった",
+                    "pronunciation": {
+                        "removeSuffix": "ない",
+                        "append": "なかった"
+                    }
+                },
+                {
+                    "id": "negative-te",
+                    "metadata": {
+                        "labels": {
+                            "de": "Verneinte Te-Form",
+                            "en": "Negative Te Form",
+                            "id": "Bentuk Te Negatif",
+                            "ja": "否定て形"
+                        }
+                    },
+                    "fromState": "negative",
+                    "toState": "negative-te",
+                    "removeSuffix": "ない",
+                    "append": "なくて",
+                    "pronunciation": {
+                        "removeSuffix": "ない",
+                        "append": "なくて"
+                    }
+                },
+                {
+                    "id": "causative",
+                    "metadata": {
+                        "labels": {
+                            "de": "Kausativ",
+                            "en": "Causative",
+                            "id": "Kausatif",
+                            "ja": "使役形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "causative",
+                    "removeSuffix": "ぶ",
+                    "append": "ばせる",
+                    "pronunciation": {
+                        "removeSuffix": "ぶ",
+                        "append": "ばせる"
+                    }
+                },
+                {
+                    "id": "passive",
+                    "metadata": {
+                        "labels": {
+                            "de": "Passiv",
+                            "en": "Passive",
+                            "id": "Pasif",
+                            "ja": "受身形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "passive",
+                    "removeSuffix": "ぶ",
+                    "append": "ばれる",
+                    "pronunciation": {
+                        "removeSuffix": "ぶ",
+                        "append": "ばれる"
+                    }
+                },
+                {
+                    "id": "potential",
+                    "metadata": {
+                        "labels": {
+                            "de": "Potential",
+                            "en": "Potential",
+                            "id": "Potensial",
+                            "ja": "可能形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "potential",
+                    "removeSuffix": "ぶ",
+                    "append": "べる",
+                    "pronunciation": {
+                        "removeSuffix": "ぶ",
+                        "append": "べる"
+                    }
+                },
+                {
+                    "id": "volitional",
+                    "metadata": {
+                        "labels": {
+                            "de": "Volitional",
+                            "en": "Volitional",
+                            "id": "Volisional",
+                            "ja": "意向形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "volitional",
+                    "removeSuffix": "ぶ",
+                    "append": "ぼう",
+                    "pronunciation": {
+                        "removeSuffix": "ぶ",
+                        "append": "ぼう"
+                    }
+                },
+                {
+                    "id": "causative-negative",
+                    "metadata": {
+                        "labels": {
+                            "de": "Kausativ verneint",
+                            "en": "Causative Negative",
+                            "id": "Kausatif Negatif",
+                            "ja": "使役否定形"
+                        }
+                    },
+                    "fromState": "causative",
+                    "toState": "causative-negative",
+                    "removeSuffix": "る",
+                    "append": "ない",
+                    "pronunciation": {
+                        "removeSuffix": "る",
+                        "append": "ない"
+                    }
+                },
+                {
+                    "id": "causative-past",
+                    "metadata": {
+                        "labels": {
+                            "de": "Kausativ Vergangenheit",
+                            "en": "Causative Past",
+                            "id": "Lampau Kausatif",
+                            "ja": "使役過去形"
+                        }
+                    },
+                    "fromState": "causative",
+                    "toState": "causative-past",
+                    "removeSuffix": "る",
+                    "append": "た",
+                    "pronunciation": {
+                        "removeSuffix": "る",
+                        "append": "た"
+                    }
+                },
+                {
+                    "id": "causative-te",
+                    "metadata": {
+                        "labels": {
+                            "de": "Kausativ Te-Form",
+                            "en": "Causative Te Form",
+                            "id": "Bentuk Te Kausatif",
+                            "ja": "使役て形"
+                        }
+                    },
+                    "fromState": "causative",
+                    "toState": "causative-te",
+                    "removeSuffix": "る",
+                    "append": "て",
+                    "pronunciation": {
+                        "removeSuffix": "る",
+                        "append": "て"
+                    }
+                },
+                {
+                    "id": "causative-desire",
+                    "metadata": {
+                        "labels": {
+                            "de": "Kausativ-Wunsch",
+                            "en": "Causative Desire",
+                            "id": "Keinginan Kausatif",
+                            "ja": "使役希望形"
+                        }
+                    },
+                    "fromState": "causative",
+                    "toState": "causative-desire",
+                    "removeSuffix": "る",
+                    "append": "たい",
+                    "pronunciation": {
+                        "removeSuffix": "る",
+                        "append": "たい"
+                    },
+                    "definition": {
+                        "labels": {
+                            "de": "Wunsch, jemanden die Grundhandlung ausführen zu lassen",
+                            "en": "want to make or let someone perform the base action",
+                            "id": "ingin membuat atau membiarkan seseorang melakukan tindakan dasar",
+                            "ja": "誰かに基本の動作をさせたいという意味"
+                        }
+                    }
+                },
+                {
+                    "id": "causative-negative-desire",
+                    "metadata": {
+                        "labels": {
+                            "de": "Verneinter Kausativ-Wunsch",
+                            "en": "Negative Causative Desire",
+                            "id": "Keinginan Kausatif Negatif",
+                            "ja": "使役希望否定形"
+                        }
+                    },
+                    "fromState": "causative-desire",
+                    "toState": "causative-negative-desire",
+                    "removeSuffix": "たい",
+                    "append": "たくない",
+                    "pronunciation": {
+                        "removeSuffix": "たい",
+                        "append": "たくない"
+                    }
+                },
+                {
+                    "id": "causative-continuous-negative-desire",
+                    "metadata": {
+                        "labels": {
+                            "de": "Verknüpfter verneinter Kausativ-Wunsch",
+                            "en": "Continuative Negative Causative Desire",
+                            "id": "Keinginan Kausatif Negatif Berkelanjutan",
+                            "ja": "使役希望否定接続形"
+                        }
+                    },
+                    "fromState": "causative-negative-desire",
+                    "toState": "causative-continuous-negative-desire",
+                    "removeSuffix": "ない",
+                    "append": "なくて",
+                    "pronunciation": {
+                        "removeSuffix": "ない",
+                        "append": "なくて"
+                    }
                 }
             ]
         },
@@ -1362,7 +2812,11 @@
                     "fromState": "base",
                     "toState": "polite",
                     "removeSuffix": "む",
-                    "append": "みます"
+                    "append": "みます",
+                    "pronunciation": {
+                        "removeSuffix": "む",
+                        "append": "みます"
+                    }
                 },
                 {
                     "id": "negative",
@@ -1377,7 +2831,11 @@
                     "fromState": "base",
                     "toState": "negative",
                     "removeSuffix": "む",
-                    "append": "まない"
+                    "append": "まない",
+                    "pronunciation": {
+                        "removeSuffix": "む",
+                        "append": "まない"
+                    }
                 },
                 {
                     "id": "past",
@@ -1392,7 +2850,11 @@
                     "fromState": "base",
                     "toState": "past",
                     "removeSuffix": "む",
-                    "append": "んだ"
+                    "append": "んだ",
+                    "pronunciation": {
+                        "removeSuffix": "む",
+                        "append": "んだ"
+                    }
                 },
                 {
                     "id": "te-form",
@@ -1407,7 +2869,285 @@
                     "fromState": "base",
                     "toState": "te-form",
                     "removeSuffix": "む",
-                    "append": "んで"
+                    "append": "んで",
+                    "pronunciation": {
+                        "removeSuffix": "む",
+                        "append": "んで"
+                    }
+                },
+                {
+                    "id": "polite-past",
+                    "metadata": {
+                        "labels": {
+                            "de": "Höfliche Vergangenheit",
+                            "en": "Polite Past",
+                            "id": "Lampau Sopan",
+                            "ja": "丁寧過去形"
+                        }
+                    },
+                    "fromState": "polite",
+                    "toState": "polite-past",
+                    "removeSuffix": "ます",
+                    "append": "ました",
+                    "pronunciation": {
+                        "removeSuffix": "ます",
+                        "append": "ました"
+                    }
+                },
+                {
+                    "id": "polite-negative",
+                    "metadata": {
+                        "labels": {
+                            "de": "Höfliche Verneinung",
+                            "en": "Polite Negative",
+                            "id": "Negatif Sopan",
+                            "ja": "丁寧否定形"
+                        }
+                    },
+                    "fromState": "polite",
+                    "toState": "polite-negative",
+                    "removeSuffix": "ます",
+                    "append": "ません",
+                    "pronunciation": {
+                        "removeSuffix": "ます",
+                        "append": "ません"
+                    }
+                },
+                {
+                    "id": "negative-past",
+                    "metadata": {
+                        "labels": {
+                            "de": "Verneinte Vergangenheit",
+                            "en": "Negative Past",
+                            "id": "Lampau Negatif",
+                            "ja": "否定過去形"
+                        }
+                    },
+                    "fromState": "negative",
+                    "toState": "negative-past",
+                    "removeSuffix": "ない",
+                    "append": "なかった",
+                    "pronunciation": {
+                        "removeSuffix": "ない",
+                        "append": "なかった"
+                    }
+                },
+                {
+                    "id": "negative-te",
+                    "metadata": {
+                        "labels": {
+                            "de": "Verneinte Te-Form",
+                            "en": "Negative Te Form",
+                            "id": "Bentuk Te Negatif",
+                            "ja": "否定て形"
+                        }
+                    },
+                    "fromState": "negative",
+                    "toState": "negative-te",
+                    "removeSuffix": "ない",
+                    "append": "なくて",
+                    "pronunciation": {
+                        "removeSuffix": "ない",
+                        "append": "なくて"
+                    }
+                },
+                {
+                    "id": "causative",
+                    "metadata": {
+                        "labels": {
+                            "de": "Kausativ",
+                            "en": "Causative",
+                            "id": "Kausatif",
+                            "ja": "使役形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "causative",
+                    "removeSuffix": "む",
+                    "append": "ませる",
+                    "pronunciation": {
+                        "removeSuffix": "む",
+                        "append": "ませる"
+                    }
+                },
+                {
+                    "id": "passive",
+                    "metadata": {
+                        "labels": {
+                            "de": "Passiv",
+                            "en": "Passive",
+                            "id": "Pasif",
+                            "ja": "受身形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "passive",
+                    "removeSuffix": "む",
+                    "append": "まれる",
+                    "pronunciation": {
+                        "removeSuffix": "む",
+                        "append": "まれる"
+                    }
+                },
+                {
+                    "id": "potential",
+                    "metadata": {
+                        "labels": {
+                            "de": "Potential",
+                            "en": "Potential",
+                            "id": "Potensial",
+                            "ja": "可能形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "potential",
+                    "removeSuffix": "む",
+                    "append": "める",
+                    "pronunciation": {
+                        "removeSuffix": "む",
+                        "append": "める"
+                    }
+                },
+                {
+                    "id": "volitional",
+                    "metadata": {
+                        "labels": {
+                            "de": "Volitional",
+                            "en": "Volitional",
+                            "id": "Volisional",
+                            "ja": "意向形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "volitional",
+                    "removeSuffix": "む",
+                    "append": "もう",
+                    "pronunciation": {
+                        "removeSuffix": "む",
+                        "append": "もう"
+                    }
+                },
+                {
+                    "id": "causative-negative",
+                    "metadata": {
+                        "labels": {
+                            "de": "Kausativ verneint",
+                            "en": "Causative Negative",
+                            "id": "Kausatif Negatif",
+                            "ja": "使役否定形"
+                        }
+                    },
+                    "fromState": "causative",
+                    "toState": "causative-negative",
+                    "removeSuffix": "る",
+                    "append": "ない",
+                    "pronunciation": {
+                        "removeSuffix": "る",
+                        "append": "ない"
+                    }
+                },
+                {
+                    "id": "causative-past",
+                    "metadata": {
+                        "labels": {
+                            "de": "Kausativ Vergangenheit",
+                            "en": "Causative Past",
+                            "id": "Lampau Kausatif",
+                            "ja": "使役過去形"
+                        }
+                    },
+                    "fromState": "causative",
+                    "toState": "causative-past",
+                    "removeSuffix": "る",
+                    "append": "た",
+                    "pronunciation": {
+                        "removeSuffix": "る",
+                        "append": "た"
+                    }
+                },
+                {
+                    "id": "causative-te",
+                    "metadata": {
+                        "labels": {
+                            "de": "Kausativ Te-Form",
+                            "en": "Causative Te Form",
+                            "id": "Bentuk Te Kausatif",
+                            "ja": "使役て形"
+                        }
+                    },
+                    "fromState": "causative",
+                    "toState": "causative-te",
+                    "removeSuffix": "る",
+                    "append": "て",
+                    "pronunciation": {
+                        "removeSuffix": "る",
+                        "append": "て"
+                    }
+                },
+                {
+                    "id": "causative-desire",
+                    "metadata": {
+                        "labels": {
+                            "de": "Kausativ-Wunsch",
+                            "en": "Causative Desire",
+                            "id": "Keinginan Kausatif",
+                            "ja": "使役希望形"
+                        }
+                    },
+                    "fromState": "causative",
+                    "toState": "causative-desire",
+                    "removeSuffix": "る",
+                    "append": "たい",
+                    "pronunciation": {
+                        "removeSuffix": "る",
+                        "append": "たい"
+                    },
+                    "definition": {
+                        "labels": {
+                            "de": "Wunsch, jemanden die Grundhandlung ausführen zu lassen",
+                            "en": "want to make or let someone perform the base action",
+                            "id": "ingin membuat atau membiarkan seseorang melakukan tindakan dasar",
+                            "ja": "誰かに基本の動作をさせたいという意味"
+                        }
+                    }
+                },
+                {
+                    "id": "causative-negative-desire",
+                    "metadata": {
+                        "labels": {
+                            "de": "Verneinter Kausativ-Wunsch",
+                            "en": "Negative Causative Desire",
+                            "id": "Keinginan Kausatif Negatif",
+                            "ja": "使役希望否定形"
+                        }
+                    },
+                    "fromState": "causative-desire",
+                    "toState": "causative-negative-desire",
+                    "removeSuffix": "たい",
+                    "append": "たくない",
+                    "pronunciation": {
+                        "removeSuffix": "たい",
+                        "append": "たくない"
+                    }
+                },
+                {
+                    "id": "causative-continuous-negative-desire",
+                    "metadata": {
+                        "labels": {
+                            "de": "Verknüpfter verneinter Kausativ-Wunsch",
+                            "en": "Continuative Negative Causative Desire",
+                            "id": "Keinginan Kausatif Negatif Berkelanjutan",
+                            "ja": "使役希望否定接続形"
+                        }
+                    },
+                    "fromState": "causative-negative-desire",
+                    "toState": "causative-continuous-negative-desire",
+                    "removeSuffix": "ない",
+                    "append": "なくて",
+                    "pronunciation": {
+                        "removeSuffix": "ない",
+                        "append": "なくて"
+                    }
                 }
             ]
         },
@@ -1437,7 +3177,11 @@
                     "fromState": "base",
                     "toState": "polite",
                     "removeSuffix": "ある",
-                    "append": "あります"
+                    "append": "あります",
+                    "pronunciation": {
+                        "removeSuffix": "ある",
+                        "append": "あります"
+                    }
                 },
                 {
                     "id": "negative",
@@ -1452,7 +3196,11 @@
                     "fromState": "base",
                     "toState": "negative",
                     "removeSuffix": "ある",
-                    "append": "ない"
+                    "append": "ない",
+                    "pronunciation": {
+                        "removeSuffix": "ある",
+                        "append": "ない"
+                    }
                 },
                 {
                     "id": "past",
@@ -1467,7 +3215,11 @@
                     "fromState": "base",
                     "toState": "past",
                     "removeSuffix": "ある",
-                    "append": "あった"
+                    "append": "あった",
+                    "pronunciation": {
+                        "removeSuffix": "ある",
+                        "append": "あった"
+                    }
                 },
                 {
                     "id": "te-form",
@@ -1482,7 +3234,125 @@
                     "fromState": "base",
                     "toState": "te-form",
                     "removeSuffix": "ある",
-                    "append": "あって"
+                    "append": "あって",
+                    "pronunciation": {
+                        "removeSuffix": "ある",
+                        "append": "あって"
+                    }
+                },
+                {
+                    "id": "polite-past",
+                    "metadata": {
+                        "labels": {
+                            "de": "Höfliche Vergangenheit",
+                            "en": "Polite Past",
+                            "id": "Lampau Sopan",
+                            "ja": "丁寧過去形"
+                        }
+                    },
+                    "fromState": "polite",
+                    "toState": "polite-past",
+                    "removeSuffix": "ます",
+                    "append": "ました",
+                    "pronunciation": {
+                        "removeSuffix": "ます",
+                        "append": "ました"
+                    }
+                },
+                {
+                    "id": "polite-negative",
+                    "metadata": {
+                        "labels": {
+                            "de": "Höfliche Verneinung",
+                            "en": "Polite Negative",
+                            "id": "Negatif Sopan",
+                            "ja": "丁寧否定形"
+                        }
+                    },
+                    "fromState": "polite",
+                    "toState": "polite-negative",
+                    "removeSuffix": "ます",
+                    "append": "ません",
+                    "pronunciation": {
+                        "removeSuffix": "ます",
+                        "append": "ません"
+                    }
+                },
+                {
+                    "id": "negative-past",
+                    "metadata": {
+                        "labels": {
+                            "de": "Verneinte Vergangenheit",
+                            "en": "Negative Past",
+                            "id": "Lampau Negatif",
+                            "ja": "否定過去形"
+                        }
+                    },
+                    "fromState": "negative",
+                    "toState": "negative-past",
+                    "removeSuffix": "ない",
+                    "append": "なかった",
+                    "pronunciation": {
+                        "removeSuffix": "ない",
+                        "append": "なかった"
+                    }
+                },
+                {
+                    "id": "negative-te",
+                    "metadata": {
+                        "labels": {
+                            "de": "Verneinte Te-Form",
+                            "en": "Negative Te Form",
+                            "id": "Bentuk Te Negatif",
+                            "ja": "否定て形"
+                        }
+                    },
+                    "fromState": "negative",
+                    "toState": "negative-te",
+                    "removeSuffix": "ない",
+                    "append": "なくて",
+                    "pronunciation": {
+                        "removeSuffix": "ない",
+                        "append": "なくて"
+                    }
+                },
+                {
+                    "id": "conditional",
+                    "metadata": {
+                        "labels": {
+                            "de": "Konditional",
+                            "en": "Conditional",
+                            "id": "Kondisional",
+                            "ja": "仮定形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "conditional",
+                    "removeSuffix": "ある",
+                    "append": "あれば",
+                    "pronunciation": {
+                        "removeSuffix": "ある",
+                        "append": "あれば"
+                    }
+                },
+                {
+                    "id": "negative-conditional",
+                    "metadata": {
+                        "labels": {
+                            "de": "Verneinter Konditional",
+                            "en": "Negative Conditional",
+                            "id": "Kondisional Negatif",
+                            "ja": "否定仮定形"
+                        }
+                    },
+                    "fromState": "negative",
+                    "toState": "negative-conditional",
+                    "removeSuffix": "ない",
+                    "append": "なければ",
+                    "pronunciation": {
+                        "removeSuffix": "ない",
+                        "append": "なければ"
+                    }
                 }
             ]
         },
@@ -1512,7 +3382,11 @@
                     "fromState": "base",
                     "toState": "polite",
                     "removeSuffix": "来る",
-                    "append": "来ます"
+                    "append": "来ます",
+                    "pronunciation": {
+                        "removeSuffix": "くる",
+                        "append": "きます"
+                    }
                 },
                 {
                     "id": "negative",
@@ -1527,7 +3401,11 @@
                     "fromState": "base",
                     "toState": "negative",
                     "removeSuffix": "来る",
-                    "append": "来ない"
+                    "append": "来ない",
+                    "pronunciation": {
+                        "removeSuffix": "くる",
+                        "append": "こない"
+                    }
                 },
                 {
                     "id": "past",
@@ -1542,7 +3420,11 @@
                     "fromState": "base",
                     "toState": "past",
                     "removeSuffix": "来る",
-                    "append": "来た"
+                    "append": "来た",
+                    "pronunciation": {
+                        "removeSuffix": "くる",
+                        "append": "きた"
+                    }
                 },
                 {
                     "id": "te-form",
@@ -1557,7 +3439,285 @@
                     "fromState": "base",
                     "toState": "te-form",
                     "removeSuffix": "来る",
-                    "append": "来て"
+                    "append": "来て",
+                    "pronunciation": {
+                        "removeSuffix": "くる",
+                        "append": "きて"
+                    }
+                },
+                {
+                    "id": "polite-past",
+                    "metadata": {
+                        "labels": {
+                            "de": "Höfliche Vergangenheit",
+                            "en": "Polite Past",
+                            "id": "Lampau Sopan",
+                            "ja": "丁寧過去形"
+                        }
+                    },
+                    "fromState": "polite",
+                    "toState": "polite-past",
+                    "removeSuffix": "ます",
+                    "append": "ました",
+                    "pronunciation": {
+                        "removeSuffix": "ます",
+                        "append": "ました"
+                    }
+                },
+                {
+                    "id": "polite-negative",
+                    "metadata": {
+                        "labels": {
+                            "de": "Höfliche Verneinung",
+                            "en": "Polite Negative",
+                            "id": "Negatif Sopan",
+                            "ja": "丁寧否定形"
+                        }
+                    },
+                    "fromState": "polite",
+                    "toState": "polite-negative",
+                    "removeSuffix": "ます",
+                    "append": "ません",
+                    "pronunciation": {
+                        "removeSuffix": "ます",
+                        "append": "ません"
+                    }
+                },
+                {
+                    "id": "negative-past",
+                    "metadata": {
+                        "labels": {
+                            "de": "Verneinte Vergangenheit",
+                            "en": "Negative Past",
+                            "id": "Lampau Negatif",
+                            "ja": "否定過去形"
+                        }
+                    },
+                    "fromState": "negative",
+                    "toState": "negative-past",
+                    "removeSuffix": "ない",
+                    "append": "なかった",
+                    "pronunciation": {
+                        "removeSuffix": "ない",
+                        "append": "なかった"
+                    }
+                },
+                {
+                    "id": "negative-te",
+                    "metadata": {
+                        "labels": {
+                            "de": "Verneinte Te-Form",
+                            "en": "Negative Te Form",
+                            "id": "Bentuk Te Negatif",
+                            "ja": "否定て形"
+                        }
+                    },
+                    "fromState": "negative",
+                    "toState": "negative-te",
+                    "removeSuffix": "ない",
+                    "append": "なくて",
+                    "pronunciation": {
+                        "removeSuffix": "ない",
+                        "append": "なくて"
+                    }
+                },
+                {
+                    "id": "causative",
+                    "metadata": {
+                        "labels": {
+                            "de": "Kausativ",
+                            "en": "Causative",
+                            "id": "Kausatif",
+                            "ja": "使役形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "causative",
+                    "removeSuffix": "来る",
+                    "append": "来させる",
+                    "pronunciation": {
+                        "removeSuffix": "くる",
+                        "append": "こさせる"
+                    }
+                },
+                {
+                    "id": "passive",
+                    "metadata": {
+                        "labels": {
+                            "de": "Passiv",
+                            "en": "Passive",
+                            "id": "Pasif",
+                            "ja": "受身形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "passive",
+                    "removeSuffix": "来る",
+                    "append": "来られる",
+                    "pronunciation": {
+                        "removeSuffix": "くる",
+                        "append": "こられる"
+                    }
+                },
+                {
+                    "id": "potential",
+                    "metadata": {
+                        "labels": {
+                            "de": "Potential",
+                            "en": "Potential",
+                            "id": "Potensial",
+                            "ja": "可能形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "potential",
+                    "removeSuffix": "来る",
+                    "append": "来られる",
+                    "pronunciation": {
+                        "removeSuffix": "くる",
+                        "append": "こられる"
+                    }
+                },
+                {
+                    "id": "volitional",
+                    "metadata": {
+                        "labels": {
+                            "de": "Volitional",
+                            "en": "Volitional",
+                            "id": "Volisional",
+                            "ja": "意向形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "volitional",
+                    "removeSuffix": "来る",
+                    "append": "来よう",
+                    "pronunciation": {
+                        "removeSuffix": "くる",
+                        "append": "こよう"
+                    }
+                },
+                {
+                    "id": "causative-negative",
+                    "metadata": {
+                        "labels": {
+                            "de": "Kausativ verneint",
+                            "en": "Causative Negative",
+                            "id": "Kausatif Negatif",
+                            "ja": "使役否定形"
+                        }
+                    },
+                    "fromState": "causative",
+                    "toState": "causative-negative",
+                    "removeSuffix": "る",
+                    "append": "ない",
+                    "pronunciation": {
+                        "removeSuffix": "る",
+                        "append": "ない"
+                    }
+                },
+                {
+                    "id": "causative-past",
+                    "metadata": {
+                        "labels": {
+                            "de": "Kausativ Vergangenheit",
+                            "en": "Causative Past",
+                            "id": "Lampau Kausatif",
+                            "ja": "使役過去形"
+                        }
+                    },
+                    "fromState": "causative",
+                    "toState": "causative-past",
+                    "removeSuffix": "る",
+                    "append": "た",
+                    "pronunciation": {
+                        "removeSuffix": "る",
+                        "append": "た"
+                    }
+                },
+                {
+                    "id": "causative-te",
+                    "metadata": {
+                        "labels": {
+                            "de": "Kausativ Te-Form",
+                            "en": "Causative Te Form",
+                            "id": "Bentuk Te Kausatif",
+                            "ja": "使役て形"
+                        }
+                    },
+                    "fromState": "causative",
+                    "toState": "causative-te",
+                    "removeSuffix": "る",
+                    "append": "て",
+                    "pronunciation": {
+                        "removeSuffix": "る",
+                        "append": "て"
+                    }
+                },
+                {
+                    "id": "causative-desire",
+                    "metadata": {
+                        "labels": {
+                            "de": "Kausativ-Wunsch",
+                            "en": "Causative Desire",
+                            "id": "Keinginan Kausatif",
+                            "ja": "使役希望形"
+                        }
+                    },
+                    "fromState": "causative",
+                    "toState": "causative-desire",
+                    "removeSuffix": "る",
+                    "append": "たい",
+                    "pronunciation": {
+                        "removeSuffix": "る",
+                        "append": "たい"
+                    },
+                    "definition": {
+                        "labels": {
+                            "de": "Wunsch, jemanden die Grundhandlung ausführen zu lassen",
+                            "en": "want to make or let someone perform the base action",
+                            "id": "ingin membuat atau membiarkan seseorang melakukan tindakan dasar",
+                            "ja": "誰かに基本の動作をさせたいという意味"
+                        }
+                    }
+                },
+                {
+                    "id": "causative-negative-desire",
+                    "metadata": {
+                        "labels": {
+                            "de": "Verneinter Kausativ-Wunsch",
+                            "en": "Negative Causative Desire",
+                            "id": "Keinginan Kausatif Negatif",
+                            "ja": "使役希望否定形"
+                        }
+                    },
+                    "fromState": "causative-desire",
+                    "toState": "causative-negative-desire",
+                    "removeSuffix": "たい",
+                    "append": "たくない",
+                    "pronunciation": {
+                        "removeSuffix": "たい",
+                        "append": "たくない"
+                    }
+                },
+                {
+                    "id": "causative-continuous-negative-desire",
+                    "metadata": {
+                        "labels": {
+                            "de": "Verknüpfter verneinter Kausativ-Wunsch",
+                            "en": "Continuative Negative Causative Desire",
+                            "id": "Keinginan Kausatif Negatif Berkelanjutan",
+                            "ja": "使役希望否定接続形"
+                        }
+                    },
+                    "fromState": "causative-negative-desire",
+                    "toState": "causative-continuous-negative-desire",
+                    "removeSuffix": "ない",
+                    "append": "なくて",
+                    "pronunciation": {
+                        "removeSuffix": "ない",
+                        "append": "なくて"
+                    }
                 }
             ]
         }

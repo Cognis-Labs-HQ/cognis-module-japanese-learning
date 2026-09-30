@@ -230,3 +230,7 @@ Sentence pronunciation links each ordered reading segment to its existing visibl
 ## Kana-direct Kanji readings
 
 Kanji pronunciation groups reference ordered atomic Kana directly. The pack contains no hidden `reading:kanji` Vocabulary cards, so a reading such as `む` opens the Kana writing unit rather than an identically labeled Vocabulary card. Hidden `reading:pronunciation` records are reserved for complete lexical-word readings and must not duplicate any Kana writing-unit label.
+
+## Deep branching transformations
+
+Verb transform sets now form deep branching pathways from each canonical base card. Branches cover polite negative and past forms, negative past and connective forms, causative, passive, potential, volitional, and multi-step causative desire chains. Every rule independently transforms the written form and pronunciation; localized definition overrides explain semantic branches. Adverbs remain canonical invariant base cards, and no generated form is stored as a Vocabulary entry.

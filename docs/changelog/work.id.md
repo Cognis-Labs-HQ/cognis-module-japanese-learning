@@ -602,3 +602,9 @@ Tautan pelafalan kalimat ke unsur Kosakata dan Partikel berurutan yang terlihat 
 Seluruh 140 rekaman Kosakata `reading:kanji` tersembunyi telah dihapus, termasuk sisa Kana tunggal seperti `む`. Grup pelafalan Kanji dan saran Kanji Jisho jarak jauh kini menaut langsung ke Kana atomik berurutan, sedangkan pembungkus pelafalan leksikal lengkap dipertahankan hanya jika tidak menduplikasi label unit tulisan Kana.
 
 - [d7a28e4](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/d7a28e4)
+
+## Transformasi Verba Bercabang Mendalam
+
+Paket Jepang diselaraskan dengan kontrak pohon transformasi tersusun Cognis. Semua keluarga verba kini bercabang melalui jalur sopan, negatif, lampau, penghubung, kausatif, pasif, potensial, dan volisional, termasuk rantai keinginan kausatif empat tahap. Bentuk tulisan dan pelafalan ditransformasi secara mandiri, penggantian definisi terlokalisasi menjelaskan cabang semantik, adverbia tetap berupa kartu dasar yang tidak berubah, dan bentuk hasil hanya untuk penyajian.
+
+- [d93ad3c](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/d93ad3c)

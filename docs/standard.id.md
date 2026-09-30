@@ -273,3 +273,7 @@ Pelafalan kalimat menautkan setiap segmen bacaan berurutan ke unsur Kosakata ata
 ## Bacaan Kanji langsung ke Kana
 
 Grup pelafalan Kanji merujuk langsung ke Kana atomik yang berurutan. Paket tidak memuat kartu Kosakata `reading:kanji` tersembunyi, sehingga bacaan seperti `む` membuka unit tulisan Kana, bukan kartu Kosakata berlabel sama. Rekaman `reading:pronunciation` tersembunyi hanya untuk bacaan kata leksikal lengkap dan tidak boleh menduplikasi label unit tulisan Kana.
+
+## Transformasi bercabang mendalam
+
+Set transformasi verba kini membentuk jalur bercabang mendalam dari setiap kartu dasar kanonis. Cabangnya mencakup bentuk sopan negatif dan lampau, bentuk lampau negatif dan penghubung, kausatif, pasif, potensial, volisional, serta rantai keinginan kausatif bertahap. Setiap aturan mentransformasi bentuk tulisan dan pelafalan secara mandiri; penggantian definisi terlokalisasi menjelaskan cabang semantik. Adverbia tetap menjadi kartu dasar kanonis yang tidak berubah, dan tidak ada bentuk hasil yang disimpan sebagai entri Kosakata.

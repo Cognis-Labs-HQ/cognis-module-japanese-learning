@@ -19,10 +19,22 @@ const words = readdirSync(path.join(ROOT, "data/library/content/words"))
     );
 
 function transformedValues(entry) {
+    return transformationNodes(entry).map(({ value }) => value);
+}
+
+function transformationNodes(entry) {
     const tags = new Set(entry.tags ?? []);
     return (schema.transformSets ?? []).flatMap((set) => {
         if (!set.matchTags.every((tag) => tags.has(tag))) return [];
-        const nodes = [{ state: set.baseState, value: entry.label }];
+        const nodes = [
+            {
+                state: set.baseState,
+                value: entry.label,
+                pronunciation: entry.fields.pronunciation[0],
+                path: [],
+            },
+        ];
+        const seen = new Set([`${set.baseState}\0${entry.label}`]);
         for (let index = 0; index < nodes.length; index += 1) {
             const node = nodes[index];
             for (const rule of set.rules) {
@@ -31,16 +43,32 @@ function transformedValues(entry) {
                     !node.value.endsWith(rule.removeSuffix)
                 )
                     continue;
+                const value = `${node.value.slice(
+                    0,
+                    node.value.length - rule.removeSuffix.length,
+                )}${rule.append}`;
+                const key = `${rule.toState}\0${value}`;
+                if (seen.has(key)) continue;
+                seen.add(key);
+                const pronunciation = rule.pronunciation;
                 nodes.push({
                     state: rule.toState,
-                    value: `${node.value.slice(
-                        0,
-                        node.value.length - rule.removeSuffix.length,
-                    )}${rule.append}`,
+                    value,
+                    pronunciation:
+                        pronunciation &&
+                        node.pronunciation.endsWith(pronunciation.removeSuffix)
+                            ? `${node.pronunciation.slice(
+                                  0,
+                                  node.pronunciation.length -
+                                      pronunciation.removeSuffix.length,
+                              )}${pronunciation.append}`
+                            : node.pronunciation,
+                    definition: rule.definition,
+                    path: [...node.path, rule.id],
                 });
             }
         }
-        return nodes.slice(1).map(({ value }) => value);
+        return nodes.slice(1);
     });
 }
 
@@ -100,7 +128,96 @@ test("Japanese verb families derive reviewed polite, negative, past, and te form
     ]);
     const wordsById = new Map(words.map((entry) => [entry.id, entry]));
     for (const [id, forms] of expected) {
-        assert.deepEqual(transformedValues(wordsById.get(id)), forms, id);
+        const transformed = transformedValues(wordsById.get(id));
+        for (const form of forms) assert.ok(transformed.includes(form), id);
+    }
+});
+
+test("verb transformation trees branch deeply with dynamic readings and definitions", () => {
+    const wordsById = new Map(words.map((entry) => [entry.id, entry]));
+    const taberu = transformationNodes(wordsById.get("ja:word:taberu"));
+    const deepest = taberu.find(
+        ({ state }) => state === "causative-continuous-negative-desire",
+    );
+    assert.deepEqual(
+        {
+            value: deepest.value,
+            pronunciation: deepest.pronunciation,
+            path: deepest.path,
+        },
+        {
+            value: "食べさせたくなくて",
+            pronunciation: "たべさせたくなくて",
+            path: [
+                "causative",
+                "causative-desire",
+                "causative-negative-desire",
+                "causative-continuous-negative-desire",
+            ],
+        },
+    );
+    assert.deepEqual(
+        taberu.find(({ state }) => state === "causative-desire").definition
+            .labels,
+        {
+            de: "Wunsch, jemanden die Grundhandlung ausführen zu lassen",
+            en: "want to make or let someone perform the base action",
+            id: "ingin membuat atau membiarkan seseorang melakukan tindakan dasar",
+            ja: "誰かに基本の動作をさせたいという意味",
+        },
+    );
+
+    const kuru = transformationNodes(wordsById.get("ja:word:kuru"));
+    assert.deepEqual(
+        kuru
+            .filter(({ state }) =>
+                ["polite", "causative", "potential"].includes(state),
+            )
+            .map(({ state, value, pronunciation }) => ({
+                state,
+                value,
+                pronunciation,
+            })),
+        [
+            { state: "polite", value: "来ます", pronunciation: "きます" },
+            {
+                state: "causative",
+                value: "来させる",
+                pronunciation: "こさせる",
+            },
+            {
+                state: "potential",
+                value: "来られる",
+                pronunciation: "こられる",
+            },
+        ],
+    );
+});
+
+test("transform declarations are effective, localized, and unambiguous", () => {
+    for (const set of schema.transformSets) {
+        const transitions = new Set();
+        for (const rule of set.rules) {
+            assert.notEqual(`${rule.removeSuffix}\0${rule.append}`, "\0");
+            assert.equal(typeof rule.pronunciation.removeSuffix, "string");
+            assert.equal(typeof rule.pronunciation.append, "string");
+            const transition = `${rule.fromState}\0${rule.toState}`;
+            assert.ok(!transitions.has(transition), `${set.id}:${transition}`);
+            transitions.add(transition);
+            assert.deepEqual(Object.keys(rule.metadata.labels).sort(), [
+                "de",
+                "en",
+                "id",
+                "ja",
+            ]);
+            if (rule.definition)
+                assert.deepEqual(Object.keys(rule.definition.labels).sort(), [
+                    "de",
+                    "en",
+                    "id",
+                    "ja",
+                ]);
+        }
     }
 });
 

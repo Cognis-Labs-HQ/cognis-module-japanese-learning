@@ -602,3 +602,9 @@ Restored sentence pronunciation links to their ordered visible Vocabulary and Pa
 Removed all 140 hidden `reading:kanji` Vocabulary records, including single-Kana stragglers such as `む`. Kanji pronunciation groups and remote Jisho Kanji suggestions now link directly to ordered atomic Kana, while complete lexical pronunciation wrappers remain available only when they do not duplicate a Kana writing-unit label.
 
 - [d7a28e4](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/d7a28e4)
+
+## Deep Branching Verb Transformations
+
+Aligned the Japanese pack with Cognis' composable transformation-tree contract. All verb families now branch through polite, negative, past, connective, causative, passive, potential, and volitional pathways, including a four-step causative-desire chain. Written forms and pronunciations transform independently, localized definition overrides describe semantic branches, adverbs remain invariant base cards, and generated forms remain presentation-only.
+
+- [d93ad3c](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/d93ad3c)

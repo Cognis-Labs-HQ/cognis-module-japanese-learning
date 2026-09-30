@@ -273,3 +273,7 @@ Die Satzaussprache verknüpft über `linkRelationships: ["words", "particles"]` 
 ## Direkte Kanji-Lesungen zu Kana
 
 Kanji-Aussprachegruppen verweisen direkt auf geordnete atomare Kana. Das Paket enthält keine ausgeblendeten `reading:kanji`-Vokabelkarten; eine Lesung wie `む` öffnet daher die Kana-Schreibeinheit statt einer gleich beschrifteten Vokabelkarte. Ausgeblendete `reading:pronunciation`-Datensätze sind vollständigen lexikalischen Wortlesungen vorbehalten und dürfen keine Kana-Beschriftung duplizieren.
+
+## Tief verzweigte Transformationen
+
+Verbtransformationssätze bilden nun tief verzweigte Pfade aus jeder kanonischen Grundkarte. Die Zweige umfassen höfliche Negativ- und Vergangenheitsformen, verneinte Vergangenheit und Verbindungsformen, Kausativ, Passiv, Potential, Volitional sowie mehrstufige Kausativ-Wunschketten. Jede Regel transformiert Schriftform und Aussprache unabhängig; lokalisierte Definitionsüberschreibungen erklären semantische Zweige. Adverbien bleiben unveränderliche kanonische Grundkarten, und keine erzeugte Form wird als Vokabeleintrag gespeichert.
