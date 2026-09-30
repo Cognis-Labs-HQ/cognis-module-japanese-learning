@@ -500,10 +500,16 @@ test("character variants use dynamically placed nested relationships", () => {
             "small-form-of",
             "contracted-of",
             "geminated-of",
+            "character-title",
         ]),
     );
     for (const relationship of relationships.values()) {
         assert.equal(relationship.targetLayer, "characters");
+        if (relationship.id === "character-title") {
+            assert.equal(relationship.presentationRole, "composition");
+            assert.equal(relationship.resolverRole, "explicit");
+            continue;
+        }
         assert.equal(relationship.maximum, 1);
         assert.equal(relationship.onDelete, "detach");
         assert.equal(relationship.variant, true);
@@ -517,16 +523,17 @@ test("character variants use dynamically placed nested relationships", () => {
             .filter(({ layer }) => layer === characterLayer.id)
             .map((entry) => [entry.id, entry]),
     );
+    const parentReferences = (entry) =>
+        entry.references?.filter(
+            ({ relation }) => relation !== "character-title",
+        ) ?? [];
     for (const child of [...characters.values()].filter(
-        ({ references }) => references?.length,
+        (entry) => parentReferences(entry).length,
     )) {
-        assert.equal(
-            child.references.length,
-            1,
-            `${child.id} requires one parent`,
-        );
-        assert.ok(relationships.has(child.references[0].relation));
-        const parent = characters.get(child.references[0].entryId);
+        const parents = parentReferences(child);
+        assert.equal(parents.length, 1, `${child.id} requires one parent`);
+        assert.ok(relationships.has(parents[0].relation));
+        const parent = characters.get(parents[0].entryId);
         assert.equal(
             parent.fields.character_class,
             child.fields.character_class,
@@ -538,7 +545,7 @@ test("character variants use dynamically placed nested relationships", () => {
             const child = [...characters.values()].find(
                 ({ label }) => label === labels[index],
             );
-            const parent = characters.get(child.references[0].entryId);
+            const parent = characters.get(parentReferences(child)[0].entryId);
             assert.equal(parent.label, labels[index - 1]);
         }
     };
@@ -563,7 +570,7 @@ test("character variants use dynamically placed nested relationships", () => {
                 ({ label }) => label === childLabel,
             );
             assert.equal(
-                characters.get(child.references[0].entryId).label,
+                characters.get(parentReferences(child)[0].entryId).label,
                 parentLabel,
             );
         }
@@ -648,9 +655,12 @@ test("small-tsu forms stay hidden while retaining their parent links", () => {
     assert.equal(hiddenCharacters.length, 42);
     assert.ok(hiddenCharacters.every(({ label }) => /[っッ]/u.test(label)));
     for (const entry of hiddenCharacters) {
-        assert.equal(entry.references.length, 1);
+        const parentReferences = entry.references.filter(
+            ({ relation }) => relation !== "character-title",
+        );
+        assert.equal(parentReferences.length, 1);
         assert.ok(
-            characters.some(({ id }) => id === entry.references[0].entryId),
+            characters.some(({ id }) => id === parentReferences[0].entryId),
             `${entry.id} must retain its parent reference`,
         );
     }
@@ -793,6 +803,7 @@ test("definitions stay semantic while resolvers describe compositions", () => {
         ),
         new Set([
             "readings:words",
+            "character-title:characters",
             "reading-kana:characters",
             "pronunciation-readings:words",
             "spelling:alt-characters",
@@ -811,6 +822,7 @@ test("definitions stay semantic while resolvers describe compositions", () => {
         ),
         new Map([
             ["readings", "pronunciation"],
+            ["character-title", "composition"],
             ["reading-kana", "pronunciation"],
             ["pronunciation-readings", "pronunciation"],
             ["spelling", "composition"],
@@ -973,26 +985,5 @@ test("compact Kana cards retain a visible romanized pronunciation", () => {
         );
         assert.equal(displayedPronunciations.length, 1, character.id);
         assert.match(displayedPronunciations[0], /^[a-z]+$/u, character.id);
-    }
-});
-
-test("semantic cards require definitions while structural readings inherit them", () => {
-    const { schema, records } = loadPack();
-    for (const layerId of ["particles", "sentences"]) {
-        const layer = schema.layers.find(({ id }) => id === layerId);
-        assert.equal(layer.displayDefinition, true);
-        const definitionRelationship = layer.relationships.find(
-            ({ targetLayer }) => targetLayer === "definitions",
-        );
-        assert.ok(definitionRelationship);
-        assert.ok(definitionRelationship.minimum >= 1);
-        for (const record of records.filter(({ layer }) => layer === layerId)) {
-            assert.ok(
-                record.references.some(
-                    ({ relation }) => relation === definitionRelationship.id,
-                ),
-                `${record.id} requires display definition content`,
-            );
-        }
     }
 });

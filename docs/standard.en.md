@@ -261,3 +261,7 @@ Atomic Kana keep Hepburn romanization for their own cards, but recursive pronunc
 ## Atomic Kana Reading Titles
 
 Every hidden `reading:kanji` Vocabulary record declares an explicit ordered `reading-title` composition to atomic Kana in addition to its complete `kana-spelling`. The title composition exactly reconstructs the reading and prevents the host's generic label resolver from substituting another hidden Vocabulary record with the same leading Kana. Thus opening `さん` continues to atomic `さ` and `ん`; it never detours through the hidden Kanji reading `さ` used by `小`.
+
+## Multi-Kana Titles and Small-Form Geometry
+
+Every multi-symbol Kana record declares an explicit `character-title` composition to its atomic Kana, preventing generic label matching from deep-linking to a same-labeled hidden Vocabulary reading. Compound stroke layouts allocate a narrower horizontal slot to small Kana such as `ゃ`, `ゅ`, `ょ`, and `っ`; full-size components retain the larger slot, so yōon and geminated practice patterns preserve their conventional relative sizes.

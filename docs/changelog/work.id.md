@@ -584,3 +584,9 @@ Setiap pelafalan lapisan atas dalam paket telah diaudit dan dikunci sebagai teks
 Komposisi judul Kana atomik berurutan yang eksplisit ditambahkan ke setiap rekaman bacaan Kanji tersembunyi. Bacaan multi-Kana seperti `さん` kini membuka `さ` dan `ん` secara langsung, sehingga host tidak dapat menggantikannya dengan kartu Kosakata bacaan Kanji `さ` tersembunyi terpisah yang digunakan oleh `小`. Relasi `kana-spelling` lengkap tetap dipertahankan untuk semantik pelafalan, sedangkan navigasi judul menjadi deterministik dan berakhir pada Kana.
 
 - [8c48fa7](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/8c48fa7)
+
+## Navigasi Kana Gabungan dan Geometri Bentuk Kecil
+
+Komposisi judul Kana atomik yang eksplisit ditambahkan ke setiap kartu Kana bersimbol banyak, sehingga Kana gabungan seperti `きょ` tidak lagi menaut dalam ke bacaan Kosakata tersembunyi dengan teks yang sama. Tata letak guratan gabungan dibangun ulang dengan ruang yang peka ukuran agar bentuk kecil seperti `ょ` mempertahankan proporsi yang terlihat lebih kecil di samping Kana berukuran penuh.
+
+- [4c33d9e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/4c33d9e)

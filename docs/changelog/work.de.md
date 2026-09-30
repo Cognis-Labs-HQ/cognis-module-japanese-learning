@@ -584,3 +584,9 @@ Alle paketierten Aussprachen höherer Ebenen wurden geprüft und auf vollständi
 Allen ausgeblendeten Kanji-Lesungsdatensätzen wurden ausdrückliche geordnete Titelzusammensetzungen aus atomaren Kana hinzugefügt. Eine mehrteilige Kana-Lesung wie `さん` öffnet nun direkt `さ` und `ん`, sodass der Host nicht mehr die separate ausgeblendete Kanji-Lesungs-Wortschatzkarte `さ` von `小` einsetzen kann. Die vollständigen `kana-spelling`-Beziehungen bleiben für die Aussprachebedeutung erhalten, während die Titelnavigation deterministisch bei Kana endet.
 
 - [8c48fa7](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/8c48fa7)
+
+## Navigation für zusammengesetzte Kana und Geometrie kleiner Formen
+
+Allen Kana-Karten mit mehreren Zeichen wurde eine ausdrückliche Titelzusammensetzung aus atomaren Kana hinzugefügt. Dadurch verweisen zusammengesetzte Kana wie `きょ` nicht mehr auf ausgeblendete Wortschatzlesungen mit demselben Text. Die Strichlayouts wurden mit größenabhängigen Bereichen neu aufgebaut, sodass kleine Formen wie `ょ` neben Kana normaler Größe ihre sichtbar verkleinerten Proportionen behalten.
+
+- [4c33d9e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/4c33d9e)

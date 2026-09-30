@@ -4,6 +4,7 @@ import process from "node:process";
 import { sampleSvgPath } from "../api/svg-path-sampler.js";
 
 const SOURCE_SIZE = 109;
+const SMALL_KANA = new Set([..."ぁぃぅぇぉゃゅょっゎァィゥェォャュョッヮヵヶ"]);
 const contentRoot = path.resolve("data/library/content");
 const sourceRoot = path.resolve(process.argv[2] ?? "");
 
@@ -17,7 +18,7 @@ function roundedCoordinate(value) {
     return Math.max(0, Math.min(1, Number(value.toFixed(4))));
 }
 
-async function characterStrokes(character, characterIndex, characterCount) {
+async function characterStrokes(character, characterIndex, characters) {
     const codePoint = character.codePointAt(0).toString(16).padStart(5, "0");
     const svg = await readFile(
         path.join(sourceRoot, `${codePoint}.svg`),
@@ -27,10 +28,18 @@ async function characterStrokes(character, characterIndex, characterCount) {
         ([, pathData]) => pathData,
     );
     if (!paths.length) throw new Error(`No strokes for U+${codePoint}`);
+    const rawWidths = characters.map((value) =>
+        SMALL_KANA.has(value) ? 0.35 : 0.65,
+    );
+    const totalWidth = rawWidths.reduce((sum, width) => sum + width, 0);
+    const widths = rawWidths.map((width) => width / totalWidth);
+    const offset = widths
+        .slice(0, characterIndex)
+        .reduce((sum, width) => sum + width, 0);
     return paths.map((pathData) => ({
         points: sampleSvgPath(pathData).map(({ x, y }, pointIndex) => ({
             x: roundedCoordinate(
-                (characterIndex + x / SOURCE_SIZE) / characterCount,
+                offset + (x / SOURCE_SIZE) * widths[characterIndex],
             ),
             y: roundedCoordinate(y / SOURCE_SIZE),
             time: pointIndex * 40,
@@ -43,11 +52,7 @@ async function strokePattern(label) {
     const strokes = [];
     for (const [characterIndex, character] of characters.entries()) {
         strokes.push(
-            ...(await characterStrokes(
-                character,
-                characterIndex,
-                characters.length,
-            )),
+            ...(await characterStrokes(character, characterIndex, characters)),
         );
     }
     return {

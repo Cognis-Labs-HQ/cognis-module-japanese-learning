@@ -261,3 +261,7 @@ Atomare Kana behalten die Hepburn-Umschrift für ihre eigenen Karten, bei der re
 ## Lesungstitel aus atomaren Kana
 
 Jeder ausgeblendete `reading:kanji`-Wortschatzeintrag deklariert zusätzlich zu seiner vollständigen `kana-spelling`-Form eine ausdrückliche geordnete `reading-title`-Zusammensetzung aus atomaren Kana. Die Titelzusammensetzung rekonstruiert die Lesung exakt und verhindert, dass der generische Label-Resolver des Hosts einen anderen ausgeblendeten Wortschatzeintrag mit demselben führenden Kana einsetzt. Beim Öffnen von `さん` geht es daher zu den atomaren Zeichen `さ` und `ん` weiter und niemals über die von `小` verwendete ausgeblendete Kanji-Lesung `さ`.
+
+## Mehrteilige Kana-Titel und Kleinform-Geometrie
+
+Jeder mehrteilige Kana-Datensatz deklariert eine ausdrückliche `character-title`-Zusammensetzung zu seinen atomaren Kana. Dadurch kann die generische Label-Suche nicht zu einer gleich beschrifteten ausgeblendeten Wortschatzlesung verlinken. Zusammengesetzte Strichmuster weisen kleinen Kana wie `ゃ`, `ゅ`, `ょ` und `っ` einen schmaleren horizontalen Bereich zu; vollgroße Bestandteile behalten den größeren Bereich, sodass Yōon- und Geminationsübungen ihre konventionellen Größenverhältnisse bewahren.

@@ -261,3 +261,7 @@ Kana atomik mempertahankan romanisasi Hepburn untuk kartunya sendiri, tetapi pen
 ## Judul Bacaan dari Kana Atomik
 
 Setiap rekaman Kosakata `reading:kanji` tersembunyi mendeklarasikan komposisi `reading-title` berurutan yang eksplisit menuju Kana atomik, selain `kana-spelling` lengkapnya. Komposisi judul merekonstruksi bacaan secara tepat dan mencegah resolver label generik host menggantinya dengan rekaman Kosakata tersembunyi lain yang memiliki Kana awal sama. Karena itu, membuka `さん` berlanjut ke `さ` dan `ん` atomik, dan tidak pernah berbelok melalui bacaan Kanji tersembunyi `さ` yang digunakan oleh `小`.
+
+## Judul Multi-Kana dan Geometri Bentuk Kecil
+
+Setiap rekaman Kana dengan beberapa simbol mendeklarasikan komposisi `character-title` eksplisit menuju Kana atomiknya, sehingga pencocokan label generik tidak dapat menaut dalam ke bacaan Kosakata tersembunyi dengan label sama. Tata letak pola goresan gabungan memberikan ruang horizontal yang lebih sempit kepada Kana kecil seperti `ゃ`, `ゅ`, `ょ`, dan `っ`; komponen berukuran penuh mempertahankan ruang lebih besar agar pola latihan yōon dan geminasi menjaga ukuran relatif konvensionalnya.

@@ -88,3 +88,34 @@ test("stroke metadata preserves KanjiVG attribution", () => {
         ],
     });
 });
+
+test("compound Kana preserve visibly smaller small-form components", () => {
+    const characters = loadLayer("characters");
+    const kyo = characters.find(({ label }) => label === "きょ");
+    const ki = characters.find(({ label }) => label === "き");
+    const smallYo = characters.find(({ label }) => label === "ょ");
+    const firstStrokeCount = ki.fields.stroke_pattern.strokes.length;
+    const componentBounds = (strokes) => {
+        const points = strokes.flatMap(({ points: values }) => values);
+        return {
+            width:
+                Math.max(...points.map(({ x }) => x)) -
+                Math.min(...points.map(({ x }) => x)),
+            height:
+                Math.max(...points.map(({ y }) => y)) -
+                Math.min(...points.map(({ y }) => y)),
+        };
+    };
+    const fullBounds = componentBounds(
+        kyo.fields.stroke_pattern.strokes.slice(0, firstStrokeCount),
+    );
+    const smallBounds = componentBounds(
+        kyo.fields.stroke_pattern.strokes.slice(firstStrokeCount),
+    );
+    assert.equal(
+        kyo.fields.stroke_pattern.strokes.length,
+        firstStrokeCount + smallYo.fields.stroke_pattern.strokes.length,
+    );
+    assert.ok(smallBounds.width < fullBounds.width * 0.7);
+    assert.ok(smallBounds.height < fullBounds.height);
+});

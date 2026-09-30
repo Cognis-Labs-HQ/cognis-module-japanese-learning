@@ -584,3 +584,9 @@ Audited every packaged higher-layer pronunciation and locked it to complete Japa
 Added explicit ordered atomic-Kana title compositions to every hidden Kanji-reading record. A multi-Kana reading such as `さん` now opens `さ` and `ん` directly, so the host cannot substitute the separate hidden `さ` Kanji-reading Vocabulary card used by `小`. Complete `kana-spelling` relationships remain intact for pronunciation semantics, while title navigation is deterministic and terminates at Kana.
 
 - [8c48fa7](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/8c48fa7)
+
+## Compound Kana Navigation and Small-Form Geometry
+
+Added explicit atomic-Kana title composition to every multi-symbol Kana card, preventing compound Kana such as `きょ` from deep-linking to same-text hidden Vocabulary readings. Rebuilt compound stroke layouts with size-aware slots so small forms such as `ょ` retain their visibly reduced proportions alongside full-size Kana.
+
+- [4c33d9e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/4c33d9e)

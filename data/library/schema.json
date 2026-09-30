@@ -1,6 +1,6 @@
 {
     "id": "japanese-core",
-    "version": 69,
+    "version": 70,
     "namespace": "ja",
     "language": "ja",
     "metadata": {
@@ -235,6 +235,23 @@
                     "onDelete": "detach",
                     "variant": true,
                     "child": true
+                },
+                {
+                    "id": "character-title",
+                    "targetLayer": "characters",
+                    "metadata": {
+                        "labels": {
+                            "de": "Kana-Titel",
+                            "en": "Kana Title",
+                            "id": "Judul Kana",
+                            "ja": "かなタイトル"
+                        }
+                    },
+                    "minimum": 0,
+                    "ordered": true,
+                    "onDelete": "restrict",
+                    "resolverRole": "explicit",
+                    "presentationRole": "composition"
                 }
             ],
             "grid": {

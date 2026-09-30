@@ -259,3 +259,34 @@ test("Kanji reading titles compose directly from atomic Kana", () => {
         );
     }
 });
+
+test("multi-Kana titles compose only from atomic Kana", () => {
+    const characterLayer = schema.layers.find(({ id }) => id === "characters");
+    const titleRelationship = characterLayer.relationships.find(
+        ({ id }) => id === "character-title",
+    );
+    assert.equal(titleRelationship.targetLayer, "characters");
+    assert.equal(titleRelationship.presentationRole, "composition");
+
+    for (const character of characters.filter(
+        ({ label }) => [...label].length > 1,
+    )) {
+        const titleReferences = character.references
+            .filter(({ relation }) => relation === "character-title")
+            .sort((left, right) => left.position - right.position);
+        assert.equal(
+            titleReferences
+                .map(({ entryId }) => recordsById.get(entryId).label)
+                .join(""),
+            character.label,
+            character.id,
+        );
+        assert.ok(
+            titleReferences.every(
+                ({ entryId }) =>
+                    recordsById.get(entryId).fields.character_class,
+            ),
+            character.id,
+        );
+    }
+});
