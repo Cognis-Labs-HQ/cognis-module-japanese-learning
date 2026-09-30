@@ -572,3 +572,9 @@ Das Japanisch-Paket wurde an den neuesten Cognis-Transformationsvertrag angepass
 Aussprachedetails von Sätzen verknüpfen jetzt jedes geordnete Lesungssegment direkt mit seiner sichtbaren Wortschatz- oder Partikelkarte. Die 25 ausgeblendeten Wortschatz-Wrapper für vollständige Sätze und die Satzbeziehung `pronunciation-readings` wurden entfernt, sodass `はなはとてもきれいです` die Einträge `花`, `は`, `とても`, `きれい` und `です` einzeln öffnet, statt eine einzige Wortschatzkarte für den vollständigen Satz darzustellen.
 
 - [0002eee](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/0002eee)
+
+## Schutz für vollständige japanische Aussprache
+
+Alle paketierten Aussprachen höherer Ebenen wurden geprüft und auf vollständigen japanischen Text festgelegt, einschließlich der vollständigen Satzrekonstruktion. Die gemeldete gemischte Umschrift und das fehlende letzte Segment entstehen in Cognis PR #226: Die rekursive Ableitung liest das Hepburn-Feld der Kana-Karte vor ihrer atomaren Beschriftung, und das Host-Popup muss die vollständige gruppierte Lesespanne erhalten. Der genaue vorgelagerte Basisfall und die Umbruchregression wurden festgehalten, ohne unsichere Überschreibungen der Host-Oberfläche in dieses externe Paket einzubauen.
+
+- [0906392](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/0906392)

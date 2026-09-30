@@ -253,3 +253,7 @@ Die Wortschatzsuche akzeptiert begrenzte japanische oder lateinische Suchbegriff
 ## Grundformen von Verben, Adverbien und Transformationen
 
 Die Wortschatzebene trennt markierte Grundformen von Verben und Adverbien in anbieterseitig benannte Transformationsansichten. Jedes Verb trägt das Tag `verb` und genau ein Konjugationsfamilien-Tag; das Schema unterscheidet Ichidan, reguläre Godan-Endungen, die Sondermuster `行く` und `ある` sowie das unregelmäßige `来る`. Deterministische Regeln leiten Höflichkeits-, Verneinungs-, Vergangenheits- und Te-Formen zur Anzeigezeit ab. Japanische Adverbien tragen nur `adverb` und bleiben unverändert, sodass ihre Transformationsansicht die kanonische Grundkarte ohne erfundene Flexionen zeigt. Das Inhaltspaket speichert niemals erzeugte Verbformen oder abgeleitete Adverbkarten.
+
+## Vollständige Darstellung japanischer Aussprache
+
+Atomare Kana behalten die Hepburn-Umschrift für ihre eigenen Karten, bei der rekursiven Ausspracheableitung muss jedoch die jeweilige Kana-Beschriftung verwendet werden. Jede Aussprache von Kanji, Wortschatz, Partikeln und Sätzen bleibt vom Anfang bis zum Ende japanischer Text. Segmentierte Satzlesungen müssen den vollständig zusammengesetzten Wert erhalten und sichtbar darstellen; das Titellayout darf ihn umbrechen oder verkleinern, aber niemals den letzten Bestandteil abschneiden.

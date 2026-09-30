@@ -572,3 +572,9 @@ Aligned the Japanese pack with the latest Cognis transformation contract. Vocabu
 Sentence pronunciation details now link each ordered reading segment directly to its visible Vocabulary or Particle card. Removed the 25 hidden whole-sentence Vocabulary wrappers and the sentence-level `pronunciation-readings` relationship, so `はなはとてもきれいです` opens `花`, `は`, `とても`, `きれい`, and `です` independently instead of presenting one Vocabulary card for the complete sentence.
 
 - [0002eee](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/0002eee)
+
+## Complete Japanese Pronunciation Guard
+
+Audited every packaged higher-layer pronunciation and locked it to complete Japanese text, including full sentence reconstruction. The reported mixed romanization and missing final segment originate in Cognis PR #226: recursive derivation reads the Kana card's Hepburn field before its atomic label, and the host popup must preserve the complete grouped reading span. Recorded the exact upstream base-case and wrapping regression while keeping this external pack free of unsafe host UI overrides.
+
+- [0906392](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/0906392)

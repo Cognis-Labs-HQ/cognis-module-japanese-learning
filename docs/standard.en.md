@@ -253,3 +253,7 @@ Vocabulary lookup accepts bounded Japanese or Latin search terms, including mult
 ## Base Verbs, Adverbs, and Transformations
 
 The Vocabulary layer separates tagged base-form verbs and adverbs into provider-named transformation views. Every verb carries the `verb` tag plus exactly one conjugation-family tag; the schema distinguishes ichidan, regular godan endings, the exceptional `行く` and `ある` patterns, and irregular `来る`. Deterministic rules derive polite, negative, past, and te forms at presentation time. Japanese adverbs carry only `adverb` and remain invariant, so their transformation view shows the canonical base card without fabricated inflections. The content pack never stores generated verb forms or derived adverb cards.
+
+## Complete Japanese Pronunciation Rendering
+
+Atomic Kana keep Hepburn romanization for their own cards, but recursive pronunciation derivation must use each Kana label. Every Kanji, Vocabulary, Particle, and Sentence pronunciation remains Japanese text from beginning to end. Segmented sentence readings must preserve and visibly render the complete concatenated value; title layout may wrap or shrink it but must never clip its final constituent.

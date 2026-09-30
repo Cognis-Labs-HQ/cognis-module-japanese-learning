@@ -253,3 +253,7 @@ Pencarian Kosakata menerima istilah pencarian bahasa Jepang atau Latin yang diba
 ## Verba Dasar, Adverbia, dan Transformasi
 
 Lapisan Kosakata memisahkan verba dan adverbia bentuk dasar bertag ke tampilan transformasi bernama penyedia. Setiap verba memiliki tag `verb` beserta tepat satu tag keluarga konjugasi; skema membedakan ichidan, akhiran godan reguler, pola khusus `行く` dan `ある`, serta `来る` tak beraturan. Aturan deterministik menurunkan bentuk sopan, negatif, lampau, dan te saat penyajian. Adverbia bahasa Jepang hanya memiliki `adverb` dan tidak berubah, sehingga tampilan transformasinya menunjukkan kartu dasar kanonis tanpa infleksi buatan. Paket konten tidak pernah menyimpan bentuk verba hasil transformasi atau kartu adverbia turunan.
+
+## Perenderan Pelafalan Jepang yang Lengkap
+
+Kana atomik mempertahankan romanisasi Hepburn untuk kartunya sendiri, tetapi penurunan pelafalan rekursif harus memakai label Kana. Setiap pelafalan Kanji, Kosakata, Partikel, dan Kalimat tetap berupa teks Jepang dari awal hingga akhir. Bacaan kalimat tersegmentasi harus mempertahankan dan menampilkan nilai gabungan lengkap; tata letak judul boleh membungkus atau mengecilkannya, tetapi tidak boleh memotong konstituen terakhir.

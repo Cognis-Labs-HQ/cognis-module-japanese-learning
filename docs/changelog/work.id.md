@@ -572,3 +572,9 @@ Paket bahasa Jepang diselaraskan dengan kontrak transformasi Cognis terbaru. Kos
 Detail pelafalan kalimat kini menautkan setiap segmen bacaan berurutan langsung ke kartu Kosakata atau Partikel yang terlihat. Sebanyak 25 pembungkus Kosakata kalimat lengkap tersembunyi dan relasi tingkat kalimat `pronunciation-readings` telah dihapus, sehingga `はなはとてもきれいです` membuka `花`, `は`, `とても`, `きれい`, dan `です` secara terpisah, bukan menampilkan satu kartu Kosakata untuk seluruh kalimat.
 
 - [0002eee](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/0002eee)
+
+## Perlindungan Pelafalan Jepang Lengkap
+
+Setiap pelafalan lapisan atas dalam paket telah diaudit dan dikunci sebagai teks Jepang lengkap, termasuk rekonstruksi kalimat penuh. Romanisasi campuran dan segmen akhir yang hilang berasal dari Cognis PR #226: penurunan rekursif membaca bidang Hepburn kartu Kana sebelum label atomiknya, dan popup host harus mempertahankan rentang bacaan berkelompok secara lengkap. Kasus dasar upstream dan regresi pembungkusan yang tepat telah dicatat tanpa menambahkan penimpaan antarmuka host yang tidak aman ke paket eksternal ini.
+
+- [0906392](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/0906392)

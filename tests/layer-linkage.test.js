@@ -331,3 +331,29 @@ test("authored pronunciation paths are acyclic and end at Kana", () => {
         visit(record);
     }
 });
+
+test("higher-layer pronunciations stay Japanese and complete", () => {
+    const records = loadRecords();
+    const japaneseReading =
+        /^[\p{Script=Han}\p{Script=Hiragana}\p{Script=Katakana}々〆ヶー]+$/u;
+    for (const record of records.filter(
+        ({ layer }) => layer !== "characters",
+    )) {
+        for (const pronunciation of record.fields?.pronunciation ?? []) {
+            assert.match(pronunciation, japaneseReading, record.id);
+            assert.doesNotMatch(pronunciation, /[a-z]/iu, record.id);
+        }
+    }
+
+    const sentence = records.find(
+        ({ id }) => id === "ja:sentence:watashi-mizu-nomu",
+    );
+    assert.equal(sentence.fields.pronunciation[0], "わたしはみずをのむ");
+    assert.equal(
+        derivedPronunciation(
+            sentence,
+            new Map(records.map((record) => [record.id, record])),
+        ),
+        "わたしはみずをのむ",
+    );
+});
