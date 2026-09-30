@@ -46,3 +46,51 @@ test("semantic cards require definitions while structural readings inherit them"
         }
     }
 });
+
+test("layer semantics reject sentence and particle structures in Vocabulary", () => {
+    const byId = new Map(records.map((record) => [record.id, record]));
+    const vocabulary = records.filter(({ layer }) => layer === "words");
+    const sentences = records.filter(({ layer }) => layer === "sentences");
+    const sentencePronunciations = new Set(
+        sentences.flatMap(({ fields }) => fields.pronunciation ?? []),
+    );
+
+    for (const record of vocabulary) {
+        assert.notEqual(record.class, "composite", record.id);
+        assert.notEqual(record.class, "particle", record.id);
+        assert.ok(
+            !sentencePronunciations.has(record.label),
+            `${record.id} duplicates a complete sentence pronunciation`,
+        );
+        for (const reference of record.references ?? []) {
+            assert.ok(
+                !["particles", "sentences"].includes(
+                    byId.get(reference.entryId)?.layer,
+                ),
+                `${record.id} contains ${reference.entryId}`,
+            );
+        }
+    }
+
+    for (const sentence of sentences) {
+        assert.equal(sentence.class, "composite", sentence.id);
+        assert.notEqual(sentence.hidden, true, sentence.id);
+        assert.equal(
+            sentence.referenceGroups?.["pronunciation-readings"],
+            undefined,
+            sentence.id,
+        );
+        for (const reference of sentence.references ?? []) {
+            if (reference.relation === "words") {
+                assert.equal(byId.get(reference.entryId)?.layer, "words");
+                assert.notEqual(
+                    byId.get(reference.entryId)?.hidden,
+                    true,
+                    reference.entryId,
+                );
+            }
+            if (reference.relation === "particles")
+                assert.equal(byId.get(reference.entryId)?.layer, "particles");
+        }
+    }
+});

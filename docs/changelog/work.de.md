@@ -590,3 +590,9 @@ Allen ausgeblendeten Kanji-Lesungsdatensätzen wurden ausdrückliche geordnete T
 Allen Kana-Karten mit mehreren Zeichen wurde eine ausdrückliche Titelzusammensetzung aus atomaren Kana hinzugefügt. Dadurch verweisen zusammengesetzte Kana wie `きょ` nicht mehr auf ausgeblendete Wortschatzlesungen mit demselben Text. Die Strichlayouts wurden mit größenabhängigen Bereichen neu aufgebaut, sodass kleine Formen wie `ょ` neben Kana normaler Größe ihre sichtbar verkleinerten Proportionen behalten.
 
 - [4c33d9e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/4c33d9e)
+
+## Layergrenzen für Satzaussprache
+
+Die Satzaussprache ist nun reiner Anzeigetext; Quellen für Titeldetailverknüpfungen zu Vokabeln und Partikeln wurden entfernt. Neue strukturelle Regressionstests weisen vollständige Satzaussprachen, Satzkomposite, Partikelklassen, Partikelverweise und ausgeblendete Satzbestandteile im Vokabellayer zurück.
+
+- [5d1336e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/5d1336e)

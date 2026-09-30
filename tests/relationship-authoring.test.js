@@ -164,15 +164,12 @@ test("Kanji readings and particles terminate at Kana", () => {
     assert.equal(labelsFor(ga, ["kana-spelling"]), "が");
 });
 
-test("sentence pronunciations link to each visible constituent card", () => {
+test("sentence pronunciations remain display text instead of Vocabulary links", () => {
     const sentenceLayer = schema.layers.find(({ id }) => id === "sentences");
     const pronunciation = sentenceLayer.fields.find(
         ({ id }) => id === "pronunciation",
     );
-    assert.deepEqual(pronunciation.input.linkRelationships, [
-        "words",
-        "particles",
-    ]);
+    assert.equal(pronunciation.input.linkRelationships, undefined);
     assert.equal(
         sentenceLayer.relationships.some(
             ({ id }) => id === "pronunciation-readings",
@@ -181,25 +178,22 @@ test("sentence pronunciations link to each visible constituent card", () => {
     );
 
     const sentences = readLayer("sentences");
-    const sentenceTargets = new Map(
-        [...words, ...particles].map((entry) => [entry.id, entry]),
-    );
     for (const sentence of sentences) {
         assert.equal(
             sentence.referenceGroups?.["pronunciation-readings"],
             undefined,
             sentence.id,
         );
-        const linkedPronunciation = sentence.references
+        const constituentPronunciation = sentence.references
             .filter(({ relation }) => ["words", "particles"].includes(relation))
             .sort((left, right) => left.position - right.position)
             .map(
                 ({ entryId }) =>
-                    sentenceTargets.get(entryId).fields.pronunciation[0],
+                    recordsById.get(entryId).fields.pronunciation[0],
             )
             .join("");
         assert.equal(
-            linkedPronunciation,
+            constituentPronunciation,
             sentence.fields.pronunciation[0],
             sentence.id,
         );

@@ -222,3 +222,7 @@ Die Wortschatzsuche akzeptiert außerdem begrenzte englische Suchbegriffe wie `m
 ## Transformationsansichten für Verben und Adverbien
 
 Der Wortschatz trennt jetzt Grundformen von Verben und Adverbien von gewöhnlichen Karten. Geprüfte Konjugationsfamilien-Tags leiten Höflichkeits-, Verneinungs-, Vergangenheits- und Te-Formen für Ichidan-, Godan-, Ausnahme- und unregelmäßige Verben ab, ohne doppelte Lerndatensätze anzulegen. Japanische Adverbien bleiben unverändert und zeigen nur ihre Grundkarte; erzeugte Formen dienen ausschließlich der Darstellung.
+
+## Layergrenze für Satzaussprache
+
+Die Satzaussprache ist ausschließlich Anzeigetext und deklariert keine `linkRelationships`. Geordnete Beziehungen zu `words` und `particles` beschreiben nur die Satzzusammensetzung; sie dürfen eine Satzlesung niemals in Vokabel- oder Partikel-Titeldetailkarten umwandeln, und im Vokabellayer darf kein Aussprachedatensatz auf Satzebene gespeichert werden.

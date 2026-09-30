@@ -265,3 +265,7 @@ Every hidden `reading:kanji` Vocabulary record declares an explicit ordered `rea
 ## Multi-Kana Titles and Small-Form Geometry
 
 Every multi-symbol Kana record declares an explicit `character-title` composition to its atomic Kana, preventing generic label matching from deep-linking to a same-labeled hidden Vocabulary reading. Compound stroke layouts allocate a narrower horizontal slot to small Kana such as `ゃ`, `ゅ`, `ょ`, and `っ`; full-size components retain the larger slot, so yōon and geminated practice patterns preserve their conventional relative sizes.
+
+## Sentence pronunciation layer boundary
+
+Sentence pronunciation is display-only text and declares no `linkRelationships`. Ordered `words` and `particles` relationships describe sentence composition only; they must never turn a sentence reading into Vocabulary or Particle title-detail cards, and no sentence-level pronunciation record may be stored in the Vocabulary layer.

@@ -222,3 +222,7 @@ Pencarian Kosakata juga menerima istilah bahasa Inggris yang dibatasi seperti `m
 ## Tampilan transformasi verba dan adverbia
 
 Kosakata kini memisahkan verba dan adverbia bentuk dasar dari kartu biasa. Tag keluarga konjugasi yang telah ditinjau menurunkan bentuk sopan, negatif, lampau, dan te untuk verba ichidan, godan, khusus, dan tak beraturan tanpa membuat rekaman belajar duplikat. Adverbia bahasa Jepang tetap tidak berubah dan hanya menampilkan kartu dasarnya; bentuk yang dihasilkan hanya untuk penyajian.
+
+## Batas lapisan pelafalan kalimat
+
+Pelafalan kalimat hanya berupa teks tampilan dan tidak mendeklarasikan `linkRelationships`. Relasi `words` dan `particles` yang berurutan hanya menjelaskan komposisi kalimat; relasi tersebut tidak boleh mengubah bacaan kalimat menjadi kartu detail judul Kosakata atau Partikel, dan rekaman pelafalan tingkat kalimat tidak boleh disimpan di lapisan Kosakata.

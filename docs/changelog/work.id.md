@@ -590,3 +590,9 @@ Komposisi judul Kana atomik berurutan yang eksplisit ditambahkan ke setiap rekam
 Komposisi judul Kana atomik yang eksplisit ditambahkan ke setiap kartu Kana bersimbol banyak, sehingga Kana gabungan seperti `きょ` tidak lagi menaut dalam ke bacaan Kosakata tersembunyi dengan teks yang sama. Tata letak guratan gabungan dibangun ulang dengan ruang yang peka ukuran agar bentuk kecil seperti `ょ` mempertahankan proporsi yang terlihat lebih kecil di samping Kana berukuran penuh.
 
 - [4c33d9e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/4c33d9e)
+
+## Batas Lapisan Pelafalan Kalimat
+
+Pelafalan kalimat kini hanya berupa teks tampilan dengan menghapus sumber tautan detail judul Kosakata dan Partikel. Cakupan regresi struktural baru menolak pelafalan kalimat lengkap, komposit kalimat, kelas partikel, referensi partikel, dan unsur kalimat tersembunyi dari lapisan Kosakata.
+
+- [5d1336e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/5d1336e)
