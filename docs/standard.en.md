@@ -128,7 +128,7 @@ Compositions now use the closest available records: `日本語` links to the wor
 
 A Kanji pronunciation field must link to one dedicated Vocabulary record per complete reading. Every reading-only record must be `hidden: true` and must reconstruct itself from atomic Kana through `reading-kana`; ordinary Vocabulary records must remain visible.
 
-A Kanji with one pronunciation links directly to ordered atomic Kana. A Kanji with multiple pronunciations uses exactly one hidden `reading:kanji` Vocabulary record per reading; that record links its title to the single source Kanji through `spelling` and reconstructs its pronunciation through ordered `reading-kana`. It carries its own definitions only when its meaning is narrower than the source Kanji. Never create a reading record for a concatenated compound pronunciation such as `せんせい`; compound words reuse separate segments such as `せん` and `せい`.
+A Kanji with one pronunciation links directly to ordered atomic Kana. A Kanji with multiple pronunciations uses exactly one hidden `reading:kanji` Vocabulary record per reading; that record links its title to the single source Kanji through `spelling` and reconstructs its pronunciation through ordered `reading-kana`. It carries direct definition links so pronunciation deep links remain self-contained: reuse the source Kanji definitions when meanings are identical, and use reading-specific definitions when the reading is narrower. Never create a reading record for a concatenated compound pronunciation such as `せんせい`; compound words reuse separate segments such as `せん` and `せい`.
 
 ## Contextual Reading Definitions
 
@@ -140,7 +140,7 @@ Use multiple definition references only when one lexical record genuinely has mu
 
 ## Complete sentence-to-Kana traversal
 
-A Kanji with one pronunciation links directly to ordered atomic Kana. A Kanji with multiple pronunciations uses exactly one hidden `reading:kanji` Vocabulary record per reading; that record links its title to the single source Kanji through `spelling` and reconstructs its pronunciation through ordered `reading-kana`. It carries its own definitions only when its meaning is narrower than the source Kanji. Never create a reading record for a concatenated compound pronunciation such as `せんせい`; compound words reuse separate segments such as `せん` and `せい`.
+A Kanji with one pronunciation links directly to ordered atomic Kana. A Kanji with multiple pronunciations uses exactly one hidden `reading:kanji` Vocabulary record per reading; that record links its title to the single source Kanji through `spelling` and reconstructs its pronunciation through ordered `reading-kana`. It carries direct definition links so pronunciation deep links remain self-contained: reuse the source Kanji definitions when meanings are identical, and use reading-specific definitions when the reading is narrower. Never create a reading record for a concatenated compound pronunciation such as `せんせい`; compound words reuse separate segments such as `せん` and `せい`.
 
 ## Host-normalized record controls
 
@@ -152,7 +152,7 @@ Use `word-spelling` for a meaningful multi-Kana reading segment and `reading-kan
 
 ## Unique Used By parents
 
-A Kanji with one pronunciation links directly to ordered atomic Kana. A Kanji with multiple pronunciations uses exactly one hidden `reading:kanji` Vocabulary record per reading; that record links its title to the single source Kanji through `spelling` and reconstructs its pronunciation through ordered `reading-kana`. It carries its own definitions only when its meaning is narrower than the source Kanji. Never create a reading record for a concatenated compound pronunciation such as `せんせい`; compound words reuse separate segments such as `せん` and `せい`.
+A Kanji with one pronunciation links directly to ordered atomic Kana. A Kanji with multiple pronunciations uses exactly one hidden `reading:kanji` Vocabulary record per reading; that record links its title to the single source Kanji through `spelling` and reconstructs its pronunciation through ordered `reading-kana`. It carries direct definition links so pronunciation deep links remain self-contained: reuse the source Kanji definitions when meanings are identical, and use reading-specific definitions when the reading is narrower. Never create a reading record for a concatenated compound pronunciation such as `せんせい`; compound words reuse separate segments such as `せん` and `せい`.
 
 ## Sentence pronunciation graph
 
@@ -160,7 +160,7 @@ A sentence pronunciation field links through `words` and `particles` to every or
 
 ## Acyclic traversal and lexical readings
 
-A Kanji with one pronunciation links directly to ordered atomic Kana. A Kanji with multiple pronunciations uses exactly one hidden `reading:kanji` Vocabulary record per reading; that record links its title to the single source Kanji through `spelling` and reconstructs its pronunciation through ordered `reading-kana`. It carries its own definitions only when its meaning is narrower than the source Kanji. Never create a reading record for a concatenated compound pronunciation such as `せんせい`; compound words reuse separate segments such as `せん` and `せい`.
+A Kanji with one pronunciation links directly to ordered atomic Kana. A Kanji with multiple pronunciations uses exactly one hidden `reading:kanji` Vocabulary record per reading; that record links its title to the single source Kanji through `spelling` and reconstructs its pronunciation through ordered `reading-kana`. It carries direct definition links so pronunciation deep links remain self-contained: reuse the source Kanji definitions when meanings are identical, and use reading-specific definitions when the reading is narrower. Never create a reading record for a concatenated compound pronunciation such as `せんせい`; compound words reuse separate segments such as `せん` and `せい`.
 
 ## Direct Kana Composition for Reading Titles
 
@@ -168,7 +168,7 @@ Every hidden pronunciation record composes its complete title directly from orde
 
 ## Canonical Reading Graph
 
-A Kanji with one pronunciation links directly to ordered atomic Kana. A Kanji with multiple pronunciations uses exactly one hidden `reading:kanji` Vocabulary record per reading; that record links its title to the single source Kanji through `spelling` and reconstructs its pronunciation through ordered `reading-kana`. It carries its own definitions only when its meaning is narrower than the source Kanji. Never create a reading record for a concatenated compound pronunciation such as `せんせい`; compound words reuse separate segments such as `せん` and `せい`.
+A Kanji with one pronunciation links directly to ordered atomic Kana. A Kanji with multiple pronunciations uses exactly one hidden `reading:kanji` Vocabulary record per reading; that record links its title to the single source Kanji through `spelling` and reconstructs its pronunciation through ordered `reading-kana`. It carries direct definition links so pronunciation deep links remain self-contained: reuse the source Kanji definitions when meanings are identical, and use reading-specific definitions when the reading is narrower. Never create a reading record for a concatenated compound pronunciation such as `せんせい`; compound words reuse separate segments such as `せん` and `せい`.
 
 ## Kanji-to-Kana Usage Dependencies
 
@@ -184,7 +184,7 @@ Set the sentence pronunciation field's `input.linkRelationships` to `["words", "
 
 ## Vocabulary-owned pronunciation boundaries
 
-A Kanji with one pronunciation links directly to ordered atomic Kana. A Kanji with multiple pronunciations uses exactly one hidden `reading:kanji` Vocabulary record per reading; that record links its title to the single source Kanji through `spelling` and reconstructs its pronunciation through ordered `reading-kana`. It carries its own definitions only when its meaning is narrower than the source Kanji. Never create a reading record for a concatenated compound pronunciation such as `せんせい`; compound words reuse separate segments such as `せん` and `せい`.
+A Kanji with one pronunciation links directly to ordered atomic Kana. A Kanji with multiple pronunciations uses exactly one hidden `reading:kanji` Vocabulary record per reading; that record links its title to the single source Kanji through `spelling` and reconstructs its pronunciation through ordered `reading-kana`. It carries direct definition links so pronunciation deep links remain self-contained: reuse the source Kanji definitions when meanings are identical, and use reading-specific definitions when the reading is narrower. Never create a reading record for a concatenated compound pronunciation such as `せんせい`; compound words reuse separate segments such as `せん` and `せい`.
 
 ## Complete sentence pronunciation links
 
@@ -214,9 +214,9 @@ For every pronunciation-bearing sentence and Kanji, replay the host alias-compos
 
 ## Current recursive pronunciation contract
 
-A Kanji with one pronunciation links directly to ordered atomic Kana. A Kanji with multiple pronunciations uses exactly one hidden `reading:kanji` Vocabulary record per reading; that record links its title to the single source Kanji through `spelling` and reconstructs its pronunciation through ordered `reading-kana`. It carries its own definitions only when its meaning is narrower than the source Kanji. Never create a reading record for a concatenated compound pronunciation such as `せんせい`; compound words reuse separate segments such as `せん` and `せい`.
+A Kanji with one pronunciation links directly to ordered atomic Kana. A Kanji with multiple pronunciations uses exactly one hidden `reading:kanji` Vocabulary record per reading; that record links its title to the single source Kanji through `spelling` and reconstructs its pronunciation through ordered `reading-kana`. It carries direct definition links so pronunciation deep links remain self-contained: reuse the source Kanji definitions when meanings are identical, and use reading-specific definitions when the reading is narrower. Never create a reading record for a concatenated compound pronunciation such as `せんせい`; compound words reuse separate segments such as `せん` and `せい`.
 
-A Kanji with one pronunciation links directly to ordered atomic Kana. A Kanji with multiple pronunciations uses exactly one hidden `reading:kanji` Vocabulary record per reading; that record links its title to the single source Kanji through `spelling` and reconstructs its pronunciation through ordered `reading-kana`. It carries its own definitions only when its meaning is narrower than the source Kanji. Never create a reading record for a concatenated compound pronunciation such as `せんせい`; compound words reuse separate segments such as `せん` and `せい`.
+A Kanji with one pronunciation links directly to ordered atomic Kana. A Kanji with multiple pronunciations uses exactly one hidden `reading:kanji` Vocabulary record per reading; that record links its title to the single source Kanji through `spelling` and reconstructs its pronunciation through ordered `reading-kana`. It carries direct definition links so pronunciation deep links remain self-contained: reuse the source Kanji definitions when meanings are identical, and use reading-specific definitions when the reading is narrower. Never create a reading record for a concatenated compound pronunciation such as `せんせい`; compound words reuse separate segments such as `せん` and `せい`.
 
 ## Complete pronunciation paths
 
@@ -232,7 +232,7 @@ Relationships, never same-label discovery, define card traversal. A Vocabulary r
 
 ## Kanji pronunciation coverage
 
-A Kanji with one pronunciation links directly to ordered atomic Kana. A Kanji with multiple pronunciations uses exactly one hidden `reading:kanji` Vocabulary record per reading; that record links its title to the single source Kanji through `spelling` and reconstructs its pronunciation through ordered `reading-kana`. It carries its own definitions only when its meaning is narrower than the source Kanji. Never create a reading record for a concatenated compound pronunciation such as `せんせい`; compound words reuse separate segments such as `せん` and `せい`.
+A Kanji with one pronunciation links directly to ordered atomic Kana. A Kanji with multiple pronunciations uses exactly one hidden `reading:kanji` Vocabulary record per reading; that record links its title to the single source Kanji through `spelling` and reconstructs its pronunciation through ordered `reading-kana`. It carries direct definition links so pronunciation deep links remain self-contained: reuse the source Kanji definitions when meanings are identical, and use reading-specific definitions when the reading is narrower. Never create a reading record for a concatenated compound pronunciation such as `せんせい`; compound words reuse separate segments such as `せん` and `せい`.
 
 ## Reviewed location and manner batch
 
@@ -260,7 +260,7 @@ Atomic Kana keep Hepburn romanization for their own cards, but recursive pronunc
 
 ## Atomic Kana Reading Titles
 
-A Kanji with one pronunciation links directly to ordered atomic Kana. A Kanji with multiple pronunciations uses exactly one hidden `reading:kanji` Vocabulary record per reading; that record links its title to the single source Kanji through `spelling` and reconstructs its pronunciation through ordered `reading-kana`. It carries its own definitions only when its meaning is narrower than the source Kanji. Never create a reading record for a concatenated compound pronunciation such as `せんせい`; compound words reuse separate segments such as `せん` and `せい`.
+A Kanji with one pronunciation links directly to ordered atomic Kana. A Kanji with multiple pronunciations uses exactly one hidden `reading:kanji` Vocabulary record per reading; that record links its title to the single source Kanji through `spelling` and reconstructs its pronunciation through ordered `reading-kana`. It carries direct definition links so pronunciation deep links remain self-contained: reuse the source Kanji definitions when meanings are identical, and use reading-specific definitions when the reading is narrower. Never create a reading record for a concatenated compound pronunciation such as `せんせい`; compound words reuse separate segments such as `せん` and `せい`.
 
 ## Multi-Kana Titles and Small-Form Geometry
 
@@ -272,7 +272,7 @@ Sentence pronunciation links each ordered reading segment to its existing visibl
 
 ## Selective Kanji reading intermediates
 
-A Kanji with one pronunciation links directly to ordered atomic Kana. A Kanji with multiple pronunciations uses exactly one hidden `reading:kanji` Vocabulary record per reading; that record links its title to the single source Kanji through `spelling` and reconstructs its pronunciation through ordered `reading-kana`. It carries its own definitions only when its meaning is narrower than the source Kanji. Never create a reading record for a concatenated compound pronunciation such as `せんせい`; compound words reuse separate segments such as `せん` and `せい`.
+A Kanji with one pronunciation links directly to ordered atomic Kana. A Kanji with multiple pronunciations uses exactly one hidden `reading:kanji` Vocabulary record per reading; that record links its title to the single source Kanji through `spelling` and reconstructs its pronunciation through ordered `reading-kana`. It carries direct definition links so pronunciation deep links remain self-contained: reuse the source Kanji definitions when meanings are identical, and use reading-specific definitions when the reading is narrower. Never create a reading record for a concatenated compound pronunciation such as `せんせい`; compound words reuse separate segments such as `せん` and `せい`.
 
 ## Deep branching transformations
 

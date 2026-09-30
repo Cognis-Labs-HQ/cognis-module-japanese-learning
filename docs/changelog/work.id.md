@@ -614,3 +614,9 @@ Paket Jepang diselaraskan dengan kontrak pohon transformasi tersusun Cognis. Sem
 Satu kartu Kosakata bacaan tersembunyi per pelafalan dipulihkan hanya untuk Kanji yang memiliki beberapa bacaan; satu-satunya Kanji dengan satu bacaan tetap menaut langsung ke Kana atomik. Setiap perantara menautkan judulnya ke tepat satu Kanji sumber, merekonstruksi pelafalannya dari Kana atomik, dan dapat memiliki definisi tersendiri bila maknanya lebih sempit. Pembungkus Kana kata lengkap seperti `せんせい` dihapus; bacaan `先生` kini tersusun dari perantara `せん` dan `せい` yang terpisah.
 
 - [91488aa](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/91488aa)
+
+## Definisi Bacaan yang Mandiri
+
+Tautan definisi langsung ditambahkan ke setiap rekaman Kosakata bacaan Kanji tersembunyi agar pembukaan bacaan dari tautan dalam pelafalan menampilkan makna yang sama dengan pembukaan melalui bagian Digunakan Oleh pada kartu Kanji. Bacaan menggunakan kembali definisi Kanji sumber bila maknanya sama dan tetap dapat memiliki definisi khusus bila maknanya lebih sempit.
+
+- [b0a83fb](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/b0a83fb)

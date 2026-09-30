@@ -216,13 +216,7 @@ test("Kanji reading Vocabulary belongs only to multi-reading Kanji", () => {
             .filter(({ relation }) => relation === "definitions")
             .map(({ entryId }) => entryId)
             .sort();
-        if (readingDefinitions.length) {
-            const sourceDefinitions = source.references
-                .filter(({ relation }) => relation === "definitions")
-                .map(({ entryId }) => entryId)
-                .sort();
-            assert.notDeepEqual(readingDefinitions, sourceDefinitions);
-        }
+        assert.ok(readingDefinitions.length > 0, reading.id);
     }
 
     const compoundPronunciations = new Set(
@@ -237,6 +231,19 @@ test("Kanji reading Vocabulary belongs only to multi-reading Kanji", () => {
     );
     assert.ok(!readings.some(({ label }) => compoundPronunciations.has(label)));
     assert.ok(!readings.some(({ label }) => label === "せんせい"));
+
+    const hana = readings.find(({ label }) => label === "はな");
+    const hanaSource = recordsById.get(
+        hana.references.find(({ relation }) => relation === "spelling").entryId,
+    );
+    assert.deepEqual(
+        hana.references
+            .filter(({ relation }) => relation === "definitions")
+            .map(({ entryId }) => entryId),
+        hanaSource.references
+            .filter(({ relation }) => relation === "definitions")
+            .map(({ entryId }) => entryId),
+    );
 });
 
 test("multi-Kana titles compose only from atomic Kana", () => {

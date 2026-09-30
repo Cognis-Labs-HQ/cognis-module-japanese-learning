@@ -614,3 +614,9 @@ Das japanische Paket wurde an Cognis' Vertrag für zusammensetzbare Transformati
 Nur für Kanji mit mehreren Lesungen wurde je Aussprache eine ausgeblendete Lesungs-Vokabelkarte wiederhergestellt; das einzige Kanji mit nur einer Lesung führt weiterhin direkt zu atomaren Kana. Jede Zwischenkarte verknüpft ihren Titel mit genau einem Quell-Kanji, rekonstruiert ihre Aussprache aus atomaren Kana und darf bei engerer Bedeutung eine eigene Definition besitzen. Vollständige Kana-Worthüllen wie `せんせい` wurden entfernt; `先生` setzt seine Lesung nun aus den getrennten Zwischenkarten `せん` und `せい` zusammen.
 
 - [91488aa](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/91488aa)
+
+## Eigenständige Definitionen für Lesungen
+
+Allen ausgeblendeten Kanji-Lesungs-Vokabeldatensätzen wurden direkte Definitionsverknüpfungen hinzugefügt. Dadurch zeigt das Öffnen einer Lesung über einen Aussprache-Deep-Link dieselbe Bedeutung wie das Öffnen über den Bereich „Verwendet von“ der Kanji-Karte. Bei identischer Bedeutung werden die Definitionen des Quell-Kanji wiederverwendet; engere Lesungsbedeutungen können weiterhin eigene Definitionen besitzen.
+
+- [b0a83fb](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/b0a83fb)

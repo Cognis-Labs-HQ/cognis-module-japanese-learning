@@ -128,7 +128,7 @@ Kompositionen verwenden jetzt die nächstgelegenen Datensätze: `日本語` verw
 
 Ein Kanji-Aussprachefeld muss für jede vollständige Lesung auf genau einen eigenen Wortschatzeintrag verweisen. Jeder reine Lesungseintrag muss `hidden: true` sein und sich über `kana-spelling` aus atomaren Kana zusammensetzen; gewöhnliche Wortschatzeinträge müssen sichtbar bleiben.
 
-Ein Kanji mit einer Aussprache verknüpft direkt geordnete atomare Kana. Ein Kanji mit mehreren Aussprachen verwendet genau einen ausgeblendeten `reading:kanji`-Vokabeldatensatz je Lesung; dieser verknüpft seinen Titel über `spelling` mit dem einzigen Quell-Kanji und rekonstruiert seine Aussprache über geordnetes `reading-kana`. Eigene Definitionen erhält er nur, wenn seine Bedeutung enger als die des Quell-Kanji ist. Für eine zusammengesetzte Gesamtaussprache wie `せんせい` darf kein Lesungsdatensatz entstehen; Komposita verwenden getrennte Segmente wie `せん` und `せい`.
+Ein Kanji mit einer Aussprache verknüpft direkt geordnete atomare Kana. Ein Kanji mit mehreren Aussprachen verwendet genau einen ausgeblendeten `reading:kanji`-Vokabeldatensatz je Lesung; dieser verknüpft seinen Titel über `spelling` mit dem einzigen Quell-Kanji und rekonstruiert seine Aussprache über geordnetes `reading-kana`. Direkte Definitionsverknüpfungen machen Aussprache-Deep-Links eigenständig: Bei identischer Bedeutung werden die Definitionen des Quell-Kanji wiederverwendet, bei engerer Bedeutung lesungsspezifische Definitionen. Für eine zusammengesetzte Gesamtaussprache wie `せんせい` darf kein Lesungsdatensatz entstehen; Komposita verwenden getrennte Segmente wie `せん` und `せい`.
 
 ## Kontextbezogene Lesungsdefinitionen
 
@@ -140,7 +140,7 @@ Mehrere Definitionsverweise werden nur verwendet, wenn ein einzelner lexikalisch
 
 ## Vollständiger Pfad vom Satz bis zu Kana
 
-Ein Kanji mit einer Aussprache verknüpft direkt geordnete atomare Kana. Ein Kanji mit mehreren Aussprachen verwendet genau einen ausgeblendeten `reading:kanji`-Vokabeldatensatz je Lesung; dieser verknüpft seinen Titel über `spelling` mit dem einzigen Quell-Kanji und rekonstruiert seine Aussprache über geordnetes `reading-kana`. Eigene Definitionen erhält er nur, wenn seine Bedeutung enger als die des Quell-Kanji ist. Für eine zusammengesetzte Gesamtaussprache wie `せんせい` darf kein Lesungsdatensatz entstehen; Komposita verwenden getrennte Segmente wie `せん` und `せい`.
+Ein Kanji mit einer Aussprache verknüpft direkt geordnete atomare Kana. Ein Kanji mit mehreren Aussprachen verwendet genau einen ausgeblendeten `reading:kanji`-Vokabeldatensatz je Lesung; dieser verknüpft seinen Titel über `spelling` mit dem einzigen Quell-Kanji und rekonstruiert seine Aussprache über geordnetes `reading-kana`. Direkte Definitionsverknüpfungen machen Aussprache-Deep-Links eigenständig: Bei identischer Bedeutung werden die Definitionen des Quell-Kanji wiederverwendet, bei engerer Bedeutung lesungsspezifische Definitionen. Für eine zusammengesetzte Gesamtaussprache wie `せんせい` darf kein Lesungsdatensatz entstehen; Komposita verwenden getrennte Segmente wie `せん` und `せい`.
 
 ## Vom Host normalisierte Datensatzsteuerung
 
@@ -152,7 +152,7 @@ Verwenden Sie `word-spelling` für einen bedeutungstragenden mehrteiligen Kana-L
 
 ## Eindeutige „Verwendet von“-Eltern
 
-Ein Kanji mit einer Aussprache verknüpft direkt geordnete atomare Kana. Ein Kanji mit mehreren Aussprachen verwendet genau einen ausgeblendeten `reading:kanji`-Vokabeldatensatz je Lesung; dieser verknüpft seinen Titel über `spelling` mit dem einzigen Quell-Kanji und rekonstruiert seine Aussprache über geordnetes `reading-kana`. Eigene Definitionen erhält er nur, wenn seine Bedeutung enger als die des Quell-Kanji ist. Für eine zusammengesetzte Gesamtaussprache wie `せんせい` darf kein Lesungsdatensatz entstehen; Komposita verwenden getrennte Segmente wie `せん` und `せい`.
+Ein Kanji mit einer Aussprache verknüpft direkt geordnete atomare Kana. Ein Kanji mit mehreren Aussprachen verwendet genau einen ausgeblendeten `reading:kanji`-Vokabeldatensatz je Lesung; dieser verknüpft seinen Titel über `spelling` mit dem einzigen Quell-Kanji und rekonstruiert seine Aussprache über geordnetes `reading-kana`. Direkte Definitionsverknüpfungen machen Aussprache-Deep-Links eigenständig: Bei identischer Bedeutung werden die Definitionen des Quell-Kanji wiederverwendet, bei engerer Bedeutung lesungsspezifische Definitionen. Für eine zusammengesetzte Gesamtaussprache wie `せんせい` darf kein Lesungsdatensatz entstehen; Komposita verwenden getrennte Segmente wie `せん` und `せい`.
 
 ## Aussprachegraph für Sätze
 
@@ -160,7 +160,7 @@ Das Aussprachefeld eines Satzes verweist über `words` und `particles` auf jede 
 
 ## Zyklenfreie Navigation und lexikalische Lesungen
 
-Ein Kanji mit einer Aussprache verknüpft direkt geordnete atomare Kana. Ein Kanji mit mehreren Aussprachen verwendet genau einen ausgeblendeten `reading:kanji`-Vokabeldatensatz je Lesung; dieser verknüpft seinen Titel über `spelling` mit dem einzigen Quell-Kanji und rekonstruiert seine Aussprache über geordnetes `reading-kana`. Eigene Definitionen erhält er nur, wenn seine Bedeutung enger als die des Quell-Kanji ist. Für eine zusammengesetzte Gesamtaussprache wie `せんせい` darf kein Lesungsdatensatz entstehen; Komposita verwenden getrennte Segmente wie `せん` und `せい`.
+Ein Kanji mit einer Aussprache verknüpft direkt geordnete atomare Kana. Ein Kanji mit mehreren Aussprachen verwendet genau einen ausgeblendeten `reading:kanji`-Vokabeldatensatz je Lesung; dieser verknüpft seinen Titel über `spelling` mit dem einzigen Quell-Kanji und rekonstruiert seine Aussprache über geordnetes `reading-kana`. Direkte Definitionsverknüpfungen machen Aussprache-Deep-Links eigenständig: Bei identischer Bedeutung werden die Definitionen des Quell-Kanji wiederverwendet, bei engerer Bedeutung lesungsspezifische Definitionen. Für eine zusammengesetzte Gesamtaussprache wie `せんせい` darf kein Lesungsdatensatz entstehen; Komposita verwenden getrennte Segmente wie `せん` und `せい`.
 
 ## Direkte Kana-Zusammensetzung für Lesungstitel
 
@@ -168,7 +168,7 @@ Jeder ausgeblendete Aussprachedatensatz setzt seinen vollständigen Titel über 
 
 ## Kanonischer Lesungsgraph
 
-Ein Kanji mit einer Aussprache verknüpft direkt geordnete atomare Kana. Ein Kanji mit mehreren Aussprachen verwendet genau einen ausgeblendeten `reading:kanji`-Vokabeldatensatz je Lesung; dieser verknüpft seinen Titel über `spelling` mit dem einzigen Quell-Kanji und rekonstruiert seine Aussprache über geordnetes `reading-kana`. Eigene Definitionen erhält er nur, wenn seine Bedeutung enger als die des Quell-Kanji ist. Für eine zusammengesetzte Gesamtaussprache wie `せんせい` darf kein Lesungsdatensatz entstehen; Komposita verwenden getrennte Segmente wie `せん` und `せい`.
+Ein Kanji mit einer Aussprache verknüpft direkt geordnete atomare Kana. Ein Kanji mit mehreren Aussprachen verwendet genau einen ausgeblendeten `reading:kanji`-Vokabeldatensatz je Lesung; dieser verknüpft seinen Titel über `spelling` mit dem einzigen Quell-Kanji und rekonstruiert seine Aussprache über geordnetes `reading-kana`. Direkte Definitionsverknüpfungen machen Aussprache-Deep-Links eigenständig: Bei identischer Bedeutung werden die Definitionen des Quell-Kanji wiederverwendet, bei engerer Bedeutung lesungsspezifische Definitionen. Für eine zusammengesetzte Gesamtaussprache wie `せんせい` darf kein Lesungsdatensatz entstehen; Komposita verwenden getrennte Segmente wie `せん` und `せい`.
 
 ## Kanji-zu-Kana-Verwendungsabhängigkeiten
 
@@ -184,7 +184,7 @@ Setze `input.linkRelationships` des Aussprachefelds eines Satzes auf `["words", 
 
 ## Vokabeleigene Aussprachegrenzen
 
-Ein Kanji mit einer Aussprache verknüpft direkt geordnete atomare Kana. Ein Kanji mit mehreren Aussprachen verwendet genau einen ausgeblendeten `reading:kanji`-Vokabeldatensatz je Lesung; dieser verknüpft seinen Titel über `spelling` mit dem einzigen Quell-Kanji und rekonstruiert seine Aussprache über geordnetes `reading-kana`. Eigene Definitionen erhält er nur, wenn seine Bedeutung enger als die des Quell-Kanji ist. Für eine zusammengesetzte Gesamtaussprache wie `せんせい` darf kein Lesungsdatensatz entstehen; Komposita verwenden getrennte Segmente wie `せん` und `せい`.
+Ein Kanji mit einer Aussprache verknüpft direkt geordnete atomare Kana. Ein Kanji mit mehreren Aussprachen verwendet genau einen ausgeblendeten `reading:kanji`-Vokabeldatensatz je Lesung; dieser verknüpft seinen Titel über `spelling` mit dem einzigen Quell-Kanji und rekonstruiert seine Aussprache über geordnetes `reading-kana`. Direkte Definitionsverknüpfungen machen Aussprache-Deep-Links eigenständig: Bei identischer Bedeutung werden die Definitionen des Quell-Kanji wiederverwendet, bei engerer Bedeutung lesungsspezifische Definitionen. Für eine zusammengesetzte Gesamtaussprache wie `せんせい` darf kein Lesungsdatensatz entstehen; Komposita verwenden getrennte Segmente wie `せん` und `せい`.
 
 ## Vollständige Links der Satzaussprache
 
@@ -214,9 +214,9 @@ Für jeden Satz und jedes Kanji mit Aussprache muss der Alias-Kompositionsalgori
 
 ## Aktueller rekursiver Aussprachevertrag
 
-Ein Kanji mit einer Aussprache verknüpft direkt geordnete atomare Kana. Ein Kanji mit mehreren Aussprachen verwendet genau einen ausgeblendeten `reading:kanji`-Vokabeldatensatz je Lesung; dieser verknüpft seinen Titel über `spelling` mit dem einzigen Quell-Kanji und rekonstruiert seine Aussprache über geordnetes `reading-kana`. Eigene Definitionen erhält er nur, wenn seine Bedeutung enger als die des Quell-Kanji ist. Für eine zusammengesetzte Gesamtaussprache wie `せんせい` darf kein Lesungsdatensatz entstehen; Komposita verwenden getrennte Segmente wie `せん` und `せい`.
+Ein Kanji mit einer Aussprache verknüpft direkt geordnete atomare Kana. Ein Kanji mit mehreren Aussprachen verwendet genau einen ausgeblendeten `reading:kanji`-Vokabeldatensatz je Lesung; dieser verknüpft seinen Titel über `spelling` mit dem einzigen Quell-Kanji und rekonstruiert seine Aussprache über geordnetes `reading-kana`. Direkte Definitionsverknüpfungen machen Aussprache-Deep-Links eigenständig: Bei identischer Bedeutung werden die Definitionen des Quell-Kanji wiederverwendet, bei engerer Bedeutung lesungsspezifische Definitionen. Für eine zusammengesetzte Gesamtaussprache wie `せんせい` darf kein Lesungsdatensatz entstehen; Komposita verwenden getrennte Segmente wie `せん` und `せい`.
 
-Ein Kanji mit einer Aussprache verknüpft direkt geordnete atomare Kana. Ein Kanji mit mehreren Aussprachen verwendet genau einen ausgeblendeten `reading:kanji`-Vokabeldatensatz je Lesung; dieser verknüpft seinen Titel über `spelling` mit dem einzigen Quell-Kanji und rekonstruiert seine Aussprache über geordnetes `reading-kana`. Eigene Definitionen erhält er nur, wenn seine Bedeutung enger als die des Quell-Kanji ist. Für eine zusammengesetzte Gesamtaussprache wie `せんせい` darf kein Lesungsdatensatz entstehen; Komposita verwenden getrennte Segmente wie `せん` und `せい`.
+Ein Kanji mit einer Aussprache verknüpft direkt geordnete atomare Kana. Ein Kanji mit mehreren Aussprachen verwendet genau einen ausgeblendeten `reading:kanji`-Vokabeldatensatz je Lesung; dieser verknüpft seinen Titel über `spelling` mit dem einzigen Quell-Kanji und rekonstruiert seine Aussprache über geordnetes `reading-kana`. Direkte Definitionsverknüpfungen machen Aussprache-Deep-Links eigenständig: Bei identischer Bedeutung werden die Definitionen des Quell-Kanji wiederverwendet, bei engerer Bedeutung lesungsspezifische Definitionen. Für eine zusammengesetzte Gesamtaussprache wie `せんせい` darf kein Lesungsdatensatz entstehen; Komposita verwenden getrennte Segmente wie `せん` und `せい`.
 
 ## Vollständige Aussprachepfade
 
@@ -232,7 +232,7 @@ Beziehungen und niemals eine Suche nach gleicher Beschriftung bestimmen die Kart
 
 ## Abdeckung der Kanji-Aussprache
 
-Ein Kanji mit einer Aussprache verknüpft direkt geordnete atomare Kana. Ein Kanji mit mehreren Aussprachen verwendet genau einen ausgeblendeten `reading:kanji`-Vokabeldatensatz je Lesung; dieser verknüpft seinen Titel über `spelling` mit dem einzigen Quell-Kanji und rekonstruiert seine Aussprache über geordnetes `reading-kana`. Eigene Definitionen erhält er nur, wenn seine Bedeutung enger als die des Quell-Kanji ist. Für eine zusammengesetzte Gesamtaussprache wie `せんせい` darf kein Lesungsdatensatz entstehen; Komposita verwenden getrennte Segmente wie `せん` und `せい`.
+Ein Kanji mit einer Aussprache verknüpft direkt geordnete atomare Kana. Ein Kanji mit mehreren Aussprachen verwendet genau einen ausgeblendeten `reading:kanji`-Vokabeldatensatz je Lesung; dieser verknüpft seinen Titel über `spelling` mit dem einzigen Quell-Kanji und rekonstruiert seine Aussprache über geordnetes `reading-kana`. Direkte Definitionsverknüpfungen machen Aussprache-Deep-Links eigenständig: Bei identischer Bedeutung werden die Definitionen des Quell-Kanji wiederverwendet, bei engerer Bedeutung lesungsspezifische Definitionen. Für eine zusammengesetzte Gesamtaussprache wie `せんせい` darf kein Lesungsdatensatz entstehen; Komposita verwenden getrennte Segmente wie `せん` und `せい`.
 
 ## Geprüfter Stapel zu Ort und Art und Weise
 
@@ -260,7 +260,7 @@ Atomare Kana behalten die Hepburn-Umschrift für ihre eigenen Karten, bei der re
 
 ## Lesungstitel aus atomaren Kana
 
-Ein Kanji mit einer Aussprache verknüpft direkt geordnete atomare Kana. Ein Kanji mit mehreren Aussprachen verwendet genau einen ausgeblendeten `reading:kanji`-Vokabeldatensatz je Lesung; dieser verknüpft seinen Titel über `spelling` mit dem einzigen Quell-Kanji und rekonstruiert seine Aussprache über geordnetes `reading-kana`. Eigene Definitionen erhält er nur, wenn seine Bedeutung enger als die des Quell-Kanji ist. Für eine zusammengesetzte Gesamtaussprache wie `せんせい` darf kein Lesungsdatensatz entstehen; Komposita verwenden getrennte Segmente wie `せん` und `せい`.
+Ein Kanji mit einer Aussprache verknüpft direkt geordnete atomare Kana. Ein Kanji mit mehreren Aussprachen verwendet genau einen ausgeblendeten `reading:kanji`-Vokabeldatensatz je Lesung; dieser verknüpft seinen Titel über `spelling` mit dem einzigen Quell-Kanji und rekonstruiert seine Aussprache über geordnetes `reading-kana`. Direkte Definitionsverknüpfungen machen Aussprache-Deep-Links eigenständig: Bei identischer Bedeutung werden die Definitionen des Quell-Kanji wiederverwendet, bei engerer Bedeutung lesungsspezifische Definitionen. Für eine zusammengesetzte Gesamtaussprache wie `せんせい` darf kein Lesungsdatensatz entstehen; Komposita verwenden getrennte Segmente wie `せん` und `せい`.
 
 ## Mehrteilige Kana-Titel und Kleinform-Geometrie
 
@@ -272,7 +272,7 @@ Die Satzaussprache verknüpft über `linkRelationships: ["words", "particles"]` 
 
 ## Selektive Zwischenkarten für Kanji-Lesungen
 
-Ein Kanji mit einer Aussprache verknüpft direkt geordnete atomare Kana. Ein Kanji mit mehreren Aussprachen verwendet genau einen ausgeblendeten `reading:kanji`-Vokabeldatensatz je Lesung; dieser verknüpft seinen Titel über `spelling` mit dem einzigen Quell-Kanji und rekonstruiert seine Aussprache über geordnetes `reading-kana`. Eigene Definitionen erhält er nur, wenn seine Bedeutung enger als die des Quell-Kanji ist. Für eine zusammengesetzte Gesamtaussprache wie `せんせい` darf kein Lesungsdatensatz entstehen; Komposita verwenden getrennte Segmente wie `せん` und `せい`.
+Ein Kanji mit einer Aussprache verknüpft direkt geordnete atomare Kana. Ein Kanji mit mehreren Aussprachen verwendet genau einen ausgeblendeten `reading:kanji`-Vokabeldatensatz je Lesung; dieser verknüpft seinen Titel über `spelling` mit dem einzigen Quell-Kanji und rekonstruiert seine Aussprache über geordnetes `reading-kana`. Direkte Definitionsverknüpfungen machen Aussprache-Deep-Links eigenständig: Bei identischer Bedeutung werden die Definitionen des Quell-Kanji wiederverwendet, bei engerer Bedeutung lesungsspezifische Definitionen. Für eine zusammengesetzte Gesamtaussprache wie `せんせい` darf kein Lesungsdatensatz entstehen; Komposita verwenden getrennte Segmente wie `せん` und `せい`.
 
 ## Tief verzweigte Transformationen
 

@@ -614,3 +614,9 @@ Aligned the Japanese pack with Cognis' composable transformation-tree contract. 
 Restored one hidden reading Vocabulary card per pronunciation only for Kanji with multiple readings; the sole single-reading Kanji continues directly to atomic Kana. Each intermediate links its title to exactly one source Kanji, reconstructs its pronunciation from atomic Kana, and may own a distinct definition when semantically narrower. Removed complete-word Kana wrappers such as `せんせい`; `先生` now composes its reading from the separate `せん` and `せい` intermediates.
 
 - [91488aa](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/91488aa)
+
+## Self-Contained Reading Definitions
+
+Added direct definition links to every hidden Kanji-reading Vocabulary record so opening a reading from a pronunciation deep link shows the same meaning as opening it through the Kanji card's Used By section. Readings reuse the source Kanji definitions when meanings are identical and remain able to own narrower reading-specific definitions.
+
+- [b0a83fb](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/b0a83fb)

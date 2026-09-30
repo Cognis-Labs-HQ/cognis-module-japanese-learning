@@ -131,7 +131,7 @@ Komposisi kini memakai rekaman terdekat yang tersedia: `日本語` menaut ke kat
 
 Bacaan pada kartu Kanji tertaut ke rekaman Kosakata khusus, lalu setiap rekaman bacaan tertaut ke karakter Hiragana yang menyusunnya. Rekaman khusus bacaan tetap dapat dibuka melalui tautan untuk definisi, tetapi disembunyikan dari penjelajah Kosakata; kosakata biasa tetap terlihat.
 
-Kanji dengan satu pelafalan menaut langsung ke Kana atomik berurutan. Kanji dengan beberapa pelafalan menggunakan tepat satu rekaman Kosakata `reading:kanji` tersembunyi untuk setiap bacaan; rekaman itu menautkan judulnya ke satu Kanji sumber melalui `spelling` dan merekonstruksi pelafalannya melalui `reading-kana` berurutan. Definisi tersendiri hanya disertakan bila maknanya lebih sempit daripada Kanji sumber. Jangan membuat rekaman bacaan untuk pelafalan gabungan seperti `せんせい`; kata majemuk menggunakan kembali segmen terpisah seperti `せん` dan `せい`.
+Kanji dengan satu pelafalan menaut langsung ke Kana atomik berurutan. Kanji dengan beberapa pelafalan menggunakan tepat satu rekaman Kosakata `reading:kanji` tersembunyi untuk setiap bacaan; rekaman itu menautkan judulnya ke satu Kanji sumber melalui `spelling` dan merekonstruksi pelafalannya melalui `reading-kana` berurutan. Tautan definisi langsung membuat tautan dalam pelafalan mandiri: gunakan kembali definisi Kanji sumber bila maknanya sama, dan gunakan definisi khusus bacaan bila maknanya lebih sempit. Jangan membuat rekaman bacaan untuk pelafalan gabungan seperti `せんせい`; kata majemuk menggunakan kembali segmen terpisah seperti `せん` dan `せい`.
 
 ## Definisi Bacaan Kontekstual
 
@@ -183,7 +183,7 @@ Pelafalan kalimat menggunakan hubungan `words` berurutan yang sudah ada untuk ta
 
 ## Bacaan Kanji ke kosakata
 
-Kanji dengan satu pelafalan menaut langsung ke Kana atomik berurutan. Kanji dengan beberapa pelafalan menggunakan tepat satu rekaman Kosakata `reading:kanji` tersembunyi untuk setiap bacaan; rekaman itu menautkan judulnya ke satu Kanji sumber melalui `spelling` dan merekonstruksi pelafalannya melalui `reading-kana` berurutan. Definisi tersendiri hanya disertakan bila maknanya lebih sempit daripada Kanji sumber. Jangan membuat rekaman bacaan untuk pelafalan gabungan seperti `せんせい`; kata majemuk menggunakan kembali segmen terpisah seperti `せん` dan `せい`.
+Kanji dengan satu pelafalan menaut langsung ke Kana atomik berurutan. Kanji dengan beberapa pelafalan menggunakan tepat satu rekaman Kosakata `reading:kanji` tersembunyi untuk setiap bacaan; rekaman itu menautkan judulnya ke satu Kanji sumber melalui `spelling` dan merekonstruksi pelafalannya melalui `reading-kana` berurutan. Tautan definisi langsung membuat tautan dalam pelafalan mandiri: gunakan kembali definisi Kanji sumber bila maknanya sama, dan gunakan definisi khusus bacaan bila maknanya lebih sempit. Jangan membuat rekaman bacaan untuk pelafalan gabungan seperti `せんせい`; kata majemuk menggunakan kembali segmen terpisah seperti `せん` dan `せい`.
 
 ## Pelafalan kalimat yang tertaut sepenuhnya
 
@@ -213,9 +213,9 @@ Setiap pelafalan kalimat kini diuji terhadap resolver detail judul host sehingga
 
 ## Graf pelafalan turunan saat ini
 
-Kanji dengan satu pelafalan menaut langsung ke Kana atomik berurutan. Kanji dengan beberapa pelafalan menggunakan tepat satu rekaman Kosakata `reading:kanji` tersembunyi untuk setiap bacaan; rekaman itu menautkan judulnya ke satu Kanji sumber melalui `spelling` dan merekonstruksi pelafalannya melalui `reading-kana` berurutan. Definisi tersendiri hanya disertakan bila maknanya lebih sempit daripada Kanji sumber. Jangan membuat rekaman bacaan untuk pelafalan gabungan seperti `せんせい`; kata majemuk menggunakan kembali segmen terpisah seperti `せん` dan `せい`.
+Kanji dengan satu pelafalan menaut langsung ke Kana atomik berurutan. Kanji dengan beberapa pelafalan menggunakan tepat satu rekaman Kosakata `reading:kanji` tersembunyi untuk setiap bacaan; rekaman itu menautkan judulnya ke satu Kanji sumber melalui `spelling` dan merekonstruksi pelafalannya melalui `reading-kana` berurutan. Tautan definisi langsung membuat tautan dalam pelafalan mandiri: gunakan kembali definisi Kanji sumber bila maknanya sama, dan gunakan definisi khusus bacaan bila maknanya lebih sempit. Jangan membuat rekaman bacaan untuk pelafalan gabungan seperti `せんせい`; kata majemuk menggunakan kembali segmen terpisah seperti `せん` dan `せい`.
 
-Kanji dengan satu pelafalan menaut langsung ke Kana atomik berurutan. Kanji dengan beberapa pelafalan menggunakan tepat satu rekaman Kosakata `reading:kanji` tersembunyi untuk setiap bacaan; rekaman itu menautkan judulnya ke satu Kanji sumber melalui `spelling` dan merekonstruksi pelafalannya melalui `reading-kana` berurutan. Definisi tersendiri hanya disertakan bila maknanya lebih sempit daripada Kanji sumber. Jangan membuat rekaman bacaan untuk pelafalan gabungan seperti `せんせい`; kata majemuk menggunakan kembali segmen terpisah seperti `せん` dan `せい`.
+Kanji dengan satu pelafalan menaut langsung ke Kana atomik berurutan. Kanji dengan beberapa pelafalan menggunakan tepat satu rekaman Kosakata `reading:kanji` tersembunyi untuk setiap bacaan; rekaman itu menautkan judulnya ke satu Kanji sumber melalui `spelling` dan merekonstruksi pelafalannya melalui `reading-kana` berurutan. Tautan definisi langsung membuat tautan dalam pelafalan mandiri: gunakan kembali definisi Kanji sumber bila maknanya sama, dan gunakan definisi khusus bacaan bila maknanya lebih sempit. Jangan membuat rekaman bacaan untuk pelafalan gabungan seperti `せんせい`; kata majemuk menggunakan kembali segmen terpisah seperti `せん` dan `せい`.
 
 Pencarian Kosakata juga menerima istilah bahasa Inggris yang dibatasi seperti `mythical cat`; jika tidak ada ejaan bahasa Jepang yang persis cocok dengan kueri, penyedia memakai hasil berperingkat tertinggi dari Jisho. Pencarian Kana dan Kanji tetap dibatasi pada masukan tepat satu karakter bahasa Jepang.
 
@@ -229,7 +229,7 @@ Pelafalan kalimat menautkan setiap segmen bacaan berurutan ke unsur Kosakata ata
 
 ## Perantara bacaan Kanji selektif
 
-Kanji dengan satu pelafalan menaut langsung ke Kana atomik berurutan. Kanji dengan beberapa pelafalan menggunakan tepat satu rekaman Kosakata `reading:kanji` tersembunyi untuk setiap bacaan; rekaman itu menautkan judulnya ke satu Kanji sumber melalui `spelling` dan merekonstruksi pelafalannya melalui `reading-kana` berurutan. Definisi tersendiri hanya disertakan bila maknanya lebih sempit daripada Kanji sumber. Jangan membuat rekaman bacaan untuk pelafalan gabungan seperti `せんせい`; kata majemuk menggunakan kembali segmen terpisah seperti `せん` dan `せい`.
+Kanji dengan satu pelafalan menaut langsung ke Kana atomik berurutan. Kanji dengan beberapa pelafalan menggunakan tepat satu rekaman Kosakata `reading:kanji` tersembunyi untuk setiap bacaan; rekaman itu menautkan judulnya ke satu Kanji sumber melalui `spelling` dan merekonstruksi pelafalannya melalui `reading-kana` berurutan. Tautan definisi langsung membuat tautan dalam pelafalan mandiri: gunakan kembali definisi Kanji sumber bila maknanya sama, dan gunakan definisi khusus bacaan bila maknanya lebih sempit. Jangan membuat rekaman bacaan untuk pelafalan gabungan seperti `せんせい`; kata majemuk menggunakan kembali segmen terpisah seperti `せん` dan `せい`.
 
 ## Transformasi bercabang mendalam
 
