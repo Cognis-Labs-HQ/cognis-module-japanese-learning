@@ -223,6 +223,6 @@ Vocabulary lookup also accepts bounded English search terms such as `mythical ca
 
 Vocabulary now separates base verbs and adverbs from ordinary cards. Reviewed conjugation-family tags derive polite, negative, past, and te forms for ichidan, godan, exceptional, and irregular verbs without materializing duplicate study records. Japanese adverbs remain invariant and display only their base card; generated forms are presentation-only.
 
-## Sentence pronunciation layer boundary
+## Sentence links without sentence Vocabulary impostors
 
-Sentence pronunciation is display-only text and declares no `linkRelationships`. Ordered `words` and `particles` relationships describe sentence composition only; they must never turn a sentence reading into Vocabulary or Particle title-detail cards, and no sentence-level pronunciation record may be stored in the Vocabulary layer.
+Sentence pronunciation links each ordered reading segment to its existing visible Vocabulary or Particle constituent through `linkRelationships: ["words", "particles"]`. Complete sentence pronunciations must never be stored as Vocabulary records; Vocabulary also cannot carry sentence, composite, or particle structures.

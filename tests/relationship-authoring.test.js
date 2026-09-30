@@ -164,12 +164,15 @@ test("Kanji readings and particles terminate at Kana", () => {
     assert.equal(labelsFor(ga, ["kana-spelling"]), "が");
 });
 
-test("sentence pronunciations remain display text instead of Vocabulary links", () => {
+test("sentence pronunciations link only to visible constituent cards", () => {
     const sentenceLayer = schema.layers.find(({ id }) => id === "sentences");
     const pronunciation = sentenceLayer.fields.find(
         ({ id }) => id === "pronunciation",
     );
-    assert.equal(pronunciation.input.linkRelationships, undefined);
+    assert.deepEqual(pronunciation.input.linkRelationships, [
+        "words",
+        "particles",
+    ]);
     assert.equal(
         sentenceLayer.relationships.some(
             ({ id }) => id === "pronunciation-readings",

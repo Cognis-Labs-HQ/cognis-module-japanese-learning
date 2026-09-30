@@ -591,8 +591,8 @@ Allen Kana-Karten mit mehreren Zeichen wurde eine ausdrückliche Titelzusammense
 
 - [4c33d9e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/4c33d9e)
 
-## Layergrenzen für Satzaussprache
+## Satzverknüpfungen ohne vorgetäuschte Satzvokabeln
 
-Die Satzaussprache ist nun reiner Anzeigetext; Quellen für Titeldetailverknüpfungen zu Vokabeln und Partikeln wurden entfernt. Neue strukturelle Regressionstests weisen vollständige Satzaussprachen, Satzkomposite, Partikelklassen, Partikelverweise und ausgeblendete Satzbestandteile im Vokabellayer zurück.
+Die Ausspracheverknüpfungen eines Satzes zu seinen geordneten sichtbaren Vokabel- und Partikelbestandteilen wurden wiederhergestellt. Verstärkte strukturelle Regressionstests weisen vollständige Satzlesungen, Satzkomposite, Partikelklassen, Partikelverweise und ausgeblendete Satzbestandteile aus dem Vokabellayer zurück, ohne legitime Satzverknüpfungen zu entfernen.
 
-- [5d1336e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/5d1336e)
+- [7cdb1ac](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/7cdb1ac)

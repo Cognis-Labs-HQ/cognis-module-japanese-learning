@@ -591,8 +591,8 @@ Jisho コンポーザーのフローを修正し、語彙検索で長さを制�
 
 - [4c33d9e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/4c33d9e)
 
-## 文発音のレイヤー境界
+## 文を装う語彙カードを作らない文リンク
 
-語彙および助詞へのタイトル詳細リンク元を削除し、文の発音を表示専用テキストにしました。新しい構造回帰テストにより、文全体の発音、文の複合クラス、助詞クラス、助詞参照、非表示の文構成要素が語彙レイヤーへ混入することを拒否します。
+文の発音から、順序付きの表示語彙および助詞構成要素へのリンクを復元しました。正当な文リンクを削除せず、文全体の読み、文の複合クラス、助詞クラス、助詞参照、非表示の文構成要素が語彙レイヤーへ混入することを強化した構造回帰テストで拒否します。
 
-- [5d1336e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/5d1336e)
+- [7cdb1ac](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/7cdb1ac)

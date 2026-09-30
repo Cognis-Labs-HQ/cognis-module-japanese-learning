@@ -591,8 +591,8 @@ Added explicit atomic-Kana title composition to every multi-symbol Kana card, pr
 
 - [4c33d9e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/4c33d9e)
 
-## Sentence Pronunciation Layer Boundaries
+## Sentence Links Without Sentence Vocabulary Impostors
 
-Made sentence pronunciation display-only by removing Vocabulary and Particle title-detail link sources. Added structural regression coverage that rejects complete sentence pronunciations, sentence composites, particle classes, particle references, and hidden sentence constituents from the Vocabulary layer.
+Restored sentence pronunciation links to their ordered visible Vocabulary and Particle constituents. Strengthened structural regression coverage so complete sentence readings, sentence composites, particle classes, particle references, and hidden sentence constituents are rejected from the Vocabulary layer without removing legitimate sentence links.
 
-- [5d1336e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/5d1336e)
+- [7cdb1ac](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/7cdb1ac)

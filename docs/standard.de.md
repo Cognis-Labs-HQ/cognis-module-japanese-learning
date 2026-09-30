@@ -266,6 +266,6 @@ Jeder ausgeblendete `reading:kanji`-Wortschatzeintrag deklariert zusätzlich zu 
 
 Jeder mehrteilige Kana-Datensatz deklariert eine ausdrückliche `character-title`-Zusammensetzung zu seinen atomaren Kana. Dadurch kann die generische Label-Suche nicht zu einer gleich beschrifteten ausgeblendeten Wortschatzlesung verlinken. Zusammengesetzte Strichmuster weisen kleinen Kana wie `ゃ`, `ゅ`, `ょ` und `っ` einen schmaleren horizontalen Bereich zu; vollgroße Bestandteile behalten den größeren Bereich, sodass Yōon- und Geminationsübungen ihre konventionellen Größenverhältnisse bewahren.
 
-## Layergrenze für Satzaussprache
+## Satzverknüpfungen ohne vorgetäuschte Satzvokabeln
 
-Die Satzaussprache ist ausschließlich Anzeigetext und deklariert keine `linkRelationships`. Geordnete Beziehungen zu `words` und `particles` beschreiben nur die Satzzusammensetzung; sie dürfen eine Satzlesung niemals in Vokabel- oder Partikel-Titeldetailkarten umwandeln, und im Vokabellayer darf kein Aussprachedatensatz auf Satzebene gespeichert werden.
+Die Satzaussprache verknüpft über `linkRelationships: ["words", "particles"]` jeden geordneten Leseabschnitt mit seinem vorhandenen sichtbaren Vokabel- oder Partikelbestandteil. Vollständige Satzaussprachen dürfen niemals als Vokabeldatensätze gespeichert werden; Vokabeln dürfen außerdem keine Satz-, Komposit- oder Partikelstrukturen enthalten.

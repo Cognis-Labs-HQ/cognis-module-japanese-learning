@@ -54,6 +54,14 @@ test("layer semantics reject sentence and particle structures in Vocabulary", ()
     const sentencePronunciations = new Set(
         sentences.flatMap(({ fields }) => fields.pronunciation ?? []),
     );
+    const sentenceLayer = schema.layers.find(({ id }) => id === "sentences");
+    const pronunciationField = sentenceLayer.fields.find(
+        ({ id }) => id === "pronunciation",
+    );
+    assert.deepEqual(pronunciationField.input.linkRelationships, [
+        "words",
+        "particles",
+    ]);
 
     for (const record of vocabulary) {
         assert.notEqual(record.class, "composite", record.id);

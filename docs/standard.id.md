@@ -266,6 +266,6 @@ Setiap rekaman Kosakata `reading:kanji` tersembunyi mendeklarasikan komposisi `r
 
 Setiap rekaman Kana dengan beberapa simbol mendeklarasikan komposisi `character-title` eksplisit menuju Kana atomiknya, sehingga pencocokan label generik tidak dapat menaut dalam ke bacaan Kosakata tersembunyi dengan label sama. Tata letak pola goresan gabungan memberikan ruang horizontal yang lebih sempit kepada Kana kecil seperti `ゃ`, `ゅ`, `ょ`, dan `っ`; komponen berukuran penuh mempertahankan ruang lebih besar agar pola latihan yōon dan geminasi menjaga ukuran relatif konvensionalnya.
 
-## Batas lapisan pelafalan kalimat
+## Tautan kalimat tanpa Kosakata penyamar kalimat
 
-Pelafalan kalimat hanya berupa teks tampilan dan tidak mendeklarasikan `linkRelationships`. Relasi `words` dan `particles` yang berurutan hanya menjelaskan komposisi kalimat; relasi tersebut tidak boleh mengubah bacaan kalimat menjadi kartu detail judul Kosakata atau Partikel, dan rekaman pelafalan tingkat kalimat tidak boleh disimpan di lapisan Kosakata.
+Pelafalan kalimat menautkan setiap segmen bacaan berurutan ke unsur Kosakata atau Partikel yang sudah ada dan terlihat melalui `linkRelationships: ["words", "particles"]`. Pelafalan kalimat lengkap tidak boleh disimpan sebagai rekaman Kosakata; Kosakata juga tidak boleh memuat struktur kalimat, komposit, atau partikel.

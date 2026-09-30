@@ -591,8 +591,8 @@ Komposisi judul Kana atomik yang eksplisit ditambahkan ke setiap kartu Kana bers
 
 - [4c33d9e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/4c33d9e)
 
-## Batas Lapisan Pelafalan Kalimat
+## Tautan Kalimat Tanpa Kosakata Penyamar Kalimat
 
-Pelafalan kalimat kini hanya berupa teks tampilan dengan menghapus sumber tautan detail judul Kosakata dan Partikel. Cakupan regresi struktural baru menolak pelafalan kalimat lengkap, komposit kalimat, kelas partikel, referensi partikel, dan unsur kalimat tersembunyi dari lapisan Kosakata.
+Tautan pelafalan kalimat ke unsur Kosakata dan Partikel berurutan yang terlihat telah dipulihkan. Cakupan regresi struktural diperkuat agar bacaan kalimat lengkap, komposit kalimat, kelas partikel, referensi partikel, dan unsur kalimat tersembunyi ditolak dari lapisan Kosakata tanpa menghapus tautan kalimat yang sah.
 
-- [5d1336e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/5d1336e)
+- [7cdb1ac](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/7cdb1ac)
