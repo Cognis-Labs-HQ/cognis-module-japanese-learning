@@ -620,3 +620,23 @@ Satu kartu Kosakata bacaan tersembunyi per pelafalan dipulihkan hanya untuk Kanj
 Tautan definisi langsung ditambahkan ke setiap rekaman Kosakata bacaan Kanji tersembunyi agar pembukaan bacaan dari tautan dalam pelafalan menampilkan makna yang sama dengan pembukaan melalui bagian Digunakan Oleh pada kartu Kanji. Bacaan menggunakan kembali definisi Kanji sumber bila maknanya sama dan tetap dapat memiliki definisi khusus bila maknanya lebih sempit.
 
 - [b0a83fb](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/b0a83fb)
+
+# Menyelaraskan metadata transformasi bahasa Jepang dengan Cognis 2.22
+
+**Feature Branch:** work
+
+## Penanda transformasi terlokalisasi
+
+Cabang keinginan kausatif kini menerbitkan metadata `marker` terlokalisasi dalam bahasa Jerman, Inggris, Indonesia, dan Jepang. Cognis dapat menyisipkan frasa tersebut ke templat definisi sambil tetap memprioritaskan definisi khusus transformasi yang eksplisit.
+
+## Pemilihan varian di dalam Kosakata
+
+Kontrak yang didokumentasikan mempertahankan verba dan adverbia kanonis pada lapisan Kosakata serta menampilkan pohon transformasi mendalam melalui pemilih varian host tanpa menyimpan bentuk hasil transformasi sebagai entri belajar.
+
+## Sinkronisasi versi
+
+Modul dinaikkan ke `2.2.72`, revisi konten `2026-09-30.10`, dan revisi skema bahasa Jepang `77`, disertai hash paket yang dibuat ulang.
+
+## Commit
+
+- [d7b696b](../../commit/d7b696b) — Menyelaraskan penanda transformasi dengan Cognis.

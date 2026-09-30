@@ -277,3 +277,5 @@ Ein Kanji mit einer Aussprache verknüpft direkt geordnete atomare Kana. Ein Kan
 ## Tief verzweigte Transformationen
 
 Verbtransformationssätze bilden nun tief verzweigte Pfade aus jeder kanonischen Grundkarte. Die Zweige umfassen höfliche Negativ- und Vergangenheitsformen, verneinte Vergangenheit und Verbindungsformen, Kausativ, Passiv, Potential, Volitional sowie mehrstufige Kausativ-Wunschketten. Jede Regel transformiert Schriftform und Aussprache unabhängig; lokalisierte Definitionsüberschreibungen erklären semantische Zweige. Adverbien bleiben unveränderliche kanonische Grundkarten, und keine erzeugte Form wird als Vokabeleintrag gespeichert.
+
+Transformationsregeln können außerdem lokalisierte `marker`-Metadaten für Cognis-2.22-kompatible Variantenansichten enthalten. Der Host setzt diesen Ausdruck in den Platzhalter `{{ marker }}` einer referenzierten Definition ein; eine ausdrücklich lokalisierte Transformationsdefinition bleibt jedoch die maßgebliche Überschreibung. Verb- und Adverbkarten verbleiben im Wortschatz und stellen Varianten über die Graphauswahl des Hosts statt über getrennte generierte Lerneinträge bereit.

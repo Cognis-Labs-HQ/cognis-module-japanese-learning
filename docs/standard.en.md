@@ -277,3 +277,5 @@ A Kanji with one pronunciation links directly to ordered atomic Kana. A Kanji wi
 ## Deep branching transformations
 
 Verb transform sets now form deep branching pathways from each canonical base card. Branches cover polite negative and past forms, negative past and connective forms, causative, passive, potential, volitional, and multi-step causative desire chains. Every rule independently transforms the written form and pronunciation; localized definition overrides explain semantic branches. Adverbs remain canonical invariant base cards, and no generated form is stored as a Vocabulary entry.
+
+Transformation rules may also carry localized `marker` metadata for Cognis 2.22-compatible variant displays. The host inserts that phrase into a referenced definition’s `{{ marker }}` slot, while an explicit localized transformation definition remains the authoritative override. Verb and adverb cards remain in Vocabulary and expose variants through the host graph selector rather than separate generated study records.

@@ -620,3 +620,23 @@ Nur für Kanji mit mehreren Lesungen wurde je Aussprache eine ausgeblendete Lesu
 Allen ausgeblendeten Kanji-Lesungs-Vokabeldatensätzen wurden direkte Definitionsverknüpfungen hinzugefügt. Dadurch zeigt das Öffnen einer Lesung über einen Aussprache-Deep-Link dieselbe Bedeutung wie das Öffnen über den Bereich „Verwendet von“ der Kanji-Karte. Bei identischer Bedeutung werden die Definitionen des Quell-Kanji wiederverwendet; engere Lesungsbedeutungen können weiterhin eigene Definitionen besitzen.
 
 - [b0a83fb](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/b0a83fb)
+
+# Japanische Transformationsmetadaten an Cognis 2.22 anpassen
+
+**Feature Branch:** work
+
+## Lokalisierte Transformationsmarker
+
+Kausativ-Wunsch-Zweige veröffentlichen nun lokalisierte `marker`-Metadaten auf Deutsch, Englisch, Indonesisch und Japanisch. Cognis kann diese Ausdrücke in Definitionsvorlagen einsetzen und weiterhin ausdrücklich transformationsspezifische Definitionen bevorzugen.
+
+## Variantenwahl innerhalb des Wortschatzes
+
+Der dokumentierte Vertrag belässt kanonische Verben und Adverbien in der Wortschatzebene und zeigt ihre tiefen Transformationsbäume über die Variantenwahl des Hosts, ohne erzeugte Formen als Lerneinträge zu speichern.
+
+## Versionsabgleich
+
+Das Modul wird auf `2.2.72`, die Inhaltsrevision auf `2026-09-30.10` und das japanische Schema auf Revision `77` angehoben; die Pakethashes wurden neu erzeugt.
+
+## Commits
+
+- [d7b696b](../../commit/d7b696b) — Transformationsmarker an Cognis angepasst.

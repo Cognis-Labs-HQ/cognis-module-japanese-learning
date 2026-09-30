@@ -620,3 +620,23 @@ Restored one hidden reading Vocabulary card per pronunciation only for Kanji wit
 Added direct definition links to every hidden Kanji-reading Vocabulary record so opening a reading from a pronunciation deep link shows the same meaning as opening it through the Kanji card's Used By section. Readings reuse the source Kanji definitions when meanings are identical and remain able to own narrower reading-specific definitions.
 
 - [b0a83fb](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/b0a83fb)
+
+# Align Japanese transformation metadata with Cognis 2.22
+
+**Feature Branch:** work
+
+## Localized transformation markers
+
+Causative-desire branches now publish localized `marker` metadata in German, English, Indonesian, and Japanese. Cognis can insert these phrases into definition templates while continuing to prefer explicit transformation-specific definitions.
+
+## Vocabulary-native variant selection
+
+The documented contract keeps canonical verbs and adverbs on the Vocabulary layer and presents their deep transformation trees through the host variant selector without storing generated forms as study entries.
+
+## Version synchronization
+
+The module advances to `2.2.72`, content revision `2026-09-30.10`, and Japanese schema revision `77`, with regenerated package hashes.
+
+## Commits
+
+- [d7b696b](../../commit/d7b696b) — Align transformation markers with Cognis.

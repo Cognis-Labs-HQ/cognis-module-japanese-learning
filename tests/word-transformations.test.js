@@ -64,12 +64,25 @@ function transformationNodes(entry) {
                               )}${pronunciation.append}`
                             : node.pronunciation,
                     definition: rule.definition,
+                    marker: rule.marker,
+                    rule,
                     path: [...node.path, rule.id],
                 });
             }
         }
         return nodes.slice(1);
     });
+}
+
+function transformedDefinition(baseDefinition, node, language) {
+    const localized = (metadata) =>
+        metadata?.labels?.[language] ??
+        Object.values(metadata?.labels ?? {})[0];
+    const override = localized(node.definition);
+    if (override) return override;
+    const marker = localized(node.rule?.marker);
+    if (!marker || !baseDefinition) return baseDefinition;
+    return baseDefinition.replaceAll("{{ marker }}", `(${marker})`);
 }
 
 test("Vocabulary declares separate base verb and adverb transform views", () => {
@@ -194,6 +207,45 @@ test("verb transformation trees branch deeply with dynamic readings and definiti
     );
 });
 
+test("causative desire rules expose localized definition markers", () => {
+    const desireRules = schema.transformSets.flatMap(({ rules }) =>
+        rules.filter(({ id }) => id === "causative-desire"),
+    );
+    const verbSets = schema.transformSets.filter(
+        ({ matchTags }) =>
+            matchTags.includes("verb") && !matchTags.includes("godan-aru"),
+    );
+    assert.equal(desireRules.length, verbSets.length);
+    for (const rule of desireRules) {
+        assert.deepEqual(Object.keys(rule.marker.labels).sort(), [
+            "de",
+            "en",
+            "id",
+            "ja",
+        ]);
+    }
+
+    assert.equal(
+        transformedDefinition(
+            "to {{ marker }} eat",
+            { rule: { marker: desireRules[0].marker } },
+            "en",
+        ),
+        "to (want to make or let someone) eat",
+    );
+    assert.equal(
+        transformedDefinition(
+            "to {{ marker }} eat",
+            {
+                definition: { labels: { en: "explicit transformed meaning" } },
+                rule: { marker: desireRules[0].marker },
+            },
+            "en",
+        ),
+        "explicit transformed meaning",
+    );
+});
+
 test("transform declarations are effective, localized, and unambiguous", () => {
     for (const set of schema.transformSets) {
         const transitions = new Set();
@@ -212,6 +264,13 @@ test("transform declarations are effective, localized, and unambiguous", () => {
             ]);
             if (rule.definition)
                 assert.deepEqual(Object.keys(rule.definition.labels).sort(), [
+                    "de",
+                    "en",
+                    "id",
+                    "ja",
+                ]);
+            if (rule.marker)
+                assert.deepEqual(Object.keys(rule.marker.labels).sort(), [
                     "de",
                     "en",
                     "id",
