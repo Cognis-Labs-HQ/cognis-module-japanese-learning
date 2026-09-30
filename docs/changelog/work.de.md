@@ -578,3 +578,9 @@ Aussprachedetails von Sätzen verknüpfen jetzt jedes geordnete Lesungssegment d
 Alle paketierten Aussprachen höherer Ebenen wurden geprüft und auf vollständigen japanischen Text festgelegt, einschließlich der vollständigen Satzrekonstruktion. Die gemeldete gemischte Umschrift und das fehlende letzte Segment entstehen in Cognis PR #226: Die rekursive Ableitung liest das Hepburn-Feld der Kana-Karte vor ihrer atomaren Beschriftung, und das Host-Popup muss die vollständige gruppierte Lesespanne erhalten. Der genaue vorgelagerte Basisfall und die Umbruchregression wurden festgehalten, ohne unsichere Überschreibungen der Host-Oberfläche in dieses externe Paket einzubauen.
 
 - [0906392](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/0906392)
+
+## Lesungstitel-Navigation zu atomaren Kana
+
+Allen ausgeblendeten Kanji-Lesungsdatensätzen wurden ausdrückliche geordnete Titelzusammensetzungen aus atomaren Kana hinzugefügt. Eine mehrteilige Kana-Lesung wie `さん` öffnet nun direkt `さ` und `ん`, sodass der Host nicht mehr die separate ausgeblendete Kanji-Lesungs-Wortschatzkarte `さ` von `小` einsetzen kann. Die vollständigen `kana-spelling`-Beziehungen bleiben für die Aussprachebedeutung erhalten, während die Titelnavigation deterministisch bei Kana endet.
+
+- [8c48fa7](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/8c48fa7)

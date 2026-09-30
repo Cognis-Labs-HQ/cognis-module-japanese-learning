@@ -257,3 +257,7 @@ The Vocabulary layer separates tagged base-form verbs and adverbs into provider-
 ## Complete Japanese Pronunciation Rendering
 
 Atomic Kana keep Hepburn romanization for their own cards, but recursive pronunciation derivation must use each Kana label. Every Kanji, Vocabulary, Particle, and Sentence pronunciation remains Japanese text from beginning to end. Segmented sentence readings must preserve and visibly render the complete concatenated value; title layout may wrap or shrink it but must never clip its final constituent.
+
+## Atomic Kana Reading Titles
+
+Every hidden `reading:kanji` Vocabulary record declares an explicit ordered `reading-title` composition to atomic Kana in addition to its complete `kana-spelling`. The title composition exactly reconstructs the reading and prevents the host's generic label resolver from substituting another hidden Vocabulary record with the same leading Kana. Thus opening `さん` continues to atomic `さ` and `ん`; it never detours through the hidden Kanji reading `さ` used by `小`.

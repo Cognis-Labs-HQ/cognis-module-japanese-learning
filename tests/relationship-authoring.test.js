@@ -205,3 +205,57 @@ test("sentence pronunciations link to each visible constituent card", () => {
         );
     }
 });
+
+test("Kanji reading titles compose directly from atomic Kana", () => {
+    const wordLayer = schema.layers.find(({ id }) => id === "words");
+    const titleRelationship = wordLayer.relationships.find(
+        ({ id }) => id === "reading-title",
+    );
+    assert.deepEqual(
+        {
+            targetLayer: titleRelationship.targetLayer,
+            resolverRole: titleRelationship.resolverRole,
+            presentationRole: titleRelationship.presentationRole,
+            ordered: titleRelationship.ordered,
+        },
+        {
+            targetLayer: "characters",
+            resolverRole: "explicit",
+            presentationRole: "composition",
+            ordered: true,
+        },
+    );
+
+    const readings = words.filter(
+        ({ class: contentClass, hidden }) =>
+            hidden === true && contentClass === "reading:kanji",
+    );
+    assert.ok(readings.length > 0);
+    for (const reading of readings) {
+        const titleReferences = reading.references
+            .filter(({ relation }) => relation === "reading-title")
+            .sort((left, right) => left.position - right.position);
+        assert.equal(
+            titleReferences
+                .map(({ entryId }) => recordsById.get(entryId).label)
+                .join(""),
+            reading.label,
+            reading.id,
+        );
+        assert.ok(
+            titleReferences.every(
+                ({ entryId }) =>
+                    recordsById.get(entryId).fields.character_class,
+            ),
+            reading.id,
+        );
+        assert.equal(
+            titleReferences.some(
+                ({ entryId }) =>
+                    recordsById.get(entryId).class === "reading:kanji",
+            ),
+            false,
+            reading.id,
+        );
+    }
+});

@@ -578,3 +578,9 @@ Sentence pronunciation details now link each ordered reading segment directly to
 Audited every packaged higher-layer pronunciation and locked it to complete Japanese text, including full sentence reconstruction. The reported mixed romanization and missing final segment originate in Cognis PR #226: recursive derivation reads the Kana card's Hepburn field before its atomic label, and the host popup must preserve the complete grouped reading span. Recorded the exact upstream base-case and wrapping regression while keeping this external pack free of unsafe host UI overrides.
 
 - [0906392](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/0906392)
+
+## Atomic Kana Reading-Title Navigation
+
+Added explicit ordered atomic-Kana title compositions to every hidden Kanji-reading record. A multi-Kana reading such as `さん` now opens `さ` and `ん` directly, so the host cannot substitute the separate hidden `さ` Kanji-reading Vocabulary card used by `小`. Complete `kana-spelling` relationships remain intact for pronunciation semantics, while title navigation is deterministic and terminates at Kana.
+
+- [8c48fa7](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/8c48fa7)

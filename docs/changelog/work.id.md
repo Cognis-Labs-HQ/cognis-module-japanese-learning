@@ -578,3 +578,9 @@ Detail pelafalan kalimat kini menautkan setiap segmen bacaan berurutan langsung 
 Setiap pelafalan lapisan atas dalam paket telah diaudit dan dikunci sebagai teks Jepang lengkap, termasuk rekonstruksi kalimat penuh. Romanisasi campuran dan segmen akhir yang hilang berasal dari Cognis PR #226: penurunan rekursif membaca bidang Hepburn kartu Kana sebelum label atomiknya, dan popup host harus mempertahankan rentang bacaan berkelompok secara lengkap. Kasus dasar upstream dan regresi pembungkusan yang tepat telah dicatat tanpa menambahkan penimpaan antarmuka host yang tidak aman ke paket eksternal ini.
 
 - [0906392](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/0906392)
+
+## Navigasi Judul Bacaan ke Kana Atomik
+
+Komposisi judul Kana atomik berurutan yang eksplisit ditambahkan ke setiap rekaman bacaan Kanji tersembunyi. Bacaan multi-Kana seperti `さん` kini membuka `さ` dan `ん` secara langsung, sehingga host tidak dapat menggantikannya dengan kartu Kosakata bacaan Kanji `さ` tersembunyi terpisah yang digunakan oleh `小`. Relasi `kana-spelling` lengkap tetap dipertahankan untuk semantik pelafalan, sedangkan navigasi judul menjadi deterministik dan berakhir pada Kana.
+
+- [8c48fa7](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/8c48fa7)

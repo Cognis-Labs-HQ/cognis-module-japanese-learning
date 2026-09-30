@@ -1,6 +1,6 @@
 {
     "id": "japanese-core",
-    "version": 68,
+    "version": 69,
     "namespace": "ja",
     "language": "ja",
     "metadata": {
@@ -726,6 +726,23 @@
                     "resolverRole": "explicit",
                     "presentationRole": "alternateSpelling",
                     "grouped": true
+                },
+                {
+                    "id": "reading-title",
+                    "targetLayer": "characters",
+                    "metadata": {
+                        "labels": {
+                            "de": "Lesungstitel",
+                            "en": "Reading Title",
+                            "id": "Judul Bacaan",
+                            "ja": "読みタイトル"
+                        }
+                    },
+                    "minimum": 0,
+                    "ordered": true,
+                    "onDelete": "restrict",
+                    "resolverRole": "explicit",
+                    "presentationRole": "composition"
                 },
                 {
                     "id": "definitions",

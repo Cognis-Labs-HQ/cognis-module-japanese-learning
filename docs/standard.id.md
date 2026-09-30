@@ -257,3 +257,7 @@ Lapisan Kosakata memisahkan verba dan adverbia bentuk dasar bertag ke tampilan t
 ## Perenderan Pelafalan Jepang yang Lengkap
 
 Kana atomik mempertahankan romanisasi Hepburn untuk kartunya sendiri, tetapi penurunan pelafalan rekursif harus memakai label Kana. Setiap pelafalan Kanji, Kosakata, Partikel, dan Kalimat tetap berupa teks Jepang dari awal hingga akhir. Bacaan kalimat tersegmentasi harus mempertahankan dan menampilkan nilai gabungan lengkap; tata letak judul boleh membungkus atau mengecilkannya, tetapi tidak boleh memotong konstituen terakhir.
+
+## Judul Bacaan dari Kana Atomik
+
+Setiap rekaman Kosakata `reading:kanji` tersembunyi mendeklarasikan komposisi `reading-title` berurutan yang eksplisit menuju Kana atomik, selain `kana-spelling` lengkapnya. Komposisi judul merekonstruksi bacaan secara tepat dan mencegah resolver label generik host menggantinya dengan rekaman Kosakata tersembunyi lain yang memiliki Kana awal sama. Karena itu, membuka `さん` berlanjut ke `さ` dan `ん` atomik, dan tidak pernah berbelok melalui bacaan Kanji tersembunyi `さ` yang digunakan oleh `小`.

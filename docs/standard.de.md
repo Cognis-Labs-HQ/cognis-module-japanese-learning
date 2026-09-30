@@ -257,3 +257,7 @@ Die Wortschatzebene trennt markierte Grundformen von Verben und Adverbien in anb
 ## Vollständige Darstellung japanischer Aussprache
 
 Atomare Kana behalten die Hepburn-Umschrift für ihre eigenen Karten, bei der rekursiven Ausspracheableitung muss jedoch die jeweilige Kana-Beschriftung verwendet werden. Jede Aussprache von Kanji, Wortschatz, Partikeln und Sätzen bleibt vom Anfang bis zum Ende japanischer Text. Segmentierte Satzlesungen müssen den vollständig zusammengesetzten Wert erhalten und sichtbar darstellen; das Titellayout darf ihn umbrechen oder verkleinern, aber niemals den letzten Bestandteil abschneiden.
+
+## Lesungstitel aus atomaren Kana
+
+Jeder ausgeblendete `reading:kanji`-Wortschatzeintrag deklariert zusätzlich zu seiner vollständigen `kana-spelling`-Form eine ausdrückliche geordnete `reading-title`-Zusammensetzung aus atomaren Kana. Die Titelzusammensetzung rekonstruiert die Lesung exakt und verhindert, dass der generische Label-Resolver des Hosts einen anderen ausgeblendeten Wortschatzeintrag mit demselben führenden Kana einsetzt. Beim Öffnen von `さん` geht es daher zu den atomaren Zeichen `さ` und `ん` weiter und niemals über die von `小` verwendete ausgeblendete Kanji-Lesung `さ`.
