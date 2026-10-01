@@ -346,14 +346,14 @@
     },
     {
         "id": "ja:def:taberu",
-        "label": "to eat",
+        "label": "to {{ marker }} eat",
         "fields": {
             "string_key": "japanese:definitions:taberu",
             "translations": {
-                "de": "essen",
-                "en": "to eat",
-                "id": "makan",
-                "ja": "食べる"
+                "de": "{{ marker }} essen",
+                "en": "to {{ marker }} eat",
+                "id": "{{ marker }} makan",
+                "ja": "{{ marker }}食べる"
             }
         },
         "class": "definition",
@@ -361,14 +361,14 @@
     },
     {
         "id": "ja:def:nomu",
-        "label": "to drink",
+        "label": "to {{ marker }} drink",
         "fields": {
             "string_key": "japanese:definitions:nomu",
             "translations": {
-                "de": "trinken",
-                "en": "to drink",
-                "id": "minum",
-                "ja": "飲む"
+                "de": "{{ marker }} trinken",
+                "en": "to {{ marker }} drink",
+                "id": "{{ marker }} minum",
+                "ja": "{{ marker }}飲む"
             }
         },
         "class": "definition",
@@ -376,14 +376,14 @@
     },
     {
         "id": "ja:def:miru-see",
-        "label": "to see",
+        "label": "to {{ marker }} see",
         "fields": {
             "string_key": "japanese:definitions:miru-see",
             "translations": {
-                "de": "sehen",
-                "en": "to see",
-                "id": "melihat",
-                "ja": "見る"
+                "de": "{{ marker }} sehen",
+                "en": "to {{ marker }} see",
+                "id": "{{ marker }} melihat",
+                "ja": "{{ marker }}見る"
             }
         },
         "class": "definition",
@@ -391,14 +391,14 @@
     },
     {
         "id": "ja:def:miru-watch",
-        "label": "to watch",
+        "label": "to {{ marker }} watch",
         "fields": {
             "string_key": "japanese:definitions:miru-watch",
             "translations": {
-                "de": "anschauen",
-                "en": "to watch",
-                "id": "menonton",
-                "ja": "観る"
+                "de": "{{ marker }} anschauen",
+                "en": "to {{ marker }} watch",
+                "id": "{{ marker }} menonton",
+                "ja": "{{ marker }}観る"
             }
         },
         "class": "definition",
@@ -406,14 +406,14 @@
     },
     {
         "id": "ja:def:iku",
-        "label": "to go",
+        "label": "to {{ marker }} go",
         "fields": {
             "string_key": "japanese:definitions:iku",
             "translations": {
-                "de": "gehen",
-                "en": "to go",
-                "id": "pergi",
-                "ja": "行く"
+                "de": "{{ marker }} gehen",
+                "en": "to {{ marker }} go",
+                "id": "{{ marker }} pergi",
+                "ja": "{{ marker }}行く"
             }
         },
         "class": "definition",
@@ -421,14 +421,14 @@
     },
     {
         "id": "ja:def:kuru",
-        "label": "to come",
+        "label": "to {{ marker }} come",
         "fields": {
             "string_key": "japanese:definitions:kuru",
             "translations": {
-                "de": "kommen",
-                "en": "to come",
-                "id": "datang",
-                "ja": "来る"
+                "de": "{{ marker }} kommen",
+                "en": "to {{ marker }} come",
+                "id": "{{ marker }} datang",
+                "ja": "{{ marker }}来る"
             }
         },
         "class": "definition",
@@ -466,14 +466,14 @@
     },
     {
         "id": "ja:def:naosu-fix",
-        "label": "to repair",
+        "label": "to {{ marker }} repair",
         "fields": {
             "string_key": "japanese:definitions:naosu-fix",
             "translations": {
-                "de": "reparieren",
-                "en": "to repair",
-                "id": "memperbaiki",
-                "ja": "修理する"
+                "de": "{{ marker }} reparieren",
+                "en": "to {{ marker }} repair",
+                "id": "{{ marker }} memperbaiki",
+                "ja": "{{ marker }}修理する"
             }
         },
         "class": "definition",
@@ -481,29 +481,44 @@
     },
     {
         "id": "ja:def:naosu-correct",
-        "label": "to correct",
+        "label": "to {{ marker }} correct",
         "fields": {
             "string_key": "japanese:definitions:naosu-correct",
             "translations": {
-                "de": "korrigieren",
-                "en": "to correct",
-                "id": "mengoreksi",
-                "ja": "訂正する"
+                "de": "{{ marker }} korrigieren",
+                "en": "to {{ marker }} correct",
+                "id": "{{ marker }} mengoreksi",
+                "ja": "{{ marker }}訂正する"
             }
         },
         "class": "definition",
         "hidden": true
     },
     {
-        "id": "ja:def:manabu",
-        "label": "to learn; to study",
+        "id": "ja:def:manabu-learn",
+        "label": "to {{ marker }} learn",
         "fields": {
-            "string_key": "japanese:definitions:manabu",
+            "string_key": "japanese:definitions:manabu-learn",
             "translations": {
-                "de": "lernen; studieren",
-                "en": "to learn; to study",
-                "id": "belajar; mempelajari",
-                "ja": "学ぶ・勉強する"
+                "de": "{{ marker }} lernen",
+                "en": "to {{ marker }} learn",
+                "id": "{{ marker }} belajar",
+                "ja": "{{ marker }}学ぶ"
+            }
+        },
+        "class": "definition",
+        "hidden": true
+    },
+    {
+        "id": "ja:def:manabu-study",
+        "label": "to {{ marker }} study",
+        "fields": {
+            "string_key": "japanese:definitions:manabu-study",
+            "translations": {
+                "de": "{{ marker }} studieren",
+                "en": "to {{ marker }} study",
+                "id": "{{ marker }} mempelajari",
+                "ja": "{{ marker }}勉強する"
             }
         },
         "class": "definition",
@@ -511,14 +526,14 @@
     },
     {
         "id": "ja:def:aruku",
-        "label": "to walk",
+        "label": "to {{ marker }} walk",
         "fields": {
             "string_key": "japanese:definitions:aruku",
             "translations": {
-                "de": "zu Fuß gehen",
-                "en": "to walk",
-                "id": "berjalan kaki",
-                "ja": "歩く"
+                "de": "{{ marker }} zu Fuß gehen",
+                "en": "to {{ marker }} walk",
+                "id": "{{ marker }} berjalan kaki",
+                "ja": "{{ marker }}歩く"
             }
         },
         "class": "definition",

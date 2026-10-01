@@ -93,9 +93,7 @@ function annotatedDefinitions(baseDefinitions, node, language) {
     const marker = localized(node.rule?.marker);
     if (!marker) return baseDefinitions;
     return baseDefinitions.map((definition) =>
-        language === "en" && definition.startsWith("to ")
-            ? `to (${marker}) ${definition.slice(3)}`
-            : `(${marker}) ${definition}`,
+        definition.replaceAll("{{ marker }}", `(${marker})`),
     );
 }
 
@@ -235,17 +233,10 @@ test("desire transforms each definition of 見る independently", () => {
             ({ entryId }) =>
                 definitionsById.get(entryId).fields.translations.en,
         );
-    assert.deepEqual(baseDefinitions, ["to see", "to watch"]);
-    assert.ok(
-        definitions.every(
-            ({ label, fields }) =>
-                !label.includes("{{ marker }}") &&
-                Object.values(fields.translations).every(
-                    (translation) => !translation.includes("{{ marker }}"),
-                ),
-        ),
-        "canonical definitions must stay placeholder-free",
-    );
+    assert.deepEqual(baseDefinitions, [
+        "to {{ marker }} see",
+        "to {{ marker }} watch",
+    ]);
 
     const desire = transformationNodes(miru).find(
         ({ state }) => state === "desire",
@@ -256,6 +247,42 @@ test("desire transforms each definition of 見る independently", () => {
         "to (want to) see",
         "to (want to) watch",
     ]);
+});
+
+test("every verb definition provides exactly one localized marker slot", () => {
+    const definitionsById = new Map(
+        definitions.map((entry) => [entry.id, entry]),
+    );
+    const verbs = words.filter(
+        ({ hidden, tags }) => hidden !== true && tags?.includes("verb"),
+    );
+    for (const verb of verbs) {
+        const definitionIds = verb.references
+            .filter(({ relation }) => relation === "definitions")
+            .map(({ entryId }) => entryId);
+        assert.ok(definitionIds.length > 0, verb.id);
+        for (const definitionId of definitionIds) {
+            const definition = definitionsById.get(definitionId);
+            assert.equal(
+                definition.label.split("{{ marker }}").length - 1,
+                1,
+                definitionId,
+            );
+            assert.deepEqual(
+                Object.keys(definition.fields.translations).sort(),
+                ["de", "en", "id", "ja"],
+                definitionId,
+            );
+            for (const translation of Object.values(
+                definition.fields.translations,
+            ))
+                assert.equal(
+                    translation.split("{{ marker }}").length - 1,
+                    1,
+                    definitionId,
+                );
+        }
+    }
 });
 
 test("transform declarations are effective, localized, and unambiguous", () => {

@@ -643,12 +643,28 @@ Jede bereitgestellte Verbtransformation besitzt nun lokalisierte Marker-Metadate
 
 ## Unabhängige mehrdeutige Definitionen
 
-`見る` verweist nun getrennt auf die Definitionen „sehen“ und „anschauen“. Regressionstests wenden den Wunschmarker unabhängig auf jede Definition an und verlangen, dass kanonische Definitionen frei von `{{ marker }}`-Platzhaltern bleiben.
+`見る` verweist nun getrennt auf die Definitionen „sehen“ und „anschauen“. Regressionstests wenden den Wunschmarker unabhängig auf jede Definition an; jede lokalisierte Verbdefinition enthält nun den erforderlichen `{{ marker }}`-Platzhalter.
 
 ## Strukturierte Cognis-Nacharbeit
 
-Die derzeitige Cognis-Implementierung für einen einzelnen Platzhalterstring kann diesen Vertrag nicht erfüllen, ohne Platzhalter auf Grundformkarten sichtbar zu machen. Der dokumentierte Host-Vorschlag führt das vollständige Definitionsarray durch die Transformationsdarstellung und wendet die lokalisierte Platzierung auf jede Definition an, ohne gespeicherte Inhalte zu ändern.
+Das Paket folgt dem Cognis-Markervertrag direkt, indem jede lokalisierte Verbdefinition genau einen `{{ marker }}`-Platzhalter enthält und getrennte Definitionsdatensätze bei der Transformationsdarstellung erhalten bleiben.
 
 ## Commits
 
 - [64ce852](../../commit/64ce852) — Jede Verbtransformation mit Definitionsanmerkungen versehen.
+
+## Marker-Platzhalter in Verbdefinitionen ergänzt
+
+Jede lokalisierte Definition, auf die ein Verb verweist, enthält nun genau einen `{{ marker }}`-Platzhalter an der grammatisch passenden Einfügestelle. Cognis kann dadurch die beiden Definitionen von `見る` ohne Raten in `to (want to) see` und `to (want to) watch` umwandeln.
+
+## Mehrdeutige Definitionen bleiben getrennt
+
+Die kombinierte Bedeutung von `学ぶ` wurde in getrennte Definitionsdatensätze für „lernen“ und „studieren“ aufgeteilt, entsprechend der vorhandenen Aufteilung für `見る`. Tests verlangen für jede sichtbare Verbdefinition und jede Sprache genau einen Marker-Platzhalter.
+
+## Versionsabgleich
+
+Das Modul wird auf `2.2.74`, die Inhaltsrevision auf `2026-10-01.2` und das japanische Schema auf Revision `79` angehoben; die Pakethashes wurden neu erzeugt.
+
+## Commits
+
+- [f6c7201](../../commit/f6c7201) — Transformationsmarker in Verbdefinitionen platziert.

@@ -46,14 +46,14 @@
     },
     {
         "id": "ja:def:iru-exist",
-        "label": "to exist (animate)",
+        "label": "to {{ marker }} exist (animate)",
         "fields": {
             "string_key": "japanese:definitions:iru-exist",
             "translations": {
-                "de": "da sein (belebt)",
-                "en": "to exist (animate)",
-                "id": "ada (makhluk hidup)",
-                "ja": "いる"
+                "de": "{{ marker }} da sein (belebt)",
+                "en": "to {{ marker }} exist (animate)",
+                "id": "{{ marker }} ada (makhluk hidup)",
+                "ja": "{{ marker }}いる"
             }
         },
         "class": "definition",
@@ -61,14 +61,14 @@
     },
     {
         "id": "ja:def:aru-exist",
-        "label": "to exist (inanimate)",
+        "label": "to {{ marker }} exist (inanimate)",
         "fields": {
             "string_key": "japanese:definitions:aru-exist",
             "translations": {
-                "de": "vorhanden sein (unbelebt)",
-                "en": "to exist (inanimate)",
-                "id": "ada (benda mati)",
-                "ja": "ある"
+                "de": "{{ marker }} vorhanden sein (unbelebt)",
+                "en": "to {{ marker }} exist (inanimate)",
+                "id": "{{ marker }} ada (benda mati)",
+                "ja": "{{ marker }}ある"
             }
         },
         "class": "definition",

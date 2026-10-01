@@ -643,12 +643,28 @@ Setiap transformasi verba yang disediakan kini memiliki metadata penanda terloka
 
 ## Definisi Polisemi yang Mandiri
 
-`見る` kini merujuk rekaman definisi “to see” dan “to watch” secara terpisah. Cakupan regresi menerapkan penanda keinginan pada setiap definisi secara mandiri dan mewajibkan definisi kanonis bebas dari placeholder `{{ marker }}`.
+`見る` kini merujuk rekaman definisi “to see” dan “to watch” secara terpisah. Cakupan regresi menerapkan penanda keinginan pada setiap definisi secara mandiri; setiap definisi verba terlokalisasi kini memuat slot `{{ marker }}` yang diwajibkan.
 
 ## Tindak Lanjut Cognis Terstruktur
 
-Implementasi placeholder satu string Cognis saat ini tidak dapat memenuhi kontrak ini tanpa membocorkan placeholder pada kartu bentuk dasar. Usulan host yang didokumentasikan meneruskan seluruh larik definisi melalui presentasi transformasi dan menerapkan penempatan terlokalisasi pada setiap definisi tanpa mengubah konten tersimpan.
+Paket mengikuti kontrak penanda Cognis secara langsung dengan menempatkan tepat satu slot `{{ marker }}` pada setiap definisi verba terlokalisasi dan mempertahankan rekaman definisi terpisah selama presentasi transformasi.
 
 ## Commit
 
 - [64ce852](../../commit/64ce852) — Menganotasi setiap definisi transformasi verba.
+
+## Slot Penanda Ditambahkan ke Definisi Verba
+
+Setiap definisi terlokalisasi yang dirujuk verba kini memuat tepat satu slot `{{ marker }}` pada posisi tata bahasa yang benar. Cognis dapat mengubah dua definisi `見る` menjadi `to (want to) see` dan `to (want to) watch` tanpa menebak posisi anotasi transformasi.
+
+## Definisi Polisemi Tetap Mandiri
+
+Makna gabungan `学ぶ` dipisahkan menjadi rekaman definisi “to learn” dan “to study”, mengikuti pemisahan yang sudah ada untuk `見る`. Pengujian mewajibkan tepat satu slot penanda pada setiap definisi verba yang terlihat dan setiap bahasa.
+
+## Sinkronisasi Versi
+
+Modul dinaikkan ke `2.2.74`, revisi konten `2026-10-01.2`, dan revisi skema bahasa Jepang `79`, disertai hash paket yang dibuat ulang.
+
+## Commit
+
+- [f6c7201](../../commit/f6c7201) — Menempatkan penanda transformasi pada definisi verba.

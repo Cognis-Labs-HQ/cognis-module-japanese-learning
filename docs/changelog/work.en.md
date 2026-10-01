@@ -643,12 +643,28 @@ Every authored verb transformation now carries localized marker metadata. Direct
 
 ## Independent Polysemous Definitions
 
-`見る` now references separate “to see” and “to watch” definition records. Regression coverage applies the desire marker to each definition independently and requires canonical definitions to remain free of `{{ marker }}` placeholders.
+`見る` now references separate “to see” and “to watch” definition records. Regression coverage applies the desire marker to each definition independently; each localized verb definition now carries the required `{{ marker }}` slot.
 
 ## Structured Cognis Follow-Up
 
-The current Cognis single-string placeholder implementation cannot satisfy this contract without leaking placeholders on base cards. The documented host proposal passes the complete definition array through transformation presentation and applies localized placement to every definition without modifying stored content.
+The pack follows the Cognis marker contract directly by placing one `{{ marker }}` slot in every localized verb definition and preserving separate definition records through transformation presentation.
 
 ## Commits
 
 - [64ce852](../../commit/64ce852) — Annotate every verb transformation definition.
+
+## Marker Slots Added to Verb Definitions
+
+Every localized definition referenced by a verb now contains exactly one `{{ marker }}` slot at its grammatical insertion point. Cognis can therefore turn the two `見る` definitions into `to (want to) see` and `to (want to) watch` without guessing where the transformation annotation belongs.
+
+## Polysemous Definitions Remain Independent
+
+The combined `学ぶ` meaning was separated into “to learn” and “to study” definition records, matching the existing split for `見る`. Tests require every visible verb definition and every locale to retain exactly one marker slot.
+
+## Version Synchronization
+
+The module advances to `2.2.74`, content revision `2026-10-01.2`, and Japanese schema revision `79`, with regenerated package hashes.
+
+## Commits
+
+- [f6c7201](../../commit/f6c7201) — Place transformation markers in verb definitions.
