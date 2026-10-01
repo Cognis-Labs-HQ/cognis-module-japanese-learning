@@ -700,3 +700,19 @@ The module advances to `2.2.76`, content revision `2026-10-01.4`, and Japanese s
 ## Commits
 
 - [a5539e6](../../commit/a5539e6) — Add contextual definition replacements.
+
+## Aspect-Correct Drawing Patterns
+
+Every packaged stroke pattern now declares its logical column count. Cognis Drawing Practice can fit single and multi-character patterns into its aspect-preserving viewport instead of stretching the canvas or distributing characters through incorrectly sized cells.
+
+## Character-Aware Stroke Testing
+
+Stroke patterns now publish ordered per-character group lengths, and remotely fetched multi-character patterns preserve the same metadata. This lets next-stroke guidance and hidden-guide testing retain character boundaries. A host follow-up records that compound patterns must preserve authored groups and vocabulary composition should use bounds-aware optical spacing.
+
+## Version Synchronization
+
+The module advances to `2.2.77`, content revision `2026-10-01.5`, and Japanese schema revision `82`, with regenerated package hashes.
+
+## Commits
+
+- [7c2c0db](../../commit/7c2c0db) — Preserve drawing aspect and stroke groups.

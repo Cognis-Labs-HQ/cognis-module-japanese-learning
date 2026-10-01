@@ -34,6 +34,7 @@ function patternFromSvg(svg, characterIndex, characterCount) {
 async function fetchPattern(label, fetchImplementation, sourceBaseUrl) {
     const characters = [...label];
     const strokes = [];
+    const groups = [];
     const sourceUrls = [];
     for (const [characterIndex, character] of characters.entries()) {
         const codePoint = character
@@ -51,11 +52,23 @@ async function fetchPattern(label, fetchImplementation, sourceBaseUrl) {
         }
         const svg = await response.text();
         if (svg.length > 1_000_000) throw new Error("stroke_source_too_large");
-        strokes.push(...patternFromSvg(svg, characterIndex, characters.length));
+        const characterStrokes = patternFromSvg(
+            svg,
+            characterIndex,
+            characters.length,
+        );
+        strokes.push(...characterStrokes);
+        groups.push(characterStrokes.length);
         sourceUrls.push(sourceUrl);
     }
     return {
-        pattern: { coordinateSystem: "normalized", tolerance: 60, strokes },
+        pattern: {
+            coordinateSystem: "normalized",
+            tolerance: 60,
+            strokes,
+            groups,
+            columns: characters.length,
+        },
         provenance: `kanjivg:${sourceUrls.join(",")}`,
     };
 }

@@ -19,6 +19,19 @@ function assertStrokePattern(record) {
     assert.equal(pattern.coordinateSystem, "normalized", record.id);
     assert.equal(pattern.tolerance, 60, record.id);
     assert.ok(pattern.strokes.length > 0, `${record.id} requires strokes`);
+    const characterCount = [...record.label].length;
+    assert.equal(pattern.columns ?? 1, characterCount, record.id);
+    const groups = pattern.groups ?? [pattern.strokes.length];
+    assert.equal(groups.length, characterCount, record.id);
+    assert.equal(
+        groups.reduce((sum, count) => sum + count, 0),
+        pattern.strokes.length,
+        record.id,
+    );
+    if (characterCount > 1) {
+        assert.equal(pattern.columns, characterCount, record.id);
+        assert.deepEqual(pattern.groups, groups, record.id);
+    }
     for (const stroke of pattern.strokes) {
         assert.ok(
             stroke.points.length >= 3,
@@ -116,6 +129,11 @@ test("compound Kana preserve visibly smaller small-form components", () => {
         kyo.fields.stroke_pattern.strokes.length,
         firstStrokeCount + smallYo.fields.stroke_pattern.strokes.length,
     );
+    assert.deepEqual(kyo.fields.stroke_pattern.groups, [
+        firstStrokeCount,
+        smallYo.fields.stroke_pattern.strokes.length,
+    ]);
+    assert.equal(kyo.fields.stroke_pattern.columns, 2);
     assert.ok(smallBounds.width < fullBounds.width * 0.7);
     assert.ok(smallBounds.height < fullBounds.height);
 });

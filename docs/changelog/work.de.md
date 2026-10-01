@@ -700,3 +700,19 @@ Das Modul wird auf `2.2.76`, die Inhaltsrevision auf `2026-10-01.4` und das japa
 ## Commits
 
 - [a5539e6](../../commit/a5539e6) — Kontextabhängige Definitionsersetzungen ergänzt.
+
+## Seitenverhältnisgerechte Zeichenmuster
+
+Jedes paketierte Strichmuster deklariert nun seine logische Spaltenzahl. Die Cognis-Zeichenübung kann Einzel- und Mehrzeichenmuster in den seitenverhältnistreuen Darstellungsbereich einpassen, statt die Zeichenfläche zu verzerren oder Zeichen auf falsch bemessene Zellen zu verteilen.
+
+## Zeichenbezogene Strichprüfung
+
+Strichmuster veröffentlichen nun geordnete Gruppenlängen pro Zeichen; auch entfernte Mehrzeichenmuster bewahren dieselben Metadaten. Dadurch behalten Hinweise zum nächsten Strich und Tests mit ausgeblendeten Hilfen die Zeichengrenzen bei. Eine Host-Nacharbeit hält fest, dass Verbundmuster erstellte Gruppen bewahren und Wortschatzzusammensetzungen optische, begrenzungsabhängige Abstände verwenden müssen.
+
+## Versionsabgleich
+
+Das Modul wird auf `2.2.77`, die Inhaltsrevision auf `2026-10-01.5` und das japanische Schema auf Revision `82` angehoben; die Pakethashes wurden neu erzeugt.
+
+## Commits
+
+- [7c2c0db](../../commit/7c2c0db) — Zeichenseitenverhältnis und Strichgruppen bewahrt.

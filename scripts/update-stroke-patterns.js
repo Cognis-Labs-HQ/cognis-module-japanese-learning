@@ -50,15 +50,22 @@ async function characterStrokes(character, characterIndex, characters) {
 async function strokePattern(label) {
     const characters = [...label];
     const strokes = [];
+    const groups = [];
     for (const [characterIndex, character] of characters.entries()) {
-        strokes.push(
-            ...(await characterStrokes(character, characterIndex, characters)),
+        const strokesForCharacter = await characterStrokes(
+            character,
+            characterIndex,
+            characters,
         );
+        strokes.push(...strokesForCharacter);
+        groups.push(strokesForCharacter.length);
     }
     return {
         coordinateSystem: "normalized",
         tolerance: 60,
         strokes,
+        groups,
+        columns: characters.length,
     };
 }
 

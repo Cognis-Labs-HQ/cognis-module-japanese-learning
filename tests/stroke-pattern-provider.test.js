@@ -50,6 +50,10 @@ test("stroke provider returns the packaged Kanji pattern", async () => {
     assert.equal(pattern.tolerance, 60);
     assert.ok(pattern.strokes.length > 0);
     assert.ok(pattern.strokes.every(({ points }) => points.length >= 3));
+    assert.equal(pattern.columns ?? 1, 1);
+    assert.deepEqual(pattern.groups ?? [pattern.strokes.length], [
+        pattern.strokes.length,
+    ]);
 });
 
 test("stroke provider returns no suggestion for unknown labels", async () => {
@@ -96,6 +100,29 @@ test("stroke provider fetches any unpackaged Japanese writing unit", async () =>
     );
     assert.equal(suggestion.confidence, 1);
     assert.ok(suggestion.fields.stroke_pattern.strokes[0].points.length >= 4);
+});
+
+test("remote multi-character patterns preserve drawing columns and groups", async () => {
+    const provider = createStrokePatternProvider({
+        contentRoot,
+        async fetchImplementation() {
+            return {
+                ok: true,
+                async text() {
+                    return '<svg><path d="M10 10 C20 20 30 30 40 40"/></svg>';
+                },
+            };
+        },
+    });
+    const [suggestion] = await provider.lookup({
+        schema,
+        layer: KanjiLayer,
+        label: "龍龜",
+    });
+    const pattern = suggestion.fields.stroke_pattern;
+    assert.equal(pattern.columns, 2);
+    assert.deepEqual(pattern.groups, [1, 1]);
+    assert.equal(pattern.strokes.length, 2);
 });
 
 test("stroke provider never sends non-Japanese labels to the source", async () => {

@@ -700,3 +700,19 @@ Modul dinaikkan ke `2.2.76`, revisi konten `2026-10-01.4`, dan revisi skema baha
 ## Commit
 
 - [a5539e6](../../commit/a5539e6) — Menambahkan penggantian definisi kontekstual.
+
+## Pola Gambar dengan Rasio Aspek yang Benar
+
+Setiap pola goresan dalam paket kini mendeklarasikan jumlah kolom logisnya. Latihan Menggambar Cognis dapat menyesuaikan pola satu atau beberapa karakter ke viewport yang mempertahankan rasio aspek, alih-alih meregangkan kanvas atau menyebarkan karakter ke sel berukuran salah.
+
+## Pengujian Goresan yang Memahami Karakter
+
+Pola goresan kini menerbitkan panjang kelompok berurutan untuk setiap karakter; pola multikarakter yang diambil dari sumber jarak jauh mempertahankan metadata yang sama. Panduan goresan berikutnya dan pengujian panduan tersembunyi dapat mempertahankan batas karakter. Tindak lanjut host mencatat bahwa pola majemuk harus mempertahankan kelompok yang ditulis dan komposisi kosakata harus memakai jarak optis berbasis batas.
+
+## Sinkronisasi Versi
+
+Modul dinaikkan ke `2.2.77`, revisi konten `2026-10-01.5`, dan revisi skema bahasa Jepang `82`, disertai hash paket yang dibuat ulang.
+
+## Commit
+
+- [7c2c0db](../../commit/7c2c0db) — Mempertahankan rasio gambar dan kelompok goresan.
