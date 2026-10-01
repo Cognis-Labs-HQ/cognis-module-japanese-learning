@@ -684,3 +684,19 @@ Modul dinaikkan ke `2.2.75`, revisi konten `2026-10-01.3`, dan revisi skema baha
 ## Commit
 
 - [739beba](../../commit/739beba) — Mengadopsi transformasi definisi yang dapat disusun.
+
+## Penggantian Definisi Kontekstual
+
+Transformasi definisi kini memakai `replacements` terlokalisasi dan berurutan dari Cognis 2.24.1 sebelum templat cadangan. Cabang lampau dan negatif dapat menulis ulang semantik keinginan, kausatif, sopan, dan kondisional sebelumnya, sedangkan cabang penghubung menambahkan makna ke definisi hasil transformasi lengkap melalui `{{ definition }}`.
+
+## Cakupan Rantai Kontekstual
+
+Pengujian memverifikasi bahwa `to (want to) see` menjadi `to (have wanted to) see`, bentuk keinginan penghubung menjadi `to (want to) see (and then)`, dan jalur keinginan kausatif terdalam mempertahankan makna kontekstual lengkapnya.
+
+## Sinkronisasi Versi
+
+Modul dinaikkan ke `2.2.76`, revisi konten `2026-10-01.4`, dan revisi skema bahasa Jepang `81`, disertai hash paket yang dibuat ulang.
+
+## Commit
+
+- [a5539e6](../../commit/a5539e6) — Menambahkan penggantian definisi kontekstual.

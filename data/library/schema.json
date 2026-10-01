@@ -1,6 +1,6 @@
 {
     "id": "japanese-core",
-    "version": 80,
+    "version": 81,
     "namespace": "ja",
     "language": "ja",
     "metadata": {
@@ -1131,10 +1131,10 @@
                         },
                         "template": {
                             "labels": {
-                                "de": "{{ prefix }}(und dann) {{ stem }}",
-                                "en": "{{ prefix }}(and then) {{ stem }}",
-                                "id": "{{ prefix }}(lalu) {{ stem }}",
-                                "ja": "{{ prefix }}（接続）{{ stem }}"
+                                "de": "{{ definition }} (und dann)",
+                                "en": "{{ definition }} (and then)",
+                                "id": "{{ definition }} (lalu)",
+                                "ja": "{{ definition }}（接続）"
                             }
                         }
                     }
@@ -1173,7 +1173,27 @@
                                 "id": "{{ prefix }}(sebelumnya) {{ stem }}",
                                 "ja": "{{ prefix }}（過去）{{ stem }}"
                             }
-                        }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(höflich)",
+                                        "en": "(politely)",
+                                        "id": "(dengan sopan)",
+                                        "ja": "(丁寧に)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(höflich in der Vergangenheit)",
+                                        "en": "(politely in the past)",
+                                        "id": "(dengan sopan pada masa lampau)",
+                                        "ja": "(丁寧な過去)"
+                                    }
+                                }
+                            }
+                        ]
                     }
                 },
                 {
@@ -1210,7 +1230,27 @@
                                 "id": "{{ prefix }}(tidak) {{ stem }}",
                                 "ja": "{{ prefix }}（否定）{{ stem }}"
                             }
-                        }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(höflich)",
+                                        "en": "(politely)",
+                                        "id": "(dengan sopan)",
+                                        "ja": "(丁寧に)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(höflich nicht)",
+                                        "en": "(politely not)",
+                                        "id": "(dengan sopan tidak)",
+                                        "ja": "(丁寧な否定)"
+                                    }
+                                }
+                            }
+                        ]
                     }
                 },
                 {
@@ -1247,7 +1287,27 @@
                                 "id": "{{ prefix }}(sebelumnya) {{ stem }}",
                                 "ja": "{{ prefix }}（過去）{{ stem }}"
                             }
-                        }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(nicht)",
+                                        "en": "(not)",
+                                        "id": "(tidak)",
+                                        "ja": "(否定)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(nicht in der Vergangenheit)",
+                                        "en": "(did not)",
+                                        "id": "(tidak pada masa lampau)",
+                                        "ja": "(否定過去)"
+                                    }
+                                }
+                            }
+                        ]
                     }
                 },
                 {
@@ -1279,10 +1339,10 @@
                         },
                         "template": {
                             "labels": {
-                                "de": "{{ prefix }}(und dann) {{ stem }}",
-                                "en": "{{ prefix }}(and then) {{ stem }}",
-                                "id": "{{ prefix }}(lalu) {{ stem }}",
-                                "ja": "{{ prefix }}（接続）{{ stem }}"
+                                "de": "{{ definition }} (und dann)",
+                                "en": "{{ definition }} (and then)",
+                                "id": "{{ definition }} (lalu)",
+                                "ja": "{{ definition }}（接続）"
                             }
                         }
                     }
@@ -1358,7 +1418,27 @@
                                 "id": "{{ prefix }}(tidak) {{ stem }}",
                                 "ja": "{{ prefix }}（否定）{{ stem }}"
                             }
-                        }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(wollen)",
+                                        "en": "(want to)",
+                                        "id": "(ingin)",
+                                        "ja": "(希望)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(nicht wollen)",
+                                        "en": "(not want to)",
+                                        "id": "(tidak ingin)",
+                                        "ja": "(希望否定)"
+                                    }
+                                }
+                            }
+                        ]
                     }
                 },
                 {
@@ -1395,7 +1475,27 @@
                                 "id": "{{ prefix }}(sebelumnya) {{ stem }}",
                                 "ja": "{{ prefix }}（過去）{{ stem }}"
                             }
-                        }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(wollen)",
+                                        "en": "(want to)",
+                                        "id": "(ingin)",
+                                        "ja": "(希望)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(gewollt haben)",
+                                        "en": "(have wanted to)",
+                                        "id": "(pernah ingin)",
+                                        "ja": "(希望過去)"
+                                    }
+                                }
+                            }
+                        ]
                     }
                 },
                 {
@@ -1427,10 +1527,10 @@
                         },
                         "template": {
                             "labels": {
-                                "de": "{{ prefix }}(und dann) {{ stem }}",
-                                "en": "{{ prefix }}(and then) {{ stem }}",
-                                "id": "{{ prefix }}(lalu) {{ stem }}",
-                                "ja": "{{ prefix }}（接続）{{ stem }}"
+                                "de": "{{ definition }} (und dann)",
+                                "en": "{{ definition }} (and then)",
+                                "id": "{{ definition }} (lalu)",
+                                "ja": "{{ definition }}（接続）"
                             }
                         }
                     }
@@ -1617,7 +1717,27 @@
                                 "id": "{{ prefix }}(tidak) {{ stem }}",
                                 "ja": "{{ prefix }}（否定）{{ stem }}"
                             }
-                        }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(jemanden dazu bringen oder es zulassen)",
+                                        "en": "(make or let someone)",
+                                        "id": "(membuat atau membiarkan seseorang)",
+                                        "ja": "(使役)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(jemanden nicht dazu bringen oder es nicht zulassen)",
+                                        "en": "(not make or let someone)",
+                                        "id": "(tidak membuat atau membiarkan seseorang)",
+                                        "ja": "(使役否定)"
+                                    }
+                                }
+                            }
+                        ]
                     }
                 },
                 {
@@ -1654,7 +1774,27 @@
                                 "id": "{{ prefix }}(sebelumnya) {{ stem }}",
                                 "ja": "{{ prefix }}（過去）{{ stem }}"
                             }
-                        }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(jemanden dazu bringen oder es zulassen)",
+                                        "en": "(make or let someone)",
+                                        "id": "(membuat atau membiarkan seseorang)",
+                                        "ja": "(使役)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(jemanden dazu gebracht oder es zugelassen haben)",
+                                        "en": "(made or let someone)",
+                                        "id": "(telah membuat atau membiarkan seseorang)",
+                                        "ja": "(使役過去)"
+                                    }
+                                }
+                            }
+                        ]
                     }
                 },
                 {
@@ -1686,10 +1826,10 @@
                         },
                         "template": {
                             "labels": {
-                                "de": "{{ prefix }}(und dann) {{ stem }}",
-                                "en": "{{ prefix }}(and then) {{ stem }}",
-                                "id": "{{ prefix }}(lalu) {{ stem }}",
-                                "ja": "{{ prefix }}（接続）{{ stem }}"
+                                "de": "{{ definition }} (und dann)",
+                                "en": "{{ definition }} (and then)",
+                                "id": "{{ definition }} (lalu)",
+                                "ja": "{{ definition }}（接続）"
                             }
                         }
                     }
@@ -1728,7 +1868,27 @@
                                 "id": "{{ prefix }}(ingin) {{ stem }}",
                                 "ja": "{{ prefix }}（希望）{{ stem }}"
                             }
-                        }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(jemanden dazu bringen oder es zulassen)",
+                                        "en": "(make or let someone)",
+                                        "id": "(membuat atau membiarkan seseorang)",
+                                        "ja": "(使役)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(jemanden dazu bringen oder es zulassen wollen)",
+                                        "en": "(want to make or let someone)",
+                                        "id": "(ingin membuat atau membiarkan seseorang)",
+                                        "ja": "(使役希望)"
+                                    }
+                                }
+                            }
+                        ]
                     }
                 },
                 {
@@ -1765,7 +1925,27 @@
                                 "id": "{{ prefix }}(tidak) {{ stem }}",
                                 "ja": "{{ prefix }}（否定）{{ stem }}"
                             }
-                        }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(jemanden dazu bringen oder es zulassen wollen)",
+                                        "en": "(want to make or let someone)",
+                                        "id": "(ingin membuat atau membiarkan seseorang)",
+                                        "ja": "(使役希望)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(jemanden nicht dazu bringen oder es nicht zulassen wollen)",
+                                        "en": "(not want to make or let someone)",
+                                        "id": "(tidak ingin membuat atau membiarkan seseorang)",
+                                        "ja": "(使役希望否定)"
+                                    }
+                                }
+                            }
+                        ]
                     }
                 },
                 {
@@ -1797,10 +1977,10 @@
                         },
                         "template": {
                             "labels": {
-                                "de": "{{ prefix }}(und dann) {{ stem }}",
-                                "en": "{{ prefix }}(and then) {{ stem }}",
-                                "id": "{{ prefix }}(lalu) {{ stem }}",
-                                "ja": "{{ prefix }}（接続）{{ stem }}"
+                                "de": "{{ definition }} (und dann)",
+                                "en": "{{ definition }} (and then)",
+                                "id": "{{ definition }} (lalu)",
+                                "ja": "{{ definition }}（接続）"
                             }
                         }
                     }
@@ -1960,10 +2140,10 @@
                         },
                         "template": {
                             "labels": {
-                                "de": "{{ prefix }}(und dann) {{ stem }}",
-                                "en": "{{ prefix }}(and then) {{ stem }}",
-                                "id": "{{ prefix }}(lalu) {{ stem }}",
-                                "ja": "{{ prefix }}（接続）{{ stem }}"
+                                "de": "{{ definition }} (und dann)",
+                                "en": "{{ definition }} (and then)",
+                                "id": "{{ definition }} (lalu)",
+                                "ja": "{{ definition }}（接続）"
                             }
                         }
                     }
@@ -2002,7 +2182,27 @@
                                 "id": "{{ prefix }}(sebelumnya) {{ stem }}",
                                 "ja": "{{ prefix }}（過去）{{ stem }}"
                             }
-                        }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(höflich)",
+                                        "en": "(politely)",
+                                        "id": "(dengan sopan)",
+                                        "ja": "(丁寧に)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(höflich in der Vergangenheit)",
+                                        "en": "(politely in the past)",
+                                        "id": "(dengan sopan pada masa lampau)",
+                                        "ja": "(丁寧な過去)"
+                                    }
+                                }
+                            }
+                        ]
                     }
                 },
                 {
@@ -2039,7 +2239,27 @@
                                 "id": "{{ prefix }}(tidak) {{ stem }}",
                                 "ja": "{{ prefix }}（否定）{{ stem }}"
                             }
-                        }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(höflich)",
+                                        "en": "(politely)",
+                                        "id": "(dengan sopan)",
+                                        "ja": "(丁寧に)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(höflich nicht)",
+                                        "en": "(politely not)",
+                                        "id": "(dengan sopan tidak)",
+                                        "ja": "(丁寧な否定)"
+                                    }
+                                }
+                            }
+                        ]
                     }
                 },
                 {
@@ -2076,7 +2296,27 @@
                                 "id": "{{ prefix }}(sebelumnya) {{ stem }}",
                                 "ja": "{{ prefix }}（過去）{{ stem }}"
                             }
-                        }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(nicht)",
+                                        "en": "(not)",
+                                        "id": "(tidak)",
+                                        "ja": "(否定)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(nicht in der Vergangenheit)",
+                                        "en": "(did not)",
+                                        "id": "(tidak pada masa lampau)",
+                                        "ja": "(否定過去)"
+                                    }
+                                }
+                            }
+                        ]
                     }
                 },
                 {
@@ -2108,10 +2348,10 @@
                         },
                         "template": {
                             "labels": {
-                                "de": "{{ prefix }}(und dann) {{ stem }}",
-                                "en": "{{ prefix }}(and then) {{ stem }}",
-                                "id": "{{ prefix }}(lalu) {{ stem }}",
-                                "ja": "{{ prefix }}（接続）{{ stem }}"
+                                "de": "{{ definition }} (und dann)",
+                                "en": "{{ definition }} (and then)",
+                                "id": "{{ definition }} (lalu)",
+                                "ja": "{{ definition }}（接続）"
                             }
                         }
                     }
@@ -2187,7 +2427,27 @@
                                 "id": "{{ prefix }}(tidak) {{ stem }}",
                                 "ja": "{{ prefix }}（否定）{{ stem }}"
                             }
-                        }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(wollen)",
+                                        "en": "(want to)",
+                                        "id": "(ingin)",
+                                        "ja": "(希望)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(nicht wollen)",
+                                        "en": "(not want to)",
+                                        "id": "(tidak ingin)",
+                                        "ja": "(希望否定)"
+                                    }
+                                }
+                            }
+                        ]
                     }
                 },
                 {
@@ -2224,7 +2484,27 @@
                                 "id": "{{ prefix }}(sebelumnya) {{ stem }}",
                                 "ja": "{{ prefix }}（過去）{{ stem }}"
                             }
-                        }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(wollen)",
+                                        "en": "(want to)",
+                                        "id": "(ingin)",
+                                        "ja": "(希望)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(gewollt haben)",
+                                        "en": "(have wanted to)",
+                                        "id": "(pernah ingin)",
+                                        "ja": "(希望過去)"
+                                    }
+                                }
+                            }
+                        ]
                     }
                 },
                 {
@@ -2256,10 +2536,10 @@
                         },
                         "template": {
                             "labels": {
-                                "de": "{{ prefix }}(und dann) {{ stem }}",
-                                "en": "{{ prefix }}(and then) {{ stem }}",
-                                "id": "{{ prefix }}(lalu) {{ stem }}",
-                                "ja": "{{ prefix }}（接続）{{ stem }}"
+                                "de": "{{ definition }} (und dann)",
+                                "en": "{{ definition }} (and then)",
+                                "id": "{{ definition }} (lalu)",
+                                "ja": "{{ definition }}（接続）"
                             }
                         }
                     }
@@ -2446,7 +2726,27 @@
                                 "id": "{{ prefix }}(tidak) {{ stem }}",
                                 "ja": "{{ prefix }}（否定）{{ stem }}"
                             }
-                        }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(jemanden dazu bringen oder es zulassen)",
+                                        "en": "(make or let someone)",
+                                        "id": "(membuat atau membiarkan seseorang)",
+                                        "ja": "(使役)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(jemanden nicht dazu bringen oder es nicht zulassen)",
+                                        "en": "(not make or let someone)",
+                                        "id": "(tidak membuat atau membiarkan seseorang)",
+                                        "ja": "(使役否定)"
+                                    }
+                                }
+                            }
+                        ]
                     }
                 },
                 {
@@ -2483,7 +2783,27 @@
                                 "id": "{{ prefix }}(sebelumnya) {{ stem }}",
                                 "ja": "{{ prefix }}（過去）{{ stem }}"
                             }
-                        }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(jemanden dazu bringen oder es zulassen)",
+                                        "en": "(make or let someone)",
+                                        "id": "(membuat atau membiarkan seseorang)",
+                                        "ja": "(使役)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(jemanden dazu gebracht oder es zugelassen haben)",
+                                        "en": "(made or let someone)",
+                                        "id": "(telah membuat atau membiarkan seseorang)",
+                                        "ja": "(使役過去)"
+                                    }
+                                }
+                            }
+                        ]
                     }
                 },
                 {
@@ -2515,10 +2835,10 @@
                         },
                         "template": {
                             "labels": {
-                                "de": "{{ prefix }}(und dann) {{ stem }}",
-                                "en": "{{ prefix }}(and then) {{ stem }}",
-                                "id": "{{ prefix }}(lalu) {{ stem }}",
-                                "ja": "{{ prefix }}（接続）{{ stem }}"
+                                "de": "{{ definition }} (und dann)",
+                                "en": "{{ definition }} (and then)",
+                                "id": "{{ definition }} (lalu)",
+                                "ja": "{{ definition }}（接続）"
                             }
                         }
                     }
@@ -2557,7 +2877,27 @@
                                 "id": "{{ prefix }}(ingin) {{ stem }}",
                                 "ja": "{{ prefix }}（希望）{{ stem }}"
                             }
-                        }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(jemanden dazu bringen oder es zulassen)",
+                                        "en": "(make or let someone)",
+                                        "id": "(membuat atau membiarkan seseorang)",
+                                        "ja": "(使役)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(jemanden dazu bringen oder es zulassen wollen)",
+                                        "en": "(want to make or let someone)",
+                                        "id": "(ingin membuat atau membiarkan seseorang)",
+                                        "ja": "(使役希望)"
+                                    }
+                                }
+                            }
+                        ]
                     }
                 },
                 {
@@ -2594,7 +2934,27 @@
                                 "id": "{{ prefix }}(tidak) {{ stem }}",
                                 "ja": "{{ prefix }}（否定）{{ stem }}"
                             }
-                        }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(jemanden dazu bringen oder es zulassen wollen)",
+                                        "en": "(want to make or let someone)",
+                                        "id": "(ingin membuat atau membiarkan seseorang)",
+                                        "ja": "(使役希望)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(jemanden nicht dazu bringen oder es nicht zulassen wollen)",
+                                        "en": "(not want to make or let someone)",
+                                        "id": "(tidak ingin membuat atau membiarkan seseorang)",
+                                        "ja": "(使役希望否定)"
+                                    }
+                                }
+                            }
+                        ]
                     }
                 },
                 {
@@ -2626,10 +2986,10 @@
                         },
                         "template": {
                             "labels": {
-                                "de": "{{ prefix }}(und dann) {{ stem }}",
-                                "en": "{{ prefix }}(and then) {{ stem }}",
-                                "id": "{{ prefix }}(lalu) {{ stem }}",
-                                "ja": "{{ prefix }}（接続）{{ stem }}"
+                                "de": "{{ definition }} (und dann)",
+                                "en": "{{ definition }} (and then)",
+                                "id": "{{ definition }} (lalu)",
+                                "ja": "{{ definition }}（接続）"
                             }
                         }
                     }
@@ -2789,10 +3149,10 @@
                         },
                         "template": {
                             "labels": {
-                                "de": "{{ prefix }}(und dann) {{ stem }}",
-                                "en": "{{ prefix }}(and then) {{ stem }}",
-                                "id": "{{ prefix }}(lalu) {{ stem }}",
-                                "ja": "{{ prefix }}（接続）{{ stem }}"
+                                "de": "{{ definition }} (und dann)",
+                                "en": "{{ definition }} (and then)",
+                                "id": "{{ definition }} (lalu)",
+                                "ja": "{{ definition }}（接続）"
                             }
                         }
                     }
@@ -2831,7 +3191,27 @@
                                 "id": "{{ prefix }}(sebelumnya) {{ stem }}",
                                 "ja": "{{ prefix }}（過去）{{ stem }}"
                             }
-                        }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(höflich)",
+                                        "en": "(politely)",
+                                        "id": "(dengan sopan)",
+                                        "ja": "(丁寧に)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(höflich in der Vergangenheit)",
+                                        "en": "(politely in the past)",
+                                        "id": "(dengan sopan pada masa lampau)",
+                                        "ja": "(丁寧な過去)"
+                                    }
+                                }
+                            }
+                        ]
                     }
                 },
                 {
@@ -2868,7 +3248,27 @@
                                 "id": "{{ prefix }}(tidak) {{ stem }}",
                                 "ja": "{{ prefix }}（否定）{{ stem }}"
                             }
-                        }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(höflich)",
+                                        "en": "(politely)",
+                                        "id": "(dengan sopan)",
+                                        "ja": "(丁寧に)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(höflich nicht)",
+                                        "en": "(politely not)",
+                                        "id": "(dengan sopan tidak)",
+                                        "ja": "(丁寧な否定)"
+                                    }
+                                }
+                            }
+                        ]
                     }
                 },
                 {
@@ -2905,7 +3305,27 @@
                                 "id": "{{ prefix }}(sebelumnya) {{ stem }}",
                                 "ja": "{{ prefix }}（過去）{{ stem }}"
                             }
-                        }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(nicht)",
+                                        "en": "(not)",
+                                        "id": "(tidak)",
+                                        "ja": "(否定)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(nicht in der Vergangenheit)",
+                                        "en": "(did not)",
+                                        "id": "(tidak pada masa lampau)",
+                                        "ja": "(否定過去)"
+                                    }
+                                }
+                            }
+                        ]
                     }
                 },
                 {
@@ -2937,10 +3357,10 @@
                         },
                         "template": {
                             "labels": {
-                                "de": "{{ prefix }}(und dann) {{ stem }}",
-                                "en": "{{ prefix }}(and then) {{ stem }}",
-                                "id": "{{ prefix }}(lalu) {{ stem }}",
-                                "ja": "{{ prefix }}（接続）{{ stem }}"
+                                "de": "{{ definition }} (und dann)",
+                                "en": "{{ definition }} (and then)",
+                                "id": "{{ definition }} (lalu)",
+                                "ja": "{{ definition }}（接続）"
                             }
                         }
                     }
@@ -3016,7 +3436,27 @@
                                 "id": "{{ prefix }}(tidak) {{ stem }}",
                                 "ja": "{{ prefix }}（否定）{{ stem }}"
                             }
-                        }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(wollen)",
+                                        "en": "(want to)",
+                                        "id": "(ingin)",
+                                        "ja": "(希望)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(nicht wollen)",
+                                        "en": "(not want to)",
+                                        "id": "(tidak ingin)",
+                                        "ja": "(希望否定)"
+                                    }
+                                }
+                            }
+                        ]
                     }
                 },
                 {
@@ -3053,7 +3493,27 @@
                                 "id": "{{ prefix }}(sebelumnya) {{ stem }}",
                                 "ja": "{{ prefix }}（過去）{{ stem }}"
                             }
-                        }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(wollen)",
+                                        "en": "(want to)",
+                                        "id": "(ingin)",
+                                        "ja": "(希望)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(gewollt haben)",
+                                        "en": "(have wanted to)",
+                                        "id": "(pernah ingin)",
+                                        "ja": "(希望過去)"
+                                    }
+                                }
+                            }
+                        ]
                     }
                 },
                 {
@@ -3085,10 +3545,10 @@
                         },
                         "template": {
                             "labels": {
-                                "de": "{{ prefix }}(und dann) {{ stem }}",
-                                "en": "{{ prefix }}(and then) {{ stem }}",
-                                "id": "{{ prefix }}(lalu) {{ stem }}",
-                                "ja": "{{ prefix }}（接続）{{ stem }}"
+                                "de": "{{ definition }} (und dann)",
+                                "en": "{{ definition }} (and then)",
+                                "id": "{{ definition }} (lalu)",
+                                "ja": "{{ definition }}（接続）"
                             }
                         }
                     }
@@ -3275,7 +3735,27 @@
                                 "id": "{{ prefix }}(tidak) {{ stem }}",
                                 "ja": "{{ prefix }}（否定）{{ stem }}"
                             }
-                        }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(jemanden dazu bringen oder es zulassen)",
+                                        "en": "(make or let someone)",
+                                        "id": "(membuat atau membiarkan seseorang)",
+                                        "ja": "(使役)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(jemanden nicht dazu bringen oder es nicht zulassen)",
+                                        "en": "(not make or let someone)",
+                                        "id": "(tidak membuat atau membiarkan seseorang)",
+                                        "ja": "(使役否定)"
+                                    }
+                                }
+                            }
+                        ]
                     }
                 },
                 {
@@ -3312,7 +3792,27 @@
                                 "id": "{{ prefix }}(sebelumnya) {{ stem }}",
                                 "ja": "{{ prefix }}（過去）{{ stem }}"
                             }
-                        }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(jemanden dazu bringen oder es zulassen)",
+                                        "en": "(make or let someone)",
+                                        "id": "(membuat atau membiarkan seseorang)",
+                                        "ja": "(使役)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(jemanden dazu gebracht oder es zugelassen haben)",
+                                        "en": "(made or let someone)",
+                                        "id": "(telah membuat atau membiarkan seseorang)",
+                                        "ja": "(使役過去)"
+                                    }
+                                }
+                            }
+                        ]
                     }
                 },
                 {
@@ -3344,10 +3844,10 @@
                         },
                         "template": {
                             "labels": {
-                                "de": "{{ prefix }}(und dann) {{ stem }}",
-                                "en": "{{ prefix }}(and then) {{ stem }}",
-                                "id": "{{ prefix }}(lalu) {{ stem }}",
-                                "ja": "{{ prefix }}（接続）{{ stem }}"
+                                "de": "{{ definition }} (und dann)",
+                                "en": "{{ definition }} (and then)",
+                                "id": "{{ definition }} (lalu)",
+                                "ja": "{{ definition }}（接続）"
                             }
                         }
                     }
@@ -3386,7 +3886,27 @@
                                 "id": "{{ prefix }}(ingin) {{ stem }}",
                                 "ja": "{{ prefix }}（希望）{{ stem }}"
                             }
-                        }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(jemanden dazu bringen oder es zulassen)",
+                                        "en": "(make or let someone)",
+                                        "id": "(membuat atau membiarkan seseorang)",
+                                        "ja": "(使役)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(jemanden dazu bringen oder es zulassen wollen)",
+                                        "en": "(want to make or let someone)",
+                                        "id": "(ingin membuat atau membiarkan seseorang)",
+                                        "ja": "(使役希望)"
+                                    }
+                                }
+                            }
+                        ]
                     }
                 },
                 {
@@ -3423,7 +3943,27 @@
                                 "id": "{{ prefix }}(tidak) {{ stem }}",
                                 "ja": "{{ prefix }}（否定）{{ stem }}"
                             }
-                        }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(jemanden dazu bringen oder es zulassen wollen)",
+                                        "en": "(want to make or let someone)",
+                                        "id": "(ingin membuat atau membiarkan seseorang)",
+                                        "ja": "(使役希望)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(jemanden nicht dazu bringen oder es nicht zulassen wollen)",
+                                        "en": "(not want to make or let someone)",
+                                        "id": "(tidak ingin membuat atau membiarkan seseorang)",
+                                        "ja": "(使役希望否定)"
+                                    }
+                                }
+                            }
+                        ]
                     }
                 },
                 {
@@ -3455,10 +3995,10 @@
                         },
                         "template": {
                             "labels": {
-                                "de": "{{ prefix }}(und dann) {{ stem }}",
-                                "en": "{{ prefix }}(and then) {{ stem }}",
-                                "id": "{{ prefix }}(lalu) {{ stem }}",
-                                "ja": "{{ prefix }}（接続）{{ stem }}"
+                                "de": "{{ definition }} (und dann)",
+                                "en": "{{ definition }} (and then)",
+                                "id": "{{ definition }} (lalu)",
+                                "ja": "{{ definition }}（接続）"
                             }
                         }
                     }
@@ -3618,10 +4158,10 @@
                         },
                         "template": {
                             "labels": {
-                                "de": "{{ prefix }}(und dann) {{ stem }}",
-                                "en": "{{ prefix }}(and then) {{ stem }}",
-                                "id": "{{ prefix }}(lalu) {{ stem }}",
-                                "ja": "{{ prefix }}（接続）{{ stem }}"
+                                "de": "{{ definition }} (und dann)",
+                                "en": "{{ definition }} (and then)",
+                                "id": "{{ definition }} (lalu)",
+                                "ja": "{{ definition }}（接続）"
                             }
                         }
                     }
@@ -3660,7 +4200,27 @@
                                 "id": "{{ prefix }}(sebelumnya) {{ stem }}",
                                 "ja": "{{ prefix }}（過去）{{ stem }}"
                             }
-                        }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(höflich)",
+                                        "en": "(politely)",
+                                        "id": "(dengan sopan)",
+                                        "ja": "(丁寧に)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(höflich in der Vergangenheit)",
+                                        "en": "(politely in the past)",
+                                        "id": "(dengan sopan pada masa lampau)",
+                                        "ja": "(丁寧な過去)"
+                                    }
+                                }
+                            }
+                        ]
                     }
                 },
                 {
@@ -3697,7 +4257,27 @@
                                 "id": "{{ prefix }}(tidak) {{ stem }}",
                                 "ja": "{{ prefix }}（否定）{{ stem }}"
                             }
-                        }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(höflich)",
+                                        "en": "(politely)",
+                                        "id": "(dengan sopan)",
+                                        "ja": "(丁寧に)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(höflich nicht)",
+                                        "en": "(politely not)",
+                                        "id": "(dengan sopan tidak)",
+                                        "ja": "(丁寧な否定)"
+                                    }
+                                }
+                            }
+                        ]
                     }
                 },
                 {
@@ -3734,7 +4314,27 @@
                                 "id": "{{ prefix }}(sebelumnya) {{ stem }}",
                                 "ja": "{{ prefix }}（過去）{{ stem }}"
                             }
-                        }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(nicht)",
+                                        "en": "(not)",
+                                        "id": "(tidak)",
+                                        "ja": "(否定)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(nicht in der Vergangenheit)",
+                                        "en": "(did not)",
+                                        "id": "(tidak pada masa lampau)",
+                                        "ja": "(否定過去)"
+                                    }
+                                }
+                            }
+                        ]
                     }
                 },
                 {
@@ -3766,10 +4366,10 @@
                         },
                         "template": {
                             "labels": {
-                                "de": "{{ prefix }}(und dann) {{ stem }}",
-                                "en": "{{ prefix }}(and then) {{ stem }}",
-                                "id": "{{ prefix }}(lalu) {{ stem }}",
-                                "ja": "{{ prefix }}（接続）{{ stem }}"
+                                "de": "{{ definition }} (und dann)",
+                                "en": "{{ definition }} (and then)",
+                                "id": "{{ definition }} (lalu)",
+                                "ja": "{{ definition }}（接続）"
                             }
                         }
                     }
@@ -3845,7 +4445,27 @@
                                 "id": "{{ prefix }}(tidak) {{ stem }}",
                                 "ja": "{{ prefix }}（否定）{{ stem }}"
                             }
-                        }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(wollen)",
+                                        "en": "(want to)",
+                                        "id": "(ingin)",
+                                        "ja": "(希望)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(nicht wollen)",
+                                        "en": "(not want to)",
+                                        "id": "(tidak ingin)",
+                                        "ja": "(希望否定)"
+                                    }
+                                }
+                            }
+                        ]
                     }
                 },
                 {
@@ -3882,7 +4502,27 @@
                                 "id": "{{ prefix }}(sebelumnya) {{ stem }}",
                                 "ja": "{{ prefix }}（過去）{{ stem }}"
                             }
-                        }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(wollen)",
+                                        "en": "(want to)",
+                                        "id": "(ingin)",
+                                        "ja": "(希望)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(gewollt haben)",
+                                        "en": "(have wanted to)",
+                                        "id": "(pernah ingin)",
+                                        "ja": "(希望過去)"
+                                    }
+                                }
+                            }
+                        ]
                     }
                 },
                 {
@@ -3914,10 +4554,10 @@
                         },
                         "template": {
                             "labels": {
-                                "de": "{{ prefix }}(und dann) {{ stem }}",
-                                "en": "{{ prefix }}(and then) {{ stem }}",
-                                "id": "{{ prefix }}(lalu) {{ stem }}",
-                                "ja": "{{ prefix }}（接続）{{ stem }}"
+                                "de": "{{ definition }} (und dann)",
+                                "en": "{{ definition }} (and then)",
+                                "id": "{{ definition }} (lalu)",
+                                "ja": "{{ definition }}（接続）"
                             }
                         }
                     }
@@ -4104,7 +4744,27 @@
                                 "id": "{{ prefix }}(tidak) {{ stem }}",
                                 "ja": "{{ prefix }}（否定）{{ stem }}"
                             }
-                        }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(jemanden dazu bringen oder es zulassen)",
+                                        "en": "(make or let someone)",
+                                        "id": "(membuat atau membiarkan seseorang)",
+                                        "ja": "(使役)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(jemanden nicht dazu bringen oder es nicht zulassen)",
+                                        "en": "(not make or let someone)",
+                                        "id": "(tidak membuat atau membiarkan seseorang)",
+                                        "ja": "(使役否定)"
+                                    }
+                                }
+                            }
+                        ]
                     }
                 },
                 {
@@ -4141,7 +4801,27 @@
                                 "id": "{{ prefix }}(sebelumnya) {{ stem }}",
                                 "ja": "{{ prefix }}（過去）{{ stem }}"
                             }
-                        }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(jemanden dazu bringen oder es zulassen)",
+                                        "en": "(make or let someone)",
+                                        "id": "(membuat atau membiarkan seseorang)",
+                                        "ja": "(使役)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(jemanden dazu gebracht oder es zugelassen haben)",
+                                        "en": "(made or let someone)",
+                                        "id": "(telah membuat atau membiarkan seseorang)",
+                                        "ja": "(使役過去)"
+                                    }
+                                }
+                            }
+                        ]
                     }
                 },
                 {
@@ -4173,10 +4853,10 @@
                         },
                         "template": {
                             "labels": {
-                                "de": "{{ prefix }}(und dann) {{ stem }}",
-                                "en": "{{ prefix }}(and then) {{ stem }}",
-                                "id": "{{ prefix }}(lalu) {{ stem }}",
-                                "ja": "{{ prefix }}（接続）{{ stem }}"
+                                "de": "{{ definition }} (und dann)",
+                                "en": "{{ definition }} (and then)",
+                                "id": "{{ definition }} (lalu)",
+                                "ja": "{{ definition }}（接続）"
                             }
                         }
                     }
@@ -4215,7 +4895,27 @@
                                 "id": "{{ prefix }}(ingin) {{ stem }}",
                                 "ja": "{{ prefix }}（希望）{{ stem }}"
                             }
-                        }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(jemanden dazu bringen oder es zulassen)",
+                                        "en": "(make or let someone)",
+                                        "id": "(membuat atau membiarkan seseorang)",
+                                        "ja": "(使役)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(jemanden dazu bringen oder es zulassen wollen)",
+                                        "en": "(want to make or let someone)",
+                                        "id": "(ingin membuat atau membiarkan seseorang)",
+                                        "ja": "(使役希望)"
+                                    }
+                                }
+                            }
+                        ]
                     }
                 },
                 {
@@ -4252,7 +4952,27 @@
                                 "id": "{{ prefix }}(tidak) {{ stem }}",
                                 "ja": "{{ prefix }}（否定）{{ stem }}"
                             }
-                        }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(jemanden dazu bringen oder es zulassen wollen)",
+                                        "en": "(want to make or let someone)",
+                                        "id": "(ingin membuat atau membiarkan seseorang)",
+                                        "ja": "(使役希望)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(jemanden nicht dazu bringen oder es nicht zulassen wollen)",
+                                        "en": "(not want to make or let someone)",
+                                        "id": "(tidak ingin membuat atau membiarkan seseorang)",
+                                        "ja": "(使役希望否定)"
+                                    }
+                                }
+                            }
+                        ]
                     }
                 },
                 {
@@ -4284,10 +5004,10 @@
                         },
                         "template": {
                             "labels": {
-                                "de": "{{ prefix }}(und dann) {{ stem }}",
-                                "en": "{{ prefix }}(and then) {{ stem }}",
-                                "id": "{{ prefix }}(lalu) {{ stem }}",
-                                "ja": "{{ prefix }}（接続）{{ stem }}"
+                                "de": "{{ definition }} (und dann)",
+                                "en": "{{ definition }} (and then)",
+                                "id": "{{ definition }} (lalu)",
+                                "ja": "{{ definition }}（接続）"
                             }
                         }
                     }
@@ -4447,10 +5167,10 @@
                         },
                         "template": {
                             "labels": {
-                                "de": "{{ prefix }}(und dann) {{ stem }}",
-                                "en": "{{ prefix }}(and then) {{ stem }}",
-                                "id": "{{ prefix }}(lalu) {{ stem }}",
-                                "ja": "{{ prefix }}（接続）{{ stem }}"
+                                "de": "{{ definition }} (und dann)",
+                                "en": "{{ definition }} (and then)",
+                                "id": "{{ definition }} (lalu)",
+                                "ja": "{{ definition }}（接続）"
                             }
                         }
                     }
@@ -4489,7 +5209,27 @@
                                 "id": "{{ prefix }}(sebelumnya) {{ stem }}",
                                 "ja": "{{ prefix }}（過去）{{ stem }}"
                             }
-                        }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(höflich)",
+                                        "en": "(politely)",
+                                        "id": "(dengan sopan)",
+                                        "ja": "(丁寧に)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(höflich in der Vergangenheit)",
+                                        "en": "(politely in the past)",
+                                        "id": "(dengan sopan pada masa lampau)",
+                                        "ja": "(丁寧な過去)"
+                                    }
+                                }
+                            }
+                        ]
                     }
                 },
                 {
@@ -4526,7 +5266,27 @@
                                 "id": "{{ prefix }}(tidak) {{ stem }}",
                                 "ja": "{{ prefix }}（否定）{{ stem }}"
                             }
-                        }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(höflich)",
+                                        "en": "(politely)",
+                                        "id": "(dengan sopan)",
+                                        "ja": "(丁寧に)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(höflich nicht)",
+                                        "en": "(politely not)",
+                                        "id": "(dengan sopan tidak)",
+                                        "ja": "(丁寧な否定)"
+                                    }
+                                }
+                            }
+                        ]
                     }
                 },
                 {
@@ -4563,7 +5323,27 @@
                                 "id": "{{ prefix }}(sebelumnya) {{ stem }}",
                                 "ja": "{{ prefix }}（過去）{{ stem }}"
                             }
-                        }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(nicht)",
+                                        "en": "(not)",
+                                        "id": "(tidak)",
+                                        "ja": "(否定)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(nicht in der Vergangenheit)",
+                                        "en": "(did not)",
+                                        "id": "(tidak pada masa lampau)",
+                                        "ja": "(否定過去)"
+                                    }
+                                }
+                            }
+                        ]
                     }
                 },
                 {
@@ -4595,10 +5375,10 @@
                         },
                         "template": {
                             "labels": {
-                                "de": "{{ prefix }}(und dann) {{ stem }}",
-                                "en": "{{ prefix }}(and then) {{ stem }}",
-                                "id": "{{ prefix }}(lalu) {{ stem }}",
-                                "ja": "{{ prefix }}（接続）{{ stem }}"
+                                "de": "{{ definition }} (und dann)",
+                                "en": "{{ definition }} (and then)",
+                                "id": "{{ definition }} (lalu)",
+                                "ja": "{{ definition }}（接続）"
                             }
                         }
                     }
@@ -4674,7 +5454,27 @@
                                 "id": "{{ prefix }}(tidak) {{ stem }}",
                                 "ja": "{{ prefix }}（否定）{{ stem }}"
                             }
-                        }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(wollen)",
+                                        "en": "(want to)",
+                                        "id": "(ingin)",
+                                        "ja": "(希望)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(nicht wollen)",
+                                        "en": "(not want to)",
+                                        "id": "(tidak ingin)",
+                                        "ja": "(希望否定)"
+                                    }
+                                }
+                            }
+                        ]
                     }
                 },
                 {
@@ -4711,7 +5511,27 @@
                                 "id": "{{ prefix }}(sebelumnya) {{ stem }}",
                                 "ja": "{{ prefix }}（過去）{{ stem }}"
                             }
-                        }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(wollen)",
+                                        "en": "(want to)",
+                                        "id": "(ingin)",
+                                        "ja": "(希望)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(gewollt haben)",
+                                        "en": "(have wanted to)",
+                                        "id": "(pernah ingin)",
+                                        "ja": "(希望過去)"
+                                    }
+                                }
+                            }
+                        ]
                     }
                 },
                 {
@@ -4743,10 +5563,10 @@
                         },
                         "template": {
                             "labels": {
-                                "de": "{{ prefix }}(und dann) {{ stem }}",
-                                "en": "{{ prefix }}(and then) {{ stem }}",
-                                "id": "{{ prefix }}(lalu) {{ stem }}",
-                                "ja": "{{ prefix }}（接続）{{ stem }}"
+                                "de": "{{ definition }} (und dann)",
+                                "en": "{{ definition }} (and then)",
+                                "id": "{{ definition }} (lalu)",
+                                "ja": "{{ definition }}（接続）"
                             }
                         }
                     }
@@ -4933,7 +5753,27 @@
                                 "id": "{{ prefix }}(tidak) {{ stem }}",
                                 "ja": "{{ prefix }}（否定）{{ stem }}"
                             }
-                        }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(jemanden dazu bringen oder es zulassen)",
+                                        "en": "(make or let someone)",
+                                        "id": "(membuat atau membiarkan seseorang)",
+                                        "ja": "(使役)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(jemanden nicht dazu bringen oder es nicht zulassen)",
+                                        "en": "(not make or let someone)",
+                                        "id": "(tidak membuat atau membiarkan seseorang)",
+                                        "ja": "(使役否定)"
+                                    }
+                                }
+                            }
+                        ]
                     }
                 },
                 {
@@ -4970,7 +5810,27 @@
                                 "id": "{{ prefix }}(sebelumnya) {{ stem }}",
                                 "ja": "{{ prefix }}（過去）{{ stem }}"
                             }
-                        }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(jemanden dazu bringen oder es zulassen)",
+                                        "en": "(make or let someone)",
+                                        "id": "(membuat atau membiarkan seseorang)",
+                                        "ja": "(使役)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(jemanden dazu gebracht oder es zugelassen haben)",
+                                        "en": "(made or let someone)",
+                                        "id": "(telah membuat atau membiarkan seseorang)",
+                                        "ja": "(使役過去)"
+                                    }
+                                }
+                            }
+                        ]
                     }
                 },
                 {
@@ -5002,10 +5862,10 @@
                         },
                         "template": {
                             "labels": {
-                                "de": "{{ prefix }}(und dann) {{ stem }}",
-                                "en": "{{ prefix }}(and then) {{ stem }}",
-                                "id": "{{ prefix }}(lalu) {{ stem }}",
-                                "ja": "{{ prefix }}（接続）{{ stem }}"
+                                "de": "{{ definition }} (und dann)",
+                                "en": "{{ definition }} (and then)",
+                                "id": "{{ definition }} (lalu)",
+                                "ja": "{{ definition }}（接続）"
                             }
                         }
                     }
@@ -5044,7 +5904,27 @@
                                 "id": "{{ prefix }}(ingin) {{ stem }}",
                                 "ja": "{{ prefix }}（希望）{{ stem }}"
                             }
-                        }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(jemanden dazu bringen oder es zulassen)",
+                                        "en": "(make or let someone)",
+                                        "id": "(membuat atau membiarkan seseorang)",
+                                        "ja": "(使役)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(jemanden dazu bringen oder es zulassen wollen)",
+                                        "en": "(want to make or let someone)",
+                                        "id": "(ingin membuat atau membiarkan seseorang)",
+                                        "ja": "(使役希望)"
+                                    }
+                                }
+                            }
+                        ]
                     }
                 },
                 {
@@ -5081,7 +5961,27 @@
                                 "id": "{{ prefix }}(tidak) {{ stem }}",
                                 "ja": "{{ prefix }}（否定）{{ stem }}"
                             }
-                        }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(jemanden dazu bringen oder es zulassen wollen)",
+                                        "en": "(want to make or let someone)",
+                                        "id": "(ingin membuat atau membiarkan seseorang)",
+                                        "ja": "(使役希望)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(jemanden nicht dazu bringen oder es nicht zulassen wollen)",
+                                        "en": "(not want to make or let someone)",
+                                        "id": "(tidak ingin membuat atau membiarkan seseorang)",
+                                        "ja": "(使役希望否定)"
+                                    }
+                                }
+                            }
+                        ]
                     }
                 },
                 {
@@ -5113,10 +6013,10 @@
                         },
                         "template": {
                             "labels": {
-                                "de": "{{ prefix }}(und dann) {{ stem }}",
-                                "en": "{{ prefix }}(and then) {{ stem }}",
-                                "id": "{{ prefix }}(lalu) {{ stem }}",
-                                "ja": "{{ prefix }}（接続）{{ stem }}"
+                                "de": "{{ definition }} (und dann)",
+                                "en": "{{ definition }} (and then)",
+                                "id": "{{ definition }} (lalu)",
+                                "ja": "{{ definition }}（接続）"
                             }
                         }
                     }
@@ -5276,10 +6176,10 @@
                         },
                         "template": {
                             "labels": {
-                                "de": "{{ prefix }}(und dann) {{ stem }}",
-                                "en": "{{ prefix }}(and then) {{ stem }}",
-                                "id": "{{ prefix }}(lalu) {{ stem }}",
-                                "ja": "{{ prefix }}（接続）{{ stem }}"
+                                "de": "{{ definition }} (und dann)",
+                                "en": "{{ definition }} (and then)",
+                                "id": "{{ definition }} (lalu)",
+                                "ja": "{{ definition }}（接続）"
                             }
                         }
                     }
@@ -5318,7 +6218,27 @@
                                 "id": "{{ prefix }}(sebelumnya) {{ stem }}",
                                 "ja": "{{ prefix }}（過去）{{ stem }}"
                             }
-                        }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(höflich)",
+                                        "en": "(politely)",
+                                        "id": "(dengan sopan)",
+                                        "ja": "(丁寧に)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(höflich in der Vergangenheit)",
+                                        "en": "(politely in the past)",
+                                        "id": "(dengan sopan pada masa lampau)",
+                                        "ja": "(丁寧な過去)"
+                                    }
+                                }
+                            }
+                        ]
                     }
                 },
                 {
@@ -5355,7 +6275,27 @@
                                 "id": "{{ prefix }}(tidak) {{ stem }}",
                                 "ja": "{{ prefix }}（否定）{{ stem }}"
                             }
-                        }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(höflich)",
+                                        "en": "(politely)",
+                                        "id": "(dengan sopan)",
+                                        "ja": "(丁寧に)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(höflich nicht)",
+                                        "en": "(politely not)",
+                                        "id": "(dengan sopan tidak)",
+                                        "ja": "(丁寧な否定)"
+                                    }
+                                }
+                            }
+                        ]
                     }
                 },
                 {
@@ -5392,7 +6332,27 @@
                                 "id": "{{ prefix }}(sebelumnya) {{ stem }}",
                                 "ja": "{{ prefix }}（過去）{{ stem }}"
                             }
-                        }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(nicht)",
+                                        "en": "(not)",
+                                        "id": "(tidak)",
+                                        "ja": "(否定)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(nicht in der Vergangenheit)",
+                                        "en": "(did not)",
+                                        "id": "(tidak pada masa lampau)",
+                                        "ja": "(否定過去)"
+                                    }
+                                }
+                            }
+                        ]
                     }
                 },
                 {
@@ -5424,10 +6384,10 @@
                         },
                         "template": {
                             "labels": {
-                                "de": "{{ prefix }}(und dann) {{ stem }}",
-                                "en": "{{ prefix }}(and then) {{ stem }}",
-                                "id": "{{ prefix }}(lalu) {{ stem }}",
-                                "ja": "{{ prefix }}（接続）{{ stem }}"
+                                "de": "{{ definition }} (und dann)",
+                                "en": "{{ definition }} (and then)",
+                                "id": "{{ definition }} (lalu)",
+                                "ja": "{{ definition }}（接続）"
                             }
                         }
                     }
@@ -5503,7 +6463,27 @@
                                 "id": "{{ prefix }}(tidak) {{ stem }}",
                                 "ja": "{{ prefix }}（否定）{{ stem }}"
                             }
-                        }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(wollen)",
+                                        "en": "(want to)",
+                                        "id": "(ingin)",
+                                        "ja": "(希望)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(nicht wollen)",
+                                        "en": "(not want to)",
+                                        "id": "(tidak ingin)",
+                                        "ja": "(希望否定)"
+                                    }
+                                }
+                            }
+                        ]
                     }
                 },
                 {
@@ -5540,7 +6520,27 @@
                                 "id": "{{ prefix }}(sebelumnya) {{ stem }}",
                                 "ja": "{{ prefix }}（過去）{{ stem }}"
                             }
-                        }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(wollen)",
+                                        "en": "(want to)",
+                                        "id": "(ingin)",
+                                        "ja": "(希望)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(gewollt haben)",
+                                        "en": "(have wanted to)",
+                                        "id": "(pernah ingin)",
+                                        "ja": "(希望過去)"
+                                    }
+                                }
+                            }
+                        ]
                     }
                 },
                 {
@@ -5572,10 +6572,10 @@
                         },
                         "template": {
                             "labels": {
-                                "de": "{{ prefix }}(und dann) {{ stem }}",
-                                "en": "{{ prefix }}(and then) {{ stem }}",
-                                "id": "{{ prefix }}(lalu) {{ stem }}",
-                                "ja": "{{ prefix }}（接続）{{ stem }}"
+                                "de": "{{ definition }} (und dann)",
+                                "en": "{{ definition }} (and then)",
+                                "id": "{{ definition }} (lalu)",
+                                "ja": "{{ definition }}（接続）"
                             }
                         }
                     }
@@ -5762,7 +6762,27 @@
                                 "id": "{{ prefix }}(tidak) {{ stem }}",
                                 "ja": "{{ prefix }}（否定）{{ stem }}"
                             }
-                        }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(jemanden dazu bringen oder es zulassen)",
+                                        "en": "(make or let someone)",
+                                        "id": "(membuat atau membiarkan seseorang)",
+                                        "ja": "(使役)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(jemanden nicht dazu bringen oder es nicht zulassen)",
+                                        "en": "(not make or let someone)",
+                                        "id": "(tidak membuat atau membiarkan seseorang)",
+                                        "ja": "(使役否定)"
+                                    }
+                                }
+                            }
+                        ]
                     }
                 },
                 {
@@ -5799,7 +6819,27 @@
                                 "id": "{{ prefix }}(sebelumnya) {{ stem }}",
                                 "ja": "{{ prefix }}（過去）{{ stem }}"
                             }
-                        }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(jemanden dazu bringen oder es zulassen)",
+                                        "en": "(make or let someone)",
+                                        "id": "(membuat atau membiarkan seseorang)",
+                                        "ja": "(使役)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(jemanden dazu gebracht oder es zugelassen haben)",
+                                        "en": "(made or let someone)",
+                                        "id": "(telah membuat atau membiarkan seseorang)",
+                                        "ja": "(使役過去)"
+                                    }
+                                }
+                            }
+                        ]
                     }
                 },
                 {
@@ -5831,10 +6871,10 @@
                         },
                         "template": {
                             "labels": {
-                                "de": "{{ prefix }}(und dann) {{ stem }}",
-                                "en": "{{ prefix }}(and then) {{ stem }}",
-                                "id": "{{ prefix }}(lalu) {{ stem }}",
-                                "ja": "{{ prefix }}（接続）{{ stem }}"
+                                "de": "{{ definition }} (und dann)",
+                                "en": "{{ definition }} (and then)",
+                                "id": "{{ definition }} (lalu)",
+                                "ja": "{{ definition }}（接続）"
                             }
                         }
                     }
@@ -5873,7 +6913,27 @@
                                 "id": "{{ prefix }}(ingin) {{ stem }}",
                                 "ja": "{{ prefix }}（希望）{{ stem }}"
                             }
-                        }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(jemanden dazu bringen oder es zulassen)",
+                                        "en": "(make or let someone)",
+                                        "id": "(membuat atau membiarkan seseorang)",
+                                        "ja": "(使役)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(jemanden dazu bringen oder es zulassen wollen)",
+                                        "en": "(want to make or let someone)",
+                                        "id": "(ingin membuat atau membiarkan seseorang)",
+                                        "ja": "(使役希望)"
+                                    }
+                                }
+                            }
+                        ]
                     }
                 },
                 {
@@ -5910,7 +6970,27 @@
                                 "id": "{{ prefix }}(tidak) {{ stem }}",
                                 "ja": "{{ prefix }}（否定）{{ stem }}"
                             }
-                        }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(jemanden dazu bringen oder es zulassen wollen)",
+                                        "en": "(want to make or let someone)",
+                                        "id": "(ingin membuat atau membiarkan seseorang)",
+                                        "ja": "(使役希望)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(jemanden nicht dazu bringen oder es nicht zulassen wollen)",
+                                        "en": "(not want to make or let someone)",
+                                        "id": "(tidak ingin membuat atau membiarkan seseorang)",
+                                        "ja": "(使役希望否定)"
+                                    }
+                                }
+                            }
+                        ]
                     }
                 },
                 {
@@ -5942,10 +7022,10 @@
                         },
                         "template": {
                             "labels": {
-                                "de": "{{ prefix }}(und dann) {{ stem }}",
-                                "en": "{{ prefix }}(and then) {{ stem }}",
-                                "id": "{{ prefix }}(lalu) {{ stem }}",
-                                "ja": "{{ prefix }}（接続）{{ stem }}"
+                                "de": "{{ definition }} (und dann)",
+                                "en": "{{ definition }} (and then)",
+                                "id": "{{ definition }} (lalu)",
+                                "ja": "{{ definition }}（接続）"
                             }
                         }
                     }
@@ -6105,10 +7185,10 @@
                         },
                         "template": {
                             "labels": {
-                                "de": "{{ prefix }}(und dann) {{ stem }}",
-                                "en": "{{ prefix }}(and then) {{ stem }}",
-                                "id": "{{ prefix }}(lalu) {{ stem }}",
-                                "ja": "{{ prefix }}（接続）{{ stem }}"
+                                "de": "{{ definition }} (und dann)",
+                                "en": "{{ definition }} (and then)",
+                                "id": "{{ definition }} (lalu)",
+                                "ja": "{{ definition }}（接続）"
                             }
                         }
                     }
@@ -6147,7 +7227,27 @@
                                 "id": "{{ prefix }}(sebelumnya) {{ stem }}",
                                 "ja": "{{ prefix }}（過去）{{ stem }}"
                             }
-                        }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(höflich)",
+                                        "en": "(politely)",
+                                        "id": "(dengan sopan)",
+                                        "ja": "(丁寧に)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(höflich in der Vergangenheit)",
+                                        "en": "(politely in the past)",
+                                        "id": "(dengan sopan pada masa lampau)",
+                                        "ja": "(丁寧な過去)"
+                                    }
+                                }
+                            }
+                        ]
                     }
                 },
                 {
@@ -6184,7 +7284,27 @@
                                 "id": "{{ prefix }}(tidak) {{ stem }}",
                                 "ja": "{{ prefix }}（否定）{{ stem }}"
                             }
-                        }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(höflich)",
+                                        "en": "(politely)",
+                                        "id": "(dengan sopan)",
+                                        "ja": "(丁寧に)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(höflich nicht)",
+                                        "en": "(politely not)",
+                                        "id": "(dengan sopan tidak)",
+                                        "ja": "(丁寧な否定)"
+                                    }
+                                }
+                            }
+                        ]
                     }
                 },
                 {
@@ -6221,7 +7341,27 @@
                                 "id": "{{ prefix }}(sebelumnya) {{ stem }}",
                                 "ja": "{{ prefix }}（過去）{{ stem }}"
                             }
-                        }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(nicht)",
+                                        "en": "(not)",
+                                        "id": "(tidak)",
+                                        "ja": "(否定)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(nicht in der Vergangenheit)",
+                                        "en": "(did not)",
+                                        "id": "(tidak pada masa lampau)",
+                                        "ja": "(否定過去)"
+                                    }
+                                }
+                            }
+                        ]
                     }
                 },
                 {
@@ -6253,10 +7393,10 @@
                         },
                         "template": {
                             "labels": {
-                                "de": "{{ prefix }}(und dann) {{ stem }}",
-                                "en": "{{ prefix }}(and then) {{ stem }}",
-                                "id": "{{ prefix }}(lalu) {{ stem }}",
-                                "ja": "{{ prefix }}（接続）{{ stem }}"
+                                "de": "{{ definition }} (und dann)",
+                                "en": "{{ definition }} (and then)",
+                                "id": "{{ definition }} (lalu)",
+                                "ja": "{{ definition }}（接続）"
                             }
                         }
                     }
@@ -6332,7 +7472,27 @@
                                 "id": "{{ prefix }}(tidak) {{ stem }}",
                                 "ja": "{{ prefix }}（否定）{{ stem }}"
                             }
-                        }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(wenn)",
+                                        "en": "(if)",
+                                        "id": "(jika)",
+                                        "ja": "(条件)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(wenn nicht)",
+                                        "en": "(if not)",
+                                        "id": "(jika tidak)",
+                                        "ja": "(否定条件)"
+                                    }
+                                }
+                            }
+                        ]
                     }
                 },
                 {
@@ -6406,7 +7566,27 @@
                                 "id": "{{ prefix }}(tidak) {{ stem }}",
                                 "ja": "{{ prefix }}（否定）{{ stem }}"
                             }
-                        }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(wollen)",
+                                        "en": "(want to)",
+                                        "id": "(ingin)",
+                                        "ja": "(希望)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(nicht wollen)",
+                                        "en": "(not want to)",
+                                        "id": "(tidak ingin)",
+                                        "ja": "(希望否定)"
+                                    }
+                                }
+                            }
+                        ]
                     }
                 },
                 {
@@ -6443,7 +7623,27 @@
                                 "id": "{{ prefix }}(sebelumnya) {{ stem }}",
                                 "ja": "{{ prefix }}（過去）{{ stem }}"
                             }
-                        }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(wollen)",
+                                        "en": "(want to)",
+                                        "id": "(ingin)",
+                                        "ja": "(希望)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(gewollt haben)",
+                                        "en": "(have wanted to)",
+                                        "id": "(pernah ingin)",
+                                        "ja": "(希望過去)"
+                                    }
+                                }
+                            }
+                        ]
                     }
                 },
                 {
@@ -6475,10 +7675,10 @@
                         },
                         "template": {
                             "labels": {
-                                "de": "{{ prefix }}(und dann) {{ stem }}",
-                                "en": "{{ prefix }}(and then) {{ stem }}",
-                                "id": "{{ prefix }}(lalu) {{ stem }}",
-                                "ja": "{{ prefix }}（接続）{{ stem }}"
+                                "de": "{{ definition }} (und dann)",
+                                "en": "{{ definition }} (and then)",
+                                "id": "{{ definition }} (lalu)",
+                                "ja": "{{ definition }}（接続）"
                             }
                         }
                     }
@@ -6638,10 +7838,10 @@
                         },
                         "template": {
                             "labels": {
-                                "de": "{{ prefix }}(und dann) {{ stem }}",
-                                "en": "{{ prefix }}(and then) {{ stem }}",
-                                "id": "{{ prefix }}(lalu) {{ stem }}",
-                                "ja": "{{ prefix }}（接続）{{ stem }}"
+                                "de": "{{ definition }} (und dann)",
+                                "en": "{{ definition }} (and then)",
+                                "id": "{{ definition }} (lalu)",
+                                "ja": "{{ definition }}（接続）"
                             }
                         }
                     }
@@ -6680,7 +7880,27 @@
                                 "id": "{{ prefix }}(sebelumnya) {{ stem }}",
                                 "ja": "{{ prefix }}（過去）{{ stem }}"
                             }
-                        }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(höflich)",
+                                        "en": "(politely)",
+                                        "id": "(dengan sopan)",
+                                        "ja": "(丁寧に)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(höflich in der Vergangenheit)",
+                                        "en": "(politely in the past)",
+                                        "id": "(dengan sopan pada masa lampau)",
+                                        "ja": "(丁寧な過去)"
+                                    }
+                                }
+                            }
+                        ]
                     }
                 },
                 {
@@ -6717,7 +7937,27 @@
                                 "id": "{{ prefix }}(tidak) {{ stem }}",
                                 "ja": "{{ prefix }}（否定）{{ stem }}"
                             }
-                        }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(höflich)",
+                                        "en": "(politely)",
+                                        "id": "(dengan sopan)",
+                                        "ja": "(丁寧に)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(höflich nicht)",
+                                        "en": "(politely not)",
+                                        "id": "(dengan sopan tidak)",
+                                        "ja": "(丁寧な否定)"
+                                    }
+                                }
+                            }
+                        ]
                     }
                 },
                 {
@@ -6754,7 +7994,27 @@
                                 "id": "{{ prefix }}(sebelumnya) {{ stem }}",
                                 "ja": "{{ prefix }}（過去）{{ stem }}"
                             }
-                        }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(nicht)",
+                                        "en": "(not)",
+                                        "id": "(tidak)",
+                                        "ja": "(否定)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(nicht in der Vergangenheit)",
+                                        "en": "(did not)",
+                                        "id": "(tidak pada masa lampau)",
+                                        "ja": "(否定過去)"
+                                    }
+                                }
+                            }
+                        ]
                     }
                 },
                 {
@@ -6786,10 +8046,10 @@
                         },
                         "template": {
                             "labels": {
-                                "de": "{{ prefix }}(und dann) {{ stem }}",
-                                "en": "{{ prefix }}(and then) {{ stem }}",
-                                "id": "{{ prefix }}(lalu) {{ stem }}",
-                                "ja": "{{ prefix }}（接続）{{ stem }}"
+                                "de": "{{ definition }} (und dann)",
+                                "en": "{{ definition }} (and then)",
+                                "id": "{{ definition }} (lalu)",
+                                "ja": "{{ definition }}（接続）"
                             }
                         }
                     }
@@ -6865,7 +8125,27 @@
                                 "id": "{{ prefix }}(tidak) {{ stem }}",
                                 "ja": "{{ prefix }}（否定）{{ stem }}"
                             }
-                        }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(wollen)",
+                                        "en": "(want to)",
+                                        "id": "(ingin)",
+                                        "ja": "(希望)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(nicht wollen)",
+                                        "en": "(not want to)",
+                                        "id": "(tidak ingin)",
+                                        "ja": "(希望否定)"
+                                    }
+                                }
+                            }
+                        ]
                     }
                 },
                 {
@@ -6902,7 +8182,27 @@
                                 "id": "{{ prefix }}(sebelumnya) {{ stem }}",
                                 "ja": "{{ prefix }}（過去）{{ stem }}"
                             }
-                        }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(wollen)",
+                                        "en": "(want to)",
+                                        "id": "(ingin)",
+                                        "ja": "(希望)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(gewollt haben)",
+                                        "en": "(have wanted to)",
+                                        "id": "(pernah ingin)",
+                                        "ja": "(希望過去)"
+                                    }
+                                }
+                            }
+                        ]
                     }
                 },
                 {
@@ -6934,10 +8234,10 @@
                         },
                         "template": {
                             "labels": {
-                                "de": "{{ prefix }}(und dann) {{ stem }}",
-                                "en": "{{ prefix }}(and then) {{ stem }}",
-                                "id": "{{ prefix }}(lalu) {{ stem }}",
-                                "ja": "{{ prefix }}（接続）{{ stem }}"
+                                "de": "{{ definition }} (und dann)",
+                                "en": "{{ definition }} (and then)",
+                                "id": "{{ definition }} (lalu)",
+                                "ja": "{{ definition }}（接続）"
                             }
                         }
                     }
@@ -7124,7 +8424,27 @@
                                 "id": "{{ prefix }}(tidak) {{ stem }}",
                                 "ja": "{{ prefix }}（否定）{{ stem }}"
                             }
-                        }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(jemanden dazu bringen oder es zulassen)",
+                                        "en": "(make or let someone)",
+                                        "id": "(membuat atau membiarkan seseorang)",
+                                        "ja": "(使役)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(jemanden nicht dazu bringen oder es nicht zulassen)",
+                                        "en": "(not make or let someone)",
+                                        "id": "(tidak membuat atau membiarkan seseorang)",
+                                        "ja": "(使役否定)"
+                                    }
+                                }
+                            }
+                        ]
                     }
                 },
                 {
@@ -7161,7 +8481,27 @@
                                 "id": "{{ prefix }}(sebelumnya) {{ stem }}",
                                 "ja": "{{ prefix }}（過去）{{ stem }}"
                             }
-                        }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(jemanden dazu bringen oder es zulassen)",
+                                        "en": "(make or let someone)",
+                                        "id": "(membuat atau membiarkan seseorang)",
+                                        "ja": "(使役)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(jemanden dazu gebracht oder es zugelassen haben)",
+                                        "en": "(made or let someone)",
+                                        "id": "(telah membuat atau membiarkan seseorang)",
+                                        "ja": "(使役過去)"
+                                    }
+                                }
+                            }
+                        ]
                     }
                 },
                 {
@@ -7193,10 +8533,10 @@
                         },
                         "template": {
                             "labels": {
-                                "de": "{{ prefix }}(und dann) {{ stem }}",
-                                "en": "{{ prefix }}(and then) {{ stem }}",
-                                "id": "{{ prefix }}(lalu) {{ stem }}",
-                                "ja": "{{ prefix }}（接続）{{ stem }}"
+                                "de": "{{ definition }} (und dann)",
+                                "en": "{{ definition }} (and then)",
+                                "id": "{{ definition }} (lalu)",
+                                "ja": "{{ definition }}（接続）"
                             }
                         }
                     }
@@ -7235,7 +8575,27 @@
                                 "id": "{{ prefix }}(ingin) {{ stem }}",
                                 "ja": "{{ prefix }}（希望）{{ stem }}"
                             }
-                        }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(jemanden dazu bringen oder es zulassen)",
+                                        "en": "(make or let someone)",
+                                        "id": "(membuat atau membiarkan seseorang)",
+                                        "ja": "(使役)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(jemanden dazu bringen oder es zulassen wollen)",
+                                        "en": "(want to make or let someone)",
+                                        "id": "(ingin membuat atau membiarkan seseorang)",
+                                        "ja": "(使役希望)"
+                                    }
+                                }
+                            }
+                        ]
                     }
                 },
                 {
@@ -7272,7 +8632,27 @@
                                 "id": "{{ prefix }}(tidak) {{ stem }}",
                                 "ja": "{{ prefix }}（否定）{{ stem }}"
                             }
-                        }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(jemanden dazu bringen oder es zulassen wollen)",
+                                        "en": "(want to make or let someone)",
+                                        "id": "(ingin membuat atau membiarkan seseorang)",
+                                        "ja": "(使役希望)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(jemanden nicht dazu bringen oder es nicht zulassen wollen)",
+                                        "en": "(not want to make or let someone)",
+                                        "id": "(tidak ingin membuat atau membiarkan seseorang)",
+                                        "ja": "(使役希望否定)"
+                                    }
+                                }
+                            }
+                        ]
                     }
                 },
                 {
@@ -7304,10 +8684,10 @@
                         },
                         "template": {
                             "labels": {
-                                "de": "{{ prefix }}(und dann) {{ stem }}",
-                                "en": "{{ prefix }}(and then) {{ stem }}",
-                                "id": "{{ prefix }}(lalu) {{ stem }}",
-                                "ja": "{{ prefix }}（接続）{{ stem }}"
+                                "de": "{{ definition }} (und dann)",
+                                "en": "{{ definition }} (and then)",
+                                "id": "{{ definition }} (lalu)",
+                                "ja": "{{ definition }}（接続）"
                             }
                         }
                     }

@@ -684,3 +684,19 @@ The module advances to `2.2.75`, content revision `2026-10-01.3`, and Japanese s
 ## Commits
 
 - [739beba](../../commit/739beba) — Adopt composable definition transforms.
+
+## Contextual Definition Replacements
+
+Definition transforms now use Cognis 2.24.1 ordered localized `replacements` before fallback templates. Past and negative branches can rewrite earlier desire, causative, polite, and conditional semantics, while connective branches append to the complete transformed definition through `{{ definition }}`.
+
+## Contextual Chain Coverage
+
+Tests verify `to (want to) see` becomes `to (have wanted to) see`, connective desire becomes `to (want to) see (and then)`, and the deepest causative-desire path preserves its complete contextual meaning.
+
+## Version Synchronization
+
+The module advances to `2.2.76`, content revision `2026-10-01.4`, and Japanese schema revision `81`, with regenerated package hashes.
+
+## Commits
+
+- [a5539e6](../../commit/a5539e6) — Add contextual definition replacements.

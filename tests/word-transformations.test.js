@@ -96,6 +96,14 @@ function annotatedDefinitions(baseDefinitions, node, language) {
         (node.definitionRules ?? [node.rule]).reduce((definition, rule) => {
             const transform = rule.definitionTransform;
             if (!transform) return localized(rule.definition) ?? definition;
+            for (const replacement of transform.replacements ?? []) {
+                const match = localized(replacement.match);
+                if (!match || !definition.includes(match)) continue;
+                return definition.replaceAll(
+                    match,
+                    localized(replacement.replacement),
+                );
+            }
             const prefix = localized(transform.matchPrefix) ?? "";
             const suffix = localized(transform.matchSuffix) ?? "";
             if (
@@ -199,8 +207,7 @@ test("verb transformation trees branch deeply with dynamic readings and definiti
                 "causative-negative-desire",
                 "causative-continuous-negative-desire",
             ],
-            definition:
-                "to (and then) (not) (want to) (make or let someone) eat",
+            definition: "to (not want to make or let someone) eat (and then)",
         },
     );
     const kuru = transformationNodes(wordsById.get("ja:word:kuru"));
@@ -267,6 +274,21 @@ test("desire transforms each definition of 見る independently", () => {
     ]);
 });
 
+test("contextual replacements rewrite prior definition transforms", () => {
+    const wordsById = new Map(words.map((entry) => [entry.id, entry]));
+    const miru = transformationNodes(wordsById.get("ja:word:miru"));
+    const desirePast = miru.find(({ state }) => state === "desire-past");
+    assert.equal(desirePast.value, "見たかった");
+    assert.deepEqual(annotatedDefinitions(["to see"], desirePast, "en"), [
+        "to (have wanted to) see",
+    ]);
+
+    const desireTe = miru.find(({ state }) => state === "desire-te");
+    assert.deepEqual(annotatedDefinitions(["to see"], desireTe, "en"), [
+        "to (want to) see (and then)",
+    ]);
+});
+
 test("every verb definition provides localized transform boundaries", () => {
     const definitionsById = new Map(
         definitions.map((entry) => [entry.id, entry]),
@@ -325,6 +347,14 @@ test("transform declarations are effective, localized, and unambiguous", () => {
                     "ja",
                 ]);
             assert.ok(rule.definitionTransform?.template);
+            for (const replacement of rule.definitionTransform?.replacements ??
+                []) {
+                for (const field of ["match", "replacement"])
+                    assert.deepEqual(
+                        Object.keys(replacement[field].labels).sort(),
+                        ["de", "en", "id", "ja"],
+                    );
+            }
         }
     }
 });

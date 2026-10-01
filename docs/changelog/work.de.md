@@ -684,3 +684,19 @@ Das Modul wird auf `2.2.75`, die Inhaltsrevision auf `2026-10-01.3` und das japa
 ## Commits
 
 - [739beba](../../commit/739beba) — Zusammensetzbare Definitionstransformationen übernommen.
+
+## Kontextabhängige Definitionsersetzungen
+
+Definitionstransformationen verwenden nun die geordneten lokalisierten `replacements` aus Cognis 2.24.1 vor den Ausweichvorlagen. Vergangenheits- und Verneinungszweige können frühere Wunsch-, Kausativ-, Höflichkeits- und Bedingungsbedeutungen umschreiben; Verbindungszweige hängen ihre Bedeutung mit `{{ definition }}` an die vollständig transformierte Definition an.
+
+## Tests für kontextabhängige Ketten
+
+Tests prüfen die Umschreibung von `to (want to) see` zu `to (have wanted to) see`, die verbindende Wunschform `to (want to) see (and then)` und die vollständige Bedeutung des tiefsten Kausativ-Wunsch-Pfads.
+
+## Versionsabgleich
+
+Das Modul wird auf `2.2.76`, die Inhaltsrevision auf `2026-10-01.4` und das japanische Schema auf Revision `81` angehoben; die Pakethashes wurden neu erzeugt.
+
+## Commits
+
+- [a5539e6](../../commit/a5539e6) — Kontextabhängige Definitionsersetzungen ergänzt.
