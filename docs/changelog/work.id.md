@@ -621,10 +621,6 @@ Tautan definisi langsung ditambahkan ke setiap rekaman Kosakata bacaan Kanji ter
 
 - [b0a83fb](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/b0a83fb)
 
-# Menyelaraskan metadata transformasi bahasa Jepang dengan Cognis 2.22
-
-**Feature Branch:** work
-
 ## Penanda transformasi terlokalisasi
 
 Cabang keinginan kausatif kini menerbitkan metadata `marker` terlokalisasi dalam bahasa Jerman, Inggris, Indonesia, dan Jepang. Cognis dapat menyisipkan frasa tersebut ke templat definisi sambil tetap memprioritaskan definisi khusus transformasi yang eksplisit.
@@ -640,3 +636,19 @@ Modul dinaikkan ke `2.2.72`, revisi konten `2026-09-30.10`, dan revisi skema bah
 ## Commit
 
 - [d7b696b](../../commit/d7b696b) — Menyelaraskan penanda transformasi dengan Cognis.
+
+## Anotasi Definisi untuk Setiap Transformasi
+
+Setiap transformasi verba yang disediakan kini memiliki metadata penanda terlokalisasi. Cabang keinginan langsung menghasilkan bentuk seperti `見たい`, sedangkan cabang negatif, lampau, sopan, penghubung, pasif, potensial, volisional, kausatif, dan cabang mendalam masing-masing menyediakan anotasi semantiknya sendiri.
+
+## Definisi Polisemi yang Mandiri
+
+`見る` kini merujuk rekaman definisi “to see” dan “to watch” secara terpisah. Cakupan regresi menerapkan penanda keinginan pada setiap definisi secara mandiri dan mewajibkan definisi kanonis bebas dari placeholder `{{ marker }}`.
+
+## Tindak Lanjut Cognis Terstruktur
+
+Implementasi placeholder satu string Cognis saat ini tidak dapat memenuhi kontrak ini tanpa membocorkan placeholder pada kartu bentuk dasar. Usulan host yang didokumentasikan meneruskan seluruh larik definisi melalui presentasi transformasi dan menerapkan penempatan terlokalisasi pada setiap definisi tanpa mengubah konten tersimpan.
+
+## Commit
+
+- [64ce852](../../commit/64ce852) — Menganotasi setiap definisi transformasi verba.

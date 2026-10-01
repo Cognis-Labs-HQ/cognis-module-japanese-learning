@@ -17,6 +17,18 @@ const words = readdirSync(path.join(ROOT, "data/library/content/words"))
             ),
         ),
     );
+const definitions = readdirSync(
+    path.join(ROOT, "data/library/content/definitions"),
+)
+    .filter((name) => name.endsWith(".json"))
+    .flatMap((name) =>
+        JSON.parse(
+            readFileSync(
+                path.join(ROOT, "data/library/content/definitions", name),
+                "utf8",
+            ),
+        ),
+    );
 
 function transformedValues(entry) {
     return transformationNodes(entry).map(({ value }) => value);
@@ -74,15 +86,17 @@ function transformationNodes(entry) {
     });
 }
 
-function transformedDefinition(baseDefinition, node, language) {
+function annotatedDefinitions(baseDefinitions, node, language) {
     const localized = (metadata) =>
         metadata?.labels?.[language] ??
         Object.values(metadata?.labels ?? {})[0];
-    const override = localized(node.definition);
-    if (override) return override;
     const marker = localized(node.rule?.marker);
-    if (!marker || !baseDefinition) return baseDefinition;
-    return baseDefinition.replaceAll("{{ marker }}", `(${marker})`);
+    if (!marker) return baseDefinitions;
+    return baseDefinitions.map((definition) =>
+        language === "en" && definition.startsWith("to ")
+            ? `to (${marker}) ${definition.slice(3)}`
+            : `(${marker}) ${definition}`,
+    );
 }
 
 test("Vocabulary declares separate base verb and adverb transform views", () => {
@@ -169,17 +183,6 @@ test("verb transformation trees branch deeply with dynamic readings and definiti
             ],
         },
     );
-    assert.deepEqual(
-        taberu.find(({ state }) => state === "causative-desire").definition
-            .labels,
-        {
-            de: "Wunsch, jemanden die Grundhandlung ausführen zu lassen",
-            en: "want to make or let someone perform the base action",
-            id: "ingin membuat atau membiarkan seseorang melakukan tindakan dasar",
-            ja: "誰かに基本の動作をさせたいという意味",
-        },
-    );
-
     const kuru = transformationNodes(wordsById.get("ja:word:kuru"));
     assert.deepEqual(
         kuru
@@ -207,43 +210,52 @@ test("verb transformation trees branch deeply with dynamic readings and definiti
     );
 });
 
-test("causative desire rules expose localized definition markers", () => {
-    const desireRules = schema.transformSets.flatMap(({ rules }) =>
-        rules.filter(({ id }) => id === "causative-desire"),
-    );
-    const verbSets = schema.transformSets.filter(
-        ({ matchTags }) =>
-            matchTags.includes("verb") && !matchTags.includes("godan-aru"),
-    );
-    assert.equal(desireRules.length, verbSets.length);
-    for (const rule of desireRules) {
-        assert.deepEqual(Object.keys(rule.marker.labels).sort(), [
-            "de",
-            "en",
-            "id",
-            "ja",
-        ]);
+test("every transformation exposes a localized definition annotation", () => {
+    for (const set of schema.transformSets) {
+        for (const rule of set.rules) {
+            assert.deepEqual(Object.keys(rule.marker.labels).sort(), [
+                "de",
+                "en",
+                "id",
+                "ja",
+            ]);
+        }
     }
+});
 
-    assert.equal(
-        transformedDefinition(
-            "to {{ marker }} eat",
-            { rule: { marker: desireRules[0].marker } },
-            "en",
-        ),
-        "to (want to make or let someone) eat",
+test("desire transforms each definition of 見る independently", () => {
+    const wordsById = new Map(words.map((entry) => [entry.id, entry]));
+    const definitionsById = new Map(
+        definitions.map((entry) => [entry.id, entry]),
     );
-    assert.equal(
-        transformedDefinition(
-            "to {{ marker }} eat",
-            {
-                definition: { labels: { en: "explicit transformed meaning" } },
-                rule: { marker: desireRules[0].marker },
-            },
-            "en",
+    const miru = wordsById.get("ja:word:miru");
+    const baseDefinitions = miru.references
+        .filter(({ relation }) => relation === "definitions")
+        .map(
+            ({ entryId }) =>
+                definitionsById.get(entryId).fields.translations.en,
+        );
+    assert.deepEqual(baseDefinitions, ["to see", "to watch"]);
+    assert.ok(
+        definitions.every(
+            ({ label, fields }) =>
+                !label.includes("{{ marker }}") &&
+                Object.values(fields.translations).every(
+                    (translation) => !translation.includes("{{ marker }}"),
+                ),
         ),
-        "explicit transformed meaning",
+        "canonical definitions must stay placeholder-free",
     );
+
+    const desire = transformationNodes(miru).find(
+        ({ state }) => state === "desire",
+    );
+    assert.equal(desire.value, "見たい");
+    assert.equal(desire.pronunciation, "みたい");
+    assert.deepEqual(annotatedDefinitions(baseDefinitions, desire, "en"), [
+        "to (want to) see",
+        "to (want to) watch",
+    ]);
 });
 
 test("transform declarations are effective, localized, and unambiguous", () => {
@@ -269,13 +281,12 @@ test("transform declarations are effective, localized, and unambiguous", () => {
                     "id",
                     "ja",
                 ]);
-            if (rule.marker)
-                assert.deepEqual(Object.keys(rule.marker.labels).sort(), [
-                    "de",
-                    "en",
-                    "id",
-                    "ja",
-                ]);
+            assert.deepEqual(Object.keys(rule.marker.labels).sort(), [
+                "de",
+                "en",
+                "id",
+                "ja",
+            ]);
         }
     }
 });

@@ -375,15 +375,30 @@
         "hidden": true
     },
     {
-        "id": "ja:def:miru",
-        "label": "to see; to watch",
+        "id": "ja:def:miru-see",
+        "label": "to see",
         "fields": {
-            "string_key": "japanese:definitions:miru",
+            "string_key": "japanese:definitions:miru-see",
             "translations": {
-                "de": "sehen; anschauen",
-                "en": "to see; to watch",
-                "id": "melihat; menonton",
+                "de": "sehen",
+                "en": "to see",
+                "id": "melihat",
                 "ja": "見る"
+            }
+        },
+        "class": "definition",
+        "hidden": true
+    },
+    {
+        "id": "ja:def:miru-watch",
+        "label": "to watch",
+        "fields": {
+            "string_key": "japanese:definitions:miru-watch",
+            "translations": {
+                "de": "anschauen",
+                "en": "to watch",
+                "id": "menonton",
+                "ja": "観る"
             }
         },
         "class": "definition",

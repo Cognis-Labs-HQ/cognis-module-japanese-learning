@@ -1,6 +1,6 @@
 {
     "id": "japanese-core",
-    "version": 77,
+    "version": 78,
     "namespace": "ja",
     "language": "ja",
     "metadata": {
@@ -1008,6 +1008,14 @@
                     "pronunciation": {
                         "removeSuffix": "る",
                         "append": "ます"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "höflich",
+                            "en": "politely",
+                            "id": "dengan sopan",
+                            "ja": "丁寧に"
+                        }
                     }
                 },
                 {
@@ -1027,6 +1035,14 @@
                     "pronunciation": {
                         "removeSuffix": "る",
                         "append": "ない"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "nicht",
+                            "en": "not",
+                            "id": "tidak",
+                            "ja": "否定"
+                        }
                     }
                 },
                 {
@@ -1046,6 +1062,14 @@
                     "pronunciation": {
                         "removeSuffix": "る",
                         "append": "た"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "Vergangenheit",
+                            "en": "past",
+                            "id": "lampau",
+                            "ja": "過去"
+                        }
                     }
                 },
                 {
@@ -1065,6 +1089,14 @@
                     "pronunciation": {
                         "removeSuffix": "る",
                         "append": "て"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "verbindend",
+                            "en": "and then",
+                            "id": "lalu",
+                            "ja": "接続"
+                        }
                     }
                 },
                 {
@@ -1084,6 +1116,14 @@
                     "pronunciation": {
                         "removeSuffix": "ます",
                         "append": "ました"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "höfliche Vergangenheit",
+                            "en": "politely, in the past",
+                            "id": "lampau dengan sopan",
+                            "ja": "丁寧な過去"
+                        }
                     }
                 },
                 {
@@ -1103,6 +1143,14 @@
                     "pronunciation": {
                         "removeSuffix": "ます",
                         "append": "ません"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "höflich nicht",
+                            "en": "politely not",
+                            "id": "tidak dengan sopan",
+                            "ja": "丁寧な否定"
+                        }
                     }
                 },
                 {
@@ -1122,6 +1170,14 @@
                     "pronunciation": {
                         "removeSuffix": "ない",
                         "append": "なかった"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "in der Vergangenheit nicht",
+                            "en": "did not",
+                            "id": "tidak pada masa lampau",
+                            "ja": "過去の否定"
+                        }
                     }
                 },
                 {
@@ -1141,6 +1197,122 @@
                     "pronunciation": {
                         "removeSuffix": "ない",
                         "append": "なくて"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "nicht und dann",
+                            "en": "not, and then",
+                            "id": "tidak, lalu",
+                            "ja": "否定して接続"
+                        }
+                    }
+                },
+                {
+                    "id": "desire",
+                    "metadata": {
+                        "labels": {
+                            "de": "Wunschform",
+                            "en": "Desire",
+                            "id": "Keinginan",
+                            "ja": "希望形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "desire",
+                    "removeSuffix": "る",
+                    "append": "たい",
+                    "pronunciation": {
+                        "removeSuffix": "る",
+                        "append": "たい"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "wollen",
+                            "en": "want to",
+                            "id": "ingin",
+                            "ja": "〜たい"
+                        }
+                    }
+                },
+                {
+                    "id": "desire-negative",
+                    "metadata": {
+                        "labels": {
+                            "de": "Verneinte Wunschform",
+                            "en": "Negative Desire",
+                            "id": "Keinginan Negatif",
+                            "ja": "希望否定形"
+                        }
+                    },
+                    "fromState": "desire",
+                    "toState": "desire-negative",
+                    "removeSuffix": "たい",
+                    "append": "たくない",
+                    "pronunciation": {
+                        "removeSuffix": "たい",
+                        "append": "たくない"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "nicht wollen",
+                            "en": "not want to",
+                            "id": "tidak ingin",
+                            "ja": "〜たくない"
+                        }
+                    }
+                },
+                {
+                    "id": "desire-past",
+                    "metadata": {
+                        "labels": {
+                            "de": "Wunsch-Vergangenheit",
+                            "en": "Past Desire",
+                            "id": "Keinginan Lampau",
+                            "ja": "希望過去形"
+                        }
+                    },
+                    "fromState": "desire",
+                    "toState": "desire-past",
+                    "removeSuffix": "たい",
+                    "append": "たかった",
+                    "pronunciation": {
+                        "removeSuffix": "たい",
+                        "append": "たかった"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "gewollt haben",
+                            "en": "wanted to",
+                            "id": "pernah ingin",
+                            "ja": "〜たかった"
+                        }
+                    }
+                },
+                {
+                    "id": "desire-te",
+                    "metadata": {
+                        "labels": {
+                            "de": "Wunsch-Te-Form",
+                            "en": "Desire Te Form",
+                            "id": "Bentuk Te Keinginan",
+                            "ja": "希望て形"
+                        }
+                    },
+                    "fromState": "desire",
+                    "toState": "desire-te",
+                    "removeSuffix": "たい",
+                    "append": "たくて",
+                    "pronunciation": {
+                        "removeSuffix": "たい",
+                        "append": "たくて"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "wollen und dann",
+                            "en": "want to, and then",
+                            "id": "ingin, lalu",
+                            "ja": "〜たくて"
+                        }
                     }
                 },
                 {
@@ -1160,6 +1332,14 @@
                     "pronunciation": {
                         "removeSuffix": "る",
                         "append": "させる"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "jemanden dazu bringen oder es zulassen, dass er",
+                            "en": "make or let someone",
+                            "id": "membuat atau membiarkan seseorang",
+                            "ja": "誰かに〜させる"
+                        }
                     }
                 },
                 {
@@ -1179,6 +1359,14 @@
                     "pronunciation": {
                         "removeSuffix": "る",
                         "append": "られる"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "passiv",
+                            "en": "be passively affected by",
+                            "id": "secara pasif",
+                            "ja": "受け身で"
+                        }
                     }
                 },
                 {
@@ -1198,6 +1386,14 @@
                     "pronunciation": {
                         "removeSuffix": "る",
                         "append": "られる"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "fähig sein zu",
+                            "en": "be able to",
+                            "id": "dapat",
+                            "ja": "可能として"
+                        }
                     }
                 },
                 {
@@ -1217,6 +1413,14 @@
                     "pronunciation": {
                         "removeSuffix": "る",
                         "append": "よう"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "beabsichtigen zu",
+                            "en": "intend to",
+                            "id": "berniat untuk",
+                            "ja": "意向として"
+                        }
                     }
                 },
                 {
@@ -1236,6 +1440,14 @@
                     "pronunciation": {
                         "removeSuffix": "る",
                         "append": "ない"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "jemanden nicht dazu bringen oder es nicht zulassen, dass er",
+                            "en": "not make or let someone",
+                            "id": "tidak membuat atau membiarkan seseorang",
+                            "ja": "誰かに〜させない"
+                        }
                     }
                 },
                 {
@@ -1255,6 +1467,14 @@
                     "pronunciation": {
                         "removeSuffix": "る",
                         "append": "た"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "jemanden dazu gebracht oder es zugelassen haben, dass er",
+                            "en": "have made or let someone",
+                            "id": "telah membuat atau membiarkan seseorang",
+                            "ja": "誰かに〜させた"
+                        }
                     }
                 },
                 {
@@ -1274,6 +1494,14 @@
                     "pronunciation": {
                         "removeSuffix": "る",
                         "append": "て"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "jemanden dazu bringen oder es zulassen und dann",
+                            "en": "make or let someone, and then",
+                            "id": "membuat atau membiarkan seseorang, lalu",
+                            "ja": "誰かに〜させて"
+                        }
                     }
                 },
                 {
@@ -1294,17 +1522,9 @@
                         "removeSuffix": "る",
                         "append": "たい"
                     },
-                    "definition": {
-                        "labels": {
-                            "de": "Wunsch, jemanden die Grundhandlung ausführen zu lassen",
-                            "en": "want to make or let someone perform the base action",
-                            "id": "ingin membuat atau membiarkan seseorang melakukan tindakan dasar",
-                            "ja": "誰かに基本の動作をさせたいという意味"
-                        }
-                    },
                     "marker": {
                         "labels": {
-                            "de": "jemanden dazu bringen oder es zulassen, dass er",
+                            "de": "jemanden dazu bringen oder es zulassen wollen, dass er",
                             "en": "want to make or let someone",
                             "id": "ingin membuat atau membiarkan seseorang",
                             "ja": "誰かに〜させたい"
@@ -1328,6 +1548,14 @@
                     "pronunciation": {
                         "removeSuffix": "たい",
                         "append": "たくない"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "nicht wünschen, jemanden dazu zu bringen oder es zuzulassen, dass er",
+                            "en": "not want to make or let someone",
+                            "id": "tidak ingin membuat atau membiarkan seseorang",
+                            "ja": "誰かに〜させたくない"
+                        }
                     }
                 },
                 {
@@ -1347,6 +1575,14 @@
                     "pronunciation": {
                         "removeSuffix": "ない",
                         "append": "なくて"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "nicht wünschen, jemanden dazu zu bringen oder es zuzulassen, und dann",
+                            "en": "not want to make or let someone, and then",
+                            "id": "tidak ingin membuat atau membiarkan seseorang, lalu",
+                            "ja": "誰かに〜させたくなくて"
+                        }
                     }
                 }
             ]
@@ -1381,6 +1617,14 @@
                     "pronunciation": {
                         "removeSuffix": "く",
                         "append": "きます"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "höflich",
+                            "en": "politely",
+                            "id": "dengan sopan",
+                            "ja": "丁寧に"
+                        }
                     }
                 },
                 {
@@ -1400,6 +1644,14 @@
                     "pronunciation": {
                         "removeSuffix": "く",
                         "append": "かない"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "nicht",
+                            "en": "not",
+                            "id": "tidak",
+                            "ja": "否定"
+                        }
                     }
                 },
                 {
@@ -1419,6 +1671,14 @@
                     "pronunciation": {
                         "removeSuffix": "く",
                         "append": "いた"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "Vergangenheit",
+                            "en": "past",
+                            "id": "lampau",
+                            "ja": "過去"
+                        }
                     }
                 },
                 {
@@ -1438,6 +1698,14 @@
                     "pronunciation": {
                         "removeSuffix": "く",
                         "append": "いて"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "verbindend",
+                            "en": "and then",
+                            "id": "lalu",
+                            "ja": "接続"
+                        }
                     }
                 },
                 {
@@ -1457,6 +1725,14 @@
                     "pronunciation": {
                         "removeSuffix": "ます",
                         "append": "ました"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "höfliche Vergangenheit",
+                            "en": "politely, in the past",
+                            "id": "lampau dengan sopan",
+                            "ja": "丁寧な過去"
+                        }
                     }
                 },
                 {
@@ -1476,6 +1752,14 @@
                     "pronunciation": {
                         "removeSuffix": "ます",
                         "append": "ません"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "höflich nicht",
+                            "en": "politely not",
+                            "id": "tidak dengan sopan",
+                            "ja": "丁寧な否定"
+                        }
                     }
                 },
                 {
@@ -1495,6 +1779,14 @@
                     "pronunciation": {
                         "removeSuffix": "ない",
                         "append": "なかった"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "in der Vergangenheit nicht",
+                            "en": "did not",
+                            "id": "tidak pada masa lampau",
+                            "ja": "過去の否定"
+                        }
                     }
                 },
                 {
@@ -1514,6 +1806,122 @@
                     "pronunciation": {
                         "removeSuffix": "ない",
                         "append": "なくて"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "nicht und dann",
+                            "en": "not, and then",
+                            "id": "tidak, lalu",
+                            "ja": "否定して接続"
+                        }
+                    }
+                },
+                {
+                    "id": "desire",
+                    "metadata": {
+                        "labels": {
+                            "de": "Wunschform",
+                            "en": "Desire",
+                            "id": "Keinginan",
+                            "ja": "希望形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "desire",
+                    "removeSuffix": "く",
+                    "append": "きたい",
+                    "pronunciation": {
+                        "removeSuffix": "く",
+                        "append": "きたい"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "wollen",
+                            "en": "want to",
+                            "id": "ingin",
+                            "ja": "〜たい"
+                        }
+                    }
+                },
+                {
+                    "id": "desire-negative",
+                    "metadata": {
+                        "labels": {
+                            "de": "Verneinte Wunschform",
+                            "en": "Negative Desire",
+                            "id": "Keinginan Negatif",
+                            "ja": "希望否定形"
+                        }
+                    },
+                    "fromState": "desire",
+                    "toState": "desire-negative",
+                    "removeSuffix": "たい",
+                    "append": "たくない",
+                    "pronunciation": {
+                        "removeSuffix": "たい",
+                        "append": "たくない"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "nicht wollen",
+                            "en": "not want to",
+                            "id": "tidak ingin",
+                            "ja": "〜たくない"
+                        }
+                    }
+                },
+                {
+                    "id": "desire-past",
+                    "metadata": {
+                        "labels": {
+                            "de": "Wunsch-Vergangenheit",
+                            "en": "Past Desire",
+                            "id": "Keinginan Lampau",
+                            "ja": "希望過去形"
+                        }
+                    },
+                    "fromState": "desire",
+                    "toState": "desire-past",
+                    "removeSuffix": "たい",
+                    "append": "たかった",
+                    "pronunciation": {
+                        "removeSuffix": "たい",
+                        "append": "たかった"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "gewollt haben",
+                            "en": "wanted to",
+                            "id": "pernah ingin",
+                            "ja": "〜たかった"
+                        }
+                    }
+                },
+                {
+                    "id": "desire-te",
+                    "metadata": {
+                        "labels": {
+                            "de": "Wunsch-Te-Form",
+                            "en": "Desire Te Form",
+                            "id": "Bentuk Te Keinginan",
+                            "ja": "希望て形"
+                        }
+                    },
+                    "fromState": "desire",
+                    "toState": "desire-te",
+                    "removeSuffix": "たい",
+                    "append": "たくて",
+                    "pronunciation": {
+                        "removeSuffix": "たい",
+                        "append": "たくて"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "wollen und dann",
+                            "en": "want to, and then",
+                            "id": "ingin, lalu",
+                            "ja": "〜たくて"
+                        }
                     }
                 },
                 {
@@ -1533,6 +1941,14 @@
                     "pronunciation": {
                         "removeSuffix": "く",
                         "append": "かせる"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "jemanden dazu bringen oder es zulassen, dass er",
+                            "en": "make or let someone",
+                            "id": "membuat atau membiarkan seseorang",
+                            "ja": "誰かに〜させる"
+                        }
                     }
                 },
                 {
@@ -1552,6 +1968,14 @@
                     "pronunciation": {
                         "removeSuffix": "く",
                         "append": "かれる"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "passiv",
+                            "en": "be passively affected by",
+                            "id": "secara pasif",
+                            "ja": "受け身で"
+                        }
                     }
                 },
                 {
@@ -1571,6 +1995,14 @@
                     "pronunciation": {
                         "removeSuffix": "く",
                         "append": "ける"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "fähig sein zu",
+                            "en": "be able to",
+                            "id": "dapat",
+                            "ja": "可能として"
+                        }
                     }
                 },
                 {
@@ -1590,6 +2022,14 @@
                     "pronunciation": {
                         "removeSuffix": "く",
                         "append": "こう"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "beabsichtigen zu",
+                            "en": "intend to",
+                            "id": "berniat untuk",
+                            "ja": "意向として"
+                        }
                     }
                 },
                 {
@@ -1609,6 +2049,14 @@
                     "pronunciation": {
                         "removeSuffix": "る",
                         "append": "ない"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "jemanden nicht dazu bringen oder es nicht zulassen, dass er",
+                            "en": "not make or let someone",
+                            "id": "tidak membuat atau membiarkan seseorang",
+                            "ja": "誰かに〜させない"
+                        }
                     }
                 },
                 {
@@ -1628,6 +2076,14 @@
                     "pronunciation": {
                         "removeSuffix": "る",
                         "append": "た"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "jemanden dazu gebracht oder es zugelassen haben, dass er",
+                            "en": "have made or let someone",
+                            "id": "telah membuat atau membiarkan seseorang",
+                            "ja": "誰かに〜させた"
+                        }
                     }
                 },
                 {
@@ -1647,6 +2103,14 @@
                     "pronunciation": {
                         "removeSuffix": "る",
                         "append": "て"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "jemanden dazu bringen oder es zulassen und dann",
+                            "en": "make or let someone, and then",
+                            "id": "membuat atau membiarkan seseorang, lalu",
+                            "ja": "誰かに〜させて"
+                        }
                     }
                 },
                 {
@@ -1667,17 +2131,9 @@
                         "removeSuffix": "る",
                         "append": "たい"
                     },
-                    "definition": {
-                        "labels": {
-                            "de": "Wunsch, jemanden die Grundhandlung ausführen zu lassen",
-                            "en": "want to make or let someone perform the base action",
-                            "id": "ingin membuat atau membiarkan seseorang melakukan tindakan dasar",
-                            "ja": "誰かに基本の動作をさせたいという意味"
-                        }
-                    },
                     "marker": {
                         "labels": {
-                            "de": "jemanden dazu bringen oder es zulassen, dass er",
+                            "de": "jemanden dazu bringen oder es zulassen wollen, dass er",
                             "en": "want to make or let someone",
                             "id": "ingin membuat atau membiarkan seseorang",
                             "ja": "誰かに〜させたい"
@@ -1701,6 +2157,14 @@
                     "pronunciation": {
                         "removeSuffix": "たい",
                         "append": "たくない"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "nicht wünschen, jemanden dazu zu bringen oder es zuzulassen, dass er",
+                            "en": "not want to make or let someone",
+                            "id": "tidak ingin membuat atau membiarkan seseorang",
+                            "ja": "誰かに〜させたくない"
+                        }
                     }
                 },
                 {
@@ -1720,6 +2184,14 @@
                     "pronunciation": {
                         "removeSuffix": "ない",
                         "append": "なくて"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "nicht wünschen, jemanden dazu zu bringen oder es zuzulassen, und dann",
+                            "en": "not want to make or let someone, and then",
+                            "id": "tidak ingin membuat atau membiarkan seseorang, lalu",
+                            "ja": "誰かに〜させたくなくて"
+                        }
                     }
                 }
             ]
@@ -1754,6 +2226,14 @@
                     "pronunciation": {
                         "removeSuffix": "く",
                         "append": "きます"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "höflich",
+                            "en": "politely",
+                            "id": "dengan sopan",
+                            "ja": "丁寧に"
+                        }
                     }
                 },
                 {
@@ -1773,6 +2253,14 @@
                     "pronunciation": {
                         "removeSuffix": "く",
                         "append": "かない"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "nicht",
+                            "en": "not",
+                            "id": "tidak",
+                            "ja": "否定"
+                        }
                     }
                 },
                 {
@@ -1792,6 +2280,14 @@
                     "pronunciation": {
                         "removeSuffix": "く",
                         "append": "った"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "Vergangenheit",
+                            "en": "past",
+                            "id": "lampau",
+                            "ja": "過去"
+                        }
                     }
                 },
                 {
@@ -1811,6 +2307,14 @@
                     "pronunciation": {
                         "removeSuffix": "く",
                         "append": "って"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "verbindend",
+                            "en": "and then",
+                            "id": "lalu",
+                            "ja": "接続"
+                        }
                     }
                 },
                 {
@@ -1830,6 +2334,14 @@
                     "pronunciation": {
                         "removeSuffix": "ます",
                         "append": "ました"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "höfliche Vergangenheit",
+                            "en": "politely, in the past",
+                            "id": "lampau dengan sopan",
+                            "ja": "丁寧な過去"
+                        }
                     }
                 },
                 {
@@ -1849,6 +2361,14 @@
                     "pronunciation": {
                         "removeSuffix": "ます",
                         "append": "ません"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "höflich nicht",
+                            "en": "politely not",
+                            "id": "tidak dengan sopan",
+                            "ja": "丁寧な否定"
+                        }
                     }
                 },
                 {
@@ -1868,6 +2388,14 @@
                     "pronunciation": {
                         "removeSuffix": "ない",
                         "append": "なかった"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "in der Vergangenheit nicht",
+                            "en": "did not",
+                            "id": "tidak pada masa lampau",
+                            "ja": "過去の否定"
+                        }
                     }
                 },
                 {
@@ -1887,6 +2415,122 @@
                     "pronunciation": {
                         "removeSuffix": "ない",
                         "append": "なくて"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "nicht und dann",
+                            "en": "not, and then",
+                            "id": "tidak, lalu",
+                            "ja": "否定して接続"
+                        }
+                    }
+                },
+                {
+                    "id": "desire",
+                    "metadata": {
+                        "labels": {
+                            "de": "Wunschform",
+                            "en": "Desire",
+                            "id": "Keinginan",
+                            "ja": "希望形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "desire",
+                    "removeSuffix": "く",
+                    "append": "きたい",
+                    "pronunciation": {
+                        "removeSuffix": "く",
+                        "append": "きたい"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "wollen",
+                            "en": "want to",
+                            "id": "ingin",
+                            "ja": "〜たい"
+                        }
+                    }
+                },
+                {
+                    "id": "desire-negative",
+                    "metadata": {
+                        "labels": {
+                            "de": "Verneinte Wunschform",
+                            "en": "Negative Desire",
+                            "id": "Keinginan Negatif",
+                            "ja": "希望否定形"
+                        }
+                    },
+                    "fromState": "desire",
+                    "toState": "desire-negative",
+                    "removeSuffix": "たい",
+                    "append": "たくない",
+                    "pronunciation": {
+                        "removeSuffix": "たい",
+                        "append": "たくない"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "nicht wollen",
+                            "en": "not want to",
+                            "id": "tidak ingin",
+                            "ja": "〜たくない"
+                        }
+                    }
+                },
+                {
+                    "id": "desire-past",
+                    "metadata": {
+                        "labels": {
+                            "de": "Wunsch-Vergangenheit",
+                            "en": "Past Desire",
+                            "id": "Keinginan Lampau",
+                            "ja": "希望過去形"
+                        }
+                    },
+                    "fromState": "desire",
+                    "toState": "desire-past",
+                    "removeSuffix": "たい",
+                    "append": "たかった",
+                    "pronunciation": {
+                        "removeSuffix": "たい",
+                        "append": "たかった"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "gewollt haben",
+                            "en": "wanted to",
+                            "id": "pernah ingin",
+                            "ja": "〜たかった"
+                        }
+                    }
+                },
+                {
+                    "id": "desire-te",
+                    "metadata": {
+                        "labels": {
+                            "de": "Wunsch-Te-Form",
+                            "en": "Desire Te Form",
+                            "id": "Bentuk Te Keinginan",
+                            "ja": "希望て形"
+                        }
+                    },
+                    "fromState": "desire",
+                    "toState": "desire-te",
+                    "removeSuffix": "たい",
+                    "append": "たくて",
+                    "pronunciation": {
+                        "removeSuffix": "たい",
+                        "append": "たくて"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "wollen und dann",
+                            "en": "want to, and then",
+                            "id": "ingin, lalu",
+                            "ja": "〜たくて"
+                        }
                     }
                 },
                 {
@@ -1906,6 +2550,14 @@
                     "pronunciation": {
                         "removeSuffix": "く",
                         "append": "かせる"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "jemanden dazu bringen oder es zulassen, dass er",
+                            "en": "make or let someone",
+                            "id": "membuat atau membiarkan seseorang",
+                            "ja": "誰かに〜させる"
+                        }
                     }
                 },
                 {
@@ -1925,6 +2577,14 @@
                     "pronunciation": {
                         "removeSuffix": "く",
                         "append": "かれる"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "passiv",
+                            "en": "be passively affected by",
+                            "id": "secara pasif",
+                            "ja": "受け身で"
+                        }
                     }
                 },
                 {
@@ -1944,6 +2604,14 @@
                     "pronunciation": {
                         "removeSuffix": "く",
                         "append": "ける"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "fähig sein zu",
+                            "en": "be able to",
+                            "id": "dapat",
+                            "ja": "可能として"
+                        }
                     }
                 },
                 {
@@ -1963,6 +2631,14 @@
                     "pronunciation": {
                         "removeSuffix": "く",
                         "append": "こう"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "beabsichtigen zu",
+                            "en": "intend to",
+                            "id": "berniat untuk",
+                            "ja": "意向として"
+                        }
                     }
                 },
                 {
@@ -1982,6 +2658,14 @@
                     "pronunciation": {
                         "removeSuffix": "る",
                         "append": "ない"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "jemanden nicht dazu bringen oder es nicht zulassen, dass er",
+                            "en": "not make or let someone",
+                            "id": "tidak membuat atau membiarkan seseorang",
+                            "ja": "誰かに〜させない"
+                        }
                     }
                 },
                 {
@@ -2001,6 +2685,14 @@
                     "pronunciation": {
                         "removeSuffix": "る",
                         "append": "た"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "jemanden dazu gebracht oder es zugelassen haben, dass er",
+                            "en": "have made or let someone",
+                            "id": "telah membuat atau membiarkan seseorang",
+                            "ja": "誰かに〜させた"
+                        }
                     }
                 },
                 {
@@ -2020,6 +2712,14 @@
                     "pronunciation": {
                         "removeSuffix": "る",
                         "append": "て"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "jemanden dazu bringen oder es zulassen und dann",
+                            "en": "make or let someone, and then",
+                            "id": "membuat atau membiarkan seseorang, lalu",
+                            "ja": "誰かに〜させて"
+                        }
                     }
                 },
                 {
@@ -2040,17 +2740,9 @@
                         "removeSuffix": "る",
                         "append": "たい"
                     },
-                    "definition": {
-                        "labels": {
-                            "de": "Wunsch, jemanden die Grundhandlung ausführen zu lassen",
-                            "en": "want to make or let someone perform the base action",
-                            "id": "ingin membuat atau membiarkan seseorang melakukan tindakan dasar",
-                            "ja": "誰かに基本の動作をさせたいという意味"
-                        }
-                    },
                     "marker": {
                         "labels": {
-                            "de": "jemanden dazu bringen oder es zulassen, dass er",
+                            "de": "jemanden dazu bringen oder es zulassen wollen, dass er",
                             "en": "want to make or let someone",
                             "id": "ingin membuat atau membiarkan seseorang",
                             "ja": "誰かに〜させたい"
@@ -2074,6 +2766,14 @@
                     "pronunciation": {
                         "removeSuffix": "たい",
                         "append": "たくない"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "nicht wünschen, jemanden dazu zu bringen oder es zuzulassen, dass er",
+                            "en": "not want to make or let someone",
+                            "id": "tidak ingin membuat atau membiarkan seseorang",
+                            "ja": "誰かに〜させたくない"
+                        }
                     }
                 },
                 {
@@ -2093,6 +2793,14 @@
                     "pronunciation": {
                         "removeSuffix": "ない",
                         "append": "なくて"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "nicht wünschen, jemanden dazu zu bringen oder es zuzulassen, und dann",
+                            "en": "not want to make or let someone, and then",
+                            "id": "tidak ingin membuat atau membiarkan seseorang, lalu",
+                            "ja": "誰かに〜させたくなくて"
+                        }
                     }
                 }
             ]
@@ -2127,6 +2835,14 @@
                     "pronunciation": {
                         "removeSuffix": "す",
                         "append": "します"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "höflich",
+                            "en": "politely",
+                            "id": "dengan sopan",
+                            "ja": "丁寧に"
+                        }
                     }
                 },
                 {
@@ -2146,6 +2862,14 @@
                     "pronunciation": {
                         "removeSuffix": "す",
                         "append": "さない"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "nicht",
+                            "en": "not",
+                            "id": "tidak",
+                            "ja": "否定"
+                        }
                     }
                 },
                 {
@@ -2165,6 +2889,14 @@
                     "pronunciation": {
                         "removeSuffix": "す",
                         "append": "した"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "Vergangenheit",
+                            "en": "past",
+                            "id": "lampau",
+                            "ja": "過去"
+                        }
                     }
                 },
                 {
@@ -2184,6 +2916,14 @@
                     "pronunciation": {
                         "removeSuffix": "す",
                         "append": "して"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "verbindend",
+                            "en": "and then",
+                            "id": "lalu",
+                            "ja": "接続"
+                        }
                     }
                 },
                 {
@@ -2203,6 +2943,14 @@
                     "pronunciation": {
                         "removeSuffix": "ます",
                         "append": "ました"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "höfliche Vergangenheit",
+                            "en": "politely, in the past",
+                            "id": "lampau dengan sopan",
+                            "ja": "丁寧な過去"
+                        }
                     }
                 },
                 {
@@ -2222,6 +2970,14 @@
                     "pronunciation": {
                         "removeSuffix": "ます",
                         "append": "ません"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "höflich nicht",
+                            "en": "politely not",
+                            "id": "tidak dengan sopan",
+                            "ja": "丁寧な否定"
+                        }
                     }
                 },
                 {
@@ -2241,6 +2997,14 @@
                     "pronunciation": {
                         "removeSuffix": "ない",
                         "append": "なかった"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "in der Vergangenheit nicht",
+                            "en": "did not",
+                            "id": "tidak pada masa lampau",
+                            "ja": "過去の否定"
+                        }
                     }
                 },
                 {
@@ -2260,6 +3024,122 @@
                     "pronunciation": {
                         "removeSuffix": "ない",
                         "append": "なくて"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "nicht und dann",
+                            "en": "not, and then",
+                            "id": "tidak, lalu",
+                            "ja": "否定して接続"
+                        }
+                    }
+                },
+                {
+                    "id": "desire",
+                    "metadata": {
+                        "labels": {
+                            "de": "Wunschform",
+                            "en": "Desire",
+                            "id": "Keinginan",
+                            "ja": "希望形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "desire",
+                    "removeSuffix": "す",
+                    "append": "したい",
+                    "pronunciation": {
+                        "removeSuffix": "す",
+                        "append": "したい"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "wollen",
+                            "en": "want to",
+                            "id": "ingin",
+                            "ja": "〜たい"
+                        }
+                    }
+                },
+                {
+                    "id": "desire-negative",
+                    "metadata": {
+                        "labels": {
+                            "de": "Verneinte Wunschform",
+                            "en": "Negative Desire",
+                            "id": "Keinginan Negatif",
+                            "ja": "希望否定形"
+                        }
+                    },
+                    "fromState": "desire",
+                    "toState": "desire-negative",
+                    "removeSuffix": "たい",
+                    "append": "たくない",
+                    "pronunciation": {
+                        "removeSuffix": "たい",
+                        "append": "たくない"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "nicht wollen",
+                            "en": "not want to",
+                            "id": "tidak ingin",
+                            "ja": "〜たくない"
+                        }
+                    }
+                },
+                {
+                    "id": "desire-past",
+                    "metadata": {
+                        "labels": {
+                            "de": "Wunsch-Vergangenheit",
+                            "en": "Past Desire",
+                            "id": "Keinginan Lampau",
+                            "ja": "希望過去形"
+                        }
+                    },
+                    "fromState": "desire",
+                    "toState": "desire-past",
+                    "removeSuffix": "たい",
+                    "append": "たかった",
+                    "pronunciation": {
+                        "removeSuffix": "たい",
+                        "append": "たかった"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "gewollt haben",
+                            "en": "wanted to",
+                            "id": "pernah ingin",
+                            "ja": "〜たかった"
+                        }
+                    }
+                },
+                {
+                    "id": "desire-te",
+                    "metadata": {
+                        "labels": {
+                            "de": "Wunsch-Te-Form",
+                            "en": "Desire Te Form",
+                            "id": "Bentuk Te Keinginan",
+                            "ja": "希望て形"
+                        }
+                    },
+                    "fromState": "desire",
+                    "toState": "desire-te",
+                    "removeSuffix": "たい",
+                    "append": "たくて",
+                    "pronunciation": {
+                        "removeSuffix": "たい",
+                        "append": "たくて"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "wollen und dann",
+                            "en": "want to, and then",
+                            "id": "ingin, lalu",
+                            "ja": "〜たくて"
+                        }
                     }
                 },
                 {
@@ -2279,6 +3159,14 @@
                     "pronunciation": {
                         "removeSuffix": "す",
                         "append": "させる"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "jemanden dazu bringen oder es zulassen, dass er",
+                            "en": "make or let someone",
+                            "id": "membuat atau membiarkan seseorang",
+                            "ja": "誰かに〜させる"
+                        }
                     }
                 },
                 {
@@ -2298,6 +3186,14 @@
                     "pronunciation": {
                         "removeSuffix": "す",
                         "append": "される"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "passiv",
+                            "en": "be passively affected by",
+                            "id": "secara pasif",
+                            "ja": "受け身で"
+                        }
                     }
                 },
                 {
@@ -2317,6 +3213,14 @@
                     "pronunciation": {
                         "removeSuffix": "す",
                         "append": "せる"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "fähig sein zu",
+                            "en": "be able to",
+                            "id": "dapat",
+                            "ja": "可能として"
+                        }
                     }
                 },
                 {
@@ -2336,6 +3240,14 @@
                     "pronunciation": {
                         "removeSuffix": "す",
                         "append": "そう"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "beabsichtigen zu",
+                            "en": "intend to",
+                            "id": "berniat untuk",
+                            "ja": "意向として"
+                        }
                     }
                 },
                 {
@@ -2355,6 +3267,14 @@
                     "pronunciation": {
                         "removeSuffix": "る",
                         "append": "ない"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "jemanden nicht dazu bringen oder es nicht zulassen, dass er",
+                            "en": "not make or let someone",
+                            "id": "tidak membuat atau membiarkan seseorang",
+                            "ja": "誰かに〜させない"
+                        }
                     }
                 },
                 {
@@ -2374,6 +3294,14 @@
                     "pronunciation": {
                         "removeSuffix": "る",
                         "append": "た"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "jemanden dazu gebracht oder es zugelassen haben, dass er",
+                            "en": "have made or let someone",
+                            "id": "telah membuat atau membiarkan seseorang",
+                            "ja": "誰かに〜させた"
+                        }
                     }
                 },
                 {
@@ -2393,6 +3321,14 @@
                     "pronunciation": {
                         "removeSuffix": "る",
                         "append": "て"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "jemanden dazu bringen oder es zulassen und dann",
+                            "en": "make or let someone, and then",
+                            "id": "membuat atau membiarkan seseorang, lalu",
+                            "ja": "誰かに〜させて"
+                        }
                     }
                 },
                 {
@@ -2413,17 +3349,9 @@
                         "removeSuffix": "る",
                         "append": "たい"
                     },
-                    "definition": {
-                        "labels": {
-                            "de": "Wunsch, jemanden die Grundhandlung ausführen zu lassen",
-                            "en": "want to make or let someone perform the base action",
-                            "id": "ingin membuat atau membiarkan seseorang melakukan tindakan dasar",
-                            "ja": "誰かに基本の動作をさせたいという意味"
-                        }
-                    },
                     "marker": {
                         "labels": {
-                            "de": "jemanden dazu bringen oder es zulassen, dass er",
+                            "de": "jemanden dazu bringen oder es zulassen wollen, dass er",
                             "en": "want to make or let someone",
                             "id": "ingin membuat atau membiarkan seseorang",
                             "ja": "誰かに〜させたい"
@@ -2447,6 +3375,14 @@
                     "pronunciation": {
                         "removeSuffix": "たい",
                         "append": "たくない"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "nicht wünschen, jemanden dazu zu bringen oder es zuzulassen, dass er",
+                            "en": "not want to make or let someone",
+                            "id": "tidak ingin membuat atau membiarkan seseorang",
+                            "ja": "誰かに〜させたくない"
+                        }
                     }
                 },
                 {
@@ -2466,6 +3402,14 @@
                     "pronunciation": {
                         "removeSuffix": "ない",
                         "append": "なくて"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "nicht wünschen, jemanden dazu zu bringen oder es zuzulassen, und dann",
+                            "en": "not want to make or let someone, and then",
+                            "id": "tidak ingin membuat atau membiarkan seseorang, lalu",
+                            "ja": "誰かに〜させたくなくて"
+                        }
                     }
                 }
             ]
@@ -2500,6 +3444,14 @@
                     "pronunciation": {
                         "removeSuffix": "ぶ",
                         "append": "びます"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "höflich",
+                            "en": "politely",
+                            "id": "dengan sopan",
+                            "ja": "丁寧に"
+                        }
                     }
                 },
                 {
@@ -2519,6 +3471,14 @@
                     "pronunciation": {
                         "removeSuffix": "ぶ",
                         "append": "ばない"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "nicht",
+                            "en": "not",
+                            "id": "tidak",
+                            "ja": "否定"
+                        }
                     }
                 },
                 {
@@ -2538,6 +3498,14 @@
                     "pronunciation": {
                         "removeSuffix": "ぶ",
                         "append": "んだ"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "Vergangenheit",
+                            "en": "past",
+                            "id": "lampau",
+                            "ja": "過去"
+                        }
                     }
                 },
                 {
@@ -2557,6 +3525,14 @@
                     "pronunciation": {
                         "removeSuffix": "ぶ",
                         "append": "んで"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "verbindend",
+                            "en": "and then",
+                            "id": "lalu",
+                            "ja": "接続"
+                        }
                     }
                 },
                 {
@@ -2576,6 +3552,14 @@
                     "pronunciation": {
                         "removeSuffix": "ます",
                         "append": "ました"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "höfliche Vergangenheit",
+                            "en": "politely, in the past",
+                            "id": "lampau dengan sopan",
+                            "ja": "丁寧な過去"
+                        }
                     }
                 },
                 {
@@ -2595,6 +3579,14 @@
                     "pronunciation": {
                         "removeSuffix": "ます",
                         "append": "ません"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "höflich nicht",
+                            "en": "politely not",
+                            "id": "tidak dengan sopan",
+                            "ja": "丁寧な否定"
+                        }
                     }
                 },
                 {
@@ -2614,6 +3606,14 @@
                     "pronunciation": {
                         "removeSuffix": "ない",
                         "append": "なかった"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "in der Vergangenheit nicht",
+                            "en": "did not",
+                            "id": "tidak pada masa lampau",
+                            "ja": "過去の否定"
+                        }
                     }
                 },
                 {
@@ -2633,6 +3633,122 @@
                     "pronunciation": {
                         "removeSuffix": "ない",
                         "append": "なくて"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "nicht und dann",
+                            "en": "not, and then",
+                            "id": "tidak, lalu",
+                            "ja": "否定して接続"
+                        }
+                    }
+                },
+                {
+                    "id": "desire",
+                    "metadata": {
+                        "labels": {
+                            "de": "Wunschform",
+                            "en": "Desire",
+                            "id": "Keinginan",
+                            "ja": "希望形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "desire",
+                    "removeSuffix": "ぶ",
+                    "append": "びたい",
+                    "pronunciation": {
+                        "removeSuffix": "ぶ",
+                        "append": "びたい"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "wollen",
+                            "en": "want to",
+                            "id": "ingin",
+                            "ja": "〜たい"
+                        }
+                    }
+                },
+                {
+                    "id": "desire-negative",
+                    "metadata": {
+                        "labels": {
+                            "de": "Verneinte Wunschform",
+                            "en": "Negative Desire",
+                            "id": "Keinginan Negatif",
+                            "ja": "希望否定形"
+                        }
+                    },
+                    "fromState": "desire",
+                    "toState": "desire-negative",
+                    "removeSuffix": "たい",
+                    "append": "たくない",
+                    "pronunciation": {
+                        "removeSuffix": "たい",
+                        "append": "たくない"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "nicht wollen",
+                            "en": "not want to",
+                            "id": "tidak ingin",
+                            "ja": "〜たくない"
+                        }
+                    }
+                },
+                {
+                    "id": "desire-past",
+                    "metadata": {
+                        "labels": {
+                            "de": "Wunsch-Vergangenheit",
+                            "en": "Past Desire",
+                            "id": "Keinginan Lampau",
+                            "ja": "希望過去形"
+                        }
+                    },
+                    "fromState": "desire",
+                    "toState": "desire-past",
+                    "removeSuffix": "たい",
+                    "append": "たかった",
+                    "pronunciation": {
+                        "removeSuffix": "たい",
+                        "append": "たかった"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "gewollt haben",
+                            "en": "wanted to",
+                            "id": "pernah ingin",
+                            "ja": "〜たかった"
+                        }
+                    }
+                },
+                {
+                    "id": "desire-te",
+                    "metadata": {
+                        "labels": {
+                            "de": "Wunsch-Te-Form",
+                            "en": "Desire Te Form",
+                            "id": "Bentuk Te Keinginan",
+                            "ja": "希望て形"
+                        }
+                    },
+                    "fromState": "desire",
+                    "toState": "desire-te",
+                    "removeSuffix": "たい",
+                    "append": "たくて",
+                    "pronunciation": {
+                        "removeSuffix": "たい",
+                        "append": "たくて"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "wollen und dann",
+                            "en": "want to, and then",
+                            "id": "ingin, lalu",
+                            "ja": "〜たくて"
+                        }
                     }
                 },
                 {
@@ -2652,6 +3768,14 @@
                     "pronunciation": {
                         "removeSuffix": "ぶ",
                         "append": "ばせる"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "jemanden dazu bringen oder es zulassen, dass er",
+                            "en": "make or let someone",
+                            "id": "membuat atau membiarkan seseorang",
+                            "ja": "誰かに〜させる"
+                        }
                     }
                 },
                 {
@@ -2671,6 +3795,14 @@
                     "pronunciation": {
                         "removeSuffix": "ぶ",
                         "append": "ばれる"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "passiv",
+                            "en": "be passively affected by",
+                            "id": "secara pasif",
+                            "ja": "受け身で"
+                        }
                     }
                 },
                 {
@@ -2690,6 +3822,14 @@
                     "pronunciation": {
                         "removeSuffix": "ぶ",
                         "append": "べる"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "fähig sein zu",
+                            "en": "be able to",
+                            "id": "dapat",
+                            "ja": "可能として"
+                        }
                     }
                 },
                 {
@@ -2709,6 +3849,14 @@
                     "pronunciation": {
                         "removeSuffix": "ぶ",
                         "append": "ぼう"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "beabsichtigen zu",
+                            "en": "intend to",
+                            "id": "berniat untuk",
+                            "ja": "意向として"
+                        }
                     }
                 },
                 {
@@ -2728,6 +3876,14 @@
                     "pronunciation": {
                         "removeSuffix": "る",
                         "append": "ない"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "jemanden nicht dazu bringen oder es nicht zulassen, dass er",
+                            "en": "not make or let someone",
+                            "id": "tidak membuat atau membiarkan seseorang",
+                            "ja": "誰かに〜させない"
+                        }
                     }
                 },
                 {
@@ -2747,6 +3903,14 @@
                     "pronunciation": {
                         "removeSuffix": "る",
                         "append": "た"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "jemanden dazu gebracht oder es zugelassen haben, dass er",
+                            "en": "have made or let someone",
+                            "id": "telah membuat atau membiarkan seseorang",
+                            "ja": "誰かに〜させた"
+                        }
                     }
                 },
                 {
@@ -2766,6 +3930,14 @@
                     "pronunciation": {
                         "removeSuffix": "る",
                         "append": "て"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "jemanden dazu bringen oder es zulassen und dann",
+                            "en": "make or let someone, and then",
+                            "id": "membuat atau membiarkan seseorang, lalu",
+                            "ja": "誰かに〜させて"
+                        }
                     }
                 },
                 {
@@ -2786,17 +3958,9 @@
                         "removeSuffix": "る",
                         "append": "たい"
                     },
-                    "definition": {
-                        "labels": {
-                            "de": "Wunsch, jemanden die Grundhandlung ausführen zu lassen",
-                            "en": "want to make or let someone perform the base action",
-                            "id": "ingin membuat atau membiarkan seseorang melakukan tindakan dasar",
-                            "ja": "誰かに基本の動作をさせたいという意味"
-                        }
-                    },
                     "marker": {
                         "labels": {
-                            "de": "jemanden dazu bringen oder es zulassen, dass er",
+                            "de": "jemanden dazu bringen oder es zulassen wollen, dass er",
                             "en": "want to make or let someone",
                             "id": "ingin membuat atau membiarkan seseorang",
                             "ja": "誰かに〜させたい"
@@ -2820,6 +3984,14 @@
                     "pronunciation": {
                         "removeSuffix": "たい",
                         "append": "たくない"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "nicht wünschen, jemanden dazu zu bringen oder es zuzulassen, dass er",
+                            "en": "not want to make or let someone",
+                            "id": "tidak ingin membuat atau membiarkan seseorang",
+                            "ja": "誰かに〜させたくない"
+                        }
                     }
                 },
                 {
@@ -2839,6 +4011,14 @@
                     "pronunciation": {
                         "removeSuffix": "ない",
                         "append": "なくて"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "nicht wünschen, jemanden dazu zu bringen oder es zuzulassen, und dann",
+                            "en": "not want to make or let someone, and then",
+                            "id": "tidak ingin membuat atau membiarkan seseorang, lalu",
+                            "ja": "誰かに〜させたくなくて"
+                        }
                     }
                 }
             ]
@@ -2873,6 +4053,14 @@
                     "pronunciation": {
                         "removeSuffix": "む",
                         "append": "みます"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "höflich",
+                            "en": "politely",
+                            "id": "dengan sopan",
+                            "ja": "丁寧に"
+                        }
                     }
                 },
                 {
@@ -2892,6 +4080,14 @@
                     "pronunciation": {
                         "removeSuffix": "む",
                         "append": "まない"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "nicht",
+                            "en": "not",
+                            "id": "tidak",
+                            "ja": "否定"
+                        }
                     }
                 },
                 {
@@ -2911,6 +4107,14 @@
                     "pronunciation": {
                         "removeSuffix": "む",
                         "append": "んだ"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "Vergangenheit",
+                            "en": "past",
+                            "id": "lampau",
+                            "ja": "過去"
+                        }
                     }
                 },
                 {
@@ -2930,6 +4134,14 @@
                     "pronunciation": {
                         "removeSuffix": "む",
                         "append": "んで"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "verbindend",
+                            "en": "and then",
+                            "id": "lalu",
+                            "ja": "接続"
+                        }
                     }
                 },
                 {
@@ -2949,6 +4161,14 @@
                     "pronunciation": {
                         "removeSuffix": "ます",
                         "append": "ました"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "höfliche Vergangenheit",
+                            "en": "politely, in the past",
+                            "id": "lampau dengan sopan",
+                            "ja": "丁寧な過去"
+                        }
                     }
                 },
                 {
@@ -2968,6 +4188,14 @@
                     "pronunciation": {
                         "removeSuffix": "ます",
                         "append": "ません"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "höflich nicht",
+                            "en": "politely not",
+                            "id": "tidak dengan sopan",
+                            "ja": "丁寧な否定"
+                        }
                     }
                 },
                 {
@@ -2987,6 +4215,14 @@
                     "pronunciation": {
                         "removeSuffix": "ない",
                         "append": "なかった"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "in der Vergangenheit nicht",
+                            "en": "did not",
+                            "id": "tidak pada masa lampau",
+                            "ja": "過去の否定"
+                        }
                     }
                 },
                 {
@@ -3006,6 +4242,122 @@
                     "pronunciation": {
                         "removeSuffix": "ない",
                         "append": "なくて"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "nicht und dann",
+                            "en": "not, and then",
+                            "id": "tidak, lalu",
+                            "ja": "否定して接続"
+                        }
+                    }
+                },
+                {
+                    "id": "desire",
+                    "metadata": {
+                        "labels": {
+                            "de": "Wunschform",
+                            "en": "Desire",
+                            "id": "Keinginan",
+                            "ja": "希望形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "desire",
+                    "removeSuffix": "む",
+                    "append": "みたい",
+                    "pronunciation": {
+                        "removeSuffix": "む",
+                        "append": "みたい"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "wollen",
+                            "en": "want to",
+                            "id": "ingin",
+                            "ja": "〜たい"
+                        }
+                    }
+                },
+                {
+                    "id": "desire-negative",
+                    "metadata": {
+                        "labels": {
+                            "de": "Verneinte Wunschform",
+                            "en": "Negative Desire",
+                            "id": "Keinginan Negatif",
+                            "ja": "希望否定形"
+                        }
+                    },
+                    "fromState": "desire",
+                    "toState": "desire-negative",
+                    "removeSuffix": "たい",
+                    "append": "たくない",
+                    "pronunciation": {
+                        "removeSuffix": "たい",
+                        "append": "たくない"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "nicht wollen",
+                            "en": "not want to",
+                            "id": "tidak ingin",
+                            "ja": "〜たくない"
+                        }
+                    }
+                },
+                {
+                    "id": "desire-past",
+                    "metadata": {
+                        "labels": {
+                            "de": "Wunsch-Vergangenheit",
+                            "en": "Past Desire",
+                            "id": "Keinginan Lampau",
+                            "ja": "希望過去形"
+                        }
+                    },
+                    "fromState": "desire",
+                    "toState": "desire-past",
+                    "removeSuffix": "たい",
+                    "append": "たかった",
+                    "pronunciation": {
+                        "removeSuffix": "たい",
+                        "append": "たかった"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "gewollt haben",
+                            "en": "wanted to",
+                            "id": "pernah ingin",
+                            "ja": "〜たかった"
+                        }
+                    }
+                },
+                {
+                    "id": "desire-te",
+                    "metadata": {
+                        "labels": {
+                            "de": "Wunsch-Te-Form",
+                            "en": "Desire Te Form",
+                            "id": "Bentuk Te Keinginan",
+                            "ja": "希望て形"
+                        }
+                    },
+                    "fromState": "desire",
+                    "toState": "desire-te",
+                    "removeSuffix": "たい",
+                    "append": "たくて",
+                    "pronunciation": {
+                        "removeSuffix": "たい",
+                        "append": "たくて"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "wollen und dann",
+                            "en": "want to, and then",
+                            "id": "ingin, lalu",
+                            "ja": "〜たくて"
+                        }
                     }
                 },
                 {
@@ -3025,6 +4377,14 @@
                     "pronunciation": {
                         "removeSuffix": "む",
                         "append": "ませる"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "jemanden dazu bringen oder es zulassen, dass er",
+                            "en": "make or let someone",
+                            "id": "membuat atau membiarkan seseorang",
+                            "ja": "誰かに〜させる"
+                        }
                     }
                 },
                 {
@@ -3044,6 +4404,14 @@
                     "pronunciation": {
                         "removeSuffix": "む",
                         "append": "まれる"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "passiv",
+                            "en": "be passively affected by",
+                            "id": "secara pasif",
+                            "ja": "受け身で"
+                        }
                     }
                 },
                 {
@@ -3063,6 +4431,14 @@
                     "pronunciation": {
                         "removeSuffix": "む",
                         "append": "める"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "fähig sein zu",
+                            "en": "be able to",
+                            "id": "dapat",
+                            "ja": "可能として"
+                        }
                     }
                 },
                 {
@@ -3082,6 +4458,14 @@
                     "pronunciation": {
                         "removeSuffix": "む",
                         "append": "もう"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "beabsichtigen zu",
+                            "en": "intend to",
+                            "id": "berniat untuk",
+                            "ja": "意向として"
+                        }
                     }
                 },
                 {
@@ -3101,6 +4485,14 @@
                     "pronunciation": {
                         "removeSuffix": "る",
                         "append": "ない"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "jemanden nicht dazu bringen oder es nicht zulassen, dass er",
+                            "en": "not make or let someone",
+                            "id": "tidak membuat atau membiarkan seseorang",
+                            "ja": "誰かに〜させない"
+                        }
                     }
                 },
                 {
@@ -3120,6 +4512,14 @@
                     "pronunciation": {
                         "removeSuffix": "る",
                         "append": "た"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "jemanden dazu gebracht oder es zugelassen haben, dass er",
+                            "en": "have made or let someone",
+                            "id": "telah membuat atau membiarkan seseorang",
+                            "ja": "誰かに〜させた"
+                        }
                     }
                 },
                 {
@@ -3139,6 +4539,14 @@
                     "pronunciation": {
                         "removeSuffix": "る",
                         "append": "て"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "jemanden dazu bringen oder es zulassen und dann",
+                            "en": "make or let someone, and then",
+                            "id": "membuat atau membiarkan seseorang, lalu",
+                            "ja": "誰かに〜させて"
+                        }
                     }
                 },
                 {
@@ -3159,17 +4567,9 @@
                         "removeSuffix": "る",
                         "append": "たい"
                     },
-                    "definition": {
-                        "labels": {
-                            "de": "Wunsch, jemanden die Grundhandlung ausführen zu lassen",
-                            "en": "want to make or let someone perform the base action",
-                            "id": "ingin membuat atau membiarkan seseorang melakukan tindakan dasar",
-                            "ja": "誰かに基本の動作をさせたいという意味"
-                        }
-                    },
                     "marker": {
                         "labels": {
-                            "de": "jemanden dazu bringen oder es zulassen, dass er",
+                            "de": "jemanden dazu bringen oder es zulassen wollen, dass er",
                             "en": "want to make or let someone",
                             "id": "ingin membuat atau membiarkan seseorang",
                             "ja": "誰かに〜させたい"
@@ -3193,6 +4593,14 @@
                     "pronunciation": {
                         "removeSuffix": "たい",
                         "append": "たくない"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "nicht wünschen, jemanden dazu zu bringen oder es zuzulassen, dass er",
+                            "en": "not want to make or let someone",
+                            "id": "tidak ingin membuat atau membiarkan seseorang",
+                            "ja": "誰かに〜させたくない"
+                        }
                     }
                 },
                 {
@@ -3212,6 +4620,14 @@
                     "pronunciation": {
                         "removeSuffix": "ない",
                         "append": "なくて"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "nicht wünschen, jemanden dazu zu bringen oder es zuzulassen, und dann",
+                            "en": "not want to make or let someone, and then",
+                            "id": "tidak ingin membuat atau membiarkan seseorang, lalu",
+                            "ja": "誰かに〜させたくなくて"
+                        }
                     }
                 }
             ]
@@ -3246,6 +4662,14 @@
                     "pronunciation": {
                         "removeSuffix": "ある",
                         "append": "あります"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "höflich",
+                            "en": "politely",
+                            "id": "dengan sopan",
+                            "ja": "丁寧に"
+                        }
                     }
                 },
                 {
@@ -3265,6 +4689,14 @@
                     "pronunciation": {
                         "removeSuffix": "ある",
                         "append": "ない"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "nicht",
+                            "en": "not",
+                            "id": "tidak",
+                            "ja": "否定"
+                        }
                     }
                 },
                 {
@@ -3284,6 +4716,14 @@
                     "pronunciation": {
                         "removeSuffix": "ある",
                         "append": "あった"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "Vergangenheit",
+                            "en": "past",
+                            "id": "lampau",
+                            "ja": "過去"
+                        }
                     }
                 },
                 {
@@ -3303,6 +4743,14 @@
                     "pronunciation": {
                         "removeSuffix": "ある",
                         "append": "あって"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "verbindend",
+                            "en": "and then",
+                            "id": "lalu",
+                            "ja": "接続"
+                        }
                     }
                 },
                 {
@@ -3322,6 +4770,14 @@
                     "pronunciation": {
                         "removeSuffix": "ます",
                         "append": "ました"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "höfliche Vergangenheit",
+                            "en": "politely, in the past",
+                            "id": "lampau dengan sopan",
+                            "ja": "丁寧な過去"
+                        }
                     }
                 },
                 {
@@ -3341,6 +4797,14 @@
                     "pronunciation": {
                         "removeSuffix": "ます",
                         "append": "ません"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "höflich nicht",
+                            "en": "politely not",
+                            "id": "tidak dengan sopan",
+                            "ja": "丁寧な否定"
+                        }
                     }
                 },
                 {
@@ -3360,6 +4824,14 @@
                     "pronunciation": {
                         "removeSuffix": "ない",
                         "append": "なかった"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "in der Vergangenheit nicht",
+                            "en": "did not",
+                            "id": "tidak pada masa lampau",
+                            "ja": "過去の否定"
+                        }
                     }
                 },
                 {
@@ -3379,6 +4851,14 @@
                     "pronunciation": {
                         "removeSuffix": "ない",
                         "append": "なくて"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "nicht und dann",
+                            "en": "not, and then",
+                            "id": "tidak, lalu",
+                            "ja": "否定して接続"
+                        }
                     }
                 },
                 {
@@ -3398,6 +4878,14 @@
                     "pronunciation": {
                         "removeSuffix": "ある",
                         "append": "あれば"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "wenn",
+                            "en": "if",
+                            "id": "jika",
+                            "ja": "条件として"
+                        }
                     }
                 },
                 {
@@ -3417,6 +4905,122 @@
                     "pronunciation": {
                         "removeSuffix": "ない",
                         "append": "なければ"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "wenn nicht",
+                            "en": "if not",
+                            "id": "jika tidak",
+                            "ja": "否定条件として"
+                        }
+                    }
+                },
+                {
+                    "id": "desire",
+                    "metadata": {
+                        "labels": {
+                            "de": "Wunschform",
+                            "en": "Desire",
+                            "id": "Keinginan",
+                            "ja": "希望形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "desire",
+                    "removeSuffix": "る",
+                    "append": "りたい",
+                    "pronunciation": {
+                        "removeSuffix": "る",
+                        "append": "りたい"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "wollen",
+                            "en": "want to",
+                            "id": "ingin",
+                            "ja": "〜たい"
+                        }
+                    }
+                },
+                {
+                    "id": "desire-negative",
+                    "metadata": {
+                        "labels": {
+                            "de": "Verneinte Wunschform",
+                            "en": "Negative Desire",
+                            "id": "Keinginan Negatif",
+                            "ja": "希望否定形"
+                        }
+                    },
+                    "fromState": "desire",
+                    "toState": "desire-negative",
+                    "removeSuffix": "たい",
+                    "append": "たくない",
+                    "pronunciation": {
+                        "removeSuffix": "たい",
+                        "append": "たくない"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "nicht wollen",
+                            "en": "not want to",
+                            "id": "tidak ingin",
+                            "ja": "〜たくない"
+                        }
+                    }
+                },
+                {
+                    "id": "desire-past",
+                    "metadata": {
+                        "labels": {
+                            "de": "Wunsch-Vergangenheit",
+                            "en": "Past Desire",
+                            "id": "Keinginan Lampau",
+                            "ja": "希望過去形"
+                        }
+                    },
+                    "fromState": "desire",
+                    "toState": "desire-past",
+                    "removeSuffix": "たい",
+                    "append": "たかった",
+                    "pronunciation": {
+                        "removeSuffix": "たい",
+                        "append": "たかった"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "gewollt haben",
+                            "en": "wanted to",
+                            "id": "pernah ingin",
+                            "ja": "〜たかった"
+                        }
+                    }
+                },
+                {
+                    "id": "desire-te",
+                    "metadata": {
+                        "labels": {
+                            "de": "Wunsch-Te-Form",
+                            "en": "Desire Te Form",
+                            "id": "Bentuk Te Keinginan",
+                            "ja": "希望て形"
+                        }
+                    },
+                    "fromState": "desire",
+                    "toState": "desire-te",
+                    "removeSuffix": "たい",
+                    "append": "たくて",
+                    "pronunciation": {
+                        "removeSuffix": "たい",
+                        "append": "たくて"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "wollen und dann",
+                            "en": "want to, and then",
+                            "id": "ingin, lalu",
+                            "ja": "〜たくて"
+                        }
                     }
                 }
             ]
@@ -3451,6 +5055,14 @@
                     "pronunciation": {
                         "removeSuffix": "くる",
                         "append": "きます"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "höflich",
+                            "en": "politely",
+                            "id": "dengan sopan",
+                            "ja": "丁寧に"
+                        }
                     }
                 },
                 {
@@ -3470,6 +5082,14 @@
                     "pronunciation": {
                         "removeSuffix": "くる",
                         "append": "こない"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "nicht",
+                            "en": "not",
+                            "id": "tidak",
+                            "ja": "否定"
+                        }
                     }
                 },
                 {
@@ -3489,6 +5109,14 @@
                     "pronunciation": {
                         "removeSuffix": "くる",
                         "append": "きた"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "Vergangenheit",
+                            "en": "past",
+                            "id": "lampau",
+                            "ja": "過去"
+                        }
                     }
                 },
                 {
@@ -3508,6 +5136,14 @@
                     "pronunciation": {
                         "removeSuffix": "くる",
                         "append": "きて"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "verbindend",
+                            "en": "and then",
+                            "id": "lalu",
+                            "ja": "接続"
+                        }
                     }
                 },
                 {
@@ -3527,6 +5163,14 @@
                     "pronunciation": {
                         "removeSuffix": "ます",
                         "append": "ました"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "höfliche Vergangenheit",
+                            "en": "politely, in the past",
+                            "id": "lampau dengan sopan",
+                            "ja": "丁寧な過去"
+                        }
                     }
                 },
                 {
@@ -3546,6 +5190,14 @@
                     "pronunciation": {
                         "removeSuffix": "ます",
                         "append": "ません"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "höflich nicht",
+                            "en": "politely not",
+                            "id": "tidak dengan sopan",
+                            "ja": "丁寧な否定"
+                        }
                     }
                 },
                 {
@@ -3565,6 +5217,14 @@
                     "pronunciation": {
                         "removeSuffix": "ない",
                         "append": "なかった"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "in der Vergangenheit nicht",
+                            "en": "did not",
+                            "id": "tidak pada masa lampau",
+                            "ja": "過去の否定"
+                        }
                     }
                 },
                 {
@@ -3584,6 +5244,122 @@
                     "pronunciation": {
                         "removeSuffix": "ない",
                         "append": "なくて"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "nicht und dann",
+                            "en": "not, and then",
+                            "id": "tidak, lalu",
+                            "ja": "否定して接続"
+                        }
+                    }
+                },
+                {
+                    "id": "desire",
+                    "metadata": {
+                        "labels": {
+                            "de": "Wunschform",
+                            "en": "Desire",
+                            "id": "Keinginan",
+                            "ja": "希望形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "desire",
+                    "removeSuffix": "る",
+                    "append": "たい",
+                    "pronunciation": {
+                        "removeSuffix": "くる",
+                        "append": "きたい"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "wollen",
+                            "en": "want to",
+                            "id": "ingin",
+                            "ja": "〜たい"
+                        }
+                    }
+                },
+                {
+                    "id": "desire-negative",
+                    "metadata": {
+                        "labels": {
+                            "de": "Verneinte Wunschform",
+                            "en": "Negative Desire",
+                            "id": "Keinginan Negatif",
+                            "ja": "希望否定形"
+                        }
+                    },
+                    "fromState": "desire",
+                    "toState": "desire-negative",
+                    "removeSuffix": "たい",
+                    "append": "たくない",
+                    "pronunciation": {
+                        "removeSuffix": "たい",
+                        "append": "たくない"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "nicht wollen",
+                            "en": "not want to",
+                            "id": "tidak ingin",
+                            "ja": "〜たくない"
+                        }
+                    }
+                },
+                {
+                    "id": "desire-past",
+                    "metadata": {
+                        "labels": {
+                            "de": "Wunsch-Vergangenheit",
+                            "en": "Past Desire",
+                            "id": "Keinginan Lampau",
+                            "ja": "希望過去形"
+                        }
+                    },
+                    "fromState": "desire",
+                    "toState": "desire-past",
+                    "removeSuffix": "たい",
+                    "append": "たかった",
+                    "pronunciation": {
+                        "removeSuffix": "たい",
+                        "append": "たかった"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "gewollt haben",
+                            "en": "wanted to",
+                            "id": "pernah ingin",
+                            "ja": "〜たかった"
+                        }
+                    }
+                },
+                {
+                    "id": "desire-te",
+                    "metadata": {
+                        "labels": {
+                            "de": "Wunsch-Te-Form",
+                            "en": "Desire Te Form",
+                            "id": "Bentuk Te Keinginan",
+                            "ja": "希望て形"
+                        }
+                    },
+                    "fromState": "desire",
+                    "toState": "desire-te",
+                    "removeSuffix": "たい",
+                    "append": "たくて",
+                    "pronunciation": {
+                        "removeSuffix": "たい",
+                        "append": "たくて"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "wollen und dann",
+                            "en": "want to, and then",
+                            "id": "ingin, lalu",
+                            "ja": "〜たくて"
+                        }
                     }
                 },
                 {
@@ -3603,6 +5379,14 @@
                     "pronunciation": {
                         "removeSuffix": "くる",
                         "append": "こさせる"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "jemanden dazu bringen oder es zulassen, dass er",
+                            "en": "make or let someone",
+                            "id": "membuat atau membiarkan seseorang",
+                            "ja": "誰かに〜させる"
+                        }
                     }
                 },
                 {
@@ -3622,6 +5406,14 @@
                     "pronunciation": {
                         "removeSuffix": "くる",
                         "append": "こられる"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "passiv",
+                            "en": "be passively affected by",
+                            "id": "secara pasif",
+                            "ja": "受け身で"
+                        }
                     }
                 },
                 {
@@ -3641,6 +5433,14 @@
                     "pronunciation": {
                         "removeSuffix": "くる",
                         "append": "こられる"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "fähig sein zu",
+                            "en": "be able to",
+                            "id": "dapat",
+                            "ja": "可能として"
+                        }
                     }
                 },
                 {
@@ -3660,6 +5460,14 @@
                     "pronunciation": {
                         "removeSuffix": "くる",
                         "append": "こよう"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "beabsichtigen zu",
+                            "en": "intend to",
+                            "id": "berniat untuk",
+                            "ja": "意向として"
+                        }
                     }
                 },
                 {
@@ -3679,6 +5487,14 @@
                     "pronunciation": {
                         "removeSuffix": "る",
                         "append": "ない"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "jemanden nicht dazu bringen oder es nicht zulassen, dass er",
+                            "en": "not make or let someone",
+                            "id": "tidak membuat atau membiarkan seseorang",
+                            "ja": "誰かに〜させない"
+                        }
                     }
                 },
                 {
@@ -3698,6 +5514,14 @@
                     "pronunciation": {
                         "removeSuffix": "る",
                         "append": "た"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "jemanden dazu gebracht oder es zugelassen haben, dass er",
+                            "en": "have made or let someone",
+                            "id": "telah membuat atau membiarkan seseorang",
+                            "ja": "誰かに〜させた"
+                        }
                     }
                 },
                 {
@@ -3717,6 +5541,14 @@
                     "pronunciation": {
                         "removeSuffix": "る",
                         "append": "て"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "jemanden dazu bringen oder es zulassen und dann",
+                            "en": "make or let someone, and then",
+                            "id": "membuat atau membiarkan seseorang, lalu",
+                            "ja": "誰かに〜させて"
+                        }
                     }
                 },
                 {
@@ -3737,17 +5569,9 @@
                         "removeSuffix": "る",
                         "append": "たい"
                     },
-                    "definition": {
-                        "labels": {
-                            "de": "Wunsch, jemanden die Grundhandlung ausführen zu lassen",
-                            "en": "want to make or let someone perform the base action",
-                            "id": "ingin membuat atau membiarkan seseorang melakukan tindakan dasar",
-                            "ja": "誰かに基本の動作をさせたいという意味"
-                        }
-                    },
                     "marker": {
                         "labels": {
-                            "de": "jemanden dazu bringen oder es zulassen, dass er",
+                            "de": "jemanden dazu bringen oder es zulassen wollen, dass er",
                             "en": "want to make or let someone",
                             "id": "ingin membuat atau membiarkan seseorang",
                             "ja": "誰かに〜させたい"
@@ -3771,6 +5595,14 @@
                     "pronunciation": {
                         "removeSuffix": "たい",
                         "append": "たくない"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "nicht wünschen, jemanden dazu zu bringen oder es zuzulassen, dass er",
+                            "en": "not want to make or let someone",
+                            "id": "tidak ingin membuat atau membiarkan seseorang",
+                            "ja": "誰かに〜させたくない"
+                        }
                     }
                 },
                 {
@@ -3790,6 +5622,14 @@
                     "pronunciation": {
                         "removeSuffix": "ない",
                         "append": "なくて"
+                    },
+                    "marker": {
+                        "labels": {
+                            "de": "nicht wünschen, jemanden dazu zu bringen oder es zuzulassen, und dann",
+                            "en": "not want to make or let someone, and then",
+                            "id": "tidak ingin membuat atau membiarkan seseorang, lalu",
+                            "ja": "誰かに〜させたくなくて"
+                        }
                     }
                 }
             ]

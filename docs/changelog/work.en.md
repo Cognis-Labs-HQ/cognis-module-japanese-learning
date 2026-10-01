@@ -621,10 +621,6 @@ Added direct definition links to every hidden Kanji-reading Vocabulary record so
 
 - [b0a83fb](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/b0a83fb)
 
-# Align Japanese transformation metadata with Cognis 2.22
-
-**Feature Branch:** work
-
 ## Localized transformation markers
 
 Causative-desire branches now publish localized `marker` metadata in German, English, Indonesian, and Japanese. Cognis can insert these phrases into definition templates while continuing to prefer explicit transformation-specific definitions.
@@ -640,3 +636,19 @@ The module advances to `2.2.72`, content revision `2026-09-30.10`, and Japanese 
 ## Commits
 
 - [d7b696b](../../commit/d7b696b) — Align transformation markers with Cognis.
+
+## Definition Annotations for Every Transformation
+
+Every authored verb transformation now carries localized marker metadata. Direct desire branches produce forms such as `見たい`, while negative, past, polite, connective, passive, potential, volitional, causative, and deeper branches each supply their own semantic annotation.
+
+## Independent Polysemous Definitions
+
+`見る` now references separate “to see” and “to watch” definition records. Regression coverage applies the desire marker to each definition independently and requires canonical definitions to remain free of `{{ marker }}` placeholders.
+
+## Structured Cognis Follow-Up
+
+The current Cognis single-string placeholder implementation cannot satisfy this contract without leaking placeholders on base cards. The documented host proposal passes the complete definition array through transformation presentation and applies localized placement to every definition without modifying stored content.
+
+## Commits
+
+- [64ce852](../../commit/64ce852) — Annotate every verb transformation definition.

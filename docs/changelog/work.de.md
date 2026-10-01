@@ -621,10 +621,6 @@ Allen ausgeblendeten Kanji-Lesungs-Vokabeldatensätzen wurden direkte Definition
 
 - [b0a83fb](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/b0a83fb)
 
-# Japanische Transformationsmetadaten an Cognis 2.22 anpassen
-
-**Feature Branch:** work
-
 ## Lokalisierte Transformationsmarker
 
 Kausativ-Wunsch-Zweige veröffentlichen nun lokalisierte `marker`-Metadaten auf Deutsch, Englisch, Indonesisch und Japanisch. Cognis kann diese Ausdrücke in Definitionsvorlagen einsetzen und weiterhin ausdrücklich transformationsspezifische Definitionen bevorzugen.
@@ -640,3 +636,19 @@ Das Modul wird auf `2.2.72`, die Inhaltsrevision auf `2026-09-30.10` und das jap
 ## Commits
 
 - [d7b696b](../../commit/d7b696b) — Transformationsmarker an Cognis angepasst.
+
+## Definitionsanmerkungen für jede Transformation
+
+Jede bereitgestellte Verbtransformation besitzt nun lokalisierte Marker-Metadaten. Direkte Wunschzweige erzeugen Formen wie `見たい`; Verneinung, Vergangenheit, Höflichkeit, Verbindung, Passiv, Potential, Volitional, Kausativ und tiefere Zweige liefern jeweils eine eigene Bedeutungsanmerkung.
+
+## Unabhängige mehrdeutige Definitionen
+
+`見る` verweist nun getrennt auf die Definitionen „sehen“ und „anschauen“. Regressionstests wenden den Wunschmarker unabhängig auf jede Definition an und verlangen, dass kanonische Definitionen frei von `{{ marker }}`-Platzhaltern bleiben.
+
+## Strukturierte Cognis-Nacharbeit
+
+Die derzeitige Cognis-Implementierung für einen einzelnen Platzhalterstring kann diesen Vertrag nicht erfüllen, ohne Platzhalter auf Grundformkarten sichtbar zu machen. Der dokumentierte Host-Vorschlag führt das vollständige Definitionsarray durch die Transformationsdarstellung und wendet die lokalisierte Platzierung auf jede Definition an, ohne gespeicherte Inhalte zu ändern.
+
+## Commits
+
+- [64ce852](../../commit/64ce852) — Jede Verbtransformation mit Definitionsanmerkungen versehen.
