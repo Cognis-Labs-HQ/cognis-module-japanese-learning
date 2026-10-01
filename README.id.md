@@ -240,3 +240,7 @@ Transformasi verba menggunakan kontrak `definitionTransform` Cognis 2.24. Setiap
 Cabang yang bergantung konteks memakai `replacements` terlokalisasi dan berurutan sebelum templat cadangan. Aturan berikutnya dapat menulis ulang anotasi sebelumnya, sedangkan aturan penghubung menambahkan makna ke definisi yang telah ditransformasi sepenuhnya melalui `{{ definition }}`.
 
 Pola goresan kini menerbitkan kolom logis eksplisit dan kelompok goresan berurutan untuk setiap karakter. Viewport Menggambar Cognis yang mempertahankan rasio aspek dapat mengukur karakter majemuk tanpa distorsi, menjaga jarak yang disengaja, dan menguji goresan berikutnya pada batas karakter yang benar.
+
+### Identitas Pembuatan Kanji
+
+Pembuatan Kanji dan pencarian asli memakai label Kanji yang dinormalisasi NFKC sebagai identitas kartu, bukan pelafalannya. Karena itu, karakter yang berbeda boleh berbagi bacaan seperti `けん` tanpa dianggap sebagai kartu yang sama. Cognis Library 2.24.3 mengembalikan ID entri yang berkonflik untuk konflik label yang benar-benar sama dan memungkinkan composer memilih kartu tersebut, termasuk entri di luar daftar yang sedang difilter.

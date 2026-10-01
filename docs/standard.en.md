@@ -283,3 +283,7 @@ Verb transformations use the Cognis 2.24 `definitionTransform` contract. Each lo
 Context-sensitive branches use localized ordered `replacements` before their fallback templates. Later rules can therefore rewrite an earlier annotation—for example, `to (want to) see` becomes `to (have wanted to) see`—while connective rules append to the fully transformed definition as `to (want to) see (and then)`.
 
 Stroke patterns now publish explicit logical columns and ordered per-character stroke groups. The Cognis aspect-preserving Drawing viewport can size compound characters without distortion, retain intentional spacing, and test the next stroke against the correct character boundary instead of treating the entire pattern as one undifferentiated sequence.
+
+## Kanji Identity and Conflicts
+
+Normalize Kanji labels with NFKC for lookup and identity comparison. Do not include pronunciation in visible Kanji identity and do not infer equality from a shared reading. A `content_conflict` for an alternate-character creation therefore means that the same normalized Kanji label is visible in the destination or global scope; the host must expose the conflict entry ID so the existing card can be selected even when filters hide it.

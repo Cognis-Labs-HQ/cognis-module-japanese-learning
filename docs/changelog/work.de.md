@@ -716,3 +716,16 @@ Das Modul wird auf `2.2.77`, die Inhaltsrevision auf `2026-10-01.5` und das japa
 ## Commits
 
 - [7c2c0db](../../commit/7c2c0db) — Zeichenseitenverhältnis und Strichgruppen bewahrt.
+
+## Zeichenbasierte Kanji-Identität
+
+Die Kanji-Suche normalisiert und vergleicht jetzt direkt das eingegebene Zeichen, statt eine gemeinsame Aussprache als Identität zuzulassen. Regressionstests belegen, dass `券` von vorhandenen Kanji wie `犬` getrennt bleibt, obwohl beide `けん` verwenden können; echte Konflikte desselben Zeichens lassen sich über den von Cognis Library 2.24.3 gelieferten Konflikteintrag auflösen.
+
+## Versionsabgleich
+
+Das Modul wird auf `2.2.78` und die Inhaltsrevision auf `2026-10-01.6` angehoben; die Pakethashes wurden neu erzeugt.
+
+## Commits
+
+- [ab10be0](../../commit/ab10be0) — Kanji-Identität von der Aussprache trennen.
+- [19424fc](../../commit/19424fc) — Doppelte Identitätshinweise entfernen.

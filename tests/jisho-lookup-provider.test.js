@@ -204,6 +204,42 @@ test("Jisho Kanji suggestions link readings directly to atomic Kana", async () =
     );
 });
 
+test("Kanji lookup identity uses the Kanji label, not its pronunciation", async () => {
+    let requests = 0;
+    const provider = createJishoLookupProvider({
+        contentRoot,
+        async fetchImplementation() {
+            requests += 1;
+            return {
+                ok: true,
+                async json() {
+                    return {
+                        data: [
+                            {
+                                slug: "券",
+                                japanese: [{ word: "券", reading: "けん" }],
+                                senses: [],
+                                tags: [],
+                                jlpt: [],
+                            },
+                        ],
+                    };
+                },
+            };
+        },
+    });
+
+    const [suggestion] = await provider.lookup({
+        schema,
+        layer: kanjiLayer,
+        label: "券",
+    });
+
+    assert.equal(requests, 1, "犬 must not satisfy a lookup for 券");
+    assert.equal(suggestion.label, "券");
+    assert.deepEqual(suggestion.fields.pronunciation, ["けん"]);
+});
+
 test("Jisho provider does not query invalid or unrelated input", async () => {
     let requests = 0;
     const provider = createJishoLookupProvider({

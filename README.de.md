@@ -240,3 +240,7 @@ Verbtransformationen verwenden den Cognis-2.24-Vertrag `definitionTransform`. Je
 Kontextabhängige Zweige verwenden lokalisierte geordnete `replacements` vor ihren Ausweichvorlagen. Spätere Regeln können dadurch eine frühere Anmerkung umschreiben; Verbindungsregeln hängen ihre Bedeutung dagegen mit `{{ definition }}` an die vollständig transformierte Definition an.
 
 Strichmuster veröffentlichen nun ausdrückliche logische Spalten und geordnete Strichgruppen pro Zeichen. Der seitenverhältnistreue Cognis-Zeichenbereich kann zusammengesetzte Zeichen ohne Verzerrung dimensionieren, beabsichtigte Abstände erhalten und den nächsten Strich an der richtigen Zeichengrenze prüfen.
+
+### Identität bei der Kanji-Erstellung
+
+Kanji-Erstellung und native Suche verwenden das NFKC-normalisierte Kanji-Zeichen als Kartenidentität, niemals seine Aussprache. Verschiedene Zeichen dürfen daher dieselbe Lesung wie `けん` besitzen, ohne als dieselbe Karte behandelt zu werden. Cognis Library 2.24.3 liefert bei einem echten Konflikt desselben Zeichens die ID des vorhandenen Eintrags und ermöglicht dem Composer, diese Karte auszuwählen, auch wenn sie außerhalb der aktuellen Filterliste liegt.

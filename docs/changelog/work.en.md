@@ -716,3 +716,16 @@ The module advances to `2.2.77`, content revision `2026-10-01.5`, and Japanese s
 ## Commits
 
 - [7c2c0db](../../commit/7c2c0db) — Preserve drawing aspect and stroke groups.
+
+## Label-Based Kanji Identity
+
+Kanji lookup now normalizes and compares the entered character label directly instead of allowing a shared pronunciation to act as identity. Regression coverage proves that `券` remains distinct from packaged Kanji such as `犬` even though both can use `けん`, while genuine same-label conflicts can resolve through the conflict entry supplied by Cognis Library 2.24.3.
+
+## Version Synchronization
+
+The module advances to `2.2.78` and content revision `2026-10-01.6`, with regenerated package hashes.
+
+## Commits
+
+- [ab10be0](../../commit/ab10be0) — Keep Kanji identity separate from pronunciation.
+- [19424fc](../../commit/19424fc) — Remove duplicated identity guidance.

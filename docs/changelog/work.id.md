@@ -716,3 +716,16 @@ Modul dinaikkan ke `2.2.77`, revisi konten `2026-10-01.5`, dan revisi skema baha
 ## Commit
 
 - [7c2c0db](../../commit/7c2c0db) — Mempertahankan rasio gambar dan kelompok goresan.
+
+## Identitas Kanji Berdasarkan Label
+
+Pencarian Kanji kini menormalisasi dan membandingkan langsung label karakter yang dimasukkan, bukan memakai pelafalan yang sama sebagai identitas. Cakupan regresi membuktikan bahwa `券` tetap berbeda dari Kanji paket seperti `犬` walaupun keduanya dapat memakai `けん`, sedangkan konflik label yang benar-benar sama dapat diselesaikan melalui entri konflik yang diberikan Cognis Library 2.24.3.
+
+## Sinkronisasi Versi
+
+Modul dinaikkan ke `2.2.78` dan revisi konten `2026-10-01.6`, dengan hash paket yang dibuat ulang.
+
+## Commit
+
+- [ab10be0](../../commit/ab10be0) — Memisahkan identitas Kanji dari pelafalan.
+- [19424fc](../../commit/19424fc) — Menghapus panduan identitas yang terduplikasi.

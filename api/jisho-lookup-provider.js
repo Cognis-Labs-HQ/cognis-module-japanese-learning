@@ -14,6 +14,12 @@ const SINGLE_KANA = /^[\p{Script=Hiragana}\p{Script=Katakana}]$/u;
 const SINGLE_KANJI = /^\p{Script=Han}$/u;
 const CACHE_LIMIT = 512;
 
+function normalizedLabel(value) {
+    return String(value ?? "")
+        .trim()
+        .normalize("NFKC");
+}
+
 function providerMetadata() {
     return {
         labels: {
@@ -44,8 +50,9 @@ async function loadNativeContent(contentRoot) {
     return {
         layers,
         byLabel(layer, label) {
+            const identityLabel = normalizedLabel(label);
             return (layers.get(layer) ?? []).filter(
-                (record) => record.label.normalize() === label,
+                (record) => normalizedLabel(record.label) === identityLabel,
             );
         },
     };
@@ -293,31 +300,33 @@ export function createJishoLookupProvider({
             );
         },
         async lookup({ layer, label }) {
-            const normalizedLabel = String(label ?? "")
-                .trim()
-                .normalize();
+            const normalizedLookupLabel = normalizedLabel(label);
             if (
-                !normalizedLabel ||
-                normalizedLabel.length > MAX_LOOKUP_LENGTH ||
-                !LOOKUP_TEXT.test(normalizedLabel) ||
+                !normalizedLookupLabel ||
+                normalizedLookupLabel.length > MAX_LOOKUP_LENGTH ||
+                !LOOKUP_TEXT.test(normalizedLookupLabel) ||
                 !SUPPORTED_LAYERS.has(layer?.id) ||
                 (layer.id === "characters" &&
-                    !SINGLE_KANA.test(normalizedLabel)) ||
+                    !SINGLE_KANA.test(normalizedLookupLabel)) ||
                 (layer.id === "alt-characters" &&
-                    !SINGLE_KANJI.test(normalizedLabel))
+                    !SINGLE_KANJI.test(normalizedLookupLabel))
             ) {
                 return [];
             }
             const index = await nativeIndex();
-            const native = nativeSuggestions(index, layer.id, normalizedLabel);
+            const native = nativeSuggestions(
+                index,
+                layer.id,
+                normalizedLookupLabel,
+            );
             if (native.length) return native;
             if (typeof fetchImplementation !== "function") return [];
             try {
-                const data = await lookupJisho(normalizedLabel);
+                const data = await lookupJisho(normalizedLookupLabel);
                 const suggestion = jishoSuggestion(
                     index,
                     layer.id,
-                    normalizedLabel,
+                    normalizedLookupLabel,
                     data,
                 );
                 return suggestion ? [suggestion] : [];

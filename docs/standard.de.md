@@ -283,3 +283,7 @@ Verbtransformationen verwenden den Cognis-2.24-Vertrag `definitionTransform`. Je
 Kontextabhängige Zweige verwenden lokalisierte geordnete `replacements` vor ihren Ausweichvorlagen. Spätere Regeln können dadurch eine frühere Anmerkung umschreiben; Verbindungsregeln hängen ihre Bedeutung dagegen mit `{{ definition }}` an die vollständig transformierte Definition an.
 
 Strichmuster veröffentlichen nun ausdrückliche logische Spalten und geordnete Strichgruppen pro Zeichen. Der seitenverhältnistreue Cognis-Zeichenbereich kann zusammengesetzte Zeichen ohne Verzerrung dimensionieren, beabsichtigte Abstände erhalten und den nächsten Strich an der richtigen Zeichengrenze prüfen.
+
+## Kanji-Identität und Konflikte
+
+Normalisiere Kanji-Zeichen für Suche und Identitätsvergleich mit NFKC. Die Aussprache gehört nicht zur sichtbaren Kanji-Identität, und eine gemeinsame Lesung begründet keine Gleichheit. Ein `content_conflict` beim Erstellen eines alternativen Zeichens bedeutet daher, dass dasselbe normalisierte Kanji-Zeichen im Ziel- oder globalen Bereich sichtbar ist; der Host muss die ID des kollidierenden Eintrags bereitstellen, damit die vorhandene Karte auch bei ausblendenden Filtern ausgewählt werden kann.
