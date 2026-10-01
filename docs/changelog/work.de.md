@@ -668,3 +668,19 @@ Das Modul wird auf `2.2.74`, die Inhaltsrevision auf `2026-10-01.2` und das japa
 ## Commits
 
 - [f6c7201](../../commit/f6c7201) — Transformationsmarker in Verbdefinitionen platziert.
+
+## Zusammensetzbare Definitionstransformationen
+
+Feste `marker`-Metadaten und gespeicherte `{{ marker }}`-Platzhalter wurden durch die Cognis-2.24-Struktur `definitionTransform` ersetzt. Jede Regel deklariert nun lokalisierte entfernbare Grenzen und Vorlagen mit `{{ definition }}`, `{{ stem }}`, `{{ prefix }}` und `{{ suffix }}`; die Vorlagen werden entlang tiefer Transformationspfade der Reihe nach zusammengesetzt.
+
+## Saubere Definitionen und Tests tiefer Pfade
+
+Verbdefinitionen sind wieder normaler lokalisierter Text; einheitliche Infinitivgrenzen ermöglichen es den Vorlagen, jede mehrdeutige Definition unabhängig zu transformieren. Tests decken die Wunschform von `見る` und einen vierstufigen Kausativ-Wunsch-Pfad ab, ohne Bedeutungen zusammenzufassen.
+
+## Versionsabgleich
+
+Das Modul wird auf `2.2.75`, die Inhaltsrevision auf `2026-10-01.3` und das japanische Schema auf Revision `80` angehoben; die Pakethashes wurden neu erzeugt.
+
+## Commits
+
+- [739beba](../../commit/739beba) — Zusammensetzbare Definitionstransformationen übernommen.

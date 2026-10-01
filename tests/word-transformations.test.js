@@ -76,8 +76,8 @@ function transformationNodes(entry) {
                               )}${pronunciation.append}`
                             : node.pronunciation,
                     definition: rule.definition,
-                    marker: rule.marker,
                     rule,
+                    definitionRules: [...(node.definitionRules ?? []), rule],
                     path: [...node.path, rule.id],
                 });
             }
@@ -88,12 +88,31 @@ function transformationNodes(entry) {
 
 function annotatedDefinitions(baseDefinitions, node, language) {
     const localized = (metadata) =>
-        metadata?.labels?.[language] ??
-        Object.values(metadata?.labels ?? {})[0];
-    const marker = localized(node.rule?.marker);
-    if (!marker) return baseDefinitions;
-    return baseDefinitions.map((definition) =>
-        definition.replaceAll("{{ marker }}", `(${marker})`),
+        typeof metadata === "string"
+            ? metadata
+            : (metadata?.labels?.[language] ??
+              Object.values(metadata?.labels ?? {})[0]);
+    return baseDefinitions.map((baseDefinition) =>
+        (node.definitionRules ?? [node.rule]).reduce((definition, rule) => {
+            const transform = rule.definitionTransform;
+            if (!transform) return localized(rule.definition) ?? definition;
+            const prefix = localized(transform.matchPrefix) ?? "";
+            const suffix = localized(transform.matchSuffix) ?? "";
+            if (
+                (prefix && !definition.startsWith(prefix)) ||
+                (suffix && !definition.endsWith(suffix))
+            )
+                return definition;
+            const stem = definition.slice(
+                prefix.length,
+                suffix ? -suffix.length : undefined,
+            );
+            return localized(transform.template)
+                .replaceAll("{{ definition }}", definition)
+                .replaceAll("{{ stem }}", stem)
+                .replaceAll("{{ prefix }}", prefix)
+                .replaceAll("{{ suffix }}", suffix);
+        }, baseDefinition),
     );
 }
 
@@ -169,6 +188,7 @@ test("verb transformation trees branch deeply with dynamic readings and definiti
             value: deepest.value,
             pronunciation: deepest.pronunciation,
             path: deepest.path,
+            definition: annotatedDefinitions(["to eat"], deepest, "en")[0],
         },
         {
             value: "食べさせたくなくて",
@@ -179,6 +199,8 @@ test("verb transformation trees branch deeply with dynamic readings and definiti
                 "causative-negative-desire",
                 "causative-continuous-negative-desire",
             ],
+            definition:
+                "to (and then) (not) (want to) (make or let someone) eat",
         },
     );
     const kuru = transformationNodes(wordsById.get("ja:word:kuru"));
@@ -208,15 +230,14 @@ test("verb transformation trees branch deeply with dynamic readings and definiti
     );
 });
 
-test("every transformation exposes a localized definition annotation", () => {
+test("every transformation exposes a localized definition transform", () => {
     for (const set of schema.transformSets) {
         for (const rule of set.rules) {
-            assert.deepEqual(Object.keys(rule.marker.labels).sort(), [
-                "de",
-                "en",
-                "id",
-                "ja",
-            ]);
+            for (const field of ["matchPrefix", "template"])
+                assert.deepEqual(
+                    Object.keys(rule.definitionTransform[field].labels).sort(),
+                    ["de", "en", "id", "ja"],
+                );
         }
     }
 });
@@ -233,10 +254,7 @@ test("desire transforms each definition of 見る independently", () => {
             ({ entryId }) =>
                 definitionsById.get(entryId).fields.translations.en,
         );
-    assert.deepEqual(baseDefinitions, [
-        "to {{ marker }} see",
-        "to {{ marker }} watch",
-    ]);
+    assert.deepEqual(baseDefinitions, ["to see", "to watch"]);
 
     const desire = transformationNodes(miru).find(
         ({ state }) => state === "desire",
@@ -249,7 +267,7 @@ test("desire transforms each definition of 見る independently", () => {
     ]);
 });
 
-test("every verb definition provides exactly one localized marker slot", () => {
+test("every verb definition provides localized transform boundaries", () => {
     const definitionsById = new Map(
         definitions.map((entry) => [entry.id, entry]),
     );
@@ -263,24 +281,22 @@ test("every verb definition provides exactly one localized marker slot", () => {
         assert.ok(definitionIds.length > 0, verb.id);
         for (const definitionId of definitionIds) {
             const definition = definitionsById.get(definitionId);
-            assert.equal(
-                definition.label.split("{{ marker }}").length - 1,
-                1,
-                definitionId,
-            );
+            assert.ok(!definition.label.includes("{{ marker }}"), definitionId);
             assert.deepEqual(
                 Object.keys(definition.fields.translations).sort(),
                 ["de", "en", "id", "ja"],
                 definitionId,
             );
-            for (const translation of Object.values(
+            const prefixes = { de: "zu ", en: "to ", id: "untuk ", ja: "〜" };
+            for (const [language, translation] of Object.entries(
                 definition.fields.translations,
-            ))
-                assert.equal(
-                    translation.split("{{ marker }}").length - 1,
-                    1,
+            )) {
+                assert.ok(
+                    translation.startsWith(prefixes[language]),
                     definitionId,
                 );
+                assert.ok(!translation.includes("{{ marker }}"), definitionId);
+            }
         }
     }
 });
@@ -308,12 +324,7 @@ test("transform declarations are effective, localized, and unambiguous", () => {
                     "id",
                     "ja",
                 ]);
-            assert.deepEqual(Object.keys(rule.marker.labels).sort(), [
-                "de",
-                "en",
-                "id",
-                "ja",
-            ]);
+            assert.ok(rule.definitionTransform?.template);
         }
     }
 });

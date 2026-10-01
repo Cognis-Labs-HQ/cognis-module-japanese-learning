@@ -668,3 +668,19 @@ Modul dinaikkan ke `2.2.74`, revisi konten `2026-10-01.2`, dan revisi skema baha
 ## Commit
 
 - [f6c7201](../../commit/f6c7201) — Menempatkan penanda transformasi pada definisi verba.
+
+## Transformasi Definisi yang Dapat Disusun
+
+Metadata `marker` tetap dan slot `{{ marker }}` tersimpan diganti dengan struktur `definitionTransform` Cognis 2.24. Setiap aturan kini mendeklarasikan batas terlokalisasi yang dapat dilepas dan templat dengan `{{ definition }}`, `{{ stem }}`, `{{ prefix }}`, serta `{{ suffix }}`; templat disusun berurutan sepanjang jalur transformasi mendalam.
+
+## Definisi Bersih dan Cakupan Jalur Mendalam
+
+Definisi verba kembali menjadi teks terlokalisasi biasa, sementara batas infinitif yang konsisten memungkinkan templat mengubah setiap definisi polisemi secara mandiri. Pengujian mencakup bentuk keinginan `見る` dan jalur keinginan kausatif empat tahap tanpa meratakan makna.
+
+## Sinkronisasi Versi
+
+Modul dinaikkan ke `2.2.75`, revisi konten `2026-10-01.3`, dan revisi skema bahasa Jepang `80`, disertai hash paket yang dibuat ulang.
+
+## Commit
+
+- [739beba](../../commit/739beba) — Mengadopsi transformasi definisi yang dapat disusun.

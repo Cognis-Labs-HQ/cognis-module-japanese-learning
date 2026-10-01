@@ -668,3 +668,19 @@ The module advances to `2.2.74`, content revision `2026-10-01.2`, and Japanese s
 ## Commits
 
 - [f6c7201](../../commit/f6c7201) — Place transformation markers in verb definitions.
+
+## Composable Definition Transforms
+
+Replaced fixed `marker` metadata and stored `{{ marker }}` slots with the Cognis 2.24 `definitionTransform` structure. Every rule now declares localized removable boundaries and templates using `{{ definition }}`, `{{ stem }}`, `{{ prefix }}`, and `{{ suffix }}`; templates compose in order along deep transformation paths.
+
+## Clean Definitions and Deep-Path Coverage
+
+Verb definitions are ordinary localized text again, while consistent infinitive boundaries let templates transform each polysemous definition independently. Tests cover `見る` desire output and a four-step causative-desire path without flattening meanings.
+
+## Version Synchronization
+
+The module advances to `2.2.75`, content revision `2026-10-01.3`, and Japanese schema revision `80`, with regenerated package hashes.
+
+## Commits
+
+- [739beba](../../commit/739beba) — Adopt composable definition transforms.
