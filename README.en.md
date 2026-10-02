@@ -244,3 +244,7 @@ Stroke patterns now publish explicit logical columns and ordered per-character s
 ### Kanji Creation Identity
 
 Kanji creation and native lookup use the NFKC-normalized Kanji label as the card identity, never its pronunciation. Distinct characters may therefore share a reading such as `けん` without being treated as the same card. Cognis Library 2.24.3 returns the conflicting entry ID for a genuine same-label conflict and lets the composer select that existing card, including entries outside the currently filtered list.
+
+### Sentence Structure Composer
+
+The sentence card constructor now publishes separate provider-owned carousels for ordinary words, particles, tagged sentence-structure vocabulary, and repeatable Japanese punctuation. The visible copula `です` carries `sentence-structure`, so it remains meaningful Vocabulary while appearing in the dedicated sentence-building control introduced by Cognis Library 2.24.9.

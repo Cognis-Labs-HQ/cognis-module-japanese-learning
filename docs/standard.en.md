@@ -287,3 +287,7 @@ Stroke patterns now publish explicit logical columns and ordered per-character s
 ## Kanji Identity and Conflicts
 
 Normalize Kanji labels with NFKC for lookup and identity comparison. Do not include pronunciation in visible Kanji identity and do not infer equality from a shared reading. A `content_conflict` for an alternate-character creation therefore means that the same normalized Kanji label is visible in the destination or global scope; the host must expose the conflict entry ID so the existing card can be selected even when filters hide it.
+
+## Sentence Structure Vocabulary
+
+Declare sentence composition explicitly through the sentence layer's `cardConstructor`. Keep ordinary word and particle targets in `input_carousels`, place visible structural vocabulary in a `tag_carousels` entry using the `sentence-structure` tag and `words` relationship, and publish Japanese punctuation through a repeatable `literal_carousels` entry. Tag only lexical structure words such as the copula `です`; particles remain particles and ordinary predicates remain ordinary vocabulary.

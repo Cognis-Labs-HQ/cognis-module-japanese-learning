@@ -287,3 +287,7 @@ Pola goresan kini menerbitkan kolom logis eksplisit dan kelompok goresan berurut
 ## Identitas dan Konflik Kanji
 
 Normalisasikan label Kanji dengan NFKC untuk pencarian dan perbandingan identitas. Jangan sertakan pelafalan dalam identitas Kanji yang terlihat dan jangan menyimpulkan kesamaan dari bacaan yang sama. Karena itu, `content_conflict` saat membuat karakter alternatif berarti label Kanji ternormalisasi yang sama terlihat pada cakupan tujuan atau global; host harus menyediakan ID entri konflik agar kartu yang ada dapat dipilih meskipun disembunyikan oleh filter.
+
+## Kosakata Struktur Kalimat
+
+Deklarasikan komposisi kalimat secara eksplisit melalui `cardConstructor` lapisan kalimat. Pertahankan target kata dan partikel biasa dalam `input_carousels`, tempatkan kosakata struktural terlihat dalam entri `tag_carousels` dengan tag `sentence-structure` dan relasi `words`, serta terbitkan tanda baca Jepang melalui entri `literal_carousels` yang dapat diulang. Tandai hanya kata struktur leksikal seperti kopula `です`; partikel tetap berada di lapisan partikel dan predikat biasa tetap menjadi kosakata biasa.

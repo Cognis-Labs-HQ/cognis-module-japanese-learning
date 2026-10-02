@@ -729,3 +729,15 @@ The module advances to `2.2.78` and content revision `2026-10-01.6`, with regene
 
 - [ab10be0](../../commit/ab10be0) — Keep Kanji identity separate from pronunciation.
 - [19424fc](../../commit/19424fc) — Remove duplicated identity guidance.
+
+## Sentence Structure Composition
+
+The Japanese sentence constructor now follows Cognis Library 2.24.9 with separate word and particle inputs, a provider-owned Sentence Structure carousel, and repeatable Japanese punctuation. The visible copula `です` is tagged `sentence-structure`, keeping it as meaningful Vocabulary while making it directly selectable, orderable, removable, and restorable during sentence authoring.
+
+## Version Synchronization
+
+The module advances to `2.2.79`, content revision `2026-10-02.1`, and Japanese schema revision `83`, with regenerated package hashes.
+
+## Commits
+
+- [244e048](../../commit/244e048) — Expose sentence structure composer entries.

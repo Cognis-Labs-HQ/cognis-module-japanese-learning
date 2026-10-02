@@ -287,3 +287,7 @@ Strichmuster veröffentlichen nun ausdrückliche logische Spalten und geordnete 
 ## Kanji-Identität und Konflikte
 
 Normalisiere Kanji-Zeichen für Suche und Identitätsvergleich mit NFKC. Die Aussprache gehört nicht zur sichtbaren Kanji-Identität, und eine gemeinsame Lesung begründet keine Gleichheit. Ein `content_conflict` beim Erstellen eines alternativen Zeichens bedeutet daher, dass dasselbe normalisierte Kanji-Zeichen im Ziel- oder globalen Bereich sichtbar ist; der Host muss die ID des kollidierenden Eintrags bereitstellen, damit die vorhandene Karte auch bei ausblendenden Filtern ausgewählt werden kann.
+
+## Satzstruktur-Wortschatz
+
+Deklariere die Satzkomposition ausdrücklich im `cardConstructor` der Satzebene. Belasse gewöhnliche Wort- und Partikelziele in `input_carousels`, stelle sichtbaren Strukturwortschatz über einen `tag_carousels`-Eintrag mit dem Tag `sentence-structure` und der Beziehung `words` bereit und veröffentliche japanische Satzzeichen über einen wiederholbaren `literal_carousels`-Eintrag. Markiere nur lexikalische Strukturwörter wie die Kopula `です`; Partikeln bleiben Partikeln und gewöhnliche Prädikate bleiben gewöhnlicher Wortschatz.

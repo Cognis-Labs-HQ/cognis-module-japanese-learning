@@ -729,3 +729,15 @@ Modul dinaikkan ke `2.2.78` dan revisi konten `2026-10-01.6`, dengan hash paket 
 
 - [ab10be0](../../commit/ab10be0) — Memisahkan identitas Kanji dari pelafalan.
 - [19424fc](../../commit/19424fc) — Menghapus panduan identitas yang terduplikasi.
+
+## Komposisi Struktur Kalimat
+
+Konstruktor kalimat Jepang kini mengikuti Cognis Library 2.24.9 dengan input kata dan partikel terpisah, carousel Struktur Kalimat milik penyedia, serta tanda baca Jepang yang dapat diulang. Kopula terlihat `です` diberi tag `sentence-structure`, sehingga tetap menjadi Kosakata bermakna dan dapat dipilih, diurutkan, dihapus, serta dipulihkan secara langsung saat menyusun kalimat.
+
+## Sinkronisasi Versi
+
+Modul dinaikkan ke `2.2.79`, revisi konten `2026-10-02.1`, dan revisi skema Jepang `83`, dengan hash paket yang dibuat ulang.
+
+## Commit
+
+- [244e048](../../commit/244e048) — Menampilkan entri struktur kalimat pada composer.

@@ -1,6 +1,6 @@
 {
     "id": "japanese-core",
-    "version": 82,
+    "version": 83,
     "namespace": "ja",
     "language": "ja",
     "metadata": {
@@ -974,7 +974,50 @@
             "detail": {
                 "fieldOrder": ["pronunciation"]
             },
-            "displayDefinition": true
+            "displayDefinition": true,
+            "cardConstructor": {
+                "label": {
+                    "labels": {
+                        "de": "Satz",
+                        "en": "Sentence",
+                        "id": "Kalimat",
+                        "ja": "文"
+                    }
+                },
+                "fields": [],
+                "relationships": ["words", "particles", "definitions"],
+                "input_carousels": ["words", "particles"],
+                "pronunciation_carousels": [],
+                "tag_carousels": [
+                    {
+                        "id": "sentence-structure",
+                        "metadata": {
+                            "labels": {
+                                "de": "Satzstruktur",
+                                "en": "Sentence Structure",
+                                "id": "Struktur Kalimat",
+                                "ja": "文の構造"
+                            }
+                        },
+                        "relationship": "words",
+                        "tag": "sentence-structure"
+                    }
+                ],
+                "literal_carousels": [
+                    {
+                        "id": "punctuation",
+                        "metadata": {
+                            "labels": {
+                                "de": "Satzzeichen",
+                                "en": "Punctuation",
+                                "id": "Tanda Baca",
+                                "ja": "句読点"
+                            }
+                        },
+                        "values": ["。", "、", "？", "！"]
+                    }
+                ]
+            }
         }
     ],
     "transformSets": [

@@ -244,3 +244,7 @@ Strichmuster veröffentlichen nun ausdrückliche logische Spalten und geordnete 
 ### Identität bei der Kanji-Erstellung
 
 Kanji-Erstellung und native Suche verwenden das NFKC-normalisierte Kanji-Zeichen als Kartenidentität, niemals seine Aussprache. Verschiedene Zeichen dürfen daher dieselbe Lesung wie `けん` besitzen, ohne als dieselbe Karte behandelt zu werden. Cognis Library 2.24.3 liefert bei einem echten Konflikt desselben Zeichens die ID des vorhandenen Eintrags und ermöglicht dem Composer, diese Karte auszuwählen, auch wenn sie außerhalb der aktuellen Filterliste liegt.
+
+### Composer für Satzstrukturen
+
+Der Satzkarten-Konstruktor veröffentlicht nun getrennte anbietereigene Karussells für gewöhnliche Wörter, Partikeln, markierten Satzstruktur-Wortschatz und wiederverwendbare japanische Satzzeichen. Die sichtbare Kopula `です` trägt `sentence-structure`; sie bleibt damit bedeutungsvoller Wortschatz und erscheint zugleich in der mit Cognis Library 2.24.9 eingeführten Satzbau-Steuerung.

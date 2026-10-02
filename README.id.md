@@ -244,3 +244,7 @@ Pola goresan kini menerbitkan kolom logis eksplisit dan kelompok goresan berurut
 ### Identitas Pembuatan Kanji
 
 Pembuatan Kanji dan pencarian asli memakai label Kanji yang dinormalisasi NFKC sebagai identitas kartu, bukan pelafalannya. Karena itu, karakter yang berbeda boleh berbagi bacaan seperti `けん` tanpa dianggap sebagai kartu yang sama. Cognis Library 2.24.3 mengembalikan ID entri yang berkonflik untuk konflik label yang benar-benar sama dan memungkinkan composer memilih kartu tersebut, termasuk entri di luar daftar yang sedang difilter.
+
+### Composer Struktur Kalimat
+
+Konstruktor kartu kalimat kini menerbitkan carousel milik penyedia yang terpisah untuk kata biasa, partikel, kosakata struktur kalimat bertag, dan tanda baca Jepang yang dapat diulang. Kopula terlihat `です` memakai tag `sentence-structure`, sehingga tetap menjadi Kosakata bermakna sekaligus muncul pada kontrol penyusunan kalimat khusus yang diperkenalkan Cognis Library 2.24.9.

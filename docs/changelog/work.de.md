@@ -729,3 +729,15 @@ Das Modul wird auf `2.2.78` und die Inhaltsrevision auf `2026-10-01.6` angehoben
 
 - [ab10be0](../../commit/ab10be0) — Kanji-Identität von der Aussprache trennen.
 - [19424fc](../../commit/19424fc) — Doppelte Identitätshinweise entfernen.
+
+## Satzstruktur-Komposition
+
+Der japanische Satzkonstruktor folgt nun Cognis Library 2.24.9 mit getrennten Wort- und Partikeleingaben, einem anbietereigenen Karussell für Satzstrukturen und wiederverwendbaren japanischen Satzzeichen. Die sichtbare Kopula `です` trägt das Tag `sentence-structure`; sie bleibt bedeutungsvoller Wortschatz und kann beim Erstellen von Sätzen direkt ausgewählt, angeordnet, entfernt und wiederhergestellt werden.
+
+## Versionsabgleich
+
+Das Modul wird auf `2.2.79`, die Inhaltsrevision auf `2026-10-02.1` und das japanische Schema auf Revision `83` angehoben; die Pakethashes wurden neu erzeugt.
+
+## Commits
+
+- [244e048](../../commit/244e048) — Satzstruktur-Einträge im Composer bereitstellen.
