@@ -295,3 +295,5 @@ Declare sentence composition explicitly through the sentence layer's `cardConstr
 ## Connector and Copula Coverage
 
 The sentence-structure inventory must include reviewed coordinating, contrastive, and consequential connectors rather than only one copula. Every tagged connector remains visible Vocabulary, resolves its complete reading through atomic Kana, carries localized definitions, and is used by an authored sentence. Model `だ` as the sole stored plain copula base and derive its polite, past, and negative branches through a localized `copula` transform set; do not store `だった` or the other generated branches as Vocabulary records.
+
+Optional transform boundaries must be omitted when unused; empty localized boundary labels are invalid provider metadata.

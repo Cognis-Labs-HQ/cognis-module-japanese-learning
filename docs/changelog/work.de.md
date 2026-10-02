@@ -754,6 +754,12 @@ Der Wortschatz veröffentlicht nun eine eigene Transformationsansicht für Kopul
 
 Das Modul wird auf `2.2.80`, die Inhaltsrevision auf `2026-10-02.2` und das japanische Schema auf Revision `84` angehoben; die Pakethashes wurden neu erzeugt.
 
+## Gültige Metadaten für Kopula-Transformationen
+
+Kopula-Regeln lassen nun ungenutzte optionale Definitionsgrenzen weg, statt leere lokalisierte Bezeichnungen zu veröffentlichen. Die lokalisierten Vorlagen bleiben erhalten, sodass die strenge Study-Library-Validierung das Paket erfolgreich aktivieren und einlesen kann. Das Modul wird auf `2.2.81`, die Inhaltsrevision auf `2026-10-02.3` und die Schemarevision auf `85` angehoben.
+
 ## Commits
 
 - [b33c94a](../../commit/b33c94a) — Satzkonnektoren und Kopulaformen erweitern.
+
+- [7f15934](../../commit/7f15934) — Metadatenvalidierung der Kopula-Transformation korrigiert.

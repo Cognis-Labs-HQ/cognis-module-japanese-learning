@@ -754,6 +754,12 @@ Kosakata kini menerbitkan tampilan transformasi Kopula khusus. Satu-satunya bent
 
 Modul dinaikkan ke `2.2.80`, revisi konten `2026-10-02.2`, dan revisi skema Jepang `84`, dengan hash paket yang dibuat ulang.
 
+## Metadata Transformasi Kopula yang Valid
+
+Aturan kopula kini menghilangkan batas pencocokan definisi opsional yang tidak digunakan alih-alih menerbitkan label terlacakalisasi kosong. Templat terlacakalisasinya tetap dipertahankan sehingga validasi Study Library yang ketat dapat mengaktifkan dan mengimpor paket. Modul naik ke `2.2.81`, revisi konten `2026-10-02.3`, dan revisi skema `85`.
+
 ## Commit
 
 - [b33c94a](../../commit/b33c94a) — Memperluas penghubung kalimat dan bentuk kopula.
+
+- [7f15934](../../commit/7f15934) — Memperbaiki validasi metadata transformasi kopula.

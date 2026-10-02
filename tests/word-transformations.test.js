@@ -270,11 +270,22 @@ test("verb transformation trees branch deeply with dynamic readings and definiti
 test("every transformation exposes a localized definition transform", () => {
     for (const set of schema.transformSets) {
         for (const rule of set.rules) {
-            for (const field of ["matchPrefix", "template"])
+            assert.ok(
+                rule.definitionTransform.template ||
+                    rule.definitionTransform.replacements?.length,
+                `${set.id}:${rule.id}`,
+            );
+            for (const field of ["matchPrefix", "matchSuffix", "template"]) {
+                if (!rule.definitionTransform[field]) continue;
                 assert.deepEqual(
                     Object.keys(rule.definitionTransform[field].labels).sort(),
                     ["de", "en", "id", "ja"],
                 );
+                for (const value of Object.values(
+                    rule.definitionTransform[field].labels,
+                ))
+                    assert.ok(value.trim(), `${set.id}:${rule.id}:${field}`);
+            }
         }
     }
 });

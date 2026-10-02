@@ -295,3 +295,5 @@ Deklarasikan komposisi kalimat secara eksplisit melalui `cardConstructor` lapisa
 ## Cakupan Penghubung dan Kopula
 
 Inventaris struktur kalimat harus mencakup penghubung koordinatif, kontras, dan konsekuensial yang telah ditinjau, bukan hanya satu kopula. Setiap penghubung bertag tetap menjadi Kosakata terlihat, menyelesaikan bacaan lengkapnya melalui Kana atomik, memiliki definisi terlokalisasi, dan dipakai oleh kalimat yang disusun. Simpan `だ` sebagai satu-satunya bentuk dasar kopula biasa dan turunkan cabang sopan, lampau, serta negatif melalui set transformasi `copula` terlokalisasi; jangan menyimpan `だった` atau cabang hasil lainnya sebagai rekaman Kosakata.
+
+Batas transformasi opsional harus dihilangkan saat tidak digunakan; label batas terlacakalisasi yang kosong adalah metadata penyedia yang tidak valid.

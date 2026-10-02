@@ -1,6 +1,6 @@
 {
     "id": "japanese-core",
-    "version": 84,
+    "version": 85,
     "namespace": "ja",
     "language": "ja",
     "metadata": {
@@ -8782,14 +8782,6 @@
                         "append": "だった"
                     },
                     "definitionTransform": {
-                        "matchPrefix": {
-                            "labels": {
-                                "de": "",
-                                "en": "",
-                                "id": "",
-                                "ja": ""
-                            }
-                        },
                         "template": {
                             "labels": {
                                 "de": "{{ definition }} (Vergangenheit)",
@@ -8819,14 +8811,6 @@
                         "append": "ではない"
                     },
                     "definitionTransform": {
-                        "matchPrefix": {
-                            "labels": {
-                                "de": "",
-                                "en": "",
-                                "id": "",
-                                "ja": ""
-                            }
-                        },
                         "template": {
                             "labels": {
                                 "de": "{{ definition }} (verneint)",
@@ -8856,14 +8840,6 @@
                         "append": "なかった"
                     },
                     "definitionTransform": {
-                        "matchPrefix": {
-                            "labels": {
-                                "de": "",
-                                "en": "",
-                                "id": "",
-                                "ja": ""
-                            }
-                        },
                         "template": {
                             "labels": {
                                 "de": "{{ definition }} (verneinte Vergangenheit)",
@@ -8893,14 +8869,6 @@
                         "append": "で"
                     },
                     "definitionTransform": {
-                        "matchPrefix": {
-                            "labels": {
-                                "de": "",
-                                "en": "",
-                                "id": "",
-                                "ja": ""
-                            }
-                        },
                         "template": {
                             "labels": {
                                 "de": "{{ definition }} (verbindend)",

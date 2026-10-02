@@ -252,3 +252,5 @@ The sentence card constructor now publishes separate provider-owned carousels fo
 ### Expanded Connectors and Copula
 
 The Sentence Structure carousel now includes `それでも`, `ですが`, `だけど`, `しかし`, `そして`, `それから`, `だから`, `なので`, and plain `だ`, each with atomic-Kana pronunciation links, localized meaning, and a reviewed example sentence. A dedicated Copulas transformation view expands base `だ` into `だった`, `ではない`, `ではなかった`, and connective `で` without storing those generated forms as Vocabulary cards; visible polite `です` remains an independently authored sentence-structure word.
+
+Copula definition transforms omit unused matching boundaries and use localized templates, so strict host validation accepts every generated form.
