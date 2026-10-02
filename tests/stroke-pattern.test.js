@@ -1,0 +1,139 @@
+import assert from "node:assert/strict";
+import { readdirSync, readFileSync } from "node:fs";
+import path from "node:path";
+import test from "node:test";
+
+const LIBRARY_ROOT = path.resolve(import.meta.dirname, "..", "data", "library");
+
+function loadLayer(layer) {
+    const directory = path.join(LIBRARY_ROOT, "content", layer);
+    return readdirSync(directory)
+        .filter((name) => name.endsWith(".json"))
+        .flatMap((name) =>
+            JSON.parse(readFileSync(path.join(directory, name), "utf8")),
+        );
+}
+
+function assertStrokePattern(record) {
+    const pattern = record.fields.stroke_pattern;
+    assert.equal(pattern.coordinateSystem, "normalized", record.id);
+    assert.equal(pattern.tolerance, 60, record.id);
+    assert.ok(pattern.strokes.length > 0, `${record.id} requires strokes`);
+    const characterCount = [...record.label].length;
+    assert.equal(pattern.columns ?? 1, characterCount, record.id);
+    const groups = pattern.groups ?? [pattern.strokes.length];
+    assert.equal(groups.length, characterCount, record.id);
+    assert.equal(
+        groups.reduce((sum, count) => sum + count, 0),
+        pattern.strokes.length,
+        record.id,
+    );
+    if (characterCount > 1) {
+        assert.equal(pattern.columns, characterCount, record.id);
+        assert.deepEqual(pattern.groups, groups, record.id);
+    }
+    for (const stroke of pattern.strokes) {
+        assert.ok(
+            stroke.points.length >= 3,
+            `${record.id} stroke is too short`,
+        );
+        let previousTime = -1;
+        for (const point of stroke.points) {
+            assert.ok(point.x >= 0 && point.x <= 1, `${record.id} x`);
+            assert.ok(point.y >= 0 && point.y <= 1, `${record.id} y`);
+            assert.ok(point.time >= previousTime, `${record.id} time order`);
+            previousTime = point.time;
+        }
+    }
+}
+
+test("writing cards publish normalized stroke practice patterns", () => {
+    const schema = JSON.parse(
+        readFileSync(path.join(LIBRARY_ROOT, "schema.json"), "utf8"),
+    );
+    for (const layerId of ["characters", "alt-characters"]) {
+        const layer = schema.layers.find(({ id }) => id === layerId);
+        const field = layer.fields.find(({ id }) => id === "stroke_pattern");
+        assert.equal(field.type, "strokePattern");
+        assert.equal(field.required, true);
+        assert.equal(field.detail.renderer, "stroke");
+        assert.equal(field.input.immutable, true);
+        for (const record of loadLayer(layerId)) assertStrokePattern(record);
+    }
+});
+
+test("packaged Kana retain the authored KanjiVG curve geometry", () => {
+    const hiraganaE = loadLayer("characters").find(
+        ({ label }) => label === "え",
+    );
+    const pattern = hiraganaE.fields.stroke_pattern;
+    assert.equal(pattern.strokes.length, 2);
+    assert.equal(pattern.strokes[1].points.length, 32);
+    assert.ok(
+        pattern.strokes[1].points.some(({ x, y }) => x < 0.26 && y > 0.76),
+    );
+    assert.ok(
+        pattern.strokes[1].points.some(
+            ({ x, y }) => x > 0.42 && y > 0.6 && y < 0.66,
+        ),
+    );
+    assert.ok(
+        pattern.strokes[1].points.some(({ x, y }) => x > 0.76 && y > 0.8),
+    );
+});
+
+test("stroke metadata preserves KanjiVG attribution", () => {
+    const manifest = JSON.parse(
+        readFileSync(path.join(LIBRARY_ROOT, "manifest.json"), "utf8"),
+    );
+    const kanjiVg = manifest.metadata.sources.find(
+        ({ id }) => id === "kanjivg",
+    );
+    assert.deepEqual(kanjiVg, {
+        id: "kanjivg",
+        url: "https://kanjivg.tagaini.net/",
+        license: "CC-BY-SA-3.0",
+        attribution: "KanjiVG project contributors",
+        revision: "422b5538595676da918c288a4230cb5e22a1ee7e",
+        derivedFields: [
+            "characters.stroke_pattern",
+            "alt-characters.stroke_pattern",
+        ],
+    });
+});
+
+test("compound Kana preserve visibly smaller small-form components", () => {
+    const characters = loadLayer("characters");
+    const kyo = characters.find(({ label }) => label === "きょ");
+    const ki = characters.find(({ label }) => label === "き");
+    const smallYo = characters.find(({ label }) => label === "ょ");
+    const firstStrokeCount = ki.fields.stroke_pattern.strokes.length;
+    const componentBounds = (strokes) => {
+        const points = strokes.flatMap(({ points: values }) => values);
+        return {
+            width:
+                Math.max(...points.map(({ x }) => x)) -
+                Math.min(...points.map(({ x }) => x)),
+            height:
+                Math.max(...points.map(({ y }) => y)) -
+                Math.min(...points.map(({ y }) => y)),
+        };
+    };
+    const fullBounds = componentBounds(
+        kyo.fields.stroke_pattern.strokes.slice(0, firstStrokeCount),
+    );
+    const smallBounds = componentBounds(
+        kyo.fields.stroke_pattern.strokes.slice(firstStrokeCount),
+    );
+    assert.equal(
+        kyo.fields.stroke_pattern.strokes.length,
+        firstStrokeCount + smallYo.fields.stroke_pattern.strokes.length,
+    );
+    assert.deepEqual(kyo.fields.stroke_pattern.groups, [
+        firstStrokeCount,
+        smallYo.fields.stroke_pattern.strokes.length,
+    ]);
+    assert.equal(kyo.fields.stroke_pattern.columns, 2);
+    assert.ok(smallBounds.width < fullBounds.width * 0.7);
+    assert.ok(smallBounds.height < fullBounds.height);
+});

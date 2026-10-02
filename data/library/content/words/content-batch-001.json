@@ -1,0 +1,306 @@
+[
+    {
+        "id": "ja:word:koko",
+        "label": "ここ",
+        "fields": {
+            "pronunciation": ["ここ"],
+            "jlpt_level": "N5"
+        },
+        "references": [
+            {
+                "entryId": "ja:def:koko",
+                "relation": "definitions"
+            }
+        ],
+        "class": "lexical:pronoun",
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:ko",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:ko",
+                        "relation": "reading-kana",
+                        "position": 1
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:soko",
+        "label": "そこ",
+        "fields": {
+            "pronunciation": ["そこ"],
+            "jlpt_level": "N5"
+        },
+        "references": [
+            {
+                "entryId": "ja:def:soko",
+                "relation": "definitions"
+            }
+        ],
+        "class": "lexical:pronoun",
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:so",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:ko",
+                        "relation": "reading-kana",
+                        "position": 1
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:doko",
+        "label": "どこ",
+        "fields": {
+            "pronunciation": ["どこ"],
+            "jlpt_level": "N5"
+        },
+        "references": [
+            {
+                "entryId": "ja:def:doko",
+                "relation": "definitions"
+            }
+        ],
+        "class": "lexical:pronoun",
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:do",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:ko",
+                        "relation": "reading-kana",
+                        "position": 1
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:iru-exist",
+        "label": "いる",
+        "fields": {
+            "pronunciation": ["いる"],
+            "jlpt_level": "N5"
+        },
+        "references": [
+            {
+                "entryId": "ja:def:iru-exist",
+                "relation": "definitions"
+            }
+        ],
+        "class": "lexical:verb",
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:i",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:ru",
+                        "relation": "reading-kana",
+                        "position": 1
+                    }
+                ]
+            ]
+        },
+        "tags": ["verb", "ichidan"]
+    },
+    {
+        "id": "ja:word:aru-exist",
+        "label": "ある",
+        "fields": {
+            "pronunciation": ["ある"],
+            "jlpt_level": "N5"
+        },
+        "references": [
+            {
+                "entryId": "ja:def:aru-exist",
+                "relation": "definitions"
+            }
+        ],
+        "class": "lexical:verb",
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:a",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:ru",
+                        "relation": "reading-kana",
+                        "position": 1
+                    }
+                ]
+            ]
+        },
+        "tags": ["verb", "godan-aru"]
+    },
+    {
+        "id": "ja:word:kirei",
+        "label": "きれい",
+        "fields": {
+            "pronunciation": ["きれい"],
+            "jlpt_level": "N5"
+        },
+        "references": [
+            {
+                "entryId": "ja:def:kirei",
+                "relation": "definitions"
+            }
+        ],
+        "class": "lexical:adjective",
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:ki",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:re",
+                        "relation": "reading-kana",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:i",
+                        "relation": "reading-kana",
+                        "position": 2
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:totemo",
+        "label": "とても",
+        "fields": {
+            "pronunciation": ["とても"],
+            "jlpt_level": "N5"
+        },
+        "references": [
+            {
+                "entryId": "ja:def:totemo",
+                "relation": "definitions"
+            }
+        ],
+        "class": "lexical:adverb",
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:to",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:te",
+                        "relation": "reading-kana",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:mo",
+                        "relation": "reading-kana",
+                        "position": 2
+                    }
+                ]
+            ]
+        },
+        "tags": ["adverb"]
+    },
+    {
+        "id": "ja:word:yukkuri",
+        "label": "ゆっくり",
+        "fields": {
+            "pronunciation": ["ゆっくり"],
+            "jlpt_level": "N5"
+        },
+        "references": [
+            {
+                "entryId": "ja:def:yukkuri",
+                "relation": "definitions"
+            }
+        ],
+        "class": "lexical:adverb",
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:yu",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:small-tsu",
+                        "relation": "reading-kana",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:ku",
+                        "relation": "reading-kana",
+                        "position": 2
+                    },
+                    {
+                        "entryId": "ja:char:ri",
+                        "relation": "reading-kana",
+                        "position": 3
+                    }
+                ]
+            ]
+        },
+        "tags": ["adverb"]
+    },
+    {
+        "id": "ja:word:desu",
+        "label": "です",
+        "fields": {
+            "pronunciation": ["です"],
+            "jlpt_level": "N5"
+        },
+        "references": [
+            {
+                "entryId": "ja:def:desu",
+                "relation": "definitions"
+            }
+        ],
+        "class": "lexical:copula",
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:de",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:su",
+                        "relation": "reading-kana",
+                        "position": 1
+                    }
+                ]
+            ]
+        },
+        "tags": ["sentence-structure"]
+    }
+]

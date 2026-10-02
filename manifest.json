@@ -2,24 +2,15 @@
     "id": "study-language-ja",
     "uuid": "e905927f-b133-572a-92ce-2ea8645e5ceb",
     "name": "module.study-language-ja.name",
-    "version": "1.2.14",
+    "version": "2.2.81",
     "class": "extension",
     "coreApiVersion": "v1",
-    "capabilities": [
-        "study:language:ja",
-        "study:language:ja:library",
-        "ui:page"
-    ],
-    "entrypoints": {
-        "bootstrap": "./bootstrap.js",
-        "api": "./api/index.js",
-        "ui": "./ui/index.html",
-        "cli": "./cli/index.js"
-    },
+    "capabilities": ["study:language:ja"],
+    "entrypoints": { "bootstrap": "./bootstrap.js" },
     "ui": { "stringsBaseUrl": "/static/modules/study-language-ja/languages" },
     "publisher": "Cognis Labs HQ",
     "requires": ["338b9237-a2c8-5bcf-9437-bccc9abd9a27"],
-    "requiresCapabilities": ["auth:requireAuth"],
+    "requiresCapabilities": ["study:library:provider"],
     "summary": "module.study-language-ja.summary",
     "description": "module.study-language-ja.description",
     "categories": [
@@ -60,7 +51,7 @@
         },
         {
             "path": ".github/copilot-instructions.md",
-            "sha256": "a1dcbc6f88e45db7debb29f935c5654d9342b2fbedb6adfbae7a4297117b0df3"
+            "sha256": "a444fc847fc3748cfa6f3dd51cdddffb4d5d172fd1a71d666a25e577993f242e"
         },
         {
             "path": ".gitignore",
@@ -76,7 +67,7 @@
         },
         {
             "path": "AGENTS.md",
-            "sha256": "a1dcbc6f88e45db7debb29f935c5654d9342b2fbedb6adfbae7a4297117b0df3"
+            "sha256": "a444fc847fc3748cfa6f3dd51cdddffb4d5d172fd1a71d666a25e577993f242e"
         },
         {
             "path": "LICENSE",
@@ -84,51 +75,39 @@
         },
         {
             "path": "README.de.md",
-            "sha256": "9222cc3e637d963428422285a3b4282f524f00cf85670b4794cb9caddc62d409"
+            "sha256": "a68e4c2e11b97cebb1be0014cdbbfd6bceb763c21ad7fa85e09cc96ea42aeb16"
         },
         {
             "path": "README.en.md",
-            "sha256": "c355d33e6bb0e9654b42b1fc214bc7a7ce51b47551494efb747023461c8c45ec"
+            "sha256": "10150eb3e0d99e998810ac636c546fe9ee96d5d084df195cb2c99ef4a3c5ad16"
         },
         {
             "path": "README.id.md",
-            "sha256": "28d2cc504ee5b2ca5698334722fe76ed64646b1f34c0faae61a6cffa69c12eb0"
+            "sha256": "868ecda63df663d06d5b0f1e0be95b9dadcbda41e6c1a746a60b89ff51f8cbc0"
         },
         {
             "path": "README.ja.md",
-            "sha256": "e527a390c2633f5cacd8d2424a7ae3be70c183bbeabbad8139323968c116cce9"
+            "sha256": "e4935248d3e10341caed16686b8712576107a0141f8c9b6f8ead4873d2d22392"
         },
         {
             "path": "README.md",
-            "sha256": "c355d33e6bb0e9654b42b1fc214bc7a7ce51b47551494efb747023461c8c45ec"
+            "sha256": "10150eb3e0d99e998810ac636c546fe9ee96d5d084df195cb2c99ef4a3c5ad16"
         },
         {
-            "path": "api/index.js",
-            "sha256": "d96b0d42aeb00294f6ee2680bd3293b5f5be8cda6ed4ad377a397304ed586e87"
+            "path": "TODO.md",
+            "sha256": "b9317ca2b3dd0da0c1cb4c9d99f18aa969ddf7b7ef20e1992fec515454f8c9fa"
         },
         {
-            "path": "api/reuse/http.js",
-            "sha256": "f42ff95fe1b092449cef468c6c6197bc9819cfd12d4cf5407d91726fe865d448"
+            "path": "api/jisho-lookup-provider.js",
+            "sha256": "eed07d6225ba6e57b6536b4e4249b1f205203591d3a54fd6a05e0c3e1d173876"
         },
         {
-            "path": "api/store.js",
-            "sha256": "3974d76857ce3b9d7304472966a480b87de6666d797c9d226c2e842ba5626659"
+            "path": "api/stroke-pattern-provider.js",
+            "sha256": "b476e66b39aed08c5d54c79608c39eb2ca8a06517cc5d07a097c86c18c886d88"
         },
         {
-            "path": "api/tests/documentation-convention.test.js",
-            "sha256": "2d05eebdc19d57aa4dfc2e6bb564ef847be4aceff67f8396cf6ecbd437d01a37"
-        },
-        {
-            "path": "api/tests/store.test.js",
-            "sha256": "fb873d5f50381d35c2eb8de508a73b550c5f13daae66c5b32cd3d89f08980a8f"
-        },
-        {
-            "path": "api/tests/structural-compliance.test.js",
-            "sha256": "58c00179b4991bb08b61b9ee664fa5040be33bab7fc83b2f562d73a13ab40566"
-        },
-        {
-            "path": "api/tests/uninstall.test.js",
-            "sha256": "1bc04e9299adb8031b18b4499380dd75bb5f68bafe18e73ce8793e43a5d5bc2c"
+            "path": "api/svg-path-sampler.js",
+            "sha256": "41d0ba55022c18befaf1691cf20a5faa8bfd124b5685b746b50e795035524616"
         },
         {
             "path": "assets/banner.svg",
@@ -140,71 +119,671 @@
         },
         {
             "path": "bootstrap.js",
-            "sha256": "1346c307f5ceb37e6ca0be9db3d172ecdff1cc0c982ac556e6c41966b49a14d4"
+            "sha256": "f36112417c33de9d85a413d5bf8f48177d932576e2adeea174e85bcf9f9cdcdf"
         },
         {
-            "path": "cli/index.js",
-            "sha256": "1a8292012f252740869fc1399c7d4d8850d0a0e60de8b80044f8eaf3a1365c0b"
+            "path": "data/library/content/alt-characters/kanji-001.json",
+            "sha256": "6555d2fa5f40c3300010a5eb51d13cb5487fdc6c433f9d23277cd886e756506c"
         },
         {
-            "path": "data/alt-characters/kanji.json",
-            "sha256": "41c8c6d5e16d3ecf606b80992650166e459c2465b6ec968a320255f24f8defd6"
+            "path": "data/library/content/alt-characters/kanji-002.json",
+            "sha256": "ded9ee36800fff236b9dcbf52ca8695509a6792353bd3454c07b1bdd8f34325f"
         },
         {
-            "path": "data/characters/hiragana.json",
-            "sha256": "b415bb1f09a1788071b3c80a936ee03f881dc7f5b734961cd434d7f7d4ee760d"
+            "path": "data/library/content/alt-characters/kanji-003.json",
+            "sha256": "791ae5a26edf58dc08dfab961af3a79353c4cb4de9c52045273b21421a277658"
         },
         {
-            "path": "data/characters/katakana.json",
-            "sha256": "557939e9f78a5314d4b67ceda642de1df8c0e760df4f7798cbfcb86086daf172"
+            "path": "data/library/content/alt-characters/kanji-004.json",
+            "sha256": "f90c636ea2a719cf7b658f5fc06f88af4232ecfe7501157c4ed09786473a41d6"
         },
         {
-            "path": "data/definitions/common.json",
-            "sha256": "a5ac0d2c7fce73ce37ee93221b05f0bf79465537c5864576262edd9b6e4f7b35"
+            "path": "data/library/content/alt-characters/kanji-005.json",
+            "sha256": "0544c08ae5436aecd4b5a1ed895a6f13cf704f264e059aba976742e0ecfe119c"
         },
         {
-            "path": "data/sentences/common.json",
-            "sha256": "c50203a0edb9b935aba4f32ddd8e398461059234fa89d872b5edc20d7d6275c5"
+            "path": "data/library/content/alt-characters/kanji-006.json",
+            "sha256": "9aa3f0260a955e80bfdffcd2fc13142f6b882711d19c1096289c3e5af78ed049"
         },
         {
-            "path": "data/words/common.json",
-            "sha256": "aa61486634b3a7738154d2760be72ad149be418d4e7eba0e6318d60ce3b83f99"
+            "path": "data/library/content/alt-characters/kanji-007.json",
+            "sha256": "0ee992a8fa3feab3efe62ff2013727d2fe3292f09df2b2b7da2ec68bb9526b8f"
+        },
+        {
+            "path": "data/library/content/alt-characters/kanji-008.json",
+            "sha256": "ae4e8febb516337b7895052986372cf34d96921af7ada46e8f59e3b172e490c9"
+        },
+        {
+            "path": "data/library/content/alt-characters/kanji-009.json",
+            "sha256": "dde03c1f77c1253ec11a6c97d04f940026516c45ac922a97352a88393326b1b1"
+        },
+        {
+            "path": "data/library/content/alt-characters/kanji-010.json",
+            "sha256": "928bf5a3e562dc8bf4acd74febc909a8bf8fbd2cc591e331a7970631af4106cd"
+        },
+        {
+            "path": "data/library/content/alt-characters/kanji-011.json",
+            "sha256": "be2dcc1ea18c6658940b1a1cde1af22c44b7e58834d933f436a09e4321b6dbb2"
+        },
+        {
+            "path": "data/library/content/alt-characters/kanji-012.json",
+            "sha256": "f1f059b950d51fc92c9b9a265c1ac3346c7d546069b180f703a931caaa6373f4"
+        },
+        {
+            "path": "data/library/content/alt-characters/kanji-013.json",
+            "sha256": "2c91fad000a5580e918dd8fbbb9f2335e9ca338f6495b4fabdbb00fc53ae4f40"
+        },
+        {
+            "path": "data/library/content/alt-characters/kanji-014.json",
+            "sha256": "2f83a61aa4aab377346702be4ce045a4ebedffa06e3556bf8499d1b2e5e7f535"
+        },
+        {
+            "path": "data/library/content/alt-characters/kanji-015.json",
+            "sha256": "dcc071cbfb5a765cbe7b0519bdb586aa5d300fa65d3e4c9a833393dd5ea08bd5"
+        },
+        {
+            "path": "data/library/content/alt-characters/kanji-016.json",
+            "sha256": "bca37979806c87e1465cee4cb569cbad1dd24e55f94127b08b7787ee4afed314"
+        },
+        {
+            "path": "data/library/content/alt-characters/kanji-017.json",
+            "sha256": "433ccb5fb9585adfec4863eaa12450438d727d218588f3118ce942bd33b629d2"
+        },
+        {
+            "path": "data/library/content/alt-characters/kanji-018.json",
+            "sha256": "a9a046d02f3ca7cfafb5feee4dbf517251fa8b5fc2e1cee202403c2cdfb479a0"
+        },
+        {
+            "path": "data/library/content/alt-characters/kanji-019.json",
+            "sha256": "d9426ed98b53e473a36cd855378eae17572bc36ca0c0456844982d436b6d8e61"
+        },
+        {
+            "path": "data/library/content/alt-characters/kanji-020.json",
+            "sha256": "33000157a7bd122defd9d67ca65d9a47ac84ce2eb101bfa127efec4289d04054"
+        },
+        {
+            "path": "data/library/content/alt-characters/kanji-021.json",
+            "sha256": "466f9101203715c2b48d979f858641b352ce2471bfff032899bae41696c02932"
+        },
+        {
+            "path": "data/library/content/alt-characters/kanji-022.json",
+            "sha256": "df76166e523e88b6bed668c554f89d519271a558cd426b7b5040c0eea1bc457a"
+        },
+        {
+            "path": "data/library/content/characters/writing-units-001.json",
+            "sha256": "747860c60691aaa65c8b992ebea6182d3c2c983b971ac2f4880765a8aee03908"
+        },
+        {
+            "path": "data/library/content/characters/writing-units-002.json",
+            "sha256": "466b301a71aaf6ab4465de624064be19c62e855e321d21b6218dee41bd68fe45"
+        },
+        {
+            "path": "data/library/content/characters/writing-units-003.json",
+            "sha256": "9595f3938880f23ac2a9bbac46335726659c8e9de66b5c64a18b4a10202086ea"
+        },
+        {
+            "path": "data/library/content/characters/writing-units-004.json",
+            "sha256": "fce6527baf7bf8a971ae3bd913e6088d05460e9be21bda8fbd381e3bd30b7467"
+        },
+        {
+            "path": "data/library/content/characters/writing-units-005.json",
+            "sha256": "fad16d0986001501c192ce4391f135694f59f6c1f5b43a34fb3a0cf95fe5bed2"
+        },
+        {
+            "path": "data/library/content/characters/writing-units-006.json",
+            "sha256": "853785bcc8aa9d7a6ff33638bd1030b59bdf4b3d7620c0dc3535a729302caead"
+        },
+        {
+            "path": "data/library/content/characters/writing-units-007.json",
+            "sha256": "cbec06748bbd226273f5f18732214ef6bc1118026d5d596b9cfece66078d7413"
+        },
+        {
+            "path": "data/library/content/characters/writing-units-008.json",
+            "sha256": "5505916c51bcc6ce72b9bcd3c08bf91c18f02f1f9278fa4979aa87a806ab1c47"
+        },
+        {
+            "path": "data/library/content/characters/writing-units-009.json",
+            "sha256": "ab0b1d02f46147738e8c6fb2a4a335b7e563eaad1e3c7f4a3369228897f85ed1"
+        },
+        {
+            "path": "data/library/content/characters/writing-units-010.json",
+            "sha256": "d6e3db11f2fd0f557c9befeeed6b1f151a035e1c0452a305b829256aaf21543b"
+        },
+        {
+            "path": "data/library/content/characters/writing-units-011.json",
+            "sha256": "d3c67e87a4c33f7f3825be445f0c48edad15db9d8e134c2f349d679f6a7dcff1"
+        },
+        {
+            "path": "data/library/content/characters/writing-units-012.json",
+            "sha256": "2e59fbebe296193775dba596f5d764275779760eedf54714405af17f42576bf7"
+        },
+        {
+            "path": "data/library/content/characters/writing-units-013.json",
+            "sha256": "89197a44017c41245c24ca3533ba9e10e2bb34327dc9b4b39f37ad3f578dc06d"
+        },
+        {
+            "path": "data/library/content/characters/writing-units-014.json",
+            "sha256": "32e3e69618143b3803ed7280cda2c3e8fabbfa7628046834749ae7941de43614"
+        },
+        {
+            "path": "data/library/content/characters/writing-units-015.json",
+            "sha256": "88563ab0768ad4b621cfabb7618fe416b50c6ae776dc7b3dbb5973d472070f50"
+        },
+        {
+            "path": "data/library/content/characters/writing-units-016.json",
+            "sha256": "ae746f8596cd329b84ff6086e8d7b83ccf6ede958504934be48e592fabca98fd"
+        },
+        {
+            "path": "data/library/content/characters/writing-units-017.json",
+            "sha256": "ffd1a729b30946778febdce3c23ee7fe602ac238eca6441789533bf597a97a5a"
+        },
+        {
+            "path": "data/library/content/characters/writing-units-018.json",
+            "sha256": "7e77e8ddc13fba29c7a82d08913eb85068784de94e918da56fbe9269c36a9889"
+        },
+        {
+            "path": "data/library/content/characters/writing-units-019.json",
+            "sha256": "98298f1fcc83461c22d61b399a6b5f2deccd9fffc6ccb16ec6315de374d68f5b"
+        },
+        {
+            "path": "data/library/content/characters/writing-units-020.json",
+            "sha256": "f4254ad34bde1816c415369230c56462d577a1580bb2feb5a88f4865dc5239c7"
+        },
+        {
+            "path": "data/library/content/characters/writing-units-021.json",
+            "sha256": "ba67f09e9b5b12b90558a7b36b941d7b1a4bd09a8fd67ab5d9d22803c92ebad9"
+        },
+        {
+            "path": "data/library/content/characters/writing-units-022.json",
+            "sha256": "077c9a65f76c4863240fb22afca09a3d41d4e34c7863df52f2de47acb522cb4b"
+        },
+        {
+            "path": "data/library/content/characters/writing-units-023.json",
+            "sha256": "be6bc59203bacd6890ae4c69d8a596cea7a266f43ae7704a647ff0ddf25c6a6c"
+        },
+        {
+            "path": "data/library/content/characters/writing-units-024.json",
+            "sha256": "cc943dbb0425b6704288393a924e8bbf996e14b0d41705749291c253b9d81080"
+        },
+        {
+            "path": "data/library/content/characters/writing-units-025.json",
+            "sha256": "abedcbcf3e06f0855a24d237ede6efa1b79b7276058610c95c45f43e8e2ae237"
+        },
+        {
+            "path": "data/library/content/characters/writing-units-026.json",
+            "sha256": "0f8cad8a85d7aea33f25c40d5ca29d11e7f6b76613c3def9f87629943faa29c2"
+        },
+        {
+            "path": "data/library/content/characters/writing-units-027.json",
+            "sha256": "2b05b04def17fd1052e975ae085746a47f02b060f1074d434cc7f6bbc5b30211"
+        },
+        {
+            "path": "data/library/content/characters/writing-units-028.json",
+            "sha256": "f15069b19801f053ca88e6a03e1d7e94bc2fe099f3d06a60324e936c1706ed63"
+        },
+        {
+            "path": "data/library/content/characters/writing-units-029.json",
+            "sha256": "fa034e88f8f5b0c1e1994d37587f3def37b863c48086fb3cd29b2bff32f57124"
+        },
+        {
+            "path": "data/library/content/characters/writing-units-030.json",
+            "sha256": "263357df7d8659eced0fc6759e3cf5cae2ec0be4510380b1a032d53e5ea3ea4d"
+        },
+        {
+            "path": "data/library/content/characters/writing-units-031.json",
+            "sha256": "aa23d3fa8431b79ca698926e5ff280a080ebfd3ac6659c66bbfa316bbd26ad4f"
+        },
+        {
+            "path": "data/library/content/characters/writing-units-032.json",
+            "sha256": "4044cb80f20f163afbff4d020bc91f3834f74967c4f03124bbfc8d87165b0f4a"
+        },
+        {
+            "path": "data/library/content/characters/writing-units-033.json",
+            "sha256": "dd3ab6e46428d44be2f950333d3ffd76e961305a95c20c1174f2bfef0b852f23"
+        },
+        {
+            "path": "data/library/content/characters/writing-units-034.json",
+            "sha256": "85423c4fe11d355d40f1aec50f63d9b2af96531c39531f8877d641cf26b109c0"
+        },
+        {
+            "path": "data/library/content/characters/writing-units-035.json",
+            "sha256": "838ae4dc41a012634e85b94397a3a51c14abfb0b21e78f068d58c9702b4335b5"
+        },
+        {
+            "path": "data/library/content/characters/writing-units-036.json",
+            "sha256": "0dc170dc0ee633b04fd558de0ac08d493096b7b1303eec4ec9a25b90228548f2"
+        },
+        {
+            "path": "data/library/content/characters/writing-units-037.json",
+            "sha256": "e4452521bf44c08c2c239edbfe15bda5b76604f53be6ae8c19d594f5ac774027"
+        },
+        {
+            "path": "data/library/content/characters/writing-units-038.json",
+            "sha256": "0dff79718a889425a73a1307f764c31613a25ecedcbea1d8cfa18c96122d682d"
+        },
+        {
+            "path": "data/library/content/characters/writing-units-039.json",
+            "sha256": "3aa3b357508bd37b7b9727e99c9c8ccbee481bca3fc99b84b517cb3297d907f9"
+        },
+        {
+            "path": "data/library/content/characters/writing-units-040.json",
+            "sha256": "eb60fa55eb1ede59396ba27abd06d76af9e9b659d9843fbe194a2faf34642713"
+        },
+        {
+            "path": "data/library/content/characters/writing-units-041.json",
+            "sha256": "a907ce65e09a3070c7347fb7148ee01607e16c3232d781598313bd208741d278"
+        },
+        {
+            "path": "data/library/content/characters/writing-units-042.json",
+            "sha256": "342e917fb1a215db27e21be1fc97164680a61ea5ff4ad6d424a40dc3f86b481a"
+        },
+        {
+            "path": "data/library/content/characters/writing-units-043.json",
+            "sha256": "dd39f39d1a734d7ccea360a68a0c58a44f76890159434ce798f361720b44a98e"
+        },
+        {
+            "path": "data/library/content/characters/writing-units-044.json",
+            "sha256": "2ec4e942b932392273004bcb3d2fefad8662f89b3b4720f68ba8828c831809c5"
+        },
+        {
+            "path": "data/library/content/characters/writing-units-045.json",
+            "sha256": "2ca59f98f9b48710ed3d66887d810c8e2eb8c31077d43f73309891ab122ceec0"
+        },
+        {
+            "path": "data/library/content/characters/writing-units-046.json",
+            "sha256": "6c53e02fdc5f5a22097eb35846adfd8108b469f9f9124151fdead3baa193b214"
+        },
+        {
+            "path": "data/library/content/characters/writing-units-047.json",
+            "sha256": "484f88c6ea71399ea85f0067301e1c23112473f726fc30343fe6f96842afabeb"
+        },
+        {
+            "path": "data/library/content/characters/writing-units-048.json",
+            "sha256": "78de1955737e17679215d4ede8619d840551e1241d5cc69288f26e6244bd362c"
+        },
+        {
+            "path": "data/library/content/characters/writing-units-049.json",
+            "sha256": "8d242efd4d1642aa7f82f2cdf464fdcf025bb7fcb96d2ae78fb4de3f3f3518cc"
+        },
+        {
+            "path": "data/library/content/characters/writing-units-050.json",
+            "sha256": "23a6b0adc46995fd0cd54b96b798212ef4ea010b19e56da8dbe2841435e60e85"
+        },
+        {
+            "path": "data/library/content/characters/writing-units-051.json",
+            "sha256": "a65eb426a8413de5b9020cb92007dbcd690125695fcd6d17aa05ffa08aeba72c"
+        },
+        {
+            "path": "data/library/content/characters/writing-units-052.json",
+            "sha256": "a69be57c782bef033b3bb1e7e7ef24f094b33d4f785ce01f81069dfcfd8a4db7"
+        },
+        {
+            "path": "data/library/content/characters/writing-units-053.json",
+            "sha256": "62e2ce9a2edafe86f095b121c4ceba3eea31504e548c05fe4aa58c798934797c"
+        },
+        {
+            "path": "data/library/content/characters/writing-units-054.json",
+            "sha256": "a372f7437f651fcf098a069591f7c8d8f938a630023bc00bc1e9354cf3612318"
+        },
+        {
+            "path": "data/library/content/characters/writing-units-055.json",
+            "sha256": "98638237162bba1e9d778b3a49c0969dae3b1c3c37473e010b3af61f0fdea493"
+        },
+        {
+            "path": "data/library/content/characters/writing-units-056.json",
+            "sha256": "dd39beccd11b22fccd6552f0073fcf74205795eb5efe83658b1d08112610a4c1"
+        },
+        {
+            "path": "data/library/content/characters/writing-units-057.json",
+            "sha256": "1d1220dc9267a00bab70e5c0a4c5616e39c9354c4a329cdb7a712a064021b0f9"
+        },
+        {
+            "path": "data/library/content/characters/writing-units-058.json",
+            "sha256": "ebd8593a174e5aa88664d8bd480376b85640d2aacb40b696cf0a9e09064c5e77"
+        },
+        {
+            "path": "data/library/content/characters/writing-units-059.json",
+            "sha256": "2eb431128057cfbc714b7bebc121494532737a7c487c768a02cd8ece01a2434b"
+        },
+        {
+            "path": "data/library/content/characters/writing-units-060.json",
+            "sha256": "a8268c94be9737ed6007d9a795a4c10ca1fea3e5ca9e0afb6c21e5c63dc6500d"
+        },
+        {
+            "path": "data/library/content/characters/writing-units-061.json",
+            "sha256": "5bcd19f494e610fc1059e488f8057a2eae90c9835d9c9561963b0afaa4582418"
+        },
+        {
+            "path": "data/library/content/characters/writing-units-062.json",
+            "sha256": "0afd24db5ea6092085800befae3e55665ec6db807f271a70d158e3954f2bbcb5"
+        },
+        {
+            "path": "data/library/content/characters/writing-units-063.json",
+            "sha256": "6f8b2cc780d57c60ae13d8085572591d6743f0ea3408adbdb00c79d5df518452"
+        },
+        {
+            "path": "data/library/content/characters/writing-units-064.json",
+            "sha256": "9fb01d39cf4e6358b0a8105e84278c73214d6bcdbc907caab81efdd5cbd670da"
+        },
+        {
+            "path": "data/library/content/characters/writing-units-065.json",
+            "sha256": "41be2adf6b467a63f9e246091be2bbbbe15ffbf33a7a9e1350f15188872e29b1"
+        },
+        {
+            "path": "data/library/content/characters/writing-units-066.json",
+            "sha256": "bdbd234e9e417805f1e0dd8e31009225e8ac367f3607c3af3df03f41ef21240a"
+        },
+        {
+            "path": "data/library/content/characters/writing-units-067.json",
+            "sha256": "ecfe9a733120af7a2aad6d5a78469af60883082cb89c28c630e051476c62f449"
+        },
+        {
+            "path": "data/library/content/characters/writing-units-068.json",
+            "sha256": "7cb3db2ff5f10662cf78ba5363de0961d74985e1f094593c3b09df39449e0e88"
+        },
+        {
+            "path": "data/library/content/characters/writing-units-069.json",
+            "sha256": "59aeabb790c8be07f5893c4fc0fa09ab60f860be28393fd429a1e2a3bc91f2a3"
+        },
+        {
+            "path": "data/library/content/characters/writing-units-070.json",
+            "sha256": "89bd2d0a65413b18c78ce9ccd8989075fd102ebb792e7467d9fa23527ace383f"
+        },
+        {
+            "path": "data/library/content/characters/writing-units-071.json",
+            "sha256": "10d96fd63a872be218abf653bb2511eb079fda249e7ac06ccef868ff04fd6d3f"
+        },
+        {
+            "path": "data/library/content/characters/writing-units-072.json",
+            "sha256": "fccf3fbf6d1fe63e4c5f00ed5f4b94d605499dacf71189b5fa5afded2a434536"
+        },
+        {
+            "path": "data/library/content/characters/writing-units-073.json",
+            "sha256": "ffdccdc347e05f8bb14b40377ba5586a45b3fc35e0312186ca0cf203899aec06"
+        },
+        {
+            "path": "data/library/content/characters/writing-units-074.json",
+            "sha256": "ddf1c07119fcef28591552ad103551e28dd0a5e40e07f23d2bf75c4ba10175f9"
+        },
+        {
+            "path": "data/library/content/characters/writing-units-075.json",
+            "sha256": "88aa85550e4693e20e5421af6fd8b6b7cfbfd85b4f014f3ca2108909072a5472"
+        },
+        {
+            "path": "data/library/content/characters/writing-units-076.json",
+            "sha256": "e1bf2422c9b7466b512d4c5ca935426e8bf432cb50e5b5597183f2632f5c6c31"
+        },
+        {
+            "path": "data/library/content/characters/writing-units-077.json",
+            "sha256": "dbc2cbddd4f9e291938f6c56d0b70292d43d892724d588f6635d623f6596184d"
+        },
+        {
+            "path": "data/library/content/characters/writing-units-078.json",
+            "sha256": "b2cac2d5a5fd9806ce8a5d915cff24a4fae59c988ef3f8980e50bf0fa6db9200"
+        },
+        {
+            "path": "data/library/content/characters/writing-units-079.json",
+            "sha256": "9900bd1d7e4b5eb776c800456270c902d3501f981824db83c964f8701abf38d7"
+        },
+        {
+            "path": "data/library/content/characters/writing-units-080.json",
+            "sha256": "03d2363e3efc9362b2376d278e2ce77c93e9efbcb5612ad9728d15cebedca121"
+        },
+        {
+            "path": "data/library/content/characters/writing-units-081.json",
+            "sha256": "8049542a9b411e4be2057316b0242a8a57ccf32dd4a091f87869c6b0b94eacf0"
+        },
+        {
+            "path": "data/library/content/characters/writing-units-082.json",
+            "sha256": "490de5a4681455b40a2376fc8b7f3fc38b2d063e5b6fde8e47ba03fb4b331156"
+        },
+        {
+            "path": "data/library/content/characters/writing-units-083.json",
+            "sha256": "7bb5468fd1b58ef5e92b40cc12691a437d8cfb01c68bcec0d6a0e954b870cd4d"
+        },
+        {
+            "path": "data/library/content/characters/writing-units-084.json",
+            "sha256": "6d03646eccb65aa719e129f2fdcf9c64cfe5f59f522688f0b02c8381a299aa48"
+        },
+        {
+            "path": "data/library/content/characters/writing-units-085.json",
+            "sha256": "1580ff80cfb7f74add13fa6740c05e26ae8dcfd8513e9322075e9c6ff388f5cf"
+        },
+        {
+            "path": "data/library/content/characters/writing-units-086.json",
+            "sha256": "96cef7e8cd105b87148637522fa5ee10a5bb1a47077a6e3c363f434374c27098"
+        },
+        {
+            "path": "data/library/content/characters/writing-units-087.json",
+            "sha256": "847e4065ec8a51f189bca46c47da0bbd83be87f6fea7c2c98cbd236ccba77337"
+        },
+        {
+            "path": "data/library/content/definitions/common.json",
+            "sha256": "e7e23405e3c447df05da4210a64282689176bf26a6431517ee691e378c3d5941"
+        },
+        {
+            "path": "data/library/content/definitions/content-batch-001.json",
+            "sha256": "22f60cb1848c5157cd4aa9880a98a1d26f0f959a618c6ee41efd465f3f1f1022"
+        },
+        {
+            "path": "data/library/content/definitions/core-kanji.json",
+            "sha256": "79be038f11f9552bbfe83cc1f7225810f0a72e3427160f7a7b1008873feb1150"
+        },
+        {
+            "path": "data/library/content/definitions/expanded.json",
+            "sha256": "83e63b7ba1a8abc38a61d10752ee7d070c922f58cc8af2c8c047d0e50ee74a6c"
+        },
+        {
+            "path": "data/library/content/definitions/particles-expanded.json",
+            "sha256": "d86424c9588357271599a4ce0a2c117eb3f7e47a3017e7eb63282645aa328e3b"
+        },
+        {
+            "path": "data/library/content/definitions/sentence-structure.json",
+            "sha256": "84936ef561d634ba35b6165669bb5061c510f8e6a1e469efef49a52e169b3efd"
+        },
+        {
+            "path": "data/library/content/definitions/sentences-expanded.json",
+            "sha256": "abcfb5801eacd97569f492d311cc3690618ce7ad4d59ac782548acec374fe34f"
+        },
+        {
+            "path": "data/library/content/particles/common.json",
+            "sha256": "2be928cb134872fb504f3280d6c137ef3282b3149ff34fe36170fe16d5ec8190"
+        },
+        {
+            "path": "data/library/content/particles/expanded.json",
+            "sha256": "661686882860e896830b35a901960f1e6d247fee2d07e1af0292ab9542ea634c"
+        },
+        {
+            "path": "data/library/content/sentences/common.json",
+            "sha256": "9644364ac6d09ffaff497d7b67a8a9aba4a6a33e92dfcd17df1ae72629d9dc7f"
+        },
+        {
+            "path": "data/library/content/sentences/content-batch-001.json",
+            "sha256": "0901d33ebcc5be09afcab6107b83bc41753acbe99c344d034475fe6ce9354b92"
+        },
+        {
+            "path": "data/library/content/sentences/expanded.json",
+            "sha256": "48f7bf40b1b37c1378d080d96ce810746fc17623df2cb39d79330e4698732c2c"
+        },
+        {
+            "path": "data/library/content/sentences/reviewed-batch.json",
+            "sha256": "868e0a0036ba2ea4f9b2ac7c7c133f6cacb0a8b3dcef83d007e82d8ea3603a39"
+        },
+        {
+            "path": "data/library/content/sentences/sentence-structure.json",
+            "sha256": "afcba2f10fcabb479e8d6b36035f03d7ecea00abf305be41f5f2ae289889e3c7"
+        },
+        {
+            "path": "data/library/content/words/content-batch-001.json",
+            "sha256": "9fe29f65912f59c8ff2e6bae9eb3f38cbfb0247574979a19dae12de0ba4ef5ba"
+        },
+        {
+            "path": "data/library/content/words/kanji-readings-001.json",
+            "sha256": "08f3f844aec17ee12328befeef3b3ac2fcadca922807c2794e4603d02f32a619"
+        },
+        {
+            "path": "data/library/content/words/kanji-readings-002.json",
+            "sha256": "b1d48db81e0fcbfbde5609b22d2d8fe19fbb05078f1f72c808add869a6ca4691"
+        },
+        {
+            "path": "data/library/content/words/kanji-readings-003.json",
+            "sha256": "958a56d608f2db73ebb4e1da6c52f3e6be95fb74b6477f187bab2ba7ef09c98f"
+        },
+        {
+            "path": "data/library/content/words/kanji-readings-004.json",
+            "sha256": "326e422075c0039df1238c6e64cf47e304e633845b292ef2f66e7f85a90f8000"
+        },
+        {
+            "path": "data/library/content/words/kanji-readings-005.json",
+            "sha256": "621f53e829591eaa2d143af01b8871cb96e46f5669e836118e36685e885fac4e"
+        },
+        {
+            "path": "data/library/content/words/kanji-readings-006.json",
+            "sha256": "564f72b29089f1e5611522bd89e9dce4710ccbc5452af5bea38ee704f7c197d2"
+        },
+        {
+            "path": "data/library/content/words/kanji-readings-007.json",
+            "sha256": "2f309bce243a7c4b17256bf0c3c8598f93823d7ee0b5de06d174c8131b053e95"
+        },
+        {
+            "path": "data/library/content/words/sentence-structure.json",
+            "sha256": "47fd557781dca4747ba1a187d4bf624920b600b56b7198f6f82fffb0b8a83526"
+        },
+        {
+            "path": "data/library/content/words/vocabulary-001.json",
+            "sha256": "fa59b0185be6d04da5405eab14f63c6038bbf42c5ebdca26dbdfa5ae0a29dfa3"
+        },
+        {
+            "path": "data/library/content/words/vocabulary-002.json",
+            "sha256": "0e4a87b9647a6d187690088b50d4169893f4aed35ac59f50bbc78da6cdb304fd"
+        },
+        {
+            "path": "data/library/manifest.json",
+            "sha256": "1e16cd1501f93f44de9638fe3eeb1a7db3762ca7cde95f88778cee55f31a0069"
+        },
+        {
+            "path": "data/library/schema.json",
+            "sha256": "ffc550bcb52ea62f50ebdc3aa13f621c8b8f8ba2b585c2b83d27f5f4da4d2292"
         },
         {
             "path": "docs/standard.de.md",
-            "sha256": "1fc3e99e578b7f276ca0fabbd881128743d11291468f36b8983411d2d458d32a"
+            "sha256": "41c583ecaa354ab5edcfc6d9a2fb2dfe1d9980692e938e66b977b973663f1b1a"
         },
         {
             "path": "docs/standard.en.md",
-            "sha256": "bb464bf0f45f7f97e52e183f66c2a18aa047e955914a3f076972f9eb6552c355"
+            "sha256": "0161132a9e5c300605e471f2088f597ee1fdcf625e4f0b8a5906b79c37bd4aad"
         },
         {
             "path": "docs/standard.id.md",
-            "sha256": "a58585d2dbe5c064e01287ce8017f7bdd231faa620aa8c2b11871164763f696e"
+            "sha256": "fdc316ebc11a2944a46e5791eb2d739d2c2b154fba8798b66cabcaaba7d332b0"
         },
         {
             "path": "docs/standard.ja.md",
-            "sha256": "92c0d142caba0ff6582a2b654a5bb09b9a27194fc8544231b1ae7cd7faacd3a4"
+            "sha256": "6bf7351a105e85dcc6a65c7de986e17e5bfdad13647dfbb52e1abf7410959e35"
         },
         {
             "path": "package-lock.json",
-            "sha256": "1909c81a1f43853760a5f3ff4b14e258015c83218d4f558244332a5ea14d3474"
+            "sha256": "4388bf3349c1aa13813f768b4e318920c4ca610fa7b6f7b9ca7eaaca687f2f77"
         },
         {
             "path": "package.json",
-            "sha256": "644f95fd26ec017dbd95a129c28dbdb050b461b7924c00cfcc89e951c2a3b055"
+            "sha256": "6c4afd45f93301afa0e86175d01a2596a598ef4ffa1de93747c80e63fe0b578c"
         },
         {
             "path": "routes.json",
-            "sha256": "69dbcf72c939a346c5404af62f42ae27489fcfd53ca1f0e825926346cd05967a"
+            "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
         },
         {
             "path": "scripts/update-manifest-hashes.js",
             "sha256": "ec94cbcb2ad40b365ffbec69a3089a133aa10718868f7a3e0f373edd53e76d9f"
         },
         {
+            "path": "scripts/update-stroke-patterns.js",
+            "sha256": "3f1ce096a5dab7dc15540d4de3e0c11221cfd64600636fef3655a7867c86d990"
+        },
+        {
             "path": "scripts/validate-manifest.js",
             "sha256": "347a38a420ec32af120076a46c83ef45476585f030866e12bd7e17e6f56e6954"
+        },
+        {
+            "path": "tests/ambiguous-names.test.js",
+            "sha256": "1b3aa3af53354c2e29fd8296b71f7a872d5c11aa674840eb0d9763780f6e24a2"
+        },
+        {
+            "path": "tests/bootstrap.test.js",
+            "sha256": "6f1f351b66b9508428136b63562df68dfed6dc288818cc1471b4e71da4442a78"
+        },
+        {
+            "path": "tests/card-display-contract.test.js",
+            "sha256": "6fd68dcb218e6b97f6970aa15c34e3affbea9143ec58eba09a2f8962f3e89cb9"
+        },
+        {
+            "path": "tests/content-batch.test.js",
+            "sha256": "070cebe77a879f3a49a766862e34af0cf2536c4e5444a872bade946da29d9b56"
+        },
+        {
+            "path": "tests/content-pack.test.js",
+            "sha256": "b972925edc307f69c9c996c2c03e28a61f5c092ecc5272558d508aabad3725aa"
+        },
+        {
+            "path": "tests/dataset-expansion.test.js",
+            "sha256": "8df9c05632cb54cf72ede5a86e88eee09b97fae845586ac8406b1bfa8dde95d0"
+        },
+        {
+            "path": "tests/documentation-convention.test.js",
+            "sha256": "6eaff6565fb451468101487011fffa459f5cb0b17b1d5a65d756a2413cb01552"
+        },
+        {
+            "path": "tests/jisho-lookup-provider.test.js",
+            "sha256": "56f9e4410f2df21fd1119248c6e65d46fa7bd5d89a335d03a086041ab4861aee"
+        },
+        {
+            "path": "tests/kanji-identity.test.js",
+            "sha256": "2543011ad9ca20d6abb957dc9041dc035393c5ee713cf049d5681a2a4aeac563"
+        },
+        {
+            "path": "tests/kanji-pronunciation-coverage.test.js",
+            "sha256": "b837705e856098026b68f5f900541d6cd47c0a1d30524255ff3483422d07ac13"
+        },
+        {
+            "path": "tests/layer-linkage.test.js",
+            "sha256": "0ba66d95a9c5bf96c917bbae7cfcbab71e7c2a57cca10299223dba9ed8645fdd"
+        },
+        {
+            "path": "tests/localization-quality.test.js",
+            "sha256": "da76cebbba5a1e92e014ca87fe123264d49b4a65d925ef6741dccc89fa71cbc2"
+        },
+        {
+            "path": "tests/relationship-authoring.test.js",
+            "sha256": "5912d943715ceedd03674447d4dc5ea9c44aefbff8f54f77a4388180a725b0d9"
+        },
+        {
+            "path": "tests/sentence-composer-contract.test.js",
+            "sha256": "15fe6616bc6a0522f6b68c83f19ab6aecaba1939bdb8791e13d57f33771151b3"
+        },
+        {
+            "path": "tests/stroke-pattern-provider.test.js",
+            "sha256": "131e9cedefb48e61fbcada755faa365fb9c84593c95c6698de8be2cbc13a3848"
+        },
+        {
+            "path": "tests/stroke-pattern.test.js",
+            "sha256": "aaef601ec7d546018593f0838b50dccc724fd70769c2bd47b24eb2f7e257b5cc"
+        },
+        {
+            "path": "tests/structural-compliance.test.js",
+            "sha256": "5a5028adebd0dfa983f4765af50b87ef7fc370570aa1a15e40bfd90a128d557f"
+        },
+        {
+            "path": "tests/svg-path-sampler.test.js",
+            "sha256": "94b3659ceea07d67bcaea6d974ec7ad9f92dc0f43482d4727e2b984ea6285559"
+        },
+        {
+            "path": "tests/uninstall.test.js",
+            "sha256": "291371772260dea80397ab8f153dba981f2593b0810d402cdc96dbfa157ef9ba"
+        },
+        {
+            "path": "tests/word-transformations.test.js",
+            "sha256": "49d54970413a4a4aa9c7c4190046f47297cde1b7317f2d0382d11d32c938b6bf"
         },
         {
             "path": "tooling/scripts/lint-placeholder.mjs",
@@ -215,64 +794,25 @@
             "sha256": "fff2e006b2709345baafe18b4147c00541cd3f83d78ff113bb82032f2abcb45f"
         },
         {
-            "path": "ui/components/classroom/ui/app.js",
-            "sha256": "f3ff81e7d17e0993f31c745336ee161d52cc61677a19cc08af696bf20a59bb44"
-        },
-        {
-            "path": "ui/components/classroom/ui/index.html",
-            "sha256": "3129415f038bbd879e4c7fe16fdf4fadf81ae90f561c2136ead7796cb6f58069"
-        },
-        {
-            "path": "ui/components/hiragana-alphabet/ui/app.js",
-            "sha256": "d6f5d3ac4916867418ad0cd0f352afc70638f2f5ad0b4a2c8a6cf340b609fbbc"
-        },
-        {
-            "path": "ui/components/hiragana-alphabet/ui/hiragana.css",
-            "sha256": "bcbc26ee76f6e88b8806d45ebb805bec7ecc6104d2109c9255c888eea7df18bd"
-        },
-        {
-            "path": "ui/components/hiragana-alphabet/ui/index.html",
-            "sha256": "44c972bdcd7c8c7fae6618a0ca0ee8dbeb4ba6aeefabeb799f588294c51447db"
-        },
-        {
-            "path": "ui/components/library/ui/app.js",
-            "sha256": "9e7e123726b0c80ac589859fa38316ed000314c65e890da68608f8fc86f47ec6"
-        },
-        {
-            "path": "ui/components/library/ui/index.html",
-            "sha256": "b8d4be43e6ca1b8d4e4ac2d0e2bdd1fbe2b0868764eca60a29b1b5a663d8e448"
-        },
-        {
             "path": "ui/index.html",
             "sha256": "941b0bc6b60725c374d1517d65f6aa21aecfd49b8e518a256309d238219389ee"
         },
         {
             "path": "ui/languages/de/strings.xml",
-            "sha256": "54104b098a3cf5f48d8bff77c75435912522498731a8ee278a5eee4a5949839e"
+            "sha256": "cdc2cb78d1dcfdb020dd70b74e280e5f29419a92456e1812ce6f84c6c334fe6a"
         },
         {
             "path": "ui/languages/en/strings.xml",
-            "sha256": "d193bfa17f2326262fd706eeff5dee642ccd4591dccfe0b3f7edb8ddea659bc5"
+            "sha256": "b7416c27fe9c40ac89d409ad89684a3b5aa1c84203a2b3275de77ab00a0e8560"
         },
         {
             "path": "ui/languages/id/strings.xml",
-            "sha256": "b3609d8a318ed4490a21ed1b3666d90dca239d39c7ff3f2b55eab0266eec9f12"
+            "sha256": "5907eaaa35224b534639adf2904ca3ff2f381c0fdfad05ad6b5831002cd47b56"
         },
         {
             "path": "ui/languages/ja/strings.xml",
-            "sha256": "b04026acbd238386fd95cc0adc7b800d94287b397fa18b1a9dc64b2e8a961f4c"
-        },
-        {
-            "path": "ui/navbar.js",
-            "sha256": "9f145538698087356f69a01dbf50581f38211a4c8d17232fa2c7a5e658f7ec58"
-        },
-        {
-            "path": "ui/tests/ambiguous-names.test.js",
-            "sha256": "4f490771c3678dcc716b25f4465fb39c9eab476774897cc030c9ec690d2761eb"
-        },
-        {
-            "path": "ui/tests/localization-quality.test.js",
-            "sha256": "4103e82d0b70f55af675ecc2513cffc5e0e8b65d3d629ca80b9609a44d02db45"
+            "sha256": "1c1ab82c9701e51ff40b6b8b6beedf6b8f431336598c42310170509ae9e57859"
         }
-    ]
+    ],
+    "privileged": true
 }
