@@ -741,3 +741,19 @@ The module advances to `2.2.79`, content revision `2026-10-02.1`, and Japanese s
 ## Commits
 
 - [244e048](../../commit/244e048) — Expose sentence structure composer entries.
+
+## Expanded Sentence Connectors
+
+The Sentence Structure carousel now includes `それでも`, `ですが`, `だけど`, `しかし`, `そして`, `それから`, `だから`, `なので`, and plain `だ`. Every new visible lexical card has a localized meaning, an exact atomic-Kana reading path, an appropriate proficiency level, and a reviewed authored sentence.
+
+## Copula Transformation Tree
+
+Vocabulary now publishes a dedicated Copulas transformation view. The sole stored plain base `だ` derives `だった`, `ではない`, `ではなかった`, and connective `で`; polite `です` remains an independently authored sentence-structure word rather than a duplicated generated card.
+
+## Version Synchronization
+
+The module advances to `2.2.80`, content revision `2026-10-02.2`, and Japanese schema revision `84`, with regenerated package hashes.
+
+## Commits
+
+- [b33c94a](../../commit/b33c94a) — Expand sentence connectors and copula forms.

@@ -248,3 +248,7 @@ Kanji-Erstellung und native Suche verwenden das NFKC-normalisierte Kanji-Zeichen
 ### Composer für Satzstrukturen
 
 Der Satzkarten-Konstruktor veröffentlicht nun getrennte anbietereigene Karussells für gewöhnliche Wörter, Partikeln, markierten Satzstruktur-Wortschatz und wiederverwendbare japanische Satzzeichen. Die sichtbare Kopula `です` trägt `sentence-structure`; sie bleibt damit bedeutungsvoller Wortschatz und erscheint zugleich in der mit Cognis Library 2.24.9 eingeführten Satzbau-Steuerung.
+
+### Erweiterte Konnektoren und Kopula
+
+Das Satzstruktur-Karussell enthält nun `それでも`, `ですが`, `だけど`, `しかし`, `そして`, `それから`, `だから`, `なので` und das einfache `だ`, jeweils mit Ausspracheverknüpfungen zu atomaren Kana, lokalisierter Bedeutung und einem geprüften Beispielsatz. Eine eigene Transformationsansicht für Kopulas erweitert die Grundform `だ` zu `だった`, `ではない`, `ではなかった` und der Verbindungsform `で`, ohne diese erzeugten Formen als Vokabelkarten zu speichern; das sichtbare höfliche `です` bleibt ein eigenständig verfasstes Satzstrukturwort.

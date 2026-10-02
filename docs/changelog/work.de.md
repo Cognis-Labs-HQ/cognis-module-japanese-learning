@@ -741,3 +741,19 @@ Das Modul wird auf `2.2.79`, die Inhaltsrevision auf `2026-10-02.1` und das japa
 ## Commits
 
 - [244e048](../../commit/244e048) — Satzstruktur-Einträge im Composer bereitstellen.
+
+## Erweiterte Satzkonnektoren
+
+Das Satzstruktur-Karussell enthält nun `それでも`, `ですが`, `だけど`, `しかし`, `そして`, `それから`, `だから`, `なので` und das einfache `だ`. Jede neue sichtbare lexikalische Karte besitzt eine lokalisierte Bedeutung, einen exakten Lesepfad über atomare Kana, eine passende Kompetenzstufe und einen geprüften verfassten Satz.
+
+## Transformationsbaum für Kopulas
+
+Der Wortschatz veröffentlicht nun eine eigene Transformationsansicht für Kopulas. Die einzige gespeicherte einfache Grundform `だ` leitet `だった`, `ではない`, `ではなかった` und die Verbindungsform `で` ab; das höfliche `です` bleibt ein eigenständig verfasstes Satzstrukturwort und keine duplizierte erzeugte Karte.
+
+## Versionsabgleich
+
+Das Modul wird auf `2.2.80`, die Inhaltsrevision auf `2026-10-02.2` und das japanische Schema auf Revision `84` angehoben; die Pakethashes wurden neu erzeugt.
+
+## Commits
+
+- [b33c94a](../../commit/b33c94a) — Satzkonnektoren und Kopulaformen erweitern.

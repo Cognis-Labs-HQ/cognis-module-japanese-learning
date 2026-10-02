@@ -741,3 +741,19 @@ Modul dinaikkan ke `2.2.79`, revisi konten `2026-10-02.1`, dan revisi skema Jepa
 ## Commit
 
 - [244e048](../../commit/244e048) — Menampilkan entri struktur kalimat pada composer.
+
+## Perluasan Penghubung Kalimat
+
+Carousel Struktur Kalimat kini mencakup `それでも`, `ですが`, `だけど`, `しかし`, `そして`, `それから`, `だから`, `なので`, dan bentuk biasa `だ`. Setiap kartu leksikal terlihat yang baru memiliki makna terlokalisasi, jalur bacaan Kana atomik yang tepat, tingkat kemahiran yang sesuai, dan kalimat tersusun yang telah ditinjau.
+
+## Pohon Transformasi Kopula
+
+Kosakata kini menerbitkan tampilan transformasi Kopula khusus. Satu-satunya bentuk dasar biasa yang disimpan, `だ`, menurunkan `だった`, `ではない`, `ではなかった`, dan bentuk penghubung `で`; bentuk sopan `です` tetap menjadi kata struktur kalimat yang ditulis tersendiri, bukan kartu hasil yang diduplikasi.
+
+## Sinkronisasi Versi
+
+Modul dinaikkan ke `2.2.80`, revisi konten `2026-10-02.2`, dan revisi skema Jepang `84`, dengan hash paket yang dibuat ulang.
+
+## Commit
+
+- [b33c94a](../../commit/b33c94a) — Memperluas penghubung kalimat dan bentuk kopula.

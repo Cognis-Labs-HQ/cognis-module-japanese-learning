@@ -248,3 +248,7 @@ Kanji creation and native lookup use the NFKC-normalized Kanji label as the card
 ### Sentence Structure Composer
 
 The sentence card constructor now publishes separate provider-owned carousels for ordinary words, particles, tagged sentence-structure vocabulary, and repeatable Japanese punctuation. The visible copula `です` carries `sentence-structure`, so it remains meaningful Vocabulary while appearing in the dedicated sentence-building control introduced by Cognis Library 2.24.9.
+
+### Expanded Connectors and Copula
+
+The Sentence Structure carousel now includes `それでも`, `ですが`, `だけど`, `しかし`, `そして`, `それから`, `だから`, `なので`, and plain `だ`, each with atomic-Kana pronunciation links, localized meaning, and a reviewed example sentence. A dedicated Copulas transformation view expands base `だ` into `だった`, `ではない`, `ではなかった`, and connective `で` without storing those generated forms as Vocabulary cards; visible polite `です` remains an independently authored sentence-structure word.

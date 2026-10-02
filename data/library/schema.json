@@ -1,6 +1,6 @@
 {
     "id": "japanese-core",
-    "version": 83,
+    "version": 84,
     "namespace": "ja",
     "language": "ja",
     "metadata": {
@@ -806,6 +806,19 @@
                         }
                     },
                     "includeTags": ["adverb"],
+                    "layout": "transformTree"
+                },
+                {
+                    "id": "copulas",
+                    "metadata": {
+                        "labels": {
+                            "de": "Kopulas",
+                            "en": "Copulas",
+                            "id": "Kopula",
+                            "ja": "コピュラ"
+                        }
+                    },
+                    "includeTags": ["copula"],
                     "layout": "transformTree"
                 }
             ]
@@ -8728,6 +8741,169 @@
                         "template": {
                             "labels": {
                                 "de": "{{ definition }} (und dann)",
+                                "en": "{{ definition }} (and then)",
+                                "id": "{{ definition }} (lalu)",
+                                "ja": "{{ definition }}（接続）"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "id": "copula-da",
+            "metadata": {
+                "labels": {
+                    "de": "Kopula だ",
+                    "en": "だ Copula",
+                    "id": "Kopula だ",
+                    "ja": "コピュラ「だ」"
+                }
+            },
+            "matchTags": ["copula"],
+            "baseState": "base",
+            "rules": [
+                {
+                    "id": "past",
+                    "metadata": {
+                        "labels": {
+                            "de": "Vergangenheit",
+                            "en": "Past",
+                            "id": "Lampau",
+                            "ja": "過去形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "past",
+                    "removeSuffix": "だ",
+                    "append": "だった",
+                    "pronunciation": {
+                        "removeSuffix": "だ",
+                        "append": "だった"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "",
+                                "en": "",
+                                "id": "",
+                                "ja": ""
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ definition }} (Vergangenheit)",
+                                "en": "{{ definition }} (past)",
+                                "id": "{{ definition }} (lampau)",
+                                "ja": "{{ definition }}（過去）"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "negative",
+                    "metadata": {
+                        "labels": {
+                            "de": "Verneinung",
+                            "en": "Negative",
+                            "id": "Negatif",
+                            "ja": "否定形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "negative",
+                    "removeSuffix": "だ",
+                    "append": "ではない",
+                    "pronunciation": {
+                        "removeSuffix": "だ",
+                        "append": "ではない"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "",
+                                "en": "",
+                                "id": "",
+                                "ja": ""
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ definition }} (verneint)",
+                                "en": "{{ definition }} (negative)",
+                                "id": "{{ definition }} (negatif)",
+                                "ja": "{{ definition }}（否定）"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "negative-past",
+                    "metadata": {
+                        "labels": {
+                            "de": "Verneinte Vergangenheit",
+                            "en": "Negative Past",
+                            "id": "Lampau Negatif",
+                            "ja": "否定過去形"
+                        }
+                    },
+                    "fromState": "negative",
+                    "toState": "negative-past",
+                    "removeSuffix": "ない",
+                    "append": "なかった",
+                    "pronunciation": {
+                        "removeSuffix": "ない",
+                        "append": "なかった"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "",
+                                "en": "",
+                                "id": "",
+                                "ja": ""
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ definition }} (verneinte Vergangenheit)",
+                                "en": "{{ definition }} (negative past)",
+                                "id": "{{ definition }} (lampau negatif)",
+                                "ja": "{{ definition }}（否定過去）"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "connective",
+                    "metadata": {
+                        "labels": {
+                            "de": "Verbindungsform",
+                            "en": "Connective",
+                            "id": "Penghubung",
+                            "ja": "接続形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "connective",
+                    "removeSuffix": "だ",
+                    "append": "で",
+                    "pronunciation": {
+                        "removeSuffix": "だ",
+                        "append": "で"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "",
+                                "en": "",
+                                "id": "",
+                                "ja": ""
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ definition }} (verbindend)",
                                 "en": "{{ definition }} (and then)",
                                 "id": "{{ definition }} (lalu)",
                                 "ja": "{{ definition }}（接続）"

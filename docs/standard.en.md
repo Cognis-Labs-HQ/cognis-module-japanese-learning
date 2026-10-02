@@ -291,3 +291,7 @@ Normalize Kanji labels with NFKC for lookup and identity comparison. Do not incl
 ## Sentence Structure Vocabulary
 
 Declare sentence composition explicitly through the sentence layer's `cardConstructor`. Keep ordinary word and particle targets in `input_carousels`, place visible structural vocabulary in a `tag_carousels` entry using the `sentence-structure` tag and `words` relationship, and publish Japanese punctuation through a repeatable `literal_carousels` entry. Tag only lexical structure words such as the copula `です`; particles remain particles and ordinary predicates remain ordinary vocabulary.
+
+## Connector and Copula Coverage
+
+The sentence-structure inventory must include reviewed coordinating, contrastive, and consequential connectors rather than only one copula. Every tagged connector remains visible Vocabulary, resolves its complete reading through atomic Kana, carries localized definitions, and is used by an authored sentence. Model `だ` as the sole stored plain copula base and derive its polite, past, and negative branches through a localized `copula` transform set; do not store `だった` or the other generated branches as Vocabulary records.

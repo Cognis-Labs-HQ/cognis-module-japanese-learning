@@ -291,3 +291,7 @@ Normalisasikan label Kanji dengan NFKC untuk pencarian dan perbandingan identita
 ## Kosakata Struktur Kalimat
 
 Deklarasikan komposisi kalimat secara eksplisit melalui `cardConstructor` lapisan kalimat. Pertahankan target kata dan partikel biasa dalam `input_carousels`, tempatkan kosakata struktural terlihat dalam entri `tag_carousels` dengan tag `sentence-structure` dan relasi `words`, serta terbitkan tanda baca Jepang melalui entri `literal_carousels` yang dapat diulang. Tandai hanya kata struktur leksikal seperti kopula `です`; partikel tetap berada di lapisan partikel dan predikat biasa tetap menjadi kosakata biasa.
+
+## Cakupan Penghubung dan Kopula
+
+Inventaris struktur kalimat harus mencakup penghubung koordinatif, kontras, dan konsekuensial yang telah ditinjau, bukan hanya satu kopula. Setiap penghubung bertag tetap menjadi Kosakata terlihat, menyelesaikan bacaan lengkapnya melalui Kana atomik, memiliki definisi terlokalisasi, dan dipakai oleh kalimat yang disusun. Simpan `だ` sebagai satu-satunya bentuk dasar kopula biasa dan turunkan cabang sopan, lampau, serta negatif melalui set transformasi `copula` terlokalisasi; jangan menyimpan `だった` atau cabang hasil lainnya sebagai rekaman Kosakata.

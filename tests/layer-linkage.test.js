@@ -150,7 +150,7 @@ test("visible Kanji vocabulary composes from reading segments and Kana", () => {
             contentClass === "reading:pronunciation",
     );
 
-    assert.equal(vocabulary.length, 46);
+    assert.equal(vocabulary.length, 55);
     assert.ok(vocabulary.every(({ hidden }) => hidden !== true));
     assert.equal(shims.length, 0);
     for (const word of vocabulary) {

@@ -124,7 +124,7 @@ function annotatedDefinitions(baseDefinitions, node, language) {
     );
 }
 
-test("Vocabulary declares separate base verb and adverb transform views", () => {
+test("Vocabulary declares separate verb, adverb, and copula transform views", () => {
     const wordLayer = schema.layers.find(({ id }) => id === "words");
     assert.deepEqual(
         wordLayer.views.map(({ id, includeTags, layout }) => ({
@@ -141,6 +141,11 @@ test("Vocabulary declares separate base verb and adverb transform views", () => 
             {
                 id: "adverbs",
                 includeTags: ["adverb"],
+                layout: "transformTree",
+            },
+            {
+                id: "copulas",
+                includeTags: ["copula"],
                 layout: "transformTree",
             },
         ],
@@ -183,6 +188,31 @@ test("Japanese verb families derive reviewed polite, negative, past, and te form
         const transformed = transformedValues(wordsById.get(id));
         for (const form of forms) assert.ok(transformed.includes(form), id);
     }
+});
+
+test("the plain copula branches into past, negative, and connective forms", () => {
+    const da = words.find(({ id }) => id === "ja:word:da-copula");
+    assert.deepEqual(
+        transformationNodes(da).map(({ state, value, pronunciation }) => ({
+            state,
+            value,
+            pronunciation,
+        })),
+        [
+            { state: "past", value: "だった", pronunciation: "だった" },
+            {
+                state: "negative",
+                value: "ではない",
+                pronunciation: "ではない",
+            },
+            { state: "connective", value: "で", pronunciation: "で" },
+            {
+                state: "negative-past",
+                value: "ではなかった",
+                pronunciation: "ではなかった",
+            },
+        ],
+    );
 });
 
 test("verb transformation trees branch deeply with dynamic readings and definitions", () => {
@@ -359,17 +389,19 @@ test("transform declarations are effective, localized, and unambiguous", () => {
     }
 });
 
-test("content ships only base verbs and adverbs, never generated forms", () => {
+test("content ships only base verbs, adverbs, and copulas, never generated forms", () => {
     const baseEntries = words.filter(
         ({ hidden, tags }) =>
             hidden !== true &&
-            (tags?.includes("verb") || tags?.includes("adverb")),
+            (tags?.includes("verb") ||
+                tags?.includes("adverb") ||
+                tags?.includes("copula")),
     );
     const baseIds = new Set(baseEntries.map(({ id }) => id));
     const generated = new Set(
         baseEntries.flatMap((entry) => transformedValues(entry)),
     );
-    assert.equal(baseIds.size, 12);
+    assert.equal(baseIds.size, 13);
     assert.ok(generated.size > 0);
     assert.deepEqual(
         words

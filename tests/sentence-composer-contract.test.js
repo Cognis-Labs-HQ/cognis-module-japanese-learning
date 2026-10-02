@@ -55,12 +55,23 @@ test("sentence-structure vocabulary is meaningful and used by sentences", () => 
     );
 
     assert.deepEqual(
-        structureWords.map(({ label }) => label),
-        ["です"],
+        structureWords.map(({ label }) => label).sort(),
+        [
+            "そして",
+            "それから",
+            "それでも",
+            "だから",
+            "だけど",
+            "だ",
+            "です",
+            "ですが",
+            "なので",
+            "しかし",
+        ].sort(),
     );
     for (const word of structureWords) {
         assert.equal(word.hidden, undefined);
-        assert.equal(word.class, "lexical:copula");
+        assert.match(word.class, /^lexical:(?:conjunction|copula)$/);
         assert.ok(
             sentences.some(({ references }) =>
                 references.some(

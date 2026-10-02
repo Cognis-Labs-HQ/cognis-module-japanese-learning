@@ -248,3 +248,7 @@ Pembuatan Kanji dan pencarian asli memakai label Kanji yang dinormalisasi NFKC s
 ### Composer Struktur Kalimat
 
 Konstruktor kartu kalimat kini menerbitkan carousel milik penyedia yang terpisah untuk kata biasa, partikel, kosakata struktur kalimat bertag, dan tanda baca Jepang yang dapat diulang. Kopula terlihat `です` memakai tag `sentence-structure`, sehingga tetap menjadi Kosakata bermakna sekaligus muncul pada kontrol penyusunan kalimat khusus yang diperkenalkan Cognis Library 2.24.9.
+
+### Perluasan Penghubung dan Kopula
+
+Carousel Struktur Kalimat kini mencakup `それでも`, `ですが`, `だけど`, `しかし`, `そして`, `それから`, `だから`, `なので`, dan bentuk biasa `だ`, masing-masing dengan tautan pelafalan Kana atomik, makna terlokalisasi, dan contoh kalimat yang ditinjau. Tampilan transformasi Kopula khusus mengembangkan bentuk dasar `だ` menjadi `だった`, `ではない`, `ではなかった`, dan bentuk penghubung `で` tanpa menyimpan bentuk hasil tersebut sebagai kartu Kosakata; bentuk sopan terlihat `です` tetap menjadi kata struktur kalimat yang ditulis tersendiri.

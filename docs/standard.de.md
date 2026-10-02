@@ -291,3 +291,7 @@ Normalisiere Kanji-Zeichen für Suche und Identitätsvergleich mit NFKC. Die Aus
 ## Satzstruktur-Wortschatz
 
 Deklariere die Satzkomposition ausdrücklich im `cardConstructor` der Satzebene. Belasse gewöhnliche Wort- und Partikelziele in `input_carousels`, stelle sichtbaren Strukturwortschatz über einen `tag_carousels`-Eintrag mit dem Tag `sentence-structure` und der Beziehung `words` bereit und veröffentliche japanische Satzzeichen über einen wiederholbaren `literal_carousels`-Eintrag. Markiere nur lexikalische Strukturwörter wie die Kopula `です`; Partikeln bleiben Partikeln und gewöhnliche Prädikate bleiben gewöhnlicher Wortschatz.
+
+## Abdeckung von Konnektoren und Kopula
+
+Das Satzstruktur-Inventar muss geprüfte koordinierende, gegensätzliche und folgernde Konnektoren enthalten und darf nicht auf eine einzige Kopula beschränkt bleiben. Jeder markierte Konnektor bleibt sichtbarer Wortschatz, löst seine vollständige Lesung über atomare Kana auf, besitzt lokalisierte Definitionen und wird in einem verfassten Satz verwendet. Speichere `だ` als einzige einfache Kopula-Grundform und leite höfliche, vergangene und verneinte Zweige über einen lokalisierten `copula`-Transformationssatz ab; `だった` und andere erzeugte Zweige dürfen nicht als Vokabeldatensätze gespeichert werden.
