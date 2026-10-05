@@ -254,3 +254,5 @@ Konstruktor kartu kalimat kini menerbitkan carousel milik penyedia yang terpisah
 Carousel Struktur Kalimat kini mencakup `それでも`, `ですが`, `だけど`, `しかし`, `そして`, `それから`, `だから`, `なので`, dan bentuk biasa `だ`, masing-masing dengan tautan pelafalan Kana atomik, makna terlokalisasi, dan contoh kalimat yang ditinjau. Tampilan transformasi Kopula khusus mengembangkan bentuk dasar `だ` menjadi `だった`, `ではない`, `ではなかった`, dan bentuk penghubung `で` tanpa menyimpan bentuk hasil tersebut sebagai kartu Kosakata; bentuk sopan terlihat `です` tetap menjadi kata struktur kalimat yang ditulis tersendiri.
 
 Transformasi definisi kopula menghilangkan batas pencocokan yang tidak digunakan dan memakai templat terlacakalisasi agar validasi host yang ketat menerima setiap bentuk turunan.
+
+Bidang pelafalan kosakata menggunakan kontrak tautan tunggal `pronunciation-readings`. Setiap kosakata yang terlihat menunjuk ke satu rekaman pelafalan lengkap tersembunyi yang mempertahankan tautan bacaan Kanji dan Kana atomiknya, sehingga seluruh pelafalan yang ditampilkan tetap dapat diklik.

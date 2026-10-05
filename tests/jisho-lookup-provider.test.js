@@ -71,7 +71,7 @@ test("Jisho provider resolves native content before network lookup", async () =>
     assert.deepEqual(suggestion.referenceGroups["pronunciation-readings"], [
         [
             {
-                entryId: "ja:word:kanji-reading-e78cab-01",
+                entryId: "ja:word:complete-pronunciation-neko",
                 relation: "pronunciation-readings",
                 position: 0,
             },

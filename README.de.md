@@ -254,3 +254,5 @@ Der Satzkarten-Konstruktor veröffentlicht nun getrennte anbietereigene Karussel
 Das Satzstruktur-Karussell enthält nun `それでも`, `ですが`, `だけど`, `しかし`, `そして`, `それから`, `だから`, `なので` und das einfache `だ`, jeweils mit Ausspracheverknüpfungen zu atomaren Kana, lokalisierter Bedeutung und einem geprüften Beispielsatz. Eine eigene Transformationsansicht für Kopulas erweitert die Grundform `だ` zu `だった`, `ではない`, `ではなかった` und der Verbindungsform `で`, ohne diese erzeugten Formen als Vokabelkarten zu speichern; das sichtbare höfliche `です` bleibt ein eigenständig verfasstes Satzstrukturwort.
 
 Definitionstransformationen der Kopula lassen ungenutzte Abgrenzungen weg und verwenden lokalisierte Vorlagen, sodass die strenge Host-Validierung alle erzeugten Formen akzeptiert.
+
+Aussprachefelder im Wortschatz verwenden den singulären Linkvertrag `pronunciation-readings`. Jeder sichtbare Wortschatzeintrag verweist auf genau einen verborgenen vollständigen Aussprachedatensatz, der seine internen Kanji-Lese- und atomaren Kana-Links bewahrt, damit die gesamte angezeigte Aussprache anklickbar bleibt.

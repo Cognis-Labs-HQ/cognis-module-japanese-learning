@@ -1,6 +1,6 @@
 {
     "id": "japanese-core",
-    "version": 85,
+    "version": 86,
     "namespace": "ja",
     "language": "ja",
     "metadata": {
@@ -599,11 +599,7 @@
                     },
                     "input": {
                         "control": "tagList",
-                        "linkRelationships": [
-                            "pronunciation-readings",
-                            "reading-kana",
-                            "kana-spelling"
-                        ]
+                        "linkRelationship": "pronunciation-readings"
                     },
                     "multi_value": true
                 },

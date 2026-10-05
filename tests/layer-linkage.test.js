@@ -152,7 +152,7 @@ test("visible Kanji vocabulary composes from reading segments and Kana", () => {
 
     assert.equal(vocabulary.length, 55);
     assert.ok(vocabulary.every(({ hidden }) => hidden !== true));
-    assert.equal(shims.length, 0);
+    assert.equal(shims.length, vocabulary.length);
     for (const word of vocabulary) {
         const structural = (word.references ?? []).filter(({ relation }) =>
             ["reading-kana", "pronunciation-readings"].includes(relation),
@@ -169,6 +169,10 @@ test("visible Kanji vocabulary composes from reading segments and Kana", () => {
     assert.deepEqual(
         derivedPronunciation(recordsById.get("ja:word:suki"), recordsById),
         "すき",
+    );
+    assert.deepEqual(
+        derivedPronunciation(recordsById.get("ja:word:chiisai"), recordsById),
+        "ちいさい",
     );
 });
 
@@ -198,7 +202,7 @@ test("sentences contain only real vocabulary and particles", () => {
     }
 });
 
-test("complete-word Kana pronunciation shims are forbidden", () => {
+test("complete pronunciation records resolve to atomic Kana", () => {
     const records = loadRecords();
     const shims = records.filter(
         ({ class: contentClass, hidden, layer }) =>
@@ -206,28 +210,29 @@ test("complete-word Kana pronunciation shims are forbidden", () => {
             hidden === true &&
             contentClass === "reading:pronunciation",
     );
-    assert.equal(shims.length, 0);
+    assert.equal(shims.length, 55);
+    for (const shim of shims)
+        assert.equal(
+            derivedPronunciation(
+                shim,
+                new Map(records.map((record) => [record.id, record])),
+            ),
+            shim.label,
+            shim.id,
+        );
 });
 
-test("word reading paths never deep-link to an identically labeled word", () => {
+test("visible word reading paths use complete pronunciation wrappers", () => {
     const records = loadRecords();
     const recordsById = new Map(records.map((record) => [record.id, record]));
-    for (const source of records.filter(({ layer }) => layer === "words")) {
-        for (const reference of source.references.filter(({ relation }) =>
-            [
-                "pronunciation-readings",
-                "reading-kana",
-                "kana-spelling",
-            ].includes(relation),
-        )) {
-            const target = recordsById.get(reference.entryId);
-            assert.ok(target, reference.entryId);
-            assert.equal(
-                target.layer === "words" && target.label === source.label,
-                false,
-                `${source.id} must not deep-link to ${target.id}`,
-            );
-        }
+    for (const source of records.filter(
+        ({ layer, hidden }) => layer === "words" && hidden !== true,
+    )) {
+        const group = source.referenceGroups?.["pronunciation-readings"]?.[0];
+        assert.equal(group?.length, 1, source.id);
+        const target = recordsById.get(group[0].entryId);
+        assert.equal(target?.class, "reading:pronunciation", source.id);
+        assert.equal(target?.label, source.fields.pronunciation[0], source.id);
     }
 });
 

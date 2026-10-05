@@ -71,7 +71,10 @@ test("layer semantics reject sentence and particle structures in Vocabulary", ()
     for (const record of vocabulary) {
         assert.notEqual(record.class, "composite", record.id);
         assert.notEqual(record.class, "particle", record.id);
-        if (record.hidden && record.class !== "reading:kanji")
+        if (
+            record.hidden &&
+            !["reading:kanji", "reading:pronunciation"].includes(record.class)
+        )
             assert.ok(
                 !kanaLabels.has(record.label),
                 `${record.id} duplicates Kana`,

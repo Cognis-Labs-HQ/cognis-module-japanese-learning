@@ -54,11 +54,11 @@ test("fields publish provider-owned editor controls", () => {
         );
         for (const field of layer.fields ?? []) {
             assert.ok(field.input?.control, `${layer.id}.${field.id} input`);
-            assert.equal(
-                field.input.linkRelationship,
-                undefined,
-                `${layer.id}.${field.id} must not retain the legacy singular link contract`,
-            );
+            if (field.input.linkRelationship)
+                assert.ok(
+                    relationshipIds.has(field.input.linkRelationship),
+                    `${layer.id}.${field.id}`,
+                );
             for (const relationship of field.input.linkRelationships ?? []) {
                 assert.ok(relationshipIds.has(relationship));
             }
@@ -74,50 +74,47 @@ test("fields publish provider-owned editor controls", () => {
     }
 });
 
-test("vocabulary pronunciation links through Kanji segments and atomic Kana", () => {
+test("vocabulary pronunciation links through complete hidden readings", () => {
     const wordLayer = schema.layers.find(({ id }) => id === "words");
     const pronunciation = wordLayer.fields.find(
         ({ id }) => id === "pronunciation",
     );
-    assert.deepEqual(pronunciation.input.linkRelationships, [
+    assert.equal(
+        pronunciation.input.linkRelationship,
         "pronunciation-readings",
-        "reading-kana",
-        "kana-spelling",
-    ]);
+    );
+    assert.equal(pronunciation.input.linkRelationships, undefined);
     for (const word of words.filter(({ hidden }) => hidden !== true)) {
-        const references = word.references.filter(
-            ({ relation }) => relation !== "definitions",
-        );
-        assert.ok(references.length > 0, word.id);
-        assert.ok(
-            references
-                .filter(({ relation }) => relation !== "spelling")
-                .every(
-                    ({ entryId, relation }) =>
-                        (relation === "reading-kana" &&
-                            recordsById.get(entryId)?.fields.character_class) ||
-                        (relation === "pronunciation-readings" &&
-                            recordsById.get(entryId)?.hidden === true),
-                ),
-            word.id,
-        );
+        const groups = word.referenceGroups?.["pronunciation-readings"];
+        assert.equal(groups?.length, 1, word.id);
+        assert.equal(groups[0].length, 1, word.id);
+        const reading = recordsById.get(groups[0][0].entryId);
+        assert.equal(reading?.class, "reading:pronunciation", word.id);
+        assert.equal(reading?.hidden, true, word.id);
+        assert.equal(reading?.label, word.fields.pronunciation[0], word.id);
     }
     assert.equal(
         labelsFor(recordsById.get("ja:word:nihongo"), [
             "pronunciation-readings",
-            "reading-kana",
         ]),
         "にほんご",
     );
 });
 
-test("whole-word Kana pronunciation shims are not Vocabulary records", () => {
+test("complete pronunciation records preserve internal Kana links", () => {
     assert.ok(words.length > 0);
     const shims = words.filter(
         ({ class: contentClass, hidden }) =>
             hidden === true && contentClass === "reading:pronunciation",
     );
-    assert.equal(shims.length, 0);
+    assert.equal(shims.length, words.filter(({ hidden }) => !hidden).length);
+    assert.ok(
+        shims.every((shim) =>
+            ["pronunciation-readings", "reading-kana", "kana-spelling"].some(
+                (relation) => shim.referenceGroups?.[relation]?.length,
+            ),
+        ),
+    );
     assert.ok(words.every(({ fields }) => fields.pronunciation?.length === 1));
 });
 

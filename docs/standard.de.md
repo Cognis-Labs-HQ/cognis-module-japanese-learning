@@ -297,3 +297,5 @@ Deklariere die Satzkomposition ausdrücklich im `cardConstructor` der Satzebene.
 Das Satzstruktur-Inventar muss geprüfte koordinierende, gegensätzliche und folgernde Konnektoren enthalten und darf nicht auf eine einzige Kopula beschränkt bleiben. Jeder markierte Konnektor bleibt sichtbarer Wortschatz, löst seine vollständige Lesung über atomare Kana auf, besitzt lokalisierte Definitionen und wird in einem verfassten Satz verwendet. Speichere `だ` als einzige einfache Kopula-Grundform und leite höfliche, vergangene und verneinte Zweige über einen lokalisierten `copula`-Transformationssatz ab; `だった` und andere erzeugte Zweige dürfen nicht als Vokabeldatensätze gespeichert werden.
 
 Optionale Transformationsgrenzen müssen bei Nichtgebrauch entfallen; leere lokalisierte Grenzbezeichnungen sind ungültige Provider-Metadaten.
+
+Aussprachefelder sichtbarer Wortschatzeinträge verlinken über `pronunciation-readings` auf genau einen verborgenen vollständigen Aussprachedatensatz; dieser wird intern über die nächsten Kanji-Lesungen und atomaren Kana aufgelöst.

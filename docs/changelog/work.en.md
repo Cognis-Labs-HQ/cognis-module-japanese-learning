@@ -758,8 +758,14 @@ The module advances to `2.2.80`, content revision `2026-10-02.2`, and Japanese s
 
 Copula rules now omit unused optional definition-match boundaries instead of publishing empty localized labels. Their localized templates remain intact, allowing strict Study Library validation to enable and ingest the pack successfully. The module advances to `2.2.81`, content revision `2026-10-02.3`, and schema revision `85`.
 
+## Clickable Vocabulary Pronunciations
+
+Vocabulary pronunciation fields now use the host's singular `pronunciation-readings` contract. Each visible vocabulary card links to one hidden complete-pronunciation record, which preserves its ordered Kanji-reading and atomic-Kana path; pronunciations such as `ちいさい` can therefore be opened from the `小さい` card. The module advances to `2.2.82`, content revision `2026-10-04.1`, and schema revision `86`.
+
 ## Commits
 
 - [b33c94a](../../commit/b33c94a) — Expand sentence connectors and copula forms.
 
 - [7f15934](../../commit/7f15934) — Fix copula transform metadata validation.
+
+- [25c3765](../../commit/25c3765) — Restore vocabulary pronunciation deep links.

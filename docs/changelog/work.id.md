@@ -758,8 +758,14 @@ Modul dinaikkan ke `2.2.80`, revisi konten `2026-10-02.2`, dan revisi skema Jepa
 
 Aturan kopula kini menghilangkan batas pencocokan definisi opsional yang tidak digunakan alih-alih menerbitkan label terlacakalisasi kosong. Templat terlacakalisasinya tetap dipertahankan sehingga validasi Study Library yang ketat dapat mengaktifkan dan mengimpor paket. Modul naik ke `2.2.81`, revisi konten `2026-10-02.3`, dan revisi skema `85`.
 
+## Pelafalan Kosakata yang Dapat Diklik
+
+Bidang pelafalan kosakata kini menggunakan kontrak tunggal host `pronunciation-readings`. Setiap kartu kosakata yang terlihat menautkan satu rekaman pelafalan lengkap tersembunyi yang mempertahankan jalur bacaan Kanji dan Kana atomik secara berurutan; karena itu, pelafalan seperti `ちいさい` dapat dibuka dari kartu `小さい`. Modul naik ke `2.2.82`, revisi konten `2026-10-04.1`, dan revisi skema `86`.
+
 ## Commit
 
 - [b33c94a](../../commit/b33c94a) — Memperluas penghubung kalimat dan bentuk kopula.
 
 - [7f15934](../../commit/7f15934) — Memperbaiki validasi metadata transformasi kopula.
+
+- [25c3765](../../commit/25c3765) — Memulihkan tautan mendalam pelafalan kosakata.
