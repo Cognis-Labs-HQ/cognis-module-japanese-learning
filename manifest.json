@@ -2,7 +2,7 @@
     "id": "study-language-ja",
     "uuid": "e905927f-b133-572a-92ce-2ea8645e5ceb",
     "name": "module.study-language-ja.name",
-    "version": "2.2.83",
+    "version": "2.2.84",
     "class": "extension",
     "coreApiVersion": "v1",
     "capabilities": ["study:language:ja"],
@@ -99,7 +99,7 @@
         },
         {
             "path": "api/jisho-lookup-provider.js",
-            "sha256": "eed07d6225ba6e57b6536b4e4249b1f205203591d3a54fd6a05e0c3e1d173876"
+            "sha256": "a0379e9957356951ab676c641f5a0c548d7c4e76ce1aa6f1eaa0a24da94a71f3"
         },
         {
             "path": "api/stroke-pattern-provider.js",
@@ -119,7 +119,7 @@
         },
         {
             "path": "bootstrap.js",
-            "sha256": "50477cde8d31096f0cf373ef01fbfb0871d4184f2f643f78a1f1850d1ae7cbac"
+            "sha256": "7cf35921398125c76d333970d4c56775b433e68f3a88982b6edfb252f148c787"
         },
         {
             "path": "data/library/content/alt-characters/kanji-001.json",
@@ -663,11 +663,27 @@
         },
         {
             "path": "data/library/manifest.json",
-            "sha256": "ec7a9e5e45ed969768f1ab6c460b8da9b0dd0bb1d6e5dea8c7e4b281a8aaa749"
+            "sha256": "b329aeb8b9a6dc12ef8982b50d175bc0fd8dc304155927de8fe2672d391c7e90"
         },
         {
             "path": "data/library/schema.json",
-            "sha256": "6ad307908839a6d2d9c1db291c39b67d772febaac732da2b9a66a5d2f7e33a2e"
+            "sha256": "6cb4d72714431fc2ea6e6f31f634d0b270a174dd593fd393d45b4030cd0f55f2"
+        },
+        {
+            "path": "docs/jisho.de.md",
+            "sha256": "b41c24cf344040837aa31ad74398ea5dde17161094408c1f2f8906f49cbb9055"
+        },
+        {
+            "path": "docs/jisho.en.md",
+            "sha256": "05f68db781526f6ad8105b287bcba94e51d96771dc9ef5595cd722319ca0ef3b"
+        },
+        {
+            "path": "docs/jisho.id.md",
+            "sha256": "c6ba3a848f6b408b070e2607c1305723840cc3e4cfadb3eaa84ceb9846bc64b7"
+        },
+        {
+            "path": "docs/jisho.ja.md",
+            "sha256": "808d3e9425576e7b9a3ab9938b6949f861290c78048a617b277bcae176ef1899"
         },
         {
             "path": "docs/standard.de.md",
@@ -687,11 +703,11 @@
         },
         {
             "path": "package-lock.json",
-            "sha256": "9549d94f44acde78a5158f0dce7af07e32bef25a9e788465ad6737fcb4d384ab"
+            "sha256": "67fd9c204e5749a9e98196b2a1bcc055a7635473e97911a1a563229bea9ca233"
         },
         {
             "path": "package.json",
-            "sha256": "e27e669d2e9e60069838fc9a465c945b99fb5d7720a5fa2dfd6a73325eaceffe"
+            "sha256": "6f174e35ca735d4524ff44764d320a57a844ad05c63a8be005e7d21a878aa687"
         },
         {
             "path": "routes.json",
@@ -739,7 +755,7 @@
         },
         {
             "path": "tests/jisho-lookup-provider.test.js",
-            "sha256": "ad4411b3743b515a2fbe4bc603d6de4864a8c1f2793d19170b46c258562b3b14"
+            "sha256": "b2714b5c5d2abed51ca357d8db23f59419a28407d1dc8cafc53e43a92844c8b8"
         },
         {
             "path": "tests/jlpt-filter.test.js",

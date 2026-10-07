@@ -1,6 +1,6 @@
 {
     "id": "japanese-core",
-    "version": 87,
+    "version": 88,
     "namespace": "ja",
     "language": "ja",
     "metadata": {
@@ -142,6 +142,22 @@
                     "input": {
                         "control": "text",
                         "immutable": true
+                    }
+                },
+                {
+                    "id": "dictionary_data",
+                    "metadata": {
+                        "labels": {
+                            "en": "Dictionary source data",
+                            "de": "Wörterbuch-Quelldaten",
+                            "id": "Data sumber kamus",
+                            "ja": "辞書の出典データ"
+                        }
+                    },
+                    "type": "string",
+                    "hidden": true,
+                    "input": {
+                        "control": "freeText"
                     }
                 }
             ],
@@ -442,6 +458,22 @@
                         "control": "text",
                         "immutable": true
                     }
+                },
+                {
+                    "id": "dictionary_data",
+                    "metadata": {
+                        "labels": {
+                            "en": "Dictionary source data",
+                            "de": "Wörterbuch-Quelldaten",
+                            "id": "Data sumber kamus",
+                            "ja": "辞書の出典データ"
+                        }
+                    },
+                    "type": "string",
+                    "hidden": true,
+                    "input": {
+                        "control": "freeText"
+                    }
                 }
             ],
             "relationships": [
@@ -681,6 +713,22 @@
                                 }
                             }
                         ]
+                    }
+                },
+                {
+                    "id": "dictionary_data",
+                    "metadata": {
+                        "labels": {
+                            "en": "Dictionary source data",
+                            "de": "Wörterbuch-Quelldaten",
+                            "id": "Data sumber kamus",
+                            "ja": "辞書の出典データ"
+                        }
+                    },
+                    "type": "string",
+                    "hidden": true,
+                    "input": {
+                        "control": "freeText"
                     }
                 }
             ],

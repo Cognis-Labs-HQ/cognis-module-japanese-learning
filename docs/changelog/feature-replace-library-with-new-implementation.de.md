@@ -10,6 +10,14 @@ Der JLPT-Filter beginnt jetzt ohne ausgewählte Stufe und erlaubt wie der option
 
 Schemarevision 87 und Modul-/Inhaltspaketversion 2.2.83 veröffentlichen die geänderte Auswahlregel über den bestehenden Study-Library-Vertrag.
 
+## Vollständige Jisho-Ergebnisse
+
+Der Jisho-Anbieter liefert alle Aussprachen mit geordneten Kana-Gruppen, eine importierbare Definition je Bedeutung, lexikalische Klassifikation, JLPT-/Häufigkeitstags und die Quell-URL. Über die Registrierung bei `study:library:provider` deklariert er die Wörterbuchfähigkeit. Vollständige Quelldatensätze einschließlich Schreibvarianten, Wortarten, Bedeutungsnotizen, Einschränkungen, Dialekten, verwandten Begriffen und Herkunft werden als JSON im optionalen verborgenen Schemafeld `dictionary_data` gespeichert.
+
+Cognis PR #226 ergänzt die allgemeine Ergebnisvorschau, den Definitionsimport und die Aktion für fehlende Übersetzungen. Anbieter liefern echte Quellübersetzungen; Cognis fordert Deutsch, Englisch, Indonesisch und Japanisch über seine optionale Lokalisierungsfähigkeit an. Das Modul erfindet keine Übersetzungen und kopiert Englisch nicht in andere Sprachen. Lokale Inhalte werden weiterhin vor dem Netzwerk geprüft; Klassifikation und Tags bleiben nun erhalten.
+
+Schemarevision 88 und Modul-/Inhaltspaketversion 2.2.84 veröffentlichen das Quelldatenfeld. Alle Bedeutungen können über die Host-Vorschau importiert oder innerhalb des Definitionslimits ausgewählt werden. Das vollständige Originalergebnis bleibt unabhängig von den verknüpften Bedeutungen gespeichert.
+
 ## Commits
 
 - [26eeb3e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/26eeb3e8b152bb7ee22f5bb9dee7ba67f430cbf6)

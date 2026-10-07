@@ -67,6 +67,15 @@ test("Jisho provider resolves native content before network lookup", async () =>
     });
     assert.equal(requests, 0);
     assert.equal(suggestion.label, "猫");
+    assert.ok(
+        suggestion.definitions.some(
+            ({ translations }) =>
+                translations.en &&
+                translations.de &&
+                translations.id &&
+                translations.ja,
+        ),
+    );
     assert.deepEqual(suggestion.fields.pronunciation, ["ねこ"]);
     assert.deepEqual(suggestion.referenceGroups["pronunciation-readings"], [
         [
@@ -106,7 +115,7 @@ test("Jisho provider populates fields, detects links, and caches requests", asyn
     );
     assert.equal(requests[0].options.headers.accept, "application/json");
     assert.equal(first.label, "猫又");
-    assert.equal(first.fields.pronunciation, undefined);
+    assert.deepEqual(first.fields.pronunciation, ["ねこまた"]);
     assert.equal(first.fields.jlpt_level, "N2");
     assert.deepEqual(
         first.references.filter(({ relation }) => relation === "spelling"),
@@ -350,4 +359,47 @@ test("Jisho integration registers through the generic Library provider", async (
     assert.equal(typeof registered.lookup, "function");
     remove();
     assert.equal(removed, true);
+});
+
+test("Jisho retains all senses and raw source data with every reading group", async () => {
+    const payload = jishoResponse();
+    const record = payload.data[0];
+    record.japanese.push({ word: "猫又", reading: "ねこ" });
+    record.is_common = true;
+    record.senses.push({
+        english_definitions: ["cat spirit", "cat demon"],
+        parts_of_speech: ["Noun"],
+        restrictions: ["猫又"],
+        info: ["folklore"],
+        see_also: ["化け猫"],
+        antonyms: [],
+        dialects: ["Kansai"],
+        tags: ["archaic"],
+    });
+    const provider = createJishoLookupProvider({
+        contentRoot,
+        fetchImplementation: async () => ({
+            ok: true,
+            json: async () => payload,
+        }),
+    });
+    const [suggestion] = await provider.lookup({
+        schema,
+        layer: wordLayer,
+        label: "猫又",
+    });
+    assert.deepEqual(suggestion.fields.pronunciation, ["ねこまた", "ねこ"]);
+    assert.equal(suggestion.referenceGroups["reading-kana"].length, 2);
+    assert.deepEqual(
+        suggestion.definitions.map(({ translations }) => translations.en),
+        ["mythical two-tailed cat", "cat spirit; cat demon"],
+    );
+    assert.deepEqual(JSON.parse(suggestion.fields.dictionary_data), record);
+    assert.equal(suggestion.class, "lexical:noun");
+    assert.deepEqual(suggestion.tags, ["jlpt-n2", "common"]);
+    assert.equal(
+        suggestion.sourceUrl,
+        "https://jisho.org/word/%E7%8C%AB%E5%8F%88",
+    );
+    assert.deepEqual(provider.capabilities, ["dictionary"]);
 });

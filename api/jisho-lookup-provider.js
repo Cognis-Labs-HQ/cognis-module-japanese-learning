@@ -82,6 +82,24 @@ function nativeSuggestions(index, layer, label) {
         .map((record) => ({
             provider: PROVIDER_ID,
             label: record.label,
+            class: record.class,
+            tags: structuredClone(record.tags ?? []),
+            definitions: (record.references ?? [])
+                .filter(({ relation }) => relation === "definitions")
+                .map(({ entryId }) =>
+                    index.layers
+                        .get("definitions")
+                        .find(({ id }) => id === entryId),
+                )
+                .filter(Boolean)
+                .map((definition) => ({
+                    translations: structuredClone(
+                        definition.fields?.translations ?? {
+                            en: definition.label,
+                        },
+                    ),
+                    provenance: `cognis-japanese:${definition.id}`,
+                })),
             fields: structuredClone(record.fields ?? {}),
             references: cloneReferences(record.references),
             referenceGroups: cloneReferenceGroups(record.referenceGroups),
@@ -140,15 +158,6 @@ function kanaReferences(index, reading, relation) {
     return references.length === [...reading].length ? references : [];
 }
 
-function wordReferences(index, reading) {
-    return kanaReferences(index, reading, "reading-kana");
-}
-
-function kanjiReferences(index, readings) {
-    if (readings.length !== 1) return [];
-    return kanaReferences(index, readings[0], "single-readings");
-}
-
 function spellingReferences(index, label) {
     return [...label].flatMap((character, position) => {
         if (!KANJI.test(character)) return [];
@@ -198,17 +207,49 @@ function jishoSuggestion(index, layer, label, data) {
             ? "katakana"
             : "hiragana";
     } else if (layer === "alt-characters") {
-        fields.pronunciation = readings.slice(0, 1);
+        fields.pronunciation = readings;
     } else if (layer === "words") {
+        fields.pronunciation = readings;
         const level = jishoLevel(record.jlpt);
         if (level) fields.jlpt_level = level;
     }
-    const pronunciationReferences =
-        layer === "words"
-            ? wordReferences(index, form.reading)
-            : layer === "alt-characters"
-              ? kanjiReferences(index, readings)
-              : [];
+    fields.dictionary_data = JSON.stringify(record);
+    const pronunciationGroups =
+        layer === "characters"
+            ? []
+            : readings
+                  .map((reading) =>
+                      kanaReferences(
+                          index,
+                          reading,
+                          layer === "words"
+                              ? "reading-kana"
+                              : "single-readings",
+                      ),
+                  )
+                  .filter((references) => references.length);
+    const definitions = record.senses
+        .map((sense, position) => ({
+            translations: { en: (sense.english_definitions ?? []).join("; ") },
+            provenance: `jisho:${record.slug || encodeURIComponent(label)}:sense:${position}`,
+        }))
+        .filter(({ translations }) => translations.en.trim());
+    const partsOfSpeech = record.senses.flatMap(
+        (sense) => sense.parts_of_speech ?? [],
+    );
+    const lexicalClass = [
+        "verb",
+        "adjective",
+        "adverb",
+        "pronoun",
+        "counter",
+        "conjunction",
+        "interjection",
+        "noun",
+        "expression",
+    ].find((value) =>
+        partsOfSpeech.some((part) => part.toLowerCase().includes(value)),
+    );
     const references = [];
     if (layer !== "characters")
         references.push(...definitionReferences(index, record));
@@ -219,14 +260,23 @@ function jishoSuggestion(index, layer, label, data) {
         label: canonicalLabel,
         fields,
         references,
-        ...(pronunciationReferences.length
+        ...(layer === "words" && lexicalClass
+            ? { class: `lexical:${lexicalClass}` }
+            : {}),
+        tags: [
+            ...new Set([
+                ...(record.tags ?? []),
+                ...(record.jlpt ?? []),
+                ...(record.is_common ? ["common"] : []),
+            ]),
+        ],
+        definitions: layer === "characters" ? [] : definitions,
+        sourceUrl: `https://jisho.org/word/${encodeURIComponent(record.slug || canonicalLabel)}`,
+        ...(pronunciationGroups.length
             ? {
                   referenceGroups: {
-                      [layer === "words"
-                          ? "reading-kana"
-                          : pronunciationReferences[0].relation]: [
-                          pronunciationReferences,
-                      ],
+                      [layer === "words" ? "reading-kana" : "single-readings"]:
+                          pronunciationGroups,
                   },
               }
             : {}),
@@ -292,6 +342,8 @@ export function createJishoLookupProvider({
     return Object.freeze({
         id: PROVIDER_ID,
         metadata: providerMetadata(),
+        capabilities: ["dictionary"],
+        fields: ["pronunciation", "jlpt_level", "dictionary_data"],
         supports(schema, layer) {
             return (
                 schema?.id === SCHEMA_ID &&
