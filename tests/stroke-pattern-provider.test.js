@@ -20,6 +20,8 @@ const KanjiLayer = {
 test("stroke provider supports Japanese writing-unit layers only", () => {
     const provider = createStrokePatternProvider({ contentRoot });
     assert.equal(provider.id, "study-language-ja:stroke-patterns");
+    assert.deepEqual(provider.capabilities, ["strokePattern"]);
+    assert.deepEqual(provider.fields, ["stroke_pattern"]);
     assert.equal(provider.supports(schema, KanjiLayer), true);
     assert.equal(
         provider.supports(schema, {

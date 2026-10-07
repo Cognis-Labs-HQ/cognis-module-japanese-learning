@@ -1,3 +1,4 @@
+import { createJishoKanjiLookup } from "./jisho-kanji.js";
 import { readdir, readFile } from "node:fs/promises";
 import path from "node:path";
 
@@ -319,11 +320,17 @@ export function createJishoLookupProvider({
     log,
     fetchImplementation = globalThis.fetch,
     endpoint = JISHO_ENDPOINT,
+    kanjiEndpoint = "https://jisho.org/search",
 }) {
     let nativeIndexPromise;
     const lookupJisho = createCachedJishoLookup({
         fetchImplementation,
         endpoint,
+    });
+
+    const lookupKanji = createJishoKanjiLookup({
+        fetchImplementation,
+        endpoint: kanjiEndpoint,
     });
 
     async function nativeIndex() {
@@ -374,13 +381,22 @@ export function createJishoLookupProvider({
             if (native.length) return native;
             if (typeof fetchImplementation !== "function") return [];
             try {
-                const data = await lookupJisho(normalizedLookupLabel);
+                const kanjiRecord =
+                    layer.id === "alt-characters"
+                        ? await lookupKanji(normalizedLookupLabel)
+                        : null;
+                const data =
+                    layer.id === "alt-characters"
+                        ? { data: kanjiRecord ? [kanjiRecord] : [] }
+                        : await lookupJisho(normalizedLookupLabel);
                 const suggestion = jishoSuggestion(
                     index,
                     layer.id,
                     normalizedLookupLabel,
                     data,
                 );
+                if (suggestion && layer.id === "alt-characters")
+                    suggestion.sourceUrl = `${kanjiEndpoint}/${encodeURIComponent(`${normalizedLookupLabel} #kanji`)}`;
                 return suggestion ? [suggestion] : [];
             } catch (error) {
                 log?.("error", "Jisho lookup failed.", {
@@ -389,7 +405,7 @@ export function createJishoLookupProvider({
                     layerId: layer.id,
                     errorName: error?.name ?? "Error",
                 });
-                return [];
+                throw new Error("jisho_lookup_failed");
             }
         },
     });

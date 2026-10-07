@@ -121,6 +121,8 @@ export function createStrokePatternProvider({
 
     return Object.freeze({
         id: PROVIDER_ID,
+        capabilities: ["strokePattern"],
+        fields: ["stroke_pattern"],
         metadata: {
             labels: {
                 de: "KanjiVG-Strichmuster",

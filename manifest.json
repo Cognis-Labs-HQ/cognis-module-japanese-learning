@@ -2,7 +2,7 @@
     "id": "study-language-ja",
     "uuid": "e905927f-b133-572a-92ce-2ea8645e5ceb",
     "name": "module.study-language-ja.name",
-    "version": "2.2.84",
+    "version": "2.2.85",
     "class": "extension",
     "coreApiVersion": "v1",
     "capabilities": ["study:language:ja"],
@@ -98,12 +98,16 @@
             "sha256": "b9317ca2b3dd0da0c1cb4c9d99f18aa969ddf7b7ef20e1992fec515454f8c9fa"
         },
         {
+            "path": "api/jisho-kanji.js",
+            "sha256": "683b80be7556651a7d575446d3042f08942d55e768f6ea8a350a84c471cd7aa4"
+        },
+        {
             "path": "api/jisho-lookup-provider.js",
-            "sha256": "a0379e9957356951ab676c641f5a0c548d7c4e76ce1aa6f1eaa0a24da94a71f3"
+            "sha256": "810f7cd8cccccea126f8f365aebc6cf1da4daf91d2922a392be7bb3eec4899b0"
         },
         {
             "path": "api/stroke-pattern-provider.js",
-            "sha256": "b476e66b39aed08c5d54c79608c39eb2ca8a06517cc5d07a097c86c18c886d88"
+            "sha256": "db804ec7df057631b85edd2d78e408ccceec4a1d3af2228d8da2f3fad20b7dc1"
         },
         {
             "path": "api/svg-path-sampler.js",
@@ -119,7 +123,7 @@
         },
         {
             "path": "bootstrap.js",
-            "sha256": "7cf35921398125c76d333970d4c56775b433e68f3a88982b6edfb252f148c787"
+            "sha256": "e9e0252a9d406cf197c32a5a4c2758813d8b3d2d6b05971f41970faeebd8a869"
         },
         {
             "path": "data/library/content/alt-characters/kanji-001.json",
@@ -663,7 +667,7 @@
         },
         {
             "path": "data/library/manifest.json",
-            "sha256": "b329aeb8b9a6dc12ef8982b50d175bc0fd8dc304155927de8fe2672d391c7e90"
+            "sha256": "7648152f10f4c3cb78598cc237fe70c17241ecdc8007b621020119f444aa0267"
         },
         {
             "path": "data/library/schema.json",
@@ -671,19 +675,19 @@
         },
         {
             "path": "docs/jisho.de.md",
-            "sha256": "b41c24cf344040837aa31ad74398ea5dde17161094408c1f2f8906f49cbb9055"
+            "sha256": "4fda181bdc305a710b6fea3a736e273bd44c91714e2f26b131c8d306904a0fc0"
         },
         {
             "path": "docs/jisho.en.md",
-            "sha256": "05f68db781526f6ad8105b287bcba94e51d96771dc9ef5595cd722319ca0ef3b"
+            "sha256": "e67cf0586a5911fd50749108d68c8076c059836c7eece7267097df14f0d5f68f"
         },
         {
             "path": "docs/jisho.id.md",
-            "sha256": "c6ba3a848f6b408b070e2607c1305723840cc3e4cfadb3eaa84ceb9846bc64b7"
+            "sha256": "81efb95938a0cfca7e8a31cccf4fc9750c7f09e719463da0aab3302ebf46e017"
         },
         {
             "path": "docs/jisho.ja.md",
-            "sha256": "808d3e9425576e7b9a3ab9938b6949f861290c78048a617b277bcae176ef1899"
+            "sha256": "c2507b0f9dfe63bc977b4a1a36e56f6ae26a8e13d6badd3cda2611f14a8f76e0"
         },
         {
             "path": "docs/standard.de.md",
@@ -703,11 +707,11 @@
         },
         {
             "path": "package-lock.json",
-            "sha256": "67fd9c204e5749a9e98196b2a1bcc055a7635473e97911a1a563229bea9ca233"
+            "sha256": "49709ebb89202c6cd3f025b8ce56d17bf4f664b613db1a00eeb3fd680528a8e2"
         },
         {
             "path": "package.json",
-            "sha256": "6f174e35ca735d4524ff44764d320a57a844ad05c63a8be005e7d21a878aa687"
+            "sha256": "ef3f1ad9429e0da56fadd29ee0f0192a978e90a5dcf910093623a16e32279200"
         },
         {
             "path": "routes.json",
@@ -754,8 +758,12 @@
             "sha256": "6eaff6565fb451468101487011fffa459f5cb0b17b1d5a65d756a2413cb01552"
         },
         {
+            "path": "tests/jisho-kanji.test.js",
+            "sha256": "6daf181a86695decc37afb6f3cd89373d49ab20a5e8876237a874ae67ed4455b"
+        },
+        {
             "path": "tests/jisho-lookup-provider.test.js",
-            "sha256": "b2714b5c5d2abed51ca357d8db23f59419a28407d1dc8cafc53e43a92844c8b8"
+            "sha256": "bf0fa660cf3f846e493fe5aa6f0342d8a3ed3220483db23fa1f66ece5927f6e1"
         },
         {
             "path": "tests/jlpt-filter.test.js",
@@ -787,7 +795,7 @@
         },
         {
             "path": "tests/stroke-pattern-provider.test.js",
-            "sha256": "131e9cedefb48e61fbcada755faa365fb9c84593c95c6698de8be2cbc13a3848"
+            "sha256": "3679be61b65fac9359a4a4b3f4d3fc69954988cc23a6df51de26e3232cc6e8c6"
         },
         {
             "path": "tests/stroke-pattern.test.js",

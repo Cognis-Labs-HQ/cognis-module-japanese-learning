@@ -37,6 +37,10 @@ function jishoResponse() {
     };
 }
 
+function kanjiHtml(label, reading) {
+    return `<h1 class="character">${label}</h1><div class="kanji-details__main-meanings">meaning</div><dl class="dictionary_entry kun_yomi"><dd class="kanji-details__main-readings-list"><a>${reading}</a></dd></dl>`;
+}
+
 test("Jisho provider publishes localized composer metadata", () => {
     const provider = createJishoLookupProvider({ contentRoot });
     assert.equal(provider.id, "study-language-ja:jisho");
@@ -178,6 +182,9 @@ test("Jisho Kanji suggestions link readings directly to atomic Kana", async () =
         async fetchImplementation() {
             return {
                 ok: true,
+                async text() {
+                    return kanjiHtml("龍", "りゅう");
+                },
                 async json() {
                     return {
                         data: [
@@ -221,6 +228,9 @@ test("Kanji lookup identity uses the Kanji label, not its pronunciation", async 
             requests += 1;
             return {
                 ok: true,
+                async text() {
+                    return kanjiHtml("券", "けん");
+                },
                 async json() {
                     return {
                         data: [
@@ -402,4 +412,39 @@ test("Jisho retains all senses and raw source data with every reading group", as
         "https://jisho.org/word/%E7%8C%AB%E5%8F%88",
     );
     assert.deepEqual(provider.capabilities, ["dictionary"]);
+});
+
+test("Kanji lookup uses its dedicated Jisho entry when no standalone word exists", async () => {
+    const urls = [];
+    const provider = createJishoLookupProvider({
+        contentRoot,
+        fetchImplementation: async (url) => {
+            urls.push(url);
+            return { ok: true, text: async () => kanjiHtml("鋭", "するど.い") };
+        },
+    });
+    const [suggestion] = await provider.lookup({
+        schema,
+        layer: kanjiLayer,
+        label: "鋭",
+    });
+    assert.equal(suggestion.label, "鋭");
+    assert.deepEqual(suggestion.fields.pronunciation, ["するどい"]);
+    assert.equal(suggestion.definitions[0].translations.en, "meaning");
+    assert.equal(urls[0], "https://jisho.org/search/%E9%8B%AD%20%23kanji");
+    assert.deepEqual(
+        JSON.parse(suggestion.fields.dictionary_data).kanji.readings.kun,
+        ["するど.い"],
+    );
+});
+
+test("failed dictionary requests reject instead of reporting no matches", async () => {
+    const provider = createJishoLookupProvider({
+        contentRoot,
+        fetchImplementation: async () => ({ ok: false }),
+    });
+    await assert.rejects(
+        provider.lookup({ schema, layer: wordLayer, label: "missingword" }),
+        /jisho_lookup_failed/,
+    );
 });
