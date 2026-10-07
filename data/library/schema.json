@@ -1,6 +1,6 @@
 {
     "id": "japanese-core",
-    "version": 86,
+    "version": 87,
     "namespace": "ja",
     "language": "ja",
     "metadata": {
@@ -618,9 +618,8 @@
                         "renderer": "badge",
                         "order": 2,
                         "group": "proficiency-level",
-                        "exclusive": true,
-                        "required": true,
-                        "defaultTag": "N5",
+                        "exclusive": false,
+                        "required": false,
                         "filterable": true
                     },
                     "input": {

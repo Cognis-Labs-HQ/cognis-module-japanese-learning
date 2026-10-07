@@ -49,7 +49,7 @@ Setiap bacaan kanji merupakan entri kosakata tersendiri dengan referensi `kana-s
 
 ## Kontrak aktivasi Pustaka terkini
 
-Filter lencana sistem tulisan dan JLPT kini mendeklarasikan grup filter bernama yang saling eksklusif dan didukung oleh Library 2.6. Modul sengaja tidak mengaktifkan `allowBootstrapFailure`: ingest konten dan publikasi `study:language:ja` adalah pekerjaan runtime utamanya, sehingga mempertahankan modul aktif tanpa keduanya hanya menghasilkan modul yang tidak berfungsi. Cognis PR #216 kini memperbarui entri, aset, dan referensi yang sudah ada saat paket konten diimpor ulang, sehingga kegagalan referensi duplikat yang dilaporkan ditangani pada batas persistensi.
+Filter sistem tulisan menggunakan grup wajib yang saling eksklusif dengan Hiragana dipilih pada awalnya. Filter JLPT bersifat opsional, dimulai tanpa tingkat yang dipilih, dan mengizinkan beberapa tingkat seperti filter jenis verba. Menghapus semua pilihan tingkat JLPT menampilkan seluruh kosakata, termasuk entri tanpa tingkat JLPT. Modul sengaja tidak mengaktifkan `allowBootstrapFailure`: ingest konten dan publikasi `study:language:ja` adalah pekerjaan runtime utamanya, sehingga mempertahankan modul aktif tanpa keduanya hanya menghasilkan modul yang tidak berfungsi. Cognis PR #216 kini memperbarui entri, aset, dan referensi yang sudah ada saat paket konten diimpor ulang, sehingga kegagalan referensi duplikat yang dilaporkan ditangani pada batas persistensi.
 
 ## Varian kana bertingkat
 
@@ -61,7 +61,7 @@ Relasi varian tidak memiliki peran resolver atau arah tetap. Pustaka secara dina
 
 ## Komposisi dan definisi
 
-Peran resolver kini hanya dipakai untuk komposisi sejati: bacaan kanji, ejaan kata, serta kata atau partikel kalimat yang berurutan. Hubungan ke lapisan definisi semantik tidak lagi mendeklarasikan resolver, sehingga tautan definisi utama dan alternatif dirender sebagai makna, bukan grup komposisi. Filter wajib sistem tulisan dan tingkat kemahiran juga mendeklarasikan tag bawaan yang disengaja untuk kontrak filter Pustaka terbaru.
+Peran resolver kini hanya dipakai untuk komposisi sejati: bacaan kanji, ejaan kata, serta kata atau partikel kalimat yang berurutan. Hubungan ke lapisan definisi semantik tidak lagi mendeklarasikan resolver, sehingga tautan definisi utama dan alternatif dirender sebagai makna, bukan grup komposisi. Filter wajib sistem tulisan mendeklarasikan tag bawaan yang disengaja; filter tingkat kemahiran opsional dimulai tanpa pilihan.
 
 ## Tabel kana lengkap
 

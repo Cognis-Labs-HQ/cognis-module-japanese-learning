@@ -46,7 +46,7 @@ Jede Kanji-Lesung ist ein eigener Wortschatzdatensatz, dessen geordnete `kana-sp
 
 ## Aktueller Aktivierungsvertrag der Bibliothek
 
-Filterabzeichen für Schriftsystem und JLPT deklarieren nun benannte, gegenseitig ausschließende Filtergruppen, die von Library 2.6 unterstützt werden. Das Modul aktiviert `allowBootstrapFailure` bewusst nicht: Inhaltsimport und Veröffentlichung von `study:language:ja` sind seine wesentlichen Laufzeitaufgaben; ohne sie bliebe ein funktionsloses Modul aktiviert. Cognis PR #216 aktualisiert bei wiederholten Inhaltspaketimporten nun vorhandene Einträge, Ressourcen und Verweise und behebt damit den gemeldeten Fehler durch doppelte Verweise an der Persistenzgrenze.
+Der Schriftsystemfilter verwendet eine erforderliche, gegenseitig ausschließende Gruppe mit Hiragana als anfänglicher Auswahl. Der JLPT-Filter ist optional, beginnt ohne ausgewählte Stufe und erlaubt wie der Verbtypfilter mehrere Stufen. Ohne ausgewählte JLPT-Stufe werden alle Vokabeln angezeigt, auch Einträge ohne JLPT-Stufe. Das Modul aktiviert `allowBootstrapFailure` bewusst nicht: Inhaltsimport und Veröffentlichung von `study:language:ja` sind seine wesentlichen Laufzeitaufgaben; ohne sie bliebe ein funktionsloses Modul aktiviert. Cognis PR #216 aktualisiert bei wiederholten Inhaltspaketimporten nun vorhandene Einträge, Ressourcen und Verweise und behebt damit den gemeldeten Fehler durch doppelte Verweise an der Persistenzgrenze.
 
 ## Verschachtelte Kana-Varianten
 
@@ -58,7 +58,7 @@ Variantenbeziehungen besitzen weder eine Resolver-Rolle noch eine feste Richtung
 
 ## Zusammensetzungen und Definitionen
 
-Resolver-Rollen sind nun echten Zusammensetzungen vorbehalten: Kanji-Lesungen, Wortschreibweisen sowie geordneten Satzwörtern oder Partikeln. Beziehungen zur semantischen Definitionsebene deklarieren keinen Resolver mehr, sodass primäre und alternative Definitionsverweise als Bedeutungen statt als Zusammensetzungsgruppen erscheinen. Erforderliche Filter für Schriftsystem und Kenntnisstufe deklarieren außerdem gezielte Standard-Tags für den aktuellen Bibliotheksfiltervertrag.
+Resolver-Rollen sind nun echten Zusammensetzungen vorbehalten: Kanji-Lesungen, Wortschreibweisen sowie geordneten Satzwörtern oder Partikeln. Beziehungen zur semantischen Definitionsebene deklarieren keinen Resolver mehr, sodass primäre und alternative Definitionsverweise als Bedeutungen statt als Zusammensetzungsgruppen erscheinen. Der erforderliche Schriftsystemfilter deklariert einen gezielten Standard-Tag; der optionale Kenntnisstufenfilter beginnt ohne Auswahl.
 
 ## Vollständige Kana-Tabellen
 

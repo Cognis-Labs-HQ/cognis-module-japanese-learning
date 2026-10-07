@@ -476,7 +476,7 @@ test("character classes distinguish hiragana and katakana variations", () => {
     );
 });
 
-test("badge filters use the current grouped exclusivity contract", () => {
+test("badge filters declare their grouped selection policy", () => {
     const { schema } = loadPack();
     const badgeFields = schema.layers.flatMap((layer) =>
         (layer.fields ?? []).filter(
@@ -487,7 +487,7 @@ test("badge filters use the current grouped exclusivity contract", () => {
     for (const field of badgeFields) {
         assert.equal(typeof field.detail.group, "string");
         assert.ok(field.detail.group.trim());
-        assert.equal(field.detail.exclusive, true);
+        assert.equal(typeof field.detail.exclusive, "boolean");
     }
 });
 

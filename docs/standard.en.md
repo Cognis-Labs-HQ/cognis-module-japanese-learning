@@ -46,7 +46,7 @@ Each kanji reading is a distinct vocabulary record whose ordered `kana-spelling`
 
 ## Current Library activation contract
 
-Character-script and JLPT badge filters now declare named, mutually exclusive filter groups supported by Library 2.6. The module intentionally does not enable `allowBootstrapFailure`: content ingestion and publication of `study:language:ja` are its essential runtime work, and keeping it enabled without them would expose a nonfunctional module. Cognis PR #216 now updates existing entries, assets, and references during repeated content-pack imports, which addresses the reported duplicate-reference failure at its persistence boundary.
+Character-script filters use a required, mutually exclusive group with Hiragana selected initially. JLPT filtering is optional, starts with no selected level, and allows multiple levels, like the verb type filter. Clearing every JLPT level shows all vocabulary, including entries without a JLPT level. The module intentionally does not enable `allowBootstrapFailure`: content ingestion and publication of `study:language:ja` are its essential runtime work, and keeping it enabled without them would expose a nonfunctional module. Cognis PR #216 now updates existing entries, assets, and references during repeated content-pack imports, which addresses the reported duplicate-reference failure at its persistence boundary.
 
 ## Nested kana variants
 
@@ -58,7 +58,7 @@ Variant relationships have no resolver role or fixed direction. The Library dyna
 
 ## Compositions and definitions
 
-Resolver roles are now reserved for true compositions: kanji readings, word spellings, and ordered sentence words or particles. Relationships to the semantic definition layer no longer declare a resolver, so primary and alternate definition links render as meanings instead of composition groups. Required writing-system and proficiency filters also declare intentional default tags for the latest Library filter contract.
+Resolver roles are now reserved for true compositions: kanji readings, word spellings, and ordered sentence words or particles. Relationships to the semantic definition layer no longer declare a resolver, so primary and alternate definition links render as meanings instead of composition groups. The required writing-system filter declares an intentional default tag; optional proficiency filtering has no initial selection.
 
 ## Complete kana tables
 
