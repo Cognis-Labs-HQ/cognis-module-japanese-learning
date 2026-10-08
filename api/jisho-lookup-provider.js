@@ -1,3 +1,4 @@
+import { requestJisho, jishoFailureDetails } from "./jisho-request.js";
 import { createJishoKanjiLookup } from "./jisho-kanji.js";
 import { readdir, readFile } from "node:fs/promises";
 import path from "node:path";
@@ -291,14 +292,11 @@ function createCachedJishoLookup({ fetchImplementation, endpoint }) {
     return async (label) => {
         if (cache.has(label)) return cache.get(label);
         const request = (async () => {
-            const response = await fetchImplementation(
+            const response = await requestJisho(
+                fetchImplementation,
                 `${endpoint}?keyword=${encodeURIComponent(label)}`,
-                {
-                    headers: { accept: "application/json" },
-                    signal: AbortSignal.timeout(15000),
-                },
+                "application/json",
             );
-            if (!response.ok) throw new Error("jisho_request_failed");
             const data = await response.json();
             if (!data || !Array.isArray(data.data))
                 throw new Error("jisho_response_invalid");
@@ -403,7 +401,7 @@ export function createJishoLookupProvider({
                     component: "study-language-ja",
                     operation: "lookup_jisho",
                     layerId: layer.id,
-                    errorName: error?.name ?? "Error",
+                    ...jishoFailureDetails(error),
                 });
                 throw new Error("jisho_lookup_failed");
             }

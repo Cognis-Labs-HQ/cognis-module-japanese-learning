@@ -448,3 +448,80 @@ test("failed dictionary requests reject instead of reporting no matches", async 
         /jisho_lookup_failed/,
     );
 });
+
+test("Kanji and word requests identify Cognis to upstream servers", async () => {
+    const accepts = [];
+    const provider = createJishoLookupProvider({
+        contentRoot,
+        fetchImplementation: async (_url, options) => {
+            const identified =
+                options.headers["user-agent"]?.startsWith(
+                    "Cognis-Japanese-Learning",
+                ) === true;
+            accepts.push(options.headers.accept);
+            return {
+                ok: identified,
+                status: identified ? 200 : 403,
+                text: async () => kanjiHtml("教", "おし.える"),
+                json: async () => jishoResponse(),
+            };
+        },
+    });
+    const [kanji] = await provider.lookup({ layer: kanjiLayer, label: "教" });
+    assert.equal(kanji.label, "教");
+    assert.deepEqual(kanji.fields.pronunciation, ["おしえる"]);
+    const [word] = await provider.lookup({ layer: wordLayer, label: "猫又" });
+    assert.equal(word.label, "猫又");
+    assert.deepEqual(accepts, ["text/html", "application/json"]);
+});
+
+test("upstream rejections log the status and safe failure code", async () => {
+    const logs = [];
+    const provider = createJishoLookupProvider({
+        contentRoot,
+        log: (level, message, metadata) =>
+            logs.push({ level, message, metadata }),
+        fetchImplementation: async () => ({
+            ok: false,
+            status: 403,
+            text: async () => "private upstream response",
+        }),
+    });
+    await assert.rejects(
+        provider.lookup({ layer: kanjiLayer, label: "教" }),
+        /jisho_lookup_failed/,
+    );
+    assert.equal(logs[0].level, "error");
+    assert.equal(logs[0].metadata.httpStatus, 403);
+    assert.equal(logs[0].metadata.errorCode, "jisho_request_failed");
+    assert.doesNotMatch(JSON.stringify(logs), /private upstream response/);
+});
+
+test("parser and transport failures remain distinguishable without exposing messages", async () => {
+    for (const [fetchImplementation, expectedCode] of [
+        [
+            async () => ({ ok: true, text: async () => "unexpected page" }),
+            "jisho_kanji_response_invalid",
+        ],
+        [
+            async () => {
+                throw new TypeError("private connection details");
+            },
+            "jisho_transport_failed",
+        ],
+    ]) {
+        const logs = [];
+        const provider = createJishoLookupProvider({
+            contentRoot,
+            log: (_level, _message, metadata) => logs.push(metadata),
+            fetchImplementation,
+        });
+        await assert.rejects(
+            provider.lookup({ layer: kanjiLayer, label: "教" }),
+            /jisho_lookup_failed/,
+        );
+        assert.equal(logs[0].errorCode, expectedCode);
+        assert.equal(logs[0].httpStatus, undefined);
+        assert.doesNotMatch(JSON.stringify(logs), /private connection details/);
+    }
+});

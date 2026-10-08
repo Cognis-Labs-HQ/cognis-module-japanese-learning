@@ -1,3 +1,5 @@
+import { requestJisho } from "./jisho-request.js";
+
 function text(markup) {
     return markup
         .replace(/<[^>]*>/gu, "")
@@ -83,14 +85,11 @@ export function createJishoKanjiLookup({ fetchImplementation, endpoint }) {
     return async (label) => {
         if (cache.has(label)) return cache.get(label);
         const request = (async () => {
-            const response = await fetchImplementation(
+            const response = await requestJisho(
+                fetchImplementation,
                 `${endpoint}/${encodeURIComponent(`${label} #kanji`)}`,
-                {
-                    headers: { accept: "text/html" },
-                    signal: AbortSignal.timeout(15000),
-                },
+                "text/html",
             );
-            if (!response.ok) throw new Error("jisho_request_failed");
             return parseJishoKanji(await response.text(), label);
         })();
         cache.set(label, request);
