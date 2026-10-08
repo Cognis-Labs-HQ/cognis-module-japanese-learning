@@ -395,6 +395,11 @@ export function createJishoLookupProvider({
                 );
                 if (suggestion && layer.id === "alt-characters")
                     suggestion.sourceUrl = `${kanjiEndpoint}/${encodeURIComponent(`${normalizedLookupLabel} #kanji`)}`;
+                if (suggestion)
+                    suggestion.fields.dictionary_data = JSON.stringify({
+                        ...JSON.parse(suggestion.fields.dictionary_data),
+                        sourceUrl: suggestion.sourceUrl,
+                    });
                 return suggestion ? [suggestion] : [];
             } catch (error) {
                 log?.("error", "Jisho lookup failed.", {

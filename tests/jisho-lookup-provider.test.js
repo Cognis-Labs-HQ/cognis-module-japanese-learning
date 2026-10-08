@@ -404,7 +404,10 @@ test("Jisho retains all senses and raw source data with every reading group", as
         suggestion.definitions.map(({ translations }) => translations.en),
         ["mythical two-tailed cat", "cat spirit; cat demon"],
     );
-    assert.deepEqual(JSON.parse(suggestion.fields.dictionary_data), record);
+    assert.deepEqual(JSON.parse(suggestion.fields.dictionary_data), {
+        ...record,
+        sourceUrl: suggestion.sourceUrl,
+    });
     assert.equal(suggestion.class, "lexical:noun");
     assert.deepEqual(suggestion.tags, ["jlpt-n2", "common"]);
     assert.equal(
@@ -523,5 +526,26 @@ test("parser and transport failures remain distinguishable without exposing mess
         assert.equal(logs[0].errorCode, expectedCode);
         assert.equal(logs[0].httpStatus, undefined);
         assert.doesNotMatch(JSON.stringify(logs), /private connection details/);
+    }
+});
+
+test("dictionary source URLs are retained inside hidden card data", async () => {
+    const provider = createJishoLookupProvider({
+        contentRoot,
+        fetchImplementation: async () => ({
+            ok: true,
+            text: async () => kanjiHtml("教", "おし.える"),
+            json: async () => jishoResponse(),
+        }),
+    });
+    for (const [layer, label] of [
+        [kanjiLayer, "教"],
+        [wordLayer, "猫又"],
+    ]) {
+        const [suggestion] = await provider.lookup({ layer, label });
+        assert.equal(
+            JSON.parse(suggestion.fields.dictionary_data).sourceUrl,
+            suggestion.sourceUrl,
+        );
     }
 });
