@@ -210,13 +210,13 @@ test("Jisho Kanji suggestions link readings directly to atomic Kana", async () =
         suggestion.referenceGroups["single-readings"][0].map(
             ({ relation }) => relation,
         ),
-        ["single-readings", "single-readings", "single-readings"],
+        ["single-readings", "single-readings"],
     );
     assert.deepEqual(
         suggestion.referenceGroups["single-readings"][0].map(
             ({ position }) => position,
         ),
-        [0, 1, 2],
+        [0, 1],
     );
 });
 
@@ -377,7 +377,7 @@ test("Jisho retains all senses and raw source data with every reading group", as
     record.japanese.push({ word: "猫又", reading: "ねこ" });
     record.is_common = true;
     record.senses.push({
-        english_definitions: ["cat spirit", "cat demon"],
+        english_definitions: ["cat spirit; cat demon", "cat apparition"],
         parts_of_speech: ["Noun"],
         restrictions: ["猫又"],
         info: ["folklore"],
@@ -402,7 +402,12 @@ test("Jisho retains all senses and raw source data with every reading group", as
     assert.equal(suggestion.referenceGroups["reading-kana"].length, 2);
     assert.deepEqual(
         suggestion.definitions.map(({ translations }) => translations.en),
-        ["mythical two-tailed cat", "cat spirit; cat demon"],
+        [
+            "mythical two-tailed cat",
+            "cat spirit",
+            "cat demon",
+            "cat apparition",
+        ],
     );
     assert.deepEqual(JSON.parse(suggestion.fields.dictionary_data), {
         ...record,
@@ -548,4 +553,33 @@ test("dictionary source URLs are retained inside hidden card data", async () => 
             suggestion.sourceUrl,
         );
     }
+});
+
+test("dictionary readings resolve compound Kana as existing content-provider characters", async () => {
+    const payload = jishoResponse();
+    payload.data[0].japanese[0].reading = "きょうっくっく";
+    const provider = createJishoLookupProvider({
+        contentRoot,
+        fetchImplementation: async () => ({
+            ok: true,
+            json: async () => payload,
+        }),
+    });
+    const [suggestion] = await provider.lookup({
+        schema,
+        layer: wordLayer,
+        label: "猫又",
+    });
+    assert.deepEqual(
+        suggestion.referenceGroups["reading-kana"][0].map(
+            ({ entryId }) => entryId,
+        ),
+        ["ja:char:kyo", "ja:char:u", "ja:char:kku", "ja:char:kku"],
+    );
+    assert.deepEqual(
+        suggestion.referenceGroups["reading-kana"][0].map(
+            ({ position }) => position,
+        ),
+        [0, 1, 2, 3],
+    );
 });

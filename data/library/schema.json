@@ -631,7 +631,10 @@
                     },
                     "input": {
                         "control": "tagList",
-                        "linkRelationship": "pronunciation-readings"
+                        "linkRelationships": [
+                            "pronunciation-readings",
+                            "reading-kana"
+                        ]
                     },
                     "multi_value": true
                 },
@@ -942,6 +945,7 @@
         },
         {
             "id": "sentences",
+            "dictionary_lookup": false,
             "metadata": {
                 "labels": {
                     "de": "Sätze",

@@ -79,11 +79,10 @@ test("vocabulary pronunciation links through complete hidden readings", () => {
     const pronunciation = wordLayer.fields.find(
         ({ id }) => id === "pronunciation",
     );
-    assert.equal(
-        pronunciation.input.linkRelationship,
+    assert.deepEqual(pronunciation.input.linkRelationships, [
         "pronunciation-readings",
-    );
-    assert.equal(pronunciation.input.linkRelationships, undefined);
+        "reading-kana",
+    ]);
     for (const word of words.filter(({ hidden }) => hidden !== true)) {
         const groups = word.referenceGroups?.["pronunciation-readings"];
         assert.equal(groups?.length, 1, word.id);

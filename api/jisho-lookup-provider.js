@@ -146,18 +146,28 @@ function exactNativeReference(index, layer, label, relation, position) {
 }
 
 function kanaReferences(index, reading, relation) {
-    const references = [...reading]
-        .map((character, position) =>
-            exactNativeReference(
-                index,
-                "characters",
-                character,
-                relation,
-                position,
-            ),
-        )
-        .filter(Boolean);
-    return references.length === [...reading].length ? references : [];
+    const normalized = normalizedLabel(reading);
+    const candidates = (index.layers.get("characters") ?? []).toSorted(
+        (left, right) =>
+            normalizedLabel(right.label).length -
+            normalizedLabel(left.label).length,
+    );
+    const resolved = new Map([[normalized.length, []]]);
+    for (let offset = normalized.length - 1; offset >= 0; offset -= 1) {
+        for (const record of candidates) {
+            const label = normalizedLabel(record.label);
+            if (!label || !normalized.startsWith(label, offset)) continue;
+            const tail = resolved.get(offset + label.length);
+            if (!tail) continue;
+            resolved.set(offset, [record, ...tail]);
+            break;
+        }
+    }
+    return (resolved.get(0) ?? []).map((record, position) => ({
+        entryId: record.id,
+        relation,
+        position,
+    }));
 }
 
 function spellingReferences(index, label) {
@@ -230,12 +240,16 @@ function jishoSuggestion(index, layer, label, data) {
                       ),
                   )
                   .filter((references) => references.length);
-    const definitions = record.senses
-        .map((sense, position) => ({
-            translations: { en: (sense.english_definitions ?? []).join("; ") },
-            provenance: `jisho:${record.slug || encodeURIComponent(label)}:sense:${position}`,
-        }))
-        .filter(({ translations }) => translations.en.trim());
+    const definitions = record.senses.flatMap((sense, position) =>
+        (sense.english_definitions ?? [])
+            .flatMap((value) => value.split(/[;；]/u))
+            .map((value) => value.trim())
+            .filter(Boolean)
+            .map((meaning, index) => ({
+                translations: { en: meaning },
+                provenance: `jisho:${record.slug || encodeURIComponent(label)}:sense:${position}:${index}`,
+            })),
+    );
     const partsOfSpeech = record.senses.flatMap(
         (sense) => sense.parts_of_speech ?? [],
     );

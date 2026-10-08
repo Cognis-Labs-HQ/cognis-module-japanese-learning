@@ -115,3 +115,16 @@ test("layer semantics reject sentence and particle structures in Vocabulary", ()
         }
     }
 });
+
+test("vocabulary pronunciations declare Kana links and sentences disable dictionary lookup", () => {
+    const words = schema.layers.find(({ id }) => id === "words");
+    assert.deepEqual(
+        words.fields.find(({ id }) => id === "pronunciation").input
+            .linkRelationships,
+        ["pronunciation-readings", "reading-kana"],
+    );
+    assert.equal(
+        schema.layers.find(({ id }) => id === "sentences").dictionary_lookup,
+        false,
+    );
+});
