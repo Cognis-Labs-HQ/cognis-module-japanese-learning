@@ -40,6 +40,10 @@ Hasil kata Jisho kini menghasilkan setiap makna bahasa Inggris sebagai definisi 
 
 Impor kamus menyelesaikan pelafalan lengkap ke Kana terpasang melalui kecocokan lengkap terpanjang, termasuk karakter gabungan seperti きょ dan っく serta posisi berulang. ID entri kanonis disimpan dalam kelompok bacaan berurutan; bacaan dengan karakter yang hilang tidak ditautkan sebagian. Definisi menggunakan kembali kartu yang cocok atau membuat kartu melalui alur editor biasa. Karusel tetap menjadi cara utama membuat kartu turunannya. Karakter dan partikel tetap menjadi lapisan hanya-baca yang dikelola penyedia. Editor kalimat tidak menawarkan pencarian kamus.
 
+## Semua kandidat kamus
+
+Penyedia Jisho kini mengembalikan setiap hasil kata yang dapat digunakan dengan label kanonis, bacaan, definisi, kelas, tag, hubungan, dan rekaman sumber tersembunyinya sendiri. Cognis menampilkan beberapa kecocokan untuk dipilih dan dikonfirmasi sebelum diimpor. Kecocokan lokal tetap mendahului pencarian jaringan; pencarian Kanji tetap berupa permintaan khusus satu karakter. Versi modul dan paket konten 2.2.89 mempertahankan revisi skema 88.
+
 ## Pencarian Kanji khusus
 
 Kanji di luar konten bawaan kini menggunakan halaman Kanji khusus Jisho, bukan API kata leksikal. Penyedia mengimpor bacaan Kun/On, makna, jumlah goresan, tingkat sekolah, tingkat JLPT, dan frekuensi. Pemisah bacaan dihapus dari pelafalan, sementara notasi sumber disimpan dalam dictionary_data. Kegagalan penyedia dilaporkan sebagai kesalahan pencarian, bukan hasil kosong. Penyedia KanjiVG secara eksplisit mendeklarasikan kapabilitas dan bidang pola goresannya. Versi modul/paket konten 2.2.85 tetap memakai revisi skema 88.

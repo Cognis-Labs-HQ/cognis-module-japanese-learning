@@ -401,20 +401,32 @@ export function createJishoLookupProvider({
                     layer.id === "alt-characters"
                         ? { data: kanjiRecord ? [kanjiRecord] : [] }
                         : await lookupJisho(normalizedLookupLabel);
-                const suggestion = jishoSuggestion(
-                    index,
-                    layer.id,
-                    normalizedLookupLabel,
-                    data,
-                );
-                if (suggestion && layer.id === "alt-characters")
-                    suggestion.sourceUrl = `${kanjiEndpoint}/${encodeURIComponent(`${normalizedLookupLabel} #kanji`)}`;
-                if (suggestion)
-                    suggestion.fields.dictionary_data = JSON.stringify({
-                        ...JSON.parse(suggestion.fields.dictionary_data),
-                        sourceUrl: suggestion.sourceUrl,
-                    });
-                return suggestion ? [suggestion] : [];
+                return data.data.flatMap((record) => {
+                    const exactForm = record.japanese?.find(
+                        ({ word, reading }) =>
+                            word === normalizedLookupLabel ||
+                            reading === normalizedLookupLabel,
+                    );
+                    const lookupLabel = exactForm
+                        ? normalizedLookupLabel
+                        : record.japanese?.[0]?.word ||
+                          record.japanese?.[0]?.reading;
+                    if (!lookupLabel) return [];
+                    const suggestion = jishoSuggestion(
+                        index,
+                        layer.id,
+                        lookupLabel,
+                        { data: [record] },
+                    );
+                    if (suggestion && layer.id === "alt-characters")
+                        suggestion.sourceUrl = `${kanjiEndpoint}/${encodeURIComponent(`${normalizedLookupLabel} #kanji`)}`;
+                    if (suggestion)
+                        suggestion.fields.dictionary_data = JSON.stringify({
+                            ...JSON.parse(suggestion.fields.dictionary_data),
+                            sourceUrl: suggestion.sourceUrl,
+                        });
+                    return suggestion ? [suggestion] : [];
+                });
             } catch (error) {
                 log?.("error", "Jisho lookup failed.", {
                     component: "study-language-ja",

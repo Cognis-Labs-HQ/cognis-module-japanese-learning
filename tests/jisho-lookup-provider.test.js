@@ -583,3 +583,47 @@ test("dictionary readings resolve compound Kana as existing content-provider cha
         [0, 1, 2, 3],
     );
 });
+
+test("Jisho returns every candidate with its own readings, definitions, and provenance", async () => {
+    const payload = jishoResponse();
+    payload.data.push({
+        ...structuredClone(payload.data[0]),
+        slug: "猫神",
+        japanese: [{ word: "猫神", reading: "ねこがみ" }],
+        senses: [
+            { english_definitions: ["cat deity"], parts_of_speech: ["Noun"] },
+        ],
+    });
+    const provider = createJishoLookupProvider({
+        contentRoot,
+        fetchImplementation: async () => ({
+            ok: true,
+            json: async () => payload,
+        }),
+    });
+    const suggestions = await provider.lookup({
+        schema,
+        layer: wordLayer,
+        label: "cat",
+    });
+    assert.deepEqual(
+        suggestions.map(({ label }) => label),
+        ["猫又", "猫神"],
+    );
+    assert.deepEqual(
+        suggestions.map(({ fields }) => fields.pronunciation),
+        [["ねこまた"], ["ねこがみ"]],
+    );
+    assert.deepEqual(
+        suggestions.map(({ definitions }) => definitions[0].translations.en),
+        ["mythical two-tailed cat", "cat deity"],
+    );
+    assert.equal(
+        new Set(suggestions.map(({ provenance }) => provenance)).size,
+        2,
+    );
+    assert.equal(
+        JSON.parse(suggestions[1].fields.dictionary_data).slug,
+        "猫神",
+    );
+});

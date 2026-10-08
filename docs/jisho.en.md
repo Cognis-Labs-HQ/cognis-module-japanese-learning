@@ -31,3 +31,7 @@ Jisho word results now emit each English gloss as a separate definition rather t
 ## Dictionary pronunciation links
 
 Dictionary imports resolve complete pronunciations to installed Kana using longest complete matches, preserving compound characters such as きょ and っく and repeated positions. Canonical entry IDs are stored in ordered reading groups; a reading with missing characters is never partially linked. Definitions reuse matching cards or create cards through the normal composer flow. Carousels remain the primary way to create downstream cards. Characters and particles remain provider-owned read-only layers. Sentence composers do not offer dictionary lookup.
+
+## All dictionary candidates
+
+The Jisho provider now returns every usable word result with its own canonical label, readings, definitions, class, tags, relationships, and hidden source record. Cognis presents multiple matches for selection and confirmation before importing a candidate. Native matches still precede network lookup; Kanji lookup remains a dedicated single-character request. Module/content-pack version 2.2.89 keeps schema revision 88.

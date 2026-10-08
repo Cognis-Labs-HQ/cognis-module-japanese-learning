@@ -38,6 +38,10 @@ Jisho-Wortergebnisse liefern jede englische Bedeutung als eigene Definition, sta
 
 Wörterbuchimporte lösen vollständige Aussprachen über die längsten vollständigen Treffer in installierte Kana auf. Zusammengesetzte Zeichen wie きょ und っく sowie wiederholte Positionen bleiben erhalten. Kanonische Eintragskennungen werden in geordneten Lesegruppen gespeichert; Lesungen mit fehlenden Zeichen werden nicht teilweise verknüpft. Definitionen verwenden passende Karten erneut oder erstellen Karten über den normalen Editorablauf. Karussells bleiben der wichtigste Weg zur Erstellung untergeordneter Karten. Zeichen und Partikeln bleiben schreibgeschützte, vom Anbieter verwaltete Ebenen. Satzeditoren bieten keine Wörterbuchsuche an.
 
+## Alle Wörterbuchkandidaten
+
+Der Jisho-Anbieter liefert nun alle verwendbaren Worttreffer mit jeweils eigenem kanonischem Namen, Lesungen, Definitionen, Wortklasse, Schlagwörtern, Beziehungen und verborgenen Quelldaten. Cognis lässt mehrere Treffer vor der Übernahme auswählen und bestätigen. Lokale Treffer werden weiterhin vor der Netzwerksuche verwendet; die Kanji-Suche bleibt eine Anfrage für ein einzelnes Zeichen. Modul und Inhaltspaket verwenden Version 2.2.89 bei Schemarevision 88.
+
 ## Commits
 
 - [26eeb3e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/26eeb3e8b152bb7ee22f5bb9dee7ba67f430cbf6)
