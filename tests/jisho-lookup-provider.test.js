@@ -627,3 +627,21 @@ test("Jisho returns every candidate with its own readings, definitions, and prov
         "猫神",
     );
 });
+
+test("Jisho advertises navigation search and refreshes its provider cache", async () => {
+    let calls = 0;
+    const provider = createJishoLookupProvider({
+        contentRoot,
+        fetchImplementation: async () => {
+            calls += 1;
+            return { ok: true, json: async () => ({ data: [] }) };
+        },
+    });
+    assert.equal(provider.searchable, true);
+    const input = { layer: { id: "words" }, label: "unlistedword" };
+    await provider.lookup(input);
+    await provider.lookup(input);
+    assert.equal(calls, 1);
+    await provider.lookup({ ...input, refresh: true });
+    assert.equal(calls, 2);
+});

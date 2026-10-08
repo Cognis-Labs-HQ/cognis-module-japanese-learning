@@ -82,8 +82,10 @@ export function parseJishoKanji(html, label) {
 
 export function createJishoKanjiLookup({ fetchImplementation, endpoint }) {
     const cache = new Map();
-    return async (label) => {
-        if (cache.has(label)) return cache.get(label);
+    return async (label, refresh = false) => {
+        const cached = cache.get(label);
+        if (!refresh && cached && cached.expiresAt > Date.now())
+            return cached.request;
         const request = (async () => {
             const response = await requestJisho(
                 fetchImplementation,
@@ -92,7 +94,10 @@ export function createJishoKanjiLookup({ fetchImplementation, endpoint }) {
             );
             return parseJishoKanji(await response.text(), label);
         })();
-        cache.set(label, request);
+        cache.set(label, {
+            request,
+            expiresAt: Date.now() + 24 * 60 * 60 * 1000,
+        });
         if (cache.size > 512) cache.delete(cache.keys().next().value);
         try {
             return await request;

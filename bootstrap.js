@@ -1,47 +1,19 @@
+import { readFileSync } from "node:fs";
 import path from "node:path";
 import { registerJishoLookupProvider } from "./api/jisho-lookup-provider.js";
 import { createStrokePatternProvider } from "./api/stroke-pattern-provider.js";
 
-const CONTENT_PACK = Object.freeze({
-    id: "japanese-core",
-    publisher: "Cognis Labs HQ",
-    namespace: "ja",
-    version: "2.2.89",
-    contentRevision: "2026-10-08.4",
-    schema: "schema.json",
-    content: "content",
-    protected: true,
-    metadata: Object.freeze({
-        catalog: Object.freeze({ category: "language", featured: true }),
-        tags: Object.freeze(["japanese", "study"]),
-        sources: Object.freeze([
-            Object.freeze({
-                id: "kanjivg",
-                url: "https://kanjivg.tagaini.net/",
-                license: "CC-BY-SA-3.0",
-                attribution: "KanjiVG project contributors",
-                revision: "422b5538595676da918c288a4230cb5e22a1ee7e",
-                derivedFields: Object.freeze([
-                    "characters.stroke_pattern",
-                    "alt-characters.stroke_pattern",
-                ]),
-            }),
-            Object.freeze({
-                id: "kanjidic2-via-kanjiapi",
-                url: "https://kanjiapi.dev/",
-                license: "EDRDG Electronic Dictionary Licence",
-                attribution:
-                    "Electronic Dictionary Research and Development Group",
-                derivedFields: Object.freeze(["alt-characters.pronunciation"]),
-            }),
-        ]),
-    }),
-    license: Object.freeze({
-        id: "AGPL-3.0-or-later",
-        url: "https://www.gnu.org/licenses/agpl-3.0.html",
-        attribution: "Cognis Labs HQ",
-    }),
-});
+const CONTENT_PACK = Object.freeze(
+    JSON.parse(
+        readFileSync(
+            new URL("./data/library/manifest.json", import.meta.url),
+            "utf8",
+        ),
+    ),
+);
+const MODULE_MANIFEST = JSON.parse(
+    readFileSync(new URL("./manifest.json", import.meta.url), "utf8"),
+);
 
 const LANGUAGE = Object.freeze({
     moduleId: "study-language-ja",
@@ -49,7 +21,7 @@ const LANGUAGE = Object.freeze({
     languageCode: "ja",
     languageName: "日本語",
     languageFlag: "🇯🇵",
-    version: "2.2.89",
+    version: MODULE_MANIFEST.version,
     package: CONTENT_PACK,
     childComponents: [],
 });
@@ -130,6 +102,7 @@ export async function bootstrapModule(ctx) {
         );
         providerRemovers.push(
             registerJishoLookupProvider(library, {
+                cacheRevision: MODULE_MANIFEST.version,
                 contentRoot: path.join(libraryRoot, "content"),
                 log: ctx.log,
             }),

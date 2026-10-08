@@ -303,8 +303,10 @@ function jishoSuggestion(index, layer, label, data) {
 
 function createCachedJishoLookup({ fetchImplementation, endpoint }) {
     const cache = new Map();
-    return async (label) => {
-        if (cache.has(label)) return cache.get(label);
+    return async (label, refresh = false) => {
+        const cached = cache.get(label);
+        if (!refresh && cached && cached.expiresAt > Date.now())
+            return cached.request;
         const request = (async () => {
             const response = await requestJisho(
                 fetchImplementation,
@@ -316,7 +318,10 @@ function createCachedJishoLookup({ fetchImplementation, endpoint }) {
                 throw new Error("jisho_response_invalid");
             return data;
         })();
-        cache.set(label, request);
+        cache.set(label, {
+            request,
+            expiresAt: Date.now() + 24 * 60 * 60 * 1000,
+        });
         if (cache.size > CACHE_LIMIT) cache.delete(cache.keys().next().value);
         try {
             return await request;
@@ -329,6 +334,7 @@ function createCachedJishoLookup({ fetchImplementation, endpoint }) {
 
 export function createJishoLookupProvider({
     contentRoot,
+    cacheRevision,
     log,
     fetchImplementation = globalThis.fetch,
     endpoint = JISHO_ENDPOINT,
@@ -362,6 +368,8 @@ export function createJishoLookupProvider({
         id: PROVIDER_ID,
         metadata: providerMetadata(),
         capabilities: ["dictionary"],
+        searchable: true,
+        cacheRevision,
         fields: ["pronunciation", "jlpt_level", "dictionary_data"],
         supports(schema, layer) {
             return (
@@ -370,7 +378,7 @@ export function createJishoLookupProvider({
                 SUPPORTED_LAYERS.has(layer?.id)
             );
         },
-        async lookup({ layer, label }) {
+        async lookup({ layer, label, refresh = false }) {
             const normalizedLookupLabel = normalizedLabel(label);
             if (
                 !normalizedLookupLabel ||
@@ -395,12 +403,12 @@ export function createJishoLookupProvider({
             try {
                 const kanjiRecord =
                     layer.id === "alt-characters"
-                        ? await lookupKanji(normalizedLookupLabel)
+                        ? await lookupKanji(normalizedLookupLabel, refresh)
                         : null;
                 const data =
                     layer.id === "alt-characters"
                         ? { data: kanjiRecord ? [kanjiRecord] : [] }
-                        : await lookupJisho(normalizedLookupLabel);
+                        : await lookupJisho(normalizedLookupLabel, refresh);
                 return data.data.flatMap((record) => {
                     const exactForm = record.japanese?.find(
                         ({ word, reading }) =>
