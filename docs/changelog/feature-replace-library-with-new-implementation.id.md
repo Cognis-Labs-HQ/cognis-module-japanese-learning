@@ -61,3 +61,9 @@ Kanji di luar konten bawaan kini menggunakan halaman Kanji khusus Jisho, bukan A
 - https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/8f7dc3d4e7fd2e1289279776bbd4e0fb0c5b5d7e
 - https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/1cebe54686f65998585f0f2c0d54fab0c2a55cd3
 - https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/89e41b48892eda01034870c030c621ee7163a1c6
+
+## Pencarian dan Penyegaran Resmi
+
+Pencarian kosakata dan Kanji mengambil data Jisho lengkap meskipun konten bawaan sudah cocok. Resolusi Kana tetap lokal dan dikelola penyedia. Pencarian konten bawaan tersedia jika pengambilan melalui jaringan secara eksplisit tidak tersedia. Permintaan kosakata dan Kanji memakai utilitas cache terbatas dengan masa berlaku; kegagalan permintaan lama tidak dapat menghapus hasil penyegaran yang lebih baru.
+
+- https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/edef816c8438941f2976e892ef9a65c2c95b8fae

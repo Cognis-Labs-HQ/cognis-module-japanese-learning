@@ -55,21 +55,16 @@ test("Jisho provider publishes localized composer metadata", () => {
     assert.equal(provider.supports(schema, { id: "sentences" }), false);
 });
 
-test("Jisho provider resolves native content before network lookup", async () => {
-    let requests = 0;
+test("Jisho provider resolves native content when network lookup is unavailable", async () => {
     const provider = createJishoLookupProvider({
         contentRoot,
-        async fetchImplementation() {
-            requests += 1;
-            throw new Error("unexpected request");
-        },
+        fetchImplementation: null,
     });
     const [suggestion] = await provider.lookup({
         schema,
         layer: wordLayer,
         label: "猫",
     });
-    assert.equal(requests, 0);
     assert.equal(suggestion.label, "猫");
     assert.ok(
         suggestion.definitions.some(
@@ -644,4 +639,43 @@ test("Jisho advertises navigation search and refreshes its provider cache", asyn
     assert.equal(calls, 1);
     await provider.lookup({ ...input, refresh: true });
     assert.equal(calls, 2);
+});
+
+test("Jisho search retrieves full provider data for bundled words and honors Refresh", async () => {
+    let requests = 0;
+    const provider = createJishoLookupProvider({
+        contentRoot,
+        async fetchImplementation() {
+            requests += 1;
+            return {
+                ok: true,
+                async json() {
+                    return {
+                        data: [
+                            {
+                                slug: "猫",
+                                japanese: [{ word: "猫", reading: "ねこ" }],
+                                senses: [
+                                    { english_definitions: ["cat", "feline"] },
+                                ],
+                                tags: [],
+                                jlpt: [],
+                            },
+                        ],
+                    };
+                },
+            };
+        },
+    });
+    const input = { schema, layer: wordLayer, label: "猫" };
+    const [first] = await provider.lookup(input);
+    assert.deepEqual(
+        first.definitions.map((value) => value.translations.en),
+        ["cat", "feline"],
+    );
+    assert.equal(requests, 1);
+    await provider.lookup(input);
+    assert.equal(requests, 1);
+    await provider.lookup({ ...input, refresh: true });
+    assert.equal(requests, 2);
 });

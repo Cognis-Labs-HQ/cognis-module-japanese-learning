@@ -1,3 +1,4 @@
+import { createLookupCache } from "../reuse/lookup-cache.js";
 import { requestJisho } from "./jisho-request.js";
 
 function text(markup) {
@@ -81,29 +82,12 @@ export function parseJishoKanji(html, label) {
 }
 
 export function createJishoKanjiLookup({ fetchImplementation, endpoint }) {
-    const cache = new Map();
-    return async (label, refresh = false) => {
-        const cached = cache.get(label);
-        if (!refresh && cached && cached.expiresAt > Date.now())
-            return cached.request;
-        const request = (async () => {
-            const response = await requestJisho(
-                fetchImplementation,
-                `${endpoint}/${encodeURIComponent(`${label} #kanji`)}`,
-                "text/html",
-            );
-            return parseJishoKanji(await response.text(), label);
-        })();
-        cache.set(label, {
-            request,
-            expiresAt: Date.now() + 24 * 60 * 60 * 1000,
-        });
-        if (cache.size > 512) cache.delete(cache.keys().next().value);
-        try {
-            return await request;
-        } catch (error) {
-            cache.delete(label);
-            throw error;
-        }
-    };
+    return createLookupCache(async (label) => {
+        const response = await requestJisho(
+            fetchImplementation,
+            `${endpoint}/${encodeURIComponent(`${label} #kanji`)}`,
+            "text/html",
+        );
+        return parseJishoKanji(await response.text(), label);
+    });
 }

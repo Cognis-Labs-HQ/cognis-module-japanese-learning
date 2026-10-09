@@ -60,3 +60,9 @@ Jisho の単語 API (`/api/v1/search/words`) は語形、読み、意味、タ�
 - https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/8f7dc3d4e7fd2e1289279776bbd4e0fb0c5b5d7e
 - https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/1cebe54686f65998585f0f2c0d54fab0c2a55cd3
 - https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/89e41b48892eda01034870c030c621ee7163a1c6
+
+## 提供元検索と更新
+
+単語と漢字の検索は、同梱コンテンツに一致するカードがあっても完全なJishoデータを取得します。仮名の解決は引き続きコンテンツ提供元がローカルで行います。ネットワーク取得が明示的に利用できない場合は同梱データを使用できます。単語と漢字のリクエストは容量と有効期限を持つ共通キャッシュを利用し、古いリクエストの失敗によって新しい更新結果が削除されることを防ぎます。
+
+- https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/edef816c8438941f2976e892ef9a65c2c95b8fae

@@ -60,3 +60,9 @@ Jishos Wort-API (`/api/v1/search/words`) liefert Wortformen, Lesungen, Bedeutung
 - https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/8f7dc3d4e7fd2e1289279776bbd4e0fb0c5b5d7e
 - https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/1cebe54686f65998585f0f2c0d54fab0c2a55cd3
 - https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/89e41b48892eda01034870c030c621ee7163a1c6
+
+## Verbindliche Suche und Aktualisierung
+
+Wort- und Kanji-Suchen laden vollständige Jisho-Datensätze auch bei Treffern in den mitgelieferten Inhalten. Kana werden weiterhin lokal vom Inhaltsanbieter aufgelöst. Mitgelieferte Inhalte sind verfügbar, wenn der Netzwerkabruf ausdrücklich nicht verfügbar ist. Wort- und Kanji-Anfragen verwenden dieselbe begrenzte Cachefunktion mit Ablaufzeit; eine fehlgeschlagene ältere Anfrage kann kein neueres aktualisiertes Ergebnis entfernen.
+
+- https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/edef816c8438941f2976e892ef9a65c2c95b8fae

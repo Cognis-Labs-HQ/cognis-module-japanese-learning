@@ -1,3 +1,4 @@
+import { createLookupCache } from "../reuse/lookup-cache.js";
 import { requestJisho, jishoFailureDetails } from "./jisho-request.js";
 import { createJishoKanjiLookup } from "./jisho-kanji.js";
 import { readdir, readFile } from "node:fs/promises";
@@ -302,12 +303,8 @@ function jishoSuggestion(index, layer, label, data) {
 }
 
 function createCachedJishoLookup({ fetchImplementation, endpoint }) {
-    const cache = new Map();
-    return async (label, refresh = false) => {
-        const cached = cache.get(label);
-        if (!refresh && cached && cached.expiresAt > Date.now())
-            return cached.request;
-        const request = (async () => {
+    return createLookupCache(
+        async (label) => {
             const response = await requestJisho(
                 fetchImplementation,
                 `${endpoint}?keyword=${encodeURIComponent(label)}`,
@@ -317,19 +314,9 @@ function createCachedJishoLookup({ fetchImplementation, endpoint }) {
             if (!data || !Array.isArray(data.data))
                 throw new Error("jisho_response_invalid");
             return data;
-        })();
-        cache.set(label, {
-            request,
-            expiresAt: Date.now() + 24 * 60 * 60 * 1000,
-        });
-        if (cache.size > CACHE_LIMIT) cache.delete(cache.keys().next().value);
-        try {
-            return await request;
-        } catch (error) {
-            cache.delete(label);
-            throw error;
-        }
-    };
+        },
+        { limit: CACHE_LIMIT },
+    );
 }
 
 export function createJishoLookupProvider({
@@ -398,8 +385,8 @@ export function createJishoLookupProvider({
                 layer.id,
                 normalizedLookupLabel,
             );
-            if (native.length) return native;
-            if (typeof fetchImplementation !== "function") return [];
+            if (layer.id === "characters") return native;
+            if (typeof fetchImplementation !== "function") return native;
             try {
                 const kanjiRecord =
                     layer.id === "alt-characters"

@@ -60,3 +60,9 @@ Jisho’s documented word API (`/api/v1/search/words`) returns lexical forms, re
 - https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/8f7dc3d4e7fd2e1289279776bbd4e0fb0c5b5d7e
 - https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/1cebe54686f65998585f0f2c0d54fab0c2a55cd3
 - https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/89e41b48892eda01034870c030c621ee7163a1c6
+
+## Authoritative Search and Refresh
+
+Word and Kanji searches retrieve complete Jisho records even when bundled content already matches. Kana resolution remains provider-owned and local. Bundled lookups are available when network fetching is explicitly unavailable. Word and Kanji requests share a bounded, expiring cache utility; a failed older request cannot discard a newer refreshed result.
+
+- https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/edef816c8438941f2976e892ef9a65c2c95b8fae
