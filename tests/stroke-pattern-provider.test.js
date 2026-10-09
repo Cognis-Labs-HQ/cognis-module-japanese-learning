@@ -167,3 +167,32 @@ test("stroke provider logs packaged-data failures safely", async () => {
         },
     ]);
 });
+
+test("remote stroke lookup bounds storage and retries expired missing assets", async () => {
+    let timestamp = 0;
+    const requests = [];
+    const provider = createStrokePatternProvider({
+        contentRoot,
+        cacheOptions: {
+            limit: 1,
+            ttl: 1000,
+            negativeTtl: 10,
+            now: () => timestamp,
+        },
+        fetchImplementation: async (url) => {
+            requests.push(url);
+            return { ok: false, status: 404 };
+        },
+    });
+    const lookup = (label) =>
+        provider.lookup({ schema, layer: KanjiLayer, label });
+    await lookup("龍");
+    await lookup("龍");
+    assert.equal(requests.length, 1);
+    timestamp = 10;
+    await lookup("龍");
+    assert.equal(requests.length, 2);
+    await lookup("鯨");
+    await lookup("龍");
+    assert.equal(requests.length, 4);
+});

@@ -2,7 +2,7 @@
     "id": "study-language-ja",
     "uuid": "e905927f-b133-572a-92ce-2ea8645e5ceb",
     "name": "module.study-language-ja.name",
-    "version": "2.2.92",
+    "version": "2.2.93",
     "class": "extension",
     "coreApiVersion": "v1",
     "capabilities": ["study:language:ja"],
@@ -103,7 +103,7 @@
         },
         {
             "path": "api/jisho-lookup-provider.js",
-            "sha256": "4b98f5c9a8cf9a65d65d87d896250870226b69ef150e63261af9a2894de70c26"
+            "sha256": "5f5cd25124f60e1f13eadb1a35785323a11dbea97a6b9a0558104c145a2577a0"
         },
         {
             "path": "api/jisho-request.js",
@@ -111,7 +111,7 @@
         },
         {
             "path": "api/stroke-pattern-provider.js",
-            "sha256": "db804ec7df057631b85edd2d78e408ccceec4a1d3af2228d8da2f3fad20b7dc1"
+            "sha256": "ce2f41ea15ee755dc40e43ea44ee1a489d9c938c08560ef7d729dd1a23d8d114"
         },
         {
             "path": "api/svg-path-sampler.js",
@@ -671,7 +671,7 @@
         },
         {
             "path": "data/library/manifest.json",
-            "sha256": "b4141dfb81acc4c1dd93b9924e7cfa8dc3367154b4af95012ded0260825eea4e"
+            "sha256": "bd2ba9dbe8cd1882a33dec5cb5fb412afaddb75b969401f51753d5dee4006a87"
         },
         {
             "path": "data/library/schema.json",
@@ -679,19 +679,19 @@
         },
         {
             "path": "docs/jisho.de.md",
-            "sha256": "9f0a7aa12ee116e78507520a70185fa580b9a292741e4f192d2183f995c26e2e"
+            "sha256": "f764599b0a6e3bc2e49a65280a09a80a12d134402bf6dc2a443e229134fbb203"
         },
         {
             "path": "docs/jisho.en.md",
-            "sha256": "9626152e9d2ecd5738b9417d24e283a751a7b9acc836c21655a3149e2d550483"
+            "sha256": "16443f040b05c1a6e650a7e15b0a9047e790c14713e92202a8d13c34d2978c9d"
         },
         {
             "path": "docs/jisho.id.md",
-            "sha256": "d49320e97b9f4cdfc38f7b9d5bfaf3493b44df2339770259f86cc31a466c1c26"
+            "sha256": "f10581b07063e6e5e6c175d105be0f9f7d73a6c90c596afbecc68ed027253236"
         },
         {
             "path": "docs/jisho.ja.md",
-            "sha256": "f8aebfe636198d45da6ee199291431b3041f9a2fa5f30d0204488df1dc6fdae5"
+            "sha256": "e9a82f9941c9ca0ec791b3aa84a33a89cfe28b835dc7cf71143be5a8eeb12852"
         },
         {
             "path": "docs/standard.de.md",
@@ -711,15 +711,19 @@
         },
         {
             "path": "package-lock.json",
-            "sha256": "6fe5e6ff06f6182b25a6470d1fcf2a1940894ff9dae6c99278eb56de153a4e2d"
+            "sha256": "0ecd774800a9872b838240839ecd6795da3fe08b0393a1b0652a512f348fd01d"
         },
         {
             "path": "package.json",
-            "sha256": "b0d6a2912f205d047870e24299459f7403a3d2af93bc529d6e45faf75c6aefaa"
+            "sha256": "a96a7f1deadac6220f7bb2ea5c0f4522f03fbfc89642070e09cb85418c388b7e"
+        },
+        {
+            "path": "reuse/content.js",
+            "sha256": "90a0394e209f568a97d2957afe398e763a5cb97198ca04fbe3dab263855d12e5"
         },
         {
             "path": "reuse/lookup-cache.js",
-            "sha256": "3d469b0d173cb2971ffdf1d9fa2aa3f7d7c62ec60bc65f6519ba5d52908f22f6"
+            "sha256": "2cbc3fb0d8596cf1f91dbcd8393fdf575189b2e7d5cfedb08b4093ab8ead2b90"
         },
         {
             "path": "routes.json",
@@ -799,7 +803,7 @@
         },
         {
             "path": "tests/lookup-cache.test.js",
-            "sha256": "f19e9e2dbc7467e9682bb9b8dd9898a214a82ff16e63fc7a77e40e1d766a64c5"
+            "sha256": "604f33f389cef267e8dec920f15d07dae06d966c67fc22ff762c56ba7ab0231c"
         },
         {
             "path": "tests/relationship-authoring.test.js",
@@ -811,7 +815,7 @@
         },
         {
             "path": "tests/stroke-pattern-provider.test.js",
-            "sha256": "3679be61b65fac9359a4a4b3f4d3fc69954988cc23a6df51de26e3232cc6e8c6"
+            "sha256": "238eb0bf2bf7c2e395e3db80bdcba8461f5ebd5047a8e31e2d2c49bdabd02c4f"
         },
         {
             "path": "tests/stroke-pattern.test.js",

@@ -1,5 +1,5 @@
-import { readdir, readFile } from "node:fs/promises";
-import path from "node:path";
+import { readContentLayers } from "../reuse/content.js";
+import { createLookupCache } from "../reuse/lookup-cache.js";
 import { sampleSvgPath } from "./svg-path-sampler.js";
 
 const PROVIDER_ID = "study-language-ja:stroke-patterns";
@@ -75,23 +75,17 @@ async function fetchPattern(label, fetchImplementation, sourceBaseUrl) {
 
 async function loadPatterns(contentRoot) {
     const patterns = new Map();
-    for (const layer of SUPPORTED_LAYERS) {
-        const directory = path.join(contentRoot, layer);
-        const files = (await readdir(directory))
-            .filter((name) => name.endsWith(".json"))
-            .sort();
-        for (const name of files) {
-            const records = JSON.parse(
-                await readFile(path.join(directory, name), "utf8"),
-            );
-            for (const record of records) {
-                const pattern = record.fields?.stroke_pattern;
-                if (!pattern) continue;
-                patterns.set(`${layer}\u0000${record.label.normalize()}`, {
-                    entryId: record.id,
-                    pattern,
-                });
-            }
+    for (const [layer, records] of await readContentLayers(
+        contentRoot,
+        SUPPORTED_LAYERS,
+    )) {
+        for (const record of records) {
+            const pattern = record.fields?.stroke_pattern;
+            if (!pattern) continue;
+            patterns.set(`${layer}\u0000${record.label.normalize()}`, {
+                entryId: record.id,
+                pattern,
+            });
         }
     }
     return patterns;
@@ -102,9 +96,13 @@ export function createStrokePatternProvider({
     log,
     fetchImplementation = globalThis.fetch,
     sourceBaseUrl = DEFAULT_SOURCE_BASE_URL,
+    cacheOptions,
 }) {
     let patternsPromise;
-    const remotePatterns = new Map();
+    const remotePattern = createLookupCache(
+        (label) => fetchPattern(label, fetchImplementation, sourceBaseUrl),
+        { negativeTtl: 5 * 60 * 1000, ...cacheOptions },
+    );
 
     async function patterns() {
         patternsPromise ??= loadPatterns(contentRoot).catch((error) => {
@@ -172,19 +170,8 @@ export function createStrokePatternProvider({
             }
             let result;
             try {
-                if (!remotePatterns.has(normalizedLabel)) {
-                    remotePatterns.set(
-                        normalizedLabel,
-                        fetchPattern(
-                            normalizedLabel,
-                            fetchImplementation,
-                            sourceBaseUrl,
-                        ),
-                    );
-                }
-                result = await remotePatterns.get(normalizedLabel);
+                result = await remotePattern(normalizedLabel);
             } catch (error) {
-                remotePatterns.delete(normalizedLabel);
                 log?.("error", "Japanese stroke source request failed.", {
                     component: "study-language-ja",
                     operation: "fetch_stroke_pattern",

@@ -41,3 +41,25 @@ test("lookup caching coalesces callers and evicts beyond its configured capacity
     await lookup("first");
     assert.equal(calls, 3);
 });
+
+test("negative asset results expire promptly without replacing newer refreshes", async () => {
+    let timestamp = 0;
+    let calls = 0;
+    const lookup = createLookupCache(
+        () => {
+            calls += 1;
+            return calls === 1 ? null : "available";
+        },
+        { ttl: 1000, negativeTtl: 10, now: () => timestamp },
+    );
+    assert.equal(await lookup("asset"), null);
+    timestamp = 9;
+    assert.equal(await lookup("asset"), null);
+    assert.equal(calls, 1);
+    timestamp = 10;
+    assert.equal(await lookup("asset"), "available");
+    assert.equal(calls, 2);
+    timestamp = 100;
+    assert.equal(await lookup("asset"), "available");
+    assert.equal(calls, 2);
+});

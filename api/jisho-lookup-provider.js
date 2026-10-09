@@ -1,7 +1,6 @@
 import { requestJisho, jishoFailureDetails } from "./jisho-request.js";
 import { createJishoKanjiLookup } from "./jisho-kanji.js";
-import { readdir, readFile } from "node:fs/promises";
-import path from "node:path";
+import { readContentLayers } from "../reuse/content.js";
 
 const PROVIDER_ID = "study-language-ja:jisho";
 const SCHEMA_ID = "japanese-core";
@@ -33,21 +32,10 @@ function providerMetadata() {
 }
 
 async function loadNativeContent(contentRoot) {
-    const layers = new Map();
-    for (const layer of [...SUPPORTED_LAYERS, "definitions"]) {
-        const records = [];
-        const directory = path.join(contentRoot, layer);
-        for (const name of (await readdir(directory)).sort()) {
-            if (!name.endsWith(".json")) continue;
-            const shard = JSON.parse(
-                await readFile(path.join(directory, name), "utf8"),
-            );
-            for (const record of shard) {
-                records.push(record);
-            }
-        }
-        layers.set(layer, records);
-    }
+    const layers = await readContentLayers(contentRoot, [
+        ...SUPPORTED_LAYERS,
+        "definitions",
+    ]);
     return {
         layers,
         byLabel(layer, label) {

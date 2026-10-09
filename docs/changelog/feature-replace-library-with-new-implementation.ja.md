@@ -14,7 +14,7 @@ JLPT フィルターは未選択で開始し、任意の動詞の種類フィル
 
 Jisho プロバイダーはすべての発音と順序付きの仮名グループ、語義ごとのインポート可能な定義、語彙分類、JLPT・一般語タグ、出典 URL を返します。`study:library:provider` への登録で辞書機能を宣言します。異表記、品詞、語義の注記、制限、方言、関連語、帰属情報を含む出典レコード全体を、任意の非表示スキーマフィールド `dictionary_data` に JSON として保持します。
 
-Cognis PR #226 は共通の結果プレビュー、定義のインポート、不足する翻訳の取得操作を提供します。プロバイダーは実際の出典の訳文を返し、Cognis が任意のローカライズ機能を通じてドイツ語、英語、インドネシア語、日本語を取得します。このモジュールは訳文を捏造したり、英語を別の言語の欄にコピーしたりしません。ネットワーク検索の前にローカルのコンテンツを検索し、分類とタグも保持します。
+一致が一件なら開いている編集画面に直接反映し、複数なら横並びのプレビューから選択して確認します。語彙の検索は入力文と構成トークンを変更しません。読みと定義は即座に確定し、セミコロンで区切られた意味もそれぞれ個別の定義にします。不足する UI 言語の翻訳は Cognis の任意のローカライズ能力が担当します。モジュールは翻訳を捏造せず、英語を他言語欄に複写しません。出典 URL と完全な元データは非表示の `dictionary_data` メタデータだけに保存します。
 
 スキーマ改訂 88 とモジュール・コンテンツパックのバージョン 2.2.84 で出典データのフィールドを公開します。ホストのプレビューですべての語義をインポートするか、定義数の上限内で語義を選択できます。リンクした語義にかかわらず、元の検索結果全体は保存されます。
 
@@ -40,34 +40,19 @@ Jishoの単語検索結果では、英語の意味をセミコロンでまとめ
 
 ## 辞書のすべての候補
 
-Jishoの提供元は、使用できる単語の結果をそれぞれの正規表記、読み、定義、品詞、タグ、関係、非表示の元データとともにすべて返します。Cognisは取り込む前に複数の候補を選択して確認する画面を表示します。インストール済みデータの一致をネットワーク検索より優先し、漢字検索は引き続き一文字専用のリクエストを使用します。モジュールとコンテンツパックはバージョン2.2.89となり、スキーマリビジョン88を維持します。
+一致が一件なら開いている編集画面に直接反映し、複数なら横並びのプレビューから選択して確認します。語彙の検索は入力文と構成トークンを変更しません。読みと定義は即座に確定し、セミコロンで区切られた意味もそれぞれ個別の定義にします。不足する UI 言語の翻訳は Cognis の任意のローカライズ能力が担当します。モジュールは翻訳を捏造せず、英語を他言語欄に複写しません。出典 URL と完全な元データは非表示の `dictionary_data` メタデータだけに保存します。
 
 ## 辞書検索とキャッシュ
 
-辞書提供元は `searchable: true` と `dictionary` 機能でナビゲーション検索を有効にします。辞書検索が許可された対応レイヤーのみを検索し、文は対象外です。専用の検索結果ページにカードのプレビューと全定義を表示し、元データは非表示のメタデータとして保持します。明示的なインポートには通常のカード作成画面を使用します。Cognis は提供元、スキーマの版、正規化した検索語ごとに結果を24時間保存し、同時検索をまとめ、再起動後もキャッシュを保持します。更新すると提供元に再問い合わせします。ローカルカードと発音リンクは現在アクセス可能な Library で解決します。Jisho に差分配信 API はないため、新しい項目は更新または期限切れ後に検出します。
+辞書キャッシュは Cognis core の `core:cache` が管理します。一時間後にクエリをコールドとし、次回利用時に変更を確認します。変更は十二時間の境界で公開し、変更がない内容は保持します。同時問い合わせは確認処理を共有し、確認の失敗時には正常なキャッシュを維持します。永続キャッシュは再起動後も残ります。モジュールは辞書問い合わせの予定や応答キャッシュを管理しません。Jisho に軽量な変更通知はないため通常の検索応答で確認します。手動の Refresh 操作はありません。ローカルリンクは現在アクセス可能な Library のカードを参照します。
 
 ## 文のインポート要件
 
 Jisho の単語 API (`/api/v1/search/words`) は語形、読み、意味、タグ、品詞を返します。文全体の検索でも構成語が返る場合がありますが、JSON に文の翻訳、トークンの位置、活用の対応関係、助詞の結び付きは含まれません。例文検索はコーパスの検索であり、任意の入力の翻訳ではありません。信頼できるワンクリックインポートには、表層位置・基本形・品詞・文脈に応じた読みを返す日本語形態素解析器、文の翻訳提供元、活用を Cognis の変換記述に対応付けるモジュール側のグラフ計画処理が必要です。元の文と句読点を正確に再構成し、発音を既存の仮名へ解決し、既存の語彙・助詞・文字を優先します。作成できるのは不足する編集可能な語彙や漢字と定義だけです。文字と助詞は提供元専用のままです。ホストはグラフ全体、範囲、アクセス権、曖昧さ、重複、原子的な取り消しを検証します。Jisho は語彙と漢字の情報を補えますが、この処理全体は提供しません。実装が完成するまで文インポート機能を公開しません。
 
-## コミット
+## 正式な検索結果
 
-- [785fb21](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/785fb21beeb8addd3160e4dc46e0052f69a5efa1)
-
-- [26eeb3e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/26eeb3e8b152bb7ee22f5bb9dee7ba67f430cbf6)
-- [941f2b4](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/941f2b43d74698a049a57b125f9de3199c2b0afe)
-- https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/fdf23190c35562d4e355844b807986e32b67f594
-- https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/48b4d1aab97d3cce49a7a653d65058d5fc74b6f4
-- https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/253824ced22f7925a032af37cada4a917331bb8b
-- https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/8f7dc3d4e7fd2e1289279776bbd4e0fb0c5b5d7e
-- https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/1cebe54686f65998585f0f2c0d54fab0c2a55cd3
-- https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/89e41b48892eda01034870c030c621ee7163a1c6
-
-## 提供元検索と更新
-
-単語と漢字の検索は、同梱コンテンツに一致するカードがあっても完全なJishoデータを取得します。仮名の解決は引き続きコンテンツ提供元がローカルで行います。ネットワーク取得が明示的に利用できない場合は同梱データを使用できます。単語と漢字のリクエストは容量と有効期限を持つ共通キャッシュを利用し、古いリクエストの失敗によって新しい更新結果が削除されることを防ぎます。
-
-- https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/edef816c8438941f2976e892ef9a65c2c95b8fae
+単語と漢字の問い合わせは、内蔵データに一致しても Jisho の正式な結果を取得します。内蔵データはネットワーク取得が明示的に利用できない場合の代替であり、仮名の解決はプロバイダー内で行います。一文字の漢字専用検索は訓読み・音読み、意味、画数、学年、JLPT、頻度を取得します。Cognis の User-Agent、15 秒のタイムアウト、安全なエラーログを使用し、通信障害を空の検索結果として扱いません。
 
 ## 安定した辞書検索
 
@@ -78,3 +63,21 @@ Cognis core は `core:cache` で辞書キャッシュを管理します。保存
 ## 辞書の読みのグラフ
 
 辞書の元データは作成画面と詳細画面で非表示のメタデータとして保持します。取得した発音には親カードと同じ公開範囲の非表示語彙カードを使用します。複数の読みを持つ漢字では各読みに非表示カードを作り、名前を元の漢字へ、発音を順序付きのかなへリンクします。読みが一つの漢字は直接かなへリンクします。単語全体の読みは利用可能な最も近い漢字の読みの構成要素と残りのかなで構成します。定義は非表示の読みへ直接リンクします。Cognis は提供元の識別子を解決し、通常のフィールド、レイヤー、依存関係、ACL の検証を通してグラフを一括保存します。文字と助詞の作成は提供元に限定します。同じひらがなの読みを繰り返すだけのカタカナ候補は、辞書がそのカタカナ表記を示す場合を除いて除外します。漢字の正式な音読みと実際の外来語の読みは保持します。
+
+## 検証済みの操作ステージ
+
+KanjiVG の筆順ファイルには別の上限付きモジュールキャッシュを使います。最大 512 件、正常な結果は 24 時間、存在しないファイルは五分間保持します。同時取得は共有し、失敗した取得は破棄します。このファイルキャッシュは辞書検索や画面操作を管理しません。Jisho と KanjiVG は `reuse/content.js` の決定的なデータ読み込みを共有し、筆順プロバイダーは `reuse/lookup-cache.js` を利用します。 モジュールとコンテンツパックのバージョン 2.2.93 はスキーマ改訂 88 を維持します。Jisho はホストの `study:library:provider` を通じて `searchable: true` と `dictionary` 能力を登録します。仮名・漢字・語彙を扱い、文の検索とプロバイダー所有の助詞の作成は対象外です。
+
+## コミット
+
+- [f910563](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/f9105630f0ee87cad60fc67c99f46a311bcdb68b)
+- [785fb21](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/785fb21beeb8addd3160e4dc46e0052f69a5efa1)
+- [26eeb3e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/26eeb3e8b152bb7ee22f5bb9dee7ba67f430cbf6)
+- [941f2b4](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/941f2b43d74698a049a57b125f9de3199c2b0afe)
+- https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/fdf23190c35562d4e355844b807986e32b67f594
+- https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/48b4d1aab97d3cce49a7a653d65058d5fc74b6f4
+- https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/253824ced22f7925a032af37cada4a917331bb8b
+- https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/8f7dc3d4e7fd2e1289279776bbd4e0fb0c5b5d7e
+- https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/1cebe54686f65998585f0f2c0d54fab0c2a55cd3
+- https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/89e41b48892eda01034870c030c621ee7163a1c6
+- https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/edef816c8438941f2976e892ef9a65c2c95b8fae
