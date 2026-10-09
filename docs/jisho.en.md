@@ -38,7 +38,7 @@ The Jisho provider now returns every usable word result with its own canonical l
 
 ## Dictionary search and caching
 
-Dictionary providers opt into navigation search with `searchable: true` and the `dictionary` capability. Search uses only supported layers that allow dictionary lookup; sentences remain excluded. Results open on the dedicated Search Results page, with card previews, full definitions, hidden source metadata, and the normal card composer for deliberate imports. Cognis persists results by provider, schema revision, and normalized query for 24 hours, coalesces concurrent queries, and retains the cache across restarts. Refresh explicitly retrieves the provider again. Fresh local cards and pronunciation links resolve against the current accessible Library rather than cached entry permissions. Provider enablement and schema changes control availability. Jisho has no incremental change feed, so new upstream entries are discovered by refresh or expiry, not by an unsupported delta query.
+Cognis core owns dictionary caching through `core:cache`. A cached query becomes cold after one hour; its next use probes the provider for changes. Changed results remain pending until the twelve-hour publication boundary, and unchanged results retain their content. Concurrent queries share one probe, and failed probes preserve the last successful result. Cache state survives restarts. Modules retrieve provider data without scheduling queries or maintaining provider-response caches. Jisho has no lightweight change feed, so a probe requires the ordinary search response. There is no manual Refresh control. Local pronunciation and card links always resolve against currently accessible content.
 
 ## Sentence import requirements
 
@@ -46,4 +46,8 @@ Jisho’s documented word API (`/api/v1/search/words`) returns lexical forms, re
 
 ## Authoritative Search and Refresh
 
-Word and Kanji searches retrieve complete Jisho records even when bundled content already matches. Kana resolution remains provider-owned and local. Bundled lookups are available when network fetching is explicitly unavailable. Word and Kanji requests share a bounded, expiring cache utility; a failed older request cannot discard a newer refreshed result.
+Jisho retrieves current lexical and Kanji data on host requests. Exact word/reading matches rank above related matches, kana-preferred entries keep their conventional Kana form, and Wikipedia-only title results are excluded. Missing readings never become definitions or invented pronunciations. The provider preserves definitions and source metadata separately; Cognis owns all cache policy.
+
+## Dictionary reading graphs
+
+Dictionary source data remains invisible metadata in composers and detail views. Imported pronunciations use hidden Vocabulary readings with the same scope as their parent. Multi-reading Kanji uses one hidden record per reading, with a title link to its source Kanji and ordered Kana pronunciation links; single-reading Kanji links directly to Kana. Complete word readings compose from the nearest authored Kanji-reading segments and remaining Kana when available. Definitions are linked directly to hidden readings. Cognis resolves provider identities and commits the graph atomically through normal field, layer, dependency and ACL validation. Characters and particles remain provider-owned. Redundant Katakana echoes of an equivalent Hiragana reading are filtered unless the dictionary declares that Katakana spelling; authoritative Kanji on-readings and genuine loanword readings are preserved.

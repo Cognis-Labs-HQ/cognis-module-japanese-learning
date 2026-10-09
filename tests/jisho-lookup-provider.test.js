@@ -1,3 +1,4 @@
+import { readFile } from "node:fs/promises";
 import assert from "node:assert/strict";
 import path from "node:path";
 import test from "node:test";
@@ -89,7 +90,7 @@ test("Jisho provider resolves native content when network lookup is unavailable"
     assert.equal(suggestion.confidence, 1);
 });
 
-test("Jisho provider populates fields, detects links, and caches requests", async () => {
+test("Jisho provider populates fields and detects links for every retrieval", async () => {
     const requests = [];
     const provider = createJishoLookupProvider({
         contentRoot,
@@ -107,7 +108,7 @@ test("Jisho provider populates fields, detects links, and caches requests", asyn
     const input = { schema, layer: wordLayer, label: "猫又" };
     const [first] = await provider.lookup(input);
     const [second] = await provider.lookup(input);
-    assert.equal(requests.length, 1);
+    assert.equal(requests.length, 2);
     assert.equal(
         requests[0].url,
         "https://jisho.test/api?keyword=%E7%8C%AB%E5%8F%88",
@@ -127,7 +128,7 @@ test("Jisho provider populates fields, detects links, and caches requests", asyn
         ],
     );
     assert.deepEqual(
-        first.referenceGroups["reading-kana"][0].map(
+        first.linkedEntries[0].entry.referenceGroups["reading-kana"][0].map(
             ({ entryId, position }) => ({ entryId, position }),
         ),
         [
@@ -322,10 +323,13 @@ test("Jisho provider never emits a partial Kana pronunciation group", async () =
         layer: wordLayer,
         label: "コーヒー",
     });
-    assert.equal(suggestion.referenceGroups, undefined);
+    assert.deepEqual(
+        suggestion.linkedEntries[0].entry.referenceGroups["reading-kana"],
+        [[]],
+    );
 });
 
-test("Jisho provider does not expose hidden pronunciation shims", async () => {
+test("Jisho provider returns an empty result for an unmatched lexical query", async () => {
     let requests = 0;
     const provider = createJishoLookupProvider({
         contentRoot,
@@ -394,7 +398,7 @@ test("Jisho retains all senses and raw source data with every reading group", as
         label: "猫又",
     });
     assert.deepEqual(suggestion.fields.pronunciation, ["ねこまた", "ねこ"]);
-    assert.equal(suggestion.referenceGroups["reading-kana"].length, 2);
+    assert.equal(suggestion.linkedEntries.length, 2);
     assert.deepEqual(
         suggestion.definitions.map(({ translations }) => translations.en),
         [
@@ -566,15 +570,15 @@ test("dictionary readings resolve compound Kana as existing content-provider cha
         label: "猫又",
     });
     assert.deepEqual(
-        suggestion.referenceGroups["reading-kana"][0].map(
-            ({ entryId }) => entryId,
-        ),
+        suggestion.linkedEntries[0].entry.referenceGroups[
+            "reading-kana"
+        ][0].map(({ entryId }) => entryId),
         ["ja:char:kyo", "ja:char:u", "ja:char:kku", "ja:char:kku"],
     );
     assert.deepEqual(
-        suggestion.referenceGroups["reading-kana"][0].map(
-            ({ position }) => position,
-        ),
+        suggestion.linkedEntries[0].entry.referenceGroups[
+            "reading-kana"
+        ][0].map(({ position }) => position),
         [0, 1, 2, 3],
     );
 });
@@ -623,7 +627,7 @@ test("Jisho returns every candidate with its own readings, definitions, and prov
     );
 });
 
-test("Jisho advertises navigation search and refreshes its provider cache", async () => {
+test("Jisho retrieves provider data for each host-owned query", async () => {
     let calls = 0;
     const provider = createJishoLookupProvider({
         contentRoot,
@@ -636,12 +640,12 @@ test("Jisho advertises navigation search and refreshes its provider cache", asyn
     const input = { layer: { id: "words" }, label: "unlistedword" };
     await provider.lookup(input);
     await provider.lookup(input);
-    assert.equal(calls, 1);
-    await provider.lookup({ ...input, refresh: true });
     assert.equal(calls, 2);
+    await provider.lookup({ ...input, refresh: true });
+    assert.equal(calls, 3);
 });
 
-test("Jisho search retrieves full provider data for bundled words and honors Refresh", async () => {
+test("Jisho retrieves full provider data for bundled words", async () => {
     let requests = 0;
     const provider = createJishoLookupProvider({
         contentRoot,
@@ -675,7 +679,110 @@ test("Jisho search retrieves full provider data for bundled words and honors Ref
     );
     assert.equal(requests, 1);
     await provider.lookup(input);
-    assert.equal(requests, 1);
-    await provider.lookup({ ...input, refresh: true });
     assert.equal(requests, 2);
+    await provider.lookup(input);
+    assert.equal(requests, 3);
+});
+
+test("greeting searches prefer exact dictionary meanings over Wikipedia title matches", async () => {
+    const payload = JSON.parse(
+        await readFile(
+            new URL("./fixtures/jisho-greeting.json", import.meta.url),
+            "utf8",
+        ),
+    );
+    const provider = createJishoLookupProvider({
+        contentRoot,
+        fetchImplementation: async () => ({
+            ok: true,
+            json: async () => payload,
+        }),
+    });
+    const results = await provider.lookup({
+        layer: wordLayer,
+        label: "こんにちは",
+    });
+    assert.equal(results.length, 1);
+    assert.equal(results[0].label, "こんにちは");
+    assert.deepEqual(results[0].fields.pronunciation, [
+        "こんにちは",
+        "こんにちわ",
+    ]);
+    assert.equal(results[0].definitions[0].translations.en, "hello");
+    assert.equal(results[0].confidence, 0.99);
+    assert.equal(results[0].linkedEntries.length, 2);
+});
+
+test("exact readings outrank related dictionary matches and missing readings stay empty", async () => {
+    const payload = jishoResponse();
+    payload.data.push({
+        slug: "猫",
+        japanese: [{ word: "猫", reading: "ねこ" }],
+        senses: [{ english_definitions: ["cat"], parts_of_speech: ["Noun"] }],
+    });
+    payload.data.push({
+        slug: "named",
+        japanese: [{ word: "猫の名前" }],
+        senses: [
+            { english_definitions: ["cat name"], parts_of_speech: ["Noun"] },
+        ],
+    });
+    const provider = createJishoLookupProvider({
+        contentRoot,
+        fetchImplementation: async () => ({
+            ok: true,
+            json: async () => payload,
+        }),
+    });
+    const results = await provider.lookup({ layer: wordLayer, label: "ねこ" });
+    assert.ok(results[1].confidence > results[0].confidence);
+    assert.deepEqual(results[2].fields.pronunciation, []);
+    assert.equal(results[2].definitions[0].translations.en, "cat name");
+});
+
+test("dictionary reading cards preserve genuine Katakana and filter redundant query echoes", async () => {
+    const payload = jishoResponse();
+    payload.data[0].japanese = [
+        { word: "猫又", reading: "ねこまた" },
+        { word: "猫又", reading: "ネコマタ" },
+    ];
+    const provider = createJishoLookupProvider({
+        contentRoot,
+        fetchImplementation: async () => ({
+            ok: true,
+            json: async () => payload,
+        }),
+    });
+    const [result] = await provider.lookup({ layer: wordLayer, label: "猫又" });
+    assert.deepEqual(result.fields.pronunciation, ["ねこまた"]);
+    assert.equal(result.linkedEntries[0].entry.hidden, true);
+    assert.equal(result.linkedEntries[0].entry.class, "reading:complete");
+    assert.equal(
+        result.referenceGroups["pronunciation-readings"][0][0].entryId,
+        result.linkedEntries[0].key,
+    );
+    payload.data[0].japanese = [{ word: "ネコマタ", reading: "ネコマタ" }];
+    const [loanword] = await provider.lookup({
+        layer: wordLayer,
+        label: "ネコマタ",
+    });
+    assert.deepEqual(loanword.fields.pronunciation, ["ネコマタ"]);
+});
+
+test("complete dictionary readings compose through the nearest authored Kanji reading", async () => {
+    const payload = jishoResponse();
+    payload.data[0].slug = "直す";
+    payload.data[0].japanese = [{ word: "直す", reading: "なおす" }];
+    const provider = createJishoLookupProvider({
+        contentRoot,
+        fetchImplementation: async () => ({
+            ok: true,
+            json: async () => payload,
+        }),
+    });
+    const [result] = await provider.lookup({ layer: wordLayer, label: "直す" });
+    const groups = result.linkedEntries[0].entry.referenceGroups;
+    assert.equal(groups["pronunciation-readings"][0][0].position, 0);
+    assert.equal(groups["reading-kana"][0][0].entryId, "ja:char:su");
+    assert.equal(groups["reading-kana"][0][0].position, 1);
 });

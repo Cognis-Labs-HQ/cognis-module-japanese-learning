@@ -35,7 +35,7 @@ test("Kanji pages preserve Kun and On readings, meanings, and original notation"
     );
 });
 
-test("failed Kanji responses are retried while successful responses are cached", async () => {
+test("Kanji retrieval retries failures and returns current provider responses", async () => {
     let requests = 0;
     const lookup = createJishoKanjiLookup({
         endpoint: "https://jisho.test/search",
@@ -48,5 +48,5 @@ test("failed Kanji responses are retried while successful responses are cached",
     await assert.rejects(lookup("教"), /jisho_request_failed/);
     const first = await lookup("教");
     assert.deepEqual(await lookup("教"), first);
-    assert.equal(requests, 2);
+    assert.equal(requests, 3);
 });

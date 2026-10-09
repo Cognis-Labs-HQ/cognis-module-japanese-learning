@@ -1,4 +1,3 @@
-import { createLookupCache } from "../reuse/lookup-cache.js";
 import { requestJisho, jishoFailureDetails } from "./jisho-request.js";
 import { createJishoKanjiLookup } from "./jisho-kanji.js";
 import { readdir, readFile } from "node:fs/promises";
@@ -15,7 +14,6 @@ const MAX_LOOKUP_LENGTH = 100;
 const KANJI = /\p{Script=Han}/u;
 const SINGLE_KANA = /^[\p{Script=Hiragana}\p{Script=Katakana}]$/u;
 const SINGLE_KANJI = /^\p{Script=Han}$/u;
-const CACHE_LIMIT = 512;
 
 function normalizedLabel(value) {
     return String(value ?? "")
@@ -202,18 +200,100 @@ function definitionReferences(index, record) {
         .map(({ id }) => ({ entryId: id, relation: "definitions" }));
 }
 
-function jishoSuggestion(index, layer, label, data) {
+function readingComposition(index, label, reading) {
+    const units = [...label];
+    const failures = new Set();
+    const walk = (position, offset) => {
+        if (position === units.length)
+            return offset === reading.length ? [] : null;
+        const key = `${position}:${offset}`;
+        if (failures.has(key)) return null;
+        const unit = units[position];
+        const source = index.byLabel("alt-characters", unit)[0];
+        const candidates = source
+            ? (index.layers.get("words") ?? []).filter(
+                  (entry) =>
+                      entry.hidden &&
+                      entry.class === "reading:kanji" &&
+                      entry.references?.some(
+                          (reference) =>
+                              reference.relation === "spelling" &&
+                              reference.entryId === source.id,
+                      ),
+              )
+            : index.byLabel("characters", unit);
+        for (const candidate of candidates) {
+            if (!reading.startsWith(candidate.label, offset)) continue;
+            const tail = walk(position + 1, offset + candidate.label.length);
+            if (tail)
+                return [
+                    {
+                        entryId: candidate.id,
+                        relation: source
+                            ? "pronunciation-readings"
+                            : "reading-kana",
+                        position,
+                    },
+                    ...tail,
+                ];
+        }
+        failures.add(key);
+        return null;
+    };
+    const references = walk(0, 0);
+    return references
+        ? Object.fromEntries(
+              ["pronunciation-readings", "reading-kana"].flatMap((relation) => {
+                  const group = references.filter(
+                      (reference) => reference.relation === relation,
+                  );
+                  return group.length ? [[relation, [group]]] : [];
+              }),
+          )
+        : { "reading-kana": [kanaReferences(index, reading, "reading-kana")] };
+}
+
+function jishoSuggestion(index, layer, label, data, query = label) {
     const record = selectJishoRecord(data, label, layer === "words");
     if (!record) return null;
     const form = selectJapaneseForm(record, label);
-    const canonicalLabel = form.word || form.reading;
-    const readings = [
+    const kanaPreferred = record.senses.some((sense) =>
+        sense.tags?.includes("Usually written using kana alone"),
+    );
+    const canonicalLabel =
+        kanaPreferred && form.reading
+            ? form.reading
+            : form.word || form.reading;
+    let readings = [
         ...new Set(
             record.japanese
                 .map(({ reading }) => reading)
                 .filter((reading) => reading && JAPANESE_TEXT.test(reading)),
         ),
     ];
+    if (!record.kanji) {
+        const hiragana = new Set(
+            readings.filter((value) =>
+                /^[\p{Script=Hiragana}ー]+$/u.test(value),
+            ),
+        );
+        readings = readings.filter((reading) => {
+            if (
+                !/^[\p{Script=Katakana}ー]+$/u.test(reading) ||
+                record.japanese.some(({ word }) => word === reading)
+            )
+                return true;
+            const normalized = [...reading]
+                .map((character) => {
+                    const code = character.codePointAt(0);
+                    return code >= 0x30a1 && code <= 0x30f6
+                        ? String.fromCodePoint(code - 0x60)
+                        : character;
+                })
+                .join("");
+            return !hiragana.has(normalized);
+        });
+    }
     const fields = {};
     if (layer === "characters") {
         fields.character_class = /\p{Script=Katakana}/u.test(label)
@@ -272,6 +352,54 @@ function jishoSuggestion(index, layer, label, data) {
         references.push(...definitionReferences(index, record));
     if (layer === "words")
         references.unshift(...spellingReferences(index, canonicalLabel));
+    const intermediateReadings =
+        layer === "words" ||
+        (layer === "alt-characters" && readings.length > 1);
+    const linkedEntries = intermediateReadings
+        ? readings.map((reading, position) => ({
+              key: `lookup-reading:${position}`,
+              entry: {
+                  schemaId: SCHEMA_ID,
+                  layer: "words",
+                  label: reading,
+                  class:
+                      layer === "alt-characters"
+                          ? "reading:kanji"
+                          : "reading:complete",
+                  hidden: true,
+                  fields: {
+                      pronunciation: [reading],
+                      ...(fields.jlpt_level
+                          ? { jlpt_level: fields.jlpt_level }
+                          : {}),
+                  },
+                  references:
+                      layer === "alt-characters"
+                          ? [
+                                {
+                                    entryId: "$root",
+                                    relation: "spelling",
+                                    position: 0,
+                                },
+                            ]
+                          : spellingReferences(index, canonicalLabel),
+                  referenceGroups:
+                      layer === "words"
+                          ? readingComposition(index, canonicalLabel, reading)
+                          : {
+                                "reading-kana": [
+                                    kanaReferences(
+                                        index,
+                                        reading,
+                                        "reading-kana",
+                                    ),
+                                ],
+                            },
+              },
+          }))
+        : [];
+    const readingRelationship =
+        layer === "words" ? "pronunciation-readings" : "readings";
     return {
         provider: PROVIDER_ID,
         label: canonicalLabel,
@@ -289,34 +417,51 @@ function jishoSuggestion(index, layer, label, data) {
         ],
         definitions: layer === "characters" ? [] : definitions,
         sourceUrl: `https://jisho.org/word/${encodeURIComponent(record.slug || canonicalLabel)}`,
-        ...(pronunciationGroups.length
+        ...(linkedEntries.length
             ? {
+                  linkedEntries,
                   referenceGroups: {
-                      [layer === "words" ? "reading-kana" : "single-readings"]:
-                          pronunciationGroups,
+                      [readingRelationship]: linkedEntries.map(({ key }) => [
+                          {
+                              entryId: key,
+                              relation: readingRelationship,
+                              position: 0,
+                          },
+                      ]),
                   },
               }
-            : {}),
+            : pronunciationGroups.length
+              ? {
+                    referenceGroups: {
+                        [layer === "words"
+                            ? "reading-kana"
+                            : "single-readings"]: pronunciationGroups,
+                    },
+                }
+              : {}),
         provenance: `jisho:${record.slug || encodeURIComponent(label)}`,
-        confidence: canonicalLabel === label ? 0.95 : 0.9,
+        confidence: record.japanese.some(
+            ({ word, reading }) =>
+                normalizedLabel(word) === query ||
+                normalizedLabel(reading) === query,
+        )
+            ? 0.99
+            : 0.75,
     };
 }
 
-function createCachedJishoLookup({ fetchImplementation, endpoint }) {
-    return createLookupCache(
-        async (label) => {
-            const response = await requestJisho(
-                fetchImplementation,
-                `${endpoint}?keyword=${encodeURIComponent(label)}`,
-                "application/json",
-            );
-            const data = await response.json();
-            if (!data || !Array.isArray(data.data))
-                throw new Error("jisho_response_invalid");
-            return data;
-        },
-        { limit: CACHE_LIMIT },
-    );
+function createJishoLookup({ fetchImplementation, endpoint }) {
+    return async (label) => {
+        const response = await requestJisho(
+            fetchImplementation,
+            `${endpoint}?keyword=${encodeURIComponent(label)}`,
+            "application/json",
+        );
+        const data = await response.json();
+        if (!data || !Array.isArray(data.data))
+            throw new Error("jisho_response_invalid");
+        return data;
+    };
 }
 
 export function createJishoLookupProvider({
@@ -328,7 +473,7 @@ export function createJishoLookupProvider({
     kanjiEndpoint = "https://jisho.org/search",
 }) {
     let nativeIndexPromise;
-    const lookupJisho = createCachedJishoLookup({
+    const lookupJisho = createJishoLookup({
         fetchImplementation,
         endpoint,
     });
@@ -365,7 +510,7 @@ export function createJishoLookupProvider({
                 SUPPORTED_LAYERS.has(layer?.id)
             );
         },
-        async lookup({ layer, label, refresh = false }) {
+        async lookup({ layer, label }) {
             const normalizedLookupLabel = normalizedLabel(label);
             if (
                 !normalizedLookupLabel ||
@@ -390,13 +535,37 @@ export function createJishoLookupProvider({
             try {
                 const kanjiRecord =
                     layer.id === "alt-characters"
-                        ? await lookupKanji(normalizedLookupLabel, refresh)
+                        ? await lookupKanji(normalizedLookupLabel)
                         : null;
                 const data =
                     layer.id === "alt-characters"
                         ? { data: kanjiRecord ? [kanjiRecord] : [] }
-                        : await lookupJisho(normalizedLookupLabel, refresh);
+                        : await lookupJisho(normalizedLookupLabel);
                 return data.data.flatMap((record) => {
+                    if (
+                        !Array.isArray(record?.japanese) ||
+                        !record.japanese.length ||
+                        !Array.isArray(record.senses) ||
+                        record.japanese.some(
+                            (form) =>
+                                !form ||
+                                (form.word !== undefined &&
+                                    typeof form.word !== "string") ||
+                                (form.reading !== undefined &&
+                                    typeof form.reading !== "string"),
+                        )
+                    )
+                        throw new Error("jisho_response_invalid");
+                    if (
+                        record.senses.length &&
+                        record.senses.every((sense) =>
+                            sense.parts_of_speech?.includes(
+                                "Wikipedia definition",
+                            ),
+                        )
+                    )
+                        return [];
+
                     const exactForm = record.japanese?.find(
                         ({ word, reading }) =>
                             word === normalizedLookupLabel ||
@@ -412,6 +581,7 @@ export function createJishoLookupProvider({
                         layer.id,
                         lookupLabel,
                         { data: [record] },
+                        normalizedLookupLabel,
                     );
                     if (suggestion && layer.id === "alt-characters")
                         suggestion.sourceUrl = `${kanjiEndpoint}/${encodeURIComponent(`${normalizedLookupLabel} #kanji`)}`;

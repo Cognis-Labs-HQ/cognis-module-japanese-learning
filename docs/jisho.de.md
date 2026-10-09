@@ -38,7 +38,7 @@ Der Jisho-Anbieter liefert nun alle verwendbaren Worttreffer mit jeweils eigenem
 
 ## Wörterbuchsuche und Cache
 
-Wörterbuchanbieter aktivieren die Navigationssuche mit `searchable: true` und der Fähigkeit `dictionary`. Gesucht wird nur in unterstützten Ebenen mit erlaubter Wörterbuchsuche; Sätze bleiben ausgeschlossen. Die eigene Suchergebnisseite zeigt Kartenvorschauen und alle Definitionen, verbirgt Quelldaten und öffnet für bewusste Importe den normalen Karteneditor. Cognis speichert Ergebnisse nach Anbieter, Schemaversion und normalisierter Anfrage für 24 Stunden, bündelt gleichzeitige Anfragen und erhält den Cache über Neustarts. Aktualisieren fragt den Anbieter erneut ab. Lokale Karten und Ausspracheverknüpfungen werden anhand der aktuell zugänglichen Library aufgelöst. Jisho bietet keinen inkrementellen Änderungsfeed; neue Einträge werden durch Aktualisierung oder Ablauf entdeckt.
+Cognis Core verwaltet den Wörterbuchcache über `core:cache`. Eine gespeicherte Anfrage wird nach einer Stunde kalt; bei der nächsten Nutzung prüft Cognis den Anbieter auf Änderungen. Geänderte Ergebnisse bleiben bis zur Zwölf-Stunden-Grenze vorgemerkt, unveränderte Inhalte bleiben erhalten. Gleichzeitige Anfragen teilen eine Prüfung; fehlgeschlagene Prüfungen behalten das letzte erfolgreiche Ergebnis. Der Zustand übersteht Neustarts. Module laden Anbieterdaten, planen aber weder Anfragen noch eigene Antwortcaches. Jisho bietet keinen schlanken Änderungsfeed, daher benötigt eine Prüfung die normale Suchantwort. Es gibt keine manuelle Aktualisierungsschaltfläche. Aussprache- und Kartenlinks werden stets anhand aktuell zugänglicher Inhalte aufgelöst.
 
 ## Voraussetzungen für Satzimporte
 
@@ -46,4 +46,8 @@ Jishos Wort-API (`/api/v1/search/words`) liefert Wortformen, Lesungen, Bedeutung
 
 ## Verbindliche Suche und Aktualisierung
 
-Wort- und Kanji-Suchen laden vollständige Jisho-Datensätze auch bei Treffern in den mitgelieferten Inhalten. Kana werden weiterhin lokal vom Inhaltsanbieter aufgelöst. Mitgelieferte Inhalte sind verfügbar, wenn der Netzwerkabruf ausdrücklich nicht verfügbar ist. Wort- und Kanji-Anfragen verwenden dieselbe begrenzte Cachefunktion mit Ablaufzeit; eine fehlgeschlagene ältere Anfrage kann kein neueres aktualisiertes Ergebnis entfernen.
+Jisho lädt auf Host-Anfragen aktuelle Wort- und Kanji-Daten. Exakte Wort- und Lesungstreffer stehen vor verwandten Treffern, bevorzugt in Kana geschriebene Einträge behalten diese Form, und reine Wikipedia-Titel werden ausgeschlossen. Fehlende Lesungen werden weder zu Definitionen noch zu erfundenen Aussprachen. Definitionen und Quelldaten bleiben getrennt; sämtliche Cacheregeln liegen bei Cognis.
+
+## Lesungsgraphen aus dem Wörterbuch
+
+Wörterbuch-Quelldaten bleiben unsichtbare Metadaten in Formularen und Detailansichten. Importierte Aussprachen verwenden verborgene Vokabel-Lesungen im selben Bereich wie ihre übergeordnete Karte. Kanji mit mehreren Lesungen erhalten je einen verborgenen Datensatz mit Titelverweis zum Kanji und geordneten Kana-Verweisen; Kanji mit einer Lesung verweisen direkt auf Kana. Vollständige Wortlesungen verwenden verfügbare passende Kanji-Lesungssegmente und verbleibende Kana. Definitionen werden direkt mit den verborgenen Lesungen verknüpft. Cognis löst Anbieteridentitäten auf und speichert den Graphen atomar mit normaler Feld-, Ebenen-, Abhängigkeits- und ACL-Prüfung. Zeichen und Partikeln bleiben anbieterverwaltet. Redundante Katakana-Wiederholungen einer gleichwertigen Hiragana-Lesung werden herausgefiltert, sofern das Wörterbuch keine entsprechende Katakana-Schreibweise angibt; verbindliche On-Lesungen und echte Lehnwortlesungen bleiben erhalten.

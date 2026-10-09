@@ -38,7 +38,7 @@ Penyedia Jisho kini mengembalikan setiap hasil kata yang dapat digunakan dengan 
 
 ## Pencarian kamus dan cache
 
-Penyedia kamus mengaktifkan pencarian navigasi melalui `searchable: true` dan kapabilitas `dictionary`. Pencarian hanya memakai lapisan yang didukung dan mengizinkan kamus; kalimat tetap dikecualikan. Halaman Hasil Pencarian menampilkan pratinjau kartu dan semua definisi, menyembunyikan metadata sumber, serta membuka penyusun kartu biasa untuk impor yang disengaja. Cognis menyimpan hasil berdasarkan penyedia, revisi skema, dan kueri yang dinormalisasi selama 24 jam, menggabungkan kueri bersamaan, dan mempertahankan cache setelah mulai ulang. Muat ulang secara eksplisit mengambil data penyedia lagi. Kartu lokal dan tautan pelafalan diselesaikan berdasarkan Library yang saat ini dapat diakses. Jisho tidak memiliki umpan perubahan inkremental; entri baru ditemukan melalui penyegaran atau kedaluwarsa.
+Cognis core mengelola cache kamus melalui `core:cache`. Kueri tersimpan menjadi dingin setelah satu jam; penggunaan berikutnya memeriksa perubahan pada penyedia. Hasil yang berubah menunggu batas penerbitan dua belas jam, sementara isi yang tidak berubah tetap dipertahankan. Kueri bersamaan berbagi satu pemeriksaan; kegagalan pemeriksaan mempertahankan hasil terakhir yang berhasil. Status cache bertahan setelah mulai ulang. Modul mengambil data penyedia tanpa menjadwalkan kueri atau menyimpan cache respons sendiri. Jisho tidak menyediakan umpan perubahan ringan, sehingga pemeriksaan memerlukan respons pencarian biasa. Tidak ada kontrol Muat Ulang manual. Tautan pelafalan dan kartu selalu diselesaikan terhadap konten yang saat ini dapat diakses.
 
 ## Persyaratan impor kalimat
 
@@ -46,4 +46,8 @@ API kata Jisho (`/api/v1/search/words`) memberikan bentuk leksikal, bacaan, makn
 
 ## Pencarian dan Penyegaran Resmi
 
-Pencarian kosakata dan Kanji mengambil data Jisho lengkap meskipun konten bawaan sudah cocok. Resolusi Kana tetap lokal dan dikelola penyedia. Pencarian konten bawaan tersedia jika pengambilan melalui jaringan secara eksplisit tidak tersedia. Permintaan kosakata dan Kanji memakai utilitas cache terbatas dengan masa berlaku; kegagalan permintaan lama tidak dapat menghapus hasil penyegaran yang lebih baru.
+Jisho mengambil data leksikal dan Kanji terbaru atas permintaan host. Kecocokan kata/bacaan tepat diutamakan atas kecocokan terkait, entri yang lazim ditulis dalam Kana mempertahankan bentuk tersebut, dan hasil judul khusus Wikipedia dikecualikan. Bacaan yang hilang tidak diganti dengan definisi atau pelafalan buatan. Definisi dan metadata sumber tetap terpisah; Cognis mengatur seluruh kebijakan cache.
+
+## Graf bacaan kamus
+
+Data sumber kamus tetap menjadi metadata tersembunyi dalam penyusun kartu dan tampilan detail. Pelafalan impor memakai bacaan Kosakata tersembunyi dengan cakupan yang sama dengan kartu induknya. Kanji dengan beberapa bacaan memakai satu rekaman tersembunyi per bacaan, dengan tautan judul ke Kanji sumber dan tautan pelafalan Kana berurutan; Kanji dengan satu bacaan terhubung langsung ke Kana. Bacaan kata lengkap memakai segmen bacaan Kanji tersedia yang paling dekat dan Kana sisanya. Definisi ditautkan langsung ke bacaan tersembunyi. Cognis menyelesaikan identitas penyedia dan menyimpan graf secara atomik melalui validasi bidang, lapisan, dependensi, dan ACL biasa. Karakter dan partikel tetap dikelola penyedia. Gema Katakana berlebihan dari bacaan Hiragana setara disaring kecuali kamus menyatakan ejaan Katakana tersebut; bacaan on Kanji resmi dan bacaan kata serapan asli dipertahankan.
