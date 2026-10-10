@@ -125,6 +125,11 @@ test("Jisho provider populates fields and detects links for every retrieval", as
                 relation: "spelling",
                 position: 0,
             },
+            {
+                entryId: "lookup-spelling:又",
+                relation: "spelling",
+                position: 1,
+            },
         ],
     );
     assert.deepEqual(
@@ -814,5 +819,61 @@ test("common dictionary entries outrank equally exact uncommon entries without c
     assert.deepEqual(
         results[1].definitions.map(({ translations }) => translations.en),
         ["room", "chamber", "apartment"],
+    );
+});
+
+test("dictionary part-of-speech tags enable only supported transformation families", async () => {
+    for (const [label, reading, part, expected] of [
+        ["いる", "いる", "Ichidan verb", "ichidan"],
+        ["歩く", "あるく", "Godan verb with 'ku' ending", "godan-ku"],
+        ["行く", "いく", "Godan verb - Iku/Yuku special class", "godan-iku"],
+        ["来る", "くる", "Kuru verb - special class", "irregular-kuru"],
+        ["買う", "かう", "Godan verb with 'u' ending", null],
+    ]) {
+        const payload = jishoResponse();
+        payload.data[0].japanese = [{ word: label, reading }];
+        payload.data[0].senses[0].parts_of_speech = [part];
+        const provider = createJishoLookupProvider({
+            contentRoot,
+            fetchImplementation: async () => ({
+                ok: true,
+                json: async () => payload,
+            }),
+        });
+        const [result] = await provider.lookup({ layer: wordLayer, label });
+        assert.equal(result.class, "lexical:verb");
+        assert.ok(result.tags.includes("verb"));
+        if (expected) assert.ok(result.tags.includes(expected));
+        else
+            assert.equal(
+                result.tags.some((tag) => tag.startsWith("godan-")),
+                false,
+            );
+    }
+});
+test("adverbs are classified separately from verbs and preserve Kanji lookup prerequisites", async () => {
+    const payload = jishoResponse();
+    payload.data[0].japanese = [{ word: "確実", reading: "かくじつ" }];
+    payload.data[0].senses[0].parts_of_speech = ["Adverb"];
+    const provider = createJishoLookupProvider({
+        contentRoot,
+        fetchImplementation: async () => ({
+            ok: true,
+            json: async () => payload,
+        }),
+    });
+    const [result] = await provider.lookup({ layer: wordLayer, label: "確実" });
+    assert.equal(result.class, "lexical:adverb");
+    assert.ok(result.tags.includes("adverb"));
+    assert.equal(result.tags.includes("verb"), false);
+    assert.deepEqual(
+        result.prerequisites.map(({ label }) => label),
+        ["確", "実"],
+    );
+    assert.deepEqual(
+        result.references
+            .filter(({ relation }) => relation === "spelling")
+            .map(({ entryId }) => entryId),
+        result.prerequisites.map(({ key }) => key),
     );
 });

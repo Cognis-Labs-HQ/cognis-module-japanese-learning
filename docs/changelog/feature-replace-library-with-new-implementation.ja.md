@@ -66,11 +66,19 @@ Cognis core は `core:cache` で辞書キャッシュを管理します。保存
 
 ## 検証済みの操作ステージ
 
-KanjiVG の筆順ファイルには別の上限付きモジュールキャッシュを使います。最大 512 件、正常な結果は 24 時間、存在しないファイルは五分間保持します。同時取得は共有し、失敗した取得は破棄します。このファイルキャッシュは辞書検索や画面操作を管理しません。Jisho と KanjiVG は `reuse/content.js` の決定的なデータ読み込みを共有し、筆順プロバイダーは `reuse/lookup-cache.js` を利用します。 モジュールとコンテンツパックのバージョン 2.2.94 はスキーマ改訂 88 を維持します。Jisho はホストの `study:library:provider` を通じて `searchable: true` と `dictionary` 能力を登録します。仮名・漢字・語彙を扱い、文の検索とプロバイダー所有の助詞の作成は対象外です。
+KanjiVG の筆順ファイルには別の上限付きモジュールキャッシュを使います。最大 512 件、正常な結果は 24 時間、存在しないファイルは五分間保持します。同時取得は共有し、失敗した取得は破棄します。このファイルキャッシュは辞書検索や画面操作を管理しません。Jisho と KanjiVG は `reuse/content.js` の決定的なデータ読み込みを共有し、筆順プロバイダーは `reuse/lookup-cache.js` を利用します。 モジュールとコンテンツパックのバージョン 2.2.95 はスキーマ改訂 88 を維持します。Jisho はホストの `study:library:provider` を通じて `searchable: true` と `dictionary` 能力を登録します。仮名・漢字・語彙を扱い、文の検索とプロバイダー所有の助詞の作成は対象外です。
 
 ## 一般的な辞書項目
 
 同じ完全一致の候補では、Jishoのis_commonが付いた項目を先に表示します。完全一致は関連候補より優先します。Jishoは意味ごとの頻度を提供しないため、定義は元の順序を維持します。室のroomも、作成画面で順序が反転せず先頭になります。
+
+## 辞書と活用
+
+活用カード内では見出し、読み、定義を同じ列に揃えます。原形を使う操作は中立スタイルのボタンです。ドラッグ中は移動先の前後に縦の挿入マーカーを表示します。Jishoから読み込む語彙には対応する活用グループのタグを保存し、新しく作った動詞は親の構成に配置する前に活用選択を開きます。副詞の品詞も保持しますが、現在の日本語スキーマには副詞の活用セットはありません。
+
+辞書プロバイダーはprerequisitesとして{ key, layer, label }の配列を返せます。作成画面で候補を選択した後、Cognisは指定の公開範囲で既存の複合文字カードを解決し、なければ辞書から取得して定義と読みのグラフを含むカードを作成します。この経路では原子的な文字と助詞を作成できません。主カードと非表示の読みの参照では、別名キーを正式なIDに置き換えます。語彙の入力は変更せず、読み込んだ表記リンクは入力が検索語と一致する間だけ使用します。検索結果を見るだけでは依存カードを作成しません。
+
+不足する必須フィールドは、保存前に登録済みの補助検索プロバイダーから取得します。漢字の筆順パターンにはKanjiVGを使います。各漢字、定義、非表示の読みは、公開範囲を検証した１つのグラフとして保存します。
 
 ## コミット
 
@@ -85,5 +93,5 @@ KanjiVG の筆順ファイルには別の上限付きモジュールキャッシ
 - https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/1cebe54686f65998585f0f2c0d54fab0c2a55cd3
 - https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/89e41b48892eda01034870c030c621ee7163a1c6
 - https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/edef816c8438941f2976e892ef9a65c2c95b8fae
-
 - https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/fc1f65d25aa2e4d52bef4dc5290eb127a7033a68
+- https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/618b1c901ac826fd81a584d5ff9baa98c8033d91

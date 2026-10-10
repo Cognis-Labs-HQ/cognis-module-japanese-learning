@@ -31,3 +31,11 @@ Jisho’s word API provides forms, readings, senses and parts of speech, but no 
 ## Common dictionary entries
 
 For equally exact matches, Jisho entries marked is_common rank ahead of uncommon entries. Exact matches still outrank related matches. Jisho provides no per-sense frequency marker: definitions retain its original sense order, including room first for 室, rather than being reversed by the composer.
+
+## Dictionary transformations
+
+Transformation choices align titles, readings and definitions in a single column within each card. The base-form action uses the neutral button style. Dragging displays a vertical insertion marker before or after the destination placement. Jisho imports retain supported conjugation-family tags on vocabulary cards; newly created verbs enter the transformation chooser before being added to a parent composition. Adverbs retain their lexical classification; the current Japanese schema declares no adverb transform sets.
+
+Dictionary providers may return prerequisites: an array of { key, layer, label } lookup targets. After a composer match is selected, Cognis resolves existing compound-writing cards at the intended scope or retrieves and creates missing cards with their definitions and reading graph. Atomic characters and particles cannot be created through this path. Alias keys resolve to canonical IDs in root and hidden-reading references. Vocabulary input remains unchanged, and imported spelling references are used only while the input still matches the lookup. Search result browsing never creates prerequisites.
+
+Missing required fields are completed through registered auxiliary lookup providers before persistence; Kanji stroke patterns come from KanjiVG. Each Kanji, its definitions and hidden readings commit as one validated scoped graph.

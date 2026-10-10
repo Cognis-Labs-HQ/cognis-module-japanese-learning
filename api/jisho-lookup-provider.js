@@ -1,3 +1,4 @@
+import { readFile } from "node:fs/promises";
 import { requestJisho, jishoFailureDetails } from "./jisho-request.js";
 import { createJishoKanjiLookup } from "./jisho-kanji.js";
 import { readContentLayers } from "../reuse/content.js";
@@ -38,6 +39,18 @@ async function loadNativeContent(contentRoot) {
     ]);
     return {
         layers,
+        transformSets: JSON.parse(
+            await readFile(
+                new URL("../data/library/schema.json", import.meta.url),
+                "utf8",
+            ),
+        ).transformSets,
+        dictionaryClasses: JSON.parse(
+            await readFile(
+                new URL("../data/library/jisho-classes.json", import.meta.url),
+                "utf8",
+            ),
+        ),
         byLabel(layer, label) {
             const identityLabel = normalizedLabel(label);
             return (layers.get(layer) ?? []).filter(
@@ -157,7 +170,7 @@ function kanaReferences(index, reading, relation) {
     }));
 }
 
-function spellingReferences(index, label) {
+function spellingReferences(index, label, prerequisites = false) {
     return [...label].flatMap((character, position) => {
         if (!KANJI.test(character)) return [];
         const reference = exactNativeReference(
@@ -167,7 +180,17 @@ function spellingReferences(index, label) {
             "spelling",
             position,
         );
-        return reference ? [reference] : [];
+        return reference
+            ? [reference]
+            : prerequisites
+              ? [
+                    {
+                        entryId: `lookup-spelling:${character}`,
+                        relation: "spelling",
+                        position,
+                    },
+                ]
+              : [];
     });
 }
 
@@ -333,13 +356,56 @@ function jishoSuggestion(index, layer, label, data, query = label) {
         "noun",
         "expression",
     ].find((value) =>
-        partsOfSpeech.some((part) => part.toLowerCase().includes(value)),
+        partsOfSpeech.some((part) =>
+            new RegExp(`\\b${value}\\b`, "i").test(part),
+        ),
     );
+    const transformTags =
+        layer === "words"
+            ? index.dictionaryClasses.flatMap(
+                  ({ partOfSpeech, transformSet }) => {
+                      if (
+                          !partsOfSpeech.some(
+                              (part) =>
+                                  part.toLowerCase() ===
+                                  partOfSpeech.toLowerCase(),
+                          )
+                      )
+                          return [];
+                      const set = index.transformSets.find(
+                          ({ id }) => id === transformSet,
+                      );
+                      return set?.rules.some(
+                          (rule) =>
+                              rule.fromState === set.baseState &&
+                              canonicalLabel.endsWith(rule.removeSuffix),
+                      )
+                          ? set.matchTags
+                          : [];
+                  },
+              )
+            : [];
+    const prerequisites =
+        layer === "words"
+            ? [
+                  ...new Set(
+                      [...canonicalLabel].filter((character) =>
+                          KANJI.test(character),
+                      ),
+                  ),
+              ].map((label) => ({
+                  key:
+                      index.byLabel("alt-characters", label)[0]?.id ??
+                      `lookup-spelling:${label}`,
+                  layer: "alt-characters",
+                  label,
+              }))
+            : [];
     const references = [];
     if (layer !== "characters")
         references.push(...definitionReferences(index, record));
     if (layer === "words")
-        references.unshift(...spellingReferences(index, canonicalLabel));
+        references.unshift(...spellingReferences(index, canonicalLabel, true));
     const intermediateReadings =
         layer === "words" ||
         (layer === "alt-characters" && readings.length > 1);
@@ -370,7 +436,7 @@ function jishoSuggestion(index, layer, label, data, query = label) {
                                     position: 0,
                                 },
                             ]
-                          : spellingReferences(index, canonicalLabel),
+                          : spellingReferences(index, canonicalLabel, true),
                   referenceGroups:
                       layer === "words"
                           ? readingComposition(index, canonicalLabel, reading)
@@ -393,12 +459,18 @@ function jishoSuggestion(index, layer, label, data, query = label) {
         label: canonicalLabel,
         fields,
         references,
+        ...(prerequisites.length ? { prerequisites } : {}),
         ...(layer === "words" && lexicalClass
             ? { class: `lexical:${lexicalClass}` }
             : {}),
         tags: [
             ...new Set([
                 ...(record.tags ?? []),
+                ...(layer === "words" &&
+                ["verb", "adverb"].includes(lexicalClass)
+                    ? [lexicalClass]
+                    : []),
+                ...transformTags,
                 ...(record.jlpt ?? []),
                 ...(record.is_common ? ["common"] : []),
             ]),

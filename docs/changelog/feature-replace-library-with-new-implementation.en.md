@@ -66,11 +66,19 @@ Dictionary source data remains invisible metadata in composers and detail views.
 
 ## Validated operation stages
 
-KanjiVG stroke assets use a separate module-local bounded lookup cache: at most 512 labels, successful responses for 24 hours and missing assets for five minutes. Concurrent lookups share requests and failures are discarded. This asset cache does not govern dictionary search or app navigation. Jisho and KanjiVG share the deterministic content-shard loader in `reuse/content.js`; the stroke provider consumes `reuse/lookup-cache.js`. Module/content-pack version 2.2.94 retains schema revision 88. Jisho registers through the host `study:library:provider` capability with `searchable: true` and the `dictionary` capability. It supports Kana, Kanji and Vocabulary; sentences and provider-owned particle creation are excluded.
+KanjiVG stroke assets use a separate module-local bounded lookup cache: at most 512 labels, successful responses for 24 hours and missing assets for five minutes. Concurrent lookups share requests and failures are discarded. This asset cache does not govern dictionary search or app navigation. Jisho and KanjiVG share the deterministic content-shard loader in `reuse/content.js`; the stroke provider consumes `reuse/lookup-cache.js`. Module/content-pack version 2.2.95 retains schema revision 88. Jisho registers through the host `study:library:provider` capability with `searchable: true` and the `dictionary` capability. It supports Kana, Kanji and Vocabulary; sentences and provider-owned particle creation are excluded.
 
 ## Common dictionary entries
 
 For equally exact matches, Jisho entries marked is_common rank ahead of uncommon entries. Exact matches still outrank related matches. Jisho provides no per-sense frequency marker: definitions retain its original sense order, including room first for 室, rather than being reversed by the composer.
+
+## Dictionary transformations
+
+Transformation choices align titles, readings and definitions in a single column within each card. The base-form action uses the neutral button style. Dragging displays a vertical insertion marker before or after the destination placement. Jisho imports retain supported conjugation-family tags on vocabulary cards; newly created verbs enter the transformation chooser before being added to a parent composition. Adverbs retain their lexical classification; the current Japanese schema declares no adverb transform sets.
+
+Dictionary providers may return prerequisites: an array of { key, layer, label } lookup targets. After a composer match is selected, Cognis resolves existing compound-writing cards at the intended scope or retrieves and creates missing cards with their definitions and reading graph. Atomic characters and particles cannot be created through this path. Alias keys resolve to canonical IDs in root and hidden-reading references. Vocabulary input remains unchanged, and imported spelling references are used only while the input still matches the lookup. Search result browsing never creates prerequisites.
+
+Missing required fields are completed through registered auxiliary lookup providers before persistence; Kanji stroke patterns come from KanjiVG. Each Kanji, its definitions and hidden readings commit as one validated scoped graph.
 
 ## Commits
 
@@ -85,5 +93,5 @@ For equally exact matches, Jisho entries marked is_common rank ahead of uncommon
 - https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/1cebe54686f65998585f0f2c0d54fab0c2a55cd3
 - https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/89e41b48892eda01034870c030c621ee7163a1c6
 - https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/edef816c8438941f2976e892ef9a65c2c95b8fae
-
 - https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/fc1f65d25aa2e4d52bef4dc5290eb127a7033a68
+- https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/618b1c901ac826fd81a584d5ff9baa98c8033d91
