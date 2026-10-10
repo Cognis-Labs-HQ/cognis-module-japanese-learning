@@ -27,3 +27,7 @@ Aset goresan KanjiVG menggunakan cache modul terpisah dan terbatas: maksimal 512
 API kata Jisho menyediakan bentuk, bacaan, arti, dan kelas kata, tetapi tidak menerjemahkan kalimat sembarang atau menyediakan posisi token, penyelarasan infleksi, dan hubungan partikel. Impor kalimat sekali klik masih memerlukan penganalisis morfologi, penyedia terjemahan kalimat, serta perencana graf milik modul yang mempertahankan teks, tanda baca, dan bacaan tertransformasi. Jisho dapat memperkaya simpul leksikal tetapi tidak menyediakan seluruh alur. Kapabilitas impor kalimat belum ditawarkan.
 
 [StudySphere](https://gitlab.firehawk-systems.com/firehawk/studysphere/-/tree/development) · [Cognis PR #226](https://github.com/Cognis-Labs-HQ/Cognis/pull/226)
+
+## Entri kamus umum
+
+Untuk kecocokan yang sama persis, entri Jisho bertanda is_common didahulukan daripada entri yang tidak umum. Kecocokan persis tetap mengungguli kecocokan terkait. Jisho tidak memberi frekuensi setiap makna: definisi mempertahankan urutan asli, termasuk room sebagai makna pertama 室, bukan dibalik oleh penyusun.

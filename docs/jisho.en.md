@@ -27,3 +27,7 @@ KanjiVG stroke assets use a separate module-local bounded lookup cache: at most 
 Jisho’s word API provides forms, readings, senses and parts of speech, but no arbitrary sentence translation, token offsets, inflection alignment or particle attachment. Reliable one-click sentence import still requires a morphological analyzer, sentence translation provider and module-owned graph planner that preserves original surfaces, punctuation and transformed readings. Jisho can enrich lexical nodes but cannot provide this pipeline alone. No sentence-import capability is advertised.
 
 [StudySphere](https://gitlab.firehawk-systems.com/firehawk/studysphere/-/tree/development) · [Cognis PR #226](https://github.com/Cognis-Labs-HQ/Cognis/pull/226)
+
+## Common dictionary entries
+
+For equally exact matches, Jisho entries marked is_common rank ahead of uncommon entries. Exact matches still outrank related matches. Jisho provides no per-sense frequency marker: definitions retain its original sense order, including room first for 室, rather than being reversed by the composer.

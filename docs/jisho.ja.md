@@ -27,3 +27,7 @@ KanjiVG の筆順ファイルには別の上限付きモジュールキャッシ
 Jisho の単語 API は表記・読み・意味・品詞を提供しますが、任意の文の翻訳、トークン位置、活用の対応、助詞の結び付けを提供しません。確実な一括文取り込みには形態素解析、文の翻訳プロバイダー、元の表記・句読点・活用された読みを保持するモジュール側のグラフ計画が必要です。Jisho は語彙ノードの情報を補えますが、この処理全体は提供できません。文取り込み能力は公開していません。
 
 [StudySphere](https://gitlab.firehawk-systems.com/firehawk/studysphere/-/tree/development) · [Cognis PR #226](https://github.com/Cognis-Labs-HQ/Cognis/pull/226)
+
+## 一般的な辞書項目
+
+同じ完全一致の候補では、Jishoのis_commonが付いた項目を先に表示します。完全一致は関連候補より優先します。Jishoは意味ごとの頻度を提供しないため、定義は元の順序を維持します。室のroomも、作成画面で順序が反転せず先頭になります。

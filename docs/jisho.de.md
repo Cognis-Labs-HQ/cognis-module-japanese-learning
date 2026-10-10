@@ -27,3 +27,7 @@ KanjiVG-Strichmuster verwenden einen getrennten, begrenzten Modulcache: höchste
 Jishos Wort-API liefert Formen, Lesungen, Bedeutungen und Wortarten, aber keine Übersetzung beliebiger Sätze, Tokenpositionen, Flexionszuordnung oder Partikelanbindung. Ein zuverlässiger Satzimport benötigt weiterhin eine morphologische Analyse, einen Übersetzungsanbieter und einen modulverwalteten Graphplaner, der Text, Satzzeichen und flektierte Lesungen erhält. Jisho kann lexikalische Knoten ergänzen, aber diese Pipeline nicht allein bereitstellen. Eine Satzimport-Fähigkeit wird nicht angeboten.
 
 [StudySphere](https://gitlab.firehawk-systems.com/firehawk/studysphere/-/tree/development) · [Cognis PR #226](https://github.com/Cognis-Labs-HQ/Cognis/pull/226)
+
+## Häufige Wörterbucheinträge
+
+Bei gleich genauen Treffern stehen von Jisho mit is_common markierte Einträge vor seltenen Einträgen. Exakte Treffer bleiben vor verwandten Treffern. Jisho liefert keine Häufigkeit einzelner Bedeutungen: Definitionen behalten die ursprüngliche Reihenfolge, darunter room an erster Stelle für 室, statt vom Editor umgekehrt zu werden.

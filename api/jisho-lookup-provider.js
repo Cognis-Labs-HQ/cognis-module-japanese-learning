@@ -433,8 +433,12 @@ function jishoSuggestion(index, layer, label, data, query = label) {
                 normalizedLabel(word) === query ||
                 normalizedLabel(reading) === query,
         )
-            ? 0.99
-            : 0.75,
+            ? record.is_common
+                ? 1
+                : 0.99
+            : record.is_common
+              ? 0.76
+              : 0.75,
     };
 }
 

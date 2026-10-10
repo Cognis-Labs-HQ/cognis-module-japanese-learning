@@ -709,7 +709,7 @@ test("greeting searches prefer exact dictionary meanings over Wikipedia title ma
         "こんにちわ",
     ]);
     assert.equal(results[0].definitions[0].translations.en, "hello");
-    assert.equal(results[0].confidence, 0.99);
+    assert.equal(results[0].confidence, 1);
     assert.equal(results[0].linkedEntries.length, 2);
 });
 
@@ -785,4 +785,34 @@ test("complete dictionary readings compose through the nearest authored Kanji re
     assert.equal(groups["pronunciation-readings"][0][0].position, 0);
     assert.equal(groups["reading-kana"][0][0].entryId, "ja:char:su");
     assert.equal(groups["reading-kana"][0][0].position, 1);
+});
+
+test("common dictionary entries outrank equally exact uncommon entries without changing sense order", async () => {
+    const payload = jishoResponse();
+    payload.data[0].japanese = [{ word: "室", reading: "しつ" }];
+    payload.data[0].senses = [
+        {
+            english_definitions: ["room", "chamber", "apartment"],
+            parts_of_speech: ["Noun"],
+        },
+    ];
+    payload.data.push({
+        ...structuredClone(payload.data[0]),
+        slug: "common-room",
+        is_common: true,
+    });
+    const provider = createJishoLookupProvider({
+        contentRoot,
+        fetchImplementation: async () => ({
+            ok: true,
+            json: async () => payload,
+        }),
+    });
+    const results = await provider.lookup({ layer: wordLayer, label: "室" });
+    assert.equal(results.length, 2);
+    assert.ok(results[1].confidence > results[0].confidence);
+    assert.deepEqual(
+        results[1].definitions.map(({ translations }) => translations.en),
+        ["room", "chamber", "apartment"],
+    );
 });
