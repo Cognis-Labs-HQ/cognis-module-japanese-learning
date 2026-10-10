@@ -1,0 +1,294 @@
+[
+    {
+        "id": "ja:sentence:watashi-mizu-nomu",
+        "label": "私は水を飲む",
+        "references": [
+            {
+                "entryId": "ja:word:watashi",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:mizu",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:nomu",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:def:sentence-watashi-mizu-nomu",
+                "relation": "definitions"
+            }
+        ],
+        "fields": {
+            "pronunciation": ["わたしはみずをのむ"]
+        },
+        "class": "composite"
+    },
+    {
+        "id": "ja:sentence:tomodachi-nihongo-manabu",
+        "label": "友達は日本語を学ぶ",
+        "references": [
+            {
+                "entryId": "ja:word:tomodachi",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:nihongo",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:manabu",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:def:sentence-tomodachi-nihongo-manabu",
+                "relation": "definitions"
+            }
+        ],
+        "fields": {
+            "pronunciation": ["ともだちはにほんごをまなぶ"]
+        },
+        "class": "composite"
+    },
+    {
+        "id": "ja:sentence:neko-kuruma-kuru",
+        "label": "猫は車で来る",
+        "references": [
+            {
+                "entryId": "ja:word:neko",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:kuruma",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:de",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:kuru",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:def:sentence-neko-kuruma-kuru",
+                "relation": "definitions"
+            }
+        ],
+        "fields": {
+            "pronunciation": ["ねこはくるまでくる"]
+        },
+        "class": "composite"
+    },
+    {
+        "id": "ja:sentence:sensei-gakkou-iku",
+        "label": "先生と学校へ行く",
+        "references": [
+            {
+                "entryId": "ja:word:sensei",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:to",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:gakkou",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:e",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:iku",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:def:sentence-sensei-gakkou-iku",
+                "relation": "definitions"
+            }
+        ],
+        "fields": {
+            "pronunciation": ["せんせいとがっこうへいく"]
+        },
+        "class": "composite"
+    },
+    {
+        "id": "ja:sentence:inu-yama-kuru",
+        "label": "犬は山から来る",
+        "references": [
+            {
+                "entryId": "ja:word:inu",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:yama",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:kara",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:kuru",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:def:sentence-inu-yama-kuru",
+                "relation": "definitions"
+            }
+        ],
+        "fields": {
+            "pronunciation": ["いぬはやまからくる"]
+        },
+        "class": "composite"
+    },
+    {
+        "id": "ja:sentence:umi-made-aruku",
+        "label": "海まで歩く",
+        "references": [
+            {
+                "entryId": "ja:word:umi",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:made",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:aruku",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:def:sentence-umi-made-aruku",
+                "relation": "definitions"
+            }
+        ],
+        "fields": {
+            "pronunciation": ["うみまであるく"]
+        },
+        "class": "composite"
+    },
+    {
+        "id": "ja:sentence:ookii-inu-miru",
+        "label": "大きい犬を見る",
+        "references": [
+            {
+                "entryId": "ja:word:ookii",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:word:inu",
+                "relation": "words",
+                "position": 1
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 2
+            },
+            {
+                "entryId": "ja:word:miru",
+                "relation": "words",
+                "position": 3
+            },
+            {
+                "entryId": "ja:def:sentence-ookii-inu-miru",
+                "relation": "definitions"
+            }
+        ],
+        "fields": {
+            "pronunciation": ["おおきいいぬをみる"]
+        },
+        "class": "composite"
+    },
+    {
+        "id": "ja:sentence:chiisai-neko-suki",
+        "label": "小さい猫が好き",
+        "references": [
+            {
+                "entryId": "ja:word:chiisai",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:word:neko",
+                "relation": "words",
+                "position": 1
+            },
+            {
+                "entryId": "ja:particle:ga",
+                "relation": "particles",
+                "position": 2
+            },
+            {
+                "entryId": "ja:word:suki",
+                "relation": "words",
+                "position": 3
+            },
+            {
+                "entryId": "ja:def:sentence-chiisai-neko-suki",
+                "relation": "definitions"
+            }
+        ],
+        "fields": {
+            "pronunciation": ["ちいさいねこがすき"]
+        },
+        "class": "composite"
+    }
+]

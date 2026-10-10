@@ -1,0 +1,565 @@
+[
+    {
+        "id": "ja:word:nihongo",
+        "label": "日本語",
+        "fields": {
+            "jlpt_level": "N5",
+            "pronunciation": ["にほんご"]
+        },
+        "references": [
+            {
+                "entryId": "ja:kanji:nichi",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:kanji:hon",
+                "relation": "spelling",
+                "position": 1
+            },
+            {
+                "entryId": "ja:kanji:go",
+                "relation": "spelling",
+                "position": 2
+            },
+            {
+                "entryId": "ja:def:nihongo",
+                "relation": "definitions"
+            }
+        ],
+        "class": "lexical:noun",
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-nihongo",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:ka-day-counter",
+        "label": "か",
+        "fields": {
+            "jlpt_level": "N5",
+            "pronunciation": ["か"]
+        },
+        "references": [
+            {
+                "entryId": "ja:def:reading-ka",
+                "relation": "definitions"
+            }
+        ],
+        "class": "lexical:counter",
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-ka-day-counter",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:suki",
+        "label": "好き",
+        "fields": {
+            "jlpt_level": "N5",
+            "pronunciation": ["すき"]
+        },
+        "references": [
+            {
+                "entryId": "ja:kanji:core-e5a5bd",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:def:suki",
+                "relation": "definitions"
+            }
+        ],
+        "class": "lexical:adjective",
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-suki",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:watashi",
+        "label": "私",
+        "fields": {
+            "jlpt_level": "N5",
+            "pronunciation": ["わたし"]
+        },
+        "references": [
+            {
+                "entryId": "ja:kanji:core-e7a781",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:def:watashi",
+                "relation": "definitions"
+            }
+        ],
+        "class": "lexical:noun",
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-watashi",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:mizu",
+        "label": "水",
+        "fields": {
+            "jlpt_level": "N5",
+            "pronunciation": ["みず"]
+        },
+        "references": [
+            {
+                "entryId": "ja:kanji:core-e6b0b4",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:def:kanji-core-e6b0b4",
+                "relation": "definitions"
+            }
+        ],
+        "class": "lexical:noun",
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-mizu",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:inu",
+        "label": "犬",
+        "fields": {
+            "jlpt_level": "N5",
+            "pronunciation": ["いぬ"]
+        },
+        "references": [
+            {
+                "entryId": "ja:kanji:core-e78aac",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:def:kanji-core-e78aac",
+                "relation": "definitions"
+            }
+        ],
+        "class": "lexical:noun",
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-inu",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:neko",
+        "label": "猫",
+        "fields": {
+            "jlpt_level": "N5",
+            "pronunciation": ["ねこ"]
+        },
+        "references": [
+            {
+                "entryId": "ja:kanji:core-e78cab",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:def:kanji-core-e78cab",
+                "relation": "definitions"
+            }
+        ],
+        "class": "lexical:noun",
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-neko",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:yama",
+        "label": "山",
+        "fields": {
+            "jlpt_level": "N5",
+            "pronunciation": ["やま"]
+        },
+        "references": [
+            {
+                "entryId": "ja:kanji:core-e5b1b1",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:def:kanji-core-e5b1b1",
+                "relation": "definitions"
+            }
+        ],
+        "class": "lexical:noun",
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-yama",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:kawa-river",
+        "label": "川",
+        "fields": {
+            "jlpt_level": "N5",
+            "pronunciation": ["かわ"]
+        },
+        "references": [
+            {
+                "entryId": "ja:kanji:core-e5b79d",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:def:kanji-core-e5b79d",
+                "relation": "definitions"
+            }
+        ],
+        "class": "lexical:noun",
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-kawa-river",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:umi",
+        "label": "海",
+        "fields": {
+            "jlpt_level": "N5",
+            "pronunciation": ["うみ"]
+        },
+        "references": [
+            {
+                "entryId": "ja:kanji:core-e6b5b7",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:def:umi",
+                "relation": "definitions"
+            }
+        ],
+        "class": "lexical:noun",
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-umi",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:sora",
+        "label": "空",
+        "fields": {
+            "jlpt_level": "N5",
+            "pronunciation": ["そら"]
+        },
+        "references": [
+            {
+                "entryId": "ja:kanji:core-e7a9ba",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:def:kanji-core-e7a9ba",
+                "relation": "definitions"
+            }
+        ],
+        "class": "lexical:noun",
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-sora",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:hana-flower",
+        "label": "花",
+        "fields": {
+            "jlpt_level": "N5",
+            "pronunciation": ["はな"]
+        },
+        "references": [
+            {
+                "entryId": "ja:kanji:core-e88ab1",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:def:kanji-core-e88ab1",
+                "relation": "definitions"
+            }
+        ],
+        "class": "lexical:noun",
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-hana-flower",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:hana-nose",
+        "label": "鼻",
+        "fields": {
+            "jlpt_level": "N5",
+            "pronunciation": ["はな"]
+        },
+        "references": [
+            {
+                "entryId": "ja:kanji:core-e9bcbb",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:def:kanji-core-e9bcbb",
+                "relation": "definitions"
+            }
+        ],
+        "class": "lexical:noun",
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-hana-nose",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:hashi-bridge",
+        "label": "橋",
+        "fields": {
+            "jlpt_level": "N5",
+            "pronunciation": ["はし"]
+        },
+        "references": [
+            {
+                "entryId": "ja:kanji:core-e6a98b",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:def:kanji-core-e6a98b",
+                "relation": "definitions"
+            }
+        ],
+        "class": "lexical:noun",
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-hashi-bridge",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:hashi-chopsticks",
+        "label": "箸",
+        "fields": {
+            "jlpt_level": "N5",
+            "pronunciation": ["はし"]
+        },
+        "references": [
+            {
+                "entryId": "ja:kanji:core-e7aeb8",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:def:kanji-core-e7aeb8",
+                "relation": "definitions"
+            }
+        ],
+        "class": "lexical:noun",
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-hashi-chopsticks",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:ame-rain",
+        "label": "雨",
+        "fields": {
+            "jlpt_level": "N5",
+            "pronunciation": ["あめ"]
+        },
+        "references": [
+            {
+                "entryId": "ja:kanji:core-e99ba8",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:def:kanji-core-e99ba8",
+                "relation": "definitions"
+            }
+        ],
+        "class": "lexical:noun",
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-ame-rain",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:ame-candy",
+        "label": "飴",
+        "fields": {
+            "jlpt_level": "N5",
+            "pronunciation": ["あめ"]
+        },
+        "references": [
+            {
+                "entryId": "ja:kanji:core-e9a3b4",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:def:kanji-core-e9a3b4",
+                "relation": "definitions"
+            }
+        ],
+        "class": "lexical:noun",
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-ame-candy",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:kami-paper",
+        "label": "紙",
+        "fields": {
+            "jlpt_level": "N5",
+            "pronunciation": ["かみ"]
+        },
+        "references": [
+            {
+                "entryId": "ja:kanji:core-e7b499",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:def:kanji-core-e7b499",
+                "relation": "definitions"
+            }
+        ],
+        "class": "lexical:noun",
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-kami-paper",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    }
+]
