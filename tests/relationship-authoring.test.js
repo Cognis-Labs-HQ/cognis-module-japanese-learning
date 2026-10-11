@@ -9,6 +9,7 @@ function readJson(path) {
 }
 
 const schema = readJson("data/library/schema.json");
+
 function readLayer(layer) {
     const directory = new URL(
         `../data/library/content/${layer}/`,

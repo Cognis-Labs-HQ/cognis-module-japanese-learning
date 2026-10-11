@@ -300,8 +300,14 @@ Optional transform boundaries must be omitted when unused; empty localized bound
 
 Visible vocabulary pronunciation fields link to exactly one hidden complete-pronunciation record through `pronunciation-readings`; that record resolves internally through the closest Kanji readings and atomic Kana.
 
-Schema revision 89 declares Explore navigation slugs `kana`, `kanji`, `vocabulary`, and `sentences` under `/study/explore/ja/`. Module and content-pack versions are 2.2.99. Cognis owns imports, limits, deck sharing, and application navigation; the module supplies declarative layer names and dictionary content.
+Schema revision 89 declares Explore navigation slugs `kana`, `kanji`, `vocabulary`, and `sentences` under `/study/explore/ja/`. The content-pack version is 2.2.99; the module integration version is 2.2.100. Cognis owns imports, limits, deck sharing, and application navigation; the module supplies declarative layer names and dictionary content.
 
 ## Starter Flashcard Decks
 
 The Japanese provider declares three starter decks in `data/starter-decks.json`: Hiragana Basics, Everyday Kanji, and First Japanese Words. Each deck has a stable key, localized names, a schema ID, and source record IDs. The language descriptor exposes this declarative data as `starterDecks`. Cognis resolves those records to current canonical Library IDs, hides incomplete decks and decks from disabled providers, and owns browsing, favourites, sharing, and learner progress. The module neither creates decks nor queries the host database.
+
+## Review and lifecycle fixes
+
+Japanese module 2.2.100 requires `study:library:provider` directly and removes lookup registrations when ingestion, capability publication or flow registration fails. Schema 89 and content pack 2.2.99 are retained; this release changes integration and readability, not language data.
+
+Library 2.26.0 exposes `deleteContentPack(root)` on the public provider capability. It removes provider records, dependent cards, pack receipts and assets in one deletion-flow transaction; failed audit hooks roll back the operation. Cascaded deletions use existing Study notifications. Schemas remain available for independent authored content, and uninstall does not blacklist content, so reinstall can restore the pack.

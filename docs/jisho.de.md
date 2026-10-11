@@ -51,3 +51,9 @@ Die primäre Lesung folgt häufigen exakten Worttreffern von Jisho: 僕 zeigt zu
 Cognis bündelt Wörterbuchtreffer gleicher Schreibzusammensetzung als alternative Lesungen und Bedeutungen. Eine andere Schreibweise wird beim Anklicken sofort übernommen und ihre benötigten Kanji werden aufgelöst oder erstellt. Weiter oder Schließen behält die genaue Zusammensetzung und verwirft erweiterte Treffer. Lesekarten behalten ihren Pfad zu einzelnen Kana. Auswahl, Kartenerstellung, Sichtbarkeitsprüfung, Zwischenspeicherung und Benachrichtigungen bleiben Aufgaben des Hosts.
 
 Schemarevision 89 legt die Erkunden-Pfade `kana`, `kanji`, `vocabulary` und `sentences` unter `/study/explore/ja/` fest. Modul und Inhaltspaket haben Version 2.2.98. Cognis verwaltet Importe, Grenzen, Stapelfreigaben und Navigation; das Modul liefert deklarative Ebenennamen und Wörterbuchdaten.
+
+## Review und Lebenszyklus
+
+Das japanische Modul 2.2.100 verlangt direkt `study:library:provider` und entfernt Suchanbieter bei Fehlern im Import, in der Capability-Veröffentlichung oder in der Flow-Registrierung. Schema 89 und Inhaltspaket 2.2.99 bleiben erhalten; diese Version ändert Integration und Lesbarkeit, nicht die Sprachdaten.
+
+Library 2.26.0 stellt `deleteContentPack(root)` über die öffentliche Provider-Capability bereit. Provider-Datensätze, abhängige Karten, Paketbelege und Dateien werden in einer Transaktion des Lösch-Flows entfernt; fehlgeschlagene Audit-Hooks rollen alles zurück. Kaskaden verwenden die vorhandenen Study-Benachrichtigungen. Schemas bleiben für unabhängige eigene Inhalte erhalten. Die Deinstallation sperrt keine Inhalte, sodass eine Neuinstallation das Paket wiederherstellen kann.

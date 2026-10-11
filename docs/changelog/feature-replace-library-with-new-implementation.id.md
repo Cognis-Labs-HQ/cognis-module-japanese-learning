@@ -114,3 +114,9 @@ Penyedia Jepang menyediakan tiga dek awal dalam `data/starter-decks.json`: Dasar
 - https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/315dded455234476da36402728c09b9e64b3fd5d
 
 - https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/4db2d6f76a6328592520ef23528958b42d95e166
+
+## Perbaikan tinjauan
+
+Modul Jepang 2.2.100 langsung mewajibkan `study:library:provider` dan menghapus pendaftaran penyedia saat impor, publikasi kapabilitas, atau pendaftaran alur gagal. Skema 89 dan paket konten 2.2.99 dipertahankan; rilis ini mengubah integrasi dan keterbacaan, bukan data bahasa.
+
+[fd7b3fa2](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/fd7b3fa218e80d8ce2657666adb544680d925fd5)

@@ -300,8 +300,14 @@ Optionale Transformationsgrenzen müssen bei Nichtgebrauch entfallen; leere loka
 
 Aussprachefelder sichtbarer Wortschatzeinträge verlinken über `pronunciation-readings` auf genau einen verborgenen vollständigen Aussprachedatensatz; dieser wird intern über die nächsten Kanji-Lesungen und atomaren Kana aufgelöst.
 
-Schemarevision 89 legt die Erkunden-Pfade `kana`, `kanji`, `vocabulary` und `sentences` unter `/study/explore/ja/` fest. Modul und Inhaltspaket haben Version 2.2.99. Cognis verwaltet Importe, Grenzen, Stapelfreigaben und Navigation; das Modul liefert deklarative Ebenennamen und Wörterbuchdaten.
+Schemarevision 89 legt die Erkunden-Pfade `kana`, `kanji`, `vocabulary` und `sentences` unter `/study/explore/ja/` fest. Das Inhaltspaket hat Version 2.2.99; die Modulintegration hat Version 2.2.100. Cognis verwaltet Importe, Grenzen, Stapelfreigaben und Navigation; das Modul liefert deklarative Ebenennamen und Wörterbuchdaten.
 
 ## Lernkarten-Startdecks
 
 Der japanische Anbieter liefert drei Startdecks in `data/starter-decks.json`: Hiragana-Grundlagen, Kanji im Alltag und Erste japanische Wörter. Jedes Deck hat einen stabilen Schlüssel, übersetzte Namen, eine Schema-ID und Quelldatensatz-IDs. Der Sprachdeskriptor stellt die deklarativen Daten als `starterDecks` bereit. Cognis löst die IDs zu aktuellen kanonischen Library-IDs auf, blendet unvollständige Decks und deaktivierte Anbieter aus und verwaltet Ansicht, Favoriten, Freigaben und Lernfortschritt. Das Modul erstellt keine Decks und fragt die Host-Datenbank nicht ab.
+
+## Review und Lebenszyklus
+
+Das japanische Modul 2.2.100 verlangt direkt `study:library:provider` und entfernt Suchanbieter bei Fehlern im Import, in der Capability-Veröffentlichung oder in der Flow-Registrierung. Schema 89 und Inhaltspaket 2.2.99 bleiben erhalten; diese Version ändert Integration und Lesbarkeit, nicht die Sprachdaten.
+
+Library 2.26.0 stellt `deleteContentPack(root)` über die öffentliche Provider-Capability bereit. Provider-Datensätze, abhängige Karten, Paketbelege und Dateien werden in einer Transaktion des Lösch-Flows entfernt; fehlgeschlagene Audit-Hooks rollen alles zurück. Kaskaden verwenden die vorhandenen Study-Benachrichtigungen. Schemas bleiben für unabhängige eigene Inhalte erhalten. Die Deinstallation sperrt keine Inhalte, sodass eine Neuinstallation das Paket wiederherstellen kann.

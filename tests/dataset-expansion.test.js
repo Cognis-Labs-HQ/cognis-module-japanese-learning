@@ -10,6 +10,7 @@ const CONTENT_ROOT = path.resolve(
     "library",
     "content",
 );
+
 function load(directory) {
     return readdirSync(path.join(CONTENT_ROOT, directory))
         .filter((name) => name.endsWith(".json"))
@@ -28,6 +29,7 @@ function load(directory) {
             ],
         }));
 }
+
 const vocabulary = load("words").filter(({ hidden }) => hidden !== true);
 const definitions = new Map(
     load("definitions").map((entry) => [entry.id, entry]),
@@ -48,6 +50,7 @@ function definitionIds(entry) {
         .filter(({ relation }) => relation === "spelling")
         .flatMap(({ entryId }) => definitionIds(kanji.get(entryId)));
 }
+
 function reading(entry) {
     return entry.fields.pronunciation[0];
 }

@@ -123,3 +123,7 @@ Every behavior change requires tests, safe logging, and synchronized documentati
 ## Review Discipline
 
 Treat review comments as actionable unless they conflict with higher-priority instructions. Record intentionally deferred items in root `TODO.md` with a concrete technical reason. Keep changes focused and leave touched areas cleaner than you found them.
+
+## Cognis Review Preferences
+
+Before implementation or review, apply [Cognis review preferences](https://github.com/Cognis-Labs-HQ/Cognis/blob/feature-update-external-package-contract-definitions/.github/copilot-instructions.md#persistent-review-preferences). They preserve the author's historical feedback on component isolation, reuse, blank lines, test integrity, lifecycle cleanup and Study UI. The full author-review archive in this workspace is `/workspace/feedback-deploy/review-memory/`. Keep module logic and tests local, require the intended public host capability, preserve declaration spacing, and never relax file-size checks to accommodate new code.

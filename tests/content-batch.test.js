@@ -10,6 +10,7 @@ const CONTENT_ROOT = path.resolve(
     "library",
     "content",
 );
+
 function load(layer) {
     return readdirSync(path.join(CONTENT_ROOT, layer))
         .filter((name) => name.endsWith(".json"))

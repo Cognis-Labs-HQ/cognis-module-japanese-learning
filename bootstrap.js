@@ -60,7 +60,7 @@ export async function uninstallModule(ctx, { deleteContent }) {
             component: "study-language-ja",
             operation: "delete_content_pack",
             packId: CONTENT_PACK.id,
-            error: error instanceof Error ? error.message : String(error),
+            errorName: error instanceof Error ? error.name : "Error",
         });
         throw error;
     }
@@ -72,10 +72,9 @@ export async function uninstallModule(ctx, { deleteContent }) {
 }
 
 export async function bootstrapModule(ctx) {
-    const library =
-        ctx.capabilities.get("study:library:provider") ??
-        ctx.capabilities.require("study:library");
+    const library = ctx.capabilities.require("study:library:provider");
     if (
+        typeof library.deleteContentPack !== "function" ||
         typeof library.ingestContentPack !== "function" ||
         typeof library.registerLookupProvider !== "function"
     ) {
@@ -114,17 +113,17 @@ export async function bootstrapModule(ctx) {
             }),
         );
         receipt = await library.ingestContentPack(libraryRoot);
+        ctx.contributePublicCapability("study:language:ja", LANGUAGE);
+        ctx.flow.extend(
+            "bootstrap-platform",
+            "register-flows",
+            { id: "study-language-ja:register-language" },
+            () => LANGUAGE,
+        );
     } catch (error) {
         removeLookupProviders();
         throw error;
     }
-    ctx.contributePublicCapability("study:language:ja", LANGUAGE);
-    ctx.flow.extend(
-        "bootstrap-platform",
-        "register-flows",
-        { id: "study-language-ja:register-language" },
-        () => LANGUAGE,
-    );
     ctx.log?.("info", "Cognis Japanese content pack enabled.", {
         component: "study-language-ja",
         operation: "bootstrap",

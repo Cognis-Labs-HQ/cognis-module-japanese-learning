@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import { readFileSync, readdirSync } from "node:fs";
 import path from "node:path";
 import test from "node:test";
+
 const root = path.resolve(import.meta.dirname, "..");
 const load = (file) => JSON.parse(readFileSync(path.join(root, file), "utf8"));
 test("starter flashcard decks use stable keys, localized names, and existing visible provider records", () => {

@@ -51,3 +51,9 @@ Bacaan utama mengikuti kecocokan kata persis yang umum dari Jisho: 僕 menampilk
 Cognis menggabungkan hasil kamus dengan komposisi tulisan identik menjadi bacaan dan makna alternatif. Mengeklik ejaan berbeda langsung menerapkannya serta menyelesaikan atau membuat Kanji pendukung. Lanjutkan atau menutup pemilih mempertahankan komposisi persis dan mengabaikan hasil diperluas. Kartu bacaan mempertahankan jalur ke Kana individual. Pemilihan, pembuatan kartu, pemeriksaan cakupan, cache, dan notifikasi tetap menjadi tanggung jawab host.
 
 Revisi skema 89 menetapkan jalur Jelajahi `kana`, `kanji`, `vocabulary`, dan `sentences` di bawah `/study/explore/ja/`. Versi modul dan paket konten adalah 2.2.98. Cognis mengelola impor, batas, pembagian dek, dan navigasi; modul menyediakan nama lapisan deklaratif dan konten kamus.
+
+## Perbaikan tinjauan
+
+Modul Jepang 2.2.100 langsung mewajibkan `study:library:provider` dan menghapus pendaftaran penyedia saat impor, publikasi kapabilitas, atau pendaftaran alur gagal. Skema 89 dan paket konten 2.2.99 dipertahankan; rilis ini mengubah integrasi dan keterbacaan, bukan data bahasa.
+
+Library 2.26.0 menyediakan `deleteContentPack(root)` melalui kapabilitas penyedia publik. Catatan penyedia, kartu bergantung, tanda terima paket, dan aset dihapus dalam satu transaksi alur penghapusan; kegagalan hook audit membatalkan operasi. Penghapusan berantai menggunakan notifikasi Study yang ada. Skema tetap tersedia bagi konten mandiri buatan pengguna, dan pelepasan tidak memasukkan konten ke daftar blokir sehingga pemasangan ulang dapat memulihkan paket.

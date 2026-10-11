@@ -106,7 +106,7 @@ test("logs and propagates content-pack deletion failures", async () => {
             component: "study-language-ja",
             operation: "delete_content_pack",
             packId: "japanese-core",
-            error: "database unavailable",
+            errorName: "Error",
         },
     });
 });

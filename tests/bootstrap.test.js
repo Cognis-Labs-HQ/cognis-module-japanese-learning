@@ -18,7 +18,7 @@ test("ingests the declarative pack through the host Library capability", async (
                 return undefined;
             },
             require(id) {
-                assert.equal(id, "study:library");
+                assert.equal(id, "study:library:provider");
                 return {
                     registerLookupProvider(provider) {
                         providers.push(provider);
@@ -26,6 +26,7 @@ test("ingests the declarative pack through the host Library capability", async (
                             removed += 1;
                         };
                     },
+                    async deleteContentPack() {},
                     async ingestContentPack(root) {
                         calls.push(root);
                         return {
@@ -115,12 +116,12 @@ test("fails safely when the host Library capability is unavailable", async () =>
                 },
                 require() {
                     throw new Error(
-                        'Required capability "study:library" is not available.',
+                        'Required capability "study:library:provider" is not available.',
                     );
                 },
             },
         }),
-        /Required capability "study:library" is not available/,
+        /Required capability "study:library:provider" is not available/,
     );
 });
 
@@ -140,6 +141,7 @@ test("content ingestion failures remain activation-blocking", async () => {
                             removed += 1;
                         };
                     },
+                    async deleteContentPack() {},
                     async ingestContentPack() {
                         throw new Error("content import failed");
                     },
@@ -164,11 +166,12 @@ test("content ingestion failures remain activation-blocking", async () => {
     assert.equal(manifest.allowBootstrapFailure, undefined);
 });
 
-test("prefers the public provider capability when it is injected", async () => {
+test("requires the public provider capability when it is injected", async () => {
     const provider = {
         registerLookupProvider() {
             return () => {};
         },
+        async deleteContentPack() {},
         async ingestContentPack() {
             return { packId: "japanese-core", unchanged: true };
         },
@@ -181,9 +184,10 @@ test("prefers the public provider capability when it is injected", async () => {
                 assert.equal(id, "study:library:provider");
                 return provider;
             },
-            require() {
+            require(id) {
+                assert.equal(id, "study:library:provider");
                 required = true;
-                throw new Error("unexpected fallback");
+                return provider;
             },
         },
         registerStaticDir() {},
@@ -193,6 +197,64 @@ test("prefers the public provider capability when it is injected", async () => {
         log() {},
     };
     const dispose = await bootstrapModule(ctx);
-    assert.equal(required, false);
+    assert.equal(required, true);
     dispose();
+});
+
+test("failed capability publication or flow registration removes every lookup provider", async () => {
+    for (const failure of ["capability", "flow"]) {
+        let removed = 0;
+        const ctx = {
+            moduleRoot: path.resolve("."),
+            capabilities: {
+                require(id) {
+                    assert.equal(id, "study:library:provider");
+                    return {
+                        registerLookupProvider() {
+                            return () => {
+                                removed += 1;
+                            };
+                        },
+                        async deleteContentPack() {},
+                        async ingestContentPack() {
+                            return { packId: "japanese-core" };
+                        },
+                    };
+                },
+            },
+            registerStaticDir() {},
+            registerApiDelete() {},
+            contributePublicCapability() {
+                if (failure === "capability")
+                    throw new Error("publication_failed");
+            },
+            flow: {
+                extend() {
+                    if (failure === "flow")
+                        throw new Error("registration_failed");
+                },
+            },
+        };
+        await assert.rejects(
+            bootstrapModule(ctx),
+            failure === "flow" ? /registration_failed/ : /publication_failed/,
+        );
+        assert.equal(removed, 2);
+    }
+});
+
+test("activation rejects a host provider without content-pack cleanup", async () => {
+    await assert.rejects(
+        bootstrapModule({
+            capabilities: {
+                require() {
+                    return {
+                        async ingestContentPack() {},
+                        registerLookupProvider() {},
+                    };
+                },
+            },
+        }),
+        /Invalid Study Library provider capability/,
+    );
 });
