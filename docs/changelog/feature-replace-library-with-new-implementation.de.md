@@ -88,7 +88,11 @@ Die primäre Lesung folgt häufigen exakten Worttreffern von Jisho: 僕 zeigt zu
 
 ## Erkunden-Navigation
 
-Schemarevision 89 legt die Erkunden-Pfade `kana`, `kanji`, `vocabulary` und `sentences` unter `/study/explore/ja/` fest. Modul und Inhaltspaket haben Version 2.2.98. Cognis verwaltet Importe, Grenzen, Stapelfreigaben und Navigation; das Modul liefert deklarative Ebenennamen und Wörterbuchdaten.
+Schemarevision 89 legt die Erkunden-Pfade `kana`, `kanji`, `vocabulary` und `sentences` unter `/study/explore/ja/` fest. Modul und Inhaltspaket haben Version 2.2.99. Cognis verwaltet Importe, Grenzen, Stapelfreigaben und Navigation; das Modul liefert deklarative Ebenennamen und Wörterbuchdaten.
+
+## Lernkarten-Startdecks
+
+Der japanische Anbieter liefert drei Startdecks in `data/starter-decks.json`: Hiragana-Grundlagen, Kanji im Alltag und Erste japanische Wörter. Jedes Deck hat einen stabilen Schlüssel, übersetzte Namen, eine Schema-ID und Quelldatensatz-IDs. Der Sprachdeskriptor stellt die deklarativen Daten als `starterDecks` bereit. Cognis löst die IDs zu aktuellen Library-UUIDs auf, blendet unvollständige Decks und deaktivierte Anbieter aus und verwaltet Ansicht, Favoriten, Freigaben und Lernfortschritt. Das Modul erstellt keine Decks und fragt die Host-Datenbank nicht ab.
 
 ## Commits
 
@@ -107,3 +111,4 @@ Schemarevision 89 legt die Erkunden-Pfade `kana`, `kanji`, `vocabulary` und `sen
 - https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/618b1c901ac826fd81a584d5ff9baa98c8033d91
 - https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/84e49de45b43f6f0b0cdb8087eeb03cc40f6389c
 - https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/94e57eb29bdebb3e64e057e082608a25e72b33d0
+- https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/315dded455234476da36402728c09b9e64b3fd5d

@@ -2,7 +2,7 @@
     "id": "study-language-ja",
     "uuid": "e905927f-b133-572a-92ce-2ea8645e5ceb",
     "name": "module.study-language-ja.name",
-    "version": "2.2.98",
+    "version": "2.2.99",
     "class": "extension",
     "coreApiVersion": "v1",
     "capabilities": ["study:language:ja"],
@@ -127,7 +127,7 @@
         },
         {
             "path": "bootstrap.js",
-            "sha256": "0de948a28714d4aeb973a46cc0ae3c55c859482f3fa0759ab8ce39dbdc350fe1"
+            "sha256": "5721fc34978a03f2c3b129b5011944fcf7a9013615a903e365d2b1bc2d4415f0"
         },
         {
             "path": "data/library/content/alt-characters/kanji-001.json",
@@ -675,11 +675,15 @@
         },
         {
             "path": "data/library/manifest.json",
-            "sha256": "dd61e5d5c3386fa9892edc93ba325e352f6aaab6ecd1d2bb55c1b8a986a5059e"
+            "sha256": "f8527fb3d60d53e0f43ad925d7dd0bab5ae9ffbe0952f7dba245f6933abdb811"
         },
         {
             "path": "data/library/schema.json",
             "sha256": "18109ff83f605a32e3a62584addff611ac875d61f74b100b570cca7b5bfa3a68"
+        },
+        {
+            "path": "data/starter-decks.json",
+            "sha256": "52ae11e56aa81611ab22bbb92b0025e5698f96516391d224452a23d48f409abb"
         },
         {
             "path": "docs/jisho.de.md",
@@ -699,27 +703,27 @@
         },
         {
             "path": "docs/standard.de.md",
-            "sha256": "f32a42cc05b0290e31bba3a0b5e3b1ec169e0766812d91019082d7e22f5bad28"
+            "sha256": "67bf23c51b1b129ab6c841892e89f69d36146c3ab0c3c9a16b3b8ddd0c6d15f6"
         },
         {
             "path": "docs/standard.en.md",
-            "sha256": "b0b075a13097e46b8f698fb7f203c61fb07c58d016664079c2584d126068895b"
+            "sha256": "738403b095fabe899ee54478991025fa3a010ef5b321ffe663071e4b0e211045"
         },
         {
             "path": "docs/standard.id.md",
-            "sha256": "0068fdd46e344055073f2a0bab3d0bd1b41932253f53526fc50416ff69eba879"
+            "sha256": "d75a96986d064b59b768f53ba70678e01a058d54d3601df56f42d999e10e46ed"
         },
         {
             "path": "docs/standard.ja.md",
-            "sha256": "4232b431a7ab5bc6ddf6fc16360187ec024cb85051fc0d88f471892fac249482"
+            "sha256": "6ff75178575b3d1e878de82ef1a0ccabea20af0ae087cc1da310b2d1135db406"
         },
         {
             "path": "package-lock.json",
-            "sha256": "1cb9755b499f057c08888f7481a84b0e8dd8768825ba2a359257b734b13f05b6"
+            "sha256": "3d743f5b3940f2b24b7351838e5fe36b45be4dc8526709e04fee72ca05a8d76e"
         },
         {
             "path": "package.json",
-            "sha256": "e55b8777cc69d193956955b4911515ac83357087ffac0f93b4c74d04351f3e83"
+            "sha256": "3f76e5ab087a2da1922b3487f8e35f71d315a2dfcd71c10eefe682ddf9d6a942"
         },
         {
             "path": "reuse/content.js",
@@ -820,6 +824,10 @@
         {
             "path": "tests/sentence-composer-contract.test.js",
             "sha256": "15fe6616bc6a0522f6b68c83f19ab6aecaba1939bdb8791e13d57f33771151b3"
+        },
+        {
+            "path": "tests/starter-decks.test.js",
+            "sha256": "cf36f7e909fc88a61c95d84f8cebab6685e8c74e1e574786ac9cb4aa36031e20"
         },
         {
             "path": "tests/stroke-pattern-provider.test.js",

@@ -300,4 +300,8 @@ Batas transformasi opsional harus dihilangkan saat tidak digunakan; label batas 
 
 Bidang pelafalan kosakata yang terlihat menautkan tepat satu rekaman pelafalan lengkap tersembunyi melalui `pronunciation-readings`; rekaman tersebut diselesaikan secara internal melalui bacaan Kanji terdekat dan Kana atomik.
 
-Revisi skema 89 menetapkan jalur Jelajahi `kana`, `kanji`, `vocabulary`, dan `sentences` di bawah `/study/explore/ja/`. Versi modul dan paket konten adalah 2.2.98. Cognis mengelola impor, batas, pembagian dek, dan navigasi; modul menyediakan nama lapisan deklaratif dan konten kamus.
+Revisi skema 89 menetapkan jalur Jelajahi `kana`, `kanji`, `vocabulary`, dan `sentences` di bawah `/study/explore/ja/`. Versi modul dan paket konten adalah 2.2.99. Cognis mengelola impor, batas, pembagian dek, dan navigasi; modul menyediakan nama lapisan deklaratif dan konten kamus.
+
+## Dek Kartu Belajar Awal
+
+Penyedia Jepang menyediakan tiga dek awal dalam `data/starter-decks.json`: Dasar Hiragana, Kanji Sehari-hari, dan Kata Jepang Pertama. Setiap dek memiliki kunci stabil, nama lokal, ID skema, dan ID rekaman sumber. Deskriptor bahasa menampilkan data deklaratif sebagai `starterDecks`. Cognis menyelesaikan ID menjadi UUID Library, menyembunyikan dek yang tidak lengkap dan penyedia nonaktif, serta mengelola penelusuran, favorit, berbagi, dan kemajuan belajar. Modul tidak membuat dek atau mengakses basis data host.

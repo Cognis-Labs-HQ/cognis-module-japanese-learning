@@ -300,4 +300,8 @@ Optional transform boundaries must be omitted when unused; empty localized bound
 
 Visible vocabulary pronunciation fields link to exactly one hidden complete-pronunciation record through `pronunciation-readings`; that record resolves internally through the closest Kanji readings and atomic Kana.
 
-Schema revision 89 declares Explore navigation slugs `kana`, `kanji`, `vocabulary`, and `sentences` under `/study/explore/ja/`. Module and content-pack versions are 2.2.98. Cognis owns imports, limits, deck sharing, and application navigation; the module supplies declarative layer names and dictionary content.
+Schema revision 89 declares Explore navigation slugs `kana`, `kanji`, `vocabulary`, and `sentences` under `/study/explore/ja/`. Module and content-pack versions are 2.2.99. Cognis owns imports, limits, deck sharing, and application navigation; the module supplies declarative layer names and dictionary content.
+
+## Starter Flashcard Decks
+
+The Japanese provider declares three starter decks in `data/starter-decks.json`: Hiragana Basics, Everyday Kanji, and First Japanese Words. Each deck has a stable key, localized names, a schema ID, and source record IDs. The language descriptor exposes this declarative data as `starterDecks`. Cognis resolves those records to current Library UUIDs, hides incomplete decks and decks from disabled providers, and owns browsing, favourites, sharing, and learner progress. The module neither creates decks nor queries the host database.

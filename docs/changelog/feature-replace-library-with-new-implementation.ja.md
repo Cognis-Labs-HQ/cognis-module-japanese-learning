@@ -88,7 +88,11 @@ KanjiVG の筆順ファイルには別の上限付きモジュールキャッシ
 
 ## 探索ナビゲーション
 
-スキーマ版 89 は `/study/explore/ja/` 配下に `kana`、`kanji`、`vocabulary`、`sentences` を指定します。モジュールとコンテンツパックは 2.2.98 です。インポート、制限、デッキ共有、アプリのナビゲーションは Cognis が管理し、モジュールは層名と辞書コンテンツを宣言します。
+スキーマ版 89 は `/study/explore/ja/` 配下に `kana`、`kanji`、`vocabulary`、`sentences` を指定します。モジュールとコンテンツパックは 2.2.99 です。インポート、制限、デッキ共有、アプリのナビゲーションは Cognis が管理し、モジュールは層名と辞書コンテンツを宣言します。
+
+## スターターデッキ
+
+日本語プロバイダーは `data/starter-decks.json` に「ひらがなの基本」「日常の漢字」「はじめての日本語」の3つのデッキを宣言します。各デッキには安定したキー、翻訳された名前、スキーマID、ソースレコードIDがあります。言語記述子の `starterDecks` は宣言データだけを公開します。Cognis が現在の Library UUID に解決し、不完全なデッキと無効なプロバイダーのデッキを非表示にし、閲覧、お気に入り、共有、学習進捗を管理します。モジュールはデッキを作成せず、ホストのデータベースにもアクセスしません。
 
 ## コミット
 
@@ -107,3 +111,4 @@ KanjiVG の筆順ファイルには別の上限付きモジュールキャッシ
 - https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/618b1c901ac826fd81a584d5ff9baa98c8033d91
 - https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/84e49de45b43f6f0b0cdb8087eeb03cc40f6389c
 - https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/94e57eb29bdebb3e64e057e082608a25e72b33d0
+- https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/315dded455234476da36402728c09b9e64b3fd5d

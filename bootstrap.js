@@ -24,6 +24,12 @@ const LANGUAGE = Object.freeze({
     version: MODULE_MANIFEST.version,
     package: CONTENT_PACK,
     childComponents: [],
+    starterDecks: JSON.parse(
+        readFileSync(
+            new URL("./data/starter-decks.json", import.meta.url),
+            "utf8",
+        ),
+    ),
 });
 
 export async function uninstallModule(ctx, { deleteContent }) {
