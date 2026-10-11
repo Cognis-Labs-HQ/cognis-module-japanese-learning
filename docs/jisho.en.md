@@ -1,6 +1,6 @@
 # Dictionary integration
 
-Module version 2.2.97 keeps content-pack version 2.2.93 and schema revision 88. Jisho registers through the host `study:library:provider` capability with `searchable: true` and the `dictionary` capability. It supports Kana, Kanji and Vocabulary; sentences and provider-owned particle creation are excluded.
+Module version 2.2.98 keeps content-pack version 2.2.98 and schema revision 89. Jisho registers through the host `study:library:provider` capability with `searchable: true` and the `dictionary` capability. It supports Kana, Kanji and Vocabulary; sentences and provider-owned particle creation are excluded.
 
 ## Authoritative lookup
 
@@ -49,3 +49,5 @@ The primary reading follows common exact word matches from Jisho: 僕 shows ぼ�
 ## Exact-composition lookup choices
 
 Cognis combines dictionary matches with identical written composition into alternate readings and meanings. Clicking a different spelling applies it immediately and resolves or creates its supporting Kanji; Continue or closing the chooser retains the exact composition and ignores expanded matches. Reading cards preserve their path to individual Kana. Choice handling, card creation, scope checks, caching and notifications remain host responsibilities.
+
+Schema revision 89 declares Explore navigation slugs `kana`, `kanji`, `vocabulary`, and `sentences` under `/study/explore/ja/`. Module and content-pack versions are 2.2.98. Cognis owns imports, limits, deck sharing, and application navigation; the module supplies declarative layer names and dictionary content.

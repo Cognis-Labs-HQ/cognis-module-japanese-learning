@@ -6,7 +6,7 @@ The Cognis Japanese module installs declarative Japanese learning records into t
 
 Enable the Study gateway and Library adapter, then enable this module. Its bootstrap resolves `study:library:provider` from `ctx` and ingests `data/library`. Administrators and learners use the Library adapter's generated Study interface rather than a module-owned route.
 
-Because the language descriptor declares no executable child pages, Cognis Study supplies the generated Library destination at `/study/library?language=ja`. The validated language query remains attached to Library links, detail navigation, direct loads, and browser history; authenticated learners may browse while Library scope rules continue to protect authoring and publishing.
+Learner layers appear in the Explore side menu at `/study/explore/<ISO language>/<navigationSlug>`. Modules declare the optional unique `navigationSlug` on each layer; its layer ID is used when omitted. Library and Requests keep their existing routes. Only sentence previews truncate long titles and definitions; other layers retain their rendering.
 
 The external module declares the Study gateway as its component dependency. It discovers the Library adapter through the required `study:library:provider` capability rather than treating the adapter UUID as an independently installable component.
 
@@ -299,3 +299,5 @@ The sentence-structure inventory must include reviewed coordinating, contrastive
 Optional transform boundaries must be omitted when unused; empty localized boundary labels are invalid provider metadata.
 
 Visible vocabulary pronunciation fields link to exactly one hidden complete-pronunciation record through `pronunciation-readings`; that record resolves internally through the closest Kanji readings and atomic Kana.
+
+Schema revision 89 declares Explore navigation slugs `kana`, `kanji`, `vocabulary`, and `sentences` under `/study/explore/ja/`. Module and content-pack versions are 2.2.98. Cognis owns imports, limits, deck sharing, and application navigation; the module supplies declarative layer names and dictionary content.

@@ -86,6 +86,10 @@ Kanji lookup converts Jisho’s Katakana On readings to Hiragana for card pronun
 
 The primary reading follows common exact word matches from Jisho: 僕 shows ぼく first, then しもべ. Related words and unattested Kanji readings do not change the order. If word lookup fails, the Kanji result remains usable and the failure is logged safely.
 
+## Explore Navigation
+
+Schema revision 89 declares Explore navigation slugs `kana`, `kanji`, `vocabulary`, and `sentences` under `/study/explore/ja/`. Module and content-pack versions are 2.2.98. Cognis owns imports, limits, deck sharing, and application navigation; the module supplies declarative layer names and dictionary content.
+
 ## Commits
 
 - [f910563](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/f9105630f0ee87cad60fc67c99f46a311bcdb68b)
@@ -102,3 +106,4 @@ The primary reading follows common exact word matches from Jisho: 僕 shows ぼ�
 - https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/fc1f65d25aa2e4d52bef4dc5290eb127a7033a68
 - https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/618b1c901ac826fd81a584d5ff9baa98c8033d91
 - https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/84e49de45b43f6f0b0cdb8087eeb03cc40f6389c
+- https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/94e57eb29bdebb3e64e057e082608a25e72b33d0

@@ -1,6 +1,6 @@
 # Integrasi kamus
 
-Versi modul 2.2.97 mempertahankan versi paket konten 2.2.93 dan revisi skema 88. Jisho mendaftar melalui kapabilitas host `study:library:provider` dengan `searchable: true` dan kapabilitas `dictionary`. Kana, Kanji, dan Kosakata didukung; kalimat dan pembuatan partikel milik penyedia dikecualikan.
+Versi modul 2.2.98 mempertahankan versi paket konten 2.2.98 dan revisi skema 89. Jisho mendaftar melalui kapabilitas host `study:library:provider` dengan `searchable: true` dan kapabilitas `dictionary`. Kana, Kanji, dan Kosakata didukung; kalimat dan pembuatan partikel milik penyedia dikecualikan.
 
 ## Pencarian otoritatif
 
@@ -49,3 +49,5 @@ Bacaan utama mengikuti kecocokan kata persis yang umum dari Jisho: 僕 menampilk
 ## Pilihan Komposisi Persis
 
 Cognis menggabungkan hasil kamus dengan komposisi tulisan identik menjadi bacaan dan makna alternatif. Mengeklik ejaan berbeda langsung menerapkannya serta menyelesaikan atau membuat Kanji pendukung. Lanjutkan atau menutup pemilih mempertahankan komposisi persis dan mengabaikan hasil diperluas. Kartu bacaan mempertahankan jalur ke Kana individual. Pemilihan, pembuatan kartu, pemeriksaan cakupan, cache, dan notifikasi tetap menjadi tanggung jawab host.
+
+Revisi skema 89 menetapkan jalur Jelajahi `kana`, `kanji`, `vocabulary`, dan `sentences` di bawah `/study/explore/ja/`. Versi modul dan paket konten adalah 2.2.98. Cognis mengelola impor, batas, pembagian dek, dan navigasi; modul menyediakan nama lapisan deklaratif dan konten kamus.

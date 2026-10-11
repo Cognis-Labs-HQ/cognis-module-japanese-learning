@@ -1,6 +1,6 @@
 {
     "id": "japanese-core",
-    "version": 88,
+    "version": 89,
     "namespace": "ja",
     "language": "ja",
     "metadata": {
@@ -378,7 +378,8 @@
                     "ja:char:n",
                     "ja:char:ka:n"
                 ]
-            }
+            },
+            "navigationSlug": "kana"
         },
         {
             "id": "alt-characters",
@@ -533,7 +534,8 @@
                 "fieldOrder": ["pronunciation", "audio", "stroke_pattern"]
             },
             "activityCompatibility": ["study:recognition", "study:writing"],
-            "interestVeins": ["language:japanese"]
+            "interestVeins": ["language:japanese"],
+            "navigationSlug": "kanji"
         },
         {
             "id": "definitions",
@@ -867,7 +869,8 @@
                     "includeTags": ["copula"],
                     "layout": "transformTree"
                 }
-            ]
+            ],
+            "navigationSlug": "vocabulary"
         },
         {
             "id": "particles",
@@ -1077,7 +1080,8 @@
                         "values": ["。", "、", "？", "！"]
                     }
                 ]
-            }
+            },
+            "navigationSlug": "sentences"
         }
     ],
     "transformSets": [

@@ -86,6 +86,10 @@ KanjiVG の筆順ファイルには別の上限付きモジュールキャッシ
 
 主な読みは、Jishoの一般的な完全一致の語彙に基づきます。僕はぼくを先に、その後にしもべを表示します。関連する語や漢字の読みとして記載されていない読みは順序に影響しません。語彙検索が失敗しても漢字の結果は使用でき、エラーは安全に記録されます。
 
+## 探索ナビゲーション
+
+スキーマ版 89 は `/study/explore/ja/` 配下に `kana`、`kanji`、`vocabulary`、`sentences` を指定します。モジュールとコンテンツパックは 2.2.98 です。インポート、制限、デッキ共有、アプリのナビゲーションは Cognis が管理し、モジュールは層名と辞書コンテンツを宣言します。
+
 ## コミット
 
 - [f910563](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/f9105630f0ee87cad60fc67c99f46a311bcdb68b)
@@ -102,3 +106,4 @@ KanjiVG の筆順ファイルには別の上限付きモジュールキャッシ
 - https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/fc1f65d25aa2e4d52bef4dc5290eb127a7033a68
 - https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/618b1c901ac826fd81a584d5ff9baa98c8033d91
 - https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/84e49de45b43f6f0b0cdb8087eeb03cc40f6389c
+- https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/94e57eb29bdebb3e64e057e082608a25e72b33d0
