@@ -120,3 +120,5 @@ KanjiVG の筆順ファイルには別の上限付きモジュールキャッシ
 日本語モジュール 2.2.100 は `study:library:provider` を直接要求し、取り込み、能力の公開、フローの登録の失敗時に検索プロバイダーを解除します。スキーマ 89 とコンテンツパック 2.2.99 は維持します。このリリースは連携と読みやすさを改善し、言語データは変更しません。
 
 [fd7b3fa2](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/fd7b3fa218e80d8ce2657666adb544680d925fd5)
+
+[c0020778](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/c00207784c18bfafe9548cf449176f74768f0a14)

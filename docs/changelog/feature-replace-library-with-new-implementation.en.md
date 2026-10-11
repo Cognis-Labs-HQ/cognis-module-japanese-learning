@@ -120,3 +120,5 @@ The Japanese provider declares three starter decks in `data/starter-decks.json`:
 Japanese module 2.2.100 requires `study:library:provider` directly and removes lookup registrations when ingestion, capability publication or flow registration fails. Schema 89 and content pack 2.2.99 are retained; this release changes integration and readability, not language data.
 
 [fd7b3fa2](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/fd7b3fa218e80d8ce2657666adb544680d925fd5)
+
+[c0020778](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/c00207784c18bfafe9548cf449176f74768f0a14)

@@ -120,3 +120,5 @@ Der japanische Anbieter liefert drei Startdecks in `data/starter-decks.json`: Hi
 Das japanische Modul 2.2.100 verlangt direkt `study:library:provider` und entfernt Suchanbieter bei Fehlern im Import, in der Capability-Veröffentlichung oder in der Flow-Registrierung. Schema 89 und Inhaltspaket 2.2.99 bleiben erhalten; diese Version ändert Integration und Lesbarkeit, nicht die Sprachdaten.
 
 [fd7b3fa2](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/fd7b3fa218e80d8ce2657666adb544680d925fd5)
+
+[c0020778](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/c00207784c18bfafe9548cf449176f74768f0a14)
