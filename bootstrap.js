@@ -122,6 +122,11 @@ export async function bootstrapModule(ctx) {
         );
     } catch (error) {
         removeLookupProviders();
+        ctx.log?.("error", "Japanese language pack activation failed.", {
+            component: "study-language-ja",
+            operation: "bootstrap",
+            errorName: error instanceof Error ? error.name : "Error",
+        });
         throw error;
     }
     ctx.log?.("info", "Cognis Japanese content pack enabled.", {

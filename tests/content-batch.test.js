@@ -73,7 +73,7 @@ test("reviewed location and manner sentences retain exact authored readings", ()
         ],
         [
             "ja:sentence:gakkou-wa-doko-desu",
-            ["学校はどこです", "がっこうはどこです"],
+            ["学校はどこですか", "がっこうはどこですか"],
         ],
         [
             "ja:sentence:hana-wa-totemo-kirei",
@@ -93,7 +93,7 @@ test("reviewed location and manner sentences retain exact authored readings", ()
         ],
         [
             "ja:sentence:kuruma-wa-doko-desu",
-            ["車はどこです", "くるまはどこです"],
+            ["車はどこですか", "くるまはどこですか"],
         ],
     ]);
     for (const [id, [label, reading]] of expected) {
@@ -112,5 +112,40 @@ test("lexical meanings that diverge from Kanji retain dedicated definitions", ()
         "ja:word:watashi",
     ]) {
         assert.ok(definitionIds(words.get(id)).length > 0, id);
+    }
+});
+
+test("polite location questions include the canonical question particle", () => {
+    const particles = new Map(
+        load("particles").map((entry) => [entry.id, entry]),
+    );
+    const question = particles.get("ja:particle:ka");
+    assert.equal(question.label, "か");
+    assert.equal(question.editable, false);
+    assert.ok(
+        question.references.some(
+            ({ entryId, relation }) =>
+                entryId === "ja:char:ka" && relation === "kana-spelling",
+        ),
+    );
+    for (const id of [
+        "ja:sentence:gakkou-wa-doko-desu",
+        "ja:sentence:kuruma-wa-doko-desu",
+    ]) {
+        const entry = sentences.get(id);
+        assert.ok(entry.label.endsWith("ですか"));
+        const parts = entry.references
+            .filter(({ relation }) => ["words", "particles"].includes(relation))
+            .toSorted((a, b) => a.position - b.position);
+        assert.equal(parts.at(-1).entryId, question.id);
+        assert.equal(
+            parts
+                .map(
+                    ({ entryId }) =>
+                        (words.get(entryId) ?? particles.get(entryId)).label,
+                )
+                .join(""),
+            entry.label,
+        );
     }
 });

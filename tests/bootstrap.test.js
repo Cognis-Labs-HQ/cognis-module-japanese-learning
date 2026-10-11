@@ -127,6 +127,7 @@ test("fails safely when the host Library capability is unavailable", async () =>
 
 test("content ingestion failures remain activation-blocking", async () => {
     const contributions = [];
+    const logs = [];
     let removed = 0;
     const ctx = {
         moduleRoot: path.resolve("."),
@@ -154,12 +155,18 @@ test("content ingestion failures remain activation-blocking", async () => {
             contributions.push(id);
         },
         flow: { extend() {} },
-        log() {},
+        log(...args) {
+            logs.push(args);
+        },
     };
 
     await assert.rejects(bootstrapModule(ctx), /content import failed/);
     assert.deepEqual(contributions, []);
     assert.equal(removed, 2);
+    assert.equal(logs[0][0], "error");
+    assert.equal(logs[0][2].operation, "bootstrap");
+    assert.equal(logs[0][2].errorName, "Error");
+    assert.ok(!JSON.stringify(logs).includes("content import failed"));
     const manifest = JSON.parse(
         readFileSync(path.join(ctx.moduleRoot, "manifest.json"), "utf8"),
     );

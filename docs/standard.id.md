@@ -300,14 +300,12 @@ Batas transformasi opsional harus dihilangkan saat tidak digunakan; label batas 
 
 Bidang pelafalan kosakata yang terlihat menautkan tepat satu rekaman pelafalan lengkap tersembunyi melalui `pronunciation-readings`; rekaman tersebut diselesaikan secara internal melalui bacaan Kanji terdekat dan Kana atomik.
 
-Revisi skema 89 menetapkan jalur Jelajahi `kana`, `kanji`, `vocabulary`, dan `sentences` di bawah `/study/explore/ja/`. Versi paket konten adalah 2.2.99; versi integrasi modul adalah 2.2.100. Cognis mengelola impor, batas, pembagian dek, dan navigasi; modul menyediakan nama lapisan deklaratif dan konten kamus.
+Revisi skema 89 menetapkan jalur Jelajahi `kana`, `kanji`, `vocabulary`, dan `sentences` di bawah `/study/explore/ja/`. Versi paket konten adalah 2.2.100; versi integrasi modul adalah 2.2.101. Cognis mengelola impor, batas, pembagian dek, dan navigasi; modul menyediakan nama lapisan deklaratif dan konten kamus.
 
 ## Dek Kartu Belajar Awal
 
-Penyedia Jepang menyediakan tiga dek awal dalam `data/starter-decks.json`: Dasar Hiragana, Kanji Sehari-hari, dan Kata Jepang Pertama. Setiap dek memiliki kunci stabil, nama lokal, ID skema, dan ID rekaman sumber. Deskriptor bahasa menampilkan data deklaratif sebagai `starterDecks`. Cognis menyelesaikan ID menjadi ID Library, menyembunyikan dek yang tidak lengkap dan penyedia nonaktif, serta mengelola penelusuran, favorit, berbagi, dan kemajuan belajar. Modul tidak membuat dek atau mengakses basis data host.
+Penyedia Jepang mendeklarasikan enam dek awal: Dasar Hiragana (46), Dasar Katakana (46), Kanji Sehari-hari (10), Kata Jepang Pertama (9), Verba Jepang Sehari-hari (8) dan Kalimat Jepang Pertama (12). Kunci stabil, nama empat bahasa, ID skema dan ID rekaman terlihat memungkinkan Cognis menyelesaikan ID Library kanonis. Penelusuran, favorit, berbagi dan kemajuan dikelola Cognis; modul tidak membuat dek pengguna atau mengakses basis data host.
 
 ## Perbaikan tinjauan
 
-Modul Jepang 2.2.100 langsung mewajibkan `study:library:provider` dan menghapus pendaftaran penyedia saat impor, publikasi kapabilitas, atau pendaftaran alur gagal. Skema 89 dan paket konten 2.2.99 dipertahankan; rilis ini mengubah integrasi dan keterbacaan, bukan data bahasa.
-
-Library 2.26.0 menyediakan `deleteContentPack(root)` melalui kapabilitas penyedia publik. Catatan penyedia, kartu bergantung, tanda terima paket, dan aset dihapus dalam satu transaksi alur penghapusan; kegagalan hook audit membatalkan operasi. Penghapusan berantai menggunakan notifikasi Study yang ada. Skema tetap tersedia bagi konten mandiri buatan pengguna, dan pelepasan tidak memasukkan konten ke daftar blokir sehingga pemasangan ulang dapat memulihkan paket.
+Modul 2.2.101 memerlukan `study:library:provider` dan melepas penyedia saat aktivasi gagal dengan log kesalahan terstruktur yang aman. Skema 89 dipertahankan. Paket 2.2.100 memperbaiki pertanyaan lokasi sopan menjadi ですか serta menambahkan partikel pertanyaan kanonis dengan empat terjemahan. Kunci kalimat tetap. Pelafalan kalimat diturunkan dari kata dan partikel terlihat yang berurutan, tanpa kartu pelafalan seluruh kalimat tersembunyi yang berulang.

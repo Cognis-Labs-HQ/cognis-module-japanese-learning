@@ -122,3 +122,11 @@ Das japanische Modul 2.2.100 verlangt direkt `study:library:provider` und entfer
 [fd7b3fa2](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/fd7b3fa218e80d8ce2657666adb544680d925fd5)
 
 [c0020778](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/c00207784c18bfafe9548cf449176f74768f0a14)
+
+## Erweiterte Startdecks
+
+Japanisch liefert sechs Startdecks: vollständige Hiragana- und Katakana-Reihen mit je 46 Karten, zehn Kanji, neun Wörter, acht Verben und zwölf Sätze. Bestehende Schlüssel bleiben stabil; alle Mitglieder sind sichtbare Anbieterdatensätze.
+
+## Inhalte und Verträge
+
+Höfliche Ortsfragen erhalten das abschließende か mit kanonischer Partikelkarte und vier Übersetzungen. Satzidentitäten bleiben erhalten. Aktivierungsfehler entfernen Suchanbieter und protokollieren sichere Metadaten. Die Anleitung verankert ctx als Anwendungsrückgrat und belässt die Ableitung der Satzaussprache beim Host.

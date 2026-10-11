@@ -122,3 +122,11 @@ Japanese module 2.2.100 requires `study:library:provider` directly and removes l
 [fd7b3fa2](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/fd7b3fa218e80d8ce2657666adb544680d925fd5)
 
 [c0020778](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/c00207784c18bfafe9548cf449176f74768f0a14)
+
+## Expanded Starter Decks
+
+Japanese now supplies six starter decks: complete hiragana and katakana sets of 46 cards, ten everyday kanji, nine first words, eight everyday verbs and twelve first sentences. Existing keys remain stable and every member resolves to a visible provider record.
+
+## Content and Contract Corrections
+
+Polite location questions include their final か, using a new canonical question-particle card with four localized definitions. Existing sentence identities stay stable. Activation failure removes lookup registrations and logs safe error metadata. Instructions establish ctx as the application backbone and preserve host-derived sentence pronunciations.

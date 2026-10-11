@@ -79,7 +79,7 @@
     },
     {
         "id": "ja:sentence:gakkou-wa-doko-desu",
-        "label": "学校はどこです",
+        "label": "学校はどこですか",
         "references": [
             {
                 "entryId": "ja:word:gakkou",
@@ -102,12 +102,17 @@
                 "position": 3
             },
             {
+                "entryId": "ja:particle:ka",
+                "relation": "particles",
+                "position": 4
+            },
+            {
                 "entryId": "ja:def:sentence-gakkou-wa-doko-desu",
                 "relation": "definitions"
             }
         ],
         "fields": {
-            "pronunciation": ["がっこうはどこです"]
+            "pronunciation": ["がっこうはどこですか"]
         },
         "class": "composite"
     },
@@ -264,7 +269,7 @@
     },
     {
         "id": "ja:sentence:kuruma-wa-doko-desu",
-        "label": "車はどこです",
+        "label": "車はどこですか",
         "references": [
             {
                 "entryId": "ja:word:kuruma",
@@ -287,12 +292,17 @@
                 "position": 3
             },
             {
+                "entryId": "ja:particle:ka",
+                "relation": "particles",
+                "position": 4
+            },
+            {
                 "entryId": "ja:def:sentence-kuruma-wa-doko-desu",
                 "relation": "definitions"
             }
         ],
         "fields": {
-            "pronunciation": ["くるまはどこです"]
+            "pronunciation": ["くるまはどこですか"]
         },
         "class": "composite"
     }

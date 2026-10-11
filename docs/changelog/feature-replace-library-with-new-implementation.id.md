@@ -122,3 +122,11 @@ Modul Jepang 2.2.100 langsung mewajibkan `study:library:provider` dan menghapus 
 [fd7b3fa2](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/fd7b3fa218e80d8ce2657666adb544680d925fd5)
 
 [c0020778](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/c00207784c18bfafe9548cf449176f74768f0a14)
+
+## Dek Awal Diperluas
+
+Bahasa Jepang menyediakan enam dek awal: hiragana dan katakana lengkap masing-masing 46 kartu, sepuluh kanji, sembilan kata, delapan verba dan dua belas kalimat. Kunci tetap stabil dan seluruh anggota adalah rekaman penyedia yang terlihat.
+
+## Perbaikan Konten dan Kontrak
+
+Pertanyaan lokasi sopan diakhiri か dengan partikel kanonis dan empat terjemahan. Identitas kalimat tetap. Kegagalan aktivasi melepas penyedia dan mencatat metadata aman. Instruksi menetapkan ctx sebagai tulang punggung aplikasi serta mempertahankan pelafalan kalimat yang diturunkan oleh host.

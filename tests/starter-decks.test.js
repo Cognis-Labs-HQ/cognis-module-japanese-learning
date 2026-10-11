@@ -24,7 +24,26 @@ test("starter flashcard decks use stable keys, localized names, and existing vis
             if (error.code !== "ENOENT") throw error;
         }
     }
-    assert.equal(decks.length, 3);
+    assert.equal(decks.length, 6);
+    for (const [key, labels] of [
+        [
+            "hiragana-basics",
+            "あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほまみむめもやゆよらりるれろわをん",
+        ],
+        [
+            "katakana-basics",
+            "アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲン",
+        ],
+    ]) {
+        const deck = decks.find((deck) => deck.key === key);
+        assert.equal(
+            deck.sourceRecordIds.map((id) => records.get(id).label).join(""),
+            labels,
+        );
+        for (const id of deck.sourceRecordIds)
+            assert.ok(records.get(id).fields.stroke_pattern.strokes.length, id);
+    }
+
     assert.equal(new Set(decks.map((deck) => deck.key)).size, decks.length);
     for (const deck of decks) {
         assert.equal(deck.schemaId, schema.id);

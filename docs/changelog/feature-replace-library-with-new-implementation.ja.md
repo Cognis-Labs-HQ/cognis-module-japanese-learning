@@ -122,3 +122,11 @@ KanjiVG の筆順ファイルには別の上限付きモジュールキャッシ
 [fd7b3fa2](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/fd7b3fa218e80d8ce2657666adb544680d925fd5)
 
 [c0020778](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/c00207784c18bfafe9548cf449176f74768f0a14)
+
+## 初期デッキの拡充
+
+日本語は六つの初期デッキを提供します。各46枚のひらがな・カタカナ、漢字10枚、単語9枚、動詞8枚、文12枚です。既存キーを維持し、全メンバーが表示レコードに解決することを検証します。
+
+## 内容と契約の訂正
+
+丁寧な場所の質問に最後の か を加え、四言語の定義を持つ正規の助詞カードを追加します。文の ID は維持します。起動失敗時はプロバイダーを解除して安全な情報を記録します。指示は ctx をアプリの基盤とし、文の読みをホストが導く契約を維持します。
