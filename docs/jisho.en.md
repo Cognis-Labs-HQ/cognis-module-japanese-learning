@@ -1,6 +1,6 @@
 # Dictionary integration
 
-Module/content-pack version 2.2.93 retains schema revision 88. Jisho registers through the host `study:library:provider` capability with `searchable: true` and the `dictionary` capability. It supports Kana, Kanji and Vocabulary; sentences and provider-owned particle creation are excluded.
+Module version 2.2.97 keeps content-pack version 2.2.93 and schema revision 88. Jisho registers through the host `study:library:provider` capability with `searchable: true` and the `dictionary` capability. It supports Kana, Kanji and Vocabulary; sentences and provider-owned particle creation are excluded.
 
 ## Authoritative lookup
 
@@ -8,7 +8,7 @@ Word and Kanji requests retrieve authoritative Jisho results even when bundled r
 
 ## Composer imports
 
-One match fills the open composer. Multiple matches use a horizontal preview chooser with selection and confirmation. Vocabulary lookup preserves authored input and composition tokens. Pronunciations and definitions are committed immediately; each gloss, including semicolon-separated meanings, is a separate definition. Cognis supplies optional missing-language translation through its localization capability; the module neither invents translations nor copies English into other languages. Source URLs and complete original records are retained only in hidden `dictionary_data` metadata.
+One match fills the open composer. Same-composition matches combine alternate readings and definitions. Different spellings use a horizontal preview chooser with immediate selection and an exact-match Continue action. Vocabulary lookup preserves authored input and composition tokens. Pronunciations and definitions are committed immediately; each gloss, including semicolon-separated meanings, is a separate definition. Cognis supplies optional missing-language translation through its localization capability; the module neither invents translations nor copies English into other languages. Source URLs and complete original records are retained only in hidden `dictionary_data` metadata.
 
 ## Reading graphs
 
@@ -45,3 +45,7 @@ Missing required fields are completed through registered auxiliary lookup provid
 Kanji lookup converts Jisho’s Katakana On readings to Hiragana for card pronunciations and reading links. 僕 includes ぼく alongside しもべ. Identical Kun and On pronunciations are deduplicated after conversion; original notation such as ボク remains in hidden dictionary metadata. Vocabulary Katakana spellings and duplicate-query filtering keep their existing behavior.
 
 The primary reading follows common exact word matches from Jisho: 僕 shows ぼく first, then しもべ. Related words and unattested Kanji readings do not change the order. If word lookup fails, the Kanji result remains usable and the failure is logged safely.
+
+## Exact-composition lookup choices
+
+Cognis combines dictionary matches with identical written composition into alternate readings and meanings. Clicking a different spelling applies it immediately and resolves or creates its supporting Kanji; Continue or closing the chooser retains the exact composition and ignores expanded matches. Reading cards preserve their path to individual Kana. Choice handling, card creation, scope checks, caching and notifications remain host responsibilities.

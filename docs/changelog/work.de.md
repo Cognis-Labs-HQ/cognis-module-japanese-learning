@@ -122,54 +122,6 @@ Geordnete Zusammensetzungen entsprechen nun den neuesten Vorabprüfungen der Bib
 
 Jeder eigenständige oder zusammengesetzte Eintrag mit `っ` oder `ッ` setzt nun `hidden: true`. Die Datensätze bleiben mit ihren vorhandenen Elternverweisen zur Auflösung und Detailnutzung im Paket, können aber mit ihren Nachkommen nicht mehr am Ende der direkt durchsuchbaren Kana-Tabelle erscheinen.
 
-## Commits
-
-- [a6fa75d](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/a6fa75d15c478b1d8ef1930dcc3c5c29e3938b97)
-- [33cf20c](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/33cf20c040c55a177efe83fa6d14674491da2254)
-- [ddd8464](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/ddd84646f1930ea660f469e4b1776219558e1e5b)
-- [7048e41](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/7048e4155bb52132741016c35371f0e0c215d67e)
-- [131afdf](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/131afdf5125a3eebae584a2c4729bd0a1b144654)
-- [db6df0a](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/db6df0a0d71e75892cac726991ab0d5fa9edf172)
-- [530fdfd](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/530fdfdb7cb55b05d316d404ab8e64c33ba0b04c)
-- [549322e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/549322e5e597f186c36ada77d330921e7b335a4d)
-- [1740b0b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/1740b0b0da93d15c450ca82c452bb1fe8698b7e9)
-- [4639371](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/4639371d8fe55c71477aa70087cc4e8a18100438)
-- [e9ae382](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/e9ae382be9ed7fd23b4a323f081904ad9137410f)
-- [92032ec](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/92032ecd30c7bee0dbcb76007108ef12e6a892e8)
-- [b9f3e6e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/b9f3e6eb6813d99d5ee76902729bc478fe36afd1)
-- [90bac12](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/90bac12fb8d4c90451b6a0ae2e9c0572be99cbd0)
-- [4a0b288](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/4a0b28830b5a1d6fcea2df490e74e99108d1e4dd)
-- [32b43de](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/32b43dec923a4fc7a62401bb21b5b01259cb311e)
-- [c7a745f](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/c7a745f39078cb5cb4d4206ce20a855aed195a22)
-
-- [5ab8006](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/5ab80067e1e3151a86f648cedf7660167a1f6f15)
-
-- [32ac841](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/32ac8416bbf3676b3cecdde536e645e24941f81a)
-
-- [ed1fd35](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/ed1fd35e5235f79773ba91bd1d28377365509e2b)
-
-- [e5c86a4](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/e5c86a4cf17408e92c5021015ff4404c2e5802b6)
-
-- [2a56248](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/2a562481c79002aa62a1ab51de91b7543c1acd18)
-
-- [f6ace9e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/f6ace9e86c0c27634edeba5ffb98e429bfd2be4f)
-
-- [64682aa](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/64682aa25ecd32bf106613dec2b8a26812e1fba5)
-
-- [06f4b09](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/06f4b09449d44ca464c31f11464fd474bddf4fcd)
-
-- [0912c79](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/0912c79cff5ba0fce67cd2c9ec6e10da11331a64)
-
-- [a8e559e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/a8e559e3bfad5bbf1c1778dd4a9505c83bc04f8d)
-
-- [7f8cc35](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/7f8cc35b43f92480c77dba4807bf4f237e4ebd8d)
-
-- [e5eae65](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/e5eae656076a0bcb31c74e7f388c06b4ed790815)
-
-- [6677a4f](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/6677a4f80b97c2d3f056b189002e2c0f30f88e22)
-
-- [b314603](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/b314603e775c02a12ee16c3c718618a4077125bc)
-
 ## Filtergebundene Kana-Lücken
 
 Die vier ausdrücklichen Tabellenlücken werden von den entsprechenden Hiragana- und Katakana-Rasterpositionen gemeinsam genutzt. Durch das abwechselnde Anordnen der jeweiligen Schriftzeichen kann der Bibliotheksfilter die inaktive Schrift entfernen, ohne deren Lücken am Anfang oder Ende der ausgewählten Tabelle stehen zu lassen.
@@ -633,10 +585,6 @@ Der dokumentierte Vertrag belässt kanonische Verben und Adverbien in der Wortsc
 
 Das Modul wird auf `2.2.72`, die Inhaltsrevision auf `2026-09-30.10` und das japanische Schema auf Revision `77` angehoben; die Pakethashes wurden neu erzeugt.
 
-## Commits
-
-- [d7b696b](../../commit/d7b696b) — Transformationsmarker an Cognis angepasst.
-
 ## Definitionsanmerkungen für jede Transformation
 
 Jede bereitgestellte Verbtransformation besitzt nun lokalisierte Marker-Metadaten. Direkte Wunschzweige erzeugen Formen wie `見たい`; Verneinung, Vergangenheit, Höflichkeit, Verbindung, Passiv, Potential, Volitional, Kausativ und tiefere Zweige liefern jeweils eine eigene Bedeutungsanmerkung.
@@ -648,10 +596,6 @@ Jede bereitgestellte Verbtransformation besitzt nun lokalisierte Marker-Metadate
 ## Strukturierte Cognis-Nacharbeit
 
 Das Paket folgt dem Cognis-Markervertrag direkt, indem jede lokalisierte Verbdefinition genau einen `{{ marker }}`-Platzhalter enthält und getrennte Definitionsdatensätze bei der Transformationsdarstellung erhalten bleiben.
-
-## Commits
-
-- [64ce852](../../commit/64ce852) — Jede Verbtransformation mit Definitionsanmerkungen versehen.
 
 ## Marker-Platzhalter in Verbdefinitionen ergänzt
 
@@ -665,10 +609,6 @@ Die kombinierte Bedeutung von `学ぶ` wurde in getrennte Definitionsdatensätze
 
 Das Modul wird auf `2.2.74`, die Inhaltsrevision auf `2026-10-01.2` und das japanische Schema auf Revision `79` angehoben; die Pakethashes wurden neu erzeugt.
 
-## Commits
-
-- [f6c7201](../../commit/f6c7201) — Transformationsmarker in Verbdefinitionen platziert.
-
 ## Zusammensetzbare Definitionstransformationen
 
 Feste `marker`-Metadaten und gespeicherte `{{ marker }}`-Platzhalter wurden durch die Cognis-2.24-Struktur `definitionTransform` ersetzt. Jede Regel deklariert nun lokalisierte entfernbare Grenzen und Vorlagen mit `{{ definition }}`, `{{ stem }}`, `{{ prefix }}` und `{{ suffix }}`; die Vorlagen werden entlang tiefer Transformationspfade der Reihe nach zusammengesetzt.
@@ -680,10 +620,6 @@ Verbdefinitionen sind wieder normaler lokalisierter Text; einheitliche Infinitiv
 ## Versionsabgleich
 
 Das Modul wird auf `2.2.75`, die Inhaltsrevision auf `2026-10-01.3` und das japanische Schema auf Revision `80` angehoben; die Pakethashes wurden neu erzeugt.
-
-## Commits
-
-- [739beba](../../commit/739beba) — Zusammensetzbare Definitionstransformationen übernommen.
 
 ## Kontextabhängige Definitionsersetzungen
 
@@ -697,10 +633,6 @@ Tests prüfen die Umschreibung von `to (want to) see` zu `to (have wanted to) se
 
 Das Modul wird auf `2.2.76`, die Inhaltsrevision auf `2026-10-01.4` und das japanische Schema auf Revision `81` angehoben; die Pakethashes wurden neu erzeugt.
 
-## Commits
-
-- [a5539e6](../../commit/a5539e6) — Kontextabhängige Definitionsersetzungen ergänzt.
-
 ## Seitenverhältnisgerechte Zeichenmuster
 
 Jedes paketierte Strichmuster deklariert nun seine logische Spaltenzahl. Die Cognis-Zeichenübung kann Einzel- und Mehrzeichenmuster in den seitenverhältnistreuen Darstellungsbereich einpassen, statt die Zeichenfläche zu verzerren oder Zeichen auf falsch bemessene Zellen zu verteilen.
@@ -713,10 +645,6 @@ Strichmuster veröffentlichen nun geordnete Gruppenlängen pro Zeichen; auch ent
 
 Das Modul wird auf `2.2.77`, die Inhaltsrevision auf `2026-10-01.5` und das japanische Schema auf Revision `82` angehoben; die Pakethashes wurden neu erzeugt.
 
-## Commits
-
-- [7c2c0db](../../commit/7c2c0db) — Zeichenseitenverhältnis und Strichgruppen bewahrt.
-
 ## Zeichenbasierte Kanji-Identität
 
 Die Kanji-Suche normalisiert und vergleicht jetzt direkt das eingegebene Zeichen, statt eine gemeinsame Aussprache als Identität zuzulassen. Regressionstests belegen, dass `券` von vorhandenen Kanji wie `犬` getrennt bleibt, obwohl beide `けん` verwenden können; echte Konflikte desselben Zeichens lassen sich über den von Cognis Library 2.24.3 gelieferten Konflikteintrag auflösen.
@@ -725,11 +653,6 @@ Die Kanji-Suche normalisiert und vergleicht jetzt direkt das eingegebene Zeichen
 
 Das Modul wird auf `2.2.78` und die Inhaltsrevision auf `2026-10-01.6` angehoben; die Pakethashes wurden neu erzeugt.
 
-## Commits
-
-- [ab10be0](../../commit/ab10be0) — Kanji-Identität von der Aussprache trennen.
-- [19424fc](../../commit/19424fc) — Doppelte Identitätshinweise entfernen.
-
 ## Satzstruktur-Komposition
 
 Der japanische Satzkonstruktor folgt nun Cognis Library 2.24.9 mit getrennten Wort- und Partikeleingaben, einem anbietereigenen Karussell für Satzstrukturen und wiederverwendbaren japanischen Satzzeichen. Die sichtbare Kopula `です` trägt das Tag `sentence-structure`; sie bleibt bedeutungsvoller Wortschatz und kann beim Erstellen von Sätzen direkt ausgewählt, angeordnet, entfernt und wiederhergestellt werden.
@@ -737,10 +660,6 @@ Der japanische Satzkonstruktor folgt nun Cognis Library 2.24.9 mit getrennten Wo
 ## Versionsabgleich
 
 Das Modul wird auf `2.2.79`, die Inhaltsrevision auf `2026-10-02.1` und das japanische Schema auf Revision `83` angehoben; die Pakethashes wurden neu erzeugt.
-
-## Commits
-
-- [244e048](../../commit/244e048) — Satzstruktur-Einträge im Composer bereitstellen.
 
 ## Erweiterte Satzkonnektoren
 
@@ -762,10 +681,53 @@ Kopula-Regeln lassen nun ungenutzte optionale Definitionsgrenzen weg, statt leer
 
 Aussprachefelder im Wortschatz verwenden nun den singulären Host-Vertrag `pronunciation-readings`. Jede sichtbare Wortschatzkarte verlinkt auf einen verborgenen vollständigen Aussprachedatensatz, der den geordneten Pfad über Kanji-Lesungen und atomare Kana bewahrt; dadurch kann beispielsweise `ちいさい` von der Karte `小さい` aus geöffnet werden. Das Modul wird auf `2.2.82`, die Inhaltsrevision auf `2026-10-04.1` und die Schemarevision auf `86` angehoben.
 
+## Auswahl gleicher Zusammensetzung
+
+Modulversion 2.2.97 behält Inhaltspaketversion 2.2.93 und Schemarevision 88 bei. Cognis bündelt Wörterbuchtreffer gleicher Schreibzusammensetzung als alternative Lesungen und Bedeutungen. Eine andere Schreibweise wird beim Anklicken sofort übernommen und ihre benötigten Kanji werden aufgelöst oder erstellt. Weiter oder Schließen behält die genaue Zusammensetzung und verwirft erweiterte Treffer. Lesekarten behalten ihren Pfad zu einzelnen Kana. Auswahl, Kartenerstellung, Sichtbarkeitsprüfung, Zwischenspeicherung und Benachrichtigungen bleiben Aufgaben des Hosts.
+
 ## Commits
 
-- [b33c94a](../../commit/b33c94a) — Satzkonnektoren und Kopulaformen erweitern.
-
-- [7f15934](../../commit/7f15934) — Metadatenvalidierung der Kopula-Transformation korrigiert.
-
-- [25c3765](../../commit/25c3765) — Aussprache-Deep-Links im Wortschatz wiederhergestellt.
+- [0b38fbd](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/0b38fbdfd4c7e9ffc8710b73df259f7d567a33fe)
+- [a6fa75d](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/a6fa75d15c478b1d8ef1930dcc3c5c29e3938b97)
+- [33cf20c](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/33cf20c040c55a177efe83fa6d14674491da2254)
+- [ddd8464](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/ddd84646f1930ea660f469e4b1776219558e1e5b)
+- [7048e41](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/7048e4155bb52132741016c35371f0e0c215d67e)
+- [131afdf](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/131afdf5125a3eebae584a2c4729bd0a1b144654)
+- [db6df0a](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/db6df0a0d71e75892cac726991ab0d5fa9edf172)
+- [530fdfd](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/530fdfdb7cb55b05d316d404ab8e64c33ba0b04c)
+- [549322e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/549322e5e597f186c36ada77d330921e7b335a4d)
+- [1740b0b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/1740b0b0da93d15c450ca82c452bb1fe8698b7e9)
+- [4639371](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/4639371d8fe55c71477aa70087cc4e8a18100438)
+- [e9ae382](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/e9ae382be9ed7fd23b4a323f081904ad9137410f)
+- [92032ec](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/92032ecd30c7bee0dbcb76007108ef12e6a892e8)
+- [b9f3e6e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/b9f3e6eb6813d99d5ee76902729bc478fe36afd1)
+- [90bac12](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/90bac12fb8d4c90451b6a0ae2e9c0572be99cbd0)
+- [4a0b288](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/4a0b28830b5a1d6fcea2df490e74e99108d1e4dd)
+- [32b43de](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/32b43dec923a4fc7a62401bb21b5b01259cb311e)
+- [c7a745f](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/c7a745f39078cb5cb4d4206ce20a855aed195a22)
+- [5ab8006](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/5ab80067e1e3151a86f648cedf7660167a1f6f15)
+- [32ac841](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/32ac8416bbf3676b3cecdde536e645e24941f81a)
+- [ed1fd35](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/ed1fd35e5235f79773ba91bd1d28377365509e2b)
+- [e5c86a4](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/e5c86a4cf17408e92c5021015ff4404c2e5802b6)
+- [2a56248](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/2a562481c79002aa62a1ab51de91b7543c1acd18)
+- [f6ace9e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/f6ace9e86c0c27634edeba5ffb98e429bfd2be4f)
+- [64682aa](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/64682aa25ecd32bf106613dec2b8a26812e1fba5)
+- [06f4b09](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/06f4b09449d44ca464c31f11464fd474bddf4fcd)
+- [0912c79](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/0912c79cff5ba0fce67cd2c9ec6e10da11331a64)
+- [a8e559e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/a8e559e3bfad5bbf1c1778dd4a9505c83bc04f8d)
+- [7f8cc35](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/7f8cc35b43f92480c77dba4807bf4f237e4ebd8d)
+- [e5eae65](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/e5eae656076a0bcb31c74e7f388c06b4ed790815)
+- [6677a4f](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/6677a4f80b97c2d3f056b189002e2c0f30f88e22)
+- [b314603](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/b314603e775c02a12ee16c3c718618a4077125bc)
+- [d7b696b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/d7b696b) — Transformationsmarker an Cognis angepasst.
+- [64ce852](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/64ce852) — Jede Verbtransformation mit Definitionsanmerkungen versehen.
+- [f6c7201](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/f6c7201) — Transformationsmarker in Verbdefinitionen platziert.
+- [739beba](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/739beba) — Zusammensetzbare Definitionstransformationen übernommen.
+- [a5539e6](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/a5539e6) — Kontextabhängige Definitionsersetzungen ergänzt.
+- [7c2c0db](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/7c2c0db) — Zeichenseitenverhältnis und Strichgruppen bewahrt.
+- [ab10be0](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/ab10be0) — Kanji-Identität von der Aussprache trennen.
+- [19424fc](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/19424fc) — Doppelte Identitätshinweise entfernen.
+- [244e048](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/244e048) — Satzstruktur-Einträge im Composer bereitstellen.
+- [b33c94a](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/b33c94a) — Satzkonnektoren und Kopulaformen erweitern.
+- [7f15934](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/7f15934) — Metadatenvalidierung der Kopula-Transformation korrigiert.
+- [25c3765](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/25c3765) — Aussprache-Deep-Links im Wortschatz wiederhergestellt.

@@ -1,6 +1,6 @@
 # Integrasi kamus
 
-Versi modul dan paket konten 2.2.93 mempertahankan revisi skema 88. Jisho mendaftar melalui kapabilitas host `study:library:provider` dengan `searchable: true` dan kapabilitas `dictionary`. Kana, Kanji, dan Kosakata didukung; kalimat dan pembuatan partikel milik penyedia dikecualikan.
+Versi modul 2.2.97 mempertahankan versi paket konten 2.2.93 dan revisi skema 88. Jisho mendaftar melalui kapabilitas host `study:library:provider` dengan `searchable: true` dan kapabilitas `dictionary`. Kana, Kanji, dan Kosakata didukung; kalimat dan pembuatan partikel milik penyedia dikecualikan.
 
 ## Pencarian otoritatif
 
@@ -8,7 +8,7 @@ Permintaan kata dan Kanji mengambil data Jisho yang otoritatif meskipun konten b
 
 ## Impor ke editor
 
-Satu hasil langsung mengisi editor terbuka; beberapa hasil memakai daftar pratinjau horizontal dengan pemilihan dan konfirmasi. Pencarian kosakata mempertahankan teks serta token komposisi pengguna. Pelafalan dan definisi langsung dikomit. Setiap arti, termasuk yang dipisahkan titik koma, menjadi definisi tersendiri. Cognis menyediakan penerjemahan bahasa UI yang belum tersedia melalui kapabilitas lokalisasi opsional; modul tidak mengarang terjemahan atau menyalin bahasa Inggris ke bahasa lain. URL sumber dan rekaman asli lengkap hanya disimpan sebagai metadata tersembunyi `dictionary_data`.
+Satu hasil langsung mengisi editor terbuka; hasil dengan komposisi sama menggabungkan bacaan dan makna. Ejaan berbeda ditampilkan pada pratinjau horizontal untuk langsung dipilih; Lanjutkan mempertahankan komposisi persis. Pencarian kosakata mempertahankan teks serta token komposisi pengguna. Pelafalan dan definisi langsung dikomit. Setiap arti, termasuk yang dipisahkan titik koma, menjadi definisi tersendiri. Cognis menyediakan penerjemahan bahasa UI yang belum tersedia melalui kapabilitas lokalisasi opsional; modul tidak mengarang terjemahan atau menyalin bahasa Inggris ke bahasa lain. URL sumber dan rekaman asli lengkap hanya disimpan sebagai metadata tersembunyi `dictionary_data`.
 
 ## Graf bacaan
 
@@ -45,3 +45,7 @@ Kolom wajib yang belum ada dilengkapi melalui penyedia pencarian tambahan yang t
 Pencarian Kanji mengubah bacaan On Katakana dari Jisho menjadi Hiragana untuk pelafalan kartu dan tautan bacaan. 僕 menyertakan ぼく bersama しもべ. Pelafalan Kun dan On yang sama disatukan setelah konversi; notasi asli seperti ボク tetap tersimpan dalam metadata kamus tersembunyi. Ejaan Katakana kosakata dan penyaringan bacaan pencarian duplikat tetap berfungsi seperti sebelumnya.
 
 Bacaan utama mengikuti kecocokan kata persis yang umum dari Jisho: 僕 menampilkan ぼく terlebih dahulu, lalu しもべ. Kata terkait dan bacaan Kanji yang tidak tercantum tidak mengubah urutan. Jika pencarian kata gagal, hasil Kanji tetap dapat digunakan dan kegagalan dicatat dengan aman.
+
+## Pilihan Komposisi Persis
+
+Cognis menggabungkan hasil kamus dengan komposisi tulisan identik menjadi bacaan dan makna alternatif. Mengeklik ejaan berbeda langsung menerapkannya serta menyelesaikan atau membuat Kanji pendukung. Lanjutkan atau menutup pemilih mempertahankan komposisi persis dan mengabaikan hasil diperluas. Kartu bacaan mempertahankan jalur ke Kana individual. Pemilihan, pembuatan kartu, pemeriksaan cakupan, cache, dan notifikasi tetap menjadi tanggung jawab host.

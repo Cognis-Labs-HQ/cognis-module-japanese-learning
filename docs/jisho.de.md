@@ -1,6 +1,6 @@
 # Wörterbuchintegration
 
-Modul- und Inhaltspaketversion 2.2.93 behalten Schemarevision 88 bei. Jisho registriert sich über `study:library:provider` mit `searchable: true` und der Fähigkeit `dictionary`. Unterstützt werden Kana, Kanji und Vokabeln; Sätze und die Erstellung anbietereigener Partikel bleiben ausgeschlossen.
+Modulversion 2.2.97 behält Inhaltspaketversion 2.2.93 und Schemarevision 88 bei. Jisho registriert sich über `study:library:provider` mit `searchable: true` und der Fähigkeit `dictionary`. Unterstützt werden Kana, Kanji und Vokabeln; Sätze und die Erstellung anbietereigener Partikel bleiben ausgeschlossen.
 
 ## Maßgebliche Suche
 
@@ -8,7 +8,7 @@ Wort- und Kanji-Anfragen beziehen maßgebliche Jisho-Daten auch bei Treffern im 
 
 ## Import in den Editor
 
-Ein Treffer füllt den geöffneten Editor; mehrere Treffer erscheinen zur Auswahl und Bestätigung in einer horizontalen Vorschau. Vokabelabfragen erhalten den eingegebenen Text und die Komposition. Lesungen und Definitionen werden sofort übernommen. Jede Bedeutung, auch durch Semikolon getrennte Angaben, wird eine eigene Definition. Fehlende UI-Sprachen ergänzt optional Cognis über die Lokalisierungsfähigkeit; das Modul erfindet keine Übersetzungen und kopiert kein Englisch in andere Sprachen. Quell-URLs und vollständige Originaldaten stehen ausschließlich in verborgenen `dictionary_data`-Metadaten.
+Ein Treffer füllt den geöffneten Editor; Treffer gleicher Zusammensetzung bündeln Lesungen und Bedeutungen. Andere Schreibweisen erscheinen in einer horizontalen Vorschau zur sofortigen Auswahl; Weiter behält die genaue Zusammensetzung. Vokabelabfragen erhalten den eingegebenen Text und die Komposition. Lesungen und Definitionen werden sofort übernommen. Jede Bedeutung, auch durch Semikolon getrennte Angaben, wird eine eigene Definition. Fehlende UI-Sprachen ergänzt optional Cognis über die Lokalisierungsfähigkeit; das Modul erfindet keine Übersetzungen und kopiert kein Englisch in andere Sprachen. Quell-URLs und vollständige Originaldaten stehen ausschließlich in verborgenen `dictionary_data`-Metadaten.
 
 ## Lesungsgraphen
 
@@ -45,3 +45,7 @@ Fehlende Pflichtfelder werden vor dem Speichern über registrierte ergänzende A
 Die Kanji-Abfrage wandelt Jishos On-Lesungen in Katakana für Kartenaussprachen und Lesungsverknüpfungen in Hiragana um. 僕 enthält neben しもべ auch ぼく. Identische Kun- und On-Aussprachen werden nach der Umwandlung zusammengeführt; die ursprüngliche Schreibweise wie ボク bleibt in den verborgenen Wörterbuchmetadaten erhalten. Katakana-Schreibweisen von Vokabeln und die Filterung doppelter Suchlesungen behalten ihr bisheriges Verhalten.
 
 Die primäre Lesung folgt häufigen exakten Worttreffern von Jisho: 僕 zeigt zuerst ぼく und danach しもべ. Verwandte Wörter und nicht belegte Kanji-Lesungen ändern die Reihenfolge nicht. Schlägt die Wortabfrage fehl, bleibt das Kanji-Ergebnis nutzbar und der Fehler wird sicher protokolliert.
+
+## Auswahl gleicher Zusammensetzung
+
+Cognis bündelt Wörterbuchtreffer gleicher Schreibzusammensetzung als alternative Lesungen und Bedeutungen. Eine andere Schreibweise wird beim Anklicken sofort übernommen und ihre benötigten Kanji werden aufgelöst oder erstellt. Weiter oder Schließen behält die genaue Zusammensetzung und verwirft erweiterte Treffer. Lesekarten behalten ihren Pfad zu einzelnen Kana. Auswahl, Kartenerstellung, Sichtbarkeitsprüfung, Zwischenspeicherung und Benachrichtigungen bleiben Aufgaben des Hosts.

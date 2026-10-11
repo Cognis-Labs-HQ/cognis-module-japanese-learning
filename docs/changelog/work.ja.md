@@ -122,54 +122,6 @@ Cognis PR #214 に合わせ、名前空間の所有権、ローカライズ済�
 
 単独または複合の `っ`・`ッ` を含む全項目に `hidden: true` を設定しました。解決や詳細表示に使う既存の親参照は保持したまま、これらの項目とその子孫が直接閲覧するかな表の末尾に漏れないようにします。
 
-## コミット
-
-- [a6fa75d](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/a6fa75d15c478b1d8ef1930dcc3c5c29e3938b97)
-- [33cf20c](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/33cf20c040c55a177efe83fa6d14674491da2254)
-- [ddd8464](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/ddd84646f1930ea660f469e4b1776219558e1e5b)
-- [7048e41](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/7048e4155bb52132741016c35371f0e0c215d67e)
-- [131afdf](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/131afdf5125a3eebae584a2c4729bd0a1b144654)
-- [db6df0a](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/db6df0a0d71e75892cac726991ab0d5fa9edf172)
-- [530fdfd](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/530fdfdb7cb55b05d316d404ab8e64c33ba0b04c)
-- [549322e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/549322e5e597f186c36ada77d330921e7b335a4d)
-- [1740b0b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/1740b0b0da93d15c450ca82c452bb1fe8698b7e9)
-- [4639371](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/4639371d8fe55c71477aa70087cc4e8a18100438)
-- [e9ae382](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/e9ae382be9ed7fd23b4a323f081904ad9137410f)
-- [92032ec](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/92032ecd30c7bee0dbcb76007108ef12e6a892e8)
-- [b9f3e6e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/b9f3e6eb6813d99d5ee76902729bc478fe36afd1)
-- [90bac12](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/90bac12fb8d4c90451b6a0ae2e9c0572be99cbd0)
-- [4a0b288](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/4a0b28830b5a1d6fcea2df490e74e99108d1e4dd)
-- [32b43de](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/32b43dec923a4fc7a62401bb21b5b01259cb311e)
-- [c7a745f](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/c7a745f39078cb5cb4d4206ce20a855aed195a22)
-
-- [5ab8006](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/5ab80067e1e3151a86f648cedf7660167a1f6f15)
-
-- [32ac841](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/32ac8416bbf3676b3cecdde536e645e24941f81a)
-
-- [ed1fd35](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/ed1fd35e5235f79773ba91bd1d28377365509e2b)
-
-- [e5c86a4](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/e5c86a4cf17408e92c5021015ff4404c2e5802b6)
-
-- [2a56248](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/2a562481c79002aa62a1ab51de91b7543c1acd18)
-
-- [f6ace9e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/f6ace9e86c0c27634edeba5ffb98e429bfd2be4f)
-
-- [64682aa](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/64682aa25ecd32bf106613dec2b8a26812e1fba5)
-
-- [06f4b09](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/06f4b09449d44ca464c31f11464fd474bddf4fcd)
-
-- [0912c79](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/0912c79cff5ba0fce67cd2c9ec6e10da11331a64)
-
-- [a8e559e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/a8e559e3bfad5bbf1c1778dd4a9505c83bc04f8d)
-
-- [7f8cc35](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/7f8cc35b43f92480c77dba4807bf4f237e4ebd8d)
-
-- [e5eae65](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/e5eae656076a0bcb31c74e7f388c06b4ed790815)
-
-- [6677a4f](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/6677a4f80b97c2d3f056b189002e2c0f30f88e22)
-
-- [b314603](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/b314603e775c02a12ee16c3c718618a4077125bc)
-
 ## フィルターに追従する仮名の空欄
 
 4 つの明示的な表の空欄を、対応するひらがなとカタカナのグリッド位置で共有します。各文字種の対応項目を交互に配置することで、ライブラリのフィルターが非選択の文字種を除外しても、その空欄が選択中の表の先頭や末尾に残りません。
@@ -633,10 +585,6 @@ Jisho コンポーザーのフローを修正し、語彙検索で長さを制�
 
 モジュールを `2.2.72`、コンテンツリビジョンを `2026-09-30.10`、日本語スキーマをリビジョン `77` に更新し、パッケージハッシュを再生成しました。
 
-## コミット
-
-- [d7b696b](../../commit/d7b696b) — 変換マーカーを Cognis に整合。
-
 ## すべての変換に対する定義注釈
 
 提供するすべての動詞変換にローカライズ済みマーカーメタデータを追加しました。直接の希望形分岐は `見たい` のような形を生成し、否定・過去・丁寧・接続・受身・可能・意向・使役および深い分岐も、それぞれ固有の意味注釈を提供します。
@@ -648,10 +596,6 @@ Jisho コンポーザーのフローを修正し、語彙検索で長さを制�
 ## 構造化した Cognis 側の改善案
 
 パックは、ローカライズ済みの各動詞定義に `{{ marker }}` スロットをちょうど 1 つ配置し、変換表示でも個別の定義レコードを維持することで、Cognis のマーカー契約へ直接適合します。
-
-## コミット
-
-- [64ce852](../../commit/64ce852) — すべての動詞変換定義へ注釈を追加。
 
 ## 動詞定義へマーカースロットを追加
 
@@ -665,10 +609,6 @@ Jisho コンポーザーのフローを修正し、語彙検索で長さを制�
 
 モジュールを `2.2.74`、コンテンツリビジョンを `2026-10-01.2`、日本語スキーマをリビジョン `79` に更新し、パッケージハッシュを再生成しました。
 
-## コミット
-
-- [f6c7201](../../commit/f6c7201) — 動詞定義へ変換マーカーを配置。
-
 ## 合成可能な定義変換
 
 固定の `marker` メタデータと保存済み `{{ marker }}` スロットを、Cognis 2.24 の `definitionTransform` 構造へ置き換えました。各規則は、取り外せるローカライズ済み境界と、`{{ definition }}`、`{{ stem }}`、`{{ prefix }}`、`{{ suffix }}` を使うテンプレートを宣言し、深い変換経路に沿って順番に合成します。
@@ -680,10 +620,6 @@ Jisho コンポーザーのフローを修正し、語彙検索で長さを制�
 ## バージョン同期
 
 モジュールを `2.2.75`、コンテンツリビジョンを `2026-10-01.3`、日本語スキーマをリビジョン `80` に更新し、パッケージハッシュを再生成しました。
-
-## コミット
-
-- [739beba](../../commit/739beba) — 合成可能な定義変換を導入。
 
 ## 文脈対応の定義置換
 
@@ -697,10 +633,6 @@ Jisho コンポーザーのフローを修正し、語彙検索で長さを制�
 
 モジュールを `2.2.76`、コンテンツリビジョンを `2026-10-01.4`、日本語スキーマをリビジョン `81` に更新し、パッケージハッシュを再生成しました。
 
-## コミット
-
-- [a5539e6](../../commit/a5539e6) — 文脈対応の定義置換を追加。
-
 ## 正しいアスペクト比の描画パターン
 
 パッケージ内のすべてのストロークパターンが論理列数を宣言するようになりました。Cognis の描画練習は、キャンバスを引き伸ばしたり誤った大きさのセルへ文字を分散したりせず、単一文字・複数文字のパターンをアスペクト比維持の表示領域へ収められます。
@@ -713,10 +645,6 @@ Jisho コンポーザーのフローを修正し、語彙検索で長さを制�
 
 モジュールを `2.2.77`、コンテンツリビジョンを `2026-10-01.5`、日本語スキーマをリビジョン `82` に更新し、パッケージハッシュを再生成しました。
 
-## コミット
-
-- [7c2c0db](../../commit/7c2c0db) — 描画のアスペクト比とストロークグループを保持。
-
 ## ラベルに基づく漢字識別
 
 漢字検索では、共通する発音を識別子として扱わず、入力された文字ラベルを正規化して直接比較するようになりました。回帰テストでは、どちらも `けん` と読める場合でも `券` が収録済みの `犬` などとは別の漢字として扱われることを確認します。実際に同じラベルが存在する場合は Cognis Library 2.24.3 が返す競合エントリから解決できます。
@@ -725,11 +653,6 @@ Jisho コンポーザーのフローを修正し、語彙検索で長さを制�
 
 モジュールを `2.2.78`、コンテンツリビジョンを `2026-10-01.6` に更新し、パッケージハッシュを再生成しました。
 
-## コミット
-
-- [ab10be0](../../commit/ab10be0) — 漢字識別を発音から分離。
-- [19424fc](../../commit/19424fc) — 重複した識別ガイダンスを削除。
-
 ## 文構造の組み立て
 
 日本語の文コンストラクターを Cognis Library 2.24.9 に合わせ、語彙と助詞の入力、プロバイダー所有の文構造カルーセル、繰り返し使える日本語の句読点を分離しました。表示語彙のコピュラ `です` に `sentence-structure` タグを付け、意味のある語彙カードとして保ちながら、文作成時に直接選択、並べ替え、削除、復元できるようにしました。
@@ -737,10 +660,6 @@ Jisho コンポーザーのフローを修正し、語彙検索で長さを制�
 ## バージョン同期
 
 モジュールを `2.2.79`、コンテンツリビジョンを `2026-10-02.1`、日本語スキーマをリビジョン `83` に更新し、パッケージハッシュを再生成しました。
-
-## コミット
-
-- [244e048](../../commit/244e048) — 文構造コンポーザー項目を公開。
 
 ## 文の接続表現を拡充
 
@@ -762,10 +681,53 @@ Jisho コンポーザーのフローを修正し、語彙検索で長さを制�
 
 語彙の発音フィールドはホストの単一 `pronunciation-readings` 契約を使用するようになりました。各表示語彙カードは、順序付きの漢字読みと原子的な仮名への経路を保持する非表示の完全発音レコード1つにリンクするため、`小さい` カードから `ちいさい` の発音を開けます。モジュールを `2.2.82`、コンテンツリビジョンを `2026-10-04.1`、スキーマリビジョンを `86` に更新しました。
 
+## 完全一致の検索候補
+
+モジュールのバージョン 2.2.97 はコンテンツパック 2.2.93 とスキーマ改訂 88 を維持します。 Cognis は同じ文字構成の辞書結果を別の読みと意味としてまとめます。異なる表記をクリックすると即時適用し、必要な漢字を解決または作成します。続行または閉じる操作では完全一致の構成を保持し、長い別候補を除外します。読みカードは個々の仮名への経路を保持します。候補選択、カード作成、範囲検証、キャッシュと通知はホストの責務です。
+
 ## コミット
 
-- [b33c94a](../../commit/b33c94a) — 文の接続表現とコピュラ形を拡充。
-
-- [7f15934](../../commit/7f15934) — コピュラ変換メタデータの検証を修正。
-
-- [25c3765](../../commit/25c3765) — 語彙の発音ディープリンクを復元。
+- [0b38fbd](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/0b38fbdfd4c7e9ffc8710b73df259f7d567a33fe)
+- [a6fa75d](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/a6fa75d15c478b1d8ef1930dcc3c5c29e3938b97)
+- [33cf20c](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/33cf20c040c55a177efe83fa6d14674491da2254)
+- [ddd8464](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/ddd84646f1930ea660f469e4b1776219558e1e5b)
+- [7048e41](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/7048e4155bb52132741016c35371f0e0c215d67e)
+- [131afdf](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/131afdf5125a3eebae584a2c4729bd0a1b144654)
+- [db6df0a](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/db6df0a0d71e75892cac726991ab0d5fa9edf172)
+- [530fdfd](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/530fdfdb7cb55b05d316d404ab8e64c33ba0b04c)
+- [549322e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/549322e5e597f186c36ada77d330921e7b335a4d)
+- [1740b0b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/1740b0b0da93d15c450ca82c452bb1fe8698b7e9)
+- [4639371](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/4639371d8fe55c71477aa70087cc4e8a18100438)
+- [e9ae382](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/e9ae382be9ed7fd23b4a323f081904ad9137410f)
+- [92032ec](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/92032ecd30c7bee0dbcb76007108ef12e6a892e8)
+- [b9f3e6e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/b9f3e6eb6813d99d5ee76902729bc478fe36afd1)
+- [90bac12](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/90bac12fb8d4c90451b6a0ae2e9c0572be99cbd0)
+- [4a0b288](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/4a0b28830b5a1d6fcea2df490e74e99108d1e4dd)
+- [32b43de](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/32b43dec923a4fc7a62401bb21b5b01259cb311e)
+- [c7a745f](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/c7a745f39078cb5cb4d4206ce20a855aed195a22)
+- [5ab8006](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/5ab80067e1e3151a86f648cedf7660167a1f6f15)
+- [32ac841](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/32ac8416bbf3676b3cecdde536e645e24941f81a)
+- [ed1fd35](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/ed1fd35e5235f79773ba91bd1d28377365509e2b)
+- [e5c86a4](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/e5c86a4cf17408e92c5021015ff4404c2e5802b6)
+- [2a56248](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/2a562481c79002aa62a1ab51de91b7543c1acd18)
+- [f6ace9e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/f6ace9e86c0c27634edeba5ffb98e429bfd2be4f)
+- [64682aa](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/64682aa25ecd32bf106613dec2b8a26812e1fba5)
+- [06f4b09](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/06f4b09449d44ca464c31f11464fd474bddf4fcd)
+- [0912c79](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/0912c79cff5ba0fce67cd2c9ec6e10da11331a64)
+- [a8e559e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/a8e559e3bfad5bbf1c1778dd4a9505c83bc04f8d)
+- [7f8cc35](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/7f8cc35b43f92480c77dba4807bf4f237e4ebd8d)
+- [e5eae65](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/e5eae656076a0bcb31c74e7f388c06b4ed790815)
+- [6677a4f](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/6677a4f80b97c2d3f056b189002e2c0f30f88e22)
+- [b314603](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/b314603e775c02a12ee16c3c718618a4077125bc)
+- [d7b696b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/d7b696b) — 変換マーカーを Cognis に整合。
+- [64ce852](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/64ce852) — すべての動詞変換定義へ注釈を追加。
+- [f6c7201](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/f6c7201) — 動詞定義へ変換マーカーを配置。
+- [739beba](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/739beba) — 合成可能な定義変換を導入。
+- [a5539e6](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/a5539e6) — 文脈対応の定義置換を追加。
+- [7c2c0db](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/7c2c0db) — 描画のアスペクト比とストロークグループを保持。
+- [ab10be0](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/ab10be0) — 漢字識別を発音から分離。
+- [19424fc](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/19424fc) — 重複した識別ガイダンスを削除。
+- [244e048](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/244e048) — 文構造コンポーザー項目を公開。
+- [b33c94a](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/b33c94a) — 文の接続表現とコピュラ形を拡充。
+- [7f15934](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/7f15934) — コピュラ変換メタデータの検証を修正。
+- [25c3765](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/25c3765) — 語彙の発音ディープリンクを復元。
