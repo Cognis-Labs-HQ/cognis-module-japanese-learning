@@ -92,7 +92,7 @@ KanjiVG の筆順ファイルには別の上限付きモジュールキャッシ
 
 ## スターターデッキ
 
-日本語プロバイダーは `data/starter-decks.json` に「ひらがなの基本」「日常の漢字」「はじめての日本語」の3つのデッキを宣言します。各デッキには安定したキー、翻訳された名前、スキーマID、ソースレコードIDがあります。言語記述子の `starterDecks` は宣言データだけを公開します。Cognis が現在の Library UUID に解決し、不完全なデッキと無効なプロバイダーのデッキを非表示にし、閲覧、お気に入り、共有、学習進捗を管理します。モジュールはデッキを作成せず、ホストのデータベースにもアクセスしません。
+日本語プロバイダーは `data/starter-decks.json` に「ひらがなの基本」「日常の漢字」「はじめての日本語」の3つのデッキを宣言します。各デッキには安定したキー、翻訳された名前、スキーマID、ソースレコードIDがあります。言語記述子の `starterDecks` は宣言データだけを公開します。Cognis が現在の 正規 Library ID に解決し、不完全なデッキと無効なプロバイダーのデッキを非表示にし、閲覧、お気に入り、共有、学習進捗を管理します。モジュールはデッキを作成せず、ホストのデータベースにもアクセスしません。
 
 ## コミット
 
@@ -112,3 +112,5 @@ KanjiVG の筆順ファイルには別の上限付きモジュールキャッシ
 - https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/84e49de45b43f6f0b0cdb8087eeb03cc40f6389c
 - https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/94e57eb29bdebb3e64e057e082608a25e72b33d0
 - https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/315dded455234476da36402728c09b9e64b3fd5d
+
+- https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/4db2d6f76a6328592520ef23528958b42d95e166

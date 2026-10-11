@@ -92,7 +92,7 @@ Schema revision 89 declares Explore navigation slugs `kana`, `kanji`, `vocabular
 
 ## Starter Flashcard Decks
 
-The Japanese provider declares three starter decks in `data/starter-decks.json`: Hiragana Basics, Everyday Kanji, and First Japanese Words. Each deck has a stable key, localized names, a schema ID, and source record IDs. The language descriptor exposes this declarative data as `starterDecks`. Cognis resolves those records to current Library UUIDs, hides incomplete decks and decks from disabled providers, and owns browsing, favourites, sharing, and learner progress. The module neither creates decks nor queries the host database.
+The Japanese provider declares three starter decks in `data/starter-decks.json`: Hiragana Basics, Everyday Kanji, and First Japanese Words. Each deck has a stable key, localized names, a schema ID, and source record IDs. The language descriptor exposes this declarative data as `starterDecks`. Cognis resolves those records to current canonical Library IDs, hides incomplete decks and decks from disabled providers, and owns browsing, favourites, sharing, and learner progress. The module neither creates decks nor queries the host database.
 
 ## Commits
 
@@ -112,3 +112,5 @@ The Japanese provider declares three starter decks in `data/starter-decks.json`:
 - https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/84e49de45b43f6f0b0cdb8087eeb03cc40f6389c
 - https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/94e57eb29bdebb3e64e057e082608a25e72b33d0
 - https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/315dded455234476da36402728c09b9e64b3fd5d
+
+- https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/4db2d6f76a6328592520ef23528958b42d95e166
