@@ -14,7 +14,7 @@ test("Kanji pages preserve Kun and On readings, meanings, and original notation"
     assert.deepEqual(record.japanese, [
         { word: "教", reading: "おしえる" },
         { word: "教", reading: "おそわる" },
-        { word: "教", reading: "キョウ" },
+        { word: "教", reading: "きょう" },
     ]);
     assert.deepEqual(record.senses[0].english_definitions, [
         "teach",
@@ -22,6 +22,7 @@ test("Kanji pages preserve Kun and On readings, meanings, and original notation"
         "doctrine",
     ]);
     assert.deepEqual(record.jlpt, ["jlpt-n4"]);
+    assert.deepEqual(record.kanji.readings.on, ["キョウ"]);
     assert.deepEqual(record.kanji.readings.kun, ["おし.える", "おそ.わる"]);
     assert.equal(
         record.kanji.details["kanji-details__stroke_count"],
@@ -49,4 +50,11 @@ test("Kanji retrieval retries failures and returns current provider responses", 
     const first = await lookup("教");
     assert.deepEqual(await lookup("教"), first);
     assert.equal(requests, 3);
+});
+
+test("identical Kun and On readings produce one Hiragana pronunciation", () => {
+    const duplicate = html.replace(/おし\.える|おそ\.わる/gu, "きょう");
+    const record = parseJishoKanji(duplicate, "教");
+    assert.deepEqual(record.japanese, [{ word: "教", reading: "きょう" }]);
+    assert.deepEqual(record.kanji.readings.on, ["キョウ"]);
 });

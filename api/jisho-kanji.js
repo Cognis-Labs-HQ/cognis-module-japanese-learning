@@ -1,3 +1,4 @@
+import { katakanaToHiragana } from "../reuse/kana.js";
 import { requestJisho } from "./jisho-request.js";
 
 function text(markup) {
@@ -69,7 +70,7 @@ export function parseJishoKanji(html, label) {
         japanese: [
             ...new Set(
                 [...readings.kun, ...readings.on].map((reading) =>
-                    reading.replace(/[.\-]/gu, ""),
+                    katakanaToHiragana(reading.replace(/[.\-]/gu, "")),
                 ),
             ),
         ].map((reading) => ({ word: label, reading })),
@@ -88,5 +89,33 @@ export function createJishoKanjiLookup({ fetchImplementation, endpoint }) {
             "text/html",
         );
         return parseJishoKanji(await response.text(), label);
+    };
+}
+
+/** Prefer common exact word readings while retaining every Kanji reading. */
+export function prioritizeJishoKanjiReadings(record, words, label) {
+    const priorities = new Map();
+    for (const word of words
+        .filter(({ japanese }) => Array.isArray(japanese))
+        .toSorted(
+            (left, right) =>
+                Number(right.is_common === true) -
+                Number(left.is_common === true),
+        )) {
+        for (const form of word.japanese) {
+            if (form.word !== label || typeof form.reading !== "string")
+                continue;
+            const reading = katakanaToHiragana(form.reading);
+            if (!priorities.has(reading))
+                priorities.set(reading, priorities.size);
+        }
+    }
+    return {
+        ...record,
+        japanese: record.japanese.toSorted(
+            (left, right) =>
+                (priorities.get(left.reading) ?? Infinity) -
+                (priorities.get(right.reading) ?? Infinity),
+        ),
     };
 }

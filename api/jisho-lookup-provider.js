@@ -1,6 +1,10 @@
+import { katakanaToHiragana } from "../reuse/kana.js";
 import { readFile } from "node:fs/promises";
 import { requestJisho, jishoFailureDetails } from "./jisho-request.js";
-import { createJishoKanjiLookup } from "./jisho-kanji.js";
+import {
+    createJishoKanjiLookup,
+    prioritizeJishoKanjiReadings,
+} from "./jisho-kanji.js";
 import { readContentLayers } from "../reuse/content.js";
 
 const PROVIDER_ID = "study-language-ja:jisho";
@@ -294,14 +298,7 @@ function jishoSuggestion(index, layer, label, data, query = label) {
                 record.japanese.some(({ word }) => word === reading)
             )
                 return true;
-            const normalized = [...reading]
-                .map((character) => {
-                    const code = character.codePointAt(0);
-                    return code >= 0x30a1 && code <= 0x30f6
-                        ? String.fromCodePoint(code - 0x60)
-                        : character;
-                })
-                .join("");
+            const normalized = katakanaToHiragana(reading);
             return !hiragana.has(normalized);
         });
     }
@@ -547,6 +544,22 @@ export function createJishoLookupProvider({
         endpoint: kanjiEndpoint,
     });
 
+    async function lookupKanjiWithPrimaryReading(label) {
+        const record = await lookupKanji(label);
+        if (!record) return null;
+        try {
+            const words = await lookupJisho(label);
+            return prioritizeJishoKanjiReadings(record, words.data, label);
+        } catch (error) {
+            log?.("error", "Jisho primary Kanji reading lookup failed.", {
+                component: "study-language-ja",
+                operation: "lookup_jisho_primary_reading",
+                ...jishoFailureDetails(error),
+            });
+            return record;
+        }
+    }
+
     async function nativeIndex() {
         nativeIndexPromise ??= loadNativeContent(contentRoot).catch((error) => {
             nativeIndexPromise = undefined;
@@ -599,7 +612,9 @@ export function createJishoLookupProvider({
             try {
                 const kanjiRecord =
                     layer.id === "alt-characters"
-                        ? await lookupKanji(normalizedLookupLabel)
+                        ? await lookupKanjiWithPrimaryReading(
+                              normalizedLookupLabel,
+                          )
                         : null;
                 const data =
                     layer.id === "alt-characters"

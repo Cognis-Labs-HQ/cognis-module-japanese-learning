@@ -39,3 +39,9 @@ Kartu transformasi menyelaraskan judul, bacaan, dan definisi dalam satu kolom. T
 Penyedia kamus dapat mengembalikan prerequisites berupa daftar { key, layer, label }. Setelah hasil dipilih dalam penyusun, Cognis menyelesaikan kartu tulisan gabungan yang sudah ada dalam cakupan tujuan atau mengambil dan membuat kartu yang belum ada beserta definisi dan graf bacaannya. Karakter atomik dan partikel tidak dapat dibuat melalui jalur ini. Kunci alias diganti dengan ID kanonis pada kartu utama dan referensi bacaan tersembunyi. Masukan kosakata tetap utuh; referensi tulisan impor hanya digunakan selama masukan masih sesuai dengan pencarian. Menelusuri hasil pencarian tidak membuat kartu prasyarat.
 
 Kolom wajib yang belum ada dilengkapi melalui penyedia pencarian tambahan yang terdaftar sebelum penyimpanan; pola goresan Kanji berasal dari KanjiVG. Setiap Kanji, definisi, dan bacaan tersembunyinya disimpan sebagai satu graf tervalidasi dalam cakupan yang ditentukan.
+
+## Aksara pelafalan Kanji
+
+Pencarian Kanji mengubah bacaan On Katakana dari Jisho menjadi Hiragana untuk pelafalan kartu dan tautan bacaan. 僕 menyertakan ぼく bersama しもべ. Pelafalan Kun dan On yang sama disatukan setelah konversi; notasi asli seperti ボク tetap tersimpan dalam metadata kamus tersembunyi. Ejaan Katakana kosakata dan penyaringan bacaan pencarian duplikat tetap berfungsi seperti sebelumnya.
+
+Bacaan utama mengikuti kecocokan kata persis yang umum dari Jisho: 僕 menampilkan ぼく terlebih dahulu, lalu しもべ. Kata terkait dan bacaan Kanji yang tidak tercantum tidak mengubah urutan. Jika pencarian kata gagal, hasil Kanji tetap dapat digunakan dan kegagalan dicatat dengan aman.

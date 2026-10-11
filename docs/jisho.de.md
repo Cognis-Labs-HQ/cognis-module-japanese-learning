@@ -39,3 +39,9 @@ Transformationskarten richten Titel, Lesungen und Definitionen in einer gemeinsa
 Wörterbuchanbieter können prerequisites als Liste von { key, layer, label } zurückgeben. Nach Auswahl eines Treffers im Editor löst Cognis vorhandene zusammengesetzte Schriftkarten im vorgesehenen Sichtbarkeitsbereich auf oder ruft fehlende Karten ab und erstellt sie samt Definitionen und Lesungsgraph. Atomare Zeichen und Partikeln können so nicht erstellt werden. Alias-Schlüssel werden in der Hauptkarte und versteckten Lesungen durch kanonische IDs ersetzt. Die Vokabeleingabe bleibt erhalten; importierte Schriftverweise gelten nur, solange die Eingabe der Suche entspricht. Das Anzeigen von Suchergebnissen erstellt keine abhängigen Karten.
 
 Fehlende Pflichtfelder werden vor dem Speichern über registrierte ergänzende Anbieter vervollständigt; Kanji-Strichmuster stammen von KanjiVG. Jedes Kanji wird zusammen mit seinen Definitionen und versteckten Lesungen als ein validierter Graph im vorgesehenen Sichtbarkeitsbereich gespeichert.
+
+## Schrift der Kanji-Aussprache
+
+Die Kanji-Abfrage wandelt Jishos On-Lesungen in Katakana für Kartenaussprachen und Lesungsverknüpfungen in Hiragana um. 僕 enthält neben しもべ auch ぼく. Identische Kun- und On-Aussprachen werden nach der Umwandlung zusammengeführt; die ursprüngliche Schreibweise wie ボク bleibt in den verborgenen Wörterbuchmetadaten erhalten. Katakana-Schreibweisen von Vokabeln und die Filterung doppelter Suchlesungen behalten ihr bisheriges Verhalten.
+
+Die primäre Lesung folgt häufigen exakten Worttreffern von Jisho: 僕 zeigt zuerst ぼく und danach しもべ. Verwandte Wörter und nicht belegte Kanji-Lesungen ändern die Reihenfolge nicht. Schlägt die Wortabfrage fehl, bleibt das Kanji-Ergebnis nutzbar und der Fehler wird sicher protokolliert.

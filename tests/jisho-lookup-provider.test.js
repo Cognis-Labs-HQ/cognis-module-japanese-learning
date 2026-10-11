@@ -1,3 +1,4 @@
+import { readContentLayers } from "../reuse/content.js";
 import { readFile } from "node:fs/promises";
 import assert from "node:assert/strict";
 import path from "node:path";
@@ -255,7 +256,11 @@ test("Kanji lookup identity uses the Kanji label, not its pronunciation", async 
         label: "券",
     });
 
-    assert.equal(requests, 1, "犬 must not satisfy a lookup for 券");
+    assert.equal(
+        requests,
+        2,
+        "券 needs its Kanji data and exact word reading; 犬 cannot satisfy either",
+    );
     assert.equal(suggestion.label, "券");
     assert.deepEqual(suggestion.fields.pronunciation, ["けん"]);
 });
@@ -484,7 +489,11 @@ test("Kanji and word requests identify Cognis to upstream servers", async () => 
     assert.deepEqual(kanji.fields.pronunciation, ["おしえる"]);
     const [word] = await provider.lookup({ layer: wordLayer, label: "猫又" });
     assert.equal(word.label, "猫又");
-    assert.deepEqual(accepts, ["text/html", "application/json"]);
+    assert.deepEqual(accepts, [
+        "text/html",
+        "application/json",
+        "application/json",
+    ]);
 });
 
 test("upstream rejections log the status and safe failure code", async () => {
@@ -876,4 +885,77 @@ test("adverbs are classified separately from verbs and preserve Kanji lookup pre
             .map(({ entryId }) => entryId),
         result.prerequisites.map(({ key }) => key),
     );
+});
+
+test("Kanji 僕 prioritizes common exact-word ぼく with Hiragana deep links", async () => {
+    const html = `<h1 class="character">僕</h1>
+<div class="kanji-details__main-meanings">me, I, servant</div>
+<dl class="dictionary_entry kun_yomi"><dd class="kanji-details__main-readings-list"><a>しもべ</a></dd></dl>
+<dl class="dictionary_entry on_yomi"><dd class="kanji-details__main-readings-list"><a>ボク</a></dd></dl>`;
+    const provider = createJishoLookupProvider({
+        contentRoot,
+        fetchImplementation: async () => ({
+            ok: true,
+            text: async () => html,
+            json: async () => ({
+                data: [
+                    {
+                        japanese: [{ word: "僕", reading: "しもべ" }],
+                        is_common: false,
+                    },
+                    {
+                        japanese: [{ word: "僕たち", reading: "ぼくたち" }],
+                        is_common: true,
+                    },
+                    {
+                        japanese: [
+                            { word: "僕", reading: "ぼく" },
+                            { reading: "ボク" },
+                        ],
+                        is_common: true,
+                    },
+                ],
+            }),
+        }),
+    });
+    const [result] = await provider.lookup({ layer: kanjiLayer, label: "僕" });
+    assert.deepEqual(result.fields.pronunciation, ["ぼく", "しもべ"]);
+    const reading = result.linkedEntries.find(
+        ({ entry }) => entry.label === "ぼく",
+    );
+    assert.ok(reading.entry.hidden);
+    assert.equal(reading.entry.class, "reading:kanji");
+    const ids = reading.entry.referenceGroups["reading-kana"][0].map(
+        ({ entryId }) => entryId,
+    );
+    assert.equal(ids.length, 2);
+    const characters = (
+        await readContentLayers(contentRoot, ["characters"])
+    ).get("characters");
+    assert.deepEqual(
+        ids.map((id) => characters.find((entry) => entry.id === id)?.label),
+        ["ぼ", "く"],
+    );
+    assert.deepEqual(
+        JSON.parse(result.fields.dictionary_data).kanji.readings.on,
+        ["ボク"],
+    );
+});
+
+test("Kanji readings survive primary word lookup failures with safe logging", async () => {
+    const logs = [];
+    const provider = createJishoLookupProvider({
+        contentRoot,
+        log: (level, message, metadata) =>
+            logs.push({ level, message, metadata }),
+        fetchImplementation: async (url) =>
+            url.includes("/api/")
+                ? { ok: false, status: 503 }
+                : { ok: true, text: async () => kanjiHtml("教", "キョウ") },
+    });
+    const [result] = await provider.lookup({ layer: kanjiLayer, label: "教" });
+    assert.deepEqual(result.fields.pronunciation, ["きょう"]);
+    assert.equal(logs[0].level, "error");
+    assert.equal(logs[0].metadata.operation, "lookup_jisho_primary_reading");
+    assert.equal(logs[0].metadata.httpStatus, 503);
 });

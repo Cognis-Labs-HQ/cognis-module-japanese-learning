@@ -39,3 +39,9 @@ Transformation choices align titles, readings and definitions in a single column
 Dictionary providers may return prerequisites: an array of { key, layer, label } lookup targets. After a composer match is selected, Cognis resolves existing compound-writing cards at the intended scope or retrieves and creates missing cards with their definitions and reading graph. Atomic characters and particles cannot be created through this path. Alias keys resolve to canonical IDs in root and hidden-reading references. Vocabulary input remains unchanged, and imported spelling references are used only while the input still matches the lookup. Search result browsing never creates prerequisites.
 
 Missing required fields are completed through registered auxiliary lookup providers before persistence; Kanji stroke patterns come from KanjiVG. Each Kanji, its definitions and hidden readings commit as one validated scoped graph.
+
+## Kanji pronunciation script
+
+Kanji lookup converts Jisho’s Katakana On readings to Hiragana for card pronunciations and reading links. 僕 includes ぼく alongside しもべ. Identical Kun and On pronunciations are deduplicated after conversion; original notation such as ボク remains in hidden dictionary metadata. Vocabulary Katakana spellings and duplicate-query filtering keep their existing behavior.
+
+The primary reading follows common exact word matches from Jisho: 僕 shows ぼく first, then しもべ. Related words and unattested Kanji readings do not change the order. If word lookup fails, the Kanji result remains usable and the failure is logged safely.
