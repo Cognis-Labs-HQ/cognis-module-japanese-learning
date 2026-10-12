@@ -1,6 +1,6 @@
 {
     "id": "japanese-core",
-    "version": 89,
+    "version": 90,
     "namespace": "ja",
     "language": "ja",
     "metadata": {
@@ -8931,6 +8931,276 @@
                     }
                 }
             ]
+        },
+        {
+            "id": "collective-plural-watashi",
+            "metadata": {
+                "labels": {
+                    "en": "Collective Plural",
+                    "de": "Kollektiver Plural",
+                    "id": "Jamak Kelompok",
+                    "ja": "集合を表す複数"
+                }
+            },
+            "matchTags": ["noun", "collective-plural-watashi"],
+            "baseState": "base",
+            "rules": [
+                {
+                    "id": "plural",
+                    "metadata": {
+                        "labels": {
+                            "en": "Plural Group (-tachi)",
+                            "de": "Gruppe (-tachi)",
+                            "id": "Kelompok (-tachi)",
+                            "ja": "複数・集団（たち）"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "plural",
+                    "append": "たち",
+                    "pronunciation": {
+                        "removeSuffix": "わたし",
+                        "append": "わたしたち"
+                    },
+                    "definitionTransform": {
+                        "template": {
+                            "labels": {
+                                "en": "{{ definition }} (group)",
+                                "de": "{{ definition }} (Gruppe)",
+                                "id": "{{ definition }} (kelompok)",
+                                "ja": "{{ definition }}（複数・集団）"
+                            }
+                        }
+                    },
+                    "removeSuffix": ""
+                }
+            ],
+            "optInTag": "plural"
+        },
+        {
+            "id": "collective-plural-inu",
+            "metadata": {
+                "labels": {
+                    "en": "Collective Plural",
+                    "de": "Kollektiver Plural",
+                    "id": "Jamak Kelompok",
+                    "ja": "集合を表す複数"
+                }
+            },
+            "matchTags": ["noun", "collective-plural-inu"],
+            "baseState": "base",
+            "rules": [
+                {
+                    "id": "plural",
+                    "metadata": {
+                        "labels": {
+                            "en": "Plural Group (-tachi)",
+                            "de": "Gruppe (-tachi)",
+                            "id": "Kelompok (-tachi)",
+                            "ja": "複数・集団（たち）"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "plural",
+                    "append": "たち",
+                    "pronunciation": {
+                        "removeSuffix": "いぬ",
+                        "append": "いぬたち"
+                    },
+                    "definitionTransform": {
+                        "template": {
+                            "labels": {
+                                "en": "{{ definition }} (group)",
+                                "de": "{{ definition }} (Gruppe)",
+                                "id": "{{ definition }} (kelompok)",
+                                "ja": "{{ definition }}（複数・集団）"
+                            }
+                        }
+                    },
+                    "removeSuffix": ""
+                }
+            ],
+            "optInTag": "plural"
+        },
+        {
+            "id": "collective-plural-neko",
+            "metadata": {
+                "labels": {
+                    "en": "Collective Plural",
+                    "de": "Kollektiver Plural",
+                    "id": "Jamak Kelompok",
+                    "ja": "集合を表す複数"
+                }
+            },
+            "matchTags": ["noun", "collective-plural-neko"],
+            "baseState": "base",
+            "rules": [
+                {
+                    "id": "plural",
+                    "metadata": {
+                        "labels": {
+                            "en": "Plural Group (-tachi)",
+                            "de": "Gruppe (-tachi)",
+                            "id": "Kelompok (-tachi)",
+                            "ja": "複数・集団（たち）"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "plural",
+                    "append": "たち",
+                    "pronunciation": {
+                        "removeSuffix": "ねこ",
+                        "append": "ねこたち"
+                    },
+                    "definitionTransform": {
+                        "template": {
+                            "labels": {
+                                "en": "{{ definition }} (group)",
+                                "de": "{{ definition }} (Gruppe)",
+                                "id": "{{ definition }} (kelompok)",
+                                "ja": "{{ definition }}（複数・集団）"
+                            }
+                        }
+                    },
+                    "removeSuffix": ""
+                }
+            ],
+            "optInTag": "plural"
+        },
+        {
+            "id": "collective-plural-sensei",
+            "metadata": {
+                "labels": {
+                    "en": "Collective Plural",
+                    "de": "Kollektiver Plural",
+                    "id": "Jamak Kelompok",
+                    "ja": "集合を表す複数"
+                }
+            },
+            "matchTags": ["noun", "collective-plural-sensei"],
+            "baseState": "base",
+            "rules": [
+                {
+                    "id": "plural",
+                    "metadata": {
+                        "labels": {
+                            "en": "Plural Group (-tachi)",
+                            "de": "Gruppe (-tachi)",
+                            "id": "Kelompok (-tachi)",
+                            "ja": "複数・集団（たち）"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "plural",
+                    "append": "たち",
+                    "pronunciation": {
+                        "removeSuffix": "せんせい",
+                        "append": "せんせいたち"
+                    },
+                    "definitionTransform": {
+                        "template": {
+                            "labels": {
+                                "en": "{{ definition }} (group)",
+                                "de": "{{ definition }} (Gruppe)",
+                                "id": "{{ definition }} (kelompok)",
+                                "ja": "{{ definition }}（複数・集団）"
+                            }
+                        }
+                    },
+                    "removeSuffix": ""
+                }
+            ],
+            "optInTag": "plural"
+        },
+        {
+            "id": "collective-plural-gakusei",
+            "metadata": {
+                "labels": {
+                    "en": "Collective Plural",
+                    "de": "Kollektiver Plural",
+                    "id": "Jamak Kelompok",
+                    "ja": "集合を表す複数"
+                }
+            },
+            "matchTags": ["noun", "collective-plural-gakusei"],
+            "baseState": "base",
+            "rules": [
+                {
+                    "id": "plural",
+                    "metadata": {
+                        "labels": {
+                            "en": "Plural Group (-tachi)",
+                            "de": "Gruppe (-tachi)",
+                            "id": "Kelompok (-tachi)",
+                            "ja": "複数・集団（たち）"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "plural",
+                    "append": "たち",
+                    "pronunciation": {
+                        "removeSuffix": "がくせい",
+                        "append": "がくせいたち"
+                    },
+                    "definitionTransform": {
+                        "template": {
+                            "labels": {
+                                "en": "{{ definition }} (group)",
+                                "de": "{{ definition }} (Gruppe)",
+                                "id": "{{ definition }} (kelompok)",
+                                "ja": "{{ definition }}（複数・集団）"
+                            }
+                        }
+                    },
+                    "removeSuffix": ""
+                }
+            ],
+            "optInTag": "plural"
+        },
+        {
+            "id": "collective-plural-tomodachi",
+            "metadata": {
+                "labels": {
+                    "en": "Collective Plural",
+                    "de": "Kollektiver Plural",
+                    "id": "Jamak Kelompok",
+                    "ja": "集合を表す複数"
+                }
+            },
+            "matchTags": ["noun", "collective-plural-tomodachi"],
+            "baseState": "base",
+            "rules": [
+                {
+                    "id": "plural",
+                    "metadata": {
+                        "labels": {
+                            "en": "Plural Group (-tachi)",
+                            "de": "Gruppe (-tachi)",
+                            "id": "Kelompok (-tachi)",
+                            "ja": "複数・集団（たち）"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "plural",
+                    "append": "たち",
+                    "pronunciation": {
+                        "removeSuffix": "ともだち",
+                        "append": "ともだちたち"
+                    },
+                    "definitionTransform": {
+                        "template": {
+                            "labels": {
+                                "en": "{{ definition }} (group)",
+                                "de": "{{ definition }} (Gruppe)",
+                                "id": "{{ definition }} (kelompok)",
+                                "ja": "{{ definition }}（複数・集団）"
+                            }
+                        }
+                    },
+                    "removeSuffix": ""
+                }
+            ],
+            "optInTag": "plural"
         }
     ]
 }

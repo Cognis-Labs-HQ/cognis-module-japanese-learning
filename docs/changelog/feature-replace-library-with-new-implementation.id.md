@@ -106,6 +106,10 @@ Bahasa Jepang menyediakan enam dek awal: hiragana dan katakana lengkap masing-ma
 
 Pertanyaan lokasi sopan diakhiri か dengan partikel kanonis dan empat terjemahan. Identitas kalimat tetap. Kegagalan aktivasi melepas penyedia dan mencatat metadata aman. Instruksi menetapkan ctx sebagai tulang punggung aplikasi serta mempertahankan pelafalan kalimat yang diturunkan oleh host.
 
+## Jamak kelompok Jepang yang dipilih secara eksplisit
+
+Skema 90 dan paket konten 2.2.102 mendeklarasikan enam keluarga nomina bernyawa dan pronomina melalui kontrak transformasi opsional Cognis (`optInTag: plural`). Akhiran `たち` menunjukkan kelompok atau orang terkait, bukan akhiran jumlah universal seperti dalam bahasa Inggris. Label, bacaan, dan definisi terlokalisasi berubah bersama, sementara referensi kalimat mempertahankan kartu dasar. Dataset tidak menggandakan kartu jamak turunan. Versi modul: 2.2.102.
+
 ## Komit
 
 - [5f901fc4](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/5f901fc476e5b4e4e61f18ab612bbd8a3eb9c860)

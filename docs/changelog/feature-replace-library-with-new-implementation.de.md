@@ -106,6 +106,10 @@ Japanisch liefert sechs Startdecks: vollständige Hiragana- und Katakana-Reihen 
 
 Höfliche Ortsfragen erhalten das abschließende か mit kanonischer Partikelkarte und vier Übersetzungen. Satzidentitäten bleiben erhalten. Aktivierungsfehler entfernen Suchanbieter und protokollieren sichere Metadaten. Die Anleitung verankert ctx als Anwendungsrückgrat und belässt die Ableitung der Satzaussprache beim Host.
 
+## Optionale japanische Kollektivplurale
+
+Schema 90 und Inhaltspaket 2.2.102 deklarieren sechs geprüfte Gruppen belebter Substantive und Pronomen über Cognis’ optionalen Transformationsvertrag (`optInTag: plural`). `たち` bezeichnet eine Gruppe oder zugehörige Personen und ist keine allgemeine englische Zahlenendung. Bezeichnung, Lesung und lokalisierte Definition werden gemeinsam transformiert; Satzreferenzen behalten die Basiskarte. Das Dataset enthält keine doppelten abgeleiteten Pluralkarten. Modulversion: 2.2.102.
+
 ## Commits
 
 - [5f901fc4](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/5f901fc476e5b4e4e61f18ab612bbd8a3eb9c860)

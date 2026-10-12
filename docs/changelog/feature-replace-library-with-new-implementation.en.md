@@ -106,6 +106,10 @@ Japanese now supplies six starter decks: complete hiragana and katakana sets of 
 
 Polite location questions include their final か, using a new canonical question-particle card with four localized definitions. Existing sentence identities stay stable. Activation failure removes lookup registrations and logs safe error metadata. Instructions establish ctx as the application backbone and preserve host-derived sentence pronunciations.
 
+## Opt-in Japanese collective plurals
+
+Schema 90 and content pack 2.2.102 declare six reviewed animate-noun and pronoun families using Cognis’ optional transformation contract (`optInTag: plural`). The `たち` suffix represents a group or associated people; it is not a universal English-style number suffix. Labels, readings and localized definitions transform together while sentence references retain the base card. Derived plural cards are not duplicated in the dataset. Module version: 2.2.102.
+
 ## Commits
 
 - [5f901fc4](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/5f901fc476e5b4e4e61f18ab612bbd8a3eb9c860)

@@ -423,3 +423,15 @@ test("content ships only base verbs, adverbs, and copulas, never generated forms
         [],
     );
 });
+
+test("Japanese noun number is an explicit collective-plural opt-in", () => {
+    const sets = schema.transformSets.filter(
+        ({ optInTag }) => optInTag === "plural",
+    );
+    assert.equal(sets.length, 6);
+    for (const set of sets) {
+        assert.ok(set.matchTags.includes("noun"));
+        assert.equal(set.rules[0].removeSuffix, "");
+        assert.equal(set.rules[0].append, "たち");
+    }
+});

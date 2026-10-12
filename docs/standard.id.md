@@ -309,3 +309,7 @@ Penyedia Jepang mendeklarasikan enam dek awal: Dasar Hiragana (46), Dasar Kataka
 ## Perbaikan tinjauan
 
 Modul 2.2.101 memerlukan `study:library:provider` dan melepas penyedia saat aktivasi gagal dengan log kesalahan terstruktur yang aman. Skema 89 dipertahankan. Paket 2.2.100 memperbaiki pertanyaan lokasi sopan menjadi ですか serta menambahkan partikel pertanyaan kanonis dengan empat terjemahan. Kunci kalimat tetap. Pelafalan kalimat diturunkan dari kata dan partikel terlihat yang berurutan, tanpa kartu pelafalan seluruh kalimat tersembunyi yang berulang.
+
+## Jamak kelompok Jepang yang dipilih secara eksplisit
+
+Skema 90 dan paket konten 2.2.102 mendeklarasikan enam keluarga nomina bernyawa dan pronomina melalui kontrak transformasi opsional Cognis (`optInTag: plural`). Akhiran `たち` menunjukkan kelompok atau orang terkait, bukan akhiran jumlah universal seperti dalam bahasa Inggris. Label, bacaan, dan definisi terlokalisasi berubah bersama, sementara referensi kalimat mempertahankan kartu dasar. Dataset tidak menggandakan kartu jamak turunan. Versi modul: 2.2.102.

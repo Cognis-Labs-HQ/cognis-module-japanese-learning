@@ -309,3 +309,7 @@ Der japanische Anbieter erklärt sechs Startdecks: Hiragana-Grundlagen (46), Kat
 ## Review und Lebenszyklus
 
 Modul 2.2.101 verlangt `study:library:provider` und entfernt Suchanbieter bei Aktivierungsfehlern mit sicheren strukturierten Fehlerprotokollen. Schema 89 bleibt erhalten. Inhaltspaket 2.2.100 ergänzt höfliche Ortsfragen um ですか und eine kanonische Fragepartikel mit vier Übersetzungen. Satzschlüssel bleiben stabil. Aussprachen entstehen aus geordneten sichtbaren Wort- und Partikelkarten statt doppelten verborgenen Satz-Aussprachekarten.
+
+## Optionale japanische Kollektivplurale
+
+Schema 90 und Inhaltspaket 2.2.102 deklarieren sechs geprüfte Gruppen belebter Substantive und Pronomen über Cognis’ optionalen Transformationsvertrag (`optInTag: plural`). `たち` bezeichnet eine Gruppe oder zugehörige Personen und ist keine allgemeine englische Zahlenendung. Bezeichnung, Lesung und lokalisierte Definition werden gemeinsam transformiert; Satzreferenzen behalten die Basiskarte. Das Dataset enthält keine doppelten abgeleiteten Pluralkarten. Modulversion: 2.2.102.

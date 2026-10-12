@@ -309,3 +309,7 @@ The Japanese provider declares six starter decks in `data/starter-decks.json`: H
 ## Review and lifecycle fixes
 
 Japanese module 2.2.101 requires `study:library:provider` and removes lookup registrations on activation failure, with safe structured error logs. Schema 89 is retained. Content pack 2.2.100 corrects polite location questions to end in ですか and adds the canonical question-particle card with four localized meanings. Existing sentence keys are preserved. Sentence readings remain derived from their ordered visible word and particle constituents, without duplicate hidden full-sentence pronunciation wrappers.
+
+## Opt-in Japanese collective plurals
+
+Schema 90 and content pack 2.2.102 declare six reviewed animate-noun and pronoun families using Cognis’ optional transformation contract (`optInTag: plural`). The `たち` suffix represents a group or associated people; it is not a universal English-style number suffix. Labels, readings and localized definitions transform together while sentence references retain the base card. Derived plural cards are not duplicated in the dataset. Module version: 2.2.102.
