@@ -1,5 +1,5 @@
 import { katakanaToHiragana } from "../reuse/kana.js";
-import { requestJisho } from "./jisho-request.js";
+import { requestJisho } from "./request.js";
 
 function text(markup) {
     return markup

@@ -1,6 +1,6 @@
 import { readContentLayers } from "../reuse/content.js";
 import { createLookupCache } from "../reuse/lookup-cache.js";
-import { sampleSvgPath } from "./svg-path-sampler.js";
+import { sampleSvgPath } from "./path-sampler.js";
 
 const PROVIDER_ID = "study-language-ja:stroke-patterns";
 const SCHEMA_ID = "japanese-core";

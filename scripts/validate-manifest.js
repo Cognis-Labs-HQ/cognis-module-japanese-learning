@@ -1,8 +1,8 @@
 import assert from "node:assert/strict";
 import { createHash } from "node:crypto";
 import { access, readFile } from "node:fs/promises";
+import { existsSync, lstatSync } from "node:fs";
 import { execFileSync } from "node:child_process";
-import { existsSync, statSync } from "node:fs";
 
 const manifest = JSON.parse(await readFile("manifest.json", "utf8"));
 const packageJson = JSON.parse(await readFile("package.json", "utf8"));
@@ -38,9 +38,10 @@ const expectedPaths = execFileSync(
         (path) =>
             path &&
             path !== "manifest.json" &&
+            path !== "README.md" &&
             !path.startsWith("docs/changelog/") &&
             existsSync(path) &&
-            statSync(path).isFile(),
+            lstatSync(path).isFile(),
     )
     .sort();
 const packagedPaths = manifest.files.map((file) => file.path).sort();

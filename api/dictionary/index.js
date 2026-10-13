@@ -1,10 +1,10 @@
 import { katakanaToHiragana } from "../reuse/kana.js";
 import { readFile } from "node:fs/promises";
-import { requestJisho, jishoFailureDetails } from "./jisho-request.js";
+import { requestJisho, jishoFailureDetails } from "./request.js";
 import {
     createJishoKanjiLookup,
     prioritizeJishoKanjiReadings,
-} from "./jisho-kanji.js";
+} from "./kanji.js";
 import { readContentLayers } from "../reuse/content.js";
 
 const PROVIDER_ID = "study-language-ja:jisho";
@@ -45,13 +45,16 @@ async function loadNativeContent(contentRoot) {
         layers,
         transformSets: JSON.parse(
             await readFile(
-                new URL("../data/library/schema.json", import.meta.url),
+                new URL("../../data/library/schema.json", import.meta.url),
                 "utf8",
             ),
         ).transformSets,
         dictionaryClasses: JSON.parse(
             await readFile(
-                new URL("../data/library/jisho-classes.json", import.meta.url),
+                new URL(
+                    "../../data/library/jisho-classes.json",
+                    import.meta.url,
+                ),
                 "utf8",
             ),
         ),

@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import test from "node:test";
-import { sampleSvgPath } from "../api/svg-path-sampler.js";
+import { sampleSvgPath } from "../strokes/path-sampler.js";
 
 test("samples compact relative KanjiVG cubic paths without packages", () => {
     const points = sampleSvgPath(
@@ -38,7 +38,7 @@ test("samples line, quadratic, smooth, and arc endpoints", () => {
 
 test("runtime provider has no production package dependency", async () => {
     const packageMetadata = JSON.parse(
-        await readFile(new URL("../package.json", import.meta.url), "utf8"),
+        await readFile(new URL("../../package.json", import.meta.url), "utf8"),
     );
     assert.equal(packageMetadata.dependencies, undefined);
 });

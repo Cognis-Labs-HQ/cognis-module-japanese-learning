@@ -1,7 +1,7 @@
 import { readdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import process from "node:process";
-import { sampleSvgPath } from "../api/svg-path-sampler.js";
+import { sampleSvgPath } from "../api/strokes/path-sampler.js";
 
 const SOURCE_SIZE = 109;
 const SMALL_KANA = new Set([..."ぁぃぅぇぉゃゅょっゎァィゥェォャュョッヮヵヶ"]);

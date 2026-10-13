@@ -20,7 +20,7 @@ Cognis core owns dictionary caching through `core:cache`. Queries become cold af
 
 ## Stroke asset caching
 
-KanjiVG stroke assets use a separate module-local bounded lookup cache: at most 512 labels, successful responses for 24 hours and missing assets for five minutes. Concurrent lookups share requests and failures are discarded. This asset cache does not govern dictionary search or app navigation. Jisho and KanjiVG share the deterministic content-shard loader in `reuse/content.js`; the stroke provider consumes `reuse/lookup-cache.js`.
+KanjiVG stroke assets use a separate module-local bounded lookup cache: at most 512 labels, successful responses for 24 hours and missing assets for five minutes. Concurrent lookups share requests and failures are discarded. This asset cache does not govern dictionary search or app navigation. Jisho and KanjiVG share the deterministic content-shard loader in `api/reuse/content.js`; the stroke provider consumes `api/reuse/lookup-cache.js`.
 
 ## Sentence import limits
 

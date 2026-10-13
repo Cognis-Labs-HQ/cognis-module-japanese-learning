@@ -1,11 +1,11 @@
 import assert from "node:assert/strict";
 import path from "node:path";
 import test from "node:test";
-import { createStrokePatternProvider } from "../api/stroke-pattern-provider.js";
+import { createStrokePatternProvider } from "../strokes/index.js";
 
 const contentRoot = path.resolve(
     import.meta.dirname,
-    "..",
+    "../..",
     "data",
     "library",
     "content",

@@ -1,7 +1,8 @@
+import { registerApi } from "./api/index.js";
 import { readFileSync } from "node:fs";
 import path from "node:path";
-import { registerJishoLookupProvider } from "./api/jisho-lookup-provider.js";
-import { createStrokePatternProvider } from "./api/stroke-pattern-provider.js";
+import { registerJishoLookupProvider } from "./api/dictionary/index.js";
+import { createStrokePatternProvider } from "./api/strokes/index.js";
 
 const CONTENT_PACK = Object.freeze(
     JSON.parse(
@@ -80,15 +81,8 @@ export async function bootstrapModule(ctx) {
     ) {
         throw new Error("Invalid Study Library provider capability.");
     }
-    ctx.registerStaticDir("", path.join(ctx.moduleRoot, "ui"));
-    ctx.registerApiDelete(
-        "/api/v1/modules/study-language-ja/config",
-        (_request, response) => {
-            response.writeHead(204);
-            response.end();
-        },
-        { access: { minRole: "admin" }, allowWhenDisabled: true },
-    );
+    registerApi(ctx);
+
     const libraryRoot = path.join(ctx.moduleRoot, "data", "library");
     const providerRemovers = [];
     const removeLookupProviders = () => {
@@ -117,7 +111,7 @@ export async function bootstrapModule(ctx) {
         ctx.flow.extend(
             "bootstrap-platform",
             "register-flows",
-            { id: "study-language-ja:register-language" },
+            { id: "study-language-ja:registerLanguage" },
             () => LANGUAGE,
         );
     } catch (error) {

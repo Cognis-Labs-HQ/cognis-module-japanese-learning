@@ -1,6 +1,9 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { parseJishoKanji, createJishoKanjiLookup } from "../api/jisho-kanji.js";
+import {
+    parseJishoKanji,
+    createJishoKanjiLookup,
+} from "../dictionary/kanji.js";
 
 const html = `<h1 class="character" lang="ja">教</h1>
 <div class="kanji-details__stroke_count"><strong>11</strong> strokes</div>

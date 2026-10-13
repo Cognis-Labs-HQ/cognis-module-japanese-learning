@@ -6,11 +6,11 @@ import test from "node:test";
 import {
     createJishoLookupProvider,
     registerJishoLookupProvider,
-} from "../api/jisho-lookup-provider.js";
+} from "../dictionary/index.js";
 
 const contentRoot = path.resolve(
     import.meta.dirname,
-    "..",
+    "../..",
     "data",
     "library",
     "content",
@@ -701,7 +701,10 @@ test("Jisho retrieves full provider data for bundled words", async () => {
 test("greeting searches prefer exact dictionary meanings over Wikipedia title matches", async () => {
     const payload = JSON.parse(
         await readFile(
-            new URL("./fixtures/jisho-greeting.json", import.meta.url),
+            new URL(
+                "../../tests/fixtures/jisho-greeting.json",
+                import.meta.url,
+            ),
             "utf8",
         ),
     );

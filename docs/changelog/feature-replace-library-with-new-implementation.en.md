@@ -66,7 +66,7 @@ Dictionary source data remains invisible metadata in composers and detail views.
 
 ## Validated operation stages
 
-KanjiVG stroke assets use a separate module-local bounded lookup cache: at most 512 labels, successful responses for 24 hours and missing assets for five minutes. Concurrent lookups share requests and failures are discarded. This asset cache does not govern dictionary search or app navigation. Jisho and KanjiVG share the deterministic content-shard loader in `reuse/content.js`; the stroke provider consumes `reuse/lookup-cache.js`. Module/content-pack version 2.2.96 retains schema revision 88. Jisho registers through the host `study:library:provider` capability with `searchable: true` and the `dictionary` capability. It supports Kana, Kanji and Vocabulary; sentences and provider-owned particle creation are excluded.
+KanjiVG stroke assets use a separate module-local bounded lookup cache: at most 512 labels, successful responses for 24 hours and missing assets for five minutes. Concurrent lookups share requests and failures are discarded. This asset cache does not govern dictionary search or app navigation. Jisho and KanjiVG share the deterministic content-shard loader in `api/reuse/content.js`; the stroke provider consumes `api/reuse/lookup-cache.js`. Module/content-pack version 2.2.96 retains schema revision 88. Jisho registers through the host `study:library:provider` capability with `searchable: true` and the `dictionary` capability. It supports Kana, Kanji and Vocabulary; sentences and provider-owned particle creation are excluded.
 
 ## Common dictionary entries
 
@@ -113,6 +113,10 @@ Schema 90 and content pack 2.2.102 declare six reviewed animate-noun and pronoun
 ## Template contributor standard
 
 Synchronize AGENTS.md with the external-module template while retaining domain-specific rules. Adopt the canonical release-note location and preserve historical content and permanent module identity.
+
+## Standard structure and owned integration
+
+Synchronize template guidance, domain route paths, localized integration documentation, executable structure checks and final package digests. Keep existing public URLs and module identity. Browser contributions follow their owning host lifecycle contracts.
 
 ## Commits
 
