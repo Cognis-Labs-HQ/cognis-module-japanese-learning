@@ -110,6 +110,10 @@ Höfliche Ortsfragen erhalten das abschließende か mit kanonischer Partikelkar
 
 Schema 90 und Inhaltspaket 2.2.102 deklarieren sechs geprüfte Gruppen belebter Substantive und Pronomen über Cognis’ optionalen Transformationsvertrag (`optInTag: plural`). `たち` bezeichnet eine Gruppe oder zugehörige Personen und ist keine allgemeine englische Zahlenendung. Bezeichnung, Lesung und lokalisierte Definition werden gemeinsam transformiert; Satzreferenzen behalten die Basiskarte. Das Dataset enthält keine doppelten abgeleiteten Pluralkarten. Modulversion: 2.2.102.
 
+## Beitragsstandard der Vorlage
+
+AGENTS.md mit der externen Modulvorlage synchronisieren und Domänenregeln beibehalten. Den kanonischen Release-Verzeichnispfad übernehmen; historische Inhalte und dauerhafte Modulidentität erhalten.
+
 ## Commits
 
 - [7d529da8](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/7d529da851a5301f3dd04ee4b1d71e17053248f9)

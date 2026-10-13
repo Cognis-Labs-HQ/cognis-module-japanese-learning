@@ -110,6 +110,10 @@ Polite location questions include their final か, using a new canonical questio
 
 Schema 90 and content pack 2.2.102 declare six reviewed animate-noun and pronoun families using Cognis’ optional transformation contract (`optInTag: plural`). The `たち` suffix represents a group or associated people; it is not a universal English-style number suffix. Labels, readings and localized definitions transform together while sentence references retain the base card. Derived plural cards are not duplicated in the dataset. Module version: 2.2.102.
 
+## Template contributor standard
+
+Synchronize AGENTS.md with the external-module template while retaining domain-specific rules. Adopt the canonical release-note location and preserve historical content and permanent module identity.
+
 ## Commits
 
 - [7d529da8](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/7d529da851a5301f3dd04ee4b1d71e17053248f9)

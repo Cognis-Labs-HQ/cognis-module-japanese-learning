@@ -110,6 +110,10 @@ Pertanyaan lokasi sopan diakhiri か dengan partikel kanonis dan empat terjemaha
 
 Skema 90 dan paket konten 2.2.102 mendeklarasikan enam keluarga nomina bernyawa dan pronomina melalui kontrak transformasi opsional Cognis (`optInTag: plural`). Akhiran `たち` menunjukkan kelompok atau orang terkait, bukan akhiran jumlah universal seperti dalam bahasa Inggris. Label, bacaan, dan definisi terlokalisasi berubah bersama, sementara referensi kalimat mempertahankan kartu dasar. Dataset tidak menggandakan kartu jamak turunan. Versi modul: 2.2.102.
 
+## Standar kontributor templat
+
+Selaraskan AGENTS.md dengan templat modul eksternal sambil mempertahankan aturan domain. Gunakan lokasi catatan rilis kanonis dan pertahankan konten historis serta identitas modul permanen.
+
 ## Komit
 
 - [7d529da8](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/7d529da851a5301f3dd04ee4b1d71e17053248f9)
