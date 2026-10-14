@@ -130,6 +130,10 @@ Rebrand the module as Japanese Study and provide a matching PNG icon and banner,
 
 Use short action summaries and concrete feature descriptions across marketplace metadata, keeping localized meanings aligned.
 
+## Unify Study pronunciation presentation
+
+Study provides public pronunciation classification and styles reused by Library previews, detail headings, variants, flashcard answers and reading choices, and the drawing pad. IPA keeps its authored notation; ordinary readings keep the selected app typography. Both Japanese and English sentence schemas require at least two word references.
+
 ## Commits
 
 - [7d529da8](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/7d529da851a5301f3dd04ee4b1d71e17053248f9)

@@ -128,3 +128,20 @@ test("vocabulary pronunciations declare Kana links and sentences disable diction
         false,
     );
 });
+
+test("Japanese sentence composition requires at least two word references", () => {
+    const sentenceLayer = schema.layers.find(({ id }) => id === "sentences");
+    assert.equal(
+        sentenceLayer.relationships.find(({ id }) => id === "words").minimum,
+        2,
+    );
+    for (const sentence of records.filter(
+        ({ layer }) => layer === "sentences",
+    )) {
+        assert.ok(
+            sentence.references.filter(({ relation }) => relation === "words")
+                .length >= 2,
+            sentence.id,
+        );
+    }
+});
