@@ -1,6 +1,6 @@
-# Standar paket konten bahasa Jepang
+# Belajar Bahasa Jepang
 
-Modul Cognis Bahasa Jepang memasang data pembelajaran bahasa Jepang deklaratif ke Pustaka Study milik host sambil tetap terisolasi dari internal Pustaka, basis data, API, dan kode peramban.
+Modul Belajar Bahasa Jepang memasang data pembelajaran bahasa Jepang deklaratif ke Pustaka Study milik host sambil tetap terisolasi dari internal Pustaka, basis data, API, dan kode peramban.
 
 ## Penggunaan
 

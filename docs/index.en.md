@@ -1,6 +1,6 @@
-# Japanese content pack standard
+# Japanese Study
 
-The Cognis Japanese module installs declarative Japanese learning records into the host-owned Study Library while remaining isolated from Library internals, databases, APIs, and browser code.
+The Japanese Study module installs declarative Japanese learning records into the host-owned Study Library while remaining isolated from Library internals, databases, APIs, and browser code.
 
 ## Usage
 

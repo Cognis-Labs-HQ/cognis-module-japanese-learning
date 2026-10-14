@@ -1,8 +1,8 @@
-# Cognis Japanese
+# Japanese Study
 
 **English** · [Deutsch](README.de.md) · [Bahasa Indonesia](README.id.md) · [日本語](README.ja.md)
 
-Cognis Japanese is a declarative Japanese content pack for the Cognis Study Library. It provides a versioned schema and validated character, definition, word, particle, and sentence records without owning API routes, persistence, or browser interfaces.
+Japanese Study is a declarative Japanese content pack for the Cognis Study Library. It provides a versioned schema and validated character, definition, word, particle, and sentence records without owning API routes, persistence, or browser interfaces.
 
 ## Requirements
 

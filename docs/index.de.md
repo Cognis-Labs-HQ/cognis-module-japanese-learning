@@ -1,6 +1,6 @@
-# Standard für das japanische Inhaltspaket
+# Japanisch lernen
 
-Das Cognis-Japanisch-Modul installiert deklarative japanische Lerndatensätze in die hosteigene Study-Bibliothek und bleibt dabei von Bibliotheksinternas, Datenbanken, APIs und Browsercode isoliert.
+Das Modul Japanisch lernen installiert deklarative japanische Lerndatensätze in die hosteigene Study-Bibliothek und bleibt dabei von Bibliotheksinternas, Datenbanken, APIs und Browsercode isoliert.
 
 ## Verwendung
 

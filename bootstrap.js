@@ -123,7 +123,7 @@ export async function bootstrapModule(ctx) {
         });
         throw error;
     }
-    ctx.log?.("info", "Cognis Japanese content pack enabled.", {
+    ctx.log?.("info", "Japanese Study content pack enabled.", {
         component: "study-language-ja",
         operation: "bootstrap",
         packId: receipt.packId,
