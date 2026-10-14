@@ -122,6 +122,10 @@ Vorlagenrichtlinien, domänenspezifische Routenpfade, übersetzte Integrationsdo
 
 Das Modul heißt jetzt Japanisch lernen und erhält ein passendes PNG-Icon und Banner. Wichtige Bildinhalte bleiben im sicheren mittigen Marketplace-Bereich. Sichtbarer Name und Integrationsdokumentation werden übersetzt und aktualisiert; Modul-UUIDs, Sprachcodes, Paketnamen und Inhaltsidentitäten bleiben erhalten.
 
+## Einheitliche Marketplace-Texte
+
+Verwenden Sie kurze Aktionszusammenfassungen und konkrete Funktionsbeschreibungen in den Marketplace-Metadaten mit inhaltlich abgestimmten Übersetzungen.
+
 ## Commits
 
 - [7d529da8](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/7d529da851a5301f3dd04ee4b1d71e17053248f9)

@@ -122,6 +122,10 @@ Sinkronkan panduan templat, jalur rute domain, dokumentasi integrasi terjemahan,
 
 Namai ulang modul menjadi Belajar Bahasa Jepang dan sediakan ikon serta banner PNG yang serasi, dengan ilustrasi penting di area tengah yang aman dari pemotongan Marketplace. Perbarui nama terjemahan dan dokumentasi integrasi sambil mempertahankan UUID modul, kode bahasa, nama paket dan identitas konten.
 
+## Deskripsi Marketplace yang konsisten
+
+Gunakan ringkasan tindakan singkat dan deskripsi fitur konkret pada metadata Marketplace dengan makna terjemahan yang selaras.
+
 ## Komit
 
 - [7d529da8](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/7d529da851a5301f3dd04ee4b1d71e17053248f9)

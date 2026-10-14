@@ -122,6 +122,10 @@ Synchronize template guidance, domain route paths, localized integration documen
 
 Rebrand the module as Japanese Study and provide a matching PNG icon and banner, keeping essential artwork inside the marketplace’s center-crop safe area. Translate the visible module name and update integration documentation while preserving module UUIDs, language codes, package names and content identities.
 
+## Consistent marketplace descriptions
+
+Use short action summaries and concrete feature descriptions across marketplace metadata, keeping localized meanings aligned.
+
 ## Commits
 
 - [7d529da8](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/7d529da851a5301f3dd04ee4b1d71e17053248f9)
