@@ -2,7 +2,7 @@
     "id": "study-language-ja",
     "uuid": "e905927f-b133-572a-92ce-2ea8645e5ceb",
     "name": "module.study.language.ja.name",
-    "version": "2.2.106",
+    "version": "2.2.107",
     "class": "extension",
     "coreApiVersion": "v1",
     "capabilities": ["study:language:ja"],
@@ -51,7 +51,7 @@
         },
         {
             "path": ".github/copilot-instructions.md",
-            "sha256": "c203b1795d4ed68caa95c1c157e35217d0f3f0833a303731e92e280743faedcc"
+            "sha256": "8413d9de6aad621b2b94c7e4872438c769249972d22af2b0a1f182e6f8e424e5"
         },
         {
             "path": ".gitignore",
@@ -71,19 +71,19 @@
         },
         {
             "path": "README.de.md",
-            "sha256": "c9b8e22ceea75698bccc518825d21d7ce8501d089dbf3e5b3371f029e003ff65"
+            "sha256": "cd9a96eb473bff913bf61dbedb1b052f7b4de46a8aa7ae4d197c70973ab2eb78"
         },
         {
             "path": "README.en.md",
-            "sha256": "c7f9a44c4e5cf21b2d1afe07cadbcd34eb2915295c71da1d9932d4d72b981521"
+            "sha256": "ff7dcc1ca5fd901e4b329ca9f2cf38a461577a7b4bb8582e2842372b3b57bfe6"
         },
         {
             "path": "README.id.md",
-            "sha256": "7e06606630dfc6e3f29c645e72534fc5538905eda54484d866c3a6bd44a78b7a"
+            "sha256": "5fa7d49dc61e2f9d79c99b2adeb4e0ece0f3440e1476ca1b2771f6f9a8f8dee4"
         },
         {
             "path": "README.ja.md",
-            "sha256": "479073e5e3055564fda3950a772d8150d1c9376e1c43c276567de1a117e76e70"
+            "sha256": "2415d98b05dccb29ccf5211434e825ca4830a5161330d38352a196f61891432c"
         },
         {
             "path": "TODO.md",
@@ -140,6 +140,10 @@
         {
             "path": "api/tests/lookup-cache.test.js",
             "sha256": "604f33f389cef267e8dec920f15d07dae06d966c67fc22ff762c56ba7ab0231c"
+        },
+        {
+            "path": "api/tests/manifest-targets.test.js",
+            "sha256": "ead5d55842241939d629b43556cb20f87590b6a6c4b8cd5ae3c3dd4a8f188dd6"
         },
         {
             "path": "api/tests/module-structure.test.js",
@@ -731,43 +735,43 @@
         },
         {
             "path": "docs/index.de.md",
-            "sha256": "51fd979537e8f32c11782b81082c42c96e839df3af24673ce2f8eb91316fb95d"
+            "sha256": "02d5d1bb7e6671c87212a026a4efd97c1a38d2d3486fd359a568691a0c836a35"
         },
         {
             "path": "docs/index.en.md",
-            "sha256": "f71a45c89254122f86755704d3ee657e83a1ae2cc5c209cd4934a0df73d60ced"
+            "sha256": "8e46a73bb1a87d96a0c30ca1fc769d8137a8ad8349f91649901a59a95927fab6"
         },
         {
             "path": "docs/index.id.md",
-            "sha256": "e9297d848378a5f366289c6d67b9751fa660517b89cb411d69cf52682e6900b0"
+            "sha256": "3bc84561b0e482eb45deb7eaf283372d7977b1b510bdf542f90c63130de3f2ee"
         },
         {
             "path": "docs/index.ja.md",
-            "sha256": "6f7b03ff052eae429c5c7a44466f8b9222b8fdf88c38480c99b8c8f468f2213a"
+            "sha256": "a7c49cffefaf611f794941a2c1ac44daf0f158d4be04772defec41dfad5282de"
         },
         {
             "path": "docs/jisho.de.md",
-            "sha256": "a44f20e2c78b3b0681fe6c81da12d2ac0894fcc744a7d4a274fe756ccadb7759"
+            "sha256": "e8835a6ac69a6bf2397bc15dffdc66771655bda1be5739127cfbae49a690ce87"
         },
         {
             "path": "docs/jisho.en.md",
-            "sha256": "51435131aab42a5d7533b5dec5bcd9ea0b99fc89658cb4bdd753948166e33139"
+            "sha256": "44eba605dfddaf2ca35dc10f83b8ac278259fcee84edf0ec1b9624a725886ce7"
         },
         {
             "path": "docs/jisho.id.md",
-            "sha256": "b4339235dbad3aee4948dd3a260ba44feb7a8d69172358bb5113c8058a75170e"
+            "sha256": "62370e0f8398b4a201fc9ed716b9ffa7ba5a95a10cbc6e66d874ce53c4bc4615"
         },
         {
             "path": "docs/jisho.ja.md",
-            "sha256": "6918afb0f3733a8f200ff3fc9accfa8ea14ad2ad732426768853a977b7e9899f"
+            "sha256": "9c937c32cf34ed7de0993c9afb50dbcfbcca479a8df7236358ed08a9abdbe331"
         },
         {
             "path": "package-lock.json",
-            "sha256": "2af02d9d7b103b01d991f4250b7cfabf0d1cf47e4d38ee1b23a88af722e61b38"
+            "sha256": "817e001f9b200434dcb2ea8ae520aacb9fa85142c0255acfd30c375260e87b5c"
         },
         {
             "path": "package.json",
-            "sha256": "fc9b959279b0213cae042c555e18af5094f0e5214d1a73c854b8eadb2d78205e"
+            "sha256": "1a1b1eefb8bb83bc2cb236713690902e1bc0b87756edca7417e5ed364983feef"
         },
         {
             "path": "routes.json",
@@ -787,7 +791,7 @@
         },
         {
             "path": "scripts/validate-manifest.js",
-            "sha256": "c1981f7bfb7842fc6536047a52839d2fdd79764dfd3924bf42a81843576272fe"
+            "sha256": "944205e7335ee60ee6db1404e20c36733da8536ca594c76efbca1f130443b298"
         },
         {
             "path": "tests/ambiguous-names.test.js",

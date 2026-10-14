@@ -2,6 +2,10 @@
 
 **Feature Branch:** feature-replace-library-with-new-implementation
 
+## Paketziele und Entwicklerhinweise
+
+Ausgabe 2.2.107 — Die Paketprüfung stellt sicher, dass Einstiegspunkte, Icons, Banner und Screenshots reguläre Dateien innerhalb des Checkouts sind, auch nach Pfadauflösung. Die Dokumentation beschreibt öffentliche Verträge und verweist für Veröffentlichungsmetadaten auf Manifeste; Änderungsprotokolle behalten die Herkunft der Veröffentlichung.
+
 ## JLPT-Stufen frei auswählen
 
 Der JLPT-Filter beginnt jetzt ohne ausgewählte Stufe und erlaubt wie der optionale Verbtypfilter mehrere Auswahlen. Ohne ausgewählte Stufe werden alle Vokabelkarten angezeigt, einschließlich Karten ohne JLPT-Stufe.

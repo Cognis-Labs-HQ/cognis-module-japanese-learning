@@ -2,6 +2,10 @@
 
 **Feature Branch:** feature-replace-library-with-new-implementation
 
+## Package targets and developer guidance
+
+Release 2.2.107 — Package validation checks that entrypoints, icons, banners and screenshots are regular files inside the checkout, including resolved paths. Documentation describes public contracts and refers to manifests for release metadata; changelogs retain release provenance.
+
 ## Select Any JLPT Levels
 
 JLPT filtering now starts without a selected level and permits multiple selections, matching the optional verb type filter. Clearing all levels shows every vocabulary card, including cards without a JLPT level.

@@ -300,7 +300,7 @@ Batas transformasi opsional harus dihilangkan saat tidak digunakan; label batas 
 
 Bidang pelafalan kosakata yang terlihat menautkan tepat satu rekaman pelafalan lengkap tersembunyi melalui `pronunciation-readings`; rekaman tersebut diselesaikan secara internal melalui bacaan Kanji terdekat dan Kana atomik.
 
-Revisi skema 89 menetapkan jalur Jelajahi `kana`, `kanji`, `vocabulary`, dan `sentences` di bawah `/study/ja/`. Versi paket konten adalah 2.2.100; versi integrasi modul adalah 2.2.101. Cognis mengelola impor, batas, pembagian dek, dan navigasi; modul menyediakan nama lapisan deklaratif dan konten kamus.
+Skema menentukan slug Explore `kana`, `kanji`, `vocabulary`, dan `sentences` di bawah `/study/ja/`. Metadata modul dan konten saat ini tersedia dalam manifes. Cognis memiliki impor, batas, berbagi dek, dan navigasi; modul menyediakan nama lapisan deklaratif dan konten kamus.
 
 ## Dek Kartu Belajar Awal
 
@@ -308,14 +308,16 @@ Penyedia Jepang mendeklarasikan enam dek awal: Dasar Hiragana (46), Dasar Kataka
 
 ## Perbaikan tinjauan
 
-Modul 2.2.101 memerlukan `study:library:provider` dan melepas penyedia saat aktivasi gagal dengan log kesalahan terstruktur yang aman. Skema 89 dipertahankan. Paket 2.2.100 memperbaiki pertanyaan lokasi sopan menjadi ですか serta menambahkan partikel pertanyaan kanonis dengan empat terjemahan. Kunci kalimat tetap. Pelafalan kalimat diturunkan dari kata dan partikel terlihat yang berurutan, tanpa kartu pelafalan seluruh kalimat tersembunyi yang berulang.
+Modul memerlukan `study:library:provider` dan melepas registrasi pencarian saat aktivasi gagal, dengan log galat terstruktur yang aman. Pertanyaan lokasi sopan berakhir dengan ですか dan memakai partikel tanya kanonis dengan makna terlokalisasi. Kunci kalimat stabil dan bacaan dari kata serta partikel terlihat yang terurut menghindari kartu bacaan kalimat lengkap tersembunyi yang duplikat.
 
 ## Jamak kelompok Jepang yang dipilih secara eksplisit
 
-Skema 90 dan paket konten 2.2.102 mendeklarasikan enam keluarga nomina bernyawa dan pronomina melalui kontrak transformasi opsional Cognis (`optInTag: plural`). Akhiran `たち` menunjukkan kelompok atau orang terkait, bukan akhiran jumlah universal seperti dalam bahasa Inggris. Label, bacaan, dan definisi terlokalisasi berubah bersama, sementara referensi kalimat mempertahankan kartu dasar. Dataset tidak menggandakan kartu jamak turunan. Versi modul: 2.2.102.
+Keluarga nomina bernyawa dan pronomina yang ditinjau memakai kontrak transformasi opsional Cognis (`optInTag: plural`). Akhiran `たち` menunjukkan kelompok atau orang terkait, bukan akhiran jumlah universal. Label, bacaan, dan definisi terlokalisasi berubah bersama sementara referensi kalimat mempertahankan kartu dasar. Kartu jamak turunan tidak diduplikasi dalam dataset.
 
 ### Struktur kontributor dan kepemilikan host
 
 Mulai modul baru dari [cognis-module-template](https://github.com/Cognis-Labs-HQ/cognis-module-template); repositori ini mengikuti revisi panduan yang dicatat dalam `AGENTS.md`. `bootstrap.js` mengatur siklus hidup, `api/index.js` menghubungkan dependensi ctx, `api/routes/<domain>/index.js` menangani HTTP, dan `api/reuse/` berisi kode server yang dipakai ulang. Fitur browser berada di `ui/`, gaya di `ui/styles/`, templat bersama di `ui/templates/`, dan dokumentasi terjemahan di `docs/index.<locale>.md`. Riwayat rilis berada di `docs/changelog/` dan dikecualikan dari hash paket. Bagian opsional yang tidak didukung tidak dibuat.
 
 Gunakan kapabilitas ctx publik dan alur yang dideklarasikan; jangan mengimpor bagian internal Cognis atau modul lain. Penyedia kapabilitas dan navigasi dasbor mengekspor `mountProvider(scopedUiCtx)` dan mengembalikan fungsi pembersihan sumber daya miliknya. Impor tidak boleh mendaftarkan perilaku modul. Host menghapus kapabilitas, kait alur, listener, dan status penyedia saat dinonaktifkan, lalu memasang kembali penyedia yang tersimpan saat diaktifkan ulang. Pabrik pengaturan, administrasi, dan penyedia deskriptor footer autentikasi mengikuti kontrak host masing-masing. Uji kontrak dengan pengganti mandiri, jalankan pemeriksaan struktur, perbarui hash setelah perubahan paket terakhir, lalu jalankan lint, pengujian, dan validasi manifes sebelum publikasi.
+
+Validasi paket memastikan titik masuk, ikon, banner, dan tangkapan layar berupa file reguler di dalam checkout, termasuk setelah resolusi jalur. Dokumentasi menjelaskan kontrak publik dan merujuk manifes untuk metadata rilis; changelog mempertahankan asal-usul rilis.

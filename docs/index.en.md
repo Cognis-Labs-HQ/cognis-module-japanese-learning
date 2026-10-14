@@ -300,7 +300,7 @@ Optional transform boundaries must be omitted when unused; empty localized bound
 
 Visible vocabulary pronunciation fields link to exactly one hidden complete-pronunciation record through `pronunciation-readings`; that record resolves internally through the closest Kanji readings and atomic Kana.
 
-Schema revision 89 declares Explore navigation slugs `kana`, `kanji`, `vocabulary`, and `sentences` under `/study/ja/`. The content-pack version is 2.2.100; the module integration version is 2.2.101. Cognis owns imports, limits, deck sharing, and application navigation; the module supplies declarative layer names and dictionary content.
+The schema declares Explore slugs `kana`, `kanji`, `vocabulary` and `sentences` under `/study/ja/`. Current module and content metadata are in the manifests. Cognis owns imports, limits, deck sharing and navigation; the module supplies declarative layer names and dictionary content.
 
 ## Starter Flashcard Decks
 
@@ -308,14 +308,16 @@ The Japanese provider declares six starter decks in `data/starter-decks.json`: H
 
 ## Review and lifecycle fixes
 
-Japanese module 2.2.101 requires `study:library:provider` and removes lookup registrations on activation failure, with safe structured error logs. Schema 89 is retained. Content pack 2.2.100 corrects polite location questions to end in ですか and adds the canonical question-particle card with four localized meanings. Existing sentence keys are preserved. Sentence readings remain derived from their ordered visible word and particle constituents, without duplicate hidden full-sentence pronunciation wrappers.
+The module requires `study:library:provider` and removes lookup registrations on activation failure, logging safe structured errors. Polite location questions end in ですか and use the canonical question particle with localized meanings. Stable sentence keys and readings derived from ordered visible words and particles avoid duplicate hidden full-sentence wrappers.
 
 ## Opt-in Japanese collective plurals
 
-Schema 90 and content pack 2.2.102 declare six reviewed animate-noun and pronoun families using Cognis’ optional transformation contract (`optInTag: plural`). The `たち` suffix represents a group or associated people; it is not a universal English-style number suffix. Labels, readings and localized definitions transform together while sentence references retain the base card. Derived plural cards are not duplicated in the dataset. Module version: 2.2.102.
+Reviewed animate-noun and pronoun families use Cognis’ optional transformation contract (`optInTag: plural`). The `たち` suffix indicates a group or associated people, not a universal number suffix. Labels, readings and localized definitions transform together while sentence references retain the base card. Derived plural cards are not duplicated in the dataset.
 
 ### Contributor layout and host ownership
 
 Start new modules from [cognis-module-template](https://github.com/Cognis-Labs-HQ/cognis-module-template); this repository follows its pinned contributor guidance in `AGENTS.md`. `bootstrap.js` owns lifecycle orchestration, `api/index.js` wires ctx-derived dependencies, `api/routes/<domain>/index.js` owns HTTP handlers, and reusable server code belongs in `api/reuse/`. Browser features stay under `ui/`, styles under `ui/styles/`, reusable markup under `ui/templates/`, and localized documentation under `docs/index.<locale>.md`. Historical release entries live in `docs/changelog/` and are excluded from package hashes. Optional concerns are omitted when unsupported.
 
 Consume public ctx capabilities and declared flows; do not import Cognis internals or sibling modules. Dashboard capability/navbar providers export `mountProvider(scopedUiCtx)` and return cleanup for owned resources. Imports must not register module behavior. The host disposes scoped capabilities, flow hooks, listeners and provider state when disabled, then mounts cached providers again when re-enabled. Settings/admin factories and authentication-footer descriptor providers follow their own documented host contracts. Test these contracts with standalone fakes, run the executable layout guard, regenerate hashes after the final packaged edit, and run lint, tests and manifest validation before publishing.
+
+Package validation checks that entrypoints, icons, banners and screenshots are regular files inside the checkout, including resolved paths. Documentation describes public contracts and refers to manifests for release metadata; changelogs retain release provenance.

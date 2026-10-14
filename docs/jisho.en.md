@@ -1,6 +1,6 @@
 # Dictionary integration
 
-Module version 2.2.98 keeps content-pack version 2.2.98 and schema revision 89. Jisho registers through the host `study:library:provider` capability with `searchable: true` and the `dictionary` capability. It supports Kana, Kanji and Vocabulary; sentences and provider-owned particle creation are excluded.
+Jisho registers through the host `study:library:provider` capability with `searchable: true` and the `dictionary` capability. It supports Kana, Kanji and Vocabulary; sentences and provider-owned particle creation are excluded. Module, content and schema metadata are declared in their manifests.
 
 ## Authoritative lookup
 
@@ -50,10 +50,10 @@ The primary reading follows common exact word matches from Jisho: 僕 shows ぼ�
 
 Cognis combines dictionary matches with identical written composition into alternate readings and meanings. Clicking a different spelling applies it immediately and resolves or creates its supporting Kanji; Continue or closing the chooser retains the exact composition and ignores expanded matches. Reading cards preserve their path to individual Kana. Choice handling, card creation, scope checks, caching and notifications remain host responsibilities.
 
-Schema revision 89 declares Explore navigation slugs `kana`, `kanji`, `vocabulary`, and `sentences` under `/study/explore/ja/`. Module and content-pack versions are 2.2.98. Cognis owns imports, limits, deck sharing, and application navigation; the module supplies declarative layer names and dictionary content.
+The schema declares Explore slugs `kana`, `kanji`, `vocabulary` and `sentences` under `/study/ja/`. Current module and content metadata are in the manifests. Cognis owns imports, limits, deck sharing and navigation; the module supplies declarative layer names and dictionary content.
 
 ## Review and lifecycle fixes
 
-Japanese module 2.2.100 requires `study:library:provider` directly and removes lookup registrations when ingestion, capability publication or flow registration fails. Schema 89 and content pack 2.2.99 are retained; this release changes integration and readability, not language data.
+The module requires `study:library:provider` directly and removes lookup registrations when ingestion, capability publication or flow registration fails. Lifecycle changes preserve content identities.
 
-Library 2.26.0 exposes `deleteContentPack(root)` on the public provider capability. It removes provider records, dependent cards, pack receipts and assets in one deletion-flow transaction; failed audit hooks roll back the operation. Cascaded deletions use existing Study notifications. Schemas remain available for independent authored content, and uninstall does not blacklist content, so reinstall can restore the pack.
+Library exposes `deleteContentPack(root)` on the public provider capability. It removes provider records, dependent cards, pack receipts and assets in one deletion-flow transaction; failed audit hooks roll back the operation. Cascaded deletions use existing Study notifications. Schemas remain available for independent authored content, and uninstall does not blacklist content, so reinstall can restore the pack.

@@ -2,6 +2,10 @@
 
 **Feature Branch:** feature-replace-library-with-new-implementation
 
+## Target paket dan panduan pengembang
+
+Rilis 2.2.107 — Validasi paket memastikan titik masuk, ikon, banner, dan tangkapan layar berupa file reguler di dalam checkout, termasuk setelah resolusi jalur. Dokumentasi menjelaskan kontrak publik dan merujuk manifes untuk metadata rilis; changelog mempertahankan asal-usul rilis.
+
 ## Pilih Tingkat JLPT Secara Bebas
 
 Filter JLPT kini dimulai tanpa tingkat yang dipilih dan mengizinkan beberapa pilihan seperti filter jenis verba opsional. Menghapus semua pilihan menampilkan setiap kartu kosakata, termasuk kartu tanpa tingkat JLPT.

@@ -300,7 +300,7 @@ Optionale Transformationsgrenzen müssen bei Nichtgebrauch entfallen; leere loka
 
 Aussprachefelder sichtbarer Wortschatzeinträge verlinken über `pronunciation-readings` auf genau einen verborgenen vollständigen Aussprachedatensatz; dieser wird intern über die nächsten Kanji-Lesungen und atomaren Kana aufgelöst.
 
-Schemarevision 89 legt die Erkunden-Pfade `kana`, `kanji`, `vocabulary` und `sentences` unter `/study/ja/` fest. Das Inhaltspaket hat Version 2.2.100; die Modulintegration hat Version 2.2.101. Cognis verwaltet Importe, Grenzen, Stapelfreigaben und Navigation; das Modul liefert deklarative Ebenennamen und Wörterbuchdaten.
+Das Schema legt die Erkunden-Pfade `kana`, `kanji`, `vocabulary` und `sentences` unter `/study/ja/` fest. Aktuelle Modul- und Inhaltsmetadaten stehen in den Manifesten. Cognis verwaltet Importe, Grenzen, Stapelfreigaben und Navigation; das Modul liefert deklarative Ebenennamen und Wörterbuchdaten.
 
 ## Lernkarten-Startdecks
 
@@ -308,14 +308,16 @@ Der japanische Anbieter erklärt sechs Startdecks: Hiragana-Grundlagen (46), Kat
 
 ## Review und Lebenszyklus
 
-Modul 2.2.101 verlangt `study:library:provider` und entfernt Suchanbieter bei Aktivierungsfehlern mit sicheren strukturierten Fehlerprotokollen. Schema 89 bleibt erhalten. Inhaltspaket 2.2.100 ergänzt höfliche Ortsfragen um ですか und eine kanonische Fragepartikel mit vier Übersetzungen. Satzschlüssel bleiben stabil. Aussprachen entstehen aus geordneten sichtbaren Wort- und Partikelkarten statt doppelten verborgenen Satz-Aussprachekarten.
+Das Modul verlangt `study:library:provider` und entfernt Suchregistrierungen bei Aktivierungsfehlern mit sicheren strukturierten Fehlerprotokollen. Höfliche Ortsfragen enden mit ですか und verwenden die kanonische Fragepartikel mit lokalisierten Bedeutungen. Stabile Satzschlüssel und Aussprachen aus geordneten sichtbaren Wörtern und Partikeln vermeiden doppelte verborgene Satz-Aussprachekarten.
 
 ## Optionale japanische Kollektivplurale
 
-Schema 90 und Inhaltspaket 2.2.102 deklarieren sechs geprüfte Gruppen belebter Substantive und Pronomen über Cognis’ optionalen Transformationsvertrag (`optInTag: plural`). `たち` bezeichnet eine Gruppe oder zugehörige Personen und ist keine allgemeine englische Zahlenendung. Bezeichnung, Lesung und lokalisierte Definition werden gemeinsam transformiert; Satzreferenzen behalten die Basiskarte. Das Dataset enthält keine doppelten abgeleiteten Pluralkarten. Modulversion: 2.2.102.
+Geprüfte Gruppen belebter Substantive und Pronomen verwenden Cognis’ optionalen Transformationsvertrag (`optInTag: plural`). `たち` bezeichnet eine Gruppe oder zugehörige Personen, keine allgemeine Zahlenendung. Bezeichnungen, Lesungen und lokalisierte Definitionen werden gemeinsam transformiert; Satzreferenzen behalten die Basiskarte. Das Dataset enthält keine doppelten abgeleiteten Pluralkarten.
 
 ### Mitwirkendenstruktur und Zuständigkeit des Hosts
 
 Neue Module beginnen mit [cognis-module-template](https://github.com/Cognis-Labs-HQ/cognis-module-template); dieses Repository folgt der in `AGENTS.md` festgehaltenen Vorlagenrevision. `bootstrap.js` orchestriert den Lebenszyklus, `api/index.js` verdrahtet ctx-Abhängigkeiten, `api/routes/<domain>/index.js` enthält HTTP-Handler und `api/reuse/` wiederverwendbaren Servercode. Browserfunktionen liegen unter `ui/`, Styles unter `ui/styles/`, wiederverwendbare Vorlagen unter `ui/templates/` und lokalisierte Dokumentation unter `docs/index.<locale>.md`. Historische Veröffentlichungen liegen in `docs/changelog/` und werden nicht gehasht. Nicht unterstützte optionale Bereiche entfallen.
 
 Öffentliche ctx-Fähigkeiten und deklarierte Abläufe nutzen; niemals Cognis-Interna oder benachbarte Module importieren. Dashboard-Anbieter für Fähigkeiten und Navigation exportieren `mountProvider(scopedUiCtx)` und geben Aufräumfunktionen für eigene Ressourcen zurück. Importe registrieren kein Modulverhalten. Der Host entfernt Fähigkeiten, Ablauf-Hooks, Listener und Anbieterzustand beim Deaktivieren und bindet zwischengespeicherte Anbieter beim erneuten Aktivieren neu ein. Einstellungen, Administration und Anmeldefußzeilen folgen ihren jeweiligen dokumentierten Host-Verträgen. Diese Verträge mit eigenständigen Testdoubles prüfen, die ausführbare Strukturprüfung ausführen, Hashes nach der letzten Paketänderung erneuern und vor der Veröffentlichung Lint, Tests und Manifestprüfung ausführen.
+
+Die Paketprüfung stellt sicher, dass Einstiegspunkte, Icons, Banner und Screenshots reguläre Dateien innerhalb des Checkouts sind, auch nach Pfadauflösung. Die Dokumentation beschreibt öffentliche Verträge und verweist für Veröffentlichungsmetadaten auf Manifeste; Änderungsprotokolle behalten die Herkunft der Veröffentlichung.
