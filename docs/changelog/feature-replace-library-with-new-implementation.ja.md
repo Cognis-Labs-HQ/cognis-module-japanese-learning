@@ -162,3 +162,4 @@ Study は公開の発音分類とスタイルを提供し、Library のプレビ
 - [1e8c8df](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/1e8c8dfcd5c7321519c0ea38d8a8fd788335441e)
 - [25322ff](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/25322ff741a62e990f6c4664f0b6083415c649ea)
 - [2476657](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/2476657ff36854d1a0688680cb9097f2585dad16)
+- [5df0f61](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/5df0f611c9161f100508565013ea6d43edb2e897)
