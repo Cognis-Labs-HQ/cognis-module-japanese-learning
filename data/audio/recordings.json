@@ -1,5 +1,5 @@
 {
-    "source": "open-jtalk-mei",
+    "source": "kokoro-multilingual",
     "format": "audio/mpeg",
     "recordings": [
         {
@@ -129,7 +129,6 @@
             "text": "く",
             "entries": [
                 "ja:char:ku",
-                "ja:kanji:core-e69da5",
                 "ja:word:kanji-reading-e69da5-01",
                 "ja:word:kanji-reading-e9a39f-02"
             ]
@@ -173,7 +172,6 @@
             "text": "す",
             "entries": [
                 "ja:char:su",
-                "ja:kanji:core-e5a5bd",
                 "ja:word:kanji-reading-e79bb4-03",
                 "ja:word:kanji-reading-e5a5bd-01",
                 "ja:word:kanji-reading-e7a9ba-04"
@@ -195,11 +193,7 @@
             "path": "audio/7db5e4b64c573c14c6ee606620a40c7aacedf965c1742adce3942e42fbeeb952.mp3",
             "language": "ja",
             "text": "た",
-            "entries": [
-                "ja:char:ta",
-                "ja:kanji:core-e9a39f",
-                "ja:word:kanji-reading-e9a39f-01"
-            ]
+            "entries": ["ja:char:ta", "ja:word:kanji-reading-e9a39f-01"]
         },
         {
             "path": "audio/46f86adad556c9b2b632be733030d96e3dde13a2ac99cd14391f4acbe1fb65d3.mp3",
@@ -259,7 +253,6 @@
             "text": "の",
             "entries": [
                 "ja:char:no",
-                "ja:kanji:core-e9a3b2",
                 "ja:word:kanji-reading-e9a3b2-01",
                 "ja:particle:no"
             ]
@@ -278,7 +271,11 @@
             "path": "audio/916a66083587e3f4753916a8e7d5946f78b2dd7154af4dfd3718f61e74f09005.mp3",
             "language": "ja",
             "text": "ひ",
-            "entries": ["ja:char:hi", "ja:word:kanji-reading-ja:kanji:nichi-02"]
+            "entries": [
+                "ja:char:hi",
+                "ja:kanji:nichi",
+                "ja:word:kanji-reading-ja:kanji:nichi-02"
+            ]
         },
         {
             "path": "audio/1721b3a88b543c85b435da5623cd4525841f84cb269469e0d909a3180f138565.mp3",
@@ -296,7 +293,11 @@
             "path": "audio/220b36641070da3e093e9126e4d8d841e8b2e08c0364da28a17a332f8196941d.mp3",
             "language": "ja",
             "text": "ほ",
-            "entries": ["ja:char:ho", "ja:word:kanji-reading-walk-03"]
+            "entries": [
+                "ja:char:ho",
+                "ja:kanji:core-walk",
+                "ja:word:kanji-reading-walk-03"
+            ]
         },
         {
             "path": "audio/4fca9b7d28d513b1a4a236d186faf96dcc86df90e1767767d2a9942654e54fe9.mp3",
@@ -618,11 +619,7 @@
             "path": "audio/b66506be3556098e3a6bab634d6bb2a076b281b1cb63a751fedfa91527358485.mp3",
             "language": "ja",
             "text": "しゃ",
-            "entries": [
-                "ja:char:sha",
-                "ja:kanji:core-e8bb8a",
-                "ja:word:kanji-reading-e8bb8a-01"
-            ]
+            "entries": ["ja:char:sha", "ja:word:kanji-reading-e8bb8a-01"]
         },
         {
             "path": "audio/4072b86873b68575c742af04c98b4af274a983dc3a337f05c47ea7cb8a9b41c7.mp3",
@@ -797,7 +794,6 @@
             "entries": [
                 "ja:char:small-i",
                 "ja:char:i",
-                "ja:kanji:core-e8a18c",
                 "ja:word:kanji-reading-e8a18c-01",
                 "ja:word:kanji-reading-e5a5bd-04",
                 "ja:word:kanji-reading-e9a3b4-03",
@@ -1591,41 +1587,63 @@
             "entries": ["ja:char:ka:small-o", "ja:char:ka:o"]
         },
         {
-            "path": "audio/d9690d60b46e88880af27b9a88b618d373ae30160f8531ff0fa3e34ea7e7d07d.mp3",
+            "path": "audio/b2038756e83af05f5ccab349c1c76a74ffb81887975b5204609d19fd8e6f8b1f.mp3",
             "language": "ja",
-            "text": "おお",
+            "text": "ぎょう",
+            "entries": [
+                "ja:kanji:core-e8a18c",
+                "ja:word:kanji-reading-e8a18c-08"
+            ]
+        },
+        {
+            "path": "audio/400e58fd0bb8a9cbdef099576a62259f653db7dd05f70380e4e3a485d271a39e.mp3",
+            "language": "ja",
+            "text": "らい",
+            "entries": [
+                "ja:kanji:core-e69da5",
+                "ja:word:kanji-reading-e69da5-05"
+            ]
+        },
+        {
+            "path": "audio/e0dea5696fdefde7dcb6dae5176f9746b162a0aed1cea783311aa4104c55c6f6.mp3",
+            "language": "ja",
+            "text": "だい",
             "entries": [
                 "ja:kanji:core-e5a4a7",
-                "ja:word:kanji-reading-e5a4a7-01"
+                "ja:word:kanji-reading-e5a4a7-02"
             ]
         },
         {
-            "path": "audio/ed09d1c7c6c9c187b5f6ab6cc28ce11155f514082402665317a30fc50730d4c2.mp3",
+            "path": "audio/5e8bd1d0761abfa6b89e99bbae3d2249863e7cd4d0f4d0c0ff9e11765bbecd58.mp3",
             "language": "ja",
-            "text": "ちい",
+            "text": "しょう",
             "entries": [
                 "ja:kanji:core-e5b08f",
-                "ja:word:kanji-reading-e5b08f-01"
+                "ja:word:kanji-reading-e5b08f-05",
+                "ja:word:kanji-reading-e7949f-12"
             ]
         },
         {
-            "path": "audio/73075167856a10bae121b5401ae2b073337950fdaae83b93fa4fef4ffbc16c0d.mp3",
+            "path": "audio/ca6d276be5cdb788668918560cd736ebeed682e354e428fad168c8021674a215.mp3",
             "language": "ja",
-            "text": "なお",
+            "text": "じき",
             "entries": [
                 "ja:kanji:core-e79bb4",
-                "ja:word:kanji-reading-e79bb4-01"
+                "ja:word:kanji-reading-e79bb4-05",
+                "ja:word:kanji-reading-e9a39f-05"
             ]
         },
         {
-            "path": "audio/19856aa6978cc5bcb03c9678b4f86aa7b9c4285af7abd215a830485ed8a86735.mp3",
+            "path": "audio/cbb2259b448d94a34e35c502e6a038773ccaff3d9aa0d80cb1c33216afa45cd7.mp3",
             "language": "ja",
-            "text": "ある",
+            "text": "こう",
             "entries": [
-                "ja:kanji:core-walk",
-                "ja:word:complete-pronunciation-aru-exist",
-                "ja:word:aru-exist",
-                "ja:word:kanji-reading-walk-01"
+                "ja:kanji:core-e5a5bd",
+                "ja:kanji:core-e6a0a1",
+                "ja:word:kanji-reading-e8a18c-07",
+                "ja:word:kanji-reading-e5a5bd-05",
+                "ja:word:kanji-reading-e7a59e-03",
+                "ja:word:kanji-reading-e6a0a1-01"
             ]
         },
         {
@@ -1748,6 +1766,17 @@
             ]
         },
         {
+            "path": "audio/4967475120a7ef6f7d1ec838278bc1c36b838486d5727f7fcfa3c32d3d066d0d.mp3",
+            "language": "ja",
+            "text": "くるま",
+            "entries": [
+                "ja:kanji:core-e8bb8a",
+                "ja:word:complete-pronunciation-kuruma",
+                "ja:word:kanji-reading-e8bb8a-02",
+                "ja:word:kuruma"
+            ]
+        },
+        {
             "path": "audio/40ce0e24bc5ce446cf2b5876170585642ec57a37f8b1dede7741ee76c51da0b4.mp3",
             "language": "ja",
             "text": "でん",
@@ -1763,26 +1792,12 @@
             ]
         },
         {
-            "path": "audio/cbb2259b448d94a34e35c502e6a038773ccaff3d9aa0d80cb1c33216afa45cd7.mp3",
+            "path": "audio/30cb873466416052df240667b75979a0c4583c50d1e7e1259c48800587fb947f.mp3",
             "language": "ja",
-            "text": "こう",
-            "entries": [
-                "ja:kanji:core-e6a0a1",
-                "ja:word:kanji-reading-e8a18c-07",
-                "ja:word:kanji-reading-e5a5bd-05",
-                "ja:word:kanji-reading-e7a59e-03",
-                "ja:word:kanji-reading-e6a0a1-01"
-            ]
-        },
-        {
-            "path": "audio/65a234b1b60357eb492553636fbfb9e60a174fdac767baa50e138f545117b6b1.mp3",
-            "language": "ja",
-            "text": "せん",
+            "text": "さき",
             "entries": [
                 "ja:kanji:core-e58588",
-                "ja:word:kanji-reading-e5b1b1-03",
-                "ja:word:kanji-reading-e5b79d-02",
-                "ja:word:kanji-reading-e58588-01"
+                "ja:word:kanji-reading-e58588-02"
             ]
         },
         {
@@ -1804,12 +1819,30 @@
             ]
         },
         {
-            "path": "audio/f1f24c693c3e9a5780cec8c87169080aad1fc4e685057b6b1276cfd31a0c1c95.mp3",
+            "path": "audio/f7c2d5486a92b1041b5f07a313f009565bd73ed3fcef53f7c4433dd59af07349.mp3",
             "language": "ja",
-            "text": "だち",
+            "text": "たつ",
             "entries": [
                 "ja:kanji:core-e98194",
-                "ja:word:kanji-reading-e98194-01"
+                "ja:word:kanji-reading-e98194-03"
+            ]
+        },
+        {
+            "path": "audio/0263f871885b2ff8d0faa0cb183c5c8e69f5514d0715da9d9b9856207b229580.mp3",
+            "language": "ja",
+            "text": "しょく",
+            "entries": [
+                "ja:kanji:core-e9a39f",
+                "ja:word:kanji-reading-e9a39f-04"
+            ]
+        },
+        {
+            "path": "audio/1c184fd3e4498834f79519dac3d4083a83a8d7923a7d25f14885bb6281b6c997.mp3",
+            "language": "ja",
+            "text": "いん",
+            "entries": [
+                "ja:kanji:core-e9a3b2",
+                "ja:word:kanji-reading-e9a3b2-02"
             ]
         },
         {
@@ -1846,22 +1879,12 @@
             ]
         },
         {
-            "path": "audio/1c6def26336b14aa5aefe2624eef644c22afc3eee3eb38750eece474c248b211.mp3",
+            "path": "audio/36d53a9b6a2b3c44e68e7920c84018d2facec63b17b473a2400eb0e9064f9732.mp3",
             "language": "ja",
-            "text": "じん",
+            "text": "ひと",
             "entries": [
                 "ja:kanji:hito",
-                "ja:word:kanji-reading-e7a59e-05",
-                "ja:word:kanji-reading-ja:kanji:hito-01"
-            ]
-        },
-        {
-            "path": "audio/14eedc2ae04b69c58ec3c7ab74f139d4548398daf64c3c7943ea3e47a4de858f.mp3",
-            "language": "ja",
-            "text": "にち",
-            "entries": [
-                "ja:kanji:nichi",
-                "ja:word:kanji-reading-ja:kanji:nichi-01"
+                "ja:word:kanji-reading-ja:kanji:hito-02"
             ]
         },
         {
@@ -1895,6 +1918,16 @@
             "entries": [
                 "ja:word:complete-pronunciation-iru-exist",
                 "ja:word:iru-exist"
+            ]
+        },
+        {
+            "path": "audio/19856aa6978cc5bcb03c9678b4f86aa7b9c4285af7abd215a830485ed8a86735.mp3",
+            "language": "ja",
+            "text": "ある",
+            "entries": [
+                "ja:word:complete-pronunciation-aru-exist",
+                "ja:word:aru-exist",
+                "ja:word:kanji-reading-walk-01"
             ]
         },
         {
@@ -1997,16 +2030,6 @@
             "entries": [
                 "ja:word:complete-pronunciation-nanode",
                 "ja:word:nanode"
-            ]
-        },
-        {
-            "path": "audio/4967475120a7ef6f7d1ec838278bc1c36b838486d5727f7fcfa3c32d3d066d0d.mp3",
-            "language": "ja",
-            "text": "くるま",
-            "entries": [
-                "ja:word:complete-pronunciation-kuruma",
-                "ja:word:kanji-reading-e8bb8a-02",
-                "ja:word:kuruma"
             ]
         },
         {
@@ -2178,12 +2201,6 @@
             "entries": ["ja:word:kanji-reading-e8a18c-06"]
         },
         {
-            "path": "audio/b2038756e83af05f5ccab349c1c76a74ffb81887975b5204609d19fd8e6f8b1f.mp3",
-            "language": "ja",
-            "text": "ぎょう",
-            "entries": ["ja:word:kanji-reading-e8a18c-08"]
-        },
-        {
             "path": "audio/8e03716d251eb965412282420c5466d677edfbaf5e5ca408e176eebcafccd232.mp3",
             "language": "ja",
             "text": "あん",
@@ -2196,12 +2213,6 @@
             "entries": ["ja:word:kanji-reading-e69da5-02"]
         },
         {
-            "path": "audio/400e58fd0bb8a9cbdef099576a62259f653db7dd05f70380e4e3a485d271a39e.mp3",
-            "language": "ja",
-            "text": "らい",
-            "entries": ["ja:word:kanji-reading-e69da5-05"]
-        },
-        {
             "path": "audio/3e84375e4d745f3b6d2940e4cb45ad6a55b3a64fe1ce26515ba1b05789e95c9b.mp3",
             "language": "ja",
             "text": "たい",
@@ -2211,19 +2222,22 @@
             ]
         },
         {
-            "path": "audio/e0dea5696fdefde7dcb6dae5176f9746b162a0aed1cea783311aa4104c55c6f6.mp3",
+            "path": "audio/d9690d60b46e88880af27b9a88b618d373ae30160f8531ff0fa3e34ea7e7d07d.mp3",
             "language": "ja",
-            "text": "だい",
-            "entries": ["ja:word:kanji-reading-e5a4a7-02"]
+            "text": "おお",
+            "entries": ["ja:word:kanji-reading-e5a4a7-01"]
         },
         {
-            "path": "audio/5e8bd1d0761abfa6b89e99bbae3d2249863e7cd4d0f4d0c0ff9e11765bbecd58.mp3",
+            "path": "audio/ed09d1c7c6c9c187b5f6ab6cc28ce11155f514082402665317a30fc50730d4c2.mp3",
             "language": "ja",
-            "text": "しょう",
-            "entries": [
-                "ja:word:kanji-reading-e5b08f-05",
-                "ja:word:kanji-reading-e7949f-12"
-            ]
+            "text": "ちい",
+            "entries": ["ja:word:kanji-reading-e5b08f-01"]
+        },
+        {
+            "path": "audio/73075167856a10bae121b5401ae2b073337950fdaae83b93fa4fef4ffbc16c0d.mp3",
+            "language": "ja",
+            "text": "なお",
+            "entries": ["ja:word:kanji-reading-e79bb4-01"]
         },
         {
             "path": "audio/2108a7b86f423946f2919b0df4449c574afe9240ac7a0a7cd2ca0d5f965d00b7.mp3",
@@ -2236,15 +2250,6 @@
             "language": "ja",
             "text": "ちょく",
             "entries": ["ja:word:kanji-reading-e79bb4-04"]
-        },
-        {
-            "path": "audio/ca6d276be5cdb788668918560cd736ebeed682e354e428fad168c8021674a215.mp3",
-            "language": "ja",
-            "text": "じき",
-            "entries": [
-                "ja:word:kanji-reading-e79bb4-05",
-                "ja:word:kanji-reading-e9a39f-05"
-            ]
         },
         {
             "path": "audio/aab2004bf30eb51d274ccc4c1a2b7765160f0f05a22a067541cc3ef419cc5569.mp3",
@@ -2275,6 +2280,16 @@
             "language": "ja",
             "text": "さん",
             "entries": ["ja:word:kanji-reading-e5b1b1-02"]
+        },
+        {
+            "path": "audio/65a234b1b60357eb492553636fbfb9e60a174fdac767baa50e138f545117b6b1.mp3",
+            "language": "ja",
+            "text": "せん",
+            "entries": [
+                "ja:word:kanji-reading-e5b1b1-03",
+                "ja:word:kanji-reading-e5b79d-02",
+                "ja:word:kanji-reading-e58588-01"
+            ]
         },
         {
             "path": "audio/dcdf1f949180f907c2063c3f6d458fd07388b1af287b7639f0fb77c8eb03b0b2.mp3",
@@ -2352,16 +2367,19 @@
             "entries": ["ja:word:kanji-reading-e7a59e-04"]
         },
         {
+            "path": "audio/1c6def26336b14aa5aefe2624eef644c22afc3eee3eb38750eece474c248b211.mp3",
+            "language": "ja",
+            "text": "じん",
+            "entries": [
+                "ja:word:kanji-reading-e7a59e-05",
+                "ja:word:kanji-reading-ja:kanji:hito-01"
+            ]
+        },
+        {
             "path": "audio/9f4e127086f2616a28c32b9781e3b368ec494a2125de06b5958fe21b463f98bf.mp3",
             "language": "ja",
             "text": "まな",
             "entries": ["ja:word:kanji-reading-e5ada6-02"]
-        },
-        {
-            "path": "audio/30cb873466416052df240667b75979a0c4583c50d1e7e1259c48800587fb947f.mp3",
-            "language": "ja",
-            "text": "さき",
-            "entries": ["ja:word:kanji-reading-e58588-02"]
         },
         {
             "path": "audio/562e27e3511eafedd9f8c43273929286468313236d17c442f14a5534fb70b5e7.mp3",
@@ -2388,28 +2406,16 @@
             "entries": ["ja:word:kanji-reading-e58f8b-02"]
         },
         {
+            "path": "audio/f1f24c693c3e9a5780cec8c87169080aad1fc4e685057b6b1276cfd31a0c1c95.mp3",
+            "language": "ja",
+            "text": "だち",
+            "entries": ["ja:word:kanji-reading-e98194-01"]
+        },
+        {
             "path": "audio/28650fd4c8bba588f737a266c53105e343f8ae1fb886ff1e6cc9ec7272d7090d.mp3",
             "language": "ja",
             "text": "たち",
             "entries": ["ja:word:kanji-reading-e98194-02"]
-        },
-        {
-            "path": "audio/f7c2d5486a92b1041b5f07a313f009565bd73ed3fcef53f7c4433dd59af07349.mp3",
-            "language": "ja",
-            "text": "たつ",
-            "entries": ["ja:word:kanji-reading-e98194-03"]
-        },
-        {
-            "path": "audio/0263f871885b2ff8d0faa0cb183c5c8e69f5514d0715da9d9b9856207b229580.mp3",
-            "language": "ja",
-            "text": "しょく",
-            "entries": ["ja:word:kanji-reading-e9a39f-04"]
-        },
-        {
-            "path": "audio/1c184fd3e4498834f79519dac3d4083a83a8d7923a7d25f14885bb6281b6c997.mp3",
-            "language": "ja",
-            "text": "いん",
-            "entries": ["ja:word:kanji-reading-e9a3b2-02"]
         },
         {
             "path": "audio/d213562fd9586adaf75e661f04eb55714bc6f3f72561fcb7d08bb842d0ffd7d3.mp3",
@@ -2430,16 +2436,16 @@
             "entries": ["ja:word:kanji-reading-e6b0b4-02"]
         },
         {
-            "path": "audio/36d53a9b6a2b3c44e68e7920c84018d2facec63b17b473a2400eb0e9064f9732.mp3",
-            "language": "ja",
-            "text": "ひと",
-            "entries": ["ja:word:kanji-reading-ja:kanji:hito-02"]
-        },
-        {
             "path": "audio/80227a88a4f14636e0ed3d04479ff290c58b6148a4de76ff0ee3b48cf13c5de9.mp3",
             "language": "ja",
             "text": "にん",
             "entries": ["ja:word:kanji-reading-ja:kanji:hito-05"]
+        },
+        {
+            "path": "audio/14eedc2ae04b69c58ec3c7ab74f139d4548398daf64c3c7943ea3e47a4de858f.mp3",
+            "language": "ja",
+            "text": "にち",
+            "entries": ["ja:word:kanji-reading-ja:kanji:nichi-01"]
         },
         {
             "path": "audio/8c02c8c2a51d8a4bc0e0b5226742faad69263e949e4f45553da7359eebbfc06a.mp3",
@@ -2466,5 +2472,12 @@
             "entries": ["ja:particle:made"]
         }
     ],
-    "voiceAttribution": "HTS Voice Mei, MMDAgent Project Team, Nagoya Institute of Technology; CC BY 3.0."
+    "voiceAttribution": "Kokoro multilingual model, hexgrad and contributors; Apache License 2.0.",
+    "processing": {
+        "voice": "jf_alpha",
+        "speed": 0.9,
+        "bitrate": "128k",
+        "leadInMs": 200,
+        "tailMs": 180
+    }
 }

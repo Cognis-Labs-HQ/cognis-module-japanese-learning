@@ -3,7 +3,7 @@
         "id": "ja:kanji:core-walk",
         "label": "歩",
         "fields": {
-            "pronunciation": ["ある", "あゆ", "ほ", "ぶ", "ふ"],
+            "pronunciation": ["ほ", "ぶ", "ふ", "あゆ", "ある"],
             "stroke_pattern": {
                 "coordinateSystem": "normalized",
                 "tolerance": 60,
@@ -314,7 +314,7 @@
                 "groups": [8],
                 "columns": 1
             },
-            "audio": "audio/19856aa6978cc5bcb03c9678b4f86aa7b9c4285af7abd215a830485ed8a86735.mp3"
+            "audio": "audio/220b36641070da3e093e9126e4d8d841e8b2e08c0364da28a17a332f8196941d.mp3"
         },
         "references": [
             {
@@ -325,20 +325,6 @@
         "class": "writing:kanji",
         "referenceGroups": {
             "readings": [
-                [
-                    {
-                        "entryId": "ja:word:kanji-reading-walk-01",
-                        "relation": "readings",
-                        "position": 0
-                    }
-                ],
-                [
-                    {
-                        "entryId": "ja:word:kanji-reading-walk-02",
-                        "relation": "readings",
-                        "position": 0
-                    }
-                ],
                 [
                     {
                         "entryId": "ja:word:kanji-reading-walk-03",
@@ -356,6 +342,20 @@
                 [
                     {
                         "entryId": "ja:word:kanji-reading-walk-05",
+                        "relation": "readings",
+                        "position": 0
+                    }
+                ],
+                [
+                    {
+                        "entryId": "ja:word:kanji-reading-walk-02",
+                        "relation": "readings",
+                        "position": 0
+                    }
+                ],
+                [
+                    {
+                        "entryId": "ja:word:kanji-reading-walk-01",
                         "relation": "readings",
                         "position": 0
                     }

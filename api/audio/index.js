@@ -1,3 +1,4 @@
+import { createReferenceAudioReader } from "./reference.js";
 import { readFile, stat } from "node:fs/promises";
 import path from "node:path";
 
@@ -14,10 +15,12 @@ export function speechText(input, voice) {
     if (voice.letterNames && input.semanticRole === "atomicWritingUnit")
         return input.label.toUpperCase();
     if (voice.useKanaReadings) {
-        const reading = input.readings?.find((value) =>
-            /^[\u3040-\u30ffー]+$/u.test(value),
-        );
-        if (reading) return reading;
+        const reading = input.readings?.[0];
+        if (
+            typeof reading === "string" &&
+            /^[\u3040-\u30ffー]+$/u.test(reading)
+        )
+            return reading;
     }
     return input.label;
 }
@@ -27,8 +30,12 @@ export function createAudioProvider({
     revision,
     audioRoot,
     recordings,
+    referenceAudioRoot,
     log,
 }) {
+    const referenceAudio = referenceAudioRoot
+        ? createReferenceAudioReader(referenceAudioRoot)
+        : undefined;
     return Object.freeze({
         id: `study-language-${voice.language}:audio`,
         revision,
@@ -57,7 +64,11 @@ export function createAudioProvider({
                             : candidate.text === text) &&
                         /^audio\/[a-f0-9]{64}\.mp3$/.test(candidate.path),
                 );
-                if (!recording) throw new Error("audio_not_found");
+                if (!recording) {
+                    if (referenceAudio)
+                        return await referenceAudio(text, signal);
+                    throw new Error("audio_not_found");
+                }
                 const asset = path.join(audioRoot, recording.path);
                 const metadata = await stat(asset);
                 if (!metadata.isFile() || metadata.size > 2_000_000)

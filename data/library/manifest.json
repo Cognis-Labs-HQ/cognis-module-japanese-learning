@@ -1,8 +1,8 @@
 {
     "id": "japanese-core",
     "publisher": "Cognis Labs HQ",
-    "version": "2.2.104",
-    "contentRevision": "2026-10-15.audio",
+    "version": "2.2.105",
+    "contentRevision": "2026-10-15.audio-quality-reference",
     "schema": "schema.json",
     "content": "content",
     "license": {
@@ -39,9 +39,9 @@
             }
         ],
         "audio": {
-            "source": "open-jtalk-mei",
-            "license": "CC-BY-3.0",
-            "attribution": "HTS Voice Mei; MMDAgent Project Team; Nagoya Institute of Technology; https://creativecommons.org/licenses/by/3.0/"
+            "source": "kokoro-multilingual",
+            "license": "Apache-2.0",
+            "attribution": "Kokoro multilingual model; hexgrad and contributors; https://huggingface.co/hexgrad/Kokoro-82M"
         }
     },
     "assets": "assets"

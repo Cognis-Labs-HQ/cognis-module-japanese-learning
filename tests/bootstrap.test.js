@@ -78,7 +78,11 @@ test("ingests the declarative pack through the host Library capability", async (
     assert.equal(response.ended, true);
     assert.deepEqual(
         providers.map(({ id }) => id),
-        ["study-language-ja:stroke-patterns", "study-language-ja:jisho"],
+        [
+            "study-language-ja:stroke-patterns",
+            "study-language-ja:jisho",
+            "study-language-ja:reference",
+        ],
     );
     assert.ok(
         providers.every(
@@ -106,7 +110,7 @@ test("ingests the declarative pack through the host Library capability", async (
         ),
     );
     dispose();
-    assert.equal(removed, 2);
+    assert.equal(removed, 3);
 });
 
 test("fails safely when the host Library capability is unavailable", async () => {
@@ -168,7 +172,7 @@ test("content ingestion failures remain activation-blocking", async () => {
 
     await assert.rejects(bootstrapModule(ctx), /content import failed/);
     assert.deepEqual(contributions, []);
-    assert.equal(removed, 2);
+    assert.equal(removed, 3);
     assert.equal(logs[0][0], "error");
     assert.equal(logs[0][2].operation, "bootstrap");
     assert.equal(logs[0][2].errorName, "Error");
@@ -256,7 +260,7 @@ test("failed capability publication or flow registration removes every lookup pr
             bootstrapModule(ctx),
             failure === "flow" ? /registration_failed/ : /publication_failed/,
         );
-        assert.equal(removed, 2);
+        assert.equal(removed, 3);
     }
 });
 

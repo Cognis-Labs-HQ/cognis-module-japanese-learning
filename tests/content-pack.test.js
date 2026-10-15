@@ -279,7 +279,10 @@ test("writing units and sentence particles follow the current Library contract",
     for (const layer of writingLayers) {
         const fields = new Map(layer.fields.map((field) => [field.id, field]));
         assert.equal(fields.get("pronunciation")?.type, "stringList");
-        assert.equal(fields.get("pronunciation")?.required, true);
+        assert.equal(
+            fields.get("pronunciation")?.required,
+            layer.id === "characters",
+        );
         assert.equal(fields.get("audio")?.type, "audio");
         assert.equal(fields.get("audio")?.required, false);
     }
@@ -979,21 +982,4 @@ test("only the Kana layer requests minimal cards", () => {
             .filter(({ id }) => id !== "characters")
             .every(({ minimal }) => minimal === undefined),
     );
-});
-
-test("compact Kana cards retain a visible romanized pronunciation", () => {
-    const { schema, records } = loadPack();
-    const characterLayer = schema.layers.find(
-        ({ semanticRole }) => semanticRole === "atomicWritingUnit",
-    );
-    assert.equal(characterLayer.minimal, true);
-    for (const character of records.filter(
-        ({ layer }) => layer === characterLayer.id,
-    )) {
-        const displayedPronunciations = character.fields.pronunciation.filter(
-            (pronunciation) => pronunciation !== character.label,
-        );
-        assert.equal(displayedPronunciations.length, 1, character.id);
-        assert.match(displayedPronunciations[0], /^[a-z]+$/u, character.id);
-    }
 });

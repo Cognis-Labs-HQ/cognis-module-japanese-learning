@@ -53,6 +53,30 @@ test("every seeded spoken card resolves a nonempty packaged MP3 while sentences 
     assert.ok(checked > 100);
 });
 
+test("Kanji recordings speak the first authored pronunciation", () => {
+    const inventory = JSON.parse(
+        readFileSync("data/audio/recordings.json", "utf8"),
+    ).recordings;
+    const directory = "data/library/content/alt-characters";
+    for (const file of readdirSync(directory).filter((name) =>
+        name.endsWith(".json"),
+    )) {
+        for (const entry of JSON.parse(
+            readFileSync(path.join(directory, file), "utf8"),
+        )) {
+            const recording = inventory.find(
+                (item) => item.path === entry.fields.audio,
+            );
+            assert.ok(recording, entry.id);
+            assert.equal(
+                recording.text,
+                entry.fields.pronunciation[0],
+                entry.label,
+            );
+        }
+    }
+});
+
 test("audio registrations roll back on activation failure and dispose across remounts", async () => {
     const active = new Set();
     let fail = true;
@@ -95,7 +119,7 @@ test("audio registrations roll back on activation failure and dispose across rem
     fail = false;
     for (let cycle = 0; cycle < 2; cycle++) {
         const dispose = await bootstrapModule(ctx);
-        assert.equal(active.size, 3);
+        assert.equal(active.size, 4);
         dispose();
         assert.equal(active.size, 0);
     }

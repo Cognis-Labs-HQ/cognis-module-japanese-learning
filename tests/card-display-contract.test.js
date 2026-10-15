@@ -145,3 +145,19 @@ test("Japanese sentence composition requires at least two word references", () =
         );
     }
 });
+
+test("compact Kana cards retain a visible romanized pronunciation", () => {
+    const characterLayer = schema.layers.find(
+        ({ semanticRole }) => semanticRole === "atomicWritingUnit",
+    );
+    assert.equal(characterLayer.minimal, true);
+    for (const character of records.filter(
+        ({ layer }) => layer === characterLayer.id,
+    )) {
+        const displayedPronunciations = character.fields.pronunciation.filter(
+            (pronunciation) => pronunciation !== character.label,
+        );
+        assert.equal(displayedPronunciations.length, 1, character.id);
+        assert.match(displayedPronunciations[0], /^[a-z]+$/u, character.id);
+    }
+});

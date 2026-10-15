@@ -55,7 +55,7 @@ test("writing cards publish normalized stroke practice patterns", () => {
         const layer = schema.layers.find(({ id }) => id === layerId);
         const field = layer.fields.find(({ id }) => id === "stroke_pattern");
         assert.equal(field.type, "strokePattern");
-        assert.equal(field.required, true);
+        assert.equal(field.required, layer.id === "characters");
         assert.equal(field.detail.renderer, "stroke");
         assert.equal(field.input.immutable, true);
         for (const record of loadLayer(layerId)) assertStrokePattern(record);

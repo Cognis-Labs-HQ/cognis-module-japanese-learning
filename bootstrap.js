@@ -1,3 +1,4 @@
+import { createReferenceProvider } from "./api/dictionary/reference.js";
 import { createAudioProvider } from "./api/audio/index.js";
 import { registerApi } from "./api/index.js";
 import { readFileSync } from "node:fs";
@@ -117,6 +118,12 @@ export async function bootstrapModule(ctx) {
                             "utf8",
                         ),
                     ).recordings,
+                    referenceAudioRoot: path.join(
+                        ctx.moduleRoot,
+                        "data",
+                        "audio",
+                        "reference",
+                    ),
                     revision: MODULE_MANIFEST.version,
                     log: ctx.log,
                 }),
@@ -136,6 +143,33 @@ export async function bootstrapModule(ctx) {
                 contentRoot: path.join(libraryRoot, "content"),
                 log: ctx.log,
             }),
+        );
+        const reference = JSON.parse(
+            readFileSync(
+                new URL("./data/reference/manifest.json", import.meta.url),
+                "utf8",
+            ),
+        );
+        providerRemovers.push(
+            library.registerLookupProvider(
+                createReferenceProvider({
+                    contentRoot: path.join(
+                        ctx.moduleRoot,
+                        "data",
+                        "library",
+                        "content",
+                    ),
+                    referenceRoot: path.join(
+                        ctx.moduleRoot,
+                        "data",
+                        "reference",
+                    ),
+                    cacheRevision: MODULE_MANIFEST.version,
+                    metadata: reference.metadata,
+                    source: reference.source,
+                    log: ctx.log,
+                }),
+            ),
         );
         receipt = await library.ingestContentPack(libraryRoot);
         ctx.contributePublicCapability("study:language:ja", LANGUAGE);

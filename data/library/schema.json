@@ -1,6 +1,6 @@
 {
     "id": "japanese-core",
-    "version": 92,
+    "version": 93,
     "namespace": "ja",
     "language": "ja",
     "metadata": {
@@ -389,6 +389,9 @@
                     "en": "Kanji",
                     "id": "Kanji",
                     "ja": "漢字"
+                },
+                "audio": {
+                    "requiresReading": true
                 }
             },
             "semanticRole": "compoundWritingUnit",
@@ -404,7 +407,7 @@
                         }
                     },
                     "type": "stringList",
-                    "required": true,
+                    "required": false,
                     "detail": {
                         "renderer": "text",
                         "order": 1
@@ -450,7 +453,7 @@
                         }
                     },
                     "type": "strokePattern",
-                    "required": true,
+                    "required": false,
                     "detail": {
                         "renderer": "stroke",
                         "order": 3
@@ -525,8 +528,8 @@
                             "ja": "定義"
                         }
                     },
-                    "minimum": 1,
-                    "requiredTarget": true,
+                    "minimum": 0,
+                    "requiredTarget": false,
                     "onDelete": "restrict"
                 }
             ],
@@ -1003,6 +1006,9 @@
                     "en": "Sentences",
                     "id": "Kalimat",
                     "ja": "文"
+                },
+                "audio": {
+                    "wordGapMs": 45
                 }
             },
             "semanticRole": "orderedLexicalSequence",
@@ -1079,6 +1085,30 @@
                     "input": {
                         "control": "tagList",
                         "linkRelationships": ["words", "particles"]
+                    }
+                },
+                {
+                    "id": "audio",
+                    "metadata": {
+                        "labels": {
+                            "de": "Audio",
+                            "en": "Audio",
+                            "id": "Audio",
+                            "ja": "音声"
+                        }
+                    },
+                    "type": "audio",
+                    "required": false,
+                    "detail": {
+                        "renderer": "media",
+                        "order": 2
+                    },
+                    "input": {
+                        "control": "audioFile",
+                        "file": {
+                            "namespace": "study-library-audio",
+                            "prefix": "ja/"
+                        }
                     }
                 }
             ],

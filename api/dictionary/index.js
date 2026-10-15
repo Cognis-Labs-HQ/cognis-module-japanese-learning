@@ -36,7 +36,7 @@ function providerMetadata() {
     };
 }
 
-async function loadNativeContent(contentRoot) {
+export async function loadNativeContent(contentRoot) {
     const layers = await readContentLayers(contentRoot, [
         ...SUPPORTED_LAYERS,
         "definitions",
@@ -271,7 +271,7 @@ function readingComposition(index, label, reading) {
         : { "reading-kana": [kanaReferences(index, reading, "reading-kana")] };
 }
 
-function jishoSuggestion(index, layer, label, data, query = label) {
+export function jishoSuggestion(index, layer, label, data, query = label) {
     const record = selectJishoRecord(data, label, layer === "words");
     if (!record) return null;
     const form = selectJapaneseForm(record, label);
