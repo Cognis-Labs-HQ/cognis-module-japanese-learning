@@ -138,6 +138,26 @@ Study menyediakan klasifikasi dan gaya pelafalan publik yang digunakan kembali o
 
 Instruksi AI melarang teks bahasa Inggris yang ditanam langsung untuk pengguna dalam setiap alur. Nilai yang tidak tersedia dalam bahasa pilihan dapat menggunakan kunci yang sama dari sumber daya XML bahasa Inggris. Nilai pengganti bahasa Inggris yang hilang atau kosong harus menimbulkan kegagalan eksplisit, bukan menampilkan teks Inggris literal, kunci mentah, atau teks kosong. Kesalahan terjemahan yang hilang tidak boleh disembunyikan.
 
+## Kembalikan graf kamus lengkap
+
+Kandidat Jisho tanpa rekonstruksi Kana lengkap ditolak. Anak bacaan Kanji menautkan definisi dalam graf impor yang sama; Kanji dan kosakata tanpa pemetaan mendapat kelas semantik.
+
+## Pertahankan bagian bacaan Kanji
+
+Notasi Kun bertitik mempertahankan bagian Kanji saja: `おし.える` menjadi `おし`, sementara notasi asli tetap dalam metadata tersembunyi.
+
+## Sampel kurva kuadratik halus
+
+Perintah SVG kuadratik halus mencerminkan titik kontrol kuadratik sebelumnya; riwayat kurva kubik dan kuadratik tetap terpisah.
+
+## Batasi permintaan goresan jarak jauh
+
+Pencarian goresan menerima paling banyak enam belas unit tulisan, berbagi satu tenggat lima belas detik untuk seluruh permintaan glif, dan membatalkan respons yang melebihi satu juta byte.
+
+## Struktur modul Study
+
+Paket konten berada di `data/library/`: manifes, skema, dan berkas kontennya membentuk satu batas impor dan penghapusan. Dek awal tetap di `data/starter-decks.json`. Penyedia runtime berada di `api/dictionary/` dan `api/strokes/`; pemuatan deterministik serta dekode respons dengan batas byte berada di `api/reuse/`. Pengujian konten dan siklus hidup lintas lapisan berada di `tests/`, sedangkan pengujian penyedia, transportasi, dan API berada di `api/tests/`. Manifes mendeklarasikan `api/routes/config/index.js` sebagai `disabledApi`; titik masuk itu hanya mendaftarkan rute DELETE konfigurasi khusus administrator tanpa mengimpor konten atau mengaktifkan penyedia. Pengenal alur yang telah dipublikasikan tetap stabil.
+
 ## Komit
 
 - [7d529da8](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/7d529da851a5301f3dd04ee4b1d71e17053248f9)

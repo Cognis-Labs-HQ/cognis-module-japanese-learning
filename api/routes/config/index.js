@@ -1,4 +1,4 @@
-export function registerConfigurationRoutes(ctx) {
+export function registerDisabledApiRoutes(ctx) {
     ctx.registerApiDelete(
         "/api/v1/modules/study-language-ja/config",
         (_request, response) => {

@@ -138,6 +138,26 @@ Study provides public pronunciation classification and styles reused by Library 
 
 AI instructions prohibit hardcoded English user-facing strings in every path. Missing preferred-language values may use the same keys from English XML resources; absent or empty English fallback values must fail explicitly instead of rendering literal English, raw keys, or blank text. Missing-translation errors must not be suppressed.
 
+## Return complete dictionary graphs
+
+Jisho candidates without a complete Kana reconstruction are rejected. Multi-reading Kanji children link directly to definition siblings in the same import graph, while Kanji and unmapped vocabulary receive semantic classes.
+
+## Preserve Kanji reading stems
+
+Dotted Kun notation retains only the Kanji stem: `おし.える` produces `おし`, while the original notation stays in hidden metadata.
+
+## Sample smooth quadratic curves
+
+Smooth quadratic SVG commands reflect the previous quadratic control point, and cubic/quadratic histories remain separate.
+
+## Bound remote stroke requests
+
+Stroke lookup accepts at most sixteen writing units, shares one fifteen-second deadline across the glyph requests, and cancels bodies exceeding one million bytes.
+
+## Study module layout
+
+The content pack lives in `data/library/`: its manifest, schema, and content shards form one ingestion and deletion boundary. Starter decks remain in `data/starter-decks.json`. Runtime providers live in `api/dictionary/` and `api/strokes/`; deterministic shard loading and byte-bounded response decoding live in `api/reuse/`. Cross-layer content and lifecycle tests live in `tests/`, while provider, transport, and API tests live in `api/tests/`. The manifest declares `api/routes/config/index.js` as `disabledApi`; that entrypoint registers only the administrator-only configuration DELETE route and does not ingest content or activate providers. Published flow identifiers remain stable.
+
 ## Commits
 
 - [7d529da8](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/7d529da851a5301f3dd04ee4b1d71e17053248f9)

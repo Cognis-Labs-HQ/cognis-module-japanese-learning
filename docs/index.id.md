@@ -200,7 +200,7 @@ Daftarkan satu penyedia pencarian Pustaka yang dapat dilepas melalui `study:libr
 
 ## Pengayaan komposer Jisho
 
-Jisho hanya boleh didaftarkan melalui kontrak generik `study:library:provider.registerLookupProvider` dan harus mengembalikan fungsi penghapus untuk pembersihan siklus hidup. Pencarian kartu harus selalu mendahulukan data asli. Rekaman Kana, Kanji, dan Kosakata bawaan yang cocok tepat mengembalikan bidang dan hubungan yang telah ditinjau tanpa akses jaringan. Jisho hanya diminta setelah data asli tidak ditemukan, dan tembolok promise terbatas menggabungkan permintaan bersamaan serta menggunakan ulang respons berhasil. Saran eksternal hanya boleh menghasilkan bidang yang dikenali skema dan referensi ke rekaman penyedia yang sudah ada; definisi atau tautan yang tidak tersedia harus dibiarkan kosong, bukan direka.
+Jisho hanya didaftarkan melalui `study:library:provider.registerLookupProvider` dan mengembalikan fungsi pembersihan siklus hidupnya. Pencarian Kana tetap lokal. Pencarian kata dan Kanji meminta hasil otoritatif Jisho meskipun ada kecocokan dalam paket; rekaman asli hanya dikembalikan jika pengambilan jaringan secara eksplisit tidak tersedia. Setiap panggilan penyedia membuat permintaan baru; Cognis mengatur kesegaran dan deduplikasi kueri. Saran eksternal harus menggunakan bidang sesuai skema, graf bacaan yang dapat direkonstruksi lengkap, serta definisi yang dapat ditelusuri, bukan tautan kosong atau rekaan.
 
 Titik masuk penyedia runtime tidak boleh mengimpor paket npm yang tidak diterapkan; pengambil sampel jalur SVG KanjiVG dimiliki modul dan disertakan dalam manifes.
 
@@ -323,3 +323,11 @@ Gunakan kapabilitas ctx publik dan alur yang dideklarasikan; jangan mengimpor ba
 Validasi paket memastikan titik masuk, ikon, banner, dan tangkapan layar berupa file reguler di dalam checkout, termasuk setelah resolusi jalur. Dokumentasi menjelaskan kontrak publik dan merujuk manifes untuk metadata rilis; changelog mempertahankan asal-usul rilis.
 
 Study menyediakan klasifikasi dan gaya pelafalan publik yang digunakan kembali oleh pratinjau Library, judul detail, varian, jawaban kartu, pilihan membaca, dan area gambar. IPA mempertahankan notasi aslinya; bacaan biasa mempertahankan tipografi aplikasi pilihan pengguna. Skema kalimat Jepang dan Inggris memerlukan sedikitnya dua referensi kata.
+
+## Struktur modul Study
+
+Paket konten berada di `data/library/`: manifes, skema, dan berkas kontennya membentuk satu batas impor dan penghapusan. Dek awal tetap di `data/starter-decks.json`. Penyedia runtime berada di `api/dictionary/` dan `api/strokes/`; pemuatan deterministik serta dekode respons dengan batas byte berada di `api/reuse/`. Pengujian konten dan siklus hidup lintas lapisan berada di `tests/`, sedangkan pengujian penyedia, transportasi, dan API berada di `api/tests/`. Manifes mendeklarasikan `api/routes/config/index.js` sebagai `disabledApi`; titik masuk itu hanya mendaftarkan rute DELETE konfigurasi khusus administrator tanpa mengimpor konten atau mengaktifkan penyedia. Pengenal alur yang telah dipublikasikan tetap stabil.
+
+## Graf kamus dan goresan yang lengkap
+
+Kandidat Jisho tanpa rekonstruksi Kana lengkap ditolak. Anak bacaan Kanji menautkan definisi dalam graf impor yang sama; Kanji dan kosakata tanpa pemetaan mendapat kelas semantik. Notasi Kun bertitik mempertahankan bagian Kanji saja: `おし.える` menjadi `おし`, sementara notasi asli tetap dalam metadata tersembunyi. Perintah SVG kuadratik halus mencerminkan titik kontrol kuadratik sebelumnya; riwayat kurva kubik dan kuadratik tetap terpisah. Pencarian goresan menerima paling banyak enam belas unit tulisan, berbagi satu tenggat lima belas detik untuk seluruh permintaan glif, dan membatalkan respons yang melebihi satu juta byte.

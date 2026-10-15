@@ -61,6 +61,7 @@ function pathPolyline(pathData) {
     let current = { x: 0, y: 0 };
     let start = { x: 0, y: 0 };
     let previousControl;
+    let previousCurve;
     while (tokenIndex < tokens.length) {
         if (/^[A-Za-z]$/.test(tokens[tokenIndex]))
             command = tokens[tokenIndex++];
@@ -74,6 +75,7 @@ function pathPolyline(pathData) {
             current = { ...start };
             previousControl = undefined;
             command = undefined;
+            previousCurve = undefined;
             continue;
         }
         if (tokenIndex + argumentCount > tokens.length)
@@ -94,7 +96,7 @@ function pathPolyline(pathData) {
             start = { ...current };
             points.push({ ...current });
             command = relative ? "l" : "L";
-        } else if (upper === "L" || upper === "T") {
+        } else if (upper === "L") {
             current = point(0, 1);
             points.push({ ...current });
         } else if (upper === "H") {
@@ -120,12 +122,13 @@ function pathPolyline(pathData) {
             current = end;
             previousControl = controlTwo;
         } else if (upper === "S") {
-            const controlOne = previousControl
-                ? {
-                      x: 2 * current.x - previousControl.x,
-                      y: 2 * current.y - previousControl.y,
-                  }
-                : { ...current };
+            const controlOne =
+                previousCurve === "cubic" && previousControl
+                    ? {
+                          x: 2 * current.x - previousControl.x,
+                          y: 2 * current.y - previousControl.y,
+                      }
+                    : { ...current };
             const controlTwo = point(0, 1);
             const end = point(2, 3);
             for (let step = 1; step <= 16; step += 1)
@@ -134,9 +137,17 @@ function pathPolyline(pathData) {
                 );
             current = end;
             previousControl = controlTwo;
-        } else if (upper === "Q") {
-            const control = point(0, 1);
-            const end = point(2, 3);
+        } else if (upper === "Q" || upper === "T") {
+            const control =
+                upper === "Q"
+                    ? point(0, 1)
+                    : previousCurve === "quadratic" && previousControl
+                      ? {
+                            x: 2 * current.x - previousControl.x,
+                            y: 2 * current.y - previousControl.y,
+                        }
+                      : { ...current };
+            const end = upper === "Q" ? point(2, 3) : point(0, 1);
             for (let step = 1; step <= 12; step += 1)
                 points.push(quadraticPoint(current, control, end, step / 12));
             current = end;
@@ -146,7 +157,12 @@ function pathPolyline(pathData) {
             points.push({ ...current });
             previousControl = undefined;
         }
-        if (!["C", "S", "Q"].includes(upper)) previousControl = undefined;
+        previousCurve = ["C", "S"].includes(upper)
+            ? "cubic"
+            : ["Q", "T"].includes(upper)
+              ? "quadratic"
+              : undefined;
+        if (!previousCurve) previousControl = undefined;
     }
     return points;
 }

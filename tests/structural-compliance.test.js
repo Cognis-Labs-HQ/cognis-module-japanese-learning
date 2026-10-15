@@ -101,7 +101,10 @@ test("manifest depends on the Study gateway and discovers Library by capability"
 test("declarative language navigation is owned by the Study gateway", () => {
     const manifest = JSON.parse(readFileSync(resolve(ROOT, "manifest.json")));
     const routes = JSON.parse(readFileSync(resolve(ROOT, "routes.json")));
-    assert.deepEqual(Object.keys(manifest.entrypoints), ["bootstrap"]);
+    assert.deepEqual(Object.keys(manifest.entrypoints), [
+        "bootstrap",
+        "disabledApi",
+    ]);
     assert.deepEqual(routes, []);
     assert.equal(manifest.capabilities.includes("ui:page"), false);
 });

@@ -200,7 +200,7 @@ Registriere über `study:library:provider` genau einen entfernbaren Library-Look
 
 ## Jisho-Anreicherung im Composer
 
-Jisho darf nur über den generischen Vertrag `study:library:provider.registerLookupProvider` registriert werden und muss seine Entfernen-Funktion für die Lebenszyklusbereinigung zurückgeben. Die Kartensuche muss den nativen Datenbestand bevorzugen. Exakte mitgelieferte Kana-, Kanji- und Vokabeleinträge liefern ihre geprüften Felder und Beziehungen ohne Netzwerkzugriff. Jisho wird erst nach einem nativen Fehltreffer abgefragt; ein begrenzter Promise-Cache fasst gleichzeitige Anfragen zusammen und verwendet erfolgreiche Antworten erneut. Externe Vorschläge dürfen nur schema-konforme Felder und Verweise auf vorhandene Anbietereinträge liefern; nicht verfügbare Definitionen oder Links bleiben leer, statt erfunden zu werden.
+Jisho wird ausschließlich über `study:library:provider.registerLookupProvider` registriert und liefert seine Lebenszyklus-Bereinigung zurück. Kana-Suchen bleiben lokal. Wort- und Kanji-Suchen fragen Jisho auch bei vorhandenen Pakettreffern ab; native Einträge werden nur zurückgegeben, wenn Netzwerkabrufe ausdrücklich nicht verfügbar sind. Jeder Anbieteraufruf stellt neue Anfragen; Cognis verwaltet Aktualität und Deduplizierung. Externe Vorschläge benötigen schemakonforme Felder, vollständig rekonstruierbare Lesungsgraphen und auflösbare Definitionen statt leerer oder erfundener Verweise.
 
 Laufzeit-Provider-Einstiegspunkte dürfen keine nicht bereitgestellten npm-Pakete importieren; der KanjiVG-SVG-Pfad-Sampler gehört zum Modul und ist im Manifest enthalten.
 
@@ -323,3 +323,11 @@ Neue Module beginnen mit [cognis-module-template](https://github.com/Cognis-Labs
 Die Paketprüfung stellt sicher, dass Einstiegspunkte, Icons, Banner und Screenshots reguläre Dateien innerhalb des Checkouts sind, auch nach Pfadauflösung. Die Dokumentation beschreibt öffentliche Verträge und verweist für Veröffentlichungsmetadaten auf Manifeste; Änderungsprotokolle behalten die Herkunft der Veröffentlichung.
 
 Study stellt öffentliche Ausspracheklassifizierung und Stile für Library-Vorschauen, Detailüberschriften, Varianten, Lernkartenantworten und Leseoptionen sowie den Zeichenbereich bereit. IPA behält seine ursprüngliche Notation; normale Lesungen behalten die gewählte App-Typografie. Japanische und englische Satzschemata verlangen mindestens zwei Wortverweise.
+
+## Aufbau der Study-Module
+
+Das Inhaltspaket liegt in `data/library/`: Manifest, Schema und Inhaltsdateien bilden eine gemeinsame Import- und Löschgrenze. Startdecks bleiben in `data/starter-decks.json`. Laufzeitanbieter liegen in `api/dictionary/` und `api/strokes/`; deterministisches Laden und bytebegrenztes Dekodieren von Antworten liegen in `api/reuse/`. Übergreifende Inhalts- und Lebenszyklustests liegen in `tests/`, Anbieter-, Transport- und API-Tests in `api/tests/`. Das Manifest deklariert `api/routes/config/index.js` als `disabledApi`; dieser Einstiegspunkt registriert nur die administrative DELETE-Konfigurationsroute und aktiviert weder Inhalte noch Anbieter. Veröffentlichte Ablaufkennungen bleiben stabil.
+
+## Vollständige Wörterbuch- und Schriftgraphen
+
+Jisho-Kandidaten ohne vollständige Kana-Rekonstruktion werden abgelehnt. Kanji-Lesungen verweisen direkt auf Definitionen desselben Importgraphen; Kanji und nicht zugeordnete Wörter erhalten semantische Klassen. Bei Kun-Lesungen mit Punkt bleibt nur der Kanji-Stamm: `おし.える` ergibt `おし`; die Originalnotation bleibt in versteckten Metadaten. Glatte quadratische SVG-Befehle spiegeln den vorherigen quadratischen Kontrollpunkt; kubische und quadratische Verläufe bleiben getrennt. Strichmustersuchen akzeptieren höchstens sechzehn Schreibeinheiten, teilen eine Frist von fünfzehn Sekunden zwischen den Glyphenanfragen und brechen Antworten über einer Million Bytes ab.

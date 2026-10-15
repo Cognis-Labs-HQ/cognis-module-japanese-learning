@@ -70,7 +70,9 @@ export function parseJishoKanji(html, label) {
         japanese: [
             ...new Set(
                 [...readings.kun, ...readings.on].map((reading) =>
-                    katakanaToHiragana(reading.replace(/[.\-]/gu, "")),
+                    katakanaToHiragana(
+                        reading.split(".", 1)[0].replace(/-/gu, ""),
+                    ),
                 ),
             ),
         ].map((reading) => ({ word: label, reading })),

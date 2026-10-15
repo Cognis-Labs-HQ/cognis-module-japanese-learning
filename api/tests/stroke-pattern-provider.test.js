@@ -80,12 +80,9 @@ test("stroke provider fetches any unpackaged Japanese writing unit", async () =>
         sourceBaseUrl: "https://stroke.test/kanji",
         async fetchImplementation(url, options) {
             requests.push({ url, options });
-            return {
-                ok: true,
-                async text() {
-                    return '<svg><path d="M10 10 C20 20 30 30 40 40"/></svg>';
-                },
-            };
+            return new Response(
+                '<svg><path d="M10 10 C20 20 30 30 40 40"/></svg>',
+            );
         },
     });
     const [suggestion] = await provider.lookup({
@@ -108,12 +105,9 @@ test("remote multi-character patterns preserve drawing columns and groups", asyn
     const provider = createStrokePatternProvider({
         contentRoot,
         async fetchImplementation() {
-            return {
-                ok: true,
-                async text() {
-                    return '<svg><path d="M10 10 C20 20 30 30 40 40"/></svg>';
-                },
-            };
+            return new Response(
+                '<svg><path d="M10 10 C20 20 30 30 40 40"/></svg>',
+            );
         },
     });
     const [suggestion] = await provider.lookup({
@@ -195,4 +189,24 @@ test("remote stroke lookup bounds storage and retries expired missing assets", a
     await lookup("鯨");
     await lookup("龍");
     assert.equal(requests.length, 4);
+});
+
+test("oversized writing labels are rejected before fetching and all glyph requests share one deadline", async () => {
+    const signals = [];
+    const provider = createStrokePatternProvider({
+        contentRoot,
+        fetchImplementation: async (_url, { signal }) => {
+            signals.push(signal);
+            return new Response('<svg><path d="M0 0 L10 10"/></svg>');
+        },
+    });
+    for (const label of ["龍".repeat(17), "龍".repeat(5000)])
+        assert.deepEqual(
+            await provider.lookup({ layer: KanjiLayer, label }),
+            [],
+        );
+    assert.equal(signals.length, 0);
+    await provider.lookup({ layer: KanjiLayer, label: "龍龜" });
+    assert.equal(signals.length, 2);
+    assert.equal(signals[0], signals[1]);
 });

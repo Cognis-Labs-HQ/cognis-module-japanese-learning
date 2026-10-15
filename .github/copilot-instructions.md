@@ -124,6 +124,8 @@ Treat ctx as the backbone of every supported server and browser action. Extend d
 
 ## Module-specific requirements
 
+Both Study modules keep library manifests, schemas, and content under `data/library/`, starter decks in `data/starter-decks.json`, cross-layer lifecycle/content tests in `tests/`, and API tests in `api/tests/`. Keep request transport in `api/dictionary/request.js`, byte-bounded response decoding in `api/reuse/response.js`, and disabled-safe configuration registration in the manifest-declared `api/routes/config/index.js` entrypoint. Preserve each module’s published flow identifiers rather than forcing them to match.
+
 Template guidance baseline: [d71b980](https://github.com/Cognis-Labs-HQ/cognis-module-template/blob/d71b98077d8d7af087b44009dafc2d736f86b617/.github/copilot-instructions.md).
 
 ### Library relationship authoring

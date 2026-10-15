@@ -305,6 +305,13 @@ function jishoSuggestion(index, layer, label, data, query = label) {
             return !hiragana.has(normalized);
         });
     }
+    if (
+        !readings.length ||
+        readings.some(
+            (reading) => !kanaReferences(index, reading, "reading-kana").length,
+        )
+    )
+        return null;
     const fields = {};
     if (layer === "characters") {
         fields.character_class = /\p{Script=Katakana}/u.test(label)
@@ -332,16 +339,18 @@ function jishoSuggestion(index, layer, label, data, query = label) {
                       ),
                   )
                   .filter((references) => references.length);
-    const definitions = record.senses.flatMap((sense, position) =>
-        (sense.english_definitions ?? [])
-            .flatMap((value) => value.split(/[;；]/u))
-            .map((value) => value.trim())
-            .filter(Boolean)
-            .map((meaning, index) => ({
-                translations: { en: meaning },
-                provenance: `jisho:${record.slug || encodeURIComponent(label)}:sense:${position}:${index}`,
-            })),
-    );
+    const definitions = record.senses
+        .flatMap((sense, position) =>
+            (sense.english_definitions ?? [])
+                .flatMap((value) => value.split(/[;；]/u))
+                .map((value) => value.trim())
+                .filter(Boolean)
+                .map((meaning, index) => ({
+                    translations: { en: meaning },
+                    provenance: `jisho:${record.slug || encodeURIComponent(label)}:sense:${position}:${index}`,
+                })),
+        )
+        .slice(0, 10);
     const partsOfSpeech = record.senses.flatMap(
         (sense) => sense.parts_of_speech ?? [],
     );
@@ -354,6 +363,8 @@ function jishoSuggestion(index, layer, label, data, query = label) {
         "conjunction",
         "interjection",
         "noun",
+        "suffix",
+        "prefix",
         "expression",
     ].find((value) =>
         partsOfSpeech.some((part) =>
@@ -452,6 +463,58 @@ function jishoSuggestion(index, layer, label, data, query = label) {
               },
           }))
         : [];
+    if (layer === "alt-characters" && linkedEntries.length) {
+        const meaningReferences = [];
+        const definitionEntries = [];
+        definitions.forEach((definition, position) => {
+            const existing = index.layers.get("definitions").find(
+                (entry) =>
+                    String(entry.fields?.translations?.en ?? entry.label)
+                        .trim()
+                        .toLowerCase() ===
+                    definition.translations.en.toLowerCase(),
+            );
+            if (existing) {
+                if (!references.some(({ entryId }) => entryId === existing.id))
+                    meaningReferences.push({
+                        entryId: existing.id,
+                        relation: "definitions",
+                    });
+                return;
+            }
+            const key = `lookup-definition:${position}`;
+            meaningReferences.push({ entryId: key, relation: "definitions" });
+            definitionEntries.push({
+                key,
+                entry: {
+                    schemaId: SCHEMA_ID,
+                    layer: "definitions",
+                    label: definition.translations.en.slice(0, 500),
+                    class: "definition",
+                    hidden: true,
+                    fields: {
+                        translations: structuredClone(definition.translations),
+                    },
+                },
+            });
+        });
+        if (
+            !meaningReferences.length &&
+            !references.some(({ relation }) => relation === "definitions")
+        )
+            return null;
+        for (const { entry } of linkedEntries)
+            entry.references.push(
+                ...cloneReferences(
+                    references.filter(
+                        ({ relation }) => relation === "definitions",
+                    ),
+                ),
+                ...cloneReferences(meaningReferences),
+            );
+        references.push(...meaningReferences);
+        linkedEntries.push(...definitionEntries);
+    }
     const readingRelationship =
         layer === "words" ? "pronunciation-readings" : "readings";
     return {
@@ -460,9 +523,12 @@ function jishoSuggestion(index, layer, label, data, query = label) {
         fields,
         references,
         ...(prerequisites.length ? { prerequisites } : {}),
-        ...(layer === "words" && lexicalClass
-            ? { class: `lexical:${lexicalClass}` }
-            : {}),
+        class:
+            layer === "alt-characters"
+                ? "writing:kanji"
+                : layer === "characters"
+                  ? "writing:kana"
+                  : `lexical:${lexicalClass ?? "expression"}`,
         tags: [
             ...new Set([
                 ...(record.tags ?? []),
@@ -481,13 +547,15 @@ function jishoSuggestion(index, layer, label, data, query = label) {
             ? {
                   linkedEntries,
                   referenceGroups: {
-                      [readingRelationship]: linkedEntries.map(({ key }) => [
-                          {
-                              entryId: key,
-                              relation: readingRelationship,
-                              position: 0,
-                          },
-                      ]),
+                      [readingRelationship]: linkedEntries
+                          .filter(({ entry }) => entry.layer === "words")
+                          .map(({ key }) => [
+                              {
+                                  entryId: key,
+                                  relation: readingRelationship,
+                                  position: 0,
+                              },
+                          ]),
                   },
               }
             : pronunciationGroups.length

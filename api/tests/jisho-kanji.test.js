@@ -15,8 +15,8 @@ const html = `<h1 class="character" lang="ja">教</h1>
 test("Kanji pages preserve Kun and On readings, meanings, and original notation", () => {
     const record = parseJishoKanji(html, "教");
     assert.deepEqual(record.japanese, [
-        { word: "教", reading: "おしえる" },
-        { word: "教", reading: "おそわる" },
+        { word: "教", reading: "おし" },
+        { word: "教", reading: "おそ" },
         { word: "教", reading: "きょう" },
     ]);
     assert.deepEqual(record.senses[0].english_definitions, [

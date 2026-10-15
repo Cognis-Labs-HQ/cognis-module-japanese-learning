@@ -328,14 +328,9 @@ test("Jisho provider never emits a partial Kana pronunciation group", async () =
             };
         },
     });
-    const [suggestion] = await provider.lookup({
-        schema,
-        layer: wordLayer,
-        label: "コーヒー",
-    });
     assert.deepEqual(
-        suggestion.linkedEntries[0].entry.referenceGroups["reading-kana"],
-        [[]],
+        await provider.lookup({ schema, layer: wordLayer, label: "コーヒー" }),
+        [],
     );
 });
 
@@ -446,7 +441,7 @@ test("Kanji lookup uses its dedicated Jisho entry when no standalone word exists
         label: "鋭",
     });
     assert.equal(suggestion.label, "鋭");
-    assert.deepEqual(suggestion.fields.pronunciation, ["するどい"]);
+    assert.deepEqual(suggestion.fields.pronunciation, ["するど"]);
     assert.equal(suggestion.definitions[0].translations.en, "meaning");
     assert.equal(urls[0], "https://jisho.org/search/%E9%8B%AD%20%23kanji");
     assert.deepEqual(
@@ -486,7 +481,7 @@ test("Kanji and word requests identify Cognis to upstream servers", async () => 
     });
     const [kanji] = await provider.lookup({ layer: kanjiLayer, label: "教" });
     assert.equal(kanji.label, "教");
-    assert.deepEqual(kanji.fields.pronunciation, ["おしえる"]);
+    assert.deepEqual(kanji.fields.pronunciation, ["おし"]);
     const [word] = await provider.lookup({ layer: wordLayer, label: "猫又" });
     assert.equal(word.label, "猫又");
     assert.deepEqual(accepts, [
@@ -730,7 +725,7 @@ test("greeting searches prefer exact dictionary meanings over Wikipedia title ma
     assert.equal(results[0].linkedEntries.length, 2);
 });
 
-test("exact readings outrank related dictionary matches and missing readings stay empty", async () => {
+test("exact readings outrank related matches and incomplete reading graphs are rejected", async () => {
     const payload = jishoResponse();
     payload.data.push({
         slug: "猫",
@@ -753,8 +748,7 @@ test("exact readings outrank related dictionary matches and missing readings sta
     });
     const results = await provider.lookup({ layer: wordLayer, label: "ねこ" });
     assert.ok(results[1].confidence > results[0].confidence);
-    assert.deepEqual(results[2].fields.pronunciation, []);
-    assert.equal(results[2].definitions[0].translations.en, "cat name");
+    assert.equal(results.length, 2);
 });
 
 test("dictionary reading cards preserve genuine Katakana and filter redundant query echoes", async () => {

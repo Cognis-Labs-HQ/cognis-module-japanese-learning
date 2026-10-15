@@ -200,7 +200,7 @@ Register one removable Library lookup provider through `study:library:provider`.
 
 ## Jisho composer enrichment
 
-Jisho must register only through the generic `study:library:provider.registerLookupProvider` contract and return its remover for lifecycle cleanup. Card lookup must remain native-first. Exact packaged Kana, Kanji, and Vocabulary records return their reviewed fields and relationships without network access. Jisho is queried only after a native miss, and a bounded promise cache coalesces concurrent requests and reuses successful responses. External suggestions may emit only schema-recognized fields and references to existing provider records; unavailable definitions or links must remain unset rather than being fabricated.
+Jisho must register only through `study:library:provider.registerLookupProvider` and return its lifecycle remover. Kana lookup stays local. Word and Kanji lookups query authoritative Jisho results even when packaged matches exist; native records are returned only when network fetching is explicitly unavailable. Each provider call makes fresh requests; Cognis owns query freshness and deduplication. External suggestions must use schema-recognized fields, complete reconstructable reading graphs, and resolvable definitions rather than empty or fabricated links.
 
 Runtime provider entrypoints must not import undeployed npm packages; the KanjiVG SVG path sampler is module-owned and packaged in the manifest.
 
@@ -323,3 +323,11 @@ Consume public ctx capabilities and declared flows; do not import Cognis interna
 Package validation checks that entrypoints, icons, banners and screenshots are regular files inside the checkout, including resolved paths. Documentation describes public contracts and refers to manifests for release metadata; changelogs retain release provenance.
 
 Study provides public pronunciation classification and styles reused by Library previews, detail headings, variants, flashcard answers and reading choices, and the drawing pad. IPA keeps its authored notation; ordinary readings keep the selected app typography. Both Japanese and English sentence schemas require at least two word references.
+
+## Study module layout
+
+The content pack lives in `data/library/`: its manifest, schema, and content shards form one ingestion and deletion boundary. Starter decks remain in `data/starter-decks.json`. Runtime providers live in `api/dictionary/` and `api/strokes/`; deterministic shard loading and byte-bounded response decoding live in `api/reuse/`. Cross-layer content and lifecycle tests live in `tests/`, while provider, transport, and API tests live in `api/tests/`. The manifest declares `api/routes/config/index.js` as `disabledApi`; that entrypoint registers only the administrator-only configuration DELETE route and does not ingest content or activate providers. Published flow identifiers remain stable.
+
+## Complete dictionary and stroke graphs
+
+Jisho candidates without a complete Kana reconstruction are rejected. Multi-reading Kanji children link directly to definition siblings in the same import graph, while Kanji and unmapped vocabulary receive semantic classes. Dotted Kun notation retains only the Kanji stem: `おし.える` produces `おし`, while the original notation stays in hidden metadata. Smooth quadratic SVG commands reflect the previous quadratic control point, and cubic/quadratic histories remain separate. Stroke lookup accepts at most sixteen writing units, shares one fifteen-second deadline across the glyph requests, and cancels bodies exceeding one million bytes.

@@ -2,11 +2,14 @@
     "id": "study-language-ja",
     "uuid": "e905927f-b133-572a-92ce-2ea8645e5ceb",
     "name": "module.study.language.ja.name",
-    "version": "2.2.108",
+    "version": "2.2.109",
     "class": "extension",
     "coreApiVersion": "v1",
     "capabilities": ["study:language:ja"],
-    "entrypoints": { "bootstrap": "./bootstrap.js" },
+    "entrypoints": {
+        "bootstrap": "./bootstrap.js",
+        "disabledApi": "./api/routes/config/index.js"
+    },
     "ui": { "stringsBaseUrl": "/static/modules/study-language-ja/languages" },
     "publisher": "Cognis Labs HQ",
     "requires": ["338b9237-a2c8-5bcf-9437-bccc9abd9a27"],
@@ -51,7 +54,7 @@
         },
         {
             "path": ".github/copilot-instructions.md",
-            "sha256": "e300ef7d03c91bfd69537c926efb72250b432e7e7b72c1ab80d0f59dc8b2d080"
+            "sha256": "eb4452134147dc66902fc2ef2b46c65360d545c2a94bfd8bab88fdbb4a5d62ab"
         },
         {
             "path": ".gitignore",
@@ -91,11 +94,11 @@
         },
         {
             "path": "api/dictionary/index.js",
-            "sha256": "bbb946671792402fac04ecb5236afeaabcf49be56e29917c99b6b0c3e1ccb263"
+            "sha256": "eeb149ddeee9f004c4e64a1b939a5233c9b60d96bc18f92fc03789106269e9df"
         },
         {
             "path": "api/dictionary/kanji.js",
-            "sha256": "19b19765b49f7162ae5676d7eab0a58e57f38fa164fb40c33fcc7f4b4008af48"
+            "sha256": "de704cce5ef0defb0b57e33b35f5d5f34393de0510835014a46c6c45b58c08fc"
         },
         {
             "path": "api/dictionary/request.js",
@@ -103,7 +106,7 @@
         },
         {
             "path": "api/index.js",
-            "sha256": "bd33e9008c525195d4d7a0ae34831e3d4bb093105fe26c670bc9b60308f49345"
+            "sha256": "9c7655b1ccab8b70436db041e1e9631ab8cb0b59d2f3e7df0917a079890194d7"
         },
         {
             "path": "api/reuse/content.js",
@@ -118,24 +121,36 @@
             "sha256": "2cbc3fb0d8596cf1f91dbcd8393fdf575189b2e7d5cfedb08b4093ab8ead2b90"
         },
         {
+            "path": "api/reuse/response.js",
+            "sha256": "d88fe43dcb2d188e759c84859262e3295034c5b96e1f713d0ef48a980fa97159"
+        },
+        {
             "path": "api/routes/config/index.js",
-            "sha256": "80a916457ec12c05e126c1e07d9c4a4a18c9db9fd8f16175775ec79b746f9626"
+            "sha256": "2c36fbd4c3c3591a799516a22c053fd4a6c1769796cd212bb84dab747ec36bee"
         },
         {
             "path": "api/strokes/index.js",
-            "sha256": "8dc71370ce762acda1bbfb80775e2ac5748caaa4864b3cf0b4c474b60cbe94d0"
+            "sha256": "22d3cfc0f2361bf38e1bf834af98e99582fcc3c4c68e2f20c4da55422b053e89"
         },
         {
             "path": "api/strokes/path-sampler.js",
-            "sha256": "41d0ba55022c18befaf1691cf20a5faa8bfd124b5685b746b50e795035524616"
+            "sha256": "ca037ec70d11bae142b0d30551bd607bf37b5575778f06d65b2e908f503351e2"
+        },
+        {
+            "path": "api/tests/config-routes.test.js",
+            "sha256": "a31de549b763363a60097f8231a383071cb139fb32d44300afc29005f91f52c9"
+        },
+        {
+            "path": "api/tests/dictionary-graph.test.js",
+            "sha256": "49e382b09a3ae19a657754121f537dc82befb19f82d05ae0857f858a723e9260"
         },
         {
             "path": "api/tests/jisho-kanji.test.js",
-            "sha256": "7057fb3eba0547f4863cc37e7cb41b4408ec6ffb7323cbb806f9ef48586e160d"
+            "sha256": "5a496ec5ece72444f5a4a139935af3d708f7940b70500161af4a4b775b0fbe11"
         },
         {
             "path": "api/tests/jisho-lookup-provider.test.js",
-            "sha256": "e0be278285dab0939abdb11478521a686a1aed663e642060a1b1c2270a36e094"
+            "sha256": "02bae956333007d38349926886d1393d6feda34e97af40656eb88b837b57c760"
         },
         {
             "path": "api/tests/lookup-cache.test.js",
@@ -150,12 +165,16 @@
             "sha256": "45cd21b2b31873c1831e52e3a1cfe97c5e52318bd99cb18ded73d21c9c74c83b"
         },
         {
+            "path": "api/tests/response.test.js",
+            "sha256": "ec8a5475f75addc9a0e1d8262efdd2d3bc7065dfc4b1e2118eb13f79f9253e01"
+        },
+        {
             "path": "api/tests/stroke-pattern-provider.test.js",
-            "sha256": "ed8772ae9004f9306df761de715dbe354eb3e73408dca3fae9b65e1dc285bf71"
+            "sha256": "e7c55ca43500a0bed217d5054009c1bf3f9fe10b26a4571600540c7ed8bf53e8"
         },
         {
             "path": "api/tests/svg-path-sampler.test.js",
-            "sha256": "2f257cad4c8522c55572819c056781a4e723cbe6ed35d53fd47a9da990d14930"
+            "sha256": "a1a546ab2bf4865a349f6b5b35f1fd4ea4db53a1b6a30ca64da025501da2eff8"
         },
         {
             "path": "assets/banner.png",
@@ -735,19 +754,19 @@
         },
         {
             "path": "docs/index.de.md",
-            "sha256": "bb21edeef5b1aaeeea9e289e60626e3b31206ad822867ca627164e157c4396a6"
+            "sha256": "7d473f40dacb3a94bf0089e691bc9c0a8b2ea0fad36b266542000ca1224e5d8d"
         },
         {
             "path": "docs/index.en.md",
-            "sha256": "335d22b7952b2879e8c44c186fe14378bdf0f9e2c472c006d104d69ae2fa0860"
+            "sha256": "62d2b273d3521a44abdac655179374792e1b3c958e76c9e1b8a4dc86ef2e54bf"
         },
         {
             "path": "docs/index.id.md",
-            "sha256": "ca7537740b7c08b18a8b9582e8853745cbef03b19836442e081a2675aa67ef0d"
+            "sha256": "0d4ff026e0ba242443ebfce64278a0e980a03b03be00834e87efe648f009918f"
         },
         {
             "path": "docs/index.ja.md",
-            "sha256": "d549ce472b9ed68b9d61d66c663da39c026d881945835879432819affb0f3f00"
+            "sha256": "47e1a7d09e924fc767d2027acdf7d3a0bcd277738ffcd2ee3e44d38d28391199"
         },
         {
             "path": "docs/jisho.de.md",
@@ -767,11 +786,11 @@
         },
         {
             "path": "package-lock.json",
-            "sha256": "4a9d3b98c6c54a8b46dcf01030b5c159ed7b935bb1bb0e9ffac66ee753e0ca65"
+            "sha256": "014639dce986c05cc12dc2c695babf7e199ce25f7532a77455d8d59420ef85cf"
         },
         {
             "path": "package.json",
-            "sha256": "a05183faf50f5a418d3c208daa4aba2317aadab2d6549eba029d52ff629fc647"
+            "sha256": "6631420f3047c4f5dcd8f21c89f98b8bf79b79bd8c4a1b1782690467db5b0dbf"
         },
         {
             "path": "routes.json",
@@ -863,7 +882,7 @@
         },
         {
             "path": "tests/structural-compliance.test.js",
-            "sha256": "5a5028adebd0dfa983f4765af50b87ef7fc370570aa1a15e40bfd90a128d557f"
+            "sha256": "c6eee497e286661ce1e84d61d0cd6b438ac4d570002bf934b9b2c808621e7632"
         },
         {
             "path": "tests/uninstall.test.js",

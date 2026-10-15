@@ -42,3 +42,18 @@ test("runtime provider has no production package dependency", async () => {
     );
     assert.equal(packageMetadata.dependencies, undefined);
 });
+
+test("absolute and repeated relative smooth quadratics reflect only quadratic control points", () => {
+    assert.deepEqual(
+        sampleSvgPath("M0 0 Q20 40 40 0 T80 0 t40 0"),
+        sampleSvgPath("M0 0 Q20 40 40 0 Q60 -40 80 0 Q100 40 120 0"),
+    );
+    assert.deepEqual(
+        sampleSvgPath("M0 0 Q20 40 40 0 L50 0 T80 0"),
+        sampleSvgPath("M0 0 Q20 40 40 0 L50 0 Q50 0 80 0"),
+    );
+    assert.deepEqual(
+        sampleSvgPath("M0 0 Q20 40 40 0 S60 40 80 0"),
+        sampleSvgPath("M0 0 Q20 40 40 0 C40 0 60 40 80 0"),
+    );
+});

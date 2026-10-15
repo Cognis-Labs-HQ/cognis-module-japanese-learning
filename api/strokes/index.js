@@ -1,9 +1,11 @@
+import { readBoundedText } from "../reuse/response.js";
 import { readContentLayers } from "../reuse/content.js";
 import { createLookupCache } from "../reuse/lookup-cache.js";
 import { sampleSvgPath } from "./path-sampler.js";
 
 const PROVIDER_ID = "study-language-ja:stroke-patterns";
 const SCHEMA_ID = "japanese-core";
+const MAX_WRITING_UNITS = 16;
 const SUPPORTED_LAYERS = new Set(["characters", "alt-characters"]);
 const JAPANESE_WRITING_PATTERN =
     /^[\p{Script=Han}\p{Script=Hiragana}\p{Script=Katakana}々〆ヶ]+$/u;
@@ -33,6 +35,7 @@ function patternFromSvg(svg, characterIndex, characterCount) {
 
 async function fetchPattern(label, fetchImplementation, sourceBaseUrl) {
     const characters = [...label];
+    const signal = AbortSignal.timeout(15000);
     const strokes = [];
     const groups = [];
     const sourceUrls = [];
@@ -44,14 +47,13 @@ async function fetchPattern(label, fetchImplementation, sourceBaseUrl) {
         const sourceUrl = `${sourceBaseUrl}/${codePoint}.svg`;
         const response = await fetchImplementation(sourceUrl, {
             headers: { accept: "image/svg+xml" },
-            signal: AbortSignal.timeout(15000),
+            signal,
         });
         if (!response.ok) {
             if (response.status === 404) return null;
             throw new Error("stroke_source_request_failed");
         }
-        const svg = await response.text();
-        if (svg.length > 1_000_000) throw new Error("stroke_source_too_large");
+        const svg = await readBoundedText(response);
         const characterStrokes = patternFromSvg(
             svg,
             characterIndex,
@@ -144,7 +146,12 @@ export function createStrokePatternProvider({
             const normalizedLabel = String(label ?? "")
                 .trim()
                 .normalize();
-            if (!normalizedLabel || !SUPPORTED_LAYERS.has(layer?.id)) return [];
+            if (
+                !normalizedLabel ||
+                [...normalizedLabel].length > MAX_WRITING_UNITS ||
+                !SUPPORTED_LAYERS.has(layer?.id)
+            )
+                return [];
             const packagedResult = (await patterns()).get(
                 `${layer.id}\u0000${normalizedLabel}`,
             );

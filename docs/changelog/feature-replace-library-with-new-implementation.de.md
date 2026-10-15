@@ -138,6 +138,26 @@ Study stellt öffentliche Ausspracheklassifizierung und Stile für Library-Vorsc
 
 Die KI-Anweisungen verbieten fest kodierte englische Benutzertexte in allen Abläufen. Fehlende Werte der bevorzugten Sprache dürfen dieselben Schlüssel der englischen XML-Ressourcen verwenden. Fehlende oder leere englische Ersatzwerte müssen ausdrücklich einen Fehler auslösen, statt englische Literale, rohe Schlüssel oder leeren Text anzuzeigen. Fehler wegen fehlender Übersetzungen dürfen nicht unterdrückt werden.
 
+## Vollständige Wörterbuchgraphen liefern
+
+Jisho-Kandidaten ohne vollständige Kana-Rekonstruktion werden abgelehnt. Kanji-Lesungen verweisen direkt auf Definitionen desselben Importgraphen; Kanji und nicht zugeordnete Wörter erhalten semantische Klassen.
+
+## Kanji-Lesungsstämme erhalten
+
+Bei Kun-Lesungen mit Punkt bleibt nur der Kanji-Stamm: `おし.える` ergibt `おし`; die Originalnotation bleibt in versteckten Metadaten.
+
+## Glatte quadratische Kurven abtasten
+
+Glatte quadratische SVG-Befehle spiegeln den vorherigen quadratischen Kontrollpunkt; kubische und quadratische Verläufe bleiben getrennt.
+
+## Entfernte Strichanfragen begrenzen
+
+Strichmustersuchen akzeptieren höchstens sechzehn Schreibeinheiten, teilen eine Frist von fünfzehn Sekunden zwischen den Glyphenanfragen und brechen Antworten über einer Million Bytes ab.
+
+## Aufbau der Study-Module
+
+Das Inhaltspaket liegt in `data/library/`: Manifest, Schema und Inhaltsdateien bilden eine gemeinsame Import- und Löschgrenze. Startdecks bleiben in `data/starter-decks.json`. Laufzeitanbieter liegen in `api/dictionary/` und `api/strokes/`; deterministisches Laden und bytebegrenztes Dekodieren von Antworten liegen in `api/reuse/`. Übergreifende Inhalts- und Lebenszyklustests liegen in `tests/`, Anbieter-, Transport- und API-Tests in `api/tests/`. Das Manifest deklariert `api/routes/config/index.js` als `disabledApi`; dieser Einstiegspunkt registriert nur die administrative DELETE-Konfigurationsroute und aktiviert weder Inhalte noch Anbieter. Veröffentlichte Ablaufkennungen bleiben stabil.
+
 ## Commits
 
 - [7d529da8](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/7d529da851a5301f3dd04ee4b1d71e17053248f9)
