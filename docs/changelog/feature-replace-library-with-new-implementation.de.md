@@ -134,6 +134,10 @@ Verwenden Sie kurze Aktionszusammenfassungen und konkrete Funktionsbeschreibunge
 
 Study stellt öffentliche Ausspracheklassifizierung und Stile für Library-Vorschauen, Detailüberschriften, Varianten, Lernkartenantworten und Leseoptionen sowie den Zeichenbereich bereit. IPA behält seine ursprüngliche Notation; normale Lesungen behalten die gewählte App-Typografie. Japanische und englische Satzschemata verlangen mindestens zwei Wortverweise.
 
+## Sprachschlüssel ohne wörtliche Ersatztexte verlangen
+
+Die KI-Anweisungen verbieten fest kodierte englische Benutzertexte in allen Abläufen. Fehlende Werte der bevorzugten Sprache dürfen dieselben Schlüssel der englischen XML-Ressourcen verwenden. Fehlende oder leere englische Ersatzwerte müssen ausdrücklich einen Fehler auslösen, statt englische Literale, rohe Schlüssel oder leeren Text anzuzeigen. Fehler wegen fehlender Übersetzungen dürfen nicht unterdrückt werden.
+
 ## Commits
 
 - [7d529da8](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/7d529da851a5301f3dd04ee4b1d71e17053248f9)

@@ -134,6 +134,10 @@ Use short action summaries and concrete feature descriptions across marketplace 
 
 Study provides public pronunciation classification and styles reused by Library previews, detail headings, variants, flashcard answers and reading choices, and the drawing pad. IPA keeps its authored notation; ordinary readings keep the selected app typography. Both Japanese and English sentence schemas require at least two word references.
 
+## Require language keys without literal fallbacks
+
+AI instructions prohibit hardcoded English user-facing strings in every path. Missing preferred-language values may use the same keys from English XML resources; absent or empty English fallback values must fail explicitly instead of rendering literal English, raw keys, or blank text. Missing-translation errors must not be suppressed.
+
 ## Commits
 
 - [7d529da8](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/7d529da851a5301f3dd04ee4b1d71e17053248f9)

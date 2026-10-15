@@ -134,6 +134,10 @@ Gunakan ringkasan tindakan singkat dan deskripsi fitur konkret pada metadata Mar
 
 Study menyediakan klasifikasi dan gaya pelafalan publik yang digunakan kembali oleh pratinjau Library, judul detail, varian, jawaban kartu, pilihan membaca, dan area gambar. IPA mempertahankan notasi aslinya; bacaan biasa mempertahankan tipografi aplikasi pilihan pengguna. Skema kalimat Jepang dan Inggris memerlukan sedikitnya dua referensi kata.
 
+## Wajibkan kunci bahasa tanpa teks pengganti literal
+
+Instruksi AI melarang teks bahasa Inggris yang ditanam langsung untuk pengguna dalam setiap alur. Nilai yang tidak tersedia dalam bahasa pilihan dapat menggunakan kunci yang sama dari sumber daya XML bahasa Inggris. Nilai pengganti bahasa Inggris yang hilang atau kosong harus menimbulkan kegagalan eksplisit, bukan menampilkan teks Inggris literal, kunci mentah, atau teks kosong. Kesalahan terjemahan yang hilang tidak boleh disembunyikan.
+
 ## Komit
 
 - [7d529da8](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/7d529da851a5301f3dd04ee4b1d71e17053248f9)
