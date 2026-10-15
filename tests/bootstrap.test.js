@@ -18,6 +18,8 @@ test("ingests the declarative pack through the host Library capability", async (
                 return undefined;
             },
             require(id) {
+                if (id === "study:audio:provider")
+                    return { registerProvider: () => () => {} };
                 assert.equal(id, "study:library:provider");
                 return {
                     registerLookupProvider(provider) {
@@ -114,7 +116,9 @@ test("fails safely when the host Library capability is unavailable", async () =>
                 get() {
                     return undefined;
                 },
-                require() {
+                require(id) {
+                    if (id === "study:audio:provider")
+                        return { registerProvider: () => () => {} };
                     throw new Error(
                         'Required capability "study:library:provider" is not available.',
                     );
@@ -135,7 +139,9 @@ test("content ingestion failures remain activation-blocking", async () => {
             get() {
                 return undefined;
             },
-            require() {
+            require(id) {
+                if (id === "study:audio:provider")
+                    return { registerProvider: () => () => {} };
                 return {
                     registerLookupProvider() {
                         return () => {
@@ -192,6 +198,8 @@ test("requires the public provider capability when it is injected", async () => 
                 return provider;
             },
             require(id) {
+                if (id === "study:audio:provider")
+                    return { registerProvider: () => () => {} };
                 assert.equal(id, "study:library:provider");
                 required = true;
                 return provider;
@@ -215,6 +223,8 @@ test("failed capability publication or flow registration removes every lookup pr
             moduleRoot: path.resolve("."),
             capabilities: {
                 require(id) {
+                    if (id === "study:audio:provider")
+                        return { registerProvider: () => () => {} };
                     assert.equal(id, "study:library:provider");
                     return {
                         registerLookupProvider() {
@@ -254,7 +264,9 @@ test("activation rejects a host provider without content-pack cleanup", async ()
     await assert.rejects(
         bootstrapModule({
             capabilities: {
-                require() {
+                require(id) {
+                    if (id === "study:audio:provider")
+                        return { registerProvider: () => () => {} };
                     return {
                         async ingestContentPack() {},
                         registerLookupProvider() {},

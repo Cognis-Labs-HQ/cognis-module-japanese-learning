@@ -331,3 +331,15 @@ The content pack lives in `data/library/`: its manifest, schema, and content sha
 ## Complete dictionary and stroke graphs
 
 Jisho candidates without a complete Kana reconstruction are rejected. Multi-reading Kanji children link directly to definition siblings in the same import graph, while Kanji and unmapped vocabulary receive semantic classes. Dotted Kun notation retains only the Kanji stem: `おし.える` produces `おし`, while the original notation stays in hidden metadata. Smooth quadratic SVG commands reflect the previous quadratic control point, and cubic/quadratic histories remain separate. Stroke lookup accepts at most sixteen writing units, shares one fifteen-second deadline across the glyph requests, and cancels bodies exceeding one million bytes.
+
+## Pronunciation audio
+
+Seeded spoken cards include generated MP3 files in `data/library/assets/audio/`; identical spoken text shares one file. English uses offline Piper with the public-domain LJ Speech dataset voice. Japanese uses offline Open JTalk with HTS Voice Mei, attributed to the MMDAgent Project Team and Nagoya Institute of Technology under CC BY. Voice notices and a per-recording inventory live in `data/audio/`. Punctuation is silent and sentences have no synthesized recording: Cognis plays their ordered constituent audio.
+
+Regenerate the inventory with `node scripts/generate-audio.mjs`. For local synthesis install the optional tools from `scripts/audio-requirements.txt`, provide FFmpeg, and run `python3 scripts/synthesize-audio.py`; English additionally requires `--english-model` pointing to the Piper LJSpeech model. Keep the voice attribution, package metadata and file hashes synchronized.
+
+## Audio provider contract
+
+Bootstrap requires `study:audio:provider` and registers one removable audio provider alongside dictionary and stroke providers. It resolves module-bundled recordings by spoken label and preferred reading, with bounded file reads and explicit missing-audio errors. Removal aborts pending retrieval. Cognis authorizes card access, derives selected transformation text from the schema, and caches recordings privately through Files without modifying authored fields. The `study:library:audio` flow executes authorization, validation and resolution; `study:audio:fetch` validates and retrieves provider bytes. Sentence audio remains ordered constituent playback.
+
+Audio retrieval begins only when the learner requests playback. Merely opening a card makes no audio request. Playback failures use the host localized toast and structured logs. Sentence constituents retain their selected transformation descriptors; the authenticated audio endpoint derives the spoken form from the schema rather than accepting arbitrary display text. English letter-combination seed clips are synthesized from their authored IPA phonemes, while alphabet clips speak letter names.

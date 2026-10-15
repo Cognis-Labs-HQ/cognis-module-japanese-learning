@@ -287,7 +287,7 @@ test("writing units and sentence particles follow the current Library contract",
         writingLayers.some(({ id }) => id === layer),
     )) {
         assert.ok(record.fields.pronunciation.length > 0);
-        assert.equal(record.fields.audio, undefined);
+        assert.match(record.fields.audio, /^audio\/[a-f0-9]{64}\.mp3$/);
     }
     const particleLayer = schema.layers.find(
         ({ semanticRole }) => semanticRole === "particle",

@@ -1,8 +1,8 @@
 {
     "id": "japanese-core",
     "publisher": "Cognis Labs HQ",
-    "version": "2.2.103",
-    "contentRevision": "2026-10-14.1",
+    "version": "2.2.104",
+    "contentRevision": "2026-10-15.audio",
     "schema": "schema.json",
     "content": "content",
     "license": {
@@ -37,6 +37,12 @@
                 "attribution": "Electronic Dictionary Research and Development Group",
                 "derivedFields": ["alt-characters.pronunciation"]
             }
-        ]
-    }
+        ],
+        "audio": {
+            "source": "open-jtalk-mei",
+            "license": "CC-BY-3.0",
+            "attribution": "HTS Voice Mei; MMDAgent Project Team; Nagoya Institute of Technology; https://creativecommons.org/licenses/by/3.0/"
+        }
+    },
+    "assets": "assets"
 }

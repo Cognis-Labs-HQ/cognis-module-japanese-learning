@@ -2,6 +2,14 @@
 
 **Feature Branch:** feature-replace-library-with-new-implementation
 
+## Vorbereitete Ausspracheaufnahmen ausliefern
+
+Gesprochene Seed-Karten enthalten deduplizierte, offline erzeugte MP3-Dateien und Stimmnachweise. Sätze behalten die geordnete Wiedergabe ihrer Bestandteile.
+
+## Bereichsgebundenen Audioabruf registrieren
+
+Beide Study-Module verwenden denselben entfernbaren Audioanbieter-Vertrag und rufen mitgelieferte Aufnahmen durch begrenzte lokale Dateizugriffe ab. Autorisierung, Cache-Richtlinien und zusammengesetzte Wiedergabe gehören dem Host.
+
 ## Paketziele und Entwicklerhinweise
 
 Ausgabe 2.2.107 — Die Paketprüfung stellt sicher, dass Einstiegspunkte, Icons, Banner und Screenshots reguläre Dateien innerhalb des Checkouts sind, auch nach Pfadauflösung. Die Dokumentation beschreibt öffentliche Verträge und verweist für Veröffentlichungsmetadaten auf Manifeste; Änderungsprotokolle behalten die Herkunft der Veröffentlichung.

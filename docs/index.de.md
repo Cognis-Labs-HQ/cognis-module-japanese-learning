@@ -331,3 +331,15 @@ Das Inhaltspaket liegt in `data/library/`: Manifest, Schema und Inhaltsdateien b
 ## Vollständige Wörterbuch- und Schriftgraphen
 
 Jisho-Kandidaten ohne vollständige Kana-Rekonstruktion werden abgelehnt. Kanji-Lesungen verweisen direkt auf Definitionen desselben Importgraphen; Kanji und nicht zugeordnete Wörter erhalten semantische Klassen. Bei Kun-Lesungen mit Punkt bleibt nur der Kanji-Stamm: `おし.える` ergibt `おし`; die Originalnotation bleibt in versteckten Metadaten. Glatte quadratische SVG-Befehle spiegeln den vorherigen quadratischen Kontrollpunkt; kubische und quadratische Verläufe bleiben getrennt. Strichmustersuchen akzeptieren höchstens sechzehn Schreibeinheiten, teilen eine Frist von fünfzehn Sekunden zwischen den Glyphenanfragen und brechen Antworten über einer Million Bytes ab.
+
+## Ausspracheaufnahmen
+
+Vorgesäte gesprochene Karten enthalten erzeugte MP3-Dateien unter `data/library/assets/audio/`; identischer Sprechtext verwendet dieselbe Datei. Englisch verwendet offline Piper mit einer Stimme auf Basis des gemeinfreien LJ-Speech-Datensatzes. Japanisch verwendet offline Open JTalk mit HTS Voice Mei, mit Namensnennung des MMDAgent-Projektteams und des Nagoya Institute of Technology unter CC BY. Stimmhinweise und ein Aufnahmeverzeichnis liegen unter `data/audio/`. Satzzeichen bleiben stumm; Sätze erhalten keine synthetisierte Aufnahme, sondern werden von Cognis aus den geordneten Bestandteilsaufnahmen abgespielt.
+
+Das Verzeichnis wird mit `node scripts/generate-audio.mjs` erneuert. Für lokale Synthese die optionalen Werkzeuge aus `scripts/audio-requirements.txt` installieren, FFmpeg bereitstellen und `python3 scripts/synthesize-audio.py` ausführen; Englisch benötigt zusätzlich `--english-model` mit dem Piper-LJSpeech-Modell. Namensnennung, Paketmetadaten und Dateihashes synchron halten.
+
+## Vertrag des Audioanbieters
+
+Bootstrap verlangt `study:audio:provider` und registriert neben Wörterbuch- und Strichanbietern einen entfernbaren Audioanbieter. Dieser löst mitgelieferte Aufnahmen nach gesprochener Bezeichnung und bevorzugter Lesung auf, mit begrenzten Dateizugriffen und ausdrücklichen Fehlern bei fehlendem Audio. Beim Entfernen werden laufende Abrufe abgebrochen. Cognis prüft den Kartenzugriff, leitet gewählte Transformationstexte aus dem Schema ab und speichert Aufnahmen privat über Files, ohne verfasste Felder zu ändern. Der Ablauf `study:library:audio` führt Autorisierung, Validierung und Auflösung aus; `study:audio:fetch` prüft und liest die Bytes des Anbieters. Sätze behalten die geordnete Wiedergabe ihrer Bestandteile.
+
+Audio wird erst abgerufen, wenn Lernende die Wiedergabe anfordern; das bloße Öffnen einer Karte löst keine Audioanfrage aus. Wiedergabefehler verwenden den lokalisierten Toast des Hosts und strukturierte Protokolle. Satzbestandteile behalten ihre gewählten Transformationsdeskriptoren; der authentifizierte Audioendpunkt leitet die gesprochene Form aus dem Schema ab, statt beliebigen Anzeigetext anzunehmen. Englische Buchstabenkombinationen werden aus ihren verfassten IPA-Phonemen synthetisiert, während Alphabetaufnahmen Buchstabennamen sprechen.

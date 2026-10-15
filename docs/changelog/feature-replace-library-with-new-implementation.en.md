@@ -2,6 +2,14 @@
 
 **Feature Branch:** feature-replace-library-with-new-implementation
 
+## Ship seeded pronunciation recordings
+
+Spoken seed cards include deduplicated offline-generated MP3 files and voice attribution. Sentences continue using ordered constituent playback.
+
+## Register scoped audio retrieval
+
+Both Study modules expose the same removable audio-provider contract and retrieve bundled recordings with bounded local reads. The host owns authorization, cache policy and composite playback.
+
 ## Package targets and developer guidance
 
 Release 2.2.107 — Package validation checks that entrypoints, icons, banners and screenshots are regular files inside the checkout, including resolved paths. Documentation describes public contracts and refers to manifests for release metadata; changelogs retain release provenance.

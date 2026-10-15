@@ -2,6 +2,14 @@
 
 **Feature Branch:** feature-replace-library-with-new-implementation
 
+## Sertakan rekaman pelafalan awal
+
+Kartu awal yang diucapkan menyertakan MP3 yang dibuat offline dan dideduplikasi, beserta atribusi suara. Kalimat tetap memutar unsur penyusunnya secara berurutan.
+
+## Daftarkan pengambilan audio terkelola
+
+Kedua modul Study memakai kontrak penyedia audio yang sama dan dapat dilepas, serta mengambil rekaman bawaan dengan pembacaan lokal terbatas. Host memiliki otorisasi, kebijakan cache, dan pemutaran komposit.
+
 ## Target paket dan panduan pengembang
 
 Rilis 2.2.107 — Validasi paket memastikan titik masuk, ikon, banner, dan tangkapan layar berupa file reguler di dalam checkout, termasuk setelah resolusi jalur. Dokumentasi menjelaskan kontrak publik dan merujuk manifes untuk metadata rilis; changelog mempertahankan asal-usul rilis.
