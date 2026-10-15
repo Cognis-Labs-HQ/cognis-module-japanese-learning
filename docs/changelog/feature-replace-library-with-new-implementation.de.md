@@ -216,3 +216,4 @@ Das japanische Sortierwerkzeug akzeptiert `--dictionary <JMdict.gz> --kanji-dict
 - [4d7712d](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/4d7712d1eacf7bbfecf6a48bf6bffc3133afc046)
 - [0d7a90cf](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/0d7a90cf679be17bfc39d430ca7552e2a679c74b)
 - [6a0ed76b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/6a0ed76b5c9afa7d7ab1352cd002630b0b334f90)
+- [4b2be811](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/4b2be81112494881d4e87e56d19bf94bc1ea801d)
