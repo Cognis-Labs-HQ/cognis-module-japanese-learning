@@ -126,7 +126,7 @@ for kanji, values in standalone.items():
 preferred = json.loads(
     (
         pathlib.Path(__file__).resolve().parent.parent
-        / "data/audio/primary-readings.json"
+        / "data/library/primary-readings.json"
     ).read_text()
 )
 for character, reading in preferred.items():

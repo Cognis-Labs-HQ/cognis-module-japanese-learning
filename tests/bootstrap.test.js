@@ -1,8 +1,13 @@
+import { withConfiguration } from "../api/tests/configuration-context.js";
 import assert from "node:assert/strict";
 import path from "node:path";
 import { readFileSync } from "node:fs";
 import test from "node:test";
-import { bootstrapModule } from "../bootstrap.js";
+import { bootstrapModule as bootstrapLanguageModule } from "../bootstrap.js";
+
+function bootstrapModule(ctx) {
+    return bootstrapLanguageModule(withConfiguration(ctx));
+}
 
 test("ingests the declarative pack through the host Library capability", async () => {
     const calls = [];
@@ -19,7 +24,7 @@ test("ingests the declarative pack through the host Library capability", async (
             },
             require(id) {
                 if (id === "study:audio:provider")
-                    return { registerProvider: () => () => {} };
+                    return { registerLanguage: () => () => {} };
                 assert.equal(id, "study:library:provider");
                 return {
                     registerLookupProvider(provider) {
@@ -73,8 +78,8 @@ test("ingests the declarative pack through the host Library capability", async (
             this.ended = true;
         },
     };
-    apiRoutes[0].handler({}, response);
-    assert.equal(response.status, 204);
+    await apiRoutes[0].handler({}, response);
+    assert.equal(response.status, 200);
     assert.equal(response.ended, true);
     assert.deepEqual(
         providers.map(({ id }) => id),
@@ -122,7 +127,7 @@ test("fails safely when the host Library capability is unavailable", async () =>
                 },
                 require(id) {
                     if (id === "study:audio:provider")
-                        return { registerProvider: () => () => {} };
+                        return { registerLanguage: () => () => {} };
                     throw new Error(
                         'Required capability "study:library:provider" is not available.',
                     );
@@ -145,7 +150,7 @@ test("content ingestion failures remain activation-blocking", async () => {
             },
             require(id) {
                 if (id === "study:audio:provider")
-                    return { registerProvider: () => () => {} };
+                    return { registerLanguage: () => () => {} };
                 return {
                     registerLookupProvider() {
                         return () => {
@@ -203,7 +208,7 @@ test("requires the public provider capability when it is injected", async () => 
             },
             require(id) {
                 if (id === "study:audio:provider")
-                    return { registerProvider: () => () => {} };
+                    return { registerLanguage: () => () => {} };
                 assert.equal(id, "study:library:provider");
                 required = true;
                 return provider;
@@ -228,7 +233,7 @@ test("failed capability publication or flow registration removes every lookup pr
             capabilities: {
                 require(id) {
                     if (id === "study:audio:provider")
-                        return { registerProvider: () => () => {} };
+                        return { registerLanguage: () => () => {} };
                     assert.equal(id, "study:library:provider");
                     return {
                         registerLookupProvider() {
@@ -270,7 +275,7 @@ test("activation rejects a host provider without content-pack cleanup", async ()
             capabilities: {
                 require(id) {
                     if (id === "study:audio:provider")
-                        return { registerProvider: () => () => {} };
+                        return { registerLanguage: () => () => {} };
                     return {
                         async ingestContentPack() {},
                         registerLookupProvider() {},

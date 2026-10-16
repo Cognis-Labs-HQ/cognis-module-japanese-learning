@@ -93,6 +93,7 @@ test("manifest depends on the Study gateway and discovers Library by capability"
     assert.deepEqual(manifest.requiresCapabilities, [
         "study:library:provider",
         "study:audio:provider",
+        "db:executor",
     ]);
     assert.equal(
         manifest.requires.includes("a4db7882-9207-56bd-b13d-448fc82543ba"),

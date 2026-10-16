@@ -256,3 +256,11 @@ The Sentence Structure carousel now includes `それでも`, `ですが`, `だ�
 Copula definition transforms omit unused matching boundaries and use localized templates, so strict host validation accepts every generated form.
 
 Vocabulary pronunciation fields use the singular `pronunciation-readings` link contract. Every visible vocabulary item points to one hidden complete-pronunciation record, which preserves its internal Kanji-reading and atomic-Kana links so the entire displayed pronunciation remains clickable.
+
+## Speech and recordings
+
+The module registers its language with `study:audio:provider` and stores an optional ElevenLabs voice ID using `db:executor`. Leave it blank to omit `voiceId` from speech requests and use the speech module default. Configure credentials, voice discovery and test audio in the separate ElevenLabs module. Language packs contain no generated recordings or provider HTTP implementation.
+
+Cognis authorizes saved global cards before requesting `speech:synthesis`. Merely opening a card does not generate audio. Administrators can regenerate global-card audio beside the player when editing. Private and classroom cards accept manual uploads or microphone recordings, limited to 5 MiB. Sentences retain the continuous composite fallback when constituent recordings are already available; private and classroom composition never triggers provider synthesis. Explicit recordings take priority. Only the primary authored pronunciation is used.
+
+Content pack versions advance whenever packaged content changes, preventing activation conflicts with earlier ingested revisions.

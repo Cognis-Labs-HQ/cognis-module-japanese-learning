@@ -1,5 +1,4 @@
 import { createReferenceProvider } from "./api/dictionary/reference.js";
-import { createAudioProvider } from "./api/audio/index.js";
 import { registerApi } from "./api/index.js";
 import { readFileSync } from "node:fs";
 import path from "node:path";
@@ -84,7 +83,7 @@ export async function bootstrapModule(ctx) {
         throw new Error("Invalid Study Library provider capability.");
     }
     const audio = ctx.capabilities.require("study:audio:provider");
-    registerApi(ctx);
+    const configuration = await registerApi(ctx);
 
     const libraryRoot = path.join(ctx.moduleRoot, "data", "library");
     const providerRemovers = [];
@@ -95,39 +94,7 @@ export async function bootstrapModule(ctx) {
     let receipt;
     try {
         providerRemovers.push(
-            audio.registerProvider(
-                createAudioProvider({
-                    voice: JSON.parse(
-                        readFileSync(
-                            new URL("./data/audio/voice.json", import.meta.url),
-                            "utf8",
-                        ),
-                    ),
-                    audioRoot: path.join(
-                        ctx.moduleRoot,
-                        "data",
-                        "library",
-                        "assets",
-                    ),
-                    recordings: JSON.parse(
-                        readFileSync(
-                            new URL(
-                                "./data/audio/recordings.json",
-                                import.meta.url,
-                            ),
-                            "utf8",
-                        ),
-                    ).recordings,
-                    referenceAudioRoot: path.join(
-                        ctx.moduleRoot,
-                        "data",
-                        "audio",
-                        "reference",
-                    ),
-                    revision: MODULE_MANIFEST.version,
-                    log: ctx.log,
-                }),
-            ),
+            audio.registerLanguage("ja", () => configuration.value),
         );
         providerRemovers.push(
             library.registerLookupProvider(

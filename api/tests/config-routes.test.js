@@ -1,39 +1,60 @@
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
+import { Readable } from "node:stream";
 import test from "node:test";
+import { withConfiguration } from "./configuration-context.js";
 
-test("disabled entrypoint registers only the admin configuration cleanup route", async () => {
-    const manifest = JSON.parse(
-        await readFile(new URL("../../manifest.json", import.meta.url), "utf8"),
-    );
-    const entrypoint = await import(
-        new URL(`../../${manifest.entrypoints.disabledApi}`, import.meta.url)
-    );
-    const routes = [];
-    entrypoint.registerDisabledApiRoutes({
-        registerApiDelete(path, handler, options) {
-            routes.push({ path, handler, options });
-        },
+const manifest = JSON.parse(
+    await readFile(new URL("../../manifest.json", import.meta.url), "utf8"),
+);
+const entrypoint = await import(
+    new URL(`../../${manifest.entrypoints.disabledApi}`, import.meta.url)
+);
+
+test("voice configuration is administrator-only, persists while disabled, and omits an unset override", async () => {
+    const routes = new Map();
+    const register = (method) => (path, handler, options) => {
+        assert.equal(path, `/api/v1/modules/${manifest.id}/config`);
+        assert.deepEqual(options, {
+            access: { minRole: "admin" },
+            allowWhenDisabled: true,
+        });
+        routes.set(method, handler);
+    };
+    const ctx = withConfiguration({
+        registerApiGet: register("GET"),
+        registerApiPut: register("PUT"),
+        registerApiDelete: register("DELETE"),
+        log() {},
     });
-    assert.equal(routes.length, 1);
-    assert.equal(routes[0].path, `/api/v1/modules/${manifest.id}/config`);
-    assert.deepEqual(routes[0].options, {
-        access: { minRole: "admin" },
-        allowWhenDisabled: true,
-    });
-    let status;
-    let ended = false;
-    routes[0].handler(
-        {},
-        {
-            writeHead(code) {
-                status = code;
+    const state = await entrypoint.registerDisabledApiRoutes(ctx);
+    const request = async (method, input) => {
+        let status;
+        let body;
+        await routes.get(method)(
+            Readable.from(input === undefined ? [] : [JSON.stringify(input)]),
+            {
+                writeHead(value) {
+                    status = value;
+                },
+                end(value) {
+                    body = JSON.parse(value);
+                },
             },
-            end() {
-                ended = true;
-            },
-        },
+        );
+        return { status, body };
+    };
+    assert.deepEqual((await request("GET")).body.data, {});
+    assert.equal((await request("PUT", { voiceId: "voice-test" })).status, 200);
+    assert.equal(state.value.voiceId, "voice-test");
+    assert.equal((await request("GET")).body.data.voiceId, "voice-test");
+    assert.equal(
+        (await request("PUT", { voiceId: "../../invalid" })).status,
+        400,
     );
-    assert.equal(status, 204);
-    assert.equal(ended, true);
+    await request("PUT", { voiceId: "" });
+    assert.deepEqual(state.value, {});
+    await request("PUT", { voiceId: "voice-test" });
+    await request("DELETE");
+    assert.deepEqual((await request("GET")).body.data, {});
 });
