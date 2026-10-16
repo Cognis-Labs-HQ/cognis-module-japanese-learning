@@ -184,6 +184,10 @@ SVGの滑らかな二次曲線は直前の二次制御点を反転し、三次�
 
 日本語の並べ替えツールは `--dictionary <JMdict.gz> --kanji-dictionary <KANJIDIC2.xml.gz> --output <priorities.json>` と任意の `--content-root data/library/content` に対応します。一般的な独立語の読みを優先し、他の読みは実在語の対応付けを頻度で重み付けして並べ、`data/audio/primary-readings.json` の確認済み単字カード用の指定を維持します。連濁と促音化は原資料の標準読みに戻して集計します。訓・音・名乗りの読みを保持し、選択された最初の読みだけが再生とキャッシュ識別を決めます。頻度情報は順序付けの手掛かりであり、全発音に通用する普遍的な頻度測定ではありません。
 
+## 任意の音声連携
+
+ElevenLabsを任意のモジュール依存関係として宣言します。インストール時に音声合成用として選択できますが、未導入でもStudyの有効化と録音・結合音声を使用できます。
+
 ## コミット
 
 - [7d529da8](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/7d529da851a5301f3dd04ee4b1d71e17053248f9)
@@ -217,3 +221,4 @@ SVGの滑らかな二次曲線は直前の二次制御点を反転し、三次�
 - [0d7a90cf](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/0d7a90cf679be17bfc39d430ca7552e2a679c74b)
 - [6a0ed76b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/6a0ed76b5c9afa7d7ab1352cd002630b0b334f90)
 - [4b2be811](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/4b2be81112494881d4e87e56d19bf94bc1ea801d)
+- [293ce22](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/293ce2259636c1c527f4e8b477782f6fc2153198)
