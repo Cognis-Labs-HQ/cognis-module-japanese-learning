@@ -345,3 +345,5 @@ ElevenLabs is declared as an optional module dependency. Installation can offer 
 Publish `elevenlabs-tts:synthesis` within the module-owned namespace and remove the privileged flag. English and Japanese Study resolve this capability through ctx using their existing optional module dependency. The Study bridge receives the live capability getter from its caller, preserving provider disable/re-enable and configured voice handling.
 
 The published capability reports live `configured` readiness. Study enables automatic speech only after both the API key and default voice are saved. If ElevenLabs is absent, disabled, or unconfigured, language registration still succeeds and uploaded audio and composite fallback remain available; no synthesis is requested.
+
+Packs without bundled media omit the optional `assets` path. Every declared schema, content directory and asset directory must resolve from the installed file inventory; empty local directories are not packaged.

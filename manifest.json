@@ -2,7 +2,7 @@
     "id": "study-language-ja",
     "uuid": "e905927f-b133-572a-92ce-2ea8645e5ceb",
     "name": "module.study.language.ja.name",
-    "version": "2.4.1",
+    "version": "2.4.2",
     "class": "extension",
     "coreApiVersion": "v1",
     "capabilities": ["study:language:ja"],
@@ -776,7 +776,7 @@
         },
         {
             "path": "data/library/manifest.json",
-            "sha256": "d2dbf1c595f7e3f77969ac26df9505326886af8d7b4c9768cf5d1f1be1417561"
+            "sha256": "d2d66d168d1483a574ca79a869628ae15b23bfe738bd7cc9353d134d9d2dd11a"
         },
         {
             "path": "data/library/primary-readings.json",
@@ -1824,19 +1824,19 @@
         },
         {
             "path": "docs/index.de.md",
-            "sha256": "cae2293aba21ac14d0f318784c85362591264296f1c6f6dc86bae14063e7bbe3"
+            "sha256": "9e8e05ce49d72e0e63d7d80a027048d2504b05e7dc75672e8cc15a779766ad99"
         },
         {
             "path": "docs/index.en.md",
-            "sha256": "8f74f3f20211080a091a339100e14664b6b6c18267e718966e27ec0b25f59011"
+            "sha256": "efe31dd56d4c8b3aa3901e58cfdf67dbc10709882d218d797157b20fc0f51be4"
         },
         {
             "path": "docs/index.id.md",
-            "sha256": "61f5f46cdd2a4cb08723d94fae19c3cfb94674155e403e64eafd4a867c3ab225"
+            "sha256": "d4e99940b66943810e618ea0496cb3ef797503a8cc01a195c31cc28aaa4313d9"
         },
         {
             "path": "docs/index.ja.md",
-            "sha256": "0376eecfcf021c3d52fcfb26fe9d94f85f9d072a4d1ca86b95b4faca7ae178e4"
+            "sha256": "b42fbe449cf1ed991a7cba36d720139eb42a708f1cf56539d24263b1d96d417d"
         },
         {
             "path": "docs/jisho.de.md",
@@ -1856,11 +1856,11 @@
         },
         {
             "path": "package-lock.json",
-            "sha256": "d292f0ff94d119b93f5070c32beb172dfb5cc8cfb87e4c463fdadddc2ef5f3ac"
+            "sha256": "dd12866b788292fbcfde52f2edaa7b8978ea5b7ee365ae1e667f2b45ed094e98"
         },
         {
             "path": "package.json",
-            "sha256": "127c35931fc999796d380a30c351f87fb1f25d23397d910ef28409677aa329e6"
+            "sha256": "72c68acfd4d63f58a651913d7755bfd7239d82f387fb47fa9729aec7be663347"
         },
         {
             "path": "routes.json",
@@ -1941,6 +1941,10 @@
         {
             "path": "tests/localization-quality.test.js",
             "sha256": "da76cebbba5a1e92e014ca87fe123264d49b4a65d925ef6741dccc89fa71cbc2"
+        },
+        {
+            "path": "tests/packaging.test.js",
+            "sha256": "a783f1c2a43f51cb85d962617d34cdd62833d5c018ef1578526fa50a3e5d9d15"
         },
         {
             "path": "tests/relationship-authoring.test.js",

@@ -345,3 +345,5 @@ ElevenLabs ist als optionale Modulabhängigkeit deklariert. Bei der Installation
 `elevenlabs-tts:synthesis` im eigenen Modulnamensraum veröffentlichen und die Privilegien-Markierung entfernen. English und Japanese Study lösen diese Fähigkeit über ctx und ihre bestehende optionale Modulabhängigkeit auf. Die Study-Brücke erhält den aktuellen Fähigkeitszugriff vom Aufrufer und bewahrt Deaktivierung, erneute Aktivierung und konfigurierte Stimmen.
 
 Die veröffentlichte Fähigkeit meldet ihre aktuelle Bereitschaft über `configured`. Study aktiviert automatische Sprache erst nach dem Speichern von API-Schlüssel und Standardstimme. Fehlt ElevenLabs oder ist es deaktiviert oder unkonfiguriert, gelingt die Sprachregistrierung weiterhin. Hochgeladene Aufnahmen und die Zusammenstellung vorhandener Audios bleiben verfügbar; Synthese wird nicht angefordert.
+
+Pakete ohne gebündelte Medien lassen den optionalen Pfad `assets` weg. Jedes deklarierte Schema sowie Inhalts- und Medienverzeichnis muss aus dem installierten Dateibestand auflösbar sein; leere lokale Verzeichnisse werden nicht verpackt.
