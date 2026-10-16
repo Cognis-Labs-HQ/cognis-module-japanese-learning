@@ -263,3 +263,36 @@ test("cross-language, cancelled and unavailable variant requests never substitut
         /audio_lookup_unavailable/,
     );
 });
+
+test("unbundled lexical synthesis uses only this language and its designated default voice", async () => {
+    const requests = [];
+    const provider = makeProvider(() => ({
+        synthesize: async (input) => {
+            requests.push(input);
+            return { mediaType: "audio/wav", data: new Uint8Array([1]) };
+        },
+    }));
+    await provider.fetchAudio({
+        language: inventory.language,
+        label: "unbundled-lexical-record",
+        semanticRole: "lexicalUnit",
+        readings: [],
+    });
+    assert.deepEqual(requests, [
+        {
+            language: inventory.language,
+            text: "unbundled-lexical-record",
+            voiceId: inventory.voiceId,
+        },
+    ]);
+    await assert.rejects(
+        provider.fetchAudio({
+            language: inventory.language === "ja" ? "en" : "ja",
+            label: "unbundled-lexical-record",
+            semanticRole: "lexicalUnit",
+            readings: [],
+        }),
+        /audio_lookup_unavailable/,
+    );
+    assert.equal(requests.length, 1);
+});
