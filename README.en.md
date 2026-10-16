@@ -264,3 +264,5 @@ The module registers its language with `study:audio:provider` and stores an opti
 Cognis authorizes saved global cards before requesting `speech:synthesis`. Merely opening a card does not generate audio. Administrators can regenerate global-card audio beside the player when editing. Private and classroom cards accept manual uploads or microphone recordings, limited to 5 MiB. Sentences retain the continuous composite fallback when constituent recordings are already available; private and classroom composition never triggers provider synthesis. Explicit recordings take priority. Only the primary authored pronunciation is used.
 
 Content pack versions advance whenever packaged content changes, preventing activation conflicts with earlier ingested revisions.
+
+ElevenLabs is declared as an optional module dependency. Installation can offer it for speech synthesis, but Study enablement and manual or composite audio remain available without it.

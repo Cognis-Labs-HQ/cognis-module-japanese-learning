@@ -339,3 +339,5 @@ Modul mendaftarkan bahasa melalui `study:audio:provider` dan menyimpan ID suara 
 Cognis memeriksa kartu global tersimpan sebelum meminta `speech:synthesis`. Membuka kartu tidak membuat audio. Administrator dapat membuat ulang audio kartu global di samping pemutar saat mengedit. Kartu pribadi dan kelas menerima unggahan atau rekaman mikrofon hingga 5 MiB. Kalimat tetap memakai komposisi berkelanjutan sebagai cadangan bila rekaman kartu penyusun tersedia; komposisi pribadi dan kelas tidak memicu sintesis penyedia. Rekaman eksplisit diutamakan. Hanya pelafalan pertama yang digunakan.
 
 Versi paket konten dinaikkan saat konten berubah untuk mencegah konflik aktivasi dengan revisi yang telah dimasukkan.
+
+ElevenLabs dinyatakan sebagai dependensi modul opsional. Instalasi dapat menawarkannya untuk sintesis ucapan, tetapi Study serta audio manual dan komposit tetap tersedia tanpanya.

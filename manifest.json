@@ -2,7 +2,7 @@
     "id": "study-language-ja",
     "uuid": "e905927f-b133-572a-92ce-2ea8645e5ceb",
     "name": "module.study.language.ja.name",
-    "version": "2.3.0",
+    "version": "2.3.1",
     "class": "extension",
     "coreApiVersion": "v1",
     "capabilities": ["study:language:ja"],
@@ -88,19 +88,19 @@
         },
         {
             "path": "README.de.md",
-            "sha256": "3dfa2e93c48413ed85594a07f90bb0d35a97dbe1a1153b0918c690914f5f6ba9"
+            "sha256": "dc3df7de260b2c12fe09eb591c682244ce22c7b316ef3eada2d7b995f2d09dfb"
         },
         {
             "path": "README.en.md",
-            "sha256": "27959d5f3d4d9f31cf3a65e7f9c2c0c02964b30b0daacb9b313f2d77f7eddafe"
+            "sha256": "f7cd0a21a24e62d5a514becfef0ee2301039490abf9ec9bd2b1b9eba6298a1b2"
         },
         {
             "path": "README.id.md",
-            "sha256": "72fd97008bb0f262ed361fd76a3847f38ebb5726cc1dd0f391b2328218d8e3db"
+            "sha256": "9ea42bb0ea647d27c8fd5c4c9c3ef18675a61a603bfc960d0333b49c83f042a9"
         },
         {
             "path": "README.ja.md",
-            "sha256": "96787b155643f9917f8ee56d8769027738e786d585f04bd877cc99a642a8040a"
+            "sha256": "777f1f09d64b4ec96ae13a53f8d85d4998645eab1f26b688514ed1e6640728ef"
         },
         {
             "path": "TODO.md",
@@ -1824,19 +1824,19 @@
         },
         {
             "path": "docs/index.de.md",
-            "sha256": "6761a0a9b6315130a788a5983633bfd69eb9169fe46a12b815f40bf12bb6283c"
+            "sha256": "53ffd3f036a8bd31532464c63103805234ae177d8bea36636ab41ec65e6e80a7"
         },
         {
             "path": "docs/index.en.md",
-            "sha256": "4cd356957178cb322adf8569aa7d3e67e23b2369ae14d766ff83289bd71890ff"
+            "sha256": "cc947501aab3012fb31c117bbfc9b52818e0dfecc724011e6ed75299ff3899c3"
         },
         {
             "path": "docs/index.id.md",
-            "sha256": "f7e9b309a075eed5f13024a04e6f136ce7f0ac45436fa84e590ab46d54338431"
+            "sha256": "45c4837075958168c1cd6b2e583d71b0d7e0156ff9a9ca79d4eb30139c95961d"
         },
         {
             "path": "docs/index.ja.md",
-            "sha256": "7056b11f67081fd8259ee0960796e85338342bf5207d2a51c7d9309a0c6e20e0"
+            "sha256": "244fc6bf5d742d11b92660b9148793c396c47b8e0cc98ccb87b5affceed403d6"
         },
         {
             "path": "docs/jisho.de.md",
@@ -1856,11 +1856,11 @@
         },
         {
             "path": "package-lock.json",
-            "sha256": "94c990fac5e4642d7dae0e3b3fbae8624ca3fe2f774418835ff85dc136475e43"
+            "sha256": "56537faffe10da310e840947e198a561ece4dd63f0f88e4ae49f19064c0c47d0"
         },
         {
             "path": "package.json",
-            "sha256": "b88efe45037ce45f1a26e21b3729de22a6ce614267b2b3932687e3bdf3620f07"
+            "sha256": "15900b6ca2b6a509011ef4fa6ce9636a0aa87cbf892221743305a77be08aee7e"
         },
         {
             "path": "routes.json",
@@ -1960,7 +1960,7 @@
         },
         {
             "path": "tests/structural-compliance.test.js",
-            "sha256": "2957ca5254a19cb08a8b1b332e3c3d290ab59c1aa1de7ebfd6e86b56e73fd032"
+            "sha256": "6430ba3160c1ed6e28d57316085a788e9565f395f2e4a5bca21969cdcb159898"
         },
         {
             "path": "tests/uninstall.test.js",
@@ -1999,5 +1999,6 @@
             "sha256": "29812c3f7e9545994cc53a811984053022705222dd3de3d84993db48b9998c52"
         }
     ],
-    "privileged": true
+    "privileged": true,
+    "softDependencies": ["2b71bcdf-e29c-408b-8d12-ead6e377c82e"]
 }

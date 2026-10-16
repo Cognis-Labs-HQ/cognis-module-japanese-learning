@@ -181,3 +181,20 @@ test("source does not use Math.random for generated values", () => {
         .map((path) => relative(ROOT, path));
     assert.deepEqual(violations, []);
 });
+
+test("speech module is offered as an optional dependency", () => {
+    const manifest = JSON.parse(readFileSync(resolve(ROOT, "manifest.json")));
+    assert.deepEqual(manifest.softDependencies, [
+        "2b71bcdf-e29c-408b-8d12-ead6e377c82e",
+    ]);
+    assert.equal(
+        (manifest.hardDependencies ?? []).includes(
+            "2b71bcdf-e29c-408b-8d12-ead6e377c82e",
+        ),
+        false,
+    );
+    assert.equal(
+        manifest.requiresCapabilities.includes("speech:synthesis"),
+        false,
+    );
+});
