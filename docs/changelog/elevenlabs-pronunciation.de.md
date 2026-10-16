@@ -9,3 +9,4 @@ Alle 3273 gebündelten Aufnahmen verwenden nun die konfigurierte ElevenLabs-Stim
 ## Commits
 
 - [b5a876d](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/b5a876d083a52cbf39bc4f3e36b666bd9ec67bb2)
+- [42d3707](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/42d3707a861c32064dcf912446092415104c3db6)
