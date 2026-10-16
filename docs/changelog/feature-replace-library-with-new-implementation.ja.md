@@ -196,6 +196,10 @@ ElevenLabsを任意のモジュール依存関係として宣言します。イ�
 
 公開機能は `configured` で現在の準備状態を通知します。StudyはAPIキーと既定の声が保存された後にのみ自動音声を有効にします。ElevenLabsが未導入・無効・未設定でも言語登録は成功し、アップロード音声と既存音声の結合を利用できます。合成は要求しません。
 
+## メディアを同梱しないインストールを修正
+
+データ専用コンテンツパックから未使用のアセットディレクトリ宣言を削除し、パックのバージョンを更新します。パッケージ対象のファイルだけで一時インストールを作成し、宣言されたパスを検証することで、空のローカルディレクトリに依存する有効化を防ぎます。
+
 ## コミット
 
 - [7d529da8](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/7d529da851a5301f3dd04ee4b1d71e17053248f9)
@@ -232,3 +236,4 @@ ElevenLabsを任意のモジュール依存関係として宣言します。イ�
 - [293ce22](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/293ce2259636c1c527f4e8b477782f6fc2153198)
 - [c6fa056](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/c6fa05621ba5a97c218d2aafab91e10e6a2d305c)
 - [35759eb](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/35759eb887310f2bec217c4e4335b0a07323c2f6)
+- [13244eb](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/13244eb79d34f999d74def0e47fe67700fbfb42e)

@@ -196,6 +196,10 @@ ElevenLabs ist als optionale Modulabhängigkeit deklariert. Bei der Installation
 
 Die veröffentlichte Fähigkeit meldet ihre aktuelle Bereitschaft über `configured`. Study aktiviert automatische Sprache erst nach dem Speichern von API-Schlüssel und Standardstimme. Fehlt ElevenLabs oder ist es deaktiviert oder unkonfiguriert, gelingt die Sprachregistrierung weiterhin. Hochgeladene Aufnahmen und die Zusammenstellung vorhandener Audios bleiben verfügbar; Synthese wird nicht angefordert.
 
+## Installation ohne gebündelte Medien reparieren
+
+Die ungenutzte Medienverzeichnis-Deklaration aus dem reinen Datenpaket entfernen und dessen Version erhöhen. Deklarierte Paketpfade anhand einer temporären Installation ausschließlich aus verpackten Dateien prüfen, damit die Aktivierung nicht von leeren lokalen Verzeichnissen abhängt.
+
 ## Commits
 
 - [7d529da8](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/7d529da851a5301f3dd04ee4b1d71e17053248f9)
@@ -232,3 +236,4 @@ Die veröffentlichte Fähigkeit meldet ihre aktuelle Bereitschaft über `configu
 - [293ce22](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/293ce2259636c1c527f4e8b477782f6fc2153198)
 - [c6fa056](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/c6fa05621ba5a97c218d2aafab91e10e6a2d305c)
 - [35759eb](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/35759eb887310f2bec217c4e4335b0a07323c2f6)
+- [13244eb](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/13244eb79d34f999d74def0e47fe67700fbfb42e)
