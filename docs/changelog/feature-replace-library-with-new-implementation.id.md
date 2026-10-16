@@ -241,3 +241,5 @@ Rekaman dengan suara khusus bahasa disertakan untuk semua kartu terkurasi yang b
 - [c6fa056](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/c6fa05621ba5a97c218d2aafab91e10e6a2d305c)
 - [35759eb](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/35759eb887310f2bec217c4e4335b0a07323c2f6)
 - [13244eb](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/13244eb79d34f999d74def0e47fe67700fbfb42e)
+- [4f906f3](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/4f906f37c3a33d8b38352f917fd771413c4e98e5)
+- [b2de30f](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/b2de30f212b0b9ae28a67008c0393c1116b2fca0)
