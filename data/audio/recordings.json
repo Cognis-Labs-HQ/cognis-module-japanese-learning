@@ -1,5 +1,5 @@
 {
-    "source": "kokoro-multilingual",
+    "source": "elevenlabs",
     "format": "audio/mpeg",
     "recordings": [
         {
@@ -2472,12 +2472,16 @@
             "entries": ["ja:particle:made"]
         }
     ],
-    "voiceAttribution": "Kokoro multilingual model, hexgrad and contributors; Apache License 2.0.",
+    "voiceAttribution": "Generated with ElevenLabs; use and distribution are subject to the ElevenLabs account terms.",
     "processing": {
-        "voice": "jf_alpha",
+        "model": "eleven_multilingual_v2",
+        "voiceEnvironment": "ELEVENLABS_JA_VOICE_ID",
         "speed": 0.9,
+        "stability": 0.65,
+        "similarityBoost": 0.75,
         "bitrate": "128k",
         "leadInMs": 200,
-        "tailMs": 180
+        "tailMs": 180,
+        "peakLimit": 0.82
     }
 }

@@ -334,9 +334,9 @@ Kandidat Jisho tanpa rekonstruksi Kana lengkap ditolak. Anak bacaan Kanji menaut
 
 ## Audio pelafalan
 
-Rekaman awal memakai model neural multibahasa Kokoro secara offline dengan suara Inggris `bf_emma` dan Jepang `jf_alpha`. Klip memakai 128 kbps, jeda awal 200 ms, jeda akhir 180 ms, normalisasi puncak terbatas, dan ucapan lebih lambat. Atribusi model dan lisensi Apache disimpan di `data/audio/VOICE-LICENSE.txt`; inventaris mencatat suara dan pengolahannya.
+Rekaman awal dibuat melalui API ElevenLabs dengan `ELEVENLABS_EN_VOICE_ID` untuk bahasa Inggris dan `ELEVENLABS_JA_VOICE_ID` untuk bahasa Jepang. Klip menggunakan ucapan lebih lambat, pengodean 128 kbps, jeda awal 200 ms, jeda akhir 180 ms, dan normalisasi puncak terbatas. Inventaris mencatat model dan parameter pengolahan; `data/audio/VOICE-LICENSE.txt` menjelaskan ketentuan ElevenLabs yang berlaku.
 
-Perbarui inventaris dengan `node scripts/generate-audio.mjs`. Instal alat opsional dari `scripts/audio-requirements.txt`, sediakan FFmpeg, lalu jalankan `python3 scripts/synthesize-audio.py --model <kokoro-model> --voices <voice-bank> --force`. Model suara hanya menjadi alat pengembang dan tidak disertakan sebagai dependensi produksi.
+Buat ulang inventaris dengan `node scripts/generate-audio.mjs`. Siapkan Python, FFmpeg, `ELEVENLABS_API_KEY`, dan variabel suara bahasa, lalu jalankan `python3 scripts/synthesize-audio.py --cache <direktori-cache-pribadi>`. Cache memakai kembali respons API saat proses dilanjutkan. Kredensial dan pengenal suara tidak pernah disimpan dalam paket. Pembuatan merupakan alat pengembang; pemutaran tidak memerlukan kredensial ElevenLabs.
 
 ## Kontrak penyedia audio
 
@@ -358,7 +358,7 @@ Bangun ulang pecahan referensi dengan `python3 scripts/import-reference.py --sou
 
 ## Rekaman bacaan utuh untuk referensi
 
-Bahasa Jepang juga menyertakan 2.913 klip neural bacaan utuh dalam bank berkas terbatas di `data/audio/reference/`. Bersama rekaman awal, klip ini mencakup bacaan utama seluruh 12.356 karakter sumber yang memiliki bacaan; 752 karakter lainnya tidak diberi audio yang dibuat-buat. Indeks memilih bacaan pertama yang ditulis serta memeriksa batas berkas dan pembatalan. Buat rencana dengan `python3 scripts/reference-audio.py plan --work <directory>`, proses inventarisnya dengan skrip sintesis, lalu gunakan `pack` untuk menulis bank terbatas.
+Bahasa Jepang juga menyertakan 2.913 klip neural bacaan utuh dalam bank berkas terbatas di `data/audio/reference/`. Bersama rekaman awal, klip ini mencakup bacaan utama seluruh 12.356 karakter sumber yang memiliki bacaan; 752 karakter lainnya tidak diberi audio yang dibuat-buat. Indeks memilih bacaan pertama yang ditulis serta memeriksa batas berkas dan pembatalan. Buat rencana dengan `python3 scripts/reference-audio.py plan --work <directory>`. Proses seluruh `inventory.json` dengan `python3 scripts/synthesize-audio.py --inventory <directory>/inventory.json --assets <directory>/assets --cache <direktori-cache-pribadi>`, lalu jalankan `python3 scripts/reference-audio.py pack --work <directory>` untuk membuat ulang bank terbatas.
 
 Alat pemeringkat Jepang menerima `--dictionary <JMdict.gz> --kanji-dictionary <KANJIDIC2.xml.gz> --output <priorities.json>` serta opsi `--content-root data/library/content`. Alat mengutamakan bacaan leksikal mandiri yang umum, mengurutkan bacaan lain dari penyelarasan kata terverifikasi berbobot frekuensi, dan mempertahankan pilihan kartu tunggal yang ditinjau dalam `data/audio/primary-readings.json`. Penyuarakan dan geminasi dipetakan kembali ke bacaan sumber kanonis. Bacaan kun, on, dan nama tetap tersedia; hanya bacaan pertama yang dipilih menentukan pemutaran dan identitas cache. Penanda frekuensi membantu pengurutan dan bukan ukuran frekuensi pelafalan universal.
 

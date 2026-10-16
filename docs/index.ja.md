@@ -334,9 +334,9 @@ Study は公開の発音分類とスタイルを提供し、Library のプレビ
 
 ## 発音音声
 
-初期録音は多言語ニューラルモデル Kokoro をオフラインで使用し、英語に `bf_emma`、日本語に `jf_alpha` を使用します。クリップは 128 kbps、開始前の無音 200 ms、終了後の無音 180 ms、上限付きピーク正規化、遅めの発話速度で生成します。モデルの帰属表示と Apache ライセンスは `data/audio/VOICE-LICENSE.txt`、声と処理設定は録音一覧に記録します。
+初期録音は ElevenLabs API で生成し、英語には `ELEVENLABS_EN_VOICE_ID`、日本語には `ELEVENLABS_JA_VOICE_ID` を使用します。遅めの発話、128 kbps、開始前の無音 200 ms、終了後の無音 180 ms、上限付きピーク正規化を適用します。一覧にモデルと処理設定を記録し、`data/audio/VOICE-LICENSE.txt` に適用される ElevenLabs の利用条件を示します。
 
-`node scripts/generate-audio.mjs` で一覧を再生成します。`scripts/audio-requirements.txt` の任意ツールと FFmpeg を用意し、`python3 scripts/synthesize-audio.py --model <kokoro-model> --voices <voice-bank> --force` を実行します。音声モデルは開発用ツールであり、実行時依存関係として配布しません。
+`node scripts/generate-audio.mjs` で一覧を再生成します。Python、FFmpeg、`ELEVENLABS_API_KEY` と対象言語の声の環境変数を用意し、`python3 scripts/synthesize-audio.py --cache <非公開キャッシュディレクトリ>` を実行します。再開時はキャッシュ内の API 応答を再利用します。認証情報や声の識別子はパッケージに保存しません。生成は開発用ツールであり、再生に ElevenLabs の認証情報は不要です。
 
 ## 音声プロバイダー契約
 
@@ -358,7 +358,7 @@ Bootstrap は `study:audio:provider` を必須とし、辞書と筆順のプロ�
 
 ## 参照項目の完全な読みの録音
 
-日本語はさらに `data/audio/reference/` の容量制限付きバンクに、完全な読みのニューラル音声 2,913 件を同梱します。初期録音と合わせて、原資料で読みが分かる全 12,356 字の優先読みに対応します。残る 752 字には読みが記録されておらず、音声を捏造しません。索引は最初の読みを選び、ファイル範囲と中断を確認します。`python3 scripts/reference-audio.py plan --work <directory>` で計画を作り、合成スクリプトで一覧を処理し、`pack` で容量制限付きバンクを生成します。
+日本語はさらに `data/audio/reference/` の容量制限付きバンクに、完全な読みのニューラル音声 2,913 件を同梱します。初期録音と合わせて、原資料で読みが分かる全 12,356 字の優先読みに対応します。残る 752 字には読みが記録されておらず、音声を捏造しません。索引は最初の読みを選び、ファイル範囲と中断を確認します。`python3 scripts/reference-audio.py plan --work <directory>` で計画を作成します。`python3 scripts/synthesize-audio.py --inventory <directory>/inventory.json --assets <directory>/assets --cache <非公開キャッシュディレクトリ>` で完全な `inventory.json` を処理し、`python3 scripts/reference-audio.py pack --work <directory>` で容量制限付きバンクを再構築します。
 
 日本語の並べ替えツールは `--dictionary <JMdict.gz> --kanji-dictionary <KANJIDIC2.xml.gz> --output <priorities.json>` と任意の `--content-root data/library/content` に対応します。一般的な独立語の読みを優先し、他の読みは実在語の対応付けを頻度で重み付けして並べ、`data/audio/primary-readings.json` の確認済み単字カード用の指定を維持します。連濁と促音化は原資料の標準読みに戻して集計します。訓・音・名乗りの読みを保持し、選択された最初の読みだけが再生とキャッシュ識別を決めます。頻度情報は順序付けの手掛かりであり、全発音に通用する普遍的な頻度測定ではありません。
 

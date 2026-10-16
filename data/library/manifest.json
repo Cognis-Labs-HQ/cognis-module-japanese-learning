@@ -2,7 +2,7 @@
     "id": "japanese-core",
     "publisher": "Cognis Labs HQ",
     "version": "2.2.105",
-    "contentRevision": "2026-10-15.audio-quality-reference",
+    "contentRevision": "2026-10-16.elevenlabs-audio",
     "schema": "schema.json",
     "content": "content",
     "license": {
@@ -39,9 +39,9 @@
             }
         ],
         "audio": {
-            "source": "kokoro-multilingual",
-            "license": "Apache-2.0",
-            "attribution": "Kokoro multilingual model; hexgrad and contributors; https://huggingface.co/hexgrad/Kokoro-82M"
+            "source": "elevenlabs",
+            "license": "LicenseRef-ElevenLabs-Terms",
+            "attribution": "Generated with ElevenLabs using the configured language voice. https://elevenlabs.io/terms-of-use"
         }
     },
     "assets": "assets"

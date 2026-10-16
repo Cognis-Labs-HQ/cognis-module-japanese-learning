@@ -334,9 +334,9 @@ Jisho candidates without a complete Kana reconstruction are rejected. Multi-read
 
 ## Pronunciation audio
 
-Seed recordings use the offline Kokoro multilingual neural model with the English `bf_emma` and Japanese `jf_alpha` voices. Clips are encoded at 128 kbps with a 200 ms lead-in, a 180 ms tail, bounded peak normalization and slower speech. Model attribution and Apache licensing are recorded in `data/audio/VOICE-LICENSE.txt`; the recording inventory records the voice and processing settings.
+Seed recordings are generated with the ElevenLabs API using `ELEVENLABS_EN_VOICE_ID` for English and `ELEVENLABS_JA_VOICE_ID` for Japanese. Clips use slower speech, 128 kbps encoding, a 200 ms quiet lead-in, a 180 ms tail and bounded peak normalization. The inventory records model and processing parameters; `data/audio/VOICE-LICENSE.txt` describes the applicable ElevenLabs terms.
 
-Regenerate the inventory with `node scripts/generate-audio.mjs`. Install optional tools from `scripts/audio-requirements.txt`, provide FFmpeg, and run `python3 scripts/synthesize-audio.py --model <kokoro-model> --voices <voice-bank> --force`. Voice models remain developer tooling and are not shipped as production dependencies.
+Regenerate the inventory with `node scripts/generate-audio.mjs`. Provide Python, FFmpeg and `ELEVENLABS_API_KEY` together with the language voice variable, then run `python3 scripts/synthesize-audio.py --cache <private-cache-directory>`. The cache reuses API responses when resuming a run. Credentials and voice identifiers are never written to the package. Generation is developer tooling; playback requires no ElevenLabs credentials.
 
 ## Audio provider contract
 
@@ -358,7 +358,7 @@ Rebuild the reference shards with `python3 scripts/import-reference.py --source 
 
 ## Whole-reading reference audio
 
-Japanese additionally ships 2,913 whole-reading neural clips in bounded banks under `data/audio/reference/`. Together with seed recordings they cover the primary readings of all 12,356 source characters that have a reading; the remaining 752 source characters have no recorded reading and do not receive invented audio. The bank index selects the first authored reading and checks file bounds and cancellation. Generate a plan with `python3 scripts/reference-audio.py plan --work <directory>`, render its inventories with the synthesis script, then use `pack` to write the bounded banks.
+Japanese additionally ships 2,913 whole-reading neural clips in bounded banks under `data/audio/reference/`. Together with seed recordings they cover the primary readings of all 12,356 source characters that have a reading; the remaining 752 source characters have no recorded reading and do not receive invented audio. The bank index selects the first authored reading and checks file bounds and cancellation. Generate a plan with `python3 scripts/reference-audio.py plan --work <directory>`. Render the complete `inventory.json` with `python3 scripts/synthesize-audio.py --inventory <directory>/inventory.json --assets <directory>/assets --cache <private-cache-directory>`, then run `python3 scripts/reference-audio.py pack --work <directory>` to rebuild the bounded banks.
 
 The Japanese ranking tool accepts `--dictionary <JMdict.gz> --kanji-dictionary <KANJIDIC2.xml.gz> --output <priorities.json>` and optional `--content-root data/library/content`. It prefers common standalone lexical readings, ranks other readings from frequency-weighted alignments of attested words, and preserves reviewed isolated-card choices from `data/audio/primary-readings.json`. Voicing and gemination map back to canonical source readings. Kun, on and name readings remain available; a selected first reading alone determines playback and lookup cache identity. Source frequency markers are an ordering aid, not a universal pronunciation-frequency measurement.
 

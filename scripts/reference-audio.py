@@ -37,7 +37,7 @@ if args.action == "plan":
                         "entries": [],
                     },
                 )["entries"].append(record["slug"])
-    plan = {"source": "kokoro-multilingual", "recordings": list(readings.values())}
+    plan = {"source": "elevenlabs", "recordings": list(readings.values())}
     work.mkdir(parents=True, exist_ok=True)
     (work / "inventory.json").write_text(
         json.dumps(plan, ensure_ascii=False, indent=4) + "\n"
@@ -65,9 +65,10 @@ else:
     destination = root / "data/audio/reference"
     destination.mkdir(parents=True, exist_ok=True)
     index = {
-        "source": "kokoro-multilingual",
-        "voice": "jf_alpha",
-        "license": "Apache-2.0",
+        "source": inventory["source"],
+        "processing": inventory["processing"],
+        "voiceEnvironment": "ELEVENLABS_JA_VOICE_ID",
+        "license": "LicenseRef-ElevenLabs-Terms",
         "records": {},
     }
     bank = bytearray()
