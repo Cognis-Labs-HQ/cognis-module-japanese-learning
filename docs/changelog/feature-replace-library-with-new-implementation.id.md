@@ -188,6 +188,10 @@ Alat pemeringkat Jepang menerima `--dictionary <JMdict.gz> --kanji-dictionary <K
 
 ElevenLabs dinyatakan sebagai dependensi modul opsional. Instalasi dapat menawarkannya untuk sintesis ucapan, tetapi Study serta audio manual dan komposit tetap tersedia tanpanya.
 
+## Terbitkan ucapan tanpa hak istimewa
+
+Terbitkan `elevenlabs-tts:synthesis` di namespace milik modul dan hapus penanda hak istimewa. Study Inggris dan Jepang menemukan kapabilitas ini melalui ctx dengan dependensi modul opsional yang ada. Jembatan Study menerima pengambil kapabilitas langsung dari pemanggil sehingga penonaktifan, pengaktifan kembali, dan suara yang diatur tetap berfungsi.
+
 ## Komit
 
 - [7d529da8](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/7d529da851a5301f3dd04ee4b1d71e17053248f9)
@@ -222,3 +226,4 @@ ElevenLabs dinyatakan sebagai dependensi modul opsional. Instalasi dapat menawar
 - [6a0ed76b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/6a0ed76b5c9afa7d7ab1352cd002630b0b334f90)
 - [4b2be811](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/4b2be81112494881d4e87e56d19bf94bc1ea801d)
 - [293ce22](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/293ce2259636c1c527f4e8b477782f6fc2153198)
+- [c6fa056](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/c6fa05621ba5a97c218d2aafab91e10e6a2d305c)

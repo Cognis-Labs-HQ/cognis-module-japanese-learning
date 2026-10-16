@@ -188,6 +188,10 @@ SVGの滑らかな二次曲線は直前の二次制御点を反転し、三次�
 
 ElevenLabsを任意のモジュール依存関係として宣言します。インストール時に音声合成用として選択できますが、未導入でもStudyの有効化と録音・結合音声を使用できます。
 
+## 特権なしで音声機能を公開
+
+モジュール自身の名前空間で `elevenlabs-tts:synthesis` を公開し、特権フラグを削除します。英語・日本語Studyは既存の任意依存関係を利用し、ctx経由で機能を解決します。Studyの橋渡し処理は呼び出し側から現在の機能を取得する関数を受け取り、無効化・再有効化と設定済み音声に対応します。
+
 ## コミット
 
 - [7d529da8](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/7d529da851a5301f3dd04ee4b1d71e17053248f9)
@@ -222,3 +226,4 @@ ElevenLabsを任意のモジュール依存関係として宣言します。イ�
 - [6a0ed76b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/6a0ed76b5c9afa7d7ab1352cd002630b0b334f90)
 - [4b2be811](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/4b2be81112494881d4e87e56d19bf94bc1ea801d)
 - [293ce22](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/293ce2259636c1c527f4e8b477782f6fc2153198)
+- [c6fa056](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/c6fa05621ba5a97c218d2aafab91e10e6a2d305c)
