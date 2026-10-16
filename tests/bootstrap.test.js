@@ -11,6 +11,8 @@ function bootstrapModule(ctx) {
 
 test("ingests the declarative pack through the host Library capability", async () => {
     const calls = [];
+    const audio = [];
+    let speech;
     const contributions = [];
     const providers = [];
     const apiRoutes = [];
@@ -24,7 +26,12 @@ test("ingests the declarative pack through the host Library capability", async (
             },
             require(id) {
                 if (id === "study:audio:provider")
-                    return { registerLanguage: () => () => {} };
+                    return {
+                        registerLanguage: (...args) => {
+                            audio.push(args);
+                            return () => {};
+                        },
+                    };
                 assert.equal(id, "study:library:provider");
                 return {
                     registerLookupProvider(provider) {
@@ -45,6 +52,10 @@ test("ingests the declarative pack through the host Library capability", async (
                 };
             },
         },
+        getCapability(id) {
+            assert.equal(id, "elevenlabs-tts:synthesis");
+            return speech;
+        },
         registerStaticDir() {},
         registerApiDelete(routePath, handler, options) {
             apiRoutes.push({ routePath, handler, options });
@@ -57,6 +68,14 @@ test("ingests the declarative pack through the host Library capability", async (
     };
 
     const dispose = await bootstrapModule(ctx);
+    const [language, configuration, resolveSpeech] = audio[0];
+    assert.equal(language, "ja");
+    assert.deepEqual(configuration(), {});
+    assert.equal(resolveSpeech(), undefined);
+    speech = { revision: "one", synthesize() {} };
+    assert.equal(resolveSpeech(), speech);
+    speech = undefined;
+    assert.equal(resolveSpeech(), undefined);
 
     assert.deepEqual(calls, [path.join(ctx.moduleRoot, "data", "library")]);
     assert.equal(apiRoutes.length, 1);
