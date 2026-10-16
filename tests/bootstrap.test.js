@@ -72,8 +72,12 @@ test("ingests the declarative pack through the host Library capability", async (
     assert.equal(language, "ja");
     assert.deepEqual(configuration(), {});
     assert.equal(resolveSpeech(), undefined);
-    speech = { revision: "one", synthesize() {} };
+    speech = { configured: false, revision: "one", synthesize() {} };
+    assert.equal(resolveSpeech(), undefined);
+    speech.configured = true;
     assert.equal(resolveSpeech(), speech);
+    speech.configured = false;
+    assert.equal(resolveSpeech(), undefined);
     speech = undefined;
     assert.equal(resolveSpeech(), undefined);
 

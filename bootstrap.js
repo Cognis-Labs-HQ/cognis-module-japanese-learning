@@ -97,7 +97,12 @@ export async function bootstrapModule(ctx) {
             audio.registerLanguage(
                 "ja",
                 () => configuration.value,
-                () => ctx.getCapability("elevenlabs-tts:synthesis"),
+                () => {
+                    const speech = ctx.getCapability(
+                        "elevenlabs-tts:synthesis",
+                    );
+                    return speech?.configured === true ? speech : undefined;
+                },
             ),
         );
         providerRemovers.push(
