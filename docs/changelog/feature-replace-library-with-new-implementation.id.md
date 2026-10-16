@@ -200,6 +200,10 @@ Kapabilitas yang diterbitkan melaporkan kesiapan langsung melalui `configured`. 
 
 Hapus deklarasi direktori aset yang tidak digunakan dari paket konten khusus data dan tingkatkan versinya. Validasi jalur paket melalui instalasi sementara yang hanya berisi berkas terkemas agar aktivasi tidak bergantung pada direktori lokal kosong.
 
+## Kirim rekaman suara yang konsisten
+
+Rekaman dengan suara khusus bahasa disertakan untuk semua kartu terkurasi yang bersuara serta varian jamak atau verba/adverbia yang dapat dicapai. WAV kalimat memakai PCM penyusun yang sama persis sesuai urutan dan transformasi terpilih. Asal suara, model, permintaan, checksum, dan pemeriksaan keheningan dicatat tanpa menyertakan kredensial.
+
 ## Komit
 
 - [7d529da8](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/7d529da851a5301f3dd04ee4b1d71e17053248f9)

@@ -1,3 +1,4 @@
+import { createAudioProvider } from "./api/audio/index.js";
 import { createReferenceProvider } from "./api/dictionary/reference.js";
 import { registerApi } from "./api/index.js";
 import { readFileSync } from "node:fs";
@@ -94,15 +95,33 @@ export async function bootstrapModule(ctx) {
     let receipt;
     try {
         providerRemovers.push(
-            audio.registerLanguage(
-                "ja",
-                () => configuration.value,
-                () => {
-                    const speech = ctx.getCapability(
-                        "elevenlabs-tts:synthesis",
-                    );
-                    return speech?.configured === true ? speech : undefined;
-                },
+            audio.registerProvider(
+                createAudioProvider({
+                    root: path.join(
+                        ctx.moduleRoot,
+                        "data",
+                        "library",
+                        "assets",
+                    ),
+                    inventory: JSON.parse(
+                        readFileSync(
+                            new URL(
+                                "./data/audio/recordings.json",
+                                import.meta.url,
+                            ),
+                            "utf8",
+                        ),
+                    ),
+                    revision: MODULE_MANIFEST.version,
+                    configuration: () => configuration.value,
+                    speech: () => {
+                        const speech = ctx.getCapability(
+                            "elevenlabs-tts:synthesis",
+                        );
+                        return speech?.configured === true ? speech : undefined;
+                    },
+                    log: ctx.log,
+                }),
             ),
         );
         providerRemovers.push(

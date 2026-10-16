@@ -200,6 +200,10 @@ The published capability reports live `configured` readiness. Study enables auto
 
 Remove the unused asset-directory declaration from the data-only content pack and advance its version. Validate declared pack paths against a temporary installation built solely from packaged files, preventing activation from depending on empty checkout directories.
 
+## Ship consistent voice recordings
+
+Package designated-language recordings for every spoken curated card and reachable plural or verb/adverb variant. Sentence WAV files reuse exact ordered constituent PCM, including selected transformations. Voice/model/request provenance, digests and silence checks are recorded; no credentials are bundled.
+
 ## Commits
 
 - [7d529da8](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/7d529da851a5301f3dd04ee4b1d71e17053248f9)

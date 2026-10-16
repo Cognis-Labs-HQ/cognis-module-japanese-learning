@@ -99,7 +99,7 @@ function loadPack() {
     return { manifest, schema, records };
 }
 
-test("declares a data-only Japanese Library content pack", () => {
+test("declares a Japanese Library content pack with bundled recordings", () => {
     const { manifest, schema } = loadPack();
     assert.equal(manifest.id, "japanese-core");
     assert.equal(manifest.schema, "schema.json");

@@ -200,6 +200,10 @@ Die veröffentlichte Fähigkeit meldet ihre aktuelle Bereitschaft über `configu
 
 Die ungenutzte Medienverzeichnis-Deklaration aus dem reinen Datenpaket entfernen und dessen Version erhöhen. Deklarierte Paketpfade anhand einer temporären Installation ausschließlich aus verpackten Dateien prüfen, damit die Aktivierung nicht von leeren lokalen Verzeichnissen abhängt.
 
+## Konsistente Sprachaufnahmen
+
+Festgelegte Sprachaufnahmen werden für jede vertonte kuratierte Karte und jede erreichbare Plural-, Verb- oder Adverbform mitgeliefert. Satz-WAV-Dateien verwenden exakt die geordneten PCM-Daten der Bestandteile einschließlich ausgewählter Transformationen. Stimme, Modell, Anforderungen, Prüfsummen und Stilleprüfungen sind dokumentiert; Zugangsdaten werden nicht mitgeliefert.
+
 ## Commits
 
 - [7d529da8](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/7d529da851a5301f3dd04ee4b1d71e17053248f9)
