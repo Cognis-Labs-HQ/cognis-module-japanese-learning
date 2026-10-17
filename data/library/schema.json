@@ -1,6 +1,6 @@
 {
     "id": "japanese-core",
-    "version": 93,
+    "version": 94,
     "namespace": "ja",
     "language": "ja",
     "metadata": {
@@ -158,6 +158,21 @@
                     "hidden": true,
                     "input": {
                         "control": "freeText"
+                    }
+                },
+                {
+                    "id": "reference_images",
+                    "type": "imageList",
+                    "metadata": {
+                        "labels": {
+                            "en": "Reference Images",
+                            "de": "Referenzbilder",
+                            "ja": "参考画像",
+                            "id": "Gambar Referensi"
+                        }
+                    },
+                    "input": {
+                        "control": "imageFiles"
                     }
                 }
             ],
@@ -478,6 +493,21 @@
                     "input": {
                         "control": "freeText"
                     }
+                },
+                {
+                    "id": "reference_images",
+                    "type": "imageList",
+                    "metadata": {
+                        "labels": {
+                            "en": "Reference Images",
+                            "de": "Referenzbilder",
+                            "ja": "参考画像",
+                            "id": "Gambar Referensi"
+                        }
+                    },
+                    "input": {
+                        "control": "imageFiles"
+                    }
                 }
             ],
             "relationships": [
@@ -592,6 +622,21 @@
                     },
                     "input": {
                         "control": "localizedText"
+                    }
+                },
+                {
+                    "id": "reference_images",
+                    "type": "imageList",
+                    "metadata": {
+                        "labels": {
+                            "en": "Reference Images",
+                            "de": "Referenzbilder",
+                            "ja": "参考画像",
+                            "id": "Gambar Referensi"
+                        }
+                    },
+                    "input": {
+                        "control": "imageFiles"
                     }
                 }
             ],
@@ -761,6 +806,21 @@
                             "namespace": "study-library-audio",
                             "prefix": "ja/"
                         }
+                    }
+                },
+                {
+                    "id": "reference_images",
+                    "type": "imageList",
+                    "metadata": {
+                        "labels": {
+                            "en": "Reference Images",
+                            "de": "Referenzbilder",
+                            "ja": "参考画像",
+                            "id": "Gambar Referensi"
+                        }
+                    },
+                    "input": {
+                        "control": "imageFiles"
                     }
                 }
             ],
@@ -955,6 +1015,21 @@
                             "prefix": "ja/"
                         }
                     }
+                },
+                {
+                    "id": "reference_images",
+                    "type": "imageList",
+                    "metadata": {
+                        "labels": {
+                            "en": "Reference Images",
+                            "de": "Referenzbilder",
+                            "ja": "参考画像",
+                            "id": "Gambar Referensi"
+                        }
+                    },
+                    "input": {
+                        "control": "imageFiles"
+                    }
                 }
             ],
             "detail": {
@@ -1110,6 +1185,21 @@
                             "prefix": "ja/"
                         }
                     }
+                },
+                {
+                    "id": "reference_images",
+                    "type": "imageList",
+                    "metadata": {
+                        "labels": {
+                            "en": "Reference Images",
+                            "de": "Referenzbilder",
+                            "ja": "参考画像",
+                            "id": "Gambar Referensi"
+                        }
+                    },
+                    "input": {
+                        "control": "imageFiles"
+                    }
                 }
             ],
             "detail": {
@@ -1125,7 +1215,7 @@
                         "ja": "文"
                     }
                 },
-                "fields": [],
+                "fields": ["reference_images"],
                 "relationships": ["words", "particles", "definitions"],
                 "input_carousels": ["words", "particles"],
                 "pronunciation_carousels": [],

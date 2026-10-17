@@ -26,7 +26,7 @@ function fieldValueMatchesType(value, type) {
     if (type === "string" || type === "asset" || type === "audio")
         return typeof value === "string";
     if (type === "boolean") return typeof value === "boolean";
-    if (type === "stringList") {
+    if (["stringList", "imageList"].includes(type)) {
         return (
             Array.isArray(value) &&
             value.every((item) => typeof item === "string")

@@ -1,8 +1,8 @@
 {
     "id": "japanese-core",
     "publisher": "Cognis Labs HQ",
-    "version": "2.3.3",
-    "contentRevision": "2026-10-17.small-kana-adverb-recordings",
+    "version": "2.4.0",
+    "contentRevision": "2026-10-17.reference-images",
     "schema": "schema.json",
     "content": "content",
     "license": {
@@ -36,6 +36,13 @@
                 "license": "EDRDG Electronic Dictionary Licence",
                 "attribution": "Electronic Dictionary Research and Development Group",
                 "derivedFields": ["alt-characters.pronunciation"]
+            },
+            {
+                "id": "wikimedia-labrador",
+                "url": "https://commons.wikimedia.org/wiki/File:YellowLabradorLooking_new.jpg",
+                "license": "CC-BY-SA-3.0",
+                "attribution": "Elf (original photograph), Djmirko (derivative)",
+                "derivedFields": ["words.reference_images"]
             }
         ]
     },

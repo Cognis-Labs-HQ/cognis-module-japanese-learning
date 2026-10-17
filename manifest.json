@@ -2,7 +2,7 @@
     "id": "study-language-ja",
     "uuid": "e905927f-b133-572a-92ce-2ea8645e5ceb",
     "name": "module.study.language.ja.name",
-    "version": "2.4.4",
+    "version": "2.4.5",
     "class": "extension",
     "coreApiVersion": "v1",
     "capabilities": ["study:language:ja"],
@@ -2223,6 +2223,14 @@
             "sha256": "4930d2497dea0100d9f27143e460e45ffb1b872dc18e8287d95d83daed0b80d5"
         },
         {
+            "path": "data/library/assets/images/LICENSE.md",
+            "sha256": "778b04550a7fc0e420dcd3b3ae486c75064f7de372221b568d04a15f74fddb44"
+        },
+        {
+            "path": "data/library/assets/images/dog.jpg",
+            "sha256": "d4cb12ea8a768582562e1f1c0c930ea6fc4757f5b66551b986b41498efd75ca1"
+        },
+        {
             "path": "data/library/content/alt-characters/kanji-001.json",
             "sha256": "c0721a4089dc08a00fb43779f3233405efb8bcbba76e8cbf26fe14c410b804f5"
         },
@@ -2768,7 +2776,7 @@
         },
         {
             "path": "data/library/content/words/vocabulary-002.json",
-            "sha256": "01b278aedd30ccab45e887b2c014a37bd6ef5a107f5a15a6ee66c74caa0cf5fa"
+            "sha256": "21322adcde540462e18562102555b5ccdf5a546cbd38d9eaa800717b595bac9f"
         },
         {
             "path": "data/library/jisho-classes.json",
@@ -2776,7 +2784,7 @@
         },
         {
             "path": "data/library/manifest.json",
-            "sha256": "f21abfe257bb44d00b9717aca915085f7ed46bff8977dedb5e5e37b99eb1c2a9"
+            "sha256": "f3415df1ed5887eea1291997e0a252178d0d89095453d46ac7dce9418f668273"
         },
         {
             "path": "data/library/primary-readings.json",
@@ -2784,7 +2792,7 @@
         },
         {
             "path": "data/library/schema.json",
-            "sha256": "c375888a3a6aaa31573302c26cbb5b2a4ba5264b5bf39194c9035c810da065eb"
+            "sha256": "e0888ab337bbf71410a5d3723ca7a60ed51398a359cca5e699481a8aba630961"
         },
         {
             "path": "data/reference/00.json.gz",
@@ -3824,19 +3832,19 @@
         },
         {
             "path": "docs/index.de.md",
-            "sha256": "554872ad86a4a6c769d70ad4f2237050938e5489255579fc59e8b6c4df52c65a"
+            "sha256": "db9a64d5e69a18cc32ec0dd4b0af05ae91d70fbbc0b860cc65348da9f7d3685a"
         },
         {
             "path": "docs/index.en.md",
-            "sha256": "57abc5e62c6b2a303afe1d09b24fc90d64a3f3dc902bb001ecc148600f80b20a"
+            "sha256": "ae09fe0853bf34ab6ae9934dc7c6a79d28f01ce38dff9fde921575b9ef2569a3"
         },
         {
             "path": "docs/index.id.md",
-            "sha256": "77cfb4534331f18cff9a4dec71ed06512df55bc2150ad6fb0208a1fbc09248fb"
+            "sha256": "a5f7e15f405d9fac59505bee597339718c220cfc9e00c83b6f3d75a2c44ea32d"
         },
         {
             "path": "docs/index.ja.md",
-            "sha256": "bebb525ddf6f1f8e529ce277419080e757f9145777680beb71a0e342aac79f12"
+            "sha256": "158fd2a0d7386b028ec974ab2585bc64be121b859dd77978988513eca3db9d6d"
         },
         {
             "path": "docs/jisho.de.md",
@@ -3856,11 +3864,11 @@
         },
         {
             "path": "package-lock.json",
-            "sha256": "1c9f4503909a011e9b004949d212e624414ec1c2fa5ad4db2f8045afb922390e"
+            "sha256": "319fb690410430fef0dac11fcbfa35c060b45c17de19460ee179ef55fc43f663"
         },
         {
             "path": "package.json",
-            "sha256": "a0d564bcb7481056a42f1f96e09e0009d891ef1c0f5dc50ccf4b1f10c0e31397"
+            "sha256": "4335e3ab4d1eb512078765b4528634df2bd391da5f0234e4fabcfda0b2cf05ff"
         },
         {
             "path": "routes.json",
@@ -3912,7 +3920,7 @@
         },
         {
             "path": "tests/content-pack.test.js",
-            "sha256": "503ebe10bd3c9caeebfbeea7620952a20d43fa006adb076fcc00030ac566d209"
+            "sha256": "2047d4d05c94344f24d0ec3a87c26ac0fd02935aecb677436461fb17527a4794"
         },
         {
             "path": "tests/dataset-expansion.test.js",
@@ -3949,6 +3957,10 @@
         {
             "path": "tests/packaging.test.js",
             "sha256": "a783f1c2a43f51cb85d962617d34cdd62833d5c018ef1578526fa50a3e5d9d15"
+        },
+        {
+            "path": "tests/reference-images.test.js",
+            "sha256": "32d4126a46acc41a5d1a238f607894cb019e5aa762c5f69f562d4103e1554753"
         },
         {
             "path": "tests/relationship-authoring.test.js",
