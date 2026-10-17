@@ -316,8 +316,8 @@ test("Jisho provider never emits a partial Kana pronunciation group", async () =
                     return {
                         data: [
                             {
-                                slug: "コーヒー",
-                                japanese: [{ reading: "コーヒー" }],
+                                slug: "コㇰヒー",
+                                japanese: [{ reading: "コㇰヒー" }],
                                 senses: [],
                                 tags: [],
                                 jlpt: [],
@@ -329,7 +329,7 @@ test("Jisho provider never emits a partial Kana pronunciation group", async () =
         },
     });
     assert.deepEqual(
-        await provider.lookup({ schema, layer: wordLayer, label: "コーヒー" }),
+        await provider.lookup({ schema, layer: wordLayer, label: "コㇰヒー" }),
         [],
     );
 });

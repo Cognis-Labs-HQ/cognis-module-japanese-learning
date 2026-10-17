@@ -6,7 +6,7 @@ import test from "node:test";
 const ROOT = path.resolve(import.meta.dirname, "..");
 const PACK_ROOT = path.join(ROOT, "data", "library");
 const CONTENT_ID_PATTERN = /^[a-z0-9]+(?:[-_.:][a-z0-9]+)*$/;
-const SCHEMA_ID_PATTERN = /^[a-z0-9]+(?:[-_][a-z0-9]+)*$/;
+const SCHEMA_ID_PATTERN = /^[a-z0-9]+(?:[-_.][a-z0-9]+)*$/;
 const SEMANTIC_VERSION_PATTERN = /^\d+\.\d+\.\d+(?:-[0-9A-Za-z.-]+)?$/;
 
 function assertLocalizedText(value) {
@@ -174,7 +174,7 @@ test("definition records resolve through module-owned localized strings", () => 
     for (const definition of definitions) {
         assert.match(
             definition.fields.string_key,
-            /^japanese:definitions:[a-z0-9]+(?:[-_][a-z0-9]+)*$/,
+            /^japanese:definitions:[a-z0-9]+(?:[-_.][a-z0-9]+)*$/,
         );
         assertLocalizedText(definition.fields.translations);
         assert.ok(definition.fields.translations.en.trim());

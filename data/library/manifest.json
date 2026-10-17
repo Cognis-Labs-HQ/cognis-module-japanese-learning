@@ -1,8 +1,8 @@
 {
     "id": "japanese-core",
     "publisher": "Cognis Labs HQ",
-    "version": "2.4.2",
-    "contentRevision": "2026-10-17.vocabulary-photos",
+    "version": "2.4.3",
+    "contentRevision": "2026-10-18.illustrated-household",
     "schema": "schema.json",
     "content": "content",
     "license": {
@@ -36,18 +36,12 @@
                 "license": "EDRDG Electronic Dictionary Licence",
                 "attribution": "Electronic Dictionary Research and Development Group",
                 "derivedFields": ["alt-characters.pronunciation"]
-            },
-            {
-                "id": "wikimedia-labrador",
-                "url": "https://commons.wikimedia.org/wiki/File:YellowLabradorLooking_new.jpg",
-                "license": "CC-BY-SA-3.0",
-                "attribution": "Elf (original photograph), Djmirko (derivative)",
-                "derivedFields": ["words.reference_images"]
             }
         ],
         "referenceImages": {
             "catalog": "assets/images/catalog.json",
-            "attribution": "assets/images/LICENSE.md"
+            "attribution": "assets/images/LICENSE.md",
+            "style": "anime"
         }
     },
     "assets": "assets"

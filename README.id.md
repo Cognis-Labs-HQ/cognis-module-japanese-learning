@@ -271,6 +271,10 @@ Berkas memakai PCM mono 24 kHz 16 bit dengan puncak terbatas dan keluaran yang d
 
 Rekaman kata Jepang dengan kana kecil, termasuk 学校, dibuat ulang dengan ejaan kanji jika tersedia menggunakan suara Jepang yang ditetapkan dan pengaturan stabil. Kalimat bawaan disusun ulang dari klip yang sama persis. Transformasi adjektiva I dan Na mencakup bentuk adverbial, negatif, serta lampau, dengan rekaman khusus untuk bentuk bawaan. Rekaman jamak bahasa Inggris tetap berupa aset khusus dan diputar saat bentuk tersebut dipilih.
 
-## Foto Referensi Kosakata
+## Ilustrasi Kosakata
 
-33 kartu kosakata terkurasi kini memiliki foto referensi bawaan (32 berkas gambar). Cakupan meliputi semua nomina konkret serta tindakan dan sifat yang jelas secara visual; tata bahasa, pronomina, dan konsep abstrak tidak diberi gambar pengisi yang menyesatkan. Homofon Jepang seperti 花/鼻, 橋/箸, 雨/飴, dan 紙/髪/神 memakai referensi berbeda. Gambar dimuat secara lokal melalui galeri detail kartu dan pratinjau gambar penuh yang sudah ada. Judul sumber, pembuat, lisensi Creative Commons/domain publik per gambar, serta checksum dicatat dalam [katalog gambar](data/library/assets/images/catalog.json) dan [kredit foto](data/library/assets/images/LICENSE.md). Gambar kartu khusus pengguna tetap dilindungi host saat penyedia dimuat ulang.
+Setiap kartu kosakata bawaan kini memiliki ilustrasi tersendiri yang dihasilkan dengan gaya anime (70 kartu). Benda konkret, tindakan, dan adegan kontekstual untuk konsep abstrak ditampilkan melalui galeri detail kartu dan popup gambar yang sudah ada. Foto sumber lama telah diganti. [Katalog gambar](data/library/assets/images/catalog.json) mencatat sumber pembuatan, gaya, asal potongan, checksum, dan pemetaan kartu; [lisensi gambar](data/library/assets/images/LICENSE.md) menjelaskan karya bawaan. Gambar dimuat secara lokal, dan host mempertahankan gambar khusus pengguna saat penyedia dimuat ulang.
+
+## Kosakata Rumah Tangga
+
+Lima belas nomina sehari-hari mencakup furnitur, pakaian, benda, dan makanan, dilengkapi makna dalam empat bahasa, tautan pelafalan, rekaman khusus, serta dek Benda Sehari-hari. Nomina bahasa Inggris yang dapat dihitung menyertakan transformasi jamak dengan rekaman, termasuk fish yang tidak berubah; rice tetap nomina tak terhitung. Ejaan Jepang untuk pemula menautkan bacaan lengkap ke kana atomik, termasuk tanda vokal panjang ー dalam テーブル dan コート.

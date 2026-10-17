@@ -220,6 +220,14 @@ Shipped sentences use directly generated whole-sentence recordings before compos
 
 33 curated vocabulary cards now have bundled reference photographs (32 image files). Coverage includes every concrete noun plus visually clear actions and qualities; grammar, pronouns and other abstract concepts do not receive misleading filler images. Japanese homophones such as 花/鼻, 橋/箸, 雨/飴 and 紙/髪/神 use distinct references. Images load locally through the existing card detail gallery and full-image preview. Source titles, creators, individual Creative Commons/public-domain licenses and file checksums are recorded in [the image catalog](../../data/library/assets/images/catalog.json) and [photo credits](../../data/library/assets/images/LICENSE.md). Existing custom card images remain protected by the host during provider reloads.
 
+## Vocabulary Illustrations
+
+Every shipped vocabulary card now has its own generated anime-style illustration (70 cards). Concrete objects, actions and contextual scenes for abstract concepts use the existing card-detail gallery and full-image popup. The old source photographs have been replaced. [The image catalog](../../data/library/assets/images/catalog.json) records generation source, style, crop provenance, checksums and card assignments; [image licensing](../../data/library/assets/images/LICENSE.md) describes the bundled artwork. Images load locally, and the host preserves custom user images during provider reloads.
+
+## Household Vocabulary
+
+Fifteen everyday nouns cover furniture, clothing, objects and food, with four-language meanings, pronunciation links, dedicated recordings and a Household Essentials deck. English countable nouns include recorded plural transformations, including unchanged plural fish; rice remains a mass noun. Japanese beginner spellings link complete readings to atomic kana, including the long-vowel mark ー used in テーブル and コート.
+
 ## Commits
 
 - [7d529da8](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/7d529da851a5301f3dd04ee4b1d71e17053248f9)

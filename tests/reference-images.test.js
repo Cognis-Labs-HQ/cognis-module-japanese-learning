@@ -1,12 +1,13 @@
 import assert from "node:assert/strict";
 import { createHash } from "node:crypto";
-import { readFile } from "node:fs/promises";
+import { readFile, readdir } from "node:fs/promises";
 import test from "node:test";
 import { readContentLayers } from "../api/reuse/content.js";
 
 const schema = JSON.parse(await readFile("data/library/schema.json", "utf8"));
-const content = await readContentLayers("data/library/content", ["words"]);
-const records = content.get("words");
+const records = (
+    await readContentLayers("data/library/content", ["words"])
+).get("words");
 const entries = new Map(records.map((record) => [record.id, record]));
 const catalog = JSON.parse(
     await readFile("data/library/assets/images/catalog.json", "utf8"),
@@ -16,7 +17,7 @@ const attribution = await readFile(
     "utf8",
 );
 
-test("reference images are declared on every layer and the original dog photograph retains its credit", async () => {
+test("reference illustrations use the existing image-list contract and language-specific art style", () => {
     for (const layer of schema.layers) {
         const field = layer.fields.find(({ id }) => id === "reference_images");
         assert.equal(field.type, "imageList");
@@ -24,87 +25,67 @@ test("reference images are declared on every layer and the original dog photogra
         for (const locale of ["en", "de", "id", "ja"])
             assert.ok(field.metadata.labels[locale]);
     }
-    const card = records.find(
-        ({ label }) => label === (schema.language === "ja" ? "犬" : "dog"),
+    assert.equal(catalog.source, "OpenAI image generation");
+    assert.equal(
+        catalog.style,
+        schema.language === "ja" ? "anime" : "colored-pencil-watercolor",
     );
-    assert.deepEqual(card.fields.reference_images, ["images/dog.jpg"]);
-    assert.match(attribution, /CC BY-SA 3.0/);
-    assert.match(attribution, /Djmirko/);
+    assert.match(attribution, /AI-generated/);
+    assert.match(attribution, /AGPL-3.0-or-later/);
 });
 
-test("every curated concrete noun has a reference photograph, including distinct Japanese homophones", () => {
-    const abstract = new Set(
-        schema.language === "ja"
-            ? ["日本語", "私"]
-            : ["name", "English", "language", "question", "answer", "country"],
-    );
-    for (const card of records.filter(
-        (record) =>
-            !record.hidden &&
-            record.class === "lexical:noun" &&
-            !abstract.has(record.label),
-    )) {
-        assert.ok(card.fields.reference_images?.length, card.label);
-    }
-    if (schema.language === "ja") {
-        for (const group of [
-            ["hana-flower", "hana-nose"],
-            ["hashi-bridge", "hashi-chopsticks"],
-            ["ame-rain", "ame-candy"],
-            ["kami-paper", "kami-hair", "kami-deity"],
-        ]) {
-            const photos = group.map(
-                (id) => entries.get(`ja:word:${id}`).fields.reference_images[0],
-            );
-            assert.equal(new Set(photos).size, group.length);
-        }
+test("every visible vocabulary card has a distinct illustration, including abstract concepts and Japanese homophones", () => {
+    const visible = records.filter((record) => !record.hidden);
+    assert.equal(catalog.images.length, visible.length);
+    const digests = new Set();
+    for (const card of visible) {
+        assert.equal(card.fields.reference_images?.length, 1, card.id);
+        const image = catalog.images.find(
+            (item) => item.path === card.fields.reference_images[0],
+        );
+        assert.ok(image, card.id);
+        assert.deepEqual(image.entryIds, [card.id]);
+        assert.equal(digests.has(image.sha256), false, card.id);
+        digests.add(image.sha256);
     }
 });
 
-test("bundled photographs have verified JPEG bytes, explicit open licenses and complete card-to-credit assignments", async () => {
-    const byPath = new Map(catalog.images.map((photo) => [photo.path, photo]));
+test("illustration JPEGs have verified bytes, crop provenance and complete bundled assignments", async () => {
+    const byPath = new Map(catalog.images.map((image) => [image.path, image]));
     assert.equal(byPath.size, catalog.images.length);
-    for (const photo of catalog.images) {
-        assert.match(photo.path, /^images\/[a-z-]+\.jpg$/);
-        assert.ok(photo.creator && photo.title && photo.modifications);
+    const files = (await readdir("data/library/assets/images")).filter((name) =>
+        name.endsWith(".jpg"),
+    );
+    assert.deepEqual(
+        files.sort(),
+        catalog.images.map((image) => image.path.slice(7)).sort(),
+    );
+    for (const image of catalog.images) {
+        assert.match(image.path, /^images\/[a-z-]+\.jpg$/);
+        assert.ok(image.title);
         assert.match(
-            photo.sourceUrl,
-            /^https:\/\/commons\.wikimedia\.org\/wiki\/File:/,
+            image.sourceSheet,
+            new RegExp(`^${schema.language}-art-sheet-\\d{2}$`),
         );
-        assert.match(
-            photo.license,
-            /^(CC BY(-SA)? (2\.0|2\.5|3\.0|4\.0)|CC0|Public domain)$/,
-        );
-        assert.match(photo.licenseUrl, /^https:\/\/creativecommons\.org\//);
-        assert.ok(attribution.includes(photo.sourceUrl));
-        assert.ok(attribution.includes(photo.creator.replaceAll("|", "\\|")));
-        assert.ok(attribution.includes(photo.licenseUrl));
-        const bytes = await readFile(`data/library/assets/${photo.path}`);
+        assert.match(image.sourceSha256, /^[a-f0-9]{64}$/);
+        assert.equal(image.crop.length, 4);
+        assert.equal(image.width, image.crop[2]);
+        assert.equal(image.height, image.crop[3]);
+        assert.ok(image.width >= 250 && image.height >= 250);
+        const bytes = await readFile(`data/library/assets/${image.path}`);
         assert.equal(
             bytes.subarray(0, 3).toString("hex"),
             "ffd8ff",
-            photo.path,
+            image.path,
         );
-        assert.ok(bytes.length > 256 && bytes.length <= 1500000, photo.path);
+        assert.ok(bytes.length > 256 && bytes.length <= 250000, image.path);
         assert.equal(
             createHash("sha256").update(bytes).digest("hex"),
-            photo.sha256,
-            photo.path,
+            image.sha256,
+            image.path,
         );
-        assert.ok(photo.width > 0 && photo.height > 0);
-        assert.ok(photo.entryIds.length);
-        for (const id of photo.entryIds) {
-            const card = entries.get(id);
-            assert.ok(card && !card.hidden, id);
-            assert.ok(card.fields.reference_images.includes(photo.path), id);
-        }
-    }
-    for (const card of records) {
-        for (const path of card.fields?.reference_images ?? []) {
-            assert.ok(
-                byPath.get(path)?.entryIds.includes(card.id),
-                `${card.id}: ${path}`,
-            );
-        }
+        const card = entries.get(image.entryIds[0]);
+        assert.ok(card && !card.hidden, image.entryIds[0]);
+        assert.ok(card.fields.reference_images.includes(image.path), card.id);
     }
 });
