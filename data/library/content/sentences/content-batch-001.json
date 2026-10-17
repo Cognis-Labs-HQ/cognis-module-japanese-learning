@@ -1,0 +1,317 @@
+[
+    {
+        "id": "ja:sentence:neko-wa-koko-ni-iru",
+        "label": "猫はここにいる",
+        "references": [
+            {
+                "entryId": "ja:word:neko",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:koko",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:ni",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:iru-exist",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:def:sentence-neko-wa-koko-ni-iru",
+                "relation": "definitions"
+            }
+        ],
+        "fields": {
+            "pronunciation": ["ねこはここにいる"],
+            "audio": "audio/2c3932f02e64a230626500c8d995fba0bfb418886041f6a6587251860e4c9d28.wav"
+        },
+        "class": "composite"
+    },
+    {
+        "id": "ja:sentence:inu-wa-soko-ni-iru",
+        "label": "犬はそこにいる",
+        "references": [
+            {
+                "entryId": "ja:word:inu",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:soko",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:ni",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:iru-exist",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:def:sentence-inu-wa-soko-ni-iru",
+                "relation": "definitions"
+            }
+        ],
+        "fields": {
+            "pronunciation": ["いぬはそこにいる"],
+            "audio": "audio/6652701594086169fe260b7132e08adb7acdb18d42878b8ef5ddcd88da0d46e0.wav"
+        },
+        "class": "composite"
+    },
+    {
+        "id": "ja:sentence:gakkou-wa-doko-desu",
+        "label": "学校はどこですか",
+        "references": [
+            {
+                "entryId": "ja:word:gakkou",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:doko",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:word:desu",
+                "relation": "words",
+                "position": 3
+            },
+            {
+                "entryId": "ja:particle:ka",
+                "relation": "particles",
+                "position": 4
+            },
+            {
+                "entryId": "ja:def:sentence-gakkou-wa-doko-desu",
+                "relation": "definitions"
+            }
+        ],
+        "fields": {
+            "pronunciation": ["がっこうはどこですか"],
+            "audio": "audio/714c79c32f968200762ac3403d261a95a10a2649412aa78a212153bb9c962637.wav"
+        },
+        "class": "composite"
+    },
+    {
+        "id": "ja:sentence:hana-wa-totemo-kirei",
+        "label": "花はとてもきれいです",
+        "references": [
+            {
+                "entryId": "ja:word:hana-flower",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:totemo",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:word:kirei",
+                "relation": "words",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:desu",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:def:sentence-hana-wa-totemo-kirei",
+                "relation": "definitions"
+            }
+        ],
+        "fields": {
+            "pronunciation": ["はなはとてもきれいです"],
+            "audio": "audio/a1ce20a60f84c836f6104dc622b0e5dc3d56ff87e34c873c3855f5be51f401c0.wav"
+        },
+        "class": "composite"
+    },
+    {
+        "id": "ja:sentence:inu-wa-yukkuri-aruku",
+        "label": "犬はゆっくり歩く",
+        "references": [
+            {
+                "entryId": "ja:word:inu",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:yukkuri",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:word:aruku",
+                "relation": "words",
+                "position": 3
+            },
+            {
+                "entryId": "ja:def:sentence-inu-wa-yukkuri-aruku",
+                "relation": "definitions"
+            }
+        ],
+        "fields": {
+            "pronunciation": ["いぬはゆっくりあるく"],
+            "audio": "audio/b8b6bfd0ccbb37ef12d6f6be5016c7e6716a971045dc476af4528baaba56c2bb.wav"
+        },
+        "class": "composite"
+    },
+    {
+        "id": "ja:sentence:mizu-wa-koko-ni-aru",
+        "label": "水はここにある",
+        "references": [
+            {
+                "entryId": "ja:word:mizu",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:koko",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:ni",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:aru-exist",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:def:sentence-mizu-wa-koko-ni-aru",
+                "relation": "definitions"
+            }
+        ],
+        "fields": {
+            "pronunciation": ["みずはここにある"],
+            "audio": "audio/9e722d01906e86fa9153ba5db46f965e8fc7dbf3e803be86469cb9a1a4130c37.wav"
+        },
+        "class": "composite"
+    },
+    {
+        "id": "ja:sentence:tomodachi-wa-soko-ni-iru",
+        "label": "友達はそこにいる",
+        "references": [
+            {
+                "entryId": "ja:word:tomodachi",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:soko",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:ni",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:iru-exist",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:def:sentence-tomodachi-wa-soko-ni-iru",
+                "relation": "definitions"
+            }
+        ],
+        "fields": {
+            "pronunciation": ["ともだちはそこにいる"],
+            "audio": "audio/cf793d9c4e799e0f45934a40eaff36d3db0118bd1a7200d98300dddd9d952b46.wav"
+        },
+        "class": "composite"
+    },
+    {
+        "id": "ja:sentence:kuruma-wa-doko-desu",
+        "label": "車はどこですか",
+        "references": [
+            {
+                "entryId": "ja:word:kuruma",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:doko",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:word:desu",
+                "relation": "words",
+                "position": 3
+            },
+            {
+                "entryId": "ja:particle:ka",
+                "relation": "particles",
+                "position": 4
+            },
+            {
+                "entryId": "ja:def:sentence-kuruma-wa-doko-desu",
+                "relation": "definitions"
+            }
+        ],
+        "fields": {
+            "pronunciation": ["くるまはどこですか"],
+            "audio": "audio/e62fa6b6bc76a10e28141082ca5ffbfe591d2458698be773912b3d7750a15d83.wav"
+        },
+        "class": "composite"
+    }
+]

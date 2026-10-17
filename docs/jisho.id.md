@@ -1,0 +1,63 @@
+# Integrasi kamus
+
+Jisho didaftarkan melalui kapabilitas host `study:library:provider` dengan `searchable: true` dan kapabilitas `dictionary`. Kana, Kanji, dan Kosakata didukung; kalimat dan pembuatan partikel milik penyedia dikecualikan. Metadata modul, konten, dan skema tercantum dalam manifes.
+
+## Pencarian otoritatif
+
+Permintaan kata dan Kanji mengambil data Jisho yang otoritatif meskipun konten bawaan cocok. Konten lokal hanya menjadi cadangan saat pengambilan jaringan dinyatakan tidak tersedia; resolusi Kana tetap lokal dan milik penyedia. Pencarian Kanji tunggal mengambil bacaan Kun/On, arti, jumlah goresan, tingkat sekolah, JLPT, dan frekuensi. Permintaan memakai User-Agent Cognis, batas waktu 15 detik, serta log kegagalan yang aman. Kegagalan transportasi menjadi kesalahan, bukan hasil kosong.
+
+## Impor ke editor
+
+Satu hasil langsung mengisi editor terbuka; hasil dengan komposisi sama menggabungkan bacaan dan makna. Ejaan berbeda ditampilkan pada pratinjau horizontal untuk langsung dipilih; Lanjutkan mempertahankan komposisi persis. Pencarian kosakata mempertahankan teks serta token komposisi pengguna. Pelafalan dan definisi langsung dikomit. Setiap arti, termasuk yang dipisahkan titik koma, menjadi definisi tersendiri. Cognis menyediakan penerjemahan bahasa UI yang belum tersedia melalui kapabilitas lokalisasi opsional; modul tidak mengarang terjemahan atau menyalin bahasa Inggris ke bahasa lain. URL sumber dan rekaman asli lengkap hanya disimpan sebagai metadata tersembunyi `dictionary_data`.
+
+## Graf bacaan
+
+Kanji dengan beberapa bacaan memakai satu kartu Kosakata tersembunyi per bacaan, dengan tautan balik ke Kanji asal, tautan pelafalan Kana berurutan, dan definisi langsung. Kanji satu bacaan menaut langsung ke Kana. Pelafalan kata memilih segmen bacaan Kanji terdekat yang tersedia dan Kana sisanya. Cognis menyelesaikan identitas terpasang, memakai ulang kartu perantara yang cocok pada impor berulang, lalu memvalidasi kolom, cakupan, dan ACL sebelum mengomit graf secara atomik. Karakter dan partikel tetap milik penyedia. Gema Katakana yang sama dengan Hiragana disaring kecuali ejaan tersebut dinyatakan oleh kamus; bacaan On serta kata serapan asli tetap dipertahankan.
+
+## Kepemilikan cache core
+
+Cognis core memiliki cache kamus melalui `core:cache`. Kueri menjadi dingin setelah satu jam dan diperiksa saat dipakai lagi. Perubahan diterbitkan pada batas dua belas jam; konten yang tidak berubah dipertahankan. Permintaan bersamaan berbagi pemeriksaan, kegagalan mempertahankan data cache berhasil, dan cache persisten bertahan setelah restart. Modul tidak menjadwalkan kueri kamus atau menyimpan cache respons kamus. Jisho tidak memiliki umpan perubahan ringan, sehingga pemeriksaan memakai respons pencarian biasa. Tidak ada kontrol Refresh manual. Tautan lokal memakai kartu Library yang saat ini dapat diakses.
+
+## Cache aset goresan
+
+Aset goresan KanjiVG menggunakan cache modul terpisah dan terbatas: maksimal 512 label, respons berhasil selama 24 jam, dan aset hilang selama lima menit. Permintaan bersamaan berbagi pengambilan; kegagalan dibuang. Cache aset ini tidak mengatur pencarian kamus atau navigasi aplikasi. Jisho dan KanjiVG memakai pemuat konten deterministik `api/reuse/content.js`; penyedia goresan memakai `api/reuse/lookup-cache.js`.
+
+## Batas impor kalimat
+
+API kata Jisho menyediakan bentuk, bacaan, arti, dan kelas kata, tetapi tidak menerjemahkan kalimat sembarang atau menyediakan posisi token, penyelarasan infleksi, dan hubungan partikel. Impor kalimat sekali klik masih memerlukan penganalisis morfologi, penyedia terjemahan kalimat, serta perencana graf milik modul yang mempertahankan teks, tanda baca, dan bacaan tertransformasi. Jisho dapat memperkaya simpul leksikal tetapi tidak menyediakan seluruh alur. Kapabilitas impor kalimat belum ditawarkan.
+
+[StudySphere](https://gitlab.firehawk-systems.com/firehawk/studysphere/-/tree/development) · [Cognis PR #226](https://github.com/Cognis-Labs-HQ/Cognis/pull/226)
+
+## Entri kamus umum
+
+Untuk kecocokan yang sama persis, entri Jisho bertanda is_common didahulukan daripada entri yang tidak umum. Kecocokan persis tetap mengungguli kecocokan terkait. Jisho tidak memberi frekuensi setiap makna: definisi mempertahankan urutan asli, termasuk room sebagai makna pertama 室, bukan dibalik oleh penyusun.
+
+## Transformasi kamus
+
+Kartu transformasi menyelaraskan judul, bacaan, dan definisi dalam satu kolom. Tindakan bentuk dasar memakai gaya tombol netral. Saat menyeret, penanda sisipan vertikal tampil sebelum atau sesudah penempatan tujuan. Impor Jisho menyimpan tag keluarga konjugasi yang didukung pada kartu kosakata; kata kerja yang baru dibuat membuka pemilih transformasi sebelum ditambahkan ke komposisi induk. Kata keterangan mempertahankan kelasnya; skema Jepang saat ini tidak mendefinisikan transformasi kata keterangan.
+
+Penyedia kamus dapat mengembalikan prerequisites berupa daftar { key, layer, label }. Setelah hasil dipilih dalam penyusun, Cognis menyelesaikan kartu tulisan gabungan yang sudah ada dalam cakupan tujuan atau mengambil dan membuat kartu yang belum ada beserta definisi dan graf bacaannya. Karakter atomik dan partikel tidak dapat dibuat melalui jalur ini. Kunci alias diganti dengan ID kanonis pada kartu utama dan referensi bacaan tersembunyi. Masukan kosakata tetap utuh; referensi tulisan impor hanya digunakan selama masukan masih sesuai dengan pencarian. Menelusuri hasil pencarian tidak membuat kartu prasyarat.
+
+Kolom wajib yang belum ada dilengkapi melalui penyedia pencarian tambahan yang terdaftar sebelum penyimpanan; pola goresan Kanji berasal dari KanjiVG. Setiap Kanji, definisi, dan bacaan tersembunyinya disimpan sebagai satu graf tervalidasi dalam cakupan yang ditentukan.
+
+## Aksara pelafalan Kanji
+
+Pencarian Kanji mengubah bacaan On Katakana dari Jisho menjadi Hiragana untuk pelafalan kartu dan tautan bacaan. 僕 menyertakan ぼく bersama しもべ. Pelafalan Kun dan On yang sama disatukan setelah konversi; notasi asli seperti ボク tetap tersimpan dalam metadata kamus tersembunyi. Ejaan Katakana kosakata dan penyaringan bacaan pencarian duplikat tetap berfungsi seperti sebelumnya.
+
+Bacaan utama mengikuti kecocokan kata persis yang umum dari Jisho: 僕 menampilkan ぼく terlebih dahulu, lalu しもべ. Kata terkait dan bacaan Kanji yang tidak tercantum tidak mengubah urutan. Jika pencarian kata gagal, hasil Kanji tetap dapat digunakan dan kegagalan dicatat dengan aman.
+
+## Pilihan Komposisi Persis
+
+Cognis menggabungkan hasil kamus dengan komposisi tulisan identik menjadi bacaan dan makna alternatif. Mengeklik ejaan berbeda langsung menerapkannya serta menyelesaikan atau membuat Kanji pendukung. Lanjutkan atau menutup pemilih mempertahankan komposisi persis dan mengabaikan hasil diperluas. Kartu bacaan mempertahankan jalur ke Kana individual. Pemilihan, pembuatan kartu, pemeriksaan cakupan, cache, dan notifikasi tetap menjadi tanggung jawab host.
+
+Skema menentukan slug Explore `kana`, `kanji`, `vocabulary`, dan `sentences` di bawah `/study/ja/`. Metadata modul dan konten saat ini tersedia dalam manifes. Cognis memiliki impor, batas, berbagi dek, dan navigasi; modul menyediakan nama lapisan deklaratif dan konten kamus.
+
+## Perbaikan tinjauan
+
+Modul memerlukan `study:library:provider` secara langsung dan melepas registrasi pencarian jika pemasukan konten, penerbitan kapabilitas, atau registrasi alur gagal. Perubahan siklus hidup mempertahankan identitas konten.
+
+Library menyediakan `deleteContentPack(root)` melalui kapabilitas penyedia publik. Catatan penyedia, kartu bergantung, tanda terima paket, dan aset dihapus dalam satu transaksi alur penghapusan; kegagalan hook audit membatalkan operasi. Penghapusan berantai menggunakan notifikasi Study yang ada. Skema tetap tersedia bagi konten mandiri buatan pengguna, dan pelepasan tidak memasukkan konten ke daftar blokir sehingga pemasangan ulang dapat memulihkan paket.
+
+## Bentuk Kata Terdeteksi
+
+Kosakata baru memakai kelas kata Jisho untuk memilih paradigma verba yang didukung. Adjektiva I dan Na menyediakan bentuk adverbial, negatif, serta lampau; adverbia mandiri mempertahankan klasifikasinya. KANJIDIC2 memperkaya data kanji dan tidak muncul pada pilihan pencarian, sementara Jisho tetap tersedia.
