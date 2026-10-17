@@ -270,3 +270,7 @@ Berkas memakai PCM mono 24 kHz 16 bit dengan puncak terbatas dan keluaran yang d
 ## Kontrol Belajar Tersimpan
 
 Rekaman kata Jepang dengan kana kecil, termasuk 学校, dibuat ulang dengan ejaan kanji jika tersedia menggunakan suara Jepang yang ditetapkan dan pengaturan stabil. Kalimat bawaan disusun ulang dari klip yang sama persis. Transformasi adjektiva I dan Na mencakup bentuk adverbial, negatif, serta lampau, dengan rekaman khusus untuk bentuk bawaan. Rekaman jamak bahasa Inggris tetap berupa aset khusus dan diputar saat bentuk tersebut dipilih.
+
+## Foto Referensi Kosakata
+
+33 kartu kosakata terkurasi kini memiliki foto referensi bawaan (32 berkas gambar). Cakupan meliputi semua nomina konkret serta tindakan dan sifat yang jelas secara visual; tata bahasa, pronomina, dan konsep abstrak tidak diberi gambar pengisi yang menyesatkan. Homofon Jepang seperti 花/鼻, 橋/箸, 雨/飴, dan 紙/髪/神 memakai referensi berbeda. Gambar dimuat secara lokal melalui galeri detail kartu dan pratinjau gambar penuh yang sudah ada. Judul sumber, pembuat, lisensi Creative Commons/domain publik per gambar, serta checksum dicatat dalam [katalog gambar](data/library/assets/images/catalog.json) dan [kredit foto](data/library/assets/images/LICENSE.md). Gambar kartu khusus pengguna tetap dilindungi host saat penyedia dimuat ulang.

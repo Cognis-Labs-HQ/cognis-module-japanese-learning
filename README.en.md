@@ -270,3 +270,7 @@ Generated files use 24 kHz mono 16-bit PCM with bounded peaks and verified non-s
 ## Saved Study Controls
 
 Japanese small-kana word recordings, including 学校, are regenerated using kanji spelling where available, with the designated Japanese voice and stable settings. Packaged sentences are rebuilt from those exact clips. I- and na-adjective transformations include adverbial, negative and past forms, with dedicated recordings for curated forms. English plural recordings remain dedicated assets and are reached by selected-form playback.
+
+## Vocabulary Reference Photos
+
+33 curated vocabulary cards now have bundled reference photographs (32 image files). Coverage includes every concrete noun plus visually clear actions and qualities; grammar, pronouns and other abstract concepts do not receive misleading filler images. Japanese homophones such as 花/鼻, 橋/箸, 雨/飴 and 紙/髪/神 use distinct references. Images load locally through the existing card detail gallery and full-image preview. Source titles, creators, individual Creative Commons/public-domain licenses and file checksums are recorded in [the image catalog](data/library/assets/images/catalog.json) and [photo credits](data/library/assets/images/LICENSE.md). Existing custom card images remain protected by the host during provider reloads.

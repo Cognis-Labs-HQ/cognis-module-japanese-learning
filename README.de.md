@@ -270,3 +270,7 @@ Erzeugte Dateien enthalten Mono-PCM mit 24 kHz und 16 Bit, begrenzten Spitzenwer
 ## Gespeicherte Lernsteuerung
 
 Japanische Aufnahmen mit kleinen Kana, einschließlich 学校, wurden mit Kanji-Schreibweise, soweit vorhanden, der festgelegten japanischen Stimme und stabilen Einstellungen neu erzeugt. Mitgelieferte Sätze werden aus genau diesen Clips neu zusammengesetzt. I- und Na-Adjektive unterstützen Adverbial-, Verneinungs- und Vergangenheitsformen mit eigenen Aufnahmen der mitgelieferten Formen. Englische Pluralaufnahmen bleiben eigenständige Dateien und werden bei gewählter Form abgespielt.
+
+## Referenzfotos für Vokabeln
+
+33 kuratierte Vokabelkarten enthalten jetzt mitgelieferte Referenzfotos (32 Bilddateien). Alle konkreten Substantive sowie bildlich klare Handlungen und Eigenschaften sind abgedeckt; Grammatik, Pronomen und andere abstrakte Begriffe erhalten keine irreführenden Füllbilder. Japanische Homophone wie 花/鼻, 橋/箸, 雨/飴 und 紙/髪/神 verwenden unterschiedliche Referenzen. Die Bilder werden lokal in der vorhandenen Detailgalerie und Vollbildvorschau geladen. Quelltitel, Urheber, individuelle Creative-Commons- beziehungsweise Gemeinfreiheitslizenzen und Prüfsummen stehen im [Bildkatalog](data/library/assets/images/catalog.json) und in den [Bildnachweisen](data/library/assets/images/LICENSE.md). Eigene Kartenbilder bleiben beim erneuten Laden der Anbieter durch den Host geschützt.
