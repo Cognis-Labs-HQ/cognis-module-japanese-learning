@@ -9279,6 +9279,210 @@
                 }
             ],
             "optInTag": "plural"
+        },
+        {
+            "id": "i-adjective",
+            "metadata": {
+                "labels": {
+                    "de": "I-Adjektive",
+                    "en": "I-Adjectives",
+                    "id": "Adjektiva I",
+                    "ja": "イ形容詞"
+                }
+            },
+            "matchTags": ["adjective", "i-adjective"],
+            "baseState": "base",
+            "rules": [
+                {
+                    "id": "adverb",
+                    "metadata": {
+                        "labels": {
+                            "de": "Adverbialform",
+                            "en": "Adverbial Form",
+                            "id": "Bentuk Adverbial",
+                            "ja": "副詞形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "adverb",
+                    "removeSuffix": "い",
+                    "append": "く",
+                    "pronunciation": {
+                        "removeSuffix": "い",
+                        "append": "く"
+                    },
+                    "definitionTransform": {
+                        "template": {
+                            "labels": {
+                                "de": "{{ definition }} (Adverbialform)",
+                                "en": "{{ definition }} (Adverbial Form)",
+                                "id": "{{ definition }} (Bentuk Adverbial)",
+                                "ja": "{{ definition }} (副詞形)"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "negative",
+                    "metadata": {
+                        "labels": {
+                            "de": "Verneinung",
+                            "en": "Negative",
+                            "id": "Negatif",
+                            "ja": "否定形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "negative",
+                    "removeSuffix": "い",
+                    "append": "くない",
+                    "pronunciation": {
+                        "removeSuffix": "い",
+                        "append": "くない"
+                    },
+                    "definitionTransform": {
+                        "template": {
+                            "labels": {
+                                "de": "{{ definition }} (Verneinung)",
+                                "en": "{{ definition }} (Negative)",
+                                "id": "{{ definition }} (Negatif)",
+                                "ja": "{{ definition }} (否定形)"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "past",
+                    "metadata": {
+                        "labels": {
+                            "de": "Vergangenheit",
+                            "en": "Past",
+                            "id": "Lampau",
+                            "ja": "過去形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "past",
+                    "removeSuffix": "い",
+                    "append": "かった",
+                    "pronunciation": {
+                        "removeSuffix": "い",
+                        "append": "かった"
+                    },
+                    "definitionTransform": {
+                        "template": {
+                            "labels": {
+                                "de": "{{ definition }} (Vergangenheit)",
+                                "en": "{{ definition }} (Past)",
+                                "id": "{{ definition }} (Lampau)",
+                                "ja": "{{ definition }} (過去形)"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "id": "na-adjective",
+            "metadata": {
+                "labels": {
+                    "de": "Na-Adjektive",
+                    "en": "Na-Adjectives",
+                    "id": "Adjektiva Na",
+                    "ja": "ナ形容詞"
+                }
+            },
+            "matchTags": ["adjective", "na-adjective"],
+            "baseState": "base",
+            "rules": [
+                {
+                    "id": "adverb",
+                    "metadata": {
+                        "labels": {
+                            "de": "Adverbialform",
+                            "en": "Adverbial Form",
+                            "id": "Bentuk Adverbial",
+                            "ja": "副詞形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "adverb",
+                    "removeSuffix": "",
+                    "append": "に",
+                    "pronunciation": {
+                        "removeSuffix": "",
+                        "append": "に"
+                    },
+                    "definitionTransform": {
+                        "template": {
+                            "labels": {
+                                "de": "{{ definition }} (Adverbialform)",
+                                "en": "{{ definition }} (Adverbial Form)",
+                                "id": "{{ definition }} (Bentuk Adverbial)",
+                                "ja": "{{ definition }} (副詞形)"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "negative",
+                    "metadata": {
+                        "labels": {
+                            "de": "Verneinung",
+                            "en": "Negative",
+                            "id": "Negatif",
+                            "ja": "否定形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "negative",
+                    "removeSuffix": "",
+                    "append": "ではない",
+                    "pronunciation": {
+                        "removeSuffix": "",
+                        "append": "ではない"
+                    },
+                    "definitionTransform": {
+                        "template": {
+                            "labels": {
+                                "de": "{{ definition }} (Verneinung)",
+                                "en": "{{ definition }} (Negative)",
+                                "id": "{{ definition }} (Negatif)",
+                                "ja": "{{ definition }} (否定形)"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "past",
+                    "metadata": {
+                        "labels": {
+                            "de": "Vergangenheit",
+                            "en": "Past",
+                            "id": "Lampau",
+                            "ja": "過去形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "past",
+                    "removeSuffix": "",
+                    "append": "だった",
+                    "pronunciation": {
+                        "removeSuffix": "",
+                        "append": "だった"
+                    },
+                    "definitionTransform": {
+                        "template": {
+                            "labels": {
+                                "de": "{{ definition }} (Vergangenheit)",
+                                "en": "{{ definition }} (Past)",
+                                "id": "{{ definition }} (Lampau)",
+                                "ja": "{{ definition }} (過去形)"
+                            }
+                        }
+                    }
+                }
+            ]
         }
     ]
 }

@@ -57,3 +57,7 @@ Das Schema legt die Erkunden-Pfade `kana`, `kanji`, `vocabulary` und `sentences`
 Das Modul verlangt `study:library:provider` direkt und entfernt Suchregistrierungen, wenn Aufnahme, Fähigkeitsveröffentlichung oder Flow-Registrierung fehlschlagen. Lebenszyklusänderungen erhalten Inhaltsidentitäten.
 
 Library stellt `deleteContentPack(root)` über die öffentliche Provider-Capability bereit. Provider-Datensätze, abhängige Karten, Paketbelege und Dateien werden in einer Transaktion des Lösch-Flows entfernt; fehlgeschlagene Audit-Hooks rollen alles zurück. Kaskaden verwenden die vorhandenen Study-Benachrichtigungen. Schemas bleiben für unabhängige eigene Inhalte erhalten. Die Deinstallation sperrt keine Inhalte, sodass eine Neuinstallation das Paket wiederherstellen kann.
+
+## Erkannte Wortformen
+
+Neue Wörter verwenden Jishos Wortart zur Auswahl unterstützter Verbparadigmen. I- und Na-Adjektive bieten jetzt Adverbial-, Verneinungs- und Vergangenheitsformen; selbstständige Adverbien behalten ihre lexikalische Klasse. KANJIDIC2 ergänzt Kanji-Daten und erscheint nicht in der Suchauswahl, in der Jisho verfügbar bleibt.

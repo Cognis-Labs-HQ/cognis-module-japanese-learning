@@ -57,3 +57,7 @@ Skema menentukan slug Explore `kana`, `kanji`, `vocabulary`, dan `sentences` di 
 Modul memerlukan `study:library:provider` secara langsung dan melepas registrasi pencarian jika pemasukan konten, penerbitan kapabilitas, atau registrasi alur gagal. Perubahan siklus hidup mempertahankan identitas konten.
 
 Library menyediakan `deleteContentPack(root)` melalui kapabilitas penyedia publik. Catatan penyedia, kartu bergantung, tanda terima paket, dan aset dihapus dalam satu transaksi alur penghapusan; kegagalan hook audit membatalkan operasi. Penghapusan berantai menggunakan notifikasi Study yang ada. Skema tetap tersedia bagi konten mandiri buatan pengguna, dan pelepasan tidak memasukkan konten ke daftar blokir sehingga pemasangan ulang dapat memulihkan paket.
+
+## Bentuk Kata Terdeteksi
+
+Kosakata baru memakai kelas kata Jisho untuk memilih paradigma verba yang didukung. Adjektiva I dan Na menyediakan bentuk adverbial, negatif, serta lampau; adverbia mandiri mempertahankan klasifikasinya. KANJIDIC2 memperkaya data kanji dan tidak muncul pada pilihan pencarian, sementara Jisho tetap tersedia.

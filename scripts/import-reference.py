@@ -206,12 +206,14 @@ for shard, records in sorted(shards.items()):
     files.append(
         {"path": name, "sha256": hashlib.sha256(data).hexdigest(), "keys": len(records)}
     )
-labels = {
-    "en": "Reference Dictionary",
-    "de": "Referenzwörterbuch",
-    "id": "Kamus Referensi",
-    "ja": "参照辞書",
-}
+labels = ({
+    "en": "Open English WordNet", "de": "Offenes englisches WordNet",
+    "id": "WordNet Bahasa Inggris Terbuka", "ja": "オープン英語 WordNet",
+} if language == "en" else {
+    "en": "KANJIDIC2 Kanji Reference", "de": "KANJIDIC2-Kanji-Nachschlagewerk",
+    "id": "Referensi Kanji KANJIDIC2", "ja": "KANJIDIC2 漢字資料",
+})
+
 manifest = {
     "language": language,
     "records": count,

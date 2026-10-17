@@ -57,3 +57,7 @@ The schema declares Explore slugs `kana`, `kanji`, `vocabulary` and `sentences` 
 The module requires `study:library:provider` directly and removes lookup registrations when ingestion, capability publication or flow registration fails. Lifecycle changes preserve content identities.
 
 Library exposes `deleteContentPack(root)` on the public provider capability. It removes provider records, dependent cards, pack receipts and assets in one deletion-flow transaction; failed audit hooks roll back the operation. Cascaded deletions use existing Study notifications. Schemas remain available for independent authored content, and uninstall does not blacklist content, so reinstall can restore the pack.
+
+## Detected Word Forms
+
+New vocabulary uses Jisho’s part of speech to select supported verb paradigms. I- and na-adjectives now provide adverbial, negative and past forms; standalone adverbs retain their own lexical classification. KANJIDIC2 is a kanji enrichment provider and is omitted from the search selector, where Jisho remains available.

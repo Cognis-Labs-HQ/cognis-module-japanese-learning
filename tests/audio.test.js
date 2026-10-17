@@ -296,3 +296,26 @@ test("unbundled lexical synthesis uses only this language and its designated def
     );
     assert.equal(requests.length, 1);
 });
+
+test("small-kana lexical recordings use explicit Japanese requests and retain the canonical school spelling", () => {
+    const affected = inventory.recordings.filter((clip) =>
+        clip.inputs.some(
+            (input) =>
+                input.semanticRole === "lexicalUnit" &&
+                /[っゃゅょぁぃぅぇぉゎッャュョァィゥェォヮ]/u.test(
+                    input.readings.join(""),
+                ),
+        ),
+    );
+    assert.ok(affected.length > 30);
+    for (const clip of affected) {
+        assert.equal(clip.request.language_code, "ja");
+        assert.equal(clip.request.apply_text_normalization, "off");
+        assert.equal(clip.voiceId, "xya0RvcJtofTcFTOdX4E");
+    }
+    const school = affected.find((clip) =>
+        clip.inputs.some((input) => input.label === "学校"),
+    );
+    assert.equal(school.request.text, "学校");
+    assert.ok(school.inputs.some((input) => input.readings[0] === "がっこう"));
+});

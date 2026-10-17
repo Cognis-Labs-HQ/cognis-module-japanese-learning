@@ -533,7 +533,7 @@ export function jishoSuggestion(index, layer, label, data, query = label) {
             ...new Set([
                 ...(record.tags ?? []),
                 ...(layer === "words" &&
-                ["verb", "adverb"].includes(lexicalClass)
+                ["verb", "adverb", "adjective"].includes(lexicalClass)
                     ? [lexicalClass]
                     : []),
                 ...transformTags,

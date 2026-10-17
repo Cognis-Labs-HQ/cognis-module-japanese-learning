@@ -1,6 +1,10 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { createJishoLookupProvider } from "../dictionary/index.js";
+import {
+    createJishoLookupProvider,
+    loadNativeContent,
+    jishoSuggestion,
+} from "../dictionary/index.js";
 import { readContentLayers } from "../reuse/content.js";
 
 const contentRoot = "data/library/content";
@@ -121,4 +125,50 @@ test("remote Kanji readings reuse matching packaged definitions", async () => {
                 entryId === "ja:def:kanji-core-e78cab",
         ),
     );
+});
+
+test("new dictionary verbs and adjectives select the correct provider paradigm, including adverbial forms", async () => {
+    const index = await loadNativeContent(contentRoot);
+    for (const [label, reading, partOfSpeech, tag, expected] of [
+        ["考える", "かんがえる", "Ichidan verb", "ichidan", "考えます"],
+        [
+            "美しい",
+            "うつくしい",
+            "I-adjective (keiyoushi)",
+            "i-adjective",
+            "美しく",
+        ],
+        [
+            "静か",
+            "しずか",
+            "Na-adjective (keiyodoshi)",
+            "na-adjective",
+            "静かに",
+        ],
+    ]) {
+        const suggestion = jishoSuggestion(index, "words", label, {
+            data: [
+                {
+                    slug: label,
+                    japanese: [{ word: label, reading }],
+                    senses: [
+                        {
+                            english_definitions: ["meaning"],
+                            parts_of_speech: [partOfSpeech],
+                        },
+                    ],
+                },
+            ],
+        });
+        assert.ok(suggestion.tags.includes(tag));
+        const set = index.transformSets.find(({ id }) => id === tag);
+        const rule = set.rules.find(
+            ({ id }) => id === (tag === "ichidan" ? "polite" : "adverb"),
+        );
+        assert.equal(
+            label.slice(0, label.length - rule.removeSuffix.length) +
+                rule.append,
+            expected,
+        );
+    }
 });

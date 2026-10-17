@@ -15,7 +15,7 @@ export function createReferenceProvider({
         id: "study-language-ja:reference",
         capabilities: ["dictionary"],
         fields: ["pronunciation", "dictionary_data"],
-        searchable: true,
+        searchable: false,
         cacheRevision,
         metadata,
         supports: (schema, layer) =>
