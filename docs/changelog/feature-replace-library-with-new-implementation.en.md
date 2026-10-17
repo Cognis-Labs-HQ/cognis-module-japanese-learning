@@ -212,6 +212,10 @@ Japanese small-kana word recordings, including 学校, are regenerated using kan
 
 Add optional image-list fields, private image uploads and detail galleries. Both language modules bundle a licensed reference photograph and expose the same field on every layer.
 
+## Direct Sentence Audio
+
+Shipped sentences use directly generated whole-sentence recordings before composite audio. New or unrecorded sentences use host composition with the exact ordered constituent PCM and selected transformations; missing variants never substitute their base form. Recordings cover the curated pack, not every lazy dictionary entry or possible user-authored sentence. Includes 34 newly generated sentence recordings using voice `xya0RvcJtofTcFTOdX4E`. Japanese regenerates 124 kana clips and sends kana/kanji rather than romaji. Requests retain documented stable model, speed, similarity, seed and voice provenance.
+
 ## Commits
 
 - [7d529da8](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/7d529da851a5301f3dd04ee4b1d71e17053248f9)

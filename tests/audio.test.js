@@ -18,12 +18,14 @@ const entries = new Map(
 );
 const assets = new Map(
     await Promise.all(
-        [...inventory.recordings, ...inventory.compositions].map(
-            async (clip) => [
-                clip.path,
-                await readFile(`data/library/assets/${clip.path}`),
-            ],
-        ),
+        [
+            ...inventory.recordings,
+            ...inventory.compositions,
+            ...inventory.sentences,
+        ].map(async (clip) => [
+            clip.path,
+            await readFile(`data/library/assets/${clip.path}`),
+        ]),
     ),
 );
 const makeProvider = (speech = () => undefined) =>
@@ -96,7 +98,11 @@ test("every packaged clip has the designated language voice, stable settings, au
             ? "xya0RvcJtofTcFTOdX4E"
             : "gJx1vCzNCD1EQHT212Ls";
     assert.equal(inventory.voiceId, expectedVoice);
-    for (const clip of [...inventory.recordings, ...inventory.compositions]) {
+    for (const clip of [
+        ...inventory.recordings,
+        ...inventory.compositions,
+        ...inventory.sentences,
+    ]) {
         const data = assets.get(clip.path);
         assert.ok(data.length < 2_000_000, clip.path);
         assert.equal(data.toString("ascii", 0, 4), "RIFF");
@@ -183,7 +189,7 @@ test("every spoken seed card and every reachable transformation has a playable b
     assert.ok(variants > 100);
 });
 
-test("sentence PCM reuses exact ordered constituent clips and selected transformation paths", () => {
+test("composite fallback sentence PCM reuses exact ordered constituent clips and selected transformation paths", () => {
     for (const sentence of inventory.compositions) {
         const references = entries
             .get(sentence.entryId)
@@ -274,21 +280,21 @@ test("unbundled lexical synthesis uses only this language and its designated def
     }));
     await provider.fetchAudio({
         language: inventory.language,
-        label: "unbundled-lexical-record",
+        label: "未収録の日本語",
         semanticRole: "lexicalUnit",
         readings: [],
     });
     assert.deepEqual(requests, [
         {
             language: inventory.language,
-            text: "unbundled-lexical-record",
+            text: "未収録の日本語",
             voiceId: inventory.voiceId,
         },
     ]);
     await assert.rejects(
         provider.fetchAudio({
             language: inventory.language === "ja" ? "en" : "ja",
-            label: "unbundled-lexical-record",
+            label: "未収録の日本語",
             semanticRole: "lexicalUnit",
             readings: [],
         }),
@@ -318,4 +324,62 @@ test("small-kana lexical recordings use explicit Japanese requests and retain th
     );
     assert.equal(school.request.text, "学校");
     assert.ok(school.inputs.some((input) => input.readings[0] === "がっこう"));
+});
+
+test("direct sentence recordings take priority over constituent composition and runtime synthesis", async () => {
+    const provider = makeProvider(() => {
+        throw new Error("unexpected_synthesis");
+    });
+    assert.equal(inventory.sentences.length, inventory.compositions.length);
+    for (const sentence of inventory.sentences) {
+        assert.equal(entries.get(sentence.entryId).fields.audio, sentence.path);
+        assert.equal(sentence.voiceId, inventory.voiceId);
+        assert.equal(sentence.request.text, sentence.inputs[0].label);
+        const result = await provider.fetchAudio(sentence.inputs[0]);
+        assert.deepEqual(Buffer.from(result.data), assets.get(sentence.path));
+    }
+});
+
+test("unbundled Japanese kana and kanji never send romanized readings to speech", async () => {
+    const requests = [];
+    const provider = makeProvider(() => ({
+        synthesize: async (input) => {
+            requests.push(input);
+            return { mediaType: "audio/wav", data: new Uint8Array([1]) };
+        },
+    }));
+    await provider.fetchAudio({
+        language: "ja",
+        label: "ゔぁ",
+        semanticRole: "atomicWritingUnit",
+        readings: ["va"],
+    });
+    await provider.fetchAudio({
+        language: "ja",
+        label: "新しい学校",
+        semanticRole: "lexicalUnit",
+        readings: ["atarashii gakkou"],
+    });
+    assert.deepEqual(
+        requests.map(({ text }) => text),
+        ["ゔぁ", "新しい学校"],
+    );
+    await assert.rejects(
+        provider.fetchAudio({
+            language: "ja",
+            label: "romaji only",
+            semanticRole: "lexicalUnit",
+            readings: ["romaji"],
+        }),
+        /audio_lookup_unavailable/,
+    );
+    assert.equal(requests.length, 2);
+    for (const clip of [...inventory.recordings, ...inventory.sentences]) {
+        assert.match(
+            clip.request.text,
+            /[\p{Script=Hiragana}\p{Script=Katakana}\p{Script=Han}]/u,
+        );
+        assert.equal(clip.request.language_code, "ja");
+        assert.equal(clip.voiceId, "xya0RvcJtofTcFTOdX4E");
+    }
 });

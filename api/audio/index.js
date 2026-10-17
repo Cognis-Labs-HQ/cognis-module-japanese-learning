@@ -25,6 +25,10 @@ export function createAudioProvider({
     for (const composition of inventory.compositions) {
         recordings.set(inputKey(composition.input), composition);
     }
+    for (const sentence of inventory.sentences) {
+        for (const input of sentence.inputs)
+            recordings.set(inputKey(input), sentence);
+    }
     return Object.freeze({
         id: `study-language-${inventory.language}:recordings`,
         languages: [inventory.language],
@@ -66,15 +70,19 @@ export function createAudioProvider({
                     !synthesizer
                 )
                     throw new Error("audio_lookup_unavailable");
+                const japanese =
+                    /[\p{Script=Hiragana}\p{Script=Katakana}\p{Script=Han}]/u;
                 const reading = input.readings?.[0];
-                const phonemes = /^\/[^/]+\/$/u.test(reading ?? "")
-                    ? reading.slice(1, -1)
-                    : undefined;
+                const text = japanese.test(input.label)
+                    ? input.label
+                    : japanese.test(reading ?? "")
+                      ? reading
+                      : undefined;
+                if (!text) throw new Error("audio_lookup_unavailable");
                 return await synthesizer.synthesize(
                     {
                         language: inventory.language,
-                        text: phonemes ? input.label : reading || input.label,
-                        ...(phonemes ? { phonemes } : {}),
+                        text,
                         voiceId: configuration().voiceId || inventory.voiceId,
                     },
                     signal,
