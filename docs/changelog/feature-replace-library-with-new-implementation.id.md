@@ -232,6 +232,14 @@ Lima belas nomina sehari-hari mencakup furnitur, pakaian, benda, dan makanan, di
 
 Tambahkan 32 nomina berilustrasi: enam belas makanan dan enam belas istilah tubuh, dengan makna dalam empat bahasa serta dek Makanan dan Tubuh terpisah. Bahasa Inggris menyertakan 25 transformasi jumlah dengan rekaman, termasuk feet, teeth, potatoes, dan mouths dengan konsonan bersuara; makna nomina tak terhitung seperti daging ayam, daging sapi, mentega, dan kulit tidak memiliki keluarga jamak. Bahasa Jepang mempertahankan jalur lengkap ke kana atomik, memisahkan makna kaki dan tungkai dari あし menjadi definisi tersendiri, serta memakai kembali rekaman asli jika masukan pelafalannya identik. Empat kalimat contoh yang ditulis secara individual per bahasa memiliki rekaman neural langsung yang diprioritaskan di atas rekaman gabungan dari klip unsur yang persis sama. Semua ilustrasi disertakan secara lokal dengan gaya seni yang telah ditetapkan untuk masing-masing bahasa.
 
+## Perbaikan tinjauan dan inventaris rekaman
+
+Metadata rekaman memakai manifes ringkas dan inventaris dengan checksum untuk karakter, kosakata, transformasi, kalimat, dan cadangan kalimat. Audio, asal suara/permintaan, dan prioritas pencarian tetap sama. Impor referensi membaca bahasa paket; pembersihan mencoba seluruh registrasi meskipun ada kegagalan. Kegagalan kamus membatalkan isi respons dan pemuatan referensi dapat dicoba lagi. Dokumentasi menjelaskan konfigurasi dan gambar yang dihasilkan.
+
+## Hasil pencarian bahasa Jepang lengkap
+
+Respons JSON Jisho dan HTML Kanji memakai pembaca bersama dengan batas byte. Semua makna sumber dipertahankan, termasuk empat belas makna 節. Pola goresan kana kecil jarak jauh memakai proporsi yang sama dengan panduan paket. Tautan asal historis memakai hash implementasi lengkap dan tetap dari riwayat repositori yang tersedia.
+
 ## Komit
 
 - [7d529da8](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/7d529da851a5301f3dd04ee4b1d71e17053248f9)

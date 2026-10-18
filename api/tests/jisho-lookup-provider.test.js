@@ -98,12 +98,9 @@ test("Jisho provider populates fields and detects links for every retrieval", as
         endpoint: "https://jisho.test/api",
         async fetchImplementation(url, options) {
             requests.push({ url, options });
-            return {
-                ok: true,
-                async json() {
-                    return jishoResponse();
-                },
-            };
+            return new Response(JSON.stringify(jishoResponse()), {
+                status: 200,
+            });
         },
     });
     const input = { schema, layer: wordLayer, label: "猫又" };
@@ -155,12 +152,9 @@ test("Jisho provider accepts ranked English vocabulary searches", async () => {
         endpoint: "https://jisho.test/api",
         async fetchImplementation(url) {
             requests.push(url);
-            return {
-                ok: true,
-                async json() {
-                    return jishoResponse();
-                },
-            };
+            return new Response(JSON.stringify(jishoResponse()), {
+                status: 200,
+            });
         },
     });
 
@@ -181,26 +175,23 @@ test("Jisho provider accepts ranked English vocabulary searches", async () => {
 test("Jisho Kanji suggestions link readings directly to atomic Kana", async () => {
     const provider = createJishoLookupProvider({
         contentRoot,
-        async fetchImplementation() {
-            return {
-                ok: true,
-                async text() {
-                    return kanjiHtml("龍", "りゅう");
-                },
-                async json() {
-                    return {
-                        data: [
-                            {
-                                slug: "龍",
-                                japanese: [{ word: "龍", reading: "りゅう" }],
-                                senses: [],
-                                tags: [],
-                                jlpt: [],
-                            },
-                        ],
-                    };
-                },
-            };
+        async fetchImplementation(_url, options) {
+            return new Response(
+                options.headers.accept === "text/html"
+                    ? kanjiHtml("龍", "りゅう")
+                    : JSON.stringify({
+                          data: [
+                              {
+                                  slug: "龍",
+                                  japanese: [{ word: "龍", reading: "りゅう" }],
+                                  senses: [],
+                                  tags: [],
+                                  jlpt: [],
+                              },
+                          ],
+                      }),
+                { status: 200 },
+            );
         },
     });
     const [suggestion] = await provider.lookup({
@@ -226,27 +217,24 @@ test("Kanji lookup identity uses the Kanji label, not its pronunciation", async 
     let requests = 0;
     const provider = createJishoLookupProvider({
         contentRoot,
-        async fetchImplementation() {
+        async fetchImplementation(_url, options) {
             requests += 1;
-            return {
-                ok: true,
-                async text() {
-                    return kanjiHtml("券", "けん");
-                },
-                async json() {
-                    return {
-                        data: [
-                            {
-                                slug: "券",
-                                japanese: [{ word: "券", reading: "けん" }],
-                                senses: [],
-                                tags: [],
-                                jlpt: [],
-                            },
-                        ],
-                    };
-                },
-            };
+            return new Response(
+                options.headers.accept === "text/html"
+                    ? kanjiHtml("券", "けん")
+                    : JSON.stringify({
+                          data: [
+                              {
+                                  slug: "券",
+                                  japanese: [{ word: "券", reading: "けん" }],
+                                  senses: [],
+                                  tags: [],
+                                  jlpt: [],
+                              },
+                          ],
+                      }),
+                { status: 200 },
+            );
         },
     });
 
@@ -271,12 +259,7 @@ test("Jisho provider does not query invalid or unrelated input", async () => {
         contentRoot,
         async fetchImplementation() {
             requests += 1;
-            return {
-                ok: true,
-                async json() {
-                    return { data: [] };
-                },
-            };
+            return new Response(JSON.stringify({ data: [] }), { status: 200 });
         },
     });
     assert.deepEqual(
@@ -310,22 +293,20 @@ test("Jisho provider never emits a partial Kana pronunciation group", async () =
     const provider = createJishoLookupProvider({
         contentRoot,
         async fetchImplementation() {
-            return {
-                ok: true,
-                async json() {
-                    return {
-                        data: [
-                            {
-                                slug: "コㇰヒー",
-                                japanese: [{ reading: "コㇰヒー" }],
-                                senses: [],
-                                tags: [],
-                                jlpt: [],
-                            },
-                        ],
-                    };
-                },
-            };
+            return new Response(
+                JSON.stringify({
+                    data: [
+                        {
+                            slug: "コㇰヒー",
+                            japanese: [{ reading: "コㇰヒー" }],
+                            senses: [],
+                            tags: [],
+                            jlpt: [],
+                        },
+                    ],
+                }),
+                { status: 200 },
+            );
         },
     });
     assert.deepEqual(
@@ -340,12 +321,7 @@ test("Jisho provider returns an empty result for an unmatched lexical query", as
         contentRoot,
         async fetchImplementation() {
             requests += 1;
-            return {
-                ok: true,
-                async json() {
-                    return { data: [] };
-                },
-            };
+            return new Response(JSON.stringify({ data: [] }), { status: 200 });
         },
     });
     assert.deepEqual(
@@ -392,10 +368,8 @@ test("Jisho retains all senses and raw source data with every reading group", as
     });
     const provider = createJishoLookupProvider({
         contentRoot,
-        fetchImplementation: async () => ({
-            ok: true,
-            json: async () => payload,
-        }),
+        fetchImplementation: async () =>
+            new Response(JSON.stringify(payload), { status: 200 }),
     });
     const [suggestion] = await provider.lookup({
         schema,
@@ -432,7 +406,7 @@ test("Kanji lookup uses its dedicated Jisho entry when no standalone word exists
         contentRoot,
         fetchImplementation: async (url) => {
             urls.push(url);
-            return { ok: true, text: async () => kanjiHtml("鋭", "するど.い") };
+            return new Response(kanjiHtml("鋭", "するど.い"), { status: 200 });
         },
     });
     const [suggestion] = await provider.lookup({
@@ -453,7 +427,7 @@ test("Kanji lookup uses its dedicated Jisho entry when no standalone word exists
 test("failed dictionary requests reject instead of reporting no matches", async () => {
     const provider = createJishoLookupProvider({
         contentRoot,
-        fetchImplementation: async () => ({ ok: false }),
+        fetchImplementation: async () => new Response(null, { status: 500 }),
     });
     await assert.rejects(
         provider.lookup({ schema, layer: wordLayer, label: "missingword" }),
@@ -471,12 +445,12 @@ test("Kanji and word requests identify Cognis to upstream servers", async () => 
                     "Cognis-Japanese-Learning",
                 ) === true;
             accepts.push(options.headers.accept);
-            return {
-                ok: identified,
-                status: identified ? 200 : 403,
-                text: async () => kanjiHtml("教", "おし.える"),
-                json: async () => jishoResponse(),
-            };
+            return new Response(
+                options.headers.accept === "text/html"
+                    ? kanjiHtml("教", "おし.える")
+                    : JSON.stringify(jishoResponse()),
+                { status: identified ? 200 : 403 },
+            );
         },
     });
     const [kanji] = await provider.lookup({ layer: kanjiLayer, label: "教" });
@@ -497,11 +471,8 @@ test("upstream rejections log the status and safe failure code", async () => {
         contentRoot,
         log: (level, message, metadata) =>
             logs.push({ level, message, metadata }),
-        fetchImplementation: async () => ({
-            ok: false,
-            status: 403,
-            text: async () => "private upstream response",
-        }),
+        fetchImplementation: async () =>
+            new Response("private upstream response", { status: 403 }),
     });
     await assert.rejects(
         provider.lookup({ layer: kanjiLayer, label: "教" }),
@@ -516,7 +487,7 @@ test("upstream rejections log the status and safe failure code", async () => {
 test("parser and transport failures remain distinguishable without exposing messages", async () => {
     for (const [fetchImplementation, expectedCode] of [
         [
-            async () => ({ ok: true, text: async () => "unexpected page" }),
+            async () => new Response("unexpected page", { status: 200 }),
             "jisho_kanji_response_invalid",
         ],
         [
@@ -545,11 +516,13 @@ test("parser and transport failures remain distinguishable without exposing mess
 test("dictionary source URLs are retained inside hidden card data", async () => {
     const provider = createJishoLookupProvider({
         contentRoot,
-        fetchImplementation: async () => ({
-            ok: true,
-            text: async () => kanjiHtml("教", "おし.える"),
-            json: async () => jishoResponse(),
-        }),
+        fetchImplementation: async (_url, options) =>
+            new Response(
+                options.headers.accept === "text/html"
+                    ? kanjiHtml("教", "おし.える")
+                    : JSON.stringify(jishoResponse()),
+                { status: 200 },
+            ),
     });
     for (const [layer, label] of [
         [kanjiLayer, "教"],
@@ -568,10 +541,8 @@ test("dictionary readings resolve compound Kana as existing content-provider cha
     payload.data[0].japanese[0].reading = "きょうっくっく";
     const provider = createJishoLookupProvider({
         contentRoot,
-        fetchImplementation: async () => ({
-            ok: true,
-            json: async () => payload,
-        }),
+        fetchImplementation: async () =>
+            new Response(JSON.stringify(payload), { status: 200 }),
     });
     const [suggestion] = await provider.lookup({
         schema,
@@ -604,10 +575,8 @@ test("Jisho returns every candidate with its own readings, definitions, and prov
     });
     const provider = createJishoLookupProvider({
         contentRoot,
-        fetchImplementation: async () => ({
-            ok: true,
-            json: async () => payload,
-        }),
+        fetchImplementation: async () =>
+            new Response(JSON.stringify(payload), { status: 200 }),
     });
     const suggestions = await provider.lookup({
         schema,
@@ -642,7 +611,7 @@ test("Jisho retrieves provider data for each host-owned query", async () => {
         contentRoot,
         fetchImplementation: async () => {
             calls += 1;
-            return { ok: true, json: async () => ({ data: [] }) };
+            return new Response(JSON.stringify({ data: [] }), { status: 200 });
         },
     });
     assert.equal(provider.searchable, true);
@@ -660,24 +629,22 @@ test("Jisho retrieves full provider data for bundled words", async () => {
         contentRoot,
         async fetchImplementation() {
             requests += 1;
-            return {
-                ok: true,
-                async json() {
-                    return {
-                        data: [
-                            {
-                                slug: "猫",
-                                japanese: [{ word: "猫", reading: "ねこ" }],
-                                senses: [
-                                    { english_definitions: ["cat", "feline"] },
-                                ],
-                                tags: [],
-                                jlpt: [],
-                            },
-                        ],
-                    };
-                },
-            };
+            return new Response(
+                JSON.stringify({
+                    data: [
+                        {
+                            slug: "猫",
+                            japanese: [{ word: "猫", reading: "ねこ" }],
+                            senses: [
+                                { english_definitions: ["cat", "feline"] },
+                            ],
+                            tags: [],
+                            jlpt: [],
+                        },
+                    ],
+                }),
+                { status: 200 },
+            );
         },
     });
     const input = { schema, layer: wordLayer, label: "猫" };
@@ -705,10 +672,8 @@ test("greeting searches prefer exact dictionary meanings over Wikipedia title ma
     );
     const provider = createJishoLookupProvider({
         contentRoot,
-        fetchImplementation: async () => ({
-            ok: true,
-            json: async () => payload,
-        }),
+        fetchImplementation: async () =>
+            new Response(JSON.stringify(payload), { status: 200 }),
     });
     const results = await provider.lookup({
         layer: wordLayer,
@@ -741,10 +706,8 @@ test("exact readings outrank related matches and incomplete reading graphs are r
     });
     const provider = createJishoLookupProvider({
         contentRoot,
-        fetchImplementation: async () => ({
-            ok: true,
-            json: async () => payload,
-        }),
+        fetchImplementation: async () =>
+            new Response(JSON.stringify(payload), { status: 200 }),
     });
     const results = await provider.lookup({ layer: wordLayer, label: "ねこ" });
     assert.ok(results[1].confidence > results[0].confidence);
@@ -759,10 +722,8 @@ test("dictionary reading cards preserve genuine Katakana and filter redundant qu
     ];
     const provider = createJishoLookupProvider({
         contentRoot,
-        fetchImplementation: async () => ({
-            ok: true,
-            json: async () => payload,
-        }),
+        fetchImplementation: async () =>
+            new Response(JSON.stringify(payload), { status: 200 }),
     });
     const [result] = await provider.lookup({ layer: wordLayer, label: "猫又" });
     assert.deepEqual(result.fields.pronunciation, ["ねこまた"]);
@@ -786,10 +747,8 @@ test("complete dictionary readings compose through the nearest authored Kanji re
     payload.data[0].japanese = [{ word: "直す", reading: "なおす" }];
     const provider = createJishoLookupProvider({
         contentRoot,
-        fetchImplementation: async () => ({
-            ok: true,
-            json: async () => payload,
-        }),
+        fetchImplementation: async () =>
+            new Response(JSON.stringify(payload), { status: 200 }),
     });
     const [result] = await provider.lookup({ layer: wordLayer, label: "直す" });
     const groups = result.linkedEntries[0].entry.referenceGroups;
@@ -814,10 +773,8 @@ test("common dictionary entries outrank equally exact uncommon entries without c
     });
     const provider = createJishoLookupProvider({
         contentRoot,
-        fetchImplementation: async () => ({
-            ok: true,
-            json: async () => payload,
-        }),
+        fetchImplementation: async () =>
+            new Response(JSON.stringify(payload), { status: 200 }),
     });
     const results = await provider.lookup({ layer: wordLayer, label: "室" });
     assert.equal(results.length, 2);
@@ -841,10 +798,8 @@ test("dictionary part-of-speech tags enable only supported transformation famili
         payload.data[0].senses[0].parts_of_speech = [part];
         const provider = createJishoLookupProvider({
             contentRoot,
-            fetchImplementation: async () => ({
-                ok: true,
-                json: async () => payload,
-            }),
+            fetchImplementation: async () =>
+                new Response(JSON.stringify(payload), { status: 200 }),
         });
         const [result] = await provider.lookup({ layer: wordLayer, label });
         assert.equal(result.class, "lexical:verb");
@@ -863,10 +818,8 @@ test("adverbs are classified separately from verbs and preserve Kanji lookup pre
     payload.data[0].senses[0].parts_of_speech = ["Adverb"];
     const provider = createJishoLookupProvider({
         contentRoot,
-        fetchImplementation: async () => ({
-            ok: true,
-            json: async () => payload,
-        }),
+        fetchImplementation: async () =>
+            new Response(JSON.stringify(payload), { status: 200 }),
     });
     const [result] = await provider.lookup({ layer: wordLayer, label: "確実" });
     assert.equal(result.class, "lexical:adverb");
@@ -891,29 +844,33 @@ test("Kanji 僕 prioritizes common exact-word ぼく with Hiragana deep links", 
 <dl class="dictionary_entry on_yomi"><dd class="kanji-details__main-readings-list"><a>ボク</a></dd></dl>`;
     const provider = createJishoLookupProvider({
         contentRoot,
-        fetchImplementation: async () => ({
-            ok: true,
-            text: async () => html,
-            json: async () => ({
-                data: [
-                    {
-                        japanese: [{ word: "僕", reading: "しもべ" }],
-                        is_common: false,
-                    },
-                    {
-                        japanese: [{ word: "僕たち", reading: "ぼくたち" }],
-                        is_common: true,
-                    },
-                    {
-                        japanese: [
-                            { word: "僕", reading: "ぼく" },
-                            { reading: "ボク" },
-                        ],
-                        is_common: true,
-                    },
-                ],
-            }),
-        }),
+        fetchImplementation: async (_url, options) =>
+            new Response(
+                options.headers.accept === "text/html"
+                    ? html
+                    : JSON.stringify({
+                          data: [
+                              {
+                                  japanese: [{ word: "僕", reading: "しもべ" }],
+                                  is_common: false,
+                              },
+                              {
+                                  japanese: [
+                                      { word: "僕たち", reading: "ぼくたち" },
+                                  ],
+                                  is_common: true,
+                              },
+                              {
+                                  japanese: [
+                                      { word: "僕", reading: "ぼく" },
+                                      { reading: "ボク" },
+                                  ],
+                                  is_common: true,
+                              },
+                          ],
+                      }),
+                { status: 200 },
+            ),
     });
     const [result] = await provider.lookup({ layer: kanjiLayer, label: "僕" });
     assert.deepEqual(result.fields.pronunciation, ["ぼく", "しもべ"]);
@@ -947,8 +904,8 @@ test("Kanji readings survive primary word lookup failures with safe logging", as
             logs.push({ level, message, metadata }),
         fetchImplementation: async (url) =>
             url.includes("/api/")
-                ? { ok: false, status: 503 }
-                : { ok: true, text: async () => kanjiHtml("教", "キョウ") },
+                ? new Response(null, { status: 503 })
+                : new Response(kanjiHtml("教", "キョウ"), { status: 200 }),
     });
     const [result] = await provider.lookup({ layer: kanjiLayer, label: "教" });
     assert.deepEqual(result.fields.pronunciation, ["きょう"]);

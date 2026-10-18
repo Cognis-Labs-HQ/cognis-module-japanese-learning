@@ -1,6 +1,7 @@
 import { katakanaToHiragana } from "../reuse/kana.js";
 import { readFile } from "node:fs/promises";
 import { requestJisho, jishoFailureDetails } from "./request.js";
+import { readBoundedText } from "../reuse/response.js";
 import {
     createJishoKanjiLookup,
     prioritizeJishoKanjiReadings,
@@ -339,18 +340,16 @@ export function jishoSuggestion(index, layer, label, data, query = label) {
                       ),
                   )
                   .filter((references) => references.length);
-    const definitions = record.senses
-        .flatMap((sense, position) =>
-            (sense.english_definitions ?? [])
-                .flatMap((value) => value.split(/[;；]/u))
-                .map((value) => value.trim())
-                .filter(Boolean)
-                .map((meaning, index) => ({
-                    translations: { en: meaning },
-                    provenance: `jisho:${record.slug || encodeURIComponent(label)}:sense:${position}:${index}`,
-                })),
-        )
-        .slice(0, 10);
+    const definitions = record.senses.flatMap((sense, position) =>
+        (sense.english_definitions ?? [])
+            .flatMap((value) => value.split(/[;；]/u))
+            .map((value) => value.trim())
+            .filter(Boolean)
+            .map((meaning, index) => ({
+                translations: { en: meaning },
+                provenance: `jisho:${record.slug || encodeURIComponent(label)}:sense:${position}:${index}`,
+            })),
+    );
     const partsOfSpeech = record.senses.flatMap(
         (sense) => sense.parts_of_speech ?? [],
     );
@@ -589,7 +588,7 @@ function createJishoLookup({ fetchImplementation, endpoint }) {
             `${endpoint}?keyword=${encodeURIComponent(label)}`,
             "application/json",
         );
-        const data = await response.json();
+        const data = JSON.parse(await readBoundedText(response));
         if (!data || !Array.isArray(data.data))
             throw new Error("jisho_response_invalid");
         return data;

@@ -232,6 +232,14 @@ Fifteen everyday nouns cover furniture, clothing, objects and food, with four-la
 
 Add 32 illustrated nouns: sixteen food items and sixteen body terms, with four-language meanings and separate Food and Body starter decks. English includes 25 recorded number transformations, including feet, teeth, potatoes and voiced mouths, while mass-noun senses such as chicken meat, beef, butter and skin have no plural family. Japanese keeps complete atomic-Kana paths, distinguishes both meanings of あし with separate foot and leg definitions, and reuses existing native recordings when pronunciation inputs are identical. Four individually authored example sentences per language have direct neural recordings that take priority over exact-constituent composite fallbacks. All illustrations are bundled locally in the established language-specific art style.
 
+## Review fixes and recording inventories
+
+Recording metadata now uses a compact manifest and checksummed inventories grouped by characters, vocabulary, transformations, sentences and sentence fallbacks. Audio bytes, voice/request provenance and lookup priority are preserved. Reference imports read packaged language metadata; provider cleanup attempts every registration even after a disposer fails. Dictionary failures release response bodies and reference content loads can retry. Documentation reflects the current configuration and generated artwork.
+
+## Complete Japanese lookup results
+
+Jisho JSON and Kanji HTML responses use the shared byte-bounded reader. All authoritative meanings are retained, including the fourteen meanings of 節. Remote small-kana stroke viewports use the same proportions as packaged writing guides. Historical provenance links point to full immutable implementation hashes from the surviving repository history.
+
 ## Commits
 
 - [7d529da8](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/7d529da851a5301f3dd04ee4b1d71e17053248f9)

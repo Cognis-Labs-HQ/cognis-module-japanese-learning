@@ -12,6 +12,7 @@ export async function requestJisho(fetchImplementation, url, accept) {
         signal: AbortSignal.timeout(15000),
     });
     if (!response.ok) {
+        await response.body?.cancel();
         const error = new Error("jisho_request_failed");
         if (Number.isInteger(response.status))
             error.httpStatus = response.status;

@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { readFile } from "node:fs/promises";
+import { cp, mkdtemp, rm, readFile } from "node:fs/promises";
 import { createHash } from "node:crypto";
 import { gunzipSync } from "node:zlib";
 import { createReferenceProvider } from "../dictionary/reference.js";
@@ -100,5 +100,38 @@ test("reference records preserve legitimate unfamiliar spellings and unknown Kan
             JSON.parse(results[0].fields.dictionary_data).records[0].slug,
             unknown.slug,
         );
+    }
+});
+
+test("reference content loading recovers after a transient local failure", async () => {
+    const root = await mkdtemp("/tmp/study-reference-retry-");
+    const logs = [];
+    try {
+        const provider = createReferenceProvider({
+            referenceRoot: "data/reference",
+            contentRoot: root,
+            metadata: manifest.metadata,
+            source: manifest.source,
+            cacheRevision: "retry",
+            log: (...args) => logs.push(args),
+        });
+        const input = {
+            layer: {
+                id: manifest.language === "en" ? "words" : "alt-characters",
+            },
+            label: manifest.language === "en" ? "serendipity" : "節",
+        };
+        await assert.rejects(
+            provider.lookup(input),
+            /reference_content_unavailable/,
+        );
+        assert.equal(logs.length, 1);
+        await cp("data/library/content", root, { recursive: true });
+        const result = await provider.lookup(input);
+        assert.ok(result.length);
+        if (manifest.language === "ja")
+            assert.equal(result[0].definitions.length, 14);
+    } finally {
+        await rm(root, { recursive: true, force: true });
     }
 });

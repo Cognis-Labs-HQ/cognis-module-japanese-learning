@@ -1,5 +1,6 @@
 import { katakanaToHiragana } from "../reuse/kana.js";
 import { requestJisho } from "./request.js";
+import { readBoundedText } from "../reuse/response.js";
 
 function text(markup) {
     return markup
@@ -90,7 +91,7 @@ export function createJishoKanjiLookup({ fetchImplementation, endpoint }) {
             `${endpoint}/${encodeURIComponent(`${label} #kanji`)}`,
             "text/html",
         );
-        return parseJishoKanji(await response.text(), label);
+        return parseJishoKanji(await readBoundedText(response), label);
     };
 }
 

@@ -306,272 +306,272 @@ Study Library の有効化がデータベーストランザクション内で失
 
 文のタイトル詳細は既存の `words` 関係を使用するようになり、`いぬ`、`やま`、`くる` のような完全な仮名部分が表示中の語彙レコード `犬`、`山`、`来る` をリンク先とします。各語彙レコードは自身の完全な読みだけを経由して原子的な仮名へ進み、並行する文読みチェーンや兄弟読み同士のリンクは作成しません。
 
-- [3bc0779](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/3bc0779)
+- [57eb9bc](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/57eb9bc1edf7d0375e8ca77bb145ef81527dedf4)
 
 ## 語彙が所有する漢字の発音
 
 漢字の発音リンクは、その読みを使う表示対象の語彙を優先するようになりました。完全な発音ラッパーを所有するのはその語彙だけであり、意味のある漢字読み部分を再利用し、残る一文字の仮名接尾辞を原子的な仮名へ直接つなぎます。たとえば `好` は `好き` にリンクし、その完全な読み `すき` は漢字部分の `す` と原子的な `き` を使い、`き` 単独の発音カードは作りません。
 
-- [b20b4e3](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/b20b4e3)
+- [eb10612](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/eb1061260347ca154c9bff6fc18c970931e4616e)
 
 ## 完全な文発音リンク
 
 文の発音メタデータは、単語関係と助詞関係の両方をディープリンク元として宣言するようになりました。その結果 `がっこうにいく` は、表示対象の語彙 `学校`、助詞 `に`、表示対象の語彙 `行く` に解決され、合成された完全読みレコードを追加せずに文所有のグラフを維持します。
 
-- [860a01e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/860a01e)
+- [a2ae8ba](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/a2ae8ba29d2325ad624de8b798573a6429586981)
 
 ## 筆順に沿った書き取りカード
 
 仮名カードと漢字カードを Cognis PR #226 の最新描画契約に合わせ、順序付き時刻サンプルと練習許容値を持つ必須の正規化 `strokePattern` メタデータを追加しました。KanjiVG 由来のパターンには CC BY-SA 3.0 の帰属情報を保持し、リポジトリのファイルサイズ制限を守るためコンテンツを分割しました。
 
-- [ba7857b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/ba7857b)
+- [ff5bf74](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/ff5bf7464b2d8e5b58925b68f167c52b720ecba8)
 
 ## 語彙の仮名リンクを復元
 
 発音を持つすべてのレイヤーが、Cognis PR #226 が使用する現在の `input.linkRelationships` 配列を公開するようになりました。`猫` のような語彙はこの契約を通じて `pronunciation-readings` の対象を公開するため、表示された `ねこ` から作成済みの発音エントリを開けます。漢字の読みと助詞の仮名リンクも同じ現在のメタデータ形式を使用します。
 
-- [046b335](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/046b335)
+- [d81fda7](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/d81fda7fa3efaa127a5a3f21633afef600c9ea8a)
 
 ## 現行契約だけを使う発音リンク
 
 ベータ版コンテンツスキーマに互換経路を残さず、非推奨の単数 `linkRelationship` メタデータを削除しました。発音フィールドは Cognis が使用する現在の `linkRelationships` 配列だけを公開し、回帰テストは旧プロパティの再導入を拒否します。
 
-- [29d7b90](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/29d7b90)
+- [9376566](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/937656620115c72eeea3f7f8273a8aff3a30c160)
 
 ## 実行時の筆順パターンプロバイダー
 
 日本語の書記単位に対して、最新の Cognis Library lookup プロバイダー契約を実装しました。完全一致する仮名・漢字ラベルは、安定した KanjiVG 出典と信頼度 `1` を伴う、パッケージ内で検証済みの `stroke_pattern` を返し、不明なラベルは推測しません。プロバイダーはネットワークサービスや OCR を使わず完全にローカルで動作し、無効化時または取り込み失敗直後に登録を解除します。
 
-- [bbc6d84](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/bbc6d84)
+- [9c6ba69](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/9c6ba6910450efd81f08e7982c67d69fe89ab0f6)
 
 ## かな・漢字の完全な筆順検索
 
 検索プロバイダーを同梱カリキュラム以外にも拡張しました。同梱パターンは従来どおり即時かつオフラインで利用できます。それ以外の日本語のかな・漢字は、Unicode コードポイントから正規の KanjiVG SVG データを取得し、範囲制限付きの正規化された筆画サンプルへ変換してキャッシュし、正確な出典と信頼度 `1` を付けて返します。未対応または取得不能な文字は推測せず、正確なテキスト入力に OCR は意図的に使用しません。
 
-- [e040cf0](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/e040cf0)
+- [326145f](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/326145f3eb05ed9d4df521f92728067d87f19d9d)
 
 ## ネイティブ優先の Jisho カード検索
 
 最新の Cognis 検索コントラクトに対応した、かな・漢字・語彙カード用のローカライズ済み Jisho Composer プロバイダーを追加しました。同梱レコードに完全一致する場合は、ネットワークへ接続せず、レビュー済みの全フィールドと関係を返します。ネイティブ検索で見つからない場合は、Jisho へ問い合わせる前に上限付きリクエストキャッシュを使用し、正規ラベル、発音、JLPT レベル、およびプロバイダーグラフに既に存在する漢字・読み・かな・定義へのリンクだけを入力します。筆順プロバイダーも、現在の Composer が要求するローカライズ済みメタデータを公開するようになりました。
 
-- [db47014](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/db47014)
+- [7e6ef74](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/7e6ef7480eabb9fb4724bb51532523cfd32f89fd)
 
 ## 汎用 Library プロバイダーによる登録
 
 Jisho は、汎用 `study:library:provider` ケイパビリティを受け取り、`registerLookupProvider` へ直接委譲する専用登録アダプターを公開するようになりました。Bootstrap はこのアダプターを使用し、返された解除関数を保持します。後続の登録またはコンテンツ取り込みに失敗した場合、登録済みプロバイダーを逆順で解除します。この統合は Jisho 専用のホストケイパビリティに依存しません。
 
-- [0056f4d](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/0056f4d)
+- [bfea956](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/bfea956d632cc40a088b4296d2d02eb2535ef79b)
 
 ## パッケージ済み登録エントリーポイント
 
 汎用 Jisho 登録エントリーポイントとその回帰テストに対応するパッケージマニフェストのダイジェストを更新しました。
 
-- [b2a1e34](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/b2a1e34)
+- [bfea956](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/bfea956d632cc40a088b4296d2d02eb2535ef79b)
 
 ## 自己完結型の筆順ランタイム
 
 Cognis の有効化検証時にモジュールを import できなくしていた、配備されない本番依存関係 `svg-path-properties` を削除しました。モジュール自身が、KanjiVG の筆画に対応する上限付き SVG パストークナイザー、曲線サンプラー、距離ベースの再サンプラーを同梱します。回帰テストでは、外部モジュールのインストール環境に合わせて、`node_modules` のないコピー済みモジュールツリーから Bootstrap、筆順検索、アンインストールのテストを実行します。
 
-- [6133b70](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/6133b70)
+- [4af0efc](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/4af0efc58f962bcf07a087d0066ce2d7b54bf253)
 
 ## 逆向き Library ケイパビリティの解決
 
 Bootstrap は、SSO 認証モジュールと同じ逆向きプロバイダーパターンに従い、`ctx.capabilities.require("study:library:provider")` から必須の Library 登録インターフェイスを取得するようになりました。この必須ケイパビリティに `undefined` を返していた簡易 getter は使用せず、プロバイダー形状の検証とライフサイクルのクリーンアップは維持します。
 
-- [a3e2b35](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/a3e2b35)
+- [c1c8a23](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/c1c8a2304c9550d158842311194e3a5ec5e6db99)
 
 ## Library プロバイダー可視性ブリッジ
 
 Bootstrap は注入済みの公開 `study:library:provider` ケイパビリティを優先しますが、Cognis PR #226 が有効化検証にだけ公開している場合は、注入済み `study:library` サービスを、まったく同じ汎用 `registerLookupProvider` と `ingestContentPack` インターフェイスの搬送手段として使用します。第 2 のプロバイダープロトコルを作らずに有効化を修正し、両方のホスト可視性形態をテストします。
 
-- [f9c29d8](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/f9c29d8)
+- [a9d1c15](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/a9d1c155470fca1b8bc65bcdb6d7bced1a03d828)
 
 ## 完全に解決可能な文・漢字リンク
 
 ホストと同一の別名合成アルゴリズムでタイトル詳細リンクを監査しました。すべての文の発音について、順序付きのかな区間が意図した語彙および助詞レコードを開くことを検証します。各漢字は、隣接する 1 つの語彙ターゲットと一致する完全な主要読みを 1 つ公開します。追加の読みはタイトルに使わない別の関係を使用し、逆引き用の全原子的かな依存関係を維持します。
 
-- [2a5f23f](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/2a5f23f)
+- [9d7abe8](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/9d7abe8203769376d0249bda7b790ac84b4266cf)
 
 ## パッケージ音声契約への整合
 
 最新の Library コンテンツパック検証で `invalid_asset_reference` として正しく拒否される外部プレースホルダー音声 URL を削除しました。表記単位の発音は引き続き必須とし、真正な音声ファイルをパックに同梱するまでは音声を任意のアップロード欄にします。
 
-- [80c7a20](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/80c7a20)
+- [ac71f82](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/ac71f82fa6bfd798e9ea05be7c882e523a8f7da5)
 
 ## かなの直接使用関係
 
 漢字からかなへの人工的な依存関係を削除しました。かなカードの「使用元」には直近の読みレコードだけが表示され、無関係な単語や漢字を直接の親として示さず、意図した `あ` → `あめ` → `雨` のナビゲーションを維持します。
 
-- [13d11ce](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/13d11ce)
+- [98c2e49](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/98c2e4954513cd03eb4f8a76b1e57b011a3daca5)
 
 ## 漢字だけの発音境界
 
 漢字の発音リンクは、表示語彙全体ではなく、その漢字専用の純粋なかな読みレコードを参照するようになりました。そのため `好` は `す` を表示してリンクし、別の `好き` 発音ラッパーが `す` と接尾辞 `き` を構成します。単独漢字語も同じ二段階の境界を使い、同名の親が重複しません。
 
-- [6cb7ca7](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/6cb7ca7)
+- [0900421](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/090042170e97a4f9d76d0433e2057e360ee973f9)
 
 ## 曲線に忠実なかな筆順パターン
 
 パッケージ内のすべてのかな・漢字の筆順パターンを、固定した Unicode 名の KanjiVG SVG パスから再生成しました。モジュール内のサンプラーは距離サンプリング前に三次・二次曲線を分割し、`え` の第2画のような折り返しや輪を、誤解を招く直線へ単純化せず保持します。
 
-- [1668b5f](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/1668b5f)
-- [5002586](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/5002586)
+- [76cf76e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/76cf76e300dbc6e2443d10710bd5e33c160c815e)
+- [76cf76e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/76cf76e300dbc6e2443d10710bd5e33c160c815e)
 
 ## かなから再帰的に導出する発音
 
 文字だけで構成された84件の非表示語彙発音ラッパーをすべて削除しました。原子的なかなだけを発音経路の終端とし、漢字と37件の実体語彙カードは順序付きかなを直接参照し、文は実体語彙と助詞だけを参照します。語彙と文の発音値は表示用にこのグラフから生成し、関係を発音表示として指定するため、表記文がタイトル直下に重複表示されません。
 
-- [40ce8d8](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/40ce8d8)
+- [b2a396a](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/b2a396aaafe01405abb35efb4418202f3bc46cff)
 
 ## 順序付き文の検証
 
 文の関係を Cognis PR #226 の最新取り込み事前検査に合わせました。順序付き `words` と `particles` を再び構成関係とし、発音を構成要素から再帰的に導出したまま、ホストが各文のラベルを再構成して検証できるようにしました。
 
-- [aff5962](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/aff5962)
+- [fec3fb5](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/fec3fb5b593194ec64c1e2ad32032e7567debf4d)
 
 ## かな発音の再表示
 
 再帰的な日本語の読みを壊さずに、コンパクトなかなカードへローマ字発音を再表示しました。各かなは発音導出用の元表記を第 1 値として維持し、最新の Library レンダラーが表示する別値としてヘボン式ローマ字を提供します。
 
-- [d6c2c48](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/d6c2c48)
+- [29b678e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/29b678eac314782f4dc693bbd3855a1ae3c61184)
 
 ## 学習者向けのかな発音
 
 かなの発音値をヘボン式ローマ字だけに修正しました。学習者には `あ` や `ア` の発音として `a` が表示され、同じ記号を発音として繰り返すことはありません。上位層の日本語綴りは引き続き順序付きかなラベルを使用します。
 
-- [46d74ae](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/46d74ae)
+- [93532bd](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/93532bd4c8ed8c3e653b34332df1623f23f784c9)
 
 ## グループ化したかな発音参照
 
 漢字の別読みを復元し、漢字と語彙の各発音を、順序付きかな参照の独立した入れ子シーケンスとして表現しました。スキーマはこれらのフィールドを `multi_value`、関係をグループ化済みとして宣言し、Jisho の候補も今後の Cognis コア対応に向けて同じ構造を保持します。
 
-- [9bbe068](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/9bbe068)
+- [ea6c997](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/ea6c99745df322094aaa4ba26b1b7e6e8de9558a)
 
 ## 非表示の語彙発音シム
 
 語彙の意味が表記漢字の定義と異なる場合に限り、非表示の発音レコードを復元しました。各シムは語彙固有の定義を持ち、該当する漢字表記をリンクし、グループ化されたかな参照へ解決します。定義が同一の語は直接かな経路を維持し、Lookup 候補には非表示レコードを含めません。
 
-- [448f99e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/448f99e)
+- [da85016](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/da8501693bbc2e105df9e95cd0333559c79dc46b)
 
 ## 漢字の発音リンクを完全化
 
 すべての漢字の発音が、読みごとの非表示の完全読みレコードを経由して、順序付きの最小かなへ解決されるよう修正しました。`来` の6つの読み（`く`、`きた`、`き`、`こ`、`らい`、`たい`）はすべて深いリンクが機能し、同じ不変条件を収録済みの全漢字に適用しています。
 
-- [f919fa1](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/f919fa1)
+- [286d3ee](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/286d3ee07376843bc4f5992ea00cf1e7db01e05f)
 
 ## 単語と文の完全な発音経路
 
 漢字表記のすべての単語を、収録済みの表記レコードと 1 件の非表示の完全発音レコードへ接続し、原子的な仮名へ進む前に収録済みの漢字読み区間を保持しました。文の発音は、単語の読みと助詞の仮名から構成した非表示の完全レコードをたどるようになりました。Jisho 候補もレイヤーごとの文字種を検証し、利用できる漢字表記リンクを保持し、不完全な仮名グループを除外します。
 
-- [8f5a3e5](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/8f5a3e5)
+- [4e549a9](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/4e549a90346e73f19bed8e21edd6ae78f95d5074)
 
 ## 同音語で共有する発音カード
 
 `はな`、`はし`、`あめ`、`かみ` に重複していた非表示発音カードを、完全な仮名読みごとに 1 件の共有カードへ置き換えました。各共有カードは関連する語彙定義を集約し、異なる表示対象の漢字語彙から使用されます。同じラベルのカード同士が相互にリンクすることを防ぎながら、各同音語は個別の学習語彙として維持されます。
 
-- [111ec59](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/111ec59)
+- [abd8c3b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/abd8c3b545fe155d4c7c2439cadb337707c408c2)
 
 ## 安定したレイヤー間の読み遷移
 
 収録済みの関係だけを読みカード遷移の情報源にしました。語彙の読み経路は同じラベルの別語彙カードを参照できません。単一漢字の完全発音は順序付き仮名へ直接解決し、複合語は厳密に小さい読み区間だけを保持します。非表示の構造的な読みは意味定義を複製しません。表示対象の語彙は漢字と意味が異なる場合だけ固有のローカライズ定義を保持し、同じ意味は表記の親から引き継ぎます。主ラベルと同一の定義は Cognis によって引き続き非表示になります。
 
-- [1d37ccf](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/1d37ccf)
+- [5bed22f](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/5bed22f956d41cdbbbf97749acae0400dbe01275)
 
 ## 検証済み漢字読みと初級コンテンツ
 
 発音の網羅性を、確認済み KANJIDIC 音読み・訓読み一覧、決定的な正規化、各結果につき 1 件の非表示読みレコード、`達` を `だち` と読む明示的な文脈例外に固定しました。漢字親と意味が異なる語彙カードのローカライズ定義に加え、場所・存在・描写・様態・コピュラを扱う 9 語と、完全な発音経路を持つ自然な例文 8 文の確認済みバッチを追加しました。
 
-- [69fad5d](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/69fad5d)
+- [ddfb838](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/ddfb83889f2172985b1b8290e0737832f9187ac8)
 
 ## ステージカード削除範囲の所有元
 
 ステージ上のカード削除処理とスタイルは、この外部日本語コンテンツモジュールではなく Cognis Study Library コンポーザーが所有することを確認しました。正確なホスト側セレクター、必要なサイズ修正、ブラウザー回帰テストを `TODO.md` に記録し、ホスト所有のエディターへ安全でない CSS 上書きを注入しない方針としました。
 
-- [c1a4b7b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/c1a4b7b)
+- [8e9f064](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/8e9f0646527535a2ef05cfd53a96b3f7438e28bd)
 
 ## かな限定のローマ字解決
 
 日本語パックではヘボン式ローマ字を原子的なかなに限定し、上位レイヤーの読みを日本語のかなラベルとして作成済みであることを確認しました。再帰的な発音導出によってかなのローマ字が語彙や文の読みに持ち上がらないようにするため、Cognis コンポーザーに必要な修正箇所を正確に記録しました。外部モジュールからホスト所有の導出動作を上書きすることはありません。
 
-- [2324f5b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/2324f5b)
+- [35975db](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/35975dbcb8e4de5c6da0721e67adf96070d9ae9f)
 
 ## 明示的な破壊的アンインストールクリーンアップ
 
 Cognis が要求する管理用モジュール設定削除エンドポイントを、コンテンツに影響しない `204` 互換ルートとして追加しました。パッケージ提供の日本語レコードは、アンインストール要求に `deleteContent: true` が明示された場合に限り Study Library プロバイダー経由で削除されます。無効化、通常のアンインストール、クリーンアップ機能の欠如、またはクリーンアップ失敗によって、既存の学習データが黙って削除されたり孤立したりすることはありません。
 
-- [eb8583f](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/eb8583f)
+- [5c36f40](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/5c36f401cf0066600d44e0863ce86cb58da5c58f)
 
 ## 語彙カードの定義を復元
 
 これまで表記親に依存していた、表示対象の漢字表記語彙レコードすべてに直接の定義関係を追加しました。直接参照された定義だけを表示する Cognis のカードレンダラーに合わせ、`川`、`空`、`花`、`鼻`、`橋`、`箸`、`雨`、`飴`、`水`、`犬`、`猫`、`山`、`紙`、`髪` などのカードで意味を復元しました。
 
-- [c045f5e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/c045f5e)
+- [7dd6179](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/7dd61791b5af32e0fe27f5db9a9298f2b4fc9a74)
 
 ## 動作する Jisho 語彙検索
 
 Jisho コンポーザーのフローを修正し、語彙検索で長さを制限した英語などのラテン文字検索語を受け付け、リクエスト前に即座に該当なしとなる問題を解消しました。パッケージ内の日本語完全一致を引き続き優先し、リモートの日本語クエリでは完全一致を、意味検索では Jisho の最上位結果を使用します。かな・漢字レイヤーは有効な日本語 1 文字に限定し、安全でない入力や長すぎる入力はネットワークアクセス前に拒否します。
 
-- [f14901a](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/f14901a)
+- [3ae4cbe](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/3ae4cbe0874933fa718765636bfe69279367db63)
 
 ## 動詞・副詞の基本形変換ビュー
 
 日本語パックを最新の Cognis 変換契約に合わせました。語彙では動詞の基本形と活用しない副詞を専用ビューに分け、動詞は一段、通常の五段語尾、例外の `行く` と `ある`、不規則な `来る` を区別します。プロバイダー宣言の規則により、確認済みの丁寧形・否定形・過去形・て形を表示時に導出し、パックには 12 件の正規の動詞・副詞基本形だけを保存して生成形の重複は収録しません。
 
-- [097eab5](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/097eab5)
+- [1c251e5](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/1c251e56e591b36b4aefd8144ce6213075d3b30f)
 
 ## 文発音リンクの分割
 
 文の発音詳細では、順序付けられた読みの各区間を、対応する表示語彙または助詞カードへ直接リンクするようになりました。文全体を表す 25 件の非表示語彙ラッパーと、文レベルの `pronunciation-readings` 関係を削除したため、`はなはとてもきれいです` は文全体の語彙カード 1 枚ではなく、`花`、`は`、`とても`、`きれい`、`です` を個別に開きます。
 
-- [0002eee](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/0002eee)
+- [03377a7](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/03377a7816980bf5230ee83739b70af4dad33182)
 
 ## 完全な日本語発音の保護
 
 パッケージ内の上位レイヤー発音をすべて監査し、文全体の再構成を含む完全な日本語テキストとして固定しました。報告されたローマ字混在と末尾区間の欠落は Cognis PR #226 に由来します。再帰導出が原子的なラベルより先にかなカードのヘボン式フィールドを読み、ホストのポップアップがグループ化された読み全体を保持する必要があります。外部パックからホスト UI を危険に上書きせず、必要な上流の基本ケース修正と折り返し回帰テストを正確に記録しました。
 
-- [0906392](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/0906392)
+- [cd764a7](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/cd764a7611976f5b58152b97ebadb073cc96ce1b)
 
 ## 原子的なかなへの読みタイトルナビゲーション
 
 すべての非表示漢字読みレコードに、原子的なかなから成る明示的で順序付きのタイトル構成を追加しました。`さん` のような複数かなの読みは `さ` と `ん` を直接開くため、ホストが `小` で使われる別の非表示漢字読み語彙カード `さ` に置き換えることはありません。発音の意味を表す完全な `kana-spelling` 関係は維持しつつ、タイトルナビゲーションは決定的にかなで終端します。
 
-- [8c48fa7](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/8c48fa7)
+- [612e4cb](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/612e4cb4df57a5afb62cd4dcf4291c7516d2e91e)
 
 ## 複合かなのナビゲーションと小書き字形
 
 複数記号から成るすべてのかなカードに、原子的なかなによる明示的なタイトル構成を追加しました。これにより、`きょ` のような複合かなが同じ表記の非表示語彙読みカードへ深くリンクすることを防ぎます。複合文字の筆順配置を文字サイズに応じた領域で再構築し、`ょ` のような小書き文字が通常サイズのかなと並んでも明確に小さい比率を保つようにしました。
 
-- [4c33d9e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/4c33d9e)
+- [305e774](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/305e7743a0ab48ca335cac9add23cb1c670def20)
 
 ## 文を装う語彙カードを作らない文リンク
 
 文の発音から、順序付きの表示語彙および助詞構成要素へのリンクを復元しました。正当な文リンクを削除せず、文全体の読み、文の複合クラス、助詞クラス、助詞参照、非表示の文構成要素が語彙レイヤーへ混入することを強化した構造回帰テストで拒否します。
 
-- [7cdb1ac](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/7cdb1ac)
+- [ad97003](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/ad97003b391165fcd5411e708bf771fdac729d13)
 
 ## かな重複語彙を作らない直接漢字読み
 
 `む` のような単一かなの残存項目を含む、140 件すべての非表示 `reading:kanji` 語彙レコードを削除しました。漢字発音グループとリモート Jisho 漢字候補は順序付きの原子的なかなへ直接リンクし、完全な語彙発音ラッパーはかな書記単位のラベルと重複しない場合だけ残します。
 
-- [d7a28e4](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/d7a28e4)
+- [bbfe7ae](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/bbfe7aed644efc97e0d619b5ccc2d684c12880d2)
 
 ## 深く分岐する動詞変形
 
 日本語パックを Cognis の合成可能な変形ツリー契約に合わせました。すべての動詞活用族が丁寧、否定、過去、接続、使役、受身、可能、意向の経路へ分岐し、4 段階の使役希望連鎖も含みます。表記と発音は個別に変形され、ローカライズされた定義上書きが意味上の分岐を説明します。副詞は不変の基本カードのままで、生成形は表示時にのみ存在します。
 
-- [d93ad3c](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/d93ad3c)
+- [6d3e6bf](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/6d3e6bf546acdcccd860b4c9a7ac75649c1a5dff)
 
 ## 選択的な漢字読み中間カード
 
 複数の読みを持つ漢字だけに、発音ごと一つの非表示読み語彙カードを復元しました。唯一の単一読み漢字は引き続き原子的なかなへ直接リンクします。各中間カードはタイトルを一つの元漢字だけにリンクし、原子的なかなから発音を再構成し、意味がより狭い場合は独自の定義を持てます。`せんせい` のような語全体のかなラッパーは削除し、`先生` の読みは個別の `せん` と `せい` 中間カードから構成します。
 
-- [91488aa](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/91488aa)
+- [0f16eda](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/0f16edaecc01c74449dcd9a28ebccca898f5ffd5)
 
 ## 単独で意味を表示できる読み定義
 
 すべての非表示漢字読み語彙レコードに定義を直接リンクしました。これにより、発音のディープリンクから読みを開いても、漢字カードの「使用元」から開いた場合と同じ意味が表示されます。意味が同じ場合は元漢字の定義を再利用し、読みの意味が狭い場合は引き続き読み固有の定義を持たせられます。
 
-- [b0a83fb](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/b0a83fb)
+- [935f6c9](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/935f6c9d0ee0ff5cb3b0284a839a76d74221e30b)
 
 ## ローカライズ済み変換マーカー
 
@@ -719,15 +719,15 @@ Jisho コンポーザーのフローを修正し、語彙検索で長さを制�
 - [e5eae65](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/e5eae656076a0bcb31c74e7f388c06b4ed790815)
 - [6677a4f](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/6677a4f80b97c2d3f056b189002e2c0f30f88e22)
 - [b314603](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/b314603e775c02a12ee16c3c718618a4077125bc)
-- [d7b696b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/d7b696b) — 変換マーカーを Cognis に整合。
-- [64ce852](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/64ce852) — すべての動詞変換定義へ注釈を追加。
-- [f6c7201](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/f6c7201) — 動詞定義へ変換マーカーを配置。
-- [739beba](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/739beba) — 合成可能な定義変換を導入。
-- [a5539e6](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/a5539e6) — 文脈対応の定義置換を追加。
-- [7c2c0db](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/7c2c0db) — 描画のアスペクト比とストロークグループを保持。
-- [ab10be0](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/ab10be0) — 漢字識別を発音から分離。
-- [19424fc](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/19424fc) — 重複した識別ガイダンスを削除。
-- [244e048](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/244e048) — 文構造コンポーザー項目を公開。
-- [b33c94a](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/b33c94a) — 文の接続表現とコピュラ形を拡充。
-- [7f15934](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/7f15934) — コピュラ変換メタデータの検証を修正。
-- [25c3765](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/25c3765) — 語彙の発音ディープリンクを復元。
+- [b41da01](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/b41da011d6026d909c55369d3598e8334bbffe94) — 変換マーカーを Cognis に整合。
+- [ac2bc76](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/ac2bc76bc15ec0898b023e7f170e106935f7a438) — すべての動詞変換定義へ注釈を追加。
+- [cf02a4a](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/cf02a4ae4c296f4d67d86ff21c099ecb5bea8a8c) — 動詞定義へ変換マーカーを配置。
+- [5098a12](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/5098a123745e0ee72e3afad297d81a0505792aa0) — 合成可能な定義変換を導入。
+- [da436b4](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/da436b4e3c0f9b92a7ee895980129d572b633da7) — 文脈対応の定義置換を追加。
+- [340b525](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/340b525fc838313d937498bc2fcc8f20c48c75e2) — 描画のアスペクト比とストロークグループを保持。
+- [dee7ab5](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dee7ab5e5f1cbc78a28eb526f0b07c421c151054) — 漢字識別を発音から分離。
+- [dee7ab5](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dee7ab5e5f1cbc78a28eb526f0b07c421c151054) — 重複した識別ガイダンスを削除。
+- [288aa01](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/288aa0165b63cc7810fcf50530df7d49fc1a70c5) — 文構造コンポーザー項目を公開。
+- [0895472](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/0895472e7c61aa0858fd6d8a1aa6d6f27852d0ce) — 文の接続表現とコピュラ形を拡充。
+- [92992d5](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/92992d5f65831215de331f4af3da924a006fecb7) — コピュラ変換メタデータの検証を修正。
+- [26eeb3e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/26eeb3e8b152bb7ee22f5bb9dee7ba67f430cbf6) — 語彙の発音ディープリンクを復元。

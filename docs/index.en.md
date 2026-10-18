@@ -240,7 +240,7 @@ The reviewed beginner batch adds `ここ`, `そこ`, `どこ`, `いる`, `ある
 
 ## Destructive Uninstall Cleanup
 
-Disabling the module and ordinary uninstall cleanup retain every imported Japanese record. Only the host uninstall hook's explicit `deleteContent: true` option may call the Study Library provider's `deleteContentPack` operation; that provider owns transactional relationship cascading and must report failure before Cognis removes the module. The administrative `DELETE /api/v1/modules/study-language-ja/config` compatibility route only clears module-local configuration (the module has none) and therefore returns `204` without touching learning content.
+Administrator-only `GET`, `PUT` and `DELETE /api/v1/modules/study-language-ja/config` remain available while disabled. GET reads the persisted `voiceId`; PUT validates and saves it in `module_study_language_ja_config`, surviving restarts and disable/enable cycles. DELETE clears only that configuration. All three return HTTP 200 with a JSON data envelope; clearing configuration does not delete learning content. Provider registrations are removed on disable or failed activation. Uninstall preserves content unless `deleteContent: true` requests the host provider’s transactional `deleteContentPack` operation. Failures propagate with safe structured logs.
 
 ## Vocabulary Card Definitions
 
@@ -326,7 +326,7 @@ Study provides public pronunciation classification and styles reused by Library 
 
 ## Study module layout
 
-The content pack lives in `data/library/`: its manifest, schema, and content shards form one ingestion and deletion boundary. Starter decks remain in `data/starter-decks.json`. Runtime providers live in `api/dictionary/` and `api/strokes/`; deterministic shard loading and byte-bounded response decoding live in `api/reuse/`. Cross-layer content and lifecycle tests live in `tests/`, while provider, transport, and API tests live in `api/tests/`. The manifest declares `api/routes/config/index.js` as `disabledApi`; that entrypoint registers only the administrator-only configuration DELETE route and does not ingest content or activate providers. Published flow identifiers remain stable.
+The content pack lives in `data/library/`, with starter decks in `data/starter-decks.json`. Providers live in `api/dictionary/` and `api/strokes/`; deterministic loading and byte-bounded response decoding live in `api/reuse/`. Cross-layer tests live in `tests/` and API tests in `api/tests/`. The manifest declares `api/routes/config/index.js` as `disabledApi`, registering administrator-only GET, PUT and DELETE configuration routes while disabled, without ingesting content or activating providers. Published flow identifiers remain stable.
 
 ## Complete dictionary and stroke graphs
 
@@ -342,4 +342,8 @@ Bootstrap registers a removable `study:audio:provider.registerProvider` implemen
 
 Generated files use 24 kHz mono 16-bit PCM with bounded peaks and verified non-silent output. Requests use fixed per-language models, speed 0.9, similarity 0.85 and style 0; stability is 0.75 for English and 0.9 for Japanese. Seeds are retained per request; rejected silent outputs are recorded and retried without changing voices. English uses IPA phoneme tags where authored. The content manifest declares its packaged asset directory and advances the content-pack version for installation.
 
-Every layer exposes the optional reference-image field in the host card editor and detail view. The dog card bundles a photograph by Elf, edited by Djmirko, licensed under CC BY-SA 3.0. Its source and attribution are included in `data/library/assets/images/LICENSE.md` and the content manifest. Administrators can upload additional reference images through Cognis.
+Every layer exposes the optional reference-image field in the host editor and detail view. Vocabulary uses original AI-generated anime-style artwork made with OpenAI image generation; no third-party photographs are included. `data/library/assets/images/catalog.json` records generation and crop provenance, card assignments and checksums; `data/library/assets/images/LICENSE.md` documents the artwork license. Administrators can upload additional reference images through Cognis.
+
+## Recording Inventories
+
+`data/audio/recordings.json` is a compact manifest with language, voice, model, shared processing settings, totals and integrity-checked inventory paths. Purpose-grouped files under `data/audio/inventories/` separately describe characters, vocabulary, transformations, direct sentences and composite fallbacks. Each file stays below 800 lines and retains exact requests, per-clip voice provenance, transformation paths and audio checksums. Bootstrap verifies every inventory checksum and count before registering playback; the recording bytes and lookup precedence are unchanged.

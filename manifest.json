@@ -2,7 +2,7 @@
     "id": "study-language-ja",
     "uuid": "e905927f-b133-572a-92ce-2ea8645e5ceb",
     "name": "module.study.language.ja.name",
-    "version": "2.4.9",
+    "version": "2.4.10",
     "class": "extension",
     "coreApiVersion": "v1",
     "capabilities": ["study:language:ja"],
@@ -88,19 +88,19 @@
         },
         {
             "path": "README.de.md",
-            "sha256": "58a830aca4612b75850a4547fbdfe5cc6abb85ec9188ed07766db0189d1704f8"
+            "sha256": "0b56cd20298b949bdac28746842bb1e24851fb9ee142cc016fda340fa5ea92a1"
         },
         {
             "path": "README.en.md",
-            "sha256": "27beca149d06d6d1830d013e01cb641070b00001c8ec0afeb1986c50e1b84e62"
+            "sha256": "a37d6a6d3b6147898854dad5a50f371830c6b02abe89811408535bc96bbce98c"
         },
         {
             "path": "README.id.md",
-            "sha256": "9c0130c0fb514f145d4cf2b3ba4ce1e1fc95cce4f0ddb26a51b4cb24762538df"
+            "sha256": "dc339abb43d1bbe3611da619c404c93a130cd0b70a8b2429c0d39a1fca86e27a"
         },
         {
             "path": "README.ja.md",
-            "sha256": "c27e4db04cfe0e241d97aedc50df3d8c2f532d4f05d9e45410d404ffadb7412c"
+            "sha256": "04943200332dbc34669ba469fb8608cd96925deb0043ba08fb514d79e57aad26"
         },
         {
             "path": "TODO.md",
@@ -109,6 +109,10 @@
         {
             "path": "api/audio/index.js",
             "sha256": "627268137fe84ed1f042869114e5fb0abfb5d25c7828788876623356f56facb5"
+        },
+        {
+            "path": "api/audio/inventory.js",
+            "sha256": "77b6609d3af13c0aa701b8a6bcb0c2fb2fa3024d3fcda6249ebb99deca96cd99"
         },
         {
             "path": "api/configuration.js",
@@ -120,19 +124,19 @@
         },
         {
             "path": "api/dictionary/index.js",
-            "sha256": "ecce2bfcbb11a0a0434f2bd355ef2b3e1a053ff53a8d9a41400b620787d28c12"
+            "sha256": "42d7e12d5f7b42ae1bafe2a644504ccbf5455deb3ad1039f540999ea366ec727"
         },
         {
             "path": "api/dictionary/kanji.js",
-            "sha256": "de704cce5ef0defb0b57e33b35f5d5f34393de0510835014a46c6c45b58c08fc"
+            "sha256": "47a11cb60f56be494b18aa4009333ae5714e201790671036f14f2ee94ce91c87"
         },
         {
             "path": "api/dictionary/reference.js",
-            "sha256": "987e278d8c5a9d47b74f15def26e18f64c639056f9e4b38324a8a206c9950d59"
+            "sha256": "15484bcb8e8423a3171eeed942c1c633b998d130a0fe6699912623684a8b95d1"
         },
         {
             "path": "api/dictionary/request.js",
-            "sha256": "e9a402e3cf10f46bc83563d32317895c3b857aba24dff01864068f8c6618ffea"
+            "sha256": "cb6966db66b2d926d0ad714e2821fd2e16a7a94d40b2d4e76238b5c02776a530"
         },
         {
             "path": "api/index.js",
@@ -159,8 +163,12 @@
             "sha256": "d48bd355694641695649fe71bd4ed7244430d97f6d5f8968a2e412c26472ce70"
         },
         {
+            "path": "api/strokes/geometry.js",
+            "sha256": "48e9b5b67bd39f3753c8f83b6dd058a99265c39c68b77ac23501754908a72d5b"
+        },
+        {
             "path": "api/strokes/index.js",
-            "sha256": "22d3cfc0f2361bf38e1bf834af98e99582fcc3c4c68e2f20c4da55422b053e89"
+            "sha256": "8f05621784dd46fbaa6bd10407bfb51ff8a26eb067bd2f0713575457171ef06a"
         },
         {
             "path": "api/strokes/path-sampler.js",
@@ -180,11 +188,15 @@
         },
         {
             "path": "api/tests/jisho-kanji.test.js",
-            "sha256": "5a496ec5ece72444f5a4a139935af3d708f7940b70500161af4a4b775b0fbe11"
+            "sha256": "f5a70139f5aecc8d0940c66dbfdceb011bf192a065deb709adfcc75afe9e4c7f"
         },
         {
             "path": "api/tests/jisho-lookup-provider.test.js",
-            "sha256": "dc90f4b3d7f5d9ca7bfd6ea8610c66491f3ba2674999ae10e558f660cf9fbd85"
+            "sha256": "34cf89534ab1a698167700b872763ae3f0a96a93de83cc2e8b64bbde0773b005"
+        },
+        {
+            "path": "api/tests/jisho-transport.test.js",
+            "sha256": "c228209c5119ee4586519110e28817ddcfcd9cf370c9977ffd21bc0507743945"
         },
         {
             "path": "api/tests/lookup-cache.test.js",
@@ -200,7 +212,7 @@
         },
         {
             "path": "api/tests/reference.test.js",
-            "sha256": "87035e5ddd48853ba167fd1c2ee540be27fc67d04a02308c29a2a586a3cd40b7"
+            "sha256": "8145d4e8b2cf0811997a721456024d9a6a7a6f25a011ea237644fcd00ba29bf1"
         },
         {
             "path": "api/tests/response.test.js",
@@ -209,6 +221,10 @@
         {
             "path": "api/tests/stroke-pattern-provider.test.js",
             "sha256": "e7c55ca43500a0bed217d5054009c1bf3f9fe10b26a4571600540c7ed8bf53e8"
+        },
+        {
+            "path": "api/tests/stroke-viewport.test.js",
+            "sha256": "2d5c761c689fc239f039579a2990ddb4b8b7775dc30171d125b49541e1f170e9"
         },
         {
             "path": "api/tests/svg-path-sampler.test.js",
@@ -224,11 +240,151 @@
         },
         {
             "path": "bootstrap.js",
-            "sha256": "3e8a7b05601bf113800d817152d14318dd7b2ef03c41fb77f83124cf4e9cc686"
+            "sha256": "c9114a8ff21574fa3a8d25a7831e1bccbe2f1a3002d88afa2fabd4f9d0b78d86"
+        },
+        {
+            "path": "data/audio/inventories/characters-001.json",
+            "sha256": "9a32b9fdaa91ff465714373741b2c04cfa088914308efd31f5038121db483e22"
+        },
+        {
+            "path": "data/audio/inventories/characters-002.json",
+            "sha256": "ff9da191e4fbbfbc6786a0a7fe37aa182d89f37dfd90914fa55105bd99c48234"
+        },
+        {
+            "path": "data/audio/inventories/characters-003.json",
+            "sha256": "04183042cecaaffc78b9a6c41a44a4e58c0c46ed46cf8121d3d6c13e4916ec3a"
+        },
+        {
+            "path": "data/audio/inventories/characters-004.json",
+            "sha256": "43e5ee2f0ab4fc0963c931934b06a98e85b57ef844ed16e442a0def2612e1193"
+        },
+        {
+            "path": "data/audio/inventories/characters-005.json",
+            "sha256": "927c77b8abbac7395ed4e9d2277275ced7f00dfad5334c918cb28a0ea8473075"
+        },
+        {
+            "path": "data/audio/inventories/characters-006.json",
+            "sha256": "b1fc537d48d873bef075715a7fc95365667e2979039a263cca3a9161a54d2250"
+        },
+        {
+            "path": "data/audio/inventories/characters-007.json",
+            "sha256": "52bda13b83ecf1d560ce703c04257ef3ae36cf1c15de1f195f4d24e12d60f467"
+        },
+        {
+            "path": "data/audio/inventories/characters-008.json",
+            "sha256": "acba1307f7f914c3ae15a92058bdeb92bca09b759773497285b5423832c4aed4"
+        },
+        {
+            "path": "data/audio/inventories/sentence-fallbacks-001.json",
+            "sha256": "d85278e5cb518bd7bd9035c70a4d8399f19402b6ce7b5778b818ab6378bd39f0"
+        },
+        {
+            "path": "data/audio/inventories/sentence-fallbacks-002.json",
+            "sha256": "5498c0d50dc998b055e283ec33869720aa35e59d72bb29247363651827823e86"
+        },
+        {
+            "path": "data/audio/inventories/sentence-fallbacks-003.json",
+            "sha256": "594066f542e25484cc2f78d9457e92065c4b3c320f0ecc74c34add6f113e5d27"
+        },
+        {
+            "path": "data/audio/inventories/sentence-fallbacks-004.json",
+            "sha256": "de4ad90ff9fa015aadd13170686de3704838e8f8097bc32aff388c75e7528779"
+        },
+        {
+            "path": "data/audio/inventories/sentences-001.json",
+            "sha256": "2c3e529e22fb97f7b64c058d60bac2bf1c34d30ed32f29b8dc420eede52ada8a"
+        },
+        {
+            "path": "data/audio/inventories/sentences-002.json",
+            "sha256": "2606938ce2cbfde06f2fcba40a4bbf4666de5d055a3761d012ce725226e0e33f"
+        },
+        {
+            "path": "data/audio/inventories/transformations-001.json",
+            "sha256": "ecc650beed6f0b02b7d417fb07712365cf1cb13bfd0bdb5b3a373ba9c7dc6c79"
+        },
+        {
+            "path": "data/audio/inventories/transformations-002.json",
+            "sha256": "840c2aab61320d986441e75521e8c46b2d1c0e80aec84489f15ff51c4e675b2e"
+        },
+        {
+            "path": "data/audio/inventories/transformations-003.json",
+            "sha256": "fb7e85cc5ef1c4f619a79029daa92901ab5ba652b90faaee8f271657f633384d"
+        },
+        {
+            "path": "data/audio/inventories/transformations-004.json",
+            "sha256": "c219ec2a62f08cbfa468aa4139068563252c5c4a42b720ff65d2260a82b45752"
+        },
+        {
+            "path": "data/audio/inventories/transformations-005.json",
+            "sha256": "65ff42fb01b8629b67f29af0144ab8463cf01a55b0a40333121a03d3d468ff2d"
+        },
+        {
+            "path": "data/audio/inventories/transformations-006.json",
+            "sha256": "159c02a308ec3ef8a55b2a11185a64e2d0ac0aeb118f3df8c9a3fa2181ffc12f"
+        },
+        {
+            "path": "data/audio/inventories/transformations-007.json",
+            "sha256": "fffe28ff8b021b2dc01429c35dfaa296717ae16d0997af3d8bc14ece92cb1ef3"
+        },
+        {
+            "path": "data/audio/inventories/transformations-008.json",
+            "sha256": "e607d9b73ba91e059a843f1a52c4355ad3b32d0c13e0fc2ad5e4752f34dc4f89"
+        },
+        {
+            "path": "data/audio/inventories/transformations-009.json",
+            "sha256": "d41f1f303a9c21bddb416dc587b1faf4d23c54be3f14470e65ec39aaff91fe79"
+        },
+        {
+            "path": "data/audio/inventories/transformations-010.json",
+            "sha256": "c1edcbb5e4b232e62dc266dc2bf442e91cf53b14813e711b8a260fba42344062"
+        },
+        {
+            "path": "data/audio/inventories/transformations-011.json",
+            "sha256": "9d9d08b2749b0bc0ee39ee04b3eae2d91610dc0028b00f05d862f9b78ef4fd0c"
+        },
+        {
+            "path": "data/audio/inventories/transformations-012.json",
+            "sha256": "f5a5b59896ca5fca5c8f408b218834efe8613c38e03006c5f4fed7b5bf45662f"
+        },
+        {
+            "path": "data/audio/inventories/transformations-013.json",
+            "sha256": "31504846c106b7ecc1e2cb1c39edf7d1193a99097db155b925b2763961a4f536"
+        },
+        {
+            "path": "data/audio/inventories/vocabulary-001.json",
+            "sha256": "547b44dce408abbf65830116569ac179275d9f846c2e05acb9456009ac160cd2"
+        },
+        {
+            "path": "data/audio/inventories/vocabulary-002.json",
+            "sha256": "c30c15ba21b1d2784c08c8e577d4880745b704f19585afa2386514279a06fcb0"
+        },
+        {
+            "path": "data/audio/inventories/vocabulary-003.json",
+            "sha256": "a0d62e2450e6e12bf784080464cec61db7f31f61271a4c9d400830670ae01834"
+        },
+        {
+            "path": "data/audio/inventories/vocabulary-004.json",
+            "sha256": "49440ab338beb035a0263c8b5bb1bfbaaa9ece99b1b9a8de716e8f75eac7e937"
+        },
+        {
+            "path": "data/audio/inventories/vocabulary-005.json",
+            "sha256": "6be9035090c073bbf1b575796834071db2be23529147278f477b9803beefd88a"
+        },
+        {
+            "path": "data/audio/inventories/vocabulary-006.json",
+            "sha256": "04bab0487281da7324bba194457c41b4495f2af26190a3010b45a9c55b0de6bb"
+        },
+        {
+            "path": "data/audio/inventories/vocabulary-007.json",
+            "sha256": "21d0b44561b1f845d5aa0a4cbee7c900d5ae43927a32ea0a355a6c73b1c81e85"
+        },
+        {
+            "path": "data/audio/inventories/vocabulary-008.json",
+            "sha256": "6e6a7044af234d10d2ef99534dd54afc751a73c960304301f2c7efac36858d4a"
         },
         {
             "path": "data/audio/recordings.json",
-            "sha256": "860159eb30052c484c2e9f346bc051ff3e79902acb61eca27fbdca5e0766497d"
+            "sha256": "87d3a2622ce0724f48784410b9acc8e018bb9cc05d051c9cbd4d93813070f09a"
         },
         {
             "path": "data/library/assets/audio/0018affb7c50b1e1d0d523c0fee6a5c7c611b048787f4cbbf81eb0eb16d09504.wav",
@@ -4692,19 +4848,19 @@
         },
         {
             "path": "docs/index.de.md",
-            "sha256": "db9a64d5e69a18cc32ec0dd4b0af05ae91d70fbbc0b860cc65348da9f7d3685a"
+            "sha256": "dd1d536c18269692cab859175f2bbdca033a8fac2a86f2642b8acdd278e55bfe"
         },
         {
             "path": "docs/index.en.md",
-            "sha256": "ae09fe0853bf34ab6ae9934dc7c6a79d28f01ce38dff9fde921575b9ef2569a3"
+            "sha256": "4da2ea76ccdac438c8598d2b8f075e54cdc0e20ebc18a2dd0e67b2bc94fcb9b8"
         },
         {
             "path": "docs/index.id.md",
-            "sha256": "a5f7e15f405d9fac59505bee597339718c220cfc9e00c83b6f3d75a2c44ea32d"
+            "sha256": "f8629958f176b8380e831c2432f69cfb88bc88e3ef3a200b794db28f4ac71f89"
         },
         {
             "path": "docs/index.ja.md",
-            "sha256": "158fd2a0d7386b028ec974ab2585bc64be121b859dd77978988513eca3db9d6d"
+            "sha256": "c6155321c165347c567ba9fc95cbfc2206a40a22bc3f0861d3a33b1c07396193"
         },
         {
             "path": "docs/jisho.de.md",
@@ -4724,11 +4880,11 @@
         },
         {
             "path": "package-lock.json",
-            "sha256": "23bb8336ac63fbfa7194644955232aa5a7aeec9c2253445e70878afe08e372e6"
+            "sha256": "3dd116562ede354c675cbce40abc25a4f13679a1e7b0f4f2f7aee3805ec9fb70"
         },
         {
             "path": "package.json",
-            "sha256": "1bf1297c8a75be4f2118c8931c98e5bb887c574bf1597ec6dbdf4e5779227eb7"
+            "sha256": "8c73ba1f12c0b43e608c6f31819941bafa7da854377e9648671329b641985357"
         },
         {
             "path": "routes.json",
@@ -4736,7 +4892,7 @@
         },
         {
             "path": "scripts/import-reference.py",
-            "sha256": "c3403949de067e25f4c9305c890cb6f16c1d62c4be06f167c26a483f75977ed4"
+            "sha256": "da767338d2cc37bfe15692c2f096d6950bdac7fbe56b5cc2fd66742b3e7aa5f5"
         },
         {
             "path": "scripts/module-structure.js",
@@ -4752,7 +4908,7 @@
         },
         {
             "path": "scripts/update-stroke-patterns.js",
-            "sha256": "e1d54222c56549cd20cc8b75c3d0376743437f061652bb72e0ae08d180041d6c"
+            "sha256": "f123a4e2aefc23c5b71f446fb9acf83b4f09954f1a7bd3e16c9c2feace76cfe5"
         },
         {
             "path": "scripts/validate-manifest.js",
@@ -4763,12 +4919,16 @@
             "sha256": "1b3aa3af53354c2e29fd8296b71f7a872d5c11aa674840eb0d9763780f6e24a2"
         },
         {
+            "path": "tests/audio-inventory.test.js",
+            "sha256": "d48ccae77a17abcce933a87859c4c2cfb41caf8243c621a93aa9702d0a22e804"
+        },
+        {
             "path": "tests/audio.test.js",
-            "sha256": "df67b39ce937e2000803876d56278f2e04edc9154d5adf0750936175272c75df"
+            "sha256": "2cb7bb81776898add042ad996f604bce2743549de90b1a07dee05df2565471b2"
         },
         {
             "path": "tests/bootstrap.test.js",
-            "sha256": "a5866d425c984333233609345a997266debdb60dd1a80106eadf763a2a2abb9c"
+            "sha256": "1b0d234c0ed1e17ca0ced549cd262c3f0d15cc851df4585af8bde01cce42566a"
         },
         {
             "path": "tests/card-display-contract.test.js",
@@ -4800,7 +4960,7 @@
         },
         {
             "path": "tests/household.test.js",
-            "sha256": "70eb1826ebcfd28fee965eb78d14aebd861e782bf8b9d0a3b1d4a42cf9335316"
+            "sha256": "baed5bc2d5f93e9da8ea2cdddff003eb964c1416a974e265eb1d17150690ebfc"
         },
         {
             "path": "tests/jlpt-filter.test.js",
@@ -4825,6 +4985,10 @@
         {
             "path": "tests/packaging.test.js",
             "sha256": "a783f1c2a43f51cb85d962617d34cdd62833d5c018ef1578526fa50a3e5d9d15"
+        },
+        {
+            "path": "tests/reference-generator.test.js",
+            "sha256": "9c42e3dceb9ef855d8a06c9ae84dc5beb4aefc4ee3981cc6acded8a3ea33e594"
         },
         {
             "path": "tests/reference-images.test.js",

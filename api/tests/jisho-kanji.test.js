@@ -46,7 +46,7 @@ test("Kanji retrieval retries failures and returns current provider responses", 
         fetchImplementation: async (url) => {
             requests += 1;
             assert.equal(url, "https://jisho.test/search/%E6%95%99%20%23kanji");
-            return { ok: requests > 1, text: async () => html };
+            return new Response(html, { status: requests > 1 ? 200 : 500 });
         },
     });
     await assert.rejects(lookup("教"), /jisho_request_failed/);

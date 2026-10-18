@@ -306,272 +306,272 @@ Rantai bacaan kalimat Kana lengkap paralel telah dihapus. Kalimat seperti `猫�
 
 Detail judul kalimat kini menggunakan hubungan `words` yang sudah ada, sehingga rentang Kana lengkap seperti `いぬ`, `やま`, dan `くる` menargetkan entri kosakata `犬`, `山`, dan `来る` yang terlihat. Setiap entri kosakata tetap hanya berlanjut melalui bacaan lengkapnya sendiri menuju Kana atomik; tidak ada rantai bacaan kalimat paralel maupun tautan antarbacaan saudara.
 
-- [3bc0779](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/3bc0779)
+- [57eb9bc](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/57eb9bc1edf7d0375e8ca77bb145ef81527dedf4)
 
 ## Pelafalan Kanji Milik Kosakata
 
 Tautan pelafalan Kanji kini mengutamakan kosakata terlihat yang memakai bacaan tersebut. Hanya kosakata itu yang memiliki pembungkus pelafalan lengkap, yang memakai ulang rentang bacaan Kanji bermakna dan mengarahkan sufiks Kana tunggal yang tersisa langsung ke Kana atomik. Contohnya, `好` tertaut ke `好き`, sedangkan bacaan lengkap `すき` memakai rentang Kanji `す` dan `き` atomik tanpa membuat kartu pelafalan `き` tersendiri.
 
-- [b20b4e3](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/b20b4e3)
+- [eb10612](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/eb1061260347ca154c9bff6fc18c970931e4616e)
 
 ## Tautan Pelafalan Kalimat Lengkap
 
 Metadata pelafalan kalimat kini mendeklarasikan hubungan kata dan partikel sebagai sumber tautan mendalam. Dengan demikian `がっこうにいく` diuraikan menjadi kosakata `学校` yang terlihat, partikel `に`, dan kosakata `行く` yang terlihat, sambil mempertahankan graf milik kalimat tanpa rekaman bacaan lengkap sintetis.
 
-- [860a01e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/860a01e)
+- [a2ae8ba](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/a2ae8ba29d2325ad624de8b798573a6429586981)
 
 ## Kartu Menulis Berpanduan Goresan
 
 Kartu Kana dan Kanji diselaraskan dengan kontrak menggambar terbaru Cognis PR #226 melalui metadata `strokePattern` ternormalisasi yang wajib, sampel waktu berurutan, dan toleransi latihan. Pola turunan KanjiVG mempertahankan atribusi CC BY-SA 3.0, dan serpihan konten dibagi untuk mematuhi batas ukuran berkas repositori.
 
-- [ba7857b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/ba7857b)
+- [ff5bf74](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/ff5bf7464b2d8e5b58925b68f167c52b720ecba8)
 
 ## Tautan Kana Kosakata Dipulihkan
 
 Setiap lapisan yang memiliki pelafalan kini menerbitkan larik `input.linkRelationships` terkini yang digunakan Cognis PR #226. Kosakata seperti `猫` mengekspos target `pronunciation-readings` melalui kontrak tersebut sehingga `ねこ` yang ditampilkan membuka entri pelafalan yang dibuat; bacaan Kanji dan tautan Kana partikel memakai bentuk metadata terkini yang sama.
 
-- [046b335](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/046b335)
+- [d81fda7](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/d81fda7fa3efaa127a5a3f21633afef600c9ea8a)
 
 ## Tautan Pelafalan Hanya dengan Kontrak Terkini
 
 Metadata tunggal `linkRelationship` yang usang dihapus alih-alih mempertahankan jalur kompatibilitas dalam skema konten beta. Bidang pelafalan kini hanya menerbitkan larik `linkRelationships` terkini yang digunakan Cognis, dan cakupan regresi menolak pengenalan kembali properti lama tersebut.
 
-- [29d7b90](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/29d7b90)
+- [9376566](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/937656620115c72eeea3f7f8273a8aff3a30c160)
 
 ## Penyedia Pola Goresan Runtime
 
 Kontrak penyedia pencarian Cognis Library terkini diterapkan untuk unit tulisan Jepang. Label Kana dan Kanji yang cocok tepat kini mengembalikan `stroke_pattern` tervalidasi dari paket dengan asal KanjiVG stabil dan keyakinan `1`; label yang tidak dikenal tidak ditebak. Penyedia bekerja sepenuhnya secara lokal—tanpa layanan jaringan atau OCR—dan pendaftarannya dilepas saat dinonaktifkan atau segera setelah ingest gagal.
 
-- [bbc6d84](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/bbc6d84)
+- [9c6ba69](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/9c6ba6910450efd81f08e7982c67d69fe89ab0f6)
 
 ## Pencarian Pola Goresan Kana dan Kanji Lengkap
 
 Penyedia pencarian diperluas melampaui kurikulum bawaan. Pola bawaan tetap tersedia seketika dan luring; Kana atau Kanji Jepang lainnya diselesaikan melalui titik kode Unicode terhadap data SVG KanjiVG kanonis, diubah menjadi sampel goresan ternormalisasi yang dibatasi, disimpan dalam tembolok, lalu dikembalikan dengan asal-usul tepat dan keyakinan `1`. Karakter yang tidak didukung atau tidak tersedia tidak menghasilkan tebakan, dan OCR sengaja tidak diperlukan untuk masukan teks yang tepat.
 
-- [e040cf0](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/e040cf0)
+- [326145f](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/326145f3eb05ed9d4df521f92728067d87f19d9d)
 
 ## Pencarian Kartu Jisho yang Mendahulukan Data Asli
 
 Penyedia komposer Jisho yang dilokalkan untuk kartu Kana, Kanji, dan Kosakata ditambahkan dengan kontrak pencarian Cognis terbaru. Rekaman bawaan yang cocok tepat mengembalikan seluruh bidang dan hubungan yang telah ditinjau tanpa permintaan jaringan. Kegagalan pencarian asli menggunakan tembolok permintaan terbatas sebelum meminta Jisho, lalu mengisi label kanonis, pelafalan, tingkat JLPT, serta hanya tautan Kanji, bacaan, Kana, atau definisi yang sudah ada dalam graf penyedia. Penyedia pola goresan kini juga menerbitkan metadata lokal yang diwajibkan komposer saat ini.
 
-- [db47014](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/db47014)
+- [7e6ef74](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/7e6ef7480eabb9fb4724bb51532523cfd32f89fd)
 
 ## Pendaftaran melalui Penyedia Library Generik
 
 Jisho kini menyediakan adaptor pendaftaran khusus yang menerima kapabilitas generik `study:library:provider` dan mendelegasikan langsung ke `registerLookupProvider`. Bootstrap menggunakan adaptor tersebut, menyimpan fungsi penghapus yang dikembalikan, dan membatalkan penyedia yang telah terdaftar dalam urutan terbalik jika pendaftaran berikutnya atau penyerapan konten gagal. Integrasi ini tidak lagi bergantung pada kapabilitas host khusus Jisho.
 
-- [0056f4d](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/0056f4d)
+- [bfea956](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/bfea956d632cc40a088b4296d2d02eb2535ef79b)
 
 ## Titik Masuk Pendaftaran Terpaket
 
 Digest manifes untuk titik masuk pendaftaran Jisho generik dan cakupan regresinya telah diperbarui.
 
-- [b2a1e34](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/b2a1e34)
+- [bfea956](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/bfea956d632cc40a088b4296d2d02eb2535ef79b)
 
 ## Runtime Goresan Mandiri
 
 Dependensi produksi `svg-path-properties` yang tidak diterapkan dan mencegah Cognis mengimpor modul saat validasi pengaktifan telah dihapus. Modul kini menyertakan tokenizer jalur SVG, pengambil sampel kurva, dan pengambil sampel ulang berbasis jarak miliknya sendiri untuk goresan KanjiVG. Cakupan regresi menjalankan pengujian bootstrap, pencarian goresan, dan penghapusan instalasi dari salinan pohon modul tanpa `node_modules`, sesuai dengan lingkungan instalasi modul eksternal.
 
-- [6133b70](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/6133b70)
+- [4af0efc](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/4af0efc58f962bcf07a087d0066ce2d7b54bf253)
 
 ## Resolusi Kapabilitas Library Invers
 
 Bootstrap kini memperoleh permukaan pendaftaran Library wajib melalui `ctx.capabilities.require("study:library:provider")`, mengikuti pola penyedia invers yang digunakan modul autentikasi SSO. Pengambil kemudahan yang mengembalikan `undefined` untuk kapabilitas wajib ini tidak lagi digunakan, sementara validasi bentuk penyedia dan pembersihan siklus hidup tetap dipertahankan.
 
-- [a3e2b35](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/a3e2b35)
+- [c1c8a23](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/c1c8a2304c9550d158842311194e3a5ec5e6db99)
 
 ## Jembatan Visibilitas Penyedia Library
 
 Bootstrap kini mendahulukan kapabilitas publik `study:library:provider` yang diinjeksi, tetapi ketika Cognis PR #226 hanya mengeksposnya untuk validasi pengaktifan, bootstrap menggunakan layanan `study:library` yang diinjeksi sebagai pembawa antarmuka generik `registerLookupProvider` dan `ingestContentPack` yang sama persis. Perubahan ini memperbaiki aktivasi tanpa membuat protokol penyedia kedua, dan pengujian mencakup kedua bentuk visibilitas host.
 
-- [f9c29d8](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/f9c29d8)
+- [a9d1c15](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/a9d1c155470fca1b8bc65bcdb6d7bced1a03d828)
 
 ## Tautan Kalimat dan Kanji yang Sepenuhnya Dapat Diselesaikan
 
 Tautan detail judul diaudit dengan algoritme komposisi alias host yang persis. Setiap pelafalan kalimat kini membuktikan bahwa rentang Kana terurutnya membuka rekaman Kosakata dan Partikel yang dimaksud. Setiap Kanji mengekspos satu bacaan utama lengkap yang cocok dengan satu target Kosakata terdekat, sedangkan bacaan tambahan memakai hubungan nonjudul terpisah dan mempertahankan seluruh dependensi Kana atomik untuk navigasi invers.
 
-- [2a5f23f](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/2a5f23f)
+- [9d7abe8](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/9d7abe8203769376d0249bda7b790ac84b4266cf)
 
 ## Penyelarasan Kontrak Audio Paket
 
 URL audio placeholder eksternal yang ditolak dengan benar sebagai `invalid_asset_reference` oleh validator paket konten Library terbaru telah dihapus. Pelafalan unit tulisan tetap wajib, sedangkan audio kini menjadi kolom unggah opsional hingga berkas audio autentik dibundel dalam paket.
 
-- [80c7a20](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/80c7a20)
+- [ac71f82](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/ac71f82fa6bfd798e9ea05be7c882e523a8f7da5)
 
 ## Relasi Penggunaan Kana Langsung
 
 Relasi dependensi buatan dari Kanji ke Kana telah dihapus. Kartu Kana kini hanya menampilkan catatan bacaan langsung pada Digunakan Oleh, sehingga navigasi `あ` → `あめ` → `雨` tetap benar dan kata atau Kanji yang tidak berkaitan tidak ditampilkan sebagai induk langsung.
 
-- [13d11ce](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/13d11ce)
+- [98c2e49](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/98c2e4954513cd03eb4f8a76b1e57b011a3daca5)
 
 ## Batas Pelafalan Khusus Kanji
 
 Tautan pelafalan Kanji kini menargetkan catatan bacaan khusus yang hanya berisi Kana, bukan kata terlihat lengkap. Karena itu `好` menampilkan dan menautkan `す`, sedangkan pembungkus pelafalan `好き` yang terpisah menyusun `す` dengan sufiks `き`; kata Kanji mandiri memakai batas dua tingkat yang sama tanpa induk berlabel ganda.
 
-- [6cb7ca7](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/6cb7ca7)
+- [0900421](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/090042170e97a4f9d76d0433e2057e360ee973f9)
 
 ## Pola Goresan Kana yang Mempertahankan Kurva
 
 Semua pola goresan Kana dan Kanji dalam paket dibuat ulang dari jalur SVG KanjiVG bernama Unicode yang dipatok. Pengambil sampel milik modul kini membagi kurva kubik dan kuadratik sebelum pengambilan sampel berdasarkan jarak, sehingga belokan dan lingkaran seperti goresan kedua `え` tetap dipertahankan dan tidak disederhanakan menjadi segmen lurus yang menyesatkan.
 
-- [1668b5f](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/1668b5f)
-- [5002586](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/5002586)
+- [76cf76e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/76cf76e300dbc6e2443d10710bd5e33c160c815e)
+- [76cf76e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/76cf76e300dbc6e2443d10710bd5e33c160c815e)
 
 ## Pelafalan Rekursif yang Diturunkan dari Kana
 
 Seluruh 84 pembungkus pelafalan Kosakata tersembunyi yang hanya berisi karakter telah dihapus. Kana atomik kini menjadi satu-satunya daun pelafalan: Kanji dan 37 kartu Kosakata nyata menaut langsung ke Kana terurut, sedangkan kalimat hanya menaut ke Kosakata nyata dan partikel. Nilai pelafalan Kosakata dan kalimat dimaterialkan dari graf tersebut untuk tampilan dan ditandai sebagai relasi pelafalan, sehingga kalimat tertulis tidak lagi diulang di bawah judulnya.
 
-- [40ce8d8](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/40ce8d8)
+- [b2a396a](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/b2a396aaafe01405abb35efb4418202f3bc46cff)
 
 ## Validasi Kalimat Terurut
 
 Relasi kalimat diselaraskan dengan pemeriksaan awal ingest terbaru pada Cognis PR #226. `words` dan `particles` terurut kembali menjadi relasi komposisi sehingga host dapat merekonstruksi dan memvalidasi setiap label kalimat, sementara pelafalan tetap diturunkan secara rekursif dari unsur-unsur tersebut.
 
-- [aff5962](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/aff5962)
+- [fec3fb5](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/fec3fb5b593194ec64c1e2ad32032e7567debf4d)
 
 ## Pelafalan Kana Terlihat
 
 Pelafalan berhuruf Latin pada kartu Kana ringkas dipulihkan tanpa merusak bacaan Jepang rekursif. Setiap Kana kini mempertahankan bentuk aslinya sebagai nilai pertama untuk derivasi pelafalan dan menyediakan romanisasi gaya Hepburn sebagai nilai tampilan berbeda yang dipertahankan oleh renderer Library terbaru.
 
-- [d6c2c48](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/d6c2c48)
+- [29b678e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/29b678eac314782f4dc693bbd3855a1ae3c61184)
 
 ## Bunyi Kana untuk Pelajar
 
 Pelafalan Kana dikoreksi agar hanya berisi romanisasi gaya Hepburn. Pelajar kini melihat `a` sebagai pelafalan `あ` atau `ア`, bukan simbol yang sama sebagai pelafalannya sendiri; ejaan Jepang pada lapisan lebih tinggi tetap memakai label Kana terurut.
 
-- [46d74ae](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/46d74ae)
+- [93532bd](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/93532bd4c8ed8c3e653b34332df1623f23f784c9)
 
 ## Referensi Pelafalan Kana Berkelompok
 
 Bacaan alternatif Kanji dipulihkan dan setiap pelafalan Kanji serta Kosakata direpresentasikan sebagai urutan bertingkat tersendiri dari referensi Kana terurut. Skema menandai bidang ini sebagai `multi_value` dan relasinya sebagai berkelompok, sedangkan saran Jisho mempertahankan struktur yang sama untuk dukungan Cognis core mendatang.
 
-- [9bbe068](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/9bbe068)
+- [ea6c997](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/ea6c99745df322094aaa4ba26b1b7e6e8de9558a)
 
 ## Perantara Pelafalan Kosakata Tersembunyi
 
 Rekaman pelafalan tersembunyi dipulihkan hanya ketika makna Kosakata berbeda dari definisi Kanji tertulisnya. Setiap perantara membawa definisi leksikal, menautkan ejaan Kanji terkait, dan berlanjut melalui referensi Kana berkelompok; kata dengan definisi sama mempertahankan jalur Kana langsung, dan saran lookup mengecualikan rekaman tersembunyi.
 
-- [448f99e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/448f99e)
+- [da85016](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/da8501693bbc2e105df9e95cd0333559c79dc46b)
 
 ## Tautan Pelafalan Kanji yang Lengkap
 
 Setiap pelafalan Kanji kini ditautkan melalui rekaman bacaan lengkap tersembunyi tersendiri sebelum diteruskan ke Kana atomik yang berurutan. Keenam bacaan `来` (`く`, `きた`, `き`, `こ`, `らい`, dan `たい`) sekarang memiliki tautan mendalam yang berfungsi, dan invarian yang sama diberlakukan untuk setiap Kanji dalam paket.
 
-- [f919fa1](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/f919fa1)
+- [286d3ee](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/286d3ee07376843bc4f5992ea00cf1e7db01e05f)
 
 ## Jalur Pelafalan Kata dan Kalimat yang Lengkap
 
 Setiap kata beraksara Kanji kini terhubung ke rekaman tulisannya dan satu rekaman pelafalan lengkap yang tersembunyi, sambil mempertahankan segmen bacaan Kanji yang telah ditulis sebelum Kana atomik. Pelafalan kalimat kini menelusuri rekaman lengkap tersembunyi yang tersusun dari bacaan kata dan Kana partikel. Saran Jisho juga memvalidasi aksara khusus tiap lapisan, mempertahankan tautan ejaan Kanji yang tersedia, dan menghilangkan grup Kana yang tidak lengkap.
 
-- [8f5a3e5](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/8f5a3e5)
+- [4e549a9](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/4e549a90346e73f19bed8e21edd6ae78f95d5074)
 
 ## Kartu Pelafalan Bersama untuk Homofon
 
 Kartu pelafalan tersembunyi yang berulang untuk `はな`, `はし`, `あめ`, dan `かみ` diganti dengan satu kartu bersama untuk setiap bacaan Kana lengkap. Setiap kartu bersama menggabungkan definisi leksikal terkait dan digunakan oleh kata Kanji terlihat yang berbeda. Dengan demikian, kartu berlabel sama tidak lagi saling menautkan, sementara setiap homofon tetap dipertahankan sebagai kata belajar tersendiri.
 
-- [111ec59](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/111ec59)
+- [abd8c3b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/abd8c3b545fe155d4c7c2439cadb337707c408c2)
 
 ## Navigasi Bacaan Antarlapisan yang Stabil
 
 Hubungan yang ditulis kini menjadi satu-satunya sumber penelusuran kartu bacaan. Jalur bacaan Kosakata tidak lagi dapat menargetkan kartu Kosakata berlabel identik: pelafalan lengkap satu Kanji kini langsung diuraikan menjadi Kana berurutan, sedangkan kata majemuk hanya mempertahankan segmen bacaan yang benar-benar lebih kecil. Bacaan struktural tersembunyi tidak lagi menyalin definisi semantik. Kosakata terlihat hanya mempertahankan definisi terlokalisasi jika maknanya berbeda dari Kanjinya; makna identik diwarisi melalui induk ejaan, dan definisi yang identik dengan label utama tetap disembunyikan oleh Cognis.
 
-- [1d37ccf](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/1d37ccf)
+- [5bed22f](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/5bed22f956d41cdbbbf97749acae0400dbe01275)
 
 ## Bacaan Kanji Terverifikasi dan Konten Pemula
 
 Cakupan pelafalan kini dikunci pada inventaris bacaan on dan kun KANJIDIC yang telah ditinjau, dengan normalisasi deterministik, satu rekaman bacaan tersembunyi untuk setiap hasil, dan pengecualian kontekstual eksplisit untuk `達` sebagai `だち`. Ditambahkan definisi terlokalisasi untuk kartu leksikal yang maknanya berbeda serta batch tinjauan berisi sembilan kata tentang lokasi, keberadaan, deskripsi, cara, dan kopula dengan delapan kalimat contoh alami dan jalur pelafalan lengkap.
 
-- [69fad5d](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/69fad5d)
+- [ddfb838](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/ddfb83889f2172985b1b8290e0737832f9187ac8)
 
 ## Kepemilikan Area Hapus Kartu Tahap
 
 Telah dikonfirmasi bahwa penghapusan kartu tahap diimplementasikan dan ditata oleh composer Study Library Cognis, bukan oleh modul konten bahasa Jepang eksternal ini. Selektor host yang tepat, perbaikan ukuran yang diperlukan, dan pengujian regresi browser dicatat dalam `TODO.md`; modul tidak menyuntikkan penimpaan CSS yang tidak aman ke editor milik host.
 
-- [c1a4b7b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/c1a4b7b)
+- [8e9f064](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/8e9f0646527535a2ef05cfd53a96b3f7438e28bd)
 
 ## Resolusi Romanisasi Khusus Kana
 
 Dipastikan bahwa paket bahasa Jepang telah membatasi romanisasi Hepburn pada Kana atomik, sedangkan bacaan lapisan yang lebih tinggi ditulis sebagai label Kana Jepang. Koreksi tepat yang diperlukan pada composer Cognis dicatat agar penurunan pelafalan rekursif tidak meneruskan romanisasi Kana ke bacaan Kosakata dan kalimat; modul eksternal tidak menimpa perilaku penurunan milik host.
 
-- [2324f5b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/2324f5b)
+- [35975db](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/35975dbcb8e4de5c6da0721e67adf96070d9ae9f)
 
 ## Pembersihan Penghapusan Instalasi Destruktif yang Eksplisit
 
 Endpoint administratif untuk menghapus konfigurasi modul yang diharapkan Cognis telah ditambahkan sebagai rute kompatibilitas `204` yang aman bagi konten. Rekaman bahasa Jepang bawaan paket kini hanya dihapus melalui penyedia Study Library ketika permintaan penghapusan instalasi secara eksplisit membawa `deleteContent: true`; penonaktifan, penghapusan instalasi biasa, dukungan pembersihan yang tidak tersedia, dan kegagalan pembersihan tidak dapat diam-diam menghapus atau menelantarkan data pembelajaran yang sudah mapan.
 
-- [eb8583f](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/eb8583f)
+- [5c36f40](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/5c36f401cf0066600d44e0863ce86cb58da5c58f)
 
 ## Definisi Kartu Kosakata Dipulihkan
 
 Relasi definisi langsung ditambahkan ke setiap rekaman Kosakata terlihat bertuliskan Kanji yang sebelumnya bergantung pada induk ejaannya. Hal ini sesuai dengan perender kartu Cognis, yang hanya menampilkan definisi yang dirujuk secara langsung, dan memulihkan makna untuk kartu termasuk `川`, `空`, `花`, `鼻`, `橋`, `箸`, `雨`, `飴`, `水`, `犬`, `猫`, `山`, `紙`, dan `髪`.
 
-- [c045f5e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/c045f5e)
+- [7dd6179](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/7dd61791b5af32e0fe27f5db9a9298f2b4fc9a74)
 
 ## Pencarian Kosakata Jisho yang Berfungsi
 
 Alur composer Jisho diperbaiki agar pencarian Kosakata menerima istilah bahasa Inggris dan aksara Latin lain yang dibatasi, alih-alih langsung mengembalikan tanpa hasil sebelum membuat permintaan. Entri Jepang paket yang persis cocok tetap diprioritaskan secara lokal; kueri Jepang jarak jauh mengutamakan bentuk tepat, sedangkan pencarian makna memakai hasil Jisho berperingkat tertinggi. Lapisan Kana dan Kanji tetap membutuhkan satu karakter Jepang yang valid, dan masukan tidak aman atau terlalu panjang ditolak sebelum akses jaringan.
 
-- [f14901a](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/f14901a)
+- [3ae4cbe](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/3ae4cbe0874933fa718765636bfe69279367db63)
 
 ## Tampilan Transformasi Verba dan Adverbia Dasar
 
 Paket bahasa Jepang diselaraskan dengan kontrak transformasi Cognis terbaru. Kosakata kini memisahkan verba dasar dan adverbia yang tidak berubah ke tampilan khusus; verba membedakan ichidan, akhiran godan reguler, pengecualian `行く` dan `ある`, serta `来る` tak beraturan. Aturan deklaratif penyedia menurunkan bentuk sopan, negatif, lampau, dan te yang telah ditinjau saat penyajian, sedangkan paket hanya menyimpan dua belas rekaman dasar verba/adverbia kanonis tanpa duplikat hasil transformasi.
 
-- [097eab5](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/097eab5)
+- [1c251e5](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/1c251e56e591b36b4aefd8144ce6213075d3b30f)
 
 ## Tautan Pelafalan Kalimat Tersegmentasi
 
 Detail pelafalan kalimat kini menautkan setiap segmen bacaan berurutan langsung ke kartu Kosakata atau Partikel yang terlihat. Sebanyak 25 pembungkus Kosakata kalimat lengkap tersembunyi dan relasi tingkat kalimat `pronunciation-readings` telah dihapus, sehingga `はなはとてもきれいです` membuka `花`, `は`, `とても`, `きれい`, dan `です` secara terpisah, bukan menampilkan satu kartu Kosakata untuk seluruh kalimat.
 
-- [0002eee](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/0002eee)
+- [03377a7](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/03377a7816980bf5230ee83739b70af4dad33182)
 
 ## Perlindungan Pelafalan Jepang Lengkap
 
 Setiap pelafalan lapisan atas dalam paket telah diaudit dan dikunci sebagai teks Jepang lengkap, termasuk rekonstruksi kalimat penuh. Romanisasi campuran dan segmen akhir yang hilang berasal dari Cognis PR #226: penurunan rekursif membaca bidang Hepburn kartu Kana sebelum label atomiknya, dan popup host harus mempertahankan rentang bacaan berkelompok secara lengkap. Kasus dasar upstream dan regresi pembungkusan yang tepat telah dicatat tanpa menambahkan penimpaan antarmuka host yang tidak aman ke paket eksternal ini.
 
-- [0906392](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/0906392)
+- [cd764a7](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/cd764a7611976f5b58152b97ebadb073cc96ce1b)
 
 ## Navigasi Judul Bacaan ke Kana Atomik
 
 Komposisi judul Kana atomik berurutan yang eksplisit ditambahkan ke setiap rekaman bacaan Kanji tersembunyi. Bacaan multi-Kana seperti `さん` kini membuka `さ` dan `ん` secara langsung, sehingga host tidak dapat menggantikannya dengan kartu Kosakata bacaan Kanji `さ` tersembunyi terpisah yang digunakan oleh `小`. Relasi `kana-spelling` lengkap tetap dipertahankan untuk semantik pelafalan, sedangkan navigasi judul menjadi deterministik dan berakhir pada Kana.
 
-- [8c48fa7](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/8c48fa7)
+- [612e4cb](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/612e4cb4df57a5afb62cd4dcf4291c7516d2e91e)
 
 ## Navigasi Kana Gabungan dan Geometri Bentuk Kecil
 
 Komposisi judul Kana atomik yang eksplisit ditambahkan ke setiap kartu Kana bersimbol banyak, sehingga Kana gabungan seperti `きょ` tidak lagi menaut dalam ke bacaan Kosakata tersembunyi dengan teks yang sama. Tata letak guratan gabungan dibangun ulang dengan ruang yang peka ukuran agar bentuk kecil seperti `ょ` mempertahankan proporsi yang terlihat lebih kecil di samping Kana berukuran penuh.
 
-- [4c33d9e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/4c33d9e)
+- [305e774](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/305e7743a0ab48ca335cac9add23cb1c670def20)
 
 ## Tautan Kalimat Tanpa Kosakata Penyamar Kalimat
 
 Tautan pelafalan kalimat ke unsur Kosakata dan Partikel berurutan yang terlihat telah dipulihkan. Cakupan regresi struktural diperkuat agar bacaan kalimat lengkap, komposit kalimat, kelas partikel, referensi partikel, dan unsur kalimat tersembunyi ditolak dari lapisan Kosakata tanpa menghapus tautan kalimat yang sah.
 
-- [7cdb1ac](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/7cdb1ac)
+- [ad97003](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/ad97003b391165fcd5411e708bf771fdac729d13)
 
 ## Bacaan Kanji Langsung Tanpa Kosakata Duplikat Kana
 
 Seluruh 140 rekaman Kosakata `reading:kanji` tersembunyi telah dihapus, termasuk sisa Kana tunggal seperti `む`. Grup pelafalan Kanji dan saran Kanji Jisho jarak jauh kini menaut langsung ke Kana atomik berurutan, sedangkan pembungkus pelafalan leksikal lengkap dipertahankan hanya jika tidak menduplikasi label unit tulisan Kana.
 
-- [d7a28e4](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/d7a28e4)
+- [bbfe7ae](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/bbfe7aed644efc97e0d619b5ccc2d684c12880d2)
 
 ## Transformasi Verba Bercabang Mendalam
 
 Paket Jepang diselaraskan dengan kontrak pohon transformasi tersusun Cognis. Semua keluarga verba kini bercabang melalui jalur sopan, negatif, lampau, penghubung, kausatif, pasif, potensial, dan volisional, termasuk rantai keinginan kausatif empat tahap. Bentuk tulisan dan pelafalan ditransformasi secara mandiri, penggantian definisi terlokalisasi menjelaskan cabang semantik, adverbia tetap berupa kartu dasar yang tidak berubah, dan bentuk hasil hanya untuk penyajian.
 
-- [d93ad3c](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/d93ad3c)
+- [6d3e6bf](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/6d3e6bf546acdcccd860b4c9a7ac75649c1a5dff)
 
 ## Perantara Bacaan Kanji Selektif
 
 Satu kartu Kosakata bacaan tersembunyi per pelafalan dipulihkan hanya untuk Kanji yang memiliki beberapa bacaan; satu-satunya Kanji dengan satu bacaan tetap menaut langsung ke Kana atomik. Setiap perantara menautkan judulnya ke tepat satu Kanji sumber, merekonstruksi pelafalannya dari Kana atomik, dan dapat memiliki definisi tersendiri bila maknanya lebih sempit. Pembungkus Kana kata lengkap seperti `せんせい` dihapus; bacaan `先生` kini tersusun dari perantara `せん` dan `せい` yang terpisah.
 
-- [91488aa](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/91488aa)
+- [0f16eda](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/0f16edaecc01c74449dcd9a28ebccca898f5ffd5)
 
 ## Definisi Bacaan yang Mandiri
 
 Tautan definisi langsung ditambahkan ke setiap rekaman Kosakata bacaan Kanji tersembunyi agar pembukaan bacaan dari tautan dalam pelafalan menampilkan makna yang sama dengan pembukaan melalui bagian Digunakan Oleh pada kartu Kanji. Bacaan menggunakan kembali definisi Kanji sumber bila maknanya sama dan tetap dapat memiliki definisi khusus bila maknanya lebih sempit.
 
-- [b0a83fb](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/b0a83fb)
+- [935f6c9](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/935f6c9d0ee0ff5cb3b0284a839a76d74221e30b)
 
 ## Penanda transformasi terlokalisasi
 
@@ -587,7 +587,7 @@ Modul dinaikkan ke `2.2.72`, revisi konten `2026-09-30.10`, dan revisi skema bah
 
 ## Commit
 
-- [d7b696b](../../commit/d7b696b) — Menyelaraskan penanda transformasi dengan Cognis.
+- [b41da01](../../commit/b41da011d6026d909c55369d3598e8334bbffe94) — Menyelaraskan penanda transformasi dengan Cognis.
 
 ## Anotasi Definisi untuk Setiap Transformasi
 
@@ -603,7 +603,7 @@ Paket mengikuti kontrak penanda Cognis secara langsung dengan menempatkan tepat 
 
 ## Commit
 
-- [64ce852](../../commit/64ce852) — Menganotasi setiap definisi transformasi verba.
+- [ac2bc76](../../commit/ac2bc76bc15ec0898b023e7f170e106935f7a438) — Menganotasi setiap definisi transformasi verba.
 
 ## Slot Penanda Ditambahkan ke Definisi Verba
 
@@ -619,7 +619,7 @@ Modul dinaikkan ke `2.2.74`, revisi konten `2026-10-01.2`, dan revisi skema baha
 
 ## Commit
 
-- [f6c7201](../../commit/f6c7201) — Menempatkan penanda transformasi pada definisi verba.
+- [cf02a4a](../../commit/cf02a4ae4c296f4d67d86ff21c099ecb5bea8a8c) — Menempatkan penanda transformasi pada definisi verba.
 
 ## Transformasi Definisi yang Dapat Disusun
 
@@ -635,7 +635,7 @@ Modul dinaikkan ke `2.2.75`, revisi konten `2026-10-01.3`, dan revisi skema baha
 
 ## Commit
 
-- [739beba](../../commit/739beba) — Mengadopsi transformasi definisi yang dapat disusun.
+- [5098a12](../../commit/5098a123745e0ee72e3afad297d81a0505792aa0) — Mengadopsi transformasi definisi yang dapat disusun.
 
 ## Penggantian Definisi Kontekstual
 
@@ -651,7 +651,7 @@ Modul dinaikkan ke `2.2.76`, revisi konten `2026-10-01.4`, dan revisi skema baha
 
 ## Commit
 
-- [a5539e6](../../commit/a5539e6) — Menambahkan penggantian definisi kontekstual.
+- [da436b4](../../commit/da436b4e3c0f9b92a7ee895980129d572b633da7) — Menambahkan penggantian definisi kontekstual.
 
 ## Pola Gambar dengan Rasio Aspek yang Benar
 
@@ -667,7 +667,7 @@ Modul dinaikkan ke `2.2.77`, revisi konten `2026-10-01.5`, dan revisi skema baha
 
 ## Commit
 
-- [7c2c0db](../../commit/7c2c0db) — Mempertahankan rasio gambar dan kelompok goresan.
+- [340b525](../../commit/340b525fc838313d937498bc2fcc8f20c48c75e2) — Mempertahankan rasio gambar dan kelompok goresan.
 
 ## Identitas Kanji Berdasarkan Label
 
@@ -679,8 +679,8 @@ Modul dinaikkan ke `2.2.78` dan revisi konten `2026-10-01.6`, dengan hash paket 
 
 ## Commit
 
-- [ab10be0](../../commit/ab10be0) — Memisahkan identitas Kanji dari pelafalan.
-- [19424fc](../../commit/19424fc) — Menghapus panduan identitas yang terduplikasi.
+- [dee7ab5](../../commit/dee7ab5e5f1cbc78a28eb526f0b07c421c151054) — Memisahkan identitas Kanji dari pelafalan.
+- [dee7ab5](../../commit/dee7ab5e5f1cbc78a28eb526f0b07c421c151054) — Menghapus panduan identitas yang terduplikasi.
 
 ## Komposisi Struktur Kalimat
 
@@ -692,7 +692,7 @@ Modul dinaikkan ke `2.2.79`, revisi konten `2026-10-02.1`, dan revisi skema Jepa
 
 ## Commit
 
-- [244e048](../../commit/244e048) — Menampilkan entri struktur kalimat pada composer.
+- [288aa01](../../commit/288aa0165b63cc7810fcf50530df7d49fc1a70c5) — Menampilkan entri struktur kalimat pada composer.
 
 ## Perluasan Penghubung Kalimat
 
@@ -716,11 +716,11 @@ Bidang pelafalan kosakata kini menggunakan kontrak tunggal host `pronunciation-r
 
 ## Commit
 
-- [b33c94a](../../commit/b33c94a) — Memperluas penghubung kalimat dan bentuk kopula.
+- [0895472](../../commit/0895472e7c61aa0858fd6d8a1aa6d6f27852d0ce) — Memperluas penghubung kalimat dan bentuk kopula.
 
-- [7f15934](../../commit/7f15934) — Memperbaiki validasi metadata transformasi kopula.
+- [92992d5](../../commit/92992d5f65831215de331f4af3da924a006fecb7) — Memperbaiki validasi metadata transformasi kopula.
 
-- [25c3765](../../commit/25c3765) — Memulihkan tautan mendalam pelafalan kosakata.
+- [26eeb3e](../../commit/26eeb3e8b152bb7ee22f5bb9dee7ba67f430cbf6) — Memulihkan tautan mendalam pelafalan kosakata.
 
 ## Pilihan Komposisi Persis
 

@@ -1,3 +1,4 @@
+import { readAudioInventory } from "../api/audio/inventory.js";
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import test from "node:test";
@@ -11,9 +12,7 @@ const layers = await readContentLayers(
 const entries = new Map(
     [...layers.values()].flat().map((entry) => [entry.id, entry]),
 );
-const inventory = JSON.parse(
-    await readFile("data/audio/recordings.json", "utf8"),
-);
+const inventory = await readAudioInventory("data/audio");
 const decks = JSON.parse(await readFile("data/starter-decks.json", "utf8"));
 const slugs = [
     "table",

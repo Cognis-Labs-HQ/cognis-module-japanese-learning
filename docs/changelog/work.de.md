@@ -306,272 +306,272 @@ Die parallele vollständige Kana-Satzlesungskette wurde entfernt. Ein Satz wie `
 
 Die Titeldetails eines Satzes verwenden nun dessen bestehende `words`-Beziehung, sodass vollständige Kana-Abschnitte wie `いぬ`, `やま` und `くる` auf die sichtbaren Vokabeleinträge `犬`, `山` und `来る` verweisen. Jeder Vokabeleintrag führt weiterhin nur über seine eigene vollständige Lesung zu atomaren Kana; es entsteht weder eine parallele Satzlesekette noch eine Verknüpfung zwischen Geschwisterlesungen.
 
-- [3bc0779](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/3bc0779)
+- [57eb9bc](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/57eb9bc1edf7d0375e8ca77bb145ef81527dedf4)
 
 ## Vokabeleigene Kanji-Aussprache
 
 Kanji-Aussprachelinks bevorzugen nun die sichtbare Vokabel, die die Lesung verwendet. Nur diese Vokabel besitzt den vollständigen Aussprache-Wrapper, der bedeutungstragende Kanji-Leseabschnitte wiederverwendet und verbleibende einzelne Kana-Suffixe direkt zu atomaren Kana führt. Beispielsweise verknüpft `好` zu `好き`, während dessen vollständige Lesung `すき` den Kanji-Abschnitt `す` und das atomare `き` verwendet, ohne eine eigenständige Aussprachekarte für `き` anzulegen.
 
-- [b20b4e3](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/b20b4e3)
+- [eb10612](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/eb1061260347ca154c9bff6fc18c970931e4616e)
 
 ## Vollständige Links der Satzaussprache
 
 Die Metadaten der Satzaussprache deklarieren nun sowohl Wort- als auch Partikelbeziehungen als Deep-Link-Quellen. `がっこうにいく` wird dadurch in die sichtbare Vokabel `学校`, die Partikel `に` und die sichtbare Vokabel `行く` aufgelöst, während der satzseitig besessene Graph ohne synthetischen vollständigen Leseeintrag erhalten bleibt.
 
-- [860a01e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/860a01e)
+- [a2ae8ba](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/a2ae8ba29d2325ad624de8b798573a6429586981)
 
 ## Strichgeführte Schreibkarten
 
 Kana- und Kanji-Karten wurden an den aktuellen Zeichenvertrag aus Cognis PR #226 angepasst und enthalten nun erforderliche normalisierte `strokePattern`-Metadaten mit geordneten Zeitwerten und Übungstoleranzen. Aus KanjiVG abgeleitete Muster bewahren die CC-BY-SA-3.0-Namensnennung; die Inhaltsdateien wurden geteilt, um die Dateigrößenbegrenzung des Repositorys einzuhalten.
 
-- [ba7857b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/ba7857b)
+- [ff5bf74](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/ff5bf7464b2d8e5b58925b68f167c52b720ecba8)
 
 ## Wiederhergestellte Kana-Links der Vokabeln
 
 Alle Ebenen mit Aussprache veröffentlichen nun das aktuelle, von Cognis PR #226 verwendete Array `input.linkRelationships`. Vokabeln wie `猫` stellen ihr Ziel `pronunciation-readings` damit über den aktuellen Vertrag bereit, sodass das angezeigte `ねこ` den erstellten Ausspracheeintrag öffnet; Kanji-Lesungen und Partikel-Kana-Links verwenden dieselbe aktuelle Metadatenform.
 
-- [046b335](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/046b335)
+- [d81fda7](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/d81fda7fa3efaa127a5a3f21633afef600c9ea8a)
 
 ## Aussprachelinks nur nach aktuellem Vertrag
 
 Die veralteten singulären `linkRelationship`-Metadaten wurden entfernt, statt im Beta-Inhaltsschema einen Kompatibilitätspfad beizubehalten. Aussprachefelder veröffentlichen nur noch die aktuellen, von Cognis verwendeten `linkRelationships`-Arrays; Regressionstests verhindern die erneute Einführung der Legacy-Eigenschaft.
 
-- [29d7b90](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/29d7b90)
+- [9376566](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/937656620115c72eeea3f7f8273a8aff3a30c160)
 
 ## Laufzeit-Anbieter für Strichmuster
 
 Der aktuelle Lookup-Anbieter-Vertrag der Cognis Library wurde für japanische Schreibzeichen implementiert. Exakt übereinstimmende Kana- und Kanji-Bezeichnungen liefern ihr paketiertes, validiertes `stroke_pattern` mit stabiler KanjiVG-Herkunft und Konfidenz `1`; unbekannte Bezeichnungen werden nicht erraten. Der Anbieter arbeitet vollständig lokal – ohne Netzwerkdienst oder OCR – und seine Registrierung wird beim Deaktivieren oder unmittelbar nach fehlgeschlagener Übernahme entfernt.
 
-- [bbc6d84](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/bbc6d84)
+- [9c6ba69](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/9c6ba6910450efd81f08e7982c67d69fe89ab0f6)
 
 ## Vollständige Strichmustersuche für Kana und Kanji
 
 Der Suchanbieter wurde über den mitgelieferten Lehrplan hinaus erweitert. Mitgelieferte Muster bleiben sofort und offline verfügbar; jedes andere japanische Kana oder Kanji wird über seinen Unicode-Codepunkt anhand der kanonischen KanjiVG-SVG-Daten aufgelöst, in begrenzte normalisierte Strichproben umgewandelt, zwischengespeichert und mit genauer Herkunft sowie Konfidenz `1` zurückgegeben. Nicht unterstützte oder nicht verfügbare Zeichen liefern keine Vermutung; für exakte Texteingaben ist OCR bewusst nicht erforderlich.
 
-- [e040cf0](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/e040cf0)
+- [326145f](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/326145f3eb05ed9d4df521f92728067d87f19d9d)
 
 ## Native Jisho-Kartensuche mit Vorrang
 
 Ein lokalisierter Jisho-Composer-Anbieter für Kana-, Kanji- und Vokabelkarten wurde nach dem neuesten Cognis-Suchvertrag hinzugefügt. Exakte mitgelieferte Einträge liefern alle geprüften Felder und Beziehungen ohne Netzwerkanfrage. Bei einem nativen Fehltreffer wird vor der Jisho-Abfrage ein begrenzter Anfragecache verwendet; anschließend werden kanonische Bezeichnungen, Aussprachen, JLPT-Stufen und ausschließlich bereits im Anbietergraphen vorhandene Kanji-, Lese-, Kana- oder Definitionsverknüpfungen befüllt. Der Strichmusteranbieter veröffentlicht nun ebenfalls die vom aktuellen Composer benötigten lokalisierten Metadaten.
 
-- [db47014](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/db47014)
+- [7e6ef74](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/7e6ef7480eabb9fb4724bb51532523cfd32f89fd)
 
 ## Registrierung über den generischen Library-Anbieter
 
 Jisho stellt nun einen eigenen Registrierungsadapter bereit, der die generische Fähigkeit `study:library:provider` entgegennimmt und direkt an `registerLookupProvider` delegiert. Bootstrap verwendet diesen Adapter, bewahrt die zurückgegebene Entfernen-Funktion auf und entfernt bereits registrierte Anbieter in umgekehrter Reihenfolge, falls eine spätere Registrierung oder das Einlesen von Inhalten fehlschlägt. Die Integration hängt nicht mehr von einer Jisho-spezifischen Host-Fähigkeit ab.
 
-- [0056f4d](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/0056f4d)
+- [bfea956](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/bfea956d632cc40a088b4296d2d02eb2535ef79b)
 
 ## Paketierter Registrierungs-Einstiegspunkt
 
 Der Manifest-Digest für den generischen Jisho-Registrierungs-Einstiegspunkt und seine Regressionstests wurde aktualisiert.
 
-- [b2a1e34](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/b2a1e34)
+- [bfea956](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/bfea956d632cc40a088b4296d2d02eb2535ef79b)
 
 ## Eigenständige Strichmuster-Laufzeit
 
 Die nicht bereitgestellte Produktionsabhängigkeit `svg-path-properties`, die Cognis beim Aktivieren am Import des Moduls hinderte, wurde entfernt. Das Modul liefert nun einen eigenen begrenzten SVG-Pfad-Tokenizer, Kurven-Sampler und distanzbasierten Resampler für KanjiVG-Striche mit. Regressionstests führen Bootstrap-, Strichmuster- und Deinstallationstests aus einem kopierten Modulbaum ohne `node_modules` aus und entsprechen damit der Installationsumgebung externer Module.
 
-- [6133b70](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/6133b70)
+- [4af0efc](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/4af0efc58f962bcf07a087d0066ce2d7b54bf253)
 
 ## Auflösung der inversen Library-Fähigkeit
 
 Bootstrap bezieht die erforderliche Library-Registrierungsoberfläche nun über `ctx.capabilities.require("study:library:provider")` und folgt damit dem inversen Anbietermuster der SSO-Authentifizierungsmodule. Der Komfort-Getter, der für diese erforderliche Fähigkeit `undefined` zurückgab, wird nicht mehr verwendet; Formprüfung und Lebenszyklusbereinigung der Anbieter bleiben erhalten.
 
-- [a3e2b35](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/a3e2b35)
+- [c1c8a23](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/c1c8a2304c9550d158842311194e3a5ec5e6db99)
 
 ## Sichtbarkeitsbrücke für den Library-Anbieter
 
 Bootstrap bevorzugt nun die injizierte öffentliche Fähigkeit `study:library:provider`. Wenn Cognis PR #226 sie jedoch nur für die Aktivierungsprüfung bereitstellt, verwendet Bootstrap den injizierten Dienst `study:library` als Träger derselben generischen Schnittstelle aus `registerLookupProvider` und `ingestContentPack`. Dadurch funktioniert die Aktivierung ohne ein zweites Anbieterprotokoll; Tests decken beide Sichtbarkeitsformen des Hosts ab.
 
-- [f9c29d8](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/f9c29d8)
+- [a9d1c15](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/a9d1c155470fca1b8bc65bcdb6d7bced1a03d828)
 
 ## Vollständig auflösbare Satz- und Kanji-Links
 
 Die Titeldetail-Links wurden mit dem exakten Alias-Kompositionsalgorithmus des Hosts geprüft. Für jede Satzaussprache ist nun nachgewiesen, dass ihre geordneten Kana-Abschnitte die vorgesehenen Vokabel- und Partikeleinträge öffnen. Jedes Kanji stellt eine vollständige Primärlesung bereit, die zu genau einem angrenzenden Vokabelziel passt; weitere Lesungen verwenden eine separate Nicht-Titel-Beziehung und behalten alle atomaren Kana-Abhängigkeiten für die inverse Navigation.
 
-- [2a5f23f](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/2a5f23f)
+- [9d7abe8](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/9d7abe8203769376d0249bda7b790ac84b4266cf)
 
 ## Ausrichtung am Vertrag für paketierte Audiodateien
 
 Externe Platzhalter-Audio-URLs wurden entfernt, da der aktuelle Inhalts­paket-Validator der Library sie korrekt als `invalid_asset_reference` zurückweist. Die Aussprache von Schrifteinheiten bleibt erforderlich; Audio ist nun ein optionales Uploadfeld, bis eine authentische Audiodatei im Paket mitgeliefert wird.
 
-- [80c7a20](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/80c7a20)
+- [ac71f82](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/ac71f82fa6bfd798e9ea05be7c882e523a8f7da5)
 
 ## Direkte Kana-Verwendungsbeziehungen
 
 Die künstliche Abhängigkeitsbeziehung von Kanji zu Kana wurde entfernt. Kana-Karten zeigen unter „Verwendet von“ nur noch unmittelbare Lesungsdatensätze und bewahren damit die vorgesehene Navigation `あ` → `あめ` → `雨`, statt nicht verwandte Wörter und Kanji als direkte Eltern darzustellen.
 
-- [13d11ce](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/13d11ce)
+- [98c2e49](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/98c2e4954513cd03eb4f8a76b1e57b011a3daca5)
 
 ## Aussprachegrenzen nur für Kanji
 
 Kanji-Aussprachelinks verweisen jetzt auf eigene reine Kana-Lesungsdatensätze statt auf vollständige sichtbare Wörter. `好` zeigt und verknüpft daher `す`, während der getrennte Aussprache-Wrapper von `好き` das `す` mit dem Suffix `き` zusammensetzt; eigenständige Kanji-Wörter verwenden dieselbe zweistufige Grenze ohne gleich bezeichnete Eltern.
 
-- [6cb7ca7](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/6cb7ca7)
+- [0900421](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/090042170e97a4f9d76d0433e2057e360ee973f9)
 
 ## Kurventreue Kana-Strichmuster
 
 Alle paketierten Kana- und Kanji-Strichmuster wurden aus festgelegten, nach Unicode benannten KanjiVG-SVG-Pfaden neu erzeugt. Der moduleigene Sampler unterteilt kubische und quadratische Kurven vor der Abstandsabtastung und bewahrt dadurch Wendungen und Schleifen wie im zweiten Strich von `え`, statt sie auf irreführende gerade Segmente zu reduzieren.
 
-- [1668b5f](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/1668b5f)
-- [5002586](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/5002586)
+- [76cf76e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/76cf76e300dbc6e2443d10710bd5e33c160c815e)
+- [76cf76e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/76cf76e300dbc6e2443d10710bd5e33c160c815e)
 
 ## Rekursiv aus Kana abgeleitete Aussprache
 
 Alle 84 ausgeblendeten, nur aus Zeichen bestehenden Wortschatz-Aussprache-Wrapper wurden entfernt. Atomare Kana sind nun die einzigen Aussprache-Endpunkte: Kanji und die 37 echten Wortschatzkarten verweisen direkt auf geordnete Kana, während Sätze nur echten Wortschatz und Partikeln referenzieren. Die Aussprachewerte von Wortschatz und Sätzen werden für die Anzeige aus diesem Graphen materialisiert und als Aussprachebeziehungen gekennzeichnet, sodass der geschriebene Satz nicht mehr unter seinem Titel wiederholt wird.
 
-- [40ce8d8](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/40ce8d8)
+- [b2a396a](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/b2a396aaafe01405abb35efb4418202f3bc46cff)
 
 ## Validierung geordneter Sätze
 
 Die Satzbeziehungen wurden an die aktuelle Ingestions-Vorprüfung aus Cognis PR #226 angepasst. Geordnete `words` und `particles` sind wieder Kompositionsbeziehungen, sodass der Host jede Satzbezeichnung rekonstruieren und validieren kann, während die Aussprache weiterhin rekursiv aus diesen Bestandteilen abgeleitet wird.
 
-- [aff5962](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/aff5962)
+- [fec3fb5](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/fec3fb5b593194ec64c1e2ad32032e7567debf4d)
 
 ## Sichtbare Kana-Aussprache
 
 Die romanisierte Aussprache auf kompakten Kana-Karten wurde wiederhergestellt, ohne die rekursiven japanischen Lesungen zu beeinträchtigen. Jedes Kana behält seine ursprüngliche Form zuerst für die Ausspracheableitung und stellt seine Hepburn-Umschrift als eigenen Anzeigewert bereit, den der aktuelle Library-Renderer beibehält.
 
-- [d6c2c48](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/d6c2c48)
+- [29b678e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/29b678eac314782f4dc693bbd3855a1ae3c61184)
 
 ## Verständliche Kana-Laute
 
 Die Kana-Aussprache enthält jetzt ausschließlich die Hepburn-Umschrift. Lernende sehen nun `a` als Aussprache von `あ` oder `ア` und niemals dasselbe Zeichen als seine eigene Aussprache; japanische Schreibweisen höherer Ebenen verwenden weiterhin geordnete Kana-Bezeichnungen.
 
-- [46d74ae](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/46d74ae)
+- [93532bd](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/93532bd4c8ed8c3e653b34332df1623f23f784c9)
 
 ## Gruppierte Kana-Ausspracheverweise
 
 Alternative Kanji-Lesungen wurden wiederhergestellt, und jede Aussprache von Kanji und Wortschatz wird als eigene verschachtelte Folge geordneter Kana-Verweise dargestellt. Das Schema markiert diese Felder als `multi_value` und ihre Beziehungen als gruppiert; auch Jisho-Vorschläge bewahren dieselbe Struktur für die kommende Unterstützung im Cognis-Kern.
 
-- [9bbe068](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/9bbe068)
+- [ea6c997](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/ea6c99745df322094aaa4ba26b1b7e6e8de9558a)
 
 ## Ausgeblendete Wortschatz-Aussprachebrücken
 
 Ausgeblendete Aussprachedatensätze wurden nur dort wiederhergestellt, wo die Wortschatzbedeutung von den Definitionen der geschriebenen Kanji abweicht. Jede Brücke trägt die lexikalische Definition, verknüpft die betreffende Kanji-Schreibweise und löst über gruppierte Kana-Verweise auf; Wörter mit gleicher Definition behalten ihren direkten Kana-Pfad, und Lookup-Vorschläge schließen die ausgeblendeten Datensätze aus.
 
-- [448f99e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/448f99e)
+- [da85016](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/da8501693bbc2e105df9e95cd0333559c79dc46b)
 
 ## Vollständige Verknüpfungen für Kanji-Aussprachen
 
 Jede Kanji-Aussprache verweist nun über einen eigenen ausgeblendeten Datensatz für die vollständige Lesung auf geordnete atomare Kana. Alle sechs Lesungen von `来` (`く`, `きた`, `き`, `こ`, `らい` und `たい`) besitzen jetzt funktionierende Tiefenverknüpfungen; dieselbe Invariante wird für jedes enthaltene Kanji geprüft.
 
-- [f919fa1](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/f919fa1)
+- [286d3ee](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/286d3ee07376843bc4f5992ea00cf1e7db01e05f)
 
 ## Vollständige Aussprachepfade für Wörter und Sätze
 
 Alle mit Kanji geschriebenen Wörter sind nun mit ihren enthaltenen Schriftzeichen und einem ausgeblendeten Datensatz für die vollständige Aussprache verbunden. Dabei bleiben vorhandene Kanji-Lesesegmente vor den atomaren Kana erhalten. Satzaussprachen durchlaufen vollständige ausgeblendete Datensätze aus Wortlesungen und Partikel-Kana. Jisho-Vorschläge prüfen außerdem die Schrift je Ebene, behalten verfügbare Kanji-Schreibverknüpfungen bei und lassen unvollständige Kana-Gruppen weg.
 
-- [8f5a3e5](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/8f5a3e5)
+- [4e549a9](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/4e549a90346e73f19bed8e21edd6ae78f95d5074)
 
 ## Gemeinsame Aussprachekarten für Homophone
 
 Die doppelten ausgeblendeten Aussprachekarten für `はな`, `はし`, `あめ` und `かみ` wurden durch jeweils eine gemeinsame Karte pro vollständiger Kana-Lesung ersetzt. Jede gemeinsame Karte fasst die zugehörigen lexikalischen Definitionen zusammen und wird von den unterschiedlichen sichtbaren Kanji-Wörtern verwendet. Dadurch verlinken gleich beschriftete Karten nicht mehr aufeinander, während jedes Homophon als eigenes Lernwort erhalten bleibt.
 
-- [111ec59](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/111ec59)
+- [abd8c3b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/abd8c3b545fe155d4c7c2439cadb337707c408c2)
 
 ## Stabile Navigation zwischen Leseebenen
 
 Erfasste Beziehungen sind jetzt die einzige Quelle der Navigation zwischen Lesekarten. Lesepfade von Vokabeln können nicht mehr auf eine gleich beschriftete Vokabelkarte zeigen: Vollständige Aussprachen einzelner Kanji lösen sich direkt in geordnete Kana auf, während Zusammensetzungen nur echt kleinere Lesesegmente behalten. Ausgeblendete strukturelle Lesungen kopieren keine semantischen Definitionen mehr. Sichtbare Vokabeln behalten eine lokalisierte Definition nur, wenn ihre Bedeutung vom Kanji abweicht; identische Bedeutungen werden über den übergeordneten Schreibweiseeintrag übernommen, und Definitionen, die mit der Hauptbeschriftung identisch sind, bleiben in Cognis ausgeblendet.
 
-- [1d37ccf](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/1d37ccf)
+- [5bed22f](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/5bed22f956d41cdbbbf97749acae0400dbe01275)
 
 ## Geprüfte Kanji-Lesungen und Anfängerinhalt
 
 Die Ausspracheabdeckung ist jetzt auf den geprüften KANJIDIC-Bestand an On- und Kun-Lesungen festgelegt, einschließlich deterministischer Normalisierung, eines ausgeblendeten Lesedatensatzes pro Ergebnis und einer ausdrücklichen kontextbedingten Ausnahme für `達` als `だち`. Ergänzt wurden lokalisierte Definitionen für lexikalisch abweichende Karten sowie ein geprüfter Stapel aus neun Wörtern zu Ort, Existenz, Beschreibung, Art und Weise und Kopula mit acht natürlichen Beispielsätzen und vollständigen Aussprachepfaden.
 
-- [69fad5d](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/69fad5d)
+- [ddfb838](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/ddfb83889f2172985b1b8290e0737832f9187ac8)
 
 ## Zuständigkeit für die Löschfläche der Bühne
 
 Es wurde bestätigt, dass das Entfernen bereitgestellter Karten im Cognis Study-Library-Composer implementiert und gestaltet wird und nicht in diesem externen Japanisch-Inhaltsmodul. Die genauen Host-Selektoren, die erforderliche Größenkorrektur und der Browser-Regressionstest sind in `TODO.md` festgehalten; das Modul schleust keine unsichere CSS-Überschreibung in einen vom Host verwalteten Editor ein.
 
-- [c1a4b7b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/c1a4b7b)
+- [8e9f064](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/8e9f0646527535a2ef05cfd53a96b3f7438e28bd)
 
 ## Romanisierungsauflösung nur für Kana
 
 Es wurde bestätigt, dass das Japanisch-Paket die Hepburn-Umschrift bereits auf atomare Kana beschränkt, während Lesungen höherer Ebenen als japanische Kana-Bezeichnungen verfasst sind. Die genaue erforderliche Korrektur am Cognis-Composer wurde festgehalten, damit die rekursive Ausspracheableitung die Kana-Umschrift nicht in Wortschatz- und Satzlesungen übernimmt; das externe Modul überschreibt kein hosteigenes Ableitungsverhalten.
 
-- [2324f5b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/2324f5b)
+- [35975db](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/35975dbcb8e4de5c6da0721e67adf96070d9ae9f)
 
 ## Ausdrückliche destruktive Deinstallationsbereinigung
 
 Der von Cognis erwartete administrative Endpunkt zum Löschen der Modulkonfiguration wurde als inhaltssichere `204`-Kompatibilitätsroute ergänzt. Paketierte Japanisch-Datensätze werden jetzt nur dann über den Study-Library-Provider gelöscht, wenn die Deinstallationsanfrage ausdrücklich `deleteContent: true` enthält; Deaktivierung, gewöhnliche Deinstallation, fehlende Bereinigungsunterstützung und Bereinigungsfehler können etablierte Lerndaten weder unbemerkt löschen noch verwaisen lassen.
 
-- [eb8583f](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/eb8583f)
+- [5c36f40](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/5c36f401cf0066600d44e0863ce86cb58da5c58f)
 
 ## Wiederhergestellte Definitionen auf Wortschatzkarten
 
 Allen sichtbaren, mit Kanji geschriebenen Wortschatzeinträgen, die zuvor von ihrem Schreibungs-Elterneintrag abhingen, wurden direkte Definitionsbeziehungen hinzugefügt. Dies entspricht dem Cognis-Karten-Renderer, der nur direkt referenzierte Definitionen anzeigt, und stellt die Bedeutungen unter anderem für `川`, `空`, `花`, `鼻`, `橋`, `箸`, `雨`, `飴`, `水`, `犬`, `猫`, `山`, `紙` und `髪` wieder her.
 
-- [c045f5e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/c045f5e)
+- [7dd6179](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/7dd61791b5af32e0fe27f5db9a9298f2b4fc9a74)
 
 ## Funktionierende Jisho-Wortschatzsuche
 
 Der Ablauf des Jisho-Composers wurde korrigiert, sodass die Wortschatzsuche begrenzte englische und andere lateinische Suchbegriffe akzeptiert, statt ohne Anfrage sofort kein Ergebnis zu melden. Exakte paketierte japanische Einträge bleiben vorrangig lokal; japanische Remote-Anfragen bevorzugen exakte Formen, während Bedeutungssuchen Jishos höchstbewertetes Ergebnis verwenden. Kana- und Kanji-Ebenen erfordern weiterhin ein gültiges japanisches Zeichen, und unsichere oder überlange Eingaben werden vor dem Netzwerkzugriff abgelehnt.
 
-- [f14901a](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/f14901a)
+- [3ae4cbe](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/3ae4cbe0874933fa718765636bfe69279367db63)
 
 ## Transformationsansichten für Grundformen von Verben und Adverbien
 
 Das Japanisch-Paket wurde an den neuesten Cognis-Transformationsvertrag angepasst. Der Wortschatz trennt nun Grundformen von Verben und unveränderliche Adverbien in eigene Ansichten; Verben unterscheiden Ichidan, reguläre Godan-Endungen, die Ausnahmen `行く` und `ある` sowie das unregelmäßige `来る`. Vom Provider deklarierte Regeln leiten geprüfte Höflichkeits-, Verneinungs-, Vergangenheits- und Te-Formen zur Anzeigezeit ab, während das Paket nur die zwölf kanonischen Grunddatensätze für Verben und Adverbien und keine erzeugten Duplikate speichert.
 
-- [097eab5](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/097eab5)
+- [1c251e5](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/1c251e56e591b36b4aefd8144ce6213075d3b30f)
 
 ## Segmentierte Links in Satzaussprachen
 
 Aussprachedetails von Sätzen verknüpfen jetzt jedes geordnete Lesungssegment direkt mit seiner sichtbaren Wortschatz- oder Partikelkarte. Die 25 ausgeblendeten Wortschatz-Wrapper für vollständige Sätze und die Satzbeziehung `pronunciation-readings` wurden entfernt, sodass `はなはとてもきれいです` die Einträge `花`, `は`, `とても`, `きれい` und `です` einzeln öffnet, statt eine einzige Wortschatzkarte für den vollständigen Satz darzustellen.
 
-- [0002eee](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/0002eee)
+- [03377a7](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/03377a7816980bf5230ee83739b70af4dad33182)
 
 ## Schutz für vollständige japanische Aussprache
 
 Alle paketierten Aussprachen höherer Ebenen wurden geprüft und auf vollständigen japanischen Text festgelegt, einschließlich der vollständigen Satzrekonstruktion. Die gemeldete gemischte Umschrift und das fehlende letzte Segment entstehen in Cognis PR #226: Die rekursive Ableitung liest das Hepburn-Feld der Kana-Karte vor ihrer atomaren Beschriftung, und das Host-Popup muss die vollständige gruppierte Lesespanne erhalten. Der genaue vorgelagerte Basisfall und die Umbruchregression wurden festgehalten, ohne unsichere Überschreibungen der Host-Oberfläche in dieses externe Paket einzubauen.
 
-- [0906392](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/0906392)
+- [cd764a7](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/cd764a7611976f5b58152b97ebadb073cc96ce1b)
 
 ## Lesungstitel-Navigation zu atomaren Kana
 
 Allen ausgeblendeten Kanji-Lesungsdatensätzen wurden ausdrückliche geordnete Titelzusammensetzungen aus atomaren Kana hinzugefügt. Eine mehrteilige Kana-Lesung wie `さん` öffnet nun direkt `さ` und `ん`, sodass der Host nicht mehr die separate ausgeblendete Kanji-Lesungs-Wortschatzkarte `さ` von `小` einsetzen kann. Die vollständigen `kana-spelling`-Beziehungen bleiben für die Aussprachebedeutung erhalten, während die Titelnavigation deterministisch bei Kana endet.
 
-- [8c48fa7](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/8c48fa7)
+- [612e4cb](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/612e4cb4df57a5afb62cd4dcf4291c7516d2e91e)
 
 ## Navigation für zusammengesetzte Kana und Geometrie kleiner Formen
 
 Allen Kana-Karten mit mehreren Zeichen wurde eine ausdrückliche Titelzusammensetzung aus atomaren Kana hinzugefügt. Dadurch verweisen zusammengesetzte Kana wie `きょ` nicht mehr auf ausgeblendete Wortschatzlesungen mit demselben Text. Die Strichlayouts wurden mit größenabhängigen Bereichen neu aufgebaut, sodass kleine Formen wie `ょ` neben Kana normaler Größe ihre sichtbar verkleinerten Proportionen behalten.
 
-- [4c33d9e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/4c33d9e)
+- [305e774](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/305e7743a0ab48ca335cac9add23cb1c670def20)
 
 ## Satzverknüpfungen ohne vorgetäuschte Satzvokabeln
 
 Die Ausspracheverknüpfungen eines Satzes zu seinen geordneten sichtbaren Vokabel- und Partikelbestandteilen wurden wiederhergestellt. Verstärkte strukturelle Regressionstests weisen vollständige Satzlesungen, Satzkomposite, Partikelklassen, Partikelverweise und ausgeblendete Satzbestandteile aus dem Vokabellayer zurück, ohne legitime Satzverknüpfungen zu entfernen.
 
-- [7cdb1ac](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/7cdb1ac)
+- [ad97003](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/ad97003b391165fcd5411e708bf771fdac729d13)
 
 ## Direkte Kanji-Lesungen ohne Kana-duplizierende Vokabeln
 
 Alle 140 ausgeblendeten `reading:kanji`-Vokabeldatensätze wurden entfernt, einschließlich einzelner Kana-Ausreißer wie `む`. Kanji-Aussprachegruppen und entfernte Jisho-Kanji-Vorschläge verknüpfen nun direkt geordnete atomare Kana; vollständige lexikalische Aussprachehüllen bleiben nur erhalten, wenn sie keine Kana-Schreibeinheit duplizieren.
 
-- [d7a28e4](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/d7a28e4)
+- [bbfe7ae](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/bbfe7aed644efc97e0d619b5ccc2d684c12880d2)
 
 ## Tief verzweigte Verbtransformationen
 
 Das japanische Paket wurde an Cognis' Vertrag für zusammensetzbare Transformationsbäume angepasst. Alle Verbfamilien verzweigen nun in höfliche, verneinte, vergangene, verbindende, kausative, passive, potenzielle und volitionale Pfade, einschließlich einer vierstufigen Kausativ-Wunschkette. Schriftform und Aussprache werden unabhängig transformiert, lokalisierte Definitionsüberschreibungen erläutern semantische Zweige, Adverbien bleiben unveränderte Grundkarten und erzeugte Formen bleiben reine Darstellung.
 
-- [d93ad3c](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/d93ad3c)
+- [6d3e6bf](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/6d3e6bf546acdcccd860b4c9a7ac75649c1a5dff)
 
 ## Selektive Zwischenkarten für Kanji-Lesungen
 
 Nur für Kanji mit mehreren Lesungen wurde je Aussprache eine ausgeblendete Lesungs-Vokabelkarte wiederhergestellt; das einzige Kanji mit nur einer Lesung führt weiterhin direkt zu atomaren Kana. Jede Zwischenkarte verknüpft ihren Titel mit genau einem Quell-Kanji, rekonstruiert ihre Aussprache aus atomaren Kana und darf bei engerer Bedeutung eine eigene Definition besitzen. Vollständige Kana-Worthüllen wie `せんせい` wurden entfernt; `先生` setzt seine Lesung nun aus den getrennten Zwischenkarten `せん` und `せい` zusammen.
 
-- [91488aa](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/91488aa)
+- [0f16eda](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/0f16edaecc01c74449dcd9a28ebccca898f5ffd5)
 
 ## Eigenständige Definitionen für Lesungen
 
 Allen ausgeblendeten Kanji-Lesungs-Vokabeldatensätzen wurden direkte Definitionsverknüpfungen hinzugefügt. Dadurch zeigt das Öffnen einer Lesung über einen Aussprache-Deep-Link dieselbe Bedeutung wie das Öffnen über den Bereich „Verwendet von“ der Kanji-Karte. Bei identischer Bedeutung werden die Definitionen des Quell-Kanji wiederverwendet; engere Lesungsbedeutungen können weiterhin eigene Definitionen besitzen.
 
-- [b0a83fb](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/b0a83fb)
+- [935f6c9](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/935f6c9d0ee0ff5cb3b0284a839a76d74221e30b)
 
 ## Lokalisierte Transformationsmarker
 
@@ -719,15 +719,15 @@ Modulversion 2.2.97 behält Inhaltspaketversion 2.2.93 und Schemarevision 88 bei
 - [e5eae65](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/e5eae656076a0bcb31c74e7f388c06b4ed790815)
 - [6677a4f](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/6677a4f80b97c2d3f056b189002e2c0f30f88e22)
 - [b314603](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/b314603e775c02a12ee16c3c718618a4077125bc)
-- [d7b696b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/d7b696b) — Transformationsmarker an Cognis angepasst.
-- [64ce852](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/64ce852) — Jede Verbtransformation mit Definitionsanmerkungen versehen.
-- [f6c7201](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/f6c7201) — Transformationsmarker in Verbdefinitionen platziert.
-- [739beba](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/739beba) — Zusammensetzbare Definitionstransformationen übernommen.
-- [a5539e6](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/a5539e6) — Kontextabhängige Definitionsersetzungen ergänzt.
-- [7c2c0db](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/7c2c0db) — Zeichenseitenverhältnis und Strichgruppen bewahrt.
-- [ab10be0](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/ab10be0) — Kanji-Identität von der Aussprache trennen.
-- [19424fc](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/19424fc) — Doppelte Identitätshinweise entfernen.
-- [244e048](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/244e048) — Satzstruktur-Einträge im Composer bereitstellen.
-- [b33c94a](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/b33c94a) — Satzkonnektoren und Kopulaformen erweitern.
-- [7f15934](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/7f15934) — Metadatenvalidierung der Kopula-Transformation korrigiert.
-- [25c3765](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/25c3765) — Aussprache-Deep-Links im Wortschatz wiederhergestellt.
+- [b41da01](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/b41da011d6026d909c55369d3598e8334bbffe94) — Transformationsmarker an Cognis angepasst.
+- [ac2bc76](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/ac2bc76bc15ec0898b023e7f170e106935f7a438) — Jede Verbtransformation mit Definitionsanmerkungen versehen.
+- [cf02a4a](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/cf02a4ae4c296f4d67d86ff21c099ecb5bea8a8c) — Transformationsmarker in Verbdefinitionen platziert.
+- [5098a12](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/5098a123745e0ee72e3afad297d81a0505792aa0) — Zusammensetzbare Definitionstransformationen übernommen.
+- [da436b4](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/da436b4e3c0f9b92a7ee895980129d572b633da7) — Kontextabhängige Definitionsersetzungen ergänzt.
+- [340b525](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/340b525fc838313d937498bc2fcc8f20c48c75e2) — Zeichenseitenverhältnis und Strichgruppen bewahrt.
+- [dee7ab5](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dee7ab5e5f1cbc78a28eb526f0b07c421c151054) — Kanji-Identität von der Aussprache trennen.
+- [dee7ab5](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dee7ab5e5f1cbc78a28eb526f0b07c421c151054) — Doppelte Identitätshinweise entfernen.
+- [288aa01](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/288aa0165b63cc7810fcf50530df7d49fc1a70c5) — Satzstruktur-Einträge im Composer bereitstellen.
+- [0895472](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/0895472e7c61aa0858fd6d8a1aa6d6f27852d0ce) — Satzkonnektoren und Kopulaformen erweitern.
+- [92992d5](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/92992d5f65831215de331f4af3da924a006fecb7) — Metadatenvalidierung der Kopula-Transformation korrigiert.
+- [26eeb3e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/26eeb3e8b152bb7ee22f5bb9dee7ba67f430cbf6) — Aussprache-Deep-Links im Wortschatz wiederhergestellt.

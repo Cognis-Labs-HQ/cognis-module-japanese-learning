@@ -240,7 +240,7 @@ Batch pemula yang ditinjau menambahkan `ここ`, `そこ`, `どこ`, `いる`, `
 
 ## Pembersihan Penghapusan Instalasi yang Destruktif
 
-Menonaktifkan modul dan penghapusan instalasi biasa mempertahankan semua rekaman bahasa Jepang yang telah diimpor. Hanya opsi eksplisit `deleteContent: true` pada hook penghapusan instalasi host yang boleh memanggil operasi `deleteContentPack` milik penyedia Study Library; penyedia tersebut memiliki tanggung jawab atas penghapusan relasi berantai secara transaksional dan harus melaporkan kegagalan sebelum Cognis menghapus modul. Rute kompatibilitas administratif `DELETE /api/v1/modules/study-language-ja/config` hanya membersihkan konfigurasi lokal modul (modul ini tidak memilikinya), sehingga mengembalikan `204` tanpa menyentuh konten pembelajaran.
+Rute khusus administrator `GET`, `PUT`, dan `DELETE /api/v1/modules/study-language-ja/config` tetap tersedia saat modul dinonaktifkan. GET membaca `voiceId` tersimpan; PUT memvalidasi dan menyimpannya di `module_study_language_ja_config`, tetap bertahan setelah server dimulai ulang atau modul diaktifkan kembali. DELETE hanya menghapus konfigurasi tersebut. Ketiganya mengembalikan HTTP 200 dengan pembungkus data JSON; penghapusan konfigurasi tidak menghapus konten pembelajaran. Pendaftaran penyedia dilepas saat modul dinonaktifkan atau aktivasi gagal. Penghapusan modul mempertahankan konten kecuali `deleteContent: true` meminta operasi transaksional `deleteContentPack` milik host. Kegagalan diteruskan dengan log terstruktur yang aman.
 
 ## Definisi Kartu Kosakata
 
@@ -326,7 +326,7 @@ Study menyediakan klasifikasi dan gaya pelafalan publik yang digunakan kembali o
 
 ## Struktur modul Study
 
-Paket konten berada di `data/library/`: manifes, skema, dan berkas kontennya membentuk satu batas impor dan penghapusan. Dek awal tetap di `data/starter-decks.json`. Penyedia runtime berada di `api/dictionary/` dan `api/strokes/`; pemuatan deterministik serta dekode respons dengan batas byte berada di `api/reuse/`. Pengujian konten dan siklus hidup lintas lapisan berada di `tests/`, sedangkan pengujian penyedia, transportasi, dan API berada di `api/tests/`. Manifes mendeklarasikan `api/routes/config/index.js` sebagai `disabledApi`; titik masuk itu hanya mendaftarkan rute DELETE konfigurasi khusus administrator tanpa mengimpor konten atau mengaktifkan penyedia. Pengenal alur yang telah dipublikasikan tetap stabil.
+Paket konten berada di `data/library/` dan dek awal di `data/starter-decks.json`. Penyedia berada di `api/dictionary/` serta `api/strokes/`; pemuatan deterministis dan pembacaan respons terbatas byte berada di `api/reuse/`. Pengujian lintas lapisan berada di `tests/` dan pengujian API di `api/tests/`. Manifest menetapkan `api/routes/config/index.js` sebagai `disabledApi`, yang mendaftarkan rute konfigurasi GET, PUT, dan DELETE khusus administrator ketika modul dinonaktifkan, tanpa memuat konten atau mengaktifkan penyedia. Pengenal alur yang dipublikasikan tetap stabil.
 
 ## Graf kamus dan goresan yang lengkap
 
@@ -342,4 +342,8 @@ Bootstrap mendaftarkan penyedia yang dapat dilepas melalui `study:audio:provider
 
 Berkas memakai PCM mono 24 kHz 16 bit dengan puncak terbatas dan keluaran yang dipastikan tidak hening. Permintaan memakai model tetap per bahasa, kecepatan 0,9, kemiripan 0,85, serta gaya 0; stabilitasnya 0,75 untuk bahasa Inggris dan 0,9 untuk bahasa Jepang. Nilai seed disimpan per permintaan; keluaran hening yang ditolak dicatat dan dicoba ulang tanpa mengganti suara. Bahasa Inggris memakai tag fonem IPA yang ditulis dalam data. Manifes konten menyatakan direktori aset paket dan menaikkan versi paket untuk instalasi.
 
-Setiap lapisan menyediakan kolom gambar referensi opsional dalam editor kartu dan tampilan detail host. Kartu anjing menyertakan foto oleh Elf, disunting oleh Djmirko, dengan lisensi CC BY-SA 3.0. Sumber dan atribusi tercantum dalam `data/library/assets/images/LICENSE.md` serta manifes konten. Administrator dapat mengunggah gambar referensi tambahan melalui Cognis.
+Setiap lapisan menyediakan bidang gambar referensi opsional di editor dan tampilan detail host. Kosakata menggunakan ilustrasi asli buatan AI dengan gaya anime yang dibuat melalui pembuatan gambar OpenAI; tidak ada foto pihak ketiga. `data/library/assets/images/catalog.json` mencatat asal pembuatan dan potongan, pemetaan kartu, serta checksum; `data/library/assets/images/LICENSE.md` menjelaskan lisensi karya. Administrator dapat mengunggah gambar referensi tambahan melalui Cognis.
+
+## Inventaris Rekaman
+
+`data/audio/recordings.json` merupakan manifest ringkas berisi bahasa, suara, model, pengaturan pemrosesan bersama, jumlah total, dan jalur inventaris dengan pemeriksaan integritas. Berkas dalam `data/audio/inventories/` memisahkan karakter, kosakata, transformasi, kalimat langsung, dan rekaman gabungan pengganti. Setiap berkas berada di bawah 800 baris dan mempertahankan permintaan persis, asal suara tiap klip, jalur transformasi, serta checksum audio. Bootstrap memverifikasi checksum dan jumlah setiap inventaris sebelum mendaftarkan pemutaran; byte rekaman dan prioritas pencarian tidak berubah.

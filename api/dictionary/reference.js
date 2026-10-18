@@ -31,7 +31,19 @@ export function createReferenceProvider({
                 return [];
             const records = await lookup(label);
             if (!records.length) return [];
-            content ??= loadNativeContent(contentRoot);
+            content ??= loadNativeContent(contentRoot).catch((error) => {
+                content = undefined;
+                log?.(
+                    "error",
+                    "Japanese reference content could not be loaded.",
+                    {
+                        component: "study-language-ja",
+                        operation: "load_reference_content",
+                        errorName: error?.name ?? "Error",
+                    },
+                );
+                throw new Error("japanese_reference_content_unavailable");
+            });
             const index = await content;
             return records
                 .map(
@@ -54,7 +66,6 @@ export function createReferenceProvider({
                                 : {},
                             definitions: record.senses
                                 .flatMap((sense) => sense.english_definitions)
-                                .slice(0, 10)
                                 .map((meaning) => ({
                                     translations: { en: meaning },
                                 })),

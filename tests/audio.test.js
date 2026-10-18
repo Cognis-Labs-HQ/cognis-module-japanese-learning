@@ -1,3 +1,4 @@
+import { readAudioInventory } from "../api/audio/inventory.js";
 import assert from "node:assert/strict";
 import { createHash } from "node:crypto";
 import { readFile } from "node:fs/promises";
@@ -5,9 +6,7 @@ import test from "node:test";
 import { createAudioProvider } from "../api/audio/index.js";
 import { readContentLayers } from "../api/reuse/content.js";
 
-const inventory = JSON.parse(
-    await readFile("data/audio/recordings.json", "utf8"),
-);
+const inventory = await readAudioInventory("data/audio");
 const schema = JSON.parse(await readFile("data/library/schema.json", "utf8"));
 const layers = await readContentLayers(
     "data/library/content",

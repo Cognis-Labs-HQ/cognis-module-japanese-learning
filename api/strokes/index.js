@@ -2,6 +2,7 @@ import { readBoundedText } from "../reuse/response.js";
 import { readContentLayers } from "../reuse/content.js";
 import { createLookupCache } from "../reuse/lookup-cache.js";
 import { sampleSvgPath } from "./path-sampler.js";
+import { characterViewport } from "./geometry.js";
 
 const PROVIDER_ID = "study-language-ja:stroke-patterns";
 const SCHEMA_ID = "japanese-core";
@@ -16,7 +17,7 @@ function roundedCoordinate(value) {
     return Math.max(0, Math.min(1, Number(value.toFixed(4))));
 }
 
-function patternFromSvg(svg, characterIndex, characterCount) {
+function patternFromSvg(svg, viewport) {
     const paths = [...svg.matchAll(/<path\b[^>]*\bd="([^"]+)"/g)].map(
         ([, pathData]) => pathData,
     );
@@ -25,7 +26,7 @@ function patternFromSvg(svg, characterIndex, characterCount) {
     return paths.map((pathData) => ({
         points: sampleSvgPath(pathData).map((point, pointIndex) => ({
             x: roundedCoordinate(
-                (characterIndex + point.x / 109) / characterCount,
+                viewport.offset + (point.x / 109) * viewport.width,
             ),
             y: roundedCoordinate(point.y / 109),
             time: pointIndex * 40,
@@ -56,8 +57,7 @@ async function fetchPattern(label, fetchImplementation, sourceBaseUrl) {
         const svg = await readBoundedText(response);
         const characterStrokes = patternFromSvg(
             svg,
-            characterIndex,
-            characters.length,
+            characterViewport(characters, characterIndex),
         );
         strokes.push(...characterStrokes);
         groups.push(characterStrokes.length);

@@ -240,7 +240,7 @@ Der geprüfte Anfängerstapel ergänzt `ここ`, `そこ`, `どこ`, `いる`, `
 
 ## Destruktive Deinstallationsbereinigung
 
-Beim Deaktivieren des Moduls und bei einer gewöhnlichen Deinstallation bleiben alle importierten Japanisch-Datensätze erhalten. Nur die ausdrückliche Option `deleteContent: true` des Host-Deinstallations-Hooks darf die Operation `deleteContentPack` des Study-Library-Providers aufrufen; dieser Provider ist für die transaktionale Kaskadierung der Beziehungen zuständig und muss einen Fehler melden, bevor Cognis das Modul entfernt. Die administrative Kompatibilitätsroute `DELETE /api/v1/modules/study-language-ja/config` löscht ausschließlich modullokale Konfiguration (dieses Modul besitzt keine) und antwortet deshalb mit `204`, ohne Lerninhalte zu verändern.
+Die nur Administratoren erlaubten Routen `GET`, `PUT` und `DELETE /api/v1/modules/study-language-ja/config` bleiben bei deaktiviertem Modul verfügbar. GET liest die gespeicherte `voiceId`; PUT prüft und speichert sie in `module_study_language_ja_config`, auch über Neustarts und erneutes Aktivieren hinweg. DELETE löscht ausschließlich diese Konfiguration. Alle drei liefern HTTP 200 mit einem JSON-Datenumschlag; Lerninhalte werden dabei nicht gelöscht. Anbieter werden bei Deaktivierung oder fehlgeschlagenem Start entfernt. Die Deinstallation behält Inhalte, sofern nicht `deleteContent: true` die transaktionale Host-Operation `deleteContentPack` anfordert. Fehler werden weitergegeben und sicher strukturiert protokolliert.
 
 ## Definitionen auf Wortschatzkarten
 
@@ -326,7 +326,7 @@ Study stellt öffentliche Ausspracheklassifizierung und Stile für Library-Vorsc
 
 ## Aufbau der Study-Module
 
-Das Inhaltspaket liegt in `data/library/`: Manifest, Schema und Inhaltsdateien bilden eine gemeinsame Import- und Löschgrenze. Startdecks bleiben in `data/starter-decks.json`. Laufzeitanbieter liegen in `api/dictionary/` und `api/strokes/`; deterministisches Laden und bytebegrenztes Dekodieren von Antworten liegen in `api/reuse/`. Übergreifende Inhalts- und Lebenszyklustests liegen in `tests/`, Anbieter-, Transport- und API-Tests in `api/tests/`. Das Manifest deklariert `api/routes/config/index.js` als `disabledApi`; dieser Einstiegspunkt registriert nur die administrative DELETE-Konfigurationsroute und aktiviert weder Inhalte noch Anbieter. Veröffentlichte Ablaufkennungen bleiben stabil.
+Das Inhaltspaket liegt in `data/library/`, Startdecks in `data/starter-decks.json`. Anbieter liegen in `api/dictionary/` und `api/strokes/`, deterministisches Laden und bytebegrenzte Antwortdekodierung in `api/reuse/`. Übergreifende Tests liegen in `tests/`, API-Tests in `api/tests/`. Das Manifest deklariert `api/routes/config/index.js` als `disabledApi`: Im deaktivierten Zustand registriert dieser Einstiegspunkt administrative GET-, PUT- und DELETE-Konfigurationsrouten, ohne Inhalte einzulesen oder Anbieter zu aktivieren. Veröffentlichte Ablaufkennungen bleiben stabil.
 
 ## Vollständige Wörterbuch- und Schriftgraphen
 
@@ -342,4 +342,8 @@ Bootstrap registriert einen entfernbaren Anbieter über `study:audio:provider.re
 
 Erzeugte Dateien enthalten Mono-PCM mit 24 kHz und 16 Bit, begrenzten Spitzenwerten und geprüftem hörbarem Inhalt. Anforderungen verwenden feste sprachspezifische Modelle, Geschwindigkeit 0,9, Ähnlichkeit 0,85 und Stil 0; die Stabilität beträgt für Englisch 0,75 und für Japanisch 0,9. Startwerte bleiben je Anforderung dokumentiert; verworfene stille Ausgaben werden ohne Stimmenwechsel erneut erzeugt. Englisch verwendet verfasste IPA-Phonem-Tags. Das Inhaltsmanifest deklariert das mitgelieferte Medienverzeichnis und erhöht die Paketversion für die Installation.
 
-Jede Ebene stellt das optionale Referenzbildfeld im Karteneditor und in der Detailansicht des Hosts bereit. Die Hundekarte enthält ein Foto von Elf, bearbeitet von Djmirko, unter CC BY-SA 3.0. Quelle und Namensnennung stehen in `data/library/assets/images/LICENSE.md` und im Inhaltsmanifest. Administratoren können weitere Referenzbilder über Cognis hochladen.
+Jede Ebene stellt das optionale Referenzbildfeld im Karteneditor und in der Detailansicht bereit. Vokabeln verwenden eigene, mit OpenAI erzeugte Illustrationen im Anime-Stil; fremde Fotografien sind nicht enthalten. `data/library/assets/images/catalog.json` dokumentiert Erzeugung, Bildausschnitte, Kartenzuordnungen und Prüfsummen; `data/library/assets/images/LICENSE.md` beschreibt die Bildlizenz. Administratoren können weitere Referenzbilder über Cognis hochladen.
+
+## Aufnahmeverzeichnisse
+
+`data/audio/recordings.json` ist ein kompaktes Manifest mit Sprache, Stimme, Modell, gemeinsamen Verarbeitungseinstellungen, Gesamtzahlen und geprüften Inventarpfaden. Dateien unter `data/audio/inventories/` beschreiben getrennt Zeichen, Vokabeln, Transformationen, direkte Sätze und zusammengesetzte Ersatzaufnahmen. Jede Datei bleibt unter 800 Zeilen und enthält die genauen Anforderungen, Stimmenherkunft, Transformationspfade und Audio-Prüfsummen. Bootstrap prüft vor der Wiedergaberegistrierung jede Prüfsumme und Anzahl; Audiodaten und Suchpriorität bleiben unverändert.

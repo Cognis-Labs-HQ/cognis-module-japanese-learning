@@ -10,7 +10,7 @@ parser.add_argument(
 )
 args = parser.parse_args()
 root = args.root
-language = json.loads((root / "data/audio/voice.json").read_text())["language"]
+language = json.loads((root / "data/audio/recordings.json").read_text())["language"]
 shards = collections.defaultdict(lambda: collections.defaultdict(list))
 count = 0
 coverage = {

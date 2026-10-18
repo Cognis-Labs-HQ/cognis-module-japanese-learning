@@ -2,9 +2,9 @@ import { readdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import process from "node:process";
 import { sampleSvgPath } from "../api/strokes/path-sampler.js";
+import { characterViewport } from "../api/strokes/geometry.js";
 
 const SOURCE_SIZE = 109;
-const SMALL_KANA = new Set([..."ぁぃぅぇぉゃゅょっゎァィゥェォャュョッヮヵヶ"]);
 const contentRoot = path.resolve("data/library/content");
 const sourceRoot = path.resolve(process.argv[2] ?? "");
 
@@ -28,18 +28,11 @@ async function characterStrokes(character, characterIndex, characters) {
         ([, pathData]) => pathData,
     );
     if (!paths.length) throw new Error(`No strokes for U+${codePoint}`);
-    const rawWidths = characters.map((value) =>
-        SMALL_KANA.has(value) ? 0.35 : 0.65,
-    );
-    const totalWidth = rawWidths.reduce((sum, width) => sum + width, 0);
-    const widths = rawWidths.map((width) => width / totalWidth);
-    const offset = widths
-        .slice(0, characterIndex)
-        .reduce((sum, width) => sum + width, 0);
+    const viewport = characterViewport(characters, characterIndex);
     return paths.map((pathData) => ({
         points: sampleSvgPath(pathData).map(({ x, y }, pointIndex) => ({
             x: roundedCoordinate(
-                offset + (x / SOURCE_SIZE) * widths[characterIndex],
+                viewport.offset + (x / SOURCE_SIZE) * viewport.width,
             ),
             y: roundedCoordinate(y / SOURCE_SIZE),
             time: pointIndex * 40,

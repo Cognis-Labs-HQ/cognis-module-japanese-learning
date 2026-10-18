@@ -1,3 +1,4 @@
+import { readAudioInventory } from "./api/audio/inventory.js";
 import { createAudioProvider } from "./api/audio/index.js";
 import { createReferenceProvider } from "./api/dictionary/reference.js";
 import { registerApi } from "./api/index.js";
@@ -89,8 +90,20 @@ export async function bootstrapModule(ctx) {
     const libraryRoot = path.join(ctx.moduleRoot, "data", "library");
     const providerRemovers = [];
     const removeLookupProviders = () => {
-        for (const removeProvider of providerRemovers.splice(0).reverse())
-            removeProvider();
+        const failures = [];
+        for (const removeProvider of providerRemovers.splice(0).reverse()) {
+            try {
+                removeProvider();
+            } catch (error) {
+                failures.push(error);
+                ctx.log?.("error", "Study provider cleanup failed.", {
+                    component: "study-language-ja",
+                    operation: "remove_providers",
+                    errorName: error instanceof Error ? error.name : "Error",
+                });
+            }
+        }
+        if (failures.length) throw failures[0];
     };
     let receipt;
     try {
@@ -103,14 +116,8 @@ export async function bootstrapModule(ctx) {
                         "library",
                         "assets",
                     ),
-                    inventory: JSON.parse(
-                        readFileSync(
-                            new URL(
-                                "./data/audio/recordings.json",
-                                import.meta.url,
-                            ),
-                            "utf8",
-                        ),
+                    inventory: await readAudioInventory(
+                        path.join(ctx.moduleRoot, "data", "audio"),
                     ),
                     revision: MODULE_MANIFEST.version,
                     configuration: () => configuration.value,
@@ -175,7 +182,16 @@ export async function bootstrapModule(ctx) {
             () => LANGUAGE,
         );
     } catch (error) {
-        removeLookupProviders();
+        try {
+            removeLookupProviders();
+        } catch (cleanupError) {
+            ctx.log?.("error", "Study activation cleanup failed.", {
+                component: "study-language-ja",
+                operation: "bootstrap_cleanup",
+                errorName:
+                    cleanupError instanceof Error ? cleanupError.name : "Error",
+            });
+        }
         ctx.log?.("error", "Japanese language pack activation failed.", {
             component: "study-language-ja",
             operation: "bootstrap",

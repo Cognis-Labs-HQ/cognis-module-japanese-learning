@@ -282,3 +282,7 @@ Fifteen everyday nouns cover furniture, clothing, objects and food, with four-la
 ## Food and Body Vocabulary
 
 Add 32 illustrated nouns: sixteen food items and sixteen body terms, with four-language meanings and separate Food and Body starter decks. English includes 25 recorded number transformations, including feet, teeth, potatoes and voiced mouths, while mass-noun senses such as chicken meat, beef, butter and skin have no plural family. Japanese keeps complete atomic-Kana paths, distinguishes both meanings of あし with separate foot and leg definitions, and reuses existing native recordings when pronunciation inputs are identical. Four individually authored example sentences per language have direct neural recordings that take priority over exact-constituent composite fallbacks. All illustrations are bundled locally in the established language-specific art style.
+
+## Recording Inventories
+
+`data/audio/recordings.json` is a compact manifest with language, voice, model, shared processing settings, totals and integrity-checked inventory paths. Purpose-grouped files under `data/audio/inventories/` separately describe characters, vocabulary, transformations, direct sentences and composite fallbacks. Each file stays below 800 lines and retains exact requests, per-clip voice provenance, transformation paths and audio checksums. Bootstrap verifies every inventory checksum and count before registering playback; the recording bytes and lookup precedence are unchanged.
