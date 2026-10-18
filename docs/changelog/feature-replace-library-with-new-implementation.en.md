@@ -295,3 +295,4 @@ Illustration filenames and IDs use their SHA-256 digest, and source-sheet identi
 - [544892a](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/544892a8987304d982b2953676f5ddc39eb9c728)
 - [63629ce](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/63629ced95d53d31a2621d2bca5d0bbf55a1dceb)
 - [f622269](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/f62226988d84c4f05100729795f8a15a6b4d828b)
+- [b58c961](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/b58c961f9d8a62d407ca65afcf89a5c4f1f41bb2)
