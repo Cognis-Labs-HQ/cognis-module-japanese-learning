@@ -9,7 +9,11 @@ export function createReferenceProvider({
     cacheRevision,
     log,
 }) {
-    const lookup = createReferenceCatalog(referenceRoot, "ja", log);
+    const lookup = createReferenceCatalog(
+        referenceRoot,
+        { normalization: "NFKC", component: "study-language-ja" },
+        log,
+    );
     let content;
     return Object.freeze({
         id: "study-language-ja:reference",

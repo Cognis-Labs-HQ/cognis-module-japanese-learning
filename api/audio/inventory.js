@@ -27,7 +27,7 @@ export async function readAudioInventory(root) {
     const files = new Set();
     for (const shard of manifest.inventories) {
         if (
-            !/^inventories\/(characters|vocabulary|transformations|sentences|sentence-fallbacks)-\d{3}\.json$/.test(
+            !/^inventories\/(characters|vocabulary|transformations|sentences|sentence-compositions)-\d{3}\.json$/.test(
                 shard.path,
             ) ||
             files.has(shard.path) ||

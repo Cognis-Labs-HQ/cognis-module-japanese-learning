@@ -6,12 +6,14 @@ import path from "node:path";
 
 const decompress = promisify(gunzip);
 
-export function createReferenceCatalog(directory, language, log) {
+export function createReferenceCatalog(
+    directory,
+    { normalization, component },
+    log,
+) {
     const pending = new Map();
     return async (label) => {
-        const key = label
-            .normalize(language === "ja" ? "NFKC" : "NFC")
-            .toLowerCase();
+        const key = label.normalize(normalization).toLowerCase();
         const shard = createHash("sha256")
             .update(key)
             .digest("hex")
@@ -26,7 +28,7 @@ export function createReferenceCatalog(directory, language, log) {
                 .catch((error) => {
                     pending.delete(shard);
                     log?.("error", "reference_catalog_read_failed", {
-                        component: `study-language-${language}`,
+                        component,
                         operation: "readReferenceCatalog",
                         shard,
                         errorName:
