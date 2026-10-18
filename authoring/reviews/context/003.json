@@ -1,0 +1,110 @@
+[
+    {
+        "assetId": "01cd8aaa3840b0b51f27358a77b5713ff7c2952527427b9b4313b37e1804f36a",
+        "entryIds": ["ja:word:iru-exist"],
+        "observation": "Cat present in room; animate existence requires sentence context.",
+        "decision": "retain-with-existing-example",
+        "rationale": "The visible scene supports the stated sense; existing ordered example and localized meaning supply missing linguistic context.",
+        "existingDefinitions": [
+            {
+                "de": "zu da sein (belebt)",
+                "en": "to exist (animate)",
+                "id": "untuk ada (makhluk hidup)",
+                "ja": "〜いる"
+            }
+        ],
+        "existingExamples": [
+            {
+                "entryId": "ja:sentence:dakedo-neko-wa-koko-ni-iru",
+                "label": "だけど猫はここにいる"
+            },
+            {
+                "entryId": "ja:sentence:neko-wa-koko-ni-iru",
+                "label": "猫はここにいる"
+            },
+            {
+                "entryId": "ja:sentence:inu-wa-soko-ni-iru",
+                "label": "犬はそこにいる"
+            },
+            {
+                "entryId": "ja:sentence:tomodachi-wa-soko-ni-iru",
+                "label": "友達はそこにいる"
+            }
+        ],
+        "audioListening": "pending-not-claimed"
+    },
+    {
+        "assetId": "7c0598ef353ca1523b60e799b4e5e190081bb87da0dba67dad7415c9d2d61cbd",
+        "entryIds": ["ja:word:aru-exist"],
+        "observation": "Vase present on table; inanimate existence requires sentence context.",
+        "decision": "retain-with-existing-example",
+        "rationale": "The visible scene supports the stated sense; existing ordered example and localized meaning supply missing linguistic context.",
+        "existingDefinitions": [
+            {
+                "de": "zu vorhanden sein (unbelebt)",
+                "en": "to exist (inanimate)",
+                "id": "untuk ada (benda mati)",
+                "ja": "〜ある"
+            }
+        ],
+        "existingExamples": [
+            {
+                "entryId": "ja:sentence:mizu-wa-koko-ni-aru",
+                "label": "水はここにある"
+            }
+        ],
+        "audioListening": "pending-not-claimed"
+    },
+    {
+        "assetId": "06fbec748474facb1c6c61f74ca25b15a8ca277dd2864891ffa6ac097ef783ea",
+        "entryIds": ["ja:word:desu"],
+        "observation": "Child with apple and matching picture may support identification; politeness cannot be inferred visually.",
+        "decision": "retain-with-existing-example",
+        "rationale": "Localized polite label and existing polite sentences supply register; image only supports identification.",
+        "existingDefinitions": [
+            {
+                "de": "sein (höflich)",
+                "en": "to be (polite)",
+                "id": "adalah (sopan)",
+                "ja": "です"
+            }
+        ],
+        "existingExamples": [
+            {
+                "entryId": "ja:sentence:gakkou-wa-doko-desu",
+                "label": "学校はどこですか"
+            },
+            {
+                "entryId": "ja:sentence:hana-wa-totemo-kirei",
+                "label": "花はとてもきれいです"
+            },
+            {
+                "entryId": "ja:sentence:kuruma-wa-doko-desu",
+                "label": "車はどこですか"
+            }
+        ],
+        "audioListening": "pending-not-claimed"
+    },
+    {
+        "assetId": "25b4ed0e599a79b7441031f7a433162beaffa21ff347ce7e3be5258ba8990aa6",
+        "entryIds": ["ja:word:da-copula"],
+        "observation": "Doctor with matching portrait may support identity; plain register cannot be inferred visually.",
+        "decision": "retain-with-existing-example",
+        "rationale": "Localized plain-form label and existing 私は学生だ example supply register; image only supports identity.",
+        "existingDefinitions": [
+            {
+                "de": "sein (einfach)",
+                "en": "to be (plain)",
+                "id": "adalah (biasa)",
+                "ja": "〜だ"
+            }
+        ],
+        "existingExamples": [
+            {
+                "entryId": "ja:sentence:watashi-wa-gakusei-da",
+                "label": "私は学生だ"
+            }
+        ],
+        "audioListening": "pending-not-claimed"
+    }
+]

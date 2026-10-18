@@ -1,0 +1,39 @@
+{
+    "id": "ja:sentence:travel-arrived-station",
+    "label": "えきについた",
+    "reading": "えきについた",
+    "meanings": {
+        "en": "I arrived at the station.",
+        "de": "Ich bin am Bahnhof angekommen.",
+        "id": "Saya telah tiba di stasiun.",
+        "ja": "駅に着いた。"
+    },
+    "orderedComposition": [
+        {
+            "position": 0,
+            "entryId": "ja:word:travel-station",
+            "recordStatus": "staged",
+            "selectedForm": null,
+            "surface": "えき",
+            "reading": "えき"
+        },
+        {
+            "position": 1,
+            "entryId": "ja:particle:ni",
+            "recordStatus": "existing",
+            "selectedForm": null,
+            "surface": "に",
+            "reading": "に"
+        },
+        {
+            "position": 2,
+            "entryId": "ja:word:travel-arrive",
+            "recordStatus": "staged",
+            "selectedForm": "past",
+            "surface": "ついた",
+            "reading": "ついた"
+        }
+    ],
+    "sentenceAudio": "pending-exact-selected-constituent-PCM-and-listening",
+    "media": null
+}

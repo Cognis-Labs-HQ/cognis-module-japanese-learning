@@ -1,0 +1,98 @@
+[
+    {
+        "catalogIndex": 96,
+        "assetId": "46283d677752f3b1be901f5f62e85a75a325c237aa4f0786c6e4f6e46db11160",
+        "path": "images/46283d677752f3b1be901f5f62e85a75a325c237aa4f0786c6e4f6e46db11160.jpg",
+        "sha256": "46283d677752f3b1be901f5f62e85a75a325c237aa4f0786c6e4f6e46db11160",
+        "entryIds": ["ja:word:neck"],
+        "targetLabels": {
+            "en": "neck",
+            "de": "Hals",
+            "id": "leher",
+            "ja": "首"
+        },
+        "status": "pass",
+        "observation": "Person points to neck.",
+        "nextAction": "Eligible for existing concept; review again if target meaning or image bytes change."
+    },
+    {
+        "catalogIndex": 97,
+        "assetId": "8976a62a3182f8f36112c807373f1f9a9a7691afd1c6f4034b563b36e21966ba",
+        "path": "images/8976a62a3182f8f36112c807373f1f9a9a7691afd1c6f4034b563b36e21966ba.jpg",
+        "sha256": "8976a62a3182f8f36112c807373f1f9a9a7691afd1c6f4034b563b36e21966ba",
+        "entryIds": ["ja:word:back"],
+        "targetLabels": {
+            "en": "back",
+            "de": "Rücken",
+            "id": "punggung",
+            "ja": "背中"
+        },
+        "status": "pass",
+        "observation": "Rear torso focuses on back.",
+        "nextAction": "Eligible for existing concept; review again if target meaning or image bytes change."
+    },
+    {
+        "catalogIndex": 98,
+        "assetId": "8a1cd5e2dec7084ad0e9baa4655c465edea18227965e0c26bb17bb43f7a7e1f7",
+        "path": "images/8a1cd5e2dec7084ad0e9baa4655c465edea18227965e0c26bb17bb43f7a7e1f7.jpg",
+        "sha256": "8a1cd5e2dec7084ad0e9baa4655c465edea18227965e0c26bb17bb43f7a7e1f7",
+        "entryIds": ["ja:word:stomach"],
+        "targetLabels": {
+            "en": "stomach",
+            "de": "Bauch",
+            "id": "perut",
+            "ja": "お腹"
+        },
+        "status": "context-required",
+        "observation": "Hand and glow over belly match おなか; internal stomach organ not shown.",
+        "nextAction": "Retain sense/context qualification; do not treat illustration as proof of grammatical form."
+    },
+    {
+        "catalogIndex": 99,
+        "assetId": "f284cc3ce0b1caf18e205c469288c1a7a35a62ed90f569548152a91ab09ab9d1",
+        "path": "images/f284cc3ce0b1caf18e205c469288c1a7a35a62ed90f569548152a91ab09ab9d1.jpg",
+        "sha256": "f284cc3ce0b1caf18e205c469288c1a7a35a62ed90f569548152a91ab09ab9d1",
+        "entryIds": ["ja:word:shoulder"],
+        "targetLabels": {
+            "en": "shoulder",
+            "de": "Schulter",
+            "id": "bahu",
+            "ja": "肩"
+        },
+        "status": "pass",
+        "observation": "Finger and glow identify shoulder.",
+        "nextAction": "Eligible for existing concept; review again if target meaning or image bytes change."
+    },
+    {
+        "catalogIndex": 100,
+        "assetId": "445a3dfcbc43faed64e1f785be377d33afb448287c0e61cb5f8bc4b40359cfec",
+        "path": "images/445a3dfcbc43faed64e1f785be377d33afb448287c0e61cb5f8bc4b40359cfec.jpg",
+        "sha256": "445a3dfcbc43faed64e1f785be377d33afb448287c0e61cb5f8bc4b40359cfec",
+        "entryIds": ["ja:word:knee"],
+        "targetLabels": {
+            "en": "knee",
+            "de": "Knie",
+            "id": "lutut",
+            "ja": "膝"
+        },
+        "status": "pass",
+        "observation": "Arrow points to bent knee.",
+        "nextAction": "Eligible for existing concept; review again if target meaning or image bytes change."
+    },
+    {
+        "catalogIndex": 101,
+        "assetId": "4fdc59df67b5522718d9458ea38d94f5feab60842731c1c3f790cf5527f65898",
+        "path": "images/4fdc59df67b5522718d9458ea38d94f5feab60842731c1c3f790cf5527f65898.jpg",
+        "sha256": "4fdc59df67b5522718d9458ea38d94f5feab60842731c1c3f790cf5527f65898",
+        "entryIds": ["ja:word:skin"],
+        "targetLabels": {
+            "en": "skin",
+            "de": "Haut",
+            "id": "kulit",
+            "ja": "肌"
+        },
+        "status": "pass",
+        "observation": "Magnified skin patch on arm.",
+        "nextAction": "Eligible for existing concept; review again if target meaning or image bytes change."
+    }
+]

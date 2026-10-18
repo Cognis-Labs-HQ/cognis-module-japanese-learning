@@ -1,0 +1,39 @@
+{
+    "id": "ja:sentence:travel-depart-airport",
+    "label": "くうこうからしゅっぱつします",
+    "reading": "くうこうからしゅっぱつします",
+    "meanings": {
+        "en": "I depart from the airport.",
+        "de": "Ich reise vom Flughafen ab.",
+        "id": "Saya berangkat dari bandara.",
+        "ja": "空港から出発します。"
+    },
+    "orderedComposition": [
+        {
+            "position": 0,
+            "entryId": "ja:word:travel-airport",
+            "recordStatus": "staged",
+            "selectedForm": null,
+            "surface": "くうこう",
+            "reading": "くうこう"
+        },
+        {
+            "position": 1,
+            "entryId": "ja:particle:kara",
+            "recordStatus": "existing",
+            "selectedForm": null,
+            "surface": "から",
+            "reading": "から"
+        },
+        {
+            "position": 2,
+            "entryId": "ja:word:travel-depart",
+            "recordStatus": "staged",
+            "selectedForm": "polite",
+            "surface": "しゅっぱつします",
+            "reading": "しゅっぱつします"
+        }
+    ],
+    "sentenceAudio": "pending-exact-selected-constituent-PCM-and-listening",
+    "media": null
+}

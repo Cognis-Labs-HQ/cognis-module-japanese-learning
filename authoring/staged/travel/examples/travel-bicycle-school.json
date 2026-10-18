@@ -1,0 +1,55 @@
+{
+    "id": "ja:sentence:travel-bicycle-school",
+    "label": "じてんしゃで学校に行く",
+    "reading": "じてんしゃでがっこうにいく",
+    "meanings": {
+        "en": "I go to school by bicycle.",
+        "de": "Ich fahre mit dem Fahrrad zur Schule.",
+        "id": "Saya pergi ke sekolah dengan sepeda.",
+        "ja": "自転車で学校に行く。"
+    },
+    "orderedComposition": [
+        {
+            "position": 0,
+            "entryId": "ja:word:travel-bicycle",
+            "recordStatus": "staged",
+            "selectedForm": null,
+            "surface": "じてんしゃ",
+            "reading": "じてんしゃ"
+        },
+        {
+            "position": 1,
+            "entryId": "ja:particle:de",
+            "recordStatus": "existing",
+            "selectedForm": null,
+            "surface": "で",
+            "reading": "で"
+        },
+        {
+            "position": 2,
+            "entryId": "ja:word:gakkou",
+            "recordStatus": "existing",
+            "selectedForm": null,
+            "surface": "学校",
+            "reading": "がっこう"
+        },
+        {
+            "position": 3,
+            "entryId": "ja:particle:ni",
+            "recordStatus": "existing",
+            "selectedForm": null,
+            "surface": "に",
+            "reading": "に"
+        },
+        {
+            "position": 4,
+            "entryId": "ja:word:iku",
+            "recordStatus": "existing",
+            "selectedForm": null,
+            "surface": "行く",
+            "reading": "いく"
+        }
+    ],
+    "sentenceAudio": "pending-exact-selected-constituent-PCM-and-listening",
+    "media": null
+}

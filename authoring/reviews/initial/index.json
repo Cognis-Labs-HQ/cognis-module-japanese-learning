@@ -1,0 +1,27 @@
+{
+    "schemaVersion": 1,
+    "reviewDate": "2026-10-18",
+    "repository": "Cognis-Labs-HQ/cognis-module-japanese-learning",
+    "reviewedHead": "cefc4fb0820faeb1738b6c84788ad0049f47c6a7",
+    "method": "Actual model visual inspection using view_image of indexed contact sheets; individual/full-size follow-up for English crop defects and please mismatch. Every catalog image was displayed and reviewed. Checksums bind observations to bytes, not perceptual approval.",
+    "scope": "Visual semantic review only. Audio listening remains pending. Existing published files were not edited by this audit.",
+    "statusDefinitions": {
+        "pass": "Visible concept representative for target lexical sense.",
+        "context-required": "Representative only with stated sense/context; not approved as an unambiguous standalone cue.",
+        "reject": "Visible mismatch, material crop defect, or inadequate semantic cue; do not reuse in new content before correction and reinspection."
+    },
+    "counts": {
+        "pass": 73,
+        "context-required": 27,
+        "reject": 2
+    },
+    "assetFiles": [
+        "authoring/reviews/initial/001.json",
+        "authoring/reviews/initial/002.json",
+        "authoring/reviews/initial/003.json",
+        "authoring/reviews/initial/004.json",
+        "authoring/reviews/initial/005.json",
+        "authoring/reviews/initial/006.json",
+        "authoring/reviews/initial/007.json"
+    ]
+}

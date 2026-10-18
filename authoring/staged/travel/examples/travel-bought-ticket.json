@@ -1,0 +1,39 @@
+{
+    "id": "ja:sentence:travel-bought-ticket",
+    "label": "きっぷをかいました",
+    "reading": "きっぷをかいました",
+    "meanings": {
+        "en": "I bought a ticket.",
+        "de": "Ich habe eine Fahrkarte gekauft.",
+        "id": "Saya telah membeli tiket.",
+        "ja": "きっぷを買いました。"
+    },
+    "orderedComposition": [
+        {
+            "position": 0,
+            "entryId": "ja:word:travel-ticket",
+            "recordStatus": "staged",
+            "selectedForm": null,
+            "surface": "きっぷ",
+            "reading": "きっぷ"
+        },
+        {
+            "position": 1,
+            "entryId": "ja:particle:wo",
+            "recordStatus": "existing",
+            "selectedForm": null,
+            "surface": "を",
+            "reading": "を"
+        },
+        {
+            "position": 2,
+            "entryId": "ja:word:travel-buy",
+            "recordStatus": "staged",
+            "selectedForm": "polite-past",
+            "surface": "かいました",
+            "reading": "かいました"
+        }
+    ],
+    "sentenceAudio": "pending-exact-selected-constituent-PCM-and-listening",
+    "media": null
+}

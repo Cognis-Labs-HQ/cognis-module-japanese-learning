@@ -3,7 +3,7 @@
     "source": "OpenAI image generation",
     "style": "anime",
     "generatedOn": "2026-10-18",
-    "processing": "Individual panels cropped from generated illustration sheets and encoded as JPEG; no source photographs used.",
+    "processing": "Original panels cropped from generated sheets and standalone replacements converted whole to JPEG; per-image crop and generation metadata record provenance. No source photographs used.",
     "images": [
         {
             "id": "241f87c046b741b7a1d00efc6674a6080ec8081b860680ebd2d6f1ff87c647a2",
@@ -728,21 +728,28 @@
             }
         },
         {
-            "id": "9dd43f72da852151c264bc6d7881f12bcd8ba271129604e37f1adbf43b04dbd0",
-            "path": "images/9dd43f72da852151c264bc6d7881f12bcd8ba271129604e37f1adbf43b04dbd0.jpg",
-            "sha256": "9dd43f72da852151c264bc6d7881f12bcd8ba271129604e37f1adbf43b04dbd0",
-            "width": 308,
-            "height": 306,
+            "id": "420781ec7b71ef4f59a760a34182fc243ae9fad0db7ae7ae68b204b454a73588",
+            "path": "images/420781ec7b71ef4f59a760a34182fc243ae9fad0db7ae7ae68b204b454a73588.jpg",
+            "sha256": "420781ec7b71ef4f59a760a34182fc243ae9fad0db7ae7ae68b204b454a73588",
+            "width": 1254,
+            "height": 1254,
             "entryIds": ["ja:word:totemo"],
-            "sourceSheet": "cc3a309967760059e7cee696c1f399a60795348160b79786f00f7d61a9004d39",
-            "sourceSha256": "cc3a309967760059e7cee696c1f399a60795348160b79786f00f7d61a9004d39",
-            "crop": [630, 310, 308, 306],
+            "sourceSheet": "da8f2a342ae5af4886f769d7c14c63317876155a97d03650e1cc29e1f44c0bb4",
+            "sourceSha256": "da8f2a342ae5af4886f769d7c14c63317876155a97d03650e1cc29e1f44c0bb4",
+            "crop": [0, 0, 1254, 1254],
             "metadata": {
                 "labels": {
                     "en": "very",
                     "de": "sehr",
                     "id": "sangat",
                     "ja": "とても"
+                },
+                "generation": {
+                    "provider": "OpenAI built-in image generation",
+                    "generatedOn": "2026-10-18",
+                    "sourceDimensions": [1254, 1254],
+                    "processing": "Whole standalone source converted to JPEG with FFmpeg q:v 4; no crop or resize.",
+                    "replacesSha256": "9dd43f72da852151c264bc6d7881f12bcd8ba271129604e37f1adbf43b04dbd0"
                 }
             }
         },
@@ -956,21 +963,28 @@
             }
         },
         {
-            "id": "1c8e8f2c27ade72752aad214535da77e43da98ded919a887578a360e25f4a585",
-            "path": "images/1c8e8f2c27ade72752aad214535da77e43da98ded919a887578a360e25f4a585.jpg",
-            "sha256": "1c8e8f2c27ade72752aad214535da77e43da98ded919a887578a360e25f4a585",
-            "width": 308,
-            "height": 307,
+            "id": "a96dd172687194193ec7607b2c13e7212c0ef69bf5371a02630696aaa8796682",
+            "path": "images/a96dd172687194193ec7607b2c13e7212c0ef69bf5371a02630696aaa8796682.jpg",
+            "sha256": "a96dd172687194193ec7607b2c13e7212c0ef69bf5371a02630696aaa8796682",
+            "width": 1254,
+            "height": 1254,
             "entryIds": ["ja:word:shikashi"],
-            "sourceSheet": "9ba518c81aaaea9e783ab4436dd62b11e49848a35d9e2993dd4aba8503a96024",
-            "sourceSha256": "9ba518c81aaaea9e783ab4436dd62b11e49848a35d9e2993dd4aba8503a96024",
-            "crop": [630, 3, 308, 307],
+            "sourceSheet": "27cb6b52a46b28a0b51320d9feaaec89654a5937b09c8ab673d44562b5965afb",
+            "sourceSha256": "27cb6b52a46b28a0b51320d9feaaec89654a5937b09c8ab673d44562b5965afb",
+            "crop": [0, 0, 1254, 1254],
             "metadata": {
                 "labels": {
                     "en": "however",
                     "de": "jedoch",
                     "id": "namun",
                     "ja": "しかし"
+                },
+                "generation": {
+                    "provider": "OpenAI built-in image generation",
+                    "generatedOn": "2026-10-18",
+                    "sourceDimensions": [1254, 1254],
+                    "processing": "Whole standalone source converted to JPEG with FFmpeg q:v 6; no crop or resize.",
+                    "replacesSha256": "1c8e8f2c27ade72752aad214535da77e43da98ded919a887578a360e25f4a585"
                 }
             }
         },
