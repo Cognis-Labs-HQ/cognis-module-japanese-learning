@@ -1,3 +1,4 @@
+import { declarationSpacingIssues } from "./declaration-spacing.mjs";
 import { readFileSync, readdirSync, statSync } from "node:fs";
 import { join, relative, resolve } from "node:path";
 
@@ -20,6 +21,12 @@ function walk(directory) {
             continue;
         }
         const source = readFileSync(path, "utf8");
+        if (/\.js$/.test(path) && !path.includes("/tooling/")) {
+            for (const line of declarationSpacingIssues(source))
+                violations.push(
+                    `${relative(ROOT, path)}:${line}: declarations require a blank-line boundary`,
+                );
+        }
         if (source.includes("\t")) {
             violations.push(
                 `${relative(ROOT, path)}: contains tab indentation`,

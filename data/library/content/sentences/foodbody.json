@@ -1,0 +1,132 @@
+[
+    {
+        "id": "ja:sentence:strawberry-eat",
+        "label": "いちごを食べる",
+        "class": "composite",
+        "references": [
+            {
+                "entryId": "ja:word:strawberry",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:taberu",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:def:sentence-strawberry-eat",
+                "relation": "definitions"
+            }
+        ],
+        "fields": {
+            "pronunciation": ["いちごをたべる"],
+            "audio": "audio/9deda7907ce8e18eb249eb4e31996753d64fc5d7c660980b971fcf5c03d5e43f.wav"
+        }
+    },
+    {
+        "id": "ja:sentence:soup-drink",
+        "label": "スープを飲む",
+        "class": "composite",
+        "references": [
+            {
+                "entryId": "ja:word:soup",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:nomu",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:def:sentence-soup-drink",
+                "relation": "definitions"
+            }
+        ],
+        "fields": {
+            "pronunciation": ["すーぷをのむ"],
+            "audio": "audio/81fa93723c62a4fa77bb0946f469791a88f1c279b5a53eedf9804e4a6cd4fe12.wav"
+        }
+    },
+    {
+        "id": "ja:sentence:eye-big",
+        "label": "めが大きい",
+        "class": "composite",
+        "references": [
+            {
+                "entryId": "ja:word:eye",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:ga",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:ookii",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:def:sentence-eye-big",
+                "relation": "definitions"
+            }
+        ],
+        "fields": {
+            "pronunciation": ["めがおおきい"],
+            "audio": "audio/7ba40d9c5f96b8b56cb080096a9fe52e45262c43cf643b6f9ad47973fecc1d3a.wav"
+        }
+    },
+    {
+        "id": "ja:sentence:meat-cheese-like",
+        "label": "にくとチーズが好き",
+        "class": "composite",
+        "references": [
+            {
+                "entryId": "ja:word:meat",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:to",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:cheese",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:ga",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:suki",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:def:sentence-meat-cheese-like",
+                "relation": "definitions"
+            }
+        ],
+        "fields": {
+            "pronunciation": ["にくとちーずがすき"],
+            "audio": "audio/3cb18f3593dfcbcf1dc4306c107e82ab1b87e9e639ab41e65de73a88464dcea7.wav"
+        }
+    }
+]

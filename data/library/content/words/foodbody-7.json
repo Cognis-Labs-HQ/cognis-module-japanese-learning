@@ -1,0 +1,62 @@
+[
+    {
+        "id": "ja:word:knee",
+        "label": "ひざ",
+        "class": "lexical:noun",
+        "tags": ["noun", "beginner", "body"],
+        "fields": {
+            "pronunciation": ["ひざ"],
+            "audio": "audio/88194a828861900676762069e51dd27660579a4439566acd53cc273600349219.wav",
+            "reference_images": [
+                "images/445a3dfcbc43faed64e1f785be377d33afb448287c0e61cb5f8bc4b40359cfec.jpg"
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:def:foodbody-knee",
+                "relation": "definitions"
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-knee",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:skin",
+        "label": "はだ",
+        "class": "lexical:noun",
+        "tags": ["noun", "beginner", "body"],
+        "fields": {
+            "pronunciation": ["はだ"],
+            "audio": "audio/44182443f6cb015c0369114bcdf616e26565e69dd0d671bc1e7c2a65bf50a528.wav",
+            "reference_images": [
+                "images/4fdc59df67b5522718d9458ea38d94f5feab60842731c1c3f790cf5527f65898.jpg"
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:def:foodbody-skin",
+                "relation": "definitions"
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-skin",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    }
+]
