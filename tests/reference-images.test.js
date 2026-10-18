@@ -25,6 +25,7 @@ test("reference illustrations use the existing image-list contract and language-
         for (const locale of ["en", "de", "id", "ja"])
             assert.ok(field.metadata.labels[locale]);
     }
+    assert.equal(catalog.version, 3);
     assert.equal(catalog.source, "OpenAI image generation");
     assert.equal(
         catalog.style,
@@ -61,12 +62,16 @@ test("illustration JPEGs have verified bytes, crop provenance and complete bundl
         catalog.images.map((image) => image.path.slice(7)).sort(),
     );
     for (const image of catalog.images) {
-        assert.match(image.path, /^images\/[a-z-]+\.jpg$/);
-        assert.ok(image.title);
-        assert.match(
-            image.sourceSheet,
-            new RegExp(`^${schema.language}-art-sheet-\\d{2}$`),
-        );
+        assert.match(image.path, /^images\/[a-f0-9]{64}\.jpg$/);
+        assert.equal(image.id, image.sha256);
+        assert.equal(image.path, `images/${image.id}.jpg`);
+        for (const locale of ["en", "de", "id", "ja"]) {
+            assert.ok(
+                image.metadata.labels[locale]?.trim(),
+                `${image.id}:${locale}`,
+            );
+        }
+        assert.equal(image.sourceSheet, image.sourceSha256);
         assert.match(image.sourceSha256, /^[a-f0-9]{64}$/);
         assert.equal(image.crop.length, 4);
         assert.equal(image.width, image.crop[2]);
@@ -87,5 +92,26 @@ test("illustration JPEGs have verified bytes, crop provenance and complete bundl
         const card = entries.get(image.entryIds[0]);
         assert.ok(card && !card.hidden, image.entryIds[0]);
         assert.ok(card.fields.reference_images.includes(image.path), card.id);
+    }
+});
+
+test("illustration labels use the card's authored meanings in all supported locales", async () => {
+    const definitions = new Map(
+        (await readContentLayers("data/library/content", ["definitions"]))
+            .get("definitions")
+            .map((record) => [record.id, record]),
+    );
+    for (const image of catalog.images) {
+        const card = entries.get(image.entryIds[0]);
+        const meanings = card.references
+            .filter(({ relation }) => relation === "definitions")
+            .map(({ entryId }) => definitions.get(entryId));
+        for (const locale of ["en", "de", "id", "ja"])
+            assert.equal(
+                image.metadata.labels[locale],
+                meanings
+                    .map((meaning) => meaning.fields.translations[locale])
+                    .join("; "),
+            );
     }
 });
