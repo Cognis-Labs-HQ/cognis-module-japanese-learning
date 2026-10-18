@@ -290,3 +290,4 @@ Der Katalogleser erhält seine Normalisierungsregel vom Sprachanbieter: NFC für
 - [e4c848b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/e4c848bcb8d331facdd92f4696b1009de4f1f1d9)
 - [544892a](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/544892a8987304d982b2953676f5ddc39eb9c728)
 - [63629ce](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/63629ced95d53d31a2621d2bca5d0bbf55a1dceb)
+- [f622269](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/f62226988d84c4f05100729795f8a15a6b4d828b)
