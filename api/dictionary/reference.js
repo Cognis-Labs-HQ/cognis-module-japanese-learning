@@ -1,3 +1,4 @@
+import { mergeReferenceRecords } from "./reference-records.js";
 import { createReferenceCatalog } from "./catalog.js";
 import { loadNativeContent, jishoSuggestion } from "./index.js";
 
@@ -33,6 +34,7 @@ export function createReferenceProvider({
                 !/^\p{Script=Han}$/u.test(label)
             )
                 return [];
+            label = label.normalize("NFKC");
             const records = await lookup(label);
             if (!records.length) return [];
             content ??= loadNativeContent(contentRoot).catch((error) => {
@@ -49,7 +51,7 @@ export function createReferenceProvider({
                 throw new Error("japanese_reference_content_unavailable");
             });
             const index = await content;
-            return records
+            return [mergeReferenceRecords(records, label)]
                 .map(
                     (record) =>
                         jishoSuggestion(

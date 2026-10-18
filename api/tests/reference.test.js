@@ -135,3 +135,47 @@ test("reference content loading recovers after a transient local failure", async
         await rm(root, { recursive: true, force: true });
     }
 });
+
+test("colliding catalog records produce one identity with merged meanings and complete references", async () => {
+    const provider = createReferenceProvider({
+        referenceRoot: "data/reference",
+        contentRoot: "data/library/content",
+        metadata: manifest.metadata,
+        source: manifest.source,
+        cacheRevision: "merged",
+    });
+    const japanese = manifest.language === "ja";
+    const input = {
+        layer: { id: japanese ? "alt-characters" : "words" },
+        label: japanese ? "神" : "mare",
+    };
+    const results = await provider.lookup(input);
+    assert.equal(results.length, 1);
+    const definitions = results[0].definitions.map(
+        (definition) => definition.translations.en,
+    );
+    if (japanese) {
+        assert.ok(definitions.includes("spirit"));
+        assert.ok(definitions.includes("gods"));
+        assert.ok(results[0].referenceGroups.readings.length >= 14);
+        assert.equal(results[0].fields.pronunciation[0], "かみ");
+        const equivalent = await provider.lookup({ ...input, label: "神" });
+        assert.equal(equivalent[0].provenance, results[0].provenance);
+        assert.equal(equivalent[0].label, "神");
+    } else {
+        assert.ok(
+            definitions.some((value) =>
+                /female.*horse|female equine/i.test(value),
+            ),
+        );
+        assert.ok(definitions.some((value) => /moon|lunar/i.test(value)));
+        assert.ok(
+            results[0].references.some(
+                ({ relation }) => relation === "spelling",
+            ),
+        );
+    }
+    assert.ok(
+        JSON.parse(results[0].fields.dictionary_data).records.length >= 2,
+    );
+});

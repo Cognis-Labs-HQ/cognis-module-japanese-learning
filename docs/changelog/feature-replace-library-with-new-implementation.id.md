@@ -943,6 +943,10 @@ Naikkan versi paket konten Inggris dan Jepang saat menghapus rekaman bawaan. Sel
 
 Seluruh 3273 rekaman dalam paket kini memakai suara ElevenLabs yang dikonfigurasi untuk bahasa ini. Bacaan yang ditulis, identitas kartu, jeda awal, dan komposisi kalimat berirama tetap dipertahankan. Alat pembuatan menggunakan kredensial lingkungan, cache respons API yang dapat dilanjutkan, dan penggantian berkas atomik; paket tidak berisi kredensial. Inventaris, atribusi, revisi konten, dan hash integritas mencerminkan rekaman baru.
 
+## Tinjauan Akhir dan Akses Bahasa Nonaktif
+
+Pencopotan menghapus konfigurasi suara tanpa bergantung pada retensi konten. Penonaktifan menghapus rute modul, UI statis, dan registrasi penyedia; konfigurasi bertahan saat dinonaktifkan atau dimulai ulang dan hanya dilayani ketika aktif. Cognis membatasi skema, kartu, dan media tersimpan menurut penyedia bahasa aktif serta memulihkan akses saat diaktifkan kembali. Hasil referensi menggabungkan identitas sumber setara sambil mempertahankan rekaman sumber, urutan bacaan, dan makna. Kalimat paket mengutamakan PCM komposisi persis dari klip penyusun, sebelum rekaman langsung yang disimpan terpisah. Permintaan suara memvalidasi teks bahasa ternormalisasi dengan batas panjang; KanjiVG membatalkan isi respons gagal dan menerima tanda vokal panjang.
+
 ## Komit
 
 - [b41da01](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/b41da011d6026d909c55369d3598e8334bbffe94) — Menyelaraskan penanda transformasi dengan Cognis.

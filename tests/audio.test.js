@@ -325,17 +325,26 @@ test("small-kana lexical recordings use explicit Japanese requests and retain th
     assert.ok(school.inputs.some((input) => input.readings[0] === "がっこう"));
 });
 
-test("direct sentence recordings take priority over constituent composition and runtime synthesis", async () => {
+test("packaged sentence playback preserves exact constituent composition without runtime synthesis", async () => {
     const provider = makeProvider(() => {
         throw new Error("unexpected_synthesis");
     });
     assert.equal(inventory.sentences.length, inventory.compositions.length);
     for (const sentence of inventory.sentences) {
-        assert.equal(entries.get(sentence.entryId).fields.audio, sentence.path);
+        const composition = inventory.compositions.find(
+            (item) => item.entryId === sentence.entryId,
+        );
+        assert.equal(
+            entries.get(sentence.entryId).fields.audio,
+            composition.path,
+        );
         assert.equal(sentence.voiceId, inventory.voiceId);
         assert.equal(sentence.request.text, sentence.inputs[0].label);
         const result = await provider.fetchAudio(sentence.inputs[0]);
-        assert.deepEqual(Buffer.from(result.data), assets.get(sentence.path));
+        assert.deepEqual(
+            Buffer.from(result.data),
+            assets.get(composition.path),
+        );
     }
 });
 

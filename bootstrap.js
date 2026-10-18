@@ -1,3 +1,4 @@
+import { Configuration } from "./api/configuration.js";
 import { readAudioInventory } from "./api/audio/inventory.js";
 import { createAudioProvider } from "./api/audio/index.js";
 import { createReferenceProvider } from "./api/dictionary/reference.js";
@@ -37,6 +38,24 @@ const LANGUAGE = Object.freeze({
 });
 
 export async function uninstallModule(ctx, { deleteContent }) {
+    try {
+        const configuration = new Configuration(
+            ctx.getCapability("db:executor"),
+        );
+        await configuration.load();
+        await configuration.clear();
+        ctx.log?.("info", "Study voice configuration cleared on uninstall.", {
+            component: "study-language-ja",
+            operation: "clear_configuration",
+        });
+    } catch (error) {
+        ctx.log?.("error", "Study uninstall configuration cleanup failed.", {
+            component: "study-language-ja",
+            operation: "clear_configuration",
+            errorName: error instanceof Error ? error.name : "Error",
+        });
+        throw error;
+    }
     if (!deleteContent) {
         ctx.log?.("info", "Japanese language pack content retained.", {
             component: "study-language-ja",

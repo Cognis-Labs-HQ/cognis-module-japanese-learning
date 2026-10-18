@@ -240,7 +240,7 @@ Der geprüfte Anfängerstapel ergänzt `ここ`, `そこ`, `どこ`, `いる`, `
 
 ## Destruktive Deinstallationsbereinigung
 
-Die nur Administratoren erlaubten Routen `GET`, `PUT` und `DELETE /api/v1/modules/study-language-ja/config` bleiben bei deaktiviertem Modul verfügbar. GET liest die gespeicherte `voiceId`; PUT prüft und speichert sie in `module_study_language_ja_config`, auch über Neustarts und erneutes Aktivieren hinweg. DELETE löscht ausschließlich diese Konfiguration. Alle drei liefern HTTP 200 mit einem JSON-Datenumschlag; Lerninhalte werden dabei nicht gelöscht. Anbieter werden bei Deaktivierung oder fehlgeschlagenem Start entfernt. Die Deinstallation behält Inhalte, sofern nicht `deleteContent: true` die transaktionale Host-Operation `deleteContentPack` anfordert. Fehler werden weitergegeben und sicher strukturiert protokolliert.
+Die Konfigurationsrouten GET, PUT und DELETE für Administratoren werden nur beim Start des aktivierten Moduls registriert. Das Modul hat keinen Laufzeiteinstieg für den deaktivierten Zustand. Stimmeneinstellungen bleiben bei Deaktivierung und Neustart erhalten und werden unabhängig von den Lerninhalten bei der Deinstallation gelöscht.
 
 ## Definitionen auf Wortschatzkarten
 
@@ -326,7 +326,7 @@ Study stellt öffentliche Ausspracheklassifizierung und Stile für Library-Vorsc
 
 ## Aufbau der Study-Module
 
-Das Inhaltspaket liegt in `data/library/`, Startdecks in `data/starter-decks.json`. Anbieter liegen in `api/dictionary/` und `api/strokes/`, deterministisches Laden und bytebegrenzte Antwortdekodierung in `api/reuse/`. Übergreifende Tests liegen in `tests/`, API-Tests in `api/tests/`. Das Manifest deklariert `api/routes/config/index.js` als `disabledApi`: Im deaktivierten Zustand registriert dieser Einstiegspunkt administrative GET-, PUT- und DELETE-Konfigurationsrouten, ohne Inhalte einzulesen oder Anbieter zu aktivieren. Veröffentlichte Ablaufkennungen bleiben stabil.
+Die Konfigurationsrouten GET, PUT und DELETE für Administratoren werden nur beim Start des aktivierten Moduls registriert. Das Modul hat keinen Laufzeiteinstieg für den deaktivierten Zustand. Stimmeneinstellungen bleiben bei Deaktivierung und Neustart erhalten und werden unabhängig von den Lerninhalten bei der Deinstallation gelöscht.
 
 ## Vollständige Wörterbuch- und Schriftgraphen
 
@@ -350,8 +350,12 @@ Jede Ebene stellt das optionale Referenzbildfeld im Karteneditor und in der Deta
 
 ## Explizite Katalognormalisierung und Satzkompositionen
 
-Der Katalogleser erhält seine Normalisierungsregel vom Sprachanbieter: NFC für Englisch, NFKC für Japanisch. Gemeinsamer Suchcode verzweigt nicht mehr nach einer bestimmten Sprache. Die Inventare heißen `sentence-compositions`; jeder Eintrag beschreibt eine echte paketierte Aufnahme aus geordneten Einzelaufnahmen. Direkte neuronale Satzaufnahmen bleiben getrennt und haben Wiedergabevorrang.
+Der Katalogleser erhält seine Normalisierungsregel vom Sprachanbieter: NFC für Englisch, NFKC für Japanisch. Gemeinsamer Suchcode verzweigt nicht mehr nach einer bestimmten Sprache. Die Inventare heißen `sentence-compositions`; jeder Eintrag beschreibt eine echte paketierte Aufnahme aus geordneten Einzelaufnahmen. Zusammengesetzte Satzaufnahmen haben Wiedergabevorrang; direkte neuronale Aufnahmen bleiben getrennt im Inventar.
 
 ## Lokalisierte Bildbezeichnungen und neutrale Dateinamen
 
 Dateinamen und IDs der Illustrationen verwenden ihren SHA-256-Hash; Quellblätter verwenden den Hash ihrer Quelldaten. Die Katalogmetadaten liefern deutsche, englische, indonesische und japanische Bezeichnungen aus den vorhandenen Bedeutungen der Karten. Anzeige und neutrale Speicherkennung sind getrennt. Bilddaten und Kartenidentitäten bleiben unverändert; Inhaltsrevisionen aktualisieren alle Bildverweise.
+
+## Abschließende Prüfung und Zugriff bei deaktivierter Sprache
+
+Die Deinstallation löscht gespeicherte Stimmeneinstellungen unabhängig vom Erhalt der Lerninhalte. Deaktivieren entfernt Modulrouten, statische Oberflächen und Anbieterregistrierungen; Einstellungen überstehen Deaktivierung und Neustarts und sind nur im aktivierten Zustand erreichbar. Cognis sperrt gespeicherte Schemata, Karten und Medien anhand des aktiven Sprachanbieters und stellt den Zugriff beim Aktivieren wieder her. Referenzergebnisse vereinen gleichwertige Quellenidentitäten und bewahren Quelldaten, Lesereihenfolge und Bedeutungen. Vorbereitete Sätze verwenden exakte zusammengesetzte PCM-Aufnahmen vor getrennt erhaltenen Direktaufnahmen. Sprachanfragen prüfen normalisierten, begrenzten Text; KanjiVG verwirft abgelehnte Antwortdaten und akzeptiert Langvokalzeichen.

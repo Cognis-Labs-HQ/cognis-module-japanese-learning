@@ -9,7 +9,7 @@ const SCHEMA_ID = "japanese-core";
 const MAX_WRITING_UNITS = 16;
 const SUPPORTED_LAYERS = new Set(["characters", "alt-characters"]);
 const JAPANESE_WRITING_PATTERN =
-    /^[\p{Script=Han}\p{Script=Hiragana}\p{Script=Katakana}々〆ヶ]+$/u;
+    /^[\p{Script=Han}\p{Script=Hiragana}\p{Script=Katakana}々〆ヶー]+$/u;
 const DEFAULT_SOURCE_BASE_URL =
     "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji";
 
@@ -51,6 +51,7 @@ async function fetchPattern(label, fetchImplementation, sourceBaseUrl) {
             signal,
         });
         if (!response.ok) {
+            await response.body?.cancel();
             if (response.status === 404) return null;
             throw new Error("stroke_source_request_failed");
         }

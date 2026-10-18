@@ -1,6 +1,6 @@
 import { Configuration } from "../../configuration.js";
 
-export async function registerDisabledApiRoutes(ctx) {
+export async function registerConfigurationRoutes(ctx) {
     const configuration = new Configuration(ctx.getCapability("db:executor"));
     await configuration.load();
     const operations = {
@@ -91,7 +91,7 @@ export async function registerDisabledApiRoutes(ctx) {
                     );
                 }
             },
-            { access: { minRole: "admin" }, allowWhenDisabled: true },
+            { access: { minRole: "admin" } },
         );
     }
     return configuration;

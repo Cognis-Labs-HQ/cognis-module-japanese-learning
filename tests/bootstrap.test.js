@@ -107,7 +107,6 @@ test("ingests the declarative pack through the host Library capability", async (
     );
     assert.deepEqual(apiRoutes[0].options, {
         access: { minRole: "admin" },
-        allowWhenDisabled: true,
     });
     const response = {
         status: 0,

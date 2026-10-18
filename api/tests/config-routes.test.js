@@ -8,16 +8,15 @@ const manifest = JSON.parse(
     await readFile(new URL("../../manifest.json", import.meta.url), "utf8"),
 );
 const entrypoint = await import(
-    new URL(`../../${manifest.entrypoints.disabledApi}`, import.meta.url)
+    new URL("../routes/config/index.js", import.meta.url)
 );
 
-test("voice configuration is administrator-only, persists while disabled, and omits an unset override", async () => {
+test("voice configuration is administrator-only, persists across active registrations, and omits an unset override", async () => {
     const routes = new Map();
     const register = (method) => (path, handler, options) => {
         assert.equal(path, `/api/v1/modules/${manifest.id}/config`);
         assert.deepEqual(options, {
             access: { minRole: "admin" },
-            allowWhenDisabled: true,
         });
         routes.set(method, handler);
     };
@@ -27,7 +26,7 @@ test("voice configuration is administrator-only, persists while disabled, and om
         registerApiDelete: register("DELETE"),
         log() {},
     });
-    const state = await entrypoint.registerDisabledApiRoutes(ctx);
+    const state = await entrypoint.registerConfigurationRoutes(ctx);
     const request = async (method, input) => {
         let status;
         let body;

@@ -1,7 +1,12 @@
 import assert from "node:assert/strict";
 import path from "node:path";
 import test from "node:test";
-import { uninstallModule } from "../bootstrap.js";
+import { withConfiguration } from "../api/tests/configuration-context.js";
+import { uninstallModule as uninstallLanguageModule } from "../bootstrap.js";
+
+function uninstallModule(ctx, options) {
+    return uninstallLanguageModule(withConfiguration(ctx), options);
+}
 
 function cleanupContext(overrides = {}) {
     const logEntries = [];
@@ -17,7 +22,8 @@ function cleanupContext(overrides = {}) {
             };
         },
         log(level, message, metadata) {
-            logEntries.push({ level, message, metadata });
+            if (metadata.operation !== "clear_configuration")
+                logEntries.push({ level, message, metadata });
         },
         ...overrides,
     };
