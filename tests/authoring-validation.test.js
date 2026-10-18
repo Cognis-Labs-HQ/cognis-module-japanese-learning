@@ -141,3 +141,56 @@ test("initial visual review and contextual disposition cover every inventoried t
         }
     }
 });
+
+test("context resolutions cover every priority with reviewed localized runtime notes", async () => {
+    const original = await load(index.contextDisposition);
+    const decisions = (
+        await Promise.all(original.recordFiles.map(load))
+    ).flat();
+    const priorities = decisions.filter(({ decision }) =>
+        decision.endsWith("-priority"),
+    );
+    const resolved = await load(index.contextResolution);
+    const reviews = (await Promise.all(resolved.recordFiles.map(load))).flat();
+    assert.equal(resolved.unresolvedCount, 0);
+    assert.equal(resolved.resolvedCount, priorities.length);
+    assert.deepEqual(
+        reviews.map(({ entryId }) => entryId).sort(),
+        priorities.flatMap(({ entryIds }) => entryIds).sort(),
+    );
+    const words = schema.layers.find(({ id }) => id === "words");
+    const field = words.fields.find(({ id }) => id === "usage_notes");
+    assert.equal(field.type, "localizedText");
+    assert.equal(field.input.control, "localizedText");
+    assert.equal(field.detail.renderer, "text");
+    assert.deepEqual(Object.keys(field.metadata.labels).sort(), [
+        "de",
+        "en",
+        "id",
+        "ja",
+    ]);
+    for (const review of reviews) {
+        const record = records.get(review.entryId);
+        assert.ok(review.status.startsWith("resolved-with-"));
+        assert.equal(review.audioListening.startsWith("not-performed"), true);
+        const notes = record.fields.usage_notes;
+        assert.deepEqual(Object.keys(notes).sort(), ["de", "en", "id", "ja"]);
+        for (const text of Object.values(notes))
+            assert.ok(text.trim().length > 45);
+        assert.equal(
+            digest(JSON.stringify(notes)),
+            review.runtimeEvidence.reviewedTextSha256,
+        );
+        assert.equal(
+            record.fields.reference_images[0],
+            review.runtimeEvidence.imagePath,
+        );
+        assert.ok(
+            catalog.images.some(
+                ({ path, entryIds }) =>
+                    path === review.runtimeEvidence.imagePath &&
+                    entryIds.includes(record.id),
+            ),
+        );
+    }
+});

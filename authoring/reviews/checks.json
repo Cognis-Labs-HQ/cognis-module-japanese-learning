@@ -1,7 +1,7 @@
 {
     "checkedDate": "2026-10-18",
     "moduleTests": {
-        "passed": 224,
+        "passed": 225,
         "failed": 0
     },
     "formattingAndLint": "pass",
@@ -20,5 +20,14 @@
     },
     "audioChanges": "none; automated regression checks do not constitute listening validation",
     "finalJpegReview": "each replacement inspected individually at full resolution after encoding",
-    "remainingContextWork": "See context/index.json for prioritized dispositions."
+    "remainingContextWork": "All previously prioritized dispositions resolved; see resolutions/index.json. New audio-dependent travel entries remain staged.",
+    "contextReview": {
+        "resolvedDispositions": 4,
+        "unresolvedDispositions": 0,
+        "runtimeNotesWithAllFourLocales": 4,
+        "hostInspectedNotes": 4,
+        "baselineHead": "b984caf7e084df3bdffe8ff43ca8b523cce339ab",
+        "baselineComparison": "Every content record unchanged except usage_notes and the English in-case image reference. IDs, definitions, pronunciations, grammar references and audio fields preserved.",
+        "detailPresentation": "Host detail.js renders localizedText through localizedTextValue for the selected supported locale."
+    }
 }

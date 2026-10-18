@@ -10,6 +10,10 @@ Vier Startstapel zu Essen und Trinken, Reisen und Richtungen, verbindenden Ausdr
 
 Die Illustrationen für とても und しかし werden ersetzt. Eine Szene mit starker Hitze verdeutlicht den Grad; erwarteter Sonnenschein im Gegensatz zu tatsächlichem Regen zeigt den Widerspruch.
 
+## Verwendung im Kontext
+
+Lokalisierte Hinweise und Beispiele verdeutlichen die abgebildeten Bedeutungen von きれい, ゆっくり und あし. Ein vorausgehender Satz macht den Gegensatz bei だけど deutlich.
+
 ## Commits
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)
