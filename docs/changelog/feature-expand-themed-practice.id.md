@@ -14,3 +14,4 @@ Ganti ilustrasi untuk とても dan しかし. Adegan panas yang kuat menunjukka
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)
 - [476aa5b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/476aa5b8f012fd7bfcaca7624da6cff7218670f5)
+- [28e4783](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/28e4783776b83df0fd8b0f41d0e26ddc75b13cdc)
