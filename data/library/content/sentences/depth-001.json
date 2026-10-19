@@ -1,0 +1,152 @@
+[
+    {
+        "id": "ja:sentence:depth-example-deep-river",
+        "label": "川はふかいです",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/25e7a87c3585c87437016bfab8225d823a5e101a60565dabd89ac1319805cb42.wav",
+            "pronunciation": ["かわはふかいです"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:kawa-river",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:depth-deep",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:word:desu",
+                "relation": "words",
+                "position": 3
+            },
+            {
+                "entryId": "ja:definition:depth-example-deep-river",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:depth-example-shallow-crossing",
+        "label": "あさい川を歩く",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/8f0f6aeb5dcb19761a2d0a48019ef1f64fe2223b145330ac2f91bc3af8c75047.wav",
+            "pronunciation": ["あさいかわをあるく"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:depth-shallow",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:word:kawa-river",
+                "relation": "words",
+                "position": 1
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 2
+            },
+            {
+                "entryId": "ja:word:aruku",
+                "relation": "words",
+                "position": 3
+            },
+            {
+                "entryId": "ja:definition:depth-example-shallow-crossing",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:depth-example-wash-deep-pot",
+        "label": "ふかいなべをあらう",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/ecd1444798f069789c8642bcb8237a740385d36000e6d1068bdad2c209f7e1a4.wav",
+            "pronunciation": ["ふかいなべをあらう"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:depth-deep",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:word:kitchen-pot",
+                "relation": "words",
+                "position": 1
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 2
+            },
+            {
+                "entryId": "ja:word:household-wash",
+                "relation": "words",
+                "position": 3
+            },
+            {
+                "entryId": "ja:definition:depth-example-wash-deep-pot",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:depth-example-find-shallow-dish",
+        "label": "あさいさらはどこですか",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/19a3f49e40deb79b5f5ed7474b1088b1a29d6f405213e0d95d02a2ddc3502a8e.wav",
+            "pronunciation": ["あさいさらはどこですか"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:depth-shallow",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:word:tableware-plate",
+                "relation": "words",
+                "position": 1
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 2
+            },
+            {
+                "entryId": "ja:word:doko",
+                "relation": "words",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:desu",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:particle:ka",
+                "relation": "particles",
+                "position": 5
+            },
+            {
+                "entryId": "ja:definition:depth-example-find-shallow-dish",
+                "relation": "definitions"
+            }
+        ]
+    }
+]

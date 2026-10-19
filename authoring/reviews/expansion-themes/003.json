@@ -1,5 +1,31 @@
 [
     {
+        "theme": "greetings",
+        "newDistinctVocabularyCount": 4,
+        "vocabulary": [
+            {
+                "entryId": "ja:word:greetings-morning",
+                "label": "おはようございます"
+            },
+            {
+                "entryId": "ja:word:greetings-evening",
+                "label": "こんばんは"
+            },
+            {
+                "entryId": "ja:word:greetings-night",
+                "label": "おやすみなさい"
+            },
+            {
+                "entryId": "ja:word:greetings-later",
+                "label": "またね"
+            }
+        ],
+        "newExampleCount": 0,
+        "exampleIds": [],
+        "recordedGrammaticalFormCount": 0,
+        "vocabularyAudit": "authoring/reviews/greetings-vocabulary.json"
+    },
+    {
         "theme": "household",
         "newDistinctVocabularyCount": 4,
         "vocabulary": [
@@ -253,36 +279,5 @@
         ],
         "recordedGrammaticalFormCount": 0,
         "vocabularyAudit": "authoring/reviews/reading-time-vocabulary.json"
-    },
-    {
-        "theme": "requests",
-        "newDistinctVocabularyCount": 4,
-        "vocabulary": [
-            {
-                "entryId": "ja:word:requests-yes",
-                "label": "はい"
-            },
-            {
-                "entryId": "ja:word:requests-no",
-                "label": "いいえ"
-            },
-            {
-                "entryId": "ja:word:requests-please",
-                "label": "おねがいします"
-            },
-            {
-                "entryId": "ja:word:requests-repeat",
-                "label": "もういちど"
-            }
-        ],
-        "newExampleCount": 4,
-        "exampleIds": [
-            "ja:sentence:requests-example-yes",
-            "ja:sentence:requests-example-no",
-            "ja:sentence:requests-example-please",
-            "ja:sentence:requests-example-repeat"
-        ],
-        "recordedGrammaticalFormCount": 0,
-        "vocabularyAudit": "authoring/reviews/requests-vocabulary.json"
     }
 ]

@@ -242,6 +242,10 @@ Menambahkan wide dan narrow serta ひろい dan せまい dengan empat ilustrasi
 
 Menambahkan inside/outside sebagai adverbia Inggris dan なか/そと sebagai nomina tempat Jepang, dengan adegan wadah yang diperiksa dan empat contoh per bahasa. Contoh Jepang membedakan の untuk tempat acuan, に dengan いる/ある untuk keberadaan, serta で untuk kegiatan. Kana menghindari bacaan ちゅう yang tidak dimaksud untuk 中. Gambar asli, PCM suara yang ditetapkan dan komposisi kalimat tepat disimpan; pendengaran belum diperiksa.
 
+## Kedalaman
+
+Menambahkan deep dan shallow serta ふかい dan あさい dengan empat ilustrasi wadah yang diperiksa dan empat contoh per bahasa. Bentuk perbandingan Inggris serta bentuk adverbial, negatif dan lampau Jepang memakai unsur PCM yang tepat. Sumber kamus, gambar asli dan bukti pemeriksaan teknis audio disimpan; pendengaran belum diperiksa.
+
 ## Komit
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)

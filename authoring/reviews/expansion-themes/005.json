@@ -1,5 +1,36 @@
 [
     {
+        "theme": "weather",
+        "newDistinctVocabularyCount": 4,
+        "vocabulary": [
+            {
+                "entryId": "ja:word:weather-sun",
+                "label": "たいよう"
+            },
+            {
+                "entryId": "ja:word:weather-snow",
+                "label": "ゆき"
+            },
+            {
+                "entryId": "ja:word:weather-wind",
+                "label": "かぜ"
+            },
+            {
+                "entryId": "ja:word:weather-cloud",
+                "label": "くも"
+            }
+        ],
+        "newExampleCount": 4,
+        "exampleIds": [
+            "ja:sentence:weather-example-sun",
+            "ja:sentence:weather-example-snow",
+            "ja:sentence:weather-example-wind",
+            "ja:sentence:weather-example-cloud"
+        ],
+        "recordedGrammaticalFormCount": 0,
+        "vocabularyAudit": "authoring/reviews/weather-vocabulary.json"
+    },
+    {
         "theme": "width",
         "newDistinctVocabularyCount": 2,
         "vocabulary": [
@@ -164,21 +195,5 @@
         ],
         "recordedGrammaticalFormCount": 0,
         "vocabularyAudit": "authoring/reviews/study-habits-sentences.json"
-    },
-    {
-        "theme": "plans",
-        "newDistinctVocabularyCount": 0,
-        "vocabulary": [],
-        "newExampleCount": 6,
-        "exampleIds": [
-            "ja:sentence:plans-library-tomorrow",
-            "ja:sentence:plans-friend-soon",
-            "ja:sentence:plans-restaurant-later",
-            "ja:sentence:plans-wait-station",
-            "ja:sentence:plans-ticket-later",
-            "ja:sentence:plans-learn-tomorrow"
-        ],
-        "recordedGrammaticalFormCount": 0,
-        "vocabularyAudit": "authoring/reviews/plans-sentences.json"
     }
 ]

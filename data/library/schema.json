@@ -1,6 +1,6 @@
 {
     "id": "japanese-core",
-    "version": 107,
+    "version": 108,
     "namespace": "ja",
     "language": "ja",
     "metadata": {
@@ -16542,6 +16542,210 @@
                     "pronunciation": {
                         "removeSuffix": "せまい",
                         "append": "せまかった"
+                    },
+                    "definitionTransform": {
+                        "template": {
+                            "labels": {
+                                "de": "{{ definition }} (Vergangenheit)",
+                                "en": "{{ definition }} (Past)",
+                                "id": "{{ definition }} (Lampau)",
+                                "ja": "{{ definition }} (過去形)"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "id": "depth-deep-forms",
+            "metadata": {
+                "labels": {
+                    "en": "ふかい Forms",
+                    "de": "ふかい-Formen",
+                    "id": "Bentuk ふかい",
+                    "ja": "ふかいの活用"
+                }
+            },
+            "matchTags": ["adjective", "depth-form-deep"],
+            "baseState": "base",
+            "rules": [
+                {
+                    "id": "adverb",
+                    "metadata": {
+                        "labels": {
+                            "de": "Adverbialform",
+                            "en": "Adverbial Form",
+                            "id": "Bentuk Adverbial",
+                            "ja": "副詞形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "adverb",
+                    "removeSuffix": "ふかい",
+                    "append": "ふかく",
+                    "pronunciation": {
+                        "removeSuffix": "ふかい",
+                        "append": "ふかく"
+                    },
+                    "definitionTransform": {
+                        "template": {
+                            "labels": {
+                                "de": "{{ definition }} (Adverbialform)",
+                                "en": "{{ definition }} (Adverbial Form)",
+                                "id": "{{ definition }} (Bentuk Adverbial)",
+                                "ja": "{{ definition }} (副詞形)"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "negative",
+                    "metadata": {
+                        "labels": {
+                            "de": "Verneinung",
+                            "en": "Negative",
+                            "id": "Negatif",
+                            "ja": "否定形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "negative",
+                    "removeSuffix": "ふかい",
+                    "append": "ふかくない",
+                    "pronunciation": {
+                        "removeSuffix": "ふかい",
+                        "append": "ふかくない"
+                    },
+                    "definitionTransform": {
+                        "template": {
+                            "labels": {
+                                "de": "{{ definition }} (Verneinung)",
+                                "en": "{{ definition }} (Negative)",
+                                "id": "{{ definition }} (Negatif)",
+                                "ja": "{{ definition }} (否定形)"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "past",
+                    "metadata": {
+                        "labels": {
+                            "de": "Vergangenheit",
+                            "en": "Past",
+                            "id": "Lampau",
+                            "ja": "過去形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "past",
+                    "removeSuffix": "ふかい",
+                    "append": "ふかかった",
+                    "pronunciation": {
+                        "removeSuffix": "ふかい",
+                        "append": "ふかかった"
+                    },
+                    "definitionTransform": {
+                        "template": {
+                            "labels": {
+                                "de": "{{ definition }} (Vergangenheit)",
+                                "en": "{{ definition }} (Past)",
+                                "id": "{{ definition }} (Lampau)",
+                                "ja": "{{ definition }} (過去形)"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "id": "depth-shallow-forms",
+            "metadata": {
+                "labels": {
+                    "en": "あさい Forms",
+                    "de": "あさい-Formen",
+                    "id": "Bentuk あさい",
+                    "ja": "あさいの活用"
+                }
+            },
+            "matchTags": ["adjective", "depth-form-shallow"],
+            "baseState": "base",
+            "rules": [
+                {
+                    "id": "adverb",
+                    "metadata": {
+                        "labels": {
+                            "de": "Adverbialform",
+                            "en": "Adverbial Form",
+                            "id": "Bentuk Adverbial",
+                            "ja": "副詞形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "adverb",
+                    "removeSuffix": "あさい",
+                    "append": "あさく",
+                    "pronunciation": {
+                        "removeSuffix": "あさい",
+                        "append": "あさく"
+                    },
+                    "definitionTransform": {
+                        "template": {
+                            "labels": {
+                                "de": "{{ definition }} (Adverbialform)",
+                                "en": "{{ definition }} (Adverbial Form)",
+                                "id": "{{ definition }} (Bentuk Adverbial)",
+                                "ja": "{{ definition }} (副詞形)"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "negative",
+                    "metadata": {
+                        "labels": {
+                            "de": "Verneinung",
+                            "en": "Negative",
+                            "id": "Negatif",
+                            "ja": "否定形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "negative",
+                    "removeSuffix": "あさい",
+                    "append": "あさくない",
+                    "pronunciation": {
+                        "removeSuffix": "あさい",
+                        "append": "あさくない"
+                    },
+                    "definitionTransform": {
+                        "template": {
+                            "labels": {
+                                "de": "{{ definition }} (Verneinung)",
+                                "en": "{{ definition }} (Negative)",
+                                "id": "{{ definition }} (Negatif)",
+                                "ja": "{{ definition }} (否定形)"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "past",
+                    "metadata": {
+                        "labels": {
+                            "de": "Vergangenheit",
+                            "en": "Past",
+                            "id": "Lampau",
+                            "ja": "過去形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "past",
+                    "removeSuffix": "あさい",
+                    "append": "あさかった",
+                    "pronunciation": {
+                        "removeSuffix": "あさい",
+                        "append": "あさかった"
                     },
                     "definitionTransform": {
                         "template": {

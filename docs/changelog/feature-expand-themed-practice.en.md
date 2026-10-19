@@ -242,6 +242,10 @@ Add wide and narrow with ひろい and せまい, four inspected bridge illustra
 
 Add inside/outside as English adverbs and なか/そと as Japanese location nouns, with inspected container scenes and four examples per language. Japanese examples distinguish の for the reference place, に with いる/ある for existence, and で for activities. Native kana avoids the unrelated ちゅう reading of 中. Original images, explicit-voice PCM and exact sentence compositions are retained; listening remains unverified.
 
+## Depth
+
+Add deep and shallow with ふかい and あさい, four inspected basin illustrations and four contextual examples per language. English comparison forms and Japanese adverbial, negative and past forms retain exact constituent PCM. Dictionary snapshots, original images and technical audio evidence are retained; listening remains unverified.
+
 ## Commits
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)

@@ -44,6 +44,29 @@
         "vocabularyAudit": "authoring/reviews/craft-vocabulary.json"
     },
     {
+        "theme": "depth",
+        "newDistinctVocabularyCount": 2,
+        "vocabulary": [
+            {
+                "entryId": "ja:word:depth-deep",
+                "label": "ふかい"
+            },
+            {
+                "entryId": "ja:word:depth-shallow",
+                "label": "あさい"
+            }
+        ],
+        "newExampleCount": 4,
+        "exampleIds": [
+            "ja:sentence:depth-example-deep-river",
+            "ja:sentence:depth-example-shallow-crossing",
+            "ja:sentence:depth-example-wash-deep-pot",
+            "ja:sentence:depth-example-find-shallow-dish"
+        ],
+        "recordedGrammaticalFormCount": 6,
+        "vocabularyAudit": "authoring/reviews/depth-vocabulary.json"
+    },
+    {
         "theme": "directions",
         "newDistinctVocabularyCount": 4,
         "vocabulary": [
@@ -243,31 +266,5 @@
         ],
         "recordedGrammaticalFormCount": 0,
         "vocabularyAudit": "authoring/reviews/furnishings-vocabulary.json"
-    },
-    {
-        "theme": "greetings",
-        "newDistinctVocabularyCount": 4,
-        "vocabulary": [
-            {
-                "entryId": "ja:word:greetings-morning",
-                "label": "おはようございます"
-            },
-            {
-                "entryId": "ja:word:greetings-evening",
-                "label": "こんばんは"
-            },
-            {
-                "entryId": "ja:word:greetings-night",
-                "label": "おやすみなさい"
-            },
-            {
-                "entryId": "ja:word:greetings-later",
-                "label": "またね"
-            }
-        ],
-        "newExampleCount": 0,
-        "exampleIds": [],
-        "recordedGrammaticalFormCount": 0,
-        "vocabularyAudit": "authoring/reviews/greetings-vocabulary.json"
     }
 ]
