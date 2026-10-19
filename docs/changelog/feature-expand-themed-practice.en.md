@@ -319,3 +319,4 @@ Add ball/racket and ボール/ラケット with four inspected equipment illustr
 - [69631b8](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/69631b87d3a882360510facd588299580d28989d)
 - [eb0adc9](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/eb0adc9ec201e56bf7ff32607efaf6ceef830266)
 - [6d040c3](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/6d040c3f98d884bd40251af824e1cf0862263e79)
+- [726025e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/726025e7e62eea03d9acbefe2761e4592c7b3fdb)
