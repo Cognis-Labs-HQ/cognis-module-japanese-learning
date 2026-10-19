@@ -18,6 +18,10 @@ Catatan dan contoh terlokalisasi memperjelas makna yang digambarkan untuk きれ
 
 Tambahkan dua belas kata perjalanan bergambar, bentuk tata bahasa yang ditinjau, delapan contoh dengan unsur kata terhubung, dan dua dek latihan terlokalisasi. Rekaman baru untuk materi perjalanan belum disertakan.
 
+## Latihan Saat Makan
+
+Tambahkan enam kalimat bervariasi tentang makanan dan satu dek latihan dengan kosakata serta audio unsur yang sudah ada. Integritas teknis gabungan audio diperiksa; verifikasi dengan mendengarkan belum dilakukan.
+
 ## Komit
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)

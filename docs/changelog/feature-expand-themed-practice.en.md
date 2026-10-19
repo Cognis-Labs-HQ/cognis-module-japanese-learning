@@ -18,6 +18,10 @@ Clarify the illustrated senses of きれい, ゆっくり and あし with locali
 
 Add twelve illustrated travel words, their reviewed grammatical forms, eight composed-text examples and two localized practice decks. New travel recordings are not bundled.
 
+## Mealtime Practice
+
+Add six varied mealtime sentences and a practice deck, reusing existing vocabulary and exact constituent audio. The new compositions have technical integrity checks; listening has not been verified.
+
 ## Commits
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)

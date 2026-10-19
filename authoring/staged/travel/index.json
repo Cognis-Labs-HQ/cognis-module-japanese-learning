@@ -9,9 +9,9 @@
         "ja": "旅行の基本"
     },
     "sourceHead": "cefc4fb0820faeb1738b6c84788ad0049f47c6a7",
-    "scope": "Authoring specification only, excluded from runtime manifest and Library content. No media generated for these proposed new entries. Not ready for import.",
+    "scope": "Source specification retained outside runtime files; reviewed vocabulary, forms and examples are published. See runtimePublication for implementation and validation evidence.",
     "releaseGates": [
-        "Actual listening review for every new base, transformed and sentence audio clip.",
+        "Listening review skipped under the user instruction dated 2026-10-19; mark unavailable or unverified audio explicitly.",
         "Visual review of every generated picture against its exact target sense.",
         "Author complete transformation graphs with four-language definition transforms and verify every reachable form.",
         "Resolve complete record graphs, including atomic spelling/readings and English selected-form wrappers.",
@@ -22,8 +22,8 @@
         "voiceId": "xya0RvcJtofTcFTOdX4E",
         "provider": "elevenlabs",
         "generationAuthorized": false,
-        "listeningReview": "pending-no-perceptible-audio-interface",
-        "technicalReview": "not-started-no-generated-clips",
+        "listeningReview": "unverified-not-performed-publication-authorized",
+        "technicalReview": "No new travel clips generated. Existing audio regression checks pass; missing travel recordings explicitly listed in data/audio/unavailable.json.",
         "policy": "Use real written language input. Japanese input must contain kana/kanji, never romaji-only. Existing voice inventory is provenance, not spending authorization."
     },
     "imageStyle": "anime",
@@ -83,8 +83,8 @@
         "orderedJapaneseReadings": "pass",
         "atomicSpellingOrReadingTargets": "pass",
         "localizedMeaningKeys": "de,en,id,ja",
-        "schemaImplementation": "pending-authoring-specification-only",
-        "mediaValidation": "pending-no-new-media-created"
+        "schemaImplementation": "published-and-host-validated",
+        "mediaValidation": "Twelve published images visually inspected; two initial map cells rejected across modules and replaced. Travel audio absent."
     },
     "readingReviewNotes": [
         "きっぷ: preserve small っ before ぷ; do not use full-size つ.",

@@ -18,6 +18,10 @@ Lokalisierte Hinweise und Beispiele verdeutlichen die abgebildeten Bedeutungen v
 
 Zwölf bebilderte Reisewörter mit geprüften grammatischen Formen, acht aus verknüpften Wörtern aufgebaute Beispielsätze und zwei lokalisierte Übungsdecks ergänzen den Inhalt. Neue Reiseaufnahmen sind nicht enthalten.
 
+## Übungen zum Essen
+
+Sechs abwechslungsreiche Sätze zum Essen und ein Übungsdeck verwenden vorhandenen Wortschatz und unveränderte Wortaufnahmen. Die neuen Audiokombinationen sind technisch geprüft, aber nicht durch Anhören bestätigt.
+
 ## Commits
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)

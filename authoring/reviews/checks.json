@@ -1,26 +1,26 @@
 {
-    "checkedDate": "2026-10-18",
+    "checkedDate": "2026-10-19",
     "moduleTests": {
-        "passed": 225,
+        "passed": 230,
         "failed": 0
     },
     "formattingAndLint": "pass",
     "manifestValidation": {
         "status": "pass",
-        "packagedFiles": 1259,
+        "packagedFiles": 1294,
         "authoringFilesIncluded": 0
     },
     "hostCompatibility": {
         "head": "7134ed437df268a7c7ac0be20faea08fdd9bc791",
         "contentPackInspection": "pass",
-        "records": 908,
-        "assets": 422,
+        "records": 972,
+        "assets": 440,
         "targetedTestsPassed": 11,
         "targetedTests": ["content-pack", "content-audio", "browse-permissions"]
     },
-    "audioChanges": "none; automated regression checks do not constitute listening validation",
+    "audioChanges": "Six new mealtime compositions per module reuse exact existing PCM. No external synthesis. Listening unverified; travel recordings explicitly absent.",
     "finalJpegReview": "each replacement inspected individually at full resolution after encoding",
-    "remainingContextWork": "All previously prioritized dispositions resolved; see resolutions/index.json. New audio-dependent travel entries remain staged.",
+    "remainingContextWork": "All 33 earlier context dispositions resolved. Travel vocabulary and sentences now published under the revised audio-verification instruction.",
     "contextReview": {
         "resolvedDispositions": 4,
         "unresolvedDispositions": 0,
@@ -29,5 +29,9 @@
         "baselineHead": "b984caf7e084df3bdffe8ff43ca8b523cce339ab",
         "baselineComparison": "Every content record unchanged except usage_notes and the English in-case image reference. IDs, definitions, pronunciations, grammar references and audio fields preserved.",
         "detailPresentation": "Host detail.js renders localizedText through localizedTextValue for the selected supported locale."
+    },
+    "currentBatchEvidence": {
+        "travel": "authoring/reviews/travel/index.json",
+        "mealtime": "authoring/reviews/mealtime.json"
     }
 }
