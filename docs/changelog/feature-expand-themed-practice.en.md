@@ -144,3 +144,4 @@ Add sofa, lamp, mirror and pillow with four inspected pictures per module, four 
 - [e124530](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/e124530939a759790f44d7c887b1d2534c462402)
 - [54f29cf](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/54f29cf9ae70ea5d3011d4ee927c9e269a52105b)
 - [b751a25](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/b751a259fcf513b7027b9ed1f8e9d44e952df55c)
+- [a324822](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/a32482268eeb5806df54b3c00a4b13c13b1c8830)
