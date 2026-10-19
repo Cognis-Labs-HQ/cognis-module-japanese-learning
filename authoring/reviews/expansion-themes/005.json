@@ -1,5 +1,36 @@
 [
     {
+        "theme": "vegetables",
+        "newDistinctVocabularyCount": 4,
+        "vocabulary": [
+            {
+                "entryId": "ja:word:vegetables-cabbage",
+                "label": "キャベツ"
+            },
+            {
+                "entryId": "ja:word:vegetables-mushroom",
+                "label": "きのこ"
+            },
+            {
+                "entryId": "ja:word:vegetables-spinach",
+                "label": "ほうれんそう"
+            },
+            {
+                "entryId": "ja:word:vegetables-lettuce",
+                "label": "レタス"
+            }
+        ],
+        "newExampleCount": 4,
+        "exampleIds": [
+            "ja:sentence:vegetables-example-cabbage",
+            "ja:sentence:vegetables-example-mushroom",
+            "ja:sentence:vegetables-example-spinach",
+            "ja:sentence:vegetables-example-lettuce"
+        ],
+        "recordedGrammaticalFormCount": 0,
+        "vocabularyAudit": "authoring/reviews/vegetables-vocabulary.json"
+    },
+    {
         "theme": "weather",
         "newDistinctVocabularyCount": 4,
         "vocabulary": [
@@ -179,21 +210,5 @@
         ],
         "recordedGrammaticalFormCount": 0,
         "vocabularyAudit": "authoring/reviews/restaurant-sentences.json"
-    },
-    {
-        "theme": "study-habits",
-        "newDistinctVocabularyCount": 0,
-        "vocabulary": [],
-        "newExampleCount": 6,
-        "exampleIds": [
-            "ja:sentence:study-habits-write-pen",
-            "ja:sentence:study-habits-read-library",
-            "ja:sentence:study-habits-difficult-language",
-            "ja:sentence:study-habits-speak-teacher",
-            "ja:sentence:study-habits-learn-friend",
-            "ja:sentence:study-habits-where-pencil"
-        ],
-        "recordedGrammaticalFormCount": 0,
-        "vocabularyAudit": "authoring/reviews/study-habits-sentences.json"
     }
 ]

@@ -246,6 +246,10 @@ Add inside/outside as English adverbs and なか/そと as Japanese location nou
 
 Add deep and shallow with ふかい and あさい, four inspected basin illustrations and four contextual examples per language. English comparison forms and Japanese adverbial, negative and past forms retain exact constituent PCM. Dictionary snapshots, original images and technical audio evidence are retained; listening remains unverified.
 
+## Light levels
+
+Add bright and dark with あかるい and くらい, four inspected room illustrations and four contextual examples per language. Notes distinguish illumination from color, intelligence and personality. English comparison forms and Japanese adverbial, negative and past forms retain exact selected audio. Sources, original images and PCM are retained; listening remains unverified.
+
 ## Commits
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)

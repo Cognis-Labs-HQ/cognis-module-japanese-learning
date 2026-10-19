@@ -111,6 +111,29 @@
         "vocabularyAudit": "authoring/reviews/length-vocabulary.json"
     },
     {
+        "theme": "light-level",
+        "newDistinctVocabularyCount": 2,
+        "vocabulary": [
+            {
+                "entryId": "ja:word:light-level-bright",
+                "label": "あかるい"
+            },
+            {
+                "entryId": "ja:word:light-level-dark",
+                "label": "くらい"
+            }
+        ],
+        "newExampleCount": 4,
+        "exampleIds": [
+            "ja:sentence:light-level-example-bright-library",
+            "ja:sentence:light-level-example-dark-bedroom",
+            "ja:sentence:light-level-example-bright-lamp",
+            "ja:sentence:light-level-example-dark-forest"
+        ],
+        "recordedGrammaticalFormCount": 6,
+        "vocabularyAudit": "authoring/reviews/light-level-vocabulary.json"
+    },
+    {
         "theme": "location",
         "newDistinctVocabularyCount": 2,
         "vocabulary": [
@@ -248,36 +271,5 @@
         ],
         "recordedGrammaticalFormCount": 12,
         "vocabularyAudit": "authoring/reviews/qualities-vocabulary.json"
-    },
-    {
-        "theme": "reading-time",
-        "newDistinctVocabularyCount": 4,
-        "vocabulary": [
-            {
-                "entryId": "ja:word:reading-time-morning",
-                "label": "あさ"
-            },
-            {
-                "entryId": "ja:word:reading-time-night",
-                "label": "よる"
-            },
-            {
-                "entryId": "ja:word:reading-time-book",
-                "label": "ほん"
-            },
-            {
-                "entryId": "ja:word:reading-time-newspaper",
-                "label": "しんぶん"
-            }
-        ],
-        "newExampleCount": 4,
-        "exampleIds": [
-            "ja:sentence:reading-time-example-morning-news",
-            "ja:sentence:reading-time-example-night-book",
-            "ja:sentence:reading-time-example-book-bag",
-            "ja:sentence:reading-time-example-buy-news"
-        ],
-        "recordedGrammaticalFormCount": 0,
-        "vocabularyAudit": "authoring/reviews/reading-time-vocabulary.json"
     }
 ]
