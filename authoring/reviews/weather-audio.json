@@ -52,19 +52,18 @@
             "language_code": "ja"
         },
         "response": {
-            "request-id": "gNFah9gNpvHeFXZjcacc",
-            "character-cost": "1",
-            "content-type": "audio/pcm"
+            "reused": true,
+            "newProviderRequest": false
         },
         "sourcePath": "authoring/audio/weather/reused-yuki.wav",
         "sourceSha256": "7cd280097abfc17df6c58ba7abbed10de9be3c09951e0a6ff8553d392b26972d",
-        "sourcePeak": 7185,
+        "sourcePeak": 26869,
         "sourceFullScaleSamples": 0,
         "gain": 1,
-        "paddingFramesEachSide": 480,
-        "frames": 16564,
+        "paddingFramesEachSide": 0,
+        "frames": 13697,
         "listening": "unverified-not-performed",
-        "technicalReview": "Native written input and intended reading checked; all PCM frames preserved with gain limit and endpoint padding; non-silent mono PCM16 at 24000Hz. Not auditory verification.",
+        "technicalReview": "Existing published WAV reused byte-for-byte. Source snapshot contains the complete reused WAV; no gain or padding was applied during reuse. The separately generated candidate retains its own original request, response, PCM and processing evidence. Listening unverified.",
         "pronunciationReuse": {
             "entryId": "ja:word:complete-pronunciation-weather-snow",
             "path": "audio/421f3a0a6b7e6e3c8ec0b9c498891ca2b2f480ad28d529374f8d64df5c22097c.wav",
