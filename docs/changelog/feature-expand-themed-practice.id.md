@@ -274,3 +274,4 @@ Menambahkan Sorry dan Welcome serta ごめんなさい dan ようこそ dengan a
 - [265bfd3](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/265bfd308204220751752a0280370ea38e84c349)
 - [77d0058](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/77d005880200b308bd2de4f935528db24f63bfce)
 - [1fc46da](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/1fc46dadab40c222ec320dde32ecb6011823b7a9)
+- [c20e9f2](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/c20e9f24359b1ebe836d1c4ff2064d16319de57c)
