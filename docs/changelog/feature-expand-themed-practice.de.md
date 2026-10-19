@@ -234,3 +234,4 @@ Give/receive und あげる/もらう mit je zwei visuell geprüften Bildern und 
 - [0d8e1c4](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/0d8e1c4cc172b15be524c3b7051d98f4a694b928)
 - [7fd3e92](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/7fd3e9244817a60470cec7f77c2090a13756d369)
 - [576e1cc](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/576e1ccdd289b498d4bf144c59f26fa3f98ee3d4)
+- [37937f2](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/37937f2735424478cb8d589fb5fb4851619ae070)
