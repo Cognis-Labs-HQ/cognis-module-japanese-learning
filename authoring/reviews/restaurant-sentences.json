@@ -1,0 +1,468 @@
+[
+    {
+        "entryId": "ja:sentence:restaurant-1",
+        "label": "レストランで友達とごはんを食べる",
+        "reading": "レストランでともだちとごはんをたべる",
+        "meanings": {
+            "en": "I eat a meal with a friend at a restaurant.",
+            "de": "Ich esse mit einem Freund in einem Restaurant.",
+            "id": "Saya makan bersama teman di restoran.",
+            "ja": "レストランで友達とご飯を食べる。"
+        },
+        "constituentIds": [
+            "ja:word:places-restaurant",
+            "ja:particle:de",
+            "ja:word:tomodachi",
+            "ja:particle:to",
+            "ja:word:rice",
+            "ja:particle:wo",
+            "ja:word:taberu"
+        ],
+        "audioAvailability": "bundled-composition",
+        "audioPath": "audio/4865d65a4344be136da0674f6a3bb33742df19040965b95978b6d135a6ee6b39.wav",
+        "sha256": "4865d65a4344be136da0674f6a3bb33742df19040965b95978b6d135a6ee6b39",
+        "listening": "unverified-not-performed",
+        "textReview": "で marks either activity location or the utensil according to its noun. と marks a companion or coordinates foods/furniture. ごはん denotes a meal in the restaurant context and cooked rice in the fish/chopsticks examples. に marks existence location and が the items present; ある is appropriate to furniture. まで marks the walking endpoint. The question is polite with ですか; other examples are plain-form statements, not service-ordering formulas. Omitted subjects and singular glosses are illustrative.",
+        "newImages": false,
+        "newExternalRequests": 0,
+        "reviewDate": "2026-10-19",
+        "technicalReview": "All source samples retained exactly in mono PCM16 at 24000 Hz; segment equality, hashes, non-silence, sample bounds and header integrity checked by regression suite. Listening not performed.",
+        "sourceReview": {
+            "url": "https://www.irodori.jpf.go.jp/assets/data/starter/pdf/X_L08.pdf",
+            "pages": "18–22",
+            "finding": "Checked activity-location で, person-location にいる, object-location にある and location questions. Original examples are independently authored; no source audio or images copied."
+        },
+        "sourceAudioEvidence": [
+            {
+                "entryId": "ja:word:places-restaurant",
+                "path": "audio/df5bfce667c3edb0f0939b31e06a642a84733d7a542eb474176328264a3ed42e.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "レストラン",
+                "sha256": "65e032cad8ecdad89cc75bd8f946f691c69b0128a7497104f4c8c729d41542b7"
+            },
+            {
+                "entryId": "ja:particle:de",
+                "path": "audio/df81472c8108ad9b47d8d90db017ff1c1b553d80263d6a2c59de1571671f3eee.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "で",
+                "sha256": "57b1611b914f170a0de5d42042b0a97c1dada8d50838ba27ed1c2677dcb232c3"
+            },
+            {
+                "entryId": "ja:word:tomodachi",
+                "path": "audio/b735f033be7289c86f7f84621476005af35c3fdec9b7e43f2b7531609f5d70b1.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "ともだち",
+                "sha256": "512505b952c57e2b9f49207b21dc82e5834d2a5cbbc1bd0554ff2de65effa87a"
+            },
+            {
+                "entryId": "ja:particle:to",
+                "path": "audio/606f3c1823245eee4195e2195e8189dad7df8cd21b7e6550a55b5c56e585916b.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "と",
+                "sha256": "1247391555d943254a995ac5ac2170d9039db38188a26eb6e783a7d4ee67bea5"
+            },
+            {
+                "entryId": "ja:word:rice",
+                "path": "audio/0525847ce0e98844c6520826eb72a29aff79ea2b302d65be5e698a818c232a74.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "ごはん",
+                "sha256": "f5f9fd1d0fd33cf99587673dbde1b25397778bb81848fe485663b9615d72c6e3"
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "お",
+                "sha256": "5a89703412d90e8bc518242ca91fa93b5ea164aa2d3ff9b6e0b5996b7695f8e8"
+            },
+            {
+                "entryId": "ja:word:taberu",
+                "path": "audio/4ddd4e95428918c1c2f8c64b3eab948d332e376275c09dfcff69082a20ee9181.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "たべる",
+                "sha256": "8262b7aeff2b22e9833d1b42981bec20a361de18b6039fc49d1941454851cbb8"
+            }
+        ],
+        "peak": 26869,
+        "fullScaleSamples": 0,
+        "senseReview": {
+            "source": "https://jisho.org/search/ご飯",
+            "finding": "Jisho API confirms ご飯 / ごはん has cooked-rice and meal senses. Translations select the contextual sense for each independently authored example."
+        }
+    },
+    {
+        "entryId": "ja:sentence:restaurant-2",
+        "label": "さかなとごはんを食べる",
+        "reading": "さかなとごはんをたべる",
+        "meanings": {
+            "en": "I eat fish and rice.",
+            "de": "Ich esse Fisch und Reis.",
+            "id": "Saya makan ikan dan nasi.",
+            "ja": "魚とご飯を食べる。"
+        },
+        "constituentIds": [
+            "ja:word:fish",
+            "ja:particle:to",
+            "ja:word:rice",
+            "ja:particle:wo",
+            "ja:word:taberu"
+        ],
+        "audioAvailability": "bundled-composition",
+        "audioPath": "audio/096b500e82038ea9cac9f6dc43178f7456f4e71eff8158cfafe3ae55917c1d45.wav",
+        "sha256": "096b500e82038ea9cac9f6dc43178f7456f4e71eff8158cfafe3ae55917c1d45",
+        "listening": "unverified-not-performed",
+        "textReview": "で marks either activity location or the utensil according to its noun. と marks a companion or coordinates foods/furniture. ごはん denotes a meal in the restaurant context and cooked rice in the fish/chopsticks examples. に marks existence location and が the items present; ある is appropriate to furniture. まで marks the walking endpoint. The question is polite with ですか; other examples are plain-form statements, not service-ordering formulas. Omitted subjects and singular glosses are illustrative.",
+        "newImages": false,
+        "newExternalRequests": 0,
+        "reviewDate": "2026-10-19",
+        "technicalReview": "All source samples retained exactly in mono PCM16 at 24000 Hz; segment equality, hashes, non-silence, sample bounds and header integrity checked by regression suite. Listening not performed.",
+        "sourceReview": {
+            "url": "https://www.irodori.jpf.go.jp/assets/data/starter/pdf/X_L08.pdf",
+            "pages": "18–22",
+            "finding": "Checked activity-location で, person-location にいる, object-location にある and location questions. Original examples are independently authored; no source audio or images copied."
+        },
+        "sourceAudioEvidence": [
+            {
+                "entryId": "ja:word:fish",
+                "path": "audio/82a3ba788239c7a0ca2d53b86f417200dcef1a8c2ef789e55b778f8870619105.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "さかな",
+                "sha256": "115435787cf6e3cfeb4b16273bab39c38cbfd6c2a9cb1db2f62a093192fb9eb9"
+            },
+            {
+                "entryId": "ja:particle:to",
+                "path": "audio/606f3c1823245eee4195e2195e8189dad7df8cd21b7e6550a55b5c56e585916b.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "と",
+                "sha256": "1247391555d943254a995ac5ac2170d9039db38188a26eb6e783a7d4ee67bea5"
+            },
+            {
+                "entryId": "ja:word:rice",
+                "path": "audio/0525847ce0e98844c6520826eb72a29aff79ea2b302d65be5e698a818c232a74.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "ごはん",
+                "sha256": "f5f9fd1d0fd33cf99587673dbde1b25397778bb81848fe485663b9615d72c6e3"
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "お",
+                "sha256": "5a89703412d90e8bc518242ca91fa93b5ea164aa2d3ff9b6e0b5996b7695f8e8"
+            },
+            {
+                "entryId": "ja:word:taberu",
+                "path": "audio/4ddd4e95428918c1c2f8c64b3eab948d332e376275c09dfcff69082a20ee9181.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "たべる",
+                "sha256": "8262b7aeff2b22e9833d1b42981bec20a361de18b6039fc49d1941454851cbb8"
+            }
+        ],
+        "peak": 26869,
+        "fullScaleSamples": 0,
+        "senseReview": {
+            "source": "https://jisho.org/search/ご飯",
+            "finding": "Jisho API confirms ご飯 / ごはん has cooked-rice and meal senses. Translations select the contextual sense for each independently authored example."
+        }
+    },
+    {
+        "entryId": "ja:sentence:restaurant-3",
+        "label": "スープはどこですか",
+        "reading": "すーぷはどこですか",
+        "meanings": {
+            "en": "Where is the soup?",
+            "de": "Wo ist die Suppe?",
+            "id": "Di mana supnya?",
+            "ja": "スープはどこですか。"
+        },
+        "constituentIds": [
+            "ja:word:soup",
+            "ja:particle:wa",
+            "ja:word:doko",
+            "ja:word:desu",
+            "ja:particle:ka"
+        ],
+        "audioAvailability": "bundled-composition",
+        "audioPath": "audio/f46bd5f815f088329e7cc89b99c588df5f09c442b01da4332ef0a2acc1378c5b.wav",
+        "sha256": "f46bd5f815f088329e7cc89b99c588df5f09c442b01da4332ef0a2acc1378c5b",
+        "listening": "unverified-not-performed",
+        "textReview": "で marks either activity location or the utensil according to its noun. と marks a companion or coordinates foods/furniture. ごはん denotes a meal in the restaurant context and cooked rice in the fish/chopsticks examples. に marks existence location and が the items present; ある is appropriate to furniture. まで marks the walking endpoint. The question is polite with ですか; other examples are plain-form statements, not service-ordering formulas. Omitted subjects and singular glosses are illustrative.",
+        "newImages": false,
+        "newExternalRequests": 0,
+        "reviewDate": "2026-10-19",
+        "technicalReview": "All source samples retained exactly in mono PCM16 at 24000 Hz; segment equality, hashes, non-silence, sample bounds and header integrity checked by regression suite. Listening not performed.",
+        "sourceReview": {
+            "url": "https://www.irodori.jpf.go.jp/assets/data/starter/pdf/X_L08.pdf",
+            "pages": "18–22",
+            "finding": "Checked activity-location で, person-location にいる, object-location にある and location questions. Original examples are independently authored; no source audio or images copied."
+        },
+        "sourceAudioEvidence": [
+            {
+                "entryId": "ja:word:soup",
+                "path": "audio/4a74d133f1fde60b0990bab7970d5ab9683f6c87122f694b518c45819b667cbe.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "スープ",
+                "sha256": "b53333dc4d02348b76b7d79831d868a5663c4ececef1fbceaa4a9362ee094854"
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "path": "audio/d7c9e57654e559dfba3bd6f78c2f27416a61f8b28d56145d84a62fe25b70c94d.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "わ",
+                "sha256": "03b8d36aab677f09d2ecaad611a22b15785f0c717e6d6983dc5ef47296670c54"
+            },
+            {
+                "entryId": "ja:word:doko",
+                "path": "audio/d8e8d38bb87e5846270a85a0031c99310edbc497f365f2a8fbb4ac49a10ddba3.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "どこ",
+                "sha256": "e7b6f83c09eb78672e721a848657edbb8e685f0b894c90928134c3f0d654df66"
+            },
+            {
+                "entryId": "ja:word:desu",
+                "path": "audio/2959a5dcab722b7d5c39f67845f1d6a3d6ede5f23e554e9547bca0e6cb62c56b.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "です",
+                "sha256": "d0234f8c988b83fef6bd73c37296bf1a45c0e71f6afc96ac32aa4213e3deb89e"
+            },
+            {
+                "entryId": "ja:particle:ka",
+                "path": "audio/43ee7a601b45742716f8c1c424c576992297faf0a3ec140047ad194b682f7edf.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "か",
+                "sha256": "da467a24b8035b0b6dc37491478a905c5c082db3d216ea1fc1553e02cd841f39"
+            }
+        ],
+        "peak": 26869,
+        "fullScaleSamples": 0,
+        "senseReview": {
+            "source": "https://jisho.org/search/ご飯",
+            "finding": "Jisho API confirms ご飯 / ごはん has cooked-rice and meal senses. Translations select the contextual sense for each independently authored example."
+        }
+    },
+    {
+        "entryId": "ja:sentence:restaurant-4",
+        "label": "箸でごはんを食べる",
+        "reading": "はしでごはんをたべる",
+        "meanings": {
+            "en": "I eat rice with chopsticks.",
+            "de": "Ich esse Reis mit Stäbchen.",
+            "id": "Saya makan nasi dengan sumpit.",
+            "ja": "箸でご飯を食べる。"
+        },
+        "constituentIds": [
+            "ja:word:hashi-chopsticks",
+            "ja:particle:de",
+            "ja:word:rice",
+            "ja:particle:wo",
+            "ja:word:taberu"
+        ],
+        "audioAvailability": "bundled-composition",
+        "audioPath": "audio/3064528fc8c5f1f80ef85b644a6166dd2e3848286b0881cfcccaef7ad258ebe9.wav",
+        "sha256": "3064528fc8c5f1f80ef85b644a6166dd2e3848286b0881cfcccaef7ad258ebe9",
+        "listening": "unverified-not-performed",
+        "textReview": "で marks either activity location or the utensil according to its noun. と marks a companion or coordinates foods/furniture. ごはん denotes a meal in the restaurant context and cooked rice in the fish/chopsticks examples. に marks existence location and が the items present; ある is appropriate to furniture. まで marks the walking endpoint. The question is polite with ですか; other examples are plain-form statements, not service-ordering formulas. Omitted subjects and singular glosses are illustrative.",
+        "newImages": false,
+        "newExternalRequests": 0,
+        "reviewDate": "2026-10-19",
+        "technicalReview": "All source samples retained exactly in mono PCM16 at 24000 Hz; segment equality, hashes, non-silence, sample bounds and header integrity checked by regression suite. Listening not performed.",
+        "sourceReview": {
+            "url": "https://www.irodori.jpf.go.jp/assets/data/starter/pdf/X_L08.pdf",
+            "pages": "18–22",
+            "finding": "Checked activity-location で, person-location にいる, object-location にある and location questions. Original examples are independently authored; no source audio or images copied."
+        },
+        "sourceAudioEvidence": [
+            {
+                "entryId": "ja:word:hashi-chopsticks",
+                "path": "audio/0961c5699ea8a0302440aec81fde7266e9e37509b2e463252efb7eb3319fecf1.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "はし",
+                "sha256": "0e6f958252d9f06e1ecd32d729cc5ae6322e44d1077ae4ed52dae9c77b8c43f5"
+            },
+            {
+                "entryId": "ja:particle:de",
+                "path": "audio/df81472c8108ad9b47d8d90db017ff1c1b553d80263d6a2c59de1571671f3eee.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "で",
+                "sha256": "57b1611b914f170a0de5d42042b0a97c1dada8d50838ba27ed1c2677dcb232c3"
+            },
+            {
+                "entryId": "ja:word:rice",
+                "path": "audio/0525847ce0e98844c6520826eb72a29aff79ea2b302d65be5e698a818c232a74.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "ごはん",
+                "sha256": "f5f9fd1d0fd33cf99587673dbde1b25397778bb81848fe485663b9615d72c6e3"
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "お",
+                "sha256": "5a89703412d90e8bc518242ca91fa93b5ea164aa2d3ff9b6e0b5996b7695f8e8"
+            },
+            {
+                "entryId": "ja:word:taberu",
+                "path": "audio/4ddd4e95428918c1c2f8c64b3eab948d332e376275c09dfcff69082a20ee9181.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "たべる",
+                "sha256": "8262b7aeff2b22e9833d1b42981bec20a361de18b6039fc49d1941454851cbb8"
+            }
+        ],
+        "peak": 26869,
+        "fullScaleSamples": 0,
+        "senseReview": {
+            "source": "https://jisho.org/search/ご飯",
+            "finding": "Jisho API confirms ご飯 / ごはん has cooked-rice and meal senses. Translations select the contextual sense for each independently authored example."
+        }
+    },
+    {
+        "entryId": "ja:sentence:restaurant-5",
+        "label": "レストランにテーブルといすがある",
+        "reading": "レストランにてーぶるといすがある",
+        "meanings": {
+            "en": "There is a table and a chair in the restaurant.",
+            "de": "Im Restaurant stehen ein Tisch und ein Stuhl.",
+            "id": "Ada meja dan kursi di restoran.",
+            "ja": "レストランにテーブルといすがある。"
+        },
+        "constituentIds": [
+            "ja:word:places-restaurant",
+            "ja:particle:ni",
+            "ja:word:table",
+            "ja:particle:to",
+            "ja:word:chair",
+            "ja:particle:ga",
+            "ja:word:aru-exist"
+        ],
+        "audioAvailability": "bundled-composition",
+        "audioPath": "audio/80fcc3b8c9e5af7c0b9c0691c1059085c4198a2edeae0ee525e382de822aa07a.wav",
+        "sha256": "80fcc3b8c9e5af7c0b9c0691c1059085c4198a2edeae0ee525e382de822aa07a",
+        "listening": "unverified-not-performed",
+        "textReview": "で marks either activity location or the utensil according to its noun. と marks a companion or coordinates foods/furniture. ごはん denotes a meal in the restaurant context and cooked rice in the fish/chopsticks examples. に marks existence location and が the items present; ある is appropriate to furniture. まで marks the walking endpoint. The question is polite with ですか; other examples are plain-form statements, not service-ordering formulas. Omitted subjects and singular glosses are illustrative.",
+        "newImages": false,
+        "newExternalRequests": 0,
+        "reviewDate": "2026-10-19",
+        "technicalReview": "All source samples retained exactly in mono PCM16 at 24000 Hz; segment equality, hashes, non-silence, sample bounds and header integrity checked by regression suite. Listening not performed.",
+        "sourceReview": {
+            "url": "https://www.irodori.jpf.go.jp/assets/data/starter/pdf/X_L08.pdf",
+            "pages": "18–22",
+            "finding": "Checked activity-location で, person-location にいる, object-location にある and location questions. Original examples are independently authored; no source audio or images copied."
+        },
+        "sourceAudioEvidence": [
+            {
+                "entryId": "ja:word:places-restaurant",
+                "path": "audio/df5bfce667c3edb0f0939b31e06a642a84733d7a542eb474176328264a3ed42e.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "レストラン",
+                "sha256": "65e032cad8ecdad89cc75bd8f946f691c69b0128a7497104f4c8c729d41542b7"
+            },
+            {
+                "entryId": "ja:particle:ni",
+                "path": "audio/1615cf278c2962c1657907b3686d653625229af2375f90dda5bfd5b178c7aedb.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "に",
+                "sha256": "7a58a00f29a345a3874cb0dd21af4ce6785672fa36ea70498c06e6e755fabd77"
+            },
+            {
+                "entryId": "ja:word:table",
+                "path": "audio/29f6a7e403e16e111e3eee3e859d6dee59887dcc720cb7837c894f308f7d8174.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "テーブル",
+                "sha256": "71c471429f9e76317ba340ee38928d98eeafff1670fede1218edad58623f1d2b"
+            },
+            {
+                "entryId": "ja:particle:to",
+                "path": "audio/606f3c1823245eee4195e2195e8189dad7df8cd21b7e6550a55b5c56e585916b.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "と",
+                "sha256": "1247391555d943254a995ac5ac2170d9039db38188a26eb6e783a7d4ee67bea5"
+            },
+            {
+                "entryId": "ja:word:chair",
+                "path": "audio/d0a12142b20f0a5d21786d9417c2582d03cdcdf1dfc5e1dea710a5502081b6a3.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "いす",
+                "sha256": "f48e07e1261326d111f6d65a2c956144f2d5f842a4b10b7f35c12f2f540b93b6"
+            },
+            {
+                "entryId": "ja:particle:ga",
+                "path": "audio/69d02d32db53e5eeb4bb6db01917e619478b734bd66988c4242ccc1a3e55655d.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "が",
+                "sha256": "3b13de62d800ba35732b1168e0f4715d2663568c3af5dfff67a49d81d1a02af1"
+            },
+            {
+                "entryId": "ja:word:aru-exist",
+                "path": "audio/0e997231f55465948ee67d44898dfd72abf6e48f95f8839fe116ca8978d53535.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "ある",
+                "sha256": "e8ba4639eb28dcce35ca4e779b236a92baca6f36648e3897500d5c6f1961b4d4"
+            }
+        ],
+        "peak": 26869,
+        "fullScaleSamples": 0,
+        "senseReview": {
+            "source": "https://jisho.org/search/ご飯",
+            "finding": "Jisho API confirms ご飯 / ごはん has cooked-rice and meal senses. Translations select the contextual sense for each independently authored example."
+        }
+    },
+    {
+        "entryId": "ja:sentence:restaurant-6",
+        "label": "レストランまで歩く",
+        "reading": "レストランまであるく",
+        "meanings": {
+            "en": "I walk to the restaurant.",
+            "de": "Ich gehe zu Fuß zum Restaurant.",
+            "id": "Saya berjalan kaki ke restoran.",
+            "ja": "レストランまで歩く。"
+        },
+        "constituentIds": [
+            "ja:word:places-restaurant",
+            "ja:particle:made",
+            "ja:word:aruku"
+        ],
+        "audioAvailability": "bundled-composition",
+        "audioPath": "audio/fe19c31922551a2f84d040e2d1e0b308f1b20417a6fc24ca530027c08fddeb33.wav",
+        "sha256": "fe19c31922551a2f84d040e2d1e0b308f1b20417a6fc24ca530027c08fddeb33",
+        "listening": "unverified-not-performed",
+        "textReview": "で marks either activity location or the utensil according to its noun. と marks a companion or coordinates foods/furniture. ごはん denotes a meal in the restaurant context and cooked rice in the fish/chopsticks examples. に marks existence location and が the items present; ある is appropriate to furniture. まで marks the walking endpoint. The question is polite with ですか; other examples are plain-form statements, not service-ordering formulas. Omitted subjects and singular glosses are illustrative.",
+        "newImages": false,
+        "newExternalRequests": 0,
+        "reviewDate": "2026-10-19",
+        "technicalReview": "All source samples retained exactly in mono PCM16 at 24000 Hz; segment equality, hashes, non-silence, sample bounds and header integrity checked by regression suite. Listening not performed.",
+        "sourceReview": {
+            "url": "https://www.irodori.jpf.go.jp/assets/data/starter/pdf/X_L08.pdf",
+            "pages": "18–22",
+            "finding": "Checked activity-location で, person-location にいる, object-location にある and location questions. Original examples are independently authored; no source audio or images copied."
+        },
+        "sourceAudioEvidence": [
+            {
+                "entryId": "ja:word:places-restaurant",
+                "path": "audio/df5bfce667c3edb0f0939b31e06a642a84733d7a542eb474176328264a3ed42e.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "レストラン",
+                "sha256": "65e032cad8ecdad89cc75bd8f946f691c69b0128a7497104f4c8c729d41542b7"
+            },
+            {
+                "entryId": "ja:particle:made",
+                "path": "audio/7b0f478e31bdc691c7da4e6e2042024cfac2bfeceec78edc22a88ef686905b69.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "まで",
+                "sha256": "549974e7ca56e1812e33fb12cf0aa7d57ea646f5ed33e7c81b2843f7f48c8fcb"
+            },
+            {
+                "entryId": "ja:word:aruku",
+                "path": "audio/a6c59dc12594eaf457c52ccdd8b684e37c0953566969c41f972f4d22b105bff4.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "あるく",
+                "sha256": "fe58b474ab72e00ba62b485071a0b525f328eef1d0687ed58bb1af05fe109b8f"
+            }
+        ],
+        "peak": 26869,
+        "fullScaleSamples": 0,
+        "senseReview": {
+            "source": "https://jisho.org/search/ご飯",
+            "finding": "Jisho API confirms ご飯 / ごはん has cooked-rice and meal senses. Translations select the contextual sense for each independently authored example."
+        }
+    }
+]

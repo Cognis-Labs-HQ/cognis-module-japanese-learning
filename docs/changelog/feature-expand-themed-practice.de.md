@@ -102,6 +102,10 @@ Bleistift, Stift, Notizbuch und Lineal mit vier geprüften Bildern je Modul, vie
 
 Sechs einzeln verfasste Kontextbeispiele je Modul mit exakten vorhandenen Audiosegmenten und einem eigenen Stapel ergänzen. Bedeutung, Register, Partikelfunktionen, Lesungen und Übersetzungen in vier Sprachen prüfen. Alle bisherigen Beispiele und Flexionsaufnahmen bleiben erhalten. Keine neuen Bilder oder externen Generierungsanfragen. Die Hörprüfung steht aus.
 
+## Im Restaurant
+
+Sechs einzeln verfasste Kontextbeispiele je Modul mit exakten vorhandenen Audiosegmenten und einem eigenen Stapel ergänzen. Bedeutung, Register, Partikelfunktionen, Lesungen und Übersetzungen in vier Sprachen prüfen. Alle bisherigen Beispiele und Flexionsaufnahmen bleiben erhalten. Keine neuen Bilder oder externen Generierungsanfragen. Die Hörprüfung steht aus.
+
 ## Commits
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)
