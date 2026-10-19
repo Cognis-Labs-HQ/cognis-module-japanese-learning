@@ -42,6 +42,10 @@ Die freigegebenen Reisewörter und Formen werden mit den festgelegten Stimmen er
 
 Vier neue Zeitangaben für Anfänger sind mit Lesungen, übersetzten Bedeutungen, Kontextbeispielen und einem Deckentwurf vorbereitet. Sie bleiben außerhalb der Laufzeitinhalte, bis eigene Illustrationen erzeugt und visuell geprüft sind.
 
+## Zeitangaben mit geprüften Medien
+
+Morgen, gestern, bald und später erscheinen mit vier visuell geprüften Illustrationen, Aufnahmen der festgelegten Stimme, vollständigen Lesungen, Kontextbeispielen und einem Vokabeldeck. Kalenderdaten, Ein-Minuten-Anzeigen und geordnete Handlungsszenen verdeutlichen die Zeitbezüge. Die Hörprüfung bleibt ausstehend.
+
 ## Commits
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)

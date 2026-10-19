@@ -42,6 +42,10 @@ Buat rekaman kata dan bentuk perjalanan yang diizinkan dengan suara yang ditetap
 
 Siapkan empat ungkapan waktu baru untuk pemula beserta bacaan, makna terjemahan, contoh kontekstual, dan rancangan dek. Simpan di luar konten runtime hingga ilustrasi tersendiri dibuat dan diperiksa secara visual.
 
+## Kosakata waktu dengan media yang diperiksa
+
+Terbitkan besok, kemarin, segera, dan nanti dengan empat ilustrasi yang diperiksa, rekaman suara yang ditetapkan, bacaan lengkap, contoh kontekstual, dan dek kosakata. Tanggal kalender, tanda kedatangan satu menit, dan urutan kegiatan memperjelas makna waktunya. Pemeriksaan melalui pendengaran belum dilakukan.
+
 ## Komit
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)
