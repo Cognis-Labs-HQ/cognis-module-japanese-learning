@@ -211,6 +211,29 @@
         "vocabularyAudit": "authoring/reviews/nature-vocabulary.json"
     },
     {
+        "theme": "outings",
+        "newDistinctVocabularyCount": 2,
+        "vocabulary": [
+            {
+                "entryId": "ja:word:outings-museum",
+                "label": "はくぶつかん"
+            },
+            {
+                "entryId": "ja:word:outings-zoo",
+                "label": "どうぶつえん"
+            }
+        ],
+        "newExampleCount": 4,
+        "exampleIds": [
+            "ja:sentence:outings-example-tomorrow-museum",
+            "ja:sentence:outings-example-see-elephant",
+            "ja:sentence:outings-example-wait-friend-museum",
+            "ja:sentence:outings-example-spacious-zoo"
+        ],
+        "recordedGrammaticalFormCount": 0,
+        "vocabularyAudit": "authoring/reviews/outings-vocabulary.json"
+    },
+    {
         "theme": "places",
         "newDistinctVocabularyCount": 4,
         "vocabulary": [
@@ -240,28 +263,5 @@
         ],
         "recordedGrammaticalFormCount": 0,
         "vocabularyAudit": "authoring/reviews/places-vocabulary.json"
-    },
-    {
-        "theme": "posture",
-        "newDistinctVocabularyCount": 2,
-        "vocabulary": [
-            {
-                "entryId": "ja:word:posture-sit",
-                "label": "すわる"
-            },
-            {
-                "entryId": "ja:word:posture-stand",
-                "label": "たつ"
-            }
-        ],
-        "newExampleCount": 4,
-        "exampleIds": [
-            "ja:sentence:posture-example-take-seat",
-            "ja:sentence:posture-example-stand-here",
-            "ja:sentence:posture-example-sit-with-friend",
-            "ja:sentence:posture-example-teacher-stand"
-        ],
-        "recordedGrammaticalFormCount": 16,
-        "vocabularyAudit": "authoring/reviews/posture-vocabulary.json"
     }
 ]

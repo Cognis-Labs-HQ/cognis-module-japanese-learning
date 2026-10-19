@@ -262,6 +262,10 @@ Add hard/soft and かたい/やわらかい with four inspected pressure demonst
 
 Add ball/racket and ボール/ラケット with four inspected equipment illustrations and four examples per language. Notes select the sporting senses, distinguish ボール from ボウル, and retain the long vowel and small っ. Exact plural recordings support English examples; Japanese examples practise giving and receiving. Sources, originals and PCM remain; listening is unverified.
 
+## Museum and zoo outings
+
+Add museum/zoo and はくぶつかん/どうぶつえん with four inspected venue illustrations and four varied examples per language. Notes distinguish museum coverage and preserve complete native readings. English museums/zoos have exact recordings; examples practise destinations, viewing and waiting for a friend. Sources, originals and PCM remain; listening is unverified.
+
 ## Commits
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)

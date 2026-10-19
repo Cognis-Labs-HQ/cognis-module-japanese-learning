@@ -1,0 +1,78 @@
+[
+    {
+        "path": "audio/ca03a122b5727decbb9a25332c22713e70b74bc30e6ecf8027af46e8c998126f.wav",
+        "text": "はくぶつかん",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "博物館",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "はくぶつかん",
+                "semanticRole": "lexicalUnit",
+                "readings": ["はくぶつかん"]
+            }
+        ],
+        "entries": [
+            "ja:word:outings-museum",
+            "ja:word:complete-pronunciation-outings-museum"
+        ],
+        "variants": [],
+        "sha256": "ca03a122b5727decbb9a25332c22713e70b74bc30e6ecf8027af46e8c998126f",
+        "frames": 22137,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "bdfc190bb4b5ed1eaec88016bd5127274a4b17590ee2dc35cd5535afd62b02a2"
+        }
+    },
+    {
+        "path": "audio/e8ce18453b556a9eb40cc731d4f7c18004b70de30edccd998f32b9b65e055138.wav",
+        "text": "どうぶつえん",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "動物園",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "どうぶつえん",
+                "semanticRole": "lexicalUnit",
+                "readings": ["どうぶつえん"]
+            }
+        ],
+        "entries": [
+            "ja:word:outings-zoo",
+            "ja:word:complete-pronunciation-outings-zoo"
+        ],
+        "variants": [],
+        "sha256": "e8ce18453b556a9eb40cc731d4f7c18004b70de30edccd998f32b9b65e055138",
+        "frames": 21022,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "4e9ce2b75bbb98dfd9322e487dab0d76b502e71ffde0555b07e24875d21cfb7d"
+        }
+    }
+]

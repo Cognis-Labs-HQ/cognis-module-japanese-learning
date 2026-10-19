@@ -262,6 +262,10 @@ Menambahkan hard/soft dan かたい/やわらかい dengan empat gambar tekanan 
 
 Menambahkan ball/racket dan ボール/ラケット dengan empat gambar peralatan yang diperiksa dan empat contoh per bahasa. Catatan memilih makna olahraga, membedakan ボール dari ボウル, serta mempertahankan vokal panjang dan っ kecil. Contoh Inggris memakai rekaman jamak yang tepat; contoh Jepang melatih memberi dan menerima. Sumber, gambar asli dan PCM disimpan; pendengaran belum diperiksa.
 
+## Kunjungan ke museum dan kebun binatang
+
+Menambahkan museum/zoo dan はくぶつかん/どうぶつえん dengan empat gambar tempat yang diperiksa dan empat contoh bervariasi per bahasa. Catatan menjelaskan cakupan museum dan mempertahankan bacaan lengkap. Museums/zoos memiliki rekaman tepat; contoh melatih tujuan, melihat dan menunggu teman. Sumber, gambar asli dan PCM disimpan; pendengaran belum diperiksa.
+
 ## Komit
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)

@@ -1,5 +1,36 @@
 [
     {
+        "theme": "tableware",
+        "newDistinctVocabularyCount": 4,
+        "vocabulary": [
+            {
+                "entryId": "ja:word:tableware-cup",
+                "label": "カップ"
+            },
+            {
+                "entryId": "ja:word:tableware-plate",
+                "label": "さら"
+            },
+            {
+                "entryId": "ja:word:tableware-spoon",
+                "label": "スプーン"
+            },
+            {
+                "entryId": "ja:word:tableware-fork",
+                "label": "フォーク"
+            }
+        ],
+        "newExampleCount": 4,
+        "exampleIds": [
+            "ja:sentence:tableware-example-cup",
+            "ja:sentence:tableware-example-plate",
+            "ja:sentence:tableware-example-spoon",
+            "ja:sentence:tableware-example-fork"
+        ],
+        "recordedGrammaticalFormCount": 0,
+        "vocabularyAudit": "authoring/reviews/tableware-vocabulary.json"
+    },
+    {
         "theme": "time",
         "newDistinctVocabularyCount": 4,
         "vocabulary": [
@@ -226,21 +257,5 @@
         ],
         "recordedGrammaticalFormCount": 0,
         "vocabularyAudit": "authoring/reviews/daily.json"
-    },
-    {
-        "theme": "shopping",
-        "newDistinctVocabularyCount": 0,
-        "vocabulary": [],
-        "newExampleCount": 6,
-        "exampleIds": [
-            "ja:sentence:shopping-buy-small-bag",
-            "ja:sentence:shopping-buy-hat-coat",
-            "ja:sentence:shopping-small-shoes",
-            "ja:sentence:shopping-where-phone",
-            "ja:sentence:shopping-like-computers",
-            "ja:sentence:shopping-umbrella-here"
-        ],
-        "recordedGrammaticalFormCount": 0,
-        "vocabularyAudit": "authoring/reviews/shopping.json"
     }
 ]
