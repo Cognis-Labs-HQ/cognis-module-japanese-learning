@@ -1,0 +1,242 @@
+[
+    {
+        "entryId": "ja:sentence:fruit-example-peach",
+        "label": "スーパーでももをかう",
+        "reading": "スーパーでももをかう",
+        "meanings": {
+            "en": "I buy peaches at the supermarket.",
+            "de": "Ich kaufe Pfirsiche im Supermarkt.",
+            "id": "Saya membeli buah persik di supermarket.",
+            "ja": "スーパーで桃を買う。"
+        },
+        "constituentIds": [
+            "ja:word:places-supermarket",
+            "ja:particle:de",
+            "ja:word:fruit-peach",
+            "ja:particle:wo",
+            "ja:word:travel-buy"
+        ],
+        "audioAvailability": "bundled-composition",
+        "audioPath": "audio/466f338d5588af89a1777b94223bc50f101017ec207e81f5b1e63906378ec920.wav",
+        "sha256": "466f338d5588af89a1777b94223bc50f101017ec207e81f5b1e63906378ec920",
+        "listening": "unverified-not-performed",
+        "textReview": "English two requires peaches; watermelon and pineapple use food mass-noun senses, and in summer expresses season. Japanese で marks shopping location, に marks existence location or seasonal time, and 好き takes が. なし is the fruit and ある is appropriate for it. Number and omitted subjects receive illustrative natural translations. All older examples remain intact.",
+        "sourceAudioEvidence": [
+            {
+                "entryId": "ja:word:places-supermarket",
+                "path": "audio/4fe867dd6a28eb23632a97e20d639fe0538f619eebd6614d0dceaf7bc0780f72.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "スーパー",
+                "sha256": "e4a28f23dbfa03a2e7f61c88cabd2955dc13c0473ec55e7eabc1e1c34f0528c1"
+            },
+            {
+                "entryId": "ja:particle:de",
+                "path": "audio/df81472c8108ad9b47d8d90db017ff1c1b553d80263d6a2c59de1571671f3eee.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "で",
+                "sha256": "57b1611b914f170a0de5d42042b0a97c1dada8d50838ba27ed1c2677dcb232c3"
+            },
+            {
+                "entryId": "ja:word:fruit-peach",
+                "path": "audio/094a3bf8198512fe56f28a047b59c5d75e0bbf5178d4fc6da691e6517a06a480.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "桃",
+                "sha256": "5f0cb523581332fe556dad06a89689e4344314ddc6f3c242f142eb2f037dbcd9"
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "お",
+                "sha256": "5a89703412d90e8bc518242ca91fa93b5ea164aa2d3ff9b6e0b5996b7695f8e8"
+            },
+            {
+                "entryId": "ja:word:travel-buy",
+                "path": "audio/1a880a2cfc93aedb14ed94ad5cbd8ba5a803aa377bb98f0bf534e0ce8905bfd4.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "かう",
+                "sha256": "7848f7569457e2ffd16aa97a64a5439028354e176df4de3def2f555a4e45cc87"
+            }
+        ],
+        "peak": 25416,
+        "fullScaleSamples": 0
+    },
+    {
+        "entryId": "ja:sentence:fruit-example-pear",
+        "label": "なしはさらにある",
+        "reading": "なしはさらにある",
+        "meanings": {
+            "en": "The Asian pear is on the plate.",
+            "de": "Die Nashi-Birne liegt auf dem Teller.",
+            "id": "Pir Asia itu ada di atas piring.",
+            "ja": "梨は皿にある。"
+        },
+        "constituentIds": [
+            "ja:word:fruit-pear",
+            "ja:particle:wa",
+            "ja:word:tableware-plate",
+            "ja:particle:ni",
+            "ja:word:aru-exist"
+        ],
+        "audioAvailability": "bundled-composition",
+        "audioPath": "audio/3a2171df0ab213616f6063e13fc8f6bd9969dd1b8c1b7ea3d6fdce312929901c.wav",
+        "sha256": "3a2171df0ab213616f6063e13fc8f6bd9969dd1b8c1b7ea3d6fdce312929901c",
+        "listening": "unverified-not-performed",
+        "textReview": "English two requires peaches; watermelon and pineapple use food mass-noun senses, and in summer expresses season. Japanese で marks shopping location, に marks existence location or seasonal time, and 好き takes が. なし is the fruit and ある is appropriate for it. Number and omitted subjects receive illustrative natural translations. All older examples remain intact.",
+        "sourceAudioEvidence": [
+            {
+                "entryId": "ja:word:fruit-pear",
+                "path": "audio/a237b690aa20c8fb493364754d2f7087f47baab9facf44f1948387813af8c5b0.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "梨",
+                "sha256": "f5b66389a264c2f45600ac84f0716fe67049231a05232dd8a6d6f8cff98932f1"
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "path": "audio/d7c9e57654e559dfba3bd6f78c2f27416a61f8b28d56145d84a62fe25b70c94d.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "わ",
+                "sha256": "03b8d36aab677f09d2ecaad611a22b15785f0c717e6d6983dc5ef47296670c54"
+            },
+            {
+                "entryId": "ja:word:tableware-plate",
+                "path": "audio/696fb7666b658b7208e991f2c58509fc3a87b8629251f025acf3bc145a44594f.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "皿",
+                "sha256": "ad445a607b6e2215bc02d96b18647ea8220075afe5e3cb743fd52f9f7e111623"
+            },
+            {
+                "entryId": "ja:particle:ni",
+                "path": "audio/1615cf278c2962c1657907b3686d653625229af2375f90dda5bfd5b178c7aedb.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "に",
+                "sha256": "7a58a00f29a345a3874cb0dd21af4ce6785672fa36ea70498c06e6e755fabd77"
+            },
+            {
+                "entryId": "ja:word:aru-exist",
+                "path": "audio/0e997231f55465948ee67d44898dfd72abf6e48f95f8839fe116ca8978d53535.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "ある",
+                "sha256": "e8ba4639eb28dcce35ca4e779b236a92baca6f36648e3897500d5c6f1961b4d4"
+            }
+        ],
+        "peak": 26869,
+        "fullScaleSamples": 0
+    },
+    {
+        "entryId": "ja:sentence:fruit-example-watermelon",
+        "label": "なつにすいかを食べる",
+        "reading": "なつにすいかをたべる",
+        "meanings": {
+            "en": "I eat watermelon in summer.",
+            "de": "Ich esse im Sommer Wassermelone.",
+            "id": "Saya makan semangka pada musim panas.",
+            "ja": "夏にスイカを食べる。"
+        },
+        "constituentIds": [
+            "ja:word:seasons-summer",
+            "ja:particle:ni",
+            "ja:word:fruit-watermelon",
+            "ja:particle:wo",
+            "ja:word:taberu"
+        ],
+        "audioAvailability": "bundled-composition",
+        "audioPath": "audio/ff96348ae741de7e7070448c4e5c56356ad032db37b53394761c2e856a001e6b.wav",
+        "sha256": "ff96348ae741de7e7070448c4e5c56356ad032db37b53394761c2e856a001e6b",
+        "listening": "unverified-not-performed",
+        "textReview": "English two requires peaches; watermelon and pineapple use food mass-noun senses, and in summer expresses season. Japanese で marks shopping location, に marks existence location or seasonal time, and 好き takes が. なし is the fruit and ある is appropriate for it. Number and omitted subjects receive illustrative natural translations. All older examples remain intact.",
+        "sourceAudioEvidence": [
+            {
+                "entryId": "ja:word:seasons-summer",
+                "path": "audio/b2028b2401e952d930346fa7ef3c6cbedaad4b0505c7e25642c7f1009ecb4f9c.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "夏",
+                "sha256": "5ea9750dda663cf406dfec5ae83d1776464ac2a0907aec5b8d36f9744c2edc92"
+            },
+            {
+                "entryId": "ja:particle:ni",
+                "path": "audio/1615cf278c2962c1657907b3686d653625229af2375f90dda5bfd5b178c7aedb.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "に",
+                "sha256": "7a58a00f29a345a3874cb0dd21af4ce6785672fa36ea70498c06e6e755fabd77"
+            },
+            {
+                "entryId": "ja:word:fruit-watermelon",
+                "path": "audio/3c3ec13a49e38810f0ed83037718f90506d43b4c5e95d91d51f562cc6911af79.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "スイカ",
+                "sha256": "4d0220336a89ba2891f016a8c4487ee4d160ade80caeb4bdb69cbbdde633934f"
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "お",
+                "sha256": "5a89703412d90e8bc518242ca91fa93b5ea164aa2d3ff9b6e0b5996b7695f8e8"
+            },
+            {
+                "entryId": "ja:word:taberu",
+                "path": "audio/4ddd4e95428918c1c2f8c64b3eab948d332e376275c09dfcff69082a20ee9181.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "たべる",
+                "sha256": "8262b7aeff2b22e9833d1b42981bec20a361de18b6039fc49d1941454851cbb8"
+            }
+        ],
+        "peak": 26869,
+        "fullScaleSamples": 0
+    },
+    {
+        "entryId": "ja:sentence:fruit-example-pineapple",
+        "label": "パイナップルが好きです",
+        "reading": "パイナップルがすきです",
+        "meanings": {
+            "en": "I like pineapple.",
+            "de": "Ich mag Ananas.",
+            "id": "Saya suka nanas.",
+            "ja": "パイナップルが好きです。"
+        },
+        "constituentIds": [
+            "ja:word:fruit-pineapple",
+            "ja:particle:ga",
+            "ja:word:suki",
+            "ja:word:desu"
+        ],
+        "audioAvailability": "bundled-composition",
+        "audioPath": "audio/af271f2b423feb48fbbcebc8166456a1fd732cda0e8ec6c42b84d7185c9e0188.wav",
+        "sha256": "af271f2b423feb48fbbcebc8166456a1fd732cda0e8ec6c42b84d7185c9e0188",
+        "listening": "unverified-not-performed",
+        "textReview": "English two requires peaches; watermelon and pineapple use food mass-noun senses, and in summer expresses season. Japanese で marks shopping location, に marks existence location or seasonal time, and 好き takes が. なし is the fruit and ある is appropriate for it. Number and omitted subjects receive illustrative natural translations. All older examples remain intact.",
+        "sourceAudioEvidence": [
+            {
+                "entryId": "ja:word:fruit-pineapple",
+                "path": "audio/06bd68d3dbb9f646d3fe8757fef4488e665058920413662fc7369bf91ea96691.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "パイナップル",
+                "sha256": "412ddad8b4442984139059e05a8232c8ba40b327fc68ce69fbcf7b32533b7c16"
+            },
+            {
+                "entryId": "ja:particle:ga",
+                "path": "audio/69d02d32db53e5eeb4bb6db01917e619478b734bd66988c4242ccc1a3e55655d.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "が",
+                "sha256": "3b13de62d800ba35732b1168e0f4715d2663568c3af5dfff67a49d81d1a02af1"
+            },
+            {
+                "entryId": "ja:word:suki",
+                "path": "audio/fff2a2381ef1abd6f3b0e24b6390a1f76d9fda74ec68bdc300ac3ff137a00214.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "すき",
+                "sha256": "d8481b7cfe126a9cb66c5706352497848d29ac6ad45f2cab0c953db5d3d8cbc3"
+            },
+            {
+                "entryId": "ja:word:desu",
+                "path": "audio/2959a5dcab722b7d5c39f67845f1d6a3d6ede5f23e554e9547bca0e6cb62c56b.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "です",
+                "sha256": "d0234f8c988b83fef6bd73c37296bf1a45c0e71f6afc96ac32aa4213e3deb89e"
+            }
+        ],
+        "peak": 26869,
+        "fullScaleSamples": 0
+    }
+]

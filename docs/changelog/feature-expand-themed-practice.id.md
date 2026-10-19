@@ -114,6 +114,10 @@ Tambahkan kelinci, kuda, sapi, dan babi dengan empat gambar yang diperiksa per m
 
 Tambahkan sofa, lampu, cermin, dan bantal dengan empat gambar yang diperiksa per modul, empat bentuk jamak Inggris, delapan contoh alami, dan dek perlengkapan rumah. Periksa ァ kecil dalam ソファ, makna lampu dari ランプ, が bersuara dalam かがみ, serta makna bantal tidur. Gunakan suara yang ditetapkan dan segmen audio persis. Semua contoh dan bentuk sebelumnya tetap utuh. Pemeriksaan pendengaran belum dilakukan.
 
+## Buah Lain
+
+Tambahkan persik, pir, semangka, dan nanas dengan empat gambar yang diperiksa per modul, empat bentuk jamak Inggris, delapan contoh alami, dan dek buah. Bedakan pir Eropa dan Asia serta buah utuh dan makanan; pertahankan suku kata tambahan dalam peaches dan ッ kecil dalam パイナップル. Ringkasan kumulatif memisahkan kosakata dasar, contoh, bentuk yang direkam, dan total rekaman data, dengan pengujian regresi. Pemeriksaan pendengaran belum dilakukan.
+
 ## Komit
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)

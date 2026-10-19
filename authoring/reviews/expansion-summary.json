@@ -1,0 +1,647 @@
+{
+    "schemaVersion": 1,
+    "updatedDate": "2026-10-19",
+    "scope": "Autonomous themed expansion series beginning with Travel. Counts are cumulative across its review branches, not a diff against the current PR base. Pre-existing beginner content and reference dictionary inventories are excluded from new-vocabulary totals.",
+    "countingRules": {
+        "newDistinctVocabulary": "Unique visible base lexical entry IDs introduced by the named theme. Hidden readings, inflected support records, characters, definitions, examples and localized usage-note text are excluded.",
+        "grammaticalForms": "Unique nonempty entryId/setId/path recording bindings attached to those new base words; forms are not counted as new vocabulary.",
+        "examples": "Independently authored composite sentence cards in the named theme files. Reused sentences in other decks do not add new examples.",
+        "libraryRecords": "Current total seed content records of all classes, shown only as a separate inventory measure."
+    },
+    "totals": {
+        "newDistinctVocabulary": 72,
+        "newExamples": 100,
+        "recordedGrammaticalForms": 64
+    },
+    "themes": [
+        {
+            "theme": "travel",
+            "newDistinctVocabularyCount": 12,
+            "vocabulary": [
+                {
+                    "entryId": "ja:word:travel-bicycle",
+                    "label": "じてんしゃ"
+                },
+                {
+                    "entryId": "ja:word:travel-map",
+                    "label": "ちず"
+                },
+                {
+                    "entryId": "ja:word:travel-passport",
+                    "label": "パスポート"
+                },
+                {
+                    "entryId": "ja:word:travel-suitcase",
+                    "label": "スーツケース"
+                },
+                {
+                    "entryId": "ja:word:travel-ticket",
+                    "label": "きっぷ"
+                },
+                {
+                    "entryId": "ja:word:travel-station",
+                    "label": "えき"
+                },
+                {
+                    "entryId": "ja:word:travel-platform",
+                    "label": "ホーム"
+                },
+                {
+                    "entryId": "ja:word:travel-airport",
+                    "label": "くうこう"
+                },
+                {
+                    "entryId": "ja:word:travel-buy",
+                    "label": "かう"
+                },
+                {
+                    "entryId": "ja:word:travel-wait",
+                    "label": "まつ"
+                },
+                {
+                    "entryId": "ja:word:travel-arrive",
+                    "label": "つく"
+                },
+                {
+                    "entryId": "ja:word:travel-depart",
+                    "label": "しゅっぱつする"
+                }
+            ],
+            "newExampleCount": 8,
+            "exampleIds": [
+                "ja:sentence:travel-buy-ticket",
+                "ja:sentence:travel-arrive-station",
+                "ja:sentence:travel-wait-platform",
+                "ja:sentence:travel-depart-airport",
+                "ja:sentence:travel-passport-here",
+                "ja:sentence:travel-suitcase-there",
+                "ja:sentence:travel-bicycle-school",
+                "ja:sentence:travel-see-map"
+            ],
+            "recordedGrammaticalFormCount": 32,
+            "vocabularyAudit": "authoring/reviews/travel/index.json"
+        },
+        {
+            "theme": "animals",
+            "newDistinctVocabularyCount": 4,
+            "vocabulary": [
+                {
+                    "entryId": "ja:word:animals-rabbit",
+                    "label": "うさぎ"
+                },
+                {
+                    "entryId": "ja:word:animals-horse",
+                    "label": "うま"
+                },
+                {
+                    "entryId": "ja:word:animals-cow",
+                    "label": "うし"
+                },
+                {
+                    "entryId": "ja:word:animals-pig",
+                    "label": "ぶた"
+                }
+            ],
+            "newExampleCount": 4,
+            "exampleIds": [
+                "ja:sentence:animals-example-rabbit",
+                "ja:sentence:animals-example-horse",
+                "ja:sentence:animals-example-cow",
+                "ja:sentence:animals-example-pig"
+            ],
+            "recordedGrammaticalFormCount": 0,
+            "vocabularyAudit": "authoring/reviews/animals-vocabulary.json"
+        },
+        {
+            "theme": "care",
+            "newDistinctVocabularyCount": 4,
+            "vocabulary": [
+                {
+                    "entryId": "ja:word:care-soap",
+                    "label": "せっけん"
+                },
+                {
+                    "entryId": "ja:word:care-towel",
+                    "label": "タオル"
+                },
+                {
+                    "entryId": "ja:word:care-toothbrush",
+                    "label": "ハブラシ"
+                },
+                {
+                    "entryId": "ja:word:care-toothpaste",
+                    "label": "はみがきこ"
+                }
+            ],
+            "newExampleCount": 4,
+            "exampleIds": [
+                "ja:sentence:care-example-soap",
+                "ja:sentence:care-example-towel",
+                "ja:sentence:care-example-toothbrush",
+                "ja:sentence:care-example-toothpaste"
+            ],
+            "recordedGrammaticalFormCount": 0,
+            "vocabularyAudit": "authoring/reviews/care-vocabulary.json"
+        },
+        {
+            "theme": "clothing",
+            "newDistinctVocabularyCount": 4,
+            "vocabulary": [
+                {
+                    "entryId": "ja:word:clothing-shirt",
+                    "label": "シャツ"
+                },
+                {
+                    "entryId": "ja:word:clothing-dress",
+                    "label": "ワンピース"
+                },
+                {
+                    "entryId": "ja:word:clothing-sock",
+                    "label": "くつした"
+                },
+                {
+                    "entryId": "ja:word:clothing-skirt",
+                    "label": "スカート"
+                }
+            ],
+            "newExampleCount": 4,
+            "exampleIds": [
+                "ja:sentence:clothing-example-shirt",
+                "ja:sentence:clothing-example-dress",
+                "ja:sentence:clothing-example-sock",
+                "ja:sentence:clothing-example-skirt"
+            ],
+            "recordedGrammaticalFormCount": 0,
+            "vocabularyAudit": "authoring/reviews/clothing-vocabulary.json"
+        },
+        {
+            "theme": "colors",
+            "newDistinctVocabularyCount": 4,
+            "vocabulary": [
+                {
+                    "entryId": "ja:word:colors-red",
+                    "label": "あか"
+                },
+                {
+                    "entryId": "ja:word:colors-blue",
+                    "label": "あお"
+                },
+                {
+                    "entryId": "ja:word:colors-green",
+                    "label": "みどり"
+                },
+                {
+                    "entryId": "ja:word:colors-yellow",
+                    "label": "きいろ"
+                }
+            ],
+            "newExampleCount": 4,
+            "exampleIds": [
+                "ja:sentence:colors-like-red",
+                "ja:sentence:colors-like-blue",
+                "ja:sentence:colors-like-green",
+                "ja:sentence:colors-like-yellow"
+            ],
+            "recordedGrammaticalFormCount": 0,
+            "vocabularyAudit": "authoring/reviews/colors-vocabulary.json"
+        },
+        {
+            "theme": "directions",
+            "newDistinctVocabularyCount": 4,
+            "vocabulary": [
+                {
+                    "entryId": "ja:word:directions-left",
+                    "label": "ひだり"
+                },
+                {
+                    "entryId": "ja:word:directions-right",
+                    "label": "みぎ"
+                },
+                {
+                    "entryId": "ja:word:directions-north",
+                    "label": "きた"
+                },
+                {
+                    "entryId": "ja:word:directions-south",
+                    "label": "みなみ"
+                }
+            ],
+            "newExampleCount": 4,
+            "exampleIds": [
+                "ja:sentence:directions-location-left",
+                "ja:sentence:directions-location-right",
+                "ja:sentence:directions-location-north",
+                "ja:sentence:directions-location-south"
+            ],
+            "recordedGrammaticalFormCount": 0,
+            "vocabularyAudit": "authoring/reviews/directions-vocabulary.json"
+        },
+        {
+            "theme": "fruit",
+            "newDistinctVocabularyCount": 4,
+            "vocabulary": [
+                {
+                    "entryId": "ja:word:fruit-peach",
+                    "label": "もも"
+                },
+                {
+                    "entryId": "ja:word:fruit-pear",
+                    "label": "なし"
+                },
+                {
+                    "entryId": "ja:word:fruit-watermelon",
+                    "label": "すいか"
+                },
+                {
+                    "entryId": "ja:word:fruit-pineapple",
+                    "label": "パイナップル"
+                }
+            ],
+            "newExampleCount": 4,
+            "exampleIds": [
+                "ja:sentence:fruit-example-peach",
+                "ja:sentence:fruit-example-pear",
+                "ja:sentence:fruit-example-watermelon",
+                "ja:sentence:fruit-example-pineapple"
+            ],
+            "recordedGrammaticalFormCount": 0,
+            "vocabularyAudit": "authoring/reviews/fruit-vocabulary.json"
+        },
+        {
+            "theme": "furnishings",
+            "newDistinctVocabularyCount": 4,
+            "vocabulary": [
+                {
+                    "entryId": "ja:word:furnishings-sofa",
+                    "label": "ソファ"
+                },
+                {
+                    "entryId": "ja:word:furnishings-lamp",
+                    "label": "ランプ"
+                },
+                {
+                    "entryId": "ja:word:furnishings-mirror",
+                    "label": "かがみ"
+                },
+                {
+                    "entryId": "ja:word:furnishings-pillow",
+                    "label": "まくら"
+                }
+            ],
+            "newExampleCount": 4,
+            "exampleIds": [
+                "ja:sentence:furnishings-example-sofa",
+                "ja:sentence:furnishings-example-lamp",
+                "ja:sentence:furnishings-example-mirror",
+                "ja:sentence:furnishings-example-pillow"
+            ],
+            "recordedGrammaticalFormCount": 0,
+            "vocabularyAudit": "authoring/reviews/furnishings-vocabulary.json"
+        },
+        {
+            "theme": "household",
+            "newDistinctVocabularyCount": 4,
+            "vocabulary": [
+                {
+                    "entryId": "ja:word:household-wash",
+                    "label": "あらう"
+                },
+                {
+                    "entryId": "ja:word:household-cook",
+                    "label": "りょうりする"
+                },
+                {
+                    "entryId": "ja:word:household-clean",
+                    "label": "そうじする"
+                },
+                {
+                    "entryId": "ja:word:household-dry",
+                    "label": "かわかす"
+                }
+            ],
+            "newExampleCount": 4,
+            "exampleIds": [
+                "ja:sentence:household-example-wash",
+                "ja:sentence:household-example-cook",
+                "ja:sentence:household-example-clean",
+                "ja:sentence:household-example-dry"
+            ],
+            "recordedGrammaticalFormCount": 32,
+            "vocabularyAudit": "authoring/reviews/household-vocabulary.json"
+        },
+        {
+            "theme": "places",
+            "newDistinctVocabularyCount": 4,
+            "vocabulary": [
+                {
+                    "entryId": "ja:word:places-library",
+                    "label": "としょかん"
+                },
+                {
+                    "entryId": "ja:word:places-hospital",
+                    "label": "びょういん"
+                },
+                {
+                    "entryId": "ja:word:places-supermarket",
+                    "label": "スーパー"
+                },
+                {
+                    "entryId": "ja:word:places-restaurant",
+                    "label": "レストラン"
+                }
+            ],
+            "newExampleCount": 4,
+            "exampleIds": [
+                "ja:sentence:places-example-library",
+                "ja:sentence:places-example-hospital",
+                "ja:sentence:places-example-supermarket",
+                "ja:sentence:places-example-restaurant"
+            ],
+            "recordedGrammaticalFormCount": 0,
+            "vocabularyAudit": "authoring/reviews/places-vocabulary.json"
+        },
+        {
+            "theme": "school",
+            "newDistinctVocabularyCount": 4,
+            "vocabulary": [
+                {
+                    "entryId": "ja:word:school-pencil",
+                    "label": "えんぴつ"
+                },
+                {
+                    "entryId": "ja:word:school-pen",
+                    "label": "ペン"
+                },
+                {
+                    "entryId": "ja:word:school-notebook",
+                    "label": "ノート"
+                },
+                {
+                    "entryId": "ja:word:school-ruler",
+                    "label": "じょうぎ"
+                }
+            ],
+            "newExampleCount": 4,
+            "exampleIds": [
+                "ja:sentence:school-example-pencil",
+                "ja:sentence:school-example-pen",
+                "ja:sentence:school-example-notebook",
+                "ja:sentence:school-example-ruler"
+            ],
+            "recordedGrammaticalFormCount": 0,
+            "vocabularyAudit": "authoring/reviews/school-vocabulary.json"
+        },
+        {
+            "theme": "seasons",
+            "newDistinctVocabularyCount": 4,
+            "vocabulary": [
+                {
+                    "entryId": "ja:word:seasons-spring",
+                    "label": "はる"
+                },
+                {
+                    "entryId": "ja:word:seasons-summer",
+                    "label": "なつ"
+                },
+                {
+                    "entryId": "ja:word:seasons-autumn",
+                    "label": "あき"
+                },
+                {
+                    "entryId": "ja:word:seasons-winter",
+                    "label": "ふゆ"
+                }
+            ],
+            "newExampleCount": 4,
+            "exampleIds": [
+                "ja:sentence:seasons-activity-spring",
+                "ja:sentence:seasons-activity-summer",
+                "ja:sentence:seasons-activity-autumn",
+                "ja:sentence:seasons-activity-winter"
+            ],
+            "recordedGrammaticalFormCount": 0,
+            "vocabularyAudit": "authoring/reviews/seasons-vocabulary.json"
+        },
+        {
+            "theme": "tableware",
+            "newDistinctVocabularyCount": 4,
+            "vocabulary": [
+                {
+                    "entryId": "ja:word:tableware-cup",
+                    "label": "カップ"
+                },
+                {
+                    "entryId": "ja:word:tableware-plate",
+                    "label": "さら"
+                },
+                {
+                    "entryId": "ja:word:tableware-spoon",
+                    "label": "スプーン"
+                },
+                {
+                    "entryId": "ja:word:tableware-fork",
+                    "label": "フォーク"
+                }
+            ],
+            "newExampleCount": 4,
+            "exampleIds": [
+                "ja:sentence:tableware-example-cup",
+                "ja:sentence:tableware-example-plate",
+                "ja:sentence:tableware-example-spoon",
+                "ja:sentence:tableware-example-fork"
+            ],
+            "recordedGrammaticalFormCount": 0,
+            "vocabularyAudit": "authoring/reviews/tableware-vocabulary.json"
+        },
+        {
+            "theme": "time",
+            "newDistinctVocabularyCount": 4,
+            "vocabulary": [
+                {
+                    "entryId": "ja:word:time-tomorrow",
+                    "label": "あした"
+                },
+                {
+                    "entryId": "ja:word:time-yesterday",
+                    "label": "きのう"
+                },
+                {
+                    "entryId": "ja:word:time-soon",
+                    "label": "もうすぐ"
+                },
+                {
+                    "entryId": "ja:word:time-later",
+                    "label": "あとで"
+                }
+            ],
+            "newExampleCount": 0,
+            "exampleIds": [],
+            "recordedGrammaticalFormCount": 0,
+            "vocabularyAudit": "authoring/reviews/time-vocabulary.json"
+        },
+        {
+            "theme": "transport",
+            "newDistinctVocabularyCount": 4,
+            "vocabulary": [
+                {
+                    "entryId": "ja:word:transport-airplane",
+                    "label": "ひこうき"
+                },
+                {
+                    "entryId": "ja:word:transport-boat",
+                    "label": "ボート"
+                },
+                {
+                    "entryId": "ja:word:transport-taxi",
+                    "label": "タクシー"
+                },
+                {
+                    "entryId": "ja:word:transport-motorcycle",
+                    "label": "オートバイ"
+                }
+            ],
+            "newExampleCount": 4,
+            "exampleIds": [
+                "ja:sentence:transport-example-airplane",
+                "ja:sentence:transport-example-boat",
+                "ja:sentence:transport-example-taxi",
+                "ja:sentence:transport-example-motorcycle"
+            ],
+            "recordedGrammaticalFormCount": 0,
+            "vocabularyAudit": "authoring/reviews/transport-vocabulary.json"
+        },
+        {
+            "theme": "weather",
+            "newDistinctVocabularyCount": 4,
+            "vocabulary": [
+                {
+                    "entryId": "ja:word:weather-sun",
+                    "label": "たいよう"
+                },
+                {
+                    "entryId": "ja:word:weather-snow",
+                    "label": "ゆき"
+                },
+                {
+                    "entryId": "ja:word:weather-wind",
+                    "label": "かぜ"
+                },
+                {
+                    "entryId": "ja:word:weather-cloud",
+                    "label": "くも"
+                }
+            ],
+            "newExampleCount": 4,
+            "exampleIds": [
+                "ja:sentence:weather-example-sun",
+                "ja:sentence:weather-example-snow",
+                "ja:sentence:weather-example-wind",
+                "ja:sentence:weather-example-cloud"
+            ],
+            "recordedGrammaticalFormCount": 0,
+            "vocabularyAudit": "authoring/reviews/weather-vocabulary.json"
+        },
+        {
+            "theme": "mealtime",
+            "newDistinctVocabularyCount": 0,
+            "vocabulary": [],
+            "newExampleCount": 6,
+            "exampleIds": [
+                "ja:sentence:mealtime-eat-cheese",
+                "ja:sentence:mealtime-like-soup",
+                "ja:sentence:mealtime-have-butter",
+                "ja:sentence:mealtime-eat-rice",
+                "ja:sentence:mealtime-small-tomato",
+                "ja:sentence:mealtime-drink-with-friend"
+            ],
+            "recordedGrammaticalFormCount": 0,
+            "vocabularyAudit": "authoring/reviews/mealtime.json"
+        },
+        {
+            "theme": "daily",
+            "newDistinctVocabularyCount": 0,
+            "vocabulary": [],
+            "newExampleCount": 6,
+            "exampleIds": [
+                "ja:sentence:daily-go-school",
+                "ja:sentence:daily-walk-friend",
+                "ja:sentence:daily-eat-friend",
+                "ja:sentence:daily-learn-school",
+                "ja:sentence:daily-drink-slowly",
+                "ja:sentence:daily-walk-school-here"
+            ],
+            "recordedGrammaticalFormCount": 0,
+            "vocabularyAudit": "authoring/reviews/daily.json"
+        },
+        {
+            "theme": "shopping",
+            "newDistinctVocabularyCount": 0,
+            "vocabulary": [],
+            "newExampleCount": 6,
+            "exampleIds": [
+                "ja:sentence:shopping-buy-small-bag",
+                "ja:sentence:shopping-buy-hat-coat",
+                "ja:sentence:shopping-small-shoes",
+                "ja:sentence:shopping-where-phone",
+                "ja:sentence:shopping-like-computers",
+                "ja:sentence:shopping-umbrella-here"
+            ],
+            "recordedGrammaticalFormCount": 0,
+            "vocabularyAudit": "authoring/reviews/shopping.json"
+        },
+        {
+            "theme": "daily-needs",
+            "newDistinctVocabularyCount": 0,
+            "vocabulary": [],
+            "newExampleCount": 6,
+            "exampleIds": [
+                "ja:sentence:daily-needs-1",
+                "ja:sentence:daily-needs-2",
+                "ja:sentence:daily-needs-3",
+                "ja:sentence:daily-needs-4",
+                "ja:sentence:daily-needs-5",
+                "ja:sentence:daily-needs-6"
+            ],
+            "recordedGrammaticalFormCount": 0,
+            "vocabularyAudit": "authoring/reviews/daily-needs-sentences.json"
+        },
+        {
+            "theme": "classroom",
+            "newDistinctVocabularyCount": 0,
+            "vocabulary": [],
+            "newExampleCount": 6,
+            "exampleIds": [
+                "ja:sentence:classroom-1",
+                "ja:sentence:classroom-2",
+                "ja:sentence:classroom-3",
+                "ja:sentence:classroom-4",
+                "ja:sentence:classroom-5",
+                "ja:sentence:classroom-6"
+            ],
+            "recordedGrammaticalFormCount": 0,
+            "vocabularyAudit": "authoring/reviews/classroom-sentences.json"
+        },
+        {
+            "theme": "restaurant",
+            "newDistinctVocabularyCount": 0,
+            "vocabulary": [],
+            "newExampleCount": 6,
+            "exampleIds": [
+                "ja:sentence:restaurant-1",
+                "ja:sentence:restaurant-2",
+                "ja:sentence:restaurant-3",
+                "ja:sentence:restaurant-4",
+                "ja:sentence:restaurant-5",
+                "ja:sentence:restaurant-6"
+            ],
+            "recordedGrammaticalFormCount": 0,
+            "vocabularyAudit": "authoring/reviews/restaurant-sentences.json"
+        }
+    ],
+    "currentLibrary": {
+        "totalRecords": 1324,
+        "illustrations": 174,
+        "starterDecks": 36
+    },
+    "audioListening": "unverified-not-performed-publication-authorized"
+}

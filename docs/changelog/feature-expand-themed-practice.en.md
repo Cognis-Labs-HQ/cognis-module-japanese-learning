@@ -114,6 +114,10 @@ Add rabbit, horse, cow and pig with four inspected pictures per module, four Eng
 
 Add sofa, lamp, mirror and pillow with four inspected pictures per module, four English plural forms, eight natural examples and a furnishings deck. Verify small ァ in ソファ, the lighting sense of ランプ, voiced が in かがみ and the sleeping-pillow sense. Use fixed voices and exact constituent audio. Preserve all earlier examples and forms. Listening remains unverified.
 
+## More Fruit
+
+Add peach, pear, watermelon and pineapple with four inspected pictures per module, four English plural forms, eight natural examples and a fruit deck. Distinguish European and Asian pear illustrations, countable whole fruits and food mass nouns, and preserve the extra syllable in peaches and small ッ in パイナップル. Add a cumulative expansion summary separating distinct base words, examples, recorded forms and total records, with regression checks. Listening remains unverified.
+
 ## Commits
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)
