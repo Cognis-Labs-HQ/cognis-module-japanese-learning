@@ -1,5 +1,36 @@
 [
     {
+        "theme": "household",
+        "newDistinctVocabularyCount": 4,
+        "vocabulary": [
+            {
+                "entryId": "ja:word:household-wash",
+                "label": "あらう"
+            },
+            {
+                "entryId": "ja:word:household-cook",
+                "label": "りょうりする"
+            },
+            {
+                "entryId": "ja:word:household-clean",
+                "label": "そうじする"
+            },
+            {
+                "entryId": "ja:word:household-dry",
+                "label": "かわかす"
+            }
+        ],
+        "newExampleCount": 4,
+        "exampleIds": [
+            "ja:sentence:household-example-wash",
+            "ja:sentence:household-example-cook",
+            "ja:sentence:household-example-clean",
+            "ja:sentence:household-example-dry"
+        ],
+        "recordedGrammaticalFormCount": 32,
+        "vocabularyAudit": "authoring/reviews/household-vocabulary.json"
+    },
+    {
         "theme": "kitchen",
         "newDistinctVocabularyCount": 4,
         "vocabulary": [
@@ -261,36 +292,5 @@
         ],
         "recordedGrammaticalFormCount": 0,
         "vocabularyAudit": "authoring/reviews/rooms-vocabulary.json"
-    },
-    {
-        "theme": "school",
-        "newDistinctVocabularyCount": 4,
-        "vocabulary": [
-            {
-                "entryId": "ja:word:school-pencil",
-                "label": "えんぴつ"
-            },
-            {
-                "entryId": "ja:word:school-pen",
-                "label": "ペン"
-            },
-            {
-                "entryId": "ja:word:school-notebook",
-                "label": "ノート"
-            },
-            {
-                "entryId": "ja:word:school-ruler",
-                "label": "じょうぎ"
-            }
-        ],
-        "newExampleCount": 4,
-        "exampleIds": [
-            "ja:sentence:school-example-pencil",
-            "ja:sentence:school-example-pen",
-            "ja:sentence:school-example-notebook",
-            "ja:sentence:school-example-ruler"
-        ],
-        "recordedGrammaticalFormCount": 0,
-        "vocabularyAudit": "authoring/reviews/school-vocabulary.json"
     }
 ]

@@ -226,6 +226,10 @@ Menambahkan long dan short dengan rekaman komparatif dan superlatif bahasa Inggr
 
 Menambahkan Sorry dan Welcome serta ごめんなさい dan ようこそ dengan adegan sosial yang diperiksa dan dua contoh singkat per bahasa. Catatan membedakan sambutan kedatangan dari jawaban atas terima kasih serta menjelaskan nada akrab contoh permintaan maaf Jepang. Bacaan lengkap mempertahankan ん dan vokal panjang pada よう. Audio memakai rekaman unsur yang tepat; pendengaran belum diperiksa.
 
+## Memotong dan melipat bahan
+
+Menambahkan cut dan fold dengan rekaman bentuk Inggris dan Jepang yang tepat, ilustrasi tindakan yang dikoreksi dan diperiksa, serta empat contoh berbeda. Bahasa Inggris juga mendapat paper sebagai nomina bahan; bahasa Jepang memakai kembali kartu 紙. Catatan membedakan 切る godan dari 着る ichidan serta 折る untuk melipat kertas dari makna lain. Bentuk cut yang sama memakai audio tersimpan. Bukti sumber dan gambar yang ditolak disimpan; pendengaran belum diperiksa.
+
 ## Komit
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)

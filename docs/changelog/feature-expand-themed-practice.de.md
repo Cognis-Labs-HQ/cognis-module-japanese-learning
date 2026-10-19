@@ -226,6 +226,10 @@ Long und short mit englischen Komparativ- und Superlativaufnahmen, japanischen I
 
 Sorry und Welcome sowie ごめんなさい und ようこそ mit geprüften Alltagsszenen und je zwei kurzen Beispielen ergänzt. Hinweise unterscheiden Begrüßungen von Antworten auf Dank und erklären den vertrauten Ton des japanischen Entschuldigungsbeispiels. Vollständige Lesungen erhalten ん und den Langvokal in よう. Die Satzaufnahmen verwenden exakte Bestandteile; die Hörprüfung steht aus.
 
+## Materialien schneiden und falten
+
+Cut und fold mit exakten englischen und japanischen Formen, korrigierten und geprüften Handlungsbildern und vier verschiedenen Beispielen ergänzt. Englisch erhält zusätzlich paper als Stoffbezeichnung; Japanisch verwendet die vorhandene Karte 紙. Hinweise unterscheiden Godan 切る von Ichidan 着る sowie Papierfalten mit 折る von anderen Bedeutungen. Gleiche cut-Formen nutzen vorhandene Aufnahmen. Quellen und verworfene Bilder bleiben erhalten; die Hörprüfung steht aus.
+
 ## Commits
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)

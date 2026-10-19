@@ -27,6 +27,7 @@ for (const theme of [
     "stationery",
     "posture",
     "wildlife",
+    "craft",
     "courtesy",
     "length",
     "force",

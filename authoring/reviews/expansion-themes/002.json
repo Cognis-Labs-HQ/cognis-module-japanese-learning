@@ -21,6 +21,29 @@
         "vocabularyAudit": "authoring/reviews/courtesy-vocabulary.json"
     },
     {
+        "theme": "craft",
+        "newDistinctVocabularyCount": 2,
+        "vocabulary": [
+            {
+                "entryId": "ja:word:craft-cut",
+                "label": "きる"
+            },
+            {
+                "entryId": "ja:word:craft-fold",
+                "label": "おる"
+            }
+        ],
+        "newExampleCount": 4,
+        "exampleIds": [
+            "ja:sentence:craft-example-scissors-tool",
+            "ja:sentence:craft-example-fold-carefully",
+            "ja:sentence:craft-example-cut-carrot",
+            "ja:sentence:craft-example-fold-later"
+        ],
+        "recordedGrammaticalFormCount": 16,
+        "vocabularyAudit": "authoring/reviews/craft-vocabulary.json"
+    },
+    {
         "theme": "directions",
         "newDistinctVocabularyCount": 4,
         "vocabulary": [
@@ -246,36 +269,5 @@
         "exampleIds": [],
         "recordedGrammaticalFormCount": 0,
         "vocabularyAudit": "authoring/reviews/greetings-vocabulary.json"
-    },
-    {
-        "theme": "household",
-        "newDistinctVocabularyCount": 4,
-        "vocabulary": [
-            {
-                "entryId": "ja:word:household-wash",
-                "label": "あらう"
-            },
-            {
-                "entryId": "ja:word:household-cook",
-                "label": "りょうりする"
-            },
-            {
-                "entryId": "ja:word:household-clean",
-                "label": "そうじする"
-            },
-            {
-                "entryId": "ja:word:household-dry",
-                "label": "かわかす"
-            }
-        ],
-        "newExampleCount": 4,
-        "exampleIds": [
-            "ja:sentence:household-example-wash",
-            "ja:sentence:household-example-cook",
-            "ja:sentence:household-example-clean",
-            "ja:sentence:household-example-dry"
-        ],
-        "recordedGrammaticalFormCount": 32,
-        "vocabularyAudit": "authoring/reviews/household-vocabulary.json"
     }
 ]

@@ -1,0 +1,157 @@
+[
+    {
+        "id": "ja:sentence:craft-example-scissors-tool",
+        "label": "はさみで紙をきる",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/dda2cdbe786b00130dd5e9ac054facc09119d92b1ec4ea65f8a156de5e0d9747.wav",
+            "pronunciation": ["はさみでかみをきる"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:stationery-scissors",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:de",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:kami-paper",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:craft-cut",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:craft-example-scissors-tool",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:craft-example-fold-carefully",
+        "label": "紙をゆっくりおる",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/9269e89006fa2a57f127f4774300d7bac5fc952a7fbfaae1d1df5e57f269c312.wav",
+            "pronunciation": ["かみをゆっくりおる"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:kami-paper",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:yukkuri",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:word:craft-fold",
+                "relation": "words",
+                "position": 3
+            },
+            {
+                "entryId": "ja:definition:craft-example-fold-carefully",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:craft-example-cut-carrot",
+        "label": "私はにんじんをきる",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/e5975ebe55253fdef2080ab9acc8a4badb1a9b4860377e0e29e1d97760510767.wav",
+            "pronunciation": ["わたしはにんじんをきる"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:watashi",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:carrot",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:craft-cut",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:craft-example-cut-carrot",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:craft-example-fold-later",
+        "label": "あとでながい紙をおる",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/158d5e9dd9752d72c487c1dfba180a2a397fb4f21424866fd0c09a114b2adff2.wav",
+            "pronunciation": ["あとでながいかみをおる"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:time-later",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:word:length-long",
+                "relation": "words",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:kami-paper",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:craft-fold",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:craft-example-fold-later",
+                "relation": "definitions"
+            }
+        ]
+    }
+]
