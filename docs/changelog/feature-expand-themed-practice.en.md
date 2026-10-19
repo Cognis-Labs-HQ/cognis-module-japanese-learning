@@ -98,6 +98,10 @@ Add airplane, boat, taxi and motorcycle with four inspected pictures per module,
 
 Add pencil, pen, notebook and ruler with four inspected pictures per module, four English plural forms, eight natural examples and a school-supplies deck. Distinguish graphite from ink, paper notebooks from computers and measuring rulers from governors. Verify Japanese small kana and long vowels. Preserve all previous sentences and grammatical recordings. Listening remains unverified.
 
+## School Day
+
+Add six individually authored contextual examples per module with exact existing constituent audio and a dedicated deck. Check meaning, register, particle roles, readings and four-language translations. Preserve all earlier examples and grammatical recordings. No new images or external generation requests. Listening remains unverified.
+
 ## Commits
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)

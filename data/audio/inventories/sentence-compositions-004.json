@@ -66,5 +66,135 @@
             "semanticRole": "orderedLexicalSequence",
             "readings": ["にくとちーずがすき"]
         }
+    },
+    {
+        "path": "audio/265cbc842845a0273b37c8a75ffc52dd524cbf8006c7fe6f735c055e5a6a1f69.wav",
+        "entryId": "ja:sentence:travel-bicycle-school",
+        "label": "じてんしゃで学校に行く",
+        "parts": [
+            {
+                "path": "audio/af1c56cbbbeb599be025f0ac30f5130150de8c9d1c6f88f07261755d93a7a323.wav",
+                "entryId": "ja:word:travel-bicycle"
+            },
+            {
+                "path": "audio/df81472c8108ad9b47d8d90db017ff1c1b553d80263d6a2c59de1571671f3eee.wav",
+                "entryId": "ja:particle:de"
+            },
+            {
+                "path": "audio/6b6f32acd45589aeedd9e33f013184317303e23159028d7ad1bfbadfc0cb6dc9.wav",
+                "entryId": "ja:word:gakkou"
+            },
+            {
+                "path": "audio/1615cf278c2962c1657907b3686d653625229af2375f90dda5bfd5b178c7aedb.wav",
+                "entryId": "ja:particle:ni"
+            },
+            {
+                "path": "audio/843223b7290cf0fda523989799b96f85c224338146f5d022e92e6715234e2e39.wav",
+                "entryId": "ja:word:iku"
+            },
+            {
+                "pauseMs": 400
+            }
+        ],
+        "gapMs": 90,
+        "segments": [
+            {
+                "path": "audio/af1c56cbbbeb599be025f0ac30f5130150de8c9d1c6f88f07261755d93a7a323.wav",
+                "entryId": "ja:word:travel-bicycle",
+                "startFrame": 2400,
+                "frameCount": 19907
+            },
+            {
+                "path": "audio/df81472c8108ad9b47d8d90db017ff1c1b553d80263d6a2c59de1571671f3eee.wav",
+                "entryId": "ja:particle:de",
+                "startFrame": 24467,
+                "frameCount": 13220
+            },
+            {
+                "path": "audio/6b6f32acd45589aeedd9e33f013184317303e23159028d7ad1bfbadfc0cb6dc9.wav",
+                "entryId": "ja:word:gakkou",
+                "startFrame": 39847,
+                "frameCount": 14335
+            },
+            {
+                "path": "audio/1615cf278c2962c1657907b3686d653625229af2375f90dda5bfd5b178c7aedb.wav",
+                "entryId": "ja:particle:ni",
+                "startFrame": 56342,
+                "frameCount": 13220
+            },
+            {
+                "path": "audio/843223b7290cf0fda523989799b96f85c224338146f5d022e92e6715234e2e39.wav",
+                "entryId": "ja:word:iku",
+                "startFrame": 71722,
+                "frameCount": 12643
+            }
+        ],
+        "sha256": "265cbc842845a0273b37c8a75ffc52dd524cbf8006c7fe6f735c055e5a6a1f69",
+        "frames": 96125,
+        "input": {
+            "language": "ja",
+            "label": "じてんしゃで学校に行く",
+            "semanticRole": "orderedLexicalSequence",
+            "readings": ["じてんしゃでがっこうにいく"]
+        },
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "construction": "Exact selected constituent PCM including newly synthesized travel forms."
+        }
+    },
+    {
+        "path": "audio/af7ae80610342b04041c61fce649bd8e60fbcd437b6a817b0ba3758cc844c296.wav",
+        "entryId": "ja:sentence:travel-see-map",
+        "label": "ちずを見る",
+        "parts": [
+            {
+                "path": "audio/fe7f2ff9dcf44059717e6c08a8b41d54ea80b717ea0e3ab6f15804e3d8d85547.wav",
+                "entryId": "ja:word:travel-map"
+            },
+            {
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "entryId": "ja:particle:wo"
+            },
+            {
+                "path": "audio/38b1e4b1dda0e34a29c049bd035b5370b24069d70efbb5fef029fb0962f2c8fe.wav",
+                "entryId": "ja:word:miru"
+            },
+            {
+                "pauseMs": 400
+            }
+        ],
+        "gapMs": 90,
+        "segments": [
+            {
+                "path": "audio/fe7f2ff9dcf44059717e6c08a8b41d54ea80b717ea0e3ab6f15804e3d8d85547.wav",
+                "entryId": "ja:word:travel-map",
+                "startFrame": 2400,
+                "frameCount": 15449
+            },
+            {
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "entryId": "ja:particle:wo",
+                "startFrame": 20009,
+                "frameCount": 8762
+            },
+            {
+                "path": "audio/38b1e4b1dda0e34a29c049bd035b5370b24069d70efbb5fef029fb0962f2c8fe.wav",
+                "entryId": "ja:word:miru",
+                "startFrame": 30931,
+                "frameCount": 14884
+            }
+        ],
+        "sha256": "af7ae80610342b04041c61fce649bd8e60fbcd437b6a817b0ba3758cc844c296",
+        "frames": 57575,
+        "input": {
+            "language": "ja",
+            "label": "ちずを見る",
+            "semanticRole": "orderedLexicalSequence",
+            "readings": ["ちずをみる"]
+        },
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "construction": "Exact selected constituent PCM including newly synthesized travel forms."
+        }
     }
 ]
