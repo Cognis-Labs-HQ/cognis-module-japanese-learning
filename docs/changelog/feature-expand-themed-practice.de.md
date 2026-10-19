@@ -207,3 +207,4 @@ Sechs einzeln verfasste Lernbeispiele und ein Deck behandeln Schreibgeräte, Les
 - [5da0da3](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/5da0da3baf3dba2e8c96b90e644fd8593a14174d)
 - [754cd61](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/754cd613c495c4f402b7826fea4a9f8207201113)
 - [25c0c73](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/25c0c73a1f61c2fc899bcabdd70e5b7583a23abe)
+- [0d8e1c4](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/0d8e1c4cc172b15be524c3b7051d98f4a694b928)
