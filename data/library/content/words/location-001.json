@@ -1,0 +1,126 @@
+[
+    {
+        "id": "ja:word:complete-pronunciation-location-inside",
+        "label": "なか",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["なか"],
+            "audio": "audio/8c0c8bbdc96867b42a1f1d5ddf7468d1946a382771de9f118093708fd335959a.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:na",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:ka",
+                        "relation": "reading-kana",
+                        "position": 1
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:location-inside",
+        "label": "なか",
+        "class": "lexical:noun",
+        "fields": {
+            "pronunciation": ["なか"],
+            "usage_notes": {
+                "en": "On or to the inner part of a place or container. This English card is an adverb, used without a following noun: the cat is inside. Japanese なか is a location noun: Xのなかに for existence or destination, Xのなかで for an activity. It is read なか here, not ちゅう.",
+                "de": "Im Inneren oder nach innen. Diese englische Karte ist ein Adverb ohne folgendes Substantiv. Japanisch なか ist ein Ortsnomen: Xのなかに bei Existenz oder Ziel, Xのなかで bei einer Tätigkeit. Hier lautet die Lesung なか, nicht ちゅう.",
+                "id": "Di atau ke bagian dalam tempat atau wadah. Kartu Inggris ini adalah adverbia tanpa nomina setelahnya. なか adalah nomina tempat: Xのなかに untuk keberadaan atau tujuan, Xのなかで untuk kegiatan. Baca なか, bukan ちゅう.",
+                "ja": "場所や容器の内側を表します。この英語カードは後ろに名詞を置かない副詞用法です。なかは場所を表す名詞で、存在や行き先にはXのなかに、活動の場所にはXのなかでを使います。ここではちゅうではなく、なかと読みます。"
+            },
+            "reference_images": [
+                "images/4d51ffbdf858cde240136cebf9df0be60e058700b000685c014d30917351520b.jpg"
+            ],
+            "audio": "audio/8c0c8bbdc96867b42a1f1d5ddf7468d1946a382771de9f118093708fd335959a.wav"
+        },
+        "tags": ["noun", "location"],
+        "references": [
+            {
+                "entryId": "ja:definition:location-inside",
+                "relation": "definitions"
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-location-inside",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:complete-pronunciation-location-outside",
+        "label": "そと",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["そと"],
+            "audio": "audio/dcf61dd393ce979e3aa21f9226c63738d00614480e63cb0b4601a8da3e98342b.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:so",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:to",
+                        "relation": "reading-kana",
+                        "position": 1
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:location-outside",
+        "label": "そと",
+        "class": "lexical:noun",
+        "fields": {
+            "pronunciation": ["そと"],
+            "usage_notes": {
+                "en": "Not within a room, building or container; also outdoors. This English card is an adverb, as in wait outside. Japanese そと is a location noun: Xのそと means the exterior of X, and そとで marks an outdoor activity. The illustration shows the cat outside the box, not on its rim.",
+                "de": "Außerhalb eines Raums, Gebäudes oder Behälters, auch im Freien. Diese englische Karte ist ein Adverb, etwa in wait outside. Japanisch そと ist ein Ortsnomen: Xのそと bezeichnet den Außenbereich, そとで den Ort einer Tätigkeit draußen. Die Katze sitzt außerhalb der Kiste, nicht auf ihrem Rand.",
+                "id": "Tidak berada di dalam ruangan, bangunan atau wadah; juga di luar ruangan. Kartu Inggris ini adalah adverbia, seperti wait outside. そと adalah nomina tempat: Xのそと berarti bagian luar X dan そとで menandai kegiatan di luar. Kucing berada di luar kotak, bukan di tepinya.",
+                "ja": "部屋・建物・容器の外側や屋外を表します。この英語カードはwait outsideのような副詞用法です。そとは場所を表す名詞で、XのそとはXの外側、そとでは屋外の活動場所を示します。画像の猫は箱の縁ではなく外側にいます。"
+            },
+            "reference_images": [
+                "images/849fccdbd4e00d54d7ca578eabcb4f1df65a59bf8ed50a5ea1a8a93ad5fa0292.jpg"
+            ],
+            "audio": "audio/dcf61dd393ce979e3aa21f9226c63738d00614480e63cb0b4601a8da3e98342b.wav"
+        },
+        "tags": ["noun", "location"],
+        "references": [
+            {
+                "entryId": "ja:definition:location-outside",
+                "relation": "definitions"
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-location-outside",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    }
+]

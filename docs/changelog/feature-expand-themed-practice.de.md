@@ -238,6 +238,10 @@ Acht einzeln geprüfte Beispiele und zwei Übungsstapel mit vorhandenem Wortscha
 
 Wide und narrow sowie ひろい und せまい mit vier geprüften Brückenbildern und vier Kontextbeispielen je Sprache ergänzt. Englisch enthält wider/widest und narrower/narrowest; Japanisch umfasst adverbiale, verneinte und vergangene Formen mit vollständigen Kana und kleinem っ. Hinweise unterscheiden Breite und verfügbaren Raum von Länge. Exakte Wortaufnahmen, Originalbilder, PCM und Quellen bleiben erhalten; die Hörprüfung steht aus.
 
+## Drinnen und draußen
+
+Inside/outside als englische Adverbien und なか/そと als japanische Ortsnomen mit geprüften Behälterszenen und vier Beispielen je Sprache ergänzt. Japanische Beispiele unterscheiden の für den Bezugsort, に mit いる/ある für Existenz und で für Tätigkeiten. Kana vermeiden die hier falsche Lesung ちゅう von 中. Originalbilder, PCM der festgelegten Stimmen und exakte Satzkompositionen bleiben erhalten; die Hörprüfung steht aus.
+
 ## Commits
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)

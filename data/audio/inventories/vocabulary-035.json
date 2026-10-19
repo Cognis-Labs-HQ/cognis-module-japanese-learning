@@ -1,0 +1,78 @@
+[
+    {
+        "path": "audio/8c0c8bbdc96867b42a1f1d5ddf7468d1946a382771de9f118093708fd335959a.wav",
+        "text": "なか",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "なか",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "なか",
+                "semanticRole": "lexicalUnit",
+                "readings": ["なか"]
+            }
+        ],
+        "entries": [
+            "ja:word:location-inside",
+            "ja:word:complete-pronunciation-location-inside"
+        ],
+        "variants": [],
+        "sha256": "8c0c8bbdc96867b42a1f1d5ddf7468d1946a382771de9f118093708fd335959a",
+        "frames": 15449,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "f6a1df432cb2483396381c34bba983e7aac1913cb2eafd77aac135730f3e7fa8"
+        }
+    },
+    {
+        "path": "audio/dcf61dd393ce979e3aa21f9226c63738d00614480e63cb0b4601a8da3e98342b.wav",
+        "text": "そと",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "そと",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "そと",
+                "semanticRole": "lexicalUnit",
+                "readings": ["そと"]
+            }
+        ],
+        "entries": [
+            "ja:word:location-outside",
+            "ja:word:complete-pronunciation-location-outside"
+        ],
+        "variants": [],
+        "sha256": "dcf61dd393ce979e3aa21f9226c63738d00614480e63cb0b4601a8da3e98342b",
+        "frames": 16564,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "acb17d314b315c00d277f378715708cf3e8af4d09afeeca402352e8163edda70"
+        }
+    }
+]

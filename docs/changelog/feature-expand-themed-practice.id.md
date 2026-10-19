@@ -238,6 +238,10 @@ Menambahkan delapan contoh yang ditinjau satu per satu dan dua dek latihan denga
 
 Menambahkan wide dan narrow serta ひろい dan せまい dengan empat ilustrasi jembatan yang diperiksa dan empat contoh kontekstual per bahasa. Bahasa Inggris mencakup wider/widest dan narrower/narrowest; bahasa Jepang mencakup bentuk adverbial, negatif dan lampau dengan kana lengkap serta っ kecil. Catatan membedakan lebar dan ruang dari panjang. Audio unsur yang tepat, gambar asli, PCM dan sumber disimpan; pendengaran belum diperiksa.
 
+## Di dalam dan di luar
+
+Menambahkan inside/outside sebagai adverbia Inggris dan なか/そと sebagai nomina tempat Jepang, dengan adegan wadah yang diperiksa dan empat contoh per bahasa. Contoh Jepang membedakan の untuk tempat acuan, に dengan いる/ある untuk keberadaan, serta で untuk kegiatan. Kana menghindari bacaan ちゅう yang tidak dimaksud untuk 中. Gambar asli, PCM suara yang ditetapkan dan komposisi kalimat tepat disimpan; pendengaran belum diperiksa.
+
 ## Komit
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)

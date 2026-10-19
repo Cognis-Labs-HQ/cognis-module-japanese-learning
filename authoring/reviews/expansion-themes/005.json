@@ -1,5 +1,28 @@
 [
     {
+        "theme": "width",
+        "newDistinctVocabularyCount": 2,
+        "vocabulary": [
+            {
+                "entryId": "ja:word:width-wide",
+                "label": "ひろい"
+            },
+            {
+                "entryId": "ja:word:width-narrow",
+                "label": "せまい"
+            }
+        ],
+        "newExampleCount": 4,
+        "exampleIds": [
+            "ja:sentence:width-example-wide-bridge",
+            "ja:sentence:width-example-narrow-crossing",
+            "ja:sentence:width-example-cramped-bedroom",
+            "ja:sentence:width-example-spacious-garden"
+        ],
+        "recordedGrammaticalFormCount": 6,
+        "vocabularyAudit": "authoring/reviews/width-vocabulary.json"
+    },
+    {
         "theme": "wildlife",
         "newDistinctVocabularyCount": 4,
         "vocabulary": [
@@ -157,19 +180,5 @@
         ],
         "recordedGrammaticalFormCount": 0,
         "vocabularyAudit": "authoring/reviews/plans-sentences.json"
-    },
-    {
-        "theme": "getting-ready",
-        "newDistinctVocabularyCount": 0,
-        "vocabulary": [],
-        "newExampleCount": 4,
-        "exampleIds": [
-            "ja:sentence:getting-ready-example-travel-documents",
-            "ja:sentence:getting-ready-example-key-here",
-            "ja:sentence:getting-ready-example-wait-tomorrow",
-            "ja:sentence:getting-ready-example-read-map"
-        ],
-        "recordedGrammaticalFormCount": 0,
-        "vocabularyAudit": "authoring/reviews/getting-ready-sentences.json"
     }
 ]

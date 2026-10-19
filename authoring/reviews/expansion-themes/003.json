@@ -85,6 +85,29 @@
         "vocabularyAudit": "authoring/reviews/length-vocabulary.json"
     },
     {
+        "theme": "location",
+        "newDistinctVocabularyCount": 2,
+        "vocabulary": [
+            {
+                "entryId": "ja:word:location-inside",
+                "label": "なか"
+            },
+            {
+                "entryId": "ja:word:location-outside",
+                "label": "そと"
+            }
+        ],
+        "newExampleCount": 4,
+        "exampleIds": [
+            "ja:sentence:location-example-cat-in-box",
+            "ja:sentence:location-example-key-in-bag",
+            "ja:sentence:location-example-talk-outside",
+            "ja:sentence:location-example-wait-school"
+        ],
+        "recordedGrammaticalFormCount": 0,
+        "vocabularyAudit": "authoring/reviews/location-vocabulary.json"
+    },
+    {
         "theme": "nature",
         "newDistinctVocabularyCount": 4,
         "vocabulary": [
@@ -261,36 +284,5 @@
         ],
         "recordedGrammaticalFormCount": 0,
         "vocabularyAudit": "authoring/reviews/requests-vocabulary.json"
-    },
-    {
-        "theme": "rooms",
-        "newDistinctVocabularyCount": 4,
-        "vocabulary": [
-            {
-                "entryId": "ja:word:rooms-bedroom",
-                "label": "しんしつ"
-            },
-            {
-                "entryId": "ja:word:rooms-bathroom",
-                "label": "よくしつ"
-            },
-            {
-                "entryId": "ja:word:rooms-kitchen",
-                "label": "だいどころ"
-            },
-            {
-                "entryId": "ja:word:rooms-garden",
-                "label": "にわ"
-            }
-        ],
-        "newExampleCount": 4,
-        "exampleIds": [
-            "ja:sentence:rooms-example-bedroom",
-            "ja:sentence:rooms-example-bathroom",
-            "ja:sentence:rooms-example-kitchen",
-            "ja:sentence:rooms-example-garden"
-        ],
-        "recordedGrammaticalFormCount": 0,
-        "vocabularyAudit": "authoring/reviews/rooms-vocabulary.json"
     }
 ]
