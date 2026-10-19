@@ -82,6 +82,10 @@ Tambahkan perpustakaan, rumah sakit, supermarket, dan restoran dengan makna yang
 
 Tambahkan mencuci, memasak, membersihkan, dan mengeringkan dengan empat ilustrasi tindakan yang diperiksa per modul, catatan makna dan transitivitas, serta dek rumah tangga. Dukung enam belas bentuk Inggris melalui dua belas rekaman bersama dan tiga puluh dua bentuk Jepang dengan uji bentuk dan audio. Delapan contoh beragam memakai segmen audio persis. Contoh Inggris mencakup bentuk kini, lampau, dan progresif. Contoh Jepang memakai bentuk dasar agar sesuai dengan impor host; seluruh tiga puluh dua bentuk tetap tersedia untuk latihan perubahan bentuk. Pemeriksaan pendengaran belum dilakukan.
 
+## Kebutuhan Sehari-hari
+
+Tambahkan enam contoh dan satu dek per modul tentang air, alat makan, lokasi, rencana belanja, memasak, dan perawatan diri. Gunakan ulang segmen audio persis tanpa permintaan generasi atau gambar baru. Tinjau partikel Jepang dan artikel Inggris dalam konteks. Pemeriksaan pendengaran belum dilakukan.
+
 ## Komit
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)
