@@ -421,7 +421,7 @@ test("content ships only base verbs, adverbs, and copulas, never generated forms
     const generated = new Set(
         baseEntries.flatMap((entry) => transformedValues(entry)),
     );
-    assert.equal(baseIds.size, 21);
+    assert.equal(baseIds.size, 25);
     assert.ok(generated.size > 0);
     assert.deepEqual(
         words

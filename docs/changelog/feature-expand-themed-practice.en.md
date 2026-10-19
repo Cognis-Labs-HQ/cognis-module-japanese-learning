@@ -78,6 +78,10 @@ Add cups, plates, spoons and forks with four English plural forms, four contextu
 
 Add libraries, hospitals, supermarkets and restaurants with reviewed meanings, four English plural forms and a themed deck. Eight varied examples cover reading, employment, location questions, planned travel, shopping and dining. Inspect all source and final pictures, verify dictionary senses and readings, and preserve exact constituent audio. Listening remains unverified.
 
+## Household Actions
+
+Add wash, cook, clean and dry with four inspected action illustrations per module, localized sense and transitivity notes, and a household deck. Support sixteen English grammatical forms with twelve shared recordings and thirty-two Japanese forms, with canonical form/audio tests. Eight varied examples use exact constituent audio. English examples include present, past and progressive forms; Japanese examples use base forms for host import compatibility while all thirty-two forms remain available for transformation practice. Listening remains unverified.
+
 ## Commits
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)

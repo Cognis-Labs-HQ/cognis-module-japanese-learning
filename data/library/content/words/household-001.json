@@ -1,0 +1,300 @@
+[
+    {
+        "id": "ja:word:complete-pronunciation-household-wash",
+        "label": "あらう",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["あらう"],
+            "audio": "audio/55900a3049492f3fd4edd4b8fb6ba3ff1650cde9ed4b3024f002f08659bf5c2a.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:a",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:ra",
+                        "relation": "reading-kana",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:u",
+                        "relation": "reading-kana",
+                        "position": 2
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:household-wash",
+        "label": "あらう",
+        "class": "lexical:verb",
+        "fields": {
+            "pronunciation": ["あらう"],
+            "usage_notes": {
+                "en": "Verb: clean something with water, often with soap. Washes adds /ɪz/; washed ends in /t/. あらう is transitive: あらわない, あらった, あらって, あらえる.",
+                "de": "Verb: etwas mit Wasser und oft Seife reinigen. Washes ergänzt /ɪz/; washed endet auf /t/. あらう ist transitiv: あらわない, あらった, あらって, あらえる.",
+                "id": "Verba: membersihkan sesuatu dengan air, sering dengan sabun. Washes menambahkan /ɪz/; washed berakhir /t/. あらう transitif: あらわない, あらった, あらって, あらえる.",
+                "ja": "水や石けんで汚れを落とす動作。英語の washes は /ɪz/ を加え、washed は /t/ で終わる。あらうは他動詞で、あらわない・あらった・あらって・あらえると活用する。"
+            },
+            "reference_images": [
+                "images/6f61243f02ebc91f3b3ca0aed1e3a8d3f591c39201f95b1c3c5fe6177dcda845.jpg"
+            ],
+            "audio": "audio/55900a3049492f3fd4edd4b8fb6ba3ff1650cde9ed4b3024f002f08659bf5c2a.wav"
+        },
+        "tags": ["verb", "household-form-wash"],
+        "references": [
+            {
+                "entryId": "ja:definition:household-wash",
+                "relation": "definitions"
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-household-wash",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:complete-pronunciation-household-cook",
+        "label": "りょうりする",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["りょうりする"],
+            "audio": "audio/e33686384389e80ef4dd0db97018d79d8b5ee187f17ec85723bd40a420521f2a.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:ri",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:small-yo",
+                        "relation": "reading-kana",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:u",
+                        "relation": "reading-kana",
+                        "position": 2
+                    },
+                    {
+                        "entryId": "ja:char:ri",
+                        "relation": "reading-kana",
+                        "position": 3
+                    },
+                    {
+                        "entryId": "ja:char:su",
+                        "relation": "reading-kana",
+                        "position": 4
+                    },
+                    {
+                        "entryId": "ja:char:ru",
+                        "relation": "reading-kana",
+                        "position": 5
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:household-cook",
+        "label": "りょうりする",
+        "class": "lexical:verb",
+        "fields": {
+            "pronunciation": ["りょうりする"],
+            "usage_notes": {
+                "en": "Verb: prepare food, especially with heat; not the noun for a person who cooks. Cooked ends in /t/. りょうりする is a suru verb; its potential form is りょうりできる.",
+                "de": "Verb: Essen zubereiten, besonders durch Erhitzen; nicht die Berufsbezeichnung Koch. Cooked endet auf /t/. りょうりする ist ein Suru-Verb; die Möglichkeitsform lautet りょうりできる.",
+                "id": "Verba: menyiapkan makanan, terutama dengan panas; bukan nomina untuk juru masak. Cooked berakhir /t/. りょうりする adalah verba suru; bentuk potensialnya りょうりできる.",
+                "ja": "食べ物を調理する動作で、料理人を表す名詞ではない。英語の cooked は /t/ で終わる。りょうりするはサ変動詞で、可能形はりょうりできる。"
+            },
+            "reference_images": [
+                "images/be2e0469e0ff2472cd625ab0a4bb46afa06fd1946f05b919777814a070e64c16.jpg"
+            ],
+            "audio": "audio/e33686384389e80ef4dd0db97018d79d8b5ee187f17ec85723bd40a420521f2a.wav"
+        },
+        "tags": ["verb", "household-form-cook"],
+        "references": [
+            {
+                "entryId": "ja:definition:household-cook",
+                "relation": "definitions"
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-household-cook",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:complete-pronunciation-household-clean",
+        "label": "そうじする",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["そうじする"],
+            "audio": "audio/7c70efb2f24b3b66cb5da738c2e2d694336ed2957ffdc0954b3a771007e31c58.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:so",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:u",
+                        "relation": "reading-kana",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:ji",
+                        "relation": "reading-kana",
+                        "position": 2
+                    },
+                    {
+                        "entryId": "ja:char:su",
+                        "relation": "reading-kana",
+                        "position": 3
+                    },
+                    {
+                        "entryId": "ja:char:ru",
+                        "relation": "reading-kana",
+                        "position": 4
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:household-clean",
+        "label": "そうじする",
+        "class": "lexical:verb",
+        "fields": {
+            "pronunciation": ["そうじする"],
+            "usage_notes": {
+                "en": "Verb: remove dirt or dust, illustrated by cleaning a room; not the adjective clean. Cleaned ends in /d/. そうじする is a suru verb with long そう; its potential form is そうじできる.",
+                "de": "Verb: Schmutz oder Staub entfernen, hier beim Reinigen eines Raumes; nicht das Adjektiv sauber. Cleaned endet auf /d/. そうじする ist ein Suru-Verb mit langem そう; Möglichkeitsform そうじできる.",
+                "id": "Verba: menghilangkan kotoran atau debu, dicontohkan dengan membersihkan ruangan; bukan adjektiva bersih. Cleaned berakhir /d/. そうじする adalah verba suru dengan vokal panjang pada そう; bentuk potensial そうじできる.",
+                "ja": "汚れやほこりを取り除く動作で、部屋の掃除を例示する。「きれいな」という形容の意味ではない。英語の cleaned は /d/ で終わる。そうじするはサ変動詞で、そうは長音、可能形はそうじできる。"
+            },
+            "reference_images": [
+                "images/4f86766b3d1007d34a978a2c86a2656a5011a778fb591446ed88484b3770bea6.jpg"
+            ],
+            "audio": "audio/7c70efb2f24b3b66cb5da738c2e2d694336ed2957ffdc0954b3a771007e31c58.wav"
+        },
+        "tags": ["verb", "household-form-clean"],
+        "references": [
+            {
+                "entryId": "ja:definition:household-clean",
+                "relation": "definitions"
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-household-clean",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:complete-pronunciation-household-dry",
+        "label": "かわかす",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["かわかす"],
+            "audio": "audio/8ddfd6ac2943f3fe6c49cd621b6ab3b20f290aa4a230b6c42f5b4f7af30a395e.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:ka",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:wa",
+                        "relation": "reading-kana",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:ka",
+                        "relation": "reading-kana",
+                        "position": 2
+                    },
+                    {
+                        "entryId": "ja:char:su",
+                        "relation": "reading-kana",
+                        "position": 3
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:household-dry",
+        "label": "かわかす",
+        "class": "lexical:verb",
+        "fields": {
+            "pronunciation": ["かわかす"],
+            "usage_notes": {
+                "en": "Verb: remove moisture from something, as in drying hair; not the adjective dry. Dries and dried change y to i, but drying keeps y. かわかす is transitive, unlike intransitive かわく.",
+                "de": "Verb: Feuchtigkeit aus etwas entfernen, etwa Haare trocknen; nicht das Adjektiv trocken. Dries und dried ändern y zu i, drying behält y. かわかす ist transitiv, anders als das intransitive かわく.",
+                "id": "Verba: menghilangkan kelembapan dari sesuatu, misalnya mengeringkan rambut; bukan adjektiva kering. Dries dan dried mengubah y menjadi i, sedangkan drying mempertahankan y. かわかす transitif, berbeda dari かわく yang intransitif.",
+                "ja": "髪などの水分を取り除く動作で、「乾いた」という状態ではない。英語の dries と dried は y を i に変えるが、drying は y を残す。かわかすは他動詞で、自動詞かわくと区別する。"
+            },
+            "reference_images": [
+                "images/869d01f721ec3be73f7fd12e4840d6c01e751960dad793ea3662d8545565faae.jpg"
+            ],
+            "audio": "audio/8ddfd6ac2943f3fe6c49cd621b6ab3b20f290aa4a230b6c42f5b4f7af30a395e.wav"
+        },
+        "tags": ["verb", "household-form-dry"],
+        "references": [
+            {
+                "entryId": "ja:definition:household-dry",
+                "relation": "definitions"
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-household-dry",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    }
+]

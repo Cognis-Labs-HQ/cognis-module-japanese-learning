@@ -1,10 +1,10 @@
 [
     {
-        "path": "audio/e93ca5791cb0654d50a181c775b6aa4991c9153789425a89245526e55778f999.wav",
-        "text": "ひだり",
+        "path": "audio/430c9445d72adf3a29387e25fd3b65f62b4b6c0a772d2c518bf9f358d1e15474.wav",
+        "text": "としょかん",
         "voiceId": "xya0RvcJtofTcFTOdX4E",
         "request": {
-            "text": "左",
+            "text": "図書館",
             "model_id": "eleven_flash_v2_5",
             "seed": 42,
             "voice_settings": {
@@ -20,29 +20,29 @@
         "inputs": [
             {
                 "language": "ja",
-                "label": "ひだり",
+                "label": "としょかん",
                 "semanticRole": "lexicalUnit",
-                "readings": ["ひだり"]
+                "readings": ["としょかん"]
             }
         ],
         "entries": [
-            "ja:word:directions-left",
-            "ja:word:complete-pronunciation-directions-left"
+            "ja:word:places-library",
+            "ja:word:complete-pronunciation-places-library"
         ],
         "variants": [],
-        "sha256": "e93ca5791cb0654d50a181c775b6aa4991c9153789425a89245526e55778f999",
-        "frames": 13220,
+        "sha256": "430c9445d72adf3a29387e25fd3b65f62b4b6c0a772d2c518bf9f358d1e15474",
+        "frames": 16564,
         "metadata": {
             "listening": "unverified-not-performed",
-            "sourcePcmSha256": "f5eb30e10b2e01bed51ba16311f0353f7be7d38222042fbc261ea12c4d8a6983"
+            "sourcePcmSha256": "abe2f859930dcebcd1ee509d435fca332acb1106e6bbc1313e41d8781511d64a"
         }
     },
     {
-        "path": "audio/ed93db6c98ed392d3a506cab806c1427f1017747f721a75bf290666764912595.wav",
-        "text": "みぎ",
+        "path": "audio/c35068c839da35557f146cd8d3c64eb110a267dee6555ef6d9e8ffae7a9a5ad9.wav",
+        "text": "びょういん",
         "voiceId": "xya0RvcJtofTcFTOdX4E",
         "request": {
-            "text": "右",
+            "text": "病院",
             "model_id": "eleven_flash_v2_5",
             "seed": 42,
             "voice_settings": {
@@ -58,29 +58,29 @@
         "inputs": [
             {
                 "language": "ja",
-                "label": "みぎ",
+                "label": "びょういん",
                 "semanticRole": "lexicalUnit",
-                "readings": ["みぎ"]
+                "readings": ["びょういん"]
             }
         ],
         "entries": [
-            "ja:word:directions-right",
-            "ja:word:complete-pronunciation-directions-right"
+            "ja:word:places-hospital",
+            "ja:word:complete-pronunciation-places-hospital"
         ],
         "variants": [],
-        "sha256": "ed93db6c98ed392d3a506cab806c1427f1017747f721a75bf290666764912595",
-        "frames": 13220,
+        "sha256": "c35068c839da35557f146cd8d3c64eb110a267dee6555ef6d9e8ffae7a9a5ad9",
+        "frames": 16564,
         "metadata": {
             "listening": "unverified-not-performed",
-            "sourcePcmSha256": "49a65cb881265b75748e9050eb69d4625b6a8ac9788227c5fa0e242b0ac152ca"
+            "sourcePcmSha256": "25cdf6d607d7e1d283b6435d38b8d47cba6f3e8837228268d3c93923c61b9c58"
         }
     },
     {
-        "path": "audio/efb36a05650cd2168d0225e64c21fffce858997ddc44eb61322f9d53c3309287.wav",
-        "text": "みなみ",
+        "path": "audio/4fe867dd6a28eb23632a97e20d639fe0538f619eebd6614d0dceaf7bc0780f72.wav",
+        "text": "スーパー",
         "voiceId": "xya0RvcJtofTcFTOdX4E",
         "request": {
-            "text": "南",
+            "text": "スーパー",
             "model_id": "eleven_flash_v2_5",
             "seed": 42,
             "voice_settings": {
@@ -96,21 +96,580 @@
         "inputs": [
             {
                 "language": "ja",
-                "label": "みなみ",
+                "label": "スーパー",
                 "semanticRole": "lexicalUnit",
-                "readings": ["みなみ"]
+                "readings": ["スーパー"]
             }
         ],
         "entries": [
-            "ja:word:directions-south",
-            "ja:word:complete-pronunciation-directions-south"
+            "ja:word:places-supermarket",
+            "ja:word:complete-pronunciation-places-supermarket"
         ],
         "variants": [],
-        "sha256": "efb36a05650cd2168d0225e64c21fffce858997ddc44eb61322f9d53c3309287",
+        "sha256": "4fe867dd6a28eb23632a97e20d639fe0538f619eebd6614d0dceaf7bc0780f72",
+        "frames": 22137,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "efe65ecc048b64d824b9fd18a52dc9c2f9bc3c673242898b2c539401e3bae99e"
+        }
+    },
+    {
+        "path": "audio/df5bfce667c3edb0f0939b31e06a642a84733d7a542eb474176328264a3ed42e.wav",
+        "text": "レストラン",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "レストラン",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "レストラン",
+                "semanticRole": "lexicalUnit",
+                "readings": ["レストラン"]
+            }
+        ],
+        "entries": [
+            "ja:word:places-restaurant",
+            "ja:word:complete-pronunciation-places-restaurant"
+        ],
+        "variants": [],
+        "sha256": "df5bfce667c3edb0f0939b31e06a642a84733d7a542eb474176328264a3ed42e",
         "frames": 18793,
         "metadata": {
             "listening": "unverified-not-performed",
-            "sourcePcmSha256": "86e428501dc3edf8d252197a3add6d418ad697d567bebba097d2b3d82c690d77"
+            "sourcePcmSha256": "1eeb79f01c2d57a336f16253e0362ef77ba6c6aa8232eeb464c448d997f6b40c"
+        }
+    },
+    {
+        "path": "audio/55900a3049492f3fd4edd4b8fb6ba3ff1650cde9ed4b3024f002f08659bf5c2a.wav",
+        "text": "あらう",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "洗う",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "あらう",
+                "semanticRole": "lexicalUnit",
+                "readings": ["あらう"]
+            }
+        ],
+        "entries": [
+            "ja:word:household-wash",
+            "ja:word:complete-pronunciation-household-wash"
+        ],
+        "variants": [],
+        "sha256": "55900a3049492f3fd4edd4b8fb6ba3ff1650cde9ed4b3024f002f08659bf5c2a",
+        "frames": 12106,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "08f991854095e57191111c1fe5a4e63bbaf54f15b9be59b4d65121d20c6ffe13"
+        }
+    },
+    {
+        "path": "audio/e33686384389e80ef4dd0db97018d79d8b5ee187f17ec85723bd40a420521f2a.wav",
+        "text": "りょうりする",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "料理する",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "りょうりする",
+                "semanticRole": "lexicalUnit",
+                "readings": ["りょうりする"]
+            }
+        ],
+        "entries": [
+            "ja:word:household-cook",
+            "ja:word:complete-pronunciation-household-cook"
+        ],
+        "variants": [],
+        "sha256": "e33686384389e80ef4dd0db97018d79d8b5ee187f17ec85723bd40a420521f2a",
+        "frames": 22137,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "80250eca3c9fc9ca713218ea3d1aa1fbdc79b79bbb675655e842d100bbef5ec3"
+        }
+    },
+    {
+        "path": "audio/7c70efb2f24b3b66cb5da738c2e2d694336ed2957ffdc0954b3a771007e31c58.wav",
+        "text": "そうじする",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "掃除する",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "そうじする",
+                "semanticRole": "lexicalUnit",
+                "readings": ["そうじする"]
+            }
+        ],
+        "entries": [
+            "ja:word:household-clean",
+            "ja:word:complete-pronunciation-household-clean"
+        ],
+        "variants": [],
+        "sha256": "7c70efb2f24b3b66cb5da738c2e2d694336ed2957ffdc0954b3a771007e31c58",
+        "frames": 23251,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "b7f4a62bd546a548c75cc0471a1b69c81c7efd47514a27f1052264c12676de4c"
+        }
+    },
+    {
+        "path": "audio/8ddfd6ac2943f3fe6c49cd621b6ab3b20f290aa4a230b6c42f5b4f7af30a395e.wav",
+        "text": "かわかす",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "乾かす",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "かわかす",
+                "semanticRole": "lexicalUnit",
+                "readings": ["かわかす"]
+            }
+        ],
+        "entries": [
+            "ja:word:household-dry",
+            "ja:word:complete-pronunciation-household-dry"
+        ],
+        "variants": [],
+        "sha256": "8ddfd6ac2943f3fe6c49cd621b6ab3b20f290aa4a230b6c42f5b4f7af30a395e",
+        "frames": 18793,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "f64692b8a45cc732205589867ccb4a08e461204dc08fb893264b65b075a83f5b"
+        }
+    },
+    {
+        "path": "audio/3c813e3b95efb8e339d9378d7581e1b04c117f95c7a252bd663c093c59cf0971.wav",
+        "text": "あらいます",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "あらいます",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "あらいます",
+                "semanticRole": "lexicalUnit",
+                "readings": ["あらいます"]
+            }
+        ],
+        "entries": [],
+        "variants": [
+            {
+                "entryId": "ja:word:household-wash",
+                "setId": "household-wash-forms",
+                "path": ["polite"]
+            }
+        ],
+        "sha256": "3c813e3b95efb8e339d9378d7581e1b04c117f95c7a252bd663c093c59cf0971",
+        "frames": 18793,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "51720ef010cd70f5ce02ef252b782b0acdabbc8cf5c5c4d51b99d99349cf87dd"
+        }
+    },
+    {
+        "path": "audio/6abc75bc1a83a4e3850a38500a5e50983a6a04ac654e36091234232fad98b4e5.wav",
+        "text": "あらわない",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "あらわない",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "あらわない",
+                "semanticRole": "lexicalUnit",
+                "readings": ["あらわない"]
+            }
+        ],
+        "entries": [],
+        "variants": [
+            {
+                "entryId": "ja:word:household-wash",
+                "setId": "household-wash-forms",
+                "path": ["negative"]
+            }
+        ],
+        "sha256": "6abc75bc1a83a4e3850a38500a5e50983a6a04ac654e36091234232fad98b4e5",
+        "frames": 19907,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "1c8c11f55aed6d7e3ed39c024cd470db70d7a0e18c6cd36de0886018d8c98c51"
+        }
+    },
+    {
+        "path": "audio/8d5141def7290efcdb6e1211113caf1493262df5eb4bd142ee617d34c63596a2.wav",
+        "text": "あらった",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "あらった",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "あらった",
+                "semanticRole": "lexicalUnit",
+                "readings": ["あらった"]
+            }
+        ],
+        "entries": [],
+        "variants": [
+            {
+                "entryId": "ja:word:household-wash",
+                "setId": "household-wash-forms",
+                "path": ["past"]
+            }
+        ],
+        "sha256": "8d5141def7290efcdb6e1211113caf1493262df5eb4bd142ee617d34c63596a2",
+        "frames": 18793,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "cd80507111a48ca71e610505a6a5b4ac0345f058536914a7a5dec133e0c84b4b"
+        }
+    },
+    {
+        "path": "audio/e250ea3ddeb413f30c1c69bcc15e5c5cdffefabd9d7aa70ac197ac8a643d8728.wav",
+        "text": "あらって",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "あらって",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "あらって",
+                "semanticRole": "lexicalUnit",
+                "readings": ["あらって"]
+            }
+        ],
+        "entries": [],
+        "variants": [
+            {
+                "entryId": "ja:word:household-wash",
+                "setId": "household-wash-forms",
+                "path": ["te-form"]
+            }
+        ],
+        "sha256": "e250ea3ddeb413f30c1c69bcc15e5c5cdffefabd9d7aa70ac197ac8a643d8728",
+        "frames": 19907,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "29b5ca8cf7714f08726a7abd11296863a2749fcf8f399deae161d5bb4bf766a4"
+        }
+    },
+    {
+        "path": "audio/c3886c880435a71f09d01dc584d1474cd02d531600945ceeba9f4202e96e709a.wav",
+        "text": "あらいました",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "あらいました",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "あらいました",
+                "semanticRole": "lexicalUnit",
+                "readings": ["あらいました"]
+            }
+        ],
+        "entries": [],
+        "variants": [
+            {
+                "entryId": "ja:word:household-wash",
+                "setId": "household-wash-forms",
+                "path": ["polite-past"]
+            }
+        ],
+        "sha256": "c3886c880435a71f09d01dc584d1474cd02d531600945ceeba9f4202e96e709a",
+        "frames": 22137,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "9b8afbf5dcee855a8be2a8c8c9aa2b46a9bcfdccfb2b5c87a88c15b0a341608c"
+        }
+    },
+    {
+        "path": "audio/ecf316141e082ec092a9a3fc1438f0e771329bbb85fd83606b3cbaa2be91223b.wav",
+        "text": "あらいません",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "あらいません",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "あらいません",
+                "semanticRole": "lexicalUnit",
+                "readings": ["あらいません"]
+            }
+        ],
+        "entries": [],
+        "variants": [
+            {
+                "entryId": "ja:word:household-wash",
+                "setId": "household-wash-forms",
+                "path": ["polite-negative"]
+            }
+        ],
+        "sha256": "ecf316141e082ec092a9a3fc1438f0e771329bbb85fd83606b3cbaa2be91223b",
+        "frames": 21022,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "63c4d074b4c5726505c67c70112bfb69869f5d437a104e86663292d9318c7288"
+        }
+    },
+    {
+        "path": "audio/404c05fb2e6e1d49866a982410bfa189eb419670ae8d269111eb8f66babcc186.wav",
+        "text": "あらわなかった",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "あらわなかった",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "あらわなかった",
+                "semanticRole": "lexicalUnit",
+                "readings": ["あらわなかった"]
+            }
+        ],
+        "entries": [],
+        "variants": [
+            {
+                "entryId": "ja:word:household-wash",
+                "setId": "household-wash-forms",
+                "path": ["negative-past"]
+            }
+        ],
+        "sha256": "404c05fb2e6e1d49866a982410bfa189eb419670ae8d269111eb8f66babcc186",
+        "frames": 24366,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "a0a1409fc69038edee20afcc0cfb0b512e6c38deac40b1e87bccc80312493653"
+        }
+    },
+    {
+        "path": "audio/05c26297258409d82a8bdd8c9ca29d97c3aa73373bdd2f6ae0e63c2ad22fdcae.wav",
+        "text": "あらえる",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "あらえる",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "あらえる",
+                "semanticRole": "lexicalUnit",
+                "readings": ["あらえる"]
+            }
+        ],
+        "entries": [],
+        "variants": [
+            {
+                "entryId": "ja:word:household-wash",
+                "setId": "household-wash-forms",
+                "path": ["potential"]
+            }
+        ],
+        "sha256": "05c26297258409d82a8bdd8c9ca29d97c3aa73373bdd2f6ae0e63c2ad22fdcae",
+        "frames": 19907,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "f9f313e97ccb0dbde8c71f61cb795af619cfe91512b112b529277f66bfe5910e"
+        }
+    },
+    {
+        "path": "audio/12785e633ebee6830a7eb3b31af5fa38319a706f0a26b272a71d202602845082.wav",
+        "text": "りょうりします",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "りょうりします",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "りょうりします",
+                "semanticRole": "lexicalUnit",
+                "readings": ["りょうりします"]
+            }
+        ],
+        "entries": [],
+        "variants": [
+            {
+                "entryId": "ja:word:household-cook",
+                "setId": "household-cook-forms",
+                "path": ["polite"]
+            }
+        ],
+        "sha256": "12785e633ebee6830a7eb3b31af5fa38319a706f0a26b272a71d202602845082",
+        "frames": 21022,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "8086acc59b4d8675b5321d4ed263a04df36847d3ac03eec633f37a16774da633"
         }
     }
 ]

@@ -78,6 +78,10 @@ Tassen, Teller, Löffel und Gabeln mit vier englischen Pluralformen, vier Beispi
 
 Bibliotheken, Krankenhäuser, Supermärkte und Restaurants mit geprüften Bedeutungen, vier englischen Pluralformen und einem Themenstapel ergänzen. Acht abwechslungsreiche Beispiele behandeln Lesen, Arbeit, Ortsfragen, geplante Wege, Einkaufen und Essen. Quellbilder und endgültige Bilder sowie Wörterbuchbedeutungen und Lesungen prüfen; exakte Audiosegmente bewahren. Die Hörprüfung steht aus.
 
+## Tätigkeiten im Haushalt
+
+Waschen, Kochen, Reinigen und Trocknen mit vier geprüften Aktionsbildern je Modul, lokalisierten Hinweisen zu Bedeutung und Transitivität sowie einem Haushaltsstapel ergänzen. Sechzehn englische Formen mit zwölf gemeinsam genutzten Aufnahmen und zweiunddreißig japanische Formen samt Form- und Audiotests unterstützen. Acht abwechslungsreiche Beispiele nutzen exakte Audiosegmente. Englische Beispiele behandeln Gegenwart, Vergangenheit und Verlaufsformen. Japanische Beispiele verwenden wegen des Host-Imports Grundformen; alle zweiunddreißig Formen bleiben für die Transformationsübungen verfügbar. Die Hörprüfung steht aus.
+
 ## Commits
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)
