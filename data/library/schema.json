@@ -1,6 +1,6 @@
 {
     "id": "japanese-core",
-    "version": 103,
+    "version": 104,
     "namespace": "ja",
     "language": "ja",
     "metadata": {
@@ -15146,6 +15146,500 @@
                     "pronunciation": {
                         "removeSuffix": "たつ",
                         "append": "たてる"
+                    },
+                    "definitionTransform": {
+                        "template": {
+                            "labels": {
+                                "en": "{{ definition }} (Potential)",
+                                "de": "{{ definition }} (Möglichkeitsform)",
+                                "id": "{{ definition }} (Potensial)",
+                                "ja": "{{ definition }} (可能形)"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "id": "force-push-forms",
+            "metadata": {
+                "labels": {
+                    "en": "おす Forms",
+                    "de": "おす-Formen",
+                    "id": "Bentuk おす",
+                    "ja": "おすの活用"
+                }
+            },
+            "matchTags": ["verb", "force-form-push"],
+            "baseState": "base",
+            "rules": [
+                {
+                    "id": "polite",
+                    "metadata": {
+                        "labels": {
+                            "en": "Polite",
+                            "de": "Höflich",
+                            "id": "Sopan",
+                            "ja": "丁寧形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "polite",
+                    "removeSuffix": "おす",
+                    "append": "おします",
+                    "pronunciation": {
+                        "removeSuffix": "おす",
+                        "append": "おします"
+                    },
+                    "definitionTransform": {
+                        "template": {
+                            "labels": {
+                                "en": "{{ definition }} (Polite)",
+                                "de": "{{ definition }} (Höflich)",
+                                "id": "{{ definition }} (Sopan)",
+                                "ja": "{{ definition }} (丁寧形)"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "negative",
+                    "metadata": {
+                        "labels": {
+                            "en": "Negative",
+                            "de": "Verneinung",
+                            "id": "Negatif",
+                            "ja": "否定形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "negative",
+                    "removeSuffix": "おす",
+                    "append": "おさない",
+                    "pronunciation": {
+                        "removeSuffix": "おす",
+                        "append": "おさない"
+                    },
+                    "definitionTransform": {
+                        "template": {
+                            "labels": {
+                                "en": "{{ definition }} (Negative)",
+                                "de": "{{ definition }} (Verneinung)",
+                                "id": "{{ definition }} (Negatif)",
+                                "ja": "{{ definition }} (否定形)"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "past",
+                    "metadata": {
+                        "labels": {
+                            "en": "Past",
+                            "de": "Vergangenheit",
+                            "id": "Lampau",
+                            "ja": "過去形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "past",
+                    "removeSuffix": "おす",
+                    "append": "おした",
+                    "pronunciation": {
+                        "removeSuffix": "おす",
+                        "append": "おした"
+                    },
+                    "definitionTransform": {
+                        "template": {
+                            "labels": {
+                                "en": "{{ definition }} (Past)",
+                                "de": "{{ definition }} (Vergangenheit)",
+                                "id": "{{ definition }} (Lampau)",
+                                "ja": "{{ definition }} (過去形)"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "te-form",
+                    "metadata": {
+                        "labels": {
+                            "en": "Te Form",
+                            "de": "Te-Form",
+                            "id": "Bentuk Te",
+                            "ja": "て形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "te-form",
+                    "removeSuffix": "おす",
+                    "append": "おして",
+                    "pronunciation": {
+                        "removeSuffix": "おす",
+                        "append": "おして"
+                    },
+                    "definitionTransform": {
+                        "template": {
+                            "labels": {
+                                "en": "{{ definition }} (Te Form)",
+                                "de": "{{ definition }} (Te-Form)",
+                                "id": "{{ definition }} (Bentuk Te)",
+                                "ja": "{{ definition }} (て形)"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "polite-past",
+                    "metadata": {
+                        "labels": {
+                            "en": "Polite Past",
+                            "de": "Höfliche Vergangenheit",
+                            "id": "Lampau Sopan",
+                            "ja": "丁寧過去形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "polite-past",
+                    "removeSuffix": "おす",
+                    "append": "おしました",
+                    "pronunciation": {
+                        "removeSuffix": "おす",
+                        "append": "おしました"
+                    },
+                    "definitionTransform": {
+                        "template": {
+                            "labels": {
+                                "en": "{{ definition }} (Polite Past)",
+                                "de": "{{ definition }} (Höfliche Vergangenheit)",
+                                "id": "{{ definition }} (Lampau Sopan)",
+                                "ja": "{{ definition }} (丁寧過去形)"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "polite-negative",
+                    "metadata": {
+                        "labels": {
+                            "en": "Polite Negative",
+                            "de": "Höfliche Verneinung",
+                            "id": "Negatif Sopan",
+                            "ja": "丁寧否定形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "polite-negative",
+                    "removeSuffix": "おす",
+                    "append": "おしません",
+                    "pronunciation": {
+                        "removeSuffix": "おす",
+                        "append": "おしません"
+                    },
+                    "definitionTransform": {
+                        "template": {
+                            "labels": {
+                                "en": "{{ definition }} (Polite Negative)",
+                                "de": "{{ definition }} (Höfliche Verneinung)",
+                                "id": "{{ definition }} (Negatif Sopan)",
+                                "ja": "{{ definition }} (丁寧否定形)"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "negative-past",
+                    "metadata": {
+                        "labels": {
+                            "en": "Negative Past",
+                            "de": "Verneinte Vergangenheit",
+                            "id": "Lampau Negatif",
+                            "ja": "否定過去形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "negative-past",
+                    "removeSuffix": "おす",
+                    "append": "おさなかった",
+                    "pronunciation": {
+                        "removeSuffix": "おす",
+                        "append": "おさなかった"
+                    },
+                    "definitionTransform": {
+                        "template": {
+                            "labels": {
+                                "en": "{{ definition }} (Negative Past)",
+                                "de": "{{ definition }} (Verneinte Vergangenheit)",
+                                "id": "{{ definition }} (Lampau Negatif)",
+                                "ja": "{{ definition }} (否定過去形)"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "potential",
+                    "metadata": {
+                        "labels": {
+                            "en": "Potential",
+                            "de": "Möglichkeitsform",
+                            "id": "Potensial",
+                            "ja": "可能形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "potential",
+                    "removeSuffix": "おす",
+                    "append": "おせる",
+                    "pronunciation": {
+                        "removeSuffix": "おす",
+                        "append": "おせる"
+                    },
+                    "definitionTransform": {
+                        "template": {
+                            "labels": {
+                                "en": "{{ definition }} (Potential)",
+                                "de": "{{ definition }} (Möglichkeitsform)",
+                                "id": "{{ definition }} (Potensial)",
+                                "ja": "{{ definition }} (可能形)"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "id": "force-pull-forms",
+            "metadata": {
+                "labels": {
+                    "en": "ひく Forms",
+                    "de": "ひく-Formen",
+                    "id": "Bentuk ひく",
+                    "ja": "ひくの活用"
+                }
+            },
+            "matchTags": ["verb", "force-form-pull"],
+            "baseState": "base",
+            "rules": [
+                {
+                    "id": "polite",
+                    "metadata": {
+                        "labels": {
+                            "en": "Polite",
+                            "de": "Höflich",
+                            "id": "Sopan",
+                            "ja": "丁寧形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "polite",
+                    "removeSuffix": "ひく",
+                    "append": "ひきます",
+                    "pronunciation": {
+                        "removeSuffix": "ひく",
+                        "append": "ひきます"
+                    },
+                    "definitionTransform": {
+                        "template": {
+                            "labels": {
+                                "en": "{{ definition }} (Polite)",
+                                "de": "{{ definition }} (Höflich)",
+                                "id": "{{ definition }} (Sopan)",
+                                "ja": "{{ definition }} (丁寧形)"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "negative",
+                    "metadata": {
+                        "labels": {
+                            "en": "Negative",
+                            "de": "Verneinung",
+                            "id": "Negatif",
+                            "ja": "否定形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "negative",
+                    "removeSuffix": "ひく",
+                    "append": "ひかない",
+                    "pronunciation": {
+                        "removeSuffix": "ひく",
+                        "append": "ひかない"
+                    },
+                    "definitionTransform": {
+                        "template": {
+                            "labels": {
+                                "en": "{{ definition }} (Negative)",
+                                "de": "{{ definition }} (Verneinung)",
+                                "id": "{{ definition }} (Negatif)",
+                                "ja": "{{ definition }} (否定形)"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "past",
+                    "metadata": {
+                        "labels": {
+                            "en": "Past",
+                            "de": "Vergangenheit",
+                            "id": "Lampau",
+                            "ja": "過去形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "past",
+                    "removeSuffix": "ひく",
+                    "append": "ひいた",
+                    "pronunciation": {
+                        "removeSuffix": "ひく",
+                        "append": "ひいた"
+                    },
+                    "definitionTransform": {
+                        "template": {
+                            "labels": {
+                                "en": "{{ definition }} (Past)",
+                                "de": "{{ definition }} (Vergangenheit)",
+                                "id": "{{ definition }} (Lampau)",
+                                "ja": "{{ definition }} (過去形)"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "te-form",
+                    "metadata": {
+                        "labels": {
+                            "en": "Te Form",
+                            "de": "Te-Form",
+                            "id": "Bentuk Te",
+                            "ja": "て形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "te-form",
+                    "removeSuffix": "ひく",
+                    "append": "ひいて",
+                    "pronunciation": {
+                        "removeSuffix": "ひく",
+                        "append": "ひいて"
+                    },
+                    "definitionTransform": {
+                        "template": {
+                            "labels": {
+                                "en": "{{ definition }} (Te Form)",
+                                "de": "{{ definition }} (Te-Form)",
+                                "id": "{{ definition }} (Bentuk Te)",
+                                "ja": "{{ definition }} (て形)"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "polite-past",
+                    "metadata": {
+                        "labels": {
+                            "en": "Polite Past",
+                            "de": "Höfliche Vergangenheit",
+                            "id": "Lampau Sopan",
+                            "ja": "丁寧過去形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "polite-past",
+                    "removeSuffix": "ひく",
+                    "append": "ひきました",
+                    "pronunciation": {
+                        "removeSuffix": "ひく",
+                        "append": "ひきました"
+                    },
+                    "definitionTransform": {
+                        "template": {
+                            "labels": {
+                                "en": "{{ definition }} (Polite Past)",
+                                "de": "{{ definition }} (Höfliche Vergangenheit)",
+                                "id": "{{ definition }} (Lampau Sopan)",
+                                "ja": "{{ definition }} (丁寧過去形)"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "polite-negative",
+                    "metadata": {
+                        "labels": {
+                            "en": "Polite Negative",
+                            "de": "Höfliche Verneinung",
+                            "id": "Negatif Sopan",
+                            "ja": "丁寧否定形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "polite-negative",
+                    "removeSuffix": "ひく",
+                    "append": "ひきません",
+                    "pronunciation": {
+                        "removeSuffix": "ひく",
+                        "append": "ひきません"
+                    },
+                    "definitionTransform": {
+                        "template": {
+                            "labels": {
+                                "en": "{{ definition }} (Polite Negative)",
+                                "de": "{{ definition }} (Höfliche Verneinung)",
+                                "id": "{{ definition }} (Negatif Sopan)",
+                                "ja": "{{ definition }} (丁寧否定形)"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "negative-past",
+                    "metadata": {
+                        "labels": {
+                            "en": "Negative Past",
+                            "de": "Verneinte Vergangenheit",
+                            "id": "Lampau Negatif",
+                            "ja": "否定過去形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "negative-past",
+                    "removeSuffix": "ひく",
+                    "append": "ひかなかった",
+                    "pronunciation": {
+                        "removeSuffix": "ひく",
+                        "append": "ひかなかった"
+                    },
+                    "definitionTransform": {
+                        "template": {
+                            "labels": {
+                                "en": "{{ definition }} (Negative Past)",
+                                "de": "{{ definition }} (Verneinte Vergangenheit)",
+                                "id": "{{ definition }} (Lampau Negatif)",
+                                "ja": "{{ definition }} (否定過去形)"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "potential",
+                    "metadata": {
+                        "labels": {
+                            "en": "Potential",
+                            "de": "Möglichkeitsform",
+                            "id": "Potensial",
+                            "ja": "可能形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "potential",
+                    "removeSuffix": "ひく",
+                    "append": "ひける",
+                    "pronunciation": {
+                        "removeSuffix": "ひく",
+                        "append": "ひける"
                     },
                     "definitionTransform": {
                         "template": {

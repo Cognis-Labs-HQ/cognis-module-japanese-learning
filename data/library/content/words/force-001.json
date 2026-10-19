@@ -1,0 +1,126 @@
+[
+    {
+        "id": "ja:word:complete-pronunciation-force-push",
+        "label": "おす",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["おす"],
+            "audio": "audio/70842c34e88433d2fc8cf4f203b3c87cec9fab8573e74cf21e931c128d43e52c.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:o",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:su",
+                        "relation": "reading-kana",
+                        "position": 1
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:force-push",
+        "label": "おす",
+        "class": "lexical:verb",
+        "fields": {
+            "pronunciation": ["おす"],
+            "usage_notes": {
+                "en": "Apply force away from yourself to move an object. Pushes has an extra syllable; pushed ends in /t/. Japanese おす is transitive godan: おします, おした, おして. を marks the object. The picture shows pushing, not lifting.",
+                "de": "Durch Kraft vom Körper weg wird ein Gegenstand bewegt. Pushes hat eine zusätzliche Silbe; pushed endet auf /t/. おす ist transitiv und gehört zur Godan-Gruppe: おします・おした・おして. を markiert das Objekt. Das Bild zeigt Schieben, nicht Heben.",
+                "id": "Menggerakkan benda dengan gaya menjauh dari diri sendiri. Pushes memiliki suku kata tambahan; pushed berakhir dengan /t/. おす adalah verba godan transitif: おします・おした・おして. を menandai objek. Gambar menunjukkan mendorong, bukan mengangkat.",
+                "ja": "力を加えて物を自分から遠ざける動作を扱います。英語のpushesは一音節増え、pushedの末尾は/t/です。おすは他動詞の五段活用で、おします・おした・おしてと変化します。対象はをで示します。画像は持ち上げる動作ではなく押す動作です。"
+            },
+            "reference_images": [
+                "images/c3537a0ad82916f9b56c69f14fc833a50cd353d2c6e001f324703ed735407dca.jpg"
+            ],
+            "audio": "audio/70842c34e88433d2fc8cf4f203b3c87cec9fab8573e74cf21e931c128d43e52c.wav"
+        },
+        "tags": ["verb", "force-form-push"],
+        "references": [
+            {
+                "entryId": "ja:definition:force-push",
+                "relation": "definitions"
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-force-push",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:complete-pronunciation-force-pull",
+        "label": "ひく",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["ひく"],
+            "audio": "audio/cfbef82ee07b0267206dc163ac30d80b870c078fb3ac5997876c7c7feb4893f0.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:hi",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:ku",
+                        "relation": "reading-kana",
+                        "position": 1
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:force-pull",
+        "label": "ひく",
+        "class": "lexical:verb",
+        "fields": {
+            "pronunciation": ["ひく"],
+            "usage_notes": {
+                "en": "Use force to draw an object toward yourself. Pull keeps /ʊ/; pulled ends in /d/. Japanese ひく is transitive godan: ひきます, ひいた, ひいて. These forms have no small っ. This card excludes playing an instrument (弾く) and other homophones.",
+                "de": "Ein Gegenstand wird mit Kraft zum eigenen Körper gezogen. Pull behält /ʊ/; pulled endet auf /d/. ひく ist transitiv und gehört zur Godan-Gruppe: ひきます・ひいた・ひいて, ohne kleines っ. Das Spielen eines Instruments (弾く) und andere gleichlautende Wörter sind nicht gemeint.",
+                "id": "Menggunakan gaya untuk menarik benda ke arah diri sendiri. Pull mempertahankan /ʊ/; pulled berakhir dengan /d/. ひく adalah verba godan transitif: ひきます・ひいた・ひいて, tanpa っ kecil. Kartu ini tidak mencakup memainkan alat musik (弾く) atau homofon lain.",
+                "ja": "物を自分の方へ引き寄せる動作を扱います。英語pullの母音は/ʊ/、pulledの末尾は/d/です。ひくは他動詞の五段活用で、ひきます・ひいた・ひいてと変化し、小さいっは入りません。楽器を弾く意味や他の同音語は扱いません。"
+            },
+            "reference_images": [
+                "images/06884ae1bfca80b432829be9044b4ea785133730b3b03c64c5dd5c4fa97d7e16.jpg"
+            ],
+            "audio": "audio/cfbef82ee07b0267206dc163ac30d80b870c078fb3ac5997876c7c7feb4893f0.wav"
+        },
+        "tags": ["verb", "force-form-pull"],
+        "references": [
+            {
+                "entryId": "ja:definition:force-pull",
+                "relation": "definitions"
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-force-pull",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    }
+]

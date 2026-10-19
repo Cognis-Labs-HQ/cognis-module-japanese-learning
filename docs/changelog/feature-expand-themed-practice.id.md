@@ -214,6 +214,10 @@ Menambahkan empat contoh yang ditulis satu per satu tentang mencuci piring, memb
 
 Tambahkan rubah, beruang, monyet, dan gajah dengan empat contoh berbeda tentang habitat, gerakan, pengamatan, dan ukuran serta satu set kartu awal. Setiap ilustrasi asli dan JPEG akhir telah diperiksa secara visual. Makna dan catatan tentang contoh spesies, makna nomina, dan vokal panjang pada ぞう tersedia dalam empat bahasa. Semua pilihan audio sebelumnya dibandingkan byte demi byte saat inventaris bertambah. Rekaman baru tetap ditandai belum diperiksa melalui pendengaran.
 
+## Mendorong dan menarik dalam konteks
+
+Menambahkan push dan pull dengan akhiran beraturan bahasa Inggris dan bentuk godan su/ku bahasa Jepang yang diperiksa, ilustrasi tindakan yang ditinjau, serta empat contoh berbeda. Contoh mencakup permintaan, kejadian lampau, tindakan berlangsung, cara, pertentangan, dan tindakan nanti. Setiap bahasa mendapat satu set kartu. Rekaman unsur yang tepat dan bukti sumber disimpan; pemeriksaan pendengaran belum dilakukan.
+
 ## Komit
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)

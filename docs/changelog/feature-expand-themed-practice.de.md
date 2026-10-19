@@ -214,6 +214,10 @@ Vier einzeln verfasste Beispiele zum Abwaschen, Lesen, Sitzen am Tisch und zu pe
 
 Fuchs, Bär, Affe und Elefant erhalten vier unterschiedliche Beispiele zu Lebensraum, Bewegung, Beobachtung und Größe sowie ein eigenes Startkartenset. Jede Originalillustration und jede endgültige JPEG-Datei wurde visuell geprüft. Bedeutungen und Hinweise zu Artenbeispielen, Substantivbedeutungen und dem Langvokal in ぞう liegen in vier Sprachen vor. Alle bisherigen Audioauswahlen werden beim Ausbau bytegenau verglichen. Neue Sprachaufnahmen bleiben ausdrücklich ohne Hörprüfung.
 
+## Schieben und Ziehen im Zusammenhang
+
+Push und pull mit geprüften regelmäßigen englischen Endungen und japanischen Su-/Ku-Godan-Formen, visuell geprüften Handlungsbildern und vier unterschiedlichen Beispielen ergänzt. Die Beispiele behandeln Bitte, Vergangenheit, laufende Handlung, Art und Weise, Gegensatz und spätere Handlung. Jede Sprache erhält ein eigenes Kartenset. Exakte Aufnahmen der Bestandteile und Quellenbelege bleiben erhalten; die Hörprüfung steht aus.
+
 ## Commits
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)

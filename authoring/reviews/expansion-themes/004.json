@@ -1,5 +1,36 @@
 [
     {
+        "theme": "stationery",
+        "newDistinctVocabularyCount": 4,
+        "vocabulary": [
+            {
+                "entryId": "ja:word:stationery-eraser",
+                "label": "けしゴム"
+            },
+            {
+                "entryId": "ja:word:stationery-scissors",
+                "label": "はさみ"
+            },
+            {
+                "entryId": "ja:word:stationery-tape",
+                "label": "テープ"
+            },
+            {
+                "entryId": "ja:word:stationery-stapler",
+                "label": "ホチキス"
+            }
+        ],
+        "newExampleCount": 4,
+        "exampleIds": [
+            "ja:sentence:stationery-example-scissors-location",
+            "ja:sentence:stationery-example-buy-eraser",
+            "ja:sentence:stationery-example-tape-question",
+            "ja:sentence:stationery-example-receive-stapler"
+        ],
+        "recordedGrammaticalFormCount": 0,
+        "vocabularyAudit": "authoring/reviews/stationery-vocabulary.json"
+    },
+    {
         "theme": "tableware",
         "newDistinctVocabularyCount": 4,
         "vocabulary": [
@@ -227,21 +258,5 @@
         ],
         "recordedGrammaticalFormCount": 0,
         "vocabularyAudit": "authoring/reviews/shopping.json"
-    },
-    {
-        "theme": "daily-needs",
-        "newDistinctVocabularyCount": 0,
-        "vocabulary": [],
-        "newExampleCount": 6,
-        "exampleIds": [
-            "ja:sentence:daily-needs-1",
-            "ja:sentence:daily-needs-2",
-            "ja:sentence:daily-needs-3",
-            "ja:sentence:daily-needs-4",
-            "ja:sentence:daily-needs-5",
-            "ja:sentence:daily-needs-6"
-        ],
-        "recordedGrammaticalFormCount": 0,
-        "vocabularyAudit": "authoring/reviews/daily-needs-sentences.json"
     }
 ]

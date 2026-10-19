@@ -85,6 +85,29 @@
         "vocabularyAudit": "authoring/reviews/fixtures-vocabulary.json"
     },
     {
+        "theme": "force",
+        "newDistinctVocabularyCount": 2,
+        "vocabulary": [
+            {
+                "entryId": "ja:word:force-push",
+                "label": "おす"
+            },
+            {
+                "entryId": "ja:word:force-pull",
+                "label": "ひく"
+            }
+        ],
+        "newExampleCount": 4,
+        "exampleIds": [
+            "ja:sentence:force-example-push-chair",
+            "ja:sentence:force-example-pull-suitcase",
+            "ja:sentence:force-example-heavy-box",
+            "ja:sentence:force-example-move-later"
+        ],
+        "recordedGrammaticalFormCount": 16,
+        "vocabularyAudit": "authoring/reviews/force-vocabulary.json"
+    },
+    {
         "theme": "frequency",
         "newDistinctVocabularyCount": 4,
         "vocabulary": [
@@ -264,36 +287,5 @@
         ],
         "recordedGrammaticalFormCount": 0,
         "vocabularyAudit": "authoring/reviews/kitchen-vocabulary.json"
-    },
-    {
-        "theme": "nature",
-        "newDistinctVocabularyCount": 4,
-        "vocabulary": [
-            {
-                "entryId": "ja:word:nature-tree",
-                "label": "き"
-            },
-            {
-                "entryId": "ja:word:nature-forest",
-                "label": "もり"
-            },
-            {
-                "entryId": "ja:word:nature-leaf",
-                "label": "はっぱ"
-            },
-            {
-                "entryId": "ja:word:nature-stone",
-                "label": "いし"
-            }
-        ],
-        "newExampleCount": 4,
-        "exampleIds": [
-            "ja:sentence:nature-example-tree",
-            "ja:sentence:nature-example-forest",
-            "ja:sentence:nature-example-leaf",
-            "ja:sentence:nature-example-stone"
-        ],
-        "recordedGrammaticalFormCount": 0,
-        "vocabularyAudit": "authoring/reviews/nature-vocabulary.json"
     }
 ]

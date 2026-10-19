@@ -214,6 +214,10 @@ Added four individually authored examples covering dishwashing, reading, sitting
 
 Add fox, bear, monkey and elephant with four distinct examples about habitat, movement, observation and size, plus a focused starter deck. Review each original illustration and final JPEG; retain four-language meanings and notes about species examples, noun senses and the Japanese long vowel in ぞう. Compare all prior audio-provider selections byte for byte as inventories grow. New speech remains explicitly unverified by listening.
 
+## Pushing and pulling in context
+
+Add push and pull with reviewed English regular endings and Japanese su/ku godan forms, inspected action illustrations and four varied examples. Examples cover a request, a past event, action in progress, manner, contrast and later action. Each language receives one focused deck. Exact constituent recordings and source evidence are retained; listening remains unverified.
+
 ## Commits
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)
