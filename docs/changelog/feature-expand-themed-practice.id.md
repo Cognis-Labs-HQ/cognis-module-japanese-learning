@@ -220,3 +220,4 @@ Tambahkan understand dan わかる dengan empat ikatan bentuk Inggris dan tujuh 
 - [754cd61](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/754cd613c495c4f402b7826fea4a9f8207201113)
 - [25c0c73](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/25c0c73a1f61c2fc899bcabdd70e5b7583a23abe)
 - [0d8e1c4](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/0d8e1c4cc172b15be524c3b7051d98f4a694b928)
+- [7fd3e92](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/7fd3e9244817a60470cec7f77c2090a13756d369)
