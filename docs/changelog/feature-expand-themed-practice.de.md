@@ -50,6 +50,10 @@ Morgen, gestern, bald und später erscheinen mit vier visuell geprüften Illustr
 
 Rot, Blau, Grün und Gelb werden als Farbnomen ergänzt, jeweils mit visuell geprüfter Illustration, Aufnahme der festgelegten Stimme, vollständiger Lesung und übersetzten Anwendungsbeispielen. Vier Vorliebensätze pro Sprache verwenden unveränderte Wortaufnahmen, einschließlich der englischen Form likes. Ein gemeinsames Vokabel- und Satzdeck ermöglicht direktes Üben. Japanische Hinweise unterscheiden Farbnomen von Adjektivformen.
 
+## Wetterwortschatz
+
+Vier illustrierte Wetternomen mit lokalisierten Bedeutungen, Aussprachehinweisen und einem Übungsstapel ergänzen. Alle acht Quellbilder und endgültigen Bilder beider Module wurden visuell geprüft; die widersprüchliche japanische Windszene wurde korrigiert. Aufnahmen bewahren exakte Anfragen und Quell-PCM; eine Hörprüfung steht aus.
+
 ## Commits
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)

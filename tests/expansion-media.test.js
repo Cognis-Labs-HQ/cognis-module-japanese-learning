@@ -5,7 +5,7 @@ import test from "node:test";
 
 const load = async (path) => JSON.parse(await readFile(path, "utf8"));
 const index = await load("authoring/index.json");
-for (const theme of ["time", "colors"].filter(
+for (const theme of ["time", "colors", "weather"].filter(
     (name) => index[`${name}Images`],
 )) {
     test(`${theme} vocabulary binds reviewed illustrations and recordings to exact published bytes`, async () => {
@@ -22,7 +22,13 @@ for (const theme of ["time", "colors"].filter(
             assert.deepEqual(word.fields.reference_images, [picture.path]);
             const clip = audio.find(({ entryId }) => entryId === word.id);
             assert.equal(clip.path, word.fields.audio);
-            assert.equal(clip.request.text, word.label);
+            const vocabulary = await load(
+                `authoring/reviews/${theme}-vocabulary.json`,
+            );
+            const reviewed = vocabulary.find(
+                ({ entryId }) => entryId === word.id,
+            );
+            assert.equal(clip.request.text, reviewed.audioText ?? word.label);
             assert.equal(clip.listening, "unverified-not-performed");
             assert.equal(clip.sourceFullScaleSamples, 0);
             for (const item of [picture, clip]) {

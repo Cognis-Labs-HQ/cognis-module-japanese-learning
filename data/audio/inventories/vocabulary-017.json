@@ -1,0 +1,145 @@
+[
+    {
+        "path": "audio/eee14699f4b93c444f03b867e79632ccdd5a4d77530c6ad0a280ee4953fc1395.wav",
+        "text": "たいよう",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "太陽",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "たいよう",
+                "semanticRole": "lexicalUnit",
+                "readings": ["たいよう"]
+            }
+        ],
+        "entries": [
+            "ja:word:weather-sun",
+            "ja:word:complete-pronunciation-weather-sun"
+        ],
+        "variants": [],
+        "sha256": "eee14699f4b93c444f03b867e79632ccdd5a4d77530c6ad0a280ee4953fc1395",
+        "frames": 18793,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "55b5bb26fada138a9dc58747f49c23c884182197bd1c421fb1acbc7ddc46b5b6"
+        }
+    },
+    {
+        "path": "audio/a764a56b7772e8e9e1e8c514a1eed19e7c3e1243e571953aa22e4a40e8cea1c8.wav",
+        "text": "ゆき",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "雪",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [],
+        "entries": [],
+        "variants": [],
+        "sha256": "a764a56b7772e8e9e1e8c514a1eed19e7c3e1243e571953aa22e4a40e8cea1c8",
+        "frames": 16564,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "adb08578513ea4a24cca8a1c7ac5f73dc6e8a534e4c187012d7b22c312bcee15",
+            "publication": "Retained generated candidate; runtime reuses existing exact ゆき pronunciation to avoid lookup collision."
+        }
+    },
+    {
+        "path": "audio/dfa5155a60f29686d1b17d3683d241f36137dca878598d9294e1cfff5404b7e9.wav",
+        "text": "かぜ",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "風",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "かぜ",
+                "semanticRole": "lexicalUnit",
+                "readings": ["かぜ"]
+            }
+        ],
+        "entries": [
+            "ja:word:weather-wind",
+            "ja:word:complete-pronunciation-weather-wind"
+        ],
+        "variants": [],
+        "sha256": "dfa5155a60f29686d1b17d3683d241f36137dca878598d9294e1cfff5404b7e9",
+        "frames": 13220,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "5784aefb7ed824182d24b4f540cbd43f888eec7362d00502a00536a76288e0cb"
+        }
+    },
+    {
+        "path": "audio/1122bcf0e6f6e6f651a38690cf9df6138e70da9afc2c521e4324d782835a2988.wav",
+        "text": "くも",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "雲",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "くも",
+                "semanticRole": "lexicalUnit",
+                "readings": ["くも"]
+            }
+        ],
+        "entries": [
+            "ja:word:weather-cloud",
+            "ja:word:complete-pronunciation-weather-cloud"
+        ],
+        "variants": [],
+        "sha256": "1122bcf0e6f6e6f651a38690cf9df6138e70da9afc2c521e4324d782835a2988",
+        "frames": 14335,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "d7b9781dd32ced7e25e099b707dc20898ff6e3b75ac332773e3999a2fae0fea1"
+        }
+    }
+]

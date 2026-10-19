@@ -171,9 +171,13 @@ test("recorded cards retain complete audio coverage and unrecorded additions are
                 semanticRole: layer.semanticRole,
                 readings: entry.fields.pronunciation?.slice(0, 1) ?? [],
             };
-            assert.deepEqual(
-                (await provider.fetchAudio(input)).data,
-                new Uint8Array(assets.get(entry.fields.audio)),
+            const actual = (await provider.fetchAudio(input)).data;
+            assert.equal(
+                createHash("sha256").update(actual).digest("hex"),
+                createHash("sha256")
+                    .update(assets.get(entry.fields.audio))
+                    .digest("hex"),
+                `${entry.id}: bundled playback must match the card audio`,
             );
             for (const form of forms(entry)) {
                 variants++;

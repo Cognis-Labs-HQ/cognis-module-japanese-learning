@@ -1,0 +1,182 @@
+[
+    {
+        "entryId": "ja:word:weather-sun",
+        "path": "audio/eee14699f4b93c444f03b867e79632ccdd5a4d77530c6ad0a280ee4953fc1395.wav",
+        "sha256": "eee14699f4b93c444f03b867e79632ccdd5a4d77530c6ad0a280ee4953fc1395",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "太陽",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "response": {
+            "request-id": "nH02IuO42UkS9gVttN4X",
+            "character-cost": "1",
+            "content-type": "audio/pcm"
+        },
+        "sourcePath": "authoring/audio/weather/weather-sun.pcm",
+        "sourceSha256": "55b5bb26fada138a9dc58747f49c23c884182197bd1c421fb1acbc7ddc46b5b6",
+        "sourcePeak": 22843,
+        "sourceFullScaleSamples": 0,
+        "gain": 1,
+        "paddingFramesEachSide": 480,
+        "frames": 18793,
+        "listening": "unverified-not-performed",
+        "technicalReview": "Native written input and intended reading checked; all PCM frames preserved with gain limit and endpoint padding; non-silent mono PCM16 at 24000Hz. Not auditory verification."
+    },
+    {
+        "entryId": "ja:word:weather-snow",
+        "path": "audio/421f3a0a6b7e6e3c8ec0b9c498891ca2b2f480ad28d529374f8d64df5c22097c.wav",
+        "sha256": "7cd280097abfc17df6c58ba7abbed10de9be3c09951e0a6ff8553d392b26972d",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "ゆき",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja"
+        },
+        "response": {
+            "request-id": "gNFah9gNpvHeFXZjcacc",
+            "character-cost": "1",
+            "content-type": "audio/pcm"
+        },
+        "sourcePath": "authoring/audio/weather/reused-yuki.wav",
+        "sourceSha256": "7cd280097abfc17df6c58ba7abbed10de9be3c09951e0a6ff8553d392b26972d",
+        "sourcePeak": 7185,
+        "sourceFullScaleSamples": 0,
+        "gain": 1,
+        "paddingFramesEachSide": 480,
+        "frames": 16564,
+        "listening": "unverified-not-performed",
+        "technicalReview": "Native written input and intended reading checked; all PCM frames preserved with gain limit and endpoint padding; non-silent mono PCM16 at 24000Hz. Not auditory verification.",
+        "pronunciationReuse": {
+            "entryId": "ja:word:complete-pronunciation-weather-snow",
+            "path": "audio/421f3a0a6b7e6e3c8ec0b9c498891ca2b2f480ad28d529374f8d64df5c22097c.wav",
+            "reason": "Reuse existing exact ゆき pronunciation lookup; visible 雪 has its own unambiguous recorded input."
+        },
+        "generatedCandidate": {
+            "entryId": "ja:word:weather-snow",
+            "path": "audio/a764a56b7772e8e9e1e8c514a1eed19e7c3e1243e571953aa22e4a40e8cea1c8.wav",
+            "sha256": "a764a56b7772e8e9e1e8c514a1eed19e7c3e1243e571953aa22e4a40e8cea1c8",
+            "voiceId": "xya0RvcJtofTcFTOdX4E",
+            "request": {
+                "text": "雪",
+                "model_id": "eleven_flash_v2_5",
+                "seed": 42,
+                "voice_settings": {
+                    "stability": 0.9,
+                    "similarity_boost": 0.85,
+                    "style": 0,
+                    "use_speaker_boost": true,
+                    "speed": 0.9
+                },
+                "language_code": "ja",
+                "apply_text_normalization": "off"
+            },
+            "response": {
+                "request-id": "gNFah9gNpvHeFXZjcacc",
+                "character-cost": "1",
+                "content-type": "audio/pcm"
+            },
+            "sourcePath": "authoring/audio/weather/weather-snow.pcm",
+            "sourceSha256": "adb08578513ea4a24cca8a1c7ac5f73dc6e8a534e4c187012d7b22c312bcee15",
+            "sourcePeak": 7185,
+            "sourceFullScaleSamples": 0,
+            "gain": 1,
+            "paddingFramesEachSide": 480,
+            "frames": 16564,
+            "listening": "unverified-not-performed",
+            "technicalReview": "Native written input and intended reading checked; all PCM frames preserved with gain limit and endpoint padding; non-silent mono PCM16 at 24000Hz. Not auditory verification.",
+            "pronunciationReuse": {
+                "entryId": "ja:word:complete-pronunciation-weather-snow",
+                "path": "audio/421f3a0a6b7e6e3c8ec0b9c498891ca2b2f480ad28d529374f8d64df5c22097c.wav",
+                "reason": "Reuse existing exact ゆき pronunciation lookup; visible 雪 has its own unambiguous recorded input."
+            }
+        },
+        "reuse": "Existing exact ゆき recording shared with pronunciation cards; generated snow candidate retained separately, not selected for playback."
+    },
+    {
+        "entryId": "ja:word:weather-wind",
+        "path": "audio/dfa5155a60f29686d1b17d3683d241f36137dca878598d9294e1cfff5404b7e9.wav",
+        "sha256": "dfa5155a60f29686d1b17d3683d241f36137dca878598d9294e1cfff5404b7e9",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "風",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "response": {
+            "request-id": "8zXduNN7HmEUYBWIUA4c",
+            "character-cost": "1",
+            "content-type": "audio/pcm"
+        },
+        "sourcePath": "authoring/audio/weather/weather-wind.pcm",
+        "sourceSha256": "5784aefb7ed824182d24b4f540cbd43f888eec7362d00502a00536a76288e0cb",
+        "sourcePeak": 2549,
+        "sourceFullScaleSamples": 0,
+        "gain": 1,
+        "paddingFramesEachSide": 480,
+        "frames": 13220,
+        "listening": "unverified-not-performed",
+        "technicalReview": "Native written input and intended reading checked; all PCM frames preserved with gain limit and endpoint padding; non-silent mono PCM16 at 24000Hz. Not auditory verification."
+    },
+    {
+        "entryId": "ja:word:weather-cloud",
+        "path": "audio/1122bcf0e6f6e6f651a38690cf9df6138e70da9afc2c521e4324d782835a2988.wav",
+        "sha256": "1122bcf0e6f6e6f651a38690cf9df6138e70da9afc2c521e4324d782835a2988",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "雲",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "response": {
+            "request-id": "8yDxPYnrzKMRO5FlHIFd",
+            "character-cost": "1",
+            "content-type": "audio/pcm"
+        },
+        "sourcePath": "authoring/audio/weather/weather-cloud.pcm",
+        "sourceSha256": "d7b9781dd32ced7e25e099b707dc20898ff6e3b75ac332773e3999a2fae0fea1",
+        "sourcePeak": 5143,
+        "sourceFullScaleSamples": 0,
+        "gain": 1,
+        "paddingFramesEachSide": 480,
+        "frames": 14335,
+        "listening": "unverified-not-performed",
+        "technicalReview": "Native written input and intended reading checked; all PCM frames preserved with gain limit and endpoint padding; non-silent mono PCM16 at 24000Hz. Not auditory verification."
+    }
+]
