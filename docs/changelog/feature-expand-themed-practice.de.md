@@ -182,6 +182,14 @@ Japanische Wörter für Morgen, Nacht, Buch und Zeitung sowie englisch newspaper
 
 Understand und わかる mit vier englischen und sieben japanischen Formbindungen ergänzen. Das unregelmäßige understood beibehalten und für den japanischen Zustandsausdruck keine Potentialform automatisch erfinden. Zwei englische Beispiele und ein japanisches Grundformbeispiel hinzufügen. Zwei japanische Satzentwürfe mit gewählten Formen bleiben außerhalb der Laufzeitdaten, weil der Host-Importer Grundformbezeichnungen vergleicht; genaue Audioaufnahmen und Prüfbelege bleiben erhalten. Alle neuen Originalbilder und endgültigen JPEGs wurden visuell geprüft; die Hörprüfung steht aus.
 
+## Persönliche Gegenstände
+
+Geldbörse, Kamera, Brille und Armbanduhr mit lokalisierten Bedeutungen, Verwendungshinweisen und je vier Kontextbeispielen ergänzen. Den englischen Plural glasses und japanisch うでどけい erläutern. Jedes Original und endgültige JPEG einzeln prüfen; einen Uhrenentwurf mit fehlender Stundenmarkierung ersetzen und den Ablehnungsbeleg behalten. Festgelegte Stimmen und japanische Originaleingaben bewahren; die Hörprüfung steht aus.
+
+## Vorbereitungen
+
+Je Sprache vier eigenständig verfasste Vorbereitungsbeispiele zu Besitz, Reisedokumenten, Orten und Plänen ergänzen. Exakte PCM-Bestandteile und vorhandene Wörter ohne doppelte Vokabeln wiederverwenden. Die zwei höflichen japanischen Verständnissätze bleiben zurückgestellt; der Host-Code bleibt unverändert.
+
 ## Commits
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)

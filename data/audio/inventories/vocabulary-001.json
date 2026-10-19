@@ -733,5 +733,41 @@
         "variants": [],
         "sha256": "4fc240155af5353bd53377d8c40a366cbe99b0190cf1d19ee870c69606c787ce",
         "frames": 11994
+    },
+    {
+        "path": "audio/3ebcea32e85f05a13c27fefdb7b549095c0215b113f91ac409a81943815d3bb0.wav",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "text": "せい",
+        "request": {
+            "text": "せい",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "生",
+                "semanticRole": "compoundWritingUnit",
+                "readings": ["せい"]
+            },
+            {
+                "language": "ja",
+                "label": "せい",
+                "semanticRole": "lexicalUnit",
+                "readings": ["せい"]
+            }
+        ],
+        "entries": ["ja:kanji:core-e7949f", "ja:word:kanji-reading-e7949f-01"],
+        "variants": [],
+        "sha256": "ccae2007b00b8a9a39f83adba508a98b1bc15285f8fa74ff16c0cdd84d29653a",
+        "frames": 12412
     }
 ]

@@ -1,5 +1,36 @@
 [
     {
+        "theme": "reading-time",
+        "newDistinctVocabularyCount": 4,
+        "vocabulary": [
+            {
+                "entryId": "ja:word:reading-time-morning",
+                "label": "あさ"
+            },
+            {
+                "entryId": "ja:word:reading-time-night",
+                "label": "よる"
+            },
+            {
+                "entryId": "ja:word:reading-time-book",
+                "label": "ほん"
+            },
+            {
+                "entryId": "ja:word:reading-time-newspaper",
+                "label": "しんぶん"
+            }
+        ],
+        "newExampleCount": 4,
+        "exampleIds": [
+            "ja:sentence:reading-time-example-morning-news",
+            "ja:sentence:reading-time-example-night-book",
+            "ja:sentence:reading-time-example-book-bag",
+            "ja:sentence:reading-time-example-buy-news"
+        ],
+        "recordedGrammaticalFormCount": 0,
+        "vocabularyAudit": "authoring/reviews/reading-time-vocabulary.json"
+    },
+    {
         "theme": "requests",
         "newDistinctVocabularyCount": 4,
         "vocabulary": [
@@ -272,36 +303,5 @@
         ],
         "recordedGrammaticalFormCount": 0,
         "vocabularyAudit": "authoring/reviews/vegetables-vocabulary.json"
-    },
-    {
-        "theme": "weather",
-        "newDistinctVocabularyCount": 4,
-        "vocabulary": [
-            {
-                "entryId": "ja:word:weather-sun",
-                "label": "たいよう"
-            },
-            {
-                "entryId": "ja:word:weather-snow",
-                "label": "ゆき"
-            },
-            {
-                "entryId": "ja:word:weather-wind",
-                "label": "かぜ"
-            },
-            {
-                "entryId": "ja:word:weather-cloud",
-                "label": "くも"
-            }
-        ],
-        "newExampleCount": 4,
-        "exampleIds": [
-            "ja:sentence:weather-example-sun",
-            "ja:sentence:weather-example-snow",
-            "ja:sentence:weather-example-wind",
-            "ja:sentence:weather-example-cloud"
-        ],
-        "recordedGrammaticalFormCount": 0,
-        "vocabularyAudit": "authoring/reviews/weather-vocabulary.json"
     }
 ]

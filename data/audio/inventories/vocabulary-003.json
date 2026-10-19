@@ -1,44 +1,5 @@
 [
     {
-        "path": "audio/09ce23fa6136e507e4ae83c74931c1f0cee382f37a097af6a4418f1ae1121d02.wav",
-        "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "text": "がくせい",
-        "request": {
-            "text": "がくせい",
-            "model_id": "eleven_flash_v2_5",
-            "seed": 42,
-            "voice_settings": {
-                "stability": 0.9,
-                "similarity_boost": 0.85,
-                "style": 0,
-                "use_speaker_boost": true,
-                "speed": 0.9
-            },
-            "language_code": "ja"
-        },
-        "inputs": [
-            {
-                "language": "ja",
-                "label": "がくせい",
-                "semanticRole": "lexicalUnit",
-                "readings": ["がくせい"]
-            },
-            {
-                "language": "ja",
-                "label": "学生",
-                "semanticRole": "lexicalUnit",
-                "readings": ["がくせい"]
-            }
-        ],
-        "entries": [
-            "ja:word:complete-pronunciation-gakusei",
-            "ja:word:gakusei"
-        ],
-        "variants": [],
-        "sha256": "b1836ce921e913714315cd2f4612957a818dbc4a07648337657070f0be0c3ef3",
-        "frames": 17062
-    },
-    {
         "path": "audio/b735f033be7289c86f7f84621476005af35c3fdec9b7e43f2b7531609f5d70b1.wav",
         "voiceId": "xya0RvcJtofTcFTOdX4E",
         "text": "ともだち",
@@ -744,5 +705,69 @@
         "variants": [],
         "sha256": "b0eea38f33d0b20d437bd85da6ce853d3f9f94de279c3f72070048974f138798",
         "frames": 18793
+    },
+    {
+        "path": "audio/360e77f31edfe80d54b2c26daad1d0978c7866848aa0ecbed2315c29b6e52275.wav",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "text": "さん",
+        "request": {
+            "text": "さん",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "さん",
+                "semanticRole": "lexicalUnit",
+                "readings": ["さん"]
+            }
+        ],
+        "entries": ["ja:word:kanji-reading-e5b1b1-02"],
+        "variants": [],
+        "sha256": "19555fc6d1b88481596c05644f954cafcb554300d75bb169d22229730de976ac",
+        "frames": 12600
+    },
+    {
+        "path": "audio/3f70a4af68b2bd9c66b1bf2a074bab92ef35d35f1451475d0965dd2cfc7d7fc2.wav",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "text": "せん",
+        "request": {
+            "text": "せん",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "せん",
+                "semanticRole": "lexicalUnit",
+                "readings": ["せん"]
+            }
+        ],
+        "entries": [
+            "ja:word:kanji-reading-e5b1b1-03",
+            "ja:word:kanji-reading-e5b79d-02",
+            "ja:word:kanji-reading-e58588-01"
+        ],
+        "variants": [],
+        "sha256": "0a221e94496a183b31b29dd98193d4ff41882e67796bcb71b2f05f7a22fc72a8",
+        "frames": 10175
     }
 ]

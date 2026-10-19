@@ -1,41 +1,5 @@
 [
     {
-        "path": "audio/3ebcea32e85f05a13c27fefdb7b549095c0215b113f91ac409a81943815d3bb0.wav",
-        "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "text": "せい",
-        "request": {
-            "text": "せい",
-            "model_id": "eleven_flash_v2_5",
-            "seed": 42,
-            "voice_settings": {
-                "stability": 0.9,
-                "similarity_boost": 0.85,
-                "style": 0,
-                "use_speaker_boost": true,
-                "speed": 0.9
-            },
-            "language_code": "ja"
-        },
-        "inputs": [
-            {
-                "language": "ja",
-                "label": "生",
-                "semanticRole": "compoundWritingUnit",
-                "readings": ["せい"]
-            },
-            {
-                "language": "ja",
-                "label": "せい",
-                "semanticRole": "lexicalUnit",
-                "readings": ["せい"]
-            }
-        ],
-        "entries": ["ja:kanji:core-e7949f", "ja:word:kanji-reading-e7949f-01"],
-        "variants": [],
-        "sha256": "ccae2007b00b8a9a39f83adba508a98b1bc15285f8fa74ff16c0cdd84d29653a",
-        "frames": 12412
-    },
-    {
         "path": "audio/b683072b5ba805822b681fd2203e943a8085334e7c53722639c66771dcefb1ad.wav",
         "voiceId": "xya0RvcJtofTcFTOdX4E",
         "text": "とも",
@@ -752,5 +716,44 @@
         "variants": [],
         "sha256": "c28584fcb699964fafe92031448d0e5c3ee589e8301b9ac0a39990e99d3d6b77",
         "frames": 13988
+    },
+    {
+        "path": "audio/09ce23fa6136e507e4ae83c74931c1f0cee382f37a097af6a4418f1ae1121d02.wav",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "text": "がくせい",
+        "request": {
+            "text": "がくせい",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "がくせい",
+                "semanticRole": "lexicalUnit",
+                "readings": ["がくせい"]
+            },
+            {
+                "language": "ja",
+                "label": "学生",
+                "semanticRole": "lexicalUnit",
+                "readings": ["がくせい"]
+            }
+        ],
+        "entries": [
+            "ja:word:complete-pronunciation-gakusei",
+            "ja:word:gakusei"
+        ],
+        "variants": [],
+        "sha256": "b1836ce921e913714315cd2f4612957a818dbc4a07648337657070f0be0c3ef3",
+        "frames": 17062
     }
 ]

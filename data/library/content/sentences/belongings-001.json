@@ -1,0 +1,142 @@
+[
+    {
+        "id": "ja:sentence:belongings-example-wallet-question",
+        "label": "さいふはどこですか",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/4f2cb54d6b14ee4ddd77b82c4fbd403048837929063f4d8b3ab5c6accaaec38e.wav",
+            "pronunciation": ["さいふはどこですか"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:belongings-wallet",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:doko",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:word:desu",
+                "relation": "words",
+                "position": 3
+            },
+            {
+                "entryId": "ja:particle:ka",
+                "relation": "particles",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:belongings-example-wallet-question",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:belongings-example-camera-purchase",
+        "label": "カメラをかう",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/1cdf91a52fe81f35ed3c096673e0a9e9efe93324fc6409f2c68b72a1097e4cd5.wav",
+            "pronunciation": ["かめらをかう"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:belongings-camera",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:travel-buy",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:definition:belongings-example-camera-purchase",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:belongings-example-glasses-location",
+        "label": "めがねはテーブルにある",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/d3e6b045bebbfe281710e8266431ca0584679802f7e10a00965c728dd9a3fda8.wav",
+            "pronunciation": ["めがねはてーぶるにある"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:belongings-glasses",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:table",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:ni",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:aru-exist",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:belongings-example-glasses-location",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:belongings-example-watch-look",
+        "label": "うでどけいを見る",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/1acaaf2f3317c383337151a4c553d086f45e212a43f5a9a718c617abf8ddace6.wav",
+            "pronunciation": ["うでどけいをみる"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:belongings-watch",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:miru",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:definition:belongings-example-watch-look",
+                "relation": "definitions"
+            }
+        ]
+    }
+]

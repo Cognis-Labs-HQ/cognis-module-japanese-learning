@@ -182,6 +182,14 @@ Tambahkan kosakata Jepang pagi, malam, buku, dan surat kabar, serta newspaper da
 
 Tambahkan understand dan わかる dengan empat ikatan bentuk Inggris dan tujuh bentuk Jepang. Pertahankan understood yang tidak beraturan dan jangan otomatis membuat bentuk potensial untuk makna statif Jepang. Tambahkan dua contoh Inggris dan satu contoh bentuk dasar Jepang. Dua draf kalimat Jepang dengan bentuk terpilih tetap di luar konten runtime karena pengimpor host membandingkan label dasar; audio persis dan bukti pemeriksaan dipertahankan. Semua gambar asli baru dan JPEG akhir diperiksa secara visual; pemeriksaan pendengaran belum dilakukan.
 
+## Barang Pribadi
+
+Tambahkan dompet, kamera, kacamata, dan jam tangan dengan makna terlokalisasi, catatan penggunaan, serta empat contoh kontekstual per bahasa. Jelaskan bentuk jamak glasses dan bacaan Jepang うでどけい. Periksa setiap gambar asli dan JPEG akhir; ganti rancangan jam yang kehilangan satu penanda jam dan simpan bukti penolakannya. Pertahankan suara yang ditetapkan dan masukan asli Jepang; pemeriksaan pendengaran belum dilakukan.
+
+## Bersiap-siap
+
+Tambahkan empat contoh persiapan yang ditulis secara mandiri per bahasa tentang kepemilikan, dokumen perjalanan, lokasi, dan rencana. Gunakan kembali PCM unsur secara persis dan kosakata yang ada tanpa duplikasi. Dua rancangan kalimat pemahaman sopan Jepang tetap ditunda dan kode host tidak diubah.
+
 ## Komit
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)

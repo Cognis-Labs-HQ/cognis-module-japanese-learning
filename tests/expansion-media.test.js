@@ -23,6 +23,7 @@ for (const theme of [
     "fruit",
     "requests",
     "greetings",
+    "belongings",
     "reading-time",
     "comprehension",
     "frequency",

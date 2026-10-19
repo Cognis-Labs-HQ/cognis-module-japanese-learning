@@ -129,6 +129,37 @@
         "vocabularyAudit": "authoring/reviews/animals-vocabulary.json"
     },
     {
+        "theme": "belongings",
+        "newDistinctVocabularyCount": 4,
+        "vocabulary": [
+            {
+                "entryId": "ja:word:belongings-wallet",
+                "label": "さいふ"
+            },
+            {
+                "entryId": "ja:word:belongings-camera",
+                "label": "カメラ"
+            },
+            {
+                "entryId": "ja:word:belongings-glasses",
+                "label": "めがね"
+            },
+            {
+                "entryId": "ja:word:belongings-watch",
+                "label": "うでどけい"
+            }
+        ],
+        "newExampleCount": 4,
+        "exampleIds": [
+            "ja:sentence:belongings-example-wallet-question",
+            "ja:sentence:belongings-example-camera-purchase",
+            "ja:sentence:belongings-example-glasses-location",
+            "ja:sentence:belongings-example-watch-look"
+        ],
+        "recordedGrammaticalFormCount": 0,
+        "vocabularyAudit": "authoring/reviews/belongings-vocabulary.json"
+    },
+    {
         "theme": "care",
         "newDistinctVocabularyCount": 4,
         "vocabulary": [
@@ -296,36 +327,5 @@
         ],
         "recordedGrammaticalFormCount": 0,
         "vocabularyAudit": "authoring/reviews/directions-vocabulary.json"
-    },
-    {
-        "theme": "fixtures",
-        "newDistinctVocabularyCount": 4,
-        "vocabulary": [
-            {
-                "entryId": "ja:word:fixtures-fridge",
-                "label": "れいぞうこ"
-            },
-            {
-                "entryId": "ja:word:fixtures-oven",
-                "label": "オーブン"
-            },
-            {
-                "entryId": "ja:word:fixtures-sink",
-                "label": "ながし"
-            },
-            {
-                "entryId": "ja:word:fixtures-shower",
-                "label": "シャワー"
-            }
-        ],
-        "newExampleCount": 4,
-        "exampleIds": [
-            "ja:sentence:fixtures-example-fridge",
-            "ja:sentence:fixtures-example-oven",
-            "ja:sentence:fixtures-example-sink",
-            "ja:sentence:fixtures-example-shower"
-        ],
-        "recordedGrammaticalFormCount": 0,
-        "vocabularyAudit": "authoring/reviews/fixtures-vocabulary.json"
     }
 ]

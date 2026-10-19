@@ -1,5 +1,36 @@
 [
     {
+        "theme": "weather",
+        "newDistinctVocabularyCount": 4,
+        "vocabulary": [
+            {
+                "entryId": "ja:word:weather-sun",
+                "label": "たいよう"
+            },
+            {
+                "entryId": "ja:word:weather-snow",
+                "label": "ゆき"
+            },
+            {
+                "entryId": "ja:word:weather-wind",
+                "label": "かぜ"
+            },
+            {
+                "entryId": "ja:word:weather-cloud",
+                "label": "くも"
+            }
+        ],
+        "newExampleCount": 4,
+        "exampleIds": [
+            "ja:sentence:weather-example-sun",
+            "ja:sentence:weather-example-snow",
+            "ja:sentence:weather-example-wind",
+            "ja:sentence:weather-example-cloud"
+        ],
+        "recordedGrammaticalFormCount": 0,
+        "vocabularyAudit": "authoring/reviews/weather-vocabulary.json"
+    },
+    {
         "theme": "mealtime",
         "newDistinctVocabularyCount": 0,
         "vocabulary": [],
@@ -126,5 +157,19 @@
         ],
         "recordedGrammaticalFormCount": 0,
         "vocabularyAudit": "authoring/reviews/plans-sentences.json"
+    },
+    {
+        "theme": "getting-ready",
+        "newDistinctVocabularyCount": 0,
+        "vocabulary": [],
+        "newExampleCount": 4,
+        "exampleIds": [
+            "ja:sentence:getting-ready-example-travel-documents",
+            "ja:sentence:getting-ready-example-key-here",
+            "ja:sentence:getting-ready-example-wait-tomorrow",
+            "ja:sentence:getting-ready-example-read-map"
+        ],
+        "recordedGrammaticalFormCount": 0,
+        "vocabularyAudit": "authoring/reviews/getting-ready-sentences.json"
     }
 ]
