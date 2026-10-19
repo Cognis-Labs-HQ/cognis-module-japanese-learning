@@ -1,5 +1,36 @@
 [
     {
+        "theme": "places",
+        "newDistinctVocabularyCount": 4,
+        "vocabulary": [
+            {
+                "entryId": "ja:word:places-library",
+                "label": "としょかん"
+            },
+            {
+                "entryId": "ja:word:places-hospital",
+                "label": "びょういん"
+            },
+            {
+                "entryId": "ja:word:places-supermarket",
+                "label": "スーパー"
+            },
+            {
+                "entryId": "ja:word:places-restaurant",
+                "label": "レストラン"
+            }
+        ],
+        "newExampleCount": 4,
+        "exampleIds": [
+            "ja:sentence:places-example-library",
+            "ja:sentence:places-example-hospital",
+            "ja:sentence:places-example-supermarket",
+            "ja:sentence:places-example-restaurant"
+        ],
+        "recordedGrammaticalFormCount": 0,
+        "vocabularyAudit": "authoring/reviews/places-vocabulary.json"
+    },
+    {
         "theme": "qualities",
         "newDistinctVocabularyCount": 4,
         "vocabulary": [
@@ -272,36 +303,5 @@
         "exampleIds": [],
         "recordedGrammaticalFormCount": 0,
         "vocabularyAudit": "authoring/reviews/time-vocabulary.json"
-    },
-    {
-        "theme": "transport",
-        "newDistinctVocabularyCount": 4,
-        "vocabulary": [
-            {
-                "entryId": "ja:word:transport-airplane",
-                "label": "ひこうき"
-            },
-            {
-                "entryId": "ja:word:transport-boat",
-                "label": "ボート"
-            },
-            {
-                "entryId": "ja:word:transport-taxi",
-                "label": "タクシー"
-            },
-            {
-                "entryId": "ja:word:transport-motorcycle",
-                "label": "オートバイ"
-            }
-        ],
-        "newExampleCount": 4,
-        "exampleIds": [
-            "ja:sentence:transport-example-airplane",
-            "ja:sentence:transport-example-boat",
-            "ja:sentence:transport-example-taxi",
-            "ja:sentence:transport-example-motorcycle"
-        ],
-        "recordedGrammaticalFormCount": 0,
-        "vocabularyAudit": "authoring/reviews/transport-vocabulary.json"
     }
 ]

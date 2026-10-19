@@ -267,6 +267,37 @@
         "vocabularyAudit": "authoring/reviews/comprehension-vocabulary.json"
     },
     {
+        "theme": "containers",
+        "newDistinctVocabularyCount": 4,
+        "vocabulary": [
+            {
+                "entryId": "ja:word:containers-bottle",
+                "label": "びん"
+            },
+            {
+                "entryId": "ja:word:containers-box",
+                "label": "はこ"
+            },
+            {
+                "entryId": "ja:word:containers-basket",
+                "label": "かご"
+            },
+            {
+                "entryId": "ja:word:containers-envelope",
+                "label": "ふうとう"
+            }
+        ],
+        "newExampleCount": 4,
+        "exampleIds": [
+            "ja:sentence:containers-example-light-box",
+            "ja:sentence:containers-example-wash-bottle",
+            "ja:sentence:containers-example-basket-location",
+            "ja:sentence:containers-example-buy-envelope"
+        ],
+        "recordedGrammaticalFormCount": 0,
+        "vocabularyAudit": "authoring/reviews/containers-vocabulary.json"
+    },
+    {
         "theme": "core",
         "newDistinctVocabularyCount": 4,
         "vocabulary": [
@@ -296,36 +327,5 @@
         ],
         "recordedGrammaticalFormCount": 32,
         "vocabularyAudit": "authoring/reviews/core-vocabulary.json"
-    },
-    {
-        "theme": "directions",
-        "newDistinctVocabularyCount": 4,
-        "vocabulary": [
-            {
-                "entryId": "ja:word:directions-left",
-                "label": "ひだり"
-            },
-            {
-                "entryId": "ja:word:directions-right",
-                "label": "みぎ"
-            },
-            {
-                "entryId": "ja:word:directions-north",
-                "label": "きた"
-            },
-            {
-                "entryId": "ja:word:directions-south",
-                "label": "みなみ"
-            }
-        ],
-        "newExampleCount": 4,
-        "exampleIds": [
-            "ja:sentence:directions-location-left",
-            "ja:sentence:directions-location-right",
-            "ja:sentence:directions-location-north",
-            "ja:sentence:directions-location-south"
-        ],
-        "recordedGrammaticalFormCount": 0,
-        "vocabularyAudit": "authoring/reviews/directions-vocabulary.json"
     }
 ]

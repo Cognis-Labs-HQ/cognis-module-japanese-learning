@@ -194,6 +194,10 @@ Tambahkan empat contoh persiapan yang ditulis secara mandiri per bahasa tentang 
 
 Tambahkan give/receive dan あげる/もらう dengan dua ilustrasi yang diperiksa secara visual dan empat contoh yang ditulis secara mandiri per bahasa. Jelaskan peran subjek, に untuk penerima, から untuk sumber, serta perbedaan memberi dan mengangkat. Rekam delapan ikatan bentuk Inggris dan enam belas Jepang, termasuk gave/given, もらわない, dan bentuk dengan っ kecil. Pertahankan PCM unsur secara persis dan masukan asli Jepang. Ilustrasi dan catatan menunjukkan subjek berbaju biru; pemeriksaan pendengaran belum dilakukan. Dua rancangan kalimat pemahaman sopan yang ditunda tetap tidak berubah.
 
+## Kosakata wadah dan latihan
+
+Menambahkan botol, kotak, keranjang, dan amplop beserta makna lokal, catatan penggunaan, ilustrasi yang diperiksa, dan empat contoh. Kata bahasa Jepang untuk amplop mempertahankan kedua vokal panjang. Audio memakai suara yang ditetapkan dan PCM konstituen yang persis; pemeriksaan melalui pendengaran belum dilakukan sesuai pengecualian yang tercatat.
+
 ## Komit
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)

@@ -1,10 +1,10 @@
 [
     {
-        "path": "audio/73637ec6e1adafaf5d79573c943341db30a22dc9c17843ade2cee34e5b99c525.wav",
-        "text": "かいます",
+        "path": "audio/ed93db6c98ed392d3a506cab806c1427f1017747f721a75bf290666764912595.wav",
+        "text": "みぎ",
         "voiceId": "xya0RvcJtofTcFTOdX4E",
         "request": {
-            "text": "かいます",
+            "text": "右",
             "model_id": "eleven_flash_v2_5",
             "seed": 42,
             "voice_settings": {
@@ -13,38 +13,36 @@
                 "style": 0,
                 "use_speaker_boost": true,
                 "speed": 0.9
-            }
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
         },
         "inputs": [
             {
                 "language": "ja",
-                "label": "かいます",
+                "label": "みぎ",
                 "semanticRole": "lexicalUnit",
-                "readings": ["かいます"]
+                "readings": ["みぎ"]
             }
         ],
-        "entries": [],
-        "variants": [
-            {
-                "entryId": "ja:word:travel-buy",
-                "setId": "travel-buy-forms",
-                "path": ["polite"]
-            }
+        "entries": [
+            "ja:word:directions-right",
+            "ja:word:complete-pronunciation-directions-right"
         ],
-        "sha256": "73637ec6e1adafaf5d79573c943341db30a22dc9c17843ade2cee34e5b99c525",
-        "frames": 17678,
+        "variants": [],
+        "sha256": "ed93db6c98ed392d3a506cab806c1427f1017747f721a75bf290666764912595",
+        "frames": 13220,
         "metadata": {
             "listening": "unverified-not-performed",
-            "languageSelection": "native-input-autodetection",
-            "sourcePcmSha256": "f76a00c6bc4a029241ed3a28a566272eac94abd50ccea30a3cb27ec646038fa1"
+            "sourcePcmSha256": "49a65cb881265b75748e9050eb69d4625b6a8ac9788227c5fa0e242b0ac152ca"
         }
     },
     {
-        "path": "audio/a5a6c0b35716fb479d507f00a74807ba170414119780bbe5c4f682c6ab6311ae.wav",
-        "text": "かわない",
+        "path": "audio/efb36a05650cd2168d0225e64c21fffce858997ddc44eb61322f9d53c3309287.wav",
+        "text": "みなみ",
         "voiceId": "xya0RvcJtofTcFTOdX4E",
         "request": {
-            "text": "かわない",
+            "text": "南",
             "model_id": "eleven_flash_v2_5",
             "seed": 42,
             "voice_settings": {
@@ -53,118 +51,226 @@
                 "style": 0,
                 "use_speaker_boost": true,
                 "speed": 0.9
-            }
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
         },
         "inputs": [
             {
                 "language": "ja",
-                "label": "かわない",
+                "label": "みなみ",
                 "semanticRole": "lexicalUnit",
-                "readings": ["かわない"]
+                "readings": ["みなみ"]
             }
         ],
-        "entries": [],
-        "variants": [
+        "entries": [
+            "ja:word:directions-south",
+            "ja:word:complete-pronunciation-directions-south"
+        ],
+        "variants": [],
+        "sha256": "efb36a05650cd2168d0225e64c21fffce858997ddc44eb61322f9d53c3309287",
+        "frames": 18793,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "86e428501dc3edf8d252197a3add6d418ad697d567bebba097d2b3d82c690d77"
+        }
+    },
+    {
+        "path": "audio/9b30b4e15c47630aab03a62dfbed21d5967bc84544d3ef2927225ef8b5db7aee.wav",
+        "text": "はる",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "春",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
             {
-                "entryId": "ja:word:travel-buy",
-                "setId": "travel-buy-forms",
-                "path": ["negative"]
+                "language": "ja",
+                "label": "はる",
+                "semanticRole": "lexicalUnit",
+                "readings": ["はる"]
             }
         ],
-        "sha256": "a5a6c0b35716fb479d507f00a74807ba170414119780bbe5c4f682c6ab6311ae",
+        "entries": [
+            "ja:word:seasons-spring",
+            "ja:word:complete-pronunciation-seasons-spring"
+        ],
+        "variants": [],
+        "sha256": "9b30b4e15c47630aab03a62dfbed21d5967bc84544d3ef2927225ef8b5db7aee",
+        "frames": 13220,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "0de6c82218156ac1d64e52b0355ff4418e4162e2fe53379ad7a502ce86846525"
+        }
+    },
+    {
+        "path": "audio/b2028b2401e952d930346fa7ef3c6cbedaad4b0505c7e25642c7f1009ecb4f9c.wav",
+        "text": "なつ",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "夏",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "なつ",
+                "semanticRole": "lexicalUnit",
+                "readings": ["なつ"]
+            }
+        ],
+        "entries": [
+            "ja:word:seasons-summer",
+            "ja:word:complete-pronunciation-seasons-summer"
+        ],
+        "variants": [],
+        "sha256": "b2028b2401e952d930346fa7ef3c6cbedaad4b0505c7e25642c7f1009ecb4f9c",
+        "frames": 8762,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "68bf79df7d5cc4c74869e370e93c3e8bd482e62a1c5b79a661edcb798852e5b8"
+        }
+    },
+    {
+        "path": "audio/78fc9f6c63ad647aaa3f8d3d62ff446d27bf16ae2a11f69d74b3a65b9bef66d8.wav",
+        "text": "あき",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "秋",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "あき",
+                "semanticRole": "lexicalUnit",
+                "readings": ["あき"]
+            }
+        ],
+        "entries": [
+            "ja:word:seasons-autumn",
+            "ja:word:complete-pronunciation-seasons-autumn"
+        ],
+        "variants": [],
+        "sha256": "78fc9f6c63ad647aaa3f8d3d62ff446d27bf16ae2a11f69d74b3a65b9bef66d8",
+        "frames": 13220,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "640bf150e30cf9d09e6d13ae471503c877c6458235bae97f1654f4bd55f46498"
+        }
+    },
+    {
+        "path": "audio/84afc1c6e944468f2296dac22335c4cf6c53f7d0e84a799b43f6601a9e3d57ed.wav",
+        "text": "ふゆ",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "冬",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "ふゆ",
+                "semanticRole": "lexicalUnit",
+                "readings": ["ふゆ"]
+            }
+        ],
+        "entries": [
+            "ja:word:seasons-winter",
+            "ja:word:complete-pronunciation-seasons-winter"
+        ],
+        "variants": [],
+        "sha256": "84afc1c6e944468f2296dac22335c4cf6c53f7d0e84a799b43f6601a9e3d57ed",
+        "frames": 13220,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "bc70a6d516b50977a32370629f35ee815695fdd414c8c0ee0abc4e9bd8ee5a76"
+        }
+    },
+    {
+        "path": "audio/0f00fa39ddc666350b31f3bb952b323e73f48b0db239d261e968506cac7fb720.wav",
+        "text": "シャツ",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "シャツ",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "シャツ",
+                "semanticRole": "lexicalUnit",
+                "readings": ["シャツ"]
+            }
+        ],
+        "entries": [
+            "ja:word:clothing-shirt",
+            "ja:word:complete-pronunciation-clothing-shirt"
+        ],
+        "variants": [],
+        "sha256": "0f00fa39ddc666350b31f3bb952b323e73f48b0db239d261e968506cac7fb720",
         "frames": 16564,
         "metadata": {
             "listening": "unverified-not-performed",
-            "languageSelection": "native-input-autodetection",
-            "sourcePcmSha256": "8a1a7e11c30441c2b66f2b2273b5dceb0221270df3f4cf9baeac8786b548cdb0"
+            "sourcePcmSha256": "b0ecae43242d406254001654e2df989eee88bc6dfd0591849662bf5a37626448"
         }
     },
     {
-        "path": "audio/527c805ef286c121c0c791d2f657c8e6ba855957af68ff909543fede024234ef.wav",
-        "text": "かった",
+        "path": "audio/1d3ca6fdc303371000b29140002868823160fafa76fc3685e8c3d914a9731514.wav",
+        "text": "ワンピース",
         "voiceId": "xya0RvcJtofTcFTOdX4E",
         "request": {
-            "text": "かった",
-            "model_id": "eleven_flash_v2_5",
-            "seed": 42,
-            "voice_settings": {
-                "stability": 0.9,
-                "similarity_boost": 0.85,
-                "style": 0,
-                "use_speaker_boost": true,
-                "speed": 0.9
-            }
-        },
-        "inputs": [
-            {
-                "language": "ja",
-                "label": "かった",
-                "semanticRole": "lexicalUnit",
-                "readings": ["かった"]
-            }
-        ],
-        "entries": [],
-        "variants": [
-            {
-                "entryId": "ja:word:travel-buy",
-                "setId": "travel-buy-forms",
-                "path": ["past"]
-            }
-        ],
-        "sha256": "527c805ef286c121c0c791d2f657c8e6ba855957af68ff909543fede024234ef",
-        "frames": 17678,
-        "metadata": {
-            "listening": "unverified-not-performed",
-            "languageSelection": "native-input-autodetection",
-            "sourcePcmSha256": "ba5ad43dd7d936ff9b240f2ca665be9c7dbca015f80ae238c069203c269d9c8f"
-        }
-    },
-    {
-        "path": "audio/4cb554b0e51e3d1dd1d7bd53e95401fe21d13f4bb5e0535de046c78bf64e41ae.wav",
-        "text": "かって",
-        "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "request": {
-            "text": "かって",
-            "model_id": "eleven_flash_v2_5",
-            "seed": 42,
-            "voice_settings": {
-                "stability": 0.9,
-                "similarity_boost": 0.85,
-                "style": 0,
-                "use_speaker_boost": true,
-                "speed": 0.9
-            }
-        },
-        "inputs": [
-            {
-                "language": "ja",
-                "label": "かって",
-                "semanticRole": "lexicalUnit",
-                "readings": ["かって"]
-            }
-        ],
-        "entries": [],
-        "variants": [
-            {
-                "entryId": "ja:word:travel-buy",
-                "setId": "travel-buy-forms",
-                "path": ["te-form"]
-            }
-        ],
-        "sha256": "4cb554b0e51e3d1dd1d7bd53e95401fe21d13f4bb5e0535de046c78bf64e41ae",
-        "frames": 17678,
-        "metadata": {
-            "listening": "unverified-not-performed",
-            "languageSelection": "native-input-autodetection",
-            "sourcePcmSha256": "a623937baf7eb9ed645b973464084086cfc51aefb6256b11498da6a04266486f"
-        }
-    },
-    {
-        "path": "audio/7d58d24fa3027bc4616a0120686f6abf8fc251383c052c12670d5462aa5212ee.wav",
-        "text": "とんだ",
-        "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "request": {
-            "text": "とんだ",
+            "text": "ワンピース",
             "model_id": "eleven_flash_v2_5",
             "seed": 42,
             "voice_settings": {
@@ -180,32 +286,105 @@
         "inputs": [
             {
                 "language": "ja",
-                "label": "とんだ",
+                "label": "ワンピース",
                 "semanticRole": "lexicalUnit",
-                "readings": ["とんだ"]
+                "readings": ["ワンピース"]
             }
         ],
-        "entries": [],
-        "variants": [
+        "entries": [
+            "ja:word:clothing-dress",
+            "ja:word:complete-pronunciation-clothing-dress"
+        ],
+        "variants": [],
+        "sha256": "1d3ca6fdc303371000b29140002868823160fafa76fc3685e8c3d914a9731514",
+        "frames": 22137,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "514dceae9b86cd486f01d94e7c1381b31029d07d46d822a850d65e380f76c060"
+        }
+    },
+    {
+        "path": "audio/6f59f912c5dea707d120df48123a080148de049a65fa481b9647fc9a658de3f0.wav",
+        "text": "くつした",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "靴下",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
             {
-                "entryId": "ja:word:actions-jump",
-                "setId": "actions-jump-forms",
-                "path": ["past"]
+                "language": "ja",
+                "label": "くつした",
+                "semanticRole": "lexicalUnit",
+                "readings": ["くつした"]
             }
         ],
-        "sha256": "7d58d24fa3027bc4616a0120686f6abf8fc251383c052c12670d5462aa5212ee",
+        "entries": [
+            "ja:word:clothing-sock",
+            "ja:word:complete-pronunciation-clothing-sock"
+        ],
+        "variants": [],
+        "sha256": "6f59f912c5dea707d120df48123a080148de049a65fa481b9647fc9a658de3f0",
+        "frames": 14335,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "a7d5e8260da80fb224334e1d20679a0d6948f6075646266563f383c7f3a6ab2e"
+        }
+    },
+    {
+        "path": "audio/b1f5f3c73c48e5085f1cffb93a9af82fd132be5f41fc2df19c20f39f75d614fc.wav",
+        "text": "スカート",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "スカート",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "スカート",
+                "semanticRole": "lexicalUnit",
+                "readings": ["スカート"]
+            }
+        ],
+        "entries": [
+            "ja:word:clothing-skirt",
+            "ja:word:complete-pronunciation-clothing-skirt"
+        ],
+        "variants": [],
+        "sha256": "b1f5f3c73c48e5085f1cffb93a9af82fd132be5f41fc2df19c20f39f75d614fc",
         "frames": 18793,
         "metadata": {
             "listening": "unverified-not-performed",
-            "sourcePcmSha256": "453ab5e386144aaf44964b6acb46ba79d85c4e89e8e13a1e071aac390ae6a432"
+            "sourcePcmSha256": "2d122f7599e9641eac830fa0acb4b8935b16277ebe24a272581a94c46341f845"
         }
     },
     {
-        "path": "audio/3dba94490f50f96d269c165827a7f03ef95b518a899ca9492aaf2be412fe4989.wav",
-        "text": "とんで",
+        "path": "audio/2a0263c47f0699e1aff3603a5892c5256ffaff78ed6c656be287581ee8ab5255.wav",
+        "text": "カップ",
         "voiceId": "xya0RvcJtofTcFTOdX4E",
         "request": {
-            "text": "とんで",
+            "text": "カップ",
             "model_id": "eleven_flash_v2_5",
             "seed": 42,
             "voice_settings": {
@@ -221,32 +400,29 @@
         "inputs": [
             {
                 "language": "ja",
-                "label": "とんで",
+                "label": "カップ",
                 "semanticRole": "lexicalUnit",
-                "readings": ["とんで"]
+                "readings": ["カップ"]
             }
         ],
-        "entries": [],
-        "variants": [
-            {
-                "entryId": "ja:word:actions-jump",
-                "setId": "actions-jump-forms",
-                "path": ["te-form"]
-            }
+        "entries": [
+            "ja:word:tableware-cup",
+            "ja:word:complete-pronunciation-tableware-cup"
         ],
-        "sha256": "3dba94490f50f96d269c165827a7f03ef95b518a899ca9492aaf2be412fe4989",
+        "variants": [],
+        "sha256": "2a0263c47f0699e1aff3603a5892c5256ffaff78ed6c656be287581ee8ab5255",
         "frames": 17678,
         "metadata": {
             "listening": "unverified-not-performed",
-            "sourcePcmSha256": "f59257926edf9a9ade74be7e707be69051c427f60a574fe59ebdaea5472d9c8c"
+            "sourcePcmSha256": "e354a46cf24ca7d7ed699d1f4d589ac6b8bc6ddfe9190989b506e1f522e24523"
         }
     },
     {
-        "path": "audio/79396701f6e881ccc4caeeeabbe41f58ccff1b0c49e224aa6701feefe039ef35.wav",
-        "text": "とびました",
+        "path": "audio/696fb7666b658b7208e991f2c58509fc3a87b8629251f025acf3bc145a44594f.wav",
+        "text": "さら",
         "voiceId": "xya0RvcJtofTcFTOdX4E",
         "request": {
-            "text": "とびました",
+            "text": "皿",
             "model_id": "eleven_flash_v2_5",
             "seed": 42,
             "voice_settings": {
@@ -262,32 +438,29 @@
         "inputs": [
             {
                 "language": "ja",
-                "label": "とびました",
+                "label": "さら",
                 "semanticRole": "lexicalUnit",
-                "readings": ["とびました"]
+                "readings": ["さら"]
             }
         ],
-        "entries": [],
-        "variants": [
-            {
-                "entryId": "ja:word:actions-jump",
-                "setId": "actions-jump-forms",
-                "path": ["polite-past"]
-            }
+        "entries": [
+            "ja:word:tableware-plate",
+            "ja:word:complete-pronunciation-tableware-plate"
         ],
-        "sha256": "79396701f6e881ccc4caeeeabbe41f58ccff1b0c49e224aa6701feefe039ef35",
-        "frames": 21022,
+        "variants": [],
+        "sha256": "696fb7666b658b7208e991f2c58509fc3a87b8629251f025acf3bc145a44594f",
+        "frames": 10991,
         "metadata": {
             "listening": "unverified-not-performed",
-            "sourcePcmSha256": "4606286fb3881ac50461fe0698b8796a0818d745d7a72757b5ffe865857ce8ba"
+            "sourcePcmSha256": "138003777c40b5b0e1eb5561525dde9bda6a6cff3d5adc41cbc0182174b44663"
         }
     },
     {
-        "path": "audio/878a0dbee733306febb2c657614d13ffa050b59f6c98ab755520572667c6ea57.wav",
-        "text": "とびません",
+        "path": "audio/0330d7e2ff38989c650e628d73e3fe5ea13ee95b14a7cc7770e084ed43259ab5.wav",
+        "text": "スプーン",
         "voiceId": "xya0RvcJtofTcFTOdX4E",
         "request": {
-            "text": "とびません",
+            "text": "スプーン",
             "model_id": "eleven_flash_v2_5",
             "seed": 42,
             "voice_settings": {
@@ -303,32 +476,29 @@
         "inputs": [
             {
                 "language": "ja",
-                "label": "とびません",
+                "label": "スプーン",
                 "semanticRole": "lexicalUnit",
-                "readings": ["とびません"]
+                "readings": ["スプーン"]
             }
         ],
-        "entries": [],
-        "variants": [
-            {
-                "entryId": "ja:word:actions-jump",
-                "setId": "actions-jump-forms",
-                "path": ["polite-negative"]
-            }
+        "entries": [
+            "ja:word:tableware-spoon",
+            "ja:word:complete-pronunciation-tableware-spoon"
         ],
-        "sha256": "878a0dbee733306febb2c657614d13ffa050b59f6c98ab755520572667c6ea57",
-        "frames": 19907,
+        "variants": [],
+        "sha256": "0330d7e2ff38989c650e628d73e3fe5ea13ee95b14a7cc7770e084ed43259ab5",
+        "frames": 16564,
         "metadata": {
             "listening": "unverified-not-performed",
-            "sourcePcmSha256": "7d150f5c7560e26b6cd9ae8a4d1c25c0f1cf49ba3f363f6416a6a98928015c73"
+            "sourcePcmSha256": "9e61e9d7e9d27906e0f681548e20d23fab12286fe396f848d6f3f677bd158c31"
         }
     },
     {
-        "path": "audio/396f224670fffece9e72b6ae1df3730d63e6df4270435e9f0f18943bfa7c17f1.wav",
-        "text": "とばなかった",
+        "path": "audio/bd830d1b87d9b110d43374bfa5c5f1cc9b45e3cbe24046b187d59e40288a2587.wav",
+        "text": "フォーク",
         "voiceId": "xya0RvcJtofTcFTOdX4E",
         "request": {
-            "text": "とばなかった",
+            "text": "フォーク",
             "model_id": "eleven_flash_v2_5",
             "seed": 42,
             "voice_settings": {
@@ -344,73 +514,29 @@
         "inputs": [
             {
                 "language": "ja",
-                "label": "とばなかった",
+                "label": "フォーク",
                 "semanticRole": "lexicalUnit",
-                "readings": ["とばなかった"]
+                "readings": ["フォーク"]
             }
         ],
-        "entries": [],
-        "variants": [
-            {
-                "entryId": "ja:word:actions-jump",
-                "setId": "actions-jump-forms",
-                "path": ["negative-past"]
-            }
+        "entries": [
+            "ja:word:tableware-fork",
+            "ja:word:complete-pronunciation-tableware-fork"
         ],
-        "sha256": "396f224670fffece9e72b6ae1df3730d63e6df4270435e9f0f18943bfa7c17f1",
-        "frames": 25480,
-        "metadata": {
-            "listening": "unverified-not-performed",
-            "sourcePcmSha256": "c94693310f4b483779d8189fddf97b64b1898578b0dc43173cef3395c8257626"
-        }
-    },
-    {
-        "path": "audio/a4685a5167b144c1a7b08e2adb70b27cf76096fa3e65552c1139ed83496a6f83.wav",
-        "text": "とべる",
-        "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "request": {
-            "text": "とべる",
-            "model_id": "eleven_flash_v2_5",
-            "seed": 42,
-            "voice_settings": {
-                "stability": 0.9,
-                "similarity_boost": 0.85,
-                "style": 0,
-                "use_speaker_boost": true,
-                "speed": 0.9
-            },
-            "language_code": "ja",
-            "apply_text_normalization": "off"
-        },
-        "inputs": [
-            {
-                "language": "ja",
-                "label": "とべる",
-                "semanticRole": "lexicalUnit",
-                "readings": ["とべる"]
-            }
-        ],
-        "entries": [],
-        "variants": [
-            {
-                "entryId": "ja:word:actions-jump",
-                "setId": "actions-jump-forms",
-                "path": ["potential"]
-            }
-        ],
-        "sha256": "a4685a5167b144c1a7b08e2adb70b27cf76096fa3e65552c1139ed83496a6f83",
+        "variants": [],
+        "sha256": "bd830d1b87d9b110d43374bfa5c5f1cc9b45e3cbe24046b187d59e40288a2587",
         "frames": 17678,
         "metadata": {
             "listening": "unverified-not-performed",
-            "sourcePcmSha256": "9c6dca431dcf925e198aedc5291a6330f9b757fefad6a47541bd9af42f7029c5"
+            "sourcePcmSha256": "114d60a0c7009511d8aeb1b88d85f491dce8c319f706a7783394f5bbaa2b3fbc"
         }
     },
     {
-        "path": "audio/bd735477b4a4f293fabfc25c116b48d4a9d139064815695f03e65d6edfdc8c78.wav",
-        "text": "およぎます",
+        "path": "audio/430c9445d72adf3a29387e25fd3b65f62b4b6c0a772d2c518bf9f358d1e15474.wav",
+        "text": "としょかん",
         "voiceId": "xya0RvcJtofTcFTOdX4E",
         "request": {
-            "text": "およぎます",
+            "text": "図書館",
             "model_id": "eleven_flash_v2_5",
             "seed": 42,
             "voice_settings": {
@@ -426,32 +552,29 @@
         "inputs": [
             {
                 "language": "ja",
-                "label": "およぎます",
+                "label": "としょかん",
                 "semanticRole": "lexicalUnit",
-                "readings": ["およぎます"]
+                "readings": ["としょかん"]
             }
         ],
-        "entries": [],
-        "variants": [
-            {
-                "entryId": "ja:word:actions-swim",
-                "setId": "actions-swim-forms",
-                "path": ["polite"]
-            }
+        "entries": [
+            "ja:word:places-library",
+            "ja:word:complete-pronunciation-places-library"
         ],
-        "sha256": "bd735477b4a4f293fabfc25c116b48d4a9d139064815695f03e65d6edfdc8c78",
-        "frames": 21022,
+        "variants": [],
+        "sha256": "430c9445d72adf3a29387e25fd3b65f62b4b6c0a772d2c518bf9f358d1e15474",
+        "frames": 16564,
         "metadata": {
             "listening": "unverified-not-performed",
-            "sourcePcmSha256": "af61c1380d4fe664a4403cbdf1b092ffd52edb71225fec89ee095fe4d8ec6af0"
+            "sourcePcmSha256": "abe2f859930dcebcd1ee509d435fca332acb1106e6bbc1313e41d8781511d64a"
         }
     },
     {
-        "path": "audio/54d88f8fd99db92d3616f69fd8cb2c8ef88e898a6f61ad631bd1cd8b8e285fcc.wav",
-        "text": "およいで",
+        "path": "audio/c35068c839da35557f146cd8d3c64eb110a267dee6555ef6d9e8ffae7a9a5ad9.wav",
+        "text": "びょういん",
         "voiceId": "xya0RvcJtofTcFTOdX4E",
         "request": {
-            "text": "およいで",
+            "text": "病院",
             "model_id": "eleven_flash_v2_5",
             "seed": 42,
             "voice_settings": {
@@ -467,32 +590,29 @@
         "inputs": [
             {
                 "language": "ja",
-                "label": "およいで",
+                "label": "びょういん",
                 "semanticRole": "lexicalUnit",
-                "readings": ["およいで"]
+                "readings": ["びょういん"]
             }
         ],
-        "entries": [],
-        "variants": [
-            {
-                "entryId": "ja:word:actions-swim",
-                "setId": "actions-swim-forms",
-                "path": ["te-form"]
-            }
+        "entries": [
+            "ja:word:places-hospital",
+            "ja:word:complete-pronunciation-places-hospital"
         ],
-        "sha256": "54d88f8fd99db92d3616f69fd8cb2c8ef88e898a6f61ad631bd1cd8b8e285fcc",
-        "frames": 18793,
+        "variants": [],
+        "sha256": "c35068c839da35557f146cd8d3c64eb110a267dee6555ef6d9e8ffae7a9a5ad9",
+        "frames": 16564,
         "metadata": {
             "listening": "unverified-not-performed",
-            "sourcePcmSha256": "931d7def781af400b03fb0c463b8400b0812dfc47b946ed46eae779f5b376994"
+            "sourcePcmSha256": "25cdf6d607d7e1d283b6435d38b8d47cba6f3e8837228268d3c93923c61b9c58"
         }
     },
     {
-        "path": "audio/fa3ae5bdd35d2fe7f621a36b042c09ab91517f87fa93233928dcafa9a2b8518a.wav",
-        "text": "およぎました",
+        "path": "audio/7c70efb2f24b3b66cb5da738c2e2d694336ed2957ffdc0954b3a771007e31c58.wav",
+        "text": "そうじする",
         "voiceId": "xya0RvcJtofTcFTOdX4E",
         "request": {
-            "text": "およぎました",
+            "text": "掃除する",
             "model_id": "eleven_flash_v2_5",
             "seed": 42,
             "voice_settings": {
@@ -508,73 +628,29 @@
         "inputs": [
             {
                 "language": "ja",
-                "label": "およぎました",
+                "label": "そうじする",
                 "semanticRole": "lexicalUnit",
-                "readings": ["およぎました"]
+                "readings": ["そうじする"]
             }
         ],
-        "entries": [],
-        "variants": [
-            {
-                "entryId": "ja:word:actions-swim",
-                "setId": "actions-swim-forms",
-                "path": ["polite-past"]
-            }
+        "entries": [
+            "ja:word:household-clean",
+            "ja:word:complete-pronunciation-household-clean"
         ],
-        "sha256": "fa3ae5bdd35d2fe7f621a36b042c09ab91517f87fa93233928dcafa9a2b8518a",
-        "frames": 24366,
-        "metadata": {
-            "listening": "unverified-not-performed",
-            "sourcePcmSha256": "70ac37038ba05c492f9f6d7712cae3c4121b2cae43975c1617a4dae9404a9b8c"
-        }
-    },
-    {
-        "path": "audio/b74b5be0d9bd76cdfd18c652b13c918f20d7af2412d670a08c11902034c9aea0.wav",
-        "text": "およぎません",
-        "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "request": {
-            "text": "およぎません",
-            "model_id": "eleven_flash_v2_5",
-            "seed": 42,
-            "voice_settings": {
-                "stability": 0.9,
-                "similarity_boost": 0.85,
-                "style": 0,
-                "use_speaker_boost": true,
-                "speed": 0.9
-            },
-            "language_code": "ja",
-            "apply_text_normalization": "off"
-        },
-        "inputs": [
-            {
-                "language": "ja",
-                "label": "およぎません",
-                "semanticRole": "lexicalUnit",
-                "readings": ["およぎません"]
-            }
-        ],
-        "entries": [],
-        "variants": [
-            {
-                "entryId": "ja:word:actions-swim",
-                "setId": "actions-swim-forms",
-                "path": ["polite-negative"]
-            }
-        ],
-        "sha256": "b74b5be0d9bd76cdfd18c652b13c918f20d7af2412d670a08c11902034c9aea0",
+        "variants": [],
+        "sha256": "7c70efb2f24b3b66cb5da738c2e2d694336ed2957ffdc0954b3a771007e31c58",
         "frames": 23251,
         "metadata": {
             "listening": "unverified-not-performed",
-            "sourcePcmSha256": "777e5f133e03f35ee5b19a48e780f0c79dccfc4e366090cb53b331415a0a0b82"
+            "sourcePcmSha256": "b7f4a62bd546a548c75cc0471a1b69c81c7efd47514a27f1052264c12676de4c"
         }
     },
     {
-        "path": "audio/9cea86677441d02b0b02a53b13a851f4e22c92d37e43da1f666dc2d94dc0bf66.wav",
-        "text": "およがなかった",
+        "path": "audio/8ddfd6ac2943f3fe6c49cd621b6ab3b20f290aa4a230b6c42f5b4f7af30a395e.wav",
+        "text": "かわかす",
         "voiceId": "xya0RvcJtofTcFTOdX4E",
         "request": {
-            "text": "およがなかった",
+            "text": "乾かす",
             "model_id": "eleven_flash_v2_5",
             "seed": 42,
             "voice_settings": {
@@ -590,73 +666,29 @@
         "inputs": [
             {
                 "language": "ja",
-                "label": "およがなかった",
+                "label": "かわかす",
                 "semanticRole": "lexicalUnit",
-                "readings": ["およがなかった"]
+                "readings": ["かわかす"]
             }
         ],
-        "entries": [],
-        "variants": [
-            {
-                "entryId": "ja:word:actions-swim",
-                "setId": "actions-swim-forms",
-                "path": ["negative-past"]
-            }
+        "entries": [
+            "ja:word:household-dry",
+            "ja:word:complete-pronunciation-household-dry"
         ],
-        "sha256": "9cea86677441d02b0b02a53b13a851f4e22c92d37e43da1f666dc2d94dc0bf66",
-        "frames": 27709,
-        "metadata": {
-            "listening": "unverified-not-performed",
-            "sourcePcmSha256": "e8714799fe7a837dbe2b8fd400546184af032a72d9f2c4cd4af568cd0a6d928c"
-        }
-    },
-    {
-        "path": "audio/136fc90343c645aa1c31bae7dfce65680768f6a96f9186e61b7e395b0749de22.wav",
-        "text": "およげる",
-        "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "request": {
-            "text": "およげる",
-            "model_id": "eleven_flash_v2_5",
-            "seed": 42,
-            "voice_settings": {
-                "stability": 0.9,
-                "similarity_boost": 0.85,
-                "style": 0,
-                "use_speaker_boost": true,
-                "speed": 0.9
-            },
-            "language_code": "ja",
-            "apply_text_normalization": "off"
-        },
-        "inputs": [
-            {
-                "language": "ja",
-                "label": "およげる",
-                "semanticRole": "lexicalUnit",
-                "readings": ["およげる"]
-            }
-        ],
-        "entries": [],
-        "variants": [
-            {
-                "entryId": "ja:word:actions-swim",
-                "setId": "actions-swim-forms",
-                "path": ["potential"]
-            }
-        ],
-        "sha256": "136fc90343c645aa1c31bae7dfce65680768f6a96f9186e61b7e395b0749de22",
+        "variants": [],
+        "sha256": "8ddfd6ac2943f3fe6c49cd621b6ab3b20f290aa4a230b6c42f5b4f7af30a395e",
         "frames": 18793,
         "metadata": {
             "listening": "unverified-not-performed",
-            "sourcePcmSha256": "42daf77462d6b307a36c25681234cbe2e11bb537eca79b8fc946f6e05a52494e"
+            "sourcePcmSha256": "f64692b8a45cc732205589867ccb4a08e461204dc08fb893264b65b075a83f5b"
         }
     },
     {
-        "path": "audio/4ddd4e95428918c1c2f8c64b3eab948d332e376275c09dfcff69082a20ee9181.wav",
+        "path": "audio/ede868f5afcc18a4c3c346366c205dbe7773bcff75343980c66f725f45934b79.wav",
+        "text": "タオル",
         "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "text": "たべる",
         "request": {
-            "text": "たべる",
+            "text": "タオル",
             "model_id": "eleven_flash_v2_5",
             "seed": 42,
             "voice_settings": {
@@ -666,33 +698,35 @@
                 "use_speaker_boost": true,
                 "speed": 0.9
             },
-            "language_code": "ja"
+            "language_code": "ja",
+            "apply_text_normalization": "off"
         },
         "inputs": [
             {
                 "language": "ja",
-                "label": "たべる",
+                "label": "タオル",
                 "semanticRole": "lexicalUnit",
-                "readings": ["たべる"]
-            },
-            {
-                "language": "ja",
-                "label": "食べる",
-                "semanticRole": "lexicalUnit",
-                "readings": ["たべる"]
+                "readings": ["タオル"]
             }
         ],
-        "entries": ["ja:word:complete-pronunciation-taberu", "ja:word:taberu"],
+        "entries": [
+            "ja:word:care-towel",
+            "ja:word:complete-pronunciation-care-towel"
+        ],
         "variants": [],
-        "sha256": "95d0565fac58cdb447313ba6281c21447d43187955bb19bc39b416f556c898a2",
-        "frames": 14496
+        "sha256": "ede868f5afcc18a4c3c346366c205dbe7773bcff75343980c66f725f45934b79",
+        "frames": 17678,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "a4283abbcbb78d780f862dfda1b6686078e2ef167c6b6b8632085ccf10adf34e"
+        }
     },
     {
-        "path": "audio/f298e745d293e821e9c245438bda27c7da9035ad01dbd7b473e4d5ab8b858b9a.wav",
+        "path": "audio/e08d8e534a57091cc9bdb5a629841515392fb4f4f9e8ef064a8de02fa0086d52.wav",
+        "text": "ハブラシ",
         "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "text": "ここ",
         "request": {
-            "text": "ここ",
+            "text": "歯ブラシ",
             "model_id": "eleven_flash_v2_5",
             "seed": 42,
             "voice_settings": {
@@ -702,27 +736,35 @@
                 "use_speaker_boost": true,
                 "speed": 0.9
             },
-            "language_code": "ja"
+            "language_code": "ja",
+            "apply_text_normalization": "off"
         },
         "inputs": [
             {
                 "language": "ja",
-                "label": "ここ",
+                "label": "ハブラシ",
                 "semanticRole": "lexicalUnit",
-                "readings": ["ここ"]
+                "readings": ["ハブラシ"]
             }
         ],
-        "entries": ["ja:word:complete-pronunciation-koko", "ja:word:koko"],
+        "entries": [
+            "ja:word:care-toothbrush",
+            "ja:word:complete-pronunciation-care-toothbrush"
+        ],
         "variants": [],
-        "sha256": "6985e9ccd1a07e1d77fbd3b8cfe1752825a8c5a8ccaafeb9ce52657b1eaeadae",
-        "frames": 11459
+        "sha256": "e08d8e534a57091cc9bdb5a629841515392fb4f4f9e8ef064a8de02fa0086d52",
+        "frames": 19907,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "c167013cae8e77866d0f3615cfd83c50232a04688e6a554c61755d611a561053"
+        }
     },
     {
-        "path": "audio/7170c62e45ff2a8c76efc708e8f59743d125b0c7c1933ac42d279eeaf22a5c3c.wav",
+        "path": "audio/578e139d9c730e78d34b4e563650a13f5b6d092c871c1f35f43288fb29f77a5c.wav",
         "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "text": "そこ",
+        "text": "びょう。",
         "request": {
-            "text": "そこ",
+            "text": "びょう。",
             "model_id": "eleven_flash_v2_5",
             "seed": 42,
             "voice_settings": {
@@ -732,49 +774,20 @@
                 "use_speaker_boost": true,
                 "speed": 0.9
             },
-            "language_code": "ja"
+            "language_code": "ja",
+            "apply_text_normalization": "off"
         },
         "inputs": [
             {
                 "language": "ja",
-                "label": "そこ",
+                "label": "びょう",
                 "semanticRole": "lexicalUnit",
-                "readings": ["そこ"]
+                "readings": ["びょう"]
             }
         ],
-        "entries": ["ja:word:complete-pronunciation-soko", "ja:word:soko"],
+        "entries": ["ja:word:kanji-reading-e78cab-02"],
         "variants": [],
-        "sha256": "ce49878ed2f02dd4959153853b880b31523630acc04e3d53ee8ae7adb8c7ca87",
-        "frames": 12983
-    },
-    {
-        "path": "audio/7787758490208262711eee3fc59567f23d1521cdce8076d57e6046e93073cfe7.wav",
-        "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "text": "おお",
-        "request": {
-            "text": "おお",
-            "model_id": "eleven_flash_v2_5",
-            "seed": 42,
-            "voice_settings": {
-                "stability": 0.9,
-                "similarity_boost": 0.85,
-                "style": 0,
-                "use_speaker_boost": true,
-                "speed": 0.9
-            },
-            "language_code": "ja"
-        },
-        "inputs": [
-            {
-                "language": "ja",
-                "label": "おお",
-                "semanticRole": "lexicalUnit",
-                "readings": ["おお"]
-            }
-        ],
-        "entries": ["ja:word:kanji-reading-e5a4a7-01"],
-        "variants": [],
-        "sha256": "af719c5a112f527d889d00b8e679a5bbb661fe1b49788cd94bc30a035f0cd0a6",
-        "frames": 8149
+        "sha256": "b0eea38f33d0b20d437bd85da6ce853d3f9f94de279c3f72070048974f138798",
+        "frames": 18793
     }
 ]

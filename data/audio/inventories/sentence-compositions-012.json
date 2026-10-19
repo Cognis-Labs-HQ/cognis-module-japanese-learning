@@ -1,5 +1,73 @@
 [
     {
+        "path": "audio/ffa43ffe980775daadbe9774d468fbdc6c2ba73c763c5e98b5963c0f4d1f151a.wav",
+        "entryId": "ja:sentence:neko-kuruma-kuru",
+        "label": "猫は車で来る",
+        "parts": [
+            {
+                "path": "audio/4c4cf09a9e6799010dd9d06a79fdd15f15172bc7895e14fb37a39f2cd8bdd4a3.wav",
+                "entryId": "ja:word:neko"
+            },
+            {
+                "path": "audio/d7c9e57654e559dfba3bd6f78c2f27416a61f8b28d56145d84a62fe25b70c94d.wav",
+                "entryId": "ja:particle:wa"
+            },
+            {
+                "path": "audio/2a40463469bd551859d6511f36057169c3dee27d696e1631909fe67818ca2c45.wav",
+                "entryId": "ja:word:kuruma"
+            },
+            {
+                "path": "audio/df81472c8108ad9b47d8d90db017ff1c1b553d80263d6a2c59de1571671f3eee.wav",
+                "entryId": "ja:particle:de"
+            },
+            {
+                "path": "audio/ee9693ef6b328d4eb37c927b72a70c0fc1a573740aa945da2d4d5e98865aaf4f.wav",
+                "entryId": "ja:word:kuru"
+            }
+        ],
+        "gapMs": 45,
+        "segments": [
+            {
+                "path": "audio/4c4cf09a9e6799010dd9d06a79fdd15f15172bc7895e14fb37a39f2cd8bdd4a3.wav",
+                "entryId": "ja:word:neko",
+                "startFrame": 2400,
+                "frameCount": 12629
+            },
+            {
+                "path": "audio/d7c9e57654e559dfba3bd6f78c2f27416a61f8b28d56145d84a62fe25b70c94d.wav",
+                "entryId": "ja:particle:wa",
+                "startFrame": 16109,
+                "frameCount": 12106
+            },
+            {
+                "path": "audio/2a40463469bd551859d6511f36057169c3dee27d696e1631909fe67818ca2c45.wav",
+                "entryId": "ja:word:kuruma",
+                "startFrame": 29295,
+                "frameCount": 13095
+            },
+            {
+                "path": "audio/df81472c8108ad9b47d8d90db017ff1c1b553d80263d6a2c59de1571671f3eee.wav",
+                "entryId": "ja:particle:de",
+                "startFrame": 43470,
+                "frameCount": 13220
+            },
+            {
+                "path": "audio/ee9693ef6b328d4eb37c927b72a70c0fc1a573740aa945da2d4d5e98865aaf4f.wav",
+                "entryId": "ja:word:kuru",
+                "startFrame": 57770,
+                "frameCount": 12268
+            }
+        ],
+        "sha256": "3ec2365590a6bd89571d40997e424af3bbb9d394f47fff534d9c98977a9df752",
+        "frames": 70038,
+        "input": {
+            "language": "ja",
+            "label": "猫は車で来る",
+            "semanticRole": "orderedLexicalSequence",
+            "readings": ["ねこはくるまでくる"]
+        }
+    },
+    {
         "path": "audio/add02a4e32ca3c765a68064824b3fa101678c3d8b72ad5b105d81606f669d42f.wav",
         "entryId": "ja:sentence:sensei-gakkou-iku",
         "label": "先生と学校へ行く",
@@ -705,69 +773,6 @@
         "metadata": {
             "listening": "unverified-not-performed",
             "construction": "Exact selected constituent PCM including newly synthesized travel forms."
-        }
-    },
-    {
-        "path": "audio/883be088bad529376aaeedc85d6fbd3454f77a69473f154d4cfe88d7aa8c79b9.wav",
-        "entryId": "ja:sentence:weather-example-snow",
-        "label": "ゆきが好きです",
-        "parts": [
-            {
-                "path": "audio/421f3a0a6b7e6e3c8ec0b9c498891ca2b2f480ad28d529374f8d64df5c22097c.wav",
-                "entryId": "ja:word:weather-snow"
-            },
-            {
-                "path": "audio/69d02d32db53e5eeb4bb6db01917e619478b734bd66988c4242ccc1a3e55655d.wav",
-                "entryId": "ja:particle:ga"
-            },
-            {
-                "path": "audio/fff2a2381ef1abd6f3b0e24b6390a1f76d9fda74ec68bdc300ac3ff137a00214.wav",
-                "entryId": "ja:word:suki"
-            },
-            {
-                "path": "audio/2959a5dcab722b7d5c39f67845f1d6a3d6ede5f23e554e9547bca0e6cb62c56b.wav",
-                "entryId": "ja:word:desu"
-            },
-            { "pauseMs": 400 }
-        ],
-        "gapMs": 90,
-        "segments": [
-            {
-                "path": "audio/421f3a0a6b7e6e3c8ec0b9c498891ca2b2f480ad28d529374f8d64df5c22097c.wav",
-                "entryId": "ja:word:weather-snow",
-                "startFrame": 2400,
-                "frameCount": 13697
-            },
-            {
-                "path": "audio/69d02d32db53e5eeb4bb6db01917e619478b734bd66988c4242ccc1a3e55655d.wav",
-                "entryId": "ja:particle:ga",
-                "startFrame": 18257,
-                "frameCount": 14335
-            },
-            {
-                "path": "audio/fff2a2381ef1abd6f3b0e24b6390a1f76d9fda74ec68bdc300ac3ff137a00214.wav",
-                "entryId": "ja:word:suki",
-                "startFrame": 34752,
-                "frameCount": 13644
-            },
-            {
-                "path": "audio/2959a5dcab722b7d5c39f67845f1d6a3d6ede5f23e554e9547bca0e6cb62c56b.wav",
-                "entryId": "ja:word:desu",
-                "startFrame": 50556,
-                "frameCount": 11490
-            }
-        ],
-        "sha256": "883be088bad529376aaeedc85d6fbd3454f77a69473f154d4cfe88d7aa8c79b9",
-        "frames": 73806,
-        "input": {
-            "language": "ja",
-            "label": "ゆきが好きです",
-            "semanticRole": "orderedLexicalSequence",
-            "readings": ["ゆきがすきです"]
-        },
-        "metadata": {
-            "listening": "unverified-not-performed",
-            "construction": "Exact weather vocabulary and existing constituent PCM; English clouds uses the explicitly recorded plural /klaʊdz/."
         }
     }
 ]

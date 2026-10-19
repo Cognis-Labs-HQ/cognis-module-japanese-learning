@@ -73,6 +73,79 @@
         }
     },
     {
+        "path": "audio/1c16bd57447889bc3c65f8b59c5f0e0885fa4a0e41c043000e4b0ad5e45d58cf.wav",
+        "entryId": "ja:sentence:containers-example-basket-location",
+        "label": "かごはテーブルにある",
+        "parts": [
+            {
+                "path": "audio/99b726075e1decca6ff9a81b652aa0a76802ff830615798ad7a04aa4065e089c.wav",
+                "entryId": "ja:word:containers-basket"
+            },
+            {
+                "path": "audio/d7c9e57654e559dfba3bd6f78c2f27416a61f8b28d56145d84a62fe25b70c94d.wav",
+                "entryId": "ja:particle:wa"
+            },
+            {
+                "path": "audio/29f6a7e403e16e111e3eee3e859d6dee59887dcc720cb7837c894f308f7d8174.wav",
+                "entryId": "ja:word:table"
+            },
+            {
+                "path": "audio/1615cf278c2962c1657907b3686d653625229af2375f90dda5bfd5b178c7aedb.wav",
+                "entryId": "ja:particle:ni"
+            },
+            {
+                "path": "audio/0e997231f55465948ee67d44898dfd72abf6e48f95f8839fe116ca8978d53535.wav",
+                "entryId": "ja:word:aru-exist"
+            },
+            { "pauseMs": 400 }
+        ],
+        "gapMs": 90,
+        "segments": [
+            {
+                "path": "audio/99b726075e1decca6ff9a81b652aa0a76802ff830615798ad7a04aa4065e089c.wav",
+                "entryId": "ja:word:containers-basket",
+                "startFrame": 2400,
+                "frameCount": 15449
+            },
+            {
+                "path": "audio/d7c9e57654e559dfba3bd6f78c2f27416a61f8b28d56145d84a62fe25b70c94d.wav",
+                "entryId": "ja:particle:wa",
+                "startFrame": 20009,
+                "frameCount": 12106
+            },
+            {
+                "path": "audio/29f6a7e403e16e111e3eee3e859d6dee59887dcc720cb7837c894f308f7d8174.wav",
+                "entryId": "ja:word:table",
+                "startFrame": 34275,
+                "frameCount": 18793
+            },
+            {
+                "path": "audio/1615cf278c2962c1657907b3686d653625229af2375f90dda5bfd5b178c7aedb.wav",
+                "entryId": "ja:particle:ni",
+                "startFrame": 55228,
+                "frameCount": 13220
+            },
+            {
+                "path": "audio/0e997231f55465948ee67d44898dfd72abf6e48f95f8839fe116ca8978d53535.wav",
+                "entryId": "ja:word:aru-exist",
+                "startFrame": 70608,
+                "frameCount": 8976
+            }
+        ],
+        "sha256": "1c16bd57447889bc3c65f8b59c5f0e0885fa4a0e41c043000e4b0ad5e45d58cf",
+        "frames": 91344,
+        "input": {
+            "language": "ja",
+            "label": "かごはテーブルにある",
+            "semanticRole": "orderedLexicalSequence",
+            "readings": ["かごはてーぶるにある"]
+        },
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "construction": "Exact constituent PCM with explicit selected transformations."
+        }
+    },
+    {
         "path": "audio/6f440d4ed92c157ce8d26bcb1d11420765b3ae0e2c82a4bebb7e085344a3e027.wav",
         "entryId": "ja:sentence:neko-wa-koko-ni-iru",
         "label": "猫はここにいる",
@@ -682,74 +755,6 @@
             "label": "友達は日本語を学ぶ",
             "semanticRole": "orderedLexicalSequence",
             "readings": ["ともだちはにほんごをまなぶ"]
-        }
-    },
-    {
-        "path": "audio/ffa43ffe980775daadbe9774d468fbdc6c2ba73c763c5e98b5963c0f4d1f151a.wav",
-        "entryId": "ja:sentence:neko-kuruma-kuru",
-        "label": "猫は車で来る",
-        "parts": [
-            {
-                "path": "audio/4c4cf09a9e6799010dd9d06a79fdd15f15172bc7895e14fb37a39f2cd8bdd4a3.wav",
-                "entryId": "ja:word:neko"
-            },
-            {
-                "path": "audio/d7c9e57654e559dfba3bd6f78c2f27416a61f8b28d56145d84a62fe25b70c94d.wav",
-                "entryId": "ja:particle:wa"
-            },
-            {
-                "path": "audio/2a40463469bd551859d6511f36057169c3dee27d696e1631909fe67818ca2c45.wav",
-                "entryId": "ja:word:kuruma"
-            },
-            {
-                "path": "audio/df81472c8108ad9b47d8d90db017ff1c1b553d80263d6a2c59de1571671f3eee.wav",
-                "entryId": "ja:particle:de"
-            },
-            {
-                "path": "audio/ee9693ef6b328d4eb37c927b72a70c0fc1a573740aa945da2d4d5e98865aaf4f.wav",
-                "entryId": "ja:word:kuru"
-            }
-        ],
-        "gapMs": 45,
-        "segments": [
-            {
-                "path": "audio/4c4cf09a9e6799010dd9d06a79fdd15f15172bc7895e14fb37a39f2cd8bdd4a3.wav",
-                "entryId": "ja:word:neko",
-                "startFrame": 2400,
-                "frameCount": 12629
-            },
-            {
-                "path": "audio/d7c9e57654e559dfba3bd6f78c2f27416a61f8b28d56145d84a62fe25b70c94d.wav",
-                "entryId": "ja:particle:wa",
-                "startFrame": 16109,
-                "frameCount": 12106
-            },
-            {
-                "path": "audio/2a40463469bd551859d6511f36057169c3dee27d696e1631909fe67818ca2c45.wav",
-                "entryId": "ja:word:kuruma",
-                "startFrame": 29295,
-                "frameCount": 13095
-            },
-            {
-                "path": "audio/df81472c8108ad9b47d8d90db017ff1c1b553d80263d6a2c59de1571671f3eee.wav",
-                "entryId": "ja:particle:de",
-                "startFrame": 43470,
-                "frameCount": 13220
-            },
-            {
-                "path": "audio/ee9693ef6b328d4eb37c927b72a70c0fc1a573740aa945da2d4d5e98865aaf4f.wav",
-                "entryId": "ja:word:kuru",
-                "startFrame": 57770,
-                "frameCount": 12268
-            }
-        ],
-        "sha256": "3ec2365590a6bd89571d40997e424af3bbb9d394f47fff534d9c98977a9df752",
-        "frames": 70038,
-        "input": {
-            "language": "ja",
-            "label": "猫は車で来る",
-            "semanticRole": "orderedLexicalSequence",
-            "readings": ["ねこはくるまでくる"]
         }
     }
 ]

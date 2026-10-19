@@ -194,6 +194,10 @@ Je Sprache vier eigenständig verfasste Vorbereitungsbeispiele zu Besitz, Reised
 
 Give/receive und あげる/もらう mit je zwei visuell geprüften Bildern und vier einzeln verfassten Beispielen pro Sprache ergänzen. Subjektrollen, japanisch に für den Empfänger und から für die Quelle sowie den Unterschied zwischen Geben und Anheben erläutern. Acht englische und sechzehn japanische Formbindungen aufnehmen; gave/given, もらわない und Formen mit kleinem っ beibehalten. Exakte PCM-Bestandteile und japanische Originaleingaben bewahren. Bilder und Hinweise kennzeichnen das blau gekleidete Subjekt; die Hörprüfung steht aus. Die zwei zurückgestellten höflichen Verständnissätze bleiben unverändert.
 
+## Behälterwortschatz und Übungen
+
+Flasche, Schachtel, Korb und Briefumschlag mit lokalisierten Bedeutungen, Gebrauchshinweisen, geprüften Bildern und vier Beispielen ergänzt. Das japanische Wort für Briefumschlag behält beide Langvokale. Audio verwendet die festgelegten Stimmen und exakte PCM-Bausteine; eine Hörprüfung bleibt gemäß der dokumentierten Ausnahme ausstehend.
+
 ## Commits
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)

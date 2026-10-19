@@ -1,5 +1,68 @@
 [
     {
+        "path": "audio/99e4f78262fea9d042245ebaac94a2e15ccf9be9a37f6271d9166041da9eb0ce.wav",
+        "entryId": "ja:sentence:fixtures-example-shower",
+        "label": "シャワーはここです",
+        "parts": [
+            {
+                "path": "audio/c1aec790161e1d5bbc940659470b3df837fa8a65863c9afe2187d6a4436786c6.wav",
+                "entryId": "ja:word:fixtures-shower"
+            },
+            {
+                "path": "audio/d7c9e57654e559dfba3bd6f78c2f27416a61f8b28d56145d84a62fe25b70c94d.wav",
+                "entryId": "ja:particle:wa"
+            },
+            {
+                "path": "audio/f298e745d293e821e9c245438bda27c7da9035ad01dbd7b473e4d5ab8b858b9a.wav",
+                "entryId": "ja:word:koko"
+            },
+            {
+                "path": "audio/2959a5dcab722b7d5c39f67845f1d6a3d6ede5f23e554e9547bca0e6cb62c56b.wav",
+                "entryId": "ja:word:desu"
+            },
+            { "pauseMs": 400 }
+        ],
+        "gapMs": 90,
+        "segments": [
+            {
+                "path": "audio/c1aec790161e1d5bbc940659470b3df837fa8a65863c9afe2187d6a4436786c6.wav",
+                "entryId": "ja:word:fixtures-shower",
+                "startFrame": 2400,
+                "frameCount": 19907
+            },
+            {
+                "path": "audio/d7c9e57654e559dfba3bd6f78c2f27416a61f8b28d56145d84a62fe25b70c94d.wav",
+                "entryId": "ja:particle:wa",
+                "startFrame": 24467,
+                "frameCount": 12106
+            },
+            {
+                "path": "audio/f298e745d293e821e9c245438bda27c7da9035ad01dbd7b473e4d5ab8b858b9a.wav",
+                "entryId": "ja:word:koko",
+                "startFrame": 38733,
+                "frameCount": 11459
+            },
+            {
+                "path": "audio/2959a5dcab722b7d5c39f67845f1d6a3d6ede5f23e554e9547bca0e6cb62c56b.wav",
+                "entryId": "ja:word:desu",
+                "startFrame": 52352,
+                "frameCount": 11490
+            }
+        ],
+        "sha256": "99e4f78262fea9d042245ebaac94a2e15ccf9be9a37f6271d9166041da9eb0ce",
+        "frames": 75602,
+        "input": {
+            "language": "ja",
+            "label": "シャワーはここです",
+            "semanticRole": "orderedLexicalSequence",
+            "readings": ["シャワーはここです"]
+        },
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "construction": "Exact constituent PCM, preserving every selected grammatical form."
+        }
+    },
+    {
         "path": "audio/af271f2b423feb48fbbcebc8166456a1fd732cda0e8ec6c42b84d7185c9e0188.wav",
         "entryId": "ja:sentence:fruit-example-pineapple",
         "label": "パイナップルが好きです",
@@ -685,107 +748,6 @@
             "label": "だから日本語を学ぶ",
             "semanticRole": "orderedLexicalSequence",
             "readings": ["だからにほんごをまなぶ"]
-        }
-    },
-    {
-        "path": "audio/bdd6744f42f34bd3b67a592e394766ba2ec3a113374bd0590f3681dfc8a061e4.wav",
-        "entryId": "ja:sentence:nanode-mizu-wo-nomu",
-        "label": "なので水を飲む",
-        "parts": [
-            {
-                "path": "audio/bed0532196ccac6c1746b54a74653f40a65024523b3a384d7001701329b01af0.wav",
-                "entryId": "ja:word:nanode"
-            },
-            {
-                "path": "audio/238fd0913f4feae6a28547b34b720af5c2db7cf9c9febf7d03b608e1129bef73.wav",
-                "entryId": "ja:word:mizu"
-            },
-            {
-                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
-                "entryId": "ja:particle:wo"
-            },
-            {
-                "path": "audio/5eac59ad2371c7277aa56070f39b840cfb2fa6edb0ec5f52f293f8c0b0c819da.wav",
-                "entryId": "ja:word:nomu"
-            }
-        ],
-        "gapMs": 45,
-        "segments": [
-            {
-                "path": "audio/bed0532196ccac6c1746b54a74653f40a65024523b3a384d7001701329b01af0.wav",
-                "entryId": "ja:word:nanode",
-                "startFrame": 2400,
-                "frameCount": 13939
-            },
-            {
-                "path": "audio/238fd0913f4feae6a28547b34b720af5c2db7cf9c9febf7d03b608e1129bef73.wav",
-                "entryId": "ja:word:mizu",
-                "startFrame": 17419,
-                "frameCount": 14189
-            },
-            {
-                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
-                "entryId": "ja:particle:wo",
-                "startFrame": 32688,
-                "frameCount": 8762
-            },
-            {
-                "path": "audio/5eac59ad2371c7277aa56070f39b840cfb2fa6edb0ec5f52f293f8c0b0c819da.wav",
-                "entryId": "ja:word:nomu",
-                "startFrame": 42530,
-                "frameCount": 13720
-            }
-        ],
-        "sha256": "84e4908c84cc58dd26f877d1929bb1e95af0c2367a9f8d550d69fd0a6e9839ea",
-        "frames": 56250,
-        "input": {
-            "language": "ja",
-            "label": "なので水を飲む",
-            "semanticRole": "orderedLexicalSequence",
-            "readings": ["なのでみずをのむ"]
-        }
-    },
-    {
-        "path": "audio/8185f2b9c64a26dfbb2e4847af65c98fb6bfca734496919169cca10df6895aa3.wav",
-        "entryId": "ja:sentence:household-example-cook",
-        "label": "あしたりょうりする",
-        "parts": [
-            {
-                "path": "audio/3f413ca4ccc8ae35402796b8fdce113e6bdca74527c328668076a5b930582853.wav",
-                "entryId": "ja:word:time-tomorrow"
-            },
-            {
-                "path": "audio/e33686384389e80ef4dd0db97018d79d8b5ee187f17ec85723bd40a420521f2a.wav",
-                "entryId": "ja:word:household-cook"
-            },
-            { "pauseMs": 400 }
-        ],
-        "gapMs": 90,
-        "segments": [
-            {
-                "path": "audio/3f413ca4ccc8ae35402796b8fdce113e6bdca74527c328668076a5b930582853.wav",
-                "entryId": "ja:word:time-tomorrow",
-                "startFrame": 2400,
-                "frameCount": 15449
-            },
-            {
-                "path": "audio/e33686384389e80ef4dd0db97018d79d8b5ee187f17ec85723bd40a420521f2a.wav",
-                "entryId": "ja:word:household-cook",
-                "startFrame": 20009,
-                "frameCount": 22137
-            }
-        ],
-        "sha256": "8185f2b9c64a26dfbb2e4847af65c98fb6bfca734496919169cca10df6895aa3",
-        "frames": 53906,
-        "input": {
-            "language": "ja",
-            "label": "あしたりょうりする",
-            "semanticRole": "orderedLexicalSequence",
-            "readings": ["あしたりょうりする"]
-        },
-        "metadata": {
-            "listening": "unverified-not-performed",
-            "construction": "Exact visible base-word constituent PCM; current host import requires base labels in authored sentences. Selected-form recordings remain available for transformation practice."
         }
     }
 ]

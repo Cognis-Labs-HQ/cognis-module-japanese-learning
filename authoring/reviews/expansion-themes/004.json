@@ -1,5 +1,36 @@
 [
     {
+        "theme": "transport",
+        "newDistinctVocabularyCount": 4,
+        "vocabulary": [
+            {
+                "entryId": "ja:word:transport-airplane",
+                "label": "ひこうき"
+            },
+            {
+                "entryId": "ja:word:transport-boat",
+                "label": "ボート"
+            },
+            {
+                "entryId": "ja:word:transport-taxi",
+                "label": "タクシー"
+            },
+            {
+                "entryId": "ja:word:transport-motorcycle",
+                "label": "オートバイ"
+            }
+        ],
+        "newExampleCount": 4,
+        "exampleIds": [
+            "ja:sentence:transport-example-airplane",
+            "ja:sentence:transport-example-boat",
+            "ja:sentence:transport-example-taxi",
+            "ja:sentence:transport-example-motorcycle"
+        ],
+        "recordedGrammaticalFormCount": 0,
+        "vocabularyAudit": "authoring/reviews/transport-vocabulary.json"
+    },
+    {
         "theme": "vegetables",
         "newDistinctVocabularyCount": 4,
         "vocabulary": [
@@ -172,21 +203,5 @@
         ],
         "recordedGrammaticalFormCount": 0,
         "vocabularyAudit": "authoring/reviews/study-habits-sentences.json"
-    },
-    {
-        "theme": "plans",
-        "newDistinctVocabularyCount": 0,
-        "vocabulary": [],
-        "newExampleCount": 6,
-        "exampleIds": [
-            "ja:sentence:plans-library-tomorrow",
-            "ja:sentence:plans-friend-soon",
-            "ja:sentence:plans-restaurant-later",
-            "ja:sentence:plans-wait-station",
-            "ja:sentence:plans-ticket-later",
-            "ja:sentence:plans-learn-tomorrow"
-        ],
-        "recordedGrammaticalFormCount": 0,
-        "vocabularyAudit": "authoring/reviews/plans-sentences.json"
     }
 ]

@@ -1,5 +1,58 @@
 [
     {
+        "path": "audio/ee6712e005141b72382cafbbf6a738c7c7920569768f5d48e01afa6bdd04bd2d.wav",
+        "entryId": "ja:sentence:clothing-example-shirt",
+        "label": "シャツをかう",
+        "parts": [
+            {
+                "path": "audio/0f00fa39ddc666350b31f3bb952b323e73f48b0db239d261e968506cac7fb720.wav",
+                "entryId": "ja:word:clothing-shirt"
+            },
+            {
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "entryId": "ja:particle:wo"
+            },
+            {
+                "path": "audio/1a880a2cfc93aedb14ed94ad5cbd8ba5a803aa377bb98f0bf534e0ce8905bfd4.wav",
+                "entryId": "ja:word:travel-buy"
+            },
+            { "pauseMs": 400 }
+        ],
+        "gapMs": 90,
+        "segments": [
+            {
+                "path": "audio/0f00fa39ddc666350b31f3bb952b323e73f48b0db239d261e968506cac7fb720.wav",
+                "entryId": "ja:word:clothing-shirt",
+                "startFrame": 2400,
+                "frameCount": 16564
+            },
+            {
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "entryId": "ja:particle:wo",
+                "startFrame": 21124,
+                "frameCount": 8762
+            },
+            {
+                "path": "audio/1a880a2cfc93aedb14ed94ad5cbd8ba5a803aa377bb98f0bf534e0ce8905bfd4.wav",
+                "entryId": "ja:word:travel-buy",
+                "startFrame": 32046,
+                "frameCount": 13220
+            }
+        ],
+        "sha256": "ee6712e005141b72382cafbbf6a738c7c7920569768f5d48e01afa6bdd04bd2d",
+        "frames": 57026,
+        "input": {
+            "language": "ja",
+            "label": "シャツをかう",
+            "semanticRole": "orderedLexicalSequence",
+            "readings": ["シャツをかう"]
+        },
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "construction": "Exact clothing and existing constituent PCM, including selected English likes and plural socks."
+        }
+    },
+    {
         "path": "audio/6f81d15135e374c231f5467683112e9771f10a0c387520085e2b5db718b654a6.wav",
         "entryId": "ja:sentence:clothing-example-sock",
         "label": "くつしたをかう",
@@ -682,59 +735,6 @@
             "label": "かばんはおもい",
             "semanticRole": "orderedLexicalSequence",
             "readings": ["かばんはおもい"]
-        },
-        "metadata": {
-            "listening": "unverified-not-performed",
-            "construction": "Exact constituent PCM, preserving every selected grammatical form."
-        }
-    },
-    {
-        "path": "audio/a2793605ee52a4e428b5c305ee947f525a5f44b3a85c6fc57a28f760a0f84dcd.wav",
-        "entryId": "ja:sentence:qualities-example-light",
-        "label": "コートはかるい",
-        "parts": [
-            {
-                "path": "audio/7c76dd055a9f368a0a0c3b9cd43b8b54a2167ccb5721b663d2b5114d7ce634c8.wav",
-                "entryId": "ja:word:coat"
-            },
-            {
-                "path": "audio/d7c9e57654e559dfba3bd6f78c2f27416a61f8b28d56145d84a62fe25b70c94d.wav",
-                "entryId": "ja:particle:wa"
-            },
-            {
-                "path": "audio/b1ff072af8cbb2d5b01e84e33e02e8a80b884f7e5b618ab9e7c7a9f4e261c2b0.wav",
-                "entryId": "ja:word:qualities-light"
-            },
-            { "pauseMs": 400 }
-        ],
-        "gapMs": 90,
-        "segments": [
-            {
-                "path": "audio/7c76dd055a9f368a0a0c3b9cd43b8b54a2167ccb5721b663d2b5114d7ce634c8.wav",
-                "entryId": "ja:word:coat",
-                "startFrame": 2400,
-                "frameCount": 17678
-            },
-            {
-                "path": "audio/d7c9e57654e559dfba3bd6f78c2f27416a61f8b28d56145d84a62fe25b70c94d.wav",
-                "entryId": "ja:particle:wa",
-                "startFrame": 22238,
-                "frameCount": 12106
-            },
-            {
-                "path": "audio/b1ff072af8cbb2d5b01e84e33e02e8a80b884f7e5b618ab9e7c7a9f4e261c2b0.wav",
-                "entryId": "ja:word:qualities-light",
-                "startFrame": 36504,
-                "frameCount": 14335
-            }
-        ],
-        "sha256": "a2793605ee52a4e428b5c305ee947f525a5f44b3a85c6fc57a28f760a0f84dcd",
-        "frames": 62599,
-        "input": {
-            "language": "ja",
-            "label": "コートはかるい",
-            "semanticRole": "orderedLexicalSequence",
-            "readings": ["こーとはかるい"]
         },
         "metadata": {
             "listening": "unverified-not-performed",

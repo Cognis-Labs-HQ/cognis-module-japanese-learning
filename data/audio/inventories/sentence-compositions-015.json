@@ -1,5 +1,63 @@
 [
     {
+        "path": "audio/bdd6744f42f34bd3b67a592e394766ba2ec3a113374bd0590f3681dfc8a061e4.wav",
+        "entryId": "ja:sentence:nanode-mizu-wo-nomu",
+        "label": "なので水を飲む",
+        "parts": [
+            {
+                "path": "audio/bed0532196ccac6c1746b54a74653f40a65024523b3a384d7001701329b01af0.wav",
+                "entryId": "ja:word:nanode"
+            },
+            {
+                "path": "audio/238fd0913f4feae6a28547b34b720af5c2db7cf9c9febf7d03b608e1129bef73.wav",
+                "entryId": "ja:word:mizu"
+            },
+            {
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "entryId": "ja:particle:wo"
+            },
+            {
+                "path": "audio/5eac59ad2371c7277aa56070f39b840cfb2fa6edb0ec5f52f293f8c0b0c819da.wav",
+                "entryId": "ja:word:nomu"
+            }
+        ],
+        "gapMs": 45,
+        "segments": [
+            {
+                "path": "audio/bed0532196ccac6c1746b54a74653f40a65024523b3a384d7001701329b01af0.wav",
+                "entryId": "ja:word:nanode",
+                "startFrame": 2400,
+                "frameCount": 13939
+            },
+            {
+                "path": "audio/238fd0913f4feae6a28547b34b720af5c2db7cf9c9febf7d03b608e1129bef73.wav",
+                "entryId": "ja:word:mizu",
+                "startFrame": 17419,
+                "frameCount": 14189
+            },
+            {
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "entryId": "ja:particle:wo",
+                "startFrame": 32688,
+                "frameCount": 8762
+            },
+            {
+                "path": "audio/5eac59ad2371c7277aa56070f39b840cfb2fa6edb0ec5f52f293f8c0b0c819da.wav",
+                "entryId": "ja:word:nomu",
+                "startFrame": 42530,
+                "frameCount": 13720
+            }
+        ],
+        "sha256": "84e4908c84cc58dd26f877d1929bb1e95af0c2367a9f8d550d69fd0a6e9839ea",
+        "frames": 56250,
+        "input": {
+            "language": "ja",
+            "label": "なので水を飲む",
+            "semanticRole": "orderedLexicalSequence",
+            "readings": ["なのでみずをのむ"]
+        }
+    },
+    {
         "path": "audio/dd4c080852f989e5c96a5e5d18b3b5694beea7985c8a273493981919e1ba4301.wav",
         "entryId": "ja:sentence:watashi-wa-gakusei-da",
         "label": "私は学生だ",
@@ -691,102 +749,6 @@
         "metadata": {
             "listening": "unverified-not-performed",
             "construction": "Exact constituent PCM, including each selected grammatical form."
-        }
-    },
-    {
-        "path": "audio/ee6712e005141b72382cafbbf6a738c7c7920569768f5d48e01afa6bdd04bd2d.wav",
-        "entryId": "ja:sentence:clothing-example-shirt",
-        "label": "シャツをかう",
-        "parts": [
-            {
-                "path": "audio/0f00fa39ddc666350b31f3bb952b323e73f48b0db239d261e968506cac7fb720.wav",
-                "entryId": "ja:word:clothing-shirt"
-            },
-            {
-                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
-                "entryId": "ja:particle:wo"
-            },
-            {
-                "path": "audio/1a880a2cfc93aedb14ed94ad5cbd8ba5a803aa377bb98f0bf534e0ce8905bfd4.wav",
-                "entryId": "ja:word:travel-buy"
-            },
-            { "pauseMs": 400 }
-        ],
-        "gapMs": 90,
-        "segments": [
-            {
-                "path": "audio/0f00fa39ddc666350b31f3bb952b323e73f48b0db239d261e968506cac7fb720.wav",
-                "entryId": "ja:word:clothing-shirt",
-                "startFrame": 2400,
-                "frameCount": 16564
-            },
-            {
-                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
-                "entryId": "ja:particle:wo",
-                "startFrame": 21124,
-                "frameCount": 8762
-            },
-            {
-                "path": "audio/1a880a2cfc93aedb14ed94ad5cbd8ba5a803aa377bb98f0bf534e0ce8905bfd4.wav",
-                "entryId": "ja:word:travel-buy",
-                "startFrame": 32046,
-                "frameCount": 13220
-            }
-        ],
-        "sha256": "ee6712e005141b72382cafbbf6a738c7c7920569768f5d48e01afa6bdd04bd2d",
-        "frames": 57026,
-        "input": {
-            "language": "ja",
-            "label": "シャツをかう",
-            "semanticRole": "orderedLexicalSequence",
-            "readings": ["シャツをかう"]
-        },
-        "metadata": {
-            "listening": "unverified-not-performed",
-            "construction": "Exact clothing and existing constituent PCM, including selected English likes and plural socks."
-        }
-    },
-    {
-        "path": "audio/0353b6c6a13b5549222e0e19913b57248953b28148a1e06e1ca2e2b7afccce1d.wav",
-        "entryId": "ja:sentence:household-example-clean",
-        "label": "ゆっくりそうじする",
-        "parts": [
-            {
-                "path": "audio/1c2d1664ef0db6298e34d97fa47fd27aa3dfc34f44515e3e22ed6e07e2ca0011.wav",
-                "entryId": "ja:word:yukkuri"
-            },
-            {
-                "path": "audio/7c70efb2f24b3b66cb5da738c2e2d694336ed2957ffdc0954b3a771007e31c58.wav",
-                "entryId": "ja:word:household-clean"
-            },
-            { "pauseMs": 400 }
-        ],
-        "gapMs": 90,
-        "segments": [
-            {
-                "path": "audio/1c2d1664ef0db6298e34d97fa47fd27aa3dfc34f44515e3e22ed6e07e2ca0011.wav",
-                "entryId": "ja:word:yukkuri",
-                "startFrame": 2400,
-                "frameCount": 21022
-            },
-            {
-                "path": "audio/7c70efb2f24b3b66cb5da738c2e2d694336ed2957ffdc0954b3a771007e31c58.wav",
-                "entryId": "ja:word:household-clean",
-                "startFrame": 25582,
-                "frameCount": 23251
-            }
-        ],
-        "sha256": "0353b6c6a13b5549222e0e19913b57248953b28148a1e06e1ca2e2b7afccce1d",
-        "frames": 60593,
-        "input": {
-            "language": "ja",
-            "label": "ゆっくりそうじする",
-            "semanticRole": "orderedLexicalSequence",
-            "readings": ["ゆっくりそうじする"]
-        },
-        "metadata": {
-            "listening": "unverified-not-performed",
-            "construction": "Exact visible base-word constituent PCM; current host import requires base labels in authored sentences. Selected-form recordings remain available for transformation practice."
         }
     }
 ]

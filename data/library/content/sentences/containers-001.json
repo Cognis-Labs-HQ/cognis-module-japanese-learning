@@ -1,0 +1,132 @@
+[
+    {
+        "id": "ja:sentence:containers-example-light-box",
+        "label": "はこはかるい",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/f33f8669814580248127c601196916c9380d197cece1a9f722eb09dc7a86a542.wav",
+            "pronunciation": ["はこはかるい"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:containers-box",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:qualities-light",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:definition:containers-example-light-box",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:containers-example-wash-bottle",
+        "label": "びんをあらう",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/8925d62f7707793b6ae83440204ec7062f06f944350223eb25cda222cfe05d5f.wav",
+            "pronunciation": ["びんをあらう"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:containers-bottle",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:household-wash",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:definition:containers-example-wash-bottle",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:containers-example-basket-location",
+        "label": "かごはテーブルにある",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/1c16bd57447889bc3c65f8b59c5f0e0885fa4a0e41c043000e4b0ad5e45d58cf.wav",
+            "pronunciation": ["かごはてーぶるにある"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:containers-basket",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:table",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:ni",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:aru-exist",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:containers-example-basket-location",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:containers-example-buy-envelope",
+        "label": "ふうとうをかう",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/106c300859a2b7bdc1cbffc1cf77e78a2a385e231e16a99cec2864672fbde13b.wav",
+            "pronunciation": ["ふうとうをかう"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:containers-envelope",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:travel-buy",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:definition:containers-example-buy-envelope",
+                "relation": "definitions"
+            }
+        ]
+    }
+]
