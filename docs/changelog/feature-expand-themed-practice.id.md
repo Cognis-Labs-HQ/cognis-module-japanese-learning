@@ -89,3 +89,4 @@ Tambahkan kemeja, gaun sehari-hari, kaus kaki, dan rok dengan empat bentuk jamak
 - [0202c5c](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/0202c5cce7ba57ad5e9f79a7b53943bd576e43a1)
 - [85b672b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/85b672b68b62bd92d11f97486e13a570f19edbf2)
 - [37245f2](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/37245f2b9c7fbe0109d26b04259a3eadf81d45ea)
+- [4109cfd](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/4109cfd40a98166bebd7ae380e1b7e0753c8a153)
