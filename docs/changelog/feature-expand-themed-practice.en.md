@@ -70,6 +70,10 @@ Add four illustrated season nouns, four activity examples and a mixed practice d
 
 Add shirts, everyday dresses, socks and skirts with four English plural forms, four contextual examples per module and a clothing deck. Review every source and final illustration, preserve Japanese small kana and long vowels, and compose exact constituent audio. Add a regression check rejecting conflicting recording bytes for the same card or selected-form lookup identity. Listening remains unverified.
 
+## Everyday Tableware
+
+Add cups, plates, spoons and forks with four English plural forms, four contextual examples per module and a tableware deck. Inspect all source and final pictures, review small kana and long vowels, and preserve exact constituent PCM and recording provenance. Canonical plural tests verify spelling, IPA, provider request and selected-form bindings. Listening remains unverified.
+
 ## Commits
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)
