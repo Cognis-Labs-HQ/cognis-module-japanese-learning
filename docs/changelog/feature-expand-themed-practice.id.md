@@ -26,6 +26,14 @@ Tambahkan enam kalimat bervariasi tentang makanan dan satu dek latihan dengan ko
 
 Enam contoh rutinitas harian dan satu dek latihan membahas waktu, tempat, teman beraktivitas, dan arah dengan kosakata serta audio unsur yang sudah ada.
 
+## Pilihan Saat Berbelanja
+
+Enam contoh belanja dan satu dek latihan membahas pilihan, kebutuhan, deskripsi, dan pembelian. Audio digabungkan hanya jika semua rekaman unsur yang tepat tersedia; rekaman yang belum ada dicatat secara jelas.
+
+## Makna kata kerja perjalanan
+
+Perbaiki makna kamus bahasa Jerman, Indonesia, dan Jepang untuk tiba, berangkat, membeli, dan menunggu; pertahankan bacaan dan bentuknya.
+
 ## Komit
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)

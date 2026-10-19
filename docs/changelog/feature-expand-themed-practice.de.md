@@ -26,6 +26,14 @@ Sechs abwechslungsreiche Sätze zum Essen und ein Übungsdeck verwenden vorhande
 
 Sechs Alltagsbeispiele und ein Übungsdeck behandeln Zeit, Ort, Begleitung und Richtung mit vorhandenem Wortschatz und unveränderten Wortaufnahmen.
 
+## Beim Einkaufen
+
+Sechs Einkaufsbeispiele und ein Übungsdeck behandeln Auswahl, Bedarf, Beschreibungen und Käufe. Audio wird nur aus vollständig vorhandenen passenden Wortaufnahmen zusammengesetzt; fehlende Aufnahmen sind ausdrücklich aufgeführt.
+
+## Bedeutungen der Reiseverben
+
+Die deutschen, indonesischen und japanischen Wörterbuchbedeutungen für ankommen, abreisen, kaufen und warten werden berichtigt; Lesungen und Formen bleiben erhalten.
+
 ## Commits
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)

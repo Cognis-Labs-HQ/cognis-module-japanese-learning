@@ -26,6 +26,14 @@ Add six varied mealtime sentences and a practice deck, reusing existing vocabula
 
 Add six daily-routine examples and a practice deck, covering time, place, company and direction with existing vocabulary and exact constituent audio.
 
+## Shopping Choices
+
+Add six shopping examples and a practice deck for choices, needs, descriptions and purchases. Compose audio only where every exact constituent is available; explicitly identify missing recordings.
+
+## Travel verb glosses
+
+Correct German, Indonesian and Japanese dictionary glosses for arrive, depart, buy and wait; preserve readings and forms.
+
 ## Commits
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)

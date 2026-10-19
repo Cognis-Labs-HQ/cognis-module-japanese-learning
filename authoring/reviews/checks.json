@@ -1,24 +1,24 @@
 {
     "checkedDate": "2026-10-19",
     "moduleTests": {
-        "passed": 230,
+        "passed": 232,
         "failed": 0
     },
     "formattingAndLint": "pass",
     "manifestValidation": {
         "status": "pass",
-        "packagedFiles": 1294,
+        "packagedFiles": 1311,
         "authoringFilesIncluded": 0
     },
     "hostCompatibility": {
-        "head": "7134ed437df268a7c7ac0be20faea08fdd9bc791",
+        "head": "9295408ad9177026b275bb70a2b1d8ed50cbb257",
         "contentPackInspection": "pass",
-        "records": 972,
-        "assets": 440,
+        "records": 996,
+        "assets": 450,
         "targetedTestsPassed": 11,
         "targetedTests": ["content-pack", "content-audio", "browse-permissions"]
     },
-    "audioChanges": "Six new mealtime compositions per module reuse exact existing PCM. No external synthesis. Listening unverified; travel recordings explicitly absent.",
+    "audioChanges": "Daily routines and shopping add 10 exact existing-constituent PCM compositions. No external synthesis. Listening unverified under the revised instruction; missing constituents explicitly listed separately from unverified present clips.",
     "finalJpegReview": "each replacement inspected individually at full resolution after encoding",
     "remainingContextWork": "All 33 earlier context dispositions resolved. Travel vocabulary and sentences now published under the revised audio-verification instruction.",
     "contextReview": {
@@ -32,6 +32,10 @@
     },
     "currentBatchEvidence": {
         "travel": "authoring/reviews/travel/index.json",
-        "mealtime": "authoring/reviews/mealtime.json"
+        "mealtime": "authoring/reviews/mealtime.json",
+        "daily": "authoring/reviews/daily.json",
+        "shopping": "authoring/reviews/shopping.json",
+        "synthesisAccess": "authoring/reviews/synthesis-access.json",
+        "synthesisPlan": "authoring/reviews/synthesis-plan.json"
     }
 }
