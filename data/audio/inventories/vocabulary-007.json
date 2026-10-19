@@ -1,20 +1,23 @@
 [
     {
-        "path": "audio/d201a18818192877404cda22087618df3f1e2fce207e201b41aaff2be77eed64.wav",
-        "text": "ぼうし",
+        "path": "audio/234ecb7a8a14ff2c9815b0ef986438f2952734b3718a5293d3c72361bbb8bc34.wav",
+        "text": "おなか",
         "inputs": [
             {
                 "language": "ja",
-                "label": "ぼうし",
+                "label": "おなか",
                 "semanticRole": "lexicalUnit",
-                "readings": ["ぼうし"]
+                "readings": ["おなか"]
             }
         ],
-        "entries": ["ja:word:hat", "ja:word:complete-pronunciation-hat"],
+        "entries": [
+            "ja:word:stomach",
+            "ja:word:complete-pronunciation-stomach"
+        ],
         "variants": [],
         "voiceId": "xya0RvcJtofTcFTOdX4E",
         "request": {
-            "text": "ぼうし",
+            "text": "おなか",
             "model_id": "eleven_flash_v2_5",
             "seed": 42,
             "voice_settings": {
@@ -27,31 +30,25 @@
             "language_code": "ja",
             "apply_text_normalization": "off"
         },
-        "sha256": "bae9da183c87703eee786d80dc09daa786c496ebf4b6da3cfd993034972ccb98",
+        "sha256": "3909c12d9246a63e6ba12a058c20ff2c6e1fb4ac1938bd3e8957508ff2d564e4",
         "frames": 18793
     },
     {
-        "path": "audio/7c76dd055a9f368a0a0c3b9cd43b8b54a2167ccb5721b663d2b5114d7ce634c8.wav",
-        "text": "コート",
+        "path": "audio/88194a828861900676762069e51dd27660579a4439566acd53cc273600349219.wav",
+        "text": "ひざ",
         "inputs": [
             {
                 "language": "ja",
-                "label": "コート",
+                "label": "ひざ",
                 "semanticRole": "lexicalUnit",
-                "readings": ["こーと"]
-            },
-            {
-                "language": "ja",
-                "label": "こーと",
-                "semanticRole": "lexicalUnit",
-                "readings": ["こーと"]
+                "readings": ["ひざ"]
             }
         ],
-        "entries": ["ja:word:coat", "ja:word:complete-pronunciation-coat"],
+        "entries": ["ja:word:knee", "ja:word:complete-pronunciation-knee"],
         "variants": [],
         "voiceId": "xya0RvcJtofTcFTOdX4E",
         "request": {
-            "text": "コート",
+            "text": "ひざ",
             "model_id": "eleven_flash_v2_5",
             "seed": 42,
             "voice_settings": {
@@ -64,56 +61,95 @@
             "language_code": "ja",
             "apply_text_normalization": "off"
         },
-        "sha256": "f7157fb1661b6f7285ef083ea5247004eab8f296a07694d0ad33f0061d771397",
-        "frames": 17678
-    },
-    {
-        "path": "audio/096088c37e3482f972b2c7f98c75b35f17c6d2268a213cbbb8954df5f54267af.wav",
-        "text": "かぎ",
-        "inputs": [
-            {
-                "language": "ja",
-                "label": "かぎ",
-                "semanticRole": "lexicalUnit",
-                "readings": ["かぎ"]
-            }
-        ],
-        "entries": ["ja:word:key", "ja:word:complete-pronunciation-key"],
-        "variants": [],
-        "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "request": {
-            "text": "かぎ",
-            "model_id": "eleven_flash_v2_5",
-            "seed": 42,
-            "voice_settings": {
-                "stability": 0.9,
-                "similarity_boost": 0.85,
-                "style": 0,
-                "use_speaker_boost": true,
-                "speed": 0.9
-            },
-            "language_code": "ja",
-            "apply_text_normalization": "off"
-        },
-        "sha256": "cc45e9d73c8c36fa49e1cc01eb4ef7fceec1989540dd98d1ad300beb993da219",
+        "sha256": "36806e736fde01aa93c834a35c03c842b0da7a5bd11569f454fbbf3d54a52085",
         "frames": 15449
     },
     {
-        "path": "audio/dceeb43d9ffa6a8695b12711a6ba324bfa6a41126d61816a4602b67f7a928f61.wav",
-        "text": "でんわ",
+        "path": "audio/307b697d95f1443b4de3df5420e67c2a426211ffd159a7b416eaf302e46ea4f6.wav",
+        "text": "またなかった",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "またなかった",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            }
+        },
         "inputs": [
             {
                 "language": "ja",
-                "label": "でんわ",
+                "label": "またなかった",
                 "semanticRole": "lexicalUnit",
-                "readings": ["でんわ"]
+                "readings": ["またなかった"]
             }
         ],
-        "entries": ["ja:word:phone", "ja:word:complete-pronunciation-phone"],
-        "variants": [],
+        "entries": [],
+        "variants": [
+            {
+                "entryId": "ja:word:travel-wait",
+                "setId": "travel-wait-forms",
+                "path": ["negative-past"]
+            }
+        ],
+        "sha256": "307b697d95f1443b4de3df5420e67c2a426211ffd159a7b416eaf302e46ea4f6",
+        "frames": 24366,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "languageSelection": "native-input-autodetection",
+            "sourcePcmSha256": "b4456c99962963a730cd19488037df10509be4d28d1026691568a357608049dd"
+        }
+    },
+    {
+        "path": "audio/46c25c34401b674dfd3a8c44181b1f4d110ab380b51cc386e6920efbe0f09be0.wav",
+        "text": "まてる",
         "voiceId": "xya0RvcJtofTcFTOdX4E",
         "request": {
-            "text": "でんわ",
+            "text": "まてる",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            }
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "まてる",
+                "semanticRole": "lexicalUnit",
+                "readings": ["まてる"]
+            }
+        ],
+        "entries": [],
+        "variants": [
+            {
+                "entryId": "ja:word:travel-wait",
+                "setId": "travel-wait-forms",
+                "path": ["potential"]
+            }
+        ],
+        "sha256": "46c25c34401b674dfd3a8c44181b1f4d110ab380b51cc386e6920efbe0f09be0",
+        "frames": 18793,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "languageSelection": "native-input-autodetection",
+            "sourcePcmSha256": "6718572904b29399e086fa69c4e9133da49f609a3f4dd755b75a6496d06c0b3b"
+        }
+    },
+    {
+        "path": "audio/3f413ca4ccc8ae35402796b8fdce113e6bdca74527c328668076a5b930582853.wav",
+        "text": "あした",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "あした",
             "model_id": "eleven_flash_v2_5",
             "seed": 42,
             "voice_settings": {
@@ -126,34 +162,32 @@
             "language_code": "ja",
             "apply_text_normalization": "off"
         },
-        "sha256": "edb73a694cf2d67da13973238ed371a252eae50cd71a3a9669cfecfddaa35484",
-        "frames": 17678
-    },
-    {
-        "path": "audio/c944cbc247ffefed478d93dd3745f02c7c402e2b53dffe199f21485186def555.wav",
-        "text": "パソコン",
         "inputs": [
             {
                 "language": "ja",
-                "label": "パソコン",
+                "label": "あした",
                 "semanticRole": "lexicalUnit",
-                "readings": ["ぱそこん"]
-            },
-            {
-                "language": "ja",
-                "label": "ぱそこん",
-                "semanticRole": "lexicalUnit",
-                "readings": ["ぱそこん"]
+                "readings": ["あした"]
             }
         ],
         "entries": [
-            "ja:word:computer",
-            "ja:word:complete-pronunciation-computer"
+            "ja:word:time-tomorrow",
+            "ja:word:complete-pronunciation-time-tomorrow"
         ],
         "variants": [],
+        "sha256": "3f413ca4ccc8ae35402796b8fdce113e6bdca74527c328668076a5b930582853",
+        "frames": 15449,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "1220cf1cc90e81e4c2e4883b90fee570e42b92c9201f684370d8d4c6fc9e5cbc"
+        }
+    },
+    {
+        "path": "audio/c35b5c82854e64b2416f515343813659b606ad0964a97c0ce961e9f96f6e8061.wav",
+        "text": "きのう",
         "voiceId": "xya0RvcJtofTcFTOdX4E",
         "request": {
-            "text": "パソコン",
+            "text": "きのう",
             "model_id": "eleven_flash_v2_5",
             "seed": 42,
             "voice_settings": {
@@ -166,59 +200,32 @@
             "language_code": "ja",
             "apply_text_normalization": "off"
         },
-        "sha256": "cd43bab62701e55845c0013241e3a4d17c6cce30fdf60dec76d64e463a7e94c2",
-        "frames": 17678
-    },
-    {
-        "path": "audio/0cfd50e4756e9d4e39064afe1aaf055620cf3e06378b49b018c67516c4b2bcc8.wav",
-        "text": "とけい",
         "inputs": [
             {
                 "language": "ja",
-                "label": "とけい",
+                "label": "きのう",
                 "semanticRole": "lexicalUnit",
-                "readings": ["とけい"]
-            }
-        ],
-        "entries": ["ja:word:clock", "ja:word:complete-pronunciation-clock"],
-        "variants": [],
-        "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "request": {
-            "text": "とけい",
-            "model_id": "eleven_flash_v2_5",
-            "seed": 42,
-            "voice_settings": {
-                "stability": 0.9,
-                "similarity_boost": 0.85,
-                "style": 0,
-                "use_speaker_boost": true,
-                "speed": 0.9
-            },
-            "language_code": "ja",
-            "apply_text_normalization": "off"
-        },
-        "sha256": "a058648702e2c840124cdfff0334ee53cc10824a541dee5a4296fb495c0ee504",
-        "frames": 16564
-    },
-    {
-        "path": "audio/4d3e648472767b06e4dd7056b047348a488c0d93ab3d0937737e362c5d0ed30a.wav",
-        "text": "かさ",
-        "inputs": [
-            {
-                "language": "ja",
-                "label": "かさ",
-                "semanticRole": "lexicalUnit",
-                "readings": ["かさ"]
+                "readings": ["きのう"]
             }
         ],
         "entries": [
-            "ja:word:umbrella",
-            "ja:word:complete-pronunciation-umbrella"
+            "ja:word:time-yesterday",
+            "ja:word:complete-pronunciation-time-yesterday"
         ],
         "variants": [],
+        "sha256": "c35b5c82854e64b2416f515343813659b606ad0964a97c0ce961e9f96f6e8061",
+        "frames": 15449,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "a9264f466ce59a8d322af555aae9fd37ba064bc1fa92b04c86ef02a645b1219e"
+        }
+    },
+    {
+        "path": "audio/edf8fddd5573c17427d2a2371aa36aa2b5c0c37d00c568432b04a187561f8ad8.wav",
+        "text": "もうすぐ",
         "voiceId": "xya0RvcJtofTcFTOdX4E",
         "request": {
-            "text": "かさ",
+            "text": "もうすぐ",
             "model_id": "eleven_flash_v2_5",
             "seed": 42,
             "voice_settings": {
@@ -231,226 +238,32 @@
             "language_code": "ja",
             "apply_text_normalization": "off"
         },
-        "sha256": "f087ad4ea53f0e8087ef8753dd32c400221dc600c22387d79ef6253e3a4f8bba",
-        "frames": 15449
-    },
-    {
-        "path": "audio/18101b62b33b6b40f7c5b925209d7a744bc1ac8276dd766059f739523aa9a103.wav",
-        "text": "たまご",
         "inputs": [
             {
                 "language": "ja",
-                "label": "たまご",
+                "label": "もうすぐ",
                 "semanticRole": "lexicalUnit",
-                "readings": ["たまご"]
-            }
-        ],
-        "entries": ["ja:word:egg", "ja:word:complete-pronunciation-egg"],
-        "variants": [],
-        "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "request": {
-            "text": "たまご",
-            "model_id": "eleven_flash_v2_5",
-            "seed": 42,
-            "voice_settings": {
-                "stability": 0.9,
-                "similarity_boost": 0.85,
-                "style": 0,
-                "use_speaker_boost": true,
-                "speed": 0.9
-            },
-            "language_code": "ja",
-            "apply_text_normalization": "off"
-        },
-        "sha256": "d39a09bcc97a2263934132060d60e9177f1e4956ea83d4ed3c3a7b212bc50474",
-        "frames": 18793
-    },
-    {
-        "path": "audio/0525847ce0e98844c6520826eb72a29aff79ea2b302d65be5e698a818c232a74.wav",
-        "text": "ごはん",
-        "inputs": [
-            {
-                "language": "ja",
-                "label": "ごはん",
-                "semanticRole": "lexicalUnit",
-                "readings": ["ごはん"]
-            }
-        ],
-        "entries": ["ja:word:rice", "ja:word:complete-pronunciation-rice"],
-        "variants": [],
-        "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "request": {
-            "text": "ごはん",
-            "model_id": "eleven_flash_v2_5",
-            "seed": 42,
-            "voice_settings": {
-                "stability": 0.9,
-                "similarity_boost": 0.85,
-                "style": 0,
-                "use_speaker_boost": true,
-                "speed": 0.9
-            },
-            "language_code": "ja",
-            "apply_text_normalization": "off"
-        },
-        "sha256": "444bb78efe8f76de4889a4ad8c9a8fa3a136d41bafa1f8af1e12c0437bc40d77",
-        "frames": 17678
-    },
-    {
-        "path": "audio/82a3ba788239c7a0ca2d53b86f417200dcef1a8c2ef789e55b778f8870619105.wav",
-        "text": "さかな",
-        "inputs": [
-            {
-                "language": "ja",
-                "label": "さかな",
-                "semanticRole": "lexicalUnit",
-                "readings": ["さかな"]
-            }
-        ],
-        "entries": ["ja:word:fish", "ja:word:complete-pronunciation-fish"],
-        "variants": [],
-        "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "request": {
-            "text": "さかな",
-            "model_id": "eleven_flash_v2_5",
-            "seed": 42,
-            "voice_settings": {
-                "stability": 0.9,
-                "similarity_boost": 0.85,
-                "style": 0,
-                "use_speaker_boost": true,
-                "speed": 0.9
-            },
-            "language_code": "ja",
-            "apply_text_normalization": "off"
-        },
-        "sha256": "f05cad117a37fa0503f43b2a5bb25dfade1a644e11897d88afc01acb712065a8",
-        "frames": 18793
-    },
-    {
-        "path": "audio/00ec0592304ff726d9d3fb22ac205c45b371f5b6f4e991803871e2f1fb989e0d.wav",
-        "text": "バナナ",
-        "inputs": [
-            {
-                "language": "ja",
-                "label": "バナナ",
-                "semanticRole": "lexicalUnit",
-                "readings": ["ばなな"]
-            },
-            {
-                "language": "ja",
-                "label": "ばなな",
-                "semanticRole": "lexicalUnit",
-                "readings": ["ばなな"]
-            }
-        ],
-        "entries": ["ja:word:banana", "ja:word:complete-pronunciation-banana"],
-        "variants": [],
-        "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "request": {
-            "text": "バナナ",
-            "model_id": "eleven_flash_v2_5",
-            "seed": 42,
-            "voice_settings": {
-                "stability": 0.9,
-                "similarity_boost": 0.85,
-                "style": 0,
-                "use_speaker_boost": true,
-                "speed": 0.9
-            },
-            "language_code": "ja",
-            "apply_text_normalization": "off"
-        },
-        "sha256": "5d8b76975bbfd03dea75dd168abf64f1c24546da7412f67796e39cd63acd1553",
-        "frames": 18793
-    },
-    {
-        "path": "audio/180cad687bf405e0656c4c246f1611a63bda5d60df165bf34ac101d0250660cb.wav",
-        "text": "オレンジ",
-        "inputs": [
-            {
-                "language": "ja",
-                "label": "オレンジ",
-                "semanticRole": "lexicalUnit",
-                "readings": ["おれんじ"]
-            },
-            {
-                "language": "ja",
-                "label": "おれんじ",
-                "semanticRole": "lexicalUnit",
-                "readings": ["おれんじ"]
-            }
-        ],
-        "entries": ["ja:word:orange", "ja:word:complete-pronunciation-orange"],
-        "variants": [],
-        "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "request": {
-            "text": "オレンジ",
-            "model_id": "eleven_flash_v2_5",
-            "seed": 42,
-            "voice_settings": {
-                "stability": 0.9,
-                "similarity_boost": 0.85,
-                "style": 0,
-                "use_speaker_boost": true,
-                "speed": 0.9
-            },
-            "language_code": "ja",
-            "apply_text_normalization": "off"
-        },
-        "sha256": "2f3695cb1cfb94b9920bbd9d703218f11e3fe104b8fdb1d1a7665814ee97fad5",
-        "frames": 19907
-    },
-    {
-        "path": "audio/4816fc226e5f93f999ec202085242df82ad98109ef4ae0d506bdc58e7d88ae29.wav",
-        "text": "ぶどう",
-        "inputs": [
-            {
-                "language": "ja",
-                "label": "ぶどう",
-                "semanticRole": "lexicalUnit",
-                "readings": ["ぶどう"]
-            }
-        ],
-        "entries": ["ja:word:grape", "ja:word:complete-pronunciation-grape"],
-        "variants": [],
-        "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "request": {
-            "text": "ぶどう",
-            "model_id": "eleven_flash_v2_5",
-            "seed": 42,
-            "voice_settings": {
-                "stability": 0.9,
-                "similarity_boost": 0.85,
-                "style": 0,
-                "use_speaker_boost": true,
-                "speed": 0.9
-            },
-            "language_code": "ja",
-            "apply_text_normalization": "off"
-        },
-        "sha256": "e39c3f8c61154934fb74f160c3b3ba8587f7055211f4a94d2b28f58d8845903a",
-        "frames": 17678
-    },
-    {
-        "path": "audio/2433f5f193e33ca09f5e1fc8a0b405cc34234af0a4a7d5ddb2f9f3f98dcf8632.wav",
-        "text": "いちご",
-        "inputs": [
-            {
-                "language": "ja",
-                "label": "いちご",
-                "semanticRole": "lexicalUnit",
-                "readings": ["いちご"]
+                "readings": ["もうすぐ"]
             }
         ],
         "entries": [
-            "ja:word:strawberry",
-            "ja:word:complete-pronunciation-strawberry"
+            "ja:word:time-soon",
+            "ja:word:complete-pronunciation-time-soon"
         ],
         "variants": [],
+        "sha256": "edf8fddd5573c17427d2a2371aa36aa2b5c0c37d00c568432b04a187561f8ad8",
+        "frames": 21022,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "6f867c1b0dacaf3469976e1c41b4843e5f3d5f9b468e8225fd0af4ab1742e274"
+        }
+    },
+    {
+        "path": "audio/5bbd2d796927483105abf97a1d9832f53ac688dd339e701c3c05c600ca24a852.wav",
+        "text": "あとで",
         "voiceId": "xya0RvcJtofTcFTOdX4E",
         "request": {
-            "text": "いちご",
+            "text": "あとで",
             "model_id": "eleven_flash_v2_5",
             "seed": 42,
             "voice_settings": {
@@ -463,195 +276,32 @@
             "language_code": "ja",
             "apply_text_normalization": "off"
         },
-        "sha256": "d5908bb75828c06587b7e8ec1b894ba31cc4bf1fd0c25d4e5567f0b0089c0e9e",
-        "frames": 17678
-    },
-    {
-        "path": "audio/505c35aceec94dafe1173132d71b68705b5716c0bdb37b2fdd1b86838e769af0.wav",
-        "text": "レモン",
         "inputs": [
             {
                 "language": "ja",
-                "label": "レモン",
+                "label": "あとで",
                 "semanticRole": "lexicalUnit",
-                "readings": ["れもん"]
-            },
-            {
-                "language": "ja",
-                "label": "れもん",
-                "semanticRole": "lexicalUnit",
-                "readings": ["れもん"]
-            }
-        ],
-        "entries": ["ja:word:lemon", "ja:word:complete-pronunciation-lemon"],
-        "variants": [],
-        "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "request": {
-            "text": "レモン",
-            "model_id": "eleven_flash_v2_5",
-            "seed": 42,
-            "voice_settings": {
-                "stability": 0.9,
-                "similarity_boost": 0.85,
-                "style": 0,
-                "use_speaker_boost": true,
-                "speed": 0.9
-            },
-            "language_code": "ja",
-            "apply_text_normalization": "off"
-        },
-        "sha256": "3575041e60226d977e729e12484f3bf82dfef5e418794f9c58ef37b6b472f6cc",
-        "frames": 15449
-    },
-    {
-        "path": "audio/5e9465e460a95072fa6fdb149cb85b388244f138e7534d0d456047dc5999d099.wav",
-        "text": "にんじん",
-        "inputs": [
-            {
-                "language": "ja",
-                "label": "にんじん",
-                "semanticRole": "lexicalUnit",
-                "readings": ["にんじん"]
-            }
-        ],
-        "entries": ["ja:word:carrot", "ja:word:complete-pronunciation-carrot"],
-        "variants": [],
-        "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "request": {
-            "text": "にんじん",
-            "model_id": "eleven_flash_v2_5",
-            "seed": 42,
-            "voice_settings": {
-                "stability": 0.9,
-                "similarity_boost": 0.85,
-                "style": 0,
-                "use_speaker_boost": true,
-                "speed": 0.9
-            },
-            "language_code": "ja",
-            "apply_text_normalization": "off"
-        },
-        "sha256": "35b43aa3b6c4854979e47d3cb312f7c8a6ebe848b407562937c921f11bd36014",
-        "frames": 17678
-    },
-    {
-        "path": "audio/1f7fb2928b23bb46c1e2c92480efd389e428dfaa59609e8badfe638b35841c95.wav",
-        "text": "じゃがいも",
-        "inputs": [
-            {
-                "language": "ja",
-                "label": "じゃがいも",
-                "semanticRole": "lexicalUnit",
-                "readings": ["じゃがいも"]
-            }
-        ],
-        "entries": ["ja:word:potato", "ja:word:complete-pronunciation-potato"],
-        "variants": [],
-        "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "request": {
-            "text": "じゃがいも",
-            "model_id": "eleven_flash_v2_5",
-            "seed": 42,
-            "voice_settings": {
-                "stability": 0.9,
-                "similarity_boost": 0.85,
-                "style": 0,
-                "use_speaker_boost": true,
-                "speed": 0.9
-            },
-            "language_code": "ja",
-            "apply_text_normalization": "off"
-        },
-        "sha256": "c053aad09e7f4e469d77af2928e9d0efbd621701f46d577e183f0820ccadb8c5",
-        "frames": 18793
-    },
-    {
-        "path": "audio/bc58d1321a4c1bd8250a1d1f0b11600e6938576e4500b548fe715fc77f28cb78.wav",
-        "text": "トマト",
-        "inputs": [
-            {
-                "language": "ja",
-                "label": "トマト",
-                "semanticRole": "lexicalUnit",
-                "readings": ["とまと"]
-            },
-            {
-                "language": "ja",
-                "label": "とまと",
-                "semanticRole": "lexicalUnit",
-                "readings": ["とまと"]
-            }
-        ],
-        "entries": ["ja:word:tomato", "ja:word:complete-pronunciation-tomato"],
-        "variants": [],
-        "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "request": {
-            "text": "トマト",
-            "model_id": "eleven_flash_v2_5",
-            "seed": 42,
-            "voice_settings": {
-                "stability": 0.9,
-                "similarity_boost": 0.85,
-                "style": 0,
-                "use_speaker_boost": true,
-                "speed": 0.9
-            },
-            "language_code": "ja",
-            "apply_text_normalization": "off"
-        },
-        "sha256": "6f37b867d57ca76450246bf7942e5b990d211b833c91822111bebc9cd3062fad",
-        "frames": 18793
-    },
-    {
-        "path": "audio/bb3fbabf9d4b246595da1f3860eeceb9fefa8e494bf9940c4764509324b3d85b.wav",
-        "text": "たまねぎ",
-        "inputs": [
-            {
-                "language": "ja",
-                "label": "たまねぎ",
-                "semanticRole": "lexicalUnit",
-                "readings": ["たまねぎ"]
-            }
-        ],
-        "entries": ["ja:word:onion", "ja:word:complete-pronunciation-onion"],
-        "variants": [],
-        "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "request": {
-            "text": "たまねぎ",
-            "model_id": "eleven_flash_v2_5",
-            "seed": 42,
-            "voice_settings": {
-                "stability": 0.9,
-                "similarity_boost": 0.85,
-                "style": 0,
-                "use_speaker_boost": true,
-                "speed": 0.9
-            },
-            "language_code": "ja",
-            "apply_text_normalization": "off"
-        },
-        "sha256": "dc9140bb4473d660dd38ef6c87f350f184114c824b84729043739cd50fe31d5a",
-        "frames": 22137
-    },
-    {
-        "path": "audio/2f65b23ae605f43245668c47372481d282e92d3ae41dea16e14b17bd7d5bd2c7.wav",
-        "text": "きゅうり",
-        "inputs": [
-            {
-                "language": "ja",
-                "label": "きゅうり",
-                "semanticRole": "lexicalUnit",
-                "readings": ["きゅうり"]
+                "readings": ["あとで"]
             }
         ],
         "entries": [
-            "ja:word:cucumber",
-            "ja:word:complete-pronunciation-cucumber"
+            "ja:word:time-later",
+            "ja:word:complete-pronunciation-time-later"
         ],
         "variants": [],
+        "sha256": "5bbd2d796927483105abf97a1d9832f53ac688dd339e701c3c05c600ca24a852",
+        "frames": 18793,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "d4b2391e4045cb9bd7227aa1d1b0e85e8133a04815db5e03202a132a8ea800af"
+        }
+    },
+    {
+        "path": "audio/e4a3361230aec4d5182a82bcd1c6eaf2a052983c0b57c3047499c18b377ef965.wav",
+        "text": "あか",
         "voiceId": "xya0RvcJtofTcFTOdX4E",
         "request": {
-            "text": "きゅうり",
+            "text": "あか",
             "model_id": "eleven_flash_v2_5",
             "seed": 42,
             "voice_settings": {
@@ -664,7 +314,433 @@
             "language_code": "ja",
             "apply_text_normalization": "off"
         },
-        "sha256": "db47d4774bda19dbbc13220e8789a07ae07e5dcb65d2a516b2ca9d6f98abd52a",
-        "frames": 17678
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "あか",
+                "semanticRole": "lexicalUnit",
+                "readings": ["あか"]
+            }
+        ],
+        "entries": [
+            "ja:word:colors-red",
+            "ja:word:complete-pronunciation-colors-red"
+        ],
+        "variants": [],
+        "sha256": "e4a3361230aec4d5182a82bcd1c6eaf2a052983c0b57c3047499c18b377ef965",
+        "frames": 16564,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "7e33b85dacfd66ba1a0dcc2a1e6736424f1ca291cc0b996a4eef9957111a7e83"
+        }
+    },
+    {
+        "path": "audio/5777d6a0e1bdafa48efc4d0ce79aa0aa8c7915da9a7aa03f510cf15d4e53553e.wav",
+        "text": "あお",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "あお",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "あお",
+                "semanticRole": "lexicalUnit",
+                "readings": ["あお"]
+            }
+        ],
+        "entries": [
+            "ja:word:colors-blue",
+            "ja:word:complete-pronunciation-colors-blue"
+        ],
+        "variants": [],
+        "sha256": "5777d6a0e1bdafa48efc4d0ce79aa0aa8c7915da9a7aa03f510cf15d4e53553e",
+        "frames": 10991,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "40164a2fe96fc23b8a8c178bb7e79fe33e002fe8bf2f6859899ac3146fa7c5d2"
+        }
+    },
+    {
+        "path": "audio/46d2ea0693e98fdab243a8c57dc23caed4014550afad22ab2968c38a9fcdcba4.wav",
+        "text": "みどり",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "みどり",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "みどり",
+                "semanticRole": "lexicalUnit",
+                "readings": ["みどり"]
+            }
+        ],
+        "entries": [
+            "ja:word:colors-green",
+            "ja:word:complete-pronunciation-colors-green"
+        ],
+        "variants": [],
+        "sha256": "46d2ea0693e98fdab243a8c57dc23caed4014550afad22ab2968c38a9fcdcba4",
+        "frames": 17678,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "3cb07d8ae799ec117a260970f769279f2234cc1bff28417809bbb2fc1c093abd"
+        }
+    },
+    {
+        "path": "audio/5d69d89920b11e765b329ec91f2f77457ca4e1c0711ab0b8c7bedfa5d09fcd7d.wav",
+        "text": "きいろ",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "きいろ",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "きいろ",
+                "semanticRole": "lexicalUnit",
+                "readings": ["きいろ"]
+            }
+        ],
+        "entries": [
+            "ja:word:colors-yellow",
+            "ja:word:complete-pronunciation-colors-yellow"
+        ],
+        "variants": [],
+        "sha256": "5d69d89920b11e765b329ec91f2f77457ca4e1c0711ab0b8c7bedfa5d09fcd7d",
+        "frames": 18793,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "e55baaef89414f9bc8424d76d89b9d766f257be815d1a2b9eb86170cc2e746e4"
+        }
+    },
+    {
+        "path": "audio/e2270f4969cd49017543d654ec60b2f577c97a87f1418347d7644684eefb9373.wav",
+        "text": "えんぴつ",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "鉛筆",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "えんぴつ",
+                "semanticRole": "lexicalUnit",
+                "readings": ["えんぴつ"]
+            }
+        ],
+        "entries": [
+            "ja:word:school-pencil",
+            "ja:word:complete-pronunciation-school-pencil"
+        ],
+        "variants": [],
+        "sha256": "e2270f4969cd49017543d654ec60b2f577c97a87f1418347d7644684eefb9373",
+        "frames": 16564,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "6644ed8069de133460e8c1acacece5f8cb63d3b9f6142c732b435137c6c8ff25"
+        }
+    },
+    {
+        "path": "audio/f508f1ea96d0be8871bceeb4c3c6000cacdd0dacda78c221638586ff0e1f113e.wav",
+        "text": "ペン",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "ペン",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "ペン",
+                "semanticRole": "lexicalUnit",
+                "readings": ["ペン"]
+            }
+        ],
+        "entries": [
+            "ja:word:school-pen",
+            "ja:word:complete-pronunciation-school-pen"
+        ],
+        "variants": [],
+        "sha256": "f508f1ea96d0be8871bceeb4c3c6000cacdd0dacda78c221638586ff0e1f113e",
+        "frames": 12106,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "ae928b65e9ec6b3948063580353a1bc97ff1a5d10ed1c842115fbe5f0570219c"
+        }
+    },
+    {
+        "path": "audio/ff9f3df802fdc01fe019d09b6f8b2644903b3e195c0dfb655fc20f8c29b67187.wav",
+        "text": "ノート",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "ノート",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "ノート",
+                "semanticRole": "lexicalUnit",
+                "readings": ["ノート"]
+            }
+        ],
+        "entries": [
+            "ja:word:school-notebook",
+            "ja:word:complete-pronunciation-school-notebook"
+        ],
+        "variants": [],
+        "sha256": "ff9f3df802fdc01fe019d09b6f8b2644903b3e195c0dfb655fc20f8c29b67187",
+        "frames": 16564,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "81ed4c06020adbc1cc9b7bc38aefee32603e69038e87bab69143b15849425517"
+        }
+    },
+    {
+        "path": "audio/88d2854faa5453ff798894ba827610e5f00c9785366d6ba9f8f99c6071d19181.wav",
+        "text": "じょうぎ",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "定規",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "じょうぎ",
+                "semanticRole": "lexicalUnit",
+                "readings": ["じょうぎ"]
+            }
+        ],
+        "entries": [
+            "ja:word:school-ruler",
+            "ja:word:complete-pronunciation-school-ruler"
+        ],
+        "variants": [],
+        "sha256": "88d2854faa5453ff798894ba827610e5f00c9785366d6ba9f8f99c6071d19181",
+        "frames": 17678,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "e43b6cd2ec78ba37dc5e5ea8721869d07ca0bf6b56ddc6d995f406e5b7417c20"
+        }
+    },
+    {
+        "path": "audio/ea4109dfc7dba71a20f9c73caeeb3e59b9371f0f758fe6508f791ac54f5860d9.wav",
+        "text": "うさぎ",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "兎",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "うさぎ",
+                "semanticRole": "lexicalUnit",
+                "readings": ["うさぎ"]
+            }
+        ],
+        "entries": [
+            "ja:word:animals-rabbit",
+            "ja:word:complete-pronunciation-animals-rabbit"
+        ],
+        "variants": [],
+        "sha256": "ea4109dfc7dba71a20f9c73caeeb3e59b9371f0f758fe6508f791ac54f5860d9",
+        "frames": 13220,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "8171441fe1cd58a654a1a15e6c3c18ad79c4dda6252d98605e786774e4b4bc99"
+        }
+    },
+    {
+        "path": "audio/67d5ac64b05d965f0251d824662298cc6fd32b7f1703f6749a49432c508662f9.wav",
+        "text": "うし",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "牛",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "うし",
+                "semanticRole": "lexicalUnit",
+                "readings": ["うし"]
+            }
+        ],
+        "entries": [
+            "ja:word:animals-cow",
+            "ja:word:complete-pronunciation-animals-cow"
+        ],
+        "variants": [],
+        "sha256": "67d5ac64b05d965f0251d824662298cc6fd32b7f1703f6749a49432c508662f9",
+        "frames": 13220,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "622d5d6539a1a5c4639798614831271fa3572180364ccaebbd7299f401a228eb"
+        }
+    },
+    {
+        "path": "audio/eee14699f4b93c444f03b867e79632ccdd5a4d77530c6ad0a280ee4953fc1395.wav",
+        "text": "たいよう",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "太陽",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "たいよう",
+                "semanticRole": "lexicalUnit",
+                "readings": ["たいよう"]
+            }
+        ],
+        "entries": [
+            "ja:word:weather-sun",
+            "ja:word:complete-pronunciation-weather-sun"
+        ],
+        "variants": [],
+        "sha256": "eee14699f4b93c444f03b867e79632ccdd5a4d77530c6ad0a280ee4953fc1395",
+        "frames": 18793,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "55b5bb26fada138a9dc58747f49c23c884182197bd1c421fb1acbc7ddc46b5b6"
+        }
+    },
+    {
+        "path": "audio/a764a56b7772e8e9e1e8c514a1eed19e7c3e1243e571953aa22e4a40e8cea1c8.wav",
+        "text": "ゆき",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "雪",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [],
+        "entries": [],
+        "variants": [],
+        "sha256": "a764a56b7772e8e9e1e8c514a1eed19e7c3e1243e571953aa22e4a40e8cea1c8",
+        "frames": 16564,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "adb08578513ea4a24cca8a1c7ac5f73dc6e8a534e4c187012d7b22c312bcee15",
+            "publication": "Retained generated candidate; runtime reuses existing exact ゆき pronunciation to avoid lookup collision."
+        }
     }
 ]

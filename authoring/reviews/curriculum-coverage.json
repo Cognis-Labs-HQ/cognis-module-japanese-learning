@@ -1,0 +1,63 @@
+{
+    "date": "2026-10-19",
+    "baselineCommit": "1e6629e42312c874bc985c417b02476ec7503471",
+    "scope": "Visible seed vocabulary only; excludes hidden readings, form supports, dictionary reference inventories and composite sentences. Existing classifications are counted as stored, not independently reclassified.",
+    "baselineClasses": {
+        "lexical:noun": 152,
+        "lexical:pronoun": 3,
+        "lexical:verb": 18,
+        "lexical:adjective": 4,
+        "lexical:adverb": 6,
+        "lexical:copula": 2,
+        "lexical:conjunction": 8,
+        "lexical:counter": 1
+    },
+    "selection": [
+        {
+            "theme": "actions",
+            "reason": "Four missing high-utility action predicates; movement and emotional expression expand reusable subject-verb practice."
+        },
+        {
+            "theme": "qualities",
+            "reason": "Four missing adjective predicates; two contrast pairs expand descriptions and comparison, especially sparse Japanese adjective coverage."
+        }
+    ],
+    "illustrationPolicy": "Actions use directly observable poses. Weight uses lifting effort and box contents. Difficulty uses explicit task context; pictures are examples of a selected sense and do not prove universal ease or difficulty. Reject mismatched puzzle geometry.",
+    "remainingGaps": [
+        {
+            "area": "frequency",
+            "candidates": [
+                "often / よく",
+                "sometimes / ときどき",
+                "usually / たいてい",
+                "again / また"
+            ],
+            "approach": "Check meanings and prior entries before adding; prefer repeated contextual scenes or examples over misleading single-event pictures."
+        },
+        {
+            "area": "social exchanges",
+            "candidates": [
+                "apologies",
+                "thanks and responses",
+                "greetings by time of day",
+                "requests for repetition"
+            ],
+            "approach": "Audit existing full sentences as well as lexical entries; use conversational roles and register notes."
+        },
+        {
+            "area": "core Japanese predicates",
+            "candidates": ["read", "write", "speak", "sleep"],
+            "approach": "Check kanji and kana lexical coverage and form audio; prioritize natural everyday clauses."
+        }
+    ],
+    "resultClasses": {
+        "lexical:noun": 152,
+        "lexical:pronoun": 3,
+        "lexical:verb": 22,
+        "lexical:adjective": 8,
+        "lexical:adverb": 6,
+        "lexical:copula": 2,
+        "lexical:conjunction": 8,
+        "lexical:counter": 1
+    }
+}

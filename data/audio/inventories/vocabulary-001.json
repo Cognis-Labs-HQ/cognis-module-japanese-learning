@@ -661,5 +661,82 @@
         "variants": [],
         "sha256": "955c1fb4b32bc872b4b39fdd87e2529fb163696e1f682e9022924ef711c744a3",
         "frames": 12519
+    },
+    {
+        "path": "audio/2a40463469bd551859d6511f36057169c3dee27d696e1631909fe67818ca2c45.wav",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "text": "くるま",
+        "request": {
+            "text": "くるま",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "車",
+                "semanticRole": "compoundWritingUnit",
+                "readings": ["くるま"]
+            },
+            {
+                "language": "ja",
+                "label": "くるま",
+                "semanticRole": "lexicalUnit",
+                "readings": ["くるま"]
+            },
+            {
+                "language": "ja",
+                "label": "車",
+                "semanticRole": "lexicalUnit",
+                "readings": ["くるま"]
+            }
+        ],
+        "entries": [
+            "ja:kanji:core-e8bb8a",
+            "ja:word:complete-pronunciation-kuruma",
+            "ja:word:kanji-reading-e8bb8a-02",
+            "ja:word:kuruma"
+        ],
+        "variants": [],
+        "sha256": "d671387a6e7a2287f029ad896c7ff803d4ec22140a64d859560141a34f116204",
+        "frames": 13095
+    },
+    {
+        "path": "audio/1da7a8b65383046038db3ec73658bd2d9d1a5a41ad5ccd551807f6eee1adada1.wav",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "text": "でん",
+        "request": {
+            "text": "でん",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "電",
+                "semanticRole": "compoundWritingUnit",
+                "readings": ["でん"]
+            }
+        ],
+        "entries": ["ja:kanji:core-e99bbb"],
+        "variants": [],
+        "sha256": "15a93fa0628c5bf3ff23fc29f4cf14eceb762b84929ca3310e0fde5ef3c8c81a",
+        "frames": 10241
     }
 ]

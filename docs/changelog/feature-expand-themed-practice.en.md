@@ -138,6 +138,14 @@ Add tree, forest, leaf, stone with four inspected illustrations per module, four
 
 Add fridge, oven, sink, shower with four inspected illustrations per module, four English plural forms, eight independently authored examples and two decks. Review native readings and localized sense distinctions, preserve exact constituent PCM and all earlier examples, and update cumulative vocabulary accounting. Listening remains unverified.
 
+## Everyday Actions
+
+Add jump, swim, laugh and cry with inspected illustrations and natural examples. Cover sixteen English form bindings and thirty-two Japanese forms, including irregular swim and Japanese consonant changes. Keep exact constituent audio, source evidence and prior content. Listening remains unverified.
+
+## Weight and Difficulty
+
+Add heavy, light, easy and difficult with contextual illustrations and sense notes. Cover eight English degree forms and twelve Japanese i-adjective forms. Examples use adjective predicates and nominalized activities. Update the curriculum coverage audit and cumulative totals. Listening remains unverified.
+
 ## Commits
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)

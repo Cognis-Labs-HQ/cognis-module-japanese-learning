@@ -67,6 +67,37 @@
         "vocabularyAudit": "authoring/reviews/travel/index.json"
     },
     {
+        "theme": "actions",
+        "newDistinctVocabularyCount": 4,
+        "vocabulary": [
+            {
+                "entryId": "ja:word:actions-jump",
+                "label": "とぶ"
+            },
+            {
+                "entryId": "ja:word:actions-swim",
+                "label": "およぐ"
+            },
+            {
+                "entryId": "ja:word:actions-laugh",
+                "label": "わらう"
+            },
+            {
+                "entryId": "ja:word:actions-cry",
+                "label": "なく"
+            }
+        ],
+        "newExampleCount": 4,
+        "exampleIds": [
+            "ja:sentence:actions-example-jump",
+            "ja:sentence:actions-example-swim",
+            "ja:sentence:actions-example-laugh",
+            "ja:sentence:actions-example-cry"
+        ],
+        "recordedGrammaticalFormCount": 32,
+        "vocabularyAudit": "authoring/reviews/actions-vocabulary.json"
+    },
+    {
         "theme": "animals",
         "newDistinctVocabularyCount": 4,
         "vocabulary": [
@@ -313,36 +344,5 @@
         ],
         "recordedGrammaticalFormCount": 0,
         "vocabularyAudit": "authoring/reviews/furnishings-vocabulary.json"
-    },
-    {
-        "theme": "household",
-        "newDistinctVocabularyCount": 4,
-        "vocabulary": [
-            {
-                "entryId": "ja:word:household-wash",
-                "label": "あらう"
-            },
-            {
-                "entryId": "ja:word:household-cook",
-                "label": "りょうりする"
-            },
-            {
-                "entryId": "ja:word:household-clean",
-                "label": "そうじする"
-            },
-            {
-                "entryId": "ja:word:household-dry",
-                "label": "かわかす"
-            }
-        ],
-        "newExampleCount": 4,
-        "exampleIds": [
-            "ja:sentence:household-example-wash",
-            "ja:sentence:household-example-cook",
-            "ja:sentence:household-example-clean",
-            "ja:sentence:household-example-dry"
-        ],
-        "recordedGrammaticalFormCount": 32,
-        "vocabularyAudit": "authoring/reviews/household-vocabulary.json"
     }
 ]
