@@ -218,6 +218,10 @@ Fuchs, Bär, Affe und Elefant erhalten vier unterschiedliche Beispiele zu Lebens
 
 Push und pull mit geprüften regelmäßigen englischen Endungen und japanischen Su-/Ku-Godan-Formen, visuell geprüften Handlungsbildern und vier unterschiedlichen Beispielen ergänzt. Die Beispiele behandeln Bitte, Vergangenheit, laufende Handlung, Art und Weise, Gegensatz und spätere Handlung. Jede Sprache erhält ein eigenes Kartenset. Exakte Aufnahmen der Bestandteile und Quellenbelege bleiben erhalten; die Hörprüfung steht aus.
 
+## Längen beschreiben und vergleichen
+
+Long und short mit englischen Komparativ- und Superlativaufnahmen, japanischen I-Adjektivformen und geprüften Längenvergleichen ergänzt. Vier verschiedene Beispiele behandeln Beschreibung, benötigte oder gekaufte Gegenstände, Vergleich oder Grad sowie Ort. Hinweise unterscheiden Länge von Körpergröße und erhalten den Konsonanten in longer und longest. Aufnahmen und Bedeutungen in vier Sprachen sind nachvollziehbar; die Hörprüfung steht aus.
+
 ## Commits
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)
