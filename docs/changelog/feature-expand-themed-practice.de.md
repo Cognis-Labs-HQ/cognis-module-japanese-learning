@@ -38,6 +38,10 @@ Die deutschen, indonesischen und japanischen Wörterbuchbedeutungen für ankomme
 
 Die freigegebenen Reisewörter und Formen werden mit den festgelegten Stimmen erzeugt. Quell-PCM und Anfragedaten bleiben erhalten; Reise- und noch offene Einkaufssätze werden aus den genauen Bestandteilen zusammengesetzt. Für die Abonnementabfrage fehlt user_read, die Sprachsynthese funktioniert. Die Hörprüfung bleibt ausdrücklich ausstehend.
 
+## Nächster Wortschatz vorbereitet
+
+Vier neue Zeitangaben für Anfänger sind mit Lesungen, übersetzten Bedeutungen, Kontextbeispielen und einem Deckentwurf vorbereitet. Sie bleiben außerhalb der Laufzeitinhalte, bis eigene Illustrationen erzeugt und visuell geprüft sind.
+
 ## Commits
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)

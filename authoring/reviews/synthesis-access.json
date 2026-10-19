@@ -16,7 +16,8 @@
         "error": {
             "status": "missing_permissions",
             "message": "The API key you used is missing the permission user_read to execute this operation."
-        }
+        },
+        "conclusion": "Restricted key successfully authenticated TTS. HTTP 401 on subscription was endpoint-specific missing_permissions/user_read."
     },
     "generation": {
         "requestsSent": 44,
@@ -40,7 +41,7 @@
         "existingExactTextCacheHits": 0,
         "totalRequests": 76,
         "totalCharacters": 423,
-        "credits": "Cannot verify account quota or voice-specific pricing while authentication returns 401. No paid request attempted."
+        "credits": "Completed TTS requests reported character-cost totals of 115 English and 116 Japanese (231 combined). Subscription quota remains unreadable because this key lacks user_read; that is not a TTS authentication failure."
     },
     "independentWork": "Travel word/form recordings and exact constituent sentence compositions now available; listening unverified."
 }
