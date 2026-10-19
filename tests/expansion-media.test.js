@@ -26,6 +26,7 @@ for (const theme of [
     "belongings",
     "stationery",
     "posture",
+    "wildlife",
     "containers",
     "exchange",
     "reading-time",

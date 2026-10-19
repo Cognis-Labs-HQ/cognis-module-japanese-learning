@@ -210,6 +210,10 @@ Sit und stand samt unregelmäßigen englischen und japanischen Godan-Formen, gep
 
 Vier einzeln verfasste Beispiele zum Abwaschen, Lesen, Sitzen am Tisch und zu persönlichen Gegenständen ergänzt. Japanische Beispiele üben außerdem, einem Freund Suppe zu geben und einen Schlüssel in einer Schachtel zu finden. Vorhandene Vokabeln und exakte Audiobausteine werden wiederverwendet; neue Bilder oder Anbieteranfragen sind nicht erforderlich.
 
+## Wildtiere im Zusammenhang
+
+Fuchs, Bär, Affe und Elefant erhalten vier unterschiedliche Beispiele zu Lebensraum, Bewegung, Beobachtung und Größe sowie ein eigenes Startkartenset. Jede Originalillustration und jede endgültige JPEG-Datei wurde visuell geprüft. Bedeutungen und Hinweise zu Artenbeispielen, Substantivbedeutungen und dem Langvokal in ぞう liegen in vier Sprachen vor. Alle bisherigen Audioauswahlen werden beim Ausbau bytegenau verglichen. Neue Sprachaufnahmen bleiben ausdrücklich ohne Hörprüfung.
+
 ## Commits
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)

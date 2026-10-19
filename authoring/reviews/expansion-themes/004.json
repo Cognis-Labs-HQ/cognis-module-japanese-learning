@@ -150,6 +150,37 @@
         "vocabularyAudit": "authoring/reviews/weather-vocabulary.json"
     },
     {
+        "theme": "wildlife",
+        "newDistinctVocabularyCount": 4,
+        "vocabulary": [
+            {
+                "entryId": "ja:word:wildlife-fox",
+                "label": "きつね"
+            },
+            {
+                "entryId": "ja:word:wildlife-bear",
+                "label": "くま"
+            },
+            {
+                "entryId": "ja:word:wildlife-monkey",
+                "label": "さる"
+            },
+            {
+                "entryId": "ja:word:wildlife-elephant",
+                "label": "ぞう"
+            }
+        ],
+        "newExampleCount": 4,
+        "exampleIds": [
+            "ja:sentence:wildlife-example-fox-habitat",
+            "ja:sentence:wildlife-example-bear-movement",
+            "ja:sentence:wildlife-example-monkey-observation",
+            "ja:sentence:wildlife-example-elephant-size"
+        ],
+        "recordedGrammaticalFormCount": 0,
+        "vocabularyAudit": "authoring/reviews/wildlife-vocabulary.json"
+    },
+    {
         "theme": "mealtime",
         "newDistinctVocabularyCount": 0,
         "vocabulary": [],
@@ -212,21 +243,5 @@
         ],
         "recordedGrammaticalFormCount": 0,
         "vocabularyAudit": "authoring/reviews/daily-needs-sentences.json"
-    },
-    {
-        "theme": "classroom",
-        "newDistinctVocabularyCount": 0,
-        "vocabulary": [],
-        "newExampleCount": 6,
-        "exampleIds": [
-            "ja:sentence:classroom-1",
-            "ja:sentence:classroom-2",
-            "ja:sentence:classroom-3",
-            "ja:sentence:classroom-4",
-            "ja:sentence:classroom-5",
-            "ja:sentence:classroom-6"
-        ],
-        "recordedGrammaticalFormCount": 0,
-        "vocabularyAudit": "authoring/reviews/classroom-sentences.json"
     }
 ]
