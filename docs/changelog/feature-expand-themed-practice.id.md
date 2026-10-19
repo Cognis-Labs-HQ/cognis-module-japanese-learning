@@ -90,6 +90,10 @@ Tambahkan enam contoh dan satu dek per modul tentang air, alat makan, lokasi, re
 
 Tambahkan sabun, handuk, sikat gigi, dan pasta gigi dengan empat gambar yang diperiksa per modul, rekaman kata yang tepat, dua rekaman jamak Inggris, dan delapan contoh. Catatan lokal menjelaskan keterhitungan dan bacaan Jepang. Catat asal jumlah gambar serta batas impor Jepang saat ini; pertahankan semua kalimat dan audio perubahan bentuk yang ada. Pemeriksaan pendengaran belum dilakukan.
 
+## Bepergian
+
+Tambahkan pesawat terbang, perahu, taksi, dan sepeda motor dengan empat gambar yang diperiksa per modul, empat bentuk jamak Inggris, delapan contoh alami, dan dek transportasi. Jelaskan variasi nama Inggris, vokal panjang Jepang, makna perahu kecil, dan bentukan Jepang オートバイ. Gunakan suara yang ditetapkan dan segmen audio persis. Pertahankan semua kalimat serta rekaman perubahan bentuk sebelumnya. Pemeriksaan pendengaran belum dilakukan.
+
 ## Komit
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)

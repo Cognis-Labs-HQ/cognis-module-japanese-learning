@@ -1,0 +1,162 @@
+[
+    {
+        "id": "ja:sentence:transport-example-airplane",
+        "label": "ひこうきで日本に行く",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/6e5b04b187a04bf8e1dde6ba6e232dcfe7f2a003b2cd65add06f8b021bc96d3d.wav",
+            "pronunciation": ["ひこうきでにほんにいく"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:transport-airplane",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:de",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:nihon",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:ni",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:iku",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:transport-example-airplane",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:transport-example-boat",
+        "label": "川にボートがある",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/617b54d62f3c3f0527c2051140ac468845a32189db5d2da40d44a5fee9f75398.wav",
+            "pronunciation": ["かわにボートがある"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:kawa-river",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:ni",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:transport-boat",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:ga",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:aru-exist",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:transport-example-boat",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:transport-example-taxi",
+        "label": "えきでタクシーをまつ",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/37ec388c4e7679aabf18281493f60a1ed58b37907c8cf5754c063229ca53b2ef.wav",
+            "pronunciation": ["えきでタクシーをまつ"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:travel-station",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:de",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:transport-taxi",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:travel-wait",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:transport-example-taxi",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:transport-example-motorcycle",
+        "label": "オートバイはどこですか",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/2e7a09802e9c581dc969111200c4099f554bb8fb2b7fb98d4fdf071ec2fece87.wav",
+            "pronunciation": ["オートバイはどこですか"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:transport-motorcycle",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:doko",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:word:desu",
+                "relation": "words",
+                "position": 3
+            },
+            {
+                "entryId": "ja:particle:ka",
+                "relation": "particles",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:transport-example-motorcycle",
+                "relation": "definitions"
+            }
+        ]
+    }
+]
