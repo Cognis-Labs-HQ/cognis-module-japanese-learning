@@ -230,6 +230,10 @@ Add Sorry and Welcome with ごめんなさい and ようこそ, inspected social
 
 Add cut and fold with exact English and Japanese form recordings, corrected and inspected action illustrations, and four varied examples. English also gains paper as a material noun; Japanese reuses its existing 紙 card. Notes distinguish godan 切る from ichidan 着る and paper-folding 折る from other senses. Identical cut forms reuse cached audio. Source evidence and rejected artwork are retained; listening remains unverified.
 
+## Food preparation and weather conversations
+
+Add eight individually reviewed examples and two practice decks using existing vocabulary and exact cached constituent recordings. Food preparation covers washing, cutting, coordinated ingredients and locating potatoes; weather practice covers rain, umbrellas, description and seasonal preference. English reuses the exact cuts form, while Japanese preserves complete readings and particle pronunciation. No new vocabulary, illustrations or provider requests are counted. Source and per-composition evidence are retained; listening remains unverified.
+
 ## Commits
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)

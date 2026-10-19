@@ -25,10 +25,19 @@ for (const theme of [
     "study-habits",
     "plans",
     "home-practice",
+    "food-preparation",
+    "weather-talk",
 ].filter((theme) => auditIndex[theme + "Publication"])) {
     test(`${theme} practice preserves reviewed meanings and distinguishes missing from unverified audio`, async () => {
         const review = await load(auditIndex[theme + "Publication"]);
-        assert.equal(review.length, theme === "home-practice" ? 4 : 6);
+        assert.equal(
+            review.length,
+            ["home-practice", "food-preparation", "weather-talk"].includes(
+                theme,
+            )
+                ? 4
+                : 6,
+        );
         assert.deepEqual(
             decks.find(({ key }) => key === theme + "-practice")
                 .sourceRecordIds,

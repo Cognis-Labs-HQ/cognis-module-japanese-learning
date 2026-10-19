@@ -230,6 +230,10 @@ Sorry und Welcome sowie ごめんなさい und ようこそ mit geprüften Allta
 
 Cut und fold mit exakten englischen und japanischen Formen, korrigierten und geprüften Handlungsbildern und vier verschiedenen Beispielen ergänzt. Englisch erhält zusätzlich paper als Stoffbezeichnung; Japanisch verwendet die vorhandene Karte 紙. Hinweise unterscheiden Godan 切る von Ichidan 着る sowie Papierfalten mit 折る von anderen Bedeutungen. Gleiche cut-Formen nutzen vorhandene Aufnahmen. Quellen und verworfene Bilder bleiben erhalten; die Hörprüfung steht aus.
 
+## Essensvorbereitung und Wettergespräche
+
+Acht einzeln geprüfte Beispiele und zwei Übungsstapel mit vorhandenem Wortschatz und exakten gespeicherten Wortaufnahmen ergänzt. Die Essensvorbereitung umfasst Waschen, Schneiden, verbundene Zutaten und die Suche nach Kartoffeln; die Wetterübungen behandeln Regen, Regenschirme, Beschreibungen und Vorlieben für Jahreszeiten. Englisch verwendet die genaue Form cuts, Japanisch behält vollständige Lesungen und Partikelaussprache. Es werden keine neuen Wörter, Bilder oder Anbieteranfragen gezählt. Quellen und Nachweise je Satzaufnahme bleiben erhalten; die Hörprüfung steht aus.
+
 ## Commits
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)

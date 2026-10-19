@@ -1,0 +1,302 @@
+[
+    {
+        "entryId": "ja:sentence:food-preparation-example-wash-cucumber",
+        "label": "きゅうりをあらう",
+        "reading": "きゅうりをあらう",
+        "meanings": {
+            "en": "I wash a cucumber.",
+            "de": "Ich wasche eine Gurke.",
+            "id": "Saya mencuci mentimun.",
+            "ja": "きゅうりを洗う。"
+        },
+        "constituentIds": [
+            "ja:word:cucumber",
+            "ja:particle:wo",
+            "ja:word:household-wash"
+        ],
+        "selectedTransformations": [],
+        "audioPath": "audio/6ade365dae3ac8c5103d392ffa88aa0d3083fba6b3ea3a9c8679e1748fd38b5d.wav",
+        "sha256": "6ade365dae3ac8c5103d392ffa88aa0d3083fba6b3ea3a9c8679e1748fd38b5d",
+        "audioAvailability": "bundled-composition",
+        "listening": "unverified-not-performed",
+        "textReview": "Plain nonpast あらう with cucumber as object marked by を (spoken o). きゅうり retains small ゅ and the long vowel きゅう. Omitted subject is interpreted as I in this practice context.",
+        "sourceAudioEvidence": [
+            {
+                "entryId": "ja:word:cucumber",
+                "path": "audio/2f65b23ae605f43245668c47372481d282e92d3ae41dea16e14b17bd7d5bd2c7.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "きゅうり",
+                "sha256": "1b0daee412df02d56821fe572250a5b216cd454a5c04d13d73e376242a6d5787"
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "お",
+                "sha256": "5a89703412d90e8bc518242ca91fa93b5ea164aa2d3ff9b6e0b5996b7695f8e8"
+            },
+            {
+                "entryId": "ja:word:household-wash",
+                "path": "audio/55900a3049492f3fd4edd4b8fb6ba3ff1650cde9ed4b3024f002f08659bf5c2a.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "洗う",
+                "sha256": "65b9ebca56c335507ddd77507006428b689967d993a51e5f7c742abee2f8bc8a"
+            }
+        ],
+        "peak": 13005,
+        "fullScaleSamples": 0,
+        "sources": [
+            {
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/cook_1",
+                "scope": "Transitive cooking sense and food collocations",
+                "checked": "2026-10-19"
+            },
+            {
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/wash_1",
+                "scope": "Transitive washing sense",
+                "checked": "2026-10-19"
+            },
+            {
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/cut_1",
+                "scope": "Previously checked cut/cuts form; retained craft vocabulary audit",
+                "checked": "2026-10-19"
+            }
+        ],
+        "reviewedDate": "2026-10-19",
+        "newProviderRequests": 0,
+        "newImages": 0
+    },
+    {
+        "entryId": "ja:sentence:food-preparation-example-cut-onion",
+        "label": "たまねぎをきる",
+        "reading": "たまねぎをきる",
+        "meanings": {
+            "en": "I cut an onion.",
+            "de": "Ich schneide eine Zwiebel.",
+            "id": "Saya memotong bawang bombai.",
+            "ja": "たまねぎを切る。"
+        },
+        "constituentIds": [
+            "ja:word:onion",
+            "ja:particle:wo",
+            "ja:word:craft-cut"
+        ],
+        "selectedTransformations": [],
+        "audioPath": "audio/b42701791b2b22ceaa4f97f74adbe86b7e0124af805f60abf56a065d54f1f619.wav",
+        "sha256": "b42701791b2b22ceaa4f97f74adbe86b7e0124af805f60abf56a065d54f1f619",
+        "audioAvailability": "bundled-composition",
+        "listening": "unverified-not-performed",
+        "textReview": "English she requires cuts, whose existing recorded third-person form is used. Japanese plain nonpast 切る is the transitive cutting verb; omitted subject is interpreted as I in the supplied context. Onion is たまねぎ, not spring onion.",
+        "sourceAudioEvidence": [
+            {
+                "entryId": "ja:word:onion",
+                "path": "audio/bb3fbabf9d4b246595da1f3860eeceb9fefa8e494bf9940c4764509324b3d85b.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "たまねぎ",
+                "sha256": "b22b050f70abec229d0ffab24be9735a7ddbe7eee6229f46daaf7564b827c5e8"
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "お",
+                "sha256": "5a89703412d90e8bc518242ca91fa93b5ea164aa2d3ff9b6e0b5996b7695f8e8"
+            },
+            {
+                "entryId": "ja:word:craft-cut",
+                "path": "audio/7b049724915f9f114fd0cc06aa45625d018577a4b19558ccc83b480b6f71b332.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "切る",
+                "sha256": "d57504340b8eda38b8d384c7b89546e4bead444f4b9d39602d5f8085eb65baf6"
+            }
+        ],
+        "peak": 26511,
+        "fullScaleSamples": 0,
+        "sources": [
+            {
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/cook_1",
+                "scope": "Transitive cooking sense and food collocations",
+                "checked": "2026-10-19"
+            },
+            {
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/wash_1",
+                "scope": "Transitive washing sense",
+                "checked": "2026-10-19"
+            },
+            {
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/cut_1",
+                "scope": "Previously checked cut/cuts form; retained craft vocabulary audit",
+                "checked": "2026-10-19"
+            }
+        ],
+        "reviewedDate": "2026-10-19",
+        "newProviderRequests": 0,
+        "newImages": 0
+    },
+    {
+        "entryId": "ja:sentence:food-preparation-example-cook-ingredients",
+        "label": "とりにくときのこをりょうりする",
+        "reading": "とりにくときのこをりょうりする",
+        "meanings": {
+            "en": "I cook chicken and mushrooms.",
+            "de": "Ich koche Hähnchen und Pilze.",
+            "id": "Saya memasak ayam dan jamur.",
+            "ja": "鶏肉ときのこを料理する。"
+        },
+        "constituentIds": [
+            "ja:word:chicken",
+            "ja:particle:to",
+            "ja:word:vegetables-mushroom",
+            "ja:particle:wo",
+            "ja:word:household-cook"
+        ],
+        "selectedTransformations": [],
+        "audioPath": "audio/1a8595a991d04dc93d53229c1de1c9722f8cfe8b04793e9542afdfec02e53832.wav",
+        "sha256": "1a8595a991d04dc93d53229c1de1c9722f8cfe8b04793e9542afdfec02e53832",
+        "audioAvailability": "bundled-composition",
+        "listening": "unverified-not-performed",
+        "textReview": "The particle と coordinates chicken meat and mushrooms; を marks the coordinated object of りょうりする. Complete reading preserves small ょ and the long vowel りょう. No rice/cooked-rice sense ambiguity is introduced.",
+        "sourceAudioEvidence": [
+            {
+                "entryId": "ja:word:chicken",
+                "path": "audio/1156ff4b5879e4b8fa52d3965c4f74a49a0daa598ecd1e3944db2695b4d737a1.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "とりにく",
+                "sha256": "d2fd1d72de05a90549ef1cc3ed96569d0aa21699d9363f20d64f2b745dc0350f"
+            },
+            {
+                "entryId": "ja:particle:to",
+                "path": "audio/606f3c1823245eee4195e2195e8189dad7df8cd21b7e6550a55b5c56e585916b.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "と",
+                "sha256": "1247391555d943254a995ac5ac2170d9039db38188a26eb6e783a7d4ee67bea5"
+            },
+            {
+                "entryId": "ja:word:vegetables-mushroom",
+                "path": "audio/d399383db51952a03ad3238f869ab16bf4a4d586891c15c156f3c28e8f1b76a1.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "キノコ",
+                "sha256": "c434de294ebf32901dee85abf319a4b6b490c793ea0ef7b3f55f124f700441c7"
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "お",
+                "sha256": "5a89703412d90e8bc518242ca91fa93b5ea164aa2d3ff9b6e0b5996b7695f8e8"
+            },
+            {
+                "entryId": "ja:word:household-cook",
+                "path": "audio/e33686384389e80ef4dd0db97018d79d8b5ee187f17ec85723bd40a420521f2a.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "料理する",
+                "sha256": "f761b5a3672bd35c08c9794037476f6dcb8bd94ac4251002553a596d5edaaa9c"
+            }
+        ],
+        "peak": 16653,
+        "fullScaleSamples": 0,
+        "sources": [
+            {
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/cook_1",
+                "scope": "Transitive cooking sense and food collocations",
+                "checked": "2026-10-19"
+            },
+            {
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/wash_1",
+                "scope": "Transitive washing sense",
+                "checked": "2026-10-19"
+            },
+            {
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/cut_1",
+                "scope": "Previously checked cut/cuts form; retained craft vocabulary audit",
+                "checked": "2026-10-19"
+            }
+        ],
+        "reviewedDate": "2026-10-19",
+        "newProviderRequests": 0,
+        "newImages": 0
+    },
+    {
+        "entryId": "ja:sentence:food-preparation-example-find-potatoes",
+        "label": "じゃがいもはどこですか",
+        "reading": "じゃがいもはどこですか",
+        "meanings": {
+            "en": "Where are the potatoes?",
+            "de": "Wo sind die Kartoffeln?",
+            "id": "Di mana kentangnya?",
+            "ja": "じゃがいもはどこですか。"
+        },
+        "constituentIds": [
+            "ja:word:potato",
+            "ja:particle:wa",
+            "ja:word:doko",
+            "ja:word:desu",
+            "ja:particle:ka"
+        ],
+        "selectedTransformations": [],
+        "audioPath": "audio/431b11dd9ed577cddb35bc4ea4c215448ace15d50a5405cdbd9c14ddbf42629d.wav",
+        "sha256": "431b11dd9ed577cddb35bc4ea4c215448ace15d50a5405cdbd9c14ddbf42629d",
+        "audioAvailability": "bundled-composition",
+        "listening": "unverified-not-performed",
+        "textReview": "Topic noun + は + どこですか asks location. Japanese does not mark singular/plural here; translations choose plural potatoes as a kitchen-context interpretation. じゃ retains small ゃ; は is spoken wa.",
+        "sourceAudioEvidence": [
+            {
+                "entryId": "ja:word:potato",
+                "path": "audio/1f7fb2928b23bb46c1e2c92480efd389e428dfaa59609e8badfe638b35841c95.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "じゃがいも",
+                "sha256": "c1c113d9a9bab2840f7a74bd35f7d0be01119628612ea49c2a260edfb117a955"
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "path": "audio/d7c9e57654e559dfba3bd6f78c2f27416a61f8b28d56145d84a62fe25b70c94d.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "わ",
+                "sha256": "03b8d36aab677f09d2ecaad611a22b15785f0c717e6d6983dc5ef47296670c54"
+            },
+            {
+                "entryId": "ja:word:doko",
+                "path": "audio/d8e8d38bb87e5846270a85a0031c99310edbc497f365f2a8fbb4ac49a10ddba3.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "どこ",
+                "sha256": "e7b6f83c09eb78672e721a848657edbb8e685f0b894c90928134c3f0d654df66"
+            },
+            {
+                "entryId": "ja:word:desu",
+                "path": "audio/2959a5dcab722b7d5c39f67845f1d6a3d6ede5f23e554e9547bca0e6cb62c56b.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "です",
+                "sha256": "d0234f8c988b83fef6bd73c37296bf1a45c0e71f6afc96ac32aa4213e3deb89e"
+            },
+            {
+                "entryId": "ja:particle:ka",
+                "path": "audio/43ee7a601b45742716f8c1c424c576992297faf0a3ec140047ad194b682f7edf.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "か",
+                "sha256": "da467a24b8035b0b6dc37491478a905c5c082db3d216ea1fc1553e02cd841f39"
+            }
+        ],
+        "peak": 26869,
+        "fullScaleSamples": 0,
+        "sources": [
+            {
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/cook_1",
+                "scope": "Transitive cooking sense and food collocations",
+                "checked": "2026-10-19"
+            },
+            {
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/wash_1",
+                "scope": "Transitive washing sense",
+                "checked": "2026-10-19"
+            },
+            {
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/cut_1",
+                "scope": "Previously checked cut/cuts form; retained craft vocabulary audit",
+                "checked": "2026-10-19"
+            }
+        ],
+        "reviewedDate": "2026-10-19",
+        "newProviderRequests": 0,
+        "newImages": 0
+    }
+]

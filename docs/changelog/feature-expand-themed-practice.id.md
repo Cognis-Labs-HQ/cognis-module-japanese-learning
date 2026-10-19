@@ -230,6 +230,10 @@ Menambahkan Sorry dan Welcome serta ごめんなさい dan ようこそ dengan a
 
 Menambahkan cut dan fold dengan rekaman bentuk Inggris dan Jepang yang tepat, ilustrasi tindakan yang dikoreksi dan diperiksa, serta empat contoh berbeda. Bahasa Inggris juga mendapat paper sebagai nomina bahan; bahasa Jepang memakai kembali kartu 紙. Catatan membedakan 切る godan dari 着る ichidan serta 折る untuk melipat kertas dari makna lain. Bentuk cut yang sama memakai audio tersimpan. Bukti sumber dan gambar yang ditolak disimpan; pendengaran belum diperiksa.
 
+## Persiapan makanan dan percakapan cuaca
+
+Menambahkan delapan contoh yang ditinjau satu per satu dan dua dek latihan dengan kosakata yang sudah ada serta rekaman unsur tersimpan yang persis. Latihan makanan mencakup mencuci, memotong, menggabungkan bahan dan mencari kentang; latihan cuaca mencakup hujan, payung, deskripsi dan kesukaan musim. Bahasa Inggris memakai bentuk cuts yang tepat, sedangkan bahasa Jepang mempertahankan bacaan lengkap dan pelafalan partikel. Tidak ada kosakata baru, ilustrasi baru atau permintaan penyedia yang dihitung. Sumber dan bukti setiap komposisi disimpan; pendengaran belum diperiksa.
+
 ## Komit
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)
