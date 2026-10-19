@@ -124,3 +124,4 @@ Add pencil, pen, notebook and ruler with four inspected pictures per module, fou
 - [ad2c462](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/ad2c462e0060e29f138f20173f317215339ae5f0)
 - [fbb076c](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/fbb076c94fd3990c29a8576f3c05fd7fa4f0698c)
 - [6d79083](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/6d79083c4f7fd37eb9e0cd1422bc25c2f5eb64b5)
+- [77093c4](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/77093c4b6e887a1212f2a82d7cea70f7edd0b277)
