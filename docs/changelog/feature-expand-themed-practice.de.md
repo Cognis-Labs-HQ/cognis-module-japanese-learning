@@ -73,3 +73,4 @@ Links, rechts, Norden und Süden mit vier Ortsbeispielen und einem Übungsstapel
 - [829c9a2](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/829c9a27cbf41dd11b6991458ff5463333737cd7)
 - [f84dcd7](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/f84dcd763f8c722a84c39916cfd759c75a1adec4)
 - [d53fd1d](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/d53fd1d25873ce7767100056cc6629cc45710016)
+- [c927ec7](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/c927ec7f911f660d5fdb6ef2d26a015f5103fd04)
