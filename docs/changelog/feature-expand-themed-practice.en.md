@@ -249,3 +249,4 @@ Added sit and stand, their irregular English and godan Japanese forms, inspected
 - [37937f2](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/37937f2735424478cb8d589fb5fb4851619ae070)
 - [fc64ba5](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/fc64ba5cd273e3387426313717fabe2670af2396)
 - [1f80650](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/1f806500fd8a5176674fbadcaa643853c4d5afb1)
+- [83b9847](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/83b98479829db3b5980453283238388c2a51545e)
