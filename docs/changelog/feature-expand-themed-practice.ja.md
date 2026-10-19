@@ -83,3 +83,4 @@
 - [d53fd1d](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/d53fd1d25873ce7767100056cc6629cc45710016)
 - [c927ec7](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/c927ec7f911f660d5fdb6ef2d26a015f5103fd04)
 - [0202c5c](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/0202c5cce7ba57ad5e9f79a7b53943bd576e43a1)
+- [85b672b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/85b672b68b62bd92d11f97486e13a570f19edbf2)
