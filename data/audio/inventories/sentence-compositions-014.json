@@ -1,12 +1,292 @@
 [
     {
-        "path": "audio/ee6712e005141b72382cafbbf6a738c7c7920569768f5d48e01afa6bdd04bd2d.wav",
-        "entryId": "ja:sentence:clothing-example-shirt",
-        "label": "シャツをかう",
+        "path": "audio/1f603703466d73dccb18cf872b77397c7b02a2f9ca5f2454e4e5531dfdac356e.wav",
+        "entryId": "ja:sentence:fixtures-example-fridge",
+        "label": "れいぞうこにたまごがある",
         "parts": [
             {
-                "path": "audio/0f00fa39ddc666350b31f3bb952b323e73f48b0db239d261e968506cac7fb720.wav",
-                "entryId": "ja:word:clothing-shirt"
+                "path": "audio/e22509c4d25ca1dd06b3a3d381d1408ff4601f4a2535d07e4dd57d92d8d4b130.wav",
+                "entryId": "ja:word:fixtures-fridge"
+            },
+            {
+                "path": "audio/1615cf278c2962c1657907b3686d653625229af2375f90dda5bfd5b178c7aedb.wav",
+                "entryId": "ja:particle:ni"
+            },
+            {
+                "path": "audio/18101b62b33b6b40f7c5b925209d7a744bc1ac8276dd766059f739523aa9a103.wav",
+                "entryId": "ja:word:egg"
+            },
+            {
+                "path": "audio/69d02d32db53e5eeb4bb6db01917e619478b734bd66988c4242ccc1a3e55655d.wav",
+                "entryId": "ja:particle:ga"
+            },
+            {
+                "path": "audio/0e997231f55465948ee67d44898dfd72abf6e48f95f8839fe116ca8978d53535.wav",
+                "entryId": "ja:word:aru-exist"
+            },
+            { "pauseMs": 400 }
+        ],
+        "gapMs": 90,
+        "segments": [
+            {
+                "path": "audio/e22509c4d25ca1dd06b3a3d381d1408ff4601f4a2535d07e4dd57d92d8d4b130.wav",
+                "entryId": "ja:word:fixtures-fridge",
+                "startFrame": 2400,
+                "frameCount": 22137
+            },
+            {
+                "path": "audio/1615cf278c2962c1657907b3686d653625229af2375f90dda5bfd5b178c7aedb.wav",
+                "entryId": "ja:particle:ni",
+                "startFrame": 26697,
+                "frameCount": 13220
+            },
+            {
+                "path": "audio/18101b62b33b6b40f7c5b925209d7a744bc1ac8276dd766059f739523aa9a103.wav",
+                "entryId": "ja:word:egg",
+                "startFrame": 42077,
+                "frameCount": 18793
+            },
+            {
+                "path": "audio/69d02d32db53e5eeb4bb6db01917e619478b734bd66988c4242ccc1a3e55655d.wav",
+                "entryId": "ja:particle:ga",
+                "startFrame": 63030,
+                "frameCount": 14335
+            },
+            {
+                "path": "audio/0e997231f55465948ee67d44898dfd72abf6e48f95f8839fe116ca8978d53535.wav",
+                "entryId": "ja:word:aru-exist",
+                "startFrame": 79525,
+                "frameCount": 8976
+            }
+        ],
+        "sha256": "1f603703466d73dccb18cf872b77397c7b02a2f9ca5f2454e4e5531dfdac356e",
+        "frames": 100261,
+        "input": {
+            "language": "ja",
+            "label": "れいぞうこにたまごがある",
+            "semanticRole": "orderedLexicalSequence",
+            "readings": ["れいぞうこにたまごがある"]
+        },
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "construction": "Exact constituent PCM, preserving every selected grammatical form."
+        }
+    },
+    {
+        "path": "audio/0d623219a4e0d0dd802263a8c3a21a5cecc5cd6c93945bef669d1055c52ad746.wav",
+        "entryId": "ja:sentence:fixtures-example-oven",
+        "label": "オーブンはとても大きい",
+        "parts": [
+            {
+                "path": "audio/f6091b94b423458a5fafe7ac9dcfd73266512a1eee0b697cc8c70f93f4a33d82.wav",
+                "entryId": "ja:word:fixtures-oven"
+            },
+            {
+                "path": "audio/d7c9e57654e559dfba3bd6f78c2f27416a61f8b28d56145d84a62fe25b70c94d.wav",
+                "entryId": "ja:particle:wa"
+            },
+            {
+                "path": "audio/6bd90d517ec5079a9272a10b6ee16cc30a38525e42cd4cb4eb3bf6bf210ba2c5.wav",
+                "entryId": "ja:word:totemo"
+            },
+            {
+                "path": "audio/5b15ae17f9c15b1d56392fef904e5f1a056663de7dd79120d237600c45971120.wav",
+                "entryId": "ja:word:ookii"
+            },
+            { "pauseMs": 400 }
+        ],
+        "gapMs": 90,
+        "segments": [
+            {
+                "path": "audio/f6091b94b423458a5fafe7ac9dcfd73266512a1eee0b697cc8c70f93f4a33d82.wav",
+                "entryId": "ja:word:fixtures-oven",
+                "startFrame": 2400,
+                "frameCount": 15449
+            },
+            {
+                "path": "audio/d7c9e57654e559dfba3bd6f78c2f27416a61f8b28d56145d84a62fe25b70c94d.wav",
+                "entryId": "ja:particle:wa",
+                "startFrame": 20009,
+                "frameCount": 12106
+            },
+            {
+                "path": "audio/6bd90d517ec5079a9272a10b6ee16cc30a38525e42cd4cb4eb3bf6bf210ba2c5.wav",
+                "entryId": "ja:word:totemo",
+                "startFrame": 34275,
+                "frameCount": 12621
+            },
+            {
+                "path": "audio/5b15ae17f9c15b1d56392fef904e5f1a056663de7dd79120d237600c45971120.wav",
+                "entryId": "ja:word:ookii",
+                "startFrame": 49056,
+                "frameCount": 15963
+            }
+        ],
+        "sha256": "0d623219a4e0d0dd802263a8c3a21a5cecc5cd6c93945bef669d1055c52ad746",
+        "frames": 76779,
+        "input": {
+            "language": "ja",
+            "label": "オーブンはとても大きい",
+            "semanticRole": "orderedLexicalSequence",
+            "readings": ["オーブンはとてもおおきい"]
+        },
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "construction": "Exact constituent PCM, preserving every selected grammatical form."
+        }
+    },
+    {
+        "path": "audio/cce1c8695bd4e1666ac75721ad255af12e7690e4d5b680a737ae87a20c580f7f.wav",
+        "entryId": "ja:sentence:fixtures-example-sink",
+        "label": "ながしでさらをあらう",
+        "parts": [
+            {
+                "path": "audio/379e5a4ce644d72817400d688409caf37ca96c49adfead7af9397fcef2c7fda7.wav",
+                "entryId": "ja:word:fixtures-sink"
+            },
+            {
+                "path": "audio/df81472c8108ad9b47d8d90db017ff1c1b553d80263d6a2c59de1571671f3eee.wav",
+                "entryId": "ja:particle:de"
+            },
+            {
+                "path": "audio/696fb7666b658b7208e991f2c58509fc3a87b8629251f025acf3bc145a44594f.wav",
+                "entryId": "ja:word:tableware-plate"
+            },
+            {
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "entryId": "ja:particle:wo"
+            },
+            {
+                "path": "audio/55900a3049492f3fd4edd4b8fb6ba3ff1650cde9ed4b3024f002f08659bf5c2a.wav",
+                "entryId": "ja:word:household-wash"
+            },
+            { "pauseMs": 400 }
+        ],
+        "gapMs": 90,
+        "segments": [
+            {
+                "path": "audio/379e5a4ce644d72817400d688409caf37ca96c49adfead7af9397fcef2c7fda7.wav",
+                "entryId": "ja:word:fixtures-sink",
+                "startFrame": 2400,
+                "frameCount": 17678
+            },
+            {
+                "path": "audio/df81472c8108ad9b47d8d90db017ff1c1b553d80263d6a2c59de1571671f3eee.wav",
+                "entryId": "ja:particle:de",
+                "startFrame": 22238,
+                "frameCount": 13220
+            },
+            {
+                "path": "audio/696fb7666b658b7208e991f2c58509fc3a87b8629251f025acf3bc145a44594f.wav",
+                "entryId": "ja:word:tableware-plate",
+                "startFrame": 37618,
+                "frameCount": 10991
+            },
+            {
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "entryId": "ja:particle:wo",
+                "startFrame": 50769,
+                "frameCount": 8762
+            },
+            {
+                "path": "audio/55900a3049492f3fd4edd4b8fb6ba3ff1650cde9ed4b3024f002f08659bf5c2a.wav",
+                "entryId": "ja:word:household-wash",
+                "startFrame": 61691,
+                "frameCount": 12106
+            }
+        ],
+        "sha256": "cce1c8695bd4e1666ac75721ad255af12e7690e4d5b680a737ae87a20c580f7f",
+        "frames": 85557,
+        "input": {
+            "language": "ja",
+            "label": "ながしでさらをあらう",
+            "semanticRole": "orderedLexicalSequence",
+            "readings": ["ながしでさらをあらう"]
+        },
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "construction": "Exact constituent PCM, preserving every selected grammatical form."
+        }
+    },
+    {
+        "path": "audio/99e4f78262fea9d042245ebaac94a2e15ccf9be9a37f6271d9166041da9eb0ce.wav",
+        "entryId": "ja:sentence:fixtures-example-shower",
+        "label": "シャワーはここです",
+        "parts": [
+            {
+                "path": "audio/c1aec790161e1d5bbc940659470b3df837fa8a65863c9afe2187d6a4436786c6.wav",
+                "entryId": "ja:word:fixtures-shower"
+            },
+            {
+                "path": "audio/d7c9e57654e559dfba3bd6f78c2f27416a61f8b28d56145d84a62fe25b70c94d.wav",
+                "entryId": "ja:particle:wa"
+            },
+            {
+                "path": "audio/f298e745d293e821e9c245438bda27c7da9035ad01dbd7b473e4d5ab8b858b9a.wav",
+                "entryId": "ja:word:koko"
+            },
+            {
+                "path": "audio/2959a5dcab722b7d5c39f67845f1d6a3d6ede5f23e554e9547bca0e6cb62c56b.wav",
+                "entryId": "ja:word:desu"
+            },
+            { "pauseMs": 400 }
+        ],
+        "gapMs": 90,
+        "segments": [
+            {
+                "path": "audio/c1aec790161e1d5bbc940659470b3df837fa8a65863c9afe2187d6a4436786c6.wav",
+                "entryId": "ja:word:fixtures-shower",
+                "startFrame": 2400,
+                "frameCount": 19907
+            },
+            {
+                "path": "audio/d7c9e57654e559dfba3bd6f78c2f27416a61f8b28d56145d84a62fe25b70c94d.wav",
+                "entryId": "ja:particle:wa",
+                "startFrame": 24467,
+                "frameCount": 12106
+            },
+            {
+                "path": "audio/f298e745d293e821e9c245438bda27c7da9035ad01dbd7b473e4d5ab8b858b9a.wav",
+                "entryId": "ja:word:koko",
+                "startFrame": 38733,
+                "frameCount": 11459
+            },
+            {
+                "path": "audio/2959a5dcab722b7d5c39f67845f1d6a3d6ede5f23e554e9547bca0e6cb62c56b.wav",
+                "entryId": "ja:word:desu",
+                "startFrame": 52352,
+                "frameCount": 11490
+            }
+        ],
+        "sha256": "99e4f78262fea9d042245ebaac94a2e15ccf9be9a37f6271d9166041da9eb0ce",
+        "frames": 75602,
+        "input": {
+            "language": "ja",
+            "label": "シャワーはここです",
+            "semanticRole": "orderedLexicalSequence",
+            "readings": ["シャワーはここです"]
+        },
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "construction": "Exact constituent PCM, preserving every selected grammatical form."
+        }
+    },
+    {
+        "path": "audio/466f338d5588af89a1777b94223bc50f101017ec207e81f5b1e63906378ec920.wav",
+        "entryId": "ja:sentence:fruit-example-peach",
+        "label": "スーパーでももをかう",
+        "parts": [
+            {
+                "path": "audio/4fe867dd6a28eb23632a97e20d639fe0538f619eebd6614d0dceaf7bc0780f72.wav",
+                "entryId": "ja:word:places-supermarket"
+            },
+            {
+                "path": "audio/df81472c8108ad9b47d8d90db017ff1c1b553d80263d6a2c59de1571671f3eee.wav",
+                "entryId": "ja:particle:de"
+            },
+            {
+                "path": "audio/094a3bf8198512fe56f28a047b59c5d75e0bbf5178d4fc6da691e6517a06a480.wav",
+                "entryId": "ja:word:fruit-peach"
             },
             {
                 "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
@@ -16,52 +296,208 @@
                 "path": "audio/1a880a2cfc93aedb14ed94ad5cbd8ba5a803aa377bb98f0bf534e0ce8905bfd4.wav",
                 "entryId": "ja:word:travel-buy"
             },
-            {
-                "pauseMs": 400
-            }
+            { "pauseMs": 400 }
         ],
         "gapMs": 90,
         "segments": [
             {
-                "path": "audio/0f00fa39ddc666350b31f3bb952b323e73f48b0db239d261e968506cac7fb720.wav",
-                "entryId": "ja:word:clothing-shirt",
+                "path": "audio/4fe867dd6a28eb23632a97e20d639fe0538f619eebd6614d0dceaf7bc0780f72.wav",
+                "entryId": "ja:word:places-supermarket",
                 "startFrame": 2400,
-                "frameCount": 16564
+                "frameCount": 22137
+            },
+            {
+                "path": "audio/df81472c8108ad9b47d8d90db017ff1c1b553d80263d6a2c59de1571671f3eee.wav",
+                "entryId": "ja:particle:de",
+                "startFrame": 26697,
+                "frameCount": 13220
+            },
+            {
+                "path": "audio/094a3bf8198512fe56f28a047b59c5d75e0bbf5178d4fc6da691e6517a06a480.wav",
+                "entryId": "ja:word:fruit-peach",
+                "startFrame": 42077,
+                "frameCount": 13220
             },
             {
                 "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
                 "entryId": "ja:particle:wo",
-                "startFrame": 21124,
+                "startFrame": 57457,
                 "frameCount": 8762
             },
             {
                 "path": "audio/1a880a2cfc93aedb14ed94ad5cbd8ba5a803aa377bb98f0bf534e0ce8905bfd4.wav",
                 "entryId": "ja:word:travel-buy",
-                "startFrame": 32046,
+                "startFrame": 68379,
                 "frameCount": 13220
             }
         ],
-        "sha256": "ee6712e005141b72382cafbbf6a738c7c7920569768f5d48e01afa6bdd04bd2d",
-        "frames": 57026,
+        "sha256": "466f338d5588af89a1777b94223bc50f101017ec207e81f5b1e63906378ec920",
+        "frames": 93359,
         "input": {
             "language": "ja",
-            "label": "シャツをかう",
+            "label": "スーパーでももをかう",
             "semanticRole": "orderedLexicalSequence",
-            "readings": ["シャツをかう"]
+            "readings": ["スーパーでももをかう"]
         },
         "metadata": {
             "listening": "unverified-not-performed",
-            "construction": "Exact clothing and existing constituent PCM, including selected English likes and plural socks."
+            "construction": "Exact fruit constituent PCM, including the English plural peaches with its extra syllable."
         }
     },
     {
-        "path": "audio/9df10a91ac0877bdf005e33225aadd58bae69909b747852018a76ddae02bad61.wav",
-        "entryId": "ja:sentence:clothing-example-dress",
-        "label": "ワンピースが好きです",
+        "path": "audio/3a2171df0ab213616f6063e13fc8f6bd9969dd1b8c1b7ea3d6fdce312929901c.wav",
+        "entryId": "ja:sentence:fruit-example-pear",
+        "label": "なしはさらにある",
         "parts": [
             {
-                "path": "audio/1d3ca6fdc303371000b29140002868823160fafa76fc3685e8c3d914a9731514.wav",
-                "entryId": "ja:word:clothing-dress"
+                "path": "audio/a237b690aa20c8fb493364754d2f7087f47baab9facf44f1948387813af8c5b0.wav",
+                "entryId": "ja:word:fruit-pear"
+            },
+            {
+                "path": "audio/d7c9e57654e559dfba3bd6f78c2f27416a61f8b28d56145d84a62fe25b70c94d.wav",
+                "entryId": "ja:particle:wa"
+            },
+            {
+                "path": "audio/696fb7666b658b7208e991f2c58509fc3a87b8629251f025acf3bc145a44594f.wav",
+                "entryId": "ja:word:tableware-plate"
+            },
+            {
+                "path": "audio/1615cf278c2962c1657907b3686d653625229af2375f90dda5bfd5b178c7aedb.wav",
+                "entryId": "ja:particle:ni"
+            },
+            {
+                "path": "audio/0e997231f55465948ee67d44898dfd72abf6e48f95f8839fe116ca8978d53535.wav",
+                "entryId": "ja:word:aru-exist"
+            },
+            { "pauseMs": 400 }
+        ],
+        "gapMs": 90,
+        "segments": [
+            {
+                "path": "audio/a237b690aa20c8fb493364754d2f7087f47baab9facf44f1948387813af8c5b0.wav",
+                "entryId": "ja:word:fruit-pear",
+                "startFrame": 2400,
+                "frameCount": 13220
+            },
+            {
+                "path": "audio/d7c9e57654e559dfba3bd6f78c2f27416a61f8b28d56145d84a62fe25b70c94d.wav",
+                "entryId": "ja:particle:wa",
+                "startFrame": 17780,
+                "frameCount": 12106
+            },
+            {
+                "path": "audio/696fb7666b658b7208e991f2c58509fc3a87b8629251f025acf3bc145a44594f.wav",
+                "entryId": "ja:word:tableware-plate",
+                "startFrame": 32046,
+                "frameCount": 10991
+            },
+            {
+                "path": "audio/1615cf278c2962c1657907b3686d653625229af2375f90dda5bfd5b178c7aedb.wav",
+                "entryId": "ja:particle:ni",
+                "startFrame": 45197,
+                "frameCount": 13220
+            },
+            {
+                "path": "audio/0e997231f55465948ee67d44898dfd72abf6e48f95f8839fe116ca8978d53535.wav",
+                "entryId": "ja:word:aru-exist",
+                "startFrame": 60577,
+                "frameCount": 8976
+            }
+        ],
+        "sha256": "3a2171df0ab213616f6063e13fc8f6bd9969dd1b8c1b7ea3d6fdce312929901c",
+        "frames": 81313,
+        "input": {
+            "language": "ja",
+            "label": "なしはさらにある",
+            "semanticRole": "orderedLexicalSequence",
+            "readings": ["なしはさらにある"]
+        },
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "construction": "Exact fruit constituent PCM, including the English plural peaches with its extra syllable."
+        }
+    },
+    {
+        "path": "audio/ff96348ae741de7e7070448c4e5c56356ad032db37b53394761c2e856a001e6b.wav",
+        "entryId": "ja:sentence:fruit-example-watermelon",
+        "label": "なつにすいかを食べる",
+        "parts": [
+            {
+                "path": "audio/b2028b2401e952d930346fa7ef3c6cbedaad4b0505c7e25642c7f1009ecb4f9c.wav",
+                "entryId": "ja:word:seasons-summer"
+            },
+            {
+                "path": "audio/1615cf278c2962c1657907b3686d653625229af2375f90dda5bfd5b178c7aedb.wav",
+                "entryId": "ja:particle:ni"
+            },
+            {
+                "path": "audio/3c3ec13a49e38810f0ed83037718f90506d43b4c5e95d91d51f562cc6911af79.wav",
+                "entryId": "ja:word:fruit-watermelon"
+            },
+            {
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "entryId": "ja:particle:wo"
+            },
+            {
+                "path": "audio/4ddd4e95428918c1c2f8c64b3eab948d332e376275c09dfcff69082a20ee9181.wav",
+                "entryId": "ja:word:taberu"
+            },
+            { "pauseMs": 400 }
+        ],
+        "gapMs": 90,
+        "segments": [
+            {
+                "path": "audio/b2028b2401e952d930346fa7ef3c6cbedaad4b0505c7e25642c7f1009ecb4f9c.wav",
+                "entryId": "ja:word:seasons-summer",
+                "startFrame": 2400,
+                "frameCount": 8762
+            },
+            {
+                "path": "audio/1615cf278c2962c1657907b3686d653625229af2375f90dda5bfd5b178c7aedb.wav",
+                "entryId": "ja:particle:ni",
+                "startFrame": 13322,
+                "frameCount": 13220
+            },
+            {
+                "path": "audio/3c3ec13a49e38810f0ed83037718f90506d43b4c5e95d91d51f562cc6911af79.wav",
+                "entryId": "ja:word:fruit-watermelon",
+                "startFrame": 28702,
+                "frameCount": 16564
+            },
+            {
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "entryId": "ja:particle:wo",
+                "startFrame": 47426,
+                "frameCount": 8762
+            },
+            {
+                "path": "audio/4ddd4e95428918c1c2f8c64b3eab948d332e376275c09dfcff69082a20ee9181.wav",
+                "entryId": "ja:word:taberu",
+                "startFrame": 58348,
+                "frameCount": 14496
+            }
+        ],
+        "sha256": "ff96348ae741de7e7070448c4e5c56356ad032db37b53394761c2e856a001e6b",
+        "frames": 84604,
+        "input": {
+            "language": "ja",
+            "label": "なつにすいかを食べる",
+            "semanticRole": "orderedLexicalSequence",
+            "readings": ["なつにすいかをたべる"]
+        },
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "construction": "Exact fruit constituent PCM, including the English plural peaches with its extra syllable."
+        }
+    },
+    {
+        "path": "audio/af271f2b423feb48fbbcebc8166456a1fd732cda0e8ec6c42b84d7185c9e0188.wav",
+        "entryId": "ja:sentence:fruit-example-pineapple",
+        "label": "パイナップルが好きです",
+        "parts": [
+            {
+                "path": "audio/06bd68d3dbb9f646d3fe8757fef4488e665058920413662fc7369bf91ea96691.wav",
+                "entryId": "ja:word:fruit-pineapple"
             },
             {
                 "path": "audio/69d02d32db53e5eeb4bb6db01917e619478b734bd66988c4242ccc1a3e55655d.wav",
@@ -75,458 +511,235 @@
                 "path": "audio/2959a5dcab722b7d5c39f67845f1d6a3d6ede5f23e554e9547bca0e6cb62c56b.wav",
                 "entryId": "ja:word:desu"
             },
-            {
-                "pauseMs": 400
-            }
+            { "pauseMs": 400 }
         ],
         "gapMs": 90,
         "segments": [
             {
-                "path": "audio/1d3ca6fdc303371000b29140002868823160fafa76fc3685e8c3d914a9731514.wav",
-                "entryId": "ja:word:clothing-dress",
+                "path": "audio/06bd68d3dbb9f646d3fe8757fef4488e665058920413662fc7369bf91ea96691.wav",
+                "entryId": "ja:word:fruit-pineapple",
                 "startFrame": 2400,
-                "frameCount": 22137
+                "frameCount": 24366
             },
             {
                 "path": "audio/69d02d32db53e5eeb4bb6db01917e619478b734bd66988c4242ccc1a3e55655d.wav",
                 "entryId": "ja:particle:ga",
-                "startFrame": 26697,
+                "startFrame": 28926,
                 "frameCount": 14335
             },
             {
                 "path": "audio/fff2a2381ef1abd6f3b0e24b6390a1f76d9fda74ec68bdc300ac3ff137a00214.wav",
                 "entryId": "ja:word:suki",
-                "startFrame": 43192,
+                "startFrame": 45421,
                 "frameCount": 13644
             },
             {
                 "path": "audio/2959a5dcab722b7d5c39f67845f1d6a3d6ede5f23e554e9547bca0e6cb62c56b.wav",
                 "entryId": "ja:word:desu",
-                "startFrame": 58996,
+                "startFrame": 61225,
                 "frameCount": 11490
             }
         ],
-        "sha256": "9df10a91ac0877bdf005e33225aadd58bae69909b747852018a76ddae02bad61",
-        "frames": 82246,
+        "sha256": "af271f2b423feb48fbbcebc8166456a1fd732cda0e8ec6c42b84d7185c9e0188",
+        "frames": 84475,
         "input": {
             "language": "ja",
-            "label": "ワンピースが好きです",
+            "label": "パイナップルが好きです",
             "semanticRole": "orderedLexicalSequence",
-            "readings": ["ワンピースがすきです"]
+            "readings": ["パイナップルがすきです"]
         },
         "metadata": {
             "listening": "unverified-not-performed",
-            "construction": "Exact clothing and existing constituent PCM, including selected English likes and plural socks."
+            "construction": "Exact fruit constituent PCM, including the English plural peaches with its extra syllable."
         }
     },
     {
-        "path": "audio/6f81d15135e374c231f5467683112e9771f10a0c387520085e2b5db718b654a6.wav",
-        "entryId": "ja:sentence:clothing-example-sock",
-        "label": "くつしたをかう",
+        "path": "audio/8945fd89f3b8dada177474b7fa3094ae9f73da951cad720f7e23ae1c68a7caea.wav",
+        "entryId": "ja:sentence:actions-example-jump",
+        "label": "犬はにわでとぶ",
         "parts": [
             {
-                "path": "audio/6f59f912c5dea707d120df48123a080148de049a65fa481b9647fc9a658de3f0.wav",
-                "entryId": "ja:word:clothing-sock"
-            },
-            {
-                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
-                "entryId": "ja:particle:wo"
-            },
-            {
-                "path": "audio/1a880a2cfc93aedb14ed94ad5cbd8ba5a803aa377bb98f0bf534e0ce8905bfd4.wav",
-                "entryId": "ja:word:travel-buy"
-            },
-            {
-                "pauseMs": 400
-            }
-        ],
-        "gapMs": 90,
-        "segments": [
-            {
-                "path": "audio/6f59f912c5dea707d120df48123a080148de049a65fa481b9647fc9a658de3f0.wav",
-                "entryId": "ja:word:clothing-sock",
-                "startFrame": 2400,
-                "frameCount": 14335
-            },
-            {
-                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
-                "entryId": "ja:particle:wo",
-                "startFrame": 18895,
-                "frameCount": 8762
-            },
-            {
-                "path": "audio/1a880a2cfc93aedb14ed94ad5cbd8ba5a803aa377bb98f0bf534e0ce8905bfd4.wav",
-                "entryId": "ja:word:travel-buy",
-                "startFrame": 29817,
-                "frameCount": 13220
-            }
-        ],
-        "sha256": "6f81d15135e374c231f5467683112e9771f10a0c387520085e2b5db718b654a6",
-        "frames": 54797,
-        "input": {
-            "language": "ja",
-            "label": "くつしたをかう",
-            "semanticRole": "orderedLexicalSequence",
-            "readings": ["くつしたをかう"]
-        },
-        "metadata": {
-            "listening": "unverified-not-performed",
-            "construction": "Exact clothing and existing constituent PCM, including selected English likes and plural socks."
-        }
-    },
-    {
-        "path": "audio/a3be070f48bebeae6865940fa5925c14bc2456f18e54cf7330af6c2e69875449.wav",
-        "entryId": "ja:sentence:clothing-example-skirt",
-        "label": "スカートはきれいです",
-        "parts": [
-            {
-                "path": "audio/b1f5f3c73c48e5085f1cffb93a9af82fd132be5f41fc2df19c20f39f75d614fc.wav",
-                "entryId": "ja:word:clothing-skirt"
+                "path": "audio/64cecb245c335de8a0367aed75bddb8d39c17b26bbdb3729562cf01206a1c508.wav",
+                "entryId": "ja:word:inu"
             },
             {
                 "path": "audio/d7c9e57654e559dfba3bd6f78c2f27416a61f8b28d56145d84a62fe25b70c94d.wav",
                 "entryId": "ja:particle:wa"
             },
             {
-                "path": "audio/729294273d1b42cf6236f7b51ac562913fb5e768d3538b99634a302867b2c948.wav",
-                "entryId": "ja:word:kirei"
-            },
-            {
-                "path": "audio/2959a5dcab722b7d5c39f67845f1d6a3d6ede5f23e554e9547bca0e6cb62c56b.wav",
-                "entryId": "ja:word:desu"
-            },
-            {
-                "pauseMs": 400
-            }
-        ],
-        "gapMs": 90,
-        "segments": [
-            {
-                "path": "audio/b1f5f3c73c48e5085f1cffb93a9af82fd132be5f41fc2df19c20f39f75d614fc.wav",
-                "entryId": "ja:word:clothing-skirt",
-                "startFrame": 2400,
-                "frameCount": 18793
-            },
-            {
-                "path": "audio/d7c9e57654e559dfba3bd6f78c2f27416a61f8b28d56145d84a62fe25b70c94d.wav",
-                "entryId": "ja:particle:wa",
-                "startFrame": 23353,
-                "frameCount": 12106
-            },
-            {
-                "path": "audio/729294273d1b42cf6236f7b51ac562913fb5e768d3538b99634a302867b2c948.wav",
-                "entryId": "ja:word:kirei",
-                "startFrame": 37619,
-                "frameCount": 10272
-            },
-            {
-                "path": "audio/2959a5dcab722b7d5c39f67845f1d6a3d6ede5f23e554e9547bca0e6cb62c56b.wav",
-                "entryId": "ja:word:desu",
-                "startFrame": 50051,
-                "frameCount": 11490
-            }
-        ],
-        "sha256": "a3be070f48bebeae6865940fa5925c14bc2456f18e54cf7330af6c2e69875449",
-        "frames": 73301,
-        "input": {
-            "language": "ja",
-            "label": "スカートはきれいです",
-            "semanticRole": "orderedLexicalSequence",
-            "readings": ["スカートはきれいです"]
-        },
-        "metadata": {
-            "listening": "unverified-not-performed",
-            "construction": "Exact clothing and existing constituent PCM, including selected English likes and plural socks."
-        }
-    },
-    {
-        "path": "audio/bd54e46197d0d5a0c77dde74eb5c09b2e2268086dc9d909e2bb42cc56a95adc6.wav",
-        "entryId": "ja:sentence:tableware-example-cup",
-        "label": "カップはテーブルにある",
-        "parts": [
-            {
-                "path": "audio/2a0263c47f0699e1aff3603a5892c5256ffaff78ed6c656be287581ee8ab5255.wav",
-                "entryId": "ja:word:tableware-cup"
-            },
-            {
-                "path": "audio/d7c9e57654e559dfba3bd6f78c2f27416a61f8b28d56145d84a62fe25b70c94d.wav",
-                "entryId": "ja:particle:wa"
-            },
-            {
-                "path": "audio/29f6a7e403e16e111e3eee3e859d6dee59887dcc720cb7837c894f308f7d8174.wav",
-                "entryId": "ja:word:table"
-            },
-            {
-                "path": "audio/1615cf278c2962c1657907b3686d653625229af2375f90dda5bfd5b178c7aedb.wav",
-                "entryId": "ja:particle:ni"
-            },
-            {
-                "path": "audio/0e997231f55465948ee67d44898dfd72abf6e48f95f8839fe116ca8978d53535.wav",
-                "entryId": "ja:word:aru-exist"
-            },
-            {
-                "pauseMs": 400
-            }
-        ],
-        "gapMs": 90,
-        "segments": [
-            {
-                "path": "audio/2a0263c47f0699e1aff3603a5892c5256ffaff78ed6c656be287581ee8ab5255.wav",
-                "entryId": "ja:word:tableware-cup",
-                "startFrame": 2400,
-                "frameCount": 17678
-            },
-            {
-                "path": "audio/d7c9e57654e559dfba3bd6f78c2f27416a61f8b28d56145d84a62fe25b70c94d.wav",
-                "entryId": "ja:particle:wa",
-                "startFrame": 22238,
-                "frameCount": 12106
-            },
-            {
-                "path": "audio/29f6a7e403e16e111e3eee3e859d6dee59887dcc720cb7837c894f308f7d8174.wav",
-                "entryId": "ja:word:table",
-                "startFrame": 36504,
-                "frameCount": 18793
-            },
-            {
-                "path": "audio/1615cf278c2962c1657907b3686d653625229af2375f90dda5bfd5b178c7aedb.wav",
-                "entryId": "ja:particle:ni",
-                "startFrame": 57457,
-                "frameCount": 13220
-            },
-            {
-                "path": "audio/0e997231f55465948ee67d44898dfd72abf6e48f95f8839fe116ca8978d53535.wav",
-                "entryId": "ja:word:aru-exist",
-                "startFrame": 72837,
-                "frameCount": 8976
-            }
-        ],
-        "sha256": "bd54e46197d0d5a0c77dde74eb5c09b2e2268086dc9d909e2bb42cc56a95adc6",
-        "frames": 93573,
-        "input": {
-            "language": "ja",
-            "label": "カップはテーブルにある",
-            "semanticRole": "orderedLexicalSequence",
-            "readings": ["カップはてーぶるにある"]
-        },
-        "metadata": {
-            "listening": "unverified-not-performed",
-            "construction": "Exact tableware and existing constituent PCM, including selected English is, spoons and forks."
-        }
-    },
-    {
-        "path": "audio/d88c6bf37c9039bf070643e801f084b381414d53b3d225b8ce8e12696bf6803f.wav",
-        "entryId": "ja:sentence:tableware-example-plate",
-        "label": "さらはきれいです",
-        "parts": [
-            {
-                "path": "audio/696fb7666b658b7208e991f2c58509fc3a87b8629251f025acf3bc145a44594f.wav",
-                "entryId": "ja:word:tableware-plate"
-            },
-            {
-                "path": "audio/d7c9e57654e559dfba3bd6f78c2f27416a61f8b28d56145d84a62fe25b70c94d.wav",
-                "entryId": "ja:particle:wa"
-            },
-            {
-                "path": "audio/729294273d1b42cf6236f7b51ac562913fb5e768d3538b99634a302867b2c948.wav",
-                "entryId": "ja:word:kirei"
-            },
-            {
-                "path": "audio/2959a5dcab722b7d5c39f67845f1d6a3d6ede5f23e554e9547bca0e6cb62c56b.wav",
-                "entryId": "ja:word:desu"
-            },
-            {
-                "pauseMs": 400
-            }
-        ],
-        "gapMs": 90,
-        "segments": [
-            {
-                "path": "audio/696fb7666b658b7208e991f2c58509fc3a87b8629251f025acf3bc145a44594f.wav",
-                "entryId": "ja:word:tableware-plate",
-                "startFrame": 2400,
-                "frameCount": 10991
-            },
-            {
-                "path": "audio/d7c9e57654e559dfba3bd6f78c2f27416a61f8b28d56145d84a62fe25b70c94d.wav",
-                "entryId": "ja:particle:wa",
-                "startFrame": 15551,
-                "frameCount": 12106
-            },
-            {
-                "path": "audio/729294273d1b42cf6236f7b51ac562913fb5e768d3538b99634a302867b2c948.wav",
-                "entryId": "ja:word:kirei",
-                "startFrame": 29817,
-                "frameCount": 10272
-            },
-            {
-                "path": "audio/2959a5dcab722b7d5c39f67845f1d6a3d6ede5f23e554e9547bca0e6cb62c56b.wav",
-                "entryId": "ja:word:desu",
-                "startFrame": 42249,
-                "frameCount": 11490
-            }
-        ],
-        "sha256": "d88c6bf37c9039bf070643e801f084b381414d53b3d225b8ce8e12696bf6803f",
-        "frames": 65499,
-        "input": {
-            "language": "ja",
-            "label": "さらはきれいです",
-            "semanticRole": "orderedLexicalSequence",
-            "readings": ["さらはきれいです"]
-        },
-        "metadata": {
-            "listening": "unverified-not-performed",
-            "construction": "Exact tableware and existing constituent PCM, including selected English is, spoons and forks."
-        }
-    },
-    {
-        "path": "audio/712c16cba5f529de0750b95704d72aa583f372136bf83d6c75de618bd2ebbb0f.wav",
-        "entryId": "ja:sentence:tableware-example-spoon",
-        "label": "スプーンでスープを飲む",
-        "parts": [
-            {
-                "path": "audio/0330d7e2ff38989c650e628d73e3fe5ea13ee95b14a7cc7770e084ed43259ab5.wav",
-                "entryId": "ja:word:tableware-spoon"
+                "path": "audio/1a9600a1b917df1a274df93c47a024e5aceddb723472dd1b2c0790f00409a10e.wav",
+                "entryId": "ja:word:rooms-garden"
             },
             {
                 "path": "audio/df81472c8108ad9b47d8d90db017ff1c1b553d80263d6a2c59de1571671f3eee.wav",
                 "entryId": "ja:particle:de"
             },
             {
-                "path": "audio/4a74d133f1fde60b0990bab7970d5ab9683f6c87122f694b518c45819b667cbe.wav",
-                "entryId": "ja:word:soup"
+                "path": "audio/f33ec2b2ad3c0759e075923ef835c9fa905ab75990f6b5f42bebcd6346e9ed6c.wav",
+                "entryId": "ja:word:actions-jump"
             },
-            {
-                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
-                "entryId": "ja:particle:wo"
-            },
-            {
-                "path": "audio/5eac59ad2371c7277aa56070f39b840cfb2fa6edb0ec5f52f293f8c0b0c819da.wav",
-                "entryId": "ja:word:nomu"
-            },
-            {
-                "pauseMs": 400
-            }
+            { "pauseMs": 400 }
         ],
         "gapMs": 90,
         "segments": [
             {
-                "path": "audio/0330d7e2ff38989c650e628d73e3fe5ea13ee95b14a7cc7770e084ed43259ab5.wav",
-                "entryId": "ja:word:tableware-spoon",
+                "path": "audio/64cecb245c335de8a0367aed75bddb8d39c17b26bbdb3729562cf01206a1c508.wav",
+                "entryId": "ja:word:inu",
                 "startFrame": 2400,
+                "frameCount": 11605
+            },
+            {
+                "path": "audio/d7c9e57654e559dfba3bd6f78c2f27416a61f8b28d56145d84a62fe25b70c94d.wav",
+                "entryId": "ja:particle:wa",
+                "startFrame": 16165,
+                "frameCount": 12106
+            },
+            {
+                "path": "audio/1a9600a1b917df1a274df93c47a024e5aceddb723472dd1b2c0790f00409a10e.wav",
+                "entryId": "ja:word:rooms-garden",
+                "startFrame": 30431,
+                "frameCount": 13220
+            },
+            {
+                "path": "audio/df81472c8108ad9b47d8d90db017ff1c1b553d80263d6a2c59de1571671f3eee.wav",
+                "entryId": "ja:particle:de",
+                "startFrame": 45811,
+                "frameCount": 13220
+            },
+            {
+                "path": "audio/f33ec2b2ad3c0759e075923ef835c9fa905ab75990f6b5f42bebcd6346e9ed6c.wav",
+                "entryId": "ja:word:actions-jump",
+                "startFrame": 61191,
                 "frameCount": 16564
-            },
-            {
-                "path": "audio/df81472c8108ad9b47d8d90db017ff1c1b553d80263d6a2c59de1571671f3eee.wav",
-                "entryId": "ja:particle:de",
-                "startFrame": 21124,
-                "frameCount": 13220
-            },
-            {
-                "path": "audio/4a74d133f1fde60b0990bab7970d5ab9683f6c87122f694b518c45819b667cbe.wav",
-                "entryId": "ja:word:soup",
-                "startFrame": 36504,
-                "frameCount": 17678
-            },
-            {
-                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
-                "entryId": "ja:particle:wo",
-                "startFrame": 56342,
-                "frameCount": 8762
-            },
-            {
-                "path": "audio/5eac59ad2371c7277aa56070f39b840cfb2fa6edb0ec5f52f293f8c0b0c819da.wav",
-                "entryId": "ja:word:nomu",
-                "startFrame": 67264,
-                "frameCount": 13720
             }
         ],
-        "sha256": "712c16cba5f529de0750b95704d72aa583f372136bf83d6c75de618bd2ebbb0f",
-        "frames": 92744,
+        "sha256": "8945fd89f3b8dada177474b7fa3094ae9f73da951cad720f7e23ae1c68a7caea",
+        "frames": 89515,
         "input": {
             "language": "ja",
-            "label": "スプーンでスープを飲む",
+            "label": "犬はにわでとぶ",
             "semanticRole": "orderedLexicalSequence",
-            "readings": ["スプーンですーぷをのむ"]
+            "readings": ["いぬはにわでとぶ"]
         },
         "metadata": {
             "listening": "unverified-not-performed",
-            "construction": "Exact tableware and existing constituent PCM, including selected English is, spoons and forks."
+            "construction": "Exact constituent PCM, preserving every selected grammatical form."
         }
     },
     {
-        "path": "audio/f5db44cbb8df758d04dfd2f33fa0361e724b7c3c2f7c01ebfea42af22de63160.wav",
-        "entryId": "ja:sentence:tableware-example-fork",
-        "label": "フォークでさかなを食べる",
+        "path": "audio/d4181a47e109a90938690080c9b7ab3215c9516d59eaa4e7c2ae7210db3caeee.wav",
+        "entryId": "ja:sentence:actions-example-swim",
+        "label": "海でゆっくりおよぐ",
         "parts": [
             {
-                "path": "audio/bd830d1b87d9b110d43374bfa5c5f1cc9b45e3cbe24046b187d59e40288a2587.wav",
-                "entryId": "ja:word:tableware-fork"
+                "path": "audio/b57fe2333d184c99061c9a2836fbb26c27145db7254e7bd6a39625702333b919.wav",
+                "entryId": "ja:word:umi"
             },
             {
                 "path": "audio/df81472c8108ad9b47d8d90db017ff1c1b553d80263d6a2c59de1571671f3eee.wav",
                 "entryId": "ja:particle:de"
             },
             {
-                "path": "audio/82a3ba788239c7a0ca2d53b86f417200dcef1a8c2ef789e55b778f8870619105.wav",
-                "entryId": "ja:word:fish"
+                "path": "audio/1c2d1664ef0db6298e34d97fa47fd27aa3dfc34f44515e3e22ed6e07e2ca0011.wav",
+                "entryId": "ja:word:yukkuri"
             },
             {
-                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
-                "entryId": "ja:particle:wo"
+                "path": "audio/294889dd84f41ce693056c941f58d1a96dc205122391af167c8020d68e98707e.wav",
+                "entryId": "ja:word:actions-swim"
             },
-            {
-                "path": "audio/4ddd4e95428918c1c2f8c64b3eab948d332e376275c09dfcff69082a20ee9181.wav",
-                "entryId": "ja:word:taberu"
-            },
-            {
-                "pauseMs": 400
-            }
+            { "pauseMs": 400 }
         ],
         "gapMs": 90,
         "segments": [
             {
-                "path": "audio/bd830d1b87d9b110d43374bfa5c5f1cc9b45e3cbe24046b187d59e40288a2587.wav",
-                "entryId": "ja:word:tableware-fork",
+                "path": "audio/b57fe2333d184c99061c9a2836fbb26c27145db7254e7bd6a39625702333b919.wav",
+                "entryId": "ja:word:umi",
                 "startFrame": 2400,
-                "frameCount": 17678
+                "frameCount": 12528
             },
             {
                 "path": "audio/df81472c8108ad9b47d8d90db017ff1c1b553d80263d6a2c59de1571671f3eee.wav",
                 "entryId": "ja:particle:de",
-                "startFrame": 22238,
+                "startFrame": 17088,
                 "frameCount": 13220
             },
             {
-                "path": "audio/82a3ba788239c7a0ca2d53b86f417200dcef1a8c2ef789e55b778f8870619105.wav",
-                "entryId": "ja:word:fish",
-                "startFrame": 37618,
-                "frameCount": 18793
+                "path": "audio/1c2d1664ef0db6298e34d97fa47fd27aa3dfc34f44515e3e22ed6e07e2ca0011.wav",
+                "entryId": "ja:word:yukkuri",
+                "startFrame": 32468,
+                "frameCount": 21022
             },
             {
-                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
-                "entryId": "ja:particle:wo",
-                "startFrame": 58571,
-                "frameCount": 8762
-            },
-            {
-                "path": "audio/4ddd4e95428918c1c2f8c64b3eab948d332e376275c09dfcff69082a20ee9181.wav",
-                "entryId": "ja:word:taberu",
-                "startFrame": 69493,
-                "frameCount": 14496
+                "path": "audio/294889dd84f41ce693056c941f58d1a96dc205122391af167c8020d68e98707e.wav",
+                "entryId": "ja:word:actions-swim",
+                "startFrame": 55650,
+                "frameCount": 15449
             }
         ],
-        "sha256": "f5db44cbb8df758d04dfd2f33fa0361e724b7c3c2f7c01ebfea42af22de63160",
-        "frames": 95749,
+        "sha256": "d4181a47e109a90938690080c9b7ab3215c9516d59eaa4e7c2ae7210db3caeee",
+        "frames": 82859,
         "input": {
             "language": "ja",
-            "label": "フォークでさかなを食べる",
+            "label": "海でゆっくりおよぐ",
             "semanticRole": "orderedLexicalSequence",
-            "readings": ["フォークでさかなをたべる"]
+            "readings": ["うみでゆっくりおよぐ"]
         },
         "metadata": {
             "listening": "unverified-not-performed",
-            "construction": "Exact tableware and existing constituent PCM, including selected English is, spoons and forks."
+            "construction": "Exact constituent PCM, preserving every selected grammatical form."
+        }
+    },
+    {
+        "path": "audio/31a79a4b2c9e129fe8bfce9b6b27a3d5158da242aba556753e49d512a2fb2687.wav",
+        "entryId": "ja:sentence:actions-example-laugh",
+        "label": "友達とわらう",
+        "parts": [
+            {
+                "path": "audio/b735f033be7289c86f7f84621476005af35c3fdec9b7e43f2b7531609f5d70b1.wav",
+                "entryId": "ja:word:tomodachi"
+            },
+            {
+                "path": "audio/606f3c1823245eee4195e2195e8189dad7df8cd21b7e6550a55b5c56e585916b.wav",
+                "entryId": "ja:particle:to"
+            },
+            {
+                "path": "audio/b000661f2c97cbc7b0b38b6b48171c0884d2b96808270f072a85da5e62c6f9d9.wav",
+                "entryId": "ja:word:actions-laugh"
+            },
+            { "pauseMs": 400 }
+        ],
+        "gapMs": 90,
+        "segments": [
+            {
+                "path": "audio/b735f033be7289c86f7f84621476005af35c3fdec9b7e43f2b7531609f5d70b1.wav",
+                "entryId": "ja:word:tomodachi",
+                "startFrame": 2400,
+                "frameCount": 17503
+            },
+            {
+                "path": "audio/606f3c1823245eee4195e2195e8189dad7df8cd21b7e6550a55b5c56e585916b.wav",
+                "entryId": "ja:particle:to",
+                "startFrame": 22063,
+                "frameCount": 12106
+            },
+            {
+                "path": "audio/b000661f2c97cbc7b0b38b6b48171c0884d2b96808270f072a85da5e62c6f9d9.wav",
+                "entryId": "ja:word:actions-laugh",
+                "startFrame": 36329,
+                "frameCount": 14335
+            }
+        ],
+        "sha256": "31a79a4b2c9e129fe8bfce9b6b27a3d5158da242aba556753e49d512a2fb2687",
+        "frames": 62424,
+        "input": {
+            "language": "ja",
+            "label": "友達とわらう",
+            "semanticRole": "orderedLexicalSequence",
+            "readings": ["ともだちとわらう"]
+        },
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "construction": "Exact constituent PCM, preserving every selected grammatical form."
         }
     }
 ]

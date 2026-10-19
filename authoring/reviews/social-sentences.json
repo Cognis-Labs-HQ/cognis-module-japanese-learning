@@ -1,0 +1,177 @@
+[
+    {
+        "entryId": "ja:sentence:social-example-greeting",
+        "label": "先生こんにちは",
+        "reading": "せんせいこんにちわ",
+        "meanings": {
+            "en": "Hello, teacher.",
+            "de": "Guten Tag, Lehrer.",
+            "id": "Halo, Guru.",
+            "ja": "先生、こんにちは。"
+        },
+        "constituentIds": ["ja:word:sensei", "ja:word:social-greeting"],
+        "audioAvailability": "bundled-composition",
+        "audioPath": "audio/cfb40b467b9afd7f83c7a37475616afc48085d9e1e11dc329d15540072a6e94e.wav",
+        "sha256": "cfb40b467b9afd7f83c7a37475616afc48085d9e1e11dc329d15540072a6e94e",
+        "listening": "unverified-not-performed",
+        "textReview": "English practice is independently authored; it is not a one-to-one translation of the Japanese set. Teacher greetings model a classroom address. ありがとうございます is polite thanks appropriate for addressing a teacher. すみません gets attention before asking directions. さようなら is suitable for a classroom farewell but not the default casual see-you phrase.",
+        "sourceAudioEvidence": [
+            {
+                "entryId": "ja:word:sensei",
+                "path": "audio/fbe6fc9dc342d1f031f2ca6bcbb09d9759c5f488797071b2dbbc2e61f95c9c16.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "せんせい",
+                "sha256": "548c3990d2c17a4a91e429b2dc9fee9762d213b180484bdff727b18cc2121f61"
+            },
+            {
+                "entryId": "ja:word:social-greeting",
+                "path": "audio/201867d619fb4ce848f1b933992d1ec9219d540f51f511833c6cdcf580c448bd.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "こんにちは",
+                "sha256": "61c7a102e67651d1fabbb3a5ca1f43a8b1adf488901c2c09a76eef5358eca142"
+            }
+        ],
+        "peak": 26869,
+        "fullScaleSamples": 0
+    },
+    {
+        "entryId": "ja:sentence:social-example-gratitude",
+        "label": "先生ありがとうございます",
+        "reading": "せんせいありがとうございます",
+        "meanings": {
+            "en": "Thank you, teacher.",
+            "de": "Danke, Lehrer.",
+            "id": "Terima kasih, Guru.",
+            "ja": "先生、ありがとうございます。"
+        },
+        "constituentIds": ["ja:word:sensei", "ja:word:social-gratitude"],
+        "audioAvailability": "bundled-composition",
+        "audioPath": "audio/b1baedc937341fad5941788669600a3d89497fcb51b1aa09b6045e38759c5c4f.wav",
+        "sha256": "b1baedc937341fad5941788669600a3d89497fcb51b1aa09b6045e38759c5c4f",
+        "listening": "unverified-not-performed",
+        "textReview": "English practice is independently authored; it is not a one-to-one translation of the Japanese set. Teacher greetings model a classroom address. ありがとうございます is polite thanks appropriate for addressing a teacher. すみません gets attention before asking directions. さようなら is suitable for a classroom farewell but not the default casual see-you phrase.",
+        "sourceAudioEvidence": [
+            {
+                "entryId": "ja:word:sensei",
+                "path": "audio/fbe6fc9dc342d1f031f2ca6bcbb09d9759c5f488797071b2dbbc2e61f95c9c16.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "せんせい",
+                "sha256": "548c3990d2c17a4a91e429b2dc9fee9762d213b180484bdff727b18cc2121f61"
+            },
+            {
+                "entryId": "ja:word:social-gratitude",
+                "path": "audio/c9b899d628475551a35326efd0cd9f464fed35f97692c7caeaf8c4345e593583.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "ありがとうございます",
+                "sha256": "db1036713a48e91742f9e916aa6a62cf0b1ddb6b0e426f68707dbc772c4b5f28"
+            }
+        ],
+        "peak": 26869,
+        "fullScaleSamples": 0
+    },
+    {
+        "entryId": "ja:sentence:social-example-attention",
+        "label": "すみませんえきはどこですか",
+        "reading": "すみませんえきはどこですか",
+        "meanings": {
+            "en": "Excuse me, where is the station?",
+            "de": "Entschuldigung, wo ist der Bahnhof?",
+            "id": "Permisi, di mana stasiunnya?",
+            "ja": "すみません、駅はどこですか。"
+        },
+        "constituentIds": [
+            "ja:word:social-attention",
+            "ja:word:travel-station",
+            "ja:particle:wa",
+            "ja:word:doko",
+            "ja:word:desu",
+            "ja:particle:ka"
+        ],
+        "audioAvailability": "bundled-composition",
+        "audioPath": "audio/67ccbbdcaa204aad20cf38477fbf3c6dc4e0f5ce0f4e76d147f5a947a2ec1a2a.wav",
+        "sha256": "67ccbbdcaa204aad20cf38477fbf3c6dc4e0f5ce0f4e76d147f5a947a2ec1a2a",
+        "listening": "unverified-not-performed",
+        "textReview": "English practice is independently authored; it is not a one-to-one translation of the Japanese set. Teacher greetings model a classroom address. ありがとうございます is polite thanks appropriate for addressing a teacher. すみません gets attention before asking directions. さようなら is suitable for a classroom farewell but not the default casual see-you phrase.",
+        "sourceAudioEvidence": [
+            {
+                "entryId": "ja:word:social-attention",
+                "path": "audio/c47df36bf46d362d7c5467d22eceb1a7602119b83e326eb52f090e272428974a.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "すみません",
+                "sha256": "fcd9fc50f3b1c2f1c49d9f9a5f3a567944cbffbe4dd35235f90eff73095f08c4"
+            },
+            {
+                "entryId": "ja:word:travel-station",
+                "path": "audio/47cfbf034038630b89f3346d609b2f0a81a08d7b18bf456f8dfc9cdff0a36d67.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "えき",
+                "sha256": "75735ae64d1e8b8f1fc9a9d70f18509dc5bb7e597b15d1369c938b909b1b5d46"
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "path": "audio/d7c9e57654e559dfba3bd6f78c2f27416a61f8b28d56145d84a62fe25b70c94d.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "わ",
+                "sha256": "03b8d36aab677f09d2ecaad611a22b15785f0c717e6d6983dc5ef47296670c54"
+            },
+            {
+                "entryId": "ja:word:doko",
+                "path": "audio/d8e8d38bb87e5846270a85a0031c99310edbc497f365f2a8fbb4ac49a10ddba3.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "どこ",
+                "sha256": "e7b6f83c09eb78672e721a848657edbb8e685f0b894c90928134c3f0d654df66"
+            },
+            {
+                "entryId": "ja:word:desu",
+                "path": "audio/2959a5dcab722b7d5c39f67845f1d6a3d6ede5f23e554e9547bca0e6cb62c56b.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "です",
+                "sha256": "d0234f8c988b83fef6bd73c37296bf1a45c0e71f6afc96ac32aa4213e3deb89e"
+            },
+            {
+                "entryId": "ja:particle:ka",
+                "path": "audio/43ee7a601b45742716f8c1c424c576992297faf0a3ec140047ad194b682f7edf.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "か",
+                "sha256": "da467a24b8035b0b6dc37491478a905c5c082db3d216ea1fc1553e02cd841f39"
+            }
+        ],
+        "peak": 26869,
+        "fullScaleSamples": 0
+    },
+    {
+        "entryId": "ja:sentence:social-example-farewell",
+        "label": "先生さようなら",
+        "reading": "せんせいさようなら",
+        "meanings": {
+            "en": "Goodbye, teacher.",
+            "de": "Auf Wiedersehen, Lehrer.",
+            "id": "Selamat tinggal, Guru.",
+            "ja": "先生、さようなら。"
+        },
+        "constituentIds": ["ja:word:sensei", "ja:word:social-farewell"],
+        "audioAvailability": "bundled-composition",
+        "audioPath": "audio/f8ad19bfa489d91f9d374b76ee56132bb288b1ed9c25bcbdc3c380bea2e48f62.wav",
+        "sha256": "f8ad19bfa489d91f9d374b76ee56132bb288b1ed9c25bcbdc3c380bea2e48f62",
+        "listening": "unverified-not-performed",
+        "textReview": "English practice is independently authored; it is not a one-to-one translation of the Japanese set. Teacher greetings model a classroom address. ありがとうございます is polite thanks appropriate for addressing a teacher. すみません gets attention before asking directions. さようなら is suitable for a classroom farewell but not the default casual see-you phrase.",
+        "sourceAudioEvidence": [
+            {
+                "entryId": "ja:word:sensei",
+                "path": "audio/fbe6fc9dc342d1f031f2ca6bcbb09d9759c5f488797071b2dbbc2e61f95c9c16.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "せんせい",
+                "sha256": "548c3990d2c17a4a91e429b2dc9fee9762d213b180484bdff727b18cc2121f61"
+            },
+            {
+                "entryId": "ja:word:social-farewell",
+                "path": "audio/57de8aef1fdd2c13421228ce70b2ff644aab7d97005d06aa0cbb9bf9c2311ef1.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "さようなら",
+                "sha256": "67957a95dadfea1b25da92a192cdc5b6264686dd8600ca1803b12a52519d5f81"
+            }
+        ],
+        "peak": 26869,
+        "fullScaleSamples": 0
+    }
+]

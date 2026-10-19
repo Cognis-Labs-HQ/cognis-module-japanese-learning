@@ -1,5 +1,67 @@
 [
     {
+        "theme": "fruit",
+        "newDistinctVocabularyCount": 4,
+        "vocabulary": [
+            {
+                "entryId": "ja:word:fruit-peach",
+                "label": "もも"
+            },
+            {
+                "entryId": "ja:word:fruit-pear",
+                "label": "なし"
+            },
+            {
+                "entryId": "ja:word:fruit-watermelon",
+                "label": "すいか"
+            },
+            {
+                "entryId": "ja:word:fruit-pineapple",
+                "label": "パイナップル"
+            }
+        ],
+        "newExampleCount": 4,
+        "exampleIds": [
+            "ja:sentence:fruit-example-peach",
+            "ja:sentence:fruit-example-pear",
+            "ja:sentence:fruit-example-watermelon",
+            "ja:sentence:fruit-example-pineapple"
+        ],
+        "recordedGrammaticalFormCount": 0,
+        "vocabularyAudit": "authoring/reviews/fruit-vocabulary.json"
+    },
+    {
+        "theme": "furnishings",
+        "newDistinctVocabularyCount": 4,
+        "vocabulary": [
+            {
+                "entryId": "ja:word:furnishings-sofa",
+                "label": "ソファ"
+            },
+            {
+                "entryId": "ja:word:furnishings-lamp",
+                "label": "ランプ"
+            },
+            {
+                "entryId": "ja:word:furnishings-mirror",
+                "label": "かがみ"
+            },
+            {
+                "entryId": "ja:word:furnishings-pillow",
+                "label": "まくら"
+            }
+        ],
+        "newExampleCount": 4,
+        "exampleIds": [
+            "ja:sentence:furnishings-example-sofa",
+            "ja:sentence:furnishings-example-lamp",
+            "ja:sentence:furnishings-example-mirror",
+            "ja:sentence:furnishings-example-pillow"
+        ],
+        "recordedGrammaticalFormCount": 0,
+        "vocabularyAudit": "authoring/reviews/furnishings-vocabulary.json"
+    },
+    {
         "theme": "household",
         "newDistinctVocabularyCount": 4,
         "vocabulary": [
@@ -246,62 +308,5 @@
         ],
         "recordedGrammaticalFormCount": 0,
         "vocabularyAudit": "authoring/reviews/seasons-vocabulary.json"
-    },
-    {
-        "theme": "tableware",
-        "newDistinctVocabularyCount": 4,
-        "vocabulary": [
-            {
-                "entryId": "ja:word:tableware-cup",
-                "label": "カップ"
-            },
-            {
-                "entryId": "ja:word:tableware-plate",
-                "label": "さら"
-            },
-            {
-                "entryId": "ja:word:tableware-spoon",
-                "label": "スプーン"
-            },
-            {
-                "entryId": "ja:word:tableware-fork",
-                "label": "フォーク"
-            }
-        ],
-        "newExampleCount": 4,
-        "exampleIds": [
-            "ja:sentence:tableware-example-cup",
-            "ja:sentence:tableware-example-plate",
-            "ja:sentence:tableware-example-spoon",
-            "ja:sentence:tableware-example-fork"
-        ],
-        "recordedGrammaticalFormCount": 0,
-        "vocabularyAudit": "authoring/reviews/tableware-vocabulary.json"
-    },
-    {
-        "theme": "time",
-        "newDistinctVocabularyCount": 4,
-        "vocabulary": [
-            {
-                "entryId": "ja:word:time-tomorrow",
-                "label": "あした"
-            },
-            {
-                "entryId": "ja:word:time-yesterday",
-                "label": "きのう"
-            },
-            {
-                "entryId": "ja:word:time-soon",
-                "label": "もうすぐ"
-            },
-            {
-                "entryId": "ja:word:time-later",
-                "label": "あとで"
-            }
-        ],
-        "newExampleCount": 0,
-        "exampleIds": [],
-        "recordedGrammaticalFormCount": 0,
-        "vocabularyAudit": "authoring/reviews/time-vocabulary.json"
     }
 ]

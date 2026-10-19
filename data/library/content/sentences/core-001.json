@@ -1,0 +1,117 @@
+[
+    {
+        "id": "ja:sentence:core-example-read",
+        "label": "ノートをよむ",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/cb63aef08c433d01e39dff0aed28f771c2a6382bec9f0663d8d6cae329d0f7fe.wav",
+            "pronunciation": ["ノートをよむ"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:school-notebook",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:core-read",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:definition:core-example-read",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:core-example-write",
+        "label": "ノートにかく",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/f38459c117f8e3469f82dc9e6846565a8700fe0b4e89892d26743c74582bdabd.wav",
+            "pronunciation": ["ノートにかく"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:school-notebook",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:ni",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:core-write",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:definition:core-example-write",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:core-example-speak",
+        "label": "友達とはなす",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/531c37115cc931b902b4713bee43f911d7aebed88dae570e96794ecb9940a6d4.wav",
+            "pronunciation": ["ともだちとはなす"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:tomodachi",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:to",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:core-speak",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:definition:core-example-speak",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:core-example-sleep",
+        "label": "あとでねる",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/1a33f8d23e1279206877c5e2af178c7d4055893b489f430d2ccd8566718bbf1d.wav",
+            "pronunciation": ["あとでねる"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:time-later",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:word:core-sleep",
+                "relation": "words",
+                "position": 1
+            },
+            {
+                "entryId": "ja:definition:core-example-sleep",
+                "relation": "definitions"
+            }
+        ]
+    }
+]

@@ -146,6 +146,18 @@ Add jump, swim, laugh and cry with inspected illustrations and natural examples.
 
 Add heavy, light, easy and difficult with contextual illustrations and sense notes. Cover eight English degree forms and twelve Japanese i-adjective forms. Examples use adjective predicates and nominalized activities. Update the curriculum coverage audit and cumulative totals. Listening remains unverified.
 
+## Frequency and Repetition
+
+Add often, sometimes, usually and again with contextual scenes and independently authored examples. Explain that pictures do not define numerical frequencies. Preserve exact constituent audio and source evidence; listening remains unverified.
+
+## Reading, Writing and Rest
+
+Add Japanese reading, writing, speaking and sleeping predicates with thirty-two recorded forms. Reuse existing English vocabulary in new practice. Explain writing surfaces, conversation partners and the contextual meaning of 寝る. Preserve earlier content and exact audio; listening remains unverified.
+
+## Everyday Exchanges
+
+Add Japanese daytime greetings, polite thanks, attention-getting and farewells with contextual artwork and register notes. Add independent English conversational practice without forcing phrase equivalence. Link the spoken わ in こんにちは correctly and retain source evidence. Listening remains unverified.
+
 ## Commits
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)

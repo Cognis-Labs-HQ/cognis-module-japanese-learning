@@ -146,6 +146,18 @@ Tambahkan melompat, berenang, tertawa, dan menangis dengan gambar yang diperiksa
 
 Tambahkan berat, ringan, mudah, dan sulit dengan ilustrasi kontekstual serta catatan makna. Cakup delapan bentuk perbandingan Inggris dan dua belas bentuk adjektiva i Jepang. Contoh memakai predikat adjektiva dan kegiatan yang dinominalkan. Perbarui audit cakupan kurikulum dan jumlah kumulatif. Pemeriksaan pendengaran belum dilakukan.
 
+## Frekuensi dan Pengulangan
+
+Tambahkan sering, kadang-kadang, biasanya, dan lagi dengan adegan kontekstual serta contoh mandiri. Gambar tidak menentukan frekuensi numerik. Pertahankan audio unsur persis dan bukti sumber; pemeriksaan pendengaran belum dilakukan.
+
+## Membaca, Menulis, dan Istirahat
+
+Tambahkan predikat Jepang untuk membaca, menulis, berbicara, dan tidur dengan tiga puluh dua bentuk rekaman. Gunakan kosakata Inggris yang ada dalam latihan baru. Jelaskan permukaan tulisan, teman bicara, dan makna 寝る sesuai konteks. Pertahankan konten lama dan audio persis; pemeriksaan pendengaran belum dilakukan.
+
+## Percakapan Sehari-hari
+
+Tambahkan sapaan siang, terima kasih sopan, permintaan perhatian, dan perpisahan Jepang dengan gambar kontekstual serta catatan ragam. Tambahkan latihan percakapan Inggris mandiri tanpa memaksakan kesetaraan ungkapan. Tautkan bunyi わ dalam こんにちは dengan benar dan simpan bukti sumber. Pemeriksaan pendengaran belum dilakukan.
+
 ## Komit
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)

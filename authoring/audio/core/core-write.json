@@ -1,0 +1,23 @@
+{
+    "httpStatus": 200,
+    "voiceId": "xya0RvcJtofTcFTOdX4E",
+    "request": {
+        "text": "書く",
+        "model_id": "eleven_flash_v2_5",
+        "seed": 42,
+        "voice_settings": {
+            "stability": 0.9,
+            "similarity_boost": 0.85,
+            "style": 0,
+            "use_speaker_boost": true,
+            "speed": 0.9
+        },
+        "language_code": "ja",
+        "apply_text_normalization": "off"
+    },
+    "headers": {
+        "request-id": "BaAFwFXkQYTxFSjl5mE7",
+        "character-cost": "1",
+        "content-type": "audio/pcm"
+    }
+}

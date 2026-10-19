@@ -146,6 +146,18 @@ Springen, Schwimmen, Lachen und Weinen mit geprüften Bildern und natürlichen B
 
 Schwer, leicht, einfach und schwierig mit Kontextbildern und Bedeutungshinweisen ergänzen. Acht englische Steigerungsformen und zwölf japanische I-Adjektivformen abdecken. Beispiele nutzen Adjektivprädikate und nominalisierte Tätigkeiten. Lehrplanabdeckung und kumulative Zählung aktualisieren. Die Hörprüfung steht aus.
 
+## Häufigkeit und Wiederholung
+
+Oft, manchmal, gewöhnlich und wieder mit Kontextbildern und eigenständig verfassten Beispielen ergänzen. Bilder definieren keine zahlenmäßigen Häufigkeiten. Exakte Audiosegmente und Quellenbelege bewahren; die Hörprüfung steht aus.
+
+## Lesen, Schreiben und Ruhe
+
+Japanische Verben für Lesen, Schreiben, Sprechen und Schlafen mit zweiunddreißig aufgenommenen Formen ergänzen. Bestehende englische Wörter in neuen Übungen verwenden. Schreibflächen, Gesprächspartner und die kontextabhängige Bedeutung von 寝る erläutern. Frühere Inhalte und exaktes Audio bewahren; die Hörprüfung steht aus.
+
+## Alltägliche Gespräche
+
+Japanische Tagesgrüße, höflichen Dank, Aufmerksamkeitssignale und Abschiedsgrüße mit Kontextbildern und Registerhinweisen ergänzen. Eigenständige englische Gesprächsübungen ohne erzwungene Entsprechungen hinzufügen. Das gesprochene わ in こんにちは korrekt verknüpfen und Quellenbelege bewahren. Die Hörprüfung steht aus.
+
 ## Commits
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)

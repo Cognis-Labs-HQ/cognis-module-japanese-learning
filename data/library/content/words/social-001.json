@@ -1,0 +1,335 @@
+[
+    {
+        "id": "ja:word:complete-pronunciation-social-greeting",
+        "label": "こんにちわ",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["こんにちわ"],
+            "audio": "audio/201867d619fb4ce848f1b933992d1ec9219d540f51f511833c6cdcf580c448bd.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:ko",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:n",
+                        "relation": "reading-kana",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:ni",
+                        "relation": "reading-kana",
+                        "position": 2
+                    },
+                    {
+                        "entryId": "ja:char:chi",
+                        "relation": "reading-kana",
+                        "position": 3
+                    },
+                    {
+                        "entryId": "ja:char:wa",
+                        "relation": "reading-kana",
+                        "position": 4
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:social-greeting",
+        "label": "こんにちは",
+        "class": "lexical:interjection",
+        "fields": {
+            "pronunciation": ["こんにちわ"],
+            "usage_notes": {
+                "en": "A daytime greeting; the final は is pronounced wa. Written こんにちは, reading こんにちわ. The greeting scene cannot establish exact wording or social register by itself.",
+                "de": "Ein Tagesgruß; das abschließende は wird wa gesprochen. Geschrieben こんにちは, Aussprache こんにちわ. Das Begrüßungsbild legt Wortlaut und Register nicht allein fest.",
+                "id": "Sapaan siang hari; は terakhir diucapkan wa. Ditulis こんにちは, dibaca こんにちわ. Gambar sapaan tidak menentukan kata atau ragam sosial secara pasti.",
+                "ja": "昼間のあいさつ。末尾のははワと発音する。表記はこんにちは、読みはこんにちわ。画像だけで正確な発話や待遇の程度は決まらない。"
+            },
+            "reference_images": [
+                "images/8b03eee8eaf8eeffa10505705523edd9e687f48f02d339b2425d3296f1d61456.jpg"
+            ],
+            "audio": "audio/201867d619fb4ce848f1b933992d1ec9219d540f51f511833c6cdcf580c448bd.wav"
+        },
+        "tags": ["social"],
+        "references": [
+            {
+                "entryId": "ja:definition:social-greeting",
+                "relation": "definitions"
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-social-greeting",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:complete-pronunciation-social-gratitude",
+        "label": "ありがとうございます",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["ありがとうございます"],
+            "audio": "audio/c9b899d628475551a35326efd0cd9f464fed35f97692c7caeaf8c4345e593583.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:a",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:ri",
+                        "relation": "reading-kana",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:ga",
+                        "relation": "reading-kana",
+                        "position": 2
+                    },
+                    {
+                        "entryId": "ja:char:to",
+                        "relation": "reading-kana",
+                        "position": 3
+                    },
+                    {
+                        "entryId": "ja:char:u",
+                        "relation": "reading-kana",
+                        "position": 4
+                    },
+                    {
+                        "entryId": "ja:char:go",
+                        "relation": "reading-kana",
+                        "position": 5
+                    },
+                    {
+                        "entryId": "ja:char:za",
+                        "relation": "reading-kana",
+                        "position": 6
+                    },
+                    {
+                        "entryId": "ja:char:i",
+                        "relation": "reading-kana",
+                        "position": 7
+                    },
+                    {
+                        "entryId": "ja:char:ma",
+                        "relation": "reading-kana",
+                        "position": 8
+                    },
+                    {
+                        "entryId": "ja:char:su",
+                        "relation": "reading-kana",
+                        "position": 9
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:social-gratitude",
+        "label": "ありがとうございます",
+        "class": "lexical:interjection",
+        "fields": {
+            "pronunciation": ["ありがとうございます"],
+            "usage_notes": {
+                "en": "Polite thanks, suitable for a teacher or someone outside a close relationship. ありがとう alone is more familiar. Preserve the long とう sound. The helpful scene supports gratitude but cannot determine exact wording.",
+                "de": "Höflicher Dank, passend gegenüber Lehrkräften oder weniger vertrauten Personen. ありがとう allein ist vertrauter. Den langen とう-Laut bewahren. Die Hilfsszene stützt Dankbarkeit, legt den Wortlaut aber nicht fest.",
+                "id": "Ucapan terima kasih sopan, sesuai untuk guru atau orang yang tidak akrab. ありがとう saja lebih akrab. Pertahankan bunyi panjang とう. Adegan bantuan mendukung rasa terima kasih, bukan kata-kata tertentu.",
+                "ja": "先生や親しくない相手にも使える丁寧な感謝。ありがとうだけならより親しい調子。とうの長音を保つ。手助けの場面は感謝を補うが、正確な発話は特定しない。"
+            },
+            "reference_images": [
+                "images/2e41c9a5ddddd56803d890f628a1761eeb14aa7a40b9406fd1f336196af00e49.jpg"
+            ],
+            "audio": "audio/c9b899d628475551a35326efd0cd9f464fed35f97692c7caeaf8c4345e593583.wav"
+        },
+        "tags": ["social"],
+        "references": [
+            {
+                "entryId": "ja:definition:social-gratitude",
+                "relation": "definitions"
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-social-gratitude",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:complete-pronunciation-social-attention",
+        "label": "すみません",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["すみません"],
+            "audio": "audio/c47df36bf46d362d7c5467d22eceb1a7602119b83e326eb52f090e272428974a.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:su",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:mi",
+                        "relation": "reading-kana",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:ma",
+                        "relation": "reading-kana",
+                        "position": 2
+                    },
+                    {
+                        "entryId": "ja:char:se",
+                        "relation": "reading-kana",
+                        "position": 3
+                    },
+                    {
+                        "entryId": "ja:char:n",
+                        "relation": "reading-kana",
+                        "position": 4
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:social-attention",
+        "label": "すみません",
+        "class": "lexical:interjection",
+        "fields": {
+            "pronunciation": ["すみません"],
+            "usage_notes": {
+                "en": "Polite excuse me to get attention before a question here. すみません also serves as an apology and sometimes acknowledges trouble taken by another person; those functions depend on context.",
+                "de": "Hier höfliches Entschuldigung, um vor einer Frage Aufmerksamkeit zu erbitten. すみません kann auch eine Entschuldigung oder die Anerkennung fremder Mühe ausdrücken; das hängt vom Kontext ab.",
+                "id": "Di sini berarti permisi untuk meminta perhatian sebelum bertanya. すみません juga dapat meminta maaf atau mengakui kerepotan orang lain; fungsi itu bergantung konteks.",
+                "ja": "ここでは質問の前に注意を引く丁寧な呼びかけ。すみませんは謝罪や相手の手間への気遣いにも使われ、機能は文脈による。"
+            },
+            "reference_images": [
+                "images/2113557a440b49f616da9ec2c6166ea8c2eff6017ee595885485b33caada341d.jpg"
+            ],
+            "audio": "audio/c47df36bf46d362d7c5467d22eceb1a7602119b83e326eb52f090e272428974a.wav"
+        },
+        "tags": ["social"],
+        "references": [
+            {
+                "entryId": "ja:definition:social-attention",
+                "relation": "definitions"
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-social-attention",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:complete-pronunciation-social-farewell",
+        "label": "さようなら",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["さようなら"],
+            "audio": "audio/57de8aef1fdd2c13421228ce70b2ff644aab7d97005d06aa0cbb9bf9c2311ef1.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:sa",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:yo",
+                        "relation": "reading-kana",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:u",
+                        "relation": "reading-kana",
+                        "position": 2
+                    },
+                    {
+                        "entryId": "ja:char:na",
+                        "relation": "reading-kana",
+                        "position": 3
+                    },
+                    {
+                        "entryId": "ja:char:ra",
+                        "relation": "reading-kana",
+                        "position": 4
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:social-farewell",
+        "label": "さようなら",
+        "class": "lexical:interjection",
+        "fields": {
+            "pronunciation": ["さようなら"],
+            "usage_notes": {
+                "en": "A farewell, including established school leave-taking. It can sound more final or formal than casual see you; not a universal substitute for じゃあね or またね. Preserve the long よう sound.",
+                "de": "Ein Abschiedsgruß, etwa beim üblichen Schulabschied. Kann endgültiger oder förmlicher als ein lockeres Bis dann wirken; kein allgemeiner Ersatz für じゃあね oder またね. Den langen よう-Laut bewahren.",
+                "id": "Salam perpisahan, termasuk saat berpisah di sekolah. Dapat terdengar lebih final atau formal daripada sampai nanti; bukan pengganti universal じゃあね atau またね. Pertahankan bunyi panjang よう.",
+                "ja": "学校などの定型的な別れのあいさつにも使う。気軽なまたねより改まった、または区切りのある響きになる場合があり、じゃあねやまたねの万能な代用ではない。ようの長音を保つ。"
+            },
+            "reference_images": [
+                "images/f6871cdc1f71084c49eb3587db404f7b01b1a220ee418dee0854f49255f2049c.jpg"
+            ],
+            "audio": "audio/57de8aef1fdd2c13421228ce70b2ff644aab7d97005d06aa0cbb9bf9c2311ef1.wav"
+        },
+        "tags": ["social"],
+        "references": [
+            {
+                "entryId": "ja:definition:social-farewell",
+                "relation": "definitions"
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-social-farewell",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    }
+]

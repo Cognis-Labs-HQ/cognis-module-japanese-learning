@@ -222,6 +222,37 @@
         "vocabularyAudit": "authoring/reviews/colors-vocabulary.json"
     },
     {
+        "theme": "core",
+        "newDistinctVocabularyCount": 4,
+        "vocabulary": [
+            {
+                "entryId": "ja:word:core-read",
+                "label": "よむ"
+            },
+            {
+                "entryId": "ja:word:core-write",
+                "label": "かく"
+            },
+            {
+                "entryId": "ja:word:core-speak",
+                "label": "はなす"
+            },
+            {
+                "entryId": "ja:word:core-sleep",
+                "label": "ねる"
+            }
+        ],
+        "newExampleCount": 4,
+        "exampleIds": [
+            "ja:sentence:core-example-read",
+            "ja:sentence:core-example-write",
+            "ja:sentence:core-example-speak",
+            "ja:sentence:core-example-sleep"
+        ],
+        "recordedGrammaticalFormCount": 32,
+        "vocabularyAudit": "authoring/reviews/core-vocabulary.json"
+    },
+    {
         "theme": "directions",
         "newDistinctVocabularyCount": 4,
         "vocabulary": [
@@ -284,65 +315,34 @@
         "vocabularyAudit": "authoring/reviews/fixtures-vocabulary.json"
     },
     {
-        "theme": "fruit",
+        "theme": "frequency",
         "newDistinctVocabularyCount": 4,
         "vocabulary": [
             {
-                "entryId": "ja:word:fruit-peach",
-                "label": "もも"
+                "entryId": "ja:word:frequency-often",
+                "label": "よく"
             },
             {
-                "entryId": "ja:word:fruit-pear",
-                "label": "なし"
+                "entryId": "ja:word:frequency-sometimes",
+                "label": "ときどき"
             },
             {
-                "entryId": "ja:word:fruit-watermelon",
-                "label": "すいか"
+                "entryId": "ja:word:frequency-usually",
+                "label": "たいてい"
             },
             {
-                "entryId": "ja:word:fruit-pineapple",
-                "label": "パイナップル"
+                "entryId": "ja:word:frequency-again",
+                "label": "また"
             }
         ],
         "newExampleCount": 4,
         "exampleIds": [
-            "ja:sentence:fruit-example-peach",
-            "ja:sentence:fruit-example-pear",
-            "ja:sentence:fruit-example-watermelon",
-            "ja:sentence:fruit-example-pineapple"
+            "ja:sentence:frequency-example-often",
+            "ja:sentence:frequency-example-sometimes",
+            "ja:sentence:frequency-example-usually",
+            "ja:sentence:frequency-example-again"
         ],
         "recordedGrammaticalFormCount": 0,
-        "vocabularyAudit": "authoring/reviews/fruit-vocabulary.json"
-    },
-    {
-        "theme": "furnishings",
-        "newDistinctVocabularyCount": 4,
-        "vocabulary": [
-            {
-                "entryId": "ja:word:furnishings-sofa",
-                "label": "ソファ"
-            },
-            {
-                "entryId": "ja:word:furnishings-lamp",
-                "label": "ランプ"
-            },
-            {
-                "entryId": "ja:word:furnishings-mirror",
-                "label": "かがみ"
-            },
-            {
-                "entryId": "ja:word:furnishings-pillow",
-                "label": "まくら"
-            }
-        ],
-        "newExampleCount": 4,
-        "exampleIds": [
-            "ja:sentence:furnishings-example-sofa",
-            "ja:sentence:furnishings-example-lamp",
-            "ja:sentence:furnishings-example-mirror",
-            "ja:sentence:furnishings-example-pillow"
-        ],
-        "recordedGrammaticalFormCount": 0,
-        "vocabularyAudit": "authoring/reviews/furnishings-vocabulary.json"
+        "vocabularyAudit": "authoring/reviews/frequency-vocabulary.json"
     }
 ]
