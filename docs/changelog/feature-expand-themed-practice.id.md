@@ -294,3 +294,4 @@ Menambahkan inside/outside sebagai adverbia Inggris dan なか/そと sebagai no
 - [ae2df69](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/ae2df69113a6720d2a3fa2d75b550be0611debcd)
 - [55adf6b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/55adf6b711bf6367dcbfba0e6e5b22d283f84968)
 - [db7e5b0](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/db7e5b05eaa2ac4a777ed3b3000937ec55c15203)
+- [e8a1c4d](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/e8a1c4d5c21241ab737f0419fe241d418c96a4f3)
