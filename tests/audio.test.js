@@ -138,7 +138,11 @@ test("every packaged clip has the designated language voice, stable settings, no
         });
         assert.equal(
             clip.request.language_code,
-            inventory.language === "ja" ? "ja" : undefined,
+            inventory.language === "ja" &&
+                clip.metadata?.languageSelection !==
+                    "native-input-autodetection"
+                ? "ja"
+                : undefined,
         );
         assert.ok(Number.isInteger(clip.request.seed));
     }
@@ -312,7 +316,7 @@ test("unbundled lexical synthesis uses only this language and its designated def
     assert.equal(requests.length, 1);
 });
 
-test("small-kana lexical recordings use explicit Japanese requests and retain the canonical school spelling", () => {
+test("small-kana lexical recordings retain native Japanese requests and the canonical school spelling", () => {
     const affected = inventory.recordings.filter((clip) =>
         clip.inputs.some(
             (input) =>
@@ -324,8 +328,19 @@ test("small-kana lexical recordings use explicit Japanese requests and retain th
     );
     assert.ok(affected.length > 30);
     for (const clip of affected) {
-        assert.equal(clip.request.language_code, "ja");
-        assert.equal(clip.request.apply_text_normalization, "off");
+        if (clip.metadata?.languageSelection === "native-input-autodetection") {
+            assert.equal(clip.request.language_code, undefined);
+            assert.match(
+                clip.request.text,
+                /^[\p{Script=Hiragana}\p{Script=Katakana}ー]+$/u,
+            );
+        } else assert.equal(clip.request.language_code, "ja");
+        assert.equal(
+            clip.request.apply_text_normalization,
+            clip.metadata?.languageSelection === "native-input-autodetection"
+                ? undefined
+                : "off",
+        );
         assert.equal(clip.voiceId, "xya0RvcJtofTcFTOdX4E");
     }
     const school = affected.find((clip) =>
@@ -397,7 +412,13 @@ test("unbundled Japanese kana and kanji never send romanized readings to speech"
             clip.request.text,
             /[\p{Script=Hiragana}\p{Script=Katakana}\p{Script=Han}]/u,
         );
-        assert.equal(clip.request.language_code, "ja");
+        if (clip.metadata?.languageSelection === "native-input-autodetection") {
+            assert.equal(clip.request.language_code, undefined);
+            assert.match(
+                clip.request.text,
+                /^[\p{Script=Hiragana}\p{Script=Katakana}ー]+$/u,
+            );
+        } else assert.equal(clip.request.language_code, "ja");
         assert.equal(clip.voiceId, "xya0RvcJtofTcFTOdX4E");
     }
 });

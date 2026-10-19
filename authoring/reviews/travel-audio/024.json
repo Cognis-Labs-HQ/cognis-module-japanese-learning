@@ -1,0 +1,37 @@
+{
+    "path": "audio/3fe568b6e0432dda30a23cec995011df86e16b27042b9e57be4e7df616fd8878.wav",
+    "text": "しゅっぱつして",
+    "targets": [
+        {
+            "entryId": "ja:word:travel-depart",
+            "form": "te-form"
+        }
+    ],
+    "voiceId": "xya0RvcJtofTcFTOdX4E",
+    "request": {
+        "text": "しゅっぱつして",
+        "model_id": "eleven_flash_v2_5",
+        "seed": 42,
+        "voice_settings": {
+            "stability": 0.9,
+            "similarity_boost": 0.85,
+            "style": 0,
+            "use_speaker_boost": true,
+            "speed": 0.9
+        }
+    },
+    "response": {
+        "request-id": "lMOG1Bcy8mRASIXpvR5R",
+        "character-cost": "4",
+        "content-type": "audio/pcm"
+    },
+    "sourcePath": "authoring/audio/travel/ja-024.pcm",
+    "sourceSha256": "c4ad27a4222522c8953c81d9c0fd9018f4fb064f3be87c3fca8ea58d6d6c8f2f",
+    "sha256": "3fe568b6e0432dda30a23cec995011df86e16b27042b9e57be4e7df616fd8878",
+    "rawPeak": 15530,
+    "gain": 1,
+    "paddingFramesEachSide": 480,
+    "frames": 28824,
+    "listening": "unverified-not-performed",
+    "technicalReview": "Valid non-silent mono PCM16 at 24000 Hz; preserved all source frames, bounded peak without trimming, padded endpoints. Text and target forms checked against source specification; not listening evidence."
+}

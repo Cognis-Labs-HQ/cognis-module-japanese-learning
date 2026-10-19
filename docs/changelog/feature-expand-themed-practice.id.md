@@ -34,6 +34,10 @@ Enam contoh belanja dan satu dek latihan membahas pilihan, kebutuhan, deskripsi,
 
 Perbaiki makna kamus bahasa Jerman, Indonesia, dan Jepang untuk tiba, berangkat, membeli, dan menunggu; pertahankan bacaan dan bentuknya.
 
+## Audio materi perjalanan
+
+Buat rekaman kata dan bentuk perjalanan yang diizinkan dengan suara yang ditetapkan, simpan PCM sumber serta asal permintaan, lalu gabungkan kalimat perjalanan dan belanja yang tersisa dari unsur yang tepat. Pemeriksaan langganan tidak memiliki izin user_read; sintesis berhasil. Pemeriksaan melalui pendengaran tetap belum dilakukan.
+
 ## Komit
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)

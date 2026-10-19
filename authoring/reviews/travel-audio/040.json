@@ -1,0 +1,37 @@
+{
+    "path": "audio/67a0b64427549b32337c106829d1266051682faa74d8a3e39c8bb675f6651d1a.wav",
+    "text": "まちました",
+    "targets": [
+        {
+            "entryId": "ja:word:travel-wait",
+            "form": "polite-past"
+        }
+    ],
+    "voiceId": "xya0RvcJtofTcFTOdX4E",
+    "request": {
+        "text": "まちました",
+        "model_id": "eleven_flash_v2_5",
+        "seed": 42,
+        "voice_settings": {
+            "stability": 0.9,
+            "similarity_boost": 0.85,
+            "style": 0,
+            "use_speaker_boost": true,
+            "speed": 0.9
+        }
+    },
+    "response": {
+        "request-id": "ucJRPWi4TC5suYVhMUkX",
+        "character-cost": "3",
+        "content-type": "audio/pcm"
+    },
+    "sourcePath": "authoring/audio/travel/ja-040.pcm",
+    "sourceSha256": "7ef850c4335a57a2ffe92b1f98d5b0e5c3a8ce1e50621b28b4b78f4450e23740",
+    "sha256": "67a0b64427549b32337c106829d1266051682faa74d8a3e39c8bb675f6651d1a",
+    "rawPeak": 8142,
+    "gain": 1,
+    "paddingFramesEachSide": 480,
+    "frames": 21022,
+    "listening": "unverified-not-performed",
+    "technicalReview": "Valid non-silent mono PCM16 at 24000 Hz; preserved all source frames, bounded peak without trimming, padded endpoints. Text and target forms checked against source specification; not listening evidence."
+}

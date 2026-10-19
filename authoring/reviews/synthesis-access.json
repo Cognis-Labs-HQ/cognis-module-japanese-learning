@@ -10,16 +10,21 @@
     "readOnlyCheck": {
         "endpoint": "GET https://api.elevenlabs.io/v1/user/subscription",
         "httpStatus": 401,
-        "outcome": "authentication-failed",
+        "outcome": "missing-endpoint-permission",
         "alternateRuntimeCredential": "none configured",
-        "personalContextLookup": "unavailable for this conversation"
+        "personalContextLookup": "unavailable for this conversation",
+        "error": {
+            "status": "missing_permissions",
+            "message": "The API key you used is missing the permission user_read to execute this operation."
+        }
     },
     "generation": {
-        "requestsSent": 0,
+        "requestsSent": 44,
         "creditPurchase": false,
         "overageEnabled": false,
         "planChanged": false,
-        "status": "pending-valid-authentication-and-credit-check"
+        "status": "completed",
+        "reportedCharacterCost": 116
     },
     "deduplicatedTravelEstimate": {
         "english": {
@@ -37,5 +42,5 @@
         "totalCharacters": 423,
         "credits": "Cannot verify account quota or voice-specific pricing while authentication returns 401. No paid request attempted."
     },
-    "independentWork": "Continue daily routines and shopping content; reuse exact existing PCM where complete. Missing audio stays absent, not replaced by a broken reference."
+    "independentWork": "Travel word/form recordings and exact constituent sentence compositions now available; listening unverified."
 }

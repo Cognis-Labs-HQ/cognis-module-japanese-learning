@@ -95,7 +95,7 @@ test("travel sentence constituents reconstruct every displayed form and Japanese
                 parts.map(({ reading }) => reading).join(""),
                 sentence.fields.pronunciation[0],
             );
-        assert.equal(sentence.fields.audio, undefined);
+        assert.match(sentence.fields.audio, /^audio\/[a-f0-9]{64}\.wav$/);
     }
 });
 

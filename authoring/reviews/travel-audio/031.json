@@ -1,0 +1,37 @@
+{
+    "path": "audio/fcddabc390ac7f1283185a5524f4e3d6919ab839ee99a0fbf8ac8a0955eaf7cf.wav",
+    "text": "ホーム",
+    "targets": [
+        {
+            "entryId": "ja:word:travel-platform",
+            "form": "base"
+        }
+    ],
+    "voiceId": "xya0RvcJtofTcFTOdX4E",
+    "request": {
+        "text": "ホーム",
+        "model_id": "eleven_flash_v2_5",
+        "seed": 42,
+        "voice_settings": {
+            "stability": 0.9,
+            "similarity_boost": 0.85,
+            "style": 0,
+            "use_speaker_boost": true,
+            "speed": 0.9
+        }
+    },
+    "response": {
+        "request-id": "ncid8JLnaphm0CiSpNfO",
+        "character-cost": "2",
+        "content-type": "audio/pcm"
+    },
+    "sourcePath": "authoring/audio/travel/ja-031.pcm",
+    "sourceSha256": "0e7e08bbc99593d00595471ee73102ef41b9e70626f0482ca28292fc2c359123",
+    "sha256": "fcddabc390ac7f1283185a5524f4e3d6919ab839ee99a0fbf8ac8a0955eaf7cf",
+    "rawPeak": 16517,
+    "gain": 1,
+    "paddingFramesEachSide": 480,
+    "frames": 17678,
+    "listening": "unverified-not-performed",
+    "technicalReview": "Valid non-silent mono PCM16 at 24000 Hz; preserved all source frames, bounded peak without trimming, padded endpoints. Text and target forms checked against source specification; not listening evidence."
+}

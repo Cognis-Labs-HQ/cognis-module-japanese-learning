@@ -1,0 +1,37 @@
+{
+    "path": "audio/7ac55a92d2129f9237d92d29bda3b1b28ef7add4de031a68bfd0215bb01a54da.wav",
+    "text": "つかない",
+    "targets": [
+        {
+            "entryId": "ja:word:travel-arrive",
+            "form": "negative"
+        }
+    ],
+    "voiceId": "xya0RvcJtofTcFTOdX4E",
+    "request": {
+        "text": "つかない",
+        "model_id": "eleven_flash_v2_5",
+        "seed": 42,
+        "voice_settings": {
+            "stability": 0.9,
+            "similarity_boost": 0.85,
+            "style": 0,
+            "use_speaker_boost": true,
+            "speed": 0.9
+        }
+    },
+    "response": {
+        "request-id": "yInq1p1vyBmuMkIBYLc8",
+        "character-cost": "2",
+        "content-type": "audio/pcm"
+    },
+    "sourcePath": "authoring/audio/travel/ja-003.pcm",
+    "sourceSha256": "e38a48bc578e2a00b2306384b6273583a0fa7af4f4db993a0107b0bb2b25e566",
+    "sha256": "7ac55a92d2129f9237d92d29bda3b1b28ef7add4de031a68bfd0215bb01a54da",
+    "rawPeak": 12032,
+    "gain": 1,
+    "paddingFramesEachSide": 480,
+    "frames": 18793,
+    "listening": "unverified-not-performed",
+    "technicalReview": "Valid non-silent mono PCM16 at 24000 Hz; preserved all source frames, bounded peak without trimming, padded endpoints. Text and target forms checked against source specification; not listening evidence."
+}

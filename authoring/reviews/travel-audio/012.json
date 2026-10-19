@@ -1,0 +1,37 @@
+{
+    "path": "audio/73637ec6e1adafaf5d79573c943341db30a22dc9c17843ade2cee34e5b99c525.wav",
+    "text": "かいます",
+    "targets": [
+        {
+            "entryId": "ja:word:travel-buy",
+            "form": "polite"
+        }
+    ],
+    "voiceId": "xya0RvcJtofTcFTOdX4E",
+    "request": {
+        "text": "かいます",
+        "model_id": "eleven_flash_v2_5",
+        "seed": 42,
+        "voice_settings": {
+            "stability": 0.9,
+            "similarity_boost": 0.85,
+            "style": 0,
+            "use_speaker_boost": true,
+            "speed": 0.9
+        }
+    },
+    "response": {
+        "request-id": "8QnEJcemYEzOgmsbebhQ",
+        "character-cost": "2",
+        "content-type": "audio/pcm"
+    },
+    "sourcePath": "authoring/audio/travel/ja-012.pcm",
+    "sourceSha256": "f76a00c6bc4a029241ed3a28a566272eac94abd50ccea30a3cb27ec646038fa1",
+    "sha256": "73637ec6e1adafaf5d79573c943341db30a22dc9c17843ade2cee34e5b99c525",
+    "rawPeak": 7423,
+    "gain": 1,
+    "paddingFramesEachSide": 480,
+    "frames": 17678,
+    "listening": "unverified-not-performed",
+    "technicalReview": "Valid non-silent mono PCM16 at 24000 Hz; preserved all source frames, bounded peak without trimming, padded endpoints. Text and target forms checked against source specification; not listening evidence."
+}

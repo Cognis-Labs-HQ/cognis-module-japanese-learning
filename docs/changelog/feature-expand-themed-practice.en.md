@@ -34,6 +34,10 @@ Add six shopping examples and a practice deck for choices, needs, descriptions a
 
 Correct German, Indonesian and Japanese dictionary glosses for arrive, depart, buy and wait; preserve readings and forms.
 
+## Travel audio coverage
+
+Generate the authorized travel words and forms with the specified voices, retain source PCM and request provenance, and compose travel and remaining shopping sentences from exact constituents. Subscription lookup lacks user_read permission; TTS succeeds. Listening remains explicitly unverified.
+
 ## Commits
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)
