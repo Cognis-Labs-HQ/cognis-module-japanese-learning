@@ -158,3 +158,4 @@ Add cabbage, mushroom, spinach and lettuce in both modules with inspected illust
 - [b751a25](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/b751a259fcf513b7027b9ed1f8e9d44e952df55c)
 - [a324822](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/a32482268eeb5806df54b3c00a4b13c13b1c8830)
 - [52f7483](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/52f7483d2640aebb8d69ed0b5f20de8f24245260)
+- [61aea8e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/61aea8e3b737bb6313c2307cafd5bd4f169a469e)
