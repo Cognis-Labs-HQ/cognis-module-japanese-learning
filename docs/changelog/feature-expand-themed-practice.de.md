@@ -266,6 +266,10 @@ Ball/racket und ボール/ラケット mit vier geprüften Gerätebildern und vi
 
 Museum/zoo und はくぶつかん/どうぶつえん mit vier geprüften Ortsbildern und vier abwechslungsreichen Beispielen je Sprache ergänzt. Hinweise erklären den Bedeutungsumfang von Museum und bewahren vollständige Lesungen. Museums/zoos haben exakte Aufnahmen; Beispiele üben Ziele, Besichtigen und Warten auf einen Freund. Quellen, Originale und PCM bleiben; die Hörprüfung steht aus.
 
+## Briefe und Postkarten
+
+Letter/postcard und てがみ/はがき mit vier geprüften Bildern, acht Beispielen und zwei exakten englischen Pluralformen ergänzt. Hinweise unterscheiden Briefe von Buchstaben und bewahren das stimmhafte が. Quellen, Originalbilder und exaktes Komponenten-PCM bleiben erhalten. Die Hörprüfung steht aus.
+
 ## Commits
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)

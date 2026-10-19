@@ -1,5 +1,36 @@
 [
     {
+        "theme": "furnishings",
+        "newDistinctVocabularyCount": 4,
+        "vocabulary": [
+            {
+                "entryId": "ja:word:furnishings-sofa",
+                "label": "ソファ"
+            },
+            {
+                "entryId": "ja:word:furnishings-lamp",
+                "label": "ランプ"
+            },
+            {
+                "entryId": "ja:word:furnishings-mirror",
+                "label": "かがみ"
+            },
+            {
+                "entryId": "ja:word:furnishings-pillow",
+                "label": "まくら"
+            }
+        ],
+        "newExampleCount": 4,
+        "exampleIds": [
+            "ja:sentence:furnishings-example-sofa",
+            "ja:sentence:furnishings-example-lamp",
+            "ja:sentence:furnishings-example-mirror",
+            "ja:sentence:furnishings-example-pillow"
+        ],
+        "recordedGrammaticalFormCount": 0,
+        "vocabularyAudit": "authoring/reviews/furnishings-vocabulary.json"
+    },
+    {
         "theme": "greetings",
         "newDistinctVocabularyCount": 4,
         "vocabulary": [
@@ -232,36 +263,5 @@
         ],
         "recordedGrammaticalFormCount": 0,
         "vocabularyAudit": "authoring/reviews/outings-vocabulary.json"
-    },
-    {
-        "theme": "places",
-        "newDistinctVocabularyCount": 4,
-        "vocabulary": [
-            {
-                "entryId": "ja:word:places-library",
-                "label": "としょかん"
-            },
-            {
-                "entryId": "ja:word:places-hospital",
-                "label": "びょういん"
-            },
-            {
-                "entryId": "ja:word:places-supermarket",
-                "label": "スーパー"
-            },
-            {
-                "entryId": "ja:word:places-restaurant",
-                "label": "レストラン"
-            }
-        ],
-        "newExampleCount": 4,
-        "exampleIds": [
-            "ja:sentence:places-example-library",
-            "ja:sentence:places-example-hospital",
-            "ja:sentence:places-example-supermarket",
-            "ja:sentence:places-example-restaurant"
-        ],
-        "recordedGrammaticalFormCount": 0,
-        "vocabularyAudit": "authoring/reviews/places-vocabulary.json"
     }
 ]

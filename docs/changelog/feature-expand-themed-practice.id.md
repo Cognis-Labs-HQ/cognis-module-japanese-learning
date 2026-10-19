@@ -266,6 +266,10 @@ Menambahkan ball/racket dan ボール/ラケット dengan empat gambar peralatan
 
 Menambahkan museum/zoo dan はくぶつかん/どうぶつえん dengan empat gambar tempat yang diperiksa dan empat contoh bervariasi per bahasa. Catatan menjelaskan cakupan museum dan mempertahankan bacaan lengkap. Museums/zoos memiliki rekaman tepat; contoh melatih tujuan, melihat dan menunggu teman. Sumber, gambar asli dan PCM disimpan; pendengaran belum diperiksa.
 
+## Surat dan kartu pos
+
+Menambahkan letter/postcard dan てがみ/はがき dengan empat gambar yang diperiksa, delapan contoh dan dua bentuk jamak Inggris yang tepat. Catatan membedakan surat dari huruf alfabet dan mempertahankan が bersuara. Sumber, gambar asli dan PCM unsur yang tepat disimpan. Pendengaran belum diperiksa.
+
 ## Komit
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)

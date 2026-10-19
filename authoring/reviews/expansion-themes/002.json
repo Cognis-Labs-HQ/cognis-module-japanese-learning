@@ -1,5 +1,28 @@
 [
     {
+        "theme": "correspondence",
+        "newDistinctVocabularyCount": 2,
+        "vocabulary": [
+            {
+                "entryId": "ja:word:correspondence-letter",
+                "label": "てがみ"
+            },
+            {
+                "entryId": "ja:word:correspondence-postcard",
+                "label": "はがき"
+            }
+        ],
+        "newExampleCount": 4,
+        "exampleIds": [
+            "ja:sentence:correspondence-example-write-letter",
+            "ja:sentence:correspondence-example-buy-postcard",
+            "ja:sentence:correspondence-example-receive-letter",
+            "ja:sentence:correspondence-example-postcard-bag"
+        ],
+        "recordedGrammaticalFormCount": 0,
+        "vocabularyAudit": "authoring/reviews/correspondence-vocabulary.json"
+    },
+    {
         "theme": "courtesy",
         "newDistinctVocabularyCount": 2,
         "vocabulary": [
@@ -235,36 +258,5 @@
         ],
         "recordedGrammaticalFormCount": 0,
         "vocabularyAudit": "authoring/reviews/fruit-vocabulary.json"
-    },
-    {
-        "theme": "furnishings",
-        "newDistinctVocabularyCount": 4,
-        "vocabulary": [
-            {
-                "entryId": "ja:word:furnishings-sofa",
-                "label": "ソファ"
-            },
-            {
-                "entryId": "ja:word:furnishings-lamp",
-                "label": "ランプ"
-            },
-            {
-                "entryId": "ja:word:furnishings-mirror",
-                "label": "かがみ"
-            },
-            {
-                "entryId": "ja:word:furnishings-pillow",
-                "label": "まくら"
-            }
-        ],
-        "newExampleCount": 4,
-        "exampleIds": [
-            "ja:sentence:furnishings-example-sofa",
-            "ja:sentence:furnishings-example-lamp",
-            "ja:sentence:furnishings-example-mirror",
-            "ja:sentence:furnishings-example-pillow"
-        ],
-        "recordedGrammaticalFormCount": 0,
-        "vocabularyAudit": "authoring/reviews/furnishings-vocabulary.json"
     }
 ]

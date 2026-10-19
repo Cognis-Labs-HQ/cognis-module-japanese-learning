@@ -1,5 +1,36 @@
 [
     {
+        "theme": "places",
+        "newDistinctVocabularyCount": 4,
+        "vocabulary": [
+            {
+                "entryId": "ja:word:places-library",
+                "label": "としょかん"
+            },
+            {
+                "entryId": "ja:word:places-hospital",
+                "label": "びょういん"
+            },
+            {
+                "entryId": "ja:word:places-supermarket",
+                "label": "スーパー"
+            },
+            {
+                "entryId": "ja:word:places-restaurant",
+                "label": "レストラン"
+            }
+        ],
+        "newExampleCount": 4,
+        "exampleIds": [
+            "ja:sentence:places-example-library",
+            "ja:sentence:places-example-hospital",
+            "ja:sentence:places-example-supermarket",
+            "ja:sentence:places-example-restaurant"
+        ],
+        "recordedGrammaticalFormCount": 0,
+        "vocabularyAudit": "authoring/reviews/places-vocabulary.json"
+    },
+    {
         "theme": "posture",
         "newDistinctVocabularyCount": 2,
         "vocabulary": [
@@ -261,36 +292,5 @@
         ],
         "recordedGrammaticalFormCount": 0,
         "vocabularyAudit": "authoring/reviews/social-vocabulary.json"
-    },
-    {
-        "theme": "stationery",
-        "newDistinctVocabularyCount": 4,
-        "vocabulary": [
-            {
-                "entryId": "ja:word:stationery-eraser",
-                "label": "けしゴム"
-            },
-            {
-                "entryId": "ja:word:stationery-scissors",
-                "label": "はさみ"
-            },
-            {
-                "entryId": "ja:word:stationery-tape",
-                "label": "テープ"
-            },
-            {
-                "entryId": "ja:word:stationery-stapler",
-                "label": "ホチキス"
-            }
-        ],
-        "newExampleCount": 4,
-        "exampleIds": [
-            "ja:sentence:stationery-example-scissors-location",
-            "ja:sentence:stationery-example-buy-eraser",
-            "ja:sentence:stationery-example-tape-question",
-            "ja:sentence:stationery-example-receive-stapler"
-        ],
-        "recordedGrammaticalFormCount": 0,
-        "vocabularyAudit": "authoring/reviews/stationery-vocabulary.json"
     }
 ]

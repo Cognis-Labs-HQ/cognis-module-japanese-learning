@@ -1,0 +1,152 @@
+[
+    {
+        "id": "ja:sentence:correspondence-example-write-letter",
+        "label": "てがみをかく",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/6cf2bda54c0b7ec4e8556c05b680ddc6852988fdf812991ea818a39e37cce877.wav",
+            "pronunciation": ["てがみをかく"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:correspondence-letter",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:core-write",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:definition:correspondence-example-write-letter",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:correspondence-example-buy-postcard",
+        "label": "はがきをかう",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/b79e412f9f1de57517e4a89c398348fbee9470af2fef8ea5d2eb1b92a898f622.wav",
+            "pronunciation": ["はがきをかう"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:correspondence-postcard",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:travel-buy",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:definition:correspondence-example-buy-postcard",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:correspondence-example-receive-letter",
+        "label": "友達からてがみをもらう",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/b70ad0336daf6cdd9e30369c26364d0e17fe3f671d93f1340567d1cd0ae68252.wav",
+            "pronunciation": ["ともだちからてがみをもらう"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:tomodachi",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:kara",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:correspondence-letter",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:exchange-receive",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:correspondence-example-receive-letter",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:correspondence-example-postcard-bag",
+        "label": "はがきはかばんのなかにある",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/e1ec622afa8e7b947966b62750ae10261e657efcabc1df846f2cbef1cf870d9d.wav",
+            "pronunciation": ["はがきはかばんのなかにある"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:correspondence-postcard",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:bag",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:no",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:location-inside",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:particle:ni",
+                "relation": "particles",
+                "position": 5
+            },
+            {
+                "entryId": "ja:word:aru-exist",
+                "relation": "words",
+                "position": 6
+            },
+            {
+                "entryId": "ja:definition:correspondence-example-postcard-bag",
+                "relation": "definitions"
+            }
+        ]
+    }
+]

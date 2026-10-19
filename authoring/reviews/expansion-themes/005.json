@@ -1,5 +1,36 @@
 [
     {
+        "theme": "stationery",
+        "newDistinctVocabularyCount": 4,
+        "vocabulary": [
+            {
+                "entryId": "ja:word:stationery-eraser",
+                "label": "けしゴム"
+            },
+            {
+                "entryId": "ja:word:stationery-scissors",
+                "label": "はさみ"
+            },
+            {
+                "entryId": "ja:word:stationery-tape",
+                "label": "テープ"
+            },
+            {
+                "entryId": "ja:word:stationery-stapler",
+                "label": "ホチキス"
+            }
+        ],
+        "newExampleCount": 4,
+        "exampleIds": [
+            "ja:sentence:stationery-example-scissors-location",
+            "ja:sentence:stationery-example-buy-eraser",
+            "ja:sentence:stationery-example-tape-question",
+            "ja:sentence:stationery-example-receive-stapler"
+        ],
+        "recordedGrammaticalFormCount": 0,
+        "vocabularyAudit": "authoring/reviews/stationery-vocabulary.json"
+    },
+    {
         "theme": "tableware",
         "newDistinctVocabularyCount": 4,
         "vocabulary": [
@@ -241,21 +272,5 @@
         ],
         "recordedGrammaticalFormCount": 0,
         "vocabularyAudit": "authoring/reviews/mealtime.json"
-    },
-    {
-        "theme": "daily",
-        "newDistinctVocabularyCount": 0,
-        "vocabulary": [],
-        "newExampleCount": 6,
-        "exampleIds": [
-            "ja:sentence:daily-go-school",
-            "ja:sentence:daily-walk-friend",
-            "ja:sentence:daily-eat-friend",
-            "ja:sentence:daily-learn-school",
-            "ja:sentence:daily-drink-slowly",
-            "ja:sentence:daily-walk-school-here"
-        ],
-        "recordedGrammaticalFormCount": 0,
-        "vocabularyAudit": "authoring/reviews/daily.json"
     }
 ]
