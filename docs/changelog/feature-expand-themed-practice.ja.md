@@ -244,3 +244,4 @@ give/receiveとあげる/もらうを追加し、各言語に目視確認した�
 - [576e1cc](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/576e1ccdd289b498d4bf144c59f26fa3f98ee3d4)
 - [37937f2](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/37937f2735424478cb8d589fb5fb4851619ae070)
 - [fc64ba5](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/fc64ba5cd273e3387426313717fabe2670af2396)
+- [1f80650](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/1f806500fd8a5176674fbadcaa643853c4d5afb1)
