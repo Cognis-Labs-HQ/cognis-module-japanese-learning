@@ -24,6 +24,7 @@ for (const theme of [
     "requests",
     "greetings",
     "belongings",
+    "exchange",
     "reading-time",
     "comprehension",
     "frequency",

@@ -715,5 +715,43 @@
             "listening": "unverified-not-performed",
             "sourcePcmSha256": "7e8c7b5a0877fd4e0c673d2d972ecdffe38f64e50376bbc747f1583d3511b5cb"
         }
+    },
+    {
+        "path": "audio/4aa092b9086c5ae3d979758d3317f0a6a8f27c2a84ef4d55829c2bbc67656d3b.wav",
+        "text": "あげる",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "あげる",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "あげる",
+                "semanticRole": "lexicalUnit",
+                "readings": ["あげる"]
+            }
+        ],
+        "entries": [
+            "ja:word:exchange-give",
+            "ja:word:complete-pronunciation-exchange-give"
+        ],
+        "variants": [],
+        "sha256": "4aa092b9086c5ae3d979758d3317f0a6a8f27c2a84ef4d55829c2bbc67656d3b",
+        "frames": 16564,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "a7de6ab88c03c54a4d4cd49b03bc8019171c5b20cf884c860bd0421101445628"
+        }
     }
 ]

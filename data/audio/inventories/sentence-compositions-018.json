@@ -1,672 +1,500 @@
 [
     {
-        "path": "audio/ea5ae347b4455a975a0d62744b92f7be161f128848fc1a8ad470f7e1000d2f3a.wav",
-        "entryId": "ja:sentence:reading-time-example-buy-news",
-        "label": "えきでしんぶんをかう",
+        "path": "audio/f1709cbce09b42155ee2d2a0b8d7d379d364f88e569599451b33972c06839857.wav",
+        "entryId": "ja:sentence:sensei-no-kuruma",
+        "label": "先生の車",
         "parts": [
             {
-                "path": "audio/47cfbf034038630b89f3346d609b2f0a81a08d7b18bf456f8dfc9cdff0a36d67.wav",
-                "entryId": "ja:word:travel-station"
+                "path": "audio/fbe6fc9dc342d1f031f2ca6bcbb09d9759c5f488797071b2dbbc2e61f95c9c16.wav",
+                "entryId": "ja:word:sensei"
             },
             {
-                "path": "audio/df81472c8108ad9b47d8d90db017ff1c1b553d80263d6a2c59de1571671f3eee.wav",
-                "entryId": "ja:particle:de"
+                "path": "audio/7affb235bc8e5708ae7339c44bf227d0fb4c5e2868e740a6bb8e51168bcf8968.wav",
+                "entryId": "ja:particle:no"
             },
             {
-                "path": "audio/8d24faaeea27e4f0fe57fc68aee2eb1e17b7a95822bfd39d137b7282f5104e20.wav",
-                "entryId": "ja:word:reading-time-newspaper"
+                "path": "audio/2a40463469bd551859d6511f36057169c3dee27d696e1631909fe67818ca2c45.wav",
+                "entryId": "ja:word:kuruma"
+            }
+        ],
+        "gapMs": 45,
+        "segments": [
+            {
+                "path": "audio/fbe6fc9dc342d1f031f2ca6bcbb09d9759c5f488797071b2dbbc2e61f95c9c16.wav",
+                "entryId": "ja:word:sensei",
+                "startFrame": 2400,
+                "frameCount": 13988
+            },
+            {
+                "path": "audio/7affb235bc8e5708ae7339c44bf227d0fb4c5e2868e740a6bb8e51168bcf8968.wav",
+                "entryId": "ja:particle:no",
+                "startFrame": 17468,
+                "frameCount": 12106
+            },
+            {
+                "path": "audio/2a40463469bd551859d6511f36057169c3dee27d696e1631909fe67818ca2c45.wav",
+                "entryId": "ja:word:kuruma",
+                "startFrame": 30654,
+                "frameCount": 13095
+            }
+        ],
+        "sha256": "86a2146c90aeb0f3e923e615bda9a0c5aea5270cd3e1674249bd0e77e4c424b0",
+        "frames": 43749,
+        "input": {
+            "language": "ja",
+            "label": "先生の車",
+            "semanticRole": "orderedLexicalSequence",
+            "readings": ["せんせいのくるま"]
+        }
+    },
+    {
+        "path": "audio/e8bd9d9f10898b72d6423275a32637fc0a2ebc52949821d1a1f407a54d583d9c.wav",
+        "entryId": "ja:sentence:umi-made-aruku",
+        "label": "海まで歩く",
+        "parts": [
+            {
+                "path": "audio/b57fe2333d184c99061c9a2836fbb26c27145db7254e7bd6a39625702333b919.wav",
+                "entryId": "ja:word:umi"
+            },
+            {
+                "path": "audio/7b0f478e31bdc691c7da4e6e2042024cfac2bfeceec78edc22a88ef686905b69.wav",
+                "entryId": "ja:particle:made"
+            },
+            {
+                "path": "audio/a6c59dc12594eaf457c52ccdd8b684e37c0953566969c41f972f4d22b105bff4.wav",
+                "entryId": "ja:word:aruku"
+            }
+        ],
+        "gapMs": 45,
+        "segments": [
+            {
+                "path": "audio/b57fe2333d184c99061c9a2836fbb26c27145db7254e7bd6a39625702333b919.wav",
+                "entryId": "ja:word:umi",
+                "startFrame": 2400,
+                "frameCount": 12528
+            },
+            {
+                "path": "audio/7b0f478e31bdc691c7da4e6e2042024cfac2bfeceec78edc22a88ef686905b69.wav",
+                "entryId": "ja:particle:made",
+                "startFrame": 16008,
+                "frameCount": 11097
+            },
+            {
+                "path": "audio/a6c59dc12594eaf457c52ccdd8b684e37c0953566969c41f972f4d22b105bff4.wav",
+                "entryId": "ja:word:aruku",
+                "startFrame": 28185,
+                "frameCount": 14294
+            }
+        ],
+        "sha256": "447265c9774f1f819f4a40d254bbf20c15c80ccbc5e9284905da99b0184bc19f",
+        "frames": 42479,
+        "input": {
+            "language": "ja",
+            "label": "海まで歩く",
+            "semanticRole": "orderedLexicalSequence",
+            "readings": ["うみまであるく"]
+        }
+    },
+    {
+        "path": "audio/9deda7907ce8e18eb249eb4e31996753d64fc5d7c660980b971fcf5c03d5e43f.wav",
+        "entryId": "ja:sentence:strawberry-eat",
+        "label": "いちごを食べる",
+        "parts": [
+            {
+                "path": "audio/2433f5f193e33ca09f5e1fc8a0b405cc34234af0a4a7d5ddb2f9f3f98dcf8632.wav",
+                "entryId": "ja:word:strawberry"
             },
             {
                 "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
                 "entryId": "ja:particle:wo"
             },
             {
-                "path": "audio/1a880a2cfc93aedb14ed94ad5cbd8ba5a803aa377bb98f0bf534e0ce8905bfd4.wav",
-                "entryId": "ja:word:travel-buy"
-            },
-            { "pauseMs": 400 }
+                "path": "audio/4ddd4e95428918c1c2f8c64b3eab948d332e376275c09dfcff69082a20ee9181.wav",
+                "entryId": "ja:word:taberu"
+            }
         ],
-        "gapMs": 90,
+        "gapMs": 45,
         "segments": [
             {
-                "path": "audio/47cfbf034038630b89f3346d609b2f0a81a08d7b18bf456f8dfc9cdff0a36d67.wav",
-                "entryId": "ja:word:travel-station",
+                "path": "audio/2433f5f193e33ca09f5e1fc8a0b405cc34234af0a4a7d5ddb2f9f3f98dcf8632.wav",
+                "entryId": "ja:word:strawberry",
                 "startFrame": 2400,
-                "frameCount": 14335
-            },
-            {
-                "path": "audio/df81472c8108ad9b47d8d90db017ff1c1b553d80263d6a2c59de1571671f3eee.wav",
-                "entryId": "ja:particle:de",
-                "startFrame": 18895,
-                "frameCount": 13220
-            },
-            {
-                "path": "audio/8d24faaeea27e4f0fe57fc68aee2eb1e17b7a95822bfd39d137b7282f5104e20.wav",
-                "entryId": "ja:word:reading-time-newspaper",
-                "startFrame": 34275,
                 "frameCount": 17678
             },
             {
                 "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
                 "entryId": "ja:particle:wo",
-                "startFrame": 54113,
+                "startFrame": 21158,
                 "frameCount": 8762
             },
             {
-                "path": "audio/1a880a2cfc93aedb14ed94ad5cbd8ba5a803aa377bb98f0bf534e0ce8905bfd4.wav",
-                "entryId": "ja:word:travel-buy",
-                "startFrame": 65035,
-                "frameCount": 13220
+                "path": "audio/4ddd4e95428918c1c2f8c64b3eab948d332e376275c09dfcff69082a20ee9181.wav",
+                "entryId": "ja:word:taberu",
+                "startFrame": 31000,
+                "frameCount": 14496
             }
         ],
-        "sha256": "ea5ae347b4455a975a0d62744b92f7be161f128848fc1a8ad470f7e1000d2f3a",
-        "frames": 90015,
+        "sha256": "1f1b85a2bb88c3a132ea5db39d3fc4e6469aeb2b02f3aec86570e8dcd048df13",
+        "frames": 47896,
         "input": {
             "language": "ja",
-            "label": "えきでしんぶんをかう",
+            "label": "いちごを食べる",
             "semanticRole": "orderedLexicalSequence",
-            "readings": ["えきでしんぶんをかう"]
-        },
-        "metadata": {
-            "listening": "unverified-not-performed",
-            "construction": "Exact constituent PCM with explicit selected transformations."
+            "readings": ["いちごをたべる"]
         }
     },
     {
-        "path": "audio/2231f17a06bc18940037f2dc71aac5f7faa72a038393434d79cd68089a1664c4.wav",
-        "entryId": "ja:sentence:comprehension-example-meaning",
-        "label": "日本語がわかる",
+        "path": "audio/81fa93723c62a4fa77bb0946f469791a88f1c279b5a53eedf9804e4a6cd4fe12.wav",
+        "entryId": "ja:sentence:soup-drink",
+        "label": "スープを飲む",
         "parts": [
             {
-                "path": "audio/cff4156d26b0e956bdda771009e94040a6df34fb62a9b74a2037a5ec836017d4.wav",
-                "entryId": "ja:word:nihongo"
+                "path": "audio/4a74d133f1fde60b0990bab7970d5ab9683f6c87122f694b518c45819b667cbe.wav",
+                "entryId": "ja:word:soup"
+            },
+            {
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "entryId": "ja:particle:wo"
+            },
+            {
+                "path": "audio/5eac59ad2371c7277aa56070f39b840cfb2fa6edb0ec5f52f293f8c0b0c819da.wav",
+                "entryId": "ja:word:nomu"
+            }
+        ],
+        "gapMs": 45,
+        "segments": [
+            {
+                "path": "audio/4a74d133f1fde60b0990bab7970d5ab9683f6c87122f694b518c45819b667cbe.wav",
+                "entryId": "ja:word:soup",
+                "startFrame": 2400,
+                "frameCount": 17678
+            },
+            {
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "entryId": "ja:particle:wo",
+                "startFrame": 21158,
+                "frameCount": 8762
+            },
+            {
+                "path": "audio/5eac59ad2371c7277aa56070f39b840cfb2fa6edb0ec5f52f293f8c0b0c819da.wav",
+                "entryId": "ja:word:nomu",
+                "startFrame": 31000,
+                "frameCount": 13720
+            }
+        ],
+        "sha256": "be402e6e8c989fddf7c838b5143e7a584b32ed838d8c531d4523ed445d117648",
+        "frames": 47120,
+        "input": {
+            "language": "ja",
+            "label": "スープを飲む",
+            "semanticRole": "orderedLexicalSequence",
+            "readings": ["すーぷをのむ"]
+        }
+    },
+    {
+        "path": "audio/7ba40d9c5f96b8b56cb080096a9fe52e45262c43cf643b6f9ad47973fecc1d3a.wav",
+        "entryId": "ja:sentence:eye-big",
+        "label": "めが大きい",
+        "parts": [
+            {
+                "path": "audio/b7544e408efda77a2b1e1d7705ebd26c5fc16ccb45b6d1f705ba337644fbf1f2.wav",
+                "entryId": "ja:word:eye"
             },
             {
                 "path": "audio/69d02d32db53e5eeb4bb6db01917e619478b734bd66988c4242ccc1a3e55655d.wav",
                 "entryId": "ja:particle:ga"
             },
             {
-                "path": "audio/a756a554f83d17ed9d15085e567e3a6f28682ad30abc1e634bf0dd7f7cdfad98.wav",
-                "entryId": "ja:word:comprehension-understand"
-            },
-            { "pauseMs": 400 }
+                "path": "audio/5b15ae17f9c15b1d56392fef904e5f1a056663de7dd79120d237600c45971120.wav",
+                "entryId": "ja:word:ookii"
+            }
         ],
-        "gapMs": 90,
+        "gapMs": 45,
         "segments": [
             {
-                "path": "audio/cff4156d26b0e956bdda771009e94040a6df34fb62a9b74a2037a5ec836017d4.wav",
-                "entryId": "ja:word:nihongo",
+                "path": "audio/b7544e408efda77a2b1e1d7705ebd26c5fc16ccb45b6d1f705ba337644fbf1f2.wav",
+                "entryId": "ja:word:eye",
                 "startFrame": 2400,
-                "frameCount": 16054
+                "frameCount": 13220
             },
             {
                 "path": "audio/69d02d32db53e5eeb4bb6db01917e619478b734bd66988c4242ccc1a3e55655d.wav",
                 "entryId": "ja:particle:ga",
-                "startFrame": 20614,
+                "startFrame": 16700,
                 "frameCount": 14335
             },
             {
-                "path": "audio/a756a554f83d17ed9d15085e567e3a6f28682ad30abc1e634bf0dd7f7cdfad98.wav",
-                "entryId": "ja:word:comprehension-understand",
-                "startFrame": 37109,
-                "frameCount": 15449
+                "path": "audio/5b15ae17f9c15b1d56392fef904e5f1a056663de7dd79120d237600c45971120.wav",
+                "entryId": "ja:word:ookii",
+                "startFrame": 32115,
+                "frameCount": 15963
             }
         ],
-        "sha256": "2231f17a06bc18940037f2dc71aac5f7faa72a038393434d79cd68089a1664c4",
-        "frames": 64318,
+        "sha256": "ae86f03d7b899a0b9feb9d962ed89def96f54d17ff7abb0b0904ebd5e91ab5e7",
+        "frames": 50478,
         "input": {
             "language": "ja",
-            "label": "日本語がわかる",
+            "label": "めが大きい",
             "semanticRole": "orderedLexicalSequence",
-            "readings": ["にほんごがわかる"]
-        },
-        "metadata": {
-            "listening": "unverified-not-performed",
-            "construction": "Exact constituent PCM with explicit selected transformations."
+            "readings": ["めがおおきい"]
         }
     },
     {
-        "path": "audio/4f2cb54d6b14ee4ddd77b82c4fbd403048837929063f4d8b3ab5c6accaaec38e.wav",
-        "entryId": "ja:sentence:belongings-example-wallet-question",
-        "label": "さいふはどこですか",
+        "path": "audio/1a33f8d23e1279206877c5e2af178c7d4055893b489f430d2ccd8566718bbf1d.wav",
+        "entryId": "ja:sentence:core-example-sleep",
+        "label": "あとでねる",
         "parts": [
             {
-                "path": "audio/0c3f878dfb8372d5d44a231f0bbfb4495f20a6b71983fd11d3aa99e1d2cd18f7.wav",
-                "entryId": "ja:word:belongings-wallet"
+                "path": "audio/5bbd2d796927483105abf97a1d9832f53ac688dd339e701c3c05c600ca24a852.wav",
+                "entryId": "ja:word:time-later"
             },
             {
-                "path": "audio/d7c9e57654e559dfba3bd6f78c2f27416a61f8b28d56145d84a62fe25b70c94d.wav",
-                "entryId": "ja:particle:wa"
-            },
-            {
-                "path": "audio/d8e8d38bb87e5846270a85a0031c99310edbc497f365f2a8fbb4ac49a10ddba3.wav",
-                "entryId": "ja:word:doko"
-            },
-            {
-                "path": "audio/2959a5dcab722b7d5c39f67845f1d6a3d6ede5f23e554e9547bca0e6cb62c56b.wav",
-                "entryId": "ja:word:desu"
-            },
-            {
-                "path": "audio/43ee7a601b45742716f8c1c424c576992297faf0a3ec140047ad194b682f7edf.wav",
-                "entryId": "ja:particle:ka"
+                "path": "audio/d18b23f2efd5e37302beaed08404e82d554e9acef0df42b3081fd4665b8624af.wav",
+                "entryId": "ja:word:core-sleep"
             },
             { "pauseMs": 400 }
         ],
         "gapMs": 90,
         "segments": [
             {
-                "path": "audio/0c3f878dfb8372d5d44a231f0bbfb4495f20a6b71983fd11d3aa99e1d2cd18f7.wav",
-                "entryId": "ja:word:belongings-wallet",
+                "path": "audio/5bbd2d796927483105abf97a1d9832f53ac688dd339e701c3c05c600ca24a852.wav",
+                "entryId": "ja:word:time-later",
                 "startFrame": 2400,
                 "frameCount": 18793
             },
             {
-                "path": "audio/d7c9e57654e559dfba3bd6f78c2f27416a61f8b28d56145d84a62fe25b70c94d.wav",
-                "entryId": "ja:particle:wa",
+                "path": "audio/d18b23f2efd5e37302beaed08404e82d554e9acef0df42b3081fd4665b8624af.wav",
+                "entryId": "ja:word:core-sleep",
                 "startFrame": 23353,
-                "frameCount": 12106
-            },
-            {
-                "path": "audio/d8e8d38bb87e5846270a85a0031c99310edbc497f365f2a8fbb4ac49a10ddba3.wav",
-                "entryId": "ja:word:doko",
-                "startFrame": 37619,
-                "frameCount": 11541
-            },
-            {
-                "path": "audio/2959a5dcab722b7d5c39f67845f1d6a3d6ede5f23e554e9547bca0e6cb62c56b.wav",
-                "entryId": "ja:word:desu",
-                "startFrame": 51320,
-                "frameCount": 11490
-            },
-            {
-                "path": "audio/43ee7a601b45742716f8c1c424c576992297faf0a3ec140047ad194b682f7edf.wav",
-                "entryId": "ja:particle:ka",
-                "startFrame": 64970,
-                "frameCount": 13220
+                "frameCount": 14335
             }
         ],
-        "sha256": "4f2cb54d6b14ee4ddd77b82c4fbd403048837929063f4d8b3ab5c6accaaec38e",
-        "frames": 89950,
+        "sha256": "1a33f8d23e1279206877c5e2af178c7d4055893b489f430d2ccd8566718bbf1d",
+        "frames": 49448,
         "input": {
             "language": "ja",
-            "label": "さいふはどこですか",
+            "label": "あとでねる",
             "semanticRole": "orderedLexicalSequence",
-            "readings": ["さいふはどこですか"]
+            "readings": ["あとでねる"]
         },
         "metadata": {
             "listening": "unverified-not-performed",
-            "construction": "Exact constituent PCM with explicit selected transformations."
+            "construction": "Exact constituent PCM, preserving every selected grammatical form."
         }
     },
     {
-        "path": "audio/1cdf91a52fe81f35ed3c096673e0a9e9efe93324fc6409f2c68b72a1097e4cd5.wav",
-        "entryId": "ja:sentence:belongings-example-camera-purchase",
-        "label": "カメラをかう",
+        "path": "audio/cfb40b467b9afd7f83c7a37475616afc48085d9e1e11dc329d15540072a6e94e.wav",
+        "entryId": "ja:sentence:social-example-greeting",
+        "label": "先生こんにちは",
         "parts": [
             {
-                "path": "audio/13a7bce6198378b9fb7c10626e9396fe3056aae696cad89e344abf265cb478d9.wav",
-                "entryId": "ja:word:belongings-camera"
+                "path": "audio/fbe6fc9dc342d1f031f2ca6bcbb09d9759c5f488797071b2dbbc2e61f95c9c16.wav",
+                "entryId": "ja:word:sensei"
             },
             {
-                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
-                "entryId": "ja:particle:wo"
-            },
-            {
-                "path": "audio/1a880a2cfc93aedb14ed94ad5cbd8ba5a803aa377bb98f0bf534e0ce8905bfd4.wav",
-                "entryId": "ja:word:travel-buy"
+                "path": "audio/201867d619fb4ce848f1b933992d1ec9219d540f51f511833c6cdcf580c448bd.wav",
+                "entryId": "ja:word:social-greeting"
             },
             { "pauseMs": 400 }
         ],
         "gapMs": 90,
         "segments": [
             {
-                "path": "audio/13a7bce6198378b9fb7c10626e9396fe3056aae696cad89e344abf265cb478d9.wav",
-                "entryId": "ja:word:belongings-camera",
+                "path": "audio/fbe6fc9dc342d1f031f2ca6bcbb09d9759c5f488797071b2dbbc2e61f95c9c16.wav",
+                "entryId": "ja:word:sensei",
                 "startFrame": 2400,
-                "frameCount": 16564
+                "frameCount": 13988
             },
             {
-                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
-                "entryId": "ja:particle:wo",
-                "startFrame": 21124,
-                "frameCount": 8762
-            },
-            {
-                "path": "audio/1a880a2cfc93aedb14ed94ad5cbd8ba5a803aa377bb98f0bf534e0ce8905bfd4.wav",
-                "entryId": "ja:word:travel-buy",
-                "startFrame": 32046,
-                "frameCount": 13220
+                "path": "audio/201867d619fb4ce848f1b933992d1ec9219d540f51f511833c6cdcf580c448bd.wav",
+                "entryId": "ja:word:social-greeting",
+                "startFrame": 18548,
+                "frameCount": 21022
             }
         ],
-        "sha256": "1cdf91a52fe81f35ed3c096673e0a9e9efe93324fc6409f2c68b72a1097e4cd5",
-        "frames": 57026,
+        "sha256": "cfb40b467b9afd7f83c7a37475616afc48085d9e1e11dc329d15540072a6e94e",
+        "frames": 51330,
         "input": {
             "language": "ja",
-            "label": "カメラをかう",
+            "label": "先生こんにちは",
             "semanticRole": "orderedLexicalSequence",
-            "readings": ["かめらをかう"]
+            "readings": ["せんせいこんにちわ"]
         },
         "metadata": {
             "listening": "unverified-not-performed",
-            "construction": "Exact constituent PCM with explicit selected transformations."
+            "construction": "Exact constituent PCM, preserving every selected grammatical form."
         }
     },
     {
-        "path": "audio/d3e6b045bebbfe281710e8266431ca0584679802f7e10a00965c728dd9a3fda8.wav",
-        "entryId": "ja:sentence:belongings-example-glasses-location",
-        "label": "めがねはテーブルにある",
+        "path": "audio/b1baedc937341fad5941788669600a3d89497fcb51b1aa09b6045e38759c5c4f.wav",
+        "entryId": "ja:sentence:social-example-gratitude",
+        "label": "先生ありがとうございます",
         "parts": [
             {
-                "path": "audio/b33e7e0e1130d81c69f0c86db850a8045e5ae35ff8de086c81aa46b280d7e5ba.wav",
-                "entryId": "ja:word:belongings-glasses"
+                "path": "audio/fbe6fc9dc342d1f031f2ca6bcbb09d9759c5f488797071b2dbbc2e61f95c9c16.wav",
+                "entryId": "ja:word:sensei"
             },
             {
-                "path": "audio/d7c9e57654e559dfba3bd6f78c2f27416a61f8b28d56145d84a62fe25b70c94d.wav",
-                "entryId": "ja:particle:wa"
-            },
-            {
-                "path": "audio/29f6a7e403e16e111e3eee3e859d6dee59887dcc720cb7837c894f308f7d8174.wav",
-                "entryId": "ja:word:table"
-            },
-            {
-                "path": "audio/1615cf278c2962c1657907b3686d653625229af2375f90dda5bfd5b178c7aedb.wav",
-                "entryId": "ja:particle:ni"
-            },
-            {
-                "path": "audio/0e997231f55465948ee67d44898dfd72abf6e48f95f8839fe116ca8978d53535.wav",
-                "entryId": "ja:word:aru-exist"
+                "path": "audio/c9b899d628475551a35326efd0cd9f464fed35f97692c7caeaf8c4345e593583.wav",
+                "entryId": "ja:word:social-gratitude"
             },
             { "pauseMs": 400 }
         ],
         "gapMs": 90,
         "segments": [
             {
-                "path": "audio/b33e7e0e1130d81c69f0c86db850a8045e5ae35ff8de086c81aa46b280d7e5ba.wav",
-                "entryId": "ja:word:belongings-glasses",
+                "path": "audio/fbe6fc9dc342d1f031f2ca6bcbb09d9759c5f488797071b2dbbc2e61f95c9c16.wav",
+                "entryId": "ja:word:sensei",
                 "startFrame": 2400,
-                "frameCount": 17678
+                "frameCount": 13988
             },
             {
-                "path": "audio/d7c9e57654e559dfba3bd6f78c2f27416a61f8b28d56145d84a62fe25b70c94d.wav",
-                "entryId": "ja:particle:wa",
-                "startFrame": 22238,
-                "frameCount": 12106
+                "path": "audio/c9b899d628475551a35326efd0cd9f464fed35f97692c7caeaf8c4345e593583.wav",
+                "entryId": "ja:word:social-gratitude",
+                "startFrame": 18548,
+                "frameCount": 26595
+            }
+        ],
+        "sha256": "b1baedc937341fad5941788669600a3d89497fcb51b1aa09b6045e38759c5c4f",
+        "frames": 56903,
+        "input": {
+            "language": "ja",
+            "label": "先生ありがとうございます",
+            "semanticRole": "orderedLexicalSequence",
+            "readings": ["せんせいありがとうございます"]
+        },
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "construction": "Exact constituent PCM, preserving every selected grammatical form."
+        }
+    },
+    {
+        "path": "audio/f8ad19bfa489d91f9d374b76ee56132bb288b1ed9c25bcbdc3c380bea2e48f62.wav",
+        "entryId": "ja:sentence:social-example-farewell",
+        "label": "先生さようなら",
+        "parts": [
+            {
+                "path": "audio/fbe6fc9dc342d1f031f2ca6bcbb09d9759c5f488797071b2dbbc2e61f95c9c16.wav",
+                "entryId": "ja:word:sensei"
             },
             {
-                "path": "audio/29f6a7e403e16e111e3eee3e859d6dee59887dcc720cb7837c894f308f7d8174.wav",
-                "entryId": "ja:word:table",
-                "startFrame": 36504,
+                "path": "audio/57de8aef1fdd2c13421228ce70b2ff644aab7d97005d06aa0cbb9bf9c2311ef1.wav",
+                "entryId": "ja:word:social-farewell"
+            },
+            { "pauseMs": 400 }
+        ],
+        "gapMs": 90,
+        "segments": [
+            {
+                "path": "audio/fbe6fc9dc342d1f031f2ca6bcbb09d9759c5f488797071b2dbbc2e61f95c9c16.wav",
+                "entryId": "ja:word:sensei",
+                "startFrame": 2400,
+                "frameCount": 13988
+            },
+            {
+                "path": "audio/57de8aef1fdd2c13421228ce70b2ff644aab7d97005d06aa0cbb9bf9c2311ef1.wav",
+                "entryId": "ja:word:social-farewell",
+                "startFrame": 18548,
                 "frameCount": 18793
-            },
-            {
-                "path": "audio/1615cf278c2962c1657907b3686d653625229af2375f90dda5bfd5b178c7aedb.wav",
-                "entryId": "ja:particle:ni",
-                "startFrame": 57457,
-                "frameCount": 13220
-            },
-            {
-                "path": "audio/0e997231f55465948ee67d44898dfd72abf6e48f95f8839fe116ca8978d53535.wav",
-                "entryId": "ja:word:aru-exist",
-                "startFrame": 72837,
-                "frameCount": 8976
             }
         ],
-        "sha256": "d3e6b045bebbfe281710e8266431ca0584679802f7e10a00965c728dd9a3fda8",
-        "frames": 93573,
+        "sha256": "f8ad19bfa489d91f9d374b76ee56132bb288b1ed9c25bcbdc3c380bea2e48f62",
+        "frames": 49101,
         "input": {
             "language": "ja",
-            "label": "めがねはテーブルにある",
+            "label": "先生さようなら",
             "semanticRole": "orderedLexicalSequence",
-            "readings": ["めがねはてーぶるにある"]
+            "readings": ["せんせいさようなら"]
         },
         "metadata": {
             "listening": "unverified-not-performed",
-            "construction": "Exact constituent PCM with explicit selected transformations."
+            "construction": "Exact constituent PCM, preserving every selected grammatical form."
         }
     },
     {
-        "path": "audio/1acaaf2f3317c383337151a4c553d086f45e212a43f5a9a718c617abf8ddace6.wav",
-        "entryId": "ja:sentence:belongings-example-watch-look",
-        "label": "うでどけいを見る",
+        "path": "audio/70e0d2b4ab437af7c8370a83876fe3200044924a9ce919fcda343f70b6c6c106.wav",
+        "entryId": "ja:sentence:requests-example-please",
+        "label": "ゆっくりおねがいします",
         "parts": [
             {
-                "path": "audio/49fe0e3e96b13b52ce1bef69ea00e5208363a16c2fa81807d61a28929cb6d11a.wav",
-                "entryId": "ja:word:belongings-watch"
+                "path": "audio/1c2d1664ef0db6298e34d97fa47fd27aa3dfc34f44515e3e22ed6e07e2ca0011.wav",
+                "entryId": "ja:word:yukkuri"
             },
             {
-                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
-                "entryId": "ja:particle:wo"
-            },
-            {
-                "path": "audio/38b1e4b1dda0e34a29c049bd035b5370b24069d70efbb5fef029fb0962f2c8fe.wav",
-                "entryId": "ja:word:miru"
+                "path": "audio/985501ea09261b61f93349b9f96b5c90bb3242735787ee35f17a95d4b64abc79.wav",
+                "entryId": "ja:word:requests-please"
             },
             { "pauseMs": 400 }
         ],
         "gapMs": 90,
         "segments": [
             {
-                "path": "audio/49fe0e3e96b13b52ce1bef69ea00e5208363a16c2fa81807d61a28929cb6d11a.wav",
-                "entryId": "ja:word:belongings-watch",
-                "startFrame": 2400,
-                "frameCount": 18793
-            },
-            {
-                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
-                "entryId": "ja:particle:wo",
-                "startFrame": 23353,
-                "frameCount": 8762
-            },
-            {
-                "path": "audio/38b1e4b1dda0e34a29c049bd035b5370b24069d70efbb5fef029fb0962f2c8fe.wav",
-                "entryId": "ja:word:miru",
-                "startFrame": 34275,
-                "frameCount": 14884
-            }
-        ],
-        "sha256": "1acaaf2f3317c383337151a4c553d086f45e212a43f5a9a718c617abf8ddace6",
-        "frames": 60919,
-        "input": {
-            "language": "ja",
-            "label": "うでどけいを見る",
-            "semanticRole": "orderedLexicalSequence",
-            "readings": ["うでどけいをみる"]
-        },
-        "metadata": {
-            "listening": "unverified-not-performed",
-            "construction": "Exact constituent PCM with explicit selected transformations."
-        }
-    },
-    {
-        "path": "audio/117676ef6f6ce427f7758376708383012c5364973103505dbb3b8dc3546af530.wav",
-        "entryId": "ja:sentence:getting-ready-example-travel-documents",
-        "label": "パスポートときっぷはかばんにある",
-        "parts": [
-            {
-                "path": "audio/4b90cc3f48b45d1a3098f68dbb5a542d78cdf4ffa0a4050f326a3346e3ae1501.wav",
-                "entryId": "ja:word:travel-passport"
-            },
-            {
-                "path": "audio/606f3c1823245eee4195e2195e8189dad7df8cd21b7e6550a55b5c56e585916b.wav",
-                "entryId": "ja:particle:to"
-            },
-            {
-                "path": "audio/026ae4464e9095390946e72a47a33e5a033ebea89918f1e2d1b0394f65123e2c.wav",
-                "entryId": "ja:word:travel-ticket"
-            },
-            {
-                "path": "audio/d7c9e57654e559dfba3bd6f78c2f27416a61f8b28d56145d84a62fe25b70c94d.wav",
-                "entryId": "ja:particle:wa"
-            },
-            {
-                "path": "audio/6c383b07d47bcbe9c9eadf6b97d7ce3ec03e4f31503d0bf1dec5a48b2829ff78.wav",
-                "entryId": "ja:word:bag"
-            },
-            {
-                "path": "audio/1615cf278c2962c1657907b3686d653625229af2375f90dda5bfd5b178c7aedb.wav",
-                "entryId": "ja:particle:ni"
-            },
-            {
-                "path": "audio/0e997231f55465948ee67d44898dfd72abf6e48f95f8839fe116ca8978d53535.wav",
-                "entryId": "ja:word:aru-exist"
-            },
-            { "pauseMs": 400 }
-        ],
-        "gapMs": 90,
-        "segments": [
-            {
-                "path": "audio/4b90cc3f48b45d1a3098f68dbb5a542d78cdf4ffa0a4050f326a3346e3ae1501.wav",
-                "entryId": "ja:word:travel-passport",
+                "path": "audio/1c2d1664ef0db6298e34d97fa47fd27aa3dfc34f44515e3e22ed6e07e2ca0011.wav",
+                "entryId": "ja:word:yukkuri",
                 "startFrame": 2400,
                 "frameCount": 21022
             },
             {
-                "path": "audio/606f3c1823245eee4195e2195e8189dad7df8cd21b7e6550a55b5c56e585916b.wav",
-                "entryId": "ja:particle:to",
+                "path": "audio/985501ea09261b61f93349b9f96b5c90bb3242735787ee35f17a95d4b64abc79.wav",
+                "entryId": "ja:word:requests-please",
                 "startFrame": 25582,
-                "frameCount": 12106
-            },
-            {
-                "path": "audio/026ae4464e9095390946e72a47a33e5a033ebea89918f1e2d1b0394f65123e2c.wav",
-                "entryId": "ja:word:travel-ticket",
-                "startFrame": 39848,
-                "frameCount": 18793
-            },
-            {
-                "path": "audio/d7c9e57654e559dfba3bd6f78c2f27416a61f8b28d56145d84a62fe25b70c94d.wav",
-                "entryId": "ja:particle:wa",
-                "startFrame": 60801,
-                "frameCount": 12106
-            },
-            {
-                "path": "audio/6c383b07d47bcbe9c9eadf6b97d7ce3ec03e4f31503d0bf1dec5a48b2829ff78.wav",
-                "entryId": "ja:word:bag",
-                "startFrame": 75067,
-                "frameCount": 16564
-            },
-            {
-                "path": "audio/1615cf278c2962c1657907b3686d653625229af2375f90dda5bfd5b178c7aedb.wav",
-                "entryId": "ja:particle:ni",
-                "startFrame": 93791,
-                "frameCount": 13220
-            },
-            {
-                "path": "audio/0e997231f55465948ee67d44898dfd72abf6e48f95f8839fe116ca8978d53535.wav",
-                "entryId": "ja:word:aru-exist",
-                "startFrame": 109171,
-                "frameCount": 8976
+                "frameCount": 23251
             }
         ],
-        "sha256": "117676ef6f6ce427f7758376708383012c5364973103505dbb3b8dc3546af530",
-        "frames": 129907,
+        "sha256": "70e0d2b4ab437af7c8370a83876fe3200044924a9ce919fcda343f70b6c6c106",
+        "frames": 60593,
         "input": {
             "language": "ja",
-            "label": "パスポートときっぷはかばんにある",
+            "label": "ゆっくりおねがいします",
             "semanticRole": "orderedLexicalSequence",
-            "readings": ["ぱすぽーとときっぷはかばんにある"]
+            "readings": ["ゆっくりおねがいします"]
         },
         "metadata": {
             "listening": "unverified-not-performed",
-            "construction": "Exact constituent PCM with explicit selected transformations."
+            "construction": "Exact constituent PCM, preserving every selected grammatical form."
         }
     },
     {
-        "path": "audio/4b9519a91b2ddd45a9f3b62443f23f338516e4d457e478a4943fd789bfb954b2.wav",
-        "entryId": "ja:sentence:getting-ready-example-key-here",
-        "label": "かぎはここにある",
+        "path": "audio/7027452e235d581865ef3445e4f14536098e2147a9cc8805f3161e8ae143f7fa.wav",
+        "entryId": "ja:sentence:requests-example-repeat",
+        "label": "もういちどおねがいします",
         "parts": [
             {
-                "path": "audio/096088c37e3482f972b2c7f98c75b35f17c6d2268a213cbbb8954df5f54267af.wav",
-                "entryId": "ja:word:key"
+                "path": "audio/cafe352727cda04fc36dba2414f304449b299bbda386378038629a32b67aea35.wav",
+                "entryId": "ja:word:requests-repeat"
             },
             {
-                "path": "audio/d7c9e57654e559dfba3bd6f78c2f27416a61f8b28d56145d84a62fe25b70c94d.wav",
-                "entryId": "ja:particle:wa"
-            },
-            {
-                "path": "audio/f298e745d293e821e9c245438bda27c7da9035ad01dbd7b473e4d5ab8b858b9a.wav",
-                "entryId": "ja:word:koko"
-            },
-            {
-                "path": "audio/1615cf278c2962c1657907b3686d653625229af2375f90dda5bfd5b178c7aedb.wav",
-                "entryId": "ja:particle:ni"
-            },
-            {
-                "path": "audio/0e997231f55465948ee67d44898dfd72abf6e48f95f8839fe116ca8978d53535.wav",
-                "entryId": "ja:word:aru-exist"
+                "path": "audio/985501ea09261b61f93349b9f96b5c90bb3242735787ee35f17a95d4b64abc79.wav",
+                "entryId": "ja:word:requests-please"
             },
             { "pauseMs": 400 }
         ],
         "gapMs": 90,
         "segments": [
             {
-                "path": "audio/096088c37e3482f972b2c7f98c75b35f17c6d2268a213cbbb8954df5f54267af.wav",
-                "entryId": "ja:word:key",
+                "path": "audio/cafe352727cda04fc36dba2414f304449b299bbda386378038629a32b67aea35.wav",
+                "entryId": "ja:word:requests-repeat",
                 "startFrame": 2400,
-                "frameCount": 15449
+                "frameCount": 19907
             },
             {
-                "path": "audio/d7c9e57654e559dfba3bd6f78c2f27416a61f8b28d56145d84a62fe25b70c94d.wav",
-                "entryId": "ja:particle:wa",
-                "startFrame": 20009,
-                "frameCount": 12106
-            },
-            {
-                "path": "audio/f298e745d293e821e9c245438bda27c7da9035ad01dbd7b473e4d5ab8b858b9a.wav",
-                "entryId": "ja:word:koko",
-                "startFrame": 34275,
-                "frameCount": 11459
-            },
-            {
-                "path": "audio/1615cf278c2962c1657907b3686d653625229af2375f90dda5bfd5b178c7aedb.wav",
-                "entryId": "ja:particle:ni",
-                "startFrame": 47894,
-                "frameCount": 13220
-            },
-            {
-                "path": "audio/0e997231f55465948ee67d44898dfd72abf6e48f95f8839fe116ca8978d53535.wav",
-                "entryId": "ja:word:aru-exist",
-                "startFrame": 63274,
-                "frameCount": 8976
+                "path": "audio/985501ea09261b61f93349b9f96b5c90bb3242735787ee35f17a95d4b64abc79.wav",
+                "entryId": "ja:word:requests-please",
+                "startFrame": 24467,
+                "frameCount": 23251
             }
         ],
-        "sha256": "4b9519a91b2ddd45a9f3b62443f23f338516e4d457e478a4943fd789bfb954b2",
-        "frames": 84010,
+        "sha256": "7027452e235d581865ef3445e4f14536098e2147a9cc8805f3161e8ae143f7fa",
+        "frames": 59478,
         "input": {
             "language": "ja",
-            "label": "かぎはここにある",
+            "label": "もういちどおねがいします",
             "semanticRole": "orderedLexicalSequence",
-            "readings": ["かぎはここにある"]
+            "readings": ["もういちどおねがいします"]
         },
         "metadata": {
             "listening": "unverified-not-performed",
-            "construction": "Exact constituent PCM with explicit selected transformations."
-        }
-    },
-    {
-        "path": "audio/103245278a8ed94bc87e56c92ea4fc16ac3b76c802487dc87d816f36fbf595d6.wav",
-        "entryId": "ja:sentence:getting-ready-example-wait-tomorrow",
-        "label": "あしたはえきでまつ",
-        "parts": [
-            {
-                "path": "audio/3f413ca4ccc8ae35402796b8fdce113e6bdca74527c328668076a5b930582853.wav",
-                "entryId": "ja:word:time-tomorrow"
-            },
-            {
-                "path": "audio/d7c9e57654e559dfba3bd6f78c2f27416a61f8b28d56145d84a62fe25b70c94d.wav",
-                "entryId": "ja:particle:wa"
-            },
-            {
-                "path": "audio/47cfbf034038630b89f3346d609b2f0a81a08d7b18bf456f8dfc9cdff0a36d67.wav",
-                "entryId": "ja:word:travel-station"
-            },
-            {
-                "path": "audio/df81472c8108ad9b47d8d90db017ff1c1b553d80263d6a2c59de1571671f3eee.wav",
-                "entryId": "ja:particle:de"
-            },
-            {
-                "path": "audio/e283ee5698e2cffd800f451b43608281335332dcba02202ee407da23f7a1143c.wav",
-                "entryId": "ja:word:travel-wait"
-            },
-            { "pauseMs": 400 }
-        ],
-        "gapMs": 90,
-        "segments": [
-            {
-                "path": "audio/3f413ca4ccc8ae35402796b8fdce113e6bdca74527c328668076a5b930582853.wav",
-                "entryId": "ja:word:time-tomorrow",
-                "startFrame": 2400,
-                "frameCount": 15449
-            },
-            {
-                "path": "audio/d7c9e57654e559dfba3bd6f78c2f27416a61f8b28d56145d84a62fe25b70c94d.wav",
-                "entryId": "ja:particle:wa",
-                "startFrame": 20009,
-                "frameCount": 12106
-            },
-            {
-                "path": "audio/47cfbf034038630b89f3346d609b2f0a81a08d7b18bf456f8dfc9cdff0a36d67.wav",
-                "entryId": "ja:word:travel-station",
-                "startFrame": 34275,
-                "frameCount": 14335
-            },
-            {
-                "path": "audio/df81472c8108ad9b47d8d90db017ff1c1b553d80263d6a2c59de1571671f3eee.wav",
-                "entryId": "ja:particle:de",
-                "startFrame": 50770,
-                "frameCount": 13220
-            },
-            {
-                "path": "audio/e283ee5698e2cffd800f451b43608281335332dcba02202ee407da23f7a1143c.wav",
-                "entryId": "ja:word:travel-wait",
-                "startFrame": 66150,
-                "frameCount": 13220
-            }
-        ],
-        "sha256": "103245278a8ed94bc87e56c92ea4fc16ac3b76c802487dc87d816f36fbf595d6",
-        "frames": 91130,
-        "input": {
-            "language": "ja",
-            "label": "あしたはえきでまつ",
-            "semanticRole": "orderedLexicalSequence",
-            "readings": ["あしたはえきでまつ"]
-        },
-        "metadata": {
-            "listening": "unverified-not-performed",
-            "construction": "Exact constituent PCM with explicit selected transformations."
-        }
-    },
-    {
-        "path": "audio/15830957d8eb52570029f1d91300b23456839d95c595ba6d925ef0e694245d05.wav",
-        "entryId": "ja:sentence:getting-ready-example-read-map",
-        "label": "ちずをよむ",
-        "parts": [
-            {
-                "path": "audio/fe7f2ff9dcf44059717e6c08a8b41d54ea80b717ea0e3ab6f15804e3d8d85547.wav",
-                "entryId": "ja:word:travel-map"
-            },
-            {
-                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
-                "entryId": "ja:particle:wo"
-            },
-            {
-                "path": "audio/9636388bbb5506a329e11171db13088225f73201ebdde96eabd1b560bb70cce0.wav",
-                "entryId": "ja:word:core-read"
-            },
-            { "pauseMs": 400 }
-        ],
-        "gapMs": 90,
-        "segments": [
-            {
-                "path": "audio/fe7f2ff9dcf44059717e6c08a8b41d54ea80b717ea0e3ab6f15804e3d8d85547.wav",
-                "entryId": "ja:word:travel-map",
-                "startFrame": 2400,
-                "frameCount": 15449
-            },
-            {
-                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
-                "entryId": "ja:particle:wo",
-                "startFrame": 20009,
-                "frameCount": 8762
-            },
-            {
-                "path": "audio/9636388bbb5506a329e11171db13088225f73201ebdde96eabd1b560bb70cce0.wav",
-                "entryId": "ja:word:core-read",
-                "startFrame": 30931,
-                "frameCount": 14335
-            }
-        ],
-        "sha256": "15830957d8eb52570029f1d91300b23456839d95c595ba6d925ef0e694245d05",
-        "frames": 57026,
-        "input": {
-            "language": "ja",
-            "label": "ちずをよむ",
-            "semanticRole": "orderedLexicalSequence",
-            "readings": ["ちずをよむ"]
-        },
-        "metadata": {
-            "listening": "unverified-not-performed",
-            "construction": "Exact constituent PCM with explicit selected transformations."
+            "construction": "Exact constituent PCM, preserving every selected grammatical form."
         }
     }
 ]

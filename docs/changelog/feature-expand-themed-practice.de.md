@@ -190,6 +190,10 @@ Geldbörse, Kamera, Brille und Armbanduhr mit lokalisierten Bedeutungen, Verwend
 
 Je Sprache vier eigenständig verfasste Vorbereitungsbeispiele zu Besitz, Reisedokumenten, Orten und Plänen ergänzen. Exakte PCM-Bestandteile und vorhandene Wörter ohne doppelte Vokabeln wiederverwenden. Die zwei höflichen japanischen Verständnissätze bleiben zurückgestellt; der Host-Code bleibt unverändert.
 
+## Geben und Bekommen
+
+Give/receive und あげる/もらう mit je zwei visuell geprüften Bildern und vier einzeln verfassten Beispielen pro Sprache ergänzen. Subjektrollen, japanisch に für den Empfänger und から für die Quelle sowie den Unterschied zwischen Geben und Anheben erläutern. Acht englische und sechzehn japanische Formbindungen aufnehmen; gave/given, もらわない und Formen mit kleinem っ beibehalten. Exakte PCM-Bestandteile und japanische Originaleingaben bewahren. Bilder und Hinweise kennzeichnen das blau gekleidete Subjekt; die Hörprüfung steht aus. Die zwei zurückgestellten höflichen Verständnissätze bleiben unverändert.
+
 ## Commits
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)

@@ -1,5 +1,28 @@
 [
     {
+        "theme": "exchange",
+        "newDistinctVocabularyCount": 2,
+        "vocabulary": [
+            {
+                "entryId": "ja:word:exchange-give",
+                "label": "あげる"
+            },
+            {
+                "entryId": "ja:word:exchange-receive",
+                "label": "もらう"
+            }
+        ],
+        "newExampleCount": 4,
+        "exampleIds": [
+            "ja:sentence:exchange-example-give-book",
+            "ja:sentence:exchange-example-give-ticket",
+            "ja:sentence:exchange-example-receive-pen",
+            "ja:sentence:exchange-example-tomorrow-camera"
+        ],
+        "recordedGrammaticalFormCount": 16,
+        "vocabularyAudit": "authoring/reviews/exchange-vocabulary.json"
+    },
+    {
         "theme": "fixtures",
         "newDistinctVocabularyCount": 4,
         "vocabulary": [
@@ -272,36 +295,5 @@
         ],
         "recordedGrammaticalFormCount": 0,
         "vocabularyAudit": "authoring/reviews/places-vocabulary.json"
-    },
-    {
-        "theme": "qualities",
-        "newDistinctVocabularyCount": 4,
-        "vocabulary": [
-            {
-                "entryId": "ja:word:qualities-heavy",
-                "label": "おもい"
-            },
-            {
-                "entryId": "ja:word:qualities-light",
-                "label": "かるい"
-            },
-            {
-                "entryId": "ja:word:qualities-easy",
-                "label": "やさしい"
-            },
-            {
-                "entryId": "ja:word:qualities-difficult",
-                "label": "むずかしい"
-            }
-        ],
-        "newExampleCount": 4,
-        "exampleIds": [
-            "ja:sentence:qualities-example-heavy",
-            "ja:sentence:qualities-example-light",
-            "ja:sentence:qualities-example-easy",
-            "ja:sentence:qualities-example-difficult"
-        ],
-        "recordedGrammaticalFormCount": 12,
-        "vocabularyAudit": "authoring/reviews/qualities-vocabulary.json"
     }
 ]

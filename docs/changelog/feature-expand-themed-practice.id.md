@@ -190,6 +190,10 @@ Tambahkan dompet, kamera, kacamata, dan jam tangan dengan makna terlokalisasi, c
 
 Tambahkan empat contoh persiapan yang ditulis secara mandiri per bahasa tentang kepemilikan, dokumen perjalanan, lokasi, dan rencana. Gunakan kembali PCM unsur secara persis dan kosakata yang ada tanpa duplikasi. Dua rancangan kalimat pemahaman sopan Jepang tetap ditunda dan kode host tidak diubah.
 
+## Memberi dan Menerima
+
+Tambahkan give/receive dan あげる/もらう dengan dua ilustrasi yang diperiksa secara visual dan empat contoh yang ditulis secara mandiri per bahasa. Jelaskan peran subjek, に untuk penerima, から untuk sumber, serta perbedaan memberi dan mengangkat. Rekam delapan ikatan bentuk Inggris dan enam belas Jepang, termasuk gave/given, もらわない, dan bentuk dengan っ kecil. Pertahankan PCM unsur secara persis dan masukan asli Jepang. Ilustrasi dan catatan menunjukkan subjek berbaju biru; pemeriksaan pendengaran belum dilakukan. Dua rancangan kalimat pemahaman sopan yang ditunda tetap tidak berubah.
+
 ## Komit
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)

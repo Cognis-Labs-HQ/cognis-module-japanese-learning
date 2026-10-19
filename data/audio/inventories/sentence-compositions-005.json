@@ -1,16 +1,170 @@
 [
     {
-        "path": "audio/9b3749c164aa38285998ad5aeac5567c4fffb4f0c9c8733ee263ba2be1269ce9.wav",
-        "entryId": "ja:sentence:mealtime-have-butter",
-        "label": "バターがある",
+        "path": "audio/be073acdd5b323280667b242905fd7aeed26e6b4928b1a846f6590c3f56c2bd9.wav",
+        "entryId": "ja:sentence:care-example-soap",
+        "label": "せっけんでてをあらう",
         "parts": [
             {
-                "path": "audio/1e320526b0770017e80858920120c2842e39a673316105a149e31d9f1e7c4858.wav",
-                "entryId": "ja:word:butter"
+                "path": "audio/d044fa3bdaf8ecf291053b846791a89e9af92ca6407450f965ed990c831a68c1.wav",
+                "entryId": "ja:word:care-soap"
             },
             {
-                "path": "audio/69d02d32db53e5eeb4bb6db01917e619478b734bd66988c4242ccc1a3e55655d.wav",
-                "entryId": "ja:particle:ga"
+                "path": "audio/df81472c8108ad9b47d8d90db017ff1c1b553d80263d6a2c59de1571671f3eee.wav",
+                "entryId": "ja:particle:de"
+            },
+            {
+                "path": "audio/3c207d90170dbd49c8b567e59b64946bff2698eaf8cda275f666b889a3260436.wav",
+                "entryId": "ja:word:hand"
+            },
+            {
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "entryId": "ja:particle:wo"
+            },
+            {
+                "path": "audio/55900a3049492f3fd4edd4b8fb6ba3ff1650cde9ed4b3024f002f08659bf5c2a.wav",
+                "entryId": "ja:word:household-wash"
+            },
+            { "pauseMs": 400 }
+        ],
+        "gapMs": 90,
+        "segments": [
+            {
+                "path": "audio/d044fa3bdaf8ecf291053b846791a89e9af92ca6407450f965ed990c831a68c1.wav",
+                "entryId": "ja:word:care-soap",
+                "startFrame": 2400,
+                "frameCount": 15449
+            },
+            {
+                "path": "audio/df81472c8108ad9b47d8d90db017ff1c1b553d80263d6a2c59de1571671f3eee.wav",
+                "entryId": "ja:particle:de",
+                "startFrame": 20009,
+                "frameCount": 13220
+            },
+            {
+                "path": "audio/3c207d90170dbd49c8b567e59b64946bff2698eaf8cda275f666b889a3260436.wav",
+                "entryId": "ja:word:hand",
+                "startFrame": 35389,
+                "frameCount": 12106
+            },
+            {
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "entryId": "ja:particle:wo",
+                "startFrame": 49655,
+                "frameCount": 8762
+            },
+            {
+                "path": "audio/55900a3049492f3fd4edd4b8fb6ba3ff1650cde9ed4b3024f002f08659bf5c2a.wav",
+                "entryId": "ja:word:household-wash",
+                "startFrame": 60577,
+                "frameCount": 12106
+            }
+        ],
+        "sha256": "be073acdd5b323280667b242905fd7aeed26e6b4928b1a846f6590c3f56c2bd9",
+        "frames": 84443,
+        "input": {
+            "language": "ja",
+            "label": "せっけんでてをあらう",
+            "semanticRole": "orderedLexicalSequence",
+            "readings": ["せっけんでてをあらう"]
+        },
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "construction": "Exact personal-care constituent PCM, including the English plural towels."
+        }
+    },
+    {
+        "path": "audio/a94d59be57042072ea7fbfc31ff14c38c192229f01f6f352193f2bf945ae979f.wav",
+        "entryId": "ja:sentence:care-example-towel",
+        "label": "タオルはどこですか",
+        "parts": [
+            {
+                "path": "audio/ede868f5afcc18a4c3c346366c205dbe7773bcff75343980c66f725f45934b79.wav",
+                "entryId": "ja:word:care-towel"
+            },
+            {
+                "path": "audio/d7c9e57654e559dfba3bd6f78c2f27416a61f8b28d56145d84a62fe25b70c94d.wav",
+                "entryId": "ja:particle:wa"
+            },
+            {
+                "path": "audio/d8e8d38bb87e5846270a85a0031c99310edbc497f365f2a8fbb4ac49a10ddba3.wav",
+                "entryId": "ja:word:doko"
+            },
+            {
+                "path": "audio/2959a5dcab722b7d5c39f67845f1d6a3d6ede5f23e554e9547bca0e6cb62c56b.wav",
+                "entryId": "ja:word:desu"
+            },
+            {
+                "path": "audio/43ee7a601b45742716f8c1c424c576992297faf0a3ec140047ad194b682f7edf.wav",
+                "entryId": "ja:particle:ka"
+            },
+            { "pauseMs": 400 }
+        ],
+        "gapMs": 90,
+        "segments": [
+            {
+                "path": "audio/ede868f5afcc18a4c3c346366c205dbe7773bcff75343980c66f725f45934b79.wav",
+                "entryId": "ja:word:care-towel",
+                "startFrame": 2400,
+                "frameCount": 17678
+            },
+            {
+                "path": "audio/d7c9e57654e559dfba3bd6f78c2f27416a61f8b28d56145d84a62fe25b70c94d.wav",
+                "entryId": "ja:particle:wa",
+                "startFrame": 22238,
+                "frameCount": 12106
+            },
+            {
+                "path": "audio/d8e8d38bb87e5846270a85a0031c99310edbc497f365f2a8fbb4ac49a10ddba3.wav",
+                "entryId": "ja:word:doko",
+                "startFrame": 36504,
+                "frameCount": 11541
+            },
+            {
+                "path": "audio/2959a5dcab722b7d5c39f67845f1d6a3d6ede5f23e554e9547bca0e6cb62c56b.wav",
+                "entryId": "ja:word:desu",
+                "startFrame": 50205,
+                "frameCount": 11490
+            },
+            {
+                "path": "audio/43ee7a601b45742716f8c1c424c576992297faf0a3ec140047ad194b682f7edf.wav",
+                "entryId": "ja:particle:ka",
+                "startFrame": 63855,
+                "frameCount": 13220
+            }
+        ],
+        "sha256": "a94d59be57042072ea7fbfc31ff14c38c192229f01f6f352193f2bf945ae979f",
+        "frames": 88835,
+        "input": {
+            "language": "ja",
+            "label": "タオルはどこですか",
+            "semanticRole": "orderedLexicalSequence",
+            "readings": ["タオルはどこですか"]
+        },
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "construction": "Exact personal-care constituent PCM, including the English plural towels."
+        }
+    },
+    {
+        "path": "audio/a8b78c114fc0e19e817519c939974924f01df20c0ac20d8b22cd8b7e86582810.wav",
+        "entryId": "ja:sentence:care-example-toothbrush",
+        "label": "ハブラシはかばんにある",
+        "parts": [
+            {
+                "path": "audio/e08d8e534a57091cc9bdb5a629841515392fb4f4f9e8ef064a8de02fa0086d52.wav",
+                "entryId": "ja:word:care-toothbrush"
+            },
+            {
+                "path": "audio/d7c9e57654e559dfba3bd6f78c2f27416a61f8b28d56145d84a62fe25b70c94d.wav",
+                "entryId": "ja:particle:wa"
+            },
+            {
+                "path": "audio/6c383b07d47bcbe9c9eadf6b97d7ce3ec03e4f31503d0bf1dec5a48b2829ff78.wav",
+                "entryId": "ja:word:bag"
+            },
+            {
+                "path": "audio/1615cf278c2962c1657907b3686d653625229af2375f90dda5bfd5b178c7aedb.wav",
+                "entryId": "ja:particle:ni"
             },
             {
                 "path": "audio/0e997231f55465948ee67d44898dfd72abf6e48f95f8839fe116ca8978d53535.wav",
@@ -21,232 +175,357 @@
         "gapMs": 90,
         "segments": [
             {
-                "path": "audio/1e320526b0770017e80858920120c2842e39a673316105a149e31d9f1e7c4858.wav",
-                "entryId": "ja:word:butter",
+                "path": "audio/e08d8e534a57091cc9bdb5a629841515392fb4f4f9e8ef064a8de02fa0086d52.wav",
+                "entryId": "ja:word:care-toothbrush",
                 "startFrame": 2400,
-                "frameCount": 22137
+                "frameCount": 19907
             },
             {
-                "path": "audio/69d02d32db53e5eeb4bb6db01917e619478b734bd66988c4242ccc1a3e55655d.wav",
-                "entryId": "ja:particle:ga",
-                "startFrame": 26697,
-                "frameCount": 14335
+                "path": "audio/d7c9e57654e559dfba3bd6f78c2f27416a61f8b28d56145d84a62fe25b70c94d.wav",
+                "entryId": "ja:particle:wa",
+                "startFrame": 24467,
+                "frameCount": 12106
+            },
+            {
+                "path": "audio/6c383b07d47bcbe9c9eadf6b97d7ce3ec03e4f31503d0bf1dec5a48b2829ff78.wav",
+                "entryId": "ja:word:bag",
+                "startFrame": 38733,
+                "frameCount": 16564
+            },
+            {
+                "path": "audio/1615cf278c2962c1657907b3686d653625229af2375f90dda5bfd5b178c7aedb.wav",
+                "entryId": "ja:particle:ni",
+                "startFrame": 57457,
+                "frameCount": 13220
             },
             {
                 "path": "audio/0e997231f55465948ee67d44898dfd72abf6e48f95f8839fe116ca8978d53535.wav",
                 "entryId": "ja:word:aru-exist",
-                "startFrame": 43192,
+                "startFrame": 72837,
                 "frameCount": 8976
             }
         ],
-        "sha256": "9b3749c164aa38285998ad5aeac5567c4fffb4f0c9c8733ee263ba2be1269ce9",
-        "frames": 63928,
+        "sha256": "a8b78c114fc0e19e817519c939974924f01df20c0ac20d8b22cd8b7e86582810",
+        "frames": 93573,
         "input": {
             "language": "ja",
-            "label": "バターがある",
+            "label": "ハブラシはかばんにある",
             "semanticRole": "orderedLexicalSequence",
-            "readings": ["ばたーがある"]
+            "readings": ["ハブラシはかばんにある"]
         },
         "metadata": {
             "listening": "unverified-not-performed",
-            "construction": "Exact existing constituent PCM; no external synthesis."
+            "construction": "Exact personal-care constituent PCM, including the English plural towels."
         }
     },
     {
-        "path": "audio/ab126f3fe008c0af69cce1d8d6854eb6ffe885521fa4336d1797b40f18089dcc.wav",
-        "entryId": "ja:sentence:mealtime-eat-rice",
-        "label": "ごはんを食べる",
+        "path": "audio/6db4768edd16b0feb08772ad655e95c9aa82838d8916662531f06b5e560d055f.wav",
+        "entryId": "ja:sentence:care-example-toothpaste",
+        "label": "スーパーではみがきこをかう",
         "parts": [
             {
-                "path": "audio/0525847ce0e98844c6520826eb72a29aff79ea2b302d65be5e698a818c232a74.wav",
-                "entryId": "ja:word:rice"
+                "path": "audio/4fe867dd6a28eb23632a97e20d639fe0538f619eebd6614d0dceaf7bc0780f72.wav",
+                "entryId": "ja:word:places-supermarket"
+            },
+            {
+                "path": "audio/df81472c8108ad9b47d8d90db017ff1c1b553d80263d6a2c59de1571671f3eee.wav",
+                "entryId": "ja:particle:de"
+            },
+            {
+                "path": "audio/ce97090a475f07ab2bb6e1cc1d51392fcf5fda18b690bf93161c9a67691a50ae.wav",
+                "entryId": "ja:word:care-toothpaste"
             },
             {
                 "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
                 "entryId": "ja:particle:wo"
             },
             {
-                "path": "audio/4ddd4e95428918c1c2f8c64b3eab948d332e376275c09dfcff69082a20ee9181.wav",
-                "entryId": "ja:word:taberu"
+                "path": "audio/1a880a2cfc93aedb14ed94ad5cbd8ba5a803aa377bb98f0bf534e0ce8905bfd4.wav",
+                "entryId": "ja:word:travel-buy"
             },
             { "pauseMs": 400 }
         ],
         "gapMs": 90,
         "segments": [
             {
-                "path": "audio/0525847ce0e98844c6520826eb72a29aff79ea2b302d65be5e698a818c232a74.wav",
-                "entryId": "ja:word:rice",
+                "path": "audio/4fe867dd6a28eb23632a97e20d639fe0538f619eebd6614d0dceaf7bc0780f72.wav",
+                "entryId": "ja:word:places-supermarket",
                 "startFrame": 2400,
-                "frameCount": 17678
+                "frameCount": 22137
+            },
+            {
+                "path": "audio/df81472c8108ad9b47d8d90db017ff1c1b553d80263d6a2c59de1571671f3eee.wav",
+                "entryId": "ja:particle:de",
+                "startFrame": 26697,
+                "frameCount": 13220
+            },
+            {
+                "path": "audio/ce97090a475f07ab2bb6e1cc1d51392fcf5fda18b690bf93161c9a67691a50ae.wav",
+                "entryId": "ja:word:care-toothpaste",
+                "startFrame": 42077,
+                "frameCount": 23251
             },
             {
                 "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
                 "entryId": "ja:particle:wo",
-                "startFrame": 22238,
+                "startFrame": 67488,
                 "frameCount": 8762
             },
             {
-                "path": "audio/4ddd4e95428918c1c2f8c64b3eab948d332e376275c09dfcff69082a20ee9181.wav",
-                "entryId": "ja:word:taberu",
-                "startFrame": 33160,
-                "frameCount": 14496
+                "path": "audio/1a880a2cfc93aedb14ed94ad5cbd8ba5a803aa377bb98f0bf534e0ce8905bfd4.wav",
+                "entryId": "ja:word:travel-buy",
+                "startFrame": 78410,
+                "frameCount": 13220
             }
         ],
-        "sha256": "ab126f3fe008c0af69cce1d8d6854eb6ffe885521fa4336d1797b40f18089dcc",
-        "frames": 59416,
+        "sha256": "6db4768edd16b0feb08772ad655e95c9aa82838d8916662531f06b5e560d055f",
+        "frames": 103390,
         "input": {
             "language": "ja",
-            "label": "ごはんを食べる",
+            "label": "スーパーではみがきこをかう",
             "semanticRole": "orderedLexicalSequence",
-            "readings": ["ごはんをたべる"]
+            "readings": ["スーパーではみがきこをかう"]
         },
         "metadata": {
             "listening": "unverified-not-performed",
-            "construction": "Exact existing constituent PCM; no external synthesis."
+            "construction": "Exact personal-care constituent PCM, including the English plural towels."
         }
     },
     {
-        "path": "audio/b89c2f0b27cd7b0d269e993cbd8519a5d2df2672c29c82bf14e0679558175d46.wav",
-        "entryId": "ja:sentence:mealtime-small-tomato",
-        "label": "トマトは小さい",
+        "path": "audio/7d619266eaa093efde5831b22d34088dc8b1e567f0a59ad6471fc55b63e59b0b.wav",
+        "entryId": "ja:sentence:daily-needs-1",
+        "label": "水はどこですか",
         "parts": [
             {
-                "path": "audio/bc58d1321a4c1bd8250a1d1f0b11600e6938576e4500b548fe715fc77f28cb78.wav",
-                "entryId": "ja:word:tomato"
+                "path": "audio/238fd0913f4feae6a28547b34b720af5c2db7cf9c9febf7d03b608e1129bef73.wav",
+                "entryId": "ja:word:mizu"
             },
             {
                 "path": "audio/d7c9e57654e559dfba3bd6f78c2f27416a61f8b28d56145d84a62fe25b70c94d.wav",
                 "entryId": "ja:particle:wa"
             },
             {
-                "path": "audio/bd221520af0519e412d2e8492715ef2bdefffe644fe8ce4fbcd0fa70ce1a1301.wav",
-                "entryId": "ja:word:chiisai"
+                "path": "audio/d8e8d38bb87e5846270a85a0031c99310edbc497f365f2a8fbb4ac49a10ddba3.wav",
+                "entryId": "ja:word:doko"
+            },
+            {
+                "path": "audio/2959a5dcab722b7d5c39f67845f1d6a3d6ede5f23e554e9547bca0e6cb62c56b.wav",
+                "entryId": "ja:word:desu"
+            },
+            {
+                "path": "audio/43ee7a601b45742716f8c1c424c576992297faf0a3ec140047ad194b682f7edf.wav",
+                "entryId": "ja:particle:ka"
             },
             { "pauseMs": 400 }
         ],
         "gapMs": 90,
         "segments": [
             {
-                "path": "audio/bc58d1321a4c1bd8250a1d1f0b11600e6938576e4500b548fe715fc77f28cb78.wav",
-                "entryId": "ja:word:tomato",
+                "path": "audio/238fd0913f4feae6a28547b34b720af5c2db7cf9c9febf7d03b608e1129bef73.wav",
+                "entryId": "ja:word:mizu",
                 "startFrame": 2400,
-                "frameCount": 18793
+                "frameCount": 14189
             },
             {
                 "path": "audio/d7c9e57654e559dfba3bd6f78c2f27416a61f8b28d56145d84a62fe25b70c94d.wav",
                 "entryId": "ja:particle:wa",
-                "startFrame": 23353,
+                "startFrame": 18749,
                 "frameCount": 12106
             },
             {
-                "path": "audio/bd221520af0519e412d2e8492715ef2bdefffe644fe8ce4fbcd0fa70ce1a1301.wav",
-                "entryId": "ja:word:chiisai",
-                "startFrame": 37619,
-                "frameCount": 14275
+                "path": "audio/d8e8d38bb87e5846270a85a0031c99310edbc497f365f2a8fbb4ac49a10ddba3.wav",
+                "entryId": "ja:word:doko",
+                "startFrame": 33015,
+                "frameCount": 11541
+            },
+            {
+                "path": "audio/2959a5dcab722b7d5c39f67845f1d6a3d6ede5f23e554e9547bca0e6cb62c56b.wav",
+                "entryId": "ja:word:desu",
+                "startFrame": 46716,
+                "frameCount": 11490
+            },
+            {
+                "path": "audio/43ee7a601b45742716f8c1c424c576992297faf0a3ec140047ad194b682f7edf.wav",
+                "entryId": "ja:particle:ka",
+                "startFrame": 60366,
+                "frameCount": 13220
             }
         ],
-        "sha256": "b89c2f0b27cd7b0d269e993cbd8519a5d2df2672c29c82bf14e0679558175d46",
-        "frames": 63654,
+        "sha256": "7d619266eaa093efde5831b22d34088dc8b1e567f0a59ad6471fc55b63e59b0b",
+        "frames": 85346,
         "input": {
             "language": "ja",
-            "label": "トマトは小さい",
+            "label": "水はどこですか",
             "semanticRole": "orderedLexicalSequence",
-            "readings": ["とまとはちいさい"]
+            "readings": ["みずはどこですか"]
         },
         "metadata": {
             "listening": "unverified-not-performed",
-            "construction": "Exact existing constituent PCM; no external synthesis."
+            "construction": "Exact existing constituent PCM, without synthesis or new external requests."
         }
     },
     {
-        "path": "audio/e8a6c06ea879d6057a4c09913eb3f8cbb0a214ec4b008438c778b19690bf0b1a.wav",
-        "entryId": "ja:sentence:mealtime-drink-with-friend",
-        "label": "友達と水を飲む",
+        "path": "audio/84f1fd73480c54a2d7557df25000770cda33d0a9d7b43ee1436b073cb76cf7cd.wav",
+        "entryId": "ja:sentence:daily-needs-2",
+        "label": "カップはここにある",
         "parts": [
             {
-                "path": "audio/b735f033be7289c86f7f84621476005af35c3fdec9b7e43f2b7531609f5d70b1.wav",
-                "entryId": "ja:word:tomodachi"
+                "path": "audio/2a0263c47f0699e1aff3603a5892c5256ffaff78ed6c656be287581ee8ab5255.wav",
+                "entryId": "ja:word:tableware-cup"
+            },
+            {
+                "path": "audio/d7c9e57654e559dfba3bd6f78c2f27416a61f8b28d56145d84a62fe25b70c94d.wav",
+                "entryId": "ja:particle:wa"
+            },
+            {
+                "path": "audio/f298e745d293e821e9c245438bda27c7da9035ad01dbd7b473e4d5ab8b858b9a.wav",
+                "entryId": "ja:word:koko"
+            },
+            {
+                "path": "audio/1615cf278c2962c1657907b3686d653625229af2375f90dda5bfd5b178c7aedb.wav",
+                "entryId": "ja:particle:ni"
+            },
+            {
+                "path": "audio/0e997231f55465948ee67d44898dfd72abf6e48f95f8839fe116ca8978d53535.wav",
+                "entryId": "ja:word:aru-exist"
+            },
+            { "pauseMs": 400 }
+        ],
+        "gapMs": 90,
+        "segments": [
+            {
+                "path": "audio/2a0263c47f0699e1aff3603a5892c5256ffaff78ed6c656be287581ee8ab5255.wav",
+                "entryId": "ja:word:tableware-cup",
+                "startFrame": 2400,
+                "frameCount": 17678
+            },
+            {
+                "path": "audio/d7c9e57654e559dfba3bd6f78c2f27416a61f8b28d56145d84a62fe25b70c94d.wav",
+                "entryId": "ja:particle:wa",
+                "startFrame": 22238,
+                "frameCount": 12106
+            },
+            {
+                "path": "audio/f298e745d293e821e9c245438bda27c7da9035ad01dbd7b473e4d5ab8b858b9a.wav",
+                "entryId": "ja:word:koko",
+                "startFrame": 36504,
+                "frameCount": 11459
+            },
+            {
+                "path": "audio/1615cf278c2962c1657907b3686d653625229af2375f90dda5bfd5b178c7aedb.wav",
+                "entryId": "ja:particle:ni",
+                "startFrame": 50123,
+                "frameCount": 13220
+            },
+            {
+                "path": "audio/0e997231f55465948ee67d44898dfd72abf6e48f95f8839fe116ca8978d53535.wav",
+                "entryId": "ja:word:aru-exist",
+                "startFrame": 65503,
+                "frameCount": 8976
+            }
+        ],
+        "sha256": "84f1fd73480c54a2d7557df25000770cda33d0a9d7b43ee1436b073cb76cf7cd",
+        "frames": 86239,
+        "input": {
+            "language": "ja",
+            "label": "カップはここにある",
+            "semanticRole": "orderedLexicalSequence",
+            "readings": ["カップはここにある"]
+        },
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "construction": "Exact existing constituent PCM, without synthesis or new external requests."
+        }
+    },
+    {
+        "path": "audio/45bb9e7b9d9e28dcbbe314937fb4c23872af177fd720b32953bb22ab079dacea.wav",
+        "entryId": "ja:sentence:daily-needs-3",
+        "label": "スプーンとフォークをかう",
+        "parts": [
+            {
+                "path": "audio/0330d7e2ff38989c650e628d73e3fe5ea13ee95b14a7cc7770e084ed43259ab5.wav",
+                "entryId": "ja:word:tableware-spoon"
             },
             {
                 "path": "audio/606f3c1823245eee4195e2195e8189dad7df8cd21b7e6550a55b5c56e585916b.wav",
                 "entryId": "ja:particle:to"
             },
             {
-                "path": "audio/238fd0913f4feae6a28547b34b720af5c2db7cf9c9febf7d03b608e1129bef73.wav",
-                "entryId": "ja:word:mizu"
+                "path": "audio/bd830d1b87d9b110d43374bfa5c5f1cc9b45e3cbe24046b187d59e40288a2587.wav",
+                "entryId": "ja:word:tableware-fork"
             },
             {
                 "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
                 "entryId": "ja:particle:wo"
             },
             {
-                "path": "audio/5eac59ad2371c7277aa56070f39b840cfb2fa6edb0ec5f52f293f8c0b0c819da.wav",
-                "entryId": "ja:word:nomu"
+                "path": "audio/1a880a2cfc93aedb14ed94ad5cbd8ba5a803aa377bb98f0bf534e0ce8905bfd4.wav",
+                "entryId": "ja:word:travel-buy"
             },
             { "pauseMs": 400 }
         ],
         "gapMs": 90,
         "segments": [
             {
-                "path": "audio/b735f033be7289c86f7f84621476005af35c3fdec9b7e43f2b7531609f5d70b1.wav",
-                "entryId": "ja:word:tomodachi",
+                "path": "audio/0330d7e2ff38989c650e628d73e3fe5ea13ee95b14a7cc7770e084ed43259ab5.wav",
+                "entryId": "ja:word:tableware-spoon",
                 "startFrame": 2400,
-                "frameCount": 17503
+                "frameCount": 16564
             },
             {
                 "path": "audio/606f3c1823245eee4195e2195e8189dad7df8cd21b7e6550a55b5c56e585916b.wav",
                 "entryId": "ja:particle:to",
-                "startFrame": 22063,
+                "startFrame": 21124,
                 "frameCount": 12106
             },
             {
-                "path": "audio/238fd0913f4feae6a28547b34b720af5c2db7cf9c9febf7d03b608e1129bef73.wav",
-                "entryId": "ja:word:mizu",
-                "startFrame": 36329,
-                "frameCount": 14189
+                "path": "audio/bd830d1b87d9b110d43374bfa5c5f1cc9b45e3cbe24046b187d59e40288a2587.wav",
+                "entryId": "ja:word:tableware-fork",
+                "startFrame": 35390,
+                "frameCount": 17678
             },
             {
                 "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
                 "entryId": "ja:particle:wo",
-                "startFrame": 52678,
+                "startFrame": 55228,
                 "frameCount": 8762
             },
             {
-                "path": "audio/5eac59ad2371c7277aa56070f39b840cfb2fa6edb0ec5f52f293f8c0b0c819da.wav",
-                "entryId": "ja:word:nomu",
-                "startFrame": 63600,
-                "frameCount": 13720
+                "path": "audio/1a880a2cfc93aedb14ed94ad5cbd8ba5a803aa377bb98f0bf534e0ce8905bfd4.wav",
+                "entryId": "ja:word:travel-buy",
+                "startFrame": 66150,
+                "frameCount": 13220
             }
         ],
-        "sha256": "e8a6c06ea879d6057a4c09913eb3f8cbb0a214ec4b008438c778b19690bf0b1a",
-        "frames": 89080,
+        "sha256": "45bb9e7b9d9e28dcbbe314937fb4c23872af177fd720b32953bb22ab079dacea",
+        "frames": 91130,
         "input": {
             "language": "ja",
-            "label": "友達と水を飲む",
+            "label": "スプーンとフォークをかう",
             "semanticRole": "orderedLexicalSequence",
-            "readings": ["ともだちとみずをのむ"]
+            "readings": ["スプーンとフォークをかう"]
         },
         "metadata": {
             "listening": "unverified-not-performed",
-            "construction": "Exact existing constituent PCM; no external synthesis."
+            "construction": "Exact existing constituent PCM, without synthesis or new external requests."
         }
     },
     {
-        "path": "audio/79ade5a766a4697c0f679952e272d79842b85a4def4821bcca4b13d497458838.wav",
-        "entryId": "ja:sentence:daily-go-school",
-        "label": "私は学校に行く",
+        "path": "audio/6e5b04b187a04bf8e1dde6ba6e232dcfe7f2a003b2cd65add06f8b021bc96d3d.wav",
+        "entryId": "ja:sentence:transport-example-airplane",
+        "label": "ひこうきで日本に行く",
         "parts": [
             {
-                "path": "audio/582994ed27256fd8bd5dab9d3f9b0c6e7758081441f9f2773eb03ba29314a33f.wav",
-                "entryId": "ja:word:watashi"
+                "path": "audio/5a14779f955f505ed616f02b8358c8318326510ae091e7c167567493bdedf2c9.wav",
+                "entryId": "ja:word:transport-airplane"
             },
             {
-                "path": "audio/d7c9e57654e559dfba3bd6f78c2f27416a61f8b28d56145d84a62fe25b70c94d.wav",
-                "entryId": "ja:particle:wa"
+                "path": "audio/df81472c8108ad9b47d8d90db017ff1c1b553d80263d6a2c59de1571671f3eee.wav",
+                "entryId": "ja:particle:de"
             },
             {
-                "path": "audio/6b6f32acd45589aeedd9e33f013184317303e23159028d7ad1bfbadfc0cb6dc9.wav",
-                "entryId": "ja:word:gakkou"
+                "path": "audio/5a06c42ca5f7c40270c03c1a3e8a2286da938b744c8d298f0f44f6eaccbf419e.wav",
+                "entryId": "ja:word:nihon"
             },
             {
                 "path": "audio/1615cf278c2962c1657907b3686d653625229af2375f90dda5bfd5b178c7aedb.wav",
@@ -261,207 +540,154 @@
         "gapMs": 90,
         "segments": [
             {
-                "path": "audio/582994ed27256fd8bd5dab9d3f9b0c6e7758081441f9f2773eb03ba29314a33f.wav",
-                "entryId": "ja:word:watashi",
+                "path": "audio/5a14779f955f505ed616f02b8358c8318326510ae091e7c167567493bdedf2c9.wav",
+                "entryId": "ja:word:transport-airplane",
                 "startFrame": 2400,
-                "frameCount": 15653
+                "frameCount": 19907
             },
             {
-                "path": "audio/d7c9e57654e559dfba3bd6f78c2f27416a61f8b28d56145d84a62fe25b70c94d.wav",
-                "entryId": "ja:particle:wa",
-                "startFrame": 20213,
-                "frameCount": 12106
+                "path": "audio/df81472c8108ad9b47d8d90db017ff1c1b553d80263d6a2c59de1571671f3eee.wav",
+                "entryId": "ja:particle:de",
+                "startFrame": 24467,
+                "frameCount": 13220
             },
             {
-                "path": "audio/6b6f32acd45589aeedd9e33f013184317303e23159028d7ad1bfbadfc0cb6dc9.wav",
-                "entryId": "ja:word:gakkou",
-                "startFrame": 34479,
-                "frameCount": 14335
+                "path": "audio/5a06c42ca5f7c40270c03c1a3e8a2286da938b744c8d298f0f44f6eaccbf419e.wav",
+                "entryId": "ja:word:nihon",
+                "startFrame": 39847,
+                "frameCount": 12278
             },
             {
                 "path": "audio/1615cf278c2962c1657907b3686d653625229af2375f90dda5bfd5b178c7aedb.wav",
                 "entryId": "ja:particle:ni",
-                "startFrame": 50974,
+                "startFrame": 54285,
                 "frameCount": 13220
             },
             {
                 "path": "audio/843223b7290cf0fda523989799b96f85c224338146f5d022e92e6715234e2e39.wav",
                 "entryId": "ja:word:iku",
-                "startFrame": 66354,
+                "startFrame": 69665,
                 "frameCount": 12643
             }
         ],
-        "sha256": "79ade5a766a4697c0f679952e272d79842b85a4def4821bcca4b13d497458838",
-        "frames": 90757,
+        "sha256": "6e5b04b187a04bf8e1dde6ba6e232dcfe7f2a003b2cd65add06f8b021bc96d3d",
+        "frames": 94068,
         "input": {
             "language": "ja",
-            "label": "私は学校に行く",
+            "label": "ひこうきで日本に行く",
             "semanticRole": "orderedLexicalSequence",
-            "readings": ["わたしはがっこうにいく"]
+            "readings": ["ひこうきでにほんにいく"]
         },
         "metadata": {
             "listening": "unverified-not-performed",
-            "construction": "Exact existing constituent PCM; no external synthesis."
+            "construction": "Exact transport constituent PCM, including the English plural airplanes."
         }
     },
     {
-        "path": "audio/ce0a3cfdadde39fc8e4c9db9a95925b2d5195ae538050ca0b88e37b9886990ef.wav",
-        "entryId": "ja:sentence:daily-walk-friend",
-        "label": "友達と歩く",
+        "path": "audio/617b54d62f3c3f0527c2051140ac468845a32189db5d2da40d44a5fee9f75398.wav",
+        "entryId": "ja:sentence:transport-example-boat",
+        "label": "川にボートがある",
         "parts": [
             {
-                "path": "audio/b735f033be7289c86f7f84621476005af35c3fdec9b7e43f2b7531609f5d70b1.wav",
-                "entryId": "ja:word:tomodachi"
+                "path": "audio/02b62b3e244ea765dc90cb6aeeb6c692de8e5c6fc39d35ba2da13da9bca8accd.wav",
+                "entryId": "ja:word:kawa-river"
             },
             {
-                "path": "audio/606f3c1823245eee4195e2195e8189dad7df8cd21b7e6550a55b5c56e585916b.wav",
-                "entryId": "ja:particle:to"
+                "path": "audio/1615cf278c2962c1657907b3686d653625229af2375f90dda5bfd5b178c7aedb.wav",
+                "entryId": "ja:particle:ni"
             },
             {
-                "path": "audio/a6c59dc12594eaf457c52ccdd8b684e37c0953566969c41f972f4d22b105bff4.wav",
-                "entryId": "ja:word:aruku"
+                "path": "audio/01d8bbabaeb82e210cf53311c2dc3d4d9a451f414fdd68443336fd8c471e2697.wav",
+                "entryId": "ja:word:transport-boat"
+            },
+            {
+                "path": "audio/69d02d32db53e5eeb4bb6db01917e619478b734bd66988c4242ccc1a3e55655d.wav",
+                "entryId": "ja:particle:ga"
+            },
+            {
+                "path": "audio/0e997231f55465948ee67d44898dfd72abf6e48f95f8839fe116ca8978d53535.wav",
+                "entryId": "ja:word:aru-exist"
             },
             { "pauseMs": 400 }
         ],
         "gapMs": 90,
         "segments": [
             {
-                "path": "audio/b735f033be7289c86f7f84621476005af35c3fdec9b7e43f2b7531609f5d70b1.wav",
-                "entryId": "ja:word:tomodachi",
+                "path": "audio/02b62b3e244ea765dc90cb6aeeb6c692de8e5c6fc39d35ba2da13da9bca8accd.wav",
+                "entryId": "ja:word:kawa-river",
                 "startFrame": 2400,
-                "frameCount": 17503
+                "frameCount": 13484
             },
             {
-                "path": "audio/606f3c1823245eee4195e2195e8189dad7df8cd21b7e6550a55b5c56e585916b.wav",
-                "entryId": "ja:particle:to",
-                "startFrame": 22063,
-                "frameCount": 12106
+                "path": "audio/1615cf278c2962c1657907b3686d653625229af2375f90dda5bfd5b178c7aedb.wav",
+                "entryId": "ja:particle:ni",
+                "startFrame": 18044,
+                "frameCount": 13220
             },
             {
-                "path": "audio/a6c59dc12594eaf457c52ccdd8b684e37c0953566969c41f972f4d22b105bff4.wav",
-                "entryId": "ja:word:aruku",
-                "startFrame": 36329,
-                "frameCount": 14294
-            }
-        ],
-        "sha256": "ce0a3cfdadde39fc8e4c9db9a95925b2d5195ae538050ca0b88e37b9886990ef",
-        "frames": 62383,
-        "input": {
-            "language": "ja",
-            "label": "友達と歩く",
-            "semanticRole": "orderedLexicalSequence",
-            "readings": ["ともだちとあるく"]
-        },
-        "metadata": {
-            "listening": "unverified-not-performed",
-            "construction": "Exact existing constituent PCM; no external synthesis."
-        }
-    },
-    {
-        "path": "audio/6abc35e149fccaf07ea670d71f683f8fcb483f809aeec97e0061be5ca2d40d1a.wav",
-        "entryId": "ja:sentence:daily-eat-friend",
-        "label": "友達とごはんを食べる",
-        "parts": [
-            {
-                "path": "audio/b735f033be7289c86f7f84621476005af35c3fdec9b7e43f2b7531609f5d70b1.wav",
-                "entryId": "ja:word:tomodachi"
-            },
-            {
-                "path": "audio/606f3c1823245eee4195e2195e8189dad7df8cd21b7e6550a55b5c56e585916b.wav",
-                "entryId": "ja:particle:to"
-            },
-            {
-                "path": "audio/0525847ce0e98844c6520826eb72a29aff79ea2b302d65be5e698a818c232a74.wav",
-                "entryId": "ja:word:rice"
-            },
-            {
-                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
-                "entryId": "ja:particle:wo"
-            },
-            {
-                "path": "audio/4ddd4e95428918c1c2f8c64b3eab948d332e376275c09dfcff69082a20ee9181.wav",
-                "entryId": "ja:word:taberu"
-            },
-            { "pauseMs": 400 }
-        ],
-        "gapMs": 90,
-        "segments": [
-            {
-                "path": "audio/b735f033be7289c86f7f84621476005af35c3fdec9b7e43f2b7531609f5d70b1.wav",
-                "entryId": "ja:word:tomodachi",
-                "startFrame": 2400,
-                "frameCount": 17503
-            },
-            {
-                "path": "audio/606f3c1823245eee4195e2195e8189dad7df8cd21b7e6550a55b5c56e585916b.wav",
-                "entryId": "ja:particle:to",
-                "startFrame": 22063,
-                "frameCount": 12106
-            },
-            {
-                "path": "audio/0525847ce0e98844c6520826eb72a29aff79ea2b302d65be5e698a818c232a74.wav",
-                "entryId": "ja:word:rice",
-                "startFrame": 36329,
+                "path": "audio/01d8bbabaeb82e210cf53311c2dc3d4d9a451f414fdd68443336fd8c471e2697.wav",
+                "entryId": "ja:word:transport-boat",
+                "startFrame": 33424,
                 "frameCount": 17678
             },
             {
-                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
-                "entryId": "ja:particle:wo",
-                "startFrame": 56167,
-                "frameCount": 8762
+                "path": "audio/69d02d32db53e5eeb4bb6db01917e619478b734bd66988c4242ccc1a3e55655d.wav",
+                "entryId": "ja:particle:ga",
+                "startFrame": 53262,
+                "frameCount": 14335
             },
             {
-                "path": "audio/4ddd4e95428918c1c2f8c64b3eab948d332e376275c09dfcff69082a20ee9181.wav",
-                "entryId": "ja:word:taberu",
-                "startFrame": 67089,
-                "frameCount": 14496
+                "path": "audio/0e997231f55465948ee67d44898dfd72abf6e48f95f8839fe116ca8978d53535.wav",
+                "entryId": "ja:word:aru-exist",
+                "startFrame": 69757,
+                "frameCount": 8976
             }
         ],
-        "sha256": "6abc35e149fccaf07ea670d71f683f8fcb483f809aeec97e0061be5ca2d40d1a",
-        "frames": 93345,
+        "sha256": "617b54d62f3c3f0527c2051140ac468845a32189db5d2da40d44a5fee9f75398",
+        "frames": 90493,
         "input": {
             "language": "ja",
-            "label": "友達とごはんを食べる",
+            "label": "川にボートがある",
             "semanticRole": "orderedLexicalSequence",
-            "readings": ["ともだちとごはんをたべる"]
+            "readings": ["かわにボートがある"]
         },
         "metadata": {
             "listening": "unverified-not-performed",
-            "construction": "Exact existing constituent PCM; no external synthesis."
+            "construction": "Exact transport constituent PCM, including the English plural airplanes."
         }
     },
     {
-        "path": "audio/d08e6b83c1042a26d03960f01101660ed3a25851996d48cb923d63bba5c977a9.wav",
-        "entryId": "ja:sentence:daily-learn-school",
-        "label": "学校で日本語を学ぶ",
+        "path": "audio/37ec388c4e7679aabf18281493f60a1ed58b37907c8cf5754c063229ca53b2ef.wav",
+        "entryId": "ja:sentence:transport-example-taxi",
+        "label": "えきでタクシーをまつ",
         "parts": [
             {
-                "path": "audio/6b6f32acd45589aeedd9e33f013184317303e23159028d7ad1bfbadfc0cb6dc9.wav",
-                "entryId": "ja:word:gakkou"
+                "path": "audio/47cfbf034038630b89f3346d609b2f0a81a08d7b18bf456f8dfc9cdff0a36d67.wav",
+                "entryId": "ja:word:travel-station"
             },
             {
                 "path": "audio/df81472c8108ad9b47d8d90db017ff1c1b553d80263d6a2c59de1571671f3eee.wav",
                 "entryId": "ja:particle:de"
             },
             {
-                "path": "audio/cff4156d26b0e956bdda771009e94040a6df34fb62a9b74a2037a5ec836017d4.wav",
-                "entryId": "ja:word:nihongo"
+                "path": "audio/ca4b7bb61900ad5655f8f88ae31d8c4d8ddb75972c0a7866e45519e8cda1b80f.wav",
+                "entryId": "ja:word:transport-taxi"
             },
             {
                 "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
                 "entryId": "ja:particle:wo"
             },
             {
-                "path": "audio/42e7a65eaecb648b138319e905ffa562430045022aa9631327209ed4a59ce316.wav",
-                "entryId": "ja:word:manabu"
+                "path": "audio/e283ee5698e2cffd800f451b43608281335332dcba02202ee407da23f7a1143c.wav",
+                "entryId": "ja:word:travel-wait"
             },
             { "pauseMs": 400 }
         ],
         "gapMs": 90,
         "segments": [
             {
-                "path": "audio/6b6f32acd45589aeedd9e33f013184317303e23159028d7ad1bfbadfc0cb6dc9.wav",
-                "entryId": "ja:word:gakkou",
+                "path": "audio/47cfbf034038630b89f3346d609b2f0a81a08d7b18bf456f8dfc9cdff0a36d67.wav",
+                "entryId": "ja:word:travel-station",
                 "startFrame": 2400,
                 "frameCount": 14335
             },
@@ -472,307 +698,93 @@
                 "frameCount": 13220
             },
             {
-                "path": "audio/cff4156d26b0e956bdda771009e94040a6df34fb62a9b74a2037a5ec836017d4.wav",
-                "entryId": "ja:word:nihongo",
+                "path": "audio/ca4b7bb61900ad5655f8f88ae31d8c4d8ddb75972c0a7866e45519e8cda1b80f.wav",
+                "entryId": "ja:word:transport-taxi",
                 "startFrame": 34275,
-                "frameCount": 16054
+                "frameCount": 23251
             },
             {
                 "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
                 "entryId": "ja:particle:wo",
-                "startFrame": 52489,
+                "startFrame": 59686,
                 "frameCount": 8762
             },
             {
-                "path": "audio/42e7a65eaecb648b138319e905ffa562430045022aa9631327209ed4a59ce316.wav",
-                "entryId": "ja:word:manabu",
-                "startFrame": 63411,
-                "frameCount": 14653
-            }
-        ],
-        "sha256": "d08e6b83c1042a26d03960f01101660ed3a25851996d48cb923d63bba5c977a9",
-        "frames": 89824,
-        "input": {
-            "language": "ja",
-            "label": "学校で日本語を学ぶ",
-            "semanticRole": "orderedLexicalSequence",
-            "readings": ["がっこうでにほんごをまなぶ"]
-        },
-        "metadata": {
-            "listening": "unverified-not-performed",
-            "construction": "Exact existing constituent PCM; no external synthesis."
-        }
-    },
-    {
-        "path": "audio/b63f21b4a446a898ac33279e53a3b73af977010a58670c54957909b9b3b739e9.wav",
-        "entryId": "ja:sentence:daily-drink-slowly",
-        "label": "ゆっくり水を飲む",
-        "parts": [
-            {
-                "path": "audio/1c2d1664ef0db6298e34d97fa47fd27aa3dfc34f44515e3e22ed6e07e2ca0011.wav",
-                "entryId": "ja:word:yukkuri"
-            },
-            {
-                "path": "audio/238fd0913f4feae6a28547b34b720af5c2db7cf9c9febf7d03b608e1129bef73.wav",
-                "entryId": "ja:word:mizu"
-            },
-            {
-                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
-                "entryId": "ja:particle:wo"
-            },
-            {
-                "path": "audio/5eac59ad2371c7277aa56070f39b840cfb2fa6edb0ec5f52f293f8c0b0c819da.wav",
-                "entryId": "ja:word:nomu"
-            },
-            { "pauseMs": 400 }
-        ],
-        "gapMs": 90,
-        "segments": [
-            {
-                "path": "audio/1c2d1664ef0db6298e34d97fa47fd27aa3dfc34f44515e3e22ed6e07e2ca0011.wav",
-                "entryId": "ja:word:yukkuri",
-                "startFrame": 2400,
-                "frameCount": 21022
-            },
-            {
-                "path": "audio/238fd0913f4feae6a28547b34b720af5c2db7cf9c9febf7d03b608e1129bef73.wav",
-                "entryId": "ja:word:mizu",
-                "startFrame": 25582,
-                "frameCount": 14189
-            },
-            {
-                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
-                "entryId": "ja:particle:wo",
-                "startFrame": 41931,
-                "frameCount": 8762
-            },
-            {
-                "path": "audio/5eac59ad2371c7277aa56070f39b840cfb2fa6edb0ec5f52f293f8c0b0c819da.wav",
-                "entryId": "ja:word:nomu",
-                "startFrame": 52853,
-                "frameCount": 13720
-            }
-        ],
-        "sha256": "b63f21b4a446a898ac33279e53a3b73af977010a58670c54957909b9b3b739e9",
-        "frames": 78333,
-        "input": {
-            "language": "ja",
-            "label": "ゆっくり水を飲む",
-            "semanticRole": "orderedLexicalSequence",
-            "readings": ["ゆっくりみずをのむ"]
-        },
-        "metadata": {
-            "listening": "unverified-not-performed",
-            "construction": "Exact existing constituent PCM; no external synthesis."
-        }
-    },
-    {
-        "path": "audio/526db51262104086eb5c6592fc3fc692ae397dcb0970b7a3fbf20ac1397c9c75.wav",
-        "entryId": "ja:sentence:daily-walk-school-here",
-        "label": "学校からここまで歩く",
-        "parts": [
-            {
-                "path": "audio/6b6f32acd45589aeedd9e33f013184317303e23159028d7ad1bfbadfc0cb6dc9.wav",
-                "entryId": "ja:word:gakkou"
-            },
-            {
-                "path": "audio/6e14468c95fd51fc419625bb4b7a76ed8591ccb46aee16ae8504abf150f50154.wav",
-                "entryId": "ja:particle:kara"
-            },
-            {
-                "path": "audio/f298e745d293e821e9c245438bda27c7da9035ad01dbd7b473e4d5ab8b858b9a.wav",
-                "entryId": "ja:word:koko"
-            },
-            {
-                "path": "audio/7b0f478e31bdc691c7da4e6e2042024cfac2bfeceec78edc22a88ef686905b69.wav",
-                "entryId": "ja:particle:made"
-            },
-            {
-                "path": "audio/a6c59dc12594eaf457c52ccdd8b684e37c0953566969c41f972f4d22b105bff4.wav",
-                "entryId": "ja:word:aruku"
-            },
-            { "pauseMs": 400 }
-        ],
-        "gapMs": 90,
-        "segments": [
-            {
-                "path": "audio/6b6f32acd45589aeedd9e33f013184317303e23159028d7ad1bfbadfc0cb6dc9.wav",
-                "entryId": "ja:word:gakkou",
-                "startFrame": 2400,
-                "frameCount": 14335
-            },
-            {
-                "path": "audio/6e14468c95fd51fc419625bb4b7a76ed8591ccb46aee16ae8504abf150f50154.wav",
-                "entryId": "ja:particle:kara",
-                "startFrame": 18895,
-                "frameCount": 9942
-            },
-            {
-                "path": "audio/f298e745d293e821e9c245438bda27c7da9035ad01dbd7b473e4d5ab8b858b9a.wav",
-                "entryId": "ja:word:koko",
-                "startFrame": 30997,
-                "frameCount": 11459
-            },
-            {
-                "path": "audio/7b0f478e31bdc691c7da4e6e2042024cfac2bfeceec78edc22a88ef686905b69.wav",
-                "entryId": "ja:particle:made",
-                "startFrame": 44616,
-                "frameCount": 11097
-            },
-            {
-                "path": "audio/a6c59dc12594eaf457c52ccdd8b684e37c0953566969c41f972f4d22b105bff4.wav",
-                "entryId": "ja:word:aruku",
-                "startFrame": 57873,
-                "frameCount": 14294
-            }
-        ],
-        "sha256": "526db51262104086eb5c6592fc3fc692ae397dcb0970b7a3fbf20ac1397c9c75",
-        "frames": 83927,
-        "input": {
-            "language": "ja",
-            "label": "学校からここまで歩く",
-            "semanticRole": "orderedLexicalSequence",
-            "readings": ["がっこうからここまであるく"]
-        },
-        "metadata": {
-            "listening": "unverified-not-performed",
-            "construction": "Exact existing constituent PCM; no external synthesis."
-        }
-    },
-    {
-        "path": "audio/2ba68718d85837ed1886472756f7eec2e4a8ba85e9e033f770966e2a9cccc34a.wav",
-        "entryId": "ja:sentence:shopping-buy-small-bag",
-        "label": "小さいかばんをかう",
-        "parts": [
-            {
-                "path": "audio/bd221520af0519e412d2e8492715ef2bdefffe644fe8ce4fbcd0fa70ce1a1301.wav",
-                "entryId": "ja:word:chiisai"
-            },
-            {
-                "path": "audio/6c383b07d47bcbe9c9eadf6b97d7ce3ec03e4f31503d0bf1dec5a48b2829ff78.wav",
-                "entryId": "ja:word:bag"
-            },
-            {
-                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
-                "entryId": "ja:particle:wo"
-            },
-            {
-                "path": "audio/1a880a2cfc93aedb14ed94ad5cbd8ba5a803aa377bb98f0bf534e0ce8905bfd4.wav",
-                "entryId": "ja:word:travel-buy"
-            },
-            { "pauseMs": 400 }
-        ],
-        "gapMs": 90,
-        "segments": [
-            {
-                "path": "audio/bd221520af0519e412d2e8492715ef2bdefffe644fe8ce4fbcd0fa70ce1a1301.wav",
-                "entryId": "ja:word:chiisai",
-                "startFrame": 2400,
-                "frameCount": 14275
-            },
-            {
-                "path": "audio/6c383b07d47bcbe9c9eadf6b97d7ce3ec03e4f31503d0bf1dec5a48b2829ff78.wav",
-                "entryId": "ja:word:bag",
-                "startFrame": 18835,
-                "frameCount": 16564
-            },
-            {
-                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
-                "entryId": "ja:particle:wo",
-                "startFrame": 37559,
-                "frameCount": 8762
-            },
-            {
-                "path": "audio/1a880a2cfc93aedb14ed94ad5cbd8ba5a803aa377bb98f0bf534e0ce8905bfd4.wav",
-                "entryId": "ja:word:travel-buy",
-                "startFrame": 48481,
+                "path": "audio/e283ee5698e2cffd800f451b43608281335332dcba02202ee407da23f7a1143c.wav",
+                "entryId": "ja:word:travel-wait",
+                "startFrame": 70608,
                 "frameCount": 13220
             }
         ],
-        "sha256": "2ba68718d85837ed1886472756f7eec2e4a8ba85e9e033f770966e2a9cccc34a",
-        "frames": 73461,
+        "sha256": "37ec388c4e7679aabf18281493f60a1ed58b37907c8cf5754c063229ca53b2ef",
+        "frames": 95588,
         "input": {
             "language": "ja",
-            "label": "小さいかばんをかう",
+            "label": "えきでタクシーをまつ",
             "semanticRole": "orderedLexicalSequence",
-            "readings": ["ちいさいかばんをかう"]
+            "readings": ["えきでタクシーをまつ"]
         },
         "metadata": {
             "listening": "unverified-not-performed",
-            "construction": "Exact selected constituent PCM including newly synthesized travel forms."
+            "construction": "Exact transport constituent PCM, including the English plural airplanes."
         }
     },
     {
-        "path": "audio/06876c8ced7ed002f9566cb4ab89c17919d7e2b27817cab172fb10cde2d9708d.wav",
-        "entryId": "ja:sentence:shopping-buy-hat-coat",
-        "label": "ぼうしとコートをかう",
+        "path": "audio/86cc65fdc224fc32ed11b40e692ca28d282dc137de78afd80b84266180df900a.wav",
+        "entryId": "ja:sentence:ookii-inu-miru",
+        "label": "大きい犬を見る",
         "parts": [
             {
-                "path": "audio/d201a18818192877404cda22087618df3f1e2fce207e201b41aaff2be77eed64.wav",
-                "entryId": "ja:word:hat"
+                "path": "audio/5b15ae17f9c15b1d56392fef904e5f1a056663de7dd79120d237600c45971120.wav",
+                "entryId": "ja:word:ookii"
             },
             {
-                "path": "audio/606f3c1823245eee4195e2195e8189dad7df8cd21b7e6550a55b5c56e585916b.wav",
-                "entryId": "ja:particle:to"
-            },
-            {
-                "path": "audio/7c76dd055a9f368a0a0c3b9cd43b8b54a2167ccb5721b663d2b5114d7ce634c8.wav",
-                "entryId": "ja:word:coat"
+                "path": "audio/64cecb245c335de8a0367aed75bddb8d39c17b26bbdb3729562cf01206a1c508.wav",
+                "entryId": "ja:word:inu"
             },
             {
                 "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
                 "entryId": "ja:particle:wo"
             },
             {
-                "path": "audio/1a880a2cfc93aedb14ed94ad5cbd8ba5a803aa377bb98f0bf534e0ce8905bfd4.wav",
-                "entryId": "ja:word:travel-buy"
-            },
-            { "pauseMs": 400 }
+                "path": "audio/38b1e4b1dda0e34a29c049bd035b5370b24069d70efbb5fef029fb0962f2c8fe.wav",
+                "entryId": "ja:word:miru"
+            }
         ],
-        "gapMs": 90,
+        "gapMs": 45,
         "segments": [
             {
-                "path": "audio/d201a18818192877404cda22087618df3f1e2fce207e201b41aaff2be77eed64.wav",
-                "entryId": "ja:word:hat",
+                "path": "audio/5b15ae17f9c15b1d56392fef904e5f1a056663de7dd79120d237600c45971120.wav",
+                "entryId": "ja:word:ookii",
                 "startFrame": 2400,
-                "frameCount": 18793
+                "frameCount": 15963
             },
             {
-                "path": "audio/606f3c1823245eee4195e2195e8189dad7df8cd21b7e6550a55b5c56e585916b.wav",
-                "entryId": "ja:particle:to",
-                "startFrame": 23353,
-                "frameCount": 12106
-            },
-            {
-                "path": "audio/7c76dd055a9f368a0a0c3b9cd43b8b54a2167ccb5721b663d2b5114d7ce634c8.wav",
-                "entryId": "ja:word:coat",
-                "startFrame": 37619,
-                "frameCount": 17678
+                "path": "audio/64cecb245c335de8a0367aed75bddb8d39c17b26bbdb3729562cf01206a1c508.wav",
+                "entryId": "ja:word:inu",
+                "startFrame": 19443,
+                "frameCount": 11605
             },
             {
                 "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
                 "entryId": "ja:particle:wo",
-                "startFrame": 57457,
+                "startFrame": 32128,
                 "frameCount": 8762
             },
             {
-                "path": "audio/1a880a2cfc93aedb14ed94ad5cbd8ba5a803aa377bb98f0bf534e0ce8905bfd4.wav",
-                "entryId": "ja:word:travel-buy",
-                "startFrame": 68379,
-                "frameCount": 13220
+                "path": "audio/38b1e4b1dda0e34a29c049bd035b5370b24069d70efbb5fef029fb0962f2c8fe.wav",
+                "entryId": "ja:word:miru",
+                "startFrame": 41970,
+                "frameCount": 14884
             }
         ],
-        "sha256": "06876c8ced7ed002f9566cb4ab89c17919d7e2b27817cab172fb10cde2d9708d",
-        "frames": 93359,
+        "sha256": "cf17433630dc1415a1e3ecf99701525d86f53acfef21619c35ed540a5f176876",
+        "frames": 56854,
         "input": {
             "language": "ja",
-            "label": "ぼうしとコートをかう",
+            "label": "大きい犬を見る",
             "semanticRole": "orderedLexicalSequence",
-            "readings": ["ぼうしとこーとをかう"]
-        },
-        "metadata": {
-            "listening": "unverified-not-performed",
-            "construction": "Exact selected constituent PCM including newly synthesized travel forms."
+            "readings": ["おおきいいぬをみる"]
         }
     }
 ]

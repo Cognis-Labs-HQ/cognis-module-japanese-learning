@@ -1,5 +1,36 @@
 [
     {
+        "theme": "vegetables",
+        "newDistinctVocabularyCount": 4,
+        "vocabulary": [
+            {
+                "entryId": "ja:word:vegetables-cabbage",
+                "label": "キャベツ"
+            },
+            {
+                "entryId": "ja:word:vegetables-mushroom",
+                "label": "きのこ"
+            },
+            {
+                "entryId": "ja:word:vegetables-spinach",
+                "label": "ほうれんそう"
+            },
+            {
+                "entryId": "ja:word:vegetables-lettuce",
+                "label": "レタス"
+            }
+        ],
+        "newExampleCount": 4,
+        "exampleIds": [
+            "ja:sentence:vegetables-example-cabbage",
+            "ja:sentence:vegetables-example-mushroom",
+            "ja:sentence:vegetables-example-spinach",
+            "ja:sentence:vegetables-example-lettuce"
+        ],
+        "recordedGrammaticalFormCount": 0,
+        "vocabularyAudit": "authoring/reviews/vegetables-vocabulary.json"
+    },
+    {
         "theme": "weather",
         "newDistinctVocabularyCount": 4,
         "vocabulary": [
@@ -157,19 +188,5 @@
         ],
         "recordedGrammaticalFormCount": 0,
         "vocabularyAudit": "authoring/reviews/plans-sentences.json"
-    },
-    {
-        "theme": "getting-ready",
-        "newDistinctVocabularyCount": 0,
-        "vocabulary": [],
-        "newExampleCount": 4,
-        "exampleIds": [
-            "ja:sentence:getting-ready-example-travel-documents",
-            "ja:sentence:getting-ready-example-key-here",
-            "ja:sentence:getting-ready-example-wait-tomorrow",
-            "ja:sentence:getting-ready-example-read-map"
-        ],
-        "recordedGrammaticalFormCount": 0,
-        "vocabularyAudit": "authoring/reviews/getting-ready-sentences.json"
     }
 ]

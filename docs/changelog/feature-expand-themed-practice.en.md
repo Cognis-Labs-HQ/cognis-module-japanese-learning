@@ -190,6 +190,10 @@ Add wallet, camera, glasses and wristwatch with localized meanings, usage notes 
 
 Add four independently authored preparation examples per language covering possession, travel documents, locations and plans. Reuse exact constituent PCM and existing lexical entries without duplicate vocabulary. Keep the two Japanese polite-comprehension drafts deferred and leave host code unchanged.
 
+## Giving and Receiving
+
+Add give/receive and あげる/もらう with two visually reviewed illustrations and four individually authored examples per language. Explain subject roles, Japanese recipient に and source から, and the difference between literal giving and raising. Record eight English and sixteen Japanese form bindings, retaining gave/given, もらわない and small-っ forms. Preserve exact constituent PCM and native Japanese input. Illustrations and notes identify the blue-clothed subject; audio listening remains unverified. The two deferred polite-comprehension drafts remain unchanged.
+
 ## Commits
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)
