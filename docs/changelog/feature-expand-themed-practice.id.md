@@ -109,3 +109,4 @@ Tambahkan enam contoh dan satu dek per modul tentang air, alat makan, lokasi, re
 - [1fc5175](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/1fc51750b2c116f0588a4f969f69fa2f33600eee)
 - [f2ad3e8](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/f2ad3e824e4a8704ecbfd04085861b6488771de7)
 - [1712b15](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/1712b151ed3f2fe2f9bceb9c9fce6f0aee7846db)
+- [ad2c462](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/ad2c462e0060e29f138f20173f317215339ae5f0)
