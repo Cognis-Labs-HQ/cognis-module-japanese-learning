@@ -94,3 +94,4 @@ Add cups, plates, spoons and forks with four English plural forms, four contextu
 - [85b672b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/85b672b68b62bd92d11f97486e13a570f19edbf2)
 - [37245f2](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/37245f2b9c7fbe0109d26b04259a3eadf81d45ea)
 - [4109cfd](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/4109cfd40a98166bebd7ae380e1b7e0753c8a153)
+- [1fc5175](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/1fc51750b2c116f0588a4f969f69fa2f33600eee)
