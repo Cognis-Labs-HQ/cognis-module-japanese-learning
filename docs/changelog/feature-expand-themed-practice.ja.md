@@ -309,3 +309,4 @@ scarf/gloveとマフラー/てぶくろを、確認済み画像四点と各言�
 - [e8a1c4d](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/e8a1c4d5c21241ab737f0419fe241d418c96a4f3)
 - [7fceea6](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/7fceea601d2b57b61a263b7dc45603d4f9a70de0)
 - [69631b8](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/69631b87d3a882360510facd588299580d28989d)
+- [eb0adc9](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/eb0adc9ec201e56bf7ff32607efaf6ceef830266)
