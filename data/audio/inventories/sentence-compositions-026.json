@@ -1,5 +1,265 @@
 [
     {
+        "path": "audio/144f190795bd2f8ea844cd80bffdd6d9467fa172618b350305962c9acdaa53b4.wav",
+        "entryId": "ja:sentence:rooms-example-bedroom",
+        "label": "しんしつにベッドがある",
+        "parts": [
+            {
+                "path": "audio/7b1765d659afd741a509ee692bbea9cd16c68131779be1fcbd98cb8c2169845c.wav",
+                "entryId": "ja:word:rooms-bedroom"
+            },
+            {
+                "path": "audio/1615cf278c2962c1657907b3686d653625229af2375f90dda5bfd5b178c7aedb.wav",
+                "entryId": "ja:particle:ni"
+            },
+            {
+                "path": "audio/f393431e11555352b35e2f9d3a4760c529c8e7d6c78405bddb7177719169c8ea.wav",
+                "entryId": "ja:word:bed"
+            },
+            {
+                "path": "audio/69d02d32db53e5eeb4bb6db01917e619478b734bd66988c4242ccc1a3e55655d.wav",
+                "entryId": "ja:particle:ga"
+            },
+            {
+                "path": "audio/0e997231f55465948ee67d44898dfd72abf6e48f95f8839fe116ca8978d53535.wav",
+                "entryId": "ja:word:aru-exist"
+            },
+            {
+                "pauseMs": 400
+            }
+        ],
+        "gapMs": 90,
+        "segments": [
+            {
+                "path": "audio/7b1765d659afd741a509ee692bbea9cd16c68131779be1fcbd98cb8c2169845c.wav",
+                "entryId": "ja:word:rooms-bedroom",
+                "startFrame": 2400,
+                "frameCount": 17678
+            },
+            {
+                "path": "audio/1615cf278c2962c1657907b3686d653625229af2375f90dda5bfd5b178c7aedb.wav",
+                "entryId": "ja:particle:ni",
+                "startFrame": 22238,
+                "frameCount": 13220
+            },
+            {
+                "path": "audio/f393431e11555352b35e2f9d3a4760c529c8e7d6c78405bddb7177719169c8ea.wav",
+                "entryId": "ja:word:bed",
+                "startFrame": 37618,
+                "frameCount": 17678
+            },
+            {
+                "path": "audio/69d02d32db53e5eeb4bb6db01917e619478b734bd66988c4242ccc1a3e55655d.wav",
+                "entryId": "ja:particle:ga",
+                "startFrame": 57456,
+                "frameCount": 14335
+            },
+            {
+                "path": "audio/0e997231f55465948ee67d44898dfd72abf6e48f95f8839fe116ca8978d53535.wav",
+                "entryId": "ja:word:aru-exist",
+                "startFrame": 73951,
+                "frameCount": 8976
+            }
+        ],
+        "sha256": "144f190795bd2f8ea844cd80bffdd6d9467fa172618b350305962c9acdaa53b4",
+        "frames": 94687,
+        "input": {
+            "language": "ja",
+            "label": "しんしつにベッドがある",
+            "semanticRole": "orderedLexicalSequence",
+            "readings": ["しんしつにべっどがある"]
+        },
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "construction": "Exact constituent PCM, preserving every selected grammatical form."
+        }
+    },
+    {
+        "path": "audio/69cfa40e54bb6601833c2e8bfce94c3caea1009ff4d7039c2cecab87678ae9e8.wav",
+        "entryId": "ja:sentence:rooms-example-bathroom",
+        "label": "よくしつをそうじする",
+        "parts": [
+            {
+                "path": "audio/439e33d040e33454e2556545e49c1fef524dcb5a1e64cf71f757d126b5925c5d.wav",
+                "entryId": "ja:word:rooms-bathroom"
+            },
+            {
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "entryId": "ja:particle:wo"
+            },
+            {
+                "path": "audio/7c70efb2f24b3b66cb5da738c2e2d694336ed2957ffdc0954b3a771007e31c58.wav",
+                "entryId": "ja:word:household-clean"
+            },
+            {
+                "pauseMs": 400
+            }
+        ],
+        "gapMs": 90,
+        "segments": [
+            {
+                "path": "audio/439e33d040e33454e2556545e49c1fef524dcb5a1e64cf71f757d126b5925c5d.wav",
+                "entryId": "ja:word:rooms-bathroom",
+                "startFrame": 2400,
+                "frameCount": 15449
+            },
+            {
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "entryId": "ja:particle:wo",
+                "startFrame": 20009,
+                "frameCount": 8762
+            },
+            {
+                "path": "audio/7c70efb2f24b3b66cb5da738c2e2d694336ed2957ffdc0954b3a771007e31c58.wav",
+                "entryId": "ja:word:household-clean",
+                "startFrame": 30931,
+                "frameCount": 23251
+            }
+        ],
+        "sha256": "69cfa40e54bb6601833c2e8bfce94c3caea1009ff4d7039c2cecab87678ae9e8",
+        "frames": 65942,
+        "input": {
+            "language": "ja",
+            "label": "よくしつをそうじする",
+            "semanticRole": "orderedLexicalSequence",
+            "readings": ["よくしつをそうじする"]
+        },
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "construction": "Exact constituent PCM, preserving every selected grammatical form."
+        }
+    },
+    {
+        "path": "audio/4ae07e621fd772db9a18351318f2f5dbd32c9630b6b95695f62f0df29863d7e3.wav",
+        "entryId": "ja:sentence:rooms-example-kitchen",
+        "label": "だいどころでりょうりする",
+        "parts": [
+            {
+                "path": "audio/46b3cd43fc02b3693e3f3c253a741d4e16add8808c4bfb2c6378272bd0afeb2f.wav",
+                "entryId": "ja:word:rooms-kitchen"
+            },
+            {
+                "path": "audio/df81472c8108ad9b47d8d90db017ff1c1b553d80263d6a2c59de1571671f3eee.wav",
+                "entryId": "ja:particle:de"
+            },
+            {
+                "path": "audio/e33686384389e80ef4dd0db97018d79d8b5ee187f17ec85723bd40a420521f2a.wav",
+                "entryId": "ja:word:household-cook"
+            },
+            {
+                "pauseMs": 400
+            }
+        ],
+        "gapMs": 90,
+        "segments": [
+            {
+                "path": "audio/46b3cd43fc02b3693e3f3c253a741d4e16add8808c4bfb2c6378272bd0afeb2f.wav",
+                "entryId": "ja:word:rooms-kitchen",
+                "startFrame": 2400,
+                "frameCount": 17678
+            },
+            {
+                "path": "audio/df81472c8108ad9b47d8d90db017ff1c1b553d80263d6a2c59de1571671f3eee.wav",
+                "entryId": "ja:particle:de",
+                "startFrame": 22238,
+                "frameCount": 13220
+            },
+            {
+                "path": "audio/e33686384389e80ef4dd0db97018d79d8b5ee187f17ec85723bd40a420521f2a.wav",
+                "entryId": "ja:word:household-cook",
+                "startFrame": 37618,
+                "frameCount": 22137
+            }
+        ],
+        "sha256": "4ae07e621fd772db9a18351318f2f5dbd32c9630b6b95695f62f0df29863d7e3",
+        "frames": 71515,
+        "input": {
+            "language": "ja",
+            "label": "だいどころでりょうりする",
+            "semanticRole": "orderedLexicalSequence",
+            "readings": ["だいどころでりょうりする"]
+        },
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "construction": "Exact constituent PCM, preserving every selected grammatical form."
+        }
+    },
+    {
+        "path": "audio/493e9def4fef435d660230c478a3f22c5154a1dd9358a7e7463af9c94c013178.wav",
+        "entryId": "ja:sentence:rooms-example-garden",
+        "label": "犬はにわにいる",
+        "parts": [
+            {
+                "path": "audio/64cecb245c335de8a0367aed75bddb8d39c17b26bbdb3729562cf01206a1c508.wav",
+                "entryId": "ja:word:inu"
+            },
+            {
+                "path": "audio/d7c9e57654e559dfba3bd6f78c2f27416a61f8b28d56145d84a62fe25b70c94d.wav",
+                "entryId": "ja:particle:wa"
+            },
+            {
+                "path": "audio/1a9600a1b917df1a274df93c47a024e5aceddb723472dd1b2c0790f00409a10e.wav",
+                "entryId": "ja:word:rooms-garden"
+            },
+            {
+                "path": "audio/1615cf278c2962c1657907b3686d653625229af2375f90dda5bfd5b178c7aedb.wav",
+                "entryId": "ja:particle:ni"
+            },
+            {
+                "path": "audio/b41f1815458389dd5bf734a8341a77fadd58e2ac0314e2cd333c9d1a967b2789.wav",
+                "entryId": "ja:word:iru-exist"
+            },
+            {
+                "pauseMs": 400
+            }
+        ],
+        "gapMs": 90,
+        "segments": [
+            {
+                "path": "audio/64cecb245c335de8a0367aed75bddb8d39c17b26bbdb3729562cf01206a1c508.wav",
+                "entryId": "ja:word:inu",
+                "startFrame": 2400,
+                "frameCount": 11605
+            },
+            {
+                "path": "audio/d7c9e57654e559dfba3bd6f78c2f27416a61f8b28d56145d84a62fe25b70c94d.wav",
+                "entryId": "ja:particle:wa",
+                "startFrame": 16165,
+                "frameCount": 12106
+            },
+            {
+                "path": "audio/1a9600a1b917df1a274df93c47a024e5aceddb723472dd1b2c0790f00409a10e.wav",
+                "entryId": "ja:word:rooms-garden",
+                "startFrame": 30431,
+                "frameCount": 13220
+            },
+            {
+                "path": "audio/1615cf278c2962c1657907b3686d653625229af2375f90dda5bfd5b178c7aedb.wav",
+                "entryId": "ja:particle:ni",
+                "startFrame": 45811,
+                "frameCount": 13220
+            },
+            {
+                "path": "audio/b41f1815458389dd5bf734a8341a77fadd58e2ac0314e2cd333c9d1a967b2789.wav",
+                "entryId": "ja:word:iru-exist",
+                "startFrame": 61191,
+                "frameCount": 9087
+            }
+        ],
+        "sha256": "493e9def4fef435d660230c478a3f22c5154a1dd9358a7e7463af9c94c013178",
+        "frames": 82038,
+        "input": {
+            "language": "ja",
+            "label": "犬はにわにいる",
+            "semanticRole": "orderedLexicalSequence",
+            "readings": ["いぬはにわにいる"]
+        },
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "construction": "Exact constituent PCM, preserving every selected grammatical form."
+        }
+    },
+    {
         "path": "audio/994bd7b2066a6e37c20ffbad00a89e8526d8ce4b5aa884c5be17b333b27b3557.wav",
         "entryId": "ja:sentence:places-example-library",
         "label": "としょかんはどこですか",

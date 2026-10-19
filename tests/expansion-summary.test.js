@@ -22,7 +22,13 @@ test("expansion summary separates distinct base vocabulary, examples, forms and 
     const baseIds = new Set();
     const exampleIds = new Set();
     let formCount = 0;
-    for (const theme of summary.themes) {
+    assert.equal(summary.schemaVersion, 2);
+    const themes = (await Promise.all(summary.themeFiles.map(load))).flat();
+    assert.equal(
+        new Set(themes.map((theme) => theme.theme)).size,
+        themes.length,
+    );
+    for (const theme of themes) {
         assert.equal(theme.newDistinctVocabularyCount, theme.vocabulary.length);
         assert.equal(theme.newExampleCount, theme.exampleIds.length);
         for (const entry of theme.vocabulary) {

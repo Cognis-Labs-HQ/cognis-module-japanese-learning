@@ -1,0 +1,130 @@
+[
+    {
+        "entryId": "ja:word:nature-tree",
+        "path": "audio/2e41c2681981af9cdc96dd86bab62c17574c815262f315a50124c83009b2bc2a.wav",
+        "sha256": "e5539161d4bf993632ec6cfeafe17a397d6bf58621e19f3fadfaf0f5f9fd97c7",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "き",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "apply_text_normalization": "off",
+            "language_code": "ja"
+        },
+        "sourcePath": "authoring/audio/nature/nature-tree.wav",
+        "sourceSha256": "e5539161d4bf993632ec6cfeafe17a397d6bf58621e19f3fadfaf0f5f9fd97c7",
+        "sourceFullScaleSamples": 0,
+        "listening": "unverified-not-performed",
+        "reuse": "Existing exact input lookup and recorded bytes reused; no new provider request. Source is a retained WAV snapshot, not new original PCM.",
+        "providerCharacterCost": 0
+    },
+    {
+        "entryId": "ja:word:nature-forest",
+        "path": "audio/3281c01826dac50b0d9e916ae37ce16ce69bca5b63f468e18a6cfccb0d918dcd.wav",
+        "sha256": "3281c01826dac50b0d9e916ae37ce16ce69bca5b63f468e18a6cfccb0d918dcd",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "森",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "response": {
+            "request-id": "GxDgBiROQvM2hqYr8Dcm",
+            "character-cost": "1",
+            "content-type": "audio/pcm"
+        },
+        "sourcePath": "authoring/audio/nature/nature-forest.pcm",
+        "sourceSha256": "60e3dbed4ddbcedca8f463b871f4660f3861e79cc7f1d0d22d15277d4141244b",
+        "sourcePeak": 3260,
+        "sourceFullScaleSamples": 0,
+        "gain": 1,
+        "paddingFramesEachSide": 480,
+        "frames": 12106,
+        "listening": "unverified-not-performed",
+        "technicalReview": "Native written input and intended reading checked; all PCM frames preserved with gain limit and endpoint padding; non-silent mono PCM16 at 24000Hz. Not auditory verification."
+    },
+    {
+        "entryId": "ja:word:nature-leaf",
+        "path": "audio/46f26709062bb185e62142bc1f7556153da1cff905b2560e631d2f5fc30e74d5.wav",
+        "sha256": "46f26709062bb185e62142bc1f7556153da1cff905b2560e631d2f5fc30e74d5",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "葉っぱ",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "response": {
+            "request-id": "0F6sGV5uDGUf8F0L31fY",
+            "character-cost": "2",
+            "content-type": "audio/pcm"
+        },
+        "sourcePath": "authoring/audio/nature/nature-leaf.pcm",
+        "sourceSha256": "8a74fe8187a411cbe76e19862eccf7c3e7794e7d9a34ff190c8ad472a87c7fb6",
+        "sourcePeak": 8922,
+        "sourceFullScaleSamples": 0,
+        "gain": 1,
+        "paddingFramesEachSide": 480,
+        "frames": 16564,
+        "listening": "unverified-not-performed",
+        "technicalReview": "Native written input and intended reading checked; all PCM frames preserved with gain limit and endpoint padding; non-silent mono PCM16 at 24000Hz. Not auditory verification."
+    },
+    {
+        "entryId": "ja:word:nature-stone",
+        "path": "audio/7896791461b82dd871494070fe1598dae8c133320e5c2856a11d84c0821e0860.wav",
+        "sha256": "7896791461b82dd871494070fe1598dae8c133320e5c2856a11d84c0821e0860",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "石",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "response": {
+            "request-id": "WarkfBdIwU43W4yQ1ss0",
+            "character-cost": "1",
+            "content-type": "audio/pcm"
+        },
+        "sourcePath": "authoring/audio/nature/nature-stone.pcm",
+        "sourceSha256": "382365251091f8f38a4b29a09bd18adf126a51fc9f88cce0e850a8735ed7b8de",
+        "sourcePeak": 12385,
+        "sourceFullScaleSamples": 0,
+        "gain": 1,
+        "paddingFramesEachSide": 480,
+        "frames": 13220,
+        "listening": "unverified-not-performed",
+        "technicalReview": "Native written input and intended reading checked; all PCM frames preserved with gain limit and endpoint padding; non-silent mono PCM16 at 24000Hz. Not auditory verification."
+    }
+]

@@ -21,6 +21,9 @@ for (const theme of [
     "animals",
     "furnishings",
     "fruit",
+    "fixtures",
+    "nature",
+    "rooms",
     "vegetables",
     "kitchen",
 ].filter((name) => index[`${name}Images`])) {
