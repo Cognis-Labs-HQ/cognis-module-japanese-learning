@@ -1,204 +1,5 @@
 [
     {
-        "path": "audio/ed2a6497c8bd7b70b1e60c749a16b4029e0ae872830dc97a2e656d79b66026e2.wav",
-        "entryId": "ja:sentence:furnishings-example-mirror",
-        "label": "かがみでかおを見る",
-        "parts": [
-            {
-                "path": "audio/846284bee64370a1b9a593d3727420823bd835099a9a4b1af9be0a4729b5d95e.wav",
-                "entryId": "ja:word:furnishings-mirror"
-            },
-            {
-                "path": "audio/df81472c8108ad9b47d8d90db017ff1c1b553d80263d6a2c59de1571671f3eee.wav",
-                "entryId": "ja:particle:de"
-            },
-            {
-                "path": "audio/a0c6cdc95211215705eb0ba84fee31d5c77fbc3f2fe1db8f8d7bc74070f6fd9f.wav",
-                "entryId": "ja:word:face"
-            },
-            {
-                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
-                "entryId": "ja:particle:wo"
-            },
-            {
-                "path": "audio/38b1e4b1dda0e34a29c049bd035b5370b24069d70efbb5fef029fb0962f2c8fe.wav",
-                "entryId": "ja:word:miru"
-            },
-            { "pauseMs": 400 }
-        ],
-        "gapMs": 90,
-        "segments": [
-            {
-                "path": "audio/846284bee64370a1b9a593d3727420823bd835099a9a4b1af9be0a4729b5d95e.wav",
-                "entryId": "ja:word:furnishings-mirror",
-                "startFrame": 2400,
-                "frameCount": 13220
-            },
-            {
-                "path": "audio/df81472c8108ad9b47d8d90db017ff1c1b553d80263d6a2c59de1571671f3eee.wav",
-                "entryId": "ja:particle:de",
-                "startFrame": 17780,
-                "frameCount": 13220
-            },
-            {
-                "path": "audio/a0c6cdc95211215705eb0ba84fee31d5c77fbc3f2fe1db8f8d7bc74070f6fd9f.wav",
-                "entryId": "ja:word:face",
-                "startFrame": 33160,
-                "frameCount": 14335
-            },
-            {
-                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
-                "entryId": "ja:particle:wo",
-                "startFrame": 49655,
-                "frameCount": 8762
-            },
-            {
-                "path": "audio/38b1e4b1dda0e34a29c049bd035b5370b24069d70efbb5fef029fb0962f2c8fe.wav",
-                "entryId": "ja:word:miru",
-                "startFrame": 60577,
-                "frameCount": 14884
-            }
-        ],
-        "sha256": "ed2a6497c8bd7b70b1e60c749a16b4029e0ae872830dc97a2e656d79b66026e2",
-        "frames": 87221,
-        "input": {
-            "language": "ja",
-            "label": "かがみでかおを見る",
-            "semanticRole": "orderedLexicalSequence",
-            "readings": ["かがみでかおをみる"]
-        },
-        "metadata": {
-            "listening": "unverified-not-performed",
-            "construction": "Exact furnishings constituent PCM, including the English plural pillows."
-        }
-    },
-    {
-        "path": "audio/9a756e68f93f054e5885f515d770c77a3ff9c994e514c4564833fc0e7b1fcfa7.wav",
-        "entryId": "ja:sentence:furnishings-example-pillow",
-        "label": "まくらをかう",
-        "parts": [
-            {
-                "path": "audio/b39c3802ad38a58ac4bbef2a9154f2912b625aa6fd06e9348169aa6d9c09d38b.wav",
-                "entryId": "ja:word:furnishings-pillow"
-            },
-            {
-                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
-                "entryId": "ja:particle:wo"
-            },
-            {
-                "path": "audio/1a880a2cfc93aedb14ed94ad5cbd8ba5a803aa377bb98f0bf534e0ce8905bfd4.wav",
-                "entryId": "ja:word:travel-buy"
-            },
-            { "pauseMs": 400 }
-        ],
-        "gapMs": 90,
-        "segments": [
-            {
-                "path": "audio/b39c3802ad38a58ac4bbef2a9154f2912b625aa6fd06e9348169aa6d9c09d38b.wav",
-                "entryId": "ja:word:furnishings-pillow",
-                "startFrame": 2400,
-                "frameCount": 13220
-            },
-            {
-                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
-                "entryId": "ja:particle:wo",
-                "startFrame": 17780,
-                "frameCount": 8762
-            },
-            {
-                "path": "audio/1a880a2cfc93aedb14ed94ad5cbd8ba5a803aa377bb98f0bf534e0ce8905bfd4.wav",
-                "entryId": "ja:word:travel-buy",
-                "startFrame": 28702,
-                "frameCount": 13220
-            }
-        ],
-        "sha256": "9a756e68f93f054e5885f515d770c77a3ff9c994e514c4564833fc0e7b1fcfa7",
-        "frames": 53682,
-        "input": {
-            "language": "ja",
-            "label": "まくらをかう",
-            "semanticRole": "orderedLexicalSequence",
-            "readings": ["まくらをかう"]
-        },
-        "metadata": {
-            "listening": "unverified-not-performed",
-            "construction": "Exact furnishings constituent PCM, including the English plural pillows."
-        }
-    },
-    {
-        "path": "audio/83b687d64f28957430bc8704e1f66ba25acd2b03d8c596ef684a79b2d94758e0.wav",
-        "entryId": "ja:sentence:classroom-1",
-        "label": "友達と学校に行く",
-        "parts": [
-            {
-                "path": "audio/b735f033be7289c86f7f84621476005af35c3fdec9b7e43f2b7531609f5d70b1.wav",
-                "entryId": "ja:word:tomodachi"
-            },
-            {
-                "path": "audio/606f3c1823245eee4195e2195e8189dad7df8cd21b7e6550a55b5c56e585916b.wav",
-                "entryId": "ja:particle:to"
-            },
-            {
-                "path": "audio/6b6f32acd45589aeedd9e33f013184317303e23159028d7ad1bfbadfc0cb6dc9.wav",
-                "entryId": "ja:word:gakkou"
-            },
-            {
-                "path": "audio/1615cf278c2962c1657907b3686d653625229af2375f90dda5bfd5b178c7aedb.wav",
-                "entryId": "ja:particle:ni"
-            },
-            {
-                "path": "audio/843223b7290cf0fda523989799b96f85c224338146f5d022e92e6715234e2e39.wav",
-                "entryId": "ja:word:iku"
-            },
-            { "pauseMs": 400 }
-        ],
-        "gapMs": 90,
-        "segments": [
-            {
-                "path": "audio/b735f033be7289c86f7f84621476005af35c3fdec9b7e43f2b7531609f5d70b1.wav",
-                "entryId": "ja:word:tomodachi",
-                "startFrame": 2400,
-                "frameCount": 17503
-            },
-            {
-                "path": "audio/606f3c1823245eee4195e2195e8189dad7df8cd21b7e6550a55b5c56e585916b.wav",
-                "entryId": "ja:particle:to",
-                "startFrame": 22063,
-                "frameCount": 12106
-            },
-            {
-                "path": "audio/6b6f32acd45589aeedd9e33f013184317303e23159028d7ad1bfbadfc0cb6dc9.wav",
-                "entryId": "ja:word:gakkou",
-                "startFrame": 36329,
-                "frameCount": 14335
-            },
-            {
-                "path": "audio/1615cf278c2962c1657907b3686d653625229af2375f90dda5bfd5b178c7aedb.wav",
-                "entryId": "ja:particle:ni",
-                "startFrame": 52824,
-                "frameCount": 13220
-            },
-            {
-                "path": "audio/843223b7290cf0fda523989799b96f85c224338146f5d022e92e6715234e2e39.wav",
-                "entryId": "ja:word:iku",
-                "startFrame": 68204,
-                "frameCount": 12643
-            }
-        ],
-        "sha256": "83b687d64f28957430bc8704e1f66ba25acd2b03d8c596ef684a79b2d94758e0",
-        "frames": 92607,
-        "input": {
-            "language": "ja",
-            "label": "友達と学校に行く",
-            "semanticRole": "orderedLexicalSequence",
-            "readings": ["ともだちとがっこうにいく"]
-        },
-        "metadata": {
-            "listening": "unverified-not-performed",
-            "construction": "Exact existing constituent PCM, without synthesis or new external requests."
-        }
-    },
-    {
         "path": "audio/7fdc85ee635095e17c9f18355d251bde9095bf44738ce932df726ddfa5c82edd.wav",
         "entryId": "ja:sentence:classroom-2",
         "label": "先生は学校にいる",
@@ -690,6 +491,225 @@
             "label": "レストランで友達とごはんを食べる",
             "semanticRole": "orderedLexicalSequence",
             "readings": ["レストランでともだちとごはんをたべる"]
+        },
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "construction": "Exact existing constituent PCM, without synthesis or new external requests."
+        }
+    },
+    {
+        "path": "audio/096b500e82038ea9cac9f6dc43178f7456f4e71eff8158cfafe3ae55917c1d45.wav",
+        "entryId": "ja:sentence:restaurant-2",
+        "label": "さかなとごはんを食べる",
+        "parts": [
+            {
+                "path": "audio/82a3ba788239c7a0ca2d53b86f417200dcef1a8c2ef789e55b778f8870619105.wav",
+                "entryId": "ja:word:fish"
+            },
+            {
+                "path": "audio/606f3c1823245eee4195e2195e8189dad7df8cd21b7e6550a55b5c56e585916b.wav",
+                "entryId": "ja:particle:to"
+            },
+            {
+                "path": "audio/0525847ce0e98844c6520826eb72a29aff79ea2b302d65be5e698a818c232a74.wav",
+                "entryId": "ja:word:rice"
+            },
+            {
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "entryId": "ja:particle:wo"
+            },
+            {
+                "path": "audio/4ddd4e95428918c1c2f8c64b3eab948d332e376275c09dfcff69082a20ee9181.wav",
+                "entryId": "ja:word:taberu"
+            },
+            { "pauseMs": 400 }
+        ],
+        "gapMs": 90,
+        "segments": [
+            {
+                "path": "audio/82a3ba788239c7a0ca2d53b86f417200dcef1a8c2ef789e55b778f8870619105.wav",
+                "entryId": "ja:word:fish",
+                "startFrame": 2400,
+                "frameCount": 18793
+            },
+            {
+                "path": "audio/606f3c1823245eee4195e2195e8189dad7df8cd21b7e6550a55b5c56e585916b.wav",
+                "entryId": "ja:particle:to",
+                "startFrame": 23353,
+                "frameCount": 12106
+            },
+            {
+                "path": "audio/0525847ce0e98844c6520826eb72a29aff79ea2b302d65be5e698a818c232a74.wav",
+                "entryId": "ja:word:rice",
+                "startFrame": 37619,
+                "frameCount": 17678
+            },
+            {
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "entryId": "ja:particle:wo",
+                "startFrame": 57457,
+                "frameCount": 8762
+            },
+            {
+                "path": "audio/4ddd4e95428918c1c2f8c64b3eab948d332e376275c09dfcff69082a20ee9181.wav",
+                "entryId": "ja:word:taberu",
+                "startFrame": 68379,
+                "frameCount": 14496
+            }
+        ],
+        "sha256": "096b500e82038ea9cac9f6dc43178f7456f4e71eff8158cfafe3ae55917c1d45",
+        "frames": 94635,
+        "input": {
+            "language": "ja",
+            "label": "さかなとごはんを食べる",
+            "semanticRole": "orderedLexicalSequence",
+            "readings": ["さかなとごはんをたべる"]
+        },
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "construction": "Exact existing constituent PCM, without synthesis or new external requests."
+        }
+    },
+    {
+        "path": "audio/f46bd5f815f088329e7cc89b99c588df5f09c442b01da4332ef0a2acc1378c5b.wav",
+        "entryId": "ja:sentence:restaurant-3",
+        "label": "スープはどこですか",
+        "parts": [
+            {
+                "path": "audio/4a74d133f1fde60b0990bab7970d5ab9683f6c87122f694b518c45819b667cbe.wav",
+                "entryId": "ja:word:soup"
+            },
+            {
+                "path": "audio/d7c9e57654e559dfba3bd6f78c2f27416a61f8b28d56145d84a62fe25b70c94d.wav",
+                "entryId": "ja:particle:wa"
+            },
+            {
+                "path": "audio/d8e8d38bb87e5846270a85a0031c99310edbc497f365f2a8fbb4ac49a10ddba3.wav",
+                "entryId": "ja:word:doko"
+            },
+            {
+                "path": "audio/2959a5dcab722b7d5c39f67845f1d6a3d6ede5f23e554e9547bca0e6cb62c56b.wav",
+                "entryId": "ja:word:desu"
+            },
+            {
+                "path": "audio/43ee7a601b45742716f8c1c424c576992297faf0a3ec140047ad194b682f7edf.wav",
+                "entryId": "ja:particle:ka"
+            },
+            { "pauseMs": 400 }
+        ],
+        "gapMs": 90,
+        "segments": [
+            {
+                "path": "audio/4a74d133f1fde60b0990bab7970d5ab9683f6c87122f694b518c45819b667cbe.wav",
+                "entryId": "ja:word:soup",
+                "startFrame": 2400,
+                "frameCount": 17678
+            },
+            {
+                "path": "audio/d7c9e57654e559dfba3bd6f78c2f27416a61f8b28d56145d84a62fe25b70c94d.wav",
+                "entryId": "ja:particle:wa",
+                "startFrame": 22238,
+                "frameCount": 12106
+            },
+            {
+                "path": "audio/d8e8d38bb87e5846270a85a0031c99310edbc497f365f2a8fbb4ac49a10ddba3.wav",
+                "entryId": "ja:word:doko",
+                "startFrame": 36504,
+                "frameCount": 11541
+            },
+            {
+                "path": "audio/2959a5dcab722b7d5c39f67845f1d6a3d6ede5f23e554e9547bca0e6cb62c56b.wav",
+                "entryId": "ja:word:desu",
+                "startFrame": 50205,
+                "frameCount": 11490
+            },
+            {
+                "path": "audio/43ee7a601b45742716f8c1c424c576992297faf0a3ec140047ad194b682f7edf.wav",
+                "entryId": "ja:particle:ka",
+                "startFrame": 63855,
+                "frameCount": 13220
+            }
+        ],
+        "sha256": "f46bd5f815f088329e7cc89b99c588df5f09c442b01da4332ef0a2acc1378c5b",
+        "frames": 88835,
+        "input": {
+            "language": "ja",
+            "label": "スープはどこですか",
+            "semanticRole": "orderedLexicalSequence",
+            "readings": ["すーぷはどこですか"]
+        },
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "construction": "Exact existing constituent PCM, without synthesis or new external requests."
+        }
+    },
+    {
+        "path": "audio/3064528fc8c5f1f80ef85b644a6166dd2e3848286b0881cfcccaef7ad258ebe9.wav",
+        "entryId": "ja:sentence:restaurant-4",
+        "label": "箸でごはんを食べる",
+        "parts": [
+            {
+                "path": "audio/0961c5699ea8a0302440aec81fde7266e9e37509b2e463252efb7eb3319fecf1.wav",
+                "entryId": "ja:word:hashi-chopsticks"
+            },
+            {
+                "path": "audio/df81472c8108ad9b47d8d90db017ff1c1b553d80263d6a2c59de1571671f3eee.wav",
+                "entryId": "ja:particle:de"
+            },
+            {
+                "path": "audio/0525847ce0e98844c6520826eb72a29aff79ea2b302d65be5e698a818c232a74.wav",
+                "entryId": "ja:word:rice"
+            },
+            {
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "entryId": "ja:particle:wo"
+            },
+            {
+                "path": "audio/4ddd4e95428918c1c2f8c64b3eab948d332e376275c09dfcff69082a20ee9181.wav",
+                "entryId": "ja:word:taberu"
+            },
+            { "pauseMs": 400 }
+        ],
+        "gapMs": 90,
+        "segments": [
+            {
+                "path": "audio/0961c5699ea8a0302440aec81fde7266e9e37509b2e463252efb7eb3319fecf1.wav",
+                "entryId": "ja:word:hashi-chopsticks",
+                "startFrame": 2400,
+                "frameCount": 14385
+            },
+            {
+                "path": "audio/df81472c8108ad9b47d8d90db017ff1c1b553d80263d6a2c59de1571671f3eee.wav",
+                "entryId": "ja:particle:de",
+                "startFrame": 18945,
+                "frameCount": 13220
+            },
+            {
+                "path": "audio/0525847ce0e98844c6520826eb72a29aff79ea2b302d65be5e698a818c232a74.wav",
+                "entryId": "ja:word:rice",
+                "startFrame": 34325,
+                "frameCount": 17678
+            },
+            {
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "entryId": "ja:particle:wo",
+                "startFrame": 54163,
+                "frameCount": 8762
+            },
+            {
+                "path": "audio/4ddd4e95428918c1c2f8c64b3eab948d332e376275c09dfcff69082a20ee9181.wav",
+                "entryId": "ja:word:taberu",
+                "startFrame": 65085,
+                "frameCount": 14496
+            }
+        ],
+        "sha256": "3064528fc8c5f1f80ef85b644a6166dd2e3848286b0881cfcccaef7ad258ebe9",
+        "frames": 91341,
+        "input": {
+            "language": "ja",
+            "label": "箸でごはんを食べる",
+            "semanticRole": "orderedLexicalSequence",
+            "readings": ["はしでごはんをたべる"]
         },
         "metadata": {
             "listening": "unverified-not-performed",

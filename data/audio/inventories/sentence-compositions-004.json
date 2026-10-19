@@ -1,73 +1,5 @@
 [
     {
-        "path": "audio/3cb18f3593dfcbcf1dc4306c107e82ab1b87e9e639ab41e65de73a88464dcea7.wav",
-        "entryId": "ja:sentence:meat-cheese-like",
-        "label": "にくとチーズが好き",
-        "parts": [
-            {
-                "path": "audio/ff0179b24039b7b80998598d26f682530d57feaf8afeebb7f0d0756eb743b932.wav",
-                "entryId": "ja:word:meat"
-            },
-            {
-                "path": "audio/606f3c1823245eee4195e2195e8189dad7df8cd21b7e6550a55b5c56e585916b.wav",
-                "entryId": "ja:particle:to"
-            },
-            {
-                "path": "audio/c10c6c9cb5844b610b9da8483b384151d85dd82f4faf87271c823f3eebe942d6.wav",
-                "entryId": "ja:word:cheese"
-            },
-            {
-                "path": "audio/69d02d32db53e5eeb4bb6db01917e619478b734bd66988c4242ccc1a3e55655d.wav",
-                "entryId": "ja:particle:ga"
-            },
-            {
-                "path": "audio/fff2a2381ef1abd6f3b0e24b6390a1f76d9fda74ec68bdc300ac3ff137a00214.wav",
-                "entryId": "ja:word:suki"
-            }
-        ],
-        "gapMs": 45,
-        "segments": [
-            {
-                "path": "audio/ff0179b24039b7b80998598d26f682530d57feaf8afeebb7f0d0756eb743b932.wav",
-                "entryId": "ja:word:meat",
-                "startFrame": 2400,
-                "frameCount": 16564
-            },
-            {
-                "path": "audio/606f3c1823245eee4195e2195e8189dad7df8cd21b7e6550a55b5c56e585916b.wav",
-                "entryId": "ja:particle:to",
-                "startFrame": 20044,
-                "frameCount": 12106
-            },
-            {
-                "path": "audio/c10c6c9cb5844b610b9da8483b384151d85dd82f4faf87271c823f3eebe942d6.wav",
-                "entryId": "ja:word:cheese",
-                "startFrame": 33230,
-                "frameCount": 18793
-            },
-            {
-                "path": "audio/69d02d32db53e5eeb4bb6db01917e619478b734bd66988c4242ccc1a3e55655d.wav",
-                "entryId": "ja:particle:ga",
-                "startFrame": 53103,
-                "frameCount": 14335
-            },
-            {
-                "path": "audio/fff2a2381ef1abd6f3b0e24b6390a1f76d9fda74ec68bdc300ac3ff137a00214.wav",
-                "entryId": "ja:word:suki",
-                "startFrame": 68518,
-                "frameCount": 13644
-            }
-        ],
-        "sha256": "fbf5b106fd156c0b1bbc46de8a83e16a0bd22bf61cd236ca1bc08cd55960e59a",
-        "frames": 84562,
-        "input": {
-            "language": "ja",
-            "label": "にくとチーズが好き",
-            "semanticRole": "orderedLexicalSequence",
-            "readings": ["にくとちーずがすき"]
-        }
-    },
-    {
         "path": "audio/265cbc842845a0273b37c8a75ffc52dd524cbf8006c7fe6f735c055e5a6a1f69.wav",
         "entryId": "ja:sentence:travel-bicycle-school",
         "label": "じてんしゃで学校に行く",
@@ -754,6 +686,69 @@
             "label": "チーズを食べる",
             "semanticRole": "orderedLexicalSequence",
             "readings": ["ちーずをたべる"]
+        },
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "construction": "Exact existing constituent PCM; no external synthesis."
+        }
+    },
+    {
+        "path": "audio/c9c6191e04c72ec5b7589989e32963adf9d87f6ba48bab3af87efe081bb55b69.wav",
+        "entryId": "ja:sentence:mealtime-like-soup",
+        "label": "スープが好きです",
+        "parts": [
+            {
+                "path": "audio/4a74d133f1fde60b0990bab7970d5ab9683f6c87122f694b518c45819b667cbe.wav",
+                "entryId": "ja:word:soup"
+            },
+            {
+                "path": "audio/69d02d32db53e5eeb4bb6db01917e619478b734bd66988c4242ccc1a3e55655d.wav",
+                "entryId": "ja:particle:ga"
+            },
+            {
+                "path": "audio/fff2a2381ef1abd6f3b0e24b6390a1f76d9fda74ec68bdc300ac3ff137a00214.wav",
+                "entryId": "ja:word:suki"
+            },
+            {
+                "path": "audio/2959a5dcab722b7d5c39f67845f1d6a3d6ede5f23e554e9547bca0e6cb62c56b.wav",
+                "entryId": "ja:word:desu"
+            },
+            { "pauseMs": 400 }
+        ],
+        "gapMs": 90,
+        "segments": [
+            {
+                "path": "audio/4a74d133f1fde60b0990bab7970d5ab9683f6c87122f694b518c45819b667cbe.wav",
+                "entryId": "ja:word:soup",
+                "startFrame": 2400,
+                "frameCount": 17678
+            },
+            {
+                "path": "audio/69d02d32db53e5eeb4bb6db01917e619478b734bd66988c4242ccc1a3e55655d.wav",
+                "entryId": "ja:particle:ga",
+                "startFrame": 22238,
+                "frameCount": 14335
+            },
+            {
+                "path": "audio/fff2a2381ef1abd6f3b0e24b6390a1f76d9fda74ec68bdc300ac3ff137a00214.wav",
+                "entryId": "ja:word:suki",
+                "startFrame": 38733,
+                "frameCount": 13644
+            },
+            {
+                "path": "audio/2959a5dcab722b7d5c39f67845f1d6a3d6ede5f23e554e9547bca0e6cb62c56b.wav",
+                "entryId": "ja:word:desu",
+                "startFrame": 54537,
+                "frameCount": 11490
+            }
+        ],
+        "sha256": "c9c6191e04c72ec5b7589989e32963adf9d87f6ba48bab3af87efe081bb55b69",
+        "frames": 77787,
+        "input": {
+            "language": "ja",
+            "label": "スープが好きです",
+            "semanticRole": "orderedLexicalSequence",
+            "readings": ["すーぷがすきです"]
         },
         "metadata": {
             "listening": "unverified-not-performed",

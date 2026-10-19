@@ -1,78 +1,5 @@
 [
     {
-        "path": "audio/06876c8ced7ed002f9566cb4ab89c17919d7e2b27817cab172fb10cde2d9708d.wav",
-        "entryId": "ja:sentence:shopping-buy-hat-coat",
-        "label": "ぼうしとコートをかう",
-        "parts": [
-            {
-                "path": "audio/d201a18818192877404cda22087618df3f1e2fce207e201b41aaff2be77eed64.wav",
-                "entryId": "ja:word:hat"
-            },
-            {
-                "path": "audio/606f3c1823245eee4195e2195e8189dad7df8cd21b7e6550a55b5c56e585916b.wav",
-                "entryId": "ja:particle:to"
-            },
-            {
-                "path": "audio/7c76dd055a9f368a0a0c3b9cd43b8b54a2167ccb5721b663d2b5114d7ce634c8.wav",
-                "entryId": "ja:word:coat"
-            },
-            {
-                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
-                "entryId": "ja:particle:wo"
-            },
-            {
-                "path": "audio/1a880a2cfc93aedb14ed94ad5cbd8ba5a803aa377bb98f0bf534e0ce8905bfd4.wav",
-                "entryId": "ja:word:travel-buy"
-            },
-            { "pauseMs": 400 }
-        ],
-        "gapMs": 90,
-        "segments": [
-            {
-                "path": "audio/d201a18818192877404cda22087618df3f1e2fce207e201b41aaff2be77eed64.wav",
-                "entryId": "ja:word:hat",
-                "startFrame": 2400,
-                "frameCount": 18793
-            },
-            {
-                "path": "audio/606f3c1823245eee4195e2195e8189dad7df8cd21b7e6550a55b5c56e585916b.wav",
-                "entryId": "ja:particle:to",
-                "startFrame": 23353,
-                "frameCount": 12106
-            },
-            {
-                "path": "audio/7c76dd055a9f368a0a0c3b9cd43b8b54a2167ccb5721b663d2b5114d7ce634c8.wav",
-                "entryId": "ja:word:coat",
-                "startFrame": 37619,
-                "frameCount": 17678
-            },
-            {
-                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
-                "entryId": "ja:particle:wo",
-                "startFrame": 57457,
-                "frameCount": 8762
-            },
-            {
-                "path": "audio/1a880a2cfc93aedb14ed94ad5cbd8ba5a803aa377bb98f0bf534e0ce8905bfd4.wav",
-                "entryId": "ja:word:travel-buy",
-                "startFrame": 68379,
-                "frameCount": 13220
-            }
-        ],
-        "sha256": "06876c8ced7ed002f9566cb4ab89c17919d7e2b27817cab172fb10cde2d9708d",
-        "frames": 93359,
-        "input": {
-            "language": "ja",
-            "label": "ぼうしとコートをかう",
-            "semanticRole": "orderedLexicalSequence",
-            "readings": ["ぼうしとこーとをかう"]
-        },
-        "metadata": {
-            "listening": "unverified-not-performed",
-            "construction": "Exact selected constituent PCM including newly synthesized travel forms."
-        }
-    },
-    {
         "path": "audio/4f0cb653bc69f94ee8af8db31a00f96cdaea292cbe830ecad5ca15da8c273831.wav",
         "entryId": "ja:sentence:travel-buy-ticket",
         "label": "きっぷをかう",
@@ -729,6 +656,79 @@
             "label": "ボウルをあらう",
             "semanticRole": "orderedLexicalSequence",
             "readings": ["ボウルをあらう"]
+        },
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "construction": "Exact constituent PCM, including each selected grammatical form."
+        }
+    },
+    {
+        "path": "audio/e59b3768ada422020937a36585a482a0d1014c2e1d20d8e1a9c938ee15d36248.wav",
+        "entryId": "ja:sentence:kitchen-example-knife",
+        "label": "ナイフとフォークがある",
+        "parts": [
+            {
+                "path": "audio/5b758125352963592e7b6021be4cf85083798119816b62ad7dcb1b25bdde341c.wav",
+                "entryId": "ja:word:kitchen-knife"
+            },
+            {
+                "path": "audio/606f3c1823245eee4195e2195e8189dad7df8cd21b7e6550a55b5c56e585916b.wav",
+                "entryId": "ja:particle:to"
+            },
+            {
+                "path": "audio/bd830d1b87d9b110d43374bfa5c5f1cc9b45e3cbe24046b187d59e40288a2587.wav",
+                "entryId": "ja:word:tableware-fork"
+            },
+            {
+                "path": "audio/69d02d32db53e5eeb4bb6db01917e619478b734bd66988c4242ccc1a3e55655d.wav",
+                "entryId": "ja:particle:ga"
+            },
+            {
+                "path": "audio/0e997231f55465948ee67d44898dfd72abf6e48f95f8839fe116ca8978d53535.wav",
+                "entryId": "ja:word:aru-exist"
+            },
+            { "pauseMs": 400 }
+        ],
+        "gapMs": 90,
+        "segments": [
+            {
+                "path": "audio/5b758125352963592e7b6021be4cf85083798119816b62ad7dcb1b25bdde341c.wav",
+                "entryId": "ja:word:kitchen-knife",
+                "startFrame": 2400,
+                "frameCount": 17678
+            },
+            {
+                "path": "audio/606f3c1823245eee4195e2195e8189dad7df8cd21b7e6550a55b5c56e585916b.wav",
+                "entryId": "ja:particle:to",
+                "startFrame": 22238,
+                "frameCount": 12106
+            },
+            {
+                "path": "audio/bd830d1b87d9b110d43374bfa5c5f1cc9b45e3cbe24046b187d59e40288a2587.wav",
+                "entryId": "ja:word:tableware-fork",
+                "startFrame": 36504,
+                "frameCount": 17678
+            },
+            {
+                "path": "audio/69d02d32db53e5eeb4bb6db01917e619478b734bd66988c4242ccc1a3e55655d.wav",
+                "entryId": "ja:particle:ga",
+                "startFrame": 56342,
+                "frameCount": 14335
+            },
+            {
+                "path": "audio/0e997231f55465948ee67d44898dfd72abf6e48f95f8839fe116ca8978d53535.wav",
+                "entryId": "ja:word:aru-exist",
+                "startFrame": 72837,
+                "frameCount": 8976
+            }
+        ],
+        "sha256": "e59b3768ada422020937a36585a482a0d1014c2e1d20d8e1a9c938ee15d36248",
+        "frames": 93573,
+        "input": {
+            "language": "ja",
+            "label": "ナイフとフォークがある",
+            "semanticRole": "orderedLexicalSequence",
+            "readings": ["ナイフとフォークがある"]
         },
         "metadata": {
             "listening": "unverified-not-performed",

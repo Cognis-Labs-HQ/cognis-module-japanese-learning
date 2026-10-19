@@ -19,7 +19,7 @@ const audio = await readAudioInventory("data/audio");
 const unavailable = await load("data/audio/unavailable.json");
 const decks = await load("data/starter-decks.json");
 
-for (const theme of ["daily", "shopping"].filter(
+for (const theme of ["daily", "shopping", "study-habits", "plans"].filter(
     (theme) => auditIndex[theme + "Publication"],
 )) {
     test(`${theme} practice preserves reviewed meanings and distinguishes missing from unverified audio`, async () => {

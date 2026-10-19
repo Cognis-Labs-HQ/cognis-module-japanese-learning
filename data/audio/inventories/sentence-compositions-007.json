@@ -1,78 +1,5 @@
 [
     {
-        "path": "audio/e59b3768ada422020937a36585a482a0d1014c2e1d20d8e1a9c938ee15d36248.wav",
-        "entryId": "ja:sentence:kitchen-example-knife",
-        "label": "ナイフとフォークがある",
-        "parts": [
-            {
-                "path": "audio/5b758125352963592e7b6021be4cf85083798119816b62ad7dcb1b25bdde341c.wav",
-                "entryId": "ja:word:kitchen-knife"
-            },
-            {
-                "path": "audio/606f3c1823245eee4195e2195e8189dad7df8cd21b7e6550a55b5c56e585916b.wav",
-                "entryId": "ja:particle:to"
-            },
-            {
-                "path": "audio/bd830d1b87d9b110d43374bfa5c5f1cc9b45e3cbe24046b187d59e40288a2587.wav",
-                "entryId": "ja:word:tableware-fork"
-            },
-            {
-                "path": "audio/69d02d32db53e5eeb4bb6db01917e619478b734bd66988c4242ccc1a3e55655d.wav",
-                "entryId": "ja:particle:ga"
-            },
-            {
-                "path": "audio/0e997231f55465948ee67d44898dfd72abf6e48f95f8839fe116ca8978d53535.wav",
-                "entryId": "ja:word:aru-exist"
-            },
-            { "pauseMs": 400 }
-        ],
-        "gapMs": 90,
-        "segments": [
-            {
-                "path": "audio/5b758125352963592e7b6021be4cf85083798119816b62ad7dcb1b25bdde341c.wav",
-                "entryId": "ja:word:kitchen-knife",
-                "startFrame": 2400,
-                "frameCount": 17678
-            },
-            {
-                "path": "audio/606f3c1823245eee4195e2195e8189dad7df8cd21b7e6550a55b5c56e585916b.wav",
-                "entryId": "ja:particle:to",
-                "startFrame": 22238,
-                "frameCount": 12106
-            },
-            {
-                "path": "audio/bd830d1b87d9b110d43374bfa5c5f1cc9b45e3cbe24046b187d59e40288a2587.wav",
-                "entryId": "ja:word:tableware-fork",
-                "startFrame": 36504,
-                "frameCount": 17678
-            },
-            {
-                "path": "audio/69d02d32db53e5eeb4bb6db01917e619478b734bd66988c4242ccc1a3e55655d.wav",
-                "entryId": "ja:particle:ga",
-                "startFrame": 56342,
-                "frameCount": 14335
-            },
-            {
-                "path": "audio/0e997231f55465948ee67d44898dfd72abf6e48f95f8839fe116ca8978d53535.wav",
-                "entryId": "ja:word:aru-exist",
-                "startFrame": 72837,
-                "frameCount": 8976
-            }
-        ],
-        "sha256": "e59b3768ada422020937a36585a482a0d1014c2e1d20d8e1a9c938ee15d36248",
-        "frames": 93573,
-        "input": {
-            "language": "ja",
-            "label": "ナイフとフォークがある",
-            "semanticRole": "orderedLexicalSequence",
-            "readings": ["ナイフとフォークがある"]
-        },
-        "metadata": {
-            "listening": "unverified-not-performed",
-            "construction": "Exact constituent PCM, including each selected grammatical form."
-        }
-    },
-    {
         "path": "audio/3fc1b45251c604ef081ea8521f0ad7bd62ef48d44f19bd4540b504435697f2fa.wav",
         "entryId": "ja:sentence:kitchen-example-pot",
         "label": "なべはとても大きい",
@@ -717,6 +644,142 @@
         "metadata": {
             "listening": "unverified-not-performed",
             "construction": "Exact constituent PCM, including each selected grammatical form."
+        }
+    },
+    {
+        "path": "audio/dd82d3d67de1b47ffef2e3e480ea1ead27acaaa7501aac9197e305893c50a890.wav",
+        "entryId": "ja:sentence:vegetables-example-lettuce",
+        "label": "私はレタスが好きです",
+        "parts": [
+            {
+                "path": "audio/582994ed27256fd8bd5dab9d3f9b0c6e7758081441f9f2773eb03ba29314a33f.wav",
+                "entryId": "ja:word:watashi"
+            },
+            {
+                "path": "audio/d7c9e57654e559dfba3bd6f78c2f27416a61f8b28d56145d84a62fe25b70c94d.wav",
+                "entryId": "ja:particle:wa"
+            },
+            {
+                "path": "audio/1fd8972f5dd327c7c644699d8bb352298eac49482694dc6125241bef283e6b94.wav",
+                "entryId": "ja:word:vegetables-lettuce"
+            },
+            {
+                "path": "audio/69d02d32db53e5eeb4bb6db01917e619478b734bd66988c4242ccc1a3e55655d.wav",
+                "entryId": "ja:particle:ga"
+            },
+            {
+                "path": "audio/fff2a2381ef1abd6f3b0e24b6390a1f76d9fda74ec68bdc300ac3ff137a00214.wav",
+                "entryId": "ja:word:suki"
+            },
+            {
+                "path": "audio/2959a5dcab722b7d5c39f67845f1d6a3d6ede5f23e554e9547bca0e6cb62c56b.wav",
+                "entryId": "ja:word:desu"
+            },
+            { "pauseMs": 400 }
+        ],
+        "gapMs": 90,
+        "segments": [
+            {
+                "path": "audio/582994ed27256fd8bd5dab9d3f9b0c6e7758081441f9f2773eb03ba29314a33f.wav",
+                "entryId": "ja:word:watashi",
+                "startFrame": 2400,
+                "frameCount": 15653
+            },
+            {
+                "path": "audio/d7c9e57654e559dfba3bd6f78c2f27416a61f8b28d56145d84a62fe25b70c94d.wav",
+                "entryId": "ja:particle:wa",
+                "startFrame": 20213,
+                "frameCount": 12106
+            },
+            {
+                "path": "audio/1fd8972f5dd327c7c644699d8bb352298eac49482694dc6125241bef283e6b94.wav",
+                "entryId": "ja:word:vegetables-lettuce",
+                "startFrame": 34479,
+                "frameCount": 19907
+            },
+            {
+                "path": "audio/69d02d32db53e5eeb4bb6db01917e619478b734bd66988c4242ccc1a3e55655d.wav",
+                "entryId": "ja:particle:ga",
+                "startFrame": 56546,
+                "frameCount": 14335
+            },
+            {
+                "path": "audio/fff2a2381ef1abd6f3b0e24b6390a1f76d9fda74ec68bdc300ac3ff137a00214.wav",
+                "entryId": "ja:word:suki",
+                "startFrame": 73041,
+                "frameCount": 13644
+            },
+            {
+                "path": "audio/2959a5dcab722b7d5c39f67845f1d6a3d6ede5f23e554e9547bca0e6cb62c56b.wav",
+                "entryId": "ja:word:desu",
+                "startFrame": 88845,
+                "frameCount": 11490
+            }
+        ],
+        "sha256": "dd82d3d67de1b47ffef2e3e480ea1ead27acaaa7501aac9197e305893c50a890",
+        "frames": 112095,
+        "input": {
+            "language": "ja",
+            "label": "私はレタスが好きです",
+            "semanticRole": "orderedLexicalSequence",
+            "readings": ["わたしはレタスがすきです"]
+        },
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "construction": "Exact constituent PCM, including each selected grammatical form."
+        }
+    },
+    {
+        "path": "audio/ee6712e005141b72382cafbbf6a738c7c7920569768f5d48e01afa6bdd04bd2d.wav",
+        "entryId": "ja:sentence:clothing-example-shirt",
+        "label": "シャツをかう",
+        "parts": [
+            {
+                "path": "audio/0f00fa39ddc666350b31f3bb952b323e73f48b0db239d261e968506cac7fb720.wav",
+                "entryId": "ja:word:clothing-shirt"
+            },
+            {
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "entryId": "ja:particle:wo"
+            },
+            {
+                "path": "audio/1a880a2cfc93aedb14ed94ad5cbd8ba5a803aa377bb98f0bf534e0ce8905bfd4.wav",
+                "entryId": "ja:word:travel-buy"
+            },
+            { "pauseMs": 400 }
+        ],
+        "gapMs": 90,
+        "segments": [
+            {
+                "path": "audio/0f00fa39ddc666350b31f3bb952b323e73f48b0db239d261e968506cac7fb720.wav",
+                "entryId": "ja:word:clothing-shirt",
+                "startFrame": 2400,
+                "frameCount": 16564
+            },
+            {
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "entryId": "ja:particle:wo",
+                "startFrame": 21124,
+                "frameCount": 8762
+            },
+            {
+                "path": "audio/1a880a2cfc93aedb14ed94ad5cbd8ba5a803aa377bb98f0bf534e0ce8905bfd4.wav",
+                "entryId": "ja:word:travel-buy",
+                "startFrame": 32046,
+                "frameCount": 13220
+            }
+        ],
+        "sha256": "ee6712e005141b72382cafbbf6a738c7c7920569768f5d48e01afa6bdd04bd2d",
+        "frames": 57026,
+        "input": {
+            "language": "ja",
+            "label": "シャツをかう",
+            "semanticRole": "orderedLexicalSequence",
+            "readings": ["シャツをかう"]
+        },
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "construction": "Exact clothing and existing constituent PCM, including selected English likes and plural socks."
         }
     }
 ]

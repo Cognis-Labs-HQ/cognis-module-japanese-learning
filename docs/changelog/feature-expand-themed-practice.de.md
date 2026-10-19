@@ -162,6 +162,14 @@ Japanische Tagesgrüße, höflichen Dank, Aufmerksamkeitssignale und Abschiedsgr
 
 Bejahende und verneinende Antworten, höfliche Bitten und Wiederholungsbitten ergänzen. Die englische Höflichkeitsformel Please vom Verb erfreuen trennen. Japanische Bestätigung, lange Vokale und kontextabhängige Entsprechungen erläutern. Originalbilder und endgültige JPEGs wurden geprüft; exakte Audiosegmente und Belege bleiben erhalten. Die Hörprüfung steht aus.
 
+## Pläne machen
+
+Sechs Planungsbeispiele und ein Deck behandeln bevorstehende Aktivitäten, Ankunft, Warten und Fahrkarten. Zeitbedeutungen und sprachspezifische Satzstrukturen bleiben erhalten; Audio entsteht aus vorhandenen genauen Bestandteilen ohne neue Synthesekosten.
+
+## Lerngewohnheiten
+
+Sechs einzeln verfasste Lernbeispiele und ein Deck behandeln Schreibgeräte, Lesen, Sprachenlernen, Zuhören im Unterricht und Fragen. Vorhandene genaue Wortaufnahmen werden ohne doppelte Vokabeln oder neue Illustrationen wiederverwendet.
+
 ## Commits
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)

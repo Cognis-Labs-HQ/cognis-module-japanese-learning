@@ -1,224 +1,5 @@
 [
     {
-        "path": "audio/096b500e82038ea9cac9f6dc43178f7456f4e71eff8158cfafe3ae55917c1d45.wav",
-        "entryId": "ja:sentence:restaurant-2",
-        "label": "さかなとごはんを食べる",
-        "parts": [
-            {
-                "path": "audio/82a3ba788239c7a0ca2d53b86f417200dcef1a8c2ef789e55b778f8870619105.wav",
-                "entryId": "ja:word:fish"
-            },
-            {
-                "path": "audio/606f3c1823245eee4195e2195e8189dad7df8cd21b7e6550a55b5c56e585916b.wav",
-                "entryId": "ja:particle:to"
-            },
-            {
-                "path": "audio/0525847ce0e98844c6520826eb72a29aff79ea2b302d65be5e698a818c232a74.wav",
-                "entryId": "ja:word:rice"
-            },
-            {
-                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
-                "entryId": "ja:particle:wo"
-            },
-            {
-                "path": "audio/4ddd4e95428918c1c2f8c64b3eab948d332e376275c09dfcff69082a20ee9181.wav",
-                "entryId": "ja:word:taberu"
-            },
-            { "pauseMs": 400 }
-        ],
-        "gapMs": 90,
-        "segments": [
-            {
-                "path": "audio/82a3ba788239c7a0ca2d53b86f417200dcef1a8c2ef789e55b778f8870619105.wav",
-                "entryId": "ja:word:fish",
-                "startFrame": 2400,
-                "frameCount": 18793
-            },
-            {
-                "path": "audio/606f3c1823245eee4195e2195e8189dad7df8cd21b7e6550a55b5c56e585916b.wav",
-                "entryId": "ja:particle:to",
-                "startFrame": 23353,
-                "frameCount": 12106
-            },
-            {
-                "path": "audio/0525847ce0e98844c6520826eb72a29aff79ea2b302d65be5e698a818c232a74.wav",
-                "entryId": "ja:word:rice",
-                "startFrame": 37619,
-                "frameCount": 17678
-            },
-            {
-                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
-                "entryId": "ja:particle:wo",
-                "startFrame": 57457,
-                "frameCount": 8762
-            },
-            {
-                "path": "audio/4ddd4e95428918c1c2f8c64b3eab948d332e376275c09dfcff69082a20ee9181.wav",
-                "entryId": "ja:word:taberu",
-                "startFrame": 68379,
-                "frameCount": 14496
-            }
-        ],
-        "sha256": "096b500e82038ea9cac9f6dc43178f7456f4e71eff8158cfafe3ae55917c1d45",
-        "frames": 94635,
-        "input": {
-            "language": "ja",
-            "label": "さかなとごはんを食べる",
-            "semanticRole": "orderedLexicalSequence",
-            "readings": ["さかなとごはんをたべる"]
-        },
-        "metadata": {
-            "listening": "unverified-not-performed",
-            "construction": "Exact existing constituent PCM, without synthesis or new external requests."
-        }
-    },
-    {
-        "path": "audio/f46bd5f815f088329e7cc89b99c588df5f09c442b01da4332ef0a2acc1378c5b.wav",
-        "entryId": "ja:sentence:restaurant-3",
-        "label": "スープはどこですか",
-        "parts": [
-            {
-                "path": "audio/4a74d133f1fde60b0990bab7970d5ab9683f6c87122f694b518c45819b667cbe.wav",
-                "entryId": "ja:word:soup"
-            },
-            {
-                "path": "audio/d7c9e57654e559dfba3bd6f78c2f27416a61f8b28d56145d84a62fe25b70c94d.wav",
-                "entryId": "ja:particle:wa"
-            },
-            {
-                "path": "audio/d8e8d38bb87e5846270a85a0031c99310edbc497f365f2a8fbb4ac49a10ddba3.wav",
-                "entryId": "ja:word:doko"
-            },
-            {
-                "path": "audio/2959a5dcab722b7d5c39f67845f1d6a3d6ede5f23e554e9547bca0e6cb62c56b.wav",
-                "entryId": "ja:word:desu"
-            },
-            {
-                "path": "audio/43ee7a601b45742716f8c1c424c576992297faf0a3ec140047ad194b682f7edf.wav",
-                "entryId": "ja:particle:ka"
-            },
-            { "pauseMs": 400 }
-        ],
-        "gapMs": 90,
-        "segments": [
-            {
-                "path": "audio/4a74d133f1fde60b0990bab7970d5ab9683f6c87122f694b518c45819b667cbe.wav",
-                "entryId": "ja:word:soup",
-                "startFrame": 2400,
-                "frameCount": 17678
-            },
-            {
-                "path": "audio/d7c9e57654e559dfba3bd6f78c2f27416a61f8b28d56145d84a62fe25b70c94d.wav",
-                "entryId": "ja:particle:wa",
-                "startFrame": 22238,
-                "frameCount": 12106
-            },
-            {
-                "path": "audio/d8e8d38bb87e5846270a85a0031c99310edbc497f365f2a8fbb4ac49a10ddba3.wav",
-                "entryId": "ja:word:doko",
-                "startFrame": 36504,
-                "frameCount": 11541
-            },
-            {
-                "path": "audio/2959a5dcab722b7d5c39f67845f1d6a3d6ede5f23e554e9547bca0e6cb62c56b.wav",
-                "entryId": "ja:word:desu",
-                "startFrame": 50205,
-                "frameCount": 11490
-            },
-            {
-                "path": "audio/43ee7a601b45742716f8c1c424c576992297faf0a3ec140047ad194b682f7edf.wav",
-                "entryId": "ja:particle:ka",
-                "startFrame": 63855,
-                "frameCount": 13220
-            }
-        ],
-        "sha256": "f46bd5f815f088329e7cc89b99c588df5f09c442b01da4332ef0a2acc1378c5b",
-        "frames": 88835,
-        "input": {
-            "language": "ja",
-            "label": "スープはどこですか",
-            "semanticRole": "orderedLexicalSequence",
-            "readings": ["すーぷはどこですか"]
-        },
-        "metadata": {
-            "listening": "unverified-not-performed",
-            "construction": "Exact existing constituent PCM, without synthesis or new external requests."
-        }
-    },
-    {
-        "path": "audio/3064528fc8c5f1f80ef85b644a6166dd2e3848286b0881cfcccaef7ad258ebe9.wav",
-        "entryId": "ja:sentence:restaurant-4",
-        "label": "箸でごはんを食べる",
-        "parts": [
-            {
-                "path": "audio/0961c5699ea8a0302440aec81fde7266e9e37509b2e463252efb7eb3319fecf1.wav",
-                "entryId": "ja:word:hashi-chopsticks"
-            },
-            {
-                "path": "audio/df81472c8108ad9b47d8d90db017ff1c1b553d80263d6a2c59de1571671f3eee.wav",
-                "entryId": "ja:particle:de"
-            },
-            {
-                "path": "audio/0525847ce0e98844c6520826eb72a29aff79ea2b302d65be5e698a818c232a74.wav",
-                "entryId": "ja:word:rice"
-            },
-            {
-                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
-                "entryId": "ja:particle:wo"
-            },
-            {
-                "path": "audio/4ddd4e95428918c1c2f8c64b3eab948d332e376275c09dfcff69082a20ee9181.wav",
-                "entryId": "ja:word:taberu"
-            },
-            { "pauseMs": 400 }
-        ],
-        "gapMs": 90,
-        "segments": [
-            {
-                "path": "audio/0961c5699ea8a0302440aec81fde7266e9e37509b2e463252efb7eb3319fecf1.wav",
-                "entryId": "ja:word:hashi-chopsticks",
-                "startFrame": 2400,
-                "frameCount": 14385
-            },
-            {
-                "path": "audio/df81472c8108ad9b47d8d90db017ff1c1b553d80263d6a2c59de1571671f3eee.wav",
-                "entryId": "ja:particle:de",
-                "startFrame": 18945,
-                "frameCount": 13220
-            },
-            {
-                "path": "audio/0525847ce0e98844c6520826eb72a29aff79ea2b302d65be5e698a818c232a74.wav",
-                "entryId": "ja:word:rice",
-                "startFrame": 34325,
-                "frameCount": 17678
-            },
-            {
-                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
-                "entryId": "ja:particle:wo",
-                "startFrame": 54163,
-                "frameCount": 8762
-            },
-            {
-                "path": "audio/4ddd4e95428918c1c2f8c64b3eab948d332e376275c09dfcff69082a20ee9181.wav",
-                "entryId": "ja:word:taberu",
-                "startFrame": 65085,
-                "frameCount": 14496
-            }
-        ],
-        "sha256": "3064528fc8c5f1f80ef85b644a6166dd2e3848286b0881cfcccaef7ad258ebe9",
-        "frames": 91341,
-        "input": {
-            "language": "ja",
-            "label": "箸でごはんを食べる",
-            "semanticRole": "orderedLexicalSequence",
-            "readings": ["はしでごはんをたべる"]
-        },
-        "metadata": {
-            "listening": "unverified-not-performed",
-            "construction": "Exact existing constituent PCM, without synthesis or new external requests."
-        }
-    },
-    {
         "path": "audio/80fcc3b8c9e5af7c0b9c0691c1059085c4198a2edeae0ee525e382de822aa07a.wav",
         "entryId": "ja:sentence:restaurant-5",
         "label": "レストランにテーブルといすがある",
@@ -750,6 +531,215 @@
         "metadata": {
             "listening": "unverified-not-performed",
             "construction": "Exact place-noun and existing constituent PCM, including selected English third-person works."
+        }
+    },
+    {
+        "path": "audio/2a12fbfcd759bfe66abba4497c118966d8740dc9eef7a1334aab8887f49f9e9c.wav",
+        "entryId": "ja:sentence:places-example-supermarket",
+        "label": "スーパーでにんじんをかう",
+        "parts": [
+            {
+                "path": "audio/4fe867dd6a28eb23632a97e20d639fe0538f619eebd6614d0dceaf7bc0780f72.wav",
+                "entryId": "ja:word:places-supermarket"
+            },
+            {
+                "path": "audio/df81472c8108ad9b47d8d90db017ff1c1b553d80263d6a2c59de1571671f3eee.wav",
+                "entryId": "ja:particle:de"
+            },
+            {
+                "path": "audio/5e9465e460a95072fa6fdb149cb85b388244f138e7534d0d456047dc5999d099.wav",
+                "entryId": "ja:word:carrot"
+            },
+            {
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "entryId": "ja:particle:wo"
+            },
+            {
+                "path": "audio/1a880a2cfc93aedb14ed94ad5cbd8ba5a803aa377bb98f0bf534e0ce8905bfd4.wav",
+                "entryId": "ja:word:travel-buy"
+            },
+            { "pauseMs": 400 }
+        ],
+        "gapMs": 90,
+        "segments": [
+            {
+                "path": "audio/4fe867dd6a28eb23632a97e20d639fe0538f619eebd6614d0dceaf7bc0780f72.wav",
+                "entryId": "ja:word:places-supermarket",
+                "startFrame": 2400,
+                "frameCount": 22137
+            },
+            {
+                "path": "audio/df81472c8108ad9b47d8d90db017ff1c1b553d80263d6a2c59de1571671f3eee.wav",
+                "entryId": "ja:particle:de",
+                "startFrame": 26697,
+                "frameCount": 13220
+            },
+            {
+                "path": "audio/5e9465e460a95072fa6fdb149cb85b388244f138e7534d0d456047dc5999d099.wav",
+                "entryId": "ja:word:carrot",
+                "startFrame": 42077,
+                "frameCount": 17678
+            },
+            {
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "entryId": "ja:particle:wo",
+                "startFrame": 61915,
+                "frameCount": 8762
+            },
+            {
+                "path": "audio/1a880a2cfc93aedb14ed94ad5cbd8ba5a803aa377bb98f0bf534e0ce8905bfd4.wav",
+                "entryId": "ja:word:travel-buy",
+                "startFrame": 72837,
+                "frameCount": 13220
+            }
+        ],
+        "sha256": "2a12fbfcd759bfe66abba4497c118966d8740dc9eef7a1334aab8887f49f9e9c",
+        "frames": 97817,
+        "input": {
+            "language": "ja",
+            "label": "スーパーでにんじんをかう",
+            "semanticRole": "orderedLexicalSequence",
+            "readings": ["スーパーでにんじんをかう"]
+        },
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "construction": "Exact place-noun and existing constituent PCM, including selected English third-person works."
+        }
+    },
+    {
+        "path": "audio/63a646bff07297e085a5ae34408fc2792564781803a45f5049cf6a3f3aeb5082.wav",
+        "entryId": "ja:sentence:places-example-restaurant",
+        "label": "レストランでさかなを食べる",
+        "parts": [
+            {
+                "path": "audio/df5bfce667c3edb0f0939b31e06a642a84733d7a542eb474176328264a3ed42e.wav",
+                "entryId": "ja:word:places-restaurant"
+            },
+            {
+                "path": "audio/df81472c8108ad9b47d8d90db017ff1c1b553d80263d6a2c59de1571671f3eee.wav",
+                "entryId": "ja:particle:de"
+            },
+            {
+                "path": "audio/82a3ba788239c7a0ca2d53b86f417200dcef1a8c2ef789e55b778f8870619105.wav",
+                "entryId": "ja:word:fish"
+            },
+            {
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "entryId": "ja:particle:wo"
+            },
+            {
+                "path": "audio/4ddd4e95428918c1c2f8c64b3eab948d332e376275c09dfcff69082a20ee9181.wav",
+                "entryId": "ja:word:taberu"
+            },
+            { "pauseMs": 400 }
+        ],
+        "gapMs": 90,
+        "segments": [
+            {
+                "path": "audio/df5bfce667c3edb0f0939b31e06a642a84733d7a542eb474176328264a3ed42e.wav",
+                "entryId": "ja:word:places-restaurant",
+                "startFrame": 2400,
+                "frameCount": 18793
+            },
+            {
+                "path": "audio/df81472c8108ad9b47d8d90db017ff1c1b553d80263d6a2c59de1571671f3eee.wav",
+                "entryId": "ja:particle:de",
+                "startFrame": 23353,
+                "frameCount": 13220
+            },
+            {
+                "path": "audio/82a3ba788239c7a0ca2d53b86f417200dcef1a8c2ef789e55b778f8870619105.wav",
+                "entryId": "ja:word:fish",
+                "startFrame": 38733,
+                "frameCount": 18793
+            },
+            {
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "entryId": "ja:particle:wo",
+                "startFrame": 59686,
+                "frameCount": 8762
+            },
+            {
+                "path": "audio/4ddd4e95428918c1c2f8c64b3eab948d332e376275c09dfcff69082a20ee9181.wav",
+                "entryId": "ja:word:taberu",
+                "startFrame": 70608,
+                "frameCount": 14496
+            }
+        ],
+        "sha256": "63a646bff07297e085a5ae34408fc2792564781803a45f5049cf6a3f3aeb5082",
+        "frames": 96864,
+        "input": {
+            "language": "ja",
+            "label": "レストランでさかなを食べる",
+            "semanticRole": "orderedLexicalSequence",
+            "readings": ["レストランでさかなをたべる"]
+        },
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "construction": "Exact place-noun and existing constituent PCM, including selected English third-person works."
+        }
+    },
+    {
+        "path": "audio/2de09e4ebe9a60bd94a019858644d39975ec57ed299a517cef71fd9cc2698b59.wav",
+        "entryId": "ja:sentence:nature-example-tree",
+        "label": "きはとても大きい",
+        "parts": [
+            {
+                "path": "audio/2e41c2681981af9cdc96dd86bab62c17574c815262f315a50124c83009b2bc2a.wav",
+                "entryId": "ja:word:nature-tree"
+            },
+            {
+                "path": "audio/d7c9e57654e559dfba3bd6f78c2f27416a61f8b28d56145d84a62fe25b70c94d.wav",
+                "entryId": "ja:particle:wa"
+            },
+            {
+                "path": "audio/6bd90d517ec5079a9272a10b6ee16cc30a38525e42cd4cb4eb3bf6bf210ba2c5.wav",
+                "entryId": "ja:word:totemo"
+            },
+            {
+                "path": "audio/5b15ae17f9c15b1d56392fef904e5f1a056663de7dd79120d237600c45971120.wav",
+                "entryId": "ja:word:ookii"
+            },
+            { "pauseMs": 400 }
+        ],
+        "gapMs": 90,
+        "segments": [
+            {
+                "path": "audio/2e41c2681981af9cdc96dd86bab62c17574c815262f315a50124c83009b2bc2a.wav",
+                "entryId": "ja:word:nature-tree",
+                "startFrame": 2400,
+                "frameCount": 13220
+            },
+            {
+                "path": "audio/d7c9e57654e559dfba3bd6f78c2f27416a61f8b28d56145d84a62fe25b70c94d.wav",
+                "entryId": "ja:particle:wa",
+                "startFrame": 17780,
+                "frameCount": 12106
+            },
+            {
+                "path": "audio/6bd90d517ec5079a9272a10b6ee16cc30a38525e42cd4cb4eb3bf6bf210ba2c5.wav",
+                "entryId": "ja:word:totemo",
+                "startFrame": 32046,
+                "frameCount": 12621
+            },
+            {
+                "path": "audio/5b15ae17f9c15b1d56392fef904e5f1a056663de7dd79120d237600c45971120.wav",
+                "entryId": "ja:word:ookii",
+                "startFrame": 46827,
+                "frameCount": 15963
+            }
+        ],
+        "sha256": "2de09e4ebe9a60bd94a019858644d39975ec57ed299a517cef71fd9cc2698b59",
+        "frames": 74550,
+        "input": {
+            "language": "ja",
+            "label": "きはとても大きい",
+            "semanticRole": "orderedLexicalSequence",
+            "readings": ["きはとてもおおきい"]
+        },
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "construction": "Exact constituent PCM, preserving every selected grammatical form."
         }
     }
 ]

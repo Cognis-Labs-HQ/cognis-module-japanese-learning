@@ -1,131 +1,5 @@
 [
     {
-        "path": "audio/3121a2729a8e69adb20b9791bfa2cd86f1a16e98b418c131432ea9ddf2f06e1a.wav",
-        "entryId": "ja:sentence:household-example-dry",
-        "label": "髪をかわかす",
-        "parts": [
-            {
-                "path": "audio/b7bd5c85a2c436142f75565d76c84918184a4e37f27ef2adbd48793c30d5b88a.wav",
-                "entryId": "ja:word:kami-hair"
-            },
-            {
-                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
-                "entryId": "ja:particle:wo"
-            },
-            {
-                "path": "audio/8ddfd6ac2943f3fe6c49cd621b6ab3b20f290aa4a230b6c42f5b4f7af30a395e.wav",
-                "entryId": "ja:word:household-dry"
-            },
-            { "pauseMs": 400 }
-        ],
-        "gapMs": 90,
-        "segments": [
-            {
-                "path": "audio/b7bd5c85a2c436142f75565d76c84918184a4e37f27ef2adbd48793c30d5b88a.wav",
-                "entryId": "ja:word:kami-hair",
-                "startFrame": 2400,
-                "frameCount": 8874
-            },
-            {
-                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
-                "entryId": "ja:particle:wo",
-                "startFrame": 13434,
-                "frameCount": 8762
-            },
-            {
-                "path": "audio/8ddfd6ac2943f3fe6c49cd621b6ab3b20f290aa4a230b6c42f5b4f7af30a395e.wav",
-                "entryId": "ja:word:household-dry",
-                "startFrame": 24356,
-                "frameCount": 18793
-            }
-        ],
-        "sha256": "3121a2729a8e69adb20b9791bfa2cd86f1a16e98b418c131432ea9ddf2f06e1a",
-        "frames": 54909,
-        "input": {
-            "language": "ja",
-            "label": "髪をかわかす",
-            "semanticRole": "orderedLexicalSequence",
-            "readings": ["かみをかわかす"]
-        },
-        "metadata": {
-            "listening": "unverified-not-performed",
-            "construction": "Exact visible base-word constituent PCM; current host import requires base labels in authored sentences. Selected-form recordings remain available for transformation practice."
-        }
-    },
-    {
-        "path": "audio/be073acdd5b323280667b242905fd7aeed26e6b4928b1a846f6590c3f56c2bd9.wav",
-        "entryId": "ja:sentence:care-example-soap",
-        "label": "せっけんでてをあらう",
-        "parts": [
-            {
-                "path": "audio/d044fa3bdaf8ecf291053b846791a89e9af92ca6407450f965ed990c831a68c1.wav",
-                "entryId": "ja:word:care-soap"
-            },
-            {
-                "path": "audio/df81472c8108ad9b47d8d90db017ff1c1b553d80263d6a2c59de1571671f3eee.wav",
-                "entryId": "ja:particle:de"
-            },
-            {
-                "path": "audio/3c207d90170dbd49c8b567e59b64946bff2698eaf8cda275f666b889a3260436.wav",
-                "entryId": "ja:word:hand"
-            },
-            {
-                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
-                "entryId": "ja:particle:wo"
-            },
-            {
-                "path": "audio/55900a3049492f3fd4edd4b8fb6ba3ff1650cde9ed4b3024f002f08659bf5c2a.wav",
-                "entryId": "ja:word:household-wash"
-            },
-            { "pauseMs": 400 }
-        ],
-        "gapMs": 90,
-        "segments": [
-            {
-                "path": "audio/d044fa3bdaf8ecf291053b846791a89e9af92ca6407450f965ed990c831a68c1.wav",
-                "entryId": "ja:word:care-soap",
-                "startFrame": 2400,
-                "frameCount": 15449
-            },
-            {
-                "path": "audio/df81472c8108ad9b47d8d90db017ff1c1b553d80263d6a2c59de1571671f3eee.wav",
-                "entryId": "ja:particle:de",
-                "startFrame": 20009,
-                "frameCount": 13220
-            },
-            {
-                "path": "audio/3c207d90170dbd49c8b567e59b64946bff2698eaf8cda275f666b889a3260436.wav",
-                "entryId": "ja:word:hand",
-                "startFrame": 35389,
-                "frameCount": 12106
-            },
-            {
-                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
-                "entryId": "ja:particle:wo",
-                "startFrame": 49655,
-                "frameCount": 8762
-            },
-            {
-                "path": "audio/55900a3049492f3fd4edd4b8fb6ba3ff1650cde9ed4b3024f002f08659bf5c2a.wav",
-                "entryId": "ja:word:household-wash",
-                "startFrame": 60577,
-                "frameCount": 12106
-            }
-        ],
-        "sha256": "be073acdd5b323280667b242905fd7aeed26e6b4928b1a846f6590c3f56c2bd9",
-        "frames": 84443,
-        "input": {
-            "language": "ja",
-            "label": "せっけんでてをあらう",
-            "semanticRole": "orderedLexicalSequence",
-            "readings": ["せっけんでてをあらう"]
-        },
-        "metadata": {
-            "listening": "unverified-not-performed",
-            "construction": "Exact personal-care constituent PCM, including the English plural towels."
-        }
-    },
-    {
         "path": "audio/a94d59be57042072ea7fbfc31ff14c38c192229f01f6f352193f2bf945ae979f.wav",
         "entryId": "ja:sentence:care-example-towel",
         "label": "タオルはどこですか",
@@ -730,6 +604,152 @@
         "metadata": {
             "listening": "unverified-not-performed",
             "construction": "Exact existing constituent PCM, without synthesis or new external requests."
+        }
+    },
+    {
+        "path": "audio/6e5b04b187a04bf8e1dde6ba6e232dcfe7f2a003b2cd65add06f8b021bc96d3d.wav",
+        "entryId": "ja:sentence:transport-example-airplane",
+        "label": "ひこうきで日本に行く",
+        "parts": [
+            {
+                "path": "audio/5a14779f955f505ed616f02b8358c8318326510ae091e7c167567493bdedf2c9.wav",
+                "entryId": "ja:word:transport-airplane"
+            },
+            {
+                "path": "audio/df81472c8108ad9b47d8d90db017ff1c1b553d80263d6a2c59de1571671f3eee.wav",
+                "entryId": "ja:particle:de"
+            },
+            {
+                "path": "audio/5a06c42ca5f7c40270c03c1a3e8a2286da938b744c8d298f0f44f6eaccbf419e.wav",
+                "entryId": "ja:word:nihon"
+            },
+            {
+                "path": "audio/1615cf278c2962c1657907b3686d653625229af2375f90dda5bfd5b178c7aedb.wav",
+                "entryId": "ja:particle:ni"
+            },
+            {
+                "path": "audio/843223b7290cf0fda523989799b96f85c224338146f5d022e92e6715234e2e39.wav",
+                "entryId": "ja:word:iku"
+            },
+            { "pauseMs": 400 }
+        ],
+        "gapMs": 90,
+        "segments": [
+            {
+                "path": "audio/5a14779f955f505ed616f02b8358c8318326510ae091e7c167567493bdedf2c9.wav",
+                "entryId": "ja:word:transport-airplane",
+                "startFrame": 2400,
+                "frameCount": 19907
+            },
+            {
+                "path": "audio/df81472c8108ad9b47d8d90db017ff1c1b553d80263d6a2c59de1571671f3eee.wav",
+                "entryId": "ja:particle:de",
+                "startFrame": 24467,
+                "frameCount": 13220
+            },
+            {
+                "path": "audio/5a06c42ca5f7c40270c03c1a3e8a2286da938b744c8d298f0f44f6eaccbf419e.wav",
+                "entryId": "ja:word:nihon",
+                "startFrame": 39847,
+                "frameCount": 12278
+            },
+            {
+                "path": "audio/1615cf278c2962c1657907b3686d653625229af2375f90dda5bfd5b178c7aedb.wav",
+                "entryId": "ja:particle:ni",
+                "startFrame": 54285,
+                "frameCount": 13220
+            },
+            {
+                "path": "audio/843223b7290cf0fda523989799b96f85c224338146f5d022e92e6715234e2e39.wav",
+                "entryId": "ja:word:iku",
+                "startFrame": 69665,
+                "frameCount": 12643
+            }
+        ],
+        "sha256": "6e5b04b187a04bf8e1dde6ba6e232dcfe7f2a003b2cd65add06f8b021bc96d3d",
+        "frames": 94068,
+        "input": {
+            "language": "ja",
+            "label": "ひこうきで日本に行く",
+            "semanticRole": "orderedLexicalSequence",
+            "readings": ["ひこうきでにほんにいく"]
+        },
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "construction": "Exact transport constituent PCM, including the English plural airplanes."
+        }
+    },
+    {
+        "path": "audio/617b54d62f3c3f0527c2051140ac468845a32189db5d2da40d44a5fee9f75398.wav",
+        "entryId": "ja:sentence:transport-example-boat",
+        "label": "川にボートがある",
+        "parts": [
+            {
+                "path": "audio/02b62b3e244ea765dc90cb6aeeb6c692de8e5c6fc39d35ba2da13da9bca8accd.wav",
+                "entryId": "ja:word:kawa-river"
+            },
+            {
+                "path": "audio/1615cf278c2962c1657907b3686d653625229af2375f90dda5bfd5b178c7aedb.wav",
+                "entryId": "ja:particle:ni"
+            },
+            {
+                "path": "audio/01d8bbabaeb82e210cf53311c2dc3d4d9a451f414fdd68443336fd8c471e2697.wav",
+                "entryId": "ja:word:transport-boat"
+            },
+            {
+                "path": "audio/69d02d32db53e5eeb4bb6db01917e619478b734bd66988c4242ccc1a3e55655d.wav",
+                "entryId": "ja:particle:ga"
+            },
+            {
+                "path": "audio/0e997231f55465948ee67d44898dfd72abf6e48f95f8839fe116ca8978d53535.wav",
+                "entryId": "ja:word:aru-exist"
+            },
+            { "pauseMs": 400 }
+        ],
+        "gapMs": 90,
+        "segments": [
+            {
+                "path": "audio/02b62b3e244ea765dc90cb6aeeb6c692de8e5c6fc39d35ba2da13da9bca8accd.wav",
+                "entryId": "ja:word:kawa-river",
+                "startFrame": 2400,
+                "frameCount": 13484
+            },
+            {
+                "path": "audio/1615cf278c2962c1657907b3686d653625229af2375f90dda5bfd5b178c7aedb.wav",
+                "entryId": "ja:particle:ni",
+                "startFrame": 18044,
+                "frameCount": 13220
+            },
+            {
+                "path": "audio/01d8bbabaeb82e210cf53311c2dc3d4d9a451f414fdd68443336fd8c471e2697.wav",
+                "entryId": "ja:word:transport-boat",
+                "startFrame": 33424,
+                "frameCount": 17678
+            },
+            {
+                "path": "audio/69d02d32db53e5eeb4bb6db01917e619478b734bd66988c4242ccc1a3e55655d.wav",
+                "entryId": "ja:particle:ga",
+                "startFrame": 53262,
+                "frameCount": 14335
+            },
+            {
+                "path": "audio/0e997231f55465948ee67d44898dfd72abf6e48f95f8839fe116ca8978d53535.wav",
+                "entryId": "ja:word:aru-exist",
+                "startFrame": 69757,
+                "frameCount": 8976
+            }
+        ],
+        "sha256": "617b54d62f3c3f0527c2051140ac468845a32189db5d2da40d44a5fee9f75398",
+        "frames": 90493,
+        "input": {
+            "language": "ja",
+            "label": "川にボートがある",
+            "semanticRole": "orderedLexicalSequence",
+            "readings": ["かわにボートがある"]
+        },
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "construction": "Exact transport constituent PCM, including the English plural airplanes."
         }
     }
 ]

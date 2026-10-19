@@ -1,141 +1,5 @@
 [
     {
-        "path": "audio/dd82d3d67de1b47ffef2e3e480ea1ead27acaaa7501aac9197e305893c50a890.wav",
-        "entryId": "ja:sentence:vegetables-example-lettuce",
-        "label": "私はレタスが好きです",
-        "parts": [
-            {
-                "path": "audio/582994ed27256fd8bd5dab9d3f9b0c6e7758081441f9f2773eb03ba29314a33f.wav",
-                "entryId": "ja:word:watashi"
-            },
-            {
-                "path": "audio/d7c9e57654e559dfba3bd6f78c2f27416a61f8b28d56145d84a62fe25b70c94d.wav",
-                "entryId": "ja:particle:wa"
-            },
-            {
-                "path": "audio/1fd8972f5dd327c7c644699d8bb352298eac49482694dc6125241bef283e6b94.wav",
-                "entryId": "ja:word:vegetables-lettuce"
-            },
-            {
-                "path": "audio/69d02d32db53e5eeb4bb6db01917e619478b734bd66988c4242ccc1a3e55655d.wav",
-                "entryId": "ja:particle:ga"
-            },
-            {
-                "path": "audio/fff2a2381ef1abd6f3b0e24b6390a1f76d9fda74ec68bdc300ac3ff137a00214.wav",
-                "entryId": "ja:word:suki"
-            },
-            {
-                "path": "audio/2959a5dcab722b7d5c39f67845f1d6a3d6ede5f23e554e9547bca0e6cb62c56b.wav",
-                "entryId": "ja:word:desu"
-            },
-            { "pauseMs": 400 }
-        ],
-        "gapMs": 90,
-        "segments": [
-            {
-                "path": "audio/582994ed27256fd8bd5dab9d3f9b0c6e7758081441f9f2773eb03ba29314a33f.wav",
-                "entryId": "ja:word:watashi",
-                "startFrame": 2400,
-                "frameCount": 15653
-            },
-            {
-                "path": "audio/d7c9e57654e559dfba3bd6f78c2f27416a61f8b28d56145d84a62fe25b70c94d.wav",
-                "entryId": "ja:particle:wa",
-                "startFrame": 20213,
-                "frameCount": 12106
-            },
-            {
-                "path": "audio/1fd8972f5dd327c7c644699d8bb352298eac49482694dc6125241bef283e6b94.wav",
-                "entryId": "ja:word:vegetables-lettuce",
-                "startFrame": 34479,
-                "frameCount": 19907
-            },
-            {
-                "path": "audio/69d02d32db53e5eeb4bb6db01917e619478b734bd66988c4242ccc1a3e55655d.wav",
-                "entryId": "ja:particle:ga",
-                "startFrame": 56546,
-                "frameCount": 14335
-            },
-            {
-                "path": "audio/fff2a2381ef1abd6f3b0e24b6390a1f76d9fda74ec68bdc300ac3ff137a00214.wav",
-                "entryId": "ja:word:suki",
-                "startFrame": 73041,
-                "frameCount": 13644
-            },
-            {
-                "path": "audio/2959a5dcab722b7d5c39f67845f1d6a3d6ede5f23e554e9547bca0e6cb62c56b.wav",
-                "entryId": "ja:word:desu",
-                "startFrame": 88845,
-                "frameCount": 11490
-            }
-        ],
-        "sha256": "dd82d3d67de1b47ffef2e3e480ea1ead27acaaa7501aac9197e305893c50a890",
-        "frames": 112095,
-        "input": {
-            "language": "ja",
-            "label": "私はレタスが好きです",
-            "semanticRole": "orderedLexicalSequence",
-            "readings": ["わたしはレタスがすきです"]
-        },
-        "metadata": {
-            "listening": "unverified-not-performed",
-            "construction": "Exact constituent PCM, including each selected grammatical form."
-        }
-    },
-    {
-        "path": "audio/ee6712e005141b72382cafbbf6a738c7c7920569768f5d48e01afa6bdd04bd2d.wav",
-        "entryId": "ja:sentence:clothing-example-shirt",
-        "label": "シャツをかう",
-        "parts": [
-            {
-                "path": "audio/0f00fa39ddc666350b31f3bb952b323e73f48b0db239d261e968506cac7fb720.wav",
-                "entryId": "ja:word:clothing-shirt"
-            },
-            {
-                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
-                "entryId": "ja:particle:wo"
-            },
-            {
-                "path": "audio/1a880a2cfc93aedb14ed94ad5cbd8ba5a803aa377bb98f0bf534e0ce8905bfd4.wav",
-                "entryId": "ja:word:travel-buy"
-            },
-            { "pauseMs": 400 }
-        ],
-        "gapMs": 90,
-        "segments": [
-            {
-                "path": "audio/0f00fa39ddc666350b31f3bb952b323e73f48b0db239d261e968506cac7fb720.wav",
-                "entryId": "ja:word:clothing-shirt",
-                "startFrame": 2400,
-                "frameCount": 16564
-            },
-            {
-                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
-                "entryId": "ja:particle:wo",
-                "startFrame": 21124,
-                "frameCount": 8762
-            },
-            {
-                "path": "audio/1a880a2cfc93aedb14ed94ad5cbd8ba5a803aa377bb98f0bf534e0ce8905bfd4.wav",
-                "entryId": "ja:word:travel-buy",
-                "startFrame": 32046,
-                "frameCount": 13220
-            }
-        ],
-        "sha256": "ee6712e005141b72382cafbbf6a738c7c7920569768f5d48e01afa6bdd04bd2d",
-        "frames": 57026,
-        "input": {
-            "language": "ja",
-            "label": "シャツをかう",
-            "semanticRole": "orderedLexicalSequence",
-            "readings": ["シャツをかう"]
-        },
-        "metadata": {
-            "listening": "unverified-not-performed",
-            "construction": "Exact clothing and existing constituent PCM, including selected English likes and plural socks."
-        }
-    },
-    {
         "path": "audio/9df10a91ac0877bdf005e33225aadd58bae69909b747852018a76ddae02bad61.wav",
         "entryId": "ja:sentence:clothing-example-dress",
         "label": "ワンピースが好きです",
@@ -733,6 +597,132 @@
         "metadata": {
             "listening": "unverified-not-performed",
             "construction": "Exact visible base-word constituent PCM; current host import requires base labels in authored sentences. Selected-form recordings remain available for transformation practice."
+        }
+    },
+    {
+        "path": "audio/3121a2729a8e69adb20b9791bfa2cd86f1a16e98b418c131432ea9ddf2f06e1a.wav",
+        "entryId": "ja:sentence:household-example-dry",
+        "label": "髪をかわかす",
+        "parts": [
+            {
+                "path": "audio/b7bd5c85a2c436142f75565d76c84918184a4e37f27ef2adbd48793c30d5b88a.wav",
+                "entryId": "ja:word:kami-hair"
+            },
+            {
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "entryId": "ja:particle:wo"
+            },
+            {
+                "path": "audio/8ddfd6ac2943f3fe6c49cd621b6ab3b20f290aa4a230b6c42f5b4f7af30a395e.wav",
+                "entryId": "ja:word:household-dry"
+            },
+            { "pauseMs": 400 }
+        ],
+        "gapMs": 90,
+        "segments": [
+            {
+                "path": "audio/b7bd5c85a2c436142f75565d76c84918184a4e37f27ef2adbd48793c30d5b88a.wav",
+                "entryId": "ja:word:kami-hair",
+                "startFrame": 2400,
+                "frameCount": 8874
+            },
+            {
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "entryId": "ja:particle:wo",
+                "startFrame": 13434,
+                "frameCount": 8762
+            },
+            {
+                "path": "audio/8ddfd6ac2943f3fe6c49cd621b6ab3b20f290aa4a230b6c42f5b4f7af30a395e.wav",
+                "entryId": "ja:word:household-dry",
+                "startFrame": 24356,
+                "frameCount": 18793
+            }
+        ],
+        "sha256": "3121a2729a8e69adb20b9791bfa2cd86f1a16e98b418c131432ea9ddf2f06e1a",
+        "frames": 54909,
+        "input": {
+            "language": "ja",
+            "label": "髪をかわかす",
+            "semanticRole": "orderedLexicalSequence",
+            "readings": ["かみをかわかす"]
+        },
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "construction": "Exact visible base-word constituent PCM; current host import requires base labels in authored sentences. Selected-form recordings remain available for transformation practice."
+        }
+    },
+    {
+        "path": "audio/be073acdd5b323280667b242905fd7aeed26e6b4928b1a846f6590c3f56c2bd9.wav",
+        "entryId": "ja:sentence:care-example-soap",
+        "label": "せっけんでてをあらう",
+        "parts": [
+            {
+                "path": "audio/d044fa3bdaf8ecf291053b846791a89e9af92ca6407450f965ed990c831a68c1.wav",
+                "entryId": "ja:word:care-soap"
+            },
+            {
+                "path": "audio/df81472c8108ad9b47d8d90db017ff1c1b553d80263d6a2c59de1571671f3eee.wav",
+                "entryId": "ja:particle:de"
+            },
+            {
+                "path": "audio/3c207d90170dbd49c8b567e59b64946bff2698eaf8cda275f666b889a3260436.wav",
+                "entryId": "ja:word:hand"
+            },
+            {
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "entryId": "ja:particle:wo"
+            },
+            {
+                "path": "audio/55900a3049492f3fd4edd4b8fb6ba3ff1650cde9ed4b3024f002f08659bf5c2a.wav",
+                "entryId": "ja:word:household-wash"
+            },
+            { "pauseMs": 400 }
+        ],
+        "gapMs": 90,
+        "segments": [
+            {
+                "path": "audio/d044fa3bdaf8ecf291053b846791a89e9af92ca6407450f965ed990c831a68c1.wav",
+                "entryId": "ja:word:care-soap",
+                "startFrame": 2400,
+                "frameCount": 15449
+            },
+            {
+                "path": "audio/df81472c8108ad9b47d8d90db017ff1c1b553d80263d6a2c59de1571671f3eee.wav",
+                "entryId": "ja:particle:de",
+                "startFrame": 20009,
+                "frameCount": 13220
+            },
+            {
+                "path": "audio/3c207d90170dbd49c8b567e59b64946bff2698eaf8cda275f666b889a3260436.wav",
+                "entryId": "ja:word:hand",
+                "startFrame": 35389,
+                "frameCount": 12106
+            },
+            {
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "entryId": "ja:particle:wo",
+                "startFrame": 49655,
+                "frameCount": 8762
+            },
+            {
+                "path": "audio/55900a3049492f3fd4edd4b8fb6ba3ff1650cde9ed4b3024f002f08659bf5c2a.wav",
+                "entryId": "ja:word:household-wash",
+                "startFrame": 60577,
+                "frameCount": 12106
+            }
+        ],
+        "sha256": "be073acdd5b323280667b242905fd7aeed26e6b4928b1a846f6590c3f56c2bd9",
+        "frames": 84443,
+        "input": {
+            "language": "ja",
+            "label": "せっけんでてをあらう",
+            "semanticRole": "orderedLexicalSequence",
+            "readings": ["せっけんでてをあらう"]
+        },
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "construction": "Exact personal-care constituent PCM, including the English plural towels."
         }
     }
 ]

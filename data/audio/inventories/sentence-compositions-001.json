@@ -724,5 +724,53 @@
             "semanticRole": "orderedLexicalSequence",
             "readings": ["みずをのむ"]
         }
+    },
+    {
+        "path": "audio/b61d4af497c60db66a2fca72b7538e4b5e99687f21e817bb3c79ef964e7583fc.wav",
+        "entryId": "ja:sentence:gakkou-ni-iku",
+        "label": "学校に行く",
+        "parts": [
+            {
+                "path": "audio/6b6f32acd45589aeedd9e33f013184317303e23159028d7ad1bfbadfc0cb6dc9.wav",
+                "entryId": "ja:word:gakkou"
+            },
+            {
+                "path": "audio/1615cf278c2962c1657907b3686d653625229af2375f90dda5bfd5b178c7aedb.wav",
+                "entryId": "ja:particle:ni"
+            },
+            {
+                "path": "audio/843223b7290cf0fda523989799b96f85c224338146f5d022e92e6715234e2e39.wav",
+                "entryId": "ja:word:iku"
+            }
+        ],
+        "gapMs": 45,
+        "segments": [
+            {
+                "path": "audio/6b6f32acd45589aeedd9e33f013184317303e23159028d7ad1bfbadfc0cb6dc9.wav",
+                "entryId": "ja:word:gakkou",
+                "startFrame": 2400,
+                "frameCount": 14335
+            },
+            {
+                "path": "audio/1615cf278c2962c1657907b3686d653625229af2375f90dda5bfd5b178c7aedb.wav",
+                "entryId": "ja:particle:ni",
+                "startFrame": 17815,
+                "frameCount": 13220
+            },
+            {
+                "path": "audio/843223b7290cf0fda523989799b96f85c224338146f5d022e92e6715234e2e39.wav",
+                "entryId": "ja:word:iku",
+                "startFrame": 32115,
+                "frameCount": 12643
+            }
+        ],
+        "sha256": "ed03e12ca736cac76bea4b0bb733de88480a5e146b58802573548c207743d0c2",
+        "frames": 44758,
+        "input": {
+            "language": "ja",
+            "label": "学校に行く",
+            "semanticRole": "orderedLexicalSequence",
+            "readings": ["がっこうにいく"]
+        }
     }
 ]
