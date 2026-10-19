@@ -67,6 +67,29 @@
         "vocabularyAudit": "authoring/reviews/craft-vocabulary.json"
     },
     {
+        "theme": "delivery",
+        "newDistinctVocabularyCount": 2,
+        "vocabulary": [
+            {
+                "entryId": "ja:word:delivery-send",
+                "label": "おくる"
+            },
+            {
+                "entryId": "ja:word:delivery-carry",
+                "label": "はこぶ"
+            }
+        ],
+        "newExampleCount": 4,
+        "exampleIds": [
+            "ja:sentence:delivery-example-send-friend-letter",
+            "ja:sentence:delivery-example-send-postcard",
+            "ja:sentence:delivery-example-transport-box",
+            "ja:sentence:delivery-example-carry-slowly"
+        ],
+        "recordedGrammaticalFormCount": 16,
+        "vocabularyAudit": "authoring/reviews/delivery-vocabulary.json"
+    },
+    {
         "theme": "depth",
         "newDistinctVocabularyCount": 2,
         "vocabulary": [
@@ -227,36 +250,5 @@
         ],
         "recordedGrammaticalFormCount": 0,
         "vocabularyAudit": "authoring/reviews/frequency-vocabulary.json"
-    },
-    {
-        "theme": "fruit",
-        "newDistinctVocabularyCount": 4,
-        "vocabulary": [
-            {
-                "entryId": "ja:word:fruit-peach",
-                "label": "もも"
-            },
-            {
-                "entryId": "ja:word:fruit-pear",
-                "label": "なし"
-            },
-            {
-                "entryId": "ja:word:fruit-watermelon",
-                "label": "すいか"
-            },
-            {
-                "entryId": "ja:word:fruit-pineapple",
-                "label": "パイナップル"
-            }
-        ],
-        "newExampleCount": 4,
-        "exampleIds": [
-            "ja:sentence:fruit-example-peach",
-            "ja:sentence:fruit-example-pear",
-            "ja:sentence:fruit-example-watermelon",
-            "ja:sentence:fruit-example-pineapple"
-        ],
-        "recordedGrammaticalFormCount": 0,
-        "vocabularyAudit": "authoring/reviews/fruit-vocabulary.json"
     }
 ]

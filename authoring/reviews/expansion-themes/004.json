@@ -1,5 +1,28 @@
 [
     {
+        "theme": "outings",
+        "newDistinctVocabularyCount": 2,
+        "vocabulary": [
+            {
+                "entryId": "ja:word:outings-museum",
+                "label": "はくぶつかん"
+            },
+            {
+                "entryId": "ja:word:outings-zoo",
+                "label": "どうぶつえん"
+            }
+        ],
+        "newExampleCount": 4,
+        "exampleIds": [
+            "ja:sentence:outings-example-tomorrow-museum",
+            "ja:sentence:outings-example-see-elephant",
+            "ja:sentence:outings-example-wait-friend-museum",
+            "ja:sentence:outings-example-spacious-zoo"
+        ],
+        "recordedGrammaticalFormCount": 0,
+        "vocabularyAudit": "authoring/reviews/outings-vocabulary.json"
+    },
+    {
         "theme": "places",
         "newDistinctVocabularyCount": 4,
         "vocabulary": [
@@ -261,36 +284,5 @@
         ],
         "recordedGrammaticalFormCount": 0,
         "vocabularyAudit": "authoring/reviews/seasons-vocabulary.json"
-    },
-    {
-        "theme": "social",
-        "newDistinctVocabularyCount": 4,
-        "vocabulary": [
-            {
-                "entryId": "ja:word:social-greeting",
-                "label": "こんにちは"
-            },
-            {
-                "entryId": "ja:word:social-gratitude",
-                "label": "ありがとうございます"
-            },
-            {
-                "entryId": "ja:word:social-attention",
-                "label": "すみません"
-            },
-            {
-                "entryId": "ja:word:social-farewell",
-                "label": "さようなら"
-            }
-        ],
-        "newExampleCount": 4,
-        "exampleIds": [
-            "ja:sentence:social-example-greeting",
-            "ja:sentence:social-example-gratitude",
-            "ja:sentence:social-example-attention",
-            "ja:sentence:social-example-farewell"
-        ],
-        "recordedGrammaticalFormCount": 0,
-        "vocabularyAudit": "authoring/reviews/social-vocabulary.json"
     }
 ]

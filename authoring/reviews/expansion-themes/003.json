@@ -1,5 +1,36 @@
 [
     {
+        "theme": "fruit",
+        "newDistinctVocabularyCount": 4,
+        "vocabulary": [
+            {
+                "entryId": "ja:word:fruit-peach",
+                "label": "もも"
+            },
+            {
+                "entryId": "ja:word:fruit-pear",
+                "label": "なし"
+            },
+            {
+                "entryId": "ja:word:fruit-watermelon",
+                "label": "すいか"
+            },
+            {
+                "entryId": "ja:word:fruit-pineapple",
+                "label": "パイナップル"
+            }
+        ],
+        "newExampleCount": 4,
+        "exampleIds": [
+            "ja:sentence:fruit-example-peach",
+            "ja:sentence:fruit-example-pear",
+            "ja:sentence:fruit-example-watermelon",
+            "ja:sentence:fruit-example-pineapple"
+        ],
+        "recordedGrammaticalFormCount": 0,
+        "vocabularyAudit": "authoring/reviews/fruit-vocabulary.json"
+    },
+    {
         "theme": "furnishings",
         "newDistinctVocabularyCount": 4,
         "vocabulary": [
@@ -240,28 +271,5 @@
         ],
         "recordedGrammaticalFormCount": 0,
         "vocabularyAudit": "authoring/reviews/nature-vocabulary.json"
-    },
-    {
-        "theme": "outings",
-        "newDistinctVocabularyCount": 2,
-        "vocabulary": [
-            {
-                "entryId": "ja:word:outings-museum",
-                "label": "はくぶつかん"
-            },
-            {
-                "entryId": "ja:word:outings-zoo",
-                "label": "どうぶつえん"
-            }
-        ],
-        "newExampleCount": 4,
-        "exampleIds": [
-            "ja:sentence:outings-example-tomorrow-museum",
-            "ja:sentence:outings-example-see-elephant",
-            "ja:sentence:outings-example-wait-friend-museum",
-            "ja:sentence:outings-example-spacious-zoo"
-        ],
-        "recordedGrammaticalFormCount": 0,
-        "vocabularyAudit": "authoring/reviews/outings-vocabulary.json"
     }
 ]

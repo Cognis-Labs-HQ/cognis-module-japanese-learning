@@ -1,0 +1,238 @@
+[
+    {
+        "entryId": "ja:sentence:delivery-example-send-friend-letter",
+        "label": "友達にてがみをおくる",
+        "reading": "ともだちにてがみをおくる",
+        "meanings": {
+            "en": "I send a letter to a friend.",
+            "de": "Ich schicke einem Freund einen Brief.",
+            "id": "Saya mengirim surat kepada seorang teman.",
+            "ja": "友達に手紙を送る。"
+        },
+        "constituentIds": [
+            "ja:word:tomodachi",
+            "ja:particle:ni",
+            "ja:word:correspondence-letter",
+            "ja:particle:wo",
+            "ja:word:delivery-send"
+        ],
+        "selectedTransformations": [],
+        "audioPath": "audio/79073efd823941eb6b90daf353866ea5d9e1bc8cca907cc81164a692bd176d1a.wav",
+        "sha256": "79073efd823941eb6b90daf353866ea5d9e1bc8cca907cc81164a692bd176d1a",
+        "audioAvailability": "bundled-composition",
+        "listening": "unverified-not-performed",
+        "textReview": "に marks the recipient friend and を the letter being sent. The base predicate is supported by the host.",
+        "sourceAudioEvidence": [
+            {
+                "entryId": "ja:word:tomodachi",
+                "path": "audio/b735f033be7289c86f7f84621476005af35c3fdec9b7e43f2b7531609f5d70b1.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "ともだち",
+                "sha256": "512505b952c57e2b9f49207b21dc82e5834d2a5cbbc1bd0554ff2de65effa87a"
+            },
+            {
+                "entryId": "ja:particle:ni",
+                "path": "audio/1615cf278c2962c1657907b3686d653625229af2375f90dda5bfd5b178c7aedb.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "に",
+                "sha256": "7a58a00f29a345a3874cb0dd21af4ce6785672fa36ea70498c06e6e755fabd77"
+            },
+            {
+                "entryId": "ja:word:correspondence-letter",
+                "path": "audio/f30c49090c44dd8410e84790446f1fe304a31dc64b3076f54d2d5eb35a25267f.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "手紙",
+                "sha256": "dfbce2608c8b30d61ae3221c82012d9e7019b6b4ac0ca9d26e2b86f24b3b3205"
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "お",
+                "sha256": "5a89703412d90e8bc518242ca91fa93b5ea164aa2d3ff9b6e0b5996b7695f8e8"
+            },
+            {
+                "entryId": "ja:word:delivery-send",
+                "path": "audio/de0ed37c063bd7e4a4ce635367bb95326664f6274324bb38ce23157c1180330d.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "送る",
+                "sha256": "d4958f530351bde6461cd44f8f3c7f1a478d413f605a124edc6b30083f3fa015"
+            }
+        ],
+        "peak": 26869,
+        "fullScaleSamples": 0,
+        "sourceAudit": "authoring/reviews/delivery-vocabulary.json",
+        "reviewedDate": "2026-10-19"
+    },
+    {
+        "entryId": "ja:sentence:delivery-example-send-postcard",
+        "label": "はがきをおくる",
+        "reading": "はがきをおくる",
+        "meanings": {
+            "en": "I send a postcard.",
+            "de": "Ich schicke eine Postkarte.",
+            "id": "Saya mengirim kartu pos.",
+            "ja": "葉書を送る。"
+        },
+        "constituentIds": [
+            "ja:word:correspondence-postcard",
+            "ja:particle:wo",
+            "ja:word:delivery-send"
+        ],
+        "selectedTransformations": [],
+        "audioPath": "audio/e8dd66a4cc3d388a2ca3e03e46017cabc4b172aed40a17165cdc853fccc18bc2.wav",
+        "sha256": "e8dd66a4cc3d388a2ca3e03e46017cabc4b172aed40a17165cdc853fccc18bc2",
+        "audioAvailability": "bundled-composition",
+        "listening": "unverified-not-performed",
+        "textReview": "を marks the postcard as the object sent. The native base reading おくる is complete.",
+        "sourceAudioEvidence": [
+            {
+                "entryId": "ja:word:correspondence-postcard",
+                "path": "audio/022606cbcd078de245f349b855e9d0ae52ee9905800fc23c58b3647c798bff61.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "葉書",
+                "sha256": "4d2383bf7426f54f10073035b274f0d29e294297aa98808e727bd93ae20b4326"
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "お",
+                "sha256": "5a89703412d90e8bc518242ca91fa93b5ea164aa2d3ff9b6e0b5996b7695f8e8"
+            },
+            {
+                "entryId": "ja:word:delivery-send",
+                "path": "audio/de0ed37c063bd7e4a4ce635367bb95326664f6274324bb38ce23157c1180330d.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "送る",
+                "sha256": "d4958f530351bde6461cd44f8f3c7f1a478d413f605a124edc6b30083f3fa015"
+            }
+        ],
+        "peak": 21108,
+        "fullScaleSamples": 0,
+        "sourceAudit": "authoring/reviews/delivery-vocabulary.json",
+        "reviewedDate": "2026-10-19"
+    },
+    {
+        "entryId": "ja:sentence:delivery-example-transport-box",
+        "label": "はこを車ではこぶ",
+        "reading": "はこをくるまではこぶ",
+        "meanings": {
+            "en": "I transport a box by car.",
+            "de": "Ich transportiere eine Schachtel mit dem Auto.",
+            "id": "Saya mengangkut kotak dengan mobil.",
+            "ja": "箱を車で運ぶ。"
+        },
+        "constituentIds": [
+            "ja:word:containers-box",
+            "ja:particle:wo",
+            "ja:word:kuruma",
+            "ja:particle:de",
+            "ja:word:delivery-carry"
+        ],
+        "selectedTransformations": [],
+        "audioPath": "audio/6622c2fb853dc014846e6489b5635e3246306ae817dc40753ffba3daa229407d.wav",
+        "sha256": "6622c2fb853dc014846e6489b5635e3246306ae817dc40753ffba3daa229407d",
+        "audioAvailability": "bundled-composition",
+        "listening": "unverified-not-performed",
+        "textReview": "で marks transport means, by car. 運ぶ includes vehicle transport as well as carrying by hand.",
+        "sourceAudioEvidence": [
+            {
+                "entryId": "ja:word:containers-box",
+                "path": "audio/a015a15942185531748807169edc0f4698413e5468af7f662bbae5ba6946aa96.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "箱",
+                "sha256": "53f829a0d4bbcc455c552899bd2dc8450aee36cea3850bb2557108d7c5b797c0"
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "お",
+                "sha256": "5a89703412d90e8bc518242ca91fa93b5ea164aa2d3ff9b6e0b5996b7695f8e8"
+            },
+            {
+                "entryId": "ja:word:kuruma",
+                "path": "audio/2a40463469bd551859d6511f36057169c3dee27d696e1631909fe67818ca2c45.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "くるま",
+                "sha256": "1db782359d3ba1e8ddceff45ed46dcf6f6b4db6122bcbe208222ccb3d636194c"
+            },
+            {
+                "entryId": "ja:particle:de",
+                "path": "audio/df81472c8108ad9b47d8d90db017ff1c1b553d80263d6a2c59de1571671f3eee.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "で",
+                "sha256": "57b1611b914f170a0de5d42042b0a97c1dada8d50838ba27ed1c2677dcb232c3"
+            },
+            {
+                "entryId": "ja:word:delivery-carry",
+                "path": "audio/ba73042fbb842796b95a59c2d2da8f2799ddb486299105dc3289e3bc969a7214.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "運ぶ",
+                "sha256": "b924677d82947a95432dfce13bf1890c01bba96c43174b4472a9384fbba14b94"
+            }
+        ],
+        "peak": 26869,
+        "fullScaleSamples": 0,
+        "sourceAudit": "authoring/reviews/delivery-vocabulary.json",
+        "reviewedDate": "2026-10-19"
+    },
+    {
+        "entryId": "ja:sentence:delivery-example-carry-slowly",
+        "label": "かばんをゆっくりはこぶ",
+        "reading": "かばんをゆっくりはこぶ",
+        "meanings": {
+            "en": "I carry a bag slowly.",
+            "de": "Ich trage eine Tasche langsam.",
+            "id": "Saya membawa tas perlahan-lahan.",
+            "ja": "かばんをゆっくり運ぶ。"
+        },
+        "constituentIds": [
+            "ja:word:bag",
+            "ja:particle:wo",
+            "ja:word:yukkuri",
+            "ja:word:delivery-carry"
+        ],
+        "selectedTransformations": [],
+        "audioPath": "audio/b1de6cb626ba688abfb8c433b2df1f4927f8cdc412a35e44273f22c0e869ffb2.wav",
+        "sha256": "b1de6cb626ba688abfb8c433b2df1f4927f8cdc412a35e44273f22c0e869ffb2",
+        "audioAvailability": "bundled-composition",
+        "listening": "unverified-not-performed",
+        "textReview": "ゆっくり modifies the pace of carrying; を marks the bag as object. The base predicate avoids unsupported host sentence transformations.",
+        "sourceAudioEvidence": [
+            {
+                "entryId": "ja:word:bag",
+                "path": "audio/6c383b07d47bcbe9c9eadf6b97d7ce3ec03e4f31503d0bf1dec5a48b2829ff78.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "かばん",
+                "sha256": "50e3924ff8ad5428b9a544d6ef81bd2e47dd876377896d4dca0adf1e2ea7d47a"
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "お",
+                "sha256": "5a89703412d90e8bc518242ca91fa93b5ea164aa2d3ff9b6e0b5996b7695f8e8"
+            },
+            {
+                "entryId": "ja:word:yukkuri",
+                "path": "audio/1c2d1664ef0db6298e34d97fa47fd27aa3dfc34f44515e3e22ed6e07e2ca0011.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "ゆっくり。",
+                "sha256": "0ca5d50da42914d40c1c804f7a133c2acec429eb98622a30526d4ce792ff368c"
+            },
+            {
+                "entryId": "ja:word:delivery-carry",
+                "path": "audio/ba73042fbb842796b95a59c2d2da8f2799ddb486299105dc3289e3bc969a7214.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "運ぶ",
+                "sha256": "b924677d82947a95432dfce13bf1890c01bba96c43174b4472a9384fbba14b94"
+            }
+        ],
+        "peak": 21545,
+        "fullScaleSamples": 0,
+        "sourceAudit": "authoring/reviews/delivery-vocabulary.json",
+        "reviewedDate": "2026-10-19"
+    }
+]

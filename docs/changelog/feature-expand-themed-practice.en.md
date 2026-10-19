@@ -270,6 +270,10 @@ Add museum/zoo and はくぶつかん/どうぶつえん with four inspected ven
 
 Add letter/postcard and てがみ/はがき with four inspected illustrations, eight contextual examples and two exact English plural bindings. Notes distinguish correspondence from alphabet letters and preserve voiced が. Sources, original pictures and exact constituent PCM are retained. Listening remains unverified.
 
+## Sending and carrying
+
+Add send/carry and おくる/はこぶ with four inspected illustrations, eight examples and 24 exact grammatical form bindings. English past/participle recordings are shared for sent and carried; Japanese past/te forms preserve small っ versus んだ/んで. Two inaccurate envelope originals were rejected and corrected, with evidence retained. Sentence PCM matches constituents exactly. Listening remains unverified.
+
 ## Commits
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)
