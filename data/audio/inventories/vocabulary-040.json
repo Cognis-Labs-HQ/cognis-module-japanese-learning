@@ -1,0 +1,78 @@
+[
+    {
+        "path": "audio/ff183b311de2f276c8afb68d751ffe8064c382f987739fea3cb88e680ebe328c.wav",
+        "text": "マフラー",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "マフラー",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "マフラー",
+                "semanticRole": "lexicalUnit",
+                "readings": ["マフラー"]
+            }
+        ],
+        "entries": [
+            "ja:word:warm-accessories-scarf",
+            "ja:word:complete-pronunciation-warm-accessories-scarf"
+        ],
+        "variants": [],
+        "sha256": "ff183b311de2f276c8afb68d751ffe8064c382f987739fea3cb88e680ebe328c",
+        "frames": 22137,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "9171cf395e222ea39eeb900e63e8f475ca6bb2714c3c64226245fad026dbbc53"
+        }
+    },
+    {
+        "path": "audio/e3ef3045111805bc07b962b09df098a18d767ffe85a976599ca8c97d4469dfce.wav",
+        "text": "てぶくろ",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "手袋",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "てぶくろ",
+                "semanticRole": "lexicalUnit",
+                "readings": ["てぶくろ"]
+            }
+        ],
+        "entries": [
+            "ja:word:warm-accessories-glove",
+            "ja:word:complete-pronunciation-warm-accessories-glove"
+        ],
+        "variants": [],
+        "sha256": "e3ef3045111805bc07b962b09df098a18d767ffe85a976599ca8c97d4469dfce",
+        "frames": 16564,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "98ef2ee3ba4cdd251b3643aced6b7aae092fe84fcd52e8d3fe88aade3084ffa0"
+        }
+    }
+]

@@ -250,6 +250,10 @@ Add deep and shallow with ふかい and あさい, four inspected basin illustra
 
 Add bright and dark with あかるい and くらい, four inspected room illustrations and four contextual examples per language. Notes distinguish illumination from color, intelligence and personality. English comparison forms and Japanese adverbial, negative and past forms retain exact selected audio. Sources, original images and PCM are retained; listening remains unverified.
 
+## Scarves and gloves
+
+Add scarf/glove and マフラー/てぶくろ with four inspected illustrations and four contextual examples per language. English scarves/gloves retain exact plural recordings. Notes distinguish warm neckwear from an exhaust muffler and explain Japanese number and mitten coverage. Sources, original images and PCM are retained; listening remains unverified.
+
 ## Commits
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)

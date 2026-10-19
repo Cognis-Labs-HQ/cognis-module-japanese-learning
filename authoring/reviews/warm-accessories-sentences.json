@@ -1,0 +1,246 @@
+[
+    {
+        "entryId": "ja:sentence:warm-accessories-example-buy-scarf",
+        "label": "マフラーをかう",
+        "reading": "マフラーをかう",
+        "meanings": {
+            "en": "I buy a scarf.",
+            "de": "Ich kaufe einen Schal.",
+            "id": "Saya membeli syal.",
+            "ja": "マフラーを買う。"
+        },
+        "constituentIds": [
+            "ja:word:warm-accessories-scarf",
+            "ja:particle:wo",
+            "ja:word:travel-buy"
+        ],
+        "selectedTransformations": [],
+        "audioPath": "audio/e6b36441b3c4600bb3fd25dc56c5ea9fbcb5ad177f038c0b0de6b0125973c45a.wav",
+        "sha256": "e6b36441b3c4600bb3fd25dc56c5ea9fbcb5ad177f038c0b0de6b0125973c45a",
+        "audioAvailability": "bundled-composition",
+        "listening": "unverified-not-performed",
+        "textReview": "を marks the object of かう. マフラー refers to warm neckwear and retains its long final vowel. Omitted subject is interpreted as I.",
+        "sourceAudioEvidence": [
+            {
+                "entryId": "ja:word:warm-accessories-scarf",
+                "path": "audio/ff183b311de2f276c8afb68d751ffe8064c382f987739fea3cb88e680ebe328c.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "マフラー",
+                "sha256": "cefe574cab1f6737ff71728541110e4e7ae50192f860c15e9149572960d50191"
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "お",
+                "sha256": "5a89703412d90e8bc518242ca91fa93b5ea164aa2d3ff9b6e0b5996b7695f8e8"
+            },
+            {
+                "entryId": "ja:word:travel-buy",
+                "path": "audio/1a880a2cfc93aedb14ed94ad5cbd8ba5a803aa377bb98f0bf534e0ce8905bfd4.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "かう",
+                "sha256": "7848f7569457e2ffd16aa97a64a5439028354e176df4de3def2f555a4e45cc87"
+            }
+        ],
+        "peak": 25416,
+        "fullScaleSamples": 0,
+        "sourceAudit": "authoring/reviews/warm-accessories-vocabulary.json",
+        "reviewedDate": "2026-10-19"
+    },
+    {
+        "entryId": "ja:sentence:warm-accessories-example-gloves-inside",
+        "label": "てぶくろはかばんのなかにある",
+        "reading": "てぶくろはかばんのなかにある",
+        "meanings": {
+            "en": "The gloves are inside the bag.",
+            "de": "Die Handschuhe sind in der Tasche.",
+            "id": "Sarung tangannya ada di dalam tas.",
+            "ja": "手袋はかばんの中にある。"
+        },
+        "constituentIds": [
+            "ja:word:warm-accessories-glove",
+            "ja:particle:wa",
+            "ja:word:bag",
+            "ja:particle:no",
+            "ja:word:location-inside",
+            "ja:particle:ni",
+            "ja:word:aru-exist"
+        ],
+        "selectedTransformations": [],
+        "audioPath": "audio/0d72410fc86dd219f815d5b4ef1a4066f40a3b4599744230ab2a752f5366916b.wav",
+        "sha256": "0d72410fc86dd219f815d5b4ef1a4066f40a3b4599744230ab2a752f5366916b",
+        "audioAvailability": "bundled-composition",
+        "listening": "unverified-not-performed",
+        "textReview": "の links the reference place かばん to なか. に marks the location of inanimate existence with ある. 手袋 does not grammatically mark number; translations use a contextual pair.",
+        "sourceAudioEvidence": [
+            {
+                "entryId": "ja:word:warm-accessories-glove",
+                "path": "audio/e3ef3045111805bc07b962b09df098a18d767ffe85a976599ca8c97d4469dfce.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "手袋",
+                "sha256": "459c6cceb422965788dc08b7e3fa1447cfc11197220c31e3c174eb099af857ed"
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "path": "audio/d7c9e57654e559dfba3bd6f78c2f27416a61f8b28d56145d84a62fe25b70c94d.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "わ",
+                "sha256": "03b8d36aab677f09d2ecaad611a22b15785f0c717e6d6983dc5ef47296670c54"
+            },
+            {
+                "entryId": "ja:word:bag",
+                "path": "audio/6c383b07d47bcbe9c9eadf6b97d7ce3ec03e4f31503d0bf1dec5a48b2829ff78.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "かばん",
+                "sha256": "50e3924ff8ad5428b9a544d6ef81bd2e47dd876377896d4dca0adf1e2ea7d47a"
+            },
+            {
+                "entryId": "ja:particle:no",
+                "path": "audio/7affb235bc8e5708ae7339c44bf227d0fb4c5e2868e740a6bb8e51168bcf8968.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "の",
+                "sha256": "1e3fd28b9131036b301260d7324c68262fffee8368998baf90a27a0a4a7deab5"
+            },
+            {
+                "entryId": "ja:word:location-inside",
+                "path": "audio/8c0c8bbdc96867b42a1f1d5ddf7468d1946a382771de9f118093708fd335959a.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "なか",
+                "sha256": "53a7c8e4429e1e579f0694b37f33d2f11a39f36d5ead9f301c1d0e93e94226e7"
+            },
+            {
+                "entryId": "ja:particle:ni",
+                "path": "audio/1615cf278c2962c1657907b3686d653625229af2375f90dda5bfd5b178c7aedb.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "に",
+                "sha256": "7a58a00f29a345a3874cb0dd21af4ce6785672fa36ea70498c06e6e755fabd77"
+            },
+            {
+                "entryId": "ja:word:aru-exist",
+                "path": "audio/0e997231f55465948ee67d44898dfd72abf6e48f95f8839fe116ca8978d53535.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "ある",
+                "sha256": "e8ba4639eb28dcce35ca4e779b236a92baca6f36648e3897500d5c6f1961b4d4"
+            }
+        ],
+        "peak": 26869,
+        "fullScaleSamples": 0,
+        "sourceAudit": "authoring/reviews/warm-accessories-vocabulary.json",
+        "reviewedDate": "2026-10-19"
+    },
+    {
+        "entryId": "ja:sentence:warm-accessories-example-wash-scarf",
+        "label": "マフラーをあらう",
+        "reading": "マフラーをあらう",
+        "meanings": {
+            "en": "I wash a scarf.",
+            "de": "Ich wasche einen Schal.",
+            "id": "Saya mencuci syal.",
+            "ja": "マフラーを洗う。"
+        },
+        "constituentIds": [
+            "ja:word:warm-accessories-scarf",
+            "ja:particle:wo",
+            "ja:word:household-wash"
+        ],
+        "selectedTransformations": [],
+        "audioPath": "audio/4611c51417db5cd6a5d900fe08349a4a14e66ae579e20014b2e19dd5b905c913.wav",
+        "sha256": "4611c51417db5cd6a5d900fe08349a4a14e66ae579e20014b2e19dd5b905c913",
+        "audioAvailability": "bundled-composition",
+        "listening": "unverified-not-performed",
+        "textReview": "を marks the washable clothing object. あらう is the ordinary dictionary-form predicate; omitted subject is interpreted as I.",
+        "sourceAudioEvidence": [
+            {
+                "entryId": "ja:word:warm-accessories-scarf",
+                "path": "audio/ff183b311de2f276c8afb68d751ffe8064c382f987739fea3cb88e680ebe328c.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "マフラー",
+                "sha256": "cefe574cab1f6737ff71728541110e4e7ae50192f860c15e9149572960d50191"
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "お",
+                "sha256": "5a89703412d90e8bc518242ca91fa93b5ea164aa2d3ff9b6e0b5996b7695f8e8"
+            },
+            {
+                "entryId": "ja:word:household-wash",
+                "path": "audio/55900a3049492f3fd4edd4b8fb6ba3ff1650cde9ed4b3024f002f08659bf5c2a.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "洗う",
+                "sha256": "65b9ebca56c335507ddd77507006428b689967d993a51e5f7c742abee2f8bc8a"
+            }
+        ],
+        "peak": 12200,
+        "fullScaleSamples": 0,
+        "sourceAudit": "authoring/reviews/warm-accessories-vocabulary.json",
+        "reviewedDate": "2026-10-19"
+    },
+    {
+        "entryId": "ja:sentence:warm-accessories-example-find-gloves",
+        "label": "てぶくろはどこですか",
+        "reading": "てぶくろはどこですか",
+        "meanings": {
+            "en": "Where are the gloves?",
+            "de": "Wo sind die Handschuhe?",
+            "id": "Di mana sarung tangannya?",
+            "ja": "手袋はどこですか。"
+        },
+        "constituentIds": [
+            "ja:word:warm-accessories-glove",
+            "ja:particle:wa",
+            "ja:word:doko",
+            "ja:word:desu",
+            "ja:particle:ka"
+        ],
+        "selectedTransformations": [],
+        "audioPath": "audio/10441ea43926bb1da0e772b7c3595da1a16e9c5f53b82f6d4b69f344a987e007.wav",
+        "sha256": "10441ea43926bb1da0e772b7c3595da1a16e9c5f53b82f6d4b69f344a987e007",
+        "audioAvailability": "bundled-composition",
+        "listening": "unverified-not-performed",
+        "textReview": "は marks the topic; どこですか asks location. てぶくろ has voiced ぶ and translations use a contextual plural.",
+        "sourceAudioEvidence": [
+            {
+                "entryId": "ja:word:warm-accessories-glove",
+                "path": "audio/e3ef3045111805bc07b962b09df098a18d767ffe85a976599ca8c97d4469dfce.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "手袋",
+                "sha256": "459c6cceb422965788dc08b7e3fa1447cfc11197220c31e3c174eb099af857ed"
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "path": "audio/d7c9e57654e559dfba3bd6f78c2f27416a61f8b28d56145d84a62fe25b70c94d.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "わ",
+                "sha256": "03b8d36aab677f09d2ecaad611a22b15785f0c717e6d6983dc5ef47296670c54"
+            },
+            {
+                "entryId": "ja:word:doko",
+                "path": "audio/d8e8d38bb87e5846270a85a0031c99310edbc497f365f2a8fbb4ac49a10ddba3.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "どこ",
+                "sha256": "e7b6f83c09eb78672e721a848657edbb8e685f0b894c90928134c3f0d654df66"
+            },
+            {
+                "entryId": "ja:word:desu",
+                "path": "audio/2959a5dcab722b7d5c39f67845f1d6a3d6ede5f23e554e9547bca0e6cb62c56b.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "です",
+                "sha256": "d0234f8c988b83fef6bd73c37296bf1a45c0e71f6afc96ac32aa4213e3deb89e"
+            },
+            {
+                "entryId": "ja:particle:ka",
+                "path": "audio/43ee7a601b45742716f8c1c424c576992297faf0a3ec140047ad194b682f7edf.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "か",
+                "sha256": "da467a24b8035b0b6dc37491478a905c5c082db3d216ea1fc1553e02cd841f39"
+            }
+        ],
+        "peak": 26869,
+        "fullScaleSamples": 0,
+        "sourceAudit": "authoring/reviews/warm-accessories-vocabulary.json",
+        "reviewedDate": "2026-10-19"
+    }
+]

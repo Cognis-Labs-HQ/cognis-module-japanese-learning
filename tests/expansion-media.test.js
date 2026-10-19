@@ -31,6 +31,7 @@ for (const theme of [
     "courtesy",
     "length",
     "width",
+    "warm-accessories",
     "light-level",
     "depth",
     "location",
