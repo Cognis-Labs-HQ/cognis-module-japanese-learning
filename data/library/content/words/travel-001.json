@@ -1,0 +1,115 @@
+[
+    {
+        "id": "ja:word:complete-pronunciation-travel-ticket",
+        "label": "きっぷ",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["きっぷ"]
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:ki",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:small-tsu",
+                        "relation": "reading-kana",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:pu",
+                        "relation": "reading-kana",
+                        "position": 2
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:travel-ticket",
+        "label": "きっぷ",
+        "class": "lexical:noun",
+        "fields": {
+            "pronunciation": ["きっぷ"],
+            "reference_images": [
+                "images/016006ff7815ab466758f6871240324e40402bf11e56b7bba30923bdc606763c.jpg"
+            ]
+        },
+        "tags": ["noun", "travel"],
+        "references": [
+            {
+                "entryId": "ja:definition:word:travel-ticket",
+                "relation": "definitions"
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-travel-ticket",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:complete-pronunciation-travel-station",
+        "label": "えき",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["えき"]
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:e",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:ki",
+                        "relation": "reading-kana",
+                        "position": 1
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:travel-station",
+        "label": "えき",
+        "class": "lexical:noun",
+        "fields": {
+            "pronunciation": ["えき"],
+            "reference_images": [
+                "images/047183312df806ecd1918b0bd6ff2ef0a7b409400f0b8f66aa503abf263e484f.jpg"
+            ]
+        },
+        "tags": ["noun", "travel"],
+        "references": [
+            {
+                "entryId": "ja:definition:word:travel-station",
+                "relation": "definitions"
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-travel-station",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    }
+]

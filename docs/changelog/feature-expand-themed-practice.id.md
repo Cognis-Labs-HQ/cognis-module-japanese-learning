@@ -14,6 +14,10 @@ Ganti ilustrasi untuk とても dan しかし. Adegan panas yang kuat menunjukka
 
 Catatan dan contoh terlokalisasi memperjelas makna yang digambarkan untuk きれい, ゆっくり, dan あし. Pernyataan sebelum だけど membuat pertentangannya jelas.
 
+## Kosakata Perjalanan
+
+Tambahkan dua belas kata perjalanan bergambar, bentuk tata bahasa yang ditinjau, delapan contoh dengan unsur kata terhubung, dan dua dek latihan terlokalisasi. Rekaman baru untuk materi perjalanan belum disertakan.
+
 ## Komit
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)

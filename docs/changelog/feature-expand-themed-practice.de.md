@@ -14,6 +14,10 @@ Die Illustrationen für とても und しかし werden ersetzt. Eine Szene mit s
 
 Lokalisierte Hinweise und Beispiele verdeutlichen die abgebildeten Bedeutungen von きれい, ゆっくり und あし. Ein vorausgehender Satz macht den Gegensatz bei だけど deutlich.
 
+## Reisewortschatz
+
+Zwölf bebilderte Reisewörter mit geprüften grammatischen Formen, acht aus verknüpften Wörtern aufgebaute Beispielsätze und zwei lokalisierte Übungsdecks ergänzen den Inhalt. Neue Reiseaufnahmen sind nicht enthalten.
+
 ## Commits
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)

@@ -1,0 +1,148 @@
+[
+    {
+        "id": "ja:sentence:travel-passport-here",
+        "label": "パスポートはここにある",
+        "class": "composite",
+        "fields": {
+            "pronunciation": ["ぱすぽーとはここにある"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:travel-passport",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:koko",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:ni",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:aru-exist",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:sentence:travel-passport-here",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:travel-suitcase-there",
+        "label": "スーツケースはそこにある",
+        "class": "composite",
+        "fields": {
+            "pronunciation": ["すーつけーすはそこにある"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:travel-suitcase",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:soko",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:ni",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:aru-exist",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:sentence:travel-suitcase-there",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:travel-bicycle-school",
+        "label": "じてんしゃで学校に行く",
+        "class": "composite",
+        "fields": {
+            "pronunciation": ["じてんしゃでがっこうにいく"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:travel-bicycle",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:de",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:gakkou",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:ni",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:iku",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:sentence:travel-bicycle-school",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:travel-see-map",
+        "label": "ちずを見る",
+        "class": "composite",
+        "fields": {
+            "pronunciation": ["ちずをみる"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:travel-map",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:miru",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:definition:sentence:travel-see-map",
+                "relation": "definitions"
+            }
+        ]
+    }
+]

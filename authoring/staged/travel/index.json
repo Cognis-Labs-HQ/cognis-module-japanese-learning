@@ -1,6 +1,6 @@
 {
     "schemaVersion": 1,
-    "status": "staged-not-importable",
+    "status": "source-specification-promoted",
     "publishable": false,
     "theme": {
         "en": "Travel Essentials",
@@ -66,8 +66,8 @@
                 "ja": "旅行の表現"
             },
             "sourceRecordIds": [
-                "ja:sentence:travel-bought-ticket",
-                "ja:sentence:travel-arrived-station",
+                "ja:sentence:travel-buy-ticket",
+                "ja:sentence:travel-arrive-station",
                 "ja:sentence:travel-wait-platform",
                 "ja:sentence:travel-depart-airport",
                 "ja:sentence:travel-passport-here",
@@ -120,5 +120,6 @@
         "authoring/staged/travel/examples/travel-suitcase-there.json",
         "authoring/staged/travel/examples/travel-bicycle-school.json",
         "authoring/staged/travel/examples/travel-see-map.json"
-    ]
+    ],
+    "runtimePublication": "authoring/reviews/travel/index.json"
 }

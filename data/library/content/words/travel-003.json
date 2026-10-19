@@ -1,0 +1,145 @@
+[
+    {
+        "id": "ja:word:complete-pronunciation-travel-passport",
+        "label": "ぱすぽーと",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["ぱすぽーと"]
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:pa",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:su",
+                        "relation": "reading-kana",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:po",
+                        "relation": "reading-kana",
+                        "position": 2
+                    },
+                    {
+                        "entryId": "ja:char:long-vowel-mark",
+                        "relation": "reading-kana",
+                        "position": 3
+                    },
+                    {
+                        "entryId": "ja:char:to",
+                        "relation": "reading-kana",
+                        "position": 4
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:travel-passport",
+        "label": "パスポート",
+        "class": "lexical:noun",
+        "fields": {
+            "pronunciation": ["ぱすぽーと"],
+            "reference_images": [
+                "images/a256c847a5f242cc96b3e6d0ed21b9a8870e534ae19c33c5670f13ff3f81a207.jpg"
+            ]
+        },
+        "tags": ["noun", "travel"],
+        "references": [
+            {
+                "entryId": "ja:definition:word:travel-passport",
+                "relation": "definitions"
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-travel-passport",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:complete-pronunciation-travel-suitcase",
+        "label": "すーつけーす",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["すーつけーす"]
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:su",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:long-vowel-mark",
+                        "relation": "reading-kana",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:tsu",
+                        "relation": "reading-kana",
+                        "position": 2
+                    },
+                    {
+                        "entryId": "ja:char:ke",
+                        "relation": "reading-kana",
+                        "position": 3
+                    },
+                    {
+                        "entryId": "ja:char:long-vowel-mark",
+                        "relation": "reading-kana",
+                        "position": 4
+                    },
+                    {
+                        "entryId": "ja:char:su",
+                        "relation": "reading-kana",
+                        "position": 5
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:travel-suitcase",
+        "label": "スーツケース",
+        "class": "lexical:noun",
+        "fields": {
+            "pronunciation": ["すーつけーす"],
+            "reference_images": [
+                "images/f2a41ac42811fb5254d754285b53e6aa60e8d22184500d0478bf45782670c740.jpg"
+            ]
+        },
+        "tags": ["noun", "travel"],
+        "references": [
+            {
+                "entryId": "ja:definition:word:travel-suitcase",
+                "relation": "definitions"
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-travel-suitcase",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    }
+]

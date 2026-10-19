@@ -14,6 +14,10 @@ Replace the illustrations for とても and しかし. A high-temperature scene 
 
 Clarify the illustrated senses of きれい, ゆっくり and あし with localized usage notes and examples. Give だけど a preceding statement that makes the contrast explicit.
 
+## Travel Vocabulary
+
+Add twelve illustrated travel words, their reviewed grammatical forms, eight composed-text examples and two localized practice decks. New travel recordings are not bundled.
+
 ## Commits
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)

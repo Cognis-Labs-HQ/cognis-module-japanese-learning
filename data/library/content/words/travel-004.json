@@ -1,0 +1,125 @@
+[
+    {
+        "id": "ja:word:complete-pronunciation-travel-bicycle",
+        "label": "じてんしゃ",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["じてんしゃ"]
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:ji",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:te",
+                        "relation": "reading-kana",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:n",
+                        "relation": "reading-kana",
+                        "position": 2
+                    },
+                    {
+                        "entryId": "ja:char:shi",
+                        "relation": "reading-kana",
+                        "position": 3
+                    },
+                    {
+                        "entryId": "ja:char:small-ya",
+                        "relation": "reading-kana",
+                        "position": 4
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:travel-bicycle",
+        "label": "じてんしゃ",
+        "class": "lexical:noun",
+        "fields": {
+            "pronunciation": ["じてんしゃ"],
+            "reference_images": [
+                "images/c288c6572b54be189e2938c6e8311e6253cc88bb53a964e47dd78aaff468bee4.jpg"
+            ]
+        },
+        "tags": ["noun", "travel"],
+        "references": [
+            {
+                "entryId": "ja:definition:word:travel-bicycle",
+                "relation": "definitions"
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-travel-bicycle",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:complete-pronunciation-travel-map",
+        "label": "ちず",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["ちず"]
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:chi",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:zu",
+                        "relation": "reading-kana",
+                        "position": 1
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:travel-map",
+        "label": "ちず",
+        "class": "lexical:noun",
+        "fields": {
+            "pronunciation": ["ちず"],
+            "reference_images": [
+                "images/0d62f6c282c0395ae54463ee20068b8fb6692e6c567b8426a27430bf9e5d6b6e.jpg"
+            ]
+        },
+        "tags": ["noun", "travel"],
+        "references": [
+            {
+                "entryId": "ja:definition:word:travel-map",
+                "relation": "definitions"
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-travel-map",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    }
+]

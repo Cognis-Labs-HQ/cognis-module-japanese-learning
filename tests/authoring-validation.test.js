@@ -52,20 +52,20 @@ test("reviewed replacements bind final JPEGs and retained sources to exact hashe
     }
 });
 
-test("authoring specifications stay outside the runtime inventory and import graph", async () => {
+test("authoring source specifications stay outside runtime files while reviewed records are published", async () => {
     assert.ok(
         manifest.files.every(({ path }) => !path.startsWith("authoring/")),
     );
     const stage = await load(index.stagedTravel);
     assert.equal(stage.publishable, false);
-    assert.equal(stage.status, "staged-not-importable");
+    assert.equal(stage.status, "source-specification-promoted");
     assert.equal(stage.vocabularyFiles.length, 12);
     assert.equal(stage.examplesFiles.length, 8);
     const planned = new Map();
     for (const file of [...stage.vocabularyFiles, ...stage.examplesFiles]) {
         const record = await load(file);
         assert.ok(file.startsWith("authoring/staged/"));
-        assert.equal(records.has(record.id), false, record.id);
+        assert.equal(records.has(record.id), true, record.id);
         assert.equal(record.media, null);
         assert.equal(planned.has(record.id), false);
         planned.set(record.id, record);
@@ -119,7 +119,10 @@ test("initial visual review and contextual disposition cover every inventoried t
     const initialRecords = (
         await Promise.all(initial.assetFiles.map(load))
     ).flat();
-    assert.equal(initialRecords.length, catalog.images.length);
+    assert.equal(
+        initialRecords.length,
+        Object.values(initial.counts).reduce((sum, count) => sum + count, 0),
+    );
     assert.equal(
         new Set(initialRecords.map(({ assetId }) => assetId)).size,
         initialRecords.length,

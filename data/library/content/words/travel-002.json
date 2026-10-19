@@ -1,0 +1,125 @@
+[
+    {
+        "id": "ja:word:complete-pronunciation-travel-platform",
+        "label": "ほーむ",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["ほーむ"]
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:ho",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:long-vowel-mark",
+                        "relation": "reading-kana",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:mu",
+                        "relation": "reading-kana",
+                        "position": 2
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:travel-platform",
+        "label": "ホーム",
+        "class": "lexical:noun",
+        "fields": {
+            "pronunciation": ["ほーむ"],
+            "reference_images": [
+                "images/946f75afab1d42df6bfad06e8d789e4532c6774c9ac17bf07004ef2e6750ee57.jpg"
+            ]
+        },
+        "tags": ["noun", "travel"],
+        "references": [
+            {
+                "entryId": "ja:definition:word:travel-platform",
+                "relation": "definitions"
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-travel-platform",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:complete-pronunciation-travel-airport",
+        "label": "くうこう",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["くうこう"]
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:ku",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:u",
+                        "relation": "reading-kana",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:ko",
+                        "relation": "reading-kana",
+                        "position": 2
+                    },
+                    {
+                        "entryId": "ja:char:u",
+                        "relation": "reading-kana",
+                        "position": 3
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:travel-airport",
+        "label": "くうこう",
+        "class": "lexical:noun",
+        "fields": {
+            "pronunciation": ["くうこう"],
+            "reference_images": [
+                "images/b436e5d445206470dff48801aa17f0bab74fb1b630c076dbd684c92d5f772647.jpg"
+            ]
+        },
+        "tags": ["noun", "travel"],
+        "references": [
+            {
+                "entryId": "ja:definition:word:travel-airport",
+                "relation": "definitions"
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-travel-airport",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    }
+]
