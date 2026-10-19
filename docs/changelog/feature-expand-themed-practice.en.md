@@ -239,3 +239,4 @@ Added bottle, box, basket and envelope with localized meanings and usage notes, 
 - [7fd3e92](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/7fd3e9244817a60470cec7f77c2090a13756d369)
 - [576e1cc](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/576e1ccdd289b498d4bf144c59f26fa3f98ee3d4)
 - [37937f2](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/37937f2735424478cb8d589fb5fb4851619ae070)
+- [fc64ba5](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/fc64ba5cd273e3387426313717fabe2670af2396)
