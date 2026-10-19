@@ -58,6 +58,10 @@
 
 左、右、北、南に四つの場所の例文と練習デッキを追加。各元画像と最終画像の視点、方位、表記を確認。構成語の音声をそのまま再利用し、提供元の使用記録を保存。聴取確認は未実施。
 
+## 天気の例文と名詞の数
+
+構成語のPCMをそのまま使う天気の例文を四つ追加。英語のcloudに複数形cloudsと確認済みの発音表記/klaʊdz/、専用録音を追加。日本語では自然な助詞と文脈による名詞の数を保持。聴取確認は未実施。
+
 ## コミット
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)

@@ -1,0 +1,242 @@
+[
+    {
+        "path": "audio/f620bbe7a62e587e72053e3e2e6ac747920980e1d34d11721fa092d38b3d2c96.wav",
+        "entryId": "ja:sentence:weather-example-sun",
+        "label": "たいようを見る",
+        "parts": [
+            {
+                "path": "audio/eee14699f4b93c444f03b867e79632ccdd5a4d77530c6ad0a280ee4953fc1395.wav",
+                "entryId": "ja:word:weather-sun"
+            },
+            {
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "entryId": "ja:particle:wo"
+            },
+            {
+                "path": "audio/38b1e4b1dda0e34a29c049bd035b5370b24069d70efbb5fef029fb0962f2c8fe.wav",
+                "entryId": "ja:word:miru"
+            },
+            {
+                "pauseMs": 400
+            }
+        ],
+        "gapMs": 90,
+        "segments": [
+            {
+                "path": "audio/eee14699f4b93c444f03b867e79632ccdd5a4d77530c6ad0a280ee4953fc1395.wav",
+                "entryId": "ja:word:weather-sun",
+                "startFrame": 2400,
+                "frameCount": 18793
+            },
+            {
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "entryId": "ja:particle:wo",
+                "startFrame": 23353,
+                "frameCount": 8762
+            },
+            {
+                "path": "audio/38b1e4b1dda0e34a29c049bd035b5370b24069d70efbb5fef029fb0962f2c8fe.wav",
+                "entryId": "ja:word:miru",
+                "startFrame": 34275,
+                "frameCount": 14884
+            }
+        ],
+        "sha256": "f620bbe7a62e587e72053e3e2e6ac747920980e1d34d11721fa092d38b3d2c96",
+        "frames": 60919,
+        "input": {
+            "language": "ja",
+            "label": "たいようを見る",
+            "semanticRole": "orderedLexicalSequence",
+            "readings": ["たいようをみる"]
+        },
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "construction": "Exact weather vocabulary and existing constituent PCM; English clouds uses the explicitly recorded plural /klaʊdz/."
+        }
+    },
+    {
+        "path": "audio/883be088bad529376aaeedc85d6fbd3454f77a69473f154d4cfe88d7aa8c79b9.wav",
+        "entryId": "ja:sentence:weather-example-snow",
+        "label": "ゆきが好きです",
+        "parts": [
+            {
+                "path": "audio/421f3a0a6b7e6e3c8ec0b9c498891ca2b2f480ad28d529374f8d64df5c22097c.wav",
+                "entryId": "ja:word:weather-snow"
+            },
+            {
+                "path": "audio/69d02d32db53e5eeb4bb6db01917e619478b734bd66988c4242ccc1a3e55655d.wav",
+                "entryId": "ja:particle:ga"
+            },
+            {
+                "path": "audio/fff2a2381ef1abd6f3b0e24b6390a1f76d9fda74ec68bdc300ac3ff137a00214.wav",
+                "entryId": "ja:word:suki"
+            },
+            {
+                "path": "audio/2959a5dcab722b7d5c39f67845f1d6a3d6ede5f23e554e9547bca0e6cb62c56b.wav",
+                "entryId": "ja:word:desu"
+            },
+            {
+                "pauseMs": 400
+            }
+        ],
+        "gapMs": 90,
+        "segments": [
+            {
+                "path": "audio/421f3a0a6b7e6e3c8ec0b9c498891ca2b2f480ad28d529374f8d64df5c22097c.wav",
+                "entryId": "ja:word:weather-snow",
+                "startFrame": 2400,
+                "frameCount": 13697
+            },
+            {
+                "path": "audio/69d02d32db53e5eeb4bb6db01917e619478b734bd66988c4242ccc1a3e55655d.wav",
+                "entryId": "ja:particle:ga",
+                "startFrame": 18257,
+                "frameCount": 14335
+            },
+            {
+                "path": "audio/fff2a2381ef1abd6f3b0e24b6390a1f76d9fda74ec68bdc300ac3ff137a00214.wav",
+                "entryId": "ja:word:suki",
+                "startFrame": 34752,
+                "frameCount": 13644
+            },
+            {
+                "path": "audio/2959a5dcab722b7d5c39f67845f1d6a3d6ede5f23e554e9547bca0e6cb62c56b.wav",
+                "entryId": "ja:word:desu",
+                "startFrame": 50556,
+                "frameCount": 11490
+            }
+        ],
+        "sha256": "883be088bad529376aaeedc85d6fbd3454f77a69473f154d4cfe88d7aa8c79b9",
+        "frames": 73806,
+        "input": {
+            "language": "ja",
+            "label": "ゆきが好きです",
+            "semanticRole": "orderedLexicalSequence",
+            "readings": ["ゆきがすきです"]
+        },
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "construction": "Exact weather vocabulary and existing constituent PCM; English clouds uses the explicitly recorded plural /klaʊdz/."
+        }
+    },
+    {
+        "path": "audio/cfcb36986396c3fd00c4f5ecc36fa2257914051da96eaadbba54ffe01bbabd05.wav",
+        "entryId": "ja:sentence:weather-example-wind",
+        "label": "かぜが好きです",
+        "parts": [
+            {
+                "path": "audio/dfa5155a60f29686d1b17d3683d241f36137dca878598d9294e1cfff5404b7e9.wav",
+                "entryId": "ja:word:weather-wind"
+            },
+            {
+                "path": "audio/69d02d32db53e5eeb4bb6db01917e619478b734bd66988c4242ccc1a3e55655d.wav",
+                "entryId": "ja:particle:ga"
+            },
+            {
+                "path": "audio/fff2a2381ef1abd6f3b0e24b6390a1f76d9fda74ec68bdc300ac3ff137a00214.wav",
+                "entryId": "ja:word:suki"
+            },
+            {
+                "path": "audio/2959a5dcab722b7d5c39f67845f1d6a3d6ede5f23e554e9547bca0e6cb62c56b.wav",
+                "entryId": "ja:word:desu"
+            },
+            {
+                "pauseMs": 400
+            }
+        ],
+        "gapMs": 90,
+        "segments": [
+            {
+                "path": "audio/dfa5155a60f29686d1b17d3683d241f36137dca878598d9294e1cfff5404b7e9.wav",
+                "entryId": "ja:word:weather-wind",
+                "startFrame": 2400,
+                "frameCount": 13220
+            },
+            {
+                "path": "audio/69d02d32db53e5eeb4bb6db01917e619478b734bd66988c4242ccc1a3e55655d.wav",
+                "entryId": "ja:particle:ga",
+                "startFrame": 17780,
+                "frameCount": 14335
+            },
+            {
+                "path": "audio/fff2a2381ef1abd6f3b0e24b6390a1f76d9fda74ec68bdc300ac3ff137a00214.wav",
+                "entryId": "ja:word:suki",
+                "startFrame": 34275,
+                "frameCount": 13644
+            },
+            {
+                "path": "audio/2959a5dcab722b7d5c39f67845f1d6a3d6ede5f23e554e9547bca0e6cb62c56b.wav",
+                "entryId": "ja:word:desu",
+                "startFrame": 50079,
+                "frameCount": 11490
+            }
+        ],
+        "sha256": "cfcb36986396c3fd00c4f5ecc36fa2257914051da96eaadbba54ffe01bbabd05",
+        "frames": 73329,
+        "input": {
+            "language": "ja",
+            "label": "かぜが好きです",
+            "semanticRole": "orderedLexicalSequence",
+            "readings": ["かぜがすきです"]
+        },
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "construction": "Exact weather vocabulary and existing constituent PCM; English clouds uses the explicitly recorded plural /klaʊdz/."
+        }
+    },
+    {
+        "path": "audio/b0760084f1a18934d5711e987a30c37ad73821634dfa8875543eacd74a10e837.wav",
+        "entryId": "ja:sentence:weather-example-cloud",
+        "label": "くもを見る",
+        "parts": [
+            {
+                "path": "audio/1122bcf0e6f6e6f651a38690cf9df6138e70da9afc2c521e4324d782835a2988.wav",
+                "entryId": "ja:word:weather-cloud"
+            },
+            {
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "entryId": "ja:particle:wo"
+            },
+            {
+                "path": "audio/38b1e4b1dda0e34a29c049bd035b5370b24069d70efbb5fef029fb0962f2c8fe.wav",
+                "entryId": "ja:word:miru"
+            },
+            {
+                "pauseMs": 400
+            }
+        ],
+        "gapMs": 90,
+        "segments": [
+            {
+                "path": "audio/1122bcf0e6f6e6f651a38690cf9df6138e70da9afc2c521e4324d782835a2988.wav",
+                "entryId": "ja:word:weather-cloud",
+                "startFrame": 2400,
+                "frameCount": 14335
+            },
+            {
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "entryId": "ja:particle:wo",
+                "startFrame": 18895,
+                "frameCount": 8762
+            },
+            {
+                "path": "audio/38b1e4b1dda0e34a29c049bd035b5370b24069d70efbb5fef029fb0962f2c8fe.wav",
+                "entryId": "ja:word:miru",
+                "startFrame": 29817,
+                "frameCount": 14884
+            }
+        ],
+        "sha256": "b0760084f1a18934d5711e987a30c37ad73821634dfa8875543eacd74a10e837",
+        "frames": 56461,
+        "input": {
+            "language": "ja",
+            "label": "くもを見る",
+            "semanticRole": "orderedLexicalSequence",
+            "readings": ["くもをみる"]
+        },
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "construction": "Exact weather vocabulary and existing constituent PCM; English clouds uses the explicitly recorded plural /klaʊdz/."
+        }
+    }
+]
