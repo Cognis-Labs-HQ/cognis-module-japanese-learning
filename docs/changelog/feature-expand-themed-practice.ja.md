@@ -62,6 +62,10 @@
 
 構成語のPCMをそのまま使う天気の例文を四つ追加。英語のcloudに複数形cloudsと確認済みの発音表記/klaʊdz/、専用録音を追加。日本語では自然な助詞と文脈による名詞の数を保持。聴取確認は未実施。
 
+## 季節と活動
+
+四つの季節の名詞に挿絵、四つの活動の例文、混合練習デッキを追加。季節としてのspringとautumn/fallの用法を説明し、温帯の季節の絵を世界共通の気候規則と区別。確認済みのかなの読みと構成語の音声を保持。聴取確認は未実施。
+
 ## コミット
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)

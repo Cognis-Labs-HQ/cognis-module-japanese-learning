@@ -62,6 +62,10 @@ Tambahkan kiri, kanan, utara, dan selatan dengan empat contoh lokasi dan dek lat
 
 Tambahkan empat contoh cuaca dengan segmen PCM persis. Cloud kini menyediakan clouds dengan transkripsi /klaʊdz/ yang ditinjau dan rekaman jamak tersendiri. Contoh Jepang mempertahankan partikel alami dan jumlah nomina yang bergantung konteks. Pemeriksaan pendengaran belum dilakukan.
 
+## Musim dan Kegiatan
+
+Tambahkan empat nama musim bergambar, empat contoh kegiatan, dan dek latihan gabungan. Jelaskan spring sebagai musim serta penggunaan autumn/fall; gambar iklim sedang bukan aturan iklim seluruh dunia. Pertahankan bacaan kana yang ditinjau dan segmen audio persis; pemeriksaan pendengaran belum dilakukan.
+
 ## Komit
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)

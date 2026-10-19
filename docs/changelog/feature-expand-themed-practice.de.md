@@ -62,6 +62,10 @@ Links, rechts, Norden und Süden mit vier Ortsbeispielen und einem Übungsstapel
 
 Vier Wetterbeispiele mit exakten PCM-Segmenten ergänzen. Das englische cloud bietet nun clouds mit geprüfter Lautschrift /klaʊdz/ und einer eigenen Pluralaufnahme. Japanische Beispiele bewahren natürliche Partikel und kontextabhängige Substantivzahl. Die Hörprüfung steht aus.
 
+## Jahreszeiten und Aktivitäten
+
+Vier illustrierte Jahreszeiten, vier Aktivitätsbeispiele und einen gemischten Übungsstapel ergänzen. Spring als Jahreszeit und autumn/fall erklären und Bilder gemäßigter Jahreszeiten von weltweiten Klimaregeln unterscheiden. Geprüfte Kana-Lesungen und exakte Audiosegmente bewahren; die Hörprüfung steht aus.
+
 ## Commits
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)
