@@ -54,6 +54,10 @@ Add red, blue, green and yellow as color nouns, each with a visually inspected i
 
 Add four illustrated weather nouns with localized meanings, pronunciation guidance and a starter deck. All eight source and final images across both modules were visually inspected; the conflicting Japanese wind scene was corrected. Recordings retain exact requests and source PCM; listening remains unverified.
 
+## Directions in Context
+
+Add left, right, north and south with four location examples and a practice deck. Inspect every original and final illustration for viewpoint, compass orientation and labels. Reuse exact constituent audio and retain provider usage evidence; listening remains unverified.
+
 ## Commits
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)

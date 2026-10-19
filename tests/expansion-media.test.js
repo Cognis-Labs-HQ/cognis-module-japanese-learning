@@ -5,7 +5,7 @@ import test from "node:test";
 
 const load = async (path) => JSON.parse(await readFile(path, "utf8"));
 const index = await load("authoring/index.json");
-for (const theme of ["time", "colors", "weather"].filter(
+for (const theme of ["time", "colors", "weather", "directions"].filter(
     (name) => index[`${name}Images`],
 )) {
     test(`${theme} vocabulary binds reviewed illustrations and recordings to exact published bytes`, async () => {

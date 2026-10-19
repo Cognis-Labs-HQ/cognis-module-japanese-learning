@@ -1,0 +1,129 @@
+[
+    {
+        "entryId": "ja:word:directions-left",
+        "path": "audio/e93ca5791cb0654d50a181c775b6aa4991c9153789425a89245526e55778f999.wav",
+        "sha256": "e93ca5791cb0654d50a181c775b6aa4991c9153789425a89245526e55778f999",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "左",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "response": {
+            "request-id": "g7PVul3Aa5eZ8KWGHP87",
+            "character-cost": "1",
+            "content-type": "audio/pcm"
+        },
+        "sourcePath": "authoring/audio/directions/directions-left.pcm",
+        "sourceSha256": "f5eb30e10b2e01bed51ba16311f0353f7be7d38222042fbc261ea12c4d8a6983",
+        "sourcePeak": 2418,
+        "sourceFullScaleSamples": 0,
+        "gain": 1,
+        "paddingFramesEachSide": 480,
+        "frames": 13220,
+        "listening": "unverified-not-performed",
+        "technicalReview": "Native written input and intended reading checked; all PCM frames preserved with gain limit and endpoint padding; non-silent mono PCM16 at 24000Hz. Not auditory verification."
+    },
+    {
+        "entryId": "ja:word:directions-right",
+        "path": "audio/ed93db6c98ed392d3a506cab806c1427f1017747f721a75bf290666764912595.wav",
+        "sha256": "ed93db6c98ed392d3a506cab806c1427f1017747f721a75bf290666764912595",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "右",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "response": {
+            "request-id": "u64AY1iKlOE99r96sCfM",
+            "character-cost": "1",
+            "content-type": "audio/pcm"
+        },
+        "sourcePath": "authoring/audio/directions/directions-right.pcm",
+        "sourceSha256": "49a65cb881265b75748e9050eb69d4625b6a8ac9788227c5fa0e242b0ac152ca",
+        "sourcePeak": 3425,
+        "sourceFullScaleSamples": 0,
+        "gain": 1,
+        "paddingFramesEachSide": 480,
+        "frames": 13220,
+        "listening": "unverified-not-performed",
+        "technicalReview": "Native written input and intended reading checked; all PCM frames preserved with gain limit and endpoint padding; non-silent mono PCM16 at 24000Hz. Not auditory verification."
+    },
+    {
+        "entryId": "ja:word:directions-north",
+        "path": "audio/26124eeb2a43359318daa0ad92a4eebf2560ed3e2668f03fa19551ef49cdfd80.wav",
+        "sha256": "77a0d976c0e8a5e2b74bae34dc168ec7e278e5f44b6b8d7ca832dbfaef7a0930",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "きた",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja"
+        },
+        "sourcePath": "authoring/audio/directions/directions-north.wav",
+        "sourceSha256": "77a0d976c0e8a5e2b74bae34dc168ec7e278e5f44b6b8d7ca832dbfaef7a0930",
+        "sourceFullScaleSamples": 0,
+        "listening": "unverified-not-performed",
+        "reuse": "Existing exact input lookup and recorded bytes reused; no new provider request. Source is a retained WAV snapshot, not new original PCM.",
+        "providerCharacterCost": 0
+    },
+    {
+        "entryId": "ja:word:directions-south",
+        "path": "audio/efb36a05650cd2168d0225e64c21fffce858997ddc44eb61322f9d53c3309287.wav",
+        "sha256": "efb36a05650cd2168d0225e64c21fffce858997ddc44eb61322f9d53c3309287",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "南",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "response": {
+            "request-id": "iHcKpivvsgl7rPD4kHfD",
+            "character-cost": "1",
+            "content-type": "audio/pcm"
+        },
+        "sourcePath": "authoring/audio/directions/directions-south.pcm",
+        "sourceSha256": "86e428501dc3edf8d252197a3add6d418ad697d567bebba097d2b3d82c690d77",
+        "sourcePeak": 4384,
+        "sourceFullScaleSamples": 0,
+        "gain": 1,
+        "paddingFramesEachSide": 480,
+        "frames": 18793,
+        "listening": "unverified-not-performed",
+        "technicalReview": "Native written input and intended reading checked; all PCM frames preserved with gain limit and endpoint padding; non-silent mono PCM16 at 24000Hz. Not auditory verification."
+    }
+]
