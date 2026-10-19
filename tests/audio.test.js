@@ -416,7 +416,7 @@ test("unrecorded inventory exactly matches missing audio without weakening recor
     assert.deepEqual(missing, [...unrecordedIds].sort());
     for (const item of unavailable.entries) {
         assert.equal(entries.get(item.entryId)?.label, item.label);
-        assert.equal(item.listening, "unverified-not-performed");
+        assert.equal(item.listening, "not-applicable-no-audio");
         assert.ok(item.reason);
     }
 });

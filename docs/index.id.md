@@ -334,7 +334,7 @@ Kandidat Jisho tanpa rekonstruksi Kana lengkap ditolak. Anak bacaan Kanji menaut
 
 ## Ucapan dan rekaman
 
-Paket menyertakan rekaman WAV terverifikasi untuk setiap kartu terkurasi yang bersuara, karakter, partikel, serta seluruh transformasi skema yang dapat dicapai, termasuk bentuk jamak dan rantai perubahan verba. `xya0RvcJtofTcFTOdX4E` adalah suara yang ditetapkan untuk bahasa ini. `data/audio/recordings.json` mencatat permintaan, suara, model, pengaturan, jalur transformasi, dan checksum; kredensial serta alat pembuatan tidak disertakan.
+Berkas WAV bawaan diperiksa checksum, format, dan integritas PCM-nya; pemeriksaan dengan mendengarkan dicatat terpisah dan dapat belum terverifikasi. `data/audio/recordings.json` mencantumkan rekaman dan gabungan audio yang tersedia. `data/audio/unavailable.json` secara jelas mencantumkan kartu tanpa audio bawaan; rekaman yang belum ada bukan URL pemutaran. Suara yang ditetapkan adalah `xya0RvcJtofTcFTOdX4E`. Kredensial dan alat pembuatan luring tidak disertakan.
 
 Kalimat memakai sampel PCM yang persis sama dengan rekaman kata dan partikel penyusunnya secara berurutan, termasuk transformasi yang dipilih. Karena itu, suara dan pelafalan dalam berkas kalimat sama dengan pemutaran tiap kata. Kalimat baru memakai komposisi host; varian yang rekamannya tidak tersedia tidak boleh diganti dengan pelafalan bentuk dasar. Rekaman mencakup paket terkurasi, bukan semua entri kamus yang dimuat sesuai kebutuhan atau seluruh kalimat buatan pengguna.
 

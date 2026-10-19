@@ -1,0 +1,227 @@
+[
+    {
+        "id": "ja:sentence:daily-go-school",
+        "label": "私は学校に行く",
+        "class": "composite",
+        "fields": {
+            "pronunciation": ["わたしはがっこうにいく"],
+            "audio": "audio/79ade5a766a4697c0f679952e272d79842b85a4def4821bcca4b13d497458838.wav"
+        },
+        "references": [
+            {
+                "entryId": "ja:word:watashi",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:gakkou",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:ni",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:iku",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:daily-go-school",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:daily-walk-friend",
+        "label": "友達と歩く",
+        "class": "composite",
+        "fields": {
+            "pronunciation": ["ともだちとあるく"],
+            "audio": "audio/ce0a3cfdadde39fc8e4c9db9a95925b2d5195ae538050ca0b88e37b9886990ef.wav"
+        },
+        "references": [
+            {
+                "entryId": "ja:word:tomodachi",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:to",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:aruku",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:definition:daily-walk-friend",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:daily-eat-friend",
+        "label": "友達とごはんを食べる",
+        "class": "composite",
+        "fields": {
+            "pronunciation": ["ともだちとごはんをたべる"],
+            "audio": "audio/6abc35e149fccaf07ea670d71f683f8fcb483f809aeec97e0061be5ca2d40d1a.wav"
+        },
+        "references": [
+            {
+                "entryId": "ja:word:tomodachi",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:to",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:rice",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:taberu",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:daily-eat-friend",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:daily-learn-school",
+        "label": "学校で日本語を学ぶ",
+        "class": "composite",
+        "fields": {
+            "pronunciation": ["がっこうでにほんごをまなぶ"],
+            "audio": "audio/d08e6b83c1042a26d03960f01101660ed3a25851996d48cb923d63bba5c977a9.wav"
+        },
+        "references": [
+            {
+                "entryId": "ja:word:gakkou",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:de",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:nihongo",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:manabu",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:daily-learn-school",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:daily-drink-slowly",
+        "label": "ゆっくり水を飲む",
+        "class": "composite",
+        "fields": {
+            "pronunciation": ["ゆっくりみずをのむ"],
+            "audio": "audio/b63f21b4a446a898ac33279e53a3b73af977010a58670c54957909b9b3b739e9.wav"
+        },
+        "references": [
+            {
+                "entryId": "ja:word:yukkuri",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:word:mizu",
+                "relation": "words",
+                "position": 1
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 2
+            },
+            {
+                "entryId": "ja:word:nomu",
+                "relation": "words",
+                "position": 3
+            },
+            {
+                "entryId": "ja:definition:daily-drink-slowly",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:daily-walk-school-here",
+        "label": "学校からここまで歩く",
+        "class": "composite",
+        "fields": {
+            "pronunciation": ["がっこうからここまであるく"],
+            "audio": "audio/526db51262104086eb5c6592fc3fc692ae397dcb0970b7a3fbf20ac1397c9c75.wav"
+        },
+        "references": [
+            {
+                "entryId": "ja:word:gakkou",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:kara",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:koko",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:made",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:aruku",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:daily-walk-school-here",
+                "relation": "definitions"
+            }
+        ]
+    }
+]

@@ -1,0 +1,41 @@
+{
+    "checkedDate": "2026-10-19",
+    "authorization": "User explicitly requested ElevenLabs API generation with these two fixed voice IDs. No credit purchase, overage, plan upgrade or new financial commitment authorized.",
+    "voices": {
+        "en": "gJx1vCzNCD1EQHT212Ls",
+        "ja": "xya0RvcJtofTcFTOdX4E"
+    },
+    "voiceSelection": "Literal IDs from user instruction; voice environment variables were not read.",
+    "authentication": "Existing ELEVENLABS_API_KEY used only as the xi-api-key header to the official API. Credential value not logged or stored.",
+    "readOnlyCheck": {
+        "endpoint": "GET https://api.elevenlabs.io/v1/user/subscription",
+        "httpStatus": 401,
+        "outcome": "authentication-failed",
+        "alternateRuntimeCredential": "none configured",
+        "personalContextLookup": "unavailable for this conversation"
+    },
+    "generation": {
+        "requestsSent": 0,
+        "creditPurchase": false,
+        "overageEnabled": false,
+        "planChanged": false,
+        "status": "pending-valid-authentication-and-credit-check"
+    },
+    "deduplicatedTravelEstimate": {
+        "english": {
+            "requests": 32,
+            "characters": 215,
+            "model": "eleven_turbo_v2"
+        },
+        "japanese": {
+            "requests": 44,
+            "characters": 208,
+            "model": "eleven_flash_v2_5"
+        },
+        "existingExactTextCacheHits": 0,
+        "totalRequests": 76,
+        "totalCharacters": 423,
+        "credits": "Cannot verify account quota or voice-specific pricing while authentication returns 401. No paid request attempted."
+    },
+    "independentWork": "Continue daily routines and shopping content; reuse exact existing PCM where complete. Missing audio stays absent, not replaced by a broken reference."
+}

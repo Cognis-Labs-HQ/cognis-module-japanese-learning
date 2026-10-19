@@ -334,7 +334,7 @@ Jisho candidates without a complete Kana reconstruction are rejected. Multi-read
 
 ## Speech and recordings
 
-The pack includes verified WAV recordings for every spoken curated card, character, particle and reachable schema transformation, including plurals and chained verb forms. `xya0RvcJtofTcFTOdX4E` is the designated voice for this language. `data/audio/recordings.json` records each request, voice, model, settings, transformation path and file checksum; credentials and generation tools are not packaged.
+Bundled WAV files receive checksum, format and PCM integrity checks; listening review is recorded separately and may be unverified. `data/audio/recordings.json` lists available recordings and compositions. `data/audio/unavailable.json` explicitly lists cards without bundled audio; missing recordings are not playback URLs. The designated voice is `xya0RvcJtofTcFTOdX4E`. Credentials and offline generation tools are not packaged.
 
 Sentences reuse the exact PCM samples of their ordered word and particle recordings, including selected transformations. The bundled sentence files therefore preserve the same voice and pronunciation as individual playback. New sentences use host composition; a missing variant must never substitute its base-form pronunciation. Recordings cover the curated pack, not every lazy dictionary entry or possible user-authored sentence.
 

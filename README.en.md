@@ -259,9 +259,9 @@ Vocabulary pronunciation fields use the singular `pronunciation-readings` link c
 
 ## Speech and recordings
 
-The pack includes verified WAV recordings for every spoken curated card, character, particle and reachable schema transformation, including plurals and chained verb forms. `xya0RvcJtofTcFTOdX4E` is the designated voice for this language. `data/audio/recordings.json` records each request, voice, model, settings, transformation path and file checksum; credentials and generation tools are not packaged.
+Bundled WAV files receive checksum, format and PCM integrity checks; listening review is recorded separately and may be unverified. `data/audio/recordings.json` lists available recordings and compositions. `data/audio/unavailable.json` explicitly lists cards without bundled audio; missing recordings are not playback URLs. The designated voice is `xya0RvcJtofTcFTOdX4E`. Credentials and offline generation tools are not packaged.
 
-Shipped sentences use directly generated whole-sentence recordings before composite audio. New or unrecorded sentences use host composition with the exact ordered constituent PCM and selected transformations; missing variants never substitute their base form. Recordings cover the curated pack, not every lazy dictionary entry or possible user-authored sentence.
+Packaged sentence playback prioritizes exact constituent-composed PCM, including the intended grammatical forms. Independently generated whole-sentence recordings retain their original provenance and remain separate. A sentence without all exact constituent recordings has no bundled audio; missing forms never substitute base-form clips.
 
 Bootstrap registers a removable `study:audio:provider.registerProvider` implementation. Bundled cards and their variants work without ElevenLabs installed or configured. Missing lexical recordings may use the optional configured `elevenlabs-tts:synthesis` capability; the default request voice is the designated language voice, with an administrator voice override available for new synthesis. New sentences never request separate whole-sentence synthesis. Cognis owns global-card authorization, caching, manual uploads and private/classroom composition policy. Only the primary authored pronunciation is selected.
 

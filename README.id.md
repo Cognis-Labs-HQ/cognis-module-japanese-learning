@@ -259,9 +259,9 @@ Bidang pelafalan kosakata menggunakan kontrak tautan tunggal `pronunciation-read
 
 ## Ucapan dan rekaman
 
-Paket menyertakan rekaman WAV terverifikasi untuk setiap kartu terkurasi yang bersuara, karakter, partikel, serta seluruh transformasi skema yang dapat dicapai, termasuk bentuk jamak dan rantai perubahan verba. `xya0RvcJtofTcFTOdX4E` adalah suara yang ditetapkan untuk bahasa ini. `data/audio/recordings.json` mencatat permintaan, suara, model, pengaturan, jalur transformasi, dan checksum; kredensial serta alat pembuatan tidak disertakan.
+Berkas WAV bawaan diperiksa checksum, format, dan integritas PCM-nya; pemeriksaan dengan mendengarkan dicatat terpisah dan dapat belum terverifikasi. `data/audio/recordings.json` mencantumkan rekaman dan gabungan audio yang tersedia. `data/audio/unavailable.json` secara jelas mencantumkan kartu tanpa audio bawaan; rekaman yang belum ada bukan URL pemutaran. Suara yang ditetapkan adalah `xya0RvcJtofTcFTOdX4E`. Kredensial dan alat pembuatan luring tidak disertakan.
 
-Kalimat bawaan memakai rekaman kalimat utuh yang dibuat langsung sebelum audio komposit. Kalimat baru atau yang belum direkam memakai komposisi host dengan PCM penyusun berurutan dan transformasi terpilih; varian yang hilang tidak diganti bentuk dasarnya. Rekaman mencakup paket terkurasi, bukan seluruh entri kamus atau semua kemungkinan kalimat buatan pengguna.
+Pemutaran kalimat bawaan memprioritaskan gabungan PCM unsur yang tepat, termasuk bentuk tata bahasa yang dimaksud. Rekaman kalimat utuh yang dibuat terpisah tetap disimpan beserta asal-usulnya. Kalimat yang belum memiliki semua rekaman unsur yang tepat tidak mempunyai audio bawaan; bentuk yang hilang tidak diganti rekaman bentuk dasar.
 
 Bootstrap mendaftarkan penyedia yang dapat dilepas melalui `study:audio:provider.registerProvider`. Kartu dan varian bawaan berfungsi tanpa ElevenLabs terpasang atau dikonfigurasi. Rekaman leksikal yang belum tersedia dapat memakai kapabilitas opsional `elevenlabs-tts:synthesis` yang sudah diatur; suara bawaan permintaan adalah suara bahasa yang ditetapkan, dengan penggantian suara administrator untuk sintesis baru. Kalimat baru tidak meminta sintesis kalimat utuh secara terpisah. Cognis mengelola otorisasi kartu global, cache, unggahan manual, serta kebijakan komposisi pribadi dan kelas. Hanya pelafalan utama yang dipilih.
 
