@@ -42,3 +42,5 @@ Perbaiki makna kamus bahasa Jerman, Indonesia, dan Jepang untuk tiba, berangkat,
 - [44c8e54](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/44c8e54d465310dc18e24e6c8dcebf27ec3475bd)
 - [276ea17](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/276ea17346809d132b03a11ca5e2423ffacfc958)
 - [933c153](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/933c1534342bae249193be52ebcf2903c7ecf6af)
+- [781b362](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/781b3621c30cc1e5acdcb4623a48ae8a2f786d9f)
+- [3b5601e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/3b5601eb66babf3e5d6d13b56cd9db525e078f77)
