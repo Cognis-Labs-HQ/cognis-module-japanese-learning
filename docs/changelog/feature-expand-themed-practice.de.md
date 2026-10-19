@@ -110,6 +110,10 @@ Sechs einzeln verfasste Kontextbeispiele je Modul mit exakten vorhandenen Audios
 
 Kaninchen, Pferd, Kuh und Schwein mit vier geprüften Bildern je Modul, vier englischen Pluralformen, acht natürlichen Beispielen und einem Tierstapel ergänzen. Die weibliche Kuh vom breiteren japanischen うし unterscheiden und die zusätzliche Silbe in horses sowie japanische Eingaben prüfen. Festgelegte Stimmen und exakte Audiosegmente verwenden. Alle bisherigen Beispiele und Formen bleiben erhalten. Die Hörprüfung steht aus.
 
+## Wohnungseinrichtung
+
+Sofa, Lampe, Spiegel und Kopfkissen mit vier geprüften Bildern je Modul, vier englischen Pluralformen, acht natürlichen Beispielen und einem Einrichtungsstapel ergänzen. Kleines ァ in ソファ, die Beleuchtungsbedeutung von ランプ, stimmhaftes が in かがみ und die Bedeutung Kopfkissen prüfen. Festgelegte Stimmen und exakte Audiosegmente verwenden. Alle bisherigen Beispiele und Formen bleiben erhalten. Die Hörprüfung steht aus.
+
 ## Commits
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)

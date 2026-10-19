@@ -1,0 +1,152 @@
+[
+    {
+        "id": "ja:sentence:furnishings-example-sofa",
+        "label": "猫はソファにいる",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/e2422bdbe607fb7db58a67dab079f17448bc7fa13bafc31a5a55799f892b53a2.wav",
+            "pronunciation": ["ねこはソファにいる"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:neko",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:furnishings-sofa",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:ni",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:iru-exist",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:furnishings-example-sofa",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:furnishings-example-lamp",
+        "label": "ランプはテーブルにある",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/ab33bdf05bdad2702b0c61caa606bca96c52d4df8b50f2b008d0f1f24c1c809d.wav",
+            "pronunciation": ["ランプはてーぶるにある"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:furnishings-lamp",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:table",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:ni",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:aru-exist",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:furnishings-example-lamp",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:furnishings-example-mirror",
+        "label": "かがみでかおを見る",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/ed2a6497c8bd7b70b1e60c749a16b4029e0ae872830dc97a2e656d79b66026e2.wav",
+            "pronunciation": ["かがみでかおをみる"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:furnishings-mirror",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:de",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:face",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:miru",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:furnishings-example-mirror",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:furnishings-example-pillow",
+        "label": "まくらをかう",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/9a756e68f93f054e5885f515d770c77a3ff9c994e514c4564833fc0e7b1fcfa7.wav",
+            "pronunciation": ["まくらをかう"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:furnishings-pillow",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:travel-buy",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:definition:furnishings-example-pillow",
+                "relation": "definitions"
+            }
+        ]
+    }
+]

@@ -110,6 +110,10 @@ Add six individually authored contextual examples per module with exact existing
 
 Add rabbit, horse, cow and pig with four inspected pictures per module, four English plural forms, eight natural examples and an animal deck. Distinguish female cow from broader Japanese うし, preserve the extra syllable in horses and verify native Japanese inputs. Use fixed voices and exact constituent audio. Keep all previous examples and forms. Listening remains unverified.
 
+## Home Furnishings
+
+Add sofa, lamp, mirror and pillow with four inspected pictures per module, four English plural forms, eight natural examples and a furnishings deck. Verify small ァ in ソファ, the lighting sense of ランプ, voiced が in かがみ and the sleeping-pillow sense. Use fixed voices and exact constituent audio. Preserve all earlier examples and forms. Listening remains unverified.
+
 ## Commits
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)

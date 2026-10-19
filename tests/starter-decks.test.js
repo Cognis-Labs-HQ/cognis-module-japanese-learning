@@ -24,7 +24,7 @@ test("starter flashcard decks use stable keys, localized names, and existing vis
             if (error.code !== "ENOENT") throw error;
         }
     }
-    assert.equal(decks.length, 34);
+    assert.equal(decks.length, 35);
     for (const [key, labels] of [
         [
             "hiragana-basics",
