@@ -284,3 +284,4 @@ Add eight individually reviewed examples and two practice decks using existing v
 - [1fc46da](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/1fc46dadab40c222ec320dde32ecb6011823b7a9)
 - [c20e9f2](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/c20e9f24359b1ebe836d1c4ff2064d16319de57c)
 - [ae2df69](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/ae2df69113a6720d2a3fa2d75b550be0611debcd)
+- [55adf6b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/55adf6b711bf6367dcbfba0e6e5b22d283f84968)
