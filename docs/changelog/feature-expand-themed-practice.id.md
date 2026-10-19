@@ -86,6 +86,10 @@ Tambahkan mencuci, memasak, membersihkan, dan mengeringkan dengan empat ilustras
 
 Tambahkan enam contoh dan satu dek per modul tentang air, alat makan, lokasi, rencana belanja, memasak, dan perawatan diri. Gunakan ulang segmen audio persis tanpa permintaan generasi atau gambar baru. Tinjau partikel Jepang dan artikel Inggris dalam konteks. Pemeriksaan pendengaran belum dilakukan.
 
+## Perawatan Diri
+
+Tambahkan sabun, handuk, sikat gigi, dan pasta gigi dengan empat gambar yang diperiksa per modul, rekaman kata yang tepat, dua rekaman jamak Inggris, dan delapan contoh. Catatan lokal menjelaskan keterhitungan dan bacaan Jepang. Catat asal jumlah gambar serta batas impor Jepang saat ini; pertahankan semua kalimat dan audio perubahan bentuk yang ada. Pemeriksaan pendengaran belum dilakukan.
+
 ## Komit
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)

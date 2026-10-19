@@ -86,6 +86,10 @@ Waschen, Kochen, Reinigen und Trocknen mit vier geprüften Aktionsbildern je Mod
 
 Je Modul sechs Beispiele und einen Stapel zu Wasser, Besteck, Orten, Einkaufsplänen, Kochen und Körperpflege ergänzen. Exakte Audiosegmente ohne neue Generierungsanfragen oder Bilder wiederverwenden. Japanische Partikeln und englische Artikel im Kontext prüfen. Die Hörprüfung steht weiterhin aus.
 
+## Körperpflege
+
+Seife, Handtuch, Zahnbürste und Zahnpasta mit vier geprüften Bildern je Modul, genauen Wortaufnahmen, zwei englischen Pluralaufnahmen und acht Beispielen ergänzen. Lokalisierte Hinweise erklären Zählbarkeit und japanische Lesungen. Bildzahlen und die aktuelle japanische Importgrenze dokumentieren; alle bisherigen Sätze und Flexionsaufnahmen bewahren. Die Hörprüfung steht aus.
+
 ## Commits
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)

@@ -86,6 +86,10 @@ Add wash, cook, clean and dry with four inspected action illustrations per modul
 
 Add six contextual examples and a daily-needs deck per module, covering water, utensils, locations, shopping plans, cooking and personal care. Reuse exact constituent PCM without new generation requests or images. Japanese particles and English articles are reviewed in context. Listening remains explicitly unverified.
 
+## Personal Care
+
+Add soap, towel, toothbrush and toothpaste with four inspected illustrations per module, exact base-word recordings, two English plural recordings and eight contextual examples. Localized notes explain countability and Japanese readings. Record image-count provenance and the current Japanese import constraint; preserve every existing sentence and all inflected audio. Listening remains unverified.
+
 ## Commits
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)

@@ -15,6 +15,7 @@ for (const theme of [
     "tableware",
     "places",
     "household",
+    "care",
 ].filter((name) => index[`${name}Images`])) {
     test(`${theme} vocabulary binds reviewed illustrations and recordings to exact published bytes`, async () => {
         const words = await load(
