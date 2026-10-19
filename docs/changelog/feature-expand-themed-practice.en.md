@@ -62,3 +62,5 @@ Add red, blue, green and yellow as color nouns, each with a visually inspected i
 - [3b5601e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/3b5601eb66babf3e5d6d13b56cd9db525e078f77)
 - [936177a](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/936177a98193e8433102766cbdb5a3b5dc7117e7)
 - [95dd538](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/95dd5387f08b9260f8c843ba57294646e228db2a)
+- [829c9a2](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/829c9a27cbf41dd11b6991458ff5463333737cd7)
+- [f84dcd7](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/f84dcd763f8c722a84c39916cfd759c75a1adec4)
