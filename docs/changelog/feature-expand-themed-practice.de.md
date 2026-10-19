@@ -139,3 +139,4 @@ Kaninchen, Pferd, Kuh und Schwein mit vier geprüften Bildern je Modul, vier eng
 - [77093c4](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/77093c4b6e887a1212f2a82d7cea70f7edd0b277)
 - [e124530](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/e124530939a759790f44d7c887b1d2534c462402)
 - [54f29cf](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/54f29cf9ae70ea5d3011d4ee927c9e269a52105b)
+- [b751a25](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/b751a259fcf513b7027b9ed1f8e9d44e952df55c)
