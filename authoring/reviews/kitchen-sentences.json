@@ -1,0 +1,226 @@
+[
+    {
+        "entryId": "ja:sentence:kitchen-example-bowl",
+        "label": "ボウルをあらう",
+        "reading": "ボウルをあらう",
+        "meanings": {
+            "en": "I wash the bowl.",
+            "de": "Ich wasche die Schüssel.",
+            "id": "Saya mencuci mangkuk itu.",
+            "ja": "ボウルを洗う。"
+        },
+        "constituentIds": [
+            "ja:word:kitchen-bowl",
+            "ja:particle:wo",
+            "ja:word:household-wash"
+        ],
+        "audioAvailability": "bundled-composition",
+        "audioPath": "audio/d2a254d8d1998682365d746d1fe6c327f1a8e189642a8c5869a65c13004aac60.wav",
+        "sha256": "d2a254d8d1998682365d746d1fe6c327f1a8e189642a8c5869a65c13004aac60",
+        "listening": "unverified-not-performed",
+        "textReview": "English two requires irregular knives; cooks agrees with she, and in a pan identifies cooking equipment. Japanese と coordinates utensils, が marks their existence, とても modifies 大きい, and で identifies cooking equipment. Omitted subjects and number receive illustrative translations.",
+        "sourceAudioEvidence": [
+            {
+                "entryId": "ja:word:kitchen-bowl",
+                "path": "audio/a4caf27b3c13ead375f97ba9ee0fbbb2362b141ed8650902f28ed93b7db42579.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "ボウル",
+                "sha256": "509e883a6e42202d3cbd307606069d81116d424e29670e586d8932824d294f30"
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "お",
+                "sha256": "5a89703412d90e8bc518242ca91fa93b5ea164aa2d3ff9b6e0b5996b7695f8e8"
+            },
+            {
+                "entryId": "ja:word:household-wash",
+                "path": "audio/55900a3049492f3fd4edd4b8fb6ba3ff1650cde9ed4b3024f002f08659bf5c2a.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "洗う",
+                "sha256": "65b9ebca56c335507ddd77507006428b689967d993a51e5f7c742abee2f8bc8a"
+            }
+        ],
+        "peak": 22824,
+        "fullScaleSamples": 0
+    },
+    {
+        "entryId": "ja:sentence:kitchen-example-knife",
+        "label": "ナイフとフォークがある",
+        "reading": "ナイフとフォークがある",
+        "meanings": {
+            "en": "There are a knife and a fork.",
+            "de": "Es gibt ein Messer und eine Gabel.",
+            "id": "Ada pisau dan garpu.",
+            "ja": "ナイフとフォークがある。"
+        },
+        "constituentIds": [
+            "ja:word:kitchen-knife",
+            "ja:particle:to",
+            "ja:word:tableware-fork",
+            "ja:particle:ga",
+            "ja:word:aru-exist"
+        ],
+        "audioAvailability": "bundled-composition",
+        "audioPath": "audio/e59b3768ada422020937a36585a482a0d1014c2e1d20d8e1a9c938ee15d36248.wav",
+        "sha256": "e59b3768ada422020937a36585a482a0d1014c2e1d20d8e1a9c938ee15d36248",
+        "listening": "unverified-not-performed",
+        "textReview": "English two requires irregular knives; cooks agrees with she, and in a pan identifies cooking equipment. Japanese と coordinates utensils, が marks their existence, とても modifies 大きい, and で identifies cooking equipment. Omitted subjects and number receive illustrative translations.",
+        "sourceAudioEvidence": [
+            {
+                "entryId": "ja:word:kitchen-knife",
+                "path": "audio/5b758125352963592e7b6021be4cf85083798119816b62ad7dcb1b25bdde341c.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "ナイフ",
+                "sha256": "35449d3d3f6da3eb5eb132cc4de760dfdff9d13b0df0565bb26d1928be873dc4"
+            },
+            {
+                "entryId": "ja:particle:to",
+                "path": "audio/606f3c1823245eee4195e2195e8189dad7df8cd21b7e6550a55b5c56e585916b.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "と",
+                "sha256": "1247391555d943254a995ac5ac2170d9039db38188a26eb6e783a7d4ee67bea5"
+            },
+            {
+                "entryId": "ja:word:tableware-fork",
+                "path": "audio/bd830d1b87d9b110d43374bfa5c5f1cc9b45e3cbe24046b187d59e40288a2587.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "フォーク",
+                "sha256": "d65ddf8822a8609b8890e32f3b0d20872948fc8cd1f600a43c15f48174382402"
+            },
+            {
+                "entryId": "ja:particle:ga",
+                "path": "audio/69d02d32db53e5eeb4bb6db01917e619478b734bd66988c4242ccc1a3e55655d.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "が",
+                "sha256": "3b13de62d800ba35732b1168e0f4715d2663568c3af5dfff67a49d81d1a02af1"
+            },
+            {
+                "entryId": "ja:word:aru-exist",
+                "path": "audio/0e997231f55465948ee67d44898dfd72abf6e48f95f8839fe116ca8978d53535.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "ある",
+                "sha256": "e8ba4639eb28dcce35ca4e779b236a92baca6f36648e3897500d5c6f1961b4d4"
+            }
+        ],
+        "peak": 26869,
+        "fullScaleSamples": 0
+    },
+    {
+        "entryId": "ja:sentence:kitchen-example-pot",
+        "label": "なべはとても大きい",
+        "reading": "なべはとてもおおきい",
+        "meanings": {
+            "en": "The pot is very big.",
+            "de": "Der Topf ist sehr groß.",
+            "id": "Panci itu sangat besar.",
+            "ja": "鍋はとても大きい。"
+        },
+        "constituentIds": [
+            "ja:word:kitchen-pot",
+            "ja:particle:wa",
+            "ja:word:totemo",
+            "ja:word:ookii"
+        ],
+        "audioAvailability": "bundled-composition",
+        "audioPath": "audio/3fc1b45251c604ef081ea8521f0ad7bd62ef48d44f19bd4540b504435697f2fa.wav",
+        "sha256": "3fc1b45251c604ef081ea8521f0ad7bd62ef48d44f19bd4540b504435697f2fa",
+        "listening": "unverified-not-performed",
+        "textReview": "English two requires irregular knives; cooks agrees with she, and in a pan identifies cooking equipment. Japanese と coordinates utensils, が marks their existence, とても modifies 大きい, and で identifies cooking equipment. Omitted subjects and number receive illustrative translations.",
+        "sourceAudioEvidence": [
+            {
+                "entryId": "ja:word:kitchen-pot",
+                "path": "audio/20267d013e4639ed919baad8324c35704ed34dbfdbf9eeb8107c6512f70fdb66.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "鍋",
+                "sha256": "60d86f5fa92496f4d26766e5a6abf5a04d1562fd0bb2c0895c0f88b7a919aa25"
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "path": "audio/d7c9e57654e559dfba3bd6f78c2f27416a61f8b28d56145d84a62fe25b70c94d.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "わ",
+                "sha256": "03b8d36aab677f09d2ecaad611a22b15785f0c717e6d6983dc5ef47296670c54"
+            },
+            {
+                "entryId": "ja:word:totemo",
+                "path": "audio/6bd90d517ec5079a9272a10b6ee16cc30a38525e42cd4cb4eb3bf6bf210ba2c5.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "とても",
+                "sha256": "7ce213650bbcc1563c61e69b45cc80177a7471e6d86fef2a12689ee64387e55a"
+            },
+            {
+                "entryId": "ja:word:ookii",
+                "path": "audio/5b15ae17f9c15b1d56392fef904e5f1a056663de7dd79120d237600c45971120.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "おおきい",
+                "sha256": "fc695d1da9e21197b8d9766bc869d04877703bb92e4248aecef2f4820f1a287e"
+            }
+        ],
+        "peak": 26869,
+        "fullScaleSamples": 0
+    },
+    {
+        "entryId": "ja:sentence:kitchen-example-pan",
+        "label": "フライパンでさかなをりょうりする",
+        "reading": "フライパンでさかなをりょうりする",
+        "meanings": {
+            "en": "I cook fish in a frying pan.",
+            "de": "Ich bereite Fisch in einer Bratpfanne zu.",
+            "id": "Saya memasak ikan dalam wajan penggorengan.",
+            "ja": "フライパンで魚を料理する。"
+        },
+        "constituentIds": [
+            "ja:word:kitchen-pan",
+            "ja:particle:de",
+            "ja:word:fish",
+            "ja:particle:wo",
+            "ja:word:household-cook"
+        ],
+        "audioAvailability": "bundled-composition",
+        "audioPath": "audio/7ebf4d0b5752c7c706d01d5b2cbbaace0c66c8f863bafcf685412c9a630bedef.wav",
+        "sha256": "7ebf4d0b5752c7c706d01d5b2cbbaace0c66c8f863bafcf685412c9a630bedef",
+        "listening": "unverified-not-performed",
+        "textReview": "English two requires irregular knives; cooks agrees with she, and in a pan identifies cooking equipment. Japanese と coordinates utensils, が marks their existence, とても modifies 大きい, and で identifies cooking equipment. Omitted subjects and number receive illustrative translations.",
+        "sourceAudioEvidence": [
+            {
+                "entryId": "ja:word:kitchen-pan",
+                "path": "audio/c387cb59031b904bd515f3f065f1c84cc8aef387438f641a1a342356b4d89397.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "フライパン",
+                "sha256": "451af3ba409fe985fa237c7763a31719796b18324c68cb42b04d9072a63964ba"
+            },
+            {
+                "entryId": "ja:particle:de",
+                "path": "audio/df81472c8108ad9b47d8d90db017ff1c1b553d80263d6a2c59de1571671f3eee.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "で",
+                "sha256": "57b1611b914f170a0de5d42042b0a97c1dada8d50838ba27ed1c2677dcb232c3"
+            },
+            {
+                "entryId": "ja:word:fish",
+                "path": "audio/82a3ba788239c7a0ca2d53b86f417200dcef1a8c2ef789e55b778f8870619105.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "さかな",
+                "sha256": "115435787cf6e3cfeb4b16273bab39c38cbfd6c2a9cb1db2f62a093192fb9eb9"
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "お",
+                "sha256": "5a89703412d90e8bc518242ca91fa93b5ea164aa2d3ff9b6e0b5996b7695f8e8"
+            },
+            {
+                "entryId": "ja:word:household-cook",
+                "path": "audio/e33686384389e80ef4dd0db97018d79d8b5ee187f17ec85723bd40a420521f2a.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "料理する",
+                "sha256": "f761b5a3672bd35c08c9794037476f6dcb8bd94ac4251002553a596d5edaaa9c"
+            }
+        ],
+        "peak": 16653,
+        "fullScaleSamples": 0
+    }
+]

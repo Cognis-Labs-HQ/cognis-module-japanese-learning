@@ -118,6 +118,14 @@ Tambahkan sofa, lampu, cermin, dan bantal dengan empat gambar yang diperiksa per
 
 Tambahkan persik, pir, semangka, dan nanas dengan empat gambar yang diperiksa per modul, empat bentuk jamak Inggris, delapan contoh alami, dan dek buah. Bedakan pir Eropa dan Asia serta buah utuh dan makanan; pertahankan suku kata tambahan dalam peaches dan ッ kecil dalam パイナップル. Ringkasan kumulatif memisahkan kosakata dasar, contoh, bentuk yang direkam, dan total rekaman data, dengan pengujian regresi. Pemeriksaan pendengaran belum dilakukan.
 
+## Peralatan Dapur
+
+Tambahkan mangkuk, pisau, panci, dan wajan pada kedua modul dengan gambar yang diperiksa, empat bentuk jamak Inggris, delapan kalimat, dan dua dek. Catatan menjelaskan k yang tidak dibunyikan, knives, serta perbedaan mangkuk pencampur, panci dalam, dan wajan dangkal. PCM unsur yang tepat mempertahankan bentuk terpilih. Perbarui hitungan tema kumulatif. Pemeriksaan pendengaran belum dilakukan.
+
+## Sayuran Lain
+
+Tambahkan kubis, jamur, bayam, dan selada pada kedua modul dengan gambar yang diperiksa, tiga bentuk jamak Inggris, delapan contoh bervariasi, dan dua dek. Bedakan makanan dari tanaman utuh, pertahankan vokal panjang dalam ほうれんそう dan ャ kecil dalam キャベツ, tanpa bentuk jamak pemula untuk spinach. Perbarui hitungan kumulatif dan pertahankan contoh lama. Pemeriksaan pendengaran belum dilakukan.
+
 ## Komit
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)

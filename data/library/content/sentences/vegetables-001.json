@@ -1,0 +1,167 @@
+[
+    {
+        "id": "ja:sentence:vegetables-example-cabbage",
+        "label": "スーパーでキャベツをかう",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/2f885c68b305294ab077f05ff4c65c9de1b9f8b0f2b3db224bdbcf39e98b2466.wav",
+            "pronunciation": ["スーパーでキャベツをかう"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:places-supermarket",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:de",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:vegetables-cabbage",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:travel-buy",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:vegetables-example-cabbage",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:vegetables-example-mushroom",
+        "label": "スープにきのこがある",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/fc2b5598e2c92be03f37a6fe762cf5c76eb2d2b627f0aefc7265a829ba744d9d.wav",
+            "pronunciation": ["すーぷにきのこがある"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:soup",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:ni",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:vegetables-mushroom",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:ga",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:aru-exist",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:vegetables-example-mushroom",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:vegetables-example-spinach",
+        "label": "ほうれんそうとたまごをりょうりする",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/9ee8f1dc20a5ebe5ca42038d18ab8ce39091809bf455c92811f8cfa6f8261c23.wav",
+            "pronunciation": ["ほうれんそうとたまごをりょうりする"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:vegetables-spinach",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:to",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:egg",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:household-cook",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:vegetables-example-spinach",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:vegetables-example-lettuce",
+        "label": "私はレタスが好きです",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/dd82d3d67de1b47ffef2e3e480ea1ead27acaaa7501aac9197e305893c50a890.wav",
+            "pronunciation": ["わたしはレタスがすきです"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:watashi",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:vegetables-lettuce",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:ga",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:suki",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:word:desu",
+                "relation": "words",
+                "position": 5
+            },
+            {
+                "entryId": "ja:definition:vegetables-example-lettuce",
+                "relation": "definitions"
+            }
+        ]
+    }
+]

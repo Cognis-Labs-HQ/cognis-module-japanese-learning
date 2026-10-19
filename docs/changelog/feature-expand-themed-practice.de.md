@@ -118,6 +118,14 @@ Sofa, Lampe, Spiegel und Kopfkissen mit vier geprüften Bildern je Modul, vier e
 
 Pfirsich, Birne, Wassermelone und Ananas mit vier geprüften Bildern je Modul, vier englischen Pluralformen, acht natürlichen Beispielen und einem Obststapel ergänzen. Europäische und asiatische Birnen sowie ganze Früchte und Lebensmittelmengen unterscheiden; die zusätzliche Silbe in peaches und kleines ッ in パイナップル bewahren. Eine kumulative Übersicht trennt Grundwörter, Beispiele, aufgenommene Formen und Gesamtdatensätze und wird durch Tests geprüft. Die Hörprüfung steht aus.
 
+## Küchengeräte
+
+Schüssel, Messer, Kochtopf und Pfanne mit geprüften Bildern in beiden Modulen ergänzen, dazu vier englische Pluralformen, acht kontextbezogene Sätze und zwei Stapel. Hinweise erläutern stummes k, knives und die Unterschiede zwischen Rührschüssel, tiefem Topf und flacher Bratpfanne. Exakte PCM-Bausteine bewahren die gewählten Formen. Kumulative Themenzählung aktualisieren. Die Hörprüfung steht aus.
+
+## Weiteres Gemüse
+
+Kohl, Pilz, Spinat und Kopfsalat mit geprüften Bildern in beiden Modulen ergänzen, dazu drei englische Pluralformen, acht abwechslungsreiche Beispiele und zwei Stapel. Lebensmittelmengen von ganzen Pflanzen unterscheiden, lange Vokale in ほうれんそう und kleines ャ in キャベツ bewahren; kein Anfängerplural für spinach. Kumulative Themenzählung aktualisieren und bisherige Beispiele erhalten. Die Hörprüfung steht aus.
+
 ## Commits
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)

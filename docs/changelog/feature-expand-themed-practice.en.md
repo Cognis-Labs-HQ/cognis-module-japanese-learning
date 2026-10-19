@@ -118,6 +118,14 @@ Add sofa, lamp, mirror and pillow with four inspected pictures per module, four 
 
 Add peach, pear, watermelon and pineapple with four inspected pictures per module, four English plural forms, eight natural examples and a fruit deck. Distinguish European and Asian pear illustrations, countable whole fruits and food mass nouns, and preserve the extra syllable in peaches and small ッ in パイナップル. Add a cumulative expansion summary separating distinct base words, examples, recorded forms and total records, with regression checks. Listening remains unverified.
 
+## Kitchen Equipment
+
+Add bowl, knife, pot and pan in both modules with inspected illustrations, four English plural forms, eight contextual sentences and two decks. Notes explain silent k, irregular knives and distinctions between mixing bowls, deep pots and shallow frying pans. Exact constituent PCM preserves selected forms. Update cumulative theme accounting. Listening remains unverified.
+
+## More Vegetables
+
+Add cabbage, mushroom, spinach and lettuce in both modules with inspected illustrations, three English plural forms, eight varied examples and two decks. Distinguish food from whole-plant countability, retain long vowels in ほうれんそう and small ャ in キャベツ, and omit a beginner plural for spinach. Update cumulative theme accounting and preserve earlier examples. Listening remains unverified.
+
 ## Commits
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)
