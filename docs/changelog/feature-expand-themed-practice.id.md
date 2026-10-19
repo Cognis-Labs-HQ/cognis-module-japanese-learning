@@ -258,6 +258,10 @@ Menambahkan scarf/glove dan マフラー/てぶくろ dengan empat gambar yang d
 
 Menambahkan hard/soft dan かたい/やわらかい dengan empat gambar tekanan yang diperiksa serta empat contoh per bahasa. Makna fisik dibedakan dari kesulitan, volume dan kepribadian. Bentuk perbandingan serta infleksi adjektiva-i mempertahankan rekaman tepat dan pangkal lengkap. Sumber, gambar asli dan PCM disimpan; pendengaran belum diperiksa.
 
+## Bola dan raket
+
+Menambahkan ball/racket dan ボール/ラケット dengan empat gambar peralatan yang diperiksa dan empat contoh per bahasa. Catatan memilih makna olahraga, membedakan ボール dari ボウル, serta mempertahankan vokal panjang dan っ kecil. Contoh Inggris memakai rekaman jamak yang tepat; contoh Jepang melatih memberi dan menerima. Sumber, gambar asli dan PCM disimpan; pendengaran belum diperiksa.
+
 ## Komit
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)

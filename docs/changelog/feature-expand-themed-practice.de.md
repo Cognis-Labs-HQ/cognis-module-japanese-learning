@@ -258,6 +258,10 @@ Scarf/glove und マフラー/てぶくろ mit vier geprüften Bildern und vier K
 
 Hard/soft und かたい/やわらかい mit vier geprüften Druckdarstellungen und vier Kontextbeispielen je Sprache ergänzt. Präzise Bedeutungsangaben unterscheiden Materialeigenschaften von Schwierigkeit, Lautstärke und Persönlichkeit. Steigerungs- und i-Adjektivformen behalten exakte Aufnahmen und vollständige Stämme. Quellen, Originale und PCM bleiben erhalten; die Hörprüfung steht aus.
 
+## Bälle und Schläger
+
+Ball/racket und ボール/ラケット mit vier geprüften Gerätebildern und vier Beispielen je Sprache ergänzt. Die Sportbedeutungen werden ausgewählt, ボール und ボウル unterschieden und Langvokal sowie kleines っ erhalten. Exakte Pluralaufnahmen unterstützen englische Beispiele; japanische Beispiele üben Geben und Empfangen. Quellen, Originale und PCM bleiben; die Hörprüfung steht aus.
+
 ## Commits
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)

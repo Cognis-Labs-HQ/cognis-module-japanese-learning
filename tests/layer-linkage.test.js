@@ -150,7 +150,7 @@ test("visible Kanji vocabulary composes from reading segments and Kana", () => {
             contentClass === "reading:pronunciation",
     );
 
-    assert.equal(vocabulary.length, 267);
+    assert.equal(vocabulary.length, 269);
     assert.ok(vocabulary.every(({ hidden }) => hidden !== true));
     assert.equal(shims.length, vocabulary.length);
     for (const word of vocabulary) {
@@ -210,7 +210,7 @@ test("complete pronunciation records resolve to atomic Kana", () => {
             hidden === true &&
             contentClass === "reading:pronunciation",
     );
-    assert.equal(shims.length, 267);
+    assert.equal(shims.length, 269);
     for (const shim of shims)
         assert.equal(
             derivedPronunciation(

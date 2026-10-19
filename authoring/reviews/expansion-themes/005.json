@@ -1,5 +1,31 @@
 [
     {
+        "theme": "time",
+        "newDistinctVocabularyCount": 4,
+        "vocabulary": [
+            {
+                "entryId": "ja:word:time-tomorrow",
+                "label": "あした"
+            },
+            {
+                "entryId": "ja:word:time-yesterday",
+                "label": "きのう"
+            },
+            {
+                "entryId": "ja:word:time-soon",
+                "label": "もうすぐ"
+            },
+            {
+                "entryId": "ja:word:time-later",
+                "label": "あとで"
+            }
+        ],
+        "newExampleCount": 0,
+        "exampleIds": [],
+        "recordedGrammaticalFormCount": 0,
+        "vocabularyAudit": "authoring/reviews/time-vocabulary.json"
+    },
+    {
         "theme": "transport",
         "newDistinctVocabularyCount": 4,
         "vocabulary": [
@@ -216,21 +242,5 @@
         ],
         "recordedGrammaticalFormCount": 0,
         "vocabularyAudit": "authoring/reviews/shopping.json"
-    },
-    {
-        "theme": "daily-needs",
-        "newDistinctVocabularyCount": 0,
-        "vocabulary": [],
-        "newExampleCount": 6,
-        "exampleIds": [
-            "ja:sentence:daily-needs-1",
-            "ja:sentence:daily-needs-2",
-            "ja:sentence:daily-needs-3",
-            "ja:sentence:daily-needs-4",
-            "ja:sentence:daily-needs-5",
-            "ja:sentence:daily-needs-6"
-        ],
-        "recordedGrammaticalFormCount": 0,
-        "vocabularyAudit": "authoring/reviews/daily-needs-sentences.json"
     }
 ]

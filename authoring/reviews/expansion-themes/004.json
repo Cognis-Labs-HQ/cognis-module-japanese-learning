@@ -62,6 +62,29 @@
         "vocabularyAudit": "authoring/reviews/reading-time-vocabulary.json"
     },
     {
+        "theme": "recreation",
+        "newDistinctVocabularyCount": 2,
+        "vocabulary": [
+            {
+                "entryId": "ja:word:recreation-ball",
+                "label": "ボール"
+            },
+            {
+                "entryId": "ja:word:recreation-racket",
+                "label": "ラケット"
+            }
+        ],
+        "newExampleCount": 4,
+        "exampleIds": [
+            "ja:sentence:recreation-example-give-friend-ball",
+            "ja:sentence:recreation-example-light-racket",
+            "ja:sentence:recreation-example-receive-ball",
+            "ja:sentence:recreation-example-buy-racket"
+        ],
+        "recordedGrammaticalFormCount": 0,
+        "vocabularyAudit": "authoring/reviews/recreation-vocabulary.json"
+    },
+    {
         "theme": "requests",
         "newDistinctVocabularyCount": 4,
         "vocabulary": [
@@ -277,31 +300,5 @@
         ],
         "recordedGrammaticalFormCount": 0,
         "vocabularyAudit": "authoring/reviews/tableware-vocabulary.json"
-    },
-    {
-        "theme": "time",
-        "newDistinctVocabularyCount": 4,
-        "vocabulary": [
-            {
-                "entryId": "ja:word:time-tomorrow",
-                "label": "あした"
-            },
-            {
-                "entryId": "ja:word:time-yesterday",
-                "label": "きのう"
-            },
-            {
-                "entryId": "ja:word:time-soon",
-                "label": "もうすぐ"
-            },
-            {
-                "entryId": "ja:word:time-later",
-                "label": "あとで"
-            }
-        ],
-        "newExampleCount": 0,
-        "exampleIds": [],
-        "recordedGrammaticalFormCount": 0,
-        "vocabularyAudit": "authoring/reviews/time-vocabulary.json"
     }
 ]
