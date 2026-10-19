@@ -46,6 +46,10 @@ Siapkan empat ungkapan waktu baru untuk pemula beserta bacaan, makna terjemahan,
 
 Terbitkan besok, kemarin, segera, dan nanti dengan empat ilustrasi yang diperiksa, rekaman suara yang ditetapkan, bacaan lengkap, contoh kontekstual, dan dek kosakata. Tanggal kalender, tanda kedatangan satu menit, dan urutan kegiatan memperjelas makna waktunya. Pemeriksaan melalui pendengaran belum dilakukan.
 
+## Warna dasar dan kesukaan
+
+Tambahkan merah, biru, hijau, dan kuning sebagai kata benda warna, masing-masing dengan ilustrasi yang diperiksa, rekaman suara yang ditetapkan, bacaan lengkap, dan contoh penggunaan terjemahan. Empat kalimat kesukaan per bahasa memakai PCM unsur yang tepat, termasuk bentuk likes dalam bahasa Inggris. Dek gabungan kosakata dan kalimat mendukung latihan langsung. Catatan Jepang membedakan nama warna dari bentuk kata sifat.
+
 ## Komit
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)

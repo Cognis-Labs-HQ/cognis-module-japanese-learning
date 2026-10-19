@@ -1,25 +1,25 @@
 {
     "checkedDate": "2026-10-19",
     "moduleTests": {
-        "passed": 233,
+        "passed": 234,
         "failed": 0
     },
     "formattingAndLint": "pass",
     "manifestValidation": {
         "status": "pass",
-        "packagedFiles": 1385,
+        "packagedFiles": 1403,
         "authoringFilesIncluded": 0
     },
     "hostCompatibility": {
         "head": "9b17168e54d1127aa85a8a0ef4c607ea63ac138c",
         "contentPackInspection": "pass",
-        "records": 1008,
-        "assets": 480,
+        "records": 1028,
+        "assets": 492,
         "targetedTestsPassed": 11,
         "targetedTests": ["content-pack", "content-audio", "browse-permissions"]
     },
-    "audioChanges": "Four exact-word recordings per module added for time vocabulary. Explicit Japanese language/normalization settings retained; all clips technically validated and listening unverified.",
-    "finalJpegReview": "each replacement inspected individually at full resolution after encoding",
+    "audioChanges": "Time and colors add eight exact-word recordings plus four exact constituent sentence compositions per module. Japanese requests explicitly select ja and disable text normalization; actual native text used. Listening remains unverified. Existing independent whole-sentence inventories unchanged.",
+    "finalJpegReview": "Each of eight new illustrations per module inspected individually as original generation and final encoded JPEG, checking concept, text, ordering or hue, and established style.",
     "remainingContextWork": "All 33 earlier context dispositions resolved. Travel vocabulary and sentences now published under the revised audio-verification instruction.",
     "contextReview": {
         "resolvedDispositions": 4,
@@ -37,6 +37,12 @@
         "shopping": "authoring/reviews/shopping.json",
         "synthesisAccess": "authoring/reviews/synthesis-access.json",
         "synthesisPlan": "authoring/reviews/synthesis-plan.json",
-        "time": "authoring/staged/time/index.json"
+        "time": "authoring/staged/time/index.json",
+        "colors": {
+            "vocabulary": "authoring/reviews/colors-vocabulary.json",
+            "images": "authoring/reviews/colors-images.json",
+            "audio": "authoring/reviews/colors-audio.json",
+            "sentences": "authoring/reviews/colors-sentences.json"
+        }
     }
 }
