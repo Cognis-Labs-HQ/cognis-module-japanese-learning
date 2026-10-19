@@ -202,6 +202,10 @@ Added bottle, box, basket and envelope with localized meanings and usage notes, 
 
 Added eraser, scissors, adhesive tape and stapler with inspected illustrations and four contextual examples. Usage notes and sentence graphs preserve plural scissors, uncountable tape, the long vowel in テープ and the selected ホチキス spelling. Japanese receiving practice retains the teacher as source. Exact constituent audio is checked technically; listening remains unverified under the recorded waiver.
 
+## Posture verbs and verified audio indexes
+
+Added sit and stand, their irregular English and godan Japanese forms, inspected illustrations and four contextual examples. Usage notes distinguish taking a position from a continuing Japanese state. Hashed purpose indexes allow continued content growth within existing file-size guards. Audio listening remains unverified under the recorded waiver.
+
 ## Commits
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)

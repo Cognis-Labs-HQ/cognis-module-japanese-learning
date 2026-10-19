@@ -202,6 +202,10 @@ Menambahkan botol, kotak, keranjang, dan amplop beserta makna lokal, catatan pen
 
 Menambahkan penghapus, gunting, selotip, dan stapler dengan ilustrasi yang diperiksa serta empat contoh. Catatan penggunaan dan hubungan kalimat mempertahankan bentuk jamak scissors, tape yang tidak dapat dihitung, vokal panjang テープ, dan ejaan ホチキス. Contoh menerima dalam bahasa Jepang mempertahankan guru sebagai sumber. Audio konstituen yang persis diperiksa secara teknis; pemeriksaan pendengaran belum dilakukan sesuai pengecualian yang tercatat.
 
+## Verba posisi tubuh dan indeks audio terverifikasi
+
+Menambahkan sit dan stand, bentuk tidak beraturan bahasa Inggris dan godan bahasa Jepang, ilustrasi yang diperiksa, serta empat contoh. Catatan membedakan perubahan posisi dari keadaan berkelanjutan dalam bahasa Jepang. Indeks tujuan ber-hash memungkinkan pertumbuhan konten dengan batas ukuran berkas tetap. Pemeriksaan pendengaran belum dilakukan sesuai pengecualian tercatat.
+
 ## Komit
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)

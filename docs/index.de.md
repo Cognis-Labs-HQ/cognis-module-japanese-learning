@@ -346,7 +346,7 @@ Jede Ebene stellt das optionale Referenzbildfeld im Karteneditor und in der Deta
 
 ## Aufnahmeverzeichnisse
 
-`data/audio/recordings.json` ist ein kompaktes Manifest mit Sprache, Stimme, Modell, gemeinsamen Verarbeitungseinstellungen, Gesamtzahlen und geprüften Inventarpfaden. Dateien unter `data/audio/inventories/` beschreiben getrennt Zeichen, Vokabeln, Transformationen, direkte Sätze und zusammengesetzte Ersatzaufnahmen. Jede Datei bleibt unter 800 Zeilen und enthält die genauen Anforderungen, Stimmenherkunft, Transformationspfade und Audio-Prüfsummen. Bootstrap prüft vor der Wiedergaberegistrierung jede Prüfsumme und Anzahl; Audiodaten und Suchpriorität bleiben unverändert.
+`data/audio/recordings.json` verwendet Inventarformat 2 mit Sprache, Stimme, Modell, Verarbeitungseinstellungen, Gesamtzahlen und geprüften Zweckindexpfaden. Dateien unter `data/audio/indexes/` verweisen mit Prüfsummen auf die Dateien unter `data/audio/inventories/`, getrennt nach Zeichen, Vokabeln, Transformationen, direkten Sätzen und Satzkompositionen. Haupt- und Zweckindizes bleiben unter 400 Zeilen, Aufnahmedateien bei höchstens 800 Zeilen. Vor der Wiedergaberegistrierung prüft der Lader beide Ebenen, Anzahlen, erlaubte Pfade, Zweckzuordnung und doppelte Pfade. Aufnahmeobjekte, Audiodaten und Suchpriorität bleiben erhalten.
 
 ## Explizite Katalognormalisierung und Satzkompositionen
 

@@ -346,7 +346,7 @@ Every layer exposes the optional reference-image field in the host editor and de
 
 ## Recording Inventories
 
-`data/audio/recordings.json` is a compact manifest with language, voice, model, shared processing settings, totals and integrity-checked inventory paths. Purpose-grouped files under `data/audio/inventories/` separately describe characters, vocabulary, transformations, direct sentences and precomposed sentence recordings. Each file stays below 800 lines and retains exact requests, per-clip voice provenance, transformation paths and audio checksums. Bootstrap verifies every inventory checksum and count before registering playback; the recording bytes and lookup precedence are unchanged.
+`data/audio/recordings.json` uses inventory format 2 with language, voice, model, processing settings, totals and hashed purpose-index paths. Files under `data/audio/indexes/` list the hashed shards under `data/audio/inventories/`, grouped into characters, vocabulary, transformations, direct sentences and sentence compositions. Root and purpose indexes stay below 400 lines; recording shards stay at or below 800 lines. The loader verifies both levels, counts, allowed paths, purpose/kind agreement and duplicate paths before registering playback. Recording objects, audio bytes and lookup precedence are preserved.
 
 ## Explicit catalog normalization and sentence composition inventories
 

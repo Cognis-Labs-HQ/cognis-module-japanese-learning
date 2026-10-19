@@ -346,6 +346,8 @@ Setiap lapisan menyediakan bidang gambar referensi opsional di editor dan tampil
 
 ## Inventaris Rekaman
 
+`data/audio/recordings.json` memakai format inventaris 2 dengan bahasa, suara, model, pengaturan pemrosesan, jumlah, dan jalur indeks tujuan beserta hash. Berkas `data/audio/indexes/` mencantumkan pecahan inventaris ber-hash dalam `data/audio/inventories/`, dikelompokkan untuk karakter, kosakata, transformasi, kalimat langsung, dan komposisi kalimat. Indeks utama dan indeks tujuan tetap di bawah 400 baris; pecahan rekaman maksimal 800 baris. Pemuat memeriksa kedua tingkat, jumlah, jalur yang diizinkan, kecocokan tujuan dan jenis, serta jalur duplikat sebelum mendaftarkan pemutaran. Objek rekaman, byte audio, dan prioritas pencarian dipertahankan.
+
 Pemutaran kalimat paket memakai PCM yang disusun persis dari klip penyusun, termasuk transformasi terpilih. Rekaman seluruh kalimat yang dihasilkan terpisah tetap diinventarisasi dengan asal suara dan permintaan asli, tetapi tidak menimpa rekaman komposisi. Kalimat baru tetap memakai komposisi dan cache milik host.
 
 ## Normalisasi katalog eksplisit dan inventaris komposisi kalimat
