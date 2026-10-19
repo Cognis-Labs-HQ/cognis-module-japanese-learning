@@ -324,3 +324,4 @@ Add museum/zoo and はくぶつかん/どうぶつえん with four inspected ven
 - [eb0adc9](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/eb0adc9ec201e56bf7ff32607efaf6ceef830266)
 - [6d040c3](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/6d040c3f98d884bd40251af824e1cf0862263e79)
 - [726025e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/726025e7e62eea03d9acbefe2761e4592c7b3fdb)
+- [01e65fa](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/01e65fa390957dd9605d54366d35ccf7aea81f68)
