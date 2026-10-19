@@ -254,3 +254,4 @@ Vier einzeln verfasste Beispiele zum Abwaschen, Lesen, Sitzen am Tisch und zu pe
 - [fc64ba5](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/fc64ba5cd273e3387426313717fabe2670af2396)
 - [1f80650](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/1f806500fd8a5176674fbadcaa643853c4d5afb1)
 - [83b9847](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/83b98479829db3b5980453283238388c2a51545e)
+- [042c569](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/042c56928ce079df2be4795bf92c93bf51cae73c)
