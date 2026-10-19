@@ -1,0 +1,152 @@
+[
+    {
+        "id": "ja:sentence:stationery-example-scissors-location",
+        "label": "はさみはかばんにある",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/f643bec85c1b59bb9acb21d11101dfbb242fa957a644efdf469a54cdad8c3407.wav",
+            "pronunciation": ["はさみはかばんにある"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:stationery-scissors",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:bag",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:ni",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:aru-exist",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:stationery-example-scissors-location",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:stationery-example-buy-eraser",
+        "label": "けしゴムをかう",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/ed9b6025e19b0792e65ed89cda984325c10221c4808e5c2f89ababce37f71775.wav",
+            "pronunciation": ["けしごむをかう"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:stationery-eraser",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:travel-buy",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:definition:stationery-example-buy-eraser",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:stationery-example-tape-question",
+        "label": "テープはどこですか",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/2667719d7e5dc3d45efd11d65744ca02b45155b4c56ecfe6f520dc58a81dce7d.wav",
+            "pronunciation": ["てーぷはどこですか"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:stationery-tape",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:doko",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:word:desu",
+                "relation": "words",
+                "position": 3
+            },
+            {
+                "entryId": "ja:particle:ka",
+                "relation": "particles",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:stationery-example-tape-question",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:stationery-example-receive-stapler",
+        "label": "先生からホチキスをもらう",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/2d381b20db5036cabbb081cf8c8ae905830e921172f66b97d235a58ad25d6908.wav",
+            "pronunciation": ["せんせいからほちきすをもらう"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:sensei",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:kara",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:stationery-stapler",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:exchange-receive",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:stationery-example-receive-stapler",
+                "relation": "definitions"
+            }
+        ]
+    }
+]

@@ -198,6 +198,10 @@ Give/receive und あげる/もらう mit je zwei visuell geprüften Bildern und 
 
 Flasche, Schachtel, Korb und Briefumschlag mit lokalisierten Bedeutungen, Gebrauchshinweisen, geprüften Bildern und vier Beispielen ergänzt. Das japanische Wort für Briefumschlag behält beide Langvokale. Audio verwendet die festgelegten Stimmen und exakte PCM-Bausteine; eine Hörprüfung bleibt gemäß der dokumentierten Ausnahme ausstehend.
 
+## Schreibwaren und Übungen
+
+Radiergummi, Schere, Klebeband und Heftgerät mit geprüften Bildern und vier Beispielen ergänzt. Gebrauchshinweise und Satzverknüpfungen erhalten den englischen Plural scissors, das nicht zählbare tape, den Langvokal in テープ und die Schreibweise ホチキス. Beim japanischen Empfangsbeispiel bleibt die Lehrkraft die Quelle. Die exakten Audiobausteine sind technisch geprüft; die Hörprüfung bleibt gemäß der dokumentierten Ausnahme ausstehend.
+
 ## Commits
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)

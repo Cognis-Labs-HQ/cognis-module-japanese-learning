@@ -88,6 +88,138 @@
         }
     },
     {
+        "path": "audio/5071ba85e9d82d21f4cc5529c1ebf4cb6f6f5c70ee83baba8f650f8772d3aefb.wav",
+        "text": "けしゴム",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "消しゴム",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "けしゴム",
+                "semanticRole": "lexicalUnit",
+                "readings": ["けしごむ"]
+            },
+            {
+                "language": "ja",
+                "label": "けしごむ",
+                "semanticRole": "lexicalUnit",
+                "readings": ["けしごむ"]
+            }
+        ],
+        "entries": [
+            "ja:word:stationery-eraser",
+            "ja:word:complete-pronunciation-stationery-eraser"
+        ],
+        "variants": [],
+        "sha256": "5071ba85e9d82d21f4cc5529c1ebf4cb6f6f5c70ee83baba8f650f8772d3aefb",
+        "frames": 22137,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "6dbb1e53d1b1a251f00b896b7ffc862d8f9060546a92524e2acf2180f2b2ff5f"
+        }
+    },
+    {
+        "path": "audio/8fab65178aeae16e2ea2c83e082e996113b6bb3984ccead73f742b9bb39440c3.wav",
+        "text": "テープ",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "テープ",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "テープ",
+                "semanticRole": "lexicalUnit",
+                "readings": ["てーぷ"]
+            },
+            {
+                "language": "ja",
+                "label": "てーぷ",
+                "semanticRole": "lexicalUnit",
+                "readings": ["てーぷ"]
+            }
+        ],
+        "entries": [
+            "ja:word:stationery-tape",
+            "ja:word:complete-pronunciation-stationery-tape"
+        ],
+        "variants": [],
+        "sha256": "8fab65178aeae16e2ea2c83e082e996113b6bb3984ccead73f742b9bb39440c3",
+        "frames": 18793,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "aa4e49433629b9e85dc8a6271f1c3da95d10c2002c0b4859ef218ec6c866e37b"
+        }
+    },
+    {
+        "path": "audio/5284b99ffe8d78385d5372eff85e48f66a00c69506d0879eb9fb470fd77a3893.wav",
+        "text": "ホチキス",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "ホチキス",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "ホチキス",
+                "semanticRole": "lexicalUnit",
+                "readings": ["ほちきす"]
+            },
+            {
+                "language": "ja",
+                "label": "ほちきす",
+                "semanticRole": "lexicalUnit",
+                "readings": ["ほちきす"]
+            }
+        ],
+        "entries": [
+            "ja:word:stationery-stapler",
+            "ja:word:complete-pronunciation-stationery-stapler"
+        ],
+        "variants": [],
+        "sha256": "5284b99ffe8d78385d5372eff85e48f66a00c69506d0879eb9fb470fd77a3893",
+        "frames": 22137,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "5e01214d297ec8b04064de635c2be61563350360054033816b127e89c6e45945"
+        }
+    },
+    {
         "path": "audio/4b90cc3f48b45d1a3098f68dbb5a542d78cdf4ffa0a4050f326a3346e3ae1501.wav",
         "text": "パスポート",
         "voiceId": "xya0RvcJtofTcFTOdX4E",
@@ -627,11 +759,11 @@
         }
     },
     {
-        "path": "audio/081418f3e4012f166c1adc344032338e53889d651734b7c553abb06bbd2b7809.wav",
-        "text": "りょうりしない",
+        "path": "audio/b41f1815458389dd5bf734a8341a77fadd58e2ac0314e2cd333c9d1a967b2789.wav",
         "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "text": "いる",
         "request": {
-            "text": "りょうりしない",
+            "text": "いる",
             "model_id": "eleven_flash_v2_5",
             "seed": 42,
             "voice_settings": {
@@ -641,153 +773,22 @@
                 "use_speaker_boost": true,
                 "speed": 0.9
             },
-            "language_code": "ja",
-            "apply_text_normalization": "off"
+            "language_code": "ja"
         },
         "inputs": [
             {
                 "language": "ja",
-                "label": "りょうりしない",
+                "label": "いる",
                 "semanticRole": "lexicalUnit",
-                "readings": ["りょうりしない"]
+                "readings": ["いる"]
             }
         ],
-        "entries": [],
-        "variants": [
-            {
-                "entryId": "ja:word:household-cook",
-                "setId": "household-cook-forms",
-                "path": ["negative"]
-            }
+        "entries": [
+            "ja:word:complete-pronunciation-iru-exist",
+            "ja:word:iru-exist"
         ],
-        "sha256": "081418f3e4012f166c1adc344032338e53889d651734b7c553abb06bbd2b7809",
-        "frames": 22137,
-        "metadata": {
-            "listening": "unverified-not-performed",
-            "sourcePcmSha256": "a00cc53ebdc3c8f8632ee6896da343d241c7aeb5404ea68b8332ac2051838fe5"
-        }
-    },
-    {
-        "path": "audio/a553073a0e3f68ef33106a6cc2f05c564e3f4e95a99761738d5143f63148b722.wav",
-        "text": "りょうりした",
-        "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "request": {
-            "text": "りょうりした",
-            "model_id": "eleven_flash_v2_5",
-            "seed": 42,
-            "voice_settings": {
-                "stability": 0.9,
-                "similarity_boost": 0.85,
-                "style": 0,
-                "use_speaker_boost": true,
-                "speed": 0.9
-            },
-            "language_code": "ja",
-            "apply_text_normalization": "off"
-        },
-        "inputs": [
-            {
-                "language": "ja",
-                "label": "りょうりした",
-                "semanticRole": "lexicalUnit",
-                "readings": ["りょうりした"]
-            }
-        ],
-        "entries": [],
-        "variants": [
-            {
-                "entryId": "ja:word:household-cook",
-                "setId": "household-cook-forms",
-                "path": ["past"]
-            }
-        ],
-        "sha256": "a553073a0e3f68ef33106a6cc2f05c564e3f4e95a99761738d5143f63148b722",
-        "frames": 21022,
-        "metadata": {
-            "listening": "unverified-not-performed",
-            "sourcePcmSha256": "4a50f976341eb6d36e1927cb4b8f75ce3f8bbded907a9a256fd1be08eadfbb92"
-        }
-    },
-    {
-        "path": "audio/35da470a5c0406c295922bd8f818936d1d962cab634065548b14623db5cf49ae.wav",
-        "text": "りょうりして",
-        "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "request": {
-            "text": "りょうりして",
-            "model_id": "eleven_flash_v2_5",
-            "seed": 42,
-            "voice_settings": {
-                "stability": 0.9,
-                "similarity_boost": 0.85,
-                "style": 0,
-                "use_speaker_boost": true,
-                "speed": 0.9
-            },
-            "language_code": "ja",
-            "apply_text_normalization": "off"
-        },
-        "inputs": [
-            {
-                "language": "ja",
-                "label": "りょうりして",
-                "semanticRole": "lexicalUnit",
-                "readings": ["りょうりして"]
-            }
-        ],
-        "entries": [],
-        "variants": [
-            {
-                "entryId": "ja:word:household-cook",
-                "setId": "household-cook-forms",
-                "path": ["te-form"]
-            }
-        ],
-        "sha256": "35da470a5c0406c295922bd8f818936d1d962cab634065548b14623db5cf49ae",
-        "frames": 22137,
-        "metadata": {
-            "listening": "unverified-not-performed",
-            "sourcePcmSha256": "9e1b7008d6354a0469131fbbb499ca3897424fa6e9c1b137599cb2afb1b663b3"
-        }
-    },
-    {
-        "path": "audio/a901e20a2c4744947c4247e04f514711c2f9ce55afbc9f16cc0f02b14afbed77.wav",
-        "text": "りょうりしました",
-        "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "request": {
-            "text": "りょうりしました",
-            "model_id": "eleven_flash_v2_5",
-            "seed": 42,
-            "voice_settings": {
-                "stability": 0.9,
-                "similarity_boost": 0.85,
-                "style": 0,
-                "use_speaker_boost": true,
-                "speed": 0.9
-            },
-            "language_code": "ja",
-            "apply_text_normalization": "off"
-        },
-        "inputs": [
-            {
-                "language": "ja",
-                "label": "りょうりしました",
-                "semanticRole": "lexicalUnit",
-                "readings": ["りょうりしました"]
-            }
-        ],
-        "entries": [],
-        "variants": [
-            {
-                "entryId": "ja:word:household-cook",
-                "setId": "household-cook-forms",
-                "path": ["polite-past"]
-            }
-        ],
-        "sha256": "a901e20a2c4744947c4247e04f514711c2f9ce55afbc9f16cc0f02b14afbed77",
-        "frames": 24366,
-        "metadata": {
-            "listening": "unverified-not-performed",
-            "sourcePcmSha256": "61f84ebc6c63dd7531e5286a13a702a170a8b1bc458d0b126c15769ce8c239c0"
-        }
+        "variants": [],
+        "sha256": "98b4952b9f879f6204ef562ac722c69d42a3effcb34fd2d9495db2334749b7d1",
+        "frames": 9087
     }
 ]
