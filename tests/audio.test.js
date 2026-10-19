@@ -97,6 +97,62 @@ function forms(entry) {
         });
 }
 
+test("every card and selected form has an unambiguous audio lookup identity", () => {
+    const lookups = new Map();
+    for (const layer of schema.layers) {
+        if (layer.semanticRole === "definition") continue;
+        for (const entry of layers.get(layer.id)) {
+            if (
+                entry.tags?.includes("punctuation") ||
+                unrecordedIds.has(entry.id)
+            )
+                continue;
+            const candidates = [
+                {
+                    label: entry.label,
+                    reading: entry.fields.pronunciation?.[0] ?? "",
+                    path: entry.fields.audio,
+                },
+            ];
+            for (const form of forms(entry)) {
+                const recording = inventory.recordings.find((clip) =>
+                    clip.variants.some(
+                        (variant) =>
+                            variant.entryId === entry.id &&
+                            variant.setId === form.setId &&
+                            JSON.stringify(variant.path) ===
+                                JSON.stringify(form.path),
+                    ),
+                );
+                assert.ok(recording, `${entry.id}: missing ${form.label}`);
+                candidates.push({
+                    label: form.label,
+                    reading: form.reading,
+                    path: recording.path,
+                });
+            }
+            for (const candidate of candidates) {
+                const key = JSON.stringify([
+                    candidate.label,
+                    layer.semanticRole,
+                    candidate.reading,
+                ]);
+                const digest = createHash("sha256")
+                    .update(assets.get(candidate.path))
+                    .digest("hex");
+                const previous = lookups.get(key);
+                if (previous)
+                    assert.equal(
+                        digest,
+                        previous.digest,
+                        `${entry.id} conflicts with ${previous.entryId} for ${key}`,
+                    );
+                else lookups.set(key, { digest, entryId: entry.id });
+            }
+        }
+    }
+});
+
 test("every packaged clip has the designated language voice, stable settings, non-silent PCM and a verified digest", () => {
     const expectedVoice =
         inventory.language === "ja"

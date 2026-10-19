@@ -66,6 +66,10 @@ Vier Wetterbeispiele mit exakten PCM-Segmenten ergänzen. Das englische cloud bi
 
 Vier illustrierte Jahreszeiten, vier Aktivitätsbeispiele und einen gemischten Übungsstapel ergänzen. Spring als Jahreszeit und autumn/fall erklären und Bilder gemäßigter Jahreszeiten von weltweiten Klimaregeln unterscheiden. Geprüfte Kana-Lesungen und exakte Audiosegmente bewahren; die Hörprüfung steht aus.
 
+## Alltagskleidung
+
+Hemden, Alltagskleider, Socken und Röcke mit vier englischen Pluralformen, vier Kontextbeispielen je Modul und einem Kleidungsstapel ergänzen. Alle Quellbilder und endgültigen Bilder prüfen, kleine Kana und lange Vokale bewahren und exakte Audiosegmente zusammensetzen. Ein Regressionstest lehnt widersprüchliche Aufnahmebytes für denselben Abrufschlüssel einer Karte oder Form ab. Die Hörprüfung steht aus.
+
 ## Commits
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)

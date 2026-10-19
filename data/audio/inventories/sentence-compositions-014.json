@@ -1,0 +1,242 @@
+[
+    {
+        "path": "audio/ee6712e005141b72382cafbbf6a738c7c7920569768f5d48e01afa6bdd04bd2d.wav",
+        "entryId": "ja:sentence:clothing-example-shirt",
+        "label": "シャツをかう",
+        "parts": [
+            {
+                "path": "audio/0f00fa39ddc666350b31f3bb952b323e73f48b0db239d261e968506cac7fb720.wav",
+                "entryId": "ja:word:clothing-shirt"
+            },
+            {
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "entryId": "ja:particle:wo"
+            },
+            {
+                "path": "audio/1a880a2cfc93aedb14ed94ad5cbd8ba5a803aa377bb98f0bf534e0ce8905bfd4.wav",
+                "entryId": "ja:word:travel-buy"
+            },
+            {
+                "pauseMs": 400
+            }
+        ],
+        "gapMs": 90,
+        "segments": [
+            {
+                "path": "audio/0f00fa39ddc666350b31f3bb952b323e73f48b0db239d261e968506cac7fb720.wav",
+                "entryId": "ja:word:clothing-shirt",
+                "startFrame": 2400,
+                "frameCount": 16564
+            },
+            {
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "entryId": "ja:particle:wo",
+                "startFrame": 21124,
+                "frameCount": 8762
+            },
+            {
+                "path": "audio/1a880a2cfc93aedb14ed94ad5cbd8ba5a803aa377bb98f0bf534e0ce8905bfd4.wav",
+                "entryId": "ja:word:travel-buy",
+                "startFrame": 32046,
+                "frameCount": 13220
+            }
+        ],
+        "sha256": "ee6712e005141b72382cafbbf6a738c7c7920569768f5d48e01afa6bdd04bd2d",
+        "frames": 57026,
+        "input": {
+            "language": "ja",
+            "label": "シャツをかう",
+            "semanticRole": "orderedLexicalSequence",
+            "readings": ["シャツをかう"]
+        },
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "construction": "Exact clothing and existing constituent PCM, including selected English likes and plural socks."
+        }
+    },
+    {
+        "path": "audio/9df10a91ac0877bdf005e33225aadd58bae69909b747852018a76ddae02bad61.wav",
+        "entryId": "ja:sentence:clothing-example-dress",
+        "label": "ワンピースが好きです",
+        "parts": [
+            {
+                "path": "audio/1d3ca6fdc303371000b29140002868823160fafa76fc3685e8c3d914a9731514.wav",
+                "entryId": "ja:word:clothing-dress"
+            },
+            {
+                "path": "audio/69d02d32db53e5eeb4bb6db01917e619478b734bd66988c4242ccc1a3e55655d.wav",
+                "entryId": "ja:particle:ga"
+            },
+            {
+                "path": "audio/fff2a2381ef1abd6f3b0e24b6390a1f76d9fda74ec68bdc300ac3ff137a00214.wav",
+                "entryId": "ja:word:suki"
+            },
+            {
+                "path": "audio/2959a5dcab722b7d5c39f67845f1d6a3d6ede5f23e554e9547bca0e6cb62c56b.wav",
+                "entryId": "ja:word:desu"
+            },
+            {
+                "pauseMs": 400
+            }
+        ],
+        "gapMs": 90,
+        "segments": [
+            {
+                "path": "audio/1d3ca6fdc303371000b29140002868823160fafa76fc3685e8c3d914a9731514.wav",
+                "entryId": "ja:word:clothing-dress",
+                "startFrame": 2400,
+                "frameCount": 22137
+            },
+            {
+                "path": "audio/69d02d32db53e5eeb4bb6db01917e619478b734bd66988c4242ccc1a3e55655d.wav",
+                "entryId": "ja:particle:ga",
+                "startFrame": 26697,
+                "frameCount": 14335
+            },
+            {
+                "path": "audio/fff2a2381ef1abd6f3b0e24b6390a1f76d9fda74ec68bdc300ac3ff137a00214.wav",
+                "entryId": "ja:word:suki",
+                "startFrame": 43192,
+                "frameCount": 13644
+            },
+            {
+                "path": "audio/2959a5dcab722b7d5c39f67845f1d6a3d6ede5f23e554e9547bca0e6cb62c56b.wav",
+                "entryId": "ja:word:desu",
+                "startFrame": 58996,
+                "frameCount": 11490
+            }
+        ],
+        "sha256": "9df10a91ac0877bdf005e33225aadd58bae69909b747852018a76ddae02bad61",
+        "frames": 82246,
+        "input": {
+            "language": "ja",
+            "label": "ワンピースが好きです",
+            "semanticRole": "orderedLexicalSequence",
+            "readings": ["ワンピースがすきです"]
+        },
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "construction": "Exact clothing and existing constituent PCM, including selected English likes and plural socks."
+        }
+    },
+    {
+        "path": "audio/6f81d15135e374c231f5467683112e9771f10a0c387520085e2b5db718b654a6.wav",
+        "entryId": "ja:sentence:clothing-example-sock",
+        "label": "くつしたをかう",
+        "parts": [
+            {
+                "path": "audio/6f59f912c5dea707d120df48123a080148de049a65fa481b9647fc9a658de3f0.wav",
+                "entryId": "ja:word:clothing-sock"
+            },
+            {
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "entryId": "ja:particle:wo"
+            },
+            {
+                "path": "audio/1a880a2cfc93aedb14ed94ad5cbd8ba5a803aa377bb98f0bf534e0ce8905bfd4.wav",
+                "entryId": "ja:word:travel-buy"
+            },
+            {
+                "pauseMs": 400
+            }
+        ],
+        "gapMs": 90,
+        "segments": [
+            {
+                "path": "audio/6f59f912c5dea707d120df48123a080148de049a65fa481b9647fc9a658de3f0.wav",
+                "entryId": "ja:word:clothing-sock",
+                "startFrame": 2400,
+                "frameCount": 14335
+            },
+            {
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "entryId": "ja:particle:wo",
+                "startFrame": 18895,
+                "frameCount": 8762
+            },
+            {
+                "path": "audio/1a880a2cfc93aedb14ed94ad5cbd8ba5a803aa377bb98f0bf534e0ce8905bfd4.wav",
+                "entryId": "ja:word:travel-buy",
+                "startFrame": 29817,
+                "frameCount": 13220
+            }
+        ],
+        "sha256": "6f81d15135e374c231f5467683112e9771f10a0c387520085e2b5db718b654a6",
+        "frames": 54797,
+        "input": {
+            "language": "ja",
+            "label": "くつしたをかう",
+            "semanticRole": "orderedLexicalSequence",
+            "readings": ["くつしたをかう"]
+        },
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "construction": "Exact clothing and existing constituent PCM, including selected English likes and plural socks."
+        }
+    },
+    {
+        "path": "audio/a3be070f48bebeae6865940fa5925c14bc2456f18e54cf7330af6c2e69875449.wav",
+        "entryId": "ja:sentence:clothing-example-skirt",
+        "label": "スカートはきれいです",
+        "parts": [
+            {
+                "path": "audio/b1f5f3c73c48e5085f1cffb93a9af82fd132be5f41fc2df19c20f39f75d614fc.wav",
+                "entryId": "ja:word:clothing-skirt"
+            },
+            {
+                "path": "audio/d7c9e57654e559dfba3bd6f78c2f27416a61f8b28d56145d84a62fe25b70c94d.wav",
+                "entryId": "ja:particle:wa"
+            },
+            {
+                "path": "audio/729294273d1b42cf6236f7b51ac562913fb5e768d3538b99634a302867b2c948.wav",
+                "entryId": "ja:word:kirei"
+            },
+            {
+                "path": "audio/2959a5dcab722b7d5c39f67845f1d6a3d6ede5f23e554e9547bca0e6cb62c56b.wav",
+                "entryId": "ja:word:desu"
+            },
+            {
+                "pauseMs": 400
+            }
+        ],
+        "gapMs": 90,
+        "segments": [
+            {
+                "path": "audio/b1f5f3c73c48e5085f1cffb93a9af82fd132be5f41fc2df19c20f39f75d614fc.wav",
+                "entryId": "ja:word:clothing-skirt",
+                "startFrame": 2400,
+                "frameCount": 18793
+            },
+            {
+                "path": "audio/d7c9e57654e559dfba3bd6f78c2f27416a61f8b28d56145d84a62fe25b70c94d.wav",
+                "entryId": "ja:particle:wa",
+                "startFrame": 23353,
+                "frameCount": 12106
+            },
+            {
+                "path": "audio/729294273d1b42cf6236f7b51ac562913fb5e768d3538b99634a302867b2c948.wav",
+                "entryId": "ja:word:kirei",
+                "startFrame": 37619,
+                "frameCount": 10272
+            },
+            {
+                "path": "audio/2959a5dcab722b7d5c39f67845f1d6a3d6ede5f23e554e9547bca0e6cb62c56b.wav",
+                "entryId": "ja:word:desu",
+                "startFrame": 50051,
+                "frameCount": 11490
+            }
+        ],
+        "sha256": "a3be070f48bebeae6865940fa5925c14bc2456f18e54cf7330af6c2e69875449",
+        "frames": 73301,
+        "input": {
+            "language": "ja",
+            "label": "スカートはきれいです",
+            "semanticRole": "orderedLexicalSequence",
+            "readings": ["スカートはきれいです"]
+        },
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "construction": "Exact clothing and existing constituent PCM, including selected English likes and plural socks."
+        }
+    }
+]

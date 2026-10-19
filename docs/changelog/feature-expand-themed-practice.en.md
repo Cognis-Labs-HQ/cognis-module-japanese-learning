@@ -66,6 +66,10 @@ Add four weather examples using exact constituent PCM. English cloud now exposes
 
 Add four illustrated season nouns, four activity examples and a mixed practice deck. Explain spring as a season and autumn/fall usage, and distinguish temperate seasonal illustrations from worldwide climate rules. Preserve reviewed kana readings and exact constituent audio; listening remains unverified.
 
+## Everyday Clothing
+
+Add shirts, everyday dresses, socks and skirts with four English plural forms, four contextual examples per module and a clothing deck. Review every source and final illustration, preserve Japanese small kana and long vowels, and compose exact constituent audio. Add a regression check rejecting conflicting recording bytes for the same card or selected-form lookup identity. Listening remains unverified.
+
 ## Commits
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)

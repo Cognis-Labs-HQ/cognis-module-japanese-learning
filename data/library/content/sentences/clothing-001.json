@@ -1,0 +1,132 @@
+[
+    {
+        "id": "ja:sentence:clothing-example-shirt",
+        "label": "シャツをかう",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/ee6712e005141b72382cafbbf6a738c7c7920569768f5d48e01afa6bdd04bd2d.wav",
+            "pronunciation": ["シャツをかう"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:clothing-shirt",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:travel-buy",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:definition:clothing-example-shirt",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:clothing-example-dress",
+        "label": "ワンピースが好きです",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/9df10a91ac0877bdf005e33225aadd58bae69909b747852018a76ddae02bad61.wav",
+            "pronunciation": ["ワンピースがすきです"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:clothing-dress",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:ga",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:suki",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:word:desu",
+                "relation": "words",
+                "position": 3
+            },
+            {
+                "entryId": "ja:definition:clothing-example-dress",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:clothing-example-sock",
+        "label": "くつしたをかう",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/6f81d15135e374c231f5467683112e9771f10a0c387520085e2b5db718b654a6.wav",
+            "pronunciation": ["くつしたをかう"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:clothing-sock",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:travel-buy",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:definition:clothing-example-sock",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:clothing-example-skirt",
+        "label": "スカートはきれいです",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/a3be070f48bebeae6865940fa5925c14bc2456f18e54cf7330af6c2e69875449.wav",
+            "pronunciation": ["スカートはきれいです"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:clothing-skirt",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:kirei",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:word:desu",
+                "relation": "words",
+                "position": 3
+            },
+            {
+                "entryId": "ja:definition:clothing-example-skirt",
+                "relation": "definitions"
+            }
+        ]
+    }
+]
