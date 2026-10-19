@@ -274,6 +274,10 @@ Menambahkan letter/postcard dan てがみ/はがき dengan empat gambar yang dip
 
 Menambahkan send/carry dan おくる/はこぶ dengan empat gambar yang diperiksa, delapan contoh dan 24 ikatan bentuk gramatikal tepat. Sent dan carried berbagi rekaman lampau dan past participle; bentuk Jepang mempertahankan っ kecil versus んだ/んで. Dua gambar amplop yang salah ditolak dan diperbaiki, dengan bukti disimpan. PCM kalimat cocok persis dengan unsurnya. Pendengaran belum diperiksa.
 
+## Mengirim dan membawa dalam konteks
+
+Memperluas dek Mengirim dan Membawa yang ada dari enam menjadi sepuluh kartu per bahasa. Delapan contoh baru melatih tindakan lampau dan berlangsung, penerima, sumber, koordinasi, teman dan tujuan. ID, nama dan urutan kartu lama dipertahankan; tanpa dek atau gambar baru. Audio memakai ulang PCM unsur dengan suara yang disetujui tanpa biaya generasi. Pendengaran belum diperiksa.
+
 ## Komit
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)

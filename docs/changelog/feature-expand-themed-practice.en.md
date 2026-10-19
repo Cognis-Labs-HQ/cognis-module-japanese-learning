@@ -274,6 +274,10 @@ Add letter/postcard and てがみ/はがき with four inspected illustrations, e
 
 Add send/carry and おくる/はこぶ with four inspected illustrations, eight examples and 24 exact grammatical form bindings. English past/participle recordings are shared for sent and carried; Japanese past/te forms preserve small っ versus んだ/んで. Two inaccurate envelope originals were rejected and corrected, with evidence retained. Sentence PCM matches constituents exactly. Listening remains unverified.
 
+## Sending and carrying in context
+
+Extend the existing Sending and Carrying deck from six to ten cards per language. Eight new examples practise past and ongoing actions, recipients, sources, coordination, companions and destinations. Existing IDs, names and card order remain intact; no new deck or picture is added. Audio reuses exact approved-voice constituent PCM without generation charges. Listening remains unverified.
+
 ## Commits
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)

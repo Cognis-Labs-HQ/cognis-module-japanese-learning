@@ -274,6 +274,10 @@ Letter/postcard und てがみ/はがき mit vier geprüften Bildern, acht Beispi
 
 Send/carry und おくる/はこぶ mit vier geprüften Bildern, acht Beispielen und 24 exakten Flexionsbindungen ergänzt. Sent und carried teilen ihre Vergangenheits- und Partizipaufnahmen; japanische Formen unterscheiden kleines っ von んだ/んで. Zwei fehlerhafte Umschlagbilder wurden abgelehnt und korrigiert; Belege bleiben erhalten. Satz-PCM entspricht exakt den Bestandteilen. Die Hörprüfung steht aus.
 
+## Senden und Transportieren im Zusammenhang
+
+Das bestehende Deck Senden und Transportieren von sechs auf zehn Karten je Sprache erweitert. Acht neue Beispiele üben vergangene und laufende Handlungen, Empfänger, Herkunft, Aufzählungen, Begleiter und Ziele. IDs, Namen und bisherige Kartenreihenfolge bleiben erhalten; kein neues Deck oder Bild. Audio verwendet exaktes vorhandenes Komponenten-PCM der freigegebenen Stimmen ohne Generierungskosten. Die Hörprüfung steht aus.
+
 ## Commits
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)
