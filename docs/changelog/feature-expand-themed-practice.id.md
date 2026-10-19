@@ -206,6 +206,10 @@ Menambahkan penghapus, gunting, selotip, dan stapler dengan ilustrasi yang diper
 
 Menambahkan sit dan stand, bentuk tidak beraturan bahasa Inggris dan godan bahasa Jepang, ilustrasi yang diperiksa, serta empat contoh. Catatan membedakan perubahan posisi dari keadaan berkelanjutan dalam bahasa Jepang. Indeks tujuan ber-hash memungkinkan pertumbuhan konten dengan batas ukuran berkas tetap. Pemeriksaan pendengaran belum dilakukan sesuai pengecualian tercatat.
 
+## Kegiatan sehari-hari di rumah
+
+Menambahkan empat contoh yang ditulis satu per satu tentang mencuci piring, membaca, duduk di meja, dan barang pribadi. Contoh bahasa Jepang juga melatih memberi sup kepada teman serta menyatakan letak kunci di dalam kotak. Kosakata dan rekaman penyusun yang persis dipakai kembali; tidak diperlukan gambar atau permintaan penyedia baru.
+
 ## Komit
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)

@@ -19,12 +19,16 @@ const audio = await readAudioInventory("data/audio");
 const unavailable = await load("data/audio/unavailable.json");
 const decks = await load("data/starter-decks.json");
 
-for (const theme of ["daily", "shopping", "study-habits", "plans"].filter(
-    (theme) => auditIndex[theme + "Publication"],
-)) {
+for (const theme of [
+    "daily",
+    "shopping",
+    "study-habits",
+    "plans",
+    "home-practice",
+].filter((theme) => auditIndex[theme + "Publication"])) {
     test(`${theme} practice preserves reviewed meanings and distinguishes missing from unverified audio`, async () => {
         const review = await load(auditIndex[theme + "Publication"]);
-        assert.equal(review.length, 6);
+        assert.equal(review.length, theme === "home-practice" ? 4 : 6);
         assert.deepEqual(
             decks.find(({ key }) => key === theme + "-practice")
                 .sourceRecordIds,
