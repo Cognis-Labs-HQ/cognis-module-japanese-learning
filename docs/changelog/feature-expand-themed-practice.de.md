@@ -234,6 +234,10 @@ Cut und fold mit exakten englischen und japanischen Formen, korrigierten und gep
 
 Acht einzeln geprüfte Beispiele und zwei Übungsstapel mit vorhandenem Wortschatz und exakten gespeicherten Wortaufnahmen ergänzt. Die Essensvorbereitung umfasst Waschen, Schneiden, verbundene Zutaten und die Suche nach Kartoffeln; die Wetterübungen behandeln Regen, Regenschirme, Beschreibungen und Vorlieben für Jahreszeiten. Englisch verwendet die genaue Form cuts, Japanisch behält vollständige Lesungen und Partikelaussprache. Es werden keine neuen Wörter, Bilder oder Anbieteranfragen gezählt. Quellen und Nachweise je Satzaufnahme bleiben erhalten; die Hörprüfung steht aus.
 
+## Breite und verfügbarer Raum
+
+Wide und narrow sowie ひろい und せまい mit vier geprüften Brückenbildern und vier Kontextbeispielen je Sprache ergänzt. Englisch enthält wider/widest und narrower/narrowest; Japanisch umfasst adverbiale, verneinte und vergangene Formen mit vollständigen Kana und kleinem っ. Hinweise unterscheiden Breite und verfügbaren Raum von Länge. Exakte Wortaufnahmen, Originalbilder, PCM und Quellen bleiben erhalten; die Hörprüfung steht aus.
+
 ## Commits
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)

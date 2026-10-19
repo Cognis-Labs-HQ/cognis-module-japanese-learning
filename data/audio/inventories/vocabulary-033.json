@@ -1,0 +1,78 @@
+[
+    {
+        "path": "audio/ea8f1b36d566af028eac93fe41cbf66e219da86d3090d67ef9efc5db52694881.wav",
+        "text": "ひろい",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "広い",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "ひろい",
+                "semanticRole": "lexicalUnit",
+                "readings": ["ひろい"]
+            }
+        ],
+        "entries": [
+            "ja:word:width-wide",
+            "ja:word:complete-pronunciation-width-wide"
+        ],
+        "variants": [],
+        "sha256": "ea8f1b36d566af028eac93fe41cbf66e219da86d3090d67ef9efc5db52694881",
+        "frames": 15449,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "05fa564ed417b9d5650141199a09a6ff1b7117c6b7c750ed17c81f05718c4b2c"
+        }
+    },
+    {
+        "path": "audio/190978ad33e611c8748af68781dd3bbe9e6d15fe6e4154d0f0d15a6d92af4e48.wav",
+        "text": "せまい",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "狭い",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "せまい",
+                "semanticRole": "lexicalUnit",
+                "readings": ["せまい"]
+            }
+        ],
+        "entries": [
+            "ja:word:width-narrow",
+            "ja:word:complete-pronunciation-width-narrow"
+        ],
+        "variants": [],
+        "sha256": "190978ad33e611c8748af68781dd3bbe9e6d15fe6e4154d0f0d15a6d92af4e48",
+        "frames": 16564,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "13011826b29c8f4f9f7f7bd4abefb8da086a9582bb426288e6f16db077d305e4"
+        }
+    }
+]

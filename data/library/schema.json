@@ -1,6 +1,6 @@
 {
     "id": "japanese-core",
-    "version": 106,
+    "version": 107,
     "namespace": "ja",
     "language": "ja",
     "metadata": {
@@ -16346,6 +16346,210 @@
                                 "de": "{{ definition }} (Möglichkeitsform)",
                                 "id": "{{ definition }} (Potensial)",
                                 "ja": "{{ definition }} (可能形)"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "id": "width-wide-forms",
+            "metadata": {
+                "labels": {
+                    "en": "ひろい Forms",
+                    "de": "ひろい-Formen",
+                    "id": "Bentuk ひろい",
+                    "ja": "ひろいの活用"
+                }
+            },
+            "matchTags": ["adjective", "width-form-wide"],
+            "baseState": "base",
+            "rules": [
+                {
+                    "id": "adverb",
+                    "metadata": {
+                        "labels": {
+                            "de": "Adverbialform",
+                            "en": "Adverbial Form",
+                            "id": "Bentuk Adverbial",
+                            "ja": "副詞形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "adverb",
+                    "removeSuffix": "ひろい",
+                    "append": "ひろく",
+                    "pronunciation": {
+                        "removeSuffix": "ひろい",
+                        "append": "ひろく"
+                    },
+                    "definitionTransform": {
+                        "template": {
+                            "labels": {
+                                "de": "{{ definition }} (Adverbialform)",
+                                "en": "{{ definition }} (Adverbial Form)",
+                                "id": "{{ definition }} (Bentuk Adverbial)",
+                                "ja": "{{ definition }} (副詞形)"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "negative",
+                    "metadata": {
+                        "labels": {
+                            "de": "Verneinung",
+                            "en": "Negative",
+                            "id": "Negatif",
+                            "ja": "否定形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "negative",
+                    "removeSuffix": "ひろい",
+                    "append": "ひろくない",
+                    "pronunciation": {
+                        "removeSuffix": "ひろい",
+                        "append": "ひろくない"
+                    },
+                    "definitionTransform": {
+                        "template": {
+                            "labels": {
+                                "de": "{{ definition }} (Verneinung)",
+                                "en": "{{ definition }} (Negative)",
+                                "id": "{{ definition }} (Negatif)",
+                                "ja": "{{ definition }} (否定形)"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "past",
+                    "metadata": {
+                        "labels": {
+                            "de": "Vergangenheit",
+                            "en": "Past",
+                            "id": "Lampau",
+                            "ja": "過去形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "past",
+                    "removeSuffix": "ひろい",
+                    "append": "ひろかった",
+                    "pronunciation": {
+                        "removeSuffix": "ひろい",
+                        "append": "ひろかった"
+                    },
+                    "definitionTransform": {
+                        "template": {
+                            "labels": {
+                                "de": "{{ definition }} (Vergangenheit)",
+                                "en": "{{ definition }} (Past)",
+                                "id": "{{ definition }} (Lampau)",
+                                "ja": "{{ definition }} (過去形)"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "id": "width-narrow-forms",
+            "metadata": {
+                "labels": {
+                    "en": "せまい Forms",
+                    "de": "せまい-Formen",
+                    "id": "Bentuk せまい",
+                    "ja": "せまいの活用"
+                }
+            },
+            "matchTags": ["adjective", "width-form-narrow"],
+            "baseState": "base",
+            "rules": [
+                {
+                    "id": "adverb",
+                    "metadata": {
+                        "labels": {
+                            "de": "Adverbialform",
+                            "en": "Adverbial Form",
+                            "id": "Bentuk Adverbial",
+                            "ja": "副詞形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "adverb",
+                    "removeSuffix": "せまい",
+                    "append": "せまく",
+                    "pronunciation": {
+                        "removeSuffix": "せまい",
+                        "append": "せまく"
+                    },
+                    "definitionTransform": {
+                        "template": {
+                            "labels": {
+                                "de": "{{ definition }} (Adverbialform)",
+                                "en": "{{ definition }} (Adverbial Form)",
+                                "id": "{{ definition }} (Bentuk Adverbial)",
+                                "ja": "{{ definition }} (副詞形)"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "negative",
+                    "metadata": {
+                        "labels": {
+                            "de": "Verneinung",
+                            "en": "Negative",
+                            "id": "Negatif",
+                            "ja": "否定形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "negative",
+                    "removeSuffix": "せまい",
+                    "append": "せまくない",
+                    "pronunciation": {
+                        "removeSuffix": "せまい",
+                        "append": "せまくない"
+                    },
+                    "definitionTransform": {
+                        "template": {
+                            "labels": {
+                                "de": "{{ definition }} (Verneinung)",
+                                "en": "{{ definition }} (Negative)",
+                                "id": "{{ definition }} (Negatif)",
+                                "ja": "{{ definition }} (否定形)"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "past",
+                    "metadata": {
+                        "labels": {
+                            "de": "Vergangenheit",
+                            "en": "Past",
+                            "id": "Lampau",
+                            "ja": "過去形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "past",
+                    "removeSuffix": "せまい",
+                    "append": "せまかった",
+                    "pronunciation": {
+                        "removeSuffix": "せまい",
+                        "append": "せまかった"
+                    },
+                    "definitionTransform": {
+                        "template": {
+                            "labels": {
+                                "de": "{{ definition }} (Vergangenheit)",
+                                "en": "{{ definition }} (Past)",
+                                "id": "{{ definition }} (Lampau)",
+                                "ja": "{{ definition }} (過去形)"
                             }
                         }
                     }

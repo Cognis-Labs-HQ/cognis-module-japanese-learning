@@ -1,0 +1,162 @@
+[
+    {
+        "id": "ja:sentence:width-example-wide-bridge",
+        "label": "橋はひろいです",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/ae8e10217f2be6b981c1283607f46664cbad16df12bd0290fb66ea184ff931f8.wav",
+            "pronunciation": ["はしはひろいです"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:hashi-bridge",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:width-wide",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:word:desu",
+                "relation": "words",
+                "position": 3
+            },
+            {
+                "entryId": "ja:definition:width-example-wide-bridge",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:width-example-narrow-crossing",
+        "label": "せまい橋をゆっくり歩く",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/d257aabba448be1bd7fc4d9c06c1954c799fb0606543d4e5e24316c804987599.wav",
+            "pronunciation": ["せまいはしをゆっくりあるく"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:width-narrow",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:word:hashi-bridge",
+                "relation": "words",
+                "position": 1
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 2
+            },
+            {
+                "entryId": "ja:word:yukkuri",
+                "relation": "words",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:aruku",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:width-example-narrow-crossing",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:width-example-cramped-bedroom",
+        "label": "しんしつはとてもせまいです",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/f64e715c3aaa9dd6b6465543ac3b1000a10a11ab84d87775d983247a1c37070f.wav",
+            "pronunciation": ["しんしつはとてもせまいです"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:rooms-bedroom",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:totemo",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:word:width-narrow",
+                "relation": "words",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:desu",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:width-example-cramped-bedroom",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:width-example-spacious-garden",
+        "label": "ひろいにわでほんをよむ",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/3f0adb4ba08a298303a50ecc628f45420322954a342534d89c76ae9c66429852.wav",
+            "pronunciation": ["ひろいにわでほんをよむ"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:width-wide",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:word:rooms-garden",
+                "relation": "words",
+                "position": 1
+            },
+            {
+                "entryId": "ja:particle:de",
+                "relation": "particles",
+                "position": 2
+            },
+            {
+                "entryId": "ja:word:reading-time-book",
+                "relation": "words",
+                "position": 3
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 4
+            },
+            {
+                "entryId": "ja:word:core-read",
+                "relation": "words",
+                "position": 5
+            },
+            {
+                "entryId": "ja:definition:width-example-spacious-garden",
+                "relation": "definitions"
+            }
+        ]
+    }
+]

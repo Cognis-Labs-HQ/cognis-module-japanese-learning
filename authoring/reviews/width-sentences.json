@@ -1,0 +1,262 @@
+[
+    {
+        "entryId": "ja:sentence:width-example-wide-bridge",
+        "label": "橋はひろいです",
+        "reading": "はしはひろいです",
+        "meanings": {
+            "en": "The bridge is wide.",
+            "de": "Die Brücke ist breit.",
+            "id": "Jembatannya lebar.",
+            "ja": "橋は広いです。"
+        },
+        "constituentIds": [
+            "ja:word:hashi-bridge",
+            "ja:particle:wa",
+            "ja:word:width-wide",
+            "ja:word:desu"
+        ],
+        "selectedTransformations": [],
+        "audioPath": "audio/ae8e10217f2be6b981c1283607f46664cbad16df12bd0290fb66ea184ff931f8.wav",
+        "sha256": "ae8e10217f2be6b981c1283607f46664cbad16df12bd0290fb66ea184ff931f8",
+        "audioAvailability": "bundled-composition",
+        "listening": "unverified-not-performed",
+        "textReview": "ひろい is an i-adjective before polite です; no な or だ is inserted. 橋 refers to a bridge rather than homophonous 箸.",
+        "sourceAudioEvidence": [
+            {
+                "entryId": "ja:word:hashi-bridge",
+                "path": "audio/0961c5699ea8a0302440aec81fde7266e9e37509b2e463252efb7eb3319fecf1.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "はし",
+                "sha256": "0e6f958252d9f06e1ecd32d729cc5ae6322e44d1077ae4ed52dae9c77b8c43f5"
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "path": "audio/d7c9e57654e559dfba3bd6f78c2f27416a61f8b28d56145d84a62fe25b70c94d.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "わ",
+                "sha256": "03b8d36aab677f09d2ecaad611a22b15785f0c717e6d6983dc5ef47296670c54"
+            },
+            {
+                "entryId": "ja:word:width-wide",
+                "path": "audio/ea8f1b36d566af028eac93fe41cbf66e219da86d3090d67ef9efc5db52694881.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "広い",
+                "sha256": "7cfb9fbcdadaefd06d06731202360e186d5185e9e765ae5df4caf6ebfddcff33"
+            },
+            {
+                "entryId": "ja:word:desu",
+                "path": "audio/2959a5dcab722b7d5c39f67845f1d6a3d6ede5f23e554e9547bca0e6cb62c56b.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "です",
+                "sha256": "d0234f8c988b83fef6bd73c37296bf1a45c0e71f6afc96ac32aa4213e3deb89e"
+            }
+        ],
+        "peak": 26869,
+        "fullScaleSamples": 0,
+        "reviewedDate": "2026-10-19",
+        "sourceAudit": "authoring/reviews/width-vocabulary.json"
+    },
+    {
+        "entryId": "ja:sentence:width-example-narrow-crossing",
+        "label": "せまい橋をゆっくり歩く",
+        "reading": "せまいはしをゆっくりあるく",
+        "meanings": {
+            "en": "I walk slowly across a narrow bridge.",
+            "de": "Ich gehe langsam über eine schmale Brücke.",
+            "id": "Saya berjalan perlahan melintasi jembatan sempit.",
+            "ja": "狭い橋をゆっくり歩く。"
+        },
+        "constituentIds": [
+            "ja:word:width-narrow",
+            "ja:word:hashi-bridge",
+            "ja:particle:wo",
+            "ja:word:yukkuri",
+            "ja:word:aruku"
+        ],
+        "selectedTransformations": [],
+        "audioPath": "audio/d257aabba448be1bd7fc4d9c06c1954c799fb0606543d4e5e24316c804987599.wav",
+        "sha256": "d257aabba448be1bd7fc4d9c06c1954c799fb0606543d4e5e24316c804987599",
+        "audioAvailability": "bundled-composition",
+        "listening": "unverified-not-performed",
+        "textReview": "せまい directly modifies 橋. を marks the route traversed with 歩く; ゆっくり supplies manner. The omitted subject is interpreted as I in this practice context.",
+        "sourceAudioEvidence": [
+            {
+                "entryId": "ja:word:width-narrow",
+                "path": "audio/190978ad33e611c8748af68781dd3bbe9e6d15fe6e4154d0f0d15a6d92af4e48.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "狭い",
+                "sha256": "9281a418400acbcc5fdec0bacef5450788e20796d7983d37477e5660ba0002f9"
+            },
+            {
+                "entryId": "ja:word:hashi-bridge",
+                "path": "audio/0961c5699ea8a0302440aec81fde7266e9e37509b2e463252efb7eb3319fecf1.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "はし",
+                "sha256": "0e6f958252d9f06e1ecd32d729cc5ae6322e44d1077ae4ed52dae9c77b8c43f5"
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "お",
+                "sha256": "5a89703412d90e8bc518242ca91fa93b5ea164aa2d3ff9b6e0b5996b7695f8e8"
+            },
+            {
+                "entryId": "ja:word:yukkuri",
+                "path": "audio/1c2d1664ef0db6298e34d97fa47fd27aa3dfc34f44515e3e22ed6e07e2ca0011.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "ゆっくり。",
+                "sha256": "0ca5d50da42914d40c1c804f7a133c2acec429eb98622a30526d4ce792ff368c"
+            },
+            {
+                "entryId": "ja:word:aruku",
+                "path": "audio/a6c59dc12594eaf457c52ccdd8b684e37c0953566969c41f972f4d22b105bff4.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "あるく",
+                "sha256": "fe58b474ab72e00ba62b485071a0b525f328eef1d0687ed58bb1af05fe109b8f"
+            }
+        ],
+        "peak": 26869,
+        "fullScaleSamples": 0,
+        "reviewedDate": "2026-10-19",
+        "sourceAudit": "authoring/reviews/width-vocabulary.json"
+    },
+    {
+        "entryId": "ja:sentence:width-example-cramped-bedroom",
+        "label": "しんしつはとてもせまいです",
+        "reading": "しんしつはとてもせまいです",
+        "meanings": {
+            "en": "The bedroom is very cramped.",
+            "de": "Das Schlafzimmer ist sehr eng.",
+            "id": "Kamar tidurnya sangat sempit.",
+            "ja": "寝室はとても狭いです。"
+        },
+        "constituentIds": [
+            "ja:word:rooms-bedroom",
+            "ja:particle:wa",
+            "ja:word:totemo",
+            "ja:word:width-narrow",
+            "ja:word:desu"
+        ],
+        "selectedTransformations": [],
+        "audioPath": "audio/f64e715c3aaa9dd6b6465543ac3b1000a10a11ab84d87775d983247a1c37070f.wav",
+        "sha256": "f64e715c3aaa9dd6b6465543ac3b1000a10a11ab84d87775d983247a1c37070f",
+        "audioAvailability": "bundled-composition",
+        "listening": "unverified-not-performed",
+        "textReview": "せまい describes limited space in a bedroom; とても intensifies it. Translations use cramped/eng/sempit rather than claiming a short length.",
+        "sourceAudioEvidence": [
+            {
+                "entryId": "ja:word:rooms-bedroom",
+                "path": "audio/7b1765d659afd741a509ee692bbea9cd16c68131779be1fcbd98cb8c2169845c.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "寝室",
+                "sha256": "0155590936f02ab3f7011fe5efc56489852934298330438b7c964f1def67c714"
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "path": "audio/d7c9e57654e559dfba3bd6f78c2f27416a61f8b28d56145d84a62fe25b70c94d.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "わ",
+                "sha256": "03b8d36aab677f09d2ecaad611a22b15785f0c717e6d6983dc5ef47296670c54"
+            },
+            {
+                "entryId": "ja:word:totemo",
+                "path": "audio/6bd90d517ec5079a9272a10b6ee16cc30a38525e42cd4cb4eb3bf6bf210ba2c5.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "とても",
+                "sha256": "7ce213650bbcc1563c61e69b45cc80177a7471e6d86fef2a12689ee64387e55a"
+            },
+            {
+                "entryId": "ja:word:width-narrow",
+                "path": "audio/190978ad33e611c8748af68781dd3bbe9e6d15fe6e4154d0f0d15a6d92af4e48.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "狭い",
+                "sha256": "9281a418400acbcc5fdec0bacef5450788e20796d7983d37477e5660ba0002f9"
+            },
+            {
+                "entryId": "ja:word:desu",
+                "path": "audio/2959a5dcab722b7d5c39f67845f1d6a3d6ede5f23e554e9547bca0e6cb62c56b.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "です",
+                "sha256": "d0234f8c988b83fef6bd73c37296bf1a45c0e71f6afc96ac32aa4213e3deb89e"
+            }
+        ],
+        "peak": 26869,
+        "fullScaleSamples": 0,
+        "reviewedDate": "2026-10-19",
+        "sourceAudit": "authoring/reviews/width-vocabulary.json"
+    },
+    {
+        "entryId": "ja:sentence:width-example-spacious-garden",
+        "label": "ひろいにわでほんをよむ",
+        "reading": "ひろいにわでほんをよむ",
+        "meanings": {
+            "en": "I read a book in a spacious garden.",
+            "de": "Ich lese ein Buch in einem geräumigen Garten.",
+            "id": "Saya membaca buku di taman yang luas.",
+            "ja": "広い庭で本を読む。"
+        },
+        "constituentIds": [
+            "ja:word:width-wide",
+            "ja:word:rooms-garden",
+            "ja:particle:de",
+            "ja:word:reading-time-book",
+            "ja:particle:wo",
+            "ja:word:core-read"
+        ],
+        "selectedTransformations": [],
+        "audioPath": "audio/3f0adb4ba08a298303a50ecc628f45420322954a342534d89c76ae9c66429852.wav",
+        "sha256": "3f0adb4ba08a298303a50ecc628f45420322954a342534d89c76ae9c66429852",
+        "audioAvailability": "bundled-composition",
+        "listening": "unverified-not-performed",
+        "textReview": "ひろい directly modifies にわ; で marks the location of reading and を marks the book. Spacious is the contextual English translation for available garden area.",
+        "sourceAudioEvidence": [
+            {
+                "entryId": "ja:word:width-wide",
+                "path": "audio/ea8f1b36d566af028eac93fe41cbf66e219da86d3090d67ef9efc5db52694881.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "広い",
+                "sha256": "7cfb9fbcdadaefd06d06731202360e186d5185e9e765ae5df4caf6ebfddcff33"
+            },
+            {
+                "entryId": "ja:word:rooms-garden",
+                "path": "audio/1a9600a1b917df1a274df93c47a024e5aceddb723472dd1b2c0790f00409a10e.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "庭",
+                "sha256": "76144f2419f045157db7db6a713ed3fc533751a6d7550efb88552590a3fd5b76"
+            },
+            {
+                "entryId": "ja:particle:de",
+                "path": "audio/df81472c8108ad9b47d8d90db017ff1c1b553d80263d6a2c59de1571671f3eee.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "で",
+                "sha256": "57b1611b914f170a0de5d42042b0a97c1dada8d50838ba27ed1c2677dcb232c3"
+            },
+            {
+                "entryId": "ja:word:reading-time-book",
+                "path": "audio/b2449bbb16eeefb72452963d9076569770bb78efc96be165e39aa6656e865e8c.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "ほん",
+                "sha256": "2a7a8874f92c46ee7a036d77b946b332b199d6936198d9c360b4f11988fb797c"
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "お",
+                "sha256": "5a89703412d90e8bc518242ca91fa93b5ea164aa2d3ff9b6e0b5996b7695f8e8"
+            },
+            {
+                "entryId": "ja:word:core-read",
+                "path": "audio/9636388bbb5506a329e11171db13088225f73201ebdde96eabd1b560bb70cce0.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "読む",
+                "sha256": "65ea6dcf2fad29732669d274f9621642bc19fa3b2e74442712c9aec4b6d3964d"
+            }
+        ],
+        "peak": 26869,
+        "fullScaleSamples": 0,
+        "reviewedDate": "2026-10-19",
+        "sourceAudit": "authoring/reviews/width-vocabulary.json"
+    }
+]

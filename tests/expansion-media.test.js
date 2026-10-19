@@ -30,6 +30,7 @@ for (const theme of [
     "craft",
     "courtesy",
     "length",
+    "width",
     "force",
     "containers",
     "exchange",

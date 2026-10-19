@@ -234,6 +234,10 @@ Menambahkan cut dan fold dengan rekaman bentuk Inggris dan Jepang yang tepat, il
 
 Menambahkan delapan contoh yang ditinjau satu per satu dan dua dek latihan dengan kosakata yang sudah ada serta rekaman unsur tersimpan yang persis. Latihan makanan mencakup mencuci, memotong, menggabungkan bahan dan mencari kentang; latihan cuaca mencakup hujan, payung, deskripsi dan kesukaan musim. Bahasa Inggris memakai bentuk cuts yang tepat, sedangkan bahasa Jepang mempertahankan bacaan lengkap dan pelafalan partikel. Tidak ada kosakata baru, ilustrasi baru atau permintaan penyedia yang dihitung. Sumber dan bukti setiap komposisi disimpan; pendengaran belum diperiksa.
 
+## Lebar dan ruang yang tersedia
+
+Menambahkan wide dan narrow serta ひろい dan せまい dengan empat ilustrasi jembatan yang diperiksa dan empat contoh kontekstual per bahasa. Bahasa Inggris mencakup wider/widest dan narrower/narrowest; bahasa Jepang mencakup bentuk adverbial, negatif dan lampau dengan kana lengkap serta っ kecil. Catatan membedakan lebar dan ruang dari panjang. Audio unsur yang tepat, gambar asli, PCM dan sumber disimpan; pendengaran belum diperiksa.
+
 ## Komit
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)

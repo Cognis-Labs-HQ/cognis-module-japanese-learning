@@ -1,5 +1,36 @@
 [
     {
+        "theme": "wildlife",
+        "newDistinctVocabularyCount": 4,
+        "vocabulary": [
+            {
+                "entryId": "ja:word:wildlife-fox",
+                "label": "きつね"
+            },
+            {
+                "entryId": "ja:word:wildlife-bear",
+                "label": "くま"
+            },
+            {
+                "entryId": "ja:word:wildlife-monkey",
+                "label": "さる"
+            },
+            {
+                "entryId": "ja:word:wildlife-elephant",
+                "label": "ぞう"
+            }
+        ],
+        "newExampleCount": 4,
+        "exampleIds": [
+            "ja:sentence:wildlife-example-fox-habitat",
+            "ja:sentence:wildlife-example-bear-movement",
+            "ja:sentence:wildlife-example-monkey-observation",
+            "ja:sentence:wildlife-example-elephant-size"
+        ],
+        "recordedGrammaticalFormCount": 0,
+        "vocabularyAudit": "authoring/reviews/wildlife-vocabulary.json"
+    },
+    {
         "theme": "mealtime",
         "newDistinctVocabularyCount": 0,
         "vocabulary": [],
@@ -140,19 +171,5 @@
         ],
         "recordedGrammaticalFormCount": 0,
         "vocabularyAudit": "authoring/reviews/getting-ready-sentences.json"
-    },
-    {
-        "theme": "home-practice",
-        "newDistinctVocabularyCount": 0,
-        "vocabulary": [],
-        "newExampleCount": 4,
-        "exampleIds": [
-            "ja:sentence:home-practice-example-read-items",
-            "ja:sentence:home-practice-example-wash-dishes",
-            "ja:sentence:home-practice-example-give-soup",
-            "ja:sentence:home-practice-example-key-box"
-        ],
-        "recordedGrammaticalFormCount": 0,
-        "vocabularyAudit": "authoring/reviews/home-practice-sentences.json"
     }
 ]
