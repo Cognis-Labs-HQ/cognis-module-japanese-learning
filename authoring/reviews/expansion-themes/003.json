@@ -157,6 +157,29 @@
         "vocabularyAudit": "authoring/reviews/location-vocabulary.json"
     },
     {
+        "theme": "material-feel",
+        "newDistinctVocabularyCount": 2,
+        "vocabulary": [
+            {
+                "entryId": "ja:word:material-feel-hard",
+                "label": "かたい"
+            },
+            {
+                "entryId": "ja:word:material-feel-soft",
+                "label": "やわらかい"
+            }
+        ],
+        "newExampleCount": 4,
+        "exampleIds": [
+            "ja:sentence:material-feel-example-hard-stone",
+            "ja:sentence:material-feel-example-like-soft-pillow",
+            "ja:sentence:material-feel-example-eat-tender-meat",
+            "ja:sentence:material-feel-example-find-firm-chair"
+        ],
+        "recordedGrammaticalFormCount": 6,
+        "vocabularyAudit": "authoring/reviews/material-feel-vocabulary.json"
+    },
+    {
         "theme": "nature",
         "newDistinctVocabularyCount": 4,
         "vocabulary": [
@@ -240,36 +263,5 @@
         ],
         "recordedGrammaticalFormCount": 16,
         "vocabularyAudit": "authoring/reviews/posture-vocabulary.json"
-    },
-    {
-        "theme": "qualities",
-        "newDistinctVocabularyCount": 4,
-        "vocabulary": [
-            {
-                "entryId": "ja:word:qualities-heavy",
-                "label": "おもい"
-            },
-            {
-                "entryId": "ja:word:qualities-light",
-                "label": "かるい"
-            },
-            {
-                "entryId": "ja:word:qualities-easy",
-                "label": "やさしい"
-            },
-            {
-                "entryId": "ja:word:qualities-difficult",
-                "label": "むずかしい"
-            }
-        ],
-        "newExampleCount": 4,
-        "exampleIds": [
-            "ja:sentence:qualities-example-heavy",
-            "ja:sentence:qualities-example-light",
-            "ja:sentence:qualities-example-easy",
-            "ja:sentence:qualities-example-difficult"
-        ],
-        "recordedGrammaticalFormCount": 12,
-        "vocabularyAudit": "authoring/reviews/qualities-vocabulary.json"
     }
 ]

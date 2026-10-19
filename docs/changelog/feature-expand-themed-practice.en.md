@@ -254,6 +254,10 @@ Add bright and dark with あかるい and くらい, four inspected room illustr
 
 Add scarf/glove and マフラー/てぶくろ with four inspected illustrations and four contextual examples per language. English scarves/gloves retain exact plural recordings. Notes distinguish warm neckwear from an exhaust muffler and explain Japanese number and mitten coverage. Sources, original images and PCM are retained; listening remains unverified.
 
+## Hard and soft materials
+
+Add hard/soft and かたい/やわらかい with four inspected pressure demonstrations and four contextual examples per language. Precise sense labels distinguish physical hardness and softness from difficulty, volume and personality. Comparison and i-adjective forms retain exact recordings and complete stems. Sources, originals and PCM remain; listening is unverified.
+
 ## Commits
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)

@@ -1,5 +1,36 @@
 [
     {
+        "theme": "transport",
+        "newDistinctVocabularyCount": 4,
+        "vocabulary": [
+            {
+                "entryId": "ja:word:transport-airplane",
+                "label": "ひこうき"
+            },
+            {
+                "entryId": "ja:word:transport-boat",
+                "label": "ボート"
+            },
+            {
+                "entryId": "ja:word:transport-taxi",
+                "label": "タクシー"
+            },
+            {
+                "entryId": "ja:word:transport-motorcycle",
+                "label": "オートバイ"
+            }
+        ],
+        "newExampleCount": 4,
+        "exampleIds": [
+            "ja:sentence:transport-example-airplane",
+            "ja:sentence:transport-example-boat",
+            "ja:sentence:transport-example-taxi",
+            "ja:sentence:transport-example-motorcycle"
+        ],
+        "recordedGrammaticalFormCount": 0,
+        "vocabularyAudit": "authoring/reviews/transport-vocabulary.json"
+    },
+    {
         "theme": "vegetables",
         "newDistinctVocabularyCount": 4,
         "vocabulary": [
@@ -201,21 +232,5 @@
         ],
         "recordedGrammaticalFormCount": 0,
         "vocabularyAudit": "authoring/reviews/daily-needs-sentences.json"
-    },
-    {
-        "theme": "classroom",
-        "newDistinctVocabularyCount": 0,
-        "vocabulary": [],
-        "newExampleCount": 6,
-        "exampleIds": [
-            "ja:sentence:classroom-1",
-            "ja:sentence:classroom-2",
-            "ja:sentence:classroom-3",
-            "ja:sentence:classroom-4",
-            "ja:sentence:classroom-5",
-            "ja:sentence:classroom-6"
-        ],
-        "recordedGrammaticalFormCount": 0,
-        "vocabularyAudit": "authoring/reviews/classroom-sentences.json"
     }
 ]

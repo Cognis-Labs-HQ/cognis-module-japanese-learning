@@ -254,6 +254,10 @@ Bright und dark sowie あかるい und くらい mit vier geprüften Zimmerbilde
 
 Scarf/glove und マフラー/てぶくろ mit vier geprüften Bildern und vier Kontextbeispielen je Sprache ergänzt. Scarves/gloves behalten exakte Pluralaufnahmen. Hinweise unterscheiden Schal und Auspuffschalldämpfer und erklären Zahl und Fäustlinge im Japanischen. Quellen, Originalbilder und PCM bleiben erhalten; die Hörprüfung steht aus.
 
+## Harte und weiche Materialien
+
+Hard/soft und かたい/やわらかい mit vier geprüften Druckdarstellungen und vier Kontextbeispielen je Sprache ergänzt. Präzise Bedeutungsangaben unterscheiden Materialeigenschaften von Schwierigkeit, Lautstärke und Persönlichkeit. Steigerungs- und i-Adjektivformen behalten exakte Aufnahmen und vollständige Stämme. Quellen, Originale und PCM bleiben erhalten; die Hörprüfung steht aus.
+
 ## Commits
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)

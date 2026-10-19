@@ -1,0 +1,78 @@
+[
+    {
+        "path": "audio/13fe3f50184b27a401e8aa69a93199b8ad86ccc274a29c021c7168bdf78020c1.wav",
+        "text": "かたい",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "硬い",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "かたい",
+                "semanticRole": "lexicalUnit",
+                "readings": ["かたい"]
+            }
+        ],
+        "entries": [
+            "ja:word:material-feel-hard",
+            "ja:word:complete-pronunciation-material-feel-hard"
+        ],
+        "variants": [],
+        "sha256": "13fe3f50184b27a401e8aa69a93199b8ad86ccc274a29c021c7168bdf78020c1",
+        "frames": 15449,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "1fe0fe465c5d176ef9121ea87f2b7190715ccc15a7704561233b1f65f4b506ff"
+        }
+    },
+    {
+        "path": "audio/321e1725a884b3c670a626694da4eb14d4a1ee61d2c803d9209484770c56d8f4.wav",
+        "text": "やわらかい",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "柔らかい",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "やわらかい",
+                "semanticRole": "lexicalUnit",
+                "readings": ["やわらかい"]
+            }
+        ],
+        "entries": [
+            "ja:word:material-feel-soft",
+            "ja:word:complete-pronunciation-material-feel-soft"
+        ],
+        "variants": [],
+        "sha256": "321e1725a884b3c670a626694da4eb14d4a1ee61d2c803d9209484770c56d8f4",
+        "frames": 19907,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "f7afb9281c72c4190f5ddf095d89df02224a5fcd1c491387f6cdc7e54152e3e5"
+        }
+    }
+]

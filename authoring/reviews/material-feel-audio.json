@@ -1,0 +1,70 @@
+[
+    {
+        "entryId": "ja:word:material-feel-hard",
+        "path": "audio/13fe3f50184b27a401e8aa69a93199b8ad86ccc274a29c021c7168bdf78020c1.wav",
+        "sha256": "13fe3f50184b27a401e8aa69a93199b8ad86ccc274a29c021c7168bdf78020c1",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "硬い",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "response": {
+            "request-id": "3PHtkYI8wpxGBuaEYvN2",
+            "character-cost": "1",
+            "content-type": "audio/pcm"
+        },
+        "sourcePath": "authoring/audio/material-feel/material-feel-hard.pcm",
+        "sourceSha256": "1fe0fe465c5d176ef9121ea87f2b7190715ccc15a7704561233b1f65f4b506ff",
+        "sourcePeak": 13869,
+        "sourceFullScaleSamples": 0,
+        "gain": 1,
+        "paddingFramesEachSide": 480,
+        "frames": 15449,
+        "listening": "unverified-not-performed",
+        "technicalReview": "Native written input and intended reading checked; all PCM frames preserved with gain limit and endpoint padding; non-silent mono PCM16 at 24000Hz. Not auditory verification."
+    },
+    {
+        "entryId": "ja:word:material-feel-soft",
+        "path": "audio/321e1725a884b3c670a626694da4eb14d4a1ee61d2c803d9209484770c56d8f4.wav",
+        "sha256": "321e1725a884b3c670a626694da4eb14d4a1ee61d2c803d9209484770c56d8f4",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "柔らかい",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "response": {
+            "request-id": "fuc2MD0LU8C8X6L6ogdd",
+            "character-cost": "2",
+            "content-type": "audio/pcm"
+        },
+        "sourcePath": "authoring/audio/material-feel/material-feel-soft.pcm",
+        "sourceSha256": "f7afb9281c72c4190f5ddf095d89df02224a5fcd1c491387f6cdc7e54152e3e5",
+        "sourcePeak": 8938,
+        "sourceFullScaleSamples": 0,
+        "gain": 1,
+        "paddingFramesEachSide": 480,
+        "frames": 19907,
+        "listening": "unverified-not-performed",
+        "technicalReview": "Native written input and intended reading checked; all PCM frames preserved with gain limit and endpoint padding; non-silent mono PCM16 at 24000Hz. Not auditory verification."
+    }
+]
