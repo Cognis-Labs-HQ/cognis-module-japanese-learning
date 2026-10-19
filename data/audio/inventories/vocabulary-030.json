@@ -1,0 +1,78 @@
+[
+    {
+        "path": "audio/552537441a965ea322a3aa468c2b86f53a4eda0094e20b87284fcee0a828bf65.wav",
+        "text": "ごめんなさい",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "ごめんなさい",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "ごめんなさい",
+                "semanticRole": "lexicalUnit",
+                "readings": ["ごめんなさい"]
+            }
+        ],
+        "entries": [
+            "ja:word:courtesy-sorry",
+            "ja:word:complete-pronunciation-courtesy-sorry"
+        ],
+        "variants": [],
+        "sha256": "552537441a965ea322a3aa468c2b86f53a4eda0094e20b87284fcee0a828bf65",
+        "frames": 21022,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "31543b5b52710ed5f32e85bb3ea600cb0cfe032dafac2f63c9f60399c28420aa"
+        }
+    },
+    {
+        "path": "audio/cde11962987ef05c1e4728772da25d427a713bb7c28dd47895d44c9122bb51b8.wav",
+        "text": "ようこそ",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "ようこそ",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "ようこそ",
+                "semanticRole": "lexicalUnit",
+                "readings": ["ようこそ"]
+            }
+        ],
+        "entries": [
+            "ja:word:courtesy-welcome",
+            "ja:word:complete-pronunciation-courtesy-welcome"
+        ],
+        "variants": [],
+        "sha256": "cde11962987ef05c1e4728772da25d427a713bb7c28dd47895d44c9122bb51b8",
+        "frames": 17678,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "d1a6b3efee7dd0c5492dbc500728c46d48c525faa997b20c6c9d1c196f38323e"
+        }
+    }
+]

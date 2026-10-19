@@ -1,0 +1,96 @@
+[
+    {
+        "entryId": "ja:sentence:courtesy-example-apology-later",
+        "label": "ごめんなさいあとではなす",
+        "reading": "ごめんなさいあとではなす",
+        "meanings": {
+            "en": "Sorry, I will talk later.",
+            "de": "Entschuldigung, ich spreche später.",
+            "id": "Maaf, saya akan berbicara nanti.",
+            "ja": "ごめんなさい、あとで話す。"
+        },
+        "constituentIds": [
+            "ja:word:courtesy-sorry",
+            "ja:word:time-later",
+            "ja:word:core-speak"
+        ],
+        "selectedTransformations": [],
+        "audioPath": "audio/354afba182bb4eff98aaff25df212363ea6658d53f02f8112517db2c368ae88b.wav",
+        "sha256": "354afba182bb4eff98aaff25df212363ea6658d53f02f8112517db2c368ae88b",
+        "audioAvailability": "bundled-composition",
+        "listening": "unverified-not-performed",
+        "textReview": "Apology and arrival-greeting senses reviewed. English apology retains do not plus base understand. Japanese apology uses a familiar plain nonpast with later context; welcome uses place + e + youkoso, not the response to thanks.",
+        "sourceAudioEvidence": [
+            {
+                "entryId": "ja:word:courtesy-sorry",
+                "path": "audio/552537441a965ea322a3aa468c2b86f53a4eda0094e20b87284fcee0a828bf65.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "ごめんなさい",
+                "sha256": "63952dafe9ceb620acbbf148e4889999ae835438609279880648eed531d6d347"
+            },
+            {
+                "entryId": "ja:word:time-later",
+                "path": "audio/5bbd2d796927483105abf97a1d9832f53ac688dd339e701c3c05c600ca24a852.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "あとで",
+                "sha256": "7705392390018cb9d5c036ca6b907700e52a8d0250dbd9e4465ee83d01bc69dc"
+            },
+            {
+                "entryId": "ja:word:core-speak",
+                "path": "audio/e107575563e727cec98a9b0a8d0b85f27779c32f20942cc5b5b52771a5d4b475.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "話す",
+                "sha256": "b4ee5db1f069f2658d4cbdf5a187f6b410b089f2f41f702fb5c0bc190397cc99"
+            }
+        ],
+        "peak": 23517,
+        "fullScaleSamples": 0
+    },
+    {
+        "entryId": "ja:sentence:courtesy-example-welcome-japan",
+        "label": "日本へようこそ",
+        "reading": "にほんへようこそ",
+        "meanings": {
+            "en": "Welcome to Japan.",
+            "de": "Willkommen in Japan.",
+            "id": "Selamat datang di Jepang.",
+            "ja": "日本へようこそ。"
+        },
+        "constituentIds": [
+            "ja:word:nihon",
+            "ja:particle:e",
+            "ja:word:courtesy-welcome"
+        ],
+        "selectedTransformations": [],
+        "audioPath": "audio/2c74cc661012fd2ee6744604a11792c34bace75e9e46ea8874fdc993fc5f7f18.wav",
+        "sha256": "2c74cc661012fd2ee6744604a11792c34bace75e9e46ea8874fdc993fc5f7f18",
+        "audioAvailability": "bundled-composition",
+        "listening": "unverified-not-performed",
+        "textReview": "Apology and arrival-greeting senses reviewed. English apology retains do not plus base understand. Japanese apology uses a familiar plain nonpast with later context; welcome uses place + e + youkoso, not the response to thanks.",
+        "sourceAudioEvidence": [
+            {
+                "entryId": "ja:word:nihon",
+                "path": "audio/5a06c42ca5f7c40270c03c1a3e8a2286da938b744c8d298f0f44f6eaccbf419e.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "にほん",
+                "sha256": "326b1b83c6e355a4340827497bb4469a6f8284964357d6158a726751db8aeb2f"
+            },
+            {
+                "entryId": "ja:particle:e",
+                "path": "audio/ef803ed2d9dc2a23cb60bf918b4d34b25be6bbb600ad194fa787b60b817538ec.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "え",
+                "sha256": "532dd5738ebb3befd35b70213367065dd4b7bc6740523e5be793e878bd92de87"
+            },
+            {
+                "entryId": "ja:word:courtesy-welcome",
+                "path": "audio/cde11962987ef05c1e4728772da25d427a713bb7c28dd47895d44c9122bb51b8.wav",
+                "voiceId": "xya0RvcJtofTcFTOdX4E",
+                "requestText": "ようこそ",
+                "sha256": "ce6142a3883779adb65ef652a20042f0e4557b65efa3055c2a8457af6d6c099a"
+            }
+        ],
+        "peak": 26869,
+        "fullScaleSamples": 0
+    }
+]

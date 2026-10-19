@@ -222,6 +222,10 @@ Add push and pull with reviewed English regular endings and Japanese su/ku godan
 
 Add long and short with English comparative and superlative recordings, Japanese i-adjective forms and inspected length comparisons. Four distinct examples cover a description, a needed or purchased object, comparison or degree, and location. Notes distinguish length from height and preserve the consonant in longer and longest. Exact recorded constituents and four-language meanings remain traceable; listening is unverified.
 
+## Apologies and welcomes
+
+Add Sorry and Welcome with ごめんなさい and ようこそ, inspected social scenes and two concise contextual examples per language. Notes distinguish arrival greetings from responses to thanks and explain the familiar tone of the Japanese apology example. Complete readings retain ん and the long vowel in よう. Audio is composed from exact recordings; listening remains unverified.
+
 ## Commits
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)

@@ -222,6 +222,10 @@ Menambahkan push dan pull dengan akhiran beraturan bahasa Inggris dan bentuk god
 
 Menambahkan long dan short dengan rekaman komparatif dan superlatif bahasa Inggris, bentuk adjektiva i bahasa Jepang, serta ilustrasi perbandingan panjang yang diperiksa. Empat contoh berbeda mencakup deskripsi, benda yang dibutuhkan atau dibeli, perbandingan atau derajat, dan lokasi. Catatan membedakan panjang dari tinggi badan serta mempertahankan konsonan pada longer dan longest. Rekaman unsur dan makna empat bahasa dapat ditelusuri; pendengaran belum diperiksa.
 
+## Permintaan maaf dan sambutan
+
+Menambahkan Sorry dan Welcome serta ごめんなさい dan ようこそ dengan adegan sosial yang diperiksa dan dua contoh singkat per bahasa. Catatan membedakan sambutan kedatangan dari jawaban atas terima kasih serta menjelaskan nada akrab contoh permintaan maaf Jepang. Bacaan lengkap mempertahankan ん dan vokal panjang pada よう. Audio memakai rekaman unsur yang tepat; pendengaran belum diperiksa.
+
 ## Komit
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)

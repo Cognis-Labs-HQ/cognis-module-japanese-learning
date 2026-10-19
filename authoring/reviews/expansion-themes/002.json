@@ -1,5 +1,26 @@
 [
     {
+        "theme": "courtesy",
+        "newDistinctVocabularyCount": 2,
+        "vocabulary": [
+            {
+                "entryId": "ja:word:courtesy-sorry",
+                "label": "ごめんなさい"
+            },
+            {
+                "entryId": "ja:word:courtesy-welcome",
+                "label": "ようこそ"
+            }
+        ],
+        "newExampleCount": 2,
+        "exampleIds": [
+            "ja:sentence:courtesy-example-apology-later",
+            "ja:sentence:courtesy-example-welcome-japan"
+        ],
+        "recordedGrammaticalFormCount": 0,
+        "vocabularyAudit": "authoring/reviews/courtesy-vocabulary.json"
+    },
+    {
         "theme": "directions",
         "newDistinctVocabularyCount": 4,
         "vocabulary": [
@@ -256,36 +277,5 @@
         ],
         "recordedGrammaticalFormCount": 32,
         "vocabularyAudit": "authoring/reviews/household-vocabulary.json"
-    },
-    {
-        "theme": "kitchen",
-        "newDistinctVocabularyCount": 4,
-        "vocabulary": [
-            {
-                "entryId": "ja:word:kitchen-bowl",
-                "label": "ボウル"
-            },
-            {
-                "entryId": "ja:word:kitchen-knife",
-                "label": "ナイフ"
-            },
-            {
-                "entryId": "ja:word:kitchen-pot",
-                "label": "なべ"
-            },
-            {
-                "entryId": "ja:word:kitchen-pan",
-                "label": "フライパン"
-            }
-        ],
-        "newExampleCount": 4,
-        "exampleIds": [
-            "ja:sentence:kitchen-example-bowl",
-            "ja:sentence:kitchen-example-knife",
-            "ja:sentence:kitchen-example-pot",
-            "ja:sentence:kitchen-example-pan"
-        ],
-        "recordedGrammaticalFormCount": 0,
-        "vocabularyAudit": "authoring/reviews/kitchen-vocabulary.json"
     }
 ]
