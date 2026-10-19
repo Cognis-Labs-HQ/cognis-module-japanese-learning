@@ -106,6 +106,10 @@ Tambahkan enam contoh kontekstual yang ditulis satu per satu untuk setiap modul,
 
 Tambahkan enam contoh kontekstual yang ditulis satu per satu untuk setiap modul, dengan segmen audio lama yang persis dan dek khusus. Periksa makna, ragam bahasa, fungsi partikel, bacaan, serta terjemahan dalam empat bahasa. Pertahankan semua contoh dan rekaman perubahan bentuk sebelumnya. Tidak ada gambar baru atau permintaan generasi eksternal. Pemeriksaan pendengaran belum dilakukan.
 
+## Hewan Lain
+
+Tambahkan kelinci, kuda, sapi, dan babi dengan empat gambar yang diperiksa per modul, empat bentuk jamak Inggris, delapan contoh alami, dan dek hewan. Bedakan cow yang berarti sapi betina dari うし yang lebih luas; periksa suku kata tambahan dalam horses dan masukan Jepang asli. Gunakan suara yang ditetapkan dan segmen audio persis. Semua contoh dan bentuk sebelumnya tetap utuh. Pemeriksaan pendengaran belum dilakukan.
+
 ## Komit
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)

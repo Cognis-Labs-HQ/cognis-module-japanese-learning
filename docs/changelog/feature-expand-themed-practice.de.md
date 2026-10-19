@@ -106,6 +106,10 @@ Sechs einzeln verfasste Kontextbeispiele je Modul mit exakten vorhandenen Audios
 
 Sechs einzeln verfasste Kontextbeispiele je Modul mit exakten vorhandenen Audiosegmenten und einem eigenen Stapel ergänzen. Bedeutung, Register, Partikelfunktionen, Lesungen und Übersetzungen in vier Sprachen prüfen. Alle bisherigen Beispiele und Flexionsaufnahmen bleiben erhalten. Keine neuen Bilder oder externen Generierungsanfragen. Die Hörprüfung steht aus.
 
+## Weitere Tiere
+
+Kaninchen, Pferd, Kuh und Schwein mit vier geprüften Bildern je Modul, vier englischen Pluralformen, acht natürlichen Beispielen und einem Tierstapel ergänzen. Die weibliche Kuh vom breiteren japanischen うし unterscheiden und die zusätzliche Silbe in horses sowie japanische Eingaben prüfen. Festgelegte Stimmen und exakte Audiosegmente verwenden. Alle bisherigen Beispiele und Formen bleiben erhalten. Die Hörprüfung steht aus.
+
 ## Commits
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)
