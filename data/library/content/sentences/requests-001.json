@@ -1,0 +1,132 @@
+[
+    {
+        "id": "ja:sentence:requests-example-yes",
+        "label": "はい私は学生です",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/fc59b1777222333c8d22359f69f01b99560023e8693085454993702abf3a1e4f.wav",
+            "pronunciation": ["はいわたしはがくせいです"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:requests-yes",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:word:watashi",
+                "relation": "words",
+                "position": 1
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 2
+            },
+            {
+                "entryId": "ja:word:gakusei",
+                "relation": "words",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:desu",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:requests-example-yes",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:requests-example-no",
+        "label": "いいえ私は先生です",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/5a564870216ca840670f1e6491b251322694a3d2a71eb4c64598ad3c24faba24.wav",
+            "pronunciation": ["いいえわたしはせんせいです"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:requests-no",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:word:watashi",
+                "relation": "words",
+                "position": 1
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 2
+            },
+            {
+                "entryId": "ja:word:sensei",
+                "relation": "words",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:desu",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:requests-example-no",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:requests-example-please",
+        "label": "ゆっくりおねがいします",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/70e0d2b4ab437af7c8370a83876fe3200044924a9ce919fcda343f70b6c6c106.wav",
+            "pronunciation": ["ゆっくりおねがいします"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:yukkuri",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:word:requests-please",
+                "relation": "words",
+                "position": 1
+            },
+            {
+                "entryId": "ja:definition:requests-example-please",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:requests-example-repeat",
+        "label": "もういちどおねがいします",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/7027452e235d581865ef3445e4f14536098e2147a9cc8805f3161e8ae143f7fa.wav",
+            "pronunciation": ["もういちどおねがいします"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:requests-repeat",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:word:requests-please",
+                "relation": "words",
+                "position": 1
+            },
+            {
+                "entryId": "ja:definition:requests-example-repeat",
+                "relation": "definitions"
+            }
+        ]
+    }
+]

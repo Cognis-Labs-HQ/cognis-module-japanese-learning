@@ -158,6 +158,10 @@ Japanische Verben für Lesen, Schreiben, Sprechen und Schlafen mit zweiunddreiß
 
 Japanische Tagesgrüße, höflichen Dank, Aufmerksamkeitssignale und Abschiedsgrüße mit Kontextbildern und Registerhinweisen ergänzen. Eigenständige englische Gesprächsübungen ohne erzwungene Entsprechungen hinzufügen. Das gesprochene わ in こんにちは korrekt verknüpfen und Quellenbelege bewahren. Die Hörprüfung steht aus.
 
+## Antworten und Nachfragen
+
+Bejahende und verneinende Antworten, höfliche Bitten und Wiederholungsbitten ergänzen. Die englische Höflichkeitsformel Please vom Verb erfreuen trennen. Japanische Bestätigung, lange Vokale und kontextabhängige Entsprechungen erläutern. Originalbilder und endgültige JPEGs wurden geprüft; exakte Audiosegmente und Belege bleiben erhalten. Die Hörprüfung steht aus.
+
 ## Commits
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)

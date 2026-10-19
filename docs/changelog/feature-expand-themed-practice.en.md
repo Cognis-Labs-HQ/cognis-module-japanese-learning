@@ -158,6 +158,10 @@ Add Japanese reading, writing, speaking and sleeping predicates with thirty-two 
 
 Add Japanese daytime greetings, polite thanks, attention-getting and farewells with contextual artwork and register notes. Add independent English conversational practice without forcing phrase equivalence. Link the spoken わ in こんにちは correctly and retain source evidence. Listening remains unverified.
 
+## Responses and Clarification
+
+Add affirmative and negative responses, polite requests and requests to repeat. Keep the English courtesy Please separate from the verb to please. Explain Japanese acknowledgment, long vowels and context-sensitive equivalents. Original images and final JPEGs were inspected; exact constituent audio and evidence are retained. Listening remains unverified.
+
 ## Commits
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)

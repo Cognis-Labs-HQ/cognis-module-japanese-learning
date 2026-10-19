@@ -1,5 +1,36 @@
 [
     {
+        "theme": "seasons",
+        "newDistinctVocabularyCount": 4,
+        "vocabulary": [
+            {
+                "entryId": "ja:word:seasons-spring",
+                "label": "はる"
+            },
+            {
+                "entryId": "ja:word:seasons-summer",
+                "label": "なつ"
+            },
+            {
+                "entryId": "ja:word:seasons-autumn",
+                "label": "あき"
+            },
+            {
+                "entryId": "ja:word:seasons-winter",
+                "label": "ふゆ"
+            }
+        ],
+        "newExampleCount": 4,
+        "exampleIds": [
+            "ja:sentence:seasons-activity-spring",
+            "ja:sentence:seasons-activity-summer",
+            "ja:sentence:seasons-activity-autumn",
+            "ja:sentence:seasons-activity-winter"
+        ],
+        "recordedGrammaticalFormCount": 0,
+        "vocabularyAudit": "authoring/reviews/seasons-vocabulary.json"
+    },
+    {
         "theme": "social",
         "newDistinctVocabularyCount": 4,
         "vocabulary": [
@@ -227,21 +258,5 @@
         ],
         "recordedGrammaticalFormCount": 0,
         "vocabularyAudit": "authoring/reviews/shopping.json"
-    },
-    {
-        "theme": "daily-needs",
-        "newDistinctVocabularyCount": 0,
-        "vocabulary": [],
-        "newExampleCount": 6,
-        "exampleIds": [
-            "ja:sentence:daily-needs-1",
-            "ja:sentence:daily-needs-2",
-            "ja:sentence:daily-needs-3",
-            "ja:sentence:daily-needs-4",
-            "ja:sentence:daily-needs-5",
-            "ja:sentence:daily-needs-6"
-        ],
-        "recordedGrammaticalFormCount": 0,
-        "vocabularyAudit": "authoring/reviews/daily-needs-sentences.json"
     }
 ]
