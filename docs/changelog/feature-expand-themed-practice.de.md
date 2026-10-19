@@ -74,6 +74,10 @@ Hemden, Alltagskleider, Socken und Röcke mit vier englischen Pluralformen, vier
 
 Tassen, Teller, Löffel und Gabeln mit vier englischen Pluralformen, vier Beispielen je Modul und einem Themenstapel ergänzen. Alle Quellbilder und endgültigen Bilder sowie kleine Kana und lange Vokale prüfen; exakte PCM-Segmente und Aufnahmeherkunft bewahren. Pluraltests prüfen Schreibweise, IPA, Anbieteranfrage und Formzuordnung. Die Hörprüfung steht aus.
 
+## Orte in der Stadt
+
+Bibliotheken, Krankenhäuser, Supermärkte und Restaurants mit geprüften Bedeutungen, vier englischen Pluralformen und einem Themenstapel ergänzen. Acht abwechslungsreiche Beispiele behandeln Lesen, Arbeit, Ortsfragen, geplante Wege, Einkaufen und Essen. Quellbilder und endgültige Bilder sowie Wörterbuchbedeutungen und Lesungen prüfen; exakte Audiosegmente bewahren. Die Hörprüfung steht aus.
+
 ## Commits
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)

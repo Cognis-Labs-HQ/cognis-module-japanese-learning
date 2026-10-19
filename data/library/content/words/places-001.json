@@ -1,0 +1,305 @@
+[
+    {
+        "id": "ja:word:complete-pronunciation-places-library",
+        "label": "としょかん",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["としょかん"],
+            "audio": "audio/430c9445d72adf3a29387e25fd3b65f62b4b6c0a772d2c518bf9f358d1e15474.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:to",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:shi",
+                        "relation": "reading-kana",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:small-yo",
+                        "relation": "reading-kana",
+                        "position": 2
+                    },
+                    {
+                        "entryId": "ja:char:ka",
+                        "relation": "reading-kana",
+                        "position": 3
+                    },
+                    {
+                        "entryId": "ja:char:n",
+                        "relation": "reading-kana",
+                        "position": 4
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:places-library",
+        "label": "としょかん",
+        "class": "lexical:noun",
+        "fields": {
+            "pronunciation": ["としょかん"],
+            "usage_notes": {
+                "en": "A place for reading and borrowing books, not a bookstore or software library. Plural libraries changes y to ies. としょかん uses small ょ in しょ.",
+                "de": "Ein Ort zum Lesen und Ausleihen von Büchern, keine Buchhandlung oder Softwarebibliothek. Im Plural libraries wird y zu ies. としょかん enthält ein kleines ょ in しょ.",
+                "id": "Tempat membaca dan meminjam buku, bukan toko buku atau pustaka perangkat lunak. Bentuk jamak libraries mengubah y menjadi ies. としょかん memakai ょ kecil dalam しょ.",
+                "ja": "本を読んだり借りたりする施設。本屋やソフトウェアのライブラリではない。英語の複数形 libraries は y を ies に変える。としょかんのしょは拗音。"
+            },
+            "reference_images": [
+                "images/0bfe36fe90dcb6f82600efb2d069bd09bb4fbc475d85db8f6268bd2fa630ecc5.jpg"
+            ],
+            "audio": "audio/430c9445d72adf3a29387e25fd3b65f62b4b6c0a772d2c518bf9f358d1e15474.wav"
+        },
+        "tags": ["noun", "places"],
+        "references": [
+            {
+                "entryId": "ja:definition:places-library",
+                "relation": "definitions"
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-places-library",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:complete-pronunciation-places-hospital",
+        "label": "びょういん",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["びょういん"],
+            "audio": "audio/c35068c839da35557f146cd8d3c64eb110a267dee6555ef6d9e8ffae7a9a5ad9.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:bi",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:small-yo",
+                        "relation": "reading-kana",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:u",
+                        "relation": "reading-kana",
+                        "position": 2
+                    },
+                    {
+                        "entryId": "ja:char:i",
+                        "relation": "reading-kana",
+                        "position": 3
+                    },
+                    {
+                        "entryId": "ja:char:n",
+                        "relation": "reading-kana",
+                        "position": 4
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:places-hospital",
+        "label": "びょういん",
+        "class": "lexical:noun",
+        "fields": {
+            "pronunciation": ["びょういん"],
+            "usage_notes": {
+                "en": "A medical facility providing patient care. Plural hospitals ends in /z/. 病院 is read びょういん, with small ょ and a long vowel; everyday Japanese can also use it for a clinic.",
+                "de": "Eine medizinische Einrichtung zur Patientenversorgung. Plural hospitals mit /z/. 病院 wird びょういん gelesen, mit kleinem ょ und langem Vokal; im japanischen Alltag kann es auch eine Arztpraxis bezeichnen.",
+                "id": "Fasilitas medis untuk merawat pasien. Bentuk jamak hospitals berakhir /z/. 病院 dibaca びょういん, dengan ょ kecil dan vokal panjang; dalam pemakaian sehari-hari Jepang juga dapat merujuk pada klinik.",
+                "ja": "患者を診療・治療する施設。英語の複数形 hospitals は /z/ で終わる。病院の読みはびょういんで、びょは拗音、びょうは長音。日常会話では診療所を指すこともある。"
+            },
+            "reference_images": [
+                "images/b7fa1f434b6ca99c474193e483280ddf12fd47f5c859d412178625c3e7ac523d.jpg"
+            ],
+            "audio": "audio/c35068c839da35557f146cd8d3c64eb110a267dee6555ef6d9e8ffae7a9a5ad9.wav"
+        },
+        "tags": ["noun", "places"],
+        "references": [
+            {
+                "entryId": "ja:definition:places-hospital",
+                "relation": "definitions"
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-places-hospital",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:complete-pronunciation-places-supermarket",
+        "label": "スーパー",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["スーパー"],
+            "audio": "audio/4fe867dd6a28eb23632a97e20d639fe0538f619eebd6614d0dceaf7bc0780f72.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:ka:su",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:long-vowel-mark",
+                        "relation": "reading-kana",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:ka:pa",
+                        "relation": "reading-kana",
+                        "position": 2
+                    },
+                    {
+                        "entryId": "ja:char:long-vowel-mark",
+                        "relation": "reading-kana",
+                        "position": 3
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:places-supermarket",
+        "label": "スーパー",
+        "class": "lexical:noun",
+        "fields": {
+            "pronunciation": ["スーパー"],
+            "usage_notes": {
+                "en": "A self-service shop selling groceries and household goods. Plural supermarkets ends in /s/. スーパー abbreviates スーパーマーケット and has two long vowels.",
+                "de": "Ein Selbstbedienungsgeschäft für Lebensmittel und Haushaltswaren. Plural supermarkets mit /s/. スーパー ist die Kurzform von スーパーマーケット und enthält zwei lange Vokale.",
+                "id": "Toko swalayan yang menjual bahan makanan dan kebutuhan rumah tangga. Bentuk jamak supermarkets berakhir /s/. スーパー adalah singkatan スーパーマーケット dan memiliki dua vokal panjang.",
+                "ja": "食品や日用品を売るセルフサービスの店。英語の複数形 supermarkets は /s/ で終わる。スーパーはスーパーマーケットの略で、スーとパーは長音。"
+            },
+            "reference_images": [
+                "images/d8019808784508497ee3d1cc35c0424fa1916d5b5c85e74f37076861c1583114.jpg"
+            ],
+            "audio": "audio/4fe867dd6a28eb23632a97e20d639fe0538f619eebd6614d0dceaf7bc0780f72.wav"
+        },
+        "tags": ["noun", "places"],
+        "references": [
+            {
+                "entryId": "ja:definition:places-supermarket",
+                "relation": "definitions"
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-places-supermarket",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:complete-pronunciation-places-restaurant",
+        "label": "レストラン",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["レストラン"],
+            "audio": "audio/df5bfce667c3edb0f0939b31e06a642a84733d7a542eb474176328264a3ed42e.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:ka:re",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:ka:su",
+                        "relation": "reading-kana",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:ka:to",
+                        "relation": "reading-kana",
+                        "position": 2
+                    },
+                    {
+                        "entryId": "ja:char:ka:ra",
+                        "relation": "reading-kana",
+                        "position": 3
+                    },
+                    {
+                        "entryId": "ja:char:ka:n",
+                        "relation": "reading-kana",
+                        "position": 4
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:places-restaurant",
+        "label": "レストラン",
+        "class": "lexical:noun",
+        "fields": {
+            "pronunciation": ["レストラン"],
+            "usage_notes": {
+                "en": "A place where customers buy and eat prepared meals. Plural restaurants ends in /s/. レストラン often suggests a Western-style dining establishment; it is not a literal rendering of every kind of Japanese eatery.",
+                "de": "Ein Lokal, in dem Gäste zubereitete Mahlzeiten kaufen und essen. Plural restaurants mit /s/. レストラン bezeichnet häufig ein Restaurant westlichen Stils und nicht jede Art japanischen Speiselokals.",
+                "id": "Tempat pelanggan membeli dan menyantap makanan siap saji. Bentuk jamak restaurants berakhir /s/. レストラン sering merujuk pada restoran bergaya Barat, bukan semua jenis tempat makan Jepang.",
+                "ja": "客がお金を払って調理された食事をする店。英語の複数形 restaurants は /s/ で終わる。レストランは特に洋風の食事を出す店に使われ、あらゆる飲食店の呼び名とは限らない。"
+            },
+            "reference_images": [
+                "images/d1548873f5db0e13114ce655f97fa53aa147d96b132f252051aff971186a5def.jpg"
+            ],
+            "audio": "audio/df5bfce667c3edb0f0939b31e06a642a84733d7a542eb474176328264a3ed42e.wav"
+        },
+        "tags": ["noun", "places"],
+        "references": [
+            {
+                "entryId": "ja:definition:places-restaurant",
+                "relation": "definitions"
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-places-restaurant",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    }
+]

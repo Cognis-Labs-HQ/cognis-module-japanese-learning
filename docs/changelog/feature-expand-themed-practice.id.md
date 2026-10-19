@@ -74,6 +74,10 @@ Tambahkan kemeja, gaun sehari-hari, kaus kaki, dan rok dengan empat bentuk jamak
 
 Tambahkan cangkir, piring, sendok, dan garpu dengan empat bentuk jamak Inggris, empat contoh per modul, serta dek tematik. Periksa gambar sumber dan akhir, kana kecil, serta vokal panjang; pertahankan PCM unsur yang persis dan asal rekaman. Uji bentuk jamak memeriksa ejaan, IPA, permintaan penyedia, dan pengaitan bentuk. Pemeriksaan pendengaran belum dilakukan.
 
+## Tempat di Kota
+
+Tambahkan perpustakaan, rumah sakit, supermarket, dan restoran dengan makna yang ditinjau, empat bentuk jamak Inggris, serta dek tematik. Delapan contoh beragam mencakup membaca, pekerjaan, pertanyaan lokasi, rencana perjalanan, berbelanja, dan makan. Periksa gambar sumber dan akhir serta makna dan bacaan kamus; pertahankan segmen audio persis. Pemeriksaan pendengaran belum dilakukan.
+
 ## Komit
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)
