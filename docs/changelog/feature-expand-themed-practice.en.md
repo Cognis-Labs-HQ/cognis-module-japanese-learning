@@ -94,6 +94,10 @@ Add soap, towel, toothbrush and toothpaste with four inspected illustrations per
 
 Add airplane, boat, taxi and motorcycle with four inspected pictures per module, four English plural forms, eight natural examples and a transport deck. Explain regional English names, Japanese long vowels, the small-boat sense and Japanese-made オートバイ. Use the designated voices and exact constituent audio. Preserve every previous sentence and grammatical recording. Listening remains unverified.
 
+## School Supplies
+
+Add pencil, pen, notebook and ruler with four inspected pictures per module, four English plural forms, eight natural examples and a school-supplies deck. Distinguish graphite from ink, paper notebooks from computers and measuring rulers from governors. Verify Japanese small kana and long vowels. Preserve all previous sentences and grammatical recordings. Listening remains unverified.
+
 ## Commits
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)

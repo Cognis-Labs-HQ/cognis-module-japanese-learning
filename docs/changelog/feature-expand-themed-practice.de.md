@@ -94,6 +94,10 @@ Seife, Handtuch, Zahnbürste und Zahnpasta mit vier geprüften Bildern je Modul,
 
 Flugzeug, Boot, Taxi und Motorrad mit vier geprüften Bildern je Modul, vier englischen Pluralformen, acht natürlichen Beispielen und einem Verkehrsstapel ergänzen. Regionale englische Namen, japanische Langvokale, kleine Boote und die japanische Wortbildung オートバイ erklären. Festgelegte Stimmen und exakte Audiosegmente verwenden. Alle bisherigen Sätze und Flexionsaufnahmen bewahren. Die Hörprüfung steht aus.
 
+## Schulsachen
+
+Bleistift, Stift, Notizbuch und Lineal mit vier geprüften Bildern je Modul, vier englischen Pluralformen, acht natürlichen Beispielen und einem Schulsachenstapel ergänzen. Bedeutungen und japanische Lesungen prüfen. Alle bisherigen Sätze und Flexionsaufnahmen bleiben erhalten. Die Hörprüfung steht aus.
+
 ## Commits
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)

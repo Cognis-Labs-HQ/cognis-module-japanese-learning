@@ -94,6 +94,10 @@ Tambahkan sabun, handuk, sikat gigi, dan pasta gigi dengan empat gambar yang dip
 
 Tambahkan pesawat terbang, perahu, taksi, dan sepeda motor dengan empat gambar yang diperiksa per modul, empat bentuk jamak Inggris, delapan contoh alami, dan dek transportasi. Jelaskan variasi nama Inggris, vokal panjang Jepang, makna perahu kecil, dan bentukan Jepang オートバイ. Gunakan suara yang ditetapkan dan segmen audio persis. Pertahankan semua kalimat serta rekaman perubahan bentuk sebelumnya. Pemeriksaan pendengaran belum dilakukan.
 
+## Perlengkapan Sekolah
+
+Tambahkan pensil, pena, buku catatan, dan penggaris dengan empat gambar yang diperiksa per modul, empat bentuk jamak Inggris, delapan contoh alami, dan dek perlengkapan sekolah. Periksa makna serta bacaan Jepang. Semua kalimat dan rekaman perubahan bentuk sebelumnya tetap utuh. Pemeriksaan pendengaran belum dilakukan.
+
 ## Komit
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)
