@@ -170,6 +170,18 @@ Enam contoh perencanaan dan satu dek membahas kegiatan mendatang, kedatangan, me
 
 Enam contoh belajar yang ditulis satu per satu dan satu dek mencakup alat tulis, membaca, belajar bahasa, menyimak di kelas, dan pertanyaan. Rekaman kata yang tepat digunakan kembali tanpa menduplikasi kosakata atau menambah ilustrasi.
 
+## Salam dan Perpisahan
+
+Tambahkan salam pagi dan malam, ucapan sebelum tidur, serta salam perpisahan akrab. Bedakan tulisan は dan bunyi わ dalam こんばんは serta jelaskan ragam bahasa dalam empat bahasa. Ungkapan singkat tetap menjadi kartu frasa dengan contoh pemakaian alami.
+
+## Waktu dan Membaca
+
+Tambahkan kosakata Jepang pagi, malam, buku, dan surat kabar, serta newspaper dalam bahasa Inggris; gunakan kembali nomina Inggris yang sudah ada. Tambahkan empat contoh membaca per bahasa. Ganti gambar buku yang membingungkan dengan buku tertutup yang konsisten dan simpan bukti penolakan di luar konten runtime.
+
+## Memeriksa Pemahaman
+
+Tambahkan understand dan わかる dengan empat ikatan bentuk Inggris dan tujuh bentuk Jepang. Pertahankan understood yang tidak beraturan dan jangan otomatis membuat bentuk potensial untuk makna statif Jepang. Tambahkan dua contoh Inggris dan satu contoh bentuk dasar Jepang. Dua draf kalimat Jepang dengan bentuk terpilih tetap di luar konten runtime karena pengimpor host membandingkan label dasar; audio persis dan bukti pemeriksaan dipertahankan. Semua gambar asli baru dan JPEG akhir diperiksa secara visual; pemeriksaan pendengaran belum dilakukan.
+
 ## Komit
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)

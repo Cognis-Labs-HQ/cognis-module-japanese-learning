@@ -222,6 +222,20 @@
         "vocabularyAudit": "authoring/reviews/colors-vocabulary.json"
     },
     {
+        "theme": "comprehension",
+        "newDistinctVocabularyCount": 1,
+        "vocabulary": [
+            {
+                "entryId": "ja:word:comprehension-understand",
+                "label": "わかる"
+            }
+        ],
+        "newExampleCount": 1,
+        "exampleIds": ["ja:sentence:comprehension-example-meaning"],
+        "recordedGrammaticalFormCount": 7,
+        "vocabularyAudit": "authoring/reviews/comprehension-vocabulary.json"
+    },
+    {
         "theme": "core",
         "newDistinctVocabularyCount": 4,
         "vocabulary": [
@@ -313,36 +327,5 @@
         ],
         "recordedGrammaticalFormCount": 0,
         "vocabularyAudit": "authoring/reviews/fixtures-vocabulary.json"
-    },
-    {
-        "theme": "frequency",
-        "newDistinctVocabularyCount": 4,
-        "vocabulary": [
-            {
-                "entryId": "ja:word:frequency-often",
-                "label": "よく"
-            },
-            {
-                "entryId": "ja:word:frequency-sometimes",
-                "label": "ときどき"
-            },
-            {
-                "entryId": "ja:word:frequency-usually",
-                "label": "たいてい"
-            },
-            {
-                "entryId": "ja:word:frequency-again",
-                "label": "また"
-            }
-        ],
-        "newExampleCount": 4,
-        "exampleIds": [
-            "ja:sentence:frequency-example-often",
-            "ja:sentence:frequency-example-sometimes",
-            "ja:sentence:frequency-example-usually",
-            "ja:sentence:frequency-example-again"
-        ],
-        "recordedGrammaticalFormCount": 0,
-        "vocabularyAudit": "authoring/reviews/frequency-vocabulary.json"
     }
 ]

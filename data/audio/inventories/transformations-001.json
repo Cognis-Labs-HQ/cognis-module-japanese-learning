@@ -691,5 +691,79 @@
         ],
         "sha256": "8acc09eeefcc115728a05150403bd8d632fb3fc1e72a56b26ce21637aed3c582",
         "frames": 15460
+    },
+    {
+        "path": "audio/5f866fa83a4b7d1ab47e0f9a4a73c108bb6b3db0becc7b7538279ce552910f28.wav",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "text": "いさせて",
+        "request": {
+            "text": "いさせて",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "いさせて",
+                "semanticRole": "lexicalUnit",
+                "readings": ["いさせて"]
+            }
+        ],
+        "entries": [],
+        "variants": [
+            {
+                "entryId": "ja:word:iru-exist",
+                "setId": "ichidan",
+                "path": ["causative", "causative-te"],
+                "state": "causative-te"
+            }
+        ],
+        "sha256": "bc795daf20caf743bcb3754a0c1fd16c01c22026f9f05c05b7bd3781abab760b",
+        "frames": 16974
+    },
+    {
+        "path": "audio/7e4c06b100a285d81ac85fb01ab1dd0a2173772fead754d4d9d2c07cf67f47fb.wav",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "text": "いさせたい",
+        "request": {
+            "text": "いさせたい",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "いさせたい",
+                "semanticRole": "lexicalUnit",
+                "readings": ["いさせたい"]
+            }
+        ],
+        "entries": [],
+        "variants": [
+            {
+                "entryId": "ja:word:iru-exist",
+                "setId": "ichidan",
+                "path": ["causative", "causative-desire"],
+                "state": "causative-desire"
+            }
+        ],
+        "sha256": "c7c18af9d9278b9804deaa8f94d70c77eab222ba23e60d23b30d4f244760e20f",
+        "frames": 17422
     }
 ]

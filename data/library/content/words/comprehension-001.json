@@ -1,0 +1,69 @@
+[
+    {
+        "id": "ja:word:complete-pronunciation-comprehension-understand",
+        "label": "わかる",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["わかる"],
+            "audio": "audio/a756a554f83d17ed9d15085e567e3a6f28682ad30abc1e634bf0dd7f7cdfad98.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:wa",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:ka",
+                        "relation": "reading-kana",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:ru",
+                        "relation": "reading-kana",
+                        "position": 2
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:comprehension-understand",
+        "label": "わかる",
+        "class": "lexical:verb",
+        "fields": {
+            "pronunciation": ["わかる"],
+            "usage_notes": {
+                "en": "Understand concerns comprehension, not merely hearing. English past and past participle are understood. Do you understand? checks comprehension but may sound blunt depending on tone. Japanese 日本語がわかりますか politely asks whether someone understands Japanese; わかりません means I do not understand in context.",
+                "de": "Understand bezeichnet Verstehen, nicht bloß Hören. Vergangenheit und Partizip sind understood. Do you understand? prüft das Verständnis, kann je nach Ton aber schroff wirken. 日本語がわかりますか fragt höflich nach Japanischkenntnissen; わかりません bedeutet im Kontext Ich verstehe nicht.",
+                "id": "Understand berarti memahami, bukan sekadar mendengar. Bentuk lampau dan partisipnya understood. Do you understand? memeriksa pemahaman tetapi dapat terdengar tajam menurut nada. 日本語がわかりますか menanyakan pemahaman bahasa Jepang secara sopan; わかりません berarti Saya tidak paham sesuai konteks.",
+                "ja": "単に聞こえることではなく、内容を理解すること。英語の過去形・過去分詞はunderstood。Do you understand?は理解確認ですが、口調によってはきつく響きます。日本語がわかりますかは丁寧な質問で、わかりませんは文脈に応じて理解できないことを伝えます。"
+            },
+            "reference_images": [
+                "images/02dfee054327a5eb3ccc269b4d05303119c328d3113d403bcfb5eea9a19f3cdd.jpg"
+            ],
+            "audio": "audio/a756a554f83d17ed9d15085e567e3a6f28682ad30abc1e634bf0dd7f7cdfad98.wav"
+        },
+        "tags": ["verb", "comprehension-form-understand"],
+        "references": [
+            {
+                "entryId": "ja:definition:comprehension-understand",
+                "relation": "definitions"
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-comprehension-understand",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    }
+]

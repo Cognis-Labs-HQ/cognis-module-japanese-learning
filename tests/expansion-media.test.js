@@ -22,6 +22,9 @@ for (const theme of [
     "furnishings",
     "fruit",
     "requests",
+    "greetings",
+    "reading-time",
+    "comprehension",
     "frequency",
     "core",
     "social",
@@ -39,8 +42,11 @@ for (const theme of [
         );
         const images = await load(`authoring/reviews/${theme}-images.json`);
         const audio = await load(`authoring/reviews/${theme}-audio.json`);
-        assert.equal(images.length, 4);
-        assert.equal(audio.length, 4);
+        assert.equal(
+            images.length,
+            words.filter(({ hidden }) => !hidden).length,
+        );
+        assert.equal(audio.length, images.length);
         for (const word of words.filter(({ hidden }) => !hidden)) {
             const picture = images.find(({ entryId }) => entryId === word.id);
             assert.equal(picture.visualReview, "pass");

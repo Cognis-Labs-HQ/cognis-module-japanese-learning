@@ -1,0 +1,128 @@
+[
+    {
+        "path": "audio/ea5ae347b4455a975a0d62744b92f7be161f128848fc1a8ad470f7e1000d2f3a.wav",
+        "entryId": "ja:sentence:reading-time-example-buy-news",
+        "label": "えきでしんぶんをかう",
+        "parts": [
+            {
+                "path": "audio/47cfbf034038630b89f3346d609b2f0a81a08d7b18bf456f8dfc9cdff0a36d67.wav",
+                "entryId": "ja:word:travel-station"
+            },
+            {
+                "path": "audio/df81472c8108ad9b47d8d90db017ff1c1b553d80263d6a2c59de1571671f3eee.wav",
+                "entryId": "ja:particle:de"
+            },
+            {
+                "path": "audio/8d24faaeea27e4f0fe57fc68aee2eb1e17b7a95822bfd39d137b7282f5104e20.wav",
+                "entryId": "ja:word:reading-time-newspaper"
+            },
+            {
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "entryId": "ja:particle:wo"
+            },
+            {
+                "path": "audio/1a880a2cfc93aedb14ed94ad5cbd8ba5a803aa377bb98f0bf534e0ce8905bfd4.wav",
+                "entryId": "ja:word:travel-buy"
+            },
+            { "pauseMs": 400 }
+        ],
+        "gapMs": 90,
+        "segments": [
+            {
+                "path": "audio/47cfbf034038630b89f3346d609b2f0a81a08d7b18bf456f8dfc9cdff0a36d67.wav",
+                "entryId": "ja:word:travel-station",
+                "startFrame": 2400,
+                "frameCount": 14335
+            },
+            {
+                "path": "audio/df81472c8108ad9b47d8d90db017ff1c1b553d80263d6a2c59de1571671f3eee.wav",
+                "entryId": "ja:particle:de",
+                "startFrame": 18895,
+                "frameCount": 13220
+            },
+            {
+                "path": "audio/8d24faaeea27e4f0fe57fc68aee2eb1e17b7a95822bfd39d137b7282f5104e20.wav",
+                "entryId": "ja:word:reading-time-newspaper",
+                "startFrame": 34275,
+                "frameCount": 17678
+            },
+            {
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "entryId": "ja:particle:wo",
+                "startFrame": 54113,
+                "frameCount": 8762
+            },
+            {
+                "path": "audio/1a880a2cfc93aedb14ed94ad5cbd8ba5a803aa377bb98f0bf534e0ce8905bfd4.wav",
+                "entryId": "ja:word:travel-buy",
+                "startFrame": 65035,
+                "frameCount": 13220
+            }
+        ],
+        "sha256": "ea5ae347b4455a975a0d62744b92f7be161f128848fc1a8ad470f7e1000d2f3a",
+        "frames": 90015,
+        "input": {
+            "language": "ja",
+            "label": "えきでしんぶんをかう",
+            "semanticRole": "orderedLexicalSequence",
+            "readings": ["えきでしんぶんをかう"]
+        },
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "construction": "Exact constituent PCM with explicit selected transformations."
+        }
+    },
+    {
+        "path": "audio/2231f17a06bc18940037f2dc71aac5f7faa72a038393434d79cd68089a1664c4.wav",
+        "entryId": "ja:sentence:comprehension-example-meaning",
+        "label": "日本語がわかる",
+        "parts": [
+            {
+                "path": "audio/cff4156d26b0e956bdda771009e94040a6df34fb62a9b74a2037a5ec836017d4.wav",
+                "entryId": "ja:word:nihongo"
+            },
+            {
+                "path": "audio/69d02d32db53e5eeb4bb6db01917e619478b734bd66988c4242ccc1a3e55655d.wav",
+                "entryId": "ja:particle:ga"
+            },
+            {
+                "path": "audio/a756a554f83d17ed9d15085e567e3a6f28682ad30abc1e634bf0dd7f7cdfad98.wav",
+                "entryId": "ja:word:comprehension-understand"
+            },
+            { "pauseMs": 400 }
+        ],
+        "gapMs": 90,
+        "segments": [
+            {
+                "path": "audio/cff4156d26b0e956bdda771009e94040a6df34fb62a9b74a2037a5ec836017d4.wav",
+                "entryId": "ja:word:nihongo",
+                "startFrame": 2400,
+                "frameCount": 16054
+            },
+            {
+                "path": "audio/69d02d32db53e5eeb4bb6db01917e619478b734bd66988c4242ccc1a3e55655d.wav",
+                "entryId": "ja:particle:ga",
+                "startFrame": 20614,
+                "frameCount": 14335
+            },
+            {
+                "path": "audio/a756a554f83d17ed9d15085e567e3a6f28682ad30abc1e634bf0dd7f7cdfad98.wav",
+                "entryId": "ja:word:comprehension-understand",
+                "startFrame": 37109,
+                "frameCount": 15449
+            }
+        ],
+        "sha256": "2231f17a06bc18940037f2dc71aac5f7faa72a038393434d79cd68089a1664c4",
+        "frames": 64318,
+        "input": {
+            "language": "ja",
+            "label": "日本語がわかる",
+            "semanticRole": "orderedLexicalSequence",
+            "readings": ["にほんごがわかる"]
+        },
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "construction": "Exact constituent PCM with explicit selected transformations."
+        }
+    }
+]

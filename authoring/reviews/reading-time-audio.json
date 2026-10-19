@@ -1,0 +1,129 @@
+[
+    {
+        "entryId": "ja:word:reading-time-morning",
+        "path": "audio/3900a1d913de835207aa4c0b601b96b3724df8f26724efad6be9e31864dbeb3a.wav",
+        "sha256": "3900a1d913de835207aa4c0b601b96b3724df8f26724efad6be9e31864dbeb3a",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "朝",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "response": {
+            "request-id": "qfxrFHHOk3wGq2Gh2Tyk",
+            "character-cost": "1",
+            "content-type": "audio/pcm"
+        },
+        "sourcePath": "authoring/audio/reading-time/reading-time-morning.pcm",
+        "sourceSha256": "72e1880f6438d6e45438cda8921c3a5c9f1f6b446d18583682ebdec8b20aeea4",
+        "sourcePeak": 10436,
+        "sourceFullScaleSamples": 0,
+        "gain": 1,
+        "paddingFramesEachSide": 480,
+        "frames": 9876,
+        "listening": "unverified-not-performed",
+        "technicalReview": "Native written input and intended reading checked; all PCM frames preserved with gain limit and endpoint padding; non-silent mono PCM16 at 24000Hz. Not auditory verification."
+    },
+    {
+        "entryId": "ja:word:reading-time-night",
+        "path": "audio/7b442673d3e2398a45f538b9dc640daf4ad40900e74484f9fd560634cc9d2abe.wav",
+        "sha256": "7b442673d3e2398a45f538b9dc640daf4ad40900e74484f9fd560634cc9d2abe",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "夜",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "response": {
+            "request-id": "NcU1ziZdKepwOdt1KX8m",
+            "character-cost": "1",
+            "content-type": "audio/pcm"
+        },
+        "sourcePath": "authoring/audio/reading-time/reading-time-night.pcm",
+        "sourceSha256": "0c3e117a957664d37c77f7ada6716350e780ec74e394b3c324e2f24af0be3d74",
+        "sourcePeak": 4570,
+        "sourceFullScaleSamples": 0,
+        "gain": 1,
+        "paddingFramesEachSide": 480,
+        "frames": 9876,
+        "listening": "unverified-not-performed",
+        "technicalReview": "Native written input and intended reading checked; all PCM frames preserved with gain limit and endpoint padding; non-silent mono PCM16 at 24000Hz. Not auditory verification."
+    },
+    {
+        "entryId": "ja:word:reading-time-book",
+        "path": "audio/b2449bbb16eeefb72452963d9076569770bb78efc96be165e39aa6656e865e8c.wav",
+        "sha256": "ee49c18a9408e63c58984b4ace0b79172c4340b88e276c229972a461e8c35bed",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "ほん",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja"
+        },
+        "sourcePath": "authoring/audio/reading-time/reading-time-book.wav",
+        "sourceSha256": "ee49c18a9408e63c58984b4ace0b79172c4340b88e276c229972a461e8c35bed",
+        "sourceFullScaleSamples": 0,
+        "listening": "unverified-not-performed",
+        "reuse": "Existing exact input lookup and recorded bytes reused; no new provider request. Source is a retained WAV snapshot, not new original PCM.",
+        "providerCharacterCost": 0
+    },
+    {
+        "entryId": "ja:word:reading-time-newspaper",
+        "path": "audio/8d24faaeea27e4f0fe57fc68aee2eb1e17b7a95822bfd39d137b7282f5104e20.wav",
+        "sha256": "8d24faaeea27e4f0fe57fc68aee2eb1e17b7a95822bfd39d137b7282f5104e20",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "新聞",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "response": {
+            "request-id": "PK17X8F2x8jmI3qYdSej",
+            "character-cost": "1",
+            "content-type": "audio/pcm"
+        },
+        "sourcePath": "authoring/audio/reading-time/reading-time-newspaper.pcm",
+        "sourceSha256": "a3f6d32b21ba533b2c42c92bb429c754712d74560abeb42a344ac55f7d1c1a61",
+        "sourcePeak": 18699,
+        "sourceFullScaleSamples": 0,
+        "gain": 1,
+        "paddingFramesEachSide": 480,
+        "frames": 17678,
+        "listening": "unverified-not-performed",
+        "technicalReview": "Native written input and intended reading checked; all PCM frames preserved with gain limit and endpoint padding; non-silent mono PCM16 at 24000Hz. Not auditory verification."
+    }
+]

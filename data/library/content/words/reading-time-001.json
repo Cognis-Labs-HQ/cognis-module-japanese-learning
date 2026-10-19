@@ -1,0 +1,260 @@
+[
+    {
+        "id": "ja:word:complete-pronunciation-reading-time-morning",
+        "label": "あさ",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["あさ"],
+            "audio": "audio/3900a1d913de835207aa4c0b601b96b3724df8f26724efad6be9e31864dbeb3a.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:a",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:sa",
+                        "relation": "reading-kana",
+                        "position": 1
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:reading-time-morning",
+        "label": "あさ",
+        "class": "lexical:noun",
+        "fields": {
+            "pronunciation": ["あさ"],
+            "usage_notes": {
+                "en": "The early part of the day. Japanese 朝 is read あさ; this noun is not the greeting おはようございます. Example: 朝に読む = read in the morning.",
+                "de": "Der frühe Teil des Tages. 朝 wird あさ gelesen; dieses Nomen ist nicht der Gruß おはようございます. Beispiel: 朝に読む = morgens lesen.",
+                "id": "Bagian awal hari. 朝 dibaca あさ; nomina ini bukan salam おはようございます. Contoh: 朝に読む = membaca pada pagi hari.",
+                "ja": "一日の早い時間帯。朝は「あさ」と読み、挨拶のおはようございますとは別の名詞です。例：朝に読む。"
+            },
+            "reference_images": [
+                "images/a818cc81eef0979660691eb76bc8800bd2140ea695b0f1d86e04c51daf45ef0a.jpg"
+            ],
+            "audio": "audio/3900a1d913de835207aa4c0b601b96b3724df8f26724efad6be9e31864dbeb3a.wav"
+        },
+        "tags": ["reading-time"],
+        "references": [
+            {
+                "entryId": "ja:definition:reading-time-morning",
+                "relation": "definitions"
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-reading-time-morning",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:complete-pronunciation-reading-time-night",
+        "label": "よる",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["よる"],
+            "audio": "audio/7b442673d3e2398a45f538b9dc640daf4ad40900e74484f9fd560634cc9d2abe.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:yo",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:ru",
+                        "relation": "reading-kana",
+                        "position": 1
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:reading-time-night",
+        "label": "よる",
+        "class": "lexical:noun",
+        "fields": {
+            "pronunciation": ["よる"],
+            "usage_notes": {
+                "en": "The dark part of the day. Japanese 夜 is read よる here, not the reading や used in some compounds. Example: 夜に寝る = sleep at night.",
+                "de": "Die dunkle Tageszeit. 夜 wird hier よる gelesen, nicht や wie in manchen Zusammensetzungen. Beispiel: 夜に寝る = nachts schlafen.",
+                "id": "Bagian hari saat gelap. 夜 dibaca よる di sini, bukan や yang dipakai dalam beberapa kata majemuk. Contoh: 夜に寝る = tidur pada malam hari.",
+                "ja": "暗い時間帯。ここでの夜の読みは「よる」で、熟語などの「や」とは区別します。例：夜に寝る。"
+            },
+            "reference_images": [
+                "images/46a2ea9d9ec09aa5d55879aa907cf0671cd4b4f88fcb5a5d728e8000eb501986.jpg"
+            ],
+            "audio": "audio/7b442673d3e2398a45f538b9dc640daf4ad40900e74484f9fd560634cc9d2abe.wav"
+        },
+        "tags": ["reading-time"],
+        "references": [
+            {
+                "entryId": "ja:definition:reading-time-night",
+                "relation": "definitions"
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-reading-time-night",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:complete-pronunciation-reading-time-book",
+        "label": "ほん",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["ほん"],
+            "audio": "audio/b2449bbb16eeefb72452963d9076569770bb78efc96be165e39aa6656e865e8c.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:ho",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:n",
+                        "relation": "reading-kana",
+                        "position": 1
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:reading-time-book",
+        "label": "ほん",
+        "class": "lexical:noun",
+        "fields": {
+            "pronunciation": ["ほん"],
+            "usage_notes": {
+                "en": "A book for reading. Japanese 本 is read ほん in this noun; the counter for long objects is a different use. Example: 本を読む = read a book.",
+                "de": "Ein Buch zum Lesen. 本 wird als dieses Nomen ほん gelesen; das Zählwort für längliche Gegenstände ist eine andere Verwendung. Beispiel: 本を読む = ein Buch lesen.",
+                "id": "Buku untuk dibaca. 本 sebagai nomina ini dibaca ほん; penggunaannya sebagai kata bantu bilangan benda panjang berbeda. Contoh: 本を読む = membaca buku.",
+                "ja": "読むための書物。本はここでは「ほん」と読み、細長い物を数える助数詞とは用法を区別します。例：本を読む。"
+            },
+            "reference_images": [
+                "images/4f0116cb5e2975150abfdcb51f544bec6af79ee87247f68da55fc1354a58d0f5.jpg"
+            ],
+            "audio": "audio/b2449bbb16eeefb72452963d9076569770bb78efc96be165e39aa6656e865e8c.wav"
+        },
+        "tags": ["reading-time"],
+        "references": [
+            {
+                "entryId": "ja:definition:reading-time-book",
+                "relation": "definitions"
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-reading-time-book",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:complete-pronunciation-reading-time-newspaper",
+        "label": "しんぶん",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["しんぶん"],
+            "audio": "audio/8d24faaeea27e4f0fe57fc68aee2eb1e17b7a95822bfd39d137b7282f5104e20.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:shi",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:n",
+                        "relation": "reading-kana",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:bu",
+                        "relation": "reading-kana",
+                        "position": 2
+                    },
+                    {
+                        "entryId": "ja:char:n",
+                        "relation": "reading-kana",
+                        "position": 3
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:reading-time-newspaper",
+        "label": "しんぶん",
+        "class": "lexical:noun",
+        "fields": {
+            "pronunciation": ["しんぶん"],
+            "usage_notes": {
+                "en": "A publication reporting news; the picture shows a printed newspaper, not a book or personal letter. Japanese 新聞 is read しんぶん. Example: read a newspaper / 新聞を読む.",
+                "de": "Eine Veröffentlichung mit Nachrichten; das Bild zeigt eine gedruckte Zeitung, kein Buch oder einen persönlichen Brief. 新聞 wird しんぶん gelesen. Beispiel: eine Zeitung lesen.",
+                "id": "Terbitan yang memuat berita; gambar menunjukkan surat kabar cetak, bukan buku atau surat pribadi. 新聞 dibaca しんぶん. Contoh: membaca surat kabar.",
+                "ja": "ニュースを伝える刊行物。画像は紙の新聞で、書籍や個人の手紙ではありません。新聞は「しんぶん」と読みます。例：新聞を読む。"
+            },
+            "reference_images": [
+                "images/317f07c141929b66abf516b9cd0732de42740352fc7068396a82fd4a83d4cf08.jpg"
+            ],
+            "audio": "audio/8d24faaeea27e4f0fe57fc68aee2eb1e17b7a95822bfd39d137b7282f5104e20.wav"
+        },
+        "tags": ["reading-time"],
+        "references": [
+            {
+                "entryId": "ja:definition:reading-time-newspaper",
+                "relation": "definitions"
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-reading-time-newspaper",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    }
+]

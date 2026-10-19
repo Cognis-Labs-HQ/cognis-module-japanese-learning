@@ -390,5 +390,356 @@
             "listening": "unverified-not-performed",
             "sourcePcmSha256": "afa92a9202dfc4d6b7e39b933902751e96655ef60f28f309b5821e57c20a02ef"
         }
+    },
+    {
+        "path": "audio/234149ca007ad52eec06256706a0155f4d127ce5674d41243bfb104d83f1a20e.wav",
+        "text": "おはようございます",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "おはようございます",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "おはようございます",
+                "semanticRole": "lexicalUnit",
+                "readings": ["おはようございます"]
+            }
+        ],
+        "entries": [
+            "ja:word:greetings-morning",
+            "ja:word:complete-pronunciation-greetings-morning"
+        ],
+        "variants": [],
+        "sha256": "234149ca007ad52eec06256706a0155f4d127ce5674d41243bfb104d83f1a20e",
+        "frames": 25480,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "8ff418a87c95905a27fe0905fd53c9915f88b79d4851e06f82bd9eddc2f1f237"
+        }
+    },
+    {
+        "path": "audio/16ec181206336122e284a1860ddafef3ca02b2c1ee67edd8a44bd2c4e04bc9ac.wav",
+        "text": "こんばんは",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "こんばんは",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "こんばんは",
+                "semanticRole": "lexicalUnit",
+                "readings": ["こんばんわ"]
+            },
+            {
+                "language": "ja",
+                "label": "こんばんわ",
+                "semanticRole": "lexicalUnit",
+                "readings": ["こんばんわ"]
+            }
+        ],
+        "entries": [
+            "ja:word:greetings-evening",
+            "ja:word:complete-pronunciation-greetings-evening"
+        ],
+        "variants": [],
+        "sha256": "16ec181206336122e284a1860ddafef3ca02b2c1ee67edd8a44bd2c4e04bc9ac",
+        "frames": 21022,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "85c1a4ea344190090e09a23a1edff15317dc09756b70b1151cab7a359406dd5f"
+        }
+    },
+    {
+        "path": "audio/719918ef467cece94c40fbd08eaf7995088fd0d578397b256262bf960a4c1c24.wav",
+        "text": "おやすみなさい",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "おやすみなさい",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "おやすみなさい",
+                "semanticRole": "lexicalUnit",
+                "readings": ["おやすみなさい"]
+            }
+        ],
+        "entries": [
+            "ja:word:greetings-night",
+            "ja:word:complete-pronunciation-greetings-night"
+        ],
+        "variants": [],
+        "sha256": "719918ef467cece94c40fbd08eaf7995088fd0d578397b256262bf960a4c1c24",
+        "frames": 23251,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "eece23be058a5aa10bf9ea1324e3897c13442d7f4317885677057b5d91a9842f"
+        }
+    },
+    {
+        "path": "audio/85ca161c5ed20309878186daa5df7a18f6dd6961c9134da1e0be0d635c03da17.wav",
+        "text": "またね",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "またね",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "またね",
+                "semanticRole": "lexicalUnit",
+                "readings": ["またね"]
+            }
+        ],
+        "entries": [
+            "ja:word:greetings-later",
+            "ja:word:complete-pronunciation-greetings-later"
+        ],
+        "variants": [],
+        "sha256": "85ca161c5ed20309878186daa5df7a18f6dd6961c9134da1e0be0d635c03da17",
+        "frames": 17678,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "43fc5f259dc2e76b7b24d14fd5e738774a285c0a8a8dd11c25767454a9d32cc9"
+        }
+    },
+    {
+        "path": "audio/3900a1d913de835207aa4c0b601b96b3724df8f26724efad6be9e31864dbeb3a.wav",
+        "text": "あさ",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "朝",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "あさ",
+                "semanticRole": "lexicalUnit",
+                "readings": ["あさ"]
+            }
+        ],
+        "entries": [
+            "ja:word:reading-time-morning",
+            "ja:word:complete-pronunciation-reading-time-morning"
+        ],
+        "variants": [],
+        "sha256": "3900a1d913de835207aa4c0b601b96b3724df8f26724efad6be9e31864dbeb3a",
+        "frames": 9876,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "72e1880f6438d6e45438cda8921c3a5c9f1f6b446d18583682ebdec8b20aeea4"
+        }
+    },
+    {
+        "path": "audio/7b442673d3e2398a45f538b9dc640daf4ad40900e74484f9fd560634cc9d2abe.wav",
+        "text": "よる",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "夜",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "よる",
+                "semanticRole": "lexicalUnit",
+                "readings": ["よる"]
+            }
+        ],
+        "entries": [
+            "ja:word:reading-time-night",
+            "ja:word:complete-pronunciation-reading-time-night"
+        ],
+        "variants": [],
+        "sha256": "7b442673d3e2398a45f538b9dc640daf4ad40900e74484f9fd560634cc9d2abe",
+        "frames": 9876,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "0c3e117a957664d37c77f7ada6716350e780ec74e394b3c324e2f24af0be3d74"
+        }
+    },
+    {
+        "path": "audio/8d24faaeea27e4f0fe57fc68aee2eb1e17b7a95822bfd39d137b7282f5104e20.wav",
+        "text": "しんぶん",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "新聞",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "しんぶん",
+                "semanticRole": "lexicalUnit",
+                "readings": ["しんぶん"]
+            }
+        ],
+        "entries": [
+            "ja:word:reading-time-newspaper",
+            "ja:word:complete-pronunciation-reading-time-newspaper"
+        ],
+        "variants": [],
+        "sha256": "8d24faaeea27e4f0fe57fc68aee2eb1e17b7a95822bfd39d137b7282f5104e20",
+        "frames": 17678,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "a3f6d32b21ba533b2c42c92bb429c754712d74560abeb42a344ac55f7d1c1a61"
+        }
+    },
+    {
+        "path": "audio/a756a554f83d17ed9d15085e567e3a6f28682ad30abc1e634bf0dd7f7cdfad98.wav",
+        "text": "わかる",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "わかる",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "わかる",
+                "semanticRole": "lexicalUnit",
+                "readings": ["わかる"]
+            }
+        ],
+        "entries": [
+            "ja:word:comprehension-understand",
+            "ja:word:complete-pronunciation-comprehension-understand"
+        ],
+        "variants": [],
+        "sha256": "a756a554f83d17ed9d15085e567e3a6f28682ad30abc1e634bf0dd7f7cdfad98",
+        "frames": 15449,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "4e864c2337962dbdda8bd356478853a4431bd27e8c8a00052a7ecd3d16a1bb3a"
+        }
+    },
+    {
+        "path": "audio/163f39cbb2871de705e5fdb6dabcffdd0401043f0c840e6c33ac46e54e99332d.wav",
+        "text": "わかります",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "わかります",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "わかります",
+                "semanticRole": "lexicalUnit",
+                "readings": ["わかります"]
+            }
+        ],
+        "entries": [],
+        "variants": [
+            {
+                "entryId": "ja:word:comprehension-understand",
+                "setId": "comprehension-understand-forms",
+                "path": ["polite"]
+            }
+        ],
+        "sha256": "163f39cbb2871de705e5fdb6dabcffdd0401043f0c840e6c33ac46e54e99332d",
+        "frames": 18793,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "0a64c78f9f7ea327f2b5782e623ba9a92321be2f9be6147c57ca6fba0c9145ce"
+        }
     }
 ]

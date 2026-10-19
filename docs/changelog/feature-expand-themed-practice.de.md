@@ -170,6 +170,18 @@ Sechs Planungsbeispiele und ein Deck behandeln bevorstehende Aktivitäten, Ankun
 
 Sechs einzeln verfasste Lernbeispiele und ein Deck behandeln Schreibgeräte, Lesen, Sprachenlernen, Zuhören im Unterricht und Fragen. Vorhandene genaue Wortaufnahmen werden ohne doppelte Vokabeln oder neue Illustrationen wiederverwendet.
 
+## Begrüßung und Abschied
+
+Morgen- und Abendgrüße, Abschiede vor dem Schlafengehen und vertraute Bis-dann-Ausdrücke ergänzen. Bei こんばんは geschriebenes は und gesprochenes わ unterscheiden und das Register in vier Sprachen erläutern. Kurze feste Äußerungen bleiben Wendungskarten mit natürlichen Anwendungsbeispielen.
+
+## Tageszeiten und Lesen
+
+Japanische Wörter für Morgen, Nacht, Buch und Zeitung sowie englisch newspaper ergänzen; vorhandene englische Nomen wiederverwenden. Je Sprache vier Lesebeispiele hinzufügen. Eine verwirrende Buchdarstellung durch ein stimmiges geschlossenes Buch ersetzen und den Ablehnungsbeleg außerhalb der Laufzeitdateien bewahren.
+
+## Verständnis klären
+
+Understand und わかる mit vier englischen und sieben japanischen Formbindungen ergänzen. Das unregelmäßige understood beibehalten und für den japanischen Zustandsausdruck keine Potentialform automatisch erfinden. Zwei englische Beispiele und ein japanisches Grundformbeispiel hinzufügen. Zwei japanische Satzentwürfe mit gewählten Formen bleiben außerhalb der Laufzeitdaten, weil der Host-Importer Grundformbezeichnungen vergleicht; genaue Audioaufnahmen und Prüfbelege bleiben erhalten. Alle neuen Originalbilder und endgültigen JPEGs wurden visuell geprüft; die Hörprüfung steht aus.
+
 ## Commits
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)

@@ -1,5 +1,98 @@
 [
     {
+        "theme": "requests",
+        "newDistinctVocabularyCount": 4,
+        "vocabulary": [
+            {
+                "entryId": "ja:word:requests-yes",
+                "label": "はい"
+            },
+            {
+                "entryId": "ja:word:requests-no",
+                "label": "いいえ"
+            },
+            {
+                "entryId": "ja:word:requests-please",
+                "label": "おねがいします"
+            },
+            {
+                "entryId": "ja:word:requests-repeat",
+                "label": "もういちど"
+            }
+        ],
+        "newExampleCount": 4,
+        "exampleIds": [
+            "ja:sentence:requests-example-yes",
+            "ja:sentence:requests-example-no",
+            "ja:sentence:requests-example-please",
+            "ja:sentence:requests-example-repeat"
+        ],
+        "recordedGrammaticalFormCount": 0,
+        "vocabularyAudit": "authoring/reviews/requests-vocabulary.json"
+    },
+    {
+        "theme": "rooms",
+        "newDistinctVocabularyCount": 4,
+        "vocabulary": [
+            {
+                "entryId": "ja:word:rooms-bedroom",
+                "label": "しんしつ"
+            },
+            {
+                "entryId": "ja:word:rooms-bathroom",
+                "label": "よくしつ"
+            },
+            {
+                "entryId": "ja:word:rooms-kitchen",
+                "label": "だいどころ"
+            },
+            {
+                "entryId": "ja:word:rooms-garden",
+                "label": "にわ"
+            }
+        ],
+        "newExampleCount": 4,
+        "exampleIds": [
+            "ja:sentence:rooms-example-bedroom",
+            "ja:sentence:rooms-example-bathroom",
+            "ja:sentence:rooms-example-kitchen",
+            "ja:sentence:rooms-example-garden"
+        ],
+        "recordedGrammaticalFormCount": 0,
+        "vocabularyAudit": "authoring/reviews/rooms-vocabulary.json"
+    },
+    {
+        "theme": "school",
+        "newDistinctVocabularyCount": 4,
+        "vocabulary": [
+            {
+                "entryId": "ja:word:school-pencil",
+                "label": "えんぴつ"
+            },
+            {
+                "entryId": "ja:word:school-pen",
+                "label": "ペン"
+            },
+            {
+                "entryId": "ja:word:school-notebook",
+                "label": "ノート"
+            },
+            {
+                "entryId": "ja:word:school-ruler",
+                "label": "じょうぎ"
+            }
+        ],
+        "newExampleCount": 4,
+        "exampleIds": [
+            "ja:sentence:school-example-pencil",
+            "ja:sentence:school-example-pen",
+            "ja:sentence:school-example-notebook",
+            "ja:sentence:school-example-ruler"
+        ],
+        "recordedGrammaticalFormCount": 0,
+        "vocabularyAudit": "authoring/reviews/school-vocabulary.json"
+    },
+    {
         "theme": "seasons",
         "newDistinctVocabularyCount": 4,
         "vocabulary": [
@@ -210,53 +303,5 @@
         ],
         "recordedGrammaticalFormCount": 0,
         "vocabularyAudit": "authoring/reviews/weather-vocabulary.json"
-    },
-    {
-        "theme": "mealtime",
-        "newDistinctVocabularyCount": 0,
-        "vocabulary": [],
-        "newExampleCount": 6,
-        "exampleIds": [
-            "ja:sentence:mealtime-eat-cheese",
-            "ja:sentence:mealtime-like-soup",
-            "ja:sentence:mealtime-have-butter",
-            "ja:sentence:mealtime-eat-rice",
-            "ja:sentence:mealtime-small-tomato",
-            "ja:sentence:mealtime-drink-with-friend"
-        ],
-        "recordedGrammaticalFormCount": 0,
-        "vocabularyAudit": "authoring/reviews/mealtime.json"
-    },
-    {
-        "theme": "daily",
-        "newDistinctVocabularyCount": 0,
-        "vocabulary": [],
-        "newExampleCount": 6,
-        "exampleIds": [
-            "ja:sentence:daily-go-school",
-            "ja:sentence:daily-walk-friend",
-            "ja:sentence:daily-eat-friend",
-            "ja:sentence:daily-learn-school",
-            "ja:sentence:daily-drink-slowly",
-            "ja:sentence:daily-walk-school-here"
-        ],
-        "recordedGrammaticalFormCount": 0,
-        "vocabularyAudit": "authoring/reviews/daily.json"
-    },
-    {
-        "theme": "shopping",
-        "newDistinctVocabularyCount": 0,
-        "vocabulary": [],
-        "newExampleCount": 6,
-        "exampleIds": [
-            "ja:sentence:shopping-buy-small-bag",
-            "ja:sentence:shopping-buy-hat-coat",
-            "ja:sentence:shopping-small-shoes",
-            "ja:sentence:shopping-where-phone",
-            "ja:sentence:shopping-like-computers",
-            "ja:sentence:shopping-umbrella-here"
-        ],
-        "recordedGrammaticalFormCount": 0,
-        "vocabularyAudit": "authoring/reviews/shopping.json"
     }
 ]

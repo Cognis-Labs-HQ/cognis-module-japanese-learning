@@ -1,10 +1,10 @@
 [
     {
-        "path": "audio/0309c12ad24571968b2db6444db604c7f30961e97fa26c67f74a0ef9e1bf96cb.wav",
+        "path": "audio/5a662e798ab3fd4b763bb0d6ea247d3b560c41b765e592d1f1540e159cffd0cb.wav",
         "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "text": "ちゃ",
+        "text": "りゅ",
         "request": {
-            "text": "ちゃ",
+            "text": "りゅ",
             "model_id": "eleven_flash_v2_5",
             "seed": 42,
             "voice_settings": {
@@ -20,28 +20,28 @@
         "inputs": [
             {
                 "language": "ja",
-                "label": "ちゃ",
+                "label": "りゅ",
                 "semanticRole": "atomicWritingUnit",
-                "readings": ["cha"]
+                "readings": ["ryu"]
             },
             {
                 "language": "ja",
-                "label": "チャ",
+                "label": "リュ",
                 "semanticRole": "atomicWritingUnit",
-                "readings": ["cha"]
+                "readings": ["ryu"]
             }
         ],
-        "entries": ["ja:char:cha", "ja:char:ka:cha"],
+        "entries": ["ja:char:ryu", "ja:char:ka:ryu"],
         "variants": [],
-        "sha256": "e378af5265d69b6c02ef47e3fa6b4d1f28dbba787934b60fc1f66aa7f553bc0b",
-        "frames": 13220
+        "sha256": "4326ee8925a16dfb4d705698699fa42206d96f8f4d49a38125d9015a61a4b92a",
+        "frames": 10991
     },
     {
-        "path": "audio/457a86aa2d03619f19e3006ef63ae9565be68e1b6084bc2b0dc9e056014357b1.wav",
+        "path": "audio/5a4e5312c7b1bc3489c34ad2c5a4215247eeef40b1a6ad1ac6571cc2c7445bd0.wav",
         "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "text": "ちゅ",
+        "text": "りょ",
         "request": {
-            "text": "ちゅ",
+            "text": "りょ",
             "model_id": "eleven_flash_v2_5",
             "seed": 42,
             "voice_settings": {
@@ -57,519 +57,28 @@
         "inputs": [
             {
                 "language": "ja",
-                "label": "ちゅ",
+                "label": "りょ",
                 "semanticRole": "atomicWritingUnit",
-                "readings": ["chu"]
+                "readings": ["ryo"]
             },
             {
                 "language": "ja",
-                "label": "チュ",
+                "label": "リョ",
                 "semanticRole": "atomicWritingUnit",
-                "readings": ["chu"]
+                "readings": ["ryo"]
             }
         ],
-        "entries": ["ja:char:chu", "ja:char:ka:chu"],
+        "entries": ["ja:char:ryo", "ja:char:ka:ryo"],
         "variants": [],
-        "sha256": "be9484acf8b5c0f9782710c47d3f5f0573d67ddff4a8e9529db9f1f663114b6f",
-        "frames": 13220
-    },
-    {
-        "path": "audio/6335ca6b60ce8a272155e6d1969239c59aa3e47ff18361ca87ff4e5f1855f2e7.wav",
-        "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "text": "ちょ。",
-        "request": {
-            "text": "ちょ。",
-            "model_id": "eleven_flash_v2_5",
-            "seed": 42,
-            "voice_settings": {
-                "stability": 0.9,
-                "similarity_boost": 0.85,
-                "style": 0,
-                "use_speaker_boost": true,
-                "speed": 0.9
-            },
-            "apply_text_normalization": "off",
-            "language_code": "ja"
-        },
-        "inputs": [
-            {
-                "language": "ja",
-                "label": "ちょ",
-                "semanticRole": "atomicWritingUnit",
-                "readings": ["cho"]
-            },
-            {
-                "language": "ja",
-                "label": "チョ",
-                "semanticRole": "atomicWritingUnit",
-                "readings": ["cho"]
-            },
-            {
-                "language": "ja",
-                "label": "ちょ",
-                "semanticRole": "lexicalUnit",
-                "readings": ["ちょ"]
-            }
-        ],
-        "entries": [
-            "ja:char:cho",
-            "ja:char:ka:cho",
-            "ja:word:kanji-reading-e7aeb8-02"
-        ],
-        "variants": [],
-        "sha256": "a875dacfd2eecb3b352b91850e469901aa6b5d0b6b5a3b5ff37cd5361d113856",
-        "frames": 15449
-    },
-    {
-        "path": "audio/995eee90a6ebaf0e4893c266839d17958bca1f7ac6de5fd1ff604b80b59f617f.wav",
-        "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "text": "にゃ",
-        "request": {
-            "text": "にゃ",
-            "model_id": "eleven_flash_v2_5",
-            "seed": 42,
-            "voice_settings": {
-                "stability": 0.9,
-                "similarity_boost": 0.85,
-                "style": 0,
-                "use_speaker_boost": true,
-                "speed": 0.9
-            },
-            "apply_text_normalization": "off",
-            "language_code": "ja"
-        },
-        "inputs": [
-            {
-                "language": "ja",
-                "label": "にゃ",
-                "semanticRole": "atomicWritingUnit",
-                "readings": ["nya"]
-            },
-            {
-                "language": "ja",
-                "label": "ニャ",
-                "semanticRole": "atomicWritingUnit",
-                "readings": ["nya"]
-            }
-        ],
-        "entries": ["ja:char:nya", "ja:char:ka:nya"],
-        "variants": [],
-        "sha256": "04eae172918024867fd9bd3cc7d83e73d74af24af99dbe9d501739e1d85752d3",
-        "frames": 13220
-    },
-    {
-        "path": "audio/4d38fca75ad5e8d374de7dfb6303b8a4b01afa0819610344de9d33876fb98d8d.wav",
-        "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "text": "にゅ",
-        "request": {
-            "text": "にゅ",
-            "model_id": "eleven_flash_v2_5",
-            "seed": 42,
-            "voice_settings": {
-                "stability": 0.9,
-                "similarity_boost": 0.85,
-                "style": 0,
-                "use_speaker_boost": true,
-                "speed": 0.9
-            },
-            "apply_text_normalization": "off",
-            "language_code": "ja"
-        },
-        "inputs": [
-            {
-                "language": "ja",
-                "label": "にゅ",
-                "semanticRole": "atomicWritingUnit",
-                "readings": ["nyu"]
-            },
-            {
-                "language": "ja",
-                "label": "ニュ",
-                "semanticRole": "atomicWritingUnit",
-                "readings": ["nyu"]
-            }
-        ],
-        "entries": ["ja:char:nyu", "ja:char:ka:nyu"],
-        "variants": [],
-        "sha256": "a860ee64f2c8814b2a6503451d37fdabd6e5be506402e6c2418a280c2ad62d95",
-        "frames": 12106
-    },
-    {
-        "path": "audio/dc74cfbaf2b04854667f86918b8cc36c4507961d7779662bfda49750547a88e8.wav",
-        "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "text": "にょ",
-        "request": {
-            "text": "にょ",
-            "model_id": "eleven_flash_v2_5",
-            "seed": 42,
-            "voice_settings": {
-                "stability": 0.9,
-                "similarity_boost": 0.85,
-                "style": 0,
-                "use_speaker_boost": true,
-                "speed": 0.9
-            },
-            "apply_text_normalization": "off",
-            "language_code": "ja"
-        },
-        "inputs": [
-            {
-                "language": "ja",
-                "label": "にょ",
-                "semanticRole": "atomicWritingUnit",
-                "readings": ["nyo"]
-            },
-            {
-                "language": "ja",
-                "label": "ニョ",
-                "semanticRole": "atomicWritingUnit",
-                "readings": ["nyo"]
-            }
-        ],
-        "entries": ["ja:char:nyo", "ja:char:ka:nyo"],
-        "variants": [],
-        "sha256": "810bb186ec28dba908a56c59c944448267421768e02a7844a4dadd67f41e9e40",
-        "frames": 13220
-    },
-    {
-        "path": "audio/47e2703a8181f3a9fbbca8d6ee4ade1e0baf85c53e83d2123539bec23afca7f2.wav",
-        "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "text": "ひゃ",
-        "request": {
-            "text": "ひゃ",
-            "model_id": "eleven_flash_v2_5",
-            "seed": 42,
-            "voice_settings": {
-                "stability": 0.9,
-                "similarity_boost": 0.85,
-                "style": 0,
-                "use_speaker_boost": true,
-                "speed": 0.9
-            },
-            "apply_text_normalization": "off",
-            "language_code": "ja"
-        },
-        "inputs": [
-            {
-                "language": "ja",
-                "label": "ひゃ",
-                "semanticRole": "atomicWritingUnit",
-                "readings": ["hya"]
-            },
-            {
-                "language": "ja",
-                "label": "ヒャ",
-                "semanticRole": "atomicWritingUnit",
-                "readings": ["hya"]
-            }
-        ],
-        "entries": ["ja:char:hya", "ja:char:ka:hya"],
-        "variants": [],
-        "sha256": "a8da069b63b435b62083f79bd2641e06f3bd0383a8171785ed05f30b68ba9c0a",
-        "frames": 13220
-    },
-    {
-        "path": "audio/14660b042477b236a8542b40b41ef490a813bcbe9ef88453a4976ebd755d5e63.wav",
-        "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "text": "ひゅ",
-        "request": {
-            "text": "ひゅ",
-            "model_id": "eleven_flash_v2_5",
-            "seed": 42,
-            "voice_settings": {
-                "stability": 0.9,
-                "similarity_boost": 0.85,
-                "style": 0,
-                "use_speaker_boost": true,
-                "speed": 0.9
-            },
-            "apply_text_normalization": "off",
-            "language_code": "ja"
-        },
-        "inputs": [
-            {
-                "language": "ja",
-                "label": "ひゅ",
-                "semanticRole": "atomicWritingUnit",
-                "readings": ["hyu"]
-            },
-            {
-                "language": "ja",
-                "label": "ヒュ",
-                "semanticRole": "atomicWritingUnit",
-                "readings": ["hyu"]
-            }
-        ],
-        "entries": ["ja:char:hyu", "ja:char:ka:hyu"],
-        "variants": [],
-        "sha256": "fd352d713c4e67f030e1aa3bdc4d13ebd137794bbb2235adf3fa73b688604dc6",
-        "frames": 13220
-    },
-    {
-        "path": "audio/adbdfb3cd781fa71cf26abf124b4c33ad8a74052d7a8ba93f54fbaf469018c3e.wav",
-        "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "text": "ひょ",
-        "request": {
-            "text": "ひょ",
-            "model_id": "eleven_flash_v2_5",
-            "seed": 42,
-            "voice_settings": {
-                "stability": 0.9,
-                "similarity_boost": 0.85,
-                "style": 0,
-                "use_speaker_boost": true,
-                "speed": 0.9
-            },
-            "apply_text_normalization": "off",
-            "language_code": "ja"
-        },
-        "inputs": [
-            {
-                "language": "ja",
-                "label": "ひょ",
-                "semanticRole": "atomicWritingUnit",
-                "readings": ["hyo"]
-            },
-            {
-                "language": "ja",
-                "label": "ヒョ",
-                "semanticRole": "atomicWritingUnit",
-                "readings": ["hyo"]
-            }
-        ],
-        "entries": ["ja:char:hyo", "ja:char:ka:hyo"],
-        "variants": [],
-        "sha256": "1b304821e5a645407ad72c7abb61327ba1693f9f1b0654b962805ce30103552b",
-        "frames": 13220
-    },
-    {
-        "path": "audio/0a99f5208320accad74c0a89d6eeb71aa9750d515dd5d231862aaf618eac9b3b.wav",
-        "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "text": "びゃ",
-        "request": {
-            "text": "びゃ",
-            "model_id": "eleven_flash_v2_5",
-            "seed": 42,
-            "voice_settings": {
-                "stability": 0.9,
-                "similarity_boost": 0.85,
-                "style": 0,
-                "use_speaker_boost": true,
-                "speed": 0.9
-            },
-            "apply_text_normalization": "off",
-            "language_code": "ja"
-        },
-        "inputs": [
-            {
-                "language": "ja",
-                "label": "びゃ",
-                "semanticRole": "atomicWritingUnit",
-                "readings": ["bya"]
-            },
-            {
-                "language": "ja",
-                "label": "ビャ",
-                "semanticRole": "atomicWritingUnit",
-                "readings": ["bya"]
-            }
-        ],
-        "entries": ["ja:char:bya", "ja:char:ka:bya"],
-        "variants": [],
-        "sha256": "70f197e1ffb69ddb2b14dbd77f30013962775350d5e4f35399a86885698c2814",
-        "frames": 15449
-    },
-    {
-        "path": "audio/64c84b47519d21afa943ad094126ecbce38064022e734267b311369552d11717.wav",
-        "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "text": "びゅ",
-        "request": {
-            "text": "びゅ",
-            "model_id": "eleven_flash_v2_5",
-            "seed": 42,
-            "voice_settings": {
-                "stability": 0.9,
-                "similarity_boost": 0.85,
-                "style": 0,
-                "use_speaker_boost": true,
-                "speed": 0.9
-            },
-            "apply_text_normalization": "off",
-            "language_code": "ja"
-        },
-        "inputs": [
-            {
-                "language": "ja",
-                "label": "びゅ",
-                "semanticRole": "atomicWritingUnit",
-                "readings": ["byu"]
-            },
-            {
-                "language": "ja",
-                "label": "ビュ",
-                "semanticRole": "atomicWritingUnit",
-                "readings": ["byu"]
-            }
-        ],
-        "entries": ["ja:char:byu", "ja:char:ka:byu"],
-        "variants": [],
-        "sha256": "2c73783cbbf61349745bbbce316f1a1bca36df52eae2a63e275b88c0a0de62f7",
-        "frames": 15449
-    },
-    {
-        "path": "audio/3b842619ee62c888103b75d2633f25b0b126f9389b9560ff5e13d919fe69c16c.wav",
-        "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "text": "びょ",
-        "request": {
-            "text": "びょ",
-            "model_id": "eleven_flash_v2_5",
-            "seed": 42,
-            "voice_settings": {
-                "stability": 0.9,
-                "similarity_boost": 0.85,
-                "style": 0,
-                "use_speaker_boost": true,
-                "speed": 0.9
-            },
-            "apply_text_normalization": "off",
-            "language_code": "ja"
-        },
-        "inputs": [
-            {
-                "language": "ja",
-                "label": "びょ",
-                "semanticRole": "atomicWritingUnit",
-                "readings": ["byo"]
-            },
-            {
-                "language": "ja",
-                "label": "ビョ",
-                "semanticRole": "atomicWritingUnit",
-                "readings": ["byo"]
-            }
-        ],
-        "entries": ["ja:char:byo", "ja:char:ka:byo"],
-        "variants": [],
-        "sha256": "8ee2c79bc20a67e6fbe1611f1ee46120dc3c742aa175b1cefc8b2f22be7a7ef6",
-        "frames": 15449
-    },
-    {
-        "path": "audio/7343f9339cde4572d1814a03553a86c1e0bb745d6a3bfd2df5f3fd216f201392.wav",
-        "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "text": "ぴゃ",
-        "request": {
-            "text": "ぴゃ",
-            "model_id": "eleven_flash_v2_5",
-            "seed": 42,
-            "voice_settings": {
-                "stability": 0.9,
-                "similarity_boost": 0.85,
-                "style": 0,
-                "use_speaker_boost": true,
-                "speed": 0.9
-            },
-            "apply_text_normalization": "off",
-            "language_code": "ja"
-        },
-        "inputs": [
-            {
-                "language": "ja",
-                "label": "ぴゃ",
-                "semanticRole": "atomicWritingUnit",
-                "readings": ["pya"]
-            },
-            {
-                "language": "ja",
-                "label": "ピャ",
-                "semanticRole": "atomicWritingUnit",
-                "readings": ["pya"]
-            }
-        ],
-        "entries": ["ja:char:pya", "ja:char:ka:pya"],
-        "variants": [],
-        "sha256": "605192f9d8e4c54790336a7bdab404ae4c80daeb61553a8bfb09ec95e2107196",
-        "frames": 15449
-    },
-    {
-        "path": "audio/5ac1427bdaf2180907ae095a7f1705ba34db6a9b600b1ef8f8a775986f4591db.wav",
-        "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "text": "ぴゅ",
-        "request": {
-            "text": "ぴゅ",
-            "model_id": "eleven_flash_v2_5",
-            "seed": 42,
-            "voice_settings": {
-                "stability": 0.9,
-                "similarity_boost": 0.85,
-                "style": 0,
-                "use_speaker_boost": true,
-                "speed": 0.9
-            },
-            "apply_text_normalization": "off",
-            "language_code": "ja"
-        },
-        "inputs": [
-            {
-                "language": "ja",
-                "label": "ぴゅ",
-                "semanticRole": "atomicWritingUnit",
-                "readings": ["pyu"]
-            },
-            {
-                "language": "ja",
-                "label": "ピュ",
-                "semanticRole": "atomicWritingUnit",
-                "readings": ["pyu"]
-            }
-        ],
-        "entries": ["ja:char:pyu", "ja:char:ka:pyu"],
-        "variants": [],
-        "sha256": "037cb8ad43d2cf8e76c28aef2ff1f6518e86f91d5dc9c792013eee224aecbbf7",
-        "frames": 13220
-    },
-    {
-        "path": "audio/a1337d8bc68d23aec08889624747761be36e4ecde37346caa8ec8daf9bca2cae.wav",
-        "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "text": "ぴょ",
-        "request": {
-            "text": "ぴょ",
-            "model_id": "eleven_flash_v2_5",
-            "seed": 42,
-            "voice_settings": {
-                "stability": 0.9,
-                "similarity_boost": 0.85,
-                "style": 0,
-                "use_speaker_boost": true,
-                "speed": 0.9
-            },
-            "apply_text_normalization": "off",
-            "language_code": "ja"
-        },
-        "inputs": [
-            {
-                "language": "ja",
-                "label": "ぴょ",
-                "semanticRole": "atomicWritingUnit",
-                "readings": ["pyo"]
-            },
-            {
-                "language": "ja",
-                "label": "ピョ",
-                "semanticRole": "atomicWritingUnit",
-                "readings": ["pyo"]
-            }
-        ],
-        "entries": ["ja:char:pyo", "ja:char:ka:pyo"],
-        "variants": [],
-        "sha256": "6993b579d985268cde5aae2116edb2f2dacca821ac09d0702fff5499ac9ac3f1",
+        "sha256": "181a21e112ca93bb653dce5137777b75ceb6b4a21e50d6c13462fe9ed3edf096",
         "frames": 14335
     },
     {
-        "path": "audio/5d31c62eae2d7f595358239d74524cbb50593dff0df527617713a026d0c39226.wav",
+        "path": "audio/d5270b82911e05f7277dd7cf6c17300bccd017f80b7c0c5accfc7a8b824c2b0b.wav",
         "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "text": "みゃ",
+        "text": "あ",
         "request": {
-            "text": "みゃ",
+            "text": "あ",
             "model_id": "eleven_flash_v2_5",
             "seed": 42,
             "voice_settings": {
@@ -585,28 +94,52 @@
         "inputs": [
             {
                 "language": "ja",
-                "label": "みゃ",
+                "label": "ぁ",
                 "semanticRole": "atomicWritingUnit",
-                "readings": ["mya"]
+                "readings": ["a"]
             },
             {
                 "language": "ja",
-                "label": "ミャ",
+                "label": "あ",
                 "semanticRole": "atomicWritingUnit",
-                "readings": ["mya"]
+                "readings": ["a"]
+            },
+            {
+                "language": "ja",
+                "label": "ァ",
+                "semanticRole": "atomicWritingUnit",
+                "readings": ["a"]
+            },
+            {
+                "language": "ja",
+                "label": "ア",
+                "semanticRole": "atomicWritingUnit",
+                "readings": ["a"]
+            },
+            {
+                "language": "ja",
+                "label": "あ",
+                "semanticRole": "lexicalUnit",
+                "readings": ["あ"]
             }
         ],
-        "entries": ["ja:char:mya", "ja:char:ka:mya"],
+        "entries": [
+            "ja:char:small-a",
+            "ja:char:a",
+            "ja:char:ka:small-a",
+            "ja:char:ka:a",
+            "ja:word:kanji-reading-e7a9ba-02"
+        ],
         "variants": [],
-        "sha256": "e359f003ce2c93fb7793b7204c0d1837a437dd33fb04fe1a155b760d5321ee87",
-        "frames": 15449
+        "sha256": "b6a3dc8f7cc2156217d00c93862848a8a7398df8ca1f4ee7e6d1759843dfba98",
+        "frames": 8762
     },
     {
-        "path": "audio/9abffe80e83bdc04ada469d40fb11b58493c94a016b469a6a097d2bf6fb6c973.wav",
+        "path": "audio/6d69969d2ff649789eee5b9afe431e76d181b66df8ff4fffa6113661589b5bd8.wav",
         "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "text": "みゅ",
+        "text": "い",
         "request": {
-            "text": "みゅ",
+            "text": "い",
             "model_id": "eleven_flash_v2_5",
             "seed": 42,
             "voice_settings": {
@@ -622,20 +155,334 @@
         "inputs": [
             {
                 "language": "ja",
-                "label": "みゅ",
+                "label": "ぃ",
                 "semanticRole": "atomicWritingUnit",
-                "readings": ["myu"]
+                "readings": ["i"]
             },
             {
                 "language": "ja",
-                "label": "ミュ",
+                "label": "い",
                 "semanticRole": "atomicWritingUnit",
-                "readings": ["myu"]
+                "readings": ["i"]
+            },
+            {
+                "language": "ja",
+                "label": "ィ",
+                "semanticRole": "atomicWritingUnit",
+                "readings": ["i"]
+            },
+            {
+                "language": "ja",
+                "label": "イ",
+                "semanticRole": "atomicWritingUnit",
+                "readings": ["i"]
+            },
+            {
+                "language": "ja",
+                "label": "い",
+                "semanticRole": "lexicalUnit",
+                "readings": ["い"]
             }
         ],
-        "entries": ["ja:char:myu", "ja:char:ka:myu"],
+        "entries": [
+            "ja:char:small-i",
+            "ja:char:i",
+            "ja:char:ka:small-i",
+            "ja:char:ka:i",
+            "ja:word:kanji-reading-e8a18c-01",
+            "ja:word:kanji-reading-e5a5bd-04",
+            "ja:word:kanji-reading-e9a3b4-03",
+            "ja:word:kanji-reading-e7949f-02"
+        ],
         "variants": [],
-        "sha256": "1ae0e6d047627c9d1b263803ea0ff5bc8a07098a3f442a6b599ad062868a65b4",
-        "frames": 12106
+        "sha256": "256033193d0fff5ac31d8ed9913e1f93649baf35856b6588de05a271059af091",
+        "frames": 8762
+    },
+    {
+        "path": "audio/8bf0279c8fab0b7b0070eeddab61efd1de2b226d3d33157550a37a8855fff58e.wav",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "text": "う",
+        "request": {
+            "text": "う",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "apply_text_normalization": "off",
+            "language_code": "ja"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "ぅ",
+                "semanticRole": "atomicWritingUnit",
+                "readings": ["u"]
+            },
+            {
+                "language": "ja",
+                "label": "う",
+                "semanticRole": "atomicWritingUnit",
+                "readings": ["u"]
+            },
+            {
+                "language": "ja",
+                "label": "ゥ",
+                "semanticRole": "atomicWritingUnit",
+                "readings": ["u"]
+            },
+            {
+                "language": "ja",
+                "label": "ウ",
+                "semanticRole": "atomicWritingUnit",
+                "readings": ["u"]
+            },
+            {
+                "language": "ja",
+                "label": "う",
+                "semanticRole": "lexicalUnit",
+                "readings": ["う"]
+            }
+        ],
+        "entries": [
+            "ja:char:small-u",
+            "ja:char:u",
+            "ja:char:ka:small-u",
+            "ja:char:ka:u",
+            "ja:word:kanji-reading-e99ba8-04",
+            "ja:word:kanji-reading-e7949f-03"
+        ],
+        "variants": [],
+        "sha256": "98850f07995c3924d50c8bc92952cefd7670f51e5b207ffa51f0ad3e303776c5",
+        "frames": 8762
+    },
+    {
+        "path": "audio/ef803ed2d9dc2a23cb60bf918b4d34b25be6bbb600ad194fa787b60b817538ec.wav",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "text": "え",
+        "request": {
+            "text": "え",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "apply_text_normalization": "off",
+            "language_code": "ja"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "ぇ",
+                "semanticRole": "atomicWritingUnit",
+                "readings": ["e"]
+            },
+            {
+                "language": "ja",
+                "label": "え",
+                "semanticRole": "atomicWritingUnit",
+                "readings": ["e"]
+            },
+            {
+                "language": "ja",
+                "label": "ェ",
+                "semanticRole": "atomicWritingUnit",
+                "readings": ["e"]
+            },
+            {
+                "language": "ja",
+                "label": "エ",
+                "semanticRole": "atomicWritingUnit",
+                "readings": ["e"]
+            },
+            {
+                "language": "ja",
+                "label": "へ",
+                "semanticRole": "particle",
+                "readings": ["へ"]
+            }
+        ],
+        "entries": [
+            "ja:char:small-e",
+            "ja:char:e",
+            "ja:char:ka:small-e",
+            "ja:char:ka:e",
+            "ja:particle:e"
+        ],
+        "variants": [],
+        "sha256": "85fdd51629df1bd8a22eb0f29ce5701e62c0f04024a4d5364dedc295cee01cad",
+        "frames": 10991
+    },
+    {
+        "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "text": "お",
+        "request": {
+            "text": "お",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "apply_text_normalization": "off",
+            "language_code": "ja"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "ぉ",
+                "semanticRole": "atomicWritingUnit",
+                "readings": ["o"]
+            },
+            {
+                "language": "ja",
+                "label": "お",
+                "semanticRole": "atomicWritingUnit",
+                "readings": ["o"]
+            },
+            {
+                "language": "ja",
+                "label": "ォ",
+                "semanticRole": "atomicWritingUnit",
+                "readings": ["o"]
+            },
+            {
+                "language": "ja",
+                "label": "オ",
+                "semanticRole": "atomicWritingUnit",
+                "readings": ["o"]
+            },
+            {
+                "language": "ja",
+                "label": "お",
+                "semanticRole": "lexicalUnit",
+                "readings": ["お"]
+            },
+            {
+                "language": "ja",
+                "label": "を",
+                "semanticRole": "particle",
+                "readings": ["を"]
+            }
+        ],
+        "entries": [
+            "ja:char:small-o",
+            "ja:char:o",
+            "ja:char:ka:small-o",
+            "ja:char:ka:o",
+            "ja:word:kanji-reading-e5b08f-03",
+            "ja:word:kanji-reading-e7949f-06",
+            "ja:particle:wo"
+        ],
+        "variants": [],
+        "sha256": "2f33c50c9eacd5240b0b6c6e8c96b4665bf8f0d02084f530a9d5083983c5438c",
+        "frames": 8762
+    },
+    {
+        "path": "audio/43ee7a601b45742716f8c1c424c576992297faf0a3ec140047ad194b682f7edf.wav",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "text": "か",
+        "request": {
+            "text": "か",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "apply_text_normalization": "off",
+            "language_code": "ja"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "か",
+                "semanticRole": "atomicWritingUnit",
+                "readings": ["ka"]
+            },
+            {
+                "language": "ja",
+                "label": "ヵ",
+                "semanticRole": "atomicWritingUnit",
+                "readings": ["ka"]
+            },
+            {
+                "language": "ja",
+                "label": "カ",
+                "semanticRole": "atomicWritingUnit",
+                "readings": ["ka"]
+            },
+            {
+                "language": "ja",
+                "label": "か",
+                "semanticRole": "lexicalUnit",
+                "readings": ["か"]
+            },
+            {
+                "language": "ja",
+                "label": "か",
+                "semanticRole": "particle",
+                "readings": ["か"]
+            }
+        ],
+        "entries": [
+            "ja:char:ka",
+            "ja:char:ka:small-ka",
+            "ja:char:ka:ka",
+            "ja:word:complete-pronunciation-ka-day-counter",
+            "ja:word:kanji-reading-e88ab1-02",
+            "ja:word:kanji-reading-ja:kanji:nichi-04",
+            "ja:word:ka-day-counter",
+            "ja:particle:ka"
+        ],
+        "variants": [],
+        "sha256": "1c44c4c3d70974ca26c866de6067f45e1a6612fb75b488e86e75555b14278993",
+        "frames": 13220
+    },
+    {
+        "path": "audio/fa2d980bad362cd34fd4a0ea61c589459d7a2b04ae42e72d63d48f9eb9d858a4.wav",
+        "text": "ちょうおん",
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "ー",
+                "semanticRole": "atomicWritingUnit",
+                "readings": ["choon"]
+            }
+        ],
+        "entries": ["ja:char:long-vowel-mark"],
+        "variants": [],
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "ちょうおん",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "sha256": "ac8a2c5170a0779a34815d5ad6d600ba5cc36cd1a4ab441e24a33e76bdb6d370",
+        "frames": 17678
     }
 ]

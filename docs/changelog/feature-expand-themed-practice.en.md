@@ -170,6 +170,18 @@ Add six planning examples and a deck for upcoming activities, arrival, waiting a
 
 Add six individually authored study examples and a deck covering writing tools, reading, language learning, classroom listening and questions. Reuse existing exact word recordings without adding duplicate vocabulary or illustrations.
 
+## Greetings and Farewells
+
+Add morning and evening greetings, bedtime farewells and casual see-you expressions. Distinguish Japanese written は from spoken わ in こんばんは and explain register in four languages. Keep short conventional utterances as phrase cards with natural usage examples.
+
+## Time and Reading
+
+Add Japanese morning, night, book and newspaper, and English newspaper; reuse existing English nouns. Add four reading examples per language. Replace a confusing book illustration with a coherent closed book and retain the rejection evidence outside runtime.
+
+## Checking Understanding
+
+Add understand and わかる with four English and seven Japanese grammatical-form bindings. Retain irregular understood and avoid automatically inventing a potential form for the Japanese stative sense. Add two English examples and one Japanese base-form example. Two Japanese selected-form sentence drafts remain outside runtime because the host importer compares base labels; their exact audio and review evidence are retained. All new originals and final JPEGs were visually reviewed; audio listening remains unverified.
+
 ## Commits
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)

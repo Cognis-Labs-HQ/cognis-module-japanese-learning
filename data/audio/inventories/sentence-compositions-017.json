@@ -542,5 +542,224 @@
             "listening": "unverified-not-performed",
             "construction": "Exact existing constituent PCM; no external synthesis."
         }
+    },
+    {
+        "path": "audio/4b9061f21944e6a94f78947f888e441faa62bb933c228059c17e87b45fed11bd.wav",
+        "entryId": "ja:sentence:reading-time-example-morning-news",
+        "label": "あさにしんぶんをよむ",
+        "parts": [
+            {
+                "path": "audio/3900a1d913de835207aa4c0b601b96b3724df8f26724efad6be9e31864dbeb3a.wav",
+                "entryId": "ja:word:reading-time-morning"
+            },
+            {
+                "path": "audio/1615cf278c2962c1657907b3686d653625229af2375f90dda5bfd5b178c7aedb.wav",
+                "entryId": "ja:particle:ni"
+            },
+            {
+                "path": "audio/8d24faaeea27e4f0fe57fc68aee2eb1e17b7a95822bfd39d137b7282f5104e20.wav",
+                "entryId": "ja:word:reading-time-newspaper"
+            },
+            {
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "entryId": "ja:particle:wo"
+            },
+            {
+                "path": "audio/9636388bbb5506a329e11171db13088225f73201ebdde96eabd1b560bb70cce0.wav",
+                "entryId": "ja:word:core-read"
+            },
+            { "pauseMs": 400 }
+        ],
+        "gapMs": 90,
+        "segments": [
+            {
+                "path": "audio/3900a1d913de835207aa4c0b601b96b3724df8f26724efad6be9e31864dbeb3a.wav",
+                "entryId": "ja:word:reading-time-morning",
+                "startFrame": 2400,
+                "frameCount": 9876
+            },
+            {
+                "path": "audio/1615cf278c2962c1657907b3686d653625229af2375f90dda5bfd5b178c7aedb.wav",
+                "entryId": "ja:particle:ni",
+                "startFrame": 14436,
+                "frameCount": 13220
+            },
+            {
+                "path": "audio/8d24faaeea27e4f0fe57fc68aee2eb1e17b7a95822bfd39d137b7282f5104e20.wav",
+                "entryId": "ja:word:reading-time-newspaper",
+                "startFrame": 29816,
+                "frameCount": 17678
+            },
+            {
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "entryId": "ja:particle:wo",
+                "startFrame": 49654,
+                "frameCount": 8762
+            },
+            {
+                "path": "audio/9636388bbb5506a329e11171db13088225f73201ebdde96eabd1b560bb70cce0.wav",
+                "entryId": "ja:word:core-read",
+                "startFrame": 60576,
+                "frameCount": 14335
+            }
+        ],
+        "sha256": "4b9061f21944e6a94f78947f888e441faa62bb933c228059c17e87b45fed11bd",
+        "frames": 86671,
+        "input": {
+            "language": "ja",
+            "label": "あさにしんぶんをよむ",
+            "semanticRole": "orderedLexicalSequence",
+            "readings": ["あさにしんぶんをよむ"]
+        },
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "construction": "Exact constituent PCM with explicit selected transformations."
+        }
+    },
+    {
+        "path": "audio/60610710a1ea1564189f4eef3b546e5452a395d8300f5a9affb16b6c57479289.wav",
+        "entryId": "ja:sentence:reading-time-example-night-book",
+        "label": "よるにほんをよむ",
+        "parts": [
+            {
+                "path": "audio/7b442673d3e2398a45f538b9dc640daf4ad40900e74484f9fd560634cc9d2abe.wav",
+                "entryId": "ja:word:reading-time-night"
+            },
+            {
+                "path": "audio/1615cf278c2962c1657907b3686d653625229af2375f90dda5bfd5b178c7aedb.wav",
+                "entryId": "ja:particle:ni"
+            },
+            {
+                "path": "audio/b2449bbb16eeefb72452963d9076569770bb78efc96be165e39aa6656e865e8c.wav",
+                "entryId": "ja:word:reading-time-book"
+            },
+            {
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "entryId": "ja:particle:wo"
+            },
+            {
+                "path": "audio/9636388bbb5506a329e11171db13088225f73201ebdde96eabd1b560bb70cce0.wav",
+                "entryId": "ja:word:core-read"
+            },
+            { "pauseMs": 400 }
+        ],
+        "gapMs": 90,
+        "segments": [
+            {
+                "path": "audio/7b442673d3e2398a45f538b9dc640daf4ad40900e74484f9fd560634cc9d2abe.wav",
+                "entryId": "ja:word:reading-time-night",
+                "startFrame": 2400,
+                "frameCount": 9876
+            },
+            {
+                "path": "audio/1615cf278c2962c1657907b3686d653625229af2375f90dda5bfd5b178c7aedb.wav",
+                "entryId": "ja:particle:ni",
+                "startFrame": 14436,
+                "frameCount": 13220
+            },
+            {
+                "path": "audio/b2449bbb16eeefb72452963d9076569770bb78efc96be165e39aa6656e865e8c.wav",
+                "entryId": "ja:word:reading-time-book",
+                "startFrame": 29816,
+                "frameCount": 9318
+            },
+            {
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "entryId": "ja:particle:wo",
+                "startFrame": 41294,
+                "frameCount": 8762
+            },
+            {
+                "path": "audio/9636388bbb5506a329e11171db13088225f73201ebdde96eabd1b560bb70cce0.wav",
+                "entryId": "ja:word:core-read",
+                "startFrame": 52216,
+                "frameCount": 14335
+            }
+        ],
+        "sha256": "60610710a1ea1564189f4eef3b546e5452a395d8300f5a9affb16b6c57479289",
+        "frames": 78311,
+        "input": {
+            "language": "ja",
+            "label": "よるにほんをよむ",
+            "semanticRole": "orderedLexicalSequence",
+            "readings": ["よるにほんをよむ"]
+        },
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "construction": "Exact constituent PCM with explicit selected transformations."
+        }
+    },
+    {
+        "path": "audio/c77d57abc1b5e0b274c12017e922822c5ff17901d88262526f16a1ab181513de.wav",
+        "entryId": "ja:sentence:reading-time-example-book-bag",
+        "label": "ほんはかばんにある",
+        "parts": [
+            {
+                "path": "audio/b2449bbb16eeefb72452963d9076569770bb78efc96be165e39aa6656e865e8c.wav",
+                "entryId": "ja:word:reading-time-book"
+            },
+            {
+                "path": "audio/d7c9e57654e559dfba3bd6f78c2f27416a61f8b28d56145d84a62fe25b70c94d.wav",
+                "entryId": "ja:particle:wa"
+            },
+            {
+                "path": "audio/6c383b07d47bcbe9c9eadf6b97d7ce3ec03e4f31503d0bf1dec5a48b2829ff78.wav",
+                "entryId": "ja:word:bag"
+            },
+            {
+                "path": "audio/1615cf278c2962c1657907b3686d653625229af2375f90dda5bfd5b178c7aedb.wav",
+                "entryId": "ja:particle:ni"
+            },
+            {
+                "path": "audio/0e997231f55465948ee67d44898dfd72abf6e48f95f8839fe116ca8978d53535.wav",
+                "entryId": "ja:word:aru-exist"
+            },
+            { "pauseMs": 400 }
+        ],
+        "gapMs": 90,
+        "segments": [
+            {
+                "path": "audio/b2449bbb16eeefb72452963d9076569770bb78efc96be165e39aa6656e865e8c.wav",
+                "entryId": "ja:word:reading-time-book",
+                "startFrame": 2400,
+                "frameCount": 9318
+            },
+            {
+                "path": "audio/d7c9e57654e559dfba3bd6f78c2f27416a61f8b28d56145d84a62fe25b70c94d.wav",
+                "entryId": "ja:particle:wa",
+                "startFrame": 13878,
+                "frameCount": 12106
+            },
+            {
+                "path": "audio/6c383b07d47bcbe9c9eadf6b97d7ce3ec03e4f31503d0bf1dec5a48b2829ff78.wav",
+                "entryId": "ja:word:bag",
+                "startFrame": 28144,
+                "frameCount": 16564
+            },
+            {
+                "path": "audio/1615cf278c2962c1657907b3686d653625229af2375f90dda5bfd5b178c7aedb.wav",
+                "entryId": "ja:particle:ni",
+                "startFrame": 46868,
+                "frameCount": 13220
+            },
+            {
+                "path": "audio/0e997231f55465948ee67d44898dfd72abf6e48f95f8839fe116ca8978d53535.wav",
+                "entryId": "ja:word:aru-exist",
+                "startFrame": 62248,
+                "frameCount": 8976
+            }
+        ],
+        "sha256": "c77d57abc1b5e0b274c12017e922822c5ff17901d88262526f16a1ab181513de",
+        "frames": 82984,
+        "input": {
+            "language": "ja",
+            "label": "ほんはかばんにある",
+            "semanticRole": "orderedLexicalSequence",
+            "readings": ["ほんはかばんにある"]
+        },
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "construction": "Exact constituent PCM with explicit selected transformations."
+        }
     }
 ]
