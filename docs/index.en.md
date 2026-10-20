@@ -2,6 +2,15 @@
 
 The Japanese Study module installs declarative Japanese learning records into the host-owned Study Library while remaining isolated from Library internals, databases, APIs, and browser code.
 
+## Packaged content
+
+| Category                 | Count |
+| ------------------------ | ----- |
+| Starter decks            | 76    |
+| Visible vocabulary cards | 275   |
+| Sentences                | 297   |
+| Vocabulary illustrations | 275   |
+
 ## Usage
 
 Enable the Study gateway and Library adapter, then enable this module. Its bootstrap resolves `study:library:provider` from `ctx` and ingests `data/library`. Administrators and learners use the Library adapter's generated Study interface rather than a module-owned route.

@@ -2,6 +2,15 @@
 
 Modul Belajar Bahasa Jepang memasang data pembelajaran bahasa Jepang deklaratif ke Pustaka Study milik host sambil tetap terisolasi dari internal Pustaka, basis data, API, dan kode peramban.
 
+## Konten dalam paket
+
+| Kategori                     | Jumlah |
+| ---------------------------- | ------ |
+| Dek awal                     | 76     |
+| Kartu kosakata yang terlihat | 275    |
+| Kalimat                      | 297    |
+| Ilustrasi kosakata           | 275    |
+
 ## Penggunaan
 
 Aktifkan gateway Study dan adaptor Pustaka, lalu aktifkan modul ini. Bootstrap menyelesaikan `study:library:provider` dari `ctx` dan mengingesti `data/library`. Administrator dan pelajar menggunakan antarmuka Study yang dihasilkan adaptor Pustaka, bukan rute milik modul.

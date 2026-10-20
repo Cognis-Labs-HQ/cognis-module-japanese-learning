@@ -4,6 +4,15 @@
 
 Belajar Bahasa Jepang menyediakan paket konten Jepang berversi, penyedia kamus dan rekaman sesuai siklus hidup modul, serta pengaturan suara administrator tersimpan melalui kapabilitas Cognis. Cognis mengelola antarmuka belajar, penyimpanan pustaka, otorisasi, dan cache pemutaran.
 
+## Konten dalam paket
+
+| Kategori                     | Jumlah |
+| ---------------------------- | ------ |
+| Dek awal                     | 76     |
+| Kartu kosakata yang terlihat | 275    |
+| Kalimat                      | 297    |
+| Ilustrasi kosakata           | 275    |
+
 ## Persyaratan
 
 - Cognis dengan gateway Study dan adaptor Pustaka yang aktif.
@@ -273,7 +282,7 @@ Rekaman kata Jepang dengan kana kecil, termasuk 学校, dibuat ulang dengan ejaa
 
 ## Ilustrasi Kosakata
 
-Setiap kartu kosakata bawaan kini memiliki ilustrasi tersendiri yang dihasilkan dengan gaya anime (102 kartu). Benda konkret, tindakan, dan adegan kontekstual untuk konsep abstrak ditampilkan melalui galeri detail kartu dan popup gambar yang sudah ada. Foto sumber lama telah diganti. [Katalog gambar](data/library/assets/images/catalog.json) mencatat sumber pembuatan, gaya, asal potongan, checksum, dan pemetaan kartu; [lisensi gambar](data/library/assets/images/LICENSE.md) menjelaskan karya bawaan. Gambar dimuat secara lokal, dan host mempertahankan gambar khusus pengguna saat penyedia dimuat ulang.
+Setiap kartu kosakata bawaan kini memiliki ilustrasi tersendiri yang dihasilkan dengan gaya anime (275 kartu). Benda konkret, tindakan, dan adegan kontekstual untuk konsep abstrak ditampilkan melalui galeri detail kartu dan popup gambar yang sudah ada. Foto sumber lama telah diganti. [Katalog gambar](data/library/assets/images/catalog.json) mencatat sumber pembuatan, gaya, asal potongan, checksum, dan pemetaan kartu; [lisensi gambar](data/library/assets/images/LICENSE.md) menjelaskan karya bawaan. Gambar dimuat secara lokal, dan host mempertahankan gambar khusus pengguna saat penyedia dimuat ulang.
 
 ## Kosakata Rumah Tangga
 
@@ -285,7 +294,7 @@ Pemutaran kalimat paket memakai PCM yang disusun persis dari klip penyusun, term
 
 ## Inventaris Rekaman
 
-Pemutaran kalimat paket memakai PCM yang disusun persis dari klip penyusun, termasuk transformasi terpilih. Rekaman seluruh kalimat yang dihasilkan terpisah tetap diinventarisasi dengan asal suara dan permintaan asli, tetapi tidak menimpa rekaman komposisi. Kalimat baru tetap memakai komposisi dan cache milik host.
+`data/audio/recordings.json` memakai format inventaris 2 dengan bahasa, suara, model, pengaturan pemrosesan, jumlah, dan jalur indeks tujuan beserta hash. Berkas `data/audio/indexes/` mencantumkan pecahan inventaris ber-hash dalam `data/audio/inventories/`, dikelompokkan untuk karakter, kosakata, transformasi, kalimat langsung, dan komposisi kalimat. Indeks utama dan indeks tujuan tetap di bawah 400 baris; pecahan rekaman maksimal 800 baris. Pemuat memeriksa kedua tingkat, jumlah, jalur yang diizinkan, kecocokan tujuan dan jenis, serta jalur duplikat sebelum mendaftarkan pemutaran. Objek rekaman, byte audio, dan prioritas pencarian dipertahankan.
 
 ## Normalisasi katalog eksplisit dan inventaris komposisi kalimat
 

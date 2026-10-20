@@ -2,6 +2,14 @@
 
 **Feature-Zweig:** `feature-expand-themed-practice`
 
+## Einheitliche Lokalisierung und veröffentlichte Inhaltszahlen
+
+Definitionsschlüssel verwenden kleingeschriebene, durch Punkte getrennte Endungen; Modulpräfixe und Datensatz-IDs bleiben unverändert. Alle vier Sprachdateien werden synchron gehalten, jeder Definitionsverweis wird aufgelöst und doppelte oder ungültige Schlüssel werden abgewiesen. README und Integrationsanleitung nennen die tatsächlichen Zahlen für Decks, Vokabeln, Sätze und Illustrationen und beschreiben das zweistufige Aufnahmeverzeichnis einheitlich. Jede abspielbare Karte und gewählte Form benötigt eine gebündelte Aufnahme, unabhängig von der Liste fehlender Aufnahmen.
+
+## Vollständige Audioabdeckung der ergänzenden Kanji
+
+Fünf Aufnahmen für 帽（ぼう）, 抵（てい）, 腹（はら）, 飯（はん） und 鶏（とり） mit der vorgesehenen japanischen Stimme ergänzen. Bestehende Medien und Aufnahmeherkunft bleiben erhalten. Geprüft werden die verfassten Lesungen, Quellprüfsummen, das PCM-Format, nicht stumme Ausgabe, Spitzenpegel und Wiedergabezuordnungen. Eine Hörprüfung ist weiterhin nicht möglich, da diese Umgebung keine Audioeingabe unterstützt. Keine abspielbare Karte bleibt ohne Aufnahme.
+
 ## Schreibweisen des gesamten Wortschatzes prüfen
 
 Alle 275 sichtbaren Wörter einschließlich der zuvor ausgelassenen älteren Dateien prüfen. 33 Wortbezeichnungen und 38 Satzbezeichnungen korrigieren, darunter 顔, 頭, 電話, 葉書 und 時々. 92 übliche Kana-Schreibweisen mit einer Begründung je Wort in den Regressionstests beibehalten. 24 ergänzende Kanji mit dem vorhandenen Schema, belegten KANJIDIC-Lesungen und KanjiVG-Strichmustern hinzufügen. Für 19 dieser Karten vorhandene Aufnahmen wiederverwenden; 帽・抵・腹・飯・鶏 bleiben ausdrücklich ohne Aufnahme, da keine passende Komponentenaufnahme vorhanden ist. Sämtliche bestehenden IDs, Aussprachen, Audio- und Bildzuordnungen sowie alle 1.592 Mediendateien bytegenau erhalten. Ursprüngliche Aufnahme-Anfragen und vollständige Satzaufnahmen erhalten und die aktuellen Suchdaten der Satzkompositionen aktualisieren. Die Schreibprüfung auf jedes sichtbare Wort ausweiten, einschließlich eines negativen Tests für 顔/かお. Der Tageszähler zeigt 日, behält die Lesung か und seine Zählerbedeutung und verknüpft den vorhandenen Lesungsgraphen von 日.

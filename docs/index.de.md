@@ -2,6 +2,15 @@
 
 Das Modul Japanisch lernen installiert deklarative japanische Lerndatensätze in die hosteigene Study-Bibliothek und bleibt dabei von Bibliotheksinternas, Datenbanken, APIs und Browsercode isoliert.
 
+## Enthaltene Lerninhalte
+
+| Kategorie               | Anzahl |
+| ----------------------- | ------ |
+| Startdecks              | 76     |
+| Sichtbare Vokabelkarten | 275    |
+| Sätze                   | 297    |
+| Vokabelillustrationen   | 275    |
+
 ## Verwendung
 
 Aktivieren Sie das Study-Gateway und den Bibliotheksadapter und anschließend dieses Modul. Sein Bootstrap löst `study:library:provider` aus `ctx` auf und übernimmt `data/library`. Administratoren und Lernende verwenden die vom Bibliotheksadapter erzeugte Study-Oberfläche statt einer moduleigenen Route.

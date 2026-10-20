@@ -103,3 +103,87 @@ test("localized changelogs identify their feature branch and commits", () => {
         assert.deepEqual([...variants].sort(), [...LANGUAGES].sort(), topic);
     }
 });
+
+function packagedContentCounts() {
+    const readJson = (path) =>
+        JSON.parse(readFileSync(resolve(ROOT, path), "utf8"));
+    const words = readdirSync(resolve(ROOT, "data/library/content/words"))
+        .filter((name) => name.endsWith(".json"))
+        .flatMap((name) => readJson(`data/library/content/words/${name}`));
+    const sentences = readdirSync(
+        resolve(ROOT, "data/library/content/sentences"),
+    )
+        .filter((name) => name.endsWith(".json"))
+        .flatMap((name) => readJson(`data/library/content/sentences/${name}`));
+    return [
+        readJson("data/starter-decks.json").length,
+        words.filter(
+            (word) => word.class?.startsWith("lexical:") && !word.hidden,
+        ).length,
+        sentences.length,
+        readJson("data/library/assets/images/catalog.json").images.length,
+    ];
+}
+
+function validateDocumentedCounts(markdown, labels, counts) {
+    const rows = new Map(
+        markdown
+            .split("\n")
+            .filter((line) => line.startsWith("|"))
+            .map((line) =>
+                line
+                    .split("|")
+                    .slice(1, -1)
+                    .map((cell) => cell.trim()),
+            ),
+    );
+    labels.forEach((label, index) =>
+        assert.equal(
+            Number(rows.get(label)),
+            counts[index],
+            `stale content count: ${label}`,
+        ),
+    );
+}
+
+test("localized documentation reports actual packaged counts and both inventory levels", () => {
+    const labels = {
+        en: [
+            "Starter decks",
+            "Visible vocabulary cards",
+            "Sentences",
+            "Vocabulary illustrations",
+        ],
+        de: [
+            "Startdecks",
+            "Sichtbare Vokabelkarten",
+            "Sätze",
+            "Vokabelillustrationen",
+        ],
+        id: [
+            "Dek awal",
+            "Kartu kosakata yang terlihat",
+            "Kalimat",
+            "Ilustrasi kosakata",
+        ],
+        ja: ["初期デッキ", "表示対象の語彙カード", "文", "語彙イラスト"],
+    };
+    const counts = packagedContentCounts();
+    for (const locale of LANGUAGES) {
+        for (const path of [`README.${locale}.md`, `docs/index.${locale}.md`]) {
+            const markdown = readFileSync(resolve(ROOT, path), "utf8");
+            validateDocumentedCounts(markdown, labels[locale], counts);
+            assert.ok(markdown.includes("data/audio/indexes/"), path);
+            assert.ok(markdown.includes("data/audio/inventories/"), path);
+        }
+    }
+    assert.throws(
+        () =>
+            validateDocumentedCounts(
+                "| Starter decks | 10 |",
+                labels.en,
+                counts,
+            ),
+        /stale content count/,
+    );
+});

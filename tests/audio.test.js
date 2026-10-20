@@ -10,9 +10,6 @@ const inventory = await readAudioInventory("data/audio");
 const unavailable = JSON.parse(
     await readFile("data/audio/unavailable.json", "utf8"),
 );
-const unrecordedIds = new Set(
-    unavailable.entries.map(({ entryId }) => entryId),
-);
 const schema = JSON.parse(await readFile("data/library/schema.json", "utf8"));
 const layers = await readContentLayers(
     "data/library/content",
@@ -102,11 +99,7 @@ test("every card and selected form has an unambiguous audio lookup identity", ()
     for (const layer of schema.layers) {
         if (layer.semanticRole === "definition") continue;
         for (const entry of layers.get(layer.id)) {
-            if (
-                entry.tags?.includes("punctuation") ||
-                unrecordedIds.has(entry.id)
-            )
-                continue;
+            if (entry.tags?.includes("punctuation")) continue;
             const candidates = [
                 {
                     label: entry.label,
@@ -204,7 +197,7 @@ test("every packaged clip has the designated language voice, stable settings, no
     }
 });
 
-test("recorded cards retain complete audio coverage and unrecorded additions are explicit", async () => {
+test("all playable cards and selected forms have complete bundled audio coverage", async () => {
     const provider = makeProvider(() => {
         throw new Error("unexpected_speech_lookup");
     });
@@ -216,10 +209,6 @@ test("recorded cards retain complete audio coverage and unrecorded additions are
                 entry.tags?.includes("punctuation")
             )
                 continue;
-            if (unrecordedIds.has(entry.id)) {
-                assert.equal(entry.fields.audio, undefined, entry.id);
-                continue;
-            }
             assert.ok(assets.has(entry.fields.audio), entry.id);
             const input = {
                 language: inventory.language,
@@ -483,30 +472,37 @@ test("unbundled Japanese kana and kanji never send romanized readings to speech"
     }
 });
 
-test("unrecorded inventory exactly matches missing audio without weakening recorded coverage", () => {
-    assert.equal(unrecordedIds.size, unavailable.entries.length);
-    const missing = [...entries.values()]
-        .filter(
-            (entry) =>
-                entry.class !== "definition" &&
-                !entry.tags?.includes("punctuation") &&
-                !entry.fields.audio,
-        )
-        .map(({ id }) => id)
-        .sort();
-    assert.deepEqual(missing, [...unrecordedIds].sort());
-    for (const item of unavailable.entries) {
-        assert.equal(entries.get(item.entryId)?.label, item.label);
-        assert.equal(item.listening, "not-applicable-no-audio");
-        assert.ok(item.reason);
+function validatePlayableAudio(candidates) {
+    for (const entry of candidates) {
+        if (entry.class === "definition" || entry.tags?.includes("punctuation"))
+            continue;
+        assert.ok(
+            entry.fields?.audio && assets.has(entry.fields.audio),
+            `${entry.id}: missing playable audio`,
+        );
     }
+}
+
+test("all playable cards require audio independently of the unavailable ledger", () => {
+    validatePlayableAudio(entries.values());
+    assert.deepEqual(unavailable.entries, []);
+    const entry = structuredClone(
+        [...entries.values()].find(
+            (entry) => entry.class?.startsWith("lexical:") && !entry.hidden,
+        ),
+    );
+    delete entry.fields.audio;
+    assert.throws(
+        () => validatePlayableAudio([entry]),
+        /missing playable audio/,
+    );
 });
 
 test("supporting-card recordings retain source provenance and explicit listening status", () => {
     const added = inventory.recordings.filter(
         (clip) => clip.metadata?.sourceWavSha256,
     );
-    assert.equal(added.length, 45);
+    assert.equal(added.length, 50);
     const bound = new Set();
     for (const clip of added) {
         assert.match(clip.metadata.sourceWavSha256, /^[a-f0-9]{64}$/);
@@ -541,7 +537,5 @@ test("supporting-card recordings retain source provenance and explicit listening
             bound.add(entryId);
         }
     }
-    assert.equal(bound.size, 47);
-    // Newly authored orthography components may lack audio; original recording bindings remain complete.
-    for (const id of unrecordedIds) assert.ok(!bound.has(id));
+    assert.equal(bound.size, 52);
 });

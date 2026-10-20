@@ -2,6 +2,14 @@
 
 **Cabang Fitur:** `feature-expand-themed-practice`
 
+## Lokalisasi dan jumlah konten yang konsisten
+
+Akhiran kunci definisi memakai huruf kecil dengan pemisah titik, tanpa mengubah awalan modul dan ID rekaman. Keempat berkas bahasa tetap selaras, setiap referensi definisi terselesaikan, dan kunci duplikat atau tidak valid ditolak. README dan panduan integrasi mencantumkan jumlah dek, kosakata, kalimat, dan ilustrasi yang sebenarnya serta menjelaskan inventaris rekaman dua tingkat secara konsisten. Setiap kartu yang dapat diputar dan bentuk terpilih wajib memiliki audio dalam paket, terlepas dari daftar rekaman yang belum tersedia.
+
+## Melengkapi audio Kanji pendukung
+
+Menambahkan lima rekaman untuk 帽（ぼう）, 抵（てい）, 腹（はら）, 飯（はん）, dan 鶏（とり） dengan suara bahasa Jepang yang ditetapkan. Seluruh media dan asal rekaman yang ada dipertahankan. Pemeriksaan mencakup bacaan yang ditulis, hash sumber, format PCM, keluaran tidak senyap, batas puncak, dan tautan pemutaran. Pemeriksaan dengan mendengarkan tetap tidak tersedia karena lingkungan ini tidak menerima masukan audio. Tidak ada kartu yang dapat diputar tanpa rekaman.
+
 ## Meninjau ejaan seluruh kosakata
 
 Meninjau seluruh 275 kata yang terlihat, termasuk berkas lama yang sebelumnya tidak tercakup dalam audit ejaan. Memperbaiki 33 label kata dan 38 label kalimat, termasuk 顔, 頭, 電話, 葉書, dan 時々. Mempertahankan 92 ejaan kana yang lazim dengan alasan khusus per kata dalam uji regresi. Menambahkan 24 Kanji pendukung memakai skema yang ada, bacaan yang tercatat dalam KANJIDIC, dan pola goresan KanjiVG. Memakai ulang rekaman yang ada untuk 19 kartu; 帽・抵・腹・飯・鶏 tetap dicatat tanpa rekaman karena belum ada rekaman komponen yang tepat. Mempertahankan seluruh ID, pelafalan, tautan audio/gambar, dan semua 1.592 berkas media tanpa perubahan byte. Mempertahankan permintaan rekaman asli dan rekaman kalimat utuh sambil memperbarui pencarian komposisi kalimat. Memperluas uji ejaan ke setiap kata yang terlihat, termasuk uji negatif 顔/かお. Penghitung hari menampilkan 日, mempertahankan bacaan か dan makna penghitungnya, serta memakai graf bacaan 日 yang sudah ada.

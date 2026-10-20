@@ -4,6 +4,15 @@
 
 Japanese Study supplies a versioned Japanese content pack, scoped dictionary and recording providers, and persisted administrator voice settings through Cognis capabilities. Cognis owns the learning interface, library storage, authorization and playback cache.
 
+## Packaged content
+
+| Category                 | Count |
+| ------------------------ | ----- |
+| Starter decks            | 76    |
+| Visible vocabulary cards | 275   |
+| Sentences                | 297   |
+| Vocabulary illustrations | 275   |
+
 ## Requirements
 
 - Cognis with the Study gateway and Library adapter enabled.
@@ -273,7 +282,7 @@ Japanese small-kana word recordings, including 学校, are regenerated using kan
 
 ## Vocabulary Illustrations
 
-Every shipped vocabulary card now has its own generated anime-style illustration (102 cards). Concrete objects, actions and contextual scenes for abstract concepts use the existing card-detail gallery and full-image popup. The old source photographs have been replaced. [The image catalog](data/library/assets/images/catalog.json) records generation source, style, crop provenance, checksums and card assignments; [image licensing](data/library/assets/images/LICENSE.md) describes the bundled artwork. Images load locally, and the host preserves custom user images during provider reloads.
+Every shipped vocabulary card now has its own generated anime-style illustration (275 cards). Concrete objects, actions and contextual scenes for abstract concepts use the existing card-detail gallery and full-image popup. The old source photographs have been replaced. [The image catalog](data/library/assets/images/catalog.json) records generation source, style, crop provenance, checksums and card assignments; [image licensing](data/library/assets/images/LICENSE.md) describes the bundled artwork. Images load locally, and the host preserves custom user images during provider reloads.
 
 ## Household Vocabulary
 
@@ -285,7 +294,7 @@ Packaged sentence playback uses exact constituent-composed PCM, including select
 
 ## Recording Inventories
 
-`data/audio/recordings.json` is a compact manifest with language, voice, model, shared processing settings, totals and integrity-checked inventory paths. Purpose-grouped files under `data/audio/inventories/` separately describe characters, vocabulary, transformations, direct sentences and precomposed sentence recordings. Each file stays below 800 lines and retains exact requests, per-clip voice provenance, transformation paths and audio checksums. Bootstrap verifies every inventory checksum and count before registering playback; the recording bytes and lookup precedence are unchanged.
+`data/audio/recordings.json` uses inventory format 2 with language, voice, model, processing settings, totals and hashed purpose-index paths. Files under `data/audio/indexes/` list the hashed shards under `data/audio/inventories/`, grouped into characters, vocabulary, transformations, direct sentences and sentence compositions. Root and purpose indexes stay below 400 lines; recording shards stay at or below 800 lines. The loader verifies both levels, counts, allowed paths, purpose/kind agreement and duplicate paths before registering playback. Recording objects, audio bytes and lookup precedence are preserved.
 
 ## Explicit catalog normalization and sentence composition inventories
 

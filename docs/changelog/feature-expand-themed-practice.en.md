@@ -2,6 +2,14 @@
 
 **Feature Branch:** `feature-expand-themed-practice`
 
+## Consistent localization and published content counts
+
+Use lowercase, period-delimited definition-key suffixes with unchanged module prefixes and record IDs. Keep all four locale bundles synchronized, resolve every definition reference, and reject duplicate or malformed keys. Document actual deck, vocabulary, sentence and illustration counts in both the README and integration guide, and describe the two-level recording inventory consistently. Require bundled audio for every playable card and selected form independently of the unavailable ledger.
+
+## Complete supporting Kanji audio
+
+Add five recordings for 帽（ぼう）, 抵（てい）, 腹（はら）, 飯（はん） and 鶏（とり） with the designated Japanese voice. Preserve all existing media and recording provenance. Validate authored readings, source hashes, PCM format, non-silent output, peak limits and playback bindings. Listening review remains unavailable because this environment cannot accept audio input. No playable cards remain unrecorded.
+
 ## Review spelling across the entire vocabulary
 
 Review all 275 visible words, including legacy shards previously omitted from the spelling audit. Correct 33 word labels and 38 sentence labels, including 顔, 頭, 電話, 葉書 and 時々. Keep 92 conventional kana spellings with an explicit per-word reason in the regression tests. Add 24 supporting Kanji using the existing schema, attested KANJIDIC readings and KanjiVG stroke patterns. Reuse existing recordings for 19 of these cards; 帽・抵・腹・飯・鶏 remain explicitly unrecorded because no exact component recording is available. Preserve every existing ID, pronunciation, audio/image binding and all 1,592 media files byte-for-byte. Keep original recording requests and whole-sentence recordings while updating current sentence composition lookups. Extend spelling regression coverage to every visible word, including a negative 顔/かお test. The day counter displays 日, keeps the reading か and its counter meaning, and links the existing 日 reading graph.
