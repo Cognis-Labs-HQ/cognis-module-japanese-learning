@@ -6,12 +6,7 @@ Japanisch lernen liefert ein versioniertes japanisches Inhaltspaket, lebenszyklu
 
 ## Enthaltene Lerninhalte
 
-| Kategorie               | Anzahl |
-| ----------------------- | ------ |
-| Startdecks              | 76     |
-| Sichtbare Vokabelkarten | 275    |
-| Sätze                   | 297    |
-| Vokabelillustrationen   | 275    |
+Das Paket bietet Schreibvorlagen, thematischen Wortschatz, verknüpfte Beispiele, Illustrationen und Startdecks. Die paketierten Inhalte und Medienverzeichnisse sind maßgeblich für die Verfügbarkeit.
 
 ## Voraussetzungen
 
@@ -74,7 +69,7 @@ Resolver-Rollen sind nun echten Zusammensetzungen vorbehalten: Kanji-Lesungen, W
 
 ## Vollständige Kana-Tabellen
 
-Zusätzlich zu allen 46 grundlegenden Gojūon-Einträgen und 25 Dakuten- oder Handakuten-Formen je Schriftsystem enthält das Paket kleine Kana, alle üblichen Yōon-Reihen und verbreitete Sokuon-Geminationen. Beispiele sind `ひゃ`, `しゅ`, `じゃ` und `って` sowie ihre Katakana-Entsprechungen.
+Zusätzlich zu grundlegenden Gojūon-Einträgen und Dakuten- oder Handakuten-Formen je Schriftsystem enthält das Paket kleine Kana, alle üblichen Yōon-Reihen und verbreitete Sokuon-Geminationen. Beispiele sind `ひゃ`, `しゅ`, `じゃ` und `って` sowie ihre Katakana-Entsprechungen.
 
 ## Dynamische Variantenplatzierung
 
@@ -148,7 +143,7 @@ Ausgeblendete Wortschatz-Lesungseinträge erhalten eine eigene Definition in all
 
 ## Erweiterter Kerndatensatz
 
-Das Paket enthält nun mehr als dreißig zusätzliche alltägliche Wortschatzeinträge, zehn weitere Partikeln und acht vollständig zusammengesetzte Beispielsätze, ausschließlich als deklaratives JSON unter `data/library/content/`. Echte Polysemie darf mehrere lokalisierte Definitionsverweise in einem Eintrag verwenden (`なおす`: reparieren/korrigieren), während Homophone wie `はし` (Brücke/Essstäbchen), `あめ` (Regen/Bonbon), `かみ` (Papier/Haar/Gottheit) und `はな` (Blume/Nase) getrennte Wortschatzeinträge mit eigenen Definitionen bleiben.
+Das Paket enthält nun alltägliche Wortschatzeinträge, weitere Partikeln und vollständig zusammengesetzte Beispielsätze, ausschließlich als deklaratives JSON unter `data/library/content/`. Echte Polysemie darf mehrere lokalisierte Definitionsverweise in einem Eintrag verwenden (`なおす`: reparieren/korrigieren), während Homophone wie `はし` (Brücke/Essstäbchen), `あめ` (Regen/Bonbon), `かみ` (Papier/Haar/Gottheit) und `はな` (Blume/Nase) getrennte Wortschatzeinträge mit eigenen Definitionen bleiben.
 
 ## Kanji-basierter Kerngraph
 
@@ -168,7 +163,7 @@ Wortschatz mit einem einzelnen Kanji verwendet nun einen verborgenen Wrapper fü
 
 ## Verknüpfte Satzlesungen und geprüfte Übungsserie
 
-Jede Satzaussprache öffnet nun einen verborgenen vollständigen Lesungsdatensatz, dessen Abschnitte über vorhandenen verborgenen Wortschatz und atomare Partikel-Kana aufgelöst werden; unverknüpfter Aussprachetext ist nicht mehr der Standard. Acht geprüfte Sätze ergänzen abwechslungsreiche Übungen zu Wassertrinken, Japanischlernen, Reisen, Tieren, Größe und Gehen sowie die vollständig verknüpften Wörter `学ぶ` und `歩く`.
+Jede Satzaussprache öffnet nun einen verborgenen vollständigen Lesungsdatensatz, dessen Abschnitte über vorhandenen verborgenen Wortschatz und atomare Partikel-Kana aufgelöst werden; unverknüpfter Aussprachetext ist nicht mehr der Standard. geprüfte Sätze ergänzen abwechslungsreiche Übungen zu Wassertrinken, Japanischlernen, Reisen, Tieren, Größe und Gehen sowie die vollständig verknüpften Wörter `学ぶ` und `歩く`.
 
 ## Direkt mit Kana verknüpfte Lesungstitel
 
@@ -282,11 +277,11 @@ Japanische Aufnahmen mit kleinen Kana, einschließlich 学校, wurden mit Kanji-
 
 ## Vokabelillustrationen
 
-Jede mitgelieferte Vokabelkarte besitzt jetzt eine eigene generierte Illustration im Anime-Stil (275 Karten). Konkrete Gegenstände, Handlungen und Kontextbilder für abstrakte Begriffe erscheinen in der vorhandenen Kartendetailgalerie und Bildvorschau. Die bisherigen Quellfotos wurden ersetzt. Der [Bildkatalog](data/library/assets/images/catalog.json) dokumentiert Erzeugungsquelle, Stil, Bildausschnitte, Prüfsummen und Kartenzuordnungen; die [Bildlizenz](data/library/assets/images/LICENSE.md) beschreibt die mitgelieferten Illustrationen. Bilder werden lokal geladen, eigene Benutzerbilder bleiben bei Anbieter-Neuladevorgängen durch den Host erhalten.
+Vokabelkarten verwenden generierte Illustrationen im Anime-Stil. Konkrete Gegenstände, Handlungen und Kontextbilder für abstrakte Begriffe erscheinen in der vorhandenen Kartendetailgalerie und Bildvorschau. Die bisherigen Quellfotos wurden ersetzt. Der [Bildkatalog](data/library/assets/images/catalog.json) dokumentiert Erzeugungsquelle, Stil, Bildausschnitte, Prüfsummen und Kartenzuordnungen; die [Bildlizenz](data/library/assets/images/LICENSE.md) beschreibt die mitgelieferten Illustrationen. Bilder werden lokal geladen, eigene Benutzerbilder bleiben bei Anbieter-Neuladevorgängen durch den Host erhalten.
 
 ## Haushaltsvokabular
 
-Fünfzehn Alltagsnomen ergänzen Möbel, Kleidung, Gegenstände und Lebensmittel mit Bedeutungen in vier Sprachen, Ausspracheverknüpfungen, eigenen Aufnahmen und einem Stapel für Alltagsgegenstände. Zählbare englische Nomen enthalten aufgenommene Pluraltransformationen, einschließlich des unveränderten Plurals fish; rice bleibt ein Stoffname. Japanische Anfängerschreibweisen verknüpfen vollständige Lesungen mit einzelnen Kana, einschließlich des Langvokalzeichens ー in テーブル und コート.
+Alltagsnomen ergänzen Möbel, Kleidung, Gegenstände und Lebensmittel mit Bedeutungen in vier Sprachen, Ausspracheverknüpfungen, eigenen Aufnahmen und einem Stapel für Alltagsgegenstände. Zählbare englische Nomen enthalten aufgenommene Pluraltransformationen, einschließlich des unveränderten Plurals fish; rice bleibt ein Stoffname. Japanische Anfängerschreibweisen verknüpfen vollständige Lesungen mit einzelnen Kana, einschließlich des Langvokalzeichens ー in テーブル und コート.
 
 ## Lebensmittel und Körperteile
 

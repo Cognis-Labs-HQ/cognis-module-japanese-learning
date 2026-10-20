@@ -4,12 +4,7 @@ The Japanese Study module installs declarative Japanese learning records into th
 
 ## Packaged content
 
-| Category                 | Count |
-| ------------------------ | ----- |
-| Starter decks            | 76    |
-| Visible vocabulary cards | 275   |
-| Sentences                | 297   |
-| Vocabulary illustrations | 275   |
+The pack provides writing guides, themed vocabulary, linked examples, illustrations and starter decks. The packaged content and media inventories are the source of truth for availability.
 
 ## Usage
 
@@ -71,7 +66,7 @@ Resolver roles are now reserved for true compositions: kanji readings, word spel
 
 ## Complete kana tables
 
-Alongside all 46 basic gojūon entries and 25 dakuten or handakuten forms per script, the pack includes small kana, all standard yōon series, and common sokuon geminations. Examples include `ひゃ`, `しゅ`, `じゃ`, and `って`, plus their katakana equivalents.
+Alongside basic gojūon entries and dakuten or handakuten forms per script, the pack includes small kana, all standard yōon series, and common sokuon geminations. Examples include `ひゃ`, `しゅ`, `じゃ`, and `って`, plus their katakana equivalents.
 
 ## Dynamic variant placement
 
@@ -119,7 +114,7 @@ The pack is republished for the latest Library identity safeguards. Every Kana r
 
 ## Explicit Kana child hierarchies
 
-Aligned with the latest Library relationship contract by marking Kana parent relationships as both variants and spatial children. The suppressed duplicate relationship section makes the explicit `usage_note` field unnecessary, so it and its four record values have been removed.
+Aligned with the latest Library relationship contract by marking Kana parent relationships as both variants and spatial children. The suppressed duplicate relationship section makes the explicit `usage_note` field unnecessary, so it and its record values have been removed.
 
 ## Canonical Kanji reading vocabulary
 
@@ -245,7 +240,7 @@ A Kanji with one pronunciation links directly to ordered atomic Kana. A Kanji wi
 
 ## Reviewed location and manner batch
 
-The reviewed beginner batch adds `ここ`, `そこ`, `どこ`, `いる`, `ある`, `きれい`, `とても`, `ゆっくり`, and `です`, plus eight varied sentences about locations, existence, questions, appearance, and manner. Every new word has a localized definition and ordered Kana spelling; every sentence has an exact localized meaning, ordered lexical composition, and a complete hidden pronunciation path.
+The reviewed beginner batch adds `ここ`, `そこ`, `どこ`, `いる`, `ある`, `きれい`, `とても`, `ゆっくり`, and `です`, plus varied sentences about locations, existence, questions, appearance, and manner. Every new word has a localized definition and ordered Kana spelling; every sentence has an exact localized meaning, ordered lexical composition, and a complete hidden pronunciation path.
 
 ## Destructive Uninstall Cleanup
 
@@ -313,7 +308,7 @@ The schema declares Explore slugs `kana`, `kanji`, `vocabulary` and `sentences` 
 
 ## Starter Flashcard Decks
 
-The Japanese provider declares six starter decks in `data/starter-decks.json`: Hiragana Basics (46), Katakana Basics (46), Everyday Kanji (10), First Japanese Words (9), Everyday Japanese Verbs (8), and First Japanese Sentences (12). Stable keys, four localized names, schema IDs and visible source record IDs let Cognis resolve canonical Library IDs. Cognis owns browsing, favourites, sharing and learner progress; the module never creates user decks or queries the host database.
+The Japanese provider declares starter decks in `data/starter-decks.json`: Hiragana Basics, Katakana Basics, Everyday Kanji, First Japanese Words, Everyday Japanese Verbs, and First Japanese Sentences. Stable keys, four localized names, schema IDs and visible source record IDs let Cognis resolve canonical Library IDs. Cognis owns browsing, favourites, sharing and learner progress; the module never creates user decks or queries the host database.
 
 ## Review and lifecycle fixes
 

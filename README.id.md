@@ -6,12 +6,7 @@ Belajar Bahasa Jepang menyediakan paket konten Jepang berversi, penyedia kamus d
 
 ## Konten dalam paket
 
-| Kategori                     | Jumlah |
-| ---------------------------- | ------ |
-| Dek awal                     | 76     |
-| Kartu kosakata yang terlihat | 275    |
-| Kalimat                      | 297    |
-| Ilustrasi kosakata           | 275    |
+Paket menyediakan panduan menulis, kosakata bertema, contoh tertaut, ilustrasi, dan dek awal. Konten serta inventaris media dalam paket menjadi sumber acuan ketersediaan.
 
 ## Persyaratan
 
@@ -74,7 +69,7 @@ Peran resolver kini hanya dipakai untuk komposisi sejati: bacaan kanji, ejaan ka
 
 ## Tabel kana lengkap
 
-Selain seluruh 46 entri gojūon dasar dan 25 bentuk dakuten atau handakuten per aksara, paket memuat kana kecil, seluruh rangkaian yōon standar, serta geminasi sokuon umum. Contohnya mencakup `ひゃ`, `しゅ`, `じゃ`, dan `って`, beserta padanan katakananya.
+Selain seluruh entri gojūon dasar dan bentuk dakuten atau handakuten per aksara, paket memuat kana kecil, seluruh rangkaian yōon standar, serta geminasi sokuon umum. Contohnya mencakup `ひゃ`, `しゅ`, `じゃ`, dan `って`, beserta padanan katakananya.
 
 ## Penempatan varian dinamis
 
@@ -148,7 +143,7 @@ Rekaman Kosakata bacaan tersembunyi memiliki definisi sendiri dalam empat bahasa
 
 ## Set Data Inti yang Diperluas
 
-Paket kini memuat lebih dari tiga puluh rekaman Kosakata sehari-hari tambahan, sepuluh partikel tambahan, dan delapan kalimat contoh yang tersusun penuh, semuanya disimpan sebagai JSON deklaratif di `data/library/content/`. Polisemi sejati dapat memakai beberapa referensi definisi terlokalkan pada satu rekaman (`なおす`: memperbaiki/mengoreksi), sedangkan homofon seperti `はし` (jembatan/sumpit), `あめ` (hujan/permen), `かみ` (kertas/rambut/dewa), dan `はな` (bunga/hidung) tetap menjadi rekaman Kosakata terpisah dengan definisi berbeda.
+Paket kini memuat lebih dari puluh rekaman Kosakata sehari-hari tambahan, partikel tambahan, dan kalimat contoh yang tersusun penuh, semuanya disimpan sebagai JSON deklaratif di `data/library/content/`. Polisemi sejati dapat memakai beberapa referensi definisi terlokalkan pada rekaman (`なおす`: memperbaiki/mengoreksi), sedangkan homofon seperti `はし` (jembatan/sumpit), `あめ` (hujan/permen), `かみ` (kertas/rambut/dewa), dan `はな` (bunga/hidung) tetap menjadi rekaman Kosakata terpisah dengan definisi berbeda.
 
 ## Graf inti yang mengutamakan Kanji
 
@@ -168,7 +163,7 @@ Kosakata satu Kanji kini memakai pembungkus pelafalan lengkap tersembunyi sebelu
 
 ## Bacaan kalimat tertaut dan kumpulan latihan tinjauan
 
-Setiap pelafalan kalimat kini membuka rekaman bacaan lengkap tersembunyi yang segmennya diselesaikan melalui kosakata tersembunyi yang ada dan Kana partikel atomik; teks pelafalan tanpa tautan bukan lagi perilaku bawaan. Delapan kalimat yang ditinjau menambah latihan beragam tentang minum air, belajar bahasa Jepang, perjalanan, hewan, ukuran, dan berjalan, beserta kosakata `学ぶ` dan `歩く` yang tertaut penuh.
+Setiap pelafalan kalimat kini membuka rekaman bacaan lengkap tersembunyi yang segmennya diselesaikan melalui kosakata tersembunyi yang ada dan Kana partikel atomik; teks pelafalan tanpa tautan bukan lagi perilaku bawaan. kalimat yang ditinjau menambah latihan beragam tentang minum air, belajar bahasa Jepang, perjalanan, hewan, ukuran, dan berjalan, beserta kosakata `学ぶ` dan `歩く` yang tertaut penuh.
 
 ## Judul Bacaan dengan Tautan Kana Langsung
 
@@ -282,11 +277,11 @@ Rekaman kata Jepang dengan kana kecil, termasuk 学校, dibuat ulang dengan ejaa
 
 ## Ilustrasi Kosakata
 
-Setiap kartu kosakata bawaan kini memiliki ilustrasi tersendiri yang dihasilkan dengan gaya anime (275 kartu). Benda konkret, tindakan, dan adegan kontekstual untuk konsep abstrak ditampilkan melalui galeri detail kartu dan popup gambar yang sudah ada. Foto sumber lama telah diganti. [Katalog gambar](data/library/assets/images/catalog.json) mencatat sumber pembuatan, gaya, asal potongan, checksum, dan pemetaan kartu; [lisensi gambar](data/library/assets/images/LICENSE.md) menjelaskan karya bawaan. Gambar dimuat secara lokal, dan host mempertahankan gambar khusus pengguna saat penyedia dimuat ulang.
+Kartu kosakata menggunakan ilustrasi yang dihasilkan dengan gaya anime. Benda konkret, tindakan, dan adegan kontekstual untuk konsep abstrak ditampilkan melalui galeri detail kartu dan popup gambar yang sudah ada. Foto sumber lama telah diganti. [Katalog gambar](data/library/assets/images/catalog.json) mencatat sumber pembuatan, gaya, asal potongan, checksum, dan pemetaan kartu; [lisensi gambar](data/library/assets/images/LICENSE.md) menjelaskan karya bawaan. Gambar dimuat secara lokal, dan host mempertahankan gambar khusus pengguna saat penyedia dimuat ulang.
 
 ## Kosakata Rumah Tangga
 
-Lima belas nomina sehari-hari mencakup furnitur, pakaian, benda, dan makanan, dilengkapi makna dalam empat bahasa, tautan pelafalan, rekaman khusus, serta dek Benda Sehari-hari. Nomina bahasa Inggris yang dapat dihitung menyertakan transformasi jamak dengan rekaman, termasuk fish yang tidak berubah; rice tetap nomina tak terhitung. Ejaan Jepang untuk pemula menautkan bacaan lengkap ke kana atomik, termasuk tanda vokal panjang ー dalam テーブル dan コート.
+Nomina sehari-hari mencakup furnitur, pakaian, benda, dan makanan, dilengkapi makna dalam empat bahasa, tautan pelafalan, rekaman khusus, serta dek Benda Sehari-hari. Nomina bahasa Inggris yang dapat dihitung menyertakan transformasi jamak dengan rekaman, termasuk fish yang tidak berubah; rice tetap nomina tak terhitung. Ejaan Jepang untuk pemula menautkan bacaan lengkap ke kana atomik, termasuk tanda vokal panjang ー dalam テーブル dan コート.
 
 ## Kosakata Makanan dan Tubuh
 

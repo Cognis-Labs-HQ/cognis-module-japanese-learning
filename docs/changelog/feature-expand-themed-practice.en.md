@@ -2,33 +2,37 @@
 
 **Feature Branch:** `feature-expand-themed-practice`
 
-## Consistent localization and published content counts
+## Durable content documentation
 
-Use lowercase, period-delimited definition-key suffixes with unchanged module prefixes and record IDs. Keep all four locale bundles synchronized, resolve every definition reference, and reject duplicate or malformed keys. Document actual deck, vocabulary, sentence and illustration counts in both the README and integration guide, and describe the two-level recording inventory consistently. Require bundled audio for every playable card and selected form independently of the unavailable ledger.
+Replace snapshot content totals and generated inventory tables with qualitative descriptions across localized READMEs, integration guides and this branch’s changelog. Preserve technical limits, format contracts and commit provenance. Documentation regressions reject inventory totals without requiring static documents to mirror the evolving content pack.
+
+## Consistent localization and content descriptions
+
+Use lowercase, period-delimited definition-key suffixes with unchanged module prefixes and record IDs. Keep all four locale bundles synchronized, resolve every definition reference, and reject duplicate or malformed keys. Describe the packaged learning material qualitatively in both the README and integration guide, and describe the two-level recording inventory consistently. Require bundled audio for every playable card and selected form independently of the unavailable ledger.
 
 ## Complete supporting Kanji audio
 
-Add five recordings for 帽（ぼう）, 抵（てい）, 腹（はら）, 飯（はん） and 鶏（とり） with the designated Japanese voice. Preserve all existing media and recording provenance. Validate authored readings, source hashes, PCM format, non-silent output, peak limits and playback bindings. Listening review remains unavailable because this environment cannot accept audio input. No playable cards remain unrecorded.
+Add recordings for 帽（ぼう）, 抵（てい）, 腹（はら）, 飯（はん） and 鶏（とり） with the designated Japanese voice. Preserve all existing media and recording provenance. Validate authored readings, source hashes, PCM format, non-silent output, peak limits and playback bindings. Listening review remains unavailable because this environment cannot accept audio input. Recording availability is tracked in the bundled inventory.
 
 ## Review spelling across the entire vocabulary
 
-Review all 275 visible words, including legacy shards previously omitted from the spelling audit. Correct 33 word labels and 38 sentence labels, including 顔, 頭, 電話, 葉書 and 時々. Keep 92 conventional kana spellings with an explicit per-word reason in the regression tests. Add 24 supporting Kanji using the existing schema, attested KANJIDIC readings and KanjiVG stroke patterns. Reuse existing recordings for 19 of these cards; 帽・抵・腹・飯・鶏 remain explicitly unrecorded because no exact component recording is available. Preserve every existing ID, pronunciation, audio/image binding and all 1,592 media files byte-for-byte. Keep original recording requests and whole-sentence recordings while updating current sentence composition lookups. Extend spelling regression coverage to every visible word, including a negative 顔/かお test. The day counter displays 日, keeps the reading か and its counter meaning, and links the existing 日 reading graph.
+Review all visible words, including legacy shards previously omitted from the spelling audit. Correct word labels and sentence labels, including 顔, 頭, 電話, 葉書 and 時々. Keep conventional kana spellings with an explicit per-word reason in the regression tests. Add supporting Kanji using the existing schema, attested KANJIDIC readings and KanjiVG stroke patterns. Reuse existing recordings where the authored readings match, and track unavailable recordings explicitly. Preserve every existing ID, pronunciation, audio/image binding and all media files byte-for-byte. Keep original recording requests and whole-sentence recordings while updating current sentence composition lookups. Extend spelling regression coverage to every visible word, including a negative 顔/かお test. The day counter displays 日, keeps the reading か and its counter meaning, and links the existing 日 reading graph.
 
 ## Complete supporting-card audio bindings
 
-Bundle 45 previously generated Japanese recordings for the remaining 47 supporting cards, using the selected ElevenLabs voice and exact authored Kana readings. Preserve existing media and apply the established padding and peak limit to the new recordings. Store recording request provenance, source digests and validation metadata in the existing inventories. Automated audio and binding checks passed; listening verification was unavailable. No cards remain in the unrecorded inventory.
+Bundle previously generated Japanese recordings for the remaining supporting cards, using the selected ElevenLabs voice and exact authored Kana readings. Preserve existing media and apply the established padding and peak limit to the new recordings. Store recording request provenance, source digests and validation metadata in the existing inventories. Automated audio and binding checks passed; listening verification was unavailable. Recording availability is tracked in the bundled inventory.
 
 ## Reuse existing component recordings
 
-Bind 94 supporting Kanji and reading cards to 72 existing recordings with matching authored pronunciations. Preserve all existing audio bytes and original recording requests. Forty-seven cards remain explicitly unrecorded in the bundled inventory.
+Bind supporting Kanji and reading cards to existing recordings with matching authored pronunciations. Preserve all existing audio bytes and original recording requests. Missing recordings are tracked explicitly in the bundled inventory.
 
 ## Restore vocabulary conventions
 
-Remove the added Usage and Examples field and paragraphs, restore lexical tags, and correct 114 of the 173 added words to reviewed Kanji spellings while retaining conventional Kana forms. Preserve existing pronunciation wrappers and give new wrappers direct meaning links. Use the original schema for supporting Kanji and reading cards, with KanjiVG stroke patterns and attested KANJIDIC readings. Preserve all existing card IDs, media bytes and recording requests; update sentence labels, inflection spellings and audio lookup metadata. Supporting cards without recordings are explicitly listed as unavailable. Add strict pre-expansion field contracts and negative regression tests for vocabulary, spelling, reading links, visibility and deck coverage.
+Remove the added Usage and Examples field and paragraphs, restore lexical tags, and correct added words to reviewed Kanji spellings while retaining conventional Kana forms. Preserve existing pronunciation wrappers and give new wrappers direct meaning links. Use the original schema for supporting Kanji and reading cards, with KanjiVG stroke patterns and attested KANJIDIC readings. Preserve all existing card IDs, media bytes and recording requests; update sentence labels, inflection spellings and audio lookup metadata. Supporting cards without recordings are explicitly listed as unavailable. Add strict pre-expansion field contracts and negative regression tests for vocabulary, spelling, reading links, visibility and deck coverage.
 
 ## Practice in context
 
-Add four starter decks for food and drink, travel and direction, connecting ideas, and people and preferences. They provide focused practice with 23 existing phrases and their linked meanings, kana readings and constituents.
+Add starter decks for food and drink, travel and direction, connecting ideas, and people and preferences. They provide focused practice with existing phrases and their linked meanings, kana readings and constituents.
 
 ## Clearer Illustrations
 
@@ -40,19 +44,19 @@ Clarify the illustrated senses of きれい, ゆっくり and あし with locali
 
 ## Travel Vocabulary
 
-Add twelve illustrated travel words, their reviewed grammatical forms, eight composed-text examples and two localized practice decks. New travel recordings are not bundled.
+Add illustrated travel words, their reviewed grammatical forms, composed-text examples and localized practice decks. New travel recordings are not bundled.
 
 ## Mealtime Practice
 
-Add six varied mealtime sentences and a practice deck, reusing existing vocabulary and exact constituent audio. The new compositions have technical integrity checks; listening has not been verified.
+Add varied mealtime sentences and a practice deck, reusing existing vocabulary and exact constituent audio. The new compositions have technical integrity checks; listening has not been verified.
 
 ## Daily Routines
 
-Add six daily-routine examples and a practice deck, covering time, place, company and direction with existing vocabulary and exact constituent audio.
+Add daily-routine examples and a practice deck, covering time, place, company and direction with existing vocabulary and exact constituent audio.
 
 ## Shopping Choices
 
-Add six shopping examples and a practice deck for choices, needs, descriptions and purchases. Compose audio only where every exact constituent is available; explicitly identify missing recordings.
+Add shopping examples and a practice deck for choices, needs, descriptions and purchases. Compose audio only where every exact constituent is available; explicitly identify missing recordings.
 
 ## Travel verb glosses
 
@@ -64,111 +68,111 @@ Generate the authorized travel words and forms with the specified voices, retain
 
 ## Next vocabulary batch prepared
 
-Prepare four new beginner time expressions with readings, localized meanings, contextual examples and a proposed deck. Keep them outside runtime content until distinct illustrations are generated and visually reviewed; no unreviewed artwork is published.
+Prepare new beginner time expressions with readings, localized meanings, contextual examples and a proposed deck. Keep them outside runtime content until distinct illustrations are generated and visually reviewed; no unreviewed artwork is published.
 
 ## Time vocabulary with reviewed media
 
-Publish tomorrow, yesterday, soon and later with four inspected illustrations, designated-voice recordings, complete readings, contextual examples and a vocabulary deck. Calendar dates, one-minute arrival signs and ordered activity panels clarify the temporal meanings. Listening remains unverified.
+Publish tomorrow, yesterday, soon and later with inspected illustrations, designated-voice recordings, complete readings, contextual examples and a vocabulary deck. Calendar dates, one-minute arrival signs and ordered activity panels clarify the temporal meanings. Listening remains unverified.
 
 ## Basic colors and preferences
 
-Add red, blue, green and yellow as color nouns, each with a visually inspected illustration, selected-voice recording, complete reading and localized usage examples. Four preference sentences per language reuse exact constituent PCM, including English third-person likes. A combined vocabulary and sentence deck supports immediate practice. Japanese notes distinguish color nouns from adjective forms.
+Add red, blue, green and yellow as color nouns, each with a visually inspected illustration, selected-voice recording, complete reading and localized usage examples. Preference sentences per language reuse exact constituent PCM, including English third-person likes. A combined vocabulary and sentence deck supports immediate practice. Japanese notes distinguish color nouns from adjective forms.
 
 ## Weather Vocabulary
 
-Add four illustrated weather nouns with localized meanings, pronunciation guidance and a starter deck. All eight source and final images across both modules were visually inspected; the conflicting Japanese wind scene was corrected. Recordings retain exact requests and source PCM; listening remains unverified.
+Add illustrated weather nouns with localized meanings, pronunciation guidance and a starter deck. All source and final images across both modules were visually inspected; the conflicting Japanese wind scene was corrected. Recordings retain exact requests and source PCM; listening remains unverified.
 
 ## Directions in Context
 
-Add left, right, north and south with four location examples and a practice deck. Inspect every original and final illustration for viewpoint, compass orientation and labels. Reuse exact constituent audio and retain provider usage evidence; listening remains unverified.
+Add left, right, north and south with location examples and a practice deck. Inspect every original and final illustration for viewpoint, compass orientation and labels. Reuse exact constituent audio and retain provider usage evidence; listening remains unverified.
 
 ## Weather Examples and Number
 
-Add four weather examples using exact constituent PCM. English cloud now exposes clouds with reviewed /klaʊdz/ pronunciation and an independently recorded plural clip. Japanese examples preserve natural particle use and context-dependent noun number. Listening remains unverified.
+Add weather examples using exact constituent PCM. English cloud now exposes clouds with reviewed /klaʊdz/ pronunciation and an independently recorded plural clip. Japanese examples preserve natural particle use and context-dependent noun number. Listening remains unverified.
 
 ## Seasons and Activities
 
-Add four illustrated season nouns, four activity examples and a mixed practice deck. Explain spring as a season and autumn/fall usage, and distinguish temperate seasonal illustrations from worldwide climate rules. Preserve reviewed kana readings and exact constituent audio; listening remains unverified.
+Add illustrated season nouns, activity examples and a mixed practice deck. Explain spring as a season and autumn/fall usage, and distinguish temperate seasonal illustrations from worldwide climate rules. Preserve reviewed kana readings and exact constituent audio; listening remains unverified.
 
 ## Everyday Clothing
 
-Add shirts, everyday dresses, socks and skirts with four English plural forms, four contextual examples per module and a clothing deck. Review every source and final illustration, preserve Japanese small kana and long vowels, and compose exact constituent audio. Add a regression check rejecting conflicting recording bytes for the same card or selected-form lookup identity. Listening remains unverified.
+Add shirts, everyday dresses, socks and skirts with English plural forms, contextual examples per module and a clothing deck. Review every source and final illustration, preserve Japanese small kana and long vowels, and compose exact constituent audio. Add a regression check rejecting conflicting recording bytes for the same card or selected-form lookup identity. Listening remains unverified.
 
 ## Everyday Tableware
 
-Add cups, plates, spoons and forks with four English plural forms, four contextual examples per module and a tableware deck. Inspect all source and final pictures, review small kana and long vowels, and preserve exact constituent PCM and recording provenance. Canonical plural tests verify spelling, IPA, provider request and selected-form bindings. Listening remains unverified.
+Add cups, plates, spoons and forks with English plural forms, contextual examples per module and a tableware deck. Inspect all source and final pictures, review small kana and long vowels, and preserve exact constituent PCM and recording provenance. Canonical plural tests verify spelling, IPA, provider request and selected-form bindings. Listening remains unverified.
 
 ## Places in Town
 
-Add libraries, hospitals, supermarkets and restaurants with reviewed meanings, four English plural forms and a themed deck. Eight varied examples cover reading, employment, location questions, planned travel, shopping and dining. Inspect all source and final pictures, verify dictionary senses and readings, and preserve exact constituent audio. Listening remains unverified.
+Add libraries, hospitals, supermarkets and restaurants with reviewed meanings, English plural forms and a themed deck. Varied examples cover reading, employment, location questions, planned travel, shopping and dining. Inspect all source and final pictures, verify dictionary senses and readings, and preserve exact constituent audio. Listening remains unverified.
 
 ## Household Actions
 
-Add wash, cook, clean and dry with four inspected action illustrations per module, localized sense and transitivity notes, and a household deck. Support sixteen English grammatical forms with twelve shared recordings and thirty-two Japanese forms, with canonical form/audio tests. Eight varied examples use exact constituent audio. English examples include present, past and progressive forms; Japanese examples use base forms for host import compatibility while all thirty-two forms remain available for transformation practice. Listening remains unverified.
+Add wash, cook, clean and dry with inspected action illustrations per module, localized sense and transitivity notes, and a household deck. Support English grammatical forms with shared recordings and Japanese forms, with canonical form/audio tests. Varied examples use exact constituent audio. English examples include present, past and progressive forms; Japanese examples use base forms for host import compatibility while all forms remain available for transformation practice. Listening remains unverified.
 
 ## Daily Needs
 
-Add six contextual examples and a daily-needs deck per module, covering water, utensils, locations, shopping plans, cooking and personal care. Reuse exact constituent PCM without new generation requests or images. Japanese particles and English articles are reviewed in context. Listening remains explicitly unverified.
+Add contextual examples and a daily-needs deck per module, covering water, utensils, locations, shopping plans, cooking and personal care. Reuse exact constituent PCM without new generation requests or images. Japanese particles and English articles are reviewed in context. Listening remains explicitly unverified.
 
 ## Personal Care
 
-Add soap, towel, toothbrush and toothpaste with four inspected illustrations per module, exact base-word recordings, two English plural recordings and eight contextual examples. Localized notes explain countability and Japanese readings. Record image-count provenance and the current Japanese import constraint; preserve every existing sentence and all inflected audio. Listening remains unverified.
+Add soap, towel, toothbrush and toothpaste with inspected illustrations per module, exact base-word recordings, English plural recordings and contextual examples. Localized notes explain countability and Japanese readings. Record image-count provenance and the current Japanese import constraint; preserve every existing sentence and all inflected audio. Listening remains unverified.
 
 ## Getting Around
 
-Add airplane, boat, taxi and motorcycle with four inspected pictures per module, four English plural forms, eight natural examples and a transport deck. Explain regional English names, Japanese long vowels, the small-boat sense and Japanese-made オートバイ. Use the designated voices and exact constituent audio. Preserve every previous sentence and grammatical recording. Listening remains unverified.
+Add airplane, boat, taxi and motorcycle with inspected pictures per module, English plural forms, natural examples and a transport deck. Explain regional English names, Japanese long vowels, the small-boat sense and Japanese-made オートバイ. Use the designated voices and exact constituent audio. Preserve every previous sentence and grammatical recording. Listening remains unverified.
 
 ## School Supplies
 
-Add pencil, pen, notebook and ruler with four inspected pictures per module, four English plural forms, eight natural examples and a school-supplies deck. Distinguish graphite from ink, paper notebooks from computers and measuring rulers from governors. Verify Japanese small kana and long vowels. Preserve all previous sentences and grammatical recordings. Listening remains unverified.
+Add pencil, pen, notebook and ruler with inspected pictures per module, English plural forms, natural examples and a school-supplies deck. Distinguish graphite from ink, paper notebooks from computers and measuring rulers from governors. Verify Japanese small kana and long vowels. Preserve all previous sentences and grammatical recordings. Listening remains unverified.
 
 ## School Day
 
-Add six individually authored contextual examples per module with exact existing constituent audio and a dedicated deck. Check meaning, register, particle roles, readings and four-language translations. Preserve all earlier examples and grammatical recordings. No new images or external generation requests. Listening remains unverified.
+Add individually authored contextual examples per module with exact existing constituent audio and a dedicated deck. Check meaning, register, particle roles, readings and four-language translations. Preserve all earlier examples and grammatical recordings. No new images or external generation requests. Listening remains unverified.
 
 ## At a Restaurant
 
-Add six individually authored contextual examples per module with exact existing constituent audio and a dedicated deck. Check meaning, register, particle roles, readings and four-language translations. Preserve all earlier examples and grammatical recordings. No new images or external generation requests. Listening remains unverified.
+Add individually authored contextual examples per module with exact existing constituent audio and a dedicated deck. Check meaning, register, particle roles, readings and four-language translations. Preserve all earlier examples and grammatical recordings. No new images or external generation requests. Listening remains unverified.
 
 ## More Animals
 
-Add rabbit, horse, cow and pig with four inspected pictures per module, four English plural forms, eight natural examples and an animal deck. Distinguish female cow from broader Japanese うし, preserve the extra syllable in horses and verify native Japanese inputs. Use fixed voices and exact constituent audio. Keep all previous examples and forms. Listening remains unverified.
+Add rabbit, horse, cow and pig with inspected pictures per module, English plural forms, natural examples and an animal deck. Distinguish female cow from broader Japanese うし, preserve the extra syllable in horses and verify native Japanese inputs. Use fixed voices and exact constituent audio. Keep all previous examples and forms. Listening remains unverified.
 
 ## Home Furnishings
 
-Add sofa, lamp, mirror and pillow with four inspected pictures per module, four English plural forms, eight natural examples and a furnishings deck. Verify small ァ in ソファ, the lighting sense of ランプ, voiced が in かがみ and the sleeping-pillow sense. Use fixed voices and exact constituent audio. Preserve all earlier examples and forms. Listening remains unverified.
+Add sofa, lamp, mirror and pillow with inspected pictures per module, English plural forms, natural examples and a furnishings deck. Verify small ァ in ソファ, the lighting sense of ランプ, voiced が in かがみ and the sleeping-pillow sense. Use fixed voices and exact constituent audio. Preserve all earlier examples and forms. Listening remains unverified.
 
 ## More Fruit
 
-Add peach, pear, watermelon and pineapple with four inspected pictures per module, four English plural forms, eight natural examples and a fruit deck. Distinguish European and Asian pear illustrations, countable whole fruits and food mass nouns, and preserve the extra syllable in peaches and small ッ in パイナップル. Add a cumulative expansion summary separating distinct base words, examples, recorded forms and total records, with regression checks. Listening remains unverified.
+Add peach, pear, watermelon and pineapple with inspected pictures per module, English plural forms, natural examples and a fruit deck. Distinguish European and Asian pear illustrations, countable whole fruits and food mass nouns, and preserve the extra syllable in peaches and small ッ in パイナップル. Add a cumulative expansion summary separating distinct base words, examples, recorded forms and total records, with regression checks. Listening remains unverified.
 
 ## Kitchen Equipment
 
-Add bowl, knife, pot and pan in both modules with inspected illustrations, four English plural forms, eight contextual sentences and two decks. Notes explain silent k, irregular knives and distinctions between mixing bowls, deep pots and shallow frying pans. Exact constituent PCM preserves selected forms. Update cumulative theme accounting. Listening remains unverified.
+Add bowl, knife, pot and pan in both modules with inspected illustrations, English plural forms, contextual sentences and decks. Notes explain silent k, irregular knives and distinctions between mixing bowls, deep pots and shallow frying pans. Exact constituent PCM preserves selected forms. Update cumulative theme accounting. Listening remains unverified.
 
 ## More Vegetables
 
-Add cabbage, mushroom, spinach and lettuce in both modules with inspected illustrations, three English plural forms, eight varied examples and two decks. Distinguish food from whole-plant countability, retain long vowels in ほうれんそう and small ャ in キャベツ, and omit a beginner plural for spinach. Update cumulative theme accounting and preserve earlier examples. Listening remains unverified.
+Add cabbage, mushroom, spinach and lettuce in both modules with inspected illustrations, English plural forms, varied examples and decks. Distinguish food from whole-plant countability, retain long vowels in ほうれんそう and small ャ in キャベツ, and omit a beginner plural for spinach. Update cumulative theme accounting and preserve earlier examples. Listening remains unverified.
 
 ## Rooms and Garden
 
-Add bedroom, bathroom, kitchen, garden with four inspected illustrations per module, four English plural forms, eight independently authored examples and two decks. Review native readings and localized sense distinctions, preserve exact constituent PCM and all earlier examples, and update cumulative vocabulary accounting. Listening remains unverified.
+Add bedroom, bathroom, kitchen, garden with inspected illustrations per module, English plural forms, independently authored examples and decks. Review native readings and localized sense distinctions, preserve exact constituent PCM and all earlier examples, and update cumulative vocabulary accounting. Listening remains unverified.
 
 ## Nature Nearby
 
-Add tree, forest, leaf, stone with four inspected illustrations per module, four English plural forms, eight independently authored examples and two decks. Review native readings and localized sense distinctions, preserve exact constituent PCM and all earlier examples, and update cumulative vocabulary accounting. Listening remains unverified.
+Add tree, forest, leaf, stone with inspected illustrations per module, English plural forms, independently authored examples and decks. Review native readings and localized sense distinctions, preserve exact constituent PCM and all earlier examples, and update cumulative vocabulary accounting. Listening remains unverified.
 
 ## Household Fixtures
 
-Add fridge, oven, sink, shower with four inspected illustrations per module, four English plural forms, eight independently authored examples and two decks. Review native readings and localized sense distinctions, preserve exact constituent PCM and all earlier examples, and update cumulative vocabulary accounting. Listening remains unverified.
+Add fridge, oven, sink, shower with inspected illustrations per module, English plural forms, independently authored examples and decks. Review native readings and localized sense distinctions, preserve exact constituent PCM and all earlier examples, and update cumulative vocabulary accounting. Listening remains unverified.
 
 ## Everyday Actions
 
-Add jump, swim, laugh and cry with inspected illustrations and natural examples. Cover sixteen English form bindings and thirty-two Japanese forms, including irregular swim and Japanese consonant changes. Keep exact constituent audio, source evidence and prior content. Listening remains unverified.
+Add jump, swim, laugh and cry with inspected illustrations and natural examples. Cover English form bindings and Japanese forms, including irregular swim and Japanese consonant changes. Keep exact constituent audio, source evidence and prior content. Listening remains unverified.
 
 ## Weight and Difficulty
 
-Add heavy, light, easy and difficult with contextual illustrations and sense notes. Cover eight English degree forms and twelve Japanese i-adjective forms. Examples use adjective predicates and nominalized activities. Update the curriculum coverage audit and cumulative totals. Listening remains unverified.
+Add heavy, light, easy and difficult with contextual illustrations and sense notes. Cover English degree forms and Japanese i-adjective forms. Examples use adjective predicates and nominalized activities. Update the curriculum coverage audit and cumulative totals. Listening remains unverified.
 
 ## Frequency and Repetition
 
@@ -176,7 +180,7 @@ Add often, sometimes, usually and again with contextual scenes and independently
 
 ## Reading, Writing and Rest
 
-Add Japanese reading, writing, speaking and sleeping predicates with thirty-two recorded forms. Reuse existing English vocabulary in new practice. Explain writing surfaces, conversation partners and the contextual meaning of 寝る. Preserve earlier content and exact audio; listening remains unverified.
+Add Japanese reading, writing, speaking and sleeping predicates with recorded forms. Reuse existing English vocabulary in new practice. Explain writing surfaces, conversation partners and the contextual meaning of 寝る. Preserve earlier content and exact audio; listening remains unverified.
 
 ## Everyday Exchanges
 
@@ -188,11 +192,11 @@ Add affirmative and negative responses, polite requests and requests to repeat. 
 
 ## Making Plans
 
-Add six planning examples and a deck for upcoming activities, arrival, waiting and tickets. Keep contextual time meanings and language-specific sentence structures; compose audio from exact existing constituents without new synthesis charges.
+Add planning examples and a deck for upcoming activities, arrival, waiting and tickets. Keep contextual time meanings and language-specific sentence structures; compose audio from exact existing constituents without new synthesis charges.
 
 ## Study Habits
 
-Add six individually authored study examples and a deck covering writing tools, reading, language learning, classroom listening and questions. Reuse existing exact word recordings without adding duplicate vocabulary or illustrations.
+Add individually authored study examples and a deck covering writing tools, reading, language learning, classroom listening and questions. Reuse existing exact word recordings without adding duplicate vocabulary or illustrations.
 
 ## Greetings and Farewells
 
@@ -200,107 +204,107 @@ Add morning and evening greetings, bedtime farewells and casual see-you expressi
 
 ## Time and Reading
 
-Add Japanese morning, night, book and newspaper, and English newspaper; reuse existing English nouns. Add four reading examples per language. Replace a confusing book illustration with a coherent closed book and retain the rejection evidence outside runtime.
+Add Japanese morning, night, book and newspaper, and English newspaper; reuse existing English nouns. Add reading examples per language. Replace a confusing book illustration with a coherent closed book and retain the rejection evidence outside runtime.
 
 ## Checking Understanding
 
-Add understand and わかる with four English and seven Japanese grammatical-form bindings. Retain irregular understood and avoid automatically inventing a potential form for the Japanese stative sense. Add two English examples and one Japanese base-form example. Two Japanese selected-form sentence drafts remain outside runtime because the host importer compares base labels; their exact audio and review evidence are retained. All new originals and final JPEGs were visually reviewed; audio listening remains unverified.
+Add understand and わかる with English and Japanese grammatical-form bindings. Retain irregular understood and avoid automatically inventing a potential form for the Japanese stative sense. Add English examples and one Japanese base-form example. Japanese selected-form sentence drafts remain outside runtime because the host importer compares base labels; their exact audio and review evidence are retained. All new originals and final JPEGs were visually reviewed; audio listening remains unverified.
 
 ## Personal Belongings
 
-Add wallet, camera, glasses and wristwatch with localized meanings, usage notes and four contextual examples per language. Explain English plural glasses and Japanese うでどけい. Individually inspect every original and final JPEG; replace a watch draft missing an hour marker and retain rejection evidence. Preserve explicit voices and native Japanese inputs; audio listening remains unverified.
+Add wallet, camera, glasses and wristwatch with localized meanings, usage notes and contextual examples per language. Explain English plural glasses and Japanese うでどけい. Individually inspect every original and final JPEG; replace a watch draft missing an hour marker and retain rejection evidence. Preserve explicit voices and native Japanese inputs; audio listening remains unverified.
 
 ## Getting Ready
 
-Add four independently authored preparation examples per language covering possession, travel documents, locations and plans. Reuse exact constituent PCM and existing lexical entries without duplicate vocabulary. Keep the two Japanese polite-comprehension drafts deferred and leave host code unchanged.
+Add independently authored preparation examples per language covering possession, travel documents, locations and plans. Reuse exact constituent PCM and existing lexical entries without duplicate vocabulary. Keep the Japanese polite-comprehension drafts deferred and leave host code unchanged.
 
 ## Giving and Receiving
 
-Add give/receive and あげる/もらう with two visually reviewed illustrations and four individually authored examples per language. Explain subject roles, Japanese recipient に and source から, and the difference between literal giving and raising. Record eight English and sixteen Japanese form bindings, retaining gave/given, もらわない and small-っ forms. Preserve exact constituent PCM and native Japanese input. Illustrations and notes identify the blue-clothed subject; audio listening remains unverified. The two deferred polite-comprehension drafts remain unchanged.
+Add give/receive and あげる/もらう with visually reviewed illustrations and individually authored examples per language. Explain subject roles, Japanese recipient に and source から, and the difference between literal giving and raising. Record English and Japanese form bindings, retaining gave/given, もらわない and small-っ forms. Preserve exact constituent PCM and native Japanese input. Illustrations and notes identify the blue-clothed subject; audio listening remains unverified. The deferred polite-comprehension drafts remain unchanged.
 
 ## Container vocabulary and practice
 
-Added bottle, box, basket and envelope with localized meanings and usage notes, inspected illustrations and four contextual examples. Japanese envelope preserves both long vowels. Audio uses the configured voices and exact constituent PCM; listening remains unverified under the recorded waiver.
+Added bottle, box, basket and envelope with localized meanings and usage notes, inspected illustrations and contextual examples. Japanese envelope preserves both long vowels. Audio uses the configured voices and exact constituent PCM; listening remains unverified under the recorded waiver.
 
 ## Stationery vocabulary and practice
 
-Added eraser, scissors, adhesive tape and stapler with inspected illustrations and four contextual examples. Usage notes and sentence graphs preserve plural scissors, uncountable tape, the long vowel in テープ and the selected ホチキス spelling. Japanese receiving practice retains the teacher as source. Exact constituent audio is checked technically; listening remains unverified under the recorded waiver.
+Added eraser, scissors, adhesive tape and stapler with inspected illustrations and contextual examples. Usage notes and sentence graphs preserve plural scissors, uncountable tape, the long vowel in テープ and the selected ホチキス spelling. Japanese receiving practice retains the teacher as source. Exact constituent audio is checked technically; listening remains unverified under the recorded waiver.
 
 ## Posture verbs and verified audio indexes
 
-Added sit and stand, their irregular English and godan Japanese forms, inspected illustrations and four contextual examples. Usage notes distinguish taking a position from a continuing Japanese state. Hashed purpose indexes allow continued content growth within existing file-size guards. Audio listening remains unverified under the recorded waiver.
+Added sit and stand, their irregular English and godan Japanese forms, inspected illustrations and contextual examples. Usage notes distinguish taking a position from a continuing Japanese state. Hashed purpose indexes allow continued content growth within existing file-size guards. Audio listening remains unverified under the recorded waiver.
 
 ## Everyday tasks at home
 
-Added four individually authored examples covering dishwashing, reading, sitting at a table and belongings. Japanese examples also reinforce giving soup to a friend and locating a key in a box. Existing vocabulary and exact recorded constituents are reused; no new pictures or provider requests are needed.
+Added individually authored examples covering dishwashing, reading, sitting at a table and belongings. Japanese examples also reinforce giving soup to a friend and locating a key in a box. Existing vocabulary and exact recorded constituents are reused; no new pictures or provider requests are needed.
 
 ## Wild animals in context
 
-Add fox, bear, monkey and elephant with four distinct examples about habitat, movement, observation and size, plus a focused starter deck. Review each original illustration and final JPEG; retain four-language meanings and notes about species examples, noun senses and the Japanese long vowel in ぞう. Compare all prior audio-provider selections byte for byte as inventories grow. New speech remains explicitly unverified by listening.
+Add fox, bear, monkey and elephant with distinct examples about habitat, movement, observation and size, plus a focused starter deck. Review each original illustration and final JPEG; retain four-language meanings and notes about species examples, noun senses and the Japanese long vowel in ぞう. Compare all prior audio-provider selections byte for byte as inventories grow. New speech remains explicitly unverified by listening.
 
 ## Pushing and pulling in context
 
-Add push and pull with reviewed English regular endings and Japanese su/ku godan forms, inspected action illustrations and four varied examples. Examples cover a request, a past event, action in progress, manner, contrast and later action. Each language receives one focused deck. Exact constituent recordings and source evidence are retained; listening remains unverified.
+Add push and pull with reviewed English regular endings and Japanese su/ku godan forms, inspected action illustrations and varied examples. Examples cover a request, a past event, action in progress, manner, contrast and later action. Each language receives a focused deck. Exact constituent recordings and source evidence are retained; listening remains unverified.
 
 ## Describing and comparing length
 
-Add long and short with English comparative and superlative recordings, Japanese i-adjective forms and inspected length comparisons. Four distinct examples cover a description, a needed or purchased object, comparison or degree, and location. Notes distinguish length from height and preserve the consonant in longer and longest. Exact recorded constituents and four-language meanings remain traceable; listening is unverified.
+Add long and short with English comparative and superlative recordings, Japanese i-adjective forms and inspected length comparisons. Distinct examples cover a description, a needed or purchased object, comparison or degree, and location. Notes distinguish length from height and preserve the consonant in longer and longest. Exact recorded constituents and four-language meanings remain traceable; listening is unverified.
 
 ## Apologies and welcomes
 
-Add Sorry and Welcome with ごめんなさい and ようこそ, inspected social scenes and two concise contextual examples per language. Notes distinguish arrival greetings from responses to thanks and explain the familiar tone of the Japanese apology example. Complete readings retain ん and the long vowel in よう. Audio is composed from exact recordings; listening remains unverified.
+Add Sorry and Welcome with ごめんなさい and ようこそ, inspected social scenes and concise contextual examples per language. Notes distinguish arrival greetings from responses to thanks and explain the familiar tone of the Japanese apology example. Complete readings retain ん and the long vowel in よう. Audio is composed from exact recordings; listening remains unverified.
 
 ## Cutting and folding materials
 
-Add cut and fold with exact English and Japanese form recordings, corrected and inspected action illustrations, and four varied examples. English also gains paper as a material noun; Japanese reuses its existing 紙 card. Notes distinguish godan 切る from ichidan 着る and paper-folding 折る from other senses. Identical cut forms reuse cached audio. Source evidence and rejected artwork are retained; listening remains unverified.
+Add cut and fold with exact English and Japanese form recordings, corrected and inspected action illustrations, and varied examples. English also gains paper as a material noun; Japanese reuses its existing 紙 card. Notes distinguish godan 切る from ichidan 着る and paper-folding 折る from other senses. Identical cut forms reuse cached audio. Source evidence and rejected artwork are retained; listening remains unverified.
 
 ## Food preparation and weather conversations
 
-Add eight individually reviewed examples and two practice decks using existing vocabulary and exact cached constituent recordings. Food preparation covers washing, cutting, coordinated ingredients and locating potatoes; weather practice covers rain, umbrellas, description and seasonal preference. English reuses the exact cuts form, while Japanese preserves complete readings and particle pronunciation. No new vocabulary, illustrations or provider requests are counted. Source and per-composition evidence are retained; listening remains unverified.
+Add individually reviewed examples and practice decks using existing vocabulary and exact cached constituent recordings. Food preparation covers washing, cutting, coordinated ingredients and locating potatoes; weather practice covers rain, umbrellas, description and seasonal preference. English reuses the exact cuts form, while Japanese preserves complete readings and particle pronunciation. No new vocabulary, illustrations or provider requests are counted. Source and per-composition evidence are retained; listening remains unverified.
 
 ## Width and available space
 
-Add wide and narrow with ひろい and せまい, four inspected bridge illustrations and four contextual examples per language. English includes wider/widest and narrower/narrowest; Japanese includes adverbial, negative and past forms with complete kana and small っ. Notes distinguish width and available space from length. Exact constituent audio, original images, PCM and source evidence are retained; listening remains unverified.
+Add wide and narrow with ひろい and せまい, inspected bridge illustrations and contextual examples per language. English includes wider/widest and narrower/narrowest; Japanese includes adverbial, negative and past forms with complete kana and small っ. Notes distinguish width and available space from length. Exact constituent audio, original images, PCM and source evidence are retained; listening remains unverified.
 
 ## Inside and outside
 
-Add inside/outside as English adverbs and なか/そと as Japanese location nouns, with inspected container scenes and four examples per language. Japanese examples distinguish の for the reference place, に with いる/ある for existence, and で for activities. Native kana avoids the unrelated ちゅう reading of 中. Original images, explicit-voice PCM and exact sentence compositions are retained; listening remains unverified.
+Add inside/outside as English adverbs and なか/そと as Japanese location nouns, with inspected container scenes and examples per language. Japanese examples distinguish の for the reference place, に with いる/ある for existence, and で for activities. Native kana avoids the unrelated ちゅう reading of 中. Original images, explicit-voice PCM and exact sentence compositions are retained; listening remains unverified.
 
 ## Depth
 
-Add deep and shallow with ふかい and あさい, four inspected basin illustrations and four contextual examples per language. English comparison forms and Japanese adverbial, negative and past forms retain exact constituent PCM. Dictionary snapshots, original images and technical audio evidence are retained; listening remains unverified.
+Add deep and shallow with ふかい and あさい, inspected basin illustrations and contextual examples per language. English comparison forms and Japanese adverbial, negative and past forms retain exact constituent PCM. Dictionary snapshots, original images and technical audio evidence are retained; listening remains unverified.
 
 ## Light levels
 
-Add bright and dark with あかるい and くらい, four inspected room illustrations and four contextual examples per language. Notes distinguish illumination from color, intelligence and personality. English comparison forms and Japanese adverbial, negative and past forms retain exact selected audio. Sources, original images and PCM are retained; listening remains unverified.
+Add bright and dark with あかるい and くらい, inspected room illustrations and contextual examples per language. Notes distinguish illumination from color, intelligence and personality. English comparison forms and Japanese adverbial, negative and past forms retain exact selected audio. Sources, original images and PCM are retained; listening remains unverified.
 
 ## Scarves and gloves
 
-Add scarf/glove and マフラー/てぶくろ with four inspected illustrations and four contextual examples per language. English scarves/gloves retain exact plural recordings. Notes distinguish warm neckwear from an exhaust muffler and explain Japanese number and mitten coverage. Sources, original images and PCM are retained; listening remains unverified.
+Add scarf/glove and マフラー/てぶくろ with inspected illustrations and contextual examples per language. English scarves/gloves retain exact plural recordings. Notes distinguish warm neckwear from an exhaust muffler and explain Japanese number and mitten coverage. Sources, original images and PCM are retained; listening remains unverified.
 
 ## Hard and soft materials
 
-Add hard/soft and かたい/やわらかい with four inspected pressure demonstrations and four contextual examples per language. Precise sense labels distinguish physical hardness and softness from difficulty, volume and personality. Comparison and i-adjective forms retain exact recordings and complete stems. Sources, originals and PCM remain; listening is unverified.
+Add hard/soft and かたい/やわらかい with inspected pressure demonstrations and contextual examples per language. Precise sense labels distinguish physical hardness and softness from difficulty, volume and personality. Comparison and i-adjective forms retain exact recordings and complete stems. Sources, originals and PCM remain; listening is unverified.
 
 ## Balls and rackets
 
-Add ball/racket and ボール/ラケット with four inspected equipment illustrations and four examples per language. Notes select the sporting senses, distinguish ボール from ボウル, and retain the long vowel and small っ. Exact plural recordings support English examples; Japanese examples practise giving and receiving. Sources, originals and PCM remain; listening is unverified.
+Add ball/racket and ボール/ラケット with inspected equipment illustrations and examples per language. Notes select the sporting senses, distinguish ボール from ボウル, and retain the long vowel and small っ. Exact plural recordings support English examples; Japanese examples practise giving and receiving. Sources, originals and PCM remain; listening is unverified.
 
 ## Museum and zoo outings
 
-Add museum/zoo and はくぶつかん/どうぶつえん with four inspected venue illustrations and four varied examples per language. Notes distinguish museum coverage and preserve complete native readings. English museums/zoos have exact recordings; examples practise destinations, viewing and waiting for a friend. Sources, originals and PCM remain; listening is unverified.
+Add museum/zoo and はくぶつかん/どうぶつえん with inspected venue illustrations and varied examples per language. Notes distinguish museum coverage and preserve complete native readings. English museums/zoos have exact recordings; examples practise destinations, viewing and waiting for a friend. Sources, originals and PCM remain; listening is unverified.
 
 ## Letters and postcards
 
-Add letter/postcard and てがみ/はがき with four inspected illustrations, eight contextual examples and two exact English plural bindings. Notes distinguish correspondence from alphabet letters and preserve voiced が. Sources, original pictures and exact constituent PCM are retained. Listening remains unverified.
+Add letter/postcard and てがみ/はがき with inspected illustrations, contextual examples and exact English plural bindings. Notes distinguish correspondence from alphabet letters and preserve voiced が. Sources, original pictures and exact constituent PCM are retained. Listening remains unverified.
 
 ## Sending and carrying
 
-Add send/carry and おくる/はこぶ with four inspected illustrations, eight examples and 24 exact grammatical form bindings. English past/participle recordings are shared for sent and carried; Japanese past/te forms preserve small っ versus んだ/んで. Two inaccurate envelope originals were rejected and corrected, with evidence retained. Sentence PCM matches constituents exactly. Listening remains unverified.
+Add send/carry and おくる/はこぶ with inspected illustrations, examples and exact grammatical form bindings. English past/participle recordings are shared for sent and carried; Japanese past/te forms preserve small っ versus んだ/んで. Inaccurate envelope originals were rejected and corrected, with evidence retained. Sentence PCM matches constituents exactly. Listening remains unverified.
 
 ## Sending and carrying in context
 
-Extend the existing Sending and Carrying deck from six to ten cards per language. Eight new examples practise past and ongoing actions, recipients, sources, coordination, companions and destinations. Existing IDs, names and card order remain intact; no new deck or picture is added. Audio reuses exact approved-voice constituent PCM without generation charges. Listening remains unverified.
+Extend the existing Sending and Carrying deck with contextual practice. New examples practise past and ongoing actions, recipients, sources, coordination, companions and destinations. Existing IDs, names and card order remain intact; no new deck or picture is added. Audio reuses exact approved-voice constituent PCM without generation charges. Listening remains unverified.
 
 ## Use the existing content structure
 

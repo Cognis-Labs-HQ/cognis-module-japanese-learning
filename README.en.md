@@ -6,12 +6,7 @@ Japanese Study supplies a versioned Japanese content pack, scoped dictionary and
 
 ## Packaged content
 
-| Category                 | Count |
-| ------------------------ | ----- |
-| Starter decks            | 76    |
-| Visible vocabulary cards | 275   |
-| Sentences                | 297   |
-| Vocabulary illustrations | 275   |
+The pack provides writing guides, themed vocabulary, linked examples, illustrations and starter decks. The packaged content and media inventories are the source of truth for availability.
 
 ## Requirements
 
@@ -74,7 +69,7 @@ Resolver roles are now reserved for true compositions: kanji readings, word spel
 
 ## Complete kana tables
 
-Alongside all 46 basic gojūon entries and 25 dakuten or handakuten forms per script, the pack includes small kana, all standard yōon series, and common sokuon geminations. Examples include `ひゃ`, `しゅ`, `じゃ`, and `って`, plus their katakana equivalents.
+Alongside basic gojūon entries and dakuten or handakuten forms per script, the pack includes small kana, all standard yōon series, and common sokuon geminations. Examples include `ひゃ`, `しゅ`, `じゃ`, and `って`, plus their katakana equivalents.
 
 ## Dynamic variant placement
 
@@ -122,7 +117,7 @@ The pack is republished for the latest Library identity safeguards. Every Kana r
 
 ## Explicit Kana child hierarchies
 
-Aligned with the latest Library relationship contract by marking Kana parent relationships as both variants and spatial children. The suppressed duplicate relationship section makes the explicit `usage_note` field unnecessary, so it and its four record values have been removed.
+Aligned with the latest Library relationship contract by marking Kana parent relationships as both variants and spatial children. The suppressed duplicate relationship section makes the explicit `usage_note` field unnecessary, so it and its record values have been removed.
 
 ## Canonical Kanji reading vocabulary
 
@@ -148,13 +143,13 @@ Hidden reading Vocabulary records carry their own four-locale definition wheneve
 
 ## Expanded Core Dataset
 
-The pack now includes more than thirty additional everyday Vocabulary records, ten additional particles, and eight fully composed example sentences, all stored as declarative JSON under `data/library/content/`. Genuine polysemy may use several localized definition references on one record (`なおす`: repair/correct), while homophones such as `はし` (bridge/chopsticks), `あめ` (rain/candy), `かみ` (paper/hair/deity), and `はな` (flower/nose) remain separate Vocabulary records with distinct definitions.
+The pack now includes everyday Vocabulary records, additional particles, and fully composed example sentences, all stored as declarative JSON under `data/library/content/`. Genuine polysemy may use several localized definition references on one record (`なおす`: repair/correct), while homophones such as `はし` (bridge/chopsticks), `あめ` (rain/candy), `かみ` (paper/hair/deity), and `はな` (flower/nose) remain separate Vocabulary records with distinct definitions.
 
 ## Kanji-first core graph
 
 The compact core now uses conventional Kanji spellings throughout. Sentences reference visible vocabulary, visible vocabulary references its Kanji and hidden pronunciation segments, and every hidden segment reconstructs from atomic Kana through the composition-only `reading-kana` relationship. For example, `私は学生` resolves through `私` → `わたし` → `わ`・`た`・`し` and `学生` → `がく`・`せい` → atomic Kana.
 
-## Latest PR 226 record controls
+## Latest PR record controls
 
 The provider data now matches the latest Study Library normalization contract: definitions are hidden `definition` records, sentences are `composite` records, and particles are immutable `particle` records with `editable: false`. Lexical and reading classes remain provider-neutral and namespaced.
 
@@ -168,7 +163,7 @@ Single-Kanji vocabulary now uses a hidden complete-pronunciation wrapper before 
 
 ## Linked sentence readings and reviewed practice batch
 
-Every sentence pronunciation now opens a hidden complete-reading record whose segments resolve through existing hidden vocabulary and atomic particle Kana; unlinked pronunciation text is no longer the default. Eight reviewed sentences add varied practice for drinking water, studying Japanese, travel, animals, size, and walking, with new fully linked `学ぶ` and `歩く` vocabulary.
+Every sentence pronunciation now opens a hidden complete-reading record whose segments resolve through existing hidden vocabulary and atomic particle Kana; unlinked pronunciation text is no longer the default. Reviewed sentences add varied practice for drinking water, studying Japanese, travel, animals, size, and walking, with new fully linked `学ぶ` and `歩く` vocabulary.
 
 ## Direct Kana Reading Titles
 
@@ -282,11 +277,11 @@ Japanese small-kana word recordings, including 学校, are regenerated using kan
 
 ## Vocabulary Illustrations
 
-Every shipped vocabulary card now has its own generated anime-style illustration (275 cards). Concrete objects, actions and contextual scenes for abstract concepts use the existing card-detail gallery and full-image popup. The old source photographs have been replaced. [The image catalog](data/library/assets/images/catalog.json) records generation source, style, crop provenance, checksums and card assignments; [image licensing](data/library/assets/images/LICENSE.md) describes the bundled artwork. Images load locally, and the host preserves custom user images during provider reloads.
+Vocabulary cards use generated anime-style illustrations. Concrete objects, actions and contextual scenes for abstract concepts use the existing card-detail gallery and full-image popup. The old source photographs have been replaced. [The image catalog](data/library/assets/images/catalog.json) records generation source, style, crop provenance, checksums and card assignments; [image licensing](data/library/assets/images/LICENSE.md) describes the bundled artwork. Images load locally, and the host preserves custom user images during provider reloads.
 
 ## Household Vocabulary
 
-Fifteen everyday nouns cover furniture, clothing, objects and food, with four-language meanings, pronunciation links, dedicated recordings and a Household Essentials deck. English countable nouns include recorded plural transformations, including unchanged plural fish; rice remains a mass noun. Japanese beginner spellings link complete readings to atomic kana, including the long-vowel mark ー used in テーブル and コート.
+Everyday nouns cover furniture, clothing, objects and food, with four-language meanings, pronunciation links, dedicated recordings and a Household Essentials deck. English countable nouns include recorded plural transformations, including unchanged plural fish; rice remains a mass noun. Japanese beginner spellings link complete readings to atomic kana, including the long-vowel mark ー used in テーブル and コート.
 
 ## Food and Body Vocabulary
 

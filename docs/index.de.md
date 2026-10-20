@@ -4,12 +4,7 @@ Das Modul Japanisch lernen installiert deklarative japanische Lerndatensätze in
 
 ## Enthaltene Lerninhalte
 
-| Kategorie               | Anzahl |
-| ----------------------- | ------ |
-| Startdecks              | 76     |
-| Sichtbare Vokabelkarten | 275    |
-| Sätze                   | 297    |
-| Vokabelillustrationen   | 275    |
+Das Paket bietet Schreibvorlagen, thematischen Wortschatz, verknüpfte Beispiele, Illustrationen und Startdecks. Die paketierten Inhalte und Medienverzeichnisse sind maßgeblich für die Verfügbarkeit.
 
 ## Verwendung
 
@@ -71,7 +66,7 @@ Resolver-Rollen sind nun echten Zusammensetzungen vorbehalten: Kanji-Lesungen, W
 
 ## Vollständige Kana-Tabellen
 
-Zusätzlich zu allen 46 grundlegenden Gojūon-Einträgen und 25 Dakuten- oder Handakuten-Formen je Schriftsystem enthält das Paket kleine Kana, alle üblichen Yōon-Reihen und verbreitete Sokuon-Geminationen. Beispiele sind `ひゃ`, `しゅ`, `じゃ` und `って` sowie ihre Katakana-Entsprechungen.
+Zusätzlich zu grundlegenden Gojūon-Einträgen und Dakuten- oder Handakuten-Formen je Schriftsystem enthält das Paket kleine Kana, alle üblichen Yōon-Reihen und verbreitete Sokuon-Geminationen. Beispiele sind `ひゃ`, `しゅ`, `じゃ` und `って` sowie ihre Katakana-Entsprechungen.
 
 ## Dynamische Variantenplatzierung
 
@@ -245,7 +240,7 @@ Ein Kanji mit einer Aussprache verknüpft direkt geordnete atomare Kana. Ein Kan
 
 ## Geprüfter Stapel zu Ort und Art und Weise
 
-Der geprüfte Anfängerstapel ergänzt `ここ`, `そこ`, `どこ`, `いる`, `ある`, `きれい`, `とても`, `ゆっくり` und `です` sowie acht abwechslungsreiche Sätze über Orte, Existenz, Fragen, Aussehen und Art und Weise. Jedes neue Wort besitzt eine lokalisierte Definition und geordnete Kana-Schreibweise; jeder Satz besitzt eine exakte lokalisierte Bedeutung, geordnete lexikalische Zusammensetzung und einen vollständigen ausgeblendeten Aussprachepfad.
+Der geprüfte Anfängerstapel ergänzt `ここ`, `そこ`, `どこ`, `いる`, `ある`, `きれい`, `とても`, `ゆっくり` und `です` sowie abwechslungsreiche Sätze über Orte, Existenz, Fragen, Aussehen und Art und Weise. Jedes neue Wort besitzt eine lokalisierte Definition und geordnete Kana-Schreibweise; jeder Satz besitzt eine exakte lokalisierte Bedeutung, geordnete lexikalische Zusammensetzung und einen vollständigen ausgeblendeten Aussprachepfad.
 
 ## Destruktive Deinstallationsbereinigung
 
@@ -313,7 +308,7 @@ Das Schema legt die Erkunden-Pfade `kana`, `kanji`, `vocabulary` und `sentences`
 
 ## Lernkarten-Startdecks
 
-Der japanische Anbieter erklärt sechs Startdecks: Hiragana-Grundlagen (46), Katakana-Grundlagen (46), Kanji im Alltag (10), Erste japanische Wörter (9), Japanische Verben im Alltag (8) und Erste japanische Sätze (12). Stabile Schlüssel, vier übersetzte Namen, Schema-IDs und sichtbare Datensatz-IDs erlauben Cognis die Auflösung kanonischer Bibliotheks-IDs. Ansicht, Favoriten, Freigaben und Fortschritt gehören Cognis; das Modul erstellt keine Nutzerstapel und fragt keine Host-Datenbank ab.
+Der japanische Anbieter erklärt Startdecks: Hiragana-Grundlagen, Katakana-Grundlagen, Kanji im Alltag, Erste japanische Wörter, Japanische Verben im Alltag und Erste japanische Sätze. Stabile Schlüssel, vier übersetzte Namen, Schema-IDs und sichtbare Datensatz-IDs erlauben Cognis die Auflösung kanonischer Bibliotheks-IDs. Ansicht, Favoriten, Freigaben und Fortschritt gehören Cognis; das Modul erstellt keine Nutzerstapel und fragt keine Host-Datenbank ab.
 
 ## Review und Lebenszyklus
 

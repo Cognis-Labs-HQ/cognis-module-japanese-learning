@@ -2,33 +2,37 @@
 
 **Cabang Fitur:** `feature-expand-themed-practice`
 
-## Lokalisasi dan jumlah konten yang konsisten
+## Dokumentasi konten yang tahan perubahan
 
-Akhiran kunci definisi memakai huruf kecil dengan pemisah titik, tanpa mengubah awalan modul dan ID rekaman. Keempat berkas bahasa tetap selaras, setiap referensi definisi terselesaikan, dan kunci duplikat atau tidak valid ditolak. README dan panduan integrasi mencantumkan jumlah dek, kosakata, kalimat, dan ilustrasi yang sebenarnya serta menjelaskan inventaris rekaman dua tingkat secara konsisten. Setiap kartu yang dapat diputar dan bentuk terpilih wajib memiliki audio dalam paket, terlepas dari daftar rekaman yang belum tersedia.
+Mengganti jumlah konten sesaat dan tabel inventaris dengan deskripsi kualitatif pada README lokal, panduan integrasi, dan catatan perubahan cabang ini. Batas teknis, kontrak format, dan riwayat commit dipertahankan. Uji dokumentasi menolak jumlah inventaris tanpa mengharuskan dokumen statis menyalin isi paket yang terus berkembang.
+
+## Lokalisasi dan deskripsi konten yang konsisten
+
+Akhiran kunci definisi memakai huruf kecil dengan pemisah titik, tanpa mengubah awalan modul dan ID rekaman. Keempat berkas bahasa tetap selaras, setiap referensi definisi terselesaikan, dan kunci duplikat atau tidak valid ditolak. README dan panduan integrasi menjelaskan materi pembelajaran secara kualitatif tanpa jumlah inventaris serta menjelaskan inventaris rekaman dua tingkat secara konsisten. Setiap kartu yang dapat diputar dan bentuk terpilih wajib memiliki audio dalam paket, terlepas dari daftar rekaman yang belum tersedia.
 
 ## Melengkapi audio Kanji pendukung
 
-Menambahkan lima rekaman untuk 帽（ぼう）, 抵（てい）, 腹（はら）, 飯（はん）, dan 鶏（とり） dengan suara bahasa Jepang yang ditetapkan. Seluruh media dan asal rekaman yang ada dipertahankan. Pemeriksaan mencakup bacaan yang ditulis, hash sumber, format PCM, keluaran tidak senyap, batas puncak, dan tautan pemutaran. Pemeriksaan dengan mendengarkan tetap tidak tersedia karena lingkungan ini tidak menerima masukan audio. Tidak ada kartu yang dapat diputar tanpa rekaman.
+Menambahkan rekaman untuk 帽（ぼう）, 抵（てい）, 腹（はら）, 飯（はん）, dan 鶏（とり） dengan suara bahasa Jepang yang ditetapkan. Seluruh media dan asal rekaman yang ada dipertahankan. Pemeriksaan mencakup bacaan yang ditulis, hash sumber, format PCM, keluaran tidak senyap, batas puncak, dan tautan pemutaran. Pemeriksaan dengan mendengarkan tetap tidak tersedia karena lingkungan ini tidak menerima masukan audio. Ketersediaan rekaman tercatat dalam inventaris paket.
 
 ## Meninjau ejaan seluruh kosakata
 
-Meninjau seluruh 275 kata yang terlihat, termasuk berkas lama yang sebelumnya tidak tercakup dalam audit ejaan. Memperbaiki 33 label kata dan 38 label kalimat, termasuk 顔, 頭, 電話, 葉書, dan 時々. Mempertahankan 92 ejaan kana yang lazim dengan alasan khusus per kata dalam uji regresi. Menambahkan 24 Kanji pendukung memakai skema yang ada, bacaan yang tercatat dalam KANJIDIC, dan pola goresan KanjiVG. Memakai ulang rekaman yang ada untuk 19 kartu; 帽・抵・腹・飯・鶏 tetap dicatat tanpa rekaman karena belum ada rekaman komponen yang tepat. Mempertahankan seluruh ID, pelafalan, tautan audio/gambar, dan semua 1.592 berkas media tanpa perubahan byte. Mempertahankan permintaan rekaman asli dan rekaman kalimat utuh sambil memperbarui pencarian komposisi kalimat. Memperluas uji ejaan ke setiap kata yang terlihat, termasuk uji negatif 顔/かお. Penghitung hari menampilkan 日, mempertahankan bacaan か dan makna penghitungnya, serta memakai graf bacaan 日 yang sudah ada.
+Meninjau seluruh kata yang terlihat, termasuk berkas lama yang sebelumnya tidak tercakup dalam audit ejaan. Memperbaiki label kata dan label kalimat, termasuk 顔, 頭, 電話, 葉書, dan 時々. Mempertahankan ejaan kana yang lazim dengan alasan khusus per kata dalam uji regresi. Menambahkan Kanji pendukung memakai skema yang ada, bacaan yang tercatat dalam KANJIDIC, dan pola goresan KanjiVG. Memakai ulang rekaman dengan bacaan yang sesuai dan mencatat rekaman yang belum tersedia secara eksplisit. Mempertahankan seluruh ID, pelafalan, tautan audio/gambar, dan semua berkas media tanpa perubahan byte. Mempertahankan permintaan rekaman asli dan rekaman kalimat utuh sambil memperbarui pencarian komposisi kalimat. Memperluas uji ejaan ke setiap kata yang terlihat, termasuk uji negatif 顔/かお. Penghitung hari menampilkan 日, mempertahankan bacaan か dan makna penghitungnya, serta memakai graf bacaan 日 yang sudah ada.
 
 ## Melengkapi audio kartu pendukung
 
-Menyertakan 45 rekaman bahasa Jepang yang telah dibuat untuk 47 kartu pendukung tersisa, menggunakan suara ElevenLabs yang dipilih dan bacaan kana persis seperti pada kartu. Media yang ada tetap sama; rekaman baru mengikuti jeda tepi dan batas amplitudo yang berlaku. Asal permintaan rekaman, hash sumber, dan metadata validasi disimpan dalam inventaris yang ada. Pemeriksaan otomatis audio dan tautan lulus; verifikasi dengan mendengarkan tidak tersedia. Tidak ada lagi kartu dalam daftar tanpa rekaman.
+Menyertakan rekaman bahasa Jepang yang telah dibuat untuk kartu pendukung tersisa, menggunakan suara ElevenLabs yang dipilih dan bacaan kana persis seperti pada kartu. Media yang ada tetap sama; rekaman baru mengikuti jeda tepi dan batas amplitudo yang berlaku. Asal permintaan rekaman, hash sumber, dan metadata validasi disimpan dalam inventaris yang ada. Pemeriksaan otomatis audio dan tautan lulus; verifikasi dengan mendengarkan tidak tersedia. Ketersediaan rekaman dicatat dalam inventaris paket.
 
 ## Menggunakan kembali rekaman komponen
 
-Menghubungkan 94 kartu kanji dan bacaan pendukung ke 72 rekaman yang sudah ada dengan pelafalan sesuai bacaan kartu. Semua data audio dan permintaan rekaman asli dipertahankan. Sebanyak 47 kartu tetap dicatat secara eksplisit tanpa rekaman dalam inventaris bawaan.
+Menghubungkan kartu kanji dan bacaan pendukung ke rekaman yang sudah ada dengan pelafalan sesuai bacaan kartu. Semua data audio dan permintaan rekaman asli dipertahankan. Rekaman yang belum tersedia dicatat secara eksplisit dalam inventaris bawaan.
 
 ## Memulihkan konvensi kosakata
 
-Menghapus kolom Penggunaan dan Contoh beserta paragrafnya, memulihkan tag kelas kata, dan memperbaiki 114 dari 173 kata tambahan menjadi ejaan kanji yang ditinjau sambil mempertahankan bentuk kana yang lazim. Mempertahankan kartu pelafalan yang ada dan memberikan tautan makna langsung pada kartu pelafalan baru. Kartu kanji dan bacaan pendukung memakai skema asli, pola goresan KanjiVG, serta bacaan yang tercatat dalam KANJIDIC. Semua ID kartu, berkas media, dan permintaan rekaman yang ada dipertahankan; label kalimat, ejaan infleksi, dan metadata pencarian audio diperbarui. Kartu pendukung tanpa rekaman dicatat secara eksplisit sebagai tidak tersedia. Kontrak kolom sebelum perluasan dan uji regresi negatif memeriksa kosakata, ejaan, tautan bacaan, visibilitas, serta cakupan dek.
+Menghapus kolom Penggunaan dan Contoh beserta paragrafnya, memulihkan tag kelas kata, dan memperbaiki kata tambahan menjadi ejaan kanji yang ditinjau sambil mempertahankan bentuk kana yang lazim. Mempertahankan kartu pelafalan yang ada dan memberikan tautan makna langsung pada kartu pelafalan baru. Kartu kanji dan bacaan pendukung memakai skema asli, pola goresan KanjiVG, serta bacaan yang tercatat dalam KANJIDIC. Semua ID kartu, berkas media, dan permintaan rekaman yang ada dipertahankan; label kalimat, ejaan infleksi, dan metadata pencarian audio diperbarui. Kartu pendukung tanpa rekaman dicatat secara eksplisit sebagai tidak tersedia. Kontrak kolom sebelum perluasan dan uji regresi negatif memeriksa kosakata, ejaan, tautan bacaan, visibilitas, serta cakupan dek.
 
 ## Berlatih dalam konteks
 
-Tambahkan empat dek awal tentang makanan dan minuman, perjalanan dan arah, penghubung gagasan, serta orang dan kesukaan. Dek ini menyediakan latihan terarah dengan 23 ungkapan yang sudah ada beserta makna, bacaan kana, dan unsur penyusunnya.
+Tambahkan dek awal tentang makanan dan minuman, perjalanan dan arah, penghubung gagasan, serta orang dan kesukaan. Dek ini menyediakan latihan terarah dengan ungkapan yang sudah ada beserta makna, bacaan kana, dan unsur penyusunnya.
 
 ## Ilustrasi yang Lebih Jelas
 
@@ -40,19 +44,19 @@ Catatan dan contoh terlokalisasi memperjelas makna yang digambarkan untuk きれ
 
 ## Kosakata Perjalanan
 
-Tambahkan dua belas kata perjalanan bergambar, bentuk tata bahasa yang ditinjau, delapan contoh dengan unsur kata terhubung, dan dua dek latihan terlokalisasi. Rekaman baru untuk materi perjalanan belum disertakan.
+Tambahkan kata perjalanan bergambar, bentuk tata bahasa yang ditinjau, contoh dengan unsur kata terhubung, dan dek latihan terlokalisasi. Rekaman baru untuk materi perjalanan belum disertakan.
 
 ## Latihan Saat Makan
 
-Tambahkan enam kalimat bervariasi tentang makanan dan satu dek latihan dengan kosakata serta audio unsur yang sudah ada. Integritas teknis gabungan audio diperiksa; verifikasi dengan mendengarkan belum dilakukan.
+Tambahkan kalimat bervariasi tentang makanan dan dek latihan dengan kosakata serta audio unsur yang sudah ada. Integritas teknis gabungan audio diperiksa; verifikasi dengan mendengarkan belum dilakukan.
 
 ## Rutinitas Harian
 
-Enam contoh rutinitas harian dan satu dek latihan membahas waktu, tempat, teman beraktivitas, dan arah dengan kosakata serta audio unsur yang sudah ada.
+Contoh rutinitas harian dan dek latihan membahas waktu, tempat, teman beraktivitas, dan arah dengan kosakata serta audio unsur yang sudah ada.
 
 ## Pilihan Saat Berbelanja
 
-Enam contoh belanja dan satu dek latihan membahas pilihan, kebutuhan, deskripsi, dan pembelian. Audio digabungkan hanya jika semua rekaman unsur yang tepat tersedia; rekaman yang belum ada dicatat secara jelas.
+Contoh belanja dan dek latihan membahas pilihan, kebutuhan, deskripsi, dan pembelian. Audio digabungkan hanya jika semua rekaman unsur yang tepat tersedia; rekaman yang belum ada dicatat secara jelas.
 
 ## Makna kata kerja perjalanan
 
@@ -64,111 +68,111 @@ Buat rekaman kata dan bentuk perjalanan yang diizinkan dengan suara yang ditetap
 
 ## Batch kosakata berikutnya disiapkan
 
-Siapkan empat ungkapan waktu baru untuk pemula beserta bacaan, makna terjemahan, contoh kontekstual, dan rancangan dek. Simpan di luar konten runtime hingga ilustrasi tersendiri dibuat dan diperiksa secara visual.
+Siapkan ungkapan waktu baru untuk pemula beserta bacaan, makna terjemahan, contoh kontekstual, dan rancangan dek. Simpan di luar konten runtime hingga ilustrasi tersendiri dibuat dan diperiksa secara visual.
 
 ## Kosakata waktu dengan media yang diperiksa
 
-Terbitkan besok, kemarin, segera, dan nanti dengan empat ilustrasi yang diperiksa, rekaman suara yang ditetapkan, bacaan lengkap, contoh kontekstual, dan dek kosakata. Tanggal kalender, tanda kedatangan satu menit, dan urutan kegiatan memperjelas makna waktunya. Pemeriksaan melalui pendengaran belum dilakukan.
+Terbitkan besok, kemarin, segera, dan nanti dengan ilustrasi yang diperiksa, rekaman suara yang ditetapkan, bacaan lengkap, contoh kontekstual, dan dek kosakata. Tanggal kalender, tanda kedatangan menit, dan urutan kegiatan memperjelas makna waktunya. Pemeriksaan melalui pendengaran belum dilakukan.
 
 ## Warna dasar dan kesukaan
 
-Tambahkan merah, biru, hijau, dan kuning sebagai kata benda warna, masing-masing dengan ilustrasi yang diperiksa, rekaman suara yang ditetapkan, bacaan lengkap, dan contoh penggunaan terjemahan. Empat kalimat kesukaan per bahasa memakai PCM unsur yang tepat, termasuk bentuk likes dalam bahasa Inggris. Dek gabungan kosakata dan kalimat mendukung latihan langsung. Catatan Jepang membedakan nama warna dari bentuk kata sifat.
+Tambahkan merah, biru, hijau, dan kuning sebagai kata benda warna, masing-masing dengan ilustrasi yang diperiksa, rekaman suara yang ditetapkan, bacaan lengkap, dan contoh penggunaan terjemahan. Kalimat kesukaan per bahasa memakai PCM unsur yang tepat, termasuk bentuk likes dalam bahasa Inggris. Dek gabungan kosakata dan kalimat mendukung latihan langsung. Catatan Jepang membedakan nama warna dari bentuk kata sifat.
 
 ## Kosakata Cuaca
 
-Tambahkan empat nomina cuaca bergambar dengan arti lokal, panduan pelafalan, dan dek latihan. Kedelapan gambar sumber dan gambar akhir di kedua modul telah diperiksa secara visual; adegan angin bahasa Jepang yang bertentangan telah diperbaiki. Rekaman menyimpan permintaan persis dan PCM sumber; pemeriksaan pendengaran belum dilakukan.
+Tambahkan nomina cuaca bergambar dengan arti lokal, panduan pelafalan, dan dek latihan. Kedelapan gambar sumber dan gambar akhir di kedua modul telah diperiksa secara visual; adegan angin bahasa Jepang yang bertentangan telah diperbaiki. Rekaman menyimpan permintaan persis dan PCM sumber; pemeriksaan pendengaran belum dilakukan.
 
 ## Arah dalam Konteks
 
-Tambahkan kiri, kanan, utara, dan selatan dengan empat contoh lokasi dan dek latihan. Periksa sudut pandang, orientasi kompas, dan label setiap gambar sumber dan akhir. Gunakan ulang segmen audio persis dan simpan bukti pemakaian penyedia; pemeriksaan pendengaran belum dilakukan.
+Tambahkan kiri, kanan, utara, dan selatan dengan contoh lokasi dan dek latihan. Periksa sudut pandang, orientasi kompas, dan label setiap gambar sumber dan akhir. Gunakan ulang segmen audio persis dan simpan bukti pemakaian penyedia; pemeriksaan pendengaran belum dilakukan.
 
 ## Contoh Cuaca dan Jumlah
 
-Tambahkan empat contoh cuaca dengan segmen PCM persis. Cloud kini menyediakan clouds dengan transkripsi /klaʊdz/ yang ditinjau dan rekaman jamak tersendiri. Contoh Jepang mempertahankan partikel alami dan jumlah nomina yang bergantung konteks. Pemeriksaan pendengaran belum dilakukan.
+Tambahkan contoh cuaca dengan segmen PCM persis. Cloud kini menyediakan clouds dengan transkripsi /klaʊdz/ yang ditinjau dan rekaman jamak tersendiri. Contoh Jepang mempertahankan partikel alami dan jumlah nomina yang bergantung konteks. Pemeriksaan pendengaran belum dilakukan.
 
 ## Musim dan Kegiatan
 
-Tambahkan empat nama musim bergambar, empat contoh kegiatan, dan dek latihan gabungan. Jelaskan spring sebagai musim serta penggunaan autumn/fall; gambar iklim sedang bukan aturan iklim seluruh dunia. Pertahankan bacaan kana yang ditinjau dan segmen audio persis; pemeriksaan pendengaran belum dilakukan.
+Tambahkan nama musim bergambar, contoh kegiatan, dan dek latihan gabungan. Jelaskan spring sebagai musim serta penggunaan autumn/fall; gambar iklim sedang bukan aturan iklim seluruh dunia. Pertahankan bacaan kana yang ditinjau dan segmen audio persis; pemeriksaan pendengaran belum dilakukan.
 
 ## Pakaian Sehari-hari
 
-Tambahkan kemeja, gaun sehari-hari, kaus kaki, dan rok dengan empat bentuk jamak Inggris, empat contoh per modul, serta dek pakaian. Periksa semua gambar sumber dan akhir, pertahankan kana kecil dan vokal panjang Jepang, dan susun segmen audio persis. Uji regresi menolak byte rekaman yang bertentangan untuk kunci pencarian kartu atau bentuk yang sama. Pemeriksaan pendengaran belum dilakukan.
+Tambahkan kemeja, gaun sehari-hari, kaus kaki, dan rok dengan bentuk jamak Inggris, contoh per modul, serta dek pakaian. Periksa semua gambar sumber dan akhir, pertahankan kana kecil dan vokal panjang Jepang, dan susun segmen audio persis. Uji regresi menolak byte rekaman yang bertentangan untuk kunci pencarian kartu atau bentuk yang sama. Pemeriksaan pendengaran belum dilakukan.
 
 ## Peralatan Makan
 
-Tambahkan cangkir, piring, sendok, dan garpu dengan empat bentuk jamak Inggris, empat contoh per modul, serta dek tematik. Periksa gambar sumber dan akhir, kana kecil, serta vokal panjang; pertahankan PCM unsur yang persis dan asal rekaman. Uji bentuk jamak memeriksa ejaan, IPA, permintaan penyedia, dan pengaitan bentuk. Pemeriksaan pendengaran belum dilakukan.
+Tambahkan cangkir, piring, sendok, dan garpu dengan bentuk jamak Inggris, contoh per modul, serta dek tematik. Periksa gambar sumber dan akhir, kana kecil, serta vokal panjang; pertahankan PCM unsur yang persis dan asal rekaman. Uji bentuk jamak memeriksa ejaan, IPA, permintaan penyedia, dan pengaitan bentuk. Pemeriksaan pendengaran belum dilakukan.
 
 ## Tempat di Kota
 
-Tambahkan perpustakaan, rumah sakit, supermarket, dan restoran dengan makna yang ditinjau, empat bentuk jamak Inggris, serta dek tematik. Delapan contoh beragam mencakup membaca, pekerjaan, pertanyaan lokasi, rencana perjalanan, berbelanja, dan makan. Periksa gambar sumber dan akhir serta makna dan bacaan kamus; pertahankan segmen audio persis. Pemeriksaan pendengaran belum dilakukan.
+Tambahkan perpustakaan, rumah sakit, supermarket, dan restoran dengan makna yang ditinjau, bentuk jamak Inggris, serta dek tematik. Contoh beragam mencakup membaca, pekerjaan, pertanyaan lokasi, rencana perjalanan, berbelanja, dan makan. Periksa gambar sumber dan akhir serta makna dan bacaan kamus; pertahankan segmen audio persis. Pemeriksaan pendengaran belum dilakukan.
 
 ## Kegiatan Rumah Tangga
 
-Tambahkan mencuci, memasak, membersihkan, dan mengeringkan dengan empat ilustrasi tindakan yang diperiksa per modul, catatan makna dan transitivitas, serta dek rumah tangga. Dukung enam belas bentuk Inggris melalui dua belas rekaman bersama dan tiga puluh dua bentuk Jepang dengan uji bentuk dan audio. Delapan contoh beragam memakai segmen audio persis. Contoh Inggris mencakup bentuk kini, lampau, dan progresif. Contoh Jepang memakai bentuk dasar agar sesuai dengan impor host; seluruh tiga puluh dua bentuk tetap tersedia untuk latihan perubahan bentuk. Pemeriksaan pendengaran belum dilakukan.
+Tambahkan mencuci, memasak, membersihkan, dan mengeringkan dengan ilustrasi tindakan yang diperiksa per modul, catatan makna dan transitivitas, serta dek rumah tangga. Dukung bentuk Inggris melalui rekaman bersama dan bentuk Jepang dengan uji bentuk dan audio. Contoh beragam memakai segmen audio persis. Contoh Inggris mencakup bentuk kini, lampau, dan progresif. Contoh Jepang memakai bentuk dasar agar sesuai dengan impor host; seluruh bentuk tetap tersedia untuk latihan perubahan bentuk. Pemeriksaan pendengaran belum dilakukan.
 
 ## Kebutuhan Sehari-hari
 
-Tambahkan enam contoh dan satu dek per modul tentang air, alat makan, lokasi, rencana belanja, memasak, dan perawatan diri. Gunakan ulang segmen audio persis tanpa permintaan generasi atau gambar baru. Tinjau partikel Jepang dan artikel Inggris dalam konteks. Pemeriksaan pendengaran belum dilakukan.
+Tambahkan contoh dan dek per modul tentang air, alat makan, lokasi, rencana belanja, memasak, dan perawatan diri. Gunakan ulang segmen audio persis tanpa permintaan generasi atau gambar baru. Tinjau partikel Jepang dan artikel Inggris dalam konteks. Pemeriksaan pendengaran belum dilakukan.
 
 ## Perawatan Diri
 
-Tambahkan sabun, handuk, sikat gigi, dan pasta gigi dengan empat gambar yang diperiksa per modul, rekaman kata yang tepat, dua rekaman jamak Inggris, dan delapan contoh. Catatan lokal menjelaskan keterhitungan dan bacaan Jepang. Catat asal jumlah gambar serta batas impor Jepang saat ini; pertahankan semua kalimat dan audio perubahan bentuk yang ada. Pemeriksaan pendengaran belum dilakukan.
+Tambahkan sabun, handuk, sikat gigi, dan pasta gigi dengan gambar yang diperiksa per modul, rekaman kata yang tepat, rekaman jamak Inggris, dan contoh. Catatan lokal menjelaskan keterhitungan dan bacaan Jepang. Catat asal jumlah gambar serta batas impor Jepang saat ini; pertahankan semua kalimat dan audio perubahan bentuk yang ada. Pemeriksaan pendengaran belum dilakukan.
 
 ## Bepergian
 
-Tambahkan pesawat terbang, perahu, taksi, dan sepeda motor dengan empat gambar yang diperiksa per modul, empat bentuk jamak Inggris, delapan contoh alami, dan dek transportasi. Jelaskan variasi nama Inggris, vokal panjang Jepang, makna perahu kecil, dan bentukan Jepang オートバイ. Gunakan suara yang ditetapkan dan segmen audio persis. Pertahankan semua kalimat serta rekaman perubahan bentuk sebelumnya. Pemeriksaan pendengaran belum dilakukan.
+Tambahkan pesawat terbang, perahu, taksi, dan sepeda motor dengan gambar yang diperiksa per modul, bentuk jamak Inggris, contoh alami, dan dek transportasi. Jelaskan variasi nama Inggris, vokal panjang Jepang, makna perahu kecil, dan bentukan Jepang オートバイ. Gunakan suara yang ditetapkan dan segmen audio persis. Pertahankan semua kalimat serta rekaman perubahan bentuk sebelumnya. Pemeriksaan pendengaran belum dilakukan.
 
 ## Perlengkapan Sekolah
 
-Tambahkan pensil, pena, buku catatan, dan penggaris dengan empat gambar yang diperiksa per modul, empat bentuk jamak Inggris, delapan contoh alami, dan dek perlengkapan sekolah. Periksa makna serta bacaan Jepang. Semua kalimat dan rekaman perubahan bentuk sebelumnya tetap utuh. Pemeriksaan pendengaran belum dilakukan.
+Tambahkan pensil, pena, buku catatan, dan penggaris dengan gambar yang diperiksa per modul, bentuk jamak Inggris, contoh alami, dan dek perlengkapan sekolah. Periksa makna serta bacaan Jepang. Semua kalimat dan rekaman perubahan bentuk sebelumnya tetap utuh. Pemeriksaan pendengaran belum dilakukan.
 
 ## Hari di Sekolah
 
-Tambahkan enam contoh kontekstual yang ditulis satu per satu untuk setiap modul, dengan segmen audio lama yang persis dan dek khusus. Periksa makna, ragam bahasa, fungsi partikel, bacaan, serta terjemahan dalam empat bahasa. Pertahankan semua contoh dan rekaman perubahan bentuk sebelumnya. Tidak ada gambar baru atau permintaan generasi eksternal. Pemeriksaan pendengaran belum dilakukan.
+Tambahkan contoh kontekstual yang ditulis secara individual untuk setiap modul, dengan segmen audio lama yang persis dan dek khusus. Periksa makna, ragam bahasa, fungsi partikel, bacaan, serta terjemahan dalam empat bahasa. Pertahankan semua contoh dan rekaman perubahan bentuk sebelumnya. Tidak ada gambar baru atau permintaan generasi eksternal. Pemeriksaan pendengaran belum dilakukan.
 
 ## Di Restoran
 
-Tambahkan enam contoh kontekstual yang ditulis satu per satu untuk setiap modul, dengan segmen audio lama yang persis dan dek khusus. Periksa makna, ragam bahasa, fungsi partikel, bacaan, serta terjemahan dalam empat bahasa. Pertahankan semua contoh dan rekaman perubahan bentuk sebelumnya. Tidak ada gambar baru atau permintaan generasi eksternal. Pemeriksaan pendengaran belum dilakukan.
+Tambahkan contoh kontekstual yang ditulis secara individual untuk setiap modul, dengan segmen audio lama yang persis dan dek khusus. Periksa makna, ragam bahasa, fungsi partikel, bacaan, serta terjemahan dalam empat bahasa. Pertahankan semua contoh dan rekaman perubahan bentuk sebelumnya. Tidak ada gambar baru atau permintaan generasi eksternal. Pemeriksaan pendengaran belum dilakukan.
 
 ## Hewan Lain
 
-Tambahkan kelinci, kuda, sapi, dan babi dengan empat gambar yang diperiksa per modul, empat bentuk jamak Inggris, delapan contoh alami, dan dek hewan. Bedakan cow yang berarti sapi betina dari うし yang lebih luas; periksa suku kata tambahan dalam horses dan masukan Jepang asli. Gunakan suara yang ditetapkan dan segmen audio persis. Semua contoh dan bentuk sebelumnya tetap utuh. Pemeriksaan pendengaran belum dilakukan.
+Tambahkan kelinci, kuda, sapi, dan babi dengan gambar yang diperiksa per modul, bentuk jamak Inggris, contoh alami, dan dek hewan. Bedakan cow yang berarti sapi betina dari うし yang lebih luas; periksa suku kata tambahan dalam horses dan masukan Jepang asli. Gunakan suara yang ditetapkan dan segmen audio persis. Semua contoh dan bentuk sebelumnya tetap utuh. Pemeriksaan pendengaran belum dilakukan.
 
 ## Perlengkapan Rumah
 
-Tambahkan sofa, lampu, cermin, dan bantal dengan empat gambar yang diperiksa per modul, empat bentuk jamak Inggris, delapan contoh alami, dan dek perlengkapan rumah. Periksa ァ kecil dalam ソファ, makna lampu dari ランプ, が bersuara dalam かがみ, serta makna bantal tidur. Gunakan suara yang ditetapkan dan segmen audio persis. Semua contoh dan bentuk sebelumnya tetap utuh. Pemeriksaan pendengaran belum dilakukan.
+Tambahkan sofa, lampu, cermin, dan bantal dengan gambar yang diperiksa per modul, bentuk jamak Inggris, contoh alami, dan dek perlengkapan rumah. Periksa ァ kecil dalam ソファ, makna lampu dari ランプ, が bersuara dalam かがみ, serta makna bantal tidur. Gunakan suara yang ditetapkan dan segmen audio persis. Semua contoh dan bentuk sebelumnya tetap utuh. Pemeriksaan pendengaran belum dilakukan.
 
 ## Buah Lain
 
-Tambahkan persik, pir, semangka, dan nanas dengan empat gambar yang diperiksa per modul, empat bentuk jamak Inggris, delapan contoh alami, dan dek buah. Bedakan pir Eropa dan Asia serta buah utuh dan makanan; pertahankan suku kata tambahan dalam peaches dan ッ kecil dalam パイナップル. Ringkasan kumulatif memisahkan kosakata dasar, contoh, bentuk yang direkam, dan total rekaman data, dengan pengujian regresi. Pemeriksaan pendengaran belum dilakukan.
+Tambahkan persik, pir, semangka, dan nanas dengan gambar yang diperiksa per modul, bentuk jamak Inggris, contoh alami, dan dek buah. Bedakan pir Eropa dan Asia serta buah utuh dan makanan; pertahankan suku kata tambahan dalam peaches dan ッ kecil dalam パイナップル. Ringkasan kumulatif memisahkan kosakata dasar, contoh, bentuk yang direkam, dan total rekaman data, dengan pengujian regresi. Pemeriksaan pendengaran belum dilakukan.
 
 ## Peralatan Dapur
 
-Tambahkan mangkuk, pisau, panci, dan wajan pada kedua modul dengan gambar yang diperiksa, empat bentuk jamak Inggris, delapan kalimat, dan dua dek. Catatan menjelaskan k yang tidak dibunyikan, knives, serta perbedaan mangkuk pencampur, panci dalam, dan wajan dangkal. PCM unsur yang tepat mempertahankan bentuk terpilih. Perbarui hitungan tema kumulatif. Pemeriksaan pendengaran belum dilakukan.
+Tambahkan mangkuk, pisau, panci, dan wajan pada kedua modul dengan gambar yang diperiksa, bentuk jamak Inggris, kalimat, dan dek. Catatan menjelaskan k yang tidak dibunyikan, knives, serta perbedaan mangkuk pencampur, panci dalam, dan wajan dangkal. PCM unsur yang tepat mempertahankan bentuk terpilih. Perbarui hitungan tema kumulatif. Pemeriksaan pendengaran belum dilakukan.
 
 ## Sayuran Lain
 
-Tambahkan kubis, jamur, bayam, dan selada pada kedua modul dengan gambar yang diperiksa, tiga bentuk jamak Inggris, delapan contoh bervariasi, dan dua dek. Bedakan makanan dari tanaman utuh, pertahankan vokal panjang dalam ほうれんそう dan ャ kecil dalam キャベツ, tanpa bentuk jamak pemula untuk spinach. Perbarui hitungan kumulatif dan pertahankan contoh lama. Pemeriksaan pendengaran belum dilakukan.
+Tambahkan kubis, jamur, bayam, dan selada pada kedua modul dengan gambar yang diperiksa, bentuk jamak Inggris, contoh bervariasi, dan dek. Bedakan makanan dari tanaman utuh, pertahankan vokal panjang dalam ほうれんそう dan ャ kecil dalam キャベツ, tanpa bentuk jamak pemula untuk spinach. Perbarui hitungan kumulatif dan pertahankan contoh lama. Pemeriksaan pendengaran belum dilakukan.
 
 ## Ruangan dan Taman
 
-Tambahkan kamar tidur, kamar mandi, dapur, taman dengan empat gambar yang diperiksa per modul, empat bentuk jamak Inggris, delapan contoh yang ditulis tersendiri, dan dua dek. Periksa bacaan serta perbedaan makna, pertahankan PCM unsur yang tepat dan semua contoh lama, lalu perbarui hitungan kosakata kumulatif. Pemeriksaan pendengaran belum dilakukan.
+Tambahkan kamar tidur, kamar mandi, dapur, taman dengan gambar yang diperiksa per modul, bentuk jamak Inggris, contoh yang ditulis tersendiri, dan dek. Periksa bacaan serta perbedaan makna, pertahankan PCM unsur yang tepat dan semua contoh lama, lalu perbarui hitungan kosakata kumulatif. Pemeriksaan pendengaran belum dilakukan.
 
 ## Alam Sekitar
 
-Tambahkan pohon, hutan, daun, batu dengan empat gambar yang diperiksa per modul, empat bentuk jamak Inggris, delapan contoh yang ditulis tersendiri, dan dua dek. Periksa bacaan serta perbedaan makna, pertahankan PCM unsur yang tepat dan semua contoh lama, lalu perbarui hitungan kosakata kumulatif. Pemeriksaan pendengaran belum dilakukan.
+Tambahkan pohon, hutan, daun, batu dengan gambar yang diperiksa per modul, bentuk jamak Inggris, contoh yang ditulis tersendiri, dan dek. Periksa bacaan serta perbedaan makna, pertahankan PCM unsur yang tepat dan semua contoh lama, lalu perbarui hitungan kosakata kumulatif. Pemeriksaan pendengaran belum dilakukan.
 
 ## Perlengkapan Rumah
 
-Tambahkan kulkas, oven, bak cuci, pancuran mandi dengan empat gambar yang diperiksa per modul, empat bentuk jamak Inggris, delapan contoh yang ditulis tersendiri, dan dua dek. Periksa bacaan serta perbedaan makna, pertahankan PCM unsur yang tepat dan semua contoh lama, lalu perbarui hitungan kosakata kumulatif. Pemeriksaan pendengaran belum dilakukan.
+Tambahkan kulkas, oven, bak cuci, pancuran mandi dengan gambar yang diperiksa per modul, bentuk jamak Inggris, contoh yang ditulis tersendiri, dan dek. Periksa bacaan serta perbedaan makna, pertahankan PCM unsur yang tepat dan semua contoh lama, lalu perbarui hitungan kosakata kumulatif. Pemeriksaan pendengaran belum dilakukan.
 
 ## Tindakan Sehari-hari
 
-Tambahkan melompat, berenang, tertawa, dan menangis dengan gambar yang diperiksa serta contoh alami. Cakup enam belas ikatan bentuk Inggris dan tiga puluh dua bentuk Jepang, termasuk swim tidak beraturan dan perubahan konsonan Jepang. Pertahankan audio unsur persis, bukti sumber, dan konten lama. Pemeriksaan pendengaran belum dilakukan.
+Tambahkan melompat, berenang, tertawa, dan menangis dengan gambar yang diperiksa serta contoh alami. Cakup ikatan bentuk Inggris dan bentuk Jepang, termasuk swim tidak beraturan dan perubahan konsonan Jepang. Pertahankan audio unsur persis, bukti sumber, dan konten lama. Pemeriksaan pendengaran belum dilakukan.
 
 ## Berat dan Kesulitan
 
-Tambahkan berat, ringan, mudah, dan sulit dengan ilustrasi kontekstual serta catatan makna. Cakup delapan bentuk perbandingan Inggris dan dua belas bentuk adjektiva i Jepang. Contoh memakai predikat adjektiva dan kegiatan yang dinominalkan. Perbarui audit cakupan kurikulum dan jumlah kumulatif. Pemeriksaan pendengaran belum dilakukan.
+Tambahkan berat, ringan, mudah, dan sulit dengan ilustrasi kontekstual serta catatan makna. Cakup bentuk perbandingan Inggris dan bentuk adjektiva i Jepang. Contoh memakai predikat adjektiva dan kegiatan yang dinominalkan. Perbarui audit cakupan kurikulum dan jumlah kumulatif. Pemeriksaan pendengaran belum dilakukan.
 
 ## Frekuensi dan Pengulangan
 
@@ -176,7 +180,7 @@ Tambahkan sering, kadang-kadang, biasanya, dan lagi dengan adegan kontekstual se
 
 ## Membaca, Menulis, dan Istirahat
 
-Tambahkan predikat Jepang untuk membaca, menulis, berbicara, dan tidur dengan tiga puluh dua bentuk rekaman. Gunakan kosakata Inggris yang ada dalam latihan baru. Jelaskan permukaan tulisan, teman bicara, dan makna 寝る sesuai konteks. Pertahankan konten lama dan audio persis; pemeriksaan pendengaran belum dilakukan.
+Tambahkan predikat Jepang untuk membaca, menulis, berbicara, dan tidur dengan bentuk rekaman. Gunakan kosakata Inggris yang ada dalam latihan baru. Jelaskan permukaan tulisan, teman bicara, dan makna 寝る sesuai konteks. Pertahankan konten lama dan audio persis; pemeriksaan pendengaran belum dilakukan.
 
 ## Percakapan Sehari-hari
 
@@ -188,11 +192,11 @@ Tambahkan jawaban afirmatif dan negatif, permintaan sopan, serta permintaan peng
 
 ## Membuat Rencana
 
-Enam contoh perencanaan dan satu dek membahas kegiatan mendatang, kedatangan, menunggu, dan tiket. Makna waktu sesuai konteks serta struktur tiap bahasa dipertahankan; audio disusun dari unsur yang sudah ada tanpa biaya sintesis baru.
+Contoh perencanaan dan dek membahas kegiatan mendatang, kedatangan, menunggu, dan tiket. Makna waktu sesuai konteks serta struktur tiap bahasa dipertahankan; audio disusun dari unsur yang sudah ada tanpa biaya sintesis baru.
 
 ## Kebiasaan Belajar
 
-Enam contoh belajar yang ditulis satu per satu dan satu dek mencakup alat tulis, membaca, belajar bahasa, menyimak di kelas, dan pertanyaan. Rekaman kata yang tepat digunakan kembali tanpa menduplikasi kosakata atau menambah ilustrasi.
+Contoh belajar yang ditulis secara individual dan dek mencakup alat tulis, membaca, belajar bahasa, menyimak di kelas, dan pertanyaan. Rekaman kata yang tepat digunakan kembali tanpa menduplikasi kosakata atau menambah ilustrasi.
 
 ## Salam dan Perpisahan
 
@@ -200,107 +204,107 @@ Tambahkan salam pagi dan malam, ucapan sebelum tidur, serta salam perpisahan akr
 
 ## Waktu dan Membaca
 
-Tambahkan kosakata Jepang pagi, malam, buku, dan surat kabar, serta newspaper dalam bahasa Inggris; gunakan kembali nomina Inggris yang sudah ada. Tambahkan empat contoh membaca per bahasa. Ganti gambar buku yang membingungkan dengan buku tertutup yang konsisten dan simpan bukti penolakan di luar konten runtime.
+Tambahkan kosakata Jepang pagi, malam, buku, dan surat kabar, serta newspaper dalam bahasa Inggris; gunakan kembali nomina Inggris yang sudah ada. Tambahkan contoh membaca per bahasa. Ganti gambar buku yang membingungkan dengan buku tertutup yang konsisten dan simpan bukti penolakan di luar konten runtime.
 
 ## Memeriksa Pemahaman
 
-Tambahkan understand dan わかる dengan empat ikatan bentuk Inggris dan tujuh bentuk Jepang. Pertahankan understood yang tidak beraturan dan jangan otomatis membuat bentuk potensial untuk makna statif Jepang. Tambahkan dua contoh Inggris dan satu contoh bentuk dasar Jepang. Dua draf kalimat Jepang dengan bentuk terpilih tetap di luar konten runtime karena pengimpor host membandingkan label dasar; audio persis dan bukti pemeriksaan dipertahankan. Semua gambar asli baru dan JPEG akhir diperiksa secara visual; pemeriksaan pendengaran belum dilakukan.
+Tambahkan understand dan わかる dengan ikatan bentuk Inggris dan bentuk Jepang. Pertahankan understood yang tidak beraturan dan jangan otomatis membuat bentuk potensial untuk makna statif Jepang. Tambahkan contoh Inggris dan contoh bentuk dasar Jepang. Draf kalimat Jepang dengan bentuk terpilih tetap di luar konten runtime karena pengimpor host membandingkan label dasar; audio persis dan bukti pemeriksaan dipertahankan. Semua gambar asli baru dan JPEG akhir diperiksa secara visual; pemeriksaan pendengaran belum dilakukan.
 
 ## Barang Pribadi
 
-Tambahkan dompet, kamera, kacamata, dan jam tangan dengan makna terlokalisasi, catatan penggunaan, serta empat contoh kontekstual per bahasa. Jelaskan bentuk jamak glasses dan bacaan Jepang うでどけい. Periksa setiap gambar asli dan JPEG akhir; ganti rancangan jam yang kehilangan satu penanda jam dan simpan bukti penolakannya. Pertahankan suara yang ditetapkan dan masukan asli Jepang; pemeriksaan pendengaran belum dilakukan.
+Tambahkan dompet, kamera, kacamata, dan jam tangan dengan makna terlokalisasi, catatan penggunaan, serta contoh kontekstual per bahasa. Jelaskan bentuk jamak glasses dan bacaan Jepang うでどけい. Periksa setiap gambar asli dan JPEG akhir; ganti rancangan jam yang kehilangan penanda jam dan simpan bukti penolakannya. Pertahankan suara yang ditetapkan dan masukan asli Jepang; pemeriksaan pendengaran belum dilakukan.
 
 ## Bersiap-siap
 
-Tambahkan empat contoh persiapan yang ditulis secara mandiri per bahasa tentang kepemilikan, dokumen perjalanan, lokasi, dan rencana. Gunakan kembali PCM unsur secara persis dan kosakata yang ada tanpa duplikasi. Dua rancangan kalimat pemahaman sopan Jepang tetap ditunda dan kode host tidak diubah.
+Tambahkan contoh persiapan yang ditulis secara mandiri per bahasa tentang kepemilikan, dokumen perjalanan, lokasi, dan rencana. Gunakan kembali PCM unsur secara persis dan kosakata yang ada tanpa duplikasi. Rancangan kalimat pemahaman sopan Jepang tetap ditunda dan kode host tidak diubah.
 
 ## Memberi dan Menerima
 
-Tambahkan give/receive dan あげる/もらう dengan dua ilustrasi yang diperiksa secara visual dan empat contoh yang ditulis secara mandiri per bahasa. Jelaskan peran subjek, に untuk penerima, から untuk sumber, serta perbedaan memberi dan mengangkat. Rekam delapan ikatan bentuk Inggris dan enam belas Jepang, termasuk gave/given, もらわない, dan bentuk dengan っ kecil. Pertahankan PCM unsur secara persis dan masukan asli Jepang. Ilustrasi dan catatan menunjukkan subjek berbaju biru; pemeriksaan pendengaran belum dilakukan. Dua rancangan kalimat pemahaman sopan yang ditunda tetap tidak berubah.
+Tambahkan give/receive dan あげる/もらう dengan ilustrasi yang diperiksa secara visual dan contoh yang ditulis secara mandiri per bahasa. Jelaskan peran subjek, に untuk penerima, から untuk sumber, serta perbedaan memberi dan mengangkat. Rekam ikatan bentuk Inggris dan Jepang, termasuk gave/given, もらわない, dan bentuk dengan っ kecil. Pertahankan PCM unsur secara persis dan masukan asli Jepang. Ilustrasi dan catatan menunjukkan subjek berbaju biru; pemeriksaan pendengaran belum dilakukan. Rancangan kalimat pemahaman sopan yang ditunda tetap tidak berubah.
 
 ## Kosakata wadah dan latihan
 
-Menambahkan botol, kotak, keranjang, dan amplop beserta makna lokal, catatan penggunaan, ilustrasi yang diperiksa, dan empat contoh. Kata bahasa Jepang untuk amplop mempertahankan kedua vokal panjang. Audio memakai suara yang ditetapkan dan PCM konstituen yang persis; pemeriksaan melalui pendengaran belum dilakukan sesuai pengecualian yang tercatat.
+Menambahkan botol, kotak, keranjang, dan amplop beserta makna lokal, catatan penggunaan, ilustrasi yang diperiksa, dan contoh. Kata bahasa Jepang untuk amplop mempertahankan kedua vokal panjang. Audio memakai suara yang ditetapkan dan PCM konstituen yang persis; pemeriksaan melalui pendengaran belum dilakukan sesuai pengecualian yang tercatat.
 
 ## Alat tulis dan latihan
 
-Menambahkan penghapus, gunting, selotip, dan stapler dengan ilustrasi yang diperiksa serta empat contoh. Catatan penggunaan dan hubungan kalimat mempertahankan bentuk jamak scissors, tape yang tidak dapat dihitung, vokal panjang テープ, dan ejaan ホチキス. Contoh menerima dalam bahasa Jepang mempertahankan guru sebagai sumber. Audio konstituen yang persis diperiksa secara teknis; pemeriksaan pendengaran belum dilakukan sesuai pengecualian yang tercatat.
+Menambahkan penghapus, gunting, selotip, dan stapler dengan ilustrasi yang diperiksa serta contoh. Catatan penggunaan dan hubungan kalimat mempertahankan bentuk jamak scissors, tape yang tidak dapat dihitung, vokal panjang テープ, dan ejaan ホチキス. Contoh menerima dalam bahasa Jepang mempertahankan guru sebagai sumber. Audio konstituen yang persis diperiksa secara teknis; pemeriksaan pendengaran belum dilakukan sesuai pengecualian yang tercatat.
 
 ## Verba posisi tubuh dan indeks audio terverifikasi
 
-Menambahkan sit dan stand, bentuk tidak beraturan bahasa Inggris dan godan bahasa Jepang, ilustrasi yang diperiksa, serta empat contoh. Catatan membedakan perubahan posisi dari keadaan berkelanjutan dalam bahasa Jepang. Indeks tujuan ber-hash memungkinkan pertumbuhan konten dengan batas ukuran berkas tetap. Pemeriksaan pendengaran belum dilakukan sesuai pengecualian tercatat.
+Menambahkan sit dan stand, bentuk tidak beraturan bahasa Inggris dan godan bahasa Jepang, ilustrasi yang diperiksa, serta contoh. Catatan membedakan perubahan posisi dari keadaan berkelanjutan dalam bahasa Jepang. Indeks tujuan ber-hash memungkinkan pertumbuhan konten dengan batas ukuran berkas tetap. Pemeriksaan pendengaran belum dilakukan sesuai pengecualian tercatat.
 
 ## Kegiatan sehari-hari di rumah
 
-Menambahkan empat contoh yang ditulis satu per satu tentang mencuci piring, membaca, duduk di meja, dan barang pribadi. Contoh bahasa Jepang juga melatih memberi sup kepada teman serta menyatakan letak kunci di dalam kotak. Kosakata dan rekaman penyusun yang persis dipakai kembali; tidak diperlukan gambar atau permintaan penyedia baru.
+Menambahkan contoh yang ditulis secara individual tentang mencuci piring, membaca, duduk di meja, dan barang pribadi. Contoh bahasa Jepang juga melatih memberi sup kepada teman serta menyatakan letak kunci di dalam kotak. Kosakata dan rekaman penyusun yang persis dipakai kembali; tidak diperlukan gambar atau permintaan penyedia baru.
 
 ## Satwa liar dalam konteks
 
-Tambahkan rubah, beruang, monyet, dan gajah dengan empat contoh berbeda tentang habitat, gerakan, pengamatan, dan ukuran serta satu set kartu awal. Setiap ilustrasi asli dan JPEG akhir telah diperiksa secara visual. Makna dan catatan tentang contoh spesies, makna nomina, dan vokal panjang pada ぞう tersedia dalam empat bahasa. Semua pilihan audio sebelumnya dibandingkan byte demi byte saat inventaris bertambah. Rekaman baru tetap ditandai belum diperiksa melalui pendengaran.
+Tambahkan rubah, beruang, monyet, dan gajah dengan contoh berbeda tentang habitat, gerakan, pengamatan, dan ukuran serta set kartu awal. Setiap ilustrasi asli dan JPEG akhir telah diperiksa secara visual. Makna dan catatan tentang contoh spesies, makna nomina, dan vokal panjang pada ぞう tersedia dalam empat bahasa. Semua pilihan audio sebelumnya dibandingkan byte demi byte saat inventaris bertambah. Rekaman baru tetap ditandai belum diperiksa melalui pendengaran.
 
 ## Mendorong dan menarik dalam konteks
 
-Menambahkan push dan pull dengan akhiran beraturan bahasa Inggris dan bentuk godan su/ku bahasa Jepang yang diperiksa, ilustrasi tindakan yang ditinjau, serta empat contoh berbeda. Contoh mencakup permintaan, kejadian lampau, tindakan berlangsung, cara, pertentangan, dan tindakan nanti. Setiap bahasa mendapat satu set kartu. Rekaman unsur yang tepat dan bukti sumber disimpan; pemeriksaan pendengaran belum dilakukan.
+Menambahkan push dan pull dengan akhiran beraturan bahasa Inggris dan bentuk godan su/ku bahasa Jepang yang diperiksa, ilustrasi tindakan yang ditinjau, serta contoh berbeda. Contoh mencakup permintaan, kejadian lampau, tindakan berlangsung, cara, pertentangan, dan tindakan nanti. Setiap bahasa mendapat set kartu. Rekaman unsur yang tepat dan bukti sumber disimpan; pemeriksaan pendengaran belum dilakukan.
 
 ## Menjelaskan dan membandingkan panjang
 
-Menambahkan long dan short dengan rekaman komparatif dan superlatif bahasa Inggris, bentuk adjektiva i bahasa Jepang, serta ilustrasi perbandingan panjang yang diperiksa. Empat contoh berbeda mencakup deskripsi, benda yang dibutuhkan atau dibeli, perbandingan atau derajat, dan lokasi. Catatan membedakan panjang dari tinggi badan serta mempertahankan konsonan pada longer dan longest. Rekaman unsur dan makna empat bahasa dapat ditelusuri; pendengaran belum diperiksa.
+Menambahkan long dan short dengan rekaman komparatif dan superlatif bahasa Inggris, bentuk adjektiva i bahasa Jepang, serta ilustrasi perbandingan panjang yang diperiksa. Contoh berbeda mencakup deskripsi, benda yang dibutuhkan atau dibeli, perbandingan atau derajat, dan lokasi. Catatan membedakan panjang dari tinggi badan serta mempertahankan konsonan pada longer dan longest. Rekaman unsur dan makna empat bahasa dapat ditelusuri; pendengaran belum diperiksa.
 
 ## Permintaan maaf dan sambutan
 
-Menambahkan Sorry dan Welcome serta ごめんなさい dan ようこそ dengan adegan sosial yang diperiksa dan dua contoh singkat per bahasa. Catatan membedakan sambutan kedatangan dari jawaban atas terima kasih serta menjelaskan nada akrab contoh permintaan maaf Jepang. Bacaan lengkap mempertahankan ん dan vokal panjang pada よう. Audio memakai rekaman unsur yang tepat; pendengaran belum diperiksa.
+Menambahkan Sorry dan Welcome serta ごめんなさい dan ようこそ dengan adegan sosial yang diperiksa dan contoh singkat per bahasa. Catatan membedakan sambutan kedatangan dari jawaban atas terima kasih serta menjelaskan nada akrab contoh permintaan maaf Jepang. Bacaan lengkap mempertahankan ん dan vokal panjang pada よう. Audio memakai rekaman unsur yang tepat; pendengaran belum diperiksa.
 
 ## Memotong dan melipat bahan
 
-Menambahkan cut dan fold dengan rekaman bentuk Inggris dan Jepang yang tepat, ilustrasi tindakan yang dikoreksi dan diperiksa, serta empat contoh berbeda. Bahasa Inggris juga mendapat paper sebagai nomina bahan; bahasa Jepang memakai kembali kartu 紙. Catatan membedakan 切る godan dari 着る ichidan serta 折る untuk melipat kertas dari makna lain. Bentuk cut yang sama memakai audio tersimpan. Bukti sumber dan gambar yang ditolak disimpan; pendengaran belum diperiksa.
+Menambahkan cut dan fold dengan rekaman bentuk Inggris dan Jepang yang tepat, ilustrasi tindakan yang dikoreksi dan diperiksa, serta contoh berbeda. Bahasa Inggris juga mendapat paper sebagai nomina bahan; bahasa Jepang memakai kembali kartu 紙. Catatan membedakan 切る godan dari 着る ichidan serta 折る untuk melipat kertas dari makna lain. Bentuk cut yang sama memakai audio tersimpan. Bukti sumber dan gambar yang ditolak disimpan; pendengaran belum diperiksa.
 
 ## Persiapan makanan dan percakapan cuaca
 
-Menambahkan delapan contoh yang ditinjau satu per satu dan dua dek latihan dengan kosakata yang sudah ada serta rekaman unsur tersimpan yang persis. Latihan makanan mencakup mencuci, memotong, menggabungkan bahan dan mencari kentang; latihan cuaca mencakup hujan, payung, deskripsi dan kesukaan musim. Bahasa Inggris memakai bentuk cuts yang tepat, sedangkan bahasa Jepang mempertahankan bacaan lengkap dan pelafalan partikel. Tidak ada kosakata baru, ilustrasi baru atau permintaan penyedia yang dihitung. Sumber dan bukti setiap komposisi disimpan; pendengaran belum diperiksa.
+Menambahkan contoh yang ditinjau secara individual dan dek latihan dengan kosakata yang sudah ada serta rekaman unsur tersimpan yang persis. Latihan makanan mencakup mencuci, memotong, menggabungkan bahan dan mencari kentang; latihan cuaca mencakup hujan, payung, deskripsi dan kesukaan musim. Bahasa Inggris memakai bentuk cuts yang tepat, sedangkan bahasa Jepang mempertahankan bacaan lengkap dan pelafalan partikel. Tidak ada kosakata baru, ilustrasi baru atau permintaan penyedia yang dihitung. Sumber dan bukti setiap komposisi disimpan; pendengaran belum diperiksa.
 
 ## Lebar dan ruang yang tersedia
 
-Menambahkan wide dan narrow serta ひろい dan せまい dengan empat ilustrasi jembatan yang diperiksa dan empat contoh kontekstual per bahasa. Bahasa Inggris mencakup wider/widest dan narrower/narrowest; bahasa Jepang mencakup bentuk adverbial, negatif dan lampau dengan kana lengkap serta っ kecil. Catatan membedakan lebar dan ruang dari panjang. Audio unsur yang tepat, gambar asli, PCM dan sumber disimpan; pendengaran belum diperiksa.
+Menambahkan wide dan narrow serta ひろい dan せまい dengan ilustrasi jembatan yang diperiksa dan contoh kontekstual per bahasa. Bahasa Inggris mencakup wider/widest dan narrower/narrowest; bahasa Jepang mencakup bentuk adverbial, negatif dan lampau dengan kana lengkap serta っ kecil. Catatan membedakan lebar dan ruang dari panjang. Audio unsur yang tepat, gambar asli, PCM dan sumber disimpan; pendengaran belum diperiksa.
 
 ## Di dalam dan di luar
 
-Menambahkan inside/outside sebagai adverbia Inggris dan なか/そと sebagai nomina tempat Jepang, dengan adegan wadah yang diperiksa dan empat contoh per bahasa. Contoh Jepang membedakan の untuk tempat acuan, に dengan いる/ある untuk keberadaan, serta で untuk kegiatan. Kana menghindari bacaan ちゅう yang tidak dimaksud untuk 中. Gambar asli, PCM suara yang ditetapkan dan komposisi kalimat tepat disimpan; pendengaran belum diperiksa.
+Menambahkan inside/outside sebagai adverbia Inggris dan なか/そと sebagai nomina tempat Jepang, dengan adegan wadah yang diperiksa dan contoh per bahasa. Contoh Jepang membedakan の untuk tempat acuan, に dengan いる/ある untuk keberadaan, serta で untuk kegiatan. Kana menghindari bacaan ちゅう yang tidak dimaksud untuk 中. Gambar asli, PCM suara yang ditetapkan dan komposisi kalimat tepat disimpan; pendengaran belum diperiksa.
 
 ## Kedalaman
 
-Menambahkan deep dan shallow serta ふかい dan あさい dengan empat ilustrasi wadah yang diperiksa dan empat contoh per bahasa. Bentuk perbandingan Inggris serta bentuk adverbial, negatif dan lampau Jepang memakai unsur PCM yang tepat. Sumber kamus, gambar asli dan bukti pemeriksaan teknis audio disimpan; pendengaran belum diperiksa.
+Menambahkan deep dan shallow serta ふかい dan あさい dengan ilustrasi wadah yang diperiksa dan contoh per bahasa. Bentuk perbandingan Inggris serta bentuk adverbial, negatif dan lampau Jepang memakai unsur PCM yang tepat. Sumber kamus, gambar asli dan bukti pemeriksaan teknis audio disimpan; pendengaran belum diperiksa.
 
 ## Tingkat cahaya
 
-Menambahkan bright dan dark serta あかるい dan くらい dengan empat ilustrasi ruangan yang diperiksa dan empat contoh per bahasa. Catatan membedakan pencahayaan dari warna, kecerdasan dan kepribadian. Bentuk perbandingan Inggris serta bentuk adverbial, negatif dan lampau Jepang mempertahankan rekaman yang tepat. Sumber, gambar asli dan PCM disimpan; pendengaran belum diperiksa.
+Menambahkan bright dan dark serta あかるい dan くらい dengan ilustrasi ruangan yang diperiksa dan contoh per bahasa. Catatan membedakan pencahayaan dari warna, kecerdasan dan kepribadian. Bentuk perbandingan Inggris serta bentuk adverbial, negatif dan lampau Jepang mempertahankan rekaman yang tepat. Sumber, gambar asli dan PCM disimpan; pendengaran belum diperiksa.
 
 ## Syal dan sarung tangan
 
-Menambahkan scarf/glove dan マフラー/てぶくろ dengan empat gambar yang diperiksa serta empat contoh per bahasa. Scarves/gloves memakai rekaman jamak yang tepat. Catatan membedakan syal dari peredam knalpot dan menjelaskan jumlah serta cakupan mitten dalam bahasa Jepang. Sumber, gambar asli dan PCM disimpan; pendengaran belum diperiksa.
+Menambahkan scarf/glove dan マフラー/てぶくろ dengan gambar yang diperiksa serta contoh per bahasa. Scarves/gloves memakai rekaman jamak yang tepat. Catatan membedakan syal dari peredam knalpot dan menjelaskan jumlah serta cakupan mitten dalam bahasa Jepang. Sumber, gambar asli dan PCM disimpan; pendengaran belum diperiksa.
 
 ## Bahan keras dan lunak
 
-Menambahkan hard/soft dan かたい/やわらかい dengan empat gambar tekanan yang diperiksa serta empat contoh per bahasa. Makna fisik dibedakan dari kesulitan, volume dan kepribadian. Bentuk perbandingan serta infleksi adjektiva-i mempertahankan rekaman tepat dan pangkal lengkap. Sumber, gambar asli dan PCM disimpan; pendengaran belum diperiksa.
+Menambahkan hard/soft dan かたい/やわらかい dengan gambar tekanan yang diperiksa serta contoh per bahasa. Makna fisik dibedakan dari kesulitan, volume dan kepribadian. Bentuk perbandingan serta infleksi adjektiva-i mempertahankan rekaman tepat dan pangkal lengkap. Sumber, gambar asli dan PCM disimpan; pendengaran belum diperiksa.
 
 ## Bola dan raket
 
-Menambahkan ball/racket dan ボール/ラケット dengan empat gambar peralatan yang diperiksa dan empat contoh per bahasa. Catatan memilih makna olahraga, membedakan ボール dari ボウル, serta mempertahankan vokal panjang dan っ kecil. Contoh Inggris memakai rekaman jamak yang tepat; contoh Jepang melatih memberi dan menerima. Sumber, gambar asli dan PCM disimpan; pendengaran belum diperiksa.
+Menambahkan ball/racket dan ボール/ラケット dengan gambar peralatan yang diperiksa dan contoh per bahasa. Catatan memilih makna olahraga, membedakan ボール dari ボウル, serta mempertahankan vokal panjang dan っ kecil. Contoh Inggris memakai rekaman jamak yang tepat; contoh Jepang melatih memberi dan menerima. Sumber, gambar asli dan PCM disimpan; pendengaran belum diperiksa.
 
 ## Kunjungan ke museum dan kebun binatang
 
-Menambahkan museum/zoo dan はくぶつかん/どうぶつえん dengan empat gambar tempat yang diperiksa dan empat contoh bervariasi per bahasa. Catatan menjelaskan cakupan museum dan mempertahankan bacaan lengkap. Museums/zoos memiliki rekaman tepat; contoh melatih tujuan, melihat dan menunggu teman. Sumber, gambar asli dan PCM disimpan; pendengaran belum diperiksa.
+Menambahkan museum/zoo dan はくぶつかん/どうぶつえん dengan gambar tempat yang diperiksa dan contoh bervariasi per bahasa. Catatan menjelaskan cakupan museum dan mempertahankan bacaan lengkap. Museums/zoos memiliki rekaman tepat; contoh melatih tujuan, melihat dan menunggu teman. Sumber, gambar asli dan PCM disimpan; pendengaran belum diperiksa.
 
 ## Surat dan kartu pos
 
-Menambahkan letter/postcard dan てがみ/はがき dengan empat gambar yang diperiksa, delapan contoh dan dua bentuk jamak Inggris yang tepat. Catatan membedakan surat dari huruf alfabet dan mempertahankan が bersuara. Sumber, gambar asli dan PCM unsur yang tepat disimpan. Pendengaran belum diperiksa.
+Menambahkan letter/postcard dan てがみ/はがき dengan gambar yang diperiksa, contoh dan bentuk jamak Inggris yang tepat. Catatan membedakan surat dari huruf alfabet dan mempertahankan が bersuara. Sumber, gambar asli dan PCM unsur yang tepat disimpan. Pendengaran belum diperiksa.
 
 ## Mengirim dan membawa
 
-Menambahkan send/carry dan おくる/はこぶ dengan empat gambar yang diperiksa, delapan contoh dan 24 ikatan bentuk gramatikal tepat. Sent dan carried berbagi rekaman lampau dan past participle; bentuk Jepang mempertahankan っ kecil versus んだ/んで. Dua gambar amplop yang salah ditolak dan diperbaiki, dengan bukti disimpan. PCM kalimat cocok persis dengan unsurnya. Pendengaran belum diperiksa.
+Menambahkan send/carry dan おくる/はこぶ dengan gambar yang diperiksa, contoh dan ikatan bentuk gramatikal tepat. Sent dan carried berbagi rekaman lampau dan past participle; bentuk Jepang mempertahankan っ kecil versus んだ/んで. Gambar amplop yang salah ditolak dan diperbaiki, dengan bukti disimpan. PCM kalimat cocok persis dengan unsurnya. Pendengaran belum diperiksa.
 
 ## Mengirim dan membawa dalam konteks
 
-Memperluas dek Mengirim dan Membawa yang ada dari enam menjadi sepuluh kartu per bahasa. Delapan contoh baru melatih tindakan lampau dan berlangsung, penerima, sumber, koordinasi, teman dan tujuan. ID, nama dan urutan kartu lama dipertahankan; tanpa dek atau gambar baru. Audio memakai ulang PCM unsur dengan suara yang disetujui tanpa biaya generasi. Pendengaran belum diperiksa.
+Memperluas dek Mengirim dan Membawa yang ada dengan latihan kontekstual. Contoh baru melatih tindakan lampau dan berlangsung, penerima, sumber, koordinasi, teman dan tujuan. ID, nama dan urutan kartu lama dipertahankan; tanpa dek atau gambar baru. Audio memakai ulang PCM unsur dengan suara yang disetujui tanpa biaya generasi. Pendengaran belum diperiksa.
 
 ## Gunakan struktur konten yang ada
 

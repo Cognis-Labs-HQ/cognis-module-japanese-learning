@@ -4,12 +4,7 @@ Modul Belajar Bahasa Jepang memasang data pembelajaran bahasa Jepang deklaratif 
 
 ## Konten dalam paket
 
-| Kategori                     | Jumlah |
-| ---------------------------- | ------ |
-| Dek awal                     | 76     |
-| Kartu kosakata yang terlihat | 275    |
-| Kalimat                      | 297    |
-| Ilustrasi kosakata           | 275    |
+Paket menyediakan panduan menulis, kosakata bertema, contoh tertaut, ilustrasi, dan dek awal. Konten serta inventaris media dalam paket menjadi sumber acuan ketersediaan.
 
 ## Penggunaan
 
@@ -71,7 +66,7 @@ Peran resolver kini hanya dipakai untuk komposisi sejati: bacaan kanji, ejaan ka
 
 ## Tabel kana lengkap
 
-Selain seluruh 46 entri gojūon dasar dan 25 bentuk dakuten atau handakuten per aksara, paket memuat kana kecil, seluruh rangkaian yōon standar, serta geminasi sokuon umum. Contohnya mencakup `ひゃ`, `しゅ`, `じゃ`, dan `って`, beserta padanan katakananya.
+Selain seluruh entri gojūon dasar dan bentuk dakuten atau handakuten per aksara, paket memuat kana kecil, seluruh rangkaian yōon standar, serta geminasi sokuon umum. Contohnya mencakup `ひゃ`, `しゅ`, `じゃ`, dan `って`, beserta padanan katakananya.
 
 ## Penempatan varian dinamis
 
@@ -245,7 +240,7 @@ Kanji dengan satu pelafalan menaut langsung ke Kana atomik berurutan. Kanji deng
 
 ## Batch lokasi dan cara yang ditinjau
 
-Batch pemula yang ditinjau menambahkan `ここ`, `そこ`, `どこ`, `いる`, `ある`, `きれい`, `とても`, `ゆっくり`, dan `です`, serta delapan kalimat bervariasi tentang lokasi, keberadaan, pertanyaan, penampilan, dan cara. Setiap kata baru memiliki definisi terlokalisasi dan ejaan Kana berurutan; setiap kalimat memiliki makna terlokalisasi yang tepat, komposisi leksikal berurutan, dan jalur pelafalan tersembunyi yang lengkap.
+Batch pemula yang ditinjau menambahkan `ここ`, `そこ`, `どこ`, `いる`, `ある`, `きれい`, `とても`, `ゆっくり`, dan `です`, serta kalimat bervariasi tentang lokasi, keberadaan, pertanyaan, penampilan, dan cara. Setiap kata baru memiliki definisi terlokalisasi dan ejaan Kana berurutan; setiap kalimat memiliki makna terlokalisasi yang tepat, komposisi leksikal berurutan, dan jalur pelafalan tersembunyi yang lengkap.
 
 ## Pembersihan Penghapusan Instalasi yang Destruktif
 
@@ -313,7 +308,7 @@ Skema menentukan slug Explore `kana`, `kanji`, `vocabulary`, dan `sentences` di 
 
 ## Dek Kartu Belajar Awal
 
-Penyedia Jepang mendeklarasikan enam dek awal: Dasar Hiragana (46), Dasar Katakana (46), Kanji Sehari-hari (10), Kata Jepang Pertama (9), Verba Jepang Sehari-hari (8) dan Kalimat Jepang Pertama (12). Kunci stabil, nama empat bahasa, ID skema dan ID rekaman terlihat memungkinkan Cognis menyelesaikan ID Library kanonis. Penelusuran, favorit, berbagi dan kemajuan dikelola Cognis; modul tidak membuat dek pengguna atau mengakses basis data host.
+Penyedia Jepang mendeklarasikan dek awal: Dasar Hiragana, Dasar Katakana, Kanji Sehari-hari, Kata Jepang Pertama, Verba Jepang Sehari-hari dan Kalimat Jepang Pertama. Kunci stabil, nama empat bahasa, ID skema dan ID rekaman terlihat memungkinkan Cognis menyelesaikan ID Library kanonis. Penelusuran, favorit, berbagi dan kemajuan dikelola Cognis; modul tidak membuat dek pengguna atau mengakses basis data host.
 
 ## Perbaikan tinjauan
 

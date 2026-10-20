@@ -2,33 +2,37 @@
 
 **Feature-Zweig:** `feature-expand-themed-practice`
 
-## Einheitliche Lokalisierung und veröffentlichte Inhaltszahlen
+## Dauerhafte Inhaltsdokumentation
 
-Definitionsschlüssel verwenden kleingeschriebene, durch Punkte getrennte Endungen; Modulpräfixe und Datensatz-IDs bleiben unverändert. Alle vier Sprachdateien werden synchron gehalten, jeder Definitionsverweis wird aufgelöst und doppelte oder ungültige Schlüssel werden abgewiesen. README und Integrationsanleitung nennen die tatsächlichen Zahlen für Decks, Vokabeln, Sätze und Illustrationen und beschreiben das zweistufige Aufnahmeverzeichnis einheitlich. Jede abspielbare Karte und gewählte Form benötigt eine gebündelte Aufnahme, unabhängig von der Liste fehlender Aufnahmen.
+Zeitabhängige Bestandszahlen und erzeugte Inventartabellen in lokalisierten READMEs, Integrationsanleitungen und diesem Branch-Changelog durch qualitative Beschreibungen ersetzen. Technische Grenzen, Formatverträge und Commit-Nachweise bleiben erhalten. Dokumentationstests verhindern Bestandszahlen, ohne statische Dokumente an den wachsenden Paketbestand zu koppeln.
+
+## Einheitliche Lokalisierung und Inhaltsbeschreibungen
+
+Definitionsschlüssel verwenden kleingeschriebene, durch Punkte getrennte Endungen; Modulpräfixe und Datensatz-IDs bleiben unverändert. Alle vier Sprachdateien werden synchron gehalten, jeder Definitionsverweis wird aufgelöst und doppelte oder ungültige Schlüssel werden abgewiesen. README und Integrationsanleitung beschreiben die enthaltenen Lernmaterialien ohne Bestandszahlen und beschreiben das zweistufige Aufnahmeverzeichnis einheitlich. Jede abspielbare Karte und gewählte Form benötigt eine gebündelte Aufnahme, unabhängig von der Liste fehlender Aufnahmen.
 
 ## Vollständige Audioabdeckung der ergänzenden Kanji
 
-Fünf Aufnahmen für 帽（ぼう）, 抵（てい）, 腹（はら）, 飯（はん） und 鶏（とり） mit der vorgesehenen japanischen Stimme ergänzen. Bestehende Medien und Aufnahmeherkunft bleiben erhalten. Geprüft werden die verfassten Lesungen, Quellprüfsummen, das PCM-Format, nicht stumme Ausgabe, Spitzenpegel und Wiedergabezuordnungen. Eine Hörprüfung ist weiterhin nicht möglich, da diese Umgebung keine Audioeingabe unterstützt. Keine abspielbare Karte bleibt ohne Aufnahme.
+Aufnahmen für 帽（ぼう）, 抵（てい）, 腹（はら）, 飯（はん） und 鶏（とり） mit der vorgesehenen japanischen Stimme ergänzen. Bestehende Medien und Aufnahmeherkunft bleiben erhalten. Geprüft werden die verfassten Lesungen, Quellprüfsummen, das PCM-Format, nicht stumme Ausgabe, Spitzenpegel und Wiedergabezuordnungen. Eine Hörprüfung ist weiterhin nicht möglich, da diese Umgebung keine Audioeingabe unterstützt. Die Verfügbarkeit von Aufnahmen ist im paketierten Verzeichnis dokumentiert.
 
 ## Schreibweisen des gesamten Wortschatzes prüfen
 
-Alle 275 sichtbaren Wörter einschließlich der zuvor ausgelassenen älteren Dateien prüfen. 33 Wortbezeichnungen und 38 Satzbezeichnungen korrigieren, darunter 顔, 頭, 電話, 葉書 und 時々. 92 übliche Kana-Schreibweisen mit einer Begründung je Wort in den Regressionstests beibehalten. 24 ergänzende Kanji mit dem vorhandenen Schema, belegten KANJIDIC-Lesungen und KanjiVG-Strichmustern hinzufügen. Für 19 dieser Karten vorhandene Aufnahmen wiederverwenden; 帽・抵・腹・飯・鶏 bleiben ausdrücklich ohne Aufnahme, da keine passende Komponentenaufnahme vorhanden ist. Sämtliche bestehenden IDs, Aussprachen, Audio- und Bildzuordnungen sowie alle 1.592 Mediendateien bytegenau erhalten. Ursprüngliche Aufnahme-Anfragen und vollständige Satzaufnahmen erhalten und die aktuellen Suchdaten der Satzkompositionen aktualisieren. Die Schreibprüfung auf jedes sichtbare Wort ausweiten, einschließlich eines negativen Tests für 顔/かお. Der Tageszähler zeigt 日, behält die Lesung か und seine Zählerbedeutung und verknüpft den vorhandenen Lesungsgraphen von 日.
+Alle sichtbaren Wörter einschließlich der zuvor ausgelassenen älteren Dateien prüfen. Wortbezeichnungen und Satzbezeichnungen korrigieren, darunter 顔, 頭, 電話, 葉書 und 時々. Übliche Kana-Schreibweisen mit einer Begründung je Wort in den Regressionstests beibehalten. Ergänzende Kanji mit dem vorhandenen Schema, belegten KANJIDIC-Lesungen und KanjiVG-Strichmustern hinzufügen. Vorhandene Aufnahmen bei übereinstimmenden Lesungen wiederverwenden und fehlende Aufnahmen ausdrücklich dokumentieren. Sämtliche bestehenden IDs, Aussprachen, Audio- und Bildzuordnungen sowie alle Mediendateien bytegenau erhalten. Ursprüngliche Aufnahme-Anfragen und vollständige Satzaufnahmen erhalten und die aktuellen Suchdaten der Satzkompositionen aktualisieren. Die Schreibprüfung auf jedes sichtbare Wort ausweiten, einschließlich eines negativen Tests für 顔/かお. Der Tageszähler zeigt 日, behält die Lesung か und seine Zählerbedeutung und verknüpft den vorhandenen Lesungsgraphen von 日.
 
 ## Audioverknüpfungen der ergänzenden Karten vervollständigen
 
-45 bereits erzeugte japanische Aufnahmen für die verbleibenden 47 ergänzenden Karten bündeln, mit der ausgewählten ElevenLabs-Stimme und den exakt hinterlegten Kana-Lesungen. Vorhandene Medien bleiben unverändert; neue Aufnahmen erhalten die etablierte Randstille und Pegelbegrenzung. Aufnahmeanfragen, Quellprüfsummen und Validierungsmetadaten werden in den bestehenden Verzeichnissen gespeichert. Automatische Audio- und Verknüpfungsprüfungen bestanden; eine Hörprüfung war nicht verfügbar. Das Verzeichnis der Karten ohne Aufnahme ist leer.
+Bereits erzeugte japanische Aufnahmen für die verbleibenden ergänzenden Karten bündeln, mit der ausgewählten ElevenLabs-Stimme und den exakt hinterlegten Kana-Lesungen. Vorhandene Medien bleiben unverändert; neue Aufnahmen erhalten die etablierte Randstille und Pegelbegrenzung. Aufnahmeanfragen, Quellprüfsummen und Validierungsmetadaten werden in den bestehenden Verzeichnissen gespeichert. Automatische Audio- und Verknüpfungsprüfungen bestanden; eine Hörprüfung war nicht verfügbar. Das Verzeichnis dokumentiert die Verfügbarkeit der Aufnahmen.
 
 ## Vorhandene Komponentenaufnahmen wiederverwenden
 
-94 ergänzende Kanji- und Lesungskarten mit 72 vorhandenen Aufnahmen verknüpfen, deren Aussprache den hinterlegten Lesungen entspricht. Alle Audiodaten und ursprünglichen Aufnahmeanfragen bleiben unverändert. 47 Karten bleiben im mitgelieferten Verzeichnis ausdrücklich ohne Aufnahme.
+Ergänzende Kanji- und Lesungskarten mit vorhandenen Aufnahmen verknüpfen, deren Aussprache den hinterlegten Lesungen entspricht. Alle Audiodaten und ursprünglichen Aufnahmeanfragen bleiben unverändert. Fehlende Aufnahmen werden im mitgelieferten Verzeichnis ausdrücklich dokumentiert.
 
 ## Wortschatzkonventionen wiederherstellen
 
-Das hinzugefügte Feld Verwendung und Beispiele samt Absätzen entfernen, Wortart-Tags wiederherstellen und 114 der 173 neuen Wörter auf geprüfte Kanji-Schreibweisen umstellen; übliche Kana-Schreibweisen bleiben erhalten. Bestehende Aussprachekarten beibehalten und neuen Aussprachekarten direkte Bedeutungsverknüpfungen geben. Ergänzende Kanji- und Lesungskarten verwenden das ursprüngliche Schema, KanjiVG-Strichmuster und belegte KANJIDIC-Lesungen. Alle bestehenden Karten-IDs, Mediendateien und Aufnahmeanfragen bleiben unverändert; Beispieltitel, Flexionsschreibweisen und Audio-Suchdaten werden angepasst. Ergänzende Karten ohne Aufnahme sind ausdrücklich als nicht verfügbar aufgeführt. Strenge ursprüngliche Feldverträge und negative Regressionstests prüfen Wortschatz, Schreibweise, Lesungslinks, Sichtbarkeit und Stapelzuordnung.
+Das hinzugefügte Feld Verwendung und Beispiele samt Absätzen entfernen, Wortart-Tags wiederherstellen und neue Wörter auf geprüfte Kanji-Schreibweisen umstellen; übliche Kana-Schreibweisen bleiben erhalten. Bestehende Aussprachekarten beibehalten und neuen Aussprachekarten direkte Bedeutungsverknüpfungen geben. Ergänzende Kanji- und Lesungskarten verwenden das ursprüngliche Schema, KanjiVG-Strichmuster und belegte KANJIDIC-Lesungen. Alle bestehenden Karten-IDs, Mediendateien und Aufnahmeanfragen bleiben unverändert; Beispieltitel, Flexionsschreibweisen und Audio-Suchdaten werden angepasst. Ergänzende Karten ohne Aufnahme sind ausdrücklich als nicht verfügbar aufgeführt. Strenge ursprüngliche Feldverträge und negative Regressionstests prüfen Wortschatz, Schreibweise, Lesungslinks, Sichtbarkeit und Stapelzuordnung.
 
 ## Im Zusammenhang üben
 
-Vier Startstapel zu Essen und Trinken, Reisen und Richtungen, verbindenden Ausdrücken sowie Menschen und Vorlieben ergänzen das Angebot. Sie ermöglichen gezieltes Üben mit 23 vorhandenen Ausdrücken und ihren verknüpften Bedeutungen, Kana-Lesungen und Bestandteilen.
+Startstapel zu Essen und Trinken, Reisen und Richtungen, verbindenden Ausdrücken sowie Menschen und Vorlieben ergänzen das Angebot. Sie ermöglichen gezieltes Üben mit vorhandenen Ausdrücken und ihren verknüpften Bedeutungen, Kana-Lesungen und Bestandteilen.
 
 ## Klarere Illustrationen
 
@@ -40,19 +44,19 @@ Lokalisierte Hinweise und Beispiele verdeutlichen die abgebildeten Bedeutungen v
 
 ## Reisewortschatz
 
-Zwölf bebilderte Reisewörter mit geprüften grammatischen Formen, acht aus verknüpften Wörtern aufgebaute Beispielsätze und zwei lokalisierte Übungsdecks ergänzen den Inhalt. Neue Reiseaufnahmen sind nicht enthalten.
+Bebilderte Reisewörter mit geprüften grammatischen Formen, aus verknüpften Wörtern aufgebaute Beispielsätze und lokalisierte Übungsdecks ergänzen den Inhalt. Neue Reiseaufnahmen sind nicht enthalten.
 
 ## Übungen zum Essen
 
-Sechs abwechslungsreiche Sätze zum Essen und ein Übungsdeck verwenden vorhandenen Wortschatz und unveränderte Wortaufnahmen. Die neuen Audiokombinationen sind technisch geprüft, aber nicht durch Anhören bestätigt.
+Abwechslungsreiche Sätze zum Essen und ein Übungsdeck verwenden vorhandenen Wortschatz und unveränderte Wortaufnahmen. Die neuen Audiokombinationen sind technisch geprüft, aber nicht durch Anhören bestätigt.
 
 ## Tägliche Abläufe
 
-Sechs Alltagsbeispiele und ein Übungsdeck behandeln Zeit, Ort, Begleitung und Richtung mit vorhandenem Wortschatz und unveränderten Wortaufnahmen.
+Alltagsbeispiele und ein Übungsdeck behandeln Zeit, Ort, Begleitung und Richtung mit vorhandenem Wortschatz und unveränderten Wortaufnahmen.
 
 ## Beim Einkaufen
 
-Sechs Einkaufsbeispiele und ein Übungsdeck behandeln Auswahl, Bedarf, Beschreibungen und Käufe. Audio wird nur aus vollständig vorhandenen passenden Wortaufnahmen zusammengesetzt; fehlende Aufnahmen sind ausdrücklich aufgeführt.
+Einkaufsbeispiele und ein Übungsdeck behandeln Auswahl, Bedarf, Beschreibungen und Käufe. Audio wird nur aus vollständig vorhandenen passenden Wortaufnahmen zusammengesetzt; fehlende Aufnahmen sind ausdrücklich aufgeführt.
 
 ## Bedeutungen der Reiseverben
 
@@ -64,111 +68,111 @@ Die freigegebenen Reisewörter und Formen werden mit den festgelegten Stimmen er
 
 ## Nächster Wortschatz vorbereitet
 
-Vier neue Zeitangaben für Anfänger sind mit Lesungen, übersetzten Bedeutungen, Kontextbeispielen und einem Deckentwurf vorbereitet. Sie bleiben außerhalb der Laufzeitinhalte, bis eigene Illustrationen erzeugt und visuell geprüft sind.
+Neue Zeitangaben für Anfänger sind mit Lesungen, übersetzten Bedeutungen, Kontextbeispielen und einem Deckentwurf vorbereitet. Sie bleiben außerhalb der Laufzeitinhalte, bis eigene Illustrationen erzeugt und visuell geprüft sind.
 
 ## Zeitangaben mit geprüften Medien
 
-Morgen, gestern, bald und später erscheinen mit vier visuell geprüften Illustrationen, Aufnahmen der festgelegten Stimme, vollständigen Lesungen, Kontextbeispielen und einem Vokabeldeck. Kalenderdaten, Ein-Minuten-Anzeigen und geordnete Handlungsszenen verdeutlichen die Zeitbezüge. Die Hörprüfung bleibt ausstehend.
+Morgen, gestern, bald und später erscheinen mit visuell geprüften Illustrationen, Aufnahmen der festgelegten Stimme, vollständigen Lesungen, Kontextbeispielen und einem Vokabeldeck. Kalenderdaten, Ein-Minuten-Anzeigen und geordnete Handlungsszenen verdeutlichen die Zeitbezüge. Die Hörprüfung bleibt ausstehend.
 
 ## Grundfarben und Vorlieben
 
-Rot, Blau, Grün und Gelb werden als Farbnomen ergänzt, jeweils mit visuell geprüfter Illustration, Aufnahme der festgelegten Stimme, vollständiger Lesung und übersetzten Anwendungsbeispielen. Vier Vorliebensätze pro Sprache verwenden unveränderte Wortaufnahmen, einschließlich der englischen Form likes. Ein gemeinsames Vokabel- und Satzdeck ermöglicht direktes Üben. Japanische Hinweise unterscheiden Farbnomen von Adjektivformen.
+Rot, Blau, Grün und Gelb werden als Farbnomen ergänzt, jeweils mit visuell geprüfter Illustration, Aufnahme der festgelegten Stimme, vollständiger Lesung und übersetzten Anwendungsbeispielen. Vorliebensätze pro Sprache verwenden unveränderte Wortaufnahmen, einschließlich der englischen Form likes. Ein gemeinsames Vokabel- und Satzdeck ermöglicht direktes Üben. Japanische Hinweise unterscheiden Farbnomen von Adjektivformen.
 
 ## Wetterwortschatz
 
-Vier illustrierte Wetternomen mit lokalisierten Bedeutungen, Aussprachehinweisen und einem Übungsstapel ergänzen. Alle acht Quellbilder und endgültigen Bilder beider Module wurden visuell geprüft; die widersprüchliche japanische Windszene wurde korrigiert. Aufnahmen bewahren exakte Anfragen und Quell-PCM; eine Hörprüfung steht aus.
+Illustrierte Wetternomen mit lokalisierten Bedeutungen, Aussprachehinweisen und einem Übungsstapel ergänzen. Alle Quellbilder und endgültigen Bilder beider Module wurden visuell geprüft; die widersprüchliche japanische Windszene wurde korrigiert. Aufnahmen bewahren exakte Anfragen und Quell-PCM; eine Hörprüfung steht aus.
 
 ## Richtungen im Kontext
 
-Links, rechts, Norden und Süden mit vier Ortsbeispielen und einem Übungsstapel ergänzen. Jedes Originalbild und endgültige Bild auf Blickrichtung, Kompassausrichtung und Beschriftung prüfen. Exakte Audiosegmente wiederverwenden und Nutzungsnachweise bewahren; die Hörprüfung steht aus.
+Links, rechts, Norden und Süden mit Ortsbeispielen und einem Übungsstapel ergänzen. Jedes Originalbild und endgültige Bild auf Blickrichtung, Kompassausrichtung und Beschriftung prüfen. Exakte Audiosegmente wiederverwenden und Nutzungsnachweise bewahren; die Hörprüfung steht aus.
 
 ## Wetterbeispiele und Zahl
 
-Vier Wetterbeispiele mit exakten PCM-Segmenten ergänzen. Das englische cloud bietet nun clouds mit geprüfter Lautschrift /klaʊdz/ und einer eigenen Pluralaufnahme. Japanische Beispiele bewahren natürliche Partikel und kontextabhängige Substantivzahl. Die Hörprüfung steht aus.
+Wetterbeispiele mit exakten PCM-Segmenten ergänzen. Das englische cloud bietet nun clouds mit geprüfter Lautschrift /klaʊdz/ und einer eigenen Pluralaufnahme. Japanische Beispiele bewahren natürliche Partikel und kontextabhängige Substantivzahl. Die Hörprüfung steht aus.
 
 ## Jahreszeiten und Aktivitäten
 
-Vier illustrierte Jahreszeiten, vier Aktivitätsbeispiele und einen gemischten Übungsstapel ergänzen. Spring als Jahreszeit und autumn/fall erklären und Bilder gemäßigter Jahreszeiten von weltweiten Klimaregeln unterscheiden. Geprüfte Kana-Lesungen und exakte Audiosegmente bewahren; die Hörprüfung steht aus.
+Illustrierte Jahreszeiten, Aktivitätsbeispiele und einen gemischten Übungsstapel ergänzen. Spring als Jahreszeit und autumn/fall erklären und Bilder gemäßigter Jahreszeiten von weltweiten Klimaregeln unterscheiden. Geprüfte Kana-Lesungen und exakte Audiosegmente bewahren; die Hörprüfung steht aus.
 
 ## Alltagskleidung
 
-Hemden, Alltagskleider, Socken und Röcke mit vier englischen Pluralformen, vier Kontextbeispielen je Modul und einem Kleidungsstapel ergänzen. Alle Quellbilder und endgültigen Bilder prüfen, kleine Kana und lange Vokale bewahren und exakte Audiosegmente zusammensetzen. Ein Regressionstest lehnt widersprüchliche Aufnahmebytes für denselben Abrufschlüssel einer Karte oder Form ab. Die Hörprüfung steht aus.
+Hemden, Alltagskleider, Socken und Röcke mit englischen Pluralformen, Kontextbeispielen je Modul und einem Kleidungsstapel ergänzen. Alle Quellbilder und endgültigen Bilder prüfen, kleine Kana und lange Vokale bewahren und exakte Audiosegmente zusammensetzen. Ein Regressionstest lehnt widersprüchliche Aufnahmebytes für denselben Abrufschlüssel einer Karte oder Form ab. Die Hörprüfung steht aus.
 
 ## Geschirr und Besteck
 
-Tassen, Teller, Löffel und Gabeln mit vier englischen Pluralformen, vier Beispielen je Modul und einem Themenstapel ergänzen. Alle Quellbilder und endgültigen Bilder sowie kleine Kana und lange Vokale prüfen; exakte PCM-Segmente und Aufnahmeherkunft bewahren. Pluraltests prüfen Schreibweise, IPA, Anbieteranfrage und Formzuordnung. Die Hörprüfung steht aus.
+Tassen, Teller, Löffel und Gabeln mit englischen Pluralformen, Beispielen je Modul und einem Themenstapel ergänzen. Alle Quellbilder und endgültigen Bilder sowie kleine Kana und lange Vokale prüfen; exakte PCM-Segmente und Aufnahmeherkunft bewahren. Pluraltests prüfen Schreibweise, IPA, Anbieteranfrage und Formzuordnung. Die Hörprüfung steht aus.
 
 ## Orte in der Stadt
 
-Bibliotheken, Krankenhäuser, Supermärkte und Restaurants mit geprüften Bedeutungen, vier englischen Pluralformen und einem Themenstapel ergänzen. Acht abwechslungsreiche Beispiele behandeln Lesen, Arbeit, Ortsfragen, geplante Wege, Einkaufen und Essen. Quellbilder und endgültige Bilder sowie Wörterbuchbedeutungen und Lesungen prüfen; exakte Audiosegmente bewahren. Die Hörprüfung steht aus.
+Bibliotheken, Krankenhäuser, Supermärkte und Restaurants mit geprüften Bedeutungen, englischen Pluralformen und einem Themenstapel ergänzen. Abwechslungsreiche Beispiele behandeln Lesen, Arbeit, Ortsfragen, geplante Wege, Einkaufen und Essen. Quellbilder und endgültige Bilder sowie Wörterbuchbedeutungen und Lesungen prüfen; exakte Audiosegmente bewahren. Die Hörprüfung steht aus.
 
 ## Tätigkeiten im Haushalt
 
-Waschen, Kochen, Reinigen und Trocknen mit vier geprüften Aktionsbildern je Modul, lokalisierten Hinweisen zu Bedeutung und Transitivität sowie einem Haushaltsstapel ergänzen. Sechzehn englische Formen mit zwölf gemeinsam genutzten Aufnahmen und zweiunddreißig japanische Formen samt Form- und Audiotests unterstützen. Acht abwechslungsreiche Beispiele nutzen exakte Audiosegmente. Englische Beispiele behandeln Gegenwart, Vergangenheit und Verlaufsformen. Japanische Beispiele verwenden wegen des Host-Imports Grundformen; alle zweiunddreißig Formen bleiben für die Transformationsübungen verfügbar. Die Hörprüfung steht aus.
+Waschen, Kochen, Reinigen und Trocknen mit geprüften Aktionsbildern je Modul, lokalisierten Hinweisen zu Bedeutung und Transitivität sowie einem Haushaltsstapel ergänzen. Englische Formen mit gemeinsam genutzten Aufnahmen und japanische Formen samt Form- und Audiotests unterstützen. Abwechslungsreiche Beispiele nutzen exakte Audiosegmente. Englische Beispiele behandeln Gegenwart, Vergangenheit und Verlaufsformen. Japanische Beispiele verwenden wegen des Host-Imports Grundformen; alle Formen bleiben für die Transformationsübungen verfügbar. Die Hörprüfung steht aus.
 
 ## Alltägliche Bedürfnisse
 
-Je Modul sechs Beispiele und einen Stapel zu Wasser, Besteck, Orten, Einkaufsplänen, Kochen und Körperpflege ergänzen. Exakte Audiosegmente ohne neue Generierungsanfragen oder Bilder wiederverwenden. Japanische Partikeln und englische Artikel im Kontext prüfen. Die Hörprüfung steht weiterhin aus.
+Je Modul Beispiele und einen Stapel zu Wasser, Besteck, Orten, Einkaufsplänen, Kochen und Körperpflege ergänzen. Exakte Audiosegmente ohne neue Generierungsanfragen oder Bilder wiederverwenden. Japanische Partikeln und englische Artikel im Kontext prüfen. Die Hörprüfung steht weiterhin aus.
 
 ## Körperpflege
 
-Seife, Handtuch, Zahnbürste und Zahnpasta mit vier geprüften Bildern je Modul, genauen Wortaufnahmen, zwei englischen Pluralaufnahmen und acht Beispielen ergänzen. Lokalisierte Hinweise erklären Zählbarkeit und japanische Lesungen. Bildzahlen und die aktuelle japanische Importgrenze dokumentieren; alle bisherigen Sätze und Flexionsaufnahmen bewahren. Die Hörprüfung steht aus.
+Seife, Handtuch, Zahnbürste und Zahnpasta mit geprüften Bildern je Modul, genauen Wortaufnahmen, englischen Pluralaufnahmen und Beispielen ergänzen. Lokalisierte Hinweise erklären Zählbarkeit und japanische Lesungen. Bildzahlen und die aktuelle japanische Importgrenze dokumentieren; alle bisherigen Sätze und Flexionsaufnahmen bewahren. Die Hörprüfung steht aus.
 
 ## Unterwegs
 
-Flugzeug, Boot, Taxi und Motorrad mit vier geprüften Bildern je Modul, vier englischen Pluralformen, acht natürlichen Beispielen und einem Verkehrsstapel ergänzen. Regionale englische Namen, japanische Langvokale, kleine Boote und die japanische Wortbildung オートバイ erklären. Festgelegte Stimmen und exakte Audiosegmente verwenden. Alle bisherigen Sätze und Flexionsaufnahmen bewahren. Die Hörprüfung steht aus.
+Flugzeug, Boot, Taxi und Motorrad mit geprüften Bildern je Modul, englischen Pluralformen, natürlichen Beispielen und einem Verkehrsstapel ergänzen. Regionale englische Namen, japanische Langvokale, kleine Boote und die japanische Wortbildung オートバイ erklären. Festgelegte Stimmen und exakte Audiosegmente verwenden. Alle bisherigen Sätze und Flexionsaufnahmen bewahren. Die Hörprüfung steht aus.
 
 ## Schulsachen
 
-Bleistift, Stift, Notizbuch und Lineal mit vier geprüften Bildern je Modul, vier englischen Pluralformen, acht natürlichen Beispielen und einem Schulsachenstapel ergänzen. Bedeutungen und japanische Lesungen prüfen. Alle bisherigen Sätze und Flexionsaufnahmen bleiben erhalten. Die Hörprüfung steht aus.
+Bleistift, Stift, Notizbuch und Lineal mit geprüften Bildern je Modul, englischen Pluralformen, natürlichen Beispielen und einem Schulsachenstapel ergänzen. Bedeutungen und japanische Lesungen prüfen. Alle bisherigen Sätze und Flexionsaufnahmen bleiben erhalten. Die Hörprüfung steht aus.
 
 ## Schultag
 
-Sechs einzeln verfasste Kontextbeispiele je Modul mit exakten vorhandenen Audiosegmenten und einem eigenen Stapel ergänzen. Bedeutung, Register, Partikelfunktionen, Lesungen und Übersetzungen in vier Sprachen prüfen. Alle bisherigen Beispiele und Flexionsaufnahmen bleiben erhalten. Keine neuen Bilder oder externen Generierungsanfragen. Die Hörprüfung steht aus.
+Einzeln verfasste Kontextbeispiele je Modul mit exakten vorhandenen Audiosegmenten und einem eigenen Stapel ergänzen. Bedeutung, Register, Partikelfunktionen, Lesungen und Übersetzungen in vier Sprachen prüfen. Alle bisherigen Beispiele und Flexionsaufnahmen bleiben erhalten. Keine neuen Bilder oder externen Generierungsanfragen. Die Hörprüfung steht aus.
 
 ## Im Restaurant
 
-Sechs einzeln verfasste Kontextbeispiele je Modul mit exakten vorhandenen Audiosegmenten und einem eigenen Stapel ergänzen. Bedeutung, Register, Partikelfunktionen, Lesungen und Übersetzungen in vier Sprachen prüfen. Alle bisherigen Beispiele und Flexionsaufnahmen bleiben erhalten. Keine neuen Bilder oder externen Generierungsanfragen. Die Hörprüfung steht aus.
+Einzeln verfasste Kontextbeispiele je Modul mit exakten vorhandenen Audiosegmenten und einem eigenen Stapel ergänzen. Bedeutung, Register, Partikelfunktionen, Lesungen und Übersetzungen in vier Sprachen prüfen. Alle bisherigen Beispiele und Flexionsaufnahmen bleiben erhalten. Keine neuen Bilder oder externen Generierungsanfragen. Die Hörprüfung steht aus.
 
 ## Weitere Tiere
 
-Kaninchen, Pferd, Kuh und Schwein mit vier geprüften Bildern je Modul, vier englischen Pluralformen, acht natürlichen Beispielen und einem Tierstapel ergänzen. Die weibliche Kuh vom breiteren japanischen うし unterscheiden und die zusätzliche Silbe in horses sowie japanische Eingaben prüfen. Festgelegte Stimmen und exakte Audiosegmente verwenden. Alle bisherigen Beispiele und Formen bleiben erhalten. Die Hörprüfung steht aus.
+Kaninchen, Pferd, Kuh und Schwein mit geprüften Bildern je Modul, englischen Pluralformen, natürlichen Beispielen und einem Tierstapel ergänzen. Die weibliche Kuh vom breiteren japanischen うし unterscheiden und die zusätzliche Silbe in horses sowie japanische Eingaben prüfen. Festgelegte Stimmen und exakte Audiosegmente verwenden. Alle bisherigen Beispiele und Formen bleiben erhalten. Die Hörprüfung steht aus.
 
 ## Wohnungseinrichtung
 
-Sofa, Lampe, Spiegel und Kopfkissen mit vier geprüften Bildern je Modul, vier englischen Pluralformen, acht natürlichen Beispielen und einem Einrichtungsstapel ergänzen. Kleines ァ in ソファ, die Beleuchtungsbedeutung von ランプ, stimmhaftes が in かがみ und die Bedeutung Kopfkissen prüfen. Festgelegte Stimmen und exakte Audiosegmente verwenden. Alle bisherigen Beispiele und Formen bleiben erhalten. Die Hörprüfung steht aus.
+Sofa, Lampe, Spiegel und Kopfkissen mit geprüften Bildern je Modul, englischen Pluralformen, natürlichen Beispielen und einem Einrichtungsstapel ergänzen. Kleines ァ in ソファ, die Beleuchtungsbedeutung von ランプ, stimmhaftes が in かがみ und die Bedeutung Kopfkissen prüfen. Festgelegte Stimmen und exakte Audiosegmente verwenden. Alle bisherigen Beispiele und Formen bleiben erhalten. Die Hörprüfung steht aus.
 
 ## Weitere Früchte
 
-Pfirsich, Birne, Wassermelone und Ananas mit vier geprüften Bildern je Modul, vier englischen Pluralformen, acht natürlichen Beispielen und einem Obststapel ergänzen. Europäische und asiatische Birnen sowie ganze Früchte und Lebensmittelmengen unterscheiden; die zusätzliche Silbe in peaches und kleines ッ in パイナップル bewahren. Eine kumulative Übersicht trennt Grundwörter, Beispiele, aufgenommene Formen und Gesamtdatensätze und wird durch Tests geprüft. Die Hörprüfung steht aus.
+Pfirsich, Birne, Wassermelone und Ananas mit geprüften Bildern je Modul, englischen Pluralformen, natürlichen Beispielen und einem Obststapel ergänzen. Europäische und asiatische Birnen sowie ganze Früchte und Lebensmittelmengen unterscheiden; die zusätzliche Silbe in peaches und kleines ッ in パイナップル bewahren. Eine kumulative Übersicht trennt Grundwörter, Beispiele, aufgenommene Formen und Gesamtdatensätze und wird durch Tests geprüft. Die Hörprüfung steht aus.
 
 ## Küchengeräte
 
-Schüssel, Messer, Kochtopf und Pfanne mit geprüften Bildern in beiden Modulen ergänzen, dazu vier englische Pluralformen, acht kontextbezogene Sätze und zwei Stapel. Hinweise erläutern stummes k, knives und die Unterschiede zwischen Rührschüssel, tiefem Topf und flacher Bratpfanne. Exakte PCM-Bausteine bewahren die gewählten Formen. Kumulative Themenzählung aktualisieren. Die Hörprüfung steht aus.
+Schüssel, Messer, Kochtopf und Pfanne mit geprüften Bildern in beiden Modulen ergänzen, dazu englische Pluralformen, kontextbezogene Sätze und Stapel. Hinweise erläutern stummes k, knives und die Unterschiede zwischen Rührschüssel, tiefem Topf und flacher Bratpfanne. Exakte PCM-Bausteine bewahren die gewählten Formen. Kumulative Themenzählung aktualisieren. Die Hörprüfung steht aus.
 
 ## Weiteres Gemüse
 
-Kohl, Pilz, Spinat und Kopfsalat mit geprüften Bildern in beiden Modulen ergänzen, dazu drei englische Pluralformen, acht abwechslungsreiche Beispiele und zwei Stapel. Lebensmittelmengen von ganzen Pflanzen unterscheiden, lange Vokale in ほうれんそう und kleines ャ in キャベツ bewahren; kein Anfängerplural für spinach. Kumulative Themenzählung aktualisieren und bisherige Beispiele erhalten. Die Hörprüfung steht aus.
+Kohl, Pilz, Spinat und Kopfsalat mit geprüften Bildern in beiden Modulen ergänzen, dazu englische Pluralformen, abwechslungsreiche Beispiele und Stapel. Lebensmittelmengen von ganzen Pflanzen unterscheiden, lange Vokale in ほうれんそう und kleines ャ in キャベツ bewahren; kein Anfängerplural für spinach. Kumulative Themenzählung aktualisieren und bisherige Beispiele erhalten. Die Hörprüfung steht aus.
 
 ## Räume und Garten
 
-Schlafzimmer, Badezimmer, Küche, Garten mit vier geprüften Bildern je Modul, vier englischen Pluralformen, acht eigenständig verfassten Beispielen und zwei Stapeln ergänzen. Lesungen und lokalisierte Bedeutungsunterschiede prüfen, exakte PCM-Bausteine und alle bisherigen Beispiele bewahren und die kumulative Wortzählung aktualisieren. Die Hörprüfung steht aus.
+Schlafzimmer, Badezimmer, Küche, Garten mit geprüften Bildern je Modul, englischen Pluralformen, eigenständig verfassten Beispielen und Stapeln ergänzen. Lesungen und lokalisierte Bedeutungsunterschiede prüfen, exakte PCM-Bausteine und alle bisherigen Beispiele bewahren und die kumulative Wortzählung aktualisieren. Die Hörprüfung steht aus.
 
 ## Natur in der Nähe
 
-Baum, Wald, Blatt, Stein mit vier geprüften Bildern je Modul, vier englischen Pluralformen, acht eigenständig verfassten Beispielen und zwei Stapeln ergänzen. Lesungen und lokalisierte Bedeutungsunterschiede prüfen, exakte PCM-Bausteine und alle bisherigen Beispiele bewahren und die kumulative Wortzählung aktualisieren. Die Hörprüfung steht aus.
+Baum, Wald, Blatt, Stein mit geprüften Bildern je Modul, englischen Pluralformen, eigenständig verfassten Beispielen und Stapeln ergänzen. Lesungen und lokalisierte Bedeutungsunterschiede prüfen, exakte PCM-Bausteine und alle bisherigen Beispiele bewahren und die kumulative Wortzählung aktualisieren. Die Hörprüfung steht aus.
 
 ## Haushaltsausstattung
 
-Kühlschrank, Backofen, Spülbecken, Dusche mit vier geprüften Bildern je Modul, vier englischen Pluralformen, acht eigenständig verfassten Beispielen und zwei Stapeln ergänzen. Lesungen und lokalisierte Bedeutungsunterschiede prüfen, exakte PCM-Bausteine und alle bisherigen Beispiele bewahren und die kumulative Wortzählung aktualisieren. Die Hörprüfung steht aus.
+Kühlschrank, Backofen, Spülbecken, Dusche mit geprüften Bildern je Modul, englischen Pluralformen, eigenständig verfassten Beispielen und Stapeln ergänzen. Lesungen und lokalisierte Bedeutungsunterschiede prüfen, exakte PCM-Bausteine und alle bisherigen Beispiele bewahren und die kumulative Wortzählung aktualisieren. Die Hörprüfung steht aus.
 
 ## Alltägliche Tätigkeiten
 
-Springen, Schwimmen, Lachen und Weinen mit geprüften Bildern und natürlichen Beispielen ergänzen. Sechzehn englische Formbindungen und zweiunddreißig japanische Formen einschließlich unregelmäßigem swim und japanischen Konsonantenwechseln abdecken. Exakte Audiosegmente, Quellenbelege und bisherige Inhalte bewahren. Die Hörprüfung steht aus.
+Springen, Schwimmen, Lachen und Weinen mit geprüften Bildern und natürlichen Beispielen ergänzen. Englische Formbindungen und japanische Formen einschließlich unregelmäßigem swim und japanischen Konsonantenwechseln abdecken. Exakte Audiosegmente, Quellenbelege und bisherige Inhalte bewahren. Die Hörprüfung steht aus.
 
 ## Gewicht und Schwierigkeit
 
-Schwer, leicht, einfach und schwierig mit Kontextbildern und Bedeutungshinweisen ergänzen. Acht englische Steigerungsformen und zwölf japanische I-Adjektivformen abdecken. Beispiele nutzen Adjektivprädikate und nominalisierte Tätigkeiten. Lehrplanabdeckung und kumulative Zählung aktualisieren. Die Hörprüfung steht aus.
+Schwer, leicht, einfach und schwierig mit Kontextbildern und Bedeutungshinweisen ergänzen. Englische Steigerungsformen und japanische I-Adjektivformen abdecken. Beispiele nutzen Adjektivprädikate und nominalisierte Tätigkeiten. Lehrplanabdeckung und kumulative Zählung aktualisieren. Die Hörprüfung steht aus.
 
 ## Häufigkeit und Wiederholung
 
@@ -176,7 +180,7 @@ Oft, manchmal, gewöhnlich und wieder mit Kontextbildern und eigenständig verfa
 
 ## Lesen, Schreiben und Ruhe
 
-Japanische Verben für Lesen, Schreiben, Sprechen und Schlafen mit zweiunddreißig aufgenommenen Formen ergänzen. Bestehende englische Wörter in neuen Übungen verwenden. Schreibflächen, Gesprächspartner und die kontextabhängige Bedeutung von 寝る erläutern. Frühere Inhalte und exaktes Audio bewahren; die Hörprüfung steht aus.
+Japanische Verben für Lesen, Schreiben, Sprechen und Schlafen mit aufgenommenen Formen ergänzen. Bestehende englische Wörter in neuen Übungen verwenden. Schreibflächen, Gesprächspartner und die kontextabhängige Bedeutung von 寝る erläutern. Frühere Inhalte und exaktes Audio bewahren; die Hörprüfung steht aus.
 
 ## Alltägliche Gespräche
 
@@ -188,11 +192,11 @@ Bejahende und verneinende Antworten, höfliche Bitten und Wiederholungsbitten er
 
 ## Pläne machen
 
-Sechs Planungsbeispiele und ein Deck behandeln bevorstehende Aktivitäten, Ankunft, Warten und Fahrkarten. Zeitbedeutungen und sprachspezifische Satzstrukturen bleiben erhalten; Audio entsteht aus vorhandenen genauen Bestandteilen ohne neue Synthesekosten.
+Planungsbeispiele und ein Deck behandeln bevorstehende Aktivitäten, Ankunft, Warten und Fahrkarten. Zeitbedeutungen und sprachspezifische Satzstrukturen bleiben erhalten; Audio entsteht aus vorhandenen genauen Bestandteilen ohne neue Synthesekosten.
 
 ## Lerngewohnheiten
 
-Sechs einzeln verfasste Lernbeispiele und ein Deck behandeln Schreibgeräte, Lesen, Sprachenlernen, Zuhören im Unterricht und Fragen. Vorhandene genaue Wortaufnahmen werden ohne doppelte Vokabeln oder neue Illustrationen wiederverwendet.
+Einzeln verfasste Lernbeispiele und ein Deck behandeln Schreibgeräte, Lesen, Sprachenlernen, Zuhören im Unterricht und Fragen. Vorhandene genaue Wortaufnahmen werden ohne doppelte Vokabeln oder neue Illustrationen wiederverwendet.
 
 ## Begrüßung und Abschied
 
@@ -200,107 +204,107 @@ Morgen- und Abendgrüße, Abschiede vor dem Schlafengehen und vertraute Bis-dann
 
 ## Tageszeiten und Lesen
 
-Japanische Wörter für Morgen, Nacht, Buch und Zeitung sowie englisch newspaper ergänzen; vorhandene englische Nomen wiederverwenden. Je Sprache vier Lesebeispiele hinzufügen. Eine verwirrende Buchdarstellung durch ein stimmiges geschlossenes Buch ersetzen und den Ablehnungsbeleg außerhalb der Laufzeitdateien bewahren.
+Japanische Wörter für Morgen, Nacht, Buch und Zeitung sowie englisch newspaper ergänzen; vorhandene englische Nomen wiederverwenden. Je Sprache Lesebeispiele hinzufügen. Eine verwirrende Buchdarstellung durch ein stimmiges geschlossenes Buch ersetzen und den Ablehnungsbeleg außerhalb der Laufzeitdateien bewahren.
 
 ## Verständnis klären
 
-Understand und わかる mit vier englischen und sieben japanischen Formbindungen ergänzen. Das unregelmäßige understood beibehalten und für den japanischen Zustandsausdruck keine Potentialform automatisch erfinden. Zwei englische Beispiele und ein japanisches Grundformbeispiel hinzufügen. Zwei japanische Satzentwürfe mit gewählten Formen bleiben außerhalb der Laufzeitdaten, weil der Host-Importer Grundformbezeichnungen vergleicht; genaue Audioaufnahmen und Prüfbelege bleiben erhalten. Alle neuen Originalbilder und endgültigen JPEGs wurden visuell geprüft; die Hörprüfung steht aus.
+Understand und わかる mit englischen und japanischen Formbindungen ergänzen. Das unregelmäßige understood beibehalten und für den japanischen Zustandsausdruck keine Potentialform automatisch erfinden. Englische Beispiele und ein japanisches Grundformbeispiel hinzufügen. Japanische Satzentwürfe mit gewählten Formen bleiben außerhalb der Laufzeitdaten, weil der Host-Importer Grundformbezeichnungen vergleicht; genaue Audioaufnahmen und Prüfbelege bleiben erhalten. Alle neuen Originalbilder und endgültigen JPEGs wurden visuell geprüft; die Hörprüfung steht aus.
 
 ## Persönliche Gegenstände
 
-Geldbörse, Kamera, Brille und Armbanduhr mit lokalisierten Bedeutungen, Verwendungshinweisen und je vier Kontextbeispielen ergänzen. Den englischen Plural glasses und japanisch うでどけい erläutern. Jedes Original und endgültige JPEG einzeln prüfen; einen Uhrenentwurf mit fehlender Stundenmarkierung ersetzen und den Ablehnungsbeleg behalten. Festgelegte Stimmen und japanische Originaleingaben bewahren; die Hörprüfung steht aus.
+Geldbörse, Kamera, Brille und Armbanduhr mit lokalisierten Bedeutungen, Verwendungshinweisen und je Kontextbeispielen ergänzen. Den englischen Plural glasses und japanisch うでどけい erläutern. Jedes Original und endgültige JPEG einzeln prüfen; einen Uhrenentwurf mit fehlender Stundenmarkierung ersetzen und den Ablehnungsbeleg behalten. Festgelegte Stimmen und japanische Originaleingaben bewahren; die Hörprüfung steht aus.
 
 ## Vorbereitungen
 
-Je Sprache vier eigenständig verfasste Vorbereitungsbeispiele zu Besitz, Reisedokumenten, Orten und Plänen ergänzen. Exakte PCM-Bestandteile und vorhandene Wörter ohne doppelte Vokabeln wiederverwenden. Die zwei höflichen japanischen Verständnissätze bleiben zurückgestellt; der Host-Code bleibt unverändert.
+Je Sprache eigenständig verfasste Vorbereitungsbeispiele zu Besitz, Reisedokumenten, Orten und Plänen ergänzen. Exakte PCM-Bestandteile und vorhandene Wörter ohne doppelte Vokabeln wiederverwenden. Die höflichen japanischen Verständnissätze bleiben zurückgestellt; der Host-Code bleibt unverändert.
 
 ## Geben und Bekommen
 
-Give/receive und あげる/もらう mit je zwei visuell geprüften Bildern und vier einzeln verfassten Beispielen pro Sprache ergänzen. Subjektrollen, japanisch に für den Empfänger und から für die Quelle sowie den Unterschied zwischen Geben und Anheben erläutern. Acht englische und sechzehn japanische Formbindungen aufnehmen; gave/given, もらわない und Formen mit kleinem っ beibehalten. Exakte PCM-Bestandteile und japanische Originaleingaben bewahren. Bilder und Hinweise kennzeichnen das blau gekleidete Subjekt; die Hörprüfung steht aus. Die zwei zurückgestellten höflichen Verständnissätze bleiben unverändert.
+Give/receive und あげる/もらう mit visuell geprüften Bildern und einzeln verfassten Beispielen pro Sprache ergänzen. Subjektrollen, japanisch に für den Empfänger und から für die Quelle sowie den Unterschied zwischen Geben und Anheben erläutern. Englische und japanische Formbindungen aufnehmen; gave/given, もらわない und Formen mit kleinem っ beibehalten. Exakte PCM-Bestandteile und japanische Originaleingaben bewahren. Bilder und Hinweise kennzeichnen das blau gekleidete Subjekt; die Hörprüfung steht aus. Die zurückgestellten höflichen Verständnissätze bleiben unverändert.
 
 ## Behälterwortschatz und Übungen
 
-Flasche, Schachtel, Korb und Briefumschlag mit lokalisierten Bedeutungen, Gebrauchshinweisen, geprüften Bildern und vier Beispielen ergänzt. Das japanische Wort für Briefumschlag behält beide Langvokale. Audio verwendet die festgelegten Stimmen und exakte PCM-Bausteine; eine Hörprüfung bleibt gemäß der dokumentierten Ausnahme ausstehend.
+Flasche, Schachtel, Korb und Briefumschlag mit lokalisierten Bedeutungen, Gebrauchshinweisen, geprüften Bildern und Beispielen ergänzt. Das japanische Wort für Briefumschlag behält beide Langvokale. Audio verwendet die festgelegten Stimmen und exakte PCM-Bausteine; eine Hörprüfung bleibt gemäß der dokumentierten Ausnahme ausstehend.
 
 ## Schreibwaren und Übungen
 
-Radiergummi, Schere, Klebeband und Heftgerät mit geprüften Bildern und vier Beispielen ergänzt. Gebrauchshinweise und Satzverknüpfungen erhalten den englischen Plural scissors, das nicht zählbare tape, den Langvokal in テープ und die Schreibweise ホチキス. Beim japanischen Empfangsbeispiel bleibt die Lehrkraft die Quelle. Die exakten Audiobausteine sind technisch geprüft; die Hörprüfung bleibt gemäß der dokumentierten Ausnahme ausstehend.
+Radiergummi, Schere, Klebeband und Heftgerät mit geprüften Bildern und Beispielen ergänzt. Gebrauchshinweise und Satzverknüpfungen erhalten den englischen Plural scissors, das nicht zählbare tape, den Langvokal in テープ und die Schreibweise ホチキス. Beim japanischen Empfangsbeispiel bleibt die Lehrkraft die Quelle. Die exakten Audiobausteine sind technisch geprüft; die Hörprüfung bleibt gemäß der dokumentierten Ausnahme ausstehend.
 
 ## Haltungsverben und geprüfte Audioindizes
 
-Sit und stand samt unregelmäßigen englischen und japanischen Godan-Formen, geprüften Bildern und vier Beispielen ergänzt. Gebrauchshinweise unterscheiden das Einnehmen einer Haltung vom andauernden japanischen Zustand. Zweckindizes mit Prüfsummen ermöglichen weiteres Wachstum innerhalb der bestehenden Dateigrenzen. Die Hörprüfung bleibt gemäß der dokumentierten Ausnahme ausstehend.
+Sit und stand samt unregelmäßigen englischen und japanischen Godan-Formen, geprüften Bildern und Beispielen ergänzt. Gebrauchshinweise unterscheiden das Einnehmen einer Haltung vom andauernden japanischen Zustand. Zweckindizes mit Prüfsummen ermöglichen weiteres Wachstum innerhalb der bestehenden Dateigrenzen. Die Hörprüfung bleibt gemäß der dokumentierten Ausnahme ausstehend.
 
 ## Alltag zu Hause
 
-Vier einzeln verfasste Beispiele zum Abwaschen, Lesen, Sitzen am Tisch und zu persönlichen Gegenständen ergänzt. Japanische Beispiele üben außerdem, einem Freund Suppe zu geben und einen Schlüssel in einer Schachtel zu finden. Vorhandene Vokabeln und exakte Audiobausteine werden wiederverwendet; neue Bilder oder Anbieteranfragen sind nicht erforderlich.
+Einzeln verfasste Beispiele zum Abwaschen, Lesen, Sitzen am Tisch und zu persönlichen Gegenständen ergänzt. Japanische Beispiele üben außerdem, einem Freund Suppe zu geben und einen Schlüssel in einer Schachtel zu finden. Vorhandene Vokabeln und exakte Audiobausteine werden wiederverwendet; neue Bilder oder Anbieteranfragen sind nicht erforderlich.
 
 ## Wildtiere im Zusammenhang
 
-Fuchs, Bär, Affe und Elefant erhalten vier unterschiedliche Beispiele zu Lebensraum, Bewegung, Beobachtung und Größe sowie ein eigenes Startkartenset. Jede Originalillustration und jede endgültige JPEG-Datei wurde visuell geprüft. Bedeutungen und Hinweise zu Artenbeispielen, Substantivbedeutungen und dem Langvokal in ぞう liegen in vier Sprachen vor. Alle bisherigen Audioauswahlen werden beim Ausbau bytegenau verglichen. Neue Sprachaufnahmen bleiben ausdrücklich ohne Hörprüfung.
+Fuchs, Bär, Affe und Elefant erhalten unterschiedliche Beispiele zu Lebensraum, Bewegung, Beobachtung und Größe sowie ein eigenes Startkartenset. Jede Originalillustration und jede endgültige JPEG-Datei wurde visuell geprüft. Bedeutungen und Hinweise zu Artenbeispielen, Substantivbedeutungen und dem Langvokal in ぞう liegen in vier Sprachen vor. Alle bisherigen Audioauswahlen werden beim Ausbau bytegenau verglichen. Neue Sprachaufnahmen bleiben ausdrücklich ohne Hörprüfung.
 
 ## Schieben und Ziehen im Zusammenhang
 
-Push und pull mit geprüften regelmäßigen englischen Endungen und japanischen Su-/Ku-Godan-Formen, visuell geprüften Handlungsbildern und vier unterschiedlichen Beispielen ergänzt. Die Beispiele behandeln Bitte, Vergangenheit, laufende Handlung, Art und Weise, Gegensatz und spätere Handlung. Jede Sprache erhält ein eigenes Kartenset. Exakte Aufnahmen der Bestandteile und Quellenbelege bleiben erhalten; die Hörprüfung steht aus.
+Push und pull mit geprüften regelmäßigen englischen Endungen und japanischen Su-/Ku-Godan-Formen, visuell geprüften Handlungsbildern und unterschiedlichen Beispielen ergänzt. Die Beispiele behandeln Bitte, Vergangenheit, laufende Handlung, Art und Weise, Gegensatz und spätere Handlung. Jede Sprache erhält ein eigenes Kartenset. Exakte Aufnahmen der Bestandteile und Quellenbelege bleiben erhalten; die Hörprüfung steht aus.
 
 ## Längen beschreiben und vergleichen
 
-Long und short mit englischen Komparativ- und Superlativaufnahmen, japanischen I-Adjektivformen und geprüften Längenvergleichen ergänzt. Vier verschiedene Beispiele behandeln Beschreibung, benötigte oder gekaufte Gegenstände, Vergleich oder Grad sowie Ort. Hinweise unterscheiden Länge von Körpergröße und erhalten den Konsonanten in longer und longest. Aufnahmen und Bedeutungen in vier Sprachen sind nachvollziehbar; die Hörprüfung steht aus.
+Long und short mit englischen Komparativ- und Superlativaufnahmen, japanischen I-Adjektivformen und geprüften Längenvergleichen ergänzt. Verschiedene Beispiele behandeln Beschreibung, benötigte oder gekaufte Gegenstände, Vergleich oder Grad sowie Ort. Hinweise unterscheiden Länge von Körpergröße und erhalten den Konsonanten in longer und longest. Aufnahmen und Bedeutungen in vier Sprachen sind nachvollziehbar; die Hörprüfung steht aus.
 
 ## Entschuldigungen und Begrüßungen
 
-Sorry und Welcome sowie ごめんなさい und ようこそ mit geprüften Alltagsszenen und je zwei kurzen Beispielen ergänzt. Hinweise unterscheiden Begrüßungen von Antworten auf Dank und erklären den vertrauten Ton des japanischen Entschuldigungsbeispiels. Vollständige Lesungen erhalten ん und den Langvokal in よう. Die Satzaufnahmen verwenden exakte Bestandteile; die Hörprüfung steht aus.
+Sorry und Welcome sowie ごめんなさい und ようこそ mit geprüften Alltagsszenen und je kurzen Beispielen ergänzt. Hinweise unterscheiden Begrüßungen von Antworten auf Dank und erklären den vertrauten Ton des japanischen Entschuldigungsbeispiels. Vollständige Lesungen erhalten ん und den Langvokal in よう. Die Satzaufnahmen verwenden exakte Bestandteile; die Hörprüfung steht aus.
 
 ## Materialien schneiden und falten
 
-Cut und fold mit exakten englischen und japanischen Formen, korrigierten und geprüften Handlungsbildern und vier verschiedenen Beispielen ergänzt. Englisch erhält zusätzlich paper als Stoffbezeichnung; Japanisch verwendet die vorhandene Karte 紙. Hinweise unterscheiden Godan 切る von Ichidan 着る sowie Papierfalten mit 折る von anderen Bedeutungen. Gleiche cut-Formen nutzen vorhandene Aufnahmen. Quellen und verworfene Bilder bleiben erhalten; die Hörprüfung steht aus.
+Cut und fold mit exakten englischen und japanischen Formen, korrigierten und geprüften Handlungsbildern und verschiedenen Beispielen ergänzt. Englisch erhält zusätzlich paper als Stoffbezeichnung; Japanisch verwendet die vorhandene Karte 紙. Hinweise unterscheiden Godan 切る von Ichidan 着る sowie Papierfalten mit 折る von anderen Bedeutungen. Gleiche cut-Formen nutzen vorhandene Aufnahmen. Quellen und verworfene Bilder bleiben erhalten; die Hörprüfung steht aus.
 
 ## Essensvorbereitung und Wettergespräche
 
-Acht einzeln geprüfte Beispiele und zwei Übungsstapel mit vorhandenem Wortschatz und exakten gespeicherten Wortaufnahmen ergänzt. Die Essensvorbereitung umfasst Waschen, Schneiden, verbundene Zutaten und die Suche nach Kartoffeln; die Wetterübungen behandeln Regen, Regenschirme, Beschreibungen und Vorlieben für Jahreszeiten. Englisch verwendet die genaue Form cuts, Japanisch behält vollständige Lesungen und Partikelaussprache. Es werden keine neuen Wörter, Bilder oder Anbieteranfragen gezählt. Quellen und Nachweise je Satzaufnahme bleiben erhalten; die Hörprüfung steht aus.
+Einzeln geprüfte Beispiele und Übungsstapel mit vorhandenem Wortschatz und exakten gespeicherten Wortaufnahmen ergänzt. Die Essensvorbereitung umfasst Waschen, Schneiden, verbundene Zutaten und die Suche nach Kartoffeln; die Wetterübungen behandeln Regen, Regenschirme, Beschreibungen und Vorlieben für Jahreszeiten. Englisch verwendet die genaue Form cuts, Japanisch behält vollständige Lesungen und Partikelaussprache. Es werden keine neuen Wörter, Bilder oder Anbieteranfragen gezählt. Quellen und Nachweise je Satzaufnahme bleiben erhalten; die Hörprüfung steht aus.
 
 ## Breite und verfügbarer Raum
 
-Wide und narrow sowie ひろい und せまい mit vier geprüften Brückenbildern und vier Kontextbeispielen je Sprache ergänzt. Englisch enthält wider/widest und narrower/narrowest; Japanisch umfasst adverbiale, verneinte und vergangene Formen mit vollständigen Kana und kleinem っ. Hinweise unterscheiden Breite und verfügbaren Raum von Länge. Exakte Wortaufnahmen, Originalbilder, PCM und Quellen bleiben erhalten; die Hörprüfung steht aus.
+Wide und narrow sowie ひろい und せまい mit geprüften Brückenbildern und Kontextbeispielen je Sprache ergänzt. Englisch enthält wider/widest und narrower/narrowest; Japanisch umfasst adverbiale, verneinte und vergangene Formen mit vollständigen Kana und kleinem っ. Hinweise unterscheiden Breite und verfügbaren Raum von Länge. Exakte Wortaufnahmen, Originalbilder, PCM und Quellen bleiben erhalten; die Hörprüfung steht aus.
 
 ## Drinnen und draußen
 
-Inside/outside als englische Adverbien und なか/そと als japanische Ortsnomen mit geprüften Behälterszenen und vier Beispielen je Sprache ergänzt. Japanische Beispiele unterscheiden の für den Bezugsort, に mit いる/ある für Existenz und で für Tätigkeiten. Kana vermeiden die hier falsche Lesung ちゅう von 中. Originalbilder, PCM der festgelegten Stimmen und exakte Satzkompositionen bleiben erhalten; die Hörprüfung steht aus.
+Inside/outside als englische Adverbien und なか/そと als japanische Ortsnomen mit geprüften Behälterszenen und Beispielen je Sprache ergänzt. Japanische Beispiele unterscheiden の für den Bezugsort, に mit いる/ある für Existenz und で für Tätigkeiten. Kana vermeiden die hier falsche Lesung ちゅう von 中. Originalbilder, PCM der festgelegten Stimmen und exakte Satzkompositionen bleiben erhalten; die Hörprüfung steht aus.
 
 ## Tiefe
 
-Deep und shallow sowie ふかい und あさい mit vier geprüften Schüsselbildern und vier Kontextbeispielen je Sprache ergänzt. Englische Steigerungsformen und japanische adverbiale, verneinte und vergangene Formen verwenden exakte PCM-Bestandteile. Wörterbuchbelege, Originalbilder und technische Audioprüfungen bleiben erhalten; die Hörprüfung steht aus.
+Deep und shallow sowie ふかい und あさい mit geprüften Schüsselbildern und Kontextbeispielen je Sprache ergänzt. Englische Steigerungsformen und japanische adverbiale, verneinte und vergangene Formen verwenden exakte PCM-Bestandteile. Wörterbuchbelege, Originalbilder und technische Audioprüfungen bleiben erhalten; die Hörprüfung steht aus.
 
 ## Helligkeit
 
-Bright und dark sowie あかるい und くらい mit vier geprüften Zimmerbildern und vier Kontextbeispielen je Sprache ergänzt. Hinweise unterscheiden Beleuchtung von Farbe, Intelligenz und Persönlichkeit. Englische Steigerungsformen und japanische adverbiale, verneinte und vergangene Formen behalten die exakten gewählten Aufnahmen. Quellen, Originalbilder und PCM bleiben erhalten; die Hörprüfung steht aus.
+Bright und dark sowie あかるい und くらい mit geprüften Zimmerbildern und Kontextbeispielen je Sprache ergänzt. Hinweise unterscheiden Beleuchtung von Farbe, Intelligenz und Persönlichkeit. Englische Steigerungsformen und japanische adverbiale, verneinte und vergangene Formen behalten die exakten gewählten Aufnahmen. Quellen, Originalbilder und PCM bleiben erhalten; die Hörprüfung steht aus.
 
 ## Schals und Handschuhe
 
-Scarf/glove und マフラー/てぶくろ mit vier geprüften Bildern und vier Kontextbeispielen je Sprache ergänzt. Scarves/gloves behalten exakte Pluralaufnahmen. Hinweise unterscheiden Schal und Auspuffschalldämpfer und erklären Zahl und Fäustlinge im Japanischen. Quellen, Originalbilder und PCM bleiben erhalten; die Hörprüfung steht aus.
+Scarf/glove und マフラー/てぶくろ mit geprüften Bildern und Kontextbeispielen je Sprache ergänzt. Scarves/gloves behalten exakte Pluralaufnahmen. Hinweise unterscheiden Schal und Auspuffschalldämpfer und erklären Zahl und Fäustlinge im Japanischen. Quellen, Originalbilder und PCM bleiben erhalten; die Hörprüfung steht aus.
 
 ## Harte und weiche Materialien
 
-Hard/soft und かたい/やわらかい mit vier geprüften Druckdarstellungen und vier Kontextbeispielen je Sprache ergänzt. Präzise Bedeutungsangaben unterscheiden Materialeigenschaften von Schwierigkeit, Lautstärke und Persönlichkeit. Steigerungs- und i-Adjektivformen behalten exakte Aufnahmen und vollständige Stämme. Quellen, Originale und PCM bleiben erhalten; die Hörprüfung steht aus.
+Hard/soft und かたい/やわらかい mit geprüften Druckdarstellungen und Kontextbeispielen je Sprache ergänzt. Präzise Bedeutungsangaben unterscheiden Materialeigenschaften von Schwierigkeit, Lautstärke und Persönlichkeit. Steigerungs- und i-Adjektivformen behalten exakte Aufnahmen und vollständige Stämme. Quellen, Originale und PCM bleiben erhalten; die Hörprüfung steht aus.
 
 ## Bälle und Schläger
 
-Ball/racket und ボール/ラケット mit vier geprüften Gerätebildern und vier Beispielen je Sprache ergänzt. Die Sportbedeutungen werden ausgewählt, ボール und ボウル unterschieden und Langvokal sowie kleines っ erhalten. Exakte Pluralaufnahmen unterstützen englische Beispiele; japanische Beispiele üben Geben und Empfangen. Quellen, Originale und PCM bleiben; die Hörprüfung steht aus.
+Ball/racket und ボール/ラケット mit geprüften Gerätebildern und Beispielen je Sprache ergänzt. Die Sportbedeutungen werden ausgewählt, ボール und ボウル unterschieden und Langvokal sowie kleines っ erhalten. Exakte Pluralaufnahmen unterstützen englische Beispiele; japanische Beispiele üben Geben und Empfangen. Quellen, Originale und PCM bleiben; die Hörprüfung steht aus.
 
 ## Ausflüge ins Museum und in den Zoo
 
-Museum/zoo und はくぶつかん/どうぶつえん mit vier geprüften Ortsbildern und vier abwechslungsreichen Beispielen je Sprache ergänzt. Hinweise erklären den Bedeutungsumfang von Museum und bewahren vollständige Lesungen. Museums/zoos haben exakte Aufnahmen; Beispiele üben Ziele, Besichtigen und Warten auf einen Freund. Quellen, Originale und PCM bleiben; die Hörprüfung steht aus.
+Museum/zoo und はくぶつかん/どうぶつえん mit geprüften Ortsbildern und abwechslungsreichen Beispielen je Sprache ergänzt. Hinweise erklären den Bedeutungsumfang von Museum und bewahren vollständige Lesungen. Museums/zoos haben exakte Aufnahmen; Beispiele üben Ziele, Besichtigen und Warten auf einen Freund. Quellen, Originale und PCM bleiben; die Hörprüfung steht aus.
 
 ## Briefe und Postkarten
 
-Letter/postcard und てがみ/はがき mit vier geprüften Bildern, acht Beispielen und zwei exakten englischen Pluralformen ergänzt. Hinweise unterscheiden Briefe von Buchstaben und bewahren das stimmhafte が. Quellen, Originalbilder und exaktes Komponenten-PCM bleiben erhalten. Die Hörprüfung steht aus.
+Letter/postcard und てがみ/はがき mit geprüften Bildern, Beispielen und exakten englischen Pluralformen ergänzt. Hinweise unterscheiden Briefe von Buchstaben und bewahren das stimmhafte が. Quellen, Originalbilder und exaktes Komponenten-PCM bleiben erhalten. Die Hörprüfung steht aus.
 
 ## Senden und Transportieren
 
-Send/carry und おくる/はこぶ mit vier geprüften Bildern, acht Beispielen und 24 exakten Flexionsbindungen ergänzt. Sent und carried teilen ihre Vergangenheits- und Partizipaufnahmen; japanische Formen unterscheiden kleines っ von んだ/んで. Zwei fehlerhafte Umschlagbilder wurden abgelehnt und korrigiert; Belege bleiben erhalten. Satz-PCM entspricht exakt den Bestandteilen. Die Hörprüfung steht aus.
+Send/carry und おくる/はこぶ mit geprüften Bildern, Beispielen und exakten Flexionsbindungen ergänzt. Sent und carried teilen ihre Vergangenheits- und Partizipaufnahmen; japanische Formen unterscheiden kleines っ von んだ/んで. Fehlerhafte Umschlagbilder wurden abgelehnt und korrigiert; Belege bleiben erhalten. Satz-PCM entspricht exakt den Bestandteilen. Die Hörprüfung steht aus.
 
 ## Senden und Transportieren im Zusammenhang
 
-Das bestehende Deck Senden und Transportieren von sechs auf zehn Karten je Sprache erweitert. Acht neue Beispiele üben vergangene und laufende Handlungen, Empfänger, Herkunft, Aufzählungen, Begleiter und Ziele. IDs, Namen und bisherige Kartenreihenfolge bleiben erhalten; kein neues Deck oder Bild. Audio verwendet exaktes vorhandenes Komponenten-PCM der freigegebenen Stimmen ohne Generierungskosten. Die Hörprüfung steht aus.
+Das bestehende Deck Senden und Transportieren um Kontextübungen erweitert. Neue Beispiele üben vergangene und laufende Handlungen, Empfänger, Herkunft, Aufzählungen, Begleiter und Ziele. IDs, Namen und bisherige Kartenreihenfolge bleiben erhalten; kein neues Deck oder Bild. Audio verwendet exaktes vorhandenes Komponenten-PCM der freigegebenen Stimmen ohne Generierungskosten. Die Hörprüfung steht aus.
 
 ## Bestehende Inhaltsstruktur verwenden
 
