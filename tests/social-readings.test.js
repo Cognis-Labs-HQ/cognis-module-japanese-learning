@@ -1,6 +1,10 @@
 import test from "node:test";
+import { readAudioInventory } from "../api/audio/inventory.js";
+
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
+
+const inventory = await readAudioInventory("data/audio");
 
 const read = (path) => JSON.parse(readFileSync(path, "utf8"));
 
@@ -16,11 +20,11 @@ test("daytime greeting preserves written ha and spoken wa without changing nativ
         reading.referenceGroups["reading-kana"][0].at(-1).entryId,
         "ja:char:wa",
     );
-    const audit = read("authoring/reviews/social-audio.json").find(
-        ({ entryId }) => entryId === greeting.id,
+    const recording = inventory.recordings.find(({ entries }) =>
+        entries.includes(greeting.id),
     );
-    assert.equal(audit.request.text, "こんにちは");
-    assert.equal(audit.listening, "unverified-not-performed");
+    assert.equal(recording.request.text, "こんにちは");
+    assert.equal(recording.metadata.listening, "unverified-not-performed");
 });
 
 test("evening greeting keeps written ha, spoken wa and native synthesis text", () => {
@@ -34,8 +38,8 @@ test("evening greeting keeps written ha, spoken wa and native synthesis text", (
         reading.referenceGroups["reading-kana"][0].at(-1).entryId,
         "ja:char:wa",
     );
-    const audit = read("authoring/reviews/greetings-audio.json").find(
-        ({ entryId }) => entryId === greeting.id,
+    const recording = inventory.recordings.find(({ entries }) =>
+        entries.includes(greeting.id),
     );
-    assert.equal(audit.request.text, "こんばんは");
+    assert.equal(recording.request.text, "こんばんは");
 });

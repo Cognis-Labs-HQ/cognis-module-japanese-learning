@@ -278,6 +278,10 @@ Add send/carry and おくる/はこぶ with four inspected illustrations, eight 
 
 Extend the existing Sending and Carrying deck from six to ten cards per language. Eight new examples practise past and ongoing actions, recipients, sources, coordination, companions and destinations. Existing IDs, names and card order remain intact; no new deck or picture is added. Audio reuses exact approved-voice constituent PCM without generation charges. Listening remains unverified.
 
+## Use the existing content structure
+
+Remove the auxiliary authoring tree, staged specifications, source and rejected media, review reports and audit-only fixtures. Vocabulary, definitions and sentences remain directly in data/library/content; shipped media remain in data/library/assets, recording inventories in data/audio, and decks in data/starter-decks.json. Validate the published content directly in the normal test suite. Runtime data and IDs are preserved; no content expansion or parser change is included.
+
 ## Commits
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)

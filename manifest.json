@@ -2,7 +2,7 @@
     "id": "study-language-ja",
     "uuid": "e905927f-b133-572a-92ce-2ea8645e5ceb",
     "name": "module.study.language.ja.name",
-    "version": "2.4.80",
+    "version": "2.4.81",
     "class": "extension",
     "coreApiVersion": "v1",
     "capabilities": ["study:language:ja"],
@@ -65,7 +65,7 @@
         },
         {
             "path": ".github/copilot-instructions.md",
-            "sha256": "72439379b8790058c214f5da9ea3a1ff910bfb27971e8ac71525d6df395d4413"
+            "sha256": "c7f3dfba06a05f94eea24c2c35861c2468dbb0d7b78d84e13e026583c26319f3"
         },
         {
             "path": ".gitignore",
@@ -101,7 +101,7 @@
         },
         {
             "path": "TODO.md",
-            "sha256": "a6faa71507a45cb7a23437d0ee07a8e1978b23630e2e541c49ecc783cd35207a"
+            "sha256": "dae24a5c494c4f9751f4fae1c614b8e2ec609d557f6adf964a7a0059407b9490"
         },
         {
             "path": "api/audio/index.js",
@@ -8473,7 +8473,7 @@
         },
         {
             "path": "data/library/manifest.json",
-            "sha256": "3c39f18d69453e748ebdebcbc1ac111082622309468e6fdf29f74b69a9340d3f"
+            "sha256": "519481b9c7902c08c94524e1ba2021efd6fb9f3692844e399ec241b75c1edc6a"
         },
         {
             "path": "data/library/primary-readings.json",
@@ -9553,11 +9553,11 @@
         },
         {
             "path": "package-lock.json",
-            "sha256": "28bbf91ada6dd5e621e1f9b6d4eeccbb1f0f5ea0ac508b383bc0cc33d9916c4a"
+            "sha256": "030349bb726d7101156272aaa5e9e7d8513814b9fe25c3108caba69c3202a052"
         },
         {
             "path": "package.json",
-            "sha256": "e4d83370318ed5c3584c6c6151b0f000ed413d71c3c3f16b8ebbe9b39993abe0"
+            "sha256": "1b0a1b0a29878b83da68fb8777b0aa1691738f0abeb67b87c9281f3654b7a677"
         },
         {
             "path": "routes.json",
@@ -9577,7 +9577,7 @@
         },
         {
             "path": "scripts/update-manifest-hashes.js",
-            "sha256": "371f6c29bcb4983fd71123484172afa27130c719a260c2851205ca4829790b7b"
+            "sha256": "97b2cd93f2b872c7ba5d9608960083c9227b4108987e15e1ea7b9a1a1bf08a30"
         },
         {
             "path": "scripts/update-stroke-patterns.js",
@@ -9585,7 +9585,7 @@
         },
         {
             "path": "scripts/validate-manifest.js",
-            "sha256": "32b9402f9fc7e37ddbdb31c52c91c19cdb625c24052cb7a70e96fece8da7787f"
+            "sha256": "944205e7335ee60ee6db1404e20c36733da8536ca594c76efbca1f130443b298"
         },
         {
             "path": "tests/actions-form-audio.test.js",
@@ -9600,20 +9600,12 @@
             "sha256": "a10b47ff026d0a4f8f8a105fab65cce310fc7d5e9afea962425d8b848ff17bc4"
         },
         {
-            "path": "tests/audio-selection-preservation.test.js",
-            "sha256": "564a4596587caede90393b699e0c4a701f3d243fcf77f41992dd175545429db1"
-        },
-        {
             "path": "tests/audio.test.js",
             "sha256": "e5b919d0607f3511d9cd078e9a75f77a76859dce6d2e970b6f57c4d9e4089981"
         },
         {
-            "path": "tests/authoring-validation.test.js",
-            "sha256": "bf12ea565160ee36b228d08b215758959cf4a8b30f51895ba9cf2823cb63ff59"
-        },
-        {
             "path": "tests/belongings-language.test.js",
-            "sha256": "7e285754a1e32e3489cb7cce4834540c5a66e7dfa228e9165d6366480e65d6f7"
+            "sha256": "da130ed983b93a803e5e3f1e2276bdfec85f5d2f502832ee1e5f48385b2cd861"
         },
         {
             "path": "tests/bootstrap.test.js",
@@ -9649,11 +9641,7 @@
         },
         {
             "path": "tests/deck-progression.test.js",
-            "sha256": "f9284406b70e8e86353d93b6bf7511a78f9facbf74b5dd130b88c8b999391357"
-        },
-        {
-            "path": "tests/deferred-comprehension.test.js",
-            "sha256": "77e473ada1febd070744089ef8f509a8f7981f488bd66369adc75e5d104e643b"
+            "sha256": "5c12baec165ea03ab95a82626fe77f1ab5759a382846ef58fea7d37bdb03fcff"
         },
         {
             "path": "tests/delivery-form-audio.test.js",
@@ -9672,20 +9660,8 @@
             "sha256": "609655de11fffe51562fd7c059aca485b8acf45b73e91ffa1fa31effb04cd3f3"
         },
         {
-            "path": "tests/expansion-media.test.js",
-            "sha256": "0459412149b9b8f06660b2abdd7fbb61666e55d0fe9032a47305e4e68c46737b"
-        },
-        {
-            "path": "tests/expansion-summary.test.js",
-            "sha256": "30e1dce0e9b5c4f08fb870ed42cd3fbf3cfea056bee3d03b696f72f134fbc5c9"
-        },
-        {
             "path": "tests/fixtures/jisho-greeting.json",
             "sha256": "d22e38afc48c73b052b1bd86ee1ecbc14fd0b3be293a14901fa38c0271b72171"
-        },
-        {
-            "path": "tests/fixtures/themed-practice-review.json",
-            "sha256": "f6cb614dcbea1b62edce11eceee0f442b160b47260131736c4eb16c60bbcf786"
         },
         {
             "path": "tests/food-body.test.js",
@@ -9736,10 +9712,6 @@
             "sha256": "381ad4af8f5ac57dfcf784abe4d64da52b29a5818531fce9a6d3b3c99058e3f9"
         },
         {
-            "path": "tests/mealtime.test.js",
-            "sha256": "f7b5369e1c076aed18a319c7d2a947ac919f2c5ebf03a9ebef47dd5c6ae1dbae"
-        },
-        {
             "path": "tests/packaging.test.js",
             "sha256": "a783f1c2a43f51cb85d962617d34cdd62833d5c018ef1578526fa50a3e5d9d15"
         },
@@ -9748,20 +9720,12 @@
             "sha256": "28b38e749cf87fb2648bd3e3fc02fc38cdfe141e7e0440dca315263dcfc1ffed"
         },
         {
-            "path": "tests/practice-expansion.test.js",
-            "sha256": "1328703b6555e10efde270dba1d64a055c4664ac3a07b922facb14c55a579d7f"
-        },
-        {
             "path": "tests/provider-lifecycle.test.js",
             "sha256": "07b91a9b7ccd9c20c7d6620f3b2dd801596911232e49c62b0bc71565a69ab435"
         },
         {
             "path": "tests/qualities-form-audio.test.js",
             "sha256": "77ea85e4dfe7b2a6aadd5a0ab7fc184a48f85bdf16b280af62f2356db63dc495"
-        },
-        {
-            "path": "tests/quality-review.test.js",
-            "sha256": "ec5220e2585e6bfcfe6668d54866368014c0c8f4705fa78909a03d07c74fa0e2"
         },
         {
             "path": "tests/reference-generator.test.js",
@@ -9781,7 +9745,7 @@
         },
         {
             "path": "tests/social-readings.test.js",
-            "sha256": "2504ea1cafe8fcea790edf0b93ece81732cf117173c05728d5fb1cb2df429f96"
+            "sha256": "667e299219783efea43ffba714ba0fd6c5b1fd47438ff3c25fd4131791f5b62b"
         },
         {
             "path": "tests/starter-decks.test.js",
@@ -9794,10 +9758,6 @@
         {
             "path": "tests/structural-compliance.test.js",
             "sha256": "499a3f62a141e273c65d3223dc2f3069ec6d3a7e6a5efba9fd949ea9b08fe18e"
-        },
-        {
-            "path": "tests/travel.test.js",
-            "sha256": "ce2f78c1debc26e5bf7f35b310aa903c25105ec011840f006bf55f6db69d93ed"
         },
         {
             "path": "tests/uninstall-configuration.test.js",

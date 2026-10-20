@@ -278,6 +278,10 @@ send/carryとおくる/はこぶを、確認済み画像四点、例文八つ、
 
 既存の「送る・運ぶ」デッキを各言語六枚から十枚に拡充しました。新しい例文八つで過去・進行中の動作、受取人、出所、並列、同行者、目的地を練習します。既存ID・名前・カード順を保持し、デッキや画像は増やしません。承認済み音声の構成要素PCMを正確に再利用し、生成費用はありません。試聴は未確認です。
 
+## 既存のコンテンツ構成を使用
+
+補助的なauthoringツリー、準備用仕様、元データと却下済みメディア、確認レポート、監査専用テストデータを削除しました。語彙・定義・例文はdata/library/content、配布メディアはdata/library/assets、録音一覧はdata/audio、デッキはdata/starter-decks.jsonに保持します。通常のテストで公開コンテンツを直接検証します。実行時データとIDを維持し、コンテンツの追加やパーサー変更は含みません。
+
 ## コミット
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)

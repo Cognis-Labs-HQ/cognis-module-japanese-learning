@@ -278,6 +278,10 @@ Send/carry und おくる/はこぶ mit vier geprüften Bildern, acht Beispielen 
 
 Das bestehende Deck Senden und Transportieren von sechs auf zehn Karten je Sprache erweitert. Acht neue Beispiele üben vergangene und laufende Handlungen, Empfänger, Herkunft, Aufzählungen, Begleiter und Ziele. IDs, Namen und bisherige Kartenreihenfolge bleiben erhalten; kein neues Deck oder Bild. Audio verwendet exaktes vorhandenes Komponenten-PCM der freigegebenen Stimmen ohne Generierungskosten. Die Hörprüfung steht aus.
 
+## Bestehende Inhaltsstruktur verwenden
+
+Den zusätzlichen Authoring-Baum, vorbereitete Spezifikationen, Quell- und abgelehnte Medien, Prüfberichte und reine Audit-Testdaten entfernt. Vokabular, Definitionen und Sätze bleiben direkt in data/library/content; ausgelieferte Medien in data/library/assets, Aufnahmeverzeichnisse in data/audio und Decks in data/starter-decks.json. Die normalen Tests prüfen die veröffentlichten Inhalte direkt. Laufzeitdaten und IDs bleiben erhalten; keine Inhaltserweiterung oder Parseränderung.
+
 ## Commits
 
 - [dafd00b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/dafd00bcb9294ce7d6eecc44f2e66bca4f5ca86a)

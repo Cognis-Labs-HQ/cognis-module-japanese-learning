@@ -1,6 +1,9 @@
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import test from "node:test";
+import { readAudioInventory } from "../api/audio/inventory.js";
+
+const inventory = await readAudioInventory("data/audio");
 
 const read = (path) => JSON.parse(readFileSync(path, "utf8"));
 const words = read("data/library/content/words/belongings-001.json");
@@ -15,9 +18,11 @@ test("personal belongings preserve native inputs and voiced compound reading", (
         reading.referenceGroups["reading-kana"][0][2].entryId,
         "ja:char:do",
     );
-    const audio = read("authoring/reviews/belongings-audio.json");
+    const audio = inventory.recordings.filter(({ entries }) =>
+        words.some(({ id, hidden }) => !hidden && entries.includes(id)),
+    );
     assert.equal(
-        audio.find(({ entryId }) => entryId === watch.id).request.text,
+        audio.find(({ entries }) => entries.includes(watch.id)).request.text,
         "腕時計",
     );
     assert.ok(
