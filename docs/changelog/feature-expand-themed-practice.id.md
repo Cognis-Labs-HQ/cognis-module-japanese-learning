@@ -354,3 +354,4 @@ Menghapus direktori authoring tambahan, spesifikasi tahap persiapan, media sumbe
 - [f8ac560](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/f8ac5609834a7e9bcfd3f1202daaa229f4ce5b0a)
 - [8edecdf](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/8edecdfe1910947c459b2ac96a845091f21a7da9)
 - [0b68cb7](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/0b68cb7640e65b3178e8cfa45fce32a3f258fdc6)
+- [acc902d](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/acc902dc1b9f110b334593b0cae372656444c6d6)
