@@ -364,3 +364,4 @@ send/carryとおくる/はこぶを、確認済み画像四点、例文八つ、
 - [0b68cb7](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/0b68cb7640e65b3178e8cfa45fce32a3f258fdc6)
 - [acc902d](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/acc902dc1b9f110b334593b0cae372656444c6d6)
 - [b51ca92](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/b51ca92c728ee0c0aa34b8b065aa31084586dd78)
+- [1af471e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/1af471e9ee5fae28de6b78a3845bc4a1ba6d931c)
