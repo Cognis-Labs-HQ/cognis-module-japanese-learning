@@ -226,9 +226,15 @@
                 "label": "ド",
                 "semanticRole": "atomicWritingUnit",
                 "readings": ["do"]
+            },
+            {
+                "language": "ja",
+                "label": "度",
+                "semanticRole": "compoundWritingUnit",
+                "readings": ["ど"]
             }
         ],
-        "entries": ["ja:char:do", "ja:char:ka:do"],
+        "entries": ["ja:char:do", "ja:char:ka:do", "ja:kanji:expanded-5ea6"],
         "variants": [],
         "sha256": "1ec34d37fdb43a5da98a127fccea353ee33337c4583d57bccce40646682b7ab9",
         "frames": 13220
@@ -666,13 +672,55 @@
                 "label": "木",
                 "semanticRole": "lexicalUnit",
                 "readings": ["き"]
+            },
+            {
+                "language": "ja",
+                "label": "切",
+                "semanticRole": "compoundWritingUnit",
+                "readings": ["き"]
+            },
+            {
+                "language": "ja",
+                "label": "木",
+                "semanticRole": "compoundWritingUnit",
+                "readings": ["き"]
+            },
+            {
+                "language": "ja",
+                "label": "機",
+                "semanticRole": "compoundWritingUnit",
+                "readings": ["き"]
+            },
+            {
+                "language": "ja",
+                "label": "消",
+                "semanticRole": "compoundWritingUnit",
+                "readings": ["き"]
+            },
+            {
+                "language": "ja",
+                "label": "規",
+                "semanticRole": "compoundWritingUnit",
+                "readings": ["き"]
+            },
+            {
+                "language": "ja",
+                "label": "黄",
+                "semanticRole": "compoundWritingUnit",
+                "readings": ["き"]
             }
         ],
         "entries": [
             "ja:char:ki",
             "ja:char:ka:ki",
             "ja:word:kanji-reading-e69da5-03",
-            "ja:word:kanji-reading-e7949f-08"
+            "ja:word:kanji-reading-e7949f-08",
+            "ja:kanji:expanded-5207",
+            "ja:kanji:expanded-6728",
+            "ja:kanji:expanded-6a5f",
+            "ja:kanji:expanded-6d88",
+            "ja:kanji:expanded-898f",
+            "ja:kanji:expanded-9ec4"
         ],
         "variants": [],
         "sha256": "e5539161d4bf993632ec6cfeafe17a397d6bf58621e19f3fadfaf0f5f9fd97c7",
@@ -725,59 +773,5 @@
         "variants": [],
         "sha256": "304a34f41fb14bc06881662d4f6205382429cc8254e6f563a6c0a99f64a6eb93",
         "frames": 10991
-    },
-    {
-        "path": "audio/0debc5fef454c3c56286c46e92cb41a9a269bebb5e43be893956df5b8643c2fc.wav",
-        "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "text": "け",
-        "request": {
-            "text": "け",
-            "model_id": "eleven_flash_v2_5",
-            "seed": 42,
-            "voice_settings": {
-                "stability": 0.9,
-                "similarity_boost": 0.85,
-                "style": 0,
-                "use_speaker_boost": true,
-                "speed": 0.9
-            },
-            "apply_text_normalization": "off",
-            "language_code": "ja"
-        },
-        "inputs": [
-            {
-                "language": "ja",
-                "label": "け",
-                "semanticRole": "atomicWritingUnit",
-                "readings": ["ke"]
-            },
-            {
-                "language": "ja",
-                "label": "ケ",
-                "semanticRole": "atomicWritingUnit",
-                "readings": ["ke"]
-            },
-            {
-                "language": "ja",
-                "label": "ヶ",
-                "semanticRole": "atomicWritingUnit",
-                "readings": ["ke"]
-            },
-            {
-                "language": "ja",
-                "label": "け",
-                "semanticRole": "lexicalUnit",
-                "readings": ["け"]
-            }
-        ],
-        "entries": [
-            "ja:char:ke",
-            "ja:char:ka:ke",
-            "ja:char:ka:small-ke",
-            "ja:word:kanji-reading-e88ab1-03"
-        ],
-        "variants": [],
-        "sha256": "5c54a26528a850dc9e886ba02d4a616c880eb6a5cdf9683070549fa1d60c00cd",
-        "frames": 13220
     }
 ]

@@ -41,13 +41,27 @@
                 "label": "ひ",
                 "semanticRole": "lexicalUnit",
                 "readings": ["ひ"]
+            },
+            {
+                "language": "ja",
+                "label": "引",
+                "semanticRole": "compoundWritingUnit",
+                "readings": ["ひ"]
+            },
+            {
+                "language": "ja",
+                "label": "飛",
+                "semanticRole": "compoundWritingUnit",
+                "readings": ["ひ"]
             }
         ],
         "entries": [
             "ja:char:hi",
             "ja:char:ka:hi",
             "ja:kanji:nichi",
-            "ja:word:kanji-reading-ja:kanji:nichi-02"
+            "ja:word:kanji-reading-ja:kanji:nichi-02",
+            "ja:kanji:expanded-5f15",
+            "ja:kanji:expanded-98db"
         ],
         "variants": [],
         "sha256": "94e6f119fe00678e7350c93acfe9d1175918f4d1d0a577f641cfcefcd0f0fad0",
@@ -89,12 +103,26 @@
                 "label": "ふ",
                 "semanticRole": "lexicalUnit",
                 "readings": ["ふ"]
+            },
+            {
+                "language": "ja",
+                "label": "布",
+                "semanticRole": "compoundWritingUnit",
+                "readings": ["ふ"]
+            },
+            {
+                "language": "ja",
+                "label": "符",
+                "semanticRole": "compoundWritingUnit",
+                "readings": ["ふ"]
             }
         ],
         "entries": [
             "ja:char:fu",
             "ja:char:ka:fu",
-            "ja:word:kanji-reading-walk-05"
+            "ja:word:kanji-reading-walk-05",
+            "ja:kanji:expanded-5e03",
+            "ja:kanji:expanded-7b26"
         ],
         "variants": [],
         "sha256": "1df8eb6647ea8b252f04b7b0f2c9b3201c6034dfd6a7fc770dce10c0bf548ef8",
@@ -227,12 +255,19 @@
                 "label": "ま",
                 "semanticRole": "lexicalUnit",
                 "readings": ["ま"]
+            },
+            {
+                "language": "ja",
+                "label": "待",
+                "semanticRole": "compoundWritingUnit",
+                "readings": ["ま"]
             }
         ],
         "entries": [
             "ja:char:ma",
             "ja:char:ka:ma",
-            "ja:word:kanji-reading-e58588-03"
+            "ja:word:kanji-reading-e58588-03",
+            "ja:kanji:expanded-5f85"
         ],
         "variants": [],
         "sha256": "2eb72868612dd3a7142254ac3ac5e3c39fc71b184477e848553cff670a4f87af",
@@ -582,6 +617,12 @@
                 "label": "よ",
                 "semanticRole": "lexicalUnit",
                 "readings": ["よ"]
+            },
+            {
+                "language": "ja",
+                "label": "読",
+                "semanticRole": "compoundWritingUnit",
+                "readings": ["よ"]
             }
         ],
         "entries": [
@@ -589,7 +630,8 @@
             "ja:char:small-yo",
             "ja:char:ka:yo",
             "ja:char:ka:small-yo",
-            "ja:word:kanji-reading-e5a5bd-03"
+            "ja:word:kanji-reading-e5a5bd-03",
+            "ja:kanji:expanded-8aad"
         ],
         "variants": [],
         "sha256": "8f0608fb4113075d2fb7f549266cdb2fb6fe76be32c333e7bbc835383393b173",
@@ -668,12 +710,19 @@
                 "label": "り",
                 "semanticRole": "lexicalUnit",
                 "readings": ["り"]
+            },
+            {
+                "language": "ja",
+                "label": "理",
+                "semanticRole": "compoundWritingUnit",
+                "readings": ["り"]
             }
         ],
         "entries": [
             "ja:char:ri",
             "ja:char:ka:ri",
-            "ja:word:kanji-reading-ja:kanji:hito-03"
+            "ja:word:kanji-reading-ja:kanji:hito-03",
+            "ja:kanji:expanded-7406"
         ],
         "variants": [],
         "sha256": "640c6812246127a2af9d452f7bbcf4b74c97c65ae7acd348c6ca3fdecb4ebcb1",
@@ -714,80 +763,6 @@
         "entries": ["ja:char:ru", "ja:char:ka:ru"],
         "variants": [],
         "sha256": "53cef4db14a23e854e25a91e71dc3c82d365a82168c8e6049dfbdd4e66d77510",
-        "frames": 12106
-    },
-    {
-        "path": "audio/297457a2ad8568ee34b749051f266a898d34b1509e92bad6a0312f9f7717a7ef.wav",
-        "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "text": "れ",
-        "request": {
-            "text": "れ",
-            "model_id": "eleven_flash_v2_5",
-            "seed": 42,
-            "voice_settings": {
-                "stability": 0.9,
-                "similarity_boost": 0.85,
-                "style": 0,
-                "use_speaker_boost": true,
-                "speed": 0.9
-            },
-            "apply_text_normalization": "off",
-            "language_code": "ja"
-        },
-        "inputs": [
-            {
-                "language": "ja",
-                "label": "れ",
-                "semanticRole": "atomicWritingUnit",
-                "readings": ["re"]
-            },
-            {
-                "language": "ja",
-                "label": "レ",
-                "semanticRole": "atomicWritingUnit",
-                "readings": ["re"]
-            }
-        ],
-        "entries": ["ja:char:re", "ja:char:ka:re"],
-        "variants": [],
-        "sha256": "883f70256f4d8e293bc4997d4924bc68b69e690d54d6e3a9f6bf154c23edccb0",
-        "frames": 12106
-    },
-    {
-        "path": "audio/108162a80c6746f648d75fe7fd66894a2825a19fdf50785f51854b6cb545c742.wav",
-        "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "text": "ろ",
-        "request": {
-            "text": "ろ",
-            "model_id": "eleven_flash_v2_5",
-            "seed": 42,
-            "voice_settings": {
-                "stability": 0.9,
-                "similarity_boost": 0.85,
-                "style": 0,
-                "use_speaker_boost": true,
-                "speed": 0.9
-            },
-            "apply_text_normalization": "off",
-            "language_code": "ja"
-        },
-        "inputs": [
-            {
-                "language": "ja",
-                "label": "ろ",
-                "semanticRole": "atomicWritingUnit",
-                "readings": ["ro"]
-            },
-            {
-                "language": "ja",
-                "label": "ロ",
-                "semanticRole": "atomicWritingUnit",
-                "readings": ["ro"]
-            }
-        ],
-        "entries": ["ja:char:ro", "ja:char:ka:ro"],
-        "variants": [],
-        "sha256": "715f6d7e725aade3b2bb089385423e08a3120b5f48b7dbb9c2b65462fcdeab7f",
         "frames": 12106
     }
 ]

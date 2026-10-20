@@ -2,6 +2,10 @@
 
 **Cabang Fitur:** `feature-expand-themed-practice`
 
+## Menggunakan kembali rekaman komponen
+
+Menghubungkan 94 kartu kanji dan bacaan pendukung ke 72 rekaman yang sudah ada dengan pelafalan sesuai bacaan kartu. Semua data audio dan permintaan rekaman asli dipertahankan. Sebanyak 47 kartu tetap dicatat secara eksplisit tanpa rekaman dalam inventaris bawaan.
+
 ## Memulihkan konvensi kosakata
 
 Menghapus kolom Penggunaan dan Contoh beserta paragrafnya, memulihkan tag kelas kata, dan memperbaiki 114 dari 173 kata tambahan menjadi ejaan kanji yang ditinjau sambil mempertahankan bentuk kana yang lazim. Mempertahankan kartu pelafalan yang ada dan memberikan tautan makna langsung pada kartu pelafalan baru. Kartu kanji dan bacaan pendukung memakai skema asli, pola goresan KanjiVG, serta bacaan yang tercatat dalam KANJIDIC. Semua ID kartu, berkas media, dan permintaan rekaman yang ada dipertahankan; label kalimat, ejaan infleksi, dan metadata pencarian audio diperbarui. Kartu pendukung tanpa rekaman dicatat secara eksplisit sebagai tidak tersedia. Kontrak kolom sebelum perluasan dan uji regresi negatif memeriksa kosakata, ejaan, tautan bacaan, visibilitas, serta cakupan dek.

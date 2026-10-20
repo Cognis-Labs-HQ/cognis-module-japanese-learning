@@ -125,6 +125,12 @@
                 "label": "鼻",
                 "semanticRole": "lexicalUnit",
                 "readings": ["はな"]
+            },
+            {
+                "language": "ja",
+                "label": "話",
+                "semanticRole": "compoundWritingUnit",
+                "readings": ["はな"]
             }
         ],
         "entries": [
@@ -135,7 +141,8 @@
             "ja:word:kanji-reading-e88ab1-01",
             "ja:word:kanji-reading-e9bcbb-01",
             "ja:word:hana-flower",
-            "ja:word:hana-nose"
+            "ja:word:hana-nose",
+            "ja:kanji:expanded-8a71"
         ],
         "variants": [],
         "sha256": "0b07f4993a6baee7518556bfbeea6efaca3734ddfd7d9740cde62ce59e31f4f4",
@@ -302,6 +309,12 @@
                 "label": "こう",
                 "semanticRole": "lexicalUnit",
                 "readings": ["こう"]
+            },
+            {
+                "language": "ja",
+                "label": "港",
+                "semanticRole": "compoundWritingUnit",
+                "readings": ["こう"]
             }
         ],
         "entries": [
@@ -310,7 +323,8 @@
             "ja:word:kanji-reading-e8a18c-07",
             "ja:word:kanji-reading-e5a5bd-05",
             "ja:word:kanji-reading-e7a59e-03",
-            "ja:word:kanji-reading-e6a0a1-01"
+            "ja:word:kanji-reading-e6a0a1-01",
+            "ja:kanji:expanded-6e2f"
         ],
         "variants": [],
         "sha256": "5ec51855cf2b0824ac4093a21228c884862137664b9d4ac9c198b6ae519e2774",
@@ -445,13 +459,20 @@
                 "label": "川",
                 "semanticRole": "lexicalUnit",
                 "readings": ["かわ"]
+            },
+            {
+                "language": "ja",
+                "label": "乾",
+                "semanticRole": "compoundWritingUnit",
+                "readings": ["かわ"]
             }
         ],
         "entries": [
             "ja:kanji:core-e5b79d",
             "ja:word:complete-pronunciation-kawa-river",
             "ja:word:kanji-reading-e5b79d-01",
-            "ja:word:kawa-river"
+            "ja:word:kawa-river",
+            "ja:kanji:expanded-4e7e"
         ],
         "variants": [],
         "sha256": "2741b053d67551afa59efbc88a2686bdc7d7204ae0b1fab4bae08ba96035c131",
@@ -738,49 +759,5 @@
         "variants": [],
         "sha256": "d671387a6e7a2287f029ad896c7ff803d4ec22140a64d859560141a34f116204",
         "frames": 13095
-    },
-    {
-        "path": "audio/201867d619fb4ce848f1b933992d1ec9219d540f51f511833c6cdcf580c448bd.wav",
-        "text": "こんにちは",
-        "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "request": {
-            "text": "こんにちは",
-            "model_id": "eleven_flash_v2_5",
-            "seed": 42,
-            "voice_settings": {
-                "stability": 0.9,
-                "similarity_boost": 0.85,
-                "style": 0,
-                "use_speaker_boost": true,
-                "speed": 0.9
-            },
-            "language_code": "ja",
-            "apply_text_normalization": "off"
-        },
-        "inputs": [
-            {
-                "language": "ja",
-                "label": "こんにちは",
-                "semanticRole": "lexicalUnit",
-                "readings": ["こんにちわ"]
-            },
-            {
-                "language": "ja",
-                "label": "こんにちわ",
-                "semanticRole": "lexicalUnit",
-                "readings": ["こんにちわ"]
-            }
-        ],
-        "entries": [
-            "ja:word:social-greeting",
-            "ja:word:complete-pronunciation-social-greeting"
-        ],
-        "variants": [],
-        "sha256": "201867d619fb4ce848f1b933992d1ec9219d540f51f511833c6cdcf580c448bd",
-        "frames": 21022,
-        "metadata": {
-            "listening": "unverified-not-performed",
-            "sourcePcmSha256": "09302194737edf2abd23e590cd00f8fd063c8bbbc8b5dad93dd7580ac3243638"
-        }
     }
 ]

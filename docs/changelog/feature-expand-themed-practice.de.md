@@ -2,6 +2,10 @@
 
 **Feature-Zweig:** `feature-expand-themed-practice`
 
+## Vorhandene Komponentenaufnahmen wiederverwenden
+
+94 ergänzende Kanji- und Lesungskarten mit 72 vorhandenen Aufnahmen verknüpfen, deren Aussprache den hinterlegten Lesungen entspricht. Alle Audiodaten und ursprünglichen Aufnahmeanfragen bleiben unverändert. 47 Karten bleiben im mitgelieferten Verzeichnis ausdrücklich ohne Aufnahme.
+
 ## Wortschatzkonventionen wiederherstellen
 
 Das hinzugefügte Feld Verwendung und Beispiele samt Absätzen entfernen, Wortart-Tags wiederherstellen und 114 der 173 neuen Wörter auf geprüfte Kanji-Schreibweisen umstellen; übliche Kana-Schreibweisen bleiben erhalten. Bestehende Aussprachekarten beibehalten und neuen Aussprachekarten direkte Bedeutungsverknüpfungen geben. Ergänzende Kanji- und Lesungskarten verwenden das ursprüngliche Schema, KanjiVG-Strichmuster und belegte KANJIDIC-Lesungen. Alle bestehenden Karten-IDs, Mediendateien und Aufnahmeanfragen bleiben unverändert; Beispieltitel, Flexionsschreibweisen und Audio-Suchdaten werden angepasst. Ergänzende Karten ohne Aufnahme sind ausdrücklich als nicht verfügbar aufgeführt. Strenge ursprüngliche Feldverträge und negative Regressionstests prüfen Wortschatz, Schreibweise, Lesungslinks, Sichtbarkeit und Stapelzuordnung.

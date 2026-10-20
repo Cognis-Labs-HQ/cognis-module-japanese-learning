@@ -742,48 +742,28 @@
                 "label": "ショ",
                 "semanticRole": "atomicWritingUnit",
                 "readings": ["sho"]
+            },
+            {
+                "language": "ja",
+                "label": "書",
+                "semanticRole": "compoundWritingUnit",
+                "readings": ["しょ"]
+            },
+            {
+                "language": "ja",
+                "label": "しょ",
+                "semanticRole": "lexicalUnit",
+                "readings": ["しょ"]
             }
         ],
-        "entries": ["ja:char:sho", "ja:char:ka:sho"],
+        "entries": [
+            "ja:char:sho",
+            "ja:char:ka:sho",
+            "ja:kanji:expanded-66f8",
+            "ja:word:kanji-reading-expanded-66f8-01"
+        ],
         "variants": [],
         "sha256": "b0bcbe6266426cd1ef26809106fb8943820f07d035992f35d196e7f183ace87c",
-        "frames": 13220
-    },
-    {
-        "path": "audio/82179e6407076ef288d6586019687d00c164af9d8f350f2f1edc0801af4c0d6f.wav",
-        "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "text": "じゃ",
-        "request": {
-            "text": "じゃ",
-            "model_id": "eleven_flash_v2_5",
-            "seed": 42,
-            "voice_settings": {
-                "stability": 0.9,
-                "similarity_boost": 0.85,
-                "style": 0,
-                "use_speaker_boost": true,
-                "speed": 0.9
-            },
-            "apply_text_normalization": "off",
-            "language_code": "ja"
-        },
-        "inputs": [
-            {
-                "language": "ja",
-                "label": "じゃ",
-                "semanticRole": "atomicWritingUnit",
-                "readings": ["ja"]
-            },
-            {
-                "language": "ja",
-                "label": "ジャ",
-                "semanticRole": "atomicWritingUnit",
-                "readings": ["ja"]
-            }
-        ],
-        "entries": ["ja:char:ja", "ja:char:ka:ja"],
-        "variants": [],
-        "sha256": "ae5e62b3f9f797c912619f4a575df3a107e6c925d7b524f07cebdd4498b0aab0",
         "frames": 13220
     }
 ]

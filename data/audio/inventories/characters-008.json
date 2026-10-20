@@ -1,0 +1,56 @@
+[
+    {
+        "path": "audio/0debc5fef454c3c56286c46e92cb41a9a269bebb5e43be893956df5b8643c2fc.wav",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "text": "け",
+        "request": {
+            "text": "け",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "apply_text_normalization": "off",
+            "language_code": "ja"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "け",
+                "semanticRole": "atomicWritingUnit",
+                "readings": ["ke"]
+            },
+            {
+                "language": "ja",
+                "label": "ケ",
+                "semanticRole": "atomicWritingUnit",
+                "readings": ["ke"]
+            },
+            {
+                "language": "ja",
+                "label": "ヶ",
+                "semanticRole": "atomicWritingUnit",
+                "readings": ["ke"]
+            },
+            {
+                "language": "ja",
+                "label": "け",
+                "semanticRole": "lexicalUnit",
+                "readings": ["け"]
+            }
+        ],
+        "entries": [
+            "ja:char:ke",
+            "ja:char:ka:ke",
+            "ja:char:ka:small-ke",
+            "ja:word:kanji-reading-e88ab1-03"
+        ],
+        "variants": [],
+        "sha256": "5c54a26528a850dc9e886ba02d4a616c880eb6a5cdf9683070549fa1d60c00cd",
+        "frames": 13220
+    }
+]

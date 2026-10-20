@@ -47,6 +47,12 @@
                 "label": "は",
                 "semanticRole": "particle",
                 "readings": ["は"]
+            },
+            {
+                "language": "ja",
+                "label": "分",
+                "semanticRole": "compoundWritingUnit",
+                "readings": ["わ"]
             }
         ],
         "entries": [
@@ -54,7 +60,8 @@
             "ja:char:small-wa",
             "ja:char:ka:wa",
             "ja:char:ka:small-wa",
-            "ja:particle:wa"
+            "ja:particle:wa",
+            "ja:kanji:expanded-5206"
         ],
         "variants": [],
         "sha256": "98911af9ad8da360e4d74383af2c5da81a623c498bc7d15099b6e1eef2bb8101",
@@ -409,9 +416,26 @@
                 "label": "ジ",
                 "semanticRole": "atomicWritingUnit",
                 "readings": ["ji"]
+            },
+            {
+                "language": "ja",
+                "label": "自",
+                "semanticRole": "compoundWritingUnit",
+                "readings": ["じ"]
+            },
+            {
+                "language": "ja",
+                "label": "除",
+                "semanticRole": "compoundWritingUnit",
+                "readings": ["じ"]
             }
         ],
-        "entries": ["ja:char:ji", "ja:char:ka:ji"],
+        "entries": [
+            "ja:char:ji",
+            "ja:char:ka:ji",
+            "ja:kanji:expanded-81ea",
+            "ja:kanji:expanded-9664"
+        ],
         "variants": [],
         "sha256": "7aa4de7fa41bd010ebea8fdbb112034144566a7b5d6d9899c699dadb7dac514b",
         "frames": 12106
@@ -446,9 +470,19 @@
                 "label": "ズ",
                 "semanticRole": "atomicWritingUnit",
                 "readings": ["zu"]
+            },
+            {
+                "language": "ja",
+                "label": "ず",
+                "semanticRole": "lexicalUnit",
+                "readings": ["ず"]
             }
         ],
-        "entries": ["ja:char:zu", "ja:char:ka:zu"],
+        "entries": [
+            "ja:char:zu",
+            "ja:char:ka:zu",
+            "ja:word:kanji-reading-expanded-56f3-02"
+        ],
         "variants": [],
         "sha256": "323dba5fe7a7d4c916c89b52a3d57e71f2ee5b64b77ad082069d532fa89e8224",
         "frames": 12106
@@ -711,79 +745,5 @@
         "variants": [],
         "sha256": "10b3572b2cd7aa9f32ade1cf0f1d0f861c83bb333a787acf7b400c446e4496c1",
         "frames": 18793
-    },
-    {
-        "path": "audio/9934e0b1fe20aa47d2ed7d4cee5d06e0f51491fc3f1529db8852892898e63af9.wav",
-        "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "text": "って",
-        "request": {
-            "text": "って",
-            "model_id": "eleven_flash_v2_5",
-            "seed": 42,
-            "voice_settings": {
-                "stability": 0.9,
-                "similarity_boost": 0.85,
-                "style": 0,
-                "use_speaker_boost": true,
-                "speed": 0.9
-            },
-            "apply_text_normalization": "off",
-            "language_code": "ja"
-        },
-        "inputs": [
-            {
-                "language": "ja",
-                "label": "って",
-                "semanticRole": "atomicWritingUnit",
-                "readings": ["tte"]
-            },
-            {
-                "language": "ja",
-                "label": "ッテ",
-                "semanticRole": "atomicWritingUnit",
-                "readings": ["tte"]
-            }
-        ],
-        "entries": ["ja:char:tte", "ja:char:ka:tte"],
-        "variants": [],
-        "sha256": "6c5b3918e346c5ee1b4b19a5be74d78f4840aab3c7ca572b97b528ce57ce172f",
-        "frames": 13220
-    },
-    {
-        "path": "audio/7fb015e0392b62aaaf5cffdb490e2e94cde951a49de0b72ea9bf4e26f726d326.wav",
-        "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "text": "っと",
-        "request": {
-            "text": "っと",
-            "model_id": "eleven_flash_v2_5",
-            "seed": 42,
-            "voice_settings": {
-                "stability": 0.9,
-                "similarity_boost": 0.85,
-                "style": 0,
-                "use_speaker_boost": true,
-                "speed": 0.9
-            },
-            "apply_text_normalization": "off",
-            "language_code": "ja"
-        },
-        "inputs": [
-            {
-                "language": "ja",
-                "label": "っと",
-                "semanticRole": "atomicWritingUnit",
-                "readings": ["tto"]
-            },
-            {
-                "language": "ja",
-                "label": "ット",
-                "semanticRole": "atomicWritingUnit",
-                "readings": ["tto"]
-            }
-        ],
-        "entries": ["ja:char:tto", "ja:char:ka:tto"],
-        "variants": [],
-        "sha256": "e57f97b45bd4584faafb07093f39dc85a31c22570683c2d7d89f37d40677e9c9",
-        "frames": 14335
     }
 ]

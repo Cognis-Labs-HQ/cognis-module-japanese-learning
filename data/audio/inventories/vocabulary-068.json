@@ -1,0 +1,74 @@
+[
+    {
+        "path": "audio/feb0f393a73d44658985f9759d96539944df3571d809ad4c6b4202f6129308fd.wav",
+        "text": "うで",
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "うで",
+                "semanticRole": "lexicalUnit",
+                "readings": ["うで"]
+            },
+            {
+                "language": "ja",
+                "label": "腕",
+                "semanticRole": "compoundWritingUnit",
+                "readings": ["うで"]
+            }
+        ],
+        "entries": [
+            "ja:word:arm",
+            "ja:word:complete-pronunciation-arm",
+            "ja:kanji:expanded-8155"
+        ],
+        "variants": [],
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "うで",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "sha256": "e0ee0f868aaafa5778b8439c94ebdc7d22af735bc08de8104135da6a56e0c3ff",
+        "frames": 15449
+    },
+    {
+        "path": "audio/d39621675202026844622404dcd34678e2f1a9a14586f8c68847496099b48a06.wav",
+        "text": "ゆび",
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "ゆび",
+                "semanticRole": "lexicalUnit",
+                "readings": ["ゆび"]
+            }
+        ],
+        "entries": ["ja:word:finger", "ja:word:complete-pronunciation-finger"],
+        "variants": [],
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "ゆび",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "sha256": "ac1d5633662a532d8993469010c69af651e8c4c9787e6ea0cb9b6f1893dec665",
+        "frames": 15449
+    }
+]

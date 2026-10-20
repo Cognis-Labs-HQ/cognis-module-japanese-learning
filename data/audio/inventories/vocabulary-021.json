@@ -241,9 +241,18 @@
                 "label": "雪",
                 "semanticRole": "lexicalUnit",
                 "readings": ["ゆき"]
+            },
+            {
+                "language": "ja",
+                "label": "雪",
+                "semanticRole": "compoundWritingUnit",
+                "readings": ["ゆき"]
             }
         ],
-        "entries": ["ja:word:kanji-reading-e8a18c-03"],
+        "entries": [
+            "ja:word:kanji-reading-e8a18c-03",
+            "ja:kanji:expanded-96ea"
+        ],
         "variants": [],
         "sha256": "7cd280097abfc17df6c58ba7abbed10de9be3c09951e0a6ff8553d392b26972d",
         "frames": 13697
@@ -631,9 +640,18 @@
                 "label": "かん",
                 "semanticRole": "lexicalUnit",
                 "readings": ["かん"]
+            },
+            {
+                "language": "ja",
+                "label": "館",
+                "semanticRole": "compoundWritingUnit",
+                "readings": ["かん"]
             }
         ],
-        "entries": ["ja:word:kanji-reading-e7a59e-02"],
+        "entries": [
+            "ja:word:kanji-reading-e7a59e-02",
+            "ja:kanji:expanded-9928"
+        ],
         "variants": [],
         "sha256": "52fdb9da24dfe32056a628a7134d2f171db7d6c9bc2aa832647900516b935895",
         "frames": 9748
@@ -661,9 +679,26 @@
                 "label": "しん",
                 "semanticRole": "lexicalUnit",
                 "readings": ["しん"]
+            },
+            {
+                "language": "ja",
+                "label": "寝",
+                "semanticRole": "compoundWritingUnit",
+                "readings": ["しん"]
+            },
+            {
+                "language": "ja",
+                "label": "新",
+                "semanticRole": "compoundWritingUnit",
+                "readings": ["しん"]
             }
         ],
-        "entries": ["ja:word:kanji-reading-e7a59e-04"],
+        "entries": [
+            "ja:word:kanji-reading-e7a59e-04",
+            "ja:kanji:expanded-5bdd",
+            "ja:kanji:expanded-65b0",
+            "ja:word:kanji-reading-expanded-5bdd-01"
+        ],
         "variants": [],
         "sha256": "68fa6446434b5e971d8d4dd1bbcb9718fea4e64fbba39e7179f0970b4e95248f",
         "frames": 11213
@@ -727,65 +762,5 @@
         "variants": [],
         "sha256": "71d14756ac694e562640db6218c4a6b95983f8e140e6286df9f03e32f44eb52c",
         "frames": 9291
-    },
-    {
-        "path": "audio/9a4211d6b63d0ad54af403c0c9a1a5789508dfe8ae0bb6e1e6d60aa943a1f6a5.wav",
-        "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "text": "だち",
-        "request": {
-            "text": "だち",
-            "model_id": "eleven_flash_v2_5",
-            "seed": 42,
-            "voice_settings": {
-                "stability": 0.9,
-                "similarity_boost": 0.85,
-                "style": 0,
-                "use_speaker_boost": true,
-                "speed": 0.9
-            },
-            "language_code": "ja"
-        },
-        "inputs": [
-            {
-                "language": "ja",
-                "label": "だち",
-                "semanticRole": "lexicalUnit",
-                "readings": ["だち"]
-            }
-        ],
-        "entries": ["ja:word:kanji-reading-e98194-01"],
-        "variants": [],
-        "sha256": "a0aa733201eba32f08edc13a613387b91024a8270766f94ec6e39f492e029bb3",
-        "frames": 13467
-    },
-    {
-        "path": "audio/ff973ba2e4d853ad568b94d2f26ffab7a7a25938cf99e91f84551ff6da0ad2f6.wav",
-        "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "text": "たち",
-        "request": {
-            "text": "たち",
-            "model_id": "eleven_flash_v2_5",
-            "seed": 42,
-            "voice_settings": {
-                "stability": 0.9,
-                "similarity_boost": 0.85,
-                "style": 0,
-                "use_speaker_boost": true,
-                "speed": 0.9
-            },
-            "language_code": "ja"
-        },
-        "inputs": [
-            {
-                "language": "ja",
-                "label": "たち",
-                "semanticRole": "lexicalUnit",
-                "readings": ["たち"]
-            }
-        ],
-        "entries": ["ja:word:kanji-reading-e98194-02"],
-        "variants": [],
-        "sha256": "9e4c995ec35e56d5bbbd2f9e2b608b32e1116c7d9008870d8fc40dd54b528038",
-        "frames": 12451
     }
 ]

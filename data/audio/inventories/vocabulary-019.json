@@ -582,12 +582,19 @@
                 "label": "かた",
                 "semanticRole": "lexicalUnit",
                 "readings": ["かた"]
+            },
+            {
+                "language": "ja",
+                "label": "硬",
+                "semanticRole": "compoundWritingUnit",
+                "readings": ["かた"]
             }
         ],
         "entries": [
             "ja:word:kanji-reading-ja:kanji:go-02",
             "ja:word:shoulder",
-            "ja:word:complete-pronunciation-shoulder"
+            "ja:word:complete-pronunciation-shoulder",
+            "ja:kanji:expanded-786c"
         ],
         "variants": [],
         "sha256": "283fc0a57a9d84ad0f9e027b1a0787b05ed0629e6f6ebbc69705c9491be23c65",
@@ -716,11 +723,18 @@
                 "label": "たい",
                 "semanticRole": "lexicalUnit",
                 "readings": ["たい"]
+            },
+            {
+                "language": "ja",
+                "label": "太",
+                "semanticRole": "compoundWritingUnit",
+                "readings": ["たい"]
             }
         ],
         "entries": [
             "ja:word:kanji-reading-e69da5-06",
-            "ja:word:kanji-reading-e5a4a7-03"
+            "ja:word:kanji-reading-e5a4a7-03",
+            "ja:kanji:expanded-592a"
         ],
         "variants": [],
         "sha256": "3f86bf4cebf526fc9d0c404b94ea3d827d2dcdd410b242845d63cd135efa9dfe",
@@ -758,36 +772,5 @@
         "variants": [],
         "sha256": "6cdb7f2be4791a39032a87f09ed1f2fe04aab6286d801fae7d796f9bcca2eaa6",
         "frames": 12317
-    },
-    {
-        "path": "audio/096088c37e3482f972b2c7f98c75b35f17c6d2268a213cbbb8954df5f54267af.wav",
-        "text": "かぎ",
-        "inputs": [
-            {
-                "language": "ja",
-                "label": "かぎ",
-                "semanticRole": "lexicalUnit",
-                "readings": ["かぎ"]
-            }
-        ],
-        "entries": ["ja:word:key", "ja:word:complete-pronunciation-key"],
-        "variants": [],
-        "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "request": {
-            "text": "かぎ",
-            "model_id": "eleven_flash_v2_5",
-            "seed": 42,
-            "voice_settings": {
-                "stability": 0.9,
-                "similarity_boost": 0.85,
-                "style": 0,
-                "use_speaker_boost": true,
-                "speed": 0.9
-            },
-            "language_code": "ja",
-            "apply_text_normalization": "off"
-        },
-        "sha256": "cc45e9d73c8c36fa49e1cc01eb4ef7fceec1989540dd98d1ad300beb993da219",
-        "frames": 15449
     }
 ]
