@@ -1,0 +1,285 @@
+[
+    {
+        "id": "ja:word:complete-pronunciation-weather-sun",
+        "label": "たいよう",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["たいよう"],
+            "audio": "audio/eee14699f4b93c444f03b867e79632ccdd5a4d77530c6ad0a280ee4953fc1395.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:ta",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:i",
+                        "relation": "reading-kana",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:yo",
+                        "relation": "reading-kana",
+                        "position": 2
+                    },
+                    {
+                        "entryId": "ja:char:u",
+                        "relation": "reading-kana",
+                        "position": 3
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:weather-sun",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:weather-sun",
+        "label": "太陽",
+        "class": "lexical:noun",
+        "fields": {
+            "pronunciation": ["たいよう"],
+            "reference_images": [
+                "images/0fa7d93f425484a16b9b63c4755cfde41fda49e8967a1ba0a5283227d2cb3c12.jpg"
+            ],
+            "audio": "audio/eee14699f4b93c444f03b867e79632ccdd5a4d77530c6ad0a280ee4953fc1395.wav"
+        },
+        "tags": ["noun", "weather"],
+        "references": [
+            {
+                "entryId": "ja:definition:weather-sun",
+                "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-592a",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:kanji:expanded-967d",
+                "relation": "spelling",
+                "position": 1
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-weather-sun",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:complete-pronunciation-weather-snow",
+        "label": "ゆき",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["ゆき"],
+            "audio": "audio/421f3a0a6b7e6e3c8ec0b9c498891ca2b2f480ad28d529374f8d64df5c22097c.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:yu",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:ki",
+                        "relation": "reading-kana",
+                        "position": 1
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:weather-snow",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:weather-snow",
+        "label": "雪",
+        "class": "lexical:noun",
+        "fields": {
+            "pronunciation": ["ゆき"],
+            "reference_images": [
+                "images/4afa8e73a4e31604c1ff4f967242593ab2314f14697ce2b036bcc2f275d7a9a7.jpg"
+            ],
+            "audio": "audio/421f3a0a6b7e6e3c8ec0b9c498891ca2b2f480ad28d529374f8d64df5c22097c.wav"
+        },
+        "tags": ["noun", "weather"],
+        "references": [
+            {
+                "entryId": "ja:definition:weather-snow",
+                "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-96ea",
+                "relation": "spelling",
+                "position": 0
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-weather-snow",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:complete-pronunciation-weather-wind",
+        "label": "かぜ",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["かぜ"],
+            "audio": "audio/dfa5155a60f29686d1b17d3683d241f36137dca878598d9294e1cfff5404b7e9.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:ka",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:ze",
+                        "relation": "reading-kana",
+                        "position": 1
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:weather-wind",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:weather-wind",
+        "label": "風",
+        "class": "lexical:noun",
+        "fields": {
+            "pronunciation": ["かぜ"],
+            "reference_images": [
+                "images/f7b349b934b0c671d660e263eed911b5e927a43297ddbe68da87d1cf834738d5.jpg"
+            ],
+            "audio": "audio/dfa5155a60f29686d1b17d3683d241f36137dca878598d9294e1cfff5404b7e9.wav"
+        },
+        "tags": ["noun", "weather"],
+        "references": [
+            {
+                "entryId": "ja:definition:weather-wind",
+                "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-98a8",
+                "relation": "spelling",
+                "position": 0
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-weather-wind",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:complete-pronunciation-weather-cloud",
+        "label": "くも",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["くも"],
+            "audio": "audio/1122bcf0e6f6e6f651a38690cf9df6138e70da9afc2c521e4324d782835a2988.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:ku",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:mo",
+                        "relation": "reading-kana",
+                        "position": 1
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:weather-cloud",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:weather-cloud",
+        "label": "雲",
+        "class": "lexical:noun",
+        "fields": {
+            "pronunciation": ["くも"],
+            "reference_images": [
+                "images/ed92c1bb7133f5091aec0e0bcd7d4c00336ffc4363d8e09c3bd457f0d140f4a9.jpg"
+            ],
+            "audio": "audio/1122bcf0e6f6e6f651a38690cf9df6138e70da9afc2c521e4324d782835a2988.wav"
+        },
+        "tags": ["noun", "weather"],
+        "references": [
+            {
+                "entryId": "ja:definition:weather-cloud",
+                "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-96f2",
+                "relation": "spelling",
+                "position": 0
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-weather-cloud",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    }
+]

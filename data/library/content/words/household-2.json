@@ -1,7 +1,7 @@
 [
     {
         "id": "ja:word:hat",
-        "label": "ぼうし",
+        "label": "帽子",
         "class": "lexical:noun",
         "tags": ["noun", "beginner", "household"],
         "fields": {
@@ -16,6 +16,16 @@
             {
                 "entryId": "ja:def:household-hat",
                 "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-5e3d",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:kanji:expanded-5b50",
+                "relation": "spelling",
+                "position": 1
             }
         ],
         "referenceGroups": {
@@ -63,7 +73,7 @@
     },
     {
         "id": "ja:word:key",
-        "label": "かぎ",
+        "label": "鍵",
         "class": "lexical:noun",
         "tags": ["noun", "beginner", "household"],
         "fields": {
@@ -78,6 +88,11 @@
             {
                 "entryId": "ja:def:household-key",
                 "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-9375",
+                "relation": "spelling",
+                "position": 0
             }
         ],
         "referenceGroups": {
@@ -94,7 +109,7 @@
     },
     {
         "id": "ja:word:phone",
-        "label": "でんわ",
+        "label": "電話",
         "class": "lexical:noun",
         "tags": ["noun", "beginner", "household"],
         "fields": {
@@ -109,6 +124,16 @@
             {
                 "entryId": "ja:def:household-phone",
                 "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:core-e99bbb",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:kanji:expanded-8a71",
+                "relation": "spelling",
+                "position": 1
             }
         ],
         "referenceGroups": {

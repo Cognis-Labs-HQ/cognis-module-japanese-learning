@@ -1,0 +1,162 @@
+[
+    {
+        "id": "ja:sentence:care-example-soap",
+        "label": "石けんで手を洗う",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/be073acdd5b323280667b242905fd7aeed26e6b4928b1a846f6590c3f56c2bd9.wav",
+            "pronunciation": ["せっけんでてをあらう"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:care-soap",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:de",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:hand",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:household-wash",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:care-example-soap",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:care-example-towel",
+        "label": "タオルはどこですか",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/a94d59be57042072ea7fbfc31ff14c38c192229f01f6f352193f2bf945ae979f.wav",
+            "pronunciation": ["タオルはどこですか"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:care-towel",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:doko",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:word:desu",
+                "relation": "words",
+                "position": 3
+            },
+            {
+                "entryId": "ja:particle:ka",
+                "relation": "particles",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:care-example-towel",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:care-example-toothbrush",
+        "label": "歯ブラシはかばんにある",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/a8b78c114fc0e19e817519c939974924f01df20c0ac20d8b22cd8b7e86582810.wav",
+            "pronunciation": ["ハブラシはかばんにある"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:care-toothbrush",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:bag",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:ni",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:aru-exist",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:care-example-toothbrush",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:care-example-toothpaste",
+        "label": "スーパーで歯磨き粉を買う",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/6db4768edd16b0feb08772ad655e95c9aa82838d8916662531f06b5e560d055f.wav",
+            "pronunciation": ["スーパーではみがきこをかう"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:places-supermarket",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:de",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:care-toothpaste",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:travel-buy",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:care-example-toothpaste",
+                "relation": "definitions"
+            }
+        ]
+    }
+]

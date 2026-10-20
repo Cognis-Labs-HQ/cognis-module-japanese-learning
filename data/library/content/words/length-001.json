@@ -1,0 +1,151 @@
+[
+    {
+        "id": "ja:word:complete-pronunciation-length-long",
+        "label": "ながい",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["ながい"],
+            "audio": "audio/587c3edc961274ec243327638cb35f447afd39beacdb23fa800e29fb2d4d949e.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:na",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:ga",
+                        "relation": "reading-kana",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:i",
+                        "relation": "reading-kana",
+                        "position": 2
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:length-long",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:length-long",
+        "label": "長い",
+        "class": "lexical:adjective",
+        "fields": {
+            "pronunciation": ["ながい"],
+            "reference_images": [
+                "images/580b752004ebc7f6e3352519befa8a073eb8a25a23deb2ff6fc9e177b278ed25.jpg"
+            ],
+            "audio": "audio/587c3edc961274ec243327638cb35f447afd39beacdb23fa800e29fb2d4d949e.wav"
+        },
+        "tags": ["adjective", "length-form-long"],
+        "references": [
+            {
+                "entryId": "ja:definition:length-long",
+                "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-9577",
+                "relation": "spelling",
+                "position": 0
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-length-long",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:complete-pronunciation-length-short",
+        "label": "みじかい",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["みじかい"],
+            "audio": "audio/5f9dd5ef19c40d4c579d4c291e33b3796bc666f9f7e8aef9fe7080f795d88e2a.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:mi",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:ji",
+                        "relation": "reading-kana",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:ka",
+                        "relation": "reading-kana",
+                        "position": 2
+                    },
+                    {
+                        "entryId": "ja:char:i",
+                        "relation": "reading-kana",
+                        "position": 3
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:length-short",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:length-short",
+        "label": "短い",
+        "class": "lexical:adjective",
+        "fields": {
+            "pronunciation": ["みじかい"],
+            "reference_images": [
+                "images/82bc23aab05b3ed283ae52433ae9f15a8e0a07be08b5c9754501af39cac4d310.jpg"
+            ],
+            "audio": "audio/5f9dd5ef19c40d4c579d4c291e33b3796bc666f9f7e8aef9fe7080f795d88e2a.wav"
+        },
+        "tags": ["adjective", "length-form-short"],
+        "references": [
+            {
+                "entryId": "ja:definition:length-short",
+                "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-77ed",
+                "relation": "spelling",
+                "position": 0
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-length-short",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    }
+]

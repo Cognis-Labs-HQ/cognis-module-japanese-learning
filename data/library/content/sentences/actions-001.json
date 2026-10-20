@@ -1,0 +1,137 @@
+[
+    {
+        "id": "ja:sentence:actions-example-jump",
+        "label": "犬は庭で跳ぶ",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/8945fd89f3b8dada177474b7fa3094ae9f73da951cad720f7e23ae1c68a7caea.wav",
+            "pronunciation": ["いぬはにわでとぶ"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:inu",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:rooms-garden",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:de",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:actions-jump",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:actions-example-jump",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:actions-example-swim",
+        "label": "海でゆっくり泳ぐ",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/d4181a47e109a90938690080c9b7ab3215c9516d59eaa4e7c2ae7210db3caeee.wav",
+            "pronunciation": ["うみでゆっくりおよぐ"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:umi",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:de",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:yukkuri",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:word:actions-swim",
+                "relation": "words",
+                "position": 3
+            },
+            {
+                "entryId": "ja:definition:actions-example-swim",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:actions-example-laugh",
+        "label": "友達と笑う",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/31a79a4b2c9e129fe8bfce9b6b27a3d5158da242aba556753e49d512a2fb2687.wav",
+            "pronunciation": ["ともだちとわらう"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:tomodachi",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:to",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:actions-laugh",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:definition:actions-example-laugh",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:actions-example-cry",
+        "label": "私は泣く",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/d3d124ab5b521de2637b1a65871a03e844159c3a6d69b138cb0db456bdb2c14b.wav",
+            "pronunciation": ["わたしはなく"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:watashi",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:actions-cry",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:definition:actions-example-cry",
+                "relation": "definitions"
+            }
+        ]
+    }
+]

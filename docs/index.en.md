@@ -2,6 +2,10 @@
 
 The Japanese Study module installs declarative Japanese learning records into the host-owned Study Library while remaining isolated from Library internals, databases, APIs, and browser code.
 
+## Packaged content
+
+The pack provides writing guides, themed vocabulary, linked examples, illustrations and starter decks. The packaged content and media inventories are the source of truth for availability.
+
 ## Usage
 
 Enable the Study gateway and Library adapter, then enable this module. Its bootstrap resolves `study:library:provider` from `ctx` and ingests `data/library`. Administrators and learners use the Library adapter's generated Study interface rather than a module-owned route.
@@ -62,7 +66,7 @@ Resolver roles are now reserved for true compositions: kanji readings, word spel
 
 ## Complete kana tables
 
-Alongside all 46 basic gojūon entries and 25 dakuten or handakuten forms per script, the pack includes small kana, all standard yōon series, and common sokuon geminations. Examples include `ひゃ`, `しゅ`, `じゃ`, and `って`, plus their katakana equivalents.
+Alongside basic gojūon entries and dakuten or handakuten forms per script, the pack includes small kana, all standard yōon series, and common sokuon geminations. Examples include `ひゃ`, `しゅ`, `じゃ`, and `って`, plus their katakana equivalents.
 
 ## Dynamic variant placement
 
@@ -110,7 +114,7 @@ The pack is republished for the latest Library identity safeguards. Every Kana r
 
 ## Explicit Kana child hierarchies
 
-Aligned with the latest Library relationship contract by marking Kana parent relationships as both variants and spatial children. The suppressed duplicate relationship section makes the explicit `usage_note` field unnecessary, so it and its four record values have been removed.
+Aligned with the latest Library relationship contract by marking Kana parent relationships as both variants and spatial children. The suppressed duplicate relationship section makes the explicit `usage_note` field unnecessary, so it and its record values have been removed.
 
 ## Canonical Kanji reading vocabulary
 
@@ -236,7 +240,7 @@ A Kanji with one pronunciation links directly to ordered atomic Kana. A Kanji wi
 
 ## Reviewed location and manner batch
 
-The reviewed beginner batch adds `ここ`, `そこ`, `どこ`, `いる`, `ある`, `きれい`, `とても`, `ゆっくり`, and `です`, plus eight varied sentences about locations, existence, questions, appearance, and manner. Every new word has a localized definition and ordered Kana spelling; every sentence has an exact localized meaning, ordered lexical composition, and a complete hidden pronunciation path.
+The reviewed beginner batch adds `ここ`, `そこ`, `どこ`, `いる`, `ある`, `きれい`, `とても`, `ゆっくり`, and `です`, plus varied sentences about locations, existence, questions, appearance, and manner. Every new word has a localized definition and ordered Kana spelling; every sentence has an exact localized meaning, ordered lexical composition, and a complete hidden pronunciation path.
 
 ## Destructive Uninstall Cleanup
 
@@ -304,7 +308,7 @@ The schema declares Explore slugs `kana`, `kanji`, `vocabulary` and `sentences` 
 
 ## Starter Flashcard Decks
 
-The Japanese provider declares six starter decks in `data/starter-decks.json`: Hiragana Basics (46), Katakana Basics (46), Everyday Kanji (10), First Japanese Words (9), Everyday Japanese Verbs (8), and First Japanese Sentences (12). Stable keys, four localized names, schema IDs and visible source record IDs let Cognis resolve canonical Library IDs. Cognis owns browsing, favourites, sharing and learner progress; the module never creates user decks or queries the host database.
+The Japanese provider declares starter decks in `data/starter-decks.json`: Hiragana Basics, Katakana Basics, Everyday Kanji, First Japanese Words, Everyday Japanese Verbs, and First Japanese Sentences. Stable keys, four localized names, schema IDs and visible source record IDs let Cognis resolve canonical Library IDs. Cognis owns browsing, favourites, sharing and learner progress; the module never creates user decks or queries the host database.
 
 ## Review and lifecycle fixes
 
@@ -334,7 +338,7 @@ Jisho candidates without a complete Kana reconstruction are rejected. Multi-read
 
 ## Speech and recordings
 
-The pack includes verified WAV recordings for every spoken curated card, character, particle and reachable schema transformation, including plurals and chained verb forms. `xya0RvcJtofTcFTOdX4E` is the designated voice for this language. `data/audio/recordings.json` records each request, voice, model, settings, transformation path and file checksum; credentials and generation tools are not packaged.
+Bundled WAV files receive checksum, format and PCM integrity checks; listening review is recorded separately and may be unverified. `data/audio/recordings.json` lists available recordings and compositions. `data/audio/unavailable.json` explicitly lists cards without bundled audio; missing recordings are not playback URLs. The designated voice is `xya0RvcJtofTcFTOdX4E`. Credentials and offline generation tools are not packaged.
 
 Sentences reuse the exact PCM samples of their ordered word and particle recordings, including selected transformations. The bundled sentence files therefore preserve the same voice and pronunciation as individual playback. New sentences use host composition; a missing variant must never substitute its base-form pronunciation. Recordings cover the curated pack, not every lazy dictionary entry or possible user-authored sentence.
 
@@ -346,7 +350,7 @@ Every layer exposes the optional reference-image field in the host editor and de
 
 ## Recording Inventories
 
-`data/audio/recordings.json` is a compact manifest with language, voice, model, shared processing settings, totals and integrity-checked inventory paths. Purpose-grouped files under `data/audio/inventories/` separately describe characters, vocabulary, transformations, direct sentences and precomposed sentence recordings. Each file stays below 800 lines and retains exact requests, per-clip voice provenance, transformation paths and audio checksums. Bootstrap verifies every inventory checksum and count before registering playback; the recording bytes and lookup precedence are unchanged.
+`data/audio/recordings.json` uses inventory format 2 with language, voice, model, processing settings, totals and hashed purpose-index paths. Files under `data/audio/indexes/` list the hashed shards under `data/audio/inventories/`, grouped into characters, vocabulary, transformations, direct sentences and sentence compositions. Root and purpose indexes stay below 400 lines; recording shards stay at or below 800 lines. The loader verifies both levels, counts, allowed paths, purpose/kind agreement and duplicate paths before registering playback. Recording objects, audio bytes and lookup precedence are preserved.
 
 ## Explicit catalog normalization and sentence composition inventories
 

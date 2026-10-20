@@ -1,0 +1,90 @@
+[
+    {
+        "path": "audio/587c3edc961274ec243327638cb35f447afd39beacdb23fa800e29fb2d4d949e.wav",
+        "text": "ながい",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "長い",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "ながい",
+                "semanticRole": "lexicalUnit",
+                "readings": ["ながい"]
+            },
+            {
+                "language": "ja",
+                "label": "長い",
+                "semanticRole": "lexicalUnit",
+                "readings": ["ながい"]
+            }
+        ],
+        "entries": [
+            "ja:word:length-long",
+            "ja:word:complete-pronunciation-length-long"
+        ],
+        "variants": [],
+        "sha256": "587c3edc961274ec243327638cb35f447afd39beacdb23fa800e29fb2d4d949e",
+        "frames": 14335,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "3531f4e5e633bb30caf675e9e741368e5ecbf43e153fec46ecd470fdf888e950"
+        }
+    },
+    {
+        "path": "audio/5f9dd5ef19c40d4c579d4c291e33b3796bc666f9f7e8aef9fe7080f795d88e2a.wav",
+        "text": "みじかい",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "短い",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "みじかい",
+                "semanticRole": "lexicalUnit",
+                "readings": ["みじかい"]
+            },
+            {
+                "language": "ja",
+                "label": "短い",
+                "semanticRole": "lexicalUnit",
+                "readings": ["みじかい"]
+            }
+        ],
+        "entries": [
+            "ja:word:length-short",
+            "ja:word:complete-pronunciation-length-short"
+        ],
+        "variants": [],
+        "sha256": "5f9dd5ef19c40d4c579d4c291e33b3796bc666f9f7e8aef9fe7080f795d88e2a",
+        "frames": 16564,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "6d737c608214d8e41523eca9d080c7e4a8040c414d91263449d8dbe699db26bb"
+        }
+    }
+]

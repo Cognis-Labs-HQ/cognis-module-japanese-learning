@@ -1,0 +1,157 @@
+[
+    {
+        "id": "ja:sentence:tableware-example-cup",
+        "label": "カップはテーブルにある",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/bd54e46197d0d5a0c77dde74eb5c09b2e2268086dc9d909e2bb42cc56a95adc6.wav",
+            "pronunciation": ["カップはてーぶるにある"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:tableware-cup",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:table",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:ni",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:aru-exist",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:tableware-example-cup",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:tableware-example-plate",
+        "label": "皿はきれいです",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/d88c6bf37c9039bf070643e801f084b381414d53b3d225b8ce8e12696bf6803f.wav",
+            "pronunciation": ["さらはきれいです"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:tableware-plate",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:kirei",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:word:desu",
+                "relation": "words",
+                "position": 3
+            },
+            {
+                "entryId": "ja:definition:tableware-example-plate",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:tableware-example-spoon",
+        "label": "スプーンでスープを飲む",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/712c16cba5f529de0750b95704d72aa583f372136bf83d6c75de618bd2ebbb0f.wav",
+            "pronunciation": ["スプーンですーぷをのむ"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:tableware-spoon",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:de",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:soup",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:nomu",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:tableware-example-spoon",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:tableware-example-fork",
+        "label": "フォークで魚を食べる",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/f5db44cbb8df758d04dfd2f33fa0361e724b7c3c2f7c01ebfea42af22de63160.wav",
+            "pronunciation": ["フォークでさかなをたべる"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:tableware-fork",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:de",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:fish",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:taberu",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:tableware-example-fork",
+                "relation": "definitions"
+            }
+        ]
+    }
+]

@@ -1,0 +1,146 @@
+[
+    {
+        "id": "ja:word:complete-pronunciation-width-wide",
+        "label": "ひろい",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["ひろい"],
+            "audio": "audio/ea8f1b36d566af028eac93fe41cbf66e219da86d3090d67ef9efc5db52694881.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:hi",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:ro",
+                        "relation": "reading-kana",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:i",
+                        "relation": "reading-kana",
+                        "position": 2
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:width-wide",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:width-wide",
+        "label": "広い",
+        "class": "lexical:adjective",
+        "fields": {
+            "pronunciation": ["ひろい"],
+            "reference_images": [
+                "images/ec05ee11b84e046a813c45393b47f78951734b98d515a387c2382071a59552bf.jpg"
+            ],
+            "audio": "audio/ea8f1b36d566af028eac93fe41cbf66e219da86d3090d67ef9efc5db52694881.wav"
+        },
+        "tags": ["adjective", "width-form-wide"],
+        "references": [
+            {
+                "entryId": "ja:definition:width-wide",
+                "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-5e83",
+                "relation": "spelling",
+                "position": 0
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-width-wide",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:complete-pronunciation-width-narrow",
+        "label": "せまい",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["せまい"],
+            "audio": "audio/190978ad33e611c8748af68781dd3bbe9e6d15fe6e4154d0f0d15a6d92af4e48.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:se",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:ma",
+                        "relation": "reading-kana",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:i",
+                        "relation": "reading-kana",
+                        "position": 2
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:width-narrow",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:width-narrow",
+        "label": "狭い",
+        "class": "lexical:adjective",
+        "fields": {
+            "pronunciation": ["せまい"],
+            "reference_images": [
+                "images/4f46880320d08d58b1040f221050aa0791ffe2a5b8de83525f10b51b3a19b01d.jpg"
+            ],
+            "audio": "audio/190978ad33e611c8748af68781dd3bbe9e6d15fe6e4154d0f0d15a6d92af4e48.wav"
+        },
+        "tags": ["adjective", "width-form-narrow"],
+        "references": [
+            {
+                "entryId": "ja:definition:width-narrow",
+                "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-72ed",
+                "relation": "spelling",
+                "position": 0
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-width-narrow",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    }
+]

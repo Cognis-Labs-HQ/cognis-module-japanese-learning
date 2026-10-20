@@ -1,0 +1,280 @@
+[
+    {
+        "id": "ja:word:complete-pronunciation-directions-left",
+        "label": "ひだり",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["ひだり"],
+            "audio": "audio/e93ca5791cb0654d50a181c775b6aa4991c9153789425a89245526e55778f999.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:hi",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:da",
+                        "relation": "reading-kana",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:ri",
+                        "relation": "reading-kana",
+                        "position": 2
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:directions-left",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:directions-left",
+        "label": "左",
+        "class": "lexical:noun",
+        "fields": {
+            "pronunciation": ["ひだり"],
+            "reference_images": [
+                "images/a5534d8e61448a0ee4e945556d25bdb98b50719d8f730b36b7187cd29478f9fe.jpg"
+            ],
+            "audio": "audio/e93ca5791cb0654d50a181c775b6aa4991c9153789425a89245526e55778f999.wav"
+        },
+        "tags": ["noun", "directions"],
+        "references": [
+            {
+                "entryId": "ja:definition:directions-left",
+                "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-5de6",
+                "relation": "spelling",
+                "position": 0
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-directions-left",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:complete-pronunciation-directions-right",
+        "label": "みぎ",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["みぎ"],
+            "audio": "audio/ed93db6c98ed392d3a506cab806c1427f1017747f721a75bf290666764912595.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:mi",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:gi",
+                        "relation": "reading-kana",
+                        "position": 1
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:directions-right",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:directions-right",
+        "label": "右",
+        "class": "lexical:noun",
+        "fields": {
+            "pronunciation": ["みぎ"],
+            "reference_images": [
+                "images/63e80b3f8ec649c1d3f2475c6496870879c5352b086eb43c8c10615a302347bb.jpg"
+            ],
+            "audio": "audio/ed93db6c98ed392d3a506cab806c1427f1017747f721a75bf290666764912595.wav"
+        },
+        "tags": ["noun", "directions"],
+        "references": [
+            {
+                "entryId": "ja:definition:directions-right",
+                "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-53f3",
+                "relation": "spelling",
+                "position": 0
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-directions-right",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:complete-pronunciation-directions-north",
+        "label": "きた",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["きた"],
+            "audio": "audio/26124eeb2a43359318daa0ad92a4eebf2560ed3e2668f03fa19551ef49cdfd80.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:ki",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:ta",
+                        "relation": "reading-kana",
+                        "position": 1
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:directions-north",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:directions-north",
+        "label": "北",
+        "class": "lexical:noun",
+        "fields": {
+            "pronunciation": ["きた"],
+            "reference_images": [
+                "images/51f803754b706194f683784a36082800596480f1829f0ec800cbe268085d4592.jpg"
+            ],
+            "audio": "audio/26124eeb2a43359318daa0ad92a4eebf2560ed3e2668f03fa19551ef49cdfd80.wav"
+        },
+        "tags": ["noun", "directions"],
+        "references": [
+            {
+                "entryId": "ja:definition:directions-north",
+                "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-5317",
+                "relation": "spelling",
+                "position": 0
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-directions-north",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:complete-pronunciation-directions-south",
+        "label": "みなみ",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["みなみ"],
+            "audio": "audio/efb36a05650cd2168d0225e64c21fffce858997ddc44eb61322f9d53c3309287.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:mi",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:na",
+                        "relation": "reading-kana",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:mi",
+                        "relation": "reading-kana",
+                        "position": 2
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:directions-south",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:directions-south",
+        "label": "南",
+        "class": "lexical:noun",
+        "fields": {
+            "pronunciation": ["みなみ"],
+            "reference_images": [
+                "images/4dd758267e57c73770fb99492cc0baebd5207b1d25c212eed743b0fb00ff49b8.jpg"
+            ],
+            "audio": "audio/efb36a05650cd2168d0225e64c21fffce858997ddc44eb61322f9d53c3309287.wav"
+        },
+        "tags": ["noun", "directions"],
+        "references": [
+            {
+                "entryId": "ja:definition:directions-south",
+                "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-5357",
+                "relation": "spelling",
+                "position": 0
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-directions-south",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    }
+]

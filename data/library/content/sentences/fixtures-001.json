@@ -1,0 +1,152 @@
+[
+    {
+        "id": "ja:sentence:fixtures-example-fridge",
+        "label": "冷蔵庫に卵がある",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/1f603703466d73dccb18cf872b77397c7b02a2f9ca5f2454e4e5531dfdac356e.wav",
+            "pronunciation": ["れいぞうこにたまごがある"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:fixtures-fridge",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:ni",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:egg",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:ga",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:aru-exist",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:fixtures-example-fridge",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:fixtures-example-oven",
+        "label": "オーブンはとても大きい",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/0d623219a4e0d0dd802263a8c3a21a5cecc5cd6c93945bef669d1055c52ad746.wav",
+            "pronunciation": ["オーブンはとてもおおきい"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:fixtures-oven",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:totemo",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:word:ookii",
+                "relation": "words",
+                "position": 3
+            },
+            {
+                "entryId": "ja:definition:fixtures-example-oven",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:fixtures-example-sink",
+        "label": "流しで皿を洗う",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/cce1c8695bd4e1666ac75721ad255af12e7690e4d5b680a737ae87a20c580f7f.wav",
+            "pronunciation": ["ながしでさらをあらう"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:fixtures-sink",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:de",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:tableware-plate",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:household-wash",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:fixtures-example-sink",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:fixtures-example-shower",
+        "label": "シャワーはここです",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/99e4f78262fea9d042245ebaac94a2e15ccf9be9a37f6271d9166041da9eb0ce.wav",
+            "pronunciation": ["シャワーはここです"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:fixtures-shower",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:koko",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:word:desu",
+                "relation": "words",
+                "position": 3
+            },
+            {
+                "entryId": "ja:definition:fixtures-example-shower",
+                "relation": "definitions"
+            }
+        ]
+    }
+]

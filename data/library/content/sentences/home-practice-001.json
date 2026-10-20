@@ -1,0 +1,162 @@
+[
+    {
+        "id": "ja:sentence:home-practice-example-read-items",
+        "label": "本と新聞を読む",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/37325b1ca00b211c55418ef2dd2d7e50d23003b345fb3324450df6cd8b2568c0.wav",
+            "pronunciation": ["ほんとしんぶんをよむ"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:reading-time-book",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:to",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:reading-time-newspaper",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:core-read",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:home-practice-example-read-items",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:home-practice-example-wash-dishes",
+        "label": "皿とカップを洗う",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/98bc106894ec3d46bcc43bf3a7dc8dbf22311c8465a26ca8565d4d51abf02917.wav",
+            "pronunciation": ["さらとカップをあらう"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:tableware-plate",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:to",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:tableware-cup",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:household-wash",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:home-practice-example-wash-dishes",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:home-practice-example-give-soup",
+        "label": "友達にスープをあげる",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/b753612eb5370f1f9802f5d758791dbb0b258233507843a3caa12e9c76c10c79.wav",
+            "pronunciation": ["ともだちにすーぷをあげる"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:tomodachi",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:ni",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:soup",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:exchange-give",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:home-practice-example-give-soup",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:home-practice-example-key-box",
+        "label": "鍵は箱にある",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/abc36ea0d1488fd091ef3409e7a3f68acbd0a526aafb946eae7d3d8299a92d85.wav",
+            "pronunciation": ["かぎははこにある"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:key",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:containers-box",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:ni",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:aru-exist",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:home-practice-example-key-box",
+                "relation": "definitions"
+            }
+        ]
+    }
+]

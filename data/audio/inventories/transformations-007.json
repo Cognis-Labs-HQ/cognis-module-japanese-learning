@@ -1,48 +1,10 @@
 [
     {
-        "path": "audio/c558301a62285e5e2677a8d458ff7dbf253f6f9975c7fa8760993a33ec1c5d39.wav",
+        "path": "audio/4b56d03336142068960fe6a146538e28ed740fa7e853abf7a8429d6cbb2c4a79.wav",
         "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "text": "行って",
+        "text": "のみました",
         "request": {
-            "text": "行って",
-            "model_id": "eleven_flash_v2_5",
-            "seed": 42,
-            "voice_settings": {
-                "stability": 0.9,
-                "similarity_boost": 0.85,
-                "style": 0,
-                "use_speaker_boost": true,
-                "speed": 0.9
-            },
-            "language_code": "ja",
-            "apply_text_normalization": "off"
-        },
-        "inputs": [
-            {
-                "language": "ja",
-                "label": "行って",
-                "semanticRole": "lexicalUnit",
-                "readings": ["いって"]
-            }
-        ],
-        "entries": [],
-        "variants": [
-            {
-                "entryId": "ja:word:iku",
-                "setId": "godan-iku",
-                "path": ["te-form"],
-                "state": "te-form"
-            }
-        ],
-        "sha256": "8ba63c53fd9b57c9a9a9058a00d3aaa1e6cedbe60d6c50d2e640f20bed0ac843",
-        "frames": 18793
-    },
-    {
-        "path": "audio/b24acf4e4a971e1f3e5f579ed1d044492db20aa8945465b6abf2326b755d5f11.wav",
-        "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "text": "いきたい",
-        "request": {
-            "text": "いきたい",
+            "text": "のみました",
             "model_id": "eleven_flash_v2_5",
             "seed": 42,
             "voice_settings": {
@@ -57,214 +19,29 @@
         "inputs": [
             {
                 "language": "ja",
-                "label": "行きたい",
+                "label": "飲みました",
                 "semanticRole": "lexicalUnit",
-                "readings": ["いきたい"]
+                "readings": ["のみました"]
             }
         ],
         "entries": [],
         "variants": [
             {
-                "entryId": "ja:word:iku",
-                "setId": "godan-iku",
-                "path": ["desire"],
-                "state": "desire"
-            }
-        ],
-        "sha256": "88918fa31346fad4ff02d072df1488002c64200ff64b630c7ad7bce5ae3d002f",
-        "frames": 14443
-    },
-    {
-        "path": "audio/6baab635630dee5f44206b7007dddfa329c673ce84deb994fc503f454840296e.wav",
-        "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "text": "いかせる",
-        "request": {
-            "text": "いかせる",
-            "model_id": "eleven_flash_v2_5",
-            "seed": 42,
-            "voice_settings": {
-                "stability": 0.9,
-                "similarity_boost": 0.85,
-                "style": 0,
-                "use_speaker_boost": true,
-                "speed": 0.9
-            },
-            "language_code": "ja"
-        },
-        "inputs": [
-            {
-                "language": "ja",
-                "label": "行かせる",
-                "semanticRole": "lexicalUnit",
-                "readings": ["いかせる"]
-            }
-        ],
-        "entries": [],
-        "variants": [
-            {
-                "entryId": "ja:word:iku",
-                "setId": "godan-iku",
-                "path": ["causative"],
-                "state": "causative"
-            }
-        ],
-        "sha256": "e105e2ae2d06bac1727366f716f613cb3263dd72da564b1a2c9e0536800c2561",
-        "frames": 17396
-    },
-    {
-        "path": "audio/25e714fdca244b777739055abb24b1c9c4fa87868e9324053b039e865621f81d.wav",
-        "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "text": "いかれる",
-        "request": {
-            "text": "いかれる",
-            "model_id": "eleven_flash_v2_5",
-            "seed": 42,
-            "voice_settings": {
-                "stability": 0.9,
-                "similarity_boost": 0.85,
-                "style": 0,
-                "use_speaker_boost": true,
-                "speed": 0.9
-            },
-            "language_code": "ja"
-        },
-        "inputs": [
-            {
-                "language": "ja",
-                "label": "行かれる",
-                "semanticRole": "lexicalUnit",
-                "readings": ["いかれる"]
-            }
-        ],
-        "entries": [],
-        "variants": [
-            {
-                "entryId": "ja:word:iku",
-                "setId": "godan-iku",
-                "path": ["passive"],
-                "state": "passive"
-            }
-        ],
-        "sha256": "b755164eec40b41a4df5276ccd6ac05cce8149303b8065372b6a08431386b7f7",
-        "frames": 15418
-    },
-    {
-        "path": "audio/a6948dd32b0b51fab8c80f26dff5e14badb0937f7a0e1263b617d6de4fe5c50b.wav",
-        "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "text": "いける",
-        "request": {
-            "text": "いける",
-            "model_id": "eleven_flash_v2_5",
-            "seed": 42,
-            "voice_settings": {
-                "stability": 0.9,
-                "similarity_boost": 0.85,
-                "style": 0,
-                "use_speaker_boost": true,
-                "speed": 0.9
-            },
-            "language_code": "ja"
-        },
-        "inputs": [
-            {
-                "language": "ja",
-                "label": "行ける",
-                "semanticRole": "lexicalUnit",
-                "readings": ["いける"]
-            }
-        ],
-        "entries": [],
-        "variants": [
-            {
-                "entryId": "ja:word:iku",
-                "setId": "godan-iku",
-                "path": ["potential"],
-                "state": "potential"
-            }
-        ],
-        "sha256": "a56e21ae40d9fa3998562c1e1e22440f65ff46b3d122ee7f5d812bff4b6b7279",
-        "frames": 14873
-    },
-    {
-        "path": "audio/70b16d03138fff2d4cea838ec464cc526e57454b68d09c2d77a1515ab6360829.wav",
-        "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "text": "いこう",
-        "request": {
-            "text": "いこう",
-            "model_id": "eleven_flash_v2_5",
-            "seed": 42,
-            "voice_settings": {
-                "stability": 0.9,
-                "similarity_boost": 0.85,
-                "style": 0,
-                "use_speaker_boost": true,
-                "speed": 0.9
-            },
-            "language_code": "ja"
-        },
-        "inputs": [
-            {
-                "language": "ja",
-                "label": "行こう",
-                "semanticRole": "lexicalUnit",
-                "readings": ["いこう"]
-            }
-        ],
-        "entries": [],
-        "variants": [
-            {
-                "entryId": "ja:word:iku",
-                "setId": "godan-iku",
-                "path": ["volitional"],
-                "state": "volitional"
-            }
-        ],
-        "sha256": "f19f6a8177a17a37346d3a96f35f04dbe3fad1bc37429187cfcff80d8071ecd1",
-        "frames": 15884
-    },
-    {
-        "path": "audio/2855de22b4150276b7505972b8345e4895ad9469fb97ea9d635d3536206f4d97.wav",
-        "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "text": "いきました",
-        "request": {
-            "text": "いきました",
-            "model_id": "eleven_flash_v2_5",
-            "seed": 42,
-            "voice_settings": {
-                "stability": 0.9,
-                "similarity_boost": 0.85,
-                "style": 0,
-                "use_speaker_boost": true,
-                "speed": 0.9
-            },
-            "language_code": "ja"
-        },
-        "inputs": [
-            {
-                "language": "ja",
-                "label": "行きました",
-                "semanticRole": "lexicalUnit",
-                "readings": ["いきました"]
-            }
-        ],
-        "entries": [],
-        "variants": [
-            {
-                "entryId": "ja:word:iku",
-                "setId": "godan-iku",
+                "entryId": "ja:word:nomu",
+                "setId": "godan-mu",
                 "path": ["polite", "polite-past"],
                 "state": "polite-past"
             }
         ],
-        "sha256": "11cffe8c1b54c833d94dd91fd8758b7048541208d3f26f66d947b2ff3669bf6a",
-        "frames": 18345
+        "sha256": "7ce16969212d684e42f0f8b3e625be146be042a3d04adf2bf7a9ee71206be81c",
+        "frames": 18067
     },
     {
-        "path": "audio/adf372713dc0aa21d4d9aa8620e636a670e872a78ec9bd4bd5e97118df7d7413.wav",
+        "path": "audio/96e248205c985efdf2822829f08596554f08108036a09557e14bf4076c32b989.wav",
         "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "text": "いきません",
+        "text": "のもう",
         "request": {
-            "text": "いきません",
+            "text": "のもう",
             "model_id": "eleven_flash_v2_5",
             "seed": 42,
             "voice_settings": {
@@ -279,67 +56,29 @@
         "inputs": [
             {
                 "language": "ja",
-                "label": "行きません",
+                "label": "飲もう",
                 "semanticRole": "lexicalUnit",
-                "readings": ["いきません"]
+                "readings": ["のもう"]
             }
         ],
         "entries": [],
         "variants": [
             {
-                "entryId": "ja:word:iku",
-                "setId": "godan-iku",
-                "path": ["polite", "polite-negative"],
-                "state": "polite-negative"
+                "entryId": "ja:word:nomu",
+                "setId": "godan-mu",
+                "path": ["volitional"],
+                "state": "volitional"
             }
         ],
-        "sha256": "5bccc1d7debb93b5b5fd9f0cf1ac6c705c088c78d94f1da711967516b0da2e7d",
-        "frames": 15087
+        "sha256": "c65888f3a0df1105ea73c67ce437e6c6734f34dbbbc9545b5a4f10a1a6b30f1c",
+        "frames": 13555
     },
     {
-        "path": "audio/132c62827758b8ea1fc51f67569c985de8507dbbd1db37b0118f755266719871.wav",
+        "path": "audio/333c339fab71a99e9b320feb024faf7d53a55c0fa88350562f358a4bd85e0738.wav",
         "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "text": "行かなかった",
+        "text": "のめる",
         "request": {
-            "text": "行かなかった",
-            "model_id": "eleven_flash_v2_5",
-            "seed": 42,
-            "voice_settings": {
-                "stability": 0.9,
-                "similarity_boost": 0.85,
-                "style": 0,
-                "use_speaker_boost": true,
-                "speed": 0.9
-            },
-            "language_code": "ja",
-            "apply_text_normalization": "off"
-        },
-        "inputs": [
-            {
-                "language": "ja",
-                "label": "行かなかった",
-                "semanticRole": "lexicalUnit",
-                "readings": ["いかなかった"]
-            }
-        ],
-        "entries": [],
-        "variants": [
-            {
-                "entryId": "ja:word:iku",
-                "setId": "godan-iku",
-                "path": ["negative", "negative-past"],
-                "state": "negative-past"
-            }
-        ],
-        "sha256": "66bfa21cd2f2b908817857dcbc2f835806a47928b113db9c13738eab6b398597",
-        "frames": 24366
-    },
-    {
-        "path": "audio/16d14407c35add004d2b4e851f8b6a2b1c04d3ec922734073d34abd3832c2aa3.wav",
-        "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "text": "いかなくて",
-        "request": {
-            "text": "いかなくて",
+            "text": "のめる",
             "model_id": "eleven_flash_v2_5",
             "seed": 42,
             "voice_settings": {
@@ -354,29 +93,29 @@
         "inputs": [
             {
                 "language": "ja",
-                "label": "行かなくて",
+                "label": "飲める",
                 "semanticRole": "lexicalUnit",
-                "readings": ["いかなくて"]
+                "readings": ["のめる"]
             }
         ],
         "entries": [],
         "variants": [
             {
-                "entryId": "ja:word:iku",
-                "setId": "godan-iku",
-                "path": ["negative", "negative-te"],
-                "state": "negative-te"
+                "entryId": "ja:word:nomu",
+                "setId": "godan-mu",
+                "path": ["potential"],
+                "state": "potential"
             }
         ],
-        "sha256": "419eb18dd605372703142f743da42434025ef99f844e7597b59f71e94b57dff1",
-        "frames": 20431
+        "sha256": "9a4f59b2fa2080c99973e2fadbc8868910c1b963c8be067e9fe57027407e5534",
+        "frames": 14211
     },
     {
-        "path": "audio/7812744c679942761611b8828e53103418cb5c476ad0a719b72f927fe8fa4372.wav",
+        "path": "audio/ca24bb40a66e04a4e49449b97c47b57426a5a0d4d793c9bd0328b7132d81f5d4.wav",
         "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "text": "いきたくない",
+        "text": "のまれる",
         "request": {
-            "text": "いきたくない",
+            "text": "のまれる",
             "model_id": "eleven_flash_v2_5",
             "seed": 42,
             "voice_settings": {
@@ -391,67 +130,29 @@
         "inputs": [
             {
                 "language": "ja",
-                "label": "行きたくない",
+                "label": "飲まれる",
                 "semanticRole": "lexicalUnit",
-                "readings": ["いきたくない"]
+                "readings": ["のまれる"]
             }
         ],
         "entries": [],
         "variants": [
             {
-                "entryId": "ja:word:iku",
-                "setId": "godan-iku",
-                "path": ["desire", "desire-negative"],
-                "state": "desire-negative"
+                "entryId": "ja:word:nomu",
+                "setId": "godan-mu",
+                "path": ["passive"],
+                "state": "passive"
             }
         ],
-        "sha256": "317431ddbf927abdefb87a870a0c4ca4b34c70eb797fccf7c5dd5b46ac860af2",
-        "frames": 18731
+        "sha256": "cdb7c9a67816a1c057398871ade6018269617a29cdf2f26e3f8919911e0eaab4",
+        "frames": 15444
     },
     {
-        "path": "audio/44fc6f9e28e208e63c79b98140c62a05f3f579f7f58ee854be4aef98c90deca0.wav",
+        "path": "audio/98cd7feaf7cbabef13e9f9bb183ddb9abf228d720406129c0ddc42752aca1211.wav",
         "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "text": "行きたかった",
+        "text": "のませる",
         "request": {
-            "text": "行きたかった",
-            "model_id": "eleven_flash_v2_5",
-            "seed": 42,
-            "voice_settings": {
-                "stability": 0.9,
-                "similarity_boost": 0.85,
-                "style": 0,
-                "use_speaker_boost": true,
-                "speed": 0.9
-            },
-            "language_code": "ja",
-            "apply_text_normalization": "off"
-        },
-        "inputs": [
-            {
-                "language": "ja",
-                "label": "行きたかった",
-                "semanticRole": "lexicalUnit",
-                "readings": ["いきたかった"]
-            }
-        ],
-        "entries": [],
-        "variants": [
-            {
-                "entryId": "ja:word:iku",
-                "setId": "godan-iku",
-                "path": ["desire", "desire-past"],
-                "state": "desire-past"
-            }
-        ],
-        "sha256": "75c7e1b618be9982bf9b9756d6072ebff1b8781497ba357485fee06129c063b5",
-        "frames": 24366
-    },
-    {
-        "path": "audio/52bdd0ad0f52daee950a1d754db97968f13f0a5f6582e9ced26a69a787a5aa6d.wav",
-        "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "text": "いきたくて",
-        "request": {
-            "text": "いきたくて",
+            "text": "のませる",
             "model_id": "eleven_flash_v2_5",
             "seed": 42,
             "voice_settings": {
@@ -466,29 +167,29 @@
         "inputs": [
             {
                 "language": "ja",
-                "label": "行きたくて",
+                "label": "飲ませる",
                 "semanticRole": "lexicalUnit",
-                "readings": ["いきたくて"]
+                "readings": ["のませる"]
             }
         ],
         "entries": [],
         "variants": [
             {
-                "entryId": "ja:word:iku",
-                "setId": "godan-iku",
-                "path": ["desire", "desire-te"],
-                "state": "desire-te"
+                "entryId": "ja:word:nomu",
+                "setId": "godan-mu",
+                "path": ["causative"],
+                "state": "causative"
             }
         ],
-        "sha256": "ea1d3363e63915ae6fe2572dbd74d001776edc4ab4798230a115ef64e21a20ad",
-        "frames": 19149
+        "sha256": "b8d2b4ef32f9eb0bc2e8c7b02ed9d4a620cf71e7073e5ec02d8de9d3528add74",
+        "frames": 18300
     },
     {
-        "path": "audio/fe8be29c7271ea60259e71745d8c9fb60cb7a8940be10723405c0c236ac5ec78.wav",
+        "path": "audio/378bd190caf3f731062434218344d8bca61e491a4b6e4fff4d432d5f89aa21cb.wav",
         "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "text": "いかせない",
+        "text": "のみたい",
         "request": {
-            "text": "いかせない",
+            "text": "のみたい",
             "model_id": "eleven_flash_v2_5",
             "seed": 42,
             "voice_settings": {
@@ -503,29 +204,29 @@
         "inputs": [
             {
                 "language": "ja",
-                "label": "行かせない",
+                "label": "飲みたい",
                 "semanticRole": "lexicalUnit",
-                "readings": ["いかせない"]
+                "readings": ["のみたい"]
             }
         ],
         "entries": [],
         "variants": [
             {
-                "entryId": "ja:word:iku",
-                "setId": "godan-iku",
-                "path": ["causative", "causative-negative"],
-                "state": "causative-negative"
+                "entryId": "ja:word:nomu",
+                "setId": "godan-mu",
+                "path": ["desire"],
+                "state": "desire"
             }
         ],
-        "sha256": "b1eee3576ab18c91215c01b8fa7adfd82ee9e20a9a4223d4f0ecedd0b1701b4b",
-        "frames": 18599
+        "sha256": "a908a34f60189b3e49fc2c12dd8742bcede8c8fc4af9caacf0e3bc4db77bc872",
+        "frames": 13266
     },
     {
-        "path": "audio/b11e2d753f7a892b265b5f0d90c39c4b578338e26c7bab3400e7fe8d4a9b4f25.wav",
+        "path": "audio/cc2e17afd573fa3bd1b670f75e77952b4d884edde8b426d9e2e075fef8639b56.wav",
         "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "text": "いかせた",
+        "text": "のんで",
         "request": {
-            "text": "いかせた",
+            "text": "のんで",
             "model_id": "eleven_flash_v2_5",
             "seed": 42,
             "voice_settings": {
@@ -540,29 +241,29 @@
         "inputs": [
             {
                 "language": "ja",
-                "label": "行かせた",
+                "label": "飲んで",
                 "semanticRole": "lexicalUnit",
-                "readings": ["いかせた"]
+                "readings": ["のんで"]
             }
         ],
         "entries": [],
         "variants": [
             {
-                "entryId": "ja:word:iku",
-                "setId": "godan-iku",
-                "path": ["causative", "causative-past"],
-                "state": "causative-past"
+                "entryId": "ja:word:nomu",
+                "setId": "godan-mu",
+                "path": ["te-form"],
+                "state": "te-form"
             }
         ],
-        "sha256": "959cf53de719fed5f1a999ddc434900faafd7dc1f3c377b5491142b20ed53147",
-        "frames": 16926
+        "sha256": "9c904aaa959cc984c585d5d7fe77a728ce86419b587bf6a76836c84c349a464f",
+        "frames": 14874
     },
     {
-        "path": "audio/83bc8e5f0a3402e74f7ebeafa89f75d5e624e6985ea8df7b300e39bcc2213629.wav",
+        "path": "audio/2aa8484b512e6f15da0853c3f157e0820962c0df4531c0bf4ceb86956cc50b67.wav",
         "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "text": "いかせて",
+        "text": "のんだ",
         "request": {
-            "text": "いかせて",
+            "text": "のんだ",
             "model_id": "eleven_flash_v2_5",
             "seed": 42,
             "voice_settings": {
@@ -577,29 +278,29 @@
         "inputs": [
             {
                 "language": "ja",
-                "label": "行かせて",
+                "label": "飲んだ",
                 "semanticRole": "lexicalUnit",
-                "readings": ["いかせて"]
+                "readings": ["のんだ"]
             }
         ],
         "entries": [],
         "variants": [
             {
-                "entryId": "ja:word:iku",
-                "setId": "godan-iku",
-                "path": ["causative", "causative-te"],
-                "state": "causative-te"
+                "entryId": "ja:word:nomu",
+                "setId": "godan-mu",
+                "path": ["past"],
+                "state": "past"
             }
         ],
-        "sha256": "76c0b3c5353d64256275327bc14d2c0d5f0fd9887e22b742a9f766141431e898",
-        "frames": 19362
+        "sha256": "7f7f0f730fac6d54850c61b09a55571856e974d78e4917a43e39aedf9d7e58d9",
+        "frames": 13694
     },
     {
-        "path": "audio/f7e92cc25bc4a1e4a29ca611e196aa43ee0e6f3e260928464be55bad16d62dde.wav",
+        "path": "audio/9b119ee0d5c03cb3fdddd9c76ea19bab031cdb05700ab648256efb62c02e4e45.wav",
         "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "text": "いかせたい",
+        "text": "のまない",
         "request": {
-            "text": "いかせたい",
+            "text": "のまない",
             "model_id": "eleven_flash_v2_5",
             "seed": 42,
             "voice_settings": {
@@ -614,29 +315,103 @@
         "inputs": [
             {
                 "language": "ja",
-                "label": "行かせたい",
+                "label": "飲まない",
                 "semanticRole": "lexicalUnit",
-                "readings": ["いかせたい"]
+                "readings": ["のまない"]
             }
         ],
         "entries": [],
         "variants": [
             {
-                "entryId": "ja:word:iku",
-                "setId": "godan-iku",
+                "entryId": "ja:word:nomu",
+                "setId": "godan-mu",
+                "path": ["negative"],
+                "state": "negative"
+            }
+        ],
+        "sha256": "8461958be1b762708add94d3e0395739dd8eab75a8b8e9a9168137f9aebb197c",
+        "frames": 15702
+    },
+    {
+        "path": "audio/d6503515a0d0e4146a70c257afbf070c0a81b614f013171e96eb4b51513a0fb3.wav",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "text": "のみます",
+        "request": {
+            "text": "のみます",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "飲みます",
+                "semanticRole": "lexicalUnit",
+                "readings": ["のみます"]
+            }
+        ],
+        "entries": [],
+        "variants": [
+            {
+                "entryId": "ja:word:nomu",
+                "setId": "godan-mu",
+                "path": ["polite"],
+                "state": "polite"
+            }
+        ],
+        "sha256": "fd8fa9c1edaa3a7ebedbf5f19a6f7f63fdf131bb9f8359cec3c835022d5607cb",
+        "frames": 17006
+    },
+    {
+        "path": "audio/fc1595bfd01e70b46fee799044262fc40d4f17a3bdbacc3f65a845e87b7636c6.wav",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "text": "たべさせたい",
+        "request": {
+            "text": "たべさせたい",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "食べさせたい",
+                "semanticRole": "lexicalUnit",
+                "readings": ["たべさせたい"]
+            }
+        ],
+        "entries": [],
+        "variants": [
+            {
+                "entryId": "ja:word:taberu",
+                "setId": "ichidan",
                 "path": ["causative", "causative-desire"],
                 "state": "causative-desire"
             }
         ],
-        "sha256": "193ded2fb0ab76577728a8334ae79372ba88ca970af21158085cead4791bdbcc",
-        "frames": 18185
+        "sha256": "5213f7f868acd26c2e876aff3470cadf3b230250b4882e1df2a9fb531446a90f",
+        "frames": 19849
     },
     {
-        "path": "audio/889194d046b8faa5fba61ba18f7e8a154d3bcda138c2ebbcdf953cc055f9d4e1.wav",
+        "path": "audio/80b3ea5cef7226705f634e2aecb340346428a03d68a95923130446d97dc1a275.wav",
         "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "text": "いかせたくない",
+        "text": "たべさせて",
         "request": {
-            "text": "いかせたくない",
+            "text": "たべさせて",
             "model_id": "eleven_flash_v2_5",
             "seed": 42,
             "voice_settings": {
@@ -651,16 +426,238 @@
         "inputs": [
             {
                 "language": "ja",
-                "label": "行かせたくない",
+                "label": "食べさせて",
                 "semanticRole": "lexicalUnit",
-                "readings": ["いかせたくない"]
+                "readings": ["たべさせて"]
             }
         ],
         "entries": [],
         "variants": [
             {
-                "entryId": "ja:word:iku",
-                "setId": "godan-iku",
+                "entryId": "ja:word:taberu",
+                "setId": "ichidan",
+                "path": ["causative", "causative-te"],
+                "state": "causative-te"
+            }
+        ],
+        "sha256": "2b6b1976052c5f45fb777b8dde4da34628ac0c4556b2dae3c6f4eed974ef1cf1",
+        "frames": 22772
+    },
+    {
+        "path": "audio/77c9bd8f684274deb993296ebdffe26a14e5c37fbbe7074a76137d84eed3bb86.wav",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "text": "たべさせた",
+        "request": {
+            "text": "たべさせた",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "食べさせた",
+                "semanticRole": "lexicalUnit",
+                "readings": ["たべさせた"]
+            }
+        ],
+        "entries": [],
+        "variants": [
+            {
+                "entryId": "ja:word:taberu",
+                "setId": "ichidan",
+                "path": ["causative", "causative-past"],
+                "state": "causative-past"
+            }
+        ],
+        "sha256": "dc5b2bbbe68595373a644f5c2e051ec50327f265993046adb67e4f2c1b9e1f80",
+        "frames": 20638
+    },
+    {
+        "path": "audio/a6fa022d3ff76e1e8d984bf000af5e129128df477554cc12104a35a75e21c8a3.wav",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "text": "たべさせない",
+        "request": {
+            "text": "たべさせない",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "食べさせない",
+                "semanticRole": "lexicalUnit",
+                "readings": ["たべさせない"]
+            }
+        ],
+        "entries": [],
+        "variants": [
+            {
+                "entryId": "ja:word:taberu",
+                "setId": "ichidan",
+                "path": ["causative", "causative-negative"],
+                "state": "causative-negative"
+            }
+        ],
+        "sha256": "24a83536c271e722fc5c483fadb5b9a5bb148dbc8b9fa85b90d3497ed6a9c306",
+        "frames": 20880
+    },
+    {
+        "path": "audio/a7eca35a53fa75c5ab48320cf87bad7f12ba899721b08b1798eead39fc443c62.wav",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "text": "たべたくて",
+        "request": {
+            "text": "たべたくて",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "食べたくて",
+                "semanticRole": "lexicalUnit",
+                "readings": ["たべたくて"]
+            }
+        ],
+        "entries": [],
+        "variants": [
+            {
+                "entryId": "ja:word:taberu",
+                "setId": "ichidan",
+                "path": ["desire", "desire-te"],
+                "state": "desire-te"
+            }
+        ],
+        "sha256": "fc9414fd4019bf16b579eab427704fe21e7a6a4e6357fbf241a7def057754853",
+        "frames": 21869
+    },
+    {
+        "path": "audio/fb42fbff846e7a6873a4af5eb0ab7be2a0ca11916f15af9451615667ed5c1d7c.wav",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "text": "たべたくない",
+        "request": {
+            "text": "たべたくない",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "食べたくない",
+                "semanticRole": "lexicalUnit",
+                "readings": ["たべたくない"]
+            }
+        ],
+        "entries": [],
+        "variants": [
+            {
+                "entryId": "ja:word:taberu",
+                "setId": "ichidan",
+                "path": ["desire", "desire-negative"],
+                "state": "desire-negative"
+            }
+        ],
+        "sha256": "ed9d0f475ead74efb1befba733f8108a2926cb97968a97fc8c7e5936ee536458",
+        "frames": 16843
+    },
+    {
+        "path": "audio/950b2b4b07d030f3859df51a6b8c38f0316b880cfdcc795a740eaab7344cd6f0.wav",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "text": "たべなくて",
+        "request": {
+            "text": "たべなくて",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "食べなくて",
+                "semanticRole": "lexicalUnit",
+                "readings": ["たべなくて"]
+            }
+        ],
+        "entries": [],
+        "variants": [
+            {
+                "entryId": "ja:word:taberu",
+                "setId": "ichidan",
+                "path": ["negative", "negative-te"],
+                "state": "negative-te"
+            }
+        ],
+        "sha256": "87431d1caa739bf1c817308c2ce168afb98994bf4ade4fecf0d5a6264b60119e",
+        "frames": 18679
+    },
+    {
+        "path": "audio/8111005fe8a6f16e9582e87c3541d10ffe9edd58f6d35464f8d234a3f9b9116e.wav",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "text": "みさせたくない",
+        "request": {
+            "text": "みさせたくない",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "見させたくない",
+                "semanticRole": "lexicalUnit",
+                "readings": ["みさせたくない"]
+            }
+        ],
+        "entries": [],
+        "variants": [
+            {
+                "entryId": "ja:word:miru",
+                "setId": "ichidan",
                 "path": [
                     "causative",
                     "causative-desire",
@@ -669,15 +666,15 @@
                 "state": "causative-negative-desire"
             }
         ],
-        "sha256": "a9402a0356bfe391591da29de0926ce7bdb9bfbcb0b12ad7f5bf45c6912f433f",
-        "frames": 21509
+        "sha256": "553511234f8fde43674fcaf082922ba62bf54ee3f7dc19affedb230dd6b8f865",
+        "frames": 22534
     },
     {
-        "path": "audio/56f9f3e69032fe6fe7d64d7df9420212463449b5c2b28fd36ab64f5c5ce34e15.wav",
+        "path": "audio/7b43cf03aa42df2f2f279724d1cde3841b8420845e03a592e30a0aa34d8082d0.wav",
         "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "text": "いかせたくなくて",
+        "text": "のませたくない",
         "request": {
-            "text": "いかせたくなくて",
+            "text": "のませたくない",
             "model_id": "eleven_flash_v2_5",
             "seed": 42,
             "voice_settings": {
@@ -692,26 +689,107 @@
         "inputs": [
             {
                 "language": "ja",
-                "label": "行かせたくなくて",
+                "label": "飲ませたくない",
                 "semanticRole": "lexicalUnit",
-                "readings": ["いかせたくなくて"]
+                "readings": ["のませたくない"]
             }
         ],
         "entries": [],
         "variants": [
             {
-                "entryId": "ja:word:iku",
-                "setId": "godan-iku",
+                "entryId": "ja:word:nomu",
+                "setId": "godan-mu",
                 "path": [
                     "causative",
                     "causative-desire",
-                    "causative-negative-desire",
-                    "causative-continuous-negative-desire"
+                    "causative-negative-desire"
                 ],
-                "state": "causative-continuous-negative-desire"
+                "state": "causative-negative-desire"
             }
         ],
-        "sha256": "7162591b6632f9db5750c762d8897fb9a68875df62a8189a2a7bef0d2fdae42a",
-        "frames": 26281
+        "sha256": "cdf5d91782bce4c8f5548b6334495f02763401bef495bec5bcdef5c3d1146e20",
+        "frames": 22897
+    },
+    {
+        "path": "audio/63d3cc805aff1af57edd412cc75ba5e285e1ab59625e294b366c765e5e40cb92.wav",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "text": "たべさせたくない",
+        "request": {
+            "text": "たべさせたくない",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "食べさせたくない",
+                "semanticRole": "lexicalUnit",
+                "readings": ["たべさせたくない"]
+            }
+        ],
+        "entries": [],
+        "variants": [
+            {
+                "entryId": "ja:word:taberu",
+                "setId": "ichidan",
+                "path": [
+                    "causative",
+                    "causative-desire",
+                    "causative-negative-desire"
+                ],
+                "state": "causative-negative-desire"
+            }
+        ],
+        "sha256": "86e05fc2c077c787ddb3b333cb2a56d45286786a591d6009d5e466eeaa62bcbf",
+        "frames": 24233
+    },
+    {
+        "path": "audio/7dbdf39bb431ffa16fe99c1512e3f2b36a9ccc8b7ad0456f1192d64510ec1fbe.wav",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "text": "いさせたくない",
+        "request": {
+            "text": "いさせたくない",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "いさせたくない",
+                "semanticRole": "lexicalUnit",
+                "readings": ["いさせたくない"]
+            }
+        ],
+        "entries": [],
+        "variants": [
+            {
+                "entryId": "ja:word:iru-exist",
+                "setId": "ichidan",
+                "path": [
+                    "causative",
+                    "causative-desire",
+                    "causative-negative-desire"
+                ],
+                "state": "causative-negative-desire"
+            }
+        ],
+        "sha256": "4e6ab3f989972da408611f4a47ccd6b55a89de81b5e4bdda0edd45b295d22b95",
+        "frames": 22608
     }
 ]

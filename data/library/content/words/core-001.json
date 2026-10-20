@@ -1,0 +1,283 @@
+[
+    {
+        "id": "ja:word:complete-pronunciation-core-read",
+        "label": "よむ",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["よむ"],
+            "audio": "audio/9636388bbb5506a329e11171db13088225f73201ebdde96eabd1b560bb70cce0.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:yo",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:mu",
+                        "relation": "reading-kana",
+                        "position": 1
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:core-read",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:core-read",
+        "label": "読む",
+        "class": "lexical:verb",
+        "fields": {
+            "pronunciation": ["よむ"],
+            "reference_images": [
+                "images/dff4544ddbe659e92785fba3f86ac83c5bd77dd5e9976b211b07db3d11373d65.jpg"
+            ],
+            "audio": "audio/9636388bbb5506a329e11171db13088225f73201ebdde96eabd1b560bb70cce0.wav"
+        },
+        "tags": ["verb", "core-form-read"],
+        "references": [
+            {
+                "entryId": "ja:definition:core-read",
+                "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-8aad",
+                "relation": "spelling",
+                "position": 0
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-core-read",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:complete-pronunciation-core-write",
+        "label": "かく",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["かく"],
+            "audio": "audio/3e5f3ac8a4cc637990df81b18c906f382c996ff2d49671e55133c923ef697f3f.wav"
+        },
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:kanji-reading-expanded-66f8-02",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ],
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:ku",
+                        "relation": "reading-kana",
+                        "position": 1
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:core-write",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:core-write",
+        "label": "書く",
+        "class": "lexical:verb",
+        "fields": {
+            "pronunciation": ["かく"],
+            "reference_images": [
+                "images/c025b5c8679db42361aa2d5140b8678517da60a1f80cb8ee566c829279ed146a.jpg"
+            ],
+            "audio": "audio/3e5f3ac8a4cc637990df81b18c906f382c996ff2d49671e55133c923ef697f3f.wav"
+        },
+        "tags": ["verb", "core-form-write"],
+        "references": [
+            {
+                "entryId": "ja:definition:core-write",
+                "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-66f8",
+                "relation": "spelling",
+                "position": 0
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-core-write",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:complete-pronunciation-core-speak",
+        "label": "はなす",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["はなす"],
+            "audio": "audio/e107575563e727cec98a9b0a8d0b85f27779c32f20942cc5b5b52771a5d4b475.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:ha",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:na",
+                        "relation": "reading-kana",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:su",
+                        "relation": "reading-kana",
+                        "position": 2
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:core-speak",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:core-speak",
+        "label": "話す",
+        "class": "lexical:verb",
+        "fields": {
+            "pronunciation": ["はなす"],
+            "reference_images": [
+                "images/a04e3f77f120805c6b6d29589e9e1ede471ee3b6efaeda19490c1fd1421860d1.jpg"
+            ],
+            "audio": "audio/e107575563e727cec98a9b0a8d0b85f27779c32f20942cc5b5b52771a5d4b475.wav"
+        },
+        "tags": ["verb", "core-form-speak"],
+        "references": [
+            {
+                "entryId": "ja:definition:core-speak",
+                "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-8a71",
+                "relation": "spelling",
+                "position": 0
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-core-speak",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:complete-pronunciation-core-sleep",
+        "label": "ねる",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["ねる"],
+            "audio": "audio/d18b23f2efd5e37302beaed08404e82d554e9acef0df42b3081fd4665b8624af.wav"
+        },
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:kanji-reading-expanded-5bdd-02",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ],
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:ru",
+                        "relation": "reading-kana",
+                        "position": 1
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:core-sleep",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:core-sleep",
+        "label": "寝る",
+        "class": "lexical:verb",
+        "fields": {
+            "pronunciation": ["ねる"],
+            "reference_images": [
+                "images/f9b26425de36c8a8417a62ffc85efa30e347d00bf7a2934b031037d7e7dbab6e.jpg"
+            ],
+            "audio": "audio/d18b23f2efd5e37302beaed08404e82d554e9acef0df42b3081fd4665b8624af.wav"
+        },
+        "tags": ["verb", "core-form-sleep"],
+        "references": [
+            {
+                "entryId": "ja:definition:core-sleep",
+                "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-5bdd",
+                "relation": "spelling",
+                "position": 0
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-core-sleep",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    }
+]

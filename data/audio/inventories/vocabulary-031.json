@@ -1,0 +1,90 @@
+[
+    {
+        "path": "audio/7b049724915f9f114fd0cc06aa45625d018577a4b19558ccc83b480b6f71b332.wav",
+        "text": "きる",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "切る",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "きる",
+                "semanticRole": "lexicalUnit",
+                "readings": ["きる"]
+            },
+            {
+                "language": "ja",
+                "label": "切る",
+                "semanticRole": "lexicalUnit",
+                "readings": ["きる"]
+            }
+        ],
+        "entries": [
+            "ja:word:craft-cut",
+            "ja:word:complete-pronunciation-craft-cut"
+        ],
+        "variants": [],
+        "sha256": "7b049724915f9f114fd0cc06aa45625d018577a4b19558ccc83b480b6f71b332",
+        "frames": 15449,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "037e9a1d01aca2613c35e840ccf403e43147047d4fabe98c4e12d03b8f8f9601"
+        }
+    },
+    {
+        "path": "audio/4c6bb4169d69688ed4709990ba85c2b16b6b6065bc1cc55f8b6e515b85439ae7.wav",
+        "text": "おる",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "折る",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "おる",
+                "semanticRole": "lexicalUnit",
+                "readings": ["おる"]
+            },
+            {
+                "language": "ja",
+                "label": "折る",
+                "semanticRole": "lexicalUnit",
+                "readings": ["おる"]
+            }
+        ],
+        "entries": [
+            "ja:word:craft-fold",
+            "ja:word:complete-pronunciation-craft-fold"
+        ],
+        "variants": [],
+        "sha256": "4c6bb4169d69688ed4709990ba85c2b16b6b6065bc1cc55f8b6e515b85439ae7",
+        "frames": 14335,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "8570ee6bcce66fc7083af639078715d10f2a3b4b57774159f3d90223f2b44663"
+        }
+    }
+]

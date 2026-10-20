@@ -1,0 +1,222 @@
+[
+    {
+        "id": "ja:sentence:shopping-buy-small-bag",
+        "label": "小さいかばんを買う",
+        "class": "composite",
+        "fields": {
+            "pronunciation": ["ちいさいかばんをかう"],
+            "audio": "audio/2ba68718d85837ed1886472756f7eec2e4a8ba85e9e033f770966e2a9cccc34a.wav"
+        },
+        "references": [
+            {
+                "entryId": "ja:word:chiisai",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:word:bag",
+                "relation": "words",
+                "position": 1
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 2
+            },
+            {
+                "entryId": "ja:word:travel-buy",
+                "relation": "words",
+                "position": 3
+            },
+            {
+                "entryId": "ja:definition:shopping-buy-small-bag",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:shopping-buy-hat-coat",
+        "label": "帽子とコートを買う",
+        "class": "composite",
+        "fields": {
+            "pronunciation": ["ぼうしとこーとをかう"],
+            "audio": "audio/06876c8ced7ed002f9566cb4ab89c17919d7e2b27817cab172fb10cde2d9708d.wav"
+        },
+        "references": [
+            {
+                "entryId": "ja:word:hat",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:to",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:coat",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:travel-buy",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:shopping-buy-hat-coat",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:shopping-small-shoes",
+        "label": "靴は小さい",
+        "class": "composite",
+        "fields": {
+            "pronunciation": ["くつはちいさい"],
+            "audio": "audio/028388f18d0065ee12a62b2b152e5690fe7f6eaa3744b9daa7c664f2d02aa6dc.wav"
+        },
+        "references": [
+            {
+                "entryId": "ja:word:shoe",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:chiisai",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:definition:shopping-small-shoes",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:shopping-where-phone",
+        "label": "電話はどこですか",
+        "class": "composite",
+        "fields": {
+            "pronunciation": ["でんわはどこですか"],
+            "audio": "audio/ab80baf326e0a96d3df10b5e9ddc703d5646aeaf660d61bd04de41b8fe356325.wav"
+        },
+        "references": [
+            {
+                "entryId": "ja:word:phone",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:doko",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:word:desu",
+                "relation": "words",
+                "position": 3
+            },
+            {
+                "entryId": "ja:particle:ka",
+                "relation": "particles",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:shopping-where-phone",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:shopping-like-computers",
+        "label": "パソコンが好きです",
+        "class": "composite",
+        "fields": {
+            "pronunciation": ["ぱそこんがすきです"],
+            "audio": "audio/e4984cd540771cc201b7505c36839b5faf4b49524b6dd4c4410b58c6987c8bc1.wav"
+        },
+        "references": [
+            {
+                "entryId": "ja:word:computer",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:ga",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:suki",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:word:desu",
+                "relation": "words",
+                "position": 3
+            },
+            {
+                "entryId": "ja:definition:shopping-like-computers",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:shopping-umbrella-here",
+        "label": "傘はここにある",
+        "class": "composite",
+        "fields": {
+            "pronunciation": ["かさはここにある"],
+            "audio": "audio/57d111f96ce664275b2105d40a13128ae86464895c4f9bbeae3d07ded5f01046.wav"
+        },
+        "references": [
+            {
+                "entryId": "ja:word:umbrella",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:koko",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:ni",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:aru-exist",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:shopping-umbrella-here",
+                "relation": "definitions"
+            }
+        ]
+    }
+]

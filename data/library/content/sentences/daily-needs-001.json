@@ -1,0 +1,217 @@
+[
+    {
+        "id": "ja:sentence:daily-needs-1",
+        "label": "水はどこですか",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/7d619266eaa093efde5831b22d34088dc8b1e567f0a59ad6471fc55b63e59b0b.wav",
+            "pronunciation": ["みずはどこですか"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:mizu",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:doko",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:word:desu",
+                "relation": "words",
+                "position": 3
+            },
+            {
+                "entryId": "ja:particle:ka",
+                "relation": "particles",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:daily-needs-1",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:daily-needs-2",
+        "label": "カップはここにある",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/84f1fd73480c54a2d7557df25000770cda33d0a9d7b43ee1436b073cb76cf7cd.wav",
+            "pronunciation": ["カップはここにある"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:tableware-cup",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:koko",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:ni",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:aru-exist",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:daily-needs-2",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:daily-needs-3",
+        "label": "スプーンとフォークを買う",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/45bb9e7b9d9e28dcbbe314937fb4c23872af177fd720b32953bb22ab079dacea.wav",
+            "pronunciation": ["スプーンとフォークをかう"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:tableware-spoon",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:to",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:tableware-fork",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:travel-buy",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:daily-needs-3",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:daily-needs-4",
+        "label": "後でスーパーに行く",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/63e70fac009d964003523f8c756aa1f7113935e64628ed2500f74a462aa28d0c.wav",
+            "pronunciation": ["あとでスーパーにいく"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:time-later",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:word:places-supermarket",
+                "relation": "words",
+                "position": 1
+            },
+            {
+                "entryId": "ja:particle:ni",
+                "relation": "particles",
+                "position": 2
+            },
+            {
+                "entryId": "ja:word:iku",
+                "relation": "words",
+                "position": 3
+            },
+            {
+                "entryId": "ja:definition:daily-needs-4",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:daily-needs-5",
+        "label": "友達と料理する",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/f0a1f000e6e7b4529b98c8d8209401aa36dbe4a9048ec7d464194f21d3e166ad.wav",
+            "pronunciation": ["ともだちとりょうりする"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:tomodachi",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:to",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:household-cook",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:definition:daily-needs-5",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:daily-needs-6",
+        "label": "顔を洗う",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/0327e93e8fb40ef1a13361aefb21a966ff4665e98f7dd012fcb5872387e3bc0e.wav",
+            "pronunciation": ["かおをあらう"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:face",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:household-wash",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:definition:daily-needs-6",
+                "relation": "definitions"
+            }
+        ]
+    }
+]

@@ -1,0 +1,222 @@
+[
+    {
+        "id": "ja:sentence:study-habits-write-pen",
+        "label": "ペンでノートに書く",
+        "class": "composite",
+        "fields": {
+            "pronunciation": ["ペンでノートにかく"],
+            "audio": "audio/7e5be5edd7fe1d592c386f47b659694a58df798eae986e759d35ccab29bd72c7.wav"
+        },
+        "references": [
+            {
+                "entryId": "ja:word:school-pen",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:de",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:school-notebook",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:ni",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:core-write",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:study-habits-write-pen",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:study-habits-read-library",
+        "label": "図書館で読む",
+        "class": "composite",
+        "fields": {
+            "pronunciation": ["としょかんでよむ"],
+            "audio": "audio/6efcdcc6a0557117bae05ada24026531c7196e6fb26ab27e12b10d8f8e4c0632.wav"
+        },
+        "references": [
+            {
+                "entryId": "ja:word:places-library",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:de",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:core-read",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:definition:study-habits-read-library",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:study-habits-difficult-language",
+        "label": "日本語は難しい",
+        "class": "composite",
+        "fields": {
+            "pronunciation": ["にほんごはむずかしい"],
+            "audio": "audio/3aa8efdc9a7a80f53054b2b0a7e6aaf1a7087cbdc472bace523dce0814c421a2.wav"
+        },
+        "references": [
+            {
+                "entryId": "ja:word:nihongo",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:qualities-difficult",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:definition:study-habits-difficult-language",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:study-habits-speak-teacher",
+        "label": "先生と日本語で話す",
+        "class": "composite",
+        "fields": {
+            "pronunciation": ["せんせいとにほんごではなす"],
+            "audio": "audio/1cb6bee4c12528632f6a621a51527382d7bbe2301a90d6d20854bb54e3b838c8.wav"
+        },
+        "references": [
+            {
+                "entryId": "ja:word:sensei",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:to",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:nihongo",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:de",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:core-speak",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:study-habits-speak-teacher",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:study-habits-learn-friend",
+        "label": "友達と学校で学ぶ",
+        "class": "composite",
+        "fields": {
+            "pronunciation": ["ともだちとがっこうでまなぶ"],
+            "audio": "audio/eb117035710021aea48b9b796833da14450684b74c1360a1c5bacecc340c73e1.wav"
+        },
+        "references": [
+            {
+                "entryId": "ja:word:tomodachi",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:to",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:gakkou",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:de",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:manabu",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:study-habits-learn-friend",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:study-habits-where-pencil",
+        "label": "鉛筆はどこですか",
+        "class": "composite",
+        "fields": {
+            "pronunciation": ["えんぴつはどこですか"],
+            "audio": "audio/c5336eb52842de18024e570eaa3f0ce08f32d12eeb81205c25dcd877558844c2.wav"
+        },
+        "references": [
+            {
+                "entryId": "ja:word:school-pencil",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:doko",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:word:desu",
+                "relation": "words",
+                "position": 3
+            },
+            {
+                "entryId": "ja:particle:ka",
+                "relation": "particles",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:study-habits-where-pencil",
+                "relation": "definitions"
+            }
+        ]
+    }
+]

@@ -1,0 +1,122 @@
+[
+    {
+        "path": "audio/11456865f120340042375b021da0c96965a597c04c1feaad9233300a470b3945.wav",
+        "text": "ぶた",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "豚",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "ぶた",
+                "semanticRole": "lexicalUnit",
+                "readings": ["ぶた"]
+            },
+            {
+                "language": "ja",
+                "label": "豚",
+                "semanticRole": "lexicalUnit",
+                "readings": ["ぶた"]
+            },
+            {
+                "language": "ja",
+                "label": "豚",
+                "semanticRole": "compoundWritingUnit",
+                "readings": ["ぶた"]
+            }
+        ],
+        "entries": [
+            "ja:word:animals-pig",
+            "ja:word:complete-pronunciation-animals-pig",
+            "ja:kanji:expanded-8c5a"
+        ],
+        "variants": [],
+        "sha256": "11456865f120340042375b021da0c96965a597c04c1feaad9233300a470b3945",
+        "frames": 15449,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "b8aa72b11daa044ae1b6d6dd3b7e46bcb6cc3e91aeaa2cdfe310750dd0ed930d"
+        }
+    },
+    {
+        "path": "audio/d8f5310fbe7909dacdb87525f405c524abd83a76a2debb2d69fdb99f2d7941d2.wav",
+        "text": "キャベツ",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "キャベツ",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "キャベツ",
+                "semanticRole": "lexicalUnit",
+                "readings": ["キャベツ"]
+            }
+        ],
+        "entries": [
+            "ja:word:vegetables-cabbage",
+            "ja:word:complete-pronunciation-vegetables-cabbage"
+        ],
+        "variants": [],
+        "sha256": "d8f5310fbe7909dacdb87525f405c524abd83a76a2debb2d69fdb99f2d7941d2",
+        "frames": 18793,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "e940881f2ff430deefae05033caa671339aee3eb75eae67ac19b7ed0467214cb"
+        }
+    },
+    {
+        "path": "audio/6c383b07d47bcbe9c9eadf6b97d7ce3ec03e4f31503d0bf1dec5a48b2829ff78.wav",
+        "text": "かばん",
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "かばん",
+                "semanticRole": "lexicalUnit",
+                "readings": ["かばん"]
+            }
+        ],
+        "entries": ["ja:word:bag", "ja:word:complete-pronunciation-bag"],
+        "variants": [],
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "かばん",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "sha256": "c10ee677dc8c6fe37eea9d4d430f2bb056682183c947baeac633c4d72f3ee349",
+        "frames": 16564
+    }
+]

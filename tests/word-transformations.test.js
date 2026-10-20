@@ -350,12 +350,21 @@ test("every verb definition provides localized transform boundaries", () => {
                 ["de", "en", "id", "ja"],
                 definitionId,
             );
+            const matchingSets = schema.transformSets.filter(({ matchTags }) =>
+                matchTags.every((tag) => verb.tags.includes(tag)),
+            );
+            assert.ok(matchingSets.length > 0, verb.id);
+            const templateOnly = matchingSets.every(({ rules }) =>
+                rules.every((rule) => rule.definitionTransform?.template),
+            );
             const prefixes = { de: "zu ", en: "to ", id: "untuk ", ja: "〜" };
             for (const [language, translation] of Object.entries(
                 definition.fields.translations,
             )) {
                 assert.ok(
-                    translation.startsWith(prefixes[language]),
+                    templateOnly
+                        ? translation.trim().length > 0
+                        : translation.startsWith(prefixes[language]),
                     definitionId,
                 );
                 assert.ok(!translation.includes("{{ marker }}"), definitionId);
@@ -412,7 +421,7 @@ test("content ships only base verbs, adverbs, and copulas, never generated forms
     const generated = new Set(
         baseEntries.flatMap((entry) => transformedValues(entry)),
     );
-    assert.equal(baseIds.size, 13);
+    assert.equal(baseIds.size, 49);
     assert.ok(generated.size > 0);
     assert.deepEqual(
         words

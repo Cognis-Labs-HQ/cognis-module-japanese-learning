@@ -4,6 +4,10 @@
 
 Belajar Bahasa Jepang menyediakan paket konten Jepang berversi, penyedia kamus dan rekaman sesuai siklus hidup modul, serta pengaturan suara administrator tersimpan melalui kapabilitas Cognis. Cognis mengelola antarmuka belajar, penyimpanan pustaka, otorisasi, dan cache pemutaran.
 
+## Konten dalam paket
+
+Paket menyediakan panduan menulis, kosakata bertema, contoh tertaut, ilustrasi, dan dek awal. Konten serta inventaris media dalam paket menjadi sumber acuan ketersediaan.
+
 ## Persyaratan
 
 - Cognis dengan gateway Study dan adaptor Pustaka yang aktif.
@@ -65,7 +69,7 @@ Peran resolver kini hanya dipakai untuk komposisi sejati: bacaan kanji, ejaan ka
 
 ## Tabel kana lengkap
 
-Selain seluruh 46 entri gojūon dasar dan 25 bentuk dakuten atau handakuten per aksara, paket memuat kana kecil, seluruh rangkaian yōon standar, serta geminasi sokuon umum. Contohnya mencakup `ひゃ`, `しゅ`, `じゃ`, dan `って`, beserta padanan katakananya.
+Selain seluruh entri gojūon dasar dan bentuk dakuten atau handakuten per aksara, paket memuat kana kecil, seluruh rangkaian yōon standar, serta geminasi sokuon umum. Contohnya mencakup `ひゃ`, `しゅ`, `じゃ`, dan `って`, beserta padanan katakananya.
 
 ## Penempatan varian dinamis
 
@@ -139,7 +143,7 @@ Rekaman Kosakata bacaan tersembunyi memiliki definisi sendiri dalam empat bahasa
 
 ## Set Data Inti yang Diperluas
 
-Paket kini memuat lebih dari tiga puluh rekaman Kosakata sehari-hari tambahan, sepuluh partikel tambahan, dan delapan kalimat contoh yang tersusun penuh, semuanya disimpan sebagai JSON deklaratif di `data/library/content/`. Polisemi sejati dapat memakai beberapa referensi definisi terlokalkan pada satu rekaman (`なおす`: memperbaiki/mengoreksi), sedangkan homofon seperti `はし` (jembatan/sumpit), `あめ` (hujan/permen), `かみ` (kertas/rambut/dewa), dan `はな` (bunga/hidung) tetap menjadi rekaman Kosakata terpisah dengan definisi berbeda.
+Paket kini memuat lebih dari puluh rekaman Kosakata sehari-hari tambahan, partikel tambahan, dan kalimat contoh yang tersusun penuh, semuanya disimpan sebagai JSON deklaratif di `data/library/content/`. Polisemi sejati dapat memakai beberapa referensi definisi terlokalkan pada rekaman (`なおす`: memperbaiki/mengoreksi), sedangkan homofon seperti `はし` (jembatan/sumpit), `あめ` (hujan/permen), `かみ` (kertas/rambut/dewa), dan `はな` (bunga/hidung) tetap menjadi rekaman Kosakata terpisah dengan definisi berbeda.
 
 ## Graf inti yang mengutamakan Kanji
 
@@ -159,7 +163,7 @@ Kosakata satu Kanji kini memakai pembungkus pelafalan lengkap tersembunyi sebelu
 
 ## Bacaan kalimat tertaut dan kumpulan latihan tinjauan
 
-Setiap pelafalan kalimat kini membuka rekaman bacaan lengkap tersembunyi yang segmennya diselesaikan melalui kosakata tersembunyi yang ada dan Kana partikel atomik; teks pelafalan tanpa tautan bukan lagi perilaku bawaan. Delapan kalimat yang ditinjau menambah latihan beragam tentang minum air, belajar bahasa Jepang, perjalanan, hewan, ukuran, dan berjalan, beserta kosakata `学ぶ` dan `歩く` yang tertaut penuh.
+Setiap pelafalan kalimat kini membuka rekaman bacaan lengkap tersembunyi yang segmennya diselesaikan melalui kosakata tersembunyi yang ada dan Kana partikel atomik; teks pelafalan tanpa tautan bukan lagi perilaku bawaan. kalimat yang ditinjau menambah latihan beragam tentang minum air, belajar bahasa Jepang, perjalanan, hewan, ukuran, dan berjalan, beserta kosakata `学ぶ` dan `歩く` yang tertaut penuh.
 
 ## Judul Bacaan dengan Tautan Kana Langsung
 
@@ -259,9 +263,9 @@ Bidang pelafalan kosakata menggunakan kontrak tautan tunggal `pronunciation-read
 
 ## Ucapan dan rekaman
 
-Paket menyertakan rekaman WAV terverifikasi untuk setiap kartu terkurasi yang bersuara, karakter, partikel, serta seluruh transformasi skema yang dapat dicapai, termasuk bentuk jamak dan rantai perubahan verba. `xya0RvcJtofTcFTOdX4E` adalah suara yang ditetapkan untuk bahasa ini. `data/audio/recordings.json` mencatat permintaan, suara, model, pengaturan, jalur transformasi, dan checksum; kredensial serta alat pembuatan tidak disertakan.
+Berkas WAV bawaan diperiksa checksum, format, dan integritas PCM-nya; pemeriksaan dengan mendengarkan dicatat terpisah dan dapat belum terverifikasi. `data/audio/recordings.json` mencantumkan rekaman dan gabungan audio yang tersedia. `data/audio/unavailable.json` secara jelas mencantumkan kartu tanpa audio bawaan; rekaman yang belum ada bukan URL pemutaran. Suara yang ditetapkan adalah `xya0RvcJtofTcFTOdX4E`. Kredensial dan alat pembuatan luring tidak disertakan.
 
-Kalimat bawaan memakai rekaman kalimat utuh yang dibuat langsung sebelum audio komposit. Kalimat baru atau yang belum direkam memakai komposisi host dengan PCM penyusun berurutan dan transformasi terpilih; varian yang hilang tidak diganti bentuk dasarnya. Rekaman mencakup paket terkurasi, bukan seluruh entri kamus atau semua kemungkinan kalimat buatan pengguna.
+Pemutaran kalimat bawaan memprioritaskan gabungan PCM unsur yang tepat, termasuk bentuk tata bahasa yang dimaksud. Rekaman kalimat utuh yang dibuat terpisah tetap disimpan beserta asal-usulnya. Kalimat yang belum memiliki semua rekaman unsur yang tepat tidak mempunyai audio bawaan; bentuk yang hilang tidak diganti rekaman bentuk dasar.
 
 Bootstrap mendaftarkan penyedia yang dapat dilepas melalui `study:audio:provider.registerProvider`. Kartu dan varian bawaan berfungsi tanpa ElevenLabs terpasang atau dikonfigurasi. Rekaman leksikal yang belum tersedia dapat memakai kapabilitas opsional `elevenlabs-tts:synthesis` yang sudah diatur; suara bawaan permintaan adalah suara bahasa yang ditetapkan, dengan penggantian suara administrator untuk sintesis baru. Kalimat baru tidak meminta sintesis kalimat utuh secara terpisah. Cognis mengelola otorisasi kartu global, cache, unggahan manual, serta kebijakan komposisi pribadi dan kelas. Hanya pelafalan utama yang dipilih.
 
@@ -273,11 +277,11 @@ Rekaman kata Jepang dengan kana kecil, termasuk 学校, dibuat ulang dengan ejaa
 
 ## Ilustrasi Kosakata
 
-Setiap kartu kosakata bawaan kini memiliki ilustrasi tersendiri yang dihasilkan dengan gaya anime (102 kartu). Benda konkret, tindakan, dan adegan kontekstual untuk konsep abstrak ditampilkan melalui galeri detail kartu dan popup gambar yang sudah ada. Foto sumber lama telah diganti. [Katalog gambar](data/library/assets/images/catalog.json) mencatat sumber pembuatan, gaya, asal potongan, checksum, dan pemetaan kartu; [lisensi gambar](data/library/assets/images/LICENSE.md) menjelaskan karya bawaan. Gambar dimuat secara lokal, dan host mempertahankan gambar khusus pengguna saat penyedia dimuat ulang.
+Kartu kosakata menggunakan ilustrasi yang dihasilkan dengan gaya anime. Benda konkret, tindakan, dan adegan kontekstual untuk konsep abstrak ditampilkan melalui galeri detail kartu dan popup gambar yang sudah ada. Foto sumber lama telah diganti. [Katalog gambar](data/library/assets/images/catalog.json) mencatat sumber pembuatan, gaya, asal potongan, checksum, dan pemetaan kartu; [lisensi gambar](data/library/assets/images/LICENSE.md) menjelaskan karya bawaan. Gambar dimuat secara lokal, dan host mempertahankan gambar khusus pengguna saat penyedia dimuat ulang.
 
 ## Kosakata Rumah Tangga
 
-Lima belas nomina sehari-hari mencakup furnitur, pakaian, benda, dan makanan, dilengkapi makna dalam empat bahasa, tautan pelafalan, rekaman khusus, serta dek Benda Sehari-hari. Nomina bahasa Inggris yang dapat dihitung menyertakan transformasi jamak dengan rekaman, termasuk fish yang tidak berubah; rice tetap nomina tak terhitung. Ejaan Jepang untuk pemula menautkan bacaan lengkap ke kana atomik, termasuk tanda vokal panjang ー dalam テーブル dan コート.
+Nomina sehari-hari mencakup furnitur, pakaian, benda, dan makanan, dilengkapi makna dalam empat bahasa, tautan pelafalan, rekaman khusus, serta dek Benda Sehari-hari. Nomina bahasa Inggris yang dapat dihitung menyertakan transformasi jamak dengan rekaman, termasuk fish yang tidak berubah; rice tetap nomina tak terhitung. Ejaan Jepang untuk pemula menautkan bacaan lengkap ke kana atomik, termasuk tanda vokal panjang ー dalam テーブル dan コート.
 
 ## Kosakata Makanan dan Tubuh
 
@@ -285,7 +289,7 @@ Pemutaran kalimat paket memakai PCM yang disusun persis dari klip penyusun, term
 
 ## Inventaris Rekaman
 
-Pemutaran kalimat paket memakai PCM yang disusun persis dari klip penyusun, termasuk transformasi terpilih. Rekaman seluruh kalimat yang dihasilkan terpisah tetap diinventarisasi dengan asal suara dan permintaan asli, tetapi tidak menimpa rekaman komposisi. Kalimat baru tetap memakai komposisi dan cache milik host.
+`data/audio/recordings.json` memakai format inventaris 2 dengan bahasa, suara, model, pengaturan pemrosesan, jumlah, dan jalur indeks tujuan beserta hash. Berkas `data/audio/indexes/` mencantumkan pecahan inventaris ber-hash dalam `data/audio/inventories/`, dikelompokkan untuk karakter, kosakata, transformasi, kalimat langsung, dan komposisi kalimat. Indeks utama dan indeks tujuan tetap di bawah 400 baris; pecahan rekaman maksimal 800 baris. Pemuat memeriksa kedua tingkat, jumlah, jalur yang diizinkan, kecocokan tujuan dan jenis, serta jalur duplikat sebelum mendaftarkan pemutaran. Objek rekaman, byte audio, dan prioritas pencarian dipertahankan.
 
 ## Normalisasi katalog eksplisit dan inventaris komposisi kalimat
 

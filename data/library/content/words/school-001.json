@@ -1,0 +1,295 @@
+[
+    {
+        "id": "ja:word:complete-pronunciation-school-pencil",
+        "label": "えんぴつ",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["えんぴつ"],
+            "audio": "audio/e2270f4969cd49017543d654ec60b2f577c97a87f1418347d7644684eefb9373.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:e",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:n",
+                        "relation": "reading-kana",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:pi",
+                        "relation": "reading-kana",
+                        "position": 2
+                    },
+                    {
+                        "entryId": "ja:char:tsu",
+                        "relation": "reading-kana",
+                        "position": 3
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:school-pencil",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:school-pencil",
+        "label": "鉛筆",
+        "class": "lexical:noun",
+        "fields": {
+            "pronunciation": ["えんぴつ"],
+            "reference_images": [
+                "images/e5a4457ca0f5ae97c354edd2b9129ed3760933595f22bbcf50d670896734fc32.jpg"
+            ],
+            "audio": "audio/e2270f4969cd49017543d654ec60b2f577c97a87f1418347d7644684eefb9373.wav"
+        },
+        "tags": ["noun", "school"],
+        "references": [
+            {
+                "entryId": "ja:definition:school-pencil",
+                "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-925b",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:kanji:expanded-7b46",
+                "relation": "spelling",
+                "position": 1
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-school-pencil",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:complete-pronunciation-school-pen",
+        "label": "ペン",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["ペン"],
+            "audio": "audio/f508f1ea96d0be8871bceeb4c3c6000cacdd0dacda78c221638586ff0e1f113e.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:ka:pe",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:ka:n",
+                        "relation": "reading-kana",
+                        "position": 1
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:school-pen",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:school-pen",
+        "label": "ペン",
+        "class": "lexical:noun",
+        "fields": {
+            "pronunciation": ["ペン"],
+            "reference_images": [
+                "images/640f14b3e6420cd18018609c3248d67fd7588909a12728a692979b6ad1b5c550.jpg"
+            ],
+            "audio": "audio/f508f1ea96d0be8871bceeb4c3c6000cacdd0dacda78c221638586ff0e1f113e.wav"
+        },
+        "tags": ["noun", "school"],
+        "references": [
+            {
+                "entryId": "ja:definition:school-pen",
+                "relation": "definitions"
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-school-pen",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:complete-pronunciation-school-notebook",
+        "label": "ノート",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["ノート"],
+            "audio": "audio/ff9f3df802fdc01fe019d09b6f8b2644903b3e195c0dfb655fc20f8c29b67187.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:ka:no",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:long-vowel-mark",
+                        "relation": "reading-kana",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:ka:to",
+                        "relation": "reading-kana",
+                        "position": 2
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:school-notebook",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:school-notebook",
+        "label": "ノート",
+        "class": "lexical:noun",
+        "fields": {
+            "pronunciation": ["ノート"],
+            "reference_images": [
+                "images/55b28b931b8eaa576bee316a0d940e7cd4f8e148d25511b810d845e6a2cae8b4.jpg"
+            ],
+            "audio": "audio/ff9f3df802fdc01fe019d09b6f8b2644903b3e195c0dfb655fc20f8c29b67187.wav"
+        },
+        "tags": ["noun", "school"],
+        "references": [
+            {
+                "entryId": "ja:definition:school-notebook",
+                "relation": "definitions"
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-school-notebook",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:complete-pronunciation-school-ruler",
+        "label": "じょうぎ",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["じょうぎ"],
+            "audio": "audio/88d2854faa5453ff798894ba827610e5f00c9785366d6ba9f8f99c6071d19181.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:ji",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:small-yo",
+                        "relation": "reading-kana",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:u",
+                        "relation": "reading-kana",
+                        "position": 2
+                    },
+                    {
+                        "entryId": "ja:char:gi",
+                        "relation": "reading-kana",
+                        "position": 3
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:school-ruler",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:school-ruler",
+        "label": "定規",
+        "class": "lexical:noun",
+        "fields": {
+            "pronunciation": ["じょうぎ"],
+            "reference_images": [
+                "images/cb1cec061bc9bc9bbf10691885f98cdbbf3ed0a6549c9410db3af7f494d2f07c.jpg"
+            ],
+            "audio": "audio/88d2854faa5453ff798894ba827610e5f00c9785366d6ba9f8f99c6071d19181.wav"
+        },
+        "tags": ["noun", "school"],
+        "references": [
+            {
+                "entryId": "ja:definition:school-ruler",
+                "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-5b9a",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:kanji:expanded-898f",
+                "relation": "spelling",
+                "position": 1
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-school-ruler",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    }
+]

@@ -1,0 +1,142 @@
+[
+    {
+        "id": "ja:sentence:food-preparation-example-wash-cucumber",
+        "label": "きゅうりを洗う",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/6ade365dae3ac8c5103d392ffa88aa0d3083fba6b3ea3a9c8679e1748fd38b5d.wav",
+            "pronunciation": ["きゅうりをあらう"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:cucumber",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:household-wash",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:definition:food-preparation-example-wash-cucumber",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:food-preparation-example-cut-onion",
+        "label": "たまねぎを切る",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/b42701791b2b22ceaa4f97f74adbe86b7e0124af805f60abf56a065d54f1f619.wav",
+            "pronunciation": ["たまねぎをきる"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:onion",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:craft-cut",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:definition:food-preparation-example-cut-onion",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:food-preparation-example-cook-ingredients",
+        "label": "鶏肉ときのこを料理する",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/1a8595a991d04dc93d53229c1de1c9722f8cfe8b04793e9542afdfec02e53832.wav",
+            "pronunciation": ["とりにくときのこをりょうりする"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:chicken",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:to",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:vegetables-mushroom",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:household-cook",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:food-preparation-example-cook-ingredients",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:food-preparation-example-find-potatoes",
+        "label": "じゃがいもはどこですか",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/431b11dd9ed577cddb35bc4ea4c215448ace15d50a5405cdbd9c14ddbf42629d.wav",
+            "pronunciation": ["じゃがいもはどこですか"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:potato",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:doko",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:word:desu",
+                "relation": "words",
+                "position": 3
+            },
+            {
+                "entryId": "ja:particle:ka",
+                "relation": "particles",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:food-preparation-example-find-potatoes",
+                "relation": "definitions"
+            }
+        ]
+    }
+]

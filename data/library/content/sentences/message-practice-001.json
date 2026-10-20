@@ -1,0 +1,172 @@
+[
+    {
+        "id": "ja:sentence:message-practice-example-tomorrow-recipient",
+        "label": "明日友達に葉書を送る",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/6e6ded4dcfb33f27de27ca9bbe68471494f80da5ada18d2209e587556e21de4a.wav",
+            "pronunciation": ["あしたともだちにはがきをおくる"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:time-tomorrow",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:word:tomodachi",
+                "relation": "words",
+                "position": 1
+            },
+            {
+                "entryId": "ja:particle:ni",
+                "relation": "particles",
+                "position": 2
+            },
+            {
+                "entryId": "ja:word:correspondence-postcard",
+                "relation": "words",
+                "position": 3
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 4
+            },
+            {
+                "entryId": "ja:word:delivery-send",
+                "relation": "words",
+                "position": 5
+            },
+            {
+                "entryId": "ja:definition:message-practice-example-tomorrow-recipient",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:message-practice-example-coordinated-mail",
+        "label": "手紙と葉書を送る",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/04a3cb5952d8b6eb271119e823a3b91c7e6ac338537dcbad637b8ef370177a5b.wav",
+            "pronunciation": ["てがみとはがきをおくる"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:correspondence-letter",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:to",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:correspondence-postcard",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:delivery-send",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:message-practice-example-coordinated-mail",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:message-practice-example-carry-together",
+        "label": "友達と重い箱を運ぶ",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/ed8a59a8c322fdc04e495da80ae835a4e25ef69fb274703ea0e7f7717664acb5.wav",
+            "pronunciation": ["ともだちとおもいはこをはこぶ"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:tomodachi",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:to",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:qualities-heavy",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:word:containers-box",
+                "relation": "words",
+                "position": 3
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 4
+            },
+            {
+                "entryId": "ja:word:delivery-carry",
+                "relation": "words",
+                "position": 5
+            },
+            {
+                "entryId": "ja:definition:message-practice-example-carry-together",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:message-practice-example-suitcase-destination",
+        "label": "スーツケースを駅まで運ぶ",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/2fd4d774507f1614581c1441f59a6cf8f78ebe7534d880dd3701c2c367c23dbb.wav",
+            "pronunciation": ["すーつけーすをえきまではこぶ"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:travel-suitcase",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:travel-station",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:made",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:delivery-carry",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:message-practice-example-suitcase-destination",
+                "relation": "definitions"
+            }
+        ]
+    }
+]

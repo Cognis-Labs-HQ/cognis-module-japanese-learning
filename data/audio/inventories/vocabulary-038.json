@@ -1,0 +1,90 @@
+[
+    {
+        "path": "audio/7a02ed969093a82b6ae1b4806e682a75e7ddf124ab5a8008c84fa050d58eb05f.wav",
+        "text": "あかるい",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "明るい",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "あかるい",
+                "semanticRole": "lexicalUnit",
+                "readings": ["あかるい"]
+            },
+            {
+                "language": "ja",
+                "label": "明るい",
+                "semanticRole": "lexicalUnit",
+                "readings": ["あかるい"]
+            }
+        ],
+        "entries": [
+            "ja:word:light-level-bright",
+            "ja:word:complete-pronunciation-light-level-bright"
+        ],
+        "variants": [],
+        "sha256": "7a02ed969093a82b6ae1b4806e682a75e7ddf124ab5a8008c84fa050d58eb05f",
+        "frames": 16564,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "57bd584da8fa2afb3aa8d3bccd5ca2fc4e138ab629d29d652e42d8bc32199286"
+        }
+    },
+    {
+        "path": "audio/8bbaf87561a1dd86f8b0163f0a20e5cece0a4fce985dddb868f966583fa4505f.wav",
+        "text": "くらい",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "暗い",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "くらい",
+                "semanticRole": "lexicalUnit",
+                "readings": ["くらい"]
+            },
+            {
+                "language": "ja",
+                "label": "暗い",
+                "semanticRole": "lexicalUnit",
+                "readings": ["くらい"]
+            }
+        ],
+        "entries": [
+            "ja:word:light-level-dark",
+            "ja:word:complete-pronunciation-light-level-dark"
+        ],
+        "variants": [],
+        "sha256": "8bbaf87561a1dd86f8b0163f0a20e5cece0a4fce985dddb868f966583fa4505f",
+        "frames": 14335,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "4bd04281832a56c6395b025e9a103e60b6664ce24ecf95336a9123d476712e49"
+        }
+    }
+]

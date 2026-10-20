@@ -226,9 +226,15 @@
                 "label": "ド",
                 "semanticRole": "atomicWritingUnit",
                 "readings": ["do"]
+            },
+            {
+                "language": "ja",
+                "label": "度",
+                "semanticRole": "compoundWritingUnit",
+                "readings": ["ど"]
             }
         ],
-        "entries": ["ja:char:do", "ja:char:ka:do"],
+        "entries": ["ja:char:do", "ja:char:ka:do", "ja:kanji:expanded-5ea6"],
         "variants": [],
         "sha256": "1ec34d37fdb43a5da98a127fccea353ee33337c4583d57bccce40646682b7ab9",
         "frames": 13220
@@ -660,16 +666,112 @@
                 "label": "き",
                 "semanticRole": "lexicalUnit",
                 "readings": ["き"]
+            },
+            {
+                "language": "ja",
+                "label": "木",
+                "semanticRole": "lexicalUnit",
+                "readings": ["き"]
+            },
+            {
+                "language": "ja",
+                "label": "切",
+                "semanticRole": "compoundWritingUnit",
+                "readings": ["き"]
+            },
+            {
+                "language": "ja",
+                "label": "木",
+                "semanticRole": "compoundWritingUnit",
+                "readings": ["き"]
+            },
+            {
+                "language": "ja",
+                "label": "機",
+                "semanticRole": "compoundWritingUnit",
+                "readings": ["き"]
+            },
+            {
+                "language": "ja",
+                "label": "消",
+                "semanticRole": "compoundWritingUnit",
+                "readings": ["き"]
+            },
+            {
+                "language": "ja",
+                "label": "規",
+                "semanticRole": "compoundWritingUnit",
+                "readings": ["き"]
+            },
+            {
+                "language": "ja",
+                "label": "黄",
+                "semanticRole": "compoundWritingUnit",
+                "readings": ["き"]
             }
         ],
         "entries": [
             "ja:char:ki",
             "ja:char:ka:ki",
             "ja:word:kanji-reading-e69da5-03",
-            "ja:word:kanji-reading-e7949f-08"
+            "ja:word:kanji-reading-e7949f-08",
+            "ja:kanji:expanded-5207",
+            "ja:kanji:expanded-6728",
+            "ja:kanji:expanded-6a5f",
+            "ja:kanji:expanded-6d88",
+            "ja:kanji:expanded-898f",
+            "ja:kanji:expanded-9ec4"
         ],
         "variants": [],
         "sha256": "e5539161d4bf993632ec6cfeafe17a397d6bf58621e19f3fadfaf0f5f9fd97c7",
         "frames": 13220
+    },
+    {
+        "path": "audio/a9e7a40093b193b36712ad7761261a3d095a1816f610eb8833ab19d6fbc1b9bc.wav",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "text": "く",
+        "request": {
+            "text": "く",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "apply_text_normalization": "off",
+            "language_code": "ja"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "く",
+                "semanticRole": "atomicWritingUnit",
+                "readings": ["ku"]
+            },
+            {
+                "language": "ja",
+                "label": "ク",
+                "semanticRole": "atomicWritingUnit",
+                "readings": ["ku"]
+            },
+            {
+                "language": "ja",
+                "label": "く",
+                "semanticRole": "lexicalUnit",
+                "readings": ["く"]
+            }
+        ],
+        "entries": [
+            "ja:char:ku",
+            "ja:char:ka:ku",
+            "ja:word:kanji-reading-e69da5-01",
+            "ja:word:kanji-reading-e9a39f-02"
+        ],
+        "variants": [],
+        "sha256": "304a34f41fb14bc06881662d4f6205382429cc8254e6f563a6c0a99f64a6eb93",
+        "frames": 10991
     }
 ]

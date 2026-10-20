@@ -1,0 +1,280 @@
+[
+    {
+        "id": "ja:word:complete-pronunciation-tableware-cup",
+        "label": "カップ",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["カップ"],
+            "audio": "audio/2a0263c47f0699e1aff3603a5892c5256ffaff78ed6c656be287581ee8ab5255.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:ka:ka",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:ka:small-tsu",
+                        "relation": "reading-kana",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:ka:pu",
+                        "relation": "reading-kana",
+                        "position": 2
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:tableware-cup",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:tableware-cup",
+        "label": "カップ",
+        "class": "lexical:noun",
+        "fields": {
+            "pronunciation": ["カップ"],
+            "reference_images": [
+                "images/2cae132cd3073726843a4bbe6f22eb2429bba3c03d1046ae400ef1307f618e1d.jpg"
+            ],
+            "audio": "audio/2a0263c47f0699e1aff3603a5892c5256ffaff78ed6c656be287581ee8ab5255.wav"
+        },
+        "tags": ["noun", "tableware"],
+        "references": [
+            {
+                "entryId": "ja:definition:tableware-cup",
+                "relation": "definitions"
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-tableware-cup",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:complete-pronunciation-tableware-plate",
+        "label": "さら",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["さら"],
+            "audio": "audio/696fb7666b658b7208e991f2c58509fc3a87b8629251f025acf3bc145a44594f.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:sa",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:ra",
+                        "relation": "reading-kana",
+                        "position": 1
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:tableware-plate",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:tableware-plate",
+        "label": "皿",
+        "class": "lexical:noun",
+        "fields": {
+            "pronunciation": ["さら"],
+            "reference_images": [
+                "images/d0d5be8e6033ff221a06d111a6ebfc8e05b4c06de74d93873d6e788bb3447837.jpg"
+            ],
+            "audio": "audio/696fb7666b658b7208e991f2c58509fc3a87b8629251f025acf3bc145a44594f.wav"
+        },
+        "tags": ["noun", "tableware"],
+        "references": [
+            {
+                "entryId": "ja:definition:tableware-plate",
+                "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-76bf",
+                "relation": "spelling",
+                "position": 0
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-tableware-plate",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:complete-pronunciation-tableware-spoon",
+        "label": "スプーン",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["スプーン"],
+            "audio": "audio/0330d7e2ff38989c650e628d73e3fe5ea13ee95b14a7cc7770e084ed43259ab5.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:ka:su",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:ka:pu",
+                        "relation": "reading-kana",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:long-vowel-mark",
+                        "relation": "reading-kana",
+                        "position": 2
+                    },
+                    {
+                        "entryId": "ja:char:ka:n",
+                        "relation": "reading-kana",
+                        "position": 3
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:tableware-spoon",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:tableware-spoon",
+        "label": "スプーン",
+        "class": "lexical:noun",
+        "fields": {
+            "pronunciation": ["スプーン"],
+            "reference_images": [
+                "images/f1bbef936a57ab0bae363493f0764654c6acbcb41b201d26c8dde1f2d9b57954.jpg"
+            ],
+            "audio": "audio/0330d7e2ff38989c650e628d73e3fe5ea13ee95b14a7cc7770e084ed43259ab5.wav"
+        },
+        "tags": ["noun", "tableware"],
+        "references": [
+            {
+                "entryId": "ja:definition:tableware-spoon",
+                "relation": "definitions"
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-tableware-spoon",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:complete-pronunciation-tableware-fork",
+        "label": "フォーク",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["フォーク"],
+            "audio": "audio/bd830d1b87d9b110d43374bfa5c5f1cc9b45e3cbe24046b187d59e40288a2587.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:ka:fu",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:ka:small-o",
+                        "relation": "reading-kana",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:long-vowel-mark",
+                        "relation": "reading-kana",
+                        "position": 2
+                    },
+                    {
+                        "entryId": "ja:char:ka:ku",
+                        "relation": "reading-kana",
+                        "position": 3
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:tableware-fork",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:tableware-fork",
+        "label": "フォーク",
+        "class": "lexical:noun",
+        "fields": {
+            "pronunciation": ["フォーク"],
+            "reference_images": [
+                "images/f16e6273cf64f2e4d542aebd5cccf42158893d09d341e5d2fab824119ad52c05.jpg"
+            ],
+            "audio": "audio/bd830d1b87d9b110d43374bfa5c5f1cc9b45e3cbe24046b187d59e40288a2587.wav"
+        },
+        "tags": ["noun", "tableware"],
+        "references": [
+            {
+                "entryId": "ja:definition:tableware-fork",
+                "relation": "definitions"
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-tableware-fork",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    }
+]

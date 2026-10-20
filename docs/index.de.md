@@ -2,6 +2,10 @@
 
 Das Modul Japanisch lernen installiert deklarative japanische Lerndatensätze in die hosteigene Study-Bibliothek und bleibt dabei von Bibliotheksinternas, Datenbanken, APIs und Browsercode isoliert.
 
+## Enthaltene Lerninhalte
+
+Das Paket bietet Schreibvorlagen, thematischen Wortschatz, verknüpfte Beispiele, Illustrationen und Startdecks. Die paketierten Inhalte und Medienverzeichnisse sind maßgeblich für die Verfügbarkeit.
+
 ## Verwendung
 
 Aktivieren Sie das Study-Gateway und den Bibliotheksadapter und anschließend dieses Modul. Sein Bootstrap löst `study:library:provider` aus `ctx` auf und übernimmt `data/library`. Administratoren und Lernende verwenden die vom Bibliotheksadapter erzeugte Study-Oberfläche statt einer moduleigenen Route.
@@ -62,7 +66,7 @@ Resolver-Rollen sind nun echten Zusammensetzungen vorbehalten: Kanji-Lesungen, W
 
 ## Vollständige Kana-Tabellen
 
-Zusätzlich zu allen 46 grundlegenden Gojūon-Einträgen und 25 Dakuten- oder Handakuten-Formen je Schriftsystem enthält das Paket kleine Kana, alle üblichen Yōon-Reihen und verbreitete Sokuon-Geminationen. Beispiele sind `ひゃ`, `しゅ`, `じゃ` und `って` sowie ihre Katakana-Entsprechungen.
+Zusätzlich zu grundlegenden Gojūon-Einträgen und Dakuten- oder Handakuten-Formen je Schriftsystem enthält das Paket kleine Kana, alle üblichen Yōon-Reihen und verbreitete Sokuon-Geminationen. Beispiele sind `ひゃ`, `しゅ`, `じゃ` und `って` sowie ihre Katakana-Entsprechungen.
 
 ## Dynamische Variantenplatzierung
 
@@ -236,7 +240,7 @@ Ein Kanji mit einer Aussprache verknüpft direkt geordnete atomare Kana. Ein Kan
 
 ## Geprüfter Stapel zu Ort und Art und Weise
 
-Der geprüfte Anfängerstapel ergänzt `ここ`, `そこ`, `どこ`, `いる`, `ある`, `きれい`, `とても`, `ゆっくり` und `です` sowie acht abwechslungsreiche Sätze über Orte, Existenz, Fragen, Aussehen und Art und Weise. Jedes neue Wort besitzt eine lokalisierte Definition und geordnete Kana-Schreibweise; jeder Satz besitzt eine exakte lokalisierte Bedeutung, geordnete lexikalische Zusammensetzung und einen vollständigen ausgeblendeten Aussprachepfad.
+Der geprüfte Anfängerstapel ergänzt `ここ`, `そこ`, `どこ`, `いる`, `ある`, `きれい`, `とても`, `ゆっくり` und `です` sowie abwechslungsreiche Sätze über Orte, Existenz, Fragen, Aussehen und Art und Weise. Jedes neue Wort besitzt eine lokalisierte Definition und geordnete Kana-Schreibweise; jeder Satz besitzt eine exakte lokalisierte Bedeutung, geordnete lexikalische Zusammensetzung und einen vollständigen ausgeblendeten Aussprachepfad.
 
 ## Destruktive Deinstallationsbereinigung
 
@@ -304,7 +308,7 @@ Das Schema legt die Erkunden-Pfade `kana`, `kanji`, `vocabulary` und `sentences`
 
 ## Lernkarten-Startdecks
 
-Der japanische Anbieter erklärt sechs Startdecks: Hiragana-Grundlagen (46), Katakana-Grundlagen (46), Kanji im Alltag (10), Erste japanische Wörter (9), Japanische Verben im Alltag (8) und Erste japanische Sätze (12). Stabile Schlüssel, vier übersetzte Namen, Schema-IDs und sichtbare Datensatz-IDs erlauben Cognis die Auflösung kanonischer Bibliotheks-IDs. Ansicht, Favoriten, Freigaben und Fortschritt gehören Cognis; das Modul erstellt keine Nutzerstapel und fragt keine Host-Datenbank ab.
+Der japanische Anbieter erklärt Startdecks: Hiragana-Grundlagen, Katakana-Grundlagen, Kanji im Alltag, Erste japanische Wörter, Japanische Verben im Alltag und Erste japanische Sätze. Stabile Schlüssel, vier übersetzte Namen, Schema-IDs und sichtbare Datensatz-IDs erlauben Cognis die Auflösung kanonischer Bibliotheks-IDs. Ansicht, Favoriten, Freigaben und Fortschritt gehören Cognis; das Modul erstellt keine Nutzerstapel und fragt keine Host-Datenbank ab.
 
 ## Review und Lebenszyklus
 
@@ -334,7 +338,7 @@ Jisho-Kandidaten ohne vollständige Kana-Rekonstruktion werden abgelehnt. Kanji-
 
 ## Sprache und Aufnahmen
 
-Das Paket enthält geprüfte WAV-Aufnahmen für jede vertonte kuratierte Karte, jedes Zeichen, jede Partikel und jede erreichbare Schematransformation, einschließlich Pluralformen und mehrstufiger Verbformen. `xya0RvcJtofTcFTOdX4E` ist die festgelegte Stimme dieser Sprache. `data/audio/recordings.json` dokumentiert Anforderungen, Stimme, Modell, Einstellungen, Transformationspfade und Prüfsummen; Zugangsdaten und Erzeugungswerkzeuge werden nicht mitgeliefert.
+Mitgelieferte WAV-Dateien werden auf Prüfsumme, Format und PCM-Integrität geprüft. Die Prüfung durch Anhören wird getrennt dokumentiert und kann unbestätigt sein. `data/audio/recordings.json` führt vorhandene Aufnahmen und Zusammensetzungen auf. `data/audio/unavailable.json` nennt Karten ohne mitgelieferte Audiodatei ausdrücklich; fehlende Aufnahmen sind keine Wiedergabe-URLs. Die festgelegte Stimme ist `xya0RvcJtofTcFTOdX4E`. Zugangsdaten und Offline-Erzeugungswerkzeuge werden nicht mitgeliefert.
 
 Sätze verwenden exakt die PCM-Abtastwerte ihrer geordneten Wort- und Partikelaufnahmen einschließlich ausgewählter Transformationen. Gebündelte Sätze behalten dadurch dieselbe Stimme und Aussprache wie die Einzelwiedergabe. Neue Sätze verwenden die Zusammenstellung des Hosts; eine fehlende Variante darf niemals durch die Aussprache der Grundform ersetzt werden. Die Aufnahmen decken das kuratierte Paket ab, nicht sämtliche Wörterbucheinträge oder mögliche selbst verfasste Sätze.
 
@@ -346,7 +350,7 @@ Jede Ebene stellt das optionale Referenzbildfeld im Karteneditor und in der Deta
 
 ## Aufnahmeverzeichnisse
 
-`data/audio/recordings.json` ist ein kompaktes Manifest mit Sprache, Stimme, Modell, gemeinsamen Verarbeitungseinstellungen, Gesamtzahlen und geprüften Inventarpfaden. Dateien unter `data/audio/inventories/` beschreiben getrennt Zeichen, Vokabeln, Transformationen, direkte Sätze und zusammengesetzte Ersatzaufnahmen. Jede Datei bleibt unter 800 Zeilen und enthält die genauen Anforderungen, Stimmenherkunft, Transformationspfade und Audio-Prüfsummen. Bootstrap prüft vor der Wiedergaberegistrierung jede Prüfsumme und Anzahl; Audiodaten und Suchpriorität bleiben unverändert.
+`data/audio/recordings.json` verwendet Inventarformat 2 mit Sprache, Stimme, Modell, Verarbeitungseinstellungen, Gesamtzahlen und geprüften Zweckindexpfaden. Dateien unter `data/audio/indexes/` verweisen mit Prüfsummen auf die Dateien unter `data/audio/inventories/`, getrennt nach Zeichen, Vokabeln, Transformationen, direkten Sätzen und Satzkompositionen. Haupt- und Zweckindizes bleiben unter 400 Zeilen, Aufnahmedateien bei höchstens 800 Zeilen. Vor der Wiedergaberegistrierung prüft der Lader beide Ebenen, Anzahlen, erlaubte Pfade, Zweckzuordnung und doppelte Pfade. Aufnahmeobjekte, Audiodaten und Suchpriorität bleiben erhalten.
 
 ## Explizite Katalognormalisierung und Satzkompositionen
 

@@ -1,0 +1,147 @@
+[
+    {
+        "id": "ja:sentence:length-example-ruler-length",
+        "label": "定規は長い",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/718737154dd3c32ab824f77d8df6bf109d183a0f373946cc72551531ca1490c5.wav",
+            "pronunciation": ["じょうぎはながい"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:school-ruler",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:length-long",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:definition:length-example-ruler-length",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:length-example-buy-pencil",
+        "label": "短い鉛筆を買う",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/d3459f7cc76c843bd7905e143e3d4933fa9fb92c92b7e716c59f09f7585fe208.wav",
+            "pronunciation": ["みじかいえんぴつをかう"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:length-short",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:word:school-pencil",
+                "relation": "words",
+                "position": 1
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 2
+            },
+            {
+                "entryId": "ja:word:travel-buy",
+                "relation": "words",
+                "position": 3
+            },
+            {
+                "entryId": "ja:definition:length-example-buy-pencil",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:length-example-skirt-degree",
+        "label": "スカートはとても短い",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/d661a10e5bc36e6afec6d9b74795cf6e2e858984caaf084bfc84679715ded310.wav",
+            "pronunciation": ["スカートはとてもみじかい"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:clothing-skirt",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:totemo",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:word:length-short",
+                "relation": "words",
+                "position": 3
+            },
+            {
+                "entryId": "ja:definition:length-example-skirt-degree",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:length-example-bridge-question",
+        "label": "長い橋はどこですか",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/a4de0a200231eb8af6e66efa3fbd5657481a69a474d68e8273eb9ca62e08f68a.wav",
+            "pronunciation": ["ながいはしはどこですか"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:length-long",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:word:hashi-bridge",
+                "relation": "words",
+                "position": 1
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 2
+            },
+            {
+                "entryId": "ja:word:doko",
+                "relation": "words",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:desu",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:particle:ka",
+                "relation": "particles",
+                "position": 5
+            },
+            {
+                "entryId": "ja:definition:length-example-bridge-question",
+                "relation": "definitions"
+            }
+        ]
+    }
+]

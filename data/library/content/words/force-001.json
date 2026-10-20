@@ -1,0 +1,136 @@
+[
+    {
+        "id": "ja:word:complete-pronunciation-force-push",
+        "label": "おす",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["おす"],
+            "audio": "audio/70842c34e88433d2fc8cf4f203b3c87cec9fab8573e74cf21e931c128d43e52c.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:o",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:su",
+                        "relation": "reading-kana",
+                        "position": 1
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:force-push",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:force-push",
+        "label": "押す",
+        "class": "lexical:verb",
+        "fields": {
+            "pronunciation": ["おす"],
+            "reference_images": [
+                "images/c3537a0ad82916f9b56c69f14fc833a50cd353d2c6e001f324703ed735407dca.jpg"
+            ],
+            "audio": "audio/70842c34e88433d2fc8cf4f203b3c87cec9fab8573e74cf21e931c128d43e52c.wav"
+        },
+        "tags": ["verb", "force-form-push"],
+        "references": [
+            {
+                "entryId": "ja:definition:force-push",
+                "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-62bc",
+                "relation": "spelling",
+                "position": 0
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-force-push",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:complete-pronunciation-force-pull",
+        "label": "ひく",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["ひく"],
+            "audio": "audio/cfbef82ee07b0267206dc163ac30d80b870c078fb3ac5997876c7c7feb4893f0.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:hi",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:ku",
+                        "relation": "reading-kana",
+                        "position": 1
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:force-pull",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:force-pull",
+        "label": "引く",
+        "class": "lexical:verb",
+        "fields": {
+            "pronunciation": ["ひく"],
+            "reference_images": [
+                "images/06884ae1bfca80b432829be9044b4ea785133730b3b03c64c5dd5c4fa97d7e16.jpg"
+            ],
+            "audio": "audio/cfbef82ee07b0267206dc163ac30d80b870c078fb3ac5997876c7c7feb4893f0.wav"
+        },
+        "tags": ["verb", "force-form-pull"],
+        "references": [
+            {
+                "entryId": "ja:definition:force-pull",
+                "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-5f15",
+                "relation": "spelling",
+                "position": 0
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-force-pull",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    }
+]

@@ -1,0 +1,284 @@
+[
+    {
+        "id": "ja:word:complete-pronunciation-frequency-often",
+        "label": "よく",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["よく"],
+            "audio": "audio/2e03418556598bbe0d91037d4f5ca4a3b2429ea768cef9fc660eb57f057b1a51.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:yo",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:ku",
+                        "relation": "reading-kana",
+                        "position": 1
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:frequency-often",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:frequency-often",
+        "label": "よく",
+        "class": "lexical:adverb",
+        "fields": {
+            "pronunciation": ["よく"],
+            "reference_images": [
+                "images/e47d089183597b3d24ca079190fcba2a86e37ecb6b86cfa785154cd6f382a981.jpg"
+            ],
+            "audio": "audio/2e03418556598bbe0d91037d4f5ca4a3b2429ea768cef9fc660eb57f057b1a51.wav"
+        },
+        "tags": ["adverb"],
+        "references": [
+            {
+                "entryId": "ja:definition:frequency-often",
+                "relation": "definitions"
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-frequency-often",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:complete-pronunciation-frequency-sometimes",
+        "label": "ときどき",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["ときどき"],
+            "audio": "audio/956d454da0029c0392648bd96d8a382f452836a656c8cbaa1232fc780608201e.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:to",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:ki",
+                        "relation": "reading-kana",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:do",
+                        "relation": "reading-kana",
+                        "position": 2
+                    },
+                    {
+                        "entryId": "ja:char:ki",
+                        "relation": "reading-kana",
+                        "position": 3
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:frequency-sometimes",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:frequency-sometimes",
+        "label": "時々",
+        "class": "lexical:adverb",
+        "fields": {
+            "pronunciation": ["ときどき"],
+            "reference_images": [
+                "images/8193a4c64a07a297b44e31c6e3e39a1fe42c63fb72739e763ac630be7d9d312a.jpg"
+            ],
+            "audio": "audio/956d454da0029c0392648bd96d8a382f452836a656c8cbaa1232fc780608201e.wav"
+        },
+        "tags": ["adverb"],
+        "references": [
+            {
+                "entryId": "ja:definition:frequency-sometimes",
+                "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-6642",
+                "relation": "spelling",
+                "position": 0
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-frequency-sometimes",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:complete-pronunciation-frequency-usually",
+        "label": "たいてい",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["たいてい"],
+            "audio": "audio/64f51fe03be3db044fe2a59e20a59578ccb9017040b70915a4b2f9e5ff5ebc16.wav"
+        },
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:kanji-reading-e5a4a7-03",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ],
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:te",
+                        "relation": "reading-kana",
+                        "position": 2
+                    },
+                    {
+                        "entryId": "ja:char:i",
+                        "relation": "reading-kana",
+                        "position": 3
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:frequency-usually",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:frequency-usually",
+        "label": "大抵",
+        "class": "lexical:adverb",
+        "fields": {
+            "pronunciation": ["たいてい"],
+            "reference_images": [
+                "images/39691b05d558544b47b1486657dced112a53499e34167c594c8dd8ec512ba58a.jpg"
+            ],
+            "audio": "audio/64f51fe03be3db044fe2a59e20a59578ccb9017040b70915a4b2f9e5ff5ebc16.wav"
+        },
+        "tags": ["adverb"],
+        "references": [
+            {
+                "entryId": "ja:definition:frequency-usually",
+                "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:core-e5a4a7",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:kanji:expanded-62b5",
+                "relation": "spelling",
+                "position": 1
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-frequency-usually",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:complete-pronunciation-frequency-again",
+        "label": "また",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["また"],
+            "audio": "audio/72c303c7cea542c38aabb019da70024f7829d0f03434dd7eba0a78beb965ae5d.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:ma",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:ta",
+                        "relation": "reading-kana",
+                        "position": 1
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:frequency-again",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:frequency-again",
+        "label": "また",
+        "class": "lexical:adverb",
+        "fields": {
+            "pronunciation": ["また"],
+            "reference_images": [
+                "images/2708b25ab2d4ab716cddc564e34b5d017c0097199915e6b21db6a89a8df121bf.jpg"
+            ],
+            "audio": "audio/72c303c7cea542c38aabb019da70024f7829d0f03434dd7eba0a78beb965ae5d.wav"
+        },
+        "tags": ["adverb"],
+        "references": [
+            {
+                "entryId": "ja:definition:frequency-again",
+                "relation": "definitions"
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-frequency-again",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    }
+]

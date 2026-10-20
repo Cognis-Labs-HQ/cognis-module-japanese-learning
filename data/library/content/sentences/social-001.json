@@ -1,0 +1,122 @@
+[
+    {
+        "id": "ja:sentence:social-example-greeting",
+        "label": "先生こんにちは",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/cfb40b467b9afd7f83c7a37475616afc48085d9e1e11dc329d15540072a6e94e.wav",
+            "pronunciation": ["せんせいこんにちわ"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:sensei",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:word:social-greeting",
+                "relation": "words",
+                "position": 1
+            },
+            {
+                "entryId": "ja:definition:social-example-greeting",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:social-example-gratitude",
+        "label": "先生ありがとうございます",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/b1baedc937341fad5941788669600a3d89497fcb51b1aa09b6045e38759c5c4f.wav",
+            "pronunciation": ["せんせいありがとうございます"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:sensei",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:word:social-gratitude",
+                "relation": "words",
+                "position": 1
+            },
+            {
+                "entryId": "ja:definition:social-example-gratitude",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:social-example-attention",
+        "label": "すみません駅はどこですか",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/67ccbbdcaa204aad20cf38477fbf3c6dc4e0f5ce0f4e76d147f5a947a2ec1a2a.wav",
+            "pronunciation": ["すみませんえきはどこですか"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:social-attention",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:word:travel-station",
+                "relation": "words",
+                "position": 1
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 2
+            },
+            {
+                "entryId": "ja:word:doko",
+                "relation": "words",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:desu",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:particle:ka",
+                "relation": "particles",
+                "position": 5
+            },
+            {
+                "entryId": "ja:definition:social-example-attention",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:social-example-farewell",
+        "label": "先生さようなら",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/f8ad19bfa489d91f9d374b76ee56132bb288b1ed9c25bcbdc3c380bea2e48f62.wav",
+            "pronunciation": ["せんせいさようなら"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:sensei",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:word:social-farewell",
+                "relation": "words",
+                "position": 1
+            },
+            {
+                "entryId": "ja:definition:social-example-farewell",
+                "relation": "definitions"
+            }
+        ]
+    }
+]

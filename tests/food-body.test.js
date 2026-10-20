@@ -80,7 +80,7 @@ test("new noun senses preserve mass food, irregular plurals and the Japanese foo
         .filter(({ relation }) => relation === "definitions")
         .map(({ entryId }) => entries.get(entryId).fields.translations.en);
     assert.deepEqual(new Set(meanings), new Set(["foot", "leg"]));
-    assert.equal(foot.label, "あし");
+    assert.equal(foot.label, "足");
     for (const [slug, reading] of [
         ["cucumber", "きゅうり"],
         ["beef", "ぎゅうにく"],

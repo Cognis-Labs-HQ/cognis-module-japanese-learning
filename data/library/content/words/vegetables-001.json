@@ -1,0 +1,295 @@
+[
+    {
+        "id": "ja:word:complete-pronunciation-vegetables-cabbage",
+        "label": "キャベツ",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["キャベツ"],
+            "audio": "audio/d8f5310fbe7909dacdb87525f405c524abd83a76a2debb2d69fdb99f2d7941d2.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:ka:ki",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:ka:small-ya",
+                        "relation": "reading-kana",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:ka:be",
+                        "relation": "reading-kana",
+                        "position": 2
+                    },
+                    {
+                        "entryId": "ja:char:ka:tsu",
+                        "relation": "reading-kana",
+                        "position": 3
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:vegetables-cabbage",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:vegetables-cabbage",
+        "label": "キャベツ",
+        "class": "lexical:noun",
+        "fields": {
+            "pronunciation": ["キャベツ"],
+            "reference_images": [
+                "images/ddbd5ae8d3f303fc0067dbf15f93b48fc266722c9e1e50fb54c813341780fa75.jpg"
+            ],
+            "audio": "audio/d8f5310fbe7909dacdb87525f405c524abd83a76a2debb2d69fdb99f2d7941d2.wav"
+        },
+        "tags": ["noun", "vegetables"],
+        "references": [
+            {
+                "entryId": "ja:definition:vegetables-cabbage",
+                "relation": "definitions"
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-vegetables-cabbage",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:complete-pronunciation-vegetables-mushroom",
+        "label": "きのこ",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["きのこ"],
+            "audio": "audio/d399383db51952a03ad3238f869ab16bf4a4d586891c15c156f3c28e8f1b76a1.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:ki",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:no",
+                        "relation": "reading-kana",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:ko",
+                        "relation": "reading-kana",
+                        "position": 2
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:vegetables-mushroom",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:vegetables-mushroom",
+        "label": "きのこ",
+        "class": "lexical:noun",
+        "fields": {
+            "pronunciation": ["きのこ"],
+            "reference_images": [
+                "images/7be25530e24cdb42f24b0b92247d7c8078edf304099a56adab0bbab4cf075395.jpg"
+            ],
+            "audio": "audio/d399383db51952a03ad3238f869ab16bf4a4d586891c15c156f3c28e8f1b76a1.wav"
+        },
+        "tags": ["noun", "vegetables"],
+        "references": [
+            {
+                "entryId": "ja:definition:vegetables-mushroom",
+                "relation": "definitions"
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-vegetables-mushroom",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:complete-pronunciation-vegetables-spinach",
+        "label": "ほうれんそう",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["ほうれんそう"],
+            "audio": "audio/14d85ea1e905ade228f4df3ac73d0c5916ef21634636e384f2a3d02c300ef427.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:ho",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:u",
+                        "relation": "reading-kana",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:re",
+                        "relation": "reading-kana",
+                        "position": 2
+                    },
+                    {
+                        "entryId": "ja:char:n",
+                        "relation": "reading-kana",
+                        "position": 3
+                    },
+                    {
+                        "entryId": "ja:char:so",
+                        "relation": "reading-kana",
+                        "position": 4
+                    },
+                    {
+                        "entryId": "ja:char:u",
+                        "relation": "reading-kana",
+                        "position": 5
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:vegetables-spinach",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:vegetables-spinach",
+        "label": "ほうれん草",
+        "class": "lexical:noun",
+        "fields": {
+            "pronunciation": ["ほうれんそう"],
+            "reference_images": [
+                "images/b377568f9d067161e88233fdd01f5e952efa8e6463edfa7a19da5a35fdd2c60b.jpg"
+            ],
+            "audio": "audio/14d85ea1e905ade228f4df3ac73d0c5916ef21634636e384f2a3d02c300ef427.wav"
+        },
+        "tags": ["noun", "vegetables"],
+        "references": [
+            {
+                "entryId": "ja:definition:vegetables-spinach",
+                "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-8349",
+                "relation": "spelling",
+                "position": 4
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-vegetables-spinach",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:complete-pronunciation-vegetables-lettuce",
+        "label": "レタス",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["レタス"],
+            "audio": "audio/1fd8972f5dd327c7c644699d8bb352298eac49482694dc6125241bef283e6b94.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:ka:re",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:ka:ta",
+                        "relation": "reading-kana",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:ka:su",
+                        "relation": "reading-kana",
+                        "position": 2
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:vegetables-lettuce",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:vegetables-lettuce",
+        "label": "レタス",
+        "class": "lexical:noun",
+        "fields": {
+            "pronunciation": ["レタス"],
+            "reference_images": [
+                "images/e6cd4ae9091f99444dc4f595eae022265f12034e27e6b7aa3a6cd72c108b30d7.jpg"
+            ],
+            "audio": "audio/1fd8972f5dd327c7c644699d8bb352298eac49482694dc6125241bef283e6b94.wav"
+        },
+        "tags": ["noun", "vegetables"],
+        "references": [
+            {
+                "entryId": "ja:definition:vegetables-lettuce",
+                "relation": "definitions"
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-vegetables-lettuce",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    }
+]

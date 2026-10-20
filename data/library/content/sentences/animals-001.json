@@ -1,0 +1,157 @@
+[
+    {
+        "id": "ja:sentence:animals-example-rabbit",
+        "label": "うさぎは耳が大きい",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/e988ef038fdc37fffeb9c3c047ce70efa1f31544670bd079d051fec0106111ec.wav",
+            "pronunciation": ["うさぎはみみがおおきい"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:animals-rabbit",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:ear",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:ga",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:ookii",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:animals-example-rabbit",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:animals-example-horse",
+        "label": "友達と馬を見る",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/0b28e4e9634b7bd2ee5613ac77cce9dc96914abe1df76f32c0dab76ff40905af.wav",
+            "pronunciation": ["ともだちとうまをみる"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:tomodachi",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:to",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:animals-horse",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:miru",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:animals-example-horse",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:animals-example-cow",
+        "label": "牛はここにいる",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/dab6a2894c1997ed72fe860b095fdcdd7370b64e7af0ab4c4df15c87e033b6f3.wav",
+            "pronunciation": ["うしはここにいる"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:animals-cow",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:koko",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:ni",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:iru-exist",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:animals-example-cow",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:animals-example-pig",
+        "label": "豚はゆっくり歩く",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/2160c09ca65c51b3e8768cd0a8afa44a76013e37a71423c095d6ce4e24cbfae8.wav",
+            "pronunciation": ["ぶたはゆっくりあるく"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:animals-pig",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:yukkuri",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:word:aruku",
+                "relation": "words",
+                "position": 3
+            },
+            {
+                "entryId": "ja:definition:animals-example-pig",
+                "relation": "definitions"
+            }
+        ]
+    }
+]

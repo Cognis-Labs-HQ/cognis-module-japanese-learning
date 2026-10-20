@@ -1,0 +1,152 @@
+[
+    {
+        "id": "ja:sentence:school-example-pencil",
+        "label": "鉛筆はかばんにある",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/6254c8f531df05ff21a99833464da7a91f38e8bdcc4539c4352a6c68b3ef9543.wav",
+            "pronunciation": ["えんぴつはかばんにある"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:school-pencil",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:bag",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:ni",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:aru-exist",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:school-example-pencil",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:school-example-pen",
+        "label": "ペンを買う",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/1ae1716afb9afb52f54ad3c77f0809f9b6fb68b2b79cb51f4e178bb028f77168.wav",
+            "pronunciation": ["ペンをかう"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:school-pen",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:travel-buy",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:definition:school-example-pen",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:school-example-notebook",
+        "label": "学校でノートを見る",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/17da67ab9445e2952e02c45b3763539c26635b01b0e2fe097bc2235179b74ad6.wav",
+            "pronunciation": ["がっこうでノートをみる"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:gakkou",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:de",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:school-notebook",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:miru",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:school-example-notebook",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:school-example-ruler",
+        "label": "定規はどこですか",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/451154ce17dba3e71bcdf1119001d4b545c656e2dee823e60f44ec07181ad762.wav",
+            "pronunciation": ["じょうぎはどこですか"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:school-ruler",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:doko",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:word:desu",
+                "relation": "words",
+                "position": 3
+            },
+            {
+                "entryId": "ja:particle:ka",
+                "relation": "particles",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:school-example-ruler",
+                "relation": "definitions"
+            }
+        ]
+    }
+]

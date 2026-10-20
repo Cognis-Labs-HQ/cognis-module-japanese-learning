@@ -1,0 +1,90 @@
+[
+    {
+        "path": "audio/de0ed37c063bd7e4a4ce635367bb95326664f6274324bb38ce23157c1180330d.wav",
+        "text": "おくる",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "送る",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "おくる",
+                "semanticRole": "lexicalUnit",
+                "readings": ["おくる"]
+            },
+            {
+                "language": "ja",
+                "label": "送る",
+                "semanticRole": "lexicalUnit",
+                "readings": ["おくる"]
+            }
+        ],
+        "entries": [
+            "ja:word:delivery-send",
+            "ja:word:complete-pronunciation-delivery-send"
+        ],
+        "variants": [],
+        "sha256": "de0ed37c063bd7e4a4ce635367bb95326664f6274324bb38ce23157c1180330d",
+        "frames": 15449,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "6df29ec75924cd8e1f5d717241963b1c912c788242dfd354264669f463fead15"
+        }
+    },
+    {
+        "path": "audio/ba73042fbb842796b95a59c2d2da8f2799ddb486299105dc3289e3bc969a7214.wav",
+        "text": "はこぶ",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "運ぶ",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "はこぶ",
+                "semanticRole": "lexicalUnit",
+                "readings": ["はこぶ"]
+            },
+            {
+                "language": "ja",
+                "label": "運ぶ",
+                "semanticRole": "lexicalUnit",
+                "readings": ["はこぶ"]
+            }
+        ],
+        "entries": [
+            "ja:word:delivery-carry",
+            "ja:word:complete-pronunciation-delivery-carry"
+        ],
+        "variants": [],
+        "sha256": "ba73042fbb842796b95a59c2d2da8f2799ddb486299105dc3289e3bc969a7214",
+        "frames": 17678,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "1b8167ee09b1f8dda9347a6c89d783b2287dc444b8e84c4868fcba3f4f4a1c97"
+        }
+    }
+]

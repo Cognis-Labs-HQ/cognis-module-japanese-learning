@@ -46,7 +46,7 @@
     },
     {
         "id": "ja:word:ka-day-counter",
-        "label": "か",
+        "label": "日",
         "fields": {
             "jlpt_level": "N5",
             "pronunciation": ["か"],
@@ -59,6 +59,11 @@
             {
                 "entryId": "ja:def:reading-ka",
                 "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:nichi",
+                "relation": "spelling",
+                "position": 0
             }
         ],
         "class": "lexical:counter",

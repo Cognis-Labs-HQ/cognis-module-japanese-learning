@@ -1,0 +1,62 @@
+[
+    {
+        "id": "ja:sentence:courtesy-example-apology-later",
+        "label": "ごめんなさい後で話す",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/354afba182bb4eff98aaff25df212363ea6658d53f02f8112517db2c368ae88b.wav",
+            "pronunciation": ["ごめんなさいあとではなす"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:courtesy-sorry",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:word:time-later",
+                "relation": "words",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:core-speak",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:definition:courtesy-example-apology-later",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:courtesy-example-welcome-japan",
+        "label": "日本へようこそ",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/2c74cc661012fd2ee6744604a11792c34bace75e9e46ea8874fdc993fc5f7f18.wav",
+            "pronunciation": ["にほんへようこそ"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:nihon",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:e",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:courtesy-welcome",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:definition:courtesy-example-welcome-japan",
+                "relation": "definitions"
+            }
+        ]
+    }
+]

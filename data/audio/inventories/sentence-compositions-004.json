@@ -1,70 +1,790 @@
 [
     {
-        "path": "audio/3cb18f3593dfcbcf1dc4306c107e82ab1b87e9e639ab41e65de73a88464dcea7.wav",
-        "entryId": "ja:sentence:meat-cheese-like",
-        "label": "にくとチーズが好き",
+        "path": "audio/81f37c5386cd2f802ad9b005835d87491e14f695331cfa707bcc281751876bed.wav",
+        "entryId": "ja:sentence:seasons-activity-spring",
+        "label": "春に花を見る",
         "parts": [
             {
-                "path": "audio/ff0179b24039b7b80998598d26f682530d57feaf8afeebb7f0d0756eb743b932.wav",
-                "entryId": "ja:word:meat"
+                "path": "audio/9b30b4e15c47630aab03a62dfbed21d5967bc84544d3ef2927225ef8b5db7aee.wav",
+                "entryId": "ja:word:seasons-spring"
             },
             {
-                "path": "audio/606f3c1823245eee4195e2195e8189dad7df8cd21b7e6550a55b5c56e585916b.wav",
-                "entryId": "ja:particle:to"
+                "path": "audio/1615cf278c2962c1657907b3686d653625229af2375f90dda5bfd5b178c7aedb.wav",
+                "entryId": "ja:particle:ni"
             },
             {
-                "path": "audio/c10c6c9cb5844b610b9da8483b384151d85dd82f4faf87271c823f3eebe942d6.wav",
-                "entryId": "ja:word:cheese"
+                "path": "audio/67e95d905144fc890bba2a729684a8ddbec8fa4213c676fff2624f19c0fd0a9b.wav",
+                "entryId": "ja:word:hana-flower"
+            },
+            {
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "entryId": "ja:particle:wo"
+            },
+            {
+                "path": "audio/38b1e4b1dda0e34a29c049bd035b5370b24069d70efbb5fef029fb0962f2c8fe.wav",
+                "entryId": "ja:word:miru"
+            },
+            { "pauseMs": 400 }
+        ],
+        "gapMs": 90,
+        "segments": [
+            {
+                "path": "audio/9b30b4e15c47630aab03a62dfbed21d5967bc84544d3ef2927225ef8b5db7aee.wav",
+                "entryId": "ja:word:seasons-spring",
+                "startFrame": 2400,
+                "frameCount": 13220
+            },
+            {
+                "path": "audio/1615cf278c2962c1657907b3686d653625229af2375f90dda5bfd5b178c7aedb.wav",
+                "entryId": "ja:particle:ni",
+                "startFrame": 17780,
+                "frameCount": 13220
+            },
+            {
+                "path": "audio/67e95d905144fc890bba2a729684a8ddbec8fa4213c676fff2624f19c0fd0a9b.wav",
+                "entryId": "ja:word:hana-flower",
+                "startFrame": 33160,
+                "frameCount": 11763
+            },
+            {
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "entryId": "ja:particle:wo",
+                "startFrame": 47083,
+                "frameCount": 8762
+            },
+            {
+                "path": "audio/38b1e4b1dda0e34a29c049bd035b5370b24069d70efbb5fef029fb0962f2c8fe.wav",
+                "entryId": "ja:word:miru",
+                "startFrame": 58005,
+                "frameCount": 14884
+            }
+        ],
+        "sha256": "81f37c5386cd2f802ad9b005835d87491e14f695331cfa707bcc281751876bed",
+        "frames": 84649,
+        "input": {
+            "language": "ja",
+            "label": "春に花を見る",
+            "semanticRole": "orderedLexicalSequence",
+            "readings": ["はるにはなをみる"]
+        },
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "construction": "Exact season-noun recordings and existing constituent PCM; no whole-sentence synthesis."
+        }
+    },
+    {
+        "path": "audio/8102b59075435536e87d587372368c0df062bc9e142bc6071a4cc824fbb857dd.wav",
+        "entryId": "ja:sentence:seasons-activity-summer",
+        "label": "夏に海へ行く",
+        "parts": [
+            {
+                "path": "audio/b2028b2401e952d930346fa7ef3c6cbedaad4b0505c7e25642c7f1009ecb4f9c.wav",
+                "entryId": "ja:word:seasons-summer"
+            },
+            {
+                "path": "audio/1615cf278c2962c1657907b3686d653625229af2375f90dda5bfd5b178c7aedb.wav",
+                "entryId": "ja:particle:ni"
+            },
+            {
+                "path": "audio/b57fe2333d184c99061c9a2836fbb26c27145db7254e7bd6a39625702333b919.wav",
+                "entryId": "ja:word:umi"
+            },
+            {
+                "path": "audio/ef803ed2d9dc2a23cb60bf918b4d34b25be6bbb600ad194fa787b60b817538ec.wav",
+                "entryId": "ja:particle:e"
+            },
+            {
+                "path": "audio/843223b7290cf0fda523989799b96f85c224338146f5d022e92e6715234e2e39.wav",
+                "entryId": "ja:word:iku"
+            },
+            { "pauseMs": 400 }
+        ],
+        "gapMs": 90,
+        "segments": [
+            {
+                "path": "audio/b2028b2401e952d930346fa7ef3c6cbedaad4b0505c7e25642c7f1009ecb4f9c.wav",
+                "entryId": "ja:word:seasons-summer",
+                "startFrame": 2400,
+                "frameCount": 8762
+            },
+            {
+                "path": "audio/1615cf278c2962c1657907b3686d653625229af2375f90dda5bfd5b178c7aedb.wav",
+                "entryId": "ja:particle:ni",
+                "startFrame": 13322,
+                "frameCount": 13220
+            },
+            {
+                "path": "audio/b57fe2333d184c99061c9a2836fbb26c27145db7254e7bd6a39625702333b919.wav",
+                "entryId": "ja:word:umi",
+                "startFrame": 28702,
+                "frameCount": 12528
+            },
+            {
+                "path": "audio/ef803ed2d9dc2a23cb60bf918b4d34b25be6bbb600ad194fa787b60b817538ec.wav",
+                "entryId": "ja:particle:e",
+                "startFrame": 43390,
+                "frameCount": 10991
+            },
+            {
+                "path": "audio/843223b7290cf0fda523989799b96f85c224338146f5d022e92e6715234e2e39.wav",
+                "entryId": "ja:word:iku",
+                "startFrame": 56541,
+                "frameCount": 12643
+            }
+        ],
+        "sha256": "8102b59075435536e87d587372368c0df062bc9e142bc6071a4cc824fbb857dd",
+        "frames": 80944,
+        "input": {
+            "language": "ja",
+            "label": "夏に海へ行く",
+            "semanticRole": "orderedLexicalSequence",
+            "readings": ["なつにうみへいく"]
+        },
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "construction": "Exact season-noun recordings and existing constituent PCM; no whole-sentence synthesis."
+        }
+    },
+    {
+        "path": "audio/cfab5021d24ea2c5f86b0cc318eb7b57b4a2d7e0d8a71bf2606c1ac6f0dc9cfd.wav",
+        "entryId": "ja:sentence:seasons-activity-autumn",
+        "label": "秋に山へ行く",
+        "parts": [
+            {
+                "path": "audio/78fc9f6c63ad647aaa3f8d3d62ff446d27bf16ae2a11f69d74b3a65b9bef66d8.wav",
+                "entryId": "ja:word:seasons-autumn"
+            },
+            {
+                "path": "audio/1615cf278c2962c1657907b3686d653625229af2375f90dda5bfd5b178c7aedb.wav",
+                "entryId": "ja:particle:ni"
+            },
+            {
+                "path": "audio/09e3fd20b5f937930dc477e61a86f500ddc8a8b68cffdb9878d448bb058bd3a4.wav",
+                "entryId": "ja:word:yama"
+            },
+            {
+                "path": "audio/ef803ed2d9dc2a23cb60bf918b4d34b25be6bbb600ad194fa787b60b817538ec.wav",
+                "entryId": "ja:particle:e"
+            },
+            {
+                "path": "audio/843223b7290cf0fda523989799b96f85c224338146f5d022e92e6715234e2e39.wav",
+                "entryId": "ja:word:iku"
+            },
+            { "pauseMs": 400 }
+        ],
+        "gapMs": 90,
+        "segments": [
+            {
+                "path": "audio/78fc9f6c63ad647aaa3f8d3d62ff446d27bf16ae2a11f69d74b3a65b9bef66d8.wav",
+                "entryId": "ja:word:seasons-autumn",
+                "startFrame": 2400,
+                "frameCount": 13220
+            },
+            {
+                "path": "audio/1615cf278c2962c1657907b3686d653625229af2375f90dda5bfd5b178c7aedb.wav",
+                "entryId": "ja:particle:ni",
+                "startFrame": 17780,
+                "frameCount": 13220
+            },
+            {
+                "path": "audio/09e3fd20b5f937930dc477e61a86f500ddc8a8b68cffdb9878d448bb058bd3a4.wav",
+                "entryId": "ja:word:yama",
+                "startFrame": 33160,
+                "frameCount": 9829
+            },
+            {
+                "path": "audio/ef803ed2d9dc2a23cb60bf918b4d34b25be6bbb600ad194fa787b60b817538ec.wav",
+                "entryId": "ja:particle:e",
+                "startFrame": 45149,
+                "frameCount": 10991
+            },
+            {
+                "path": "audio/843223b7290cf0fda523989799b96f85c224338146f5d022e92e6715234e2e39.wav",
+                "entryId": "ja:word:iku",
+                "startFrame": 58300,
+                "frameCount": 12643
+            }
+        ],
+        "sha256": "cfab5021d24ea2c5f86b0cc318eb7b57b4a2d7e0d8a71bf2606c1ac6f0dc9cfd",
+        "frames": 82703,
+        "input": {
+            "language": "ja",
+            "label": "秋に山へ行く",
+            "semanticRole": "orderedLexicalSequence",
+            "readings": ["あきにやまへいく"]
+        },
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "construction": "Exact season-noun recordings and existing constituent PCM; no whole-sentence synthesis."
+        }
+    },
+    {
+        "path": "audio/f1b94de00261e2132e8ef802283c579e8431400f3bc25b27f6971a8f19592607.wav",
+        "entryId": "ja:sentence:seasons-activity-winter",
+        "label": "冬にスープを飲む",
+        "parts": [
+            {
+                "path": "audio/84afc1c6e944468f2296dac22335c4cf6c53f7d0e84a799b43f6601a9e3d57ed.wav",
+                "entryId": "ja:word:seasons-winter"
+            },
+            {
+                "path": "audio/1615cf278c2962c1657907b3686d653625229af2375f90dda5bfd5b178c7aedb.wav",
+                "entryId": "ja:particle:ni"
+            },
+            {
+                "path": "audio/4a74d133f1fde60b0990bab7970d5ab9683f6c87122f694b518c45819b667cbe.wav",
+                "entryId": "ja:word:soup"
+            },
+            {
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "entryId": "ja:particle:wo"
+            },
+            {
+                "path": "audio/5eac59ad2371c7277aa56070f39b840cfb2fa6edb0ec5f52f293f8c0b0c819da.wav",
+                "entryId": "ja:word:nomu"
+            },
+            { "pauseMs": 400 }
+        ],
+        "gapMs": 90,
+        "segments": [
+            {
+                "path": "audio/84afc1c6e944468f2296dac22335c4cf6c53f7d0e84a799b43f6601a9e3d57ed.wav",
+                "entryId": "ja:word:seasons-winter",
+                "startFrame": 2400,
+                "frameCount": 13220
+            },
+            {
+                "path": "audio/1615cf278c2962c1657907b3686d653625229af2375f90dda5bfd5b178c7aedb.wav",
+                "entryId": "ja:particle:ni",
+                "startFrame": 17780,
+                "frameCount": 13220
+            },
+            {
+                "path": "audio/4a74d133f1fde60b0990bab7970d5ab9683f6c87122f694b518c45819b667cbe.wav",
+                "entryId": "ja:word:soup",
+                "startFrame": 33160,
+                "frameCount": 17678
+            },
+            {
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "entryId": "ja:particle:wo",
+                "startFrame": 52998,
+                "frameCount": 8762
+            },
+            {
+                "path": "audio/5eac59ad2371c7277aa56070f39b840cfb2fa6edb0ec5f52f293f8c0b0c819da.wav",
+                "entryId": "ja:word:nomu",
+                "startFrame": 63920,
+                "frameCount": 13720
+            }
+        ],
+        "sha256": "f1b94de00261e2132e8ef802283c579e8431400f3bc25b27f6971a8f19592607",
+        "frames": 89400,
+        "input": {
+            "language": "ja",
+            "label": "冬にスープを飲む",
+            "semanticRole": "orderedLexicalSequence",
+            "readings": ["ふゆにすーぷをのむ"]
+        },
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "construction": "Exact season-noun recordings and existing constituent PCM; no whole-sentence synthesis."
+        }
+    },
+    {
+        "path": "audio/2f885c68b305294ab077f05ff4c65c9de1b9f8b0f2b3db224bdbcf39e98b2466.wav",
+        "entryId": "ja:sentence:vegetables-example-cabbage",
+        "label": "スーパーでキャベツを買う",
+        "parts": [
+            {
+                "path": "audio/4fe867dd6a28eb23632a97e20d639fe0538f619eebd6614d0dceaf7bc0780f72.wav",
+                "entryId": "ja:word:places-supermarket"
+            },
+            {
+                "path": "audio/df81472c8108ad9b47d8d90db017ff1c1b553d80263d6a2c59de1571671f3eee.wav",
+                "entryId": "ja:particle:de"
+            },
+            {
+                "path": "audio/d8f5310fbe7909dacdb87525f405c524abd83a76a2debb2d69fdb99f2d7941d2.wav",
+                "entryId": "ja:word:vegetables-cabbage"
+            },
+            {
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "entryId": "ja:particle:wo"
+            },
+            {
+                "path": "audio/1a880a2cfc93aedb14ed94ad5cbd8ba5a803aa377bb98f0bf534e0ce8905bfd4.wav",
+                "entryId": "ja:word:travel-buy"
+            },
+            { "pauseMs": 400 }
+        ],
+        "gapMs": 90,
+        "segments": [
+            {
+                "path": "audio/4fe867dd6a28eb23632a97e20d639fe0538f619eebd6614d0dceaf7bc0780f72.wav",
+                "entryId": "ja:word:places-supermarket",
+                "startFrame": 2400,
+                "frameCount": 22137
+            },
+            {
+                "path": "audio/df81472c8108ad9b47d8d90db017ff1c1b553d80263d6a2c59de1571671f3eee.wav",
+                "entryId": "ja:particle:de",
+                "startFrame": 26697,
+                "frameCount": 13220
+            },
+            {
+                "path": "audio/d8f5310fbe7909dacdb87525f405c524abd83a76a2debb2d69fdb99f2d7941d2.wav",
+                "entryId": "ja:word:vegetables-cabbage",
+                "startFrame": 42077,
+                "frameCount": 18793
+            },
+            {
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "entryId": "ja:particle:wo",
+                "startFrame": 63030,
+                "frameCount": 8762
+            },
+            {
+                "path": "audio/1a880a2cfc93aedb14ed94ad5cbd8ba5a803aa377bb98f0bf534e0ce8905bfd4.wav",
+                "entryId": "ja:word:travel-buy",
+                "startFrame": 73952,
+                "frameCount": 13220
+            }
+        ],
+        "sha256": "2f885c68b305294ab077f05ff4c65c9de1b9f8b0f2b3db224bdbcf39e98b2466",
+        "frames": 98932,
+        "input": {
+            "language": "ja",
+            "label": "スーパーでキャベツを買う",
+            "semanticRole": "orderedLexicalSequence",
+            "readings": ["スーパーでキャベツをかう"]
+        },
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "construction": "Exact constituent PCM, including each selected grammatical form."
+        }
+    },
+    {
+        "path": "audio/fc2b5598e2c92be03f37a6fe762cf5c76eb2d2b627f0aefc7265a829ba744d9d.wav",
+        "entryId": "ja:sentence:vegetables-example-mushroom",
+        "label": "スープにきのこがある",
+        "parts": [
+            {
+                "path": "audio/4a74d133f1fde60b0990bab7970d5ab9683f6c87122f694b518c45819b667cbe.wav",
+                "entryId": "ja:word:soup"
+            },
+            {
+                "path": "audio/1615cf278c2962c1657907b3686d653625229af2375f90dda5bfd5b178c7aedb.wav",
+                "entryId": "ja:particle:ni"
+            },
+            {
+                "path": "audio/d399383db51952a03ad3238f869ab16bf4a4d586891c15c156f3c28e8f1b76a1.wav",
+                "entryId": "ja:word:vegetables-mushroom"
             },
             {
                 "path": "audio/69d02d32db53e5eeb4bb6db01917e619478b734bd66988c4242ccc1a3e55655d.wav",
                 "entryId": "ja:particle:ga"
             },
             {
-                "path": "audio/fff2a2381ef1abd6f3b0e24b6390a1f76d9fda74ec68bdc300ac3ff137a00214.wav",
-                "entryId": "ja:word:suki"
-            }
+                "path": "audio/0e997231f55465948ee67d44898dfd72abf6e48f95f8839fe116ca8978d53535.wav",
+                "entryId": "ja:word:aru-exist"
+            },
+            { "pauseMs": 400 }
         ],
-        "gapMs": 45,
+        "gapMs": 90,
         "segments": [
             {
-                "path": "audio/ff0179b24039b7b80998598d26f682530d57feaf8afeebb7f0d0756eb743b932.wav",
-                "entryId": "ja:word:meat",
+                "path": "audio/4a74d133f1fde60b0990bab7970d5ab9683f6c87122f694b518c45819b667cbe.wav",
+                "entryId": "ja:word:soup",
                 "startFrame": 2400,
-                "frameCount": 16564
+                "frameCount": 17678
             },
             {
-                "path": "audio/606f3c1823245eee4195e2195e8189dad7df8cd21b7e6550a55b5c56e585916b.wav",
-                "entryId": "ja:particle:to",
-                "startFrame": 20044,
-                "frameCount": 12106
+                "path": "audio/1615cf278c2962c1657907b3686d653625229af2375f90dda5bfd5b178c7aedb.wav",
+                "entryId": "ja:particle:ni",
+                "startFrame": 22238,
+                "frameCount": 13220
             },
             {
-                "path": "audio/c10c6c9cb5844b610b9da8483b384151d85dd82f4faf87271c823f3eebe942d6.wav",
-                "entryId": "ja:word:cheese",
-                "startFrame": 33230,
+                "path": "audio/d399383db51952a03ad3238f869ab16bf4a4d586891c15c156f3c28e8f1b76a1.wav",
+                "entryId": "ja:word:vegetables-mushroom",
+                "startFrame": 37618,
                 "frameCount": 18793
             },
             {
                 "path": "audio/69d02d32db53e5eeb4bb6db01917e619478b734bd66988c4242ccc1a3e55655d.wav",
                 "entryId": "ja:particle:ga",
-                "startFrame": 53103,
+                "startFrame": 58571,
                 "frameCount": 14335
             },
             {
-                "path": "audio/fff2a2381ef1abd6f3b0e24b6390a1f76d9fda74ec68bdc300ac3ff137a00214.wav",
-                "entryId": "ja:word:suki",
-                "startFrame": 68518,
-                "frameCount": 13644
+                "path": "audio/0e997231f55465948ee67d44898dfd72abf6e48f95f8839fe116ca8978d53535.wav",
+                "entryId": "ja:word:aru-exist",
+                "startFrame": 75066,
+                "frameCount": 8976
             }
         ],
-        "sha256": "fbf5b106fd156c0b1bbc46de8a83e16a0bd22bf61cd236ca1bc08cd55960e59a",
-        "frames": 84562,
+        "sha256": "fc2b5598e2c92be03f37a6fe762cf5c76eb2d2b627f0aefc7265a829ba744d9d",
+        "frames": 95802,
         "input": {
             "language": "ja",
-            "label": "にくとチーズが好き",
+            "label": "スープにきのこがある",
             "semanticRole": "orderedLexicalSequence",
-            "readings": ["にくとちーずがすき"]
+            "readings": ["すーぷにきのこがある"]
+        },
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "construction": "Exact constituent PCM, including each selected grammatical form."
+        }
+    },
+    {
+        "path": "audio/9ee8f1dc20a5ebe5ca42038d18ab8ce39091809bf455c92811f8cfa6f8261c23.wav",
+        "entryId": "ja:sentence:vegetables-example-spinach",
+        "label": "ほうれん草と卵を料理する",
+        "parts": [
+            {
+                "path": "audio/14d85ea1e905ade228f4df3ac73d0c5916ef21634636e384f2a3d02c300ef427.wav",
+                "entryId": "ja:word:vegetables-spinach"
+            },
+            {
+                "path": "audio/606f3c1823245eee4195e2195e8189dad7df8cd21b7e6550a55b5c56e585916b.wav",
+                "entryId": "ja:particle:to"
+            },
+            {
+                "path": "audio/18101b62b33b6b40f7c5b925209d7a744bc1ac8276dd766059f739523aa9a103.wav",
+                "entryId": "ja:word:egg"
+            },
+            {
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "entryId": "ja:particle:wo"
+            },
+            {
+                "path": "audio/e33686384389e80ef4dd0db97018d79d8b5ee187f17ec85723bd40a420521f2a.wav",
+                "entryId": "ja:word:household-cook"
+            },
+            { "pauseMs": 400 }
+        ],
+        "gapMs": 90,
+        "segments": [
+            {
+                "path": "audio/14d85ea1e905ade228f4df3ac73d0c5916ef21634636e384f2a3d02c300ef427.wav",
+                "entryId": "ja:word:vegetables-spinach",
+                "startFrame": 2400,
+                "frameCount": 21022
+            },
+            {
+                "path": "audio/606f3c1823245eee4195e2195e8189dad7df8cd21b7e6550a55b5c56e585916b.wav",
+                "entryId": "ja:particle:to",
+                "startFrame": 25582,
+                "frameCount": 12106
+            },
+            {
+                "path": "audio/18101b62b33b6b40f7c5b925209d7a744bc1ac8276dd766059f739523aa9a103.wav",
+                "entryId": "ja:word:egg",
+                "startFrame": 39848,
+                "frameCount": 18793
+            },
+            {
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "entryId": "ja:particle:wo",
+                "startFrame": 60801,
+                "frameCount": 8762
+            },
+            {
+                "path": "audio/e33686384389e80ef4dd0db97018d79d8b5ee187f17ec85723bd40a420521f2a.wav",
+                "entryId": "ja:word:household-cook",
+                "startFrame": 71723,
+                "frameCount": 22137
+            }
+        ],
+        "sha256": "9ee8f1dc20a5ebe5ca42038d18ab8ce39091809bf455c92811f8cfa6f8261c23",
+        "frames": 105620,
+        "input": {
+            "language": "ja",
+            "label": "ほうれん草と卵を料理する",
+            "semanticRole": "orderedLexicalSequence",
+            "readings": ["ほうれんそうとたまごをりょうりする"]
+        },
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "construction": "Exact constituent PCM, including each selected grammatical form."
+        }
+    },
+    {
+        "path": "audio/bd54e46197d0d5a0c77dde74eb5c09b2e2268086dc9d909e2bb42cc56a95adc6.wav",
+        "entryId": "ja:sentence:tableware-example-cup",
+        "label": "カップはテーブルにある",
+        "parts": [
+            {
+                "path": "audio/2a0263c47f0699e1aff3603a5892c5256ffaff78ed6c656be287581ee8ab5255.wav",
+                "entryId": "ja:word:tableware-cup"
+            },
+            {
+                "path": "audio/d7c9e57654e559dfba3bd6f78c2f27416a61f8b28d56145d84a62fe25b70c94d.wav",
+                "entryId": "ja:particle:wa"
+            },
+            {
+                "path": "audio/29f6a7e403e16e111e3eee3e859d6dee59887dcc720cb7837c894f308f7d8174.wav",
+                "entryId": "ja:word:table"
+            },
+            {
+                "path": "audio/1615cf278c2962c1657907b3686d653625229af2375f90dda5bfd5b178c7aedb.wav",
+                "entryId": "ja:particle:ni"
+            },
+            {
+                "path": "audio/0e997231f55465948ee67d44898dfd72abf6e48f95f8839fe116ca8978d53535.wav",
+                "entryId": "ja:word:aru-exist"
+            },
+            { "pauseMs": 400 }
+        ],
+        "gapMs": 90,
+        "segments": [
+            {
+                "path": "audio/2a0263c47f0699e1aff3603a5892c5256ffaff78ed6c656be287581ee8ab5255.wav",
+                "entryId": "ja:word:tableware-cup",
+                "startFrame": 2400,
+                "frameCount": 17678
+            },
+            {
+                "path": "audio/d7c9e57654e559dfba3bd6f78c2f27416a61f8b28d56145d84a62fe25b70c94d.wav",
+                "entryId": "ja:particle:wa",
+                "startFrame": 22238,
+                "frameCount": 12106
+            },
+            {
+                "path": "audio/29f6a7e403e16e111e3eee3e859d6dee59887dcc720cb7837c894f308f7d8174.wav",
+                "entryId": "ja:word:table",
+                "startFrame": 36504,
+                "frameCount": 18793
+            },
+            {
+                "path": "audio/1615cf278c2962c1657907b3686d653625229af2375f90dda5bfd5b178c7aedb.wav",
+                "entryId": "ja:particle:ni",
+                "startFrame": 57457,
+                "frameCount": 13220
+            },
+            {
+                "path": "audio/0e997231f55465948ee67d44898dfd72abf6e48f95f8839fe116ca8978d53535.wav",
+                "entryId": "ja:word:aru-exist",
+                "startFrame": 72837,
+                "frameCount": 8976
+            }
+        ],
+        "sha256": "bd54e46197d0d5a0c77dde74eb5c09b2e2268086dc9d909e2bb42cc56a95adc6",
+        "frames": 93573,
+        "input": {
+            "language": "ja",
+            "label": "カップはテーブルにある",
+            "semanticRole": "orderedLexicalSequence",
+            "readings": ["カップはてーぶるにある"]
+        },
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "construction": "Exact tableware and existing constituent PCM, including selected English is, spoons and forks."
+        }
+    },
+    {
+        "path": "audio/712c16cba5f529de0750b95704d72aa583f372136bf83d6c75de618bd2ebbb0f.wav",
+        "entryId": "ja:sentence:tableware-example-spoon",
+        "label": "スプーンでスープを飲む",
+        "parts": [
+            {
+                "path": "audio/0330d7e2ff38989c650e628d73e3fe5ea13ee95b14a7cc7770e084ed43259ab5.wav",
+                "entryId": "ja:word:tableware-spoon"
+            },
+            {
+                "path": "audio/df81472c8108ad9b47d8d90db017ff1c1b553d80263d6a2c59de1571671f3eee.wav",
+                "entryId": "ja:particle:de"
+            },
+            {
+                "path": "audio/4a74d133f1fde60b0990bab7970d5ab9683f6c87122f694b518c45819b667cbe.wav",
+                "entryId": "ja:word:soup"
+            },
+            {
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "entryId": "ja:particle:wo"
+            },
+            {
+                "path": "audio/5eac59ad2371c7277aa56070f39b840cfb2fa6edb0ec5f52f293f8c0b0c819da.wav",
+                "entryId": "ja:word:nomu"
+            },
+            { "pauseMs": 400 }
+        ],
+        "gapMs": 90,
+        "segments": [
+            {
+                "path": "audio/0330d7e2ff38989c650e628d73e3fe5ea13ee95b14a7cc7770e084ed43259ab5.wav",
+                "entryId": "ja:word:tableware-spoon",
+                "startFrame": 2400,
+                "frameCount": 16564
+            },
+            {
+                "path": "audio/df81472c8108ad9b47d8d90db017ff1c1b553d80263d6a2c59de1571671f3eee.wav",
+                "entryId": "ja:particle:de",
+                "startFrame": 21124,
+                "frameCount": 13220
+            },
+            {
+                "path": "audio/4a74d133f1fde60b0990bab7970d5ab9683f6c87122f694b518c45819b667cbe.wav",
+                "entryId": "ja:word:soup",
+                "startFrame": 36504,
+                "frameCount": 17678
+            },
+            {
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "entryId": "ja:particle:wo",
+                "startFrame": 56342,
+                "frameCount": 8762
+            },
+            {
+                "path": "audio/5eac59ad2371c7277aa56070f39b840cfb2fa6edb0ec5f52f293f8c0b0c819da.wav",
+                "entryId": "ja:word:nomu",
+                "startFrame": 67264,
+                "frameCount": 13720
+            }
+        ],
+        "sha256": "712c16cba5f529de0750b95704d72aa583f372136bf83d6c75de618bd2ebbb0f",
+        "frames": 92744,
+        "input": {
+            "language": "ja",
+            "label": "スプーンでスープを飲む",
+            "semanticRole": "orderedLexicalSequence",
+            "readings": ["スプーンですーぷをのむ"]
+        },
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "construction": "Exact tableware and existing constituent PCM, including selected English is, spoons and forks."
+        }
+    },
+    {
+        "path": "audio/f5db44cbb8df758d04dfd2f33fa0361e724b7c3c2f7c01ebfea42af22de63160.wav",
+        "entryId": "ja:sentence:tableware-example-fork",
+        "label": "フォークで魚を食べる",
+        "parts": [
+            {
+                "path": "audio/bd830d1b87d9b110d43374bfa5c5f1cc9b45e3cbe24046b187d59e40288a2587.wav",
+                "entryId": "ja:word:tableware-fork"
+            },
+            {
+                "path": "audio/df81472c8108ad9b47d8d90db017ff1c1b553d80263d6a2c59de1571671f3eee.wav",
+                "entryId": "ja:particle:de"
+            },
+            {
+                "path": "audio/82a3ba788239c7a0ca2d53b86f417200dcef1a8c2ef789e55b778f8870619105.wav",
+                "entryId": "ja:word:fish"
+            },
+            {
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "entryId": "ja:particle:wo"
+            },
+            {
+                "path": "audio/4ddd4e95428918c1c2f8c64b3eab948d332e376275c09dfcff69082a20ee9181.wav",
+                "entryId": "ja:word:taberu"
+            },
+            { "pauseMs": 400 }
+        ],
+        "gapMs": 90,
+        "segments": [
+            {
+                "path": "audio/bd830d1b87d9b110d43374bfa5c5f1cc9b45e3cbe24046b187d59e40288a2587.wav",
+                "entryId": "ja:word:tableware-fork",
+                "startFrame": 2400,
+                "frameCount": 17678
+            },
+            {
+                "path": "audio/df81472c8108ad9b47d8d90db017ff1c1b553d80263d6a2c59de1571671f3eee.wav",
+                "entryId": "ja:particle:de",
+                "startFrame": 22238,
+                "frameCount": 13220
+            },
+            {
+                "path": "audio/82a3ba788239c7a0ca2d53b86f417200dcef1a8c2ef789e55b778f8870619105.wav",
+                "entryId": "ja:word:fish",
+                "startFrame": 37618,
+                "frameCount": 18793
+            },
+            {
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "entryId": "ja:particle:wo",
+                "startFrame": 58571,
+                "frameCount": 8762
+            },
+            {
+                "path": "audio/4ddd4e95428918c1c2f8c64b3eab948d332e376275c09dfcff69082a20ee9181.wav",
+                "entryId": "ja:word:taberu",
+                "startFrame": 69493,
+                "frameCount": 14496
+            }
+        ],
+        "sha256": "f5db44cbb8df758d04dfd2f33fa0361e724b7c3c2f7c01ebfea42af22de63160",
+        "frames": 95749,
+        "input": {
+            "language": "ja",
+            "label": "フォークで魚を食べる",
+            "semanticRole": "orderedLexicalSequence",
+            "readings": ["フォークでさかなをたべる"]
+        },
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "construction": "Exact tableware and existing constituent PCM, including selected English is, spoons and forks."
+        }
+    },
+    {
+        "path": "audio/da56480ffe94fb9740b798ba1a0a49d5c9c76d036a7f38033558b0827e1779a4.wav",
+        "entryId": "ja:sentence:yama-kara-kawa-made",
+        "label": "山から川まで",
+        "parts": [
+            {
+                "path": "audio/09e3fd20b5f937930dc477e61a86f500ddc8a8b68cffdb9878d448bb058bd3a4.wav",
+                "entryId": "ja:word:yama"
+            },
+            {
+                "path": "audio/6e14468c95fd51fc419625bb4b7a76ed8591ccb46aee16ae8504abf150f50154.wav",
+                "entryId": "ja:particle:kara"
+            },
+            {
+                "path": "audio/02b62b3e244ea765dc90cb6aeeb6c692de8e5c6fc39d35ba2da13da9bca8accd.wav",
+                "entryId": "ja:word:kawa-river"
+            },
+            {
+                "path": "audio/7b0f478e31bdc691c7da4e6e2042024cfac2bfeceec78edc22a88ef686905b69.wav",
+                "entryId": "ja:particle:made"
+            }
+        ],
+        "gapMs": 45,
+        "segments": [
+            {
+                "path": "audio/09e3fd20b5f937930dc477e61a86f500ddc8a8b68cffdb9878d448bb058bd3a4.wav",
+                "entryId": "ja:word:yama",
+                "startFrame": 2400,
+                "frameCount": 9829
+            },
+            {
+                "path": "audio/6e14468c95fd51fc419625bb4b7a76ed8591ccb46aee16ae8504abf150f50154.wav",
+                "entryId": "ja:particle:kara",
+                "startFrame": 13309,
+                "frameCount": 9942
+            },
+            {
+                "path": "audio/02b62b3e244ea765dc90cb6aeeb6c692de8e5c6fc39d35ba2da13da9bca8accd.wav",
+                "entryId": "ja:word:kawa-river",
+                "startFrame": 24331,
+                "frameCount": 13484
+            },
+            {
+                "path": "audio/7b0f478e31bdc691c7da4e6e2042024cfac2bfeceec78edc22a88ef686905b69.wav",
+                "entryId": "ja:particle:made",
+                "startFrame": 38895,
+                "frameCount": 11097
+            }
+        ],
+        "sha256": "8a95f3d81c6e1c0a4bd783de60928273dd66548deee6d6f3069a7f3e87182c10",
+        "frames": 49992,
+        "input": {
+            "language": "ja",
+            "label": "山から川まで",
+            "semanticRole": "orderedLexicalSequence",
+            "readings": ["やまからかわまで"]
         }
     }
 ]

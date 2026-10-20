@@ -1,0 +1,142 @@
+[
+    {
+        "id": "ja:sentence:qualities-example-heavy",
+        "label": "かばんは重い",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/ee54646a214bf0bcd2ffda172909cfaef1bc66254af7dfae7345fd7cead44d44.wav",
+            "pronunciation": ["かばんはおもい"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:bag",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:qualities-heavy",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:definition:qualities-example-heavy",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:qualities-example-light",
+        "label": "コートは軽い",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/a2793605ee52a4e428b5c305ee947f525a5f44b3a85c6fc57a28f760a0f84dcd.wav",
+            "pronunciation": ["こーとはかるい"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:coat",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:qualities-light",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:definition:qualities-example-light",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:qualities-example-easy",
+        "label": "料理するのは易しい",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/2cbaa7bbcef9e9b2fed6dfe155ddeaf0e550ece3077a4238ab6f074a36551f77.wav",
+            "pronunciation": ["りょうりするのはやさしい"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:household-cook",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:no",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 2
+            },
+            {
+                "entryId": "ja:word:qualities-easy",
+                "relation": "words",
+                "position": 3
+            },
+            {
+                "entryId": "ja:definition:qualities-example-easy",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:qualities-example-difficult",
+        "label": "日本語を学ぶのは難しい",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/5f93fa5f7e3e51f66b760a3d16396f894fbd9d459a3e2f85d4c79384f8626aa7.wav",
+            "pronunciation": ["にほんごをまなぶのはむずかしい"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:nihongo",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:manabu",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:no",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 4
+            },
+            {
+                "entryId": "ja:word:qualities-difficult",
+                "relation": "words",
+                "position": 5
+            },
+            {
+                "entryId": "ja:definition:qualities-example-difficult",
+                "relation": "definitions"
+            }
+        ]
+    }
+]

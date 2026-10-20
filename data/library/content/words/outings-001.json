@@ -1,0 +1,196 @@
+[
+    {
+        "id": "ja:word:complete-pronunciation-outings-museum",
+        "label": "はくぶつかん",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["はくぶつかん"],
+            "audio": "audio/ca03a122b5727decbb9a25332c22713e70b74bc30e6ecf8027af46e8c998126f.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:ha",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:ku",
+                        "relation": "reading-kana",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:bu",
+                        "relation": "reading-kana",
+                        "position": 2
+                    },
+                    {
+                        "entryId": "ja:char:tsu",
+                        "relation": "reading-kana",
+                        "position": 3
+                    },
+                    {
+                        "entryId": "ja:char:ka",
+                        "relation": "reading-kana",
+                        "position": 4
+                    },
+                    {
+                        "entryId": "ja:char:n",
+                        "relation": "reading-kana",
+                        "position": 5
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:outings-museum",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:outings-museum",
+        "label": "博物館",
+        "class": "lexical:noun",
+        "fields": {
+            "pronunciation": ["はくぶつかん"],
+            "reference_images": [
+                "images/f197314c7d85550291489855d31b391744913a6aaec56f5b10f7b41be81e00b5.jpg"
+            ],
+            "audio": "audio/ca03a122b5727decbb9a25332c22713e70b74bc30e6ecf8027af46e8c998126f.wav"
+        },
+        "tags": ["noun", "outings"],
+        "references": [
+            {
+                "entryId": "ja:definition:outings-museum",
+                "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-535a",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:kanji:expanded-7269",
+                "relation": "spelling",
+                "position": 1
+            },
+            {
+                "entryId": "ja:kanji:expanded-9928",
+                "relation": "spelling",
+                "position": 2
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-outings-museum",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:complete-pronunciation-outings-zoo",
+        "label": "どうぶつえん",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["どうぶつえん"],
+            "audio": "audio/e8ce18453b556a9eb40cc731d4f7c18004b70de30edccd998f32b9b65e055138.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:do",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:u",
+                        "relation": "reading-kana",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:bu",
+                        "relation": "reading-kana",
+                        "position": 2
+                    },
+                    {
+                        "entryId": "ja:char:tsu",
+                        "relation": "reading-kana",
+                        "position": 3
+                    },
+                    {
+                        "entryId": "ja:char:e",
+                        "relation": "reading-kana",
+                        "position": 4
+                    },
+                    {
+                        "entryId": "ja:char:n",
+                        "relation": "reading-kana",
+                        "position": 5
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:outings-zoo",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:outings-zoo",
+        "label": "動物園",
+        "class": "lexical:noun",
+        "fields": {
+            "pronunciation": ["どうぶつえん"],
+            "reference_images": [
+                "images/252b7029dee517975cd17ae7fb7376daaebdf75158d5c5a655020f40e0e1f094.jpg"
+            ],
+            "audio": "audio/e8ce18453b556a9eb40cc731d4f7c18004b70de30edccd998f32b9b65e055138.wav"
+        },
+        "tags": ["noun", "outings"],
+        "references": [
+            {
+                "entryId": "ja:definition:outings-zoo",
+                "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-52d5",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:kanji:expanded-7269",
+                "relation": "spelling",
+                "position": 1
+            },
+            {
+                "entryId": "ja:kanji:expanded-5712",
+                "relation": "spelling",
+                "position": 2
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-outings-zoo",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    }
+]

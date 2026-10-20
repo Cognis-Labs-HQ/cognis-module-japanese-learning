@@ -1,0 +1,146 @@
+[
+    {
+        "id": "ja:word:complete-pronunciation-delivery-send",
+        "label": "おくる",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["おくる"],
+            "audio": "audio/de0ed37c063bd7e4a4ce635367bb95326664f6274324bb38ce23157c1180330d.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:o",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:ku",
+                        "relation": "reading-kana",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:ru",
+                        "relation": "reading-kana",
+                        "position": 2
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:delivery-send",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:delivery-send",
+        "label": "送る",
+        "class": "lexical:verb",
+        "fields": {
+            "pronunciation": ["おくる"],
+            "reference_images": [
+                "images/00ed3eff2a9443ad44df29146fd3f1dc92f3059946dd5650403479141bb595e3.jpg"
+            ],
+            "audio": "audio/de0ed37c063bd7e4a4ce635367bb95326664f6274324bb38ce23157c1180330d.wav"
+        },
+        "tags": ["verb", "delivery-form-send"],
+        "references": [
+            {
+                "entryId": "ja:definition:delivery-send",
+                "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-9001",
+                "relation": "spelling",
+                "position": 0
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-delivery-send",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:complete-pronunciation-delivery-carry",
+        "label": "はこぶ",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["はこぶ"],
+            "audio": "audio/ba73042fbb842796b95a59c2d2da8f2799ddb486299105dc3289e3bc969a7214.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:ha",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:ko",
+                        "relation": "reading-kana",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:bu",
+                        "relation": "reading-kana",
+                        "position": 2
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:delivery-carry",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:delivery-carry",
+        "label": "運ぶ",
+        "class": "lexical:verb",
+        "fields": {
+            "pronunciation": ["はこぶ"],
+            "reference_images": [
+                "images/1d0bdf97165dabb73f8f1870c7e388b5b5e0d875575989726f28bbd89115ba0c.jpg"
+            ],
+            "audio": "audio/ba73042fbb842796b95a59c2d2da8f2799ddb486299105dc3289e3bc969a7214.wav"
+        },
+        "tags": ["verb", "delivery-form-carry"],
+        "references": [
+            {
+                "entryId": "ja:definition:delivery-carry",
+                "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-904b",
+                "relation": "spelling",
+                "position": 0
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-delivery-carry",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    }
+]

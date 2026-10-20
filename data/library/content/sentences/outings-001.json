@@ -1,0 +1,152 @@
+[
+    {
+        "id": "ja:sentence:outings-example-tomorrow-museum",
+        "label": "明日博物館に行く",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/66a891e2f40a8448f6fd91019a2e3d642eee875ba17b5e962c38ac12e877229c.wav",
+            "pronunciation": ["あしたはくぶつかんにいく"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:time-tomorrow",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:word:outings-museum",
+                "relation": "words",
+                "position": 1
+            },
+            {
+                "entryId": "ja:particle:ni",
+                "relation": "particles",
+                "position": 2
+            },
+            {
+                "entryId": "ja:word:iku",
+                "relation": "words",
+                "position": 3
+            },
+            {
+                "entryId": "ja:definition:outings-example-tomorrow-museum",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:outings-example-see-elephant",
+        "label": "動物園で象を見る",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/fb13b5f50c6433eb62a5b6e220076011034705f8af142b1207230d6f4a291512.wav",
+            "pronunciation": ["どうぶつえんでぞうをみる"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:outings-zoo",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:de",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:wildlife-elephant",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:miru",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:outings-example-see-elephant",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:outings-example-wait-friend-museum",
+        "label": "博物館で友達を待つ",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/7c4581548debcce58220c845fe633e84e6440a880b3ac0c0bd41719057af875a.wav",
+            "pronunciation": ["はくぶつかんでともだちをまつ"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:outings-museum",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:de",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:tomodachi",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:travel-wait",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:outings-example-wait-friend-museum",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:outings-example-spacious-zoo",
+        "label": "動物園は広いです",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/ccaa69a8c7bce1cd9bb81392ddb1d352948af6897b8ccdf4a0832ccf954b63ba.wav",
+            "pronunciation": ["どうぶつえんはひろいです"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:outings-zoo",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:width-wide",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:word:desu",
+                "relation": "words",
+                "position": 3
+            },
+            {
+                "entryId": "ja:definition:outings-example-spacious-zoo",
+                "relation": "definitions"
+            }
+        ]
+    }
+]

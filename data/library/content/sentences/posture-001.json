@@ -1,0 +1,142 @@
+[
+    {
+        "id": "ja:sentence:posture-example-take-seat",
+        "label": "椅子に座る",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/f5d368930d17c9a05259b13587ad5fab998298ef4c996631f6a5cb145cf69287.wav",
+            "pronunciation": ["いすにすわる"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:chair",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:ni",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:posture-sit",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:definition:posture-example-take-seat",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:posture-example-stand-here",
+        "label": "ここに立つ",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/0315942358677cad5bce037c44ce4b205d8066d589d85a4e2094e9d6a40d1bed.wav",
+            "pronunciation": ["ここにたつ"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:koko",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:ni",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:posture-stand",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:definition:posture-example-stand-here",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:posture-example-sit-with-friend",
+        "label": "友達とソファに座る",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/1bf18b5eb270dc6ead59c9d5b5a8f72cb4e2cea1ca9202b4301eabe7b7148a74.wav",
+            "pronunciation": ["ともだちとソファにすわる"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:tomodachi",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:to",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:furnishings-sofa",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:ni",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:posture-sit",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:posture-example-sit-with-friend",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:posture-example-teacher-stand",
+        "label": "先生はそこに立つ",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/2ffced8b3e8f9a74a7c1bb97fbc982d5fc53da009f103a4f794604a09fdc035a.wav",
+            "pronunciation": ["せんせいはそこにたつ"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:sensei",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:soko",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:ni",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:posture-stand",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:posture-example-teacher-stand",
+                "relation": "definitions"
+            }
+        ]
+    }
+]

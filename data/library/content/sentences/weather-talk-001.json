@@ -1,0 +1,147 @@
+[
+    {
+        "id": "ja:sentence:weather-talk-example-rain-report",
+        "label": "雨です",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/861682f14dfee03d4b8a4e60c32bf0a57cdd4fb6508b7056fc3808a70ac0f38d.wav",
+            "pronunciation": ["あめです"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:ame-rain",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:word:desu",
+                "relation": "words",
+                "position": 1
+            },
+            {
+                "entryId": "ja:definition:weather-talk-example-rain-report",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:weather-talk-example-find-umbrella",
+        "label": "傘はどこですか",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/28bc0c4187539123e5d323039ed5e41a9942e3e53c788c067c43c4d7bd9e9f22.wav",
+            "pronunciation": ["かさはどこですか"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:umbrella",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:doko",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:word:desu",
+                "relation": "words",
+                "position": 3
+            },
+            {
+                "entryId": "ja:particle:ka",
+                "relation": "particles",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:weather-talk-example-find-umbrella",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:weather-talk-example-beautiful-snow",
+        "label": "雪はきれいです",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/f6d3e6dfe67ea1952a8869c2b97ecf1e8363f66d90d0c3c66baf6fdaa6fc7094.wav",
+            "pronunciation": ["ゆきはきれいです"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:weather-snow",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:kirei",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:word:desu",
+                "relation": "words",
+                "position": 3
+            },
+            {
+                "entryId": "ja:definition:weather-talk-example-beautiful-snow",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:weather-talk-example-winter-preference",
+        "label": "私は冬が好きです",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/1c8cdaaeba8a1b82f8057d0405fe7d33f75175b395c3755c1a270e5bf26844fc.wav",
+            "pronunciation": ["わたしはふゆがすきです"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:watashi",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:seasons-winter",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:ga",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:suki",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:word:desu",
+                "relation": "words",
+                "position": 5
+            },
+            {
+                "entryId": "ja:definition:weather-talk-example-winter-preference",
+                "relation": "definitions"
+            }
+        ]
+    }
+]

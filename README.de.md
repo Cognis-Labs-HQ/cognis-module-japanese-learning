@@ -4,6 +4,10 @@
 
 Japanisch lernen liefert ein versioniertes japanisches Inhaltspaket, lebenszyklusgebundene Wörterbuch- und Audioanbieter sowie gespeicherte Stimmenkonfiguration für Administratoren über Cognis-Funktionen. Cognis verwaltet Lernoberfläche, Bibliotheksspeicherung, Berechtigungen und Wiedergabecache.
 
+## Enthaltene Lerninhalte
+
+Das Paket bietet Schreibvorlagen, thematischen Wortschatz, verknüpfte Beispiele, Illustrationen und Startdecks. Die paketierten Inhalte und Medienverzeichnisse sind maßgeblich für die Verfügbarkeit.
+
 ## Voraussetzungen
 
 - Cognis mit aktiviertem Study-Gateway und Bibliotheksadapter.
@@ -65,7 +69,7 @@ Resolver-Rollen sind nun echten Zusammensetzungen vorbehalten: Kanji-Lesungen, W
 
 ## Vollständige Kana-Tabellen
 
-Zusätzlich zu allen 46 grundlegenden Gojūon-Einträgen und 25 Dakuten- oder Handakuten-Formen je Schriftsystem enthält das Paket kleine Kana, alle üblichen Yōon-Reihen und verbreitete Sokuon-Geminationen. Beispiele sind `ひゃ`, `しゅ`, `じゃ` und `って` sowie ihre Katakana-Entsprechungen.
+Zusätzlich zu grundlegenden Gojūon-Einträgen und Dakuten- oder Handakuten-Formen je Schriftsystem enthält das Paket kleine Kana, alle üblichen Yōon-Reihen und verbreitete Sokuon-Geminationen. Beispiele sind `ひゃ`, `しゅ`, `じゃ` und `って` sowie ihre Katakana-Entsprechungen.
 
 ## Dynamische Variantenplatzierung
 
@@ -139,7 +143,7 @@ Ausgeblendete Wortschatz-Lesungseinträge erhalten eine eigene Definition in all
 
 ## Erweiterter Kerndatensatz
 
-Das Paket enthält nun mehr als dreißig zusätzliche alltägliche Wortschatzeinträge, zehn weitere Partikeln und acht vollständig zusammengesetzte Beispielsätze, ausschließlich als deklaratives JSON unter `data/library/content/`. Echte Polysemie darf mehrere lokalisierte Definitionsverweise in einem Eintrag verwenden (`なおす`: reparieren/korrigieren), während Homophone wie `はし` (Brücke/Essstäbchen), `あめ` (Regen/Bonbon), `かみ` (Papier/Haar/Gottheit) und `はな` (Blume/Nase) getrennte Wortschatzeinträge mit eigenen Definitionen bleiben.
+Das Paket enthält nun alltägliche Wortschatzeinträge, weitere Partikeln und vollständig zusammengesetzte Beispielsätze, ausschließlich als deklaratives JSON unter `data/library/content/`. Echte Polysemie darf mehrere lokalisierte Definitionsverweise in einem Eintrag verwenden (`なおす`: reparieren/korrigieren), während Homophone wie `はし` (Brücke/Essstäbchen), `あめ` (Regen/Bonbon), `かみ` (Papier/Haar/Gottheit) und `はな` (Blume/Nase) getrennte Wortschatzeinträge mit eigenen Definitionen bleiben.
 
 ## Kanji-basierter Kerngraph
 
@@ -159,7 +163,7 @@ Wortschatz mit einem einzelnen Kanji verwendet nun einen verborgenen Wrapper fü
 
 ## Verknüpfte Satzlesungen und geprüfte Übungsserie
 
-Jede Satzaussprache öffnet nun einen verborgenen vollständigen Lesungsdatensatz, dessen Abschnitte über vorhandenen verborgenen Wortschatz und atomare Partikel-Kana aufgelöst werden; unverknüpfter Aussprachetext ist nicht mehr der Standard. Acht geprüfte Sätze ergänzen abwechslungsreiche Übungen zu Wassertrinken, Japanischlernen, Reisen, Tieren, Größe und Gehen sowie die vollständig verknüpften Wörter `学ぶ` und `歩く`.
+Jede Satzaussprache öffnet nun einen verborgenen vollständigen Lesungsdatensatz, dessen Abschnitte über vorhandenen verborgenen Wortschatz und atomare Partikel-Kana aufgelöst werden; unverknüpfter Aussprachetext ist nicht mehr der Standard. geprüfte Sätze ergänzen abwechslungsreiche Übungen zu Wassertrinken, Japanischlernen, Reisen, Tieren, Größe und Gehen sowie die vollständig verknüpften Wörter `学ぶ` und `歩く`.
 
 ## Direkt mit Kana verknüpfte Lesungstitel
 
@@ -259,9 +263,9 @@ Aussprachefelder im Wortschatz verwenden den singulären Linkvertrag `pronunciat
 
 ## Sprache und Aufnahmen
 
-Das Paket enthält geprüfte WAV-Aufnahmen für jede vertonte kuratierte Karte, jedes Zeichen, jede Partikel und jede erreichbare Schematransformation, einschließlich Pluralformen und mehrstufiger Verbformen. `xya0RvcJtofTcFTOdX4E` ist die festgelegte Stimme dieser Sprache. `data/audio/recordings.json` dokumentiert Anforderungen, Stimme, Modell, Einstellungen, Transformationspfade und Prüfsummen; Zugangsdaten und Erzeugungswerkzeuge werden nicht mitgeliefert.
+Mitgelieferte WAV-Dateien werden auf Prüfsumme, Format und PCM-Integrität geprüft. Die Prüfung durch Anhören wird getrennt dokumentiert und kann unbestätigt sein. `data/audio/recordings.json` führt vorhandene Aufnahmen und Zusammensetzungen auf. `data/audio/unavailable.json` nennt Karten ohne mitgelieferte Audiodatei ausdrücklich; fehlende Aufnahmen sind keine Wiedergabe-URLs. Die festgelegte Stimme ist `xya0RvcJtofTcFTOdX4E`. Zugangsdaten und Offline-Erzeugungswerkzeuge werden nicht mitgeliefert.
 
-Mitgelieferte Sätze verwenden direkt erzeugte vollständige Satzaufnahmen vor zusammengesetztem Audio. Neue oder nicht aufgezeichnete Sätze nutzen die Zusammenstellung des Hosts mit exakt geordneten PCM-Bestandteilen und ausgewählten Transformationen; fehlende Varianten werden niemals durch die Grundform ersetzt. Die Aufnahmen decken das kuratierte Paket ab, nicht jeden Wörterbucheintrag oder möglichen selbst verfassten Satz.
+Bei der Wiedergabe mitgelieferter Sätze hat die Zusammensetzung aus exakten PCM-Wortaufnahmen einschließlich der vorgesehenen grammatischen Formen Vorrang. Separat erzeugte vollständige Satzaufnahmen bleiben mit ihrer ursprünglichen Herkunft erhalten. Fehlt eine passende Wortaufnahme, hat der Satz kein mitgeliefertes Audio; fehlende Formen werden nie durch Grundformen ersetzt.
 
 Bootstrap registriert einen entfernbaren Anbieter über `study:audio:provider.registerProvider`. Gebündelte Karten und Varianten funktionieren ohne installiertes oder konfiguriertes ElevenLabs. Fehlende Wortaufnahmen können die optionale konfigurierte Fähigkeit `elevenlabs-tts:synthesis` verwenden. Standardmäßig wird die festgelegte Sprachstimme angefordert; Administratoren können für neue Synthese eine andere Stimme konfigurieren. Neue Sätze fordern keine separate vollständige Satzsynthese an. Cognis verwaltet Berechtigungen globaler Karten, Zwischenspeicherung, manuelle Uploads und die Regeln für persönliche und Klasseninhalte. Nur die erste verfasste Aussprache wird gewählt.
 
@@ -273,11 +277,11 @@ Japanische Aufnahmen mit kleinen Kana, einschließlich 学校, wurden mit Kanji-
 
 ## Vokabelillustrationen
 
-Jede mitgelieferte Vokabelkarte besitzt jetzt eine eigene generierte Illustration im Anime-Stil (102 Karten). Konkrete Gegenstände, Handlungen und Kontextbilder für abstrakte Begriffe erscheinen in der vorhandenen Kartendetailgalerie und Bildvorschau. Die bisherigen Quellfotos wurden ersetzt. Der [Bildkatalog](data/library/assets/images/catalog.json) dokumentiert Erzeugungsquelle, Stil, Bildausschnitte, Prüfsummen und Kartenzuordnungen; die [Bildlizenz](data/library/assets/images/LICENSE.md) beschreibt die mitgelieferten Illustrationen. Bilder werden lokal geladen, eigene Benutzerbilder bleiben bei Anbieter-Neuladevorgängen durch den Host erhalten.
+Vokabelkarten verwenden generierte Illustrationen im Anime-Stil. Konkrete Gegenstände, Handlungen und Kontextbilder für abstrakte Begriffe erscheinen in der vorhandenen Kartendetailgalerie und Bildvorschau. Die bisherigen Quellfotos wurden ersetzt. Der [Bildkatalog](data/library/assets/images/catalog.json) dokumentiert Erzeugungsquelle, Stil, Bildausschnitte, Prüfsummen und Kartenzuordnungen; die [Bildlizenz](data/library/assets/images/LICENSE.md) beschreibt die mitgelieferten Illustrationen. Bilder werden lokal geladen, eigene Benutzerbilder bleiben bei Anbieter-Neuladevorgängen durch den Host erhalten.
 
 ## Haushaltsvokabular
 
-Fünfzehn Alltagsnomen ergänzen Möbel, Kleidung, Gegenstände und Lebensmittel mit Bedeutungen in vier Sprachen, Ausspracheverknüpfungen, eigenen Aufnahmen und einem Stapel für Alltagsgegenstände. Zählbare englische Nomen enthalten aufgenommene Pluraltransformationen, einschließlich des unveränderten Plurals fish; rice bleibt ein Stoffname. Japanische Anfängerschreibweisen verknüpfen vollständige Lesungen mit einzelnen Kana, einschließlich des Langvokalzeichens ー in テーブル und コート.
+Alltagsnomen ergänzen Möbel, Kleidung, Gegenstände und Lebensmittel mit Bedeutungen in vier Sprachen, Ausspracheverknüpfungen, eigenen Aufnahmen und einem Stapel für Alltagsgegenstände. Zählbare englische Nomen enthalten aufgenommene Pluraltransformationen, einschließlich des unveränderten Plurals fish; rice bleibt ein Stoffname. Japanische Anfängerschreibweisen verknüpfen vollständige Lesungen mit einzelnen Kana, einschließlich des Langvokalzeichens ー in テーブル und コート.
 
 ## Lebensmittel und Körperteile
 
@@ -285,7 +289,7 @@ Vorbereitete Sätze verwenden exakt zusammengesetzte PCM-Daten einschließlich g
 
 ## Aufnahmeverzeichnisse
 
-`data/audio/recordings.json` ist ein kompaktes Manifest mit Sprache, Stimme, Modell, gemeinsamen Verarbeitungseinstellungen, Gesamtzahlen und geprüften Inventarpfaden. Dateien unter `data/audio/inventories/` beschreiben getrennt Zeichen, Vokabeln, Transformationen, direkte Sätze und zusammengesetzte Ersatzaufnahmen. Jede Datei bleibt unter 800 Zeilen und enthält die genauen Anforderungen, Stimmenherkunft, Transformationspfade und Audio-Prüfsummen. Bootstrap prüft vor der Wiedergaberegistrierung jede Prüfsumme und Anzahl; Audiodaten und Suchpriorität bleiben unverändert.
+`data/audio/recordings.json` verwendet Inventarformat 2 mit Sprache, Stimme, Modell, Verarbeitungseinstellungen, Gesamtzahlen und geprüften Zweckindexpfaden. Dateien unter `data/audio/indexes/` verweisen mit Prüfsummen auf die Dateien unter `data/audio/inventories/`, getrennt nach Zeichen, Vokabeln, Transformationen, direkten Sätzen und Satzkompositionen. Haupt- und Zweckindizes bleiben unter 400 Zeilen, Aufnahmedateien bei höchstens 800 Zeilen. Vor der Wiedergaberegistrierung prüft der Lader beide Ebenen, Anzahlen, erlaubte Pfade, Zweckzuordnung und doppelte Pfade. Aufnahmeobjekte, Audiodaten und Suchpriorität bleiben erhalten.
 
 ## Explizite Katalognormalisierung und Satzkompositionen
 

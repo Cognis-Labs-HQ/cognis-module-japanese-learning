@@ -1,0 +1,136 @@
+[
+    {
+        "id": "ja:word:complete-pronunciation-craft-cut",
+        "label": "きる",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["きる"],
+            "audio": "audio/7b049724915f9f114fd0cc06aa45625d018577a4b19558ccc83b480b6f71b332.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:ki",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:ru",
+                        "relation": "reading-kana",
+                        "position": 1
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:craft-cut",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:craft-cut",
+        "label": "切る",
+        "class": "lexical:verb",
+        "fields": {
+            "pronunciation": ["きる"],
+            "reference_images": [
+                "images/2f0f524a07dab5560d4a396303b5bcff27bd7fa807410e55ae0d26954a1dd868.jpg"
+            ],
+            "audio": "audio/7b049724915f9f114fd0cc06aa45625d018577a4b19558ccc83b480b6f71b332.wav"
+        },
+        "tags": ["verb", "craft-form-cut"],
+        "references": [
+            {
+                "entryId": "ja:definition:craft-cut",
+                "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-5207",
+                "relation": "spelling",
+                "position": 0
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-craft-cut",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:complete-pronunciation-craft-fold",
+        "label": "おる",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["おる"],
+            "audio": "audio/4c6bb4169d69688ed4709990ba85c2b16b6b6065bc1cc55f8b6e515b85439ae7.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:o",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:ru",
+                        "relation": "reading-kana",
+                        "position": 1
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:craft-fold",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:craft-fold",
+        "label": "折る",
+        "class": "lexical:verb",
+        "fields": {
+            "pronunciation": ["おる"],
+            "reference_images": [
+                "images/d00f8585231ec9037c429084628190e23319c68cee49a6f5e07fdf7bf7f8f41a.jpg"
+            ],
+            "audio": "audio/4c6bb4169d69688ed4709990ba85c2b16b6b6065bc1cc55f8b6e515b85439ae7.wav"
+        },
+        "tags": ["verb", "craft-form-fold"],
+        "references": [
+            {
+                "entryId": "ja:definition:craft-fold",
+                "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-6298",
+                "relation": "spelling",
+                "position": 0
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-craft-fold",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    }
+]

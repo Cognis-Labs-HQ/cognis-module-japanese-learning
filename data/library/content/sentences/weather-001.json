@@ -1,0 +1,132 @@
+[
+    {
+        "id": "ja:sentence:weather-example-sun",
+        "label": "太陽を見る",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/f620bbe7a62e587e72053e3e2e6ac747920980e1d34d11721fa092d38b3d2c96.wav",
+            "pronunciation": ["たいようをみる"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:weather-sun",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:miru",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:definition:weather-example-sun",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:weather-example-snow",
+        "label": "雪が好きです",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/883be088bad529376aaeedc85d6fbd3454f77a69473f154d4cfe88d7aa8c79b9.wav",
+            "pronunciation": ["ゆきがすきです"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:weather-snow",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:ga",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:suki",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:word:desu",
+                "relation": "words",
+                "position": 3
+            },
+            {
+                "entryId": "ja:definition:weather-example-snow",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:weather-example-wind",
+        "label": "風が好きです",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/cfcb36986396c3fd00c4f5ecc36fa2257914051da96eaadbba54ffe01bbabd05.wav",
+            "pronunciation": ["かぜがすきです"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:weather-wind",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:ga",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:suki",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:word:desu",
+                "relation": "words",
+                "position": 3
+            },
+            {
+                "entryId": "ja:definition:weather-example-wind",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:weather-example-cloud",
+        "label": "雲を見る",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/b0760084f1a18934d5711e987a30c37ad73821634dfa8875543eacd74a10e837.wav",
+            "pronunciation": ["くもをみる"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:weather-cloud",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:miru",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:definition:weather-example-cloud",
+                "relation": "definitions"
+            }
+        ]
+    }
+]

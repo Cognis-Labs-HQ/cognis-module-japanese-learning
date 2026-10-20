@@ -1,0 +1,147 @@
+[
+    {
+        "id": "ja:sentence:delivery-example-send-friend-letter",
+        "label": "友達に手紙を送る",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/79073efd823941eb6b90daf353866ea5d9e1bc8cca907cc81164a692bd176d1a.wav",
+            "pronunciation": ["ともだちにてがみをおくる"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:tomodachi",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:ni",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:correspondence-letter",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:delivery-send",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:delivery-example-send-friend-letter",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:delivery-example-send-postcard",
+        "label": "葉書を送る",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/e8dd66a4cc3d388a2ca3e03e46017cabc4b172aed40a17165cdc853fccc18bc2.wav",
+            "pronunciation": ["はがきをおくる"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:correspondence-postcard",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:delivery-send",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:definition:delivery-example-send-postcard",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:delivery-example-transport-box",
+        "label": "箱を車で運ぶ",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/6622c2fb853dc014846e6489b5635e3246306ae817dc40753ffba3daa229407d.wav",
+            "pronunciation": ["はこをくるまではこぶ"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:containers-box",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:kuruma",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:de",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:delivery-carry",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:delivery-example-transport-box",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:delivery-example-carry-slowly",
+        "label": "かばんをゆっくり運ぶ",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/b1de6cb626ba688abfb8c433b2df1f4927f8cdc412a35e44273f22c0e869ffb2.wav",
+            "pronunciation": ["かばんをゆっくりはこぶ"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:bag",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:yukkuri",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:word:delivery-carry",
+                "relation": "words",
+                "position": 3
+            },
+            {
+                "entryId": "ja:definition:delivery-example-carry-slowly",
+                "relation": "definitions"
+            }
+        ]
+    }
+]

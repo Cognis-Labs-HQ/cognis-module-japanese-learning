@@ -1,0 +1,157 @@
+[
+    {
+        "id": "ja:sentence:fruit-example-peach",
+        "label": "スーパーで桃を買う",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/466f338d5588af89a1777b94223bc50f101017ec207e81f5b1e63906378ec920.wav",
+            "pronunciation": ["スーパーでももをかう"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:places-supermarket",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:de",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:fruit-peach",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:travel-buy",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:fruit-example-peach",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:fruit-example-pear",
+        "label": "梨は皿にある",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/3a2171df0ab213616f6063e13fc8f6bd9969dd1b8c1b7ea3d6fdce312929901c.wav",
+            "pronunciation": ["なしはさらにある"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:fruit-pear",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:tableware-plate",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:ni",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:aru-exist",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:fruit-example-pear",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:fruit-example-watermelon",
+        "label": "夏にすいかを食べる",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/ff96348ae741de7e7070448c4e5c56356ad032db37b53394761c2e856a001e6b.wav",
+            "pronunciation": ["なつにすいかをたべる"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:seasons-summer",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:ni",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:fruit-watermelon",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:taberu",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:fruit-example-watermelon",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:fruit-example-pineapple",
+        "label": "パイナップルが好きです",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/af271f2b423feb48fbbcebc8166456a1fd732cda0e8ec6c42b84d7185c9e0188.wav",
+            "pronunciation": ["パイナップルがすきです"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:fruit-pineapple",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:ga",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:suki",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:word:desu",
+                "relation": "words",
+                "position": 3
+            },
+            {
+                "entryId": "ja:definition:fruit-example-pineapple",
+                "relation": "definitions"
+            }
+        ]
+    }
+]

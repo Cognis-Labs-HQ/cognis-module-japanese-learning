@@ -1,0 +1,147 @@
+[
+    {
+        "id": "ja:sentence:kitchen-example-bowl",
+        "label": "ボウルを洗う",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/d2a254d8d1998682365d746d1fe6c327f1a8e189642a8c5869a65c13004aac60.wav",
+            "pronunciation": ["ボウルをあらう"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:kitchen-bowl",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:household-wash",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:definition:kitchen-example-bowl",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:kitchen-example-knife",
+        "label": "ナイフとフォークがある",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/e59b3768ada422020937a36585a482a0d1014c2e1d20d8e1a9c938ee15d36248.wav",
+            "pronunciation": ["ナイフとフォークがある"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:kitchen-knife",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:to",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:tableware-fork",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:ga",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:aru-exist",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:kitchen-example-knife",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:kitchen-example-pot",
+        "label": "鍋はとても大きい",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/3fc1b45251c604ef081ea8521f0ad7bd62ef48d44f19bd4540b504435697f2fa.wav",
+            "pronunciation": ["なべはとてもおおきい"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:kitchen-pot",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:totemo",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:word:ookii",
+                "relation": "words",
+                "position": 3
+            },
+            {
+                "entryId": "ja:definition:kitchen-example-pot",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:kitchen-example-pan",
+        "label": "フライパンで魚を料理する",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/7ebf4d0b5752c7c706d01d5b2cbbaace0c66c8f863bafcf685412c9a630bedef.wav",
+            "pronunciation": ["フライパンでさかなをりょうりする"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:kitchen-pan",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:de",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:fish",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:household-cook",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:kitchen-example-pan",
+                "relation": "definitions"
+            }
+        ]
+    }
+]

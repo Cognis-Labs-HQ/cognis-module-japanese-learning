@@ -1,0 +1,300 @@
+[
+    {
+        "id": "ja:word:complete-pronunciation-time-tomorrow",
+        "label": "あした",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["あした"],
+            "audio": "audio/3f413ca4ccc8ae35402796b8fdce113e6bdca74527c328668076a5b930582853.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:a",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:shi",
+                        "relation": "reading-kana",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:ta",
+                        "relation": "reading-kana",
+                        "position": 2
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:time-tomorrow",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:time-tomorrow",
+        "label": "明日",
+        "class": "lexical:adverb",
+        "fields": {
+            "pronunciation": ["あした"],
+            "reference_images": [
+                "images/fc56a1dbd94858fa4c20e00712fcbea401bf9624eb150b000619a50ea32ee629.jpg"
+            ],
+            "audio": "audio/3f413ca4ccc8ae35402796b8fdce113e6bdca74527c328668076a5b930582853.wav"
+        },
+        "tags": ["adverb"],
+        "references": [
+            {
+                "entryId": "ja:definition:time-tomorrow",
+                "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-660e",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:kanji:nichi",
+                "relation": "spelling",
+                "position": 1
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-time-tomorrow",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:complete-pronunciation-time-yesterday",
+        "label": "きのう",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["きのう"],
+            "audio": "audio/c35b5c82854e64b2416f515343813659b606ad0964a97c0ce961e9f96f6e8061.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:ki",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:no",
+                        "relation": "reading-kana",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:u",
+                        "relation": "reading-kana",
+                        "position": 2
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:time-yesterday",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:time-yesterday",
+        "label": "昨日",
+        "class": "lexical:adverb",
+        "fields": {
+            "pronunciation": ["きのう"],
+            "reference_images": [
+                "images/c414b13a73bdb90ec0dcb09e2befde68d0b7485a05d3f0d6cef80174aa620525.jpg"
+            ],
+            "audio": "audio/c35b5c82854e64b2416f515343813659b606ad0964a97c0ce961e9f96f6e8061.wav"
+        },
+        "tags": ["adverb"],
+        "references": [
+            {
+                "entryId": "ja:definition:time-yesterday",
+                "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-6628",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:kanji:nichi",
+                "relation": "spelling",
+                "position": 1
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-time-yesterday",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:complete-pronunciation-time-soon",
+        "label": "もうすぐ",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["もうすぐ"],
+            "audio": "audio/edf8fddd5573c17427d2a2371aa36aa2b5c0c37d00c568432b04a187561f8ad8.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:mo",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:u",
+                        "relation": "reading-kana",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:su",
+                        "relation": "reading-kana",
+                        "position": 2
+                    },
+                    {
+                        "entryId": "ja:char:gu",
+                        "relation": "reading-kana",
+                        "position": 3
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:time-soon",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:time-soon",
+        "label": "もうすぐ",
+        "class": "lexical:adverb",
+        "fields": {
+            "pronunciation": ["もうすぐ"],
+            "reference_images": [
+                "images/791d6527e79e0de39553636ed2b75f509d8e374528e1b22e79d6a21a8dba2117.jpg"
+            ],
+            "audio": "audio/edf8fddd5573c17427d2a2371aa36aa2b5c0c37d00c568432b04a187561f8ad8.wav"
+        },
+        "tags": ["adverb"],
+        "references": [
+            {
+                "entryId": "ja:definition:time-soon",
+                "relation": "definitions"
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-time-soon",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:complete-pronunciation-time-later",
+        "label": "あとで",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["あとで"],
+            "audio": "audio/5bbd2d796927483105abf97a1d9832f53ac688dd339e701c3c05c600ca24a852.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:a",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:to",
+                        "relation": "reading-kana",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:de",
+                        "relation": "reading-kana",
+                        "position": 2
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:time-later",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:time-later",
+        "label": "後で",
+        "class": "lexical:adverb",
+        "fields": {
+            "pronunciation": ["あとで"],
+            "reference_images": [
+                "images/e6e517c93c6f68e3a96600521f54f7e77948ef88171b687121cc6740410d2ed2.jpg"
+            ],
+            "audio": "audio/5bbd2d796927483105abf97a1d9832f53ac688dd339e701c3c05c600ca24a852.wav"
+        },
+        "tags": ["adverb"],
+        "references": [
+            {
+                "entryId": "ja:definition:time-later",
+                "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-5f8c",
+                "relation": "spelling",
+                "position": 0
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-time-later",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    }
+]

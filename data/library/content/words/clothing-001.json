@@ -1,0 +1,300 @@
+[
+    {
+        "id": "ja:word:complete-pronunciation-clothing-shirt",
+        "label": "シャツ",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["シャツ"],
+            "audio": "audio/0f00fa39ddc666350b31f3bb952b323e73f48b0db239d261e968506cac7fb720.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:ka:shi",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:ka:small-ya",
+                        "relation": "reading-kana",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:ka:tsu",
+                        "relation": "reading-kana",
+                        "position": 2
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:clothing-shirt",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:clothing-shirt",
+        "label": "シャツ",
+        "class": "lexical:noun",
+        "fields": {
+            "pronunciation": ["シャツ"],
+            "reference_images": [
+                "images/7b6e93b1b243d6a4c3caa6bbc5bea6cc00fe4a644d5e0681f837158a98ab666a.jpg"
+            ],
+            "audio": "audio/0f00fa39ddc666350b31f3bb952b323e73f48b0db239d261e968506cac7fb720.wav"
+        },
+        "tags": ["noun", "clothing"],
+        "references": [
+            {
+                "entryId": "ja:definition:clothing-shirt",
+                "relation": "definitions"
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-clothing-shirt",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:complete-pronunciation-clothing-dress",
+        "label": "ワンピース",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["ワンピース"],
+            "audio": "audio/1d3ca6fdc303371000b29140002868823160fafa76fc3685e8c3d914a9731514.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:ka:wa",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:ka:n",
+                        "relation": "reading-kana",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:ka:pi",
+                        "relation": "reading-kana",
+                        "position": 2
+                    },
+                    {
+                        "entryId": "ja:char:long-vowel-mark",
+                        "relation": "reading-kana",
+                        "position": 3
+                    },
+                    {
+                        "entryId": "ja:char:ka:su",
+                        "relation": "reading-kana",
+                        "position": 4
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:clothing-dress",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:clothing-dress",
+        "label": "ワンピース",
+        "class": "lexical:noun",
+        "fields": {
+            "pronunciation": ["ワンピース"],
+            "reference_images": [
+                "images/7fceea2df46164067c6668f8328bdde6e23b1e1bcfcd67ed69cb41e1c1ed9161.jpg"
+            ],
+            "audio": "audio/1d3ca6fdc303371000b29140002868823160fafa76fc3685e8c3d914a9731514.wav"
+        },
+        "tags": ["noun", "clothing"],
+        "references": [
+            {
+                "entryId": "ja:definition:clothing-dress",
+                "relation": "definitions"
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-clothing-dress",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:complete-pronunciation-clothing-sock",
+        "label": "くつした",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["くつした"],
+            "audio": "audio/6f59f912c5dea707d120df48123a080148de049a65fa481b9647fc9a658de3f0.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:ku",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:tsu",
+                        "relation": "reading-kana",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:shi",
+                        "relation": "reading-kana",
+                        "position": 2
+                    },
+                    {
+                        "entryId": "ja:char:ta",
+                        "relation": "reading-kana",
+                        "position": 3
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:clothing-sock",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:clothing-sock",
+        "label": "靴下",
+        "class": "lexical:noun",
+        "fields": {
+            "pronunciation": ["くつした"],
+            "reference_images": [
+                "images/d32c6b7276daba8ad1e98ac2673602eb44f15697914cc761de82c0df033bfc39.jpg"
+            ],
+            "audio": "audio/6f59f912c5dea707d120df48123a080148de049a65fa481b9647fc9a658de3f0.wav"
+        },
+        "tags": ["noun", "clothing"],
+        "references": [
+            {
+                "entryId": "ja:definition:clothing-sock",
+                "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-9774",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:kanji:expanded-4e0b",
+                "relation": "spelling",
+                "position": 1
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-clothing-sock",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:complete-pronunciation-clothing-skirt",
+        "label": "スカート",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["スカート"],
+            "audio": "audio/b1f5f3c73c48e5085f1cffb93a9af82fd132be5f41fc2df19c20f39f75d614fc.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:ka:su",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:ka:ka",
+                        "relation": "reading-kana",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:long-vowel-mark",
+                        "relation": "reading-kana",
+                        "position": 2
+                    },
+                    {
+                        "entryId": "ja:char:ka:to",
+                        "relation": "reading-kana",
+                        "position": 3
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:clothing-skirt",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:clothing-skirt",
+        "label": "スカート",
+        "class": "lexical:noun",
+        "fields": {
+            "pronunciation": ["スカート"],
+            "reference_images": [
+                "images/956b64915d0766ddc7a1259d4af6c961f8224a6690c9e05be16a51da846e5607.jpg"
+            ],
+            "audio": "audio/b1f5f3c73c48e5085f1cffb93a9af82fd132be5f41fc2df19c20f39f75d614fc.wav"
+        },
+        "tags": ["noun", "clothing"],
+        "references": [
+            {
+                "entryId": "ja:definition:clothing-skirt",
+                "relation": "definitions"
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-clothing-skirt",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    }
+]

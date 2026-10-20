@@ -1,0 +1,76 @@
+[
+    {
+        "path": "audio/297457a2ad8568ee34b749051f266a898d34b1509e92bad6a0312f9f7717a7ef.wav",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "text": "れ",
+        "request": {
+            "text": "れ",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "apply_text_normalization": "off",
+            "language_code": "ja"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "れ",
+                "semanticRole": "atomicWritingUnit",
+                "readings": ["re"]
+            },
+            {
+                "language": "ja",
+                "label": "レ",
+                "semanticRole": "atomicWritingUnit",
+                "readings": ["re"]
+            }
+        ],
+        "entries": ["ja:char:re", "ja:char:ka:re"],
+        "variants": [],
+        "sha256": "883f70256f4d8e293bc4997d4924bc68b69e690d54d6e3a9f6bf154c23edccb0",
+        "frames": 12106
+    },
+    {
+        "path": "audio/108162a80c6746f648d75fe7fd66894a2825a19fdf50785f51854b6cb545c742.wav",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "text": "ろ",
+        "request": {
+            "text": "ろ",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "apply_text_normalization": "off",
+            "language_code": "ja"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "ろ",
+                "semanticRole": "atomicWritingUnit",
+                "readings": ["ro"]
+            },
+            {
+                "language": "ja",
+                "label": "ロ",
+                "semanticRole": "atomicWritingUnit",
+                "readings": ["ro"]
+            }
+        ],
+        "entries": ["ja:char:ro", "ja:char:ka:ro"],
+        "variants": [],
+        "sha256": "715f6d7e725aade3b2bb089385423e08a3120b5f48b7dbb9c2b65462fcdeab7f",
+        "frames": 12106
+    }
+]

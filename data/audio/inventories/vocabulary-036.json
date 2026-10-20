@@ -1,0 +1,90 @@
+[
+    {
+        "path": "audio/ce5859591c8672e2a7572ea27992c5154ae7384b3feb3186210752a6dd56217f.wav",
+        "text": "ふかい",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "深い",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "ふかい",
+                "semanticRole": "lexicalUnit",
+                "readings": ["ふかい"]
+            },
+            {
+                "language": "ja",
+                "label": "深い",
+                "semanticRole": "lexicalUnit",
+                "readings": ["ふかい"]
+            }
+        ],
+        "entries": [
+            "ja:word:depth-deep",
+            "ja:word:complete-pronunciation-depth-deep"
+        ],
+        "variants": [],
+        "sha256": "ce5859591c8672e2a7572ea27992c5154ae7384b3feb3186210752a6dd56217f",
+        "frames": 16564,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "b57e1f918254a94a176ea61991ad415a5bec32b73cdf564cbad191dc74df4e0a"
+        }
+    },
+    {
+        "path": "audio/25746837d157ce1ff24465e0f6c2d70f19d9654d4a6b9e424e1caae7e5063142.wav",
+        "text": "あさい",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "浅い",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "あさい",
+                "semanticRole": "lexicalUnit",
+                "readings": ["あさい"]
+            },
+            {
+                "language": "ja",
+                "label": "浅い",
+                "semanticRole": "lexicalUnit",
+                "readings": ["あさい"]
+            }
+        ],
+        "entries": [
+            "ja:word:depth-shallow",
+            "ja:word:complete-pronunciation-depth-shallow"
+        ],
+        "variants": [],
+        "sha256": "25746837d157ce1ff24465e0f6c2d70f19d9654d4a6b9e424e1caae7e5063142",
+        "frames": 15449,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "36cf9af0defbad2e14d899d891ceb5aa3c420396c2e66c3ecdf01f437ea5a9fb"
+        }
+    }
+]

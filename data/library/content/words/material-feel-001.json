@@ -1,0 +1,156 @@
+[
+    {
+        "id": "ja:word:complete-pronunciation-material-feel-hard",
+        "label": "かたい",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["かたい"],
+            "audio": "audio/13fe3f50184b27a401e8aa69a93199b8ad86ccc274a29c021c7168bdf78020c1.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:ka",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:ta",
+                        "relation": "reading-kana",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:i",
+                        "relation": "reading-kana",
+                        "position": 2
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:material-feel-hard",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:material-feel-hard",
+        "label": "硬い",
+        "class": "lexical:adjective",
+        "fields": {
+            "pronunciation": ["かたい"],
+            "reference_images": [
+                "images/6e769490927a72acd814c7337cdf8a7e2d567914df7ba3e023f88f733a7f8597.jpg"
+            ],
+            "audio": "audio/13fe3f50184b27a401e8aa69a93199b8ad86ccc274a29c021c7168bdf78020c1.wav"
+        },
+        "tags": ["adjective", "material-feel-form-hard"],
+        "references": [
+            {
+                "entryId": "ja:definition:material-feel-hard",
+                "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-786c",
+                "relation": "spelling",
+                "position": 0
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-material-feel-hard",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:complete-pronunciation-material-feel-soft",
+        "label": "やわらかい",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["やわらかい"],
+            "audio": "audio/321e1725a884b3c670a626694da4eb14d4a1ee61d2c803d9209484770c56d8f4.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:ya",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:wa",
+                        "relation": "reading-kana",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:ra",
+                        "relation": "reading-kana",
+                        "position": 2
+                    },
+                    {
+                        "entryId": "ja:char:ka",
+                        "relation": "reading-kana",
+                        "position": 3
+                    },
+                    {
+                        "entryId": "ja:char:i",
+                        "relation": "reading-kana",
+                        "position": 4
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:material-feel-soft",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:material-feel-soft",
+        "label": "柔らかい",
+        "class": "lexical:adjective",
+        "fields": {
+            "pronunciation": ["やわらかい"],
+            "reference_images": [
+                "images/acadbd5d735e33b230e0d8d7ad350a33bf62a0f9d1cce9f7e31470e40b76f190.jpg"
+            ],
+            "audio": "audio/321e1725a884b3c670a626694da4eb14d4a1ee61d2c803d9209484770c56d8f4.wav"
+        },
+        "tags": ["adjective", "material-feel-form-soft"],
+        "references": [
+            {
+                "entryId": "ja:definition:material-feel-soft",
+                "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-67d4",
+                "relation": "spelling",
+                "position": 0
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-material-feel-soft",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    }
+]

@@ -1,0 +1,127 @@
+[
+    {
+        "path": "audio/55900a3049492f3fd4edd4b8fb6ba3ff1650cde9ed4b3024f002f08659bf5c2a.wav",
+        "text": "あらう",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "洗う",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "あらう",
+                "semanticRole": "lexicalUnit",
+                "readings": ["あらう"]
+            },
+            {
+                "language": "ja",
+                "label": "洗う",
+                "semanticRole": "lexicalUnit",
+                "readings": ["あらう"]
+            }
+        ],
+        "entries": [
+            "ja:word:household-wash",
+            "ja:word:complete-pronunciation-household-wash"
+        ],
+        "variants": [],
+        "sha256": "55900a3049492f3fd4edd4b8fb6ba3ff1650cde9ed4b3024f002f08659bf5c2a",
+        "frames": 12106,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "08f991854095e57191111c1fe5a4e63bbaf54f15b9be59b4d65121d20c6ffe13"
+        }
+    },
+    {
+        "path": "audio/d044fa3bdaf8ecf291053b846791a89e9af92ca6407450f965ed990c831a68c1.wav",
+        "text": "せっけん",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "石けん",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "せっけん",
+                "semanticRole": "lexicalUnit",
+                "readings": ["せっけん"]
+            },
+            {
+                "language": "ja",
+                "label": "石けん",
+                "semanticRole": "lexicalUnit",
+                "readings": ["せっけん"]
+            }
+        ],
+        "entries": [
+            "ja:word:care-soap",
+            "ja:word:complete-pronunciation-care-soap"
+        ],
+        "variants": [],
+        "sha256": "d044fa3bdaf8ecf291053b846791a89e9af92ca6407450f965ed990c831a68c1",
+        "frames": 15449,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "4047e21b06754dd960e321e2a452d89a865cf7aaf667116d8b23e61694ac1198"
+        }
+    },
+    {
+        "path": "audio/d0a12142b20f0a5d21786d9417c2582d03cdcdf1dfc5e1dea710a5502081b6a3.wav",
+        "text": "いす",
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "いす",
+                "semanticRole": "lexicalUnit",
+                "readings": ["いす"]
+            },
+            {
+                "language": "ja",
+                "label": "椅子",
+                "semanticRole": "lexicalUnit",
+                "readings": ["いす"]
+            }
+        ],
+        "entries": ["ja:word:chair", "ja:word:complete-pronunciation-chair"],
+        "variants": [],
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "いす",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "sha256": "57715bdba5c0191f2f6b87f3241fdc93dce6eecb4e60c0176e0b657e4f6bb208",
+        "frames": 16564
+    }
+]

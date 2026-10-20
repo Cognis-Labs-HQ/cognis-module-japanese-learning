@@ -2,6 +2,10 @@
 
 Modul Belajar Bahasa Jepang memasang data pembelajaran bahasa Jepang deklaratif ke Pustaka Study milik host sambil tetap terisolasi dari internal Pustaka, basis data, API, dan kode peramban.
 
+## Konten dalam paket
+
+Paket menyediakan panduan menulis, kosakata bertema, contoh tertaut, ilustrasi, dan dek awal. Konten serta inventaris media dalam paket menjadi sumber acuan ketersediaan.
+
 ## Penggunaan
 
 Aktifkan gateway Study dan adaptor Pustaka, lalu aktifkan modul ini. Bootstrap menyelesaikan `study:library:provider` dari `ctx` dan mengingesti `data/library`. Administrator dan pelajar menggunakan antarmuka Study yang dihasilkan adaptor Pustaka, bukan rute milik modul.
@@ -62,7 +66,7 @@ Peran resolver kini hanya dipakai untuk komposisi sejati: bacaan kanji, ejaan ka
 
 ## Tabel kana lengkap
 
-Selain seluruh 46 entri gojūon dasar dan 25 bentuk dakuten atau handakuten per aksara, paket memuat kana kecil, seluruh rangkaian yōon standar, serta geminasi sokuon umum. Contohnya mencakup `ひゃ`, `しゅ`, `じゃ`, dan `って`, beserta padanan katakananya.
+Selain seluruh entri gojūon dasar dan bentuk dakuten atau handakuten per aksara, paket memuat kana kecil, seluruh rangkaian yōon standar, serta geminasi sokuon umum. Contohnya mencakup `ひゃ`, `しゅ`, `じゃ`, dan `って`, beserta padanan katakananya.
 
 ## Penempatan varian dinamis
 
@@ -236,7 +240,7 @@ Kanji dengan satu pelafalan menaut langsung ke Kana atomik berurutan. Kanji deng
 
 ## Batch lokasi dan cara yang ditinjau
 
-Batch pemula yang ditinjau menambahkan `ここ`, `そこ`, `どこ`, `いる`, `ある`, `きれい`, `とても`, `ゆっくり`, dan `です`, serta delapan kalimat bervariasi tentang lokasi, keberadaan, pertanyaan, penampilan, dan cara. Setiap kata baru memiliki definisi terlokalisasi dan ejaan Kana berurutan; setiap kalimat memiliki makna terlokalisasi yang tepat, komposisi leksikal berurutan, dan jalur pelafalan tersembunyi yang lengkap.
+Batch pemula yang ditinjau menambahkan `ここ`, `そこ`, `どこ`, `いる`, `ある`, `きれい`, `とても`, `ゆっくり`, dan `です`, serta kalimat bervariasi tentang lokasi, keberadaan, pertanyaan, penampilan, dan cara. Setiap kata baru memiliki definisi terlokalisasi dan ejaan Kana berurutan; setiap kalimat memiliki makna terlokalisasi yang tepat, komposisi leksikal berurutan, dan jalur pelafalan tersembunyi yang lengkap.
 
 ## Pembersihan Penghapusan Instalasi yang Destruktif
 
@@ -304,7 +308,7 @@ Skema menentukan slug Explore `kana`, `kanji`, `vocabulary`, dan `sentences` di 
 
 ## Dek Kartu Belajar Awal
 
-Penyedia Jepang mendeklarasikan enam dek awal: Dasar Hiragana (46), Dasar Katakana (46), Kanji Sehari-hari (10), Kata Jepang Pertama (9), Verba Jepang Sehari-hari (8) dan Kalimat Jepang Pertama (12). Kunci stabil, nama empat bahasa, ID skema dan ID rekaman terlihat memungkinkan Cognis menyelesaikan ID Library kanonis. Penelusuran, favorit, berbagi dan kemajuan dikelola Cognis; modul tidak membuat dek pengguna atau mengakses basis data host.
+Penyedia Jepang mendeklarasikan dek awal: Dasar Hiragana, Dasar Katakana, Kanji Sehari-hari, Kata Jepang Pertama, Verba Jepang Sehari-hari dan Kalimat Jepang Pertama. Kunci stabil, nama empat bahasa, ID skema dan ID rekaman terlihat memungkinkan Cognis menyelesaikan ID Library kanonis. Penelusuran, favorit, berbagi dan kemajuan dikelola Cognis; modul tidak membuat dek pengguna atau mengakses basis data host.
 
 ## Perbaikan tinjauan
 
@@ -334,7 +338,7 @@ Kandidat Jisho tanpa rekonstruksi Kana lengkap ditolak. Anak bacaan Kanji menaut
 
 ## Ucapan dan rekaman
 
-Paket menyertakan rekaman WAV terverifikasi untuk setiap kartu terkurasi yang bersuara, karakter, partikel, serta seluruh transformasi skema yang dapat dicapai, termasuk bentuk jamak dan rantai perubahan verba. `xya0RvcJtofTcFTOdX4E` adalah suara yang ditetapkan untuk bahasa ini. `data/audio/recordings.json` mencatat permintaan, suara, model, pengaturan, jalur transformasi, dan checksum; kredensial serta alat pembuatan tidak disertakan.
+Berkas WAV bawaan diperiksa checksum, format, dan integritas PCM-nya; pemeriksaan dengan mendengarkan dicatat terpisah dan dapat belum terverifikasi. `data/audio/recordings.json` mencantumkan rekaman dan gabungan audio yang tersedia. `data/audio/unavailable.json` secara jelas mencantumkan kartu tanpa audio bawaan; rekaman yang belum ada bukan URL pemutaran. Suara yang ditetapkan adalah `xya0RvcJtofTcFTOdX4E`. Kredensial dan alat pembuatan luring tidak disertakan.
 
 Kalimat memakai sampel PCM yang persis sama dengan rekaman kata dan partikel penyusunnya secara berurutan, termasuk transformasi yang dipilih. Karena itu, suara dan pelafalan dalam berkas kalimat sama dengan pemutaran tiap kata. Kalimat baru memakai komposisi host; varian yang rekamannya tidak tersedia tidak boleh diganti dengan pelafalan bentuk dasar. Rekaman mencakup paket terkurasi, bukan semua entri kamus yang dimuat sesuai kebutuhan atau seluruh kalimat buatan pengguna.
 
@@ -345,6 +349,8 @@ Berkas memakai PCM mono 24 kHz 16 bit dengan puncak terbatas dan keluaran yang d
 Setiap lapisan menyediakan bidang gambar referensi opsional di editor dan tampilan detail host. Kosakata menggunakan ilustrasi asli buatan AI dengan gaya anime yang dibuat melalui pembuatan gambar OpenAI; tidak ada foto pihak ketiga. `data/library/assets/images/catalog.json` mencatat asal pembuatan dan potongan, pemetaan kartu, serta checksum; `data/library/assets/images/LICENSE.md` menjelaskan lisensi karya. Administrator dapat mengunggah gambar referensi tambahan melalui Cognis.
 
 ## Inventaris Rekaman
+
+`data/audio/recordings.json` memakai format inventaris 2 dengan bahasa, suara, model, pengaturan pemrosesan, jumlah, dan jalur indeks tujuan beserta hash. Berkas `data/audio/indexes/` mencantumkan pecahan inventaris ber-hash dalam `data/audio/inventories/`, dikelompokkan untuk karakter, kosakata, transformasi, kalimat langsung, dan komposisi kalimat. Indeks utama dan indeks tujuan tetap di bawah 400 baris; pecahan rekaman maksimal 800 baris. Pemuat memeriksa kedua tingkat, jumlah, jalur yang diizinkan, kecocokan tujuan dan jenis, serta jalur duplikat sebelum mendaftarkan pemutaran. Objek rekaman, byte audio, dan prioritas pencarian dipertahankan.
 
 Pemutaran kalimat paket memakai PCM yang disusun persis dari klip penyusun, termasuk transformasi terpilih. Rekaman seluruh kalimat yang dihasilkan terpisah tetap diinventarisasi dengan asal suara dan permintaan asli, tetapi tidak menimpa rekaman komposisi. Kalimat baru tetap memakai komposisi dan cache milik host.
 

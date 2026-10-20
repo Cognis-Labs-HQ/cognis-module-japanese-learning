@@ -1,0 +1,330 @@
+[
+    {
+        "id": "ja:word:complete-pronunciation-greetings-morning",
+        "label": "おはようございます",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["おはようございます"],
+            "audio": "audio/234149ca007ad52eec06256706a0155f4d127ce5674d41243bfb104d83f1a20e.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:o",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:ha",
+                        "relation": "reading-kana",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:yo",
+                        "relation": "reading-kana",
+                        "position": 2
+                    },
+                    {
+                        "entryId": "ja:char:u",
+                        "relation": "reading-kana",
+                        "position": 3
+                    },
+                    {
+                        "entryId": "ja:char:go",
+                        "relation": "reading-kana",
+                        "position": 4
+                    },
+                    {
+                        "entryId": "ja:char:za",
+                        "relation": "reading-kana",
+                        "position": 5
+                    },
+                    {
+                        "entryId": "ja:char:i",
+                        "relation": "reading-kana",
+                        "position": 6
+                    },
+                    {
+                        "entryId": "ja:char:ma",
+                        "relation": "reading-kana",
+                        "position": 7
+                    },
+                    {
+                        "entryId": "ja:char:su",
+                        "relation": "reading-kana",
+                        "position": 8
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:greetings-morning",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:greetings-morning",
+        "label": "おはようございます",
+        "class": "lexical:interjection",
+        "fields": {
+            "pronunciation": ["おはようございます"],
+            "reference_images": [
+                "images/9dfc9104de018411203a88d74eb899db5aa36900dd42342be7c8b13b892ad411.jpg"
+            ],
+            "audio": "audio/234149ca007ad52eec06256706a0155f4d127ce5674d41243bfb104d83f1a20e.wav"
+        },
+        "tags": ["interjection", "greetings"],
+        "references": [
+            {
+                "entryId": "ja:definition:greetings-morning",
+                "relation": "definitions"
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-greetings-morning",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:complete-pronunciation-greetings-evening",
+        "label": "こんばんわ",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["こんばんわ"],
+            "audio": "audio/16ec181206336122e284a1860ddafef3ca02b2c1ee67edd8a44bd2c4e04bc9ac.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:ko",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:n",
+                        "relation": "reading-kana",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:ba",
+                        "relation": "reading-kana",
+                        "position": 2
+                    },
+                    {
+                        "entryId": "ja:char:n",
+                        "relation": "reading-kana",
+                        "position": 3
+                    },
+                    {
+                        "entryId": "ja:char:wa",
+                        "relation": "reading-kana",
+                        "position": 4
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:greetings-evening",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:greetings-evening",
+        "label": "こんばんは",
+        "class": "lexical:interjection",
+        "fields": {
+            "pronunciation": ["こんばんわ"],
+            "reference_images": [
+                "images/e5a6b46cabe1fa0dfd83d92c2102021cbb73cb1022537c52b277bba2cb17ceab.jpg"
+            ],
+            "audio": "audio/16ec181206336122e284a1860ddafef3ca02b2c1ee67edd8a44bd2c4e04bc9ac.wav"
+        },
+        "tags": ["interjection", "greetings"],
+        "references": [
+            {
+                "entryId": "ja:definition:greetings-evening",
+                "relation": "definitions"
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-greetings-evening",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:complete-pronunciation-greetings-night",
+        "label": "おやすみなさい",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["おやすみなさい"],
+            "audio": "audio/719918ef467cece94c40fbd08eaf7995088fd0d578397b256262bf960a4c1c24.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:o",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:ya",
+                        "relation": "reading-kana",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:su",
+                        "relation": "reading-kana",
+                        "position": 2
+                    },
+                    {
+                        "entryId": "ja:char:mi",
+                        "relation": "reading-kana",
+                        "position": 3
+                    },
+                    {
+                        "entryId": "ja:char:na",
+                        "relation": "reading-kana",
+                        "position": 4
+                    },
+                    {
+                        "entryId": "ja:char:sa",
+                        "relation": "reading-kana",
+                        "position": 5
+                    },
+                    {
+                        "entryId": "ja:char:i",
+                        "relation": "reading-kana",
+                        "position": 6
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:greetings-night",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:greetings-night",
+        "label": "おやすみなさい",
+        "class": "lexical:interjection",
+        "fields": {
+            "pronunciation": ["おやすみなさい"],
+            "reference_images": [
+                "images/44291e908ea60ca01d57dcf615c8c60f6affac0a66c9f561b8b46f87bb9a8425.jpg"
+            ],
+            "audio": "audio/719918ef467cece94c40fbd08eaf7995088fd0d578397b256262bf960a4c1c24.wav"
+        },
+        "tags": ["interjection", "greetings"],
+        "references": [
+            {
+                "entryId": "ja:definition:greetings-night",
+                "relation": "definitions"
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-greetings-night",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:complete-pronunciation-greetings-later",
+        "label": "またね",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["またね"],
+            "audio": "audio/85ca161c5ed20309878186daa5df7a18f6dd6961c9134da1e0be0d635c03da17.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:ma",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:ta",
+                        "relation": "reading-kana",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:ne",
+                        "relation": "reading-kana",
+                        "position": 2
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:greetings-later",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:greetings-later",
+        "label": "またね",
+        "class": "lexical:interjection",
+        "fields": {
+            "pronunciation": ["またね"],
+            "reference_images": [
+                "images/525b749cf6d2d6f43893459a93f08ad25f80e07b676bdc56390a38734da3cdf9.jpg"
+            ],
+            "audio": "audio/85ca161c5ed20309878186daa5df7a18f6dd6961c9134da1e0be0d635c03da17.wav"
+        },
+        "tags": ["interjection", "greetings"],
+        "references": [
+            {
+                "entryId": "ja:definition:greetings-later",
+                "relation": "definitions"
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-greetings-later",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    }
+]

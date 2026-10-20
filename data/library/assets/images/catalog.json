@@ -3,7 +3,7 @@
     "source": "OpenAI image generation",
     "style": "anime",
     "generatedOn": "2026-10-18",
-    "processing": "Individual panels cropped from generated illustration sheets and encoded as JPEG; no source photographs used.",
+    "processing": "Original panels cropped from generated sheets and standalone replacements converted whole to JPEG; per-image crop and generation metadata record provenance. No source photographs used.",
     "images": [
         {
             "id": "241f87c046b741b7a1d00efc6674a6080ec8081b860680ebd2d6f1ff87c647a2",
@@ -728,21 +728,28 @@
             }
         },
         {
-            "id": "9dd43f72da852151c264bc6d7881f12bcd8ba271129604e37f1adbf43b04dbd0",
-            "path": "images/9dd43f72da852151c264bc6d7881f12bcd8ba271129604e37f1adbf43b04dbd0.jpg",
-            "sha256": "9dd43f72da852151c264bc6d7881f12bcd8ba271129604e37f1adbf43b04dbd0",
-            "width": 308,
-            "height": 306,
+            "id": "420781ec7b71ef4f59a760a34182fc243ae9fad0db7ae7ae68b204b454a73588",
+            "path": "images/420781ec7b71ef4f59a760a34182fc243ae9fad0db7ae7ae68b204b454a73588.jpg",
+            "sha256": "420781ec7b71ef4f59a760a34182fc243ae9fad0db7ae7ae68b204b454a73588",
+            "width": 1254,
+            "height": 1254,
             "entryIds": ["ja:word:totemo"],
-            "sourceSheet": "cc3a309967760059e7cee696c1f399a60795348160b79786f00f7d61a9004d39",
-            "sourceSha256": "cc3a309967760059e7cee696c1f399a60795348160b79786f00f7d61a9004d39",
-            "crop": [630, 310, 308, 306],
+            "sourceSheet": "da8f2a342ae5af4886f769d7c14c63317876155a97d03650e1cc29e1f44c0bb4",
+            "sourceSha256": "da8f2a342ae5af4886f769d7c14c63317876155a97d03650e1cc29e1f44c0bb4",
+            "crop": [0, 0, 1254, 1254],
             "metadata": {
                 "labels": {
                     "en": "very",
                     "de": "sehr",
                     "id": "sangat",
                     "ja": "とても"
+                },
+                "generation": {
+                    "provider": "OpenAI built-in image generation",
+                    "generatedOn": "2026-10-18",
+                    "sourceDimensions": [1254, 1254],
+                    "processing": "Whole standalone source converted to JPEG with FFmpeg q:v 4; no crop or resize.",
+                    "replacesSha256": "9dd43f72da852151c264bc6d7881f12bcd8ba271129604e37f1adbf43b04dbd0"
                 }
             }
         },
@@ -956,21 +963,28 @@
             }
         },
         {
-            "id": "1c8e8f2c27ade72752aad214535da77e43da98ded919a887578a360e25f4a585",
-            "path": "images/1c8e8f2c27ade72752aad214535da77e43da98ded919a887578a360e25f4a585.jpg",
-            "sha256": "1c8e8f2c27ade72752aad214535da77e43da98ded919a887578a360e25f4a585",
-            "width": 308,
-            "height": 307,
+            "id": "a96dd172687194193ec7607b2c13e7212c0ef69bf5371a02630696aaa8796682",
+            "path": "images/a96dd172687194193ec7607b2c13e7212c0ef69bf5371a02630696aaa8796682.jpg",
+            "sha256": "a96dd172687194193ec7607b2c13e7212c0ef69bf5371a02630696aaa8796682",
+            "width": 1254,
+            "height": 1254,
             "entryIds": ["ja:word:shikashi"],
-            "sourceSheet": "9ba518c81aaaea9e783ab4436dd62b11e49848a35d9e2993dd4aba8503a96024",
-            "sourceSha256": "9ba518c81aaaea9e783ab4436dd62b11e49848a35d9e2993dd4aba8503a96024",
-            "crop": [630, 3, 308, 307],
+            "sourceSheet": "27cb6b52a46b28a0b51320d9feaaec89654a5937b09c8ab673d44562b5965afb",
+            "sourceSha256": "27cb6b52a46b28a0b51320d9feaaec89654a5937b09c8ab673d44562b5965afb",
+            "crop": [0, 0, 1254, 1254],
             "metadata": {
                 "labels": {
                     "en": "however",
                     "de": "jedoch",
                     "id": "namun",
                     "ja": "しかし"
+                },
+                "generation": {
+                    "provider": "OpenAI built-in image generation",
+                    "generatedOn": "2026-10-18",
+                    "sourceDimensions": [1254, 1254],
+                    "processing": "Whole standalone source converted to JPEG with FFmpeg q:v 6; no crop or resize.",
+                    "replacesSha256": "1c8e8f2c27ade72752aad214535da77e43da98ded919a887578a360e25f4a585"
                 }
             }
         },
@@ -1940,6 +1954,3353 @@
                     "de": "Haut",
                     "id": "kulit",
                     "ja": "肌"
+                }
+            }
+        },
+        {
+            "id": "016006ff7815ab466758f6871240324e40402bf11e56b7bba30923bdc606763c",
+            "path": "images/016006ff7815ab466758f6871240324e40402bf11e56b7bba30923bdc606763c.jpg",
+            "sha256": "016006ff7815ab466758f6871240324e40402bf11e56b7bba30923bdc606763c",
+            "width": 619,
+            "height": 400,
+            "sourceSheet": "111b0c0d3e8c72fed4337a7d41576f98f3f6daebcbf6f5310b475f5768d62677",
+            "sourceSha256": "111b0c0d3e8c72fed4337a7d41576f98f3f6daebcbf6f5310b475f5768d62677",
+            "crop": [0, 0, 619, 400],
+            "entryIds": ["ja:word:travel-ticket"],
+            "metadata": {
+                "labels": {
+                    "en": "ticket",
+                    "de": "Fahrkarte",
+                    "id": "tiket",
+                    "ja": "きっぷ"
+                },
+                "generation": {
+                    "provider": "OpenAI built-in image generation",
+                    "generatedOn": "2026-10-19",
+                    "sourceDimensions": [1254, 1254]
+                }
+            }
+        },
+        {
+            "id": "047183312df806ecd1918b0bd6ff2ef0a7b409400f0b8f66aa503abf263e484f",
+            "path": "images/047183312df806ecd1918b0bd6ff2ef0a7b409400f0b8f66aa503abf263e484f.jpg",
+            "sha256": "047183312df806ecd1918b0bd6ff2ef0a7b409400f0b8f66aa503abf263e484f",
+            "width": 617,
+            "height": 400,
+            "sourceSheet": "111b0c0d3e8c72fed4337a7d41576f98f3f6daebcbf6f5310b475f5768d62677",
+            "sourceSha256": "111b0c0d3e8c72fed4337a7d41576f98f3f6daebcbf6f5310b475f5768d62677",
+            "crop": [637, 0, 617, 400],
+            "entryIds": ["ja:word:travel-station"],
+            "metadata": {
+                "labels": {
+                    "en": "railway station",
+                    "de": "Bahnhof",
+                    "id": "stasiun kereta",
+                    "ja": "鉄道の駅"
+                },
+                "generation": {
+                    "provider": "OpenAI built-in image generation",
+                    "generatedOn": "2026-10-19",
+                    "sourceDimensions": [1254, 1254]
+                }
+            }
+        },
+        {
+            "id": "946f75afab1d42df6bfad06e8d789e4532c6774c9ac17bf07004ef2e6750ee57",
+            "path": "images/946f75afab1d42df6bfad06e8d789e4532c6774c9ac17bf07004ef2e6750ee57.jpg",
+            "sha256": "946f75afab1d42df6bfad06e8d789e4532c6774c9ac17bf07004ef2e6750ee57",
+            "width": 619,
+            "height": 404,
+            "sourceSheet": "111b0c0d3e8c72fed4337a7d41576f98f3f6daebcbf6f5310b475f5768d62677",
+            "sourceSha256": "111b0c0d3e8c72fed4337a7d41576f98f3f6daebcbf6f5310b475f5768d62677",
+            "crop": [0, 414, 619, 404],
+            "entryIds": ["ja:word:travel-platform"],
+            "metadata": {
+                "labels": {
+                    "en": "railway platform",
+                    "de": "Bahnsteig",
+                    "id": "peron kereta",
+                    "ja": "駅のホーム"
+                },
+                "generation": {
+                    "provider": "OpenAI built-in image generation",
+                    "generatedOn": "2026-10-19",
+                    "sourceDimensions": [1254, 1254]
+                }
+            }
+        },
+        {
+            "id": "b436e5d445206470dff48801aa17f0bab74fb1b630c076dbd684c92d5f772647",
+            "path": "images/b436e5d445206470dff48801aa17f0bab74fb1b630c076dbd684c92d5f772647.jpg",
+            "sha256": "b436e5d445206470dff48801aa17f0bab74fb1b630c076dbd684c92d5f772647",
+            "width": 617,
+            "height": 404,
+            "sourceSheet": "111b0c0d3e8c72fed4337a7d41576f98f3f6daebcbf6f5310b475f5768d62677",
+            "sourceSha256": "111b0c0d3e8c72fed4337a7d41576f98f3f6daebcbf6f5310b475f5768d62677",
+            "crop": [637, 414, 617, 404],
+            "entryIds": ["ja:word:travel-airport"],
+            "metadata": {
+                "labels": {
+                    "en": "airport",
+                    "de": "Flughafen",
+                    "id": "bandara",
+                    "ja": "空港"
+                },
+                "generation": {
+                    "provider": "OpenAI built-in image generation",
+                    "generatedOn": "2026-10-19",
+                    "sourceDimensions": [1254, 1254]
+                }
+            }
+        },
+        {
+            "id": "a256c847a5f242cc96b3e6d0ed21b9a8870e534ae19c33c5670f13ff3f81a207",
+            "path": "images/a256c847a5f242cc96b3e6d0ed21b9a8870e534ae19c33c5670f13ff3f81a207.jpg",
+            "sha256": "a256c847a5f242cc96b3e6d0ed21b9a8870e534ae19c33c5670f13ff3f81a207",
+            "width": 619,
+            "height": 422,
+            "sourceSheet": "111b0c0d3e8c72fed4337a7d41576f98f3f6daebcbf6f5310b475f5768d62677",
+            "sourceSha256": "111b0c0d3e8c72fed4337a7d41576f98f3f6daebcbf6f5310b475f5768d62677",
+            "crop": [0, 832, 619, 422],
+            "entryIds": ["ja:word:travel-passport"],
+            "metadata": {
+                "labels": {
+                    "en": "passport",
+                    "de": "Reisepass",
+                    "id": "paspor",
+                    "ja": "旅券"
+                },
+                "generation": {
+                    "provider": "OpenAI built-in image generation",
+                    "generatedOn": "2026-10-19",
+                    "sourceDimensions": [1254, 1254]
+                }
+            }
+        },
+        {
+            "id": "f2a41ac42811fb5254d754285b53e6aa60e8d22184500d0478bf45782670c740",
+            "path": "images/f2a41ac42811fb5254d754285b53e6aa60e8d22184500d0478bf45782670c740.jpg",
+            "sha256": "f2a41ac42811fb5254d754285b53e6aa60e8d22184500d0478bf45782670c740",
+            "width": 617,
+            "height": 422,
+            "sourceSheet": "111b0c0d3e8c72fed4337a7d41576f98f3f6daebcbf6f5310b475f5768d62677",
+            "sourceSha256": "111b0c0d3e8c72fed4337a7d41576f98f3f6daebcbf6f5310b475f5768d62677",
+            "crop": [637, 832, 617, 422],
+            "entryIds": ["ja:word:travel-suitcase"],
+            "metadata": {
+                "labels": {
+                    "en": "suitcase",
+                    "de": "Koffer",
+                    "id": "koper",
+                    "ja": "スーツケース"
+                },
+                "generation": {
+                    "provider": "OpenAI built-in image generation",
+                    "generatedOn": "2026-10-19",
+                    "sourceDimensions": [1254, 1254]
+                }
+            }
+        },
+        {
+            "id": "c288c6572b54be189e2938c6e8311e6253cc88bb53a964e47dd78aaff468bee4",
+            "path": "images/c288c6572b54be189e2938c6e8311e6253cc88bb53a964e47dd78aaff468bee4.jpg",
+            "sha256": "c288c6572b54be189e2938c6e8311e6253cc88bb53a964e47dd78aaff468bee4",
+            "width": 615,
+            "height": 377,
+            "sourceSheet": "96bf016639cf3c74bef672b3802aebd2fccd19323247e17dcffcc6f5bb0f30af",
+            "sourceSha256": "96bf016639cf3c74bef672b3802aebd2fccd19323247e17dcffcc6f5bb0f30af",
+            "crop": [0, 0, 615, 377],
+            "entryIds": ["ja:word:travel-bicycle"],
+            "metadata": {
+                "labels": {
+                    "en": "bicycle",
+                    "de": "Fahrrad",
+                    "id": "sepeda",
+                    "ja": "自転車"
+                },
+                "generation": {
+                    "provider": "OpenAI built-in image generation",
+                    "generatedOn": "2026-10-19",
+                    "sourceDimensions": [1254, 1254]
+                }
+            }
+        },
+        {
+            "id": "bd86707b5314d6a53c085f104d26e7974f0e116fc5d2b1d04d5e3fb3f25c3f3d",
+            "path": "images/bd86707b5314d6a53c085f104d26e7974f0e116fc5d2b1d04d5e3fb3f25c3f3d.jpg",
+            "sha256": "bd86707b5314d6a53c085f104d26e7974f0e116fc5d2b1d04d5e3fb3f25c3f3d",
+            "width": 615,
+            "height": 422,
+            "sourceSheet": "96bf016639cf3c74bef672b3802aebd2fccd19323247e17dcffcc6f5bb0f30af",
+            "sourceSha256": "96bf016639cf3c74bef672b3802aebd2fccd19323247e17dcffcc6f5bb0f30af",
+            "crop": [0, 391, 615, 422],
+            "entryIds": ["ja:word:travel-arrive"],
+            "metadata": {
+                "labels": {
+                    "en": "to arrive",
+                    "de": "ankommen",
+                    "id": "tiba",
+                    "ja": "到着する"
+                },
+                "generation": {
+                    "provider": "OpenAI built-in image generation",
+                    "generatedOn": "2026-10-19",
+                    "sourceDimensions": [1254, 1254]
+                }
+            }
+        },
+        {
+            "id": "c6034124dfc0d801b7e4ee06cd0cf1bad66cfc114ed3133f7aa9596209493533",
+            "path": "images/c6034124dfc0d801b7e4ee06cd0cf1bad66cfc114ed3133f7aa9596209493533.jpg",
+            "sha256": "c6034124dfc0d801b7e4ee06cd0cf1bad66cfc114ed3133f7aa9596209493533",
+            "width": 616,
+            "height": 422,
+            "sourceSheet": "96bf016639cf3c74bef672b3802aebd2fccd19323247e17dcffcc6f5bb0f30af",
+            "sourceSha256": "96bf016639cf3c74bef672b3802aebd2fccd19323247e17dcffcc6f5bb0f30af",
+            "crop": [638, 391, 616, 422],
+            "entryIds": ["ja:word:travel-depart"],
+            "metadata": {
+                "labels": {
+                    "en": "to depart",
+                    "de": "abfahren; abreisen",
+                    "id": "berangkat",
+                    "ja": "出発する"
+                },
+                "generation": {
+                    "provider": "OpenAI built-in image generation",
+                    "generatedOn": "2026-10-19",
+                    "sourceDimensions": [1254, 1254]
+                }
+            }
+        },
+        {
+            "id": "298a2a0d0529ac1a291af6a8141f9ef705b23199fe96d75188be8fa563f7250b",
+            "path": "images/298a2a0d0529ac1a291af6a8141f9ef705b23199fe96d75188be8fa563f7250b.jpg",
+            "sha256": "298a2a0d0529ac1a291af6a8141f9ef705b23199fe96d75188be8fa563f7250b",
+            "width": 615,
+            "height": 426,
+            "sourceSheet": "96bf016639cf3c74bef672b3802aebd2fccd19323247e17dcffcc6f5bb0f30af",
+            "sourceSha256": "96bf016639cf3c74bef672b3802aebd2fccd19323247e17dcffcc6f5bb0f30af",
+            "crop": [0, 828, 615, 426],
+            "entryIds": ["ja:word:travel-buy"],
+            "metadata": {
+                "labels": {
+                    "en": "to buy",
+                    "de": "kaufen",
+                    "id": "membeli",
+                    "ja": "買う"
+                },
+                "generation": {
+                    "provider": "OpenAI built-in image generation",
+                    "generatedOn": "2026-10-19",
+                    "sourceDimensions": [1254, 1254]
+                }
+            }
+        },
+        {
+            "id": "2dd35f7ea23f9b1dd3303ed9e80fc3ea33c8b396c950e39bc1231c3c52af7e6c",
+            "path": "images/2dd35f7ea23f9b1dd3303ed9e80fc3ea33c8b396c950e39bc1231c3c52af7e6c.jpg",
+            "sha256": "2dd35f7ea23f9b1dd3303ed9e80fc3ea33c8b396c950e39bc1231c3c52af7e6c",
+            "width": 616,
+            "height": 426,
+            "sourceSheet": "96bf016639cf3c74bef672b3802aebd2fccd19323247e17dcffcc6f5bb0f30af",
+            "sourceSha256": "96bf016639cf3c74bef672b3802aebd2fccd19323247e17dcffcc6f5bb0f30af",
+            "crop": [638, 828, 616, 426],
+            "entryIds": ["ja:word:travel-wait"],
+            "metadata": {
+                "labels": {
+                    "en": "to wait",
+                    "de": "warten",
+                    "id": "menunggu",
+                    "ja": "待つ"
+                },
+                "generation": {
+                    "provider": "OpenAI built-in image generation",
+                    "generatedOn": "2026-10-19",
+                    "sourceDimensions": [1254, 1254]
+                }
+            }
+        },
+        {
+            "id": "0d62f6c282c0395ae54463ee20068b8fb6692e6c567b8426a27430bf9e5d6b6e",
+            "path": "images/0d62f6c282c0395ae54463ee20068b8fb6692e6c567b8426a27430bf9e5d6b6e.jpg",
+            "sha256": "0d62f6c282c0395ae54463ee20068b8fb6692e6c567b8426a27430bf9e5d6b6e",
+            "width": 611,
+            "height": 1254,
+            "sourceSheet": "cddab0acc0fb49ac91b95033311407f78025d5f62a88c2c62190b77c76143b8e",
+            "sourceSha256": "cddab0acc0fb49ac91b95033311407f78025d5f62a88c2c62190b77c76143b8e",
+            "crop": [643, 0, 611, 1254],
+            "entryIds": ["ja:word:travel-map"],
+            "metadata": {
+                "labels": {
+                    "en": "map",
+                    "de": "Landkarte",
+                    "id": "peta",
+                    "ja": "地図"
+                },
+                "generation": {
+                    "provider": "OpenAI built-in image generation",
+                    "generatedOn": "2026-10-19",
+                    "sourceDimensions": [1254, 1254]
+                }
+            }
+        },
+        {
+            "id": "fc56a1dbd94858fa4c20e00712fcbea401bf9624eb150b000619a50ea32ee629",
+            "path": "images/fc56a1dbd94858fa4c20e00712fcbea401bf9624eb150b000619a50ea32ee629.jpg",
+            "sha256": "fc56a1dbd94858fa4c20e00712fcbea401bf9624eb150b000619a50ea32ee629",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:time-tomorrow"],
+            "sourceSheet": "20f80c516ebb96db811b423b9823600b4880bd2adb9b30a93a94a24371e9104f",
+            "sourceSha256": "20f80c516ebb96db811b423b9823600b4880bd2adb9b30a93a94a24371e9104f",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "tomorrow",
+                    "de": "morgen",
+                    "id": "besok",
+                    "ja": "明日"
+                }
+            }
+        },
+        {
+            "id": "c414b13a73bdb90ec0dcb09e2befde68d0b7485a05d3f0d6cef80174aa620525",
+            "path": "images/c414b13a73bdb90ec0dcb09e2befde68d0b7485a05d3f0d6cef80174aa620525.jpg",
+            "sha256": "c414b13a73bdb90ec0dcb09e2befde68d0b7485a05d3f0d6cef80174aa620525",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:time-yesterday"],
+            "sourceSheet": "5e8d0e10abb0ba06b2a68601f1854cc5cafb71d7af2448a7279c4981756a4472",
+            "sourceSha256": "5e8d0e10abb0ba06b2a68601f1854cc5cafb71d7af2448a7279c4981756a4472",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "yesterday",
+                    "de": "gestern",
+                    "id": "kemarin",
+                    "ja": "昨日"
+                }
+            }
+        },
+        {
+            "id": "791d6527e79e0de39553636ed2b75f509d8e374528e1b22e79d6a21a8dba2117",
+            "path": "images/791d6527e79e0de39553636ed2b75f509d8e374528e1b22e79d6a21a8dba2117.jpg",
+            "sha256": "791d6527e79e0de39553636ed2b75f509d8e374528e1b22e79d6a21a8dba2117",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:time-soon"],
+            "sourceSheet": "6d93e0cad239dbc77ef317043b5dc8ab476d6149aed936526651fc021ad0ccdf",
+            "sourceSha256": "6d93e0cad239dbc77ef317043b5dc8ab476d6149aed936526651fc021ad0ccdf",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "soon",
+                    "de": "bald",
+                    "id": "segera",
+                    "ja": "もうすぐ"
+                }
+            }
+        },
+        {
+            "id": "e6e517c93c6f68e3a96600521f54f7e77948ef88171b687121cc6740410d2ed2",
+            "path": "images/e6e517c93c6f68e3a96600521f54f7e77948ef88171b687121cc6740410d2ed2.jpg",
+            "sha256": "e6e517c93c6f68e3a96600521f54f7e77948ef88171b687121cc6740410d2ed2",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:time-later"],
+            "sourceSheet": "9af7371f7a9c66331d868dd1d994e7a312e6142e083ee33fa98d6e7a82fc1e99",
+            "sourceSha256": "9af7371f7a9c66331d868dd1d994e7a312e6142e083ee33fa98d6e7a82fc1e99",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "later; afterwards",
+                    "de": "später; danach",
+                    "id": "nanti; setelah itu",
+                    "ja": "あとで"
+                }
+            }
+        },
+        {
+            "id": "eec12564e76455f70498ca4464fa8a4943f2f985b0d1c331819f92f23ee6db86",
+            "path": "images/eec12564e76455f70498ca4464fa8a4943f2f985b0d1c331819f92f23ee6db86.jpg",
+            "sha256": "eec12564e76455f70498ca4464fa8a4943f2f985b0d1c331819f92f23ee6db86",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:colors-red"],
+            "sourceSheet": "fd842fd3759ac1e306d1d8d1426d8bd681f7ff523a19dbec5b04e0ad725be58c",
+            "sourceSha256": "fd842fd3759ac1e306d1d8d1426d8bd681f7ff523a19dbec5b04e0ad725be58c",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "red (color)",
+                    "de": "Rot (Farbe)",
+                    "id": "merah (warna)",
+                    "ja": "赤（色）"
+                }
+            }
+        },
+        {
+            "id": "33e155e981b8f93cc0971dae33ebe8a1ab262fc22d32bf28eb7adbbe1debdf2b",
+            "path": "images/33e155e981b8f93cc0971dae33ebe8a1ab262fc22d32bf28eb7adbbe1debdf2b.jpg",
+            "sha256": "33e155e981b8f93cc0971dae33ebe8a1ab262fc22d32bf28eb7adbbe1debdf2b",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:colors-blue"],
+            "sourceSheet": "3d0996e2cfc2e343f27392ce4263c47bcaee5fcab3a7ab0b658cfeda5cb9154f",
+            "sourceSha256": "3d0996e2cfc2e343f27392ce4263c47bcaee5fcab3a7ab0b658cfeda5cb9154f",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "blue (color)",
+                    "de": "Blau (Farbe)",
+                    "id": "biru (warna)",
+                    "ja": "青（色）"
+                }
+            }
+        },
+        {
+            "id": "117ea824aa459ec7e18cc861cdc9caf40ff23eedf892f2eb73d72e8820bbdd85",
+            "path": "images/117ea824aa459ec7e18cc861cdc9caf40ff23eedf892f2eb73d72e8820bbdd85.jpg",
+            "sha256": "117ea824aa459ec7e18cc861cdc9caf40ff23eedf892f2eb73d72e8820bbdd85",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:colors-green"],
+            "sourceSheet": "9e9c3072e94f41cc2dd1df2f3ce6b38221c29fca7e9c6dc0e6ba24a4638bfa77",
+            "sourceSha256": "9e9c3072e94f41cc2dd1df2f3ce6b38221c29fca7e9c6dc0e6ba24a4638bfa77",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "green (color)",
+                    "de": "Grün (Farbe)",
+                    "id": "hijau (warna)",
+                    "ja": "緑（色）"
+                }
+            }
+        },
+        {
+            "id": "1071b44a9cc88e9f12c4bcb1d160612d3631d8ca871939bb65c043bfd5831cfe",
+            "path": "images/1071b44a9cc88e9f12c4bcb1d160612d3631d8ca871939bb65c043bfd5831cfe.jpg",
+            "sha256": "1071b44a9cc88e9f12c4bcb1d160612d3631d8ca871939bb65c043bfd5831cfe",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:colors-yellow"],
+            "sourceSheet": "f3bd539fb841de5d6121b1f2136d6a233c70ea687d38e74ee38e629ba4b8b8c6",
+            "sourceSha256": "f3bd539fb841de5d6121b1f2136d6a233c70ea687d38e74ee38e629ba4b8b8c6",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "yellow (color)",
+                    "de": "Gelb (Farbe)",
+                    "id": "kuning (warna)",
+                    "ja": "黄色（色）"
+                }
+            }
+        },
+        {
+            "id": "0fa7d93f425484a16b9b63c4755cfde41fda49e8967a1ba0a5283227d2cb3c12",
+            "path": "images/0fa7d93f425484a16b9b63c4755cfde41fda49e8967a1ba0a5283227d2cb3c12.jpg",
+            "sha256": "0fa7d93f425484a16b9b63c4755cfde41fda49e8967a1ba0a5283227d2cb3c12",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:weather-sun"],
+            "sourceSheet": "c7bbef78d344010bf7d1929bbc159f53cc7084a4a9ec20acd307a34c8ac9a8a0",
+            "sourceSha256": "c7bbef78d344010bf7d1929bbc159f53cc7084a4a9ec20acd307a34c8ac9a8a0",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "sun",
+                    "de": "Sonne",
+                    "id": "matahari",
+                    "ja": "太陽"
+                }
+            }
+        },
+        {
+            "id": "4afa8e73a4e31604c1ff4f967242593ab2314f14697ce2b036bcc2f275d7a9a7",
+            "path": "images/4afa8e73a4e31604c1ff4f967242593ab2314f14697ce2b036bcc2f275d7a9a7.jpg",
+            "sha256": "4afa8e73a4e31604c1ff4f967242593ab2314f14697ce2b036bcc2f275d7a9a7",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:weather-snow"],
+            "sourceSheet": "10fd8c163cab30b0864852b370c3e15141d722ca9eb8091c13ac276af6857edc",
+            "sourceSha256": "10fd8c163cab30b0864852b370c3e15141d722ca9eb8091c13ac276af6857edc",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "snow",
+                    "de": "Schnee",
+                    "id": "salju",
+                    "ja": "雪"
+                }
+            }
+        },
+        {
+            "id": "f7b349b934b0c671d660e263eed911b5e927a43297ddbe68da87d1cf834738d5",
+            "path": "images/f7b349b934b0c671d660e263eed911b5e927a43297ddbe68da87d1cf834738d5.jpg",
+            "sha256": "f7b349b934b0c671d660e263eed911b5e927a43297ddbe68da87d1cf834738d5",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:weather-wind"],
+            "sourceSheet": "ee7ee41aefb4e963a5415f827bd725eca7e43bee360d8bdcd6565fab25e434ab",
+            "sourceSha256": "ee7ee41aefb4e963a5415f827bd725eca7e43bee360d8bdcd6565fab25e434ab",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "wind",
+                    "de": "Wind",
+                    "id": "angin",
+                    "ja": "風"
+                }
+            }
+        },
+        {
+            "id": "ed92c1bb7133f5091aec0e0bcd7d4c00336ffc4363d8e09c3bd457f0d140f4a9",
+            "path": "images/ed92c1bb7133f5091aec0e0bcd7d4c00336ffc4363d8e09c3bd457f0d140f4a9.jpg",
+            "sha256": "ed92c1bb7133f5091aec0e0bcd7d4c00336ffc4363d8e09c3bd457f0d140f4a9",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:weather-cloud"],
+            "sourceSheet": "70ac27f110faaf960c36b0bcffbb1a2f50b037ea93bc01da3359cae76dba943f",
+            "sourceSha256": "70ac27f110faaf960c36b0bcffbb1a2f50b037ea93bc01da3359cae76dba943f",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "cloud",
+                    "de": "Wolke",
+                    "id": "awan",
+                    "ja": "雲"
+                }
+            }
+        },
+        {
+            "id": "a5534d8e61448a0ee4e945556d25bdb98b50719d8f730b36b7187cd29478f9fe",
+            "path": "images/a5534d8e61448a0ee4e945556d25bdb98b50719d8f730b36b7187cd29478f9fe.jpg",
+            "sha256": "a5534d8e61448a0ee4e945556d25bdb98b50719d8f730b36b7187cd29478f9fe",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:directions-left"],
+            "sourceSheet": "e3edc7e67f6ae0d0650692ddc2e99c3f0d21e0c8e9bb3e818884b1bc61a4c23b",
+            "sourceSha256": "e3edc7e67f6ae0d0650692ddc2e99c3f0d21e0c8e9bb3e818884b1bc61a4c23b",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "left",
+                    "de": "links",
+                    "id": "kiri",
+                    "ja": "左"
+                }
+            }
+        },
+        {
+            "id": "63e80b3f8ec649c1d3f2475c6496870879c5352b086eb43c8c10615a302347bb",
+            "path": "images/63e80b3f8ec649c1d3f2475c6496870879c5352b086eb43c8c10615a302347bb.jpg",
+            "sha256": "63e80b3f8ec649c1d3f2475c6496870879c5352b086eb43c8c10615a302347bb",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:directions-right"],
+            "sourceSheet": "7226ac98fa69ede8fc78362654ac37f8d3b8b03d5b8ffc0f0b2927b6fce1fb51",
+            "sourceSha256": "7226ac98fa69ede8fc78362654ac37f8d3b8b03d5b8ffc0f0b2927b6fce1fb51",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "right",
+                    "de": "rechts",
+                    "id": "kanan",
+                    "ja": "右"
+                }
+            }
+        },
+        {
+            "id": "51f803754b706194f683784a36082800596480f1829f0ec800cbe268085d4592",
+            "path": "images/51f803754b706194f683784a36082800596480f1829f0ec800cbe268085d4592.jpg",
+            "sha256": "51f803754b706194f683784a36082800596480f1829f0ec800cbe268085d4592",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:directions-north"],
+            "sourceSheet": "e754c7a30bf2549fecb9d74fe6136bcf1940779ecfc61be53a4a6bb095f58609",
+            "sourceSha256": "e754c7a30bf2549fecb9d74fe6136bcf1940779ecfc61be53a4a6bb095f58609",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "north",
+                    "de": "Norden",
+                    "id": "utara",
+                    "ja": "北"
+                }
+            }
+        },
+        {
+            "id": "4dd758267e57c73770fb99492cc0baebd5207b1d25c212eed743b0fb00ff49b8",
+            "path": "images/4dd758267e57c73770fb99492cc0baebd5207b1d25c212eed743b0fb00ff49b8.jpg",
+            "sha256": "4dd758267e57c73770fb99492cc0baebd5207b1d25c212eed743b0fb00ff49b8",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:directions-south"],
+            "sourceSheet": "ce0dbee4e8327e3218ea2ac1cb21c71cbc3bc7af28cac54b6fae96395d665b26",
+            "sourceSha256": "ce0dbee4e8327e3218ea2ac1cb21c71cbc3bc7af28cac54b6fae96395d665b26",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "south",
+                    "de": "Süden",
+                    "id": "selatan",
+                    "ja": "南"
+                }
+            }
+        },
+        {
+            "id": "78e10de907e534152f16caa88f9d9d1b72adf0ff8573fff346cb97953685ed08",
+            "path": "images/78e10de907e534152f16caa88f9d9d1b72adf0ff8573fff346cb97953685ed08.jpg",
+            "sha256": "78e10de907e534152f16caa88f9d9d1b72adf0ff8573fff346cb97953685ed08",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:seasons-spring"],
+            "sourceSheet": "47ff34217a2d0048e14dd0485638d6bc2b75876037d355b4edefa10d14286862",
+            "sourceSha256": "47ff34217a2d0048e14dd0485638d6bc2b75876037d355b4edefa10d14286862",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "spring",
+                    "de": "Frühling",
+                    "id": "musim semi",
+                    "ja": "春"
+                }
+            }
+        },
+        {
+            "id": "21aa3c307c49ab86360329549bdf6e9748d9ae9b85450d121b317ef7a9b86530",
+            "path": "images/21aa3c307c49ab86360329549bdf6e9748d9ae9b85450d121b317ef7a9b86530.jpg",
+            "sha256": "21aa3c307c49ab86360329549bdf6e9748d9ae9b85450d121b317ef7a9b86530",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:seasons-summer"],
+            "sourceSheet": "9eb9f9dbcf957cbbd5d2ef790c6b5db2e24f2a97081251cd5def308c69de16d3",
+            "sourceSha256": "9eb9f9dbcf957cbbd5d2ef790c6b5db2e24f2a97081251cd5def308c69de16d3",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "summer",
+                    "de": "Sommer",
+                    "id": "musim panas",
+                    "ja": "夏"
+                }
+            }
+        },
+        {
+            "id": "899bad6a32f3f688455347a815190559c4cced08910a67750b8cd1ae59a967ad",
+            "path": "images/899bad6a32f3f688455347a815190559c4cced08910a67750b8cd1ae59a967ad.jpg",
+            "sha256": "899bad6a32f3f688455347a815190559c4cced08910a67750b8cd1ae59a967ad",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:seasons-autumn"],
+            "sourceSheet": "346e574b39e048b0408e12d868d9711217381c9c817c85992ebf97dbb19652ba",
+            "sourceSha256": "346e574b39e048b0408e12d868d9711217381c9c817c85992ebf97dbb19652ba",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "autumn",
+                    "de": "Herbst",
+                    "id": "musim gugur",
+                    "ja": "秋"
+                }
+            }
+        },
+        {
+            "id": "e149e4ccdc18c79a52cfb85f91b00f79ddcab013eec5eb09983e94c1e5843676",
+            "path": "images/e149e4ccdc18c79a52cfb85f91b00f79ddcab013eec5eb09983e94c1e5843676.jpg",
+            "sha256": "e149e4ccdc18c79a52cfb85f91b00f79ddcab013eec5eb09983e94c1e5843676",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:seasons-winter"],
+            "sourceSheet": "37f8ede3e97153e2199582f356a6d7ac006368d88b893f5079d17993a4c2849d",
+            "sourceSha256": "37f8ede3e97153e2199582f356a6d7ac006368d88b893f5079d17993a4c2849d",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "winter",
+                    "de": "Winter",
+                    "id": "musim dingin",
+                    "ja": "冬"
+                }
+            }
+        },
+        {
+            "id": "7b6e93b1b243d6a4c3caa6bbc5bea6cc00fe4a644d5e0681f837158a98ab666a",
+            "path": "images/7b6e93b1b243d6a4c3caa6bbc5bea6cc00fe4a644d5e0681f837158a98ab666a.jpg",
+            "sha256": "7b6e93b1b243d6a4c3caa6bbc5bea6cc00fe4a644d5e0681f837158a98ab666a",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:clothing-shirt"],
+            "sourceSheet": "97638aa14c03bc917fb0ed7626f22e836694d9d7aeb7e18e51a66926db872efa",
+            "sourceSha256": "97638aa14c03bc917fb0ed7626f22e836694d9d7aeb7e18e51a66926db872efa",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "shirt",
+                    "de": "Hemd",
+                    "id": "kemeja",
+                    "ja": "シャツ"
+                }
+            }
+        },
+        {
+            "id": "7fceea2df46164067c6668f8328bdde6e23b1e1bcfcd67ed69cb41e1c1ed9161",
+            "path": "images/7fceea2df46164067c6668f8328bdde6e23b1e1bcfcd67ed69cb41e1c1ed9161.jpg",
+            "sha256": "7fceea2df46164067c6668f8328bdde6e23b1e1bcfcd67ed69cb41e1c1ed9161",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:clothing-dress"],
+            "sourceSheet": "e15166383209204426d327d3af67641556dbe967343c20bac9111b5ff96f5050",
+            "sourceSha256": "e15166383209204426d327d3af67641556dbe967343c20bac9111b5ff96f5050",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "dress",
+                    "de": "Kleid",
+                    "id": "gaun",
+                    "ja": "ワンピース"
+                }
+            }
+        },
+        {
+            "id": "d32c6b7276daba8ad1e98ac2673602eb44f15697914cc761de82c0df033bfc39",
+            "path": "images/d32c6b7276daba8ad1e98ac2673602eb44f15697914cc761de82c0df033bfc39.jpg",
+            "sha256": "d32c6b7276daba8ad1e98ac2673602eb44f15697914cc761de82c0df033bfc39",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:clothing-sock"],
+            "sourceSheet": "69324dd58f7cc56541e5d01ecc594c1038f97296a00e1543726f26c52a405f7e",
+            "sourceSha256": "69324dd58f7cc56541e5d01ecc594c1038f97296a00e1543726f26c52a405f7e",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "sock",
+                    "de": "Socke",
+                    "id": "kaus kaki",
+                    "ja": "靴下"
+                }
+            }
+        },
+        {
+            "id": "956b64915d0766ddc7a1259d4af6c961f8224a6690c9e05be16a51da846e5607",
+            "path": "images/956b64915d0766ddc7a1259d4af6c961f8224a6690c9e05be16a51da846e5607.jpg",
+            "sha256": "956b64915d0766ddc7a1259d4af6c961f8224a6690c9e05be16a51da846e5607",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:clothing-skirt"],
+            "sourceSheet": "04d2646b6d4bf5bdb4ac25f9822d639673782d26237505ae6e89303a0cd3b187",
+            "sourceSha256": "04d2646b6d4bf5bdb4ac25f9822d639673782d26237505ae6e89303a0cd3b187",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "skirt",
+                    "de": "Rock",
+                    "id": "rok",
+                    "ja": "スカート"
+                }
+            }
+        },
+        {
+            "id": "2cae132cd3073726843a4bbe6f22eb2429bba3c03d1046ae400ef1307f618e1d",
+            "path": "images/2cae132cd3073726843a4bbe6f22eb2429bba3c03d1046ae400ef1307f618e1d.jpg",
+            "sha256": "2cae132cd3073726843a4bbe6f22eb2429bba3c03d1046ae400ef1307f618e1d",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:tableware-cup"],
+            "sourceSheet": "bd10045187f844433d67f3cf6871ab73515f3be54cf0286f3831c9be3f81f8db",
+            "sourceSha256": "bd10045187f844433d67f3cf6871ab73515f3be54cf0286f3831c9be3f81f8db",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "cup",
+                    "de": "Tasse",
+                    "id": "cangkir",
+                    "ja": "カップ"
+                }
+            }
+        },
+        {
+            "id": "d0d5be8e6033ff221a06d111a6ebfc8e05b4c06de74d93873d6e788bb3447837",
+            "path": "images/d0d5be8e6033ff221a06d111a6ebfc8e05b4c06de74d93873d6e788bb3447837.jpg",
+            "sha256": "d0d5be8e6033ff221a06d111a6ebfc8e05b4c06de74d93873d6e788bb3447837",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:tableware-plate"],
+            "sourceSheet": "3d0d5a095ba4223a15d8ddbbae3808edd79dcfe9ae1a4a61ab503d02d6aebcd2",
+            "sourceSha256": "3d0d5a095ba4223a15d8ddbbae3808edd79dcfe9ae1a4a61ab503d02d6aebcd2",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "plate",
+                    "de": "Teller",
+                    "id": "piring",
+                    "ja": "皿"
+                }
+            }
+        },
+        {
+            "id": "f1bbef936a57ab0bae363493f0764654c6acbcb41b201d26c8dde1f2d9b57954",
+            "path": "images/f1bbef936a57ab0bae363493f0764654c6acbcb41b201d26c8dde1f2d9b57954.jpg",
+            "sha256": "f1bbef936a57ab0bae363493f0764654c6acbcb41b201d26c8dde1f2d9b57954",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:tableware-spoon"],
+            "sourceSheet": "6e8d2d2dcacf8116235695f3489c1c9ffc9ac2d7d635be43b61d6d5db7dd7a67",
+            "sourceSha256": "6e8d2d2dcacf8116235695f3489c1c9ffc9ac2d7d635be43b61d6d5db7dd7a67",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "spoon",
+                    "de": "Löffel",
+                    "id": "sendok",
+                    "ja": "スプーン"
+                }
+            }
+        },
+        {
+            "id": "f16e6273cf64f2e4d542aebd5cccf42158893d09d341e5d2fab824119ad52c05",
+            "path": "images/f16e6273cf64f2e4d542aebd5cccf42158893d09d341e5d2fab824119ad52c05.jpg",
+            "sha256": "f16e6273cf64f2e4d542aebd5cccf42158893d09d341e5d2fab824119ad52c05",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:tableware-fork"],
+            "sourceSheet": "4cfa44335073b1bacff4534329063ad27c6c9d802a6b81335877c3f08f4cc522",
+            "sourceSha256": "4cfa44335073b1bacff4534329063ad27c6c9d802a6b81335877c3f08f4cc522",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "fork",
+                    "de": "Gabel",
+                    "id": "garpu",
+                    "ja": "フォーク"
+                }
+            }
+        },
+        {
+            "id": "0bfe36fe90dcb6f82600efb2d069bd09bb4fbc475d85db8f6268bd2fa630ecc5",
+            "path": "images/0bfe36fe90dcb6f82600efb2d069bd09bb4fbc475d85db8f6268bd2fa630ecc5.jpg",
+            "sha256": "0bfe36fe90dcb6f82600efb2d069bd09bb4fbc475d85db8f6268bd2fa630ecc5",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:places-library"],
+            "sourceSheet": "22e2b014be439538fba232c127e1883815d306667c9bd5ec6415e9b9023de3cf",
+            "sourceSha256": "22e2b014be439538fba232c127e1883815d306667c9bd5ec6415e9b9023de3cf",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "library",
+                    "de": "Bibliothek",
+                    "id": "perpustakaan",
+                    "ja": "図書館"
+                }
+            }
+        },
+        {
+            "id": "b7fa1f434b6ca99c474193e483280ddf12fd47f5c859d412178625c3e7ac523d",
+            "path": "images/b7fa1f434b6ca99c474193e483280ddf12fd47f5c859d412178625c3e7ac523d.jpg",
+            "sha256": "b7fa1f434b6ca99c474193e483280ddf12fd47f5c859d412178625c3e7ac523d",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:places-hospital"],
+            "sourceSheet": "0155473b9a26cf02b43729695c83612b140c903b38583afd0389f3758fc073c1",
+            "sourceSha256": "0155473b9a26cf02b43729695c83612b140c903b38583afd0389f3758fc073c1",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "hospital",
+                    "de": "Krankenhaus",
+                    "id": "rumah sakit",
+                    "ja": "病院"
+                }
+            }
+        },
+        {
+            "id": "d8019808784508497ee3d1cc35c0424fa1916d5b5c85e74f37076861c1583114",
+            "path": "images/d8019808784508497ee3d1cc35c0424fa1916d5b5c85e74f37076861c1583114.jpg",
+            "sha256": "d8019808784508497ee3d1cc35c0424fa1916d5b5c85e74f37076861c1583114",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:places-supermarket"],
+            "sourceSheet": "4ce37bc7cbeb704efbb284ab7f41218d2c2462fc9a645a908d3aa2384b8f8cdc",
+            "sourceSha256": "4ce37bc7cbeb704efbb284ab7f41218d2c2462fc9a645a908d3aa2384b8f8cdc",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "supermarket",
+                    "de": "Supermarkt",
+                    "id": "supermarket",
+                    "ja": "スーパー"
+                }
+            }
+        },
+        {
+            "id": "d1548873f5db0e13114ce655f97fa53aa147d96b132f252051aff971186a5def",
+            "path": "images/d1548873f5db0e13114ce655f97fa53aa147d96b132f252051aff971186a5def.jpg",
+            "sha256": "d1548873f5db0e13114ce655f97fa53aa147d96b132f252051aff971186a5def",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:places-restaurant"],
+            "sourceSheet": "3ef05fd6fddf0945b23d1df99c161c46221159b87e76abeb2841bbac54b84b85",
+            "sourceSha256": "3ef05fd6fddf0945b23d1df99c161c46221159b87e76abeb2841bbac54b84b85",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "restaurant",
+                    "de": "Restaurant",
+                    "id": "restoran",
+                    "ja": "レストラン"
+                }
+            }
+        },
+        {
+            "id": "6f61243f02ebc91f3b3ca0aed1e3a8d3f591c39201f95b1c3c5fe6177dcda845",
+            "path": "images/6f61243f02ebc91f3b3ca0aed1e3a8d3f591c39201f95b1c3c5fe6177dcda845.jpg",
+            "sha256": "6f61243f02ebc91f3b3ca0aed1e3a8d3f591c39201f95b1c3c5fe6177dcda845",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:household-wash"],
+            "sourceSheet": "c0f9d4591d840048ca30ae55dba1b6209da828d16b5930c8563a5687912f3bcc",
+            "sourceSha256": "c0f9d4591d840048ca30ae55dba1b6209da828d16b5930c8563a5687912f3bcc",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "wash",
+                    "de": "waschen",
+                    "id": "mencuci",
+                    "ja": "洗う"
+                }
+            }
+        },
+        {
+            "id": "be2e0469e0ff2472cd625ab0a4bb46afa06fd1946f05b919777814a070e64c16",
+            "path": "images/be2e0469e0ff2472cd625ab0a4bb46afa06fd1946f05b919777814a070e64c16.jpg",
+            "sha256": "be2e0469e0ff2472cd625ab0a4bb46afa06fd1946f05b919777814a070e64c16",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:household-cook"],
+            "sourceSheet": "f2c6a12506664a48664eead253b4783c788d5ebf9f2e53efa8600507b5c49369",
+            "sourceSha256": "f2c6a12506664a48664eead253b4783c788d5ebf9f2e53efa8600507b5c49369",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "cook",
+                    "de": "kochen",
+                    "id": "memasak",
+                    "ja": "料理する"
+                }
+            }
+        },
+        {
+            "id": "4f86766b3d1007d34a978a2c86a2656a5011a778fb591446ed88484b3770bea6",
+            "path": "images/4f86766b3d1007d34a978a2c86a2656a5011a778fb591446ed88484b3770bea6.jpg",
+            "sha256": "4f86766b3d1007d34a978a2c86a2656a5011a778fb591446ed88484b3770bea6",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:household-clean"],
+            "sourceSheet": "ea1ecdb2bc0c8cfe821c1c06ffea464747ba8599797639f469d824df4ec26877",
+            "sourceSha256": "ea1ecdb2bc0c8cfe821c1c06ffea464747ba8599797639f469d824df4ec26877",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "clean",
+                    "de": "reinigen",
+                    "id": "membersihkan",
+                    "ja": "掃除する"
+                }
+            }
+        },
+        {
+            "id": "869d01f721ec3be73f7fd12e4840d6c01e751960dad793ea3662d8545565faae",
+            "path": "images/869d01f721ec3be73f7fd12e4840d6c01e751960dad793ea3662d8545565faae.jpg",
+            "sha256": "869d01f721ec3be73f7fd12e4840d6c01e751960dad793ea3662d8545565faae",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:household-dry"],
+            "sourceSheet": "f3f0f1fc98960e0fa18c9e93e204f8c73a6163f9eebff26fd68e2e7dd80d7360",
+            "sourceSha256": "f3f0f1fc98960e0fa18c9e93e204f8c73a6163f9eebff26fd68e2e7dd80d7360",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "dry",
+                    "de": "trocknen",
+                    "id": "mengeringkan",
+                    "ja": "乾かす"
+                }
+            }
+        },
+        {
+            "id": "5ee7dba10f99070569dda5a99f2893d5052822a3e1ab131076848db695c19666",
+            "path": "images/5ee7dba10f99070569dda5a99f2893d5052822a3e1ab131076848db695c19666.jpg",
+            "sha256": "5ee7dba10f99070569dda5a99f2893d5052822a3e1ab131076848db695c19666",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:care-soap"],
+            "sourceSheet": "c01b4c379c108a18d77548cae100fb04be581993bff74507e88824ffe3192e2b",
+            "sourceSha256": "c01b4c379c108a18d77548cae100fb04be581993bff74507e88824ffe3192e2b",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "soap",
+                    "de": "Seife",
+                    "id": "sabun",
+                    "ja": "石けん"
+                }
+            }
+        },
+        {
+            "id": "ddb38dc35adecd25df039d9b1feec21f9ddd7c8551c0739f7f16bae269506853",
+            "path": "images/ddb38dc35adecd25df039d9b1feec21f9ddd7c8551c0739f7f16bae269506853.jpg",
+            "sha256": "ddb38dc35adecd25df039d9b1feec21f9ddd7c8551c0739f7f16bae269506853",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:care-towel"],
+            "sourceSheet": "79bb62c0dfffd336318bb52059be9dc94a949bac3a57a5b7c08bd9a399614657",
+            "sourceSha256": "79bb62c0dfffd336318bb52059be9dc94a949bac3a57a5b7c08bd9a399614657",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "towel",
+                    "de": "Handtuch",
+                    "id": "handuk",
+                    "ja": "タオル"
+                }
+            }
+        },
+        {
+            "id": "0f297a88ca5ae6857e3dae2dd1c65d77bbd4fb29eb182bd461732d60a875b33e",
+            "path": "images/0f297a88ca5ae6857e3dae2dd1c65d77bbd4fb29eb182bd461732d60a875b33e.jpg",
+            "sha256": "0f297a88ca5ae6857e3dae2dd1c65d77bbd4fb29eb182bd461732d60a875b33e",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:care-toothbrush"],
+            "sourceSheet": "6801b340f06c74ab669a6680d43ddfdd9fc618f0277e6dc7c1ee7bbd6bd5fcd0",
+            "sourceSha256": "6801b340f06c74ab669a6680d43ddfdd9fc618f0277e6dc7c1ee7bbd6bd5fcd0",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "toothbrush",
+                    "de": "Zahnbürste",
+                    "id": "sikat gigi",
+                    "ja": "歯ブラシ"
+                }
+            }
+        },
+        {
+            "id": "a4d8fa980bdbf1137b8522cff8ab02a42543e6c5ba287188eb8a21872db31f58",
+            "path": "images/a4d8fa980bdbf1137b8522cff8ab02a42543e6c5ba287188eb8a21872db31f58.jpg",
+            "sha256": "a4d8fa980bdbf1137b8522cff8ab02a42543e6c5ba287188eb8a21872db31f58",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:care-toothpaste"],
+            "sourceSheet": "099f9a089a3487166560cc167d0640f4d53a25ce38dd45abebba83e006b56e60",
+            "sourceSha256": "099f9a089a3487166560cc167d0640f4d53a25ce38dd45abebba83e006b56e60",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "toothpaste",
+                    "de": "Zahnpasta",
+                    "id": "pasta gigi",
+                    "ja": "歯磨き粉"
+                }
+            }
+        },
+        {
+            "id": "4e65284c22302270a048519a368dfc82f791dd6054431714afcba26702b58801",
+            "path": "images/4e65284c22302270a048519a368dfc82f791dd6054431714afcba26702b58801.jpg",
+            "sha256": "4e65284c22302270a048519a368dfc82f791dd6054431714afcba26702b58801",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:transport-airplane"],
+            "sourceSheet": "62bda51619e2d3c2462ece374f0a0af29b5531a4c0020f3a217187c87cd869ac",
+            "sourceSha256": "62bda51619e2d3c2462ece374f0a0af29b5531a4c0020f3a217187c87cd869ac",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "airplane",
+                    "de": "Flugzeug",
+                    "id": "pesawat terbang",
+                    "ja": "飛行機"
+                }
+            }
+        },
+        {
+            "id": "a22dba4de3a04c62150fe9bb389e1357a0b542ac7341c2442a939199ddccc572",
+            "path": "images/a22dba4de3a04c62150fe9bb389e1357a0b542ac7341c2442a939199ddccc572.jpg",
+            "sha256": "a22dba4de3a04c62150fe9bb389e1357a0b542ac7341c2442a939199ddccc572",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:transport-boat"],
+            "sourceSheet": "dc7a54ca0ee2a6e5213b9547a85b496def433d99fb5c136c5c3cac5120e55483",
+            "sourceSha256": "dc7a54ca0ee2a6e5213b9547a85b496def433d99fb5c136c5c3cac5120e55483",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "boat",
+                    "de": "Boot",
+                    "id": "perahu",
+                    "ja": "ボート"
+                }
+            }
+        },
+        {
+            "id": "a487981aefd31419b6293eb8a6d5ac3277118619e91f03692625ffe05b0a5035",
+            "path": "images/a487981aefd31419b6293eb8a6d5ac3277118619e91f03692625ffe05b0a5035.jpg",
+            "sha256": "a487981aefd31419b6293eb8a6d5ac3277118619e91f03692625ffe05b0a5035",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:transport-taxi"],
+            "sourceSheet": "b2dd47b1f39bc4f32e5f51c271614e381f7073506cb5d711a9e0a2230fe8e4d6",
+            "sourceSha256": "b2dd47b1f39bc4f32e5f51c271614e381f7073506cb5d711a9e0a2230fe8e4d6",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "taxi",
+                    "de": "Taxi",
+                    "id": "taksi",
+                    "ja": "タクシー"
+                }
+            }
+        },
+        {
+            "id": "615d56f4e7098ae0dd298912634173a4ee91ced77f5b18e71eccb4f9e3c3fd87",
+            "path": "images/615d56f4e7098ae0dd298912634173a4ee91ced77f5b18e71eccb4f9e3c3fd87.jpg",
+            "sha256": "615d56f4e7098ae0dd298912634173a4ee91ced77f5b18e71eccb4f9e3c3fd87",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:transport-motorcycle"],
+            "sourceSheet": "33513f46b6285383c135355db335352785f4f034851a0c94a312e4d841e700e3",
+            "sourceSha256": "33513f46b6285383c135355db335352785f4f034851a0c94a312e4d841e700e3",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "motorcycle",
+                    "de": "Motorrad",
+                    "id": "sepeda motor",
+                    "ja": "オートバイ"
+                }
+            }
+        },
+        {
+            "id": "e5a4457ca0f5ae97c354edd2b9129ed3760933595f22bbcf50d670896734fc32",
+            "path": "images/e5a4457ca0f5ae97c354edd2b9129ed3760933595f22bbcf50d670896734fc32.jpg",
+            "sha256": "e5a4457ca0f5ae97c354edd2b9129ed3760933595f22bbcf50d670896734fc32",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:school-pencil"],
+            "sourceSheet": "2a6d7af9d81c623d0658dd8bd915aa54bbe7734c66e9771151dc206dfea0a2ff",
+            "sourceSha256": "2a6d7af9d81c623d0658dd8bd915aa54bbe7734c66e9771151dc206dfea0a2ff",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "pencil",
+                    "de": "Bleistift",
+                    "id": "pensil",
+                    "ja": "鉛筆"
+                }
+            }
+        },
+        {
+            "id": "640f14b3e6420cd18018609c3248d67fd7588909a12728a692979b6ad1b5c550",
+            "path": "images/640f14b3e6420cd18018609c3248d67fd7588909a12728a692979b6ad1b5c550.jpg",
+            "sha256": "640f14b3e6420cd18018609c3248d67fd7588909a12728a692979b6ad1b5c550",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:school-pen"],
+            "sourceSheet": "8bed9d3416b5e6e42e076a211a15825e0c5d14e43c9a00dd0fd4a07074e81c44",
+            "sourceSha256": "8bed9d3416b5e6e42e076a211a15825e0c5d14e43c9a00dd0fd4a07074e81c44",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "pen",
+                    "de": "Stift",
+                    "id": "pena",
+                    "ja": "ペン"
+                }
+            }
+        },
+        {
+            "id": "55b28b931b8eaa576bee316a0d940e7cd4f8e148d25511b810d845e6a2cae8b4",
+            "path": "images/55b28b931b8eaa576bee316a0d940e7cd4f8e148d25511b810d845e6a2cae8b4.jpg",
+            "sha256": "55b28b931b8eaa576bee316a0d940e7cd4f8e148d25511b810d845e6a2cae8b4",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:school-notebook"],
+            "sourceSheet": "c30c51f9a3b8ab136a950269dae9cc1e43482963c37fbfb7e6c9e4bb4331fc18",
+            "sourceSha256": "c30c51f9a3b8ab136a950269dae9cc1e43482963c37fbfb7e6c9e4bb4331fc18",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "notebook",
+                    "de": "Notizbuch",
+                    "id": "buku catatan",
+                    "ja": "ノート"
+                }
+            }
+        },
+        {
+            "id": "cb1cec061bc9bc9bbf10691885f98cdbbf3ed0a6549c9410db3af7f494d2f07c",
+            "path": "images/cb1cec061bc9bc9bbf10691885f98cdbbf3ed0a6549c9410db3af7f494d2f07c.jpg",
+            "sha256": "cb1cec061bc9bc9bbf10691885f98cdbbf3ed0a6549c9410db3af7f494d2f07c",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:school-ruler"],
+            "sourceSheet": "af47fdc5e1237bf930cbc3f05381f7253eeb8eb81dd9c9f682b196e161a3f888",
+            "sourceSha256": "af47fdc5e1237bf930cbc3f05381f7253eeb8eb81dd9c9f682b196e161a3f888",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "ruler",
+                    "de": "Lineal",
+                    "id": "penggaris",
+                    "ja": "定規"
+                }
+            }
+        },
+        {
+            "id": "6f0852b9f154faaf3827e19a4980e896394654523fd567097bb53991e10e0f8e",
+            "path": "images/6f0852b9f154faaf3827e19a4980e896394654523fd567097bb53991e10e0f8e.jpg",
+            "sha256": "6f0852b9f154faaf3827e19a4980e896394654523fd567097bb53991e10e0f8e",
+            "width": 1536,
+            "height": 1024,
+            "entryIds": ["ja:word:animals-rabbit"],
+            "sourceSheet": "c05982e5cf93f7a87bc225955761a731b6a86eeb098a37813374e81d94cf7839",
+            "sourceSha256": "c05982e5cf93f7a87bc225955761a731b6a86eeb098a37813374e81d94cf7839",
+            "crop": [0, 0, 1536, 1024],
+            "metadata": {
+                "labels": {
+                    "en": "rabbit",
+                    "de": "Kaninchen",
+                    "id": "kelinci",
+                    "ja": "兎"
+                }
+            }
+        },
+        {
+            "id": "9b88605361208bac4a4654e8573205eabd40c480d5943ae862bc52310fbaea77",
+            "path": "images/9b88605361208bac4a4654e8573205eabd40c480d5943ae862bc52310fbaea77.jpg",
+            "sha256": "9b88605361208bac4a4654e8573205eabd40c480d5943ae862bc52310fbaea77",
+            "width": 1536,
+            "height": 1024,
+            "entryIds": ["ja:word:animals-horse"],
+            "sourceSheet": "f342e45060d5c5ce57acbc056cc560f10637bbf3f776a27793d6db94f59722a9",
+            "sourceSha256": "f342e45060d5c5ce57acbc056cc560f10637bbf3f776a27793d6db94f59722a9",
+            "crop": [0, 0, 1536, 1024],
+            "metadata": {
+                "labels": {
+                    "en": "horse",
+                    "de": "Pferd",
+                    "id": "kuda",
+                    "ja": "馬"
+                }
+            }
+        },
+        {
+            "id": "70b1e74659ff92119f3973e4ed54f018766e7054b7a72134a592501ae6cc9d50",
+            "path": "images/70b1e74659ff92119f3973e4ed54f018766e7054b7a72134a592501ae6cc9d50.jpg",
+            "sha256": "70b1e74659ff92119f3973e4ed54f018766e7054b7a72134a592501ae6cc9d50",
+            "width": 1536,
+            "height": 1024,
+            "entryIds": ["ja:word:animals-cow"],
+            "sourceSheet": "a79acaf36cfe4e5d89715d64b0b58cd933eec1f08e9b27c7f0fd8beac076f7b9",
+            "sourceSha256": "a79acaf36cfe4e5d89715d64b0b58cd933eec1f08e9b27c7f0fd8beac076f7b9",
+            "crop": [0, 0, 1536, 1024],
+            "metadata": {
+                "labels": {
+                    "en": "cattle",
+                    "de": "Rind",
+                    "id": "sapi",
+                    "ja": "牛"
+                }
+            }
+        },
+        {
+            "id": "9cefeb076e52707c55bd719f6cfbcd9a3b4e3115c425578e662789753ae2cf8c",
+            "path": "images/9cefeb076e52707c55bd719f6cfbcd9a3b4e3115c425578e662789753ae2cf8c.jpg",
+            "sha256": "9cefeb076e52707c55bd719f6cfbcd9a3b4e3115c425578e662789753ae2cf8c",
+            "width": 1536,
+            "height": 1024,
+            "entryIds": ["ja:word:animals-pig"],
+            "sourceSheet": "4ad6c8829197ba500ec402f95f423d5191e9f1bde3f17e0bf3a7ed33d3478569",
+            "sourceSha256": "4ad6c8829197ba500ec402f95f423d5191e9f1bde3f17e0bf3a7ed33d3478569",
+            "crop": [0, 0, 1536, 1024],
+            "metadata": {
+                "labels": {
+                    "en": "pig",
+                    "de": "Schwein",
+                    "id": "babi",
+                    "ja": "豚"
+                }
+            }
+        },
+        {
+            "id": "90b8f15220626a4e4e1fb21e868fda45297ac9284e57699aa5be0f053ea6816a",
+            "path": "images/90b8f15220626a4e4e1fb21e868fda45297ac9284e57699aa5be0f053ea6816a.jpg",
+            "sha256": "90b8f15220626a4e4e1fb21e868fda45297ac9284e57699aa5be0f053ea6816a",
+            "width": 1536,
+            "height": 1024,
+            "entryIds": ["ja:word:furnishings-sofa"],
+            "sourceSheet": "0e8fcc984f72306177fc0ae5e99825016c9c25d77f11c6501e62cfbe69d3db91",
+            "sourceSha256": "0e8fcc984f72306177fc0ae5e99825016c9c25d77f11c6501e62cfbe69d3db91",
+            "crop": [0, 0, 1536, 1024],
+            "metadata": {
+                "labels": {
+                    "en": "sofa",
+                    "de": "Sofa",
+                    "id": "sofa",
+                    "ja": "ソファ"
+                }
+            }
+        },
+        {
+            "id": "fd14877ae6b0690f7499a9453764883f3f7b79e91cebcaee2bb66e17b094cc42",
+            "path": "images/fd14877ae6b0690f7499a9453764883f3f7b79e91cebcaee2bb66e17b094cc42.jpg",
+            "sha256": "fd14877ae6b0690f7499a9453764883f3f7b79e91cebcaee2bb66e17b094cc42",
+            "width": 1536,
+            "height": 1024,
+            "entryIds": ["ja:word:furnishings-lamp"],
+            "sourceSheet": "7feab6ba0041e1ee903ac2c3841767aa973bc3b740735bf94cc1980cc1227ed8",
+            "sourceSha256": "7feab6ba0041e1ee903ac2c3841767aa973bc3b740735bf94cc1980cc1227ed8",
+            "crop": [0, 0, 1536, 1024],
+            "metadata": {
+                "labels": {
+                    "en": "lamp",
+                    "de": "Lampe",
+                    "id": "lampu",
+                    "ja": "ランプ"
+                }
+            }
+        },
+        {
+            "id": "692896b0af78fea77a2fbcf43ec3f775583184858ba26103628f4930e792a51d",
+            "path": "images/692896b0af78fea77a2fbcf43ec3f775583184858ba26103628f4930e792a51d.jpg",
+            "sha256": "692896b0af78fea77a2fbcf43ec3f775583184858ba26103628f4930e792a51d",
+            "width": 1536,
+            "height": 1024,
+            "entryIds": ["ja:word:furnishings-mirror"],
+            "sourceSheet": "1ae20705f7aa77dcb0db5b94ad4148ba5f30eba14b14351f7c86ee522e0c9d0a",
+            "sourceSha256": "1ae20705f7aa77dcb0db5b94ad4148ba5f30eba14b14351f7c86ee522e0c9d0a",
+            "crop": [0, 0, 1536, 1024],
+            "metadata": {
+                "labels": {
+                    "en": "mirror",
+                    "de": "Spiegel",
+                    "id": "cermin",
+                    "ja": "鏡"
+                }
+            }
+        },
+        {
+            "id": "288ab747b7c6f0c92b845abaae0e32c1f4be104df7160ca1acda709be672f8e4",
+            "path": "images/288ab747b7c6f0c92b845abaae0e32c1f4be104df7160ca1acda709be672f8e4.jpg",
+            "sha256": "288ab747b7c6f0c92b845abaae0e32c1f4be104df7160ca1acda709be672f8e4",
+            "width": 1536,
+            "height": 1024,
+            "entryIds": ["ja:word:furnishings-pillow"],
+            "sourceSheet": "43b640968f12e03466c72641ad8e22d0cbcab76337c315577653b7f20c9e1c7f",
+            "sourceSha256": "43b640968f12e03466c72641ad8e22d0cbcab76337c315577653b7f20c9e1c7f",
+            "crop": [0, 0, 1536, 1024],
+            "metadata": {
+                "labels": {
+                    "en": "pillow",
+                    "de": "Kopfkissen",
+                    "id": "bantal",
+                    "ja": "枕"
+                }
+            }
+        },
+        {
+            "id": "80a9205b5b80703c0c0ccf8f727b3302d1127c9c32dd2327d00de3517c16063d",
+            "path": "images/80a9205b5b80703c0c0ccf8f727b3302d1127c9c32dd2327d00de3517c16063d.jpg",
+            "sha256": "80a9205b5b80703c0c0ccf8f727b3302d1127c9c32dd2327d00de3517c16063d",
+            "width": 1536,
+            "height": 1024,
+            "entryIds": ["ja:word:fruit-peach"],
+            "sourceSheet": "c97c92d0b95035534457580581b4ea39b036f8330ebfe205ace06b8c5687dbf8",
+            "sourceSha256": "c97c92d0b95035534457580581b4ea39b036f8330ebfe205ace06b8c5687dbf8",
+            "crop": [0, 0, 1536, 1024],
+            "metadata": {
+                "labels": {
+                    "en": "peach",
+                    "de": "Pfirsich",
+                    "id": "persik",
+                    "ja": "桃"
+                }
+            }
+        },
+        {
+            "id": "c206f325a022dceaa8fc788e433ea6900419b3f2a2822708e5b25c00d0a31694",
+            "path": "images/c206f325a022dceaa8fc788e433ea6900419b3f2a2822708e5b25c00d0a31694.jpg",
+            "sha256": "c206f325a022dceaa8fc788e433ea6900419b3f2a2822708e5b25c00d0a31694",
+            "width": 1536,
+            "height": 1024,
+            "entryIds": ["ja:word:fruit-pear"],
+            "sourceSheet": "7cdf398a1d5db2bb8b3c104f5419911189d9c8ae21e14a5fffcbabf59340e075",
+            "sourceSha256": "7cdf398a1d5db2bb8b3c104f5419911189d9c8ae21e14a5fffcbabf59340e075",
+            "crop": [0, 0, 1536, 1024],
+            "metadata": {
+                "labels": {
+                    "en": "Asian pear",
+                    "de": "Nashi-Birne",
+                    "id": "pir Asia",
+                    "ja": "梨"
+                }
+            }
+        },
+        {
+            "id": "a9157679e4df8dfa3605d51d5e94aae4c4130500238c3569cfd77bc139b6197e",
+            "path": "images/a9157679e4df8dfa3605d51d5e94aae4c4130500238c3569cfd77bc139b6197e.jpg",
+            "sha256": "a9157679e4df8dfa3605d51d5e94aae4c4130500238c3569cfd77bc139b6197e",
+            "width": 1536,
+            "height": 1024,
+            "entryIds": ["ja:word:fruit-watermelon"],
+            "sourceSheet": "b20f95ebc374c6cc586f41469d374bf27c78c7bdc62bc3f60d14d4dca9ad0f16",
+            "sourceSha256": "b20f95ebc374c6cc586f41469d374bf27c78c7bdc62bc3f60d14d4dca9ad0f16",
+            "crop": [0, 0, 1536, 1024],
+            "metadata": {
+                "labels": {
+                    "en": "watermelon",
+                    "de": "Wassermelone",
+                    "id": "semangka",
+                    "ja": "スイカ"
+                }
+            }
+        },
+        {
+            "id": "1a77381aa6fe4fccfbaba23dcc84ecfc6300250e0fe7d02c575072e88f79d75e",
+            "path": "images/1a77381aa6fe4fccfbaba23dcc84ecfc6300250e0fe7d02c575072e88f79d75e.jpg",
+            "sha256": "1a77381aa6fe4fccfbaba23dcc84ecfc6300250e0fe7d02c575072e88f79d75e",
+            "width": 1536,
+            "height": 1024,
+            "entryIds": ["ja:word:fruit-pineapple"],
+            "sourceSheet": "5c277dc5f7fe536dd6fce218574b66d70590de87f2c9e337f6a7c13f8146c8e7",
+            "sourceSha256": "5c277dc5f7fe536dd6fce218574b66d70590de87f2c9e337f6a7c13f8146c8e7",
+            "crop": [0, 0, 1536, 1024],
+            "metadata": {
+                "labels": {
+                    "en": "pineapple",
+                    "de": "Ananas",
+                    "id": "nanas",
+                    "ja": "パイナップル"
+                }
+            }
+        },
+        {
+            "id": "2407a2a0dbf2e7f7cdabb49e05256b9362d4a7c0247bdba9ac38c669ee83e6ed",
+            "path": "images/2407a2a0dbf2e7f7cdabb49e05256b9362d4a7c0247bdba9ac38c669ee83e6ed.jpg",
+            "sha256": "2407a2a0dbf2e7f7cdabb49e05256b9362d4a7c0247bdba9ac38c669ee83e6ed",
+            "width": 1536,
+            "height": 1024,
+            "entryIds": ["ja:word:kitchen-bowl"],
+            "sourceSheet": "77d431e253a010b74520d68ffe141d9709f52ba155eb6d24b19c9e4e8a86551e",
+            "sourceSha256": "77d431e253a010b74520d68ffe141d9709f52ba155eb6d24b19c9e4e8a86551e",
+            "crop": [0, 0, 1536, 1024],
+            "metadata": {
+                "labels": {
+                    "en": "bowl",
+                    "de": "Schüssel",
+                    "id": "mangkuk",
+                    "ja": "ボウル"
+                }
+            }
+        },
+        {
+            "id": "53f92c37463e3a7011150be115bc1421ab69f4920dd2a37793c7c5db4ea50b63",
+            "path": "images/53f92c37463e3a7011150be115bc1421ab69f4920dd2a37793c7c5db4ea50b63.jpg",
+            "sha256": "53f92c37463e3a7011150be115bc1421ab69f4920dd2a37793c7c5db4ea50b63",
+            "width": 1536,
+            "height": 1024,
+            "entryIds": ["ja:word:kitchen-knife"],
+            "sourceSheet": "8b4fe19cbb69236e2b4213bd61a68e0b0007782a9801f0ddd257ea86c485e395",
+            "sourceSha256": "8b4fe19cbb69236e2b4213bd61a68e0b0007782a9801f0ddd257ea86c485e395",
+            "crop": [0, 0, 1536, 1024],
+            "metadata": {
+                "labels": {
+                    "en": "knife",
+                    "de": "Messer",
+                    "id": "pisau",
+                    "ja": "ナイフ"
+                }
+            }
+        },
+        {
+            "id": "3350188d3bb7e18041d83c11309e4960a8bff4b9b76877eada74a55e32e4f3af",
+            "path": "images/3350188d3bb7e18041d83c11309e4960a8bff4b9b76877eada74a55e32e4f3af.jpg",
+            "sha256": "3350188d3bb7e18041d83c11309e4960a8bff4b9b76877eada74a55e32e4f3af",
+            "width": 1536,
+            "height": 1024,
+            "entryIds": ["ja:word:kitchen-pot"],
+            "sourceSheet": "50954f8ab0aab7723521e584d98c9b960c3af2fdad3601f8f83cbe61fb3d26ca",
+            "sourceSha256": "50954f8ab0aab7723521e584d98c9b960c3af2fdad3601f8f83cbe61fb3d26ca",
+            "crop": [0, 0, 1536, 1024],
+            "metadata": {
+                "labels": {
+                    "en": "pot",
+                    "de": "Kochtopf",
+                    "id": "panci",
+                    "ja": "鍋"
+                }
+            }
+        },
+        {
+            "id": "6f9fd831f127fe46398e9cc9d6455bd4afc04ed9ac7b1371bd8a72843fb816d0",
+            "path": "images/6f9fd831f127fe46398e9cc9d6455bd4afc04ed9ac7b1371bd8a72843fb816d0.jpg",
+            "sha256": "6f9fd831f127fe46398e9cc9d6455bd4afc04ed9ac7b1371bd8a72843fb816d0",
+            "width": 1536,
+            "height": 1024,
+            "entryIds": ["ja:word:kitchen-pan"],
+            "sourceSheet": "75fe4f666723b0a52a5adafdfba06e8d4bc0d32dfa96b7303ef0756609512710",
+            "sourceSha256": "75fe4f666723b0a52a5adafdfba06e8d4bc0d32dfa96b7303ef0756609512710",
+            "crop": [0, 0, 1536, 1024],
+            "metadata": {
+                "labels": {
+                    "en": "frying pan",
+                    "de": "Bratpfanne",
+                    "id": "wajan penggorengan",
+                    "ja": "フライパン"
+                }
+            }
+        },
+        {
+            "id": "ddbd5ae8d3f303fc0067dbf15f93b48fc266722c9e1e50fb54c813341780fa75",
+            "path": "images/ddbd5ae8d3f303fc0067dbf15f93b48fc266722c9e1e50fb54c813341780fa75.jpg",
+            "sha256": "ddbd5ae8d3f303fc0067dbf15f93b48fc266722c9e1e50fb54c813341780fa75",
+            "width": 1536,
+            "height": 1024,
+            "entryIds": ["ja:word:vegetables-cabbage"],
+            "sourceSheet": "77546ac7dfb05d21018e14f183f0143af353ba2bf336825712331a3d657d6dc0",
+            "sourceSha256": "77546ac7dfb05d21018e14f183f0143af353ba2bf336825712331a3d657d6dc0",
+            "crop": [0, 0, 1536, 1024],
+            "metadata": {
+                "labels": {
+                    "en": "cabbage",
+                    "de": "Kohl",
+                    "id": "kubis",
+                    "ja": "キャベツ"
+                }
+            }
+        },
+        {
+            "id": "7be25530e24cdb42f24b0b92247d7c8078edf304099a56adab0bbab4cf075395",
+            "path": "images/7be25530e24cdb42f24b0b92247d7c8078edf304099a56adab0bbab4cf075395.jpg",
+            "sha256": "7be25530e24cdb42f24b0b92247d7c8078edf304099a56adab0bbab4cf075395",
+            "width": 1536,
+            "height": 1024,
+            "entryIds": ["ja:word:vegetables-mushroom"],
+            "sourceSheet": "584eeade38f02dae02928fc10a1144830e30a437e2358fc02d8e1d719a62b47c",
+            "sourceSha256": "584eeade38f02dae02928fc10a1144830e30a437e2358fc02d8e1d719a62b47c",
+            "crop": [0, 0, 1536, 1024],
+            "metadata": {
+                "labels": {
+                    "en": "mushroom",
+                    "de": "Pilz",
+                    "id": "jamur",
+                    "ja": "キノコ"
+                }
+            }
+        },
+        {
+            "id": "b377568f9d067161e88233fdd01f5e952efa8e6463edfa7a19da5a35fdd2c60b",
+            "path": "images/b377568f9d067161e88233fdd01f5e952efa8e6463edfa7a19da5a35fdd2c60b.jpg",
+            "sha256": "b377568f9d067161e88233fdd01f5e952efa8e6463edfa7a19da5a35fdd2c60b",
+            "width": 1536,
+            "height": 1024,
+            "entryIds": ["ja:word:vegetables-spinach"],
+            "sourceSheet": "355f3b653b7c99d0ad87439a3bb63b1dc0bd1ed7d59cacbe8854300750762fca",
+            "sourceSha256": "355f3b653b7c99d0ad87439a3bb63b1dc0bd1ed7d59cacbe8854300750762fca",
+            "crop": [0, 0, 1536, 1024],
+            "metadata": {
+                "labels": {
+                    "en": "spinach",
+                    "de": "Spinat",
+                    "id": "bayam",
+                    "ja": "ほうれん草"
+                }
+            }
+        },
+        {
+            "id": "e6cd4ae9091f99444dc4f595eae022265f12034e27e6b7aa3a6cd72c108b30d7",
+            "path": "images/e6cd4ae9091f99444dc4f595eae022265f12034e27e6b7aa3a6cd72c108b30d7.jpg",
+            "sha256": "e6cd4ae9091f99444dc4f595eae022265f12034e27e6b7aa3a6cd72c108b30d7",
+            "width": 1536,
+            "height": 1024,
+            "entryIds": ["ja:word:vegetables-lettuce"],
+            "sourceSheet": "78d812165be370c3179b5493a2fdecfd0c4b610dab8c302e90d451cdbddba393",
+            "sourceSha256": "78d812165be370c3179b5493a2fdecfd0c4b610dab8c302e90d451cdbddba393",
+            "crop": [0, 0, 1536, 1024],
+            "metadata": {
+                "labels": {
+                    "en": "lettuce",
+                    "de": "Kopfsalat",
+                    "id": "selada",
+                    "ja": "レタス"
+                }
+            }
+        },
+        {
+            "id": "c5df4bc9a7f9f0b872bd9546f3d3ce619b6a88d4e5120f4490b9ac5e35da4656",
+            "path": "images/c5df4bc9a7f9f0b872bd9546f3d3ce619b6a88d4e5120f4490b9ac5e35da4656.jpg",
+            "sha256": "c5df4bc9a7f9f0b872bd9546f3d3ce619b6a88d4e5120f4490b9ac5e35da4656",
+            "width": 1536,
+            "height": 1024,
+            "entryIds": ["ja:word:rooms-bedroom"],
+            "sourceSheet": "4d6205f3dde107aeb0914b0f4b40bf548e25020bf9d35cae7486f3603ec7cd30",
+            "sourceSha256": "4d6205f3dde107aeb0914b0f4b40bf548e25020bf9d35cae7486f3603ec7cd30",
+            "crop": [0, 0, 1536, 1024],
+            "metadata": {
+                "labels": {
+                    "en": "bedroom",
+                    "de": "Schlafzimmer",
+                    "id": "kamar tidur",
+                    "ja": "寝室"
+                }
+            }
+        },
+        {
+            "id": "272350422e4b0bbaaa0bd3d956fdc570adc67a4dbd7155b75d2caca530d4f682",
+            "path": "images/272350422e4b0bbaaa0bd3d956fdc570adc67a4dbd7155b75d2caca530d4f682.jpg",
+            "sha256": "272350422e4b0bbaaa0bd3d956fdc570adc67a4dbd7155b75d2caca530d4f682",
+            "width": 1536,
+            "height": 1024,
+            "entryIds": ["ja:word:rooms-bathroom"],
+            "sourceSheet": "61c589caecd1ec1a259a2004ba1b1a1d243f61c51cbddcb77fad6dda5b9321a6",
+            "sourceSha256": "61c589caecd1ec1a259a2004ba1b1a1d243f61c51cbddcb77fad6dda5b9321a6",
+            "crop": [0, 0, 1536, 1024],
+            "metadata": {
+                "labels": {
+                    "en": "bathroom",
+                    "de": "Badezimmer",
+                    "id": "kamar mandi",
+                    "ja": "浴室"
+                }
+            }
+        },
+        {
+            "id": "e43e9e94370989a7d673f175ff6bee607fd5f36849125ad352ea029ce5248d79",
+            "path": "images/e43e9e94370989a7d673f175ff6bee607fd5f36849125ad352ea029ce5248d79.jpg",
+            "sha256": "e43e9e94370989a7d673f175ff6bee607fd5f36849125ad352ea029ce5248d79",
+            "width": 1536,
+            "height": 1024,
+            "entryIds": ["ja:word:rooms-kitchen"],
+            "sourceSheet": "5746208229beb642ff35a0a9d720ca002d97987bb8e4b6c3fba642a3352c1c7f",
+            "sourceSha256": "5746208229beb642ff35a0a9d720ca002d97987bb8e4b6c3fba642a3352c1c7f",
+            "crop": [0, 0, 1536, 1024],
+            "metadata": {
+                "labels": {
+                    "en": "kitchen",
+                    "de": "Küche",
+                    "id": "dapur",
+                    "ja": "台所"
+                }
+            }
+        },
+        {
+            "id": "504c2bec2445050bc93f88b5e4f13144da7b220b3270b1c8fe18d4eddf864f53",
+            "path": "images/504c2bec2445050bc93f88b5e4f13144da7b220b3270b1c8fe18d4eddf864f53.jpg",
+            "sha256": "504c2bec2445050bc93f88b5e4f13144da7b220b3270b1c8fe18d4eddf864f53",
+            "width": 1536,
+            "height": 1024,
+            "entryIds": ["ja:word:rooms-garden"],
+            "sourceSheet": "4680ad4e77b2527fae3902d2c96134d9665b651078b647eb40af70996f02f0bb",
+            "sourceSha256": "4680ad4e77b2527fae3902d2c96134d9665b651078b647eb40af70996f02f0bb",
+            "crop": [0, 0, 1536, 1024],
+            "metadata": {
+                "labels": {
+                    "en": "garden",
+                    "de": "Garten",
+                    "id": "taman",
+                    "ja": "庭"
+                }
+            }
+        },
+        {
+            "id": "8a8968c8495e4dd37d6daa157fdf1945839c7fc62d7867a5191659602e66e117",
+            "path": "images/8a8968c8495e4dd37d6daa157fdf1945839c7fc62d7867a5191659602e66e117.jpg",
+            "sha256": "8a8968c8495e4dd37d6daa157fdf1945839c7fc62d7867a5191659602e66e117",
+            "width": 1536,
+            "height": 1024,
+            "entryIds": ["ja:word:nature-tree"],
+            "sourceSheet": "df93a0035aa762b23e0e91fb50b0a0b3ee2123376fa4811a5089f1e17216ed6c",
+            "sourceSha256": "df93a0035aa762b23e0e91fb50b0a0b3ee2123376fa4811a5089f1e17216ed6c",
+            "crop": [0, 0, 1536, 1024],
+            "metadata": {
+                "labels": {
+                    "en": "tree",
+                    "de": "Baum",
+                    "id": "pohon",
+                    "ja": "木"
+                }
+            }
+        },
+        {
+            "id": "127f5ab29e4568a0653c069cf9a88c7ad576a44050a05fc340f02798a62828bf",
+            "path": "images/127f5ab29e4568a0653c069cf9a88c7ad576a44050a05fc340f02798a62828bf.jpg",
+            "sha256": "127f5ab29e4568a0653c069cf9a88c7ad576a44050a05fc340f02798a62828bf",
+            "width": 1536,
+            "height": 1024,
+            "entryIds": ["ja:word:nature-forest"],
+            "sourceSheet": "cb0d57c5bd06eb2feb6b0b6a8e603a5cb9349e313e4141137465545869b14b0b",
+            "sourceSha256": "cb0d57c5bd06eb2feb6b0b6a8e603a5cb9349e313e4141137465545869b14b0b",
+            "crop": [0, 0, 1536, 1024],
+            "metadata": {
+                "labels": {
+                    "en": "forest",
+                    "de": "Wald",
+                    "id": "hutan",
+                    "ja": "森"
+                }
+            }
+        },
+        {
+            "id": "66d613da7135ab4fe8b0e8a92a3df3f13ee58968828753fce01f1862955224ae",
+            "path": "images/66d613da7135ab4fe8b0e8a92a3df3f13ee58968828753fce01f1862955224ae.jpg",
+            "sha256": "66d613da7135ab4fe8b0e8a92a3df3f13ee58968828753fce01f1862955224ae",
+            "width": 1536,
+            "height": 1024,
+            "entryIds": ["ja:word:nature-leaf"],
+            "sourceSheet": "493f309c015f7fd108bfd2c1ecfe6708a4f78cdcea7b516a7997026d99885e8e",
+            "sourceSha256": "493f309c015f7fd108bfd2c1ecfe6708a4f78cdcea7b516a7997026d99885e8e",
+            "crop": [0, 0, 1536, 1024],
+            "metadata": {
+                "labels": {
+                    "en": "leaf",
+                    "de": "Blatt",
+                    "id": "daun",
+                    "ja": "葉っぱ"
+                }
+            }
+        },
+        {
+            "id": "b74ac432848956a40976de6643257b54f4b5af22facc1ff26d3a07e286c6e689",
+            "path": "images/b74ac432848956a40976de6643257b54f4b5af22facc1ff26d3a07e286c6e689.jpg",
+            "sha256": "b74ac432848956a40976de6643257b54f4b5af22facc1ff26d3a07e286c6e689",
+            "width": 1536,
+            "height": 1024,
+            "entryIds": ["ja:word:nature-stone"],
+            "sourceSheet": "3b1896862e6c2037ce48bc4b9c0ab9f06a79570da4cb4bcbabde46011a8fd552",
+            "sourceSha256": "3b1896862e6c2037ce48bc4b9c0ab9f06a79570da4cb4bcbabde46011a8fd552",
+            "crop": [0, 0, 1536, 1024],
+            "metadata": {
+                "labels": {
+                    "en": "stone",
+                    "de": "Stein",
+                    "id": "batu",
+                    "ja": "石"
+                }
+            }
+        },
+        {
+            "id": "191888d38653c5a89c6770f438a5d42656a4508cddb20954b7fe7fdaffac996e",
+            "path": "images/191888d38653c5a89c6770f438a5d42656a4508cddb20954b7fe7fdaffac996e.jpg",
+            "sha256": "191888d38653c5a89c6770f438a5d42656a4508cddb20954b7fe7fdaffac996e",
+            "width": 1536,
+            "height": 1024,
+            "entryIds": ["ja:word:fixtures-fridge"],
+            "sourceSheet": "4404a505a4799172e865d98f6a933393770a9c9771bddece7a11656f4bc50c44",
+            "sourceSha256": "4404a505a4799172e865d98f6a933393770a9c9771bddece7a11656f4bc50c44",
+            "crop": [0, 0, 1536, 1024],
+            "metadata": {
+                "labels": {
+                    "en": "fridge",
+                    "de": "Kühlschrank",
+                    "id": "kulkas",
+                    "ja": "冷蔵庫"
+                }
+            }
+        },
+        {
+            "id": "7ea839b946d58a19b82c62b23a38de43add774b31665709d2327a2acab44ea53",
+            "path": "images/7ea839b946d58a19b82c62b23a38de43add774b31665709d2327a2acab44ea53.jpg",
+            "sha256": "7ea839b946d58a19b82c62b23a38de43add774b31665709d2327a2acab44ea53",
+            "width": 1536,
+            "height": 1024,
+            "entryIds": ["ja:word:fixtures-oven"],
+            "sourceSheet": "a9a1c137d9621b3a7cbf750ae69a1f43705f2eb526042c639d12acc7eb44e4ef",
+            "sourceSha256": "a9a1c137d9621b3a7cbf750ae69a1f43705f2eb526042c639d12acc7eb44e4ef",
+            "crop": [0, 0, 1536, 1024],
+            "metadata": {
+                "labels": {
+                    "en": "oven",
+                    "de": "Backofen",
+                    "id": "oven",
+                    "ja": "オーブン"
+                }
+            }
+        },
+        {
+            "id": "1862f2be8f476fba40de34fe5b1e9840f6e7787a42e9630d90a8ac837c2daf9d",
+            "path": "images/1862f2be8f476fba40de34fe5b1e9840f6e7787a42e9630d90a8ac837c2daf9d.jpg",
+            "sha256": "1862f2be8f476fba40de34fe5b1e9840f6e7787a42e9630d90a8ac837c2daf9d",
+            "width": 1536,
+            "height": 1024,
+            "entryIds": ["ja:word:fixtures-sink"],
+            "sourceSheet": "fa157eb40ad5a67d5820941976c85cc212ca53dc5f85305d29092cac4af595d2",
+            "sourceSha256": "fa157eb40ad5a67d5820941976c85cc212ca53dc5f85305d29092cac4af595d2",
+            "crop": [0, 0, 1536, 1024],
+            "metadata": {
+                "labels": {
+                    "en": "sink",
+                    "de": "Spülbecken",
+                    "id": "bak cuci",
+                    "ja": "流し"
+                }
+            }
+        },
+        {
+            "id": "2e5a85eb353a0a8dbcca3970864d5a455509d62029ba992ce279249653d4d70c",
+            "path": "images/2e5a85eb353a0a8dbcca3970864d5a455509d62029ba992ce279249653d4d70c.jpg",
+            "sha256": "2e5a85eb353a0a8dbcca3970864d5a455509d62029ba992ce279249653d4d70c",
+            "width": 1536,
+            "height": 1024,
+            "entryIds": ["ja:word:fixtures-shower"],
+            "sourceSheet": "65981723556e20f221e240c9072434a70df022a869a1376aa7265d88fe1be744",
+            "sourceSha256": "65981723556e20f221e240c9072434a70df022a869a1376aa7265d88fe1be744",
+            "crop": [0, 0, 1536, 1024],
+            "metadata": {
+                "labels": {
+                    "en": "shower",
+                    "de": "Dusche",
+                    "id": "pancuran mandi",
+                    "ja": "シャワー"
+                }
+            }
+        },
+        {
+            "id": "8a80f5b4291b9183743910b2737d3068d14f481d07377a63d7b0b114a29a2f7e",
+            "path": "images/8a80f5b4291b9183743910b2737d3068d14f481d07377a63d7b0b114a29a2f7e.jpg",
+            "sha256": "8a80f5b4291b9183743910b2737d3068d14f481d07377a63d7b0b114a29a2f7e",
+            "width": 1536,
+            "height": 1024,
+            "entryIds": ["ja:word:actions-jump"],
+            "sourceSheet": "65b345f2300a16621d502080f94e1a7359de9878a73a15b1f1e4c96f6ce5578f",
+            "sourceSha256": "65b345f2300a16621d502080f94e1a7359de9878a73a15b1f1e4c96f6ce5578f",
+            "crop": [0, 0, 1536, 1024],
+            "metadata": {
+                "labels": {
+                    "en": "jump",
+                    "de": "springen",
+                    "id": "melompat",
+                    "ja": "跳ぶ"
+                }
+            }
+        },
+        {
+            "id": "31ff5cfe9eed76b4ae24139b353bb7679e9f40505535a0a886ae1a4098e8677f",
+            "path": "images/31ff5cfe9eed76b4ae24139b353bb7679e9f40505535a0a886ae1a4098e8677f.jpg",
+            "sha256": "31ff5cfe9eed76b4ae24139b353bb7679e9f40505535a0a886ae1a4098e8677f",
+            "width": 1536,
+            "height": 1024,
+            "entryIds": ["ja:word:actions-swim"],
+            "sourceSheet": "db6299330a022c3aafce387491a3403ba6f617370751e9d034111914aba70e93",
+            "sourceSha256": "db6299330a022c3aafce387491a3403ba6f617370751e9d034111914aba70e93",
+            "crop": [0, 0, 1536, 1024],
+            "metadata": {
+                "labels": {
+                    "en": "swim",
+                    "de": "schwimmen",
+                    "id": "berenang",
+                    "ja": "泳ぐ"
+                }
+            }
+        },
+        {
+            "id": "bf870436dbeb80c93f3da5ad36ad2979837baba89fdadfdeb3f26c4b1d1997d4",
+            "path": "images/bf870436dbeb80c93f3da5ad36ad2979837baba89fdadfdeb3f26c4b1d1997d4.jpg",
+            "sha256": "bf870436dbeb80c93f3da5ad36ad2979837baba89fdadfdeb3f26c4b1d1997d4",
+            "width": 1536,
+            "height": 1024,
+            "entryIds": ["ja:word:actions-laugh"],
+            "sourceSheet": "d3296d378b6066e699c75b8b20fb3856ca81f1977974698a4e02ca4f374eeef2",
+            "sourceSha256": "d3296d378b6066e699c75b8b20fb3856ca81f1977974698a4e02ca4f374eeef2",
+            "crop": [0, 0, 1536, 1024],
+            "metadata": {
+                "labels": {
+                    "en": "laugh",
+                    "de": "lachen",
+                    "id": "tertawa",
+                    "ja": "笑う"
+                }
+            }
+        },
+        {
+            "id": "1e9f07cc36cea258fb8995921006c4403315be8b28d8094ce4ad68b01396c389",
+            "path": "images/1e9f07cc36cea258fb8995921006c4403315be8b28d8094ce4ad68b01396c389.jpg",
+            "sha256": "1e9f07cc36cea258fb8995921006c4403315be8b28d8094ce4ad68b01396c389",
+            "width": 1536,
+            "height": 1024,
+            "entryIds": ["ja:word:actions-cry"],
+            "sourceSheet": "1bbaf6797eb42a1f8d85c9a3d847e19e273912c870d0f23f687ea4fb6517453f",
+            "sourceSha256": "1bbaf6797eb42a1f8d85c9a3d847e19e273912c870d0f23f687ea4fb6517453f",
+            "crop": [0, 0, 1536, 1024],
+            "metadata": {
+                "labels": {
+                    "en": "cry",
+                    "de": "weinen",
+                    "id": "menangis",
+                    "ja": "泣く"
+                }
+            }
+        },
+        {
+            "id": "3beecbd49d1aa912bbad6747e4b698496aabefa167dcb0198891d7c6c29db977",
+            "path": "images/3beecbd49d1aa912bbad6747e4b698496aabefa167dcb0198891d7c6c29db977.jpg",
+            "sha256": "3beecbd49d1aa912bbad6747e4b698496aabefa167dcb0198891d7c6c29db977",
+            "width": 1536,
+            "height": 1024,
+            "entryIds": ["ja:word:qualities-heavy"],
+            "sourceSheet": "829593a29bcad3f1f801b2e7c5a1a27a6f1fbb6cb3f37f91d3ed16bb9c79df5d",
+            "sourceSha256": "829593a29bcad3f1f801b2e7c5a1a27a6f1fbb6cb3f37f91d3ed16bb9c79df5d",
+            "crop": [0, 0, 1536, 1024],
+            "metadata": {
+                "labels": {
+                    "en": "heavy",
+                    "de": "schwer",
+                    "id": "berat",
+                    "ja": "重い"
+                }
+            }
+        },
+        {
+            "id": "6f6d97d4bdb1334fa4e79ba7218f1137390c7319f13e46126d4e78c67b8128d6",
+            "path": "images/6f6d97d4bdb1334fa4e79ba7218f1137390c7319f13e46126d4e78c67b8128d6.jpg",
+            "sha256": "6f6d97d4bdb1334fa4e79ba7218f1137390c7319f13e46126d4e78c67b8128d6",
+            "width": 1536,
+            "height": 1024,
+            "entryIds": ["ja:word:qualities-light"],
+            "sourceSheet": "31e1cd2f64580fa9d4b17d4feb402fce04b356a3bc07b16cbcff4213ea651e20",
+            "sourceSha256": "31e1cd2f64580fa9d4b17d4feb402fce04b356a3bc07b16cbcff4213ea651e20",
+            "crop": [0, 0, 1536, 1024],
+            "metadata": {
+                "labels": {
+                    "en": "light",
+                    "de": "leicht",
+                    "id": "ringan",
+                    "ja": "軽い"
+                }
+            }
+        },
+        {
+            "id": "8b08bff186082074f1848126a9d92fa953cb33cebf300183900a9bf6587b3b94",
+            "path": "images/8b08bff186082074f1848126a9d92fa953cb33cebf300183900a9bf6587b3b94.jpg",
+            "sha256": "8b08bff186082074f1848126a9d92fa953cb33cebf300183900a9bf6587b3b94",
+            "width": 1536,
+            "height": 1024,
+            "entryIds": ["ja:word:qualities-easy"],
+            "sourceSheet": "44837a8df3e8b6ab7613622d6ab0946a79b1b2ff89aca735a47a5507a79b2c2a",
+            "sourceSha256": "44837a8df3e8b6ab7613622d6ab0946a79b1b2ff89aca735a47a5507a79b2c2a",
+            "crop": [0, 0, 1536, 1024],
+            "metadata": {
+                "labels": {
+                    "en": "easy",
+                    "de": "einfach",
+                    "id": "mudah",
+                    "ja": "易しい"
+                }
+            }
+        },
+        {
+            "id": "b5afd6e4ed82f27cee678cd776fe3dee719fb7e151f80f4892ca1e9666ccd838",
+            "path": "images/b5afd6e4ed82f27cee678cd776fe3dee719fb7e151f80f4892ca1e9666ccd838.jpg",
+            "sha256": "b5afd6e4ed82f27cee678cd776fe3dee719fb7e151f80f4892ca1e9666ccd838",
+            "width": 1536,
+            "height": 1024,
+            "entryIds": ["ja:word:qualities-difficult"],
+            "sourceSheet": "7dcbeb69e232b6c89ff077fd2accefb533d46acc78b2ea536185147ab890c557",
+            "sourceSha256": "7dcbeb69e232b6c89ff077fd2accefb533d46acc78b2ea536185147ab890c557",
+            "crop": [0, 0, 1536, 1024],
+            "metadata": {
+                "labels": {
+                    "en": "difficult",
+                    "de": "schwierig",
+                    "id": "sulit",
+                    "ja": "難しい"
+                }
+            }
+        },
+        {
+            "id": "e47d089183597b3d24ca079190fcba2a86e37ecb6b86cfa785154cd6f382a981",
+            "path": "images/e47d089183597b3d24ca079190fcba2a86e37ecb6b86cfa785154cd6f382a981.jpg",
+            "sha256": "e47d089183597b3d24ca079190fcba2a86e37ecb6b86cfa785154cd6f382a981",
+            "width": 1774,
+            "height": 887,
+            "entryIds": ["ja:word:frequency-often"],
+            "sourceSheet": "c3934d49b24ebbacea18b53d3274e55e18df58d0210c7de27c5e7b02552e1872",
+            "sourceSha256": "c3934d49b24ebbacea18b53d3274e55e18df58d0210c7de27c5e7b02552e1872",
+            "crop": [0, 0, 1774, 887],
+            "metadata": {
+                "labels": {
+                    "en": "often",
+                    "de": "oft",
+                    "id": "sering",
+                    "ja": "よく"
+                }
+            }
+        },
+        {
+            "id": "8193a4c64a07a297b44e31c6e3e39a1fe42c63fb72739e763ac630be7d9d312a",
+            "path": "images/8193a4c64a07a297b44e31c6e3e39a1fe42c63fb72739e763ac630be7d9d312a.jpg",
+            "sha256": "8193a4c64a07a297b44e31c6e3e39a1fe42c63fb72739e763ac630be7d9d312a",
+            "width": 1672,
+            "height": 941,
+            "entryIds": ["ja:word:frequency-sometimes"],
+            "sourceSheet": "5b8f8f33da0faebc6b4c4089674c65abc246ea5b25712ed1edd27f64b71d8d74",
+            "sourceSha256": "5b8f8f33da0faebc6b4c4089674c65abc246ea5b25712ed1edd27f64b71d8d74",
+            "crop": [0, 0, 1672, 941],
+            "metadata": {
+                "labels": {
+                    "en": "sometimes",
+                    "de": "manchmal",
+                    "id": "kadang-kadang",
+                    "ja": "ときどき"
+                }
+            }
+        },
+        {
+            "id": "39691b05d558544b47b1486657dced112a53499e34167c594c8dd8ec512ba58a",
+            "path": "images/39691b05d558544b47b1486657dced112a53499e34167c594c8dd8ec512ba58a.jpg",
+            "sha256": "39691b05d558544b47b1486657dced112a53499e34167c594c8dd8ec512ba58a",
+            "width": 1536,
+            "height": 1024,
+            "entryIds": ["ja:word:frequency-usually"],
+            "sourceSheet": "707da9d97c490191bbd4b2ed1ea43ec0123ed6606b347ea1a87ed25fd1ecccb6",
+            "sourceSha256": "707da9d97c490191bbd4b2ed1ea43ec0123ed6606b347ea1a87ed25fd1ecccb6",
+            "crop": [0, 0, 1536, 1024],
+            "metadata": {
+                "labels": {
+                    "en": "usually",
+                    "de": "gewöhnlich",
+                    "id": "biasanya",
+                    "ja": "たいてい"
+                }
+            }
+        },
+        {
+            "id": "2708b25ab2d4ab716cddc564e34b5d017c0097199915e6b21db6a89a8df121bf",
+            "path": "images/2708b25ab2d4ab716cddc564e34b5d017c0097199915e6b21db6a89a8df121bf.jpg",
+            "sha256": "2708b25ab2d4ab716cddc564e34b5d017c0097199915e6b21db6a89a8df121bf",
+            "width": 1774,
+            "height": 887,
+            "entryIds": ["ja:word:frequency-again"],
+            "sourceSheet": "4e5d5a96c7a4746cd1cb94b745b6ceab73ff674cefb4c912cea6c18636778034",
+            "sourceSha256": "4e5d5a96c7a4746cd1cb94b745b6ceab73ff674cefb4c912cea6c18636778034",
+            "crop": [0, 0, 1774, 887],
+            "metadata": {
+                "labels": {
+                    "en": "again",
+                    "de": "wieder",
+                    "id": "lagi",
+                    "ja": "また"
+                }
+            }
+        },
+        {
+            "id": "dff4544ddbe659e92785fba3f86ac83c5bd77dd5e9976b211b07db3d11373d65",
+            "path": "images/dff4544ddbe659e92785fba3f86ac83c5bd77dd5e9976b211b07db3d11373d65.jpg",
+            "sha256": "dff4544ddbe659e92785fba3f86ac83c5bd77dd5e9976b211b07db3d11373d65",
+            "width": 1536,
+            "height": 1024,
+            "entryIds": ["ja:word:core-read"],
+            "sourceSheet": "31b657eed1b79defdcddb5ba3a4b9d6b9f06c6f4750632553a6e05531115b696",
+            "sourceSha256": "31b657eed1b79defdcddb5ba3a4b9d6b9f06c6f4750632553a6e05531115b696",
+            "crop": [0, 0, 1536, 1024],
+            "metadata": {
+                "labels": {
+                    "en": "read",
+                    "de": "lesen",
+                    "id": "membaca",
+                    "ja": "読む"
+                }
+            }
+        },
+        {
+            "id": "c025b5c8679db42361aa2d5140b8678517da60a1f80cb8ee566c829279ed146a",
+            "path": "images/c025b5c8679db42361aa2d5140b8678517da60a1f80cb8ee566c829279ed146a.jpg",
+            "sha256": "c025b5c8679db42361aa2d5140b8678517da60a1f80cb8ee566c829279ed146a",
+            "width": 1536,
+            "height": 1024,
+            "entryIds": ["ja:word:core-write"],
+            "sourceSheet": "48bcd0055f1075dcbc5181ab6603ecc2cc7344c386e541bba4ffdadd692ede17",
+            "sourceSha256": "48bcd0055f1075dcbc5181ab6603ecc2cc7344c386e541bba4ffdadd692ede17",
+            "crop": [0, 0, 1536, 1024],
+            "metadata": {
+                "labels": {
+                    "en": "write",
+                    "de": "schreiben",
+                    "id": "menulis",
+                    "ja": "書く"
+                }
+            }
+        },
+        {
+            "id": "a04e3f77f120805c6b6d29589e9e1ede471ee3b6efaeda19490c1fd1421860d1",
+            "path": "images/a04e3f77f120805c6b6d29589e9e1ede471ee3b6efaeda19490c1fd1421860d1.jpg",
+            "sha256": "a04e3f77f120805c6b6d29589e9e1ede471ee3b6efaeda19490c1fd1421860d1",
+            "width": 1536,
+            "height": 1024,
+            "entryIds": ["ja:word:core-speak"],
+            "sourceSheet": "02486c844229676cd504f5364fc3602f154a8d64574cb9b924478fd03b345761",
+            "sourceSha256": "02486c844229676cd504f5364fc3602f154a8d64574cb9b924478fd03b345761",
+            "crop": [0, 0, 1536, 1024],
+            "metadata": {
+                "labels": {
+                    "en": "speak",
+                    "de": "sprechen",
+                    "id": "berbicara",
+                    "ja": "話す"
+                }
+            }
+        },
+        {
+            "id": "f9b26425de36c8a8417a62ffc85efa30e347d00bf7a2934b031037d7e7dbab6e",
+            "path": "images/f9b26425de36c8a8417a62ffc85efa30e347d00bf7a2934b031037d7e7dbab6e.jpg",
+            "sha256": "f9b26425de36c8a8417a62ffc85efa30e347d00bf7a2934b031037d7e7dbab6e",
+            "width": 1536,
+            "height": 1024,
+            "entryIds": ["ja:word:core-sleep"],
+            "sourceSheet": "ff495edda5cd82b8626df8b2c2e20ba9634a764de792f45f28642495e946ad40",
+            "sourceSha256": "ff495edda5cd82b8626df8b2c2e20ba9634a764de792f45f28642495e946ad40",
+            "crop": [0, 0, 1536, 1024],
+            "metadata": {
+                "labels": {
+                    "en": "sleep",
+                    "de": "schlafen; zu Bett gehen",
+                    "id": "tidur; pergi tidur",
+                    "ja": "寝る"
+                }
+            }
+        },
+        {
+            "id": "8b03eee8eaf8eeffa10505705523edd9e687f48f02d339b2425d3296f1d61456",
+            "path": "images/8b03eee8eaf8eeffa10505705523edd9e687f48f02d339b2425d3296f1d61456.jpg",
+            "sha256": "8b03eee8eaf8eeffa10505705523edd9e687f48f02d339b2425d3296f1d61456",
+            "width": 1536,
+            "height": 1024,
+            "entryIds": ["ja:word:social-greeting"],
+            "sourceSheet": "165bd9712892396fcfccfee937e5235fadf02f616cc54bd6004c5378e74aea50",
+            "sourceSha256": "165bd9712892396fcfccfee937e5235fadf02f616cc54bd6004c5378e74aea50",
+            "crop": [0, 0, 1536, 1024],
+            "metadata": {
+                "labels": {
+                    "en": "hello (daytime greeting)",
+                    "de": "guten Tag",
+                    "id": "halo; selamat siang",
+                    "ja": "こんにちは"
+                }
+            }
+        },
+        {
+            "id": "2e41c9a5ddddd56803d890f628a1761eeb14aa7a40b9406fd1f336196af00e49",
+            "path": "images/2e41c9a5ddddd56803d890f628a1761eeb14aa7a40b9406fd1f336196af00e49.jpg",
+            "sha256": "2e41c9a5ddddd56803d890f628a1761eeb14aa7a40b9406fd1f336196af00e49",
+            "width": 1536,
+            "height": 1024,
+            "entryIds": ["ja:word:social-gratitude"],
+            "sourceSheet": "9f565126549a5483a8a6d20abb876f147d5cb70930c61a19046628e58e98cfbe",
+            "sourceSha256": "9f565126549a5483a8a6d20abb876f147d5cb70930c61a19046628e58e98cfbe",
+            "crop": [0, 0, 1536, 1024],
+            "metadata": {
+                "labels": {
+                    "en": "thank you (polite)",
+                    "de": "vielen Dank",
+                    "id": "terima kasih (sopan)",
+                    "ja": "ありがとうございます"
+                }
+            }
+        },
+        {
+            "id": "2113557a440b49f616da9ec2c6166ea8c2eff6017ee595885485b33caada341d",
+            "path": "images/2113557a440b49f616da9ec2c6166ea8c2eff6017ee595885485b33caada341d.jpg",
+            "sha256": "2113557a440b49f616da9ec2c6166ea8c2eff6017ee595885485b33caada341d",
+            "width": 1536,
+            "height": 1024,
+            "entryIds": ["ja:word:social-attention"],
+            "sourceSheet": "5017f7062a1860ffa9bee6ec86257f55d47088f53af8e706e5480eb563c00c5a",
+            "sourceSha256": "5017f7062a1860ffa9bee6ec86257f55d47088f53af8e706e5480eb563c00c5a",
+            "crop": [0, 0, 1536, 1024],
+            "metadata": {
+                "labels": {
+                    "en": "excuse me (getting attention)",
+                    "de": "Entschuldigung (Aufmerksamkeit erbitten)",
+                    "id": "permisi",
+                    "ja": "すみません"
+                }
+            }
+        },
+        {
+            "id": "f6871cdc1f71084c49eb3587db404f7b01b1a220ee418dee0854f49255f2049c",
+            "path": "images/f6871cdc1f71084c49eb3587db404f7b01b1a220ee418dee0854f49255f2049c.jpg",
+            "sha256": "f6871cdc1f71084c49eb3587db404f7b01b1a220ee418dee0854f49255f2049c",
+            "width": 1536,
+            "height": 1024,
+            "entryIds": ["ja:word:social-farewell"],
+            "sourceSheet": "8501ec1431ad4b5c61110e2944d439634749440904976b55db05f8064c6b0794",
+            "sourceSha256": "8501ec1431ad4b5c61110e2944d439634749440904976b55db05f8064c6b0794",
+            "crop": [0, 0, 1536, 1024],
+            "metadata": {
+                "labels": {
+                    "en": "goodbye",
+                    "de": "auf Wiedersehen",
+                    "id": "selamat tinggal",
+                    "ja": "さようなら"
+                }
+            }
+        },
+        {
+            "id": "174172b2d80455ccd75c209a00ff6e20ec347caf0c3a4c15347e168103e5a52c",
+            "path": "images/174172b2d80455ccd75c209a00ff6e20ec347caf0c3a4c15347e168103e5a52c.jpg",
+            "sha256": "174172b2d80455ccd75c209a00ff6e20ec347caf0c3a4c15347e168103e5a52c",
+            "width": 1536,
+            "height": 1024,
+            "entryIds": ["ja:word:requests-yes"],
+            "sourceSheet": "a8ba10b1a57b07495e101864a11c643579ac1d60dddffcfc9e482662d273216f",
+            "sourceSha256": "a8ba10b1a57b07495e101864a11c643579ac1d60dddffcfc9e482662d273216f",
+            "crop": [0, 0, 1536, 1024],
+            "metadata": {
+                "labels": {
+                    "en": "yes; acknowledgment",
+                    "de": "ja",
+                    "id": "ya",
+                    "ja": "はい"
+                }
+            }
+        },
+        {
+            "id": "e8013db5ab496be606e7d7c413dbc624cd35797139567bf290bdac6ab1851db0",
+            "path": "images/e8013db5ab496be606e7d7c413dbc624cd35797139567bf290bdac6ab1851db0.jpg",
+            "sha256": "e8013db5ab496be606e7d7c413dbc624cd35797139567bf290bdac6ab1851db0",
+            "width": 1536,
+            "height": 1024,
+            "entryIds": ["ja:word:requests-no"],
+            "sourceSheet": "7fb685b30b61490cd484cc0e49397814b4630dc3397e6b473b0c7474d4a78d37",
+            "sourceSha256": "7fb685b30b61490cd484cc0e49397814b4630dc3397e6b473b0c7474d4a78d37",
+            "crop": [0, 0, 1536, 1024],
+            "metadata": {
+                "labels": {
+                    "en": "no",
+                    "de": "nein",
+                    "id": "tidak",
+                    "ja": "いいえ"
+                }
+            }
+        },
+        {
+            "id": "75aa476925c936b184f5804ba3d6b02d9bdc7752d0e1aa4d6db566c7b76eaf50",
+            "path": "images/75aa476925c936b184f5804ba3d6b02d9bdc7752d0e1aa4d6db566c7b76eaf50.jpg",
+            "sha256": "75aa476925c936b184f5804ba3d6b02d9bdc7752d0e1aa4d6db566c7b76eaf50",
+            "width": 1536,
+            "height": 1024,
+            "entryIds": ["ja:word:requests-please"],
+            "sourceSheet": "fd6849926aba4d6067caa4e6ba0a38ecc8273ad7ef8bb5437940fcafb9317eb0",
+            "sourceSha256": "fd6849926aba4d6067caa4e6ba0a38ecc8273ad7ef8bb5437940fcafb9317eb0",
+            "crop": [0, 0, 1536, 1024],
+            "metadata": {
+                "labels": {
+                    "en": "please (polite request)",
+                    "de": "bitte",
+                    "id": "tolong; silakan",
+                    "ja": "お願いします"
+                }
+            }
+        },
+        {
+            "id": "a91c394e9c3fb217c91fadf95f35987e3940f1464010fa4b4b570f11bfb2483d",
+            "path": "images/a91c394e9c3fb217c91fadf95f35987e3940f1464010fa4b4b570f11bfb2483d.jpg",
+            "sha256": "a91c394e9c3fb217c91fadf95f35987e3940f1464010fa4b4b570f11bfb2483d",
+            "width": 1536,
+            "height": 1024,
+            "entryIds": ["ja:word:requests-repeat"],
+            "sourceSheet": "5773b33e67c39e4cb104e97171292aaffcff5404bfffc1a74eaea3909ce2993a",
+            "sourceSha256": "5773b33e67c39e4cb104e97171292aaffcff5404bfffc1a74eaea3909ce2993a",
+            "crop": [0, 0, 1536, 1024],
+            "metadata": {
+                "labels": {
+                    "en": "once more; again",
+                    "de": "noch einmal",
+                    "id": "sekali lagi",
+                    "ja": "もう一度"
+                }
+            }
+        },
+        {
+            "id": "9dfc9104de018411203a88d74eb899db5aa36900dd42342be7c8b13b892ad411",
+            "path": "images/9dfc9104de018411203a88d74eb899db5aa36900dd42342be7c8b13b892ad411.jpg",
+            "sha256": "9dfc9104de018411203a88d74eb899db5aa36900dd42342be7c8b13b892ad411",
+            "width": 1536,
+            "height": 1024,
+            "entryIds": ["ja:word:greetings-morning"],
+            "sourceSheet": "fa10ead741bf16410c4eaaff7a6b55be02270b4468afe363e5245091934076b2",
+            "sourceSha256": "fa10ead741bf16410c4eaaff7a6b55be02270b4468afe363e5245091934076b2",
+            "crop": [0, 0, 1536, 1024],
+            "metadata": {
+                "labels": {
+                    "en": "good morning",
+                    "de": "guten Morgen",
+                    "id": "selamat pagi",
+                    "ja": "おはようございます"
+                }
+            }
+        },
+        {
+            "id": "e5a6b46cabe1fa0dfd83d92c2102021cbb73cb1022537c52b277bba2cb17ceab",
+            "path": "images/e5a6b46cabe1fa0dfd83d92c2102021cbb73cb1022537c52b277bba2cb17ceab.jpg",
+            "sha256": "e5a6b46cabe1fa0dfd83d92c2102021cbb73cb1022537c52b277bba2cb17ceab",
+            "width": 1536,
+            "height": 1024,
+            "entryIds": ["ja:word:greetings-evening"],
+            "sourceSheet": "178eee2debe2cc7c37772e3f845a9c54aa09646385ae4fd0cdd772941cf01e77",
+            "sourceSha256": "178eee2debe2cc7c37772e3f845a9c54aa09646385ae4fd0cdd772941cf01e77",
+            "crop": [0, 0, 1536, 1024],
+            "metadata": {
+                "labels": {
+                    "en": "good evening",
+                    "de": "guten Abend",
+                    "id": "selamat malam (salam saat bertemu)",
+                    "ja": "こんばんは"
+                }
+            }
+        },
+        {
+            "id": "44291e908ea60ca01d57dcf615c8c60f6affac0a66c9f561b8b46f87bb9a8425",
+            "path": "images/44291e908ea60ca01d57dcf615c8c60f6affac0a66c9f561b8b46f87bb9a8425.jpg",
+            "sha256": "44291e908ea60ca01d57dcf615c8c60f6affac0a66c9f561b8b46f87bb9a8425",
+            "width": 1536,
+            "height": 1024,
+            "entryIds": ["ja:word:greetings-night"],
+            "sourceSheet": "03591184afe743701c470463dc62021a187847d05b0c43e3334349423224ab95",
+            "sourceSha256": "03591184afe743701c470463dc62021a187847d05b0c43e3334349423224ab95",
+            "crop": [0, 0, 1536, 1024],
+            "metadata": {
+                "labels": {
+                    "en": "good night",
+                    "de": "gute Nacht",
+                    "id": "selamat tidur",
+                    "ja": "おやすみなさい"
+                }
+            }
+        },
+        {
+            "id": "525b749cf6d2d6f43893459a93f08ad25f80e07b676bdc56390a38734da3cdf9",
+            "path": "images/525b749cf6d2d6f43893459a93f08ad25f80e07b676bdc56390a38734da3cdf9.jpg",
+            "sha256": "525b749cf6d2d6f43893459a93f08ad25f80e07b676bdc56390a38734da3cdf9",
+            "width": 1536,
+            "height": 1024,
+            "entryIds": ["ja:word:greetings-later"],
+            "sourceSheet": "11966e1dcad3e4e566c22ed9530887c2258f030c14a340e54bae39528095ac1c",
+            "sourceSha256": "11966e1dcad3e4e566c22ed9530887c2258f030c14a340e54bae39528095ac1c",
+            "crop": [0, 0, 1536, 1024],
+            "metadata": {
+                "labels": {
+                    "en": "see you (casual farewell)",
+                    "de": "bis dann (vertrauter Abschied)",
+                    "id": "sampai jumpa (akrab)",
+                    "ja": "またね（親しい相手への別れの挨拶）"
+                }
+            }
+        },
+        {
+            "id": "a818cc81eef0979660691eb76bc8800bd2140ea695b0f1d86e04c51daf45ef0a",
+            "path": "images/a818cc81eef0979660691eb76bc8800bd2140ea695b0f1d86e04c51daf45ef0a.jpg",
+            "sha256": "a818cc81eef0979660691eb76bc8800bd2140ea695b0f1d86e04c51daf45ef0a",
+            "width": 1536,
+            "height": 1024,
+            "entryIds": ["ja:word:reading-time-morning"],
+            "sourceSheet": "fa69fbc5962e4feb2ddc11eb0554c6cb00a7a4fb41275d47a21dcc7f1cb47420",
+            "sourceSha256": "fa69fbc5962e4feb2ddc11eb0554c6cb00a7a4fb41275d47a21dcc7f1cb47420",
+            "crop": [0, 0, 1536, 1024],
+            "metadata": {
+                "labels": {
+                    "en": "morning",
+                    "de": "Morgen (Tageszeit)",
+                    "id": "pagi",
+                    "ja": "朝"
+                }
+            }
+        },
+        {
+            "id": "46a2ea9d9ec09aa5d55879aa907cf0671cd4b4f88fcb5a5d728e8000eb501986",
+            "path": "images/46a2ea9d9ec09aa5d55879aa907cf0671cd4b4f88fcb5a5d728e8000eb501986.jpg",
+            "sha256": "46a2ea9d9ec09aa5d55879aa907cf0671cd4b4f88fcb5a5d728e8000eb501986",
+            "width": 1536,
+            "height": 1024,
+            "entryIds": ["ja:word:reading-time-night"],
+            "sourceSheet": "4a0cf84af57efc2bbb8d0365be0710649a3de0dc6a0dd845f91d64209a5968a1",
+            "sourceSha256": "4a0cf84af57efc2bbb8d0365be0710649a3de0dc6a0dd845f91d64209a5968a1",
+            "crop": [0, 0, 1536, 1024],
+            "metadata": {
+                "labels": {
+                    "en": "night",
+                    "de": "Nacht",
+                    "id": "malam",
+                    "ja": "夜"
+                }
+            }
+        },
+        {
+            "id": "4f0116cb5e2975150abfdcb51f544bec6af79ee87247f68da55fc1354a58d0f5",
+            "path": "images/4f0116cb5e2975150abfdcb51f544bec6af79ee87247f68da55fc1354a58d0f5.jpg",
+            "sha256": "4f0116cb5e2975150abfdcb51f544bec6af79ee87247f68da55fc1354a58d0f5",
+            "width": 1536,
+            "height": 1024,
+            "entryIds": ["ja:word:reading-time-book"],
+            "sourceSheet": "6715ce66c198eb0da7a4c0201232612ad25d8ebe8804b1947db19e344e7668a3",
+            "sourceSha256": "6715ce66c198eb0da7a4c0201232612ad25d8ebe8804b1947db19e344e7668a3",
+            "crop": [0, 0, 1536, 1024],
+            "metadata": {
+                "labels": {
+                    "en": "book",
+                    "de": "Buch",
+                    "id": "buku",
+                    "ja": "本"
+                }
+            }
+        },
+        {
+            "id": "317f07c141929b66abf516b9cd0732de42740352fc7068396a82fd4a83d4cf08",
+            "path": "images/317f07c141929b66abf516b9cd0732de42740352fc7068396a82fd4a83d4cf08.jpg",
+            "sha256": "317f07c141929b66abf516b9cd0732de42740352fc7068396a82fd4a83d4cf08",
+            "width": 1536,
+            "height": 1024,
+            "entryIds": ["ja:word:reading-time-newspaper"],
+            "sourceSheet": "1b2fb5e5d6e33a44ae5b8657e1e91529af350035456525141b7e156bd5f5b4da",
+            "sourceSha256": "1b2fb5e5d6e33a44ae5b8657e1e91529af350035456525141b7e156bd5f5b4da",
+            "crop": [0, 0, 1536, 1024],
+            "metadata": {
+                "labels": {
+                    "en": "newspaper",
+                    "de": "Zeitung",
+                    "id": "surat kabar",
+                    "ja": "新聞"
+                }
+            }
+        },
+        {
+            "id": "02dfee054327a5eb3ccc269b4d05303119c328d3113d403bcfb5eea9a19f3cdd",
+            "path": "images/02dfee054327a5eb3ccc269b4d05303119c328d3113d403bcfb5eea9a19f3cdd.jpg",
+            "sha256": "02dfee054327a5eb3ccc269b4d05303119c328d3113d403bcfb5eea9a19f3cdd",
+            "width": 1536,
+            "height": 1024,
+            "entryIds": ["ja:word:comprehension-understand"],
+            "sourceSheet": "110020b93f7002b8ce28fc02984f0518f4f21b75429689aed54560c00a8d8d1c",
+            "sourceSha256": "110020b93f7002b8ce28fc02984f0518f4f21b75429689aed54560c00a8d8d1c",
+            "crop": [0, 0, 1536, 1024],
+            "metadata": {
+                "labels": {
+                    "en": "understand",
+                    "de": "verstehen",
+                    "id": "memahami",
+                    "ja": "分かる（理解する）"
+                }
+            }
+        },
+        {
+            "id": "15de216c7753c687ff87caa632bd90a9cb030cac5384cd459446220b69e3e449",
+            "path": "images/15de216c7753c687ff87caa632bd90a9cb030cac5384cd459446220b69e3e449.jpg",
+            "sha256": "15de216c7753c687ff87caa632bd90a9cb030cac5384cd459446220b69e3e449",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:belongings-wallet"],
+            "sourceSheet": "c580cddbcad7bbcf08d289258d1e6f310ed4f19c8af7acb87448e70cdbe710cc",
+            "sourceSha256": "c580cddbcad7bbcf08d289258d1e6f310ed4f19c8af7acb87448e70cdbe710cc",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "wallet",
+                    "de": "Geldbörse",
+                    "id": "dompet",
+                    "ja": "財布"
+                }
+            }
+        },
+        {
+            "id": "e97158fa872ea1c08436de42d1314e8058ca1997f43f561d4afb4efeb2b69fba",
+            "path": "images/e97158fa872ea1c08436de42d1314e8058ca1997f43f561d4afb4efeb2b69fba.jpg",
+            "sha256": "e97158fa872ea1c08436de42d1314e8058ca1997f43f561d4afb4efeb2b69fba",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:belongings-camera"],
+            "sourceSheet": "4e4b7909172569753c727956b1a4bd528b940e029911a373ae66631c8d78293d",
+            "sourceSha256": "4e4b7909172569753c727956b1a4bd528b940e029911a373ae66631c8d78293d",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "camera",
+                    "de": "Kamera",
+                    "id": "kamera",
+                    "ja": "カメラ"
+                }
+            }
+        },
+        {
+            "id": "9f33bd7c9b9e23b910026bf763996099a8b8a908079bf4040cd700180b1593eb",
+            "path": "images/9f33bd7c9b9e23b910026bf763996099a8b8a908079bf4040cd700180b1593eb.jpg",
+            "sha256": "9f33bd7c9b9e23b910026bf763996099a8b8a908079bf4040cd700180b1593eb",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:belongings-glasses"],
+            "sourceSheet": "e60209533888ec8b986997cd0c23e2f91dc2ee641181d07ea85653ed942c9f86",
+            "sourceSha256": "e60209533888ec8b986997cd0c23e2f91dc2ee641181d07ea85653ed942c9f86",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "glasses (eyewear)",
+                    "de": "Brille",
+                    "id": "kacamata",
+                    "ja": "眼鏡"
+                }
+            }
+        },
+        {
+            "id": "8b684ed0a7615b1f2238c571639fdb1d86e3327bd9e788498b45e0b09d4647eb",
+            "path": "images/8b684ed0a7615b1f2238c571639fdb1d86e3327bd9e788498b45e0b09d4647eb.jpg",
+            "sha256": "8b684ed0a7615b1f2238c571639fdb1d86e3327bd9e788498b45e0b09d4647eb",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:belongings-watch"],
+            "sourceSheet": "8d260d68deb33f2c3ced1da19bf54ef1bef2486e1f8e2fb6301861a032a3b6df",
+            "sourceSha256": "8d260d68deb33f2c3ced1da19bf54ef1bef2486e1f8e2fb6301861a032a3b6df",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "watch (wristwatch)",
+                    "de": "Armbanduhr",
+                    "id": "jam tangan",
+                    "ja": "腕時計"
+                }
+            }
+        },
+        {
+            "id": "32e23e95208ea0cf4472647b6c788a3ce686e1094c818ac139c0ddd85521e148",
+            "path": "images/32e23e95208ea0cf4472647b6c788a3ce686e1094c818ac139c0ddd85521e148.jpg",
+            "sha256": "32e23e95208ea0cf4472647b6c788a3ce686e1094c818ac139c0ddd85521e148",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:exchange-give"],
+            "sourceSheet": "516e2f9d672c0689a940c65814694f47bf4483ab6ce1a08e6c59595f863a6d32",
+            "sourceSha256": "516e2f9d672c0689a940c65814694f47bf4483ab6ce1a08e6c59595f863a6d32",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "give (something to someone)",
+                    "de": "geben (jemandem etwas)",
+                    "id": "memberi (sesuatu kepada seseorang)",
+                    "ja": "あげる（人に物を渡す）"
+                }
+            }
+        },
+        {
+            "id": "d18b69fdcd4d8157d99d9d814111790e68beb5b4b8d11189d726f9b2f7ea46f5",
+            "path": "images/d18b69fdcd4d8157d99d9d814111790e68beb5b4b8d11189d726f9b2f7ea46f5.jpg",
+            "sha256": "d18b69fdcd4d8157d99d9d814111790e68beb5b4b8d11189d726f9b2f7ea46f5",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:exchange-receive"],
+            "sourceSheet": "75447944e2d324d3c22baeed8d56eba83381db03618d14dcc9d028f80e6a8631",
+            "sourceSha256": "75447944e2d324d3c22baeed8d56eba83381db03618d14dcc9d028f80e6a8631",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "receive (something from someone)",
+                    "de": "bekommen (etwas von jemandem)",
+                    "id": "menerima (sesuatu dari seseorang)",
+                    "ja": "もらう（人から物を受け取る）"
+                }
+            }
+        },
+        {
+            "id": "b977b3fcfe5822b1e305528139f69a8bd01cde2513ad806905621cc725e2d138",
+            "path": "images/b977b3fcfe5822b1e305528139f69a8bd01cde2513ad806905621cc725e2d138.jpg",
+            "sha256": "b977b3fcfe5822b1e305528139f69a8bd01cde2513ad806905621cc725e2d138",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:containers-bottle"],
+            "sourceSheet": "a17116e7654445e3ad5201a1b59610bd52c7ffb5e53843d8186f977dbebf1658",
+            "sourceSha256": "a17116e7654445e3ad5201a1b59610bd52c7ffb5e53843d8186f977dbebf1658",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "bottle",
+                    "de": "Flasche",
+                    "id": "botol",
+                    "ja": "瓶"
+                }
+            }
+        },
+        {
+            "id": "8bd3426f612701c4f00d6b66fb83d7417f2fba3b18f3eab7485a016e16ca2b37",
+            "path": "images/8bd3426f612701c4f00d6b66fb83d7417f2fba3b18f3eab7485a016e16ca2b37.jpg",
+            "sha256": "8bd3426f612701c4f00d6b66fb83d7417f2fba3b18f3eab7485a016e16ca2b37",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:containers-box"],
+            "sourceSheet": "16d620cfa7f61da7e5bc7f2f136aea87a48b12a95a3c07060ba53bc9f6387a87",
+            "sourceSha256": "16d620cfa7f61da7e5bc7f2f136aea87a48b12a95a3c07060ba53bc9f6387a87",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "box (container)",
+                    "de": "Kiste; Schachtel",
+                    "id": "kotak",
+                    "ja": "箱"
+                }
+            }
+        },
+        {
+            "id": "0784d38faebf9dd77945b070296951ed84d262987c09012eee6d0f9714dfa1b4",
+            "path": "images/0784d38faebf9dd77945b070296951ed84d262987c09012eee6d0f9714dfa1b4.jpg",
+            "sha256": "0784d38faebf9dd77945b070296951ed84d262987c09012eee6d0f9714dfa1b4",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:containers-basket"],
+            "sourceSheet": "041f48be4a1df505ba665aa022736df3cd1b68bb42ce1e1a91b8859a05d539ae",
+            "sourceSha256": "041f48be4a1df505ba665aa022736df3cd1b68bb42ce1e1a91b8859a05d539ae",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "basket",
+                    "de": "Korb",
+                    "id": "keranjang",
+                    "ja": "かご"
+                }
+            }
+        },
+        {
+            "id": "0a8630ffcaedf24983d859c80a41fbfdf41e91306627f8db1e4ee9e89b7951a9",
+            "path": "images/0a8630ffcaedf24983d859c80a41fbfdf41e91306627f8db1e4ee9e89b7951a9.jpg",
+            "sha256": "0a8630ffcaedf24983d859c80a41fbfdf41e91306627f8db1e4ee9e89b7951a9",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:containers-envelope"],
+            "sourceSheet": "c44f036422229779a51eeddafac25c7476b8bd06f786d53c4e661d67fcbc7e35",
+            "sourceSha256": "c44f036422229779a51eeddafac25c7476b8bd06f786d53c4e661d67fcbc7e35",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "envelope",
+                    "de": "Briefumschlag",
+                    "id": "amplop",
+                    "ja": "封筒"
+                }
+            }
+        },
+        {
+            "id": "95d4e5d19a3d03a133ee2a0e31a377606ef8adaaec02696502c52863835ebb19",
+            "path": "images/95d4e5d19a3d03a133ee2a0e31a377606ef8adaaec02696502c52863835ebb19.jpg",
+            "sha256": "95d4e5d19a3d03a133ee2a0e31a377606ef8adaaec02696502c52863835ebb19",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:stationery-eraser"],
+            "sourceSheet": "77969b4e29a6306012b42a2f88beec3ba76640f5e4d945cd5905eec91e58812a",
+            "sourceSha256": "77969b4e29a6306012b42a2f88beec3ba76640f5e4d945cd5905eec91e58812a",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "eraser",
+                    "de": "Radiergummi",
+                    "id": "penghapus",
+                    "ja": "消しゴム"
+                }
+            }
+        },
+        {
+            "id": "c5725c620dcda187dd2fb11d60d3cc5483565b0e5b9393ac3601b4eebc99ac7b",
+            "path": "images/c5725c620dcda187dd2fb11d60d3cc5483565b0e5b9393ac3601b4eebc99ac7b.jpg",
+            "sha256": "c5725c620dcda187dd2fb11d60d3cc5483565b0e5b9393ac3601b4eebc99ac7b",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:stationery-scissors"],
+            "sourceSheet": "ce9c146a7d4e40f731c307c91d16f201d6cf2d5b06e25642c7747f03c88079fe",
+            "sourceSha256": "ce9c146a7d4e40f731c307c91d16f201d6cf2d5b06e25642c7747f03c88079fe",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "scissors",
+                    "de": "Schere",
+                    "id": "gunting",
+                    "ja": "はさみ"
+                }
+            }
+        },
+        {
+            "id": "3ed7c5cababfe57e9c1d338358a08ad8d615fd21c6d8acf9c5e4af70ff0bab3a",
+            "path": "images/3ed7c5cababfe57e9c1d338358a08ad8d615fd21c6d8acf9c5e4af70ff0bab3a.jpg",
+            "sha256": "3ed7c5cababfe57e9c1d338358a08ad8d615fd21c6d8acf9c5e4af70ff0bab3a",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:stationery-tape"],
+            "sourceSheet": "e878a684c56ca6d6f6001ce68f0c7f9ff87d0353c8c370f609d6abdbfcc2e96d",
+            "sourceSha256": "e878a684c56ca6d6f6001ce68f0c7f9ff87d0353c8c370f609d6abdbfcc2e96d",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "tape (adhesive)",
+                    "de": "Klebeband",
+                    "id": "pita perekat",
+                    "ja": "テープ（粘着用）"
+                }
+            }
+        },
+        {
+            "id": "aa8788e02a21beaeb427537701022191f2927d02d5ff9e4a87d6c5db88074051",
+            "path": "images/aa8788e02a21beaeb427537701022191f2927d02d5ff9e4a87d6c5db88074051.jpg",
+            "sha256": "aa8788e02a21beaeb427537701022191f2927d02d5ff9e4a87d6c5db88074051",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:stationery-stapler"],
+            "sourceSheet": "0d628195c2e9171d2160c06cc61537a89393efbea17012ba228e9b9eb5f5210b",
+            "sourceSha256": "0d628195c2e9171d2160c06cc61537a89393efbea17012ba228e9b9eb5f5210b",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "stapler",
+                    "de": "Heftgerät",
+                    "id": "stapler",
+                    "ja": "ホチキス"
+                }
+            }
+        },
+        {
+            "id": "26a570ad59c84ee04abc17812cae4fe307506aef6172e60481a1f3db604f4314",
+            "path": "images/26a570ad59c84ee04abc17812cae4fe307506aef6172e60481a1f3db604f4314.jpg",
+            "sha256": "26a570ad59c84ee04abc17812cae4fe307506aef6172e60481a1f3db604f4314",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:posture-sit"],
+            "sourceSheet": "b23ad3e97dbff34a66ffde2b462338131ce39499244313688a56fd4171a7be16",
+            "sourceSha256": "b23ad3e97dbff34a66ffde2b462338131ce39499244313688a56fd4171a7be16",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "sit; be seated",
+                    "de": "sitzen; sich setzen",
+                    "id": "duduk",
+                    "ja": "座る"
+                }
+            }
+        },
+        {
+            "id": "0881ea608191f230fa96f27dd96bfd70116830d550ae6185415c9ae577f5d1f2",
+            "path": "images/0881ea608191f230fa96f27dd96bfd70116830d550ae6185415c9ae577f5d1f2.jpg",
+            "sha256": "0881ea608191f230fa96f27dd96bfd70116830d550ae6185415c9ae577f5d1f2",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:posture-stand"],
+            "sourceSheet": "0b665a4be66ab03b715695064818ca0454eba2abdbcbb16caf1b2d75d957bd2b",
+            "sourceSha256": "0b665a4be66ab03b715695064818ca0454eba2abdbcbb16caf1b2d75d957bd2b",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "stand (upright on the feet)",
+                    "de": "stehen; aufstehen",
+                    "id": "berdiri",
+                    "ja": "立つ"
+                }
+            }
+        },
+        {
+            "id": "c52b9bd02d9f5f460edadc668772f7d6682d466580546b685a1099251f355b9c",
+            "path": "images/c52b9bd02d9f5f460edadc668772f7d6682d466580546b685a1099251f355b9c.jpg",
+            "sha256": "c52b9bd02d9f5f460edadc668772f7d6682d466580546b685a1099251f355b9c",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:wildlife-fox"],
+            "sourceSheet": "6f2d40946c5dfe8fd7a05d8a9ee3d7c6f442fca810a7fda0af63c472ea492712",
+            "sourceSha256": "6f2d40946c5dfe8fd7a05d8a9ee3d7c6f442fca810a7fda0af63c472ea492712",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "fox",
+                    "de": "Fuchs",
+                    "id": "rubah",
+                    "ja": "狐"
+                }
+            }
+        },
+        {
+            "id": "4a04c9a5ffa86a1801727d63fd5ba9e5bb562a7d5abe92b937d09b5673ce4e40",
+            "path": "images/4a04c9a5ffa86a1801727d63fd5ba9e5bb562a7d5abe92b937d09b5673ce4e40.jpg",
+            "sha256": "4a04c9a5ffa86a1801727d63fd5ba9e5bb562a7d5abe92b937d09b5673ce4e40",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:wildlife-bear"],
+            "sourceSheet": "888478b012b2c351a1506be782eb78f1fa31827e79f39527a2561263fd2a2ce2",
+            "sourceSha256": "888478b012b2c351a1506be782eb78f1fa31827e79f39527a2561263fd2a2ce2",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "bear (animal)",
+                    "de": "Bär",
+                    "id": "beruang",
+                    "ja": "熊"
+                }
+            }
+        },
+        {
+            "id": "9b818349c4108ae334e2ea37355dd68ac8a94c22d0a420e1bdd4cc9399f3cfee",
+            "path": "images/9b818349c4108ae334e2ea37355dd68ac8a94c22d0a420e1bdd4cc9399f3cfee.jpg",
+            "sha256": "9b818349c4108ae334e2ea37355dd68ac8a94c22d0a420e1bdd4cc9399f3cfee",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:wildlife-monkey"],
+            "sourceSheet": "d2ba7dbaf85256f074b950efcf2eccfb04fd21359e6cb96610c6307e6ba4842f",
+            "sourceSha256": "d2ba7dbaf85256f074b950efcf2eccfb04fd21359e6cb96610c6307e6ba4842f",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "monkey",
+                    "de": "Affe (kein Menschenaffe)",
+                    "id": "monyet",
+                    "ja": "猿"
+                }
+            }
+        },
+        {
+            "id": "3792529a0d93bb854ed906e9c14caff40fa479abee210e9cd182718aae0709ea",
+            "path": "images/3792529a0d93bb854ed906e9c14caff40fa479abee210e9cd182718aae0709ea.jpg",
+            "sha256": "3792529a0d93bb854ed906e9c14caff40fa479abee210e9cd182718aae0709ea",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:wildlife-elephant"],
+            "sourceSheet": "f6c7d035035e125c6b2b6b619fe64754eb9dc2ac4439ac5c92a3240e73e8b749",
+            "sourceSha256": "f6c7d035035e125c6b2b6b619fe64754eb9dc2ac4439ac5c92a3240e73e8b749",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "elephant",
+                    "de": "Elefant",
+                    "id": "gajah",
+                    "ja": "象"
+                }
+            }
+        },
+        {
+            "id": "c3537a0ad82916f9b56c69f14fc833a50cd353d2c6e001f324703ed735407dca",
+            "path": "images/c3537a0ad82916f9b56c69f14fc833a50cd353d2c6e001f324703ed735407dca.jpg",
+            "sha256": "c3537a0ad82916f9b56c69f14fc833a50cd353d2c6e001f324703ed735407dca",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:force-push"],
+            "sourceSheet": "b0dea304f651a8fa29aa20d931d668c664e0d575ea16ff5f768c5a87729152fb",
+            "sourceSha256": "b0dea304f651a8fa29aa20d931d668c664e0d575ea16ff5f768c5a87729152fb",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "push (move away by force)",
+                    "de": "schieben; drücken",
+                    "id": "mendorong",
+                    "ja": "押す"
+                }
+            }
+        },
+        {
+            "id": "06884ae1bfca80b432829be9044b4ea785133730b3b03c64c5dd5c4fa97d7e16",
+            "path": "images/06884ae1bfca80b432829be9044b4ea785133730b3b03c64c5dd5c4fa97d7e16.jpg",
+            "sha256": "06884ae1bfca80b432829be9044b4ea785133730b3b03c64c5dd5c4fa97d7e16",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:force-pull"],
+            "sourceSheet": "206f2e87be238d2830191a477346bc341bb53e2549cedee18c3a83435e1e2559",
+            "sourceSha256": "206f2e87be238d2830191a477346bc341bb53e2549cedee18c3a83435e1e2559",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "pull (draw toward oneself)",
+                    "de": "ziehen",
+                    "id": "menarik",
+                    "ja": "引く"
+                }
+            }
+        },
+        {
+            "id": "580b752004ebc7f6e3352519befa8a073eb8a25a23deb2ff6fc9e177b278ed25",
+            "path": "images/580b752004ebc7f6e3352519befa8a073eb8a25a23deb2ff6fc9e177b278ed25.jpg",
+            "sha256": "580b752004ebc7f6e3352519befa8a073eb8a25a23deb2ff6fc9e177b278ed25",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:length-long"],
+            "sourceSheet": "f1fe4952c24a97afbbd12eee7a62474016600fec24e62e57aaa36894947d8924",
+            "sourceSha256": "f1fe4952c24a97afbbd12eee7a62474016600fec24e62e57aaa36894947d8924",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "long (length)",
+                    "de": "lang",
+                    "id": "panjang",
+                    "ja": "長い"
+                }
+            }
+        },
+        {
+            "id": "82bc23aab05b3ed283ae52433ae9f15a8e0a07be08b5c9754501af39cac4d310",
+            "path": "images/82bc23aab05b3ed283ae52433ae9f15a8e0a07be08b5c9754501af39cac4d310.jpg",
+            "sha256": "82bc23aab05b3ed283ae52433ae9f15a8e0a07be08b5c9754501af39cac4d310",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:length-short"],
+            "sourceSheet": "ce4564390c3e86b3a6730828c11bb2d74b4c634eec18c792aee36f643123514b",
+            "sourceSha256": "ce4564390c3e86b3a6730828c11bb2d74b4c634eec18c792aee36f643123514b",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "short (length)",
+                    "de": "kurz",
+                    "id": "pendek",
+                    "ja": "短い"
+                }
+            }
+        },
+        {
+            "id": "c8c1cf87c3f859ae6619d332391f1e43e8b2edac0c1dfa03f8a864c20f45c48b",
+            "path": "images/c8c1cf87c3f859ae6619d332391f1e43e8b2edac0c1dfa03f8a864c20f45c48b.jpg",
+            "sha256": "c8c1cf87c3f859ae6619d332391f1e43e8b2edac0c1dfa03f8a864c20f45c48b",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:courtesy-sorry"],
+            "sourceSheet": "9d17ee88b26cf2389a2f83d1c25c3eafb342b829f39db84932036d3613d01d26",
+            "sourceSha256": "9d17ee88b26cf2389a2f83d1c25c3eafb342b829f39db84932036d3613d01d26",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "Sorry! (apology)",
+                    "de": "Entschuldigung!",
+                    "id": "Maaf!",
+                    "ja": "ごめんなさい"
+                }
+            }
+        },
+        {
+            "id": "30270b11d93adf77d7ef59d32972eea0ba1199b5a73fee7b1aaa06d8437e4550",
+            "path": "images/30270b11d93adf77d7ef59d32972eea0ba1199b5a73fee7b1aaa06d8437e4550.jpg",
+            "sha256": "30270b11d93adf77d7ef59d32972eea0ba1199b5a73fee7b1aaa06d8437e4550",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:courtesy-welcome"],
+            "sourceSheet": "925c300250fa12d1cbcbf7c662ef1d0c28da8e3060e946bd1e75381d70b09738",
+            "sourceSha256": "925c300250fa12d1cbcbf7c662ef1d0c28da8e3060e946bd1e75381d70b09738",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "Welcome! (greeting on arrival)",
+                    "de": "Willkommen!",
+                    "id": "Selamat datang!",
+                    "ja": "ようこそ"
+                }
+            }
+        },
+        {
+            "id": "2f0f524a07dab5560d4a396303b5bcff27bd7fa807410e55ae0d26954a1dd868",
+            "path": "images/2f0f524a07dab5560d4a396303b5bcff27bd7fa807410e55ae0d26954a1dd868.jpg",
+            "sha256": "2f0f524a07dab5560d4a396303b5bcff27bd7fa807410e55ae0d26954a1dd868",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:craft-cut"],
+            "sourceSheet": "4e7ae4ebe728eee85a5fabe4041e22a555de4a9b890a2cc4457e3eb68f82f01d",
+            "sourceSha256": "4e7ae4ebe728eee85a5fabe4041e22a555de4a9b890a2cc4457e3eb68f82f01d",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "cut (with a blade)",
+                    "de": "schneiden",
+                    "id": "memotong",
+                    "ja": "切る"
+                }
+            }
+        },
+        {
+            "id": "d00f8585231ec9037c429084628190e23319c68cee49a6f5e07fdf7bf7f8f41a",
+            "path": "images/d00f8585231ec9037c429084628190e23319c68cee49a6f5e07fdf7bf7f8f41a.jpg",
+            "sha256": "d00f8585231ec9037c429084628190e23319c68cee49a6f5e07fdf7bf7f8f41a",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:craft-fold"],
+            "sourceSheet": "483ba97fbc7b42a1adcc7c3036405d59ff5aad06872caddc1bfebb4fa9151c8d",
+            "sourceSha256": "483ba97fbc7b42a1adcc7c3036405d59ff5aad06872caddc1bfebb4fa9151c8d",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "fold (bend paper over)",
+                    "de": "falten",
+                    "id": "melipat",
+                    "ja": "折る（紙などを）"
+                }
+            }
+        },
+        {
+            "id": "ec05ee11b84e046a813c45393b47f78951734b98d515a387c2382071a59552bf",
+            "path": "images/ec05ee11b84e046a813c45393b47f78951734b98d515a387c2382071a59552bf.jpg",
+            "sha256": "ec05ee11b84e046a813c45393b47f78951734b98d515a387c2382071a59552bf",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:width-wide"],
+            "sourceSheet": "67765b1039a6a9f2b3a44a3b59e028854e2df437a9d2a50a8aa2bb4dfbb02328",
+            "sourceSha256": "67765b1039a6a9f2b3a44a3b59e028854e2df437a9d2a50a8aa2bb4dfbb02328",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "wide (width or space)",
+                    "de": "breit",
+                    "id": "lebar",
+                    "ja": "広い"
+                }
+            }
+        },
+        {
+            "id": "4f46880320d08d58b1040f221050aa0791ffe2a5b8de83525f10b51b3a19b01d",
+            "path": "images/4f46880320d08d58b1040f221050aa0791ffe2a5b8de83525f10b51b3a19b01d.jpg",
+            "sha256": "4f46880320d08d58b1040f221050aa0791ffe2a5b8de83525f10b51b3a19b01d",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:width-narrow"],
+            "sourceSheet": "6e544b4bcd1fad939ed14bfaf548214463254ae023453da7e1f4c9144f6a2ace",
+            "sourceSha256": "6e544b4bcd1fad939ed14bfaf548214463254ae023453da7e1f4c9144f6a2ace",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "narrow (width or space)",
+                    "de": "schmal",
+                    "id": "sempit",
+                    "ja": "狭い"
+                }
+            }
+        },
+        {
+            "id": "4d51ffbdf858cde240136cebf9df0be60e058700b000685c014d30917351520b",
+            "path": "images/4d51ffbdf858cde240136cebf9df0be60e058700b000685c014d30917351520b.jpg",
+            "sha256": "4d51ffbdf858cde240136cebf9df0be60e058700b000685c014d30917351520b",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:location-inside"],
+            "sourceSheet": "63e8e5fea8812e37f3dcd2dab5ef63a5672af001b59ccd7d0b8937941020c11d",
+            "sourceSha256": "63e8e5fea8812e37f3dcd2dab5ef63a5672af001b59ccd7d0b8937941020c11d",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "inside",
+                    "de": "drinnen",
+                    "id": "di dalam",
+                    "ja": "中"
+                }
+            }
+        },
+        {
+            "id": "849fccdbd4e00d54d7ca578eabcb4f1df65a59bf8ed50a5ea1a8a93ad5fa0292",
+            "path": "images/849fccdbd4e00d54d7ca578eabcb4f1df65a59bf8ed50a5ea1a8a93ad5fa0292.jpg",
+            "sha256": "849fccdbd4e00d54d7ca578eabcb4f1df65a59bf8ed50a5ea1a8a93ad5fa0292",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:location-outside"],
+            "sourceSheet": "ed602cfe74d03e61babeb20814ef7a41b4df3b6cf24f8930498d3ee4147aa8ab",
+            "sourceSha256": "ed602cfe74d03e61babeb20814ef7a41b4df3b6cf24f8930498d3ee4147aa8ab",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "outside",
+                    "de": "draußen",
+                    "id": "di luar",
+                    "ja": "外"
+                }
+            }
+        },
+        {
+            "id": "267ceb14a92be9b3bf505e988e2791d4b0deafd7ac6a3f5622dbe40fcbbee6e1",
+            "path": "images/267ceb14a92be9b3bf505e988e2791d4b0deafd7ac6a3f5622dbe40fcbbee6e1.jpg",
+            "sha256": "267ceb14a92be9b3bf505e988e2791d4b0deafd7ac6a3f5622dbe40fcbbee6e1",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:depth-deep"],
+            "sourceSheet": "831b7e685eadf03891040b69a7b17557553793e8fbabf7a8398f4eb4974c305a",
+            "sourceSha256": "831b7e685eadf03891040b69a7b17557553793e8fbabf7a8398f4eb4974c305a",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "deep (depth)",
+                    "de": "tief",
+                    "id": "dalam",
+                    "ja": "深い"
+                }
+            }
+        },
+        {
+            "id": "33656bc81b70eb7ff55f0d6d19e07b20adcf0b254ce5b080a20292fc700c5a92",
+            "path": "images/33656bc81b70eb7ff55f0d6d19e07b20adcf0b254ce5b080a20292fc700c5a92.jpg",
+            "sha256": "33656bc81b70eb7ff55f0d6d19e07b20adcf0b254ce5b080a20292fc700c5a92",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:depth-shallow"],
+            "sourceSheet": "e14b50bc6c06994a2b792bc7a1e9e940cfb52d0f09b7dcc492acde006e0ad3c1",
+            "sourceSha256": "e14b50bc6c06994a2b792bc7a1e9e940cfb52d0f09b7dcc492acde006e0ad3c1",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "shallow (depth)",
+                    "de": "flach",
+                    "id": "dangkal",
+                    "ja": "浅い"
+                }
+            }
+        },
+        {
+            "id": "1315d81214a158a5dd5b2d64dedaf681786793ff615a2c5f5fe07001a225d928",
+            "path": "images/1315d81214a158a5dd5b2d64dedaf681786793ff615a2c5f5fe07001a225d928.jpg",
+            "sha256": "1315d81214a158a5dd5b2d64dedaf681786793ff615a2c5f5fe07001a225d928",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:light-level-bright"],
+            "sourceSheet": "35e18777953e664edab244634c03277e7c9951466b654e1a62c40396511f94d5",
+            "sourceSha256": "35e18777953e664edab244634c03277e7c9951466b654e1a62c40396511f94d5",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "bright (light level)",
+                    "de": "hell",
+                    "id": "terang",
+                    "ja": "明るい"
+                }
+            }
+        },
+        {
+            "id": "3b23b6db9a34129b04c182627698d3738b4d28e7cb0969f68fc9467bdec3863f",
+            "path": "images/3b23b6db9a34129b04c182627698d3738b4d28e7cb0969f68fc9467bdec3863f.jpg",
+            "sha256": "3b23b6db9a34129b04c182627698d3738b4d28e7cb0969f68fc9467bdec3863f",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:light-level-dark"],
+            "sourceSheet": "9abb3162247bb7ce3cfa3ea4a29373a461dfc0a31f9c177d50c7a52ef3b9e5ff",
+            "sourceSha256": "9abb3162247bb7ce3cfa3ea4a29373a461dfc0a31f9c177d50c7a52ef3b9e5ff",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "dark (light level)",
+                    "de": "dunkel",
+                    "id": "gelap",
+                    "ja": "暗い"
+                }
+            }
+        },
+        {
+            "id": "19a83b6fe60f75bca6a3c1cc47ba0b3bcef5f4361225b4ad291e9ea1ea87aa50",
+            "path": "images/19a83b6fe60f75bca6a3c1cc47ba0b3bcef5f4361225b4ad291e9ea1ea87aa50.jpg",
+            "sha256": "19a83b6fe60f75bca6a3c1cc47ba0b3bcef5f4361225b4ad291e9ea1ea87aa50",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:warm-accessories-scarf"],
+            "sourceSheet": "20b775a26649c7240c85ad9588efdc3db5c8030738197796bef1f170e8a042b2",
+            "sourceSha256": "20b775a26649c7240c85ad9588efdc3db5c8030738197796bef1f170e8a042b2",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "scarf (warm neckwear)",
+                    "de": "Schal",
+                    "id": "syal",
+                    "ja": "マフラー（防寒用）"
+                }
+            }
+        },
+        {
+            "id": "65f00bcb2f36e87bed9477cf13dbdbc3f5d0810e364ea1dcc0069458a0f53b22",
+            "path": "images/65f00bcb2f36e87bed9477cf13dbdbc3f5d0810e364ea1dcc0069458a0f53b22.jpg",
+            "sha256": "65f00bcb2f36e87bed9477cf13dbdbc3f5d0810e364ea1dcc0069458a0f53b22",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:warm-accessories-glove"],
+            "sourceSheet": "6cb7034800a3799f30b0208ca33b05ed05d1e2d86f160bd38c248ca37a00c7e4",
+            "sourceSha256": "6cb7034800a3799f30b0208ca33b05ed05d1e2d86f160bd38c248ca37a00c7e4",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "glove (handwear)",
+                    "de": "Handschuh",
+                    "id": "sarung tangan",
+                    "ja": "手袋"
+                }
+            }
+        },
+        {
+            "id": "6e769490927a72acd814c7337cdf8a7e2d567914df7ba3e023f88f733a7f8597",
+            "path": "images/6e769490927a72acd814c7337cdf8a7e2d567914df7ba3e023f88f733a7f8597.jpg",
+            "sha256": "6e769490927a72acd814c7337cdf8a7e2d567914df7ba3e023f88f733a7f8597",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:material-feel-hard"],
+            "sourceSheet": "dc2c1a6ad91695f6b067b71a5b455ff5d654ba36582121fa481f93969c67c336",
+            "sourceSha256": "dc2c1a6ad91695f6b067b71a5b455ff5d654ba36582121fa481f93969c67c336",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "hard (resistant to deformation)",
+                    "de": "hart (Material)",
+                    "id": "keras (bahan)",
+                    "ja": "硬い（材質）"
+                }
+            }
+        },
+        {
+            "id": "acadbd5d735e33b230e0d8d7ad350a33bf62a0f9d1cce9f7e31470e40b76f190",
+            "path": "images/acadbd5d735e33b230e0d8d7ad350a33bf62a0f9d1cce9f7e31470e40b76f190.jpg",
+            "sha256": "acadbd5d735e33b230e0d8d7ad350a33bf62a0f9d1cce9f7e31470e40b76f190",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:material-feel-soft"],
+            "sourceSheet": "b768e0dec2e24ee355c910469c003e644552244326b6427f84a7debe695dfb58",
+            "sourceSha256": "b768e0dec2e24ee355c910469c003e644552244326b6427f84a7debe695dfb58",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "soft (easily compressed)",
+                    "de": "weich (Material)",
+                    "id": "lunak (bahan)",
+                    "ja": "柔らかい（材質）"
+                }
+            }
+        },
+        {
+            "id": "14edf78f25bfd27c84e62a561acc684900c7818c6006a861a2dbd55085c98098",
+            "path": "images/14edf78f25bfd27c84e62a561acc684900c7818c6006a861a2dbd55085c98098.jpg",
+            "sha256": "14edf78f25bfd27c84e62a561acc684900c7818c6006a861a2dbd55085c98098",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:recreation-ball"],
+            "sourceSheet": "0bfc25df35322722668ddbe962f9827b309c738b5e6f9c2f64a03bf6683d0df6",
+            "sourceSha256": "0bfc25df35322722668ddbe962f9827b309c738b5e6f9c2f64a03bf6683d0df6",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "ball (sports or play)",
+                    "de": "Ball (Sport oder Spiel)",
+                    "id": "bola (olahraga atau permainan)",
+                    "ja": "ボール（球）"
+                }
+            }
+        },
+        {
+            "id": "78eb48ea21288de30f4fe73f6097c50f88989af1da5629909cf714b6610b0788",
+            "path": "images/78eb48ea21288de30f4fe73f6097c50f88989af1da5629909cf714b6610b0788.jpg",
+            "sha256": "78eb48ea21288de30f4fe73f6097c50f88989af1da5629909cf714b6610b0788",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:recreation-racket"],
+            "sourceSheet": "2c03e8afef523d92131139aef4c10187fda0c876ae5b237b29061501c60333ee",
+            "sourceSha256": "2c03e8afef523d92131139aef4c10187fda0c876ae5b237b29061501c60333ee",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "racket (sports equipment)",
+                    "de": "Schläger (Sportgerät)",
+                    "id": "raket (alat olahraga)",
+                    "ja": "ラケット（スポーツ用具）"
+                }
+            }
+        },
+        {
+            "id": "f197314c7d85550291489855d31b391744913a6aaec56f5b10f7b41be81e00b5",
+            "path": "images/f197314c7d85550291489855d31b391744913a6aaec56f5b10f7b41be81e00b5.jpg",
+            "sha256": "f197314c7d85550291489855d31b391744913a6aaec56f5b10f7b41be81e00b5",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:outings-museum"],
+            "sourceSheet": "58e262e05f04365a418246a9abcd9b952735f2d9372e9cd6fccd49df94ce016b",
+            "sourceSha256": "58e262e05f04365a418246a9abcd9b952735f2d9372e9cd6fccd49df94ce016b",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "museum (public collection)",
+                    "de": "Museum",
+                    "id": "museum",
+                    "ja": "博物館"
+                }
+            }
+        },
+        {
+            "id": "252b7029dee517975cd17ae7fb7376daaebdf75158d5c5a655020f40e0e1f094",
+            "path": "images/252b7029dee517975cd17ae7fb7376daaebdf75158d5c5a655020f40e0e1f094.jpg",
+            "sha256": "252b7029dee517975cd17ae7fb7376daaebdf75158d5c5a655020f40e0e1f094",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:outings-zoo"],
+            "sourceSheet": "86c635b4a00d3927e6302f36d5b0b8b46e492d048b84223e0417134282e64ddc",
+            "sourceSha256": "86c635b4a00d3927e6302f36d5b0b8b46e492d048b84223e0417134282e64ddc",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "zoo",
+                    "de": "Zoo",
+                    "id": "kebun binatang",
+                    "ja": "動物園"
+                }
+            }
+        },
+        {
+            "id": "1917233135f528b1d6108461b079c247e504822ba4a6b9ee21d86a42dbb71418",
+            "path": "images/1917233135f528b1d6108461b079c247e504822ba4a6b9ee21d86a42dbb71418.jpg",
+            "sha256": "1917233135f528b1d6108461b079c247e504822ba4a6b9ee21d86a42dbb71418",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:correspondence-letter"],
+            "sourceSheet": "c41de4af1b6c52c480a326503e0d2edb9a657ff9f60e9dc62c353db8bd576783",
+            "sourceSha256": "c41de4af1b6c52c480a326503e0d2edb9a657ff9f60e9dc62c353db8bd576783",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "letter (written message)",
+                    "de": "Brief",
+                    "id": "surat",
+                    "ja": "手紙"
+                }
+            }
+        },
+        {
+            "id": "cd966b4d8ba04213a6a403fc29939d8c1e9122a667a478bc1667b1918a40f942",
+            "path": "images/cd966b4d8ba04213a6a403fc29939d8c1e9122a667a478bc1667b1918a40f942.jpg",
+            "sha256": "cd966b4d8ba04213a6a403fc29939d8c1e9122a667a478bc1667b1918a40f942",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:correspondence-postcard"],
+            "sourceSheet": "ad7fff18a0b384f90abc5975790d0172826f7321d12dea40127f98cdf5ea97d1",
+            "sourceSha256": "ad7fff18a0b384f90abc5975790d0172826f7321d12dea40127f98cdf5ea97d1",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "postcard",
+                    "de": "Postkarte",
+                    "id": "kartu pos",
+                    "ja": "葉書"
+                }
+            }
+        },
+        {
+            "id": "00ed3eff2a9443ad44df29146fd3f1dc92f3059946dd5650403479141bb595e3",
+            "path": "images/00ed3eff2a9443ad44df29146fd3f1dc92f3059946dd5650403479141bb595e3.jpg",
+            "sha256": "00ed3eff2a9443ad44df29146fd3f1dc92f3059946dd5650403479141bb595e3",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:delivery-send"],
+            "sourceSheet": "1ed40bea7d226e066dea588064c2332cd1d6f65db6d98289ef3a84c07af87332",
+            "sourceSha256": "1ed40bea7d226e066dea588064c2332cd1d6f65db6d98289ef3a84c07af87332",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "send (a message or item)",
+                    "de": "senden",
+                    "id": "mengirim",
+                    "ja": "送る"
+                }
+            }
+        },
+        {
+            "id": "1d0bdf97165dabb73f8f1870c7e388b5b5e0d875575989726f28bbd89115ba0c",
+            "path": "images/1d0bdf97165dabb73f8f1870c7e388b5b5e0d875575989726f28bbd89115ba0c.jpg",
+            "sha256": "1d0bdf97165dabb73f8f1870c7e388b5b5e0d875575989726f28bbd89115ba0c",
+            "width": 1254,
+            "height": 1254,
+            "entryIds": ["ja:word:delivery-carry"],
+            "sourceSheet": "92a3551f86fc7425e0801d972d2989d3eea535c5abeb339a01157d6f4b685020",
+            "sourceSha256": "92a3551f86fc7425e0801d972d2989d3eea535c5abeb339a01157d6f4b685020",
+            "crop": [0, 0, 1254, 1254],
+            "metadata": {
+                "labels": {
+                    "en": "carry (transport)",
+                    "de": "tragen / transportieren",
+                    "id": "membawa / mengangkut",
+                    "ja": "運ぶ"
                 }
             }
         }

@@ -1,0 +1,147 @@
+[
+    {
+        "id": "ja:sentence:wildlife-example-fox-habitat",
+        "label": "きつねは森にいる",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/ee6e5e7cf5bd510778c16524f5493c0df768794fd4d736856381e6d20c4dcd1e.wav",
+            "pronunciation": ["きつねはもりにいる"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:wildlife-fox",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:nature-forest",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:ni",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:iru-exist",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:wildlife-example-fox-habitat",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:wildlife-example-bear-movement",
+        "label": "熊はゆっくり歩く",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/d23922c0516964aece490085398e643cffa732193549b396540a552f047655b7.wav",
+            "pronunciation": ["くまはゆっくりあるく"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:wildlife-bear",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:yukkuri",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:word:aruku",
+                "relation": "words",
+                "position": 3
+            },
+            {
+                "entryId": "ja:definition:wildlife-example-bear-movement",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:wildlife-example-monkey-observation",
+        "label": "私は猿を見る",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/b0a226eade19c7f27475207fc3d9ce760eb19ce52a6108291ec23ae51abbaa25.wav",
+            "pronunciation": ["わたしはさるをみる"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:watashi",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:wildlife-monkey",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:miru",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:wildlife-example-monkey-observation",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:wildlife-example-elephant-size",
+        "label": "象は大きい",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/cf22d5ed32d52bc7858698e9d56d9d405cf4c80a1cad93e6030351df60cf6c3c.wav",
+            "pronunciation": ["ぞうはおおきい"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:wildlife-elephant",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:ookii",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:definition:wildlife-example-elephant-size",
+                "relation": "definitions"
+            }
+        ]
+    }
+]

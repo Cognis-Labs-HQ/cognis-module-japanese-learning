@@ -1,0 +1,162 @@
+[
+    {
+        "id": "ja:sentence:directions-location-left",
+        "label": "学校は左にある",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/4a51463d19c04742019bd53460f517e595e50f15d74b5f4abe83a3124460293b.wav",
+            "pronunciation": ["がっこうはひだりにある"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:gakkou",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:directions-left",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:ni",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:aru-exist",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:directions-location-left",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:directions-location-right",
+        "label": "駅は右にある",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/4a93e8e74e9aa0aa74a352fd1b142fc50740e91b50f4a411ad2112a787a8abe7.wav",
+            "pronunciation": ["えきはみぎにある"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:travel-station",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:directions-right",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:ni",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:aru-exist",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:directions-location-right",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:directions-location-north",
+        "label": "山は北にある",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/e44d88e3a80a8efcf0f8b68d9c130f98ae514a85293d52a8e5e293c68b9a8460.wav",
+            "pronunciation": ["やまはきたにある"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:yama",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:directions-north",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:ni",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:aru-exist",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:directions-location-north",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:directions-location-south",
+        "label": "海は南にある",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/ea5d41b780962fc6719df90f2b7f94a583d4f4687b88ab6f1178f094c6293a9b.wav",
+            "pronunciation": ["うみはみなみにある"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:umi",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:directions-south",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:ni",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:aru-exist",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:directions-location-south",
+                "relation": "definitions"
+            }
+        ]
+    }
+]

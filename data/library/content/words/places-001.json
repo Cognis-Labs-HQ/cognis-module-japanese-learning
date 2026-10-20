@@ -1,0 +1,329 @@
+[
+    {
+        "id": "ja:word:complete-pronunciation-places-library",
+        "label": "としょかん",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["としょかん"],
+            "audio": "audio/430c9445d72adf3a29387e25fd3b65f62b4b6c0a772d2c518bf9f358d1e15474.wav"
+        },
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:kanji-reading-expanded-56f3-01",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:word:kanji-reading-expanded-66f8-01",
+                        "relation": "pronunciation-readings",
+                        "position": 1
+                    }
+                ]
+            ],
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:ka",
+                        "relation": "reading-kana",
+                        "position": 3
+                    },
+                    {
+                        "entryId": "ja:char:n",
+                        "relation": "reading-kana",
+                        "position": 4
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:places-library",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:places-library",
+        "label": "図書館",
+        "class": "lexical:noun",
+        "fields": {
+            "pronunciation": ["としょかん"],
+            "reference_images": [
+                "images/0bfe36fe90dcb6f82600efb2d069bd09bb4fbc475d85db8f6268bd2fa630ecc5.jpg"
+            ],
+            "audio": "audio/430c9445d72adf3a29387e25fd3b65f62b4b6c0a772d2c518bf9f358d1e15474.wav"
+        },
+        "tags": ["noun", "places"],
+        "references": [
+            {
+                "entryId": "ja:definition:places-library",
+                "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-56f3",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:kanji:expanded-66f8",
+                "relation": "spelling",
+                "position": 1
+            },
+            {
+                "entryId": "ja:kanji:expanded-9928",
+                "relation": "spelling",
+                "position": 2
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-places-library",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:complete-pronunciation-places-hospital",
+        "label": "びょういん",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["びょういん"],
+            "audio": "audio/c35068c839da35557f146cd8d3c64eb110a267dee6555ef6d9e8ffae7a9a5ad9.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:bi",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:small-yo",
+                        "relation": "reading-kana",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:u",
+                        "relation": "reading-kana",
+                        "position": 2
+                    },
+                    {
+                        "entryId": "ja:char:i",
+                        "relation": "reading-kana",
+                        "position": 3
+                    },
+                    {
+                        "entryId": "ja:char:n",
+                        "relation": "reading-kana",
+                        "position": 4
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:places-hospital",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:places-hospital",
+        "label": "病院",
+        "class": "lexical:noun",
+        "fields": {
+            "pronunciation": ["びょういん"],
+            "reference_images": [
+                "images/b7fa1f434b6ca99c474193e483280ddf12fd47f5c859d412178625c3e7ac523d.jpg"
+            ],
+            "audio": "audio/c35068c839da35557f146cd8d3c64eb110a267dee6555ef6d9e8ffae7a9a5ad9.wav"
+        },
+        "tags": ["noun", "places"],
+        "references": [
+            {
+                "entryId": "ja:definition:places-hospital",
+                "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-75c5",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:kanji:expanded-9662",
+                "relation": "spelling",
+                "position": 1
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-places-hospital",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:complete-pronunciation-places-supermarket",
+        "label": "スーパー",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["スーパー"],
+            "audio": "audio/4fe867dd6a28eb23632a97e20d639fe0538f619eebd6614d0dceaf7bc0780f72.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:ka:su",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:long-vowel-mark",
+                        "relation": "reading-kana",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:ka:pa",
+                        "relation": "reading-kana",
+                        "position": 2
+                    },
+                    {
+                        "entryId": "ja:char:long-vowel-mark",
+                        "relation": "reading-kana",
+                        "position": 3
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:places-supermarket",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:places-supermarket",
+        "label": "スーパー",
+        "class": "lexical:noun",
+        "fields": {
+            "pronunciation": ["スーパー"],
+            "reference_images": [
+                "images/d8019808784508497ee3d1cc35c0424fa1916d5b5c85e74f37076861c1583114.jpg"
+            ],
+            "audio": "audio/4fe867dd6a28eb23632a97e20d639fe0538f619eebd6614d0dceaf7bc0780f72.wav"
+        },
+        "tags": ["noun", "places"],
+        "references": [
+            {
+                "entryId": "ja:definition:places-supermarket",
+                "relation": "definitions"
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-places-supermarket",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:complete-pronunciation-places-restaurant",
+        "label": "レストラン",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["レストラン"],
+            "audio": "audio/df5bfce667c3edb0f0939b31e06a642a84733d7a542eb474176328264a3ed42e.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:ka:re",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:ka:su",
+                        "relation": "reading-kana",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:ka:to",
+                        "relation": "reading-kana",
+                        "position": 2
+                    },
+                    {
+                        "entryId": "ja:char:ka:ra",
+                        "relation": "reading-kana",
+                        "position": 3
+                    },
+                    {
+                        "entryId": "ja:char:ka:n",
+                        "relation": "reading-kana",
+                        "position": 4
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:places-restaurant",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:places-restaurant",
+        "label": "レストラン",
+        "class": "lexical:noun",
+        "fields": {
+            "pronunciation": ["レストラン"],
+            "reference_images": [
+                "images/d1548873f5db0e13114ce655f97fa53aa147d96b132f252051aff971186a5def.jpg"
+            ],
+            "audio": "audio/df5bfce667c3edb0f0939b31e06a642a84733d7a542eb474176328264a3ed42e.wav"
+        },
+        "tags": ["noun", "places"],
+        "references": [
+            {
+                "entryId": "ja:definition:places-restaurant",
+                "relation": "definitions"
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-places-restaurant",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    }
+]

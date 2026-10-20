@@ -61,7 +61,7 @@
     },
     {
         "id": "ja:word:meat",
-        "label": "にく",
+        "label": "肉",
         "class": "lexical:noun",
         "tags": ["noun", "beginner", "food"],
         "fields": {
@@ -75,6 +75,11 @@
             {
                 "entryId": "ja:def:foodbody-meat",
                 "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-8089",
+                "relation": "spelling",
+                "position": 0
             }
         ],
         "referenceGroups": {
@@ -91,7 +96,7 @@
     },
     {
         "id": "ja:word:chicken",
-        "label": "とりにく",
+        "label": "鶏肉",
         "class": "lexical:noun",
         "tags": ["noun", "beginner", "food"],
         "fields": {
@@ -105,6 +110,16 @@
             {
                 "entryId": "ja:def:foodbody-chicken",
                 "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-9d8f",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:kanji:expanded-8089",
+                "relation": "spelling",
+                "position": 1
             }
         ],
         "referenceGroups": {
@@ -121,7 +136,7 @@
     },
     {
         "id": "ja:word:beef",
-        "label": "ぎゅうにく",
+        "label": "牛肉",
         "class": "lexical:noun",
         "tags": ["noun", "beginner", "food"],
         "fields": {
@@ -135,6 +150,16 @@
             {
                 "entryId": "ja:def:foodbody-beef",
                 "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-725b",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:kanji:expanded-8089",
+                "relation": "spelling",
+                "position": 1
             }
         ],
         "referenceGroups": {

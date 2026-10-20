@@ -1,0 +1,84 @@
+[
+    {
+        "path": "audio/ff9f3df802fdc01fe019d09b6f8b2644903b3e195c0dfb655fc20f8c29b67187.wav",
+        "text": "ノート",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "ノート",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "ノート",
+                "semanticRole": "lexicalUnit",
+                "readings": ["ノート"]
+            }
+        ],
+        "entries": [
+            "ja:word:school-notebook",
+            "ja:word:complete-pronunciation-school-notebook"
+        ],
+        "variants": [],
+        "sha256": "ff9f3df802fdc01fe019d09b6f8b2644903b3e195c0dfb655fc20f8c29b67187",
+        "frames": 16564,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "81ed4c06020adbc1cc9b7bc38aefee32603e69038e87bab69143b15849425517"
+        }
+    },
+    {
+        "path": "audio/88d2854faa5453ff798894ba827610e5f00c9785366d6ba9f8f99c6071d19181.wav",
+        "text": "じょうぎ",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "定規",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "じょうぎ",
+                "semanticRole": "lexicalUnit",
+                "readings": ["じょうぎ"]
+            },
+            {
+                "language": "ja",
+                "label": "定規",
+                "semanticRole": "lexicalUnit",
+                "readings": ["じょうぎ"]
+            }
+        ],
+        "entries": [
+            "ja:word:school-ruler",
+            "ja:word:complete-pronunciation-school-ruler"
+        ],
+        "variants": [],
+        "sha256": "88d2854faa5453ff798894ba827610e5f00c9785366d6ba9f8f99c6071d19181",
+        "frames": 17678,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "e43b6cd2ec78ba37dc5e5ea8721869d07ca0bf6b56ddc6d995f406e5b7417c20"
+        }
+    }
+]

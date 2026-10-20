@@ -1,0 +1,254 @@
+[
+    {
+        "path": "audio/f5d368930d17c9a05259b13587ad5fab998298ef4c996631f6a5cb145cf69287.wav",
+        "entryId": "ja:sentence:posture-example-take-seat",
+        "label": "椅子に座る",
+        "parts": [
+            {
+                "path": "audio/d0a12142b20f0a5d21786d9417c2582d03cdcdf1dfc5e1dea710a5502081b6a3.wav",
+                "entryId": "ja:word:chair"
+            },
+            {
+                "path": "audio/1615cf278c2962c1657907b3686d653625229af2375f90dda5bfd5b178c7aedb.wav",
+                "entryId": "ja:particle:ni"
+            },
+            {
+                "path": "audio/006a058bf4a798482060aac1a01fdc33c0e07da82e545a1a03880cccfc8000e5.wav",
+                "entryId": "ja:word:posture-sit"
+            },
+            { "pauseMs": 400 }
+        ],
+        "gapMs": 90,
+        "segments": [
+            {
+                "path": "audio/d0a12142b20f0a5d21786d9417c2582d03cdcdf1dfc5e1dea710a5502081b6a3.wav",
+                "entryId": "ja:word:chair",
+                "startFrame": 2400,
+                "frameCount": 16564
+            },
+            {
+                "path": "audio/1615cf278c2962c1657907b3686d653625229af2375f90dda5bfd5b178c7aedb.wav",
+                "entryId": "ja:particle:ni",
+                "startFrame": 21124,
+                "frameCount": 13220
+            },
+            {
+                "path": "audio/006a058bf4a798482060aac1a01fdc33c0e07da82e545a1a03880cccfc8000e5.wav",
+                "entryId": "ja:word:posture-sit",
+                "startFrame": 36504,
+                "frameCount": 18793
+            }
+        ],
+        "sha256": "f5d368930d17c9a05259b13587ad5fab998298ef4c996631f6a5cb145cf69287",
+        "frames": 67057,
+        "input": {
+            "language": "ja",
+            "label": "椅子に座る",
+            "semanticRole": "orderedLexicalSequence",
+            "readings": ["いすにすわる"]
+        },
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "construction": "Exact constituent PCM with explicit selected transformations."
+        }
+    },
+    {
+        "path": "audio/0315942358677cad5bce037c44ce4b205d8066d589d85a4e2094e9d6a40d1bed.wav",
+        "entryId": "ja:sentence:posture-example-stand-here",
+        "label": "ここに立つ",
+        "parts": [
+            {
+                "path": "audio/f298e745d293e821e9c245438bda27c7da9035ad01dbd7b473e4d5ab8b858b9a.wav",
+                "entryId": "ja:word:koko"
+            },
+            {
+                "path": "audio/1615cf278c2962c1657907b3686d653625229af2375f90dda5bfd5b178c7aedb.wav",
+                "entryId": "ja:particle:ni"
+            },
+            {
+                "path": "audio/a6ecee341ca93943f41fb8259a477e39dbfecf754c69a3d9bedbaa81bd95af41.wav",
+                "entryId": "ja:word:posture-stand"
+            },
+            { "pauseMs": 400 }
+        ],
+        "gapMs": 90,
+        "segments": [
+            {
+                "path": "audio/f298e745d293e821e9c245438bda27c7da9035ad01dbd7b473e4d5ab8b858b9a.wav",
+                "entryId": "ja:word:koko",
+                "startFrame": 2400,
+                "frameCount": 11459
+            },
+            {
+                "path": "audio/1615cf278c2962c1657907b3686d653625229af2375f90dda5bfd5b178c7aedb.wav",
+                "entryId": "ja:particle:ni",
+                "startFrame": 16019,
+                "frameCount": 13220
+            },
+            {
+                "path": "audio/a6ecee341ca93943f41fb8259a477e39dbfecf754c69a3d9bedbaa81bd95af41.wav",
+                "entryId": "ja:word:posture-stand",
+                "startFrame": 31399,
+                "frameCount": 9512
+            }
+        ],
+        "sha256": "0315942358677cad5bce037c44ce4b205d8066d589d85a4e2094e9d6a40d1bed",
+        "frames": 52671,
+        "input": {
+            "language": "ja",
+            "label": "ここに立つ",
+            "semanticRole": "orderedLexicalSequence",
+            "readings": ["ここにたつ"]
+        },
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "construction": "Exact constituent PCM with explicit selected transformations."
+        }
+    },
+    {
+        "path": "audio/1bf18b5eb270dc6ead59c9d5b5a8f72cb4e2cea1ca9202b4301eabe7b7148a74.wav",
+        "entryId": "ja:sentence:posture-example-sit-with-friend",
+        "label": "友達とソファに座る",
+        "parts": [
+            {
+                "path": "audio/b735f033be7289c86f7f84621476005af35c3fdec9b7e43f2b7531609f5d70b1.wav",
+                "entryId": "ja:word:tomodachi"
+            },
+            {
+                "path": "audio/606f3c1823245eee4195e2195e8189dad7df8cd21b7e6550a55b5c56e585916b.wav",
+                "entryId": "ja:particle:to"
+            },
+            {
+                "path": "audio/f3b01bb68952ac8b038968965bce07193e72311e50c1a3fd04fe4b45c34bac84.wav",
+                "entryId": "ja:word:furnishings-sofa"
+            },
+            {
+                "path": "audio/1615cf278c2962c1657907b3686d653625229af2375f90dda5bfd5b178c7aedb.wav",
+                "entryId": "ja:particle:ni"
+            },
+            {
+                "path": "audio/006a058bf4a798482060aac1a01fdc33c0e07da82e545a1a03880cccfc8000e5.wav",
+                "entryId": "ja:word:posture-sit"
+            },
+            { "pauseMs": 400 }
+        ],
+        "gapMs": 90,
+        "segments": [
+            {
+                "path": "audio/b735f033be7289c86f7f84621476005af35c3fdec9b7e43f2b7531609f5d70b1.wav",
+                "entryId": "ja:word:tomodachi",
+                "startFrame": 2400,
+                "frameCount": 17503
+            },
+            {
+                "path": "audio/606f3c1823245eee4195e2195e8189dad7df8cd21b7e6550a55b5c56e585916b.wav",
+                "entryId": "ja:particle:to",
+                "startFrame": 22063,
+                "frameCount": 12106
+            },
+            {
+                "path": "audio/f3b01bb68952ac8b038968965bce07193e72311e50c1a3fd04fe4b45c34bac84.wav",
+                "entryId": "ja:word:furnishings-sofa",
+                "startFrame": 36329,
+                "frameCount": 15449
+            },
+            {
+                "path": "audio/1615cf278c2962c1657907b3686d653625229af2375f90dda5bfd5b178c7aedb.wav",
+                "entryId": "ja:particle:ni",
+                "startFrame": 53938,
+                "frameCount": 13220
+            },
+            {
+                "path": "audio/006a058bf4a798482060aac1a01fdc33c0e07da82e545a1a03880cccfc8000e5.wav",
+                "entryId": "ja:word:posture-sit",
+                "startFrame": 69318,
+                "frameCount": 18793
+            }
+        ],
+        "sha256": "1bf18b5eb270dc6ead59c9d5b5a8f72cb4e2cea1ca9202b4301eabe7b7148a74",
+        "frames": 99871,
+        "input": {
+            "language": "ja",
+            "label": "友達とソファに座る",
+            "semanticRole": "orderedLexicalSequence",
+            "readings": ["ともだちとソファにすわる"]
+        },
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "construction": "Exact constituent PCM with explicit selected transformations."
+        }
+    },
+    {
+        "path": "audio/2ffced8b3e8f9a74a7c1bb97fbc982d5fc53da009f103a4f794604a09fdc035a.wav",
+        "entryId": "ja:sentence:posture-example-teacher-stand",
+        "label": "先生はそこに立つ",
+        "parts": [
+            {
+                "path": "audio/fbe6fc9dc342d1f031f2ca6bcbb09d9759c5f488797071b2dbbc2e61f95c9c16.wav",
+                "entryId": "ja:word:sensei"
+            },
+            {
+                "path": "audio/d7c9e57654e559dfba3bd6f78c2f27416a61f8b28d56145d84a62fe25b70c94d.wav",
+                "entryId": "ja:particle:wa"
+            },
+            {
+                "path": "audio/7170c62e45ff2a8c76efc708e8f59743d125b0c7c1933ac42d279eeaf22a5c3c.wav",
+                "entryId": "ja:word:soko"
+            },
+            {
+                "path": "audio/1615cf278c2962c1657907b3686d653625229af2375f90dda5bfd5b178c7aedb.wav",
+                "entryId": "ja:particle:ni"
+            },
+            {
+                "path": "audio/a6ecee341ca93943f41fb8259a477e39dbfecf754c69a3d9bedbaa81bd95af41.wav",
+                "entryId": "ja:word:posture-stand"
+            },
+            { "pauseMs": 400 }
+        ],
+        "gapMs": 90,
+        "segments": [
+            {
+                "path": "audio/fbe6fc9dc342d1f031f2ca6bcbb09d9759c5f488797071b2dbbc2e61f95c9c16.wav",
+                "entryId": "ja:word:sensei",
+                "startFrame": 2400,
+                "frameCount": 13988
+            },
+            {
+                "path": "audio/d7c9e57654e559dfba3bd6f78c2f27416a61f8b28d56145d84a62fe25b70c94d.wav",
+                "entryId": "ja:particle:wa",
+                "startFrame": 18548,
+                "frameCount": 12106
+            },
+            {
+                "path": "audio/7170c62e45ff2a8c76efc708e8f59743d125b0c7c1933ac42d279eeaf22a5c3c.wav",
+                "entryId": "ja:word:soko",
+                "startFrame": 32814,
+                "frameCount": 12983
+            },
+            {
+                "path": "audio/1615cf278c2962c1657907b3686d653625229af2375f90dda5bfd5b178c7aedb.wav",
+                "entryId": "ja:particle:ni",
+                "startFrame": 47957,
+                "frameCount": 13220
+            },
+            {
+                "path": "audio/a6ecee341ca93943f41fb8259a477e39dbfecf754c69a3d9bedbaa81bd95af41.wav",
+                "entryId": "ja:word:posture-stand",
+                "startFrame": 63337,
+                "frameCount": 9512
+            }
+        ],
+        "sha256": "2ffced8b3e8f9a74a7c1bb97fbc982d5fc53da009f103a4f794604a09fdc035a",
+        "frames": 84609,
+        "input": {
+            "language": "ja",
+            "label": "先生はそこに立つ",
+            "semanticRole": "orderedLexicalSequence",
+            "readings": ["せんせいはそこにたつ"]
+        },
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "construction": "Exact constituent PCM with explicit selected transformations."
+        }
+    }
+]

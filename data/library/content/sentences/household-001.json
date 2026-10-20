@@ -1,0 +1,112 @@
+[
+    {
+        "id": "ja:sentence:household-example-wash",
+        "label": "手を洗う",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/9d4651348d521003623218c458ecbf064efb2c82da118a9866ce374792fb3208.wav",
+            "pronunciation": ["てをあらう"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:hand",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:household-wash",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:definition:household-example-wash",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:household-example-cook",
+        "label": "明日料理する",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/8185f2b9c64a26dfbb2e4847af65c98fb6bfca734496919169cca10df6895aa3.wav",
+            "pronunciation": ["あしたりょうりする"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:time-tomorrow",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:word:household-cook",
+                "relation": "words",
+                "position": 1
+            },
+            {
+                "entryId": "ja:definition:household-example-cook",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:household-example-clean",
+        "label": "ゆっくり掃除する",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/0353b6c6a13b5549222e0e19913b57248953b28148a1e06e1ca2e2b7afccce1d.wav",
+            "pronunciation": ["ゆっくりそうじする"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:yukkuri",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:word:household-clean",
+                "relation": "words",
+                "position": 1
+            },
+            {
+                "entryId": "ja:definition:household-example-clean",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:household-example-dry",
+        "label": "髪を乾かす",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/3121a2729a8e69adb20b9791bfa2cd86f1a16e98b418c131432ea9ddf2f06e1a.wav",
+            "pronunciation": ["かみをかわかす"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:kami-hair",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:household-dry",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:definition:household-example-dry",
+                "relation": "definitions"
+            }
+        ]
+    }
+]

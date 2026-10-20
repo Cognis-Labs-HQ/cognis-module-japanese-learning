@@ -1,0 +1,137 @@
+[
+    {
+        "id": "ja:sentence:recreation-example-give-friend-ball",
+        "label": "友達にボールをあげる",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/218b69c1a93c5c2b97cfe21ce81294e9c10b9c5dabbae70d113fb19631bd6b40.wav",
+            "pronunciation": ["ともだちにボールをあげる"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:tomodachi",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:ni",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:recreation-ball",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:exchange-give",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:recreation-example-give-friend-ball",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:recreation-example-light-racket",
+        "label": "ラケットは軽いです",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/fb2fdad7fb6522ad370e9942dc7467a045c03015326e899f85c1b4919d69799a.wav",
+            "pronunciation": ["らけっとはかるいです"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:recreation-racket",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:qualities-light",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:word:desu",
+                "relation": "words",
+                "position": 3
+            },
+            {
+                "entryId": "ja:definition:recreation-example-light-racket",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:recreation-example-receive-ball",
+        "label": "ボールをもらう",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/7490f2e47292511d69385fcf9c62665a86b89591a6a030a6d69c2bbc0c3aab90.wav",
+            "pronunciation": ["ボールをもらう"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:recreation-ball",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:exchange-receive",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:definition:recreation-example-receive-ball",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:recreation-example-buy-racket",
+        "label": "ラケットを買う",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/b53c2f58c0406c05ae8fe54f290feaf1d0b3ab11d5738910c60070b11be9acda.wav",
+            "pronunciation": ["らけっとをかう"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:recreation-racket",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:travel-buy",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:definition:recreation-example-buy-racket",
+                "relation": "definitions"
+            }
+        ]
+    }
+]

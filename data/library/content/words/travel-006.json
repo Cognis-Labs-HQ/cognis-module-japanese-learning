@@ -1,0 +1,136 @@
+[
+    {
+        "id": "ja:word:complete-pronunciation-travel-buy",
+        "label": "かう",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["かう"],
+            "audio": "audio/1a880a2cfc93aedb14ed94ad5cbd8ba5a803aa377bb98f0bf534e0ce8905bfd4.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:ka",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:u",
+                        "relation": "reading-kana",
+                        "position": 1
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:word:travel-buy",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:travel-buy",
+        "label": "買う",
+        "class": "lexical:verb",
+        "fields": {
+            "pronunciation": ["かう"],
+            "reference_images": [
+                "images/298a2a0d0529ac1a291af6a8141f9ef705b23199fe96d75188be8fa563f7250b.jpg"
+            ],
+            "audio": "audio/1a880a2cfc93aedb14ed94ad5cbd8ba5a803aa377bb98f0bf534e0ce8905bfd4.wav"
+        },
+        "tags": ["verb", "travel-form-buy"],
+        "references": [
+            {
+                "entryId": "ja:definition:word:travel-buy",
+                "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-8cb7",
+                "relation": "spelling",
+                "position": 0
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-travel-buy",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:complete-pronunciation-travel-wait",
+        "label": "まつ",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["まつ"],
+            "audio": "audio/e283ee5698e2cffd800f451b43608281335332dcba02202ee407da23f7a1143c.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:ma",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:tsu",
+                        "relation": "reading-kana",
+                        "position": 1
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:word:travel-wait",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:travel-wait",
+        "label": "待つ",
+        "class": "lexical:verb",
+        "fields": {
+            "pronunciation": ["まつ"],
+            "reference_images": [
+                "images/2dd35f7ea23f9b1dd3303ed9e80fc3ea33c8b396c950e39bc1231c3c52af7e6c.jpg"
+            ],
+            "audio": "audio/e283ee5698e2cffd800f451b43608281335332dcba02202ee407da23f7a1143c.wav"
+        },
+        "tags": ["verb", "travel-form-wait"],
+        "references": [
+            {
+                "entryId": "ja:definition:word:travel-wait",
+                "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-5f85",
+                "relation": "spelling",
+                "position": 0
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-travel-wait",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    }
+]

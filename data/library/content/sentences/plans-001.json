@@ -1,0 +1,227 @@
+[
+    {
+        "id": "ja:sentence:plans-library-tomorrow",
+        "label": "明日図書館に行く",
+        "class": "composite",
+        "fields": {
+            "pronunciation": ["あしたとしょかんにいく"],
+            "audio": "audio/31b1d51d5e9fd9efbcc681bcdf0e13fe1c82809aeeef1a825d66241bcb662b85.wav"
+        },
+        "references": [
+            {
+                "entryId": "ja:word:time-tomorrow",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:word:places-library",
+                "relation": "words",
+                "position": 1
+            },
+            {
+                "entryId": "ja:particle:ni",
+                "relation": "particles",
+                "position": 2
+            },
+            {
+                "entryId": "ja:word:iku",
+                "relation": "words",
+                "position": 3
+            },
+            {
+                "entryId": "ja:definition:plans-library-tomorrow",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:plans-friend-soon",
+        "label": "友達はもうすぐ来る",
+        "class": "composite",
+        "fields": {
+            "pronunciation": ["ともだちはもうすぐくる"],
+            "audio": "audio/752745976519880615894ca42aa16fffb64103a29768967a6d045536cb8dc57f.wav"
+        },
+        "references": [
+            {
+                "entryId": "ja:word:tomodachi",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:time-soon",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:word:kuru",
+                "relation": "words",
+                "position": 3
+            },
+            {
+                "entryId": "ja:definition:plans-friend-soon",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:plans-restaurant-later",
+        "label": "後でレストランで食べる",
+        "class": "composite",
+        "fields": {
+            "pronunciation": ["あとでレストランでたべる"],
+            "audio": "audio/6f730323488a5b82d185d5ebd2effcd1d27cbb8e52cedb3982bba0e37056a9c3.wav"
+        },
+        "references": [
+            {
+                "entryId": "ja:word:time-later",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:word:places-restaurant",
+                "relation": "words",
+                "position": 1
+            },
+            {
+                "entryId": "ja:particle:de",
+                "relation": "particles",
+                "position": 2
+            },
+            {
+                "entryId": "ja:word:taberu",
+                "relation": "words",
+                "position": 3
+            },
+            {
+                "entryId": "ja:definition:plans-restaurant-later",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:plans-wait-station",
+        "label": "駅で友達を待つ",
+        "class": "composite",
+        "fields": {
+            "pronunciation": ["えきでともだちをまつ"],
+            "audio": "audio/a8fe5bc9986d77272437a2762cc9c5cc94cf2d521e7dd724f126c94b28e44a06.wav"
+        },
+        "references": [
+            {
+                "entryId": "ja:word:travel-station",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:de",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:tomodachi",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:travel-wait",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:plans-wait-station",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:plans-ticket-later",
+        "label": "後で切符を買う",
+        "class": "composite",
+        "fields": {
+            "pronunciation": ["あとできっぷをかう"],
+            "audio": "audio/33f687cdd6b7750b2b019ff33bf54fb87227e5c3a4e89cbbdc2ffa6da1200154.wav"
+        },
+        "references": [
+            {
+                "entryId": "ja:word:time-later",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:word:travel-ticket",
+                "relation": "words",
+                "position": 1
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 2
+            },
+            {
+                "entryId": "ja:word:travel-buy",
+                "relation": "words",
+                "position": 3
+            },
+            {
+                "entryId": "ja:definition:plans-ticket-later",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:plans-learn-tomorrow",
+        "label": "明日学校で日本語を学ぶ",
+        "class": "composite",
+        "fields": {
+            "pronunciation": ["あしたがっこうでにほんごをまなぶ"],
+            "audio": "audio/460e87f07ca7f39758de209dc8c5a9a2ef33ef8ef6e63b3f1bac075383bd2c89.wav"
+        },
+        "references": [
+            {
+                "entryId": "ja:word:time-tomorrow",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:word:gakkou",
+                "relation": "words",
+                "position": 1
+            },
+            {
+                "entryId": "ja:particle:de",
+                "relation": "particles",
+                "position": 2
+            },
+            {
+                "entryId": "ja:word:nihongo",
+                "relation": "words",
+                "position": 3
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 4
+            },
+            {
+                "entryId": "ja:word:manabu",
+                "relation": "words",
+                "position": 5
+            },
+            {
+                "entryId": "ja:definition:plans-learn-tomorrow",
+                "relation": "definitions"
+            }
+        ]
+    }
+]

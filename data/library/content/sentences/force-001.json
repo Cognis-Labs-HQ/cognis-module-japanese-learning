@@ -1,0 +1,162 @@
+[
+    {
+        "id": "ja:sentence:force-example-push-chair",
+        "label": "私は椅子を押す",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/221e5c6e5252ba6f8df91beee28cd81f2e77687654e08a9e63b9f7ccb4189935.wav",
+            "pronunciation": ["わたしはいすをおす"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:watashi",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:chair",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:force-push",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:force-example-push-chair",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:force-example-pull-suitcase",
+        "label": "スーツケースをゆっくり引く",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/99e406c614f9b5fc5ecbb64f83b996f3d02e407beba47fee6cc13effff89662e.wav",
+            "pronunciation": ["すーつけーすをゆっくりひく"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:travel-suitcase",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:yukkuri",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:word:force-pull",
+                "relation": "words",
+                "position": 3
+            },
+            {
+                "entryId": "ja:definition:force-example-pull-suitcase",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:force-example-heavy-box",
+        "label": "箱は重いですが私は押す",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/a735819a1508f33ad3bbf0b50ed1e05f3fbf784e16c58adbfb92deeaba951de0.wav",
+            "pronunciation": ["はこはおもいですがわたしはおす"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:containers-box",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:qualities-heavy",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:word:desuga",
+                "relation": "words",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:watashi",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 5
+            },
+            {
+                "entryId": "ja:word:force-push",
+                "relation": "words",
+                "position": 6
+            },
+            {
+                "entryId": "ja:definition:force-example-heavy-box",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:force-example-move-later",
+        "label": "後でテーブルを引く",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/a0edfa4524e5d40fb9345e744d559dbdf897d3564db2b8792718a8c9dcaeba2c.wav",
+            "pronunciation": ["あとでてーぶるをひく"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:time-later",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:word:table",
+                "relation": "words",
+                "position": 1
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 2
+            },
+            {
+                "entryId": "ja:word:force-pull",
+                "relation": "words",
+                "position": 3
+            },
+            {
+                "entryId": "ja:definition:force-example-move-later",
+                "relation": "definitions"
+            }
+        ]
+    }
+]

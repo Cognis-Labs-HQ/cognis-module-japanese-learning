@@ -1,0 +1,156 @@
+[
+    {
+        "id": "ja:word:complete-pronunciation-courtesy-sorry",
+        "label": "ごめんなさい",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["ごめんなさい"],
+            "audio": "audio/552537441a965ea322a3aa468c2b86f53a4eda0094e20b87284fcee0a828bf65.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:go",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:me",
+                        "relation": "reading-kana",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:n",
+                        "relation": "reading-kana",
+                        "position": 2
+                    },
+                    {
+                        "entryId": "ja:char:na",
+                        "relation": "reading-kana",
+                        "position": 3
+                    },
+                    {
+                        "entryId": "ja:char:sa",
+                        "relation": "reading-kana",
+                        "position": 4
+                    },
+                    {
+                        "entryId": "ja:char:i",
+                        "relation": "reading-kana",
+                        "position": 5
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:courtesy-sorry",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:courtesy-sorry",
+        "label": "ごめんなさい",
+        "class": "lexical:interjection",
+        "fields": {
+            "pronunciation": ["ごめんなさい"],
+            "reference_images": [
+                "images/c8c1cf87c3f859ae6619d332391f1e43e8b2edac0c1dfa03f8a864c20f45c48b.jpg"
+            ],
+            "audio": "audio/552537441a965ea322a3aa468c2b86f53a4eda0094e20b87284fcee0a828bf65.wav"
+        },
+        "tags": ["interjection", "courtesy"],
+        "references": [
+            {
+                "entryId": "ja:definition:courtesy-sorry",
+                "relation": "definitions"
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-courtesy-sorry",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:complete-pronunciation-courtesy-welcome",
+        "label": "ようこそ",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["ようこそ"],
+            "audio": "audio/cde11962987ef05c1e4728772da25d427a713bb7c28dd47895d44c9122bb51b8.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:yo",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:u",
+                        "relation": "reading-kana",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:ko",
+                        "relation": "reading-kana",
+                        "position": 2
+                    },
+                    {
+                        "entryId": "ja:char:so",
+                        "relation": "reading-kana",
+                        "position": 3
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:courtesy-welcome",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:courtesy-welcome",
+        "label": "ようこそ",
+        "class": "lexical:interjection",
+        "fields": {
+            "pronunciation": ["ようこそ"],
+            "reference_images": [
+                "images/30270b11d93adf77d7ef59d32972eea0ba1199b5a73fee7b1aaa06d8437e4550.jpg"
+            ],
+            "audio": "audio/cde11962987ef05c1e4728772da25d427a713bb7c28dd47895d44c9122bb51b8.wav"
+        },
+        "tags": ["interjection", "courtesy"],
+        "references": [
+            {
+                "entryId": "ja:definition:courtesy-welcome",
+                "relation": "definitions"
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-courtesy-welcome",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    }
+]

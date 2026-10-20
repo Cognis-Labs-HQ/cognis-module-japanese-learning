@@ -174,7 +174,7 @@ test("definition records resolve through module-owned localized strings", () => 
     for (const definition of definitions) {
         assert.match(
             definition.fields.string_key,
-            /^japanese:definitions:[a-z0-9]+(?:[-_.][a-z0-9]+)*$/,
+            /^japanese:definitions:[a-z0-9]+(?:\.[a-z0-9]+)*$/,
         );
         assertLocalizedText(definition.fields.translations);
         assert.ok(definition.fields.translations.en.trim());

@@ -1,0 +1,166 @@
+[
+    {
+        "id": "ja:word:complete-pronunciation-travel-arrive",
+        "label": "つく",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["つく"],
+            "audio": "audio/9eb2ff30253a6c3b91626eb6bcc5c468c6d85fcf49414a25f0dcc6d78690c8ad.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:tsu",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:ku",
+                        "relation": "reading-kana",
+                        "position": 1
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:word:travel-arrive",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:travel-arrive",
+        "label": "着く",
+        "class": "lexical:verb",
+        "fields": {
+            "pronunciation": ["つく"],
+            "reference_images": [
+                "images/bd86707b5314d6a53c085f104d26e7974f0e116fc5d2b1d04d5e3fb3f25c3f3d.jpg"
+            ],
+            "audio": "audio/9eb2ff30253a6c3b91626eb6bcc5c468c6d85fcf49414a25f0dcc6d78690c8ad.wav"
+        },
+        "tags": ["verb", "travel-form-arrive"],
+        "references": [
+            {
+                "entryId": "ja:definition:word:travel-arrive",
+                "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-7740",
+                "relation": "spelling",
+                "position": 0
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-travel-arrive",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:complete-pronunciation-travel-depart",
+        "label": "しゅっぱつする",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["しゅっぱつする"],
+            "audio": "audio/85aa6c4c3548eaaf00791ea7d65cf1b431496195bda9fe4d15b8a726f96ed856.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:shi",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:small-yu",
+                        "relation": "reading-kana",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:small-tsu",
+                        "relation": "reading-kana",
+                        "position": 2
+                    },
+                    {
+                        "entryId": "ja:char:pa",
+                        "relation": "reading-kana",
+                        "position": 3
+                    },
+                    {
+                        "entryId": "ja:char:tsu",
+                        "relation": "reading-kana",
+                        "position": 4
+                    },
+                    {
+                        "entryId": "ja:char:su",
+                        "relation": "reading-kana",
+                        "position": 5
+                    },
+                    {
+                        "entryId": "ja:char:ru",
+                        "relation": "reading-kana",
+                        "position": 6
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:word:travel-depart",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:travel-depart",
+        "label": "出発する",
+        "class": "lexical:verb",
+        "fields": {
+            "pronunciation": ["しゅっぱつする"],
+            "reference_images": [
+                "images/c6034124dfc0d801b7e4ee06cd0cf1bad66cfc114ed3133f7aa9596209493533.jpg"
+            ],
+            "audio": "audio/85aa6c4c3548eaaf00791ea7d65cf1b431496195bda9fe4d15b8a726f96ed856.wav"
+        },
+        "tags": ["verb", "travel-form-depart"],
+        "references": [
+            {
+                "entryId": "ja:definition:word:travel-depart",
+                "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-51fa",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:kanji:expanded-767a",
+                "relation": "spelling",
+                "position": 1
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-travel-depart",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    }
+]

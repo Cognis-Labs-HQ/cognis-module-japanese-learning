@@ -150,7 +150,7 @@ test("visible Kanji vocabulary composes from reading segments and Kana", () => {
             contentClass === "reading:pronunciation",
     );
 
-    assert.equal(vocabulary.length, 102);
+    assert.equal(vocabulary.length, 275);
     assert.ok(vocabulary.every(({ hidden }) => hidden !== true));
     assert.equal(shims.length, vocabulary.length);
     for (const word of vocabulary) {
@@ -210,7 +210,7 @@ test("complete pronunciation records resolve to atomic Kana", () => {
             hidden === true &&
             contentClass === "reading:pronunciation",
     );
-    assert.equal(shims.length, 102);
+    assert.equal(shims.length, 275);
     for (const shim of shims)
         assert.equal(
             derivedPronunciation(
@@ -274,7 +274,15 @@ test("only multi-reading Kanji use intermediate pronunciation Vocabulary", () =>
             contentClass === "reading:kanji",
     );
 
-    assert.equal(readings.length, 139);
+    assert.equal(
+        readings.length,
+        kanji
+            .filter((record) => record.fields.pronunciation.length > 1)
+            .reduce(
+                (count, record) => count + record.fields.pronunciation.length,
+                0,
+            ),
+    );
     for (const record of kanji) {
         const relationship =
             record.fields.pronunciation.length > 1

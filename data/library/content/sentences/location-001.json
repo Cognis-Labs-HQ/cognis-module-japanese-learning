@@ -1,0 +1,182 @@
+[
+    {
+        "id": "ja:sentence:location-example-cat-in-box",
+        "label": "猫は箱の中にいる",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/4bd75895d0abc025efd07304c9fff4bc151e25b994cee52bd2e55a25dbd891f5.wav",
+            "pronunciation": ["ねこははこのなかにいる"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:neko",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:containers-box",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:no",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:location-inside",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:particle:ni",
+                "relation": "particles",
+                "position": 5
+            },
+            {
+                "entryId": "ja:word:iru-exist",
+                "relation": "words",
+                "position": 6
+            },
+            {
+                "entryId": "ja:definition:location-example-cat-in-box",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:location-example-key-in-bag",
+        "label": "鍵はかばんの中にある",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/31fdb9ccb55e834633a20db0462875a74c6cdfb257e19add9878b3478db45c8a.wav",
+            "pronunciation": ["かぎはかばんのなかにある"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:key",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:bag",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:no",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:location-inside",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:particle:ni",
+                "relation": "particles",
+                "position": 5
+            },
+            {
+                "entryId": "ja:word:aru-exist",
+                "relation": "words",
+                "position": 6
+            },
+            {
+                "entryId": "ja:definition:location-example-key-in-bag",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:location-example-talk-outside",
+        "label": "外で友達と話す",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/71efbdbc3f3b9e172b8bd5bd6bf0443f09b9b94a97e618d8e2b2ac2467010860.wav",
+            "pronunciation": ["そとでともだちとはなす"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:location-outside",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:de",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:tomodachi",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:to",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:core-speak",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:location-example-talk-outside",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:location-example-wait-school",
+        "label": "学校の外で待つ",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/2009022b39c73a0dcb82a99aaf7b2c393d9154e50ba8181b59c9a630fc8acf75.wav",
+            "pronunciation": ["がっこうのそとでまつ"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:gakkou",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:no",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:location-outside",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:de",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:travel-wait",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:location-example-wait-school",
+                "relation": "definitions"
+            }
+        ]
+    }
+]

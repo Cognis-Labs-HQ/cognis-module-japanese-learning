@@ -1,0 +1,157 @@
+[
+    {
+        "id": "ja:sentence:places-example-library",
+        "label": "図書館はどこですか",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/994bd7b2066a6e37c20ffbad00a89e8526d8ce4b5aa884c5be17b333b27b3557.wav",
+            "pronunciation": ["としょかんはどこですか"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:places-library",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:doko",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:word:desu",
+                "relation": "words",
+                "position": 3
+            },
+            {
+                "entryId": "ja:particle:ka",
+                "relation": "particles",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:places-example-library",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:places-example-hospital",
+        "label": "明日病院に行く",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/a06f265ec356c4fd5d5b4b13c8a4bc7ddb06e2c034049a424757864518e916e5.wav",
+            "pronunciation": ["あしたびょういんにいく"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:time-tomorrow",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:word:places-hospital",
+                "relation": "words",
+                "position": 1
+            },
+            {
+                "entryId": "ja:particle:ni",
+                "relation": "particles",
+                "position": 2
+            },
+            {
+                "entryId": "ja:word:iku",
+                "relation": "words",
+                "position": 3
+            },
+            {
+                "entryId": "ja:definition:places-example-hospital",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:places-example-supermarket",
+        "label": "スーパーでにんじんを買う",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/2a12fbfcd759bfe66abba4497c118966d8740dc9eef7a1334aab8887f49f9e9c.wav",
+            "pronunciation": ["スーパーでにんじんをかう"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:places-supermarket",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:de",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:carrot",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:travel-buy",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:places-example-supermarket",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:places-example-restaurant",
+        "label": "レストランで魚を食べる",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/63a646bff07297e085a5ae34408fc2792564781803a45f5049cf6a3f3aeb5082.wav",
+            "pronunciation": ["レストランでさかなをたべる"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:places-restaurant",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:de",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:fish",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:taberu",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:places-example-restaurant",
+                "relation": "definitions"
+            }
+        ]
+    }
+]

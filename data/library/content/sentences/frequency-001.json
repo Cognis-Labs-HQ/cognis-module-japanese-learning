@@ -1,0 +1,152 @@
+[
+    {
+        "id": "ja:sentence:frequency-example-often",
+        "label": "私はよく水を飲む",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/fe8a8b60bc19f845e1c02282191c07aee0d22bd398603a45d000c794779f3e20.wav",
+            "pronunciation": ["わたしはよくみずをのむ"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:watashi",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:frequency-often",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:word:mizu",
+                "relation": "words",
+                "position": 3
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 4
+            },
+            {
+                "entryId": "ja:word:nomu",
+                "relation": "words",
+                "position": 5
+            },
+            {
+                "entryId": "ja:definition:frequency-example-often",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:frequency-example-sometimes",
+        "label": "時々海で泳ぐ",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/e70130059376217cbfce323b597a0a4b80967d7dc40688912793e0aa182ed86e.wav",
+            "pronunciation": ["ときどきうみでおよぐ"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:frequency-sometimes",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:word:umi",
+                "relation": "words",
+                "position": 1
+            },
+            {
+                "entryId": "ja:particle:de",
+                "relation": "particles",
+                "position": 2
+            },
+            {
+                "entryId": "ja:word:actions-swim",
+                "relation": "words",
+                "position": 3
+            },
+            {
+                "entryId": "ja:definition:frequency-example-sometimes",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:frequency-example-usually",
+        "label": "大抵学校まで歩く",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/c0428e2565f4a7248c344c0f486a759e575522f1e5966f7dd1a4f511649d0daf.wav",
+            "pronunciation": ["たいていがっこうまであるく"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:frequency-usually",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:word:gakkou",
+                "relation": "words",
+                "position": 1
+            },
+            {
+                "entryId": "ja:particle:made",
+                "relation": "particles",
+                "position": 2
+            },
+            {
+                "entryId": "ja:word:aruku",
+                "relation": "words",
+                "position": 3
+            },
+            {
+                "entryId": "ja:definition:frequency-example-usually",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:frequency-example-again",
+        "label": "またここに来る",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/702e85e0729169868256bd1ef301c9b493d606bbb4440020fb5d5fd06b91f8c9.wav",
+            "pronunciation": ["またここにくる"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:frequency-again",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:word:koko",
+                "relation": "words",
+                "position": 1
+            },
+            {
+                "entryId": "ja:particle:ni",
+                "relation": "particles",
+                "position": 2
+            },
+            {
+                "entryId": "ja:word:kuru",
+                "relation": "words",
+                "position": 3
+            },
+            {
+                "entryId": "ja:definition:frequency-example-again",
+                "relation": "definitions"
+            }
+        ]
+    }
+]

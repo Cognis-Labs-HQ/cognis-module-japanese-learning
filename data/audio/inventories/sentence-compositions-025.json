@@ -1,0 +1,108 @@
+[
+    {
+        "path": "audio/354afba182bb4eff98aaff25df212363ea6658d53f02f8112517db2c368ae88b.wav",
+        "entryId": "ja:sentence:courtesy-example-apology-later",
+        "label": "ごめんなさい後で話す",
+        "parts": [
+            {
+                "path": "audio/552537441a965ea322a3aa468c2b86f53a4eda0094e20b87284fcee0a828bf65.wav",
+                "entryId": "ja:word:courtesy-sorry"
+            },
+            {
+                "path": "audio/5bbd2d796927483105abf97a1d9832f53ac688dd339e701c3c05c600ca24a852.wav",
+                "entryId": "ja:word:time-later"
+            },
+            {
+                "path": "audio/e107575563e727cec98a9b0a8d0b85f27779c32f20942cc5b5b52771a5d4b475.wav",
+                "entryId": "ja:word:core-speak"
+            },
+            { "pauseMs": 400 }
+        ],
+        "gapMs": 90,
+        "segments": [
+            {
+                "path": "audio/552537441a965ea322a3aa468c2b86f53a4eda0094e20b87284fcee0a828bf65.wav",
+                "entryId": "ja:word:courtesy-sorry",
+                "startFrame": 2400,
+                "frameCount": 21022
+            },
+            {
+                "path": "audio/5bbd2d796927483105abf97a1d9832f53ac688dd339e701c3c05c600ca24a852.wav",
+                "entryId": "ja:word:time-later",
+                "startFrame": 25582,
+                "frameCount": 18793
+            },
+            {
+                "path": "audio/e107575563e727cec98a9b0a8d0b85f27779c32f20942cc5b5b52771a5d4b475.wav",
+                "entryId": "ja:word:core-speak",
+                "startFrame": 46535,
+                "frameCount": 17678
+            }
+        ],
+        "sha256": "354afba182bb4eff98aaff25df212363ea6658d53f02f8112517db2c368ae88b",
+        "frames": 75973,
+        "input": {
+            "language": "ja",
+            "label": "ごめんなさい後で話す",
+            "semanticRole": "orderedLexicalSequence",
+            "readings": ["ごめんなさいあとではなす"]
+        },
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "construction": "Exact constituent PCM with explicit selected transformations."
+        }
+    },
+    {
+        "path": "audio/2c74cc661012fd2ee6744604a11792c34bace75e9e46ea8874fdc993fc5f7f18.wav",
+        "entryId": "ja:sentence:courtesy-example-welcome-japan",
+        "label": "日本へようこそ",
+        "parts": [
+            {
+                "path": "audio/5a06c42ca5f7c40270c03c1a3e8a2286da938b744c8d298f0f44f6eaccbf419e.wav",
+                "entryId": "ja:word:nihon"
+            },
+            {
+                "path": "audio/ef803ed2d9dc2a23cb60bf918b4d34b25be6bbb600ad194fa787b60b817538ec.wav",
+                "entryId": "ja:particle:e"
+            },
+            {
+                "path": "audio/cde11962987ef05c1e4728772da25d427a713bb7c28dd47895d44c9122bb51b8.wav",
+                "entryId": "ja:word:courtesy-welcome"
+            },
+            { "pauseMs": 400 }
+        ],
+        "gapMs": 90,
+        "segments": [
+            {
+                "path": "audio/5a06c42ca5f7c40270c03c1a3e8a2286da938b744c8d298f0f44f6eaccbf419e.wav",
+                "entryId": "ja:word:nihon",
+                "startFrame": 2400,
+                "frameCount": 12278
+            },
+            {
+                "path": "audio/ef803ed2d9dc2a23cb60bf918b4d34b25be6bbb600ad194fa787b60b817538ec.wav",
+                "entryId": "ja:particle:e",
+                "startFrame": 16838,
+                "frameCount": 10991
+            },
+            {
+                "path": "audio/cde11962987ef05c1e4728772da25d427a713bb7c28dd47895d44c9122bb51b8.wav",
+                "entryId": "ja:word:courtesy-welcome",
+                "startFrame": 29989,
+                "frameCount": 17678
+            }
+        ],
+        "sha256": "2c74cc661012fd2ee6744604a11792c34bace75e9e46ea8874fdc993fc5f7f18",
+        "frames": 59427,
+        "input": {
+            "language": "ja",
+            "label": "日本へようこそ",
+            "semanticRole": "orderedLexicalSequence",
+            "readings": ["にほんへようこそ"]
+        },
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "construction": "Exact constituent PCM with explicit selected transformations."
+        }
+    }
+]

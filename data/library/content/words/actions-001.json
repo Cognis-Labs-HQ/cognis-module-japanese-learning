@@ -1,0 +1,280 @@
+[
+    {
+        "id": "ja:word:complete-pronunciation-actions-jump",
+        "label": "とぶ",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["とぶ"],
+            "audio": "audio/f33ec2b2ad3c0759e075923ef835c9fa905ab75990f6b5f42bebcd6346e9ed6c.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:to",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:bu",
+                        "relation": "reading-kana",
+                        "position": 1
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:actions-jump",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:actions-jump",
+        "label": "跳ぶ",
+        "class": "lexical:verb",
+        "fields": {
+            "pronunciation": ["とぶ"],
+            "reference_images": [
+                "images/8a80f5b4291b9183743910b2737d3068d14f481d07377a63d7b0b114a29a2f7e.jpg"
+            ],
+            "audio": "audio/f33ec2b2ad3c0759e075923ef835c9fa905ab75990f6b5f42bebcd6346e9ed6c.wav"
+        },
+        "tags": ["verb", "actions-form-jump"],
+        "references": [
+            {
+                "entryId": "ja:definition:actions-jump",
+                "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-8df3",
+                "relation": "spelling",
+                "position": 0
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-actions-jump",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:complete-pronunciation-actions-swim",
+        "label": "およぐ",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["およぐ"],
+            "audio": "audio/294889dd84f41ce693056c941f58d1a96dc205122391af167c8020d68e98707e.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:o",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:yo",
+                        "relation": "reading-kana",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:gu",
+                        "relation": "reading-kana",
+                        "position": 2
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:actions-swim",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:actions-swim",
+        "label": "泳ぐ",
+        "class": "lexical:verb",
+        "fields": {
+            "pronunciation": ["およぐ"],
+            "reference_images": [
+                "images/31ff5cfe9eed76b4ae24139b353bb7679e9f40505535a0a886ae1a4098e8677f.jpg"
+            ],
+            "audio": "audio/294889dd84f41ce693056c941f58d1a96dc205122391af167c8020d68e98707e.wav"
+        },
+        "tags": ["verb", "actions-form-swim"],
+        "references": [
+            {
+                "entryId": "ja:definition:actions-swim",
+                "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-6cf3",
+                "relation": "spelling",
+                "position": 0
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-actions-swim",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:complete-pronunciation-actions-laugh",
+        "label": "わらう",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["わらう"],
+            "audio": "audio/b000661f2c97cbc7b0b38b6b48171c0884d2b96808270f072a85da5e62c6f9d9.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:wa",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:ra",
+                        "relation": "reading-kana",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:u",
+                        "relation": "reading-kana",
+                        "position": 2
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:actions-laugh",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:actions-laugh",
+        "label": "笑う",
+        "class": "lexical:verb",
+        "fields": {
+            "pronunciation": ["わらう"],
+            "reference_images": [
+                "images/bf870436dbeb80c93f3da5ad36ad2979837baba89fdadfdeb3f26c4b1d1997d4.jpg"
+            ],
+            "audio": "audio/b000661f2c97cbc7b0b38b6b48171c0884d2b96808270f072a85da5e62c6f9d9.wav"
+        },
+        "tags": ["verb", "actions-form-laugh"],
+        "references": [
+            {
+                "entryId": "ja:definition:actions-laugh",
+                "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-7b11",
+                "relation": "spelling",
+                "position": 0
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-actions-laugh",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:complete-pronunciation-actions-cry",
+        "label": "なく",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["なく"],
+            "audio": "audio/488aa57b30d905db9cf2cc2446d7a0fa7c629d2ebedd220a05f0805bbe1dab1e.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:na",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:ku",
+                        "relation": "reading-kana",
+                        "position": 1
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:actions-cry",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:actions-cry",
+        "label": "泣く",
+        "class": "lexical:verb",
+        "fields": {
+            "pronunciation": ["なく"],
+            "reference_images": [
+                "images/1e9f07cc36cea258fb8995921006c4403315be8b28d8094ce4ad68b01396c389.jpg"
+            ],
+            "audio": "audio/488aa57b30d905db9cf2cc2446d7a0fa7c629d2ebedd220a05f0805bbe1dab1e.wav"
+        },
+        "tags": ["verb", "actions-form-cry"],
+        "references": [
+            {
+                "entryId": "ja:definition:actions-cry",
+                "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-6ce3",
+                "relation": "spelling",
+                "position": 0
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-actions-cry",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    }
+]

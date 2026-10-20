@@ -1,0 +1,146 @@
+[
+    {
+        "id": "ja:word:complete-pronunciation-depth-deep",
+        "label": "ふかい",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["ふかい"],
+            "audio": "audio/ce5859591c8672e2a7572ea27992c5154ae7384b3feb3186210752a6dd56217f.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:fu",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:ka",
+                        "relation": "reading-kana",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:i",
+                        "relation": "reading-kana",
+                        "position": 2
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:depth-deep",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:depth-deep",
+        "label": "深い",
+        "class": "lexical:adjective",
+        "fields": {
+            "pronunciation": ["ふかい"],
+            "reference_images": [
+                "images/267ceb14a92be9b3bf505e988e2791d4b0deafd7ac6a3f5622dbe40fcbbee6e1.jpg"
+            ],
+            "audio": "audio/ce5859591c8672e2a7572ea27992c5154ae7384b3feb3186210752a6dd56217f.wav"
+        },
+        "tags": ["adjective", "depth-form-deep"],
+        "references": [
+            {
+                "entryId": "ja:definition:depth-deep",
+                "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-6df1",
+                "relation": "spelling",
+                "position": 0
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-depth-deep",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:complete-pronunciation-depth-shallow",
+        "label": "あさい",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["あさい"],
+            "audio": "audio/25746837d157ce1ff24465e0f6c2d70f19d9654d4a6b9e424e1caae7e5063142.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:a",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:sa",
+                        "relation": "reading-kana",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:i",
+                        "relation": "reading-kana",
+                        "position": 2
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:depth-shallow",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:depth-shallow",
+        "label": "浅い",
+        "class": "lexical:adjective",
+        "fields": {
+            "pronunciation": ["あさい"],
+            "reference_images": [
+                "images/33656bc81b70eb7ff55f0d6d19e07b20adcf0b254ce5b080a20292fc700c5a92.jpg"
+            ],
+            "audio": "audio/25746837d157ce1ff24465e0f6c2d70f19d9654d4a6b9e424e1caae7e5063142.wav"
+        },
+        "tags": ["adjective", "depth-form-shallow"],
+        "references": [
+            {
+                "entryId": "ja:definition:depth-shallow",
+                "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-6d45",
+                "relation": "spelling",
+                "position": 0
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-depth-shallow",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    }
+]

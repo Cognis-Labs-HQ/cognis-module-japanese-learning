@@ -1,0 +1,304 @@
+[
+    {
+        "id": "ja:word:complete-pronunciation-transport-airplane",
+        "label": "ひこうき",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["ひこうき"],
+            "audio": "audio/5a14779f955f505ed616f02b8358c8318326510ae091e7c167567493bdedf2c9.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:hi",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:ki",
+                        "relation": "reading-kana",
+                        "position": 3
+                    }
+                ]
+            ],
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:kanji-reading-e8a18c-07",
+                        "relation": "pronunciation-readings",
+                        "position": 1
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:transport-airplane",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:transport-airplane",
+        "label": "飛行機",
+        "class": "lexical:noun",
+        "fields": {
+            "pronunciation": ["ひこうき"],
+            "reference_images": [
+                "images/4e65284c22302270a048519a368dfc82f791dd6054431714afcba26702b58801.jpg"
+            ],
+            "audio": "audio/5a14779f955f505ed616f02b8358c8318326510ae091e7c167567493bdedf2c9.wav"
+        },
+        "tags": ["noun", "transport"],
+        "references": [
+            {
+                "entryId": "ja:definition:transport-airplane",
+                "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-98db",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:kanji:core-e8a18c",
+                "relation": "spelling",
+                "position": 1
+            },
+            {
+                "entryId": "ja:kanji:expanded-6a5f",
+                "relation": "spelling",
+                "position": 2
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-transport-airplane",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:complete-pronunciation-transport-boat",
+        "label": "ボート",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["ボート"],
+            "audio": "audio/01d8bbabaeb82e210cf53311c2dc3d4d9a451f414fdd68443336fd8c471e2697.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:ka:bo",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:long-vowel-mark",
+                        "relation": "reading-kana",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:ka:to",
+                        "relation": "reading-kana",
+                        "position": 2
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:transport-boat",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:transport-boat",
+        "label": "ボート",
+        "class": "lexical:noun",
+        "fields": {
+            "pronunciation": ["ボート"],
+            "reference_images": [
+                "images/a22dba4de3a04c62150fe9bb389e1357a0b542ac7341c2442a939199ddccc572.jpg"
+            ],
+            "audio": "audio/01d8bbabaeb82e210cf53311c2dc3d4d9a451f414fdd68443336fd8c471e2697.wav"
+        },
+        "tags": ["noun", "transport"],
+        "references": [
+            {
+                "entryId": "ja:definition:transport-boat",
+                "relation": "definitions"
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-transport-boat",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:complete-pronunciation-transport-taxi",
+        "label": "タクシー",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["タクシー"],
+            "audio": "audio/ca4b7bb61900ad5655f8f88ae31d8c4d8ddb75972c0a7866e45519e8cda1b80f.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:ka:ta",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:ka:ku",
+                        "relation": "reading-kana",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:ka:shi",
+                        "relation": "reading-kana",
+                        "position": 2
+                    },
+                    {
+                        "entryId": "ja:char:long-vowel-mark",
+                        "relation": "reading-kana",
+                        "position": 3
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:transport-taxi",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:transport-taxi",
+        "label": "タクシー",
+        "class": "lexical:noun",
+        "fields": {
+            "pronunciation": ["タクシー"],
+            "reference_images": [
+                "images/a487981aefd31419b6293eb8a6d5ac3277118619e91f03692625ffe05b0a5035.jpg"
+            ],
+            "audio": "audio/ca4b7bb61900ad5655f8f88ae31d8c4d8ddb75972c0a7866e45519e8cda1b80f.wav"
+        },
+        "tags": ["noun", "transport"],
+        "references": [
+            {
+                "entryId": "ja:definition:transport-taxi",
+                "relation": "definitions"
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-transport-taxi",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:complete-pronunciation-transport-motorcycle",
+        "label": "オートバイ",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["オートバイ"],
+            "audio": "audio/818f846a27f425a300d6a806a778c4c87e4d69a670eaa41a0620d0e59dcefe86.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:ka:o",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:long-vowel-mark",
+                        "relation": "reading-kana",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:ka:to",
+                        "relation": "reading-kana",
+                        "position": 2
+                    },
+                    {
+                        "entryId": "ja:char:ka:ba",
+                        "relation": "reading-kana",
+                        "position": 3
+                    },
+                    {
+                        "entryId": "ja:char:ka:i",
+                        "relation": "reading-kana",
+                        "position": 4
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:transport-motorcycle",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:transport-motorcycle",
+        "label": "オートバイ",
+        "class": "lexical:noun",
+        "fields": {
+            "pronunciation": ["オートバイ"],
+            "reference_images": [
+                "images/615d56f4e7098ae0dd298912634173a4ee91ced77f5b18e71eccb4f9e3c3fd87.jpg"
+            ],
+            "audio": "audio/818f846a27f425a300d6a806a778c4c87e4d69a670eaa41a0620d0e59dcefe86.wav"
+        },
+        "tags": ["noun", "transport"],
+        "references": [
+            {
+                "entryId": "ja:definition:transport-motorcycle",
+                "relation": "definitions"
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-transport-motorcycle",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    }
+]

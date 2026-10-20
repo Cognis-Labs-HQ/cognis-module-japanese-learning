@@ -1,0 +1,254 @@
+[
+    {
+        "path": "audio/6ade365dae3ac8c5103d392ffa88aa0d3083fba6b3ea3a9c8679e1748fd38b5d.wav",
+        "entryId": "ja:sentence:food-preparation-example-wash-cucumber",
+        "label": "きゅうりを洗う",
+        "parts": [
+            {
+                "path": "audio/2f65b23ae605f43245668c47372481d282e92d3ae41dea16e14b17bd7d5bd2c7.wav",
+                "entryId": "ja:word:cucumber"
+            },
+            {
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "entryId": "ja:particle:wo"
+            },
+            {
+                "path": "audio/55900a3049492f3fd4edd4b8fb6ba3ff1650cde9ed4b3024f002f08659bf5c2a.wav",
+                "entryId": "ja:word:household-wash"
+            },
+            { "pauseMs": 400 }
+        ],
+        "gapMs": 90,
+        "segments": [
+            {
+                "path": "audio/2f65b23ae605f43245668c47372481d282e92d3ae41dea16e14b17bd7d5bd2c7.wav",
+                "entryId": "ja:word:cucumber",
+                "startFrame": 2400,
+                "frameCount": 17678
+            },
+            {
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "entryId": "ja:particle:wo",
+                "startFrame": 22238,
+                "frameCount": 8762
+            },
+            {
+                "path": "audio/55900a3049492f3fd4edd4b8fb6ba3ff1650cde9ed4b3024f002f08659bf5c2a.wav",
+                "entryId": "ja:word:household-wash",
+                "startFrame": 33160,
+                "frameCount": 12106
+            }
+        ],
+        "sha256": "6ade365dae3ac8c5103d392ffa88aa0d3083fba6b3ea3a9c8679e1748fd38b5d",
+        "frames": 57026,
+        "input": {
+            "language": "ja",
+            "label": "きゅうりを洗う",
+            "semanticRole": "orderedLexicalSequence",
+            "readings": ["きゅうりをあらう"]
+        },
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "construction": "Exact constituent PCM with explicit selected transformations."
+        }
+    },
+    {
+        "path": "audio/b42701791b2b22ceaa4f97f74adbe86b7e0124af805f60abf56a065d54f1f619.wav",
+        "entryId": "ja:sentence:food-preparation-example-cut-onion",
+        "label": "たまねぎを切る",
+        "parts": [
+            {
+                "path": "audio/bb3fbabf9d4b246595da1f3860eeceb9fefa8e494bf9940c4764509324b3d85b.wav",
+                "entryId": "ja:word:onion"
+            },
+            {
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "entryId": "ja:particle:wo"
+            },
+            {
+                "path": "audio/7b049724915f9f114fd0cc06aa45625d018577a4b19558ccc83b480b6f71b332.wav",
+                "entryId": "ja:word:craft-cut"
+            },
+            { "pauseMs": 400 }
+        ],
+        "gapMs": 90,
+        "segments": [
+            {
+                "path": "audio/bb3fbabf9d4b246595da1f3860eeceb9fefa8e494bf9940c4764509324b3d85b.wav",
+                "entryId": "ja:word:onion",
+                "startFrame": 2400,
+                "frameCount": 22137
+            },
+            {
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "entryId": "ja:particle:wo",
+                "startFrame": 26697,
+                "frameCount": 8762
+            },
+            {
+                "path": "audio/7b049724915f9f114fd0cc06aa45625d018577a4b19558ccc83b480b6f71b332.wav",
+                "entryId": "ja:word:craft-cut",
+                "startFrame": 37619,
+                "frameCount": 15449
+            }
+        ],
+        "sha256": "b42701791b2b22ceaa4f97f74adbe86b7e0124af805f60abf56a065d54f1f619",
+        "frames": 64828,
+        "input": {
+            "language": "ja",
+            "label": "たまねぎを切る",
+            "semanticRole": "orderedLexicalSequence",
+            "readings": ["たまねぎをきる"]
+        },
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "construction": "Exact constituent PCM with explicit selected transformations."
+        }
+    },
+    {
+        "path": "audio/1a8595a991d04dc93d53229c1de1c9722f8cfe8b04793e9542afdfec02e53832.wav",
+        "entryId": "ja:sentence:food-preparation-example-cook-ingredients",
+        "label": "鶏肉ときのこを料理する",
+        "parts": [
+            {
+                "path": "audio/1156ff4b5879e4b8fa52d3965c4f74a49a0daa598ecd1e3944db2695b4d737a1.wav",
+                "entryId": "ja:word:chicken"
+            },
+            {
+                "path": "audio/606f3c1823245eee4195e2195e8189dad7df8cd21b7e6550a55b5c56e585916b.wav",
+                "entryId": "ja:particle:to"
+            },
+            {
+                "path": "audio/d399383db51952a03ad3238f869ab16bf4a4d586891c15c156f3c28e8f1b76a1.wav",
+                "entryId": "ja:word:vegetables-mushroom"
+            },
+            {
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "entryId": "ja:particle:wo"
+            },
+            {
+                "path": "audio/e33686384389e80ef4dd0db97018d79d8b5ee187f17ec85723bd40a420521f2a.wav",
+                "entryId": "ja:word:household-cook"
+            },
+            { "pauseMs": 400 }
+        ],
+        "gapMs": 90,
+        "segments": [
+            {
+                "path": "audio/1156ff4b5879e4b8fa52d3965c4f74a49a0daa598ecd1e3944db2695b4d737a1.wav",
+                "entryId": "ja:word:chicken",
+                "startFrame": 2400,
+                "frameCount": 22137
+            },
+            {
+                "path": "audio/606f3c1823245eee4195e2195e8189dad7df8cd21b7e6550a55b5c56e585916b.wav",
+                "entryId": "ja:particle:to",
+                "startFrame": 26697,
+                "frameCount": 12106
+            },
+            {
+                "path": "audio/d399383db51952a03ad3238f869ab16bf4a4d586891c15c156f3c28e8f1b76a1.wav",
+                "entryId": "ja:word:vegetables-mushroom",
+                "startFrame": 40963,
+                "frameCount": 18793
+            },
+            {
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "entryId": "ja:particle:wo",
+                "startFrame": 61916,
+                "frameCount": 8762
+            },
+            {
+                "path": "audio/e33686384389e80ef4dd0db97018d79d8b5ee187f17ec85723bd40a420521f2a.wav",
+                "entryId": "ja:word:household-cook",
+                "startFrame": 72838,
+                "frameCount": 22137
+            }
+        ],
+        "sha256": "1a8595a991d04dc93d53229c1de1c9722f8cfe8b04793e9542afdfec02e53832",
+        "frames": 106735,
+        "input": {
+            "language": "ja",
+            "label": "鶏肉ときのこを料理する",
+            "semanticRole": "orderedLexicalSequence",
+            "readings": ["とりにくときのこをりょうりする"]
+        },
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "construction": "Exact constituent PCM with explicit selected transformations."
+        }
+    },
+    {
+        "path": "audio/431b11dd9ed577cddb35bc4ea4c215448ace15d50a5405cdbd9c14ddbf42629d.wav",
+        "entryId": "ja:sentence:food-preparation-example-find-potatoes",
+        "label": "じゃがいもはどこですか",
+        "parts": [
+            {
+                "path": "audio/1f7fb2928b23bb46c1e2c92480efd389e428dfaa59609e8badfe638b35841c95.wav",
+                "entryId": "ja:word:potato"
+            },
+            {
+                "path": "audio/d7c9e57654e559dfba3bd6f78c2f27416a61f8b28d56145d84a62fe25b70c94d.wav",
+                "entryId": "ja:particle:wa"
+            },
+            {
+                "path": "audio/d8e8d38bb87e5846270a85a0031c99310edbc497f365f2a8fbb4ac49a10ddba3.wav",
+                "entryId": "ja:word:doko"
+            },
+            {
+                "path": "audio/2959a5dcab722b7d5c39f67845f1d6a3d6ede5f23e554e9547bca0e6cb62c56b.wav",
+                "entryId": "ja:word:desu"
+            },
+            {
+                "path": "audio/43ee7a601b45742716f8c1c424c576992297faf0a3ec140047ad194b682f7edf.wav",
+                "entryId": "ja:particle:ka"
+            },
+            { "pauseMs": 400 }
+        ],
+        "gapMs": 90,
+        "segments": [
+            {
+                "path": "audio/1f7fb2928b23bb46c1e2c92480efd389e428dfaa59609e8badfe638b35841c95.wav",
+                "entryId": "ja:word:potato",
+                "startFrame": 2400,
+                "frameCount": 18793
+            },
+            {
+                "path": "audio/d7c9e57654e559dfba3bd6f78c2f27416a61f8b28d56145d84a62fe25b70c94d.wav",
+                "entryId": "ja:particle:wa",
+                "startFrame": 23353,
+                "frameCount": 12106
+            },
+            {
+                "path": "audio/d8e8d38bb87e5846270a85a0031c99310edbc497f365f2a8fbb4ac49a10ddba3.wav",
+                "entryId": "ja:word:doko",
+                "startFrame": 37619,
+                "frameCount": 11541
+            },
+            {
+                "path": "audio/2959a5dcab722b7d5c39f67845f1d6a3d6ede5f23e554e9547bca0e6cb62c56b.wav",
+                "entryId": "ja:word:desu",
+                "startFrame": 51320,
+                "frameCount": 11490
+            },
+            {
+                "path": "audio/43ee7a601b45742716f8c1c424c576992297faf0a3ec140047ad194b682f7edf.wav",
+                "entryId": "ja:particle:ka",
+                "startFrame": 64970,
+                "frameCount": 13220
+            }
+        ],
+        "sha256": "431b11dd9ed577cddb35bc4ea4c215448ace15d50a5405cdbd9c14ddbf42629d",
+        "frames": 89950,
+        "input": {
+            "language": "ja",
+            "label": "じゃがいもはどこですか",
+            "semanticRole": "orderedLexicalSequence",
+            "readings": ["じゃがいもはどこですか"]
+        },
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "construction": "Exact constituent PCM with explicit selected transformations."
+        }
+    }
+]

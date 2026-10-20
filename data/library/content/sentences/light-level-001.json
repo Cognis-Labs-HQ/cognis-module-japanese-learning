@@ -1,0 +1,162 @@
+[
+    {
+        "id": "ja:sentence:light-level-example-bright-library",
+        "label": "明るい図書館で本を読む",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/0a0c52372a12bba805e79043000672d0d78bc2c0c1c424dbf8c2d9f8e3f957d2.wav",
+            "pronunciation": ["あかるいとしょかんでほんをよむ"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:light-level-bright",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:word:places-library",
+                "relation": "words",
+                "position": 1
+            },
+            {
+                "entryId": "ja:particle:de",
+                "relation": "particles",
+                "position": 2
+            },
+            {
+                "entryId": "ja:word:reading-time-book",
+                "relation": "words",
+                "position": 3
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 4
+            },
+            {
+                "entryId": "ja:word:core-read",
+                "relation": "words",
+                "position": 5
+            },
+            {
+                "entryId": "ja:definition:light-level-example-bright-library",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:light-level-example-dark-bedroom",
+        "label": "寝室は暗いです",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/1e7eec5051796b0ab5214e9dd74d1baeaff2908ac1b1917464719fc3956ad7a9.wav",
+            "pronunciation": ["しんしつはくらいです"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:rooms-bedroom",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:light-level-dark",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:word:desu",
+                "relation": "words",
+                "position": 3
+            },
+            {
+                "entryId": "ja:definition:light-level-example-dark-bedroom",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:light-level-example-bright-lamp",
+        "label": "ランプはとても明るいです",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/96c160210d039ee25ff61467c98c94b451a38f3cd37cf24c128d6b8847db7b15.wav",
+            "pronunciation": ["ランプはとてもあかるいです"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:furnishings-lamp",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:totemo",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:word:light-level-bright",
+                "relation": "words",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:desu",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:light-level-example-bright-lamp",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:light-level-example-dark-forest",
+        "label": "暗い森をゆっくり歩く",
+        "class": "composite",
+        "fields": {
+            "audio": "audio/39796e8aaba9790283903fd4a9d267fe2f8710c7ed24a1682245ef36cb54476c.wav",
+            "pronunciation": ["くらいもりをゆっくりあるく"]
+        },
+        "references": [
+            {
+                "entryId": "ja:word:light-level-dark",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:word:nature-forest",
+                "relation": "words",
+                "position": 1
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 2
+            },
+            {
+                "entryId": "ja:word:yukkuri",
+                "relation": "words",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:aruku",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:light-level-example-dark-forest",
+                "relation": "definitions"
+            }
+        ]
+    }
+]

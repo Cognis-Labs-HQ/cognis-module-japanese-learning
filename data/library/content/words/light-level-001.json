@@ -1,0 +1,151 @@
+[
+    {
+        "id": "ja:word:complete-pronunciation-light-level-bright",
+        "label": "あかるい",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["あかるい"],
+            "audio": "audio/7a02ed969093a82b6ae1b4806e682a75e7ddf124ab5a8008c84fa050d58eb05f.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:a",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:ka",
+                        "relation": "reading-kana",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:ru",
+                        "relation": "reading-kana",
+                        "position": 2
+                    },
+                    {
+                        "entryId": "ja:char:i",
+                        "relation": "reading-kana",
+                        "position": 3
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:light-level-bright",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:light-level-bright",
+        "label": "明るい",
+        "class": "lexical:adjective",
+        "fields": {
+            "pronunciation": ["あかるい"],
+            "reference_images": [
+                "images/1315d81214a158a5dd5b2d64dedaf681786793ff615a2c5f5fe07001a225d928.jpg"
+            ],
+            "audio": "audio/7a02ed969093a82b6ae1b4806e682a75e7ddf124ab5a8008c84fa050d58eb05f.wav"
+        },
+        "tags": ["adjective", "light-level-form-bright"],
+        "references": [
+            {
+                "entryId": "ja:definition:light-level-bright",
+                "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-660e",
+                "relation": "spelling",
+                "position": 0
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-light-level-bright",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:complete-pronunciation-light-level-dark",
+        "label": "くらい",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["くらい"],
+            "audio": "audio/8bbaf87561a1dd86f8b0163f0a20e5cece0a4fce985dddb868f966583fa4505f.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:ku",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:ra",
+                        "relation": "reading-kana",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:i",
+                        "relation": "reading-kana",
+                        "position": 2
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:light-level-dark",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:light-level-dark",
+        "label": "暗い",
+        "class": "lexical:adjective",
+        "fields": {
+            "pronunciation": ["くらい"],
+            "reference_images": [
+                "images/3b23b6db9a34129b04c182627698d3738b4d28e7cb0969f68fc9467bdec3863f.jpg"
+            ],
+            "audio": "audio/8bbaf87561a1dd86f8b0163f0a20e5cece0a4fce985dddb868f966583fa4505f.wav"
+        },
+        "tags": ["adjective", "light-level-form-dark"],
+        "references": [
+            {
+                "entryId": "ja:definition:light-level-dark",
+                "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-6697",
+                "relation": "spelling",
+                "position": 0
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-light-level-dark",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    }
+]

@@ -1,0 +1,90 @@
+[
+    {
+        "path": "audio/70842c34e88433d2fc8cf4f203b3c87cec9fab8573e74cf21e931c128d43e52c.wav",
+        "text": "おす",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "押す",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "おす",
+                "semanticRole": "lexicalUnit",
+                "readings": ["おす"]
+            },
+            {
+                "language": "ja",
+                "label": "押す",
+                "semanticRole": "lexicalUnit",
+                "readings": ["おす"]
+            }
+        ],
+        "entries": [
+            "ja:word:force-push",
+            "ja:word:complete-pronunciation-force-push"
+        ],
+        "variants": [],
+        "sha256": "70842c34e88433d2fc8cf4f203b3c87cec9fab8573e74cf21e931c128d43e52c",
+        "frames": 15449,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "59dda526420b0208e767ab7dc42757b3b5f760726b6a422b4256c627cd72e79b"
+        }
+    },
+    {
+        "path": "audio/cfbef82ee07b0267206dc163ac30d80b870c078fb3ac5997876c7c7feb4893f0.wav",
+        "text": "ひく",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "引く",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "ひく",
+                "semanticRole": "lexicalUnit",
+                "readings": ["ひく"]
+            },
+            {
+                "language": "ja",
+                "label": "引く",
+                "semanticRole": "lexicalUnit",
+                "readings": ["ひく"]
+            }
+        ],
+        "entries": [
+            "ja:word:force-pull",
+            "ja:word:complete-pronunciation-force-pull"
+        ],
+        "variants": [],
+        "sha256": "cfbef82ee07b0267206dc163ac30d80b870c078fb3ac5997876c7c7feb4893f0",
+        "frames": 16564,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "ef9b79fd2ea858a130cb1dfc4c7675ed673595f28d187f56ca03b219ab407563"
+        }
+    }
+]

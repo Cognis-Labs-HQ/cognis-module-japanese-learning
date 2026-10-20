@@ -1,0 +1,156 @@
+[
+    {
+        "id": "ja:word:complete-pronunciation-warm-accessories-scarf",
+        "label": "マフラー",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["マフラー"],
+            "audio": "audio/ff183b311de2f276c8afb68d751ffe8064c382f987739fea3cb88e680ebe328c.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:ka:ma",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:ka:fu",
+                        "relation": "reading-kana",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:ka:ra",
+                        "relation": "reading-kana",
+                        "position": 2
+                    },
+                    {
+                        "entryId": "ja:char:long-vowel-mark",
+                        "relation": "reading-kana",
+                        "position": 3
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:warm-accessories-scarf",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:warm-accessories-scarf",
+        "label": "マフラー",
+        "class": "lexical:noun",
+        "fields": {
+            "pronunciation": ["マフラー"],
+            "reference_images": [
+                "images/19a83b6fe60f75bca6a3c1cc47ba0b3bcef5f4361225b4ad291e9ea1ea87aa50.jpg"
+            ],
+            "audio": "audio/ff183b311de2f276c8afb68d751ffe8064c382f987739fea3cb88e680ebe328c.wav"
+        },
+        "tags": ["noun", "warm-accessories"],
+        "references": [
+            {
+                "entryId": "ja:definition:warm-accessories-scarf",
+                "relation": "definitions"
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-warm-accessories-scarf",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:complete-pronunciation-warm-accessories-glove",
+        "label": "てぶくろ",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["てぶくろ"],
+            "audio": "audio/e3ef3045111805bc07b962b09df098a18d767ffe85a976599ca8c97d4469dfce.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:te",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:bu",
+                        "relation": "reading-kana",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:ku",
+                        "relation": "reading-kana",
+                        "position": 2
+                    },
+                    {
+                        "entryId": "ja:char:ro",
+                        "relation": "reading-kana",
+                        "position": 3
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:warm-accessories-glove",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:warm-accessories-glove",
+        "label": "手袋",
+        "class": "lexical:noun",
+        "fields": {
+            "pronunciation": ["てぶくろ"],
+            "reference_images": [
+                "images/65f00bcb2f36e87bed9477cf13dbdbc3f5d0810e364ea1dcc0069458a0f53b22.jpg"
+            ],
+            "audio": "audio/e3ef3045111805bc07b962b09df098a18d767ffe85a976599ca8c97d4469dfce.wav"
+        },
+        "tags": ["noun", "warm-accessories"],
+        "references": [
+            {
+                "entryId": "ja:definition:warm-accessories-glove",
+                "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-624b",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:kanji:expanded-888b",
+                "relation": "spelling",
+                "position": 1
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-warm-accessories-glove",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    }
+]

@@ -1,0 +1,310 @@
+[
+    {
+        "id": "ja:word:complete-pronunciation-fixtures-fridge",
+        "label": "れいぞうこ",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["れいぞうこ"],
+            "audio": "audio/e22509c4d25ca1dd06b3a3d381d1408ff4601f4a2535d07e4dd57d92d8d4b130.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:re",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:i",
+                        "relation": "reading-kana",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:zo",
+                        "relation": "reading-kana",
+                        "position": 2
+                    },
+                    {
+                        "entryId": "ja:char:u",
+                        "relation": "reading-kana",
+                        "position": 3
+                    },
+                    {
+                        "entryId": "ja:char:ko",
+                        "relation": "reading-kana",
+                        "position": 4
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:fixtures-fridge",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:fixtures-fridge",
+        "label": "冷蔵庫",
+        "class": "lexical:noun",
+        "fields": {
+            "pronunciation": ["れいぞうこ"],
+            "reference_images": [
+                "images/191888d38653c5a89c6770f438a5d42656a4508cddb20954b7fe7fdaffac996e.jpg"
+            ],
+            "audio": "audio/e22509c4d25ca1dd06b3a3d381d1408ff4601f4a2535d07e4dd57d92d8d4b130.wav"
+        },
+        "tags": ["noun", "fixtures"],
+        "references": [
+            {
+                "entryId": "ja:definition:fixtures-fridge",
+                "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-51b7",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:kanji:expanded-8535",
+                "relation": "spelling",
+                "position": 1
+            },
+            {
+                "entryId": "ja:kanji:expanded-5eab",
+                "relation": "spelling",
+                "position": 2
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-fixtures-fridge",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:complete-pronunciation-fixtures-oven",
+        "label": "オーブン",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["オーブン"],
+            "audio": "audio/f6091b94b423458a5fafe7ac9dcfd73266512a1eee0b697cc8c70f93f4a33d82.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:ka:o",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:long-vowel-mark",
+                        "relation": "reading-kana",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:ka:bu",
+                        "relation": "reading-kana",
+                        "position": 2
+                    },
+                    {
+                        "entryId": "ja:char:ka:n",
+                        "relation": "reading-kana",
+                        "position": 3
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:fixtures-oven",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:fixtures-oven",
+        "label": "オーブン",
+        "class": "lexical:noun",
+        "fields": {
+            "pronunciation": ["オーブン"],
+            "reference_images": [
+                "images/7ea839b946d58a19b82c62b23a38de43add774b31665709d2327a2acab44ea53.jpg"
+            ],
+            "audio": "audio/f6091b94b423458a5fafe7ac9dcfd73266512a1eee0b697cc8c70f93f4a33d82.wav"
+        },
+        "tags": ["noun", "fixtures"],
+        "references": [
+            {
+                "entryId": "ja:definition:fixtures-oven",
+                "relation": "definitions"
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-fixtures-oven",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:complete-pronunciation-fixtures-sink",
+        "label": "ながし",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["ながし"],
+            "audio": "audio/379e5a4ce644d72817400d688409caf37ca96c49adfead7af9397fcef2c7fda7.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:na",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:ga",
+                        "relation": "reading-kana",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:shi",
+                        "relation": "reading-kana",
+                        "position": 2
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:fixtures-sink",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:fixtures-sink",
+        "label": "流し",
+        "class": "lexical:noun",
+        "fields": {
+            "pronunciation": ["ながし"],
+            "reference_images": [
+                "images/1862f2be8f476fba40de34fe5b1e9840f6e7787a42e9630d90a8ac837c2daf9d.jpg"
+            ],
+            "audio": "audio/379e5a4ce644d72817400d688409caf37ca96c49adfead7af9397fcef2c7fda7.wav"
+        },
+        "tags": ["noun", "fixtures"],
+        "references": [
+            {
+                "entryId": "ja:definition:fixtures-sink",
+                "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-6d41",
+                "relation": "spelling",
+                "position": 0
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-fixtures-sink",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:complete-pronunciation-fixtures-shower",
+        "label": "シャワー",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["シャワー"],
+            "audio": "audio/c1aec790161e1d5bbc940659470b3df837fa8a65863c9afe2187d6a4436786c6.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:ka:shi",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:ka:small-ya",
+                        "relation": "reading-kana",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:ka:wa",
+                        "relation": "reading-kana",
+                        "position": 2
+                    },
+                    {
+                        "entryId": "ja:char:long-vowel-mark",
+                        "relation": "reading-kana",
+                        "position": 3
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:fixtures-shower",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:fixtures-shower",
+        "label": "シャワー",
+        "class": "lexical:noun",
+        "fields": {
+            "pronunciation": ["シャワー"],
+            "reference_images": [
+                "images/2e5a85eb353a0a8dbcca3970864d5a455509d62029ba992ce279249653d4d70c.jpg"
+            ],
+            "audio": "audio/c1aec790161e1d5bbc940659470b3df837fa8a65863c9afe2187d6a4436786c6.wav"
+        },
+        "tags": ["noun", "fixtures"],
+        "references": [
+            {
+                "entryId": "ja:definition:fixtures-shower",
+                "relation": "definitions"
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-fixtures-shower",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    }
+]

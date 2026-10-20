@@ -1,0 +1,264 @@
+[
+    {
+        "path": "audio/79073efd823941eb6b90daf353866ea5d9e1bc8cca907cc81164a692bd176d1a.wav",
+        "entryId": "ja:sentence:delivery-example-send-friend-letter",
+        "label": "友達に手紙を送る",
+        "parts": [
+            {
+                "path": "audio/b735f033be7289c86f7f84621476005af35c3fdec9b7e43f2b7531609f5d70b1.wav",
+                "entryId": "ja:word:tomodachi"
+            },
+            {
+                "path": "audio/1615cf278c2962c1657907b3686d653625229af2375f90dda5bfd5b178c7aedb.wav",
+                "entryId": "ja:particle:ni"
+            },
+            {
+                "path": "audio/f30c49090c44dd8410e84790446f1fe304a31dc64b3076f54d2d5eb35a25267f.wav",
+                "entryId": "ja:word:correspondence-letter"
+            },
+            {
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "entryId": "ja:particle:wo"
+            },
+            {
+                "path": "audio/de0ed37c063bd7e4a4ce635367bb95326664f6274324bb38ce23157c1180330d.wav",
+                "entryId": "ja:word:delivery-send"
+            },
+            { "pauseMs": 400 }
+        ],
+        "gapMs": 90,
+        "segments": [
+            {
+                "path": "audio/b735f033be7289c86f7f84621476005af35c3fdec9b7e43f2b7531609f5d70b1.wav",
+                "entryId": "ja:word:tomodachi",
+                "startFrame": 2400,
+                "frameCount": 17503
+            },
+            {
+                "path": "audio/1615cf278c2962c1657907b3686d653625229af2375f90dda5bfd5b178c7aedb.wav",
+                "entryId": "ja:particle:ni",
+                "startFrame": 22063,
+                "frameCount": 13220
+            },
+            {
+                "path": "audio/f30c49090c44dd8410e84790446f1fe304a31dc64b3076f54d2d5eb35a25267f.wav",
+                "entryId": "ja:word:correspondence-letter",
+                "startFrame": 37443,
+                "frameCount": 15449
+            },
+            {
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "entryId": "ja:particle:wo",
+                "startFrame": 55052,
+                "frameCount": 8762
+            },
+            {
+                "path": "audio/de0ed37c063bd7e4a4ce635367bb95326664f6274324bb38ce23157c1180330d.wav",
+                "entryId": "ja:word:delivery-send",
+                "startFrame": 65974,
+                "frameCount": 15449
+            }
+        ],
+        "sha256": "79073efd823941eb6b90daf353866ea5d9e1bc8cca907cc81164a692bd176d1a",
+        "frames": 93183,
+        "input": {
+            "language": "ja",
+            "label": "友達に手紙を送る",
+            "semanticRole": "orderedLexicalSequence",
+            "readings": ["ともだちにてがみをおくる"]
+        },
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "construction": "Exact constituent PCM with explicit selected transformations."
+        }
+    },
+    {
+        "path": "audio/e8dd66a4cc3d388a2ca3e03e46017cabc4b172aed40a17165cdc853fccc18bc2.wav",
+        "entryId": "ja:sentence:delivery-example-send-postcard",
+        "label": "葉書を送る",
+        "parts": [
+            {
+                "path": "audio/022606cbcd078de245f349b855e9d0ae52ee9905800fc23c58b3647c798bff61.wav",
+                "entryId": "ja:word:correspondence-postcard"
+            },
+            {
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "entryId": "ja:particle:wo"
+            },
+            {
+                "path": "audio/de0ed37c063bd7e4a4ce635367bb95326664f6274324bb38ce23157c1180330d.wav",
+                "entryId": "ja:word:delivery-send"
+            },
+            { "pauseMs": 400 }
+        ],
+        "gapMs": 90,
+        "segments": [
+            {
+                "path": "audio/022606cbcd078de245f349b855e9d0ae52ee9905800fc23c58b3647c798bff61.wav",
+                "entryId": "ja:word:correspondence-postcard",
+                "startFrame": 2400,
+                "frameCount": 15449
+            },
+            {
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "entryId": "ja:particle:wo",
+                "startFrame": 20009,
+                "frameCount": 8762
+            },
+            {
+                "path": "audio/de0ed37c063bd7e4a4ce635367bb95326664f6274324bb38ce23157c1180330d.wav",
+                "entryId": "ja:word:delivery-send",
+                "startFrame": 30931,
+                "frameCount": 15449
+            }
+        ],
+        "sha256": "e8dd66a4cc3d388a2ca3e03e46017cabc4b172aed40a17165cdc853fccc18bc2",
+        "frames": 58140,
+        "input": {
+            "language": "ja",
+            "label": "葉書を送る",
+            "semanticRole": "orderedLexicalSequence",
+            "readings": ["はがきをおくる"]
+        },
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "construction": "Exact constituent PCM with explicit selected transformations."
+        }
+    },
+    {
+        "path": "audio/6622c2fb853dc014846e6489b5635e3246306ae817dc40753ffba3daa229407d.wav",
+        "entryId": "ja:sentence:delivery-example-transport-box",
+        "label": "箱を車で運ぶ",
+        "parts": [
+            {
+                "path": "audio/a015a15942185531748807169edc0f4698413e5468af7f662bbae5ba6946aa96.wav",
+                "entryId": "ja:word:containers-box"
+            },
+            {
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "entryId": "ja:particle:wo"
+            },
+            {
+                "path": "audio/2a40463469bd551859d6511f36057169c3dee27d696e1631909fe67818ca2c45.wav",
+                "entryId": "ja:word:kuruma"
+            },
+            {
+                "path": "audio/df81472c8108ad9b47d8d90db017ff1c1b553d80263d6a2c59de1571671f3eee.wav",
+                "entryId": "ja:particle:de"
+            },
+            {
+                "path": "audio/ba73042fbb842796b95a59c2d2da8f2799ddb486299105dc3289e3bc969a7214.wav",
+                "entryId": "ja:word:delivery-carry"
+            },
+            { "pauseMs": 400 }
+        ],
+        "gapMs": 90,
+        "segments": [
+            {
+                "path": "audio/a015a15942185531748807169edc0f4698413e5468af7f662bbae5ba6946aa96.wav",
+                "entryId": "ja:word:containers-box",
+                "startFrame": 2400,
+                "frameCount": 12106
+            },
+            {
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "entryId": "ja:particle:wo",
+                "startFrame": 16666,
+                "frameCount": 8762
+            },
+            {
+                "path": "audio/2a40463469bd551859d6511f36057169c3dee27d696e1631909fe67818ca2c45.wav",
+                "entryId": "ja:word:kuruma",
+                "startFrame": 27588,
+                "frameCount": 13095
+            },
+            {
+                "path": "audio/df81472c8108ad9b47d8d90db017ff1c1b553d80263d6a2c59de1571671f3eee.wav",
+                "entryId": "ja:particle:de",
+                "startFrame": 42843,
+                "frameCount": 13220
+            },
+            {
+                "path": "audio/ba73042fbb842796b95a59c2d2da8f2799ddb486299105dc3289e3bc969a7214.wav",
+                "entryId": "ja:word:delivery-carry",
+                "startFrame": 58223,
+                "frameCount": 17678
+            }
+        ],
+        "sha256": "6622c2fb853dc014846e6489b5635e3246306ae817dc40753ffba3daa229407d",
+        "frames": 87661,
+        "input": {
+            "language": "ja",
+            "label": "箱を車で運ぶ",
+            "semanticRole": "orderedLexicalSequence",
+            "readings": ["はこをくるまではこぶ"]
+        },
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "construction": "Exact constituent PCM with explicit selected transformations."
+        }
+    },
+    {
+        "path": "audio/b1de6cb626ba688abfb8c433b2df1f4927f8cdc412a35e44273f22c0e869ffb2.wav",
+        "entryId": "ja:sentence:delivery-example-carry-slowly",
+        "label": "かばんをゆっくり運ぶ",
+        "parts": [
+            {
+                "path": "audio/6c383b07d47bcbe9c9eadf6b97d7ce3ec03e4f31503d0bf1dec5a48b2829ff78.wav",
+                "entryId": "ja:word:bag"
+            },
+            {
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "entryId": "ja:particle:wo"
+            },
+            {
+                "path": "audio/1c2d1664ef0db6298e34d97fa47fd27aa3dfc34f44515e3e22ed6e07e2ca0011.wav",
+                "entryId": "ja:word:yukkuri"
+            },
+            {
+                "path": "audio/ba73042fbb842796b95a59c2d2da8f2799ddb486299105dc3289e3bc969a7214.wav",
+                "entryId": "ja:word:delivery-carry"
+            },
+            { "pauseMs": 400 }
+        ],
+        "gapMs": 90,
+        "segments": [
+            {
+                "path": "audio/6c383b07d47bcbe9c9eadf6b97d7ce3ec03e4f31503d0bf1dec5a48b2829ff78.wav",
+                "entryId": "ja:word:bag",
+                "startFrame": 2400,
+                "frameCount": 16564
+            },
+            {
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "entryId": "ja:particle:wo",
+                "startFrame": 21124,
+                "frameCount": 8762
+            },
+            {
+                "path": "audio/1c2d1664ef0db6298e34d97fa47fd27aa3dfc34f44515e3e22ed6e07e2ca0011.wav",
+                "entryId": "ja:word:yukkuri",
+                "startFrame": 32046,
+                "frameCount": 21022
+            },
+            {
+                "path": "audio/ba73042fbb842796b95a59c2d2da8f2799ddb486299105dc3289e3bc969a7214.wav",
+                "entryId": "ja:word:delivery-carry",
+                "startFrame": 55228,
+                "frameCount": 17678
+            }
+        ],
+        "sha256": "b1de6cb626ba688abfb8c433b2df1f4927f8cdc412a35e44273f22c0e869ffb2",
+        "frames": 84666,
+        "input": {
+            "language": "ja",
+            "label": "かばんをゆっくり運ぶ",
+            "semanticRole": "orderedLexicalSequence",
+            "readings": ["かばんをゆっくりはこぶ"]
+        },
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "construction": "Exact constituent PCM with explicit selected transformations."
+        }
+    }
+]

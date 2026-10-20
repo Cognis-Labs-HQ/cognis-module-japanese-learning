@@ -1,0 +1,90 @@
+[
+    {
+        "path": "audio/f30c49090c44dd8410e84790446f1fe304a31dc64b3076f54d2d5eb35a25267f.wav",
+        "text": "てがみ",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "手紙",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "てがみ",
+                "semanticRole": "lexicalUnit",
+                "readings": ["てがみ"]
+            },
+            {
+                "language": "ja",
+                "label": "手紙",
+                "semanticRole": "lexicalUnit",
+                "readings": ["てがみ"]
+            }
+        ],
+        "entries": [
+            "ja:word:correspondence-letter",
+            "ja:word:complete-pronunciation-correspondence-letter"
+        ],
+        "variants": [],
+        "sha256": "f30c49090c44dd8410e84790446f1fe304a31dc64b3076f54d2d5eb35a25267f",
+        "frames": 15449,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "3318ab8369b0b177fe426475d52d9ba463c1015327a8ce337339ae822a26eadf"
+        }
+    },
+    {
+        "path": "audio/022606cbcd078de245f349b855e9d0ae52ee9905800fc23c58b3647c798bff61.wav",
+        "text": "はがき",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "葉書",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "はがき",
+                "semanticRole": "lexicalUnit",
+                "readings": ["はがき"]
+            },
+            {
+                "language": "ja",
+                "label": "葉書",
+                "semanticRole": "lexicalUnit",
+                "readings": ["はがき"]
+            }
+        ],
+        "entries": [
+            "ja:word:correspondence-postcard",
+            "ja:word:complete-pronunciation-correspondence-postcard"
+        ],
+        "variants": [],
+        "sha256": "022606cbcd078de245f349b855e9d0ae52ee9905800fc23c58b3647c798bff61",
+        "frames": 15449,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "50ad80336d1fe60e15aee515852d688270f255d7bcdcde3d2000e6f969e9376c"
+        }
+    }
+]

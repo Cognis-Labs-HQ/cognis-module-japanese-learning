@@ -1,0 +1,46 @@
+[
+    {
+        "path": "audio/006a058bf4a798482060aac1a01fdc33c0e07da82e545a1a03880cccfc8000e5.wav",
+        "text": "すわる",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "すわる",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "すわる",
+                "semanticRole": "lexicalUnit",
+                "readings": ["すわる"]
+            },
+            {
+                "language": "ja",
+                "label": "座る",
+                "semanticRole": "lexicalUnit",
+                "readings": ["すわる"]
+            }
+        ],
+        "entries": [
+            "ja:word:posture-sit",
+            "ja:word:complete-pronunciation-posture-sit"
+        ],
+        "variants": [],
+        "sha256": "006a058bf4a798482060aac1a01fdc33c0e07da82e545a1a03880cccfc8000e5",
+        "frames": 18793,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "d2f26bbdd6c573fdccfb723b021c320267bbd455877a75d10b3d2c831d32a3b5"
+        }
+    }
+]

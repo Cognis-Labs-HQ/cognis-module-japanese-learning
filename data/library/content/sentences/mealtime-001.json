@@ -1,0 +1,197 @@
+[
+    {
+        "id": "ja:sentence:mealtime-eat-cheese",
+        "label": "チーズを食べる",
+        "class": "composite",
+        "fields": {
+            "pronunciation": ["ちーずをたべる"],
+            "audio": "audio/c1de7a662a8fb55a03ba827df3dcef5ee150c111c116f4f8eb07440694fe9702.wav"
+        },
+        "references": [
+            {
+                "entryId": "ja:word:cheese",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:taberu",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:definition:mealtime-eat-cheese",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:mealtime-like-soup",
+        "label": "スープが好きです",
+        "class": "composite",
+        "fields": {
+            "pronunciation": ["すーぷがすきです"],
+            "audio": "audio/c9c6191e04c72ec5b7589989e32963adf9d87f6ba48bab3af87efe081bb55b69.wav"
+        },
+        "references": [
+            {
+                "entryId": "ja:word:soup",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:ga",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:suki",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:word:desu",
+                "relation": "words",
+                "position": 3
+            },
+            {
+                "entryId": "ja:definition:mealtime-like-soup",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:mealtime-have-butter",
+        "label": "バターがある",
+        "class": "composite",
+        "fields": {
+            "pronunciation": ["ばたーがある"],
+            "audio": "audio/9b3749c164aa38285998ad5aeac5567c4fffb4f0c9c8733ee263ba2be1269ce9.wav"
+        },
+        "references": [
+            {
+                "entryId": "ja:word:butter",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:ga",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:aru-exist",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:definition:mealtime-have-butter",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:mealtime-eat-rice",
+        "label": "ご飯を食べる",
+        "class": "composite",
+        "fields": {
+            "pronunciation": ["ごはんをたべる"],
+            "audio": "audio/ab126f3fe008c0af69cce1d8d6854eb6ffe885521fa4336d1797b40f18089dcc.wav"
+        },
+        "references": [
+            {
+                "entryId": "ja:word:rice",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:taberu",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:definition:mealtime-eat-rice",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:mealtime-small-tomato",
+        "label": "トマトは小さい",
+        "class": "composite",
+        "fields": {
+            "pronunciation": ["とまとはちいさい"],
+            "audio": "audio/b89c2f0b27cd7b0d269e993cbd8519a5d2df2672c29c82bf14e0679558175d46.wav"
+        },
+        "references": [
+            {
+                "entryId": "ja:word:tomato",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:wa",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:chiisai",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:definition:mealtime-small-tomato",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:sentence:mealtime-drink-with-friend",
+        "label": "友達と水を飲む",
+        "class": "composite",
+        "fields": {
+            "pronunciation": ["ともだちとみずをのむ"],
+            "audio": "audio/e8a6c06ea879d6057a4c09913eb3f8cbb0a214ec4b008438c778b19690bf0b1a.wav"
+        },
+        "references": [
+            {
+                "entryId": "ja:word:tomodachi",
+                "relation": "words",
+                "position": 0
+            },
+            {
+                "entryId": "ja:particle:to",
+                "relation": "particles",
+                "position": 1
+            },
+            {
+                "entryId": "ja:word:mizu",
+                "relation": "words",
+                "position": 2
+            },
+            {
+                "entryId": "ja:particle:wo",
+                "relation": "particles",
+                "position": 3
+            },
+            {
+                "entryId": "ja:word:nomu",
+                "relation": "words",
+                "position": 4
+            },
+            {
+                "entryId": "ja:definition:mealtime-drink-with-friend",
+                "relation": "definitions"
+            }
+        ]
+    }
+]

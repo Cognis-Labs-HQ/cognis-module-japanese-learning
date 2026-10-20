@@ -1,0 +1,74 @@
+[
+    {
+        "id": "ja:word:complete-pronunciation-comprehension-understand",
+        "label": "わかる",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["わかる"],
+            "audio": "audio/a756a554f83d17ed9d15085e567e3a6f28682ad30abc1e634bf0dd7f7cdfad98.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:wa",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:ka",
+                        "relation": "reading-kana",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:ru",
+                        "relation": "reading-kana",
+                        "position": 2
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:comprehension-understand",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:comprehension-understand",
+        "label": "分かる",
+        "class": "lexical:verb",
+        "fields": {
+            "pronunciation": ["わかる"],
+            "reference_images": [
+                "images/02dfee054327a5eb3ccc269b4d05303119c328d3113d403bcfb5eea9a19f3cdd.jpg"
+            ],
+            "audio": "audio/a756a554f83d17ed9d15085e567e3a6f28682ad30abc1e634bf0dd7f7cdfad98.wav"
+        },
+        "tags": ["verb", "comprehension-form-understand"],
+        "references": [
+            {
+                "entryId": "ja:definition:comprehension-understand",
+                "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-5206",
+                "relation": "spelling",
+                "position": 0
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-comprehension-understand",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    }
+]

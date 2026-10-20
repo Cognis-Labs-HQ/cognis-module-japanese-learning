@@ -1,0 +1,156 @@
+[
+    {
+        "id": "ja:word:complete-pronunciation-correspondence-letter",
+        "label": "てがみ",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["てがみ"],
+            "audio": "audio/f30c49090c44dd8410e84790446f1fe304a31dc64b3076f54d2d5eb35a25267f.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:te",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:ga",
+                        "relation": "reading-kana",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:mi",
+                        "relation": "reading-kana",
+                        "position": 2
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:correspondence-letter",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:correspondence-letter",
+        "label": "手紙",
+        "class": "lexical:noun",
+        "fields": {
+            "pronunciation": ["てがみ"],
+            "reference_images": [
+                "images/1917233135f528b1d6108461b079c247e504822ba4a6b9ee21d86a42dbb71418.jpg"
+            ],
+            "audio": "audio/f30c49090c44dd8410e84790446f1fe304a31dc64b3076f54d2d5eb35a25267f.wav"
+        },
+        "tags": ["noun", "correspondence"],
+        "references": [
+            {
+                "entryId": "ja:definition:correspondence-letter",
+                "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-624b",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:kanji:core-e7b499",
+                "relation": "spelling",
+                "position": 1
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-correspondence-letter",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:complete-pronunciation-correspondence-postcard",
+        "label": "はがき",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["はがき"],
+            "audio": "audio/022606cbcd078de245f349b855e9d0ae52ee9905800fc23c58b3647c798bff61.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:ha",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:ga",
+                        "relation": "reading-kana",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:ki",
+                        "relation": "reading-kana",
+                        "position": 2
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:correspondence-postcard",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:correspondence-postcard",
+        "label": "葉書",
+        "class": "lexical:noun",
+        "fields": {
+            "pronunciation": ["はがき"],
+            "reference_images": [
+                "images/cd966b4d8ba04213a6a403fc29939d8c1e9122a667a478bc1667b1918a40f942.jpg"
+            ],
+            "audio": "audio/022606cbcd078de245f349b855e9d0ae52ee9905800fc23c58b3647c798bff61.wav"
+        },
+        "tags": ["noun", "correspondence"],
+        "references": [
+            {
+                "entryId": "ja:definition:correspondence-postcard",
+                "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-8449",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:kanji:expanded-66f8",
+                "relation": "spelling",
+                "position": 1
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-correspondence-postcard",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    }
+]

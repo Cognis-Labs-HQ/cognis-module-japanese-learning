@@ -1,0 +1,285 @@
+[
+    {
+        "id": "ja:word:complete-pronunciation-fruit-peach",
+        "label": "もも",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["もも"],
+            "audio": "audio/094a3bf8198512fe56f28a047b59c5d75e0bbf5178d4fc6da691e6517a06a480.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:mo",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:mo",
+                        "relation": "reading-kana",
+                        "position": 1
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:fruit-peach",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:fruit-peach",
+        "label": "桃",
+        "class": "lexical:noun",
+        "fields": {
+            "pronunciation": ["もも"],
+            "reference_images": [
+                "images/80a9205b5b80703c0c0ccf8f727b3302d1127c9c32dd2327d00de3517c16063d.jpg"
+            ],
+            "audio": "audio/094a3bf8198512fe56f28a047b59c5d75e0bbf5178d4fc6da691e6517a06a480.wav"
+        },
+        "tags": ["noun", "fruit"],
+        "references": [
+            {
+                "entryId": "ja:definition:fruit-peach",
+                "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-6843",
+                "relation": "spelling",
+                "position": 0
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-fruit-peach",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:complete-pronunciation-fruit-pear",
+        "label": "なし",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["なし"],
+            "audio": "audio/a237b690aa20c8fb493364754d2f7087f47baab9facf44f1948387813af8c5b0.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:na",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:shi",
+                        "relation": "reading-kana",
+                        "position": 1
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:fruit-pear",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:fruit-pear",
+        "label": "梨",
+        "class": "lexical:noun",
+        "fields": {
+            "pronunciation": ["なし"],
+            "reference_images": [
+                "images/c206f325a022dceaa8fc788e433ea6900419b3f2a2822708e5b25c00d0a31694.jpg"
+            ],
+            "audio": "audio/a237b690aa20c8fb493364754d2f7087f47baab9facf44f1948387813af8c5b0.wav"
+        },
+        "tags": ["noun", "fruit"],
+        "references": [
+            {
+                "entryId": "ja:definition:fruit-pear",
+                "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-68a8",
+                "relation": "spelling",
+                "position": 0
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-fruit-pear",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:complete-pronunciation-fruit-watermelon",
+        "label": "すいか",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["すいか"],
+            "audio": "audio/3c3ec13a49e38810f0ed83037718f90506d43b4c5e95d91d51f562cc6911af79.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:su",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:i",
+                        "relation": "reading-kana",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:ka",
+                        "relation": "reading-kana",
+                        "position": 2
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:fruit-watermelon",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:fruit-watermelon",
+        "label": "すいか",
+        "class": "lexical:noun",
+        "fields": {
+            "pronunciation": ["すいか"],
+            "reference_images": [
+                "images/a9157679e4df8dfa3605d51d5e94aae4c4130500238c3569cfd77bc139b6197e.jpg"
+            ],
+            "audio": "audio/3c3ec13a49e38810f0ed83037718f90506d43b4c5e95d91d51f562cc6911af79.wav"
+        },
+        "tags": ["noun", "fruit"],
+        "references": [
+            {
+                "entryId": "ja:definition:fruit-watermelon",
+                "relation": "definitions"
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-fruit-watermelon",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ja:word:complete-pronunciation-fruit-pineapple",
+        "label": "パイナップル",
+        "class": "reading:pronunciation",
+        "hidden": true,
+        "fields": {
+            "pronunciation": ["パイナップル"],
+            "audio": "audio/06bd68d3dbb9f646d3fe8757fef4488e665058920413662fc7369bf91ea96691.wav"
+        },
+        "referenceGroups": {
+            "reading-kana": [
+                [
+                    {
+                        "entryId": "ja:char:ka:pa",
+                        "relation": "reading-kana",
+                        "position": 0
+                    },
+                    {
+                        "entryId": "ja:char:ka:i",
+                        "relation": "reading-kana",
+                        "position": 1
+                    },
+                    {
+                        "entryId": "ja:char:ka:na",
+                        "relation": "reading-kana",
+                        "position": 2
+                    },
+                    {
+                        "entryId": "ja:char:ka:small-tsu",
+                        "relation": "reading-kana",
+                        "position": 3
+                    },
+                    {
+                        "entryId": "ja:char:ka:pu",
+                        "relation": "reading-kana",
+                        "position": 4
+                    },
+                    {
+                        "entryId": "ja:char:ka:ru",
+                        "relation": "reading-kana",
+                        "position": 5
+                    }
+                ]
+            ]
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:fruit-pineapple",
+                "relation": "definitions"
+            }
+        ]
+    },
+    {
+        "id": "ja:word:fruit-pineapple",
+        "label": "パイナップル",
+        "class": "lexical:noun",
+        "fields": {
+            "pronunciation": ["パイナップル"],
+            "reference_images": [
+                "images/1a77381aa6fe4fccfbaba23dcc84ecfc6300250e0fe7d02c575072e88f79d75e.jpg"
+            ],
+            "audio": "audio/06bd68d3dbb9f646d3fe8757fef4488e665058920413662fc7369bf91ea96691.wav"
+        },
+        "tags": ["noun", "fruit"],
+        "references": [
+            {
+                "entryId": "ja:definition:fruit-pineapple",
+                "relation": "definitions"
+            }
+        ],
+        "referenceGroups": {
+            "pronunciation-readings": [
+                [
+                    {
+                        "entryId": "ja:word:complete-pronunciation-fruit-pineapple",
+                        "relation": "pronunciation-readings",
+                        "position": 0
+                    }
+                ]
+            ]
+        }
+    }
+]

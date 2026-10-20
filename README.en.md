@@ -4,6 +4,10 @@
 
 Japanese Study supplies a versioned Japanese content pack, scoped dictionary and recording providers, and persisted administrator voice settings through Cognis capabilities. Cognis owns the learning interface, library storage, authorization and playback cache.
 
+## Packaged content
+
+The pack provides writing guides, themed vocabulary, linked examples, illustrations and starter decks. The packaged content and media inventories are the source of truth for availability.
+
 ## Requirements
 
 - Cognis with the Study gateway and Library adapter enabled.
@@ -65,7 +69,7 @@ Resolver roles are now reserved for true compositions: kanji readings, word spel
 
 ## Complete kana tables
 
-Alongside all 46 basic gojūon entries and 25 dakuten or handakuten forms per script, the pack includes small kana, all standard yōon series, and common sokuon geminations. Examples include `ひゃ`, `しゅ`, `じゃ`, and `って`, plus their katakana equivalents.
+Alongside basic gojūon entries and dakuten or handakuten forms per script, the pack includes small kana, all standard yōon series, and common sokuon geminations. Examples include `ひゃ`, `しゅ`, `じゃ`, and `って`, plus their katakana equivalents.
 
 ## Dynamic variant placement
 
@@ -113,7 +117,7 @@ The pack is republished for the latest Library identity safeguards. Every Kana r
 
 ## Explicit Kana child hierarchies
 
-Aligned with the latest Library relationship contract by marking Kana parent relationships as both variants and spatial children. The suppressed duplicate relationship section makes the explicit `usage_note` field unnecessary, so it and its four record values have been removed.
+Aligned with the latest Library relationship contract by marking Kana parent relationships as both variants and spatial children. The suppressed duplicate relationship section makes the explicit `usage_note` field unnecessary, so it and its record values have been removed.
 
 ## Canonical Kanji reading vocabulary
 
@@ -139,13 +143,13 @@ Hidden reading Vocabulary records carry their own four-locale definition wheneve
 
 ## Expanded Core Dataset
 
-The pack now includes more than thirty additional everyday Vocabulary records, ten additional particles, and eight fully composed example sentences, all stored as declarative JSON under `data/library/content/`. Genuine polysemy may use several localized definition references on one record (`なおす`: repair/correct), while homophones such as `はし` (bridge/chopsticks), `あめ` (rain/candy), `かみ` (paper/hair/deity), and `はな` (flower/nose) remain separate Vocabulary records with distinct definitions.
+The pack now includes everyday Vocabulary records, additional particles, and fully composed example sentences, all stored as declarative JSON under `data/library/content/`. Genuine polysemy may use several localized definition references on one record (`なおす`: repair/correct), while homophones such as `はし` (bridge/chopsticks), `あめ` (rain/candy), `かみ` (paper/hair/deity), and `はな` (flower/nose) remain separate Vocabulary records with distinct definitions.
 
 ## Kanji-first core graph
 
 The compact core now uses conventional Kanji spellings throughout. Sentences reference visible vocabulary, visible vocabulary references its Kanji and hidden pronunciation segments, and every hidden segment reconstructs from atomic Kana through the composition-only `reading-kana` relationship. For example, `私は学生` resolves through `私` → `わたし` → `わ`・`た`・`し` and `学生` → `がく`・`せい` → atomic Kana.
 
-## Latest PR 226 record controls
+## Latest PR record controls
 
 The provider data now matches the latest Study Library normalization contract: definitions are hidden `definition` records, sentences are `composite` records, and particles are immutable `particle` records with `editable: false`. Lexical and reading classes remain provider-neutral and namespaced.
 
@@ -159,7 +163,7 @@ Single-Kanji vocabulary now uses a hidden complete-pronunciation wrapper before 
 
 ## Linked sentence readings and reviewed practice batch
 
-Every sentence pronunciation now opens a hidden complete-reading record whose segments resolve through existing hidden vocabulary and atomic particle Kana; unlinked pronunciation text is no longer the default. Eight reviewed sentences add varied practice for drinking water, studying Japanese, travel, animals, size, and walking, with new fully linked `学ぶ` and `歩く` vocabulary.
+Every sentence pronunciation now opens a hidden complete-reading record whose segments resolve through existing hidden vocabulary and atomic particle Kana; unlinked pronunciation text is no longer the default. Reviewed sentences add varied practice for drinking water, studying Japanese, travel, animals, size, and walking, with new fully linked `学ぶ` and `歩く` vocabulary.
 
 ## Direct Kana Reading Titles
 
@@ -259,9 +263,9 @@ Vocabulary pronunciation fields use the singular `pronunciation-readings` link c
 
 ## Speech and recordings
 
-The pack includes verified WAV recordings for every spoken curated card, character, particle and reachable schema transformation, including plurals and chained verb forms. `xya0RvcJtofTcFTOdX4E` is the designated voice for this language. `data/audio/recordings.json` records each request, voice, model, settings, transformation path and file checksum; credentials and generation tools are not packaged.
+Bundled WAV files receive checksum, format and PCM integrity checks; listening review is recorded separately and may be unverified. `data/audio/recordings.json` lists available recordings and compositions. `data/audio/unavailable.json` explicitly lists cards without bundled audio; missing recordings are not playback URLs. The designated voice is `xya0RvcJtofTcFTOdX4E`. Credentials and offline generation tools are not packaged.
 
-Shipped sentences use directly generated whole-sentence recordings before composite audio. New or unrecorded sentences use host composition with the exact ordered constituent PCM and selected transformations; missing variants never substitute their base form. Recordings cover the curated pack, not every lazy dictionary entry or possible user-authored sentence.
+Packaged sentence playback prioritizes exact constituent-composed PCM, including the intended grammatical forms. Independently generated whole-sentence recordings retain their original provenance and remain separate. A sentence without all exact constituent recordings has no bundled audio; missing forms never substitute base-form clips.
 
 Bootstrap registers a removable `study:audio:provider.registerProvider` implementation. Bundled cards and their variants work without ElevenLabs installed or configured. Missing lexical recordings may use the optional configured `elevenlabs-tts:synthesis` capability; the default request voice is the designated language voice, with an administrator voice override available for new synthesis. New sentences never request separate whole-sentence synthesis. Cognis owns global-card authorization, caching, manual uploads and private/classroom composition policy. Only the primary authored pronunciation is selected.
 
@@ -273,11 +277,11 @@ Japanese small-kana word recordings, including 学校, are regenerated using kan
 
 ## Vocabulary Illustrations
 
-Every shipped vocabulary card now has its own generated anime-style illustration (102 cards). Concrete objects, actions and contextual scenes for abstract concepts use the existing card-detail gallery and full-image popup. The old source photographs have been replaced. [The image catalog](data/library/assets/images/catalog.json) records generation source, style, crop provenance, checksums and card assignments; [image licensing](data/library/assets/images/LICENSE.md) describes the bundled artwork. Images load locally, and the host preserves custom user images during provider reloads.
+Vocabulary cards use generated anime-style illustrations. Concrete objects, actions and contextual scenes for abstract concepts use the existing card-detail gallery and full-image popup. The old source photographs have been replaced. [The image catalog](data/library/assets/images/catalog.json) records generation source, style, crop provenance, checksums and card assignments; [image licensing](data/library/assets/images/LICENSE.md) describes the bundled artwork. Images load locally, and the host preserves custom user images during provider reloads.
 
 ## Household Vocabulary
 
-Fifteen everyday nouns cover furniture, clothing, objects and food, with four-language meanings, pronunciation links, dedicated recordings and a Household Essentials deck. English countable nouns include recorded plural transformations, including unchanged plural fish; rice remains a mass noun. Japanese beginner spellings link complete readings to atomic kana, including the long-vowel mark ー used in テーブル and コート.
+Everyday nouns cover furniture, clothing, objects and food, with four-language meanings, pronunciation links, dedicated recordings and a Household Essentials deck. English countable nouns include recorded plural transformations, including unchanged plural fish; rice remains a mass noun. Japanese beginner spellings link complete readings to atomic kana, including the long-vowel mark ー used in テーブル and コート.
 
 ## Food and Body Vocabulary
 
@@ -285,7 +289,7 @@ Packaged sentence playback uses exact constituent-composed PCM, including select
 
 ## Recording Inventories
 
-`data/audio/recordings.json` is a compact manifest with language, voice, model, shared processing settings, totals and integrity-checked inventory paths. Purpose-grouped files under `data/audio/inventories/` separately describe characters, vocabulary, transformations, direct sentences and precomposed sentence recordings. Each file stays below 800 lines and retains exact requests, per-clip voice provenance, transformation paths and audio checksums. Bootstrap verifies every inventory checksum and count before registering playback; the recording bytes and lookup precedence are unchanged.
+`data/audio/recordings.json` uses inventory format 2 with language, voice, model, processing settings, totals and hashed purpose-index paths. Files under `data/audio/indexes/` list the hashed shards under `data/audio/inventories/`, grouped into characters, vocabulary, transformations, direct sentences and sentence compositions. Root and purpose indexes stay below 400 lines; recording shards stay at or below 800 lines. The loader verifies both levels, counts, allowed paths, purpose/kind agreement and duplicate paths before registering playback. Recording objects, audio bytes and lookup precedence are preserved.
 
 ## Explicit catalog normalization and sentence composition inventories
 
