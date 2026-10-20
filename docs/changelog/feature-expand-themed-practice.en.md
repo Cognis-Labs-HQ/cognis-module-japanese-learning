@@ -2,6 +2,10 @@
 
 **Feature Branch:** `feature-expand-themed-practice`
 
+## Complete supporting-card audio bindings
+
+Bundle 45 previously generated Japanese recordings for the remaining 47 supporting cards, using the selected ElevenLabs voice and exact authored Kana readings. Preserve existing media and apply the established padding and peak limit to the new recordings. Store recording request provenance, source digests and validation metadata in the existing inventories. Automated audio and binding checks passed; listening verification was unavailable. No cards remain in the unrecorded inventory.
+
 ## Reuse existing component recordings
 
 Bind 94 supporting Kanji and reading cards to 72 existing recordings with matching authored pronunciations. Preserve all existing audio bytes and original recording requests. Forty-seven cards remain explicitly unrecorded in the bundled inventory.

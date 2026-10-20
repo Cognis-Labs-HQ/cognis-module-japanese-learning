@@ -501,3 +501,46 @@ test("unrecorded inventory exactly matches missing audio without weakening recor
         assert.ok(item.reason);
     }
 });
+
+test("supporting-card recordings retain source provenance and explicit listening status", () => {
+    const added = inventory.recordings.filter(
+        (clip) => clip.metadata?.sourceWavSha256,
+    );
+    assert.equal(added.length, 45);
+    const bound = new Set();
+    for (const clip of added) {
+        assert.match(clip.metadata.sourceWavSha256, /^[a-f0-9]{64}$/);
+        assert.match(clip.metadata.sourcePcmSha256, /^[a-f0-9]{64}$/);
+        assert.ok(clip.metadata.requestId);
+        assert.ok(clip.metadata.historyItemId);
+        assert.equal(clip.metadata.validation.automated, "passed");
+        assert.equal(
+            clip.metadata.validation.listening,
+            "unavailable-audio-input-unsupported",
+        );
+        assert.equal(clip.metadata.processing.paddingMs, 20);
+        assert.equal(clip.metadata.processing.peakLimit, 0.82);
+        assert.ok(clip.metadata.processing.gain > 0);
+        assert.ok(clip.metadata.processing.gain <= 1);
+        for (const entryId of clip.entries) {
+            const entry = entries.get(entryId);
+            assert.equal(entry.fields.audio, clip.path, entryId);
+            assert.equal(
+                entry.fields.pronunciation[0],
+                clip.request.text,
+                `${entryId}: speech must use the authored reading`,
+            );
+            assert.ok(
+                clip.inputs.some(
+                    (input) =>
+                        input.label === entry.label &&
+                        input.readings[0] === entry.fields.pronunciation[0],
+                ),
+                entryId,
+            );
+            bound.add(entryId);
+        }
+    }
+    assert.equal(bound.size, 47);
+    assert.equal(unrecordedIds.size, 0);
+});

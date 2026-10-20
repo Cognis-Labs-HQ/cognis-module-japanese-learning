@@ -2,6 +2,10 @@
 
 **Feature-Zweig:** `feature-expand-themed-practice`
 
+## Audioverknüpfungen der ergänzenden Karten vervollständigen
+
+45 bereits erzeugte japanische Aufnahmen für die verbleibenden 47 ergänzenden Karten bündeln, mit der ausgewählten ElevenLabs-Stimme und den exakt hinterlegten Kana-Lesungen. Vorhandene Medien bleiben unverändert; neue Aufnahmen erhalten die etablierte Randstille und Pegelbegrenzung. Aufnahmeanfragen, Quellprüfsummen und Validierungsmetadaten werden in den bestehenden Verzeichnissen gespeichert. Automatische Audio- und Verknüpfungsprüfungen bestanden; eine Hörprüfung war nicht verfügbar. Das Verzeichnis der Karten ohne Aufnahme ist leer.
+
 ## Vorhandene Komponentenaufnahmen wiederverwenden
 
 94 ergänzende Kanji- und Lesungskarten mit 72 vorhandenen Aufnahmen verknüpfen, deren Aussprache den hinterlegten Lesungen entspricht. Alle Audiodaten und ursprünglichen Aufnahmeanfragen bleiben unverändert. 47 Karten bleiben im mitgelieferten Verzeichnis ausdrücklich ohne Aufnahme.

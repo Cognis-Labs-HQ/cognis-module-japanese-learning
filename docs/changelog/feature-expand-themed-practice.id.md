@@ -2,6 +2,10 @@
 
 **Cabang Fitur:** `feature-expand-themed-practice`
 
+## Melengkapi audio kartu pendukung
+
+Menyertakan 45 rekaman bahasa Jepang yang telah dibuat untuk 47 kartu pendukung tersisa, menggunakan suara ElevenLabs yang dipilih dan bacaan kana persis seperti pada kartu. Media yang ada tetap sama; rekaman baru mengikuti jeda tepi dan batas amplitudo yang berlaku. Asal permintaan rekaman, hash sumber, dan metadata validasi disimpan dalam inventaris yang ada. Pemeriksaan otomatis audio dan tautan lulus; verifikasi dengan mendengarkan tidak tersedia. Tidak ada lagi kartu dalam daftar tanpa rekaman.
+
 ## Menggunakan kembali rekaman komponen
 
 Menghubungkan 94 kartu kanji dan bacaan pendukung ke 72 rekaman yang sudah ada dengan pelafalan sesuai bacaan kartu. Semua data audio dan permintaan rekaman asli dipertahankan. Sebanyak 47 kartu tetap dicatat secara eksplisit tanpa rekaman dalam inventaris bawaan.
