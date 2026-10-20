@@ -398,11 +398,24 @@
                 "label": "かさ",
                 "semanticRole": "lexicalUnit",
                 "readings": ["かさ"]
+            },
+            {
+                "language": "ja",
+                "label": "傘",
+                "semanticRole": "compoundWritingUnit",
+                "readings": ["かさ"]
+            },
+            {
+                "language": "ja",
+                "label": "傘",
+                "semanticRole": "lexicalUnit",
+                "readings": ["かさ"]
             }
         ],
         "entries": [
             "ja:word:umbrella",
-            "ja:word:complete-pronunciation-umbrella"
+            "ja:word:complete-pronunciation-umbrella",
+            "ja:kanji:expanded-5098"
         ],
         "variants": [],
         "voiceId": "xya0RvcJtofTcFTOdX4E",
@@ -466,6 +479,12 @@
                 "label": "とりにく",
                 "semanticRole": "lexicalUnit",
                 "readings": ["とりにく"]
+            },
+            {
+                "language": "ja",
+                "label": "鶏肉",
+                "semanticRole": "lexicalUnit",
+                "readings": ["とりにく"]
             }
         ],
         "entries": [
@@ -498,6 +517,12 @@
             {
                 "language": "ja",
                 "label": "おなか",
+                "semanticRole": "lexicalUnit",
+                "readings": ["おなか"]
+            },
+            {
+                "language": "ja",
+                "label": "お腹",
                 "semanticRole": "lexicalUnit",
                 "readings": ["おなか"]
             }
@@ -588,13 +613,26 @@
                 "label": "硬",
                 "semanticRole": "compoundWritingUnit",
                 "readings": ["かた"]
+            },
+            {
+                "language": "ja",
+                "label": "肩",
+                "semanticRole": "compoundWritingUnit",
+                "readings": ["かた"]
+            },
+            {
+                "language": "ja",
+                "label": "肩",
+                "semanticRole": "lexicalUnit",
+                "readings": ["かた"]
             }
         ],
         "entries": [
             "ja:word:kanji-reading-ja:kanji:go-02",
             "ja:word:shoulder",
             "ja:word:complete-pronunciation-shoulder",
-            "ja:kanji:expanded-786c"
+            "ja:kanji:expanded-786c",
+            "ja:kanji:expanded-80a9"
         ],
         "variants": [],
         "sha256": "283fc0a57a9d84ad0f9e027b1a0787b05ed0629e6f6ebbc69705c9491be23c65",
@@ -699,78 +737,5 @@
         "variants": [],
         "sha256": "f13dcdc122a778086d6f308f0ac1f2f91a7b94913dd8d57c5eaf68955d5fb1f9",
         "frames": 8969
-    },
-    {
-        "path": "audio/72024d9258704d28b179bffdac95702fb612697c8a93fd71cf9910b693360cdf.wav",
-        "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "text": "たい",
-        "request": {
-            "text": "たい",
-            "model_id": "eleven_flash_v2_5",
-            "seed": 42,
-            "voice_settings": {
-                "stability": 0.9,
-                "similarity_boost": 0.85,
-                "style": 0,
-                "use_speaker_boost": true,
-                "speed": 0.9
-            },
-            "language_code": "ja"
-        },
-        "inputs": [
-            {
-                "language": "ja",
-                "label": "たい",
-                "semanticRole": "lexicalUnit",
-                "readings": ["たい"]
-            },
-            {
-                "language": "ja",
-                "label": "太",
-                "semanticRole": "compoundWritingUnit",
-                "readings": ["たい"]
-            }
-        ],
-        "entries": [
-            "ja:word:kanji-reading-e69da5-06",
-            "ja:word:kanji-reading-e5a4a7-03",
-            "ja:kanji:expanded-592a"
-        ],
-        "variants": [],
-        "sha256": "3f86bf4cebf526fc9d0c404b94ea3d827d2dcdd410b242845d63cd135efa9dfe",
-        "frames": 9962
-    },
-    {
-        "path": "audio/b09dd6c4a13adfba930cac494e2e0b40a4849dc4e0c0db023be27205d7bf99bf.wav",
-        "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "text": "じん",
-        "request": {
-            "text": "じん",
-            "model_id": "eleven_flash_v2_5",
-            "seed": 42,
-            "voice_settings": {
-                "stability": 0.9,
-                "similarity_boost": 0.85,
-                "style": 0,
-                "use_speaker_boost": true,
-                "speed": 0.9
-            },
-            "language_code": "ja"
-        },
-        "inputs": [
-            {
-                "language": "ja",
-                "label": "じん",
-                "semanticRole": "lexicalUnit",
-                "readings": ["じん"]
-            }
-        ],
-        "entries": [
-            "ja:word:kanji-reading-e7a59e-05",
-            "ja:word:kanji-reading-ja:kanji:hito-01"
-        ],
-        "variants": [],
-        "sha256": "6cdb7f2be4791a39032a87f09ed1f2fe04aab6286d801fae7d796f9bcca2eaa6",
-        "frames": 12317
     }
 ]

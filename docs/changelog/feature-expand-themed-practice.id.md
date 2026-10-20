@@ -2,6 +2,10 @@
 
 **Cabang Fitur:** `feature-expand-themed-practice`
 
+## Meninjau ejaan seluruh kosakata
+
+Meninjau seluruh 275 kata yang terlihat, termasuk berkas lama yang sebelumnya tidak tercakup dalam audit ejaan. Memperbaiki 33 label kata dan 38 label kalimat, termasuk 顔, 頭, 電話, 葉書, dan 時々. Mempertahankan 92 ejaan kana yang lazim dengan alasan khusus per kata dalam uji regresi. Menambahkan 24 Kanji pendukung memakai skema yang ada, bacaan yang tercatat dalam KANJIDIC, dan pola goresan KanjiVG. Memakai ulang rekaman yang ada untuk 19 kartu; 帽・抵・腹・飯・鶏 tetap dicatat tanpa rekaman karena belum ada rekaman komponen yang tepat. Mempertahankan seluruh ID, pelafalan, tautan audio/gambar, dan semua 1.592 berkas media tanpa perubahan byte. Mempertahankan permintaan rekaman asli dan rekaman kalimat utuh sambil memperbarui pencarian komposisi kalimat. Memperluas uji ejaan ke setiap kata yang terlihat, termasuk uji negatif 顔/かお. Penghitung hari menampilkan 日, mempertahankan bacaan か dan makna penghitungnya, serta memakai graf bacaan 日 yang sudah ada.
+
 ## Melengkapi audio kartu pendukung
 
 Menyertakan 45 rekaman bahasa Jepang yang telah dibuat untuk 47 kartu pendukung tersisa, menggunakan suara ElevenLabs yang dipilih dan bacaan kana persis seperti pada kartu. Media yang ada tetap sama; rekaman baru mengikuti jeda tepi dan batas amplitudo yang berlaku. Asal permintaan rekaman, hash sumber, dan metadata validasi disimpan dalam inventaris yang ada. Pemeriksaan otomatis audio dan tautan lulus; verifikasi dengan mendengarkan tidak tersedia. Tidak ada lagi kartu dalam daftar tanpa rekaman.

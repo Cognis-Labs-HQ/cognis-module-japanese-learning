@@ -144,6 +144,12 @@
                 "label": "し",
                 "semanticRole": "lexicalUnit",
                 "readings": ["し"]
+            },
+            {
+                "language": "ja",
+                "label": "子",
+                "semanticRole": "compoundWritingUnit",
+                "readings": ["し"]
             }
         ],
         "entries": [
@@ -151,7 +157,8 @@
             "ja:char:ka:shi",
             "ja:word:kanji-reading-e9a3b4-04",
             "ja:word:kanji-reading-e7b499-02",
-            "ja:word:kanji-reading-e7a781-03"
+            "ja:word:kanji-reading-e7a781-03",
+            "ja:kanji:expanded-5b50"
         ],
         "variants": [],
         "sha256": "3351d676a5e2007a62af1a4dba42191ace9555a497a65833eaaa25ae03482dba",
@@ -236,9 +243,15 @@
                 "label": "セ",
                 "semanticRole": "atomicWritingUnit",
                 "readings": ["se"]
+            },
+            {
+                "language": "ja",
+                "label": "背",
+                "semanticRole": "compoundWritingUnit",
+                "readings": ["せ"]
             }
         ],
-        "entries": ["ja:char:se", "ja:char:ka:se"],
+        "entries": ["ja:char:se", "ja:char:ka:se", "ja:kanji:expanded-80cc"],
         "variants": [],
         "sha256": "319d27accaf46edd82d9f745b4b9d736a20a906460c5700a1cc22861fcdcd4ad",
         "frames": 13220

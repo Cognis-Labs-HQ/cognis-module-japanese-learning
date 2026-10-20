@@ -1,0 +1,75 @@
+[
+    {
+        "path": "audio/72024d9258704d28b179bffdac95702fb612697c8a93fd71cf9910b693360cdf.wav",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "text": "たい",
+        "request": {
+            "text": "たい",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "たい",
+                "semanticRole": "lexicalUnit",
+                "readings": ["たい"]
+            },
+            {
+                "language": "ja",
+                "label": "太",
+                "semanticRole": "compoundWritingUnit",
+                "readings": ["たい"]
+            }
+        ],
+        "entries": [
+            "ja:word:kanji-reading-e69da5-06",
+            "ja:word:kanji-reading-e5a4a7-03",
+            "ja:kanji:expanded-592a"
+        ],
+        "variants": [],
+        "sha256": "3f86bf4cebf526fc9d0c404b94ea3d827d2dcdd410b242845d63cd135efa9dfe",
+        "frames": 9962
+    },
+    {
+        "path": "audio/b09dd6c4a13adfba930cac494e2e0b40a4849dc4e0c0db023be27205d7bf99bf.wav",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "text": "じん",
+        "request": {
+            "text": "じん",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "じん",
+                "semanticRole": "lexicalUnit",
+                "readings": ["じん"]
+            }
+        ],
+        "entries": [
+            "ja:word:kanji-reading-e7a59e-05",
+            "ja:word:kanji-reading-ja:kanji:hito-01"
+        ],
+        "variants": [],
+        "sha256": "6cdb7f2be4791a39032a87f09ed1f2fe04aab6286d801fae7d796f9bcca2eaa6",
+        "frames": 12317
+    }
+]

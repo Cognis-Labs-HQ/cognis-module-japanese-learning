@@ -8,9 +8,25 @@
                 "label": "くび",
                 "semanticRole": "lexicalUnit",
                 "readings": ["くび"]
+            },
+            {
+                "language": "ja",
+                "label": "首",
+                "semanticRole": "compoundWritingUnit",
+                "readings": ["くび"]
+            },
+            {
+                "language": "ja",
+                "label": "首",
+                "semanticRole": "lexicalUnit",
+                "readings": ["くび"]
             }
         ],
-        "entries": ["ja:word:neck", "ja:word:complete-pronunciation-neck"],
+        "entries": [
+            "ja:word:neck",
+            "ja:word:complete-pronunciation-neck",
+            "ja:kanji:expanded-9996"
+        ],
         "variants": [],
         "voiceId": "xya0RvcJtofTcFTOdX4E",
         "request": {
@@ -37,6 +53,12 @@
             {
                 "language": "ja",
                 "label": "せなか",
+                "semanticRole": "lexicalUnit",
+                "readings": ["せなか"]
+            },
+            {
+                "language": "ja",
+                "label": "背中",
                 "semanticRole": "lexicalUnit",
                 "readings": ["せなか"]
             }
@@ -70,9 +92,25 @@
                 "label": "はだ",
                 "semanticRole": "lexicalUnit",
                 "readings": ["はだ"]
+            },
+            {
+                "language": "ja",
+                "label": "肌",
+                "semanticRole": "compoundWritingUnit",
+                "readings": ["はだ"]
+            },
+            {
+                "language": "ja",
+                "label": "肌",
+                "semanticRole": "lexicalUnit",
+                "readings": ["はだ"]
             }
         ],
-        "entries": ["ja:word:skin", "ja:word:complete-pronunciation-skin"],
+        "entries": [
+            "ja:word:skin",
+            "ja:word:complete-pronunciation-skin",
+            "ja:kanji:expanded-808c"
+        ],
         "variants": [],
         "voiceId": "xya0RvcJtofTcFTOdX4E",
         "request": {
@@ -732,35 +770,5 @@
         "variants": [],
         "sha256": "4539839805e485771391de8a943b1abfc5be73102602cd39ad84fd38b24c2829",
         "frames": 11247
-    },
-    {
-        "path": "audio/73c7964661242cec797433be6209c46acc1cd4071ad4e6b6b19f883c32c8fc87.wav",
-        "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "text": "ゆう",
-        "request": {
-            "text": "ゆう",
-            "model_id": "eleven_flash_v2_5",
-            "seed": 42,
-            "voice_settings": {
-                "stability": 0.9,
-                "similarity_boost": 0.85,
-                "style": 0,
-                "use_speaker_boost": true,
-                "speed": 0.9
-            },
-            "language_code": "ja"
-        },
-        "inputs": [
-            {
-                "language": "ja",
-                "label": "ゆう",
-                "semanticRole": "lexicalUnit",
-                "readings": ["ゆう"]
-            }
-        ],
-        "entries": ["ja:word:kanji-reading-e58f8b-02"],
-        "variants": [],
-        "sha256": "71d14756ac694e562640db6218c4a6b95983f8e140e6286df9f03e32f44eb52c",
-        "frames": 9291
     }
 ]

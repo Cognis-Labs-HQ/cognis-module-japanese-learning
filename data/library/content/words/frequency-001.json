@@ -105,7 +105,7 @@
     },
     {
         "id": "ja:word:frequency-sometimes",
-        "label": "ときどき",
+        "label": "時々",
         "class": "lexical:adverb",
         "fields": {
             "pronunciation": ["ときどき"],
@@ -119,6 +119,11 @@
             {
                 "entryId": "ja:definition:frequency-sometimes",
                 "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-6642",
+                "relation": "spelling",
+                "position": 0
             }
         ],
         "referenceGroups": {
@@ -143,18 +148,17 @@
             "audio": "audio/64f51fe03be3db044fe2a59e20a59578ccb9017040b70915a4b2f9e5ff5ebc16.wav"
         },
         "referenceGroups": {
-            "reading-kana": [
+            "pronunciation-readings": [
                 [
                     {
-                        "entryId": "ja:char:ta",
-                        "relation": "reading-kana",
+                        "entryId": "ja:word:kanji-reading-e5a4a7-03",
+                        "relation": "pronunciation-readings",
                         "position": 0
-                    },
-                    {
-                        "entryId": "ja:char:i",
-                        "relation": "reading-kana",
-                        "position": 1
-                    },
+                    }
+                ]
+            ],
+            "reading-kana": [
+                [
                     {
                         "entryId": "ja:char:te",
                         "relation": "reading-kana",
@@ -177,7 +181,7 @@
     },
     {
         "id": "ja:word:frequency-usually",
-        "label": "たいてい",
+        "label": "大抵",
         "class": "lexical:adverb",
         "fields": {
             "pronunciation": ["たいてい"],
@@ -191,6 +195,16 @@
             {
                 "entryId": "ja:definition:frequency-usually",
                 "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:core-e5a4a7",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:kanji:expanded-62b5",
+                "relation": "spelling",
+                "position": 1
             }
         ],
         "referenceGroups": {

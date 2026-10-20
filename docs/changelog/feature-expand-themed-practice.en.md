@@ -2,6 +2,10 @@
 
 **Feature Branch:** `feature-expand-themed-practice`
 
+## Review spelling across the entire vocabulary
+
+Review all 275 visible words, including legacy shards previously omitted from the spelling audit. Correct 33 word labels and 38 sentence labels, including 顔, 頭, 電話, 葉書 and 時々. Keep 92 conventional kana spellings with an explicit per-word reason in the regression tests. Add 24 supporting Kanji using the existing schema, attested KANJIDIC readings and KanjiVG stroke patterns. Reuse existing recordings for 19 of these cards; 帽・抵・腹・飯・鶏 remain explicitly unrecorded because no exact component recording is available. Preserve every existing ID, pronunciation, audio/image binding and all 1,592 media files byte-for-byte. Keep original recording requests and whole-sentence recordings while updating current sentence composition lookups. Extend spelling regression coverage to every visible word, including a negative 顔/かお test. The day counter displays 日, keeps the reading か and its counter meaning, and links the existing 日 reading graph.
+
 ## Complete supporting-card audio bindings
 
 Bundle 45 previously generated Japanese recordings for the remaining 47 supporting cards, using the selected ElevenLabs voice and exact authored Kana readings. Preserve existing media and apply the established padding and peak limit to the new recordings. Store recording request provenance, source digests and validation metadata in the existing inventories. Automated audio and binding checks passed; listening verification was unavailable. No cards remain in the unrecorded inventory.

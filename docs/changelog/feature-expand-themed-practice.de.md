@@ -2,6 +2,10 @@
 
 **Feature-Zweig:** `feature-expand-themed-practice`
 
+## Schreibweisen des gesamten Wortschatzes prüfen
+
+Alle 275 sichtbaren Wörter einschließlich der zuvor ausgelassenen älteren Dateien prüfen. 33 Wortbezeichnungen und 38 Satzbezeichnungen korrigieren, darunter 顔, 頭, 電話, 葉書 und 時々. 92 übliche Kana-Schreibweisen mit einer Begründung je Wort in den Regressionstests beibehalten. 24 ergänzende Kanji mit dem vorhandenen Schema, belegten KANJIDIC-Lesungen und KanjiVG-Strichmustern hinzufügen. Für 19 dieser Karten vorhandene Aufnahmen wiederverwenden; 帽・抵・腹・飯・鶏 bleiben ausdrücklich ohne Aufnahme, da keine passende Komponentenaufnahme vorhanden ist. Sämtliche bestehenden IDs, Aussprachen, Audio- und Bildzuordnungen sowie alle 1.592 Mediendateien bytegenau erhalten. Ursprüngliche Aufnahme-Anfragen und vollständige Satzaufnahmen erhalten und die aktuellen Suchdaten der Satzkompositionen aktualisieren. Die Schreibprüfung auf jedes sichtbare Wort ausweiten, einschließlich eines negativen Tests für 顔/かお. Der Tageszähler zeigt 日, behält die Lesung か und seine Zählerbedeutung und verknüpft den vorhandenen Lesungsgraphen von 日.
+
 ## Audioverknüpfungen der ergänzenden Karten vervollständigen
 
 45 bereits erzeugte japanische Aufnahmen für die verbleibenden 47 ergänzenden Karten bündeln, mit der ausgewählten ElevenLabs-Stimme und den exakt hinterlegten Kana-Lesungen. Vorhandene Medien bleiben unverändert; neue Aufnahmen erhalten die etablierte Randstille und Pegelbegrenzung. Aufnahmeanfragen, Quellprüfsummen und Validierungsmetadaten werden in den bestehenden Verzeichnissen gespeichert. Automatische Audio- und Verknüpfungsprüfungen bestanden; eine Hörprüfung war nicht verfügbar. Das Verzeichnis der Karten ohne Aufnahme ist leer.
