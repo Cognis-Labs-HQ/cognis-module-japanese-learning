@@ -378,3 +378,4 @@ Remove the auxiliary authoring tree, staged specifications, source and rejected 
 - [b51ca92](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/b51ca92c728ee0c0aa34b8b065aa31084586dd78)
 - [1af471e](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/1af471e9ee5fae28de6b78a3845bc4a1ba6d931c)
 - [d433162](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/d433162e4121adf3a80ef615fc1345f984a48128)
+- [fe0375b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/fe0375b6763d68310394e8471a99bf84caf0684a)
