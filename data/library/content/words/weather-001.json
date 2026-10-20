@@ -33,20 +33,20 @@
                     }
                 ]
             ]
-        }
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:weather-sun",
+                "relation": "definitions"
+            }
+        ]
     },
     {
         "id": "ja:word:weather-sun",
-        "label": "たいよう",
+        "label": "太陽",
         "class": "lexical:noun",
         "fields": {
             "pronunciation": ["たいよう"],
-            "usage_notes": {
-                "en": "The sun is the star that lights the day. We normally say the sun when referring to our own star. Japanese たいよう has a long final vowel, written よう.",
-                "de": "Die Sonne ist der Stern, der den Tag erhellt. Für unseren Stern heißt es im Englischen normalerweise the sun. Japanisch たいよう hat einen langen letzten Vokal, geschrieben よう.",
-                "id": "Matahari adalah bintang yang menerangi siang. Dalam bahasa Inggris, bintang kita biasanya disebut the sun. Vokal terakhir たいよう panjang dan ditulis よう.",
-                "ja": "太陽は昼を明るくする恒星です。英語では通常the sunといいます。「たいよう」の「よう」は長い母音を表します。"
-            },
             "reference_images": [
                 "images/0fa7d93f425484a16b9b63c4755cfde41fda49e8967a1ba0a5283227d2cb3c12.jpg"
             ],
@@ -57,6 +57,16 @@
             {
                 "entryId": "ja:definition:weather-sun",
                 "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-592a",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:kanji:expanded-967d",
+                "relation": "spelling",
+                "position": 1
             }
         ],
         "referenceGroups": {
@@ -95,20 +105,20 @@
                     }
                 ]
             ]
-        }
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:weather-snow",
+                "relation": "definitions"
+            }
+        ]
     },
     {
         "id": "ja:word:weather-snow",
-        "label": "ゆき",
+        "label": "雪",
         "class": "lexical:noun",
         "fields": {
             "pronunciation": ["ゆき"],
-            "usage_notes": {
-                "en": "Snow here means frozen precipitation, normally an uncountable noun in English: some snow, not a snow. Japanese ゆき means 雪.",
-                "de": "Snow bedeutet hier gefrorenen Niederschlag und ist im Englischen normalerweise nicht zählbar: some snow, nicht a snow. Japanisch ゆき bedeutet 雪.",
-                "id": "Snow di sini berarti salju dan biasanya tidak dapat dihitung dalam bahasa Inggris: some snow, bukan a snow. ゆき berarti 雪.",
-                "ja": "ここでのsnowは雪です。英語では通常数えられない名詞なので、a snowではなくsome snowなどといいます。"
-            },
             "reference_images": [
                 "images/4afa8e73a4e31604c1ff4f967242593ab2314f14697ce2b036bcc2f275d7a9a7.jpg"
             ],
@@ -119,6 +129,11 @@
             {
                 "entryId": "ja:definition:weather-snow",
                 "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-96ea",
+                "relation": "spelling",
+                "position": 0
             }
         ],
         "referenceGroups": {
@@ -157,20 +172,20 @@
                     }
                 ]
             ]
-        }
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:weather-wind",
+                "relation": "definitions"
+            }
+        ]
     },
     {
         "id": "ja:word:weather-wind",
-        "label": "かぜ",
+        "label": "風",
         "class": "lexical:noun",
         "fields": {
             "pronunciation": ["かぜ"],
-            "usage_notes": {
-                "en": "Wind here means moving air, pronounced /wɪnd/, not the verb wind /waɪnd/. Japanese かぜ is 風 (wind), not 風邪 (a cold).",
-                "de": "Wind bedeutet hier bewegte Luft und wird /wɪnd/ ausgesprochen, nicht wie das Verb wind /waɪnd/. Japanisch かぜ meint 風 (Wind), nicht 風邪 (Erkältung).",
-                "id": "Wind di sini berarti udara yang bergerak, dibaca /wɪnd/, bukan kata kerja wind /waɪnd/. かぜ di sini adalah 風 (angin), bukan 風邪 (pilek).",
-                "ja": "ここでのwindは動く空気で、発音は/wɪnd/です。動詞wind /waɪnd/とは異なります。「かぜ」は風で、病気の風邪ではありません。"
-            },
             "reference_images": [
                 "images/f7b349b934b0c671d660e263eed911b5e927a43297ddbe68da87d1cf834738d5.jpg"
             ],
@@ -181,6 +196,11 @@
             {
                 "entryId": "ja:definition:weather-wind",
                 "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-98a8",
+                "relation": "spelling",
+                "position": 0
             }
         ],
         "referenceGroups": {
@@ -219,20 +239,20 @@
                     }
                 ]
             ]
-        }
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:weather-cloud",
+                "relation": "definitions"
+            }
+        ]
     },
     {
         "id": "ja:word:weather-cloud",
-        "label": "くも",
+        "label": "雲",
         "class": "lexical:noun",
         "fields": {
             "pronunciation": ["くも"],
-            "usage_notes": {
-                "en": "A cloud is a visible mass of tiny water droplets or ice crystals in the sky. English plural: clouds /klaʊdz/. Japanese くも here is 雲 (cloud), not 蜘蛛 (spider).",
-                "de": "Eine Wolke besteht aus winzigen Wassertropfen oder Eiskristallen am Himmel. Englischer Plural: clouds /klaʊdz/. Japanisch くも meint hier 雲 (Wolke), nicht 蜘蛛 (Spinne).",
-                "id": "Awan adalah kumpulan tetes air kecil atau kristal es yang terlihat di langit. Bentuk jamak Inggris: clouds /klaʊdz/. くも di sini adalah 雲 (awan), bukan 蜘蛛 (laba-laba).",
-                "ja": "雲は空に見える小さな水滴や氷の粒の集まりです。英語の複数形はclouds /klaʊdz/です。ここでの「くも」は雲で、蜘蛛ではありません。"
-            },
             "reference_images": [
                 "images/ed92c1bb7133f5091aec0e0bcd7d4c00336ffc4363d8e09c3bd457f0d140f4a9.jpg"
             ],
@@ -243,6 +263,11 @@
             {
                 "entryId": "ja:definition:weather-cloud",
                 "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-96f2",
+                "relation": "spelling",
+                "position": 0
             }
         ],
         "referenceGroups": {

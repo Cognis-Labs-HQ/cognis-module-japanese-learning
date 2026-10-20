@@ -23,7 +23,13 @@
                     }
                 ]
             ]
-        }
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:requests-yes",
+                "relation": "definitions"
+            }
+        ]
     },
     {
         "id": "ja:word:requests-yes",
@@ -31,18 +37,12 @@
         "class": "lexical:interjection",
         "fields": {
             "pronunciation": ["はい"],
-            "usage_notes": {
-                "en": "Affirmative response to a positive question or offer. Japanese はい can also acknowledge hearing or understanding without agreeing. Answers to negative questions do not map mechanically between languages. A nod is contextual, not a universal language rule.",
-                "de": "Bejahende Antwort auf eine positive Frage oder ein Angebot. Japanisch はい kann auch Zuhören oder Verstehen ohne Zustimmung bestätigen. Antworten auf verneinte Fragen entsprechen sich nicht mechanisch. Nicken ist Kontext, keine universelle Sprachregel.",
-                "id": "Jawaban afirmatif untuk pertanyaan positif atau tawaran. はい juga dapat mengakui mendengar atau memahami tanpa menyetujui. Jawaban pada pertanyaan negatif tidak selalu sepadan antarbasa. Anggukan memberi konteks, bukan aturan universal.",
-                "ja": "肯定疑問や申し出への肯定応答。はいは同意せずに聞いたことや理解を示す場合もある。否定疑問への応答は英語と機械的に対応しない。うなずきは文脈で、普遍的な言語規則ではない。"
-            },
             "reference_images": [
                 "images/174172b2d80455ccd75c209a00ff6e20ec347caf0c3a4c15347e168103e5a52c.jpg"
             ],
             "audio": "audio/7790a1d424068553a1c42bb64e193e837855ada0378d0c8c7d0d615a9cf3f0f4.wav"
         },
-        "tags": ["requests"],
+        "tags": ["interjection", "requests"],
         "references": [
             {
                 "entryId": "ja:definition:requests-yes",
@@ -90,7 +90,13 @@
                     }
                 ]
             ]
-        }
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:requests-no",
+                "relation": "definitions"
+            }
+        ]
     },
     {
         "id": "ja:word:requests-no",
@@ -98,18 +104,12 @@
         "class": "lexical:interjection",
         "fields": {
             "pronunciation": ["いいえ"],
-            "usage_notes": {
-                "en": "Negative response to a positive question or offer. Japanese いいえ has a long initial ii; it can sound more explicit than softer refusals. The offered drink is declined in the picture; that gesture alone does not define every use of no.",
-                "de": "Verneinende Antwort auf eine positive Frage oder ein Angebot. いいえ beginnt mit langem ii und kann ausdrücklicher als weichere Ablehnungen wirken. Das Getränk wird im Bild abgelehnt; die Geste definiert nicht jede Verwendung von nein.",
-                "id": "Jawaban negatif untuk pertanyaan positif atau tawaran. いいえ memiliki ii panjang di awal dan dapat terdengar lebih tegas daripada penolakan halus. Minuman ditolak dalam gambar; gestur itu tidak menentukan semua penggunaan tidak.",
-                "ja": "肯定疑問や申し出への否定応答。いいえの冒頭は長いイー。婉曲な断りより明示的に響くこともある。画像では飲み物を断るが、そのしぐさがnoの全用法を定義するわけではない。"
-            },
             "reference_images": [
                 "images/e8013db5ab496be606e7d7c413dbc624cd35797139567bf290bdac6ab1851db0.jpg"
             ],
             "audio": "audio/7736bcb5a68b5a5cb41da732d1c9357bff453e11579bf1230e225a9a6c9a5a35.wav"
         },
-        "tags": ["requests"],
+        "tags": ["interjection", "requests"],
         "references": [
             {
                 "entryId": "ja:definition:requests-no",
@@ -177,30 +177,35 @@
                     }
                 ]
             ]
-        }
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:requests-please",
+                "relation": "definitions"
+            }
+        ]
     },
     {
         "id": "ja:word:requests-please",
-        "label": "おねがいします",
+        "label": "お願いします",
         "class": "lexical:interjection",
         "fields": {
             "pronunciation": ["おねがいします"],
-            "usage_notes": {
-                "en": "English Please is the courtesy expression here, distinct from the existing verb to please. Japanese おねがいします is a conventional polite request, not a word inserted wherever English please appears. ゆっくりお願いします means Slowly, please when requesting slower speech.",
-                "de": "Englisch Please ist hier die Höflichkeitsformel, nicht das bestehende Verb erfreuen. おねがいします ist eine feste höfliche Bitte und wird nicht überall eingesetzt, wo Englisch please steht. ゆっくりお願いします bedeutet bei einer Sprechbitte Langsamer, bitte.",
-                "id": "Please di sini adalah ungkapan kesopanan, berbeda dari verba menyenangkan yang sudah ada. おねがいします adalah permintaan sopan yang lazim, bukan kata yang disisipkan di semua tempat please dipakai. ゆっくりお願いします meminta bicara pelan.",
-                "ja": "英語Pleaseは依頼の丁寧表現で、既存の喜ばせるという動詞とは別。おねがいしますは定型的な依頼で、英語pleaseの全位置に挿入する単語ではない。発話速度の依頼でゆっくりお願いしますはゆっくり話してほしい意味。"
-            },
             "reference_images": [
                 "images/75aa476925c936b184f5804ba3d6b02d9bdc7752d0e1aa4d6db566c7b76eaf50.jpg"
             ],
             "audio": "audio/985501ea09261b61f93349b9f96b5c90bb3242735787ee35f17a95d4b64abc79.wav"
         },
-        "tags": ["requests"],
+        "tags": ["interjection", "requests"],
         "references": [
             {
                 "entryId": "ja:definition:requests-please",
                 "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-9858",
+                "relation": "spelling",
+                "position": 1
             }
         ],
         "referenceGroups": {
@@ -254,20 +259,20 @@
                     }
                 ]
             ]
-        }
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:requests-repeat",
+                "relation": "definitions"
+            }
+        ]
     },
     {
         "id": "ja:word:requests-repeat",
-        "label": "もういちど",
+        "label": "もう一度",
         "class": "lexical:adverb",
         "fields": {
             "pronunciation": ["もういちど"],
-            "usage_notes": {
-                "en": "English Pardon? politely asks someone to repeat unheard speech. Japanese もういちど means once more; combine with おねがいします for a repetition request. They are related conversational functions, not identical standalone words. A listening gesture cannot prove the intended phrase.",
-                "de": "Englisch Pardon? bittet höflich um Wiederholung nicht verstandener Rede. もういちど bedeutet noch einmal; mit おねがいします wird daraus eine Wiederholungsbitte. Verwandte Gesprächsfunktionen, keine identischen Einzelwörter. Eine Hörgeste beweist den Wortlaut nicht.",
-                "id": "Pardon? meminta pengulangan ucapan yang tidak terdengar. もういちど berarti sekali lagi; gabungkan dengan おねがいします untuk meminta pengulangan. Fungsi percakapannya terkait, tetapi makna kata mandirinya tidak sama. Gestur mendengarkan tidak menentukan ungkapan.",
-                "ja": "英語Pardon?は聞き取れなかった発話の繰り返しを丁寧に求める。もういちどは一回さらにの意味で、おねがいしますと組み合わせて反復を依頼する。会話上の機能は関連するが、単独語の意味は同一ではない。聞くしぐさだけでは発話を特定できない。"
-            },
             "reference_images": [
                 "images/a91c394e9c3fb217c91fadf95f35987e3940f1464010fa4b4b570f11bfb2483d.jpg"
             ],
@@ -278,6 +283,16 @@
             {
                 "entryId": "ja:definition:requests-repeat",
                 "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-4e00",
+                "relation": "spelling",
+                "position": 2
+            },
+            {
+                "entryId": "ja:kanji:expanded-5ea6",
+                "relation": "spelling",
+                "position": 3
             }
         ],
         "referenceGroups": {

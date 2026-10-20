@@ -1,0 +1,82 @@
+[
+    {
+        "path": "audio/12785e633ebee6830a7eb3b31af5fa38319a706f0a26b272a71d202602845082.wav",
+        "text": "りょうりします",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "りょうりします",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "りょうりします",
+                "semanticRole": "lexicalUnit",
+                "readings": ["りょうりします"]
+            },
+            {
+                "language": "ja",
+                "label": "料理します",
+                "semanticRole": "lexicalUnit",
+                "readings": ["りょうりします"]
+            }
+        ],
+        "entries": [],
+        "variants": [
+            {
+                "entryId": "ja:word:household-cook",
+                "setId": "household-cook-forms",
+                "path": ["polite"]
+            }
+        ],
+        "sha256": "12785e633ebee6830a7eb3b31af5fa38319a706f0a26b272a71d202602845082",
+        "frames": 21022,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "8086acc59b4d8675b5321d4ed263a04df36847d3ac03eec633f37a16774da633"
+        }
+    },
+    {
+        "path": "audio/b41f1815458389dd5bf734a8341a77fadd58e2ac0314e2cd333c9d1a967b2789.wav",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "text": "いる",
+        "request": {
+            "text": "いる",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "いる",
+                "semanticRole": "lexicalUnit",
+                "readings": ["いる"]
+            }
+        ],
+        "entries": [
+            "ja:word:complete-pronunciation-iru-exist",
+            "ja:word:iru-exist"
+        ],
+        "variants": [],
+        "sha256": "98b4952b9f879f6204ef562ac722c69d42a3effcb34fd2d9495db2334749b7d1",
+        "frames": 9087
+    }
+]

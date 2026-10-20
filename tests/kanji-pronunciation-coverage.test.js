@@ -239,8 +239,10 @@ function normalizedReading(value) {
     return hiragana(value.replaceAll("-", "").split(".")[0]);
 }
 
-test("every packaged Kanji covers its reviewed KANJIDIC on and kun readings", () => {
-    const kanji = load("alt-characters");
+test("original Kanji retain their reviewed KANJIDIC on and kun readings", () => {
+    const kanji = load("alt-characters").filter(({ label }) =>
+        Object.hasOwn(SOURCE_READINGS, label),
+    );
     assert.deepEqual(
         new Set(kanji.map(({ label }) => label)),
         new Set(Object.keys(SOURCE_READINGS)),

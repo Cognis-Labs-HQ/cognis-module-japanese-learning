@@ -1,0 +1,121 @@
+[
+    {
+        "path": "audio/430c9445d72adf3a29387e25fd3b65f62b4b6c0a772d2c518bf9f358d1e15474.wav",
+        "text": "としょかん",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "図書館",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "としょかん",
+                "semanticRole": "lexicalUnit",
+                "readings": ["としょかん"]
+            },
+            {
+                "language": "ja",
+                "label": "図書館",
+                "semanticRole": "lexicalUnit",
+                "readings": ["としょかん"]
+            }
+        ],
+        "entries": [
+            "ja:word:places-library",
+            "ja:word:complete-pronunciation-places-library"
+        ],
+        "variants": [],
+        "sha256": "430c9445d72adf3a29387e25fd3b65f62b4b6c0a772d2c518bf9f358d1e15474",
+        "frames": 16564,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "abe2f859930dcebcd1ee509d435fca332acb1106e6bbc1313e41d8781511d64a"
+        }
+    },
+    {
+        "path": "audio/c35068c839da35557f146cd8d3c64eb110a267dee6555ef6d9e8ffae7a9a5ad9.wav",
+        "text": "びょういん",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "病院",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "びょういん",
+                "semanticRole": "lexicalUnit",
+                "readings": ["びょういん"]
+            },
+            {
+                "language": "ja",
+                "label": "病院",
+                "semanticRole": "lexicalUnit",
+                "readings": ["びょういん"]
+            }
+        ],
+        "entries": [
+            "ja:word:places-hospital",
+            "ja:word:complete-pronunciation-places-hospital"
+        ],
+        "variants": [],
+        "sha256": "c35068c839da35557f146cd8d3c64eb110a267dee6555ef6d9e8ffae7a9a5ad9",
+        "frames": 16564,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "25cdf6d607d7e1d283b6435d38b8d47cba6f3e8837228268d3c93923c61b9c58"
+        }
+    },
+    {
+        "path": "audio/578e139d9c730e78d34b4e563650a13f5b6d092c871c1f35f43288fb29f77a5c.wav",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "text": "びょう。",
+        "request": {
+            "text": "びょう。",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "びょう",
+                "semanticRole": "lexicalUnit",
+                "readings": ["びょう"]
+            }
+        ],
+        "entries": ["ja:word:kanji-reading-e78cab-02"],
+        "variants": [],
+        "sha256": "b0eea38f33d0b20d437bd85da6ce853d3f9f94de279c3f72070048974f138798",
+        "frames": 18793
+    }
+]

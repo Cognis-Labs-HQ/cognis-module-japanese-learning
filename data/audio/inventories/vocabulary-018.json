@@ -21,6 +21,12 @@
                 "label": "かう",
                 "semanticRole": "lexicalUnit",
                 "readings": ["かう"]
+            },
+            {
+                "language": "ja",
+                "label": "買う",
+                "semanticRole": "lexicalUnit",
+                "readings": ["かう"]
             }
         ],
         "entries": [
@@ -56,6 +62,12 @@
             {
                 "language": "ja",
                 "label": "えき",
+                "semanticRole": "lexicalUnit",
+                "readings": ["えき"]
+            },
+            {
+                "language": "ja",
+                "label": "駅",
                 "semanticRole": "lexicalUnit",
                 "readings": ["えき"]
             }
@@ -132,6 +144,12 @@
                 "label": "きっぷ",
                 "semanticRole": "lexicalUnit",
                 "readings": ["きっぷ"]
+            },
+            {
+                "language": "ja",
+                "label": "切符",
+                "semanticRole": "lexicalUnit",
+                "readings": ["きっぷ"]
             }
         ],
         "entries": [
@@ -169,6 +187,12 @@
                 "label": "まつ",
                 "semanticRole": "lexicalUnit",
                 "readings": ["まつ"]
+            },
+            {
+                "language": "ja",
+                "label": "待つ",
+                "semanticRole": "lexicalUnit",
+                "readings": ["まつ"]
             }
         ],
         "entries": [
@@ -204,6 +228,12 @@
             {
                 "language": "ja",
                 "label": "ちず",
+                "semanticRole": "lexicalUnit",
+                "readings": ["ちず"]
+            },
+            {
+                "language": "ja",
+                "label": "地図",
                 "semanticRole": "lexicalUnit",
                 "readings": ["ちず"]
             }
@@ -466,6 +496,12 @@
                 "label": "たつ",
                 "semanticRole": "lexicalUnit",
                 "readings": ["たつ"]
+            },
+            {
+                "language": "ja",
+                "label": "立つ",
+                "semanticRole": "lexicalUnit",
+                "readings": ["たつ"]
             }
         ],
         "entries": ["ja:kanji:core-e98194", "ja:word:kanji-reading-e98194-03"],
@@ -572,6 +608,12 @@
             {
                 "language": "ja",
                 "label": "ほん",
+                "semanticRole": "lexicalUnit",
+                "readings": ["ほん"]
+            },
+            {
+                "language": "ja",
+                "label": "本",
                 "semanticRole": "lexicalUnit",
                 "readings": ["ほん"]
             }
@@ -724,71 +766,5 @@
         "variants": [],
         "sha256": "ffc8bbd65ce9b688d42cc6ee3a5a97b594a9ed2b8149db611500ef251f626d16",
         "frames": 12643
-    },
-    {
-        "path": "audio/ee9693ef6b328d4eb37c927b72a70c0fc1a573740aa945da2d4d5e98865aaf4f.wav",
-        "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "text": "くる",
-        "request": {
-            "text": "くる",
-            "model_id": "eleven_flash_v2_5",
-            "seed": 42,
-            "voice_settings": {
-                "stability": 0.9,
-                "similarity_boost": 0.85,
-                "style": 0,
-                "use_speaker_boost": true,
-                "speed": 0.9
-            },
-            "language_code": "ja"
-        },
-        "inputs": [
-            {
-                "language": "ja",
-                "label": "くる",
-                "semanticRole": "lexicalUnit",
-                "readings": ["くる"]
-            },
-            {
-                "language": "ja",
-                "label": "来る",
-                "semanticRole": "lexicalUnit",
-                "readings": ["くる"]
-            }
-        ],
-        "entries": ["ja:word:complete-pronunciation-kuru", "ja:word:kuru"],
-        "variants": [],
-        "sha256": "670dba70257ae7ec45195746dca3b1993ea2bb98de538e5c4749a95df9230584",
-        "frames": 12268
-    },
-    {
-        "path": "audio/d8e8d38bb87e5846270a85a0031c99310edbc497f365f2a8fbb4ac49a10ddba3.wav",
-        "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "text": "どこ",
-        "request": {
-            "text": "どこ",
-            "model_id": "eleven_flash_v2_5",
-            "seed": 42,
-            "voice_settings": {
-                "stability": 0.9,
-                "similarity_boost": 0.85,
-                "style": 0,
-                "use_speaker_boost": true,
-                "speed": 0.9
-            },
-            "language_code": "ja"
-        },
-        "inputs": [
-            {
-                "language": "ja",
-                "label": "どこ",
-                "semanticRole": "lexicalUnit",
-                "readings": ["どこ"]
-            }
-        ],
-        "entries": ["ja:word:complete-pronunciation-doko", "ja:word:doko"],
-        "variants": [],
-        "sha256": "26769ba5be7ecd8d3614444352b901bb2c6920c3d40bd3ab6f5510faf9bccab3",
-        "frames": 11541
     }
 ]

@@ -429,6 +429,12 @@
                 "label": "またなかった",
                 "semanticRole": "lexicalUnit",
                 "readings": ["またなかった"]
+            },
+            {
+                "language": "ja",
+                "label": "待たなかった",
+                "semanticRole": "lexicalUnit",
+                "readings": ["またなかった"]
             }
         ],
         "entries": [],
@@ -467,6 +473,12 @@
             {
                 "language": "ja",
                 "label": "まてる",
+                "semanticRole": "lexicalUnit",
+                "readings": ["まてる"]
+            },
+            {
+                "language": "ja",
+                "label": "待てる",
                 "semanticRole": "lexicalUnit",
                 "readings": ["まてる"]
             }
@@ -509,6 +521,12 @@
                 "label": "つきます",
                 "semanticRole": "lexicalUnit",
                 "readings": ["つきます"]
+            },
+            {
+                "language": "ja",
+                "label": "着きます",
+                "semanticRole": "lexicalUnit",
+                "readings": ["つきます"]
             }
         ],
         "entries": [],
@@ -547,6 +565,12 @@
             {
                 "language": "ja",
                 "label": "ついて",
+                "semanticRole": "lexicalUnit",
+                "readings": ["ついて"]
+            },
+            {
+                "language": "ja",
+                "label": "着いて",
                 "semanticRole": "lexicalUnit",
                 "readings": ["ついて"]
             }
@@ -589,6 +613,12 @@
                 "label": "つきました",
                 "semanticRole": "lexicalUnit",
                 "readings": ["つきました"]
+            },
+            {
+                "language": "ja",
+                "label": "着きました",
+                "semanticRole": "lexicalUnit",
+                "readings": ["つきました"]
             }
         ],
         "entries": [],
@@ -627,6 +657,12 @@
             {
                 "language": "ja",
                 "label": "つきません",
+                "semanticRole": "lexicalUnit",
+                "readings": ["つきません"]
+            },
+            {
+                "language": "ja",
+                "label": "着きません",
                 "semanticRole": "lexicalUnit",
                 "readings": ["つきません"]
             }
@@ -669,6 +705,12 @@
                 "label": "かいました",
                 "semanticRole": "lexicalUnit",
                 "readings": ["かいました"]
+            },
+            {
+                "language": "ja",
+                "label": "買いました",
+                "semanticRole": "lexicalUnit",
+                "readings": ["かいました"]
             }
         ],
         "entries": [],
@@ -709,6 +751,12 @@
                 "label": "かいません",
                 "semanticRole": "lexicalUnit",
                 "readings": ["かいません"]
+            },
+            {
+                "language": "ja",
+                "label": "買いません",
+                "semanticRole": "lexicalUnit",
+                "readings": ["かいません"]
             }
         ],
         "entries": [],
@@ -725,46 +773,6 @@
             "listening": "unverified-not-performed",
             "languageSelection": "native-input-autodetection",
             "sourcePcmSha256": "0d6ba2271dc6a2acc5cc9d98b2eb84e9035a561d11c7f7116d2915a33e0a6f01"
-        }
-    },
-    {
-        "path": "audio/ec4eee9a1202851c03699bc025af6287385d7ccd0eb06b6c420a7b8eead051ca.wav",
-        "text": "かわなかった",
-        "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "request": {
-            "text": "かわなかった",
-            "model_id": "eleven_flash_v2_5",
-            "seed": 42,
-            "voice_settings": {
-                "stability": 0.9,
-                "similarity_boost": 0.85,
-                "style": 0,
-                "use_speaker_boost": true,
-                "speed": 0.9
-            }
-        },
-        "inputs": [
-            {
-                "language": "ja",
-                "label": "かわなかった",
-                "semanticRole": "lexicalUnit",
-                "readings": ["かわなかった"]
-            }
-        ],
-        "entries": [],
-        "variants": [
-            {
-                "entryId": "ja:word:travel-buy",
-                "setId": "travel-buy-forms",
-                "path": ["negative-past"]
-            }
-        ],
-        "sha256": "ec4eee9a1202851c03699bc025af6287385d7ccd0eb06b6c420a7b8eead051ca",
-        "frames": 24366,
-        "metadata": {
-            "listening": "unverified-not-performed",
-            "languageSelection": "native-input-autodetection",
-            "sourcePcmSha256": "1916334624c1734f6f890a6b77c073ebc273158b7115b018315aa0dbc13b12de"
         }
     }
 ]

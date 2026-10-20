@@ -28,20 +28,20 @@
                     }
                 ]
             ]
-        }
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:comprehension-understand",
+                "relation": "definitions"
+            }
+        ]
     },
     {
         "id": "ja:word:comprehension-understand",
-        "label": "わかる",
+        "label": "分かる",
         "class": "lexical:verb",
         "fields": {
             "pronunciation": ["わかる"],
-            "usage_notes": {
-                "en": "Understand concerns comprehension, not merely hearing. English past and past participle are understood. Do you understand? checks comprehension but may sound blunt depending on tone. Japanese 日本語がわかりますか politely asks whether someone understands Japanese; わかりません means I do not understand in context.",
-                "de": "Understand bezeichnet Verstehen, nicht bloß Hören. Vergangenheit und Partizip sind understood. Do you understand? prüft das Verständnis, kann je nach Ton aber schroff wirken. 日本語がわかりますか fragt höflich nach Japanischkenntnissen; わかりません bedeutet im Kontext Ich verstehe nicht.",
-                "id": "Understand berarti memahami, bukan sekadar mendengar. Bentuk lampau dan partisipnya understood. Do you understand? memeriksa pemahaman tetapi dapat terdengar tajam menurut nada. 日本語がわかりますか menanyakan pemahaman bahasa Jepang secara sopan; わかりません berarti Saya tidak paham sesuai konteks.",
-                "ja": "単に聞こえることではなく、内容を理解すること。英語の過去形・過去分詞はunderstood。Do you understand?は理解確認ですが、口調によってはきつく響きます。日本語がわかりますかは丁寧な質問で、わかりませんは文脈に応じて理解できないことを伝えます。"
-            },
             "reference_images": [
                 "images/02dfee054327a5eb3ccc269b4d05303119c328d3113d403bcfb5eea9a19f3cdd.jpg"
             ],
@@ -52,6 +52,11 @@
             {
                 "entryId": "ja:definition:comprehension-understand",
                 "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-5206",
+                "relation": "spelling",
+                "position": 0
             }
         ],
         "referenceGroups": {

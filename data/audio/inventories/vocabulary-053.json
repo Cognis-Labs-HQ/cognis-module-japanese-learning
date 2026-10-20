@@ -1,0 +1,143 @@
+[
+    {
+        "path": "audio/2d81668526d31c2e61400131c041fa09219f99eb193ba40cbdf9e1b19ce49711.wav",
+        "text": "ねない",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "ねない",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "ねない",
+                "semanticRole": "lexicalUnit",
+                "readings": ["ねない"]
+            },
+            {
+                "language": "ja",
+                "label": "寝ない",
+                "semanticRole": "lexicalUnit",
+                "readings": ["ねない"]
+            }
+        ],
+        "entries": [],
+        "variants": [
+            {
+                "entryId": "ja:word:core-sleep",
+                "setId": "core-sleep-forms",
+                "path": ["negative"]
+            }
+        ],
+        "sha256": "2d81668526d31c2e61400131c041fa09219f99eb193ba40cbdf9e1b19ce49711",
+        "frames": 15449,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "45511ad6a345a1c0f4320d17cc65daa69e4d1149b87345c04b51c0bd13bd138a"
+        }
+    },
+    {
+        "path": "audio/b8da7f6aadc8414a2ab7f70e4a0bd507581d2fb338b4fbfe061b709ed95748ba.wav",
+        "text": "ねた",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "ねた",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "ねた",
+                "semanticRole": "lexicalUnit",
+                "readings": ["ねた"]
+            },
+            {
+                "language": "ja",
+                "label": "寝た",
+                "semanticRole": "lexicalUnit",
+                "readings": ["ねた"]
+            }
+        ],
+        "entries": [],
+        "variants": [
+            {
+                "entryId": "ja:word:core-sleep",
+                "setId": "core-sleep-forms",
+                "path": ["past"]
+            }
+        ],
+        "sha256": "b8da7f6aadc8414a2ab7f70e4a0bd507581d2fb338b4fbfe061b709ed95748ba",
+        "frames": 16564,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "9f5565c835a5d7e17f5cf7abb8224d970bc52a42bb62855cec551b151a090408"
+        }
+    },
+    {
+        "path": "audio/f1b3aa938c1f4eb2f168acd92e34a742d087fb424a1bf907a54ee0c443543f0d.wav",
+        "text": "ねて",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "ねて",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "ねて",
+                "semanticRole": "lexicalUnit",
+                "readings": ["ねて"]
+            },
+            {
+                "language": "ja",
+                "label": "寝て",
+                "semanticRole": "lexicalUnit",
+                "readings": ["ねて"]
+            }
+        ],
+        "entries": [],
+        "variants": [
+            {
+                "entryId": "ja:word:core-sleep",
+                "setId": "core-sleep-forms",
+                "path": ["te-form"]
+            }
+        ],
+        "sha256": "f1b3aa938c1f4eb2f168acd92e34a742d087fb424a1bf907a54ee0c443543f0d",
+        "frames": 16564,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "2d8dd3e1b9f07ba6c2e15da9ecb6cd70e73941875ffecb920d62cd90991e5f07"
+        }
+    }
+]

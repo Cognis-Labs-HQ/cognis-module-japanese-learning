@@ -23,20 +23,20 @@
                     }
                 ]
             ]
-        }
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:core-read",
+                "relation": "definitions"
+            }
+        ]
     },
     {
         "id": "ja:word:core-read",
-        "label": "よむ",
+        "label": "読む",
         "class": "lexical:verb",
         "fields": {
             "pronunciation": ["よむ"],
-            "usage_notes": {
-                "en": "Read written material. を marks the material read. Godan m: よんだ, よんで, よまない; potential よめる.",
-                "de": "Geschriebenes lesen. を markiert das Gelesene. Godan auf m: よんだ, よんで, よまない; Potential よめる.",
-                "id": "Membaca bahan tertulis. を menandai bahan yang dibaca. Godan m: よんだ, よんで, よまない; potensial よめる.",
-                "ja": "書かれたものを読む。対象ををで示す。マ行五段で、よんだ・よんで・よまない、可能形はよめる。"
-            },
             "reference_images": [
                 "images/dff4544ddbe659e92785fba3f86ac83c5bd77dd5e9976b211b07db3d11373d65.jpg"
             ],
@@ -47,6 +47,11 @@
             {
                 "entryId": "ja:definition:core-read",
                 "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-8aad",
+                "relation": "spelling",
+                "position": 0
             }
         ],
         "referenceGroups": {
@@ -71,13 +76,17 @@
             "audio": "audio/3e5f3ac8a4cc637990df81b18c906f382c996ff2d49671e55133c923ef697f3f.wav"
         },
         "referenceGroups": {
-            "reading-kana": [
+            "pronunciation-readings": [
                 [
                     {
-                        "entryId": "ja:char:ka",
-                        "relation": "reading-kana",
+                        "entryId": "ja:word:kanji-reading-expanded-66f8-02",
+                        "relation": "pronunciation-readings",
                         "position": 0
-                    },
+                    }
+                ]
+            ],
+            "reading-kana": [
+                [
                     {
                         "entryId": "ja:char:ku",
                         "relation": "reading-kana",
@@ -85,20 +94,20 @@
                     }
                 ]
             ]
-        }
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:core-write",
+                "relation": "definitions"
+            }
+        ]
     },
     {
         "id": "ja:word:core-write",
-        "label": "かく",
+        "label": "書く",
         "class": "lexical:verb",
         "fields": {
             "pronunciation": ["かく"],
-            "usage_notes": {
-                "en": "Write text; here 書く, not 描く for drawing. Godan k: かいた, かいて, かかない; potential かける. A paper-and-pen scene illustrates this writing sense.",
-                "de": "Text schreiben; hier 書く, nicht 描く für Zeichnen. Godan auf k: かいた, かいて, かかない; Potential かける. Papier und Stift zeigen diese Bedeutung.",
-                "id": "Menulis teks; 書く di sini, bukan 描く untuk menggambar. Godan k: かいた, かいて, かかない; potensial かける. Adegan pena dan kertas menggambarkan makna ini.",
-                "ja": "文字を書く意味で、絵を描くとは区別する。カ行五段で、かいた・かいて・かかない、可能形はかける。紙とペンの場面でこの語義を示す。"
-            },
             "reference_images": [
                 "images/c025b5c8679db42361aa2d5140b8678517da60a1f80cb8ee566c829279ed146a.jpg"
             ],
@@ -109,6 +118,11 @@
             {
                 "entryId": "ja:definition:core-write",
                 "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-66f8",
+                "relation": "spelling",
+                "position": 0
             }
         ],
         "referenceGroups": {
@@ -152,20 +166,20 @@
                     }
                 ]
             ]
-        }
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:core-speak",
+                "relation": "definitions"
+            }
+        ]
     },
     {
         "id": "ja:word:core-speak",
-        "label": "はなす",
+        "label": "話す",
         "class": "lexical:verb",
         "fields": {
             "pronunciation": ["はなす"],
-            "usage_notes": {
-                "en": "Speak or talk. A language can take を; a conversation partner can take と. はなした, はなして, はなさない; potential はなせる. Conversation art does not identify which language is spoken.",
-                "de": "Sprechen oder reden. Eine Sprache kann mit を stehen, ein Gesprächspartner mit と. はなした, はなして, はなさない; Potential はなせる. Das Gesprächsbild zeigt nicht, welche Sprache gesprochen wird.",
-                "id": "Berbicara atau bercakap. Bahasa dapat ditandai を; teman bicara dengan と. はなした, はなして, はなさない; potensial はなせる. Gambar percakapan tidak menentukan bahasa yang dipakai.",
-                "ja": "話す、会話すること。言語はを、会話相手はとで示せる。はなした・はなして・はなさない、可能形ははなせる。会話の絵だけでは使用言語は分からない。"
-            },
             "reference_images": [
                 "images/a04e3f77f120805c6b6d29589e9e1ede471ee3b6efaeda19490c1fd1421860d1.jpg"
             ],
@@ -176,6 +190,11 @@
             {
                 "entryId": "ja:definition:core-speak",
                 "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-8a71",
+                "relation": "spelling",
+                "position": 0
             }
         ],
         "referenceGroups": {
@@ -200,13 +219,17 @@
             "audio": "audio/d18b23f2efd5e37302beaed08404e82d554e9acef0df42b3081fd4665b8624af.wav"
         },
         "referenceGroups": {
-            "reading-kana": [
+            "pronunciation-readings": [
                 [
                     {
-                        "entryId": "ja:char:ne",
-                        "relation": "reading-kana",
+                        "entryId": "ja:word:kanji-reading-expanded-5bdd-02",
+                        "relation": "pronunciation-readings",
                         "position": 0
-                    },
+                    }
+                ]
+            ],
+            "reading-kana": [
+                [
                     {
                         "entryId": "ja:char:ru",
                         "relation": "reading-kana",
@@ -214,20 +237,20 @@
                     }
                 ]
             ]
-        }
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:core-sleep",
+                "relation": "definitions"
+            }
+        ]
     },
     {
         "id": "ja:word:core-sleep",
-        "label": "ねる",
+        "label": "寝る",
         "class": "lexical:verb",
         "fields": {
             "pronunciation": ["ねる"],
-            "usage_notes": {
-                "en": "寝る can mean sleep, go to bed or lie down depending on context; it is not identical to every English use of sleep. Ichidan: ねた, ねて, ねない; standard potential ねられる. The picture shows actual sleep.",
-                "de": "寝る kann je nach Kontext schlafen, zu Bett gehen oder sich hinlegen heißen; nicht jede Verwendung von sleep entspricht ihm. Ichidan: ねた, ねて, ねない; standardsprachliches Potential ねられる. Das Bild zeigt tatsächlichen Schlaf.",
-                "id": "寝る dapat berarti tidur, pergi tidur, atau berbaring sesuai konteks; tidak sama dengan semua penggunaan sleep. Ichidan: ねた, ねて, ねない; potensial baku ねられる. Gambar memperlihatkan tidur.",
-                "ja": "寝るは文脈により睡眠、就寝、横になることを表し、英語sleepの全用法と一致するわけではない。一段活用で、ねた・ねて・ねない、標準的な可能形はねられる。画像は睡眠中の場面。"
-            },
             "reference_images": [
                 "images/f9b26425de36c8a8417a62ffc85efa30e347d00bf7a2934b031037d7e7dbab6e.jpg"
             ],
@@ -238,6 +261,11 @@
             {
                 "entryId": "ja:definition:core-sleep",
                 "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-5bdd",
+                "relation": "spelling",
+                "position": 0
             }
         ],
         "referenceGroups": {

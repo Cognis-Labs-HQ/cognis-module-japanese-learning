@@ -1,0 +1,48 @@
+[
+    {
+        "path": "audio/ec4eee9a1202851c03699bc025af6287385d7ccd0eb06b6c420a7b8eead051ca.wav",
+        "text": "かわなかった",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "かわなかった",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            }
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "かわなかった",
+                "semanticRole": "lexicalUnit",
+                "readings": ["かわなかった"]
+            },
+            {
+                "language": "ja",
+                "label": "買わなかった",
+                "semanticRole": "lexicalUnit",
+                "readings": ["かわなかった"]
+            }
+        ],
+        "entries": [],
+        "variants": [
+            {
+                "entryId": "ja:word:travel-buy",
+                "setId": "travel-buy-forms",
+                "path": ["negative-past"]
+            }
+        ],
+        "sha256": "ec4eee9a1202851c03699bc025af6287385d7ccd0eb06b6c420a7b8eead051ca",
+        "frames": 24366,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "languageSelection": "native-input-autodetection",
+            "sourcePcmSha256": "1916334624c1734f6f890a6b77c073ebc273158b7115b018315aa0dbc13b12de"
+        }
+    }
+]

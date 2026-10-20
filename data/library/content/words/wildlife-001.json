@@ -28,7 +28,13 @@
                     }
                 ]
             ]
-        }
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:wildlife-fox",
+                "relation": "definitions"
+            }
+        ]
     },
     {
         "id": "ja:word:wildlife-fox",
@@ -36,18 +42,12 @@
         "class": "lexical:noun",
         "fields": {
             "pronunciation": ["きつね"],
-            "usage_notes": {
-                "en": "The animal sense of fox. The illustration shows a red fox with pointed ears and a bushy white-tipped tail. Other fox species need not have these colors. Japanese きつね has three morae: き・つ・ね.",
-                "de": "Gemeint ist das Tier Fuchs. Das Bild zeigt einen Rotfuchs mit spitzen Ohren und buschigem Schwanz mit weißer Spitze. Andere Fuchsarten können anders gefärbt sein. きつね hat drei Moren: き・つ・ね.",
-                "id": "Makna hewan rubah. Gambar menunjukkan rubah merah dengan telinga runcing dan ekor lebat berujung putih. Spesies rubah lain dapat memiliki warna berbeda. きつね memiliki tiga mora: き・つ・ね.",
-                "ja": "動物の狐を表します。画像は尖った耳と白い尾先を持つ赤褐色の狐の一例で、すべての種類が同じ色とは限りません。きつねは、き・つ・ねの三拍です。"
-            },
             "reference_images": [
                 "images/c52b9bd02d9f5f460edadc668772f7d6682d466580546b685a1099251f355b9c.jpg"
             ],
             "audio": "audio/8cdde3aad6ede7cf83dba019f37969baf037f6d0f1cc26c5316c9832ba4452a4.wav"
         },
-        "tags": ["wildlife"],
+        "tags": ["noun", "wildlife"],
         "references": [
             {
                 "entryId": "ja:definition:wildlife-fox",
@@ -90,30 +90,35 @@
                     }
                 ]
             ]
-        }
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:wildlife-bear",
+                "relation": "definitions"
+            }
+        ]
     },
     {
         "id": "ja:word:wildlife-bear",
-        "label": "くま",
+        "label": "熊",
         "class": "lexical:noun",
         "fields": {
             "pronunciation": ["くま"],
-            "usage_notes": {
-                "en": "The animal noun bear, not the verb meaning endure or carry. The illustration shows a brown bear; the word also covers other bear species. English bear and bare sound alike in this pronunciation. Japanese くま has no long vowel.",
-                "de": "Das Tier Bär, nicht das englische Verb für ertragen oder tragen. Das Bild zeigt einen Braunbären; das Wort umfasst auch andere Bärenarten. Bear und bare klingen bei dieser Aussprache gleich. くま enthält keinen Langvokal.",
-                "id": "Nomina hewan beruang, bukan verba Inggris yang berarti menahan atau membawa. Gambar menunjukkan beruang cokelat; kata ini juga mencakup jenis beruang lain. Bear dan bare berbunyi sama dalam pelafalan ini. くま tidak memiliki vokal panjang.",
-                "ja": "動物の熊を表し、英語の我慢する・運ぶという動詞の意味は扱いません。画像はヒグマの一例ですが、語は他の熊の種類にも使います。この英語発音ではbearとbareは同音です。くまには長母音がありません。"
-            },
             "reference_images": [
                 "images/4a04c9a5ffa86a1801727d63fd5ba9e5bb562a7d5abe92b937d09b5673ce4e40.jpg"
             ],
             "audio": "audio/14c95a8febfcd86ee2e1614b014290c18002be48e1258c56d938aa742bb78528.wav"
         },
-        "tags": ["wildlife"],
+        "tags": ["noun", "wildlife"],
         "references": [
             {
                 "entryId": "ja:definition:wildlife-bear",
                 "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-718a",
+                "relation": "spelling",
+                "position": 0
             }
         ],
         "referenceGroups": {
@@ -152,30 +157,35 @@
                     }
                 ]
             ]
-        }
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:wildlife-monkey",
+                "relation": "definitions"
+            }
+        ]
     },
     {
         "id": "ja:word:wildlife-monkey",
-        "label": "さる",
+        "label": "猿",
         "class": "lexical:noun",
         "fields": {
             "pronunciation": ["さる"],
-            "usage_notes": {
-                "en": "The illustration shows a tailed macaque. Here English monkey excludes apes such as gorillas; broader words such as Japanese さる and German Affe do not always mark the same boundary. A visible tail identifies this pictured example, not a universal rule for every monkey.",
-                "de": "Das Bild zeigt einen Makaken mit Schwanz. Das englische monkey schließt hier Menschenaffen wie Gorillas aus; das deutsche Affe und das japanische さる können weiter gefasst sein. Der sichtbare Schwanz kennzeichnet dieses Beispiel und ist keine ausnahmslose Regel für alle Affen.",
-                "id": "Gambar menunjukkan seekor makaka berekor. Monkey dalam bahasa Inggris di sini tidak mencakup kera besar seperti gorila; kata Jepang さる dan Jerman Affe dapat lebih luas. Ekor yang terlihat adalah ciri contoh pada gambar, bukan aturan tanpa pengecualian untuk semua monyet.",
-                "ja": "画像は尾のあるマカクの一例です。ここでの英語monkeyはゴリラなどの類人猿を含みませんが、日本語のさるやドイツ語のAffeは常に同じ範囲を示すとは限りません。尾はこの画像の特徴であり、すべてのmonkeyに例外なく当てはまる条件ではありません。"
-            },
             "reference_images": [
                 "images/9b818349c4108ae334e2ea37355dd68ac8a94c22d0a420e1bdd4cc9399f3cfee.jpg"
             ],
             "audio": "audio/52020b9ec93775c688d49e27846c03c46231e2713aa6cbb6fd93a372a3abed50.wav"
         },
-        "tags": ["wildlife"],
+        "tags": ["noun", "wildlife"],
         "references": [
             {
                 "entryId": "ja:definition:wildlife-monkey",
                 "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-733f",
+                "relation": "spelling",
+                "position": 0
             }
         ],
         "referenceGroups": {
@@ -214,30 +224,35 @@
                     }
                 ]
             ]
-        }
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:wildlife-elephant",
+                "relation": "definitions"
+            }
+        ]
     },
     {
         "id": "ja:word:wildlife-elephant",
-        "label": "ぞう",
+        "label": "象",
         "class": "lexical:noun",
         "fields": {
             "pronunciation": ["ぞう"],
-            "usage_notes": {
-                "en": "A large animal with a trunk. The illustration shows an African elephant; the general word also includes Asian elephants. Japanese ぞう is two morae and keeps the long o sound: ぞ・う. The written う must not be dropped from the reading graph.",
-                "de": "Ein großes Tier mit Rüssel. Das Bild zeigt einen afrikanischen Elefanten; das allgemeine Wort umfasst auch asiatische Elefanten. ぞう hat zwei Moren und ein langes o: ぞ・う. Das geschriebene う muss in den Leseverknüpfungen erhalten bleiben.",
-                "id": "Hewan besar dengan belalai. Gambar menunjukkan gajah Afrika; kata umum ini juga mencakup gajah Asia. ぞう memiliki dua mora dan bunyi o panjang: ぞ・う. Huruf う harus tetap ada dalam hubungan bacaannya.",
-                "ja": "長い鼻を持つ大きな動物です。画像はアフリカゾウの一例で、一般名はアジアゾウにも使います。ぞうは、ぞ・うの二拍で長いオの音を保ちます。読みの参照関係から、表記上のうを省きません。"
-            },
             "reference_images": [
                 "images/3792529a0d93bb854ed906e9c14caff40fa479abee210e9cd182718aae0709ea.jpg"
             ],
             "audio": "audio/a1416bd494df3b3ca631ff507e35fbe32ec3425dcaf3aa2f1d68236170f96d6f.wav"
         },
-        "tags": ["wildlife"],
+        "tags": ["noun", "wildlife"],
         "references": [
             {
                 "entryId": "ja:definition:wildlife-elephant",
                 "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-8c61",
+                "relation": "spelling",
+                "position": 0
             }
         ],
         "referenceGroups": {

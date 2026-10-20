@@ -30,10 +30,10 @@ test("sending and carrying progresses from vocabulary to contextual sentences", 
     assert.deepEqual(
         sentences.map(({ label }) => label),
         [
-            "あした友達にはがきをおくる",
-            "てがみとはがきをおくる",
-            "友達とおもいはこをはこぶ",
-            "スーツケースをえきまではこぶ",
+            "明日友達にはがきを送る",
+            "手紙とはがきを送る",
+            "友達と重い箱を運ぶ",
+            "スーツケースを駅まで運ぶ",
         ],
     );
 });

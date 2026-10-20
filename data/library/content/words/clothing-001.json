@@ -28,7 +28,13 @@
                     }
                 ]
             ]
-        }
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:clothing-shirt",
+                "relation": "definitions"
+            }
+        ]
     },
     {
         "id": "ja:word:clothing-shirt",
@@ -36,12 +42,6 @@
         "class": "lexical:noun",
         "fields": {
             "pronunciation": ["シャツ"],
-            "usage_notes": {
-                "en": "A shirt is a garment for the upper body. The picture shows a button-front shirt. Plural shirts /ʃɜːts/. Japanese シャツ begins with small ャ: シャ is one combined sound, not シヤ.",
-                "de": "Ein Hemd ist ein Kleidungsstück für den Oberkörper. Das Bild zeigt ein Hemd mit Knopfleiste. Englischer Plural: shirts /ʃɜːts/. Japanisch シャツ verwendet kleines ャ; シャ ist ein verbundener Laut, nicht シヤ.",
-                "id": "Kemeja adalah pakaian tubuh bagian atas. Gambar menunjukkan kemeja berkancing depan. Jamak Inggris: shirts /ʃɜːts/. シャツ memakai ャ kecil; シャ adalah bunyi gabungan, bukan シヤ.",
-                "ja": "シャツは上半身に着る服で、絵は前にボタンのあるシャツです。英語の複数形はshirts /ʃɜːts/です。「シャツ」の「ャ」は小さく書き、「シヤ」と区別します。"
-            },
             "reference_images": [
                 "images/7b6e93b1b243d6a4c3caa6bbc5bea6cc00fe4a644d5e0681f837158a98ab666a.jpg"
             ],
@@ -105,7 +105,13 @@
                     }
                 ]
             ]
-        }
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:clothing-dress",
+                "relation": "definitions"
+            }
+        ]
     },
     {
         "id": "ja:word:clothing-dress",
@@ -113,12 +119,6 @@
         "class": "lexical:noun",
         "fields": {
             "pronunciation": ["ワンピース"],
-            "usage_notes": {
-                "en": "Dress here is a count noun for a garment with a joined top and skirt, not the verb get dressed. Plural dresses /ˈdresɪz/ adds a syllable. Japanese ワンピース means an everyday one-piece dress here; keep the long vowel ピー.",
-                "de": "Dress bezeichnet hier ein Kleid mit verbundenem Oberteil und Rock, nicht das Verb sich anziehen. Der Plural dresses /ˈdresɪz/ erhält eine zusätzliche Silbe. Japanisch ワンピース meint hier ein Alltagskleid; ピー hat einen langen Vokal.",
-                "id": "Dress di sini adalah nomina untuk gaun dengan bagian atas dan rok yang menyatu, bukan kata kerja berpakaian. Jamak dresses /ˈdresɪz/ menambah satu suku kata. ワンピース di sini berarti gaun sehari-hari; vokal ピー panjang.",
-                "ja": "ここでのdressは上半身とスカートがつながった服を表す名詞で、「着替える」という動詞ではありません。複数形dresses /ˈdresɪz/では音節が一つ増えます。「ワンピース」は日常着の意味で、「ピー」を長く発音します。"
-            },
             "reference_images": [
                 "images/7fceea2df46164067c6668f8328bdde6e23b1e1bcfcd67ed69cb41e1c1ed9161.jpg"
             ],
@@ -177,20 +177,20 @@
                     }
                 ]
             ]
-        }
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:clothing-sock",
+                "relation": "definitions"
+            }
+        ]
     },
     {
         "id": "ja:word:clothing-sock",
-        "label": "くつした",
+        "label": "靴下",
         "class": "lexical:noun",
         "fields": {
             "pronunciation": ["くつした"],
-            "usage_notes": {
-                "en": "One sock covers one foot; the picture shows one sock. A pair contains two socks, plural /sɒks/. Japanese くつした（靴下）does not itself mark singular or plural.",
-                "de": "Eine Socke bedeckt einen Fuß; das Bild zeigt eine Socke. Ein Paar besteht aus zwei socks, Plural /sɒks/. Japanisch くつした（靴下）markiert für sich genommen weder Einzahl noch Mehrzahl.",
-                "id": "Satu sock menutupi satu kaki; gambar menunjukkan satu kaus kaki. Sepasang berisi dua socks, jamak /sɒks/. くつした（靴下）sendiri tidak menandai tunggal atau jamak.",
-                "ja": "sockは片足分の靴下で、絵も片方だけを示しています。左右の二つで一足となり、英語ではsocks /sɒks/といいます。「くつした」という語自体は単数・複数を区別しません。"
-            },
             "reference_images": [
                 "images/d32c6b7276daba8ad1e98ac2673602eb44f15697914cc761de82c0df033bfc39.jpg"
             ],
@@ -201,6 +201,16 @@
             {
                 "entryId": "ja:definition:clothing-sock",
                 "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-9774",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:kanji:expanded-4e0b",
+                "relation": "spelling",
+                "position": 1
             }
         ],
         "referenceGroups": {
@@ -249,7 +259,13 @@
                     }
                 ]
             ]
-        }
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:clothing-skirt",
+                "relation": "definitions"
+            }
+        ]
     },
     {
         "id": "ja:word:clothing-skirt",
@@ -257,12 +273,6 @@
         "class": "lexical:noun",
         "fields": {
             "pronunciation": ["スカート"],
-            "usage_notes": {
-                "en": "A skirt hangs from the waist and has no attached bodice; distinguish it from a dress. Plural skirts /skɜːts/. Japanese スカート has a long vowel written カー.",
-                "de": "Ein Rock hängt von der Taille herab und hat kein angenähtes Oberteil; er unterscheidet sich dadurch vom Kleid. Englischer Plural: skirts /skɜːts/. Japanisch スカート hat einen langen Vokal in カー.",
-                "id": "Rok menggantung dari pinggang tanpa bagian atas yang menyatu; bedakan dari gaun. Jamak Inggris: skirts /skɜːts/. スカート memiliki vokal panjang pada カー.",
-                "ja": "スカートは腰から下に着る服で、上半身の部分はつながっていません。ワンピースと区別します。英語の複数形はskirts /skɜːts/です。「スカート」の「カー」は長い母音です。"
-            },
             "reference_images": [
                 "images/956b64915d0766ddc7a1259d4af6c961f8224a6690c9e05be16a51da846e5607.jpg"
             ],

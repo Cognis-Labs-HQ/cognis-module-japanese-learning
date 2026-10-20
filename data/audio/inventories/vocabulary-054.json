@@ -1,0 +1,84 @@
+[
+    {
+        "path": "audio/363ecb4f44a16072e7ef5cd98bdeac435d3c9820428769b45b5893e37677bcba.wav",
+        "text": "あげなかった",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "あげなかった",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "あげなかった",
+                "semanticRole": "lexicalUnit",
+                "readings": ["あげなかった"]
+            }
+        ],
+        "entries": [],
+        "variants": [
+            {
+                "entryId": "ja:word:exchange-give",
+                "setId": "exchange-give-forms",
+                "path": ["negative-past"]
+            }
+        ],
+        "sha256": "363ecb4f44a16072e7ef5cd98bdeac435d3c9820428769b45b5893e37677bcba",
+        "frames": 24366,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "e0705d0e33b58a57d3e39845a19cecf0e944463a8c5c05b890434da9ee4db369"
+        }
+    },
+    {
+        "path": "audio/fc70ace2625cdc1267a5244f79631d4ee22a2a51d49e895b9756e56fd035983c.wav",
+        "text": "あげられる",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "あげられる",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "あげられる",
+                "semanticRole": "lexicalUnit",
+                "readings": ["あげられる"]
+            }
+        ],
+        "entries": [],
+        "variants": [
+            {
+                "entryId": "ja:word:exchange-give",
+                "setId": "exchange-give-forms",
+                "path": ["potential"]
+            }
+        ],
+        "sha256": "fc70ace2625cdc1267a5244f79631d4ee22a2a51d49e895b9756e56fd035983c",
+        "frames": 21022,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "eb72d6f6b0a97d728a59642545e893d363129cabd20ce7e41dd744d34881f3f8"
+        }
+    }
+]

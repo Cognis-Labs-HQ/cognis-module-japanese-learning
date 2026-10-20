@@ -1,0 +1,143 @@
+[
+    {
+        "path": "audio/e0723d174d53e1f2b6dd39e02c246d25c1cf444d4c178d5bfb803f898a25af39.wav",
+        "text": "かわかして",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "かわかして",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "かわかして",
+                "semanticRole": "lexicalUnit",
+                "readings": ["かわかして"]
+            },
+            {
+                "language": "ja",
+                "label": "乾かして",
+                "semanticRole": "lexicalUnit",
+                "readings": ["かわかして"]
+            }
+        ],
+        "entries": [],
+        "variants": [
+            {
+                "entryId": "ja:word:household-dry",
+                "setId": "household-dry-forms",
+                "path": ["te-form"]
+            }
+        ],
+        "sha256": "e0723d174d53e1f2b6dd39e02c246d25c1cf444d4c178d5bfb803f898a25af39",
+        "frames": 23251,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "6aa62161fb23fdebcdd471397d5aaad1fe6f3de268f48269a862d1c04057ce63"
+        }
+    },
+    {
+        "path": "audio/126bf7babf3e436bf6c1babcb5f03007be399da15c22dcea9cd2b07261b85594.wav",
+        "text": "かわかしました",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "かわかしました",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "かわかしました",
+                "semanticRole": "lexicalUnit",
+                "readings": ["かわかしました"]
+            },
+            {
+                "language": "ja",
+                "label": "乾かしました",
+                "semanticRole": "lexicalUnit",
+                "readings": ["かわかしました"]
+            }
+        ],
+        "entries": [],
+        "variants": [
+            {
+                "entryId": "ja:word:household-dry",
+                "setId": "household-dry-forms",
+                "path": ["polite-past"]
+            }
+        ],
+        "sha256": "126bf7babf3e436bf6c1babcb5f03007be399da15c22dcea9cd2b07261b85594",
+        "frames": 25480,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "bd5e9c23f091d768cb3db282cb9ed24c295f7ffce07d50850c69eae9a01b158c"
+        }
+    },
+    {
+        "path": "audio/0a8eef64c6fbdbc427715df7229008791bc80a5fca74cf0fdd7e8bdb637ad8cb.wav",
+        "text": "かわかしません",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "かわかしません",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "かわかしません",
+                "semanticRole": "lexicalUnit",
+                "readings": ["かわかしません"]
+            },
+            {
+                "language": "ja",
+                "label": "乾かしません",
+                "semanticRole": "lexicalUnit",
+                "readings": ["かわかしません"]
+            }
+        ],
+        "entries": [],
+        "variants": [
+            {
+                "entryId": "ja:word:household-dry",
+                "setId": "household-dry-forms",
+                "path": ["polite-negative"]
+            }
+        ],
+        "sha256": "0a8eef64c6fbdbc427715df7229008791bc80a5fca74cf0fdd7e8bdb637ad8cb",
+        "frames": 26595,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "14e6b7cf7ba6273f5e32333a0c8abd48ead76db597a72baafd4867de4a2fbba5"
+        }
+    }
+]

@@ -32,9 +32,7 @@ test("personal belongings preserve native inputs and voiced compound reading", (
                 request.language_code === "ja",
         ),
     );
-    const question = examples.find(
-        ({ label }) => label === "さいふはどこですか",
-    );
+    const question = examples.find(({ label }) => label === "財布はどこですか");
     assert.deepEqual(
         question.references
             .filter(({ relation }) => relation !== "definitions")

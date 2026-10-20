@@ -198,7 +198,19 @@ test("Kanji reading Vocabulary belongs only to multi-reading Kanji", () => {
     const readings = words.filter(
         ({ class: contentClass }) => contentClass === "reading:kanji",
     );
-    assert.equal(readings.length, 139);
+    assert.equal(
+        readings.length,
+        [...recordsById.values()]
+            .filter(
+                (record) =>
+                    record.id.startsWith("ja:kanji:") &&
+                    record.fields.pronunciation.length > 1,
+            )
+            .reduce(
+                (count, record) => count + record.fields.pronunciation.length,
+                0,
+            ),
+    );
     for (const reading of readings) {
         assert.equal(reading.hidden, true, reading.id);
         const spelling = reading.references.filter(

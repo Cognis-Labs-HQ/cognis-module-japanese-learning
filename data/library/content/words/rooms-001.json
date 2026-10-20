@@ -9,18 +9,17 @@
             "audio": "audio/7b1765d659afd741a509ee692bbea9cd16c68131779be1fcbd98cb8c2169845c.wav"
         },
         "referenceGroups": {
-            "reading-kana": [
+            "pronunciation-readings": [
                 [
                     {
-                        "entryId": "ja:char:shi",
-                        "relation": "reading-kana",
+                        "entryId": "ja:word:kanji-reading-expanded-5bdd-01",
+                        "relation": "pronunciation-readings",
                         "position": 0
-                    },
-                    {
-                        "entryId": "ja:char:n",
-                        "relation": "reading-kana",
-                        "position": 1
-                    },
+                    }
+                ]
+            ],
+            "reading-kana": [
+                [
                     {
                         "entryId": "ja:char:shi",
                         "relation": "reading-kana",
@@ -33,20 +32,20 @@
                     }
                 ]
             ]
-        }
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:rooms-bedroom",
+                "relation": "definitions"
+            }
+        ]
     },
     {
         "id": "ja:word:rooms-bedroom",
-        "label": "しんしつ",
+        "label": "寝室",
         "class": "lexical:noun",
         "fields": {
             "pronunciation": ["しんしつ"],
-            "usage_notes": {
-                "en": "A room for sleeping. 寝室 is しんしつ; keep both し sounds and the final つ. Bedrooms ends in /z/.",
-                "de": "Ein Raum zum Schlafen. 寝室 lautet しんしつ mit beiden し-Lauten und abschließendem つ. Bedrooms endet auf /z/.",
-                "id": "Ruangan untuk tidur. 寝室 dibaca しんしつ; pertahankan kedua bunyi し dan つ terakhir. Bedrooms berakhir /z/.",
-                "ja": "寝るための部屋。寝室はしんしつで、二つのしと最後のつを保つ。Bedrooms の語尾は /z/。"
-            },
             "reference_images": [
                 "images/c5df4bc9a7f9f0b872bd9546f3d3ce619b6a88d4e5120f4490b9ac5e35da4656.jpg"
             ],
@@ -57,6 +56,16 @@
             {
                 "entryId": "ja:definition:rooms-bedroom",
                 "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-5bdd",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:kanji:expanded-5ba4",
+                "relation": "spelling",
+                "position": 1
             }
         ],
         "referenceGroups": {
@@ -105,20 +114,20 @@
                     }
                 ]
             ]
-        }
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:rooms-bathroom",
+                "relation": "definitions"
+            }
+        ]
     },
     {
         "id": "ja:word:rooms-bathroom",
-        "label": "よくしつ",
+        "label": "浴室",
         "class": "lexical:noun",
         "fields": {
             "pronunciation": ["よくしつ"],
-            "usage_notes": {
-                "en": "Here a room for bathing. North American bathroom can also mean a toilet room; Japanese 浴室 specifically means a bathing room. よくしつ has four short morae.",
-                "de": "Hier ein Raum zum Baden. Nordamerikanisch bathroom kann auch einen Toilettenraum meinen; 浴室 bezeichnet den Baderaum. よくしつ hat vier kurze Moren.",
-                "id": "Di sini ruangan untuk mandi. Bathroom di Amerika Utara juga dapat berarti ruang toilet; 浴室 khusus berarti ruang mandi. よくしつ memiliki empat mora pendek.",
-                "ja": "ここでは入浴用の部屋。北米英語 bathroom はトイレの部屋にも使うが、浴室は入浴する部屋を指す。よくしつは短い四拍。"
-            },
             "reference_images": [
                 "images/272350422e4b0bbaaa0bd3d956fdc570adc67a4dbd7155b75d2caca530d4f682.jpg"
             ],
@@ -129,6 +138,16 @@
             {
                 "entryId": "ja:definition:rooms-bathroom",
                 "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-6d74",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:kanji:expanded-5ba4",
+                "relation": "spelling",
+                "position": 1
             }
         ],
         "referenceGroups": {
@@ -182,20 +201,20 @@
                     }
                 ]
             ]
-        }
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:rooms-kitchen",
+                "relation": "definitions"
+            }
+        ]
     },
     {
         "id": "ja:word:rooms-kitchen",
-        "label": "だいどころ",
+        "label": "台所",
         "class": "lexical:noun",
         "fields": {
             "pronunciation": ["だいどころ"],
-            "usage_notes": {
-                "en": "The room for preparing food, not an individual appliance. 台所 is だいどころ, with voiced だ and ど. Kitchens ends in /z/.",
-                "de": "Der Raum zum Zubereiten von Speisen, kein einzelnes Gerät. 台所 lautet だいどころ mit stimmhaftem だ und ど. Kitchens endet auf /z/.",
-                "id": "Ruangan untuk menyiapkan makanan, bukan satu alat. 台所 dibaca だいどころ dengan だ dan ど bersuara. Kitchens berakhir /z/.",
-                "ja": "料理をする部屋で、個別の器具ではない。台所はだいどころで、だ・どは濁音。Kitchens の語尾は /z/。"
-            },
             "reference_images": [
                 "images/e43e9e94370989a7d673f175ff6bee607fd5f36849125ad352ea029ce5248d79.jpg"
             ],
@@ -206,6 +225,16 @@
             {
                 "entryId": "ja:definition:rooms-kitchen",
                 "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-53f0",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:kanji:expanded-6240",
+                "relation": "spelling",
+                "position": 1
             }
         ],
         "referenceGroups": {
@@ -244,20 +273,20 @@
                     }
                 ]
             ]
-        }
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:rooms-garden",
+                "relation": "definitions"
+            }
+        ]
     },
     {
         "id": "ja:word:rooms-garden",
-        "label": "にわ",
+        "label": "庭",
         "class": "lexical:noun",
         "fields": {
             "pronunciation": ["にわ"],
-            "usage_notes": {
-                "en": "Cultivated outdoor space beside a home; Japanese 庭 can also mean a yard or courtyard. にわ has two short morae. Gardens ends in /z/.",
-                "de": "Bepflanzter Außenbereich am Haus; 庭 kann auch Hof bedeuten. にわ hat zwei kurze Moren. Gardens endet auf /z/.",
-                "id": "Area bertanaman di dekat rumah; 庭 juga dapat berarti halaman. にわ memiliki dua mora pendek. Gardens berakhir /z/.",
-                "ja": "家のそばの植栽のある屋外空間。庭は中庭なども表す。にわは短い二拍。Gardens の語尾は /z/。"
-            },
             "reference_images": [
                 "images/504c2bec2445050bc93f88b5e4f13144da7b220b3270b1c8fe18d4eddf864f53.jpg"
             ],
@@ -268,6 +297,11 @@
             {
                 "entryId": "ja:definition:rooms-garden",
                 "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-5ead",
+                "relation": "spelling",
+                "position": 0
             }
         ],
         "referenceGroups": {

@@ -1,0 +1,171 @@
+[
+    {
+        "path": "audio/5e80a803f4084433880eb18ecb8d111f828810737f65a3d32fdfe667191dc854.wav",
+        "text": "まった",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "まった",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            }
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "まった",
+                "semanticRole": "lexicalUnit",
+                "readings": ["まった"]
+            },
+            {
+                "language": "ja",
+                "label": "待った",
+                "semanticRole": "lexicalUnit",
+                "readings": ["まった"]
+            }
+        ],
+        "entries": [],
+        "variants": [
+            {
+                "entryId": "ja:word:travel-wait",
+                "setId": "travel-wait-forms",
+                "path": ["past"]
+            }
+        ],
+        "sha256": "5e80a803f4084433880eb18ecb8d111f828810737f65a3d32fdfe667191dc854",
+        "frames": 17678,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "languageSelection": "native-input-autodetection",
+            "sourcePcmSha256": "0d478f67494e78c11e9fa367cda68c7289200c3df562b8a1fc99117340bdcff2"
+        }
+    },
+    {
+        "path": "audio/18e3fad50d2719fb064b2a5d7d6b70f6ff5e8cd438863ea1d5d2cb8d8288d535.wav",
+        "text": "まって",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "まって",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            }
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "まって",
+                "semanticRole": "lexicalUnit",
+                "readings": ["まって"]
+            },
+            {
+                "language": "ja",
+                "label": "待って",
+                "semanticRole": "lexicalUnit",
+                "readings": ["まって"]
+            }
+        ],
+        "entries": [],
+        "variants": [
+            {
+                "entryId": "ja:word:travel-wait",
+                "setId": "travel-wait-forms",
+                "path": ["te-form"]
+            }
+        ],
+        "sha256": "18e3fad50d2719fb064b2a5d7d6b70f6ff5e8cd438863ea1d5d2cb8d8288d535",
+        "frames": 17678,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "languageSelection": "native-input-autodetection",
+            "sourcePcmSha256": "ebb502fb8aa317b66b8781b6053014fdb6467c4afb150b0a114c72eddec5d0b6"
+        }
+    },
+    {
+        "path": "audio/7ac55a92d2129f9237d92d29bda3b1b28ef7add4de031a68bfd0215bb01a54da.wav",
+        "text": "つかない",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "つかない",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            }
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "つかない",
+                "semanticRole": "lexicalUnit",
+                "readings": ["つかない"]
+            },
+            {
+                "language": "ja",
+                "label": "着かない",
+                "semanticRole": "lexicalUnit",
+                "readings": ["つかない"]
+            }
+        ],
+        "entries": [],
+        "variants": [
+            {
+                "entryId": "ja:word:travel-arrive",
+                "setId": "travel-arrive-forms",
+                "path": ["negative"]
+            }
+        ],
+        "sha256": "7ac55a92d2129f9237d92d29bda3b1b28ef7add4de031a68bfd0215bb01a54da",
+        "frames": 18793,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "languageSelection": "native-input-autodetection",
+            "sourcePcmSha256": "e38a48bc578e2a00b2306384b6273583a0fa7af4f4db993a0107b0bb2b25e566"
+        }
+    },
+    {
+        "path": "audio/72120b61ee353919c04d6a6585dea2a9c82b60ddfd9873450fefcbc8b25d9693.wav",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "text": "ちょく。",
+        "request": {
+            "text": "ちょく。",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "ちょく",
+                "semanticRole": "lexicalUnit",
+                "readings": ["ちょく"]
+            }
+        ],
+        "entries": ["ja:word:kanji-reading-e79bb4-04"],
+        "variants": [],
+        "sha256": "cb30a98020ca805b705e359e3d29401bd8021e524d096ca7ec38d1ffcc6835c4",
+        "frames": 17678
+    }
+]

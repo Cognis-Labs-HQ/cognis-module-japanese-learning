@@ -28,11 +28,17 @@
                     }
                 ]
             ]
-        }
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:word:travel-ticket",
+                "relation": "definitions"
+            }
+        ]
     },
     {
         "id": "ja:word:travel-ticket",
-        "label": "きっぷ",
+        "label": "切符",
         "class": "lexical:noun",
         "fields": {
             "pronunciation": ["きっぷ"],
@@ -46,6 +52,16 @@
             {
                 "entryId": "ja:definition:word:travel-ticket",
                 "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-5207",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:kanji:expanded-7b26",
+                "relation": "spelling",
+                "position": 1
             }
         ],
         "referenceGroups": {
@@ -84,11 +100,17 @@
                     }
                 ]
             ]
-        }
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:word:travel-station",
+                "relation": "definitions"
+            }
+        ]
     },
     {
         "id": "ja:word:travel-station",
-        "label": "えき",
+        "label": "駅",
         "class": "lexical:noun",
         "fields": {
             "pronunciation": ["えき"],
@@ -102,6 +124,11 @@
             {
                 "entryId": "ja:definition:word:travel-station",
                 "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-99c5",
+                "relation": "spelling",
+                "position": 0
             }
         ],
         "referenceGroups": {

@@ -1,0 +1,45 @@
+[
+    {
+        "path": "audio/af1c56cbbbeb599be025f0ac30f5130150de8c9d1c6f88f07261755d93a7a323.wav",
+        "text": "じてんしゃ",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "じてんしゃ",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            }
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "じてんしゃ",
+                "semanticRole": "lexicalUnit",
+                "readings": ["じてんしゃ"]
+            },
+            {
+                "language": "ja",
+                "label": "自転車",
+                "semanticRole": "lexicalUnit",
+                "readings": ["じてんしゃ"]
+            }
+        ],
+        "entries": [
+            "ja:word:travel-bicycle",
+            "ja:word:complete-pronunciation-travel-bicycle"
+        ],
+        "variants": [],
+        "sha256": "af1c56cbbbeb599be025f0ac30f5130150de8c9d1c6f88f07261755d93a7a323",
+        "frames": 19907,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "languageSelection": "native-input-autodetection",
+            "sourcePcmSha256": "96dfe21480428643ed6ac36309bbd1782ce08b15afdbe0dbb739ba8483b43936"
+        }
+    }
+]

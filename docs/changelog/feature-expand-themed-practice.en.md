@@ -2,6 +2,10 @@
 
 **Feature Branch:** `feature-expand-themed-practice`
 
+## Restore vocabulary conventions
+
+Remove the added Usage and Examples field and paragraphs, restore lexical tags, and correct 114 of the 173 added words to reviewed Kanji spellings while retaining conventional Kana forms. Preserve existing pronunciation wrappers and give new wrappers direct meaning links. Use the original schema for supporting Kanji and reading cards, with KanjiVG stroke patterns and attested KANJIDIC readings. Preserve all existing card IDs, media bytes and recording requests; update sentence labels, inflection spellings and audio lookup metadata. Supporting cards without recordings are explicitly listed as unavailable. Add strict pre-expansion field contracts and negative regression tests for vocabulary, spelling, reading links, visibility and deck coverage.
+
 ## Practice in context
 
 Add four starter decks for food and drink, travel and direction, connecting ideas, and people and preferences. They provide focused practice with 23 existing phrases and their linked meanings, kana readings and constituents.

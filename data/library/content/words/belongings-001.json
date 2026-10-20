@@ -28,30 +28,40 @@
                     }
                 ]
             ]
-        }
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:belongings-wallet",
+                "relation": "definitions"
+            }
+        ]
     },
     {
         "id": "ja:word:belongings-wallet",
-        "label": "さいふ",
+        "label": "財布",
         "class": "lexical:noun",
         "fields": {
             "pronunciation": ["さいふ"],
-            "usage_notes": {
-                "en": "A small case for money and cards. This card teaches the physical wallet, not a digital account. Japanese 財布 is read さいふ.",
-                "de": "Eine kleine Hülle für Geld und Karten. Gemeint ist die körperliche Geldbörse, kein digitales Konto. 財布 wird さいふ gelesen.",
-                "id": "Wadah kecil untuk uang dan kartu. Kartu ini mengajarkan dompet fisik, bukan akun digital. 財布 dibaca さいふ.",
-                "ja": "お金やカードを入れる小さな入れ物。ここでは電子口座ではなく、実物の財布を扱います。財布の読みは「さいふ」です。"
-            },
             "reference_images": [
                 "images/15de216c7753c687ff87caa632bd90a9cb030cac5384cd459446220b69e3e449.jpg"
             ],
             "audio": "audio/0c3f878dfb8372d5d44a231f0bbfb4495f20a6b71983fd11d3aa99e1d2cd18f7.wav"
         },
-        "tags": ["belongings"],
+        "tags": ["noun", "belongings"],
         "references": [
             {
                 "entryId": "ja:definition:belongings-wallet",
                 "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-8ca1",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:kanji:expanded-5e03",
+                "relation": "spelling",
+                "position": 1
             }
         ],
         "referenceGroups": {
@@ -95,7 +105,13 @@
                     }
                 ]
             ]
-        }
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:belongings-camera",
+                "relation": "definitions"
+            }
+        ]
     },
     {
         "id": "ja:word:belongings-camera",
@@ -103,18 +119,12 @@
         "class": "lexical:noun",
         "fields": {
             "pronunciation": ["かめら"],
-            "usage_notes": {
-                "en": "A device for taking photographs or recording images. The picture shows a separate camera. English commonly has two syllables here; Japanese カメラ has three morae, か・め・ら.",
-                "de": "Ein Gerät zum Fotografieren oder Aufnehmen von Bildern. Das Bild zeigt eine eigenständige Kamera. Englisch hat hier gewöhnlich zwei Silben, japanisch カメラ drei Moren: か・め・ら.",
-                "id": "Alat untuk memotret atau merekam gambar. Ilustrasi menunjukkan kamera tersendiri. Bahasa Inggris lazim memakai dua suku kata; カメラ dalam bahasa Jepang memiliki tiga mora: か・め・ら.",
-                "ja": "写真や映像を撮る機器。画像は単体のカメラです。英語では通常2音節、日本語のカメラは「か・め・ら」の3拍です。"
-            },
             "reference_images": [
                 "images/e97158fa872ea1c08436de42d1314e8058ca1997f43f561d4afb4efeb2b69fba.jpg"
             ],
             "audio": "audio/13a7bce6198378b9fb7c10626e9396fe3056aae696cad89e344abf265cb478d9.wav"
         },
-        "tags": ["belongings"],
+        "tags": ["noun", "belongings"],
         "references": [
             {
                 "entryId": "ja:definition:belongings-camera",
@@ -162,30 +172,40 @@
                     }
                 ]
             ]
-        }
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:belongings-glasses",
+                "relation": "definitions"
+            }
+        ]
     },
     {
         "id": "ja:word:belongings-glasses",
-        "label": "めがね",
+        "label": "眼鏡",
         "class": "lexical:noun",
         "fields": {
             "pronunciation": ["めがね"],
-            "usage_notes": {
-                "en": "Eyewear with two lenses. English glasses takes plural agreement: My glasses are here. One item is a pair of glasses, not a glass. Japanese めがね does not itself mark singular or plural.",
-                "de": "Sehhilfe mit zwei Gläsern. Englisch glasses verlangt den Plural: My glasses are here. Ein Gegenstand heißt a pair of glasses, nicht a glass. Japanisch めがね kennzeichnet allein keinen Numerus.",
-                "id": "Alat bantu penglihatan dengan dua lensa. Kata Inggris glasses memakai kesesuaian jamak: My glasses are here. Satu benda disebut a pair of glasses, bukan a glass. めがね tidak menandai tunggal atau jamak.",
-                "ja": "二つのレンズを備えた視力補助具。英語のglassesは複数扱いです：My glasses are here. 一つはa pair of glassesといい、a glassではありません。日本語の「めがね」自体は単複を表しません。"
-            },
             "reference_images": [
                 "images/9f33bd7c9b9e23b910026bf763996099a8b8a908079bf4040cd700180b1593eb.jpg"
             ],
             "audio": "audio/b33e7e0e1130d81c69f0c86db850a8045e5ae35ff8de086c81aa46b280d7e5ba.wav"
         },
-        "tags": ["belongings"],
+        "tags": ["noun", "belongings"],
         "references": [
             {
                 "entryId": "ja:definition:belongings-glasses",
                 "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-773c",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:kanji:expanded-93e1",
+                "relation": "spelling",
+                "position": 1
             }
         ],
         "referenceGroups": {
@@ -239,30 +259,45 @@
                     }
                 ]
             ]
-        }
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:belongings-watch",
+                "relation": "definitions"
+            }
+        ]
     },
     {
         "id": "ja:word:belongings-watch",
-        "label": "うでどけい",
+        "label": "腕時計",
         "class": "lexical:noun",
         "fields": {
             "pronunciation": ["うでどけい"],
-            "usage_notes": {
-                "en": "A small timepiece worn on the wrist. This noun sense is separate from the verb watch and from a room clock. Japanese 腕時計 is うでどけい: the compound uses ど, not と.",
-                "de": "Eine kleine Uhr am Handgelenk. Dieses Nomen ist vom Verb watch und einer Zimmeruhr zu unterscheiden. 腕時計 wird うでどけい gelesen: im Kompositum steht ど, nicht と.",
-                "id": "Penunjuk waktu kecil yang dipakai di pergelangan tangan. Makna nomina ini berbeda dari verba watch dan jam ruangan. 腕時計 dibaca うでどけい: kata majemuk ini memakai ど, bukan と.",
-                "ja": "手首につける小さな時計。英語の動詞watchや室内の時計とは区別します。腕時計の読みは「うでどけい」で、複合語では「と」でなく「ど」になります。"
-            },
             "reference_images": [
                 "images/8b684ed0a7615b1f2238c571639fdb1d86e3327bd9e788498b45e0b09d4647eb.jpg"
             ],
             "audio": "audio/49fe0e3e96b13b52ce1bef69ea00e5208363a16c2fa81807d61a28929cb6d11a.wav"
         },
-        "tags": ["belongings"],
+        "tags": ["noun", "belongings"],
         "references": [
             {
                 "entryId": "ja:definition:belongings-watch",
                 "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-8155",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:kanji:expanded-6642",
+                "relation": "spelling",
+                "position": 1
+            },
+            {
+                "entryId": "ja:kanji:expanded-8a08",
+                "relation": "spelling",
+                "position": 2
             }
         ],
         "referenceGroups": {

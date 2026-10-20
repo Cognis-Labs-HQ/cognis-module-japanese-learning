@@ -1,6 +1,6 @@
 {
     "id": "japanese-core",
-    "version": 111,
+    "version": 112,
     "namespace": "ja",
     "language": "ja",
     "metadata": {
@@ -821,26 +821,6 @@
                     },
                     "input": {
                         "control": "imageFiles"
-                    }
-                },
-                {
-                    "id": "usage_notes",
-                    "metadata": {
-                        "labels": {
-                            "de": "Verwendung und Beispiele",
-                            "en": "Usage and Examples",
-                            "id": "Penggunaan dan Contoh",
-                            "ja": "使い方と例"
-                        }
-                    },
-                    "type": "localizedText",
-                    "required": false,
-                    "detail": {
-                        "renderer": "text",
-                        "order": 8
-                    },
-                    "input": {
-                        "control": "localizedText"
                     }
                 }
             ],
@@ -9598,10 +9578,10 @@
             "id": "travel-arrive-forms",
             "metadata": {
                 "labels": {
-                    "en": "つく Forms",
-                    "de": "つく-Formen",
-                    "id": "Bentuk つく",
-                    "ja": "つくの活用"
+                    "en": "着く Forms",
+                    "de": "着く-Formen",
+                    "id": "Bentuk 着く",
+                    "ja": "着くの活用"
                 }
             },
             "matchTags": ["verb", "travel-form-arrive"],
@@ -9619,8 +9599,8 @@
                     },
                     "fromState": "base",
                     "toState": "polite",
-                    "removeSuffix": "つく",
-                    "append": "つきます",
+                    "removeSuffix": "着く",
+                    "append": "着きます",
                     "pronunciation": {
                         "removeSuffix": "つく",
                         "append": "つきます"
@@ -9648,8 +9628,8 @@
                     },
                     "fromState": "base",
                     "toState": "negative",
-                    "removeSuffix": "つく",
-                    "append": "つかない",
+                    "removeSuffix": "着く",
+                    "append": "着かない",
                     "pronunciation": {
                         "removeSuffix": "つく",
                         "append": "つかない"
@@ -9677,8 +9657,8 @@
                     },
                     "fromState": "base",
                     "toState": "past",
-                    "removeSuffix": "つく",
-                    "append": "ついた",
+                    "removeSuffix": "着く",
+                    "append": "着いた",
                     "pronunciation": {
                         "removeSuffix": "つく",
                         "append": "ついた"
@@ -9706,8 +9686,8 @@
                     },
                     "fromState": "base",
                     "toState": "te-form",
-                    "removeSuffix": "つく",
-                    "append": "ついて",
+                    "removeSuffix": "着く",
+                    "append": "着いて",
                     "pronunciation": {
                         "removeSuffix": "つく",
                         "append": "ついて"
@@ -9735,8 +9715,8 @@
                     },
                     "fromState": "base",
                     "toState": "polite-past",
-                    "removeSuffix": "つく",
-                    "append": "つきました",
+                    "removeSuffix": "着く",
+                    "append": "着きました",
                     "pronunciation": {
                         "removeSuffix": "つく",
                         "append": "つきました"
@@ -9764,8 +9744,8 @@
                     },
                     "fromState": "base",
                     "toState": "polite-negative",
-                    "removeSuffix": "つく",
-                    "append": "つきません",
+                    "removeSuffix": "着く",
+                    "append": "着きません",
                     "pronunciation": {
                         "removeSuffix": "つく",
                         "append": "つきません"
@@ -9793,8 +9773,8 @@
                     },
                     "fromState": "base",
                     "toState": "negative-past",
-                    "removeSuffix": "つく",
-                    "append": "つかなかった",
+                    "removeSuffix": "着く",
+                    "append": "着かなかった",
                     "pronunciation": {
                         "removeSuffix": "つく",
                         "append": "つかなかった"
@@ -9822,8 +9802,8 @@
                     },
                     "fromState": "base",
                     "toState": "potential",
-                    "removeSuffix": "つく",
-                    "append": "つける",
+                    "removeSuffix": "着く",
+                    "append": "着ける",
                     "pronunciation": {
                         "removeSuffix": "つく",
                         "append": "つける"
@@ -9845,10 +9825,10 @@
             "id": "travel-depart-forms",
             "metadata": {
                 "labels": {
-                    "en": "しゅっぱつする Forms",
-                    "de": "しゅっぱつする-Formen",
-                    "id": "Bentuk しゅっぱつする",
-                    "ja": "しゅっぱつするの活用"
+                    "en": "出発する Forms",
+                    "de": "出発する-Formen",
+                    "id": "Bentuk 出発する",
+                    "ja": "出発するの活用"
                 }
             },
             "matchTags": ["verb", "travel-form-depart"],
@@ -9866,8 +9846,8 @@
                     },
                     "fromState": "base",
                     "toState": "polite",
-                    "removeSuffix": "しゅっぱつする",
-                    "append": "しゅっぱつします",
+                    "removeSuffix": "出発する",
+                    "append": "出発します",
                     "pronunciation": {
                         "removeSuffix": "しゅっぱつする",
                         "append": "しゅっぱつします"
@@ -9895,8 +9875,8 @@
                     },
                     "fromState": "base",
                     "toState": "negative",
-                    "removeSuffix": "しゅっぱつする",
-                    "append": "しゅっぱつしない",
+                    "removeSuffix": "出発する",
+                    "append": "出発しない",
                     "pronunciation": {
                         "removeSuffix": "しゅっぱつする",
                         "append": "しゅっぱつしない"
@@ -9924,8 +9904,8 @@
                     },
                     "fromState": "base",
                     "toState": "past",
-                    "removeSuffix": "しゅっぱつする",
-                    "append": "しゅっぱつした",
+                    "removeSuffix": "出発する",
+                    "append": "出発した",
                     "pronunciation": {
                         "removeSuffix": "しゅっぱつする",
                         "append": "しゅっぱつした"
@@ -9953,8 +9933,8 @@
                     },
                     "fromState": "base",
                     "toState": "te-form",
-                    "removeSuffix": "しゅっぱつする",
-                    "append": "しゅっぱつして",
+                    "removeSuffix": "出発する",
+                    "append": "出発して",
                     "pronunciation": {
                         "removeSuffix": "しゅっぱつする",
                         "append": "しゅっぱつして"
@@ -9982,8 +9962,8 @@
                     },
                     "fromState": "base",
                     "toState": "polite-past",
-                    "removeSuffix": "しゅっぱつする",
-                    "append": "しゅっぱつしました",
+                    "removeSuffix": "出発する",
+                    "append": "出発しました",
                     "pronunciation": {
                         "removeSuffix": "しゅっぱつする",
                         "append": "しゅっぱつしました"
@@ -10011,8 +9991,8 @@
                     },
                     "fromState": "base",
                     "toState": "polite-negative",
-                    "removeSuffix": "しゅっぱつする",
-                    "append": "しゅっぱつしません",
+                    "removeSuffix": "出発する",
+                    "append": "出発しません",
                     "pronunciation": {
                         "removeSuffix": "しゅっぱつする",
                         "append": "しゅっぱつしません"
@@ -10040,8 +10020,8 @@
                     },
                     "fromState": "base",
                     "toState": "negative-past",
-                    "removeSuffix": "しゅっぱつする",
-                    "append": "しゅっぱつしなかった",
+                    "removeSuffix": "出発する",
+                    "append": "出発しなかった",
                     "pronunciation": {
                         "removeSuffix": "しゅっぱつする",
                         "append": "しゅっぱつしなかった"
@@ -10069,8 +10049,8 @@
                     },
                     "fromState": "base",
                     "toState": "potential",
-                    "removeSuffix": "しゅっぱつする",
-                    "append": "しゅっぱつできる",
+                    "removeSuffix": "出発する",
+                    "append": "出発できる",
                     "pronunciation": {
                         "removeSuffix": "しゅっぱつする",
                         "append": "しゅっぱつできる"
@@ -10092,10 +10072,10 @@
             "id": "travel-buy-forms",
             "metadata": {
                 "labels": {
-                    "en": "かう Forms",
-                    "de": "かう-Formen",
-                    "id": "Bentuk かう",
-                    "ja": "かうの活用"
+                    "en": "買う Forms",
+                    "de": "買う-Formen",
+                    "id": "Bentuk 買う",
+                    "ja": "買うの活用"
                 }
             },
             "matchTags": ["verb", "travel-form-buy"],
@@ -10113,8 +10093,8 @@
                     },
                     "fromState": "base",
                     "toState": "polite",
-                    "removeSuffix": "かう",
-                    "append": "かいます",
+                    "removeSuffix": "買う",
+                    "append": "買います",
                     "pronunciation": {
                         "removeSuffix": "かう",
                         "append": "かいます"
@@ -10142,8 +10122,8 @@
                     },
                     "fromState": "base",
                     "toState": "negative",
-                    "removeSuffix": "かう",
-                    "append": "かわない",
+                    "removeSuffix": "買う",
+                    "append": "買わない",
                     "pronunciation": {
                         "removeSuffix": "かう",
                         "append": "かわない"
@@ -10171,8 +10151,8 @@
                     },
                     "fromState": "base",
                     "toState": "past",
-                    "removeSuffix": "かう",
-                    "append": "かった",
+                    "removeSuffix": "買う",
+                    "append": "買った",
                     "pronunciation": {
                         "removeSuffix": "かう",
                         "append": "かった"
@@ -10200,8 +10180,8 @@
                     },
                     "fromState": "base",
                     "toState": "te-form",
-                    "removeSuffix": "かう",
-                    "append": "かって",
+                    "removeSuffix": "買う",
+                    "append": "買って",
                     "pronunciation": {
                         "removeSuffix": "かう",
                         "append": "かって"
@@ -10229,8 +10209,8 @@
                     },
                     "fromState": "base",
                     "toState": "polite-past",
-                    "removeSuffix": "かう",
-                    "append": "かいました",
+                    "removeSuffix": "買う",
+                    "append": "買いました",
                     "pronunciation": {
                         "removeSuffix": "かう",
                         "append": "かいました"
@@ -10258,8 +10238,8 @@
                     },
                     "fromState": "base",
                     "toState": "polite-negative",
-                    "removeSuffix": "かう",
-                    "append": "かいません",
+                    "removeSuffix": "買う",
+                    "append": "買いません",
                     "pronunciation": {
                         "removeSuffix": "かう",
                         "append": "かいません"
@@ -10287,8 +10267,8 @@
                     },
                     "fromState": "base",
                     "toState": "negative-past",
-                    "removeSuffix": "かう",
-                    "append": "かわなかった",
+                    "removeSuffix": "買う",
+                    "append": "買わなかった",
                     "pronunciation": {
                         "removeSuffix": "かう",
                         "append": "かわなかった"
@@ -10316,8 +10296,8 @@
                     },
                     "fromState": "base",
                     "toState": "potential",
-                    "removeSuffix": "かう",
-                    "append": "かえる",
+                    "removeSuffix": "買う",
+                    "append": "買える",
                     "pronunciation": {
                         "removeSuffix": "かう",
                         "append": "かえる"
@@ -10339,10 +10319,10 @@
             "id": "travel-wait-forms",
             "metadata": {
                 "labels": {
-                    "en": "まつ Forms",
-                    "de": "まつ-Formen",
-                    "id": "Bentuk まつ",
-                    "ja": "まつの活用"
+                    "en": "待つ Forms",
+                    "de": "待つ-Formen",
+                    "id": "Bentuk 待つ",
+                    "ja": "待つの活用"
                 }
             },
             "matchTags": ["verb", "travel-form-wait"],
@@ -10360,8 +10340,8 @@
                     },
                     "fromState": "base",
                     "toState": "polite",
-                    "removeSuffix": "まつ",
-                    "append": "まちます",
+                    "removeSuffix": "待つ",
+                    "append": "待ちます",
                     "pronunciation": {
                         "removeSuffix": "まつ",
                         "append": "まちます"
@@ -10389,8 +10369,8 @@
                     },
                     "fromState": "base",
                     "toState": "negative",
-                    "removeSuffix": "まつ",
-                    "append": "またない",
+                    "removeSuffix": "待つ",
+                    "append": "待たない",
                     "pronunciation": {
                         "removeSuffix": "まつ",
                         "append": "またない"
@@ -10418,8 +10398,8 @@
                     },
                     "fromState": "base",
                     "toState": "past",
-                    "removeSuffix": "まつ",
-                    "append": "まった",
+                    "removeSuffix": "待つ",
+                    "append": "待った",
                     "pronunciation": {
                         "removeSuffix": "まつ",
                         "append": "まった"
@@ -10447,8 +10427,8 @@
                     },
                     "fromState": "base",
                     "toState": "te-form",
-                    "removeSuffix": "まつ",
-                    "append": "まって",
+                    "removeSuffix": "待つ",
+                    "append": "待って",
                     "pronunciation": {
                         "removeSuffix": "まつ",
                         "append": "まって"
@@ -10476,8 +10456,8 @@
                     },
                     "fromState": "base",
                     "toState": "polite-past",
-                    "removeSuffix": "まつ",
-                    "append": "まちました",
+                    "removeSuffix": "待つ",
+                    "append": "待ちました",
                     "pronunciation": {
                         "removeSuffix": "まつ",
                         "append": "まちました"
@@ -10505,8 +10485,8 @@
                     },
                     "fromState": "base",
                     "toState": "polite-negative",
-                    "removeSuffix": "まつ",
-                    "append": "まちません",
+                    "removeSuffix": "待つ",
+                    "append": "待ちません",
                     "pronunciation": {
                         "removeSuffix": "まつ",
                         "append": "まちません"
@@ -10534,8 +10514,8 @@
                     },
                     "fromState": "base",
                     "toState": "negative-past",
-                    "removeSuffix": "まつ",
-                    "append": "またなかった",
+                    "removeSuffix": "待つ",
+                    "append": "待たなかった",
                     "pronunciation": {
                         "removeSuffix": "まつ",
                         "append": "またなかった"
@@ -10563,8 +10543,8 @@
                     },
                     "fromState": "base",
                     "toState": "potential",
-                    "removeSuffix": "まつ",
-                    "append": "まてる",
+                    "removeSuffix": "待つ",
+                    "append": "待てる",
                     "pronunciation": {
                         "removeSuffix": "まつ",
                         "append": "まてる"
@@ -10586,10 +10566,10 @@
             "id": "household-wash-forms",
             "metadata": {
                 "labels": {
-                    "en": "あらう Forms",
-                    "de": "あらう-Formen",
-                    "id": "Bentuk あらう",
-                    "ja": "あらうの活用"
+                    "en": "洗う Forms",
+                    "de": "洗う-Formen",
+                    "id": "Bentuk 洗う",
+                    "ja": "洗うの活用"
                 }
             },
             "matchTags": ["verb", "household-form-wash"],
@@ -10607,8 +10587,8 @@
                     },
                     "fromState": "base",
                     "toState": "polite",
-                    "removeSuffix": "あらう",
-                    "append": "あらいます",
+                    "removeSuffix": "洗う",
+                    "append": "洗います",
                     "pronunciation": {
                         "removeSuffix": "あらう",
                         "append": "あらいます"
@@ -10636,8 +10616,8 @@
                     },
                     "fromState": "base",
                     "toState": "negative",
-                    "removeSuffix": "あらう",
-                    "append": "あらわない",
+                    "removeSuffix": "洗う",
+                    "append": "洗わない",
                     "pronunciation": {
                         "removeSuffix": "あらう",
                         "append": "あらわない"
@@ -10665,8 +10645,8 @@
                     },
                     "fromState": "base",
                     "toState": "past",
-                    "removeSuffix": "あらう",
-                    "append": "あらった",
+                    "removeSuffix": "洗う",
+                    "append": "洗った",
                     "pronunciation": {
                         "removeSuffix": "あらう",
                         "append": "あらった"
@@ -10694,8 +10674,8 @@
                     },
                     "fromState": "base",
                     "toState": "te-form",
-                    "removeSuffix": "あらう",
-                    "append": "あらって",
+                    "removeSuffix": "洗う",
+                    "append": "洗って",
                     "pronunciation": {
                         "removeSuffix": "あらう",
                         "append": "あらって"
@@ -10723,8 +10703,8 @@
                     },
                     "fromState": "base",
                     "toState": "polite-past",
-                    "removeSuffix": "あらう",
-                    "append": "あらいました",
+                    "removeSuffix": "洗う",
+                    "append": "洗いました",
                     "pronunciation": {
                         "removeSuffix": "あらう",
                         "append": "あらいました"
@@ -10752,8 +10732,8 @@
                     },
                     "fromState": "base",
                     "toState": "polite-negative",
-                    "removeSuffix": "あらう",
-                    "append": "あらいません",
+                    "removeSuffix": "洗う",
+                    "append": "洗いません",
                     "pronunciation": {
                         "removeSuffix": "あらう",
                         "append": "あらいません"
@@ -10781,8 +10761,8 @@
                     },
                     "fromState": "base",
                     "toState": "negative-past",
-                    "removeSuffix": "あらう",
-                    "append": "あらわなかった",
+                    "removeSuffix": "洗う",
+                    "append": "洗わなかった",
                     "pronunciation": {
                         "removeSuffix": "あらう",
                         "append": "あらわなかった"
@@ -10810,8 +10790,8 @@
                     },
                     "fromState": "base",
                     "toState": "potential",
-                    "removeSuffix": "あらう",
-                    "append": "あらえる",
+                    "removeSuffix": "洗う",
+                    "append": "洗える",
                     "pronunciation": {
                         "removeSuffix": "あらう",
                         "append": "あらえる"
@@ -10833,10 +10813,10 @@
             "id": "household-cook-forms",
             "metadata": {
                 "labels": {
-                    "en": "りょうりする Forms",
-                    "de": "りょうりする-Formen",
-                    "id": "Bentuk りょうりする",
-                    "ja": "りょうりするの活用"
+                    "en": "料理する Forms",
+                    "de": "料理する-Formen",
+                    "id": "Bentuk 料理する",
+                    "ja": "料理するの活用"
                 }
             },
             "matchTags": ["verb", "household-form-cook"],
@@ -10854,8 +10834,8 @@
                     },
                     "fromState": "base",
                     "toState": "polite",
-                    "removeSuffix": "りょうりする",
-                    "append": "りょうりします",
+                    "removeSuffix": "料理する",
+                    "append": "料理します",
                     "pronunciation": {
                         "removeSuffix": "りょうりする",
                         "append": "りょうりします"
@@ -10883,8 +10863,8 @@
                     },
                     "fromState": "base",
                     "toState": "negative",
-                    "removeSuffix": "りょうりする",
-                    "append": "りょうりしない",
+                    "removeSuffix": "料理する",
+                    "append": "料理しない",
                     "pronunciation": {
                         "removeSuffix": "りょうりする",
                         "append": "りょうりしない"
@@ -10912,8 +10892,8 @@
                     },
                     "fromState": "base",
                     "toState": "past",
-                    "removeSuffix": "りょうりする",
-                    "append": "りょうりした",
+                    "removeSuffix": "料理する",
+                    "append": "料理した",
                     "pronunciation": {
                         "removeSuffix": "りょうりする",
                         "append": "りょうりした"
@@ -10941,8 +10921,8 @@
                     },
                     "fromState": "base",
                     "toState": "te-form",
-                    "removeSuffix": "りょうりする",
-                    "append": "りょうりして",
+                    "removeSuffix": "料理する",
+                    "append": "料理して",
                     "pronunciation": {
                         "removeSuffix": "りょうりする",
                         "append": "りょうりして"
@@ -10970,8 +10950,8 @@
                     },
                     "fromState": "base",
                     "toState": "polite-past",
-                    "removeSuffix": "りょうりする",
-                    "append": "りょうりしました",
+                    "removeSuffix": "料理する",
+                    "append": "料理しました",
                     "pronunciation": {
                         "removeSuffix": "りょうりする",
                         "append": "りょうりしました"
@@ -10999,8 +10979,8 @@
                     },
                     "fromState": "base",
                     "toState": "polite-negative",
-                    "removeSuffix": "りょうりする",
-                    "append": "りょうりしません",
+                    "removeSuffix": "料理する",
+                    "append": "料理しません",
                     "pronunciation": {
                         "removeSuffix": "りょうりする",
                         "append": "りょうりしません"
@@ -11028,8 +11008,8 @@
                     },
                     "fromState": "base",
                     "toState": "negative-past",
-                    "removeSuffix": "りょうりする",
-                    "append": "りょうりしなかった",
+                    "removeSuffix": "料理する",
+                    "append": "料理しなかった",
                     "pronunciation": {
                         "removeSuffix": "りょうりする",
                         "append": "りょうりしなかった"
@@ -11057,8 +11037,8 @@
                     },
                     "fromState": "base",
                     "toState": "potential",
-                    "removeSuffix": "りょうりする",
-                    "append": "りょうりできる",
+                    "removeSuffix": "料理する",
+                    "append": "料理できる",
                     "pronunciation": {
                         "removeSuffix": "りょうりする",
                         "append": "りょうりできる"
@@ -11080,10 +11060,10 @@
             "id": "household-clean-forms",
             "metadata": {
                 "labels": {
-                    "en": "そうじする Forms",
-                    "de": "そうじする-Formen",
-                    "id": "Bentuk そうじする",
-                    "ja": "そうじするの活用"
+                    "en": "掃除する Forms",
+                    "de": "掃除する-Formen",
+                    "id": "Bentuk 掃除する",
+                    "ja": "掃除するの活用"
                 }
             },
             "matchTags": ["verb", "household-form-clean"],
@@ -11101,8 +11081,8 @@
                     },
                     "fromState": "base",
                     "toState": "polite",
-                    "removeSuffix": "そうじする",
-                    "append": "そうじします",
+                    "removeSuffix": "掃除する",
+                    "append": "掃除します",
                     "pronunciation": {
                         "removeSuffix": "そうじする",
                         "append": "そうじします"
@@ -11130,8 +11110,8 @@
                     },
                     "fromState": "base",
                     "toState": "negative",
-                    "removeSuffix": "そうじする",
-                    "append": "そうじしない",
+                    "removeSuffix": "掃除する",
+                    "append": "掃除しない",
                     "pronunciation": {
                         "removeSuffix": "そうじする",
                         "append": "そうじしない"
@@ -11159,8 +11139,8 @@
                     },
                     "fromState": "base",
                     "toState": "past",
-                    "removeSuffix": "そうじする",
-                    "append": "そうじした",
+                    "removeSuffix": "掃除する",
+                    "append": "掃除した",
                     "pronunciation": {
                         "removeSuffix": "そうじする",
                         "append": "そうじした"
@@ -11188,8 +11168,8 @@
                     },
                     "fromState": "base",
                     "toState": "te-form",
-                    "removeSuffix": "そうじする",
-                    "append": "そうじして",
+                    "removeSuffix": "掃除する",
+                    "append": "掃除して",
                     "pronunciation": {
                         "removeSuffix": "そうじする",
                         "append": "そうじして"
@@ -11217,8 +11197,8 @@
                     },
                     "fromState": "base",
                     "toState": "polite-past",
-                    "removeSuffix": "そうじする",
-                    "append": "そうじしました",
+                    "removeSuffix": "掃除する",
+                    "append": "掃除しました",
                     "pronunciation": {
                         "removeSuffix": "そうじする",
                         "append": "そうじしました"
@@ -11246,8 +11226,8 @@
                     },
                     "fromState": "base",
                     "toState": "polite-negative",
-                    "removeSuffix": "そうじする",
-                    "append": "そうじしません",
+                    "removeSuffix": "掃除する",
+                    "append": "掃除しません",
                     "pronunciation": {
                         "removeSuffix": "そうじする",
                         "append": "そうじしません"
@@ -11275,8 +11255,8 @@
                     },
                     "fromState": "base",
                     "toState": "negative-past",
-                    "removeSuffix": "そうじする",
-                    "append": "そうじしなかった",
+                    "removeSuffix": "掃除する",
+                    "append": "掃除しなかった",
                     "pronunciation": {
                         "removeSuffix": "そうじする",
                         "append": "そうじしなかった"
@@ -11304,8 +11284,8 @@
                     },
                     "fromState": "base",
                     "toState": "potential",
-                    "removeSuffix": "そうじする",
-                    "append": "そうじできる",
+                    "removeSuffix": "掃除する",
+                    "append": "掃除できる",
                     "pronunciation": {
                         "removeSuffix": "そうじする",
                         "append": "そうじできる"
@@ -11327,10 +11307,10 @@
             "id": "household-dry-forms",
             "metadata": {
                 "labels": {
-                    "en": "かわかす Forms",
-                    "de": "かわかす-Formen",
-                    "id": "Bentuk かわかす",
-                    "ja": "かわかすの活用"
+                    "en": "乾かす Forms",
+                    "de": "乾かす-Formen",
+                    "id": "Bentuk 乾かす",
+                    "ja": "乾かすの活用"
                 }
             },
             "matchTags": ["verb", "household-form-dry"],
@@ -11348,8 +11328,8 @@
                     },
                     "fromState": "base",
                     "toState": "polite",
-                    "removeSuffix": "かわかす",
-                    "append": "かわかします",
+                    "removeSuffix": "乾かす",
+                    "append": "乾かします",
                     "pronunciation": {
                         "removeSuffix": "かわかす",
                         "append": "かわかします"
@@ -11377,8 +11357,8 @@
                     },
                     "fromState": "base",
                     "toState": "negative",
-                    "removeSuffix": "かわかす",
-                    "append": "かわかさない",
+                    "removeSuffix": "乾かす",
+                    "append": "乾かさない",
                     "pronunciation": {
                         "removeSuffix": "かわかす",
                         "append": "かわかさない"
@@ -11406,8 +11386,8 @@
                     },
                     "fromState": "base",
                     "toState": "past",
-                    "removeSuffix": "かわかす",
-                    "append": "かわかした",
+                    "removeSuffix": "乾かす",
+                    "append": "乾かした",
                     "pronunciation": {
                         "removeSuffix": "かわかす",
                         "append": "かわかした"
@@ -11435,8 +11415,8 @@
                     },
                     "fromState": "base",
                     "toState": "te-form",
-                    "removeSuffix": "かわかす",
-                    "append": "かわかして",
+                    "removeSuffix": "乾かす",
+                    "append": "乾かして",
                     "pronunciation": {
                         "removeSuffix": "かわかす",
                         "append": "かわかして"
@@ -11464,8 +11444,8 @@
                     },
                     "fromState": "base",
                     "toState": "polite-past",
-                    "removeSuffix": "かわかす",
-                    "append": "かわかしました",
+                    "removeSuffix": "乾かす",
+                    "append": "乾かしました",
                     "pronunciation": {
                         "removeSuffix": "かわかす",
                         "append": "かわかしました"
@@ -11493,8 +11473,8 @@
                     },
                     "fromState": "base",
                     "toState": "polite-negative",
-                    "removeSuffix": "かわかす",
-                    "append": "かわかしません",
+                    "removeSuffix": "乾かす",
+                    "append": "乾かしません",
                     "pronunciation": {
                         "removeSuffix": "かわかす",
                         "append": "かわかしません"
@@ -11522,8 +11502,8 @@
                     },
                     "fromState": "base",
                     "toState": "negative-past",
-                    "removeSuffix": "かわかす",
-                    "append": "かわかさなかった",
+                    "removeSuffix": "乾かす",
+                    "append": "乾かさなかった",
                     "pronunciation": {
                         "removeSuffix": "かわかす",
                         "append": "かわかさなかった"
@@ -11551,8 +11531,8 @@
                     },
                     "fromState": "base",
                     "toState": "potential",
-                    "removeSuffix": "かわかす",
-                    "append": "かわかせる",
+                    "removeSuffix": "乾かす",
+                    "append": "乾かせる",
                     "pronunciation": {
                         "removeSuffix": "かわかす",
                         "append": "かわかせる"
@@ -11574,10 +11554,10 @@
             "id": "actions-jump-forms",
             "metadata": {
                 "labels": {
-                    "en": "とぶ Forms",
-                    "de": "とぶ-Formen",
-                    "id": "Bentuk とぶ",
-                    "ja": "とぶの活用"
+                    "en": "跳ぶ Forms",
+                    "de": "跳ぶ-Formen",
+                    "id": "Bentuk 跳ぶ",
+                    "ja": "跳ぶの活用"
                 }
             },
             "matchTags": ["verb", "actions-form-jump"],
@@ -11595,8 +11575,8 @@
                     },
                     "fromState": "base",
                     "toState": "polite",
-                    "removeSuffix": "とぶ",
-                    "append": "とびます",
+                    "removeSuffix": "跳ぶ",
+                    "append": "跳びます",
                     "pronunciation": {
                         "removeSuffix": "とぶ",
                         "append": "とびます"
@@ -11624,8 +11604,8 @@
                     },
                     "fromState": "base",
                     "toState": "negative",
-                    "removeSuffix": "とぶ",
-                    "append": "とばない",
+                    "removeSuffix": "跳ぶ",
+                    "append": "跳ばない",
                     "pronunciation": {
                         "removeSuffix": "とぶ",
                         "append": "とばない"
@@ -11653,8 +11633,8 @@
                     },
                     "fromState": "base",
                     "toState": "past",
-                    "removeSuffix": "とぶ",
-                    "append": "とんだ",
+                    "removeSuffix": "跳ぶ",
+                    "append": "跳んだ",
                     "pronunciation": {
                         "removeSuffix": "とぶ",
                         "append": "とんだ"
@@ -11682,8 +11662,8 @@
                     },
                     "fromState": "base",
                     "toState": "te-form",
-                    "removeSuffix": "とぶ",
-                    "append": "とんで",
+                    "removeSuffix": "跳ぶ",
+                    "append": "跳んで",
                     "pronunciation": {
                         "removeSuffix": "とぶ",
                         "append": "とんで"
@@ -11711,8 +11691,8 @@
                     },
                     "fromState": "base",
                     "toState": "polite-past",
-                    "removeSuffix": "とぶ",
-                    "append": "とびました",
+                    "removeSuffix": "跳ぶ",
+                    "append": "跳びました",
                     "pronunciation": {
                         "removeSuffix": "とぶ",
                         "append": "とびました"
@@ -11740,8 +11720,8 @@
                     },
                     "fromState": "base",
                     "toState": "polite-negative",
-                    "removeSuffix": "とぶ",
-                    "append": "とびません",
+                    "removeSuffix": "跳ぶ",
+                    "append": "跳びません",
                     "pronunciation": {
                         "removeSuffix": "とぶ",
                         "append": "とびません"
@@ -11769,8 +11749,8 @@
                     },
                     "fromState": "base",
                     "toState": "negative-past",
-                    "removeSuffix": "とぶ",
-                    "append": "とばなかった",
+                    "removeSuffix": "跳ぶ",
+                    "append": "跳ばなかった",
                     "pronunciation": {
                         "removeSuffix": "とぶ",
                         "append": "とばなかった"
@@ -11798,8 +11778,8 @@
                     },
                     "fromState": "base",
                     "toState": "potential",
-                    "removeSuffix": "とぶ",
-                    "append": "とべる",
+                    "removeSuffix": "跳ぶ",
+                    "append": "跳べる",
                     "pronunciation": {
                         "removeSuffix": "とぶ",
                         "append": "とべる"
@@ -11821,10 +11801,10 @@
             "id": "actions-swim-forms",
             "metadata": {
                 "labels": {
-                    "en": "およぐ Forms",
-                    "de": "およぐ-Formen",
-                    "id": "Bentuk およぐ",
-                    "ja": "およぐの活用"
+                    "en": "泳ぐ Forms",
+                    "de": "泳ぐ-Formen",
+                    "id": "Bentuk 泳ぐ",
+                    "ja": "泳ぐの活用"
                 }
             },
             "matchTags": ["verb", "actions-form-swim"],
@@ -11842,8 +11822,8 @@
                     },
                     "fromState": "base",
                     "toState": "polite",
-                    "removeSuffix": "およぐ",
-                    "append": "およぎます",
+                    "removeSuffix": "泳ぐ",
+                    "append": "泳ぎます",
                     "pronunciation": {
                         "removeSuffix": "およぐ",
                         "append": "およぎます"
@@ -11871,8 +11851,8 @@
                     },
                     "fromState": "base",
                     "toState": "negative",
-                    "removeSuffix": "およぐ",
-                    "append": "およがない",
+                    "removeSuffix": "泳ぐ",
+                    "append": "泳がない",
                     "pronunciation": {
                         "removeSuffix": "およぐ",
                         "append": "およがない"
@@ -11900,8 +11880,8 @@
                     },
                     "fromState": "base",
                     "toState": "past",
-                    "removeSuffix": "およぐ",
-                    "append": "およいだ",
+                    "removeSuffix": "泳ぐ",
+                    "append": "泳いだ",
                     "pronunciation": {
                         "removeSuffix": "およぐ",
                         "append": "およいだ"
@@ -11929,8 +11909,8 @@
                     },
                     "fromState": "base",
                     "toState": "te-form",
-                    "removeSuffix": "およぐ",
-                    "append": "およいで",
+                    "removeSuffix": "泳ぐ",
+                    "append": "泳いで",
                     "pronunciation": {
                         "removeSuffix": "およぐ",
                         "append": "およいで"
@@ -11958,8 +11938,8 @@
                     },
                     "fromState": "base",
                     "toState": "polite-past",
-                    "removeSuffix": "およぐ",
-                    "append": "およぎました",
+                    "removeSuffix": "泳ぐ",
+                    "append": "泳ぎました",
                     "pronunciation": {
                         "removeSuffix": "およぐ",
                         "append": "およぎました"
@@ -11987,8 +11967,8 @@
                     },
                     "fromState": "base",
                     "toState": "polite-negative",
-                    "removeSuffix": "およぐ",
-                    "append": "およぎません",
+                    "removeSuffix": "泳ぐ",
+                    "append": "泳ぎません",
                     "pronunciation": {
                         "removeSuffix": "およぐ",
                         "append": "およぎません"
@@ -12016,8 +11996,8 @@
                     },
                     "fromState": "base",
                     "toState": "negative-past",
-                    "removeSuffix": "およぐ",
-                    "append": "およがなかった",
+                    "removeSuffix": "泳ぐ",
+                    "append": "泳がなかった",
                     "pronunciation": {
                         "removeSuffix": "およぐ",
                         "append": "およがなかった"
@@ -12045,8 +12025,8 @@
                     },
                     "fromState": "base",
                     "toState": "potential",
-                    "removeSuffix": "およぐ",
-                    "append": "およげる",
+                    "removeSuffix": "泳ぐ",
+                    "append": "泳げる",
                     "pronunciation": {
                         "removeSuffix": "およぐ",
                         "append": "およげる"
@@ -12068,10 +12048,10 @@
             "id": "actions-laugh-forms",
             "metadata": {
                 "labels": {
-                    "en": "わらう Forms",
-                    "de": "わらう-Formen",
-                    "id": "Bentuk わらう",
-                    "ja": "わらうの活用"
+                    "en": "笑う Forms",
+                    "de": "笑う-Formen",
+                    "id": "Bentuk 笑う",
+                    "ja": "笑うの活用"
                 }
             },
             "matchTags": ["verb", "actions-form-laugh"],
@@ -12089,8 +12069,8 @@
                     },
                     "fromState": "base",
                     "toState": "polite",
-                    "removeSuffix": "わらう",
-                    "append": "わらいます",
+                    "removeSuffix": "笑う",
+                    "append": "笑います",
                     "pronunciation": {
                         "removeSuffix": "わらう",
                         "append": "わらいます"
@@ -12118,8 +12098,8 @@
                     },
                     "fromState": "base",
                     "toState": "negative",
-                    "removeSuffix": "わらう",
-                    "append": "わらわない",
+                    "removeSuffix": "笑う",
+                    "append": "笑わない",
                     "pronunciation": {
                         "removeSuffix": "わらう",
                         "append": "わらわない"
@@ -12147,8 +12127,8 @@
                     },
                     "fromState": "base",
                     "toState": "past",
-                    "removeSuffix": "わらう",
-                    "append": "わらった",
+                    "removeSuffix": "笑う",
+                    "append": "笑った",
                     "pronunciation": {
                         "removeSuffix": "わらう",
                         "append": "わらった"
@@ -12176,8 +12156,8 @@
                     },
                     "fromState": "base",
                     "toState": "te-form",
-                    "removeSuffix": "わらう",
-                    "append": "わらって",
+                    "removeSuffix": "笑う",
+                    "append": "笑って",
                     "pronunciation": {
                         "removeSuffix": "わらう",
                         "append": "わらって"
@@ -12205,8 +12185,8 @@
                     },
                     "fromState": "base",
                     "toState": "polite-past",
-                    "removeSuffix": "わらう",
-                    "append": "わらいました",
+                    "removeSuffix": "笑う",
+                    "append": "笑いました",
                     "pronunciation": {
                         "removeSuffix": "わらう",
                         "append": "わらいました"
@@ -12234,8 +12214,8 @@
                     },
                     "fromState": "base",
                     "toState": "polite-negative",
-                    "removeSuffix": "わらう",
-                    "append": "わらいません",
+                    "removeSuffix": "笑う",
+                    "append": "笑いません",
                     "pronunciation": {
                         "removeSuffix": "わらう",
                         "append": "わらいません"
@@ -12263,8 +12243,8 @@
                     },
                     "fromState": "base",
                     "toState": "negative-past",
-                    "removeSuffix": "わらう",
-                    "append": "わらわなかった",
+                    "removeSuffix": "笑う",
+                    "append": "笑わなかった",
                     "pronunciation": {
                         "removeSuffix": "わらう",
                         "append": "わらわなかった"
@@ -12292,8 +12272,8 @@
                     },
                     "fromState": "base",
                     "toState": "potential",
-                    "removeSuffix": "わらう",
-                    "append": "わらえる",
+                    "removeSuffix": "笑う",
+                    "append": "笑える",
                     "pronunciation": {
                         "removeSuffix": "わらう",
                         "append": "わらえる"
@@ -12315,10 +12295,10 @@
             "id": "actions-cry-forms",
             "metadata": {
                 "labels": {
-                    "en": "なく Forms",
-                    "de": "なく-Formen",
-                    "id": "Bentuk なく",
-                    "ja": "なくの活用"
+                    "en": "泣く Forms",
+                    "de": "泣く-Formen",
+                    "id": "Bentuk 泣く",
+                    "ja": "泣くの活用"
                 }
             },
             "matchTags": ["verb", "actions-form-cry"],
@@ -12336,8 +12316,8 @@
                     },
                     "fromState": "base",
                     "toState": "polite",
-                    "removeSuffix": "なく",
-                    "append": "なきます",
+                    "removeSuffix": "泣く",
+                    "append": "泣きます",
                     "pronunciation": {
                         "removeSuffix": "なく",
                         "append": "なきます"
@@ -12365,8 +12345,8 @@
                     },
                     "fromState": "base",
                     "toState": "negative",
-                    "removeSuffix": "なく",
-                    "append": "なかない",
+                    "removeSuffix": "泣く",
+                    "append": "泣かない",
                     "pronunciation": {
                         "removeSuffix": "なく",
                         "append": "なかない"
@@ -12394,8 +12374,8 @@
                     },
                     "fromState": "base",
                     "toState": "past",
-                    "removeSuffix": "なく",
-                    "append": "ないた",
+                    "removeSuffix": "泣く",
+                    "append": "泣いた",
                     "pronunciation": {
                         "removeSuffix": "なく",
                         "append": "ないた"
@@ -12423,8 +12403,8 @@
                     },
                     "fromState": "base",
                     "toState": "te-form",
-                    "removeSuffix": "なく",
-                    "append": "ないて",
+                    "removeSuffix": "泣く",
+                    "append": "泣いて",
                     "pronunciation": {
                         "removeSuffix": "なく",
                         "append": "ないて"
@@ -12452,8 +12432,8 @@
                     },
                     "fromState": "base",
                     "toState": "polite-past",
-                    "removeSuffix": "なく",
-                    "append": "なきました",
+                    "removeSuffix": "泣く",
+                    "append": "泣きました",
                     "pronunciation": {
                         "removeSuffix": "なく",
                         "append": "なきました"
@@ -12481,8 +12461,8 @@
                     },
                     "fromState": "base",
                     "toState": "polite-negative",
-                    "removeSuffix": "なく",
-                    "append": "なきません",
+                    "removeSuffix": "泣く",
+                    "append": "泣きません",
                     "pronunciation": {
                         "removeSuffix": "なく",
                         "append": "なきません"
@@ -12510,8 +12490,8 @@
                     },
                     "fromState": "base",
                     "toState": "negative-past",
-                    "removeSuffix": "なく",
-                    "append": "なかなかった",
+                    "removeSuffix": "泣く",
+                    "append": "泣かなかった",
                     "pronunciation": {
                         "removeSuffix": "なく",
                         "append": "なかなかった"
@@ -12539,8 +12519,8 @@
                     },
                     "fromState": "base",
                     "toState": "potential",
-                    "removeSuffix": "なく",
-                    "append": "なける",
+                    "removeSuffix": "泣く",
+                    "append": "泣ける",
                     "pronunciation": {
                         "removeSuffix": "なく",
                         "append": "なける"
@@ -12562,10 +12542,10 @@
             "id": "qualities-heavy-forms",
             "metadata": {
                 "labels": {
-                    "en": "おもい Forms",
-                    "de": "おもい-Formen",
-                    "id": "Bentuk おもい",
-                    "ja": "おもいの活用"
+                    "en": "重い Forms",
+                    "de": "重い-Formen",
+                    "id": "Bentuk 重い",
+                    "ja": "重いの活用"
                 }
             },
             "matchTags": ["adjective", "qualities-form-heavy"],
@@ -12583,8 +12563,8 @@
                     },
                     "fromState": "base",
                     "toState": "adverb",
-                    "removeSuffix": "おもい",
-                    "append": "おもく",
+                    "removeSuffix": "重い",
+                    "append": "重く",
                     "pronunciation": {
                         "removeSuffix": "おもい",
                         "append": "おもく"
@@ -12612,8 +12592,8 @@
                     },
                     "fromState": "base",
                     "toState": "negative",
-                    "removeSuffix": "おもい",
-                    "append": "おもくない",
+                    "removeSuffix": "重い",
+                    "append": "重くない",
                     "pronunciation": {
                         "removeSuffix": "おもい",
                         "append": "おもくない"
@@ -12641,8 +12621,8 @@
                     },
                     "fromState": "base",
                     "toState": "past",
-                    "removeSuffix": "おもい",
-                    "append": "おもかった",
+                    "removeSuffix": "重い",
+                    "append": "重かった",
                     "pronunciation": {
                         "removeSuffix": "おもい",
                         "append": "おもかった"
@@ -12664,10 +12644,10 @@
             "id": "qualities-light-forms",
             "metadata": {
                 "labels": {
-                    "en": "かるい Forms",
-                    "de": "かるい-Formen",
-                    "id": "Bentuk かるい",
-                    "ja": "かるいの活用"
+                    "en": "軽い Forms",
+                    "de": "軽い-Formen",
+                    "id": "Bentuk 軽い",
+                    "ja": "軽いの活用"
                 }
             },
             "matchTags": ["adjective", "qualities-form-light"],
@@ -12685,8 +12665,8 @@
                     },
                     "fromState": "base",
                     "toState": "adverb",
-                    "removeSuffix": "かるい",
-                    "append": "かるく",
+                    "removeSuffix": "軽い",
+                    "append": "軽く",
                     "pronunciation": {
                         "removeSuffix": "かるい",
                         "append": "かるく"
@@ -12714,8 +12694,8 @@
                     },
                     "fromState": "base",
                     "toState": "negative",
-                    "removeSuffix": "かるい",
-                    "append": "かるくない",
+                    "removeSuffix": "軽い",
+                    "append": "軽くない",
                     "pronunciation": {
                         "removeSuffix": "かるい",
                         "append": "かるくない"
@@ -12743,8 +12723,8 @@
                     },
                     "fromState": "base",
                     "toState": "past",
-                    "removeSuffix": "かるい",
-                    "append": "かるかった",
+                    "removeSuffix": "軽い",
+                    "append": "軽かった",
                     "pronunciation": {
                         "removeSuffix": "かるい",
                         "append": "かるかった"
@@ -12766,10 +12746,10 @@
             "id": "qualities-easy-forms",
             "metadata": {
                 "labels": {
-                    "en": "やさしい Forms",
-                    "de": "やさしい-Formen",
-                    "id": "Bentuk やさしい",
-                    "ja": "やさしいの活用"
+                    "en": "易しい Forms",
+                    "de": "易しい-Formen",
+                    "id": "Bentuk 易しい",
+                    "ja": "易しいの活用"
                 }
             },
             "matchTags": ["adjective", "qualities-form-easy"],
@@ -12787,8 +12767,8 @@
                     },
                     "fromState": "base",
                     "toState": "adverb",
-                    "removeSuffix": "やさしい",
-                    "append": "やさしく",
+                    "removeSuffix": "易しい",
+                    "append": "易しく",
                     "pronunciation": {
                         "removeSuffix": "やさしい",
                         "append": "やさしく"
@@ -12816,8 +12796,8 @@
                     },
                     "fromState": "base",
                     "toState": "negative",
-                    "removeSuffix": "やさしい",
-                    "append": "やさしくない",
+                    "removeSuffix": "易しい",
+                    "append": "易しくない",
                     "pronunciation": {
                         "removeSuffix": "やさしい",
                         "append": "やさしくない"
@@ -12845,8 +12825,8 @@
                     },
                     "fromState": "base",
                     "toState": "past",
-                    "removeSuffix": "やさしい",
-                    "append": "やさしかった",
+                    "removeSuffix": "易しい",
+                    "append": "易しかった",
                     "pronunciation": {
                         "removeSuffix": "やさしい",
                         "append": "やさしかった"
@@ -12868,10 +12848,10 @@
             "id": "qualities-difficult-forms",
             "metadata": {
                 "labels": {
-                    "en": "むずかしい Forms",
-                    "de": "むずかしい-Formen",
-                    "id": "Bentuk むずかしい",
-                    "ja": "むずかしいの活用"
+                    "en": "難しい Forms",
+                    "de": "難しい-Formen",
+                    "id": "Bentuk 難しい",
+                    "ja": "難しいの活用"
                 }
             },
             "matchTags": ["adjective", "qualities-form-difficult"],
@@ -12889,8 +12869,8 @@
                     },
                     "fromState": "base",
                     "toState": "adverb",
-                    "removeSuffix": "むずかしい",
-                    "append": "むずかしく",
+                    "removeSuffix": "難しい",
+                    "append": "難しく",
                     "pronunciation": {
                         "removeSuffix": "むずかしい",
                         "append": "むずかしく"
@@ -12918,8 +12898,8 @@
                     },
                     "fromState": "base",
                     "toState": "negative",
-                    "removeSuffix": "むずかしい",
-                    "append": "むずかしくない",
+                    "removeSuffix": "難しい",
+                    "append": "難しくない",
                     "pronunciation": {
                         "removeSuffix": "むずかしい",
                         "append": "むずかしくない"
@@ -12947,8 +12927,8 @@
                     },
                     "fromState": "base",
                     "toState": "past",
-                    "removeSuffix": "むずかしい",
-                    "append": "むずかしかった",
+                    "removeSuffix": "難しい",
+                    "append": "難しかった",
                     "pronunciation": {
                         "removeSuffix": "むずかしい",
                         "append": "むずかしかった"
@@ -12970,10 +12950,10 @@
             "id": "core-read-forms",
             "metadata": {
                 "labels": {
-                    "en": "よむ Forms",
-                    "de": "よむ-Formen",
-                    "id": "Bentuk よむ",
-                    "ja": "よむの活用"
+                    "en": "読む Forms",
+                    "de": "読む-Formen",
+                    "id": "Bentuk 読む",
+                    "ja": "読むの活用"
                 }
             },
             "matchTags": ["verb", "core-form-read"],
@@ -12991,8 +12971,8 @@
                     },
                     "fromState": "base",
                     "toState": "polite",
-                    "removeSuffix": "よむ",
-                    "append": "よみます",
+                    "removeSuffix": "読む",
+                    "append": "読みます",
                     "pronunciation": {
                         "removeSuffix": "よむ",
                         "append": "よみます"
@@ -13020,8 +13000,8 @@
                     },
                     "fromState": "base",
                     "toState": "negative",
-                    "removeSuffix": "よむ",
-                    "append": "よまない",
+                    "removeSuffix": "読む",
+                    "append": "読まない",
                     "pronunciation": {
                         "removeSuffix": "よむ",
                         "append": "よまない"
@@ -13049,8 +13029,8 @@
                     },
                     "fromState": "base",
                     "toState": "past",
-                    "removeSuffix": "よむ",
-                    "append": "よんだ",
+                    "removeSuffix": "読む",
+                    "append": "読んだ",
                     "pronunciation": {
                         "removeSuffix": "よむ",
                         "append": "よんだ"
@@ -13078,8 +13058,8 @@
                     },
                     "fromState": "base",
                     "toState": "te-form",
-                    "removeSuffix": "よむ",
-                    "append": "よんで",
+                    "removeSuffix": "読む",
+                    "append": "読んで",
                     "pronunciation": {
                         "removeSuffix": "よむ",
                         "append": "よんで"
@@ -13107,8 +13087,8 @@
                     },
                     "fromState": "base",
                     "toState": "polite-past",
-                    "removeSuffix": "よむ",
-                    "append": "よみました",
+                    "removeSuffix": "読む",
+                    "append": "読みました",
                     "pronunciation": {
                         "removeSuffix": "よむ",
                         "append": "よみました"
@@ -13136,8 +13116,8 @@
                     },
                     "fromState": "base",
                     "toState": "polite-negative",
-                    "removeSuffix": "よむ",
-                    "append": "よみません",
+                    "removeSuffix": "読む",
+                    "append": "読みません",
                     "pronunciation": {
                         "removeSuffix": "よむ",
                         "append": "よみません"
@@ -13165,8 +13145,8 @@
                     },
                     "fromState": "base",
                     "toState": "negative-past",
-                    "removeSuffix": "よむ",
-                    "append": "よまなかった",
+                    "removeSuffix": "読む",
+                    "append": "読まなかった",
                     "pronunciation": {
                         "removeSuffix": "よむ",
                         "append": "よまなかった"
@@ -13194,8 +13174,8 @@
                     },
                     "fromState": "base",
                     "toState": "potential",
-                    "removeSuffix": "よむ",
-                    "append": "よめる",
+                    "removeSuffix": "読む",
+                    "append": "読める",
                     "pronunciation": {
                         "removeSuffix": "よむ",
                         "append": "よめる"
@@ -13217,10 +13197,10 @@
             "id": "core-write-forms",
             "metadata": {
                 "labels": {
-                    "en": "かく Forms",
-                    "de": "かく-Formen",
-                    "id": "Bentuk かく",
-                    "ja": "かくの活用"
+                    "en": "書く Forms",
+                    "de": "書く-Formen",
+                    "id": "Bentuk 書く",
+                    "ja": "書くの活用"
                 }
             },
             "matchTags": ["verb", "core-form-write"],
@@ -13238,8 +13218,8 @@
                     },
                     "fromState": "base",
                     "toState": "polite",
-                    "removeSuffix": "かく",
-                    "append": "かきます",
+                    "removeSuffix": "書く",
+                    "append": "書きます",
                     "pronunciation": {
                         "removeSuffix": "かく",
                         "append": "かきます"
@@ -13267,8 +13247,8 @@
                     },
                     "fromState": "base",
                     "toState": "negative",
-                    "removeSuffix": "かく",
-                    "append": "かかない",
+                    "removeSuffix": "書く",
+                    "append": "書かない",
                     "pronunciation": {
                         "removeSuffix": "かく",
                         "append": "かかない"
@@ -13296,8 +13276,8 @@
                     },
                     "fromState": "base",
                     "toState": "past",
-                    "removeSuffix": "かく",
-                    "append": "かいた",
+                    "removeSuffix": "書く",
+                    "append": "書いた",
                     "pronunciation": {
                         "removeSuffix": "かく",
                         "append": "かいた"
@@ -13325,8 +13305,8 @@
                     },
                     "fromState": "base",
                     "toState": "te-form",
-                    "removeSuffix": "かく",
-                    "append": "かいて",
+                    "removeSuffix": "書く",
+                    "append": "書いて",
                     "pronunciation": {
                         "removeSuffix": "かく",
                         "append": "かいて"
@@ -13354,8 +13334,8 @@
                     },
                     "fromState": "base",
                     "toState": "polite-past",
-                    "removeSuffix": "かく",
-                    "append": "かきました",
+                    "removeSuffix": "書く",
+                    "append": "書きました",
                     "pronunciation": {
                         "removeSuffix": "かく",
                         "append": "かきました"
@@ -13383,8 +13363,8 @@
                     },
                     "fromState": "base",
                     "toState": "polite-negative",
-                    "removeSuffix": "かく",
-                    "append": "かきません",
+                    "removeSuffix": "書く",
+                    "append": "書きません",
                     "pronunciation": {
                         "removeSuffix": "かく",
                         "append": "かきません"
@@ -13412,8 +13392,8 @@
                     },
                     "fromState": "base",
                     "toState": "negative-past",
-                    "removeSuffix": "かく",
-                    "append": "かかなかった",
+                    "removeSuffix": "書く",
+                    "append": "書かなかった",
                     "pronunciation": {
                         "removeSuffix": "かく",
                         "append": "かかなかった"
@@ -13441,8 +13421,8 @@
                     },
                     "fromState": "base",
                     "toState": "potential",
-                    "removeSuffix": "かく",
-                    "append": "かける",
+                    "removeSuffix": "書く",
+                    "append": "書ける",
                     "pronunciation": {
                         "removeSuffix": "かく",
                         "append": "かける"
@@ -13464,10 +13444,10 @@
             "id": "core-speak-forms",
             "metadata": {
                 "labels": {
-                    "en": "はなす Forms",
-                    "de": "はなす-Formen",
-                    "id": "Bentuk はなす",
-                    "ja": "はなすの活用"
+                    "en": "話す Forms",
+                    "de": "話す-Formen",
+                    "id": "Bentuk 話す",
+                    "ja": "話すの活用"
                 }
             },
             "matchTags": ["verb", "core-form-speak"],
@@ -13485,8 +13465,8 @@
                     },
                     "fromState": "base",
                     "toState": "polite",
-                    "removeSuffix": "はなす",
-                    "append": "はなします",
+                    "removeSuffix": "話す",
+                    "append": "話します",
                     "pronunciation": {
                         "removeSuffix": "はなす",
                         "append": "はなします"
@@ -13514,8 +13494,8 @@
                     },
                     "fromState": "base",
                     "toState": "negative",
-                    "removeSuffix": "はなす",
-                    "append": "はなさない",
+                    "removeSuffix": "話す",
+                    "append": "話さない",
                     "pronunciation": {
                         "removeSuffix": "はなす",
                         "append": "はなさない"
@@ -13543,8 +13523,8 @@
                     },
                     "fromState": "base",
                     "toState": "past",
-                    "removeSuffix": "はなす",
-                    "append": "はなした",
+                    "removeSuffix": "話す",
+                    "append": "話した",
                     "pronunciation": {
                         "removeSuffix": "はなす",
                         "append": "はなした"
@@ -13572,8 +13552,8 @@
                     },
                     "fromState": "base",
                     "toState": "te-form",
-                    "removeSuffix": "はなす",
-                    "append": "はなして",
+                    "removeSuffix": "話す",
+                    "append": "話して",
                     "pronunciation": {
                         "removeSuffix": "はなす",
                         "append": "はなして"
@@ -13601,8 +13581,8 @@
                     },
                     "fromState": "base",
                     "toState": "polite-past",
-                    "removeSuffix": "はなす",
-                    "append": "はなしました",
+                    "removeSuffix": "話す",
+                    "append": "話しました",
                     "pronunciation": {
                         "removeSuffix": "はなす",
                         "append": "はなしました"
@@ -13630,8 +13610,8 @@
                     },
                     "fromState": "base",
                     "toState": "polite-negative",
-                    "removeSuffix": "はなす",
-                    "append": "はなしません",
+                    "removeSuffix": "話す",
+                    "append": "話しません",
                     "pronunciation": {
                         "removeSuffix": "はなす",
                         "append": "はなしません"
@@ -13659,8 +13639,8 @@
                     },
                     "fromState": "base",
                     "toState": "negative-past",
-                    "removeSuffix": "はなす",
-                    "append": "はなさなかった",
+                    "removeSuffix": "話す",
+                    "append": "話さなかった",
                     "pronunciation": {
                         "removeSuffix": "はなす",
                         "append": "はなさなかった"
@@ -13688,8 +13668,8 @@
                     },
                     "fromState": "base",
                     "toState": "potential",
-                    "removeSuffix": "はなす",
-                    "append": "はなせる",
+                    "removeSuffix": "話す",
+                    "append": "話せる",
                     "pronunciation": {
                         "removeSuffix": "はなす",
                         "append": "はなせる"
@@ -13711,10 +13691,10 @@
             "id": "core-sleep-forms",
             "metadata": {
                 "labels": {
-                    "en": "ねる Forms",
-                    "de": "ねる-Formen",
-                    "id": "Bentuk ねる",
-                    "ja": "ねるの活用"
+                    "en": "寝る Forms",
+                    "de": "寝る-Formen",
+                    "id": "Bentuk 寝る",
+                    "ja": "寝るの活用"
                 }
             },
             "matchTags": ["verb", "core-form-sleep"],
@@ -13732,8 +13712,8 @@
                     },
                     "fromState": "base",
                     "toState": "polite",
-                    "removeSuffix": "ねる",
-                    "append": "ねます",
+                    "removeSuffix": "寝る",
+                    "append": "寝ます",
                     "pronunciation": {
                         "removeSuffix": "ねる",
                         "append": "ねます"
@@ -13761,8 +13741,8 @@
                     },
                     "fromState": "base",
                     "toState": "negative",
-                    "removeSuffix": "ねる",
-                    "append": "ねない",
+                    "removeSuffix": "寝る",
+                    "append": "寝ない",
                     "pronunciation": {
                         "removeSuffix": "ねる",
                         "append": "ねない"
@@ -13790,8 +13770,8 @@
                     },
                     "fromState": "base",
                     "toState": "past",
-                    "removeSuffix": "ねる",
-                    "append": "ねた",
+                    "removeSuffix": "寝る",
+                    "append": "寝た",
                     "pronunciation": {
                         "removeSuffix": "ねる",
                         "append": "ねた"
@@ -13819,8 +13799,8 @@
                     },
                     "fromState": "base",
                     "toState": "te-form",
-                    "removeSuffix": "ねる",
-                    "append": "ねて",
+                    "removeSuffix": "寝る",
+                    "append": "寝て",
                     "pronunciation": {
                         "removeSuffix": "ねる",
                         "append": "ねて"
@@ -13848,8 +13828,8 @@
                     },
                     "fromState": "base",
                     "toState": "polite-past",
-                    "removeSuffix": "ねる",
-                    "append": "ねました",
+                    "removeSuffix": "寝る",
+                    "append": "寝ました",
                     "pronunciation": {
                         "removeSuffix": "ねる",
                         "append": "ねました"
@@ -13877,8 +13857,8 @@
                     },
                     "fromState": "base",
                     "toState": "polite-negative",
-                    "removeSuffix": "ねる",
-                    "append": "ねません",
+                    "removeSuffix": "寝る",
+                    "append": "寝ません",
                     "pronunciation": {
                         "removeSuffix": "ねる",
                         "append": "ねません"
@@ -13906,8 +13886,8 @@
                     },
                     "fromState": "base",
                     "toState": "negative-past",
-                    "removeSuffix": "ねる",
-                    "append": "ねなかった",
+                    "removeSuffix": "寝る",
+                    "append": "寝なかった",
                     "pronunciation": {
                         "removeSuffix": "ねる",
                         "append": "ねなかった"
@@ -13935,8 +13915,8 @@
                     },
                     "fromState": "base",
                     "toState": "potential",
-                    "removeSuffix": "ねる",
-                    "append": "ねられる",
+                    "removeSuffix": "寝る",
+                    "append": "寝られる",
                     "pronunciation": {
                         "removeSuffix": "ねる",
                         "append": "ねられる"
@@ -13958,10 +13938,10 @@
             "id": "comprehension-understand-forms",
             "metadata": {
                 "labels": {
-                    "en": "わかる Forms",
-                    "de": "わかる-Formen",
-                    "id": "Bentuk わかる",
-                    "ja": "わかるの活用"
+                    "en": "分かる Forms",
+                    "de": "分かる-Formen",
+                    "id": "Bentuk 分かる",
+                    "ja": "分かるの活用"
                 }
             },
             "matchTags": ["verb", "comprehension-form-understand"],
@@ -13979,8 +13959,8 @@
                     },
                     "fromState": "base",
                     "toState": "polite",
-                    "removeSuffix": "わかる",
-                    "append": "わかります",
+                    "removeSuffix": "分かる",
+                    "append": "分かります",
                     "pronunciation": {
                         "removeSuffix": "わかる",
                         "append": "わかります"
@@ -14008,8 +13988,8 @@
                     },
                     "fromState": "base",
                     "toState": "negative",
-                    "removeSuffix": "わかる",
-                    "append": "わからない",
+                    "removeSuffix": "分かる",
+                    "append": "分からない",
                     "pronunciation": {
                         "removeSuffix": "わかる",
                         "append": "わからない"
@@ -14037,8 +14017,8 @@
                     },
                     "fromState": "base",
                     "toState": "past",
-                    "removeSuffix": "わかる",
-                    "append": "わかった",
+                    "removeSuffix": "分かる",
+                    "append": "分かった",
                     "pronunciation": {
                         "removeSuffix": "わかる",
                         "append": "わかった"
@@ -14066,8 +14046,8 @@
                     },
                     "fromState": "base",
                     "toState": "te-form",
-                    "removeSuffix": "わかる",
-                    "append": "わかって",
+                    "removeSuffix": "分かる",
+                    "append": "分かって",
                     "pronunciation": {
                         "removeSuffix": "わかる",
                         "append": "わかって"
@@ -14095,8 +14075,8 @@
                     },
                     "fromState": "base",
                     "toState": "polite-past",
-                    "removeSuffix": "わかる",
-                    "append": "わかりました",
+                    "removeSuffix": "分かる",
+                    "append": "分かりました",
                     "pronunciation": {
                         "removeSuffix": "わかる",
                         "append": "わかりました"
@@ -14124,8 +14104,8 @@
                     },
                     "fromState": "base",
                     "toState": "polite-negative",
-                    "removeSuffix": "わかる",
-                    "append": "わかりません",
+                    "removeSuffix": "分かる",
+                    "append": "分かりません",
                     "pronunciation": {
                         "removeSuffix": "わかる",
                         "append": "わかりません"
@@ -14153,8 +14133,8 @@
                     },
                     "fromState": "base",
                     "toState": "negative-past",
-                    "removeSuffix": "わかる",
-                    "append": "わからなかった",
+                    "removeSuffix": "分かる",
+                    "append": "分からなかった",
                     "pronunciation": {
                         "removeSuffix": "わかる",
                         "append": "わからなかった"
@@ -14670,10 +14650,10 @@
             "id": "posture-sit-forms",
             "metadata": {
                 "labels": {
-                    "en": "すわる Forms",
-                    "de": "すわる-Formen",
-                    "id": "Bentuk すわる",
-                    "ja": "すわるの活用"
+                    "en": "座る Forms",
+                    "de": "座る-Formen",
+                    "id": "Bentuk 座る",
+                    "ja": "座るの活用"
                 }
             },
             "matchTags": ["verb", "posture-form-sit"],
@@ -14691,8 +14671,8 @@
                     },
                     "fromState": "base",
                     "toState": "polite",
-                    "removeSuffix": "すわる",
-                    "append": "すわります",
+                    "removeSuffix": "座る",
+                    "append": "座ります",
                     "pronunciation": {
                         "removeSuffix": "すわる",
                         "append": "すわります"
@@ -14720,8 +14700,8 @@
                     },
                     "fromState": "base",
                     "toState": "negative",
-                    "removeSuffix": "すわる",
-                    "append": "すわらない",
+                    "removeSuffix": "座る",
+                    "append": "座らない",
                     "pronunciation": {
                         "removeSuffix": "すわる",
                         "append": "すわらない"
@@ -14749,8 +14729,8 @@
                     },
                     "fromState": "base",
                     "toState": "past",
-                    "removeSuffix": "すわる",
-                    "append": "すわった",
+                    "removeSuffix": "座る",
+                    "append": "座った",
                     "pronunciation": {
                         "removeSuffix": "すわる",
                         "append": "すわった"
@@ -14778,8 +14758,8 @@
                     },
                     "fromState": "base",
                     "toState": "te-form",
-                    "removeSuffix": "すわる",
-                    "append": "すわって",
+                    "removeSuffix": "座る",
+                    "append": "座って",
                     "pronunciation": {
                         "removeSuffix": "すわる",
                         "append": "すわって"
@@ -14807,8 +14787,8 @@
                     },
                     "fromState": "base",
                     "toState": "polite-past",
-                    "removeSuffix": "すわる",
-                    "append": "すわりました",
+                    "removeSuffix": "座る",
+                    "append": "座りました",
                     "pronunciation": {
                         "removeSuffix": "すわる",
                         "append": "すわりました"
@@ -14836,8 +14816,8 @@
                     },
                     "fromState": "base",
                     "toState": "polite-negative",
-                    "removeSuffix": "すわる",
-                    "append": "すわりません",
+                    "removeSuffix": "座る",
+                    "append": "座りません",
                     "pronunciation": {
                         "removeSuffix": "すわる",
                         "append": "すわりません"
@@ -14865,8 +14845,8 @@
                     },
                     "fromState": "base",
                     "toState": "negative-past",
-                    "removeSuffix": "すわる",
-                    "append": "すわらなかった",
+                    "removeSuffix": "座る",
+                    "append": "座らなかった",
                     "pronunciation": {
                         "removeSuffix": "すわる",
                         "append": "すわらなかった"
@@ -14894,8 +14874,8 @@
                     },
                     "fromState": "base",
                     "toState": "potential",
-                    "removeSuffix": "すわる",
-                    "append": "すわれる",
+                    "removeSuffix": "座る",
+                    "append": "座れる",
                     "pronunciation": {
                         "removeSuffix": "すわる",
                         "append": "すわれる"
@@ -14917,10 +14897,10 @@
             "id": "posture-stand-forms",
             "metadata": {
                 "labels": {
-                    "en": "たつ Forms",
-                    "de": "たつ-Formen",
-                    "id": "Bentuk たつ",
-                    "ja": "たつの活用"
+                    "en": "立つ Forms",
+                    "de": "立つ-Formen",
+                    "id": "Bentuk 立つ",
+                    "ja": "立つの活用"
                 }
             },
             "matchTags": ["verb", "posture-form-stand"],
@@ -14938,8 +14918,8 @@
                     },
                     "fromState": "base",
                     "toState": "polite",
-                    "removeSuffix": "たつ",
-                    "append": "たちます",
+                    "removeSuffix": "立つ",
+                    "append": "立ちます",
                     "pronunciation": {
                         "removeSuffix": "たつ",
                         "append": "たちます"
@@ -14967,8 +14947,8 @@
                     },
                     "fromState": "base",
                     "toState": "negative",
-                    "removeSuffix": "たつ",
-                    "append": "たたない",
+                    "removeSuffix": "立つ",
+                    "append": "立たない",
                     "pronunciation": {
                         "removeSuffix": "たつ",
                         "append": "たたない"
@@ -14996,8 +14976,8 @@
                     },
                     "fromState": "base",
                     "toState": "past",
-                    "removeSuffix": "たつ",
-                    "append": "たった",
+                    "removeSuffix": "立つ",
+                    "append": "立った",
                     "pronunciation": {
                         "removeSuffix": "たつ",
                         "append": "たった"
@@ -15025,8 +15005,8 @@
                     },
                     "fromState": "base",
                     "toState": "te-form",
-                    "removeSuffix": "たつ",
-                    "append": "たって",
+                    "removeSuffix": "立つ",
+                    "append": "立って",
                     "pronunciation": {
                         "removeSuffix": "たつ",
                         "append": "たって"
@@ -15054,8 +15034,8 @@
                     },
                     "fromState": "base",
                     "toState": "polite-past",
-                    "removeSuffix": "たつ",
-                    "append": "たちました",
+                    "removeSuffix": "立つ",
+                    "append": "立ちました",
                     "pronunciation": {
                         "removeSuffix": "たつ",
                         "append": "たちました"
@@ -15083,8 +15063,8 @@
                     },
                     "fromState": "base",
                     "toState": "polite-negative",
-                    "removeSuffix": "たつ",
-                    "append": "たちません",
+                    "removeSuffix": "立つ",
+                    "append": "立ちません",
                     "pronunciation": {
                         "removeSuffix": "たつ",
                         "append": "たちません"
@@ -15112,8 +15092,8 @@
                     },
                     "fromState": "base",
                     "toState": "negative-past",
-                    "removeSuffix": "たつ",
-                    "append": "たたなかった",
+                    "removeSuffix": "立つ",
+                    "append": "立たなかった",
                     "pronunciation": {
                         "removeSuffix": "たつ",
                         "append": "たたなかった"
@@ -15141,8 +15121,8 @@
                     },
                     "fromState": "base",
                     "toState": "potential",
-                    "removeSuffix": "たつ",
-                    "append": "たてる",
+                    "removeSuffix": "立つ",
+                    "append": "立てる",
                     "pronunciation": {
                         "removeSuffix": "たつ",
                         "append": "たてる"
@@ -15164,10 +15144,10 @@
             "id": "force-push-forms",
             "metadata": {
                 "labels": {
-                    "en": "おす Forms",
-                    "de": "おす-Formen",
-                    "id": "Bentuk おす",
-                    "ja": "おすの活用"
+                    "en": "押す Forms",
+                    "de": "押す-Formen",
+                    "id": "Bentuk 押す",
+                    "ja": "押すの活用"
                 }
             },
             "matchTags": ["verb", "force-form-push"],
@@ -15185,8 +15165,8 @@
                     },
                     "fromState": "base",
                     "toState": "polite",
-                    "removeSuffix": "おす",
-                    "append": "おします",
+                    "removeSuffix": "押す",
+                    "append": "押します",
                     "pronunciation": {
                         "removeSuffix": "おす",
                         "append": "おします"
@@ -15214,8 +15194,8 @@
                     },
                     "fromState": "base",
                     "toState": "negative",
-                    "removeSuffix": "おす",
-                    "append": "おさない",
+                    "removeSuffix": "押す",
+                    "append": "押さない",
                     "pronunciation": {
                         "removeSuffix": "おす",
                         "append": "おさない"
@@ -15243,8 +15223,8 @@
                     },
                     "fromState": "base",
                     "toState": "past",
-                    "removeSuffix": "おす",
-                    "append": "おした",
+                    "removeSuffix": "押す",
+                    "append": "押した",
                     "pronunciation": {
                         "removeSuffix": "おす",
                         "append": "おした"
@@ -15272,8 +15252,8 @@
                     },
                     "fromState": "base",
                     "toState": "te-form",
-                    "removeSuffix": "おす",
-                    "append": "おして",
+                    "removeSuffix": "押す",
+                    "append": "押して",
                     "pronunciation": {
                         "removeSuffix": "おす",
                         "append": "おして"
@@ -15301,8 +15281,8 @@
                     },
                     "fromState": "base",
                     "toState": "polite-past",
-                    "removeSuffix": "おす",
-                    "append": "おしました",
+                    "removeSuffix": "押す",
+                    "append": "押しました",
                     "pronunciation": {
                         "removeSuffix": "おす",
                         "append": "おしました"
@@ -15330,8 +15310,8 @@
                     },
                     "fromState": "base",
                     "toState": "polite-negative",
-                    "removeSuffix": "おす",
-                    "append": "おしません",
+                    "removeSuffix": "押す",
+                    "append": "押しません",
                     "pronunciation": {
                         "removeSuffix": "おす",
                         "append": "おしません"
@@ -15359,8 +15339,8 @@
                     },
                     "fromState": "base",
                     "toState": "negative-past",
-                    "removeSuffix": "おす",
-                    "append": "おさなかった",
+                    "removeSuffix": "押す",
+                    "append": "押さなかった",
                     "pronunciation": {
                         "removeSuffix": "おす",
                         "append": "おさなかった"
@@ -15388,8 +15368,8 @@
                     },
                     "fromState": "base",
                     "toState": "potential",
-                    "removeSuffix": "おす",
-                    "append": "おせる",
+                    "removeSuffix": "押す",
+                    "append": "押せる",
                     "pronunciation": {
                         "removeSuffix": "おす",
                         "append": "おせる"
@@ -15411,10 +15391,10 @@
             "id": "force-pull-forms",
             "metadata": {
                 "labels": {
-                    "en": "ひく Forms",
-                    "de": "ひく-Formen",
-                    "id": "Bentuk ひく",
-                    "ja": "ひくの活用"
+                    "en": "引く Forms",
+                    "de": "引く-Formen",
+                    "id": "Bentuk 引く",
+                    "ja": "引くの活用"
                 }
             },
             "matchTags": ["verb", "force-form-pull"],
@@ -15432,8 +15412,8 @@
                     },
                     "fromState": "base",
                     "toState": "polite",
-                    "removeSuffix": "ひく",
-                    "append": "ひきます",
+                    "removeSuffix": "引く",
+                    "append": "引きます",
                     "pronunciation": {
                         "removeSuffix": "ひく",
                         "append": "ひきます"
@@ -15461,8 +15441,8 @@
                     },
                     "fromState": "base",
                     "toState": "negative",
-                    "removeSuffix": "ひく",
-                    "append": "ひかない",
+                    "removeSuffix": "引く",
+                    "append": "引かない",
                     "pronunciation": {
                         "removeSuffix": "ひく",
                         "append": "ひかない"
@@ -15490,8 +15470,8 @@
                     },
                     "fromState": "base",
                     "toState": "past",
-                    "removeSuffix": "ひく",
-                    "append": "ひいた",
+                    "removeSuffix": "引く",
+                    "append": "引いた",
                     "pronunciation": {
                         "removeSuffix": "ひく",
                         "append": "ひいた"
@@ -15519,8 +15499,8 @@
                     },
                     "fromState": "base",
                     "toState": "te-form",
-                    "removeSuffix": "ひく",
-                    "append": "ひいて",
+                    "removeSuffix": "引く",
+                    "append": "引いて",
                     "pronunciation": {
                         "removeSuffix": "ひく",
                         "append": "ひいて"
@@ -15548,8 +15528,8 @@
                     },
                     "fromState": "base",
                     "toState": "polite-past",
-                    "removeSuffix": "ひく",
-                    "append": "ひきました",
+                    "removeSuffix": "引く",
+                    "append": "引きました",
                     "pronunciation": {
                         "removeSuffix": "ひく",
                         "append": "ひきました"
@@ -15577,8 +15557,8 @@
                     },
                     "fromState": "base",
                     "toState": "polite-negative",
-                    "removeSuffix": "ひく",
-                    "append": "ひきません",
+                    "removeSuffix": "引く",
+                    "append": "引きません",
                     "pronunciation": {
                         "removeSuffix": "ひく",
                         "append": "ひきません"
@@ -15606,8 +15586,8 @@
                     },
                     "fromState": "base",
                     "toState": "negative-past",
-                    "removeSuffix": "ひく",
-                    "append": "ひかなかった",
+                    "removeSuffix": "引く",
+                    "append": "引かなかった",
                     "pronunciation": {
                         "removeSuffix": "ひく",
                         "append": "ひかなかった"
@@ -15635,8 +15615,8 @@
                     },
                     "fromState": "base",
                     "toState": "potential",
-                    "removeSuffix": "ひく",
-                    "append": "ひける",
+                    "removeSuffix": "引く",
+                    "append": "引ける",
                     "pronunciation": {
                         "removeSuffix": "ひく",
                         "append": "ひける"
@@ -15658,10 +15638,10 @@
             "id": "length-long-forms",
             "metadata": {
                 "labels": {
-                    "en": "ながい Forms",
-                    "de": "ながい-Formen",
-                    "id": "Bentuk ながい",
-                    "ja": "ながいの活用"
+                    "en": "長い Forms",
+                    "de": "長い-Formen",
+                    "id": "Bentuk 長い",
+                    "ja": "長いの活用"
                 }
             },
             "matchTags": ["adjective", "length-form-long"],
@@ -15679,8 +15659,8 @@
                     },
                     "fromState": "base",
                     "toState": "adverb",
-                    "removeSuffix": "ながい",
-                    "append": "ながく",
+                    "removeSuffix": "長い",
+                    "append": "長く",
                     "pronunciation": {
                         "removeSuffix": "ながい",
                         "append": "ながく"
@@ -15708,8 +15688,8 @@
                     },
                     "fromState": "base",
                     "toState": "negative",
-                    "removeSuffix": "ながい",
-                    "append": "ながくない",
+                    "removeSuffix": "長い",
+                    "append": "長くない",
                     "pronunciation": {
                         "removeSuffix": "ながい",
                         "append": "ながくない"
@@ -15737,8 +15717,8 @@
                     },
                     "fromState": "base",
                     "toState": "past",
-                    "removeSuffix": "ながい",
-                    "append": "ながかった",
+                    "removeSuffix": "長い",
+                    "append": "長かった",
                     "pronunciation": {
                         "removeSuffix": "ながい",
                         "append": "ながかった"
@@ -15760,10 +15740,10 @@
             "id": "length-short-forms",
             "metadata": {
                 "labels": {
-                    "en": "みじかい Forms",
-                    "de": "みじかい-Formen",
-                    "id": "Bentuk みじかい",
-                    "ja": "みじかいの活用"
+                    "en": "短い Forms",
+                    "de": "短い-Formen",
+                    "id": "Bentuk 短い",
+                    "ja": "短いの活用"
                 }
             },
             "matchTags": ["adjective", "length-form-short"],
@@ -15781,8 +15761,8 @@
                     },
                     "fromState": "base",
                     "toState": "adverb",
-                    "removeSuffix": "みじかい",
-                    "append": "みじかく",
+                    "removeSuffix": "短い",
+                    "append": "短く",
                     "pronunciation": {
                         "removeSuffix": "みじかい",
                         "append": "みじかく"
@@ -15810,8 +15790,8 @@
                     },
                     "fromState": "base",
                     "toState": "negative",
-                    "removeSuffix": "みじかい",
-                    "append": "みじかくない",
+                    "removeSuffix": "短い",
+                    "append": "短くない",
                     "pronunciation": {
                         "removeSuffix": "みじかい",
                         "append": "みじかくない"
@@ -15839,8 +15819,8 @@
                     },
                     "fromState": "base",
                     "toState": "past",
-                    "removeSuffix": "みじかい",
-                    "append": "みじかかった",
+                    "removeSuffix": "短い",
+                    "append": "短かった",
                     "pronunciation": {
                         "removeSuffix": "みじかい",
                         "append": "みじかかった"
@@ -15862,10 +15842,10 @@
             "id": "craft-cut-forms",
             "metadata": {
                 "labels": {
-                    "en": "きる Forms",
-                    "de": "きる-Formen",
-                    "id": "Bentuk きる",
-                    "ja": "きるの活用"
+                    "en": "切る Forms",
+                    "de": "切る-Formen",
+                    "id": "Bentuk 切る",
+                    "ja": "切るの活用"
                 }
             },
             "matchTags": ["verb", "craft-form-cut"],
@@ -15883,8 +15863,8 @@
                     },
                     "fromState": "base",
                     "toState": "polite",
-                    "removeSuffix": "きる",
-                    "append": "きります",
+                    "removeSuffix": "切る",
+                    "append": "切ります",
                     "pronunciation": {
                         "removeSuffix": "きる",
                         "append": "きります"
@@ -15912,8 +15892,8 @@
                     },
                     "fromState": "base",
                     "toState": "negative",
-                    "removeSuffix": "きる",
-                    "append": "きらない",
+                    "removeSuffix": "切る",
+                    "append": "切らない",
                     "pronunciation": {
                         "removeSuffix": "きる",
                         "append": "きらない"
@@ -15941,8 +15921,8 @@
                     },
                     "fromState": "base",
                     "toState": "past",
-                    "removeSuffix": "きる",
-                    "append": "きった",
+                    "removeSuffix": "切る",
+                    "append": "切った",
                     "pronunciation": {
                         "removeSuffix": "きる",
                         "append": "きった"
@@ -15970,8 +15950,8 @@
                     },
                     "fromState": "base",
                     "toState": "te-form",
-                    "removeSuffix": "きる",
-                    "append": "きって",
+                    "removeSuffix": "切る",
+                    "append": "切って",
                     "pronunciation": {
                         "removeSuffix": "きる",
                         "append": "きって"
@@ -15999,8 +15979,8 @@
                     },
                     "fromState": "base",
                     "toState": "polite-past",
-                    "removeSuffix": "きる",
-                    "append": "きりました",
+                    "removeSuffix": "切る",
+                    "append": "切りました",
                     "pronunciation": {
                         "removeSuffix": "きる",
                         "append": "きりました"
@@ -16028,8 +16008,8 @@
                     },
                     "fromState": "base",
                     "toState": "polite-negative",
-                    "removeSuffix": "きる",
-                    "append": "きりません",
+                    "removeSuffix": "切る",
+                    "append": "切りません",
                     "pronunciation": {
                         "removeSuffix": "きる",
                         "append": "きりません"
@@ -16057,8 +16037,8 @@
                     },
                     "fromState": "base",
                     "toState": "negative-past",
-                    "removeSuffix": "きる",
-                    "append": "きらなかった",
+                    "removeSuffix": "切る",
+                    "append": "切らなかった",
                     "pronunciation": {
                         "removeSuffix": "きる",
                         "append": "きらなかった"
@@ -16086,8 +16066,8 @@
                     },
                     "fromState": "base",
                     "toState": "potential",
-                    "removeSuffix": "きる",
-                    "append": "きれる",
+                    "removeSuffix": "切る",
+                    "append": "切れる",
                     "pronunciation": {
                         "removeSuffix": "きる",
                         "append": "きれる"
@@ -16109,10 +16089,10 @@
             "id": "craft-fold-forms",
             "metadata": {
                 "labels": {
-                    "en": "おる Forms",
-                    "de": "おる-Formen",
-                    "id": "Bentuk おる",
-                    "ja": "おるの活用"
+                    "en": "折る Forms",
+                    "de": "折る-Formen",
+                    "id": "Bentuk 折る",
+                    "ja": "折るの活用"
                 }
             },
             "matchTags": ["verb", "craft-form-fold"],
@@ -16130,8 +16110,8 @@
                     },
                     "fromState": "base",
                     "toState": "polite",
-                    "removeSuffix": "おる",
-                    "append": "おります",
+                    "removeSuffix": "折る",
+                    "append": "折ります",
                     "pronunciation": {
                         "removeSuffix": "おる",
                         "append": "おります"
@@ -16159,8 +16139,8 @@
                     },
                     "fromState": "base",
                     "toState": "negative",
-                    "removeSuffix": "おる",
-                    "append": "おらない",
+                    "removeSuffix": "折る",
+                    "append": "折らない",
                     "pronunciation": {
                         "removeSuffix": "おる",
                         "append": "おらない"
@@ -16188,8 +16168,8 @@
                     },
                     "fromState": "base",
                     "toState": "past",
-                    "removeSuffix": "おる",
-                    "append": "おった",
+                    "removeSuffix": "折る",
+                    "append": "折った",
                     "pronunciation": {
                         "removeSuffix": "おる",
                         "append": "おった"
@@ -16217,8 +16197,8 @@
                     },
                     "fromState": "base",
                     "toState": "te-form",
-                    "removeSuffix": "おる",
-                    "append": "おって",
+                    "removeSuffix": "折る",
+                    "append": "折って",
                     "pronunciation": {
                         "removeSuffix": "おる",
                         "append": "おって"
@@ -16246,8 +16226,8 @@
                     },
                     "fromState": "base",
                     "toState": "polite-past",
-                    "removeSuffix": "おる",
-                    "append": "おりました",
+                    "removeSuffix": "折る",
+                    "append": "折りました",
                     "pronunciation": {
                         "removeSuffix": "おる",
                         "append": "おりました"
@@ -16275,8 +16255,8 @@
                     },
                     "fromState": "base",
                     "toState": "polite-negative",
-                    "removeSuffix": "おる",
-                    "append": "おりません",
+                    "removeSuffix": "折る",
+                    "append": "折りません",
                     "pronunciation": {
                         "removeSuffix": "おる",
                         "append": "おりません"
@@ -16304,8 +16284,8 @@
                     },
                     "fromState": "base",
                     "toState": "negative-past",
-                    "removeSuffix": "おる",
-                    "append": "おらなかった",
+                    "removeSuffix": "折る",
+                    "append": "折らなかった",
                     "pronunciation": {
                         "removeSuffix": "おる",
                         "append": "おらなかった"
@@ -16333,8 +16313,8 @@
                     },
                     "fromState": "base",
                     "toState": "potential",
-                    "removeSuffix": "おる",
-                    "append": "おれる",
+                    "removeSuffix": "折る",
+                    "append": "折れる",
                     "pronunciation": {
                         "removeSuffix": "おる",
                         "append": "おれる"
@@ -16356,10 +16336,10 @@
             "id": "width-wide-forms",
             "metadata": {
                 "labels": {
-                    "en": "ひろい Forms",
-                    "de": "ひろい-Formen",
-                    "id": "Bentuk ひろい",
-                    "ja": "ひろいの活用"
+                    "en": "広い Forms",
+                    "de": "広い-Formen",
+                    "id": "Bentuk 広い",
+                    "ja": "広いの活用"
                 }
             },
             "matchTags": ["adjective", "width-form-wide"],
@@ -16377,8 +16357,8 @@
                     },
                     "fromState": "base",
                     "toState": "adverb",
-                    "removeSuffix": "ひろい",
-                    "append": "ひろく",
+                    "removeSuffix": "広い",
+                    "append": "広く",
                     "pronunciation": {
                         "removeSuffix": "ひろい",
                         "append": "ひろく"
@@ -16406,8 +16386,8 @@
                     },
                     "fromState": "base",
                     "toState": "negative",
-                    "removeSuffix": "ひろい",
-                    "append": "ひろくない",
+                    "removeSuffix": "広い",
+                    "append": "広くない",
                     "pronunciation": {
                         "removeSuffix": "ひろい",
                         "append": "ひろくない"
@@ -16435,8 +16415,8 @@
                     },
                     "fromState": "base",
                     "toState": "past",
-                    "removeSuffix": "ひろい",
-                    "append": "ひろかった",
+                    "removeSuffix": "広い",
+                    "append": "広かった",
                     "pronunciation": {
                         "removeSuffix": "ひろい",
                         "append": "ひろかった"
@@ -16458,10 +16438,10 @@
             "id": "width-narrow-forms",
             "metadata": {
                 "labels": {
-                    "en": "せまい Forms",
-                    "de": "せまい-Formen",
-                    "id": "Bentuk せまい",
-                    "ja": "せまいの活用"
+                    "en": "狭い Forms",
+                    "de": "狭い-Formen",
+                    "id": "Bentuk 狭い",
+                    "ja": "狭いの活用"
                 }
             },
             "matchTags": ["adjective", "width-form-narrow"],
@@ -16479,8 +16459,8 @@
                     },
                     "fromState": "base",
                     "toState": "adverb",
-                    "removeSuffix": "せまい",
-                    "append": "せまく",
+                    "removeSuffix": "狭い",
+                    "append": "狭く",
                     "pronunciation": {
                         "removeSuffix": "せまい",
                         "append": "せまく"
@@ -16508,8 +16488,8 @@
                     },
                     "fromState": "base",
                     "toState": "negative",
-                    "removeSuffix": "せまい",
-                    "append": "せまくない",
+                    "removeSuffix": "狭い",
+                    "append": "狭くない",
                     "pronunciation": {
                         "removeSuffix": "せまい",
                         "append": "せまくない"
@@ -16537,8 +16517,8 @@
                     },
                     "fromState": "base",
                     "toState": "past",
-                    "removeSuffix": "せまい",
-                    "append": "せまかった",
+                    "removeSuffix": "狭い",
+                    "append": "狭かった",
                     "pronunciation": {
                         "removeSuffix": "せまい",
                         "append": "せまかった"
@@ -16560,10 +16540,10 @@
             "id": "depth-deep-forms",
             "metadata": {
                 "labels": {
-                    "en": "ふかい Forms",
-                    "de": "ふかい-Formen",
-                    "id": "Bentuk ふかい",
-                    "ja": "ふかいの活用"
+                    "en": "深い Forms",
+                    "de": "深い-Formen",
+                    "id": "Bentuk 深い",
+                    "ja": "深いの活用"
                 }
             },
             "matchTags": ["adjective", "depth-form-deep"],
@@ -16581,8 +16561,8 @@
                     },
                     "fromState": "base",
                     "toState": "adverb",
-                    "removeSuffix": "ふかい",
-                    "append": "ふかく",
+                    "removeSuffix": "深い",
+                    "append": "深く",
                     "pronunciation": {
                         "removeSuffix": "ふかい",
                         "append": "ふかく"
@@ -16610,8 +16590,8 @@
                     },
                     "fromState": "base",
                     "toState": "negative",
-                    "removeSuffix": "ふかい",
-                    "append": "ふかくない",
+                    "removeSuffix": "深い",
+                    "append": "深くない",
                     "pronunciation": {
                         "removeSuffix": "ふかい",
                         "append": "ふかくない"
@@ -16639,8 +16619,8 @@
                     },
                     "fromState": "base",
                     "toState": "past",
-                    "removeSuffix": "ふかい",
-                    "append": "ふかかった",
+                    "removeSuffix": "深い",
+                    "append": "深かった",
                     "pronunciation": {
                         "removeSuffix": "ふかい",
                         "append": "ふかかった"
@@ -16662,10 +16642,10 @@
             "id": "depth-shallow-forms",
             "metadata": {
                 "labels": {
-                    "en": "あさい Forms",
-                    "de": "あさい-Formen",
-                    "id": "Bentuk あさい",
-                    "ja": "あさいの活用"
+                    "en": "浅い Forms",
+                    "de": "浅い-Formen",
+                    "id": "Bentuk 浅い",
+                    "ja": "浅いの活用"
                 }
             },
             "matchTags": ["adjective", "depth-form-shallow"],
@@ -16683,8 +16663,8 @@
                     },
                     "fromState": "base",
                     "toState": "adverb",
-                    "removeSuffix": "あさい",
-                    "append": "あさく",
+                    "removeSuffix": "浅い",
+                    "append": "浅く",
                     "pronunciation": {
                         "removeSuffix": "あさい",
                         "append": "あさく"
@@ -16712,8 +16692,8 @@
                     },
                     "fromState": "base",
                     "toState": "negative",
-                    "removeSuffix": "あさい",
-                    "append": "あさくない",
+                    "removeSuffix": "浅い",
+                    "append": "浅くない",
                     "pronunciation": {
                         "removeSuffix": "あさい",
                         "append": "あさくない"
@@ -16741,8 +16721,8 @@
                     },
                     "fromState": "base",
                     "toState": "past",
-                    "removeSuffix": "あさい",
-                    "append": "あさかった",
+                    "removeSuffix": "浅い",
+                    "append": "浅かった",
                     "pronunciation": {
                         "removeSuffix": "あさい",
                         "append": "あさかった"
@@ -16764,10 +16744,10 @@
             "id": "light-level-bright-forms",
             "metadata": {
                 "labels": {
-                    "en": "あかるい Forms",
-                    "de": "あかるい-Formen",
-                    "id": "Bentuk あかるい",
-                    "ja": "あかるいの活用"
+                    "en": "明るい Forms",
+                    "de": "明るい-Formen",
+                    "id": "Bentuk 明るい",
+                    "ja": "明るいの活用"
                 }
             },
             "matchTags": ["adjective", "light-level-form-bright"],
@@ -16785,8 +16765,8 @@
                     },
                     "fromState": "base",
                     "toState": "adverb",
-                    "removeSuffix": "あかるい",
-                    "append": "あかるく",
+                    "removeSuffix": "明るい",
+                    "append": "明るく",
                     "pronunciation": {
                         "removeSuffix": "あかるい",
                         "append": "あかるく"
@@ -16814,8 +16794,8 @@
                     },
                     "fromState": "base",
                     "toState": "negative",
-                    "removeSuffix": "あかるい",
-                    "append": "あかるくない",
+                    "removeSuffix": "明るい",
+                    "append": "明るくない",
                     "pronunciation": {
                         "removeSuffix": "あかるい",
                         "append": "あかるくない"
@@ -16843,8 +16823,8 @@
                     },
                     "fromState": "base",
                     "toState": "past",
-                    "removeSuffix": "あかるい",
-                    "append": "あかるかった",
+                    "removeSuffix": "明るい",
+                    "append": "明るかった",
                     "pronunciation": {
                         "removeSuffix": "あかるい",
                         "append": "あかるかった"
@@ -16866,10 +16846,10 @@
             "id": "light-level-dark-forms",
             "metadata": {
                 "labels": {
-                    "en": "くらい Forms",
-                    "de": "くらい-Formen",
-                    "id": "Bentuk くらい",
-                    "ja": "くらいの活用"
+                    "en": "暗い Forms",
+                    "de": "暗い-Formen",
+                    "id": "Bentuk 暗い",
+                    "ja": "暗いの活用"
                 }
             },
             "matchTags": ["adjective", "light-level-form-dark"],
@@ -16887,8 +16867,8 @@
                     },
                     "fromState": "base",
                     "toState": "adverb",
-                    "removeSuffix": "くらい",
-                    "append": "くらく",
+                    "removeSuffix": "暗い",
+                    "append": "暗く",
                     "pronunciation": {
                         "removeSuffix": "くらい",
                         "append": "くらく"
@@ -16916,8 +16896,8 @@
                     },
                     "fromState": "base",
                     "toState": "negative",
-                    "removeSuffix": "くらい",
-                    "append": "くらくない",
+                    "removeSuffix": "暗い",
+                    "append": "暗くない",
                     "pronunciation": {
                         "removeSuffix": "くらい",
                         "append": "くらくない"
@@ -16945,8 +16925,8 @@
                     },
                     "fromState": "base",
                     "toState": "past",
-                    "removeSuffix": "くらい",
-                    "append": "くらかった",
+                    "removeSuffix": "暗い",
+                    "append": "暗かった",
                     "pronunciation": {
                         "removeSuffix": "くらい",
                         "append": "くらかった"
@@ -16968,10 +16948,10 @@
             "id": "material-feel-hard-forms",
             "metadata": {
                 "labels": {
-                    "en": "かたい Forms",
-                    "de": "かたい-Formen",
-                    "id": "Bentuk かたい",
-                    "ja": "かたいの活用"
+                    "en": "硬い Forms",
+                    "de": "硬い-Formen",
+                    "id": "Bentuk 硬い",
+                    "ja": "硬いの活用"
                 }
             },
             "matchTags": ["adjective", "material-feel-form-hard"],
@@ -16989,8 +16969,8 @@
                     },
                     "fromState": "base",
                     "toState": "adverb",
-                    "removeSuffix": "かたい",
-                    "append": "かたく",
+                    "removeSuffix": "硬い",
+                    "append": "硬く",
                     "pronunciation": {
                         "removeSuffix": "かたい",
                         "append": "かたく"
@@ -17018,8 +16998,8 @@
                     },
                     "fromState": "base",
                     "toState": "negative",
-                    "removeSuffix": "かたい",
-                    "append": "かたくない",
+                    "removeSuffix": "硬い",
+                    "append": "硬くない",
                     "pronunciation": {
                         "removeSuffix": "かたい",
                         "append": "かたくない"
@@ -17047,8 +17027,8 @@
                     },
                     "fromState": "base",
                     "toState": "past",
-                    "removeSuffix": "かたい",
-                    "append": "かたかった",
+                    "removeSuffix": "硬い",
+                    "append": "硬かった",
                     "pronunciation": {
                         "removeSuffix": "かたい",
                         "append": "かたかった"
@@ -17070,10 +17050,10 @@
             "id": "material-feel-soft-forms",
             "metadata": {
                 "labels": {
-                    "en": "やわらかい Forms",
-                    "de": "やわらかい-Formen",
-                    "id": "Bentuk やわらかい",
-                    "ja": "やわらかいの活用"
+                    "en": "柔らかい Forms",
+                    "de": "柔らかい-Formen",
+                    "id": "Bentuk 柔らかい",
+                    "ja": "柔らかいの活用"
                 }
             },
             "matchTags": ["adjective", "material-feel-form-soft"],
@@ -17091,8 +17071,8 @@
                     },
                     "fromState": "base",
                     "toState": "adverb",
-                    "removeSuffix": "やわらかい",
-                    "append": "やわらかく",
+                    "removeSuffix": "柔らかい",
+                    "append": "柔らかく",
                     "pronunciation": {
                         "removeSuffix": "やわらかい",
                         "append": "やわらかく"
@@ -17120,8 +17100,8 @@
                     },
                     "fromState": "base",
                     "toState": "negative",
-                    "removeSuffix": "やわらかい",
-                    "append": "やわらかくない",
+                    "removeSuffix": "柔らかい",
+                    "append": "柔らかくない",
                     "pronunciation": {
                         "removeSuffix": "やわらかい",
                         "append": "やわらかくない"
@@ -17149,8 +17129,8 @@
                     },
                     "fromState": "base",
                     "toState": "past",
-                    "removeSuffix": "やわらかい",
-                    "append": "やわらかかった",
+                    "removeSuffix": "柔らかい",
+                    "append": "柔らかかった",
                     "pronunciation": {
                         "removeSuffix": "やわらかい",
                         "append": "やわらかかった"
@@ -17172,10 +17152,10 @@
             "id": "delivery-send-forms",
             "metadata": {
                 "labels": {
-                    "en": "おくる Forms",
-                    "de": "おくる-Formen",
-                    "id": "Bentuk おくる",
-                    "ja": "おくるの活用"
+                    "en": "送る Forms",
+                    "de": "送る-Formen",
+                    "id": "Bentuk 送る",
+                    "ja": "送るの活用"
                 }
             },
             "matchTags": ["verb", "delivery-form-send"],
@@ -17193,8 +17173,8 @@
                     },
                     "fromState": "base",
                     "toState": "polite",
-                    "removeSuffix": "おくる",
-                    "append": "おくります",
+                    "removeSuffix": "送る",
+                    "append": "送ります",
                     "pronunciation": {
                         "removeSuffix": "おくる",
                         "append": "おくります"
@@ -17222,8 +17202,8 @@
                     },
                     "fromState": "base",
                     "toState": "negative",
-                    "removeSuffix": "おくる",
-                    "append": "おくらない",
+                    "removeSuffix": "送る",
+                    "append": "送らない",
                     "pronunciation": {
                         "removeSuffix": "おくる",
                         "append": "おくらない"
@@ -17251,8 +17231,8 @@
                     },
                     "fromState": "base",
                     "toState": "past",
-                    "removeSuffix": "おくる",
-                    "append": "おくった",
+                    "removeSuffix": "送る",
+                    "append": "送った",
                     "pronunciation": {
                         "removeSuffix": "おくる",
                         "append": "おくった"
@@ -17280,8 +17260,8 @@
                     },
                     "fromState": "base",
                     "toState": "te-form",
-                    "removeSuffix": "おくる",
-                    "append": "おくって",
+                    "removeSuffix": "送る",
+                    "append": "送って",
                     "pronunciation": {
                         "removeSuffix": "おくる",
                         "append": "おくって"
@@ -17309,8 +17289,8 @@
                     },
                     "fromState": "base",
                     "toState": "polite-past",
-                    "removeSuffix": "おくる",
-                    "append": "おくりました",
+                    "removeSuffix": "送る",
+                    "append": "送りました",
                     "pronunciation": {
                         "removeSuffix": "おくる",
                         "append": "おくりました"
@@ -17338,8 +17318,8 @@
                     },
                     "fromState": "base",
                     "toState": "polite-negative",
-                    "removeSuffix": "おくる",
-                    "append": "おくりません",
+                    "removeSuffix": "送る",
+                    "append": "送りません",
                     "pronunciation": {
                         "removeSuffix": "おくる",
                         "append": "おくりません"
@@ -17367,8 +17347,8 @@
                     },
                     "fromState": "base",
                     "toState": "negative-past",
-                    "removeSuffix": "おくる",
-                    "append": "おくらなかった",
+                    "removeSuffix": "送る",
+                    "append": "送らなかった",
                     "pronunciation": {
                         "removeSuffix": "おくる",
                         "append": "おくらなかった"
@@ -17396,8 +17376,8 @@
                     },
                     "fromState": "base",
                     "toState": "potential",
-                    "removeSuffix": "おくる",
-                    "append": "おくれる",
+                    "removeSuffix": "送る",
+                    "append": "送れる",
                     "pronunciation": {
                         "removeSuffix": "おくる",
                         "append": "おくれる"
@@ -17419,10 +17399,10 @@
             "id": "delivery-carry-forms",
             "metadata": {
                 "labels": {
-                    "en": "はこぶ Forms",
-                    "de": "はこぶ-Formen",
-                    "id": "Bentuk はこぶ",
-                    "ja": "はこぶの活用"
+                    "en": "運ぶ Forms",
+                    "de": "運ぶ-Formen",
+                    "id": "Bentuk 運ぶ",
+                    "ja": "運ぶの活用"
                 }
             },
             "matchTags": ["verb", "delivery-form-carry"],
@@ -17440,8 +17420,8 @@
                     },
                     "fromState": "base",
                     "toState": "polite",
-                    "removeSuffix": "はこぶ",
-                    "append": "はこびます",
+                    "removeSuffix": "運ぶ",
+                    "append": "運びます",
                     "pronunciation": {
                         "removeSuffix": "はこぶ",
                         "append": "はこびます"
@@ -17469,8 +17449,8 @@
                     },
                     "fromState": "base",
                     "toState": "negative",
-                    "removeSuffix": "はこぶ",
-                    "append": "はこばない",
+                    "removeSuffix": "運ぶ",
+                    "append": "運ばない",
                     "pronunciation": {
                         "removeSuffix": "はこぶ",
                         "append": "はこばない"
@@ -17498,8 +17478,8 @@
                     },
                     "fromState": "base",
                     "toState": "past",
-                    "removeSuffix": "はこぶ",
-                    "append": "はこんだ",
+                    "removeSuffix": "運ぶ",
+                    "append": "運んだ",
                     "pronunciation": {
                         "removeSuffix": "はこぶ",
                         "append": "はこんだ"
@@ -17527,8 +17507,8 @@
                     },
                     "fromState": "base",
                     "toState": "te-form",
-                    "removeSuffix": "はこぶ",
-                    "append": "はこんで",
+                    "removeSuffix": "運ぶ",
+                    "append": "運んで",
                     "pronunciation": {
                         "removeSuffix": "はこぶ",
                         "append": "はこんで"
@@ -17556,8 +17536,8 @@
                     },
                     "fromState": "base",
                     "toState": "polite-past",
-                    "removeSuffix": "はこぶ",
-                    "append": "はこびました",
+                    "removeSuffix": "運ぶ",
+                    "append": "運びました",
                     "pronunciation": {
                         "removeSuffix": "はこぶ",
                         "append": "はこびました"
@@ -17585,8 +17565,8 @@
                     },
                     "fromState": "base",
                     "toState": "polite-negative",
-                    "removeSuffix": "はこぶ",
-                    "append": "はこびません",
+                    "removeSuffix": "運ぶ",
+                    "append": "運びません",
                     "pronunciation": {
                         "removeSuffix": "はこぶ",
                         "append": "はこびません"
@@ -17614,8 +17594,8 @@
                     },
                     "fromState": "base",
                     "toState": "negative-past",
-                    "removeSuffix": "はこぶ",
-                    "append": "はこばなかった",
+                    "removeSuffix": "運ぶ",
+                    "append": "運ばなかった",
                     "pronunciation": {
                         "removeSuffix": "はこぶ",
                         "append": "はこばなかった"
@@ -17643,8 +17623,8 @@
                     },
                     "fromState": "base",
                     "toState": "potential",
-                    "removeSuffix": "はこぶ",
-                    "append": "はこべる",
+                    "removeSuffix": "運ぶ",
+                    "append": "運べる",
                     "pronunciation": {
                         "removeSuffix": "はこぶ",
                         "append": "はこべる"

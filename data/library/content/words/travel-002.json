@@ -28,7 +28,13 @@
                     }
                 ]
             ]
-        }
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:word:travel-platform",
+                "relation": "definitions"
+            }
+        ]
     },
     {
         "id": "ja:word:travel-platform",
@@ -70,18 +76,17 @@
             "audio": "audio/6a8e6f254079d59a09bf0eafc23eb2c5ef7d7215b4cf35c7dcc3d3cfd735b5fa.wav"
         },
         "referenceGroups": {
-            "reading-kana": [
+            "pronunciation-readings": [
                 [
                     {
-                        "entryId": "ja:char:ku",
-                        "relation": "reading-kana",
+                        "entryId": "ja:word:kanji-reading-e7a9ba-06",
+                        "relation": "pronunciation-readings",
                         "position": 0
-                    },
-                    {
-                        "entryId": "ja:char:u",
-                        "relation": "reading-kana",
-                        "position": 1
-                    },
+                    }
+                ]
+            ],
+            "reading-kana": [
+                [
                     {
                         "entryId": "ja:char:ko",
                         "relation": "reading-kana",
@@ -94,11 +99,17 @@
                     }
                 ]
             ]
-        }
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:word:travel-airport",
+                "relation": "definitions"
+            }
+        ]
     },
     {
         "id": "ja:word:travel-airport",
-        "label": "くうこう",
+        "label": "空港",
         "class": "lexical:noun",
         "fields": {
             "pronunciation": ["くうこう"],
@@ -112,6 +123,16 @@
             {
                 "entryId": "ja:definition:word:travel-airport",
                 "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:core-e7a9ba",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:kanji:expanded-6e2f",
+                "relation": "spelling",
+                "position": 1
             }
         ],
         "referenceGroups": {

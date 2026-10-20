@@ -2,6 +2,10 @@
 
 **Cabang Fitur:** `feature-expand-themed-practice`
 
+## Memulihkan konvensi kosakata
+
+Menghapus kolom Penggunaan dan Contoh beserta paragrafnya, memulihkan tag kelas kata, dan memperbaiki 114 dari 173 kata tambahan menjadi ejaan kanji yang ditinjau sambil mempertahankan bentuk kana yang lazim. Mempertahankan kartu pelafalan yang ada dan memberikan tautan makna langsung pada kartu pelafalan baru. Kartu kanji dan bacaan pendukung memakai skema asli, pola goresan KanjiVG, serta bacaan yang tercatat dalam KANJIDIC. Semua ID kartu, berkas media, dan permintaan rekaman yang ada dipertahankan; label kalimat, ejaan infleksi, dan metadata pencarian audio diperbarui. Kartu pendukung tanpa rekaman dicatat secara eksplisit sebagai tidak tersedia. Kontrak kolom sebelum perluasan dan uji regresi negatif memeriksa kosakata, ejaan, tautan bacaan, visibilitas, serta cakupan dek.
+
 ## Berlatih dalam konteks
 
 Tambahkan empat dek awal tentang makanan dan minuman, perjalanan dan arah, penghubung gagasan, serta orang dan kesukaan. Dek ini menyediakan latihan terarah dengan 23 ungkapan yang sudah ada beserta makna, bacaan kana, dan unsur penyusunnya.

@@ -9,44 +9,44 @@ const words = await load("data/library/content/words/actions-001.json");
 const inventory = await readAudioInventory("data/audio");
 const expected = {
     jump: [
-        ["polite", "とびます", "とびます"],
-        ["negative", "とばない", "とばない"],
-        ["past", "とんだ", "とんだ"],
-        ["te-form", "とんで", "とんで"],
-        ["polite-past", "とびました", "とびました"],
-        ["polite-negative", "とびません", "とびません"],
-        ["negative-past", "とばなかった", "とばなかった"],
-        ["potential", "とべる", "とべる"],
+        ["polite", "跳びます", "とびます", "とびます"],
+        ["negative", "跳ばない", "とばない", "とばない"],
+        ["past", "跳んだ", "とんだ", "とんだ"],
+        ["te-form", "跳んで", "とんで", "とんで"],
+        ["polite-past", "跳びました", "とびました", "とびました"],
+        ["polite-negative", "跳びません", "とびません", "とびません"],
+        ["negative-past", "跳ばなかった", "とばなかった", "とばなかった"],
+        ["potential", "跳べる", "とべる", "とべる"],
     ],
     swim: [
-        ["polite", "およぎます", "およぎます"],
-        ["negative", "およがない", "およがない"],
-        ["past", "およいだ", "およいだ"],
-        ["te-form", "およいで", "およいで"],
-        ["polite-past", "およぎました", "およぎました"],
-        ["polite-negative", "およぎません", "およぎません"],
-        ["negative-past", "およがなかった", "およがなかった"],
-        ["potential", "およげる", "およげる"],
+        ["polite", "泳ぎます", "およぎます", "およぎます"],
+        ["negative", "泳がない", "およがない", "およがない"],
+        ["past", "泳いだ", "およいだ", "およいだ"],
+        ["te-form", "泳いで", "およいで", "およいで"],
+        ["polite-past", "泳ぎました", "およぎました", "およぎました"],
+        ["polite-negative", "泳ぎません", "およぎません", "およぎません"],
+        ["negative-past", "泳がなかった", "およがなかった", "およがなかった"],
+        ["potential", "泳げる", "およげる", "およげる"],
     ],
     laugh: [
-        ["polite", "わらいます", "わらいます"],
-        ["negative", "わらわない", "わらわない"],
-        ["past", "わらった", "わらった"],
-        ["te-form", "わらって", "わらって"],
-        ["polite-past", "わらいました", "わらいました"],
-        ["polite-negative", "わらいません", "わらいません"],
-        ["negative-past", "わらわなかった", "わらわなかった"],
-        ["potential", "わらえる", "わらえる"],
+        ["polite", "笑います", "わらいます", "わらいます"],
+        ["negative", "笑わない", "わらわない", "わらわない"],
+        ["past", "笑った", "わらった", "わらった"],
+        ["te-form", "笑って", "わらって", "わらって"],
+        ["polite-past", "笑いました", "わらいました", "わらいました"],
+        ["polite-negative", "笑いません", "わらいません", "わらいません"],
+        ["negative-past", "笑わなかった", "わらわなかった", "わらわなかった"],
+        ["potential", "笑える", "わらえる", "わらえる"],
     ],
     cry: [
-        ["polite", "なきます", "なきます"],
-        ["negative", "なかない", "なかない"],
-        ["past", "ないた", "ないた"],
-        ["te-form", "ないて", "ないて"],
-        ["polite-past", "なきました", "なきました"],
-        ["polite-negative", "なきません", "なきません"],
-        ["negative-past", "なかなかった", "なかなかった"],
-        ["potential", "なける", "なける"],
+        ["polite", "泣きます", "なきます", "なきます"],
+        ["negative", "泣かない", "なかない", "なかない"],
+        ["past", "泣いた", "ないた", "ないた"],
+        ["te-form", "泣いて", "ないて", "ないて"],
+        ["polite-past", "泣きました", "なきました", "なきました"],
+        ["polite-negative", "泣きません", "なきません", "なきません"],
+        ["negative-past", "泣かなかった", "なかなかった", "なかなかった"],
+        ["potential", "泣ける", "なける", "なける"],
     ],
 };
 
@@ -59,7 +59,7 @@ for (const [key, variants] of Object.entries(expected)) {
         assert.equal(word.class, "lexical:verb");
         assert.ok(transform.matchTags.every((tag) => word.tags.includes(tag)));
         assert.equal(transform.rules.length, variants.length);
-        for (const [ruleId, label, reading] of variants) {
+        for (const [ruleId, label, reading, recordedText] of variants) {
             const rule = transform.rules.find(({ id }) => id === ruleId);
             assert.equal(rule.removeSuffix, word.label);
             assert.equal(rule.append, label);
@@ -82,7 +82,7 @@ for (const [key, variants] of Object.entries(expected)) {
                 ),
             );
             assert.ok(clip, `${key}/${ruleId}`);
-            assert.equal(clip.text, label);
+            assert.equal(clip.text, recordedText);
             assert.equal(clip.voiceId, "xya0RvcJtofTcFTOdX4E");
             assert.ok(
                 clip.inputs.some(
@@ -90,7 +90,7 @@ for (const [key, variants] of Object.entries(expected)) {
                         input.label === label && input.readings[0] === reading,
                 ),
             );
-            assert.equal(clip.request.text, label);
+            assert.equal(clip.request.text, recordedText);
         }
     });
 }

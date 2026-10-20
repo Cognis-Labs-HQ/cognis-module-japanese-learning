@@ -9,24 +9,24 @@ const words = await load("data/library/content/words/delivery-001.json");
 const inventory = await readAudioInventory("data/audio");
 const expected = {
     send: [
-        ["polite", "おくります", "おくります"],
-        ["negative", "おくらない", "おくらない"],
-        ["past", "おくった", "おくった"],
-        ["te-form", "おくって", "おくって"],
-        ["polite-past", "おくりました", "おくりました"],
-        ["polite-negative", "おくりません", "おくりません"],
-        ["negative-past", "おくらなかった", "おくらなかった"],
-        ["potential", "おくれる", "おくれる"],
+        ["polite", "送ります", "おくります", "おくります"],
+        ["negative", "送らない", "おくらない", "おくらない"],
+        ["past", "送った", "おくった", "おくった"],
+        ["te-form", "送って", "おくって", "おくって"],
+        ["polite-past", "送りました", "おくりました", "おくりました"],
+        ["polite-negative", "送りません", "おくりません", "おくりません"],
+        ["negative-past", "送らなかった", "おくらなかった", "おくらなかった"],
+        ["potential", "送れる", "おくれる", "おくれる"],
     ],
     carry: [
-        ["polite", "はこびます", "はこびます"],
-        ["negative", "はこばない", "はこばない"],
-        ["past", "はこんだ", "はこんだ"],
-        ["te-form", "はこんで", "はこんで"],
-        ["polite-past", "はこびました", "はこびました"],
-        ["polite-negative", "はこびません", "はこびません"],
-        ["negative-past", "はこばなかった", "はこばなかった"],
-        ["potential", "はこべる", "はこべる"],
+        ["polite", "運びます", "はこびます", "はこびます"],
+        ["negative", "運ばない", "はこばない", "はこばない"],
+        ["past", "運んだ", "はこんだ", "はこんだ"],
+        ["te-form", "運んで", "はこんで", "はこんで"],
+        ["polite-past", "運びました", "はこびました", "はこびました"],
+        ["polite-negative", "運びません", "はこびません", "はこびません"],
+        ["negative-past", "運ばなかった", "はこばなかった", "はこばなかった"],
+        ["potential", "運べる", "はこべる", "はこべる"],
     ],
 };
 
@@ -39,7 +39,7 @@ for (const [key, variants] of Object.entries(expected)) {
         assert.equal(word.class, "lexical:verb");
         assert.ok(transform.matchTags.every((tag) => word.tags.includes(tag)));
         assert.equal(transform.rules.length, variants.length);
-        for (const [ruleId, label, reading] of variants) {
+        for (const [ruleId, label, reading, recordedText] of variants) {
             const rule = transform.rules.find(({ id }) => id === ruleId);
             assert.equal(rule.removeSuffix, word.label);
             assert.equal(rule.append, label);
@@ -62,7 +62,7 @@ for (const [key, variants] of Object.entries(expected)) {
                 ),
             );
             assert.ok(clip, `${key}/${ruleId}`);
-            assert.equal(clip.text, label);
+            assert.equal(clip.text, recordedText);
             assert.equal(clip.voiceId, "xya0RvcJtofTcFTOdX4E");
             assert.ok(
                 clip.inputs.some(
@@ -70,7 +70,7 @@ for (const [key, variants] of Object.entries(expected)) {
                         input.label === label && input.readings[0] === reading,
                 ),
             );
-            assert.equal(clip.request.text, label);
+            assert.equal(clip.request.text, recordedText);
         }
     });
 }

@@ -23,20 +23,20 @@
                     }
                 ]
             ]
-        }
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:actions-jump",
+                "relation": "definitions"
+            }
+        ]
     },
     {
         "id": "ja:word:actions-jump",
-        "label": "とぶ",
+        "label": "跳ぶ",
         "class": "lexical:verb",
         "fields": {
             "pronunciation": ["とぶ"],
-            "usage_notes": {
-                "en": "Push off the ground and become briefly airborne. Japanese 跳ぶ here means jump; とぶ can also write 飛ぶ, fly. Godan b: とんだ, とんで; potential とべる.",
-                "de": "Sich vom Boden abstoßen und kurz in der Luft sein. 跳ぶ bedeutet hier springen; とぶ kann auch 飛ぶ, fliegen, schreiben. Godan auf b: とんだ, とんで; Potential とべる.",
-                "id": "Menolak dari tanah dan sesaat berada di udara. 跳ぶ berarti melompat; とぶ juga dapat ditulis 飛ぶ, terbang. Godan b: とんだ, とんで; potensial とべる.",
-                "ja": "地面を蹴って一時的に宙に浮く動作。ここでは跳ぶで、同じ読みの飛ぶとは区別する。バ行五段で、とんだ・とんで、可能形はとべる。"
-            },
             "reference_images": [
                 "images/8a80f5b4291b9183743910b2737d3068d14f481d07377a63d7b0b114a29a2f7e.jpg"
             ],
@@ -47,6 +47,11 @@
             {
                 "entryId": "ja:definition:actions-jump",
                 "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-8df3",
+                "relation": "spelling",
+                "position": 0
             }
         ],
         "referenceGroups": {
@@ -90,20 +95,20 @@
                     }
                 ]
             ]
-        }
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:actions-swim",
+                "relation": "definitions"
+            }
+        ]
     },
     {
         "id": "ja:word:actions-swim",
-        "label": "およぐ",
+        "label": "泳ぐ",
         "class": "lexical:verb",
         "fields": {
             "pronunciation": ["およぐ"],
-            "usage_notes": {
-                "en": "Move through water using the body. English swim–swam–swum; swimming doubles m. Japanese およぐ becomes およいだ and およいで; potential およげる.",
-                "de": "Sich mit dem Körper durch Wasser bewegen. Englisch swim–swam–swum; swimming verdoppelt m. およぐ wird zu およいだ und およいで; Potential およげる.",
-                "id": "Bergerak di air dengan tubuh. Inggris swim–swam–swum; swimming memakai m ganda. およぐ menjadi およいだ dan およいで; potensial およげる.",
-                "ja": "体を使って水中を進む。英語は swim–swam–swum、swimming は m を重ねる。およぐの過去形はおよいだ、て形はおよいで、可能形はおよげる。"
-            },
             "reference_images": [
                 "images/31ff5cfe9eed76b4ae24139b353bb7679e9f40505535a0a886ae1a4098e8677f.jpg"
             ],
@@ -114,6 +119,11 @@
             {
                 "entryId": "ja:definition:actions-swim",
                 "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-6cf3",
+                "relation": "spelling",
+                "position": 0
             }
         ],
         "referenceGroups": {
@@ -157,20 +167,20 @@
                     }
                 ]
             ]
-        }
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:actions-laugh",
+                "relation": "definitions"
+            }
+        ]
     },
     {
         "id": "ja:word:actions-laugh",
-        "label": "わらう",
+        "label": "笑う",
         "class": "lexical:verb",
         "fields": {
             "pronunciation": ["わらう"],
-            "usage_notes": {
-                "en": "Make the sound and facial expression of amusement; not merely smile. Laughs and laughed end in /fs/ and /ft/. わらう becomes わらった, わらって; negative わらわない.",
-                "de": "Vor Vergnügen hörbar lachen, nicht nur lächeln. Laughs und laughed enden auf /fs/ und /ft/. わらう wird zu わらった und わらって; Verneinung わらわない.",
-                "id": "Tertawa bersuara karena gembira, bukan sekadar tersenyum. Laughs dan laughed berakhir /fs/ dan /ft/. わらう menjadi わらった, わらって; negatif わらわない.",
-                "ja": "ここでは声を出して笑う動作で、単にほほえむことではない。Laughs と laughed は /fs/・/ft/ で終わる。わらうはわらった・わらって、否定形はわらわない。"
-            },
             "reference_images": [
                 "images/bf870436dbeb80c93f3da5ad36ad2979837baba89fdadfdeb3f26c4b1d1997d4.jpg"
             ],
@@ -181,6 +191,11 @@
             {
                 "entryId": "ja:definition:actions-laugh",
                 "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-7b11",
+                "relation": "spelling",
+                "position": 0
             }
         ],
         "referenceGroups": {
@@ -219,20 +234,20 @@
                     }
                 ]
             ]
-        }
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:actions-cry",
+                "relation": "definitions"
+            }
+        ]
     },
     {
         "id": "ja:word:actions-cry",
-        "label": "なく",
+        "label": "泣く",
         "class": "lexical:verb",
         "fields": {
             "pronunciation": ["なく"],
-            "usage_notes": {
-                "en": "Shed tears; not call or shout in this lesson. Cries and cried change y to i; crying keeps y. 泣く is なく, distinct from animal 鳴く; ないた, ないて.",
-                "de": "Tränen vergießen, hier nicht rufen oder schreien. Cries und cried ändern y zu i; crying behält y. 泣く ist なく, anders als tierisches 鳴く; ないた, ないて.",
-                "id": "Mengeluarkan air mata, bukan berteriak dalam pelajaran ini. Cries dan cried mengubah y ke i; crying mempertahankan y. 泣く dibaca なく, berbeda dari suara hewan 鳴く; ないた, ないて.",
-                "ja": "涙を流す意味で、英語の呼び叫ぶという意味ではない。Cries・cried は y を i に変え、crying は y を保つ。泣くはなくで、動物の鳴くと区別。ないた・ないて。"
-            },
             "reference_images": [
                 "images/1e9f07cc36cea258fb8995921006c4403315be8b28d8094ce4ad68b01396c389.jpg"
             ],
@@ -243,6 +258,11 @@
             {
                 "entryId": "ja:definition:actions-cry",
                 "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-6ce3",
+                "relation": "spelling",
+                "position": 0
             }
         ],
         "referenceGroups": {

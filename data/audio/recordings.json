@@ -19,41 +19,37 @@
         "clipPaddingMs": 20
     },
     "inventoryVersion": 2,
-    "counts": {
-        "recordings": 935,
-        "compositions": 297,
-        "sentences": 38
-    },
+    "counts": { "recordings": 935, "compositions": 297, "sentences": 38 },
     "inventoryIndexes": [
-        {
-            "path": "indexes/characters-001.json",
-            "count": 7,
-            "sha256": "b4dbe3b3dce3a51353a8ed51576230d7e1fb291d9a9f66b75d9b8053116fe140"
-        },
-        {
-            "path": "indexes/vocabulary-001.json",
-            "count": 45,
-            "sha256": "e6c689ad512115d7e711edacdd1c813caa03c0b8e20c49f38648acbec67da6f0"
-        },
-        {
-            "path": "indexes/vocabulary-002.json",
-            "count": 2,
-            "sha256": "e658715a5a532dcbdbe1d36345a62cd50d21e3e0fea7536d3e33247baf714cce"
-        },
-        {
-            "path": "indexes/transformations-001.json",
-            "count": 11,
-            "sha256": "9d5001863c2a5f60ea2c803a678e430f3c00e79c58db509880a8d1e2ddcb24de"
-        },
         {
             "path": "indexes/sentences-001.json",
             "count": 2,
             "sha256": "5e6c2eaa89474baaac31b892c93f33652e2c8828a4fc4d6f46844eb446239fea"
         },
         {
+            "path": "indexes/characters-001.json",
+            "count": 7,
+            "sha256": "2be81f934778c75e6139bf1934f924091ad2eaa9664e59847139c0c5389f0382"
+        },
+        {
             "path": "indexes/sentence-compositions-001.json",
             "count": 39,
-            "sha256": "285eb56b7446ceb02d1b3ffd9a25771f9f5b173504c2853191c689d461e128ae"
+            "sha256": "9f1201a89c8699d873aedc4e355c4693965c5a360b5cc4d856da5d03273678aa"
+        },
+        {
+            "path": "indexes/vocabulary-001.json",
+            "count": 40,
+            "sha256": "67c356e90cb169c0537906232dff9a150a746c2cffbfec4181fe55952f4733e8"
+        },
+        {
+            "path": "indexes/vocabulary-002.json",
+            "count": 24,
+            "sha256": "6b29b7eb8b3d1ce0397285fcc759381fa0c158e8de3a56b6eaf73ad547b41fea"
+        },
+        {
+            "path": "indexes/transformations-001.json",
+            "count": 11,
+            "sha256": "88259ecc889c0d78d5590f14d22ab4388c34c9cfc04441132915238b04bd1543"
         }
     ]
 }

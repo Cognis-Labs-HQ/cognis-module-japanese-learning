@@ -1,0 +1,115 @@
+[
+    {
+        "path": "audio/f6091b94b423458a5fafe7ac9dcfd73266512a1eee0b697cc8c70f93f4a33d82.wav",
+        "text": "オーブン",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "オーブン",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "オーブン",
+                "semanticRole": "lexicalUnit",
+                "readings": ["オーブン"]
+            }
+        ],
+        "entries": [
+            "ja:word:fixtures-oven",
+            "ja:word:complete-pronunciation-fixtures-oven"
+        ],
+        "variants": [],
+        "sha256": "f6091b94b423458a5fafe7ac9dcfd73266512a1eee0b697cc8c70f93f4a33d82",
+        "frames": 15449,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "20158fdb112c112566d9ef55984bcc327a1c5e4098b6a3017e424f4e1b6d9e9f"
+        }
+    },
+    {
+        "path": "audio/3281c01826dac50b0d9e916ae37ce16ce69bca5b63f468e18a6cfccb0d918dcd.wav",
+        "text": "もり",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "森",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "もり",
+                "semanticRole": "lexicalUnit",
+                "readings": ["もり"]
+            },
+            {
+                "language": "ja",
+                "label": "森",
+                "semanticRole": "lexicalUnit",
+                "readings": ["もり"]
+            }
+        ],
+        "entries": [
+            "ja:word:nature-forest",
+            "ja:word:complete-pronunciation-nature-forest"
+        ],
+        "variants": [],
+        "sha256": "3281c01826dac50b0d9e916ae37ce16ce69bca5b63f468e18a6cfccb0d918dcd",
+        "frames": 12106,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "60e3dbed4ddbcedca8f463b871f4660f3861e79cc7f1d0d22d15277d4141244b"
+        }
+    },
+    {
+        "path": "audio/596cd963ccb789a977c151653b8564b595a847ee98c75f2787b26490a3551bc8.wav",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "text": "ちゃく。",
+        "request": {
+            "text": "ちゃく。",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "ちゃく",
+                "semanticRole": "lexicalUnit",
+                "readings": ["ちゃく"]
+            }
+        ],
+        "entries": ["ja:word:kanji-reading-e7aeb8-03"],
+        "variants": [],
+        "sha256": "8152ab4d6c38a6c7c9b10b7224c0901637d8167bb1415b6a36fc5447d09bed1c",
+        "frames": 18793
+    }
+]

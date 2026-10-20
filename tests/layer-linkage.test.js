@@ -274,7 +274,15 @@ test("only multi-reading Kanji use intermediate pronunciation Vocabulary", () =>
             contentClass === "reading:kanji",
     );
 
-    assert.equal(readings.length, 139);
+    assert.equal(
+        readings.length,
+        kanji
+            .filter((record) => record.fields.pronunciation.length > 1)
+            .reduce(
+                (count, record) => count + record.fields.pronunciation.length,
+                0,
+            ),
+    );
     for (const record of kanji) {
         const relationship =
             record.fields.pronunciation.length > 1

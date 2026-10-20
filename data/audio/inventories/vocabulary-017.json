@@ -23,6 +23,12 @@
                 "label": "はこ",
                 "semanticRole": "lexicalUnit",
                 "readings": ["はこ"]
+            },
+            {
+                "language": "ja",
+                "label": "箱",
+                "semanticRole": "lexicalUnit",
+                "readings": ["はこ"]
             }
         ],
         "entries": [
@@ -97,6 +103,12 @@
             {
                 "language": "ja",
                 "label": "ふうとう",
+                "semanticRole": "lexicalUnit",
+                "readings": ["ふうとう"]
+            },
+            {
+                "language": "ja",
+                "label": "封筒",
                 "semanticRole": "lexicalUnit",
                 "readings": ["ふうとう"]
             }
@@ -654,6 +666,12 @@
                 "label": "くうこう",
                 "semanticRole": "lexicalUnit",
                 "readings": ["くうこう"]
+            },
+            {
+                "language": "ja",
+                "label": "空港",
+                "semanticRole": "lexicalUnit",
+                "readings": ["くうこう"]
             }
         ],
         "entries": [
@@ -689,6 +707,12 @@
             {
                 "language": "ja",
                 "label": "つく",
+                "semanticRole": "lexicalUnit",
+                "readings": ["つく"]
+            },
+            {
+                "language": "ja",
+                "label": "着く",
                 "semanticRole": "lexicalUnit",
                 "readings": ["つく"]
             }
@@ -728,6 +752,12 @@
                 "label": "しゅっぱつする",
                 "semanticRole": "lexicalUnit",
                 "readings": ["しゅっぱつする"]
+            },
+            {
+                "language": "ja",
+                "label": "出発する",
+                "semanticRole": "lexicalUnit",
+                "readings": ["しゅっぱつする"]
             }
         ],
         "entries": [
@@ -741,43 +771,6 @@
             "listening": "unverified-not-performed",
             "languageSelection": "native-input-autodetection",
             "sourcePcmSha256": "3660b2e4d7167e65dc91eaf712768bfad65d16cb8553754504acc1ce9d15c03b"
-        }
-    },
-    {
-        "path": "audio/af1c56cbbbeb599be025f0ac30f5130150de8c9d1c6f88f07261755d93a7a323.wav",
-        "text": "じてんしゃ",
-        "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "request": {
-            "text": "じてんしゃ",
-            "model_id": "eleven_flash_v2_5",
-            "seed": 42,
-            "voice_settings": {
-                "stability": 0.9,
-                "similarity_boost": 0.85,
-                "style": 0,
-                "use_speaker_boost": true,
-                "speed": 0.9
-            }
-        },
-        "inputs": [
-            {
-                "language": "ja",
-                "label": "じてんしゃ",
-                "semanticRole": "lexicalUnit",
-                "readings": ["じてんしゃ"]
-            }
-        ],
-        "entries": [
-            "ja:word:travel-bicycle",
-            "ja:word:complete-pronunciation-travel-bicycle"
-        ],
-        "variants": [],
-        "sha256": "af1c56cbbbeb599be025f0ac30f5130150de8c9d1c6f88f07261755d93a7a323",
-        "frames": 19907,
-        "metadata": {
-            "listening": "unverified-not-performed",
-            "languageSelection": "native-input-autodetection",
-            "sourcePcmSha256": "96dfe21480428643ed6ac36309bbd1782ce08b15afdbe0dbb739ba8483b43936"
         }
     }
 ]

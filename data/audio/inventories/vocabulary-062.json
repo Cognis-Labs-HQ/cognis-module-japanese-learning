@@ -1,0 +1,77 @@
+[
+    {
+        "path": "audio/ca91e5cb3babc3ccb956b721eb08333acef51ee78d678abb3ecd1ea6d17a776b.wav",
+        "text": "びん",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "瓶",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "びん",
+                "semanticRole": "lexicalUnit",
+                "readings": ["びん"]
+            },
+            {
+                "language": "ja",
+                "label": "瓶",
+                "semanticRole": "lexicalUnit",
+                "readings": ["びん"]
+            }
+        ],
+        "entries": [
+            "ja:word:containers-bottle",
+            "ja:word:complete-pronunciation-containers-bottle"
+        ],
+        "variants": [],
+        "sha256": "ca91e5cb3babc3ccb956b721eb08333acef51ee78d678abb3ecd1ea6d17a776b",
+        "frames": 13220,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "5329a397be71db4522ff6eb36f69807283f3c41825e55b22eb5cac2a97dc191a"
+        }
+    },
+    {
+        "path": "audio/d201a18818192877404cda22087618df3f1e2fce207e201b41aaff2be77eed64.wav",
+        "text": "ぼうし",
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "ぼうし",
+                "semanticRole": "lexicalUnit",
+                "readings": ["ぼうし"]
+            }
+        ],
+        "entries": ["ja:word:hat", "ja:word:complete-pronunciation-hat"],
+        "variants": [],
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "ぼうし",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "sha256": "bae9da183c87703eee786d80dc09daa786c496ebf4b6da3cfd993034972ccb98",
+        "frames": 18793
+    }
+]

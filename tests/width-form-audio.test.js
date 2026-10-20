@@ -9,14 +9,14 @@ const words = await load("data/library/content/words/width-001.json");
 const inventory = await readAudioInventory("data/audio");
 const expected = {
     wide: [
-        ["adverb", "ひろく", "ひろく"],
-        ["negative", "ひろくない", "ひろくない"],
-        ["past", "ひろかった", "ひろかった"],
+        ["adverb", "広く", "ひろく", "ひろく"],
+        ["negative", "広くない", "ひろくない", "ひろくない"],
+        ["past", "広かった", "ひろかった", "ひろかった"],
     ],
     narrow: [
-        ["adverb", "せまく", "せまく"],
-        ["negative", "せまくない", "せまくない"],
-        ["past", "せまかった", "せまかった"],
+        ["adverb", "狭く", "せまく", "せまく"],
+        ["negative", "狭くない", "せまくない", "せまくない"],
+        ["past", "狭かった", "せまかった", "せまかった"],
     ],
 };
 
@@ -29,7 +29,7 @@ for (const [key, variants] of Object.entries(expected)) {
         assert.equal(word.class, "lexical:adjective");
         assert.ok(transform.matchTags.every((tag) => word.tags.includes(tag)));
         assert.equal(transform.rules.length, variants.length);
-        for (const [ruleId, label, reading] of variants) {
+        for (const [ruleId, label, reading, recordedText] of variants) {
             const rule = transform.rules.find(({ id }) => id === ruleId);
             assert.equal(rule.removeSuffix, word.label);
             assert.equal(rule.append, label);
@@ -52,7 +52,7 @@ for (const [key, variants] of Object.entries(expected)) {
                 ),
             );
             assert.ok(clip, `${key}/${ruleId}`);
-            assert.equal(clip.text, label);
+            assert.equal(clip.text, recordedText);
             assert.equal(clip.voiceId, "xya0RvcJtofTcFTOdX4E");
             assert.ok(
                 clip.inputs.some(
@@ -60,7 +60,7 @@ for (const [key, variants] of Object.entries(expected)) {
                         input.label === label && input.readings[0] === reading,
                 ),
             );
-            assert.equal(clip.request.text, label);
+            assert.equal(clip.request.text, recordedText);
         }
     });
 }

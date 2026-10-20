@@ -9,44 +9,64 @@ const words = await load("data/library/content/words/household-001.json");
 const inventory = await readAudioInventory("data/audio");
 const expected = {
     wash: [
-        ["polite", "あらいます", "あらいます"],
-        ["negative", "あらわない", "あらわない"],
-        ["past", "あらった", "あらった"],
-        ["te-form", "あらって", "あらって"],
-        ["polite-past", "あらいました", "あらいました"],
-        ["polite-negative", "あらいません", "あらいません"],
-        ["negative-past", "あらわなかった", "あらわなかった"],
-        ["potential", "あらえる", "あらえる"],
+        ["polite", "洗います", "あらいます", "あらいます"],
+        ["negative", "洗わない", "あらわない", "あらわない"],
+        ["past", "洗った", "あらった", "あらった"],
+        ["te-form", "洗って", "あらって", "あらって"],
+        ["polite-past", "洗いました", "あらいました", "あらいました"],
+        ["polite-negative", "洗いません", "あらいません", "あらいません"],
+        ["negative-past", "洗わなかった", "あらわなかった", "あらわなかった"],
+        ["potential", "洗える", "あらえる", "あらえる"],
     ],
     cook: [
-        ["polite", "りょうりします", "りょうりします"],
-        ["negative", "りょうりしない", "りょうりしない"],
-        ["past", "りょうりした", "りょうりした"],
-        ["te-form", "りょうりして", "りょうりして"],
-        ["polite-past", "りょうりしました", "りょうりしました"],
-        ["polite-negative", "りょうりしません", "りょうりしません"],
-        ["negative-past", "りょうりしなかった", "りょうりしなかった"],
-        ["potential", "りょうりできる", "りょうりできる"],
+        ["polite", "料理します", "りょうりします", "りょうりします"],
+        ["negative", "料理しない", "りょうりしない", "りょうりしない"],
+        ["past", "料理した", "りょうりした", "りょうりした"],
+        ["te-form", "料理して", "りょうりして", "りょうりして"],
+        ["polite-past", "料理しました", "りょうりしました", "りょうりしました"],
+        [
+            "polite-negative",
+            "料理しません",
+            "りょうりしません",
+            "りょうりしません",
+        ],
+        [
+            "negative-past",
+            "料理しなかった",
+            "りょうりしなかった",
+            "りょうりしなかった",
+        ],
+        ["potential", "料理できる", "りょうりできる", "りょうりできる"],
     ],
     clean: [
-        ["polite", "そうじします", "そうじします"],
-        ["negative", "そうじしない", "そうじしない"],
-        ["past", "そうじした", "そうじした"],
-        ["te-form", "そうじして", "そうじして"],
-        ["polite-past", "そうじしました", "そうじしました"],
-        ["polite-negative", "そうじしません", "そうじしません"],
-        ["negative-past", "そうじしなかった", "そうじしなかった"],
-        ["potential", "そうじできる", "そうじできる"],
+        ["polite", "掃除します", "そうじします", "そうじします"],
+        ["negative", "掃除しない", "そうじしない", "そうじしない"],
+        ["past", "掃除した", "そうじした", "そうじした"],
+        ["te-form", "掃除して", "そうじして", "そうじして"],
+        ["polite-past", "掃除しました", "そうじしました", "そうじしました"],
+        ["polite-negative", "掃除しません", "そうじしません", "そうじしません"],
+        [
+            "negative-past",
+            "掃除しなかった",
+            "そうじしなかった",
+            "そうじしなかった",
+        ],
+        ["potential", "掃除できる", "そうじできる", "そうじできる"],
     ],
     dry: [
-        ["polite", "かわかします", "かわかします"],
-        ["negative", "かわかさない", "かわかさない"],
-        ["past", "かわかした", "かわかした"],
-        ["te-form", "かわかして", "かわかして"],
-        ["polite-past", "かわかしました", "かわかしました"],
-        ["polite-negative", "かわかしません", "かわかしません"],
-        ["negative-past", "かわかさなかった", "かわかさなかった"],
-        ["potential", "かわかせる", "かわかせる"],
+        ["polite", "乾かします", "かわかします", "かわかします"],
+        ["negative", "乾かさない", "かわかさない", "かわかさない"],
+        ["past", "乾かした", "かわかした", "かわかした"],
+        ["te-form", "乾かして", "かわかして", "かわかして"],
+        ["polite-past", "乾かしました", "かわかしました", "かわかしました"],
+        ["polite-negative", "乾かしません", "かわかしません", "かわかしません"],
+        [
+            "negative-past",
+            "乾かさなかった",
+            "かわかさなかった",
+            "かわかさなかった",
+        ],
+        ["potential", "乾かせる", "かわかせる", "かわかせる"],
     ],
 };
 
@@ -59,7 +79,7 @@ for (const [key, variants] of Object.entries(expected)) {
         assert.equal(word.class, "lexical:verb");
         assert.ok(transform.matchTags.every((tag) => word.tags.includes(tag)));
         assert.equal(transform.rules.length, variants.length);
-        for (const [ruleId, label, reading] of variants) {
+        for (const [ruleId, label, reading, recordedText] of variants) {
             const rule = transform.rules.find(({ id }) => id === ruleId);
             assert.equal(rule.removeSuffix, word.label);
             assert.equal(rule.append, label);
@@ -82,7 +102,7 @@ for (const [key, variants] of Object.entries(expected)) {
                 ),
             );
             assert.ok(clip, `${key}/${ruleId}`);
-            assert.equal(clip.text, label);
+            assert.equal(clip.text, recordedText);
             assert.equal(clip.voiceId, "xya0RvcJtofTcFTOdX4E");
             assert.ok(
                 clip.inputs.some(
@@ -90,7 +110,7 @@ for (const [key, variants] of Object.entries(expected)) {
                         input.label === label && input.readings[0] === reading,
                 ),
             );
-            assert.equal(clip.request.text, label);
+            assert.equal(clip.request.text, recordedText);
         }
     });
 }

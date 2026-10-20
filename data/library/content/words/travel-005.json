@@ -23,11 +23,17 @@
                     }
                 ]
             ]
-        }
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:word:travel-arrive",
+                "relation": "definitions"
+            }
+        ]
     },
     {
         "id": "ja:word:travel-arrive",
-        "label": "つく",
+        "label": "着く",
         "class": "lexical:verb",
         "fields": {
             "pronunciation": ["つく"],
@@ -41,6 +47,11 @@
             {
                 "entryId": "ja:definition:word:travel-arrive",
                 "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-7740",
+                "relation": "spelling",
+                "position": 0
             }
         ],
         "referenceGroups": {
@@ -104,11 +115,17 @@
                     }
                 ]
             ]
-        }
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:word:travel-depart",
+                "relation": "definitions"
+            }
+        ]
     },
     {
         "id": "ja:word:travel-depart",
-        "label": "しゅっぱつする",
+        "label": "出発する",
         "class": "lexical:verb",
         "fields": {
             "pronunciation": ["しゅっぱつする"],
@@ -122,6 +139,16 @@
             {
                 "entryId": "ja:definition:word:travel-depart",
                 "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-51fa",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:kanji:expanded-767a",
+                "relation": "spelling",
+                "position": 1
             }
         ],
         "referenceGroups": {

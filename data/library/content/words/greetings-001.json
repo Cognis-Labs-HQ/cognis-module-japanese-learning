@@ -58,7 +58,13 @@
                     }
                 ]
             ]
-        }
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:greetings-morning",
+                "relation": "definitions"
+            }
+        ]
     },
     {
         "id": "ja:word:greetings-morning",
@@ -66,18 +72,12 @@
         "class": "lexical:interjection",
         "fields": {
             "pronunciation": ["おはようございます"],
-            "usage_notes": {
-                "en": "Morning greeting. Japanese おはようございます is polite; おはよう is the shorter casual form. Example: Good morning! / おはようございます。 The sunrise scene suggests a common setting, not a mandatory gesture.",
-                "de": "Morgengruß. おはようございます ist höflich, おはよう die kürzere vertraute Form. Beispiel: Guten Morgen! Die Szene bei Sonnenaufgang zeigt einen typischen Kontext, keine vorgeschriebene Geste.",
-                "id": "Salam pagi. おはようございます bersifat sopan; おはよう adalah bentuk singkat yang akrab. Contoh: Selamat pagi! Adegan matahari terbit menunjukkan konteks, bukan gestur wajib.",
-                "ja": "朝の挨拶。おはようございますは丁寧で、おはようは親しい相手への短い形。例：おはようございます。朝日の場面は一般的な文脈で、決まったしぐさを示すものではありません。"
-            },
             "reference_images": [
                 "images/9dfc9104de018411203a88d74eb899db5aa36900dd42342be7c8b13b892ad411.jpg"
             ],
             "audio": "audio/234149ca007ad52eec06256706a0155f4d127ce5674d41243bfb104d83f1a20e.wav"
         },
-        "tags": ["greetings"],
+        "tags": ["interjection", "greetings"],
         "references": [
             {
                 "entryId": "ja:definition:greetings-morning",
@@ -135,7 +135,13 @@
                     }
                 ]
             ]
-        }
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:greetings-evening",
+                "relation": "definitions"
+            }
+        ]
     },
     {
         "id": "ja:word:greetings-evening",
@@ -143,18 +149,12 @@
         "class": "lexical:interjection",
         "fields": {
             "pronunciation": ["こんばんわ"],
-            "usage_notes": {
-                "en": "Greeting when meeting in the evening, not a bedtime farewell. Japanese writes the final syllable は but pronounces it wa. Example: Good evening! / こんばんは。",
-                "de": "Gruß beim Treffen am Abend, kein Abschiedsgruß vor dem Schlafengehen. Japanisch schreibt am Ende は, spricht aber wa. Beispiel: Guten Abend!",
-                "id": "Salam saat bertemu pada malam hari, bukan ucapan sebelum tidur. Suku kata akhir Jepang ditulis は tetapi dibaca wa. Contoh: Selamat malam!",
-                "ja": "夕方以降に会ったときの挨拶で、就寝前の別れの言葉ではありません。末尾は「は」と書き「わ」と発音します。例：こんばんは。"
-            },
             "reference_images": [
                 "images/e5a6b46cabe1fa0dfd83d92c2102021cbb73cb1022537c52b277bba2cb17ceab.jpg"
             ],
             "audio": "audio/16ec181206336122e284a1860ddafef3ca02b2c1ee67edd8a44bd2c4e04bc9ac.wav"
         },
-        "tags": ["greetings"],
+        "tags": ["interjection", "greetings"],
         "references": [
             {
                 "entryId": "ja:definition:greetings-evening",
@@ -222,7 +222,13 @@
                     }
                 ]
             ]
-        }
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:greetings-night",
+                "relation": "definitions"
+            }
+        ]
     },
     {
         "id": "ja:word:greetings-night",
@@ -230,18 +236,12 @@
         "class": "lexical:interjection",
         "fields": {
             "pronunciation": ["おやすみなさい"],
-            "usage_notes": {
-                "en": "Farewell before sleep or at the end of an evening, not an arrival greeting. Japanese おやすみなさい is a conventional bedtime expression; おやすみ is more casual. Example: Good night!",
-                "de": "Abschied vor dem Schlafen oder am Ende eines Abends, kein Begrüßungsgruß. おやすみなさい ist eine übliche Formel vor dem Schlafengehen; おやすみ ist vertrauter. Beispiel: Gute Nacht!",
-                "id": "Ucapan berpisah sebelum tidur atau pada akhir malam, bukan salam saat datang. おやすみなさい lazim diucapkan sebelum tidur; おやすみ lebih akrab. Contoh: Selamat tidur!",
-                "ja": "就寝前や夜の別れに使い、出会いの挨拶にはしません。おやすみなさいは就寝時の定型表現で、おやすみはより親しい形。例：おやすみなさい。"
-            },
             "reference_images": [
                 "images/44291e908ea60ca01d57dcf615c8c60f6affac0a66c9f561b8b46f87bb9a8425.jpg"
             ],
             "audio": "audio/719918ef467cece94c40fbd08eaf7995088fd0d578397b256262bf960a4c1c24.wav"
         },
-        "tags": ["greetings"],
+        "tags": ["interjection", "greetings"],
         "references": [
             {
                 "entryId": "ja:definition:greetings-night",
@@ -289,7 +289,13 @@
                     }
                 ]
             ]
-        }
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:greetings-later",
+                "relation": "definitions"
+            }
+        ]
     },
     {
         "id": "ja:word:greetings-later",
@@ -297,18 +303,12 @@
         "class": "lexical:interjection",
         "fields": {
             "pronunciation": ["またね"],
-            "usage_notes": {
-                "en": "Casual parting phrase for friends or familiar peers. Japanese またね is not a general formal farewell to a customer or superior. Example: See you tomorrow! / またね。 An exact next meeting need not be arranged.",
-                "de": "Vertrauter Abschiedsgruß unter Freunden oder Bekannten. またね ist kein allgemeiner förmlicher Abschied gegenüber Kunden oder Vorgesetzten. Beispiel: Bis morgen! Ein nächstes Treffen muss noch nicht vereinbart sein.",
-                "id": "Ucapan berpisah akrab untuk teman. またね bukan salam perpisahan formal umum kepada pelanggan atau atasan. Contoh: Sampai jumpa besok! Pertemuan berikutnya tidak harus sudah dijadwalkan.",
-                "ja": "友人など親しい相手との別れの挨拶。客や上司への一般的な改まった挨拶ではありません。例：またね。次の約束が決まっていなくても使えます。"
-            },
             "reference_images": [
                 "images/525b749cf6d2d6f43893459a93f08ad25f80e07b676bdc56390a38734da3cdf9.jpg"
             ],
             "audio": "audio/85ca161c5ed20309878186daa5df7a18f6dd6961c9134da1e0be0d635c03da17.wav"
         },
-        "tags": ["greetings"],
+        "tags": ["interjection", "greetings"],
         "references": [
             {
                 "entryId": "ja:definition:greetings-later",

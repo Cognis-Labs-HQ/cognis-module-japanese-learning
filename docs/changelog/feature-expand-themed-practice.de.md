@@ -2,6 +2,10 @@
 
 **Feature-Zweig:** `feature-expand-themed-practice`
 
+## Wortschatzkonventionen wiederherstellen
+
+Das hinzugefügte Feld Verwendung und Beispiele samt Absätzen entfernen, Wortart-Tags wiederherstellen und 114 der 173 neuen Wörter auf geprüfte Kanji-Schreibweisen umstellen; übliche Kana-Schreibweisen bleiben erhalten. Bestehende Aussprachekarten beibehalten und neuen Aussprachekarten direkte Bedeutungsverknüpfungen geben. Ergänzende Kanji- und Lesungskarten verwenden das ursprüngliche Schema, KanjiVG-Strichmuster und belegte KANJIDIC-Lesungen. Alle bestehenden Karten-IDs, Mediendateien und Aufnahmeanfragen bleiben unverändert; Beispieltitel, Flexionsschreibweisen und Audio-Suchdaten werden angepasst. Ergänzende Karten ohne Aufnahme sind ausdrücklich als nicht verfügbar aufgeführt. Strenge ursprüngliche Feldverträge und negative Regressionstests prüfen Wortschatz, Schreibweise, Lesungslinks, Sichtbarkeit und Stapelzuordnung.
+
 ## Im Zusammenhang üben
 
 Vier Startstapel zu Essen und Trinken, Reisen und Richtungen, verbindenden Ausdrücken sowie Menschen und Vorlieben ergänzen das Angebot. Sie ermöglichen gezieltes Üben mit 23 vorhandenen Ausdrücken und ihren verknüpften Bedeutungen, Kana-Lesungen und Bestandteilen.

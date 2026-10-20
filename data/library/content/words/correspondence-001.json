@@ -28,20 +28,20 @@
                     }
                 ]
             ]
-        }
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:correspondence-letter",
+                "relation": "definitions"
+            }
+        ]
     },
     {
         "id": "ja:word:correspondence-letter",
-        "label": "てがみ",
+        "label": "手紙",
         "class": "lexical:noun",
         "fields": {
             "pronunciation": ["てがみ"],
-            "usage_notes": {
-                "en": "A written message to another person, not a letter of the alphabet. The picture shows the message sheet beside its envelope. Plural letters ends in /z/.",
-                "de": "Eine schriftliche Nachricht an eine andere Person, kein Buchstabe. Das Bild zeigt das beschriebene Blatt neben dem Umschlag. Letters endet mit /z/.",
-                "id": "Pesan tertulis kepada orang lain, bukan huruf alfabet. Gambar menunjukkan lembar pesan di samping amplopnya. Letters berakhir dengan /z/.",
-                "ja": "人に宛てた文章です。英語letterの文字という意味は扱いません。画像は封筒の横に置かれた便箋です。複数形lettersは/z/で終わります。"
-            },
             "reference_images": [
                 "images/1917233135f528b1d6108461b079c247e504822ba4a6b9ee21d86a42dbb71418.jpg"
             ],
@@ -52,6 +52,16 @@
             {
                 "entryId": "ja:definition:correspondence-letter",
                 "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-624b",
+                "relation": "spelling",
+                "position": 0
+            },
+            {
+                "entryId": "ja:kanji:core-e7b499",
+                "relation": "spelling",
+                "position": 1
             }
         ],
         "referenceGroups": {
@@ -95,7 +105,13 @@
                     }
                 ]
             ]
-        }
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:correspondence-postcard",
+                "relation": "definitions"
+            }
+        ]
     },
     {
         "id": "ja:word:correspondence-postcard",
@@ -103,12 +119,6 @@
         "class": "lexical:noun",
         "fields": {
             "pronunciation": ["はがき"],
-            "usage_notes": {
-                "en": "A card sent by post without an envelope. The picture shows its reverse, with separate message and address areas and a stamp. Preserve voiced が in はがき. Plural postcards ends in /dz/.",
-                "de": "Eine Karte, die ohne Umschlag verschickt wird. Das Bild zeigt die Rückseite mit getrennten Bereichen für Nachricht und Anschrift sowie einer Briefmarke. はがき enthält das stimmhafte が. Postcards endet mit /dz/.",
-                "id": "Kartu yang dikirim melalui pos tanpa amplop. Gambar menunjukkan sisi belakang dengan bagian pesan dan alamat serta perangko. Pertahankan bunyi が dalam はがき. Postcards berakhir dengan /dz/.",
-                "ja": "封筒に入れずに郵送するカードです。画像は通信欄と宛名欄、切手のある裏面です。はがきのがの濁音を保ちます。英語の複数形postcardsは/dz/で終わります。"
-            },
             "reference_images": [
                 "images/cd966b4d8ba04213a6a403fc29939d8c1e9122a667a478bc1667b1918a40f942.jpg"
             ],

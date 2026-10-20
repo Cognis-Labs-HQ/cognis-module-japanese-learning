@@ -28,7 +28,13 @@
                     }
                 ]
             ]
-        }
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:furnishings-sofa",
+                "relation": "definitions"
+            }
+        ]
     },
     {
         "id": "ja:word:furnishings-sofa",
@@ -36,12 +42,6 @@
         "class": "lexical:noun",
         "fields": {
             "pronunciation": ["ソファ"],
-            "usage_notes": {
-                "en": "A long upholstered seat for several people; couch is a common synonym. Use on the sofa. Japanese ソファ uses small ァ with フ; ソファー is also a common spelling. Plural sofas ends in /z/.",
-                "de": "Ein langes gepolstertes Sitzmöbel für mehrere Personen; couch ist ein gebräuchliches Synonym. Auf Englisch: on the sofa. ソファ enthält kleines ァ nach フ; auch ソファー ist üblich. Sofas endet auf /z/.",
-                "id": "Tempat duduk panjang berlapis empuk untuk beberapa orang; couch adalah sinonim umum. Dalam bahasa Inggris: on the sofa. ソファ memakai ァ kecil setelah フ; ソファー juga lazim. Sofas berakhir /z/.",
-                "ja": "複数人が座れる長い布張りなどの座席。英語 couch も一般的な同義語。英語では on the sofa。ソファのァは小書きで、ソファーという表記も一般的。英語の複数形 sofas は /z/ で終わる。"
-            },
             "reference_images": [
                 "images/90b8f15220626a4e4e1fb21e868fda45297ac9284e57699aa5be0f053ea6816a.jpg"
             ],
@@ -95,7 +95,13 @@
                     }
                 ]
             ]
-        }
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:furnishings-lamp",
+                "relation": "definitions"
+            }
+        ]
     },
     {
         "id": "ja:word:furnishings-lamp",
@@ -103,12 +109,6 @@
         "class": "lexical:noun",
         "fields": {
             "pronunciation": ["ランプ"],
-            "usage_notes": {
-                "en": "A device that gives light; the picture shows an electric table lamp. Japanese ランプ here means a light, not a ramp or the software acronym LAMP. Plural lamps ends in /s/.",
-                "de": "Ein Gerät, das Licht erzeugt; abgebildet ist eine elektrische Tischlampe. ランプ bezeichnet hier eine Leuchte, keine Rampe oder die Software-Abkürzung LAMP. Lamps endet auf /s/.",
-                "id": "Alat yang menghasilkan cahaya; gambar menunjukkan lampu meja listrik. ランプ di sini berarti lampu, bukan ramp atau singkatan perangkat lunak LAMP. Lamps berakhir /s/.",
-                "ja": "光を出す器具で、絵は電気の卓上ランプ。ここでは照明を意味し、傾斜路やソフトウェアの略語LAMPではない。英語の複数形 lamps は /s/ で終わる。"
-            },
             "reference_images": [
                 "images/fd14877ae6b0690f7499a9453764883f3f7b79e91cebcaee2bb66e17b094cc42.jpg"
             ],
@@ -162,20 +162,20 @@
                     }
                 ]
             ]
-        }
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:furnishings-mirror",
+                "relation": "definitions"
+            }
+        ]
     },
     {
         "id": "ja:word:furnishings-mirror",
-        "label": "かがみ",
+        "label": "鏡",
         "class": "lexical:noun",
         "fields": {
             "pronunciation": ["かがみ"],
-            "usage_notes": {
-                "en": "A reflective glass object for seeing an image, not a computer mirror site. See your face in a mirror. Japanese 鏡 is read かがみ, with voiced が. Non-rhotic plural mirrors is /ˈmɪrəz/.",
-                "de": "Ein reflektierender Glasgegenstand, keine gespiegelte Website. Auf Englisch: see your face in a mirror. 鏡 wird かがみ mit stimmhaftem が gelesen. Nicht-rhotisches mirrors: /ˈmɪrəz/.",
-                "id": "Benda kaca pemantul untuk melihat bayangan, bukan situs salinan komputer. Dalam bahasa Inggris: see your face in a mirror. 鏡 dibaca かがみ dengan が bersuara. Bentuk jamak non-rotik mirrors: /ˈmɪrəz/.",
-                "ja": "像を映すガラスの道具で、コンピューターのミラーサイトではない。英語では see your face in a mirror。鏡はかがみと読み、がは濁音。非R音性の英語複数形 mirrors は /ˈmɪrəz/。"
-            },
             "reference_images": [
                 "images/692896b0af78fea77a2fbcf43ec3f775583184858ba26103628f4930e792a51d.jpg"
             ],
@@ -186,6 +186,11 @@
             {
                 "entryId": "ja:definition:furnishings-mirror",
                 "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-93e1",
+                "relation": "spelling",
+                "position": 0
             }
         ],
         "referenceGroups": {
@@ -229,20 +234,20 @@
                     }
                 ]
             ]
-        }
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:furnishings-pillow",
+                "relation": "definitions"
+            }
+        ]
     },
     {
         "id": "ja:word:furnishings-pillow",
-        "label": "まくら",
+        "label": "枕",
         "class": "lexical:noun",
         "fields": {
             "pronunciation": ["まくら"],
-            "usage_notes": {
-                "en": "A soft support for the head when sleeping, shown in a pillowcase on a bed. This card selects the sleeping-pillow sense rather than a decorative cushion. Japanese 枕 is read まくら. Plural pillows ends in /z/.",
-                "de": "Eine weiche Kopfstütze zum Schlafen, hier mit Bezug auf einem Bett. Gemeint ist ein Kopfkissen, kein Zierkissen. 枕 wird まくら gelesen. Pillows endet auf /z/.",
-                "id": "Penyangga kepala yang empuk saat tidur, digambarkan bersarung di atas tempat tidur. Makna yang dipilih adalah bantal tidur, bukan bantal hias. 枕 dibaca まくら. Pillows berakhir /z/.",
-                "ja": "寝るときに頭を支える柔らかい道具で、絵はベッド上のカバー付き枕。このカードは装飾用クッションではなく寝具の意味。枕はまくら。英語の複数形 pillows は /z/ で終わる。"
-            },
             "reference_images": [
                 "images/288ab747b7c6f0c92b845abaae0e32c1f4be104df7160ca1acda709be672f8e4.jpg"
             ],
@@ -253,6 +258,11 @@
             {
                 "entryId": "ja:definition:furnishings-pillow",
                 "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-6795",
+                "relation": "spelling",
+                "position": 0
             }
         ],
         "referenceGroups": {

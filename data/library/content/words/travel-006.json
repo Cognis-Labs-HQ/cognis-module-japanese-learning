@@ -23,11 +23,17 @@
                     }
                 ]
             ]
-        }
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:word:travel-buy",
+                "relation": "definitions"
+            }
+        ]
     },
     {
         "id": "ja:word:travel-buy",
-        "label": "かう",
+        "label": "買う",
         "class": "lexical:verb",
         "fields": {
             "pronunciation": ["かう"],
@@ -41,6 +47,11 @@
             {
                 "entryId": "ja:definition:word:travel-buy",
                 "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-8cb7",
+                "relation": "spelling",
+                "position": 0
             }
         ],
         "referenceGroups": {
@@ -79,11 +90,17 @@
                     }
                 ]
             ]
-        }
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:word:travel-wait",
+                "relation": "definitions"
+            }
+        ]
     },
     {
         "id": "ja:word:travel-wait",
-        "label": "まつ",
+        "label": "待つ",
         "class": "lexical:verb",
         "fields": {
             "pronunciation": ["まつ"],
@@ -97,6 +114,11 @@
             {
                 "entryId": "ja:definition:word:travel-wait",
                 "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-5f85",
+                "relation": "spelling",
+                "position": 0
             }
         ],
         "referenceGroups": {

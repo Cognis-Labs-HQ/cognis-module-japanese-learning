@@ -9,24 +9,24 @@ const words = await load("data/library/content/words/qualities-001.json");
 const inventory = await readAudioInventory("data/audio");
 const expected = {
     heavy: [
-        ["adverb", "おもく", "おもく"],
-        ["negative", "おもくない", "おもくない"],
-        ["past", "おもかった", "おもかった"],
+        ["adverb", "重く", "おもく", "おもく"],
+        ["negative", "重くない", "おもくない", "おもくない"],
+        ["past", "重かった", "おもかった", "おもかった"],
     ],
     light: [
-        ["adverb", "かるく", "かるく"],
-        ["negative", "かるくない", "かるくない"],
-        ["past", "かるかった", "かるかった"],
+        ["adverb", "軽く", "かるく", "かるく"],
+        ["negative", "軽くない", "かるくない", "かるくない"],
+        ["past", "軽かった", "かるかった", "かるかった"],
     ],
     easy: [
-        ["adverb", "やさしく", "やさしく"],
-        ["negative", "やさしくない", "やさしくない"],
-        ["past", "やさしかった", "やさしかった"],
+        ["adverb", "易しく", "やさしく", "やさしく"],
+        ["negative", "易しくない", "やさしくない", "やさしくない"],
+        ["past", "易しかった", "やさしかった", "やさしかった"],
     ],
     difficult: [
-        ["adverb", "むずかしく", "むずかしく"],
-        ["negative", "むずかしくない", "むずかしくない"],
-        ["past", "むずかしかった", "むずかしかった"],
+        ["adverb", "難しく", "むずかしく", "むずかしく"],
+        ["negative", "難しくない", "むずかしくない", "むずかしくない"],
+        ["past", "難しかった", "むずかしかった", "むずかしかった"],
     ],
 };
 
@@ -39,7 +39,7 @@ for (const [key, variants] of Object.entries(expected)) {
         assert.equal(word.class, "lexical:adjective");
         assert.ok(transform.matchTags.every((tag) => word.tags.includes(tag)));
         assert.equal(transform.rules.length, variants.length);
-        for (const [ruleId, label, reading] of variants) {
+        for (const [ruleId, label, reading, recordedText] of variants) {
             const rule = transform.rules.find(({ id }) => id === ruleId);
             assert.equal(rule.removeSuffix, word.label);
             assert.equal(rule.append, label);
@@ -62,7 +62,7 @@ for (const [key, variants] of Object.entries(expected)) {
                 ),
             );
             assert.ok(clip, `${key}/${ruleId}`);
-            assert.equal(clip.text, label);
+            assert.equal(clip.text, recordedText);
             assert.equal(clip.voiceId, "xya0RvcJtofTcFTOdX4E");
             assert.ok(
                 clip.inputs.some(
@@ -70,7 +70,7 @@ for (const [key, variants] of Object.entries(expected)) {
                         input.label === label && input.readings[0] === reading,
                 ),
             );
-            assert.equal(clip.request.text, label);
+            assert.equal(clip.request.text, recordedText);
         }
     });
 }

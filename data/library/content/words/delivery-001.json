@@ -28,20 +28,20 @@
                     }
                 ]
             ]
-        }
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:delivery-send",
+                "relation": "definitions"
+            }
+        ]
     },
     {
         "id": "ja:word:delivery-send",
-        "label": "おくる",
+        "label": "送る",
         "class": "lexical:verb",
         "fields": {
             "pronunciation": ["おくる"],
-            "usage_notes": {
-                "en": "Make a message or item go to a recipient; mailing a letter is one example. Past and past participle sent share /sent/. Japanese 送る is a transitive godan ru verb: おくった/おくって retain small っ. Potential おくれる means can send here, not 遅れる be late.",
-                "de": "Eine Nachricht oder Sache an einen Empfänger schicken; einen Brief aufzugeben ist ein Beispiel. Vergangenheit und Partizip sent teilen /sent/. 送る ist ein transitives Godan-Verb auf ru: おくった/おくって enthalten kleines っ. おくれる bedeutet hier senden können, nicht 遅れる sich verspäten.",
-                "id": "Membuat pesan atau barang sampai kepada penerima; mengeposkan surat adalah salah satu contoh. Bentuk lampau dan past participle sent berbunyi /sent/. 送る adalah verba transitif godan ru: おくった/おくって memakai っ kecil. おくれる di sini berarti dapat mengirim, bukan 遅れる terlambat.",
-                "ja": "相手に物や通信を届かせる意味です。画像の投函は一例です。英語の過去形と過去分詞sentは/sent/です。送るはラ行五段の他動詞で、おくった・おくっての小さいっを保ちます。可能形おくれるは送れるの意味で、遅れるとは別です。"
-            },
             "reference_images": [
                 "images/00ed3eff2a9443ad44df29146fd3f1dc92f3059946dd5650403479141bb595e3.jpg"
             ],
@@ -52,6 +52,11 @@
             {
                 "entryId": "ja:definition:delivery-send",
                 "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-9001",
+                "relation": "spelling",
+                "position": 0
             }
         ],
         "referenceGroups": {
@@ -95,20 +100,20 @@
                     }
                 ]
             ]
-        }
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:delivery-carry",
+                "relation": "definitions"
+            }
+        ]
     },
     {
         "id": "ja:word:delivery-carry",
-        "label": "はこぶ",
+        "label": "運ぶ",
         "class": "lexical:verb",
         "fields": {
             "pronunciation": ["はこぶ"],
-            "usage_notes": {
-                "en": "Support and move a physical object, as in carrying a box. This card excludes arithmetic and figurative senses. Carries/carried change y to i; carrying retains y. Japanese 運ぶ is transitive godan bu: はこんだ/はこんで change ぶ to んだ/んで, not った/って. It also covers transport by vehicle.",
-                "de": "Einen Gegenstand halten und bewegen, etwa eine Schachtel tragen. Rechnen und übertragene Bedeutungen sind ausgeschlossen. Carries/carried ändern y zu i; carrying behält y. 運ぶ ist transitiv und Godan auf bu: はこんだ/はこんで verwenden んだ/んで, nicht った/って. Es umfasst auch Fahrzeugtransport.",
-                "id": "Menopang dan memindahkan benda, misalnya membawa kotak. Bukan makna aritmetika atau kiasan. Carries/carried mengubah y menjadi i; carrying mempertahankan y. 運ぶ adalah transitif godan bu: はこんだ/はこんで berubah menjadi んだ/んで, bukan った/って. Juga mencakup pengangkutan dengan kendaraan.",
-                "ja": "箱などの物を支えて移動させる意味です。計算や比喩の意味は扱いません。carries/carriedはyをiに変え、carryingはyを保ちます。運ぶはバ行五段の他動詞で、はこんだ・はこんではんだ・んでとなり、った・ってではありません。車での運搬も表せます。"
-            },
             "reference_images": [
                 "images/1d0bdf97165dabb73f8f1870c7e388b5b5e0d875575989726f28bbd89115ba0c.jpg"
             ],
@@ -119,6 +124,11 @@
             {
                 "entryId": "ja:definition:delivery-carry",
                 "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-904b",
+                "relation": "spelling",
+                "position": 0
             }
         ],
         "referenceGroups": {

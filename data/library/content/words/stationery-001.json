@@ -33,30 +33,35 @@
                     }
                 ]
             ]
-        }
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:stationery-eraser",
+                "relation": "definitions"
+            }
+        ]
     },
     {
         "id": "ja:word:stationery-eraser",
-        "label": "けしゴム",
+        "label": "消しゴム",
         "class": "lexical:noun",
         "fields": {
             "pronunciation": ["けしごむ"],
-            "usage_notes": {
-                "en": "A small object used to remove pencil marks. The picture shows a rubber block with eraser crumbs. Japanese 消しゴム is read けしごむ; the visible beginner card uses けしゴム.",
-                "de": "Ein kleiner Gegenstand zum Entfernen von Bleistiftstrichen. Das Bild zeigt einen Radiergummi mit Abrieb. 消しゴム wird けしごむ gelesen; die sichtbare Anfängerkarte schreibt けしゴム.",
-                "id": "Benda kecil untuk menghapus goresan pensil. Gambar menunjukkan penghapus karet dengan remah penghapus. 消しゴム dibaca けしごむ; kartu pemula ditulis けしゴム.",
-                "ja": "鉛筆の線を消すための道具。画像は消しかすのあるゴム製の消しゴムです。消しゴムの読みは「けしごむ」で、初級カードの表記は「けしゴム」です。"
-            },
             "reference_images": [
                 "images/95d4e5d19a3d03a133ee2a0e31a377606ef8adaaec02696502c52863835ebb19.jpg"
             ],
             "audio": "audio/5071ba85e9d82d21f4cc5529c1ebf4cb6f6f5c70ee83baba8f650f8772d3aefb.wav"
         },
-        "tags": ["stationery"],
+        "tags": ["noun", "stationery"],
         "references": [
             {
                 "entryId": "ja:definition:stationery-eraser",
                 "relation": "definitions"
+            },
+            {
+                "entryId": "ja:kanji:expanded-6d88",
+                "relation": "spelling",
+                "position": 0
             }
         ],
         "referenceGroups": {
@@ -100,7 +105,13 @@
                     }
                 ]
             ]
-        }
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:stationery-scissors",
+                "relation": "definitions"
+            }
+        ]
     },
     {
         "id": "ja:word:stationery-scissors",
@@ -108,18 +119,12 @@
         "class": "lexical:noun",
         "fields": {
             "pronunciation": ["はさみ"],
-            "usage_notes": {
-                "en": "A cutting tool with two pivoting blades. English scissors takes plural agreement: The scissors are here. One tool is a pair of scissors, not a scissor. Japanese はさみ does not itself mark singular or plural.",
-                "de": "Ein Schneidwerkzeug mit zwei beweglichen Klingen. Englisch scissors verlangt den Plural: The scissors are here. Ein Werkzeug heißt a pair of scissors, nicht a scissor. Japanisch はさみ kennzeichnet allein keinen Numerus.",
-                "id": "Alat potong dengan dua bilah berporos. Scissors dalam bahasa Inggris memakai kesesuaian jamak: The scissors are here. Satu alat disebut a pair of scissors, bukan a scissor. はさみ tidak menandai tunggal atau jamak.",
-                "ja": "支点で動く二枚の刃を持つ切る道具。英語scissorsは複数扱いです：The scissors are here. 一つはa pair of scissorsといい、a scissorではありません。日本語はさみ自体は単複を表しません。"
-            },
             "reference_images": [
                 "images/c5725c620dcda187dd2fb11d60d3cc5483565b0e5b9393ac3601b4eebc99ac7b.jpg"
             ],
             "audio": "audio/3e2c9b42635a617b685569ecfb974f06b2e20c1e1882adb854d9f880202d2391.wav"
         },
-        "tags": ["stationery"],
+        "tags": ["noun", "stationery"],
         "references": [
             {
                 "entryId": "ja:definition:stationery-scissors",
@@ -167,7 +172,13 @@
                     }
                 ]
             ]
-        }
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:stationery-tape",
+                "relation": "definitions"
+            }
+        ]
     },
     {
         "id": "ja:word:stationery-tape",
@@ -175,18 +186,12 @@
         "class": "lexical:noun",
         "fields": {
             "pronunciation": ["てーぷ"],
-            "usage_notes": {
-                "en": "Sticky tape for attaching things, not a recording cassette. English tape is uncountable in this sense: buy tape; one roll is a roll of tape. Japanese テープ keeps the long vowel, てーぷ.",
-                "de": "Klebendes Band zum Befestigen, keine Tonbandkassette. Englisch tape ist in dieser Bedeutung nicht zählbar: buy tape; eine Rolle heißt a roll of tape. テープ hat einen langen Vokal: てーぷ.",
-                "id": "Pita lengket untuk merekatkan benda, bukan kaset rekaman. Tape dalam makna ini tidak dapat dihitung: buy tape; satu gulung disebut a roll of tape. テープ mempertahankan vokal panjang: てーぷ.",
-                "ja": "物を貼り合わせる粘着テープで、録音カセットではありません。英語tapeはこの意味では不可算で、buy tapeといいます。一巻きはa roll of tapeです。テープは「てーぷ」と長く発音します。"
-            },
             "reference_images": [
                 "images/3ed7c5cababfe57e9c1d338358a08ad8d615fd21c6d8acf9c5e4af70ff0bab3a.jpg"
             ],
             "audio": "audio/8fab65178aeae16e2ea2c83e082e996113b6bb3984ccead73f742b9bb39440c3.wav"
         },
-        "tags": ["stationery"],
+        "tags": ["noun", "stationery"],
         "references": [
             {
                 "entryId": "ja:definition:stationery-tape",
@@ -239,7 +244,13 @@
                     }
                 ]
             ]
-        }
+        },
+        "references": [
+            {
+                "entryId": "ja:definition:stationery-stapler",
+                "relation": "definitions"
+            }
+        ]
     },
     {
         "id": "ja:word:stationery-stapler",
@@ -247,18 +258,12 @@
         "class": "lexical:noun",
         "fields": {
             "pronunciation": ["ほちきす"],
-            "usage_notes": {
-                "en": "A tool that fastens paper with small metal staples. Japanese ホチキス and ホッチキス are both established spellings; this card consistently uses ホチキス without small ッ. The picture shows an unbranded desktop tool.",
-                "de": "Ein Gerät zum Verbinden von Papier mit kleinen Metallklammern. Japanisch ホチキス und ホッチキス sind beide gebräuchlich; diese Karte verwendet einheitlich ホチキス ohne kleines ッ. Das Bild zeigt ein Tischgerät ohne Marke.",
-                "id": "Alat untuk menjepit kertas dengan staples logam kecil. ホチキス dan ホッチキス sama-sama lazim; kartu ini konsisten memakai ホチキス tanpa ッ kecil. Gambar menunjukkan alat meja tanpa merek.",
-                "ja": "小さな金属の針で紙をとじる道具。ホチキスとホッチキスはどちらも使われますが、このカードでは小さいッのないホチキスに統一します。画像は商標表示のない卓上用です。"
-            },
             "reference_images": [
                 "images/aa8788e02a21beaeb427537701022191f2927d02d5ff9e4a87d6c5db88074051.jpg"
             ],
             "audio": "audio/5284b99ffe8d78385d5372eff85e48f66a00c69506d0879eb9fb470fd77a3893.wav"
         },
-        "tags": ["stationery"],
+        "tags": ["noun", "stationery"],
         "references": [
             {
                 "entryId": "ja:definition:stationery-stapler",

@@ -23,6 +23,12 @@
                 "label": "そうじする",
                 "semanticRole": "lexicalUnit",
                 "readings": ["そうじする"]
+            },
+            {
+                "language": "ja",
+                "label": "掃除する",
+                "semanticRole": "lexicalUnit",
+                "readings": ["そうじする"]
             }
         ],
         "entries": [
@@ -59,6 +65,12 @@
             {
                 "language": "ja",
                 "label": "かわかす",
+                "semanticRole": "lexicalUnit",
+                "readings": ["かわかす"]
+            },
+            {
+                "language": "ja",
+                "label": "乾かす",
                 "semanticRole": "lexicalUnit",
                 "readings": ["かわかす"]
             }
@@ -137,6 +149,12 @@
                 "label": "ハブラシ",
                 "semanticRole": "lexicalUnit",
                 "readings": ["ハブラシ"]
+            },
+            {
+                "language": "ja",
+                "label": "歯ブラシ",
+                "semanticRole": "lexicalUnit",
+                "readings": ["ハブラシ"]
             }
         ],
         "entries": [
@@ -173,6 +191,12 @@
             {
                 "language": "ja",
                 "label": "はみがきこ",
+                "semanticRole": "lexicalUnit",
+                "readings": ["はみがきこ"]
+            },
+            {
+                "language": "ja",
+                "label": "歯磨き粉",
                 "semanticRole": "lexicalUnit",
                 "readings": ["はみがきこ"]
             }
@@ -365,6 +389,12 @@
                 "label": "かがみ",
                 "semanticRole": "lexicalUnit",
                 "readings": ["かがみ"]
+            },
+            {
+                "language": "ja",
+                "label": "鏡",
+                "semanticRole": "lexicalUnit",
+                "readings": ["かがみ"]
             }
         ],
         "entries": [
@@ -401,6 +431,12 @@
             {
                 "language": "ja",
                 "label": "まくら",
+                "semanticRole": "lexicalUnit",
+                "readings": ["まくら"]
+            },
+            {
+                "language": "ja",
+                "label": "枕",
                 "semanticRole": "lexicalUnit",
                 "readings": ["まくら"]
             }
@@ -441,6 +477,12 @@
                 "label": "もも",
                 "semanticRole": "lexicalUnit",
                 "readings": ["もも"]
+            },
+            {
+                "language": "ja",
+                "label": "桃",
+                "semanticRole": "lexicalUnit",
+                "readings": ["もも"]
             }
         ],
         "entries": [
@@ -477,6 +519,12 @@
             {
                 "language": "ja",
                 "label": "なし",
+                "semanticRole": "lexicalUnit",
+                "readings": ["なし"]
+            },
+            {
+                "language": "ja",
+                "label": "梨",
                 "semanticRole": "lexicalUnit",
                 "readings": ["なし"]
             }
@@ -593,6 +641,12 @@
                 "label": "しんしつ",
                 "semanticRole": "lexicalUnit",
                 "readings": ["しんしつ"]
+            },
+            {
+                "language": "ja",
+                "label": "寝室",
+                "semanticRole": "lexicalUnit",
+                "readings": ["しんしつ"]
             }
         ],
         "entries": [
@@ -629,6 +683,12 @@
             {
                 "language": "ja",
                 "label": "よくしつ",
+                "semanticRole": "lexicalUnit",
+                "readings": ["よくしつ"]
+            },
+            {
+                "language": "ja",
+                "label": "浴室",
                 "semanticRole": "lexicalUnit",
                 "readings": ["よくしつ"]
             }
@@ -669,6 +729,12 @@
                 "label": "れいぞうこ",
                 "semanticRole": "lexicalUnit",
                 "readings": ["れいぞうこ"]
+            },
+            {
+                "language": "ja",
+                "label": "冷蔵庫",
+                "semanticRole": "lexicalUnit",
+                "readings": ["れいぞうこ"]
             }
         ],
         "entries": [
@@ -682,112 +748,5 @@
             "listening": "unverified-not-performed",
             "sourcePcmSha256": "0bd4865aa8e31d3ab559492a2ee9b9f41ab0593eb4a4f95c10fcf029d5267448"
         }
-    },
-    {
-        "path": "audio/f6091b94b423458a5fafe7ac9dcfd73266512a1eee0b697cc8c70f93f4a33d82.wav",
-        "text": "オーブン",
-        "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "request": {
-            "text": "オーブン",
-            "model_id": "eleven_flash_v2_5",
-            "seed": 42,
-            "voice_settings": {
-                "stability": 0.9,
-                "similarity_boost": 0.85,
-                "style": 0,
-                "use_speaker_boost": true,
-                "speed": 0.9
-            },
-            "language_code": "ja",
-            "apply_text_normalization": "off"
-        },
-        "inputs": [
-            {
-                "language": "ja",
-                "label": "オーブン",
-                "semanticRole": "lexicalUnit",
-                "readings": ["オーブン"]
-            }
-        ],
-        "entries": [
-            "ja:word:fixtures-oven",
-            "ja:word:complete-pronunciation-fixtures-oven"
-        ],
-        "variants": [],
-        "sha256": "f6091b94b423458a5fafe7ac9dcfd73266512a1eee0b697cc8c70f93f4a33d82",
-        "frames": 15449,
-        "metadata": {
-            "listening": "unverified-not-performed",
-            "sourcePcmSha256": "20158fdb112c112566d9ef55984bcc327a1c5e4098b6a3017e424f4e1b6d9e9f"
-        }
-    },
-    {
-        "path": "audio/3281c01826dac50b0d9e916ae37ce16ce69bca5b63f468e18a6cfccb0d918dcd.wav",
-        "text": "もり",
-        "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "request": {
-            "text": "森",
-            "model_id": "eleven_flash_v2_5",
-            "seed": 42,
-            "voice_settings": {
-                "stability": 0.9,
-                "similarity_boost": 0.85,
-                "style": 0,
-                "use_speaker_boost": true,
-                "speed": 0.9
-            },
-            "language_code": "ja",
-            "apply_text_normalization": "off"
-        },
-        "inputs": [
-            {
-                "language": "ja",
-                "label": "もり",
-                "semanticRole": "lexicalUnit",
-                "readings": ["もり"]
-            }
-        ],
-        "entries": [
-            "ja:word:nature-forest",
-            "ja:word:complete-pronunciation-nature-forest"
-        ],
-        "variants": [],
-        "sha256": "3281c01826dac50b0d9e916ae37ce16ce69bca5b63f468e18a6cfccb0d918dcd",
-        "frames": 12106,
-        "metadata": {
-            "listening": "unverified-not-performed",
-            "sourcePcmSha256": "60e3dbed4ddbcedca8f463b871f4660f3861e79cc7f1d0d22d15277d4141244b"
-        }
-    },
-    {
-        "path": "audio/596cd963ccb789a977c151653b8564b595a847ee98c75f2787b26490a3551bc8.wav",
-        "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "text": "ちゃく。",
-        "request": {
-            "text": "ちゃく。",
-            "model_id": "eleven_flash_v2_5",
-            "seed": 42,
-            "voice_settings": {
-                "stability": 0.9,
-                "similarity_boost": 0.85,
-                "style": 0,
-                "use_speaker_boost": true,
-                "speed": 0.9
-            },
-            "language_code": "ja",
-            "apply_text_normalization": "off"
-        },
-        "inputs": [
-            {
-                "language": "ja",
-                "label": "ちゃく",
-                "semanticRole": "lexicalUnit",
-                "readings": ["ちゃく"]
-            }
-        ],
-        "entries": ["ja:word:kanji-reading-e7aeb8-03"],
-        "variants": [],
-        "sha256": "8152ab4d6c38a6c7c9b10b7224c0901637d8167bb1415b6a36fc5447d09bed1c",
-        "frames": 18793
     }
 ]
