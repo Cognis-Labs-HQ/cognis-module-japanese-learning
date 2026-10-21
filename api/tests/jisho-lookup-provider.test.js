@@ -392,7 +392,7 @@ test("Jisho retains all senses and raw source data with every reading group", as
         sourceUrl: suggestion.sourceUrl,
     });
     assert.equal(suggestion.class, "lexical:noun");
-    assert.deepEqual(suggestion.tags, ["jlpt-n2", "common"]);
+    assert.deepEqual(suggestion.tags, ["noun", "jlpt-n2", "common"]);
     assert.equal(
         suggestion.sourceUrl,
         "https://jisho.org/word/%E7%8C%AB%E5%8F%88",

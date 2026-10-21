@@ -757,41 +757,5 @@
         "variants": [],
         "sha256": "e019daf21d04bbf4cc24ab251ca60ef7e7d341dde3185ac9a8ec32e8dc87bf15",
         "frames": 14884
-    },
-    {
-        "path": "audio/843223b7290cf0fda523989799b96f85c224338146f5d022e92e6715234e2e39.wav",
-        "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "text": "いく",
-        "request": {
-            "text": "いく",
-            "model_id": "eleven_flash_v2_5",
-            "seed": 42,
-            "voice_settings": {
-                "stability": 0.9,
-                "similarity_boost": 0.85,
-                "style": 0,
-                "use_speaker_boost": true,
-                "speed": 0.9
-            },
-            "language_code": "ja"
-        },
-        "inputs": [
-            {
-                "language": "ja",
-                "label": "いく",
-                "semanticRole": "lexicalUnit",
-                "readings": ["いく"]
-            },
-            {
-                "language": "ja",
-                "label": "行く",
-                "semanticRole": "lexicalUnit",
-                "readings": ["いく"]
-            }
-        ],
-        "entries": ["ja:word:complete-pronunciation-iku", "ja:word:iku"],
-        "variants": [],
-        "sha256": "ffc8bbd65ce9b688d42cc6ee3a5a97b594a9ed2b8149db611500ef251f626d16",
-        "frames": 12643
     }
 ]

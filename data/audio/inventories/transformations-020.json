@@ -1,0 +1,82 @@
+[
+    {
+        "path": "audio/2332ba926448551e4d95b9a3b2f70ff840f803c5a0a7a4d8f22b8f5418482c81.wav",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "text": "来たかった",
+        "request": {
+            "text": "来たかった",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "来たかった",
+                "semanticRole": "lexicalUnit",
+                "readings": ["きたかった"]
+            }
+        ],
+        "entries": [],
+        "variants": [
+            {
+                "entryId": "ja:word:kuru",
+                "setId": "irregular-kuru",
+                "path": ["desire", "desire-past"],
+                "state": "desire-past",
+                "label": "来たかった",
+                "reading": "きたかった"
+            }
+        ],
+        "sha256": "185e5ea476b0e1d1c8eb659e75057576209125287568c66ce734d44d9139f745",
+        "frames": 22137
+    },
+    {
+        "path": "audio/f380033246fcec1bf181a375303dbb83128ecf4ce7a2433551149ef3702a109a.wav",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "text": "来なかった",
+        "request": {
+            "text": "来なかった",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "来なかった",
+                "semanticRole": "lexicalUnit",
+                "readings": ["こなかった"]
+            }
+        ],
+        "entries": [],
+        "variants": [
+            {
+                "entryId": "ja:word:kuru",
+                "setId": "irregular-kuru",
+                "path": ["negative", "negative-past"],
+                "state": "negative-past",
+                "label": "来なかった",
+                "reading": "こなかった"
+            }
+        ],
+        "sha256": "77f6ba13f9b8aaba86a1cdb0b6735a458d63505460ef6c8b0e594ff8ecdf5367",
+        "frames": 22137
+    }
+]

@@ -1,0 +1,52 @@
+[
+    {
+        "path": "audio/706340930fbd8a114b396e20740af565ab60e5cca3270bc79b090d1a8cd9d48f.wav",
+        "text": "かきました",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "かきました",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "かきました",
+                "semanticRole": "lexicalUnit",
+                "readings": ["かきました"]
+            },
+            {
+                "language": "ja",
+                "label": "書きました",
+                "semanticRole": "lexicalUnit",
+                "readings": ["かきました"]
+            }
+        ],
+        "entries": [],
+        "variants": [
+            {
+                "entryId": "ja:word:core-write",
+                "setId": "core-write-forms",
+                "path": ["polite-past"],
+                "label": "書きました",
+                "reading": "かきました",
+                "state": "polite-past"
+            }
+        ],
+        "sha256": "706340930fbd8a114b396e20740af565ab60e5cca3270bc79b090d1a8cd9d48f",
+        "frames": 22137,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "d2c23cd190257695bdefb13187e8cfde47aa14cd19e7947c1205a4a2ce0cb25e"
+        }
+    }
+]

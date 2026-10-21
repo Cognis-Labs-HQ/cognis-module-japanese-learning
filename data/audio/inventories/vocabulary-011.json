@@ -34,7 +34,10 @@
             {
                 "entryId": "ja:word:travel-arrive",
                 "setId": "travel-arrive-forms",
-                "path": ["past"]
+                "path": ["past"],
+                "label": "着いた",
+                "reading": "ついた",
+                "state": "past"
             }
         ],
         "sha256": "82925b772ad0acb9dfa22df4ed4c210a2439b7bbc074fb798ef2038b2e5953f2",
@@ -80,7 +83,10 @@
             {
                 "entryId": "ja:word:travel-depart",
                 "setId": "travel-depart-forms",
-                "path": ["potential"]
+                "path": ["potential"],
+                "label": "出発できる",
+                "reading": "しゅっぱつできる",
+                "state": "potential"
             }
         ],
         "sha256": "cc89c95f16bb6bd46e7a004b47028b32db18db9e109839ebdaef7e14b0a568a7",
@@ -126,7 +132,10 @@
             {
                 "entryId": "ja:word:travel-wait",
                 "setId": "travel-wait-forms",
-                "path": ["polite-past"]
+                "path": ["polite-past"],
+                "label": "待ちました",
+                "reading": "まちました",
+                "state": "polite-past"
             }
         ],
         "sha256": "67a0b64427549b32337c106829d1266051682faa74d8a3e39c8bb675f6651d1a",
@@ -172,7 +181,10 @@
             {
                 "entryId": "ja:word:travel-wait",
                 "setId": "travel-wait-forms",
-                "path": ["polite-negative"]
+                "path": ["polite-negative"],
+                "label": "待ちません",
+                "reading": "まちません",
+                "state": "polite-negative"
             }
         ],
         "sha256": "de42988a0499f8977a5bf5192656c15a5b21171b7cf5784dce985f9487232804",
@@ -755,44 +767,6 @@
         "metadata": {
             "listening": "unverified-not-performed",
             "sourcePcmSha256": "6644ed8069de133460e8c1acacece5f8cb63d3b9f6142c732b435137c6c8ff25"
-        }
-    },
-    {
-        "path": "audio/f508f1ea96d0be8871bceeb4c3c6000cacdd0dacda78c221638586ff0e1f113e.wav",
-        "text": "ペン",
-        "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "request": {
-            "text": "ペン",
-            "model_id": "eleven_flash_v2_5",
-            "seed": 42,
-            "voice_settings": {
-                "stability": 0.9,
-                "similarity_boost": 0.85,
-                "style": 0,
-                "use_speaker_boost": true,
-                "speed": 0.9
-            },
-            "language_code": "ja",
-            "apply_text_normalization": "off"
-        },
-        "inputs": [
-            {
-                "language": "ja",
-                "label": "ペン",
-                "semanticRole": "lexicalUnit",
-                "readings": ["ペン"]
-            }
-        ],
-        "entries": [
-            "ja:word:school-pen",
-            "ja:word:complete-pronunciation-school-pen"
-        ],
-        "variants": [],
-        "sha256": "f508f1ea96d0be8871bceeb4c3c6000cacdd0dacda78c221638586ff0e1f113e",
-        "frames": 12106,
-        "metadata": {
-            "listening": "unverified-not-performed",
-            "sourcePcmSha256": "ae928b65e9ec6b3948063580353a1bc97ff1a5d10ed1c842115fbe5f0570219c"
         }
     }
 ]

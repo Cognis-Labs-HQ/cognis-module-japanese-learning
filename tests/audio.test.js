@@ -44,7 +44,7 @@ function forms(entry) {
         .filter(
             (set) =>
                 set.matchTags.every((tag) => entry.tags?.includes(tag)) &&
-                (!set.optInTag || entry.tags?.includes(set.optInTag)),
+                entry.tags?.includes(set.flag),
         )
         .flatMap((set) => {
             const nodes = [

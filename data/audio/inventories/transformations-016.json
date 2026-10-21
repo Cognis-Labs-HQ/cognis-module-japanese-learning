@@ -1,0 +1,88 @@
+[
+    {
+        "path": "audio/1378c975527fdef07a13743d3205d3b00da867fdf0733c4ae7436d20f3873a95.wav",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "text": "こさせたくない",
+        "request": {
+            "text": "こさせたくない",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "来させたくない",
+                "semanticRole": "lexicalUnit",
+                "readings": ["こさせたくない"]
+            }
+        ],
+        "entries": [],
+        "variants": [
+            {
+                "entryId": "ja:word:kuru",
+                "setId": "irregular-kuru",
+                "path": [
+                    "causative",
+                    "causative-desire",
+                    "causative-negative-desire"
+                ],
+                "state": "causative-negative-desire",
+                "label": "来させたくない",
+                "reading": "こさせたくない"
+            }
+        ],
+        "sha256": "0935d46495c45bce2b3030db6246edb81b38465ce37804ff5ad3a7ccbe493db1",
+        "frames": 22830
+    },
+    {
+        "path": "audio/889194d046b8faa5fba61ba18f7e8a154d3bcda138c2ebbcdf953cc055f9d4e1.wav",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "text": "いかせたくない",
+        "request": {
+            "text": "いかせたくない",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "行かせたくない",
+                "semanticRole": "lexicalUnit",
+                "readings": ["いかせたくない"]
+            }
+        ],
+        "entries": [],
+        "variants": [
+            {
+                "entryId": "ja:word:iku",
+                "setId": "godan-iku",
+                "path": [
+                    "causative",
+                    "causative-desire",
+                    "causative-negative-desire"
+                ],
+                "state": "causative-negative-desire",
+                "label": "行かせたくない",
+                "reading": "いかせたくない"
+            }
+        ],
+        "sha256": "a9402a0356bfe391591da29de0926ce7bdb9bfbcb0b12ad7f5bf45c6912f433f",
+        "frames": 21509
+    }
+]

@@ -34,6 +34,7 @@ test("ingests the declarative pack through the host Library capability", async (
                     };
                 assert.equal(id, "study:library:provider");
                 return {
+                    transformationModel: "generated",
                     registerLookupProvider(provider) {
                         providers.push(provider);
                         return () => {
@@ -192,6 +193,7 @@ test("content ingestion failures remain activation-blocking", async () => {
                 if (id === "study:audio:provider")
                     return { registerProvider: () => () => {} };
                 return {
+                    transformationModel: "generated",
                     registerLookupProvider() {
                         return () => {
                             removed += 1;
@@ -230,6 +232,7 @@ test("content ingestion failures remain activation-blocking", async () => {
 
 test("requires the public provider capability when it is injected", async () => {
     const provider = {
+        transformationModel: "generated",
         registerLookupProvider() {
             return () => {};
         },
@@ -276,6 +279,7 @@ test("failed capability publication or flow registration removes every lookup pr
                         return { registerProvider: () => () => {} };
                     assert.equal(id, "study:library:provider");
                     return {
+                        transformationModel: "generated",
                         registerLookupProvider() {
                             return () => {
                                 removed += 1;
@@ -318,6 +322,7 @@ test("activation rejects a host provider without content-pack cleanup", async ()
                         return { registerProvider: () => () => {} };
                     return {
                         async ingestContentPack() {},
+                        transformationModel: "generated",
                         registerLookupProvider() {},
                     };
                 },
@@ -347,6 +352,7 @@ for (const activationFails of [false, true]) {
                     if (id === "study:audio:provider")
                         return { registerProvider: register };
                     return {
+                        transformationModel: "generated",
                         registerLookupProvider: register,
                         async deleteContentPack() {},
                         async ingestContentPack() {
@@ -374,3 +380,28 @@ for (const activationFails of [false, true]) {
         assert.ok(removed.length >= 3);
     });
 }
+
+test("activation rejects a provider that does not enforce generated transformations", async () => {
+    await assert.rejects(
+        bootstrapModule({
+            capabilities: {
+                require(id) {
+                    assert.equal(id, "study:library:provider");
+                    return {
+                        transformationModel: "materialized",
+                        ingestContentPack() {
+                            assert.fail("Must reject before ingestion");
+                        },
+                        deleteContentPack() {
+                            assert.fail("Must not delete");
+                        },
+                        registerLookupProvider() {
+                            assert.fail("Must not register");
+                        },
+                    };
+                },
+            },
+        }),
+        /Invalid Study Library provider capability/,
+    );
+});

@@ -28,9 +28,11 @@
         "variants": [
             {
                 "entryId": "ja:word:neko",
-                "setId": "collective-plural-neko",
+                "setId": "collective-plural",
                 "path": ["plural"],
-                "state": "plural"
+                "state": "plural",
+                "label": "猫たち",
+                "reading": "ねこたち"
             }
         ],
         "sha256": "9485b2f2f713700efdf96e8492a17134ef0d1f3716c1dad4136cd593cdd5b2ca",
@@ -65,9 +67,11 @@
         "variants": [
             {
                 "entryId": "ja:word:inu",
-                "setId": "collective-plural-inu",
+                "setId": "collective-plural",
                 "path": ["plural"],
-                "state": "plural"
+                "state": "plural",
+                "label": "犬たち",
+                "reading": "いぬたち"
             }
         ],
         "sha256": "5a2539b8212183400d567e72afbf8c58af396ebf49c90237bb4b6845ef0dfb46",
@@ -102,9 +106,11 @@
         "variants": [
             {
                 "entryId": "ja:word:watashi",
-                "setId": "collective-plural-watashi",
+                "setId": "collective-plural",
                 "path": ["plural"],
-                "state": "plural"
+                "state": "plural",
+                "label": "私たち",
+                "reading": "わたしたち"
             }
         ],
         "sha256": "3b6ed68e6bc2eb54f52df8911471919045cab5573450bea4cf35897fc054eb78",
@@ -141,7 +147,9 @@
                 "entryId": "ja:word:aruku",
                 "setId": "godan-ku",
                 "path": ["causative", "causative-desire"],
-                "state": "causative-desire"
+                "state": "causative-desire",
+                "label": "歩かせたい",
+                "reading": "あるかせたい"
             }
         ],
         "sha256": "bd196a2b2f47fdfa2b6e5f593dd8cf22063b286a75aee706c8aeedc77b6b218d",
@@ -178,7 +186,9 @@
                 "entryId": "ja:word:aruku",
                 "setId": "godan-ku",
                 "path": ["causative", "causative-te"],
-                "state": "causative-te"
+                "state": "causative-te",
+                "label": "歩かせて",
+                "reading": "あるかせて"
             }
         ],
         "sha256": "0a0007e4562b7bc758c126ee2ed8b1cdb2d26c466c81d9c48cce26287c2fb64d",
@@ -215,7 +225,9 @@
                 "entryId": "ja:word:aruku",
                 "setId": "godan-ku",
                 "path": ["causative", "causative-past"],
-                "state": "causative-past"
+                "state": "causative-past",
+                "label": "歩かせた",
+                "reading": "あるかせた"
             }
         ],
         "sha256": "ef3d5c047548797858c91128c1c58e26cc53b8939fd46895a103ab76a41c5299",
@@ -252,7 +264,9 @@
                 "entryId": "ja:word:aruku",
                 "setId": "godan-ku",
                 "path": ["causative", "causative-negative"],
-                "state": "causative-negative"
+                "state": "causative-negative",
+                "label": "歩かせない",
+                "reading": "あるかせない"
             }
         ],
         "sha256": "4b18aac50c064e4f7ab8e1ec05d10dd9241ff2bcef93aa91c850a4a81bf446d1",
@@ -289,7 +303,9 @@
                 "entryId": "ja:word:aruku",
                 "setId": "godan-ku",
                 "path": ["desire", "desire-te"],
-                "state": "desire-te"
+                "state": "desire-te",
+                "label": "歩きたくて",
+                "reading": "あるきたくて"
             }
         ],
         "sha256": "801df574477c8546c8e47a57de34452086817c73f1a58e556173c72daca0f22e",
@@ -326,7 +342,9 @@
                 "entryId": "ja:word:aruku",
                 "setId": "godan-ku",
                 "path": ["desire", "desire-negative"],
-                "state": "desire-negative"
+                "state": "desire-negative",
+                "label": "歩きたくない",
+                "reading": "あるきたくない"
             }
         ],
         "sha256": "590a1842837135a77a105b38c5f968b986f4b28bb0ea26b810e9b4e335387772",
@@ -363,7 +381,9 @@
                 "entryId": "ja:word:aruku",
                 "setId": "godan-ku",
                 "path": ["negative", "negative-te"],
-                "state": "negative-te"
+                "state": "negative-te",
+                "label": "歩かなくて",
+                "reading": "あるかなくて"
             }
         ],
         "sha256": "8d77fded24d19cd44ce982a44b7d3da2fcd320091eae82fddea8ac52e1b3f9e5",
@@ -400,7 +420,9 @@
                 "entryId": "ja:word:aruku",
                 "setId": "godan-ku",
                 "path": ["polite", "polite-negative"],
-                "state": "polite-negative"
+                "state": "polite-negative",
+                "label": "歩きません",
+                "reading": "あるきません"
             }
         ],
         "sha256": "6513f91f8107b1100c179c8b32a2d89d4a74aa6fd8b023ade3b2bc9064ab1e83",
@@ -437,7 +459,9 @@
                 "entryId": "ja:word:aruku",
                 "setId": "godan-ku",
                 "path": ["polite", "polite-past"],
-                "state": "polite-past"
+                "state": "polite-past",
+                "label": "歩きました",
+                "reading": "あるきました"
             }
         ],
         "sha256": "0ebde061a2b14db146c8b9a86d716c03710d450ef8c5b222cbaa46a175683761",
@@ -474,7 +498,9 @@
                 "entryId": "ja:word:aruku",
                 "setId": "godan-ku",
                 "path": ["volitional"],
-                "state": "volitional"
+                "state": "volitional",
+                "label": "歩こう",
+                "reading": "あるこう"
             }
         ],
         "sha256": "3edaf41ff70f8680de5b7c9f9d9a429927222f78e8c92f225717450e33aa5eb9",
@@ -511,7 +537,9 @@
                 "entryId": "ja:word:aruku",
                 "setId": "godan-ku",
                 "path": ["potential"],
-                "state": "potential"
+                "state": "potential",
+                "label": "歩ける",
+                "reading": "あるける"
             }
         ],
         "sha256": "d0e3d85ce623b3d2a8cfc572c6d16f4b6b0caa4fc1f77d5fc9a53bbe24f2debe",
@@ -548,7 +576,9 @@
                 "entryId": "ja:word:aruku",
                 "setId": "godan-ku",
                 "path": ["passive"],
-                "state": "passive"
+                "state": "passive",
+                "label": "歩かれる",
+                "reading": "あるかれる"
             }
         ],
         "sha256": "aaa1f6eee8eb653cf5ce64f2d44af9fe735f334f52e37a52345345aaa59b78f2",
@@ -585,7 +615,9 @@
                 "entryId": "ja:word:aruku",
                 "setId": "godan-ku",
                 "path": ["causative"],
-                "state": "causative"
+                "state": "causative",
+                "label": "歩かせる",
+                "reading": "あるかせる"
             }
         ],
         "sha256": "5421d400e7532399402d63561d679ce8f3cc0b3151ae7ea020694c71edc3245f",
@@ -622,7 +654,9 @@
                 "entryId": "ja:word:aruku",
                 "setId": "godan-ku",
                 "path": ["desire"],
-                "state": "desire"
+                "state": "desire",
+                "label": "歩きたい",
+                "reading": "あるきたい"
             }
         ],
         "sha256": "227bedd3d33cf2d9098478db6546d95ff6517483a43c1e2a3156ef53a6799c70",
@@ -659,7 +693,9 @@
                 "entryId": "ja:word:aruku",
                 "setId": "godan-ku",
                 "path": ["te-form"],
-                "state": "te-form"
+                "state": "te-form",
+                "label": "歩いて",
+                "reading": "あるいて"
             }
         ],
         "sha256": "161435b7f68c3deed382215932d8de92c4d91945ba238dd7ca76bd9d6f8ee4d1",
@@ -696,7 +732,9 @@
                 "entryId": "ja:word:aruku",
                 "setId": "godan-ku",
                 "path": ["past"],
-                "state": "past"
+                "state": "past",
+                "label": "歩いた",
+                "reading": "あるいた"
             }
         ],
         "sha256": "69d971300bc9d031e938626c0d22de58c26f8c89b1cfe09e399e522f8227dff5",
@@ -733,52 +771,12 @@
                 "entryId": "ja:word:aruku",
                 "setId": "godan-ku",
                 "path": ["negative"],
-                "state": "negative"
+                "state": "negative",
+                "label": "歩かない",
+                "reading": "あるかない"
             }
         ],
         "sha256": "1adc91dbe1e93faeda607d483d4d4919655e62f60c0177d347b11a21ccc86953",
         "frames": 17192
-    },
-    {
-        "path": "audio/135b40994c9b947bceb6fe008f9a778601712ec6d08e122941d185a2c7969f23.wav",
-        "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "text": "あるかせたくなくて",
-        "request": {
-            "text": "あるかせたくなくて",
-            "model_id": "eleven_flash_v2_5",
-            "seed": 42,
-            "voice_settings": {
-                "stability": 0.9,
-                "similarity_boost": 0.85,
-                "style": 0,
-                "use_speaker_boost": true,
-                "speed": 0.9
-            },
-            "language_code": "ja"
-        },
-        "inputs": [
-            {
-                "language": "ja",
-                "label": "歩かせたくなくて",
-                "semanticRole": "lexicalUnit",
-                "readings": ["あるかせたくなくて"]
-            }
-        ],
-        "entries": [],
-        "variants": [
-            {
-                "entryId": "ja:word:aruku",
-                "setId": "godan-ku",
-                "path": [
-                    "causative",
-                    "causative-desire",
-                    "causative-negative-desire",
-                    "causative-continuous-negative-desire"
-                ],
-                "state": "causative-continuous-negative-desire"
-            }
-        ],
-        "sha256": "b89a0e7e25bff199faca5cd3fa0de3c0cba785b2882763ccf820af35f517b15b",
-        "frames": 28346
     }
 ]

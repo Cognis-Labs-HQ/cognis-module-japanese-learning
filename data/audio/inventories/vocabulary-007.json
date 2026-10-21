@@ -36,7 +36,10 @@
             {
                 "entryId": "ja:word:household-clean",
                 "setId": "household-clean-forms",
-                "path": ["polite"]
+                "path": ["polite"],
+                "label": "掃除します",
+                "reading": "そうじします",
+                "state": "polite"
             }
         ],
         "sha256": "1bf734f123fc74d25d2fb33abeaf7c3fff3460d6008abc35e0ce6c3e425d2a1d",
@@ -83,7 +86,10 @@
             {
                 "entryId": "ja:word:actions-jump",
                 "setId": "actions-jump-forms",
-                "path": ["polite"]
+                "path": ["polite"],
+                "label": "跳びます",
+                "reading": "とびます",
+                "state": "polite"
             }
         ],
         "sha256": "3bccbd419fdbfb4f8d822318f525f2c7e965ff719bfdf3dab3e2b5e6ea73292d",
@@ -130,7 +136,10 @@
             {
                 "entryId": "ja:word:actions-jump",
                 "setId": "actions-jump-forms",
-                "path": ["negative"]
+                "path": ["negative"],
+                "label": "跳ばない",
+                "reading": "とばない",
+                "state": "negative"
             }
         ],
         "sha256": "182f23cebc9411745bc930239d8adaa7875b9490b77cead2a225040c1dd7685a",
@@ -177,7 +186,10 @@
             {
                 "entryId": "ja:word:actions-cry",
                 "setId": "actions-cry-forms",
-                "path": ["polite"]
+                "path": ["polite"],
+                "label": "泣きます",
+                "reading": "なきます",
+                "state": "polite"
             }
         ],
         "sha256": "9e96be6e3cffecb2d179da9f7426a35402afc47b2c275129a4409bde6738a670",
@@ -224,7 +236,10 @@
             {
                 "entryId": "ja:word:actions-cry",
                 "setId": "actions-cry-forms",
-                "path": ["negative"]
+                "path": ["negative"],
+                "label": "泣かない",
+                "reading": "なかない",
+                "state": "negative"
             }
         ],
         "sha256": "438d64cf0d9d7e6f55d0e3319e5cc92c491841cd21d7b0fa862e79f0b02d9edc",
@@ -271,7 +286,10 @@
             {
                 "entryId": "ja:word:qualities-difficult",
                 "setId": "qualities-difficult-forms",
-                "path": ["adverb"]
+                "path": ["adverb"],
+                "label": "難しく",
+                "reading": "むずかしく",
+                "state": "adverb"
             }
         ],
         "sha256": "b31bef4359e49d066ed596ad328f32325533b6c160434e72f4fc356680026ded",
@@ -318,7 +336,10 @@
             {
                 "entryId": "ja:word:qualities-difficult",
                 "setId": "qualities-difficult-forms",
-                "path": ["negative"]
+                "path": ["negative"],
+                "label": "難しくない",
+                "reading": "むずかしくない",
+                "state": "negative"
             }
         ],
         "sha256": "d5277eb2a433c1efc1193837114b2f0740d5478f52814181bc54b44345f2120f",
@@ -365,7 +386,10 @@
             {
                 "entryId": "ja:word:core-speak",
                 "setId": "core-speak-forms",
-                "path": ["polite"]
+                "path": ["polite"],
+                "label": "話します",
+                "reading": "はなします",
+                "state": "polite"
             }
         ],
         "sha256": "a28744b21d2cd2593e271db55ba9da3449b06481161baaadc7336b394f5945bc",
@@ -412,7 +436,10 @@
             {
                 "entryId": "ja:word:core-speak",
                 "setId": "core-speak-forms",
-                "path": ["negative"]
+                "path": ["negative"],
+                "label": "話さない",
+                "reading": "はなさない",
+                "state": "negative"
             }
         ],
         "sha256": "127e793403a58b26f7b3c0ca7df749be11c47519477cbd9fff83bca45e576f55",
@@ -459,7 +486,10 @@
             {
                 "entryId": "ja:word:core-speak",
                 "setId": "core-speak-forms",
-                "path": ["past"]
+                "path": ["past"],
+                "label": "話した",
+                "reading": "はなした",
+                "state": "past"
             }
         ],
         "sha256": "9fd73b6a44c07cc3cff23f70c00a9ec3f05bbd6ad508508d2d1e3ebede26bdcd",
@@ -506,7 +536,10 @@
             {
                 "entryId": "ja:word:core-speak",
                 "setId": "core-speak-forms",
-                "path": ["te-form"]
+                "path": ["te-form"],
+                "label": "話して",
+                "reading": "はなして",
+                "state": "te-form"
             }
         ],
         "sha256": "93b5eb2fedc4356e4a870b6f6246ac6affd87435df58154ad42ed91a5121ee4e",
@@ -553,7 +586,10 @@
             {
                 "entryId": "ja:word:core-speak",
                 "setId": "core-speak-forms",
-                "path": ["polite-past"]
+                "path": ["polite-past"],
+                "label": "話しました",
+                "reading": "はなしました",
+                "state": "polite-past"
             }
         ],
         "sha256": "2e91df7213c153564788296867c5624110921ebb0087ecd4ef6ed1590e3a49c5",
@@ -600,7 +636,10 @@
             {
                 "entryId": "ja:word:core-speak",
                 "setId": "core-speak-forms",
-                "path": ["polite-negative"]
+                "path": ["polite-negative"],
+                "label": "話しません",
+                "reading": "はなしません",
+                "state": "polite-negative"
             }
         ],
         "sha256": "8c40b390b6e64f1aa6dfd36dbf8578148ee7bce38bd0f0e6c8a238c07d1e237b",
@@ -647,7 +686,10 @@
             {
                 "entryId": "ja:word:core-speak",
                 "setId": "core-speak-forms",
-                "path": ["negative-past"]
+                "path": ["negative-past"],
+                "label": "話さなかった",
+                "reading": "はなさなかった",
+                "state": "negative-past"
             }
         ],
         "sha256": "9754f6cc12196c623e14d053465febe4eaf33fd1b7d41bace7f08e681421e26b",
@@ -694,7 +736,10 @@
             {
                 "entryId": "ja:word:core-speak",
                 "setId": "core-speak-forms",
-                "path": ["potential"]
+                "path": ["potential"],
+                "label": "話せる",
+                "reading": "はなせる",
+                "state": "potential"
             }
         ],
         "sha256": "a09a34e2ec0518683c694cf3c8707ecf9b6f9897646f2c5cecd750ed43c651ee",
@@ -702,53 +747,6 @@
         "metadata": {
             "listening": "unverified-not-performed",
             "sourcePcmSha256": "81e22be4e59036f50fa09f63872a843d3277b6e431659f17ac714664d93385bf"
-        }
-    },
-    {
-        "path": "audio/02dcbe8917c0d7b019c5b9f180b8ee8ced0a014e12f893819f29908fd8a00e05.wav",
-        "text": "ねます",
-        "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "request": {
-            "text": "ねます",
-            "model_id": "eleven_flash_v2_5",
-            "seed": 42,
-            "voice_settings": {
-                "stability": 0.9,
-                "similarity_boost": 0.85,
-                "style": 0,
-                "use_speaker_boost": true,
-                "speed": 0.9
-            },
-            "language_code": "ja",
-            "apply_text_normalization": "off"
-        },
-        "inputs": [
-            {
-                "language": "ja",
-                "label": "ねます",
-                "semanticRole": "lexicalUnit",
-                "readings": ["ねます"]
-            },
-            {
-                "language": "ja",
-                "label": "寝ます",
-                "semanticRole": "lexicalUnit",
-                "readings": ["ねます"]
-            }
-        ],
-        "entries": [],
-        "variants": [
-            {
-                "entryId": "ja:word:core-sleep",
-                "setId": "core-sleep-forms",
-                "path": ["polite"]
-            }
-        ],
-        "sha256": "02dcbe8917c0d7b019c5b9f180b8ee8ced0a014e12f893819f29908fd8a00e05",
-        "frames": 15449,
-        "metadata": {
-            "listening": "unverified-not-performed",
-            "sourcePcmSha256": "442fd12d4307cdb70c2cf8bf4c2bac531cff40289ed88f7ab2740c5ff73f2ef3"
         }
     }
 ]

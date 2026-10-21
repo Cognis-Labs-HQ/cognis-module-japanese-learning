@@ -1,0 +1,60 @@
+[
+    {
+        "path": "audio/da56480ffe94fb9740b798ba1a0a49d5c9c76d036a7f38033558b0827e1779a4.wav",
+        "entryId": "ja:sentence:yama-kara-kawa-made",
+        "label": "山から川まで",
+        "parts": [
+            {
+                "path": "audio/09e3fd20b5f937930dc477e61a86f500ddc8a8b68cffdb9878d448bb058bd3a4.wav",
+                "entryId": "ja:word:yama"
+            },
+            {
+                "path": "audio/6e14468c95fd51fc419625bb4b7a76ed8591ccb46aee16ae8504abf150f50154.wav",
+                "entryId": "ja:particle:kara"
+            },
+            {
+                "path": "audio/02b62b3e244ea765dc90cb6aeeb6c692de8e5c6fc39d35ba2da13da9bca8accd.wav",
+                "entryId": "ja:word:kawa-river"
+            },
+            {
+                "path": "audio/7b0f478e31bdc691c7da4e6e2042024cfac2bfeceec78edc22a88ef686905b69.wav",
+                "entryId": "ja:particle:made"
+            }
+        ],
+        "gapMs": 45,
+        "segments": [
+            {
+                "path": "audio/09e3fd20b5f937930dc477e61a86f500ddc8a8b68cffdb9878d448bb058bd3a4.wav",
+                "entryId": "ja:word:yama",
+                "startFrame": 2400,
+                "frameCount": 9829
+            },
+            {
+                "path": "audio/6e14468c95fd51fc419625bb4b7a76ed8591ccb46aee16ae8504abf150f50154.wav",
+                "entryId": "ja:particle:kara",
+                "startFrame": 13309,
+                "frameCount": 9942
+            },
+            {
+                "path": "audio/02b62b3e244ea765dc90cb6aeeb6c692de8e5c6fc39d35ba2da13da9bca8accd.wav",
+                "entryId": "ja:word:kawa-river",
+                "startFrame": 24331,
+                "frameCount": 13484
+            },
+            {
+                "path": "audio/7b0f478e31bdc691c7da4e6e2042024cfac2bfeceec78edc22a88ef686905b69.wav",
+                "entryId": "ja:particle:made",
+                "startFrame": 38895,
+                "frameCount": 11097
+            }
+        ],
+        "sha256": "8a95f3d81c6e1c0a4bd783de60928273dd66548deee6d6f3069a7f3e87182c10",
+        "frames": 49992,
+        "input": {
+            "language": "ja",
+            "label": "山から川まで",
+            "semanticRole": "orderedLexicalSequence",
+            "readings": ["やまからかわまで"]
+        }
+    }
+]

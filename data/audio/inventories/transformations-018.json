@@ -1,0 +1,88 @@
+[
+    {
+        "path": "audio/63d3cc805aff1af57edd412cc75ba5e285e1ab59625e294b366c765e5e40cb92.wav",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "text": "たべさせたくない",
+        "request": {
+            "text": "たべさせたくない",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "食べさせたくない",
+                "semanticRole": "lexicalUnit",
+                "readings": ["たべさせたくない"]
+            }
+        ],
+        "entries": [],
+        "variants": [
+            {
+                "entryId": "ja:word:taberu",
+                "setId": "ichidan",
+                "path": [
+                    "causative",
+                    "causative-desire",
+                    "causative-negative-desire"
+                ],
+                "state": "causative-negative-desire",
+                "label": "食べさせたくない",
+                "reading": "たべさせたくない"
+            }
+        ],
+        "sha256": "86e05fc2c077c787ddb3b333cb2a56d45286786a591d6009d5e466eeaa62bcbf",
+        "frames": 24233
+    },
+    {
+        "path": "audio/7dbdf39bb431ffa16fe99c1512e3f2b36a9ccc8b7ad0456f1192d64510ec1fbe.wav",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "text": "いさせたくない",
+        "request": {
+            "text": "いさせたくない",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "いさせたくない",
+                "semanticRole": "lexicalUnit",
+                "readings": ["いさせたくない"]
+            }
+        ],
+        "entries": [],
+        "variants": [
+            {
+                "entryId": "ja:word:iru-exist",
+                "setId": "ichidan",
+                "path": [
+                    "causative",
+                    "causative-desire",
+                    "causative-negative-desire"
+                ],
+                "state": "causative-negative-desire",
+                "label": "いさせたくない",
+                "reading": "いさせたくない"
+            }
+        ],
+        "sha256": "4e6ab3f989972da408611f4a47ccd6b55a89de81b5e4bdda0edd45b295d22b95",
+        "frames": 22608
+    }
+]

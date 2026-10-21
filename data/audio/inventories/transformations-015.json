@@ -1,0 +1,96 @@
+[
+    {
+        "path": "audio/eeba4850d69c413c3d479b7f34679b60be6ee2608c4770784f047826a442ff2b.wav",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "text": "みられる",
+        "request": {
+            "text": "みられる",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "見られる",
+                "semanticRole": "lexicalUnit",
+                "readings": ["みられる"]
+            }
+        ],
+        "entries": [],
+        "variants": [
+            {
+                "entryId": "ja:word:miru",
+                "setId": "ichidan",
+                "path": ["passive"],
+                "state": "passive",
+                "label": "見られる",
+                "reading": "みられる"
+            },
+            {
+                "entryId": "ja:word:miru",
+                "setId": "ichidan",
+                "path": ["potential"],
+                "state": "potential",
+                "label": "見られる",
+                "reading": "みられる"
+            }
+        ],
+        "sha256": "f8c273b6c4964dded125472b41ba33666dd489fe588a19775c7fa0db0e05e597",
+        "frames": 17703
+    },
+    {
+        "path": "audio/370ada0175c2d1d5171e0ac015c30144668430655b7dd37e3f3b2d66f78031f3.wav",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "text": "たべられる",
+        "request": {
+            "text": "たべられる",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "食べられる",
+                "semanticRole": "lexicalUnit",
+                "readings": ["たべられる"]
+            }
+        ],
+        "entries": [],
+        "variants": [
+            {
+                "entryId": "ja:word:taberu",
+                "setId": "ichidan",
+                "path": ["passive"],
+                "state": "passive",
+                "label": "食べられる",
+                "reading": "たべられる"
+            },
+            {
+                "entryId": "ja:word:taberu",
+                "setId": "ichidan",
+                "path": ["potential"],
+                "state": "potential",
+                "label": "食べられる",
+                "reading": "たべられる"
+            }
+        ],
+        "sha256": "0dd83bfa188326ef25fe3734c0022e43a8d32ceabfc87c26c1dac9aa07222d0c",
+        "frames": 17118
+    }
+]

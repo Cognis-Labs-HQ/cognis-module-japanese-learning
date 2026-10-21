@@ -30,7 +30,9 @@
                 "entryId": "ja:word:taberu",
                 "setId": "ichidan",
                 "path": ["polite", "polite-negative"],
-                "state": "polite-negative"
+                "state": "polite-negative",
+                "label": "食べません",
+                "reading": "たべません"
             }
         ],
         "sha256": "fc301d9d471285a512360f59984012a8c7a3464d159715f52e520cd19abc63e8",
@@ -67,7 +69,9 @@
                 "entryId": "ja:word:taberu",
                 "setId": "ichidan",
                 "path": ["polite", "polite-past"],
-                "state": "polite-past"
+                "state": "polite-past",
+                "label": "食べました",
+                "reading": "たべました"
             }
         ],
         "sha256": "fc1017c304038b6922329f55aaabfd48f3eb3f577d713901da33da4de318e7e1",
@@ -104,7 +108,9 @@
                 "entryId": "ja:word:taberu",
                 "setId": "ichidan",
                 "path": ["volitional"],
-                "state": "volitional"
+                "state": "volitional",
+                "label": "食べよう",
+                "reading": "たべよう"
             }
         ],
         "sha256": "adda33c9dedfb5d2eff60da80839cdb344e71a41e2719b99a6542178c8490894",
@@ -141,7 +147,9 @@
                 "entryId": "ja:word:taberu",
                 "setId": "ichidan",
                 "path": ["causative"],
-                "state": "causative"
+                "state": "causative",
+                "label": "食べさせる",
+                "reading": "たべさせる"
             }
         ],
         "sha256": "434f75f435a5c37e82a3cffe9cee1e9d68a7757de3de8286a8a477a29d5d5895",
@@ -178,7 +186,9 @@
                 "entryId": "ja:word:taberu",
                 "setId": "ichidan",
                 "path": ["desire"],
-                "state": "desire"
+                "state": "desire",
+                "label": "食べたい",
+                "reading": "たべたい"
             }
         ],
         "sha256": "70c0eb36395cf7781ea1e4b01565c532a39cb58fbaad168620b5ded1192bee41",
@@ -215,7 +225,9 @@
                 "entryId": "ja:word:taberu",
                 "setId": "ichidan",
                 "path": ["te-form"],
-                "state": "te-form"
+                "state": "te-form",
+                "label": "食べて",
+                "reading": "たべて"
             }
         ],
         "sha256": "2e29fe93b58b2e80e690356ab4a40f524797cd68db0a1b875ff731da543fe186",
@@ -252,7 +264,9 @@
                 "entryId": "ja:word:taberu",
                 "setId": "ichidan",
                 "path": ["past"],
-                "state": "past"
+                "state": "past",
+                "label": "食べた",
+                "reading": "たべた"
             }
         ],
         "sha256": "a40c1b6253c5be0a94975b4d39fab707a2bb7ac8cf477a71f3ba8231681af313",
@@ -289,7 +303,9 @@
                 "entryId": "ja:word:taberu",
                 "setId": "ichidan",
                 "path": ["negative"],
-                "state": "negative"
+                "state": "negative",
+                "label": "食べない",
+                "reading": "たべない"
             }
         ],
         "sha256": "1a7d175c48919fac36375c6b4444d2cea159c982c7b10866a650d1f6da7d676e",
@@ -326,7 +342,9 @@
                 "entryId": "ja:word:taberu",
                 "setId": "ichidan",
                 "path": ["polite"],
-                "state": "polite"
+                "state": "polite",
+                "label": "食べます",
+                "reading": "たべます"
             }
         ],
         "sha256": "c688fedbb349134010322a3f710146192fcef753d1c05e5acb51a046dcf60340",
@@ -361,9 +379,11 @@
         "variants": [
             {
                 "entryId": "ja:word:tomodachi",
-                "setId": "collective-plural-tomodachi",
+                "setId": "collective-plural",
                 "path": ["plural"],
-                "state": "plural"
+                "state": "plural",
+                "label": "友達たち",
+                "reading": "ともだちたち"
             }
         ],
         "sha256": "4c4d2f962cf83f4c25db44ac32d046ace74cd37bdb01e537b5defef7c144feec",
@@ -398,9 +418,11 @@
         "variants": [
             {
                 "entryId": "ja:word:gakusei",
-                "setId": "collective-plural-gakusei",
+                "setId": "collective-plural",
                 "path": ["plural"],
-                "state": "plural"
+                "state": "plural",
+                "label": "学生たち",
+                "reading": "がくせいたち"
             }
         ],
         "sha256": "0ef81dd1ff4e3a90a9c069633d1e4ae300d76d240251856be8fd044dfcfa707c",
@@ -435,9 +457,11 @@
         "variants": [
             {
                 "entryId": "ja:word:sensei",
-                "setId": "collective-plural-sensei",
+                "setId": "collective-plural",
                 "path": ["plural"],
-                "state": "plural"
+                "state": "plural",
+                "label": "先生たち",
+                "reading": "せんせいたち"
             }
         ],
         "sha256": "7b916d56b14202cdb7fb358f14cf70c12209152fadacd7954690db08b4cae279",
@@ -474,7 +498,9 @@
                 "entryId": "ja:word:da-copula",
                 "setId": "copula-da",
                 "path": ["negative"],
-                "state": "negative"
+                "state": "negative",
+                "label": "ではない",
+                "reading": "ではない"
             }
         ],
         "sha256": "c605a9ce4fbe91f60fdc4ef88414194bb46251b9c48468733cccbc342b1c3656",
@@ -511,7 +537,9 @@
                 "entryId": "ja:word:aru-exist",
                 "setId": "godan-aru",
                 "path": ["desire", "desire-te"],
-                "state": "desire-te"
+                "state": "desire-te",
+                "label": "ありたくて",
+                "reading": "ありたくて"
             }
         ],
         "sha256": "d24dfd7abc7bacd8463849177c18bb58e056a31fe35ec61c90c45cb45f1957f9",
@@ -548,7 +576,9 @@
                 "entryId": "ja:word:aru-exist",
                 "setId": "godan-aru",
                 "path": ["desire", "desire-negative"],
-                "state": "desire-negative"
+                "state": "desire-negative",
+                "label": "ありたくない",
+                "reading": "ありたくない"
             }
         ],
         "sha256": "fc4ed38a6544976abc2e4537c90fa813657b5bd187c2c7acafe8d35c4a9d2d60",
@@ -585,7 +615,9 @@
                 "entryId": "ja:word:aru-exist",
                 "setId": "godan-aru",
                 "path": ["negative", "negative-conditional"],
-                "state": "negative-conditional"
+                "state": "negative-conditional",
+                "label": "なければ",
+                "reading": "なければ"
             }
         ],
         "sha256": "5fa08ab74aca0cfda08658c5171c30133bd3d804b2cdc55e9001f70ead103663",
@@ -622,7 +654,9 @@
                 "entryId": "ja:word:aru-exist",
                 "setId": "godan-aru",
                 "path": ["negative", "negative-te"],
-                "state": "negative-te"
+                "state": "negative-te",
+                "label": "なくて",
+                "reading": "なくて"
             }
         ],
         "sha256": "4944c4e6f753e9d4f6ee2aa5adc12ec13e6f84bcb6830d527af2c6372a720ede",
@@ -659,7 +693,9 @@
                 "entryId": "ja:word:aru-exist",
                 "setId": "godan-aru",
                 "path": ["polite", "polite-negative"],
-                "state": "polite-negative"
+                "state": "polite-negative",
+                "label": "ありません",
+                "reading": "ありません"
             }
         ],
         "sha256": "130e1990d88076102337a997f4fca7ae2b3ab3aef17ee5e46a42ac1893428f60",
@@ -696,7 +732,9 @@
                 "entryId": "ja:word:aru-exist",
                 "setId": "godan-aru",
                 "path": ["polite", "polite-past"],
-                "state": "polite-past"
+                "state": "polite-past",
+                "label": "ありました",
+                "reading": "ありました"
             }
         ],
         "sha256": "bf57052e8aa7b823ef71d7f72820583bde1b554708c4f966dfd99f37b784abb1",
@@ -733,47 +771,12 @@
                 "entryId": "ja:word:aru-exist",
                 "setId": "godan-aru",
                 "path": ["desire"],
-                "state": "desire"
+                "state": "desire",
+                "label": "ありたい",
+                "reading": "ありたい"
             }
         ],
         "sha256": "b271506a523f93f7ccfc5891d9fa4d10e5500f300da55ffa600d0688f165e89c",
         "frames": 12144
-    },
-    {
-        "path": "audio/026df97677e254fa7a358291829f441aab76f6adc5593ebb8a5d060e8fe3dcb0.wav",
-        "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "text": "あれば",
-        "request": {
-            "text": "あれば",
-            "model_id": "eleven_flash_v2_5",
-            "seed": 42,
-            "voice_settings": {
-                "stability": 0.9,
-                "similarity_boost": 0.85,
-                "style": 0,
-                "use_speaker_boost": true,
-                "speed": 0.9
-            },
-            "language_code": "ja"
-        },
-        "inputs": [
-            {
-                "language": "ja",
-                "label": "あれば",
-                "semanticRole": "lexicalUnit",
-                "readings": ["あれば"]
-            }
-        ],
-        "entries": [],
-        "variants": [
-            {
-                "entryId": "ja:word:aru-exist",
-                "setId": "godan-aru",
-                "path": ["conditional"],
-                "state": "conditional"
-            }
-        ],
-        "sha256": "137c845cb973e5a3511b64973ed1c90c6458171c4e961bebc207f58b6d29fead",
-        "frames": 12715
     }
 ]

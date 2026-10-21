@@ -1,0 +1,60 @@
+[
+    {
+        "path": "audio/42554d677683a4a7798876a862532f3a57f99d76e68433007729c4f6b8e76321.wav",
+        "entryId": "ja:sentence:inu-wa-yukkuri-aruku",
+        "label": "犬はゆっくり歩く",
+        "parts": [
+            {
+                "path": "audio/64cecb245c335de8a0367aed75bddb8d39c17b26bbdb3729562cf01206a1c508.wav",
+                "entryId": "ja:word:inu"
+            },
+            {
+                "path": "audio/d7c9e57654e559dfba3bd6f78c2f27416a61f8b28d56145d84a62fe25b70c94d.wav",
+                "entryId": "ja:particle:wa"
+            },
+            {
+                "path": "audio/1c2d1664ef0db6298e34d97fa47fd27aa3dfc34f44515e3e22ed6e07e2ca0011.wav",
+                "entryId": "ja:word:yukkuri"
+            },
+            {
+                "path": "audio/a6c59dc12594eaf457c52ccdd8b684e37c0953566969c41f972f4d22b105bff4.wav",
+                "entryId": "ja:word:aruku"
+            }
+        ],
+        "gapMs": 45,
+        "segments": [
+            {
+                "path": "audio/64cecb245c335de8a0367aed75bddb8d39c17b26bbdb3729562cf01206a1c508.wav",
+                "entryId": "ja:word:inu",
+                "startFrame": 2400,
+                "frameCount": 11605
+            },
+            {
+                "path": "audio/d7c9e57654e559dfba3bd6f78c2f27416a61f8b28d56145d84a62fe25b70c94d.wav",
+                "entryId": "ja:particle:wa",
+                "startFrame": 15085,
+                "frameCount": 12106
+            },
+            {
+                "path": "audio/1c2d1664ef0db6298e34d97fa47fd27aa3dfc34f44515e3e22ed6e07e2ca0011.wav",
+                "entryId": "ja:word:yukkuri",
+                "startFrame": 28271,
+                "frameCount": 21022
+            },
+            {
+                "path": "audio/a6c59dc12594eaf457c52ccdd8b684e37c0953566969c41f972f4d22b105bff4.wav",
+                "entryId": "ja:word:aruku",
+                "startFrame": 50373,
+                "frameCount": 14294
+            }
+        ],
+        "sha256": "b52b198c61bbcdb57c757b4f1bfc2ac57beb55f48b27b7be07a96a7fee68b4f7",
+        "frames": 64667,
+        "input": {
+            "language": "ja",
+            "label": "犬はゆっくり歩く",
+            "semanticRole": "orderedLexicalSequence",
+            "readings": ["いぬはゆっくりあるく"]
+        }
+    }
+]

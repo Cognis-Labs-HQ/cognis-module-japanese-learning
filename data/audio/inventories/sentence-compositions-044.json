@@ -1,0 +1,60 @@
+[
+    {
+        "path": "audio/47a96bb99ac3aefa89ce18ea99f36d160df9fb5718eb283288e9aa9c120871f3.wav",
+        "entryId": "ja:sentence:chiisai-neko-suki",
+        "label": "小さい猫が好き",
+        "parts": [
+            {
+                "path": "audio/bd221520af0519e412d2e8492715ef2bdefffe644fe8ce4fbcd0fa70ce1a1301.wav",
+                "entryId": "ja:word:chiisai"
+            },
+            {
+                "path": "audio/4c4cf09a9e6799010dd9d06a79fdd15f15172bc7895e14fb37a39f2cd8bdd4a3.wav",
+                "entryId": "ja:word:neko"
+            },
+            {
+                "path": "audio/69d02d32db53e5eeb4bb6db01917e619478b734bd66988c4242ccc1a3e55655d.wav",
+                "entryId": "ja:particle:ga"
+            },
+            {
+                "path": "audio/fff2a2381ef1abd6f3b0e24b6390a1f76d9fda74ec68bdc300ac3ff137a00214.wav",
+                "entryId": "ja:word:suki"
+            }
+        ],
+        "gapMs": 45,
+        "segments": [
+            {
+                "path": "audio/bd221520af0519e412d2e8492715ef2bdefffe644fe8ce4fbcd0fa70ce1a1301.wav",
+                "entryId": "ja:word:chiisai",
+                "startFrame": 2400,
+                "frameCount": 14275
+            },
+            {
+                "path": "audio/4c4cf09a9e6799010dd9d06a79fdd15f15172bc7895e14fb37a39f2cd8bdd4a3.wav",
+                "entryId": "ja:word:neko",
+                "startFrame": 17755,
+                "frameCount": 12629
+            },
+            {
+                "path": "audio/69d02d32db53e5eeb4bb6db01917e619478b734bd66988c4242ccc1a3e55655d.wav",
+                "entryId": "ja:particle:ga",
+                "startFrame": 31464,
+                "frameCount": 14335
+            },
+            {
+                "path": "audio/fff2a2381ef1abd6f3b0e24b6390a1f76d9fda74ec68bdc300ac3ff137a00214.wav",
+                "entryId": "ja:word:suki",
+                "startFrame": 46879,
+                "frameCount": 13644
+            }
+        ],
+        "sha256": "1cbb80e17eeb38e05a9ebfd47458d818e61a254872ba22309a31ad2d8d8628fc",
+        "frames": 60523,
+        "input": {
+            "language": "ja",
+            "label": "小さい猫が好き",
+            "semanticRole": "orderedLexicalSequence",
+            "readings": ["ちいさいねこがすき"]
+        }
+    }
+]

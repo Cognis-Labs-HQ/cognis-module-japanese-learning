@@ -432,7 +432,10 @@
             {
                 "entryId": "ja:word:household-wash",
                 "setId": "household-wash-forms",
-                "path": ["polite"]
+                "path": ["polite"],
+                "label": "洗います",
+                "reading": "あらいます",
+                "state": "polite"
             }
         ],
         "sha256": "3c813e3b95efb8e339d9378d7581e1b04c117f95c7a252bd663c093c59cf0971",
@@ -479,7 +482,10 @@
             {
                 "entryId": "ja:word:household-wash",
                 "setId": "household-wash-forms",
-                "path": ["negative"]
+                "path": ["negative"],
+                "label": "洗わない",
+                "reading": "あらわない",
+                "state": "negative"
             }
         ],
         "sha256": "6abc75bc1a83a4e3850a38500a5e50983a6a04ac654e36091234232fad98b4e5",
@@ -526,7 +532,10 @@
             {
                 "entryId": "ja:word:household-wash",
                 "setId": "household-wash-forms",
-                "path": ["past"]
+                "path": ["past"],
+                "label": "洗った",
+                "reading": "あらった",
+                "state": "past"
             }
         ],
         "sha256": "8d5141def7290efcdb6e1211113caf1493262df5eb4bd142ee617d34c63596a2",
@@ -573,7 +582,10 @@
             {
                 "entryId": "ja:word:household-wash",
                 "setId": "household-wash-forms",
-                "path": ["te-form"]
+                "path": ["te-form"],
+                "label": "洗って",
+                "reading": "あらって",
+                "state": "te-form"
             }
         ],
         "sha256": "e250ea3ddeb413f30c1c69bcc15e5c5cdffefabd9d7aa70ac197ac8a643d8728",
@@ -620,7 +632,10 @@
             {
                 "entryId": "ja:word:household-wash",
                 "setId": "household-wash-forms",
-                "path": ["polite-past"]
+                "path": ["polite-past"],
+                "label": "洗いました",
+                "reading": "あらいました",
+                "state": "polite-past"
             }
         ],
         "sha256": "c3886c880435a71f09d01dc584d1474cd02d531600945ceeba9f4202e96e709a",
@@ -667,7 +682,10 @@
             {
                 "entryId": "ja:word:household-wash",
                 "setId": "household-wash-forms",
-                "path": ["polite-negative"]
+                "path": ["polite-negative"],
+                "label": "洗いません",
+                "reading": "あらいません",
+                "state": "polite-negative"
             }
         ],
         "sha256": "ecf316141e082ec092a9a3fc1438f0e771329bbb85fd83606b3cbaa2be91223b",
@@ -714,7 +732,10 @@
             {
                 "entryId": "ja:word:household-wash",
                 "setId": "household-wash-forms",
-                "path": ["negative-past"]
+                "path": ["negative-past"],
+                "label": "洗わなかった",
+                "reading": "あらわなかった",
+                "state": "negative-past"
             }
         ],
         "sha256": "404c05fb2e6e1d49866a982410bfa189eb419670ae8d269111eb8f66babcc186",
@@ -722,53 +743,6 @@
         "metadata": {
             "listening": "unverified-not-performed",
             "sourcePcmSha256": "a0a1409fc69038edee20afcc0cfb0b512e6c38deac40b1e87bccc80312493653"
-        }
-    },
-    {
-        "path": "audio/05c26297258409d82a8bdd8c9ca29d97c3aa73373bdd2f6ae0e63c2ad22fdcae.wav",
-        "text": "あらえる",
-        "voiceId": "xya0RvcJtofTcFTOdX4E",
-        "request": {
-            "text": "あらえる",
-            "model_id": "eleven_flash_v2_5",
-            "seed": 42,
-            "voice_settings": {
-                "stability": 0.9,
-                "similarity_boost": 0.85,
-                "style": 0,
-                "use_speaker_boost": true,
-                "speed": 0.9
-            },
-            "language_code": "ja",
-            "apply_text_normalization": "off"
-        },
-        "inputs": [
-            {
-                "language": "ja",
-                "label": "あらえる",
-                "semanticRole": "lexicalUnit",
-                "readings": ["あらえる"]
-            },
-            {
-                "language": "ja",
-                "label": "洗える",
-                "semanticRole": "lexicalUnit",
-                "readings": ["あらえる"]
-            }
-        ],
-        "entries": [],
-        "variants": [
-            {
-                "entryId": "ja:word:household-wash",
-                "setId": "household-wash-forms",
-                "path": ["potential"]
-            }
-        ],
-        "sha256": "05c26297258409d82a8bdd8c9ca29d97c3aa73373bdd2f6ae0e63c2ad22fdcae",
-        "frames": 19907,
-        "metadata": {
-            "listening": "unverified-not-performed",
-            "sourcePcmSha256": "f9f313e97ccb0dbde8c71f61cb795af619cfe91512b112b529277f66bfe5910e"
         }
     }
 ]

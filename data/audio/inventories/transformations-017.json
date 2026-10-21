@@ -1,0 +1,41 @@
+[
+    {
+        "path": "audio/c7a77bdb53ed9e9f9ee408fedb919402878794fd0a8f3fa176f7ade8ef78cc14.wav",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "text": "みさせない",
+        "request": {
+            "text": "みさせない",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "見させない",
+                "semanticRole": "lexicalUnit",
+                "readings": ["みさせない"]
+            }
+        ],
+        "entries": [],
+        "variants": [
+            {
+                "entryId": "ja:word:miru",
+                "setId": "ichidan",
+                "path": ["causative", "causative-negative"],
+                "state": "causative-negative",
+                "label": "見させない",
+                "reading": "みさせない"
+            }
+        ],
+        "sha256": "08d0a2a5e8ed4dd819aed2936bd3e44c76199c030e676fa9309390e7ec68fce2",
+        "frames": 17391
+    }
+]

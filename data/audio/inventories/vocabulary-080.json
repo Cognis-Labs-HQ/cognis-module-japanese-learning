@@ -1,0 +1,51 @@
+[
+    {
+        "path": "audio/cb0f1077b9b98fb08dcd5c9214f410ea08a95735d982847c3e50650d048e89e2.wav",
+        "text": "かいません",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "かいません",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            }
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "かいません",
+                "semanticRole": "lexicalUnit",
+                "readings": ["かいません"]
+            },
+            {
+                "language": "ja",
+                "label": "買いません",
+                "semanticRole": "lexicalUnit",
+                "readings": ["かいません"]
+            }
+        ],
+        "entries": [],
+        "variants": [
+            {
+                "entryId": "ja:word:travel-buy",
+                "setId": "travel-buy-forms",
+                "path": ["polite-negative"],
+                "label": "買いません",
+                "reading": "かいません",
+                "state": "polite-negative"
+            }
+        ],
+        "sha256": "cb0f1077b9b98fb08dcd5c9214f410ea08a95735d982847c3e50650d048e89e2",
+        "frames": 17678,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "languageSelection": "native-input-autodetection",
+            "sourcePcmSha256": "0d6ba2271dc6a2acc5cc9d98b2eb84e9035a561d11c7f7116d2915a33e0a6f01"
+        }
+    }
+]

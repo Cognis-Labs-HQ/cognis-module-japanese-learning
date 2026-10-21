@@ -36,6 +36,7 @@ test("enable-disable-enable releases every live language contribution while reta
                         async deleteContentPack() {
                             assert.fail("Disable must retain content");
                         },
+                        transformationModel: "generated",
                         registerLookupProvider(provider) {
                             return register(library, provider.id, provider);
                         },

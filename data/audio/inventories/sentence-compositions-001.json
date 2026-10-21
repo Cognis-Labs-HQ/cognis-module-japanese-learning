@@ -737,58 +737,5 @@
             "semanticRole": "orderedLexicalSequence",
             "readings": ["いぬはおおきいですがねこはちいさい"]
         }
-    },
-    {
-        "path": "audio/af7ae80610342b04041c61fce649bd8e60fbcd437b6a817b0ba3758cc844c296.wav",
-        "entryId": "ja:sentence:travel-see-map",
-        "label": "地図を見る",
-        "parts": [
-            {
-                "path": "audio/fe7f2ff9dcf44059717e6c08a8b41d54ea80b717ea0e3ab6f15804e3d8d85547.wav",
-                "entryId": "ja:word:travel-map"
-            },
-            {
-                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
-                "entryId": "ja:particle:wo"
-            },
-            {
-                "path": "audio/38b1e4b1dda0e34a29c049bd035b5370b24069d70efbb5fef029fb0962f2c8fe.wav",
-                "entryId": "ja:word:miru"
-            },
-            { "pauseMs": 400 }
-        ],
-        "gapMs": 90,
-        "segments": [
-            {
-                "path": "audio/fe7f2ff9dcf44059717e6c08a8b41d54ea80b717ea0e3ab6f15804e3d8d85547.wav",
-                "entryId": "ja:word:travel-map",
-                "startFrame": 2400,
-                "frameCount": 15449
-            },
-            {
-                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
-                "entryId": "ja:particle:wo",
-                "startFrame": 20009,
-                "frameCount": 8762
-            },
-            {
-                "path": "audio/38b1e4b1dda0e34a29c049bd035b5370b24069d70efbb5fef029fb0962f2c8fe.wav",
-                "entryId": "ja:word:miru",
-                "startFrame": 30931,
-                "frameCount": 14884
-            }
-        ],
-        "sha256": "af7ae80610342b04041c61fce649bd8e60fbcd437b6a817b0ba3758cc844c296",
-        "frames": 57575,
-        "input": {
-            "language": "ja",
-            "label": "地図を見る",
-            "semanticRole": "orderedLexicalSequence",
-            "readings": ["ちずをみる"]
-        },
-        "metadata": {
-            "listening": "unverified-not-performed",
-            "construction": "Exact selected constituent PCM including newly synthesized travel forms."
-        }
     }
 ]

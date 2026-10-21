@@ -390,7 +390,7 @@ export function jishoSuggestion(index, layer, label, data, query = label) {
                               rule.fromState === set.baseState &&
                               canonicalLabel.endsWith(rule.removeSuffix),
                       )
-                          ? set.matchTags
+                          ? [...set.matchTags, set.flag]
                           : [];
                   },
               )
@@ -531,9 +531,11 @@ export function jishoSuggestion(index, layer, label, data, query = label) {
         tags: [
             ...new Set([
                 ...(record.tags ?? []),
-                ...(layer === "words" &&
-                ["verb", "adverb", "adjective"].includes(lexicalClass)
-                    ? [lexicalClass]
+                ...(layer === "words" && lexicalClass
+                    ? [
+                          lexicalClass,
+                          ...(lexicalClass === "pronoun" ? ["noun"] : []),
+                      ]
                     : []),
                 ...transformTags,
                 ...(record.jlpt ?? []),

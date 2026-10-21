@@ -1,0 +1,46 @@
+[
+    {
+        "path": "audio/9c624fc161262bdb09dcee29ea3efb1d57b93042c663be253c11efe5de7c32de.wav",
+        "text": "あげません",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "あげません",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "あげません",
+                "semanticRole": "lexicalUnit",
+                "readings": ["あげません"]
+            }
+        ],
+        "entries": [],
+        "variants": [
+            {
+                "entryId": "ja:word:exchange-give",
+                "setId": "exchange-give-forms",
+                "path": ["polite-negative"],
+                "label": "あげません",
+                "reading": "あげません",
+                "state": "polite-negative"
+            }
+        ],
+        "sha256": "9c624fc161262bdb09dcee29ea3efb1d57b93042c663be253c11efe5de7c32de",
+        "frames": 19907,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "1309da316b3787561bb4838563e5049c956b23a1fca17f83b32018bc029c54ed"
+        }
+    }
+]
