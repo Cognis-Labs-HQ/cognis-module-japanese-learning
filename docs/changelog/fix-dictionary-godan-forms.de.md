@@ -19,3 +19,4 @@ Reguläre Godan-gu- und Suru-Regeln erfassen neue Wörterbuchverben. Suru nutzt 
 ## Commits
 
 - [5b21f1d5](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/5b21f1d569cac8d037c0c62503c96839d2e5056f)
+- [4233c508](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/4233c508ff1357283bcb523b810adf076308a3ed)
