@@ -17641,6 +17641,4042 @@
                     }
                 }
             ]
+        },
+        {
+            "id": "godan-ru",
+            "metadata": {
+                "labels": {
+                    "de": "Godan-Verben auf ru",
+                    "en": "Ru Godan Verbs",
+                    "id": "Verba Godan Ru",
+                    "ja": "ラ行五段動詞"
+                }
+            },
+            "matchTags": ["verb", "godan-ru"],
+            "baseState": "base",
+            "rules": [
+                {
+                    "id": "polite",
+                    "metadata": {
+                        "labels": {
+                            "de": "Höflich",
+                            "en": "Polite",
+                            "id": "Sopan",
+                            "ja": "丁寧形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "polite",
+                    "removeSuffix": "る",
+                    "append": "ります",
+                    "pronunciation": {
+                        "removeSuffix": "る",
+                        "append": "ります"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ prefix }}(höflich) {{ stem }}",
+                                "en": "{{ prefix }}(politely) {{ stem }}",
+                                "id": "{{ prefix }}(dengan sopan) {{ stem }}",
+                                "ja": "{{ prefix }}（丁寧に）{{ stem }}"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "negative",
+                    "metadata": {
+                        "labels": {
+                            "de": "Verneinung",
+                            "en": "Negative",
+                            "id": "Negatif",
+                            "ja": "否定形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "negative",
+                    "removeSuffix": "る",
+                    "append": "らない",
+                    "pronunciation": {
+                        "removeSuffix": "る",
+                        "append": "らない"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ prefix }}(nicht) {{ stem }}",
+                                "en": "{{ prefix }}(not) {{ stem }}",
+                                "id": "{{ prefix }}(tidak) {{ stem }}",
+                                "ja": "{{ prefix }}（否定）{{ stem }}"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "past",
+                    "metadata": {
+                        "labels": {
+                            "de": "Vergangenheit",
+                            "en": "Past",
+                            "id": "Lampau",
+                            "ja": "過去形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "past",
+                    "removeSuffix": "る",
+                    "append": "った",
+                    "pronunciation": {
+                        "removeSuffix": "る",
+                        "append": "った"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ prefix }}(zuvor) {{ stem }}",
+                                "en": "{{ prefix }}(previously) {{ stem }}",
+                                "id": "{{ prefix }}(sebelumnya) {{ stem }}",
+                                "ja": "{{ prefix }}（過去）{{ stem }}"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "te-form",
+                    "metadata": {
+                        "labels": {
+                            "de": "Te-Form",
+                            "en": "Te Form",
+                            "id": "Bentuk Te",
+                            "ja": "て形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "te-form",
+                    "removeSuffix": "る",
+                    "append": "って",
+                    "pronunciation": {
+                        "removeSuffix": "る",
+                        "append": "って"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ definition }} (und dann)",
+                                "en": "{{ definition }} (and then)",
+                                "id": "{{ definition }} (lalu)",
+                                "ja": "{{ definition }}（接続）"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "polite-past",
+                    "metadata": {
+                        "labels": {
+                            "de": "Höfliche Vergangenheit",
+                            "en": "Polite Past",
+                            "id": "Lampau Sopan",
+                            "ja": "丁寧過去形"
+                        }
+                    },
+                    "fromState": "polite",
+                    "toState": "polite-past",
+                    "removeSuffix": "ます",
+                    "append": "ました",
+                    "pronunciation": {
+                        "removeSuffix": "ます",
+                        "append": "ました"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ prefix }}(zuvor) {{ stem }}",
+                                "en": "{{ prefix }}(previously) {{ stem }}",
+                                "id": "{{ prefix }}(sebelumnya) {{ stem }}",
+                                "ja": "{{ prefix }}（過去）{{ stem }}"
+                            }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(höflich)",
+                                        "en": "(politely)",
+                                        "id": "(dengan sopan)",
+                                        "ja": "(丁寧に)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(höflich in der Vergangenheit)",
+                                        "en": "(politely in the past)",
+                                        "id": "(dengan sopan pada masa lampau)",
+                                        "ja": "(丁寧な過去)"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "polite-negative",
+                    "metadata": {
+                        "labels": {
+                            "de": "Höfliche Verneinung",
+                            "en": "Polite Negative",
+                            "id": "Negatif Sopan",
+                            "ja": "丁寧否定形"
+                        }
+                    },
+                    "fromState": "polite",
+                    "toState": "polite-negative",
+                    "removeSuffix": "ます",
+                    "append": "ません",
+                    "pronunciation": {
+                        "removeSuffix": "ます",
+                        "append": "ません"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ prefix }}(nicht) {{ stem }}",
+                                "en": "{{ prefix }}(not) {{ stem }}",
+                                "id": "{{ prefix }}(tidak) {{ stem }}",
+                                "ja": "{{ prefix }}（否定）{{ stem }}"
+                            }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(höflich)",
+                                        "en": "(politely)",
+                                        "id": "(dengan sopan)",
+                                        "ja": "(丁寧に)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(höflich nicht)",
+                                        "en": "(politely not)",
+                                        "id": "(dengan sopan tidak)",
+                                        "ja": "(丁寧な否定)"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "negative-past",
+                    "metadata": {
+                        "labels": {
+                            "de": "Verneinte Vergangenheit",
+                            "en": "Negative Past",
+                            "id": "Lampau Negatif",
+                            "ja": "否定過去形"
+                        }
+                    },
+                    "fromState": "negative",
+                    "toState": "negative-past",
+                    "removeSuffix": "ない",
+                    "append": "なかった",
+                    "pronunciation": {
+                        "removeSuffix": "ない",
+                        "append": "なかった"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ prefix }}(zuvor) {{ stem }}",
+                                "en": "{{ prefix }}(previously) {{ stem }}",
+                                "id": "{{ prefix }}(sebelumnya) {{ stem }}",
+                                "ja": "{{ prefix }}（過去）{{ stem }}"
+                            }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(nicht)",
+                                        "en": "(not)",
+                                        "id": "(tidak)",
+                                        "ja": "(否定)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(nicht in der Vergangenheit)",
+                                        "en": "(did not)",
+                                        "id": "(tidak pada masa lampau)",
+                                        "ja": "(否定過去)"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "negative-te",
+                    "metadata": {
+                        "labels": {
+                            "de": "Verneinte Te-Form",
+                            "en": "Negative Te Form",
+                            "id": "Bentuk Te Negatif",
+                            "ja": "否定て形"
+                        }
+                    },
+                    "fromState": "negative",
+                    "toState": "negative-te",
+                    "removeSuffix": "ない",
+                    "append": "なくて",
+                    "pronunciation": {
+                        "removeSuffix": "ない",
+                        "append": "なくて"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ definition }} (und dann)",
+                                "en": "{{ definition }} (and then)",
+                                "id": "{{ definition }} (lalu)",
+                                "ja": "{{ definition }}（接続）"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "desire",
+                    "metadata": {
+                        "labels": {
+                            "de": "Wunschform",
+                            "en": "Desire",
+                            "id": "Keinginan",
+                            "ja": "希望形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "desire",
+                    "removeSuffix": "る",
+                    "append": "りたい",
+                    "pronunciation": {
+                        "removeSuffix": "る",
+                        "append": "りたい"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ prefix }}(wollen) {{ stem }}",
+                                "en": "{{ prefix }}(want to) {{ stem }}",
+                                "id": "{{ prefix }}(ingin) {{ stem }}",
+                                "ja": "{{ prefix }}（希望）{{ stem }}"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "desire-negative",
+                    "metadata": {
+                        "labels": {
+                            "de": "Verneinte Wunschform",
+                            "en": "Negative Desire",
+                            "id": "Keinginan Negatif",
+                            "ja": "希望否定形"
+                        }
+                    },
+                    "fromState": "desire",
+                    "toState": "desire-negative",
+                    "removeSuffix": "たい",
+                    "append": "たくない",
+                    "pronunciation": {
+                        "removeSuffix": "たい",
+                        "append": "たくない"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ prefix }}(nicht) {{ stem }}",
+                                "en": "{{ prefix }}(not) {{ stem }}",
+                                "id": "{{ prefix }}(tidak) {{ stem }}",
+                                "ja": "{{ prefix }}（否定）{{ stem }}"
+                            }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(wollen)",
+                                        "en": "(want to)",
+                                        "id": "(ingin)",
+                                        "ja": "(希望)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(nicht wollen)",
+                                        "en": "(not want to)",
+                                        "id": "(tidak ingin)",
+                                        "ja": "(希望否定)"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "desire-past",
+                    "metadata": {
+                        "labels": {
+                            "de": "Wunsch-Vergangenheit",
+                            "en": "Past Desire",
+                            "id": "Keinginan Lampau",
+                            "ja": "希望過去形"
+                        }
+                    },
+                    "fromState": "desire",
+                    "toState": "desire-past",
+                    "removeSuffix": "たい",
+                    "append": "たかった",
+                    "pronunciation": {
+                        "removeSuffix": "たい",
+                        "append": "たかった"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ prefix }}(zuvor) {{ stem }}",
+                                "en": "{{ prefix }}(previously) {{ stem }}",
+                                "id": "{{ prefix }}(sebelumnya) {{ stem }}",
+                                "ja": "{{ prefix }}（過去）{{ stem }}"
+                            }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(wollen)",
+                                        "en": "(want to)",
+                                        "id": "(ingin)",
+                                        "ja": "(希望)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(gewollt haben)",
+                                        "en": "(have wanted to)",
+                                        "id": "(pernah ingin)",
+                                        "ja": "(希望過去)"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "desire-te",
+                    "metadata": {
+                        "labels": {
+                            "de": "Wunsch-Te-Form",
+                            "en": "Desire Te Form",
+                            "id": "Bentuk Te Keinginan",
+                            "ja": "希望て形"
+                        }
+                    },
+                    "fromState": "desire",
+                    "toState": "desire-te",
+                    "removeSuffix": "たい",
+                    "append": "たくて",
+                    "pronunciation": {
+                        "removeSuffix": "たい",
+                        "append": "たくて"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ definition }} (und dann)",
+                                "en": "{{ definition }} (and then)",
+                                "id": "{{ definition }} (lalu)",
+                                "ja": "{{ definition }}（接続）"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "causative",
+                    "metadata": {
+                        "labels": {
+                            "de": "Kausativ",
+                            "en": "Causative",
+                            "id": "Kausatif",
+                            "ja": "使役形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "causative",
+                    "removeSuffix": "る",
+                    "append": "らせる",
+                    "pronunciation": {
+                        "removeSuffix": "る",
+                        "append": "らせる"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ prefix }}(jemanden dazu bringen oder es zulassen) {{ stem }}",
+                                "en": "{{ prefix }}(make or let someone) {{ stem }}",
+                                "id": "{{ prefix }}(membuat atau membiarkan seseorang) {{ stem }}",
+                                "ja": "{{ prefix }}（使役）{{ stem }}"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "passive",
+                    "metadata": {
+                        "labels": {
+                            "de": "Passiv",
+                            "en": "Passive",
+                            "id": "Pasif",
+                            "ja": "受身形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "passive",
+                    "removeSuffix": "る",
+                    "append": "られる",
+                    "pronunciation": {
+                        "removeSuffix": "る",
+                        "append": "られる"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ prefix }}(passiv betroffen sein) {{ stem }}",
+                                "en": "{{ prefix }}(be passively affected) {{ stem }}",
+                                "id": "{{ prefix }}(terpengaruh secara pasif) {{ stem }}",
+                                "ja": "{{ prefix }}（受け身）{{ stem }}"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "potential",
+                    "metadata": {
+                        "labels": {
+                            "de": "Potential",
+                            "en": "Potential",
+                            "id": "Potensial",
+                            "ja": "可能形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "potential",
+                    "removeSuffix": "る",
+                    "append": "れる",
+                    "pronunciation": {
+                        "removeSuffix": "る",
+                        "append": "れる"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ prefix }}(fähig sein zu) {{ stem }}",
+                                "en": "{{ prefix }}(be able to) {{ stem }}",
+                                "id": "{{ prefix }}(dapat) {{ stem }}",
+                                "ja": "{{ prefix }}（可能）{{ stem }}"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "volitional",
+                    "metadata": {
+                        "labels": {
+                            "de": "Volitional",
+                            "en": "Volitional",
+                            "id": "Volisional",
+                            "ja": "意向形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "volitional",
+                    "removeSuffix": "る",
+                    "append": "ろう",
+                    "pronunciation": {
+                        "removeSuffix": "る",
+                        "append": "ろう"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ prefix }}(beabsichtigen zu) {{ stem }}",
+                                "en": "{{ prefix }}(intend to) {{ stem }}",
+                                "id": "{{ prefix }}(berniat untuk) {{ stem }}",
+                                "ja": "{{ prefix }}（意向）{{ stem }}"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "causative-negative",
+                    "metadata": {
+                        "labels": {
+                            "de": "Kausativ verneint",
+                            "en": "Causative Negative",
+                            "id": "Kausatif Negatif",
+                            "ja": "使役否定形"
+                        }
+                    },
+                    "fromState": "causative",
+                    "toState": "causative-negative",
+                    "removeSuffix": "る",
+                    "append": "ない",
+                    "pronunciation": {
+                        "removeSuffix": "る",
+                        "append": "ない"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ prefix }}(nicht) {{ stem }}",
+                                "en": "{{ prefix }}(not) {{ stem }}",
+                                "id": "{{ prefix }}(tidak) {{ stem }}",
+                                "ja": "{{ prefix }}（否定）{{ stem }}"
+                            }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(jemanden dazu bringen oder es zulassen)",
+                                        "en": "(make or let someone)",
+                                        "id": "(membuat atau membiarkan seseorang)",
+                                        "ja": "(使役)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(jemanden nicht dazu bringen oder es nicht zulassen)",
+                                        "en": "(not make or let someone)",
+                                        "id": "(tidak membuat atau membiarkan seseorang)",
+                                        "ja": "(使役否定)"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "causative-past",
+                    "metadata": {
+                        "labels": {
+                            "de": "Kausativ Vergangenheit",
+                            "en": "Causative Past",
+                            "id": "Lampau Kausatif",
+                            "ja": "使役過去形"
+                        }
+                    },
+                    "fromState": "causative",
+                    "toState": "causative-past",
+                    "removeSuffix": "る",
+                    "append": "た",
+                    "pronunciation": {
+                        "removeSuffix": "る",
+                        "append": "た"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ prefix }}(zuvor) {{ stem }}",
+                                "en": "{{ prefix }}(previously) {{ stem }}",
+                                "id": "{{ prefix }}(sebelumnya) {{ stem }}",
+                                "ja": "{{ prefix }}（過去）{{ stem }}"
+                            }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(jemanden dazu bringen oder es zulassen)",
+                                        "en": "(make or let someone)",
+                                        "id": "(membuat atau membiarkan seseorang)",
+                                        "ja": "(使役)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(jemanden dazu gebracht oder es zugelassen haben)",
+                                        "en": "(made or let someone)",
+                                        "id": "(telah membuat atau membiarkan seseorang)",
+                                        "ja": "(使役過去)"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "causative-te",
+                    "metadata": {
+                        "labels": {
+                            "de": "Kausativ Te-Form",
+                            "en": "Causative Te Form",
+                            "id": "Bentuk Te Kausatif",
+                            "ja": "使役て形"
+                        }
+                    },
+                    "fromState": "causative",
+                    "toState": "causative-te",
+                    "removeSuffix": "る",
+                    "append": "て",
+                    "pronunciation": {
+                        "removeSuffix": "る",
+                        "append": "て"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ definition }} (und dann)",
+                                "en": "{{ definition }} (and then)",
+                                "id": "{{ definition }} (lalu)",
+                                "ja": "{{ definition }}（接続）"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "causative-desire",
+                    "metadata": {
+                        "labels": {
+                            "de": "Kausativ-Wunsch",
+                            "en": "Causative Desire",
+                            "id": "Keinginan Kausatif",
+                            "ja": "使役希望形"
+                        }
+                    },
+                    "fromState": "causative",
+                    "toState": "causative-desire",
+                    "removeSuffix": "る",
+                    "append": "たい",
+                    "pronunciation": {
+                        "removeSuffix": "る",
+                        "append": "たい"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ prefix }}(wollen) {{ stem }}",
+                                "en": "{{ prefix }}(want to) {{ stem }}",
+                                "id": "{{ prefix }}(ingin) {{ stem }}",
+                                "ja": "{{ prefix }}（希望）{{ stem }}"
+                            }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(jemanden dazu bringen oder es zulassen)",
+                                        "en": "(make or let someone)",
+                                        "id": "(membuat atau membiarkan seseorang)",
+                                        "ja": "(使役)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(jemanden dazu bringen oder es zulassen wollen)",
+                                        "en": "(want to make or let someone)",
+                                        "id": "(ingin membuat atau membiarkan seseorang)",
+                                        "ja": "(使役希望)"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "causative-negative-desire",
+                    "metadata": {
+                        "labels": {
+                            "de": "Verneinter Kausativ-Wunsch",
+                            "en": "Negative Causative Desire",
+                            "id": "Keinginan Kausatif Negatif",
+                            "ja": "使役希望否定形"
+                        }
+                    },
+                    "fromState": "causative-desire",
+                    "toState": "causative-negative-desire",
+                    "removeSuffix": "たい",
+                    "append": "たくない",
+                    "pronunciation": {
+                        "removeSuffix": "たい",
+                        "append": "たくない"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ prefix }}(nicht) {{ stem }}",
+                                "en": "{{ prefix }}(not) {{ stem }}",
+                                "id": "{{ prefix }}(tidak) {{ stem }}",
+                                "ja": "{{ prefix }}（否定）{{ stem }}"
+                            }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(jemanden dazu bringen oder es zulassen wollen)",
+                                        "en": "(want to make or let someone)",
+                                        "id": "(ingin membuat atau membiarkan seseorang)",
+                                        "ja": "(使役希望)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(jemanden nicht dazu bringen oder es nicht zulassen wollen)",
+                                        "en": "(not want to make or let someone)",
+                                        "id": "(tidak ingin membuat atau membiarkan seseorang)",
+                                        "ja": "(使役希望否定)"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "causative-continuous-negative-desire",
+                    "metadata": {
+                        "labels": {
+                            "de": "Verknüpfter verneinter Kausativ-Wunsch",
+                            "en": "Continuative Negative Causative Desire",
+                            "id": "Keinginan Kausatif Negatif Berkelanjutan",
+                            "ja": "使役希望否定接続形"
+                        }
+                    },
+                    "fromState": "causative-negative-desire",
+                    "toState": "causative-continuous-negative-desire",
+                    "removeSuffix": "ない",
+                    "append": "なくて",
+                    "pronunciation": {
+                        "removeSuffix": "ない",
+                        "append": "なくて"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ definition }} (und dann)",
+                                "en": "{{ definition }} (and then)",
+                                "id": "{{ definition }} (lalu)",
+                                "ja": "{{ definition }}（接続）"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "id": "godan-u",
+            "metadata": {
+                "labels": {
+                    "de": "Godan-Verben auf u",
+                    "en": "U Godan Verbs",
+                    "id": "Verba Godan U",
+                    "ja": "ワ行五段動詞"
+                }
+            },
+            "matchTags": ["verb", "godan-u"],
+            "baseState": "base",
+            "rules": [
+                {
+                    "id": "polite",
+                    "metadata": {
+                        "labels": {
+                            "de": "Höflich",
+                            "en": "Polite",
+                            "id": "Sopan",
+                            "ja": "丁寧形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "polite",
+                    "removeSuffix": "う",
+                    "append": "います",
+                    "pronunciation": {
+                        "removeSuffix": "う",
+                        "append": "います"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ prefix }}(höflich) {{ stem }}",
+                                "en": "{{ prefix }}(politely) {{ stem }}",
+                                "id": "{{ prefix }}(dengan sopan) {{ stem }}",
+                                "ja": "{{ prefix }}（丁寧に）{{ stem }}"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "negative",
+                    "metadata": {
+                        "labels": {
+                            "de": "Verneinung",
+                            "en": "Negative",
+                            "id": "Negatif",
+                            "ja": "否定形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "negative",
+                    "removeSuffix": "う",
+                    "append": "わない",
+                    "pronunciation": {
+                        "removeSuffix": "う",
+                        "append": "わない"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ prefix }}(nicht) {{ stem }}",
+                                "en": "{{ prefix }}(not) {{ stem }}",
+                                "id": "{{ prefix }}(tidak) {{ stem }}",
+                                "ja": "{{ prefix }}（否定）{{ stem }}"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "past",
+                    "metadata": {
+                        "labels": {
+                            "de": "Vergangenheit",
+                            "en": "Past",
+                            "id": "Lampau",
+                            "ja": "過去形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "past",
+                    "removeSuffix": "う",
+                    "append": "った",
+                    "pronunciation": {
+                        "removeSuffix": "う",
+                        "append": "った"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ prefix }}(zuvor) {{ stem }}",
+                                "en": "{{ prefix }}(previously) {{ stem }}",
+                                "id": "{{ prefix }}(sebelumnya) {{ stem }}",
+                                "ja": "{{ prefix }}（過去）{{ stem }}"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "te-form",
+                    "metadata": {
+                        "labels": {
+                            "de": "Te-Form",
+                            "en": "Te Form",
+                            "id": "Bentuk Te",
+                            "ja": "て形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "te-form",
+                    "removeSuffix": "う",
+                    "append": "って",
+                    "pronunciation": {
+                        "removeSuffix": "う",
+                        "append": "って"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ definition }} (und dann)",
+                                "en": "{{ definition }} (and then)",
+                                "id": "{{ definition }} (lalu)",
+                                "ja": "{{ definition }}（接続）"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "polite-past",
+                    "metadata": {
+                        "labels": {
+                            "de": "Höfliche Vergangenheit",
+                            "en": "Polite Past",
+                            "id": "Lampau Sopan",
+                            "ja": "丁寧過去形"
+                        }
+                    },
+                    "fromState": "polite",
+                    "toState": "polite-past",
+                    "removeSuffix": "ます",
+                    "append": "ました",
+                    "pronunciation": {
+                        "removeSuffix": "ます",
+                        "append": "ました"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ prefix }}(zuvor) {{ stem }}",
+                                "en": "{{ prefix }}(previously) {{ stem }}",
+                                "id": "{{ prefix }}(sebelumnya) {{ stem }}",
+                                "ja": "{{ prefix }}（過去）{{ stem }}"
+                            }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(höflich)",
+                                        "en": "(politely)",
+                                        "id": "(dengan sopan)",
+                                        "ja": "(丁寧に)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(höflich in der Vergangenheit)",
+                                        "en": "(politely in the past)",
+                                        "id": "(dengan sopan pada masa lampau)",
+                                        "ja": "(丁寧な過去)"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "polite-negative",
+                    "metadata": {
+                        "labels": {
+                            "de": "Höfliche Verneinung",
+                            "en": "Polite Negative",
+                            "id": "Negatif Sopan",
+                            "ja": "丁寧否定形"
+                        }
+                    },
+                    "fromState": "polite",
+                    "toState": "polite-negative",
+                    "removeSuffix": "ます",
+                    "append": "ません",
+                    "pronunciation": {
+                        "removeSuffix": "ます",
+                        "append": "ません"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ prefix }}(nicht) {{ stem }}",
+                                "en": "{{ prefix }}(not) {{ stem }}",
+                                "id": "{{ prefix }}(tidak) {{ stem }}",
+                                "ja": "{{ prefix }}（否定）{{ stem }}"
+                            }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(höflich)",
+                                        "en": "(politely)",
+                                        "id": "(dengan sopan)",
+                                        "ja": "(丁寧に)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(höflich nicht)",
+                                        "en": "(politely not)",
+                                        "id": "(dengan sopan tidak)",
+                                        "ja": "(丁寧な否定)"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "negative-past",
+                    "metadata": {
+                        "labels": {
+                            "de": "Verneinte Vergangenheit",
+                            "en": "Negative Past",
+                            "id": "Lampau Negatif",
+                            "ja": "否定過去形"
+                        }
+                    },
+                    "fromState": "negative",
+                    "toState": "negative-past",
+                    "removeSuffix": "ない",
+                    "append": "なかった",
+                    "pronunciation": {
+                        "removeSuffix": "ない",
+                        "append": "なかった"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ prefix }}(zuvor) {{ stem }}",
+                                "en": "{{ prefix }}(previously) {{ stem }}",
+                                "id": "{{ prefix }}(sebelumnya) {{ stem }}",
+                                "ja": "{{ prefix }}（過去）{{ stem }}"
+                            }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(nicht)",
+                                        "en": "(not)",
+                                        "id": "(tidak)",
+                                        "ja": "(否定)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(nicht in der Vergangenheit)",
+                                        "en": "(did not)",
+                                        "id": "(tidak pada masa lampau)",
+                                        "ja": "(否定過去)"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "negative-te",
+                    "metadata": {
+                        "labels": {
+                            "de": "Verneinte Te-Form",
+                            "en": "Negative Te Form",
+                            "id": "Bentuk Te Negatif",
+                            "ja": "否定て形"
+                        }
+                    },
+                    "fromState": "negative",
+                    "toState": "negative-te",
+                    "removeSuffix": "ない",
+                    "append": "なくて",
+                    "pronunciation": {
+                        "removeSuffix": "ない",
+                        "append": "なくて"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ definition }} (und dann)",
+                                "en": "{{ definition }} (and then)",
+                                "id": "{{ definition }} (lalu)",
+                                "ja": "{{ definition }}（接続）"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "desire",
+                    "metadata": {
+                        "labels": {
+                            "de": "Wunschform",
+                            "en": "Desire",
+                            "id": "Keinginan",
+                            "ja": "希望形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "desire",
+                    "removeSuffix": "う",
+                    "append": "いたい",
+                    "pronunciation": {
+                        "removeSuffix": "う",
+                        "append": "いたい"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ prefix }}(wollen) {{ stem }}",
+                                "en": "{{ prefix }}(want to) {{ stem }}",
+                                "id": "{{ prefix }}(ingin) {{ stem }}",
+                                "ja": "{{ prefix }}（希望）{{ stem }}"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "desire-negative",
+                    "metadata": {
+                        "labels": {
+                            "de": "Verneinte Wunschform",
+                            "en": "Negative Desire",
+                            "id": "Keinginan Negatif",
+                            "ja": "希望否定形"
+                        }
+                    },
+                    "fromState": "desire",
+                    "toState": "desire-negative",
+                    "removeSuffix": "たい",
+                    "append": "たくない",
+                    "pronunciation": {
+                        "removeSuffix": "たい",
+                        "append": "たくない"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ prefix }}(nicht) {{ stem }}",
+                                "en": "{{ prefix }}(not) {{ stem }}",
+                                "id": "{{ prefix }}(tidak) {{ stem }}",
+                                "ja": "{{ prefix }}（否定）{{ stem }}"
+                            }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(wollen)",
+                                        "en": "(want to)",
+                                        "id": "(ingin)",
+                                        "ja": "(希望)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(nicht wollen)",
+                                        "en": "(not want to)",
+                                        "id": "(tidak ingin)",
+                                        "ja": "(希望否定)"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "desire-past",
+                    "metadata": {
+                        "labels": {
+                            "de": "Wunsch-Vergangenheit",
+                            "en": "Past Desire",
+                            "id": "Keinginan Lampau",
+                            "ja": "希望過去形"
+                        }
+                    },
+                    "fromState": "desire",
+                    "toState": "desire-past",
+                    "removeSuffix": "たい",
+                    "append": "たかった",
+                    "pronunciation": {
+                        "removeSuffix": "たい",
+                        "append": "たかった"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ prefix }}(zuvor) {{ stem }}",
+                                "en": "{{ prefix }}(previously) {{ stem }}",
+                                "id": "{{ prefix }}(sebelumnya) {{ stem }}",
+                                "ja": "{{ prefix }}（過去）{{ stem }}"
+                            }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(wollen)",
+                                        "en": "(want to)",
+                                        "id": "(ingin)",
+                                        "ja": "(希望)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(gewollt haben)",
+                                        "en": "(have wanted to)",
+                                        "id": "(pernah ingin)",
+                                        "ja": "(希望過去)"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "desire-te",
+                    "metadata": {
+                        "labels": {
+                            "de": "Wunsch-Te-Form",
+                            "en": "Desire Te Form",
+                            "id": "Bentuk Te Keinginan",
+                            "ja": "希望て形"
+                        }
+                    },
+                    "fromState": "desire",
+                    "toState": "desire-te",
+                    "removeSuffix": "たい",
+                    "append": "たくて",
+                    "pronunciation": {
+                        "removeSuffix": "たい",
+                        "append": "たくて"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ definition }} (und dann)",
+                                "en": "{{ definition }} (and then)",
+                                "id": "{{ definition }} (lalu)",
+                                "ja": "{{ definition }}（接続）"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "causative",
+                    "metadata": {
+                        "labels": {
+                            "de": "Kausativ",
+                            "en": "Causative",
+                            "id": "Kausatif",
+                            "ja": "使役形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "causative",
+                    "removeSuffix": "う",
+                    "append": "わせる",
+                    "pronunciation": {
+                        "removeSuffix": "う",
+                        "append": "わせる"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ prefix }}(jemanden dazu bringen oder es zulassen) {{ stem }}",
+                                "en": "{{ prefix }}(make or let someone) {{ stem }}",
+                                "id": "{{ prefix }}(membuat atau membiarkan seseorang) {{ stem }}",
+                                "ja": "{{ prefix }}（使役）{{ stem }}"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "passive",
+                    "metadata": {
+                        "labels": {
+                            "de": "Passiv",
+                            "en": "Passive",
+                            "id": "Pasif",
+                            "ja": "受身形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "passive",
+                    "removeSuffix": "う",
+                    "append": "われる",
+                    "pronunciation": {
+                        "removeSuffix": "う",
+                        "append": "われる"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ prefix }}(passiv betroffen sein) {{ stem }}",
+                                "en": "{{ prefix }}(be passively affected) {{ stem }}",
+                                "id": "{{ prefix }}(terpengaruh secara pasif) {{ stem }}",
+                                "ja": "{{ prefix }}（受け身）{{ stem }}"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "potential",
+                    "metadata": {
+                        "labels": {
+                            "de": "Potential",
+                            "en": "Potential",
+                            "id": "Potensial",
+                            "ja": "可能形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "potential",
+                    "removeSuffix": "う",
+                    "append": "える",
+                    "pronunciation": {
+                        "removeSuffix": "う",
+                        "append": "える"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ prefix }}(fähig sein zu) {{ stem }}",
+                                "en": "{{ prefix }}(be able to) {{ stem }}",
+                                "id": "{{ prefix }}(dapat) {{ stem }}",
+                                "ja": "{{ prefix }}（可能）{{ stem }}"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "volitional",
+                    "metadata": {
+                        "labels": {
+                            "de": "Volitional",
+                            "en": "Volitional",
+                            "id": "Volisional",
+                            "ja": "意向形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "volitional",
+                    "removeSuffix": "う",
+                    "append": "おう",
+                    "pronunciation": {
+                        "removeSuffix": "う",
+                        "append": "おう"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ prefix }}(beabsichtigen zu) {{ stem }}",
+                                "en": "{{ prefix }}(intend to) {{ stem }}",
+                                "id": "{{ prefix }}(berniat untuk) {{ stem }}",
+                                "ja": "{{ prefix }}（意向）{{ stem }}"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "causative-negative",
+                    "metadata": {
+                        "labels": {
+                            "de": "Kausativ verneint",
+                            "en": "Causative Negative",
+                            "id": "Kausatif Negatif",
+                            "ja": "使役否定形"
+                        }
+                    },
+                    "fromState": "causative",
+                    "toState": "causative-negative",
+                    "removeSuffix": "る",
+                    "append": "ない",
+                    "pronunciation": {
+                        "removeSuffix": "る",
+                        "append": "ない"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ prefix }}(nicht) {{ stem }}",
+                                "en": "{{ prefix }}(not) {{ stem }}",
+                                "id": "{{ prefix }}(tidak) {{ stem }}",
+                                "ja": "{{ prefix }}（否定）{{ stem }}"
+                            }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(jemanden dazu bringen oder es zulassen)",
+                                        "en": "(make or let someone)",
+                                        "id": "(membuat atau membiarkan seseorang)",
+                                        "ja": "(使役)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(jemanden nicht dazu bringen oder es nicht zulassen)",
+                                        "en": "(not make or let someone)",
+                                        "id": "(tidak membuat atau membiarkan seseorang)",
+                                        "ja": "(使役否定)"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "causative-past",
+                    "metadata": {
+                        "labels": {
+                            "de": "Kausativ Vergangenheit",
+                            "en": "Causative Past",
+                            "id": "Lampau Kausatif",
+                            "ja": "使役過去形"
+                        }
+                    },
+                    "fromState": "causative",
+                    "toState": "causative-past",
+                    "removeSuffix": "る",
+                    "append": "た",
+                    "pronunciation": {
+                        "removeSuffix": "る",
+                        "append": "た"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ prefix }}(zuvor) {{ stem }}",
+                                "en": "{{ prefix }}(previously) {{ stem }}",
+                                "id": "{{ prefix }}(sebelumnya) {{ stem }}",
+                                "ja": "{{ prefix }}（過去）{{ stem }}"
+                            }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(jemanden dazu bringen oder es zulassen)",
+                                        "en": "(make or let someone)",
+                                        "id": "(membuat atau membiarkan seseorang)",
+                                        "ja": "(使役)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(jemanden dazu gebracht oder es zugelassen haben)",
+                                        "en": "(made or let someone)",
+                                        "id": "(telah membuat atau membiarkan seseorang)",
+                                        "ja": "(使役過去)"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "causative-te",
+                    "metadata": {
+                        "labels": {
+                            "de": "Kausativ Te-Form",
+                            "en": "Causative Te Form",
+                            "id": "Bentuk Te Kausatif",
+                            "ja": "使役て形"
+                        }
+                    },
+                    "fromState": "causative",
+                    "toState": "causative-te",
+                    "removeSuffix": "る",
+                    "append": "て",
+                    "pronunciation": {
+                        "removeSuffix": "る",
+                        "append": "て"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ definition }} (und dann)",
+                                "en": "{{ definition }} (and then)",
+                                "id": "{{ definition }} (lalu)",
+                                "ja": "{{ definition }}（接続）"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "causative-desire",
+                    "metadata": {
+                        "labels": {
+                            "de": "Kausativ-Wunsch",
+                            "en": "Causative Desire",
+                            "id": "Keinginan Kausatif",
+                            "ja": "使役希望形"
+                        }
+                    },
+                    "fromState": "causative",
+                    "toState": "causative-desire",
+                    "removeSuffix": "る",
+                    "append": "たい",
+                    "pronunciation": {
+                        "removeSuffix": "る",
+                        "append": "たい"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ prefix }}(wollen) {{ stem }}",
+                                "en": "{{ prefix }}(want to) {{ stem }}",
+                                "id": "{{ prefix }}(ingin) {{ stem }}",
+                                "ja": "{{ prefix }}（希望）{{ stem }}"
+                            }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(jemanden dazu bringen oder es zulassen)",
+                                        "en": "(make or let someone)",
+                                        "id": "(membuat atau membiarkan seseorang)",
+                                        "ja": "(使役)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(jemanden dazu bringen oder es zulassen wollen)",
+                                        "en": "(want to make or let someone)",
+                                        "id": "(ingin membuat atau membiarkan seseorang)",
+                                        "ja": "(使役希望)"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "causative-negative-desire",
+                    "metadata": {
+                        "labels": {
+                            "de": "Verneinter Kausativ-Wunsch",
+                            "en": "Negative Causative Desire",
+                            "id": "Keinginan Kausatif Negatif",
+                            "ja": "使役希望否定形"
+                        }
+                    },
+                    "fromState": "causative-desire",
+                    "toState": "causative-negative-desire",
+                    "removeSuffix": "たい",
+                    "append": "たくない",
+                    "pronunciation": {
+                        "removeSuffix": "たい",
+                        "append": "たくない"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ prefix }}(nicht) {{ stem }}",
+                                "en": "{{ prefix }}(not) {{ stem }}",
+                                "id": "{{ prefix }}(tidak) {{ stem }}",
+                                "ja": "{{ prefix }}（否定）{{ stem }}"
+                            }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(jemanden dazu bringen oder es zulassen wollen)",
+                                        "en": "(want to make or let someone)",
+                                        "id": "(ingin membuat atau membiarkan seseorang)",
+                                        "ja": "(使役希望)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(jemanden nicht dazu bringen oder es nicht zulassen wollen)",
+                                        "en": "(not want to make or let someone)",
+                                        "id": "(tidak ingin membuat atau membiarkan seseorang)",
+                                        "ja": "(使役希望否定)"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "causative-continuous-negative-desire",
+                    "metadata": {
+                        "labels": {
+                            "de": "Verknüpfter verneinter Kausativ-Wunsch",
+                            "en": "Continuative Negative Causative Desire",
+                            "id": "Keinginan Kausatif Negatif Berkelanjutan",
+                            "ja": "使役希望否定接続形"
+                        }
+                    },
+                    "fromState": "causative-negative-desire",
+                    "toState": "causative-continuous-negative-desire",
+                    "removeSuffix": "ない",
+                    "append": "なくて",
+                    "pronunciation": {
+                        "removeSuffix": "ない",
+                        "append": "なくて"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ definition }} (und dann)",
+                                "en": "{{ definition }} (and then)",
+                                "id": "{{ definition }} (lalu)",
+                                "ja": "{{ definition }}（接続）"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "id": "godan-tsu",
+            "metadata": {
+                "labels": {
+                    "de": "Godan-Verben auf tsu",
+                    "en": "Tsu Godan Verbs",
+                    "id": "Verba Godan Tsu",
+                    "ja": "タ行五段動詞"
+                }
+            },
+            "matchTags": ["verb", "godan-tsu"],
+            "baseState": "base",
+            "rules": [
+                {
+                    "id": "polite",
+                    "metadata": {
+                        "labels": {
+                            "de": "Höflich",
+                            "en": "Polite",
+                            "id": "Sopan",
+                            "ja": "丁寧形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "polite",
+                    "removeSuffix": "つ",
+                    "append": "ちます",
+                    "pronunciation": {
+                        "removeSuffix": "つ",
+                        "append": "ちます"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ prefix }}(höflich) {{ stem }}",
+                                "en": "{{ prefix }}(politely) {{ stem }}",
+                                "id": "{{ prefix }}(dengan sopan) {{ stem }}",
+                                "ja": "{{ prefix }}（丁寧に）{{ stem }}"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "negative",
+                    "metadata": {
+                        "labels": {
+                            "de": "Verneinung",
+                            "en": "Negative",
+                            "id": "Negatif",
+                            "ja": "否定形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "negative",
+                    "removeSuffix": "つ",
+                    "append": "たない",
+                    "pronunciation": {
+                        "removeSuffix": "つ",
+                        "append": "たない"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ prefix }}(nicht) {{ stem }}",
+                                "en": "{{ prefix }}(not) {{ stem }}",
+                                "id": "{{ prefix }}(tidak) {{ stem }}",
+                                "ja": "{{ prefix }}（否定）{{ stem }}"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "past",
+                    "metadata": {
+                        "labels": {
+                            "de": "Vergangenheit",
+                            "en": "Past",
+                            "id": "Lampau",
+                            "ja": "過去形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "past",
+                    "removeSuffix": "つ",
+                    "append": "った",
+                    "pronunciation": {
+                        "removeSuffix": "つ",
+                        "append": "った"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ prefix }}(zuvor) {{ stem }}",
+                                "en": "{{ prefix }}(previously) {{ stem }}",
+                                "id": "{{ prefix }}(sebelumnya) {{ stem }}",
+                                "ja": "{{ prefix }}（過去）{{ stem }}"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "te-form",
+                    "metadata": {
+                        "labels": {
+                            "de": "Te-Form",
+                            "en": "Te Form",
+                            "id": "Bentuk Te",
+                            "ja": "て形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "te-form",
+                    "removeSuffix": "つ",
+                    "append": "って",
+                    "pronunciation": {
+                        "removeSuffix": "つ",
+                        "append": "って"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ definition }} (und dann)",
+                                "en": "{{ definition }} (and then)",
+                                "id": "{{ definition }} (lalu)",
+                                "ja": "{{ definition }}（接続）"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "polite-past",
+                    "metadata": {
+                        "labels": {
+                            "de": "Höfliche Vergangenheit",
+                            "en": "Polite Past",
+                            "id": "Lampau Sopan",
+                            "ja": "丁寧過去形"
+                        }
+                    },
+                    "fromState": "polite",
+                    "toState": "polite-past",
+                    "removeSuffix": "ます",
+                    "append": "ました",
+                    "pronunciation": {
+                        "removeSuffix": "ます",
+                        "append": "ました"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ prefix }}(zuvor) {{ stem }}",
+                                "en": "{{ prefix }}(previously) {{ stem }}",
+                                "id": "{{ prefix }}(sebelumnya) {{ stem }}",
+                                "ja": "{{ prefix }}（過去）{{ stem }}"
+                            }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(höflich)",
+                                        "en": "(politely)",
+                                        "id": "(dengan sopan)",
+                                        "ja": "(丁寧に)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(höflich in der Vergangenheit)",
+                                        "en": "(politely in the past)",
+                                        "id": "(dengan sopan pada masa lampau)",
+                                        "ja": "(丁寧な過去)"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "polite-negative",
+                    "metadata": {
+                        "labels": {
+                            "de": "Höfliche Verneinung",
+                            "en": "Polite Negative",
+                            "id": "Negatif Sopan",
+                            "ja": "丁寧否定形"
+                        }
+                    },
+                    "fromState": "polite",
+                    "toState": "polite-negative",
+                    "removeSuffix": "ます",
+                    "append": "ません",
+                    "pronunciation": {
+                        "removeSuffix": "ます",
+                        "append": "ません"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ prefix }}(nicht) {{ stem }}",
+                                "en": "{{ prefix }}(not) {{ stem }}",
+                                "id": "{{ prefix }}(tidak) {{ stem }}",
+                                "ja": "{{ prefix }}（否定）{{ stem }}"
+                            }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(höflich)",
+                                        "en": "(politely)",
+                                        "id": "(dengan sopan)",
+                                        "ja": "(丁寧に)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(höflich nicht)",
+                                        "en": "(politely not)",
+                                        "id": "(dengan sopan tidak)",
+                                        "ja": "(丁寧な否定)"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "negative-past",
+                    "metadata": {
+                        "labels": {
+                            "de": "Verneinte Vergangenheit",
+                            "en": "Negative Past",
+                            "id": "Lampau Negatif",
+                            "ja": "否定過去形"
+                        }
+                    },
+                    "fromState": "negative",
+                    "toState": "negative-past",
+                    "removeSuffix": "ない",
+                    "append": "なかった",
+                    "pronunciation": {
+                        "removeSuffix": "ない",
+                        "append": "なかった"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ prefix }}(zuvor) {{ stem }}",
+                                "en": "{{ prefix }}(previously) {{ stem }}",
+                                "id": "{{ prefix }}(sebelumnya) {{ stem }}",
+                                "ja": "{{ prefix }}（過去）{{ stem }}"
+                            }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(nicht)",
+                                        "en": "(not)",
+                                        "id": "(tidak)",
+                                        "ja": "(否定)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(nicht in der Vergangenheit)",
+                                        "en": "(did not)",
+                                        "id": "(tidak pada masa lampau)",
+                                        "ja": "(否定過去)"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "negative-te",
+                    "metadata": {
+                        "labels": {
+                            "de": "Verneinte Te-Form",
+                            "en": "Negative Te Form",
+                            "id": "Bentuk Te Negatif",
+                            "ja": "否定て形"
+                        }
+                    },
+                    "fromState": "negative",
+                    "toState": "negative-te",
+                    "removeSuffix": "ない",
+                    "append": "なくて",
+                    "pronunciation": {
+                        "removeSuffix": "ない",
+                        "append": "なくて"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ definition }} (und dann)",
+                                "en": "{{ definition }} (and then)",
+                                "id": "{{ definition }} (lalu)",
+                                "ja": "{{ definition }}（接続）"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "desire",
+                    "metadata": {
+                        "labels": {
+                            "de": "Wunschform",
+                            "en": "Desire",
+                            "id": "Keinginan",
+                            "ja": "希望形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "desire",
+                    "removeSuffix": "つ",
+                    "append": "ちたい",
+                    "pronunciation": {
+                        "removeSuffix": "つ",
+                        "append": "ちたい"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ prefix }}(wollen) {{ stem }}",
+                                "en": "{{ prefix }}(want to) {{ stem }}",
+                                "id": "{{ prefix }}(ingin) {{ stem }}",
+                                "ja": "{{ prefix }}（希望）{{ stem }}"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "desire-negative",
+                    "metadata": {
+                        "labels": {
+                            "de": "Verneinte Wunschform",
+                            "en": "Negative Desire",
+                            "id": "Keinginan Negatif",
+                            "ja": "希望否定形"
+                        }
+                    },
+                    "fromState": "desire",
+                    "toState": "desire-negative",
+                    "removeSuffix": "たい",
+                    "append": "たくない",
+                    "pronunciation": {
+                        "removeSuffix": "たい",
+                        "append": "たくない"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ prefix }}(nicht) {{ stem }}",
+                                "en": "{{ prefix }}(not) {{ stem }}",
+                                "id": "{{ prefix }}(tidak) {{ stem }}",
+                                "ja": "{{ prefix }}（否定）{{ stem }}"
+                            }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(wollen)",
+                                        "en": "(want to)",
+                                        "id": "(ingin)",
+                                        "ja": "(希望)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(nicht wollen)",
+                                        "en": "(not want to)",
+                                        "id": "(tidak ingin)",
+                                        "ja": "(希望否定)"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "desire-past",
+                    "metadata": {
+                        "labels": {
+                            "de": "Wunsch-Vergangenheit",
+                            "en": "Past Desire",
+                            "id": "Keinginan Lampau",
+                            "ja": "希望過去形"
+                        }
+                    },
+                    "fromState": "desire",
+                    "toState": "desire-past",
+                    "removeSuffix": "たい",
+                    "append": "たかった",
+                    "pronunciation": {
+                        "removeSuffix": "たい",
+                        "append": "たかった"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ prefix }}(zuvor) {{ stem }}",
+                                "en": "{{ prefix }}(previously) {{ stem }}",
+                                "id": "{{ prefix }}(sebelumnya) {{ stem }}",
+                                "ja": "{{ prefix }}（過去）{{ stem }}"
+                            }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(wollen)",
+                                        "en": "(want to)",
+                                        "id": "(ingin)",
+                                        "ja": "(希望)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(gewollt haben)",
+                                        "en": "(have wanted to)",
+                                        "id": "(pernah ingin)",
+                                        "ja": "(希望過去)"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "desire-te",
+                    "metadata": {
+                        "labels": {
+                            "de": "Wunsch-Te-Form",
+                            "en": "Desire Te Form",
+                            "id": "Bentuk Te Keinginan",
+                            "ja": "希望て形"
+                        }
+                    },
+                    "fromState": "desire",
+                    "toState": "desire-te",
+                    "removeSuffix": "たい",
+                    "append": "たくて",
+                    "pronunciation": {
+                        "removeSuffix": "たい",
+                        "append": "たくて"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ definition }} (und dann)",
+                                "en": "{{ definition }} (and then)",
+                                "id": "{{ definition }} (lalu)",
+                                "ja": "{{ definition }}（接続）"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "causative",
+                    "metadata": {
+                        "labels": {
+                            "de": "Kausativ",
+                            "en": "Causative",
+                            "id": "Kausatif",
+                            "ja": "使役形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "causative",
+                    "removeSuffix": "つ",
+                    "append": "たせる",
+                    "pronunciation": {
+                        "removeSuffix": "つ",
+                        "append": "たせる"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ prefix }}(jemanden dazu bringen oder es zulassen) {{ stem }}",
+                                "en": "{{ prefix }}(make or let someone) {{ stem }}",
+                                "id": "{{ prefix }}(membuat atau membiarkan seseorang) {{ stem }}",
+                                "ja": "{{ prefix }}（使役）{{ stem }}"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "passive",
+                    "metadata": {
+                        "labels": {
+                            "de": "Passiv",
+                            "en": "Passive",
+                            "id": "Pasif",
+                            "ja": "受身形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "passive",
+                    "removeSuffix": "つ",
+                    "append": "たれる",
+                    "pronunciation": {
+                        "removeSuffix": "つ",
+                        "append": "たれる"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ prefix }}(passiv betroffen sein) {{ stem }}",
+                                "en": "{{ prefix }}(be passively affected) {{ stem }}",
+                                "id": "{{ prefix }}(terpengaruh secara pasif) {{ stem }}",
+                                "ja": "{{ prefix }}（受け身）{{ stem }}"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "potential",
+                    "metadata": {
+                        "labels": {
+                            "de": "Potential",
+                            "en": "Potential",
+                            "id": "Potensial",
+                            "ja": "可能形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "potential",
+                    "removeSuffix": "つ",
+                    "append": "てる",
+                    "pronunciation": {
+                        "removeSuffix": "つ",
+                        "append": "てる"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ prefix }}(fähig sein zu) {{ stem }}",
+                                "en": "{{ prefix }}(be able to) {{ stem }}",
+                                "id": "{{ prefix }}(dapat) {{ stem }}",
+                                "ja": "{{ prefix }}（可能）{{ stem }}"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "volitional",
+                    "metadata": {
+                        "labels": {
+                            "de": "Volitional",
+                            "en": "Volitional",
+                            "id": "Volisional",
+                            "ja": "意向形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "volitional",
+                    "removeSuffix": "つ",
+                    "append": "とう",
+                    "pronunciation": {
+                        "removeSuffix": "つ",
+                        "append": "とう"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ prefix }}(beabsichtigen zu) {{ stem }}",
+                                "en": "{{ prefix }}(intend to) {{ stem }}",
+                                "id": "{{ prefix }}(berniat untuk) {{ stem }}",
+                                "ja": "{{ prefix }}（意向）{{ stem }}"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "causative-negative",
+                    "metadata": {
+                        "labels": {
+                            "de": "Kausativ verneint",
+                            "en": "Causative Negative",
+                            "id": "Kausatif Negatif",
+                            "ja": "使役否定形"
+                        }
+                    },
+                    "fromState": "causative",
+                    "toState": "causative-negative",
+                    "removeSuffix": "る",
+                    "append": "ない",
+                    "pronunciation": {
+                        "removeSuffix": "る",
+                        "append": "ない"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ prefix }}(nicht) {{ stem }}",
+                                "en": "{{ prefix }}(not) {{ stem }}",
+                                "id": "{{ prefix }}(tidak) {{ stem }}",
+                                "ja": "{{ prefix }}（否定）{{ stem }}"
+                            }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(jemanden dazu bringen oder es zulassen)",
+                                        "en": "(make or let someone)",
+                                        "id": "(membuat atau membiarkan seseorang)",
+                                        "ja": "(使役)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(jemanden nicht dazu bringen oder es nicht zulassen)",
+                                        "en": "(not make or let someone)",
+                                        "id": "(tidak membuat atau membiarkan seseorang)",
+                                        "ja": "(使役否定)"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "causative-past",
+                    "metadata": {
+                        "labels": {
+                            "de": "Kausativ Vergangenheit",
+                            "en": "Causative Past",
+                            "id": "Lampau Kausatif",
+                            "ja": "使役過去形"
+                        }
+                    },
+                    "fromState": "causative",
+                    "toState": "causative-past",
+                    "removeSuffix": "る",
+                    "append": "た",
+                    "pronunciation": {
+                        "removeSuffix": "る",
+                        "append": "た"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ prefix }}(zuvor) {{ stem }}",
+                                "en": "{{ prefix }}(previously) {{ stem }}",
+                                "id": "{{ prefix }}(sebelumnya) {{ stem }}",
+                                "ja": "{{ prefix }}（過去）{{ stem }}"
+                            }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(jemanden dazu bringen oder es zulassen)",
+                                        "en": "(make or let someone)",
+                                        "id": "(membuat atau membiarkan seseorang)",
+                                        "ja": "(使役)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(jemanden dazu gebracht oder es zugelassen haben)",
+                                        "en": "(made or let someone)",
+                                        "id": "(telah membuat atau membiarkan seseorang)",
+                                        "ja": "(使役過去)"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "causative-te",
+                    "metadata": {
+                        "labels": {
+                            "de": "Kausativ Te-Form",
+                            "en": "Causative Te Form",
+                            "id": "Bentuk Te Kausatif",
+                            "ja": "使役て形"
+                        }
+                    },
+                    "fromState": "causative",
+                    "toState": "causative-te",
+                    "removeSuffix": "る",
+                    "append": "て",
+                    "pronunciation": {
+                        "removeSuffix": "る",
+                        "append": "て"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ definition }} (und dann)",
+                                "en": "{{ definition }} (and then)",
+                                "id": "{{ definition }} (lalu)",
+                                "ja": "{{ definition }}（接続）"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "causative-desire",
+                    "metadata": {
+                        "labels": {
+                            "de": "Kausativ-Wunsch",
+                            "en": "Causative Desire",
+                            "id": "Keinginan Kausatif",
+                            "ja": "使役希望形"
+                        }
+                    },
+                    "fromState": "causative",
+                    "toState": "causative-desire",
+                    "removeSuffix": "る",
+                    "append": "たい",
+                    "pronunciation": {
+                        "removeSuffix": "る",
+                        "append": "たい"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ prefix }}(wollen) {{ stem }}",
+                                "en": "{{ prefix }}(want to) {{ stem }}",
+                                "id": "{{ prefix }}(ingin) {{ stem }}",
+                                "ja": "{{ prefix }}（希望）{{ stem }}"
+                            }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(jemanden dazu bringen oder es zulassen)",
+                                        "en": "(make or let someone)",
+                                        "id": "(membuat atau membiarkan seseorang)",
+                                        "ja": "(使役)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(jemanden dazu bringen oder es zulassen wollen)",
+                                        "en": "(want to make or let someone)",
+                                        "id": "(ingin membuat atau membiarkan seseorang)",
+                                        "ja": "(使役希望)"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "causative-negative-desire",
+                    "metadata": {
+                        "labels": {
+                            "de": "Verneinter Kausativ-Wunsch",
+                            "en": "Negative Causative Desire",
+                            "id": "Keinginan Kausatif Negatif",
+                            "ja": "使役希望否定形"
+                        }
+                    },
+                    "fromState": "causative-desire",
+                    "toState": "causative-negative-desire",
+                    "removeSuffix": "たい",
+                    "append": "たくない",
+                    "pronunciation": {
+                        "removeSuffix": "たい",
+                        "append": "たくない"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ prefix }}(nicht) {{ stem }}",
+                                "en": "{{ prefix }}(not) {{ stem }}",
+                                "id": "{{ prefix }}(tidak) {{ stem }}",
+                                "ja": "{{ prefix }}（否定）{{ stem }}"
+                            }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(jemanden dazu bringen oder es zulassen wollen)",
+                                        "en": "(want to make or let someone)",
+                                        "id": "(ingin membuat atau membiarkan seseorang)",
+                                        "ja": "(使役希望)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(jemanden nicht dazu bringen oder es nicht zulassen wollen)",
+                                        "en": "(not want to make or let someone)",
+                                        "id": "(tidak ingin membuat atau membiarkan seseorang)",
+                                        "ja": "(使役希望否定)"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "causative-continuous-negative-desire",
+                    "metadata": {
+                        "labels": {
+                            "de": "Verknüpfter verneinter Kausativ-Wunsch",
+                            "en": "Continuative Negative Causative Desire",
+                            "id": "Keinginan Kausatif Negatif Berkelanjutan",
+                            "ja": "使役希望否定接続形"
+                        }
+                    },
+                    "fromState": "causative-negative-desire",
+                    "toState": "causative-continuous-negative-desire",
+                    "removeSuffix": "ない",
+                    "append": "なくて",
+                    "pronunciation": {
+                        "removeSuffix": "ない",
+                        "append": "なくて"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ definition }} (und dann)",
+                                "en": "{{ definition }} (and then)",
+                                "id": "{{ definition }} (lalu)",
+                                "ja": "{{ definition }}（接続）"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "id": "godan-nu",
+            "metadata": {
+                "labels": {
+                    "de": "Godan-Verben auf nu",
+                    "en": "Nu Godan Verbs",
+                    "id": "Verba Godan Nu",
+                    "ja": "ナ行五段動詞"
+                }
+            },
+            "matchTags": ["verb", "godan-nu"],
+            "baseState": "base",
+            "rules": [
+                {
+                    "id": "polite",
+                    "metadata": {
+                        "labels": {
+                            "de": "Höflich",
+                            "en": "Polite",
+                            "id": "Sopan",
+                            "ja": "丁寧形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "polite",
+                    "removeSuffix": "ぬ",
+                    "append": "にます",
+                    "pronunciation": {
+                        "removeSuffix": "ぬ",
+                        "append": "にます"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ prefix }}(höflich) {{ stem }}",
+                                "en": "{{ prefix }}(politely) {{ stem }}",
+                                "id": "{{ prefix }}(dengan sopan) {{ stem }}",
+                                "ja": "{{ prefix }}（丁寧に）{{ stem }}"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "negative",
+                    "metadata": {
+                        "labels": {
+                            "de": "Verneinung",
+                            "en": "Negative",
+                            "id": "Negatif",
+                            "ja": "否定形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "negative",
+                    "removeSuffix": "ぬ",
+                    "append": "なない",
+                    "pronunciation": {
+                        "removeSuffix": "ぬ",
+                        "append": "なない"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ prefix }}(nicht) {{ stem }}",
+                                "en": "{{ prefix }}(not) {{ stem }}",
+                                "id": "{{ prefix }}(tidak) {{ stem }}",
+                                "ja": "{{ prefix }}（否定）{{ stem }}"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "past",
+                    "metadata": {
+                        "labels": {
+                            "de": "Vergangenheit",
+                            "en": "Past",
+                            "id": "Lampau",
+                            "ja": "過去形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "past",
+                    "removeSuffix": "ぬ",
+                    "append": "んだ",
+                    "pronunciation": {
+                        "removeSuffix": "ぬ",
+                        "append": "んだ"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ prefix }}(zuvor) {{ stem }}",
+                                "en": "{{ prefix }}(previously) {{ stem }}",
+                                "id": "{{ prefix }}(sebelumnya) {{ stem }}",
+                                "ja": "{{ prefix }}（過去）{{ stem }}"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "te-form",
+                    "metadata": {
+                        "labels": {
+                            "de": "Te-Form",
+                            "en": "Te Form",
+                            "id": "Bentuk Te",
+                            "ja": "て形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "te-form",
+                    "removeSuffix": "ぬ",
+                    "append": "んで",
+                    "pronunciation": {
+                        "removeSuffix": "ぬ",
+                        "append": "んで"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ definition }} (und dann)",
+                                "en": "{{ definition }} (and then)",
+                                "id": "{{ definition }} (lalu)",
+                                "ja": "{{ definition }}（接続）"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "polite-past",
+                    "metadata": {
+                        "labels": {
+                            "de": "Höfliche Vergangenheit",
+                            "en": "Polite Past",
+                            "id": "Lampau Sopan",
+                            "ja": "丁寧過去形"
+                        }
+                    },
+                    "fromState": "polite",
+                    "toState": "polite-past",
+                    "removeSuffix": "ます",
+                    "append": "ました",
+                    "pronunciation": {
+                        "removeSuffix": "ます",
+                        "append": "ました"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ prefix }}(zuvor) {{ stem }}",
+                                "en": "{{ prefix }}(previously) {{ stem }}",
+                                "id": "{{ prefix }}(sebelumnya) {{ stem }}",
+                                "ja": "{{ prefix }}（過去）{{ stem }}"
+                            }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(höflich)",
+                                        "en": "(politely)",
+                                        "id": "(dengan sopan)",
+                                        "ja": "(丁寧に)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(höflich in der Vergangenheit)",
+                                        "en": "(politely in the past)",
+                                        "id": "(dengan sopan pada masa lampau)",
+                                        "ja": "(丁寧な過去)"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "polite-negative",
+                    "metadata": {
+                        "labels": {
+                            "de": "Höfliche Verneinung",
+                            "en": "Polite Negative",
+                            "id": "Negatif Sopan",
+                            "ja": "丁寧否定形"
+                        }
+                    },
+                    "fromState": "polite",
+                    "toState": "polite-negative",
+                    "removeSuffix": "ます",
+                    "append": "ません",
+                    "pronunciation": {
+                        "removeSuffix": "ます",
+                        "append": "ません"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ prefix }}(nicht) {{ stem }}",
+                                "en": "{{ prefix }}(not) {{ stem }}",
+                                "id": "{{ prefix }}(tidak) {{ stem }}",
+                                "ja": "{{ prefix }}（否定）{{ stem }}"
+                            }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(höflich)",
+                                        "en": "(politely)",
+                                        "id": "(dengan sopan)",
+                                        "ja": "(丁寧に)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(höflich nicht)",
+                                        "en": "(politely not)",
+                                        "id": "(dengan sopan tidak)",
+                                        "ja": "(丁寧な否定)"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "negative-past",
+                    "metadata": {
+                        "labels": {
+                            "de": "Verneinte Vergangenheit",
+                            "en": "Negative Past",
+                            "id": "Lampau Negatif",
+                            "ja": "否定過去形"
+                        }
+                    },
+                    "fromState": "negative",
+                    "toState": "negative-past",
+                    "removeSuffix": "ない",
+                    "append": "なかった",
+                    "pronunciation": {
+                        "removeSuffix": "ない",
+                        "append": "なかった"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ prefix }}(zuvor) {{ stem }}",
+                                "en": "{{ prefix }}(previously) {{ stem }}",
+                                "id": "{{ prefix }}(sebelumnya) {{ stem }}",
+                                "ja": "{{ prefix }}（過去）{{ stem }}"
+                            }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(nicht)",
+                                        "en": "(not)",
+                                        "id": "(tidak)",
+                                        "ja": "(否定)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(nicht in der Vergangenheit)",
+                                        "en": "(did not)",
+                                        "id": "(tidak pada masa lampau)",
+                                        "ja": "(否定過去)"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "negative-te",
+                    "metadata": {
+                        "labels": {
+                            "de": "Verneinte Te-Form",
+                            "en": "Negative Te Form",
+                            "id": "Bentuk Te Negatif",
+                            "ja": "否定て形"
+                        }
+                    },
+                    "fromState": "negative",
+                    "toState": "negative-te",
+                    "removeSuffix": "ない",
+                    "append": "なくて",
+                    "pronunciation": {
+                        "removeSuffix": "ない",
+                        "append": "なくて"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ definition }} (und dann)",
+                                "en": "{{ definition }} (and then)",
+                                "id": "{{ definition }} (lalu)",
+                                "ja": "{{ definition }}（接続）"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "desire",
+                    "metadata": {
+                        "labels": {
+                            "de": "Wunschform",
+                            "en": "Desire",
+                            "id": "Keinginan",
+                            "ja": "希望形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "desire",
+                    "removeSuffix": "ぬ",
+                    "append": "にたい",
+                    "pronunciation": {
+                        "removeSuffix": "ぬ",
+                        "append": "にたい"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ prefix }}(wollen) {{ stem }}",
+                                "en": "{{ prefix }}(want to) {{ stem }}",
+                                "id": "{{ prefix }}(ingin) {{ stem }}",
+                                "ja": "{{ prefix }}（希望）{{ stem }}"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "desire-negative",
+                    "metadata": {
+                        "labels": {
+                            "de": "Verneinte Wunschform",
+                            "en": "Negative Desire",
+                            "id": "Keinginan Negatif",
+                            "ja": "希望否定形"
+                        }
+                    },
+                    "fromState": "desire",
+                    "toState": "desire-negative",
+                    "removeSuffix": "たい",
+                    "append": "たくない",
+                    "pronunciation": {
+                        "removeSuffix": "たい",
+                        "append": "たくない"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ prefix }}(nicht) {{ stem }}",
+                                "en": "{{ prefix }}(not) {{ stem }}",
+                                "id": "{{ prefix }}(tidak) {{ stem }}",
+                                "ja": "{{ prefix }}（否定）{{ stem }}"
+                            }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(wollen)",
+                                        "en": "(want to)",
+                                        "id": "(ingin)",
+                                        "ja": "(希望)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(nicht wollen)",
+                                        "en": "(not want to)",
+                                        "id": "(tidak ingin)",
+                                        "ja": "(希望否定)"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "desire-past",
+                    "metadata": {
+                        "labels": {
+                            "de": "Wunsch-Vergangenheit",
+                            "en": "Past Desire",
+                            "id": "Keinginan Lampau",
+                            "ja": "希望過去形"
+                        }
+                    },
+                    "fromState": "desire",
+                    "toState": "desire-past",
+                    "removeSuffix": "たい",
+                    "append": "たかった",
+                    "pronunciation": {
+                        "removeSuffix": "たい",
+                        "append": "たかった"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ prefix }}(zuvor) {{ stem }}",
+                                "en": "{{ prefix }}(previously) {{ stem }}",
+                                "id": "{{ prefix }}(sebelumnya) {{ stem }}",
+                                "ja": "{{ prefix }}（過去）{{ stem }}"
+                            }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(wollen)",
+                                        "en": "(want to)",
+                                        "id": "(ingin)",
+                                        "ja": "(希望)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(gewollt haben)",
+                                        "en": "(have wanted to)",
+                                        "id": "(pernah ingin)",
+                                        "ja": "(希望過去)"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "desire-te",
+                    "metadata": {
+                        "labels": {
+                            "de": "Wunsch-Te-Form",
+                            "en": "Desire Te Form",
+                            "id": "Bentuk Te Keinginan",
+                            "ja": "希望て形"
+                        }
+                    },
+                    "fromState": "desire",
+                    "toState": "desire-te",
+                    "removeSuffix": "たい",
+                    "append": "たくて",
+                    "pronunciation": {
+                        "removeSuffix": "たい",
+                        "append": "たくて"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ definition }} (und dann)",
+                                "en": "{{ definition }} (and then)",
+                                "id": "{{ definition }} (lalu)",
+                                "ja": "{{ definition }}（接続）"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "causative",
+                    "metadata": {
+                        "labels": {
+                            "de": "Kausativ",
+                            "en": "Causative",
+                            "id": "Kausatif",
+                            "ja": "使役形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "causative",
+                    "removeSuffix": "ぬ",
+                    "append": "なせる",
+                    "pronunciation": {
+                        "removeSuffix": "ぬ",
+                        "append": "なせる"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ prefix }}(jemanden dazu bringen oder es zulassen) {{ stem }}",
+                                "en": "{{ prefix }}(make or let someone) {{ stem }}",
+                                "id": "{{ prefix }}(membuat atau membiarkan seseorang) {{ stem }}",
+                                "ja": "{{ prefix }}（使役）{{ stem }}"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "passive",
+                    "metadata": {
+                        "labels": {
+                            "de": "Passiv",
+                            "en": "Passive",
+                            "id": "Pasif",
+                            "ja": "受身形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "passive",
+                    "removeSuffix": "ぬ",
+                    "append": "なれる",
+                    "pronunciation": {
+                        "removeSuffix": "ぬ",
+                        "append": "なれる"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ prefix }}(passiv betroffen sein) {{ stem }}",
+                                "en": "{{ prefix }}(be passively affected) {{ stem }}",
+                                "id": "{{ prefix }}(terpengaruh secara pasif) {{ stem }}",
+                                "ja": "{{ prefix }}（受け身）{{ stem }}"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "potential",
+                    "metadata": {
+                        "labels": {
+                            "de": "Potential",
+                            "en": "Potential",
+                            "id": "Potensial",
+                            "ja": "可能形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "potential",
+                    "removeSuffix": "ぬ",
+                    "append": "ねる",
+                    "pronunciation": {
+                        "removeSuffix": "ぬ",
+                        "append": "ねる"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ prefix }}(fähig sein zu) {{ stem }}",
+                                "en": "{{ prefix }}(be able to) {{ stem }}",
+                                "id": "{{ prefix }}(dapat) {{ stem }}",
+                                "ja": "{{ prefix }}（可能）{{ stem }}"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "volitional",
+                    "metadata": {
+                        "labels": {
+                            "de": "Volitional",
+                            "en": "Volitional",
+                            "id": "Volisional",
+                            "ja": "意向形"
+                        }
+                    },
+                    "fromState": "base",
+                    "toState": "volitional",
+                    "removeSuffix": "ぬ",
+                    "append": "のう",
+                    "pronunciation": {
+                        "removeSuffix": "ぬ",
+                        "append": "のう"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ prefix }}(beabsichtigen zu) {{ stem }}",
+                                "en": "{{ prefix }}(intend to) {{ stem }}",
+                                "id": "{{ prefix }}(berniat untuk) {{ stem }}",
+                                "ja": "{{ prefix }}（意向）{{ stem }}"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "causative-negative",
+                    "metadata": {
+                        "labels": {
+                            "de": "Kausativ verneint",
+                            "en": "Causative Negative",
+                            "id": "Kausatif Negatif",
+                            "ja": "使役否定形"
+                        }
+                    },
+                    "fromState": "causative",
+                    "toState": "causative-negative",
+                    "removeSuffix": "る",
+                    "append": "ない",
+                    "pronunciation": {
+                        "removeSuffix": "る",
+                        "append": "ない"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ prefix }}(nicht) {{ stem }}",
+                                "en": "{{ prefix }}(not) {{ stem }}",
+                                "id": "{{ prefix }}(tidak) {{ stem }}",
+                                "ja": "{{ prefix }}（否定）{{ stem }}"
+                            }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(jemanden dazu bringen oder es zulassen)",
+                                        "en": "(make or let someone)",
+                                        "id": "(membuat atau membiarkan seseorang)",
+                                        "ja": "(使役)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(jemanden nicht dazu bringen oder es nicht zulassen)",
+                                        "en": "(not make or let someone)",
+                                        "id": "(tidak membuat atau membiarkan seseorang)",
+                                        "ja": "(使役否定)"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "causative-past",
+                    "metadata": {
+                        "labels": {
+                            "de": "Kausativ Vergangenheit",
+                            "en": "Causative Past",
+                            "id": "Lampau Kausatif",
+                            "ja": "使役過去形"
+                        }
+                    },
+                    "fromState": "causative",
+                    "toState": "causative-past",
+                    "removeSuffix": "る",
+                    "append": "た",
+                    "pronunciation": {
+                        "removeSuffix": "る",
+                        "append": "た"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ prefix }}(zuvor) {{ stem }}",
+                                "en": "{{ prefix }}(previously) {{ stem }}",
+                                "id": "{{ prefix }}(sebelumnya) {{ stem }}",
+                                "ja": "{{ prefix }}（過去）{{ stem }}"
+                            }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(jemanden dazu bringen oder es zulassen)",
+                                        "en": "(make or let someone)",
+                                        "id": "(membuat atau membiarkan seseorang)",
+                                        "ja": "(使役)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(jemanden dazu gebracht oder es zugelassen haben)",
+                                        "en": "(made or let someone)",
+                                        "id": "(telah membuat atau membiarkan seseorang)",
+                                        "ja": "(使役過去)"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "causative-te",
+                    "metadata": {
+                        "labels": {
+                            "de": "Kausativ Te-Form",
+                            "en": "Causative Te Form",
+                            "id": "Bentuk Te Kausatif",
+                            "ja": "使役て形"
+                        }
+                    },
+                    "fromState": "causative",
+                    "toState": "causative-te",
+                    "removeSuffix": "る",
+                    "append": "て",
+                    "pronunciation": {
+                        "removeSuffix": "る",
+                        "append": "て"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ definition }} (und dann)",
+                                "en": "{{ definition }} (and then)",
+                                "id": "{{ definition }} (lalu)",
+                                "ja": "{{ definition }}（接続）"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "causative-desire",
+                    "metadata": {
+                        "labels": {
+                            "de": "Kausativ-Wunsch",
+                            "en": "Causative Desire",
+                            "id": "Keinginan Kausatif",
+                            "ja": "使役希望形"
+                        }
+                    },
+                    "fromState": "causative",
+                    "toState": "causative-desire",
+                    "removeSuffix": "る",
+                    "append": "たい",
+                    "pronunciation": {
+                        "removeSuffix": "る",
+                        "append": "たい"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ prefix }}(wollen) {{ stem }}",
+                                "en": "{{ prefix }}(want to) {{ stem }}",
+                                "id": "{{ prefix }}(ingin) {{ stem }}",
+                                "ja": "{{ prefix }}（希望）{{ stem }}"
+                            }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(jemanden dazu bringen oder es zulassen)",
+                                        "en": "(make or let someone)",
+                                        "id": "(membuat atau membiarkan seseorang)",
+                                        "ja": "(使役)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(jemanden dazu bringen oder es zulassen wollen)",
+                                        "en": "(want to make or let someone)",
+                                        "id": "(ingin membuat atau membiarkan seseorang)",
+                                        "ja": "(使役希望)"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "causative-negative-desire",
+                    "metadata": {
+                        "labels": {
+                            "de": "Verneinter Kausativ-Wunsch",
+                            "en": "Negative Causative Desire",
+                            "id": "Keinginan Kausatif Negatif",
+                            "ja": "使役希望否定形"
+                        }
+                    },
+                    "fromState": "causative-desire",
+                    "toState": "causative-negative-desire",
+                    "removeSuffix": "たい",
+                    "append": "たくない",
+                    "pronunciation": {
+                        "removeSuffix": "たい",
+                        "append": "たくない"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ prefix }}(nicht) {{ stem }}",
+                                "en": "{{ prefix }}(not) {{ stem }}",
+                                "id": "{{ prefix }}(tidak) {{ stem }}",
+                                "ja": "{{ prefix }}（否定）{{ stem }}"
+                            }
+                        },
+                        "replacements": [
+                            {
+                                "match": {
+                                    "labels": {
+                                        "de": "(jemanden dazu bringen oder es zulassen wollen)",
+                                        "en": "(want to make or let someone)",
+                                        "id": "(ingin membuat atau membiarkan seseorang)",
+                                        "ja": "(使役希望)"
+                                    }
+                                },
+                                "replacement": {
+                                    "labels": {
+                                        "de": "(jemanden nicht dazu bringen oder es nicht zulassen wollen)",
+                                        "en": "(not want to make or let someone)",
+                                        "id": "(tidak ingin membuat atau membiarkan seseorang)",
+                                        "ja": "(使役希望否定)"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "causative-continuous-negative-desire",
+                    "metadata": {
+                        "labels": {
+                            "de": "Verknüpfter verneinter Kausativ-Wunsch",
+                            "en": "Continuative Negative Causative Desire",
+                            "id": "Keinginan Kausatif Negatif Berkelanjutan",
+                            "ja": "使役希望否定接続形"
+                        }
+                    },
+                    "fromState": "causative-negative-desire",
+                    "toState": "causative-continuous-negative-desire",
+                    "removeSuffix": "ない",
+                    "append": "なくて",
+                    "pronunciation": {
+                        "removeSuffix": "ない",
+                        "append": "なくて"
+                    },
+                    "definitionTransform": {
+                        "matchPrefix": {
+                            "labels": {
+                                "de": "zu ",
+                                "en": "to ",
+                                "id": "untuk ",
+                                "ja": "〜"
+                            }
+                        },
+                        "template": {
+                            "labels": {
+                                "de": "{{ definition }} (und dann)",
+                                "en": "{{ definition }} (and then)",
+                                "id": "{{ definition }} (lalu)",
+                                "ja": "{{ definition }}（接続）"
+                            }
+                        }
+                    }
+                }
+            ]
         }
     ]
 }

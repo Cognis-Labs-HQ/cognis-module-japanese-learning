@@ -132,6 +132,22 @@ test("new dictionary verbs and adjectives select the correct provider paradigm, 
     for (const [label, reading, partOfSpeech, tag, expected] of [
         ["考える", "かんがえる", "Ichidan verb", "ichidan", "考えます"],
         [
+            "帰る",
+            "かえる",
+            "Godan verb with 'ru' ending",
+            "godan-ru",
+            "帰ります",
+        ],
+        ["笑う", "わらう", "Godan verb with 'u' ending", "godan-u", "笑います"],
+        [
+            "待つ",
+            "まつ",
+            "Godan verb with 'tsu' ending",
+            "godan-tsu",
+            "待ちます",
+        ],
+        ["死ぬ", "しぬ", "Godan verb with 'nu' ending", "godan-nu", "死にます"],
+        [
             "美しい",
             "うつくしい",
             "I-adjective (keiyoushi)",
@@ -161,9 +177,39 @@ test("new dictionary verbs and adjectives select the correct provider paradigm, 
             ],
         });
         assert.ok(suggestion.tags.includes(tag));
+        const extraForms = {
+            帰る: { negative: "帰らない", past: "帰った", "te-form": "帰って" },
+            笑う: { negative: "笑わない", past: "笑った", "te-form": "笑って" },
+            待つ: { negative: "待たない", past: "待った", "te-form": "待って" },
+            死ぬ: { negative: "死なない", past: "死んだ", "te-form": "死んで" },
+        };
         const set = index.transformSets.find(({ id }) => id === tag);
+        for (const [state, value] of Object.entries(extraForms[label] ?? {})) {
+            const operation = set.rules.find(
+                (rule) =>
+                    rule.fromState === set.baseState && rule.toState === state,
+            );
+            assert.ok(operation, `${label}:${state}`);
+            assert.equal(
+                label.slice(0, label.length - operation.removeSuffix.length) +
+                    operation.append,
+                value,
+            );
+            assert.equal(
+                reading.slice(
+                    0,
+                    reading.length -
+                        operation.pronunciation.removeSuffix.length,
+                ) + operation.pronunciation.append,
+                value.replace(label.slice(0, -1), reading.slice(0, -1)),
+            );
+        }
         const rule = set.rules.find(
-            ({ id }) => id === (tag === "ichidan" ? "polite" : "adverb"),
+            ({ id }) =>
+                id ===
+                (partOfSpeech.toLowerCase().includes("verb")
+                    ? "polite"
+                    : "adverb"),
         );
         assert.equal(
             label.slice(0, label.length - rule.removeSuffix.length) +

@@ -791,7 +791,7 @@ test("dictionary part-of-speech tags enable only supported transformation famili
         ["歩く", "あるく", "Godan verb with 'ku' ending", "godan-ku"],
         ["行く", "いく", "Godan verb - Iku/Yuku special class", "godan-iku"],
         ["来る", "くる", "Kuru verb - special class", "irregular-kuru"],
-        ["買う", "かう", "Godan verb with 'u' ending", null],
+        ["買う", "かう", "Godan verb with 'u' ending", "godan-u"],
     ]) {
         const payload = jishoResponse();
         payload.data[0].japanese = [{ word: label, reading }];
@@ -804,12 +804,7 @@ test("dictionary part-of-speech tags enable only supported transformation famili
         const [result] = await provider.lookup({ layer: wordLayer, label });
         assert.equal(result.class, "lexical:verb");
         assert.ok(result.tags.includes("verb"));
-        if (expected) assert.ok(result.tags.includes(expected));
-        else
-            assert.equal(
-                result.tags.some((tag) => tag.startsWith("godan-")),
-                false,
-            );
+        assert.ok(result.tags.includes(expected));
     }
 });
 test("adverbs are classified separately from verbs and preserve Kanji lookup prerequisites", async () => {
