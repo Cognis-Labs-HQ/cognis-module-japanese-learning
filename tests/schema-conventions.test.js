@@ -17,6 +17,7 @@ const fieldContract = {
         reference_images: "imageList",
     },
     "alt-characters": {
+        jlpt_level: "string",
         pronunciation: "stringList",
         audio: "audio",
         stroke_pattern: "strokePattern",
@@ -36,28 +37,30 @@ const fieldContract = {
         reference_images: "imageList",
     },
     particles: {
+        jlpt_level: "string",
         pronunciation: "stringList",
         audio: "audio",
         reference_images: "imageList",
     },
     sentences: {
+        jlpt_level: "string",
         pronunciation: "stringList",
         audio: "audio",
         reference_images: "imageList",
     },
 };
-const originalFieldDigests = {
+const fieldPresentationDigests = {
     characters:
         "a4f95ece92b6786f556db51645e95f0c5ad859279096b8e70ea592c797796d50",
     "alt-characters":
-        "9fd65c9a4d2afd69a8fb5cfbae966d18008d32e660ac9295814c48e08cf81277",
+        "279c4e5c013182d6f7c69e45ed6c415f837bb3205c16f82d6d0b237d685e8bb1",
     definitions:
         "13143a900de232c23f86f34e0e69e9e525ea9e364fbdb0f10563fe06b02ebe08",
-    words: "b84ded9352fb464302b102d598c6f9990983a07452f046394023639505feaa8d",
+    words: "81709e06aa859197857eedc013599ed81ab0b63ebe820a4505b8c704f67253b8",
     particles:
-        "e6f6ab6cba58f9c79933546e47fb9fc7d5e7cf51382f0097bd4d19534cf79a35",
+        "afdd49a36772d68f5ddc3dfaa9a333053c1607a8a4656f7ea3b56fdd64f27176",
     sentences:
-        "5991f7c86d996d2ed507aad9fac4da481461466c5acf1b8445372bebcb3643f9",
+        "bd7c4b1ea98a4e7efe13d9d5d94e978142ce70335d12ff98114d01e6b6efb763",
 };
 const originalWordShards = new Set([
     "complete-pronunciations.json",
@@ -127,8 +130,8 @@ function validateFields(candidateSchema, candidates) {
             createHash("sha256")
                 .update(JSON.stringify(layer.fields))
                 .digest("hex"),
-            originalFieldDigests[layer.id],
-            `${layer.id}: original field presentation changed`,
+            fieldPresentationDigests[layer.id],
+            `${layer.id}: reviewed field presentation changed`,
         );
     }
     for (const record of candidates) {

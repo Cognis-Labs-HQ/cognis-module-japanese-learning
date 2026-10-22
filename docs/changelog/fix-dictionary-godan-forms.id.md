@@ -20,6 +20,12 @@ Aturan Godan-gu dan Suru reguler mencakup verba kamus baru. Suru memakai alterna
 
 Carousel struktur kalimat secara eksplisit mendeklarasikan `excludeFromBrowse: false` agar kata leksikalnya juga muncul dalam Kosakata. Carousel khusus tanda baca tetap dikecualikan. Pengujian mencakup semua referensi kosakata kalimat, alias pelafalan tersembunyi, dan cakupan filter opsional, termasuk kata tanpa tingkat seperti ノート dalam bahasa Jepang.
 
+## Pil bermakna dan filter JLPT
+
+Pil pembelajaran menampilkan kelas tata bahasa terlokalisasi, penggunaan umum, dan tingkat JLPT; tag bentuk serta transformasi teknis tetap internal. Tingkat 225 kartu kosakata dan 190 Kanji telah diperiksa terhadap sumber. Entri yang tidak tercantum atau ambigu tetap tidak terklasifikasi. Inventaris mencatat bukti Jisho, mencocokkan bacaan dan makna, serta memilih tingkat pembelajaran paling awal bila beberapa daftar berlaku.
+
+Kanji dan Kalimat menyediakan filter N5–N1 yang ringkas seperti Kosakata, tanpa pilihan awal otomatis. Perkiraan tingkat kalimat memakai kosakata, partikel dasar, atau transformasi terpilih yang paling sulit; nilai yang ditulis dapat menetapkan tingkat tata bahasa minimum. Kalimat harus memuat tingkat tersebut tanpa persyaratan yang lebih sulit. Tingkat konstituen yang tidak diketahui membuatnya tidak terklasifikasi dan tetap terlihat pada tampilan tanpa filter. Perkiraan tata bahasa merupakan sasaran belajar penyedia, bukan sertifikasi JLPT resmi.
+
 ## Komit
 
 - [5b21f1d5](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/5b21f1d569cac8d037c0c62503c96839d2e5056f)

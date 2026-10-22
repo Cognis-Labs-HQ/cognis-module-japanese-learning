@@ -119,8 +119,10 @@ function nativeSuggestions(index, layer, label) {
 }
 
 function jishoLevel(tags = []) {
-    const tag = tags.find((value) => /^jlpt-n[1-5]$/i.test(value));
-    return tag ? tag.slice(-2).toUpperCase() : undefined;
+    const levels = tags
+        .filter((value) => /^jlpt-n[1-5]$/i.test(value))
+        .map((value) => Number(value.at(-1)));
+    return levels.length ? `N${Math.max(...levels)}` : undefined;
 }
 
 function selectJishoRecord(data, label, allowRankedFallback) {

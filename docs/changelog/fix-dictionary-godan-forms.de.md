@@ -20,6 +20,12 @@ Reguläre Godan-gu- und Suru-Regeln erfassen neue Wörterbuchverben. Suru nutzt 
 
 Satzstruktur-Karussells deklarieren ausdrücklich `excludeFromBrowse: false`, damit ihre lexikalischen Wörter auch im Wortschatz erscheinen. Reine Satzzeichen-Karussells bleiben ausgeschlossen. Tests prüfen alle Wortschatzreferenzen der Sätze, ausgeblendete Aussprache-Aliase und optionale Filter, einschließlich nicht eingestufter Wörter wie ノート im Japanischen.
 
+## Aussagekräftige Merkmale und JLPT-Filter
+
+Lernmerkmale zeigen lokalisierte Wortarten, häufige Verwendung und JLPT-Stufen; technische Form- und Transformationstags bleiben intern. Für 225 Vokabeln und 190 Kanji liegen quellengestützte Stufen vor. Nicht gelistete oder mehrdeutige Einträge bleiben unklassifiziert. Das mitgelieferte Verzeichnis dokumentiert Jisho-Belege, gleicht Aussprache und Bedeutung ab und verwendet bei mehreren Listen die früheste Lernstufe.
+
+Kanji und Sätze bieten dieselben kompakten N5–N1-Filter wie der Wortschatz, ohne automatische Anfangsauswahl. Die geschätzte Satzstufe entspricht der schwierigsten referenzierten Vokabel, Grundpartikel oder gewählten Transformation; ein gespeicherter Wert kann eine grammatische Mindeststufe festlegen. Ein Satz muss die gewählte Stufe und keine schwierigere Anforderung enthalten. Bei fehlenden Einstufungen bleibt er unklassifiziert und in der ungefilterten Ansicht sichtbar. Grammatikstufen sind anbietereigene Lernziele und keine offizielle JLPT-Zertifizierung.
+
 ## Commits
 
 - [5b21f1d5](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/5b21f1d569cac8d037c0c62503c96839d2e5056f)

@@ -1,6 +1,6 @@
 {
     "id": "japanese-core",
-    "version": 114,
+    "version": 115,
     "namespace": "ja",
     "language": "ja",
     "metadata": {
@@ -182,6 +182,19 @@
                     "audio",
                     "character_class",
                     "stroke_pattern"
+                ],
+                "tags": [
+                    {
+                        "value": "common",
+                        "metadata": {
+                            "labels": {
+                                "de": "Häufig",
+                                "en": "Common",
+                                "id": "Umum",
+                                "ja": "よく使う"
+                            }
+                        }
+                    }
                 ]
             },
             "activityCompatibility": ["study:recognition", "study:writing"],
@@ -508,6 +521,87 @@
                     "input": {
                         "control": "imageFiles"
                     }
+                },
+                {
+                    "id": "jlpt_level",
+                    "metadata": {
+                        "labels": {
+                            "de": "JLPT-Stufe",
+                            "en": "JLPT Level",
+                            "id": "Tingkat JLPT",
+                            "ja": "JLPT レベル"
+                        }
+                    },
+                    "type": "string",
+                    "detail": {
+                        "renderer": "badge",
+                        "order": 2,
+                        "group": "proficiency-level",
+                        "exclusive": false,
+                        "required": false,
+                        "filterable": true,
+                        "autoSelectSingle": false
+                    },
+                    "input": {
+                        "control": "singleSelect",
+                        "options": [
+                            {
+                                "value": "N5",
+                                "metadata": {
+                                    "labels": {
+                                        "de": "N5",
+                                        "en": "N5",
+                                        "id": "N5",
+                                        "ja": "N5"
+                                    }
+                                }
+                            },
+                            {
+                                "value": "N4",
+                                "metadata": {
+                                    "labels": {
+                                        "de": "N4",
+                                        "en": "N4",
+                                        "id": "N4",
+                                        "ja": "N4"
+                                    }
+                                }
+                            },
+                            {
+                                "value": "N3",
+                                "metadata": {
+                                    "labels": {
+                                        "de": "N3",
+                                        "en": "N3",
+                                        "id": "N3",
+                                        "ja": "N3"
+                                    }
+                                }
+                            },
+                            {
+                                "value": "N2",
+                                "metadata": {
+                                    "labels": {
+                                        "de": "N2",
+                                        "en": "N2",
+                                        "id": "N2",
+                                        "ja": "N2"
+                                    }
+                                }
+                            },
+                            {
+                                "value": "N1",
+                                "metadata": {
+                                    "labels": {
+                                        "de": "N1",
+                                        "en": "N1",
+                                        "id": "N1",
+                                        "ja": "N1"
+                                    }
+                                }
+                            }
+                        ]
+                    }
                 }
             ],
             "relationships": [
@@ -564,7 +658,20 @@
                 }
             ],
             "detail": {
-                "fieldOrder": ["pronunciation", "audio", "stroke_pattern"]
+                "fieldOrder": ["pronunciation", "audio", "stroke_pattern"],
+                "tags": [
+                    {
+                        "value": "common",
+                        "metadata": {
+                            "labels": {
+                                "de": "Häufig",
+                                "en": "Common",
+                                "id": "Umum",
+                                "ja": "よく使う"
+                            }
+                        }
+                    }
+                ]
             },
             "activityCompatibility": ["study:recognition", "study:writing"],
             "interestVeins": ["language:japanese"],
@@ -642,7 +749,20 @@
             ],
             "detail": {
                 "titleField": "translations",
-                "fieldOrder": ["translations", "string_key"]
+                "fieldOrder": ["translations", "string_key"],
+                "tags": [
+                    {
+                        "value": "common",
+                        "metadata": {
+                            "labels": {
+                                "de": "Häufig",
+                                "en": "Common",
+                                "id": "Umum",
+                                "ja": "よく使う"
+                            }
+                        }
+                    }
+                ]
             },
             "interestVeins": ["language:japanese"],
             "definitionLocalization": {
@@ -705,7 +825,8 @@
                         "group": "proficiency-level",
                         "exclusive": false,
                         "required": false,
-                        "filterable": true
+                        "filterable": true,
+                        "autoSelectSingle": false
                     },
                     "input": {
                         "control": "singleSelect",
@@ -912,7 +1033,119 @@
                 }
             ],
             "detail": {
-                "fieldOrder": ["pronunciation", "jlpt_level"]
+                "fieldOrder": ["pronunciation", "jlpt_level"],
+                "tags": [
+                    {
+                        "value": "noun",
+                        "metadata": {
+                            "labels": {
+                                "de": "Substantiv",
+                                "en": "Noun",
+                                "id": "Nomina",
+                                "ja": "名詞"
+                            }
+                        }
+                    },
+                    {
+                        "value": "verb",
+                        "metadata": {
+                            "labels": {
+                                "de": "Verb",
+                                "en": "Verb",
+                                "id": "Verba",
+                                "ja": "動詞"
+                            }
+                        }
+                    },
+                    {
+                        "value": "adjective",
+                        "metadata": {
+                            "labels": {
+                                "de": "Adjektiv",
+                                "en": "Adjective",
+                                "id": "Adjektiva",
+                                "ja": "形容詞"
+                            }
+                        }
+                    },
+                    {
+                        "value": "adverb",
+                        "metadata": {
+                            "labels": {
+                                "de": "Adverb",
+                                "en": "Adverb",
+                                "id": "Adverbia",
+                                "ja": "副詞"
+                            }
+                        }
+                    },
+                    {
+                        "value": "pronoun",
+                        "metadata": {
+                            "labels": {
+                                "de": "Pronomen",
+                                "en": "Pronoun",
+                                "id": "Pronomina",
+                                "ja": "代名詞"
+                            }
+                        }
+                    },
+                    {
+                        "value": "interjection",
+                        "metadata": {
+                            "labels": {
+                                "de": "Ausruf",
+                                "en": "Interjection",
+                                "id": "Interjeksi",
+                                "ja": "感動詞"
+                            }
+                        }
+                    },
+                    {
+                        "value": "conjunction",
+                        "metadata": {
+                            "labels": {
+                                "de": "Konjunktion",
+                                "en": "Conjunction",
+                                "id": "Konjungsi",
+                                "ja": "接続詞"
+                            }
+                        }
+                    },
+                    {
+                        "value": "copula",
+                        "metadata": {
+                            "labels": {
+                                "de": "Kopula",
+                                "en": "Copula",
+                                "id": "Kopula",
+                                "ja": "コピュラ"
+                            }
+                        }
+                    },
+                    {
+                        "value": "counter",
+                        "metadata": {
+                            "labels": {
+                                "de": "Zählwort",
+                                "en": "Counter",
+                                "id": "Kata penggolong",
+                                "ja": "助数詞"
+                            }
+                        }
+                    },
+                    {
+                        "value": "common",
+                        "metadata": {
+                            "labels": {
+                                "de": "Häufig",
+                                "en": "Common",
+                                "id": "Umum",
+                                "ja": "よく使う"
+                            }
+                        }
+                    }
+                ]
             },
             "activityCompatibility": ["study:recognition", "study:production"],
             "interestVeins": ["language:japanese"],
@@ -1030,10 +1263,104 @@
                     "input": {
                         "control": "imageFiles"
                     }
+                },
+                {
+                    "id": "jlpt_level",
+                    "metadata": {
+                        "labels": {
+                            "de": "JLPT-Stufe",
+                            "en": "JLPT Level",
+                            "id": "Tingkat JLPT",
+                            "ja": "JLPT レベル"
+                        }
+                    },
+                    "type": "string",
+                    "detail": {
+                        "renderer": "badge",
+                        "order": 2,
+                        "group": "proficiency-level",
+                        "exclusive": false,
+                        "required": false,
+                        "filterable": true,
+                        "autoSelectSingle": false
+                    },
+                    "input": {
+                        "control": "singleSelect",
+                        "options": [
+                            {
+                                "value": "N5",
+                                "metadata": {
+                                    "labels": {
+                                        "de": "N5",
+                                        "en": "N5",
+                                        "id": "N5",
+                                        "ja": "N5"
+                                    }
+                                }
+                            },
+                            {
+                                "value": "N4",
+                                "metadata": {
+                                    "labels": {
+                                        "de": "N4",
+                                        "en": "N4",
+                                        "id": "N4",
+                                        "ja": "N4"
+                                    }
+                                }
+                            },
+                            {
+                                "value": "N3",
+                                "metadata": {
+                                    "labels": {
+                                        "de": "N3",
+                                        "en": "N3",
+                                        "id": "N3",
+                                        "ja": "N3"
+                                    }
+                                }
+                            },
+                            {
+                                "value": "N2",
+                                "metadata": {
+                                    "labels": {
+                                        "de": "N2",
+                                        "en": "N2",
+                                        "id": "N2",
+                                        "ja": "N2"
+                                    }
+                                }
+                            },
+                            {
+                                "value": "N1",
+                                "metadata": {
+                                    "labels": {
+                                        "de": "N1",
+                                        "en": "N1",
+                                        "id": "N1",
+                                        "ja": "N1"
+                                    }
+                                }
+                            }
+                        ]
+                    }
                 }
             ],
             "detail": {
-                "fieldOrder": ["pronunciation"]
+                "fieldOrder": ["pronunciation"],
+                "tags": [
+                    {
+                        "value": "common",
+                        "metadata": {
+                            "labels": {
+                                "de": "Häufig",
+                                "en": "Common",
+                                "id": "Umum",
+                                "ja": "よく使う"
+                            }
+                        }
+                    }
+                ]
             },
             "activityCompatibility": ["study:reading", "study:grammar"],
             "interestVeins": ["language:japanese"],
@@ -1200,10 +1527,139 @@
                     "input": {
                         "control": "imageFiles"
                     }
+                },
+                {
+                    "id": "jlpt_level",
+                    "metadata": {
+                        "labels": {
+                            "de": "Geschätztes JLPT-Niveau",
+                            "en": "Estimated JLPT level",
+                            "id": "Perkiraan tingkat JLPT",
+                            "ja": "JLPT 目安レベル"
+                        }
+                    },
+                    "type": "string",
+                    "detail": {
+                        "renderer": "badge",
+                        "order": 2,
+                        "group": "proficiency-level",
+                        "exclusive": false,
+                        "required": false,
+                        "filterable": true,
+                        "autoSelectSingle": false
+                    },
+                    "input": {
+                        "control": "singleSelect",
+                        "options": [
+                            {
+                                "value": "N5",
+                                "metadata": {
+                                    "labels": {
+                                        "de": "N5",
+                                        "en": "N5",
+                                        "id": "N5",
+                                        "ja": "N5"
+                                    }
+                                }
+                            },
+                            {
+                                "value": "N4",
+                                "metadata": {
+                                    "labels": {
+                                        "de": "N4",
+                                        "en": "N4",
+                                        "id": "N4",
+                                        "ja": "N4"
+                                    }
+                                }
+                            },
+                            {
+                                "value": "N3",
+                                "metadata": {
+                                    "labels": {
+                                        "de": "N3",
+                                        "en": "N3",
+                                        "id": "N3",
+                                        "ja": "N3"
+                                    }
+                                }
+                            },
+                            {
+                                "value": "N2",
+                                "metadata": {
+                                    "labels": {
+                                        "de": "N2",
+                                        "en": "N2",
+                                        "id": "N2",
+                                        "ja": "N2"
+                                    }
+                                }
+                            },
+                            {
+                                "value": "N1",
+                                "metadata": {
+                                    "labels": {
+                                        "de": "N1",
+                                        "en": "N1",
+                                        "id": "N1",
+                                        "ja": "N1"
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    "derivation": {
+                        "kind": "rankedReferences",
+                        "relationships": ["words", "particles"],
+                        "values": ["N5", "N4", "N3", "N2", "N1"],
+                        "requireAll": true,
+                        "transformationValues": {
+                            "polite": "N5",
+                            "negative": "N5",
+                            "past": "N5",
+                            "te-form": "N5",
+                            "polite-past": "N5",
+                            "polite-negative": "N5",
+                            "negative-past": "N5",
+                            "negative-te": "N5",
+                            "desire": "N5",
+                            "desire-negative": "N5",
+                            "desire-past": "N5",
+                            "desire-te": "N5",
+                            "causative": "N3",
+                            "passive": "N4",
+                            "potential": "N4",
+                            "volitional": "N4",
+                            "causative-negative": "N3",
+                            "causative-past": "N3",
+                            "causative-te": "N3",
+                            "causative-desire": "N3",
+                            "causative-negative-desire": "N3",
+                            "causative-continuous-negative-desire": "N3",
+                            "conditional": "N4",
+                            "negative-conditional": "N4",
+                            "connective": "N5",
+                            "plural": "N5",
+                            "adverb": "N4"
+                        }
+                    }
                 }
             ],
             "detail": {
-                "fieldOrder": ["pronunciation"]
+                "fieldOrder": ["pronunciation"],
+                "tags": [
+                    {
+                        "value": "common",
+                        "metadata": {
+                            "labels": {
+                                "de": "Häufig",
+                                "en": "Common",
+                                "id": "Umum",
+                                "ja": "よく使う"
+                            }
+                        }
+                    }
+                ]
             },
             "displayDefinition": true,
             "cardConstructor": {

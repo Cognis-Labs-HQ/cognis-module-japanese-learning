@@ -52,7 +52,8 @@ test("composer carousels explicitly preserve all visible lexical vocabulary", ()
         if (
             !field.detail?.filterable ||
             field.detail.required ||
-            field.detail.defaultTag
+            field.detail.defaultTag ||
+            field.detail.autoSelectSingle === false
         )
             continue;
         const values = new Set(

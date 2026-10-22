@@ -91,6 +91,22 @@ test("Jisho provider resolves native content when network lookup is unavailable"
     assert.equal(suggestion.confidence, 1);
 });
 
+test("multiple JLPT lists use the earliest learner level rather than provider array order", async () => {
+    const response = jishoResponse();
+    response.data[0].jlpt = ["jlpt-n2", "jlpt-n5"];
+    const provider = createJishoLookupProvider({
+        contentRoot,
+        endpoint: "https://jisho.test/api",
+        fetchImplementation: async () => new Response(JSON.stringify(response)),
+    });
+    const [match] = await provider.lookup({
+        schema,
+        layer: wordLayer,
+        label: "猫又",
+    });
+    assert.equal(match.fields.jlpt_level, "N5");
+});
+
 test("Jisho provider populates fields and detects links for every retrieval", async () => {
     const requests = [];
     const provider = createJishoLookupProvider({
