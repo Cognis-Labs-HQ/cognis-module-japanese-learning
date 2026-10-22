@@ -310,3 +310,7 @@ Sentence-structure carousels explicitly declare `excludeFromBrowse: false`, so t
 Learner pills show localized grammatical classes, common-use status and JLPT levels, while technical form and transformation tags stay internal. Vocabulary and Kanji now use source-checked levels; unlisted or ambiguous items remain unclassified. The packaged proficiency inventory records Jisho evidence, matches authored readings and meanings, and selects the earliest learning level when several lists apply.
 
 Kanji and Sentences offer the same compact N5–N1 filters as Vocabulary, with no automatic initial selection. Sentence levels are estimates based on the hardest referenced vocabulary, basic particle or selected transformation; an authored level can impose a grammar minimum. A sentence must include that level and no harder requirement to match it. Missing constituent levels remain unclassified and visible in the unfiltered view. Grammar estimates are provider-authored study targets, not official JLPT certification.
+
+## Generic difficulty profiles
+
+Both Study modules use the canonical `difficulty_level` field. Their identical normalizer and contract tests read `data/library/difficulty.json`; labels, ordered options, source tag mappings, basic-layer defaults and transformation requirements are data. Japanese presents JLPT N5–N1; English uses its existing beginner/intermediate/advanced categories. Unknown values remain unclassified. The host ranks declared fields without language-specific rules or alternate field names.

@@ -14,7 +14,7 @@ const layers = await readContentLayers(
 const fieldFor = (id) =>
     schema.layers
         .find((layer) => layer.id === id)
-        .fields.find((field) => field.id === "jlpt_level");
+        .fields.find((field) => field.id === "difficulty_level");
 
 test("Vocabulary and Kanji levels match exact source evidence and preserve unknown classifications", () => {
     for (const id of ["words", "alt-characters"]) {
@@ -22,7 +22,7 @@ test("Vocabulary and Kanji levels match exact source evidence and preserve unkno
             const evidence = provenance[id][entry.id];
             assert.equal(evidence.label, entry.label);
             assert.equal(
-                entry.fields.jlpt_level ?? null,
+                entry.fields.difficulty_level ?? null,
                 evidence.level,
                 entry.id,
             );
@@ -35,7 +35,7 @@ test("Vocabulary and Kanji levels match exact source evidence and preserve unkno
     const long = layers
         .get("words")
         .find(({ label, hidden }) => label === "長い" && !hidden);
-    assert.equal(long.fields.jlpt_level, "N5");
+    assert.equal(long.fields.difficulty_level, "N5");
     assert.ok(
         Object.values(provenance.words).some(({ level }) => level === null),
     );
@@ -78,7 +78,7 @@ test("sentence level derives from every word, particle and generated grammar req
     assert.equal(derivation.transformationValues.causative, "N3");
     assert.equal(derivation.transformationValues.polite, "N5");
     for (const particle of layers.get("particles"))
-        assert.equal(particle.fields.jlpt_level, "N5");
+        assert.equal(particle.fields.difficulty_level, "N5");
 });
 
 test("technical transformation and form tags never become learner pills", () => {

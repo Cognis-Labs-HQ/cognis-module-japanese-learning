@@ -26,6 +26,10 @@ Lernmerkmale zeigen lokalisierte Wortarten, häufige Verwendung und JLPT-Stufen;
 
 Kanji und Sätze bieten dieselben kompakten N5–N1-Filter wie der Wortschatz, ohne automatische Anfangsauswahl. Die geschätzte Satzstufe entspricht der schwierigsten referenzierten Vokabel, Grundpartikel oder gewählten Transformation; ein gespeicherter Wert kann eine grammatische Mindeststufe festlegen. Ein Satz muss die gewählte Stufe und keine schwierigere Anforderung enthalten. Bei fehlenden Einstufungen bleibt er unklassifiziert und in der ungefilterten Ansicht sichtbar. Grammatikstufen sind anbietereigene Lernziele und keine offizielle JLPT-Zertifizierung.
 
+## Generische Schwierigkeitsprofile
+
+Beide Study-Module verwenden das kanonische Feld `difficulty_level`. Identische Normalisierung und Vertragstests lesen `data/library/difficulty.json`; Beschriftungen, geordnete Optionen, Quelltag-Zuordnungen, Grundstufen und Transformationsanforderungen sind Daten. Japanisch zeigt JLPT N5–N1, Englisch verwendet die bestehenden Kategorien Anfänger/Mittelstufe/Fortgeschritten. Unbekannte Werte bleiben unklassifiziert. Der Host ordnet deklarierte Felder ohne sprachspezifische Regeln oder alternative Feldnamen ein.
+
 ## Commits
 
 - [5b21f1d5](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/5b21f1d569cac8d037c0c62503c96839d2e5056f)

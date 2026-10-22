@@ -104,7 +104,7 @@ test("multiple JLPT lists use the earliest learner level rather than provider ar
         layer: wordLayer,
         label: "猫又",
     });
-    assert.equal(match.fields.jlpt_level, "N5");
+    assert.equal(match.fields.difficulty_level, "N5");
 });
 
 test("Jisho provider populates fields and detects links for every retrieval", async () => {
@@ -130,7 +130,7 @@ test("Jisho provider populates fields and detects links for every retrieval", as
     assert.equal(requests[0].options.headers.accept, "application/json");
     assert.equal(first.label, "猫又");
     assert.deepEqual(first.fields.pronunciation, ["ねこまた"]);
-    assert.equal(first.fields.jlpt_level, "N2");
+    assert.equal(first.fields.difficulty_level, "N2");
     assert.deepEqual(
         first.references.filter(({ relation }) => relation === "spelling"),
         [
@@ -184,7 +184,7 @@ test("Jisho provider accepts ranked English vocabulary searches", async () => {
         "https://jisho.test/api?keyword=mythical%20cat",
     ]);
     assert.equal(suggestion.label, "猫又");
-    assert.equal(suggestion.fields.jlpt_level, "N2");
+    assert.equal(suggestion.fields.difficulty_level, "N2");
     assert.equal(suggestion.provenance, "jisho:猫又");
 });
 

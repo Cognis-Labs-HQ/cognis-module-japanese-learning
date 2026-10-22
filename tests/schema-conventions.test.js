@@ -17,7 +17,7 @@ const fieldContract = {
         reference_images: "imageList",
     },
     "alt-characters": {
-        jlpt_level: "string",
+        difficulty_level: "string",
         pronunciation: "stringList",
         audio: "audio",
         stroke_pattern: "strokePattern",
@@ -31,19 +31,19 @@ const fieldContract = {
     },
     words: {
         pronunciation: "stringList",
-        jlpt_level: "string",
+        difficulty_level: "string",
         dictionary_data: "string",
         audio: "audio",
         reference_images: "imageList",
     },
     particles: {
-        jlpt_level: "string",
+        difficulty_level: "string",
         pronunciation: "stringList",
         audio: "audio",
         reference_images: "imageList",
     },
     sentences: {
-        jlpt_level: "string",
+        difficulty_level: "string",
         pronunciation: "stringList",
         audio: "audio",
         reference_images: "imageList",
@@ -53,14 +53,14 @@ const fieldPresentationDigests = {
     characters:
         "a4f95ece92b6786f556db51645e95f0c5ad859279096b8e70ea592c797796d50",
     "alt-characters":
-        "279c4e5c013182d6f7c69e45ed6c415f837bb3205c16f82d6d0b237d685e8bb1",
+        "3398f1fbdcfb908008217cccb77599d073b737df2896c5e0ff3800963536f80d",
     definitions:
         "13143a900de232c23f86f34e0e69e9e525ea9e364fbdb0f10563fe06b02ebe08",
-    words: "81709e06aa859197857eedc013599ed81ab0b63ebe820a4505b8c704f67253b8",
+    words: "932f7fe6b139eff209fb98a90e325983a6eae256358eb0506dbdac08e997a4b8",
     particles:
-        "afdd49a36772d68f5ddc3dfaa9a333053c1607a8a4656f7ea3b56fdd64f27176",
+        "a7524e1c696957eef912e3e31370aa75de49683c8dcae01686e5376413d4b83a",
     sentences:
-        "bd7c4b1ea98a4e7efe13d9d5d94e978142ce70335d12ff98114d01e6b6efb763",
+        "89f0309c11901bd1af4f5a2e8295347a945ba8fc9347c890bf35d13c8dc8e862",
 };
 const originalWordShards = new Set([
     "complete-pronunciations.json",

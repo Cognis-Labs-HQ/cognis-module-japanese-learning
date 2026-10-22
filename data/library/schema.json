@@ -1,6 +1,6 @@
 {
     "id": "japanese-core",
-    "version": 115,
+    "version": 116,
     "namespace": "ja",
     "language": "ja",
     "metadata": {
@@ -523,7 +523,7 @@
                     }
                 },
                 {
-                    "id": "jlpt_level",
+                    "id": "difficulty_level",
                     "metadata": {
                         "labels": {
                             "de": "JLPT-Stufe",
@@ -533,15 +533,6 @@
                         }
                     },
                     "type": "string",
-                    "detail": {
-                        "renderer": "badge",
-                        "order": 2,
-                        "group": "proficiency-level",
-                        "exclusive": false,
-                        "required": false,
-                        "filterable": true,
-                        "autoSelectSingle": false
-                    },
                     "input": {
                         "control": "singleSelect",
                         "options": [
@@ -601,6 +592,15 @@
                                 }
                             }
                         ]
+                    },
+                    "detail": {
+                        "renderer": "badge",
+                        "order": 2,
+                        "group": "difficulty-level",
+                        "exclusive": false,
+                        "required": false,
+                        "filterable": true,
+                        "autoSelectSingle": false
                     }
                 }
             ],
@@ -809,7 +809,7 @@
                     "multi_value": true
                 },
                 {
-                    "id": "jlpt_level",
+                    "id": "difficulty_level",
                     "metadata": {
                         "labels": {
                             "de": "JLPT-Stufe",
@@ -819,15 +819,6 @@
                         }
                     },
                     "type": "string",
-                    "detail": {
-                        "renderer": "badge",
-                        "order": 2,
-                        "group": "proficiency-level",
-                        "exclusive": false,
-                        "required": false,
-                        "filterable": true,
-                        "autoSelectSingle": false
-                    },
                     "input": {
                         "control": "singleSelect",
                         "options": [
@@ -887,6 +878,15 @@
                                 }
                             }
                         ]
+                    },
+                    "detail": {
+                        "renderer": "badge",
+                        "order": 2,
+                        "group": "difficulty-level",
+                        "exclusive": false,
+                        "required": false,
+                        "filterable": true,
+                        "autoSelectSingle": false
                     }
                 },
                 {
@@ -1033,7 +1033,7 @@
                 }
             ],
             "detail": {
-                "fieldOrder": ["pronunciation", "jlpt_level"],
+                "fieldOrder": ["pronunciation", "difficulty_level"],
                 "tags": [
                     {
                         "value": "noun",
@@ -1265,7 +1265,7 @@
                     }
                 },
                 {
-                    "id": "jlpt_level",
+                    "id": "difficulty_level",
                     "metadata": {
                         "labels": {
                             "de": "JLPT-Stufe",
@@ -1275,15 +1275,6 @@
                         }
                     },
                     "type": "string",
-                    "detail": {
-                        "renderer": "badge",
-                        "order": 2,
-                        "group": "proficiency-level",
-                        "exclusive": false,
-                        "required": false,
-                        "filterable": true,
-                        "autoSelectSingle": false
-                    },
                     "input": {
                         "control": "singleSelect",
                         "options": [
@@ -1343,6 +1334,15 @@
                                 }
                             }
                         ]
+                    },
+                    "detail": {
+                        "renderer": "badge",
+                        "order": 2,
+                        "group": "difficulty-level",
+                        "exclusive": false,
+                        "required": false,
+                        "filterable": true,
+                        "autoSelectSingle": false
                     }
                 }
             ],
@@ -1529,7 +1529,7 @@
                     }
                 },
                 {
-                    "id": "jlpt_level",
+                    "id": "difficulty_level",
                     "metadata": {
                         "labels": {
                             "de": "Geschätztes JLPT-Niveau",
@@ -1539,15 +1539,6 @@
                         }
                     },
                     "type": "string",
-                    "detail": {
-                        "renderer": "badge",
-                        "order": 2,
-                        "group": "proficiency-level",
-                        "exclusive": false,
-                        "required": false,
-                        "filterable": true,
-                        "autoSelectSingle": false
-                    },
                     "input": {
                         "control": "singleSelect",
                         "options": [
@@ -1607,6 +1598,15 @@
                                 }
                             }
                         ]
+                    },
+                    "detail": {
+                        "renderer": "badge",
+                        "order": 2,
+                        "group": "difficulty-level",
+                        "exclusive": false,
+                        "required": false,
+                        "filterable": true,
+                        "autoSelectSingle": false
                     },
                     "derivation": {
                         "kind": "rankedReferences",
