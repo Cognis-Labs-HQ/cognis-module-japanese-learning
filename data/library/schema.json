@@ -1,6 +1,6 @@
 {
     "id": "japanese-core",
-    "version": 113,
+    "version": 114,
     "namespace": "ja",
     "language": "ja",
     "metadata": {
@@ -1231,7 +1231,8 @@
                             }
                         },
                         "relationship": "words",
-                        "tag": "sentence-structure"
+                        "tag": "sentence-structure",
+                        "excludeFromBrowse": false
                     }
                 ],
                 "literal_carousels": [

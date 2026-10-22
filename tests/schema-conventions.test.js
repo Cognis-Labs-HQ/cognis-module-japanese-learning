@@ -222,7 +222,9 @@ test("every expanded visible word remains selectable in a starter deck", () => {
     for (const word of vocabulary.filter(({ hidden }) => !hidden)) {
         assert.ok(covered.has(word.id), `${word.id}: no starter deck`);
         const excludedTags = schema.layers.flatMap((layer) =>
-            (layer.cardConstructor?.tag_carousels ?? []).map(({ tag }) => tag),
+            (layer.cardConstructor?.tag_carousels ?? [])
+                .filter(({ excludeFromBrowse }) => excludeFromBrowse)
+                .map(({ tag }) => tag),
         );
         assert.ok(
             !word.tags.some((tag) => excludedTags.includes(tag)),

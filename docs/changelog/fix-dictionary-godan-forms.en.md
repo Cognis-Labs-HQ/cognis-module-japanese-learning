@@ -16,6 +16,10 @@ Existing path-bound recordings retain the designated Japanese voice and exact co
 
 Regular Godan-gu and Suru rules cover new dictionary verbs. Suru uses ordered suffix alternatives to support both 勉強する and the nominal stem 勉強, without creating a separate root card. Exact spelling and reading checks cover polite, negative, past, te, potential and chained causative forms.
 
+## Keep sentence vocabulary discoverable
+
+Sentence-structure carousels explicitly declare `excludeFromBrowse: false`, so their lexical words also appear in Vocabulary. Punctuation-only carousels remain excluded. Tests cover every sentence vocabulary reference, hidden pronunciation aliases and optional filter coverage, including unlevelled words such as ノート in Japanese.
+
 ## Commits
 
 - [5b21f1d5](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/5b21f1d569cac8d037c0c62503c96839d2e5056f)

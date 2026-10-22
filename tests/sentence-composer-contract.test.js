@@ -37,6 +37,7 @@ test("sentence cards declare structure and punctuation carousels", () => {
             },
             relationship: "words",
             tag: "sentence-structure",
+            excludeFromBrowse: false,
         },
     ]);
     assert.deepEqual(constructor.literal_carousels[0].values, [
