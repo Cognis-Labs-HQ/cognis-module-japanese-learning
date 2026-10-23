@@ -1,0 +1,45 @@
+[
+    {
+        "path": "audio/85aa6c4c3548eaaf00791ea7d65cf1b431496195bda9fe4d15b8a726f96ed856.wav",
+        "text": "しゅっぱつする",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "しゅっぱつする",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            }
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "しゅっぱつする",
+                "semanticRole": "lexicalUnit",
+                "readings": ["しゅっぱつする"]
+            },
+            {
+                "language": "ja",
+                "label": "出発する",
+                "semanticRole": "lexicalUnit",
+                "readings": ["しゅっぱつする"]
+            }
+        ],
+        "entries": [
+            "ja:word:travel-depart",
+            "ja:word:complete-pronunciation-travel-depart"
+        ],
+        "variants": [],
+        "sha256": "85aa6c4c3548eaaf00791ea7d65cf1b431496195bda9fe4d15b8a726f96ed856",
+        "frames": 28824,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "languageSelection": "native-input-autodetection",
+            "sourcePcmSha256": "3660b2e4d7167e65dc91eaf712768bfad65d16cb8553754504acc1ce9d15c03b"
+        }
+    }
+]

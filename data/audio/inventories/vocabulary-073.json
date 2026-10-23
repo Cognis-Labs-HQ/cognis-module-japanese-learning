@@ -1,0 +1,52 @@
+[
+    {
+        "path": "audio/05c26297258409d82a8bdd8c9ca29d97c3aa73373bdd2f6ae0e63c2ad22fdcae.wav",
+        "text": "あらえる",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "あらえる",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "あらえる",
+                "semanticRole": "lexicalUnit",
+                "readings": ["あらえる"]
+            },
+            {
+                "language": "ja",
+                "label": "洗える",
+                "semanticRole": "lexicalUnit",
+                "readings": ["あらえる"]
+            }
+        ],
+        "entries": [],
+        "variants": [
+            {
+                "entryId": "ja:word:household-wash",
+                "setId": "household-wash-forms",
+                "path": ["potential"],
+                "label": "洗える",
+                "reading": "あらえる",
+                "state": "potential"
+            }
+        ],
+        "sha256": "05c26297258409d82a8bdd8c9ca29d97c3aa73373bdd2f6ae0e63c2ad22fdcae",
+        "frames": 19907,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "f9f313e97ccb0dbde8c71f61cb795af619cfe91512b112b529277f66bfe5910e"
+        }
+    }
+]

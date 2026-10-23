@@ -265,7 +265,7 @@ Aussprachefelder im Wortschatz verwenden den singulären Linkvertrag `pronunciat
 
 Mitgelieferte WAV-Dateien werden auf Prüfsumme, Format und PCM-Integrität geprüft. Die Prüfung durch Anhören wird getrennt dokumentiert und kann unbestätigt sein. `data/audio/recordings.json` führt vorhandene Aufnahmen und Zusammensetzungen auf. `data/audio/unavailable.json` nennt Karten ohne mitgelieferte Audiodatei ausdrücklich; fehlende Aufnahmen sind keine Wiedergabe-URLs. Die festgelegte Stimme ist `xya0RvcJtofTcFTOdX4E`. Zugangsdaten und Offline-Erzeugungswerkzeuge werden nicht mitgeliefert.
 
-Bei der Wiedergabe mitgelieferter Sätze hat die Zusammensetzung aus exakten PCM-Wortaufnahmen einschließlich der vorgesehenen grammatischen Formen Vorrang. Separat erzeugte vollständige Satzaufnahmen bleiben mit ihrer ursprünglichen Herkunft erhalten. Fehlt eine passende Wortaufnahme, hat der Satz kein mitgeliefertes Audio; fehlende Formen werden nie durch Grundformen ersetzt.
+Eigene vollständige Satzaufnahmen haben bei Kartenwiedergabe und Anbietersuche Vorrang. Exakt aus Einzelaufnahmen zusammengesetzte Aufnahmen bleiben für Sätze ohne eigene Aufnahme verfügbar, einschließlich gewählter grammatischer Formen. Fehlende Formen werden nie durch Grundformen ersetzt. Neue Sätze verwenden weiterhin die vom Host verwaltete Komposition und Zwischenspeicherung.
 
 Bootstrap registriert einen entfernbaren Anbieter über `study:audio:provider.registerProvider`. Gebündelte Karten und Varianten funktionieren ohne installiertes oder konfiguriertes ElevenLabs. Fehlende Wortaufnahmen können die optionale konfigurierte Fähigkeit `elevenlabs-tts:synthesis` verwenden. Standardmäßig wird die festgelegte Sprachstimme angefordert; Administratoren können für neue Synthese eine andere Stimme konfigurieren. Neue Sätze fordern keine separate vollständige Satzsynthese an. Cognis verwaltet Berechtigungen globaler Karten, Zwischenspeicherung, manuelle Uploads und die Regeln für persönliche und Klasseninhalte. Nur die erste verfasste Aussprache wird gewählt.
 
@@ -285,7 +285,7 @@ Alltagsnomen ergänzen Möbel, Kleidung, Gegenstände und Lebensmittel mit Bedeu
 
 ## Lebensmittel und Körperteile
 
-Vorbereitete Sätze verwenden exakt zusammengesetzte PCM-Daten einschließlich gewählter Transformationen. Unabhängig erzeugte vollständige Satzaufnahmen bleiben mit ursprünglichen Stimmen- und Anfragedaten im Inventar, überschreiben jedoch keine zusammengesetzte Aufnahme. Neue Sätze verwenden weiterhin die vom Host verwaltete Komposition und Zwischenspeicherung.
+Eigene vollständige Satzaufnahmen haben bei Kartenwiedergabe und Anbietersuche Vorrang. Exakt aus Einzelaufnahmen zusammengesetzte Aufnahmen bleiben für Sätze ohne eigene Aufnahme verfügbar, einschließlich gewählter grammatischer Formen. Fehlende Formen werden nie durch Grundformen ersetzt. Neue Sätze verwenden weiterhin die vom Host verwaltete Komposition und Zwischenspeicherung.
 
 ## Aufnahmeverzeichnisse
 
@@ -293,7 +293,7 @@ Vorbereitete Sätze verwenden exakt zusammengesetzte PCM-Daten einschließlich g
 
 ## Explizite Katalognormalisierung und Satzkompositionen
 
-Der Katalogleser erhält seine Normalisierungsregel vom Sprachanbieter: NFC für Englisch, NFKC für Japanisch. Gemeinsamer Suchcode verzweigt nicht mehr nach einer bestimmten Sprache. Die Inventare heißen `sentence-compositions`; jeder Eintrag beschreibt eine echte paketierte Aufnahme aus geordneten Einzelaufnahmen. Zusammengesetzte Satzaufnahmen haben Wiedergabevorrang; direkte neuronale Aufnahmen bleiben getrennt im Inventar.
+Der Katalogleser erhält seine Normalisierungsregel vom Sprachanbieter: NFC für Englisch, NFKC für Japanisch. Gemeinsamer Suchcode verzweigt nicht mehr nach einer bestimmten Sprache. Die Inventare heißen `sentence-compositions`; jeder Eintrag beschreibt eine echte paketierte Aufnahme aus geordneten Einzelaufnahmen. Eigene vollständige Satzaufnahmen haben Vorrang; Zusammensetzungen bleiben für Sätze ohne eigene Aufnahme verfügbar.
 
 ## Lokalisierte Bildbezeichnungen und neutrale Dateinamen
 
@@ -301,4 +301,16 @@ Dateinamen und IDs der Illustrationen verwenden ihren SHA-256-Hash; Quellblätte
 
 ## Abschließende Prüfung und Zugriff bei deaktivierter Sprache
 
-Die Deinstallation löscht gespeicherte Stimmeneinstellungen unabhängig vom Erhalt der Lerninhalte. Deaktivieren entfernt Modulrouten, statische Oberflächen und Anbieterregistrierungen; Einstellungen überstehen Deaktivierung und Neustarts und sind nur im aktivierten Zustand erreichbar. Cognis sperrt gespeicherte Schemata, Karten und Medien anhand des aktiven Sprachanbieters und stellt den Zugriff beim Aktivieren wieder her. Referenzergebnisse vereinen gleichwertige Quellenidentitäten und bewahren Quelldaten, Lesereihenfolge und Bedeutungen. Vorbereitete Sätze verwenden exakte zusammengesetzte PCM-Aufnahmen vor getrennt erhaltenen Direktaufnahmen. Sprachanfragen prüfen normalisierten, begrenzten Text; KanjiVG verwirft abgelehnte Antwortdaten und akzeptiert Langvokalzeichen.
+Die Deinstallation löscht gespeicherte Stimmeneinstellungen unabhängig vom Erhalt der Lerninhalte. Deaktivieren entfernt Modulrouten, statische Oberflächen und Anbieterregistrierungen; Einstellungen überstehen Deaktivierung und Neustarts und sind nur im aktivierten Zustand erreichbar. Cognis sperrt gespeicherte Schemata, Karten und Medien anhand des aktiven Sprachanbieters und stellt den Zugriff beim Aktivieren wieder her. Referenzergebnisse vereinen gleichwertige Quellenidentitäten und bewahren Quelldaten, Lesereihenfolge und Bedeutungen. Vorbereitete Sätze bevorzugen eigene vollständige Aufnahmen vor zusammengesetzten Einzelaufnahmen. Sprachanfragen prüfen normalisierten, begrenzten Text; KanjiVG verwirft abgelehnte Antwortdaten und akzeptiert Langvokalzeichen.
+
+Satzstruktur-Karussells deklarieren ausdrücklich `excludeFromBrowse: false`, damit ihre lexikalischen Wörter auch im Wortschatz erscheinen. Reine Satzzeichen-Karussells bleiben ausgeschlossen. Tests prüfen alle Wortschatzreferenzen der Sätze, ausgeblendete Aussprache-Aliase und optionale Filter, einschließlich nicht eingestufter Wörter wie ノート im Japanischen.
+
+## Aussagekräftige Merkmale und JLPT-Filter
+
+Lernmerkmale zeigen lokalisierte Wortarten, häufige Verwendung und JLPT-Stufen; technische Form- und Transformationstags bleiben intern. Vokabeln und Kanji verwenden quellengestützte Stufen. Nicht gelistete oder mehrdeutige Einträge bleiben unklassifiziert. Das mitgelieferte Verzeichnis dokumentiert Jisho-Belege, gleicht Aussprache und Bedeutung ab und verwendet bei mehreren Listen die früheste Lernstufe.
+
+Kanji und Sätze bieten dieselben kompakten N5–N1-Filter wie der Wortschatz, ohne automatische Anfangsauswahl. Die geschätzte Satzstufe entspricht der schwierigsten referenzierten Vokabel, Grundpartikel oder gewählten Transformation; ein gespeicherter Wert kann eine grammatische Mindeststufe festlegen. Ein Satz muss die gewählte Stufe und keine schwierigere Anforderung enthalten. Bei fehlenden Einstufungen bleibt er unklassifiziert und in der ungefilterten Ansicht sichtbar. Grammatikstufen sind anbietereigene Lernziele und keine offizielle JLPT-Zertifizierung.
+
+## Generische Schwierigkeitsprofile
+
+Beide Study-Module verwenden das kanonische Feld `difficulty_level`. Identische Normalisierung und Vertragstests lesen `data/library/difficulty.json`; Beschriftungen, geordnete Optionen, Quelltag-Zuordnungen, Grundstufen und Transformationsanforderungen sind Daten. Japanisch zeigt JLPT N5–N1, Englisch verwendet die bestehenden Kategorien Anfänger/Mittelstufe/Fortgeschritten. Unbekannte Werte bleiben unklassifiziert. Der Host ordnet deklarierte Felder ohne sprachspezifische Regeln oder alternative Feldnamen ein.

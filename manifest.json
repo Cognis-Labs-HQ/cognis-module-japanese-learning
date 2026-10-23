@@ -2,7 +2,7 @@
     "id": "study-language-ja",
     "uuid": "e905927f-b133-572a-92ce-2ea8645e5ceb",
     "name": "module.study.language.ja.name",
-    "version": "2.4.86",
+    "version": "4.0.1",
     "class": "extension",
     "coreApiVersion": "v1",
     "capabilities": ["study:language:ja"],
@@ -65,7 +65,7 @@
         },
         {
             "path": ".github/copilot-instructions.md",
-            "sha256": "c7f3dfba06a05f94eea24c2c35861c2468dbb0d7b78d84e13e026583c26319f3"
+            "sha256": "c28bd6fd85956a21d3e8e667f665864d701ca90e69afdb95f56b6176e22f28d6"
         },
         {
             "path": ".gitignore",
@@ -85,19 +85,19 @@
         },
         {
             "path": "README.de.md",
-            "sha256": "b8fc734bb8489279e9d00e9b84f08ea0152cb4a8e2f41fc6dedadfb32d07f14a"
+            "sha256": "38b96317d5529d85fafd51db4262105d4586dcdf4efc5d9fd8eeea4c91511b5c"
         },
         {
             "path": "README.en.md",
-            "sha256": "3de2cfeac88f41d5e24bc3e31ea5c2765d596c6e7862bb2f7ba64669a59f0529"
+            "sha256": "a16b4f09ba788e1d3a906ad57652b37ae05f794ef79e5b378068e2385e8610b4"
         },
         {
             "path": "README.id.md",
-            "sha256": "f44bd82a8db6a6f4b645ae9b3817741da2a2b578d5537f136e33fbd1abe553ef"
+            "sha256": "efbc5d3e7ec923d98eb1807202bd2281b0ffacd740fd783bf9d0b4d9f39ccb24"
         },
         {
             "path": "README.ja.md",
-            "sha256": "173aad445e11f35f3cf4763cda3cdd46fb43e082c531276d4edf02a34333be6d"
+            "sha256": "5ae2b48e331297398f19db35e626780ea1c7154ba783e6d4659958e86ba851a9"
         },
         {
             "path": "TODO.md",
@@ -105,7 +105,7 @@
         },
         {
             "path": "api/audio/index.js",
-            "sha256": "84d7dde432b3314907b3fb8b0dd6db2eeba946c75598b80cf86b955f449eb997"
+            "sha256": "d9d4b3e00de6b610cdb89bc026abbfa73e81598083365f29efa5459d6411d459"
         },
         {
             "path": "api/audio/inventory.js",
@@ -125,7 +125,7 @@
         },
         {
             "path": "api/dictionary/index.js",
-            "sha256": "42d7e12d5f7b42ae1bafe2a644504ccbf5455deb3ad1039f540999ea366ec727"
+            "sha256": "7dce950c300cded18982c1b1c0133d6c4e78f0c737e5e934e2a3003439d1afb5"
         },
         {
             "path": "api/dictionary/kanji.js",
@@ -150,6 +150,10 @@
         {
             "path": "api/reuse/content.js",
             "sha256": "90a0394e209f568a97d2957afe398e763a5cb97198ca04fbe3dab263855d12e5"
+        },
+        {
+            "path": "api/reuse/difficulty.js",
+            "sha256": "243a3b67db07fe307a3f96eac91f67bbe013112ebd8f9dcebed2f72bfd7988c8"
         },
         {
             "path": "api/reuse/kana.js",
@@ -189,7 +193,7 @@
         },
         {
             "path": "api/tests/dictionary-graph.test.js",
-            "sha256": "5ca3ad6fb9fb9dc92381634b5ba26238b23d1ee30fb3111752768c94b5fb786f"
+            "sha256": "906675af60f7864414bea240193bef8d4c78792931ea17be3e0f823724d1d379"
         },
         {
             "path": "api/tests/jisho-kanji.test.js",
@@ -197,7 +201,7 @@
         },
         {
             "path": "api/tests/jisho-lookup-provider.test.js",
-            "sha256": "34cf89534ab1a698167700b872763ae3f0a96a93de83cc2e8b64bbde0773b005"
+            "sha256": "833f90822f9b4a0bdffca1ede7f35238c16785ec695eb9c77046c48ebdea221b"
         },
         {
             "path": "api/tests/jisho-transport.test.js",
@@ -257,15 +261,15 @@
         },
         {
             "path": "bootstrap.js",
-            "sha256": "4cdc7684d0d9e50e8b928bee7353790a2156bed45019a573bd484d6d4dbf6669"
+            "sha256": "45037046cedd0f03c7e6081ea5c7a7cbeff99f0fded9cedd49674dba93194e41"
         },
         {
             "path": "data/audio/indexes/characters-001.json",
-            "sha256": "5165d6773e3bae1a5ff8b3878914d228a4867e27dcac7bb0b846125ebe911521"
+            "sha256": "2bda6fda6070d9eb11552523b822a2cd139b2634f71308f7e4e0ccafb04b25f3"
         },
         {
             "path": "data/audio/indexes/sentence-compositions-001.json",
-            "sha256": "35b362f5fcedd2ecfe51b53021ca14384f946ab3c53b5858c04cef3d5e37c115"
+            "sha256": "93436f6c07ead9feae4b8031c88a19ae149110ebe5d96a23e3eef3144864a69c"
         },
         {
             "path": "data/audio/indexes/sentences-001.json",
@@ -273,15 +277,15 @@
         },
         {
             "path": "data/audio/indexes/transformations-001.json",
-            "sha256": "f8c6fb537fdaa96c1138473c001dd75b83dd3569186e7c0edc199f73940851e0"
+            "sha256": "9c68159538c975e9d340a78773eb9b1ce2e829d73dc4bfe7a9b1e5f5bd0220ea"
         },
         {
             "path": "data/audio/indexes/vocabulary-001.json",
-            "sha256": "9bc225ce9cc5522b1f468c528a69954babb79eb45aa076ba5caea01e276274d6"
+            "sha256": "7513b2e2a3a80ff50e73d8c6777c07275c66a31f48e9e2f588d3f40acbb5b625"
         },
         {
             "path": "data/audio/indexes/vocabulary-002.json",
-            "sha256": "0706dacb3c9fab1acdabd1003ce21c3d2fa0b0b5b80de9e283632acb8f93ed69"
+            "sha256": "5278ecd66e396e9104c2c8ba9865eb5a285a7e470e67dd96fe46f4364c6e6264"
         },
         {
             "path": "data/audio/inventories/characters-001.json",
@@ -373,7 +377,7 @@
         },
         {
             "path": "data/audio/inventories/sentence-compositions-001.json",
-            "sha256": "49985d589a211dc6c80ed3fc871e2814da18fe731b4d693159e604bcd511ab97"
+            "sha256": "05fadb2d35c09baa0502f51b1cf83e524b83805e4238239cba664913b972f417"
         },
         {
             "path": "data/audio/inventories/sentence-compositions-002.json",
@@ -381,35 +385,35 @@
         },
         {
             "path": "data/audio/inventories/sentence-compositions-003.json",
-            "sha256": "ee35cb9fc8803242994f6bbd3d27eb8eb60f3d32ce64effd60d7d91de0403e13"
+            "sha256": "e2be6c70dda261ae8a6fc0fa9b9fd870222545f6383c233ac4904528ea8743b2"
         },
         {
             "path": "data/audio/inventories/sentence-compositions-004.json",
-            "sha256": "5bf2d108620739aa46df88553d947b723288605310235c469566a0db34487e6d"
+            "sha256": "d23e53993e60f9e354da971e3b754da7e538c6d88e2c0efebd05f019f9bb4c21"
         },
         {
             "path": "data/audio/inventories/sentence-compositions-005.json",
-            "sha256": "aa5443a1a0f78c45dcd7702849de2f9427af4d0db424d120802b0c6eae6542fd"
+            "sha256": "e3bda739c832d3b1848eb6a996a53ef08d2388ba435bec4bc21992813a91da91"
         },
         {
             "path": "data/audio/inventories/sentence-compositions-006.json",
-            "sha256": "fa1f765c9e87bc61d09e728f972d1f0d370b49391ceb93bde29305503aea7bcf"
+            "sha256": "7dd7ee4dd3a7bc5d5f4cb72cb697bbd651b38bde7ee34f1b16764472582a7c38"
         },
         {
             "path": "data/audio/inventories/sentence-compositions-007.json",
-            "sha256": "3d749af19b1fa1104bd7213e119c63c6b45bb82b65d49409b317954da2aa1abe"
+            "sha256": "53414352ae3dc55c32ec63f023ffe648581e4b5a665101655aacf85a33ee7b8a"
         },
         {
             "path": "data/audio/inventories/sentence-compositions-008.json",
-            "sha256": "54cc88b4a70982398421d6752ac6f16f5015441daa15ed3614992030869270b1"
+            "sha256": "74848ff06e7e9656274e0e1cd3c2d392d5fa6c53fbe44178bb22cd571656746b"
         },
         {
             "path": "data/audio/inventories/sentence-compositions-009.json",
-            "sha256": "49b23fd97510e7ec89221ad0911105cd1f5340433251dc7665bad9c1f7c7ec3b"
+            "sha256": "63ab8fef407651b499f631e69b492224c2fc1392e46ac6d3b08cb5a82b92ead2"
         },
         {
             "path": "data/audio/inventories/sentence-compositions-010.json",
-            "sha256": "4f568377146b756b12c1604d4b8d8fbb23971dcc8022211879c11377dea1cf01"
+            "sha256": "a33cb13471d08abbefa10e418afe698fa4d62401466e9e4f9a44682060cc0cf9"
         },
         {
             "path": "data/audio/inventories/sentence-compositions-011.json",
@@ -433,7 +437,7 @@
         },
         {
             "path": "data/audio/inventories/sentence-compositions-016.json",
-            "sha256": "d1f5ddc71d21a9239cdf14682bc5186a1c94d53de3bf11124980119bb002e4a6"
+            "sha256": "57aaa49800cfc47f96dc889c22c5747b2a36f7f8dd6299ea4328ede77d8d22a1"
         },
         {
             "path": "data/audio/inventories/sentence-compositions-017.json",
@@ -528,6 +532,46 @@
             "sha256": "0c6a8c5b0fc4ec6456efde24f25f3883f4b3c6ceb8395c79257c2796988f99b3"
         },
         {
+            "path": "data/audio/inventories/sentence-compositions-040.json",
+            "sha256": "49dc9c7184df7d6ec3a9842524d628510071e7b39cd7a78bace13b00b73474b1"
+        },
+        {
+            "path": "data/audio/inventories/sentence-compositions-041.json",
+            "sha256": "33303ec40993ce129ae7eed2930a9da84f7b1504a24865dc830ed3ee018ca619"
+        },
+        {
+            "path": "data/audio/inventories/sentence-compositions-042.json",
+            "sha256": "f65ce1b637cc687019f0120dde8bc7f1d8a57c9d4c873b6e55379b7116620b6a"
+        },
+        {
+            "path": "data/audio/inventories/sentence-compositions-043.json",
+            "sha256": "c7e967e951a9e28579f6272404091151aabb239f375b18a31478c9dddf1181ce"
+        },
+        {
+            "path": "data/audio/inventories/sentence-compositions-044.json",
+            "sha256": "6a34888c69f11733ba55c67a0df35f8836f3b400eba3051472bb6acecf36c53b"
+        },
+        {
+            "path": "data/audio/inventories/sentence-compositions-045.json",
+            "sha256": "7c4d3d2d70c76e03fcb495e0725a95c4219b580ba514e1292f6d6f0dbd4124fd"
+        },
+        {
+            "path": "data/audio/inventories/sentence-compositions-046.json",
+            "sha256": "88731bdd0a76aa83dc492ba73f29cd282ef237acfc1a42528c6f8c8b18aaebb7"
+        },
+        {
+            "path": "data/audio/inventories/sentence-compositions-047.json",
+            "sha256": "e22410798eaf42f05a349c8a52f973849244d18bf9a3e22fd8bc2a5558196c93"
+        },
+        {
+            "path": "data/audio/inventories/sentence-compositions-048.json",
+            "sha256": "6af9c047ba6b48dea4c8e1913a0c6c98bf3a9553e815f80c503fadce6d4e8ae8"
+        },
+        {
+            "path": "data/audio/inventories/sentence-compositions-049.json",
+            "sha256": "8b2a966a9cb51b2995ff0d6796045e897659748c9ac643496f3b24113858e66b"
+        },
+        {
             "path": "data/audio/inventories/sentences-001.json",
             "sha256": "2c3e529e22fb97f7b64c058d60bac2bf1c34d30ed32f29b8dc420eede52ada8a"
         },
@@ -537,51 +581,91 @@
         },
         {
             "path": "data/audio/inventories/transformations-001.json",
-            "sha256": "d617408f7eaa35a85f8627e161d73e0ee7791991668f4e63210124cce90e0f23"
+            "sha256": "ad2efc7aa08f02b1d2aba2ce239d4146caf8fd4662e91564021c6d2559d1d6b4"
         },
         {
             "path": "data/audio/inventories/transformations-002.json",
-            "sha256": "24bd5bbbe55c8e5a819e920f44ec4166753ab2e3ede7e4f992e657b2194de3c6"
+            "sha256": "b50e29eb565ebc16a7ef0ce71bcfeb3c0cb70d2e2bfb76ae004a3f797f0ed133"
         },
         {
             "path": "data/audio/inventories/transformations-003.json",
-            "sha256": "d4413e239b597f8d559a4328c2dafd2bde9eb846c663b67f0fde74c595fd883b"
+            "sha256": "d7355cce08a20113d5539cb10effa0c4d733977cfac3ecd5d93aa20148ee7524"
         },
         {
             "path": "data/audio/inventories/transformations-004.json",
-            "sha256": "03dd4882b0e4adf1373d9939fb995ab2a80065c27512b7da9ef541071bac3133"
+            "sha256": "168f90b27cc8040fa8f38309d2a488b26ab6c31a0822b9d0ac0205addb28a719"
         },
         {
             "path": "data/audio/inventories/transformations-005.json",
-            "sha256": "72580403672756922b437405db2503f30dca1f697eede24f72c33e2396976f48"
+            "sha256": "e83c02e9a5cc9b373a93e1881d6369dbbd2f83de2e78bbc48130c5329debdc27"
         },
         {
             "path": "data/audio/inventories/transformations-006.json",
-            "sha256": "e7b650f32b376f19fdbea2a3f5362552e6b1f3b0a8e84c74fb39b9f781729e42"
+            "sha256": "acaec2231a4ef85e2ab0dcf8f2919fd53b324da291a9160cee0d7d65e2a979e1"
         },
         {
             "path": "data/audio/inventories/transformations-007.json",
-            "sha256": "313e426d891b5865d6faf6576e7f33d43361ffbc83e6ad1d8f49113d33b9383b"
+            "sha256": "905ea112103ccc1bddcaace395335aaaac6c626cd12bfe8d1b499d1ca9edb1d4"
         },
         {
             "path": "data/audio/inventories/transformations-008.json",
-            "sha256": "46dec6cfab3a1b1d65029712eca1c445be2528b76a160422abecfac3fbf4ab4c"
+            "sha256": "0120051ea2a668715f884e980f2bb62087f83903b1bdbf0edb8e218bc03a19af"
         },
         {
             "path": "data/audio/inventories/transformations-009.json",
-            "sha256": "f90dab980077eb5b2f7bbe15c1e35ac2aa65677c15d0d0b62ea1a8a76606b582"
+            "sha256": "64632960013f94d79f03ad981a0dda27d37da4a00922a3af0de89fc740285c58"
         },
         {
             "path": "data/audio/inventories/transformations-010.json",
-            "sha256": "85fd6288eaffbd20ca716cea03313fdda65c74413953d51c2e1932053d4bddc7"
+            "sha256": "4c085ad134ef43baa15619cfc8f023f59ba872a99dc1c2bab4ab57d78f94c553"
         },
         {
             "path": "data/audio/inventories/transformations-011.json",
-            "sha256": "dc2ef4ae29f381703af072e4162849aec344b00a460c763692bf6a52a9a06c0f"
+            "sha256": "c405bddb93845835ac05fea9029970a729478c5d2ca2d4939a7feb3452260122"
         },
         {
             "path": "data/audio/inventories/transformations-012.json",
-            "sha256": "39ef1f83f6288edeced47ec5842b423761e39b71f28342b671277f9ea72faa0b"
+            "sha256": "a86888bad391c40ee3b7523f451727cfe52bc284685c2a71a01624b4d38c3beb"
+        },
+        {
+            "path": "data/audio/inventories/transformations-013.json",
+            "sha256": "57f8d43334d1fe276c3efbd2408ba3afc775d3a16aca6aa822f6de5adc83f383"
+        },
+        {
+            "path": "data/audio/inventories/transformations-014.json",
+            "sha256": "a67059c18b27ea375e3cd92a7717d6a69d6c40c61a0d9908e480caec8f2f6fd5"
+        },
+        {
+            "path": "data/audio/inventories/transformations-015.json",
+            "sha256": "c0f1b14c1903e4da51e589e073b38d00f0d006ed8afb18054327f2c2390f6cd1"
+        },
+        {
+            "path": "data/audio/inventories/transformations-016.json",
+            "sha256": "407f9f2dc7b9338c0a63361c0a75dc1b11a63fd663b85a034692e1fab4528857"
+        },
+        {
+            "path": "data/audio/inventories/transformations-017.json",
+            "sha256": "69641ea9eae718a8b1c88312c1ad5e78fbf4d3bef5f1a60dffe39c76dd44e839"
+        },
+        {
+            "path": "data/audio/inventories/transformations-018.json",
+            "sha256": "453ba821daa1461e2b0ee7c5364675b8596df8de7c6c0db09f52021a6ae5cb98"
+        },
+        {
+            "path": "data/audio/inventories/transformations-019.json",
+            "sha256": "5fa87cd9e9f027ca4057a4f5511622842e599d58dd2539cc32a9e385b65428f2"
+        },
+        {
+            "path": "data/audio/inventories/transformations-020.json",
+            "sha256": "c4769e7da61a1eb7d387a7e97f389c4edbddd536110f7f79d662abd20210b5cf"
+        },
+        {
+            "path": "data/audio/inventories/transformations-021.json",
+            "sha256": "c0a5188f33487f0a47de1690244a0037f4e4293e9953839eb0e0315643ca4f93"
+        },
+        {
+            "path": "data/audio/inventories/transformations-022.json",
+            "sha256": "ee8ddb96b3120e8fe14121d925ddec7419d06293ade9a242344f4de8f483e8a3"
         },
         {
             "path": "data/audio/inventories/vocabulary-001.json",
@@ -589,43 +673,43 @@
         },
         {
             "path": "data/audio/inventories/vocabulary-002.json",
-            "sha256": "52120d866de04e3295a13922a998e5f4b81ab0474f4f23055fb9f21d3c8748fb"
+            "sha256": "8da5eb0a74cc884d1e4b0d59511858d548406ead3989437e0808ded80be8ea82"
         },
         {
             "path": "data/audio/inventories/vocabulary-003.json",
-            "sha256": "06b02806be82de808033f86d9f78bbc9836645e97e4157b1cd652458b4e9d2f2"
+            "sha256": "f9acc76a71b400d291cefdc7663fc11687672c46ce3943186de751c033837366"
         },
         {
             "path": "data/audio/inventories/vocabulary-004.json",
-            "sha256": "f4c19dfea7f53fe35a622f1e118d1598a36549259b4ecaef6724b94bb355dc3f"
+            "sha256": "b8f2d1a93d2baafe4a5e59bcf872247e00141ed51344d198bf6f7ad5411dbde5"
         },
         {
             "path": "data/audio/inventories/vocabulary-005.json",
-            "sha256": "886b97bb37a1605eef58259021371d8009caf334a6a627d1309305546155c68e"
+            "sha256": "446647f1eda6c573e511c8b6ea671c0ab0f134e93d8811a49aed4fbd74d74afe"
         },
         {
             "path": "data/audio/inventories/vocabulary-006.json",
-            "sha256": "bcb88751a6e08a3b34ac34dae8cb551a0d85326687eb0fc38a94d1630449c34a"
+            "sha256": "2f52aab7549cbc82d87a9ea36e141045e36a0a92640a3243fdc4b0a0fcc66d5b"
         },
         {
             "path": "data/audio/inventories/vocabulary-007.json",
-            "sha256": "603641dd261f12b2d43e16207b09a6857592b27ca1617f363016f03e7ec3a3b7"
+            "sha256": "f950b83e4122b653feaf4e223c8f8a0ec260923a1985b25a0573bbc1cf4010c4"
         },
         {
             "path": "data/audio/inventories/vocabulary-008.json",
-            "sha256": "fa7d83c9e214dcf97799d5ee95253d39c8f38b3536cc0b2cc751a9125546d62c"
+            "sha256": "afa9673d1519426e91e21a8ecbf021fe59d7464595a86fe4cec0535784ceb22f"
         },
         {
             "path": "data/audio/inventories/vocabulary-009.json",
-            "sha256": "592233299d2a946bc55fcb4c0d8341cfa6d3ba144f740b89cffa5ef676fde698"
+            "sha256": "c4229833b8b5ea765f95eacd2d782feb9f01f4097be6b8c9bbf27c8c0ee9a806"
         },
         {
             "path": "data/audio/inventories/vocabulary-010.json",
-            "sha256": "f611f440e4bcbe597ceab6c1d0f9d8e0fcbd010b1074d959ec131d347eba9463"
+            "sha256": "7c4f2d1a4ecc07929898ea14d8337957d9313527b093f29ecaa836a0ea3bedb7"
         },
         {
             "path": "data/audio/inventories/vocabulary-011.json",
-            "sha256": "c14070342928436f3043e5a1355ec89ef0524419c7fa95c43d6d4161efb2bc3f"
+            "sha256": "6a2a0cb021c33dfb9898670a010751637a9d928d4f67da61e563e9dcb1b4bd52"
         },
         {
             "path": "data/audio/inventories/vocabulary-012.json",
@@ -645,15 +729,15 @@
         },
         {
             "path": "data/audio/inventories/vocabulary-016.json",
-            "sha256": "f51303b7e3346a80b8d2d4bf6c0071d50b1bc8402337bfa6d3c309e06c567f6c"
+            "sha256": "5ff5f500b13f72321cde3e975f88a1dd9f72f191d065175ea294dda2931c0213"
         },
         {
             "path": "data/audio/inventories/vocabulary-017.json",
-            "sha256": "2074764bf1b8c06283df6c5f68677ec345a784b554af8dc7c5fe95c3d9518cd9"
+            "sha256": "4b7d488c7e6f053949ab762c8647ea90b6daeb2683cd67218de51c6184f884aa"
         },
         {
             "path": "data/audio/inventories/vocabulary-018.json",
-            "sha256": "00a8a337a00eba581798569a3a8093620b240c1c139f9c160ee7b42a65a781b6"
+            "sha256": "0a350886992eb040cb6ce799c3f2adf7aba60146b3714e4e623785404423289a"
         },
         {
             "path": "data/audio/inventories/vocabulary-019.json",
@@ -677,7 +761,7 @@
         },
         {
             "path": "data/audio/inventories/vocabulary-024.json",
-            "sha256": "cf081622e4a9490b2f76025cc5bc5f8694c7b07eefb823f10cda560b5f62b75a"
+            "sha256": "798656c401ab65a6b37fe4238adae792c81236bdb8aab28f6f12c009f435e19e"
         },
         {
             "path": "data/audio/inventories/vocabulary-025.json",
@@ -689,7 +773,7 @@
         },
         {
             "path": "data/audio/inventories/vocabulary-027.json",
-            "sha256": "4f7f52512696a698c8af94b061903874af0acb170fb0a3d640e76bc9ceb897cb"
+            "sha256": "4b31a9c6ae05988266c3ec148fbc9d48f77e1ba711d82580f5f4262611edfec6"
         },
         {
             "path": "data/audio/inventories/vocabulary-028.json",
@@ -697,7 +781,7 @@
         },
         {
             "path": "data/audio/inventories/vocabulary-029.json",
-            "sha256": "4e9998b5afa805ed1fd5da99e683f5f237ee81631c497b85f06706a1cfaaf96a"
+            "sha256": "3ca2b0ba0337bee89bbf766afb3194778f92b5a197a643419096193db49b1a0d"
         },
         {
             "path": "data/audio/inventories/vocabulary-030.json",
@@ -709,7 +793,7 @@
         },
         {
             "path": "data/audio/inventories/vocabulary-032.json",
-            "sha256": "265e9e1eba544f88a1fb9799046cb2cfb3b95365f246a600c6fc2233170c8bed"
+            "sha256": "f190c8aa5be1ab99749f88bba29aa6719024d228fdf141ed2d3961e7dd94a44e"
         },
         {
             "path": "data/audio/inventories/vocabulary-033.json",
@@ -717,7 +801,7 @@
         },
         {
             "path": "data/audio/inventories/vocabulary-034.json",
-            "sha256": "b744a1064208e68265488ea0c655abc13a2fc45aad509a40d4a74dbc15353cab"
+            "sha256": "2e7aab7bc37393d0a2cfa1116949380b539b896631caf04ee379006870a900d2"
         },
         {
             "path": "data/audio/inventories/vocabulary-035.json",
@@ -729,7 +813,7 @@
         },
         {
             "path": "data/audio/inventories/vocabulary-037.json",
-            "sha256": "0737bbeecd21b78a1fa4e0d509c11efb2e94865cdacfa3b60be832ebdb14a183"
+            "sha256": "d238cc716b6e50fa7163708f16a4b46a6b5e2a2d40f4b4842f838a7aeebda705"
         },
         {
             "path": "data/audio/inventories/vocabulary-038.json",
@@ -737,7 +821,7 @@
         },
         {
             "path": "data/audio/inventories/vocabulary-039.json",
-            "sha256": "c035185785984215762994e4a51f4b51d15c338ed0c78dce648fa5d218b1993a"
+            "sha256": "665c1277ba0545cea1c292960a34463d9a4ee62336398d12cf816ae10503eb6e"
         },
         {
             "path": "data/audio/inventories/vocabulary-040.json",
@@ -749,7 +833,7 @@
         },
         {
             "path": "data/audio/inventories/vocabulary-042.json",
-            "sha256": "89645a11945de8cb4fb80e7f4d9e5a66ac120a040204ad431ea86bad6b4591eb"
+            "sha256": "7b972592419ea3d3f935b5885ccdeb353df4840d342cc51f77c94d59d95443b2"
         },
         {
             "path": "data/audio/inventories/vocabulary-043.json",
@@ -769,43 +853,43 @@
         },
         {
             "path": "data/audio/inventories/vocabulary-047.json",
-            "sha256": "c470d65dd274e502cdfccebaf8dc98b57eff5844aa3bea9edcf5fae4f20d5875"
+            "sha256": "bfe7924b0f913c2e19048f7584e0e2753944d6586f3b4aa574532219b66fc9c1"
         },
         {
             "path": "data/audio/inventories/vocabulary-048.json",
-            "sha256": "96b7d5062aee7253f796dc5d9e391cee351c1c7e8ada76426d24732a37a4fc28"
+            "sha256": "3027547be1b26d7a9a779fdffda6ac828f606658694c04c7b0dec6150e1991e5"
         },
         {
             "path": "data/audio/inventories/vocabulary-049.json",
-            "sha256": "2e0dfa7070b707fe317e67a6248de0d2d5f7ad85ddacb89e608ac5b15f7d8911"
+            "sha256": "2b88275d948b5b2a7fa39e91ace674174652eb9dafe17fae0b91f81ece93e91d"
         },
         {
             "path": "data/audio/inventories/vocabulary-050.json",
-            "sha256": "876f670e2f302ceab227785d1e20c9fc99eb9a6c521ed5ee2898ff8b4e68ce4c"
+            "sha256": "f75e784354cc5ed02446c8628f14deed5d2d85daf2ff8b69858799d4e8b44a14"
         },
         {
             "path": "data/audio/inventories/vocabulary-051.json",
-            "sha256": "959d35248931e7a5ec54eb0d8768170bce74f580af5b3fc03d5b9883d66b11bd"
+            "sha256": "428fed6b0453169859759b352d88e2edf819a53845c1e6e691d55ffee868894c"
         },
         {
             "path": "data/audio/inventories/vocabulary-052.json",
-            "sha256": "0dfbb1f6bbee24a575e46525cf9c328afec7bf51261c1a65d418ea53394ab72c"
+            "sha256": "2b8dd7fb442ad7410e7c951e2711e8ca0bcc595cb9902880816d138d51c0c8d1"
         },
         {
             "path": "data/audio/inventories/vocabulary-053.json",
-            "sha256": "472931b16e20cd58d79fc12651ae076bf5e1d2a6ecedda43bddc5f1ca42e3f92"
+            "sha256": "c907221f0ebc766cadf6bd555309c28f8b38a152d233117d6ed2d5489a22df36"
         },
         {
             "path": "data/audio/inventories/vocabulary-054.json",
-            "sha256": "d50d21449498a31be8efa881274914a4f8b8ffbbdd7c1fcd899c4689b0d8e408"
+            "sha256": "ceb68bf5ec2479a5eac4c6c32c9527d781942feda2a48a64e63868d7c907c4b1"
         },
         {
             "path": "data/audio/inventories/vocabulary-055.json",
-            "sha256": "a0d5157c1bfadf50ae1e6ee32dd5ecaaa8df30daa42c2c234949d360f297d7f0"
+            "sha256": "47eb8dd5d13a6ee062b4293260907adf2b98304164ccafe580956f4a43e2741b"
         },
         {
             "path": "data/audio/inventories/vocabulary-056.json",
-            "sha256": "6af6e987ad0f88c0bf455045dfe27ea3cdfd95481f2407d91acf2c3c166e7544"
+            "sha256": "4348fb50d42c7ee86c46e3d6bd6570d3bdcd935945679b6ea1d24683b4a812f2"
         },
         {
             "path": "data/audio/inventories/vocabulary-057.json",
@@ -872,8 +956,72 @@
             "sha256": "a741b24efc9a705d28777ff5cb9f61789a86e72d1d7aaa3d6af0a0b9df45ae71"
         },
         {
+            "path": "data/audio/inventories/vocabulary-073.json",
+            "sha256": "5a7421b413005094a317207097e2d6d2bc7a55710f301b8bc6cf4994f5376876"
+        },
+        {
+            "path": "data/audio/inventories/vocabulary-074.json",
+            "sha256": "687b6f9980594624a8f99e73c6e2163514672e8b7d196962ff25b15c53dbc427"
+        },
+        {
+            "path": "data/audio/inventories/vocabulary-075.json",
+            "sha256": "d1a4441feb244455da858960663a84d723842a4f8cb18ebd74db88a378409825"
+        },
+        {
+            "path": "data/audio/inventories/vocabulary-076.json",
+            "sha256": "6157abd0269c3282f6f37d88ef53b84edb77333f7dc397df8bbaf71a231fa2dc"
+        },
+        {
+            "path": "data/audio/inventories/vocabulary-077.json",
+            "sha256": "c5b04d7d3b28062ae958ffedc2533eb32241c2bf0ce7405199f452092a173b3e"
+        },
+        {
+            "path": "data/audio/inventories/vocabulary-078.json",
+            "sha256": "1b997f8baa491b3e7fcce670df203754fba502a7ff924302acbe94cdf7a8b387"
+        },
+        {
+            "path": "data/audio/inventories/vocabulary-079.json",
+            "sha256": "ce32e8c129be281bbb5484fec4704d50e38a4c0a77f47970807c448d68db2a04"
+        },
+        {
+            "path": "data/audio/inventories/vocabulary-080.json",
+            "sha256": "80e2b86df52f5387e09a4c92178f3584c9f534527b6646e303872a453f0187ee"
+        },
+        {
+            "path": "data/audio/inventories/vocabulary-081.json",
+            "sha256": "7ebe288d7d8ff923c591d50a076c6b07b00d4a8374b780dcdf99be2bebb6449e"
+        },
+        {
+            "path": "data/audio/inventories/vocabulary-082.json",
+            "sha256": "89654f9f79e11fd9779fe4b549124eab9680f139311de0a5dbca35ea7b7e0413"
+        },
+        {
+            "path": "data/audio/inventories/vocabulary-083.json",
+            "sha256": "0c1628c622f90bff95c4b3cb0a6ec80da1abe841089d0848548b86f786a45ae3"
+        },
+        {
+            "path": "data/audio/inventories/vocabulary-084.json",
+            "sha256": "e573b3b628ecb42592f4a0ab5f2f0ed0135c40c864c8d7e57be0f6192bcd8abd"
+        },
+        {
+            "path": "data/audio/inventories/vocabulary-085.json",
+            "sha256": "e814a4d602948024ae14f2f2d2364453b07e357e191ff959def305c83fca7011"
+        },
+        {
+            "path": "data/audio/inventories/vocabulary-086.json",
+            "sha256": "b7d3205c2593e49601c30e0cacdfb5e0e589677c42aa4bcdf134b29a3169b0a5"
+        },
+        {
+            "path": "data/audio/inventories/vocabulary-087.json",
+            "sha256": "00b8ed7f97d02b0651dd9fdfc1c3149a0d08a14d61b86b23b05c916ad2646620"
+        },
+        {
+            "path": "data/audio/inventories/vocabulary-088.json",
+            "sha256": "dcd149c14cfcf84db8b4d2ece55bc7a76e578f04de32451e2e96be8a880db5a2"
+        },
+        {
             "path": "data/audio/recordings.json",
-            "sha256": "b5bd9e84ea139f8f9a05a12aa8dd535ac350f17a315d14d15ca0387beb13714a"
+            "sha256": "883e14ceb9f7daa673ee4ee8d7e8b6049dbf9a9f899122d15b7408fa5797721d"
         },
         {
             "path": "data/audio/unavailable.json",
@@ -7269,35 +7417,35 @@
         },
         {
             "path": "data/library/content/alt-characters/expanded-4e00.json",
-            "sha256": "d45c1ce50fb3cc2b6ad418079fb495632fdbed3aa378f4681104e7785138984e"
+            "sha256": "f40f96136f015442f23d79d5071def15e325cd0144adb51136c6608fcaa17353"
         },
         {
             "path": "data/library/content/alt-characters/expanded-4e0b.json",
-            "sha256": "ed9fd9d080bc5a79aac54153c6c0b13ecac9ccbfda0904c6ab11bcabd3ec3351"
+            "sha256": "af0cd6e884ceddc745743a2c7f31484163a7cd73d5fb5a370ce5bd2b1eecde60"
         },
         {
             "path": "data/library/content/alt-characters/expanded-4e2d.json",
-            "sha256": "13fa3b9a00b88c73bc454d8f796913eb9c8fe72f13fed3477b9a488bd7440b32"
+            "sha256": "a80b16fce28561c416765c8721d5194b41372bbdf0e114fb4bb7081d2d86514b"
         },
         {
             "path": "data/library/content/alt-characters/expanded-4e7e.json",
-            "sha256": "f97484286a07582860b637acca2da8c867c673724816fd8f4280646bf3ac9499"
+            "sha256": "852ce6a3bbf7450bd3934c9ad1b67fcce4eaf2799deeef94dda28ceda0725cb3"
         },
         {
             "path": "data/library/content/alt-characters/expanded-5098.json",
-            "sha256": "76d11638a0a6d5dcb140446e36ad7c174c6acd22fd835edaf440d70451254fdf"
+            "sha256": "dfd0e158c539ee72e0fc73a7ac1ecdfdb80105e243a53e1df871f752f92fba80"
         },
         {
             "path": "data/library/content/alt-characters/expanded-51ac.json",
-            "sha256": "b5595dd782d78c3969316f3d4614dffc640cf070d8ce1fe34e7a5d8ace4e5a0f"
+            "sha256": "6a72859d5e8d8c817b905f415e03705f9a34a9a11f99a92c9cd3a998ef2154f9"
         },
         {
             "path": "data/library/content/alt-characters/expanded-51b7.json",
-            "sha256": "ed269d924c1d53ee27f531fa0f5ea66b1bcd12c0bc758fc45dfedd496faf7c90"
+            "sha256": "8196e72e028b56e70f7ea0e3bfb988c5114e4b80c4d562780407e258493f4ed4"
         },
         {
             "path": "data/library/content/alt-characters/expanded-51fa.json",
-            "sha256": "d3e1d2dc1c586fb07bfaa1b8280a7db95b35980b739467fd0108987956354e8f"
+            "sha256": "fa30f31fc1ea8bb871e39f903f0c9a500cedb429554f5316716b893bd5707e9f"
         },
         {
             "path": "data/library/content/alt-characters/expanded-5206.json",
@@ -7305,203 +7453,203 @@
         },
         {
             "path": "data/library/content/alt-characters/expanded-5207.json",
-            "sha256": "331a13c85db2febb0c44cf40116ed4d6edb33a01ce9fcf09d0bcf747b390e5ac"
+            "sha256": "afe93897e334e6e93d8714a5d506d381a43abed27f37d74198e47b1d449ac8f3"
         },
         {
             "path": "data/library/content/alt-characters/expanded-52d5.json",
-            "sha256": "c64b57525fb7c7734286b8faddb27d69ebf0a485629b89d60443f202ad3f362f"
+            "sha256": "861693bac97c8c44b0a4bba02b46be1845e1c6e1b321e98f86d71086febddabc"
         },
         {
             "path": "data/library/content/alt-characters/expanded-5317.json",
-            "sha256": "1c4e4cfab491e71c88e9a05ea1703268e5510aee7c3dcaad57a618932584d259"
+            "sha256": "161f7583b235ba5744a090780c075ee7915964070c24f4e1cb770857ad3997e7"
         },
         {
             "path": "data/library/content/alt-characters/expanded-5357.json",
-            "sha256": "81d347e8f5605aecb03e9c5ceb25abf80119ab1821ffb8487eff535767bb5b8f"
+            "sha256": "034fda995dc92d41beede7aeb054a33e2ba8c456ef5856ea26d6fafe42236072"
         },
         {
             "path": "data/library/content/alt-characters/expanded-535a.json",
-            "sha256": "c767d7dffb60182fd2aa0a970bdf3af3c6e50fbeabddbd1fe1bef1ae3a5ce27f"
+            "sha256": "0aa51acd790cafbfb42765202e3d4422eb480e6d0935ee64020cd49cd66df740"
         },
         {
             "path": "data/library/content/alt-characters/expanded-5375.json",
-            "sha256": "a4e00f5b3cdd07ada30574f33796a1ec64bcfca0bec228198c1b47c25f6360e5"
+            "sha256": "3496bf420ddef4728493fb6858fd37b455a83448e056d5b5e6ea7ff83e1f0df3"
         },
         {
             "path": "data/library/content/alt-characters/expanded-53e3.json",
-            "sha256": "2100013e0a0ebc313bd8c2447cb0b2c193a40c29798f4e956a9cad9ceb674ae8"
+            "sha256": "795e9ef1786c4cde3de77498bb358ff933c91d1ebe7aa37ea73f021b86a38fbc"
         },
         {
             "path": "data/library/content/alt-characters/expanded-53f0.json",
-            "sha256": "b4e7a78a6b3c642789a03ccacc8ff08b830de2f6619746c65384c3c6454171cf"
+            "sha256": "bc29baa86a46ccd439cab8fd25bf0e2c10924c1c94d7439aff3eb2753bbdeb01"
         },
         {
             "path": "data/library/content/alt-characters/expanded-53f3.json",
-            "sha256": "db24585c9c515fdfe0092b61c058eca9458ddbd4d02a729105d8b79df184eedb"
+            "sha256": "a174c27526f5474533b57dd895a5c1299ad5de2581cf3d57f5c01964d2818370"
         },
         {
             "path": "data/library/content/alt-characters/expanded-56f3.json",
-            "sha256": "cc17b7f88f4f7f603d953011d08b298e5c005920dc1c73654ce7c072beab1a39"
+            "sha256": "d667a52f7ba39bf43dcf932e743549d93d9dd398db6bcd191f2007880a6c7d67"
         },
         {
             "path": "data/library/content/alt-characters/expanded-5712.json",
-            "sha256": "e76962cb1ec9caf899c5655a786e5ef4bdc26716bfb58200fddf2e627f35c446"
+            "sha256": "6e3f355eeb2955721b4fd99c9668338eb2cb21df867e0bac454952e75ed63f92"
         },
         {
             "path": "data/library/content/alt-characters/expanded-5730.json",
-            "sha256": "aa77d4fa3475af6d1a0082527cea936dcd3255bb90008673a1577857dd910314"
+            "sha256": "6a00a91aa46b21c359e225c7ab919bb1682a0c71ac63a1bec0299afb220e7c63"
         },
         {
             "path": "data/library/content/alt-characters/expanded-590f.json",
-            "sha256": "6ef3868ac1ed1568d19cb713fb650613a9a44a11b2f2a9c1c176fff39947ac98"
+            "sha256": "fe395b62c166889ce5e2f5d5f3b9adde9ffe74fb9094def69422fe3f03bc6347"
         },
         {
             "path": "data/library/content/alt-characters/expanded-5916.json",
-            "sha256": "64af13b5f20d44d526d690f93e1b2dd725a52a124e54c3f636a40158f9925c84"
+            "sha256": "ce77b3ba3da4a0ea2ec93214e65e361e91d5d4f3d9d2e322663042dab6dddaad"
         },
         {
             "path": "data/library/content/alt-characters/expanded-591c.json",
-            "sha256": "630d602341f8f914e25855c2eec550d4bd85ae52b30f9a04bf97c4f26169108e"
+            "sha256": "972ed037c5312fe2d4435196d541a27e29aac71162fc1f25a38d1813159b1f1c"
         },
         {
             "path": "data/library/content/alt-characters/expanded-592a.json",
-            "sha256": "c1f7e7e49a4b2e8cf3ce93e3f5740fb4975dacc6ad6f7c8b01837b459657372b"
+            "sha256": "cd74f7867b684a33d05183e3909fa4013cfd7341ee3b964de7645de6eda8d4d2"
         },
         {
             "path": "data/library/content/alt-characters/expanded-5b50.json",
-            "sha256": "dd7a14bb9cd99ab2cb712002048572e192344b89682745d0592740eb3969beff"
+            "sha256": "c84b39c803ed23d6c4ca95930c91d6a1ddbf2f51b29c83122c2fc94e39837d87"
         },
         {
             "path": "data/library/content/alt-characters/expanded-5b9a.json",
-            "sha256": "de033876981b5ce22cca8202f6cb7c7e66ee5349e4be4bf5ff50ead1613e6f3f"
+            "sha256": "161a9b747c75a634350c4147ecd59b5480e337a070e1ed5e322dbc82e1ebfdd2"
         },
         {
             "path": "data/library/content/alt-characters/expanded-5ba4.json",
-            "sha256": "679c9a406757761b2ba06d71a731e86b59d7aa60157bda0cac9fc5c5f5f13098"
+            "sha256": "6d09994a80a6e6a103329b86ba80d3f9041bcd05b22c48d614983f589008f947"
         },
         {
             "path": "data/library/content/alt-characters/expanded-5bdd.json",
-            "sha256": "2b1a35a8bc96855216961c93a22ac3e7b461eccd17ba46128899fa660a73605e"
+            "sha256": "8df2f77742b7ab8069c8ce09954be74b39c24581c6eaee438f29f292f4265f53"
         },
         {
             "path": "data/library/content/alt-characters/expanded-5c01.json",
-            "sha256": "1a1521b2b9654aad31113b12d3b9318aa29e046ed0b56deb2b05181c60d0bdd5"
+            "sha256": "a21d18701ae4891528863b8e4c0181f44d4e83bfb9895b6d72e2d689e04dca9b"
         },
         {
             "path": "data/library/content/alt-characters/expanded-5de6.json",
-            "sha256": "e6af67860c9745135892eeff230b1d06d3d845a45b699867bca890ca53d6a6f1"
+            "sha256": "8f16f1bb14369627bc6ad9bd96ca59cc75ed10580a9642b9a759b071a1b59249"
         },
         {
             "path": "data/library/content/alt-characters/expanded-5e03.json",
-            "sha256": "2810abe6d0c31e510afb869a3697e26808f966ac87c2ed83a7a17f8e924f4d8a"
+            "sha256": "5ad2849d594393d740e87e78b43030d2ff94ff0602a68c7e33fa469024a545d1"
         },
         {
             "path": "data/library/content/alt-characters/expanded-5e3d.json",
-            "sha256": "6e31bd319771dfb445b936121502c119fe5ae9ee9eb9d603b32765599e7af7a5"
+            "sha256": "175d94e3fa5c97eba509ece277ca3ff4ea8326dd254f42a75b02517fb055ad1c"
         },
         {
             "path": "data/library/content/alt-characters/expanded-5e83.json",
-            "sha256": "680a677b8721fa963d4dbc38aa1c51c446a507f7cf821121c9e5ec339baeec2b"
+            "sha256": "f749cb23e42fbd0737e5b5505c2d4e89614ede9b461ccb095284e5d7d320c7ab"
         },
         {
             "path": "data/library/content/alt-characters/expanded-5ea6.json",
-            "sha256": "5834fc2fd9777eb741d84641bacc162ce9519ef8ee79d8643e11e41bafa82cc5"
+            "sha256": "6980f66a9865f01e56b533b9d1396a9bf6ae896801000c7d62b4cff95eba580a"
         },
         {
             "path": "data/library/content/alt-characters/expanded-5ea7.json",
-            "sha256": "79132d9f2520190af9837e1124be124c73880e76078987e610b20fc4299d0c53"
+            "sha256": "bfca59471a232231f55474468cfbc225b2452115ef2a592e37c5111cd9a6eaea"
         },
         {
             "path": "data/library/content/alt-characters/expanded-5eab.json",
-            "sha256": "2c0e4b6d6cc204f3d723b5a6d092261fb47ab7dc5140e38d1c995d08e822091d"
+            "sha256": "bffb02203d5fef158e9d2b88c8528d0454f394d516dd8983b2be549f5e5ce340"
         },
         {
             "path": "data/library/content/alt-characters/expanded-5ead.json",
-            "sha256": "9a6d9613935be63d5f4dfb1ba1bc5b872bcbc082f532ce1418e5b1625cee2c81"
+            "sha256": "eb358bad4e82e4715bc33cc5048421f19c138e62070cd9a5607c58de675b20e5"
         },
         {
             "path": "data/library/content/alt-characters/expanded-5f15.json",
-            "sha256": "894714a544fb6e6ab6547c6a2011f10195fa4eba1c66c8dd00f2e027e8ec59c9"
+            "sha256": "dd35bfd9c6dac7e103c5d7ced851931fb506251845ecabadb13fc373bb77ed55"
         },
         {
             "path": "data/library/content/alt-characters/expanded-5f85.json",
-            "sha256": "e87f076fcbdf02fd3362b671c0194fc015a74a88c3ddee337ac2414217f9188f"
+            "sha256": "c17c64968e442cf3b4095aa78a45ee522f74b40403d269b8063681e6a7d6cfa4"
         },
         {
             "path": "data/library/content/alt-characters/expanded-5f8c.json",
-            "sha256": "2a7f5abdf0903a4b3fb6e2a001a9856cad069a1127775f7e438b9d0093aa60ec"
+            "sha256": "02372ec4920290dd4425beff8f19f2279401223f291ce75b2e76678605a7b3c5"
         },
         {
             "path": "data/library/content/alt-characters/expanded-6240.json",
-            "sha256": "644ba3e44ffbfd7c24e904987ce7601071f8ed7427319d8dab2355e4f54561b9"
+            "sha256": "c5bccc0c2c84d77aeb034c77c2d47cc8dc769ce21a864be053a73605cd7faf32"
         },
         {
             "path": "data/library/content/alt-characters/expanded-624b.json",
-            "sha256": "bb87237e5c73fdc9982a901aa4590d6ec6a1f68a3a7ed66a8c185afadcf6928d"
+            "sha256": "96e6d3cf496af3b9cbd4124607fcb61b3bd0d1f7637e3eb8b65d8f3c1b5e3b00"
         },
         {
             "path": "data/library/content/alt-characters/expanded-6298.json",
-            "sha256": "c3941fa7f11a0e7a7ba031a80c9df99a13918ca2c482bcde80d1336bf5995aba"
+            "sha256": "aef5582a9fa7fb4579359c2ea88aeb4c4c85afb0fd2f40bfccdaf26e022f595e"
         },
         {
             "path": "data/library/content/alt-characters/expanded-62b5.json",
-            "sha256": "ceaf45692c9ec68e2aa71aa65c7df01758dea66fd83680585b6a2fec59a1b736"
+            "sha256": "f574e31e3e6dc71e6c523b9998c660e2ccf41ca5f5d4624d42d5aef0363d97af"
         },
         {
             "path": "data/library/content/alt-characters/expanded-62bc.json",
-            "sha256": "3cf24de7eb7a547dfe5b672c5e20e5bb7bef2d0d8eca98c595daaa891239f716"
+            "sha256": "0c3090f1589bb0240ab3836b95241182afb2acce557ca7f750b94197494beca6"
         },
         {
             "path": "data/library/content/alt-characters/expanded-6307.json",
-            "sha256": "573785240905d7d1fed40025379f5c11b45bd7c49e4c4d10aea1cb7566ffea2a"
+            "sha256": "f61a405f7d3d8cfff7857e0f272bc44a06e4b4f6cdbe5bdfb0f5036d352d8638"
         },
         {
             "path": "data/library/content/alt-characters/expanded-6383.json",
-            "sha256": "64aeeb1c5a46b3b54fde2f035d48a9f2976343bba8d6fc98835e6e756c0a986a"
+            "sha256": "8d0bb195d99bb19c563f6f41ff625f1f9c0b5f17eb0190bfd2d7696e056ab6da"
         },
         {
             "path": "data/library/content/alt-characters/expanded-6599.json",
-            "sha256": "7727c81a5249a8c7620778e180148212d55feb64652daa71e5a782451a747dd1"
+            "sha256": "105fedb0ebc0a3e1ac4596b6753a3e29a17b64519d734b3e76e0ac6461d13e50"
         },
         {
             "path": "data/library/content/alt-characters/expanded-65b0.json",
-            "sha256": "648f3ed9ef713523273e34cd01d890478750feb0dab14bf50fc61801a3511c12"
+            "sha256": "1f4dfb9b69b085d63b3c05f99147838233fd063926d8979aa24b8e857a51ea0f"
         },
         {
             "path": "data/library/content/alt-characters/expanded-660e.json",
-            "sha256": "73d166c1797cb6a7789dc9fcea72df3a25bb27df4737ca3ac22d3d3c7b1e2bcd"
+            "sha256": "61fc9061e5e44b74e9a23efe66558ffdf119f92d5ba7371dc5dee73f9a9668b0"
         },
         {
             "path": "data/library/content/alt-characters/expanded-6613.json",
-            "sha256": "084a7dcf2ba0c5ed66c6f41dba46b21d73b30669f440df582202dcb28bc799c0"
+            "sha256": "4a041bf70f6d49cb02b01b74db48b802a66cb39ddb0ca9ab85d1f7fd74ec53f5"
         },
         {
             "path": "data/library/content/alt-characters/expanded-6625.json",
-            "sha256": "9dca0439b942bf41b5ab9c6cecc1c289f47b4a2f072b6a8cb320f3459ccdf43e"
+            "sha256": "1a3bb5500b2c4a0f2f995c68dafa78cff4852b337dd0d0ab89f339772c02770a"
         },
         {
             "path": "data/library/content/alt-characters/expanded-6628.json",
-            "sha256": "9908a8e1822cf6ea7cc85aac27c29d445720bb10f01d24e72ec71b215f62c914"
+            "sha256": "fd73c6fa778e7e4e749d7ccf8cb9824649037bb6d04eb6191fac53755dc96095"
         },
         {
             "path": "data/library/content/alt-characters/expanded-6642.json",
-            "sha256": "16c07b56eb0b4708b5b110a045aba3ac7350effb8b955e40f66c97e1b903e3f2"
+            "sha256": "d3b8b0c2a5469009a86aec9596ee2ef7f001573297c7dd88b7be77a74b2167d8"
         },
         {
             "path": "data/library/content/alt-characters/expanded-6697.json",
-            "sha256": "fc8cd5aee1a2feb5fc6b9bfc9e5666eda9d6947741ae802fed9784a83918c1e2"
+            "sha256": "a9469d4c6ea3cc2e13a2d162ebb290065bcd70b2eb9fb6ea5d654be7c52fc350"
         },
         {
             "path": "data/library/content/alt-characters/expanded-66f8.json",
-            "sha256": "464e18fb5a762f1d17ea1846de9f295f947334e1dc9fa1d1d78e0cfa90d24038"
+            "sha256": "e8c259d122c7604f077c7d4939381e98fdd7376cdc8152c7dad8574fafc8be91"
         },
         {
             "path": "data/library/content/alt-characters/expanded-671d.json",
-            "sha256": "a3c97e6bbd2fcff8458126e2d3d3c3121102f274681e866b32930aaa519907f0"
+            "sha256": "b99e0867b95d9a1ab5b2cd26b0ec444bcd7305488443bf897631fde7c9334442"
         },
         {
             "path": "data/library/content/alt-characters/expanded-6728.json",
-            "sha256": "3d7c59ceb53bba5632835d88cf0e190208c584e3473e7a216ef68321d496fccd"
+            "sha256": "e82794570d5d642c1993e8e66a1fd88894b56cab4e550fe4cb470df4e5142ab3"
         },
         {
             "path": "data/library/content/alt-characters/expanded-6795.json",
@@ -7509,19 +7657,19 @@
         },
         {
             "path": "data/library/content/alt-characters/expanded-67d4.json",
-            "sha256": "b6c717b3945e35463b371f64006417a2434b15acc660140353acee2452a73b6b"
+            "sha256": "fe19eb86a12a11de843edaab4ae2648c646dda86497e3b8e300d99544f50332e"
         },
         {
             "path": "data/library/content/alt-characters/expanded-6843.json",
-            "sha256": "ba202fc7b8b51c3baf4308dbe1114ad1b0fd727652a46c833787dbb2564df9c4"
+            "sha256": "0520f5a5e9b67491dcff19d9facba38864aab8ba10b60247da0223327465776b"
         },
         {
             "path": "data/library/content/alt-characters/expanded-68a8.json",
-            "sha256": "07abe6cd7f512af5fbd3c4e341783373991ab28efb4ccefd0a1da83b8fb5d5f3"
+            "sha256": "e92794db7000ec5179ef21faf4c601e8f158f4b6d2ce1630be15b05032de3e6c"
         },
         {
             "path": "data/library/content/alt-characters/expanded-68ee.json",
-            "sha256": "8183fa95bf941c1120043b3883f79ab98c6310a8ddbbde45f9d9e68a5519b840"
+            "sha256": "f3a71a6a14be9d1d52cc95b01bf8ea55618eb7696718ed598976f06b3d149479"
         },
         {
             "path": "data/library/content/alt-characters/expanded-6905.json",
@@ -7529,183 +7677,183 @@
         },
         {
             "path": "data/library/content/alt-characters/expanded-6a5f.json",
-            "sha256": "d3e662a34b02123d465d097aa1a79faaedfbfd59b733039f219499d38d02ccc5"
+            "sha256": "bb212c042e249fd04a317e0aa70d5de1997a9aa7b183bbcd908d074f6c5d9022"
         },
         {
             "path": "data/library/content/alt-characters/expanded-6b6f.json",
-            "sha256": "e65b73cf9930360a47d8b67a381e1b651d9a894a4965418d0601673ac4e6e41f"
+            "sha256": "812c6985d6e77a4005559b267f3bf7cc14c7205f088b92b0775b822685fda831"
         },
         {
             "path": "data/library/content/alt-characters/expanded-6ce3.json",
-            "sha256": "a1fac243caf3988e23d904e4b522a2107ef6295549a9ecdb75a943f65964bbbd"
+            "sha256": "6df586a3c49334cf61f5b0883e7fb43ac1182dc5157d8df40463a0379508ba94"
         },
         {
             "path": "data/library/content/alt-characters/expanded-6cf3.json",
-            "sha256": "4fa5b5c1d67abf43b0af76bb01393a9b2f0ba61eff43e1bd0ecc036ce36ed6ea"
+            "sha256": "c99a3b28ebbfc87bb58a759000b7135ed6313ebaf37062223cf05ed670312123"
         },
         {
             "path": "data/library/content/alt-characters/expanded-6d17.json",
-            "sha256": "4018a72d5cc296a3289d1f3021c338a261e1f44e4f2ecf3e985c5fddccef7e41"
+            "sha256": "0ae3e1ee11563f3ee6538b1e59e52e9720c1f099210f8cc1ce5f03436c2b259b"
         },
         {
             "path": "data/library/content/alt-characters/expanded-6d41.json",
-            "sha256": "6e1b6099046569700a3b71614d1d9e9e73a624acc48d84c49ec9dc6ca8b6ea72"
+            "sha256": "8f3f2730e69d738558f685cd740660cb8e57a2d9c9da0d49c46863b50a5c2fb4"
         },
         {
             "path": "data/library/content/alt-characters/expanded-6d45.json",
-            "sha256": "9b82fc2d69137b8f652599ceb17e8a7cf235849e0f8dcb373c02285f7498c134"
+            "sha256": "395d1c41e7f192eef8701fca521716908d103fdff9d494ccabb303fd7019d50f"
         },
         {
             "path": "data/library/content/alt-characters/expanded-6d74.json",
-            "sha256": "9ecb8d0797a2bb6aa2eac385c4b0cff99310a1cab089ad8a7e8ddc0b84194512"
+            "sha256": "bc1130ad2bdfc64fe92347ded647cb6c36410571a1985ce74241b93df79ed566"
         },
         {
             "path": "data/library/content/alt-characters/expanded-6d88.json",
-            "sha256": "0d306e046e8851c6c27923b2e692378539146f7a73a99a2a286aed1def246bf5"
+            "sha256": "6a8d607de5594dda19f732015f5fad069e5902ca8cc0506b1fff349d25904125"
         },
         {
             "path": "data/library/content/alt-characters/expanded-6df1.json",
-            "sha256": "d3a33ea488f510d7124e2c4a8b99886b2acae1b617c772834c92962334c2b597"
+            "sha256": "b7cdd68e00624352144c125aab30f2b71ab0f2040068c90ac4e92327d70fdc6f"
         },
         {
             "path": "data/library/content/alt-characters/expanded-6e2f.json",
-            "sha256": "02810b60c0510e7edf7ea37de0f6cf1acffae6783d0db11ff4245ed1172419c6"
+            "sha256": "3c731c7dcb650307e1402cbe85160391b209d2baa53ff9310bd823699339ee1e"
         },
         {
             "path": "data/library/content/alt-characters/expanded-718a.json",
-            "sha256": "333fca9bdeaba97b26a7f7d9f29422ece57d87793fd3782e8b70f63a4a3a4d14"
+            "sha256": "4d6590d5964554e861210f156faed6262814cd767ac4cbc0413986fa61a3c5cd"
         },
         {
             "path": "data/library/content/alt-characters/expanded-725b.json",
-            "sha256": "1f73ea44192f44826f752c983c5703c3a4a472e3a51cbca5bdc8d901c4a940c2"
+            "sha256": "01d275aa81ab1850b7c8ad4c5da8b2210a7b28667298f5863e9f1e3c34a7ee86"
         },
         {
             "path": "data/library/content/alt-characters/expanded-7269.json",
-            "sha256": "e5fe503b32a0d084936f91ec9e725805aeba1b3c7c9cdbeb96c7fa65feb80de0"
+            "sha256": "61c4269cfecfdf9c088e0a8b2eced8139d597c17feacaa16c24bc8fd975b8057"
         },
         {
             "path": "data/library/content/alt-characters/expanded-72ed.json",
-            "sha256": "bc9538a75b460f89f2cd97e2d1d5c12a8c4b66d76c3b575be94bb53249a0e1f1"
+            "sha256": "554862f1f60a783223eea7cb602a5b4b4ef09658f039d43e1031823e0fde4e48"
         },
         {
             "path": "data/library/content/alt-characters/expanded-733f.json",
-            "sha256": "a1098aca7672ec487199d09676e3fdaafef9a06d8f1710662399800f12cb83d4"
+            "sha256": "a23aa12a9eab87fc0fca20cb01e263014a11db145eed807337f869cd538120cf"
         },
         {
             "path": "data/library/content/alt-characters/expanded-7406.json",
-            "sha256": "4f1fe137f704b4f5dcbf8a334bae565c96d161f10ab9e1683ad537274c3fe850"
+            "sha256": "e4e8b619b7b54ebd7ba00827fbb6a7a32d6fac1022eee52743108d0fd87f056c"
         },
         {
             "path": "data/library/content/alt-characters/expanded-74f6.json",
-            "sha256": "9e6184d99277a1bc313bdd6171cde8abcc4325b90fbb07080aa878de72d1b6f0"
+            "sha256": "a10febdb4e67c6c1c203101e657a763d3336dcec17c7ab17261eead4343f580a"
         },
         {
             "path": "data/library/content/alt-characters/expanded-75c5.json",
-            "sha256": "85ac68b2bad99027b052d25a279debefb95c2541f62090f7c16dcbbe481e7539"
+            "sha256": "3f6ed8b867c24237804683fc6faca67b422442633a4ba6efd4137e95e04285b8"
         },
         {
             "path": "data/library/content/alt-characters/expanded-767a.json",
-            "sha256": "558cf51bae966c89449a7b025babf873505e4fb5ed0674f120d727e6c9fc8251"
+            "sha256": "9a78df655566f2d5ebb8a5ee777a03b5b2f567ef96d33530acb6d66d0b5d1835"
         },
         {
             "path": "data/library/content/alt-characters/expanded-76bf.json",
-            "sha256": "3b955e7610475c5f255b2f2de604bd27af221846b3f7aa9d6ddacea88e12f8c8"
+            "sha256": "90126c9cbd380bda542b4d92ea51fad65e84edbb237bc77cbc49b71086c6a027"
         },
         {
             "path": "data/library/content/alt-characters/expanded-76ee.json",
-            "sha256": "405efb1e5c111dd6ae4d84704f68811e3b52cd50c9e7e2d20ffb9e6b64e4b01e"
+            "sha256": "778a272b082b2510704984f07afb42b9fe6c913d6f563a63b3b98e394710a71e"
         },
         {
             "path": "data/library/content/alt-characters/expanded-773c.json",
-            "sha256": "01e26ab1917c73e8bb5ade74bf9e11ea37f359194c4431a3ad808c6a817f846b"
+            "sha256": "6851cbad718e771f02b3028ec2b97e3eb232be4378f9eb2806cc1db7e475c1f8"
         },
         {
             "path": "data/library/content/alt-characters/expanded-7740.json",
-            "sha256": "e05719e28c3e319a8b03d3117b4e7a6bebf7d53f2b62fb33d011b4311137442a"
+            "sha256": "8d625eb3634aa6dd8e021fa6e462bb729c336a1a5c66b7f95192044c5a10d504"
         },
         {
             "path": "data/library/content/alt-characters/expanded-77ed.json",
-            "sha256": "9211b9209ad395168e6960d5e12cfa1b36d7bad50a388321155eb6ebf630b9cd"
+            "sha256": "2983b57780e9866adfa2fee59e09842d6bb6334a4363a4b63d903b8f5e94b922"
         },
         {
             "path": "data/library/content/alt-characters/expanded-77f3.json",
-            "sha256": "68a0eb7b56dad061e6197fe7beb3412d0dcdde186cac2d19e244cff2aa646def"
+            "sha256": "30a0c43c678a02030c1edf28d3396dd0906ef8fc95982f7610b6aa3f412e7bcd"
         },
         {
             "path": "data/library/content/alt-characters/expanded-786c.json",
-            "sha256": "e60ddf4089421b124b03182c83bf8b6d13699020087c844d36a9bcbf966af240"
+            "sha256": "6ab356fbb777fa38549813a42ce5e42457256395e389b0309b986769bc92f31c"
         },
         {
             "path": "data/library/content/alt-characters/expanded-78e8.json",
-            "sha256": "f45fe76872d6fc812394367d0c7557f9417c720d1300587f40ef5907a27845fd"
+            "sha256": "7f3d927d155fc5644f5d3031e113e73c650888d95c6f5e405a90f6467f0d8d90"
         },
         {
             "path": "data/library/content/alt-characters/expanded-79cb.json",
-            "sha256": "71c0cd60b6e1f939df490cd1d875860d1d0b4cc71c57eb53ff2a53b6cf20b2c4"
+            "sha256": "b74d257a3168f5fcb7a0803a53d5515857c9ffa5662e2203000b29a8433dabcb"
         },
         {
             "path": "data/library/content/alt-characters/expanded-7acb.json",
-            "sha256": "491ab8bc22c7e7b7270a443215547d2a7a82cb4a652993c65e3668f5450d9d8b"
+            "sha256": "1423552e000e10ca09a6c1456cbc07c19a42373ac9619055e965fe38acac4d1d"
         },
         {
             "path": "data/library/content/alt-characters/expanded-7b11.json",
-            "sha256": "48372226323cb6da41a0845c1324ec17ff3fdea68839fc03ffcacae73ea14fac"
+            "sha256": "0fb47f04291fc948f75f43b7b33290bae2fe5022d4e81633e0d32a01bf93ab0b"
         },
         {
             "path": "data/library/content/alt-characters/expanded-7b26.json",
-            "sha256": "64a9a1d9f76a963f38abbb154e594dd83b3eb8e2c3155c597d56b0d334de615a"
+            "sha256": "0312285ddbdb2d21bed750c5a36874bf24f3b838182bd0efa3408cc3dfe5106f"
         },
         {
             "path": "data/library/content/alt-characters/expanded-7b46.json",
-            "sha256": "0b69126d47e4ec4b5e3d41e7800ea347e2390ceee21723211c2c43891325aae5"
+            "sha256": "c13ad4cca4c32dda641fdf1bbb8e2340b13ead5dcb4f952deef107c11fc6f66d"
         },
         {
             "path": "data/library/content/alt-characters/expanded-7b52.json",
-            "sha256": "35768028ef92cda7cd462146e0ea7b2a60fde0b920cb5accaea4bd42bf21116a"
+            "sha256": "bf8917771a0bf70c7a7f4465469154dde50610a24c2ebc39e65969e2a571f493"
         },
         {
             "path": "data/library/content/alt-characters/expanded-7bb1.json",
-            "sha256": "a88809583e9bcdb68d7a17bd67dcf75539bac4ea616f0f11061b8ba5da8b3713"
+            "sha256": "42c4c6ca6e77f1b2750b4f3f25bfb27e12b2e74ba0bd93092a7fc9c7ac4c8827"
         },
         {
             "path": "data/library/content/alt-characters/expanded-7c89.json",
-            "sha256": "1b50759b77c89ba981261e308f6c852d08798c00a45a1199e29c7c3319560d11"
+            "sha256": "3c5c414cf1e12030452e6b0a786ecae12bc6b7d8b2a439607a3a82eed94b405c"
         },
         {
             "path": "data/library/content/alt-characters/expanded-7dd1.json",
-            "sha256": "fbc0ebb178cdc615952bc38929901221697e17b69e47b42b25d6da4103a44361"
+            "sha256": "419bcf5ef5622e5a48542a73f79340f542052760199fcf992d09231e61259f61"
         },
         {
             "path": "data/library/content/alt-characters/expanded-8033.json",
-            "sha256": "c165b70419f1cb6eb3712706af85ba73110b30934203e4f5237f8b38a2a7a3bf"
+            "sha256": "1bda338ba26cb11e85088732e3c9369b7e376230ba3eecee9cc06b1ef5fe1041"
         },
         {
             "path": "data/library/content/alt-characters/expanded-805e.json",
-            "sha256": "ab9e0931877ab1987ec69f884606806175241870087e1532a966f3c0a564611e"
+            "sha256": "21741db9e657bb2710e86c57295cfff3befabf3f8912541af67587133b402604"
         },
         {
             "path": "data/library/content/alt-characters/expanded-8089.json",
-            "sha256": "f35114ca8db51fa99287cb76201b8530ae1c979173c8e4d1f69a80eda0478ac5"
+            "sha256": "1671db09db4c79662846ed822bf938c462e6a0db6834d6e5766998f15a0776c4"
         },
         {
             "path": "data/library/content/alt-characters/expanded-808c.json",
-            "sha256": "2a7380e7a30fd2966b1c2c938f2b81082e243fc62b8c45e2c2d4faea884ca99e"
+            "sha256": "54dba27e55358fa8677d193a1cd3f0850c99325a8e369d7e37b89bacd08ff25b"
         },
         {
             "path": "data/library/content/alt-characters/expanded-80a9.json",
-            "sha256": "2192a21ace650131b6ceee0e0fdf112782758597eafa2f765168e95eecbbe199"
+            "sha256": "a94acc613cc006b461b2337d4abd07887140fef3a1ec1d8eaf34b4b01c8291e7"
         },
         {
             "path": "data/library/content/alt-characters/expanded-80cc.json",
-            "sha256": "92827d5ed2fa2bcdab47d29e2ce88484cd9b9d724b1cfbed7f9afef46639ccea"
+            "sha256": "f2690d7402afcf3b3ce9edcb177c131abae3c0c9ec862826114fc15ebd1454e1"
         },
         {
             "path": "data/library/content/alt-characters/expanded-8155.json",
-            "sha256": "ebec66498c0ae209782a2ef4813d18baea81cc23e826f08d597e358e77e65f4a"
+            "sha256": "e82ecffa5bc10fce577501a24457b876af3321976ec6b75c542bee1e0f77b346"
         },
         {
             "path": "data/library/content/alt-characters/expanded-8179.json",
-            "sha256": "de78b0d742d6f58bddb38f00dd3153d60ed16bc2f27c5b24adbd324e48d8a717"
+            "sha256": "77f16943c640f2ba37b02c8507044db8d525a1a13bb65a8c733c2e93de740a54"
         },
         {
             "path": "data/library/content/alt-characters/expanded-819d.json",
@@ -7713,95 +7861,95 @@
         },
         {
             "path": "data/library/content/alt-characters/expanded-81ea.json",
-            "sha256": "37fa3b30b400e87e2ad24f276dfef1df2ba96b7a5e0c63e0528b6cd18d1b7ff8"
+            "sha256": "27c6a320fa0b69b3e3e7c59953746044c4cf987b8e980985e4012ab642b3d691"
         },
         {
             "path": "data/library/content/alt-characters/expanded-8272.json",
-            "sha256": "580c294e378d6638f202f25e57c1fe601eab620fe20d493a75be65db9501a283"
+            "sha256": "406fd8328555e9bab4e1e877f54dc75cd67e2558285955d447d829d0bb376def"
         },
         {
             "path": "data/library/content/alt-characters/expanded-8349.json",
-            "sha256": "d6a52584c0fa9d113bfadfac0db85e951d7a0ecb8879f72a3cdfb8a71f0c4e4c"
+            "sha256": "830241239510aa492b9989efce9c70ba56afdd1ffa81f91167e5baa439b92cc8"
         },
         {
             "path": "data/library/content/alt-characters/expanded-8449.json",
-            "sha256": "46e2e1819d80ed5b4f13f9973969eba08415af8b994ef6115e653b34affc2f7a"
+            "sha256": "08f9db8ce2e552c6aa1b052e317649a197d26265693ed763199310a37793a031"
         },
         {
             "path": "data/library/content/alt-characters/expanded-8535.json",
-            "sha256": "2bd1404f374052e9a45ac9f202a9e2e7677185b24d5c6c29ad0a22ba486da054"
+            "sha256": "b74055f828cf6297aceec009262e0d5ea456bda4e6c74c096a4e459289a9bb44"
         },
         {
             "path": "data/library/content/alt-characters/expanded-888b.json",
-            "sha256": "4441ea61c3d43e7fb7cff659bd4af2a368d7f08d034452247e79e8b7825abb94"
+            "sha256": "b5f8ae805cb8298b5ad3b1ef9b548608f99141e9fcc53b5971c89759a82b6dfc"
         },
         {
             "path": "data/library/content/alt-characters/expanded-898f.json",
-            "sha256": "7b99488ea9cf19db90a2cb2aa5b1dabe3758caacbf970986c9ac820e8da2bb62"
+            "sha256": "39774c5337e4417bf38c2cd916f80639912bf83965739556edb1c86f6ed2ef2b"
         },
         {
             "path": "data/library/content/alt-characters/expanded-8a08.json",
-            "sha256": "af9bbca78cd0b20bcdf6ef5c94c0acb3f9c811a1c1ecd326e5f21e744b6dc760"
+            "sha256": "da486be1634ce0c207fde7f243517b643428e08861ef75ad01006f2c9266c260"
         },
         {
             "path": "data/library/content/alt-characters/expanded-8a71.json",
-            "sha256": "d8190c5a6645ecd4a330312245fca47a74030ba8197c228f1685e2625aa1fef2"
+            "sha256": "59be2b9de731f3bcb2a5721e27e5d6e2393ba7f08d31f5b1be653038e45240e8"
         },
         {
             "path": "data/library/content/alt-characters/expanded-8aad.json",
-            "sha256": "872d4442be3936647051a4e6cdb6ecd764e2c15eac9a7a2898e35fb89e9d53a2"
+            "sha256": "adfac14837ce8b3b87b57c1a36a5d6cc23891a677d06c2a2a827d150da32d6e7"
         },
         {
             "path": "data/library/content/alt-characters/expanded-8c5a.json",
-            "sha256": "5e888b5d797341ab49620fabb70aedd81e040a9b5fc8e18ae2e6d66541f39dd3"
+            "sha256": "d2f41b032b24cbb25f72ef0368fb199a0371fc49471850db83e984e042c558b7"
         },
         {
             "path": "data/library/content/alt-characters/expanded-8c61.json",
-            "sha256": "e63624cd0ba19ba66b8907292e1fd14d57357c2e57f1f78cfe0fde0527aa7020"
+            "sha256": "82bdc3db5833df4dd165b83df097acc0b556417b5cd6b9b9399a4da4f6c86022"
         },
         {
             "path": "data/library/content/alt-characters/expanded-8ca1.json",
-            "sha256": "3cab2943907bd00fca863b489e4481f0e6389c1d2ab64728f0ff1af7cea7758f"
+            "sha256": "2aff3f3dac0fd3933353da5e557ae937dd20a20e1610ed959fa8e4f5fdf5a20b"
         },
         {
             "path": "data/library/content/alt-characters/expanded-8cb7.json",
-            "sha256": "ac9c17a094524d3740210fc928ce7ad4a9748d1671d33d474e10b08fd8cd753a"
+            "sha256": "0415d34e523ffa693c9917d1c79dc2f8266452fa0e96020ecb00c690075351c8"
         },
         {
             "path": "data/library/content/alt-characters/expanded-8d64.json",
-            "sha256": "9900661920a0f9b64812aefaf7ff46ae59a707f1b564d3a30a95e74eaa02bbf7"
+            "sha256": "9cace74f610748442648a395e21225faa522bc9356fa1180323dcbfcd85cfd38"
         },
         {
             "path": "data/library/content/alt-characters/expanded-8db3.json",
-            "sha256": "e5250d8999137c363519c6cfc779ed5594bdceb8572dff3aacfe8c3594e2f700"
+            "sha256": "18920c3cd82410353e2e7db306778a56d08f6503215dcb8a85d4f13efb5b3347"
         },
         {
             "path": "data/library/content/alt-characters/expanded-8df3.json",
-            "sha256": "4fcafb1bbd822bafa7dc98ed4e091ef9f787565cdb2cbe71589d3f647df1501e"
+            "sha256": "e85f0c8c237a3670a5665e1d0fee28ce23e27c240394288492312b76e2eceae7"
         },
         {
             "path": "data/library/content/alt-characters/expanded-8ee2.json",
-            "sha256": "dde8451b2bfe2ab2d02ccb92e59bf8f3dbf920f3b6c85ad34593f08ad659c7ce"
+            "sha256": "ddfb04a0d92c5af2d70398adbba45ec93aa7eced32bbb686517e4f5e0c2e3cb0"
         },
         {
             "path": "data/library/content/alt-characters/expanded-8efd.json",
-            "sha256": "bff5815aca6f3fb4366915bcf2c754ac1c7d8f53d183f8c28d616d648e803d8a"
+            "sha256": "0a2ba034d62773262a49b6bc7c5f603142ada417998b0a852155cf83cce6874b"
         },
         {
             "path": "data/library/content/alt-characters/expanded-9001.json",
-            "sha256": "7da53cf805a477e8fa53ad356dd67ec3b094ddc1d30e337bad543e0c24485d11"
+            "sha256": "5fc8f4f55a2f3ac00f4a5ede324ef1d6343fba29b722136005be4bed356f390d"
         },
         {
             "path": "data/library/content/alt-characters/expanded-904b.json",
-            "sha256": "70fe8529d851d3286a80fb88fd164c7cb198e2a83a1e6378b4f1c9a9b2873f01"
+            "sha256": "9643ef1f6c3ad6e5f19683c9649469bdafa485fc7d16b531be84a89adf388716"
         },
         {
             "path": "data/library/content/alt-characters/expanded-91cd.json",
-            "sha256": "68728bd8c8393aa312712862fc6d78de3f413bf0b65bdb088bb9794148d6c7a2"
+            "sha256": "6d64e7b2ba4db91a42fc88f85c447ba5b57ef3bb6b7a9ea81261332ba94d9a24"
         },
         {
             "path": "data/library/content/alt-characters/expanded-925b.json",
-            "sha256": "901b83c2efae531a739da56f956259473e18ce8303e3e8108fde4ee1cd5c0170"
+            "sha256": "0a0c18c09fdd4d63cea14fcea245d3f38f01ad24a13e38148f7663d78945badc"
         },
         {
             "path": "data/library/content/alt-characters/expanded-934b.json",
@@ -7813,127 +7961,127 @@
         },
         {
             "path": "data/library/content/alt-characters/expanded-93e1.json",
-            "sha256": "bc4a67ed11c1dc185af1aa9e157ee5700212b8fd265b5e2bf8ed7a6806e91351"
+            "sha256": "321d015bc4ee22a1d8bb79814c6adbc072493925ef00f1ed0c13d5788b5cacc0"
         },
         {
             "path": "data/library/content/alt-characters/expanded-9577.json",
-            "sha256": "04d09307e0b08d3c26ce1ef5a3202e1983e1bec25c5d753271a09812eb3549be"
+            "sha256": "ba828ebd1dbf9171a691a5071cee2a209e5b2d14a87cab66ec110159327b36bf"
         },
         {
             "path": "data/library/content/alt-characters/expanded-9662.json",
-            "sha256": "85441c7a2f512e2c86eaf2810034d5032268d305fc9aa6e8d71b3e28279731a6"
+            "sha256": "4697d82bff2f3f18f9473bae02c1966503c922d207d39f3b1bba465347dcc5b4"
         },
         {
             "path": "data/library/content/alt-characters/expanded-9664.json",
-            "sha256": "02bac601651baa0f833e7efe07f7aa8174c06a51af181e3ee605cabf69607525"
+            "sha256": "bf82c88cd7e0827a5e6a8fa36207286b7d0f51b7f37fc390ad13d8ecbf83d236"
         },
         {
             "path": "data/library/content/alt-characters/expanded-967d.json",
-            "sha256": "765a05f623a663b64476c3da720176add1f6c5cc95716d60b63bdf6e2d2f9796"
+            "sha256": "ed49a35f7c4e5f06dfe6359e2231cebc56177f042b2e3ad43e1f32357cac4795"
         },
         {
             "path": "data/library/content/alt-characters/expanded-96e3.json",
-            "sha256": "1dea2aa1b11cba6d132d6fd4896bf94bf11f019cb4510d12999ac8cef156d61b"
+            "sha256": "76c6b7b46d5195c7eda547fcb692d6ae62e4354e8ec01dbdff86ae9558649cc7"
         },
         {
             "path": "data/library/content/alt-characters/expanded-96ea.json",
-            "sha256": "036a74096167d23649937e0bd6fa5ba27891e64a992d8bc9657dedd336322348"
+            "sha256": "344618d37dad6f74aae04a1d1de1d7dc04d326841d834efad1cd885924ff5723"
         },
         {
             "path": "data/library/content/alt-characters/expanded-96f2.json",
-            "sha256": "acd4fa9e5e81bb455779c6113c4c89be19a129bd7b0ecad7cb0f996b012cb4bf"
+            "sha256": "36632038789ad117c7c4c60c24c2554333549a7b3e01db0027e583345fe74e65"
         },
         {
             "path": "data/library/content/alt-characters/expanded-9752.json",
-            "sha256": "5ad4818defbf860fc249bed1442bd210bf1065e43f0204600f07ca526fe3edfb"
+            "sha256": "d94266db62c3d30b28bece26809b2b6857658508200c47319e99e3927d719e25"
         },
         {
             "path": "data/library/content/alt-characters/expanded-9774.json",
-            "sha256": "4b0c26cde350d5c3057b6683ae2ffd97e1109859901bdca7ac99a8b548c940e9"
+            "sha256": "e60f1f2c74ff78646ea79c8074af3195f2b8e6f882679b5562f4a76cc548af4e"
         },
         {
             "path": "data/library/content/alt-characters/expanded-982d.json",
-            "sha256": "ba00b9a09a95bf74b9e331d94cddf2a86d06bca48108a125d838ee70f2c03bd0"
+            "sha256": "e9506872b32c9470842e4b485b988642806e1f3f0da92ff9391f2fc5c623d824"
         },
         {
             "path": "data/library/content/alt-characters/expanded-9854.json",
-            "sha256": "e76cfed21d4bb26d71401693889ce7a98456c9ea073e8513a3631de54e251c75"
+            "sha256": "8c9765147c8be0567a0af1856cbafee7dfc082a7f601420973673b16de9e03ac"
         },
         {
             "path": "data/library/content/alt-characters/expanded-9858.json",
-            "sha256": "b52f64afb20433a3efecc083d021942bce2ba021ef24f0fa583c9c65874299c3"
+            "sha256": "2dc7f60f8d4f3d6d3adedd777f0130382f69a31238d1ad9f2d53608585d5c9c7"
         },
         {
             "path": "data/library/content/alt-characters/expanded-98a8.json",
-            "sha256": "84001486d8d1c418c287ee7303557e324b7b903313517bf225c1c63ceb0cc35c"
+            "sha256": "87e5713969b65d149aaf1e36f79f60d515e0f6aed122d985be21e56357015bbb"
         },
         {
             "path": "data/library/content/alt-characters/expanded-98db.json",
-            "sha256": "0635d6da3053e2d9b25415c78e87589370b2b412e83782d69d4e87ba081be38f"
+            "sha256": "42fa3803adcee794d3b1ac26a2fc16994968e6ebef7de83b1d851fea2ce4e1b6"
         },
         {
             "path": "data/library/content/alt-characters/expanded-98ef.json",
-            "sha256": "604f550ab4cea2723362b50c12cc27616cc1fcf69f7e14318bea4e9e19b43e04"
+            "sha256": "701f4e801f072ba908213199faf8ae473771ec93d5a00cd9ef05ca3e0b2062ca"
         },
         {
             "path": "data/library/content/alt-characters/expanded-9928.json",
-            "sha256": "7169b979b543767ec7a6da88f140e076435b8cfa32e30d286893450991a1211b"
+            "sha256": "5b27607335b6c281c4ae4a3dce6601fd19f66900daa9c9df8cbe7ed3293e7a93"
         },
         {
             "path": "data/library/content/alt-characters/expanded-9996.json",
-            "sha256": "55b4c94bd28cb2518b5ccb5fce9e9a4548de32bc3ccf38df4c1d6355f90772f3"
+            "sha256": "7a999f7e7ce5bb6caae78ec558208a521cd21120f339ec08a72b74e818fb59e3"
         },
         {
             "path": "data/library/content/alt-characters/expanded-99ac.json",
-            "sha256": "70893522627408c0bac867ab495b455161375fd7aedd126fe12895fa93d74a87"
+            "sha256": "c6a407efa35a69001feabf0363e245a850fe8ded7eaf26bf68685cd29029a190"
         },
         {
             "path": "data/library/content/alt-characters/expanded-99c5.json",
-            "sha256": "f254fdfb77f0a441916e1dee2a39085f74a8378904316df64aafab3582428fc5"
+            "sha256": "ca52cdf3b5457b5af6d35f73fe100a93b6b038c2dad8ecb0581679582ac75c32"
         },
         {
             "path": "data/library/content/alt-characters/expanded-9b5a.json",
-            "sha256": "d47e5a99d708d3a94d7b26037e04d0a75178c0afd5adfbe9974246fc1093142e"
+            "sha256": "6649c1facbf40e95d84e2dc13650ca06243cb87971b529087cfe68da2ab0e2a9"
         },
         {
             "path": "data/library/content/alt-characters/expanded-9d8f.json",
-            "sha256": "f787e5956da9eeff97ddfcc70f4e5e1971860601884dfeea42e498a5f8788154"
+            "sha256": "3cb70c893deba73a55137223a3226bf0467b6402b5d0e46a3faa3eb5d9bb42c9"
         },
         {
             "path": "data/library/content/alt-characters/expanded-9ec4.json",
-            "sha256": "dcee4fd5c3dd2517f00342166023616d9cd72417167155ab3ff219a20fc8d932"
+            "sha256": "405fb53160e36887692f3deb409c16ad8605e40a481b7dacb768b39a6d91b5dd"
         },
         {
             "path": "data/library/content/alt-characters/kanji-001.json",
-            "sha256": "c0721a4089dc08a00fb43779f3233405efb8bcbba76e8cbf26fe14c410b804f5"
+            "sha256": "5df4d3920eee9461f85c005c32229b24ddb1aa268919950a93dbf4a5abe1bf87"
         },
         {
             "path": "data/library/content/alt-characters/kanji-002.json",
-            "sha256": "39d692fbfc7679881e2e0ec3f95960f47565d6199aa11c2ab022fe1b938569f5"
+            "sha256": "abf79725a449c310309ec60a49f845f9b77888d2daf91d2c32057aef78bcb65c"
         },
         {
             "path": "data/library/content/alt-characters/kanji-003.json",
-            "sha256": "9d08946d24d5a4dd42f97a25a907557a9bb94b6bd80acf53a8ea71bf724b8bc0"
+            "sha256": "cd07a169ded72939341ac906c4d4e3a4a2382ed2ea1011a39dc6e84240163c0e"
         },
         {
             "path": "data/library/content/alt-characters/kanji-004.json",
-            "sha256": "b355019046f0cabc757c46f6569711e786532c67cd6421e61751a0e77d0d436e"
+            "sha256": "f3f9ef07005b24b25281738f7f208d2dda9a1e311c3dee9d3811155423acbb53"
         },
         {
             "path": "data/library/content/alt-characters/kanji-005.json",
-            "sha256": "b498a3a071cd4b42ca858867b8e18aed0e058e1d7ee92ba6b931e6b8a7024c81"
+            "sha256": "997571e8b66f74b7ebf324acfa6fec230b9c450e42fd2f9e84e1d33f1983d482"
         },
         {
             "path": "data/library/content/alt-characters/kanji-006.json",
-            "sha256": "ef010122147b3bc65108daeddcaf420d0a9a6b59948561c48729ea416759a3c4"
+            "sha256": "cdc949d6ebde943f9e5b378b66c98ff1cf9ea3233c3844688e62d3983e03cbca"
         },
         {
             "path": "data/library/content/alt-characters/kanji-007.json",
-            "sha256": "487f992ec03d5f4d605b07b71d7f0e5ff2e564dc96fbf8ea43ff7f107f178074"
+            "sha256": "caefa1695e89866e69e959b7d78f47ed1f2049d0e380b82e7bef77e0dee9426a"
         },
         {
             "path": "data/library/content/alt-characters/kanji-008.json",
-            "sha256": "4b9231b7b4200859e812079e2df6566cdba9edca0bf336957cdde11fe55148cf"
+            "sha256": "034e8ca46e4079f8dba08f4dd9551a86d1f17c51af894356a3cc9a011e7176dc"
         },
         {
             "path": "data/library/content/alt-characters/kanji-009.json",
@@ -7941,7 +8089,7 @@
         },
         {
             "path": "data/library/content/alt-characters/kanji-010.json",
-            "sha256": "8eff5a5a4e7778e19c86561f66f99e74c936b37edc867dd8537f7d94602aed88"
+            "sha256": "0860c7c26360423ed2932435f86385eba7258c579265db49b64dd36b2eb6b49f"
         },
         {
             "path": "data/library/content/alt-characters/kanji-011.json",
@@ -7949,47 +8097,47 @@
         },
         {
             "path": "data/library/content/alt-characters/kanji-012.json",
-            "sha256": "d8b05375f64ebe78ee35e52a9e0414443780f4acf9e60f7db509a085214aa31e"
+            "sha256": "6e83a7b18faf1373bf5ded0dc310c574f7ff1e725e4ff07ad94257141159472a"
         },
         {
             "path": "data/library/content/alt-characters/kanji-013.json",
-            "sha256": "d2dbce402262939ce076e71bd42e338f71e783c4a91fb7af139a524ba1e54640"
+            "sha256": "4ce334b7efc83566522dba80bdf2d89cba1ce9596a029ce5eb1e2a382d841ae0"
         },
         {
             "path": "data/library/content/alt-characters/kanji-014.json",
-            "sha256": "44e9724ff5994da4ebb4e5742e69847d4f6e0527d7f873289a9d76f9f5f6613e"
+            "sha256": "31408e6ad95ca6981ba801be8d5724f077d76ad611ae06d3360f4630d2d4003b"
         },
         {
             "path": "data/library/content/alt-characters/kanji-015.json",
-            "sha256": "338bc1e1930e66021b8b6a6b174f23280d0dba96bffd0f986bcdf128becb34ff"
+            "sha256": "a98ae68bce51ec2b59058d0fdd36763f9b4be55f155ad856a2ec60af13e4b619"
         },
         {
             "path": "data/library/content/alt-characters/kanji-016.json",
-            "sha256": "7e2f39f44db87531b822f1cfbb21dc9fcb72db9dffc766cffb16afb8e7cdfd7f"
+            "sha256": "650a371dd023deb7c7d10040c8c4e85a295fb671322b7d994a3e4d32b9fa2568"
         },
         {
             "path": "data/library/content/alt-characters/kanji-017.json",
-            "sha256": "c32aacea3261efe06be2e307817d91c828acb0f5ab11e5b06e7f65d4e98d00d1"
+            "sha256": "cabaa4cbe14a37c49ce7f53e433e6e5d432ff6ecc664d6beffa1f033b70f1f3d"
         },
         {
             "path": "data/library/content/alt-characters/kanji-018.json",
-            "sha256": "a9fd5c99353c62967d4fc67cdb065a0574e31258b6ac2591a7c7630ff6495fe7"
+            "sha256": "8431ec04930a28fee5603158927d5b36417fc49ce717696deb2ba87b6222c6b2"
         },
         {
             "path": "data/library/content/alt-characters/kanji-019.json",
-            "sha256": "4269ca0f2b71a503ab7d0d2d1e466c9bde4424baf35054c3f8f81fab94f3c5e9"
+            "sha256": "1435efbb7b498b84ae4e77491c66394023c5758528da357563c4416f8439a9cc"
         },
         {
             "path": "data/library/content/alt-characters/kanji-020.json",
-            "sha256": "301316230184f7bbb6385e0374d328daa5d5fda28e1553e61f4f19245801f94c"
+            "sha256": "c128d1263495695b07da91a019d4d8433e31eac15f24ead893dec1eec5cf0737"
         },
         {
             "path": "data/library/content/alt-characters/kanji-021.json",
-            "sha256": "3a48bbf16f2819176f62b65d4e9ac078be8ad106bfbbe4f15ffe41de43cc67cd"
+            "sha256": "b9e70c3787a66743eb4c1999ae1929cfc69716379655d2a603e5ab16457f3736"
         },
         {
             "path": "data/library/content/alt-characters/kanji-022.json",
-            "sha256": "5395a1d62c29fad9fb45e2f42e6ef15f5200b52b0e61b2a143a4201afd156605"
+            "sha256": "5ada78d06d5cac4670a0b17bac11fc37735c29806c480bed630571989e973444"
         },
         {
             "path": "data/library/content/characters/long-vowel-mark.json",
@@ -8961,15 +9109,15 @@
         },
         {
             "path": "data/library/content/particles/common.json",
-            "sha256": "9d8a9f2a39e0e6893e6377ecfc643b0968da59b88c64e4014fb219f6ae134890"
+            "sha256": "86b93519358372e3ffbc36412fb2c9c9703eb3c78ad1135cdc23e3df24f28cfb"
         },
         {
             "path": "data/library/content/particles/expanded.json",
-            "sha256": "6ccdca28c528add74242371ee26302fd4a629a006d9a212c3083588779a57e5e"
+            "sha256": "593b570bed429a13f79f49ae60ebec173ecdf46d1d96127dd971eccb1420c87f"
         },
         {
             "path": "data/library/content/particles/questions.json",
-            "sha256": "0b67f326a4943bcd87836e9f9a84d5f371b81089b6f21e33e44e3f0d33279a7d"
+            "sha256": "dd79968557fbf19edfb0e86d4a93ce186477c8a3e947c8c9fe7e9972fe5cbab9"
         },
         {
             "path": "data/library/content/sentences/actions-001.json",
@@ -9001,7 +9149,7 @@
         },
         {
             "path": "data/library/content/sentences/common.json",
-            "sha256": "225d76d4adc75cf27b47b08691cc9eb4a7212a61dc7521fd37bc5412a5a857ea"
+            "sha256": "8fb0b483119758f19ae0a8fdc620f3c88502fb4de68662ebae4e6d40eb108769"
         },
         {
             "path": "data/library/content/sentences/comprehension-001.json",
@@ -9013,7 +9161,7 @@
         },
         {
             "path": "data/library/content/sentences/content-batch-001.json",
-            "sha256": "c6437564a5426e921d39c994e4b88d713f5b604a0cde5c9956d2339e81146306"
+            "sha256": "6f5ef238eee9eeb0d405319289ac960c75f6649862fc41b12035bd69edf2edf5"
         },
         {
             "path": "data/library/content/sentences/core-001.json",
@@ -9057,7 +9205,7 @@
         },
         {
             "path": "data/library/content/sentences/expanded.json",
-            "sha256": "99ba00af9ed6985ccf08412877fc92a893dd9f67a93e04f9493f5f8716a78140"
+            "sha256": "f9b8c81b69098afc9dc4019ffd90454de70fd666d80b225bbd50bcf426a9554e"
         },
         {
             "path": "data/library/content/sentences/fixtures-001.json",
@@ -9069,7 +9217,7 @@
         },
         {
             "path": "data/library/content/sentences/foodbody.json",
-            "sha256": "ce91dea8c1f43ead30cf3344844ccacaccd1eb30fd9ee193880c3bbd6e9413c2"
+            "sha256": "c7e4a3f243626a3f9976fd50d75b3e05171165d89f639375905acea5d0b42d1e"
         },
         {
             "path": "data/library/content/sentences/force-001.json",
@@ -9169,7 +9317,7 @@
         },
         {
             "path": "data/library/content/sentences/reviewed-batch.json",
-            "sha256": "66b09aa94c2c7aa64b07e375c7a2a7da14cbfe7bc82e5a7407cc26f737c85591"
+            "sha256": "37799b91dd37276c60bc7a7ba682c94354fd51ba42d07214d9ffdeb2ce16a04c"
         },
         {
             "path": "data/library/content/sentences/rooms-001.json",
@@ -9185,7 +9333,7 @@
         },
         {
             "path": "data/library/content/sentences/sentence-structure.json",
-            "sha256": "8a83ea2620eb2ffd776eab9a33d7311eb0fcdf204e389701b23eb924aca6e82a"
+            "sha256": "c06f4df9d7bf320f064f6362d1296797888a82e88637bebde72186b4a72590be"
         },
         {
             "path": "data/library/content/sentences/shopping-001.json",
@@ -9245,75 +9393,75 @@
         },
         {
             "path": "data/library/content/words/actions-001.json",
-            "sha256": "7d0d288b34cf57867e38cb92e5d4c286fa3fde86c7c85c9af6042ed45cfb4024"
+            "sha256": "9c438ce2cf008dee6455485a12528dc828d70a06e9c0d9c9cab53a7e49ca247c"
         },
         {
             "path": "data/library/content/words/animals-001.json",
-            "sha256": "97fda4f16ecbc4a20e9e40fa7ff76c739da6d545528d18b44b219e4699291c03"
+            "sha256": "5fa3f36b7de6de530cb8af2c6601d9d342d820ffc625b40d918b04557175d213"
         },
         {
             "path": "data/library/content/words/belongings-001.json",
-            "sha256": "5c28cd86121d935bc7a8e138defec60d8805d24213bf383d32fd7a6dd1822d7a"
+            "sha256": "740f4ec3bfa99d9495e4735696d320bd95318a932c4eeaa03295a43f5e463b0b"
         },
         {
             "path": "data/library/content/words/care-001.json",
-            "sha256": "083ee83431233c04f8b9df87b6661c1dd85e455f778d45e14ca81d04296b8723"
+            "sha256": "93ce95423a9027128c5187d8aa4da1e92722a8327de49a519a38a0a58088bdfc"
         },
         {
             "path": "data/library/content/words/clothing-001.json",
-            "sha256": "28a6236d2ba64d38702e27276e7108b3c98c22f829bc8a3380500008c3bb9b71"
+            "sha256": "5eec02055f98bad2e7104bbe2584b6e0765cd61327260388824f1c31f585a049"
         },
         {
             "path": "data/library/content/words/colors-001.json",
-            "sha256": "358b01c8aad49e17edc632b852b99fcff74dfb307b81678cec01f2fcbf349b4a"
+            "sha256": "9abb68dfbb5ce6f8d3a6bb3866d4993aebcdfe5d4958fe968d457a8d4c35cdba"
         },
         {
             "path": "data/library/content/words/complete-pronunciations.json",
-            "sha256": "b8d61ee4eec6cc0f7c40cf39c228e91b8b6d9d7478b7d9a64d8d9e66f26f3877"
+            "sha256": "7feaed4d2478fca2e60f5087248e275b2302ffe204af451a3867982500173b05"
         },
         {
             "path": "data/library/content/words/comprehension-001.json",
-            "sha256": "e868aa8865cb8d9ba2ec598288b8897c278d81c285ec48ca016b8eabb195045b"
+            "sha256": "b1f3f5627fc0e0eb83a37765490f9348a9503f5a15098cbcefff1c01a5ae381c"
         },
         {
             "path": "data/library/content/words/containers-001.json",
-            "sha256": "93aeda34e480658f55ff4f107429637402f6c1a849efd2ea2210e81c4114f5ee"
+            "sha256": "8053fbedf95643f964c7454a2e2500a0594ec87e6b3737bb6549474132ace334"
         },
         {
             "path": "data/library/content/words/content-batch-001.json",
-            "sha256": "d13acf7ae98c5358e162f84afb527e0b775629421dcab2713744077547c22122"
+            "sha256": "9e428924515941f07203285ae8e9d8f08dd4708ef31785089fc3b99dfe71b6ba"
         },
         {
             "path": "data/library/content/words/core-001.json",
-            "sha256": "1dbc4eff03ec70ecd12d90426996f43f1469d4801f6f71cdcf5c962c27f920ad"
+            "sha256": "8d9a56e66d233987cc115c43f42d9dcde0640b742f561c9db4cd788138fdf74b"
         },
         {
             "path": "data/library/content/words/correspondence-001.json",
-            "sha256": "8fcf37a83842f60ca72b1acc8a9d403c30b4c2e57fdf054101d21362c3dba0d2"
+            "sha256": "c0709822426b45caab428fefc23d1cb8fbc6a6026834ffcf046ff059524237bb"
         },
         {
             "path": "data/library/content/words/courtesy-001.json",
-            "sha256": "934df2bf7c3ba2dfd90a04fa7611807ae115411ff75402e87099a7b7616aaab4"
+            "sha256": "820e4775ee6f3030881f37b4cba8c4a6ea58be2efad001d4a7f722c36c367be3"
         },
         {
             "path": "data/library/content/words/craft-001.json",
-            "sha256": "06e304c778262daa261eefbacb3e057b83dc92fa83826ad1ba8a0f73f8a9a017"
+            "sha256": "c342cd8fc3cdfb4e94ea4a5e1f9c29bd71449a60a8ebe6e0f1e3ce6047a5482b"
         },
         {
             "path": "data/library/content/words/delivery-001.json",
-            "sha256": "23e90dd60cffbbcb87ae07ad7e7bfc1df8d30e2718d833e69affce8425d60576"
+            "sha256": "1f8f2ad390477d231965ec07fe1ff47269ebaff59258189221f1ebd7c779813a"
         },
         {
             "path": "data/library/content/words/depth-001.json",
-            "sha256": "ec4cc779e226a1a5236c9b9a1a3b56b39988cd3002b5f87abfc070ca23f7a9ff"
+            "sha256": "ddbf430da5f209829ee551ebb4df84eb81183a43075bee4b5c736ce8e8b6e75c"
         },
         {
             "path": "data/library/content/words/directions-001.json",
-            "sha256": "594a6cfc608b19e19201e0674e5528af54acbf5c9c579122a5887d8f6aa04d46"
+            "sha256": "8cff4d3ce58675dbd362e4d29d5dfe3fca1e272d293ae28279600e6164d7f666"
         },
         {
             "path": "data/library/content/words/exchange-001.json",
-            "sha256": "71e93f85d0e7d7a5bd400703b361cbda1e413f1900d49b6b8be7229792a77854"
+            "sha256": "74664a21e70a60827ea5478996dffdbdea13fddf030b4783d6b30e2928e29460"
         },
         {
             "path": "data/library/content/words/expanded-kanji-readings-001.json",
@@ -9321,11 +9469,11 @@
         },
         {
             "path": "data/library/content/words/fixtures-001.json",
-            "sha256": "6c012eed36156dff3e9e0a002d7ed41d19f39530f652982708fde7c3655af0b7"
+            "sha256": "262fa88ee04cd10931c1fcdf92c45df5121d148dae26cd8ee86ab616d55cb0de"
         },
         {
             "path": "data/library/content/words/foodbody-1.json",
-            "sha256": "57393efd8ecd27acf675727dff3718e574e5d00122611095a7c1bd928657550d"
+            "sha256": "26b14079a3c836b2f4981fa7fc3b83eff13b4c6cfd5dd8277ea377ecfbf935ae"
         },
         {
             "path": "data/library/content/words/foodbody-2.json",
@@ -9333,23 +9481,23 @@
         },
         {
             "path": "data/library/content/words/foodbody-3.json",
-            "sha256": "63a3a606f897fd09031c968c2cbd12f66bd3d9449aa602496e1a94d953d75df3"
+            "sha256": "5b20e439dcec5f1b25b6874d07535e27923e036f9d7ea56ad50a4d8c57339240"
         },
         {
             "path": "data/library/content/words/foodbody-4.json",
-            "sha256": "8abc602ea5651e1a033bd662666f48264efbab4d3aea098b6dfccc122d58d9aa"
+            "sha256": "af107b464b1e6620d8260f0248229682324ae2bb7777141b23878285a969f9b6"
         },
         {
             "path": "data/library/content/words/foodbody-5.json",
-            "sha256": "0e6d8f497619c88a30f7a60b37dea445883f9965be97103453739d33e032e508"
+            "sha256": "17dd8b1ca1b31dc64e3b680f4df8b22eddc05c7757c0260d193870704e59d4ed"
         },
         {
             "path": "data/library/content/words/foodbody-6.json",
-            "sha256": "32112f17c96d4ca895e1196e5dbea2ca5d37b2e50c02839c523bf18696f9da7a"
+            "sha256": "3ffc611909713ffd43c27d514e2eeb96656642ba2383f936a0e302854da06054"
         },
         {
             "path": "data/library/content/words/foodbody-7.json",
-            "sha256": "96366a4263a26cd5fbf300a7a12dbdb4a59fdb96ca3eede8d6f1b0f27922ee85"
+            "sha256": "a2507bebca5a8ad439887bdf139a17d846a3c14ac5276989c34045b18cbc78ee"
         },
         {
             "path": "data/library/content/words/foodbody-pronunciations-1.json",
@@ -9381,11 +9529,11 @@
         },
         {
             "path": "data/library/content/words/force-001.json",
-            "sha256": "65d8d41d9f3a2ccf5e58596d167cfb76924243ebf2dec1b54f6600632b9ef5aa"
+            "sha256": "1f43e340760d191b34fb615525e8572d527ab90abab5917243bf18c3871f998a"
         },
         {
             "path": "data/library/content/words/frequency-001.json",
-            "sha256": "89c30c2152b254fd5c7457213de73255f84dcfc901bf65e7dd0b7fdd179fca0f"
+            "sha256": "bc7d96d3a864eb2a1cf82ff3747d70f5d3a809c50de9767d0b5ba7221deb5ca3"
         },
         {
             "path": "data/library/content/words/fruit-001.json",
@@ -9393,7 +9541,7 @@
         },
         {
             "path": "data/library/content/words/furnishings-001.json",
-            "sha256": "83a0eaf374e382f746afca19a38102b203e909c7c86d962790f3d57bc04c2385"
+            "sha256": "2ef846ff13dabfc2ec118db5ea10d89b2b60a02f45129b9266fd0a61ce424dc2"
         },
         {
             "path": "data/library/content/words/greetings-001.json",
@@ -9401,171 +9549,171 @@
         },
         {
             "path": "data/library/content/words/household-001.json",
-            "sha256": "8c42e9d9ee3a3e02cb49bfbe156921f98024a3418811675ace85dd854ac8c42b"
+            "sha256": "23642d9924a98fd30aee1c145c721a91459e481d3f6271248810e741a8bfbdf6"
         },
         {
             "path": "data/library/content/words/household-1.json",
-            "sha256": "0980350799cd2b479ad6fe03f3b95d16299d8a7abb128125e4c7cb89e1a3babe"
+            "sha256": "6d408b857e41fb464555a40d673af46ab6bbc15cbe5c568e403c1b6927273137"
         },
         {
             "path": "data/library/content/words/household-2.json",
-            "sha256": "4db560c1e5cef0d7058300adc2429da89349b169a5d5f71562260fb6630d53c1"
+            "sha256": "395f9f6da0874f4a048739a3ba01fbb28afb4dd8d932472cddb3bc52fdec616a"
         },
         {
             "path": "data/library/content/words/household-3.json",
-            "sha256": "96147a0247ea171519f15836820f9c0e29f4b094dc777278322d759c2f838093"
+            "sha256": "5b18c23febd890e1fe2ca2651d5fc832320d4eb133f84f1fa7b2986eb1bf411b"
         },
         {
             "path": "data/library/content/words/household-pronunciations-1.json",
-            "sha256": "cdffccdbfec2c92f264f6201cc193511d9386bba5cfa522651b17e4a87120255"
+            "sha256": "2d598dd5fc261bd61b84bab74580adb00fcfd174fd8da1fc68aad0b07b568546"
         },
         {
             "path": "data/library/content/words/household-pronunciations-2.json",
-            "sha256": "169e28229be713b198de620516f9e53d8444fa348883ad6708c82317f5842efb"
+            "sha256": "501e89afb221f435be14f12503180573e7d973681ce67be4ca8d88b9c6fb9c61"
         },
         {
             "path": "data/library/content/words/household-pronunciations-3.json",
-            "sha256": "2b9f0be3fe7607f6bafcfaa8f0e879cd0d86d42cd2bd6fbfb8c24d9194af1658"
+            "sha256": "9190173ca3bf9b2d899fdf0300ce5d6f43bf8543d0b25d0b02d7d7288e1977be"
         },
         {
             "path": "data/library/content/words/kanji-readings-001.json",
-            "sha256": "88d93a0a4177c68d1e926733e48d535d860a0e6abb4acee1ade6edb981f50a4b"
+            "sha256": "b2a74a54b30845aeb1de3efc37a22fe3c72da1ee36975795fc3eba0ab5b07f49"
         },
         {
             "path": "data/library/content/words/kanji-readings-002.json",
-            "sha256": "bca422bf6e0c6e6aeb19db3d04ec9a566ddad1b825aacb19d1fc1787eae762a9"
+            "sha256": "25904f1edc577d8a723c6a36ee923a9552c17ac61e1adf9a5957e6ef0918bc9f"
         },
         {
             "path": "data/library/content/words/kanji-readings-003.json",
-            "sha256": "990e8a43432b8f99b2de03a1ea442445ffa83004c6080da5b2ef24f3a75ee27f"
+            "sha256": "a69419dcd57433d43b6a36ce582824792b9a56ff5750d6086aa0bdb76ee393c5"
         },
         {
             "path": "data/library/content/words/kanji-readings-004.json",
-            "sha256": "78b1cc455926b9ea1b758db0ada42d11aba751d22380ceef1e372236e7a40f4d"
+            "sha256": "ecd426b973ab8213984d3dc06042a9dd16f58dd7faeff05f8d5fb5786eaa60d4"
         },
         {
             "path": "data/library/content/words/kanji-readings-005.json",
-            "sha256": "abf44f0d929e3cb92c8d417055040c806ee29a95e554e914f4968c1527e74808"
+            "sha256": "aa7606dea34c855d249e008f2662ada8e380bc7e592f08f11f263531c525cbda"
         },
         {
             "path": "data/library/content/words/kanji-readings-006.json",
-            "sha256": "67c296041612a1568c76de10f1b08808705b5a87d13704c56be9e0ce964637b0"
+            "sha256": "2af2146fbeb0665ae2c357512e9d229e8d2e4d8582bd3137fcac9e139c453143"
         },
         {
             "path": "data/library/content/words/kanji-readings-007.json",
-            "sha256": "73107820320b8436af93cd62208be76fc399186f4cf2fa6d5d87cafba0ad722f"
+            "sha256": "a77789b5c6299e609d826015ceaa932cdce34c3cde8882e899dbb93994ef6130"
         },
         {
             "path": "data/library/content/words/kitchen-001.json",
-            "sha256": "c7a94280b6a125fef5a190b99d8cf53db98eae75172050fa819f5dea1d34cd32"
+            "sha256": "c0e2d2b90407f808dd9b7db02d89d62adbbc4eab895b16231f52d53d88d1ca9e"
         },
         {
             "path": "data/library/content/words/length-001.json",
-            "sha256": "27f18c5939d634ab2eb21b3ee5fd720283c1fe989b6ee86a5ece2dd8001e4bcc"
+            "sha256": "69c11d714bbbef7d1e8021d8f6fe74bf631ad1518854124bed02c027a472a832"
         },
         {
             "path": "data/library/content/words/light-level-001.json",
-            "sha256": "6ea765e6484c3e112a84917c6aa8451c13bdda7de713c05189f2b4b291d36346"
+            "sha256": "ef8e67cefd50f64cbcee7d6accbb6386e1d23178a9c011374b5d9af0b677902f"
         },
         {
             "path": "data/library/content/words/location-001.json",
-            "sha256": "cdeba3cb245ea7114307ce43f73baf41d5f68e8373086ed4e2ed0ed30e08eed7"
+            "sha256": "92146a5e0f59dd9c5e83e7316f260cd1319763abd463f101e7ee49c310e57a41"
         },
         {
             "path": "data/library/content/words/material-feel-001.json",
-            "sha256": "e6cd45d709665115403ac33a7ee9a180af9889722a3a782e7dbe21815d2b1bab"
+            "sha256": "7e3cfe3af8e736042ca2023c919d54338cc4d5046c22e9fab123bd3fc89fc060"
         },
         {
             "path": "data/library/content/words/nature-001.json",
-            "sha256": "f8282f13c59aab302dfa169198a399042170d0bdce0fcf58684c0e1a9955b815"
+            "sha256": "e4d1971c24555587336b308d88696e5a605a2f55073a37a52c35732a0ce8bcb3"
         },
         {
             "path": "data/library/content/words/outings-001.json",
-            "sha256": "47303008f571929a35bb5eb7e7cdd6b7a7d073df4e83b3580edf0b4a80602c49"
+            "sha256": "06f1044ec4e8bc19f8a0723dfc4fcc6eafb2f20cd78430ebf55630813e8ccba2"
         },
         {
             "path": "data/library/content/words/places-001.json",
-            "sha256": "1559142c7750a42eb3469bf6e130a329820780be0d84b5c05efb4db00bf59a56"
+            "sha256": "430e840e8d3505065c444f742efc24c64b0ba58e27f71c90f91f3f021225cb27"
         },
         {
             "path": "data/library/content/words/posture-001.json",
-            "sha256": "1ec26f0ddd081124920ea3a1a5474cac8a88a3eec326fc7f32b2b45046537e91"
+            "sha256": "445a58455996ed754e9b92efe3944a707cbd1db96bd288b9dd9824ab90dbdc8f"
         },
         {
             "path": "data/library/content/words/qualities-001.json",
-            "sha256": "21c28490596c2ac9a72effe8fbd1bb5cfcd3b4709f3b4429413b2c3de3ac535c"
+            "sha256": "e9a8def6eadca2a07c7f015f6d5f360cbc15d254a5f573bb47cb75dc5a9eead6"
         },
         {
             "path": "data/library/content/words/reading-time-001.json",
-            "sha256": "2c01b5610e246aff7af91e811b680d4a3b2bfeda02916214450f9f50698ef038"
+            "sha256": "e2ba1dcda776003e36bd9ac7a77477aa4f3fc627bdcbc21b7647c630eecbed5f"
         },
         {
             "path": "data/library/content/words/recreation-001.json",
-            "sha256": "983c06d65f2c796cfcbdcaa67f96ef88a619f0fe97db2453cc79900fb1cc999d"
+            "sha256": "0c23f3f3c2b4e870a048e958b0f1b13e1f120559125ffe83cd427e681f7a0833"
         },
         {
             "path": "data/library/content/words/requests-001.json",
-            "sha256": "ae7397c124f3bf74a213e0e1543dbaf4c220b2e8b91616c5b536a2cabac0d1f3"
+            "sha256": "dbb9ef60fc71dd96f2aa69077f06ef2451b5445adcf746aeb3dad5319b2050e1"
         },
         {
             "path": "data/library/content/words/rooms-001.json",
-            "sha256": "fa7236ae81f0b250a965a06764289ee272dab4343758c17b871cc5874ed6a064"
+            "sha256": "a3fe036c6614e73b258f9fac17f18afb9a4508c7936e02b267a7ed7ca23ef286"
         },
         {
             "path": "data/library/content/words/school-001.json",
-            "sha256": "da8bcb433dcb0e3577f83e05d34a05b20531211a3eb719b3b560b1e18017900d"
+            "sha256": "ff612ecf109431d95bbbb6286936ac9cf49de1effee78f09bd76c7f0f2c9faca"
         },
         {
             "path": "data/library/content/words/seasons-001.json",
-            "sha256": "afaa0a33de19c6e7d5ccff38ab2fbd00c44fbcbe0e0ffa77f58b9decd4a4688e"
+            "sha256": "f1f866ae39c040ce918c4407ff5e3f0e86c067a222f17a8a514f55626b898e63"
         },
         {
             "path": "data/library/content/words/sentence-structure.json",
-            "sha256": "ccbdf3897b843cd9d5b256b40a04e039a66bc787d6c16330db7c3425947a32f8"
+            "sha256": "1db361a94d7f43f27996547bdf2ba244654afe98bed830dc72928eadcf1ea933"
         },
         {
             "path": "data/library/content/words/social-001.json",
-            "sha256": "07732a04a5cf7f0733e0003575a7ea999a4c010c5d33d7812edadfc53421f4bc"
+            "sha256": "51ed72e753c0af6e63268a99b45cd7bc3703aacddb8492a75dd9659a72e8d3f2"
         },
         {
             "path": "data/library/content/words/stationery-001.json",
-            "sha256": "e18bc665e85570809c2fbaad66c4325b321fcd849fd15fe922f4be71303fd834"
+            "sha256": "ec873973238a5487ba221ce6a7b90838889c043a2e753e6bd3a6e14aef66474d"
         },
         {
             "path": "data/library/content/words/tableware-001.json",
-            "sha256": "b0db32645bebb3f00444d9e3491ca7ac8bc3a4241b800156e24bce38ea686d23"
+            "sha256": "53863dd1ad49a315c6dbfc6ac4ca79b78be1186384b8881cd3a532bf6ed9b656"
         },
         {
             "path": "data/library/content/words/time-001.json",
-            "sha256": "ed78af762d38df42bf694c8af47d508fece3fe31af25f13060a41e07515b5387"
+            "sha256": "c6a6690bfdce4d8239026f45f98e003e66f796e7ecae9f40e138d3ddbc19afde"
         },
         {
             "path": "data/library/content/words/transport-001.json",
-            "sha256": "5a20209d66d05087ff48d56bd7d04403824b36c130d63b57bd21b7fa426cce60"
+            "sha256": "0964cdde57799e55110de35f442765efb2f53d8d3de6266341f04332ca7be9a0"
         },
         {
             "path": "data/library/content/words/travel-001.json",
-            "sha256": "47d3e04801ea036446aad520e09b0a4e039b914ad0d18963f83e4985d8a3896e"
+            "sha256": "6eeadc0a9489eaa596db5ba626a3a0ebedd210a952949b6983f9790377185325"
         },
         {
             "path": "data/library/content/words/travel-002.json",
-            "sha256": "609f0f3fc79e48a6c6e804a86d6913a8c37f3a9ff46028debee051801630c178"
+            "sha256": "a2ffbb1b96231fd2b698ec249cc5f94ea72ce1da0d021a375d299d911d1fe6a1"
         },
         {
             "path": "data/library/content/words/travel-003.json",
-            "sha256": "d7f2e05ca6e5fcefefa0343d9a3488aac38862e8a8b96671614a29c7e3fa54d6"
+            "sha256": "143626884aced61bcf7b0e455ce1fe236276b140122ec900a8c5557cee7285e5"
         },
         {
             "path": "data/library/content/words/travel-004.json",
-            "sha256": "8bc0f0e6213aa2f04b02cd9fc94101ed2e07339eca4468c699086355f0ceceb6"
+            "sha256": "a866caa49af1e578ee4275f43e57d70a84e810541b5d4513569b93571313d7fe"
         },
         {
             "path": "data/library/content/words/travel-005.json",
-            "sha256": "8caa9d427e7aaf763d83586168c100d2cb71ca6a27ef08ad136f77899fd00e09"
+            "sha256": "2e641d9bea5f607d4acc65b0fe9322cce9e712d6ae306179c70456684f9fdfea"
         },
         {
             "path": "data/library/content/words/travel-006.json",
-            "sha256": "f053513fab16827245aa35152b0cbce578b031ff1506a3e7afddfcaa6a778451"
+            "sha256": "ad40251b540c780e15c808e123310a30b993dc7969fa64671a20490c9b349377"
         },
         {
             "path": "data/library/content/words/vegetables-001.json",
@@ -9573,43 +9721,51 @@
         },
         {
             "path": "data/library/content/words/vocabulary-001.json",
-            "sha256": "f8264f143a5e8900b00942b8954f786422f2d6929a6f1ed7bf2b143bd9cd9472"
+            "sha256": "1255b774fbfa0e64a87683c24c3c7d148979bb689c345a58dc2bd1a8774527bf"
         },
         {
             "path": "data/library/content/words/vocabulary-002.json",
-            "sha256": "4031c7ae4b8e7362720aba3bebe182faae178dec6327f0667aafe5082a83b3f9"
+            "sha256": "c29cfd9c2237f34061753a81a68f76d46df64d1101a563d501d81b91ea02fb55"
         },
         {
             "path": "data/library/content/words/warm-accessories-001.json",
-            "sha256": "e80d72537389b2956bd341b7c7134aa1dea1061e2d78e6639619a1d0d11d0fec"
+            "sha256": "7c7454aa92a3d2e5ef309a128182ae8722bf6b3a6bc6c516767c42ddd7e47f9f"
         },
         {
             "path": "data/library/content/words/weather-001.json",
-            "sha256": "45d6b5fa805964bd04c42f630e8b9916d81ca5d88dd97d4d052ba54f17bfd11e"
+            "sha256": "16baec1e28f6bfbec49030f995eb8c1e1405ed8a4b7bf74e4da40a8a49769fd3"
         },
         {
             "path": "data/library/content/words/width-001.json",
-            "sha256": "3ed8c350de852af56192ed8a0a96a810608f0176bbdded781b24df7418403823"
+            "sha256": "7c60d6203eb11e799cd31412df3b7a93d974fd3026b5d2e712a1933fad137ea5"
         },
         {
             "path": "data/library/content/words/wildlife-001.json",
-            "sha256": "fe755bfcd41c89bfbbd205f4e061d1736f7b82161ecdd9be4d392cad17c2d70f"
+            "sha256": "27fb773774f547595f5a83334e22517e4e2c72a2c7a2cfc22bb69c88a8b14ff7"
+        },
+        {
+            "path": "data/library/difficulty.json",
+            "sha256": "39ef22bf89166426d31f5e437256899426619b2a946adc15559ede2aae129698"
         },
         {
             "path": "data/library/jisho-classes.json",
-            "sha256": "6697053e87f15f87fe5d4bcb6fe5dfe9058724d304acba4c80034995ddd2a515"
+            "sha256": "28c3018d776dbc28d9a8c3563c7c6e1f4f244cbb1d87b6073e010e2f14ba2394"
         },
         {
             "path": "data/library/manifest.json",
-            "sha256": "69a968bcf6528f385d806f213e8f050aa30b55bce4bcdaf08e28d95f8af96fd0"
+            "sha256": "983f0b0b3b430caacd8a3763ce7486493890fa57ef4e5bc3748b5a862cae4cbc"
         },
         {
             "path": "data/library/primary-readings.json",
             "sha256": "3520d6c29b62b24d76994b4350042471538b5fe5a43c45a8bee5082a36a2cd79"
         },
         {
+            "path": "data/library/proficiency.json",
+            "sha256": "7745f363061f3dbbd65bafab5469cd3cf77bab220cd4675bd94967506b488dd6"
+        },
+        {
             "path": "data/library/schema.json",
-            "sha256": "0eec5a6c46d2e46e0c8954a9d5c39b27fafc42e6c42f990e713159fa8ee7716e"
+            "sha256": "1257479f499f61d7774b4153bb42c0d845de219c6885e2de8be5831716db69be"
         },
         {
             "path": "data/reference/00.json.gz",
@@ -10649,19 +10805,19 @@
         },
         {
             "path": "docs/index.de.md",
-            "sha256": "a1f545300e2904b6b1ac9b0d396fe2fe63fcc0843dd9282a9c7fd9a08e1afc50"
+            "sha256": "3d781993ace07486a931ffa27f7cecaf7fb6349a9c40fdabcb3b0ecfa3722d05"
         },
         {
             "path": "docs/index.en.md",
-            "sha256": "f3b5fa5ff21a5f3789305ef816ac6581c4dbda845105523290857a8a2ef548c1"
+            "sha256": "3853ddb592da9f196f3fbad784a5ec9611c7792170ab1aaedc807cfd62d02179"
         },
         {
             "path": "docs/index.id.md",
-            "sha256": "7c3cd20db147a239986919c05265e14247f0fda7aad1623691203f28136ee789"
+            "sha256": "2d69eb94ff0cf52cdfbe8c8305213e836cffa3e0712d23880af8f2d4f1712f21"
         },
         {
             "path": "docs/index.ja.md",
-            "sha256": "b8df55b1053916bf934ec8b4465eb0740382241dd0912cdca2c2b8572192981f"
+            "sha256": "79a9f00c767856843cc3c6b76e3668b283451e28e9e88076e97c65e3f01746d8"
         },
         {
             "path": "docs/jisho.de.md",
@@ -10681,11 +10837,11 @@
         },
         {
             "path": "package-lock.json",
-            "sha256": "9463db99a0925112906c29a7862ec4da771ce4009ec1bf5f530d1c2286d0c848"
+            "sha256": "712e67b263f570e4fa96dfd0681c8fcb89a433b0f129b3dc36c00e0d2e95c889"
         },
         {
             "path": "package.json",
-            "sha256": "73f9dce24619d23517a913ccdda634628675e8df7d224f0af871903150cdda1b"
+            "sha256": "1649260cc98fc1756e90f7d89ab02b69a0279399a4b8cc2d4096acd1aa225014"
         },
         {
             "path": "routes.json",
@@ -10729,7 +10885,7 @@
         },
         {
             "path": "tests/audio.test.js",
-            "sha256": "6efd1bc43c3eb8a0ec81529f140b7149ba3478bdb46ff71b267acfc0170966d5"
+            "sha256": "826a050496c3e89c61efb22f329047746ef0354d3b78578ba12a8d104096db04"
         },
         {
             "path": "tests/belongings-language.test.js",
@@ -10737,7 +10893,7 @@
         },
         {
             "path": "tests/bootstrap.test.js",
-            "sha256": "484fb5e700d7fdd6a13f191933be0dd7de705883e2dd93a392c4e8bb18a0c0a4"
+            "sha256": "f2c0182235e221880cb60ca772e02c50990493336b71650e313e28f77e8cd81c"
         },
         {
             "path": "tests/card-display-contract.test.js",
@@ -10780,6 +10936,10 @@
             "sha256": "718c0b7b0b1c9f21babded2cdd812d365c764fc4073d78c78a626951f09b79e1"
         },
         {
+            "path": "tests/difficulty.test.js",
+            "sha256": "670d1a983242e0a8c704f0f71d46009fdc93ca5de96ae9725ba0d76ac5958a9c"
+        },
+        {
             "path": "tests/documentation-convention.test.js",
             "sha256": "c008d92e77dd5847e066218988c1a6416a51837982f955e63155de6631659eb8"
         },
@@ -10800,16 +10960,16 @@
             "sha256": "4e1873a81c3f0b092a9e1d4a643d6d886b7d49cb72bd642bc2f74cf6b6c3f73e"
         },
         {
+            "path": "tests/generated-media.test.js",
+            "sha256": "7097e2a918ebd78cd28c475728faabfb156dba471f843c7032a6a8de144ea8d6"
+        },
+        {
             "path": "tests/household-form-audio.test.js",
             "sha256": "0ac8665bff7ad4e4d4d278a8a1d5b5e765c5b4ef62ec14bd12bba1e653c5696b"
         },
         {
             "path": "tests/household.test.js",
             "sha256": "baed5bc2d5f93e9da8ea2cdddff003eb964c1416a974e265eb1d17150690ebfc"
-        },
-        {
-            "path": "tests/jlpt-filter.test.js",
-            "sha256": "b9b34b14ca9d5c98adae1cf65b04299e871678bd9ee4de54a0eb4982cabb7e18"
         },
         {
             "path": "tests/kanji-identity.test.js",
@@ -10848,8 +11008,12 @@
             "sha256": "f86fd1bde2e9859839c96ee6db0fa54926e45c65adf21c97da9ffacfdeab8c50"
         },
         {
+            "path": "tests/proficiency.test.js",
+            "sha256": "e1d2614875d06798ed0fb436dccbb5e9220dc692284a5ff472f0eed749f4dc45"
+        },
+        {
             "path": "tests/provider-lifecycle.test.js",
-            "sha256": "07b91a9b7ccd9c20c7d6620f3b2dd801596911232e49c62b0bc71565a69ab435"
+            "sha256": "bc79c31e78921f092136d6141731cb5977313ddbe8e3bfe166a58a16709d832b"
         },
         {
             "path": "tests/qualities-form-audio.test.js",
@@ -10869,11 +11033,11 @@
         },
         {
             "path": "tests/schema-conventions.test.js",
-            "sha256": "79d2acbc1832f0b2155ff031ca1699df86448103eee6674ff0e5cd727c2116f9"
+            "sha256": "6ce392d0d2a351d070a6f4b190d2515a85aa51053281eecd71e66b29d61430cc"
         },
         {
             "path": "tests/sentence-composer-contract.test.js",
-            "sha256": "15fe6616bc6a0522f6b68c83f19ab6aecaba1939bdb8791e13d57f33771151b3"
+            "sha256": "574ee48e2144042138560bea1455bd19581849981f3b81e02e483aaf5b547315"
         },
         {
             "path": "tests/social-readings.test.js",
@@ -10900,12 +11064,16 @@
             "sha256": "b252d70fc478e9cb5f02666508435343fb7006e4305ed044874cee0a2b4edade"
         },
         {
+            "path": "tests/vocabulary-visibility.test.js",
+            "sha256": "64e80df7a64eb6c9188207acbb0e08058ec6e0964d62aef7d4efeafa021c390d"
+        },
+        {
             "path": "tests/width-form-audio.test.js",
             "sha256": "467f9963b24e6cefb022f322ec6ac029d911d1cce9498807e360387af8076fba"
         },
         {
             "path": "tests/word-transformations.test.js",
-            "sha256": "63e8f5377533c9acd2b7c8bf56ea66f2d89b8f0e410a4c22bb2b7fa14bbe014b"
+            "sha256": "943d7e889cf77bbde8dd7738fed32c423f16368795a5a0d0a71d9df9ea4cf242"
         },
         {
             "path": "tooling/scripts/declaration-spacing.mjs",

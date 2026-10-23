@@ -132,6 +132,29 @@ test("new dictionary verbs and adjectives select the correct provider paradigm, 
     for (const [label, reading, partOfSpeech, tag, expected] of [
         ["考える", "かんがえる", "Ichidan verb", "ichidan", "考えます"],
         [
+            "急ぐ",
+            "いそぐ",
+            "Godan verb with 'gu' ending",
+            "godan-gu",
+            "急ぎます",
+        ],
+        [
+            "帰る",
+            "かえる",
+            "Godan verb with 'ru' ending",
+            "godan-ru",
+            "帰ります",
+        ],
+        ["笑う", "わらう", "Godan verb with 'u' ending", "godan-u", "笑います"],
+        [
+            "待つ",
+            "まつ",
+            "Godan verb with 'tsu' ending",
+            "godan-tsu",
+            "待ちます",
+        ],
+        ["死ぬ", "しぬ", "Godan verb with 'nu' ending", "godan-nu", "死にます"],
+        [
             "美しい",
             "うつくしい",
             "I-adjective (keiyoushi)",
@@ -161,14 +184,121 @@ test("new dictionary verbs and adjectives select the correct provider paradigm, 
             ],
         });
         assert.ok(suggestion.tags.includes(tag));
+        const extraForms = {
+            急ぐ: { negative: "急がない", past: "急いだ", "te-form": "急いで" },
+            帰る: { negative: "帰らない", past: "帰った", "te-form": "帰って" },
+            笑う: { negative: "笑わない", past: "笑った", "te-form": "笑って" },
+            待つ: { negative: "待たない", past: "待った", "te-form": "待って" },
+            死ぬ: { negative: "死なない", past: "死んだ", "te-form": "死んで" },
+        };
         const set = index.transformSets.find(({ id }) => id === tag);
+        assert.ok(suggestion.tags.includes(set.flag));
+        for (const [state, value] of Object.entries(extraForms[label] ?? {})) {
+            const operation = set.rules.find(
+                (rule) =>
+                    rule.fromState === set.baseState && rule.toState === state,
+            );
+            assert.ok(operation, `${label}:${state}`);
+            assert.equal(
+                label.slice(0, label.length - operation.removeSuffix.length) +
+                    operation.append,
+                value,
+            );
+            assert.equal(
+                reading.slice(
+                    0,
+                    reading.length -
+                        operation.pronunciation.removeSuffix.length,
+                ) + operation.pronunciation.append,
+                value.replace(label.slice(0, -1), reading.slice(0, -1)),
+            );
+        }
         const rule = set.rules.find(
-            ({ id }) => id === (tag === "ichidan" ? "polite" : "adverb"),
+            ({ id }) =>
+                id ===
+                (partOfSpeech.toLowerCase().includes("verb")
+                    ? "polite"
+                    : "adverb"),
         );
         assert.equal(
             label.slice(0, label.length - rule.removeSuffix.length) +
                 rule.append,
             expected,
         );
+    }
+});
+
+test("dictionary nouns and pronouns expose optional collective number without enabling it automatically", async () => {
+    const index = await loadNativeContent(contentRoot);
+    for (const [label, reading, partOfSpeech, definition] of [
+        ["彼", "かれ", "Pronoun", "he"],
+        ["子供", "こども", "Noun", "child"],
+    ]) {
+        const suggestion = jishoSuggestion(index, "words", label, {
+            data: [
+                {
+                    slug: label,
+                    japanese: [{ word: label, reading }],
+                    senses: [
+                        {
+                            english_definitions: [definition],
+                            parts_of_speech: [partOfSpeech],
+                        },
+                    ],
+                },
+            ],
+        });
+        assert.ok(suggestion.tags.includes("noun"));
+        assert.ok(!suggestion.tags.includes("transform:plural"));
+        assert.equal(suggestion.class, `lexical:${partOfSpeech.toLowerCase()}`);
+    }
+});
+
+test("regular Suru grammar supports complete verbs and nominal dictionary stems", async () => {
+    const index = await loadNativeContent(contentRoot);
+    const family = index.transformSets.find(
+        ({ id }) => id === "irregular-suru",
+    );
+    const expected = {
+        polite: "します",
+        negative: "しない",
+        past: "した",
+        "te-form": "して",
+        desire: "したい",
+        causative: "させる",
+        passive: "される",
+        potential: "できる",
+        volitional: "しよう",
+    };
+    for (const label of ["勉強", "勉強する"]) {
+        const reading = label === "勉強" ? "べんきょう" : "べんきょうする";
+        const suggestion = jishoSuggestion(index, "words", label, {
+            data: [
+                {
+                    slug: label,
+                    japanese: [{ word: label, reading }],
+                    senses: [
+                        {
+                            english_definitions: ["to study"],
+                            parts_of_speech: ["Suru verb - included"],
+                        },
+                    ],
+                },
+            ],
+        });
+        assert.ok(suggestion.tags.includes(family.flag));
+        assert.ok(
+            family.matchTags.every((tag) => suggestion.tags.includes(tag)),
+        );
+    }
+    for (const [id, append] of Object.entries(expected)) {
+        const rule = family.rules.find((rule) => rule.id === id);
+        for (const operation of [rule, rule.pronunciation]) {
+            assert.equal(operation.removeSuffix, "");
+            assert.equal(operation.append, append);
+            assert.deepEqual(operation.suffixes, [
+                { removeSuffix: "する", append },
+            ]);
+        }
     }
 });

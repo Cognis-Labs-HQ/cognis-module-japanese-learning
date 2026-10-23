@@ -1,0 +1,115 @@
+{
+    "metadata": {
+        "labels": {
+            "de": "JLPT-Stufe",
+            "en": "JLPT Level",
+            "id": "Tingkat JLPT",
+            "ja": "JLPT レベル"
+        }
+    },
+    "estimatedMetadata": {
+        "labels": {
+            "de": "Geschätztes JLPT-Niveau",
+            "en": "Estimated JLPT level",
+            "id": "Perkiraan tingkat JLPT",
+            "ja": "JLPT 目安レベル"
+        }
+    },
+    "options": [
+        {
+            "value": "N5",
+            "metadata": {
+                "labels": {
+                    "de": "N5",
+                    "en": "N5",
+                    "id": "N5",
+                    "ja": "N5"
+                }
+            }
+        },
+        {
+            "value": "N4",
+            "metadata": {
+                "labels": {
+                    "de": "N4",
+                    "en": "N4",
+                    "id": "N4",
+                    "ja": "N4"
+                }
+            }
+        },
+        {
+            "value": "N3",
+            "metadata": {
+                "labels": {
+                    "de": "N3",
+                    "en": "N3",
+                    "id": "N3",
+                    "ja": "N3"
+                }
+            }
+        },
+        {
+            "value": "N2",
+            "metadata": {
+                "labels": {
+                    "de": "N2",
+                    "en": "N2",
+                    "id": "N2",
+                    "ja": "N2"
+                }
+            }
+        },
+        {
+            "value": "N1",
+            "metadata": {
+                "labels": {
+                    "de": "N1",
+                    "en": "N1",
+                    "id": "N1",
+                    "ja": "N1"
+                }
+            }
+        }
+    ],
+    "sourceField": "jlpt",
+    "sourceTags": {
+        "jlpt-n1": "N1",
+        "jlpt-n2": "N2",
+        "jlpt-n3": "N3",
+        "jlpt-n4": "N4",
+        "jlpt-n5": "N5"
+    },
+    "defaults": {
+        "particle": "N5"
+    },
+    "transformationValues": {
+        "polite": "N5",
+        "negative": "N5",
+        "past": "N5",
+        "te-form": "N5",
+        "polite-past": "N5",
+        "polite-negative": "N5",
+        "negative-past": "N5",
+        "negative-te": "N5",
+        "desire": "N5",
+        "desire-negative": "N5",
+        "desire-past": "N5",
+        "desire-te": "N5",
+        "causative": "N3",
+        "passive": "N4",
+        "potential": "N4",
+        "volitional": "N4",
+        "causative-negative": "N3",
+        "causative-past": "N3",
+        "causative-te": "N3",
+        "causative-desire": "N3",
+        "causative-negative-desire": "N3",
+        "causative-continuous-negative-desire": "N3",
+        "conditional": "N4",
+        "negative-conditional": "N4",
+        "connective": "N5",
+        "plural": "N5",
+        "adverb": "N4"
+    }
+}

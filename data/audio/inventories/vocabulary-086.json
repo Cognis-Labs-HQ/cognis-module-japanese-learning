@@ -1,0 +1,52 @@
+[
+    {
+        "path": "audio/610589b424483f28100c0262c641fab9fa7e59a8f4432cf26aa65df7dc873e72.wav",
+        "text": "ひける",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "ひける",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "ひける",
+                "semanticRole": "lexicalUnit",
+                "readings": ["ひける"]
+            },
+            {
+                "language": "ja",
+                "label": "引ける",
+                "semanticRole": "lexicalUnit",
+                "readings": ["ひける"]
+            }
+        ],
+        "entries": [],
+        "variants": [
+            {
+                "entryId": "ja:word:force-pull",
+                "setId": "force-pull-forms",
+                "path": ["potential"],
+                "label": "引ける",
+                "reading": "ひける",
+                "state": "potential"
+            }
+        ],
+        "sha256": "610589b424483f28100c0262c641fab9fa7e59a8f4432cf26aa65df7dc873e72",
+        "frames": 18793,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "680435ab7b64cade84013e9360dde15c8a18f85526925560f540c3cdf33722fe"
+        }
+    }
+]

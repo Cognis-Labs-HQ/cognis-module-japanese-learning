@@ -1,0 +1,52 @@
+[
+    {
+        "path": "audio/4f69a7237e51e3dc909c1b90d167ac0d165fdec47fb7a5bd8529ba2e3288f988.wav",
+        "text": "たてる",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "たてる",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "たてる",
+                "semanticRole": "lexicalUnit",
+                "readings": ["たてる"]
+            },
+            {
+                "language": "ja",
+                "label": "立てる",
+                "semanticRole": "lexicalUnit",
+                "readings": ["たてる"]
+            }
+        ],
+        "entries": [],
+        "variants": [
+            {
+                "entryId": "ja:word:posture-stand",
+                "setId": "posture-stand-forms",
+                "path": ["potential"],
+                "label": "立てる",
+                "reading": "たてる",
+                "state": "potential"
+            }
+        ],
+        "sha256": "4f69a7237e51e3dc909c1b90d167ac0d165fdec47fb7a5bd8529ba2e3288f988",
+        "frames": 17678,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "777c279826610b9e8d95675e1fe9bb1162a4c0375be457c5a455e627035886b5"
+        }
+    }
+]

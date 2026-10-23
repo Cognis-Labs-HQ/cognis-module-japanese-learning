@@ -1,0 +1,52 @@
+[
+    {
+        "path": "audio/4b68f1ccfaca15fd866f45e0e1fa3605b64b98b0f2ee7299bbd6939cafa60383.wav",
+        "text": "はこべる",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "はこべる",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "はこべる",
+                "semanticRole": "lexicalUnit",
+                "readings": ["はこべる"]
+            },
+            {
+                "language": "ja",
+                "label": "運べる",
+                "semanticRole": "lexicalUnit",
+                "readings": ["はこべる"]
+            }
+        ],
+        "entries": [],
+        "variants": [
+            {
+                "entryId": "ja:word:delivery-carry",
+                "setId": "delivery-carry-forms",
+                "path": ["potential"],
+                "label": "運べる",
+                "reading": "はこべる",
+                "state": "potential"
+            }
+        ],
+        "sha256": "4b68f1ccfaca15fd866f45e0e1fa3605b64b98b0f2ee7299bbd6939cafa60383",
+        "frames": 21022,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "d5573f5a040b1c9cb1315b3c84a77bf92d229f424179083089d1ae9d60c76998"
+        }
+    }
+]

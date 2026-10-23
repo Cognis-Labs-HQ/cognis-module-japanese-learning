@@ -1,0 +1,60 @@
+[
+    {
+        "path": "audio/86cc65fdc224fc32ed11b40e692ca28d282dc137de78afd80b84266180df900a.wav",
+        "entryId": "ja:sentence:ookii-inu-miru",
+        "label": "大きい犬を見る",
+        "parts": [
+            {
+                "path": "audio/5b15ae17f9c15b1d56392fef904e5f1a056663de7dd79120d237600c45971120.wav",
+                "entryId": "ja:word:ookii"
+            },
+            {
+                "path": "audio/64cecb245c335de8a0367aed75bddb8d39c17b26bbdb3729562cf01206a1c508.wav",
+                "entryId": "ja:word:inu"
+            },
+            {
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "entryId": "ja:particle:wo"
+            },
+            {
+                "path": "audio/38b1e4b1dda0e34a29c049bd035b5370b24069d70efbb5fef029fb0962f2c8fe.wav",
+                "entryId": "ja:word:miru"
+            }
+        ],
+        "gapMs": 45,
+        "segments": [
+            {
+                "path": "audio/5b15ae17f9c15b1d56392fef904e5f1a056663de7dd79120d237600c45971120.wav",
+                "entryId": "ja:word:ookii",
+                "startFrame": 2400,
+                "frameCount": 15963
+            },
+            {
+                "path": "audio/64cecb245c335de8a0367aed75bddb8d39c17b26bbdb3729562cf01206a1c508.wav",
+                "entryId": "ja:word:inu",
+                "startFrame": 19443,
+                "frameCount": 11605
+            },
+            {
+                "path": "audio/5106d71175f61926e83df7eef85c8ffafca335e13aa9a6d96be7c8c3438cdcd4.wav",
+                "entryId": "ja:particle:wo",
+                "startFrame": 32128,
+                "frameCount": 8762
+            },
+            {
+                "path": "audio/38b1e4b1dda0e34a29c049bd035b5370b24069d70efbb5fef029fb0962f2c8fe.wav",
+                "entryId": "ja:word:miru",
+                "startFrame": 41970,
+                "frameCount": 14884
+            }
+        ],
+        "sha256": "cf17433630dc1415a1e3ecf99701525d86f53acfef21619c35ed540a5f176876",
+        "frames": 56854,
+        "input": {
+            "language": "ja",
+            "label": "大きい犬を見る",
+            "semanticRole": "orderedLexicalSequence",
+            "readings": ["おおきいいぬをみる"]
+        }
+    }
+]

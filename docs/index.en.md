@@ -256,7 +256,7 @@ Vocabulary lookup accepts bounded Japanese or Latin search terms, including mult
 
 ## Base Verbs, Adverbs, and Transformations
 
-The Vocabulary layer separates tagged base-form verbs and adverbs into provider-named transformation views. Every verb carries the `verb` tag plus exactly one conjugation-family tag; the schema distinguishes ichidan, regular godan endings, the exceptional `行く` and `ある` patterns, and irregular `来る`. Deterministic rules derive polite, negative, past, and te forms at presentation time. Japanese adverbs carry only `adverb` and remain invariant, so their transformation view shows the canonical base card without fabricated inflections. The content pack never stores generated verb forms or derived adverb cards.
+The Vocabulary layer separates tagged base-form verbs and adverbs into provider-named transformation views. Every verb carries the `verb` tag plus one conjugation-family tag and an explicit transform flag; the schema distinguishes ichidan, regular godan endings, the exceptional `行く` and `ある` patterns, and irregular `来る`. Deterministic rules derive polite, negative, past, and te forms at presentation time. Japanese adverbs carry only `adverb` and remain invariant, so their transformation view shows the canonical base card without fabricated inflections. The content pack never stores generated verb forms or derived adverb cards.
 
 ## Complete Japanese Pronunciation Rendering
 
@@ -282,7 +282,7 @@ A Kanji with one pronunciation links directly to ordered atomic Kana. A Kanji wi
 
 Verb transform sets now form deep branching pathways from each canonical base card. Branches cover polite negative and past forms, negative past and connective forms, causative, passive, potential, volitional, and multi-step causative desire chains. Every rule independently transforms the written form and pronunciation; localized definition overrides explain semantic branches. Adverbs remain canonical invariant base cards, and no generated form is stored as a Vocabulary entry.
 
-Verb transformations use the Cognis 2.24 `definitionTransform` contract. Each localized rule declares a removable definition boundary and a template using `{{ definition }}`, `{{ stem }}`, `{{ prefix }}`, or `{{ suffix }}`; templates compose along deep paths. Stored definitions remain ordinary text without transformation placeholders. Thus `見る` keeps separate `to see` and `to watch` definitions while its desire path renders `to (want to) see` and `to (want to) watch`.
+Verb transformations use the Cognis `definitionTransform` contract. Each localized rule declares a removable definition boundary and a template using `{{ definition }}`, `{{ stem }}`, `{{ prefix }}`, or `{{ suffix }}`; templates compose along deep paths. Stored definitions remain ordinary text without transformation placeholders. Thus `見る` keeps separate `to see` and `to watch` definitions while its desire path renders `to (want to) see` and `to (want to) watch`.
 
 Context-sensitive branches use localized ordered `replacements` before their fallback templates. Later rules can therefore rewrite an earlier annotation—for example, `to (want to) see` becomes `to (have wanted to) see`—while connective rules append to the fully transformed definition as `to (want to) see (and then)`.
 
@@ -316,7 +316,7 @@ The module requires `study:library:provider` and removes lookup registrations on
 
 ## Opt-in Japanese collective plurals
 
-Reviewed animate-noun and pronoun families use Cognis’ optional transformation contract (`optInTag: plural`). The `たち` suffix indicates a group or associated people, not a universal number suffix. Labels, readings and localized definitions transform together while sentence references retain the base card. Derived plural cards are not duplicated in the dataset.
+Reviewed animate-noun and pronoun families use Cognis’ optional transformation contract (`flag: "transform:plural"`). The `たち` suffix indicates a group or associated people, not a universal number suffix. Labels, readings and localized definitions transform together while sentence references retain the base card. Derived plural cards are not duplicated in the dataset.
 
 ### Contributor layout and host ownership
 
@@ -363,3 +363,13 @@ Illustration filenames and IDs use their SHA-256 digest, and source-sheet identi
 ## Final Review and Disabled-Language Access
 
 Uninstall clears stored voice configuration independently of content retention. Disable removes module routes, static UI and provider registrations; configuration persists across disable/restart and is served only while enabled. Cognis gates retained schemas, cards and media by the live language provider, restoring access on re-enable. Reference results merge equivalent source identities while preserving source records, ordered readings and meanings. Packaged sentences use exact constituent-composed PCM before separately retained direct recordings. Speech requests validate normalized, bounded language text; KanjiVG cancels rejected response bodies and accepts prolonged sound marks.
+
+## Generated Transformations
+
+Each transformation set declares a required `flag`, such as `transform:verb` or `transform:plural`, alongside its grammatical `matchTags`. Only flagged base cards activate that family. Unknown or unproductive flags fail validation. Forms are read-only views identified by the canonical base UUID and `{setId, path}`; they cannot be authored, imported or shipped as independent cards. Genuine lexical homographs with a different grammatical class remain valid.
+
+Detail views, sentence validation and audio use the same resolver. Generated views preserve reference images but clear base audio and stroke fields. Audio lookup uses the generated spelling and primary pronunciation; refreshing it does not modify the base card. Drawing composes the generated spelling from writing-unit patterns, preserving stroke groups and ignoring spaces. Provider recording tests require every enabled rule to have a path-bound clip. No materialized-card representation or compatibility aliases are supported.
+
+The public provider contract declares `transformationModel: "generated"`; both language modules require it before registering providers. Every rule in an enabled family must resolve for that source. Rules may declare `resultClass` when a form changes grammatical class, such as an adjective becoming an adverb. Explicit invalid references fail rather than substituting the root.
+
+Regular Godan-gu and Suru rules cover new dictionary verbs. Suru uses ordered suffix alternatives to support both 勉強する and the nominal stem 勉強, without creating a separate root card. Exact spelling and reading checks cover polite, negative, past, te, potential and chained causative forms.

@@ -1,0 +1,52 @@
+[
+    {
+        "path": "audio/02dcbe8917c0d7b019c5b9f180b8ee8ced0a014e12f893819f29908fd8a00e05.wav",
+        "text": "ねます",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "ねます",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "ねます",
+                "semanticRole": "lexicalUnit",
+                "readings": ["ねます"]
+            },
+            {
+                "language": "ja",
+                "label": "寝ます",
+                "semanticRole": "lexicalUnit",
+                "readings": ["ねます"]
+            }
+        ],
+        "entries": [],
+        "variants": [
+            {
+                "entryId": "ja:word:core-sleep",
+                "setId": "core-sleep-forms",
+                "path": ["polite"],
+                "label": "寝ます",
+                "reading": "ねます",
+                "state": "polite"
+            }
+        ],
+        "sha256": "02dcbe8917c0d7b019c5b9f180b8ee8ced0a014e12f893819f29908fd8a00e05",
+        "frames": 15449,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "442fd12d4307cdb70c2cf8bf4c2bac531cff40289ed88f7ab2740c5ff73f2ef3"
+        }
+    }
+]

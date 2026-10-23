@@ -17,6 +17,7 @@ const fieldContract = {
         reference_images: "imageList",
     },
     "alt-characters": {
+        difficulty_level: "string",
         pronunciation: "stringList",
         audio: "audio",
         stroke_pattern: "strokePattern",
@@ -30,34 +31,36 @@ const fieldContract = {
     },
     words: {
         pronunciation: "stringList",
-        jlpt_level: "string",
+        difficulty_level: "string",
         dictionary_data: "string",
         audio: "audio",
         reference_images: "imageList",
     },
     particles: {
+        difficulty_level: "string",
         pronunciation: "stringList",
         audio: "audio",
         reference_images: "imageList",
     },
     sentences: {
+        difficulty_level: "string",
         pronunciation: "stringList",
         audio: "audio",
         reference_images: "imageList",
     },
 };
-const originalFieldDigests = {
+const fieldPresentationDigests = {
     characters:
         "a4f95ece92b6786f556db51645e95f0c5ad859279096b8e70ea592c797796d50",
     "alt-characters":
-        "9fd65c9a4d2afd69a8fb5cfbae966d18008d32e660ac9295814c48e08cf81277",
+        "3398f1fbdcfb908008217cccb77599d073b737df2896c5e0ff3800963536f80d",
     definitions:
         "13143a900de232c23f86f34e0e69e9e525ea9e364fbdb0f10563fe06b02ebe08",
-    words: "b84ded9352fb464302b102d598c6f9990983a07452f046394023639505feaa8d",
+    words: "932f7fe6b139eff209fb98a90e325983a6eae256358eb0506dbdac08e997a4b8",
     particles:
-        "e6f6ab6cba58f9c79933546e47fb9fc7d5e7cf51382f0097bd4d19534cf79a35",
+        "a7524e1c696957eef912e3e31370aa75de49683c8dcae01686e5376413d4b83a",
     sentences:
-        "5991f7c86d996d2ed507aad9fac4da481461466c5acf1b8445372bebcb3643f9",
+        "89f0309c11901bd1af4f5a2e8295347a945ba8fc9347c890bf35d13c8dc8e862",
 };
 const originalWordShards = new Set([
     "complete-pronunciations.json",
@@ -127,8 +130,8 @@ function validateFields(candidateSchema, candidates) {
             createHash("sha256")
                 .update(JSON.stringify(layer.fields))
                 .digest("hex"),
-            originalFieldDigests[layer.id],
-            `${layer.id}: original field presentation changed`,
+            fieldPresentationDigests[layer.id],
+            `${layer.id}: reviewed field presentation changed`,
         );
     }
     for (const record of candidates) {
@@ -222,7 +225,9 @@ test("every expanded visible word remains selectable in a starter deck", () => {
     for (const word of vocabulary.filter(({ hidden }) => !hidden)) {
         assert.ok(covered.has(word.id), `${word.id}: no starter deck`);
         const excludedTags = schema.layers.flatMap((layer) =>
-            (layer.cardConstructor?.tag_carousels ?? []).map(({ tag }) => tag),
+            (layer.cardConstructor?.tag_carousels ?? [])
+                .filter(({ excludeFromBrowse }) => excludeFromBrowse)
+                .map(({ tag }) => tag),
         );
         assert.ok(
             !word.tags.some((tag) => excludedTags.includes(tag)),

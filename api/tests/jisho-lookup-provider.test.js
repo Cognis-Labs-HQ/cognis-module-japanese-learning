@@ -91,6 +91,22 @@ test("Jisho provider resolves native content when network lookup is unavailable"
     assert.equal(suggestion.confidence, 1);
 });
 
+test("multiple JLPT lists use the earliest learner level rather than provider array order", async () => {
+    const response = jishoResponse();
+    response.data[0].jlpt = ["jlpt-n2", "jlpt-n5"];
+    const provider = createJishoLookupProvider({
+        contentRoot,
+        endpoint: "https://jisho.test/api",
+        fetchImplementation: async () => new Response(JSON.stringify(response)),
+    });
+    const [match] = await provider.lookup({
+        schema,
+        layer: wordLayer,
+        label: "猫又",
+    });
+    assert.equal(match.fields.difficulty_level, "N5");
+});
+
 test("Jisho provider populates fields and detects links for every retrieval", async () => {
     const requests = [];
     const provider = createJishoLookupProvider({
@@ -114,7 +130,7 @@ test("Jisho provider populates fields and detects links for every retrieval", as
     assert.equal(requests[0].options.headers.accept, "application/json");
     assert.equal(first.label, "猫又");
     assert.deepEqual(first.fields.pronunciation, ["ねこまた"]);
-    assert.equal(first.fields.jlpt_level, "N2");
+    assert.equal(first.fields.difficulty_level, "N2");
     assert.deepEqual(
         first.references.filter(({ relation }) => relation === "spelling"),
         [
@@ -168,7 +184,7 @@ test("Jisho provider accepts ranked English vocabulary searches", async () => {
         "https://jisho.test/api?keyword=mythical%20cat",
     ]);
     assert.equal(suggestion.label, "猫又");
-    assert.equal(suggestion.fields.jlpt_level, "N2");
+    assert.equal(suggestion.fields.difficulty_level, "N2");
     assert.equal(suggestion.provenance, "jisho:猫又");
 });
 
@@ -392,7 +408,7 @@ test("Jisho retains all senses and raw source data with every reading group", as
         sourceUrl: suggestion.sourceUrl,
     });
     assert.equal(suggestion.class, "lexical:noun");
-    assert.deepEqual(suggestion.tags, ["jlpt-n2", "common"]);
+    assert.deepEqual(suggestion.tags, ["noun", "jlpt-n2", "common"]);
     assert.equal(
         suggestion.sourceUrl,
         "https://jisho.org/word/%E7%8C%AB%E5%8F%88",
@@ -791,7 +807,7 @@ test("dictionary part-of-speech tags enable only supported transformation famili
         ["歩く", "あるく", "Godan verb with 'ku' ending", "godan-ku"],
         ["行く", "いく", "Godan verb - Iku/Yuku special class", "godan-iku"],
         ["来る", "くる", "Kuru verb - special class", "irregular-kuru"],
-        ["買う", "かう", "Godan verb with 'u' ending", null],
+        ["買う", "かう", "Godan verb with 'u' ending", "godan-u"],
     ]) {
         const payload = jishoResponse();
         payload.data[0].japanese = [{ word: label, reading }];
@@ -804,12 +820,7 @@ test("dictionary part-of-speech tags enable only supported transformation famili
         const [result] = await provider.lookup({ layer: wordLayer, label });
         assert.equal(result.class, "lexical:verb");
         assert.ok(result.tags.includes("verb"));
-        if (expected) assert.ok(result.tags.includes(expected));
-        else
-            assert.equal(
-                result.tags.some((tag) => tag.startsWith("godan-")),
-                false,
-            );
+        assert.ok(result.tags.includes(expected));
     }
 });
 test("adverbs are classified separately from verbs and preserve Kanji lookup prerequisites", async () => {

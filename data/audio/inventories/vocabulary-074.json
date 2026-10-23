@@ -1,0 +1,52 @@
+[
+    {
+        "path": "audio/fe06b9ced1270f32d0d093ec660376001d0fdff99577b2929cf612073682c292.wav",
+        "text": "かわかした",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "かわかした",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "かわかした",
+                "semanticRole": "lexicalUnit",
+                "readings": ["かわかした"]
+            },
+            {
+                "language": "ja",
+                "label": "乾かした",
+                "semanticRole": "lexicalUnit",
+                "readings": ["かわかした"]
+            }
+        ],
+        "entries": [],
+        "variants": [
+            {
+                "entryId": "ja:word:household-dry",
+                "setId": "household-dry-forms",
+                "path": ["past"],
+                "label": "乾かした",
+                "reading": "かわかした",
+                "state": "past"
+            }
+        ],
+        "sha256": "fe06b9ced1270f32d0d093ec660376001d0fdff99577b2929cf612073682c292",
+        "frames": 22137,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "af84b15846b0ba71f89b0403df807c54db537a0a9e4d6f49ab145927758e37fa"
+        }
+    }
+]

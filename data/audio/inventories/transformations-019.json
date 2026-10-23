@@ -1,0 +1,41 @@
+[
+    {
+        "path": "audio/026df97677e254fa7a358291829f441aab76f6adc5593ebb8a5d060e8fe3dcb0.wav",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "text": "あれば",
+        "request": {
+            "text": "あれば",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "あれば",
+                "semanticRole": "lexicalUnit",
+                "readings": ["あれば"]
+            }
+        ],
+        "entries": [],
+        "variants": [
+            {
+                "entryId": "ja:word:aru-exist",
+                "setId": "godan-aru",
+                "path": ["conditional"],
+                "state": "conditional",
+                "label": "あれば",
+                "reading": "あれば"
+            }
+        ],
+        "sha256": "137c845cb973e5a3511b64973ed1c90c6458171c4e961bebc207f58b6d29fead",
+        "frames": 12715
+    }
+]

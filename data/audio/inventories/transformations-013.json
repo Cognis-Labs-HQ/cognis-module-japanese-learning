@@ -1,0 +1,46 @@
+[
+    {
+        "path": "audio/135b40994c9b947bceb6fe008f9a778601712ec6d08e122941d185a2c7969f23.wav",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "text": "あるかせたくなくて",
+        "request": {
+            "text": "あるかせたくなくて",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "歩かせたくなくて",
+                "semanticRole": "lexicalUnit",
+                "readings": ["あるかせたくなくて"]
+            }
+        ],
+        "entries": [],
+        "variants": [
+            {
+                "entryId": "ja:word:aruku",
+                "setId": "godan-ku",
+                "path": [
+                    "causative",
+                    "causative-desire",
+                    "causative-negative-desire",
+                    "causative-continuous-negative-desire"
+                ],
+                "state": "causative-continuous-negative-desire",
+                "label": "歩かせたくなくて",
+                "reading": "あるかせたくなくて"
+            }
+        ],
+        "sha256": "b89a0e7e25bff199faca5cd3fa0de3c0cba785b2882763ccf820af35f517b15b",
+        "frames": 28346
+    }
+]

@@ -44,7 +44,7 @@ function forms(entry) {
         .filter(
             (set) =>
                 set.matchTags.every((tag) => entry.tags?.includes(tag)) &&
-                (!set.optInTag || entry.tags?.includes(set.optInTag)),
+                entry.tags?.includes(set.flag),
         )
         .flatMap((set) => {
             const nodes = [
@@ -399,7 +399,7 @@ test("small-kana lexical recordings retain native Japanese requests and the cano
     assert.ok(school.inputs.some((input) => input.readings[0] === "がっこう"));
 });
 
-test("packaged sentence playback preserves exact constituent composition without runtime synthesis", async () => {
+test("dedicated sentence recordings take priority in card playback and provider lookups", async () => {
     const provider = makeProvider(() => {
         throw new Error("unexpected_synthesis");
     });
@@ -408,17 +408,11 @@ test("packaged sentence playback preserves exact constituent composition without
         const composition = inventory.compositions.find(
             (item) => item.entryId === sentence.entryId,
         );
-        assert.equal(
-            entries.get(sentence.entryId).fields.audio,
-            composition.path,
-        );
+        assert.equal(entries.get(sentence.entryId).fields.audio, sentence.path);
         assert.equal(sentence.voiceId, inventory.voiceId);
         assert.equal(sentence.request.text, sentence.inputs[0].label);
         const result = await provider.fetchAudio(composition.input);
-        assert.deepEqual(
-            Buffer.from(result.data),
-            assets.get(composition.path),
-        );
+        assert.deepEqual(Buffer.from(result.data), assets.get(sentence.path));
     }
 });
 

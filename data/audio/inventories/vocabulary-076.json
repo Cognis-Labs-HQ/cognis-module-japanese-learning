@@ -1,0 +1,52 @@
+[
+    {
+        "path": "audio/8b3ca01962e9fb1271aef0287c442c8e7b98a2a0b1d07607630d50eaa56441d7.wav",
+        "text": "むずかしかった",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "むずかしかった",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "むずかしかった",
+                "semanticRole": "lexicalUnit",
+                "readings": ["むずかしかった"]
+            },
+            {
+                "language": "ja",
+                "label": "難しかった",
+                "semanticRole": "lexicalUnit",
+                "readings": ["むずかしかった"]
+            }
+        ],
+        "entries": [],
+        "variants": [
+            {
+                "entryId": "ja:word:qualities-difficult",
+                "setId": "qualities-difficult-forms",
+                "path": ["past"],
+                "label": "難しかった",
+                "reading": "むずかしかった",
+                "state": "past"
+            }
+        ],
+        "sha256": "8b3ca01962e9fb1271aef0287c442c8e7b98a2a0b1d07607630d50eaa56441d7",
+        "frames": 27709,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "c4b77ed90c10db07ab403b7a0e79167b5877c5695d216aa11b1ff122822e14b8"
+        }
+    }
+]

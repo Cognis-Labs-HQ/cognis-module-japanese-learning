@@ -23,12 +23,12 @@ export function createAudioProvider({
         for (const input of recording.inputs)
             recordings.set(inputKey(input), recording);
     }
+    for (const composition of inventory.compositions) {
+        recordings.set(inputKey(composition.input), composition);
+    }
     for (const sentence of inventory.sentences) {
         for (const input of sentence.inputs)
             recordings.set(inputKey(input), sentence);
-    }
-    for (const composition of inventory.compositions) {
-        recordings.set(inputKey(composition.input), composition);
     }
     return Object.freeze({
         id: `study-language-${inventory.language}:recordings`,

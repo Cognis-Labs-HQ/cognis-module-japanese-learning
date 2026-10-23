@@ -1,0 +1,52 @@
+[
+    {
+        "path": "audio/6459d8e85a83920e8cadc6cc9b2dc336b258e95564ef162a3746902e693969ab.wav",
+        "text": "おれる",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "おれる",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "おれる",
+                "semanticRole": "lexicalUnit",
+                "readings": ["おれる"]
+            },
+            {
+                "language": "ja",
+                "label": "折れる",
+                "semanticRole": "lexicalUnit",
+                "readings": ["おれる"]
+            }
+        ],
+        "entries": [],
+        "variants": [
+            {
+                "entryId": "ja:word:craft-fold",
+                "setId": "craft-fold-forms",
+                "path": ["potential"],
+                "label": "折れる",
+                "reading": "おれる",
+                "state": "potential"
+            }
+        ],
+        "sha256": "6459d8e85a83920e8cadc6cc9b2dc336b258e95564ef162a3746902e693969ab",
+        "frames": 16564,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "d93bf4d5c0ec392b1564a92a1ec381fb82a0404751920b383b896f962f46892e"
+        }
+    }
+]

@@ -1,0 +1,49 @@
+[
+    {
+        "path": "audio/bc5d1e8bb836f535350d60fa8b6f42e1ab63ed91ba0f8dada92508e4875bf929.wav",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "text": "いられる",
+        "request": {
+            "text": "いられる",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "いられる",
+                "semanticRole": "lexicalUnit",
+                "readings": ["いられる"]
+            }
+        ],
+        "entries": [],
+        "variants": [
+            {
+                "entryId": "ja:word:iru-exist",
+                "setId": "ichidan",
+                "path": ["passive"],
+                "state": "passive",
+                "label": "いられる",
+                "reading": "いられる"
+            },
+            {
+                "entryId": "ja:word:iru-exist",
+                "setId": "ichidan",
+                "path": ["potential"],
+                "state": "potential",
+                "label": "いられる",
+                "reading": "いられる"
+            }
+        ],
+        "sha256": "837fe2955580580e13f468b6bcf1c8bae0f275790ad6a00e6d3afdd214993470",
+        "frames": 17216
+    }
+]

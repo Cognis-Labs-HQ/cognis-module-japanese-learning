@@ -1,3 +1,4 @@
+import { difficultyLevel } from "../reuse/difficulty.js";
 import { katakanaToHiragana } from "../reuse/kana.js";
 import { readFile } from "node:fs/promises";
 import { requestJisho, jishoFailureDetails } from "./request.js";
@@ -116,11 +117,6 @@ function nativeSuggestions(index, layer, label) {
             provenance: `cognis-japanese:${record.id}`,
             confidence: 1,
         }));
-}
-
-function jishoLevel(tags = []) {
-    const tag = tags.find((value) => /^jlpt-n[1-5]$/i.test(value));
-    return tag ? tag.slice(-2).toUpperCase() : undefined;
 }
 
 function selectJishoRecord(data, label, allowRankedFallback) {
@@ -322,9 +318,9 @@ export function jishoSuggestion(index, layer, label, data, query = label) {
         fields.pronunciation = readings;
     } else if (layer === "words") {
         fields.pronunciation = readings;
-        const level = jishoLevel(record.jlpt);
-        if (level) fields.jlpt_level = level;
     }
+    const difficulty = difficultyLevel(record);
+    if (difficulty) fields.difficulty_level = difficulty;
     fields.dictionary_data = JSON.stringify(record);
     const pronunciationGroups =
         layer === "characters"
@@ -390,7 +386,7 @@ export function jishoSuggestion(index, layer, label, data, query = label) {
                               rule.fromState === set.baseState &&
                               canonicalLabel.endsWith(rule.removeSuffix),
                       )
-                          ? set.matchTags
+                          ? [...set.matchTags, set.flag]
                           : [];
                   },
               )
@@ -433,8 +429,8 @@ export function jishoSuggestion(index, layer, label, data, query = label) {
                   hidden: true,
                   fields: {
                       pronunciation: [reading],
-                      ...(fields.jlpt_level
-                          ? { jlpt_level: fields.jlpt_level }
+                      ...(fields.difficulty_level
+                          ? { difficulty_level: fields.difficulty_level }
                           : {}),
                   },
                   references:
@@ -531,9 +527,11 @@ export function jishoSuggestion(index, layer, label, data, query = label) {
         tags: [
             ...new Set([
                 ...(record.tags ?? []),
-                ...(layer === "words" &&
-                ["verb", "adverb", "adjective"].includes(lexicalClass)
-                    ? [lexicalClass]
+                ...(layer === "words" && lexicalClass
+                    ? [
+                          lexicalClass,
+                          ...(lexicalClass === "pronoun" ? ["noun"] : []),
+                      ]
                     : []),
                 ...transformTags,
                 ...(record.jlpt ?? []),
@@ -649,7 +647,7 @@ export function createJishoLookupProvider({
         capabilities: ["dictionary"],
         searchable: true,
         cacheRevision,
-        fields: ["pronunciation", "jlpt_level", "dictionary_data"],
+        fields: ["pronunciation", "difficulty_level", "dictionary_data"],
         supports(schema, layer) {
             return (
                 schema?.id === SCHEMA_ID &&

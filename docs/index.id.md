@@ -256,7 +256,7 @@ Pencarian Kosakata menerima istilah pencarian bahasa Jepang atau Latin yang diba
 
 ## Verba Dasar, Adverbia, dan Transformasi
 
-Lapisan Kosakata memisahkan verba dan adverbia bentuk dasar bertag ke tampilan transformasi bernama penyedia. Setiap verba memiliki tag `verb` beserta tepat satu tag keluarga konjugasi; skema membedakan ichidan, akhiran godan reguler, pola khusus `行く` dan `ある`, serta `来る` tak beraturan. Aturan deterministik menurunkan bentuk sopan, negatif, lampau, dan te saat penyajian. Adverbia bahasa Jepang hanya memiliki `adverb` dan tidak berubah, sehingga tampilan transformasinya menunjukkan kartu dasar kanonis tanpa infleksi buatan. Paket konten tidak pernah menyimpan bentuk verba hasil transformasi atau kartu adverbia turunan.
+Lapisan Kosakata memisahkan verba dan adverbia bentuk dasar bertag ke tampilan transformasi bernama penyedia. Setiap verba memiliki tag `verb` beserta satu tag keluarga konjugasi dan flag transformasi eksplisit; skema membedakan ichidan, akhiran godan reguler, pola khusus `行く` dan `ある`, serta `来る` tak beraturan. Aturan deterministik menurunkan bentuk sopan, negatif, lampau, dan te saat penyajian. Adverbia bahasa Jepang hanya memiliki `adverb` dan tidak berubah, sehingga tampilan transformasinya menunjukkan kartu dasar kanonis tanpa infleksi buatan. Paket konten tidak pernah menyimpan bentuk verba hasil transformasi atau kartu adverbia turunan.
 
 ## Perenderan Pelafalan Jepang yang Lengkap
 
@@ -282,7 +282,7 @@ Kanji dengan satu pelafalan menaut langsung ke Kana atomik berurutan. Kanji deng
 
 Set transformasi verba kini membentuk jalur bercabang mendalam dari setiap kartu dasar kanonis. Cabangnya mencakup bentuk sopan negatif dan lampau, bentuk lampau negatif dan penghubung, kausatif, pasif, potensial, volisional, serta rantai keinginan kausatif bertahap. Setiap aturan mentransformasi bentuk tulisan dan pelafalan secara mandiri; penggantian definisi terlokalisasi menjelaskan cabang semantik. Adverbia tetap menjadi kartu dasar kanonis yang tidak berubah, dan tidak ada bentuk hasil yang disimpan sebagai entri Kosakata.
 
-Transformasi verba menggunakan kontrak `definitionTransform` Cognis 2.24. Setiap aturan terlokalisasi mendeklarasikan batas definisi yang dapat dilepas dan templat dengan `{{ definition }}`, `{{ stem }}`, `{{ prefix }}`, atau `{{ suffix }}`; templat disusun sepanjang jalur mendalam. Definisi tersimpan tetap berupa teks biasa tanpa placeholder transformasi. Karena itu `見る` mempertahankan definisi “to see” dan “to watch” secara terpisah, sedangkan jalur keinginan mengubah keduanya secara tepat.
+Transformasi verba menggunakan kontrak `definitionTransform` Cognis. Setiap aturan terlokalisasi mendeklarasikan batas definisi yang dapat dilepas dan templat dengan `{{ definition }}`, `{{ stem }}`, `{{ prefix }}`, atau `{{ suffix }}`; templat disusun sepanjang jalur mendalam. Definisi tersimpan tetap berupa teks biasa tanpa placeholder transformasi. Karena itu `見る` mempertahankan definisi “to see” dan “to watch” secara terpisah, sedangkan jalur keinginan mengubah keduanya secara tepat.
 
 Cabang yang bergantung konteks memakai `replacements` terlokalisasi dan berurutan sebelum templat cadangan. Aturan berikutnya dapat menulis ulang anotasi sebelumnya, sedangkan aturan penghubung menambahkan makna ke definisi yang telah ditransformasi sepenuhnya melalui `{{ definition }}`.
 
@@ -316,7 +316,7 @@ Modul memerlukan `study:library:provider` dan melepas registrasi pencarian saat 
 
 ## Jamak kelompok Jepang yang dipilih secara eksplisit
 
-Keluarga nomina bernyawa dan pronomina yang ditinjau memakai kontrak transformasi opsional Cognis (`optInTag: plural`). Akhiran `たち` menunjukkan kelompok atau orang terkait, bukan akhiran jumlah universal. Label, bacaan, dan definisi terlokalisasi berubah bersama sementara referensi kalimat mempertahankan kartu dasar. Kartu jamak turunan tidak diduplikasi dalam dataset.
+Keluarga nomina bernyawa dan pronomina yang ditinjau memakai kontrak transformasi opsional Cognis (`flag: "transform:plural"`). Akhiran `たち` menunjukkan kelompok atau orang terkait, bukan akhiran jumlah universal. Label, bacaan, dan definisi terlokalisasi berubah bersama sementara referensi kalimat mempertahankan kartu dasar. Kartu jamak turunan tidak diduplikasi dalam dataset.
 
 ### Struktur kontributor dan kepemilikan host
 
@@ -365,3 +365,13 @@ Nama berkas dan ID ilustrasi memakai digest SHA-256, sedangkan pengenal lembar s
 ## Tinjauan Akhir dan Akses Bahasa Nonaktif
 
 Pencopotan menghapus konfigurasi suara tanpa bergantung pada retensi konten. Penonaktifan menghapus rute modul, UI statis, dan registrasi penyedia; konfigurasi bertahan saat dinonaktifkan atau dimulai ulang dan hanya dilayani ketika aktif. Cognis membatasi skema, kartu, dan media tersimpan menurut penyedia bahasa aktif serta memulihkan akses saat diaktifkan kembali. Hasil referensi menggabungkan identitas sumber setara sambil mempertahankan rekaman sumber, urutan bacaan, dan makna. Kalimat paket mengutamakan PCM komposisi persis dari klip penyusun, sebelum rekaman langsung yang disimpan terpisah. Permintaan suara memvalidasi teks bahasa ternormalisasi dengan batas panjang; KanjiVG membatalkan isi respons gagal dan menerima tanda vokal panjang.
+
+## Transformasi yang Dihasilkan
+
+Setiap keluarga transformasi mendeklarasikan `flag` wajib, seperti `transform:verb` atau `transform:plural`, beserta `matchTags` gramatikalnya. Hanya kartu dasar dengan flag tersebut yang mengaktifkan keluarga. Flag yang tidak dikenal atau tidak produktif gagal divalidasi. Bentuk merupakan tampilan hanya-baca dengan UUID dasar kanonis dan `{setId, path}`; bentuk tidak boleh dibuat, diimpor, atau disertakan sebagai kartu mandiri. Homograf leksikal dengan kelas gramatikal berbeda tetap sah.
+
+Detail, validasi kalimat, dan audio menggunakan resolver yang sama. Tampilan turunan mempertahankan gambar referensi tetapi menghapus bidang audio dan goresan dasar. Pencarian audio menggunakan ejaan turunan dan pelafalan utama; regenerasinya tidak mengubah kartu dasar. Latihan menulis menyusun pola karakter menurut ejaan turunan, mempertahankan kelompok goresan, dan mengabaikan spasi. Pengujian rekaman mewajibkan klip berjalur untuk setiap aturan aktif. Representasi kartu bentuk tersimpan dan alias kompatibilitas tidak didukung.
+
+Kontrak penyedia publik mendeklarasikan `transformationModel: "generated"`; kedua modul bahasa mewajibkannya sebelum mendaftarkan penyedia. Setiap aturan keluarga aktif harus dapat diturunkan untuk sumber tersebut. Aturan dapat mendeklarasikan `resultClass` saat bentuk mengubah kelas gramatikal, misalnya adjektiva menjadi adverbia. Referensi eksplisit yang tidak valid ditolak alih-alih diganti bentuk dasar.
+
+Aturan Godan-gu dan Suru reguler mencakup verba kamus baru. Suru memakai alternatif akhiran berurutan untuk mendukung 勉強する maupun pangkal nominal 勉強 tanpa membuat kartu dasar terpisah. Ejaan dan pelafalan diperiksa untuk bentuk sopan, negatif, lampau, te, potensial, dan kausatif berantai.

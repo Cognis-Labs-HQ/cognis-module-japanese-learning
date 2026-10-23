@@ -740,53 +740,5 @@
             "listening": "unverified-not-performed",
             "construction": "Exact constituent PCM, preserving every selected grammatical form."
         }
-    },
-    {
-        "path": "audio/d0cb43538dfb7e309e8191f773333b10e0b9caf422084d20712a25c624e1ecf6.wav",
-        "entryId": "ja:sentence:nihongo-ga-suki",
-        "label": "日本語が好き",
-        "parts": [
-            {
-                "path": "audio/cff4156d26b0e956bdda771009e94040a6df34fb62a9b74a2037a5ec836017d4.wav",
-                "entryId": "ja:word:nihongo"
-            },
-            {
-                "path": "audio/69d02d32db53e5eeb4bb6db01917e619478b734bd66988c4242ccc1a3e55655d.wav",
-                "entryId": "ja:particle:ga"
-            },
-            {
-                "path": "audio/fff2a2381ef1abd6f3b0e24b6390a1f76d9fda74ec68bdc300ac3ff137a00214.wav",
-                "entryId": "ja:word:suki"
-            }
-        ],
-        "gapMs": 45,
-        "segments": [
-            {
-                "path": "audio/cff4156d26b0e956bdda771009e94040a6df34fb62a9b74a2037a5ec836017d4.wav",
-                "entryId": "ja:word:nihongo",
-                "startFrame": 2400,
-                "frameCount": 16054
-            },
-            {
-                "path": "audio/69d02d32db53e5eeb4bb6db01917e619478b734bd66988c4242ccc1a3e55655d.wav",
-                "entryId": "ja:particle:ga",
-                "startFrame": 19534,
-                "frameCount": 14335
-            },
-            {
-                "path": "audio/fff2a2381ef1abd6f3b0e24b6390a1f76d9fda74ec68bdc300ac3ff137a00214.wav",
-                "entryId": "ja:word:suki",
-                "startFrame": 34949,
-                "frameCount": 13644
-            }
-        ],
-        "sha256": "fbb3c983efb74f39078f254047c2d2bf81afe83ff542e0f40f22a097a7638838",
-        "frames": 48593,
-        "input": {
-            "language": "ja",
-            "label": "日本語が好き",
-            "semanticRole": "orderedLexicalSequence",
-            "readings": ["にほんごがすき"]
-        }
     }
 ]

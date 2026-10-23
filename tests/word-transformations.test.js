@@ -37,7 +37,8 @@ function transformedValues(entry) {
 function transformationNodes(entry) {
     const tags = new Set(entry.tags ?? []);
     return (schema.transformSets ?? []).flatMap((set) => {
-        if (!set.matchTags.every((tag) => tags.has(tag))) return [];
+        if (!tags.has(set.flag) || !set.matchTags.every((tag) => tags.has(tag)))
+            return [];
         const nodes = [
             {
                 state: set.baseState,
@@ -162,7 +163,11 @@ test("Vocabulary declares separate verb, adverb, and copula transform views", ()
     assert.ok(adverbs.length > 0);
     for (const verb of verbs) {
         assert.equal(verb.tags?.[0], "verb", verb.id);
-        assert.equal(verb.tags?.length, 2, verb.id);
+        assert.equal(
+            verb.tags?.filter((tag) => tag.startsWith("transform:")).length,
+            1,
+            verb.id,
+        );
     }
     for (const adverb of adverbs) {
         assert.deepEqual(adverb.tags, ["adverb"], adverb.id);
@@ -435,9 +440,9 @@ test("content ships only base verbs, adverbs, and copulas, never generated forms
 
 test("Japanese noun number is an explicit collective-plural opt-in", () => {
     const sets = schema.transformSets.filter(
-        ({ optInTag }) => optInTag === "plural",
+        ({ flag }) => flag === "transform:plural",
     );
-    assert.equal(sets.length, 6);
+    assert.equal(sets.length, 1);
     for (const set of sets) {
         assert.ok(set.matchTags.includes("noun"));
         assert.equal(set.rules[0].removeSuffix, "");

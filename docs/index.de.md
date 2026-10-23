@@ -256,7 +256,7 @@ Die Wortschatzsuche akzeptiert begrenzte japanische oder lateinische Suchbegriff
 
 ## Grundformen von Verben, Adverbien und Transformationen
 
-Die Wortschatzebene trennt markierte Grundformen von Verben und Adverbien in anbieterseitig benannte Transformationsansichten. Jedes Verb trägt das Tag `verb` und genau ein Konjugationsfamilien-Tag; das Schema unterscheidet Ichidan, reguläre Godan-Endungen, die Sondermuster `行く` und `ある` sowie das unregelmäßige `来る`. Deterministische Regeln leiten Höflichkeits-, Verneinungs-, Vergangenheits- und Te-Formen zur Anzeigezeit ab. Japanische Adverbien tragen nur `adverb` und bleiben unverändert, sodass ihre Transformationsansicht die kanonische Grundkarte ohne erfundene Flexionen zeigt. Das Inhaltspaket speichert niemals erzeugte Verbformen oder abgeleitete Adverbkarten.
+Die Wortschatzebene trennt markierte Grundformen von Verben und Adverbien in anbieterseitig benannte Transformationsansichten. Jedes Verb trägt das Tag `verb` sowie ein Konjugationsfamilien-Tag und ein ausdrückliches Transformationsflag; das Schema unterscheidet Ichidan, reguläre Godan-Endungen, die Sondermuster `行く` und `ある` sowie das unregelmäßige `来る`. Deterministische Regeln leiten Höflichkeits-, Verneinungs-, Vergangenheits- und Te-Formen zur Anzeigezeit ab. Japanische Adverbien tragen nur `adverb` und bleiben unverändert, sodass ihre Transformationsansicht die kanonische Grundkarte ohne erfundene Flexionen zeigt. Das Inhaltspaket speichert niemals erzeugte Verbformen oder abgeleitete Adverbkarten.
 
 ## Vollständige Darstellung japanischer Aussprache
 
@@ -282,7 +282,7 @@ Ein Kanji mit einer Aussprache verknüpft direkt geordnete atomare Kana. Ein Kan
 
 Verbtransformationssätze bilden nun tief verzweigte Pfade aus jeder kanonischen Grundkarte. Die Zweige umfassen höfliche Negativ- und Vergangenheitsformen, verneinte Vergangenheit und Verbindungsformen, Kausativ, Passiv, Potential, Volitional sowie mehrstufige Kausativ-Wunschketten. Jede Regel transformiert Schriftform und Aussprache unabhängig; lokalisierte Definitionsüberschreibungen erklären semantische Zweige. Adverbien bleiben unveränderliche kanonische Grundkarten, und keine erzeugte Form wird als Vokabeleintrag gespeichert.
 
-Verbtransformationen verwenden den Cognis-2.24-Vertrag `definitionTransform`. Jede lokalisierte Regel deklariert eine entfernbare Definitionsgrenze und eine Vorlage mit `{{ definition }}`, `{{ stem }}`, `{{ prefix }}` oder `{{ suffix }}`; Vorlagen werden entlang tiefer Pfade zusammengesetzt. Gespeicherte Definitionen bleiben normaler Text ohne Transformationsplatzhalter. Dadurch behält `見る` getrennte Definitionen für „sehen“ und „anschauen“, während der Wunschpfad beide passend transformiert.
+Verbtransformationen verwenden den Cognis-Vertrag `definitionTransform`. Jede lokalisierte Regel deklariert eine entfernbare Definitionsgrenze und eine Vorlage mit `{{ definition }}`, `{{ stem }}`, `{{ prefix }}` oder `{{ suffix }}`; Vorlagen werden entlang tiefer Pfade zusammengesetzt. Gespeicherte Definitionen bleiben normaler Text ohne Transformationsplatzhalter. Dadurch behält `見る` getrennte Definitionen für „sehen“ und „anschauen“, während der Wunschpfad beide passend transformiert.
 
 Kontextabhängige Zweige verwenden lokalisierte geordnete `replacements` vor ihren Ausweichvorlagen. Spätere Regeln können dadurch eine frühere Anmerkung umschreiben; Verbindungsregeln hängen ihre Bedeutung dagegen mit `{{ definition }}` an die vollständig transformierte Definition an.
 
@@ -316,7 +316,7 @@ Das Modul verlangt `study:library:provider` und entfernt Suchregistrierungen bei
 
 ## Optionale japanische Kollektivplurale
 
-Geprüfte Gruppen belebter Substantive und Pronomen verwenden Cognis’ optionalen Transformationsvertrag (`optInTag: plural`). `たち` bezeichnet eine Gruppe oder zugehörige Personen, keine allgemeine Zahlenendung. Bezeichnungen, Lesungen und lokalisierte Definitionen werden gemeinsam transformiert; Satzreferenzen behalten die Basiskarte. Das Dataset enthält keine doppelten abgeleiteten Pluralkarten.
+Geprüfte Gruppen belebter Substantive und Pronomen verwenden Cognis’ optionalen Transformationsvertrag (`flag: "transform:plural"`). `たち` bezeichnet eine Gruppe oder zugehörige Personen, keine allgemeine Zahlenendung. Bezeichnungen, Lesungen und lokalisierte Definitionen werden gemeinsam transformiert; Satzreferenzen behalten die Basiskarte. Das Dataset enthält keine doppelten abgeleiteten Pluralkarten.
 
 ### Mitwirkendenstruktur und Zuständigkeit des Hosts
 
@@ -363,3 +363,13 @@ Dateinamen und IDs der Illustrationen verwenden ihren SHA-256-Hash; Quellblätte
 ## Abschließende Prüfung und Zugriff bei deaktivierter Sprache
 
 Die Deinstallation löscht gespeicherte Stimmeneinstellungen unabhängig vom Erhalt der Lerninhalte. Deaktivieren entfernt Modulrouten, statische Oberflächen und Anbieterregistrierungen; Einstellungen überstehen Deaktivierung und Neustarts und sind nur im aktivierten Zustand erreichbar. Cognis sperrt gespeicherte Schemata, Karten und Medien anhand des aktiven Sprachanbieters und stellt den Zugriff beim Aktivieren wieder her. Referenzergebnisse vereinen gleichwertige Quellenidentitäten und bewahren Quelldaten, Lesereihenfolge und Bedeutungen. Vorbereitete Sätze verwenden exakte zusammengesetzte PCM-Aufnahmen vor getrennt erhaltenen Direktaufnahmen. Sprachanfragen prüfen normalisierten, begrenzten Text; KanjiVG verwirft abgelehnte Antwortdaten und akzeptiert Langvokalzeichen.
+
+## Generierte Wortformen
+
+Jeder Formensatz deklariert ein erforderliches `flag`, etwa `transform:verb` oder `transform:plural`, neben seinen grammatischen `matchTags`. Nur entsprechend markierte Basiskarten aktivieren die Gruppe. Unbekannte oder wirkungslose Flags scheitern an der Validierung. Formen sind schreibgeschützte Ansichten mit der kanonischen Basis-UUID und `{setId, path}`; eigenständige Formenkarten dürfen weder erstellt noch importiert oder ausgeliefert werden. Echte Homografen mit anderer grammatischer Klasse bleiben zulässig.
+
+Detailansichten, Satzprüfung und Audio nutzen denselben Resolver. Generierte Ansichten behalten Referenzbilder, entfernen jedoch die Audio- und Strichfelder der Basis. Die Audiosuche verwendet generierte Schreibweise und Hauptaussprache; eine Neugenerierung verändert die Basiskarte nicht. Zeichenübungen setzen die generierte Schreibweise aus Schreibmustern zusammen, behalten Strichgruppen bei und ignorieren Leerzeichen. Aufnahmetests verlangen für jede aktivierte Regel einen pfadgebundenen Clip. Gespeicherte Formenkarten und Kompatibilitätsaliase werden nicht unterstützt.
+
+Der öffentliche Anbietervertrag deklariert `transformationModel: "generated"`; beide Sprachmodule verlangen dies vor der Anbieterregistrierung. Jede Regel einer aktivierten Gruppe muss für die Ausgangskarte auflösbar sein. Mit `resultClass` kann eine Regel die grammatische Klasse ändern, etwa vom Adjektiv zum Adverb. Ungültige explizite Referenzen scheitern, statt die Grundform einzusetzen.
+
+Reguläre Godan-gu- und Suru-Regeln erfassen neue Wörterbuchverben. Suru nutzt geordnete Suffixalternativen für 勉強する und den nominalen Stamm 勉強, ohne eine zusätzliche Grundkarte anzulegen. Genaue Schreibweisen und Lesungen werden für Höflichkeits-, Verneinungs-, Vergangenheits-, Te-, Möglichkeits- und verkettete Kausativformen geprüft.

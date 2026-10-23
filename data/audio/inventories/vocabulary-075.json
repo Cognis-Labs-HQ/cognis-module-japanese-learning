@@ -1,0 +1,52 @@
+[
+    {
+        "path": "audio/90fa940ab327d115c8d8dbee8fa9118b7b5fec126394f5a7e381a6879146dd48.wav",
+        "text": "わらった",
+        "voiceId": "xya0RvcJtofTcFTOdX4E",
+        "request": {
+            "text": "わらった",
+            "model_id": "eleven_flash_v2_5",
+            "seed": 42,
+            "voice_settings": {
+                "stability": 0.9,
+                "similarity_boost": 0.85,
+                "style": 0,
+                "use_speaker_boost": true,
+                "speed": 0.9
+            },
+            "language_code": "ja",
+            "apply_text_normalization": "off"
+        },
+        "inputs": [
+            {
+                "language": "ja",
+                "label": "わらった",
+                "semanticRole": "lexicalUnit",
+                "readings": ["わらった"]
+            },
+            {
+                "language": "ja",
+                "label": "笑った",
+                "semanticRole": "lexicalUnit",
+                "readings": ["わらった"]
+            }
+        ],
+        "entries": [],
+        "variants": [
+            {
+                "entryId": "ja:word:actions-laugh",
+                "setId": "actions-laugh-forms",
+                "path": ["past"],
+                "label": "笑った",
+                "reading": "わらった",
+                "state": "past"
+            }
+        ],
+        "sha256": "90fa940ab327d115c8d8dbee8fa9118b7b5fec126394f5a7e381a6879146dd48",
+        "frames": 19907,
+        "metadata": {
+            "listening": "unverified-not-performed",
+            "sourcePcmSha256": "ed75437c04bb3695579bd9c9a3017ca60149f910c766804445ba2820649091f3"
+        }
+    }
+]

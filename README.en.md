@@ -265,7 +265,7 @@ Vocabulary pronunciation fields use the singular `pronunciation-readings` link c
 
 Bundled WAV files receive checksum, format and PCM integrity checks; listening review is recorded separately and may be unverified. `data/audio/recordings.json` lists available recordings and compositions. `data/audio/unavailable.json` explicitly lists cards without bundled audio; missing recordings are not playback URLs. The designated voice is `xya0RvcJtofTcFTOdX4E`. Credentials and offline generation tools are not packaged.
 
-Packaged sentence playback prioritizes exact constituent-composed PCM, including the intended grammatical forms. Independently generated whole-sentence recordings retain their original provenance and remain separate. A sentence without all exact constituent recordings has no bundled audio; missing forms never substitute base-form clips.
+Dedicated whole-sentence recordings take priority in both card playback and provider lookups. Exact constituent-composed recordings remain available for sentences without a dedicated recording, including selected grammatical forms; missing forms never substitute base-form clips. New sentences continue through host-owned composition and caching.
 
 Bootstrap registers a removable `study:audio:provider.registerProvider` implementation. Bundled cards and their variants work without ElevenLabs installed or configured. Missing lexical recordings may use the optional configured `elevenlabs-tts:synthesis` capability; the default request voice is the designated language voice, with an administrator voice override available for new synthesis. New sentences never request separate whole-sentence synthesis. Cognis owns global-card authorization, caching, manual uploads and private/classroom composition policy. Only the primary authored pronunciation is selected.
 
@@ -285,7 +285,7 @@ Everyday nouns cover furniture, clothing, objects and food, with four-language m
 
 ## Food and Body Vocabulary
 
-Packaged sentence playback uses exact constituent-composed PCM, including selected transformations. Independently generated whole-sentence recordings remain inventoried with their original voice and request provenance, but do not override the composed recording. New sentences continue through host-owned composition and caching.
+Dedicated whole-sentence recordings take priority in both card playback and provider lookups. Exact constituent-composed recordings remain available for sentences without a dedicated recording, including selected grammatical forms; missing forms never substitute base-form clips. New sentences continue through host-owned composition and caching.
 
 ## Recording Inventories
 
@@ -293,7 +293,7 @@ Packaged sentence playback uses exact constituent-composed PCM, including select
 
 ## Explicit catalog normalization and sentence composition inventories
 
-The catalog reader accepts its normalization policy from the language provider: NFC for English, NFKC for Japanese. Shared lookup code no longer branches on a specific language. Sentence composition inventories are named `sentence-compositions`; each entry describes a real packaged recording assembled from its ordered constituent clips. Constituent-composed recordings take playback priority; direct neural recordings remain inventoried separately.
+The catalog reader accepts its normalization policy from the language provider: NFC for English, NFKC for Japanese. Shared lookup code no longer branches on a specific language. Sentence composition inventories are named `sentence-compositions`; each entry describes a real packaged recording assembled from its ordered constituent clips. Dedicated whole-sentence recordings take playback priority; constituent compositions remain available when no dedicated recording exists.
 
 ## Localized illustration labels and neutral asset names
 
@@ -301,4 +301,16 @@ Illustration filenames and IDs use their SHA-256 digest, and source-sheet identi
 
 ## Final Review and Disabled-Language Access
 
-Uninstall clears stored voice configuration independently of content retention. Disable removes module routes, static UI and provider registrations; configuration persists across disable/restart and is served only while enabled. Cognis gates retained schemas, cards and media by the live language provider, restoring access on re-enable. Reference results merge equivalent source identities while preserving source records, ordered readings and meanings. Packaged sentences use exact constituent-composed PCM before separately retained direct recordings. Speech requests validate normalized, bounded language text; KanjiVG cancels rejected response bodies and accepts prolonged sound marks.
+Uninstall clears stored voice configuration independently of content retention. Disable removes module routes, static UI and provider registrations; configuration persists across disable/restart and is served only while enabled. Cognis gates retained schemas, cards and media by the live language provider, restoring access on re-enable. Reference results merge equivalent source identities while preserving source records, ordered readings and meanings. Packaged sentences prioritize dedicated whole-sentence recordings over constituent compositions. Speech requests validate normalized, bounded language text; KanjiVG cancels rejected response bodies and accepts prolonged sound marks.
+
+Sentence-structure carousels explicitly declare `excludeFromBrowse: false`, so their lexical words also appear in Vocabulary. Punctuation-only carousels remain excluded. Tests cover every sentence vocabulary reference, hidden pronunciation aliases and optional filter coverage, including unlevelled words such as ノート in Japanese.
+
+## Meaningful pills and JLPT filtering
+
+Learner pills show localized grammatical classes, common-use status and JLPT levels, while technical form and transformation tags stay internal. Vocabulary and Kanji now use source-checked levels; unlisted or ambiguous items remain unclassified. The packaged proficiency inventory records Jisho evidence, matches authored readings and meanings, and selects the earliest learning level when several lists apply.
+
+Kanji and Sentences offer the same compact N5–N1 filters as Vocabulary, with no automatic initial selection. Sentence levels are estimates based on the hardest referenced vocabulary, basic particle or selected transformation; an authored level can impose a grammar minimum. A sentence must include that level and no harder requirement to match it. Missing constituent levels remain unclassified and visible in the unfiltered view. Grammar estimates are provider-authored study targets, not official JLPT certification.
+
+## Generic difficulty profiles
+
+Both Study modules use the canonical `difficulty_level` field. Their identical normalizer and contract tests read `data/library/difficulty.json`; labels, ordered options, source tag mappings, basic-layer defaults and transformation requirements are data. Japanese presents JLPT N5–N1; English uses its existing beginner/intermediate/advanced categories. Unknown values remain unclassified. The host ranks declared fields without language-specific rules or alternate field names.
