@@ -38,3 +38,5 @@ Beide Study-Module verwenden das kanonische Feld `difficulty_level`. Identische 
 - [31035eeb](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/31035eeb63b25a5f20bf3f507cd6d37c3a5adcfb)
 
 Implementierungsnachweis: [`fe471e10010e1fb979701fa58970c1f9fe20a3ad`](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/fe471e10010e1fb979701fa58970c1f9fe20a3ad).
+
+Eigene vollständige Satzaufnahmen haben bei Kartenwiedergabe und Anbietersuche Vorrang. Exakt aus Einzelaufnahmen zusammengesetzte Aufnahmen bleiben für Sätze ohne eigene Aufnahme verfügbar, einschließlich gewählter grammatischer Formen. Fehlende Formen werden nie durch Grundformen ersetzt. Neue Sätze verwenden weiterhin die vom Host verwaltete Komposition und Zwischenspeicherung.

@@ -38,3 +38,5 @@ Both Study modules use the canonical `difficulty_level` field. Their identical n
 - [31035eeb](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/31035eeb63b25a5f20bf3f507cd6d37c3a5adcfb)
 
 Implementation reference: [`fe471e10010e1fb979701fa58970c1f9fe20a3ad`](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/fe471e10010e1fb979701fa58970c1f9fe20a3ad).
+
+Dedicated whole-sentence recordings take priority in both card playback and provider lookups. Exact constituent-composed recordings remain available for sentences without a dedicated recording, including selected grammatical forms; missing forms never substitute base-form clips. New sentences continue through host-owned composition and caching.

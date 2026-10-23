@@ -265,7 +265,7 @@ Bidang pelafalan kosakata menggunakan kontrak tautan tunggal `pronunciation-read
 
 Berkas WAV bawaan diperiksa checksum, format, dan integritas PCM-nya; pemeriksaan dengan mendengarkan dicatat terpisah dan dapat belum terverifikasi. `data/audio/recordings.json` mencantumkan rekaman dan gabungan audio yang tersedia. `data/audio/unavailable.json` secara jelas mencantumkan kartu tanpa audio bawaan; rekaman yang belum ada bukan URL pemutaran. Suara yang ditetapkan adalah `xya0RvcJtofTcFTOdX4E`. Kredensial dan alat pembuatan luring tidak disertakan.
 
-Pemutaran kalimat bawaan memprioritaskan gabungan PCM unsur yang tepat, termasuk bentuk tata bahasa yang dimaksud. Rekaman kalimat utuh yang dibuat terpisah tetap disimpan beserta asal-usulnya. Kalimat yang belum memiliki semua rekaman unsur yang tepat tidak mempunyai audio bawaan; bentuk yang hilang tidak diganti rekaman bentuk dasar.
+Rekaman khusus seluruh kalimat diprioritaskan pada pemutaran kartu dan pencarian penyedia. Rekaman yang disusun dari klip penyusun tetap tersedia untuk kalimat tanpa rekaman khusus, termasuk bentuk tata bahasa terpilih; bentuk yang hilang tidak diganti klip bentuk dasar. Kalimat baru tetap memakai komposisi dan cache milik host.
 
 Bootstrap mendaftarkan penyedia yang dapat dilepas melalui `study:audio:provider.registerProvider`. Kartu dan varian bawaan berfungsi tanpa ElevenLabs terpasang atau dikonfigurasi. Rekaman leksikal yang belum tersedia dapat memakai kapabilitas opsional `elevenlabs-tts:synthesis` yang sudah diatur; suara bawaan permintaan adalah suara bahasa yang ditetapkan, dengan penggantian suara administrator untuk sintesis baru. Kalimat baru tidak meminta sintesis kalimat utuh secara terpisah. Cognis mengelola otorisasi kartu global, cache, unggahan manual, serta kebijakan komposisi pribadi dan kelas. Hanya pelafalan utama yang dipilih.
 
@@ -285,7 +285,7 @@ Nomina sehari-hari mencakup furnitur, pakaian, benda, dan makanan, dilengkapi ma
 
 ## Kosakata Makanan dan Tubuh
 
-Pemutaran kalimat paket memakai PCM yang disusun persis dari klip penyusun, termasuk transformasi terpilih. Rekaman seluruh kalimat yang dihasilkan terpisah tetap diinventarisasi dengan asal suara dan permintaan asli, tetapi tidak menimpa rekaman komposisi. Kalimat baru tetap memakai komposisi dan cache milik host.
+Rekaman khusus seluruh kalimat diprioritaskan pada pemutaran kartu dan pencarian penyedia. Rekaman yang disusun dari klip penyusun tetap tersedia untuk kalimat tanpa rekaman khusus, termasuk bentuk tata bahasa terpilih; bentuk yang hilang tidak diganti klip bentuk dasar. Kalimat baru tetap memakai komposisi dan cache milik host.
 
 ## Inventaris Rekaman
 
@@ -293,7 +293,7 @@ Pemutaran kalimat paket memakai PCM yang disusun persis dari klip penyusun, term
 
 ## Normalisasi katalog eksplisit dan inventaris komposisi kalimat
 
-Pemutaran kalimat paket memakai PCM yang disusun persis dari klip penyusun, termasuk transformasi terpilih. Rekaman seluruh kalimat yang dihasilkan terpisah tetap diinventarisasi dengan asal suara dan permintaan asli, tetapi tidak menimpa rekaman komposisi. Kalimat baru tetap memakai komposisi dan cache milik host.
+Rekaman khusus seluruh kalimat diprioritaskan pada pemutaran kartu dan pencarian penyedia. Rekaman yang disusun dari klip penyusun tetap tersedia untuk kalimat tanpa rekaman khusus, termasuk bentuk tata bahasa terpilih; bentuk yang hilang tidak diganti klip bentuk dasar. Kalimat baru tetap memakai komposisi dan cache milik host.
 
 ## Label ilustrasi terlokalisasi dan nama aset netral
 
@@ -301,7 +301,7 @@ Nama berkas dan ID ilustrasi memakai digest SHA-256, sedangkan pengenal lembar s
 
 ## Tinjauan Akhir dan Akses Bahasa Nonaktif
 
-Pencopotan menghapus konfigurasi suara tanpa bergantung pada retensi konten. Penonaktifan menghapus rute modul, UI statis, dan registrasi penyedia; konfigurasi bertahan saat dinonaktifkan atau dimulai ulang dan hanya dilayani ketika aktif. Cognis membatasi skema, kartu, dan media tersimpan menurut penyedia bahasa aktif serta memulihkan akses saat diaktifkan kembali. Hasil referensi menggabungkan identitas sumber setara sambil mempertahankan rekaman sumber, urutan bacaan, dan makna. Kalimat paket mengutamakan PCM komposisi persis dari klip penyusun, sebelum rekaman langsung yang disimpan terpisah. Permintaan suara memvalidasi teks bahasa ternormalisasi dengan batas panjang; KanjiVG membatalkan isi respons gagal dan menerima tanda vokal panjang.
+Pencopotan menghapus konfigurasi suara tanpa bergantung pada retensi konten. Penonaktifan menghapus rute modul, UI statis, dan registrasi penyedia; konfigurasi bertahan saat dinonaktifkan atau dimulai ulang dan hanya dilayani ketika aktif. Cognis membatasi skema, kartu, dan media tersimpan menurut penyedia bahasa aktif serta memulihkan akses saat diaktifkan kembali. Hasil referensi menggabungkan identitas sumber setara sambil mempertahankan rekaman sumber, urutan bacaan, dan makna. Kalimat paket mengutamakan rekaman khusus seluruh kalimat sebelum komposisi klip penyusun. Permintaan suara memvalidasi teks bahasa ternormalisasi dengan batas panjang; KanjiVG membatalkan isi respons gagal dan menerima tanda vokal panjang.
 
 Carousel struktur kalimat secara eksplisit mendeklarasikan `excludeFromBrowse: false` agar kata leksikalnya juga muncul dalam Kosakata. Carousel khusus tanda baca tetap dikecualikan. Pengujian mencakup semua referensi kosakata kalimat, alias pelafalan tersembunyi, dan cakupan filter opsional, termasuk kata tanpa tingkat seperti ノート dalam bahasa Jepang.
 

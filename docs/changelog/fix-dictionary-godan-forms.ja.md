@@ -38,3 +38,5 @@
 - [31035eeb](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/31035eeb63b25a5f20bf3f507cd6d37c3a5adcfb)
 
 実装参照: [`fe471e10010e1fb979701fa58970c1f9fe20a3ad`](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/fe471e10010e1fb979701fa58970c1f9fe20a3ad).
+
+カード再生とプロバイダー検索では、文全体の専用録音を優先します。専用録音のない文には、選択した活用形を含む構成要素の正確な連結音声を使用します。未収録の活用形を原形の音声で代用しません。新しい文は引き続きホストによる合成とキャッシュを使用します。
