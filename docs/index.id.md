@@ -375,3 +375,11 @@ Detail, validasi kalimat, dan audio menggunakan resolver yang sama. Tampilan tur
 Kontrak penyedia publik mendeklarasikan `transformationModel: "generated"`; kedua modul bahasa mewajibkannya sebelum mendaftarkan penyedia. Setiap aturan keluarga aktif harus dapat diturunkan untuk sumber tersebut. Aturan dapat mendeklarasikan `resultClass` saat bentuk mengubah kelas gramatikal, misalnya adjektiva menjadi adverbia. Referensi eksplisit yang tidak valid ditolak alih-alih diganti bentuk dasar.
 
 Aturan Godan-gu dan Suru reguler mencakup verba kamus baru. Suru memakai alternatif akhiran berurutan untuk mendukung 勉強する maupun pangkal nominal 勉強 tanpa membuat kartu dasar terpisah. Ejaan dan pelafalan diperiksa untuk bentuk sopan, negatif, lampau, te, potensial, dan kausatif berantai.
+
+## Belajar Offline
+
+Study menyimpan snapshot JSON ringan dengan batas ukuran di tab saat ini: skema, data karakter/kartu yang diizinkan, lokasi, ID yang telah dilihat, favorit, dan dek yang pernah dibuka. Skema bahasa mengaktifkannya melalui `metadata.offline: { cache: "lightweight" }`. Cache Library menampung paling banyak 16 MB dan 100 pembacaan; cache baca lain paling banyak 4 MB dan 100 pembacaan. Byte audio, respons kamus, kredensial, dan dokumen terautentikasi tidak disimpan secara permanen.
+
+Pratinjau Explore menyelesaikan hubungan dari baris tersimpan yang telah diotorisasi. Menggambar bekerja secara lokal dengan panduan baru; latihan kartu dapat dilanjutkan secara lokal. Audio serta permintaan kamus/ElevenLabs dihentikan. Latihan offline tidak menyimpan progres, XP, hadiah, favorit, atau suntingan. Hanya konten yang pernah dimuat dan muat di cache yang tersedia; dependensi yang hilang tetap tidak tersedia.
+
+Study privat memerlukan sesi akun yang sama, pernah diverifikasi, dan belum kedaluwarsa di tab yang sama. Muat ulang dan kunjungan pertama tetap mengikuti kontrak offline khusus halaman publik. Perubahan akun/sesi, preferensi, siklus hidup modul, dan pelepasan penyedia membatalkan snapshot privat. Pencabutan akses server tidak dapat diketahui saat terputus. Pemulihan memakai penjaga perubahan yang belum disimpan lalu memuat ulang otorisasi server.

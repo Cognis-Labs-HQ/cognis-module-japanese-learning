@@ -373,3 +373,11 @@ Detailansichten, Satzprüfung und Audio nutzen denselben Resolver. Generierte An
 Der öffentliche Anbietervertrag deklariert `transformationModel: "generated"`; beide Sprachmodule verlangen dies vor der Anbieterregistrierung. Jede Regel einer aktivierten Gruppe muss für die Ausgangskarte auflösbar sein. Mit `resultClass` kann eine Regel die grammatische Klasse ändern, etwa vom Adjektiv zum Adverb. Ungültige explizite Referenzen scheitern, statt die Grundform einzusetzen.
 
 Reguläre Godan-gu- und Suru-Regeln erfassen neue Wörterbuchverben. Suru nutzt geordnete Suffixalternativen für 勉強する und den nominalen Stamm 勉強, ohne eine zusätzliche Grundkarte anzulegen. Genaue Schreibweisen und Lesungen werden für Höflichkeits-, Verneinungs-, Vergangenheits-, Te-, Möglichkeits- und verkettete Kausativformen geprüft.
+
+## Offline lernen
+
+Study behält begrenzte, kleine JSON-Schnappschüsse im aktuellen Tab: Schemas, erlaubte Zeichen- und Kartendaten, Speicherorte, gesehene IDs, Favoriten und zuvor geöffnete Kartensätze. Sprachschemas aktivieren dies mit `metadata.offline: { cache: "lightweight" }`. Der Library-Cache umfasst höchstens 16 MB und 100 Lesevorgänge; andere Lesecaches höchstens 4 MB und 100 Lesevorgänge. Audiodaten, Wörterbuchantworten, Zugangsdaten und authentifizierte Dokumente werden nicht dauerhaft gespeichert.
+
+Explore-Vorschauen ermitteln Beziehungen aus bereits autorisierten zwischengespeicherten Datensätzen. Zeichnen funktioniert lokal mit neuen Hilfslinien; Lernkarten lassen sich lokal üben. Audio sowie Wörterbuch- und ElevenLabs-Abfragen werden angehalten. Offline-Übungen speichern keinen Fortschritt, keine XP, Belohnungen, Favoriten oder Änderungen. Nur zuvor geladene Inhalte innerhalb der Cache-Grenzen sind verfügbar; fehlende Abhängigkeiten bleiben unerreichbar.
+
+Privates Study benötigt dieselbe zuvor bestätigte, noch gültige Kontositzung im selben Tab. Nach Neuladen und beim Erstbesuch gilt weiterhin der ausschließlich öffentliche Offline-Vertrag. Konto- und Sitzungswechsel, geänderte Einstellungen, Modul-Lebenszyklusänderungen und die Freigabe eines Anbieters verwerfen private Schnappschüsse. Serverseitige Sperren können ohne Verbindung nicht erkannt werden. Die Wiederherstellung prüft ungespeicherte Änderungen und lädt die Serverautorisierung neu.

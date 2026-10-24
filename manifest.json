@@ -2,7 +2,7 @@
     "id": "study-language-ja",
     "uuid": "e905927f-b133-572a-92ce-2ea8645e5ceb",
     "name": "module.study.language.ja.name",
-    "version": "4.0.1",
+    "version": "4.0.2",
     "class": "extension",
     "coreApiVersion": "v1",
     "capabilities": ["study:language:ja"],
@@ -9753,7 +9753,7 @@
         },
         {
             "path": "data/library/manifest.json",
-            "sha256": "983f0b0b3b430caacd8a3763ce7486493890fa57ef4e5bc3748b5a862cae4cbc"
+            "sha256": "27486604826d82a63327375c7dd5e4cca9d2d4516714b82b4019b6d04740f721"
         },
         {
             "path": "data/library/primary-readings.json",
@@ -9765,7 +9765,7 @@
         },
         {
             "path": "data/library/schema.json",
-            "sha256": "1257479f499f61d7774b4153bb42c0d845de219c6885e2de8be5831716db69be"
+            "sha256": "2f4504fb6d6f628f184e8ca1220550b78122419a348d062ebeec4f29269e7209"
         },
         {
             "path": "data/reference/00.json.gz",
@@ -10805,19 +10805,19 @@
         },
         {
             "path": "docs/index.de.md",
-            "sha256": "3d781993ace07486a931ffa27f7cecaf7fb6349a9c40fdabcb3b0ecfa3722d05"
+            "sha256": "26dfd2d1814ec04c134fe5537e7d55e65873666d0d1d8c027808b6bb8430df1f"
         },
         {
             "path": "docs/index.en.md",
-            "sha256": "3853ddb592da9f196f3fbad784a5ec9611c7792170ab1aaedc807cfd62d02179"
+            "sha256": "71a5fc2a69f5716c4a2890f75756b8e60328e239ed2557ac3a15b60023988f40"
         },
         {
             "path": "docs/index.id.md",
-            "sha256": "2d69eb94ff0cf52cdfbe8c8305213e836cffa3e0712d23880af8f2d4f1712f21"
+            "sha256": "6a2ff6277004b892045dcecbff9cb02cd0fa7ebdaa953876a185130fc4c01bcd"
         },
         {
             "path": "docs/index.ja.md",
-            "sha256": "79a9f00c767856843cc3c6b76e3668b283451e28e9e88076e97c65e3f01746d8"
+            "sha256": "3428e479cd6387dce2597b452f727f53b10a52c518c465c8ad7ec3e571b99a93"
         },
         {
             "path": "docs/jisho.de.md",
@@ -10837,11 +10837,11 @@
         },
         {
             "path": "package-lock.json",
-            "sha256": "712e67b263f570e4fa96dfd0681c8fcb89a433b0f129b3dc36c00e0d2e95c889"
+            "sha256": "e7cce497b593a4c2e68830bab281771439ecfdcce1e0d56ac3f4fcbb01caf175"
         },
         {
             "path": "package.json",
-            "sha256": "1649260cc98fc1756e90f7d89ab02b69a0279399a4b8cc2d4096acd1aa225014"
+            "sha256": "fd36c659384a5bdff5a89ad8f110ee1936b2131a52faf96b43b95e74884579e1"
         },
         {
             "path": "routes.json",
@@ -10998,6 +10998,10 @@
         {
             "path": "tests/material-feel-form-audio.test.js",
             "sha256": "cc042519480bf6a7b9e8eb223648f65ec955b89c7787c9f1892175beae405425"
+        },
+        {
+            "path": "tests/offline.test.js",
+            "sha256": "b6f8d707663c344cea60941133b9a66b04e465c0a6dc08e7d2fbb182c1e50956"
         },
         {
             "path": "tests/packaging.test.js",
