@@ -1,6 +1,6 @@
 {
     "id": "japanese-core",
-    "version": 116,
+    "version": 117,
     "namespace": "ja",
     "language": "ja",
     "metadata": {
@@ -13,6 +13,9 @@
         "provider": {
             "id": "study-language-ja",
             "stable": true
+        },
+        "offline": {
+            "cache": "lightweight"
         }
     },
     "layers": [
