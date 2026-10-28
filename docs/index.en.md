@@ -373,3 +373,7 @@ Detail views, sentence validation and audio use the same resolver. Generated vie
 The public provider contract declares `transformationModel: "generated"`; both language modules require it before registering providers. Every rule in an enabled family must resolve for that source. Rules may declare `resultClass` when a form changes grammatical class, such as an adjective becoming an adverb. Explicit invalid references fail rather than substituting the root.
 
 Regular Godan-gu and Suru rules cover new dictionary verbs. Suru uses ordered suffix alternatives to support both 勉強する and the nominal stem 勉強, without creating a separate root card. Exact spelling and reading checks cover polite, negative, past, te, potential and chained causative forms.
+
+## Lightweight Study Metadata
+
+The bundled Library schema declares `metadata.offline.cache: "lightweight"`, identifying its lightweight JSON data for Cognis Study caching. Cognis owns cache scheduling, storage, navigation and practice behavior. The schema and content-pack revisions advance with this metadata change.

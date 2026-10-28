@@ -375,3 +375,7 @@ Detail, validasi kalimat, dan audio menggunakan resolver yang sama. Tampilan tur
 Kontrak penyedia publik mendeklarasikan `transformationModel: "generated"`; kedua modul bahasa mewajibkannya sebelum mendaftarkan penyedia. Setiap aturan keluarga aktif harus dapat diturunkan untuk sumber tersebut. Aturan dapat mendeklarasikan `resultClass` saat bentuk mengubah kelas gramatikal, misalnya adjektiva menjadi adverbia. Referensi eksplisit yang tidak valid ditolak alih-alih diganti bentuk dasar.
 
 Aturan Godan-gu dan Suru reguler mencakup verba kamus baru. Suru memakai alternatif akhiran berurutan untuk mendukung 勉強する maupun pangkal nominal 勉強 tanpa membuat kartu dasar terpisah. Ejaan dan pelafalan diperiksa untuk bentuk sopan, negatif, lampau, te, potensial, dan kausatif berantai.
+
+## Metadata Study Ringan
+
+Skema Library bawaan mendeklarasikan `metadata.offline.cache: "lightweight"`, menandai data JSON ringannya untuk cache Cognis Study. Cognis mengelola jadwal cache, penyimpanan, navigasi, dan perilaku latihan. Revisi skema dan paket konten dinaikkan bersama perubahan metadata ini.

@@ -373,3 +373,7 @@ Detailansichten, Satzprüfung und Audio nutzen denselben Resolver. Generierte An
 Der öffentliche Anbietervertrag deklariert `transformationModel: "generated"`; beide Sprachmodule verlangen dies vor der Anbieterregistrierung. Jede Regel einer aktivierten Gruppe muss für die Ausgangskarte auflösbar sein. Mit `resultClass` kann eine Regel die grammatische Klasse ändern, etwa vom Adjektiv zum Adverb. Ungültige explizite Referenzen scheitern, statt die Grundform einzusetzen.
 
 Reguläre Godan-gu- und Suru-Regeln erfassen neue Wörterbuchverben. Suru nutzt geordnete Suffixalternativen für 勉強する und den nominalen Stamm 勉強, ohne eine zusätzliche Grundkarte anzulegen. Genaue Schreibweisen und Lesungen werden für Höflichkeits-, Verneinungs-, Vergangenheits-, Te-, Möglichkeits- und verkettete Kausativformen geprüft.
+
+## Leichte Study-Metadaten
+
+Das mitgelieferte Library-Schema deklariert `metadata.offline.cache: "lightweight"` und kennzeichnet damit seine kleinen JSON-Daten für den Study-Cache von Cognis. Cognis verwaltet Cacheplanung, Speicherung, Navigation und Übungsverhalten. Die Schema- und Inhaltspaketrevisionen werden mit dieser Metadatenänderung erhöht.
