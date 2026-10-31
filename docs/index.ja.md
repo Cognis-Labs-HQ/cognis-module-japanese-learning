@@ -379,3 +379,7 @@ Study は公開の発音分類とスタイルを提供し、Library のプレビ
 ## 軽量 Study メタデータ
 
 同梱の Library スキーマは `metadata.offline.cache: "lightweight"` を宣言し、軽量な JSON データを Cognis Study のキャッシュ対象として示します。キャッシュの実行時期、保存、ナビゲーション、練習動作は Cognis が管理します。このメタデータ変更に合わせてスキーマとコンテンツパックのリビジョンを更新します。
+
+## ガイド付きチュートリアル
+
+[ガイド付きチュートリアル](tutorials.ja.md)

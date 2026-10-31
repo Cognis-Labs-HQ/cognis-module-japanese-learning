@@ -377,3 +377,7 @@ Regular Godan-gu and Suru rules cover new dictionary verbs. Suru uses ordered su
 ## Lightweight Study Metadata
 
 The bundled Library schema declares `metadata.offline.cache: "lightweight"`, identifying its lightweight JSON data for Cognis Study caching. Cognis owns cache scheduling, storage, navigation and practice behavior. The schema and content-pack revisions advance with this metadata change.
+
+## Guided tutorial
+
+[Guided tutorial](tutorials.en.md)
