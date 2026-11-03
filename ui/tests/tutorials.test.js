@@ -73,6 +73,8 @@ function fixture({ fail = false } = {}) {
             "study:tutorialTargets",
             {
                 navigation: "study:navigation",
+                matchesPage: ({ pathname, language }) =>
+                    pathname === `/study/${language}/flashcards`,
                 route: async (input) => {
                     routes.push(input);
                     return `/resolved/${input.language}/${input.area}`;
@@ -117,6 +119,13 @@ test("the module contributes a localized, permission-aware play through the publ
     assert.equal(typeof dispose, "function");
     assert.ok(state.published.has(`${manifest.id}:tutorials`));
     assert.equal(state.play.version, 1);
+    assert.equal(
+        state.play.page({
+            pathname: `/study/${manifest.id.slice(-2)}/flashcards`,
+        }),
+        true,
+    );
+    assert.equal(state.play.page({ pathname: "/settings" }), false);
     assert.ok(state.play.steps.length >= 2);
     assert.equal(state.play.available(), true);
     for (const step of state.play.steps) {

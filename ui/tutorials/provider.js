@@ -18,6 +18,7 @@ export async function mountProvider(ctx) {
         };
         const registered = await owner.register({
             ...play,
+            page: ({ pathname }) => study.matchesPage({ pathname, language }),
             available: () =>
                 ctx.capabilities.get("session:isAuthenticated")?.() === true,
             requires: [
