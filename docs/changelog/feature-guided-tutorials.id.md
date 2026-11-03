@@ -17,3 +17,4 @@ Host mengelola petunjuk, panah, sorotan, aksesibilitas, dan menu aksi mengambang
 ## Komit
 
 - [9eb04a5](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/9eb04a52924608bec3a943121d169c9b09e5a59d)
+- [6429024](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/64290246cd5ef8567402e71e22921a3e28f36d76)
