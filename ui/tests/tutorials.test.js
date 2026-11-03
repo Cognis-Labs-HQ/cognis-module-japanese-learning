@@ -138,6 +138,8 @@ test("the module contributes a localized, permission-aware play through the publ
             [step.titleKey, step.bodyKey].filter(Boolean),
         ),
     ];
+    for (const key of keys)
+        assert.ok(key.startsWith(`module.${manifest.id}.tutorial.`), key);
     for (const locale of ["en", "de", "id", "ja"]) {
         const xml = readFileSync(
             new URL(`../languages/${locale}/strings.xml`, import.meta.url),

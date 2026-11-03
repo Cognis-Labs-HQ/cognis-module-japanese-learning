@@ -14,6 +14,10 @@ Provider tests check the public contract, all four translations, availability ru
 
 The host owns callouts, arrows, spotlight, accessibility and the shared floating action menu. First-time runs offer Next throughout, without Cancel or Skip. Replays offer Cancel with `btn-cancel`. Completion is stored per account in the browser. Navigation, access loss and provider removal release the session; failed mounts roll back registrations.
 
+## Module Translation Keys
+
+Tutorial translation keys use the complete manifest module ID as one namespace segment, including its hyphens.
+
 ## Commits
 
 - [9eb04a5](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/9eb04a52924608bec3a943121d169c9b09e5a59d)
