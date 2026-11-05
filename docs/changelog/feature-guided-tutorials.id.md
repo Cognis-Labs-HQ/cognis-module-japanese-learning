@@ -18,6 +18,10 @@ Host mengelola petunjuk, panah, sorotan, aksesibilitas, dan menu aksi mengambang
 
 Kunci terjemahan tutorial memakai ID modul manifes lengkap beserta tanda hubungnya sebagai satu segmen ruang nama.
 
+## Petunjuk Yang Berguna
+
+Langkah tutorial berfokus pada kontrol dan tugas yang tersedia, tanpa pernyataan yang tidak relevan tentang izin atau tindakan yang tidak dilakukan panduan.
+
 ## Komit
 
 - [9eb04a5](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/9eb04a52924608bec3a943121d169c9b09e5a59d)

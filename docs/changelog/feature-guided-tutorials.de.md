@@ -18,6 +18,10 @@ Der Host verwaltet Hinweise, Pfeile, Hervorhebung, Barrierefreiheit und das geme
 
 Die Übersetzungsschlüssel der Anleitung verwenden die vollständige Modul-ID des Manifests einschließlich Bindestrichen als ein Namensraumsegment.
 
+## Konkrete Anleitungstexte
+
+Die Schritte beschreiben verfügbare Bedienelemente und Aufgaben, ohne sachfremde Zusicherungen über Berechtigungen oder nicht ausgeführte Aktionen.
+
 ## Commits
 
 - [9eb04a5](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/9eb04a52924608bec3a943121d169c9b09e5a59d)
