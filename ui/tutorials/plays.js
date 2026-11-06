@@ -6,6 +6,7 @@ export const definition = {
     titleKey: "module.study-language-ja.tutorial.title",
     steps: [
         {
+            highlightNext: true,
             id: "welcome",
             titleKey: "module.study-language-ja.tutorial.welcome.title",
             bodyKey: "module.study-language-ja.tutorial.welcome.body",
@@ -21,6 +22,7 @@ export const definition = {
             route: "overview",
         },
         {
+            highlightNext: true,
             id: "explore",
             titleKey: "module.study-language-ja.tutorial.explore.title",
             bodyKey: "module.study-language-ja.tutorial.explore.body",
@@ -37,6 +39,7 @@ export const definition = {
             target: "study.navigation",
         },
         {
+            highlightNext: true,
             id: "practice",
             titleKey: "module.study-language-ja.tutorial.practice.title",
             bodyKey: "module.study-language-ja.tutorial.practice.body",

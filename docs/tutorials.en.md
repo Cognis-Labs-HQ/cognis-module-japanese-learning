@@ -11,3 +11,5 @@ Explore and Flashcards routes are resolved by Study’s public `study:tutorialTa
 The host owns callouts, arrows, spotlight, accessibility and the shared floating action menu. First-time runs offer Next throughout, without Cancel or Skip. Replays offer Cancel with `btn-cancel`. Completion is stored per account in the browser. Navigation, access loss and provider removal release the session; failed mounts roll back registrations.
 
 The play is informational and never performs a privileged action. Missing targets allow Next during the first run and Retry or Cancel on replay.
+
+Each tutorial step now explicitly declares `highlightNext`: explanations that require Next or Finish enable it, while interaction- and wait-driven exercises disable it. The cue retains a static outline for reduced motion.

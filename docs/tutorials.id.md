@@ -11,3 +11,5 @@ Rute Explore dan Flashcards diselesaikan melalui kapabilitas publik Study `study
 Host mengelola petunjuk, panah, sorotan, aksesibilitas, dan menu aksi mengambang bersama. Sesi pertama selalu menyediakan Berikutnya, tanpa Batal atau Lewati. Pemutaran ulang menyediakan Batal dengan `btn-cancel`. Penyelesaian disimpan di browser per akun. Navigasi, hilangnya akses, atau pelepasan penyedia mengakhiri sesi; pemasangan gagal membatalkan registrasi.
 
 Panduan hanya memberi informasi dan tidak menjalankan aksi berizin khusus. Target yang hilang dapat dilewati dengan Berikutnya pada sesi pertama, atau dicoba lagi maupun dibatalkan saat pemutaran ulang.
+
+Setiap langkah tutorial kini menetapkan `highlightNext` secara eksplisit: penjelasan yang memerlukan Berikutnya atau Selesai mengaktifkannya, sedangkan latihan berbasis interaksi atau penantian menonaktifkannya. Pengurangan gerakan mempertahankan garis tepi statis.
