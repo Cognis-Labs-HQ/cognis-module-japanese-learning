@@ -28,6 +28,18 @@ Setiap langkah tutorial kini menetapkan `highlightNext` secara eksplisit: penjel
 
 Setiap komponen antarmuka wajib dicakup tutorial. Panduan kontribusi mengharuskan alur tugas yang berfokus pada pengguna dan peninjauan tutorial setiap kali fitur atau perilaku antarmuka berubah.
 
+## Wilayah tutorial yang terlihat
+
+Wilayah tutorial dan isyarat Berikutnya ditetapkan secara eksplisit.
+
+## Antrean menu mengambang bersama
+
+Menu mengikuti antrean host bersama dan masa hidup komponen.
+
+## Kontrol pemulihan yang didokumentasikan
+
+Tampilan target hilang menyediakan Berikutnya dan Mulai Ulang Tutorial; pemutaran ulang juga menyediakan Batal.
+
 ## Komit
 
 - [9eb04a5](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/9eb04a52924608bec3a943121d169c9b09e5a59d)

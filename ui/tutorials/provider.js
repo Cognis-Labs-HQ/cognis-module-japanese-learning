@@ -13,8 +13,9 @@ export async function mountProvider(ctx) {
         const study = ctx.capabilities.get("study:tutorialTargets");
         if (!study) throw new Error("study_tutorial_targets_unavailable");
         const targets = {
-            workspace: "ui.workspace:workspace",
+            workspace: "ui.workspace:widgets",
             "study.navigation": study.navigation,
+            "study.languages": study.languages,
         };
         const registered = await owner.register({
             ...play,

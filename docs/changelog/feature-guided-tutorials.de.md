@@ -28,6 +28,18 @@ Jeder Tutorial-Schritt legt `highlightNext` ausdrücklich fest: Erklärungen, di
 
 Alle UI-Komponenten benötigen eine Anleitung. Die Beitragsrichtlinien verlangen nutzerorientierte Aufgabenabläufe und eine Prüfung bestehender Anleitungen bei neuen Funktionen oder geänderter Bedienung.
 
+## Sichtbare Tutorial-Ziele
+
+Tutorial-Ziele und Weiter-Hinweise sind ausdrücklich festgelegt.
+
+## Gemeinsame Menüwarteschlange
+
+Menüs folgen der gemeinsamen Host-Warteschlange und der Komponentenlebensdauer.
+
+## Dokumentierte Wiederherstellungsaktionen
+
+Bei fehlenden Zielen stehen Weiter und Tutorial neu starten bereit; Wiederholungen bieten auch Abbrechen.
+
 ## Commits
 
 - [9eb04a5](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/9eb04a52924608bec3a943121d169c9b09e5a59d)

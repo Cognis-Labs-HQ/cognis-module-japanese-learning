@@ -28,6 +28,18 @@ Each tutorial step now explicitly declares `highlightNext`: explanations that re
 
 Tutorial coverage is required for every UI-facing component. Contributor guidance requires user-first, task-focused walkthroughs and a review of existing tutorials whenever features or UI behavior change.
 
+## Visible tutorial regions
+
+Tutorial regions and Next cues are authored explicitly.
+
+## Shared floating-menu queue
+
+Menus follow the shared queued host contract and component lifetime.
+
+## Documented recovery controls
+
+Missing-target views provide Next and Restart Tutorial; replay also provides Cancel.
+
 ## Commits
 
 - [9eb04a5](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/9eb04a52924608bec3a943121d169c9b09e5a59d)

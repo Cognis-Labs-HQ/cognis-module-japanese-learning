@@ -10,6 +10,6 @@ Explore- und Lernkarten-Routen werden über Studys öffentliche Capability `stud
 
 Der Host verwaltet Hinweise, Pfeile, Hervorhebung, Barrierefreiheit und das gemeinsame schwebende Aktionsmenü. Erstdurchläufe bieten stets Weiter, ohne Abbrechen oder Überspringen. Wiederholungen bieten Abbrechen mit `btn-cancel`. Der Abschluss wird im Browser pro Konto gespeichert. Navigation, Zugriffsverlust und Anbieterentfernung beenden die Sitzung; fehlgeschlagenes Mounten nimmt Registrierungen zurück.
 
-Der Ablauf erklärt nur und führt keine privilegierte Aktion aus. Fehlende Ziele erlauben Weiter im Erstdurchlauf sowie Wiederholen oder Abbrechen bei erneuter Wiedergabe.
+Tutorial-Ziele und Weiter-Hinweise sind ausdrücklich festgelegt. Menüs folgen der gemeinsamen Host-Warteschlange und der Komponentenlebensdauer. Bei fehlenden Zielen stehen Weiter und Tutorial neu starten bereit; Wiederholungen bieten auch Abbrechen.
 
 Jeder Tutorial-Schritt legt `highlightNext` ausdrücklich fest: Erklärungen, die Weiter oder Fertig benötigen, aktivieren den Hinweis; interaktive und wartebasierte Übungen deaktivieren ihn. Bei reduzierter Bewegung bleibt eine statische Umrandung.
