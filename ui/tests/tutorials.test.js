@@ -74,8 +74,8 @@ function fixture({ fail = false } = {}) {
             {
                 navigation: "study:navigation",
                 languages: "study:languages",
-                matchesPage: ({ pathname, language }) =>
-                    pathname === `/study/${language}/flashcards`,
+                modules: "study:modules",
+                matchesPage: ({ pathname, language }) => pathname === "/study",
                 route: async (input) => {
                     routes.push(input);
                     return `/resolved/${input.language}/${input.area}`;
@@ -122,12 +122,16 @@ test("the module contributes a localized, permission-aware play through the publ
     assert.equal(state.play.version, 1);
     assert.equal(
         state.play.page({
-            pathname: `/study/${manifest.id.slice(-2)}/flashcards`,
+            pathname: "/study",
         }),
         true,
     );
     assert.equal(state.play.page({ pathname: "/settings" }), false);
-    assert.ok(state.play.steps.length >= 2);
+    assert.ok(state.play.steps.length >= 1);
+    assert.equal(
+        new Set(state.play.steps.map((step) => step.target)).size,
+        state.play.steps.length,
+    );
     assert.equal(state.play.available(), true);
     for (const step of state.play.steps) {
         assert.ok(step.effects.arrow && step.effects.spotlight, step.id);
@@ -166,21 +170,17 @@ test("the module contributes a localized, permission-aware play through the publ
     state.authenticate(false);
     assert.equal(state.play.available(), false);
     state.authenticate(true);
-    if (manifest.id.startsWith("study-language-")) {
-        for (const step of state.play.steps) await step.route();
-        assert.deepEqual(
-            state.routes.map((route) => route.area),
-            ["overview", "explore", "flashcards"],
-        );
-        assert.ok(
-            state.routes.every(
-                (route) => route.language === manifest.id.slice(-2),
-            ),
-        );
-    } else {
-        state.disconnect(true);
-        assert.equal(state.play.available(), false);
-    }
+    assert.equal(state.play.automatic, false);
+    assert.equal(
+        new Set(state.play.steps.map((step) => step.target)).size,
+        state.play.steps.length,
+    );
+    for (const pathname of [
+        "/study/explore/ja/kana",
+        "/study/explore/ja/kanji",
+        "/study/en/flashcards",
+    ])
+        assert.equal(state.play.page({ pathname }), false);
     dispose();
     assert.equal(state.disposed, true);
 });

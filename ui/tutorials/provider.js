@@ -13,23 +13,19 @@ export async function mountProvider(ctx) {
         const study = ctx.capabilities.get("study:tutorialTargets");
         if (!study) throw new Error("study_tutorial_targets_unavailable");
         const targets = {
-            workspace: "ui.workspace:widgets",
             "study.navigation": study.navigation,
             "study.languages": study.languages,
+            "study.modules": study.modules,
         };
         const registered = await owner.register({
             ...play,
+            automatic: false,
             page: ({ pathname }) => study.matchesPage({ pathname, language }),
             available: () =>
                 ctx.capabilities.get("session:isAuthenticated")?.() === true,
-            requires: [
-                "ui:navigate",
-                "study:tutorialTargets",
-                "study:library:client",
-            ],
-            steps: play.steps.map(({ route: area, target, ...step }) => ({
+            requires: ["study:tutorialTargets"],
+            steps: play.steps.map(({ target, ...step }) => ({
                 ...step,
-                route: () => study.route({ language, area }),
                 ...(target ? { target: targets[target] } : {}),
             })),
         });

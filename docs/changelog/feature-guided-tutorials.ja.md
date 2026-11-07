@@ -40,6 +40,10 @@ Explore と Flashcards の経路は Study の公開機能 `study:tutorialTargets
 
 対象がない画面では「次へ」と最初からやり直す操作を提供し、再実行では中止も選べます。
 
+## 目的の明確なガイド
+
+表示順に沿って異なる可視操作を説明します。共通指針は画面状態の検出、安定した例、空の状態、条件付き分岐、ライフサイクルの後処理を扱います。再実行操作と動きを減らす設定の文書をホストと一致させます。
+
 ## コミット
 
 - [9eb04a5](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/9eb04a52924608bec3a943121d169c9b09e5a59d)

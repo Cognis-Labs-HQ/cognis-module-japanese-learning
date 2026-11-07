@@ -20,7 +20,6 @@ export const definition = {
                 timeoutMs: 5000,
                 action: "retry",
             },
-            route: "overview",
         },
         {
             highlightNext: true,
@@ -36,7 +35,6 @@ export const definition = {
                 timeoutMs: 5000,
                 action: "retry",
             },
-            route: "explore",
             target: "study.navigation",
         },
         {
@@ -53,8 +51,7 @@ export const definition = {
                 timeoutMs: 5000,
                 action: "retry",
             },
-            route: "flashcards",
-            target: "workspace",
+            target: "study.modules",
         },
     ],
 };
