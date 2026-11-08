@@ -9,3 +9,5 @@ Pada ringkasan Study, gunakan navigasi bahasa untuk memilih bahan belajar dan na
 ## Spesifikasi Teknis
 
 Host bersama menyediakan aksi mengambang melalui antreannya. Kunjungan awal menawarkan Berikutnya/Selesai tanpa Batal atau Lewati; pemutaran ulang menawarkan Lewati sebelum tahap terlihat terakhir. Mulai Ulang Tutorial muncul setelah tahap terlihat pertama. Penyelesaian tetap berlaku setelah pembaruan konten. Flag highlightNext hanya mengaktifkan animasi berdenyut untuk penjelasan; pengurangan gerakan menonaktifkannya. Setiap tahap menyorot kontrol nyata berbeda sesuai urutan UI. Panduan tetap terikat ke tampilan aktif, menangani keadaan kosong dan opsional, serta membersihkan sumber daya saat navigasi atau pelepasan pemilik.
+
+Panduan bahasa hanya tersedia setelah pendaftaran eksplisit di pengaturan Belajar. Pengantar pendaftaran yang berulang dihapus; panduan dimulai dengan Jelajahi lalu alat latihan.

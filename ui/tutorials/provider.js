@@ -22,7 +22,8 @@ export async function mountProvider(ctx) {
             automatic: false,
             page: ({ pathname }) => study.matchesPage({ pathname, language }),
             available: () =>
-                ctx.capabilities.get("session:isAuthenticated")?.() === true,
+                ctx.capabilities.get("session:isAuthenticated")?.() === true &&
+                study.isEnrolled(language) === true,
             requires: ["study:tutorialTargets"],
             steps: play.steps.map(({ target, ...step }) => ({
                 ...step,

@@ -44,6 +44,10 @@ Missing-target views provide Next and Restart Tutorial; replay also provides Can
 
 Tutorials explain distinct visible controls in UI order. Shared guidance covers active-view discovery, stable examples, empty states, conditional branches and lifecycle cleanup. Replay controls and reduced-motion documentation match the shared host.
 
+## Focused Walkthrough
+
+Language guides are available only after explicit enrollment in Study settings. The redundant enrollment introduction is removed; the guide begins with Explore and continues to practice tools.
+
 ## Commits
 
 - [9eb04a5](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/9eb04a52924608bec3a943121d169c9b09e5a59d)

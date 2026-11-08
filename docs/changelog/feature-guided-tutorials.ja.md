@@ -44,6 +44,10 @@ Explore と Flashcards の経路は Study の公開機能 `study:tutorialTargets
 
 表示順に沿って異なる可視操作を説明します。共通指針は画面状態の検出、安定した例、空の状態、条件付き分岐、ライフサイクルの後処理を扱います。再実行操作と動きを減らす設定の文書をホストと一致させます。
 
+## 操作に沿ったガイド
+
+言語ガイドは学習設定で明示的に登録した後だけに表示します。登録済みであることを前提に、探索から練習ツールへ進みます。
+
 ## コミット
 
 - [9eb04a5](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/9eb04a52924608bec3a943121d169c9b09e5a59d)

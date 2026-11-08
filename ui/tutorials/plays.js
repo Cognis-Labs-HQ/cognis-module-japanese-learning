@@ -7,22 +7,6 @@ export const definition = {
     steps: [
         {
             highlightNext: true,
-            id: "welcome",
-            target: "study.languages",
-            titleKey: "module.study-language-ja.tutorial.welcome.title",
-            bodyKey: "module.study-language-ja.tutorial.welcome.body",
-            effects: {
-                callout: true,
-                arrow: true,
-                spotlight: true,
-            },
-            missing: {
-                timeoutMs: 5000,
-                action: "retry",
-            },
-        },
-        {
-            highlightNext: true,
             id: "explore",
             titleKey: "module.study-language-ja.tutorial.explore.title",
             bodyKey: "module.study-language-ja.tutorial.explore.body",

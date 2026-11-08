@@ -72,6 +72,7 @@ function fixture({ fail = false } = {}) {
         [
             "study:tutorialTargets",
             {
+                isEnrolled: () => true,
                 navigation: "study:navigation",
                 languages: "study:languages",
                 modules: "study:modules",
@@ -199,4 +200,18 @@ test("an unsupported host contract is rejected before allocating an owner", asyn
         mountProvider(state.ctx),
         /tutorial_contract_unavailable/,
     );
+});
+
+test("language guides are offered only after explicit enrollment", async () => {
+    const state = fixture();
+    const study = state.capabilities.get("study:tutorialTargets");
+    let enrolled = false;
+    study.isEnrolled = () => enrolled;
+    const dispose = await mountProvider(state.ctx);
+    assert.equal(state.play.available(), false);
+    enrolled = true;
+    assert.equal(state.play.available(), true);
+    enrolled = false;
+    assert.equal(state.play.available(), false);
+    dispose();
 });
