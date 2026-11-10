@@ -61,3 +61,4 @@ Language guides are available only after explicit enrollment in Study settings. 
 - [646a16c12](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/646a16c12d8bfa98ca71b09a074fa70d505851e5)
 - [028167419](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/028167419f103c6d3b2bb9df4ff25a47f3e06080)
 - [3aa7d0981](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/3aa7d0981544552f9cbb1fbf153328b5ff064ede)
+- [f102f36dc](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/f102f36dc038d1858c0fcd89afae3da0298aeea4)
