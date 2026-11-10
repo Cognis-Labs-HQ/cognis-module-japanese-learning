@@ -1,13 +1,13 @@
-# Geführtes Tutorial
+# Geführte Anleitung
 
-Diese Spracheinführung ergänzt die Study-Übersicht und wird über ? gewählt. Drei unterschiedliche Ziele erklären Sprachwahl, Aktivitätsnavigation und verfügbare Module ohne Seitenwechsel. Explore- und Flashcards-Anleitungen gehören zur aktuellen Host-Ansicht.
+Die Study-Übersicht erklärt Navigation und allgemeine Funktionen. Dieser Sprachleitfaden erkundet echte Inhalte: Ebenen, Filter, dieselbe Favoritenkarte, Details, verfügbare Aussprache, Zeichenübungen und Kartenerstellung.
 
-## Anwendungsbeispiele
+## Verwendung
 
-Wähle auf der Study-Übersicht über die Sprachnavigation Lernmaterialien und finde Explore oder Flashcards über die Aktivitätsnavigation. Die ergänzende Anleitung erklärt diese Bedienelemente ohne Seitenwechsel. Jede Aktivität bietet ihre eigene kontextbezogene Führung.
+Wählen Sie die Sprache in den Lerneinstellungen. Auf Explore startet die erste Anleitung; über ? auf der Übersicht ist der Sprachleitfaden manuell wählbar. Diese bewusste Auswahl öffnet Sprachinhalte. Bereits geöffnete Explore-Ebenen bleiben erhalten. Abgeschlossene Leitfäden starten nur über ? erneut.
+
+Öffnen Sie die markierte Karte für Details und wählen Sie Zeichnen, falls verfügbar. Weiter überspringt ungeöffnete Zweige. Die Kartenerstellung öffnet Typauswahl und Editor und kann zu einer geeigneten Ebene wechseln. Keine Karte wird automatisch gespeichert. Zurück, Neustart und Abschluss schließen Ansichten mit normaler Verwerfungsbestätigung.
 
 ## Technische Spezifikation
 
-Der gemeinsame Host stellt schwebende Aktionen über seine Warteschlange bereit. Erstbesuche bieten Weiter/Fertig ohne Abbrechen oder Überspringen; Wiederholungen bieten Überspringen vor dem letzten sichtbaren Schritt. Neustart erscheint nach dem ersten sichtbaren Schritt. Abschlüsse bleiben nach Inhaltsänderungen gültig. Ausdrückliche highlightNext-Angaben aktivieren nur die Atemanimation für Erklärungen; reduzierte Bewegung deaktiviert sie. Jeder Schritt hebt ein anderes reales Bedienelement in UI-Reihenfolge hervor. Anleitungen bleiben an die aktuelle Ansicht gebunden, behandeln leere und optionale Zustände und räumen bei Navigation oder Besitzerentfernung auf.
-
-Sprachanleitungen stehen erst nach ausdrücklicher Einschreibung in den Study-Einstellungen bereit. Die überflüssige Einschreibungseinführung entfällt; die Anleitung beginnt mit Erkunden und führt zu Übungswerkzeugen.
+Das Modul registriert seine stabile Anleitung `introduction` über `study:libraryTutorials` Version 1 mit gekapseltem ctx und eigenen Katalogen in vier Sprachen. Library besitzt Ziele, Abläufe und Lebensdauer; das Modul liefert sprachbezogene Texte. Nur ausdrücklich gewählte Lernsprachen sind berechtigt. Die Variante ersetzt allgemeines Library Explore auf ihren Sprachseiten, damit sich keine Anleitungen stapeln. Entfernung gibt die Registrierung frei und stellt den Ersatz wieder her.

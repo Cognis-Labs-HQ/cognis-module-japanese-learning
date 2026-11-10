@@ -2,6 +2,8 @@
 
 **Feature Branch:** feature-guided-tutorials
 
+Study separates its general navigation guide from language content guides. Enrolled language guides replace generic Explore and walk through real card details, drawing and card creation using conditional branches and scoped lifetimes.
+
 ## Technical Specification
 
 Explore and Flashcards routes are resolved by Study’s public `study:tutorialTargets` capability. The language module contributes language data and plays only; Cognis retains route, enrollment, cache and learning UI ownership. English and Japanese use the same provider implementation. Cached content can be explained offline. Targets that are missing after navigation follow the host missing-target policy.

@@ -2,6 +2,8 @@
 
 **Feature Branch:** feature-guided-tutorials
 
+Study trennt allgemeine Navigation von Sprachinhalten. Leitfäden für gewählte Lernsprachen ersetzen allgemeines Explore und erklären echte Kartendetails, Zeichnen und Kartenerstellung mit bedingten Zweigen und begrenzter Lebensdauer.
+
 ## Technische Spezifikation
 
 Explore- und Lernkarten-Routen werden über Studys öffentliche Capability `study:tutorialTargets` aufgelöst. Das Sprachmodul liefert nur Sprachdaten und Abläufe; Cognis bleibt für Routen, Einschreibungen, Cache und Lernoberfläche zuständig. Englisch und Japanisch verwenden dieselbe Anbieterimplementierung. Zwischengespeicherte Inhalte lassen sich offline erklären. Nach der Navigation fehlende Ziele folgen der Fehlzielrichtlinie des Hosts.

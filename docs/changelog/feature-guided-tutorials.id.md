@@ -2,6 +2,8 @@
 
 **Feature Branch:** feature-guided-tutorials
 
+Study memisahkan panduan navigasi umum dari konten bahasa. Panduan bahasa yang diikuti menggantikan Explore umum dan menjelaskan detail kartu, menggambar, dan pembuatan kartu melalui cabang bersyarat serta masa hidup terlingkup.
+
 ## Spesifikasi Teknis
 
 Rute Explore dan Flashcards diselesaikan melalui kapabilitas publik Study `study:tutorialTargets`. Modul bahasa hanya menyumbangkan data bahasa dan alur; Cognis tetap mengelola rute, pendaftaran bahasa, cache dan antarmuka belajar. Bahasa Inggris dan Jepang memakai implementasi penyedia yang sama. Konten dalam cache dapat dijelaskan saat offline. Target yang hilang setelah navigasi mengikuti kebijakan host.

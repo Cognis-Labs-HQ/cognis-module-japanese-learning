@@ -1,13 +1,13 @@
-# Tutorial terpandu
+# Tutorial Terpandu
 
-Pengantar bahasa melengkapi ringkasan Study dan dipilih melalui ?. Tiga target berbeda menjelaskan pilihan bahasa, navigasi aktivitas, dan modul tersedia tanpa berpindah halaman. Panduan Explore dan Flashcards terikat ke tampilan host aktif.
+Panduan ringkasan Study menjelaskan navigasi dan fitur umum. Panduan bahasa ini menjelajahi konten nyata: lapisan, filter, satu contoh favorit/kartu tetap, detail, audio tersedia, latihan menggambar, dan pembuatan kartu.
 
-## Contoh Penggunaan
+## Penggunaan
 
-Pada ringkasan Study, gunakan navigasi bahasa untuk memilih bahan belajar dan navigasi aktivitas untuk menemukan Explore atau Flashcards. Panduan tambahan ini menjelaskan kontrol tersebut tanpa berpindah halaman. Setiap aktivitas menyediakan panduan kontekstualnya sendiri.
+Ikuti bahasa melalui pengaturan Study. Kunjungi Explore untuk panduan pertama atau pilih panduan bahasa dari ? di ringkasan. Pilihan sadar tersebut membuka konten bahasa. Memulai dari Explore mempertahankan lapisan aktif. Panduan yang selesai hanya diulang melalui ?.
+
+Buka kartu yang disorot untuk melihat detail dan pilih Gambar jika tersedia. Berikutnya melewati cabang yang belum dibuka. Cabang pembuatan membuka pemilih jenis dan editor, serta dapat berpindah ke lapisan yang mendukung kartu baru. Kartu tidak dikirim otomatis. Kembali, Mulai Ulang, dan selesai menutup tampilan dengan konfirmasi pembuangan perubahan biasa.
 
 ## Spesifikasi Teknis
 
-Host bersama menyediakan aksi mengambang melalui antreannya. Kunjungan awal menawarkan Berikutnya/Selesai tanpa Batal atau Lewati; pemutaran ulang menawarkan Lewati sebelum tahap terlihat terakhir. Mulai Ulang Tutorial muncul setelah tahap terlihat pertama. Penyelesaian tetap berlaku setelah pembaruan konten. Flag highlightNext hanya mengaktifkan animasi berdenyut untuk penjelasan; pengurangan gerakan menonaktifkannya. Setiap tahap menyorot kontrol nyata berbeda sesuai urutan UI. Panduan tetap terikat ke tampilan aktif, menangani keadaan kosong dan opsional, serta membersihkan sumber daya saat navigasi atau pelepasan pemilik.
-
-Panduan bahasa hanya tersedia setelah pendaftaran eksplisit di pengaturan Belajar. Pengantar pendaftaran yang berulang dihapus; panduan dimulai dengan Jelajahi lalu alat latihan.
+Modul mendaftarkan panduan tetap `introduction` melalui `study:libraryTutorials` versi 1 menggunakan ctx terlingkup dan katalog empat bahasa miliknya. Library memiliki target, alur, dan masa hidup tampilan; modul menyediakan teks khusus bahasa. Panduan hanya tersedia bagi keikutsertaan eksplisit dan menggantikan Explore umum pada halaman bahasa terkait agar tidak bertumpuk. Penghapusan melepas pendaftaran dan memulihkan panduan cadangan.

@@ -1,13 +1,13 @@
-# Guided tutorial
+# Guided Tutorial
 
-This language introduction is supplemental to the Study overview and is selected through ?. Its three distinct targets explain language selection, activity navigation and available modules without changing pages. Explore and Flashcards guides belong to their current host views.
+The Study overview guide explains navigation and general features. This language guide explores actual learning content: layers, filters, a stable favourite/card example, card details, available audio, drawing practice and creating a card.
 
-## Usage Examples
+## Use The Guide
 
-On the Study overview, use the language navigation to choose learning materials and the activity navigation to find Explore or Flashcards. This supplementary guide describes those controls without moving you between pages. Each activity provides its own contextual walkthrough.
+Enroll in the language through Study settings. Visit its Explore page for the first-time guide, or choose the language guide from ? on the Study overview. That deliberate choice opens the language contents. Starting from Explore preserves the current layer. Completed guides only replay through ?.
+
+Open the highlighted card to inspect its details, and choose Draw when available to try writing and its tools. Next skips branches you leave unopened. The creation branch opens the card-type chooser and editor; it may switch to a layer where cards can be created. No card is submitted automatically. Back, Restart and completion close tutorial surfaces while retaining normal discard confirmation.
 
 ## Technical Specification
 
-The shared host provides queued floating actions. First visits offer Next/Finish without Cancel or Skip; replays offer Skip before the last visible step. Restart Tutorial appears after the first visible step. Completion survives content updates. Explicit highlightNext flags enable only a breathing animation for explanatory steps; reduced motion disables it. Each stage highlights a distinct rendered control in UI order. Guides stay bound to the current view, handle empty and optional states, and release their resources on navigation or owner removal.
-
-Language guides are available only after explicit enrollment in Study settings. The redundant enrollment introduction is removed; the guide begins with Explore and continues to practice tools.
+The module registers its stable `introduction` guide through `study:libraryTutorials` version 1, using its scoped ctx and module-owned four-language catalogs. Library owns targets, workflows and surface lifetimes; the module supplies language-specific content copy. The guide is offered only for explicit enrollment and replaces generic Library Explore on this language's pages, avoiding stacked duplicates. Removal releases its registration and restores the fallback.

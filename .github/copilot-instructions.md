@@ -184,3 +184,7 @@ Register removable bundled recording retrieval through `study:audio:provider.reg
 Reference inventories live under `data/reference/` as deterministic compressed lookup shards, with source counts, checksums and license attribution. Keep imports lazy and preserve missing source readings/meanings as unknown rather than inventing data. Import supported records through the ordinary host graph and ACL validation.
 
 Transformations use mandatory source-card flags and the host resolver exclusively. Ship only base cards; declare irregular forms as rule overrides, never independent records. Preserve packaged audio bindings by base ID and transformation path and derive drawing patterns from generated spelling. Do not introduce legacy aliases, migrations or alternate representations. Test every flagged source and rule for media coverage.
+
+### Study Tutorial Responsibilities
+
+Keep Study overview guides focused on navigation and general features. Language guides must explore real module content through the public study:libraryTutorials contract, replacing the generic guide on the matching enrolled language view. Registration and discovery never navigate; only an explicit launch may enter content. Preserve an active layer, use stable card examples, attach drawing/editor surfaces to branch lifetimes, and test Next-skipping, Back, Restart, enrollment and provider removal without automatically saving cards.

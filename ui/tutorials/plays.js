@@ -1,41 +1,21 @@
+/** Module-specific context for the shared, interactive Library walkthrough. */
 export const definition = {
     moduleId: "study-language-ja",
     language: "ja",
-    version: 1,
     id: "introduction",
     titleKey: "module.study-language-ja.tutorial.title",
-    steps: [
-        {
-            highlightNext: true,
-            id: "explore",
+    text: {
+        "browse-a-layer": {
             titleKey: "module.study-language-ja.tutorial.explore.title",
             bodyKey: "module.study-language-ja.tutorial.explore.body",
-            effects: {
-                callout: true,
-                arrow: true,
-                spotlight: true,
-            },
-            missing: {
-                timeoutMs: 5000,
-                action: "retry",
-            },
-            target: "study.navigation",
         },
-        {
-            highlightNext: true,
-            id: "practice",
-            titleKey: "module.study-language-ja.tutorial.practice.title",
-            bodyKey: "module.study-language-ja.tutorial.practice.body",
-            effects: {
-                callout: true,
-                arrow: true,
-                spotlight: true,
-            },
-            missing: {
-                timeoutMs: 5000,
-                action: "retry",
-            },
-            target: "study.modules",
+        "read-details": {
+            titleKey: "module.study-language-ja.tutorial.details.title",
+            bodyKey: "module.study-language-ja.tutorial.details.body",
         },
-    ],
+        "write-card": {
+            titleKey: "module.study-language-ja.tutorial.create.title",
+            bodyKey: "module.study-language-ja.tutorial.create.body",
+        },
+    },
 };

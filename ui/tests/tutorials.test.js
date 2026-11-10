@@ -2,216 +2,95 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { mountProvider } from "../tutorials/provider.js";
+import { definition } from "../tutorials/plays.js";
 
-const manifest = JSON.parse(
-    readFileSync(new URL("../../manifest.json", import.meta.url), "utf8"),
-);
-
-function fixture({ fail = false } = {}) {
-    const controller = new AbortController();
-    let disposed = false,
-        registered,
-        administrative = true,
-        authenticated = true,
-        offline = false;
-    const targets = [],
-        routes = [],
-        published = new Map();
-    const owner = {
-        signal: controller.signal,
-        dispose: () => {
-            disposed = true;
-        },
-        target: async (id, options) => {
-            assert.equal(typeof options.resolve, "function");
-            targets.push(id);
-            return { id: `module.${manifest.id}:${id}` };
-        },
-        register: async (play) => {
-            registered = play;
-            if (fail) throw new Error("registration_failed");
-            return { id: `module.${manifest.id}:${play.id}` };
-        },
-    };
-    const capabilities = new Map([
-        [
-            "ui:tutorials",
-            {
-                version: 1,
-                owner: (id, options) => {
-                    assert.equal(id, `module.${manifest.id}`);
-                    assert.equal(options.signal, controller.signal);
-                    assert.deepEqual(options.stringsBaseUrls, [
-                        `/static/modules/${manifest.id}/languages`,
-                    ]);
-                    return owner;
-                },
-            },
-        ],
-        [
-            "ui:reuse",
-            {
-                importModule: async (name) => {
-                    assert.equal(name, "access-role.js");
-                    return { isAdminScope: () => administrative };
-                },
-            },
-        ],
-        ["session:isAuthenticated", () => authenticated],
-        ["offline:state", { isOffline: () => offline }],
-        [
-            "ui:moduleTutorialTargets",
-            {
-                card: async (id, { signal }) => {
-                    assert.equal(id, manifest.id);
-                    assert.equal(signal, owner.signal);
-                    return { id: `ui.modules:${id}` };
-                },
-            },
-        ],
-        [
-            "study:tutorialTargets",
-            {
-                isEnrolled: () => true,
-                navigation: "study:navigation",
-                languages: "study:languages",
-                modules: "study:modules",
-                matchesPage: ({ pathname, language }) => pathname === "/study",
-                route: async (input) => {
-                    routes.push(input);
-                    return `/resolved/${input.language}/${input.area}`;
-                },
-            },
-        ],
-    ]);
+function fixture({ fail = false, version = 1 } = {}) {
+    const signal = new AbortController().signal;
+    const published = new Map();
+    let request,
+        disposed = false;
     const ctx = {
-        signal: controller.signal,
+        signal,
         capabilities: {
-            get: (id) => capabilities.get(id),
+            get: (id) =>
+                id === "study:libraryTutorials"
+                    ? {
+                          version,
+                          register: async (input) => {
+                              request = input;
+                              if (fail) throw new Error("registration_failed");
+                              return {
+                                  id: `${input.owner}:${input.id}`,
+                                  dispose: () => {
+                                      disposed = true;
+                                  },
+                              };
+                          },
+                      }
+                    : undefined,
             contribute: (id, value) => published.set(id, value),
         },
     };
     return {
         ctx,
-        targets,
-        routes,
         published,
-        capabilities,
-        get play() {
-            return registered;
+        get request() {
+            return request;
         },
         get disposed() {
             return disposed;
         },
-        authenticate(value) {
-            authenticated = value;
-        },
-        admin(value) {
-            administrative = value;
-        },
-        disconnect(value) {
-            offline = value;
-        },
     };
 }
 
-test("the module contributes a localized, permission-aware play through the public host contract", async () => {
+test("the language module registers its own content through Library's public workflow", async () => {
     const state = fixture();
     const dispose = await mountProvider(state.ctx);
-    assert.equal(typeof dispose, "function");
-    assert.ok(state.published.has(`${manifest.id}:tutorials`));
-    assert.equal(state.play.version, 1);
-    assert.equal(
-        state.play.page({
-            pathname: "/study",
-        }),
-        true,
-    );
-    assert.equal(state.play.page({ pathname: "/settings" }), false);
-    assert.ok(state.play.steps.length >= 1);
-    assert.equal(
-        new Set(state.play.steps.map((step) => step.target)).size,
-        state.play.steps.length,
-    );
-    assert.equal(state.play.available(), true);
-    for (const step of state.play.steps) {
-        assert.ok(step.effects.arrow && step.effects.spotlight, step.id);
-        assert.equal(
-            step.highlightNext,
-            !Boolean(step.advance || step.waitFor),
-            step.id,
-        );
-        if (step.effects.arrow || step.effects.spotlight)
-            assert.ok(step.target);
-    }
+    assert.equal(state.request.owner, `module.${definition.moduleId}`);
+    assert.equal(state.request.language, definition.language);
+    assert.equal(state.request.signal, state.ctx.signal);
+    assert.equal(state.request.id, "introduction");
+    assert.deepEqual(state.request.stringsBaseUrls, [
+        `/static/modules/${definition.moduleId}/languages`,
+    ]);
+    assert.ok(state.published.get(`${definition.moduleId}:tutorials`));
+    dispose();
+    assert.equal(state.disposed, true);
+});
+
+test("language-specific walkthrough copy resolves from every packaged locale", () => {
     const keys = [
-        state.play.titleKey,
-        ...state.play.steps.flatMap((step) =>
-            [step.titleKey, step.bodyKey].filter(Boolean),
-        ),
+        definition.titleKey,
+        ...Object.values(definition.text).flatMap(({ titleKey, bodyKey }) => [
+            titleKey,
+            bodyKey,
+        ]),
     ];
-    for (const key of keys)
-        assert.ok(key.startsWith(`module.${manifest.id}.tutorial.`), key);
     for (const locale of ["en", "de", "id", "ja"]) {
         const xml = readFileSync(
             new URL(`../languages/${locale}/strings.xml`, import.meta.url),
             "utf8",
         );
         for (const key of keys) {
-            const entry = xml.match(
-                new RegExp(
-                    'name="' +
-                        key.replaceAll(".", "\\.") +
-                        '">([^<]+)</string>',
-                ),
+            assert.ok(
+                key.startsWith(`module.${definition.moduleId}.tutorial.`),
             );
-            assert.ok(entry?.[1].trim(), `${locale}:${key}`);
+            assert.ok(xml.includes(`name="${key}"`), `${locale}: ${key}`);
         }
     }
-    state.authenticate(false);
-    assert.equal(state.play.available(), false);
-    state.authenticate(true);
-    assert.equal(state.play.automatic, false);
-    assert.equal(
-        new Set(state.play.steps.map((step) => step.target)).size,
-        state.play.steps.length,
-    );
-    for (const pathname of [
-        "/study/explore/ja/kana",
-        "/study/explore/ja/kanji",
-        "/study/en/flashcards",
-    ])
-        assert.equal(state.play.page({ pathname }), false);
-    dispose();
-    assert.equal(state.disposed, true);
 });
 
-test("registration failure rolls back the owner before publishing a capability", async () => {
+test("failed workflow registration publishes no module handle", async () => {
     const state = fixture({ fail: true });
     await assert.rejects(mountProvider(state.ctx), /registration_failed/);
-    assert.equal(state.disposed, true);
     assert.equal(state.published.size, 0);
 });
 
-test("an unsupported host contract is rejected before allocating an owner", async () => {
-    const state = fixture();
-    state.capabilities.set("ui:tutorials", { version: 2 });
+test("an unsupported Library tutorial contract is rejected before registration", async () => {
+    const state = fixture({ version: 2 });
     await assert.rejects(
         mountProvider(state.ctx),
-        /tutorial_contract_unavailable/,
+        /library_tutorial_contract_unavailable/,
     );
-});
-
-test("language guides are offered only after explicit enrollment", async () => {
-    const state = fixture();
-    const study = state.capabilities.get("study:tutorialTargets");
-    let enrolled = false;
-    study.isEnrolled = () => enrolled;
-    const dispose = await mountProvider(state.ctx);
-    assert.equal(state.play.available(), false);
-    enrolled = true;
-    assert.equal(state.play.available(), true);
-    enrolled = false;
-    assert.equal(state.play.available(), false);
-    dispose();
+    assert.equal(state.request, undefined);
 });
