@@ -66,3 +66,4 @@ Sprachanleitungen stehen erst nach ausdrücklicher Einschreibung in den Study-Ei
 - [028167419](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/028167419f103c6d3b2bb9df4ff25a47f3e06080)
 - [3aa7d0981](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/3aa7d0981544552f9cbb1fbf153328b5ff064ede)
 - [f102f36dc](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/f102f36dc038d1858c0fcd89afae3da0298aeea4)
+- [a17bea4](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/a17bea405b1ea24c516b570dce1838600eafbed3)
