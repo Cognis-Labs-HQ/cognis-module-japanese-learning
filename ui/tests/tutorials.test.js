@@ -72,9 +72,7 @@ test("language-specific walkthrough copy resolves from every packaged locale", (
             "utf8",
         );
         for (const key of keys) {
-            assert.ok(
-                key.startsWith(`module.${definition.moduleId}.tutorial.`),
-            );
+            assert.ok(key.startsWith("module.study.language.ja.tutorial."));
             assert.ok(xml.includes(`name="${key}"`), `${locale}: ${key}`);
         }
     }

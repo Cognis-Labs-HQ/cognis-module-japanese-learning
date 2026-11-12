@@ -50,6 +50,10 @@ Anleitungen erklären unterschiedliche sichtbare Bedienelemente in UI-Reihenfolg
 
 Sprachanleitungen stehen erst nach ausdrücklicher Einschreibung in den Study-Einstellungen bereit. Die überflüssige Einschreibungseinführung entfällt; die Anleitung beginnt mit Erkunden und führt zu Übungswerkzeugen.
 
+## Einheitliche Übersetzungskataloge
+
+Übersetzungsschlüssel verwenden in Modulmetadaten und Tutorials durchgehend kleingeschriebene, durch Punkte getrennte Wörter. Katalogeinträge behalten ihre ursprünglichen Übersetzungen und entsprechen der umgebenden XML-Einrückung. Strenge Namensraumprüfungen weisen Bindestriche und Unterstriche in Übersetzungsschlüsseln zurück. Modul-IDs, UUIDs, Fähigkeiten und Tutorialabschluss-Bezeichner bleiben unverändert.
+
 ## Commits
 
 - [9eb04a5](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/9eb04a52924608bec3a943121d169c9b09e5a59d)

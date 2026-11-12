@@ -50,6 +50,10 @@ Tutorial menjelaskan kontrol terlihat yang berbeda sesuai urutan UI. Petunjuk be
 
 Panduan bahasa hanya tersedia setelah pendaftaran eksplisit di pengaturan Belajar. Pengantar pendaftaran yang berulang dihapus; panduan dimulai dengan Jelajahi lalu alat latihan.
 
+## Katalog Terjemahan yang Konsisten
+
+Kunci terjemahan menggunakan kata huruf kecil yang dipisahkan titik pada metadata modul dan tutorial. Entri katalog mempertahankan nilai terjemahan asli dan mengikuti indentasi XML di sekitarnya. Pemeriksaan namespace yang ketat menolak tanda hubung dan garis bawah pada kunci terjemahan. ID modul, UUID, kapabilitas, dan identitas penyelesaian tutorial tetap sama.
+
 ## Komit
 
 - [9eb04a5](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/9eb04a52924608bec3a943121d169c9b09e5a59d)

@@ -50,6 +50,10 @@ Tutorials explain distinct visible controls in UI order. Shared guidance covers 
 
 Language guides are available only after explicit enrollment in Study settings. The redundant enrollment introduction is removed; the guide begins with Explore and continues to practice tools.
 
+## Consistent Translation Catalogs
+
+Translation keys use lowercase period-delimited words throughout the module metadata and tutorials. Catalog entries retain their original translated values and match the surrounding XML indentation. Strict namespace checks reject hyphens and underscores in translation keys. Module IDs, UUIDs, capabilities and tutorial completion identities remain unchanged.
+
 ## Commits
 
 - [9eb04a5](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/9eb04a52924608bec3a943121d169c9b09e5a59d)
