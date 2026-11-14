@@ -379,3 +379,7 @@ Aturan Godan-gu dan Suru reguler mencakup verba kamus baru. Suru memakai alterna
 ## Metadata Study Ringan
 
 Skema Library bawaan mendeklarasikan `metadata.offline.cache: "lightweight"`, menandai data JSON ringannya untuk cache Cognis Study. Cognis mengelola jadwal cache, penyimpanan, navigasi, dan perilaku latihan. Revisi skema dan paket konten dinaikkan bersama perubahan metadata ini.
+
+## Tutorial terpandu
+
+[Tutorial terpandu](tutorials.id.md)

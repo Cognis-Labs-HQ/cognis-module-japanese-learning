@@ -10,6 +10,7 @@ test("enable-disable-enable releases every live language contribution while reta
     const capability = new Map();
     const routes = new Map();
     const staticRoots = new Map();
+    const uiProviders = new Map();
     for (let cycle = 0; cycle < 2; cycle++) {
         const scopedDisposers = [];
         const register = (map, key, value) => {
@@ -43,6 +44,9 @@ test("enable-disable-enable releases every live language contribution while reta
                     };
                 },
             },
+            registerCapabilityProvider(definition) {
+                return register(uiProviders, definition.scriptUrl, definition);
+            },
             registerStaticDir(prefix, root) {
                 return register(staticRoots, prefix, root);
             },
@@ -63,6 +67,12 @@ test("enable-disable-enable releases every live language contribution while reta
         assert.ok(library.size >= 2);
         assert.equal(routes.size, 3);
         assert.equal(staticRoots.size, 1);
+        assert.equal(uiProviders.size, 1);
+        assert.ok(
+            [...uiProviders.values()][0].providesCapabilities.includes(
+                "study-language-ja:tutorials",
+            ),
+        );
         dispose();
         for (const release of scopedDisposers.reverse()) release();
         assert.equal(
@@ -70,7 +80,8 @@ test("enable-disable-enable releases every live language contribution while reta
                 audio.size +
                 library.size +
                 routes.size +
-                staticRoots.size,
+                staticRoots.size +
+                uiProviders.size,
             0,
         );
     }

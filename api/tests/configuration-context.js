@@ -10,10 +10,18 @@ export function withConfiguration(ctx = {}) {
             return { rows: [] };
         },
     };
+    const uiProviders = new Map();
     const flows = new Map();
     const hooks = new Map();
     return {
         ...ctx,
+        uiProviders,
+        registerCapabilityProvider:
+            ctx.registerCapabilityProvider ??
+            ((definition) => {
+                uiProviders.set(definition.scriptUrl, definition);
+                return () => uiProviders.delete(definition.scriptUrl);
+            }),
         getCapability(id) {
             return id === "db:executor" ? database : ctx.getCapability?.(id);
         },
