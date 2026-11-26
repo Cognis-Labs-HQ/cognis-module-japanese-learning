@@ -240,67 +240,67 @@ Penghitung hari leksikal `か` kini merupakan Kosakata `lexical:counter` yang te
 
 Judul pelafalan tersembunyi kini disusun langsung dari tautan Kana atomik masing-masing. Membuka bacaan Kanji tidak lagi mengarah melalui kartu bacaan turunan Kanji lain atau menampilkan ejaan alternatif pada detail judul kartu.
 
-- [631e76b6c2471aff02f37e982ece772fe7ad266c](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/631e76b6c2471aff02f37e982ece772fe7ad266c)
+- [631e76b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/631e76b6c2471aff02f37e982ece772fe7ad266c)
 
 ## Komposisi Bacaan yang Aman Diaktifkan
 
 Judul bacaan kini memakai relasi komposisi khusus `reading-kana`, sedangkan `kana-spelling` mempertahankan peran ejaan alternatif yang didukung. Navigasi judul langsung ke Kana tetap tersedia tanpa membuat validasi paket konten menolak pengaktifan modul.
 
-- [2187c82db49d331797cbb015e4665ad7ccb5264b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/2187c82db49d331797cbb015e4665ad7ccb5264b)
+- [2187c82](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/2187c82db49d331797cbb015e4665ad7ccb5264b)
 
 ## Kartu Kosakata dan Kana Kanonis
 
 Pembungkus Kosakata pelafalan yang berlebihan telah dihapus. Kosakata Kanji terlihat kini menaut langsung ke Kanji dan Kana atomik, bacaan Kanji mengutamakan entri leksikal terlihat yang cocok seperti `猫`, dan bacaan tersembunyi yang tersisa memakai kelas pelafalan alih-alih tampil sebagai Kanji. Kartu Kana kini memiliki satu lencana sistem tulisan tanpa tag kelas ganda.
 
-- [697459a2379a0d11ce7fcc1ad947dacbe7d556a3](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/697459a2379a0d11ce7fcc1ad947dacbe7d556a3)
+- [697459a](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/697459a2379a0d11ce7fcc1ad947dacbe7d556a3)
 
 ## Berkas Konten yang Dapat Diimpor
 
 Dua berkas JSON Kosakata kosong yang tersisa setelah normalisasi bacaan telah dihapus. Setiap berkas konten yang ditemukan kini berisi sedikitnya satu data sehingga pengimpor Study Library tidak mencoba memeriksa data yang tidak terdefinisi saat modul diaktifkan.
 
-- [423a3250facb90f3435fc28faee469aa63bacceb](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/423a3250facb90f3435fc28faee469aa63bacceb)
+- [423a325](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/423a3250facb90f3435fc28faee469aa63bacceb)
 
 ## Graf Bacaan yang Dapat Diimpor Dipulihkan
 
 Perombakan luas graf leksikal yang menyebabkan pengaktifan Study Library gagal di dalam transaksi basis data telah dibatalkan. Paket kembali memakai struktur bacaan berlapis yang sebelumnya dapat diimpor sambil mempertahankan koreksi komposisi `reading-kana` yang didukung, serta menggunakan revisi konten baru agar host mencoba pengimporan kembali.
 
-- [3ab7d2577f18d204465863ce3c820b8fe153d8be](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/3ab7d2577f18d204465863ce3c820b8fe153d8be)
+- [3ab7d25](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/3ab7d2577f18d204465863ce3c820b8fe153d8be)
 
 ## Migrasi Kartu Kanonis Bertahap
 
 Graf kartu yang disederhanakan diterapkan tanpa menghapus data penyedia yang mungkin sudah ada dalam instalasi. Kartu Kanji dan Kosakata aktif kini menaut langsung ke endpoint leksikal, Kanji, dan Kana yang tepat; bacaan tersembunyi yang digantikan dilepas tetapi dipertahankan untuk pembaruan basis data yang aman. Kartu khusus bacaan tidak lagi mengaku sebagai kelas Kanji dan kartu Kana tidak lagi mengulang tag sistem tulisannya.
 
-- [997392f71fd178e43599bc8d27be786839b98b8b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/997392f71fd178e43599bc8d27be786839b98b8b)
+- [997392f](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/997392f71fd178e43599bc8d27be786839b98b8b)
 
 ## Solusi Instalasi melalui Peningkatan Skema
 
 Skema konten bahasa Jepang dinaikkan ke revisi 46 agar Cognis menyisipkan skema yang telah dibersihkan, bukan menjalankan perintah pembaruan skema versi-sama yang rusak dari PR #226. Tindak lanjut host didokumentasikan secara tepat: perintah tersebut memberikan `values`, padahal gateway basis data terstruktur memerlukan `set`, sehingga PostgreSQL menghasilkan kegagalan `Object.entries(undefined)` yang dilaporkan.
 
-- [bb20511152a80522055af67e6895ff28e5d9b8c8](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/bb20511152a80522055af67e6895ff28e5d9b8c8)
+- [bb20511](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/bb20511152a80522055af67e6895ff28e5d9b8c8)
 
 ## Data Bacaan Usang Dihapus Sepenuhnya
 
 Seluruh 48 data bacaan tersembunyi yang usang telah dihapus alih-alih mempertahankan data kompatibilitas yang dilepas. Paket kini hanya berisi graf kanonis aktif, mengurangi inventaris Kosakata dari 133 menjadi 85 data sambil mempertahankan navigasi langsung Kanji, leksikal, dan Kana atomik.
 
-- [b5ae5ad6e5ec9acf67c7ebf22d2d984ff4bdbad4](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/b5ae5ad6e5ec9acf67c7ebf22d2d984ff4bdbad4)
+- [b5ae5ad](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/b5ae5ad6e5ec9acf67c7ebf22d2d984ff4bdbad4)
 
 ## Penggunaan Kanji dan Kana Simetris
 
 Dependensi nonpresentasional ditambahkan dari setiap Kanji ke seluruh Kana atomik yang digunakan bacaannya. Setelah mengikuti `日` melalui penghitung hari leksikal `か` menuju `か` atomik, kartu Kana kini mencantumkan `日` pada Digunakan Oleh; invariant yang sama diberlakukan pada seluruh inventaris Kanji.
 
-- [0fcae71e11836dbce3361184c378e46a2ee0d430](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/0fcae71e11836dbce3361184c378e46a2ee0d430)
+- [0fcae71](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/0fcae71e11836dbce3361184c378e46a2ee0d430)
 
 ## Tautan Pelafalan Komposit yang Logis
 
 Tautan judul kalimat per karakter diganti dengan segmen leksikal dan partikel yang telah ditinjau. Pelafalan lengkap kini memakai kembali segmen bacaan kata tersembunyi kanonis dan partikel utuh; misalnya, `ちいさいねこがすき` tertaut sebagai `ちいさい`・`ねこ`・`が`・`すき`, lalu setiap kata diselesaikan ke Kana atomik.
 
-- [973980b8e821218608836970f51a0eefc75bfb11](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/973980b8e821218608836970f51a0eefc75bfb11)
+- [973980b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/973980b8e821218608836970f51a0eefc75bfb11)
 
 ## Komposisi Kalimat Milik Induk
 
 Rantai bacaan kalimat Kana lengkap paralel telah dihapus. Kalimat seperti `猫が好き` kini hanya memiliki tautan ke `猫`, `が`, dan `好き` yang terlihat; setiap kata Kanji memiliki tepat satu anak Kana lengkap (`ねこ` atau `すき`), dan anak tersebut hanya diselesaikan ke Kana atomik, bukan ke saudara dalam kalimat.
 
-- [274238c377ebb0a5ce4759456a0d433df83810da](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/274238c377ebb0a5ce4759456a0d433df83810da)
+- [274238c](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/274238c377ebb0a5ce4759456a0d433df83810da)
 
 ## Bacaan Kalimat yang Tertaut ke Kosakata
 

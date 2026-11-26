@@ -240,67 +240,67 @@ The lexical day-counter `か` is now visible `lexical:counter` Vocabulary rather
 
 Hidden pronunciation titles now compose directly from their individual atomic Kana links. Opening a Kanji reading no longer routes through another Kanji-derived reading card or exposes the alternate spelling in the card-title detail.
 
-- [631e76b6c2471aff02f37e982ece772fe7ad266c](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/631e76b6c2471aff02f37e982ece772fe7ad266c)
+- [631e76b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/631e76b6c2471aff02f37e982ece772fe7ad266c)
 
 ## Enable-Safe Reading Composition
 
 Reading titles now use the schema's dedicated `reading-kana` composition relationship, while `kana-spelling` retains its supported alternate-spelling role. This preserves direct Kana title navigation without causing content-pack validation to reject module enablement.
 
-- [2187c82db49d331797cbb015e4665ad7ccb5264b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/2187c82db49d331797cbb015e4665ad7ccb5264b)
+- [2187c82](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/2187c82db49d331797cbb015e4665ad7ccb5264b)
 
 ## Canonical Vocabulary and Kana Cards
 
 Removed redundant pronunciation Vocabulary wrappers. Visible Kanji vocabulary now links directly to Kanji and atomic Kana, Kanji readings prefer the matching visible lexical entry such as `猫`, and remaining hidden readings use the pronunciation class instead of appearing as Kanji. Kana cards now carry one writing-system badge without a duplicate class tag.
 
-- [697459a2379a0d11ce7fcc1ad947dacbe7d556a3](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/697459a2379a0d11ce7fcc1ad947dacbe7d556a3)
+- [697459a](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/697459a2379a0d11ce7fcc1ad947dacbe7d556a3)
 
 ## Ingestible Content Shards
 
 Removed two empty Vocabulary JSON shards left after reading normalization. Every discovered content file now contains at least one record, preventing the Study Library importer from attempting to inspect an undefined record during module activation.
 
-- [423a3250facb90f3435fc28faee469aa63bacceb](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/423a3250facb90f3435fc28faee469aa63bacceb)
+- [423a325](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/423a3250facb90f3435fc28faee469aa63bacceb)
 
 ## Restored Ingestible Reading Graph
 
 Reverted the broad lexical graph rewrite that caused Study Library activation to fail inside its database transaction. The pack again uses the previously ingestible layered reading structure while retaining the supported `reading-kana` composition correction, and advances to a fresh content revision so the host retries ingestion.
 
-- [3ab7d2577f18d204465863ce3c820b8fe153d8be](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/3ab7d2577f18d204465863ce3c820b8fe153d8be)
+- [3ab7d25](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/3ab7d2577f18d204465863ce3c820b8fe153d8be)
 
 ## Incremental Canonical Card Migration
 
 Applied the simplified card graph without deleting provider records that may already exist in an installation. Current Kanji and Vocabulary cards link directly to the intended lexical, Kanji, and Kana endpoints; superseded hidden readings are detached but retained for safe database updates. Reading-only cards no longer claim the Kanji class, and Kana cards no longer repeat their writing-system tag.
 
-- [997392f71fd178e43599bc8d27be786839b98b8b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/997392f71fd178e43599bc8d27be786839b98b8b)
+- [997392f](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/997392f71fd178e43599bc8d27be786839b98b8b)
 
 ## Schema Upgrade Installation Workaround
 
 Advanced the Japanese content schema to revision 46 so Cognis inserts the sanitized schema instead of exercising PR #226's broken same-version schema update command. The host follow-up is documented precisely: that command supplies `values` although the structured database gateway requires `set`, causing the reported `Object.entries(undefined)` failure on PostgreSQL.
 
-- [bb20511152a80522055af67e6895ff28e5d9b8c8](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/bb20511152a80522055af67e6895ff28e5d9b8c8)
+- [bb20511](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/bb20511152a80522055af67e6895ff28e5d9b8c8)
 
 ## Purged Superseded Reading Data
 
 Removed all 48 obsolete hidden reading records instead of retaining detached compatibility data. The package now contains only the active canonical graph, reducing the Vocabulary inventory from 133 to 85 records while preserving direct Kanji, lexical, and atomic-Kana navigation.
 
-- [b5ae5ad6e5ec9acf67c7ebf22d2d984ff4bdbad4](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/b5ae5ad6e5ec9acf67c7ebf22d2d984ff4bdbad4)
+- [b5ae5ad](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/b5ae5ad6e5ec9acf67c7ebf22d2d984ff4bdbad4)
 
 ## Symmetric Kanji and Kana Usage
 
 Added non-presentational dependencies from every Kanji to every atomic Kana used by its readings. After following `日` through the lexical day-counter `か` to atomic `か`, the Kana card now lists `日` in Used By; the same invariant is enforced across the complete Kanji inventory.
 
-- [0fcae71e11836dbce3361184c378e46a2ee0d430](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/0fcae71e11836dbce3361184c378e46a2ee0d430)
+- [0fcae71](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/0fcae71e11836dbce3361184c378e46a2ee0d430)
 
 ## Logical Composite Pronunciation Links
 
 Replaced character-by-character sentence title links with reviewed lexical and particle segments. Complete pronunciations now reuse canonical hidden word-reading segments and whole particles; for example, `ちいさいねこがすき` links as `ちいさい`・`ねこ`・`が`・`すき`, with each word resolving onward to atomic Kana.
 
-- [973980b8e821218608836970f51a0eefc75bfb11](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/973980b8e821218608836970f51a0eefc75bfb11)
+- [973980b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/973980b8e821218608836970f51a0eefc75bfb11)
 
 ## Parent-Owned Sentence Composition
 
 Removed the parallel full-Kana sentence-reading chain. A sentence such as `猫が好き` now owns links only to visible `猫`, `が`, and `好き`; each Kanji word owns exactly one complete Kana child (`ねこ` or `すき`), and those children resolve only to atomic Kana rather than to sentence siblings.
 
-- [274238c377ebb0a5ce4759456a0d433df83810da](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/274238c377ebb0a5ce4759456a0d433df83810da)
+- [274238c](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/274238c377ebb0a5ce4759456a0d433df83810da)
 
 ## Vocabulary-Linked Sentence Readings
 

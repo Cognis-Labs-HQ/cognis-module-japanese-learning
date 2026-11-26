@@ -240,67 +240,67 @@ Der lexikalische Tageszähler `か` ist nun sichtbares Vokabular der Klasse `lex
 
 Titel ausgeblendeter Aussprachedatensätze setzen sich jetzt direkt aus ihren einzelnen atomaren Kana-Links zusammen. Beim Öffnen einer Kanji-Lesung wird nicht mehr über eine weitere vom Kanji abgeleitete Lesungskarte navigiert und die alternative Schreibweise erscheint nicht mehr im Kartentiteldetail.
 
-- [631e76b6c2471aff02f37e982ece772fe7ad266c](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/631e76b6c2471aff02f37e982ece772fe7ad266c)
+- [631e76b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/631e76b6c2471aff02f37e982ece772fe7ad266c)
 
 ## Aktivierungssichere Lesungszusammensetzung
 
 Lesungstitel verwenden jetzt die vorgesehene Kompositionsbeziehung `reading-kana`, während `kana-spelling` seine unterstützte Rolle als alternative Schreibweise behält. Dadurch bleibt die direkte Kana-Navigation erhalten, ohne dass die Inhaltsvalidierung die Modulaktivierung ablehnt.
 
-- [2187c82db49d331797cbb015e4665ad7ccb5264b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/2187c82db49d331797cbb015e4665ad7ccb5264b)
+- [2187c82](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/2187c82db49d331797cbb015e4665ad7ccb5264b)
 
 ## Kanonische Vokabular- und Kana-Karten
 
 Redundante Aussprache-Vokabularhüllen wurden entfernt. Sichtbares Kanji-Vokabular verweist nun direkt auf Kanji und atomare Kana, Kanji-Lesungen bevorzugen den passenden sichtbaren lexikalischen Eintrag wie `猫`, und verbleibende ausgeblendete Lesungen verwenden die Ausspracheklasse, statt als Kanji zu erscheinen. Kana-Karten tragen nun ein einziges Schriftsystem-Abzeichen ohne doppelten Klassen-Tag.
 
-- [697459a2379a0d11ce7fcc1ad947dacbe7d556a3](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/697459a2379a0d11ce7fcc1ad947dacbe7d556a3)
+- [697459a](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/697459a2379a0d11ce7fcc1ad947dacbe7d556a3)
 
 ## Importierbare Inhaltsdateien
 
 Zwei nach der Normalisierung der Lesungen verbliebene leere Vokabular-JSON-Dateien wurden entfernt. Jede erkannte Inhaltsdatei enthält nun mindestens einen Datensatz, sodass der Study-Library-Importer bei der Modulaktivierung keinen undefinierten Datensatz mehr untersucht.
 
-- [423a3250facb90f3435fc28faee469aa63bacceb](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/423a3250facb90f3435fc28faee469aa63bacceb)
+- [423a325](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/423a3250facb90f3435fc28faee469aa63bacceb)
 
 ## Wiederhergestellter importierbarer Lesungsgraph
 
 Die umfassende Umgestaltung des lexikalischen Graphen, die bei der Study-Library-Aktivierung innerhalb der Datenbanktransaktion fehlschlug, wurde zurückgenommen. Das Paket verwendet wieder die zuvor importierbare geschichtete Lesungsstruktur, behält aber die unterstützte `reading-kana`-Kompositionskorrektur bei und erhält eine neue Inhaltsrevision, damit der Host den Import erneut ausführt.
 
-- [3ab7d2577f18d204465863ce3c820b8fe153d8be](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/3ab7d2577f18d204465863ce3c820b8fe153d8be)
+- [3ab7d25](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/3ab7d2577f18d204465863ce3c820b8fe153d8be)
 
 ## Inkrementelle Migration zum kanonischen Kartengraphen
 
 Der vereinfachte Kartengraph wurde umgesetzt, ohne bereits in einer Installation vorhandene Provider-Datensätze zu löschen. Aktuelle Kanji- und Vokabularkarten verweisen direkt auf die vorgesehenen lexikalischen, Kanji- und Kana-Endpunkte; ersetzte ausgeblendete Lesungen sind getrennt, bleiben aber für sichere Datenbankaktualisierungen erhalten. Reine Lesungskarten tragen nicht mehr die Kanji-Klasse und Kana-Karten wiederholen ihr Schriftsystem-Tag nicht mehr.
 
-- [997392f71fd178e43599bc8d27be786839b98b8b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/997392f71fd178e43599bc8d27be786839b98b8b)
+- [997392f](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/997392f71fd178e43599bc8d27be786839b98b8b)
 
 ## Installationsumgehung durch Schema-Aktualisierung
 
 Das japanische Inhaltsschema wurde auf Revision 46 angehoben, damit Cognis das bereinigte Schema einfügt, statt den fehlerhaften gleichversionierten Schema-Update-Befehl aus PR #226 auszuführen. Die Host-Nacharbeit ist genau dokumentiert: Der Befehl liefert `values`, obwohl das strukturierte Datenbank-Gateway `set` erwartet, wodurch unter PostgreSQL der gemeldete Fehler `Object.entries(undefined)` entsteht.
 
-- [bb20511152a80522055af67e6895ff28e5d9b8c8](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/bb20511152a80522055af67e6895ff28e5d9b8c8)
+- [bb20511](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/bb20511152a80522055af67e6895ff28e5d9b8c8)
 
 ## Ersetzte Lesungsdaten vollständig entfernt
 
 Alle 48 veralteten ausgeblendeten Lesungsdatensätze wurden entfernt, anstatt getrennte Kompatibilitätsdaten zu behalten. Das Paket enthält nun nur den aktiven kanonischen Graphen und reduziert den Vokabularbestand von 133 auf 85 Datensätze, während direkte Kanji-, lexikalische und atomare Kana-Navigation erhalten bleibt.
 
-- [b5ae5ad6e5ec9acf67c7ebf22d2d984ff4bdbad4](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/b5ae5ad6e5ec9acf67c7ebf22d2d984ff4bdbad4)
+- [b5ae5ad](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/b5ae5ad6e5ec9acf67c7ebf22d2d984ff4bdbad4)
 
 ## Symmetrische Kanji- und Kana-Verwendung
 
 Von jedem Kanji wurden nicht dargestellte Abhängigkeiten zu allen atomaren Kana seiner Lesungen ergänzt. Nach dem Pfad `日` über den lexikalischen Tageszähler `か` zum atomaren `か` führt die Kana-Karte nun `日` unter „Verwendet von“ auf; dieselbe Invariante gilt für den gesamten Kanji-Bestand.
 
-- [0fcae71e11836dbce3361184c378e46a2ee0d430](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/0fcae71e11836dbce3361184c378e46a2ee0d430)
+- [0fcae71](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/0fcae71e11836dbce3361184c378e46a2ee0d430)
 
 ## Logische Verknüpfungen zusammengesetzter Aussprachen
 
 Die zeichenweisen Satztitel-Links wurden durch geprüfte lexikalische und Partikelabschnitte ersetzt. Vollständige Aussprachen verwenden nun kanonische ausgeblendete Wortlesungsabschnitte und ganze Partikeln; `ちいさいねこがすき` verknüpft beispielsweise `ちいさい`・`ねこ`・`が`・`すき`, wobei sich jedes Wort anschließend in atomare Kana auflöst.
 
-- [973980b8e821218608836970f51a0eefc75bfb11](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/973980b8e821218608836970f51a0eefc75bfb11)
+- [973980b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/973980b8e821218608836970f51a0eefc75bfb11)
 
 ## Vom Satzelternteil bestimmte Komposition
 
 Die parallele vollständige Kana-Satzlesungskette wurde entfernt. Ein Satz wie `猫が好き` besitzt nun nur Links zu sichtbarem `猫`, `が` und `好き`; jedes Kanji-Wort besitzt genau ein vollständiges Kana-Kind (`ねこ` oder `すき`), und diese Kinder lösen sich ausschließlich in atomare Kana auf, statt auf Satzgeschwister zu verweisen.
 
-- [274238c377ebb0a5ce4759456a0d433df83810da](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/274238c377ebb0a5ce4759456a0d433df83810da)
+- [274238c](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/274238c377ebb0a5ce4759456a0d433df83810da)
 
 ## Mit Vokabeln verknüpfte Satzlesungen
 
