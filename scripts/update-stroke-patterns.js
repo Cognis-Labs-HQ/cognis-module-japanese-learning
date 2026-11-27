@@ -30,13 +30,19 @@ async function characterStrokes(character, characterIndex, characters) {
     if (!paths.length) throw new Error(`No strokes for U+${codePoint}`);
     const viewport = characterViewport(characters, characterIndex);
     return paths.map((pathData) => ({
-        points: sampleSvgPath(pathData).map(({ x, y }, pointIndex) => ({
-            x: roundedCoordinate(
-                viewport.offset + (x / SOURCE_SIZE) * viewport.width,
-            ),
-            y: roundedCoordinate(y / SOURCE_SIZE),
-            time: pointIndex * 40,
-        })),
+        points: sampleSvgPath(pathData).map(
+            (
+                { x: horizontalCoordinate, y: verticalCoordinate },
+                pointIndex,
+            ) => ({
+                x: roundedCoordinate(
+                    viewport.offset +
+                        (horizontalCoordinate / SOURCE_SIZE) * viewport.width,
+                ),
+                y: roundedCoordinate(verticalCoordinate / SOURCE_SIZE),
+                time: pointIndex * 40,
+            }),
+        ),
     }));
 }
 

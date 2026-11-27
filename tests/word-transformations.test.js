@@ -196,9 +196,9 @@ test("Japanese verb families derive reviewed polite, negative, past, and te form
 });
 
 test("the plain copula branches into past, negative, and connective forms", () => {
-    const da = words.find(({ id }) => id === "ja:word:da-copula");
+    const copula = words.find(({ id }) => id === "ja:word:da-copula");
     assert.deepEqual(
-        transformationNodes(da).map(({ state, value, pronunciation }) => ({
+        transformationNodes(copula).map(({ state, value, pronunciation }) => ({
             state,
             value,
             pronunciation,

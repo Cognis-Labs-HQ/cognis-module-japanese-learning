@@ -48,3 +48,7 @@ Die folgenden Implementierungs- und Datenquellen definieren den unterstützten V
 - [data/library/schema.json](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/blob/HEAD/data/library/schema.json)
 - [data/audio/recordings.json](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/blob/HEAD/data/audio/recordings.json)
 - [data/reference/manifest.json](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/blob/HEAD/data/reference/manifest.json)
+
+### Namensprüfung
+
+`npm test` prüft Bindungsnamen mit dem lokalen Syntaxbaumdetektor einschließlich Bootstrap, Skripten, Tests und Testdaten. Syntaxfehler lassen die Prüfung fehlschlagen. Die Regressionstestfälle decken Deklarationen, Parameter, private Mitglieder, TypeScript-Typzusicherungen und zulässige reine Typnamen ab. Die gemeinsamen Regeln beschreibt der [Namensstandard des Hosts](https://github.com/Cognis-Labs-HQ/Cognis/blob/HEAD/src/docs/standard/TECHNICAL.de.md#bindungsnamen).

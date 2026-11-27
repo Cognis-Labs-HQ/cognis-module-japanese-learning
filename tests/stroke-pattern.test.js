@@ -70,15 +70,24 @@ test("packaged Kana retain the authored KanjiVG curve geometry", () => {
     assert.equal(pattern.strokes.length, 2);
     assert.equal(pattern.strokes[1].points.length, 32);
     assert.ok(
-        pattern.strokes[1].points.some(({ x, y }) => x < 0.26 && y > 0.76),
-    );
-    assert.ok(
         pattern.strokes[1].points.some(
-            ({ x, y }) => x > 0.42 && y > 0.6 && y < 0.66,
+            ({ x: horizontalCoordinate, y: verticalCoordinate }) =>
+                horizontalCoordinate < 0.26 && verticalCoordinate > 0.76,
         ),
     );
     assert.ok(
-        pattern.strokes[1].points.some(({ x, y }) => x > 0.76 && y > 0.8),
+        pattern.strokes[1].points.some(
+            ({ x: horizontalCoordinate, y: verticalCoordinate }) =>
+                horizontalCoordinate > 0.42 &&
+                verticalCoordinate > 0.6 &&
+                verticalCoordinate < 0.66,
+        ),
+    );
+    assert.ok(
+        pattern.strokes[1].points.some(
+            ({ x: horizontalCoordinate, y: verticalCoordinate }) =>
+                horizontalCoordinate > 0.76 && verticalCoordinate > 0.8,
+        ),
     );
 });
 
@@ -105,18 +114,34 @@ test("stroke metadata preserves KanjiVG attribution", () => {
 test("compound Kana preserve visibly smaller small-form components", () => {
     const characters = loadLayer("characters");
     const kyo = characters.find(({ label }) => label === "きょ");
-    const ki = characters.find(({ label }) => label === "き");
+    const kiCharacter = characters.find(({ label }) => label === "き");
     const smallYo = characters.find(({ label }) => label === "ょ");
-    const firstStrokeCount = ki.fields.stroke_pattern.strokes.length;
+    const firstStrokeCount = kiCharacter.fields.stroke_pattern.strokes.length;
     const componentBounds = (strokes) => {
         const points = strokes.flatMap(({ points: values }) => values);
         return {
             width:
-                Math.max(...points.map(({ x }) => x)) -
-                Math.min(...points.map(({ x }) => x)),
+                Math.max(
+                    ...points.map(
+                        ({ x: horizontalCoordinate }) => horizontalCoordinate,
+                    ),
+                ) -
+                Math.min(
+                    ...points.map(
+                        ({ x: horizontalCoordinate }) => horizontalCoordinate,
+                    ),
+                ),
             height:
-                Math.max(...points.map(({ y }) => y)) -
-                Math.min(...points.map(({ y }) => y)),
+                Math.max(
+                    ...points.map(
+                        ({ y: verticalCoordinate }) => verticalCoordinate,
+                    ),
+                ) -
+                Math.min(
+                    ...points.map(
+                        ({ y: verticalCoordinate }) => verticalCoordinate,
+                    ),
+                ),
         };
     };
     const fullBounds = componentBounds(

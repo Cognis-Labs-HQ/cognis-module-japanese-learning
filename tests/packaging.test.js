@@ -1,5 +1,12 @@
 import assert from "node:assert/strict";
-import { copyFile, mkdir, mkdtemp, readFile, rm, stat } from "node:fs/promises";
+import {
+    copyFile,
+    mkdir,
+    mkdtemp,
+    readFile,
+    rm as remove,
+    stat,
+} from "node:fs/promises";
 import { tmpdir } from "node:os";
 import path from "node:path";
 import test from "node:test";
@@ -8,7 +15,7 @@ const ROOT = path.resolve(import.meta.dirname, "..");
 
 test("installed content-pack paths resolve using only packaged files", async (context) => {
     const installed = await mkdtemp(path.join(tmpdir(), "study-pack-install-"));
-    context.after(() => rm(installed, { recursive: true, force: true }));
+    context.after(() => remove(installed, { recursive: true, force: true }));
     const moduleManifest = JSON.parse(
         await readFile(path.join(ROOT, "manifest.json"), "utf8"),
     );

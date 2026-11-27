@@ -136,7 +136,7 @@ test("polite location questions include the canonical question particle", () => 
         assert.ok(entry.label.endsWith("ですか"));
         const parts = entry.references
             .filter(({ relation }) => ["words", "particles"].includes(relation))
-            .toSorted((a, b) => a.position - b.position);
+            .toSorted((left, right) => left.position - right.position);
         assert.equal(parts.at(-1).entryId, question.id);
         assert.equal(
             parts

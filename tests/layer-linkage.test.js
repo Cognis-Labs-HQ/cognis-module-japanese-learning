@@ -161,7 +161,7 @@ test("visible Kanji vocabulary composes from reading segments and Kana", () => {
         assert.ok(structural.some(({ relation }) => relation !== "spelling"));
         const positions = structural
             .map(({ position }) => position)
-            .toSorted((a, b) => a - b);
+            .toSorted((left, right) => left - right);
         assert.equal(positions[0], 0, word.id);
         assert.equal(new Set(positions).size, positions.length, word.id);
     }

@@ -22,7 +22,7 @@ for (const label of inputs)
             revision: "test",
             configuration: () => ({}),
             speech: () => ({ synthesize: (input) => calls.push(input) }),
-            log: (...args) => logs.push(args),
+            log: (...argumentsList) => logs.push(argumentsList),
         });
         await assert.rejects(
             provider.fetchAudio({
