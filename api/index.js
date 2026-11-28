@@ -6,6 +6,6 @@ export async function registerApi(ctx) {
         scriptUrl: "/static/modules/study-language-ja/tutorials/provider.js",
         providesCapabilities: ["study-language-ja:tutorials"],
     });
-    ctx.registerStaticDir("", path.join(ctx.moduleRoot, "ui"));
+    ctx.registerStaticDirectory("", path.join(ctx.moduleRoot, "ui"));
     return registerConfigurationRoutes(ctx);
 }

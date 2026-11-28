@@ -57,7 +57,7 @@ test("ingests the declarative pack through the host Library capability", async (
             assert.equal(id, "elevenlabs-tts:synthesis");
             return speech;
         },
-        registerStaticDir() {},
+        registerStaticDirectory() {},
         registerApiDelete(routePath, handler, options) {
             apiRoutes.push({ routePath, handler, options });
         },
@@ -206,7 +206,7 @@ test("content ingestion failures remain activation-blocking", async () => {
                 };
             },
         },
-        registerStaticDir() {},
+        registerStaticDirectory() {},
         registerApiDelete() {},
         contributePublicCapability(id) {
             contributions.push(id);
@@ -257,7 +257,7 @@ test("requires the public provider capability when it is injected", async () => 
                 return provider;
             },
         },
-        registerStaticDir() {},
+        registerStaticDirectory() {},
         registerApiDelete() {},
         contributePublicCapability() {},
         flow: { extend() {} },
@@ -292,7 +292,7 @@ test("failed capability publication or flow registration removes every lookup pr
                     };
                 },
             },
-            registerStaticDir() {},
+            registerStaticDirectory() {},
             registerApiDelete() {},
             contributePublicCapability() {
                 if (failure === "capability")
@@ -363,7 +363,7 @@ for (const activationFails of [false, true]) {
                     };
                 },
             },
-            registerStaticDir() {},
+            registerStaticDirectory() {},
             registerApiDelete() {},
             contributePublicCapability() {},
             flow: { extend() {} },
