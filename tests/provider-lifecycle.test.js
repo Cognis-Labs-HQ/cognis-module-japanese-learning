@@ -47,7 +47,7 @@ test("enable-disable-enable releases every live language contribution while reta
             registerCapabilityProvider(definition) {
                 return register(uiProviders, definition.scriptUrl, definition);
             },
-            registerStaticDir(prefix, root) {
+            registerStaticDirectory(prefix, root) {
                 return register(staticRoots, prefix, root);
             },
             contributePublicCapability(id, value) {

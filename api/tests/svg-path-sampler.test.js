@@ -12,7 +12,11 @@ test("samples compact relative KanjiVG cubic paths without packages", () => {
     assert.ok(Math.abs(points.at(-1).x - 11.25) < 0.001);
     assert.ok(Math.abs(points.at(-1).y - 45.29) < 0.001);
     assert.ok(
-        points.every(({ x, y }) => Number.isFinite(x) && Number.isFinite(y)),
+        points.every(
+            ({ x: horizontalCoordinate, y: verticalCoordinate }) =>
+                Number.isFinite(horizontalCoordinate) &&
+                Number.isFinite(verticalCoordinate),
+        ),
     );
 });
 
@@ -22,9 +26,26 @@ test("preserves the directional turns in the Hiragana e stroke", () => {
     );
 
     assert.equal(points.length, 32);
-    assert.ok(points.some(({ x, y }) => x < 28 && y > 83));
-    assert.ok(points.some(({ x, y }) => x > 45 && y > 65 && y < 70));
-    assert.ok(points.some(({ x, y }) => x > 80 && y > 88));
+    assert.ok(
+        points.some(
+            ({ x: horizontalCoordinate, y: verticalCoordinate }) =>
+                horizontalCoordinate < 28 && verticalCoordinate > 83,
+        ),
+    );
+    assert.ok(
+        points.some(
+            ({ x: horizontalCoordinate, y: verticalCoordinate }) =>
+                horizontalCoordinate > 45 &&
+                verticalCoordinate > 65 &&
+                verticalCoordinate < 70,
+        ),
+    );
+    assert.ok(
+        points.some(
+            ({ x: horizontalCoordinate, y: verticalCoordinate }) =>
+                horizontalCoordinate > 80 && verticalCoordinate > 88,
+        ),
+    );
 });
 
 test("samples line, quadratic, smooth, and arc endpoints", () => {

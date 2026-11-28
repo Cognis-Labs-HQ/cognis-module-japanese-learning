@@ -268,7 +268,7 @@ test("book preserves conventional spelling and the original pronunciation-wrappe
     )) {
         const parts = sentence.references
             .filter(({ relation }) => ["words", "particles"].includes(relation))
-            .sort((a, b) => a.position - b.position);
+            .sort((left, right) => left.position - right.position);
         assert.equal(
             parts.map(({ entryId }) => byId.get(entryId).label).join(""),
             sentence.label,

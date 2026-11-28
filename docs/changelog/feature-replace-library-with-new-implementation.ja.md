@@ -240,67 +240,67 @@ Cognis PR #214 に合わせ、名前空間の所有権、ローカライズ済�
 
 非表示の発音タイトルを、個々の原子的なかなリンクから直接構成するようにしました。漢字の読みを開いても、別の漢字由来の読みカードへ戻ることがなく、カードタイトルの詳細に代替表記も表示されません。
 
-- [631e76b6c2471aff02f37e982ece772fe7ad266c](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/631e76b6c2471aff02f37e982ece772fe7ad266c)
+- [631e76b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/631e76b6c2471aff02f37e982ece772fe7ad266c)
 
 ## 有効化可能な読み構成
 
 読みタイトルには専用の構成関係 `reading-kana` を使用し、`kana-spelling` はサポートされる代替表記ロールに戻しました。これにより、コンテンツパック検証でモジュールの有効化が拒否されることなく、かなへの直接タイトル移動を維持します。
 
-- [2187c82db49d331797cbb015e4665ad7ccb5264b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/2187c82db49d331797cbb015e4665ad7ccb5264b)
+- [2187c82](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/2187c82db49d331797cbb015e4665ad7ccb5264b)
 
 ## 正規の語彙・かなカード
 
 冗長な発音語彙ラッパーを削除しました。表示される漢字語彙は漢字と原子的なかなへ直接リンクし、漢字の読みは `猫` のような一致する表示語彙項目を優先します。残る非表示の読みは漢字として表示せず、発音クラスを使用します。かなカードの文字体系バッジは、クラスと重複しない一つだけになりました。
 
-- [697459a2379a0d11ce7fcc1ad947dacbe7d556a3](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/697459a2379a0d11ce7fcc1ad947dacbe7d556a3)
+- [697459a](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/697459a2379a0d11ce7fcc1ad947dacbe7d556a3)
 
 ## 取り込み可能なコンテンツファイル
 
 読みの正規化後に残っていた空の語彙 JSON ファイルを2件削除しました。検出されるすべてのコンテンツファイルに1件以上のレコードが含まれるようになり、モジュール有効化時に Study Library インポーターが未定義レコードを調べることを防ぎます。
 
-- [423a3250facb90f3435fc28faee469aa63bacceb](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/423a3250facb90f3435fc28faee469aa63bacceb)
+- [423a325](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/423a3250facb90f3435fc28faee469aa63bacceb)
 
 ## 取り込み可能な読みグラフの復元
 
 Study Library の有効化がデータベーストランザクション内で失敗する原因となった広範な語彙グラフ変更を取り消しました。サポートされる `reading-kana` 構成修正は維持しつつ、以前に取り込み可能だった階層型の読み構造へ戻し、ホストが取り込みを再試行するよう新しいコンテンツリビジョンへ進めました。
 
-- [3ab7d2577f18d204465863ce3c820b8fe153d8be](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/3ab7d2577f18d204465863ce3c820b8fe153d8be)
+- [3ab7d25](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/3ab7d2577f18d204465863ce3c820b8fe153d8be)
 
 ## 正規カードの段階的移行
 
 既存インストールに存在する可能性があるプロバイダーレコードを削除せず、簡素化したカードグラフを適用しました。現在の漢字・語彙カードは、意図した語彙・漢字・かなの終端へ直接リンクします。置き換えられた非表示の読みは切り離しつつ、安全なデータベース更新のため保持します。読み専用カードは漢字クラスを名乗らず、かなカードは文字体系タグを重複表示しません。
 
-- [997392f71fd178e43599bc8d27be786839b98b8b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/997392f71fd178e43599bc8d27be786839b98b8b)
+- [997392f](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/997392f71fd178e43599bc8d27be786839b98b8b)
 
 ## スキーマ更新によるインストール回避策
 
 日本語コンテンツスキーマをリビジョン46へ進め、Cognis が PR #226 の壊れた同一バージョンスキーマ更新コマンドを通らず、整理済みスキーマを新規登録するようにしました。ホスト側の修正点も明記しました。このコマンドは構造化 DB ゲートウェイが要求する `set` ではなく `values` を渡しており、PostgreSQL で報告された `Object.entries(undefined)` エラーを発生させます。
 
-- [bb20511152a80522055af67e6895ff28e5d9b8c8](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/bb20511152a80522055af67e6895ff28e5d9b8c8)
+- [bb20511](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/bb20511152a80522055af67e6895ff28e5d9b8c8)
 
 ## 廃止された読みデータの完全削除
 
 切り離した互換データとして残していた48件の古い非表示読みレコードをすべて削除しました。パッケージには現在使用する正規グラフだけが含まれ、語彙レコード数は133件から85件になりました。漢字・語彙・原子的なかなへの直接ナビゲーションは維持されます。
 
-- [b5ae5ad6e5ec9acf67c7ebf22d2d984ff4bdbad4](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/b5ae5ad6e5ec9acf67c7ebf22d2d984ff4bdbad4)
+- [b5ae5ad](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/b5ae5ad6e5ec9acf67c7ebf22d2d984ff4bdbad4)
 
 ## 漢字とかなの対称的な使用関係
 
 各漢字から、その読みに使われるすべての原子的なかなへ、表示用ではない依存関係を追加しました。`日` から語彙的な日数助数詞 `か` を経て原子的な `か` へ移動した後も、かなカードの使用元に `日` が表示されます。同じ不変条件をすべての漢字に適用しています。
 
-- [0fcae71e11836dbce3361184c378e46a2ee0d430](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/0fcae71e11836dbce3361184c378e46a2ee0d430)
+- [0fcae71](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/0fcae71e11836dbce3361184c378e46a2ee0d430)
 
 ## 論理的な複合発音リンク
 
 文タイトルの文字単位リンクを、確認済みの語彙・助詞セグメントへ置き換えました。完全な発音は、正規の非表示語彙読みセグメントと助詞全体を再利用します。たとえば `ちいさいねこがすき` は `ちいさい`・`ねこ`・`が`・`すき` とリンクし、各語彙はさらに原子的なかなへ解決されます。
 
-- [973980b8e821218608836970f51a0eefc75bfb11](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/973980b8e821218608836970f51a0eefc75bfb11)
+- [973980b](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/973980b8e821218608836970f51a0eefc75bfb11)
 
 ## 親文が所有する構成
 
 並行していた完全かな文読みチェーンを削除しました。`猫が好き` のような文は表示される `猫`・`が`・`好き` だけを参照し、各漢字語彙は完全なかなの子（`ねこ` または `すき`）を1件だけ所有します。その子は文内の兄弟へリンクせず、原子的なかなだけへ解決されます。
 
-- [274238c377ebb0a5ce4759456a0d433df83810da](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/274238c377ebb0a5ce4759456a0d433df83810da)
+- [274238c](https://github.com/Cognis-Labs-HQ/cognis-module-japanese-learning/commit/274238c377ebb0a5ce4759456a0d433df83810da)
 
 ## 語彙にリンクする文の読み
 

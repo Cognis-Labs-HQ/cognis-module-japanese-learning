@@ -1,6 +1,6 @@
 {
     "name": "@cognis/study-language-ja",
-    "version": "4.1.9",
+    "version": "4.1.14",
     "private": false,
     "type": "module",
     "scripts": {
@@ -8,10 +8,16 @@
         "lint": "node ./tooling/scripts/lint-placeholder.mjs && node ./tooling/scripts/lint-readable.mjs",
         "check:manifest": "node scripts/validate-manifest.js",
         "manifest:hashes": "node scripts/update-manifest-hashes.js",
-        "check": "npm test && npm run lint && npm run check:manifest",
-        "stroke-patterns:update": "node scripts/update-stroke-patterns.js"
+        "check": "npm test && npm run lint && npm run check:docs && npm run check:manifest",
+        "stroke-patterns:update": "node scripts/update-stroke-patterns.js",
+        "check:docs": "node scripts/check-documentation.js"
     },
     "devDependencies": {
         "prettier": "<=3.9.6"
+    },
+    "documentation": {
+        "readme": "docs/README.en.md",
+        "usage": "docs/USAGE.en.md",
+        "technical": "docs/TECHNICAL.en.md"
     }
 }

@@ -151,8 +151,8 @@ test("Kanji readings and particles terminate at Kana", () => {
                 else assert.equal(target.class, "reading:kanji", entry.id);
             }
     }
-    const ga = recordsById.get("ja:particle:ga");
-    assert.equal(labelsFor(ga, ["kana-spelling"]), "が");
+    const gaParticle = recordsById.get("ja:particle:ga");
+    assert.equal(labelsFor(gaParticle, ["kana-spelling"]), "が");
 });
 
 test("sentence pronunciations link only to visible constituent cards", () => {

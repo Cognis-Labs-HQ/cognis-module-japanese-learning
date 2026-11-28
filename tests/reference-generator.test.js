@@ -6,9 +6,9 @@ import path from "node:path";
 import { gzipSync, gunzipSync } from "node:zlib";
 import { createHash } from "node:crypto";
 
-test("reference generator uses packaged language metadata and produces deterministic shards", async (t) => {
+test("reference generator uses packaged language metadata and produces deterministic shards", async (testContext) => {
     if (spawnSync("python3", ["--version"]).error)
-        return t.skip("Python is not installed");
+        return testContext.skip("Python is not installed");
     const language = JSON.parse(
         await readFile("data/audio/recordings.json", "utf8"),
     ).language;
