@@ -27,7 +27,7 @@ for (const deleteContent of [false, true]) {
                     },
                 };
             },
-            log: (...argumentsList) => logs.push(argumentsList),
+            log: (...args) => logs.push(args),
         };
         await uninstallModule(ctx, { deleteContent });
         assert.deepEqual(await new Configuration(database).load(), {});
@@ -51,7 +51,7 @@ test("uninstall logs and propagates configuration cleanup failure", async () => 
                         },
                     };
                 },
-                log: (...argumentsList) => logs.push(argumentsList),
+                log: (...args) => logs.push(args),
             },
             { deleteContent: false },
         ),

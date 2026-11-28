@@ -1,13 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import { spawnSync } from "node:child_process";
-import {
-    mkdtemp,
-    mkdir,
-    writeFile,
-    readFile,
-    rm as remove,
-} from "node:fs/promises";
+import { mkdtemp, mkdir, writeFile, readFile, rm } from "node:fs/promises";
 import path from "node:path";
 import { gzipSync, gunzipSync } from "node:zlib";
 import { createHash } from "node:crypto";
@@ -74,6 +68,6 @@ test("reference generator uses packaged language metadata and produces determini
         assert.equal(await readFile(manifestPath, "utf8"), first);
         assert.deepEqual(await readFile(shardPath), bytes);
     } finally {
-        await remove(root, { recursive: true, force: true });
+        await rm(root, { recursive: true, force: true });
     }
 });

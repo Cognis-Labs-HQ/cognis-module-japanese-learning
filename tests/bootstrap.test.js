@@ -27,8 +27,8 @@ test("ingests the declarative pack through the host Library capability", async (
             require(id) {
                 if (id === "study:audio:provider")
                     return {
-                        registerProvider: (...argumentsList) => {
-                            audio.push(argumentsList);
+                        registerProvider: (...args) => {
+                            audio.push(args);
                             return () => {};
                         },
                     };
@@ -212,8 +212,8 @@ test("content ingestion failures remain activation-blocking", async () => {
             contributions.push(id);
         },
         flow: { extend() {} },
-        log(...argumentsList) {
-            logs.push(argumentsList);
+        log(...args) {
+            logs.push(args);
         },
     };
 

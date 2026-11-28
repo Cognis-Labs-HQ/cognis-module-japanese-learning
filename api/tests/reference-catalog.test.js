@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { mkdtemp, writeFile, rm as remove } from "node:fs/promises";
+import { mkdtemp, writeFile, rm } from "node:fs/promises";
 import { createHash } from "node:crypto";
 import { gzipSync } from "node:zlib";
 import { createReferenceCatalog } from "../dictionary/catalog.js";
@@ -29,7 +29,7 @@ for (const [normalization, label, key] of [
             });
             assert.deepEqual(await lookup(label), records);
         } finally {
-            await remove(directory, { recursive: true, force: true });
+            await rm(directory, { recursive: true, force: true });
         }
     });
 }

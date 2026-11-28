@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { cp as copy, mkdtemp, rm as remove, readFile } from "node:fs/promises";
+import { cp, mkdtemp, rm, readFile } from "node:fs/promises";
 import { createHash } from "node:crypto";
 import { gunzipSync } from "node:zlib";
 import { createReferenceProvider } from "../dictionary/reference.js";
@@ -113,7 +113,7 @@ test("reference content loading recovers after a transient local failure", async
             metadata: manifest.metadata,
             source: manifest.source,
             cacheRevision: "retry",
-            log: (...argumentsList) => logs.push(argumentsList),
+            log: (...args) => logs.push(args),
         });
         const input = {
             layer: {
@@ -126,13 +126,13 @@ test("reference content loading recovers after a transient local failure", async
             /reference_content_unavailable/,
         );
         assert.equal(logs.length, 1);
-        await copy("data/library/content", root, { recursive: true });
+        await cp("data/library/content", root, { recursive: true });
         const result = await provider.lookup(input);
         assert.ok(result.length);
         if (manifest.language === "ja")
             assert.equal(result[0].definitions.length, 14);
     } finally {
-        await remove(root, { recursive: true, force: true });
+        await rm(root, { recursive: true, force: true });
     }
 });
 

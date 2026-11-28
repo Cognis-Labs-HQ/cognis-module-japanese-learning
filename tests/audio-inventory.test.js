@@ -1,12 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import {
-    mkdtemp,
-    writeFile,
-    mkdir,
-    rm as remove,
-    readFile,
-} from "node:fs/promises";
+import { mkdtemp, writeFile, mkdir, rm, readFile } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import path from "node:path";
 import { createHash } from "node:crypto";
@@ -166,6 +160,6 @@ test("recording inventory verifies both index levels and rejects corruption, dup
             /audio_inventory_integrity_failed/,
         );
     } finally {
-        await remove(root, { recursive: true, force: true });
+        await rm(root, { recursive: true, force: true });
     }
 });
